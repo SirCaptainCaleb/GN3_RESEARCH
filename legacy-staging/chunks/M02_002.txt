@@ -1,0 +1,24 @@
+Boundary antisymmetry then produces a specifically oriented reverse turn. Keep the tested orientation; do not replace it by an unordered statement.
+
+### Separate extremality from selected state
+
+A path can be graph-intrinsically global-longest while not current in a later cover. Conversely, a rail can be longest only relative to one chosen cover. Proofs should state which meaning is used.
+
+### Compare implication records, not theorem names
+
+For each result, record assumptions, conclusion, and retained information. A later theorem dominates only if its assumptions are no stronger, its conclusion no weaker, and its information ledger contains everything later consumed. This prevents accidental loss of fixed-marker or fixed-representative specializations.
+
+## 9. Principal source corridors
+
+The machine catalog gives every certificate. The following corridors are the most efficient human entry points.
+
+| Era | Entry sources |
+|---|---|
+| Original broad program | `Boundary_Tournaments_Portable_Research_Handoff_2026-08-08.md` and the distinct Word version |
+| Exact conflict and blocker calculus | `INCREMENTAL_HANDOFF_CW_FREE_LEVEL1_BLOCKER_HYBRID_LATTICE_2026-08-09.md` and `SELF_CONTAINED_HANDOFF_CW_FREE_LEVEL1_ROUTER_FRONTIER_2026-08-09.md` |
+| Rootedness correction and unrooted source return | `INCREMENTAL_HANDOFF_CW_FREE_LEVEL1_ROOTED_COUNTEREXAMPLE_UNROOTED_FRONTIER_2026-08-11.md` and the 2026-08-12 unrooted self-contained handoff |
+| Strong reset | `CONTINUITY_STRONG_LEVEL1_CW_AGNOSTIC_RESEARCH_RESET_2026-08-17.md` |
+| Deletion core and longest-path recovery | 2026-08-18 through 2026-08-20 continuity files |
+| Aug. 24 universal graft and partition parents | the Researcher 34 handoffs and the 2026-08-24 active bank/archive |
+| Hard-reset theorem bank | the five canonical 2026-08-25 files |
+| Small-deletion and global-longest compression | Puzzler 21 and Puzzler 22 handoffs dated 2026-08-27 |
