@@ -1,0 +1,325 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+# Historical atlas: seams, crossings, capture, and assembly
+
+> **2026-08-29 fresh-package status note.** This remains historical/perspective material. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and later audited append-only handoffs.
+
+
+> **2026-08-28 clean-packet note.** This is a historical atlas, not a live-status document. It is preserved substantially unchanged because its value is provenance, representation history, and reusable technique. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, and later independently audited handoff deltas. Historical archive files named inside this volume are provenance handles; the large raw archive is intentionally not included in this packet.
+
+
+## Purpose
+
+The proof repeatedly reached a state with many paths, crossings, signs, and neutral exchanges but could not place the right seam in the right final candidate. This volume follows the attempts to solve that problem.
+
+The central distinction is:
+
+> A state can be historical, graph-intrinsic, selected somewhere, boundary-pinned, or endpoint-exposed. These are different resources.
+
+The most recent work narrows the gap but does not erase it.
+
+## 1. Minimal seam and crossing language
+
+A **carrier** is a retained tight path whose physical identity matters. Deleting a packet from it creates one or more **historical runs** and named **historical seams** where the old states were removed.
+
+A **crossing** is a selected state joining a surviving carrier run to the exterior, or joining two named physical classes. It must be oriented and tied to a current representative.
+
+A **splice turn** is the three-vertex turn that would join two candidate path pieces. The state at a historical seam may be one state of that turn, but a current historical state does not automatically certify the whole final splice turn.
+
+A **wrap** reconnects separated carrier pieces by going through an exterior path and returning to the carrier. A **return** is a later exact deletion cover in which an old marker, dimer, or carrier complement reappears.
+
+## 2. Early seam-pushing program
+
+### 2.1 Source-return seams
+
+The first seam arguments arose in the CW-free source-return program. A source packet was inserted in reversed orientation, and old source seams had to be pushed through two charged rails until the original orientation returned.
+
+Local named branches such as the reverse-p gate, coordinate corridor, left-cut booster, signed return hub, and several three-vertex pivots were all instances of one mechanism:
+
+1. retain a fixed skeleton;
+2. identify one bad seam turn;
+3. move its blocker along a rail by a neutral exchange;
+4. either obtain a direct splice or expose the next bad turn;
+5. stop at the first turn whose blocker leaves the fixed corridor.
+
+The many old labels are not active vocabulary. The proof technique remains valuable.
+
+### 2.2 Direct seam splicing
+
+Several 2026-08-12 return branches found that former completion cores were unnecessary: after a suitable pivot, the two old path pieces already had a literal exact splice. These were early examples of **literal survivor first**—write the surviving rails before invoking minimality.
+
+### 2.3 Outer seam frontier
+
+The outer-seam push normalized many source branches to a single unresolved exterior contact. An orthogonal escape showed that the obstruction could move to another component, so a one-rail seam descent was not global.
+
+This was the first clear appearance of the current problem: local seam motion is easy; preserving the same physical carrier and role across the motion is hard.
+
+## 3. Strong puncture crossing calculus
+
+### 3.1 Arbitrary puncture crossing
+
+If a proper packet is deleted from a retained carrier, every exact cover of the punctured graph must select a carrier/exterior crossing. Otherwise the exact cover and the surviving carrier pieces could be combined into a cover with too few components.
+
+This theorem replaced many source-specific “some gate must occur” lemmas.
+
+### 3.2 Fragmentation identity
+
+Delete a set from a historical cover and color each surviving historical run. In any exact current cover, count color blocks along the current rails. The number of selected states between different historical runs equals the number of color blocks minus the number of current rails.
+
+This exact identity subsumed single-vertex crossing-rank theorems and many anonymous multi-crossing claims. It also exposed its own ceiling: it counts crossings but does not identify their physical states or roles.
+
+### 3.3 Intrinsic cut-cost crossing
+
+Partition the punctured graph into surviving carrier and exterior. The exterior has a known path-cover cost. If the surviving carrier is non-Hamiltonian, its own path-cover cost forces two or more current crossings of the same cut in every exact cover.
+
+This is stronger than run counting when the surviving carrier has internal fragmentation not visible in one historical cover.
+
+### 3.4 Two-anchor path-forest deletion
+
+Deleting two named anchors from a historical carrier produced a family of surviving fragments. Exact recompletion gave a carrier-fragment identity and forced either a current splice or a full breach across the carrier class.
+
+The global-longest specialization forced at least two current crossings. Later partition parents subsumed the bare counts, but the two-anchor construction retains which two physical holes created them.
+
+## 4. Wraps and fixed-fiber retention
+
+### 4.1 One-boundary wrap alignment
+
+A wrap through one exterior component can preserve one old boundary and align a new splice at the other. Exact blocker accounting identifies the single sacrificed state. A marked-state parent later showed how to keep a chosen old state through the wrap.
+
+### 4.2 Residual-wrap synchronization
+
+After the wrap, an internal carrier cut can remain current in the same representative. This was valuable same-frame information: a new wrap turn and one old internal crossing coexist.
+
+### 4.3 Partition pressure
+
+When a wrap representative has more partition transitions than the minimum component budget requires, the excess forces another transition or reverse packet. This was accepted as utility but not as global progress because excess is representative-relative.
+
+### 4.4 Hard fixed fiber
+
+The hard-fiber program fixed:
+
+- one historical carrier;
+- one successful forward wrap;
+- a maximum old-state overlap among covers in the same local fiber; and
+- named reserve components.
+
+It proved:
+
+- a proper cycle in the fiber can be opened without losing old-state overlap;
+- the unique forward wrap polarity is forced;
+- every current internal excursion survives in the accepted scope;
+- a reserve bridge can be currentized while retaining visible re-entry; and
+- a reserve blocker can be used for capture and refund.
+
+The wrap-blocker rerouting theorem required repair before acceptance. Its correct scope retains the exact old boundary state sacrificed by the reroute.
+
+These theorems are not current trunk parents, but they are a rich source of same-fiber retention techniques.
+
+## 5. Interior-puncture seam parent
+
+### 5.1 Setup
+
+Take a retained path with two endpoints and a nonempty internal packet. Delete the internal packet and choose any exact two-cover of the remaining graph. Restore the packet as a third component. The old carrier has one historical seam on each side of the packet.
+
+### 5.2 Exact seam blockers
+
+Each seam has at most two blockers, all incident with its old external endpoint:
+
+- a current successor leaving that endpoint, if present; and
+- a current predecessor entering it when the turn into the seam is bad.
+
+For both seams together, any physical tight cycle created by insertion has one exact shape: the historical carrier plus a surviving current subpath returning from one endpoint to the other. Open a current state on that subpath and retain the full historical carrier.
+
+### 5.3 One-seam currentization or double reverse trimers
+
+Neither seam can be clean in a smallest counterexample. Therefore:
+
+- a singly blocked seam can replace its blocker in a minimum three-cover, retaining the whole internal packet and every other state of the same exact cover; or
+- if both seams are double-blocked, boundary antisymmetry gives one reverse trimer at each historical cut.
+
+This was the first broad minimum-budget fixed-representative breach of the “multiplicity without identity” ceiling.
+
+### 5.4 Equality synchronization
+
+Partition the punctured graph into the two old endpoints and the exterior. On the minimum-transition equality face, the two selected transitions are exactly the union of the seam blocker sets. At least one seam is singly blocked. Replacing its blocker by the seam keeps the other equality transition current.
+
+The result is one minimum three-cover containing:
+
+- the full internal packet;
+- one literal historical seam in its old orientation; and
+- the other original selected transition.
+
+This is strong same-representative information. It still does not say that the historical seam is the splice coordinate of the final static candidate.
+
+### 5.5 Positive excess
+
+If neither seam is singly currentizable, representative excess is positive and the two reverse trimers exist graph-intrinsically. The excess does not pay those trimers and is not a monotone across recompletion.
+
+## 6. Endpoint exposure and role restoration
+
+### 6.1 Internal graft frame
+
+The universal internal-vertex graft produces a current retained path while preserving everything away from the graft vertex. When the graft vertex has selected degree two, a neutral factorization can retain one old and one new incidence in the same minimum representative.
+
+### 6.2 Exposure versus old role
+
+One coordinate cut can make an old paid boundary literally endpoint-exposed. Full restoration of the old base component and its old boundary role is also available, but generally one component above the minimum graft representative.
+
+This established a permanent distinction:
+
+- **endpoint exposure** is a current local degree statement;
+- **old role restoration** says a named state again bounds its old component.
+
+They need not occur in the same minimum cover.
+
+### 6.3 Endpoint-graft reentry
+
+Local endpoint grafts were classified into one-block and two-block reentry covers, reverse-trimer residues, and a unique-debt case. These statements were absorbed for bare currentization by the universal graft, but their exact old-side retention and exposure-debt identities remain useful specializations.
+
+## 7. Ancestry-rich carrier lineages
+
+### 7.1 R28/R29: two boundaries on one carrier
+
+This family begins with a fixed envelope and moves two inward boundaries while preserving one common physical carrier. It produces two cross dimers, common-carrier ancestry, and direct floor access.
+
+Generic currentization can reproduce either boundary separately. It does not reproduce their simultaneous relationship to the same carrier. Therefore R28/R29 remain nonredundant for any two-ended assembly attempt.
+
+### 7.2 R31/R32: boundary-pinned trimer and inherited seam
+
+This family pins a signed terminal dimer at a named carrier boundary, preserves its witness, and carries one inherited seam through payment or recompletion. Directed double-cut saturation was corrected in scope; only the audited boundary-pinned version may be used.
+
+The family is not needed to create a terminal sign. It remains important because it remembers where the sign sits and which seam was inherited.
+
+### 7.3 R33: same-frame crossing and capture
+
+R33 fixes one support-deletion cover. A selected carrier crossing either avoids the sign witness and actualizes/captures in that same frame, or all crossings concentrate at the witness. Aligned refund is tied to the same event.
+
+The later adaptive-witness parent often forces the capture branch, but R33 still supplies the exact frame and ancestry.
+
+### 7.4 R34: captured-boundary return
+
+R34 combines a captured crossing with an incident carrier support, uses mirror reselection, and re-enters a current boundary packet. It can currentize the physical crossing and returned support together in their incident trimer.
+
+This bare currentization is now subsumed by universal completion once the trimer is known. R34 remains valuable for:
+
+- which crossing was captured;
+- which carrier support is incident;
+- the mirror return history; and
+- the physical endpoint carried into the return.
+
+## 8. Static assembly line
+
+### 8.1 Endpoint-exposed selection or crossing
+
+At a current endpoint-exposed retained interface, the blocker set has size zero, one, or two.
+
+- Zero closes by direct merge.
+- One selects the seam by a neutral exchange.
+- Two produces a synchronized crossing/reversal interaction.
+
+This theorem is a consumer. It never upgrades historical endpointhood or boundary pinning to current exposure.
+
+### 8.2 Two-seam assembly
+
+The final displayed candidate has at most two uncertified seam turns. If one named seam is already inherited in the correct candidate and orientation, the problem reduces to one hole.
+
+The 2026-08-25 audit made the controlling correction: a selected historical seam state in a minimum three-cover is not automatically the same turn as the candidate splice. The candidate's other adjacent state and orientation must also be certified.
+
+### 8.3 One-hole mate
+
+For one exact missing candidate turn, mate and canonicality arguments build the local two-path finish. Numerous earlier branches tried to manufacture “a mate” without fixing the candidate. Those attempts do not enter this theorem.
+
+### 8.4 Same-end incompatibility
+
+The later canonical mate packet showed that a mate at one end is incompatible with the source splice at that same end in the canonical path forest. Therefore “mate packet plus both source splices” is a false target. This removes a proof branch rather than merely failing to construct it.
+
+## 9. Return and root-rotation line
+
+### 9.1 R15/R16 return
+
+Choose a signed adjacent dimer of a globally longest path and pair it with a fixed trimer. After descending to a floor, every exact return to the dimer deletion forces a new signed path dimer and another birth through the old trimer's middle anchor.
+
+This theorem first closed the historical longest-path order-six branch. It later became a central order-ten return engine.
+
+### 9.2 Marker roles in an exact return
+
+When two singleton marker vertices and a residual set are covered by two nontrivial rails, a partition-incidence identity classifies the marker:
+
+- selected terminal block;
+- selected internal block;
+- two separate current endpoints; or
+- absent marker with at least one marker vertex internal in a crossing turn.
+
+In every case one current turn crosses the marker cut.
+
+### 9.3 Equality coalescence
+
+For three Hamiltonian classes, if transitions are independently required across two cuts and the total transition count is minimal, one unique state must satisfy both requirements. Two classes concatenate into one rail.
+
+In the order-ten return, the marker-cut state and R15/R16 return crossing therefore coincide on the equality face. This avoids the false claim that two independent current contacts were synchronized.
+
+### 9.4 Root rotation
+
+Equality turns the surviving old path piece plus the old marker into a new global-longest path. The old fixed trimer remains the other rail. The deleted old dimer becomes the new exterior marker, so the whole split-free root package can be reinstantiated.
+
+Terminal rotations reverse through the original representative with zero excess. Internal rotations return to that same representative with one unit of excess. This is local and representative-relative, not a global recurrence descent.
+
+### 9.5 Internal-route forced capture
+
+For an internal original dimer, the original root contains two parent-cut states with distinct carrier-side endpoints. At least one avoids the rotated root's terminal-marker witness. R33 therefore forces same-frame capture in the original root.
+
+Adaptive witnesses strengthen this to every selected parent crossing in every exact internal-dimer return.
+
+## 10. Quiet-return seam alignment
+
+### 10.1 Global-endpoint concentration
+
+If an internal-return crossing uses an inner cut-side path vertex, its returned terminal support meets an old terminal support with a distinct witness. Same-polarity collision or opposite-polarity exclusivity is already productive. Outside those basins, all quiet crossings use one of the two historical global endpoints.
+
+Historical global endpointhood is not current endpointhood.
+
+### 10.2 Near return
+
+At the global endpoint adjacent to the historical terminal seam, current internality would again create two sign certificates on the selected crossing support. Outside the sign basins, the endpoint is current terminal. The selected crossing is the unique blocker of the historical seam and can be exchanged one-for-one for that seam with zero debt.
+
+### 10.3 Far return
+
+At the opposite global endpoint, the support profile forces one cross-gap chord and a physical chain through the near global endpoint. Exactly one chord endpoint is current terminal. The unique parent crossing identifies the blockers of both historical seams. Two one-for-one exchanges restore both seams and retain the selected captured crossing.
+
+### 10.4 What is genuinely new
+
+Prescribed-path completion could already currentize the full old path. The return theorem's new resource is the provenance:
+
+- exact selected crossing retained;
+- captured endpoint ancestry;
+- exact blocker of each historical seam;
+- one or two restored seams in the same return descendant; and
+- zero cycle debt.
+
+Even this does not prove that the restored seams are the final candidate's splice turns or that the captured endpoint is actively protected.
+
+## 11. Current missing bridge
+
+Two powerful representations now coexist only as ancestry-related descendants.
+
+### Return representation
+
+It has the selected captured crossing, old marker-cut turn, returned terminal support, and one or two restored historical seams.
+
+### Protected continuation
+
+It has active first-contact control of the captured endpoint, but may lose the current crossing, rails, marker-cut turn, and restored seams.
+
+No accepted theorem transports both packages into one minimum representative satisfying the corrected static candidate conditions. This is the sharpest current seam/capture bottleneck.
+
+## 12. Dominance and retention table
+
+| Older theorem or route | Later parent | Bare content subsumed | Surplus that remains unique |
+|---|---|---|---|
+| Source seam pushing | Interior-puncture blocker formulas or quiet-return exchange | Local ability to move one seam | Source orientation, charged rails, first corridor failure |
+| Anonymous puncture crossing | Fragmentation or cut-cost identity | Existence/count of crossings | A named selected crossing from one specialization |
+| Single internal crossing-rank | Fragmentation identity | Crossing number | Fixed carrier vertex and local orientation |
+| Wrap currentization | Prescribed-path completion | Bare new tight packet | Same-fiber old-state overlap and reserve ancestry |
+| Endpoint graft specializations | Universal internal graft | Component count and zero debt | Old-side exposure, fixed near-end rail, blocker owner |
+| Captured-crossing trimer reentry | Prescribed-path completion | Bare currentization of incident trimer | Capture, carrier, mirror, and return ancestry |
+| Boundary trimer front door | Generic signed support plus completion | Bare terminal sign/current trimer | Bou
