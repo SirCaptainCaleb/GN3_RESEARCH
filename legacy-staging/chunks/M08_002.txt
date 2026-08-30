@@ -1,0 +1,43 @@
+e old meanings | Required modern disambiguation |
+|---|---|---|
+| boundary | path endpoint, selected endpoint state, physical cut, or historical seam | Name the path, endpoint, state, and representative |
+| pair | physical two-set, oriented dimer, signed support pair, or balanced pair of supports | State vertices, orientation, and whether it means one or two supports |
+| current | graph-intrinsic tight, selected somewhere, or selected in the displayed cover | Reserve current for the displayed representative |
+| exact | minimum component count, literal vertex complement, or exact exchange | Say exact cover, exact complement, or exact blocker exchange |
+| marker | singleton, physical pair, oriented dimer, or retained path | Name its physical vertex set and selected status |
+| return | reappearance of a physical marker, exact deletion cover, or recurrence of an isomorphic pattern | Name the returned object and representative |
+| collision | same-support two-witness event, cross-generation pair interaction, or generic incompatible packets | State support, polarity, witnesses, and consumer theorem |
+| fan | graph-intrinsic contacts or current selected arms | State orientation and current status of every arm used |
+| protection | historical importance, preserved truth, or active first-contact control | Use protection only for the theorem-licensed continuation |
+
+## 8. Status and provenance rules
+
+### Accepted status does not flow backward
+
+When an audit accepts a corrected parent, it does not revive an earlier overbroad version. The manifest and claim catalog preserve both sources; the correction ledger controls use.
+
+### Acceptance does flow through exact unchanged scope
+
+Later handoffs often say an earlier theorem remains accepted and should not be re-audited. This carries the exact statement, not strategic commentary or exploratory conjectures surrounding it.
+
+### Audit-pending results remain separate
+
+At this checkpoint, Puzzler 27's four new parent/descendant statements are proved but audit pending. Explorer 27's three results are accepted after Puzzler 27's audit.
+
+### Duplicate files do not create independent evidence
+
+Exact byte duplicates count as one mathematical source with several aliases. Near-duplicates and revised versions remain separate because a correction may occur in only one.
+
+## 9. How to challenge a compression decision
+
+For any theorem omitted from the current bank:
+
+1. locate its document capsule in `11_DOCUMENT_AND_CLAIM_CATALOG.jsonl`;
+2. open its exact raw source by hash;
+3. write its hypotheses, conclusion, and retained-information ledger in modern language;
+4. identify the alleged parent;
+5. test all three dominance conditions;
+6. if the parent loses a consumed resource, restore the old result as a retained specialization;
+7. if only the proof method is unique, add it to the technique atlas rather than duplicating the theorem node.
+
+This makes the consolidation reversible without restoring chronological clutter.
