@@ -1,0 +1,44 @@
+ The no-Hamilton four-vertex classification has cyclic and transitive matching-block quotients.
+- The cyclic fifth-vertex extension does not eliminate the transitive quotient.
+- The early order-six one-hole currentization was repaired to a currentization-or-transitive-residue dichotomy.
+- The transitive order-six residue has three labelled signature patterns per side; it is not an anonymous bad four-set.
+- The four-deletion exactness proof must use the one-vertex rail floor, not a cyclic-only argument.
+- Order-nine cyclic exclusion is a global frame theorem, not local cyclic-four-set impossibility.
+- Root rotations and gap-one involutions are reversible in some representatives and do not define a global descent.
+- Transfer-component membership does not transport selected states.
+- The two endpoint trimer descendants of a root are separate exact covers.
+
+## 16. Reusable finite-order techniques
+
+### Use forbidden overlong paths as local clauses
+
+At order ten, any six-vertex tight path contradicts the longest-five normal form. A missing turn can therefore be forced by showing that its opposite sign would concatenate into a six-path.
+
+### Build alternate longest paths and reuse their reverse stars
+
+One forced turn often creates another five-path. Because every five-path is global-longest in the order-ten normal form, its reverse stars provide new forced turns. This was the engine of both historical mate-fork proofs and modern folds.
+
+### Preserve labelled quotient signatures
+
+When a four-vertex residual is transitive, keep the matching blocks and orientation labels. Signature agreement between two endpoint views can close a branch that an unlabelled classification cannot.
+
+### Exploit exact profile equality
+
+The modern order-ten work gains strength from exact sizes. Equality turns local longestness into universal reverse stars, makes pair shadows four plus four, and makes every consecutive trimer shadow exact.
+
+### Separate root-common from pivot-specific structure
+
+Whenever a pivot proof yields an exact complement, test whether deletion exactness already gives it at the original root. This separated the universal triple-shadow/anchor package from the richer dual-longest fold ancestry.
+
+## 17. Principal source corridors
+
+| Topic | Efficient starting sources |
+|---|---|
+| CW-era order-ten, thirteen, and fifteen experiments | the order-specific 2026-08-13 Researcher C/D handoffs |
+| Strong cleanup through eight | Researcher 16 pair-deletion/order-eight handoff dated 2026-08-21 |
+| Strong order-nine closure | Researcher 20 cyclic exclusion and Researcher 15 transitive signature closure handoffs dated 2026-08-21 |
+| Order-ten longest-six closure | Researcher 16 R15 mate-fork closure and Researcher 17 R16 audit/cyclic extension handoffs dated 2026-08-21 |
+| Historical longest-five marker/refund line | Researcher 16 through Researcher 19 order-ten handoffs dated 2026-08-21 |
+| Modern small-deletion and root compression | Explorer/Puzzler/Visionary 21 and 22 handoffs dated 2026-08-26 and 2026-08-27 |
+| Fold, shadow, anchor, and floor line | Explorer/Puzzler/Visionary 23 and 24 handoffs dated 2026-08-27 |
+| Return, capture, and seam alignment | Explorer/Puzzler/Visionary 25 through 27 handoffs dated 2026-08-27 |
