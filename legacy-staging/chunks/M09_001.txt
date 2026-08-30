@@ -1,0 +1,67 @@
+# Provenance and generation boundary
+
+Generation seal: `A7C2-20260829`.
+
+## Purpose
+
+This package is a clean architecture restart for the Strong Level-(1) Two-Cover project. It preserves the mathematical archive while replacing the legacy global-handoff communication system with:
+
+1. a concurrency-safe role-owned mathematical DAG; and
+2. a separate sparse Visionary strategic control plane.
+
+## Source mathematical snapshot
+
+The core theorem/archive volumes were carried forward from the immediately preceding `A5R_20260829_...` clean package and renamed into the `A7C2_20260829_...` namespace. Their internal canonical cross-references were rewritten to the new namespace where applicable.
+
+`A7C2_20260829_10_CONTINUITY.md` compresses the prior continuity plus the complete legacy handoff chain through `HANDOFF_000012.md`.
+
+The legacy chain contributes these current-status changes beyond the prior snapshot:
+
+- `000007–000008`: accepted by Auditor `000009`, with the captured-middle fixed-turn fences preserved exactly in substance;
+- `000010`: Visionary strategy only, no mathematical authority;
+- `000011`: Puzzler Tight-Pivot Far-Spend Saturation / exact two-state return result;
+- `000012`: independent Auditor PASS of `000011` in its stated fenced scope.
+
+A duplicate Visionary upload formerly titled `HANDOFF_000009(1).md` is superseded and excluded from mathematical provenance.
+
+## Strategy migration
+
+The useful strategic content of the old Visionary intervention is **not** embedded in mathematical continuity. It has been migrated, updated through the accepted `000012` negative-space result, and partitioned into separate current role-addressed files:
+
+- `A7C2_GUIDE_EXPLORER_000001.md`;
+- `A7C2_GUIDE_PUZZLER_000001.md`;
+- `A7C2_GUIDE_CONTRARIAN_000001.md`.
+
+There is intentionally no packaged Auditor guidance.
+
+## Policy changes incorporated
+
+This generation incorporates the latest conversation-level architecture decisions, superseding earlier versions:
+
+- no global handoff number;
+- one mathematical producer stream per research role plus one Auditor disposition stream;
+- mathematical dependencies form an explicit DAG;
+- audit is a distinct-worker transfer boundary, not an automatic post-result step;
+- Puzzler / Archivist owns the full historical theorem/lemma archive and recombination duty;
+- Visionary strategy is a separate role-addressed control plane;
+- every worker checks its own strategic inbox on `Continue` regardless of proof-chain relevance;
+- guidance uses replacement semantics and can be explicitly cleared;
+- Visionary communication has a high threshold and should raise targets rather than micromanage;
+- different roles receive deliberately different information budgets to preserve separation of minds;
+- the human may simply tell every worker `Continue`; routine synchronization is worker-owned.
+
+## Status precedence
+
+For mathematics:
+
+1. later exact `A7C2_AUDIT_######.md` disposition;
+2. `A7C2_20260829_10_CONTINUITY.md`;
+3. `A7C2_20260829_01_THEOREM_LEDGER.md`;
+4. archive volumes in their recorded scopes;
+5. historical provenance handles only when explicitly opened for archaeology.
+
+Strategic guidance never enters this mathematical precedence order.
+
+## Legacy-file rule
+
+Older `A5R_...`, `HANDOFF_...`, and earlier incremental handoff files remain historical sources only. New workers should not use them to reconstruct current state unless an exact provenance question requires opening one.
