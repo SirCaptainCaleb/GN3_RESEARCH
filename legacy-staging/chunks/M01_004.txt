@@ -1,0 +1,163 @@
+trinsic systems. The fold paths and four square corners are not asserted current together.
+
+### Pivot pair grid and central-anchor interaction — Accepted
+
+In either fold face, the two terminal physical dimers of the folded longest path have opposite polarity for every common witness. Choosing their orientations gives a direct grid of mass-four balanced pairs without pair deletion, marker actualization, or cover change.
+
+Pairing those saturated endpoint dimers with the two terminal dimers of the fixed opposite shadow trimer gives two pair births through the same middle shadow vertex. The fixed-trimer no-quiet-remint theorem forces synchronized historical interaction at that central anchor. Opposite marker fold types provide both central-anchor systems.
+
+Static-core transparency carries the marker, exact shadow, dual-longest paths, fold profile, saturation, and interaction as historical truth through a pair excursion to a mass-two floor. It does not make them simultaneously current there.
+
+### Root-common triple three-plus-three shadows — Accepted
+
+In every exact fixed-exterior-pair root with a five-path and disjoint trimer, delete the physical marker together with either pair of five-path vertices outside one consecutive trimer window. Four-deletion exactness shows that each of the three consecutive windows and the fixed trimer form an exact three-plus-three cover.
+
+Thus the root carries three graph-intrinsic exact-shadow facts for three different deletion sets, together with a three-anchor interaction family through the three internal vertices of the five-path and the middle vertex of the fixed trimer. The three selected deletion covers are separate descendants.
+
+### Four adjacent-dimer return routes — Accepted
+
+Each of the four adjacent physical dimers of the root five-path has at least one natural sign from the path. Pair that sign with the opposite terminal sign of the fixed trimer. Full reverse stars make the archived R15/R16 return theorem applicable.
+
+After descending the chosen pair to an ancestry-bearing floor, every exact return to the complement of that chosen dimer forces another signed five-path dimer and another pair birth through the old fixed trimer anchor. Complete floor steering then gives a finite continuation to a spanning two-cover or an explicitly anchored historical interaction.
+
+The four routes are alternatives. A single floor has not paid all four pairs.
+
+### Split-free root floor-and-return gateway — Accepted
+
+Before separating the double-blocked and equality-pivot faces, every fixed-exterior-pair root already has:
+
+- the exact five-plus-three root;
+- full reverse stars of the five-path;
+- three exact three-plus-three shadows;
+- a three-anchor interaction family; and
+- four selectable R15/R16 return routes.
+
+Choosing one route and making one static-core-transparent pair excursion gives a spanning two-cover or a mass-two floor carrying all root facts as graph-intrinsic/historical truth plus the chosen return ancestry.
+
+This split-free gateway does not subsume the richer double-blocked refund ancestry or the pivot's second longest path, cover square, folds, and witness saturation.
+
+### Root-marker exact returns — Accepted
+
+Fix one adjacent dimer of the root five-path and consider any exact cover of its complement. The remaining vertices split into the old exterior marker, the surviving three vertices of the old five-path, and the fixed trimer.
+
+Every such return has a precise physical-marker role:
+
+- if the old marker state is selected, it is either a terminal or internal dimer block of one current rail;
+- if the marker state is absent, both marker vertices are current rail endpoints or at least one is internal in a literal current turn crossing from the marker class to the rest.
+
+In all cases a current turn crosses the marker cut. This is the order-ten specialization of the accepted two-singleton marker-role classification parent.
+
+### Equality coalescence and root rotation — Accepted
+
+For three Hamiltonian physical classes in an exact two-cover, if one selected transition is forced across each of two named cuts, the transition count is one plus nonnegative excess. On the equality face there is exactly one transition; it joins the two named classes and witnesses both cut requirements. The two class paths coalesce into one current component and the third class is the other component.
+
+In an order-ten exact return, equality therefore turns the surviving old five-path trimer and the old physical marker into a new global-longest five-path, while the old fixed trimer remains the other rail. The marker-cut transition and the R15/R16 return crossing are the same unique selected state, not two independent contacts.
+
+The new five-plus-three root legitimately reopens the full split-free root package with the deleted old dimer as its new marker.
+
+### Reverse-excess signature — Accepted
+
+Return from the rotated root to the original root through the old marker. Relative to the three classes consisting of the surviving old five-path vertices, the deleted dimer, and the fixed trimer, the original representative has excess pattern:
+
+| Deleted adjacent dimer position | Reverse excess in the original root |
+|---|---:|
+| first or last | 0 |
+| either internal position | 1 |
+
+Terminal rotations are literally equality-reversible through the original representative. Internal rotations are not equality-reversible through that same representative. This is representative-relative and is not a global descent or recurrence monotone; another exact return may have different excess.
+
+### Internal-rotation same-frame capture — Accepted
+
+In a rotated root, the old exterior marker is a signed terminal dimer with a named adjacent witness. View the original root as an exact deletion frame for that marker. For an internal original dimer, the original root has two selected parent-cut crossings with distinct carrier-side endpoints, so at most one meets the sign witness. The other forces the capture branch of the accepted boundary-pinned same-frame theorem.
+
+Thus an internal equality rotation gives, in the original exact root representative:
+
+- a selected old five-path cut state;
+- historical capture of its carrier-side endpoint;
+- the signed old-marker refund ancestry.
+
+The equality-return cover, original-root cover, and later payment descendant are different representatives.
+
+### Internal-return global-endpoint concentration — Accepted
+
+For either internal adjacent-dimer return route, every current parent-envelope crossing is capture-capable. Let its old-five-path-side endpoint be the returned anchor.
+
+If that anchor is one of the two inner cut-side candidates, the returned terminal dimer coincides with an old terminal physical dimer but has a distinct exterior witness. Same-polarity collision or opposite-polarity same-support exclusivity therefore enters an already accepted productive sign basin.
+
+Outside those sign basins, every selected parent crossing is concentrated at one of the two historical global endpoints of the original five-path, and the returned support is the corresponding terminal physical dimer. The full reverse star supplies the canonical endpoint sign. These endpoints are historical global endpoints, not necessarily current rail endpoints.
+
+### Quiet-return historical-seam alignment — Accepted
+
+Retain one internal-route return representative with:
+
+- a current selected parent crossing;
+- a current turn across the old marker cut;
+- historical capture of the crossing's old-five-path-side endpoint;
+- a graph-intrinsic returned terminal dimer; and
+- the old historical terminal seam of the five-path.
+
+Outside the accepted same-support sign outputs, the following normal form is exhaustive.
+
+#### Near return
+
+If the selected crossing uses the historical global endpoint adjacent to the old seam, current internality of that endpoint would create two distinct sign certificates on the same physical crossing support and enter the accepted sign basins. Hence the endpoint is current terminal in the quiet residue. The crossing is then the unique blocker of the historical terminal seam. A one-for-one, zero-debt exchange replaces it by that seam and makes the literal historical splice turn current.
+
+#### Far return
+
+If the crossing uses the opposite global endpoint, the exact support normal form forces one specific cross-gap chord. Exactly one chord endpoint is current terminal. A forced physical chain through the opposite global endpoint and the crossing's unique parent state identifies the blockers of two historical seams. Two one-for-one, zero-debt exchanges restore both seams while preserving the selected captured parent crossing.
+
+This normal form is independent of the equality-versus-positive-excess split. An optional final terminal-boundary exchange may be made in a separate descendant.
+
+The new information is exact blocker and exchange provenance and, in the far face, coexistence of both restored historical seam turns with the same selected captured crossing. Bare currentization of the full old five-path was already available from prescribed-path completion.
+
+### Order-ten transfer and no-transfer basins remain open
+
+The fixed-root transfer graph still gives a genuine global split:
+
+- at least one transfer edge, with crossed common-shadow and inherited-edge machinery; or
+- no transfer edges, meaning complete endpoint shielding in every exact root cover.
+
+The universal root reverse four-path, exterior-pair trimer packet, triple three-plus-three shadow family, split-free floor gateway, and return machinery lie above or enter both basins without identifying their separate representatives. Neither basin is closed.
+
+## Final static assembly machinery
+
+### Endpoint-exposed seam selection or crossing — Accepted
+
+If a named retained interface state is literally endpoint-exposed in the appropriate current exact cover, its blockers are localized at the exposed endpoint.
+
+- No blocker gives an immediate merge and a two-cover.
+- One blocker gives a neutral exact cover selecting the retained seam.
+- Two blockers give the explicit crossing/reversal configuration and its synchronized historical interaction.
+
+This theorem consumes endpoint exposure; it does not create it. Historical global endpointhood, boundary pinning, capture, and a graph-intrinsic terminal support are all weaker than current endpoint exposure.
+
+### Two-seam and inherited-one-seam reduction — Accepted
+
+The static candidate construction reduces its obstruction to at most two named seams. If one seam is already inherited in the correct orientation and role, only one hole remains.
+
+The corrected static boundary is same-candidate and same-representative: a current turn somewhere in a minimum three-cover is not automatically the seam coordinate of the displayed final two-path candidate.
+
+### One-hole mate finish — Accepted
+
+Once the displayed candidate two-cover has exactly one missing turn, the mate/canonicality theorem supplies the final local construction. The unresolved problem is entry into this one-hole candidate with the needed identities and roles, not the local finish.
+
+### What does not yet enter assembly
+
+The following outputs are insufficient by themselves:
+
+- an anonymous fan, trimer, collision, or signed pair;
+- several graph-intrinsic certificates realized in separate covers;
+- a current splice turn not identified with a final candidate seam;
+- historical capture without active protection;
+- a boundary-pinned support without current endpoint exposure;
+- a mass-two floor carrying only historical static truth;
+- a transfer component containing useful states in different fibers; or
+- restored historical seams without the other role and candidate data required by the static theorem.
+
+## Current proof spine
+
+The live architecture is best read as five layers.
+
+### Layer 1: universal exactness and local calculus
+
+Smallest-counterexample minimality, prescribed-path completion, small-deletion exactness, partition and f
