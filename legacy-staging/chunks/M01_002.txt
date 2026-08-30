@@ -1,0 +1,129 @@
+g three vertices: every rail has order at least two;
+- the complement of every proper tight path has at least five vertices;
+- a proper tight path with exactly five exterior vertices is globally longest.
+
+This strictly subsumes pair-deletion rigidity for the nontrivial-rail conclusion and broadens the older trimer-complement and short-path rigidity results. Retain an older deletion theorem only when its named marker, selected frame, or proof ancestry is used.
+
+### Five-exterior reverse-star equality — Accepted
+
+If a proper tight path has exactly five exterior vertices, it is globally longest. Every exterior vertex fails both direct endpoint attachments; boundary antisymmetry gives the two reverse endpoint turns simultaneously as graph-intrinsic facts.
+
+This is the parent of the order-ten full reverse-star systems.
+
+## Singleton roots, canonical splices, and boundary transfer
+
+### Singleton order floor and short-complement rigidity — Accepted
+
+Every exact one-vertex deletion two-cover has both rails of order at least four. Therefore no proper tight path of order at most three has an exact singleton completion. The older pair-deletion and exterior-trimer completion-rigidity statements are special cases for their bare size conclusions.
+
+If a minimum three-cover has a singleton component and two nontrivial rails, deleting the singleton produces the exact two-rail root frame. The standard four caps, boundary collisions, and disjoint companion-collision package are available in that same representative.
+
+After two genuine two-sided enlargements from an ancestor core, every support and witness in this transplanted singleton packet lies outside the surviving ancestor core. The core and any prescribed internal vertex survive literally. This ancestor-exterior reset is stronger than the older terminal-collision-dependent version because no pre-existing terminal collision is required.
+
+### Maximin short-rail reverse stars — Accepted
+
+Choose an exact two-cover of a prescribed-singleton deletion that maximizes the smaller rail. Every vertex of the short rail supplies the full pair of reverse endpoint turns against the longer rail. This theorem belongs only to the chosen maximin source cover. It must not be reapplied to a descendant whose shorter rail was reduced by a boundary transfer.
+
+### Canonical splice sign trichotomy — Accepted
+
+In an imbalanced maximin singleton-root frame, test the two canonical splice turns that attach the two ends of the short rail to the long rail.
+
+- If both are bad, the source frame retains the two reverse short-boundary states. This face is forced when the short rail has order four or five.
+- If exactly one is good, the short rail has order at least six. A two-unit singleton reset and the witness-order normal form preserve the good splice, the opposite reverse boundary state, and either a current mate subpath or one of the explicit cross-end trimers.
+- If both are good, the short rail has order at least eight. There are two useful descendants with different resources:
+  - moving only the two outer short-rail endpoints onto the long rail gives a two-unit reset that keeps both canonical splices and the prescribed singleton current;
+  - moving two boundary vertices at each end gives the deeper central residue and selects both reverse source short-boundary states as well.
+
+The order-eight threshold follows already in the source frame: the deepest path and the middle rail form a literal exact cover after deleting the prescribed singleton, so the one-vertex deletion rail floor rules out short-rail orders four through seven. It does not require re-rooting the deeper descendant.
+
+These three faces live in separate representatives. No selected state is imported between them.
+
+### Boundary-transfer lattice — Accepted
+
+Move zero, one, or two short-rail boundary vertices independently at each end. The resulting nine coordinates form a sign-controlled family of exact minimum three-covers whenever their displayed turns have the required signs. Each step is a neutral endpoint transfer with zero cycle debt.
+
+The lattice records exactly what each depth purchases:
+
+- one transfer at an end currentizes the corresponding canonical splice;
+- the second transfer at that end currentizes the corresponding reverse source-boundary state;
+- the middle coordinate can preserve the prescribed singleton as an internal vertex;
+- the deepest coordinate trades that internal-singleton state for deeper same-rail endpoint-absorption resources.
+
+Canonical depth-two maximality is only relative to this audited lattice and its cap family. It is not global maximality among all exact covers.
+
+### Same-rail endpoint absorption — Accepted
+
+For a current rail endpoint and an internal prescribed vertex on the same other rail, boundary antisymmetry chooses one of two antisymmetric endpoint trimers. Replacing the endpoint by that trimer preserves the untouched rail state-for-state, yields a minimum three-cover, and leaves the displayed trimer complement exact.
+
+This is not a forbidden direct endpoint attachment. Direct attachment tests one turn and is blocked by the endpoint-shielding theorem; absorption uses the antisymmetric trimer orientation and a different exact exchange.
+
+The theorem replaces older pivot/currentization parents when their only desired output was a current internal prescribed vertex. It does not replace variants retaining a chosen splice, source-maximinity, a captured boundary, or ancestor-core identity.
+
+### Central absorption, mate packets, and resource exchange — Accepted
+
+In the both-good central coordinate, the middle trimer through the prescribed singleton has two sign faces.
+
+- In the tight face, the central endpoint-absorption descendants retain both source splice turns and the two cap-derived terminal collision certificates, with current and reverse orientations recorded separately.
+- In the bad face, the antisymmetric trimer is literally a double physical boundary-fan component; the same two collisions remain graph-intrinsic.
+
+The canonical one-hole proposals around the middle pivot have exact one-hole or two-hole counts. When the middle turn is tight, the two mates concatenate into a tight four-path. Four explicit minimum three-cover mate-packet representatives exist and each preserves the opposite source splice.
+
+Same-end mate/splice incompatibility rules out a previously tempting target: these canonical packets cannot contain one mate packet together with both source splices as a path forest. This deletes that synchronization branch; it is not merely a failure to find a construction.
+
+The central internal-singleton representative and the deepest transfer coordinate are related by a neutral two-for-two switch with zero cycle debt, but they are exclusive resources. In the tight sign the conflict is a transfer-coordinate conflict; in the bad sign it is a shielding-bad-turn conflict.
+
+## Transfer graph and common pair shadows
+
+### Transfer edges and their fixed common shadow — Accepted
+
+An endpoint-transfer edge joins two exact covers of the same one-vertex deletion when one named endpoint moves from one rail to the other and all remaining vertices stay on the same residual rails. The move is exactly reversible.
+
+After additionally deleting the moved endpoint, both endpoint representatives have the identical two residual rails. They form an exact cover of the double deletion. Over this fixed common pair shadow there are four minimum three-cover representatives: the moved endpoint can attach on either side, and its physical dimer has two orientations. The attachment/dimer switches are neutral one-for-one exchanges with zero cycle debt.
+
+The fixed common shadow—not mere membership in one transfer component—is what licenses cross-representative comparison.
+
+### Bi-end locking and signed attachment sides — Accepted
+
+The four reverse root-cap turns over one transfer edge force the fixed deleted vertex to be blocked at both ends of both common-shadow rails. The moved endpoint has two explicit attachment placements and two dimer orientations. At the two attachment boundary supports, the fixed root and moved endpoint have opposite signed polarity.
+
+For one fixed attachment fiber, the attachment states are exhausted by:
+
+- a crossed pattern, with the moved endpoint attached at opposite sides of the two rails; or
+- one of two side-polarized patterns, in which a common dimer witness exists.
+
+The originally stated attachment-side dichotomy was corrected before acceptance. Only the corrected fixed-fiber version may be used.
+
+### Root basins and extremal transfer components — Accepted
+
+A cover is isolated in the fixed-root transfer graph exactly when every endpoint is completely shielded. The whole graph is edgeless exactly when every exact deletion cover is completely shielded. If an edge exists, that edge enters the accepted good-splice/root-mate basin without importing selected states from its endpoints.
+
+Within one transfer component, maximize the rail-size gap. No transfer can move an endpoint from the shorter rail to the longer rail there, so the longer rail is triply shielded at both ends; at least one transfer from longer to shorter remains. The minimum-gap dual is valid only when the minimum gap is at least two. Extremality belongs to the chosen component and representative, not to the entire transfer universe.
+
+### Attachment-fiber and endcap saturation — Accepted
+
+In a crossed fiber, the normalized endpoint covers are obtained by exchanging rail labels only; current paths are not reversed. The central one-hole path has one exact hole, its opposite mate aligns with a current reverse-boundary collision, and two arm trimers have exact complements. The two arm retractions are neutral and reversible.
+
+At an endcap, tight signs give two-for-two root-mate retractions. They commute to restore the original local rails while preserving the opposite attachment path. Bad signs have explicit singleton blocker sets and one-for-one outputs; the two bad-sign restorations also commute. This saturates local rail restoration only, not every cross-coupled use of the fixed-shadow packet.
+
+The higher accepted parent is a six-pair absorption/retraction family with opposite-polarity cap factorization. Exactly one absorption coordinate preserves a given transfer edge, and the local moves form a reversible restoration cube. This does not reproduce the older ancestry carried by R20/R19 or R28 through R34.
+
+### Opposite-end absorption inherits an edge — Accepted
+
+Choose the physical endpoints opposite the moved endpoint's two attachment coordinates. Apply the universal endpoint-absorption theorem to that same physical endpoint pair in both endpoint representatives. The selected trimer is identical in both, both complements are exact, both original attachment turns survive literally, and the same direct transfer still moves the same endpoint.
+
+No common pair shadow is claimed after also deleting the moved endpoint from these absorbed descendants.
+
+In the crossed normalization, aligned far-end sign gives two inherited exact complements, simultaneous exposure of the two far boundary states, exact singleton blocker sets, commuting seam restorations, commutation with the inherited transfer, and zero debt. The anti-aligned sign gives an explicit five-path, two exact complements, the same surviving transfer, and two bad historical extension turns. It is a normal form, not a global closure theorem.
+
+### Excluded transfer claims
+
+The following are not accepted and may not be used:
+
+- every extremal good transfer edge forces a two-vertex continuation;
+- every order-ten transfer component is edgeless.
+
+## Signed supports, payment, capture, and interaction
+
+### Signed-support actualization and aligned payment — Accepted
+
+A signed physical support with a named witness can be actualized using a disjoint marker. In the aligned dimer scope it either closes the conjecture through a two-cover or descends to singleton wi
