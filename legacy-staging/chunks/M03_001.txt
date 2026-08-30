@@ -1,0 +1,285 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+# Historical atlas: cover representations, routers, fans, and transfers
+
+> **2026-08-29 fresh-package status note.** This remains historical/perspective material. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and later audited append-only handoffs.
+
+
+> **2026-08-28 clean-packet note.** This is a historical atlas, not a live-status document. It is preserved substantially unchanged because its value is provenance, representation history, and reusable technique. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, and later independently audited handoff deltas. Historical archive files named inside this volume are provenance handles; the large raw archive is intentionally not included in this packet.
+
+
+## Purpose
+
+Much of the apparent size of the historical corpus comes from repeatedly changing the representation of the same obstruction. Those changes were not wasted. Each representation made a different invariant visible: topological order, blocker ownership, Hall deficiency, fixed-rail retention, physical endpoint transfer, common shadows, or ancestry.
+
+This volume keeps the representations and their useful theorem families while removing repeated local labels. Closed-walk-free results are marked as such and are not imported into the Strong proof without a new argument.
+
+## 1. A hierarchy of representations
+
+The project used six major representation layers.
+
+| Representation | Vertex or object represented | Edge or move represented | Information made visible | Main limitation |
+|---|---|---|---|---|
+| Ordered-state graph | An oriented physical pair | Append one vertex by a tight turn | Sources, sinks, height, extension order | Acyclic only under closed-walk-freeness |
+| Cover exchange graph | A selected path cover | Exact blocker exchange | Component gain and recurrence | Different edges may change different physical objects |
+| Fixed-skeleton router | One fixed set of rails with finitely many boundary phases | Neutral local switch | Simultaneous alternatives over one skeleton | Large labels and source-specific setup |
+| Hall dependency structure | Candidate states and their blockers | Dependency or alternating step | Deficiency, omitted candidates, mandatory gates | Auxiliary cycles are not physical cycles |
+| Fan or shell representation | One path endpoint with many physical contacts | Move or peel an arm/endcap | Boundary saturation and transfer | Production is cheap; consumption is hard |
+| Fixed-root transfer graph | Exact two-covers after deleting one vertex | Move one physical endpoint between rails | Reversibility, components, common pair shadows | Selected states do not propagate across a component |
+
+The transfer graph is not simply the modern name for every older graph. It fixes a deleted root and its vertices are actual exact covers. An ordered-state graph or Hall graph can be built without that fixed deletion frame.
+
+## 2. Ordered-state sources and release
+
+### 2.1 Source induction
+
+In the closed-walk-free phase, the ordered-state graph was acyclic. A source state had no legal predecessor. The source induction program removed the source's physical vertices, covered the remainder, and tried to insert the source packet back.
+
+The first stable source normal form was the **source-BB kernel**: both direct source insertions were blocked. Exact blocker accounting localized the obstruction to a small set of selected boundary states. A source was therefore either inserted, released through a neutral exchange, or trapped in a finite kernel.
+
+Normalized content:
+
+1. choose one source state in the acyclic state graph;
+2. take an exact cover of its complement;
+3. test the two natural insertions;
+4. when both fail, record the exact physical blockers rather than merely their number;
+5. exchange through an alternating dependency chain until a source boundary becomes available or a finite closed dependency remains.
+
+The Strong proof retains steps 2 through 4. Step 1 and termination by source height are CW-specific.
+
+### 2.2 Release circuits and ears
+
+A **release ear** was an alternating sequence of candidate insertions and blockers beginning at the trapped source. A successful ear ended at an unblocked candidate and produced a neutral or positive exchange. A closed ear became a dependency circuit.
+
+The durable theorem was a Hall-style alternative:
+
+- either the candidate family has a release ear; or
+- a deficient candidate subset has too few blockers and forms a localized kernel.
+
+The exact Hall debt identity later showed that deficiency is not abstract: it is the number of path cuts required to realize the candidate family. This idea survives strongly in modern blocker formulas and partition deficit identities.
+
+### 2.3 Signed ears and first failure
+
+When an ear first failed because one proposed turn had the wrong orientation, boundary antisymmetry produced a reverse signed turn. This became the prototype of a recurring method:
+
+> follow a neutral transport until the first failed local turn, then convert that failure into a named reverse support while retaining the transport history.
+
+Later Strong capture and first-contact theorems use the same proof shape without relying on acyclic height.
+
+## 3. Source return and promotion systems
+
+### 3.1 Reversed-source return
+
+The source could often be inserted only after reversing its oriented state. The resulting cover then had to return to the original source orientation. Early handoffs decomposed this into two charged rails and a serial pair of neutral switches.
+
+The **two-channel source-return reduction** said that all irrelevant components could be parked, leaving two rails that carry the source debt. External defects could be moved along the serial switch. The first middle failure forced a small source collision.
+
+This line is historical for Strong use, but its compression lesson remains powerful: park unaffected components and isolate the exact rails carrying orientation debt.
+
+### 3.2 Promotions
+
+A **promotion** was an exact move from a four-cover to a three-cover after inserting one source-related state and deleting its blockers. Two minimal promotions were compared by their common base.
+
+Promotion synchronization studied when two promotions could be realized over one fixed skeleton. Promotion collision identified the first pair of promotions whose blocker choices were incompatible. These ideas later reappeared as:
+
+- neutral transfer squares;
+- common pair shadows;
+- commuting endpoint exchanges; and
+- fixed-fiber attachment comparisons.
+
+### 3.3 Frozen fibers
+
+A frozen source fiber fixed the physical source packet, the unaffected rails, and one or more old selected states. Only a small list of local boundary choices could vary. This was a crucial improvement over comparing arbitrary covers: it made cross-representative facts meaningful because the fixed skeleton served as a common shadow.
+
+The modern transfer attachment fiber is the Strong-safe descendant of this idea. The old proofs remain useful examples of how to specify exactly what is held fixed.
+
+### 3.4 The promotion-Y frontier
+
+The terminal promotion configuration had three arms meeting a small source core, historically called a promotion Y. All proper subfamilies were neutral; the full family carried one unresolved dependency. The project later abandoned this object as a mandatory front door because fan and Hall reductions reached a more symmetric normal form.
+
+Retained value:
+
+- an example of a minimal dependent candidate family;
+- a compact testbed for blocker ownership;
+- evidence that all proper neutral subfamilies do not imply the full family is profitable; and
+- a precursor of support-unicycle arguments.
+
+## 4. Fixed-skeleton routers
+
+### 4.1 What a router was
+
+A **router** was not one graph. It was a finite family of exact covers sharing a physical skeleton. Its coordinates recorded local boundary orientations or one-block transfers. A router was **endpoint-complete** when each relevant external boundary role appeared in at least one coordinate.
+
+The goal was to replace a large case tree of local turns by one finite phase object.
+
+### 4.2 Seam rewriting
+
+The first router compression rewrote long local insertion proofs as changes of two seams. If only one seam was bad, move the defect along one rail; if both were bad, boundary antisymmetry supplied a finite reverse packet.
+
+This proof method is still active. The modern historical-seam blocker formulas and return alignment theorems are cleaner versions with exact representative and cycle-debt fences.
+
+### 4.3 One-bad coordinate stars
+
+When exactly one source insertion was bad, the finite router coordinates formed a star: every branch shared one central cover and differed by one boundary choice. A tight-cut argument showed that a nonstar transversal would improve the cover.
+
+The star normal form was genuinely useful inside the CW program, but its bare conclusion—many alternatives around one central representative—was later subsumed by physical fan and transfer-lattice parents. Its fixed-skeleton proof remains a reusable way to show that different local alternatives really do share one representative.
+
+### 4.4 Promotion squares and rank lifts
+
+Two independent neutral coordinates formed a square. Cutting one boundary could expose a new singleton or increase the number of forced endpoint phases. Iterating this was called a rank lift.
+
+Durable results and techniques:
+
+- a common-cut blocker interface identifies which coordinate changes after a cut;
+- endpoint completion can be proved by successively exposing each boundary port;
+- if two coordinates commute, the four covers must be checked as exact covers, not inferred from formal toggles; and
+- a rank count is meaningful only while the physical skeleton remains fixed.
+
+Modern endpoint-transfer squares and cubes use exactly these principles with a cleaner exact-cover definition.
+
+### 4.5 Endpoint blocker orthogonality and owner descent
+
+Two endpoint obstruction families were shown to have disjoint blocker ownership unless a physical fan appeared. Reassigning the blocking component then decreased a chosen ownership rank. This led to **owner descent**: either an endpoint became available or the cover entered a fan basin.
+
+In current language this is a historical extremal-cover argument. It is not dominated by universal endpoint absorption when the owner label is later consumed. It is dominated for bare fan production.
+
+## 5. Hall representations
+
+### 5.1 Candidate omission
+
+For a candidate family with one unit of Hall surplus, at least one candidate can be omitted while the rest are matched to blockers. The omitted candidate becomes a distinguished free gate or reverse turn.
+
+This **Candidate Omission** theorem survived several resets as a clean combinatorial fact. Its Strong use requires physical realization of the matched exchange and explicit cycle debt.
+
+### 5.2 Reverse-gate dichotomy
+
+With two possible blockers for one gate, the two orientations of the gate led to a finite alternative: a direct release, a reverse signed gate, or a smaller deficient kernel. This compressed several source and fan branches.
+
+Modern use: a template for turning exact two-hitter Hall structure into a named physical support. It does not by itself produce a current cover.
+
+### 5.3 Hall circuits, leaf cores, and anchors
+
+A minimal deficient Hall structure decomposed into leaves attached to a leafless core. Neutral leaf blocks could be parked. The core had a small number of gates and often one distinguished physical anchor.
+
+The resulting theorems included:
+
+- strict-Hall double-deletion three-gate cores;
+- a two-sum decomposition around a named anchor;
+- boundary `K3,2` orientation constraints;
+- long-bridge reattachment locks; and
+- leaf-core seam counts.
+
+These are CW-era structural tools. Their main modern value is the decomposition method: remove leaves whose exchanges are independently verified, then analyze the minimal physical core.
+
+### 5.4 Canonical Hall hulls
+
+Later work replaced arbitrary dependency paths by a canonical hull: all candidates reachable from one deficient root under successor closure. The hull was independent of some root choices, closed under unions in the audited scope, and localized its physical fences.
+
+The hull's support hypergraph was a forest; a minimal neutral atom had one support cycle, called a support unicycle. This corrected the false idea that every dependency path is itself a legal Hall toggle.
+
+Potential reuse in Strong work requires a cycle-aware quotient. The forest/unicycle distinction is useful because it separates combinatorial dependency cycles from physical tight cycles.
+
+### 5.5 Surplus-two sectors
+
+Deleting an internal object often produced two units of Hall surplus. The dependency system split into two parallel sectors, sometimes giving a phase square and sometimes a mixed reconstruction state. This was an early representation of two independent boundary coordinates.
+
+The current transfer lattice and two-ended exchange square are simpler Strong-safe incarnations. The Hall-sector version retains a dependency certificate and can be useful if a future proof must control which blockers serve both coordinates.
+
+## 6. Fans, double fans, hubs, and blossoms
+
+### 6.1 Physical fan
+
+A **fan** is a path endpoint together with several graph-intrinsic tight contacts into another path or residual set. The exact orientation and whether the fan arms are current must be stated.
+
+Three-Cover Fan Reduction showed that, in the relevant source/extremal setting, every minimum three-cover could be changed into one with a physical fan. This result is Strong-safe in its audited form. It is nonconsuming when a representative is already fan-saturated; producing the same fan again is not progress.
+
+### 6.2 Minimality double fan
+
+Choose a fan maximizing the complement or another stated extremal coordinate, delete one boundary, and recomplete. Either the fan transfers to a new rail or a fan appears at the opposite end of the same path. The result is a double fan.
+
+This was a major compression because it converted many source-insertion branches into one two-ended physical configuration.
+
+### 6.3 Clean cross and the `K3,3` grid
+
+Cut both fan boundaries. If the fan transfers, continue the descent. Otherwise the clean cross-incidence between the three vertices on each side is exactly a complete bipartite `K3,3` pattern. Its nine possible contacts formed a three-by-three phase grid.
+
+The grid exposed two lessons that persist:
+
+- a dense local incidence pattern is not a contradiction;
+- a useful next step must select or spend a contact while preserving its physical side and representative.
+
+The later boundary-transfer three-by-three lattice is algebraically similar but not the same theorem: its coordinates are actual exact endpoint transfers in a fixed singleton-root frame.
+
+### 6.4 Hub or pentagon
+
+Several boundary rank-two and Hall kernels reduced to one of two physical cores:
+
+- a hub with several arms sharing a center; or
+- a five-vertex cyclic blossom, often an induced pentagon.
+
+The hub supported owner descent and fan transfer. The pentagon supported rotations and reverse-state exits. Neither was impossible by itself.
+
+### 6.5 Fan peeling and saturation
+
+Lexicographic fan work repeatedly removed an outer arm, recompleted the remainder, and studied the first lost fan contact. Equal-size returns became nested-rail descent; singleton and dimer terminals were absorbed; triangle phases were sequestered; first internal breaches became bounded-width.
+
+This line generated valuable ancestry notions:
+
+- first lost arm;
+- old marker interval;
+- latest shell;
+- first exterior breach; and
+- protected family of fan contacts.
+
+Bare fan existence is now cheap, but these first-loss labels can still matter in a proof that needs to prevent arbitrary reset.
+
+### 6.6 Shells and envelopes
+
+A **shell** was a path or cover together with a nested family of retained boundary contacts. A **double-fan envelope** stored fan data at both ends. A **marker-component extremum** chose the cover maximizing the component holding a fixed marker.
+
+The Strong 2026-08-18 through 2026-08-20 program used these objects to control fixed-marker recurrence. It proved that many equal-size shell returns and one-sided pair shadows reduce to nested descent or bounded interfaces. What remained was object-changing recurrence: recompletion could preserve the theorem's truth while changing which physical carrier held the useful structure.
+
+## 7. Flow, brooms, shuttles, and blossoms
+
+### 7.1 Extended one-block flow
+
+The flow representation oriented neutral one-block transfers according to reverse height. A maximal flow path ended at a closed obstruction. The endpoints and side contacts of that obstruction formed a **broom**.
+
+Deep flow was eventually routed into the fan basin. This did not make the flow work redundant as technique: it showed how to convert an apparently unbounded exchange sequence into a bounded endpoint object.
+
+### 7.2 Closed brooms
+
+A closed broom had a handle of successive neutral transfers and a terminal group of blocked contacts. Extremality forced clean gates at the head and constrained parity along the handle. Several zipper arguments used alternating odd/even tail states.
+
+These proofs are CW-specific because their potential was state height. The reusable pattern is to choose an extremal neutral sequence and classify its first and last unavailable moves.
+
+### 7.3 Pure relay and shuttle
+
+When every step merely relayed one blocker without adding a new physical arm, the object simplified to a **shuttle**: two boundary gates connected by a fixed sequence of neutral transfers. A shuttle cell could often be restored by paying one Hall debt.
+
+The shuttle is an efficient old representation for a reversible local corridor. It is comparable to a path in the modern transfer graph, but it may move through covers with different deleted or marked objects. That flexibility is precisely why it cannot be identified with one transfer component.
+
+### 7.4 Blossom routing
+
+When a gate conflict could not be relayed, the support formed an odd blossom. Bad-turn conflicts and reversal conflicts had different physical exits. Blossom routing converted the odd core into a fan, a boundary contact, or a bounded residual packet.
+
+This remains a potentially reusable matching-style technique, provided the physical path forest and cycle debt are checked explicitly.
+
+## 8. Mirrors, reversals, and common shadows
+
+### 8.1 Mirror covers
+
+Many handoffs built a second cover by reversing one local physical dimer or swapping one endpoint attachment while keeping all other rails fixed. The useful invariant was not “the cover is similar”; it was the exact common set of unaffected states.
+
+Later terminology distinguishes:
+
+- graph-intrinsic reverse orientation of one physical pair;
+- a mirror representative actually selecting it;
+- a common deletion shadow in which both orientations can be tested; and
+- a later descendant that may retain only physical support identity.
+
+### 8.2 Common-shadow principle
+
+If two representatives differ only in the placement or orientation of named deleted vertices, delete those vertices as well. If the residual rails are literally identical and exact, cross-representative facts can be compared through that common shadow.
+
+This principle appears historically in frozen fibers, pair deletion, common-completion covers, fixed-side returns, root-funded wings, and finally endpoint-transfer edges. It is 
