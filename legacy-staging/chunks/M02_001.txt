@@ -1,0 +1,282 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+# Historical atlas: foundations, completion, and extremal paths
+
+> **2026-08-29 fresh-package status note.** This remains historical/perspective material. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and later audited append-only handoffs.
+
+
+> **2026-08-28 clean-packet note.** This is a historical atlas, not a live-status document. It is preserved substantially unchanged because its value is provenance, representation history, and reusable technique. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, and later independently audited handoff deltas. Historical archive files named inside this volume are provenance handles; the large raw archive is intentionally not included in this packet.
+
+
+## Purpose and scope
+
+This volume reconstructs the project's foundational line from the original boundary-tournament program through the current Strong deletion and global-longest theorems. It is not chronological transcription. Results are placed in a common language and compared by hypotheses, conclusions, and retained information.
+
+The raw certificates remain in the source archive. A historical statement is kept here when at least one of the following survives later compression:
+
+- it applies under a genuinely different hypothesis;
+- it gives a stronger conclusion in its narrower setting;
+- it preserves a named representative, marker, endpoint, orientation, or witness;
+- its proof method is reusable; or
+- it records a false strengthening that should not be rediscovered.
+
+## 1. The original boundary-tournament program
+
+The project began broader than the present Strong Level-(1) conjecture. The first portable handoff studied boundary tournaments through ordered local states and pursued quantitative path-cover bounds for several local levels.
+
+### 1.1 Ordered local states
+
+A path is controlled by consecutive ordered pairs. Extending a path by one vertex replaces its last ordered pair by the next pair. This naturally gives a directed graph of states: an arc records a legal tight extension.
+
+The early closed-walk-free setting made this state graph acyclic. That allowed height, source, sink, and topological-order arguments. Those conclusions do not survive automatically in the Strong setting, but the representation remains useful for:
+
+- recognizing that a local path operation is a walk in state space;
+- separating physical tight cycles from cycles in an auxiliary graph;
+- locating the first obstruction along a proposed extension sequence; and
+- converting a long local proof into a finite transition system.
+
+### 1.2 Early quantitative results
+
+The initial program contained several results not needed by the current two-cover spine but worth retaining.
+
+| Historical result | Normalized content | Present value |
+|---|---|---|
+| Acyclic extraction | In the closed-walk-free state graph, a sufficiently large state set contains a long directed path after removing bounded local conflicts. | Prototype for extracting a physical path from an auxiliary ordering. CW-specific as stated. |
+| Cycle-count to path-count conversion | Decompose an auxiliary directed structure into paths after accounting for its cycle components. | Conceptual ancestor of gain minus cycle debt. The Strong theorem replaces contradiction by constructive cycle opening. |
+| Level-(3,4) polynomial lower bound | A finite boundary tournament at those levels has a tight path of order on the scale of the fifth root of the ambient order. | Separate quantitative theorem; not subsumed by the Level-(1) two-cover conjecture. |
+| Branching recurrence and local-lemma threshold | Bounded forward branching plus dependency control forces a long tight path beyond an explicit threshold. | Reusable probabilistic/extremal technique outside the current smallest-counterexample spine. |
+| Level-(1) two-ended square-root theorem | Two-ended extension control gives a square-root-scale tight path, with a rigid equality pattern. | Early extremal ancestor of later endpoint reverse-star and gap arguments. |
+| Maximum-path intersection/transversal program | Study how global-longest paths meet and whether a small set hits every maximum path. | Still conceptually relevant to order-ten dual-longest and fixed-marker work, though no current proof depends on the original statements. |
+
+These results should not be described as failed simply because the research target narrowed. Their hypotheses and objectives differ from the Strong two-cover conjecture.
+
+## 2. Exact path-forest calculus
+
+The most durable early contribution was not a particular router. It was an exact description of when a proposed state set is a path forest.
+
+### 2.1 Conflict graph criterion
+
+Given a selected path cover and a proposed family of states, build the local conflict structure recording:
+
+- selected incidence exceeding the allowed path degree at a vertex;
+- incompatible predecessor or successor choices;
+- component joins that create a physical cycle; and
+- direct orientation conflicts.
+
+The proposed family is realizable exactly when these conflicts can be removed so that every vertex has path degree at most two, predecessor and successor roles are unique, and each physical component is a path rather than an unopened cycle.
+
+This criterion underlies all later blocker formulas. The modern language discards most names for blocker subtypes and keeps only the complete blocker set plus cycle debt.
+
+### 2.2 Exact blocker augmentation
+
+The early handoffs distinguished natural blockers, signed blockers, reversal blockers, matching blockers, and several router-specific blockers. In canonical form they all perform one job: they are the complete selected state set that must be removed when the candidate is inserted.
+
+What remains useful from the old taxonomy is provenance:
+
+- an incidence blocker identifies which endpoint role is lost;
+- an orientation blocker identifies the exact tested turn that failed;
+- a component blocker identifies which two historical components were already connected; and
+- a cycle blocker identifies a physical cycle that must be opened.
+
+When only component count matters, these names collapse to the complete blocker set. When a later theorem consumes role or ancestry, the subtype should be retained.
+
+### 2.3 Matching symmetric differences
+
+Several early proofs represented predecessor and successor choices as matchings and compared covers by symmetric difference. Alternating paths were genuine exchange paths; alternating cycles recorded neutral reconfiguration.
+
+This remains a useful proof method with one Strong correction: an alternating cycle in a matching graph need not be a physical tight cycle, and a physical tight cycle is not contradictory. The physical candidate must still be reconstructed and cycle debt counted.
+
+### 2.4 Exact gain
+
+Early closed-walk-free work often used inserted states minus removed blockers as the gain. The Strong reset corrected this to:
+
+> actual improvement equals inserted states minus blockers minus physical tight cycles created by the exchange.
+
+The old gain proofs remain valid whenever they independently show zero cycle debt. Otherwise they require repair.
+
+## 3. Rootedness, unrootedness, and minimality
+
+### 3.1 The rooted conjecture was false
+
+An early phase tried to prescribe a particular head, source, or root for the final two-cover. Explicit finite examples disproved that strengthening. The unrooted conjecture survived.
+
+This correction matters whenever an old proof says that minimality supplies a two-cover with a chosen endpoint. Minimality supplies an exact cover of a proper induced subgraph; it does not generally prescribe a terminal role.
+
+### 3.2 Smallest-counterexample normalization
+
+The durable normalization is:
+
+- the full counterexample has path-cover number three;
+- every nonempty proper induced subgraph has path-cover number at most two;
+- whenever one component is restored to an exact two-cover of its complement, the result is a minimum three-cover.
+
+Many early lemmas wrapped this fact in source, shell, marker, or router language. Their bare completion conclusion is now subsumed by universal prescribed-path completion.
+
+### 3.3 Universal prescribed-path completion
+
+Every proper tight path has an exact two-cover on its complement and can be restored as a current component of a minimum three-cover.
+
+Strict dominance consequences:
+
+- bare one-state currentization is redundant;
+- bare physical-pair currentization is redundant;
+- bare trimer currentization is redundant;
+- bare fan-arm or short-packet currentization is redundant whenever the packet is already a tight path.
+
+The older theorem survives if it also retains another selected state, a prescribed rail, a current endpoint, a marker, a common deletion frame, or ancestry.
+
+### 3.4 Componentwise exact re-rooting
+
+The completion theorem was later inverted. In any displayed minimum three-cover, delete any component; the other two already form an exact cover of the deletion. This simple observation subsumed several singleton-specific rigidity proofs and made old minimum-three representatives reusable as deletion roots.
+
+The important retained distinction is directional:
+
+- prescribed-path completion starts with a graph-intrinsic path and chooses a complement;
+- componentwise re-rooting starts with one displayed representative and turns one current component into the deleted root.
+
+The second preserves the other two rails literally; the first generally does not.
+
+## 4. Evolution of deletion rigidity
+
+### 4.1 Pair deletion
+
+Early pair-deletion rigidity proved that every exact cover after deleting a physical pair has two nontrivial rails. Its proof and several descendants used the deleted pair as an actualization marker.
+
+The modern small-deletion staircase gives the stronger size floor of three on both rails. Therefore the old theorem is dropped for bare nontriviality but retained as an ancestry label whenever the same physical pair, the two orientations of its dimer, and one exact common shadow are required.
+
+### 4.2 Trimer complements
+
+Exterior-trimer rigidity excluded singleton rails from the complement of a tight trimer. Short-path complement rigidity later excluded singleton rails for every proper tight path of order at most three. Universal small-deletion exactness and the staircase now imply the relevant size floors directly.
+
+What survives from the trimer-specific proofs is their use of the two terminal signed dimers and common middle anchor. That signed-anchor information is absent from the general size theorem and drives the current central-anchor interaction family.
+
+### 4.3 One-vertex deletion
+
+The one-vertex deletion rail-order-four floor was the first decisive universal size threshold. It yielded:
+
+- no singleton or dimer rail after deleting one vertex;
+- four one-hole endpoint-cap candidates around a prescribed singleton;
+- exact root collision packets; and
+- the order thresholds in the canonical splice trichotomy.
+
+Componentwise re-rooting showed that every singleton component of a minimum three-cover automatically enters this package.
+
+### 4.4 Deleting up to four vertices
+
+Universal small-deletion exactness later unified the remaining rigidity results. Deleting one through four vertices always leaves path-cover number exactly two. Adjoining an allegedly undersized rail to the deletion set gives the staircase rail floor for deletions of one, two, and three vertices.
+
+The repaired four-deletion proof is important history. A discarded proof tried to use only the cyclic case of the no-Hamilton four-vertex classification and ignored the transitive matching-block quotient. The accepted proof instead turns three of the four deleted vertices into a tight trimer and contradicts the one-vertex rail-order-four floor.
+
+This is a model proof compression: a general floor theorem removes a finite quotient split without losing orientation information needed elsewhere.
+
+## 5. Longest-path methods
+
+### 5.1 Direct endpoint tests
+
+If a path is globally longest, no exterior vertex can attach directly to either endpoint. Boundary antisymmetry converts those failed direct attachments into reverse endpoint turns. This is the source of a reverse-star system.
+
+Early papers derived such stars under lexicographic or deletion-maximal choices. The modern five-exterior equality theorem derives them from a clean size equality. The old extremal choices remain useful when they also choose ownership among several rails or retain a particular source cover.
+
+### 5.2 Five-exterior equality
+
+A proper tight path with exactly five exterior vertices is globally longest. Every exterior vertex supplies both reverse endpoint turns. This statement is Strong-safe and parent-level.
+
+It subsumes the bare reverse-star conclusion of many order-ten and maximin lemmas. It does not subsume their selected-cover, marker, transfer-coordinate, or source-maximin ancestry.
+
+### 5.3 Lexicographically maximal covers
+
+The historical lex-max program chose a minimum cover maximizing the ordered component sizes and then optimized secondary overlap or height data. It produced:
+
+- boundary ownership by the largest rail;
+- equal-mass double blocking;
+- gap-zero, gap-one, and gap-two endpoint restrictions;
+- maximal-complement fan and shell normal forms; and
+- explicit prohibitions on transfers that improve the size vector.
+
+The universal global-longest two-path gap parent now subsumes its bare endpoint-turn geometry for the two largest paths. The lex-max statements remain nonredundant when a proof uses:
+
+- the fact that both paths occur in one selected extremal cover;
+- which rail owns a boundary blocker;
+- a third component's size or role; or
+- a comparison to another cover with the same first coordinate.
+
+### 5.4 Two-ended gap trichotomy
+
+For a global-longest path disjoint from another path, test the two outer and two inner endpoint attachments. Outer attachments are forced bad. Inner good turns yield endpoint transfers and size bounds; inner bad turns yield reverse four-paths.
+
+The resulting gap-zero, gap-one, and gap-two trichotomy is the current parent of old equal-mass and gap-two involutions. In an exact complement, the two good endpoint transfers commute and are reversible with zero cycle debt.
+
+This is one of the clearest examples of canonical-form comparison revealing true dominance: the later theorem has weaker hypotheses and at least the old turn conclusions. The older theorem remains only for surplus extremal-cover provenance.
+
+### 5.5 Reverse height and endpoint height
+
+In the closed-walk-free era, each ordered state had a topological height. Reverse height measured how far a reversed boundary state lay from a source or sink. It supported double-long exclusion, closed-broom extrema, and flow descent.
+
+An important correction changed several endpoint-height formulas: a path endpoint carries an ordered state with direction, so head and tail normalizations cannot be interchanged.
+
+Height is unavailable in the Strong setting without a new acyclic quotient. Its proof technique survives as a possible potential on a cycle-condensed auxiliary system, provided the proof separately verifies that zero or negative auxiliary cycles do not hide physical gain.
+
+## 6. Local finite classifications
+
+### 6.1 Four vertices
+
+The Strong no-Hamilton four-vertex classification has two matching-block quotient types:
+
+- cyclic; and
+- transitive.
+
+Arguments using a fifth-vertex Hamilton extension eliminate only the cyclic case unless the transitive residue is separately excluded. This corrected the order-six one-hole currentization theorem: orders four and five close, while order six has a transitive matching-block residue with a labelled signature trichotomy.
+
+### 6.2 Cyclic four-vertex extension
+
+The cyclic quotient has a strong fifth-vertex extension theorem. Near-end placement can be optimized, and a fixed rail can often be retained through the extension. These theorems remain useful when a local packet is known cyclic. They do not apply to a generic non-Hamilton four-set.
+
+### 6.3 Universal internal-vertex graft versus local four-vertex grafts
+
+The broad graft theorem strictly subsumes the component-count content of cyclic-four-set and near-end graft lemmas. The local lemmas remain useful for:
+
+- a prescribed fifth-vertex placement;
+- a retained near-end state;
+- labelled quotient information; or
+- a fixed-rail complement.
+
+### 6.4 Small-order searches
+
+The early corpus contains finite studies of orders eight, nine, ten, thirteen, and fifteen, plus Level-(3) counterexamples to tempting general lemmas. These should be read as a laboratory of configurations, not as one linear proof.
+
+Notable durable lessons include:
+
+- the rooted two-cover strengthening already fails at small order;
+- one-sided endpoint reconfiguration is incomplete;
+- transitive four-vertex residues survive cyclic-only arguments;
+- order-ten repeatedly exhibits five-plus-four and five-plus-three profiles; and
+- higher-order examples show that apparent local return monotones can reset after changing the represented object.
+
+The organized order-ten genealogy is in `A7C2_20260829_06_SMALL_ORDER_ARCHIVE.md`.
+
+## 7. Dominance and retention table
+
+| Older result or family | Modern parent | What is truly subsumed | What must still be retained |
+|---|---|---|---|
+| One-state, pair, or trimer reselection | Prescribed-path completion | Bare ability to make the packet current | Any simultaneous old state, rail identity, role, marker, or ancestry |
+| Pair-deletion nontriviality | Small-deletion staircase | Both rails nontrivial; in fact each has at least three vertices | Fixed physical-pair shadow and orientation actualization data |
+| Exterior-trimer no-singleton rigidity | Small-deletion exactness and short-path complement floor | Bare complement size conclusion | Terminal signs and common central anchor |
+| Single-internal-vertex crossing rank | Cover-puncture fragmentation identity | Bare crossing count | A named crossing orientation or role from the specialization |
+| Cyclic-four-set graft component count | Universal internal-vertex graft | Blocker count, component gain, zero debt | Cyclic quotient, fixed fifth-vertex placement, retained near-end rail |
+| Lex-max equal-mass/gap endpoint turns | Global-longest gap parent | Bare two-path endpoint geometry | Extremal selected cover, boundary ownership, third-rail comparison |
+| Source/maximin reverse stars | Five-exterior or longest-path reverse stars when sizes match | Bare graph-intrinsic reverse turns | Source choice and source-boundary state identities |
+| Four-deletion cyclic proof | Repaired four-deletion exactness proof | Entire exactness conclusion | The correction itself as a warning; transitive quotient remains useful elsewhere |
+
+## 8. Reusable proof techniques from this line
+
+### Literal subtraction before recompletion
+
+When a displayed cover loses a named component or endpoint, first write exactly what remains. Many later parent theorems were discovered by noticing that the remaining rails already form an exact deletion cover. Recompletion should be invoked only after the literal survivor has been recorded.
+
+### Adjoin an undersized rail to the deletion
+
+To prove a rail floor after deleting a small set, suppose one rail is too short, add it to the deleted set, and contradict exactness at the larger deletion size. This staircase argument replaced multiple finite classifications.
+
+### Turn a failed attachment into a reverse turn
+
+Global longestness, maximinity, or shielding makes a direct attachment bad. 
