@@ -1,0 +1,423 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+# Historical representations and reusable proof techniques
+
+> **2026-08-29 fresh-package status note.** This remains historical/perspective material. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and later audited append-only handoffs.
+
+
+> **2026-08-28 clean-packet note.** This is a historical atlas, not a live-status document. It is preserved substantially unchanged because its value is provenance, representation history, and reusable technique. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, and later independently audited handoff deltas. Historical archive files named inside this volume are provenance handles; the large raw archive is intentionally not included in this packet.
+
+
+## How to use this volume
+
+This is the project's technique shelf. It deliberately retains methods from dominated, abandoned, or closed-walk-free branches when the method can be transplanted.
+
+Each entry records:
+
+- what is represented;
+- what move is legal;
+- what information the method preserves;
+- whether it is Strong-safe;
+- the common failure mode; and
+- where to look for exact certificates.
+
+Do not promote a historical method into a theorem without rechecking its hypotheses and physical realization.
+
+## 1. Representation cards
+
+### Ordered-pair state graph
+
+**Represents:** every oriented physical pair as a state; a legal tight extension as a directed arc.
+
+**Makes visible:** sources, sinks, extension sequences, first failed extension, and—in the CW-free setting—topological height.
+
+**Strong status:** the graph exists, but need not be acyclic. Source/height conclusions are CW-specific.
+
+**Reusable move:** encode a long sequence of local path extensions as one state walk, then translate the first obstruction back to a physical turn.
+
+**Failure mode:** treating an auxiliary directed cycle as a physical tight cycle, or importing height into Strong work.
+
+### Conflict graph and path-forest test
+
+**Represents:** proposed and selected states with conflicts for incidence, predecessor/successor uniqueness, orientation, component joins, and physical cycles.
+
+**Makes visible:** the exact complete blocker set and whether a candidate is a path forest.
+
+**Strong status:** Strong-safe when physical cycles are separately detected and opened.
+
+**Reusable move:** prove a local surgery by listing every blocker rather than arguing informally that “nothing else changes.”
+
+**Failure mode:** counting raw state surplus without cycle debt.
+
+### Matching and alternating structure
+
+**Represents:** predecessor or successor assignments as matchings; cover changes as alternating paths or cycles.
+
+**Makes visible:** neutral exchanges, dependency components, and common blockers.
+
+**Strong status:** combinatorially safe, but physical tightness and cycle debt need separate proof.
+
+**Reusable move:** use symmetric difference to factor a complicated cover comparison into atomic changes.
+
+**Failure mode:** assuming matching components toggle independently or that an alternating cycle is physical.
+
+### Frozen skeleton or fiber
+
+**Represents:** several covers sharing exactly the same unaffected rails and vertices, with only a bounded local packet varying.
+
+**Makes visible:** which states are truly common across representatives and which coordinate pays for each change.
+
+**Strong status:** Strong-safe when every cell is an actual exact cover.
+
+**Reusable move:** before comparing covers, freeze the physical skeleton and name the allowed local coordinates.
+
+**Failure mode:** calling visually similar covers one fiber without literal common-state verification.
+
+### Promotion system
+
+**Represents:** exact moves from a higher-component cover to a minimum cover, indexed by inserted source states and their blockers.
+
+**Makes visible:** minimal dependent candidate families, common bases, promotion collisions, and square coordinates.
+
+**Strong status:** individual exact moves may be Strong-safe; source height and CW termination are not.
+
+**Reusable move:** compare two minimal exchanges from one common base to expose their incompatible blocker ownership.
+
+**Failure mode:** treating a formal coordinate toggle as an exact cover without checking physical cycles.
+
+### Fixed-skeleton router
+
+**Represents:** a finite family of exact covers over one physical rail skeleton, with boundary phases as coordinates.
+
+**Makes visible:** endpoint completeness, one-bad stars, rank lifts, and common-cut interfaces.
+
+**Strong status:** safe if all cells are certified without CW height.
+
+**Reusable move:** replace a sprawling local case tree by one finite coordinate object.
+
+**Failure mode:** continuing to enlarge the router after the needed physical packet is already cheap.
+
+### Hall dependency structure
+
+**Represents:** candidates on one side, blockers on the other, and dependencies under alternating reachability.
+
+**Makes visible:** deficiency, omitted candidates, release ears, canonical hulls, leaf cores, and minimal support cycles.
+
+**Strong status:** Hall combinatorics is safe; physical realization and cycle debt are separate.
+
+**Reusable move:** extract a minimal deficient physical core after parking verified leaves.
+
+**Failure mode:** treating a dependency path as a legal exchange or an auxiliary cycle as physical.
+
+### Fan, double fan, and shell
+
+**Represents:** many tight contacts from one or two path ends, sometimes nested through first-loss history.
+
+**Makes visible:** boundary saturation, transfer directions, common centers, first lost arms, and fixed-marker recurrence.
+
+**Strong status:** the physical fan theorems are Strong-safe in audited scope; some lex or height derivations are historical.
+
+**Reusable move:** choose a fan extremum, delete one boundary, and compare the first transferred or lost arm.
+
+**Failure mode:** calling fan production progress after the representative is already saturated.
+
+### Hub and blossom
+
+**Represents:** a bounded physical core left after fan or Hall reduction: either many arms around a center or an odd cyclic support.
+
+**Makes visible:** common anchors, parity, rotations, and exits from a minimal dependency core.
+
+**Strong status:** physical turns are usable; any CW-derived impossibility is not.
+
+**Reusable move:** route a large auxiliary obstruction into one bounded physical core before doing local turn tests.
+
+**Failure mode:** assuming the hub or blossom is impossible merely because it is highly constrained.
+
+### Flow, broom, and shuttle
+
+**Represents:** a chain of neutral one-block transfers, its extremal blocked endpoint, or its pure reversible corridor.
+
+**Makes visible:** first and last unavailable moves, parity, clean gates, and bounded endpoint obstructions.
+
+**Strong status:** the old potential used CW height; the corridor factorization itself can be reused if a new Strong-safe potential or finite termination proof is supplied.
+
+**Reusable move:** compress an unbounded exchange process to its extremal endpoint packet.
+
+**Failure mode:** assuming neutral movement is progress or that reverse height exists in Strong work.
+
+### Common shadow
+
+**Represents:** the literal residual graph and rails obtained after deleting all vertices on which two representatives differ.
+
+**Makes visible:** graph-intrinsic facts that can be compared across those representatives.
+
+**Strong status:** Strong-safe and central.
+
+**Reusable move:** replace an illicit cross-cover conjunction by deletion to an exact common shadow.
+
+**Failure mode:** using common physical vertex sets without identical rail orientations or exactness.
+
+### Pair envelope and capacity system
+
+**Represents:** a signed pair together with its carrier, complement, witnesses, and maximum quiet reservoir.
+
+**Makes visible:** canonical complement, repeated anchor use, bounded quiet witnesses, and payment ancestry.
+
+**Strong status:** audited Strong modules exist; capacity is representative-relative.
+
+**Reusable move:** prevent pair reminting from forgetting the physical pair and anchor that generated it.
+
+**Failure mode:** treating capacity or mass as a global monotone across resets.
+
+### Fixed-root transfer graph
+
+**Represents:** exact two-covers after deleting one fixed vertex; an edge moves one named endpoint between rails.
+
+**Makes visible:** connected components, rail-gap extrema, reversibility, attachment fibers, and exact common pair shadows.
+
+**Strong status:** Strong-safe.
+
+**Reusable move:** study cover reconfiguration globally while retaining one root and one moved endpoint.
+
+**Failure mode:** importing selected states across a component or assuming every useful edge continues.
+
+### Root rotation
+
+**Represents:** an exact return in which the old marker and a surviving path piece coalesce into a new global-longest root.
+
+**Makes visible:** marker-role transitions, reversible terminal rotations, internal reverse excess, and re-entry into the root theorem package.
+
+**Strong status:** Strong-safe in the accepted order-ten equality scope.
+
+**Reusable move:** treat a return as a legitimate new root and compare its exact reverse to the original representative.
+
+**Failure mode:** calling recurrence a descent without a reset-safe quantity.
+
+## 2. Proof-method cards
+
+### Complete blocker accounting
+
+**Procedure**
+
+1. State the current representative.
+2. List the proposed inserted states.
+3. At every affected vertex, list selected predecessor and successor incidences.
+4. Identify component joins and any physical cycle.
+5. Delete the complete blocker set.
+6. Open one state per physical cycle.
+7. Write the exact resulting components.
+
+**Why it matters:** this method repaired most false local exchanges.
+
+### Literal survivor before minimality
+
+**Procedure**
+
+1. Delete the named component or packet from the displayed cover.
+2. Write every surviving rail literally.
+3. Determine whether they already give the required exact cover.
+4. Invoke minimality only for the uncovered residual, if any.
+
+**Why it matters:** componentwise re-rooting, small-deletion shadows, and several seam restorations were found this way.
+
+### First-failure conversion
+
+**Procedure**
+
+1. Order a proposed neutral transport or extension sequence.
+2. Choose the first failed turn, first lost arm, first changed owner, or first contact.
+3. Apply boundary antisymmetry to that exact ordered test.
+4. Retain all earlier successful states and their representative.
+
+**Why it matters:** the first event carries more ancestry than an arbitrary later collision.
+
+### Common-shadow comparison
+
+**Procedure**
+
+1. Name two representatives and all vertices whose placements differ.
+2. Delete those vertices.
+3. Verify literal identity and orientation of the residual rails.
+4. Prove the residual cover exact.
+5. Compare attachment tests or signs over that one shadow.
+
+**Why it matters:** this is the correct way to harvest information from multiple covers without illicit selected-state transfer.
+
+### Adjoin the undersized rail
+
+**Procedure**
+
+1. Assume an exact small-deletion cover has a rail below the desired floor.
+2. Add that rail's vertices to the deletion set.
+3. Use exactness at the larger deletion size.
+4. Contradict the existence of a Hamilton complement or an earlier rail floor.
+
+**Why it matters:** the small-deletion staircase replaced many finite classifications.
+
+### Extremal neutral sequence
+
+**Procedure**
+
+1. Choose a potential justified in the exact fixed universe: height, overlap, rail gap, owner rank, or marker component size.
+2. Follow neutral moves that improve it.
+3. At an extremum, classify forbidden outgoing moves.
+4. Convert each forbidden move to a blocker or reverse turn.
+
+**Strong caution:** the potential must survive cycles and must be defined on one fixed universe. CW height and representative-relative quantities are not global Strong potentials.
+
+### Equality coalescence
+
+**Procedure**
+
+1. Partition the current deletion graph into physical classes with known intrinsic path-cover costs.
+2. Prove independent lower bounds requiring transitions across two cuts.
+3. Apply the partition identity.
+4. On equality, show one transition must satisfy both cut requirements.
+5. Read the exact concatenated current rails.
+
+**Why it matters:** this method turned an anonymous minimum count into root rotation and corrected a false two-contact interpretation.
+
+### Marker-fold generation
+
+**Procedure**
+
+1. Start with two global-longest paths sharing an exact marker-deletion shadow.
+2. Test the two orientations through one marker vertex.
+3. Use reverse stars to build a new five-path in the selected fold type.
+4. Apply the five-exterior theorem to that fold path.
+5. Intersect its reverse-star system with the original longest path's system.
+
+**Why it matters:** one local antisymmetric choice becomes a large common-witness sign family.
+
+### Fixed-trimer anchoring
+
+**Procedure**
+
+1. Select a fixed trimer disjoint from a path or sign family.
+2. Pair one target sign with one terminal trimer sign.
+3. Pair the opposite target sign with the other terminal trimer sign.
+4. Record the common middle anchor.
+5. Invoke the no-quiet-remint theorem on the second birth.
+
+**Why it matters:** it converts abundant signs into nonquiet historical interaction without another marker construction.
+
+### Adaptive witness selection
+
+**Procedure**
+
+1. List every admissible witness and polarity for one physical support.
+2. Fix the selected marker in one deletion cover.
+3. Choose a witness not lying on that marker.
+4. Apply same-frame actualization and orientation-selective capture.
+
+**Why it matters:** it eliminates concentration one crossing at a time while preserving the source cover.
+
+### Static-core transparency
+
+**Procedure**
+
+1. Separate the graph-intrinsic static package from the currently selected pair.
+2. Perform the accepted pair excursion or floor descent.
+3. Carry the static package only as truth and ancestry.
+4. Record which objects cease to be current.
+
+**Why it matters:** it permits proof-tree compression without false simultaneous selection.
+
+### Protected first contact
+
+**Procedure**
+
+1. Choose one actual capture descendant.
+2. Choose the designated quiet continuation licensed by the protection theorem.
+3. Identify the first later event touching the anchor.
+4. Stop there and record the contact output before any further recompletion.
+
+**Why it matters:** it prevents a captured support from being silently reused as an unrelated new epoch.
+
+### Same-candidate audit
+
+**Procedure**
+
+1. Write the final proposed two-path candidate explicitly.
+2. Name every seam turn in that candidate.
+3. For each turn, identify the representative and theorem that certify it.
+4. Reject any certificate that proves only one historical state or comes from another candidate.
+5. Verify the complement and component count after all blockers are removed.
+
+**Why it matters:** this is the controlling correction at the final assembly boundary.
+
+## 3. How old methods translate into current language
+
+| Old expression | Current canonical interpretation |
+|---|---|
+| source release | exact insertion or neutral blocker exchange from a source-selected frame |
+| promotion | exact component-reducing exchange from a common base cover |
+| phase | one local coordinate choice in a fixed family of representatives |
+| port | a named boundary endpoint role or attachment coordinate |
+| wire | a sequence of neutral blocker transports |
+| tooth | a candidate side attachment amplifying a router |
+| charge | unresolved component or blocker debt carried by a named rail |
+| fence | a blocker family preventing a source or marker from leaving its local fiber |
+| router | finite exact-cover family over one frozen physical skeleton |
+| gate | distinguished candidate state at the boundary of a dependency core |
+| Hall ear | alternating candidate/blocker release sequence |
+| hull | successor-closed minimal dependency region |
+| fan | several named tight endpoint contacts; current status must be stated separately |
+| blossom | bounded odd support core of a matching or dependency system |
+| broom | extremal neutral-transfer chain plus blocked terminal contacts |
+| shuttle | reversible neutral corridor between two boundary gates |
+| shell | carrier plus nested retained boundary/contact history |
+| envelope | signed pair plus its carrier, complement, and payment ancestry |
+| portal | a locally productive packet not yet connected to a global consumer |
+| currentization | construction of one representative selecting the named packet |
+| remint | birth of a new signed pair after a prior payment epoch |
+| floor | minimum-support paid checkpoint with ancestry |
+| common shadow | literal exact residual cover shared after deleting all differing vertices |
+| rotation | exact root change by reordering or transferring named boundary vertices |
+| return | later exact cover of a previously deleted physical marker or support |
+
+## 4. Methods that require a new proof before Strong use
+
+The following are not banned ideas; their old theorems depend on closed-walk-freeness or another lost hypothesis.
+
+- global source/sink induction in the ordered-state graph;
+- topological state height and reverse height;
+- termination because every auxiliary walk strictly changes height;
+- contradiction from a directed auxiliary cycle;
+- independent toggling of matching or Hall components;
+- scalar insertion profiles assumed monotone under arbitrary recompletion;
+- any theorem whose proof says a physical tight cycle cannot exist.
+
+A future Strong version may use condensation into strongly connected components, a cycle-adjusted potential, or constructive cycle opening. It must prove those replacements explicitly.
+
+## 5. Techniques worth re-testing against the current frontier
+
+These are not research instructions or accepted theorems. They are retained creative options with clear prerequisites.
+
+### Common-shadow lift of protected continuation
+
+Try to delete exactly the vertices on which the return representative and protected continuation differ. If their residual rails become one exact common shadow, current seam geometry and first-contact ancestry might be compared without transporting selected states directly.
+
+### Cycle-adjusted potential on a fixed transfer component
+
+The transfer graph supplies a finite fixed universe absent from the old flow program. A potential combining rail gap, preserved seam count, and explicit cycle debt may recover part of the broom/shuttle extremal method without CW height.
+
+### Fixed-trimer anchoring of restored seams
+
+Far return restores two seams and retains one selected crossing. If a fixed trimer can be kept disjoint in the same frame, its two terminal signs may turn later seam use into a named anchored interaction rather than an anonymous first contact.
+
+### Hall hull over a common pair shadow
+
+The common shadow fixes residual rails across four attachment representatives. A Hall dependency system built only from attachment tests over that shadow would avoid the old cross-cover ambiguity. Physical realization and cycle debt would still need proof.
+
+### First-loss analysis inside a transfer component
+
+The old shell method tracked the first lost fan arm. A modern analogue could track the first lost historical seam or first change in capture role along a transfer path. This would require a theorem that the relevant history is well-defined across each edge.
+
+## 6. Technique selection checklist for concurrent agents
+
+Before reviving an old method, record:
+
+1. Is the ambient setting Strong or closed-walk-free?
+2. What is the fixed universe of representatives?
+3. What physical ve
