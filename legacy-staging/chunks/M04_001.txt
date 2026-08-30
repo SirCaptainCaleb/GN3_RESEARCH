@@ -1,0 +1,304 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+# Historical atlas: signs, pairs, payment, and floors
+
+> **2026-08-29 fresh-package status note.** This remains historical/perspective material. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and later audited append-only handoffs.
+
+
+> **2026-08-28 clean-packet note.** This is a historical atlas, not a live-status document. It is preserved substantially unchanged because its value is provenance, representation history, and reusable technique. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, and later independently audited handoff deltas. Historical archive files named inside this volume are provenance handles; the large raw archive is intentionally not included in this packet.
+
+
+## Purpose
+
+The signed-support line was the project's main attempt to turn abundant local path structure into an accounting system that survives recompletion. It succeeded at producing, actualizing, paying, and steering small supports. It did not by itself solve the final same-representative assembly problem.
+
+This volume separates four ideas that older language often blended:
+
+1. a graph-intrinsic signed support;
+2. a selected marker that actualizes it;
+3. a later paid descendant or refund; and
+4. historical ancestry retained after the support is no longer current.
+
+## 1. Minimal signed language
+
+A **signed support** consists of:
+
+- a named oriented tight path or dimer;
+- its polarity, usually head-facing or tail-facing;
+- a named witness vertex outside the support; and
+- the exact ordered turn proving the sign.
+
+A **balanced pair** consists of two vertex-disjoint signed supports of opposite polarity. Its **mass** is the total number of support vertices.
+
+An **actualizing marker** is a disjoint selected path or state used to convert graph-intrinsic sign information into one exact cover comparison. **Payment** is the certified descent that reduces support width or closes with a two-cover. A **refund** records the physical resource returned by that descent.
+
+A **floor** is a paid pair configuration at the smallest support mass reached by the accepted descent theorem. A floor is not automatically terminal; it is a checkpoint with ancestry.
+
+## 2. Origins of sign information
+
+### 2.1 Boundary antisymmetry
+
+The earliest signed supports were simply failed extension tests. If a proposed ordered turn was bad, complete reversal was tight. The witness and orientation were therefore determined by the failed test.
+
+This remains the safest way to create a sign. It also explains why witness order cannot be rearranged: the certificate remembers which turn was tested.
+
+### 2.2 Terminal dimers of a trimer
+
+A tight trimer has two terminal dimers:
+
+- the first dimer has one polarity with the third vertex as witness;
+- the second dimer has the opposite polarity with the first vertex as witness.
+
+They share the middle physical vertex as a central anchor. This elementary reservoir eventually powered the fixed-trimer no-quiet-remint and multi-anchor interaction families.
+
+### 2.3 Reverse stars
+
+A global-longest path and an exterior vertex give two failed direct endpoint attachments and therefore two reverse endpoint signs. A full exterior set gives a reverse-star system.
+
+Historically these were derived from source height, lexicographic maximality, shell maximality, or deletion maximality. The modern five-exterior parent supplies the bare turns from a size equality, but the old derivations may retain a selected cover or first-loss ancestor.
+
+### 2.4 Crossing extraction
+
+A selected crossing of a retained-path cut can determine a signed subpath or terminal dimer. The R15/R16 return theorem and later return normal forms use the crossing's exterior endpoint as the sign witness. This is stronger than an anonymous sign because the witness, selected crossing, and return frame are linked.
+
+## 3. Sign birth and actualization
+
+### 3.1 Early sign-birth families
+
+The 2026-08-18 through 2026-08-21 work developed several ways to produce a signed pair:
+
+- proper-turn front doors;
+- double-fan and shell terminals;
+- fixed-marker carrier contacts;
+- pair-envelope boundaries;
+- cross-head singleton forks;
+- fragmentation-generated crossings; and
+- reverse-star endpoint dimers.
+
+Most are now demoted for bare production. They remain useful when the sign is tied to a chosen carrier, shell, pair envelope, first-loss event, or return crossing.
+
+### 3.2 Marker actualization
+
+Given a signed support and a disjoint nontrivial marker path, test the marker's terminal turn against the sign witness.
+
+- If the test is tight, the marker path itself is an opposite-polarity support.
+- If the test is bad, boundary antisymmetry gives a short opposite support at the marker endpoint.
+
+The result is one balanced pair. The orientation selected by the old cover is not automatically the orientation used for actualization.
+
+### 3.3 Orientation-selective dimer capture
+
+When the actualizing marker is a physical dimer, choose its orientation so that either desired physical endpoint becomes the captured endpoint. This is an actualization choice; it does not change which orientation was selected in the source cover.
+
+This distinction corrected multiple earlier statements that silently reversed a current marker.
+
+### 3.4 Support-family actualization
+
+If several supports have the same polarity and same witness, one marker test produces one common opposite support for the entire family. This is the parent of bidirectional-dimer paired actualization: the two orientations of one physical dimer are merely two members of the family.
+
+The common certificate exists before payment. Later paid descendants are not coupled.
+
+## 4. Pair envelopes and capacity
+
+### 4.1 Pair envelope
+
+A **pair envelope** was a maximal or canonical region containing a signed pair together with the selected carrier states and residual components needed for payment. It was introduced to stop pair reminting from forgetting the physical origin of the supports.
+
+The envelope line proved:
+
+- an exterior-core defect identity;
+- equivalence between a singleton residual kernel and a minimal envelope defect;
+- two-rail threading by a mate trimer; and
+- canonical residual complements in several small-mass cases.
+
+Universal deletion and re-rooting parents now subsume many bare complement conclusions. The envelope remains useful when the same support pair, carrier crossing, or canonical complement must be retained through descent.
+
+### 4.2 Capacity
+
+The **capacity** of an anchored sign system measured how many witnesses or independent opposite supports could be accommodated without immediate interaction. Several handoffs chose capacity-maximal systems and proved reverse-star or collision alternatives.
+
+Durable lessons:
+
+- a capacity maximum is a representative-relative extremum, not a global monotone;
+- a large quiet witness reservoir is impossible under the accepted anchored-capacity parent;
+- a flat capacity face forces a collision or one residual exception; and
+- at an already saturated floor, even the one-residual exception disappears.
+
+Capacity was strategically demoted once direct root and trimer systems supplied collisions more cheaply. Its retained value is the bounded-reservoir theorem and named anchor history.
+
+### 4.3 Pair complement sandwich
+
+The 2026-08-21 reset organized pair descent by looking simultaneously at the support pair and the exact cover of its complement. If neither side could be paid directly, the complement's rails forced new signs or crossings. This “sandwich” compressed many width-specific cases.
+
+The method survives in modern common-shadow reasoning: use one exact complement as a fixed frame rather than opening unrelated recompletions for the two orientations.
+
+## 5. Payment and refund
+
+### 5.1 Opposite-rail actualization
+
+A signed dimer can be actualized on a nontrivial rail disjoint from the support and witness. The resulting exact exchange either creates a spanning two-cover or lowers the support width. This was the basic payment entry.
+
+### 5.2 Aligned signed-dimer refund
+
+When sign orientation, marker orientation, and opposite rail are aligned in the audited order, the dimer can be paid to a singleton descendant while retaining a named refund. The head/tail dual must be stated separately.
+
+The theorem does not say that both orientations can be paid simultaneously. A bidirectionally signed physical dimer gives two separately eligible descendants.
+
+### 5.3 Inherited-turn endpoint-selective floor
+
+If a sign comes from a named inherited turn, payment can preserve which endpoint survives into the floor. This is stronger than an anonymous mass reduction and remains useful in return/capture lines.
+
+### 5.4 Bi-support double refund
+
+Two signed supports on one carrier can sometimes be paid in an order that returns two named physical resources. The theorem's value is simultaneous ancestry, not merely reaching the same mass-two floor as two independent payments.
+
+### 5.5 Nonfloor pair transience
+
+Above the floor, a paid pair cannot remain quietly unchanged under the accepted steering sequence. It either descends, creates contact, changes role, or enters a bounded interaction. This blocked the strategy of repeatedly relabeling the same pair as progress.
+
+### 5.6 Complete floor steering
+
+At mass two, a finite set of steering moves gives a spanning two-cover or one of the recorded anchored interaction outputs. It is a continuation theorem, not a claim that every floor immediately closes.
+
+## 6. Same-frame capture and concentration
+
+### 6.1 Why the frame matters
+
+Early sign proofs often produced a support in one cover, found a crossing in another, and actualized the pair in a third. This lost the selected crossing's identity. The R33 line fixed one support-deletion cover and demanded that the sign and selected crossing be usable there.
+
+### 6.2 Capture-or-concentrate
+
+For a signed support inside a retained carrier and one exact support-deletion cover:
+
+- if a selected carrier/exterior crossing avoids the sign witness, use that crossing as the marker and capture either chosen endpoint;
+- if every selected crossing meets the witness, deleting the witness leaves at most the audited number of cut-pure components.
+
+Aligned refund ancestry remains available.
+
+Concentration is local to that exact frame. It is not a graph-level obstruction.
+
+### 6.3 Witness-deleted capture
+
+A later parent deletes the witness and uses a surviving carrier crossing directly. This compressed some terminal specializations, but did not replace R33 when the exact original selected crossing or concentration alternative mattered.
+
+### 6.4 Adaptive witnesses
+
+If one support has several admissible signs, choose a witness avoiding the selected marker. This converts the capture-or-concentrate alternative into direct capture for that marker. Internal path dimers have two natural neighboring witnesses, so every selected parent crossing is capture-capable separately.
+
+This is a composition of accepted mechanisms, but its crossing-by-crossing formulation is important: it eliminates concentration as an obstruction for every selected internal-dimer crossing, not merely one chosen crossing.
+
+## 7. Collision line
+
+### 7.1 Same-polarity collision
+
+Two same-polarity certificates on one physical support with distinct witnesses form a two-extension collision. The exact witness order must be tested. A cyclic permutation of a certified turn is not certified.
+
+The corrected terminal-collision spend ledger showed that many apparent local spends are nonpositive once endpoint-local blockers are counted. Disjoint neutral surgery cannot rescue a nonpositive terminal spend merely by occurring elsewhere.
+
+### 7.2 Opposite-polarity exclusivity
+
+Two opposite signs on one physical support with distinct witnesses produce the accepted strict two-ended signed path. This is productive structure but not automatically a spanning two-cover.
+
+### 7.3 Root collision production
+
+The root three-cover line proved:
+
+- physical-boundary fan-to-collision without nondegeneracy assumptions;
+- universal root entry to a same-polarity collision;
+- boundary-anchored collision normal form;
+- prescribed-singleton double boundary collisions; and
+- disjoint companion-collision packets.
+
+Collision production became cheap. Later work correctly stopped crediting another anonymous collision as progress. Root collision theorems remain useful when they retain the prescribed singleton, boundary identity, disjointness, or ancestor exteriority.
+
+### 7.4 Cross-pinned peeling
+
+Prescribed-singleton collision work developed cross-endcap pivot spends and peeling parents. The strongest descendants preserved an ancestor core and forced later collision supports outside it after two-sided enlargement.
+
+The local terminal-spend claims were repaired to respect witness order and endpoint-local blockers. The ancestor-core separation parent remains valuable because ordinary root collision packets do not remember the old core.
+
+## 8. Central-anchor interaction
+
+### 8.1 Fixed-trimer no-quiet-remint
+
+The two terminal dimers of one fixed trimer have opposite polarity and share its middle anchor. If a balanced pair is born through one terminal dimer and a later pair is born through the other, the second birth cannot be a quiet independent epoch. The historical support-orthogonalization or cross-generation interaction theorem fires at the fixed middle anchor.
+
+This theorem does not close the conjecture. It converts repeated pair birth into explicit anchored interaction.
+
+### 8.2 Two-trimer double anchor
+
+Two disjoint trimers produce two direct balanced pairs. Both use the same unordered set of their two middle vertices. The fixed-trimer theorem can be read from either viewpoint, so the packet is nonquiet at both anchors.
+
+### 8.3 Path/trimer interaction fan
+
+Every consecutive trimer window of a path disjoint from a fixed trimer yields the same construction. Hence every internal path vertex pairs with the fixed trimer's middle vertex as a double-anchor interaction.
+
+This strictly subsumes the symmetric two-trimer theorem for bare interaction production. The two-trimer version remains a convenient exact cell and may have a selected three-plus-three complement.
+
+### 8.4 Pivot central-anchor systems
+
+In the order-ten equality pivot, marker folds saturate terminal dimers of one global-longest path by all vertices of the opposite three-vertex shadow plus a marker. Pairing those dimers with the shadow trimer's terminal dimers gives a fixed central-anchor interaction without marker actualization or pair deletion.
+
+Opposite marker fold types give two different anchor systems. They are simultaneous historical certificates but not current paid descendants.
+
+## 9. Static-core-transparent descent
+
+The **Static-Core Transparent Pair Excursion** was designed for exactly this situation: a rich graph-intrinsic configuration produces a direct pair, but payment changes the selected cover. The theorem preserves the truth and ancestry of the static core through the excursion and returns either a two-cover or an ancestry-bearing floor.
+
+It does not preserve simultaneous current selection. This fence is central to the current order-ten architecture. The pivot, triple-shadow, and return packages can survive as history at a floor without becoming final assembly inputs.
+
+## 10. Fixed-turn, role-loss, and first-contact ancestry
+
+### 10.1 Fixed-turn quiet-lineage descent
+
+Several older R23-R27 theorems fixed one inherited turn and chose a lexicographically extremal quiet continuation. If the turn lost its role, the first loss forced contact or a smaller fixed-turn coordinate.
+
+Bare currentization is now subsumed, but the first-loss chronology and fixed-turn identity remain potentially useful.
+
+### 10.2 Historical anchor protection
+
+After capture, one designated quiet continuation can protect the captured anchor until a target role or first contact. This is stronger than graph-intrinsic persistence and weaker than arbitrary permanent protection.
+
+### 10.3 First-contact spending
+
+If a later operation uses a returned signed dimer containing the captured anchor, it necessarily touches that anchor. It must therefore be preceded by an exposed contact or be the first exposed contact itself. This makes later reuse ancestry-visible but does not ensure that the original crossing or seam remains current.
+
+## 11. Dominance and retention table
+
+| Older result | Later parent | Droppable content | Retained surplus |
+|---|---|---|---|
+| Generic sign birth from fan/shell | Boundary antisymmetry plus reverse stars or root package | Bare existence of a signed support | First-loss, shell, carrier, or extremal ancestry |
+| Bidirectional-dimer paired actualization | Same-witness support-family actualization | Two-support common marker test | Exact pair-deletion frame if later consumed |
+| Symmetric two-trimer interaction | Path/trimer multi-anchor interaction | Bare one-window interaction | Exact three-plus-three shadow and two-trimer symmetry |
+| Anonymous pair envelope to first floor | Direct balanced pairs plus transparent excursion | Bare pair birth and mass-two descent | Canonical complement, maximum envelope, selected carrier crossing |
+| Terminal capture specialization | Witness-adaptive same-frame capture | Bare capture when a witness can be chosen | Named boundary pin, inherited seam, or exact return support |
+| Root collision entry | Prescribed-singleton and same-support parents | Anonymous collision production | Prescribed root, disjoint support, boundary identity, ancestor exteriority |
+| Repeated pair reminting | Fixed-trimer no-quiet-remint | Claim that another pair is progress | Fixed anchor and chronological interaction certificate |
+| Static floor | Split-free or pivot enriched floor | Bare arrival at mass two | Root shadows, folds, return route, refund stack, or capture ancestry |
+
+## 12. Corrections and failed implications
+
+- A signed physical pair plus its witness singleton is not automatically a named paid floor.
+- A longer signed support cannot be truncated to an endpoint dimer without a theorem.
+- Reversing a physical marker for actualization does not reverse the state selected in the source cover.
+- Historical capture does not create a permanent singleton, current anchor, or protection.
+- Same-polarity collision requires the certified witness order; cyclic rotations are not free.
+- Disjoint neutral surgery cannot repair a nonpositive local terminal spend by bookkeeping alone.
+- Capacity and pair mass are not global monotones across unrelated recompletions.
+- Several balanced pairs can coexist as graph-intrinsic facts while their payments occur only in separate descendants.
+- Static-core transparency preserves truth and ancestry, not current selection.
+- Fixed-anchor interaction is not itself a contradiction.
+
+## 13. Reusable proof techniques
+
+### Name every resource in the payment ledger
+
+Record support orientation, witness, marker, marker orientation, source representative, exact deletion frame, captured endpoint, refund, paid descendant, and remaining singleton. Most historical errors are traceable to dropping one of these fields.
+
+### Use one marker test for a whole support family
+
+When supports share witness and polarity, actualize them together before splitting into descendants. This exposes genuine common ancestry and avoids repeating identical tests.
+
+### Pair a complicated support with a fixed trimer
+
+A fixed trimer supplies both polarities and a stable middle anchor. It is often the cheapest way to tu
