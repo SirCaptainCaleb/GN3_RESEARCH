@@ -1,0 +1,120 @@
+ one of the most reusable methods in the corpus.
+
+### 8.3 Root-funded wing compression
+
+The late CW-era P/Q/R work studied two mirrored wings around a fixed root. A common root-funded exchange compressed several branch-specific returns into one support path. Three-slot phase-square extraction and coordinate support-path compression were the immediate precursors.
+
+The exact old theorems remain historical. Their technique—identify the physical resources paid by the common root and quotient the two wings by that funding—may be useful for the current two-basin transfer architecture.
+
+## 9. Strong singleton transfer representations
+
+### 9.1 Boundary-transfer lattice
+
+The modern lattice fixes a source maximin singleton deletion cover and transfers zero, one, or two short-rail boundary vertices independently at each end. Unlike an exploratory phase grid, every admitted coordinate is an explicit exact minimum cover.
+
+This representation simultaneously records:
+
+- source maximinity at the origin only;
+- which canonical splice turns become current;
+- which reverse source-boundary states become current;
+- whether the prescribed singleton is isolated or internal; and
+- the exact rail-size loss at each coordinate.
+
+It is the cleanest successful descendant of the promotion-square and phase-grid methodology.
+
+### 9.2 Resource exclusivity
+
+The central internal-singleton coordinate and the deepest boundary-transfer coordinate are joined by a neutral two-for-two switch, but their resources cannot coexist in one coordinate. This is a concrete example of why a lattice is more informative than a list of covers: coordinate incompatibility becomes visible.
+
+### 9.3 Mate/splice compatibility graph
+
+One can also represent canonical mates and source splices as vertices of a compatibility graph. Same-end mate/splice incompatibility proves that a mate packet together with both source splices is not a path forest in the canonical family. This deletes an actual target, not merely a construction attempt.
+
+## 10. Fixed-root transfer graph
+
+### 10.1 Definition
+
+Fix a deleted vertex. Each vertex of the transfer graph is an exact two-cover of its complement. A directed description may record source and target, but the physical endpoint move is reversible, so the underlying edge is undirected.
+
+An edge exists when one named endpoint moves from one rail to the other and the remaining rail vertices keep their order. The moved endpoint identity and the two attachment coordinates are part of the edge data.
+
+### 10.2 Common pair-shadow cell
+
+Delete the fixed root and moved endpoint. Both endpoint covers reduce to the same two residual rails. The four combinations of endpoint placement and dimer orientation form one exact local cell. Reverse root caps imply bi-end locking of both residual rails.
+
+This is stronger than a frozen-fiber analogy: exact common-shadow identity is proved by literal subtraction.
+
+### 10.3 Component extremality
+
+Within one connected component, maximize or minimize the rail-size gap. The extremum forbids transfers in one direction and forces shielding. This is a legitimate finite potential because every compared cover lies in one fixed-root component and every edge has a known size effect.
+
+It does not prove that different components can be ordered, nor that the transfer graph is edgeless at order ten.
+
+### 10.4 Attachment fiber
+
+Fix one root, moved endpoint, and common pair shadow. The remaining choices are the two attachment sides and two dimer orientations. Only inside this fiber does the crossed-versus-side-polarized dichotomy apply.
+
+The exact hierarchy prevents a recurrent historical error: two states observed somewhere in the same transfer component are not thereby simultaneous or comparable.
+
+### 10.5 Retraction squares and cubes
+
+Endpoint absorption, root-cap restoration, and endcap restoration can commute with an inherited transfer edge. Two commuting binary choices form a square; three form a cube. Each face is accepted only after verifying:
+
+- all displayed turns;
+- exact complements;
+- literal survival of the moved endpoint and attachment turns;
+- reversibility; and
+- zero cycle debt.
+
+This is the mature Strong version of the early promotion-square program.
+
+## 11. Representation dominance map
+
+| Older representation | Later representation or parent | What was compressed | Unique information still available in the older form |
+|---|---|---|---|
+| Source state and release ear | Puncture crossing plus exact blocker set | Bare existence of a release/crossing | Topological source ancestry and first ear failure |
+| Promotion square | Exact endpoint-transfer square | Formal two-coordinate switch | A source-specific fixed skeleton or charged promotion history |
+| Endpoint-complete router | Prescribed-path completion plus transfer lattice | Bare packet currentization and many boundary phases | One skeleton simultaneously carrying all router ports |
+| Hall deficient kernel | Partition/fragmentation identity or blocker formula | Anonymous crossing count and some deficiency bounds | A canonical dependency hull and blocker ownership |
+| Physical fan | Prescribed-path completion or endpoint absorption | Bare fan/trimer production | First-loss arm, maximal complement, or common carrier |
+| Double fan / `K3,3` grid | Transfer lattice or fixed pair-shadow cell | A finite phase-grid view | The specific two-ended fan source and complete bipartite incidence |
+| Flow/broom | Fan reduction | Eventual arrival in a fan basin | Extremal neutral-sequence and parity information |
+| Shuttle | Transfer path or retraction sequence | Bare reversible local movement | Ability to change the marked/deleted object along the corridor |
+| Frozen source fiber | Fixed attachment fiber | Generic fixed-skeleton comparison | Source orientation and promotion ancestry |
+| Shell/envelope | Componentwise re-rooting and root packages | Bare reappearance of the local packet | Nested first-loss and fixed-marker recurrence ancestry |
+
+## 12. Reusable representation techniques
+
+### Freeze before comparing
+
+Write the physical vertices, rail orders, orientations, and selected states held fixed. A useful cross-cover comparison almost always comes from a frozen skeleton, exact common shadow, or reversible exchange—not visual similarity.
+
+### Quotient only after recording ancestry
+
+Several large routers collapsed to a star, square, fan, or hub. Before quotienting, record which old state paid for each coordinate and which endpoint owns each blocker. The quotient may forget exactly the information a later assembly theorem needs.
+
+### Use first failure
+
+Transport a packet through a neutral sequence until the first bad turn, first lost arm, first changed owner, or first contact. Boundary antisymmetry and exact blocker accounting make that first event far more informative than an arbitrary later obstruction.
+
+### Distinguish auxiliary and physical cycles
+
+Hall, matching, implication, router, and transfer cycles are combinatorial. Only a displayed vertex sequence of tight turns is a physical tight cycle. Conversely, a physical cycle should be opened constructively and charged as cycle debt.
+
+### Prefer actual exact-cover coordinates
+
+An abstract phase table becomes substantially more useful when every cell is a certified exact cover and every edge is a reversible zero-debt move. This principle explains the progression from promotion grids to the transfer lattice and transfer graph.
+
+## 13. Principal source corridors
+
+| Representation family | Efficient starting sources |
+|---|---|
+| Source, release, and router | the 2026-08-09 router self-contained handoff; 2026-08-10 source-return and promotion handoffs; 2026-08-11 source-junction handoffs |
+| Fixed-skeleton rank lifts | the 2026-08-12 Researcher A/B rank-lift, endpoint-complete router, and promotion-square continuity files |
+| Hall kernels and `K3,3` hub | the 2026-08-12 Hall-circuit, Hall-leaf, minimality-double-fan, and unified rank-two continuity files |
+| Fan/blossom frontier | the 2026-08-13 E/F continuity file and fan, lex, blossom, and candidate-omission handoffs |
+| Flow, broom, shuttle, Hall hull | the 2026-08-14 handoffs and the 2026-08-15 RI/RJ continuity package |
+| Mirror/common-shadow compression | the 2026-08-16 P/Q/R continuity package and its M/N/O sources |
+| Strong shells and fixed markers | the 2026-08-18 and 2026-08-20 continuity resets |
+| Singleton transfer lattice | Puzzler 15 through Puzzler 17 handoffs dated 2026-08-26 |
+| Transfer graph and fibers | Puzzler 18 through Puzzler 20 handoffs dated 2026-08-26 |
