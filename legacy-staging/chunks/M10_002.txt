@@ -1,0 +1,220 @@
+parately for each selected crossing** and issue same-frame capture of the carrier-side crossing endpoint. The concentration alternative is eliminated crossing-by-crossing.
+
+Deleting a terminal dimer of `K` leaves the opposite terminal physical dimer. The captured crossing endpoint lies on that dimer, so accepted R34 mirror reentry yields a later minimum three-cover where that carrier dimer and the physical crossing are the boundary supports of their unique tight mirror trimer, while the fresh capture remains historical ancestry.
+
+### B2. Captured-middle fixed-turn injection — accepted with fences
+
+In the R34 mirror trimer the shared endpoint is exactly the freshly captured vertex. Thus one has a proper graph-intrinsic turn
+
+\[
+J=(a,b,c)
+\]
+
+whose middle `b` is the freshly captured vertex.
+
+The accepted proper-turn front door and fixed-turn package permit entering a chosen fixed-turn lineage with this `J`. Its quiet fixed-turn clock controls that chosen continuation, and at the target-aligned singleton floor the middle-incidence structure gives the accepted endpoint-anchored pair birth. Only finitely many quiet fixed-turn episodes occur before historical contact / pair interaction is forced.
+
+The lawful accepted chain is therefore
+
+\[
+W\text{-coupled collision}
+\to
+\text{fresh same-frame capture at }b
+\to
+\text{R34 mirror turn }J=(a,b,c)
+\to
+\text{fixed-turn lineage chosen on that same }b.
+\]
+
+The sharp transferred interface is
+
+\[
+\boxed{
+\text{fresh capture ancestry at }b
++
+\text{proper fixed turn }J=(a,b,c)
++
+\text{finite fixed-turn endpoint budget / eventual interaction}.
+}
+\]
+
+#### Mandatory fences on B2
+
+1. Capture is not protection. After R34, the R33 event is historical ancestry unless a protected continuation is separately licensed.
+2. No same-representative transport is proved across R33 → R34 → fixed-turn descent. The old crossing, complement rails, pivot core, and collision need not remain current.
+3. Witness choice is crossing-adaptive, not universal; different crossings may use different witnesses.
+4. The fixed-turn clock does not count the earlier capture of middle `b` as a clock decrement.
+5. Do **not** strengthen eventual interaction to “the first contact / role loss occurs at `b`.” No such localization is accepted.
+6. No endpoint exposure, inherited same-candidate seam, `5+5` assembly, order-ten closure, or global closure follows from this interface alone.
+
+## C. Tight-Pivot Far-Spend Saturation (legacy `000011–000012`) — accepted
+
+Work in the standing order-ten singleton-root frame
+
+\[
+(z)\sqcup P\sqcup Q,
+\qquad
+P=(p_0,p_1,p_2,p_3,p_4),
+\qquad
+Q=(q_0,q_1,q_2,q_3),
+\]
+
+with `P` globally longest and cross-endcap turns
+
+\[
+\alpha=p_3p_4q_0,\quad
+\beta=p_4q_0q_1,\quad
+\gamma=q_2q_3p_0,\quad
+\delta=q_3p_0p_1,
+\]
+
+and pivots
+
+\[
+\theta=q_0zp_4,\qquad \eta=p_0zq_3.
+\]
+
+### C1. Forced far blockers in the two tight-pivot faces
+
+If `theta` is tight, Five-Exterior Reverse-Star Equality gives `p_1p_0q_3` tight, hence
+
+\[
+\delta=q_3p_0p_1
+\]
+
+is bad. Only `gamma` remains variable.
+
+Dually, if `eta` is tight, `q_0p_4p_3` is tight, hence
+
+\[
+\alpha=p_3p_4q_0
+\]
+
+is bad. Only `beta` remains variable.
+
+### C2. Tight variable far turn: displayed first-order one-hole spend is already saturated
+
+In the `theta`-tight / `gamma`-tight face,
+
+\[
+(q_2,q_3,p_0,p_1,p_2)
+\]
+
+is the displayed five-vertex Hamilton proposal with sole displayed hole `delta`, but the antisymmetric mate `p_1p_0q_3` is already known.
+
+The dual `eta`-tight / `beta`-tight face behaves identically with displayed proposal
+
+\[
+(p_2,p_3,p_4,q_0,q_1),
+\]
+
+sole displayed hole `alpha`, and already-known mate `q_0p_4p_3`.
+
+These statements classify only the displayed proposals, not all Hamilton orders on the five-sets.
+
+### C3. Bad variable far turn: exact period-two root cell
+
+In the `theta`-tight / `gamma`-bad face, antisymmetry and the reverse-star turn give the literal four-path
+
+\[
+L=(p_1,p_0,q_3,q_2).
+\]
+
+Then
+
+\[
+K_\theta\sqcup L\sqcup(p_2)
+\]
+
+is a minimum `5+4+1` cover. Re-rooting at `p_2` gives a new singleton-root frame whose next tight pivot reconstructs the original `P`; the two far turns in that new frame are both bad because their reversals are the original turns of `Q`; a second displayed bad-far reroot reconstructs `Q` and singleton `z` exactly.
+
+Thus the displayed bad-far reroot is an **exact two-step return**, not a descent. The dual `eta`-tight / `beta`-bad face has the same exact return.
+
+### C4. Accepted saturation conclusion
+
+For either tight pivot face, the named variable far turn is tight or bad:
+
+- tight gives only the displayed one-hole proposal whose obvious mate is already present;
+- bad gives the displayed pivot-preserving singleton reroot inside an exact period-two root cell.
+
+Therefore the consumer consisting only of
+
+1. first-order mate spending on those displayed five-vertex proposals, and
+2. repeated displayed pivot-preserving singleton rerooting
+
+is **locally saturated**.
+
+#### Mandatory fences on C
+
+- This does not classify other Hamilton orders on the complementary five-set.
+- It does not rule out sibling-candidate, collision/witness, protected-coordinate, or fiber-exit consumers.
+- The period-two statement is only for the displayed tight-pivot far-rewiring transition, not a global recurrence or monotonicity theorem.
+- The bad-pivot trimer branch is untouched.
+- No current state is imported between representatives unless it appears literally in the displayed rerooted cover.
+- No `5+5` assembly, order-ten closure, or global closure follows.
+
+# Part III. Canonical current frontier
+
+## 1. Same-representative coexistence packet
+
+Before R33/R34/recompletion spends synchronization, one accepted pivot representative carries simultaneously:
+
+- a mixed `Y/W` pivot core containing current internal `z`;
+- an exact two-rail complement;
+- a current far-boundary same-polarity collision;
+- an opposite-rail endpoint witness.
+
+This is scarce synchronized information.
+
+## 2. Audited captured-middle fixed-turn interface
+
+The separate accepted route carries:
+
+\[
+\boxed{
+\text{capture ancestry at middle }b
++
+J=(a,b,c)
++
+\text{finite fixed-turn endpoint budget / eventual interaction}.
+}
+\]
+
+No accepted theorem yet converts this into minimum-budget endpoint exposure or a same-candidate inherited seam.
+
+## 3. Tight-pivot naive fixed-fiber consumer is closed as a local avenue
+
+The most obvious fixed-pivot consumer using only first-order mate spending and repeated pivot-preserving singleton rerooting is now certified as a local two-state saturation cell.
+
+Any productive continuation there must use additional information or deliberately leave that cell, for example a sibling candidate, the opposite-rail collision/witness data before it is spent, a protected/currentized coordinate, or another fiber-exit mechanism.
+
+## 4. Other live/parked branches
+
+- **Bad-pivot trimer branch:** open and untouched by the tight-pivot saturation theorem.
+- **Captured-middle fixed-turn consumer problem:** open.
+- **Type-B exact `D`-root synchronization:** parked, not logically eliminated.
+- **Type-E `|U|=4` gap/breach square:** parked.
+- **Seam-shielded Type-E `|U|=5`:** parked.
+
+A parked branch should be reopened because a new consumer or stronger parent appears, not merely because another local case is available.
+
+# Part IV. Controlling fences
+
+The following distinctions remain mandatory throughout the project:
+
+- graph-intrinsic tightness is not current selected state;
+- selected facts from different representatives do not conjoin without lawful transport;
+- capture is not protection;
+- protection birth does not automatically license a useful protected continuation;
+- a historical seam is not automatically a same-candidate splice;
+- physical support incidence is not selected-state contact;
+- one-hole mate forcing supplies an exact mate/canonicality datum but not automatic closure;
+- restoring a certificate graph-intrinsically does not place it on a designated protected lineage;
+- witness-adaptive capture may use different witnesses for different crossings;
+- fixed-turn eventual interaction is not localization of first contact to the captured middle;
+- the tight-pivot period-two cell is a local saturation statement, not a global recurrence theorem;
+- strategic parking is not logical subsumption.
+
+# Part V. Strategy lives elsewhere
+
+This continuity file contains mathematical state only. Current strategic interventions are role-addressed in the `A7C2_GUIDE_<ROLE>_######.md` control-plane streams. Those files have no mathematical authority.
