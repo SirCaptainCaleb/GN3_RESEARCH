@@ -1,0 +1,385 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+# Subsumption, corrections, failed routes, and terminology
+
+> **2026-08-29 fresh-package status note.** This remains historical/perspective material. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and later audited append-only handoffs.
+
+
+> **2026-08-28 clean-packet note.** This is a historical atlas, not a live-status document. It is preserved substantially unchanged because its value is provenance, representation history, and reusable technique. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, and later independently audited handoff deltas. Historical archive files named inside this volume are provenance handles; the large raw archive is intentionally not included in this packet.
+
+
+## 1. The exact dominance rule
+
+Represent a theorem as a record with three parts:
+
+- its hypothesis set;
+- its mathematical conclusion set; and
+- its retained-information set: representative, selected states, orientations, witnesses, marker identities, roles, exact complements, ancestry, simultaneous-versus-descendant status, and cycle debt.
+
+Suppose an old theorem says that assumptions `A` imply conclusions `B`, and a later theorem says that assumptions `A-prime` imply conclusions `B-prime`.
+
+The old theorem may be dropped as a theorem node only when:
+
+1. every `A-prime` assumption is already implied by `A`, so the new theorem has no stronger requirements in the old scope;
+2. every conclusion in `B` is implied by `B-prime`; and
+3. every item from the old retained-information set that any live consumer uses is reproduced by the new theorem.
+
+If conditions 1 and 2 hold but condition 3 fails, the old theorem is a **retained specialization**. If only its proof method remains useful, the theorem statement can be omitted from the live bank but its method belongs in the technique atlas.
+
+This is stricter than comparing theorem names or final component counts.
+
+## 2. Strictly dominated theorem nodes
+
+The following rows pass all three dominance tests for their stated bare conclusions. A source may still be retained for proof technique and provenance.
+
+| Older node | Dominating parent | Exact dominated content |
+|---|---|---|
+| Bare currentization of one state, pair, trimer, or proper packet | Universal prescribed-path completion | Ability to select that one proper tight path in a minimum three-cover |
+| Pair-deletion nontrivial-rail rigidity | Universal small-deletion exactness plus staircase | Both rails are nontrivial; the parent gives order at least three |
+| Exterior-trimer no-singleton rigidity | Small-deletion staircase and proper-path exterior floor | No singleton rail in the complement |
+| Short-path singleton-completion exclusions for one, two, or three vertices | Universal order-three complement rigidity, then the deletion staircase | Bare size exclusion |
+| Single-internal-vertex crossing-rank formula | Cover-puncture fragmentation identity | Crossing multiplicity and equality characterization |
+| Centered-cell hypothesis for anonymous crossing multiplicity | Surviving-carrier cut-cost crossing | Bare lower bound on current cut crossings |
+| Cyclic-four-set graft component calculation | Universal internal-vertex graft | Complete blocker set, gain, component count, and zero debt |
+| Common base-role restoration as a separate node | One-cut endpoint exposure and old-role restoration family | Bare availability of the role-restored cover |
+| Anonymous root fan-to-collision route | Universal prescribed-singleton/root collision entry | Bare production of a same-polarity collision |
+| Reverse-four-path dimer-split route to an anonymous collision | Root collision parent | Anonymous collision entry only |
+| Central root-common three-plus-three shadow | Triple root-common shadow family | Exact central shadow and middle-anchor interaction |
+| Symmetric two-trimer bare interaction | Path/disjoint-trimer multi-anchor interaction | One-window double-anchor interaction |
+| Triple-witness fold saturation | Four-witness/five-exterior fold-profile saturation | Common-witness count and signed terminal systems |
+| Two-orientation common-witness actualization | Same-polarity support-family actualization | Joint marker test and common opposite support |
+| Order-six-only one-bad root reset | Rail-size-free good-splice reset and witness-order parent | Bare exact reset and retained good splice in its scope |
+| Order-six cyclic residual elimination as full currentization | Corrected currentization-or-transitive-residue dichotomy | Cyclic subcase only; original unconditional statement is false |
+| Lex-max two-path gap-zero/one/two turn geometry | Global-longest two-path gap parent | Bare endpoint tests and reverse-four-path/rotation alternatives for two largest paths |
+| Bare pivot refund gateway | Direct root trimer signs or fold pair grid plus aligned refund | Access to a paid descendant without pivot ancestry |
+| Bare currentization of captured crossing plus incident support | Prescribed-path completion of their incident trimer | Current existence of that trimer only |
+| Bare full old-path currentization after a return | Prescribed-path completion | Current selection of the old path only |
+
+## 3. Retained specializations despite a broader parent
+
+These results are weaker in one visible dimension but retain information absent from the parent.
+
+| Retained specialization | Broader parent | Nonduplicated resource |
+|---|---|---|
+| Pair-deletion common-shadow package | Small-deletion staircase | Same physical deleted pair, both dimer orientations, one exact fixed shadow |
+| Cyclic-four-set fifth-vertex extension | Universal graft | Cyclic quotient label and programmable fifth-vertex placement |
+| Lex-max gap and boundary theorems | Global-longest gap parent | One selected extremal cover, blocker ownership, third-component comparison |
+| Maximin short-rail reverse stars | Five-exterior reverse-star parent | Source-maximin choice and exact source boundary states |
+| One-bad witness-order representative | Generic componentwise re-rooting | Same canonical splice, tested witness order, mate subpath, opposite source splice |
+| Deep both-good reset | Two-unit both-splice reset | Both reverse source-boundary states current, not merely both splices |
+| Endpoint absorption with untouched rail | Prescribed-path completion | Literal state-for-state retention of the untouched rail |
+| R15/R16 return theorem | Generic pair descent and root packages | Chosen birth dimer, fixed trimer anchor, full reverse-star return ancestry |
+| R20/R19 static/refund family | Generic floor descent | Named refund stack and transparent static-core ancestry |
+| R28/R29 | Generic crossing/currentization | Two boundaries simultaneously tied to one carrier |
+| R31/R32 | Generic terminal sign/current trimer | Boundary pin, witness, inherited seam, reverse-trimer history |
+| R33 | Adaptive or generic capture | One exact support-deletion frame with selected crossing and refund |
+| R34 | Generic incident-trimer completion | Captured crossing, carrier support, mirror re-entry, return ancestry |
+| Hard fixed-fiber wrap theorems | Generic seam currentization | Maximum old-state overlap, successful wrap, reserve rail, exact sacrificed state |
+| Pivot fold package | Root-common triple shadows | Second global-longest path, four-cover square, marker folds, witness saturation |
+| Transfer edge common-shadow cell | General endpoint-transfer or absorption | Fixed root, moved endpoint, four representatives over one exact shadow |
+| Quiet far-return alignment | Prescribed-path completion | Same selected captured crossing plus both restored historical seams and exact blockers |
+
+## 4. Strategic demotion versus logical subsumption
+
+A theorem is **strategically demoted** when a shorter route reaches similar progress but the theorem is not logically dominated. Examples:
+
+- source routers were demoted after fan reduction, but retain fixed-skeleton source history;
+- fan production was demoted after prescribed-path completion, but first-loss fans retain ancestry;
+- capacity maxima were demoted after root collision production, but retain quiet-reservoir bounds;
+- pair envelopes were demoted for first pair birth, but retain canonical complements;
+- R28 through R34 were demoted from mandatory front doors, but remain unique ancestry consumers;
+- pivot-specific refund was demoted by split-free root pairs, but pivot fold ancestry remains strictly richer;
+- transfer-edge local restorations do not dominate old return lineages because they fix different roots and markers.
+
+Do not label strategic demotion as theorem deletion.
+
+## 5. Major correction ledger
+
+### Rootedness
+
+**Incorrect strengthening:** every prescribed head or source can be the endpoint of a two-cover.
+
+**Correction:** only the unrooted Strong two-cover conjecture remains. Minimality does not prescribe endpoint roles.
+
+### Raw gain
+
+**Incorrect rule:** inserted states minus blockers is the path-cover improvement.
+
+**Correction:** subtract one for every physical tight-cycle component created.
+
+### Tight cycles
+
+**Incorrect rule:** a physical tight cycle is contradictory.
+
+**Correction:** it is constructive; open one selected state and count the debt.
+
+### Auxiliary cycles
+
+**Incorrect rule:** a Hall, matching, compatibility, implication, or exchange cycle is a physical tight cycle.
+
+**Correction:** reconstruct and test the physical vertex sequence.
+
+### Old-port preservation
+
+**Incorrect rule:** local deletion and recompletion preserve prescribed old endpoint ports.
+
+**Correction:** role can be lost; use explicit retention, restoration, or first-loss theorems.
+
+### Endpoint-only Hamilton moves
+
+**Incorrect rule:** moving one vertex or reversing one segment generates every useful Hamilton reconfiguration.
+
+**Correction:** explicit finite witnesses show these moves are incomplete.
+
+### Matching independence
+
+**Incorrect rule:** separate alternating components can be toggled independently.
+
+**Correction:** physical incidence and cycle interactions can couple them.
+
+### Monotone insertion profiles
+
+**Incorrect rule:** insertion depth, capacity, marker generation, shell depth, or partition excess is globally monotone.
+
+**Correction:** these quantities are representative- or object-relative unless a fixed universe and reset theorem are proved.
+
+### Marker reversal
+
+**Incorrect rule:** reorienting a physical marker for actualization changes its old selected orientation.
+
+**Correction:** actualization orientation and source selected orientation are separate.
+
+### Capture and protection
+
+**Incorrect rule:** historical capture makes an anchor permanently current or protected.
+
+**Correction:** protection requires a designated continuation and lasts only until the named target or first contact.
+
+### Boundary pinning and endpoint exposure
+
+**Incorrect rule:** a support known to lie at a historical boundary is current endpoint-exposed.
+
+**Correction:** current endpoint degree and representative must be proved.
+
+### Same-candidate splice
+
+**Incorrect rule:** a current historical seam state is automatically the candidate splice turn in static assembly.
+
+**Correction:** certify the complete ordered turn in the exact displayed candidate.
+
+### Witness-order collision
+
+**Incorrect rule:** cyclic permutations of one certified tight witness turn remain certified.
+
+**Correction:** test the exact order. This repaired the terminal-collision spend ledger and two-peel decoupling.
+
+### Four-vertex classification
+
+**Incorrect rule:** every no-Hamilton four-set has cyclic matching-block quotient.
+
+**Correction:** the transitive quotient also exists. Cyclic fifth-vertex extension eliminates only the cyclic case.
+
+### Four-deletion exactness
+
+**Discarded proof:** classify the four deleted vertices by the cyclic quotient and force a Hamilton extension.
+
+**Accepted proof:** turn three deleted vertices into a tight trimer and contradict the one-vertex deletion rail-order-four floor.
+
+### One-hole order-six currentization
+
+**Incorrect statement:** the canonical one-hole construction always currentizes through short-rail order six.
+
+**Correction:** orders four and five currentize; at order six a transitive matching-block residue survives with a labelled three-pattern signature on each side.
+
+### Pair-shadow side dichotomy
+
+**Incorrect scope:** attachment-side polarization across an entire transfer component.
+
+**Correction:** the crossed-versus-side-polarized dichotomy holds inside one fixed root, moved-endpoint, common-shadow attachment fiber.
+
+### Fan reduction
+
+**Overclaim:** producing a fan consumes a fan-saturated obstruction.
+
+**Correction:** Three-Cover Fan Reduction is Strong-safe but nonconsuming on an already saturated representative.
+
+### Order-ten longest-six attribution
+
+**Potential historical misstatement:** later longest-five compression first closes the longest-six branch.
+
+**Correction:** R15 first closed the order-ten longest-six branch by mate-fork forcing; R16 audited it and supplied cyclic quotient compression.
+
+### Transfer component extrapolation
+
+**Excluded claims:** every extremal good edge forces a two-vertex continuation; every order-ten transfer component is edgeless.
+
+**Correction:** neither is accepted. Component extremality gives directional shielding and at least one surviving opposite transfer in the stated scope.
+
+## 6. Failed or insufficient routes
+
+The items below are not all false mathematical statements. Some are insufficient proof strategies whose output was repeatedly mistaken for progress.
+
+### F1. Arbitrary prescribed-head completion
+
+False. The unrooted conjecture does not imply a requested final endpoint.
+
+### F2. Old-port preservation after local recompletion
+
+False without a retention theorem. Recompletion may change which vertices are endpoints.
+
+### F3. Endpoint-only reconfiguration is complete
+
+False. Internal grafts, multi-block moves, and explicit finite witnesses escape that move set.
+
+### F4. Single relocation plus segment reversal gives complete Hamilton descent
+
+False by explicit examples.
+
+### F5. Raw exchange gain proves Strong improvement
+
+False until physical cycle debt is subtracted.
+
+### F6. A physical tight cycle is a contradiction
+
+False. Open it constructively.
+
+### F7. An auxiliary cycle is physical
+
+False in general.
+
+### F8. A fan, blossom, threshold square, double block, or leafless Hall core must be impossible
+
+False or insufficient. These objects often exist and merely route to another representation.
+
+### F9. A scalar fixed-side atom automatically closes
+
+Insufficient. The other side can absorb the change.
+
+### F10. Bounded component count gives bounded physical support
+
+False. A few path components can contain arbitrarily long support.
+
+### F11. Matching components toggle independently
+
+False without physical compatibility checks.
+
+### F12. Unconditional monotone insertion profile
+
+False across arbitrary recompletions.
+
+### F13. Generic symmetric double-bad lifting
+
+Overbroad. Several proposed four-vertex symmetric lifts lacked a certified turn or common frame.
+
+### F14. Repeated pair reminting is progress
+
+Insufficient. Use fixed-anchor interaction or a monotone consumer.
+
+### F15. Signed dimer plus witness singleton gives a floor
+
+False. Actualization and payment are separate theorems.
+
+### F16. Truncate a longer signed support to a dimer
+
+False without a tight subpath and polarity theorem.
+
+### F17. A selected state survives representative change
+
+False without literal retention or transport.
+
+### F18. Marker reorientation changes the old current state
+
+False; physical and selected orientation differ.
+
+### F19. Capture implies permanent current anchor
+
+False.
+
+### F20. Boundary pin implies endpoint exposure
+
+False.
+
+### F21. Independent left/right deletion covers can be identified
+
+False without an exact common shadow or synchronization theorem.
+
+### F22. Proper cycle output is global improvement
+
+Insufficient. It may be a legal constructive object with debt.
+
+### F23. Capacity is a global monotone
+
+False across marker or representative resets.
+
+### F24. Pair-envelope payment to minimum mass gives canonical fragmentation
+
+False without a theorem preserving the envelope complement.
+
+### F25. Crossing physicalization follows from an auxiliary strongly connected boundary
+
+Insufficient. The physical tight turns must be built.
+
+### F26. R28/R29 are mandatory to produce a first physical exit
+
+Strategically false. Shorter puncture/graft parents produce exits. R28/R29 remain for simultaneous common-carrier ancestry.
+
+### F27. R31/R32 are mandatory to produce a terminal sign or capture
+
+Strategically false. Generic signs and adaptive capture are cheaper. R31/R32 retain boundary and seam ancestry.
+
+### F28. R33 concentration at an internal witness is a graph-level obstruction
+
+False. It is one exact-frame alternative and can be bypassed by adaptive witness choice.
+
+### F29. More anonymous collisions will close the proof
+
+Insufficient. Collision production is already cheap; a consumer must preserve missing assembly information.
+
+### F30. More transfer coordinates will close the proof
+
+Insufficient unless a new coordinate preserves or consumes seam, capture, or final-candidate identity.
+
+### F31. Several graph-intrinsic alternatives are simultaneously current
+
+False. Descendants must be separated.
+
+### F32. A transfer component is one common representative
+
+False. Only a fixed edge or attachment fiber has the proved common shadow.
+
+### F33. Root rotation is a descent
+
+False in general. Terminal rotations can reverse exactly; internal reverse excess is representative-relative.
+
+### F34. Restoring historical seams enters static assembly
+
+Insufficient until they are certified as the exact same-candidate splice turns with current endpoint roles.
+
+## 7. Terminology evolution
+
+### 7.1 Four language eras
+
+| Era | Typical language | Canonical modern translation |
+|---|---|---|
+| Broad boundary-tournament phase | state DAG, source, sink, height, acyclic extraction | oriented-state representation; CW-specific potential |
+| Router/Hall/fan phase | promotion, port, phase, gate, fence, wire, router, Hall ear, hub, blossom, broom, shuttle | exact local cover coordinate, endpoint role, blocker dependency, neutral transport, bounded physical core |
+| Strong signed-pair phase | shell, envelope, capacity, token, remint, floor, refund, capture | retained path/contact history, signed-support deletion frame, witness reservoir, paid support checkpoint, historical event ancestry |
+| Hard-reset transfer/return phase | rail, root, cap, splice, pair shadow, transfer edge, fiber, fold, return, seam | selected path component, deleted vertex, endpoint turn, exact common complement, reversible endpoint move, fixed local comparison, exact root change |
+
+### 7.2 Terms kept active
+
+The minimal active vocabulary is:
+
+- tight turn, state, physical pair, tight path, path cover;
+- representative, current, graph-intrinsic, historical, ancestry, descendant;
+- candidate, blocker, exact exchange, gain, cycle debt;
+- rail, retained path, puncture, crossing, seam, splice, endpoint exposure, role;
+- signed support, polarity, witness, marker, actualization, capture, protection, refund, floor;
+- physical partition, transition, representative excess, historical run;
+- exact deletion frame, common shadow, transfer edge, attachment fiber, root rotation.
+
+Other names should appear as historical aliases or theorem titles, not as prerequisites for reading the current proof.
+
+### 7.3 Ambiguous historical words
+
+| Word | Possibl
