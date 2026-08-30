@@ -1,0 +1,138 @@
+dth. Orientation, witness, marker, actualization event, paid descendant, and surviving singleton are separate ledger entries.
+
+A support may not be truncated to an endpoint pair for free. A physical pair and an outside singleton do not automatically constitute a paid floor. Each actualization and refund must use its named theorem.
+
+### Same-frame crossing, capture, concentration, and refund — Accepted
+
+In one exact deletion cover for a signed support inside a retained path:
+
+- a selected carrier/exterior crossing avoiding the sign witness can be used as the actualizing marker, producing historical capture of a chosen marker endpoint and aligned refund ancestry; or
+- if every selected crossing meets the witness, deleting that witness gives the accepted concentration bound.
+
+The crossing remains current only in the original deletion representative. Capture and payment belong to later descendants. The marker may be physically reoriented during actualization without claiming that its reversed orientation was selected originally.
+
+### Witness-adaptive capture — Accepted
+
+Suppose one physical support has several admissible signed incarnations with different witnesses. In one exact support-deletion cover, any selected state disjoint from the support is capture-capable whenever at least one admissible witness is outside that selected pair. Choose such a witness, choose either physical marker endpoint to capture, and apply the same-frame theorem. This bypasses concentration for that selected state.
+
+For an internal adjacent dimer of a retained path, the two neighboring path vertices are opposite natural sign witnesses. Every selected carrier/exterior crossing meets at most one of them. Hence every such crossing is individually capture-capable in the same deletion frame. If its carrier-side endpoint is neither witness, both polarities give separate capture certificates through the same selected physical crossing.
+
+The different certificates are simultaneous graph-intrinsic/historical facts, not simultaneous payment descendants.
+
+### Same-support sign interaction — Accepted
+
+Two signed certificates on the same physical support must retain witness identity and tested order.
+
+- Same polarity with distinct witnesses enters the accepted two-extension collision package.
+- Opposite polarity with distinct witnesses enters same-support exclusivity and yields the accepted strict two-ended signed path.
+
+No cyclic permutation of a tight witness order is licensed. This correction controls the terminal-collision spend ledger and all later return applications.
+
+### Direct balanced pairs and mass-two floors — Accepted
+
+Oppositely signed disjoint supports of total size four form a direct balanced pair. The static-core-transparent pair excursion gives either a spanning two-cover or an ancestry-bearing floor of total support size two. It preserves the truth and ancestry of the named static configuration; it does not keep all old paths, signs, markers, or square corners current at the floor.
+
+Complete floor steering supplies the accepted finite continuation alternatives once a named floor has been reached. It does not make repeated anonymous pair reminting progress.
+
+### Support-family actualization — Accepted
+
+Let several graph-intrinsic supports have the same polarity and same witness. One disjoint nontrivial marker path can be tested once to create a single common opposite-polarity support. Every original support then forms a balanced pair with that same opposite support. The head/tail dual is exact.
+
+This is a joint pre-payment certificate. Payments from the several pairs remain separate descendants.
+
+### Trimer central-anchor interaction — Accepted
+
+Every tight trimer supplies two terminal signed dimers of opposite polarity sharing its middle physical anchor. Two vertex-disjoint trimers therefore supply two direct mass-four pairs with the same unordered pair of middle anchors. Reading the two births in sequence from either trimer viewpoint invokes the fixed-trimer no-quiet-remint theorem at both anchors.
+
+More generally, every consecutive trimer window of a tight path disjoint from a fixed trimer gives a synchronized two-anchor interaction through the window's middle vertex and the fixed trimer's middle vertex. These interactions form a graph-intrinsic fan along the path. They are historical interaction certificates, not simultaneous paid descendants and not a contradiction.
+
+### Captured-anchor first-contact control — Accepted
+
+After choosing one actual capture descendant and one designated quiet continuation, the captured anchor remains protected until it reaches the named target role or the first later event touching it is exposed. If a later operation uses a signed support containing that anchor, the operation cannot be a quiet unrelated epoch: an earlier contact was already exposed or the operation itself is the first contact.
+
+This theorem begins only after an actual protected continuation has been chosen. It does not upgrade every historical capture to current protection, and it does not preserve unrelated current return geometry.
+
+### Ancestry-rich utility families — Accepted and nonredundant
+
+The following older Strong-safe families stay active because no bare currentization parent reproduces their retained data:
+
+- **R20/R19 static-core transparency and refund:** named support, witness, payment, floor, and static ancestry;
+- **R28/R29 common-carrier two-boundary family:** two boundary structures simultaneously tied to one physical carrier;
+- **R31/R32 boundary-pinned trimer and inherited seam:** boundary location, witness, retained seam, and reverse-trimer ancestry;
+- **R33 same-frame capture/concentration/refund:** the selected crossing and signed support share one exact deletion frame;
+- **R34 captured-boundary return family:** captured crossing, carrier support, mirror re-entry, and return ancestry;
+- **R13/R14/R22 role-loss and restoration:** named comparison frames converting role loss into contact, growth, or restoration;
+- **captured-anchor protection:** active first-contact control along one designated continuation.
+
+Do not retire one of these families merely because a newer theorem can produce an anonymous crossing, sign, pair, current trimer, or floor.
+
+## Longest-path gap calculus
+
+### Global-longest two-path endpoint gap parent — Accepted
+
+Let a globally longest tight path be disjoint from another tight path. At either end, the outer attachment of the shorter path to the longer path is bad. If the inner attachment is tight, transferring that endpoint gives the exact size bound forced by global longestness; if it is bad, boundary antisymmetry gives a reverse four-vertex path.
+
+Applying the two end tests together gives:
+
+- equal orders: both reverse four-paths occur;
+- order gap one: at least one reverse four-path occurs;
+- order gap two: either a reverse four-path occurs or the endpoint transfers produce a second globally longest path.
+
+When the two paths are the exact complement of a marker, the transfers are literal reversible exact-cover exchanges, preserve the marker, and have zero cycle debt. In the gap-two double-tight face, the two endpoint moves commute, forming a four-cover square.
+
+This is a global-longest parent, not the older lexicographically maximal cover theorem. It subsumes the older gap-zero, gap-one, and gap-two turn geometry for the two largest components, but the lexicographic theorem remains available when selected-cover ownership or boundary ancestry is needed.
+
+### Global-longest exact-complement outer blocker — Accepted
+
+In an exact complement of a globally longest rail and a shorter disjoint rail, each bridge has a complete blocker formula. At each end, global longestness forces the blocker lying on the longest side. If both opposite bridges are used, their exact exchanges commute, preserve the physical marker, and incur zero debt.
+
+The two-end gap trichotomy above is the size-level compression. The older gap-two involution remains separate when its lexicographic source choice is load-bearing.
+
+## Order-ten architecture
+
+This section assumes a smallest counterexample on ten vertices. Its statements do not prove that such a counterexample exists.
+
+### Universal root profile — Accepted
+
+For every prescribed vertex and every exact two-cover of its deletion, the two rails have orders five and four. The five-vertex rail is globally longest, the four-vertex rail together with the deleted vertex supplies the full five-witness reverse-star system, and the longest tight path in the graph has order five.
+
+The historical order-six branch was already closed by R15/R16. The modern derivation that the longest path has order five is a parent-level compression, not the first closure of that branch.
+
+### Small-deletion profile staircase — Accepted
+
+Every exact deletion cover has the following unordered rail sizes:
+
+| Deleted vertices | Possible exact rail profiles |
+|---:|---|
+| 1 | five and four |
+| 2 | five and three, or four and four |
+| 3 | five and two, or four and three |
+| 4 | five and one, four and two, or three and three |
+
+For a physical-pair deletion with profile five and three, the deleted pair has a tight trimer orientation with either endpoint of the five-path, and the residual four-plus-three paths form the literal exact complement. Endpoint choices give simultaneous graph-intrinsic alternatives but separate exact descendants.
+
+### Every transfer edge is crossed — Accepted
+
+Every order-ten transfer edge donates from a five-vertex rail to a four-vertex rail and has a four-plus-four common pair shadow. In the fixed attachment fiber, the two endpoint placements cannot both be at the heads or both at the tails: a reverse-star turn from one attached five-path concatenates with the other attachment into a forbidden six-path. Thus every edge is crossed.
+
+Normalization uses only rail-label exchange. It never reverses a current tight path.
+
+### Universal root reverse four-path — Accepted
+
+For every prescribed root and every exact five-plus-four deletion cover, at least one of the two opposite interfaces is double-blocked. Boundary antisymmetry gives one of two explicitly oriented reverse four-paths. The exterior-pair theorem redirects these to the corresponding cross-end boundary states.
+
+This theorem lies above both transfer basins: whether the fixed-root transfer graph has an edge or is edgeless. Its descendants and selected states remain separate.
+
+### Exterior-pair gap-two pivot — Accepted
+
+Delete any fixed exterior physical pair from a globally longest five-path. The residual exact frame has a five-vertex rail and a three-vertex rail. Either a reverse four-path occurs, or both endpoint transfers are tight. In the latter face the physical marker is preserved, the transferred five-path is also globally longest, and the configuration re-enters the five-exterior reverse-star package.
+
+When both endpoint transfers occur, four exact covers form a reversible zero-debt square. After also deleting the two original endpoints of the five-path, all four corners share one exact three-plus-three shadow.
+
+### Marker folds and dual-longest saturation — Accepted
+
+In the gap-two pivot face, let the original five-path and the endpoint-pivoted five-path be the two global-longest paths, and keep the physical exterior pair as marker. For each marker vertex, boundary antisymmetry chooses one of two fold types. The corresponding displayed five-path is globally longest and has an exact five-vertex exterior set, so it inherits a full reverse-star system.
+
+One fold makes both orientations of each terminal physical dimer on the relevant longest path signed in a common polarity by four named witnesses: the opposite three-vertex shadow plus the other marker vertex. If both marker vertices have the same fold type, that terminal system is saturated by all five exterior vertices. If their fold types differ, both terminal systems exist, each with four common witnesses.
+
+These are graph-in
