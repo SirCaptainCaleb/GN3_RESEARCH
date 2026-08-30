@@ -1,0 +1,223 @@
+.
+
+**Limit.** The lineage should not be invoked when only a bare exit is needed; then the broader parent truly subsumes it.
+
+### 23. R31/R32 preserve placement and an inherited seam, not just a sign
+
+**Observation.** These results should be read as typed transport theorems for a boundary-pinned signed dimer, its witness, and a seam inherited from the same ancestry.
+
+**Motivation.** Generic signed-support actualization gives signs and payments, but normally forgets where the support sat on the boundary and which seam came with it. The inherited relation is the nonredundant output.
+
+**Limit.** Boundary pinning still does not imply current endpoint exposure in an arbitrary descendant.
+
+### 24. R33 is a same-frame bridge between a sign and a selected crossing
+
+**Observation.** R33 remains conceptually important because it places a signed support and a selected crossing in one exact deletion frame and records capture or refund behavior there.
+
+**Motivation.** Many later results separately make signed supports or crossings abundant. The same-frame relation is much rarer and is closer to what a consumer can use without illicit representative merging.
+
+**Limit.** Concentration at an internal witness is not by itself a graph-level obstruction, and capture is not permanent protection.
+
+### 25. R34 preserves a genealogy that completion cannot recreate
+
+**Observation.** The R34 line packages a captured crossing, incident carrier support, and mirror-return ancestry. Its value lies in this genealogy rather than in another crossing conclusion.
+
+**Motivation.** A generic recompletion may select an isomorphic crossing but cannot certify that it is the captured crossing incident with the old carrier or that it supports the same mirror re-entry.
+
+**Limit.** Genealogy is useful only if a later theorem consumes it; it should not be retained as ceremonial decoration.
+
+### 26. Fixed-turn descent supplies a genuine clock inside one lineage
+
+**Observation.** The fixed-turn program deserves preservation because it constructed a well-founded lexicographic clock while keeping one designated turn meaningful throughout the lineage.
+
+**Motivation.** The universal proper-turn front door and fixed-turn descent terminated at the same two-seam or inherited-one-seam assembly boundary later reached by the return architecture. This independent convergence suggests that the fixed seam is a natural interface, while the old clock may still be useful when a current return seam can be installed as the designated turn.
+
+**Limit.** The clock applies only while the designated physical turn and its universe remain fixed. A root rotation or carrier change needs a reset comparison.
+
+### 27. Lexicographic extremality still localizes blocker ownership
+
+**Observation.** Even where later theorems subsume its existence conclusions, lexicographic maximality remains a sharp way to decide which rail must own a blocker and whether a third rail can absorb it.
+
+**Motivation.** Longest-rail and gap arguments repeatedly turn a failed extension into an oriented reverse turn. Lexicographic tie-breaking can make that ownership canonical enough for a first-failure or exchange argument.
+
+**Limit.** Extremality of one representative does not make turns selected in a different representative current there.
+
+## III. Cross-family compositions suggested by the full history
+
+### 28. Final assembly can be treated as a backward compilation problem
+
+**Observation.** The displayed final two-path candidate should determine which states are worth transporting backward through the proof tree.
+
+**Motivation.** Many historical branches reached a cover containing a good-looking splice, mate, or crossing that was not the corresponding coordinate of the final candidate. By contrast, the hard fixed-fiber and fixed-turn lines began with a named seam or skeleton and controlled how it survived. Reading the static finish backward reveals a small required interface: endpoint exposure, exact seam identity, compatible component roles, and no unaccounted cycle debt.
+
+**Limit.** Backward compilation does not prove that the required packet can be produced. It prevents effort from being credited merely because it produces an object with the same informal name.
+
+### 29. The return/protection gap has the shape of a common-shadow lift
+
+**Observation.** The late return representative and the captured-anchor protected continuation appear complementary: one has strong current seam and crossing geometry, while the other has strong first-contact control. A natural bridge would compare them over an exact residue rather than identify the whole representatives.
+
+**Motivation.** Common-shadow methods already support lawful comparison of attachment states and selected crossings. The return line records a current crossing, marker-cut turn, capture history, and restored seam or seams. The protected line records which exchanges can touch a captured anchor first. The historical R31–R34 ladder shows why both geometry and ancestry matter.
+
+**Limit.** This is not the already known bare common-shadow reselection statement. A useful lift must explicitly preserve or recover current seam geometry and protection; otherwise it repeats a solved existence problem.
+
+### 30. A far-return packet should be viewed as a frozen exchange cell before its crossing is spent
+
+**Observation.** The far-return state has more simultaneous information before any subsequent refund or recompletion than after it.
+
+**Motivation.** In one representative it retains the same selected captured parent crossing while restoring two historical splice turns by neutral exchanges. This is a rare three-way coexistence. Older histories repeatedly lost the very marker or carrier that made a later comparison meaningful by spending it too early.
+
+**Limit.** Historical splice turns are not automatically current seams of a final two-path candidate. Freezing the cell preserves evidence; it does not complete assembly.
+
+### 31. The minimal protected packet may determine an entire rail
+
+**Observation.** Transporting a whole return cover may be unnecessary. It may suffice to protect the captured crossing, one directed seam state, and the relevant endpoints.
+
+**Motivation.** Stationary-state uniqueness can reconstruct a rail from a common directed state and coterminal endpoints outside productive divergence. Protected-family descent can carry several distributed states until first contact. Combining these ideas would reduce the preservation burden from a full representative to a small typed packet.
+
+**Limit.** This composition has not been proved. In particular, the stationary theorem's productive alternatives and the owner-descent move set must be reconciled.
+
+### 32. Mate-Fork forcing offers a possible bypass around direct seam transport
+
+**Observation.** Some synchronization problems can be converted into two sibling near-candidates whose possible holes are resolved by antisymmetry, rather than solved by carrying one selected state through every exchange.
+
+**Motivation.** The R15/R16 order-six closure used a physical resolution principle: two spanning path-cover proposals shared one possible hole and had opposite second holes, forcing the reverse of the common hole. This is stronger than an abstract Boolean analogy because each clause came with an explicit path-forest certificate. The method may apply whenever two candidate constructions preserve complementary portions of the desired seam packet.
+
+**Limit.** The two proposals must be explicit physical path covers with a complete hole list. A symbolic clause without those certificates is insufficient.
+
+### 33. Small-deletion exactness is a synchronization engine
+
+**Observation.** Deleting up to four carefully chosen vertices can do more than impose rail-size floors: it can certify an exact common frame for comparing constructions.
+
+**Motivation.** The universal small-deletion theorem turned many formerly separate pair- and trimer-complement results into one staircase. In the order-ten root-common shadow, deleting the marker pair and two path endpoints exposes an exact three-plus-three residue independent of the route that produced it. Similar deletions can isolate precisely the vertices on which two candidate representatives differ.
+
+**Limit.** The deleted set must have size at most four and the claimed residual paths must be literal. Exactness alone does not identify their orientations across separate descendants.
+
+### 34. Componentwise re-rooting lets the desired survivor choose the root
+
+**Observation.** In a displayed minimum three-cover, the component to delete should be chosen according to which other two components contain the resources one wants to keep literally.
+
+**Motivation.** Componentwise exact re-rooting applies through every component. Singleton-root work highlighted one choice, but the general statement permits a seam-bearing rail, mate component, or long carrier to survive while a different component becomes the root. This can avoid an unnecessary recompletion that would erase roles.
+
+**Limit.** Re-rooting does not transfer maximinity or source status to the new cover, and it does not preserve a state lying on the deleted component.
+
+### 35. Five-exterior equality can upgrade old local constructions
+
+**Observation.** Any historical argument that explicitly constructs a tight five-path with an exact five-vertex exterior may contain more global information than was recognized at the time.
+
+**Motivation.** The accepted equality theorem makes the five-path globally longest and gives a simultaneous reverse star from the exterior vertices. Several older wrap, pivot, marker-fold, and small-order constructions predate this parent and stopped after proving local tightness or exactness.
+
+**Limit.** Both cardinality and exact exterior status must be verified. A five-path inside a larger or nonexact residue does not qualify.
+
+### 36. Root rotations are better organized as a labelled transition graph
+
+**Observation.** Rather than forcing a scalar descent on roots, one can record a directed graph whose vertices are exact rooted frames and whose edges are certified rotations labelled by the resources gained, retained, and lost.
+
+**Motivation.** Terminal and internal root rotations have different reverse-excess signatures. Some retain a crossing, some a marker cut, some a common shadow, and some only graph-intrinsic ancestry. A labelled graph preserves these differences and makes a return cycle informative without falsely calling it progress.
+
+**Limit.** A transition graph alone proves no termination. A useful cycle statement still needs a consistency law, an accumulated physical certificate, or a well-founded label.
+
+### 37. Overlapping exact three-plus-three shadows invite a consistency argument
+
+**Observation.** Several root choices may expose exact three-plus-three shadows that overlap heavily. Their shared physical subpaths could constrain orientations or anchor placements even though the shadows are not simultaneously current.
+
+**Motivation.** Root-common shadow existence is independent of the equality-pivot route. Common-shadow reasoning shows how graph-intrinsic conclusions may be transported through literal intersections without merging descendants. This suggests studying overlap consistency rather than seeking one representative that currentizes every shadow.
+
+**Limit.** Overlap is not simultaneity. Any inferred orientation must follow from the shared physical path order or another graph-intrinsic uniqueness theorem.
+
+### 38. Double-central-anchor interactions suggest a finite anchor-incidence object
+
+**Observation.** Repeated trimer interactions can be organized by their physical central anchors rather than by the many representatives that exhibit them.
+
+**Motivation.** Two disjoint trimers produce opposite-polarity mass-four pairs with a common unordered anchor set; the order-ten root packet creates a root-common double-anchor interaction without requiring the pivot or refund ancestry. Across several root choices this yields a small graph or hypergraph of physical anchor incidences.
+
+**Limit.** Incidence alone is not payment and does not make descendants simultaneous. Its value would come from a proved consistency, degree, or repetition constraint.
+
+### 39. A common-witness support family is strongest before payment
+
+**Observation.** When several signed dimers share one witness, their joint pre-refund certificate can contain more usable information than the separate paid descendants.
+
+**Motivation.** Marker-fold saturation produces bidirectional dimer systems over multiple shadow vertices, and paired actualization can test both orientations in one physical-pair deletion frame. Paying or refunding one orientation may destroy the common witness or split the system into unrelated descendants.
+
+**Limit.** A joint pre-refund certificate is not simultaneous selection of both orientations and cannot be counted twice in the component budget.
+
+### 40. Static-core transparency turns currentization into a re-actualization question
+
+**Observation.** If a descent is transparent to a fixed core, it may be enough to preserve a graph-intrinsic packet and prove that it can be re-actualized at the terminal descendant.
+
+**Motivation.** Static-core transparent pair excursions preserve root shadows and anchor interactions as historical truth while producing a floor. Earlier common-shadow and stationary-state tools offer ways to select old graph-intrinsic states again without claiming literal survival. This separates two tasks: preserve the physical relation, then recover a current representative when needed.
+
+**Limit.** Re-actualization must retain the role consumed downstream. Selecting an isomorphic sign or crossing elsewhere is not enough.
+
+### 41. Floors are natural recurrence detectors
+
+**Observation.** Mass and rail-size floors may be most informative when a neutral process returns to a comparable frame, because they prevent indefinite loss of physical support.
+
+**Motivation.** Small-deletion floors, mass-two pair floors, and donor-rail floors repeatedly rule out small residues. By themselves they do not expose final seams. Combined with a root-transition or owner-descent recurrence, however, they can force reuse, overlap, or an equality face.
+
+**Limit.** A floor is not a static assembly state. The recurrence must compare the same physical or canonically identified quantity.
+
+### 42. Transfer squares and cubes may carry consistency information
+
+**Observation.** Reversible neutral moves over a fixed common shadow form small exact cells. Comparing two routes around such a cell may reveal an invariant or force a productive discrepancy.
+
+**Motivation.** Boundary-transfer lattices, pair-shadow attachment fibers, commuting endcap restorations, and zero-debt two-for-two switches already exhibit squares. Some have literal marker retention and fixed rail orientations. The old promotion-square and Hall-hull programs sought similar consistency in a less physical representation.
+
+**Limit.** No general commutation or path-independence theorem is currently available. Each edge must be a certified physical exchange, and an auxiliary loop has no force until its physical effect is identified.
+
+### 43. Complete shielding is positive sign information
+
+**Observation.** An edgeless transfer basin is not an absence of structure. Every forbidden direct attachment has an antisymmetric reverse turn, often simultaneously at several endpoints.
+
+**Motivation.** Complete shielding creates bi-end locks, reverse stars, cross-endcap absorption, and terminal collision packets. This is why several order-ten parents lie above both the transfer and no-transfer basins: an edge gives a common-shadow fiber, while no edge gives a saturated reverse-sign system.
+
+**Limit.** Saturation by itself is not a consumer. The orientations must match a theorem that uses them.
+
+### 44. The transfer/no-transfer split may be a representation choice, not the deepest dichotomy
+
+**Observation.** Above the basin split, both sides repeatedly produce exact root frames, reverse four-paths, signed dimer gateways, and central-anchor interactions. The more fundamental data may be the typed fiber or shield packet available at the root.
+
+**Motivation.** Universal order-ten parents were progressively lifted above both basins. Yet the edge basin retains a movable endpoint and common pair shadow, while the shielded basin retains simultaneous reverse turns. A basin-independent compiler could accept either packet and expose the same downstream interface without identifying their internal states.
+
+**Limit.** The two basins are not equivalent. Any shared compiler must state separate input contracts and may preserve different surplus ancestry.
+
+## IV. Finite and computational observations
+
+### 45. Forbidden overlong paths act like physical clauses
+
+**Observation.** In a smallest counterexample with a known longest-path bound, every proposed overlong concatenation forbids a precise conjunction of turns.
+
+**Motivation.** The order-nine closure, the order-ten crossed-edge theorem, reverse-four-path parents, and mate-fork forcing all use this mechanism. It converts global longestness into small local constraints while retaining the physical path order that produced the contradiction.
+
+**Limit.** Clause language is only shorthand. The actual certificate must list the path and verify distinct vertices and tight consecutive triples.
+
+### 46. Labelled endpoint signatures can outperform anonymous quotient classification
+
+**Observation.** Small-order closure often depends on which physical endpoint realizes a sign, not merely on the isomorphism type of a local four- or five-vertex quotient.
+
+**Motivation.** The order-nine argument compared labelled endpoint signatures across exact frames. The order-six correction showed the danger of treating every non-Hamilton four-set as cyclic: the transitive matching-block type survived and required its own labelled signature analysis.
+
+**Limit.** A signature comparison is valid only when the frames share named physical vertices or an explicit correspondence.
+
+### 47. The order-ten problem naturally has two logical layers
+
+**Observation.** A finite model should separate graph-intrinsic tight-turn facts from current exact-cover selections.
+
+**Motivation.** Boundary antisymmetry and forbidden six-path clauses live at the graph level. Endpoint roles, rail orientations, component counts, transfer edges, and same-candidate seams live at the representative level. Many historical errors arose by collapsing these layers.
+
+**Limit.** The two-layer model must also encode exact partitions and physical path order; a truth assignment to local turns alone is too weak.
+
+### 48. Certificate-preserving computation is more useful than packet enumeration
+
+**Observation.** A computational search would be most informative if every derived constraint retained the representative, deletion frame, physical path, and theorem that justified it.
+
+**Motivation.** Anonymous searches rediscover abundant fans and collisions but cannot tell whether a final consumer applies. A certificate-preserving solver could instead test whether the accepted parents already make the remaining interface inconsistent, find a finite surviving pattern, or expose the exact missing implication.
+
+**Limit.** Computation cannot repair an invalid abstraction. The encoding must honor cycle debt, descendant separation, orientation, and current-versus-intrinsic status.
+
+### 49. Orders thirteen and fifteen are valuable falsification laboratories
+
+**Observation.** Small exact models should be used to challenge proposed global potentials, reset rules, and transport claims before those claims enter the proof tree.
+
+**Motivation.** Earlier finite searches showed that attractive local quantities can recur after changing the root or physical carrier. These examples diagnose which coordinate a proposed monotone forgot.
+
+**Limit.** Failure to
