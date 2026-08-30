@@ -1,0 +1,591 @@
+# Canonical continuity — accepted state through the legacy chain
+
+Generation seal: `A7C2-20260829`.
+
+**Global theorem status: OPEN.**
+
+This file is the canonical compression of the post-ledger mathematical state. It absorbs the entire legacy `HANDOFF_...` chronology through exact `HANDOFF_000012.md`. Fresh workers should not reconstruct that chain from old files.
+
+Where Part II or later conflicts with older status language in Part I, the later section controls.
+
+# Part I. Accepted post-baseline continuity inherited from the prior clean snapshot
+
+
+This document bridges `A7C2_20260829_01_THEOREM_LEDGER.md` to the later work completed in this project after that theorem-bank checkpoint.
+
+It is intentionally a **supplement**, not a rewrite of the theorem bank. The baseline theorem bank preserves the older accepted architecture and provenance. This file records the later accepted delta and the current branch-status map.
+
+## Status authority
+
+The mathematical statements below are included only where this project records a later independent audit accepting the relevant result in the scope summarized here.
+
+Several exact Auditor/Puzzler/Visionary handoff files were not present among the local project attachments used to build this clean packet. Their audit dispositions were explicitly supplied in the project interaction history. The producer handoffs available locally were used for the theorem wording and fences.
+
+Where a later strengthening is only partially recoverable from the current project sources, it is **not reconstructed**.
+
+The old theorem bank's four Puzzler-27 parent lifts remain audit-pending here unless a later exact independent audit is recovered. `General Tight-Path Contact with a Signed Support` also remains unavailable and must not be used without an independent audit.
+
+---
+
+# A. Fresh-far capture and literal payment layer
+
+The later project accepted the following refinements of the far-return capture/payment corridor.
+
+## Fresh-far payment contact / transparent-birth architecture
+
+The fresh far-return frame can issue a new same-frame capture certificate using the current selected crossing. The source star at the captured anchor is therefore the literal star in that fresh frame rather than transported historical currentness.
+
+The accepted payment architecture distinguishes:
+- pre-birth payment/capture contact;
+- post-birth protected-lineage first contact.
+
+Star equality at birth is local information. It does not by itself prove designated-lineage membership or continuation licensing.
+
+## Refund-ready endpoint-cut realization
+
+For a displayed frame
+
+\[
+D\sqcup U\sqcup W,
+\qquad
+D=(p_0,p_1),
+\qquad
+U=(\nu,u_1,\ldots),
+\]
+
+with reverse refund trimer \((\nu,p_1,p_0)\) tight, the literal endpoint-cut mutation
+
+\[
+D\sqcup U\sqcup W
+\longrightarrow
+(\nu,p_1,p_0)\sqcup U^-\sqcup W
+\]
+
+has complete changed-state support inside
+
+\[
+\{p_0,p_1,\nu,u_1\}.
+\]
+
+It preserves `W` and the suffix of `U` literally. In the fresh-far setting, when the captured port lies on `W`, this is a port-frozen strict payment move.
+
+## Opposite-support literal refund lift
+
+On the face where the fresh selected crossing itself is the opposite support, restoring `D` as its own component and testing the outside endpoint of the other rail gives
+
+\[
+\boxed{
+\text{spanning two-cover}
+\quad\lor\quad
+\text{port-frozen strict width-two payment}.
+}
+\]
+
+No deletion/recompletion of the crossing rail is needed. This remains true for both terminal and internal far stars on that face.
+
+Relative to the exact fresh source, the explicit bad-swallow endpoint-cut can delete at most the one old boundary state `nu u1`; the whole crossing rail and full port star survive.
+
+At the immediate paid descendant, at least one of the two distinct restored far seam states survives literally.
+
+---
+
+# B. Second-turn residue and alternate actualization
+
+## Refund-mate one-hole compiler
+
+In the accepted second-turn residue, the displayed three-cover
+
+\[
+(p_0,p_1,\nu)
+\sqcup
+(u_1,u_2,\ldots)
+\sqcup
+W
+\]
+
+defines a spanning two-path proposal whose unique bad turn is
+
+\[
+p_1\nu u_1.
+\]
+
+Its exact antisymmetric mate
+
+\[
+u_1\nu p_1
+\]
+
+is exactly the R12 refund trimer.
+
+Thus refund and the unique same-candidate defect are the same labeled local datum in opposite orientation. This is candidate-level synchronization, not automatic closure.
+
+Only the old boundary state `nu u1` is lost from the source, so at least one restored far seam survives in the same displayed packet.
+
+## Complete-shield kernel
+
+In the order-ten four-vertex refund kernel, if no vertex attaches to either end of the refund trimer, the exact obstruction is a complete labeled shield. Boundary antisymmetry turns this into two full reverse stars. The anonymous non-Hamilton quotient is therefore not the final useful description.
+
+## Alternate actualization and payment-support classification
+
+In the bad marker test, the actualized short opposite support has the exact form
+
+\[
+Q=(\alpha,a).
+\]
+
+Later accepted work separates graph-intrinsic support production from selected-state payment consumption: the payment theorem does not require `Q` to become current.
+
+For aligned payment with marker rail
+
+\[
+R=(r_0,\ldots,r_s),
+\]
+
+the actual opposite support is exactly one of:
+
+\[
+S_R=R
+\]
+
+or
+
+\[
+S_R=(\alpha,r_s).
+\]
+
+Physical support incidence at the protected port is not itself payment contact.
+
+---
+
+# C. Internal-witness reroot and port-boundary normalization
+
+The internal-witness double-bad order-ten geometry was progressively compressed and ultimately closed at the **port-boundary cover level**.
+
+## Exact reroots and seam-selective fragment grafts
+
+If deleting internal witness `alpha` leaves a Hamilton complement, the exact port-frozen reroot
+
+\[
+Q\sqcup(\alpha,R)
+\]
+
+moves `alpha` to a boundary while preserving the entire port rail and exact crossing.
+
+In the `5+3` residue, all noncentral positions of `alpha` admit literal boundary covers. In the central position, dual fragment-to-port grafts give exact `D`-deletion reroots when their labeled junctions are tight.
+
+A successful fragment graft spends only one alpha-adjacent old state and preserves the other. In the favorable case where the preserved state is a restored far seam, the untouched alpha-side component shields that seam through the explicit first payment stage.
+
+## Triple-transitive kernel closure
+
+The remaining central non-Hamilton kernel was reduced through cyclic and auxiliary K4 escapes to a triple-transitive three-dimer signature kernel. Later independently audited work closed that kernel and yielded:
+
+> **Universal Double-Bad Internal-Witness Port-Boundary Reduction.**  
+> Every double-bad internal-witness `5+3` cell admits a literal minimum three-cover moving `alpha` to a current boundary while preserving the whole port rail `R`, exact `c`, and its selected port star.
+
+This is a cover-level theorem. Its outputs are not all equally suitable as payment sources.
+
+---
+
+# D. Boundary payment-type split
+
+The universal port-boundary reduction has two consumer types.
+
+## Type E — exact `D`-deletion boundary output
+
+These are exact two-covers of `H-D` with the normalized boundary and port packet current.
+
+A fresh same-frame capture may be reissued after rerooting; historical capture ancestry need not be transported through the reroot.
+
+Restoring `D` as an isolated component and applying the accepted two-turn swallow trichotomy gives, before port contact,
+
+\[
+\boxed{
+\text{port-frozen strict payment}
+\;\lor\;
+\text{spanning two-cover}
+\;\lor\;
+\text{port-frozen refund-mate one-hole packet}.
+}
+\]
+
+In favorable fragment-graft cases, one retained alpha-side seam can remain on the untouched component through this entire explicit first-stage payment packet.
+
+## Type B — boundary-only output
+
+Other universal-reduction covers move `alpha` to a boundary while embedding or splitting the vertices of `D`. They do not automatically provide an exact `D`-deletion payment root.
+
+The project then studied literal `D` deletion from the actual Type-B escape rather than arbitrary recompletion.
+
+---
+
+# E. Type-B literal synchronization program — strategically parked
+
+## One-spend two-fragment layer
+
+In the highest-priority `v in D` face, literal deletion of `D` leaves exactly two nonempty ordered `X` fragments.
+
+With exact port crossing retained:
+- one-state reorientation of either non-port port state is impossible;
+- there are exactly ten intact-fragment one-spend two-path templates;
+- total failure forces at least four distinct named bad junction turns and exact antisymmetric reverses;
+- port-side reverses have candidate-adjacency / conditional-contact meaning.
+
+If all ten fail, any port-preserving exact `D` root must spend both non-port states or mutate a literal fragment.
+
+## Both-spend three-port gate layer
+
+The intact both-spend class has exactly sixteen labeled templates. Every exact `D` root enters the terminal port dimer through one of three complete gates.
+
+The complete gate pass is antisymmetrically orthogonal:
+- no candidate hole in the sixteen-template family is the exact reverse of another candidate hole;
+- gate-hole reverses lead to port-contact behavior if currentized;
+- completion-hole reverses require fragment mutation.
+
+Therefore the bounded intact Type-B program has no further noncontact internal consumer without deliberately opening the `F/G` flip/split mutation layer.
+
+**Strategic status:** **PARKED, not logically eliminated.**
+
+A useful reason to reopen it would be a new theorem that consumes one of the exact gate/reverse packets without entering generic fragment mutation.
+
+---
+
+# F. Protection-birth reset and zero-move Type-E assembly
+
+Later work corrected an unnecessary invented interface.
+
+## Protection-birth eligibility predicate collapse
+
+The canonical protection theorem requires an actual capture descendant plus a designated quiet continuation. It does not require a separate abstract “eligibility” predicate.
+
+The strict-paid Type-E frame `S` is already an actual descendant of the fresh capture/payment ancestry and may be chosen as protection birth when a designated continuation is fixed.
+
+## Zero-move strict-paid one-hole compiler
+
+Write the strict-paid frame as
+
+\[
+S=
+(\nu,p_1,p_0)
+\sqcup
+(u_1,\ldots,u_t)
+\sqcup
+W.
+\]
+
+Without changing the representative, the displayed final proposal
+
+\[
+(\nu,p_1,p_0,u_1,\ldots,u_t)
+\sqcup W
+\]
+
+has exactly one new turn:
+
+\[
+h=p_1p_0u_1.
+\]
+
+If `h` is tight, there is a spanning two-cover. If it is bad, its exact mate
+
+\[
+u_1p_0p_1
+\]
+
+is tight.
+
+The source-verified one-hole scope remains controlling: one hole supplies its mate/local canonicality data; it does **not** automatically prove the conjecture.
+
+## Seam-activation gate
+
+In a seam-shielded fragment-graft face, the retained historical seam is current in the untouched component but still lacks the opposite candidate-side predecessor into `alpha`.
+
+Using the intact strict-paid trimer is statically blocked by the inherited sign. Using the intact port-side component requires a selected state through the protected anchor and exposes protected first contact.
+
+Thus the zero-move paid-side one-hole coordinate is strictly cheaper than contact-free seam activation.
+
+---
+
+# G. Order-ten final `5+5` law and exact-mate resource program
+
+Every final two-cover in order ten has profile
+
+\[
+\boxed{5+5}.
+\]
+
+If a final component retains a contiguous `W` packet, it must absorb exactly `|U|-3` paid vertices.
+
+With exact mate
+
+\[
+M=(u_1,p_0,p_1)
+\]
+
+and exact terminal port state retained, the paid final five-path is uniquely forced once the profile is fixed.
+
+This converts many mate-currentization questions into direct final-candidate questions.
+
+## `|U|=4`
+
+After the forced paid five-path is tight, there are two contiguous-`W` final attachments, one at each end. Failure at both ends gives two exact reverse endpoint resources.
+
+A further reverse bridge either produces a Hamilton `W`-side five-path or yields a literal smaller two-seam `W`-breach root.
+
+Subsequent accepted gap analysis showed that the remaining one-resource corners do not presently have a productive protection/assembly consumer.
+
+**Strategic status:** **PARKED.**
+
+## Seam-shielded `|U|=5`
+
+After the forced paid path is tight, there are exactly six contiguous-`W` final candidates: four seam-active candidates plus two tail-only direct escapes.
+
+Their hole graph is two disjoint three-edge paths. Total failure forces at least four distinct bad turns. Every hole reverse leaves the exact frozen-`W` fiber.
+
+After excluding four explicit triple-bad reverse-Hamilton escapes, each chain factors into seam pressure, tail pressure, or both.
+
+Each pure direction gives a literal `3+2` breach root and a one-hole Hamilton proposal whose mate was already present in the direction certificate. The “both” direction gives a two-hole proposal with both mates already present.
+
+Double seam pressure, double tail pressure, and mixed pressure cannot be currentized together in one path forest: respectively they branch at `alpha`, co-branch at the tail, or create a directed cycle.
+
+No accepted closing consumer emerged from that factorized breach cell.
+
+**Strategic status:** **PARKED.**
+
+A useful reason to reopen it would be a theorem that converts one of these exact breach roots or saturated one-/two-hole packets directly into final `5+5` assembly or a controlled resource-preserving mutation.
+
+---
+
+# H. Same-component Type E, `|U|=3` — accepted pre-compression final-interface layer
+
+Here `W` already has order five and is the finished second component. All remaining work lies on the paid five-set
+
+\[
+Y=\{\nu,u_1,u_2,p_0,p_1\},
+\]
+
+away from the protected port.
+
+Retain exact mate
+
+\[
+M=(u_1,p_0,p_1)
+\]
+
+and the known bad turn
+
+\[
+p_0p_1\nu.
+\]
+
+Exactly four final paid-five candidates survive:
+
+\[
+C_1=(\nu,u_2,u_1,p_0,p_1),
+\]
+
+\[
+C_2=(u_2,\nu,u_1,p_0,p_1),
+\]
+
+\[
+C_3=(\nu,u_1,p_0,p_1,u_2),
+\]
+
+\[
+C_4=(u_1,p_0,p_1,u_2,\nu).
+\]
+
+Name their holes
+
+\[
+A=\nu u_2u_1,\qquad
+B=u_2u_1p_0,
+\]
+
+\[
+C=u_2\nu u_1,\qquad
+D=\nu u_1p_0,
+\]
+
+\[
+E=p_0p_1u_2,\qquad
+F=p_1u_2\nu.
+\]
+
+The candidate hole pairs are
+
+\[
+AB,\qquad CD,\qquad DE,\qquad EF.
+\]
+
+## Minimal failure sets
+
+The inclusion-minimal bad hitting sets are exactly
+
+\[
+\boxed{
+ACE,\ ADE,\ ADF,\ BCE,\ BDE,\ BDF.
+}
+\]
+
+## Cross-end reverse Hamilton exclusion
+
+`C` and `F` cannot both be bad. Together with whichever of `D,E` is bad, their exact reverses produce a Hamilton path on the paid five-set, hence a final `5+5` two-cover with finished `W`.
+
+## E-bad one-hole amplifier
+
+If
+
+\[
+E=p_0p_1u_2
+\]
+
+is bad, the displayed paid path
+
+\[
+(\nu,u_1,u_2,p_1,p_0)
+\]
+
+has exactly one unresolved turn. It either closes the final `5+5` cover or forces the genuinely new tight mate
+
+\[
+\boxed{
+p_1u_2u_1.
+}
+\]
+
+## E-tight / A-bad amplifier
+
+If `E` is tight, total failure forces `D,F` bad and `C` tight. If `A` is bad, the displayed path
+
+\[
+(u_1,u_2,\nu,p_1,p_0)
+\]
+
+either closes or forces the genuinely new tight mate
+
+\[
+\boxed{
+p_1\nu u_2.
+}
+\]
+
+## Unique BDF mate-saturated corner
+
+The only exact first-order residue avoiding both amplifiers is
+
+\[
+\boxed{
+A,C,E\text{ tight};
+\qquad
+B,D,F\text{ bad}.
+}
+\]
+
+In this BDF corner, every Hamilton proposal whose other turns are already certified has its sole hole paired with an already-known exact mate.
+
+Thus the available source-verified one-hole mechanism is **first-order saturated** in this corner.
+
+A subsequent independent audit in the project accepted the Explorer-17 hole system, six minimal hitting sets, `C/F` incompatibility, both one-hole amplifiers, the reduction to the unique BDF corner, and first-order BDF mate saturation in their exact stated scopes.
+
+The exact later Puzzler-17 strengthening beyond that audit is not fully present in the local source set used to build this packet and is therefore not reconstructed here.
+
+---
+
+
+# Part II. Legacy handoff chain compressed through `HANDOFF_000012.md`
+
+This section supersedes older status language where there is any conflict. The legacy handoff files themselves are **not required for current work**.
+
+## Status authority for the compressed chain
+
+- Legacy `000001–000006` were already independently accepted in the prior package checkpoint.
+- Legacy Puzzler `000007–000008` were independently audited by legacy Auditor `000009`: `000007` **PASS** and `000008` **PASS WITH FENCE**.
+- Legacy `000010` was Visionary strategy only and introduced no mathematics.
+- Legacy Puzzler `000011` was independently audited **PASS** by legacy Auditor `000012` in its exact fenced scope.
+- The duplicate-title Visionary artifact formerly uploaded as `HANDOFF_000009(1).md` was superseded and has no mathematical authority.
+
+The Strong Level-(1) Two-Cover Conjecture and the order-ten case remain **OPEN**.
+
+## A. Accepted post-checkpoint compression from legacy `000001–000006`
+
+### A1. BDF is locally saturated, not merely first-order saturated
+
+For the same-component Type-E `|U|=3` paid five-set
+
+\[
+Y=\{\nu,u_1,u_2,p_0,p_1\},
+\]
+
+there is an explicit Level-(3) edge-order realization of the exact BDF sign pattern
+
+\[
+A,C,E\text{ tight},\qquad B,D,F\text{ bad}
+\]
+
+plus the standing source turns, with **no Hamilton tight path on `Y`**.
+
+Therefore no argument using only the presently certified induced-`Y` BDF data and the general Level-(1) axioms can close BDF. Any closure must import genuinely external information: the finished `W` component, another exact-cover constraint, additional ancestry, or another nonlocal relation.
+
+This is a negative-space result, not a full order-ten counterexample.
+
+### A2. Total failed `|U|=3` compiles to an external singleton root
+
+If all four paid-five final candidates fail, the six sign rows admit a uniform compiler producing
+
+- a tight four-path `K=(k_0,k_1,k_2,k_3)\subset Y`;
+- a unique leftover vertex `z`;
+- boundary witness turns `k_1k_0z` and `zk_3k_2` tight.
+
+Hence
+
+\[
+(z)\sqcup K\sqcup W
+\]
+
+is a minimum three-cover and
+
+\[
+H-z=K\sqcup W
+\]
+
+is an exact `4+5` singleton-root frame.
+
+### A3. Finished `W` forces an external collision and a four-form normal form
+
+The order-ten root reverse-four-path theorem couples `K` to the finished five-path `W` and forces a same-polarity two-extension collision on one oriented boundary dimer of `K`, with one witness `z` and the other on `W`.
+
+The corresponding cross-endcap test gives one of four explicit descendants, uniformly of type
+
+\[
+\boxed{
+\text{globally longest five-path with exact }2+3\text{ complement}
+\quad\lor\quad
+\text{trimer with exact }3+4\text{ complement}.
+}
+\]
+
+### A4. Archive lift to the cross-endcap fixed-pivot packet
+
+The four-form compiler is an instance of the accepted cross-endcap fixed-pivot architecture. Either cross-endcap pivot is available as a separate descendant, and a chosen pivot retains in the **same representative**
+
+\[
+\boxed{
+\text{mixed }Y/W\text{ pivot core containing current internal }z
++\text{ exact two-rail complement}
++\text{ current far-boundary same-polarity collision}
++\text{ opposite-rail endpoint witness}.
+}
+\]
+
+In a bad-pivot trimer branch, archived cross-pinned peeling cannot recur indefinitely at order ten: at most one nonterminal `3→5` peel occurs before a current core-boundary collision is forced; a second peel would create a forbidden seven-vertex tight path.
+
+## B. Accepted adaptive capture / captured-middle fixed-turn interface (legacy `000007–000009`)
+
+### B1. External-collision adaptive capture compiler — accepted
+
+Let `D` be the terminal compiler dimer of the accepted four-path `K`, carrying two distinct same-polarity external witnesses, one the singleton-root witness and one on finished `W`.
+
+In any exact `D`-deletion two-cover in the accepted parent-crossing scope, each selected parent crossing has one endpoint on the surviving carrier and one exterior endpoint. Such a crossing can contain at most one of the two witnesses, so it misses at least one admissible witness.
+
+Witness-adaptive R33 may therefore choose a missing witness **se
