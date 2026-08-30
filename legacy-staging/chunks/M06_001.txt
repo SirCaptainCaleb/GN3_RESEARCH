@@ -1,0 +1,329 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+# Historical atlas: small orders and the order-ten program
+
+> **2026-08-29 fresh-package status note.** This remains historical/perspective material. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and later audited append-only handoffs.
+
+
+> **2026-08-28 clean-packet note.** This is a historical atlas, not a live-status document. It is preserved substantially unchanged because its value is provenance, representation history, and reusable technique. Current mathematical status is controlled by `A7C2_20260829_01_THEOREM_LEDGER.md`, `A7C2_20260829_10_CONTINUITY.md`, and later independently audited handoff deltas. Historical archive files named inside this volume are provenance handles; the large raw archive is intentionally not included in this packet.
+
+
+## Purpose
+
+Finite-order work served three roles:
+
+1. close the smallest possible counterexample orders;
+2. test stronger lemmas and find counterexamples to them; and
+3. reveal rigid size profiles that later became arbitrary-order parents.
+
+The current order-ten proof is not one uninterrupted case analysis. It is the convergence of several older lines: longest paths, pair deletion, one-hole mates, signed refunds, transfer edges, exact small deletion, fixed shadows, and return/capture.
+
+## 1. Status overview
+
+| Order or branch | Status | Controlling historical fact |
+|---|---|---|
+| Through order eight | Closed | Pair-deletion rigidity plus the universal four-exterior bound |
+| Order nine | Closed | Cyclic exterior quotient exclusion plus transitive middle-signature agreement and explicit two-cover |
+| Order ten with a six-vertex longest path | Closed | R15 mate-fork forcing; R16 independently audited it and supplied a cyclic-four-set compression |
+| Order ten with a five-vertex longest path | Open | Now universal for any hypothetical order-ten counterexample; modern root, shadow, transfer, floor, and return architecture applies |
+| Orders thirteen and fifteen exploratory branches | Historical | Useful counterexamples, return patterns, and proof techniques; not current closure steps |
+
+The order-six longest-path branch in order ten was closed by R15/R16. Later proofs that every hypothetical order-ten counterexample has longest-path order five compress the architecture but do not receive first-closure credit.
+
+## 2. Early finite experiments in the CW-free era
+
+### 2.1 Order-eight rooted regression
+
+The unrooted source-return self-contained handoff retained an order-eight example showing that a prescribed rooted two-cover need not exist even when an unrooted two-cover does. This killed the rooted strengthening and forced later work to treat endpoint role as a resource rather than part of minimality.
+
+### 2.2 Order-ten rotations and hidden middle states
+
+The 2026-08-13 order-ten files studied a global-longest path and a small exterior set. Two themes appeared early:
+
+- rotating a longest path through an exterior marker could preserve order while changing which middle pair was exposed;
+- top/bottom boundary tests could bypass one local obstruction but leave an internal hidden state.
+
+These arguments used CW-era height and are not current certificates. Their physical configurations anticipated the later middle-marker, fold, and root-rotation systems.
+
+### 2.3 Orders thirteen and fifteen
+
+The order-thirteen and order-fifteen files explored the first orders at which five-exterior return, lone four-vertex residuals, pure visible returns, and two-coordinate interior cuts could coexist.
+
+Their durable contributions are negative-space examples:
+
+- a local return can recreate the same type of obstruction on a different physical carrier;
+- an apparent coordinate descent may reset when the marker changes;
+- one visible interface may hide a second internal cut; and
+- bounded residual order does not imply a bounded list of global histories.
+
+They should be consulted when proposing a recurrence monotone or a theorem transporting visibility through root changes.
+
+## 3. Strong cleanup through order eight
+
+### 3.1 Pair-deletion rigidity
+
+For any deleted physical pair, the complement has an exact two-cover with two nontrivial rails. Combined with pairwise seam polarity and four-interface normalization, this constrained every very small counterexample.
+
+### 3.2 Universal four-exterior theorem
+
+A proper tight path cannot have only four exterior vertices in a smallest Strong counterexample. The proof forced three turns through every exterior vertex, used the local tournament on the exterior set, and compared dual maximum-path rotations to obtain incompatible source/sink requirements.
+
+This yielded the Strong two-cover theorem through order eight and a smallest-counterexample order floor.
+
+### 3.3 Later subsumption
+
+Universal small-deletion exactness and the proper-path exterior order-five floor now give a shorter parent-level route to the same size exclusion. The historical four-exterior proof remains a useful independent extremal method and a source of pairwise interface orientation data.
+
+## 4. Order-nine closure
+
+### 4.1 Equality frame
+
+The order-nine analysis reached a global-longest path with a four-vertex exterior quotient. The no-Hamilton four-set has cyclic or transitive matching-block type.
+
+### 4.2 Cyclic quotient exclusion
+
+The cyclic case was not locally impossible. Its exclusion required a long chain of one-hole six-path forcing, alternate longest paths, reverse stars, and mate quartets. Head-shell success, tail-shell success, and the all-defect state were each eliminated.
+
+This distinction remains important: “cyclic quotient” is not itself a contradiction; the surrounding longest-path and shell frame is load-bearing.
+
+### 4.3 Transitive middle signature
+
+For the transitive quotient, a five-vertex middle-matching signature theorem constrained four labelled turns. The two endpoint five-sets were no-Hamilton and had to carry the same signature. That common signature forced alternate longest paths and ultimately an explicit spanning two-cover.
+
+### 4.4 Closure and retained techniques
+
+The cyclic exclusion and transitive signature agreement closed the Strong order-nine case.
+
+Reusable techniques:
+
+- classify the physical quotient only after fixing the exterior frame;
+- use no-Hamilton five-sets to derive labelled signature constraints;
+- compare signatures at both endpoints rather than treating them independently; and
+- turn each missing turn into a one-hole longest-path mate.
+
+The exact order-nine shell-position tables are not global theorems and should not be imported elsewhere.
+
+## 5. Historical order-ten split by longest-path order
+
+Before the modern small-deletion theorem, order ten was divided by the maximum tight-path order.
+
+### 5.1 Longest path of order six
+
+Take a six-vertex longest path and four exterior vertices. Reverse stars and a central rectangle produced an inward relay and several endpoint/feedback turns.
+
+R15 proved a **mate-fork forcing lemma**: when a one-hole candidate has two possible missing turns, mate constructions force one of two new turns. Applying successive forks forced four named turns and gave an explicit spanning two-cover.
+
+This directly closed the order-ten longest-six branch.
+
+R16 independently audited the closure. It also proved a cyclic matching-block four-set fifth-vertex extension theorem: two selected arcs on one cyclic face force a Hamilton five-path. This gives a shorter exclusion of the cyclic exterior quotient, but the direct mate-fork closure already covers the entire longest-six branch, including the transitive residue.
+
+Controlling attribution:
+
+- **R15:** first complete longest-six closure;
+- **R16:** independent audit and additional cyclic quotient compression.
+
+### 5.2 Longest path of order five
+
+The old longest-five branch began with a five-vertex path and five exterior vertices. A middle physical pair could be used as a marker. Central positive turns were excluded through repeated longest-path and one-hole forcing. The obstruction became marker productivity rather than path production.
+
+The first major packages were:
+
+- long-rail joint lock;
+- universal middle-pair marker;
+
+- head/tail/double-negative central state classification;
+- a five-plus-two refund that returned mass to the longest path;
+- an exact five-plus-three retained-longest pair frame;
+- a second-generation marker created without recompletion; and
+- gap-one rotation involutions with bi-end locks and collision portals.
+
+These were genuine advances but still generated new markers and portals rather than final assembly.
+
+## 6. Historical longest-five portal line
+
+### 6.1 Middle-marker refund
+
+A middle marker on the five-path created a one-hole overlong-path clause. When the clause could not close directly, it refunded a three-vertex packet and left a residual dimer. Deleting that dimer gave an exact five-plus-three frame retaining the original longest path.
+
+The information ledger was rich: original deletion frame, reverse-wrap turns, full exterior stars, marker bit, refund trimer, residual dimer, exact pair frame, and second-generation marker.
+
+### 6.2 Gap-one rotation involution
+
+In a five-plus-four or related near-equal frame, a one-core rotation could be reversed exactly. This closed one recurrence obligation but also showed why rotation alone is not descent.
+
+The order-ten specialization produced pair-deletion bi-end locks, two endpoint collisions between reverse wraps and shell mates, and a third shifted collision portal.
+
+### 6.3 Double exterior refund and closed reverse-wrap cells
+
+Later R17/R18 work coupled both exterior sides, refunded boundary supports, and transported a shell across a closed reverse-wrap cell. Same-deletion exterior rotations and triple markers increased the amount of simultaneous graph-intrinsic structure.
+
+### 6.4 Cross-rail endcap dualization
+
+The endcap line compared two physical ends of the five-path, dualized their attachment packets, and built exact local transfers. This is an ancestor of the modern endpoint-transfer edge and cross-endcap absorption packages.
+
+### 6.5 Why the line was compressed
+
+The old marker/refund line required a chosen longest path and a chain of specific local states. Universal small-deletion exactness later forced the same five-plus-four and five-plus-three profiles for every root and exterior pair. The modern transfer and gap parents then reproduced much of the bare geometry with weaker hypotheses.
+
+The old line remains valuable for its refund stack, original reverse-wrap turns, retained-longest pair frame, and multi-generation marker ancestry.
+
+## 7. Modern order-ten root
+
+### 7.1 Universal five-plus-four root
+
+Delete any prescribed vertex. Every exact cover has rail orders five and four. The five-path is global-longest, the four-path plus the deleted vertex is the full exterior witness set, and every root has the two reverse-star systems.
+
+This removes the need to choose a special lex-max or marker-produced root.
+
+### 7.2 Small-deletion staircase
+
+Deleting two, three, or four vertices gives the exact profile table recorded in the current theorem bank. In particular:
+
+- pair deletion gives five-plus-three or four-plus-four;
+- three deletion gives five-plus-two or four-plus-three; and
+- four deletion gives five-plus-one, four-plus-two, or three-plus-three.
+
+This single theorem replaces many finite complement-rigidity branches.
+
+### 7.3 Two endpoint trimer alternatives
+
+In a five-plus-four root, each endpoint of the four-path can be combined with the deleted root and one endpoint of the five-path. The two direct joins cannot both be tight because that would form a six-path. Boundary antisymmetry therefore gives a tight trimer, whose residual four-plus-three complement is exact.
+
+The two endpoint trimers coexist graph-intrinsically in the original root, but their exact complements are separate descendants.
+
+## 8. Transfer-edge branch
+
+### 8.1 Crossed edges
+
+Every order-ten transfer edge moves an endpoint from a five-path to a four-path. Deleting the root and moved endpoint gives an exact four-plus-four common pair shadow.
+
+The two attachment placements must be crossed. Same-side placements concatenate one cover's reverse-star turn with the other's attachment into a forbidden six-path.
+
+### 8.2 Pair-shadow resources
+
+One crossed edge supplies:
+
+- fixed root and moved endpoint;
+- exact four-plus-four common shadow;
+- two attachment placements;
+- both physical dimer orientations;
+- bi-end locking of both shadow rails;
+- opposite signed polarity at the attachment boundaries; and
+- local reversible retractions and endcap restorations.
+
+### 8.3 What remains open
+
+An edge gives a rich fixed fiber but does not force a two-vertex continuation. A transfer component need not be edgeless. Component extremality yields shielding and a surviving opposite transfer, not closure.
+
+## 9. No-edge branch
+
+If the fixed-root transfer graph is edgeless, every exact root cover is completely endpoint-shielded. The eight-splice and complete-shielding parents provide cross-endcap absorptions, bad-pivot terminal collisions, and root-mate alternatives.
+
+The universal reverse-four-path and exterior-pair packets lie above this split, so the no-edge basin is no longer devoid of structure. It remains unclosed because shielding, collisions, and reverse paths still need a same-representative consumer.
+
+## 10. Universal gap and pivot line
+
+### 10.1 Root gap-one reverse four-path
+
+The five-plus-four root has order gap one. Testing both opposite bridge interfaces forces double blocking at at least one end and therefore a reverse four-path. This applies in both transfer basins.
+
+### 10.2 Exterior-pair gap-two pivot
+
+Delete any exterior physical pair from a five-path. The exact five-plus-three frame has order gap two. Either a reverse four-path appears or two endpoint transfers create a second global-longest five-path while preserving the marker.
+
+### 10.3 Four-cover square and exact three-plus-three shadow
+
+In the double-transfer face, the two endpoint moves commute. Four exact covers form a square. Deleting the marker and both old endpoints leaves one exact three-plus-three shadow common to all corners.
+
+### 10.4 Marker folds
+
+Each of the two marker vertices folds through one of the two global-longest paths. One fold creates a new global-longest five-path and a four-witness bidirectional terminal-dimer system. Equal fold types saturate one side by all five exterior vertices; opposite fold types give both systems.
+
+## 11. Root-common shadow and anchor compression
+
+### 11.1 Three shadows without a pivot
+
+Four-deletion exactness shows that every consecutive trimer window of the root five-path forms an exact three-plus-three complement with the fixed exterior trimer. The equality pivot is not needed.
+
+This converts one central shadow into a three-cell family.
+
+### 11.2 Three-anchor interaction
+
+Each five-path trimer window and the fixed trimer give a double-central-anchor interaction. The anchors are the three internal five-path vertices paired with the fixed trimer's middle vertex.
+
+### 11.3 Four return routes
+
+Each adjacent five-path dimer can be paired with an opposite sign from the fixed trimer and passed through R15/R16 floor descent. Every exact return to that dimer deletion regenerates a signed support through the old middle anchor.
+
+These four routes are alternative histories, not one floor paying four dimers.
+
+### 11.4 Split-free floor gateway
+
+Before deciding whether the root is double-blocked, pivoted, transfer-rich, or shielded, one can choose a direct root pair and descend to a mass-two floor carrying the root, three shadows, three-anchor interactions, and one named return route as historical truth.
+
+This unifies bare floor access but does not erase branch-specific refund, transfer, fold, or capture ancestry.
+
+## 12. Return, rotation, and capture
+
+### 12.1 Exact return profiles
+
+For an adjacent five-path dimer deletion, every exact return has the size and marker-role normal form from the current theorem bank. A current turn always crosses the old exterior marker cut.
+
+### 12.2 Equality rotation
+
+On minimum transition count, the old-marker cut transition and R15/R16 return crossing are one state. The old marker becomes a terminal dimer of a new global-longest path. The old fixed trimer remains.
+
+The entire root package can be applied again with the deleted dimer as new marker.
+
+### 12.3 Reverse-excess pattern
+
+Terminal dimer rotations reverse through the old root with zero excess; internal dimer rotations return to that same representative with excess one. This explains why root rotation is not a global monotone.
+
+### 12.4 Crossingwise capture
+
+Every selected parent crossing in an internal-dimer return avoids at least one of the two natural dimer witnesses and can capture its carrier-side endpoint in the same return frame. Inner cut-side anchors immediately interact with old terminal signs; quiet residues are concentrated at the two historical global endpoints.
+
+### 12.5 Near and far seam alignment
+
+- Near the adjacent global endpoint, the crossing is the unique seam blocker and can be exchanged for the historical seam.
+- At the far global endpoint, one forced cross-gap chord and parent chain restore both historical seams while the captured crossing survives.
+
+This is the newest accepted order-ten reduction.
+
+## 13. Current branch architecture
+
+```mermaid
+flowchart TD
+    A["Any prescribed root"] --> B["Exact five-plus-four cover"]
+    B --> C["Transfer edge exists"]
+    B --> D["All root covers shielded"]
+    C --> E["Crossed four-plus-four shadow"]
+    D --> F["Reverse four-path and endcap packet"]
+    B --> G["Exterior-pair five-plus-three root"]
+    G --> H["Reverse four-path"]
+    G --> I["Dual-longest pivot square"]
+    G --> J["Triple three-plus-three shadows and return routes"]
+    J --> K["Exact dimer return"]
+    K --> L["Productive sign interaction"]
+    K --> M["Quiet global-endpoint return"]
+    M --> N["One or two historical seams restored"]
+```
+
+The bottom node is not final assembly. The restored seams have not yet been certified as the same-candidate splice turns with active captured-anchor protection.
+
+## 14. Dominance and retained ancestry
+
+| Historical order-ten theorem | Modern parent | Subsumed part | Retained reason |
+|---|---|---|---|
+| Special middle-pair root | Universal prescribed-root five-plus-four normal form | Bare existence of a five-path, four-path, and middle marker | Original longest-path choice and reverse-wrap ancestry |
+| Long-rail joint lock | Universal gap and reverse-star parents | Bare endpoint lock geometry | Exact central marker and joint blocker identities |
+| Gap-one rotation involution | Global-longest gap-one parent | Bare reversible rotation | Selected source cover and collision portals |
+| Five-plus-two refund | Small-deletion profile and direct root pairs | Bare small residual profile | Refund trimer, residual dimer, and second-generation marker |
+| Exact retained-longest five-plus-three pair frame | Universal exterior-pair exact frame | Bare five-plus-three exactness | Retained original longest rail and no-recompletion genealogy |
+| Central pivot shadow | Root-common triple shadows | Bare central three-plus-three exactness | Second global-longest path, four-cover square, folds |
+| Bare bidirectional dimer gateway | Root trimer or fold systems | Access to aligned refund | Common witness and pivot ancestry |
+| Full-path return currentization | Prescribed-path completion | Bare current old path | Selected captured crossing and seam blocker provenance |
+
+## 15. Important finite-order corrections
+
+- 
