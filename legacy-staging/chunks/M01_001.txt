@@ -1,0 +1,150 @@
+> **Generation seal: A7C2-20260829.** This is a canonical Generation-2 package file. During normal initialization, do not substitute older `A5R_...`, `HANDOFF_...`, or `INCREMENTAL_HANDOFF_...` files with similar subject matter. Historical filenames inside archive prose are provenance handles only.
+
+> **Ledger-status note.** This file is the baseline theorem ledger. Any sections here labeled “current proof spine,” “open interfaces,” or “awaiting audit” describe the ledger checkpoint and are superseded by the later canonical status in `A7C2_20260829_10_CONTINUITY.md`.
+
+# Current proof state and theorem bank
+
+> **2026-08-29 fresh-package note.** Current status is controlled by this file together with `A7C2_20260829_10_CONTINUITY.md`, `A7C2_20260829_10_CONTINUITY.md`, and any later append-only `HANDOFF_######.md` files. Handoffs through `HANDOFF_000008.md` are compressed into file `11`; they are intentionally omitted from this package.
+
+
+> **2026-08-28 clean-packet note.** This is the baseline theorem bank recovered from the current project sources. Its internal “newest” checkpoint predates the later accepted work summarized in `A7C2_20260829_10_CONTINUITY.md`. For current work, read this file together with that supplement and any later independently audited `HANDOFF_######.md` delta. Do not infer current status from chronology inside this file alone.
+
+
+## Status at this checkpoint
+
+The target is the following conjecture.
+
+> Every finite Strong Level-(1) boundary tournament has a spanning cover by at most two tight paths.
+
+The conjecture remains open. The order-ten case also remains open.
+
+The newest independently accepted layer is Explorer 27's quiet-return seam-alignment package, audited by Puzzler 27. Puzzler 27 then proved four broader or downstream statements; those four statements have not yet received an independent audit and are kept in a separate audit-pending section.
+
+This file is the compact live state. It is organized by mathematical function, not by worker or date. Historical theorem names appear only where they are useful lookup aliases.
+
+## Status words
+
+- **Accepted** means independently audited in the scope stated here.
+- **Corrected** means the original statement was too broad and only the repaired form is accepted.
+- **Proved, audit pending** means a proof exists in its named handoff but has not received the next independent audit.
+- **Historical** means valid in its recorded scope but absent from the shortest live proof spine, or dependent on an older hypothesis such as closed-walk-freeness.
+- **Excluded** means false, insufficient, or deliberately not accepted.
+- **Open** means neither proved nor disproved.
+
+## Minimal working language
+
+### Basic objects
+
+A **tight turn** is an ordered triple of distinct vertices satisfying the Level-(1) local relation. Reversing all three vertices changes tight to bad and bad to tight. This is **boundary antisymmetry**.
+
+A **state** is an oriented adjacency used by a tight path. A **physical pair** forgets that orientation. A **tight path** is a vertex sequence in which every consecutive triple is tight. A **path cover** is a vertex partition into tight paths. An **exact cover** has the minimum number of components allowed by the relevant minimality theorem.
+
+A selected path in a cover is called a **rail** when its two ends or its interaction with another rail matters.
+
+### Representatives and truth levels
+
+A **representative** is one displayed current path cover. A state or path is **current** only when selected in that representative. It is **graph-intrinsic** when its tightness has been proved independently of whether it is currently selected. It is **historical** when it was selected or created earlier and is retained only as ancestry.
+
+Facts from different representatives may not be conjoined unless an exact common deletion frame, common pair shadow, reversible exchange, or another named theorem transports them.
+
+A set of graph-intrinsic alternatives can coexist while their current realizations occur only in separate **descendants**. This distinction is essential throughout the order-ten work.
+
+### Exchange language
+
+A **candidate** is a proposed set of inserted states. Its **blockers** are the selected states that must be removed to keep a path forest. Raw gain is inserted states minus blockers. A physical tight cycle costs one additional deletion to reopen it, called **cycle debt**. Actual gain equals raw gain minus cycle debt.
+
+A neutral one-for-one or two-for-two exchange has zero net component gain. It may still be valuable because it preserves a marker, seam, witness, role, or ancestry.
+
+### Boundaries, markers, and signs
+
+A **historical seam** is an old carrier state at which a retained path was cut. A **splice** is a proposed or selected turn reconnecting pieces. A historical seam is not automatically the splice coordinate of a final two-path candidate.
+
+A **marker** is a named physical pair, singleton, or small packet whose identity must survive. A marker orientation used during actualization need not equal an orientation selected in an earlier cover.
+
+A **signed support** is a named tight support together with its polarity and a named outside witness certifying that polarity. A **collision** is a prescribed interaction between two signed certificates; its witness order matters. A certified turn may not be cyclically permuted without a fresh test.
+
+**Capture** records that a named endpoint was obtained through a named selected crossing and actualization event. Capture is historical. **Protection** is a stronger theorem-specific continuation in which the captured anchor remains controlled until a target role or first contact. Capture alone does not imply protection.
+
+### Deletion and transfer language
+
+An **exact deletion frame** is a displayed exact cover of the graph after deleting a named set. **Componentwise re-rooting** means that deleting any one component of a displayed minimum three-cover leaves the other two as an exact two-cover of the deletion.
+
+For a fixed deleted vertex, the **transfer graph** has exact two-covers as vertices. An edge moves one physical endpoint from one rail to the other while preserving tightness. Deleting both the fixed root and the moved endpoint leaves the same two residual rails at both ends of the edge; this is the **common pair shadow**. The hierarchy is:
+
+1. all exact covers for the fixed root;
+2. one connected transfer component;
+3. one transfer edge;
+4. one fixed attachment fiber over a named root, moved endpoint, and common pair shadow.
+
+Selected facts do not move upward or sideways in this hierarchy without a theorem.
+
+## Universal foundation
+
+### Boundary antisymmetry — Accepted
+
+For three distinct vertices, an ordered triple is tight exactly when its complete reversal is bad. All local blocker-to-reverse-turn arguments use this law.
+
+### Smallest-counterexample minimality — Accepted
+
+In a smallest counterexample, the full graph has path-cover number three, while every nonempty proper induced subgraph has path-cover number at most two.
+
+For every proper tight path, its complement has an exact two-cover. Restoring that path gives a minimum spanning three-cover containing it literally.
+
+### Gain minus cycle debt — Accepted
+
+For any compatible inserted family, actual path-cover improvement is raw exchange gain minus the number of physical tight-cycle components created. A physical tight cycle is constructive, not contradictory; open one selected state on each cycle.
+
+### Prescribed-path completion — Accepted
+
+Every proper graph-intrinsic tight path can be made one current component of a minimum three-cover by taking an exact two-cover of its complement. This subsumes bare currentization of one state, pair, trimer, or larger proper packet. It does not preserve unrelated current states, roles, or ancestry.
+
+### Universal internal-vertex graft — Accepted
+
+If a retained tight path contains a vertex internally and a current cover contains that vertex while covering everything outside the rest of the path, insert the two missing path states at the vertex. The complete blocker set is exactly the currently selected states incident with the vertex. If its selected incidence degree is zero, one, or two, the gain is respectively two, one, or zero, with no cycle debt. The resulting representative contains the whole retained path and every component of the old cover after removing that vertex.
+
+This is the parent of older fixed-vertex graft and local four-vertex surgery theorems. Specializations remain useful only when they retain a boundary role, chosen side, or ancestry not present in the parent.
+
+## Exact deletion and completion calculus
+
+### Cover-puncture fragmentation identity — Accepted
+
+Delete any proper set from a historical spanning cover and split what remains into maximal historical runs. In an exact cover of the deletion, the number of selected states joining different runs equals the number of run-color blocks in the current rails minus the number of current rails. It is at least the number of historical runs minus the number of current rails. Equality means each historical run occurs in one contiguous block.
+
+This controls how many crossings exist, but not which crossings, their orientations, endpoint roles, or ancestry.
+
+### Intrinsic partition-cover deficit identity — Accepted
+
+For a fixed partition into physical classes, the number of selected transitions between classes equals the sum of the intrinsic path-cover numbers of the classes, minus the number of current cover components, plus a nonnegative representative excess. Equality means each class restriction realizes its own minimum path-cover number.
+
+The excess belongs to one representative and one partition. It is not a global monotone and is not literal exchange credit.
+
+### Puncture crossing parents — Accepted
+
+If a retained path is punctured and its surviving part is nonempty, every exact two-cover of the punctured graph selects a state crossing from the surviving carrier to the exterior. More strongly, the number of such crossings is at least the intrinsic path-cover number of the surviving carrier. A non-Hamiltonian survivor therefore forces at least two simultaneous crossings of the same cut.
+
+For any proper prescribed path removed from a historical cover, every exact two-cover of its complement selects at least the number of surviving historical runs minus two run-crossings. Restoring the prescribed path currentizes the whole packet and all these crossings in one minimum three-cover.
+
+### Componentwise exact re-rooting — Accepted
+
+In any displayed minimum three-cover, deleting any one component leaves the other two components as an exact two-cover. In particular, if one component is a prescribed singleton, its complement is already an exact two-cover in the same representative.
+
+The singleton specialization imports, without changing representative:
+
+- the one-vertex deletion rail floor;
+- the four one-hole endpoint caps;
+- the double boundary-collision normal form; and
+- the prescribed-singleton disjoint collision package.
+
+Current cap orientations remain distinct from reverse-support orientations, and graph-intrinsic alternatives need not be simultaneously selected.
+
+### Universal small-deletion exactness through four vertices — Accepted
+
+Deleting any set of one, two, three, or four vertices from a smallest counterexample leaves a graph of path-cover number exactly two.
+
+The repaired four-vertex proof does not use the cyclic four-vertex classification. If a four-vertex deletion left a Hamilton path, delete only one of those four vertices and make the other three a tight trimer by boundary antisymmetry. That would give an exact one-vertex deletion cover with a rail of order three, contradicting the one-vertex rail-order-four floor.
+
+Consequences:
+
+- deleting one vertex: every rail in an exact two-cover has order at least four;
+- deleting two vertices: every rail has order at least three;
+- deletin
