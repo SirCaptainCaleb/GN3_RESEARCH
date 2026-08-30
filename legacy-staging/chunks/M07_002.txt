@@ -1,0 +1,22 @@
+rtices and rail orientations remain fixed?
+4. Are all coordinate cells actual exact covers?
+5. Which selected states are current, and where?
+6. Which facts are only graph-intrinsic or historical?
+7. What is the complete blocker set?
+8. Can a physical cycle occur, and what is its debt?
+9. What quantity is claimed to improve, and can an arbitrary recompletion reset it?
+10. Does the intended consumer need a marker, witness, role, seam, capture, or common carrier that the compression would forget?
+
+## 7. Source lookup
+
+The representation histories are concentrated in:
+
+- 2026-08-08 through 2026-08-11: ordered states, conflicts, source release, promotions;
+- 2026-08-12: fixed routers, Hall cores, fans, `K3,3` grids;
+- 2026-08-13 through 2026-08-16: lex fans, flow, brooms, shuttles, Hall hulls, common-shadow compression;
+- 2026-08-17: Strong reset and cycle-aware reformulation;
+- 2026-08-18 through 2026-08-20: shells, pair shadows, fixed-marker recurrence;
+- 2026-08-21 through 2026-08-24: signed pairs, capacity, payment, capture, and static assembly;
+- 2026-08-25 through 2026-08-27: hard-reset seam, singleton, transfer, order-ten, and return parents.
+
+Use `11_DOCUMENT_AND_CLAIM_CATALOG.jsonl` for theorem-like headings and exact source hashes.
