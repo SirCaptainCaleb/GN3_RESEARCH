@@ -1,0 +1,56 @@
+ndary pin, witness, inherited seam |
+| Full old-path currentization after return | Prescribed-path completion | Bare current old path | Selected captured crossing and exact seam-blocker provenance |
+| Two current cut contacts on equality face | Equality coalescence correction | The supposed two-contact interpretation | One unique state serving both cut requirements |
+
+## 13. Failed or insufficient seam implications
+
+- A selected historical seam state is not the final candidate splice turn.
+- Several current crossings do not automatically give useful assembly seams.
+- Boundary pinning is not endpoint exposure.
+- Historical global endpointhood is not current rail endpointhood.
+- Historical capture is not active protection.
+- A later protected continuation does not retain the source crossing or seam unless a theorem says so.
+- Currentizing a carrier does not preserve its old component or endpoint role.
+- Left and right deletion descendants cannot be conjoined without a common frame.
+- A wrap or return that recreates an equivalent local picture does not prove descent.
+- One-hole mate theory applies to one fixed displayed candidate, not to any graph-intrinsic mate.
+
+## 14. Reusable proof techniques
+
+### Localize the complete seam blocker set
+
+For a named seam, list every selected state whose retention conflicts with insertion. Endpoint localization often turns a large cover comparison into one or two states.
+
+### Preserve the state you do not exchange
+
+A one-for-one seam exchange is valuable because every other state of the exact cover survives literally. State this explicitly; it is stronger than recompleting after inserting the seam.
+
+### Use a common deletion frame for capture
+
+Do not combine a sign from one cover with a crossing from another. Delete the signed support, choose one exact complement, and perform the actualization there.
+
+### Distinguish capture from protection
+
+Capture is an event in ancestry. Protection begins only after selecting a designated continuation. A later proof should name the first event touching the anchor and specify which source states survive to it.
+
+### Count transitions only after naming classes
+
+Partition identities become powerful when two independent cut requirements force one transition on the equality face. They are weak when used as an anonymous scalar.
+
+### Treat return as root change, not progress by default
+
+A rotated root can legitimately reinstantiate the whole theorem package. Before calling this descent, compare the same physical marker and the same return representative; the reverse-excess signature shows why terminal rotations can be exactly reversible.
+
+## 15. Principal source corridors
+
+| Family | Efficient starting sources |
+|---|---|
+| Early seam pushing | the 2026-08-12 unrooted source-return self-contained handoff and its local seam/pivot descendants |
+| Wrap and hard fixed fiber | Explorer/Puzzler/Visionary 3 through 6 handoffs dated 2026-08-25 |
+| Universal puncture and partition parents | Researcher 34 handoffs and the 2026-08-24 active bank |
+| Interior-puncture seam theorem | late Researcher 34 and Puzzler handoffs dated 2026-08-24, then the 2026-08-25 hard-reset bank |
+| R28-R34 ancestry | 2026-08-24 archive and the named R28 through R34 handoffs |
+| Static assembly correction | Visionary 1 and Puzzler 1 handoffs dated 2026-08-25 |
+| R15/R16 return | the Researcher 16 R15 audit handoff dated 2026-08-22 and Puzzler 24 onward |
+| Root rotation and capture | Puzzler 25 and Puzzler 26 handoffs dated 2026-08-27 |
+| Quiet-return seam alignment | Explorer 27 and Puzzler 27 handoffs dated 2026-08-27 |
