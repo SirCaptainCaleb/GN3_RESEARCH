@@ -14,6 +14,19 @@ Ordinary nonmigration durable work goes directly to `main`. A new standalone the
 
 Temporary branches are exceptional tools for work that genuinely benefits from isolation or review. They are not the default research workflow.
 
+## Canonical entrance and initialization
+
+**This file is the single canonical entry point for A7C3. There is no separate bootstrap layer.** A fresh worker initializes from current GitHub `main` by reading, in order:
+
+1. `ARCHITECTURE.md` — this file; how the project works.
+2. `PROOF_SPINE.md` — where the proof currently stands.
+3. `OBLIGATIONS.md` — durable unresolved closure contracts.
+4. `STRATEGY/CURRENT.md` — the current strategic interpretation and ambitious targets.
+
+Then inspect pinned/current `#a7c3-control` for live changes newer than GitHub and catch up on the relevant recent `#a7c3-workspace` roots and threads, including audit tags, corrections, provisional dependencies, and concurrent mathematics that could affect the chosen line.
+
+After orientation, expand only the mathematics needed for the chosen attack. Do not preload the whole corpus merely because it exists.
+
 ## Durable front door
 
 A fresh Researcher should be able to orient from four small durable surfaces:
@@ -58,7 +71,6 @@ This applies to Researchers, Directors, Integrators, Auditors / Repairers, and a
 
 ```text
 A7C3/
-├── BOOTSTRAP.md
 ├── ARCHITECTURE.md
 ├── PROOF_SPINE.md
 ├── OBLIGATIONS.md
@@ -120,6 +132,8 @@ Old is not the same as unsafe, and ordinary is not the same as unimportant. The 
 ## Search and theorem use
 
 Workers should not routinely excavate the entire scratch corpus. Default theorem discovery should first search `RESULTS/INTERESTING/`, then `RESULTS/USABLE/ACTIVE/`. Broaden to all usable results when necessary. Search `WORKSPACE/` deliberately when the proof needs local development, historical machinery, constructions, failed routes, or details not promoted to reusable results. Search quarantined material only for repair work.
+
+When searching for older machinery, use several literal mathematical concepts rather than betting everything on one guessed phrase. Prefer recall over an artificially narrow query, then inspect the strongest matches proof-aware.
 
 High recall still matters when the obvious surfaces fail, but the architecture should make the best mathematics easy to encounter before notebook archaeology begins.
 
@@ -258,6 +272,8 @@ Promotion should be boring.
 - A trust failure moves or edits the durable result itself and is surfaced in `#a7c3-control` when active work could be affected.
 
 Integration is mathematical research, not clerical filing. A result is not fully integrated merely because it was cited or placed in the right folder. Integration asks how its proof mechanism changes what can now be proved.
+
+At natural checkpoints, ask whether the latest work changes the proof spine, obligations, strategy, or trust landscape rather than merely extending the same local machinery. Persist coherent durable advances where they belong and continue doing mathematics from the resulting frontier.
 
 ## Concurrency
 
