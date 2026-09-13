@@ -14,7 +14,7 @@ and vertices outside `B`. The live source frame has `X={v,p,q,r}` and three comp
 
 all of which must be nonHamiltonian in a counterexample by the source-complement construction. The point here is to extract a coupled consequence of those three failures without pretending that a Hamilton path must preserve the displayed `B` order.
 
-The reduction uses only R887/R3's exact turn-comparison interpretation and actual nonHamiltonicity of the supports.
+The disjoint-slot reduction uses only R887/R3's exact turn-comparison interpretation and actual nonHamiltonicity of the supports. The final common-certificate dichotomy also uses the provisional canonical prefix-barrier development in `two-vertex-extension-barrier.md`.
 
 ## 1. Successful one-vertex insertion slots
 
@@ -98,23 +98,47 @@ Writing `diam I_B(v)` for the maximum slot difference, when `I_B(v)` is nonempty
 
 So the three simultaneous two-vertex failures do not behave independently. Unless `v` itself has no successful prescribed-order insertion, every successful one-vertex insertion of every source spoke is forced into a common window of width at most three slots, and often one or two.
 
-## 5. Exact remaining branch for a parent theorem
+## 5. The empty-anchor branch has a common prefix barrier
 
-This reduction exposes a sharp fork for the desired parent two-vertex extension/obstruction theorem.
+The concurrent development `two-vertex-extension-barrier.md` constructs the positive-prefix automaton `A(B;v,s)` for all `B`-ordered words and proves that, before the companion `s` is consumed, its reachable geometry is exactly the same one-outside-vertex automaton `A(B;v)` for every companion.
 
-### Nonempty-anchor branch
+This interacts cleanly with the insertion sets above. A `B`-ordered Hamilton word on `B union {v}` is exactly `B_t(v)` for one slot `t`. Therefore
 
-If `I_B(v)` is nonempty, the three support failures already produce a common localized obstruction window. Any stronger source-frame argument only has to consume this bounded window, not three unrelated Hamiltonicity failures. In particular, existing first-loss / comparison machinery should be tested against this one shared location rather than run independently in each `C_s`.
+    I_B(v)=empty
 
-### Empty-anchor branch
+is equivalent to the absence of a positive terminal in `A(B;v)`. In that case its canonical positive-reachable region `R_0` excludes all terminals, and
 
-If `I_B(v)=empty`, the lemma gives no localization at all. This is not a technical nuisance that may be silently discarded: arbitrary boundary-tournament comparison data can make every prescribed-order insertion of one outside vertex fail. A complete parent theorem therefore needs an additional source-frame reason either
+    K_0 = delta^+(R_0)
 
-1. to rule out `I_B(v)=empty`;
-2. to convert that branch directly into a spanning two-cover or strict physical descent; or
-3. to replace `v` by another anchor for which the live hypotheses really do provide a nonempty insertion set.
+is a cut consisting entirely of reversed comparison transitions. Because the whole `s`-free subautomaton of every `A(B;v,s)` is literally `A(B;v)`, this `K_0` is companion-independent: all three two-vertex extension problems inherit the same obstruction before `p`, `q`, or `r` is consumed.
 
-This is the precise residual obstruction left by the present reduction.
+This does **not** physically close the empty-anchor branch. It converts it into the common-cut certificate requested by the parent-obstruction strategy.
+
+Provisional dependency: the canonical prefix-automaton/barrier argument in `A7C3/WORKSPACE/two-vertex-extension-barrier.md` (concurrent unaudited workspace mathematics).
+
+## 6. Common-certificate dichotomy for the prescribed-B-order problem
+
+Under the live counterexample premise that every `C_s` is nonHamiltonian, exactly one of the following applies.
+
+### A. Empty anchor
+
+    I_B(v)=empty.
+
+Then all three companion problems share the same canonical pre-companion comparison cut `K_0` in `A(B;v)`.
+
+### B. Nonempty anchor
+
+    I_B(v) != empty.
+
+Then every successful one-vertex insertion of every source companion lies in the common window
+
+    W_B(v),
+
+which has at most three consecutive slots; if `diam I_B(v)=2` it is one slot, and if `diam I_B(v)>=3` it is empty.
+
+Thus the three failures always admit a companion-independent obstruction interface at the prescribed-order level: either one shared prefix barrier before companion consumption, or one common bounded slot window.
+
+This is a classification of the **restricted B-order-preserving obstruction**, not a classification of full Hamiltonicity in `C_s`. The remaining G39 work is to use actual source-frame structure to consume the resulting common certificate physically.
 
 ## Scope fence
 
@@ -122,12 +146,13 @@ This is the precise residual obstruction left by the present reduction.
 - No claim is made that a successful adjacency pattern is already a physical spanning cover beyond the explicit combined word constructed in the lemma.
 - No arbitrary reversal of `B` or a residual path is used.
 - D17.439's conditional recompletion interface is not being promoted to a physical theorem here.
-- The result is independent of the provisional D17.433-D17.439 ancestry claims; it uses only the live complementary-support setup plus the exact tight-path semantics of R887/R3.
+- The disjoint-slot/common-window result is independent of provisional D17.433-D17.439 ancestry claims.
+- The common-prefix-barrier half of the final dichotomy uses the explicitly named provisional workspace dependency above and therefore remains provisional with it.
 
 ## Strategic consequence
 
-The parent obstruction problem has contracted from “couple three arbitrary nonHamiltonian supports” to the following narrower target:
+At the prescribed-order level, the Vice Director's desired parent obstruction has contracted to a companion-independent certificate in every case. The remaining target is no longer “couple three arbitrary nonHamiltonian supports.” It is:
 
-> eliminate or consume the empty-anchor branch, and in the nonempty-anchor branch consume one common window of at most three consecutive `B` slots.
+> consume either the common pre-companion prefix barrier `K_0`, or the common at-most-three-slot window `W_B(v)`, using the retained source-frame data.
 
-That is the natural next interface to compare with the exact D17.421 first-loss rectangle and any source-frame constraint capable of turning a localized slot window into a literal tight recompletion or physical descent.
+The exact D17.421 first-loss rectangle, old source two-cover `F`, and source turns should now be tested as consumers of these two common certificates rather than as three separate companion-by-companion Hamiltonicity arguments.
