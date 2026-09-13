@@ -43,6 +43,21 @@ It is not a chronological Guidance ledger. Replace it when the strategy changes;
 
 Slack `#a7c3-control` carries the immediate strategic delta. GitHub carries the durable state that results from it.
 
+### Synchronize before resuming
+
+A worker's local conversation state is never sufficient authority for resuming research. **Every re-entry into an existing research conversation is a synchronization boundary.** When the user says `Continue`, `resume`, `keep going`, or anything equivalent, interpret that as **synchronize with the live project, then continue from the resulting frontier**, not as permission to continue immediately from cached conversational state.
+
+Before doing new mathematics after such a re-entry, refresh the live information that could invalidate, redirect, supersede, or strengthen the worker's current line. At minimum:
+
+- refresh the relevant current GitHub `main` state, including the proof spine, current strategy and obligations when they bear on the work, plus any result or workspace material the worker is about to use;
+- inspect `#a7c3-control` for newer guidance, quarantines, trust changes, architecture changes, or strategic redirections;
+- inspect `#a7c3-audit` for newer audit verdicts, repairs, invalidations, dependency contamination, fences, or clearances affecting any mathematics the worker may rely on;
+- inspect `#a7c3-workspace` for newer mathematical findings, obstructions, reductions, counterexamples, or concurrent-worker developments that may supersede or interact with the worker's local frontier.
+
+Do not rely on remembered guidance labels, remembered result status, or a previously valid dependency simply because it remains in the conversation context. Fresh control and audit information outrank stale local plans. If synchronization changes the frontier, adapt before continuing; if it does not, resume the prior attack without ceremony.
+
+This rule applies to Researchers, Directors, Integrators, Auditors / Repairers, Independents when their information boundary permits it, and any other continuing worker. Specialized information boundaries may restrict what a worker is allowed to inspect, but they do not waive synchronization against the sources that worker is permitted to see.
+
 ## Durable mathematics
 
 ```text
