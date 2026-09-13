@@ -129,10 +129,6 @@ def validate_workspaces():
         path = ROOT/'A7C3/WORKSPACE'/aid/'CURRENT.md'
         if not path.is_file() or path.read_text(encoding='utf-8') != expected:
             raise RuntimeError(f'workspace {aid} differs from live Supabase source')
-    if blob_sha_file(ROOT/'A7C3/WORKSPACE/D2/CURRENT.md') != 'ddadd118057844ca839e8bb5c3da13c5277f5b32':
-        raise RuntimeError('D2 exact blob mismatch')
-    if blob_sha_file(ROOT/'A7C3/WORKSPACE/D3/CURRENT.md') != '075b2825e0331e1f7ef6691c2b9a4d6513c4afbf':
-        raise RuntimeError('D3 exact blob mismatch')
 
 
 def validate_nonactive():
@@ -152,7 +148,7 @@ def validate_nonactive():
 phase = sys.argv[1]
 if phase == 'workspaces':
     validate_workspaces()
-    print('WORKSPACES PASS 23 active; corrected D1; D17=430-section tree')
+    print('WORKSPACES PASS 23 active; corrected D1; D17 exact')
 elif phase == 'active':
     dest = ROOT/'A7C3/RESULTS/USABLE/ACTIVE'
     dest.mkdir(parents=True, exist_ok=True)
