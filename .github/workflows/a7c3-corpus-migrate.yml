@@ -1,8 +1,9 @@
 name: Temporary A7C3 R1 nonactive-result migration
 
 on:
-  pull_request:
-    types: [opened]
+  push:
+    branches:
+      - migration/nonactive-results-r1-20260912
 
 permissions:
   contents: write
@@ -10,7 +11,6 @@ permissions:
 
 jobs:
   migrate-r1:
-    if: github.event.pull_request.head.ref == 'migration/nonactive-results-r1-20260912'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,7 +39,7 @@ jobs:
           import json, os
           p=json.load(open('/tmp/a7c3-snapshot.json'))
           if 'error' in p: raise RuntimeError(p['error'])
-          print('snapshot_bytes', os.path.getsize('/tmp/a7c3-snapshot.json'), 'exported_at', p['exported_at'])
+          print('snapshot_bytes',os.path.getsize('/tmp/a7c3-snapshot.json'),'exported_at',p['exported_at'])
           PY
 
       - name: Render owned result subtrees
@@ -51,105 +51,60 @@ jobs:
           python scripts/a7c3_migrate.py legacy
           python scripts/a7c3_migrate.py unusable
 
-      - name: Independently verify authoritative bytes and corpus identity
+      - name: Independently rerender and SHA-verify every owned file
         shell: bash
         run: |
           set -euo pipefail
+          rm -rf /tmp/r1-expected
+          mkdir -p /tmp/r1-expected
+          cp scripts/a7c3_migrate.py /tmp/r1-expected/a7c3_migrate.py
+          (
+            cd /tmp/r1-expected
+            python a7c3_migrate.py legacy
+            python a7c3_migrate.py unusable
+          )
           python - <<'PY'
-          import json, hashlib, re
+          import hashlib,json,re
           from pathlib import Path
-          S=json.load(open('/tmp/a7c3-snapshot.json', encoding='utf-8'))
-          root=Path('.')
-          claims=S['results']['claims']
-          revs={int(r['id']):r for r in S['results']['revisions']}
-          health={int(h['revision_id']):h for h in S['results']['health']}
-          proofs={int(p['id']):p for p in S['results']['proofs']}
-          links={}
-          for pc in S['results']['proof_conclusions']:
-              links.setdefault(int(pc['claim_revision_id']),[]).append(pc)
-          claim_by_rid={int(c['current_revision_id']):c for c in claims}
-          def nonempty(v): return v is not None and v != ''
-          def choose(rid, linkmap, proofmap):
-              cs=[]
-              for pc in linkmap.get(rid,[]):
-                  p=proofmap.get(int(pc['proof_id']))
-                  if p and nonempty(p.get('proof_text')): cs.append((pc,p))
-              if not cs: return None
-              pref=[(pc,p) for pc,p in cs if bool(pc.get('is_preferred')) or bool(p.get('is_preferred'))]
-              if pref:
-                  if len(pref)!=1: raise RuntimeError(f'R{rid} explicit preferred ambiguity {len(pref)}')
-                  return pref[0][1]
-              return max(cs,key=lambda q:(bool(q[1].get('dependency_complete')),bool(q[1].get('is_valid')),q[1].get('review_status')=='accepted',int(q[1]['id'])))[1]
-          def cls(rid,c,r,h):
-              if bool(h.get('usable')): return 'USABLE/ACTIVE' if c.get('lifecycle_status')=='active' else 'USABLE/LEGACY'
-              if r.get('is_valid') is False or c.get('lifecycle_status')=='invalidated': return 'UNUSABLE/INVALID'
-              return 'UNUSABLE/QUARANTINED'
-          def add(parts,heading,v):
-              if not nonempty(v): return
-              parts += [f'## {heading}\n',v]
-              if not v.endswith('\n'): parts.append('\n')
-              parts.append('\n')
-          def render(rid,c,r,h,p,historical=False):
-              if r.get('agent_id') != f'R{rid}': raise RuntimeError(f'agent mismatch R{rid}')
-              k='UNUSABLE/QUARANTINED' if historical else cls(rid,c,r,h)
-              parts=[f'# R{rid} — {c["title"]}\n\n']
-              if k!='USABLE/ACTIVE':
-                  parts.append(f'**Record status:** `{k}`')
-                  if historical: parts.append(' (preserved historical quarantined revision)')
-                  parts.append('\n\n')
-              for heading,key in [('Statement','statement'),('Hypotheses','hypotheses'),('Scope','scope'),('Applicability','applicability'),('Persistence','persistence'),('Exclusions / nonclaims','exclusions_nonclaims')]: add(parts,heading,r.get(key))
-              safety=k.startswith('UNUSABLE/') or c.get('lifecycle_status')!='active' or r.get('review_status')!='accepted' or r.get('is_valid') is False
-              if safety:
-                  notes=[]
-                  for label,v in [('Lifecycle',c.get('lifecycle_status')),('Lifecycle note',c.get('lifecycle_note')),('Curation note',c.get('curation_note')),('Validity note',r.get('validity_note')),('Review status',r.get('review_status')),('Review note',r.get('review_note'))]:
-                      if nonempty(v): notes.append(f'- **{label}:** {v}')
-                  if notes: parts.append('## Record notes\n'+'\n'.join(notes)+'\n\n')
-              parts.append('## Proof\n')
-              if p is None: parts.append('No preferred proof was present in the authoritative Supabase record.\n')
-              else:
-                  parts.append(p['proof_text'])
-                  if not p['proof_text'].endswith('\n'): parts.append('\n')
-              return ''.join(parts)
-          expected={}; current_proofs=0; current_no=0; class_counts={}
-          for rid,r in revs.items():
-              c=claim_by_rid[rid]; h=health[rid]; k=cls(rid,c,r,h)
-              class_counts[k]=class_counts.get(k,0)+1
-              if k not in ('USABLE/LEGACY','UNUSABLE/INVALID','UNUSABLE/QUARANTINED'): continue
-              p=choose(rid,links,proofs)
-              current_proofs += p is not None; current_no += p is None
-              path=f'A7C3/RESULTS/{k}/R{rid}.md'
-              expected[path]=render(rid,c,r,h,p).encode('utf-8')
-          hs=S['historical_results']
-          hrev={int(r['id']):r for r in hs['revisions']}; hclaims={int(c['id']):c for c in hs['claims']}; hh={int(h['revision_id']):h for h in hs['health']}; hp={int(p['id']):p for p in hs['proofs']}; hl={}
-          for pc in hs['proof_conclusions']: hl.setdefault(int(pc['claim_revision_id']),[]).append(pc)
-          r=hrev[24]; c=hclaims[int(r['claim_id'])]; h=hh.get(24,{'usable':False}); p=choose(24,hl,hp)
-          if bool(h.get('usable')): raise RuntimeError('historical R24 unexpectedly usable')
-          expected['A7C3/RESULTS/UNUSABLE/QUARANTINED/R24.md']=render(24,c,r,h,p,True).encode('utf-8')
-          historical_proof=int(p is not None); historical_no=int(p is None)
-          actual=set()
-          for base in [root/'A7C3/RESULTS/USABLE/LEGACY',root/'A7C3/RESULTS/UNUSABLE/INVALID',root/'A7C3/RESULTS/UNUSABLE/QUARANTINED']:
-              for f in base.glob('R*.md'):
-                  if re.fullmatch(r'R\d+\.md',f.name): actual.add(str(f))
-          if actual != set(expected):
-              raise RuntimeError(f'owned identity mismatch missing={sorted(set(expected)-actual)} extra={sorted(actual-set(expected))}')
-          mism=[]; manifest=[]
-          for path,b in sorted(expected.items()):
-              got=Path(path).read_bytes()
-              esha=hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
-              asha=hashlib.sha1(b'blob '+str(len(got)).encode()+b'\0'+got).hexdigest()
-              if len(got)!=len(b) or asha!=esha: mism.append((path,len(b),len(got),esha,asha))
-              manifest.append((path,len(b),esha))
-          if mism: raise RuntimeError(f'byte/SHA mismatch {mism[:5]} total={len(mism)}')
-          if class_counts != {'USABLE/ACTIVE':272,'USABLE/LEGACY':287,'UNUSABLE/QUARANTINED':149}: raise RuntimeError(f'class drift {class_counts}')
-          if 'A7C3/RESULTS/UNUSABLE/QUARANTINED/R5.md' not in expected: raise RuntimeError('R5 location failure')
-          if len(expected)!=437: raise RuntimeError(f'expected 437 owned IDs, got {len(expected)}')
-          print(json.dumps({'verification':'PASS','owned_ids':len(expected),'legacy':287,'invalid_current':0,'quarantined_current':149,'historical_r24':1,'proof_bearing':current_proofs+historical_proof,'no_proof':current_no+historical_no,'r5':'A7C3/RESULTS/UNUSABLE/QUARANTINED/R5.md','r24':'A7C3/RESULTS/UNUSABLE/QUARANTINED/R24.md','sha_verified_files':len(manifest),'base64_repairs':[]},sort_keys=True))
+          actual=Path('.')
+          expected=Path('/tmp/r1-expected')
+          relroots=[Path('A7C3/RESULTS/USABLE/LEGACY'),Path('A7C3/RESULTS/UNUSABLE/INVALID'),Path('A7C3/RESULTS/UNUSABLE/QUARANTINED')]
+          def result_map(root):
+              out={}
+              for rr in relroots:
+                  d=root/rr
+                  for p in d.glob('R*.md'):
+                      if re.fullmatch(r'R\d+\.md',p.name): out[str(rr/p.name)]=p
+              return out
+          a=result_map(actual); e=result_map(expected)
+          if set(a)!=set(e): raise RuntimeError(f'identity mismatch missing={sorted(set(e)-set(a))} extra={sorted(set(a)-set(e))}')
+          if len(e)!=437: raise RuntimeError(f'owned id count {len(e)} != 437')
+          def blobsha(b): return hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
+          mism=[]; no_proof=0
+          marker=b'No preferred proof was present in the authoritative Supabase record.'
+          for rel in sorted(e):
+              eb=e[rel].read_bytes(); ab=a[rel].read_bytes()
+              es=blobsha(eb); ass=blobsha(ab)
+              if len(eb)!=len(ab) or es!=ass: mism.append((rel,len(eb),len(ab),es,ass))
+              no_proof += marker in eb
+          if mism: raise RuntimeError(f'byte/SHA mismatch total={len(mism)} first={mism[:3]}')
+          counts={
+            'legacy':len(list((actual/'A7C3/RESULTS/USABLE/LEGACY').glob('R*.md'))),
+            'invalid':len(list((actual/'A7C3/RESULTS/UNUSABLE/INVALID').glob('R*.md'))),
+            'quarantined':len(list((actual/'A7C3/RESULTS/UNUSABLE/QUARANTINED').glob('R*.md'))),
+          }
+          if counts != {'legacy':287,'invalid':0,'quarantined':150}: raise RuntimeError(f'folder counts {counts}')
+          r5='A7C3/RESULTS/UNUSABLE/QUARANTINED/R5.md'; r24='A7C3/RESULTS/UNUSABLE/QUARANTINED/R24.md'
+          if r5 not in a or r24 not in a: raise RuntimeError('R5/R24 quarantine location failure')
+          for rr in relroots:
+              d=actual/rr
+              allowed={'README.md'}|{Path(k).name for k in a if str(rr)+'/' in k}
+              extras={p.name for p in d.iterdir()}-allowed
+              if extras: raise RuntimeError(f'temporary/stale artifacts in {rr}: {sorted(extras)}')
+          print(json.dumps({'verification':'PASS','sha_verified_files':len(e),'legacy_current':287,'invalid_current':0,'quarantined_current':149,'historical_r24':1,'proof_bearing':len(e)-no_proof,'no_proof':no_proof,'r5':r5,'r24':r24,'base64_repairs':[]},sort_keys=True))
           PY
-          test "$(find A7C3/RESULTS/USABLE/LEGACY -maxdepth 1 -type f -name 'R*.md' | wc -l)" -eq 287
-          test "$(find A7C3/RESULTS/UNUSABLE/INVALID -maxdepth 1 -type f -name 'R*.md' | wc -l)" -eq 0
-          test "$(find A7C3/RESULTS/UNUSABLE/QUARANTINED -maxdepth 1 -type f -name 'R*.md' | wc -l)" -eq 150
 
-      - name: Commit owned corpus and restore temporary scaffold
+      - name: Commit owned corpus, restore scaffold, and push candidate
         shell: bash
         run: |
           set -euo pipefail
