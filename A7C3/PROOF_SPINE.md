@@ -12,7 +12,7 @@ For a hypothetical smallest counterexample, the standard smallest-counterexample
 
 ## Current live spine
 
-The current strategic contraction, seeded from G36 and sharpened by the audited source-collision collapse, is:
+The current strategic contraction, seeded from G36, sharpened by the audited source-collision collapse, and now localized at the first numerical zipper loss, is:
 
 ```text
 smallest counterexample
@@ -33,12 +33,14 @@ source-gate wall packet
     ↓
 source-visible P4 carrying source/fixed-wall ancestry
     ↓
-remaining source-gate P4 absorption
+first unresolved exact K2,2 two-crossing zipper frontier
+    ↓
+source-gate zipper absorption
     ↓
 strict old-source descent or spanning two-cover
 ```
 
-The old long corridor is now principally **delivery machinery**, not the parent research object. The source-dimer collision is no longer a separate surviving branch: D17.427 converts it to literal source-visible P4 geometry.
+The old long corridor is principally **delivery machinery**, not the parent research object. The source-dimer collision is no longer a separate surviving branch: D17.427 converts it to literal source-visible P4 geometry. The generic phrase “P4 absorption” is now too coarse for the live frontier. The first unresolved numerical loss is concentrated at the exact K2,2 two-crossing zipper identified by the earlier transition analysis.
 
 ## Why the corridor is considered compressed
 
@@ -67,8 +69,6 @@ At a source-bearing boundary, orient defect transport so the source spoke itself
 
 The initial G36 contraction gave either a literal source-visible P4 or a same-oriented collision on a source dimer carrying the opposite source anchor as a witness. D17.427 eliminates that fork for the live campaign: the collision arm itself contains a literal source-visible P4. Thus every surviving G36 arm reaches source-visible P4 geometry while retaining source-gate and fixed-wall provenance.
 
-The immediate proof frontier is therefore to consume that exact born P4 into either strict old-source transition descent or a spanning two-cover. The P4 should be treated together with its ancestry, not as an anonymous path.
-
 Current local contractions of the packet include:
 
 - `425-g36-source-oriented-persistent-wall-collapse.md` localizes the persistent wall at the source gate;
@@ -77,16 +77,32 @@ Current local contractions of the packet include:
 - `429-g36-source-collision-rotation-terminal-wall-dimer.md` records a complementary terminal wall-dimer normal form;
 - `430-g36-direct-wall-p4-star-cycle-or-twin-anchor-wall.md` contracts the direct wall-P4 arm to Hamiltonian five-vertex geometry or a twin-anchor wall.
 
-D17.430 is especially strong in the direct arm: the exact five-set `{A,C,t,b,d}` either has a Hamilton P5 or both source anchors lie in P4s sharing the same physical wall prefix/suffix. This is a local contraction, not yet the global splice/descent.
+D17.430 is strong local geometry but not a controlled far-wall splice. A live worker countermodel shows that its retained five-set data do not force a Hamilton P5 with the fixed far-wall vertex as an endpoint. Therefore the global consumer must use additional source-gate/ancestry information or different splice geometry.
+
+## Exact live frontier
+
+The earlier transition analysis localizes the first loss of strict old-source numerical descent at an **exact K2,2 two-crossing zipper**. Combining that with the source-gate contraction gives the current parent interface:
+
+```text
+certified source-anchor/P4 packet
++ old source-gate orientation and source order
++ actual fixed far boundary
++ low-transition ancestry
++ exact K2,2 two-crossing zipper
+```
+
+The desired next theorem is a source-gate zipper absorber: this exact packet forces either strict old-source transition descent on `H-{A,C}` or a spanning two-cover of `H`.
+
+The key strategic question is whether the preserved ancestry, including the older X-mated-versus-singleton distinction, fixes enough relative orientation at the two crossings to force an exchange or complementary cover. That mechanism is not yet established and should not be read as part of the proved spine.
 
 ## Current high-value fences
 
 - R24 and R5 remain frozen/quarantined and must not be used unless the durable trust state is explicitly changed.
 - The pair-deletion/reflection route represented by live SV118046 is not safe as stated: audit found an omitted predecessor seam in its insertion ledger. Keep that route fenced until repaired.
-- Do not split the direct-P4 and collision-born P4 outputs into unrelated research programs; their common source-gate ancestry is now the parent object.
-- Do not immediately anonymize the packet through generic payment/collision machinery when doing so discards source-gate ancestry, fixed-wall provenance, source-block order, or anchor witnesses.
-- Generic machinery remains available when its concrete output genuinely consumes the exact live packet.
-- Old seam taxonomies and generic corridor blocker classifications are lower-value unless they directly close the current source-labelled object.
+- Do not infer from D17.430 that the fixed far-wall vertex can be chosen as an endpoint of its Hamilton P5 alternative. A concrete retained-data countermodel rules out that inference.
+- Do not split direct-P4 and collision-born P4 outputs into unrelated programs; their common source-gate ancestry and common first-loss zipper are the parent object.
+- Do not anonymize the packet through generic machinery when doing so discards source-gate orientation, fixed-wall provenance, source-block order, crossing positions, anchor witnesses, or ancestry.
+- Every insertion argument at the live frontier must account explicitly for predecessor and successor seams.
 
 ## Secondary durable front
 
