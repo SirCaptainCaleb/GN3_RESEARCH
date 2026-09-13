@@ -8,7 +8,7 @@ GitHub contains the durable mathematical world: audited reusable results, the sm
 
 Git history is the revision and archive mechanism. Do not recreate database-style revision objects, worker state, queues, semantic tag systems, dependency databases, or other lifecycle machinery unless actual use later proves they are necessary.
 
-The migration is complete. GitHub `main` is the durable authority for A7C3. Legacy Supabase material is archival source material only and is not the live research record.
+GitHub `main` is the self-sufficient durable authority for A7C3. The old Supabase database is gone. It is not a source, fallback, restoration target, or reconciliation target. A citation that points only to the vanished database is not a proof source. If an essential proof is absent from GitHub, reconstruct it from available GitHub or Slack material when feasible, or mark the dependency unresolved. Do not silently replace a missing proof by a database identifier.
 
 Ordinary nonmigration durable work goes directly to `main`. A new standalone theorem-level claim discovered in Slack should normally remain there while unaudited and be promoted to GitHub immediately when audited. GitHub should receive the final audited mathematical version rather than a sequence of provisional theorem variants. Evolving workspace mathematics may be durable before theorem-level audit when clearly presented as development rather than as a trusted reusable result.
 
@@ -24,6 +24,8 @@ Temporary branches are exceptional tools for work that genuinely benefits from i
 4. `STRATEGY/CURRENT.md` — the current strategic interpretation and ambitious targets.
 
 Then inspect pinned/current `#a7c3-control` for live changes newer than GitHub and catch up on the relevant recent `#a7c3-workspace` roots and threads, including audit tags, corrections, provisional dependencies, and concurrent mathematics that could affect the chosen line.
+
+When the proof spine or current strategy points to a coherent active development, read that descriptive development as the next entry point before excavating its ancestors. Historical D17 section numbers, SV identifiers, and similar labels remain valuable provenance and search keys, but they should not force a fresh researcher to reconstruct an active argument from fragments.
 
 After orientation, expand only the mathematics needed for the chosen attack. Do not preload the whole corpus merely because it exists.
 
@@ -41,6 +43,8 @@ These files have different jobs. Do not collapse them into one giant status docu
 ### Proof spine
 
 `PROOF_SPINE.md` is the front-door closure map. It should expose the current reduction chain, surviving major branches, genuine bottlenecks, load-bearing results or workspace sections, and important fences. It is orientation, not mathematical authority. The linked result or workspace proof is authoritative.
+
+The spine must distinguish established reductions from constructions that require additional hypotheses, unresolved physical-realization or implication steps, and conjectural targets. Do not draw an unresolved implication as if it were an established arrow merely because the numerical bookkeeping is attractive. In particular, matching cardinality is not a physical path cover, numerical improvement is not automatically a valid global descent, local geometry is not a spanning absorber, and existence of a path is not existence in a prescribed order.
 
 ### Obligations
 
@@ -95,6 +99,12 @@ Most mathematical work is scratch work. That is normal. A long campaign produces
 
 `WORKSPACE/` is the durable notebook layer. It contains coherent evolving developments, constructions, exact local mechanisms, useful failed branches, limitations, and enough old mathematical texture to rifle through when necessary. Persistence here is valuable even when future workers will rarely read most of it.
 
+New or substantially revised active developments should normally be organized around the mathematical question or coherent argument and use a descriptive filename. A single document is preferred when it is enough; create a small topic folder only when the mathematics genuinely needs one. Historical identifiers such as D17 sections and SV numbers remain searchable provenance inside the development rather than mandatory primary navigation.
+
+An active development should open with a compact orientation in ordinary prose: the exact setting, the strongest current conclusion, which parts are audited or provisional or conditional or unresolved, the actual missing step, and the few load-bearing proofs a reader should expand. The body should contain enough connected mathematics that a researcher can enter the argument without reconstructing it from many ancestor files or Slack fragments. Link reusable canonical results instead of duplicating their proofs.
+
+A provisional GitHub development is legitimate working mathematics. Its location in GitHub does not confer audited status. Reorganization is not certification and must preserve hypotheses, exceptional branches, known limitations, physical witnesses, path orders, and every other trust qualification that matters.
+
 `RESULTS/` is narrower. A result is a standalone audited mathematical interface worth reusing outside the immediate scratch chain that produced it. Correctness alone does not make a result important.
 
 A reusable result under `RESULTS/` is understood to have passed audit in its durable form.
@@ -141,7 +151,7 @@ High recall still matters when the obvious surfaces fail, but the architecture s
 
 An unaudited Slack result is **provisional mathematics, not forbidden mathematics**. A worker may use it without first advancing the audit frontier to it, but must make that dependence explicit. In the dependent root's thread or the corresponding live development, record a compact `Provisional dependencies:` line identifying the exact unaudited Slack root or roots being used. Any conclusion depending on them remains provisional until those dependencies are audited successfully.
 
-The worker may instead choose to advance the chronological audit frontier through the needed result before relying on it. This is a judgment call: audit now for confidence, or proceed provisionally for speed while accepting repair risk if an upstream dependency later fails.
+The worker may instead choose to audit a concretely load-bearing claim under the targeted-audit exception below, or advance the chronological frontier through it. This is a judgment call: audit now for confidence, or proceed provisionally for speed while accepting repair risk if an upstream dependency later fails.
 
 A theorem-level claim cannot acquire trusted audited status while an unaudited dependency remains beneath it. If a provisional dependency later receives `[FAIL]` or a materially narrowing `[PASS_ADJUSTED]`, downstream claims that relied on the superseded form must be revisited before promotion or reuse as trusted mathematics.
 
@@ -156,6 +166,8 @@ Permanent channels:
 - `#a7c3-lab` — lower-pressure ephemeral research chatter worth retaining: motivated conjectures, speculative connections, constructions or examples that may generalize, counterexample intuitions, half-formed abstractions, and other unexpected mathematical talk that does not yet belong in control, workspace, or GitHub.
 
 If a finding should change what another active Researcher does now, put it in `#a7c3-workspace`. If a trust failure redirects the team or invalidates active dependencies, also surface that consequence in `#a7c3-control`. Otherwise `#a7c3-lab` is the default home for interesting but non-operational chatter.
+
+Short exploratory arguments may live entirely in Slack. Once an argument becomes substantial, attracts dependent work, or repeatedly has to be reconstructed, give it one coherent GitHub development with an explicit provisional status when appropriate, and have Slack point there. Do not maintain independently evolving proof bodies in both places. Audited reusable results still move to their proper canonical result location, with the surviving statement and proof linked from the originating Slack thread.
 
 Temporary campaign channels are allowed when one campaign would genuinely overwhelm the main workspace channel.
 
@@ -191,15 +203,17 @@ Audit reasoning belongs in the existing thread. For `[PASS_ADJUSTED]`, the threa
 
 An unaudited root has **no audit tag**. Do not add a `[PROVISIONAL]` tag; the absence of an audit tag is the provisional state.
 
-### Chronological audit frontier
+### Chronological audit frontier and targeted exception
 
-Routine auditing is strictly chronological within the mathematical roots of `#a7c3-workspace`. **The oldest unaudited mathematical root is the audit frontier and is the only unaudited workspace result eligible for the next routine audit.** To audit a later root, first settle every earlier unaudited mathematical root with `[PASS]`, `[PASS_ADJUSTED]`, or `[FAIL]`.
+Routine auditing is chronological within the mathematical roots of `#a7c3-workspace`. The oldest unaudited mathematical root is the routine audit frontier. New research may continue beyond it, and routine review keeps advancing from that oldest root so unattractive claims cannot be silently skipped forever.
 
-This rule makes the workspace itself the audit queue without creating a separate queue object. New research may continue and new roots may be posted beyond the frontier; they simply remain unaudited until the frontier reaches them. No result can be silently skipped forever because a more attractive later claim was chosen for audit first.
+There is one narrow exception. A load-bearing claim or dependency may receive targeted review out of chronological order when a concrete current argument or consequential strategic decision depends on that exact mathematics. Before reviewing it, state briefly why the claim warrants review now and identify the exact statement and proof being reviewed. Keep the verdict and reasoning attached to the original root and thread. Resolve every provisional dependency needed by the reviewed statement before granting trusted status, and persist the final audited mathematics under the ordinary canonical-result rules.
 
-Research use is deliberately more permissive than audit order. A worker may use a later unaudited result provisionally, provided the exact dependence is recorded clearly as described above. The worker may also choose to clear the audit frontier through that result first. Either choice is allowed; what is forbidden is silently treating unaudited mathematics as trusted.
+A targeted audit does **not** advance the chronological frontier across skipped older roots, settle them, discard them, or create a second queue. After the targeted need is handled, routine auditing returns to the oldest remaining unaudited mathematical root. Existing Slack roots, threads, and durable result files are the entire mechanism; do not create a separate audit database, assignment system, or targeted-audit registry.
 
-If the frontier result passes, prefix `[PASS]`. If it survives only after correction, prefix `[PASS_ADJUSTED]`. If it fails, prefix `[FAIL]`. A failed result cannot be used as a trusted premise unless a repaired statement is formulated and eventually audited in its own right. Any provisional descendants that used it must be rechecked.
+Research use is deliberately more permissive than audit order. A worker may use a later unaudited result provisionally, provided the exact dependence is recorded clearly as described above. The worker may also choose targeted review when the exception genuinely applies, or clear the audit frontier through that result. What is forbidden is silently treating unaudited mathematics as trusted.
+
+If an audited result passes, prefix `[PASS]`. If it survives only after correction, prefix `[PASS_ADJUSTED]`. If it fails, prefix `[FAIL]`. A failed result cannot be used as a trusted premise unless a repaired statement is formulated and eventually audited in its own right. Any provisional descendants that used it must be rechecked.
 
 ### Audited means persisted and linked
 
@@ -222,7 +236,7 @@ The Slack thread may retain exploratory proof, audit discussion, counterexamples
 
 ## Slack is provisional
 
-Slack is provisional by default. `#a7c3-lab` is especially provisional. Unaudited workspace mathematics may feed later provisional research when its dependence is explicit, but it does not thereby become trusted. Before a standalone theorem-level result enters the trusted GitHub result corpus, the chronological audit frontier must reach it and every unaudited dependency it relies on must have survived audit in the form actually used.
+Slack is provisional by default. `#a7c3-lab` is especially provisional. Unaudited workspace mathematics may feed later provisional research when its dependence is explicit, but it does not thereby become trusted. Before a standalone theorem-level result enters the trusted GitHub result corpus, its exact statement and every unaudited dependency it relies on must have survived audit in the form actually used, whether through ordinary chronological review or a legitimate targeted review.
 
 Architecture, routing rules, and channel-use conventions belong in GitHub `ARCHITECTURE.md`, not in Slack.
 
@@ -243,9 +257,9 @@ Mantles change posture, not permission. They are not stored as project state.
 
 ### Auditor / Repairer
 
-A dedicated **Auditor / Repairer** conversation is useful because adversarial verification benefits from persistent cognitive posture. Its job is to advance the chronological audit frontier, attack load-bearing durable results when separately requested, trace mathematical damage, and repair failed or quarantined mathematics when possible. It is not the owner of a separate audit ledger.
+A dedicated **Auditor / Repairer** conversation is useful because adversarial verification benefits from persistent cognitive posture. Its job is to advance the chronological audit frontier, perform legitimate targeted audits of concretely load-bearing claims when separately warranted, attack load-bearing durable results when separately requested, trace mathematical damage, and repair failed or quarantined mathematics when possible. It is not the owner of a separate audit ledger.
 
-For routine Slack audit, the Auditor follows the same frontier rule as everyone else and does not skip an older unaudited workspace root to audit a newer one. Status is written onto the originating Slack root, reasoning stays in that thread, completed audit mathematics is persisted immediately and linked back from that thread, and interestingness nominations receive a second mathematical judgment during audit. Separate repair work on already-failed or quarantined durable results is not constrained by the Slack frontier.
+For routine Slack audit, the Auditor follows the chronological frontier rule. A targeted audit follows the narrow exception above and never silently clears the skipped queue. Status is written onto the originating Slack root, reasoning stays in that thread, completed audit mathematics is persisted immediately and linked back from that thread, and interestingness nominations receive a second mathematical judgment during audit. Separate repair work on already-failed or quarantined durable results is not constrained by the Slack frontier.
 
 ### Director
 
@@ -257,11 +271,11 @@ Guidance does **not** assign individual Researchers to tasks. Researchers choose
 
 #### Conserve scarce Astra capacity
 
-By the user's direction, Astra is reserved for high-value strategic judgment: assess the genuine frontier, elevate to a stronger parent theorem or representation, attempt consequential moonshots, and choose a small number of team-wide focuses. Routine integration and follow-through belong by default to the Vice Director.
+By the user's direction, Astra is reserved for high-value strategic judgment: assess the genuine frontier, elevate to a stronger parent theorem or representation, attempt consequential moonshots, and choose a small number of team-wide focuses. Routine integration, consolidation, link maintenance, active-development migration, and follow-through belong by default to the Integrator and Vice Director.
 
-The Vice Director maintains the proof spine and current strategy after research waves, reconciles durable pointers and audit status, expands supporting dependencies, and performs ordinary synthesis and bookkeeping. The Vice Director prepares a compact Astra brief when a strategic decision warrants scarce attention: what changed, the exact surviving bottleneck, decisive evidence and trust qualifications, and the few questions needing Astra judgment. Existing GitHub and Slack surfaces suffice; no new registry or workflow layer is required.
+The Vice Director maintains the proof spine and current strategy after research waves, reconciles durable pointers and audit status, expands supporting dependencies, and performs ordinary synthesis and bookkeeping. The Integrator keeps coherent arguments enterable, preserves compatibility pointers while reorganizing active material, and ensures that one authoritative development survives any move. They prepare a compact Astra brief only when strategic judgment is genuinely needed: what changed, the exact surviving bottleneck, decisive evidence and trust qualifications, and the few questions needing Astra judgment. Existing GitHub and Slack surfaces suffice; no new registry or workflow layer is required.
 
-Astra still synchronizes with current authority and reads load-bearing proofs needed for its own conclusions. Keep that retrieval targeted: inspect compact front-door changes and relevant live deltas, filter directory listings before displaying them, expand exact sections as needed, and avoid exhaustive corpus reads or repeated routine verification. Once the strategic decision is concrete, leave a concise actionable handoff; let the Vice Director carry routine integration forward. Astra may perform indispensable mathematical integration during its reasoning, but should not spend the pass executing the surrounding maintenance work unless the user specifically requests it.
+Astra still synchronizes with current authority and reads load-bearing proofs needed for its own conclusions. Keep that retrieval targeted: inspect compact front-door changes and relevant live deltas, filter directory listings before displaying them, search before bulk reading, expand exact sections as needed, and avoid exhaustive corpus reads or repeated routine verification. Once the strategic decision is concrete, leave a concise actionable handoff; let the Vice Director carry routine integration forward. Astra may perform indispensable mathematical integration during its reasoning, but should not spend the pass executing the surrounding maintenance work unless the user specifically requests it.
 
 ### Independent locality escape
 
@@ -271,7 +285,7 @@ A deliberately isolated Independent conversation may still be used when locality
 
 Promotion should be boring.
 
-- A standalone reusable theorem is promoted to `RESULTS/` immediately after its chronological audit completes and its unaudited dependencies, if any, have been settled successfully in the form used.
+- A standalone reusable theorem is promoted to `RESULTS/` immediately after its audit completes and its unaudited dependencies, if any, have been settled successfully in the form used.
 - An audited result endorsed as interesting is promoted directly to `RESULTS/INTERESTING/`.
 - Connected evolving proof architecture goes in the appropriate `WORKSPACE/` development.
 - A change in the closure map updates `PROOF_SPINE.md`.
@@ -283,6 +297,24 @@ Integration is mathematical research, not clerical filing. A result is not fully
 
 At natural checkpoints, ask whether the latest work changes the proof spine, obligations, strategy, or trust landscape rather than merely extending the same local machinery. Persist coherent durable advances where they belong and continue doing mathematics from the resulting frontier.
 
+### Incremental active-argument reorganization
+
+Reorganization must remain useful even if it stops forever at the next commit. Improve the active frontier first. Do not run a repository-wide renaming campaign or require historical files to adopt a new layout before research can continue.
+
+For each argument selected for cleanup:
+
+1. identify the present authoritative material and its actual trust state;
+2. create or improve one coherent descriptive entry point;
+3. move or consolidate only material whose relocation materially improves usability;
+4. update known active inbound links;
+5. preserve old identifiers in searchable text;
+6. when a path changes and existing references may depend on it, leave a short forwarding stub at the old path naming the new canonical location and containing no competing proof;
+7. verify that the new entry point is understandable on its own, its relevant links work, and every mathematical qualification survives.
+
+At every checkpoint, untouched historical material and reorganized material must remain jointly usable, older paths and identifiers must remain discoverable, and each coherent argument must have one clearly identified authoritative location. No researcher should need the rest of the migration to finish. A short handoff in an existing project surface should say what changed, what remains, and how to continue incrementally; do not create a permanent migration registry.
+
+Prefer coherent commits that contain a move, inbound-link changes, and compatibility pointers together. If concurrent edits touch the same material, refresh and reconcile before writing. Never silently strengthen a theorem, drop a hypothesis, erase an exceptional branch, or turn a provisional development into a trusted result in the name of readability. If consolidation exposes a proof problem, retain the precise unresolved qualification and route it for review.
+
 ## Concurrency
 
 Concurrency is handled structurally rather than through a custom locking system. Researchers normally work in separate result files or mathematical regions; shared synthesis documents should be edited carefully when active concurrent work overlaps. Ordinary Git conflict handling is preferable to research-specific locks or sessions.
@@ -293,7 +325,7 @@ Direct work on `main` is normal. Use temporary branches only when isolation has 
 
 There is deliberately no hidden second research operating system behind GitHub:
 
-- no database required for correctness after cutover;
+- no database required for correctness after cutover, and no vanished-database fallback;
 - no persistent worker registry;
 - no assignment queue;
 - no mantle state;

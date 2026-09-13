@@ -12,7 +12,7 @@ These are promising developments, not an audited physical closure. At this pass 
 
 The recently reconciled G35 order-two repair is durable as R1028; the five-set endpoint-control counterexample is R1029 in INTERESTING; twin-wall far-dimer saturation is now audited R1030, not merely a provisional Slack signal.
 
-A new bookkeeping fence affects D17.437: in the 2F/0J augmenter cell, the remaining source gate and sole J-transition may be one COMMON F-intersect-J edge unless the canonical word excludes it. Only a noncommon remaining gate is forced onto the unique transition-bearing neutral component. The exact small matching fixture and scope are in [the Astra development](../WORKSPACE/D17/astra-2026-09-13-source-complement-allocation.md). This is a strategic qualification, not a chronological audit verdict.
+A new bookkeeping fence affects D17.437: in the 2F/0J augmenter cell, the remaining source gate and sole J-transition may be one COMMON F-intersect-J edge unless the canonical word excludes it. Only a noncommon remaining gate is forced onto the unique transition-bearing neutral component. The exact small matching fixture and scope are in the canonical [source-complement / zipper development](../WORKSPACE/source-complement-zipper.md). This is a strategic qualification, not a chronological audit verdict.
 
 ## Elevation: the source pair is a choice
 
@@ -71,7 +71,7 @@ These are shared focuses, not individual assignments.
 - R1029 forbids inferring a prescribed far-wall endpoint from D17.430 alone.
 - D17.380's special-P5-order and full-window fences remain in force.
 - The common-transition alternative above must be retained until explicitly excluded.
-- D17.433-439 and this new allocation development do not acquire audited status by appearing in strategy.
+- D17.433-439 and this new allocation development do not acquire audited status by appearing in strategy or GitHub workspace.
 - The v-containing allocation is a sufficient route, not an equivalence with every two-cover or a proof that its selected complement is Hamiltonian.
 - Generic corridor refinement, repeated P4 production, and payment/replay are low priority absent a new global consumer.
 
@@ -80,3 +80,9 @@ O6 remains independent foundational recovery. D5 remains an orthogonal source of
 ## What should change after the next wave
 
 A useful next wave should physically close a major branch, establish a source-complement exchange principle, or produce a full-data obstruction that forces us to change the parent target. Merely locating the source more precisely is no longer the main question.
+
+## Current integration handoff
+
+The active source-complement / zipper line now has one coherent canonical entry point at `A7C3/WORKSPACE/source-complement-zipper.md`; the former Astra path is only a forwarding stub, and D17/SV provenance remains searchable. Older workspace material stays in place and can be used alongside the new entry point.
+
+Continue incrementally: reorganize another historical argument only when it becomes active or repeated reconstruction is costing researchers time. Preserve compatibility paths and trust qualifications. The unresolved mathematics in this pilot is still the COMMON-edge alternative around D17.437 and the physical realization / valid-global-consumer gap beyond the D17.439 numerical profile.
