@@ -74,6 +74,7 @@ jobs:
               out={}
               for rr in relroots:
                   d=root/rr
+                  if not d.exists(): continue
                   for p in d.iterdir():
                       if p.is_file() and result_name.fullmatch(p.name): out[str(rr/p.name)]=p
               return out
