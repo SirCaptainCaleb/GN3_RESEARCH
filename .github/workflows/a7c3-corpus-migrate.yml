@@ -69,12 +69,13 @@ jobs:
           actual=Path('.')
           expected=Path('/tmp/r1-expected')
           relroots=[Path('A7C3/RESULTS/USABLE/LEGACY'),Path('A7C3/RESULTS/UNUSABLE/INVALID'),Path('A7C3/RESULTS/UNUSABLE/QUARANTINED')]
+          result_name=re.compile(r'R\d+\.md')
           def result_map(root):
               out={}
               for rr in relroots:
                   d=root/rr
-                  for p in d.glob('R*.md'):
-                      if re.fullmatch(r'R\d+\.md',p.name): out[str(rr/p.name)]=p
+                  for p in d.iterdir():
+                      if p.is_file() and result_name.fullmatch(p.name): out[str(rr/p.name)]=p
               return out
           a=result_map(actual); e=result_map(expected)
           if set(a)!=set(e): raise RuntimeError(f'identity mismatch missing={sorted(set(e)-set(a))} extra={sorted(set(a)-set(e))}')
@@ -89,9 +90,9 @@ jobs:
               no_proof += marker in eb
           if mism: raise RuntimeError(f'byte/SHA mismatch total={len(mism)} first={mism[:3]}')
           counts={
-            'legacy':len(list((actual/'A7C3/RESULTS/USABLE/LEGACY').glob('R*.md'))),
-            'invalid':len(list((actual/'A7C3/RESULTS/UNUSABLE/INVALID').glob('R*.md'))),
-            'quarantined':len(list((actual/'A7C3/RESULTS/UNUSABLE/QUARANTINED').glob('R*.md'))),
+            'legacy':sum(result_name.fullmatch(p.name) is not None for p in (actual/'A7C3/RESULTS/USABLE/LEGACY').iterdir() if p.is_file()),
+            'invalid':sum(result_name.fullmatch(p.name) is not None for p in (actual/'A7C3/RESULTS/UNUSABLE/INVALID').iterdir() if p.is_file()),
+            'quarantined':sum(result_name.fullmatch(p.name) is not None for p in (actual/'A7C3/RESULTS/UNUSABLE/QUARANTINED').iterdir() if p.is_file()),
           }
           if counts != {'legacy':287,'invalid':0,'quarantined':150}: raise RuntimeError(f'folder counts {counts}')
           r5='A7C3/RESULTS/UNUSABLE/QUARANTINED/R5.md'; r24='A7C3/RESULTS/UNUSABLE/QUARANTINED/R24.md'
