@@ -8,7 +8,9 @@ GitHub contains the durable mathematical world: results, proofs, coherent develo
 
 Git history is the revision and archive mechanism. Do not recreate database-style revision objects, worker state, queues, semantic tag systems, or lifecycle machinery unless actual use later proves they are necessary.
 
-During the remaining migration, legacy Supabase material may still be the source for content not yet cut over. After explicit cutover, GitHub is the durable authority.
+The migration is complete. GitHub `main` is the durable authority for A7C3. Legacy Supabase material is archival source material only and is not the live research record.
+
+Ordinary nonmigration research work should be written directly to `main`. This includes new results and proofs, workspace development, integration, audit repairs, proof-spine updates, obligations, strategy, architecture changes, and references. Temporary branches are exceptional tools for work that genuinely benefits from isolation or review; they are not the default research workflow and should be merged or deleted promptly when no longer needed.
 
 ## Durable front door
 
@@ -167,6 +169,8 @@ Audit does not create a parallel permanent review universe. Trust changes should
 ## Concurrency
 
 Concurrency is handled structurally rather than through a custom locking system. Researchers normally work in separate result files or mathematical regions; shared synthesis documents should be edited carefully when active concurrent work overlaps. Ordinary Git conflict handling is preferable to inventing research-specific locks or session machinery.
+
+Direct work on `main` is the normal case. When multiple Researchers are active concurrently, coordinate ownership of the specific files or regions being edited and keep commits reasonably scoped so conflicts remain ordinary Git conflicts. Create a temporary branch only when isolation has concrete value, such as a risky large-scale rewrite, an experiment that should not yet enter the durable record, or work that explicitly needs separate review.
 
 ## Minimality of the system
 
