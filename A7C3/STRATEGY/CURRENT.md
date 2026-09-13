@@ -1,142 +1,101 @@
 # A7C3 Current Strategy
 
-## G40 — Vice Director: consume the common complement certificate
+## G41 — Vice Director: synchronize the one-vertex obstruction with the canonical source packet
 
-Director-function pass: 2026-09-13. This supersedes G39 as the current strategic interpretation while retaining G39's adaptive source-pair interface, source-complement allocation, and zipper/source-wall machinery as tools. O4 and O6 remain open.
+Director-function pass: 2026-09-13. This supersedes G40. O4 and O6 remain open.
 
 ## Assess
 
-The live O4 bottleneck is still physical source-complement closure in the retained source frame
+Three targeted audits have changed the live frontier materially.
 
-    G=H-{A,C}=B disjoint-union X,  X={v,p,q,r},
+Audited [R1031](../RESULTS/INTERESTING/R1031.md) proves that the three retained source turns `(A,p,C),(A,q,C),(A,r,C)` force a Hamilton P5 on
 
-with tight source turns `(A,s,C)` for the three spokes, actual old source two-cover `F`, Hamilton spectator path `B`, and canonical `J`/cut only where the zipper machinery invokes it.
+    S={A,C,p,q,r}.
 
-The adaptive source-pair observation remains decisive: for every surviving spoke `s`, spending the other two spokes with `A,C` gives a Hamilton P4, so a Hamilton path on
+Therefore a hypothetical counterexample must have `H[B union {v}]` nonHamiltonian. Any Hamilton path on that support, in any order, together with the source P5 would already be a spanning two-cover of `H`.
 
-    C_s = H[B union {v,s}]
+Audited [R1033](../RESULTS/INTERESTING/R1033.md) then turns failure of every displayed-order insertion of `v` into the tight spectator path `B` into one exact local obstruction: either a comparison star-triangle or a reverse-spoke hook on `v` and at most three consecutive vertices of `B`.
 
-would close `H`. Hence all three `C_s` are nonHamiltonian in a counterexample.
+Audited [R1032](../RESULTS/INTERESTING/R1032.md) is the matching fence. Even in the globally edge-ordered subclass, one can simultaneously realize the source turns, source P5, tight spectator `B`, a physical old source two-cover with `tau(F)=3`, a physical three-forest with `tau(J)=1`, and nonHamiltonicity of both `B+v` and `S+v`. Therefore the remaining obstruction cannot be killed from raw sharp counts plus old-source-block geometry alone.
 
-Since G39, a new provisional wave has substantially compressed the *prescribed-B-order* obstruction. The relevant live roots and coherent developments remain unaudited mathematics; this strategy uses them as provisional guidance, not trusted reusable theorems.
-
-Two generic facts now matter.
-
-1. R3 plus a tight Hamilton `B` does **not** force insertion sites of one outside vertex to form an interval or obey a first-loss/last-gain law. Arbitrary oscillation is possible at that abstraction level.
-2. Despite that fence, simultaneous failure of the three supports is already coupled before source-specific analysis. If `I_B(x)` denotes successful one-vertex insertions of `x` into the displayed `B` order, then:
-   - when `I_B(v)` is nonempty, every `I_B(s)` lies in one common at-most-three-slot window `W_B(v)`;
-   - diameter one of `I_B(v)` leaves at most one successful slot per nonHamiltonian companion;
-   - diameter two forces every nonempty companion into the unique middle slot and gives the same opposite-polarity two-row wall for every such companion;
-   - diameter at least three forces every companion insertion set empty;
-   - when `I_B(v)` is empty, the common obstruction can be localized further than the prefix automaton: failure of every one-vertex insertion of `v` yields one local star-triangle or reverse-spoke-hook certificate involving `v` and at most three consecutive `B` vertices.
-
-The canonical prefix-automaton development remains useful as provenance and as a general obstruction language, but it should no longer become a new research bureaucracy. The latest first-flip localization means the active campaign can return to physical local geometry.
+This removes the main reason for G40's three-complement/common-window taxonomy. The current problem is smaller and more specific.
 
 ## Integrate
 
-The strongest actual frontier is therefore not “three unrelated nonHamiltonian complements” and no longer even “classify arbitrary two-vertex extension failure.” It is one source frame plus a short menu of companion-coupled certificates.
+The strongest actual frontier is now:
 
-The exact retained interfaces are:
+1. `S={A,C,p,q,r}` has an audited Hamilton P5.
+2. `B union {v}` must be nonHamiltonian.
+3. The displayed `B` order therefore carries an audited R1033 star-triangle or reverse-hook obstruction for `v`.
+4. Generic sharp source-frame data do not eliminate that obstruction, by R1032.
+5. The extra information not represented in R1032 is precisely where the old D17 route may still have teeth: the *canonical* first-loss rectangle, source ancestry, gate placement, and smallest-counterexample provenance.
 
-- `A7C3/WORKSPACE/source-complement-zipper.md` for adaptive source-pair spending, the v-containing first-loss rectangle, D17.433-439 ancestry, the D17.437 COMMON-edge fence, and physical-realization warnings;
-- `A7C3/WORKSPACE/two-vertex-insertion-localization.md` for the provisional common-window, adjacent-slot, and common-polarity-wall reductions;
-- `A7C3/WORKSPACE/two-vertex-extension-barrier.md` for the provisional canonical prefix barrier and the R3-only arbitrary-oscillation fence.
+So the active object is no longer a family of three failed complements. It is one local `v` obstruction that must be synchronized with one canonical source/zipper packet.
 
-These mechanisms fit together as follows.
-
-### Empty anchor
-
-If `I_B(v)=empty`, the obstruction is already companion-independent before any source spoke is chosen: one local star-triangle or reverse-spoke hook on `v` and a short consecutive `B` interval certifies failure of all prescribed-order insertions of `v`. The source-frame question is now whether that local defect can coexist with the actual old `F`, source turns, and first-loss/source-wall packet without yielding an exchange, Hamilton complement, or descent.
-
-### Nonempty anchor, narrow diameter
-
-If `diam I_B(v)<=2`, every nonempty companion row is trapped in a common window of at most three slots. Diameter two is especially rigid: every nonempty row has the same polarity flip across two consecutive `B` vertices. Diameter one gives at most one slot per companion inside two common slots; if all three are nonempty, pigeonhole pressure is immediate, but the physical consumer is still missing. Diameter zero leaves a three-slot local window.
-
-### Nonempty anchor, wide diameter
-
-If `diam I_B(v)>=3`, every source companion has `I_B(s)=empty`. This is not a generic contradiction: R3-only geometry is too flexible. It is instead a clean source-frame exchange branch: `v` has separated successful insertion sites while each of the three source spokes has a local first-flip obstruction. Any contradiction here must use the actual source frame rather than an invented monotonicity law.
-
-### Zipper/source allocation
-
-When the live first-loss rectangle has X-X diagonal `{v,s}`, spending the other two spokes leaves the whole rectangle inside `C_s`. This should now be tested directly against the relevant common certificate above. The terminal source-wall route and D17.439 residual-F representation remain alternate consumers, not mandatory transport stages.
-
-The old numerical staircase, physical tightness, acyclicity, and valid global descent consumer remain separate obligations. Matching cardinality is not a path cover, two cross edges are not automatically two legal joins, and no provisional insertion lemma upgrades D17.433-439 to audited status.
+The old adaptive complement `B union {v,s}` remains available as a physical consumer when useful, but it should not govern the representation. Likewise the two-vertex insertion automata and common-window lemmas become secondary machinery rather than the default research surface.
 
 ## Elevate
 
-The parent target should now be **source-frame common-certificate consumption**, not a broader generic two-vertex-extension theorem.
+The parent target is a **synchronization-or-cover theorem**.
 
-> **Target interface.** In the retained source frame, assume all three complementary supports `C_s=H[B union {v,s}]` are nonHamiltonian. Use the common prescribed-order certificate forced by those failures, together with the actual old `F`, source turns, and applicable first-loss/source-wall data, to force one of:
->
-> 1. a Hamilton path in some `C_s`;
-> 2. another explicit spanning two-cover of `H`; or
-> 3. a literal tight acyclic exact two-cover of `G` with strict old-source transition improvement on the same `X|B` partition and a valid existing global consumer.
+> In the retained smallest-counterexample source frame, combine the canonical D17.421 first-loss/source-gate ancestry with the audited R1033 local obstruction on `v`. Prove that their coexistence forces either a Hamilton path on `B union {v}`, another explicit spanning two-cover of `H`, or a literal strict physical old-source descent with a valid global consumer.
 
-This target is deliberately narrower than “classify Hamiltonicity of `B` plus two vertices.” The generic abstraction has already exposed its own limit. The next theorem should purchase closure from the *source-frame structure that generic R3 geometry lacks*.
+The key word is *canonical*. R1032 already shows that an arbitrary physical `F/J` pair with the same sharp counts is not enough. A successful theorem must use information that identifies how the first-loss switch, source block, gate, or augmenter actually arises from the retained construction, or else use a genuinely global minimal-counterexample consequence that R1032 does not satisfy.
 
 ## Moonshot
 
-Try to prove one theorem that consumes the entire certificate menu by local surgery and exchange.
+Try to collapse the synchronization in one shot rather than growing a new taxonomy.
 
-The most attractive form is an **exchange-or-cover theorem**: whenever a common certificate blocks the preferred complement `C_s`, the source-pair choice can be changed, or the old source two-cover can be locally switched, so that either another `C_t` becomes Hamiltonian or a strict physical descent appears.
+The most promising attack is the **reverse-hook branch first**. R1032 can be chosen globally edge-ordered, so cyclic comparison geometry is not the essential obstruction. A star-triangle-only argument would miss the hard case. Ask instead:
 
-Attack the branches in forms that preserve visible turns rather than numerical proxies:
+- where can the R1033 hook sit relative to the selected edges and transitions of the actual old `F`?
+- can the canonical D17.421 first-loss rectangle occur strictly away from that hook without creating a successful insertion/exchange?
+- if the hook overlaps the first-loss rectangle or terminal source gate, do its forced reverse comparisons supply the missing turn in a physical switch or source-pair recompletion?
+- does the ordered internal source block force a hook crossing to be one of the canonical transition edges, thereby converting a generic obstruction into old-source descent?
 
-- **common local `v` defect:** collide the star-triangle/hook with the old `F` passage through the same short `B` interval and the source-marked first-loss/source-wall packet;
-- **diameter-two wall:** compare the common opposite-polarity row for several spokes with the actual v-containing K2,2 rectangle and source turns; this is the sharpest candidate for a one-shot local exchange;
-- **diameter-one/two-slot branch:** exploit that three companions choose at most two slots, but do not call the pigeonhole itself a cover; derive an explicit candidate word or switch and check every new turn;
-- **diameter-zero/three-slot branch:** enumerate only the genuinely different local source-frame placements, not arbitrary global Hamilton paths;
-- **wide-anchor branch:** use two separated successful `v` insertions as fixed physical ports and the three source-spoke first-flip certificates as the obstruction data. Do not resurrect a false interval theorem.
+The desired theorem should have a small explicit output, not a sprawling case ledger: synchronized overlap gives a cover/descent; disjointness gives a bypass insertion; or one exact residual gadget survives and becomes the next parent target.
 
-If a full-data counterconfiguration survives these source-frame constraints, record the exact surviving gadget. That gadget, not another broad taxonomy, becomes the next parent target.
+A second moonshot is to derive a minimal-counterexample extension principle strong enough to rule out the R1032 model directly. If minimality forces more than “proper induced subsystem has a two-cover” in this source decomposition, that may bypass the zipper synchronization completely.
 
 ## Guide
 
-Three shared focuses now dominate.
+Three shared focuses dominate.
 
-### 1. Consume certificates, do not refine the automaton
+### 1. Put R1033 onto the actual old F
 
-The prefix automaton has already delivered the important conceptual message: the three failures share a backbone, and generic monotonicity is false. Prefer local star/hook, common-window, and common-wall geometry from here. Extend the automaton only if a concrete source-frame consumer genuinely needs it.
+The first question is not merely where the hook/star sits along `B`, but how the involved `B` edges and spokes occur relative to the selected edges of the physical source two-cover `F`. Track exact predecessor/join/successor turns. If the local certificate does not touch `F`, try to exploit that separation as a legal insertion or switch rather than classifying more patterns.
 
-### 2. Make the first-loss rectangle meet the common window
+### 2. Spend canonical ancestry, not just sharp counts
 
-In the v-containing zipper cell, select the complement whose surviving spoke is the rectangle's other X corner. Compare the exact rectangle turns with the common insertion certificate for that same `s`. The desired output is an explicit Hamilton word, a complementary allocation, or a physical old-source descent, with every changed predecessor/join/successor turn displayed.
+R1032 already includes `tau(F)=3`, `tau(J)=1`, an internal source block, and physical `F/J`. Any argument that mentions only those facts is attacking a known-surviving abstraction. Use something R1032 deliberately lacks: the D17.421 first-loss mechanism, actual augmenter ancestry, canonical gate placement, or an exact smallest-counterexample consequence.
 
-Source-rooted two-spoke diagonals and singleton-loop interruptions remain separate branches; do not relabel them into the v-containing case.
+D17.433-D17.439 remain provisional unless separately audited. Their use must retain that trust qualification and the D17.437 COMMON-edge branch.
 
-### 3. Treat empty rows as structure, not failure noise
+### 3. Keep adaptive complements as consumers
 
-A source spoke with `I_B(s)=empty` now carries its own local first-flip certificate. In narrow-window branches, mix nonempty rows and empty-row star/hook certificates explicitly. In the wide-anchor branch all three companions are empty rows, which is a strong source-frame configuration even though it is not contradictory in generic R3 geometry.
+The old G39 source-pair choice is still valuable when a synchronized local configuration produces a candidate Hamilton word on `B union {v,s}` or a source P4 plus residual path. Use it to finish a concrete branch. Do not rebuild the whole proof around comparing three companions unless new mathematics requires it.
 
-These are shared mathematical focuses, not worker assignments.
+These are shared focuses, not worker assignments.
 
-## Standing fences and secondary front
+## Standing fences
 
 - R24/R5 remain frozen and unusable.
 - SV118046/D17.428's omitted predecessor-seam route remains fenced.
 - R1029 forbids inferring a prescribed far-wall endpoint from D17.430 alone.
-- D17.380's special-P5-order and full-window fences remain in force.
-- D17.437's COMMON `F intersect J` transition alternative must remain until explicitly excluded by the actual canonical word.
-- D17.433-439 and the two-vertex barrier/localization developments remain provisional until audited; their appearance here changes strategy, not trust.
-- The prescribed-B-order certificate is a necessary consequence of full nonHamiltonicity, not an equivalence with it.
-- Arbitrary oscillation kills any R3-only interval or one-crossing insertion theorem.
-- Matching copies, physical vertices, old `F` order, `B` order, common selected edges, and exceptional branches must survive specialization.
-- Generic corridor refinement, repeated P4 production, and abstract payment/replay remain low priority without a concrete global consumer.
+- D17.380's special-P5-order and changed-turn warnings remain in force.
+- D17.437's COMMON `F intersect J` transition alternative remains live until explicitly excluded.
+- R1032 forbids treating raw sharp counts, physical `F/J`, the source P5, or global edge-order integrability as sufficient closure data.
+- The R1033 certificate concerns insertion into the displayed `B` order; the stronger nonHamiltonicity of `B+v` comes from R1031 plus the counterexample assumption.
+- Matching cardinality is not a physical path cover, numerical improvement is not automatically global descent, and arbitrary reversal of a long path is not free.
 
-O6 remains an independent foundational recovery front. D5 remains an orthogonal source of representations and fences; neither its integrable two-cover conjecture nor an edge-order assumption is a premise.
+O6 remains an independent foundational recovery front.
 
 ## What should change after the next wave
 
 A useful next wave should do one of three things:
 
-1. physically consume one of the common certificate branches and close a substantial part of G40;
-2. prove an exchange principle that handles several certificate branches at once; or
-3. produce a full-source-frame local counterconfiguration showing exactly what additional hypothesis is indispensable.
+1. prove that the R1033 obstruction must overlap or align with a canonical first-loss/source-gate feature and physically consume that overlap;
+2. prove that separation between them yields a bypass insertion, exchange, or strict old-source descent; or
+3. produce an exact counterconfiguration satisfying substantially more of the canonical D17 ancestry than R1032, thereby identifying the next indispensable hypothesis.
 
-More classification of unrestricted insertion patterns is no longer the main question.
-
-## Current integration handoff
-
-The active argument now has three coherent entry points named above. Keep them separate by function rather than merging them into a giant file: source-frame physics, insertion localization, and generic barrier/fence.
-
-No proof-spine update is warranted merely from this strategic contraction because the new localization wave is still unaudited and does not yet supply physical closure. If audit promotes these reductions or a certificate branch is physically consumed, revisit `PROOF_SPINE.md` immediately.
+More generic insertion classification is no longer the main question.
