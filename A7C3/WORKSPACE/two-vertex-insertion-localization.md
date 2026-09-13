@@ -140,13 +140,104 @@ Thus the three failures always admit a companion-independent obstruction interfa
 
 This is a classification of the **restricted B-order-preserving obstruction**, not a classification of full Hamiltonicity in `C_s`. The remaining G39 work is to use actual source-frame structure to consume the resulting common certificate physically.
 
+## 7. Adjacent-slot R3 sharpening
+
+The distance-one case left open by the disjoint-slot lemma has an exact two-choice repair when both vertices are individually insertible in both adjacent slots.
+
+**Lemma.** Let `x,y` be distinct vertices outside `B`, and let `t,t+1` be adjacent slots. If
+
+    t,t+1 in I_B(x) intersect I_B(y),
+
+then `H[B union {x,y}]` has a tight Hamilton path preserving the displayed order of `B`.
+
+### Proof
+
+The slots `t` and `t+1` share exactly one old `B` vertex, namely `b_t`. Consider the two crossed placements:
+
+1. insert `x` in slot `t` and `y` in slot `t+1`;
+2. insert `y` in slot `t` and `x` in slot `t+1`.
+
+In the first word, every consecutive triple is already certified by the separate tight words `B_t(x)` and `B_{t+1}(y)` except the single bridge turn
+
+    (x,b_t,y).
+
+In the second word, every consecutive triple is similarly certified except
+
+    (y,b_t,x).
+
+These two turns are complete reversals. Accepted R3 says exactly one is tight. Hence exactly one of the two crossed placements is a tight Hamilton path. QED.
+
+**Corollary.** If `H[B union {x,y}]` is nonHamiltonian, then `I_B(x) intersect I_B(y)` contains no two adjacent slots.
+
+This sharpens the common-window branches in the live G39 cell.
+
+### Diameter-one anchor
+
+Suppose
+
+    min I_B(v)=a,   max I_B(v)=a+1.
+
+Then the common-window result gives
+
+    I_B(s) subset {a,a+1}
+
+for every source companion `s`. Since both slots lie in `I_B(v)`, the adjacent-slot lemma forbids both from lying in the same nonHamiltonian companion set. Therefore
+
+    |I_B(s)| <= 1
+
+for every `s in {p,q,r}`. If all three companion insertion sets are nonempty, three singleton choices are squeezed into only two common slots.
+
+### Diameter-two anchor and the common polarity wall
+
+Suppose
+
+    min I_B(v)=a,   max I_B(v)=a+2.
+
+Then the common window is the singleton `{a+1}`. Fix a source companion `s` with `I_B(s)` nonempty. Necessarily
+
+    I_B(s) = {a+1}.
+
+Use the successful insertion of `v` in the left outer slot `a` together with the successful insertion of `s` in the middle slot `a+1`. Their simultaneous B-ordered word can fail only at the bridge turn
+
+    (v,b_a,s).
+
+Because `C_s` is nonHamiltonian, that bridge is not tight. R3 therefore forces
+
+    (s,b_a,v)
+
+tight.
+
+Likewise, use the successful insertion of `s` in slot `a+1` together with the successful insertion of `v` in the right outer slot `a+2`. The only uncertified bridge is
+
+    (s,b_{a+1},v),
+
+so nonHamiltonicity and R3 force
+
+    (v,b_{a+1},s)
+
+tight.
+
+Hence every nonempty companion row has the same opposite-polarity wall across two consecutive B vertices:
+
+    (s,b_a,v)       tight,
+    (v,b_{a+1},s)   tight.
+
+Equivalently in the R887 comparison orientation,
+
+    {s,b_a} -> {v,b_a},
+    {v,b_{a+1}} -> {s,b_{a+1}}.
+
+If all three source companions have nonempty insertion sets, this polarity flip is common to all three simultaneously. Thus the diameter-two branch produces an explicit common two-row obstruction, rather than merely a one-slot localization.
+
+This remains a necessary obstruction, not its physical consumer. A companion with empty insertion set lies outside the displayed wall conclusion and must be handled by the common-prefix-barrier/empty-row machinery.
+
 ## Scope fence
 
 - No claim is made that nonHamiltonicity of `C_s` is equivalent to failure of `B`-order-preserving insertion.
-- No claim is made that a successful adjacency pattern is already a physical spanning cover beyond the explicit combined word constructed in the lemma.
+- No claim is made that a successful adjacency pattern is already a physical spanning cover beyond the explicit combined words constructed in the lemmas.
 - No arbitrary reversal of `B` or a residual path is used.
 - D17.439's conditional recompletion interface is not being promoted to a physical theorem here.
-- The disjoint-slot/common-window result is independent of provisional D17.433-D17.439 ancestry claims.
+- The disjoint-slot/common-window and adjacent-slot R3 results are independent of provisional D17.433-D17.439 ancestry claims.
 - The common-prefix-barrier half of the final dichotomy uses the explicitly named provisional workspace dependency above and therefore remains provisional with it.
 
 ## Strategic consequence
@@ -155,4 +246,6 @@ At the prescribed-order level, the Vice Director's desired parent obstruction ha
 
 > consume either the common pre-companion prefix barrier `K_0`, or the common at-most-three-slot window `W_B(v)`, using the retained source-frame data.
 
-The exact D17.421 first-loss rectangle, old source two-cover `F`, and source turns should now be tested as consumers of these two common certificates rather than as three separate companion-by-companion Hamiltonicity arguments.
+The adjacent-slot sharpening makes the nonempty-anchor side more rigid: diameter one leaves at most one successful slot per companion, while diameter two yields an explicit common opposite-polarity wall whenever the companion rows are nonempty.
+
+The exact D17.421 first-loss rectangle, old source two-cover `F`, and source turns should now be tested as consumers of these common certificates rather than as three separate companion-by-companion Hamiltonicity arguments.
