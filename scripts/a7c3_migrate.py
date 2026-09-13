@@ -26,6 +26,10 @@ def git(*args):
     return subprocess.check_output(['git', *args], text=True).strip()
 
 
+def result_files(path: Path):
+    return [p for p in path.glob('R*.md') if re.fullmatch(r'R\d+\.md', p.name)]
+
+
 docs = S['workspaces']['documents']
 drevs = {int(r['id']): r for r in S['workspaces']['revisions']}
 claims = S['results']['claims']
@@ -132,9 +136,9 @@ def validate_workspaces():
 
 
 def validate_nonactive():
-    legacy = list((ROOT/'A7C3/RESULTS/USABLE/LEGACY').glob('R*.md'))
-    invalid = list((ROOT/'A7C3/RESULTS/UNUSABLE/INVALID').glob('R*.md'))
-    quarantined = list((ROOT/'A7C3/RESULTS/UNUSABLE/QUARANTINED').glob('R*.md'))
+    legacy = result_files(ROOT/'A7C3/RESULTS/USABLE/LEGACY')
+    invalid = result_files(ROOT/'A7C3/RESULTS/UNUSABLE/INVALID')
+    quarantined = result_files(ROOT/'A7C3/RESULTS/UNUSABLE/QUARANTINED')
     if len(legacy) != 287 or len(invalid) != 1 or len(quarantined) != 150:
         raise RuntimeError(f'nonactive counts wrong legacy={len(legacy)} invalid={len(invalid)} quarantined={len(quarantined)}')
     if blob_sha_file(ROOT/'A7C3/RESULTS/UNUSABLE/INVALID/R685.md') != 'fbed72f56e511d25f3ff03f2cbeea8943d92dd19':
@@ -152,9 +156,8 @@ if phase == 'workspaces':
 elif phase == 'active':
     dest = ROOT/'A7C3/RESULTS/USABLE/ACTIVE'
     dest.mkdir(parents=True, exist_ok=True)
-    for p in dest.glob('R*.md'):
-        if re.fullmatch(r'R\d+\.md', p.name):
-            p.unlink()
+    for p in result_files(dest):
+        p.unlink()
     ids = sorted(rid for rid in revs if classes[rid] == 'USABLE/ACTIVE')
     for rid in ids:
         write_exact(dest/f'R{rid}.md', render_active(rid))
@@ -168,7 +171,7 @@ elif phase == 'unusable':
 elif phase == 'audit':
     validate_workspaces()
     validate_nonactive()
-    active = list((ROOT/'A7C3/RESULTS/USABLE/ACTIVE').glob('R*.md'))
+    active = result_files(ROOT/'A7C3/RESULTS/USABLE/ACTIVE')
     if len(active) != 272:
         raise RuntimeError(f'active count wrong: {len(active)}')
     for rid in sorted(r for r in revs if classes[r] == 'USABLE/ACTIVE'):
