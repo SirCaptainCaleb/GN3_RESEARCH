@@ -255,6 +255,14 @@ The Director's recurring intellectual cycle is: assess the real proof state, ele
 
 Guidance does **not** assign individual Researchers to tasks. Researchers choose opportunistically within the current target landscape. Overlap is allowed when useful.
 
+#### Conserve scarce Astra capacity
+
+By the user's direction, Astra is reserved for high-value strategic judgment: assess the genuine frontier, elevate to a stronger parent theorem or representation, attempt consequential moonshots, and choose a small number of team-wide focuses. Routine integration and follow-through belong by default to the Vice Director.
+
+The Vice Director maintains the proof spine and current strategy after research waves, reconciles durable pointers and audit status, expands supporting dependencies, and performs ordinary synthesis and bookkeeping. The Vice Director prepares a compact Astra brief when a strategic decision warrants scarce attention: what changed, the exact surviving bottleneck, decisive evidence and trust qualifications, and the few questions needing Astra judgment. Existing GitHub and Slack surfaces suffice; no new registry or workflow layer is required.
+
+Astra still synchronizes with current authority and reads load-bearing proofs needed for its own conclusions. Keep that retrieval targeted: inspect compact front-door changes and relevant live deltas, filter directory listings before displaying them, expand exact sections as needed, and avoid exhaustive corpus reads or repeated routine verification. Once the strategic decision is concrete, leave a concise actionable handoff; let the Vice Director carry routine integration forward. Astra may perform indispensable mathematical integration during its reasoning, but should not spend the pass executing the surrounding maintenance work unless the user specifically requests it.
+
 ### Independent locality escape
 
 A deliberately isolated Independent conversation may still be used when locality escape is valuable. Its information boundary is an experimental choice, not another durable state subsystem. Mathematics that becomes durable enters the same GitHub record and ordinary trust model.
