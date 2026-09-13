@@ -1,12 +1,12 @@
 # Missing proofs (temporary)
 
-## R3
+The non-conjectural proof gaps from this worklist have been repaired in the authoritative Supabase state:
 
-For three distinct vertices, an ordered triple is tight exactly when its complete reversal is bad.
+- R3 → P1120 (foundational axiom certificate; pending independent review)
+- R685 → P1121 (full finite-classification proof; pending independent review)
+- R893 → P1122 (definition/consequence proof; pending independent review)
 
-## R685
-
-Retain the accepted crossed five-cell frame R665/R667 with D={q_2,q_{m-2}}, W=H-D, and cells G_0=Q[0,1], G_1=Q[3,m-3], G_2=Q[m-1,m], G_3={a,c}, G_4={b,z}. Let T be an exact two-cover of W with sigma_G(T)=0 and c_X(T) in {2,3}, and work in the monotone branch of accepted R671, i.e. outside the explicit R435 reverse-state, reverse-trimer/contact, or vertex-simple tight-cycle outputs. Take the contracted forest F_T WITH its cell labels, rather than up to the R670 quotient by permutation of the three Q labels and interchange of the two X labels; a configuration is by definition its labelled edge set, and a rail reading is displayed monotone in Q when the rail carries at least two Q-blocks. Then F_T is exactly one of 43 labelled configurations: 25 with c_X=2 and 18 with c_X=3, distributed over the six R670 shapes as A:6, B:4, C:12, D:3 (all c_X=2) and E:12, F:6 (all c_X=3). Writing each configuration as its two rails, the complete list is: (A) [G0 | G3-G1-G2-G4], [G0 | G4-G1-G2-G3], [G1 | G3-G0-G2-G4], [G1 | G4-G0-G2-G3], [G2 | G3-G0-G1-G4], [G2 | G4-G0-G1-G3]; (B) [G0-G1-G3-G2 | G4], [G0-G1-G4-G2 | G3], [G0-G3-G1-G2 | G4], [G0-G4-G1-G2 | G3]; (C) [G0-G1-G3 | G2-G4], [G0-G1-G4 | G2-G3], [G0-G2-G3 | G1-G4], [G0-G2-G4 | G1-G3], [G0-G3 | G1-G2-G4], [G0-G3 | G4-G1-G2], [G0-G4 | G1-G2-G3], [G0-G4 | G3-G1-G2], [G1-G3 | G4-G0-G2], [G1-G4 | G3-G0-G2], [G2-G3 | G4-G0-G1], [G2-G4 | G3-G0-G1]; (D) [G0-G1 | G3-G2-G4], [G0-G2 | G3-G1-G4], [G1-G2 | G3-G0-G4]; (E) [G0 | G1-G3-G2-G4], [G0 | G1-G4-G2-G3], [G0 | G3-G1-G4-G2], [G0 | G4-G1-G3-G2], [G0-G3-G1-G4 | G2], [G0-G3-G2-G4 | G1], [G0-G4-G1-G3 | G2], [G0-G4-G2-G3 | G1], [G1 | G3-G0-G4-G2], [G1 | G4-G0-G3-G2], [G2 | G3-G0-G4-G1], [G2 | G4-G0-G3-G1]; (F) [G0-G3 | G1-G4-G2], [G0-G3-G1 | G2-G4], [G0-G3-G2 | G1-G4], [G0-G4 | G1-G3-G2], [G0-G4-G1 | G2-G3], [G0-G4-G2 | G1-G3]. Every Q-Q adjacency occurring in this list is one of G_0G_1, G_1G_2, G_0G_2, realized respectively by the named transitions u q_3, q_{m-3} s, u s of R671, so the list is consistent with R671; in particular the shape (B) sublist is exactly the four configurations R671 derives by hand, an independent confirmation of that step. Moreover, in the monotone branch the internal order of every Q block is forced to be the original Q order, so T is completely determined by its labelled configuration together with the internal orientation of each of the two X-dimer blocks; hence the entire residue is at most 172 explicitly named ordered rail pairs. Finally, every seam-tightness condition that can distinguish these configurations involves only the twelve named vertices q_0, q_1, q_3, q_4, q_{m-4}, q_{m-3}, q_{m-1}, q_m, a, b, c, z, because interior triples of a Q block are subpath triples of Q and are automatically tight. Consequently the whole c_X in {2,3} minimum five-cell residue is one fixed finite local problem, uniformly in m>=9, with m in {6,7,8} contributing only finitely many degenerate coincidences among those twelve names.
+The only remaining proofless entries below are explicitly conjectural in Supabase and therefore are not proof obligations.
 
 ## R888
 
@@ -15,7 +15,3 @@ Conjecture. Every finite Strong Level-(1) boundary tournament whose comparison o
 ## R892
 
 Every finite 3-uniform boundary tournament has a spanning cover by at most two directed tight paths.
-
-## R893
-
-A fully directed hypergraph has edges that are ordered lists of distinct vertices. An r-graph is an r-uniform hypergraph, and an r-digraph is an r-uniform fully directed hypergraph. For k<=r!, a k-orientation of an r-graph G is an r-digraph G' on the same vertex set such that each edge e of G has exactly k orderings appearing as edges of G'. An (r,k)-tournament is a k-orientation of the complete r-graph. An interval in a list is a consecutive sublist; an r-interval has size r. A directed tight path is an r-digraph whose vertices admit a linear ordering in which every r-interval is an edge; a directed tight cycle is defined analogously using a cyclic ordering. An r-uniform fully directed hypergraph G is a boundary tournament if for every ordered (r-2)-tuple (v_1,...,v_{r-2}) of distinct vertices and distinct u,w outside it, exactly one of (u,v_1,...,v_{r-2},w) and (w,v_1,...,v_{r-2},u) is an edge. Hence every r-uniform boundary tournament is an (r,r!/2)-tournament. An edge-ordered hypergraph is a hypergraph whose edge set is linearly ordered. A monotone path in an edge-ordered r-uniform hypergraph is a tight-style vertex sequence v_1...v_k whose consecutive r-edges occur in increasing order in the edge ordering. The altitude alt(H) is the maximum number of vertices in a monotone path of H.
