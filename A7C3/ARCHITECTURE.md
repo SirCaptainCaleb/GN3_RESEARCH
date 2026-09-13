@@ -67,6 +67,8 @@ Before doing new mathematics after such a re-entry, refresh the live information
 - inspect relevant `#a7c3-workspace` roots and threads for newer mathematical findings, leading audit tags, corrections, provisional dependencies, or concurrent developments affecting the line;
 - when audit state matters, identify the oldest unaudited mathematical workspace root, which is the current chronological audit frontier.
 
+**Synchronization is silent housekeeping, not a research finding.** Do not post a Slack root saying that you synchronized, initialized, read the current files, resumed, chose a subtask, are beginning an investigation, or intend to inspect something. If synchronization produces no new mathematical or control fact, post nothing. If it exposes a new mathematical fact, trust change, contradiction, or strategic consequence, post that fact directly rather than narrating the synchronization that found it.
+
 Do not rely on remembered guidance labels, remembered result status, or a previously valid dependency merely because it remains in conversation context. Fresh control information, current GitHub state, and audit status attached to the relevant mathematical finding outrank stale local plans.
 
 This applies to Researchers, Directors, Integrators, Auditors / Repairers, and any other continuing worker. Specialized information boundaries may restrict what a worker can inspect, but do not waive synchronization against permitted sources.
@@ -162,12 +164,14 @@ Slack is an attention surface, not a second durable record. Its purpose is to ex
 Permanent channels:
 
 - `#a7c3-control` — low-volume changes that can redirect or invalidate current work: Director guidance, quarantines, architecture changes, major strategic pivots, and other control-plane deltas.
-- `#a7c3-workspace` — mathematics happening now that another active Researcher could plausibly use or act on: discoveries, partial arguments, useful failures, questions, cross-worker observations, audit status, interestingness nominations, provisional dependencies, and notices that durable mathematics was written to GitHub.
+- `#a7c3-workspace` — mathematics happening now that another active Researcher could plausibly use or act on: precise findings, concrete partial arguments, useful failures, exact mathematical questions, cross-worker mathematical observations, audit status, interestingness nominations, and provisional dependencies.
 - `#a7c3-lab` — lower-pressure ephemeral research chatter worth retaining: motivated conjectures, speculative connections, constructions or examples that may generalize, counterexample intuitions, half-formed abstractions, and other unexpected mathematical talk that does not yet belong in control, workspace, or GitHub.
 
 If a finding should change what another active Researcher does now, put it in `#a7c3-workspace`. If a trust failure redirects the team or invalidates active dependencies, also surface that consequence in `#a7c3-control`. Otherwise `#a7c3-lab` is the default home for interesting but non-operational chatter.
 
-Short exploratory arguments may live entirely in Slack. Once an argument becomes substantial, attracts dependent work, or repeatedly has to be reconstructed, give it one coherent GitHub development with an explicit provisional status when appropriate, and have Slack point there. Do not maintain independently evolving proof bodies in both places. Audited reusable results still move to their proper canonical result location, with the surviving statement and proof linked from the originating Slack thread.
+Canonical GitHub publication is not itself a new workspace finding. Put the canonical path or persistence notice in the thread of the mathematical root it documents. If writing the durable version reveals a genuinely new mathematical, trust, or control fact, post that new fact in the appropriate channel rather than posting “written to GitHub” as a standalone update.
+
+Short exploratory arguments may live entirely in Slack. Once an argument becomes substantial, attracts dependent work, or repeatedly has to be reconstructed, give it one coherent GitHub development with an explicit provisional status when appropriate, and have Slack point there from the relevant mathematical thread. Do not maintain independently evolving proof bodies in both places. Audited reusable results still move to their proper canonical result location, with the surviving statement and proof linked from the originating Slack thread.
 
 Temporary campaign channels are allowed when one campaign would genuinely overwhelm the main workspace channel.
 
@@ -178,6 +182,14 @@ A Slack root message should maximize valuable attention. Treat root space as a s
 For a mathematical finding, the root should contain **the finding itself expressed as a precise mathematical statement**. It should not merely name the topic, summarize the proof, or describe what the worker did. **Precision outranks brevity. A long mathematical sentence is preferable to a shorter but ambiguous headline.**
 
 Put the proof, construction, derivation, interpretation guidelines, caveats, examples, supporting computations, proposed actions, routing detail, provisional-dependency declaration, canonical GitHub pointer, and local discussion in the thread under that root. Threading is assumed: do not waste headline space on phrases such as “proof in thread” or “details in thread.”
+
+#### No status roots
+
+`#a7c3-workspace` is not a progress feed. Never create a workspace root whose substance is that a worker synchronized, initialized, resumed, read files, claimed or chose a task, is starting or continuing an investigation, plans to inspect a case, made a commit, persisted a document, completed bookkeeping, or has no new result yet. Likewise, do not post “I am working on X” or “next I will try Y” merely to advertise activity.
+
+A useful test is: **if the worker identity and activity narration are removed, does the root still state a mathematical fact, obstruction, counterexample, reduction, exact question, conjecture, or trust-relevant correction that could change another researcher’s reasoning?** If not, it does not belong as a workspace root.
+
+Plans and progress belong in the worker's own conversation unless they contain a team-relevant control fact. Persistence pointers, proof details, and tactical follow-up belong in the thread of an actual mathematical finding. If an operational status root is accidentally posted and contains no unique mathematics, remove it rather than leaving it in the live stream or audit frontier. If useful mathematical material exists in its replies, preserve that material under the appropriate mathematical root or durable development before deleting the replies and then the root.
 
 In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture, optionally preceded by one leading audit tag and optionally followed by `(INTERESTING)`. In `#a7c3-control`, the root is the exact guidance, quarantine, trust change, architecture change, or strategic redirection. In `#a7c3-lab`, the root is the precise provisional observation, conjecture, construction, example, analogy, or counterexample intuition.
 
