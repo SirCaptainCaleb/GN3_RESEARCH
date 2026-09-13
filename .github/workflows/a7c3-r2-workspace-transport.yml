@@ -25,9 +25,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD^)" = "813c6d1e081cf9d773d0af948f492422a507fae7"
-          test "$(git rev-parse HEAD^:A7C3/WORKSPACE/D1)" = "1dc90adec5e9c9a71746fe3354d98d98d248882c"
-          test "$(git rev-parse HEAD^:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
+          git merge-base --is-ancestor 813c6d1e081cf9d773d0af948f492422a507fae7 HEAD
+          test "$(git rev-parse 813c6d1e081cf9d773d0af948f492422a507fae7:A7C3/WORKSPACE/D1)" = "1dc90adec5e9c9a71746fe3354d98d98d248882c"
+          test "$(git rev-parse 813c6d1e081cf9d773d0af948f492422a507fae7:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
+          test "$(git rev-parse HEAD:A7C3/WORKSPACE/D1)" = "1dc90adec5e9c9a71746fe3354d98d98d248882c"
+          test "$(git rev-parse HEAD:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
 
       - name: Fetch authoritative Supabase snapshot through GitHub OIDC
         shell: bash
@@ -35,9 +37,29 @@ jobs:
           set -euo pipefail
           oidc_url="${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=a7c3-migration"
           token="$(curl -fsSL -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" "$oidc_url" | python -c 'import json,sys; print(json.load(sys.stdin)["value"])')"
-          curl -fsSL -H "Authorization: Bearer ${token}" \
+          TOKEN="$token" python - <<'PY'
+          import base64, json, os
+          p=os.environ['TOKEN'].split('.')[1]
+          p += '=' * (-len(p) % 4)
+          payload=json.loads(base64.urlsafe_b64decode(p))
+          keys=('sub','ref','workflow_ref','event_name','repository')
+          print('OIDC_CLAIMS', json.dumps({k:payload.get(k) for k in keys}, sort_keys=True))
+          PY
+          status="$(curl -sS -w '%{http_code}' -H "Authorization: Bearer ${token}" \
             https://hhfflgtfcunpywdsisae.supabase.co/functions/v1/a7c3-migration-export \
-            -o /tmp/a7c3-snapshot.json
+            -o /tmp/a7c3-snapshot.json)"
+          echo "EXPORT_HTTP_STATUS=$status"
+          if [ "$status" != 200 ]; then
+            python - <<'PY'
+          import json
+          try:
+              p=json.load(open('/tmp/a7c3-snapshot.json', encoding='utf-8'))
+              print('EXPORT_ERROR', p.get('error'))
+          except Exception as e:
+              print('EXPORT_ERROR_UNPARSEABLE', type(e).__name__)
+          PY
+            exit 22
+          fi
           python - <<'PY'
           import json, os
           s=json.load(open('/tmp/a7c3-snapshot.json', encoding='utf-8'))
@@ -50,7 +72,7 @@ jobs:
         run: |
           set -euo pipefail
           python - <<'PY'
-          import hashlib, json, re, shutil
+          import hashlib, json, shutil
           from pathlib import Path
 
           assigned = ['D2','D3','D4','D5','D8','D9','D10','D11','D12','D13','D14','D15','D16','D19','D20','D21','D22','D23','D24','D25','D27']
@@ -64,6 +86,8 @@ jobs:
               raise RuntimeError(f'active workspace drift: {active}')
           if len(docs) != 23:
               raise RuntimeError(f'expected 23 active workspaces, got {len(docs)}')
+          if int(by_agent['D1']['current_revision_id']) != 194:
+              raise RuntimeError(f'D1 source drift: {by_agent["D1"]["current_revision_id"]}')
           if int(by_agent['D17']['current_revision_id']) != 814:
               raise RuntimeError(f'D17 source drift: {by_agent["D17"]["current_revision_id"]}')
           print('D1_SOURCE_CURRENT', by_agent['D1']['current_revision_id'])
@@ -104,8 +128,8 @@ jobs:
           git config user.name "A7C3 Migration Researcher 2"
           git config user.email "a7c3-migration-r2@users.noreply.github.com"
           git add -A -- A7C3/WORKSPACE/D2 A7C3/WORKSPACE/D3 A7C3/WORKSPACE/D4 A7C3/WORKSPACE/D5 A7C3/WORKSPACE/D8 A7C3/WORKSPACE/D9 A7C3/WORKSPACE/D10 A7C3/WORKSPACE/D11 A7C3/WORKSPACE/D12 A7C3/WORKSPACE/D13 A7C3/WORKSPACE/D14 A7C3/WORKSPACE/D15 A7C3/WORKSPACE/D16 A7C3/WORKSPACE/D19 A7C3/WORKSPACE/D20 A7C3/WORKSPACE/D21 A7C3/WORKSPACE/D22 A7C3/WORKSPACE/D23 A7C3/WORKSPACE/D24 A7C3/WORKSPACE/D25 A7C3/WORKSPACE/D27
-          test "$(git rev-parse HEAD^:A7C3/WORKSPACE/D1)" = "$(git rev-parse HEAD:A7C3/WORKSPACE/D1)"
-          test "$(git rev-parse HEAD^:A7C3/WORKSPACE/D17)" = "$(git rev-parse HEAD:A7C3/WORKSPACE/D17)"
+          test "$(git rev-parse HEAD:A7C3/WORKSPACE/D1)" = "1dc90adec5e9c9a71746fe3354d98d98d248882c"
+          test "$(git rev-parse HEAD:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
           git diff --cached --quiet && { echo 'No assigned workspace changes'; exit 1; }
           git commit -m "Migrate remaining active A7C3 workspaces byte-exactly"
           git push origin HEAD:migration-r2-workspaces
