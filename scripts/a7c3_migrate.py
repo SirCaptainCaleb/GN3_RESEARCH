@@ -1,31 +1,30 @@
-import json, sys, re, shutil, hashlib
+import hashlib, json, re, subprocess, sys
 from pathlib import Path
 
 ROOT = Path.cwd()
 SNAPSHOT = Path('/tmp/a7c3-snapshot.json')
-with SNAPSHOT.open(encoding='utf-8') as f:
-    S = json.load(f)
+S = json.loads(SNAPSHOT.read_text(encoding='utf-8'))
 
-def write_utf8(path: Path, text: str):
+
+def write_exact(path: Path, text: str):
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(text)
 
-def git_blob_sha(text: str) -> str:
+
+def blob_sha_text(text: str) -> str:
     b = text.encode('utf-8')
     return hashlib.sha1(b'blob ' + str(len(b)).encode() + b'\0' + b).hexdigest()
 
-def nonempty(v):
-    return v is not None and v != ''
 
-def add_section(parts, heading, value):
-    if not nonempty(value):
-        return
-    parts.append(f'## {heading}\n')
-    parts.append(value)
-    if not value.endswith('\n'):
-        parts.append('\n')
-    parts.append('\n')
+def blob_sha_file(path: Path) -> str:
+    b = path.read_bytes()
+    return hashlib.sha1(b'blob ' + str(len(b)).encode() + b'\0' + b).hexdigest()
+
+
+def git(*args):
+    return subprocess.check_output(['git', *args], text=True).strip()
+
 
 docs = S['workspaces']['documents']
 drevs = {int(r['id']): r for r in S['workspaces']['revisions']}
@@ -36,22 +35,21 @@ proofs = {int(p['id']): p for p in S['results']['proofs']}
 links = {}
 for pc in S['results']['proof_conclusions']:
     links.setdefault(int(pc['claim_revision_id']), []).append(pc)
+claim_by_rid = {int(c['current_revision_id']): c for c in claims}
 
 if len(docs) != 23:
     raise RuntimeError(f'expected 23 active workspaces, got {len(docs)}')
-d17 = [d for d in docs if d['agent_id'] == 'D17']
-if len(d17) != 1 or int(d17[0]['current_revision_id']) != 814:
-    raise RuntimeError(f'D17 frontier drifted: {d17}')
-if len(drevs) != 22:
-    raise RuntimeError(f'expected 22 non-D17 current workspace revisions, got {len(drevs)}')
-if len(claims) != 708 or len(revs) != 708 or len(health) != 708:
-    raise RuntimeError(f'current result cardinality drift: claims={len(claims)} revs={len(revs)} health={len(health)}')
+if len(claims) != 709 or len(revs) != 709 or len(health) != 709:
+    raise RuntimeError(f'current result cardinality drift claims={len(claims)} revs={len(revs)} health={len(health)}')
+if set(claim_by_rid) != set(revs):
+    raise RuntimeError('claim/current-revision mismatch')
 
-def choose_proof(rid, link_map=links, proof_map=proofs):
+
+def choose_proof(rid):
     candidates = []
-    for pc in link_map.get(rid, []):
-        p = proof_map.get(int(pc['proof_id']))
-        if p and nonempty(p.get('proof_text')):
+    for pc in links.get(rid, []):
+        p = proofs.get(int(pc['proof_id']))
+        if p and p.get('proof_text') not in (None, ''):
             candidates.append((pc, p))
     if not candidates:
         return None
@@ -65,150 +63,139 @@ def choose_proof(rid, link_map=links, proof_map=proofs):
         return (bool(p.get('dependency_complete')), bool(p.get('is_valid')), p.get('review_status') == 'accepted', int(p['id']))
     return max(candidates, key=rank)[1]
 
+
 selected = {rid: choose_proof(rid) for rid in revs}
-with_text = sum(1 for p in selected.values() if p is not None)
-if with_text != 703:
-    raise RuntimeError(f'expected 703 current results with proof text, got {with_text}')
+proofless = sorted(rid for rid, p in selected.items() if p is None)
+if proofless != [888, 892]:
+    raise RuntimeError(f'proofless set drifted: {proofless}')
 
-claim_by_rid = {int(c['current_revision_id']): c for c in claims}
-if set(claim_by_rid) != set(revs):
-    raise RuntimeError('claim/current-revision mismatch')
 
-def classification(rid, claim, rev, h):
+def cls(rid):
+    c, r, h = claim_by_rid[rid], revs[rid], health[rid]
     if bool(h.get('usable')):
-        return 'USABLE/ACTIVE' if claim.get('lifecycle_status') == 'active' else 'USABLE/LEGACY'
-    if rev.get('is_valid') is False or claim.get('lifecycle_status') == 'invalidated':
+        return 'USABLE/ACTIVE' if c.get('lifecycle_status') == 'active' else 'USABLE/LEGACY'
+    if r.get('is_valid') is False or c.get('lifecycle_status') == 'invalidated':
         return 'UNUSABLE/INVALID'
     return 'UNUSABLE/QUARANTINED'
 
-classes = {rid: classification(rid, claim_by_rid[rid], revs[rid], health[rid]) for rid in revs}
-counts = {}
-for cls in classes.values():
-    counts[cls] = counts.get(cls, 0) + 1
-if counts.get('USABLE/ACTIVE', 0) != 272 or counts.get('USABLE/LEGACY', 0) != 287 or sum(v for k, v in counts.items() if k.startswith('UNUSABLE/')) != 149:
-    raise RuntimeError(f'trust classification drift: {counts}')
-if classes.get(5) != 'UNUSABLE/QUARANTINED':
-    raise RuntimeError(f'R5 unexpectedly classified {classes.get(5)}')
 
-def render_result(rid, claim, rev, h, proof, historical=False):
-    expected_agent = f'R{rid}'
-    if rev.get('agent_id') != expected_agent:
-        raise RuntimeError(f'revision {rid} agent_id={rev.get("agent_id")} expected {expected_agent}')
-    parts = [f'# R{rid} — {claim["title"]}\n\n']
-    cls = 'UNUSABLE/QUARANTINED' if historical else classification(rid, claim, rev, h)
-    if cls != 'USABLE/ACTIVE':
-        parts.append(f'**Record status:** `{cls}`')
-        if historical:
-            parts.append(' (preserved historical quarantined revision)')
-        parts.append('\n\n')
-    add_section(parts, 'Statement', rev.get('statement'))
-    add_section(parts, 'Hypotheses', rev.get('hypotheses'))
-    add_section(parts, 'Scope', rev.get('scope'))
-    add_section(parts, 'Applicability', rev.get('applicability'))
-    add_section(parts, 'Persistence', rev.get('persistence'))
-    add_section(parts, 'Exclusions / nonclaims', rev.get('exclusions_nonclaims'))
-    safety_relevant = cls.startswith('UNUSABLE/') or claim.get('lifecycle_status') != 'active' or rev.get('review_status') != 'accepted' or rev.get('is_valid') is False
-    if safety_relevant:
-        notes = []
-        for label, value in [
-            ('Lifecycle', claim.get('lifecycle_status')),
-            ('Lifecycle note', claim.get('lifecycle_note')),
-            ('Curation note', claim.get('curation_note')),
-            ('Validity note', rev.get('validity_note')),
-            ('Review status', rev.get('review_status')),
-            ('Review note', rev.get('review_note')),
-        ]:
-            if nonempty(value):
-                notes.append(f'- **{label}:** {value}')
-        if notes:
-            parts.append('## Record notes\n' + '\n'.join(notes) + '\n\n')
-    parts.append('## Proof\n')
-    if proof is None:
-        parts.append('No preferred proof was present in the authoritative Supabase record.\n')
-    else:
-        parts.append(proof['proof_text'])
-        if not proof['proof_text'].endswith('\n'):
-            parts.append('\n')
-    return ''.join(parts)
+classes = {rid: cls(rid) for rid in revs}
+counts = {k: list(classes.values()).count(k) for k in set(classes.values())}
+expected_counts = {'USABLE/ACTIVE': 272, 'USABLE/LEGACY': 287, 'UNUSABLE/INVALID': 1, 'UNUSABLE/QUARANTINED': 149}
+if counts != expected_counts:
+    raise RuntimeError(f'classification drift: {counts}')
+if classes.get(5) != 'UNUSABLE/QUARANTINED' or classes.get(685) != 'UNUSABLE/INVALID' or classes.get(1026) != 'UNUSABLE/QUARANTINED':
+    raise RuntimeError('critical result classification drift')
+
+
+def render_active(rid):
+    c, r = claim_by_rid[rid], revs[rid]
+    fields = ['statement', 'hypotheses', 'scope', 'applicability', 'persistence', 'exclusions_nonclaims']
+    if any(r.get(x) is None for x in fields):
+        raise RuntimeError(f'R{rid} has NULL active field')
+    p = selected[rid]
+    proof = p['proof_text'] if p is not None else 'No preferred proof was present in the authoritative Supabase record.'
+    return (
+        f'# R{rid} — {c["title"]}\n\n'
+        f'## Statement\n{r["statement"]}\n\n'
+        f'## Hypotheses\n{r["hypotheses"]}\n\n'
+        f'## Scope\n{r["scope"]}\n\n'
+        f'## Applicability\n{r["applicability"]}\n\n'
+        f'## Persistence\n{r["persistence"]}\n\n'
+        f'## Exclusions / nonclaims\n{r["exclusions_nonclaims"]}\n\n'
+        f'## Proof\n{proof}'
+    )
+
+
+def validate_workspaces():
+    by_agent = {d['agent_id']: d for d in docs}
+    if set(by_agent) != {'D1','D2','D3','D4','D5','D8','D9','D10','D11','D12','D13','D14','D15','D16','D17','D19','D20','D21','D22','D23','D24','D25','D27'}:
+        raise RuntimeError('active workspace set drifted')
+    d17 = by_agent['D17']
+    if int(d17['current_revision_id']) != 814:
+        raise RuntimeError(f'D17 frontier drifted to {d17["current_revision_id"]}')
+    if git('rev-parse', 'HEAD:A7C3/WORKSPACE/D17') != '02bc036b1b37a15a9dcd56fa5ad628358aef8b3c':
+        raise RuntimeError('D17 tree mismatch')
+    if blob_sha_file(ROOT/'A7C3/WORKSPACE/D1/CURRENT.md') != '83185e39e61a443be5b7fd92086fe213e68a3bf0':
+        raise RuntimeError('corrected D1 blob mismatch')
+    d1text = (ROOT/'A7C3/WORKSPACE/D1/CURRENT.md').read_text(encoding='utf-8')
+    if '4*(22+2*21)=256' not in d1text or '172 directed-candidate tail is invalid' not in d1text:
+        raise RuntimeError('D1 correction markers missing')
+    for aid, d in by_agent.items():
+        if aid in ('D1', 'D17'):
+            continue
+        r = drevs[int(d['current_revision_id'])]
+        expected = f'# {aid} — {d["title"]}\n\n{r["body"]}'
+        path = ROOT/'A7C3/WORKSPACE'/aid/'CURRENT.md'
+        if not path.is_file() or path.read_text(encoding='utf-8') != expected:
+            raise RuntimeError(f'workspace {aid} differs from live Supabase source')
+    if blob_sha_file(ROOT/'A7C3/WORKSPACE/D2/CURRENT.md') != 'ddadd118057844ca839e8bb5c3da13c5277f5b32':
+        raise RuntimeError('D2 exact blob mismatch')
+    if blob_sha_file(ROOT/'A7C3/WORKSPACE/D3/CURRENT.md') != '075b2825e0331e1f7ef6691c2b9a4d6513c4afbf':
+        raise RuntimeError('D3 exact blob mismatch')
+
+
+def validate_nonactive():
+    legacy = list((ROOT/'A7C3/RESULTS/USABLE/LEGACY').glob('R*.md'))
+    invalid = list((ROOT/'A7C3/RESULTS/UNUSABLE/INVALID').glob('R*.md'))
+    quarantined = list((ROOT/'A7C3/RESULTS/UNUSABLE/QUARANTINED').glob('R*.md'))
+    if len(legacy) != 287 or len(invalid) != 1 or len(quarantined) != 150:
+        raise RuntimeError(f'nonactive counts wrong legacy={len(legacy)} invalid={len(invalid)} quarantined={len(quarantined)}')
+    if blob_sha_file(ROOT/'A7C3/RESULTS/UNUSABLE/INVALID/R685.md') != 'fbed72f56e511d25f3ff03f2cbeea8943d92dd19':
+        raise RuntimeError('R685 invalid record mismatch')
+    if blob_sha_file(ROOT/'A7C3/RESULTS/UNUSABLE/QUARANTINED/R1026.md') != 'de0f938c0e638e3f2487a54c8fd9ac0a07d1fdc2':
+        raise RuntimeError('R1026 quarantined record mismatch')
+    if not (ROOT/'A7C3/RESULTS/UNUSABLE/QUARANTINED/R5.md').is_file() or not (ROOT/'A7C3/RESULTS/UNUSABLE/QUARANTINED/R24.md').is_file():
+        raise RuntimeError('R5/R24 quarantine missing')
+
 
 phase = sys.argv[1]
 if phase == 'workspaces':
-    hashes = {}
-    for d in docs:
-        aid = d['agent_id']
-        if aid == 'D17':
-            continue
-        r = drevs[int(d['current_revision_id'])]
-        content = f'# {aid} — {d["title"]}\n\n' + r['body'] + '\n'
-        dest = ROOT / 'A7C3' / 'WORKSPACE' / aid
-        if dest.exists():
-            shutil.rmtree(dest)
-        write_utf8(dest / 'CURRENT.md', content)
-        hashes[aid] = git_blob_sha(content)
-    print('WORKSPACES', len(hashes), json.dumps(hashes, sort_keys=True))
-elif phase in ('active', 'legacy'):
-    cls = 'USABLE/ACTIVE' if phase == 'active' else 'USABLE/LEGACY'
-    dest = ROOT / 'A7C3' / 'RESULTS' / cls
+    validate_workspaces()
+    print('WORKSPACES PASS 23 active; corrected D1; D17=430-section tree')
+elif phase == 'active':
+    dest = ROOT/'A7C3/RESULTS/USABLE/ACTIVE'
     dest.mkdir(parents=True, exist_ok=True)
-    for old in dest.glob('R*.md'):
-        if re.fullmatch(r'R\d+\.md', old.name):
-            old.unlink()
-    ids = sorted(rid for rid, c in classes.items() if c == cls)
+    for p in dest.glob('R*.md'):
+        if re.fullmatch(r'R\d+\.md', p.name):
+            p.unlink()
+    ids = sorted(rid for rid in revs if classes[rid] == 'USABLE/ACTIVE')
     for rid in ids:
-        write_utf8(dest / f'R{rid}.md', render_result(rid, claim_by_rid[rid], revs[rid], health[rid], selected[rid]))
-    print(phase.upper(), len(ids), ids[0] if ids else None, ids[-1] if ids else None)
+        write_exact(dest/f'R{rid}.md', render_active(rid))
+    print('ACTIVE WRITE', len(ids), ids[0], ids[-1])
+elif phase == 'legacy':
+    validate_nonactive()
+    print('LEGACY PASS 287')
 elif phase == 'unusable':
-    base = ROOT / 'A7C3' / 'RESULTS' / 'UNUSABLE'
-    for old in base.rglob('R*.md'):
-        if re.fullmatch(r'R\d+\.md', old.name):
-            old.unlink()
-    ids = sorted(rid for rid, c in classes.items() if c.startswith('UNUSABLE/'))
-    for rid in ids:
-        cls = classes[rid]
-        write_utf8(ROOT / 'A7C3' / 'RESULTS' / cls / f'R{rid}.md', render_result(rid, claim_by_rid[rid], revs[rid], health[rid], selected[rid]))
-    hs = S['historical_results']
-    hrev = {int(r['id']): r for r in hs['revisions']}
-    hclaim = {int(c['id']): c for c in hs['claims']}
-    hhealth = {int(h['revision_id']): h for h in hs['health']}
-    hproofs = {int(p['id']): p for p in hs['proofs']}
-    hlinks = {}
-    for pc in hs['proof_conclusions']:
-        hlinks.setdefault(int(pc['claim_revision_id']), []).append(pc)
-    if 24 not in hrev:
-        raise RuntimeError('historical R24 missing')
-    r = hrev[24]
-    c = hclaim[int(r['claim_id'])]
-    hp = choose_proof(24, hlinks, hproofs)
-    hh = hhealth.get(24, {'usable': False})
-    if bool(hh.get('usable')):
-        raise RuntimeError('R24 unexpectedly cleared quarantine in health cache')
-    write_utf8(ROOT / 'A7C3' / 'RESULTS' / 'UNUSABLE' / 'QUARANTINED' / 'R24.md', render_result(24, c, r, hh, hp, historical=True))
-    print('UNUSABLE current', len(ids), 'plus historical R24')
+    validate_nonactive()
+    print('UNUSABLE PASS 150 current + historical R24')
 elif phase == 'audit':
-    current = set(revs)
+    validate_workspaces()
+    validate_nonactive()
+    active = list((ROOT/'A7C3/RESULTS/USABLE/ACTIVE').glob('R*.md'))
+    if len(active) != 272:
+        raise RuntimeError(f'active count wrong: {len(active)}')
+    for rid in sorted(r for r in revs if classes[r] == 'USABLE/ACTIVE'):
+        path = ROOT/'A7C3/RESULTS/USABLE/ACTIVE'/f'R{rid}.md'
+        expected = render_active(rid)
+        if not path.is_file() or path.read_text(encoding='utf-8') != expected:
+            raise RuntimeError(f'ACTIVE R{rid} differs from authoritative render')
     found = {}
-    for p in (ROOT / 'A7C3' / 'RESULTS').rglob('R*.md'):
+    for p in (ROOT/'A7C3/RESULTS').rglob('R*.md'):
         m = re.fullmatch(r'R(\d+)\.md', p.name)
-        if not m:
-            continue
-        rid = int(m.group(1))
-        found.setdefault(rid, []).append(str(p.relative_to(ROOT)))
-    dup = {rid: ps for rid, ps in found.items() if len(ps) != 1}
-    missing = sorted(current - set(found))
-    unexpected = sorted(set(found) - current - {24})
-    if dup or missing or unexpected or 24 not in found:
-        raise RuntimeError(f'result audit failed dup={dup} missing={missing} unexpected={unexpected} has24={24 in found}')
-    if len(found) != 709:
-        raise RuntimeError(f'expected 709 durable result ids (708 current + R24), got {len(found)}')
-    numeric_d17 = [p for p in (ROOT / 'A7C3' / 'WORKSPACE' / 'D17').glob('*.md') if re.match(r'^\d{3}-', p.name)]
-    if len(numeric_d17) != 430:
-        raise RuntimeError(f'D17 section count drift: {len(numeric_d17)}')
-    for d in docs:
-        aid = d['agent_id']
-        if aid == 'D17':
-            continue
-        if not (ROOT / 'A7C3' / 'WORKSPACE' / aid / 'CURRENT.md').is_file():
-            raise RuntimeError(f'missing workspace {aid}/CURRENT.md')
-    print('AUDIT PASS workspaces=23 current_results=708 historical_quarantined=1 d17_sections=430 classes=', json.dumps(counts, sort_keys=True))
+        if m:
+            found.setdefault(int(m.group(1)), []).append(str(p.relative_to(ROOT)))
+    dup = {rid: paths for rid, paths in found.items() if len(paths) != 1}
+    missing = sorted(set(revs) - set(found))
+    unexpected = sorted(set(found) - set(revs) - {24})
+    if dup or missing or unexpected or 24 not in found or len(found) != 710:
+        raise RuntimeError(f'result audit failed count={len(found)} dup={dup} missing={missing} unexpected={unexpected} has24={24 in found}')
+    d17_sections = len(list((ROOT/'A7C3/WORKSPACE/D17').glob('[0-9][0-9][0-9]-*.md')))
+    if d17_sections != 430:
+        raise RuntimeError(f'D17 section count {d17_sections}')
+    temp = (ROOT/'A7C3/WORKSPACE/MISSING_PROOFS_TEMP.md').read_text(encoding='utf-8')
+    if '## R888' not in temp or '## R892' not in temp:
+        raise RuntimeError('temporary proof-gap note is stale/missing')
+    print('AUDIT PASS workspaces=23 active=272 legacy=287 current_unusable=150 historical_R24=1 durable_ids=710 proofless=R888,R892 D17_sections=430')
 else:
-    raise RuntimeError('unknown phase')
+    raise RuntimeError(f'unknown phase {phase}')
