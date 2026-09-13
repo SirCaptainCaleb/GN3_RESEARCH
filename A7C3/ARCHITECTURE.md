@@ -2,30 +2,36 @@
 
 ## Core principle
 
-**GitHub is the research record. Slack is the research room.**
+**GitHub is the durable research record. Slack is the complete live research surface.**
 
-GitHub contains the durable mathematical world: audited reusable results, the small subset of especially interesting mathematics, coherent developments, the current proof spine, durable obligations, strategy, architecture, and references. Slack carries live coordination, discoveries in motion, provisional results awaiting audit, tactical discussion, warnings, speculative observations, and changes whose value depends on recency.
+GitHub contains the durable mathematical world: audited reusable results, the small subset of especially interesting mathematics, coherent durable developments, the current proof spine, durable obligations, strategy, architecture, and references. Slack carries everything a currently active worker must notice in order to remain current: new mathematical findings, provisional results awaiting audit, audit outcomes, corrections, quarantines, strategic changes, architecture changes, major durable-state changes, and concurrent mathematics that can affect another worker's reasoning.
+
+A worker must never have to inspect GitHub commit history, compare `main` against an earlier SHA, or browse recently changed files merely to discover what happened while they were working. **GitHub is authority for durable content; Slack is authority for live deltas.** Any GitHub change that could invalidate, redirect, supersede, or materially strengthen active work must also be surfaced in the appropriate Slack channel.
 
 Git history is the revision and archive mechanism. Do not recreate database-style revision objects, worker state, queues, semantic tag systems, dependency databases, or other lifecycle machinery unless actual use later proves they are necessary.
 
 GitHub `main` is the self-sufficient durable authority for A7C3. The old Supabase database is gone. It is not a source, fallback, restoration target, or reconciliation target. A citation that points only to the vanished database is not a proof source. If an essential proof is absent from GitHub, reconstruct it from available GitHub or Slack material when feasible, or mark the dependency unresolved. Do not silently replace a missing proof by a database identifier.
 
-Ordinary nonmigration durable work goes directly to `main`. A new standalone theorem-level claim discovered in Slack should normally remain there while unaudited and be promoted to GitHub immediately when audited. GitHub should receive the final audited mathematical version rather than a sequence of provisional theorem variants. Evolving workspace mathematics may be durable before theorem-level audit when clearly presented as development rather than as a trusted reusable result.
+Ordinary new mathematical claims are born in Slack. A standalone theorem-level claim should remain there while unaudited and be promoted to GitHub immediately when audited. GitHub should receive the final audited mathematical version rather than a sequence of provisional theorem variants. Existing provisional workspace developments may remain and may be maintained when necessary for coherent durable integration, but **GitHub must not become a second live feed**: every substantive live mathematical delta must have a corresponding Slack finding or thread pointer, and no active worker should need to discover it by scanning `main`.
+
+Durable `main` may also advance for architecture, proof-spine, strategy, obligation, reference, repair, integration, and repository-maintenance work. Such movement is not itself a research synchronization event. If one of those changes matters to active reasoning, announce the actual change in Slack. If it does not matter to active reasoning, workers need not care that `main` moved.
 
 Temporary branches are exceptional tools for work that genuinely benefits from isolation or review. They are not the default research workflow.
 
 ## Canonical entrance and initialization
 
-**This file is the single canonical entry point for A7C3. There is no separate bootstrap layer.** A fresh worker initializes from current GitHub `main` by reading, in order:
+**This file is the single canonical entry point for A7C3. There is no separate bootstrap layer.** A fresh worker initializes once from current GitHub `main` by reading, in order:
 
-1. `ARCHITECTURE.md` — this file; how the project works.
-2. `PROOF_SPINE.md` — where the proof currently stands.
-3. `OBLIGATIONS.md` — durable unresolved closure contracts.
-4. `STRATEGY/CURRENT.md` — the current strategic interpretation and ambitious targets.
+1. `ARCHITECTURE.md` - this file; how the project works.
+2. `PROOF_SPINE.md` - where the durable proof currently stands.
+3. `OBLIGATIONS.md` - durable unresolved closure contracts.
+4. `STRATEGY/CURRENT.md` - the durable current strategic interpretation and ambitious targets.
 
-Then inspect pinned/current `#a7c3-control` for live changes newer than GitHub and catch up on the relevant recent `#a7c3-workspace` roots and threads, including audit tags, corrections, provisional dependencies, and concurrent mathematics that could affect the chosen line.
+Then inspect current `#a7c3-control` and catch up on the relevant recent `#a7c3-workspace` roots and threads, including audit tags, corrections, provisional dependencies, and concurrent mathematics that could affect the chosen line.
 
-When the proof spine or current strategy points to a coherent active development, read that descriptive development as the next entry point before excavating its ancestors. Historical D17 section numbers, SV identifiers, and similar labels remain valuable provenance and search keys, but they should not force a fresh researcher to reconstruct an active argument from fragments.
+The GitHub front door provides the durable baseline. Slack provides every live delta after that baseline. A fresh worker may of course read the current GitHub versions during initialization, but should not infer that future GitHub changes must be polled in order to stay current.
+
+When the proof spine or current strategy points to a coherent active development, read that development as the next durable entry point before excavating its ancestors. Historical D17 section numbers, SV identifiers, and similar labels remain valuable provenance and search keys, but they should not force a fresh researcher to reconstruct an active argument from fragments.
 
 After orientation, expand only the mathematics needed for the chosen attack. Do not preload the whole corpus merely because it exists.
 
@@ -33,45 +39,62 @@ After orientation, expand only the mathematics needed for the chosen attack. Do 
 
 A fresh Researcher should be able to orient from four small durable surfaces:
 
-- `ARCHITECTURE.md` — **How do we work?**
-- `PROOF_SPINE.md` — **Where does the proof currently stand?**
-- `OBLIGATIONS.md` — **What durable mathematical requirements remain open?**
-- `STRATEGY/CURRENT.md` — **What are we trying to do about them now?**
+- `ARCHITECTURE.md` - **How do we work?**
+- `PROOF_SPINE.md` - **Where does the durable proof currently stand?**
+- `OBLIGATIONS.md` - **What durable mathematical requirements remain open?**
+- `STRATEGY/CURRENT.md` - **What is the durable strategic picture?**
 
 These files have different jobs. Do not collapse them into one giant status document.
 
 ### Proof spine
 
-`PROOF_SPINE.md` is the front-door closure map. It should expose the current reduction chain, surviving major branches, genuine bottlenecks, load-bearing results or workspace sections, and important fences. It is orientation, not mathematical authority. The linked result or workspace proof is authoritative.
+`PROOF_SPINE.md` is the durable front-door closure map. It should expose the current reduction chain, surviving major branches, genuine bottlenecks, load-bearing results or workspace sections, and important fences. It is orientation, not mathematical authority. The linked result or workspace proof is authoritative.
 
 The spine must distinguish established reductions from constructions that require additional hypotheses, unresolved physical-realization or implication steps, and conjectural targets. Do not draw an unresolved implication as if it were an established arrow merely because the numerical bookkeeping is attractive. In particular, matching cardinality is not a physical path cover, numerical improvement is not automatically a valid global descent, local geometry is not a spanning absorber, and existence of a path is not existence in a prescribed order.
+
+A proof-spine change that materially changes what active researchers should believe or attack must also be posted to `#a7c3-control`. GitHub stores the durable map; Slack announces the live change.
 
 ### Obligations
 
 `OBLIGATIONS.md` contains durable mathematical closure contracts, not tasks. An obligation has a target, scope, and meaningful closure condition. It has no owner or required traversal order. Researchers may attack it directly, strengthen it, bypass it through a parent theorem, or make it irrelevant by changing the proof architecture.
 
+A creation, closure, narrowing, or reinterpretation of an obligation that materially changes current research must be posted to `#a7c3-control`. No worker should discover an obligation change only because they happened to re-open the file.
+
 ### Strategy
 
 `STRATEGY/CURRENT.md` is the Director's durable current interpretation of the campaign: important goals, promising representations, ambitious near-term targets, low-value routes to prune, and the rationale connecting them to the proof spine and obligations. It is not a chronological guidance ledger. Replace it when strategy changes; Git remembers the old version.
 
-Slack `#a7c3-control` carries the immediate strategic delta. GitHub carries the durable state that results from it.
+Every strategic change that can alter current research must be posted to `#a7c3-control`, whether or not it is simultaneously written to GitHub. **Slack is the live strategic feed; GitHub is the durable strategic snapshot.** A researcher should never need to poll `STRATEGY/CURRENT.md` to discover whether the Director changed direction.
 
 ## Synchronize before resuming
 
 A worker's local conversation state is never sufficient authority for resuming research. **Every re-entry into an existing research conversation is a synchronization boundary.** When the user says `Continue`, `resume`, `keep going`, or anything equivalent, interpret that as **synchronize with the live project, then continue from the resulting frontier**.
 
-Before doing new mathematics after such a re-entry, refresh the live information that could invalidate, redirect, supersede, or strengthen the current line. At minimum:
+For an already initialized worker, live synchronization is Slack-first and normally Slack-complete:
 
-- refresh relevant current GitHub `main`, including the proof spine, current strategy and obligations when they bear on the work, and any durable mathematics about to be used;
-- inspect `#a7c3-control` for newer guidance, quarantines, trust changes, architecture changes, or strategic redirections;
-- inspect relevant `#a7c3-workspace` roots and threads for newer mathematical findings, leading audit tags, corrections, provisional dependencies, or concurrent developments affecting the line;
+- inspect `#a7c3-control` for newer guidance, quarantines, trust changes, architecture changes, proof-spine changes, obligation changes, strategic redirections, or other durable-state changes that could affect active reasoning;
+- inspect relevant recent `#a7c3-workspace` roots and threads for newer mathematical findings, audit tags, corrections, provisional dependencies, or concurrent developments affecting the line;
 - when audit state matters, identify the oldest unaudited mathematical workspace root, which is the current chronological audit frontier.
 
-**Synchronization is silent housekeeping, not a research finding.** Do not post a Slack root saying that you synchronized, initialized, read the current files, resumed, chose a subtask, are beginning an investigation, or intend to inspect something. If synchronization produces no new mathematical or control fact, post nothing. If it exposes a new mathematical fact, trust change, contradiction, or strategic consequence, post that fact directly rather than narrating the synchronization that found it.
+**Do not treat movement of GitHub `main` as a synchronization trigger.** Do not interrupt mathematical work merely because another commit appeared. Do not scan recent commits to infer what concurrent researchers discovered. Concurrent research is surfaced in Slack.
 
-Do not rely on remembered guidance labels, remembered result status, or a previously valid dependency merely because it remains in conversation context. Fresh control information, current GitHub state, and audit status attached to the relevant mathematical finding outrank stale local plans.
+Re-read or refetch GitHub only when there is an actual durable reason, for example:
 
-This applies to Researchers, Directors, Integrators, Auditors / Repairers, and any other continuing worker. Specialized information boundaries may restrict what a worker can inspect, but do not waive synchronization against permitted sources.
+- Slack reports a relevant audited result and the worker needs its canonical proof;
+- Slack reports a relevant change to strategy, obligations, proof spine, architecture, quarantine, or another durable surface;
+- the worker is about to rely on a durable file whose exact current form matters;
+- the worker is about to modify a durable file and must avoid overwriting concurrent edits;
+- a Slack pointer explicitly identifies a newly durable source that must be read.
+
+Even in these cases, Slack should tell the worker **that** a relevant durable change happened and where to look. GitHub should not be searched for an unknown live update.
+
+During sustained concurrent research, periodically check recent relevant Slack activity. The purpose is mathematical collision avoidance and cross-pollination: notice when another researcher proves, refutes, strengthens, or occupies a nearby line. There is no corresponding requirement to periodically poll GitHub commits.
+
+**Synchronization is silent housekeeping, not a research finding.** Do not post a Slack root saying that you synchronized, initialized, read files, resumed, chose a subtask, are beginning an investigation, or intend to inspect something. If synchronization produces no new mathematical or control fact, post nothing. If it exposes a new mathematical fact, trust change, contradiction, or strategic consequence, post that fact directly rather than narrating the synchronization that found it.
+
+Do not rely on remembered guidance labels, remembered result status, or a previously valid dependency merely because it remains in conversation context. Fresh Slack control information and the audit status attached to the relevant mathematical finding outrank stale local plans. When exact durable proof content is needed, the current canonical GitHub file remains authoritative for that content.
+
+This applies to Researchers, Directors, Integrators, Auditors / Repairers, and any other continuing worker. Specialized information boundaries may restrict what a worker can inspect, but do not waive synchronization against permitted Slack surfaces.
 
 ## Durable mathematics
 
@@ -99,13 +122,13 @@ A7C3/
 
 Most mathematical work is scratch work. That is normal. A long campaign produces many local observations, short chains of reasoning, abandoned routes, calculations, partial constructions, and lemmas that were useful once but do not deserve permanent foreground attention.
 
-`WORKSPACE/` is the durable notebook layer. It contains coherent evolving developments, constructions, exact local mechanisms, useful failed branches, limitations, and enough old mathematical texture to rifle through when necessary. Persistence here is valuable even when future workers will rarely read most of it.
+Slack is the normal home of live provisional research. `WORKSPACE/` is the durable notebook layer. It contains coherent developments, constructions, exact local mechanisms, useful failed branches, limitations, and enough old mathematical texture to rifle through when necessary.
 
-New or substantially revised active developments should normally be organized around the mathematical question or coherent argument and use a descriptive filename. A single document is preferred when it is enough; create a small topic folder only when the mathematics genuinely needs one. Historical identifiers such as D17 sections and SV numbers remain searchable provenance inside the development rather than mandatory primary navigation.
+New or substantially revised durable developments should normally be organized around the mathematical question or coherent argument and use a descriptive filename. A single document is preferred when it is enough; create a small topic folder only when the mathematics genuinely needs one. Historical identifiers such as D17 sections and SV numbers remain searchable provenance inside the development rather than mandatory primary navigation.
 
-An active development should open with a compact orientation in ordinary prose: the exact setting, the strongest current conclusion, which parts are audited or provisional or conditional or unresolved, the actual missing step, and the few load-bearing proofs a reader should expand. The body should contain enough connected mathematics that a researcher can enter the argument without reconstructing it from many ancestor files or Slack fragments. Link reusable canonical results instead of duplicating their proofs.
+An active durable development should open with a compact orientation in ordinary prose: the exact setting, the strongest current conclusion, which parts are audited or provisional or conditional or unresolved, the actual missing step, and the few load-bearing proofs a reader should expand. The body should contain enough connected mathematics that a researcher can enter the argument without reconstructing it from many ancestor files or Slack fragments. Link reusable canonical results instead of duplicating their proofs.
 
-A provisional GitHub development is legitimate working mathematics. Its location in GitHub does not confer audited status. Reorganization is not certification and must preserve hypotheses, exceptional branches, known limitations, physical witnesses, path orders, and every other trust qualification that matters.
+Existing provisional GitHub developments remain legitimate historical or integrative notebook material, but their presence in GitHub does not confer audited status and they must not function as hidden live updates. Any new substantive provisional mathematical content that another active researcher could need must be surfaced through a Slack root or the thread of an existing mathematical root. No one should have to compare workspace files between commits to discover a new claim.
 
 `RESULTS/` is narrower. A result is a standalone audited mathematical interface worth reusing outside the immediate scratch chain that produced it. Correctness alone does not make a result important.
 
@@ -133,11 +156,11 @@ Do **not** keep duplicate canonical copies of an interesting result in both `INT
 
 ### Ordinary result locations
 
-- `RESULTS/INTERESTING/` — valid, audited, safe, and specially curated for mathematical importance or creativity.
-- `RESULTS/USABLE/ACTIVE/` — valid, audited, safe, and currently useful, but not specially curated as interesting.
-- `RESULTS/USABLE/LEGACY/` — valid, audited, and safe, but superseded, off the current route, or otherwise lower priority.
-- `RESULTS/UNUSABLE/QUARANTINED/` — live repair targets that must not be used as trusted premises.
-- `RESULTS/UNUSABLE/INVALID/` — known-invalid mathematics retained because the failure itself is durably useful.
+- `RESULTS/INTERESTING/` - valid, audited, safe, and specially curated for mathematical importance or creativity.
+- `RESULTS/USABLE/ACTIVE/` - valid, audited, safe, and currently useful, but not specially curated as interesting.
+- `RESULTS/USABLE/LEGACY/` - valid, audited, and safe, but superseded, off the current route, or otherwise lower priority.
+- `RESULTS/UNUSABLE/QUARANTINED/` - live repair targets that must not be used as trusted premises.
+- `RESULTS/UNUSABLE/INVALID/` - known-invalid mathematics retained because the failure itself is durably useful.
 
 Old is not the same as unsafe, and ordinary is not the same as unimportant. The interesting tier exists to expose diamonds, not to demean the notebook around them.
 
@@ -159,19 +182,31 @@ A theorem-level claim cannot acquire trusted audited status while an unaudited d
 
 ## Slack
 
-Slack is an attention surface, not a second durable record. Its purpose is to expose the most valuable current facts with very low reading cost while allowing supporting detail to remain attached and searchable in threads.
+Slack is the project's complete live-update surface. It is not the durable proof archive, but it **is** the place an active worker watches to know what has changed.
 
 Permanent channels:
 
-- `#a7c3-control` — low-volume changes that can redirect or invalidate current work: Director guidance, quarantines, architecture changes, major strategic pivots, and other control-plane deltas.
-- `#a7c3-workspace` — mathematics happening now that another active Researcher could plausibly use or act on: precise findings, concrete partial arguments, useful failures, exact mathematical questions, cross-worker mathematical observations, audit status, interestingness nominations, and provisional dependencies.
-- `#a7c3-lab` — lower-pressure ephemeral research chatter worth retaining: motivated conjectures, speculative connections, constructions or examples that may generalize, counterexample intuitions, half-formed abstractions, and other unexpected mathematical talk that does not yet belong in control, workspace, or GitHub.
+- `#a7c3-control` - low-volume live changes that can redirect or invalidate current work: Director guidance, quarantines, architecture changes, proof-spine changes, obligation changes, major durable strategy changes, trust changes, and other control-plane deltas.
+- `#a7c3-workspace` - mathematics happening now that another active Researcher could plausibly use or act on: precise findings, concrete partial arguments, useful failures, exact mathematical questions, cross-worker mathematical observations, audit status, interestingness nominations, and provisional dependencies.
+- `#a7c3-lab` - lower-pressure ephemeral research chatter worth retaining: motivated conjectures, speculative connections, constructions or examples that may generalize, counterexample intuitions, half-formed abstractions, and other unexpected mathematical talk that does not yet belong in control, workspace, or GitHub.
 
-If a finding should change what another active Researcher does now, put it in `#a7c3-workspace`. If a trust failure redirects the team or invalidates active dependencies, also surface that consequence in `#a7c3-control`. Otherwise `#a7c3-lab` is the default home for interesting but non-operational chatter.
+### No GitHub-only live deltas
 
-Canonical GitHub publication is not itself a new workspace finding. Put the canonical path or persistence notice in the thread of the mathematical root it documents. If writing the durable version reveals a genuinely new mathematical, trust, or control fact, post that new fact in the appropriate channel rather than posting “written to GitHub” as a standalone update.
+If a change could cause another active worker to change direction, distrust a premise, use a new theorem, re-read a durable source, or update their strategic model, it must be represented in Slack.
 
-Short exploratory arguments may live entirely in Slack. Once an argument becomes substantial, attracts dependent work, or repeatedly has to be reconstructed, give it one coherent GitHub development with an explicit provisional status when appropriate, and have Slack point there from the relevant mathematical thread. Do not maintain independently evolving proof bodies in both places. Audited reusable results still move to their proper canonical result location, with the surviving statement and proof linked from the originating Slack thread.
+Examples:
+
+- a new mathematical result goes to `#a7c3-workspace` before audit;
+- an audit verdict edits the original workspace root and records reasoning in its thread;
+- the resulting canonical GitHub path is linked from that same thread;
+- a quarantine or repair that changes trust is surfaced in `#a7c3-control` when active work may depend on it;
+- a material strategy, obligation, proof-spine, or architecture change is surfaced in `#a7c3-control`, even when GitHub is updated in the same pass.
+
+A worker who has kept up with relevant Slack should not later discover, by chance, a GitHub commit that materially changes what they should have been doing.
+
+Canonical GitHub publication is not itself a new mathematical finding. For an audited result, put the canonical path or persistence notice in the thread of the mathematical root it documents. The root plus audit tag already supplies the live event. If durable publication reveals an additional mathematical, trust, or control fact, post that fact separately in the appropriate channel.
+
+Short exploratory arguments may live entirely in Slack. Once an audited or otherwise durably integrated argument becomes substantial, attracts dependent work, or repeatedly has to be reconstructed, give it one coherent GitHub development and point to it from the relevant Slack thread. Do not maintain independently evolving proof bodies in both places.
 
 Temporary campaign channels are allowed when one campaign would genuinely overwhelm the main workspace channel.
 
@@ -183,15 +218,15 @@ For a mathematical finding, the root should contain **the finding itself express
 
 Put the proof, construction, derivation, interpretation guidelines, caveats, examples, supporting computations, proposed actions, routing detail, provisional-dependency declaration, canonical GitHub pointer, and local discussion in the thread under that root. Threading is assumed: do not waste headline space on phrases such as “proof in thread” or “details in thread.”
 
-#### No status roots
+### No status roots
 
 `#a7c3-workspace` is not a progress feed. Never create a workspace root whose substance is that a worker synchronized, initialized, resumed, read files, claimed or chose a task, is starting or continuing an investigation, plans to inspect a case, made a commit, persisted a document, completed bookkeeping, or has no new result yet. Likewise, do not post “I am working on X” or “next I will try Y” merely to advertise activity.
 
-A useful test is: **if the worker identity and activity narration are removed, does the root still state a mathematical fact, obstruction, counterexample, reduction, exact question, conjecture, or trust-relevant correction that could change another researcher’s reasoning?** If not, it does not belong as a workspace root.
+A useful test is: **if the worker identity and activity narration are removed, does the root still state a mathematical fact, obstruction, counterexample, reduction, exact question, conjecture, or trust-relevant correction that could change another researcher's reasoning?** If not, it does not belong as a workspace root.
 
 Plans and progress belong in the worker's own conversation unless they contain a team-relevant control fact. Persistence pointers, proof details, and tactical follow-up belong in the thread of an actual mathematical finding. If an operational status root is accidentally posted and contains no unique mathematics, remove it rather than leaving it in the live stream or audit frontier. If useful mathematical material exists in its replies, preserve that material under the appropriate mathematical root or durable development before deleting the replies and then the root.
 
-In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture, optionally preceded by one leading audit tag and optionally followed by `(INTERESTING)`. In `#a7c3-control`, the root is the exact guidance, quarantine, trust change, architecture change, or strategic redirection. In `#a7c3-lab`, the root is the precise provisional observation, conjecture, construction, example, analogy, or counterexample intuition.
+In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture, optionally preceded by one leading audit tag and optionally followed by `(INTERESTING)`. In `#a7c3-control`, the root is the exact guidance, quarantine, trust change, architecture change, durable strategic or obligation change, or strategic redirection. In `#a7c3-lab`, the root is the precise provisional observation, conjecture, construction, example, analogy, or counterexample intuition.
 
 If a thread produces a genuinely new mathematical finding or control fact, create a new root headline for that new fact rather than burying it in the old thread.
 
@@ -207,9 +242,9 @@ Audit is metadata and discussion attached to a mathematical finding, not a separ
 
 When a Slack mathematical root is audited, edit that same root to **prefix** exactly one audit status:
 
-- `[PASS]` — the precise root statement survives audit as written.
-- `[FAIL]` — the root statement is not safe to use as a mathematical premise.
-- `[PASS_ADJUSTED]` — a valid nearby statement survives after correction, narrowing, or another substantive adjustment.
+- `[PASS]` - the precise root statement survives audit as written.
+- `[FAIL]` - the root statement is not safe to use as a mathematical premise.
+- `[PASS_ADJUSTED]` - a valid nearby statement survives after correction, narrowing, or another substantive adjustment.
 
 Audit reasoning belongs in the existing thread. For `[PASS_ADJUSTED]`, the thread must state the exact surviving adjustment. If the old root wording would be materially misleading, edit the mathematical statement itself to the precise surviving version and retain `[PASS_ADJUSTED]` at the beginning.
 
@@ -234,23 +269,25 @@ If an audited result passes, prefix `[PASS]`. If it survives only after correcti
 - `[PASS]` goes promptly to its appropriate canonical durable GitHub result location with the audited statement and proof.
 - `[PASS_ADJUSTED]` goes promptly to GitHub using only the final corrected statement and proof.
 - A passing result whose `(INTERESTING)` nomination is endorsed goes canonically to `RESULTS/INTERESTING/`.
-- `[FAIL]` does not enter usable results. Preserve an important invalidation or fence in `RESULTS/UNUSABLE/INVALID/` or the relevant `WORKSPACE/` development when its failure itself has durable value.
+- `[FAIL]` does not enter usable results. Preserve an important invalidation or fence in `RESULTS/UNUSABLE/INVALID/` or the relevant durable development when its failure itself has lasting value.
 
 For every `[PASS]` or `[PASS_ADJUSTED]` root, after the canonical GitHub file exists, add a compact thread reply of the form:
 
 `Canonical GitHub result: A7C3/RESULTS/.../R....md`
 
-The pointer belongs in the thread, not the root, so the live stream remains mathematically tidy. The GitHub file is the durable mathematical authority; the Slack thread is the bridge from the live finding to that authority. If the canonical result later moves, for example into `RESULTS/INTERESTING/`, update the thread pointer rather than leaving a stale path.
+The pointer belongs in the thread, not the root, so the live stream remains mathematically tidy. The GitHub file is the durable mathematical authority; the Slack thread is the bridge from the live finding to that authority. If the canonical result later moves, update the thread pointer rather than leaving a stale path.
 
-If the audited result changes the proof spine, obligations, strategy, trust of existing durable results, or other current durable mathematics, update those surfaces in the same integration pass.
+If the audited result changes the proof spine, obligations, strategy, trust of existing durable results, or other current durable mathematics, update those durable surfaces in the same integration pass **and post the resulting live change to `#a7c3-control` when it affects active work**. This keeps Slack complete without turning persistence notices into duplicate workspace findings.
 
 The Slack thread may retain exploratory proof, audit discussion, counterexamples, correction history, and its place in the recent research stream. GitHub contains the final durable mathematical object.
 
-## Slack is provisional
+## Slack is provisional, but complete for live awareness
 
-Slack is provisional by default. `#a7c3-lab` is especially provisional. Unaudited workspace mathematics may feed later provisional research when its dependence is explicit, but it does not thereby become trusted. Before a standalone theorem-level result enters the trusted GitHub result corpus, its exact statement and every unaudited dependency it relies on must have survived audit in the form actually used, whether through ordinary chronological review or a legitimate targeted review.
+Slack mathematics is provisional by default until audited. `#a7c3-lab` is especially provisional. Unaudited workspace mathematics may feed later provisional research when its dependence is explicit, but it does not thereby become trusted. Before a standalone theorem-level result enters the trusted GitHub result corpus, its exact statement and every unaudited dependency it relies on must have survived audit in the form actually used, whether through ordinary chronological review or a legitimate targeted review.
 
-Architecture, routing rules, and channel-use conventions belong in GitHub `ARCHITECTURE.md`, not in Slack.
+“Slack is provisional” does **not** mean “Slack may omit durable changes.” Trust and persistence are separate questions. Slack is the complete place to learn what changed live; GitHub is the complete place to retrieve the durable accepted object.
+
+Architecture, routing rules, and channel-use conventions belong durably in GitHub `ARCHITECTURE.md`, but any architecture change that can alter worker behavior must also be announced in `#a7c3-control`.
 
 There is no formal Researcher-return object. Leave a concise live handoff only when another conversation actually needs one.
 
@@ -260,10 +297,10 @@ The default agent is a plain **Researcher**: an autonomous mathematician allowed
 
 Most former roles are better understood as activities or cognitive mantles, not persistent worker identities:
 
-- **Explorer** — sustain a concrete attack.
-- **Elevator** — seek parent theorems, invariants, quotients, normal forms, representation changes, or better targets.
-- **Integrator** — understand how new and old proof mechanisms fit together; recover stronger consumers, latent witnesses, hierarchy, supersession, fences, shortcuts, compression, or simplification.
-- **Moonshotting** — deliberately attack a target whose full success would close the theorem or a major branch.
+- **Explorer** - sustain a concrete attack.
+- **Elevator** - seek parent theorems, invariants, quotients, normal forms, representation changes, or better targets.
+- **Integrator** - understand how new and old proof mechanisms fit together; recover stronger consumers, latent witnesses, hierarchy, supersession, fences, shortcuts, compression, or simplification.
+- **Moonshotting** - deliberately attack a target whose full success would close the theorem or a major branch.
 
 Mantles change posture, not permission. They are not stored as project state.
 
@@ -281,17 +318,19 @@ The Director's recurring intellectual cycle is: assess the real proof state, ele
 
 Guidance does **not** assign individual Researchers to tasks. Researchers choose opportunistically within the current target landscape. Overlap is allowed when useful.
 
-#### Conserve scarce Astra capacity
+All guidance that could affect current work belongs in `#a7c3-control`. The durable strategy file may be updated simultaneously or afterward, but GitHub must not contain a strategic redirection that active workers are expected to discover by polling it.
+
+### Conserve scarce Astra capacity
 
 By the user's direction, Astra is reserved for high-value strategic judgment: assess the genuine frontier, elevate to a stronger parent theorem or representation, attempt consequential moonshots, and choose a small number of team-wide focuses. Routine integration, consolidation, link maintenance, active-development migration, and follow-through belong by default to the Integrator and Vice Director.
 
 The Vice Director maintains the proof spine and current strategy after research waves, reconciles durable pointers and audit status, expands supporting dependencies, and performs ordinary synthesis and bookkeeping. The Integrator keeps coherent arguments enterable, preserves compatibility pointers while reorganizing active material, and ensures that one authoritative development survives any move. They prepare a compact Astra brief only when strategic judgment is genuinely needed: what changed, the exact surviving bottleneck, decisive evidence and trust qualifications, and the few questions needing Astra judgment. Existing GitHub and Slack surfaces suffice; no new registry or workflow layer is required.
 
-Astra still synchronizes with current authority and reads load-bearing proofs needed for its own conclusions. Keep that retrieval targeted: inspect compact front-door changes and relevant live deltas, filter directory listings before displaying them, search before bulk reading, expand exact sections as needed, and avoid exhaustive corpus reads or repeated routine verification. Once the strategic decision is concrete, leave a concise actionable handoff; let the Vice Director carry routine integration forward. Astra may perform indispensable mathematical integration during its reasoning, but should not spend the pass executing the surrounding maintenance work unless the user specifically requests it.
+Astra still synchronizes with live Slack and reads load-bearing GitHub proofs needed for its own conclusions. Keep durable retrieval targeted: inspect compact front-door material and sources explicitly implicated by live deltas, search before bulk reading, expand exact sections as needed, and avoid exhaustive corpus reads or repeated routine verification. Once the strategic decision is concrete, post the actionable live guidance in `#a7c3-control`; let the Vice Director carry routine durable integration forward.
 
 ### Independent locality escape
 
-A deliberately isolated Independent conversation may still be used when locality escape is valuable. Its information boundary is an experimental choice, not another durable state subsystem. Mathematics that becomes durable enters the same GitHub record and ordinary trust model.
+A deliberately isolated Independent conversation may still be used when locality escape is valuable. Its information boundary is an experimental choice, not another durable state subsystem. Mathematics that becomes durable enters the same GitHub record and ordinary trust model. Its permitted live synchronization surfaces should be stated explicitly when isolation is intentional.
 
 ## Promotion and integration
 
@@ -299,15 +338,15 @@ Promotion should be boring.
 
 - A standalone reusable theorem is promoted to `RESULTS/` immediately after its audit completes and its unaudited dependencies, if any, have been settled successfully in the form used.
 - An audited result endorsed as interesting is promoted directly to `RESULTS/INTERESTING/`.
-- Connected evolving proof architecture goes in the appropriate `WORKSPACE/` development.
-- A change in the closure map updates `PROOF_SPINE.md`.
-- A stable unresolved requirement updates `OBLIGATIONS.md`.
-- A strategic reinterpretation updates `STRATEGY/CURRENT.md`.
+- Connected durable proof architecture goes in the appropriate `WORKSPACE/` development.
+- A change in the closure map updates `PROOF_SPINE.md` and is surfaced in control if active work is affected.
+- A stable unresolved requirement updates `OBLIGATIONS.md` and is surfaced in control if active work is affected.
+- A strategic reinterpretation updates `STRATEGY/CURRENT.md` and is also posted in control.
 - A trust failure moves or edits the durable result itself and is surfaced in `#a7c3-control` when active work could be affected.
 
 Integration is mathematical research, not clerical filing. A result is not fully integrated merely because it was cited or placed in the right folder. Integration asks how its proof mechanism changes what can now be proved.
 
-At natural checkpoints, ask whether the latest work changes the proof spine, obligations, strategy, or trust landscape rather than merely extending the same local machinery. Persist coherent durable advances where they belong and continue doing mathematics from the resulting frontier.
+At natural checkpoints, ask whether the latest work changes the proof spine, obligations, strategy, or trust landscape rather than merely extending the same local machinery. Persist coherent durable advances where they belong. Whenever the answer matters to active researchers, surface the resulting delta in Slack so no one must detect it from GitHub.
 
 ### Incremental active-argument reorganization
 
@@ -323,19 +362,27 @@ For each argument selected for cleanup:
 6. when a path changes and existing references may depend on it, leave a short forwarding stub at the old path naming the new canonical location and containing no competing proof;
 7. verify that the new entry point is understandable on its own, its relevant links work, and every mathematical qualification survives.
 
-At every checkpoint, untouched historical material and reorganized material must remain jointly usable, older paths and identifiers must remain discoverable, and each coherent argument must have one clearly identified authoritative location. No researcher should need the rest of the migration to finish. A short handoff in an existing project surface should say what changed, what remains, and how to continue incrementally; do not create a permanent migration registry.
+At every checkpoint, untouched historical material and reorganized material must remain jointly usable, older paths and identifiers must remain discoverable, and each coherent argument must have one clearly identified authoritative location. No researcher should need the rest of the migration to finish.
 
 Prefer coherent commits that contain a move, inbound-link changes, and compatibility pointers together. If concurrent edits touch the same material, refresh and reconcile before writing. Never silently strengthen a theorem, drop a hypothesis, erase an exceptional branch, or turn a provisional development into a trusted result in the name of readability. If consolidation exposes a proof problem, retain the precise unresolved qualification and route it for review.
 
+Reorganization is normally not a live mathematical event. Do not clutter Slack with file-motion narration. But if reorganization changes the authoritative path of material another active worker may need, add the pointer in the existing relevant thread; if it changes trust, interpretation, or active strategy, surface that actual change in the appropriate live channel.
+
 ## Concurrency
 
-Concurrency is handled structurally rather than through a custom locking system. Researchers normally work in separate result files or mathematical regions; shared synthesis documents should be edited carefully when active concurrent work overlaps. Ordinary Git conflict handling is preferable to research-specific locks or sessions.
+Concurrency is coordinated through Slack, not by watching GitHub.
 
-Direct work on `main` is normal. Use temporary branches only when isolation has concrete value.
+Researchers should periodically inspect recent relevant `#a7c3-workspace` activity during sustained work so they notice nearby results, failures, corrections, and overlapping attacks. They should also notice relevant `#a7c3-control` changes. This is the ordinary mechanism for staying abreast of concurrent research.
+
+Researchers normally work in separate mathematical regions. Shared synthesis documents should be edited carefully when active concurrent work overlaps. Ordinary Git conflict handling is preferable to research-specific locks or sessions.
+
+**A new commit on `main` is not, by itself, evidence that the live research frontier changed.** Do not abandon or restart a line merely because `main` advanced. If the frontier changed, Slack should say so. Refetch GitHub when Slack points to a relevant durable change, when an exact durable premise is needed, or before writing the same durable file.
+
+Direct work on `main` is normal for authorized durable changes. Use temporary branches only when isolation has concrete value.
 
 ## Minimality of the system
 
-There is deliberately no hidden second research operating system behind GitHub:
+There is deliberately no hidden second research operating system behind GitHub and Slack:
 
 - no database required for correctness after cutover, and no vanished-database fallback;
 - no persistent worker registry;
@@ -347,8 +394,9 @@ There is deliberately no hidden second research operating system behind GitHub:
 - no separate audit ledger;
 - no duplicate interesting-result mirror;
 - no durable Slack mirror;
-- no explicit revision database.
+- no explicit revision database;
+- no requirement to poll GitHub commits for live research state.
 
-The filesystem is the model. Git is the history. Search is the retrieval layer. Slack is the room full of mathematicians.
+The filesystem is the durable model. Git is the history. Search is the durable retrieval layer. **Slack is the live room full of mathematicians and the complete stream of changes that active mathematicians are expected to notice.**
 
-When actual use reveals a better structure, change the architecture in Git. The architecture is allowed to evolve.
+When actual use reveals a better structure, change the architecture in Git and announce any behavior-changing architectural delta in `#a7c3-control`. The architecture is allowed to evolve.
