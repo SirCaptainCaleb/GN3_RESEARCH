@@ -4,51 +4,65 @@ This is the durable current strategic interpretation. Slack `#a7c3-control` may 
 
 ## Current strategic diagnosis
 
-G36 has now contracted one step further. The long unique-augmenter corridor remains delivery machinery, not the parent obstruction. Its surviving source-gate wall packet originally had two displayed outputs: a direct source-visible P4 or a same-oriented source-dimer collision. D17 section 427 (`g36-source-dimer-collision-always-p4`) eliminates that distinction at the level that matters for the campaign: the collision arm itself produces a literal source-visible P4, and that result has passed live audit.
+The G36/G37 contraction has sharpened again. The long unique-augmenter corridor remains delivery machinery, not the parent obstruction. D17.427 and its audit collapse the source-dimer collision arm to literal source-visible P4 geometry, so the common parent object remains a P4 born at the old source gate with its source and fixed-wall ancestry intact.
 
-The single live parent object is therefore the **source-gate P4 packet**: an exact P4 born at the old source gate while still carrying old gate orientation, source-only block order, anchors `A,C`, source spoke `t`, the fixed far wall/boundary, and low-transition defect ancestry.
+The newest worker wave identifies the next loss of information more precisely. By the earlier SV112947 contraction, strict old-source descent survives until the **exact K2,2 two-crossing zipper frontier**. The unresolved interface is therefore not an arbitrary source-visible P4. It is the **source-gate zipper packet**:
 
-The direct-wall subcase is already strongly typed. D17 section 430 shows that it yields either a Hamilton P5 on the exact five-set `{A,C,t,b,d}` or a twin-anchor wall in which both anchors share the same physical wall prefix/suffix. D17 section 429 records a complementary terminal wall-dimer normal form for the collision geometry. These are consumers and normal forms for the same packet, not reasons to reopen separate programs.
+- the certified source-anchor/P4 geometry born at the old source gate;
+- old gate orientation and source-only block order;
+- anchors `A,C` and source spoke `t`;
+- the actual selected far dimer / fixed far boundary;
+- low-transition defect ancestry; and
+- the exact K2,2 two-crossing zipper at the first numerical loss.
 
-The present bottleneck is no longer to classify how the source wall fails. It is to **absorb the born P4 into the global smallest-counterexample closure**.
+This sharpening matters because one natural shortcut is now ruled out. A worker produced an explicit retained-data boundary-tournament realization satisfying the D17.430 five-set star-cycle data but having no Hamilton P5 whose endpoint is the fixed far-wall vertex. Therefore D17.430 does **not** license endpoint-controlled far-wall insertion by itself. Any absorber that needs such an endpoint must use additional source-gate ancestry or a different splice geometry.
+
+There is also a strong positive local signal. In the P5-free twin-wall residue, the current live worker argument forces both source anchors to saturate the actual selected far dimer, with dual polarity in the OUT and IN orientations. This is strategically valuable because it rotates the direct twin-wall residue onto the same physical far boundary already carried by the packet. It remains provisional Slack mathematics until promoted to GitHub, so durable proofs must promote it before depending on it.
+
+The present bottleneck is consequently to absorb the **source-gate K2,2 zipper packet** into the global smallest-counterexample closure.
 
 ## Primary moonshot
 
-**Prove a source-gate P4 absorption theorem.**
+**Prove a source-gate zipper absorption theorem.**
 
-Take the exact P4 produced by the G36 packet, retaining its full ancestry rather than treating it as an anonymous four-vertex path. From that packet force either:
+At the first exact K2,2 two-crossing loss, retain the full source-gate packet rather than anonymizing it. Force either:
 
 1. strict old-source transition descent on `G = H - {A,C}`; or
 2. a spanning two-cover of the whole tournament `H`.
 
-The strongest desirable statement accepts both the original direct-P4 arm and the collision-born P4 arm through their common source-gate provenance, without requiring a generic P4 taxonomy. A theorem of this strength would consume the current O4 bottleneck rather than add another local species.
+The best theorem should explain why the two zipper crossings cannot simultaneously survive smallest-counterexample criticality once the old gate orientation, source order, far boundary, and ancestry are retained.
+
+A particularly attractive candidate is an exchange-or-cover principle controlled by the relative orientation between the two source-side anchor choices and the two zipper crossing choices. This is currently a conjectural mechanism, not an established theorem. The decisive test is whether the existing provenance determines that pairing, or whether a reflected realization can preserve all exported data while swapping the seam-safe pairing.
 
 ## Team-level focuses
 
 These are focuses, not assignments. Researchers choose opportunistically, and overlap is welcome.
 
-### 1. Absorb the exact source-labelled P4, not an anonymous P4
+### 1. Attack the exact K2,2 zipper, not generic P4 insertion
 
-Work proof-aware from the born path together with the old gate orientation, source block order, anchors, source spoke, fixed far boundary, and defect ancestry. Search the usable theorem bank and D-workspaces for splice, transition-descent, endpoint-wall, Hamilton-five, or anchor-saturation consumers that can use those labels. The success criterion is descent or a full-H two-cover, not a finer local classification.
+Treat the first-loss zipper as the live numerical obstruction. Carry the physical crossing positions and the full born-at-gate provenance. Search for a one-shot exchange, quotient, parity/orientation invariant, or complementary two-cover argument that makes simultaneous survival of both crossings impossible.
 
-In the direct arm, exploit D17.430 aggressively: either the exact five-set already has a Hamilton P5, or the residue has two anchor-labelled P4s sharing one physical wall prefix/suffix. Those are much stronger inputs than “there exists a P4.”
+Every proposed splice must keep an exact turn ledger. Adjacency availability is not enough: the existing audit shows that an apparently local insertion can create an uncertified predecessor seam and exceed the two-seam budget.
 
-### 2. Normalize only when normalization buys closure
+### 2. Use ancestry as a discriminator, not decoration
 
-The passed live audit of `SV117618` supplies useful fallback geometry for rotating a source-born P4 toward the actual selected far dimer while preserving source ancestry. Treat that as a fallback bridge, not a parallel research program, and promote it to GitHub before any durable proof relies on it.
+The next high-value structural question is whether the older D17.419 X-mated-versus-singleton ancestry split constrains the zipper interface. Test whether both ancestry types can realize the first-loss K2,2 configuration with the same exported gate and far-wall data. If one ancestry class forbids the reflected pairing, or if the two classes force complementary outcomes, the campaign may collapse without a generic insertion theorem.
 
-Do not grow a generic P4 taxonomy, generic collision compiler, or payment/replay layer merely to rename the packet. Any normalization should end at a known consumer or visibly reduce the global obstruction.
+Do not assume that conclusion in advance. The ancestry split is a candidate discriminator whose value must be proved at the exact zipper interface.
 
-### 3. Seek a parent invariant that consumes the whole packet at once
+### 3. Exploit typed local geometry only when it buys global closure
 
-The best route may bypass case-by-case P4 insertion entirely. Look for a source-gate transition invariant, quotient, exchange principle, or five-vertex insertion theorem under which both the Hamilton-five and twin-anchor residues force the same global contradiction. Prefer one theorem explaining why a source-labelled wall cannot coexist with smallest-counterexample criticality over a chain of increasingly ornate local lemmas.
+D17.430 remains valuable because its direct arm is strongly typed: Hamilton-five geometry or a twin-anchor wall. But it is an input to the zipper absorber, not an endpoint-insertion theorem. The new twin-wall far-dimer saturation finding is especially promising because it aligns both source anchors with the actual selected far dimer; promote it before durable dependence.
+
+The passed live audit of `SV117618` remains a secondary normalization bridge. Use it only when it lands at a known zipper consumer or visibly reduces the obstruction, and promote it to GitHub before durable use.
 
 ## Active fences
 
 - `R24` and `R5` remain frozen/quarantined and are not premises.
-- The pair-deletion/reflection route represented by live `SV118046` is fenced. Audit found that its claimed two-seam insertion window omits the outer predecessor seam, leaving up to three uncertified interface seams. Do not use that route until the ledger is repaired.
-- Corridor transport, seam taxonomy, generic blocker classification, whole-component search, and generic payment/replay are lower-value unless they directly consume the exact source-gate P4 packet.
-- D17.429 and D17.430 are contractions of the live packet, not invitations to fork independent wall-dimer or generic Hamilton-five campaigns.
+- The pair-deletion/reflection route represented by live `SV118046` remains fenced. Its claimed two-seam insertion window omits the outer predecessor seam and can leave up to three uncertified interface seams.
+- D17.430 does not imply a Hamilton P5 with the fixed far-wall vertex as an endpoint. The explicit countermodel fences any proof that silently chooses such an endpoint.
+- The relative-orientation exchange mechanism at the K2,2 zipper is conjectural until proved.
+- Generic P4 taxonomy, generic blocker classification, corridor refinement, whole-component search, and payment/replay are lower-value unless they directly consume the exact source-gate zipper packet.
 
 ## Durable side obligation
 
