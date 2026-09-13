@@ -4,7 +4,7 @@
 
 **GitHub is the research record. Slack is the research room.**
 
-GitHub contains the durable mathematical world: results, proofs, coherent developments, the current proof spine, durable obligations, strategic interpretation, architecture, and references. Slack carries live coordination, discoveries in motion, tactical discussion, warnings, and changes whose value depends on recency.
+GitHub contains the durable mathematical world: results, proofs, coherent developments, the current proof spine, durable obligations, strategic interpretation, architecture, and references. Slack carries live coordination, discoveries in motion, tactical discussion, warnings, speculative observations, and changes whose value depends on recency.
 
 Git history is the revision and archive mechanism. Do not recreate database-style revision objects, worker state, queues, semantic tag systems, or lifecycle machinery unless actual use later proves they are necessary.
 
@@ -101,12 +101,15 @@ Exact result references inside proofs remain valuable, but the architecture does
 Permanent channels:
 
 - `#a7c3-control` — low-volume changes that can redirect or invalidate current work: Director guidance, quarantines, architecture changes, major strategic pivots, and other control-plane deltas.
-- `#a7c3-workspace` — mathematics happening now: discoveries, partial arguments, useful failures, questions, cross-worker observations, and notices that durable mathematics was written to GitHub.
+- `#a7c3-workspace` — mathematics happening now that another active Researcher could plausibly use or act on: discoveries, partial arguments, useful failures, questions, cross-worker observations, and notices that durable mathematics was written to GitHub.
 - `#a7c3-audit` — adversarial verification, suspected gaps, dependency failures, repair work, invalidations, and clearances.
+- `#a7c3-lab` — lower-pressure ephemeral research chatter worth retaining: interesting observations, motivated conjectures, speculative connections, constructions or examples that may generalize, counterexample intuitions, half-formed abstractions, and other unexpected mathematical talk that does not yet belong in control, workspace, audit, or GitHub.
+
+The routing threshold matters. If a finding should change what another active Researcher does now, put it in `#a7c3-workspace`. If it changes trust or correctness, put it in `#a7c3-audit`. If it redirects the team, put it in `#a7c3-control`. Otherwise, if it is interesting enough that future workers may want to rediscover it, `#a7c3-lab` is the default home.
 
 Temporary campaign channels are allowed when one campaign would genuinely overwhelm the main workspace channel.
 
-Slack is provisional by default. If durable mathematics will rely on a Slack finding, promote that finding to GitHub first or together with the dependent mathematics.
+Slack is provisional by default. `#a7c3-lab` is especially provisional: it is a searchable memory of interesting chatter, not a theorem registry or source of authority. If durable mathematics will rely on a Slack finding, promote that finding to GitHub first or together with the dependent mathematics. If a lab observation becomes strategically or operationally important, surface it again in the appropriate higher-signal Slack channel rather than assuming workers monitor the lab continuously.
 
 Post during active work when another active Researcher could plausibly change what they are doing if they knew the finding. Use threads for discussion. If a thread produces a materially new finding, surface it as a new root message rather than burying it.
 
