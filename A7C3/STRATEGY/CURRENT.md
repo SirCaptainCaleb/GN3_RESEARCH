@@ -1,73 +1,82 @@
 # A7C3 Current Strategy
 
-This is the durable current strategic interpretation. Slack `#a7c3-control` may contain newer tactical deltas; when a change becomes the durable project understanding, update this file.
+## G39 — Astra: source-complement absorption with adaptive source-pair choice
 
-## Current strategic diagnosis
+Director pass: 2026-09-13. This replaces the G38 strategic interpretation, while retaining its exact zipper and source-wall machinery as tools. O4 and O6 remain open.
 
-The G36/G37 contraction has sharpened again. The long unique-augmenter corridor remains delivery machinery, not the parent obstruction. D17.427 and its audit collapse the source-dimer collision arm to literal source-visible P4 geometry, so the common parent object remains a P4 born at the old source gate with its source and fixed-wall ancestry intact.
+## Assessment
 
-The newest worker wave identifies the next loss of information more precisely. By the earlier SV112947 contraction, strict old-source descent survives until the **exact K2,2 two-crossing zipper frontier**. The unresolved interface is therefore not an arbitrary source-visible P4. It is the **source-gate zipper packet**:
+The latest wave has made ancestry useful: D17.433-438 locate a source-marked numerical cliff or a terminal source boundary beyond a v-rooted cliff. D17.439 then spends a terminal source-mate pair on a P4 and leaves three literal residual F paths.
 
-- the certified source-anchor/P4 geometry born at the old source gate;
-- old gate orientation and source-only block order;
-- anchors `A,C` and source spoke `t`;
-- the actual selected far dimer / fixed far boundary;
-- low-transition defect ancestry; and
-- the exact K2,2 two-crossing zipper at the first numerical loss.
+These are promising developments, not an audited physical closure. At this pass the D17.433-439 workspace roots remain unaudited. The numerical staircase, physical tightness, acyclicity, and a valid global descent consumer must remain separate. In particular, forward blocker contact does not prove a run of successful pivots.
 
-This sharpening matters because one natural shortcut is now ruled out. A worker produced an explicit retained-data boundary-tournament realization satisfying the D17.430 five-set star-cycle data but having no Hamilton P5 whose endpoint is the fixed far-wall vertex. Therefore D17.430 does **not** license endpoint-controlled far-wall insertion by itself. Any absorber that needs such an endpoint must use additional source-gate ancestry or a different splice geometry.
+The recently reconciled G35 order-two repair is durable as R1028; the five-set endpoint-control counterexample is R1029 in INTERESTING; twin-wall far-dimer saturation is now audited R1030, not merely a provisional Slack signal.
 
-There is also a strong positive local signal. In the P5-free twin-wall residue, the current live worker argument forces both source anchors to saturate the actual selected far dimer, with dual polarity in the OUT and IN orientations. This is strategically valuable because it rotates the direct twin-wall residue onto the same physical far boundary already carried by the packet. It remains provisional Slack mathematics until promoted to GitHub, so durable proofs must promote it before depending on it.
+A new bookkeeping fence affects D17.437: in the 2F/0J augmenter cell, the remaining source gate and sole J-transition may be one COMMON F-intersect-J edge unless the canonical word excludes it. Only a noncommon remaining gate is forced onto the unique transition-bearing neutral component. The exact small matching fixture and scope are in [the Astra development](../WORKSPACE/D17/astra-2026-09-13-source-complement-allocation.md). This is a strategic qualification, not a chronological audit verdict.
 
-The present bottleneck is consequently to absorb the **source-gate K2,2 zipper packet** into the global smallest-counterexample closure.
+## Elevation: the source pair is a choice
+
+Write G=H-{A,C}=B disjoint-union X, X={v,p,q,r}, with B the known Hamilton spectator path and (A,s,C) tight for each source spoke s.
+
+D17.368/398 already supply a Hamilton P4 Q_{u,w} on {A,C,u,w} for EVERY pair of source spokes. Consequently a Hamilton path on any one of
+
+    B union {v,p},  B union {v,q},  B union {v,r}
+
+closes H with the P4 on the other two spokes and the anchors.
+
+The parent object is this family of three complementary supports coupled to one actual source frame. Fixing the terminal pair too early discards two available absorption choices.
+
+At a nonloop first-loss rectangle whose X-X diagonal contains v, its other X vertex is a source spoke s. Spending the OTHER two spokes leaves the entire rectangle inside B union {v,s}. Every v-rooted first-loss rectangle is of this form. This gives a direct support allocation at the numerical cliff, without transporting a wall from the terminal gate. It does not certify its joins.
+
+Source-rooted rectangles whose X-X diagonal contains two spokes need a different allocation/exchange argument. Keep that branch and the singleton-loop interruption explicit.
 
 ## Primary moonshot
 
-**Prove a source-gate zipper absorption theorem.**
+Prove a source-complement absorption-or-descent theorem for the full live source-frame packet:
 
-At the first exact K2,2 two-crossing loss, retain the full source-gate packet rather than anonymizing it. Force either:
+- a Hamilton path on B union {v,s} for at least one source spoke s; or
+- another explicit spanning two-cover of H; or
+- a literal tight acyclic exact two-cover T of G with strict transition improvement on the SAME X|B partition, together with the valid existing global consumer.
 
-1. strict old-source transition descent on `G = H - {A,C}`; or
-2. a spanning two-cover of the whole tournament `H`.
+The theorem must use the actual old F, canonical J/cut where needed, source turns, spectator order, and applicable gate/wall data. Endpoint-only abstractions omit the old source-frame constraint. An arbitrary boundary tournament with a Hamilton B is not the asserted scope.
 
-The best theorem should explain why the two zipper crossings cannot simultaneously survive smallest-counterexample criticality once the old gate orientation, source order, far boundary, and ancestry are retained.
+## Three team-wide focuses
 
-A particularly attractive candidate is an exchange-or-cover principle controlled by the relative orientation between the two source-side anchor choices and the two zipper crossing choices. This is currently a conjectural mechanism, not an established theorem. The decisive test is whether the existing provenance determines that pairing, or whether a reflected realization can preserve all exported data while swapping the seam-safe pairing.
+### 1. Spend the source pair against the physical obstruction
 
-## Team-level focuses
+In the v-containing zipper cell, try the complementary support selected by the rectangle's X corners. Use the B-plus-two-vertices representation and the residual-F representation together; neither must preserve the other's path intervals.
 
-These are focuses, not assignments. Researchers choose opportunistically, and overlap is welcome.
+Seek a direct absorption construction or an exchange among the three choices of surviving spoke. Simultaneous nonHamiltonicity of all three complements is the contradiction target. This is stronger than showing that one preferred insertion fails or that one preferred source pair produces a P4.
 
-### 1. Attack the exact K2,2 zipper, not generic P4 insertion
+### 2. Prove physical exchange, with every changed turn visible
 
-Treat the first-loss zipper as the live numerical obstruction. Carry the physical crossing positions and the full born-at-gate provenance. Search for a one-shot exchange, quotient, parity/orientation invariant, or complementary two-cover argument that makes simultaneous survival of both crossings impossible.
+Represent candidate words explicitly. Two adjacency joins can require four new turns, and a singleton middle component creates a turn spanning both joins. Two K2,2 cross edges are not automatically two legal path joins. Whole-path reversal is not free for paths of order at least three.
 
-Every proposed splice must keep an exact turn ledger. Adjacency availability is not enough: the existing audit shows that an apparently local insertion can create an uncertified predecessor seam and exceed the two-seam budget.
+Try an exchange-or-cover principle: failure of an allocation forces a complementary allocation or a physical descent. Retain common selected edges alongside augmenter and neutral edges. Do not count an abstract size-|G|-2 matching as a two-cover.
 
-### 2. Use ancestry as a discriminator, not decoration
+R887's comparison orientation can clarify the needed predecessor-edge / join-edge / successor-edge comparisons. Any contraction of a long B interval must retain enough boundary data for exact expansion; bounded transition count alone is not such an expansion theorem.
 
-The next high-value structural question is whether the older D17.419 X-mated-versus-singleton ancestry split constrains the zipper interface. Test whether both ancestry types can realize the first-loss K2,2 configuration with the same exported gate and far-wall data. If one ancestry class forbids the reflected pairing, or if the two classes force complementary outcomes, the campaign may collapse without a generic insertion theorem.
+### 3. Test the parent interface hard enough to abandon it if necessary
 
-Do not assume that conclusion in advance. The ancestry split is a candidate discriminator whose value must be proved at the exact zipper interface.
+Test the strongest plausible absorption statement using full source-frame data. A countermodel preserving only local gates is a fence on that abstraction, not a counterexample to the full packet. Conversely, a valid full-data countermodel should stop attempts to force that overly strong interface.
 
-### 3. Exploit typed local geometry only when it buys global closure
+Use the terminal source wall, R1030 saturation, D17.398's one-wrap construction, or the three residual F paths only when they give a concrete consumer. Prefer closing a substantial branch or identifying an indispensable missing hypothesis to extending a local taxonomy.
 
-D17.430 remains valuable because its direct arm is strongly typed: Hamilton-five geometry or a twin-anchor wall. But it is an input to the zipper absorber, not an endpoint-insertion theorem. The new twin-wall far-dimer saturation finding is especially promising because it aligns both source anchors with the actual selected far dimer; promote it before durable dependence.
+These are shared focuses, not individual assignments.
 
-The passed live audit of `SV117618` remains a secondary normalization bridge. Use it only when it lands at a known zipper consumer or visibly reduces the obstruction, and promote it to GitHub before durable use.
+## Standing fences and secondary front
 
-## Active fences
+- R24/R5 remain frozen and unusable.
+- SV118046/D17.428's omitted predecessor-seam route remains fenced.
+- R1029 forbids inferring a prescribed far-wall endpoint from D17.430 alone.
+- D17.380's special-P5-order and full-window fences remain in force.
+- The common-transition alternative above must be retained until explicitly excluded.
+- D17.433-439 and this new allocation development do not acquire audited status by appearing in strategy.
+- The v-containing allocation is a sufficient route, not an equivalence with every two-cover or a proof that its selected complement is Hamiltonian.
+- Generic corridor refinement, repeated P4 production, and payment/replay are low priority absent a new global consumer.
 
-- `R24` and `R5` remain frozen/quarantined and are not premises.
-- The pair-deletion/reflection route represented by live `SV118046` remains fenced. Its claimed two-seam insertion window omits the outer predecessor seam and can leave up to three uncertified interface seams.
-- D17.430 does not imply a Hamilton P5 with the fixed far-wall vertex as an endpoint. The explicit countermodel fences any proof that silently chooses such an endpoint.
-- The relative-orientation exchange mechanism at the K2,2 zipper is conjectural until proved.
-- Generic P4 taxonomy, generic blocker classification, corridor refinement, whole-component search, and payment/replay are lower-value unless they directly consume the exact source-gate zipper packet.
+O6 remains independent foundational recovery. D5 remains an orthogonal source of representations and fences; neither its integrable two-cover conjecture nor an edge-order assumption is a premise.
 
-## Durable side obligation
+## What should change after the next wave
 
-O6 remains open: reconstruct R24 independently of R24/R5, preferably from a stronger theorem. It is worthwhile foundational work but is not the current O4 bottleneck.
-
-## Director operating rhythm
-
-The Director periodically performs **Assess → Elevate → Integrate → Moonshot → Guide**. Guidance should describe a small number of consequential team-wide targets and why they matter. It should not assign individual Researchers to lanes. Researchers remain autonomous and may overlap on a hard obstruction.
+A useful next wave should physically close a major branch, establish a source-complement exchange principle, or produce a full-data obstruction that forces us to change the parent target. Merely locating the source more precisely is no longer the main question.

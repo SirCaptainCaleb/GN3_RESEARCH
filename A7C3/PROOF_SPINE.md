@@ -1,113 +1,76 @@
 # A7C3 Current Proof Spine
 
-This file is the front-door map of the proof as currently understood. It is orientation, not mathematical authority. Exact result files and workspace arguments are authoritative.
-
-Update this file when integration materially changes the closure map.
+This is an orientation map, not mathematical authority. Exact proofs and their audit status govern use. O4 and O6 remain open.
 
 ## Global target
 
-Prove that every finite boundary tournament has path-cover number at most two.
+Prove that every finite Strong Level-(1) boundary tournament has path-cover number at most two. In a hypothetical smallest counterexample, the path-cover number is three and every proper induced subsystem has an at-most-two cover.
 
-For a hypothetical smallest counterexample, the standard smallest-counterexample reduction gives path-cover number three while every proper induced subsystem has path-cover number at most two. Durable obligation O4 is the arbitrary-order closure of that surviving smallest-counterexample regime.
+## Live source-frame route
 
-## Current live spine
+The current campaign retains
 
-The current strategic contraction, seeded from G36, sharpened by the audited source-collision collapse, and now localized at the first numerical zipper loss, is:
+    G=H-{A,C}=B disjoint-union X,  X={v,p,q,r},
 
-```text
-smallest counterexample
-    ↓
-three-spoke source frame
-    ↓
-tau-one defect forest
-    ↓
-unique alternating augmenter
-    ↓
-forward-only low-transition closing fan
-    ↓
-actual source gate
-    ↓
-fixed far-boundary reverse wall
-    ↓
-source-gate wall packet
-    ↓
-source-visible P4 carrying source/fixed-wall ancestry
-    ↓
-first unresolved exact K2,2 two-crossing zipper frontier
-    ↓
-source-gate zipper absorption
-    ↓
-strict old-source descent or spanning two-cover
-```
+the three source turns (A,s,C), an actual old source two-cover F in which p,q,r are internal, and the Hamilton spectator path B.
 
-The old long corridor is principally **delivery machinery**, not the parent research object. The source-dimer collision is no longer a separate surviving branch: D17.427 converts it to literal source-visible P4 geometry. The generic phrase “P4 absorption” is now too coarse for the live frontier. The first unresolved numerical loss is concentrated at the exact K2,2 two-crossing zipper identified by the earlier transition analysis.
+D17.391-394 give the quiet transitive spectator frame, its endpoint gates, and the old-source transition floor. D17.401/408 supply a canonical low-transition three-forest J and explicit blocked-repair outputs. In the dual-rigid branch, D17.409 gives the unique augmenter. These are scoped reductions with physical outputs; this map does not declare every earlier output family globally consumed.
 
-## Why the corridor is considered compressed
+## Numerical localization versus physical realization
 
-Current D17 records the following structural contractions in the unique-augmenter corridor:
+The corridor tools provide:
 
-- neutral components normalize forward and do not trap the defect;
-- pre-pivot shortcut positions form a moving strict-descent closing fan;
-- shortcut-cycle debt cannot persist across one successful physical pivot;
-- loss of numerical descent occurs at one local two-crossing zipper frontier rather than diffusely;
-- transition changes live on a bounded transition skeleton;
-- through successful pivots, the only shortcut obstruction that can genuinely persist is a fixed far-boundary reverse star;
-- in the tau-three hard regime, source ancestry is forced onto the low-transition boundary through a source gate.
+- D17.413: a numerically strict internal shortcut except the sharp tau(F)=3, tau(J)=1, w(C*)=2 cell, with a singleton-loop alternative.
+- D17.416: neutral normalization and forward contact of physical blockers.
+- D17.421: the exact K2,2 switch at the first numerical loss.
+- D17.423: a bounded transition skeleton.
+- D17.424 and audited R1028: the distinct-vertex far-seam rule and transient order-two reverse-dimer branch across consecutive successful pivots.
 
-Relevant current D17 units include:
+A matching of two-cover cardinality is not yet a physical two-cover. Forward contact does not certify intermediate tight forests, and the successful-pivot persistence theorem must retain that hypothesis. Numerically favorable cells still require physical realization and the correct global improvement consumer.
 
-- `WORKSPACE/D17/415-g35-prepivot-low-transition-shortcut-fan.md`
-- `WORKSPACE/D17/416-g35-neutral-normalization-forward-blocker-transport.md`
-- `WORKSPACE/D17/421-g35-normalized-shortcut-transition-frontier.md`
-- `WORKSPACE/D17/422-g35-shortcut-cycle-one-step-transport.md`
-- `WORKSPACE/D17/423-g35-bounded-transition-skeleton.md`
-- `WORKSPACE/D17/424-g35-successful-pivot-far-star-persistence.md`
+## Source-wall contractions already available
 
-## Current source-gate object
+D17.425-427 convert a genuinely persistent wall at a source gate into literal source-visible P4 geometry; the source-dimer collision is not an independent non-P4 branch.
 
-At a source-bearing boundary, orient defect transport so the source spoke itself is the moving defect. The persistent far wall plus the historical source trimer produces a **source-gate wall packet**.
+D17.429-430 retain additional terminal-dimer and five-set geometry. Audited R1030 saturates the actual far dimer in the P5-free direct twin-wall residue. Audited R1029, canonically in RESULTS/INTERESTING, shows the D17.430 data do not guarantee a Hamilton P5 with the fixed wall vertex as an endpoint.
 
-The initial G36 contraction gave either a literal source-visible P4 or a same-oriented collision on a source dimer carrying the opposite source anchor as a witness. D17.427 eliminates that fork for the live campaign: the collision arm itself contains a literal source-visible P4. Thus every surviving G36 arm reaches source-visible P4 geometry while retaining source-gate and fixed-wall provenance.
+These are physical local packets, not spanning absorbers.
 
-Current local contractions of the packet include:
+## Latest ancestry wave: provisional development
 
-- `425-g36-source-oriented-persistent-wall-collapse.md` localizes the persistent wall at the source gate;
-- `426-g36-source-collision-shortcut-carrier-upgrade.md` transfers collision structure onto the actual shortcut carrier;
-- `427-g36-source-dimer-collision-always-p4.md` shows the source-dimer collision already contains a source-visible P4;
-- `429-g36-source-collision-rotation-terminal-wall-dimer.md` records a complementary terminal wall-dimer normal form;
-- `430-g36-direct-wall-p4-star-cycle-or-twin-anchor-wall.md` contracts the direct wall-P4 arm to Hamiltonian five-vertex geometry or a twin-anchor wall.
+D17.433-439 were unaudited workspace findings at the 2026-09-13 Astra pass:
 
-D17.430 is strong local geometry but not a controlled far-wall splice. A live worker countermodel shows that its retained five-set data do not force a Hamilton P5 with the fixed far-wall vertex as an endpoint. Therefore the global consumer must use additional source-gate/ancestry information or different splice geometry.
+- D17.433-434 mark the sharp first loss by its X endpoint.
+- D17.435-436 identify the ordered three-spoke block and a forward source gate in the v-rooted cell.
+- D17.438 supplies a terminal source boundary at matching level, retaining its physical-realization qualifications.
+- D17.439 spends the terminal gate and its source mate on a P4; the complement is three literal residual F paths.
 
-## Exact live frontier
+D17.437's componentwise zero-weight identity is distinct from its stronger gate-location claim. In a 2F/0J augmenter, the remaining source gate may be a common F-intersect-J transition; otherwise it and the unique J-transition share a neutral component. Excluding the common case requires an additional canonical-word argument. See the [Astra development and explicit matching fixture](WORKSPACE/D17/astra-2026-09-13-source-complement-allocation.md). No audit status is changed by this strategic fence.
 
-The earlier transition analysis localizes the first loss of strict old-source numerical descent at an **exact K2,2 two-crossing zipper**. Combining that with the source-gate contraction gives the current parent interface:
+## Current parent target: source-complement absorption
 
-```text
-certified source-anchor/P4 packet
-+ old source-gate orientation and source order
-+ actual fixed far boundary
-+ low-transition ancestry
-+ exact K2,2 two-crossing zipper
-```
+D17.368/398 give a Hamilton P4 on {A,C,u,w} for each pair of source spokes u,w. Thus a Hamilton path on ANY of
 
-The desired next theorem is a source-gate zipper absorber: this exact packet forces either strict old-source transition descent on `H-{A,C}` or a spanning two-cover of `H`.
+    B union {v,p}, B union {v,q}, B union {v,r}
 
-The key strategic question is whether the preserved ancestry, including the older X-mated-versus-singleton distinction, fixes enough relative orientation at the two crossings to force an exchange or complementary cover. That mechanism is not yet established and should not be read as part of the proved spine.
+would close H with the P4 on the other two spokes and the anchors. All three complements must be nonHamiltonian in a counterexample.
 
-## Current high-value fences
+The new provisional allocation observation is that a nonloop zipper whose X-X diagonal contains v also contains exactly one source spoke s. Its entire four-vertex support survives in B union {v,s}; spend the other two spokes. Every v-rooted rectangle is covered by this allocation. A two-spoke X-X diagonal and singleton-loop interruptions remain separate cases.
 
-- R24 and R5 remain frozen/quarantined and must not be used unless the durable trust state is explicitly changed.
-- The pair-deletion/reflection route represented by live SV118046 is not safe as stated: audit found an omitted predecessor seam in its insertion ledger. Keep that route fenced until repaired.
-- Do not infer from D17.430 that the fixed far-wall vertex can be chosen as an endpoint of its Hamilton P5 alternative. A concrete retained-data countermodel rules out that inference.
-- Do not split direct-P4 and collision-born P4 outputs into unrelated programs; their common source-gate ancestry and common first-loss zipper are the parent object.
-- Do not anonymize the packet through generic machinery when doing so discards source-gate orientation, fixed-wall provenance, source-block order, crossing positions, anchor witnesses, or ancestry.
-- Every insertion argument at the live frontier must account explicitly for predecessor and successor seams.
+The ambitious missing consumer is a source-complement absorption-or-descent theorem: use the full source frame to obtain one such Hamilton complement, another spanning two-cover, or a physical strict old-source improvement with its valid global consumer.
 
-## Secondary durable front
+This can bypass terminal-wall synchronization where it succeeds. It does not assert that the chosen complement must be Hamiltonian or that the two cross edges are already legal joins.
 
-O6 remains the independent reconstruction of R24 from R24/R5-independent mathematics, preferably through a stronger parent theorem. It is mathematically important but is not the present O4 bottleneck.
+## Essential fences
 
-## Updating this spine
+- R24/R5 are unusable while quarantined.
+- D17.428/SV118046's incomplete insertion window remains fenced.
+- D17.380's special-order and changed-turn warnings remain relevant.
+- Count new consecutive TRIPLES, not just added adjacency edges. Two joins may require four turns; a singleton middle component needs the across-both-joins turn.
+- Source allocation is sufficient, not an equivalence with arbitrary full-H closure.
+- Matching copies, physical vertices, old F order, B order, common edges, and applicable witness provenance must survive specialization.
+- Provisional developments remain provisional until chronological audit.
 
-A Director or Researcher performing genuine integration should update this file when a new theorem kills a major branch, changes the parent obstruction, exposes a stronger invariant, or reroutes the main proof. Do not update it for every local lemma.
+## Secondary front
+
+O6 is the independent reconstruction of the singleton order floor and short-complement rigidity of R24. It is valuable but is not a prerequisite for pursuing the current O4 absorber.
