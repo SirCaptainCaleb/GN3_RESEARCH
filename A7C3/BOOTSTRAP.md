@@ -1,26 +1,63 @@
 # A7C3 Bootstrap
 
-A7C3 uses two surfaces:
+A7C3 has one durable research record and one live research room:
 
-- **Slack is the research room.** Read `#a7c3-control` first, then catch up on relevant recent `#a7c3-workspace` and `#a7c3-audit` activity. During long work, check Slack at natural mathematical checkpoints and before publishing substantive results.
-- **GitHub is the durable research record.** Search and read the repository only as the mathematics requires.
+- **GitHub is the durable record.**
+- **Slack is the live room.**
+
+## Fresh Researcher entrance
+
+Read these durable orientation files in order:
+
+1. `ARCHITECTURE.md` — how the project works.
+2. `PROOF_SPINE.md` — where the proof currently stands.
+3. `OBLIGATIONS.md` — durable unresolved closure contracts.
+4. `STRATEGY/CURRENT.md` — the current strategic interpretation and ambitious targets.
+
+Then read pinned/current `#a7c3-control` for live changes that may be newer than GitHub, and catch up on relevant recent `#a7c3-workspace` or `#a7c3-audit` activity.
+
+After orientation, expand only the mathematics needed for the chosen attack.
+
+## Mathematical retrieval
+
+Default theorem search:
+
+1. `RESULTS/USABLE/ACTIVE/` for the current high-signal toolbox.
+2. `RESULTS/USABLE/` for broader valid mathematics.
+3. `RESULTS/UNUSABLE/QUARANTINED/` deliberately for repair archaeology.
+4. Relevant `WORKSPACE/` subtrees for connected evolving mathematics.
+
+Use several literal mathematical concepts when searching for old machinery. Prefer recall over an artificially narrow query.
+
+When an exact result is known, read its file directly. Before actually applying a theorem or lemma, understand its proof mechanism well enough to preserve surviving witnesses, physical vertices, path orders, selected states, cuts, signs, ancestry, equality information, and exceptional branches. Do not use a theorem as a context-stripping statement-only black box when its proof mechanism matters.
 
 ## Result trust
 
-Default theorem search should use `RESULTS/USABLE/ACTIVE/`.
+- `USABLE/ACTIVE` — safe and currently preferred.
+- `USABLE/LEGACY` — safe but not currently preferred.
+- `UNUSABLE/QUARANTINED` — do not use as a premise; repair target.
+- `UNUSABLE/INVALID` — known invalid.
 
-Broaden to `RESULTS/USABLE/` when looking for older valid machinery.
-
-Use `RESULTS/UNUSABLE/QUARANTINED/` deliberately when repairing a live quarantined result. `RESULTS/UNUSABLE/INVALID/` is not usable mathematics.
-
-A result file contains the current durable statement and, when available, its current preferred proof. Historical database revisions are not migrated.
+Old or superseded does not mean unsafe.
 
 ## Workspace
 
-`WORKSPACE/` contains coherent long-form mathematical assembly descended from the old D* documents. Slack `#a7c3-workspace` is the minute-to-minute shared workspace; GitHub workspace files are the coherent durable synthesis.
+`WORKSPACE/` contains coherent durable mathematical developments. Slack `#a7c3-workspace` is the minute-to-minute collaboration surface. Do not reconstruct a large current argument from scattered Slack messages when its GitHub development exists.
 
-## Working convention
+## Live collaboration
 
-Post a Slack message during current work whenever another active worker could plausibly change direction if they knew the finding. Put the useful finding in the root message; use threads for discussion. If a thread produces a materially new finding, post a new root message.
+Post a Slack root message when another active Researcher could plausibly change direction if they knew the finding. Use threads for discussion; surface materially new conclusions as new root messages.
 
-When mathematics becomes durable, write it to GitHub. If durable state changes in a way that can invalidate current work, announce it in `#a7c3-control` as well.
+When durable state changes, write it to GitHub. If the change can redirect or invalidate current work, announce the delta in `#a7c3-control` too.
+
+There is no assignment queue and no formal Researcher-return object. Researchers choose useful attacks opportunistically within the current strategic landscape; overlap is allowed.
+
+## Dedicated conversations
+
+Ordinary work uses plain Researchers. Cognitive mantles such as Explorer, Elevator, Integrator, and Moonshot are activities rather than persistent roles.
+
+A dedicated Auditor / Repairer may adversarially test and repair load-bearing mathematics. The Director function periodically assesses, elevates, integrates, moonshots, and guides. Astra is the scarce Director when available; an Acting / Vice Director carries the same function between Astra passes.
+
+## Continue
+
+Do mathematics. Persist coherent durable advances where they belong. Search old mathematics when it may matter. At natural checkpoints ask whether the latest work changes the proof spine, obligations, or strategy rather than merely extending the same local machinery.
