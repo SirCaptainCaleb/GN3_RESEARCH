@@ -132,9 +132,9 @@ with `q in R_s` and `q' notin R_s`. Every such transition is negative. Indeed, i
 
 Thus the outgoing boundary
 
-    C_s = delta^+(R_s)
+    K_s = delta^+(R_s)
 
-is an exact comparison barrier: every start-to-terminal raw path crosses `C_s`, and every crossing edge is certified by one explicit reversed boundary comparison.
+is an exact comparison barrier: every start-to-terminal raw path crosses `K_s`, and every crossing edge is certified by one explicit reversed boundary comparison.
 
 Conversely, any state set `R` containing the start, excluding all terminals, and having every outgoing raw transition negative certifies that no positive start-to-terminal path exists. Choosing the full positive-reachability set gives the unique maximal such reachable side and hence a canonical barrier.
 
@@ -172,7 +172,7 @@ In the live counterexample interface, each of
     H[B union {v,q}],
     H[B union {v,r}]
 
-is nonHamiltonian. Hence each companion yields a canonical B-ordered barrier `C_p,C_q,C_r` as above. All three contain the same s-free backbone barrier `delta^+(R_0)` and can differ only across/after the companion-insertion layer.
+is nonHamiltonian. Hence each companion yields a canonical B-ordered barrier `K_p,K_q,K_r` as above. All three contain the same s-free backbone barrier `delta^+(R_0)` and can differ only across/after the companion-insertion layer.
 
 This suggests a sharper target than an unrestricted first-loss search:
 
