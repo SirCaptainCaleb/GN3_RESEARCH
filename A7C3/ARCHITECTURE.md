@@ -98,6 +98,8 @@ Exact result references inside proofs remain valuable, but the architecture does
 
 ## Slack
 
+Slack is an attention surface, not a second durable record. Its purpose is to expose the most valuable current facts with very low reading cost while allowing arbitrary supporting detail to remain attached and searchable in threads.
+
 Permanent channels:
 
 - `#a7c3-control` — low-volume changes that can redirect or invalidate current work: Director guidance, quarantines, architecture changes, major strategic pivots, and other control-plane deltas.
@@ -109,9 +111,30 @@ The routing threshold matters. If a finding should change what another active Re
 
 Temporary campaign channels are allowed when one campaign would genuinely overwhelm the main workspace channel.
 
+### Root messages are headline space
+
+A Slack root message should maximize valuable attention. Treat root space as a stream of precise headlines, not as a place for proofs, derivations, constructions, interpretation manuals, action lists, or discussion.
+
+For a mathematical finding, the root should contain **the finding itself expressed as a precise mathematical statement**. It should not merely name the topic, summarize the proof, or describe what the worker did. A long mathematical sentence is preferable to a shorter but ambiguous headline.
+
+Put the proof, construction, derivation, interpretation guidelines, caveats, examples, supporting computations, proposed actions, routing detail, and local discussion in the thread under that root. Threading is assumed: do not waste headline space on phrases such as “proof in thread” or “details in thread.”
+
+The same discipline applies by channel:
+
+- In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture.
+- In `#a7c3-audit`, the root is the exact audit verdict or fence, including enough scope to know what passes, fails, is repaired, or remains uncontaminated.
+- In `#a7c3-control`, the root is the exact guidance, quarantine, trust change, architecture change, or strategic redirection. Rationale and implementation detail belong in the thread.
+- In `#a7c3-lab`, the root is the precise provisional observation, conjecture, construction, example, analogy, or counterexample intuition, with conjectural status made explicit when needed.
+
+If a thread produces a genuinely new mathematical finding or a new control/audit fact, create a new root headline for that new fact rather than burying it in the old thread.
+
+Each permanent channel may keep one compact pinned opener that states the channel's routing purpose. The durable policy governing those channels lives here in GitHub, not in the pinned Slack text. Pinned openers are convenience signage and may be reconstructed from this document.
+
+### Slack is provisional
+
 Slack is provisional by default. `#a7c3-lab` is especially provisional: it is a searchable memory of interesting chatter, not a theorem registry or source of authority. If durable mathematics will rely on a Slack finding, promote that finding to GitHub first or together with the dependent mathematics. If a lab observation becomes strategically or operationally important, surface it again in the appropriate higher-signal Slack channel rather than assuming workers monitor the lab continuously.
 
-Post during active work when another active Researcher could plausibly change what they are doing if they knew the finding. Use threads for discussion. If a thread produces a materially new finding, surface it as a new root message rather than burying it.
+There is no durable Slack meta layer. Architecture, routing rules, and channel-use conventions belong in GitHub `ARCHITECTURE.md`. If a `#a7c3-meta` channel exists, it is only a convenience pointer to the durable GitHub architecture and must not become a competing copy of it.
 
 There is no formal Researcher-return object. Leave a concise live handoff only when another conversation actually needs one.
 
@@ -187,6 +210,7 @@ There is deliberately no hidden second research operating system behind GitHub:
 - no mandatory semantic-tag service;
 - no dependency server;
 - no durable Slack mirror;
+- no canonical Slack meta layer;
 - no explicit revision database.
 
 The filesystem is the model. Git is the history. Search is the retrieval layer. Slack is the room full of mathematicians.
