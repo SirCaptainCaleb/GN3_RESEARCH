@@ -47,7 +47,7 @@ Before doing new mathematics after such a re-entry, refresh the live information
 
 - refresh relevant current GitHub `main`, including the proof spine, current strategy and obligations when they bear on the work, and any durable mathematics about to be used;
 - inspect `#a7c3-control` for newer guidance, quarantines, trust changes, architecture changes, or strategic redirections;
-- inspect relevant `#a7c3-workspace` roots and threads for newer mathematical findings, audit suffixes, corrections, provisional dependencies, or concurrent developments affecting the line;
+- inspect relevant `#a7c3-workspace` roots and threads for newer mathematical findings, leading audit tags, corrections, provisional dependencies, or concurrent developments affecting the line;
 - when audit state matters, identify the oldest unaudited mathematical workspace root, which is the current chronological audit frontier.
 
 Do not rely on remembered guidance labels, remembered result status, or a previously valid dependency merely because it remains in conversation context. Fresh control information, current GitHub state, and audit status attached to the relevant mathematical finding outrank stale local plans.
@@ -101,9 +101,9 @@ Interesting mathematics includes, for example:
 
 The standard is mathematical interest, not merely validity. The folder should remain selective. It is expected to be much smaller than the surrounding notebook and ordinary-result corpus.
 
-A worker who discovers a result they judge strong, creative, unusually reusable, or otherwise mathematically interesting should append `(INTERESTING)` to the Slack root. This is a nomination, not yet a curation decision. When the result is audited, the auditor also judges the nomination. If the auditor agrees and the result receives `(PASS)` or `(PASS_ADJUSTED)`, persist the final audited result canonically in `RESULTS/INTERESTING/`. If the audit passes but the auditor does not agree that the result clears the interestingness threshold, persist it in the ordinary appropriate result location instead.
+A worker who discovers a result they judge strong, creative, unusually reusable, or otherwise mathematically interesting should append `(INTERESTING)` to the Slack root. This is a nomination, not yet a curation decision. When the result is audited, the auditor also judges the nomination. If the auditor agrees and the result receives `[PASS]` or `[PASS_ADJUSTED]`, persist the final audited result canonically in `RESULTS/INTERESTING/`. If the audit passes but the auditor does not agree that the result clears the interestingness threshold, persist it in the ordinary appropriate result location instead.
 
-`(INTERESTING)` is independent of audit status. A root may therefore read, for example, `(INTERESTING) (PASS)` or `(INTERESTING) (PASS_ADJUSTED)`. If audit rejects the interestingness nomination, remove `(INTERESTING)` when recording the audit status.
+`(INTERESTING)` is independent of audit status. A root may therefore begin `[PASS]` or `[PASS_ADJUSTED]` and also end with `(INTERESTING)`. If audit rejects the interestingness nomination, remove `(INTERESTING)` when recording the audit status.
 
 Do **not** keep duplicate canonical copies of an interesting result in both `INTERESTING/` and `USABLE/ACTIVE/`. The interesting file is the canonical result. Duplication creates drift. If later audit invalidates it, move it out of `INTERESTING/` into the appropriate unusable location. If it merely becomes old or strategically inactive while remaining mathematically interesting, it may stay on the interesting shelf.
 
@@ -129,7 +129,7 @@ An unaudited Slack result is **provisional mathematics, not forbidden mathematic
 
 The worker may instead choose to advance the chronological audit frontier through the needed result before relying on it. This is a judgment call: audit now for confidence, or proceed provisionally for speed while accepting repair risk if an upstream dependency later fails.
 
-A theorem-level claim cannot acquire trusted audited status while an unaudited dependency remains beneath it. If a provisional dependency later receives `(FAIL)` or a materially narrowing `(PASS_ADJUSTED)`, downstream claims that relied on the superseded form must be revisited before promotion or reuse as trusted mathematics.
+A theorem-level claim cannot acquire trusted audited status while an unaudited dependency remains beneath it. If a provisional dependency later receives `[FAIL]` or a materially narrowing `[PASS_ADJUSTED]`, downstream claims that relied on the superseded form must be revisited before promotion or reuse as trusted mathematics.
 
 ## Slack
 
@@ -151,13 +151,13 @@ A Slack root message should maximize valuable attention. Treat root space as a s
 
 For a mathematical finding, the root should contain **the finding itself expressed as a precise mathematical statement**. It should not merely name the topic, summarize the proof, or describe what the worker did. **Precision outranks brevity. A long mathematical sentence is preferable to a shorter but ambiguous headline.**
 
-Put the proof, construction, derivation, interpretation guidelines, caveats, examples, supporting computations, proposed actions, routing detail, provisional-dependency declaration, and local discussion in the thread under that root. Threading is assumed: do not waste headline space on phrases such as “proof in thread” or “details in thread.”
+Put the proof, construction, derivation, interpretation guidelines, caveats, examples, supporting computations, proposed actions, routing detail, provisional-dependency declaration, canonical GitHub pointer, and local discussion in the thread under that root. Threading is assumed: do not waste headline space on phrases such as “proof in thread” or “details in thread.”
 
-In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture, plus compact audit and interestingness suffixes when applicable. In `#a7c3-control`, the root is the exact guidance, quarantine, trust change, architecture change, or strategic redirection. In `#a7c3-lab`, the root is the precise provisional observation, conjecture, construction, example, analogy, or counterexample intuition.
+In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture, optionally preceded by one leading audit tag and optionally followed by `(INTERESTING)`. In `#a7c3-control`, the root is the exact guidance, quarantine, trust change, architecture change, or strategic redirection. In `#a7c3-lab`, the root is the precise provisional observation, conjecture, construction, example, analogy, or counterexample intuition.
 
 If a thread produces a genuinely new mathematical finding or control fact, create a new root headline for that new fact rather than burying it in the old thread.
 
-Recent mathematical roots stay in `#a7c3-workspace` after audit. Do not move or delete a root merely because it passed or failed; its suffix makes its state visible while preserving the chronological live stream.
+Recent mathematical roots stay in `#a7c3-workspace` after audit. Do not move or delete a root merely because it passed or failed; its leading audit tag makes its state visible while preserving the chronological live stream.
 
 If a Slack root ever genuinely needs deletion, **delete every reply in its thread first, then delete the root**. Deleting only the root can leave replies visible or discoverable in the channel and creates misleading debris. If the replies cannot be cleanly removed, do not treat the thread as cleanly deleted.
 
@@ -167,34 +167,40 @@ Each permanent channel may keep one compact pinned opener that states the channe
 
 Audit is metadata and discussion attached to a mathematical finding, not a separate page that workers must later correlate back to the mathematics.
 
-When a Slack mathematical root is audited, edit that same root to append exactly one audit status:
+When a Slack mathematical root is audited, edit that same root to **prefix** exactly one audit status:
 
-- `(PASS)` — the precise root statement survives audit as written.
-- `(FAIL)` — the root statement is not safe to use as a mathematical premise.
-- `(PASS_ADJUSTED)` — a valid nearby statement survives after correction, narrowing, or another substantive adjustment.
+- `[PASS]` — the precise root statement survives audit as written.
+- `[FAIL]` — the root statement is not safe to use as a mathematical premise.
+- `[PASS_ADJUSTED]` — a valid nearby statement survives after correction, narrowing, or another substantive adjustment.
 
-Audit reasoning belongs in the existing thread. For `(PASS_ADJUSTED)`, the thread must state the exact surviving adjustment. If the old root wording would be materially misleading, edit the mathematical statement itself to the precise surviving version and retain `(PASS_ADJUSTED)`.
+Audit reasoning belongs in the existing thread. For `[PASS_ADJUSTED]`, the thread must state the exact surviving adjustment. If the old root wording would be materially misleading, edit the mathematical statement itself to the precise surviving version and retain `[PASS_ADJUSTED]` at the beginning.
 
-An unaudited root simply has no audit suffix.
+An unaudited root has **no audit tag**. Do not add a `[PROVISIONAL]` tag; the absence of an audit tag is the provisional state.
 
 ### Chronological audit frontier
 
-Routine auditing is strictly chronological within the mathematical roots of `#a7c3-workspace`. **The oldest unaudited mathematical root is the audit frontier and is the only unaudited workspace result eligible for the next routine audit.** To audit a later root, first settle every earlier unaudited mathematical root with `(PASS)`, `(PASS_ADJUSTED)`, or `(FAIL)`.
+Routine auditing is strictly chronological within the mathematical roots of `#a7c3-workspace`. **The oldest unaudited mathematical root is the audit frontier and is the only unaudited workspace result eligible for the next routine audit.** To audit a later root, first settle every earlier unaudited mathematical root with `[PASS]`, `[PASS_ADJUSTED]`, or `[FAIL]`.
 
 This rule makes the workspace itself the audit queue without creating a separate queue object. New research may continue and new roots may be posted beyond the frontier; they simply remain unaudited until the frontier reaches them. No result can be silently skipped forever because a more attractive later claim was chosen for audit first.
 
 Research use is deliberately more permissive than audit order. A worker may use a later unaudited result provisionally, provided the exact dependence is recorded clearly as described above. The worker may also choose to clear the audit frontier through that result first. Either choice is allowed; what is forbidden is silently treating unaudited mathematics as trusted.
 
-If the frontier result passes, append `(PASS)`. If it survives only after correction, append `(PASS_ADJUSTED)`. If it fails, append `(FAIL)`. A failed result cannot be used as a trusted premise unless a repaired statement is formulated and eventually audited in its own right. Any provisional descendants that used it must be rechecked.
+If the frontier result passes, prefix `[PASS]`. If it survives only after correction, prefix `[PASS_ADJUSTED]`. If it fails, prefix `[FAIL]`. A failed result cannot be used as a trusted premise unless a repaired statement is formulated and eventually audited in its own right. Any provisional descendants that used it must be rechecked.
 
-### Audited means persisted
+### Audited means persisted and linked
 
 **Completing an audit creates an immediate persistence obligation.** Do not leave an audited result living only in Slack.
 
-- `(PASS)` goes promptly to its appropriate durable GitHub location with the audited statement and proof.
-- `(PASS_ADJUSTED)` goes promptly to GitHub using only the final corrected statement and proof.
+- `[PASS]` goes promptly to its appropriate canonical durable GitHub result location with the audited statement and proof.
+- `[PASS_ADJUSTED]` goes promptly to GitHub using only the final corrected statement and proof.
 - A passing result whose `(INTERESTING)` nomination is endorsed goes canonically to `RESULTS/INTERESTING/`.
-- `(FAIL)` does not enter usable results. Preserve an important invalidation or fence in `RESULTS/UNUSABLE/INVALID/` or the relevant `WORKSPACE/` development when its failure itself has durable value.
+- `[FAIL]` does not enter usable results. Preserve an important invalidation or fence in `RESULTS/UNUSABLE/INVALID/` or the relevant `WORKSPACE/` development when its failure itself has durable value.
+
+For every `[PASS]` or `[PASS_ADJUSTED]` root, after the canonical GitHub file exists, add a compact thread reply of the form:
+
+`Canonical GitHub result: A7C3/RESULTS/.../R....md`
+
+The pointer belongs in the thread, not the root, so the live stream remains mathematically tidy. The GitHub file is the durable mathematical authority; the Slack thread is the bridge from the live finding to that authority. If the canonical result later moves, for example into `RESULTS/INTERESTING/`, update the thread pointer rather than leaving a stale path.
 
 If the audited result changes the proof spine, obligations, strategy, trust of existing durable results, or other current durable mathematics, update those surfaces in the same integration pass.
 
@@ -225,7 +231,7 @@ Mantles change posture, not permission. They are not stored as project state.
 
 A dedicated **Auditor / Repairer** conversation is useful because adversarial verification benefits from persistent cognitive posture. Its job is to advance the chronological audit frontier, attack load-bearing durable results when separately requested, trace mathematical damage, and repair failed or quarantined mathematics when possible. It is not the owner of a separate audit ledger.
 
-For routine Slack audit, the Auditor follows the same frontier rule as everyone else and does not skip an older unaudited workspace root to audit a newer one. Status is written onto the originating Slack root, reasoning stays in that thread, completed audit mathematics is persisted immediately, and interestingness nominations receive a second mathematical judgment during audit. Separate repair work on already-failed or quarantined durable results is not constrained by the Slack frontier.
+For routine Slack audit, the Auditor follows the same frontier rule as everyone else and does not skip an older unaudited workspace root to audit a newer one. Status is written onto the originating Slack root, reasoning stays in that thread, completed audit mathematics is persisted immediately and linked back from that thread, and interestingness nominations receive a second mathematical judgment during audit. Separate repair work on already-failed or quarantined durable results is not constrained by the Slack frontier.
 
 ### Director
 
