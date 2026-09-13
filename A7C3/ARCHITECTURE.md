@@ -166,7 +166,7 @@ When a Slack mathematical root is audited, edit that same root to append exactly
 
 Audit reasoning belongs in the existing thread. For `(PASS_ADJUSTED)`, the thread must state the exact surviving adjustment. If the old root wording would be materially misleading, edit the mathematical statement itself to the precise surviving version and retain `(PASS_ADJUSTED)`.
 
-There is no separate routine audit channel. An unaudited root simply has no audit suffix.
+An unaudited root simply has no audit suffix.
 
 ### Audit on use
 
