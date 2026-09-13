@@ -3,6 +3,8 @@ name: Temporary A7C3 corpus migration
 on:
   issues:
     types: [opened]
+  pull_request:
+    types: [opened]
 
 permissions:
   contents: write
@@ -10,7 +12,9 @@ permissions:
 
 jobs:
   migrate:
-    if: github.event.issue.title == 'A7C3 corpus migration trigger 2026-09-12'
+    if: >-
+      (github.event_name == 'issues' && github.event.issue.title == 'A7C3 corpus migration trigger 2026-09-12') ||
+      (github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'migration-corpus-20260912')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
