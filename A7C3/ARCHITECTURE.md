@@ -4,13 +4,15 @@
 
 **GitHub is the research record. Slack is the research room.**
 
-GitHub contains the durable mathematical world: results, proofs, coherent developments, the current proof spine, durable obligations, strategic interpretation, architecture, and references. Slack carries live coordination, discoveries in motion, tactical discussion, warnings, speculative observations, and changes whose value depends on recency.
+GitHub contains the durable mathematical world: audited reusable results, proofs, coherent developments, the current proof spine, durable obligations, strategic interpretation, architecture, and references. Slack carries live coordination, discoveries in motion, provisional results awaiting audit, tactical discussion, warnings, speculative observations, and changes whose value depends on recency.
 
 Git history is the revision and archive mechanism. Do not recreate database-style revision objects, worker state, queues, semantic tag systems, or lifecycle machinery unless actual use later proves they are necessary.
 
 The migration is complete. GitHub `main` is the durable authority for A7C3. Legacy Supabase material is archival source material only and is not the live research record.
 
-Ordinary nonmigration research work should be written directly to `main`. This includes new results and proofs, workspace development, integration, audit repairs, proof-spine updates, obligations, strategy, architecture changes, and references. Temporary branches are exceptional tools for work that genuinely benefits from isolation or review; they are not the default research workflow and should be merged or deleted promptly when no longer needed.
+Ordinary nonmigration durable work should be written directly to `main`. This includes audited results and proofs, coherent workspace development, integration, audit repairs, proof-spine updates, obligations, strategy, architecture changes, and references. A new standalone theorem-level claim discovered in Slack should normally remain there while unaudited and be promoted to GitHub immediately when audited. GitHub should receive the final audited mathematical version rather than a sequence of provisional theorem variants. Evolving workspace mathematics may be durable before theorem-level audit when it is clearly presented as development rather than as a trusted reusable result.
+
+Temporary branches are exceptional tools for work that genuinely benefits from isolation or review; they are not the default research workflow and should be merged or deleted promptly when no longer needed.
 
 ## Durable front door
 
@@ -51,10 +53,10 @@ Before doing new mathematics after such a re-entry, refresh the live information
 
 - refresh the relevant current GitHub `main` state, including the proof spine, current strategy and obligations when they bear on the work, plus any result or workspace material the worker is about to use;
 - inspect `#a7c3-control` for newer guidance, quarantines, trust changes, architecture changes, or strategic redirections;
-- inspect `#a7c3-audit` for newer audit verdicts, repairs, invalidations, dependency contamination, fences, or clearances affecting any mathematics the worker may rely on;
-- inspect `#a7c3-workspace` for newer mathematical findings, obstructions, reductions, counterexamples, or concurrent-worker developments that may supersede or interact with the worker's local frontier.
+- inspect the relevant `#a7c3-workspace` roots and threads for newer mathematical findings and for audit suffixes or audit followups affecting any Slack mathematics the worker may rely on;
+- inspect other recent workspace developments that may supersede or interact with the worker's local frontier.
 
-Do not rely on remembered guidance labels, remembered result status, or a previously valid dependency simply because it remains in the conversation context. Fresh control and audit information outrank stale local plans. If synchronization changes the frontier, adapt before continuing; if it does not, resume the prior attack without ceremony.
+Do not rely on remembered guidance labels, remembered result status, or a previously valid dependency simply because it remains in the conversation context. Fresh control information, current GitHub state, and audit status attached to the relevant mathematical finding outrank stale local plans. If synchronization changes the frontier, adapt before continuing; if it does not, resume the prior attack without ceremony.
 
 This rule applies to Researchers, Directors, Integrators, Auditors / Repairers, Independents when their information boundary permits it, and any other continuing worker. Specialized information boundaries may restrict what a worker is allowed to inspect, but they do not waive synchronization against the sources that worker is permitted to see.
 
@@ -84,12 +86,14 @@ A7C3/
 
 A result is a standalone reusable mathematical interface. Each result file should contain its current durable statement and its preferred proof when available, plus hypotheses, scope, exclusions, validity notes, or other metadata only when they materially affect correct use.
 
+A reusable result placed under `RESULTS/USABLE/` is understood to have passed audit in its durable form. Slack may contain newer provisional claims that have not yet crossed that threshold.
+
 Folder location encodes trust and current relevance:
 
-- `RESULTS/USABLE/ACTIVE/` — valid, safe, and part of the current preferred toolbox.
-- `RESULTS/USABLE/LEGACY/` — valid and safe, but superseded, off the current route, or otherwise lower priority.
-- `RESULTS/UNUSABLE/QUARANTINED/` — live repair targets that must not be used as premises.
-- `RESULTS/UNUSABLE/INVALID/` — known-invalid mathematics.
+- `RESULTS/USABLE/ACTIVE/` — valid, audited, safe, and part of the current preferred toolbox.
+- `RESULTS/USABLE/LEGACY/` — valid, audited, and safe, but superseded, off the current route, or otherwise lower priority.
+- `RESULTS/UNUSABLE/QUARANTINED/` — live repair targets that must not be used as trusted premises.
+- `RESULTS/UNUSABLE/INVALID/` — known-invalid mathematics retained because the failure itself is durably useful.
 
 Old is not the same as unsafe. A superseded theorem may remain perfectly valid and belongs under `USABLE/LEGACY`, not `UNUSABLE`.
 
@@ -111,6 +115,8 @@ Exact result references inside proofs remain valuable, but the architecture does
 
 **Theorem application is proof-aware.** Before using a result as an inference, understand the proof mechanism well enough to preserve structure that survives the specialization: witnesses, physical vertices, path orders, selected states, cuts, signs, ancestry, equality conditions, exceptional branches, or other information that may matter downstream. The statement is a minimum contract, not an instruction to discard what the proof already paid for.
 
+An unaudited Slack result is not forbidden mathematics. Any worker may use it, but **the worker must audit the exact result they intend to rely on before using it as a premise**. This contemporaneous self-audit is part of the theorem application, not optional cleanup for later. If the audit passes or yields an adjusted valid result, mark the Slack root accordingly and persist the audited result to GitHub immediately. This distributes verification across the consumers who actually need a claim and prevents a separate audit backlog from becoming a bottleneck.
+
 ## Slack
 
 Slack is an attention surface, not a second durable record. Its purpose is to expose the most valuable current facts with very low reading cost while allowing arbitrary supporting detail to remain attached and searchable in threads.
@@ -118,11 +124,10 @@ Slack is an attention surface, not a second durable record. Its purpose is to ex
 Permanent channels:
 
 - `#a7c3-control` — low-volume changes that can redirect or invalidate current work: Director guidance, quarantines, architecture changes, major strategic pivots, and other control-plane deltas.
-- `#a7c3-workspace` — mathematics happening now that another active Researcher could plausibly use or act on: discoveries, partial arguments, useful failures, questions, cross-worker observations, and notices that durable mathematics was written to GitHub.
-- `#a7c3-audit` — adversarial verification, suspected gaps, dependency failures, repair work, invalidations, and clearances.
-- `#a7c3-lab` — lower-pressure ephemeral research chatter worth retaining: interesting observations, motivated conjectures, speculative connections, constructions or examples that may generalize, counterexample intuitions, half-formed abstractions, and other unexpected mathematical talk that does not yet belong in control, workspace, audit, or GitHub.
+- `#a7c3-workspace` — mathematics happening now that another active Researcher could plausibly use or act on: discoveries, partial arguments, useful failures, questions, cross-worker observations, audit status attached to those findings, and notices that durable mathematics was written to GitHub.
+- `#a7c3-lab` — lower-pressure ephemeral research chatter worth retaining: interesting observations, motivated conjectures, speculative connections, constructions or examples that may generalize, counterexample intuitions, half-formed abstractions, and other unexpected mathematical talk that does not yet belong in control, workspace, or GitHub.
 
-The routing threshold matters. If a finding should change what another active Researcher does now, put it in `#a7c3-workspace`. If it changes trust or correctness, put it in `#a7c3-audit`. If it redirects the team, put it in `#a7c3-control`. Otherwise, if it is interesting enough that future workers may want to rediscover it, `#a7c3-lab` is the default home.
+The routing threshold matters. If a finding should change what another active Researcher does now, put it in `#a7c3-workspace`. Audit its root in place rather than creating a parallel audit message elsewhere. If a trust change or failure redirects the team or invalidates active dependencies, also surface that consequence in `#a7c3-control`. Otherwise, if something is interesting enough that future workers may want to rediscover it but it is not yet operationally important, `#a7c3-lab` is the default home.
 
 Temporary campaign channels are allowed when one campaign would genuinely overwhelm the main workspace channel.
 
@@ -136,18 +141,51 @@ Put the proof, construction, derivation, interpretation guidelines, caveats, exa
 
 The same discipline applies by channel:
 
-- In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture.
-- In `#a7c3-audit`, the root is the exact audit verdict or fence, including enough scope to know what passes, fails, is repaired, or remains uncontaminated.
+- In `#a7c3-workspace`, the root is the precise mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture, together with its compact audit suffix once audited.
 - In `#a7c3-control`, the root is the exact guidance, quarantine, trust change, architecture change, or strategic redirection. Rationale and implementation detail belong in the thread.
 - In `#a7c3-lab`, the root is the precise provisional observation, conjecture, construction, example, analogy, or counterexample intuition, with conjectural status made explicit when needed.
 
-If a thread produces a genuinely new mathematical finding or a new control/audit fact, create a new root headline for that new fact rather than burying it in the old thread.
+If a thread produces a genuinely new mathematical finding or a new control fact, create a new root headline for that new fact rather than burying it in the old thread.
 
 Each permanent channel may keep one compact pinned opener that states the channel's routing purpose. The durable policy governing those channels lives here in GitHub, not in the pinned Slack text. Pinned openers are convenience signage and may be reconstructed from this document.
 
+### Audit stays attached to the finding
+
+Audit is metadata and discussion attached to a mathematical finding, not a separate page that workers must later correlate back to the mathematics.
+
+When a Slack mathematical root is audited, edit that same root to append exactly one compact status:
+
+- `(PASS)` — the precise root statement survives audit as written.
+- `(FAIL)` — the root statement is not safe to use as a mathematical premise.
+- `(PASS_ADJUSTED)` — the audit found a valid nearby statement only after correction, narrowing, or another substantive adjustment.
+
+The audit reasoning belongs in the existing thread under that root. For `(PASS_ADJUSTED)`, the thread must state the exact surviving adjustment. If leaving the original root wording would itself be materially misleading after adjustment, edit the mathematical statement in the root to the precise surviving version and retain `(PASS_ADJUSTED)` so the history of adjustment remains immediately visible.
+
+There is no separate routine audit channel. A worker encountering a root can see its trust status in the same place as the mathematical statement. An unaudited root simply has no audit suffix.
+
+### Audit on use
+
+Unaudited results are available for research, but not for blind composition. A worker may rely on an unaudited Slack result only after auditing the exact claim they need. The worker may perform that audit themselves; they do not need to wait for a dedicated Auditor.
+
+If the result passes, append `(PASS)`. If it survives only after correction, append `(PASS_ADJUSTED)` and record the exact adjustment in the thread. If it fails, append `(FAIL)` and record the failure in the thread. A failed result cannot be used as a premise unless a new repaired statement is formulated and audited in its own right.
+
+This rule deliberately pushes verification toward the point of mathematical consumption. A result that nobody needs need not consume audit attention merely because it was posted, while a result that becomes load-bearing is checked by the worker about to load it.
+
+### Audited means persisted
+
+**Completing an audit creates an immediate persistence obligation.** Do not leave an audited result living only in Slack.
+
+- A `(PASS)` result should be written promptly to its appropriate durable GitHub location with the audited statement and proof.
+- A `(PASS_ADJUSTED)` result should be written promptly to GitHub using only the final corrected mathematical statement and proof. Do not preserve the superseded pre-audit statement as a competing durable theorem version merely to mirror the Slack history; Git already records future durable edits.
+- A `(FAIL)` result should not enter `RESULTS/USABLE/`. If the invalid result or its failure is important enough to preserve, put the final invalidation or fence in `RESULTS/UNUSABLE/INVALID/` or the relevant `WORKSPACE/` development, whichever best matches the mathematical object.
+
+If the audited result changes the proof spine, obligations, strategy, trust of existing durable results, or other current durable mathematics, update those surfaces in the same integration pass rather than leaving GitHub semantically behind Slack.
+
+The Slack thread may retain the exploratory proof, audit discussion, counterexamples, and correction history. GitHub should contain the final durable mathematical object.
+
 ### Slack is provisional
 
-Slack is provisional by default. `#a7c3-lab` is especially provisional: it is a searchable memory of interesting chatter, not a theorem registry or source of authority. If durable mathematics will rely on a Slack finding, promote that finding to GitHub first or together with the dependent mathematics. If a lab observation becomes strategically or operationally important, surface it again in the appropriate higher-signal Slack channel rather than assuming workers monitor the lab continuously.
+Slack is provisional by default. `#a7c3-lab` is especially provisional: it is a searchable memory of interesting chatter, not a theorem registry or source of authority. If durable mathematics will rely on a Slack finding, audit it and promote the resulting final mathematics to GitHub first or together with the dependent mathematics. If a lab observation becomes strategically or operationally important, surface it again in the appropriate higher-signal Slack channel rather than assuming workers monitor the lab continuously.
 
 Architecture, routing rules, and channel-use conventions belong in GitHub `ARCHITECTURE.md`, not in Slack.
 
@@ -169,6 +207,8 @@ Mantles change posture, not permission. They are not stored as project state. On
 ### Auditor / Repairer
 
 A dedicated **Auditor / Repairer** conversation is useful because adversarial verification benefits from persistent cognitive posture. Its job is to attack load-bearing results, trace mathematical damage, and repair the result or its descendants when possible. It is not restricted to issuing verdicts.
+
+The Auditor works on the same mathematical objects as everyone else: audit status is written onto the originating Slack root, audit reasoning stays in that root's thread, and completed audit mathematics is persisted immediately to GitHub. The dedicated Auditor is therefore a cognitive specialization, not the owner of a separate audit ledger.
 
 A repair produced by the Auditor may still deserve independent checking when it becomes load-bearing.
 
@@ -196,16 +236,16 @@ A deliberately isolated Independent conversation may still be used when locality
 
 Promotion should be boring.
 
-- A standalone reusable theorem goes in `RESULTS/`.
-- Connected evolving proof architecture goes in the appropriate `WORKSPACE/` development.
+- A standalone reusable theorem is promoted to `RESULTS/` immediately after audit.
+- Connected evolving proof architecture goes in the appropriate `WORKSPACE/` development, with reusable theorem-level claims promoted after audit.
 - A change in the closure map updates `PROOF_SPINE.md`.
 - A stable unresolved requirement updates `OBLIGATIONS.md`.
 - A strategic reinterpretation updates `STRATEGY/CURRENT.md`.
-- A trust failure moves or edits the result itself and should be announced in `#a7c3-control` when current work could be affected.
+- A trust failure moves or edits the durable result itself and should be announced in `#a7c3-control` when current work could be affected.
 
 Integration is mathematical research, not clerical filing. A result is not fully integrated merely because it was cited or placed in the right folder. Integration asks how its proof mechanism changes what can now be proved.
 
-Audit does not create a parallel permanent review universe. Trust changes should be reflected in the mathematical object and its folder. Reusable audit mathematics becomes ordinary durable mathematics.
+Audit does not create a parallel permanent review universe. Its visible status stays attached to the originating Slack finding, and its final mathematical outcome enters the ordinary durable record immediately. Reusable audit mathematics becomes ordinary durable mathematics.
 
 ## Concurrency
 
@@ -224,6 +264,7 @@ There is deliberately no hidden second research operating system behind GitHub:
 - no separate theorem registry beyond the files themselves;
 - no mandatory semantic-tag service;
 - no dependency server;
+- no separate audit ledger;
 - no durable Slack mirror;
 - no explicit revision database.
 
