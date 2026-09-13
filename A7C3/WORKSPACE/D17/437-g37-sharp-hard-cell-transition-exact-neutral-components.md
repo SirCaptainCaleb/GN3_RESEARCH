@@ -1,10 +1,12 @@
-# Every neutral component in the sharp hard cell has zero transition weight
+# D17.437 — Sharp hard-cell transition ledger: exact neutral weights with a common-edge branch
 
-**Workspace:** D17
-**State:** established
+**Workspace:** D17  
+**State:** provisional workspace mathematics; this qualification is not an audit verdict  
 **Key:** `g37-sharp-hard-cell-transition-exact-neutral-components`
 
-**Summary:** In the sharp hard cell `tau(F)=3`, `tau(J)=1`, `w(C_*)=2`, every delta-zero symmetric-difference component has transition weight exactly zero. D17.416 gives `w(D)<=0` for each neutral component, while D17.434 gives total neutral weight `W_0=0`; therefore no neutral component can be transition-negative. In the v-rooted cell of D17.435-D17.436 this yields an exact placement dichotomy. If `C_*` carries `2F/0J` crossing incidences, then the unique old F transition off `C_*` is the other X-mated source gate and the unique J transition is also off `C_*`; they must lie on the same neutral component, whose transition ledger is exactly `1F/1J`, and every other neutral component is transition-free. If `C_*` carries `3F/1J`, then all transition incidences already lie on `C_*` and every neutral component is transition-free. Thus neutral normalization is not merely non-increasing in the sharp cell: it is transition-exact component by component, and in the `2F/0J` v-rooted residue the missing source gate is tied to one unique transition-bearing neutral component rather than disappearing into anonymous off-corridor ancestry.
+**Summary.** In the sharp hard cell `tau(F)=3`, `tau(J)=1`, `w(C_*)=2`, every neutral symmetric-difference component has transition weight exactly zero. That componentwise identity survives unchanged. The stronger previous placement statement in the `2F/0J` v-rooted residue needs an extra branch: the unique F-transition off `C_*` and the unique J-transition off `C_*` may be the same COMMON selected edge in `F intersect J`, which lies outside the symmetric difference. Only when the remaining F-transition is noncommon is it forced onto a neutral component together with the unique J-transition. The sharp counts alone therefore do not exclude the COMMON branch.
+
+This file records the qualification exposed during source-complement integration. The originating Slack finding was not being given an audit verdict by this edit. See the canonical provisional development [`../source-complement-zipper.md`](../source-complement-zipper.md), especially its section on common selected transitions, for the explicit matching-level fixture and current downstream scope.
 
 ## 1. Sharp hard-cell input
 
@@ -26,6 +28,8 @@ D17.434 computes from the global transition gap that
 
 `W_0=tau(F)-tau(J)-w(C_*)=2-2=0`.                         (NE.2)
 
+Here `w(D)` is the F-crossing count minus the J-crossing count contributed by the selected edges actually lying on the symmetric-difference component `D`. A selected edge common to `F` and `J` is not a component edge of `F triangle J` and must be tracked separately when locating individual transitions.
+
 ## 2. Every neutral component has weight zero
 
 By (NE.1), every summand in `W_0` is nonpositive. By (NE.2), their sum is zero. Therefore
@@ -34,11 +38,11 @@ By (NE.1), every summand in `W_0` is nonpositive. By (NE.2), their sum is zero. 
 
 So in the sharp cell neutral normalization preserves the transition ledger component by component. There is no hidden negatively weighted neutral component compensated elsewhere.
 
-This strengthens the generic inequality from D17.416 only in the sharp numerical cell.
+This strengthens the generic inequality from D17.416 only in the sharp numerical cell. It does **not** by itself say where a transition carried by a common selected edge lies, because such an edge is outside the symmetric-difference components.
 
-## 3. Consequence in the v-rooted 2F/0J branch
+## 3. The v-rooted 2F/0J branch
 
-Now assume the v-rooted residual geometry of D17.435 and the first transition-placement case of D17.436:
+Assume the v-rooted residual geometry of D17.435 and the first transition-placement case of D17.436:
 
 `C_*` contains exactly `2` F-transitions and `0` J-transitions. (NE.4)
 
@@ -47,58 +51,59 @@ Globally F has exactly three transitions and J exactly one. Hence outside `C_*` 
 - one F-transition;
 - one J-transition.                                       (NE.5)
 
-By D17.435 the three F-transitions are precisely
+By D17.435 the three F-transitions are the unique v-B transition and the two X-mated source gates of the three-spoke block. D17.436 places the v-transition plus one forward X-mated source gate on `C_*`. Hence the unique remaining F-transition is the other X-mated source gate.
 
-1. the unique v-B transition;
-2. the left X-mated source gate of the three-spoke block;
-3. the right X-mated source gate of the three-spoke block.
+At this point there are two logically distinct possibilities.
 
-D17.436 shows that on `C_*` one has the v-transition plus one forward X-mated source gate. Therefore the unique off-augmenter F-transition in (NE.5) is the **other X-mated source gate**.
+### 3a. COMMON GATE
 
-Let `D_s` be the neutral symmetric-difference component containing that off-augmenter source gate. Since this F-edge crosses `X|B`, its contribution to `w(D_s)` is `+1`. By (NE.3), `w(D_s)=0`, so `D_s` must contain at least one J-transition.
+The remaining F-transition and the unique J-transition may be the **same selected edge**, lying in `F intersect J`. Such an edge is outside `F triangle J`, so there is no neutral symmetric-difference component containing it. In this branch every neutral component is transition-free even though one F-transition and one J-transition remain outside `C_*` globally.
 
-But there is only one J-transition globally, and none lies on `C_*` by (NE.4). Therefore that unique J-transition lies on `D_s`.
+### 3b. NEUTRAL GATE
 
-Since there are no other transition incidences available outside `C_*`, the transition ledger of `D_s` is exactly
+If the remaining F-transition is **not** common, then it lies on a neutral symmetric-difference component; call it `D_s`. Its F-crossing contribution is `+1`. By (NE.3), `w(D_s)=0`, so `D_s` must also carry a J-transition. The unique global J-transition is off `C_*` by (NE.4), hence it is that J-transition. There are no further transition incidences outside `C_*`, so the ledger of `D_s` is exactly
 
 `1 F-transition - 1 J-transition = 0`.                    (NE.6)
 
-Every other neutral component contains no transition at all.
+Every other neutral component is transition-free.
 
-Thus in the `2F/0J` v-rooted cell, the source gate omitted from the augmenter is not free-floating ancestry. It belongs to one unique transition-bearing zero-weight neutral component together with the unique J-transition.
+Therefore the safe `2F/0J` conclusion is a dichotomy, not compulsory neutral placement:
 
-## 4. Consequence in the v-rooted 3F/1J branch
+- **COMMON GATE:** the remaining source gate and unique J-transition are the same common selected edge; all neutral components are transition-free.
+- **NEUTRAL GATE:** the remaining source gate and unique J-transition lie together on one zero-weight neutral component; every other neutral component is transition-free.
+
+Excluding the COMMON GATE branch requires an additional argument from the actual canonical word or another hypothesis. It is not a consequence of the sharp transition counts alone.
+
+## 4. The v-rooted 3F/1J branch
 
 Assume instead the second D17.436 case:
 
 `C_*` contains exactly `3` F-transitions and `1` J-transition. (NE.7)
 
-These are all transition incidences present globally. Hence every selected F-edge and J-edge on every neutral component is same-side with respect to `X|B`.
-
-Therefore every neutral component is literally transition-free:
+These exhaust the global transition incidences. Hence every selected F-edge and J-edge on every neutral component is same-side with respect to `X|B`, and every neutral component is literally transition-free:
 
 `#F-cross(D)=#J-cross(D)=0`.                               (NE.8)
 
-This is stronger than merely knowing `w(D)=0`.
+This part of the previous placement statement needs no common-edge correction.
 
 ## 5. Exact residual ledger
 
-The v-rooted hard cell therefore has only two transition-placement patterns:
+The v-rooted hard cell therefore has three transition-placement patterns once common selected edges are kept visible:
 
-1. **AUGMENTER-PLUS-NEUTRAL SOURCE PAIR:** `C_*` contains the v-transition and one forward X-mated source gate, with no J-transition. The opposite X-mated source gate and the unique J-transition lie together on one zero-weight neutral component; every other neutral component is transition-free.
-2. **ALL-TRANSITIONS-ON-AUGMENTER:** `C_*` contains v, both X-mated source gates, and the unique J-transition. Every neutral component is transition-free.
+1. **AUGMENTER + COMMON SOURCE GATE:** `C_*` contains the v-transition and one forward X-mated source gate, with no J-transition; the opposite X-mated source gate is also the sole J-transition as one common selected edge outside the symmetric difference; every neutral component is transition-free.
+2. **AUGMENTER + NEUTRAL SOURCE GATE:** `C_*` contains the v-transition and one forward X-mated source gate, with no J-transition; the opposite X-mated source gate and the unique J-transition lie together on one zero-weight neutral component; every other neutral component is transition-free.
+3. **ALL TRANSITIONS ON AUGMENTER:** `C_*` contains v, both X-mated source gates, and the unique J-transition; every neutral component is transition-free.
 
-In either case, every transition-bearing object is now explicitly located. There is no residual transition weight hidden in an unnamed neutral component.
+Thus the componentwise zero-weight conclusion is exact, but a common selected edge is a third ledger location that must not be erased by symmetric-difference bookkeeping.
 
-## 6. Consequence for ancestry transport
+## 6. Scope and downstream use
 
-D17.416 may normalize neutral components to F without increasing transition count. In the sharp hard cell, (NE.3) shows this normalization changes **no** transition count on any component. In the `2F/0J` residue, doing so flips the unique transition-bearing neutral component from its J-state to its F-state while preserving one-for-one crossing count and installing the omitted X-mated source gate as its F crossing.
+D17.416 may normalize neutral components to F without increasing transition count. Equation (NE.3) shows that such normalization changes no transition weight on any neutral component in the sharp cell. In the NEUTRAL GATE branch it installs the omitted X-mated source gate on the transition-bearing neutral component while preserving one-for-one crossing count. In the COMMON GATE branch there is no transition-bearing neutral component to normalize: the omitted gate is already common.
 
-Therefore any attempt to reflect the first-loss zipper while preserving the sharp-cell ancestry must account for both X-mated source gates:
+D17.436's forward source-gate conclusion is based on the augmenter counts and is not invalidated merely by this common-edge possibility. What fails without an additional argument is the stronger inference that the other source gate must live on a unique transition-bearing neutral component.
 
-- one occurs forward on `C_*` by D17.436;
-- the other either also lies on `C_*`, or lies on the unique zero-weight transition-bearing neutral component paired with the unique J crossing.
+The explicit matching-level fixture in [`../source-complement-zipper.md`](../source-complement-zipper.md) shows that the sharp counts and source-block data alone permit the COMMON GATE pattern. That fixture is **not** asserted to realize every canonical endpoint-cut/gate hypothesis, a smallest counterexample, or a global counterexample. If the full canonical construction excludes the common case, that exclusion still needs to be proved from the actual word.
 
-This section does not yet prove a zipper absorber or a physical splice. It removes transition ambiguity from the neutral components and makes the second source gate durable ledger data rather than ambient provenance.
+This section does not prove a zipper absorber, a physical splice, Hamiltonicity of a source complement, or a valid global descent. It preserves the exact numerical ledger while fencing the unresolved physical and canonical-word requirements.
 
 No R24, R5, payment, replay, pair-deletion reflection, SAT, or MILP is used.
