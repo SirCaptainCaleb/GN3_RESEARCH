@@ -1,8 +1,6 @@
-name: Temporary A7C3 corpus migration
+name: Temporary A7C3 R1 nonactive-result migration
 
 on:
-  issues:
-    types: [opened]
   pull_request:
     types: [opened]
 
@@ -11,24 +9,22 @@ permissions:
   id-token: write
 
 jobs:
-  migrate:
-    if: >-
-      (github.event_name == 'issues' && github.event.issue.title == 'A7C3 corpus migration trigger 2026-09-12') ||
-      (github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'migration-corpus-20260912')
+  migrate-r1:
+    if: github.event.pull_request.head.ref == 'migration/nonactive-results-r1-20260912'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: migration-corpus-20260912
+          ref: migration/nonactive-results-r1-20260912
           fetch-depth: 0
 
-      - name: Guard staging frontier
+      - name: Guard branch frontier
         shell: bash
         run: |
           set -euo pipefail
-          git merge-base --is-ancestor 42eb54bde5a1d69313c6a5e5bf9c2625240922a6 HEAD
-          test "$(git rev-parse 42eb54bde5a1d69313c6a5e5bf9c2625240922a6:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
-          test "$(git rev-parse HEAD:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
+          BASE=813c6d1e081cf9d773d0af948f492422a507fae7
+          test "$(git merge-base HEAD "$BASE")" = "$BASE"
+          git diff --quiet "$BASE" -- A7C3/RESULTS/USABLE/ACTIVE A7C3/WORKSPACE A7C3/STRATEGY A7C3/REFERENCES
 
       - name: Fetch authoritative Supabase snapshot through GitHub OIDC
         shell: bash
@@ -43,52 +39,133 @@ jobs:
           import json, os
           p=json.load(open('/tmp/a7c3-snapshot.json'))
           if 'error' in p: raise RuntimeError(p['error'])
-          print('snapshot bytes', os.path.getsize('/tmp/a7c3-snapshot.json'), 'exported_at', p['exported_at'])
+          print('snapshot_bytes', os.path.getsize('/tmp/a7c3-snapshot.json'), 'exported_at', p['exported_at'])
           PY
 
-      - name: Migrate remaining active workspaces
+      - name: Render owned result subtrees
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name "A7C3 Migration"
-          git config user.email "a7c3-migration@users.noreply.github.com"
-          python scripts/a7c3_migrate.py workspaces
-          test "$(git rev-parse HEAD:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
-          git add -A A7C3/WORKSPACE
-          git diff --cached --quiet || git commit -m "Migrate remaining active workspaces"
-
-      - name: Migrate active usable results
-        shell: bash
-        run: |
-          set -euo pipefail
-          python scripts/a7c3_migrate.py active
-          git add -A A7C3/RESULTS/USABLE/ACTIVE
-          git diff --cached --quiet || git commit -m "Migrate active usable result corpus"
-
-      - name: Migrate usable legacy results
-        shell: bash
-        run: |
-          set -euo pipefail
+          git config user.name "A7C3 Migration R1"
+          git config user.email "a7c3-migration-r1@users.noreply.github.com"
           python scripts/a7c3_migrate.py legacy
-          git add -A A7C3/RESULTS/USABLE/LEGACY
-          git diff --cached --quiet || git commit -m "Migrate usable legacy result corpus"
-
-      - name: Migrate unusable and quarantined results
-        shell: bash
-        run: |
-          set -euo pipefail
           python scripts/a7c3_migrate.py unusable
-          git add -A A7C3/RESULTS/UNUSABLE
-          git diff --cached --quiet || git commit -m "Migrate unusable and quarantined result corpus"
 
-      - name: Audit candidate and remove staging scaffolding
+      - name: Independently verify authoritative bytes and corpus identity
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/a7c3_migrate.py audit
-          test "$(git rev-parse HEAD:A7C3/WORKSPACE/D17)" = "02bc036b1b37a15a9dcd56fa5ad628358aef8b3c"
-          git rm -f scripts/a7c3_migrate.py .github/workflows/a7c3-corpus-migrate.yml
-          git commit -m "Remove migration staging scaffolding"
+          python - <<'PY'
+          import json, hashlib, re
+          from pathlib import Path
+          S=json.load(open('/tmp/a7c3-snapshot.json', encoding='utf-8'))
+          root=Path('.')
+          claims=S['results']['claims']
+          revs={int(r['id']):r for r in S['results']['revisions']}
+          health={int(h['revision_id']):h for h in S['results']['health']}
+          proofs={int(p['id']):p for p in S['results']['proofs']}
+          links={}
+          for pc in S['results']['proof_conclusions']:
+              links.setdefault(int(pc['claim_revision_id']),[]).append(pc)
+          claim_by_rid={int(c['current_revision_id']):c for c in claims}
+          def nonempty(v): return v is not None and v != ''
+          def choose(rid, linkmap, proofmap):
+              cs=[]
+              for pc in linkmap.get(rid,[]):
+                  p=proofmap.get(int(pc['proof_id']))
+                  if p and nonempty(p.get('proof_text')): cs.append((pc,p))
+              if not cs: return None
+              pref=[(pc,p) for pc,p in cs if bool(pc.get('is_preferred')) or bool(p.get('is_preferred'))]
+              if pref:
+                  if len(pref)!=1: raise RuntimeError(f'R{rid} explicit preferred ambiguity {len(pref)}')
+                  return pref[0][1]
+              return max(cs,key=lambda q:(bool(q[1].get('dependency_complete')),bool(q[1].get('is_valid')),q[1].get('review_status')=='accepted',int(q[1]['id'])))[1]
+          def cls(rid,c,r,h):
+              if bool(h.get('usable')): return 'USABLE/ACTIVE' if c.get('lifecycle_status')=='active' else 'USABLE/LEGACY'
+              if r.get('is_valid') is False or c.get('lifecycle_status')=='invalidated': return 'UNUSABLE/INVALID'
+              return 'UNUSABLE/QUARANTINED'
+          def add(parts,heading,v):
+              if not nonempty(v): return
+              parts += [f'## {heading}\n',v]
+              if not v.endswith('\n'): parts.append('\n')
+              parts.append('\n')
+          def render(rid,c,r,h,p,historical=False):
+              if r.get('agent_id') != f'R{rid}': raise RuntimeError(f'agent mismatch R{rid}')
+              k='UNUSABLE/QUARANTINED' if historical else cls(rid,c,r,h)
+              parts=[f'# R{rid} — {c["title"]}\n\n']
+              if k!='USABLE/ACTIVE':
+                  parts.append(f'**Record status:** `{k}`')
+                  if historical: parts.append(' (preserved historical quarantined revision)')
+                  parts.append('\n\n')
+              for heading,key in [('Statement','statement'),('Hypotheses','hypotheses'),('Scope','scope'),('Applicability','applicability'),('Persistence','persistence'),('Exclusions / nonclaims','exclusions_nonclaims')]: add(parts,heading,r.get(key))
+              safety=k.startswith('UNUSABLE/') or c.get('lifecycle_status')!='active' or r.get('review_status')!='accepted' or r.get('is_valid') is False
+              if safety:
+                  notes=[]
+                  for label,v in [('Lifecycle',c.get('lifecycle_status')),('Lifecycle note',c.get('lifecycle_note')),('Curation note',c.get('curation_note')),('Validity note',r.get('validity_note')),('Review status',r.get('review_status')),('Review note',r.get('review_note'))]:
+                      if nonempty(v): notes.append(f'- **{label}:** {v}')
+                  if notes: parts.append('## Record notes\n'+'\n'.join(notes)+'\n\n')
+              parts.append('## Proof\n')
+              if p is None: parts.append('No preferred proof was present in the authoritative Supabase record.\n')
+              else:
+                  parts.append(p['proof_text'])
+                  if not p['proof_text'].endswith('\n'): parts.append('\n')
+              return ''.join(parts)
+          expected={}; current_proofs=0; current_no=0; class_counts={}
+          for rid,r in revs.items():
+              c=claim_by_rid[rid]; h=health[rid]; k=cls(rid,c,r,h)
+              class_counts[k]=class_counts.get(k,0)+1
+              if k not in ('USABLE/LEGACY','UNUSABLE/INVALID','UNUSABLE/QUARANTINED'): continue
+              p=choose(rid,links,proofs)
+              current_proofs += p is not None; current_no += p is None
+              path=f'A7C3/RESULTS/{k}/R{rid}.md'
+              expected[path]=render(rid,c,r,h,p).encode('utf-8')
+          hs=S['historical_results']
+          hrev={int(r['id']):r for r in hs['revisions']}; hclaims={int(c['id']):c for c in hs['claims']}; hh={int(h['revision_id']):h for h in hs['health']}; hp={int(p['id']):p for p in hs['proofs']}; hl={}
+          for pc in hs['proof_conclusions']: hl.setdefault(int(pc['claim_revision_id']),[]).append(pc)
+          r=hrev[24]; c=hclaims[int(r['claim_id'])]; h=hh.get(24,{'usable':False}); p=choose(24,hl,hp)
+          if bool(h.get('usable')): raise RuntimeError('historical R24 unexpectedly usable')
+          expected['A7C3/RESULTS/UNUSABLE/QUARANTINED/R24.md']=render(24,c,r,h,p,True).encode('utf-8')
+          historical_proof=int(p is not None); historical_no=int(p is None)
+          actual=set()
+          for base in [root/'A7C3/RESULTS/USABLE/LEGACY',root/'A7C3/RESULTS/UNUSABLE/INVALID',root/'A7C3/RESULTS/UNUSABLE/QUARANTINED']:
+              for f in base.glob('R*.md'):
+                  if re.fullmatch(r'R\d+\.md',f.name): actual.add(str(f))
+          if actual != set(expected):
+              raise RuntimeError(f'owned identity mismatch missing={sorted(set(expected)-actual)} extra={sorted(actual-set(expected))}')
+          mism=[]; manifest=[]
+          for path,b in sorted(expected.items()):
+              got=Path(path).read_bytes()
+              esha=hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()
+              asha=hashlib.sha1(b'blob '+str(len(got)).encode()+b'\0'+got).hexdigest()
+              if len(got)!=len(b) or asha!=esha: mism.append((path,len(b),len(got),esha,asha))
+              manifest.append((path,len(b),esha))
+          if mism: raise RuntimeError(f'byte/SHA mismatch {mism[:5]} total={len(mism)}')
+          if class_counts != {'USABLE/ACTIVE':272,'USABLE/LEGACY':287,'UNUSABLE/QUARANTINED':149}: raise RuntimeError(f'class drift {class_counts}')
+          if 'A7C3/RESULTS/UNUSABLE/QUARANTINED/R5.md' not in expected: raise RuntimeError('R5 location failure')
+          if len(expected)!=437: raise RuntimeError(f'expected 437 owned IDs, got {len(expected)}')
+          print(json.dumps({'verification':'PASS','owned_ids':len(expected),'legacy':287,'invalid_current':0,'quarantined_current':149,'historical_r24':1,'proof_bearing':current_proofs+historical_proof,'no_proof':current_no+historical_no,'r5':'A7C3/RESULTS/UNUSABLE/QUARANTINED/R5.md','r24':'A7C3/RESULTS/UNUSABLE/QUARANTINED/R24.md','sha_verified_files':len(manifest),'base64_repairs':[]},sort_keys=True))
+          PY
+          test "$(find A7C3/RESULTS/USABLE/LEGACY -maxdepth 1 -type f -name 'R*.md' | wc -l)" -eq 287
+          test "$(find A7C3/RESULTS/UNUSABLE/INVALID -maxdepth 1 -type f -name 'R*.md' | wc -l)" -eq 0
+          test "$(find A7C3/RESULTS/UNUSABLE/QUARANTINED -maxdepth 1 -type f -name 'R*.md' | wc -l)" -eq 150
+
+      - name: Commit owned corpus and restore temporary scaffold
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE=813c6d1e081cf9d773d0af948f492422a507fae7
+          git add -A A7C3/RESULTS/USABLE/LEGACY A7C3/RESULTS/UNUSABLE
+          git commit -m "Migrate non-active durable result corpus"
+          echo "CORPUS_COMMIT=$(git rev-parse HEAD)"
+          echo "LEGACY_TREE=$(git rev-parse HEAD:A7C3/RESULTS/USABLE/LEGACY)"
+          echo "UNUSABLE_TREE=$(git rev-parse HEAD:A7C3/RESULTS/UNUSABLE)"
+          git checkout "$BASE" -- .github/workflows/a7c3-corpus-migrate.yml
+          git rm -f scripts/a7c3_migrate.py
+          git add .github/workflows/a7c3-corpus-migrate.yml
+          git commit -m "Restore temporary migration scaffold"
+          git diff --quiet "$BASE" HEAD -- .github scripts A7C3/RESULTS/USABLE/ACTIVE A7C3/WORKSPACE A7C3/STRATEGY A7C3/REFERENCES
+          echo "FINAL_COMMIT=$(git rev-parse HEAD)"
+          echo "FINAL_LEGACY_TREE=$(git rev-parse HEAD:A7C3/RESULTS/USABLE/LEGACY)"
+          echo "FINAL_UNUSABLE_TREE=$(git rev-parse HEAD:A7C3/RESULTS/UNUSABLE)"
           test -z "$(git status --porcelain)"
-          git log --oneline --decorate -10
-          git push origin HEAD:migration-corpus-20260912
+          git push origin HEAD:migration/nonactive-results-r1-20260912
