@@ -134,7 +134,7 @@ Each permanent channel may keep one compact pinned opener that states the channe
 
 Slack is provisional by default. `#a7c3-lab` is especially provisional: it is a searchable memory of interesting chatter, not a theorem registry or source of authority. If durable mathematics will rely on a Slack finding, promote that finding to GitHub first or together with the dependent mathematics. If a lab observation becomes strategically or operationally important, surface it again in the appropriate higher-signal Slack channel rather than assuming workers monitor the lab continuously.
 
-There is no durable Slack meta layer. Architecture, routing rules, and channel-use conventions belong in GitHub `ARCHITECTURE.md`. If a `#a7c3-meta` channel exists, it is only a convenience pointer to the durable GitHub architecture and must not become a competing copy of it.
+Architecture, routing rules, and channel-use conventions belong in GitHub `ARCHITECTURE.md`, not in Slack.
 
 There is no formal Researcher-return object. Leave a concise live handoff only when another conversation actually needs one.
 
@@ -210,7 +210,6 @@ There is deliberately no hidden second research operating system behind GitHub:
 - no mandatory semantic-tag service;
 - no dependency server;
 - no durable Slack mirror;
-- no canonical Slack meta layer;
 - no explicit revision database.
 
 The filesystem is the model. Git is the history. Search is the retrieval layer. Slack is the room full of mathematicians.
