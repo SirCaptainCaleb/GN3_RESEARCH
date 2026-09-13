@@ -117,7 +117,6 @@ A7C3/
 ├── WORKSPACE/
 └── REFERENCES/
 ```
-
 ### Scratch, development, and results
 
 Most mathematical work is scratch work. That is normal. A long campaign produces many local observations, short chains of reasoning, abandoned routes, calculations, partial constructions, and lemmas that were useful once but do not deserve permanent foreground attention.
@@ -257,7 +256,6 @@ Routine auditing is chronological within the mathematical roots of `#a7c3-worksp
 There is one narrow exception. A load-bearing claim or dependency may receive targeted review out of chronological order when a concrete current argument or consequential strategic decision depends on that exact mathematics. Before reviewing it, state briefly why the claim warrants review now and identify the exact statement and proof being reviewed. Keep the verdict and reasoning attached to the original root and thread. Resolve every provisional dependency needed by the reviewed statement before granting trusted status, and persist the final audited mathematics under the ordinary canonical-result rules.
 
 A targeted audit does **not** advance the chronological frontier across skipped older roots, settle them, discard them, or create a second queue. After the targeted need is handled, routine auditing returns to the oldest remaining unaudited mathematical root. Existing Slack roots, threads, and durable result files are the entire mechanism; do not create a separate audit database, assignment system, or targeted-audit registry.
-
 Research use is deliberately more permissive than audit order. A worker may use a later unaudited result provisionally, provided the exact dependence is recorded clearly as described above. The worker may also choose targeted review when the exception genuinely applies, or clear the audit frontier through that result. What is forbidden is silently treating unaudited mathematics as trusted.
 
 If an audited result passes, prefix `[PASS]`. If it survives only after correction, prefix `[PASS_ADJUSTED]`. If it fails, prefix `[FAIL]`. A failed result cannot be used as a trusted premise unless a repaired statement is formulated and eventually audited in its own right. Any provisional descendants that used it must be rechecked.
@@ -314,7 +312,9 @@ For routine Slack audit, the Auditor follows the chronological frontier rule. A 
 
 The project has one logical **Director function**. Astra performs scarce high-value strategic passes when available. Between those passes, an Acting Director / Vice Director performs the same kind of work continuously. They are not competing strategic authorities and should update one current durable strategy.
 
-The Director's recurring intellectual cycle is: assess the real proof state, elevate to broader phenomena or representations, integrate proof-aware mathematics, moonshot toward closure, and guide the team with a small number of valuable focuses.
+The Director's recurring intellectual cycle is: **assess the real proof state, integrate proof-aware mathematics into the strongest actual frontier, elevate from that frontier to broader phenomena or representations, moonshot toward closure, and guide the team with a small number of valuable focuses.**
+
+The order is deliberate. **Integration before elevation** means first determine what the project can actually use once recent results, older mechanisms, surviving witnesses, exceptions, supersessions, and trust state are combined; only then ask what parent theorem, invariant, quotient, normal form, representation change, or stronger target best compresses or bypasses that machine. Integration here is strategic synthesis, not clerical consolidation and not commitment to the current machinery. After integrating, explicitly ask whether the integrated machine should exist at all. Elevation should be free to simplify, replace, or discard it before the moonshot.
 
 Guidance does **not** assign individual Researchers to tasks. Researchers choose opportunistically within the current target landscape. Overlap is allowed when useful.
 
@@ -322,7 +322,7 @@ All guidance that could affect current work belongs in `#a7c3-control`. The dura
 
 ### Conserve scarce Astra capacity
 
-By the user's direction, Astra is reserved for high-value strategic judgment: assess the genuine frontier, elevate to a stronger parent theorem or representation, attempt consequential moonshots, and choose a small number of team-wide focuses. Routine integration, consolidation, link maintenance, active-development migration, and follow-through belong by default to the Integrator and Vice Director.
+By the user's direction, Astra is reserved for high-value strategic judgment: assess the genuine frontier, integrate the load-bearing mathematics needed to identify the strongest actual state, elevate to a stronger parent theorem or representation, attempt consequential moonshots, and choose a small number of team-wide focuses. Routine consolidation, link maintenance, active-development migration, and follow-through belong by default to the Integrator and Vice Director.
 
 The Vice Director maintains the proof spine and current strategy after research waves, reconciles durable pointers and audit status, expands supporting dependencies, and performs ordinary synthesis and bookkeeping. The Integrator keeps coherent arguments enterable, preserves compatibility pointers while reorganizing active material, and ensures that one authoritative development survives any move. They prepare a compact Astra brief only when strategic judgment is genuinely needed: what changed, the exact surviving bottleneck, decisive evidence and trust qualifications, and the few questions needing Astra judgment. Existing GitHub and Slack surfaces suffice; no new registry or workflow layer is required.
 
