@@ -1,8 +1,24 @@
-# The v-rooted first-loss cell has a two-ended X-mated three-spoke source block
+# [FAIL] The v-rooted first-loss cell has a two-ended X-mated three-spoke source block
 
 **Workspace:** D17
-**State:** established
+**State:** invalidated by audit
 **Key:** `g37-v-rooted-cell-two-ended-x-mated-source-block`
+
+## Audit failure
+
+The displayed two-ended source-block conclusion is **not currently proved by the self-sufficient durable record**. Its central input is the claimed D17.418 tau-three block normal form, including
+
+`b_X=2`, `b_B=3`, `d_F(v)=1`, `e_XX=2`,
+
+together with the decomposition into one endpoint X-block containing `v` and one internal source-only X-block. There is no `418-*` durable D17 source in the current repository, and searches of the current GitHub/Slack record do not locate a reconstructible proof of that normal form. D17.419 does not repair the gap: it explicitly imports the old source-degree law `SV101138` and branch-exhaustion input `SV109219`, whose proofs are likewise absent from the current self-sufficient durable record.
+
+Consequently the deductions `E_X={v}`, `I_X={p,q,r}`, the ordered segment `B_L -> s_1 -> s_2 -> s_3 -> B_R`, the claim that both boundary source gates are X-mated with opposite polarity, and the assertion that the third and only non-source transition is the `v-B` edge cannot presently be certified. This audit failure is a provenance/proof failure, not a counterexample to the mathematical statement.
+
+A much weaker observation may survive conditionally: if the D17.419 ancestry dichotomy is independently reconstructed, a genuine non-loop v-rooted first-loss rectangle cannot lie in the source-rooted SINGLETON-SPOKE branch and hence must lie in its X-MATED SOURCE GATE alternative. That weaker observation is not the advertised two-ended block theorem and is not promoted here as an audited standalone result.
+
+The historical argument is retained below for repair and provenance recovery.
+
+## Historical claim
 
 **Summary:** In the sole potentially source-anonymous first-loss cell isolated by D17.434, the installed frontier transition is incident with the unique non-spoke `v`. The tau-three block normal form D17.418 then sharpens drastically. Since `v` is the physical outer endpoint of the endpoint X-block `E_X` and has selected degree one, a transition incident with `v` forces `E_X={v}`. Hence the other X-block `I_X` contains all three source spokes and no other vertices. It is a literal directed tight three-spoke path bracketed by B on both sides. Its two boundary transitions are distinct source gates of opposite path polarity, and each endpoint source spoke has exactly one same-side `X-X` mate inside `I_X`. Thus the residual X-MATED ancestry is not a single arbitrary source gate: it is a two-ended, ordered, opposite-polarity pair of X-mated source gates carrying the complete old source-spoke order. The only possible v-rooted first-loss packet therefore retains substantially more orientation data than an anonymous K2,2 plus one mate.
 
