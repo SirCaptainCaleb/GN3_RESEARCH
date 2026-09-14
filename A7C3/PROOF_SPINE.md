@@ -39,7 +39,7 @@ Therefore, in a hypothetical counterexample, the induced subsystem
 
 is nonHamiltonian: any Hamilton path there is vertex-disjoint from the source P5 and the two paths would span `H`.
 
-This strictly contracts the live absorption problem. The current route no longer needs to begin by comparing three two-vertex complements `B union {v,s}`. Those adaptive complements remain valid optional consumers, but the first unavoidable obstruction is already the one-vertex extension `B+v`.
+This strictly contracts the live absorption problem. Adaptive complements `B union {v,s}` remain optional consumers, but the first unavoidable obstruction is already the one-vertex extension `B+v`.
 
 ## Audited local obstruction on v
 
@@ -48,7 +48,7 @@ This strictly contracts the live absorption problem. The current route no longer
 - either a directed star-triangle in the R887 comparison orientation;
 - or a reverse-spoke hook with the exact predecessor/right-flank endpoint variants stated in R1033.
 
-This certificate uses only R3/R887 and the tight path `B`. It is physical local comparison geometry, not yet a spanning absorber or a descent.
+This certificate lives in the **spectator-order coordinate system**: its `B` edges are consecutive edges of the displayed Hamilton path `B`.
 
 ## Canonical sharp-cell machinery
 
@@ -60,40 +60,42 @@ D17.425-427 convert a genuinely persistent wall at a source gate into literal so
 
 The coherent historical entry point for the source/zipper ancestry is [WORKSPACE/source-complement-zipper.md](WORKSPACE/source-complement-zipper.md). D17.433-D17.439 remain provisional workspace mathematics unless separately audited.
 
-## Sharp-data insufficiency fence
+The D17.421 first-loss rectangle lives in the **old-F / augmenter coordinate system**: its same-side `B-B` edge is selected by the old source cover and is not automatically an adjacent edge of the spectator Hamilton order. Therefore an R1033 hook and a D17.421 rectangle cannot simply be called overlapping or separated without a theorem relating these two coordinate systems.
 
-**PROVED FENCE.** Audited [R1032](RESULTS/INTERESTING/R1032.md) gives a globally edge-ordered realization with all of the following simultaneously:
+## Insufficiency fences
 
-- the three source turns and a Hamilton source P5;
-- tight Hamilton spectator `B`;
-- a physical old source two-cover `F` with `tau(F)=3` and internal source block;
-- a physical three-forest `J` with `tau(J)=1`;
-- nonHamiltonian `B union {v}`;
-- nonHamiltonian `S union {v}`.
+**PROVED FENCE.** Audited [R1032](RESULTS/INTERESTING/R1032.md) gives a globally edge-ordered realization with source turns, a Hamilton source P5, tight spectator `B`, physical `F` with `tau(F)=3`, physical `J` with `tau(J)=1`, and simultaneous nonHamiltonicity of `B union {v}` and `S union {v}`. Thus raw sharp source-frame data do not close O4.
 
-Thus raw source geometry, physicality of `F/J`, the sharp transition counts, and even the audited source-P5 contraction do **not** by themselves close O4. R1032 is not a smallest counterexample and deliberately does not realize the canonical D17.421 first-loss/gate ancestry. Consequently any successful next consumer must use some genuinely additional input: canonical synchronization with the first-loss/source-gate machinery, a valid minimal-counterexample consequence, or another stronger global invariant.
+**STRONGER PROVED FENCE.** Audited [R1034](RESULTS/INTERESTING/R1034.md) realizes, in one globally edge-ordered boundary tournament, the displayed static conclusions of the D17.391 quiet spectator-gate frame together with the same sharp physical `F/J` data and the stubborn `v` obstruction. In particular it has:
+
+- the noncyclic P4-free R516 signature-11 cell on `X`;
+- P5-freeness of both endpoint five-sets `X union {b_0}` and `X union {b_m}`;
+- both universal reverse endpoint stars;
+- physical `F,J` with `tau(F)=3,tau(J)=1` and an internal three-spoke source block;
+- nonHamiltonian `B union {v}` and `S union {v}`.
+
+R1034 is not a smallest counterexample and deliberately does **not** realize the dynamic provenance by which the quiet frame, canonical augmenter, and D17.421 first-loss switch are generated. Hence the static spectator-gate snapshot itself is exhausted as a possible missing hypothesis. A successful next argument must use genuinely dynamic/canonical provenance, a stronger minimal-counterexample consequence, or another global invariant absent from R1034.
 
 ## Live unresolved synchronization
 
-**UNRESOLVED.** The current bottleneck is to make the audited R1033 star/hook obstruction on `v` interact with the *canonical* sharp-cell structure that R1032 omits.
+**UNRESOLVED.** The current bottleneck is now a **coordinate/provenance bridge**: make the audited R1033 star/hook obstruction in spectator order interact with the canonical old-F/augmenter structure that R1034 omits.
 
 The most relevant retained mechanisms are:
 
-- the D17.421 first numerical-loss `K2,2` rectangle;
-- source marking / ordered source-block information from D17.433-D17.436, with their provisional trust status retained;
-- the D17.437 COMMON-edge alternative, which must not be silently removed;
-- the terminal source-boundary / residual-F mechanisms around D17.438-D17.439, again provisional unless audited;
+- D17.409-412: the unique source-bearing augmenter and first positive prefix;
+- D17.421: the first numerical-loss `K2,2` rectangle;
+- D17.433-D17.436: provisional source marking and ordered source-block ancestry;
+- D17.437: the COMMON-edge alternative, which must not be silently removed;
+- D17.438-D17.439: provisional terminal source-boundary / residual-F mechanisms;
 - audited R1028/R1029/R1030 where their exact hypotheses genuinely match.
 
-The problem is not to prove another generic insertion theorem. R1032 shows that generic integrable comparison geometry can preserve the reverse-hook obstruction together with the sharp counts.
+The problem is not to prove another generic insertion theorem or another theorem from the static endpoint-gate frame. R1032 and R1034 show that both abstractions can preserve the obstruction.
 
-**TARGET.** Prove a synchronization-or-cover theorem in the actual retained source frame: the canonical first-loss/source-gate packet and the R1033 local obstruction cannot coexist without producing at least one of
+**TARGET.** Prove one of the following stronger interfaces:
 
-1. a Hamilton path on `B union {v}`;
-2. another explicit spanning two-cover of `H`; or
-3. a literal tight acyclic exact two-cover of `G` with strict old-source transition improvement on the same `X|B` partition and a valid existing global consumer.
-
-A valid alternative is a stronger smallest-counterexample theorem that bypasses this synchronization entirely.
+1. **Provenance bridge:** the canonical generation of the augmenter / first-loss packet forces an R1033 hook or star comparison to coincide with, order, or constrain an old-F transition strongly enough to give a physical cover or strict old-source descent.
+2. **Minimality splice:** use the source P5 together with an exact two-cover of the proper subsystem `B union {v}` to force a spanning two-cover of `H`, bypassing the zipper synchronization entirely.
+3. **Stronger global contradiction:** derive another smallest-counterexample consequence that rules out the R1034-type obstruction.
 
 ## Secondary adaptive-complement interface
 
@@ -119,9 +121,10 @@ Keep these distinctions explicit whenever the route is summarized:
 - D17.428/SV118046's incomplete insertion window remains fenced.
 - D17.380's special-order and changed-turn warnings remain relevant.
 - D17.437's COMMON `F intersect J` branch remains live until explicitly excluded.
-- R1032 rules out any closure argument using only the displayed raw/sharp source-frame data.
+- R1032 rules out closure from raw sharp source-frame data alone.
+- R1034 additionally rules out closure from the displayed static D17.391 spectator-gate conclusions plus those sharp data.
 - Provisional D17.433-D17.439 claims remain provisional until actually audited.
 
 ## Secondary front
 
-O6 is the independent reconstruction of the singleton order floor and short-complement rigidity of R24. It is valuable but is not a prerequisite for pursuing the current O4 synchronization target.
+O6 is the independent reconstruction of the singleton order floor and short-complement rigidity of R24. It is valuable but is not a prerequisite for pursuing the current O4 bridge / splice target.
