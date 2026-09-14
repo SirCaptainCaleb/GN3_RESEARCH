@@ -18,6 +18,16 @@ Durable `main` may also advance for architecture, proof-spine, strategy, obligat
 
 Temporary branches are exceptional tools for work that genuinely benefits from isolation or review. They are not the default research workflow.
 
+## Workspace posting invariant
+
+**Before posting anything to `#a7c3-workspace`, enforce this invariant: the root is only a mathematically precise headline.** It contains the exact mathematical finding, obstruction, counterexample, reduction, or clearly marked conjecture, optionally preceded by one audit tag and optionally followed by `(INTERESTING)`.
+
+Everything that explains, qualifies, supports, or operationalizes that statement belongs in the thread: proofs, derivations, constructions, computations, examples, caveats, limitations, provisional dependencies, interpretation, routing, proposed actions, persistence pointers, and discussion. Do not put those materials in the root even when they are short. If a result needs proof or limitations recorded, post the precise root and then immediately add them as one or more replies in that same thread.
+
+Control guidance, trust changes, architecture changes, strategic redirections, and other non-mathematical control facts belong in `#a7c3-control`, not `#a7c3-workspace`. Lower-confidence speculative mathematics belongs in `#a7c3-lab` when it does not yet merit the workspace stream.
+
+This rule is intentionally duplicated near the top of the canonical entry point because connector reads of a long architecture file may truncate before later Slack-policy sections. **Do not infer posting format from nonconforming historical Slack roots; this architecture is authoritative.**
+
 ## Canonical entrance and initialization
 
 **This file is the single canonical entry point for A7C3. There is no separate bootstrap layer.** A fresh worker initializes once from current GitHub `main` by reading, in order:
