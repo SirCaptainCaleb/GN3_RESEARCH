@@ -1,18 +1,18 @@
-# [FAIL] Every v-rooted first-loss frontier has a forward X-mated source gate on the same augmenter
+# Every v-rooted first-loss frontier has a forward X-mated source gate on the same augmenter
 
 **Workspace:** D17
-**State:** invalidated by audit
+**State:** provisional; audit reopened for repair-first reconstruction
 **Key:** `g37-v-rooted-frontier-forward-x-mated-source-gate`
 
-## Audit failure
+## Repair status
 
 The numerical counting inside this argument is valid under the displayed sharp-cell totals: if `w(C_*)=2`, `tau(F)=3`, and `tau(J)=1`, then the transition-bearing incidences on `C_*` can only satisfy
 
 `(n_F,n_J)=(2,0)` or `(3,1)`.
 
-However, the advertised conclusion that one of the non-v F-transitions is a **source gate**, lies strictly after the v-transition, and is **X-mated** depends essentially on failed D17.435. D17.436 assumes that the three old F transitions are exactly the unique `v-B` transition plus the two endpoint source gates of the ordered three-spoke block. D17.435 failed audit because that block normal form is not reconstructibly proved in the current self-sufficient record. Without it, the counting alone does not identify the remaining F-transitions as source-bearing, much less X-mated.
+The unresolved point is the source interpretation of the non-v F-transitions. The original proof inherits from D17.435 that the three old F transitions are exactly the unique `v-B` transition plus the two endpoint X-mated source gates of an ordered three-spoke block. Since D17.435 has been reopened for repair, D17.436 is likewise reopened rather than failed.
 
-Thus the forward-source-gate theorem is not certified. The surviving `(2F,0J)/(3F,1J)` arithmetic is retained below as historical/local information but is too weak and too different from the advertised theorem to warrant `PASS_ADJUSTED` or promotion as a standalone result.
+The repair target is to derive the source-bearing and X-mated conclusion directly from the sharp-cell / first-positive-prefix hypotheses, or to combine a repaired D17.435 normal form with the valid counting below. Until then the source-gate conclusion remains provisional while the `(2F,0J)/(3F,1J)` arithmetic is retained as established local bookkeeping.
 
 ## Historical claim
 
