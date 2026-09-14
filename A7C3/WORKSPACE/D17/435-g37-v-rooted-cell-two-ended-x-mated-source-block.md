@@ -1,22 +1,18 @@
-# [FAIL] The v-rooted first-loss cell has a two-ended X-mated three-spoke source block
+# The v-rooted first-loss cell has a two-ended X-mated three-spoke source block
 
 **Workspace:** D17
-**State:** invalidated by audit
+**State:** provisional; audit reopened for repair-first reconstruction
 **Key:** `g37-v-rooted-cell-two-ended-x-mated-source-block`
 
-## Audit failure
+## Repair status
 
-The displayed two-ended source-block conclusion is **not currently proved by the self-sufficient durable record**. Its central input is the claimed D17.418 tau-three block normal form, including
+The original audit attempt found a real provenance gap: the displayed proof invokes a D17.418 tau-three block normal form, including
 
 `b_X=2`, `b_B=3`, `d_F(v)=1`, `e_XX=2`,
 
-together with the decomposition into one endpoint X-block containing `v` and one internal source-only X-block. There is no `418-*` durable D17 source in the current repository, and searches of the current GitHub/Slack record do not locate a reconstructible proof of that normal form. D17.419 does not repair the gap: it explicitly imports the old source-degree law `SV101138` and branch-exhaustion input `SV109219`, whose proofs are likewise absent from the current self-sufficient durable record.
+together with the decomposition into one endpoint X-block containing `v` and one internal source-only X-block. No `418-*` durable D17 source is presently available, and nearby D17.419 imports older labels `SV101138` and `SV109219` whose proofs are likewise not reconstructibly present.
 
-Consequently the deductions `E_X={v}`, `I_X={p,q,r}`, the ordered segment `B_L -> s_1 -> s_2 -> s_3 -> B_R`, the claim that both boundary source gates are X-mated with opposite polarity, and the assertion that the third and only non-source transition is the `v-B` edge cannot presently be certified. This audit failure is a provenance/proof failure, not a counterexample to the mathematical statement.
-
-A much weaker observation may survive conditionally: if the D17.419 ancestry dichotomy is independently reconstructed, a genuine non-loop v-rooted first-loss rectangle cannot lie in the source-rooted SINGLETON-SPOKE branch and hence must lie in its X-MATED SOURCE GATE alternative. That weaker observation is not the advertised two-ended block theorem and is not promoted here as an audited standalone result.
-
-The historical argument is retained below for repair and provenance recovery.
+That absence is proof debt, not a mathematical counterexample. The earlier `[FAIL]` verdict was therefore reopened. The current audit task is to reconstruct the needed block normal form directly from the stated sharp-cell hypotheses and surviving nearby machinery, or else derive the strongest exact adjusted theorem that does not require the missing historical source. Until that repair is completed, every conclusion below remains provisional.
 
 ## Historical claim
 
