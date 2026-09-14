@@ -1,8 +1,20 @@
-# Every v-rooted first-loss frontier has a forward X-mated source gate on the same augmenter
+# [FAIL] Every v-rooted first-loss frontier has a forward X-mated source gate on the same augmenter
 
 **Workspace:** D17
-**State:** established
+**State:** invalidated by audit
 **Key:** `g37-v-rooted-frontier-forward-x-mated-source-gate`
+
+## Audit failure
+
+The numerical counting inside this argument is valid under the displayed sharp-cell totals: if `w(C_*)=2`, `tau(F)=3`, and `tau(J)=1`, then the transition-bearing incidences on `C_*` can only satisfy
+
+`(n_F,n_J)=(2,0)` or `(3,1)`.
+
+However, the advertised conclusion that one of the non-v F-transitions is a **source gate**, lies strictly after the v-transition, and is **X-mated** depends essentially on failed D17.435. D17.436 assumes that the three old F transitions are exactly the unique `v-B` transition plus the two endpoint source gates of the ordered three-spoke block. D17.435 failed audit because that block normal form is not reconstructibly proved in the current self-sufficient record. Without it, the counting alone does not identify the remaining F-transitions as source-bearing, much less X-mated.
+
+Thus the forward-source-gate theorem is not certified. The surviving `(2F,0J)/(3F,1J)` arithmetic is retained below as historical/local information but is too weak and too different from the advertised theorem to warrant `PASS_ADJUSTED` or promotion as a standalone result.
+
+## Historical claim
 
 **Summary:** In the v-rooted residual cell of D17.434-D17.435, the unique augmenter `C_*` necessarily contains a source transition strictly after the first-loss v-transition. Indeed `w(C_*)=2`, while globally F has three transition edges and J has one, so the transition-bearing incidences on `C_*` are either `2F/0J` or `3F/1J`. In the first case the v-transition must be the first F-transition, so the other F-transition on `C_*` is a later source gate. In the second case both source gates and the unique J-transition lie on `C_*`; both source gates cannot precede the first-positive v-pivot because their two `+1` contributions can be offset by at most one J `-1`, which would force a positive prefix before v. Hence at least one source gate lies strictly after v. D17.435 shows both source gates are X-mated endpoints of the ordered three-spoke source block. Therefore the sole v-rooted first-loss cell always has a **forward X-mated source gate on the same alternating component**. If one source gate does occur before v in the `3F/1J` case, the unique J-transition must neutralize it before the v-pivot; this is the only possible pre-v source history.
 
