@@ -7,3 +7,4 @@ Do not promote ordinary incremental research here merely because it passed audit
 ## Index
 
 - `S9001` — [Reverse-Ear Lemma](S9001_REVERSE_EAR_LEMMA.md): a general Strong Level-(1) path-interaction theorem converting reverse-order path contacts into an exact adjacent reversal, a tight reverse trimer, or a vertex-simple proper tight cycle; includes the same-support comparison corollary and the warning that unlocalized Reverse-Ear output is ubiquitous and is not by itself a progress certificate.
+- `S9002` — [Punctured Component-Drop Pair Theorem](S9002_PUNCTURED_COMPONENT_DROP.md): a generic compiler from any path-cover component drop on one proper induced residue to a graph-intrinsic balanced opposite-sign pair; includes the cross-state/spare-vertex proof inline and the endpoint/internal exact-two-cover specialization.
