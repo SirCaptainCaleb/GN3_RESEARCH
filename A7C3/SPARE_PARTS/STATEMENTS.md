@@ -504,9 +504,13 @@ Thus a nine-bit three-exterior polarity table collapses to seven normal forms wh
 
 **Parallel-trimer lemma.** Let `a,c,p,q,r` be five distinct vertices. If `(a,p,c)`, `(a,q,c)`, `(a,r,c)` are tight, then the induced subsystem on `{a,c,p,q,r}` has a tight Hamilton path of order five.
 
-## S9019 — Every Edge-Ordered K7 Has a Two-Path Increasing Cover
+## S9019 — Edge-Ordered Complete Graphs Through Order Ten Have Two Increasing Paths
 
-Let K_7 have any strict total order on its 21 ordinary edges. Then its seven vertices can be partitioned into at most two vertex-disjoint increasing paths. Equivalently, no edge ordering of K_7 has increasing path-cover number at least three.
+Let `G` be a complete graph on `n<=10` vertices with a strict total order on its ordinary edges. Then `V(G)` can be partitioned into at most two vertex-disjoint increasing paths. Equivalently,
+
+`pc_inc(G) <= 2`
+
+for every edge-ordered `K_n` with `n<=10`.
 
 ## S9020 — Non-Hamiltonian K4 Structure and Overlap Amplification
 
@@ -679,3 +683,11 @@ Let G be a finite edge-ordered complete graph with pc_inc(G)>2. MINIMUM-DIMER CO
 ## S9038 — Reverse-Middle Two-Witness P4 Ear
 
 Let A,C,x,y be four distinct vertices in a Strong Level-(1) boundary tournament. If (A,x,C) and (A,y,C) are tight, then at least one of (A,x,C,y) and (A,y,C,x) is a tight Hamilton P4. More precisely, if (x,C,y) is tight the first path is tight; if it is bad, boundary antisymmetry makes `(y,C,x)` tight and the second path is tight.
+
+## S9039 — Three-of-Five Hamilton K4 Deletions
+
+Every edge-ordered `K5` has at least three vertex deletions whose remaining four vertices support an increasing Hamilton `P4`. Equivalently, at most two of its five induced `K4`s are non-Hamiltonian.
+
+Consequently, if `h_4(r)` denotes the number of four-subsets of an edge-ordered `K_r`, `r>=5`, that support an increasing Hamilton `P4`, then
+
+`h_4(r) >= (3/5) C(r,4)`.
