@@ -4,6 +4,8 @@ This directory contains deliberately rescued reusable mathematics from discarded
 
 Do not promote ordinary incremental research here merely because it passed audit. Prefer coherent Engine development. The admission test is nevertheless intentionally a little permissive: a result may belong here when its surrounding Engine is being discarded, when no coherent Engine applies, or when an archived local theorem, finite classification, augmentation move, extremal bound, or normalization lemma is independently reusable enough that future work should not have to rediscover it. Engine-sized frameworks and lane-specific bookkeeping still stay out.
 
+For ordinary Researcher initialization, skim [`STATEMENTS.md`](STATEMENTS.md): it is the flat proof-free catalog of every current spare-part statement. Open the individual `S####_*.md` files when proof, scope, exact conventions, or provenance matters.
+
 ## Index
 
 - `S9001` — [Reverse-Ear Lemma](S9001_REVERSE_EAR_LEMMA.md): a general Strong Level-(1) path-interaction theorem converting reverse-order path contacts into an exact adjacent reversal, a tight reverse trimer, or a vertex-simple proper tight cycle; includes the same-support comparison corollary and the warning that unlocalized Reverse-Ear output is ubiquitous and is not by itself a progress certificate.
