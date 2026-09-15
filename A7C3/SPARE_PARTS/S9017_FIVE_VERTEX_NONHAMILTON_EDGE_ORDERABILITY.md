@@ -1,82 +1,122 @@
 # S9017 — Five-Vertex Non-Hamiltonian Boundary Tournaments Are Edge-Orderable
 
 ## Theorem
+Let H be a boundary 3-tournament on exactly five vertices. If H has no directed tight Hamilton path, its line-graph comparison orientation Gamma(H) is acyclic. Equivalently there is a total order on E(K_5) realizing every tight turn as an increasing consecutive-edge comparison. In contrapositive form, any nonintegrable five-vertex boundary tournament is Hamiltonian.
 
-Let H be a boundary 3-tournament on exactly five vertices. If H has no directed tight Hamilton path, its line-graph comparison orientation Gamma(H) is acyclic. Equivalently there is a total order on E(K_5) realizing every tight turn as an increasing consecutive-edge comparison. In contrapositive form, any nonintegrable five-vertex boundary tournament is Hamiltonian. Consequently, in any boundary tournament with pc(H)>2, the five-vertex complement of any proper tight path is edge-orderable.
+Consequently, in any boundary tournament with pc(H)>2, the five-vertex complement of any proper tight path is edge-orderable.
 
 ## Proof
+Assume that H has no tight Hamilton P5. We prove that Gamma(H) is acyclic.
 
-Define one Boolean variable for each reversal pair of ordered triples on {0,1,2,3,4}; the positive representative has first vertex smaller than last. For every permutation p, the clause OR_i NOT tight(p_i,p_{i+1},p_{i+2}), i=0,1,2, asserts p is not Hamilton. The 120 clauses are therefore exactly the absence of a Hamilton P5, with no extra orientation assumptions.
+We use one forcing rule. If W=v_0v_1v_2v_3v_4 is a five-vertex word and two of its three consecutive turns are already tight, the third turn must be bad, since otherwise W is a Hamilton P5. Boundary antisymmetry therefore makes the complete reversal of that third turn tight. In the tables
 
-By the line-graph comparison representation theorem `S9011` a shortest directed comparison cycle is a star triangle, an ordinary triangle, or a vertex-simple ordinary cycle. On five vertices, an ordinary cycle has length at most five. A length-five cycle itself gives a Hamilton P5. Up to relabelling, the three other possibilities are the roots triangle, square, star in the code below. Each corresponding CNF is refuted by the embedded binary case-split/unit-propagation certificate. The verifier checks every propagation from its indexed original clause, checks a false original clause at every leaf, and checks both values of every split variable. Consequently it verifies an exhaustive propositional proof, not merely an optimization solver status. The recorded (split nodes, contradiction leaves, unit steps) counts are respectively (29,30,331), (3,4,41), (15,16,189). The certificates were produced and verified using the Python standard library. Run Python normally, without disabling assertions.
+    W => xyz
 
-Thus Gamma has no directed cycle. `S9011` supplies a global edge order by topological sorting. For the critical-complement consequence, a Hamilton five-vertex complement together with the displayed proper tight path would be a spanning two-cover, contradicting pc(H)>2. Therefore that complement is nonHamilton and the theorem applies.
+means that the other two turns of W are already tight and this rule forces xyz. Each row is read from left to right.
 
-Self-contained certificate generator, verifier, and recorded proof trees:
-```python
-from itertools import permutations
-import json
+By the line-graph comparison theorem S9011, a shortest directed comparison cycle is a star triangle, an ordinary triangle, or a vertex-simple ordinary cycle. A comparison five-cycle itself gives a Hamilton P5, so only an ordinary four-cycle and the two triangle types remain.
 
-N=5
-keys=[t for t in permutations(range(N),3) if t[0]<t[2]]
-ids={t:i+1 for i,t in enumerate(keys)}
-def lit(t): return ids[t] if t[0]<t[2] else -ids[t[::-1]]
-base=[tuple(-lit(p[i:i+3]) for i in range(3)) for p in permutations(range(N))]
-roots={'triangle':[(0,1,2),(1,2,0),(2,0,1)],
-       'square':[(0,1,2),(1,2,3),(2,3,0),(3,0,1)],
-       'star':[(1,0,2),(2,0,3),(3,0,1)]}
-def solve(cs,ass):
-    ass=set(ass)
-    steps=[]
-    while True:
-        residual=[]
-        unit=None
-        for i,c in enumerate(cs):
-            if any(l in ass for l in c): continue
-            r=[l for l in c if -l not in ass]
-            if not r: return {'units':steps,'conflict':i}
-            if len(r)==1:
-                unit=(i,r[0]); break
-            residual.append(r)
-        if unit is None: break
-        steps.append(unit); ass.add(unit[1])
-    if not residual: raise RuntimeError('SAT')
-    freq={}
-    for c in residual:
-        for l in c: freq[abs(l)]=freq.get(abs(l),0)+2**(-len(c))
-    v=max(freq,key=freq.get)
-    return {'units':steps,'split':v,'positive':solve(cs,ass|{v}), 'negative':solve(cs,ass|{-v})}
-def stats(t):
-    if 'conflict' in t: return (0,1,len(t['units']))
-    a,b=stats(t['positive']),stats(t['negative'])
-    return (1+a[0]+b[0],a[1]+b[1],len(t['units'])+a[2]+b[2])
-def verify(cs,t,ass):
-    ass=set(ass)
-    for i,l in t['units']:
-        c=cs[i]
-        assert not any(x in ass for x in c)
-        assert [x for x in c if -x not in ass]==[l]
-        ass.add(l)
-    if 'conflict' in t:
-        assert all(-x in ass for x in cs[t['conflict']]); return
-    v=t['split']; assert v not in ass and -v not in ass
-    verify(cs,t['positive'],ass|{v}); verify(cs,t['negative'],ass|{-v})
+### Ordinary four-cycle
+Normalize the cycle as
 
-certificates=json.loads(r'''{"triangle":{"units":[[120,1],[121,-4],[122,-13]],"split":16,"positive":{"units":[[0,-26],[96,15],[29,-12],[118,5]],"split":17,"positive":{"units":[[1,-27],[72,14],[27,-9],[94,6]],"split":18,"positive":{"units":[],"split":30,"positive":{"units":[[2,-2],[26,-8],[32,-28],[34,11]],"conflict":79},"negative":{"units":[[28,-11],[34,28],[32,8],[81,24],[56,7],[57,-19],[103,3],[4,-20],[5,-21],[10,29],[50,-22]],"conflict":75}},"negative":{"units":[[8,-29],[10,20],[62,2],[3,-19],[99,23],[52,-10],[80,24]],"split":8,"positive":{"units":[[26,-30],[4,-3],[21,-11],[34,28],[56,7]],"conflict":103},"negative":{"units":[[32,-28],[34,11],[21,30],[58,-25],[93,21],[5,-3],[46,22]],"conflict":104}}},"negative":{"units":[],"split":2,"positive":{"units":[[48,-19],[108,6],[11,-27],[17,-9],[114,14],[117,24],[20,-11],[111,7],[67,28],[32,8],[26,-30],[103,3],[4,-20],[5,-21],[10,29],[8,18],[50,-22]],"conflict":75},"negative":{"units":[[62,18],[79,-11],[39,-30]],"split":20,"positive":{"units":[[4,-3],[45,8],[103,-14],[114,9],[17,27],[30,-22],[71,19],[40,23],[57,-24]],"conflict":80},"negative":{"units":[],"split":9,"positive":{"units":[[17,27],[30,-22],[71,19],[40,23],[57,-24],[75,-6]],"conflict":80},"negative":{"units":[[114,14],[68,3],[5,-21],[93,25]],"split":7,"positive":{"units":[[67,28],[32,8]],"split":6,"positive":{"units":[[10,29],[50,-22]],"conflict":75},"negative":{"units":[[94,27],[71,19],[40,23],[57,-24]],"conflict":80}},"negative":{"units":[[69,29],[111,-24],[80,-23],[40,-19],[42,10],[71,-27],[94,6],[36,22]],"conflict":117}}}}}},"negative":{"units":[],"split":17,"positive":{"units":[[1,-27],[72,14],[27,-9],[94,6]],"split":18,"positive":{"units":[],"split":30,"positive":{"units":[[2,-2],[26,-8],[39,11],[79,-15],[90,12],[23,26],[31,-23]],"split":21,"positive":{"units":[[46,22],[49,-3],[59,-25],[68,20]],"conflict":104},"negative":{"units":[[9,-5],[65,3]],"conflict":84}},"negative":{"units":[],"split":3,"positive":{"units":[[4,-20],[10,29],[49,-21],[75,22],[50,-7],[84,5],[9,-26],[23,-12],[90,15],[28,-11],[34,28],[56,-24],[80,-23],[40,-19],[42,10],[61,8],[14,-25]],"conflict":76},"negative":{"units":[[68,20],[45,8],[14,-25],[93,21],[46,22],[101,28],[76,-10]],"conflict":103}}},"negative":{"units":[],"split":3,"positive":{"units":[[49,-21],[84,5],[8,-29],[9,-26],[10,20],[4,30],[23,-12],[26,-8],[90,15],[62,2],[3,-19],[93,25],[87,10],[52,-23],[61,-28],[34,11]],"conflict":99},"negative":{"units":[[68,20],[103,-8],[45,30]],"split":7,"positive":{"units":[[12,24],[13,-29]],"split":12,"positive":{"units":[[23,26],[31,-23],[65,21],[46,22],[59,-25],[99,-5]],"conflict":104},"negative":{"units":[[57,-19],[90,15],[62,2]],"split":21,"positive":{"units":[[46,22],[59,-25]],"conflict":104},"negative":{"units":[[65,-26],[93,25],[87,10],[52,-23],[61,-28],[34,11],[99,-5]],"conflict":118}}},"negative":{"units":[[36,22],[104,25],[59,-21],[65,-26],[23,-12],[87,10],[61,-28],[34,11],[90,15],[62,2],[3,-19],[117,24],[118,5],[8,-29],[52,-23]],"conflict":99}}}},"negative":{"units":[],"split":2,"positive":{"units":[[48,-19],[108,6],[11,-27],[17,-9],[114,14],[117,24],[20,-11],[66,15],[111,7],[67,28]],"split":3,"positive":{"units":[[49,-21],[84,5],[9,-26],[23,-12],[93,25],[14,-8],[61,-10],[42,23]],"conflict":87},"negative":{"units":[[68,20],[13,-29],[103,-8],[45,30],[2,-18],[61,-10],[87,-25],[93,21],[46,22]],"conflict":104}},"negative":{"units":[],"split":3,"positive":{"units":[[49,-21],[84,5],[9,-26],[23,-12],[90,15],[62,18],[79,-11],[39,-30],[4,-20],[93,25],[14,-8],[60,14],[87,10],[19,29],[61,-28],[67,-7],[111,-24],[80,-23],[40,-19],[71,-27],[17,-9],[94,6],[36,22]],"conflict":117},"negative":{"units":[],"split":18,"positive":{"units":[],"split":20,"positive":{"units":[],"split":7,"positive":{"units":[[13,-29],[19,-10],[87,-25],[93,21],[104,-22],[46,9],[17,27],[71,19],[107,5],[42,23],[31,-12],[57,-24]],"conflict":80},"negative":{"units":[[111,-24],[80,-23],[117,19],[40,12],[23,26],[65,21]],"split":8,"positive":{"units":[[14,-25],[101,28],[37,-11],[39,-30],[76,-10],[42,-5],[82,-29],[103,-14],[104,-22],[36,-6],[41,27],[46,9]],"conflict":106},"negative":{"units":[[45,30],[39,11],[37,-28],[79,-15]],"split":9,"positive":{"units":[[17,27],[30,-22],[36,-6],[83,-29],[19,-10],[42,-5],[58,-25]],"conflict":106},"negative":{"units":[[46,22],[44,6],[59,-25]],"conflict":104}}}},"negative":{"units":[[68,-14],[89,-30],[112,8],[14,-25],[93,21],[101,28],[76,-10],[77,-11],[104,-22],[46,9],[17,27],[71,19],[75,-6]],"split":12,"positive":{"units":[[23,26],[31,-23],[42,-5],[82,-29],[69,7]],"conflict":107},"negative":{"units":[[40,23],[38,5],[57,-24]],"conflict":80}}},"negative":{"units":[[62,-15],[90,12],[23,26],[31,-23],[65,21],[99,-5],[113,30],[88,11],[20,-24],[22,19],[77,-28],[89,20],[100,-7],[101,-8]],"split":9,"positive":{"units":[[17,27],[30,-22],[36,-6],[83,-29]],"conflict":106},"negative":{"units":[[46,22],[44,6],[59,-25]],"conflict":104}}}}}}},"square":{"units":[[120,1],[121,16],[0,-26],[96,15],[29,-12],[122,-8],[32,-28],[105,25],[58,10],[123,-14],[60,-3],[72,-17],[112,30],[89,20],[114,9],[17,27]],"split":2,"positive":{"units":[[2,-18]],"split":4,"positive":{"units":[[7,-21],[51,-22]],"conflict":74},"negative":{"units":[[30,-22]],"split":5,"positive":{"units":[[8,-29],[52,-23],[40,-19],[11,-6]],"conflict":99},"negative":{"units":[[47,-21],[85,-23],[40,-19],[11,-6],[83,-29],[92,-13],[106,7],[67,11],[20,-24]],"conflict":100}}},"negative":{"units":[[62,18],[19,29],[13,-7],[39,11],[20,-24],[71,19],[40,23],[38,5]],"conflict":79}}},"star":{"units":[[120,13],[121,22],[122,-14]],"split":1,"positive":{"units":[[72,-17],[114,9],[17,27],[25,-6],[30,4],[44,-20],[51,21],[7,-25],[109,-7],[69,29],[111,-24]],"split":16,"positive":{"units":[[0,-26],[5,-3],[18,-10],[47,5],[8,18],[42,23],[89,-30],[96,15],[28,-11],[29,-12]],"conflict":102},"negative":{"units":[],"split":18,"positive":{"units":[],"split":30,"positive":{"units":[[2,-2],[15,-8],[39,11],[37,-28],[60,-3],[71,19],[79,-15]],"conflict":89},"negative":{"units":[[112,8],[101,28],[37,-11],[76,-10],[82,23],[38,5],[24,-26],[5,-3],[23,-12],[90,15]],"conflict":102}},"negative":{"units":[[8,-5],[47,26],[63,10],[76,-28],[85,-23],[91,12],[22,19],[101,-8],[60,-3],[89,-30],[21,-11]],"conflict":112}}},"negative":{"units":[],"split":2,"positive":{"units":[],"split":18,"positive":{"units":[[2,-30],[97,15],[28,-11],[55,-12],[86,16],[33,-26],[112,8]],"split":27,"positive":{"units":[[25,-6],[44,-20],[70,9],[30,4],[51,21],[5,-3],[7,-25],[18,-10],[43,28],[47,5],[42,23]],"conflict":102},"negative":{"units":[[3,-19],[95,17],[34,28],[81,24],[56,7],[50,-29],[19,-10],[107,5],[42,23],[102,3],[4,-20],[5,-21],[10,-6],[51,-9]],"conflict":109}},"negative":{"units":[],"split":27,"positive":{"units":[[25,-6],[44,-20],[70,9],[30,4],[51,21],[7,-25],[109,-7],[69,29],[8,-5],[47,26],[63,10],[18,-16],[76,-28],[85,-23],[86,-15],[64,12],[66,11],[21,30],[15,-8],[60,-3]],"conflict":89},"negative":{"units":[[3,-19],[95,17]],"split":3,"positive":{"units":[[60,8],[73,-20],[15,-30],[21,-11],[34,28],[66,15],[55,-12],[81,24],[56,7],[50,-29],[10,-6],[86,16],[33,-26],[5,-21],[51,-9]],"conflict":109},"negative":{"units":[[92,21],[102,-5],[47,26]],"split":4,"positive":{"units":[[7,-25]],"split":7,"positive":{"units":[[12,24],[50,-29],[98,23],[52,-10],[53,-12],[33,-16],[64,15]],"conflict":86},"negative":{"units":[],"split":10,"positive":{"units":[[18,-16],[76,-28],[34,11],[21,30],[85,-23],[86,-15],[64,12],[22,24],[89,20],[44,6]],"conflict":98},"negative":{"units":[[63,-29],[69,20],[44,6]],"split":11,"positive":{"units":[[21,30],[37,-28],[43,-8],[105,-16],[86,-15],[64,12],[22,24],[53,-23]],"conflict":98},"negative":{"units":[[34,28],[56,-24],[22,-12],[33,-16],[64,15]],"conflict":81}}}},"negative":{"units":[[30,-9],[59,-25]],"conflict":104}}}}},"negative":{"units":[[78,-6],[44,-20],[109,-7],[69,29],[116,19],[41,27],[70,9],[30,4],[6,-24],[51,21],[7,-25]],"split":26,"positive":{"units":[[24,-5]],"split":8,"positive":{"units":[[15,-30],[113,18],[38,-23],[40,12],[55,-15],[82,10],[18,-16],[76,-28]],"conflict":101},"negative":{"units":[[60,-3],[89,-30],[105,-16],[86,-15],[64,12]],"conflict":112}},"negative":{"units":[[5,-3],[47,5],[8,18],[89,-30]],"conflict":102}}}}}''')
-for name,turns in roots.items():
-    cs=base+[(lit(t),) for t in turns]
-    verify(cs,certificates[name],set())
-    print(name,stats(certificates[name]))
-```
+    oa -> ab -> bc -> co -> oa,
+
+so
+
+    oab, abc, bco, coa
+
+are tight, with d the fifth vertex. The following branches are exhaustive.
+
+| branch | successive forced turns | contradiction |
+| --- | --- | --- |
+| acd, oac | bcoad=>dao; boacd=>aob; daobc=>cbo; cdaob=>adc; adcbo=>bcd; oabcd=>bao | oab and bao |
+| acd, cao | dbcoa=>cbd; doabc=>aod; caodb=>bdo; acbdo=>bca; bcaod=>doa; doabc=>bao | oab and bao |
+| dca, bac | coabd=>dba; odbac=>bdo; abcod=>doc; bdoca=>aco; dbaco=>abd; coabd=>bao | oab and bao |
+| dca, cab | dcabo=>oba; dabco=>bad; obadc=>cda; cobad=>boc; bocda=>dco; dcoab=>bao | oab and bao |
+
+Thus no shortest comparison cycle has length four.
+
+### Star triangle
+Normalize the star triangle at o:
+
+    aob, boc, coa
+
+are tight. Put
+
+    S(d)={u in {a,b,c}: uod is tight}.
+
+Cyclically permuting a,b,c preserves the root. Passing to the complete-reversal dual preserves Hamiltonicity after reversing paths; after swapping b and c it restores the root and sends |S(d)| to 3-|S(d)|. Hence only |S(d)|=0 and 1 need be treated.
+
+If |S(d)|=0, then doa,dob,doc are tight. The following nested complementary branches are exhaustive.
+
+| branch | successive forced turns | contradiction |
+| --- | --- | --- |
+| obc | dobca=>acb; doacb=>cao; dcaob=>acd; aobcd=>dcb; daobc=>oad; oadcb=>cda; bocda=>dco; bdcoa=>cdb; acdbo=>obd; caobd=>oac | oac and cao |
+| cbo, oda, oba, bdc | bdcoa=>ocd; bocda=>adc; obadc=>dab; odabc=>cba; docba=>bco; dbcoa=>cbd; aobdc=>dbo; adboc=>bda; cbdao=>oad; bcoad=>dao | oda and dao |
+| cbo, oda, oba, cdb | dobac=>cab; cdoba=>odc; odcab=>acd; acdbo=>obd; caobd=>oac; oacdb=>cao | oac and cao |
+| cbo, oda, abo, oac | abocd=>dco; daboc=>bad; badco=>cda; cdaob=>oad; coadb=>bda; bcoad=>ocb; ocbda=>dbc; doacb=>bca; odbca=>bdo; bdoac=>cao | oac and cao |
+| cbo, oda, abo, cao | dcaob=>acd; abocd=>dco; bdcoa=>cdb; acdbo=>obd; caobd=>oac | oac and cao |
+| cbo, ado, obd | caobd=>oac; badoc=>dab; daboc=>oba; dobac=>cab; cdoba=>odc; odcab=>acd; aobdc=>cdb; oacdb=>cao | oac and cao |
+| cbo, ado, dbo | adboc=>bda; cadob=>dac; bdaco=>oca; dboca=>obd | obd and dbo |
+
+If |S(d)|=1, cyclically normalize S(d)={c}; thus doa,dob,cod are tight. Then:
+
+| branch | successive forced turns | contradiction |
+| --- | --- | --- |
+| odb, adc | codba=>abd; acodb=>oca; ocabd=>bac; dobac=>abo; abocd=>dco; badco=>dab; daboc=>oba | oba and abo |
+| odb, cda | cdaob=>oad; acodb=>oca; bocad=>dac; dboca=>obd; obdac=>adb; coadb=>dao | oad and dao |
+| bdo, bdc | bdcoa=>ocd; abocd=>oba; aobdc=>dbo; dboca=>aco; adboc=>bda; bdaco=>cad; cadob=>oda; codab=>bad; bocda=>adc; obadc=>abo | oba and abo |
+| bdo, cdb | bdoac=>cao; dcaob=>acd; acdbo=>obd; caobd=>oac | oac and cao |
+
+The duality handles |S(d)|=2 and 3. Hence a shortest comparison cycle is not a star triangle.
+
+### Ordinary triangle
+Normalize the comparison triangle as
+
+    oa -> ab -> bo -> oa,
+
+so
+
+    oab, abo, boa
+
+are tight, and let c,d be the other vertices. For w in {c,d} define
+
+    o in M(w) iff bwa is tight,
+    a in M(w) iff owb is tight,
+    b in M(w) iff awo is tight.
+
+If M(c) and M(d) shared a coordinate, the corresponding core vertex together with c,d would give three parallel source turns on common ordered endpoints. S9022 would then give a Hamilton P5. Thus M(c) and M(d) are disjoint.
+
+Up to cyclic permutation of o,a,b and exchange of c,d, the disjoint pair is one of
+
+    (empty,empty), (empty,{o}), (empty,{o,a}),
+    (empty,{o,a,b}), ({o},{a}), ({o},{a,b}).
+
+The match-set definition fixes the six exterior-core turns in each case. The remaining forcing is:
+
+| M(c), M(d) | extra branch | successive forced turns | contradiction |
+| --- | --- | --- | --- |
+| empty, empty | none | bcoda=>doc; bdoca=>aco | oca and aco |
+| empty, {o} | none | bcoda=>doc; bdoca=>aco | oca and aco |
+| empty, {o,a} | none | bcoda=>doc; docab=>bac; odbac=>abd; odacb=>cad; bocad=>cob; cobda=>dbo; cdboa=>bdc; oabdc=>bao | oab and bao |
+| empty, {o,a,b} | abc | abcod=>doc; badoc=>dab; dabco=>ocb | ocb and bco |
+| empty, {o,a,b} | cba | cbado=>dab; cdabo=>adc; boadc=>dao; cbdao=>dbc; dbcoa=>aoc; bdaoc=>oad | oad and dao |
+| {o}, {a} | ocd | bcoda=>doc; docab=>bac; odbac=>abd; oabdc=>cdb; aocdb=>coa; coabd=>bao | oab and bao |
+| {o}, {a} | dco | ocadb=>dac; bodac=>dob; dobca=>cbo; dcboa=>bcd; cboad=>dao; bcdao=>adc; badco=>dab; daboc=>cob; adcob=>cda; bcdao=>oad | oad and dao |
+| {o}, {a,b} | cod | codba=>abd; abcod=>cba; cbado=>dab; daboc=>cob; cdabo=>adc; adcob=>ocd; oabdc=>cdb; aocdb=>coa; coabd=>bao | oab and bao |
+| {o}, {a,b} | doc | docab=>bac; odbac=>abd; badoc=>dab; daboc=>cob; cdabo=>adc; adcob=>ocd; oabdc=>cdb; aocdb=>coa; coabd=>bao | oab and bao |
+
+The extra branches are complementary pairs, so these rows are exhaustive. Thus a shortest comparison cycle is not an ordinary triangle.
+
+No directed comparison cycle remains. Gamma(H) is acyclic, and S9011 turns any topological ordering of Gamma(H) into the required total edge order.
+
+For the final consequence, if Q is a proper tight path in a larger H with pc(H)>2 and its complement X has five vertices, then H[X] cannot have a Hamilton P5, since that path together with Q would be a spanning two-cover. Therefore H[X] is edge-orderable. QED.
 
 ## Why this is reusable
-
-This is the exact five-vertex bridge from the order-free boundary-tournament world to edge orders: every nonintegrable five-cell must already be Hamiltonian. The computational certificate in the proof is retained verbatim.
+This is the exact five-vertex bridge from order-free boundary tournaments to ordinary edge orders. It replaces a former finite SAT certificate by a direct comparison-cycle argument with explicit human forcing tables.
 
 ## Scope and nonclaims
-
-This is a five-vertex theorem. It does not claim that larger non-Hamiltonian boundary tournaments are edge-orderable, nor that edge-orderability alone forces non-Hamiltonicity.
+The theorem is specific to five vertices. It does not assert that every larger nonHamiltonian boundary tournament is edge-orderable.
 
 ## Provenance
-
-Rescued from accepted archived result `R902`.
+Human repair of archived R902. The previous computer-assisted DPLL proof has been completely removed. The only nontrivial imported local ingredient is the independently human S9022 parallel-source P5 lemma.
