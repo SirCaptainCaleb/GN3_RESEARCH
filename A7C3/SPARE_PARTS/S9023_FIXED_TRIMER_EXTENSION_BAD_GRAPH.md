@@ -47,7 +47,13 @@ Therefore exactly one of the three match sets is empty. The other two are disjoi
 
     {a}, {c}, {a,b}, {b,c}, {a,b,c}.
 
-Three nonempty pairwise disjoint signatures would have to be {a},{b},{c}, but {b} is not an allowed signature. Thus, after permuting x,y,z and using the core reflection symmetry, only three configurations remain:
+Three nonempty pairwise disjoint signatures would have to be {a},{b},{c}, but {b} is not an allowed signature. Thus the other two nonempty signatures form exactly one of the three unordered pairs
+
+    { {a}, {c} },
+    { {a}, {b,c} },
+    { {a,b}, {c} }.
+
+After naming the empty-signature vertex x and ordering y,z appropriately, only three configurations remain:
 
     I.   M(x)=empty, M(y)={a},   M(z)={c};
     II.  M(x)=empty, M(y)={a},   M(z)={b,c};
