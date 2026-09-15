@@ -1,34 +1,160 @@
-# S9019 — Every Edge-Ordered K7 Has a Two-Path Increasing Cover
+# S9019 — Edge-Ordered Complete Graphs Through Order Ten Have Two Increasing Paths
 
 ## Theorem
 
-Let K_7 have any strict total order on its 21 ordinary edges. Then its seven vertices can be partitioned into at most two vertex-disjoint increasing paths. Equivalently, no edge ordering of K_7 has increasing path-cover number at least three.
+Let `G` be a complete graph on `n<=10` vertices with a strict total order on its ordinary edges. Then `V(G)` can be partitioned into at most two vertex-disjoint increasing paths.
 
-## Proof
+Equivalently,
 
-Index the 21 ordinary edges of K_7 lexicographically as e_0,...,e_20. For each 0<=i<j<=20 introduce one Boolean variable X_{ij}, interpreted as “e_i precedes e_j in the edge order”. Since exactly one of e_i<e_j and e_j<e_i holds, one bit per unordered edge-pair is enough; there are C(21,2)=210 variables.
+`pc_inc(G) <= 2`
 
-TOTAL-ORDER CLAUSES. For every i<j<k add
-  (not X_{ij}) OR (not X_{jk}) OR X_{ik},
-  X_{ij} OR X_{jk} OR (not X_{ik}).
-These are exactly the two clauses excluding the two directed 3-cycles on {e_i,e_j,e_k}. There are 2*C(21,3)=2660 such clauses. A tournament on the 21 edge-objects with no directed triangle is transitive, so these clauses are equivalent to the existence of one strict total edge order realizing all X_{ij}.
+for every edge-ordered `K_n` with `n<=10`.
 
-TWO-PATH-COVER CLAUSES. Take every ordered vertex permutation pi=(v_0,...,v_6) and every cut c in {1,...,6}. This represents the two oriented vertex paths P=(v_0,...,v_{c-1}) and Q=(v_c,...,v_6). For a path W=(w_0,...,w_s), write f_t={w_t,w_{t+1}}. The path is increasing exactly when every consecutive comparison f_t<f_{t+1} holds, t=0,...,s-2; a singleton or dimer contributes no comparison. For each (pi,c), collect all comparison literals required simultaneously by P and Q and add the single clause which is the disjunction of their negations. Thus the clause says that this particular ordered two-path cover is not increasing on both rails.
+This strengthens the original order-seven statement of archived `R971`. The proof below is entirely human and uses no SAT, DPLL, MILP, exhaustive enumeration, or computer-assisted case check.
 
-Every spanning cover by two increasing paths occurs among these permutation/cut representations after orienting each rail increasingly and ordering the two rails. A Hamilton increasing path also yields one of these two-path covers by splitting off its first vertex as a singleton, so forbidding all represented two-path covers forbids covers by at most two paths. Conversely, a satisfying assignment of all cover-forbidding clauses represents a strict edge order with no spanning increasing two-path cover.
+## Ingredient 1 — three of the five K4 deletions of an edge-ordered K5 are Hamiltonian
 
-After exact deduplication, the cover family contributes 12,600 distinct clauses: 7,560 clauses of length three and 5,040 clauses of length four. Together with the 2,660 transitivity clauses, the final CNF has 210 variables and 15,260 clauses. Sorting literals in each clause by variable and sorting clauses lexicographically, the DIMACS-style text “lit ... lit 0” joined by newlines has SHA-256 `625270abc73035479584b613d96049c50cf10f22eb8e4bf565928f96e246c9eb`.
+We first prove a small local density lemma.
 
-A deterministic watched-literal DPLL verifier performs unit propagation to closure, then branches on the unassigned variable of highest total literal occurrence, ties by lowest variable index, trying the majority-occurrence polarity first. On the full unsymmetrized CNF it terminates UNSAT after 355 recursive search nodes, maximum branch depth 24, with no satisfying leaf. Independently, the same 210 comparison bits were encoded as a binary MILP with the 15,260 transitivity and cover constraints; SciPy 1.17 `scipy.optimize.milp` with HiGHS reports infeasible. No vertex or edge-order symmetry assumption is used. Therefore no strict edge ordering of K_7 can avoid every spanning cover by at most two increasing paths.
+### Lemma
 
-## Why this is reusable
+Every edge-ordered `K5` has at most two non-Hamiltonian induced `K4`s. Equivalently, at least three of its five vertex-deleted `K4`s have an increasing Hamilton `P4`.
 
-An exact finite base theorem for increasing path-cover problems. It is completely independent of minimum-counterexample structure and can be used whenever a seven-vertex edge-ordered residue appears.
+### Proof
 
-## Scope and nonclaims
+By `S9020`, a non-Hamiltonian edge-ordered `K4` has its three opposite-edge perfect matchings in strict height blocks. Consequently, on such a `K4`, taking the opposite edge preserves every comparison between adjacent edges: if `e` and `f` are adjacent, then
 
-The theorem is specific to seven vertices. It does not classify extremal edge orders or address K8 and larger orders.
+`e < f  iff  e* < f*`,
+
+where `e*` and `f*` are their respective opposite edges in that `K4`.
+
+Suppose for contradiction that an edge-ordered `K5` on vertices
+
+`{a,b,c,d,e}`
+
+has three non-Hamiltonian `K4`s. Relabel so these are the cells obtained by deleting `a`, `b`, and `c`.
+
+In the bad cell on `{b,c,d,e}`, the edges `bd,be` are adjacent and their opposite edges are `ce,cd`. Hence
+
+`bd < be  iff  ce < cd`.
+
+In the bad cell on `{a,c,d,e}`, the edges `ce,cd` are adjacent and their opposite edges are `ad,ae`. Hence
+
+`ce < cd  iff  ad < ae`.
+
+In the bad cell on `{a,b,d,e}`, the edges `ad,ae` are adjacent and their opposite edges are `be,bd`. Hence
+
+`ad < ae  iff  be < bd`.
+
+Combining the three equivalences gives
+
+`bd < be  iff  be < bd`,
+
+impossible in a strict total edge order. Thus at most two vertex-deleted `K4`s are non-Hamiltonian. ∎
+
+### Density corollary
+
+Let `h_4(r)` denote the number of four-vertex subsets of an edge-ordered `K_r` that support an increasing Hamilton `P4`. For every `r>=5`,
+
+`h_4(r) >= (3/5) * C(r,4)`.
+
+Indeed, count incidences `(X,Y)` with `X` a Hamilton four-set and `Y` a five-set containing `X`. Every five-set contains at least three Hamilton four-sets by the lemma, while every four-set lies in exactly `r-4` five-sets. Hence
+
+`(r-4) h_4(r) >= 3 C(r,5) = (3/5)(r-4) C(r,4)`.
+
+## Ingredient 2 — Hamilton-five density
+
+By `S9029`, every six-set in a Strong Level-(1) boundary tournament has at least four Hamilton-five deletions. Edge-ordered complete graphs form a subclass, so in every edge-ordered `K_r`, `r>=6`, the number `h_5(r)` of Hamilton five-sets satisfies
+
+`h_5(r) >= (2/3) C(r,5)`.
+
+We now prove the finite two-cover theorem.
+
+## Proof of the theorem
+
+For `n<=5` the conclusion is immediate. If `n<=3`, one increasing path suffices. For `n=4`, split the vertices into two dimers. For `n=5`, any three vertices have an increasing Hamilton `P3`, and the remaining two vertices form a dimer.
+
+### Orders 6, 7, and 8
+
+Take any six vertices. By `S9029` some five of them support an increasing Hamilton `P5`.
+
+- For `n=6`, the remaining vertex is a singleton.
+- For `n=7`, the remaining two vertices form a dimer.
+- For `n=8`, the remaining three vertices form an edge-ordered triangle, which always has an increasing Hamilton `P3`: its smallest and largest edges meet, and traversing them in increasing order gives the path.
+
+Thus `pc_inc(G)<=2` for `n=6,7,8`.
+
+### Order 9
+
+There are
+
+`C(9,5)=C(9,4)=126`
+
+five-sets and four-sets.
+
+By `S9029`,
+
+`h_5(9) >= (2/3) * 126 = 84`.
+
+By the four-set density corollary above,
+
+`h_4(9) >= (3/5) * 126 = 75.6`,
+
+so integrality gives
+
+`h_4(9) >= 76`.
+
+Complementation is a bijection between the 126 five-sets and the 126 four-sets. If no Hamilton five-set had a Hamilton four-set as its complement, then the complements of the `h_5(9)` Hamilton five-sets would be disjoint from the family of `h_4(9)` Hamilton four-sets. Therefore
+
+`h_5(9)+h_4(9) <= 126`.
+
+But
+
+`84+76=160>126`,
+
+a contradiction. Hence some five-set `A` and its four-vertex complement `B` are both Hamiltonian. Their Hamilton paths form a spanning `5+4` increasing two-cover.
+
+### Order 10
+
+There are
+
+`C(10,5)=252`
+
+five-sets, paired into exactly
+
+`252/2=126`
+
+unordered complementary pairs `{A,V-A}`.
+
+Again `S9029` gives
+
+`h_5(10) >= (2/3) * 252 = 168`.
+
+If no complementary pair had both members Hamiltonian, each of the 126 complementary pairs could contribute at most one Hamilton five-set, giving `h_5(10)<=126`. This contradicts `h_5(10)>=168`.
+
+Therefore some complementary five-sets are both Hamiltonian. Their two increasing Hamilton `P5`s form a spanning `5+5` two-cover.
+
+This completes the proof for every `n<=10`. ∎
+
+## Why the old K7 computation was hiding the structure
+
+The original `S9019`/`R971` proof encoded the order-seven case as a finite SAT/MILP infeasibility problem. Once the human Hamilton-five density theorem `S9029` is available, the order-seven case is immediate: one Hamilton `P5` leaves only a dimer.
+
+More importantly, the same density mechanism automatically gives orders eight and ten, while the small opposite-matching lemma above supplies exactly the additional Hamilton-four density needed at order nine. Thus the natural finite theorem is not a special `K7` certificate but the complete range `n<=10`.
+
+## Scope and what happens beyond ten
+
+This argument does **not** prove the general edge-ordered two-cover conjecture `R888`.
+
+The cutoff at ten is structural for this proof. Orders nine and ten work because complementation pairs the locally controlled Hamilton support sizes:
+
+- `9 = 5+4`, where we have densities for Hamilton `P5` and Hamilton `P4`;
+- `10 = 5+5`, where the Hamilton-five density alone exceeds one half.
+
+At order eleven the complementary split becomes `5+6`. The present machinery gives strong Hamilton-five density but no corresponding density theorem forcing Hamilton `P6`s on six-sets. Indeed edge-ordered `K6`s need not themselves be Hamiltonian, so there is no automatic complement argument analogous to orders nine and ten.
+
+Thus the proof genuinely generalizes the former `K7` base through `K10`, but it does not presently cross to `K11`.
 
 ## Provenance
 
-Rescued from accepted archived result `R971`. The archived result contains the complete verifier implementation and independent MILP formulation.
+The historical order-seven computational theorem is archived as `R971`. The human proof above is a later synthesis using the human `S9020` non-Hamiltonian `K4` matching-height classification and the human `S9029` Hamilton-five density hierarchy. The three-bad-`K4` opposite-edge contradiction and the resulting `3/5` Hamilton-four density are recorded here explicitly.
