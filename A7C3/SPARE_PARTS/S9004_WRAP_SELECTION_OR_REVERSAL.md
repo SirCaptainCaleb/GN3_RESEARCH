@@ -6,61 +6,51 @@ Let
 
 `P=(p_0,p_1,...,p_r)`, `r>=1`,
 
-be a literal tight path component of a path cover in a Strong Level-(1) boundary tournament. Consider the wrap state joining the tail of `P` back to its head,
+be a literal tight path in a Strong Level-(1) boundary tournament, and consider the wrap state `p_rp_0`.
 
-`p_r p_0`.
+If `r=1`, the reversed dimer `(p_1,p_0)` is automatically a tight path.
 
-If `r=1`, reversing the two-vertex component gives another literal cover of the same cardinality selecting the wrap state.
+Assume `r>=2`. Define the two wrap seams
 
-If `r>=2`, then one of the following holds:
+`alpha=(p_r,p_0,p_1)`,
 
-1. the head rotation
+`beta=(p_{r-1},p_r,p_0)`,
 
-   `(p_r,p_0,p_1,...,p_{r-1})`
+and the two cyclic rotations
 
-   is tight;
-2. the tail rotation
+`P_H=(p_r,p_0,p_1,...,p_{r-1})`,
 
-   `(p_1,...,p_r,p_0)`
+`P_T=(p_1,...,p_r,p_0)`.
 
-   is tight;
-3. both new wrap seam turns are bad, in which case boundary antisymmetry forces
+Exactly one of the following four branches holds.
 
-   `(p_1,p_0,p_r)` and `(p_0,p_r,p_{r-1})`
+### Double wrap
 
-   to be tight.
+Both `alpha` and `beta` are tight. Equivalently, both cyclic rotations are tight. In this case
 
-In case 3 the two reversed turns are opposite-end signed terminal-dimer certificates. If `r>=3`, they concatenate to the literal tight path
+`(p_0,p_1,...,p_r,p_0)`
 
-`(p_1,p_0,p_r,p_{r-1})`.
+is a tight Hamilton cycle on `V(P)`.
 
-Thus failure to select the wrap by a cyclic rotation is never silent: it produces an explicit reversed endpoint packet, and for paths of order at least four it produces a tight reverse `P4`.
+### Single wrap at the head rotation
 
-## Proof
+`alpha` is tight and `beta` is bad. Then `P_H` is a tight Hamilton path, `P_T` is not, and boundary antisymmetry gives
 
-When `r=1`, the component has two vertices and therefore no internal turn condition. Its reversal `(p_1,p_0)` is automatically a tight path.
+`(p_0,p_r,p_{r-1})`
 
-Assume `r>=2`. The head rotation
+tight.
 
-`P_H=(p_r,p_0,p_1,...,p_{r-1})`
+### Single wrap at the tail rotation
 
-inherits every old consecutive turn of `P` except for one new turn, namely
+`beta` is tight and `alpha` is bad. Then `P_T` is a tight Hamilton path, `P_H` is not, and boundary antisymmetry gives
 
-`(p_r,p_0,p_1)`.
+`(p_1,p_0,p_r)`
 
-Hence if this new turn is tight, `P_H` is a tight path on the same support and selects the wrap state `p_rp_0`.
+tight.
 
-Similarly the tail rotation
+### Double fail
 
-`P_T=(p_1,...,p_r,p_0)`
-
-inherits every old turn except for the single new turn
-
-`(p_{r-1},p_r,p_0)`.
-
-If that turn is tight, `P_T` is a tight path on the same support selecting the same wrap state.
-
-Suppose neither rotation is tight. Then both new seam turns are bad. Strong Level-(1) boundary antisymmetry says that the complete reversal of a bad ordered triple is tight. Therefore
+Both `alpha` and `beta` are bad. Then neither rotation is tight, and boundary antisymmetry gives both
 
 `(p_1,p_0,p_r)`
 
@@ -68,24 +58,46 @@ and
 
 `(p_0,p_r,p_{r-1})`
 
-are tight.
-
-These are the exact reversed endpoint turns advertised above. When `r>=3`, the vertices `p_1` and `p_{r-1}` are distinct, so the two tight consecutive turns concatenate to the vertex-simple tight `P4`
+tight. If `r>=3`, these concatenate to the vertex-simple tight reverse `P4`
 
 `(p_1,p_0,p_r,p_{r-1})`.
 
-This proves the trichotomy. ∎
+In particular, a single successful rotation is merely a cyclically shifted Hamilton path. A Hamilton cycle on the displayed support occurs exactly in the double-wrap branch.
+
+## Proof
+
+For `r=1`, a two-vertex path has no internal turn, so its reversal is automatically tight.
+
+Assume `r>=2`. The head rotation `P_H` inherits every old consecutive turn of `P` except for the single new seam `alpha`. Hence `P_H` is tight if and only if `alpha` is tight.
+
+Likewise `P_T` inherits every old turn except `beta`, so `P_T` is tight if and only if `beta` is tight.
+
+The four truth combinations of `(alpha,beta)` are therefore exclusive and exhaustive.
+
+If both are tight, every consecutive triple of the closed cyclic word
+
+`(p_0,p_1,...,p_r,p_0)`
+
+is tight: the internal turns come from `P` and the two wrap turns are exactly `alpha,beta`. Hence this is the double-wrap Hamilton cycle.
+
+If exactly one seam is bad, its complete reversal is tight by Strong Level-(1) boundary antisymmetry, giving the reversed endpoint turn stated in the corresponding single-wrap branch.
+
+If both seams are bad, boundary antisymmetry gives both reversed endpoint turns. When `r>=3`, the vertices `p_1,p_0,p_r,p_{r-1}` are distinct and the two displayed tight triples are consecutive, so they concatenate to the reverse `P4`.
+
+This proves the tetrachotomy. ∎
 
 ## Why this is reusable
 
-Many path-cover arguments try to make a named tail-to-head state current by rotating a rail. This lemma packages the entire local obstruction: either a rotation works immediately, or the two failed seams manufacture exact reversed endpoint geometry.
+Many path-cover arguments try to make a named tail-to-head state current by rotating a rail. This lemma gives the complete local ledger: two successful seams produce a Hamilton cycle, one successful seam produces a new Hamilton order plus one exact reversed seam, and total failure produces both reversed endpoint turns.
 
-The result is order-free, independent of smallest-counterexample minimality, deletion structure, payment machinery, or any particular Engine frame.
+The distinction between **single wrap** and **double wrap** is important. A successful cyclic rotation alone does not justify cycle language.
+
+The result is order-free and independent of smallest-counterexample minimality, deletion structure, payment machinery, or any particular Engine frame.
 
 ## Scope and nonclaims
 
-The theorem changes only the displayed component and preserves the number of cover components. It does not claim that the rotated cover is new, that the reverse packet is globally productive, or that the reverse `P4` closes a larger problem by itself.
+The theorem changes only the displayed path order. It does not claim that a successful rotation is a distinct cover, that the reverse packet is globally productive, or that the reverse `P4` closes a larger problem by itself.
 
 ## Provenance
 
-Rescued from the accepted universal path-cover theorem historically recorded as `R548`. The phrase-mining pass repeatedly surfaced reverse-terminal, wrap-seam, and reversed-dimer geometry; this theorem is one of the clean general sources behind that recurring pattern.
+Rescued initially from the universal path-cover theorem historically recorded as `R548` and strengthened with the exact four-branch refinement historically recorded as `R579`. Citation-graph review showed that the refinement belongs inside the same reusable primitive rather than as a second Spare Part.
