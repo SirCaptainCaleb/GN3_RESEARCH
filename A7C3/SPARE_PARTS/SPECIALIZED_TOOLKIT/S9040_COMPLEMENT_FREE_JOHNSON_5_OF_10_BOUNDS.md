@@ -1,4 +1,4 @@
-# S9039 — Complement-Free Johnson 5-of-10 Bounds
+# S9040 — Complement-Free Johnson 5-of-10 Bounds
 
 This Spare Part preserves two genuinely different finite-set arguments on the 5-subsets of a 10-set. Both were useful in the historical order-ten analysis, but neither depends on boundary-tournament structure.
 
