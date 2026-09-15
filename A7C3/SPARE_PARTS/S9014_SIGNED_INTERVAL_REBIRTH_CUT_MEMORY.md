@@ -8,11 +8,11 @@ Let
 
 be a graph-intrinsic tight path, and let `S` be any vertex set such that `P-S` is nonempty.
 
-Every surviving interval
+Call a **surviving interval** a maximal nonempty contiguous block of vertices of `P` that remains after deleting `S`. Every surviving interval
 
 `I=(v_i,...,v_j)`
 
-of `P-S`, taken in the old path order, remembers its immediate cut neighbors:
+in the old path order remembers its immediate cut neighbors:
 
 - if `i>0`, then `v_{i-1}` is deleted and `(v_{i-1},I)` is a tight path;
 - if `j<k`, then `v_{j+1}` is deleted and `(I,v_{j+1})` is a tight path.
@@ -49,13 +49,13 @@ Any contiguous subpath of a tight path is tight.
 
 Let `I=(v_i,...,v_j)` be a surviving interval of `P-S`.
 
-If `i>0`, maximality of the surviving interval on its left means `v_{i-1}` is deleted. The sequence
+If `i>0`, maximality of the interval means `v_{i-1}` is deleted. The sequence
 
 `(v_{i-1},v_i,...,v_j)`
 
 is a contiguous subpath of `P`, hence is tight. Therefore `v_{i-1}` is an exact left cut witness for `I`.
 
-Likewise, if `j<k`, then `v_{j+1}` is deleted and
+Likewise, if `j<k`, maximality gives `v_{j+1}` deleted, and
 
 `(v_i,...,v_j,v_{j+1})`
 
