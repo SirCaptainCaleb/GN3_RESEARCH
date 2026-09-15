@@ -1,0 +1,31 @@
+# S9026 — Two-Witness P4-Free Star Renormalization
+
+## Theorem
+
+Let A,B,c,d be four distinct vertices in a Strong Level-(1) boundary tournament. Suppose ABc and ABd are tight. If the four-set Z={A,B,c,d} has no tight Hamilton P4, then BAc and BAd are also tight, and cdA,dcA,cdB,dcB are all tight. Moreover there are exactly two possible no-P4 completions of the twelve reversal pairs on Z. In both completions Z is a transitive matching-height four-cell whose top opposite-edge matching is M_R={{A,B},{c,d}}; the remaining two cross matchings M_1={{A,c},{B,d}} and M_2={{A,d},{B,c}} occur in one of the two strict orders M_R>M_1>M_2 or M_R>M_2>M_1. Thus a same-oriented two-witness star ABc,ABd that does not already amplify to a P4 canonically renormalizes to a transitive no-P4 cell, with the star dimer and witness dimer forming the top matching.
+
+## Proof
+
+Assume ABc and ABd are tight and Z={A,B,c,d} has no Hamilton P4.
+
+First force the common packet. Candidate (A,B,c,d) has first turn ABc tight, so its second turn Bcd must be bad; hence by boundary antisymmetry dcB is tight. Candidate (A,B,d,c) similarly forces cdB tight. Candidate (A,c,d,B) has second turn cdB tight, so its first turn Acd must be bad; hence dcA is tight. Candidate (A,d,c,B) similarly forces cdA tight. Candidate (c,A,B,d) has second turn ABd tight, so cAB must be bad; hence BAc is tight. Candidate (d,A,B,c) similarly forces BAd tight. Thus ABc,ABd,BAc,BAd,cdA,dcA,cdB,dcB are all tight.
+
+The only still-undetermined reversal pairs may be taken to include the cross comparison AcB versus BcA. We split on this one bit.
+
+Case 1: AcB is tight. Repeatedly test the remaining Hamilton orders whose other consecutive turn is in the forced packet. No-P4 forces successively dBc, BdA, cAd and their reversal complements; after these forced choices every reversal pair is fixed. Reading the resulting turns by opposite-edge matchings gives {{A,B},{c,d}} > {{A,c},{B,d}} > {{A,d},{B,c}}.
+
+Case 2: BcA is tight. The analogous complementary candidate chain forces dAc, AdB, cBd and the remaining reversal choices, giving {{A,B},{c,d}} > {{A,d},{B,c}} > {{A,c},{B,d}}.
+
+For completeness, uniqueness in either branch can be checked without any classification theorem: once the displayed eight common turns and the chosen literal AcB or BcA are fixed, each remaining reversal pair occurs as the sole uncertified turn of a Hamilton P4 candidate whose other turn is already tight, so no-P4 forces that pair's orientation. Hence there are at most two completions. The two displayed matching-height assignments realize both branches and contain no P4, since along any four-vertex path the first and third physical edges belong to the same opposite-edge matching, so a Hamilton P4 would require a strict cyclic descent M_i>M_j>M_i. Thus exactly the two stated completions occur.
+
+## Why this is reusable
+
+A same-oriented two-witness star that fails to make a P4 is not shapeless: it canonically becomes one of two transitive matching-height four-cells. This is a compact normal-form compiler for many local collision arguments.
+
+## Scope and nonclaims
+
+It leaves one cross-matching order bit undetermined and does not itself provide a fifth-vertex extension or a global cover.
+
+## Provenance
+
+Rescued from accepted archived result `R537`.
