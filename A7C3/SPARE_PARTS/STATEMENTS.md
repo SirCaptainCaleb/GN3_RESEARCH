@@ -691,3 +691,21 @@ Every edge-ordered `K5` has at least three vertex deletions whose remaining four
 Consequently, if `h_4(r)` denotes the number of four-subsets of an edge-ordered `K_r`, `r>=5`, that support an increasing Hamilton `P4`, then
 
 `h_4(r) >= (3/5) C(r,4)`.
+
+## S9040 — Complement-Free Johnson 5-of-10 Bounds
+
+### Theorem A — four-core Johnson cut ceiling
+
+Let `Omega` be a 10-element set and let `F` be a family of 5-subsets of `Omega` containing no complementary pair. Put `barF={Omega\A:A in F}`. In the Johnson graph `J(10,5)`, where two 5-sets are adjacent when they meet in four vertices,
+
+`e_J(F,barF) <= 15|F|`.
+
+Equivalently, the average number of four-overlap neighbors in `barF` seen from a member of `F` is at most `15`.
+
+### Theorem B — spectral intersection-one ceiling
+
+Let `G` be the graph on the 252 five-subsets of a 10-element set `Omega`, joining distinct `S,T` exactly when `|S intersect T|=1`. If `H` is a complement-free family of `m` five-subsets, then the average degree of the induced graph `G[H]` is at most
+
+`7 + 18m/252`.
+
+In particular, since complement-freeness implies `m<=126`, the average degree of `G[H]` is at most `16`.
