@@ -26,4 +26,4 @@ The theorem counts supports, not Hamilton orders, and supplies no endpoint presc
 
 ## Provenance
 
-Rescued from accepted archived results `R195`, `R228`.
+Rescued from accepted archived results `R195`, `R228`. Its only six-vertex existence input is `S9023`, whose former DPLL proof has now been replaced by a direct human signature-and-forcing proof; consequently this density hierarchy is human-founded throughout.
