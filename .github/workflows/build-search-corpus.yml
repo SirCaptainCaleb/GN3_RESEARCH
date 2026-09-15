@@ -29,13 +29,14 @@ jobs:
       - name: Commit corpus if changed
         shell: bash
         run: |
-          if git diff --quiet -- A7C3/SEARCH_CORPUS.md; then
+          git add A7C3/SEARCH_CORPUS.md
+
+          if git diff --cached --quiet; then
             echo 'Search corpus is already current.'
             exit 0
           fi
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add A7C3/SEARCH_CORPUS.md
           git commit -m 'Rebuild A7C3 search corpus [skip ci]'
           git push
