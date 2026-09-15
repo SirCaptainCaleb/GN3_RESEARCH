@@ -8,15 +8,19 @@ Let `H` be a finite Strong Level-(1) boundary tournament. Fix a three-vertex cor
 
 and an exterior set `E` disjoint from `C`.
 
-For `x in E` and `d in C`, write `C-{d}={u,v}` and orient `u,v` so that `(u,d,v)` is tight. Define the **core-polarity match-set**
+For `x in E` and `d in C`, write `C-{d}={u,v}`. Define the **core-polarity match-set**
 
 `M_C(x) subseteq C`
 
-by
+by declaring
 
-`d in M_C(x)` iff `(u,x,v)` is tight.
+`d in M_C(x)` iff `(u,d,v)` and `(u,x,v)` have the same polarity,
 
-This definition is independent of the naming of `u,v`, since reversing `u,v` reverses both tested turns.
+that is,
+
+`[(u,d,v) is tight] = [(u,x,v) is tight]`.
+
+This is independent of the ordering chosen for `u,v`: swapping `u,v` replaces each tested turn by its complete reversal, so boundary antisymmetry complements both Boolean values and preserves their equality. Equivalently, one may orient `u,v` uniquely so that `(u,d,v)` is tight; then `d in M_C(x)` exactly when `(u,x,v)` is tight.
 
 Let `Gamma_C` be the graph on `E` in which distinct exterior vertices `x,y` are adjacent exactly when the induced five-set `C union {x,y}` has a tight Hamilton path of order five.
 
@@ -156,7 +160,7 @@ Boundary antisymmetry makes exactly one turn in each undecided reversal pair tig
 
 ## Proof of the compression theorem
 
-Fix `d in C` and suppose `x,y in E_d`. Write `C-{d}={u,v}` with `(u,d,v)` tight. By the definition of the match-set,
+Fix `d in C` and suppose `x,y in E_d`. Choose the ordering `C-{d}={u,v}` for which `(u,d,v)` is tight. By the definition of the match-set,
 
 `(u,d,v)`, `(u,x,v)`, `(u,y,v)`
 
