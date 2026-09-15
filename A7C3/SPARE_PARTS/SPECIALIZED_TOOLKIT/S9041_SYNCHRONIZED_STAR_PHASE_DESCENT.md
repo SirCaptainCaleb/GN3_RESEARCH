@@ -119,11 +119,11 @@ Then `T` and `F` are physical exact two-covers of the same pair-deletion residue
 
 Assume instead that every insertion fails. Write
 
-`e_i={b_i,b_{i+1}`, `f_i={s,b_i}`
+`e_i={b_i,b_{i+1}}`, `f_i={s,b_i}`
 
 in the line-graph comparison notation of S9031. In a star-triangle
 
-`f_t -> e_{t-1} -> e_t -> f_t`, 
+`f_t -> e_{t-1} -> e_t -> f_t`,
 
 the comparison arrows give literal tight source trimers, for example
 
