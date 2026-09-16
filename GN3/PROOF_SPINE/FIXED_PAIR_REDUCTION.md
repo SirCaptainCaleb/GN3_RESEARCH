@@ -25,9 +25,9 @@ or
 
 `(v_0,...,v_k,w)`
 
-is tight. In the first case the protected end of `P` is `v_0`; in the second it is `v_k`.
+is tight. In the first case the protected end of `P` is `v_0`; in the second it is `v_k`. The witness `w` and the side on which it extends `P` are part of the certificate.
 
-A **configuration** consists of a current path system together with a set of named end-extension certificates and named conclusions previously obtained from Lemma 1.2. The certified paths need not belong to the current path system. They remain available as graph-theoretic objects in later applications of Lemma 1.2.
+A **configuration** consists of a current path system together with a set of named end-extension certificates and named conclusions previously obtained from Lemma 1.2. Whenever the subpath conclusion of Lemma 1.2 is used, the resulting subpath is retained with the same witness and the same extension side as an end-extension certificate. The certified paths need not belong to the current path system. They remain available as graph-theoretic objects in later applications of Lemma 1.2.
 
 We use two established continuation operations.
 
@@ -74,7 +74,7 @@ Then
 
 `P'=(v_0,...,v_{i-1})`
 
-is a nonempty proper subpath of `P`, is disjoint from `Q`, and `(w,P')` is tight.
+is a nonempty proper subpath of `P`, is disjoint from `Q`, and `(w,P')` is tight. In particular `P'` inherits from `P` the end-extension certificate with witness `w` on the same side.
 
 If `Q` contains `v_0`, then either `P=Q=(v_0)` or at least one of the following occurs:
 
@@ -83,7 +83,7 @@ If `Q` contains `v_0`, then either `P=Q=(v_0)` or at least one of the following 
 3. a vertex-simple proper tight cycle;
 4. a reversed tight ordered triple joining an edge of one path to the other.
 
-The statement obtained by reversing all path orders is also valid.
+The statement obtained by reversing all path orders is also valid; in its subpath conclusion the inherited witness and extension side are likewise retained.
 
 ### Proof
 
@@ -107,10 +107,10 @@ Suppose instead that `v_0` is the first vertex of `Q`. If `Q=(v_0)`, the path `(
 
 ### Lemma 2.1
 
-Let `s,t∈X` be distinct. There is a certificate-preserving lawful continuation such that either a spanning two-path cover of `H` occurs or the terminal current path system contains `(a)` and `(c)` and the certificate set contains both conclusions
+Let `s,t∈X` be distinct. There is a certificate-preserving lawful continuation such that either a spanning two-path cover of `H` occurs or the terminal current path system contains `(a)` and `(c)` and the certificate set contains both of the following singleton end-extension certificates:
 
-- contact of the retained path `L_s=(a,s)` with `(a)` leaves the singleton `(s)`;
-- contact of the retained path `R_t=(t,c)` with `(c)` leaves the singleton `(t)`.
+- contact of the retained path `L_s=(a,s)` with `(a)` leaves `(s)` with the inherited right-extension witness `c`;
+- contact of the retained path `R_t=(t,c)` with `(c)` leaves `(t)` with the inherited left-extension witness `a`.
 
 The same conclusion holds with `s,t` interchanged. The corresponding statement for two vertices of `Y` is obtained by interchanging `a,c`.
 
@@ -120,22 +120,27 @@ The paths `L_s=(a,s)` and `R_t=(t,c)` are disjoint. Their source triples give en
 
 If a spanning two-path cover occurs, stop. Otherwise the current path system contains `(a)` and `(c)`, while the end-extension certificates for `L_s,R_t` remain available.
 
-Apply the reversed form of Lemma 1.2 to the retained path `L_s=(a,s)` and the current singleton `(a)`. Since the protected end is `s`, the remaining nonempty subpath is `(s)`. Add this conclusion to the certificate set.
+Apply the reversed form of Lemma 1.2 to the retained path `L_s=(a,s)` and the current singleton `(a)`. Since the protected end is `s`, the remaining nonempty subpath is `(s)`. It inherits the right-extension witness `c`; retain that singleton end-extension certificate.
 
-Apply the corresponding form of Lemma 1.2 to the retained path `R_t=(t,c)` and the current singleton `(c)`. The remaining nonempty subpath is `(t)`. Add this conclusion as well.
+Apply the corresponding form of Lemma 1.2 to the retained path `R_t=(t,c)` and the current singleton `(c)`. The remaining nonempty subpath is `(t)`. It inherits the left-extension witness `a`; retain that singleton end-extension certificate as well.
 
 Interchanging `s,t` gives the second continuation. The case `s,t∈Y` is symmetric. ∎
 
 ## 3. The set `C_{a,c}`
 
-For `x∈X`, call the two conclusions
+For `x∈X`, define the two **source reductions at `x`** to be the singleton end-extension certificates
 
-- `L_x=(a,x)` contacted by `(a)` leaves `(x)`;
-- `R_x=(x,c)` contacted by `(c)` leaves `(x)`
+- `(x)` with inherited right-extension witness `c`, obtained from `L_x=(a,x)` after contact with `(a)`;
+- `(x)` with inherited left-extension witness `a`, obtained from `R_x=(x,c)` after contact with `(c)`.
 
-the two **source reductions at `x`**. For `x∈Y`, define the source reductions analogously with `a,c` interchanged.
+For `x∈Y`, the two source reductions are
 
-For a certificate-preserving lawful continuation `Σ`, define `C_{a,c}(Σ)` to be the set of vertices `x∈V(H)-{a,c}` for which both source reductions at `x` occur in the certificate set of the terminal configuration of `Σ`.
+- `(x)` with inherited right-extension witness `a`, obtained from `L_x=(c,x)` after contact with `(c)`;
+- `(x)` with inherited left-extension witness `c`, obtained from `R_x=(x,a)` after contact with `(a)`.
+
+Thus a source reduction records not only the surviving singleton but also its inherited witness and extension side.
+
+For a certificate-preserving lawful continuation `Σ`, define `C_{a,c}(Σ)` to be the set of vertices `x∈V(H)-{a,c}` for which both source-reduction certificates at `x` occur in the certificate set of the terminal configuration of `Σ`.
 
 ### Theorem 3.1
 
@@ -145,7 +150,7 @@ There is a certificate-preserving lawful continuation `Σ` such that either a sp
 
 ### Proof
 
-Consider `X`. If `|X|≤1`, do nothing. If `|X|≥2`, choose `t∈X`. For each `s∈X-{t}`, apply Lemma 2.1 first to `(s,t)` and then to `(t,s)`, concatenating the two lawful continuations at their common terminal singleton pair `(a),(c)`. Unless a spanning two-path cover appears, these two applications add both source reductions at `s` and at `t` to the certificate set. Repeating with the same `t` puts every vertex of `X` in `C_{a,c}(Σ)`.
+Consider `X`. If `|X|≤1`, do nothing. If `|X|≥2`, choose `t∈X`. For each `s∈X-{t}`, apply Lemma 2.1 first to `(s,t)` and then to `(t,s)`, concatenating the two lawful continuations at their common terminal singleton pair `(a),(c)`. Unless a spanning two-path cover appears, these two applications add both source-reduction certificates at `s` and at `t` to the certificate set. Repeating with the same `t` puts every vertex of `X` in `C_{a,c}(Σ)`.
 
 Apply the same construction to `Y` with `a,c` interchanged. A class of order zero or one can leave at most one vertex outside `C_{a,c}(Σ)`. Since
 
@@ -184,7 +189,7 @@ Consequently the only two-vertex supports through `s` not covered by this conclu
 
 The initial configuration contains end-extension certificates for both source paths `L_s,R_s`, and certificate preservation keeps them available throughout `Σ'`. Since `u∉{a,c}`, the path `Q` is neither `L_s` nor `R_s`. Apply Lemma 1.2 at their common vertex `s`. The exceptional singleton case is impossible because `Q` has two vertices. Every remaining outcome contains `u` in the extended path, the cycle, or the reversed ordered triple. ∎
 
-If in addition `s∈C_{a,c}(Σ)` for the continuation of Theorem 3.1, then the certificate set also contains both source reductions at `s`. Those two earlier reductions are not needed for Proposition 4.1 itself; their role is to constrain a later recurrence on the two exceptional supports `{a,s}` and `{s,c}`.
+If in addition `s∈C_{a,c}(Σ)` for the continuation of Theorem 3.1, then the certificate set also contains both singleton source-reduction certificates at `s`, including their inherited witnesses and extension sides. Those two earlier reductions are not needed for Proposition 4.1 itself; their role is to constrain a later recurrence on the two exceptional supports `{a,s}` and `{s,c}`.
 
 ## 5. Four vertices of one orientation
 
