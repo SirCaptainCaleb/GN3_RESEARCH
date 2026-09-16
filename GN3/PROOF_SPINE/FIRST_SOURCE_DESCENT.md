@@ -2,17 +2,15 @@
 
 **Status: supervised GN3 reconstruction. This revision incorporates the independent audit corrections and separates the shortest known route from the longer route that carries additional rank information. It is not yet a final GN3 certification.**
 
-## 1. Minimal-counterexample consequences
+## 1. Common input
 
-Assume the two-path-cover theorem is false and let `H` be a smallest counterexample. Then
+Work throughout under [`PRELIMINARIES.md`](PRELIMINARIES.md). Thus `H` is a smallest counterexample with
 
-`|V(H)|>10`
+`pc(H)=3`, `|V(H)|>10`,
 
-and `pc(H)=3`.
+and deleting any two vertices leaves an exact two-path-coverable graph in which neither path is a singleton.
 
-For any distinct vertices `x,y`, the induced subsystem `H-{x,y}` has path-cover number exactly two. Minimality gives a cover by at most two tight paths. It cannot be Hamiltonian, because a Hamilton path in `H-{x,y}` together with a suitable tight ordered triple on `x,y` and one vertex of that path would give a spanning two-path cover of `H`. Moreover, neither path in an exact two-path cover of `H-{x,y}` can be a singleton, for the same reason.
-
-This pair-deletion fact is used repeatedly below.
+The preliminary document also proves the fixed-pair orientation fact used later: for any distinct `a,c`, every other vertex lies in exactly one of the two classes determined by `(a,x,c)` and `(c,x,a)`; and any exact two-path cover of `H-{a,c}` has at least five internal vertices, three of which have the same orientation through `{a,c}`.
 
 ## 2. The shortest route to the nonextendable three-path configuration
 
@@ -114,13 +112,7 @@ Choose distinct `a,c` and an exact two-path cover
 
 `H-{a,c}=U|V`.
 
-Both paths are nontrivial. At most four vertices are endpoints of these two paths, so `|H|>10` leaves at least five internal vertices.
-
-For each internal vertex `x`, exactly one of
-
-`(a,x,c)` and `(c,x,a)`
-
-is tight. Hence there are three internal vertices `p,q,r` with the same orientation. After interchanging `a,c` if necessary, assume
+By Proposition 4.1 of [`PRELIMINARIES.md`](PRELIMINARIES.md), both paths are nontrivial and there are internal vertices `p,q,r` having the same orientation through `{a,c}`. After interchanging `a,c` if necessary, assume
 
 `(a,p,c)`, `(a,q,c)`, `(a,r,c)`
 
@@ -354,9 +346,8 @@ This is a research direction, not a theorem.
 
 The legacy sources for the mathematics retained here are:
 
-- small-order theorem: E8997 / R2152;
 - three-vertex cube construction and comparison: E8998 / R2143;
 - cube-to-proper-path/cycle reduction: R2136 and R2153;
 - rank-decrease theorem and direct longest-path entrance: E9003 / R2147.
 
-The old chain through E9006 is not used. The invalidated R2225 and R2228 compositions are not used.
+The common small-order theorem, pair-deletion argument, and fixed-pair orientation count now live in [`PRELIMINARIES.md`](PRELIMINARIES.md).
