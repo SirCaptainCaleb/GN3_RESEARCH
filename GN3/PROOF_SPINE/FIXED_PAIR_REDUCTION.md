@@ -13,23 +13,46 @@ For `x∈Y`, write
 
 `L_x=(c,x)`, `R_x=(x,a)`.
 
-Thus `L_x` and `R_x` are two-vertex tight paths, and the corresponding tight ordered triple through `a,c` extends each of them at the end containing `x`.
+Thus `L_x` and `R_x` are two-vertex tight paths. In each case the tight ordered triple through `a,c` extends `L_x` at its `x`-end and extends `R_x` at its `x`-end.
 
-A **path system** is a family of pairwise vertex-disjoint tight paths. If `D=(u,v)` is a two-vertex path, a vertex `w∉{u,v}` is a **left extension** of `D` when `(w,u,v)` is tight and a **right extension** when `(u,v,w)` is tight.
+A **path system** is a family of pairwise vertex-disjoint tight paths.
+
+An **end-extension certificate** is a named tight path `P=(v_0,...,v_k)` together with a named vertex `w∉V(P)` such that either
+
+`(w,v_0,...,v_k)`
+
+or
+
+`(v_0,...,v_k,w)`
+
+is tight. In the first case the protected end of `P` is `v_0`; in the second it is `v_k`.
+
+A **configuration** consists of a current path system together with a set of named end-extension certificates and named conclusions previously obtained from Lemma 1.2. The certified paths need not belong to the current path system. They remain available as graph-theoretic objects in later applications of Lemma 1.2.
+
+We use two established continuation operations.
+
+1. **Endpoint selection.** Suppose the configuration contains end-extension certificates for two vertex-disjoint two-vertex paths `D_1,D_2`, one protected at its left end and the other at its right end. For either prescribed vertex `x∈V(D_1)`, there is a continuation ending either in a spanning two-path cover of `H` or in a configuration whose current path system contains singleton paths `(x)` and `(q)` for some vertex `q`. Every certificate already present remains present.
+2. **Singleton replacement.** Suppose the current path system contains singleton paths `(x)` and `(q)`. For any prescribed vertex `y∉{x,q}`, there is a continuation ending either in a spanning two-path cover of `H` or in a configuration whose current path system contains singleton paths `(x)` and `(y)`. Every certificate already present remains present.
+
+A **certificate-preserving lawful continuation** is a sequence of configurations obtained by these two operations, with any applications of Lemma 1.2 added to the certificate set. Thus a path that was used earlier may disappear from the current path system without disappearing from the hypotheses available to later contact arguments.
+
+Initially we retain the end-extension certificates supplied by all of the tight triples through `a,c`; in particular every `L_x,R_x` above remains available throughout every certificate-preserving lawful continuation.
 
 ## 1. Two local lemmas
 
 ### Lemma 1.1 — prescribed endpoints for two disjoint two-vertex paths
 
-Let `D_1,D_2` be vertex-disjoint two-vertex tight paths such that one has a specified left extension and the other a specified right extension. For arbitrary prescribed vertices
+Let a configuration contain end-extension certificates for vertex-disjoint two-vertex tight paths `D_1,D_2`, one protected at its left end and the other at its right end. For arbitrary prescribed vertices
 
 `x∈V(D_1)`, `y∈V(D_2)`,
 
-there is a sequence of path systems
+there is a certificate-preserving lawful continuation ending either in a spanning two-path cover of `H` or in a configuration whose current path system contains `(x)` and `(y)`.
 
-`Σ=(\mathcal P_0,...,\mathcal P_m)`
+### Proof
 
-ending either in a spanning two-path cover of `H` or in a path system `\mathcal P_m` containing the singleton paths `(x)` and `(y)` as its two distinguished paths.
+Apply endpoint selection to `D_1`, prescribing `x`. If a spanning two-path cover appears, stop. Otherwise the current path system contains `(x)` and some singleton `(q)`.
+
+If `q=y`, stop. Otherwise apply singleton replacement with `(x)` fixed and target `y`. This gives either a spanning two-path cover or the singleton pair `(x),(y)`. All incoming certificates, including those of `D_1,D_2`, persist through both operations. ∎
 
 ### Lemma 1.2 — contact with an end-extended path
 
@@ -84,41 +107,45 @@ Suppose instead that `v_0` is the first vertex of `Q`. If `Q=(v_0)`, the path `(
 
 ### Lemma 2.1
 
-Let `s,t∈X` be distinct. Then there is a sequence
+Let `s,t∈X` be distinct. There is a certificate-preserving lawful continuation such that either a spanning two-path cover of `H` occurs or the terminal current path system contains `(a)` and `(c)` and the certificate set contains both conclusions
 
-`Σ_{s,t}=(\mathcal P_0,...,\mathcal P_m)`
-
-such that either some `\mathcal P_i` is a spanning two-path cover of `H`, or `\mathcal P_m` contains the singleton paths `(a)` and `(c)` as its two distinguished paths and, for some indices of the same sequence, Lemma 1.2 applied to `L_s=(a,s)` with `(a)` gives `(s)`, while Lemma 1.2 applied to `R_t=(t,c)` with `(c)` gives `(t)`.
+- contact of the retained path `L_s=(a,s)` with `(a)` leaves the singleton `(s)`;
+- contact of the retained path `R_t=(t,c)` with `(c)` leaves the singleton `(t)`.
 
 The same conclusion holds with `s,t` interchanged. The corresponding statement for two vertices of `Y` is obtained by interchanging `a,c`.
 
 ### Proof
 
-The paths `L_s=(a,s)` and `R_t=(t,c)` are disjoint. The triples `(a,s,c)` and `(a,t,c)` supply a right extension of `L_s` and a left extension of `R_t`. Apply Lemma 1.1 with prescribed endpoints `a∈L_s` and `c∈R_t`.
+The paths `L_s=(a,s)` and `R_t=(t,c)` are disjoint. Their source triples give end-extension certificates protected at `s` and `t`, respectively. Apply Lemma 1.1 with prescribed endpoints `a∈L_s` and `c∈R_t`.
 
-If a spanning two-path cover occurs, stop. Otherwise the last path system contains `(a)` and `(c)`.
+If a spanning two-path cover occurs, stop. Otherwise the current path system contains `(a)` and `(c)`, while the end-extension certificates for `L_s,R_t` remain available.
 
-Apply the reversed form of Lemma 1.2 to `L_s=(a,s)` with the singleton `(a)`. The protected end is `s`, so the remaining nonempty subpath is `(s)`. Apply the corresponding form to `R_t=(t,c)` with `(c)`; the remaining nonempty subpath is `(t)`.
+Apply the reversed form of Lemma 1.2 to the retained path `L_s=(a,s)` and the current singleton `(a)`. Since the protected end is `s`, the remaining nonempty subpath is `(s)`. Add this conclusion to the certificate set.
 
-Interchanging `s,t` gives the second sequence. The case `s,t∈Y` is symmetric. ∎
+Apply the corresponding form of Lemma 1.2 to the retained path `R_t=(t,c)` and the current singleton `(c)`. The remaining nonempty subpath is `(t)`. Add this conclusion as well.
+
+Interchanging `s,t` gives the second continuation. The case `s,t∈Y` is symmetric. ∎
 
 ## 3. The set `C_{a,c}`
 
-Concatenate the sequences of Lemma 2.1, always choosing the last path system containing `(a)` and `(c)` unless a spanning two-path cover has already appeared. Let
+For `x∈X`, call the two conclusions
 
-`Σ=(\mathcal P_0,...,\mathcal P_N)`
+- `L_x=(a,x)` contacted by `(a)` leaves `(x)`;
+- `R_x=(x,c)` contacted by `(c)` leaves `(x)`
 
-be the resulting sequence. Define `C_{a,c}(Σ)` to be the set of vertices `x∈V(H)-{a,c}` for which there are indices `i,j≤N` such that Lemma 1.2, applied at `\mathcal P_i`, leaves `(x)` from `L_x`, and applied at `\mathcal P_j`, leaves `(x)` from `R_x`.
+the two **source reductions at `x`**. For `x∈Y`, define the source reductions analogously with `a,c` interchanged.
+
+For a certificate-preserving lawful continuation `Σ`, define `C_{a,c}(Σ)` to be the set of vertices `x∈V(H)-{a,c}` for which both source reductions at `x` occur in the certificate set of the terminal configuration of `Σ`.
 
 ### Theorem 3.1
 
-There is a sequence `Σ` such that either some member of `Σ` is a spanning two-path cover of `H` or
+There is a certificate-preserving lawful continuation `Σ` such that either a spanning two-path cover of `H` occurs or
 
 `|V(H)-({a,c}∪C_{a,c}(Σ))|≤1`.
 
 ### Proof
 
-Consider `X`. If `|X|≤1`, do nothing. If `|X|≥2`, choose `t∈X`. For each `s∈X-{t}`, apply Lemma 2.1 first to `(s,t)` and then to `(t,s)`. Unless a spanning two-path cover appears, these two applications put both `s` and `t` in `C_{a,c}(Σ)`. Repeating with the same `t` puts every vertex of `X` in `C_{a,c}(Σ)`.
+Consider `X`. If `|X|≤1`, do nothing. If `|X|≥2`, choose `t∈X`. For each `s∈X-{t}`, apply Lemma 2.1 first to `(s,t)` and then to `(t,s)`, concatenating the two lawful continuations at their common terminal singleton pair `(a),(c)`. Unless a spanning two-path cover appears, these two applications add both source reductions at `s` and at `t` to the certificate set. Repeating with the same `t` puts every vertex of `X` in `C_{a,c}(Σ)`.
 
 Apply the same construction to `Y` with `a,c` interchanged. A class of order zero or one can leave at most one vertex outside `C_{a,c}(Σ)`. Since
 
@@ -128,25 +155,21 @@ both classes cannot have order at most one. Hence at most one vertex outside `{a
 
 ### Corollary 3.2
 
-Let
-
-`Σ'=(\mathcal P_0,...,\mathcal P_N,...,\mathcal P_M)`
-
-extend the sequence `Σ` of Theorem 3.1. If some `\mathcal P_k`, `k>N`, contains two vertex-disjoint two-vertex paths `D_1,D_2` on four distinct vertices, then at least one of those four vertices belongs to `C_{a,c}(Σ)`.
+Let `Σ'` be any certificate-preserving lawful continuation extending the continuation `Σ` of Theorem 3.1. If a current path system occurring in `Σ'` contains two vertex-disjoint two-vertex paths `D_1,D_2` on four distinct vertices, then at least one of those four vertices belongs to `C_{a,c}(Σ)`.
 
 ### Proof
 
 The complement of `C_{a,c}(Σ)` is contained in `{a,c}` together with at most one additional vertex, and therefore has order at most three. ∎
 
-## 4. Contact through a vertex of `C_{a,c}`
+## 4. Contact with a new endpoint
 
 ### Proposition 4.1
 
-Let `Σ'` extend `Σ` as in Corollary 3.2. Suppose some member of `Σ'` contains a two-vertex tight path
+Let `s∈X`, and let `Σ'` be a certificate-preserving lawful continuation from the fixed-pair source configuration. Suppose a current path system occurring in `Σ'` contains a two-vertex tight path
 
 `Q=(s,u)` or `Q=(u,s)`
 
-with `s∈C_{a,c}(Σ)∩X` and `u∉{a,c}`. Then Lemma 1.2, applied to `Q` and one of the fixed paths `L_s=(a,s)` or `R_s=(s,c)`, gives at least one of the following:
+with `u∉{a,c}`. Then contact of `Q` with one of the retained source paths `L_s=(a,s)` or `R_s=(s,c)` gives at least one of the following:
 
 1. a tight path properly containing one of `L_s,R_s`;
 2. a tight path properly containing `Q`;
@@ -159,7 +182,9 @@ Consequently the only two-vertex supports through `s` not covered by this conclu
 
 ### Proof
 
-Since `u∉{a,c}`, the path `Q` is neither `L_s` nor `R_s`. By the definition of `C_{a,c}(Σ)`, both applications of Lemma 1.2 at `s` occur in `Σ`; the fixed tight triple `(a,s,c)` supplies the required end extensions of `L_s` and `R_s`. Apply Lemma 1.2 to `Q` at `s`. The exceptional singleton case is impossible because `Q` has two vertices. Every remaining outcome contains `u` in the extended path, cycle, or reversed ordered triple. ∎
+The initial configuration contains end-extension certificates for both source paths `L_s,R_s`, and certificate preservation keeps them available throughout `Σ'`. Since `u∉{a,c}`, the path `Q` is neither `L_s` nor `R_s`. Apply Lemma 1.2 at their common vertex `s`. The exceptional singleton case is impossible because `Q` has two vertices. Every remaining outcome contains `u` in the extended path, the cycle, or the reversed ordered triple. ∎
+
+If in addition `s∈C_{a,c}(Σ)` for the continuation of Theorem 3.1, then the certificate set also contains both source reductions at `s`. Those two earlier reductions are not needed for Proposition 4.1 itself; their role is to constrain a later recurrence on the two exceptional supports `{a,s}` and `{s,c}`.
 
 ## 5. Four vertices of one orientation
 
@@ -191,7 +216,7 @@ Thus there are distinct `x,y,z` with `x→_A y→_C z`. The triples `(x,a,y)`, `
 
 ### Corollary 5.2
 
-For the sequence `Σ` of Theorem 3.1, unless `H` already has a spanning two-path cover, there exist distinct `x,y,z∈C_{a,c}(Σ)` such that either
+For the continuation `Σ` of Theorem 3.1, unless `H` already has a spanning two-path cover, there exist distinct `x,y,z∈C_{a,c}(Σ)` such that either
 
 `(x,a,y,c,z)`
 
