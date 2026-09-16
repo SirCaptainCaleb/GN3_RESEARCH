@@ -199,135 +199,237 @@ are tight. For the fifth vertex `d`, set
 
 `S(d)={u in {a,b,c} : (u,o,d) is tight}`.
 
-Cyclic permutation of `a,b,c` preserves the normalized star triangle. Also define the reverse boundary tournament `G^rev` by declaring `(x,y,z)` tight in `G^rev` exactly when `(z,y,x)` is tight in `G`. Reversing the vertex order of a tight path in `G` gives a tight path in `G^rev`. Passing to `G^rev` and then exchanging the labels `b,c` restores the normalized star triangle and sends `|S(d)|` to `3-|S(d)|`. Hence it is enough to consider `|S(d)|=0` and `|S(d)|=1`.
+Cyclic permutation of `a,b,c` preserves the normalized star triangle. Also define the reverse boundary tournament `G^rev` by declaring `(x,y,z)` tight in `G^rev` exactly when `(z,y,x)` is tight in `G`. Reversing the vertex order of a tight path in `G` gives a tight path in `G^rev`. Passing to `G^rev` and then exchanging the labels `b,c` restores the normalized star triangle and sends `|S(d)|` to `3-|S(d)|`. Hence it is enough to treat `|S(d)|=0` and `|S(d)|=1`.
 
-If `|S(d)|=0`, the following branches are exhaustive up to the cyclic symmetry:
-
-| branch | successive forced triples | contradiction |
-| --- | --- | --- |
-| `abd` | `dabco=>bad; bdaco=>acb; acbdo=>odb; oacbd=>dca; doacb=>cbo; cbdoa=>aod` | `doa` and `aod` |
-| `bad` | `dbaco=>abd; cabdo=>dba; odcab=>bac; bacod=>dco; dcabo=>oba; obdca=>acd` | `dca` and `acd` |
-
-If `|S(d)|=1`, relabel cyclically so `(a,o,d)` is tight while `(d,o,b),(d,o,c)` are tight. The exhaustive branches are:
+If `|S(d)|=0`, then `(d,o,a),(d,o,b),(d,o,c)` are tight. The following branches are exhaustive:
 
 | branch | successive forced triples | contradiction |
 | --- | --- | --- |
-| `abd, acd` | `bcaod=>doa; dbaco=>acb; acbdo=>odb; oacbd=>dca; cbdoa=>aod` | `doa` and `aod` |
-| `abd, dca` | `dabco=>bad; bacod=>dco; dcabo=>oba; obacd=>dba; odbac=>cbo` | `boc` and `cbo` |
-| `dba, acd` | `dbaco=>abd; cabdo=>dba; bdaco=>acb; acbdo=>odb; odbca=>cao` | `aoc` and `cao` |
-| `dba, dca` | `odcab=>bac; bacod=>dco; dcabo=>oba; obacd=>dba; dbaco=>acb; acbdo=>odb` | `bdo` and `odb` |
+| `obc` | `dobca=>acb; doacb=>cao; dcaob=>acd; aobcd=>dcb; daobc=>oad; oadcb=>cda; bocda=>dco; bdcoa=>cdb; acdbo=>obd; caobd=>oac` | `oac` and `cao` |
+| `cbo, oda, oba, bdc` | `bdcoa=>ocd; bocda=>adc; obadc=>dab; odabc=>cba; docba=>bco; dbcoa=>cbd; aobdc=>dbo; adboc=>bda; cbdao=>oad; bcoad=>dao` | `oda` and `dao` |
+| `cbo, oda, oba, cdb` | `dobac=>cab; cdoba=>odc; odcab=>acd; acdbo=>obd; caobd=>oac; oacdb=>cao` | `oac` and `cao` |
+| `cbo, oda, abo, oac` | `abocd=>dco; daboc=>bad; badco=>cda; cdaob=>oad; coadb=>bda; bcoad=>ocb; ocbda=>dbc; doacb=>bca; odbca=>bdo; bdoac=>cao` | `oac` and `cao` |
+| `cbo, oda, abo, cao` | `dcaob=>acd; abocd=>dco; bdcoa=>cdb; acdbo=>obd; caobd=>oac` | `oac` and `cao` |
+| `cbo, ado, obd` | `caobd=>oac; badoc=>dab; daboc=>oba; dobac=>cab; cdoba=>odc; odcab=>acd; aobdc=>cdb; oacdb=>cao` | `oac` and `cao` |
+| `cbo, ado, dbo` | `adboc=>bda; cadob=>dac; bdaco=>oca; dboca=>obd` | `obd` and `dbo` |
 
-Thus a shortest comparison cycle is not a star triangle.
+If `|S(d)|=1`, cyclically relabel so `S(d)={c}`. Thus `(d,o,a),(d,o,b),(c,o,d)` are tight. The exhaustive branches are:
 
-**Ordinary triangle.** Normalize the comparison cycle as
+| branch | successive forced triples | contradiction |
+| --- | --- | --- |
+| `odb, adc` | `codba=>abd; acodb=>oca; ocabd=>bac; dobac=>abo; abocd=>dco; badco=>dab; daboc=>oba` | `oba` and `abo` |
+| `odb, cda` | `cdaob=>oad; acodb=>oca; bocad=>dac; dboca=>obd; obdac=>adb; coadb=>dao` | `oad` and `dao` |
+| `bdo, bdc` | `bdcoa=>ocd; abocd=>oba; aobdc=>dbo; dboca=>aco; adboc=>bda; bdaco=>cad; cadob=>oda; codab=>bad; bocda=>adc; obadc=>abo` | `oba` and `abo` |
+| `bdo, cdb` | `bdoac=>cao; dcaob=>acd; acdbo=>obd; caobd=>oac` | `oac` and `cao` |
 
-`ab -> bc -> ca -> ab`,
+The symmetry already described handles `|S(d)|=2,3`. Thus a shortest comparison cycle is not a star triangle.
 
-so `(a,b,c),(b,c,a),(c,a,b)` are tight. Let the remaining vertices be `d,e`. For `x∈{d,e}`, define
+**Ordinary triangle.** Normalize the comparison triangle as
 
-`M(x)={(i,j)∈{a,b,c}^2 : i!=j, (i,x,j) is tight and (j,x,i) is not tight}`.
+`oa -> ab -> bo -> oa`,
 
-If for some distinct `x,y∈{d,e}` the sets `M(x),M(y)` contain ordered pairs sharing a coordinate in the same position, then after relabelling one obtains three triples of the form
+so `(o,a,b),(a,b,o),(b,o,a)` are tight, and let `c,d` be the other vertices. For `w∈{c,d}` define
 
-`(r,x,s)`, `(r,y,s)`, `(r,z,s)`
+`o in M(w)` iff `(b,w,a)` is tight,
 
-with common endpoints, and Lemma 2.2 gives a Hamilton path. Therefore, in a non-Hamiltonian five-set, the two match sets must be disjoint in both coordinates.
+`a in M(w)` iff `(o,w,b)` is tight,
 
-The only possibilities up to cyclic relabelling and reversal are the disjoint pairings
+`b in M(w)` iff `(a,w,o)` is tight.
 
-`{(a,b),(b,c)}` with `{(c,a)}`,
-`{(a,b)}` with `{(b,c),(c,a)}`,
-`{(a,b),(c,a)}` with `{(b,c)}`.
+If `M(c)` and `M(d)` shared a coordinate, that coordinate, together with `c,d`, would be the three middle vertices of three tight triples with the same first and third vertices; Lemma 2.2 would give a Hamilton five-path. Hence `M(c)` and `M(d)` are disjoint.
 
-In each of these three cases, direct inspection of the corresponding five-vertex words gives a Hamilton path, contradicting non-Hamiltonicity. Hence `Gamma(G)` has no directed cycle. ∎
+Up to cyclic permutation of `o,a,b` and exchange of `c,d`, the disjoint pair is one of
+
+`(∅,∅)`, `(∅,{o})`, `(∅,{o,a})`, `(∅,{o,a,b})`, `({o},{a})`, `({o},{a,b})`.
+
+The match-set definition fixes all exterior-core triples used in the following exhaustive table:
+
+| `M(c),M(d)` | extra branch | successive forced triples | contradiction |
+| --- | --- | --- | --- |
+| `∅,∅` | none | `bcoda=>doc; bdoca=>aco` | `oca` and `aco` |
+| `∅,{o}` | none | `bcoda=>doc; bdoca=>aco` | `oca` and `aco` |
+| `∅,{o,a}` | none | `bcoda=>doc; docab=>bac; odbac=>abd; odacb=>cad; bocad=>cob; cobda=>dbo; cdboa=>bdc; oabdc=>bao` | `oab` and `bao` |
+| `∅,{o,a,b}` | `abc` | `abcod=>doc; badoc=>dab; dabco=>ocb` | `ocb` and `bco` |
+| `∅,{o,a,b}` | `cba` | `cbado=>dab; cdabo=>adc; boadc=>dao; cbdao=>dbc; dbcoa=>aoc; bdaoc=>oad` | `oad` and `dao` |
+| `({o},{a})` | `ocd` | `bcoda=>doc; docab=>bac; odbac=>abd; oabdc=>cdb; aocdb=>coa; coabd=>bao` | `oab` and `bao` |
+| `({o},{a})` | `dco` | `ocadb=>dac; bodac=>dob; dobca=>cbo; dcboa=>bcd; cboad=>dao; bcdao=>adc; badco=>dab; daboc=>cob; adcob=>cda; bcdao=>oad` | `oad` and `dao` |
+| `({o},{a,b})` | `cod` | `codba=>abd; abcod=>cba; cbado=>dab; daboc=>cob; cdabo=>adc; adcob=>ocd; oabdc=>cdb; aocdb=>coa; coabd=>bao` | `oab` and `bao` |
+| `({o},{a,b})` | `doc` | `docab=>bac; odbac=>abd; badoc=>dab; daboc=>cob; cdabo=>adc; adcob=>ocd; oabdc=>cdb; aocdb=>coa; coabd=>bao` | `oab` and `bao` |
+
+The extra branches in the table are reversal pairs, so the table is exhaustive. Thus no shortest directed comparison cycle exists. Hence `Gamma(G)` is acyclic, and Lemma 2.1 gives the required edge order. ∎
 
 ### Lemma 2.4. Two non-Hamiltonian edge-ordered four-sets
 
-Let `<` be an edge order on a complete graph, let `T` be a three-vertex set, and let `x,y∉T` be distinct. Suppose neither `T∪{x}` nor `T∪{y}` has an increasing Hamilton path. Then `T∪{x,y}` has an increasing Hamilton path.
+Let `K` be an edge-ordered complete graph, let `T={u_0,u_1,u_2}`, and let `x,y` be distinct vertices outside `T`. If neither `K[T∪{x}]` nor `K[T∪{y}]` has an increasing Hamilton path, then `K[T∪{x,y}]` has an increasing Hamilton path.
 
-**Proof.** A four-vertex edge-ordered complete graph has no increasing Hamilton path exactly when its first two edges are disjoint and its last two edges are disjoint. Thus its six edges form three matching blocks in increasing order. Apply this to `T∪{x}` and `T∪{y}`. The common triangle on `T` appears in the same relative order in both restrictions, while the three edges incident with `x` and the three incident with `y` occupy the complementary positions in their respective matching blocks. Comparing the two middle blocks forces one of the words through `x` and `y` to be increasing, giving an increasing Hamilton path on all five vertices. ∎
+**Proof.** First classify a non-Hamiltonian edge-ordered `K_4`. Let its six ordinary edges be
+
+`e_1<e_2<...<e_6`.
+
+If `e_1,e_2` met, say `e_1=ab` and `e_2=bc`, then for the fourth vertex `d` the edge `cd` occurs after `e_2`, so `a,b,c,d` is an increasing Hamilton path. Thus `e_1,e_2` are disjoint. Dually `e_5,e_6` are disjoint. Hence the pairs `{e_1,e_2}`, `{e_3,e_4}`, `{e_5,e_6}` are the three opposite perfect matchings of `K_4`, ordered in three strict blocks.
+
+Relabel `T` so
+
+`u_1u_2 < u_0u_2 < u_0u_1`.
+
+For `r∈{x,y}`, the matching-block classification in `T∪{r}` forces
+
+`ru_0 < ru_1 < ru_2`.
+
+If `xu_1<yu_1`, then
+
+`u_0,x,u_1,y,u_2`
+
+is increasing. If `yu_1<xu_1`, then
+
+`u_0,y,u_1,x,u_2`
+
+is increasing. ∎
 
 ### Lemma 2.5. Extending a fixed three-vertex path
 
-Let `P=(a,b,c)` be a tight path, and let `x,y,z` be three further distinct vertices. At least one of
+Let `P` be a tight path of `H` on three vertices and let `x,y,z` be distinct vertices of `V(H)-V(P)`. At least one of
 
-`H[V(P)∪{x,y}]`, `H[V(P)∪{x,z}]`, `H[V(P)∪{y,z}]`
+`V(P)∪{x,y}`, `V(P)∪{x,z}`, `V(P)∪{y,z}`
 
 has a Hamilton tight path.
 
-**Proof.** Suppose all three five-vertex sets are non-Hamiltonian. By Lemma 2.3, each is represented by an edge order. Since their restrictions to the common triangle `{a,b,c}` agree, relabel the three triangle edges so that
+**Proof.** Write `P` on vertices `{a,b,c}`. Assume, for contradiction, that all three five-sets obtained by adding two of `x,y,z` are non-Hamiltonian. By Lemma 2.3 each is represented by an edge order. Their restrictions to the common triangle `{a,b,c}` realize the same comparison orientation, so after relabelling the three vertices we may assume
 
 `ab<ac<bc`.
 
-For each outside vertex `w`, record the relative positions of the three incident edges `aw,bw,cw`. The non-Hamiltonian four-vertex classification from Lemma 2.4 leaves six possibilities. Associate to `w` the resulting matching signature `M(w)`.
+Thus `(b,a,c)`, `(a,b,c)`, `(a,c,b)` are tight.
 
-If two signatures share a coordinate, the corresponding three common-endpoint triples invoke Lemma 2.2 and give a Hamilton path. If two signatures are empty, the common triangle order and the remaining spokes give an increasing Hamilton word directly. Thus only three pairwise-disjoint signature patterns remain. In each such pattern, one of the following forced comparisons occurs:
+For an exterior vertex `w`, define
 
-| case | forced edge inequalities | Hamilton word |
+`a in M(w)` iff `(b,w,c)` is tight,
+
+`b in M(w)` iff `(a,w,c)` is tight,
+
+`c in M(w)` iff `(a,w,b)` is tight.
+
+In an edge order on a five-set containing `{a,b,c,w}`, the relative order of `wa,wb,wc` gives exactly the following six possibilities:
+
+| order of `wa,wb,wc` | `M(w)` |
+| --- | --- |
+| `wa<wb<wc` | `{a,b,c}` |
+| `wa<wc<wb` | `{b,c}` |
+| `wb<wa<wc` | `{a,b}` |
+| `wb<wc<wa` | `{a}` |
+| `wc<wa<wb` | `{c}` |
+| `wc<wb<wa` | `∅` |
+
+If two exterior vertices `u,v` shared a coordinate of their match sets, Lemma 2.2 would apply. Indeed, a shared coordinate `a` gives the triples `(b,a,c),(b,u,c),(b,v,c)`; a shared coordinate `b` gives `(a,b,c),(a,u,c),(a,v,c)`; and a shared coordinate `c` gives `(a,c,b),(a,u,b),(a,v,b)`. In every case `P∪{u,v}` would have a Hamilton five-path, a contradiction. Hence `M(x),M(y),M(z)` are pairwise disjoint.
+
+Two match sets cannot both be `∅`. If `M(u)=M(v)=∅`, then in the edge order on `P∪{u,v}`,
+
+`uc<ub<ua`, `vc<vb<va`.
+
+If `ub<vb`, the word `c,u,b,v,a` is increasing; if `vb<ub`, the word `c,v,b,u,a` is increasing. Either contradicts non-Hamiltonicity.
+
+Therefore exactly one match set is `∅`. The other two are disjoint nonempty members of
+
+`{a}`, `{c}`, `{a,b}`, `{b,c}`, `{a,b,c}`.
+
+Three nonempty pairwise disjoint signatures would have to be `{a},{b},{c}`, but `{b}` is not in the list. After naming the `∅`-signature vertex `x` and ordering `y,z`, only the following three cases remain:
+
+`I. M(x)=∅, M(y)={a}, M(z)={c};`
+
+`II. M(x)=∅, M(y)={a}, M(z)={b,c};`
+
+`III. M(x)=∅, M(y)={a,b}, M(z)={c}.`
+
+Assume throughout that the relevant five-set is non-Hamiltonian. We again use the forcing rule from Lemma 2.3: if a five-vertex word has two known tight triples, the reverse of its third triple is forced. The initial exterior-core triples are
+
+`I: cxb,cxa,bxa; byc,cya,bya; czb,cza,azb.`
+
+`II: cxb,cxa,bxa; byc,cya,bya; czb,azc,azb.`
+
+`III: cxb,cxa,bxa; byc,ayc,bya; czb,cza,azb.`
+
+The following table completes the three cases:
+
+| case | successive forced triples | contradiction |
 | --- | --- | --- |
-| I | `ax<xy<yc<bc` | `a x y c b` |
-| II | `bx<xy<ya<ac` | `b x y a c` |
-| III | `cx<xy<yb<ab` | `c x y b a` |
+| I | `bycxa=>xcy; xcyab=>bay; cxbay=>abx; czbxa=>xbz; acxbz=>xca; xcazb=>zac; yzacb=>azy; cxbya=>ybx; ybxac=>cax; bycax=>acy; bacyz=>zyc; bazyc=>zab; czabx=>xba` | `abx` and `xba` |
+| II | `cxbya=>ybx; ybxac=>cax; bycax=>acy; bacyz=>zyc; czbxa=>xbz; acxbz=>xca; xcazb=>zac; zacbx=>xbc; xbcya=>ycb; azycb=>yza; yzacb=>bca` | `acb` and `bca` |
+| III | `cxbya=>ybx; ybxac=>cax; bycax=>acy; xbacy=>abx; czbxa=>xbz; acxbz=>xca; xcazb=>zac; yzacb=>azy; bacyz=>zyc; bazyc=>zab; czabx=>xba` | `abx` and `xba` |
 
-Each word is increasing, contradiction. ∎
+Each case violates boundary antisymmetry. ∎
 
 ### Corollary 2.6. Four Hamiltonian five-subsets of every six-set
 
-Every six-vertex subset of `V(H)` contains at least four five-vertex subsets that are Hamiltonian.
+For every six-element set `E⊆V(H)`, at least four of the five-element subsets of `E` induce Hamiltonian boundary tournaments.
 
-**Proof.** If at most three of its five-subsets were Hamiltonian, at least three would be non-Hamiltonian. The complements of those three five-subsets are three distinct vertices. Apply Lemma 2.5 to the remaining fixed three vertices and those three omitted vertices. ∎
+**Proof.** Let `E` be a six-set and let
 
-### Lemma 2.7. Non-Hamiltonian four-subsets of a five-set
+`M={e in E : H[E-{e}] has a Hamilton path}`.
 
-Every five-vertex subset contains at most three non-Hamiltonian four-vertex subsets.
+Choose any three-set `T⊆E`. The complementary three-set `P=E-T` can be ordered as a tight path: choose any middle vertex, and boundary antisymmetry chooses one of the two orders of the other two vertices. Lemma 2.5 applied to this path and the three vertices of `T` shows that `M∩T` is nonempty. If `|E-M|>=3`, choose `T⊆E-M` of order three, a contradiction. Thus `|M|>=4`. ∎
 
-**Proof.** If the five-set is Hamiltonian, delete either endpoint of a Hamilton path; this gives two Hamiltonian four-subsets, so at most three are non-Hamiltonian.
+### Lemma 2.7. At most three non-Hamiltonian four-subsets
 
-If the five-set is non-Hamiltonian, Lemma 2.3 represents it by one edge order. If two four-subsets were non-Hamiltonian, they would share a three-set and Lemma 2.4 would make the whole five-set Hamiltonian, contradiction. Thus in this case at most one four-subset is non-Hamiltonian. ∎
+For every five-element set `S⊆V(H)`, at most three four-element subsets of `S` induce non-Hamiltonian boundary tournaments.
 
-### Lemma 2.8. Johnson cut bound
+**Proof.** Let `S` be a five-set. If `H[S]` is Hamiltonian, choose a Hamilton order `(v_0,...,v_4)`. Deleting `v_0` or deleting `v_4` leaves a Hamilton tight four-vertex path, so at most three of the five four-subsets are non-Hamiltonian.
+
+Suppose instead that `H[S]` is non-Hamiltonian. By Lemma 2.3 it is represented by an edge order. If two distinct four-subsets were both non-Hamiltonian, they would have the form `T∪{x}` and `T∪{y}` for their three-vertex intersection `T`. Their induced edge orders have no increasing Hamilton path, so Lemma 2.4 gives an increasing Hamilton path on all five vertices. By the representation, this is a tight Hamilton path of `H[S]`, a contradiction. Thus in the non-Hamiltonian case at most one four-subset is non-Hamiltonian. ∎
+
+### Lemma 2.8. The Johnson cut bound
 
 Let `Omega` be a ten-element set and let `F⊆binom(Omega,5)` contain no complementary pair. Put
 
-`bar(F)={Omega-A:A∈F}`.
+`bar(F)={Omega-A : A in F}`.
 
-Let `e(F,bar(F))` denote the number of edges of the Johnson graph `J(10,5)` with one endpoint in `F` and the other in `bar(F)`. Then
+In the Johnson graph `J(10,5)`, whose vertices are the five-subsets of `Omega` and whose adjacent vertices meet in four elements, let `e(F,bar(F))` denote the number of Johnson edges with one endpoint in `F` and one endpoint in `bar(F)`. Then
 
-`e(F,bar(F))<=15|F|`.
+`e(F,bar(F)) <= 15|F|`.
 
-**Proof.** For each four-set `C⊆Omega`, the six five-sets containing `C` form a clique `K_C`. Put
+**Proof.** For every four-set `C⊆Omega`, let
+
+`K_C={C∪{v} : v in Omega-C}`.
+
+This is a clique of order six in `J(10,5)`, and every Johnson edge belongs to exactly one such clique, namely the clique indexed by the intersection of its endpoints. Put
 
 `r_C=|F∩K_C|`, `s_C=|bar(F)∩K_C|`.
 
-Because `F` and `bar(F)` are disjoint and `r_C+s_C<=6`,
+Since `F` contains no complementary pair, `F` and `bar(F)` are disjoint. Hence `r_C+s_C<=6`, and therefore
 
-`r_C s_C <= (3/2)(r_C+s_C)`.
+`r_C s_C <= (r_C+s_C)^2/4 <= (3/2)(r_C+s_C)`.
 
-Every Johnson edge lies in exactly one clique `K_C`, namely the clique indexed by the four-set equal to the intersection of its endpoints. Hence
-
-`e(F,bar(F))=sum_C r_Cs_C <= (3/2)sum_C(r_C+s_C)`.
-
-Every five-set contains exactly five four-sets, so
+Summing over all four-sets counts every edge from `F` to `bar(F)` exactly once. Each five-set contains exactly five four-subsets, so
 
 `sum_C r_C=5|F|`, `sum_C s_C=5|bar(F)|=5|F|`.
 
-Therefore `e(F,bar(F))<=15|F|`. ∎
+Consequently
 
-### Theorem 2.9. A smallest counterexample has order greater than ten
+`e(F,bar(F)) <= (3/2)(10|F|)=15|F|`. ∎
 
-The minimal counterexample `H` satisfies
+### Theorem 2.9. Order of a smallest counterexample
 
 `n>10`.
 
-**Proof.** The cases `n<=6` are immediate from Lemma 1.1 and the small path definitions. For `n=7,8`, Corollary 2.6 gives a Hamiltonian five-set whose complement has order at most three and hence is Hamiltonian, contradicting `pc(H)=3`.
+**Proof.** Every set of at most three vertices has a Hamilton tight path. Hence every boundary tournament of order at most six has a two-path cover. For orders seven and eight, choose any six vertices. Corollary 2.6 supplies a Hamilton path on five of them, and the complement has order at most three and is Hamiltonian. Thus `n>=9`.
 
-For `n=9`, let `F_5` be the family of Hamiltonian five-sets and `B_4` the family of non-Hamiltonian four-sets. Corollary 2.6, counted over the `binom(9,6)=84` six-sets, gives at least `84` incidences `(S,A)` with `S` a six-set and `A⊆S` a Hamiltonian five-set. Every Hamiltonian five-set lies in four six-sets, so `|F_5|>=21`. On the other hand Lemma 2.7, counted over the `binom(9,5)=126` five-sets, gives at most `378` incidences with a non-Hamiltonian four-set; every four-set lies in five five-sets, so `|B_4|<=75`. Since every Hamiltonian five-set has non-Hamiltonian complement four-set, complementing injects `F_5` into `B_4`. Repeating the incidence count with the complement relation sharpened over all six-sets yields `|F_5|>=84`, contradicting `|B_4|<=75`.
+Suppose `n=9`. Let `F_5` be the Hamiltonian five-subsets and let `B_4` be the non-Hamiltonian four-subsets. Counting incidences between six-sets and Hamiltonian five-subsets gives
 
-For `n=10`, let `F` be the family of Hamiltonian five-sets. It is nonempty by Corollary 2.6, and contains no complementary pair. Put `bar(F)={Omega-A:A∈F}`. Fix `A∈F` and let `E=Omega-A`. For each `a∈A` and each `z∈E`, put
+`4|F_5| >= 4 binom(9,6)`,
+
+because every six-set contains at least four Hamiltonian five-subsets and every five-set lies in four six-sets. Hence `|F_5|>=84`.
+
+Counting incidences between five-sets and members of `B_4`, Lemma 2.7 gives
+
+`5|B_4| <= 3 binom(9,5)`,
+
+so `|B_4|<=75`. The complement of every member of `F_5` belongs to `B_4`, since two complementary Hamilton paths would form a two-path cover of `H`. Hence `|B_4|>=|F_5|`, a contradiction.
+
+Suppose `n=10`, and let `F` be the family of Hamiltonian five-subsets. It is nonempty by Corollary 2.6 and contains no complementary pair. Fix `A∈F`, put `E=V(H)-A`, and fix `a∈A`. For each `z∈E`, define
 
 `B_z=(E-{z})∪{a}`.
 
-For fixed `a`, at most one of the five sets `B_z` is non-Hamiltonian by Lemma 2.5 applied to a Hamilton path on `A` and the five vertices of `E` in the corresponding restrictions. Thus for each `a`, at least four of the five sets `B_z` lie in `F`. As `a` ranges over `A`, these give twenty distinct members of `F`. Their complements
+At most one `B_z` is non-Hamiltonian. Indeed, if distinct `x,y in E` made both `B_x,B_y` non-Hamiltonian, order the three-set `E-{x,y}` as a tight path and apply Lemma 2.5 with outside vertices `x,y,a`. One of `E,B_x,B_y` would be Hamiltonian. But `E` is the complement of the Hamiltonian set `A`, so `E` is non-Hamiltonian, and `B_x,B_y` were assumed non-Hamiltonian, a contradiction.
+
+Thus for each `a∈A`, at least four of the five sets `B_z` lie in `F`. As `a` ranges over `A`, these give twenty distinct members of `F`. Their complements
 
 `(A-{a})∪{z}`
 
@@ -359,11 +461,13 @@ For any integer `M`, the procedure may instead be stopped as soon as some compon
 
 **Proof.** A nonclosing transfer increases the recipient `A` by one vertex and decreases only the donor by one vertex. Since `A` was at least as long as the donor before the transfer, it remains at least as long afterward. Also `|A|<=n`, so at most `n-|A|` nonclosing transfers can occur. ∎
 
+
 ### Proposition 3.2. The ends of a terminal longest component
 
 Let `A|B|C` be a spanning three-path cover. Suppose `A=(v_0,...,v_{ell-1})` has maximum order among the three components and no endpoint of `B` or `C` can be transferred into either end of `A`. Then `ell>=4`, at least one of `B,C` is nontrivial, and for every endpoint `x` of `B` or `C`,
 
 `(x,v_{ell-1},v_{ell-2})`, `(v_1,v_0,x)`
+
 
 are tight.
 
@@ -657,6 +761,7 @@ is a tight path.
 
 **Proof.** One of `X,Y` has order at least five. Choose any four vertices from that class and apply Lemma 4.10, interchanging `a,c` if necessary. Theorem 4.7 supplies both descendant source reductions for every outside vertex, in particular for the resulting `x,y,z`. ∎
 
+
 ## 5. Deletion and comparison of path covers
 
 If `F` is an ordinary graph and `S⊆V(F)`, write `F-S` for the induced subgraph on `V(F)-S`, `deg_F(v)` for the ordinary degree of `v`, `e_F(S)` for the number of ordinary edges of `F` with both endpoints in `S`, and `comp(F)` for the number of connected components of `F`, counting isolated vertices.
@@ -666,6 +771,7 @@ If `F` is an ordinary graph and `S⊆V(F)`, write `F-S` for the induced subgraph
 Let `F` be an ordinary path forest with `k` components and let `S⊆V(F)`. Then
 
 `comp(F-S)=k+sum_{v in S}(deg_F(v)-1)-e_F(S)`.
+
 
 If `F` is the ordinary path forest of a tight-path cover, every nonempty component of `F-S` inherits from its original path a tight vertex order.
 
@@ -690,6 +796,7 @@ Fix distinct vertices `a,c`, let `U|V` be an exact two-path cover of `H-{a,c}`, 
 Deleting `s` from `U|V` leaves three nonempty ordered paths. Some ordinary edge `xy` of `T` has its endpoints in two different paths among those three. Moreover the edge may be named so that there is a vertex `h∉{x,y}` for which `{h,x}` is an ordinary edge of the original cover `U|V`. Boundary antisymmetry then gives exactly one tight triple from the reversal pair
 
 `(h,x,y)`, `(y,x,h)`.
+
 
 If the path containing `x` after deletion of `s` is nontrivial, `h` may be chosen in that path. If both paths crossed by `xy` are singletons, one may take `h=s`.
 
@@ -720,6 +827,7 @@ are all tight.
 After interchanging `a,c` if necessary, we shall write the selected vertices so that
 
 `(a,p,c)`, `(a,q,c)`, `(a,r,c)`
+
 
 are tight.
 
