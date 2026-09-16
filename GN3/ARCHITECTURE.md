@@ -48,6 +48,11 @@ A substantive rewrite is new mathematical text for certification purposes. Old A
 
 The proof-writing standards enforced in `GN3/PROOF_SPINE/` are **project-wide mandatory coding rules for all canonical GN3 mathematics**, not local style preferences.
 
+- Canonical mathematics must be written in natural mathematical prose, but natural language may not carry hidden semantics. The target style is simultaneously human-readable, unambiguous, precise, and **mathematically compilable**.
+- Mathematical compilability means that every nonstandard object is defined before use; every symbol and variable has a determined meaning and domain; every operation has mathematically specified inputs and outputs; notation has stable scope; and every proof step can be interpreted without guessing an omitted type, invariant, state transition, or change of meaning.
+- Definitions must say **what an object is**, not merely describe what it does. Define the underlying structured object first and then impose its axioms or properties. For example, define a boundary tournament as a specified kind of 3-digraph rather than beginning with an informal behavioral description of triples.
+- Prefer standard mathematical objects and notation. Introduce a new term only when it names a recurring mathematical object more clearly than standard language. Any such term must have a complete structural definition, not an operational or historical gloss.
+- Pseudo-formal notation is not a substitute for a definition. If notation denotes concatenation, deletion, restriction, inheritance, comparison, or another operation, define that operation and its domain before relying on the notation.
 - State exact mathematical hypotheses and exact conclusions. Do not rely on remembered context, implicit phase/state, or a result number to supply missing assumptions.
 - Every transition, replacement, deletion, continuation, inheritance step, or reuse of historical information must be mathematically defined and lawful. An arbitrary sequence of configurations is not a proof of reachability.
 - Distinguish current mathematical objects from retained historical/certificate information. Never silently treat an old path, cover, witness, or descendant as still current.
