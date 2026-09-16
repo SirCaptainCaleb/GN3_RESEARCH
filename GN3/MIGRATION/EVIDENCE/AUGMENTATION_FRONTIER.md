@@ -22,7 +22,7 @@ The current proof supplies explicit local tight paths and crossing triples, but 
 
 - A three-vertex contact from the fixed-pair or deletion arguments specifies actual ordered edges and a tight triple, but it does not by itself enlarge the longest component or improve the sorted component-order triple.
 - Completing a newly found proper path by the complement lemma can discard the former long component; endpoint improvement controls the new cover only after that completion.
-- The fixed-pair restrictions are static graph-theoretic tuples specifying the original extended path, intersecting singleton, surviving singleton, extension vertex, and side. Their existence does not prohibit the same source paths from appearing again in later constructions.
+- The fixed-pair section now supplies two distinct layers. Theorem 4.2 gives static restriction facts at every vertex outside the fixed pair. Theorem 4.5 additionally gives one lawful continuation on which all but at most one such vertex actually undergo both historical source reductions. Theorem 4.8 then localizes any later two-vertex return through a historically reduced vertex: a new endpoint outside the fixed pair forces a larger path or an explicit reversed/crossing triple (with the general contact lemma also allowing a proper cycle), leaving only the two old fixed-pair supports as exact recurrence residues. None of these conclusions by itself constructs a spanning replacement cover.
 
 Any proposed replacement `F'` must explicitly specify every retained subpath, every inserted ordinary edge, every tight triple required at a join, pairwise vertex-disjointness of the resulting components, and the disposition of every vertex of `H`.
 
@@ -38,19 +38,19 @@ For the lexicographically maximal cover `A|B|C`, choose a nontrivial component `
 
 `(a,v_{ell-1},v_{ell-2})`, `(v_1,v_0,c)`
 
-at the two ends of `A`. Theorem 4.2 gives both fixed-pair restriction statements at each of the four end vertices
+at the two ends of `A`. Theorem 4.2 gives both static fixed-pair restrictions at each of the four end vertices
 
 `v_{ell-1}, v_{ell-2}, v_1, v_0`,
 
-for this same fixed pair `a,c`. Proposition 4.3 gives explicit three-vertex contact alternatives through each of those vertices, and Proposition 5.2 gives a separate deletion-crossing mechanism with exact adjacent edges from two compared covers.
+for this same fixed pair `a,c`. Theorem 4.5 gives a lawful continuation for this pair on which at least three of those four vertices have both historical source reductions. Proposition 4.7 gives the explicit static three-vertex contact alternatives, and Theorem 4.8 converts any later new-endpoint return through one of the historically reduced vertices into recurrence-localized geometry. Proposition 5.2 gives a separate deletion-crossing mechanism with exact adjacent edges from two compared covers.
 
 The next target is to combine one of these data sets into a literal spanning two-path cover or a literal lexicographically improved three-path cover.
 
 ## 4. Historical endpoint-selection machinery
 
-Earlier versions of the spine represented endpoint selection by a sequence of “current path systems” carrying historical certificates. That language was removed from the canonical proof because, without a separately defined transition relation, it is proof-process semantics rather than a graph-theoretic object. The reauthored fixed-pair deductions used in the present spine are direct consequences about extended paths and therefore need no such state space.
+The immediately preceding audited GN3 fixed-pair branch did define lawful continuations by explicit endpoint-selection and singleton-replacement operations, with a strict distinction between current path components and older extended paths or restriction facts retained for later use. The first streamlined single-document reauthoring intentionally omitted that continuation layer and kept only the static extended-path restrictions. That omission lost mathematical strength: the static facts alone do not certify that a singleton reduction was actually reached along a legal continuation before a later return through the same vertex.
 
-The older endpoint-selection/payment theorems remain part of project provenance and may still be useful for future research if a genuinely lineage-sensitive argument is needed. They should be reintroduced into the canonical proof only if a later theorem requires information that cannot be expressed as a fixed collection of paths, witnesses, sides, and incidence relations in `H`.
+The canonical proof spine now restores the minimal continuation structure needed for that distinction. Section 4 states the two accepted operations precisely, defines lawful finite continuations as sequences generated only by those operations (together with non-changing restriction-recording steps), proves the simultaneous all-but-one historical reduction theorem, and isolates the exact recurrence residue to the old supports `{a,s}` and `{s,c}`. The broader legacy payment/capture ontology remains outside the canonical exposition unless a future theorem requires additional information not present in this restored interface.
 
 ## 5. Reauthoring correspondence
 
@@ -61,11 +61,11 @@ The single-document spine was reauthored from the earlier GN3 proof files after 
 | minimal counterexample, complement and pair deletion | Section 1 |
 | small-order local lemmas and order `>10` | Section 2, now proved internally |
 | terminal longest path and endpoint transfers | Section 3 |
-| fixed-pair restrictions | Section 4, rewritten as direct statements about extended paths and their restrictions |
-| four same-orientation vertices | Lemma 4.4 |
+| fixed-pair restrictions and lawful continuation/history | Section 4: static restrictions in Theorem 4.2; lawful all-but-one historical reductions in Theorem 4.5; recurrence localization in Theorem 4.8 |
+| four same-orientation vertices | Lemma 4.9 |
 | deletion component formula and crossing | Section 5 |
 | three same-orientation internal vertices and eight induced subgraphs | Propositions 5.3–5.4 |
-| lexicographic extremal choice and fixed-pair end data | Section 6 |
+| lexicographic extremal choice, fixed-pair end data, and recurrence control | Section 6 |
 | order-sensitive path intersection arguments | Appendix A |
 | proposed augmentation lemma and reasons it is still missing | this note |
 
