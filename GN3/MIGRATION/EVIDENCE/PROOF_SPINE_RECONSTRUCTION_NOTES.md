@@ -12,7 +12,7 @@ The mathematical spine is read from `GN3/PROOF_SPINE/PRELIMINARIES.md`, followed
 
 The fixed-pair reduction and the Boolean-cube construction both use the orientation classes determined by a fixed pair `{a,c}`. The globally longest-path argument does not use that setup and gives the shortest known universal entrance to the nonextendable three-path configuration.
 
-The cube construction remains useful because it carries additional comparison information relative to a finite family of maximum spanning three-path forests; it is not needed merely to reach the nonextendable three-path configuration.
+The cube construction remains useful because it carries additional comparison information relative to a family of maximum spanning three-path forests; it is not needed merely to reach the nonextendable three-path configuration.
 
 ## Current mathematical frontier
 
@@ -24,7 +24,7 @@ A possible synthesis, not yet a theorem, is: strict descent except when the cons
 
 ## Provenance
 
-The small-order argument was reconstructed from the certified E8997 proof. Its finite ingredients correspond to the fixed three-vertex-path extension theorem, the five-vertex Hamiltonian-density results, and the complement-free Johnson `J(10,5)` cut bound.
+The small-order argument was reconstructed from the certified E8997 proof. Its local ingredients correspond to the fixed three-vertex-path extension theorem, the five-vertex Hamiltonian-density results, and the complement-free Johnson `J(10,5)` cut bound.
 
 The fixed-pair line reconstructs the mathematics previously represented by R2185, R2222, R2224, R2226, R2229, R2230, and R2231. The endpoint-selection route is the accepted R224 -> R433 route. The invalidated R2225 and R2228 compositions and the flagged E9006 composition are not used.
 
@@ -32,4 +32,4 @@ The longest-path/cube line reconstructs the surviving mathematics of E8998/R2143
 
 ## Language policy
 
-The mathematical files should use ordinary graph-theoretic language. Legacy result numbers, audit statuses, Engine names, migration status, proof-topology commentary, and strategic research discussion belong here or in `GN3/PROVENANCE.md`, not in the proof text.
+Within the proof spine, **boundary tournament** means **3-uniform boundary tournament**. The mathematical files should use ordinary graph-theoretic language. Legacy result numbers, audit statuses, Engine names, migration status, proof-topology commentary, and strategic research discussion belong here or in `GN3/PROVENANCE.md`, not in the proof text.
