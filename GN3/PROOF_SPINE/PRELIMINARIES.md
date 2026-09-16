@@ -2,7 +2,7 @@
 
 ## 1. Definitions and minimal counterexample
 
-Let `H` be a finite boundary tournament. For distinct vertices `x,y,z`, call the ordered triple `(x,y,z)` **tight** when it is allowed by the boundary relation. Boundary antisymmetry says that exactly one of
+Throughout this folder, a **boundary tournament** means a 3-uniform boundary tournament. For distinct vertices `x,y,z`, call the ordered triple `(x,y,z)` **tight** when it is allowed by the boundary relation. Boundary antisymmetry says that exactly one of
 
 `(x,y,z)`, `(z,y,x)`
 
@@ -10,7 +10,7 @@ is tight.
 
 A **tight path** is an ordered list of distinct vertices in which every consecutive ordered triple is tight. A path cover is a collection of vertex-disjoint tight paths whose union is the whole vertex set. Write `pc(G)` for the minimum number of paths in such a cover.
 
-Assume that the two-path-cover theorem is false, and choose `H` of minimum order subject to
+Assume that the two-path-cover theorem is false, and choose a boundary tournament `H` of minimum order subject to
 
 `pc(H)>2`.
 
@@ -24,7 +24,7 @@ Every proper induced subgraph of `H` has path-cover number at most two.
 
 Choose `v∈V(H)`. By minimality, `H-v` has a cover by at most two tight paths. Adding the singleton path `(v)` gives a cover of `H` by at most three paths. Since `pc(H)>2`, we have `pc(H)=3`. ∎
 
-## 2. Three finite lemmas
+## 2. Three lemmas
 
 ### Lemma 2.1
 
