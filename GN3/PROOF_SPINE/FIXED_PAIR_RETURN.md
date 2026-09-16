@@ -1,170 +1,160 @@
-# Branch A: fixed-pair return and spent-history obstruction
+# Fixed-pair reduction and the remaining recurrence obstruction
 
-**Status: active proof-spine reconstruction; unresolved at the final replay-extinction step; this GN3 rewrite is not yet independently audited.**
+**Status: supervised GN3 reconstruction. The argument below incorporates the independent audit corrections but is not yet a final GN3 certification.**
 
-## 1. Shared starting point
+## 1. Minimal-counterexample setup
 
-Assume that the two-path-cover theorem is false, and let `H` be a smallest counterexample. The certified small-order argument gives
+Assume the two-path-cover theorem is false and let `H` be a smallest counterexample. The certified small-order argument gives
 
-`|H|>10`.
+`|V(H)|>10`.
 
-Fix an arbitrary physical pair
+Fix distinct vertices `a,c`. For every `x∈V(H)-{a,c}`, boundary antisymmetry makes exactly one of
 
-`E={a,c}`.
+`(a,x,c)` and `(c,x,a)`
 
-Every exterior vertex `x∈V(H)-E` has exactly one of the two source orientations
+tight. Hence the remaining vertices split into the two classes
 
-`(a,x,c)` or `(c,x,a)`
+`X={x:(a,x,c) is tight}`,  
+`Y={x:(c,x,a) is tight}`.
 
-tight, by boundary antisymmetry. Thus the exterior vertices split into two orientation classes.
+The argument below repeatedly uses two vertices from one class while keeping the same pair `{a,c}` fixed.
 
-The purpose of this branch is to use one fixed pair `E` as a literal return floor. We repeatedly build a short opposite-sign birth from two same-oriented source vertices, pay that birth back down to the same floor `E`, and retain the fact that the source-boundary dimers have been strictly clipped in the historical ancestry. After enough such returns, almost every exterior vertex has already been spent on both sides. Any genuinely later opposite-sign dimer birth must therefore meet spent history.
+## 2. Fixed-pair reduction lemma
 
-The remaining problem is to show that this collision cannot replay forever.
+The following previously proved lemma is the only nontrivial transformation needed in this section.
 
-## 2. Two same-oriented source turns give an opposite-sign `2+2`
+### Lemma 2.1
 
-Choose distinct exterior vertices `s,t` having the same source orientation. After interchanging `a,c` if necessary, suppose
+Let `a,c,s,t` be distinct and suppose
 
 `(a,s,c)` and `(a,t,c)`
 
-are tight.
+are tight. Then there is a finite valid continuation that either produces a spanning cover of `H` by two tight paths or returns to the two singleton paths
 
-These two turns display two physically disjoint source-boundary dimers:
+`(a)|(c)`
 
-- `(a,s)`, carrying the polarity witnessed by `c`;
-- `(t,c)`, carrying the opposite endpoint polarity witnessed by `a`.
+and, in the latter case, also records strict reductions of the two original ordered pairs
 
-Their supports are disjoint because `a,c,s,t` are distinct. Hence they form the named opposite-polarity `2+2` birth used below.
+`(a,s) -> (s)`,  
+`(t,c) -> (t)`.
 
-This birth is not merely an abstract sign pattern. Both dimers are actual physical subpaths of retained source turns, with their witnesses and source ancestry remembered.
+Applying the same lemma with `s,t` interchanged records
 
-## 3. Endpoint-selected payment returns to the literal floor `E`
+`(a,t) -> (t)`,  
+`(s,c) -> (s)`.
 
-The key payment fact is endpoint-selective: from an ancestry-bearing opposite-sign pair of two disjoint dimers, one may prescribe one endpoint of each dimer and continue to either a spanning two-cover or the corresponding pair of singleton rails.
+The directional dual holds when `(c,s,a)` and `(c,t,a)` are tight.
 
-Apply it to the two dimers above, prescribing `a` on `(a,s)` and `c` on `(t,c)`. Unless `H` is already two-covered, the continuation reaches the literal floor
+### Why this lemma is safe to use
 
-`(a)|(c)`.
+The accepted proof first chooses which endpoint of each of the two disjoint ordered pairs is to survive and then uses the proved endpoint-contact theorem to obtain the strict reductions above. It does not infer a new current path configuration merely from deleting vertices, and it does not use either invalidated E9007 composition or the flagged E9006 composition.
 
-The important point is that this payment is lawful. The accepted mechanism does **not** infer a fresh current balanced pair merely from cut memory. In the legacy proof, one first pays one chosen dimer endpoint through the inherited-turn continuation; after a genuine marker/deletion, signed interval rebirth only remembers the surviving signed interval, and a separate step reforms an actual current opposite-sign pair. The fixed-singleton descent then pays the other support down to a singleton. If the second surviving singleton is not the prescribed endpoint, the opposite-singleton replacement theorem moves it to the desired endpoint while keeping the first singleton fixed.
+For the present proof, Lemma 2.1 is best treated as one established graph-theoretic transformation with explicit input and output. Its internal legacy decomposition is provenance, not part of the mathematical spine.
 
-Thus the usable mathematical interface is exactly:
+## 3. Reduction at all but at most one remaining vertex
 
-> from the displayed source `2+2`, choose the endpoints `a,c`; then either TWO-COVER occurs or the active state returns to the same literal floor `E={a,c}`.
+Fix one of the two classes, say `X`.
 
-This distinction matters because an earlier attempted composition incorrectly treated signed cut memory by itself as a complete payment theorem. That reconstruction is not used here.
+If `|X|>=2`, choose `t∈X`. For each `s∈X-{t}`, apply Lemma 2.1 first to the ordered roles `(s,t)` and then to `(t,s)`. Each application either finishes the theorem or returns to the same singleton pair `(a)|(c)`. If the theorem does not finish, then after the two applications the construction has recorded both strict reductions associated with `s` in the tight ordered triple `(a,s,c)`,
 
-## 4. The return spends the named source birth
+`(a,s)->(s)` and `(s,c)->(s)`,
 
-At the floor `(a)|(c)`, compare each active singleton with the corresponding historical source-boundary dimer.
+and likewise both reductions associated with `t`.
 
-The singleton `(a)` meets the historical dimer `(a,s)` at `a`, which is away from the signed anchor `s`. Signed path-contact protection therefore gives a strict historical clipping of that dimer to the singleton descendant
+Repeating this with the same pivot `t` records both reductions for every vertex of `X`. The same argument applies to `Y`, using the reversed tight ordered triples `(c,x,a)`.
 
-`(s)`.
+A class of size `0` or `1` may therefore leave at most one vertex without both recorded reductions. The order bound is what turns this into a global statement. Since
 
-Likewise `(c)` meets the historical dimer `(t,c)` away from its signed anchor `t`, giving the strict historical singleton descendant
+`|V(H)-{a,c}| >= 9`,
 
-`(t)`.
+the two classes cannot both have size at most one. Thus at most one of the two classes can contribute an untreated singleton. Consequently:
 
-Hence the continuation has returned to the same literal active floor `E={a,c}`, while the retained ancestry records that the named opposite-sign `2+2` birth has been physically reduced to strict singleton descendants at its two middle vertices.
+### Fixed-pair reduction conclusion
 
-This is the one-return mechanism. In legacy notation it is exactly the theorem-level content of PASS R2222:
+Unless a spanning two-path cover has already appeared, for all but at most one vertex `x∈V(H)-{a,c}` the construction has recorded strict reductions of both ordered pairs incident with `x` in its tight ordered triple through `a,c`.
 
-> if `(a,s,c)` and `(a,t,c)` are same-oriented source turns, there is an ancestry-retaining continuation to TWO-COVER or to the literal floor `{a,c}` carrying strict historical singleton descendants `(s)` and `(t)` of the named opposite-polarity `2+2` birth.
+This is the correct content of the earlier fixed-pair iteration argument.
 
-Because any three exterior vertices contain two of the same source orientation, the mechanism is available at every prescribed pair `E` once at least three exterior vertices exist.
+An immediate consequence is purely about physical support. Any later configuration consisting of two disjoint ordered pairs on four distinct vertices must contain at least one such recorded vertex. Indeed, the set consisting of `a,c` together with the at most one untreated remaining vertex has size at most three.
 
-## 5. Bilaterally spending almost every exterior vertex
+Nothing stronger follows merely from this counting argument. In particular, a later four-vertex configuration may use an old vertex with new witnesses or in a new arrangement.
 
-One return spends one boundary side at `s` and the complementary boundary side at `t`. To spend both sides at both vertices, use the same pair twice with the ordered source roles reversed.
+## 4. What a later intersection with recorded history actually gives
 
-For same-oriented `s,t`:
+Fix a vertex `s∈X` for which both reductions
 
-1. apply the return mechanism with roles `(s,t)`, clipping `(a,s)` at `s` and `(t,c)` at `t`;
-2. apply it again with roles `(t,s)`, clipping `(a,t)` at `t` and `(s,c)` at `s`.
+`(a,s)->(s)` and `(s,c)->(s)`
 
-Both applications return to the same literal floor `E`, and retained ancestry is cumulative. Unless TWO-COVER appears, both `s` and `t` now carry historical singleton descendants from both of their source-boundary dimers. Call such a vertex **bilaterally spent** for the fixed pair `E`.
+have been recorded. The original tight ordered triple `(a,s,c)` is also retained.
 
-Now work separately in the two source-orientation classes. In a class of size at least two, choose a pivot `t` and pair it successively with every other member, applying the two ordered returns above. Every member of that class becomes bilaterally spent. A class of size zero or one contributes at most one unspent vertex.
+Two different facts are relevant.
 
-Since there are only two orientation classes, one can organize the pairings so that, after finitely many same-floor returns, all exterior vertices except possibly one are bilaterally spent. This is the fixed-pair harvesting theorem (legacy PASS R2224).
+### 4.1 A later singleton at `s` need not force progress
 
-Therefore:
+If a later construction again contains the singleton path `(s)`, the old ordered triple `(a,s,c)` allows contact with the two recorded reductions to recover the two original two-vertex supports `{a,s}` and `{s,c}`. This can happen using only the old three vertices.
 
-> after the harvesting sequence, every later physically disjoint opposite-polarity `2+2` birth meets a bilaterally spent exterior vertex.
+Therefore the mere fact that a later construction meets a vertex with both recorded reductions does not by itself create a new vertex or a longer path.
 
-Indeed, two disjoint dimers use four physical vertices, whereas at most one exterior vertex is unspent and the fixed pair contributes only two vertices. A wholly fresh later `2+2` is impossible.
+### 4.2 A genuinely new second endpoint cannot be hidden
 
-## 6. What a later collision with spent history gives
-
-Let a genuinely later opposite-sign dimer birth meet a bilaterally spent vertex `s`. The old source turn `(a,s,c)` and both old source-boundary histories at `s` are retained.
-
-There are two qualitatively different possibilities.
-
-### 6.1 Exact old-boundary replay
-
-If the later active support at `s` is exactly one of the old source-boundary supports, namely `{a,s}` or `{s,c}`, then contact with the historical singleton descendant may replay entirely inside the old source trimer `(a,s,c)`.
-
-This is not automatically progress. The exact singleton-contact analysis shows that both old boundary contacts can be realized without creating a new vertex or a longer object. Thus the mere statement “the later birth hits spent ancestry” is insufficient for closure.
-
-This is the genuine equality/replay obstruction.
-
-### 6.2 A new endpoint appears
-
-Suppose instead that a later nontrivial dimer containing `s` has other endpoint
+Suppose instead that a later nontrivial ordered pair contains `s` and another vertex
 
 `u∉{a,c}`.
 
-Then contact with the retained old signed source boundary is no longer confined to the exact old two-vertex support. Signed path-contact protection forces strict growth or reverse-contact geometry in which the new endpoint `u` remains visible. Pure replay is possible only on the exact old boundary supports `{a,s}` and `{s,c}`.
+The proved path-contact theorem then forces either a strict extension or the corresponding reversed-contact configuration, and in either outcome the vertex `u` remains present. Thus the interaction cannot be confined entirely to the old ordered triple `(a,s,c)`.
 
-So every later remint through a spent vertex has the following dichotomy:
+Accordingly, the only two-vertex supports through `s` that are not excluded from recurrence using only the old ordered triple are exactly
 
-- exact old-boundary replay; or
-- genuinely new endpoint-bearing geometry.
+`{a,s}` and `{s,c}`.
 
-The second branch is promising because it creates information not present in the original source trimer. The first branch is the only stationary obstruction.
+This is deliberately weaker than saying that every later occurrence on one of those supports is stationary. The remaining problem is precisely to understand a complete later four-vertex configuration when one of its two ordered pairs has one of these old supports.
 
-## 7. A richer harvested configuration is always available
+## 5. Additional five-vertex geometry
 
-The order gate `|H|>10` gives at least nine vertices outside `E`. One source-orientation class therefore has at least five members. Since harvesting leaves at most one exterior vertex unspent, that larger class contains at least four bilaterally spent vertices.
+The order bound also supplies a useful configuration after the fixed-pair reductions.
 
-Among any four same-oriented spokes one can choose three, say `x,y,z`, such that
+There are at least nine vertices outside `{a,c}`, so one of `X,Y` has at least five vertices. Since at most one remaining vertex lacks both recorded reductions, that larger class contains at least four vertices for which both reductions have been recorded.
+
+Among any four vertices `S` satisfying `(a,x,c)` tight for every `x∈S`, the previously proved four-vertex comparison gives distinct `x,y,z∈S` such that
 
 `(x,a,y,c,z)`
 
-is a literal tight `P5`.
+is a tight five-vertex path.
 
-Thus, after fixed-pair harvesting, we may retain a harvested five-vertex path crossing the same anchors `a,c`. The useful point is not the old label attached to this configuration, but the extra physical geometry: three spent spokes are simultaneously arranged around the same fixed pair in a concrete tight path.
+Hence one may retain, in addition to the pairwise reduction data, a tight path through `a,c` containing three vertices whose two incident ordered pairs have both been reduced to their middle vertex.
 
-This provides more structure with which to attack a later exact-boundary replay or to absorb the new endpoint from the nonreplay branch.
+This extra path is available for the final argument, but no accepted theorem yet shows that it resolves the remaining recurrence.
 
-## 8. Exact unresolved step
+## 6. Exact unresolved statement
 
-Everything above is already supported by independently passed A7C3 mathematics. The branch stops at one precise obligation:
+The open step can now be stated without the old process terminology.
 
-> **Spent-history replay extinction.** After the fixed-pair harvesting sequence, take a genuinely later opposite-polarity `2+2` birth. It must meet a bilaterally spent vertex. Prove that the complete later birth, together with the retained spent source history, forces either a spanning two-cover or a strict nonreplayable continuation.
+Take any later four-vertex configuration consisting of two disjoint ordered pairs of the kind required by the endpoint-selection lemma. By Section 3, at least one of its four vertices, say `s`, has both recorded reductions through the fixed pair `{a,c}`.
 
-The local analysis has already reduced the problem to two cases:
+If the ordered pair containing `s` uses another vertex outside `{a,c}`, Section 4.2 gives a strict extension or reversed-contact configuration containing that new vertex.
 
-1. the later dimer through the spent vertex uses a new endpoint, in which case strict growth or reverse-contact geometry is available and must be consumed together with the second dimer of the later birth; or
-2. the later dimer is exactly an old source-boundary support, in which case one must use the second dimer, the opposite polarity, the other spent boundary, or the harvested multi-spoke geometry to rule out stationary replay.
+The unresolved case is therefore concentrated on the situation in which that ordered pair has one of the two old supports
 
-No currently accepted theorem completes that last implication. This is the live frontier of this branch.
+`{a,s}` or `{s,c}`.
 
-## 9. Provenance and integrity notes
+One must use the **entire** later four-vertex configuration—especially its second ordered pair and its opposite-end witness—together with the two recorded reductions at `s` (and, if useful, the five-vertex path of Section 5) to prove one of the following:
 
-The mathematical ingredients used above descend from the following legacy results.
+1. `H` has a spanning two-path cover; or
+2. the construction reaches a configuration that cannot be confined to the same old two-vertex supports.
 
-- Small-order gate: E8997 / terminal PASS R2152.
-- Same-floor strict return: PASS R2222.
-- Fixed-pair harvesting: PASS R2224.
-- Exact replay-cell warning: PASS R2226.
-- New-endpoint contact dichotomy: PASS R2229.
-- Harvested multi-spoke `P5`: PASS R2230 and its hypothesis-free parent PASS R2231.
-- Endpoint-selective payment interface: PASS R2185, built from the accepted R224 and R433 mechanisms.
-- Lawful fixed-singleton payment backbone used by those mechanisms: R175, R427, R428 and the reformation step inside R224.
-- Signed contact protection: S9010.
-- Signed interval rebirth/cut memory: S9014, used only for the limited cut-memory role it actually proves.
+No currently accepted theorem proves this implication.
 
-Two later E9007 terminal composition drafts, R2225 and R2228, were invalidated because they attempted to reconstruct the payment layer too aggressively. Their failure does not invalidate R2222 or the branch above. E9006 likewise carried an integrity warning at the migration baseline and is not used as a payment source here.
+## 7. Provenance and integrity
+
+The exact legacy results supporting the argument are:
+
+- the small-order theorem: E8997 / R2152;
+- the fixed-pair reduction lemma: R2222;
+- its endpoint-selection input: R2185, using R224 and R433;
+- the fixed-pair iteration: R2224;
+- the singleton recurrence warning: R2226;
+- the new-endpoint contact theorem: R2229;
+- the five-vertex path: R2230 and R2231;
+- the path-contact theorem used in the strict reductions: S9010.
+
+S9014 is not used as an independent transformation theorem here. The invalidated R2225 and R2228 compositions are not used, and neither is the flagged E9006 composition.
