@@ -2,20 +2,20 @@
 
 **Status: supervised GN3 reconstruction. The argument below incorporates the independent audit corrections but is not yet a final GN3 certification.**
 
-## 1. Minimal-counterexample setup
+## 1. Common input
 
-Assume the two-path-cover theorem is false and let `H` be a smallest counterexample. The certified small-order argument gives
+Work throughout under the conclusions of [`PRELIMINARIES.md`](PRELIMINARIES.md). Thus `H` is a smallest counterexample with
 
-`|V(H)|>10`.
+`pc(H)=3`, `|V(H)|>10`,
 
-Fix distinct vertices `a,c`. For every `x∈V(H)-{a,c}`, boundary antisymmetry makes exactly one of
+and deleting any two vertices leaves an exact two-path-coverable graph in which neither path is a singleton.
 
-`(a,x,c)` and `(c,x,a)`
-
-tight. Hence the remaining vertices split into the two classes
+Fix distinct vertices `a,c`, and use the orientation classes
 
 `X={x:(a,x,c) is tight}`,  
-`Y={x:(c,x,a) is tight}`.
+`Y={x:(c,x,a) is tight}`
+
+from the preliminary document. They partition `V(H)-{a,c}` and together contain at least nine vertices.
 
 The argument below repeatedly uses two vertices from one class while keeping the same pair `{a,c}` fixed.
 
@@ -148,7 +148,6 @@ No currently accepted theorem proves this implication.
 
 The exact legacy results supporting the argument are:
 
-- the small-order theorem: E8997 / R2152;
 - the fixed-pair reduction lemma: R2222;
 - its endpoint-selection input: R2185, using R224 and R433;
 - the fixed-pair iteration: R2224;
@@ -156,5 +155,7 @@ The exact legacy results supporting the argument are:
 - the new-endpoint contact theorem: R2229;
 - the five-vertex path: R2230 and R2231;
 - the path-contact theorem used in the strict reductions: S9010.
+
+The common small-order theorem and pair-deletion argument now live in [`PRELIMINARIES.md`](PRELIMINARIES.md).
 
 S9014 is not used as an independent transformation theorem here. The invalidated R2225 and R2228 compositions are not used, and neither is the flagged E9006 composition.
