@@ -44,6 +44,24 @@ GitHub placement does not by itself certify a theorem. Exact status must remain 
 
 A substantive rewrite is new mathematical text for certification purposes. Old A7C3 PASS status is provenance, not automatic certification of a GN3 rewrite. Editorial inheritance is allowed only after an auditor confirms that the mathematics is unchanged.
 
+## Global proof-coding policy
+
+The proof-writing standards enforced in `GN3/PROOF_SPINE/` are **project-wide mandatory coding rules for all canonical GN3 mathematics**, not local style preferences.
+
+- State exact mathematical hypotheses and exact conclusions. Do not rely on remembered context, implicit phase/state, or a result number to supply missing assumptions.
+- Every transition, replacement, deletion, continuation, inheritance step, or reuse of historical information must be mathematically defined and lawful. An arbitrary sequence of configurations is not a proof of reachability.
+- Distinguish current mathematical objects from retained historical/certificate information. Never silently treat an old path, cover, witness, or descendant as still current.
+- Preserve all data actually needed downstream: orientation, endpoint, witness, ancestry, disjointness, maximality, and scope must not be discarded merely because a weaker summary sounds cleaner.
+- Never infer a current object from deletion, clipping, cut memory, ancestry, or certification history alone. Any re-formation or re-entry into the current structure must be justified by an explicit theorem or construction.
+- Do not strengthen a source theorem during compression. If the proof gives only support intersection, one-step decrease, selected output, local recurrence control, or source-relative information, state exactly that.
+- Finite case checks and exceptional configurations must be fully checkable from the canonical text: give the conceptual argument, explicit cases/table, or a precise referenced lemma. “One checks” is not acceptable at a load-bearing step.
+- When two arguments share a weaker natural parent lemma, factor that parent rather than duplicating stronger hypotheses. Inline one-use machinery; extract only statements that improve reuse, clarity, or proof topology.
+- Prefer ordinary graph-theoretic language. Nonstandard terminology is permitted only when it compresses a recurring mathematical object and is given one precise definition. Do not encode proof position or historical workflow as mathematical ontology.
+- Canonical proofs must be sequentially readable and self-contained up to explicitly named canonical inputs. Provenance, audit history, Engine/R numbers, discovery transcript, and obsolete machinery belong outside the mathematical exposition.
+- Unresolved implications must be stated as gaps or research targets, never disguised as continuations, heuristics, bookkeeping ranks, or inherited certification.
+
+Auditors and integrators must enforce these rules globally. A mathematically plausible argument that violates them is not ready for canonical GN3 status even if its intended legacy source was previously accepted.
+
 ## Canonical mathematical representation
 
 The canonical proof spine will be a sequential, readable mathematical argument rather than an Engine dependency graph. Its exact representation is intentionally **not yet fixed**: the migration will first reconstruct the active proof from a blank page under user supervision. Unresolved steps may be explicit. Engine-like units, if retained later, are secondary organizational devices corresponding to coherent proof sections or genuinely reusable bounded mechanisms.
