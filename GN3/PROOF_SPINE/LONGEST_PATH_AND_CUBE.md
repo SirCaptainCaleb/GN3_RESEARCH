@@ -206,11 +206,11 @@ Thus every case gives a proper tight path or a proper tight cycle. ∎
 
 ### Theorem 4.1
 
-Let `F_1,...,F_r` be a finite family of spanning three-path covers of `H`, each having the maximum possible number `|V(H)|-3` of edges, and let `M_i` be the order of a longest path in `F_i`. Put
+Let `F_1,...,F_r` be a family of spanning three-path covers of `H`, each having the maximum possible number `|V(H)|-3` of edges, and let `M_i` be the order of a longest path in `F_i`. Put
 
 `M=max_i M_i`.
 
-Suppose a proper tight path `Q` is given. Then a finite sequence of endpoint transfers yields at least one of the following:
+Suppose a proper tight path `Q` is given. Repeated endpoint transfers yield at least one of the following:
 
 1. a spanning two-path cover of `H`;
 2. a spanning three-path cover containing a path of order at least `M+1`;
@@ -232,4 +232,4 @@ for one of `B,C`. At the right end test `(a_{s-1},a_s,x_0)`.
 
 If it is tight and `X` is a singleton, merge `A` and `X`; together with the third path this is a spanning two-path cover. If it is tight and `X` is nontrivial, test `(a_s,x_0,x_1)`. If that triple is tight, concatenate all of `X` to `A`, again obtaining a spanning two-path cover with the third path. If it is not tight, boundary antisymmetry gives `(x_1,x_0,a_s)` tight, and replacing the first edge `x_0x_1` of `X` by `a_sx_0` enlarges `A` by one vertex while leaving the remaining vertices of `X` as a tight path. The left end is symmetric.
 
-Repeat whenever such a transfer is possible. Each nonclosing transfer increases `|A|` by one, so after finitely many transfers either a two-path cover appears, `|A|` reaches `M+1`, or no transfer remains. In the last case Theorem 1.1 applies to the resulting three-path cover and gives outcome 3. ∎
+Repeat whenever such a transfer is possible. Each nonclosing transfer increases `|A|` by one. Since `|A|≤|V(H)|`, the process terminates: either a two-path cover appears, `|A|` reaches `M+1`, or no transfer remains. In the last case Theorem 1.1 applies to the resulting three-path cover and gives outcome 3. ∎
