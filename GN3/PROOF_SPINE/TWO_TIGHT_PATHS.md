@@ -28,7 +28,7 @@ The conjecture is
 
 > Every boundary tournament has path-cover number at most two.
 
-**Current status.** The conjecture remains open. The established proof spine below ends before the augmentation step needed to contradict the extremal three-path cover constructed in Section 6. The current missing augmentation statement and research directions are recorded in `GN3/MIGRATION/EVIDENCE/AUGMENTATION_FRONTIER.md`.
+**Status.** The conjecture remains open. The established proof spine below ends before the augmentation step needed to contradict the extremal three-path cover constructed in Section 6. The missing augmentation statement and research directions are recorded in `GN3/MIGRATION/EVIDENCE/AUGMENTATION_FRONTIER.md`.
 
 Assume the conjecture is false. Choose a counterexample `H` with minimum order, and write
 
@@ -487,7 +487,7 @@ A **globally longest tight path** of `H` is a tight path whose order is maximum 
 
 **Proof.** A globally longest tight path cannot be Hamiltonian, since `pc(H)=3`. Hence it is proper, and Lemma 1.1 completes it to a spanning three-path cover. No endpoint transfer into `A` is possible, because such a transfer would produce a longer tight path. Proposition 3.2 applies. ∎
 
-## 4. A fixed pair: static restrictions and lawful continuations
+## 4. A fixed pair: static restrictions and descendant chains
 
 Fix distinct vertices `a,c`. Partition the remaining vertices as
 
@@ -495,7 +495,7 @@ Fix distinct vertices `a,c`. Partition the remaining vertices as
 
 `Y={s in V(H)-{a,c} : (c,s,a) is tight}`.
 
-Boundary antisymmetry gives a disjoint partition
+Boundary antisymmetry gives
 
 `V(H)-{a,c}=X⊔Y`.
 
@@ -507,13 +507,13 @@ For `s∈Y`, define
 
 `L_s=(c,s)`, `R_s=(s,a)`.
 
-If `P=(v_0,...,v_k)` and `w∉V(P)`, write `(w,P)` for the concatenated sequence `(w,v_0,...,v_k)` and `(P,w)` for `(v_0,...,v_k,w)`. A **left-extended path** is a pair `(w;P)` for which `(w,P)` is a tight path. A **right-extended path** is a pair `(P;w)` for which `(P,w)` is a tight path. The vertex `w` is the extension vertex. The protected end of a left-extended path is the first vertex of `P`; the protected end of a right-extended path is the last vertex of `P`.
+If `P=(v_0,...,v_k)` and `w∉V(P)`, write `(w,P)` for `(w,v_0,...,v_k)` and `(P,w)` for `(v_0,...,v_k,w)`. A **left-extended path** is a pair `(w;P)` for which `(w,P)` is tight. A **right-extended path** is a pair `(P;w)` for which `(P,w)` is tight. The vertex `w` is the extension vertex. The protected end of a left-extended path is the first vertex of `P`; the protected end of a right-extended path is the last vertex of `P`.
 
 Thus for `s∈X`, `L_s` is right-extended by `c` and `R_s` is left-extended by `a`; for `s∈Y`, `L_s` is right-extended by `a` and `R_s` is left-extended by `c`.
 
 ### Lemma 4.1. Restricting an extended path
 
-Let `(w;P)` be a left-extended path, with
+Let `(w;P)` be a left-extended path, where
 
 `P=(v_0,...,v_k)`.
 
@@ -525,9 +525,9 @@ Then
 
 `P'=(v_0,...,v_{i-1})`
 
-is a nonempty tight path disjoint from `Q`, and `(w;P')` is again left-extended by the same vertex `w`.
+is a nonempty tight path disjoint from `Q`, and `(w;P')` is left-extended by the same vertex `w`.
 
-Dually, if `(P;w)` is right-extended and `Q` meets `P` but avoids `v_k`, then the suffix of `P` strictly after the last vertex of `P` lying in `Q` is nonempty, disjoint from `Q`, and right-extended by the same vertex `w`.
+Dually, if `(P;w)` is right-extended and `Q` meets `P` but avoids `v_k`, then the suffix of `P` strictly after the last vertex of `P` lying in `Q` is nonempty, disjoint from `Q`, and right-extended by `w`.
 
 **Proof.** Since `Q` avoids `v_0`, the first intersection index satisfies `i>=1`. The sequence `(w,v_0,...,v_{i-1})` is an initial segment of the tight path `(w,P)`, so it is tight. The definition of `i` gives disjointness from `Q`. The right-extension statement is the same argument read from the other end. ∎
 
@@ -542,167 +542,159 @@ For every `s∈V(H)-{a,c}`, the following two applications of Lemma 4.1 hold.
 | `s∈Y` | `L_s=(c,s)` with `(L_s,a)=(c,s,a)` tight | `(c)` | `(s)` | right by `a` |
 | `s∈Y` | `R_s=(s,a)` with `(c,R_s)=(c,s,a)` tight | `(a)` | `(s)` | left by `c` |
 
-Each row is a static graph-theoretic fact. It includes the displayed original three-vertex tight extension; the surviving singleton by itself is not a substitute for that orientation data.
+Each row is a static graph-theoretic fact. It includes the displayed original three-vertex tight extension; the surviving singleton alone is not a substitute for that orientation data.
 
-**Proof.** Consider `s∈X`. The tight triple `(a,s,c)` says that `L_s=(a,s)` is right-extended by `c`. Apply the right-extension part of Lemma 4.1 with `Q=(a)`. The last intersection of `Q` with `L_s` is `a`, so the surviving suffix is `(s)`, with the same right extension by `c` inherited from the original tight path `(a,s,c)`.
+**Proof.** Consider `s∈X`. The tight triple `(a,s,c)` says that `L_s=(a,s)` is right-extended by `c`. Apply the right-extension part of Lemma 4.1 with `Q=(a)`. The surviving suffix is `(s)`, with the same right extension by `c`.
 
-The same tight triple says that `R_s=(s,c)` is left-extended by `a`. Apply the left-extension part of Lemma 4.1 with `Q=(c)`. The first intersection is `c`, so the surviving prefix is `(s)`, with the same left extension by `a` inherited from `(a,s,c)`.
+The same tight triple says that `R_s=(s,c)` is left-extended by `a`. Apply the left-extension part of Lemma 4.1 with `Q=(c)`. The surviving prefix is `(s)`, with the same left extension by `a`.
 
-For `s∈Y`, the identical argument starts from `(c,s,a)` and interchanges `a,c`. ∎
+For `s∈Y`, interchange `a,c`. ∎
 
-### 4.3. Current path systems and lawful continuation
+### Lemma 4.3. End-interval inheritance
 
-A **current path system** is a finite family `P` of pairwise vertex-disjoint tight paths. A current path is one of the members of `P`.
+Let `P=(v_0,...,v_k)` be a tight path.
 
-During a continuation we also keep a finite collection `R` of **retained path data**. An item of `R` is either
+If `(w,P)` is tight and some but not all vertices of `P` are deleted, let
 
-1. a specified left- or right-extended tight path, including its extension vertex and extension side; or
-2. a tuple `(P,Q,P',w,side)` recording an application of Lemma 4.1 in which the extended path `P` was retained, `Q` was a current path at that stage, and the surviving subpath `P'` inherited the stated extension vertex `w` on the stated side.
+`I=(v_i,...,v_j)`
 
-Retained path data are graph-theoretic facts and remain valid even if the paths appearing in them are not current components later. In contrast, membership in the current path system is not retained unless a continuation step explicitly produces it.
+be the first nonempty interval that remains in the order of `P`. Then `I` is left-extended by `w` when `i=0`, and by the deleted predecessor `v_{i-1}` when `i>0`.
 
-For the fixed pair `a,c`, the initial retained collection `R_0` contains all source extensions described before Lemma 4.1: the extended paths `L_s,R_s` for every `s∈X∪Y`, with their specified extension vertices and sides. The initial current path system may be taken to be empty.
+Dually, if `(P,w)` is tight and `J=(v_i,...,v_j)` is the last nonempty interval that remains, then `J` is right-extended by `w` when `j=k`, and by the deleted successor `v_{j+1}` when `j<k`.
 
-### Endpoint-selection lemma
+**Proof.** If `i=0`, `(w,I)` is an initial segment of `(w,P)`. If `i>0`, `(v_{i-1},I)` is a contiguous subpath of `P`. The right-extension statement is the reverse argument. ∎
 
-Let `(P,R)` be a stage of the fixed-pair argument. Suppose `R` contains two vertex-disjoint two-vertex extended paths `D_1,D_2`, one protected at its left end and the other at its right end. Let `x` be either prescribed vertex of `D_1`. Then either `H` has a spanning two-path cover, or there is a later current path system `P'` and retained collection `R'` such that
+### Oppositely extended pairs and descendant chains
 
-- `R⊆R'`;
-- `P'` contains two distinct singleton paths `(x)` and `(q)` for some vertex `q`;
-- `(x)` carries the same extension side as `D_1`, with an explicit witness obtained from the original extension or from the deleted neighbor of `x` in `D_1`;
-- `(q)` carries the extension side opposite to `(x)`, with the original extension witness of `D_2`.
+An **oppositely extended pair** is an ordered pair `(P,Q)` of vertex-disjoint nonempty tight paths together with vertices `alpha∉V(P)` and `beta∉V(Q)` such that
 
-No current path of `P` other than the prescribed singleton conclusion is asserted to survive. The transition is the explicit construction in the proof below; it is not an arbitrary replacement of the current path system.
+`(alpha,P)` and `(Q,beta)`
 
-**Proof.** Reverse all path orders if necessary, so that
+are tight. Thus the first path is left-extended and the second is right-extended. The paths, extension sides, and extension vertices are all part of the data. Reversing both path orders gives the equivalent dual orientation.
 
-`D_1=(d_0,d_1)`
+We use three kinds of descendant step between oppositely extended pairs.
 
-is left-extended by a vertex `w`, while
+An **endpoint-restriction step** starts from an oppositely extended pair `(D,T)` whose first path `D=(d_0,d_1)` has order two. One prescribed endpoint `x∈{d_0,d_1}` survives and the other is deleted. Lemma 4.3 supplies the left extension of `(x)`: the old extension vertex when `x=d_0`, and the deleted neighbor `d_0` when `x=d_1`. The second path `T` is unchanged. The step records the old pair, the prescribed endpoint, the deleted endpoint, and the resulting extension vertex.
 
-`D_2=(t_0,t_1)`
+A **support-shortening step** starts from an oppositely extended pair `((p),T)` with
 
-is right-extended by a vertex `z`. Thus `(w,d_0,d_1)` and `(t_0,t_1,z)` are tight, and the protected ends are `d_0` and `t_1`.
+`T=(t_0,...,t_m)`
 
-First isolate the prescribed vertex `x` of `D_1`. If `x=d_0`, then `(w,d_0)` is an initial segment of the tight path `(w,d_0,d_1)`, so the singleton `(x)` is left-extended by `w`. If `x=d_1`, then `(d_0,d_1)` is a tight two-vertex path, so the singleton `(x)` is left-extended by the deleted neighbor `d_0`. In either case add this left-extended singleton to the retained data while retaining the original extended path `D_1` as historical data.
+nontrivial and right-extended. It also contains a tight three-vertex path `C`, disjoint from `(p)`, whose intersection with `T` is either `{t_0}` or `{t_0,t_1}`. The step removes exactly that initial segment of `T`. The remaining nonempty suffix `T'` is right-extended by the same extension vertex as `T`, so `((p),T')` is the next oppositely extended pair. The left/right dual is defined by reversing both members.
 
-Set `q=t_1`, the protected end of `D_2`. We now construct a path meeting `D_2` exactly at its other endpoint `t_0`. Let
+A **singleton-replacement step** starts from an oppositely extended singleton pair `((p),(t))`. It contains an exact two-path cover
 
-`O=V(H)-(V(D_1)∪V(D_2)∪{w,z})`.
+`H-{p,t}=U|V`,
 
-At most six vertices are excluded, and `n>10`, so `|O|>=5`. By minimality, `H[O]` has a path cover with at most two components. Hence some component is nontrivial; choose two consecutive vertices `u_0,u_1` on it. Boundary antisymmetry makes exactly one of
+a prescribed vertex `y∈V(U)`, a neighbor `d` of `y` along `U`, and the orientation selected by boundary antisymmetry on `{d,y,t}`. If `(d,y,t)` is tight, put `S=(d,y)` and use `t` as its right-extension vertex. If `(t,y,d)` is tight, put `S=(t,y)` and use `d` as its right-extension vertex. In either case `(p)` is kept as the first path and may use `t` as a left-extension vertex. Thus the step produces the next oppositely extended pair `((p),S)`. The preceding pair remains an earlier member of the descendant chain, with its extension witnesses unchanged; the new pair need not use the same witness on `(p)`.
+
+A **descendant chain** is a finite sequence of oppositely extended pairs
+
+`Pi_0,Pi_1,...,Pi_m`
+
+such that every consecutive pair is joined by an endpoint-restriction step, a support-shortening step, or a singleton-replacement step. The descendant chain includes every transition datum and every earlier oppositely extended pair. Thus a later pair is a literal descendant of the earlier pair through specified path restrictions or a specified replacement; it is not an independently reconstructed pair.
+
+For the fixed pair `a,c`, all paths `L_s,R_s` are also named at the root of the descendant chain. A **source-restriction branch at stage `i`** consists of one of these named extended paths, one singleton member of `Pi_i`, and the exact application of Lemma 4.1 that cuts the named path to a singleton while preserving its specified extension side and vertex. The surviving singleton is adjoined to the descendant chain as a descendant path of the named source path. It need not become a member of `Pi_i`. Thus a descendant chain consists of its main chain of oppositely extended pairs together with these certified descendant branches. The stage index records where each branch was created, and extending the main chain does not erase it.
+
+### Lemma 4.4. Fixed-singleton descent
+
+Let a descendant chain end at an oppositely extended pair `((p),T)`, where `(p)` is the left member and `T` is the right member. There is an extension of that same descendant chain ending either with a spanning two-path cover of `H` or with an oppositely extended pair of two singleton paths `((p),(q))`. The path `(p)` is unchanged throughout the extension. Every nonclosing transition after the initial stage is a support-shortening step and strictly shortens the second member.
+
+**Proof.** Write
+
+`T=(t_0,...,t_m)`.
+
+If `m=0`, there is nothing to prove. Assume `m>=1` and put
+
+`O=V(H)-({p}∪V(T))`.
+
+If `O=∅`, then `(p)|T` is a spanning two-path cover.
+
+Suppose `|O|>=2`. The proper induced tournament `H[O]` has a path cover with at most two components. If `|O|>=3`, one component is nontrivial; choose consecutive vertices `u_0,u_1` on it. If `|O|=2`, use the two vertices in either order. Boundary antisymmetry makes exactly one of
 
 `(t_0,u_0,u_1)`, `(u_1,u_0,t_0)`
 
-tight. Let `C` be that tight three-vertex path. Then `C` is disjoint from `D_1`, from `q=t_1`, and from both extension vertices unless an extension vertex already lies on one of the two supports. It meets `D_2` exactly at `t_0` and avoids the protected end `q`.
+tight. Let `C` be that tight three-vertex path. It is disjoint from `(p)` and meets `T` exactly in `t_0`. Hence it gives a support-shortening step from `((p),T)` to
 
-Apply the right-extension part of Lemma 4.1 to the retained path `D_2=(t_0,t_1)` using `Q=C`. The surviving suffix is exactly `(q)`, and it retains the original right-extension witness `z`. Record that restriction tuple. The three paths
+`((p),(t_1,...,t_m))`.
 
-`(x)`, `(q)`, `C`
+Now suppose `O={u}`. Since `n>10`, we have `|T|=n-2>=9`, so `t_2` exists. If `(p,u,t_0)` is not tight, then `(t_0,u,p)` is tight, and the two disjoint tight paths
 
-are pairwise vertex-disjoint, so they form a current path system `P'`. Let `R'` be the incoming retained data together with the left-extended singleton `(x)` and the recorded restriction of `D_2` to `(q)`. This is the required nonclosing transition. The case in which `D_1` is right-extended and `D_2` is left-extended is the exact left/right dual. ∎
+`(t_0,u,p)`, `(t_1,...,t_m)`
 
-### Singleton-replacement lemma
+span `H`, giving a two-path cover. Hence in the nonclosing case `(p,u,t_0)` is tight. The spanning word
 
-Let `(P,R)` be a stage whose current path system contains distinct singleton paths `(p)` and `(t)`, and let `y∉{p,t}`. Then either `H` has a spanning two-path cover, or there is a later current path system `P'` and retained collection `R'` such that
+`(p,u,t_0,t_1,...,t_m)`
 
-- `R⊆R'`;
-- `(p)` remains the distinguished current singleton throughout the construction and is still current in `P'`;
-- `P'` contains `(p)` and `(y)` as distinct singleton paths;
-- every retained datum concerning `(p)` is unchanged;
-- the construction produces an explicit extension side and witness for the new singleton `(y)`.
+cannot be a Hamilton tight path, so `(u,t_0,t_1)` is not tight. Therefore `(t_1,t_0,u)` is tight. This three-vertex path is disjoint from `(p)` and meets `T` exactly in `t_0,t_1`, giving a support-shortening step from `((p),T)` to
 
-No hypothesis on pre-existing extension labels of `(p)` and `(t)` is required. The symmetric form preserves `(t)` and replaces `(p)` by an arbitrary prescribed third vertex.
+`((p),(t_2,...,t_m))`.
+
+Every nonclosing step leaves `(p)` unchanged and strictly decreases the order of the second member. Repetition therefore reaches a singleton after finitely many steps. All transitions extend the same descendant chain. ∎
+
+### Lemma 4.5. Endpoint selection within one descendant chain
+
+Let a descendant chain end at an oppositely extended pair `(D,T)` whose first member `D` has order two. For either prescribed vertex `x∈V(D)`, there is an extension of that descendant chain ending either with a spanning two-path cover of `H` or with an oppositely extended singleton pair `((x),(q))` for some vertex `q`.
+
+The descendant chain retains the incoming oppositely extended pair, the original extension of `D`, the chosen endpoint `x`, the endpoint-restriction step, and every later support-shortening step. The second singleton is not prescribed.
+
+**Proof.** Write `D=(d_0,d_1)` and apply the endpoint-restriction step selecting `x`. This gives a descendant oppositely extended pair `((x),T)`; Lemma 4.3 supplies the left-extension vertex of `(x)` exactly as stated in the definition. Apply Lemma 4.4. ∎
+
+The right-member version is the exact dual.
+
+### Lemma 4.6. Prescribed singleton replacement within one descendant chain
+
+Let a descendant chain end at an oppositely extended singleton pair `((p),(t))`, and let `y∉{p,t}`. There is an extension of that same descendant chain ending either with a spanning two-path cover of `H` or with the oppositely extended singleton pair `((p),(y))`.
+
+The vertex `p` remains the first singleton throughout the extension. Every earlier pair and transition remains part of the descendant chain. The replacement records an exact pair-deletion cover, the selected adjacency through `y`, the oriented tight triple that creates the intermediate path, its extension vertex, an outside edge, and the final shortening to `(y)`.
 
 **Proof.** By Lemma 1.2 choose an exact two-path cover
 
 `H-{p,t}=U|V`
 
-with both paths nontrivial. Relabel the components so that `y∈V(U)`. Since `U` is nontrivial, `y` has a neighbor `d` along `U`. The two-vertex order `(d,y)` is tight. Test the triple
+with both paths nontrivial. Relabel so `y∈V(U)`, and choose a neighbor `d` of `y` along `U`.
 
-`(d,y,t)`.
+Exactly one of
 
-If it is tight, let `S=(d,y)`. Then `S` is right-extended by `t`, with protected end `y`. If it is not tight, boundary antisymmetry gives `(t,y,d)` tight; let `S=(t,y)`. Then `S` is right-extended by `d`, again with protected end `y`. Thus in either case `S=(r,y)` is a two-vertex right-extended path, disjoint from `(p)`, whose protected end is the prescribed target `y`. Record `S` with its exact witness and side.
+`(d,y,t)`, `(t,y,d)`
 
-The other deletion-cover component `V` is disjoint from `S`: in the first branch `S⊆V(U)`, and in the second branch `S` uses only `t` and `y`, neither of which lies in `V`. Because `V` is nontrivial, choose consecutive vertices `v_0,v_1` on it. Boundary antisymmetry makes exactly one of
+is tight. In the first case put `S=(d,y)`; then `S` is right-extended by `t`. In the second case put `S=(t,y)`; then `S` is right-extended by `d`. The singleton `(p)` is left-extended by `t` because `(t,p)` is a tight two-vertex path. Hence these data form a singleton-replacement step from `((p),(t))` to `((p),S)`.
+
+Write `S=(r,y)`. The path `V` is disjoint from `{p}∪V(S)` and is nontrivial. Choose consecutive vertices `v_0,v_1` on `V`. Exactly one of
 
 `(r,v_0,v_1)`, `(v_1,v_0,r)`
 
-tight. Let `C` be that tight three-vertex path. It is disjoint from `(p)` and from the protected endpoint `y`, and it meets `S` exactly at the unprotected endpoint `r`.
+is tight. Let `C` be that tight path. It is disjoint from `(p)` and meets `S` exactly in `r`, so it gives a support-shortening step from `((p),S)` to `((p),(y))`.
 
-Apply the right-extension part of Lemma 4.1 to the retained path `S=(r,y)` using `Q=C`. The surviving suffix is exactly `(y)`, with the same right-extension witness as `S`: `t` in the first branch and `d` in the second. Record this restriction tuple. At every stage of this construction the singleton `(p)` is untouched and all auxiliary paths are chosen disjoint from it. Hence the three paths
+Both transitions extend the incoming descendant chain, and `(p)` is the first member at every stage. ∎
 
-`(p)`, `(y)`, `C`
+The dual statement preserves the second singleton and replaces the first.
 
-are pairwise vertex-disjoint and form a current path system `P'`. Let `R'` be the incoming retained data together with the extended path `S` and its recorded restriction to `(y)`. This gives the required nonclosing transition while preserving every incoming retained datum. Interchanging `p,t` gives the symmetric form. ∎
+### Theorem 4.7. Simultaneous historical fixed-pair reductions
 
-A **restriction-recording step** does not change the current path system. If `R` contains an extended path to which Lemma 4.1 applies using a current path `Q∈P`, the resulting tuple from item 2 above may be adjoined to `R`.
+For every fixed pair of distinct vertices `a,c`, either `H` has a spanning two-path cover or there is one descendant chain `Sigma` ending at the oppositely extended singleton pair `((c),(a))` such that, for every
 
-A **lawful finite continuation** is a finite sequence
+`s∈V(H)-{a,c}`,
 
-`(P_0,R_0),(P_1,R_1),...,(P_m,R_m)`
+both fixed-pair source restrictions from Theorem 4.2 occur as source-restriction branches along `Sigma`.
 
-such that every successive change of current path system is an application of the endpoint-selection lemma or the singleton-replacement lemma with its hypotheses satisfied at that stage, and every other step is a restriction-recording step. A continuation stops immediately if a spanning two-path cover is produced. Retained path data are monotone: `R_i⊆R_{i+1}`. No path is current at a later stage merely because it occurs in retained data.
+Equivalently, every vertex outside `{a,c}` has both historical source reductions in one descendant chain; there is no exceptional vertex.
 
-### Lemma 4.3. Prescribing one vertex of each of two extended two-vertex paths
+**Proof.** Since `|X|+|Y|=n-2>=9`, one of `X,Y` contains two distinct vertices. Interchange `a,c` if necessary and choose distinct `s,t∈X`.
 
-Suppose the retained data contain vertex-disjoint two-vertex tight paths `D_1,D_2`, one protected at its left end and the other at its right end. For arbitrary prescribed vertices
+The paths
 
-`x∈V(D_1)`, `y∈V(D_2)`,
+`R_t=(t,c)`, `L_s=(a,s)`
 
-there is a lawful finite continuation ending either in a spanning two-path cover of `H` or in a current path system containing `(x)` and `(y)`.
+are vertex-disjoint. The first is left-extended by `a`, and the second is right-extended by `c`, so they form an oppositely extended pair. Take this pair as `Pi_0`, and name every source path `L_v,R_v` at the root.
 
-**Proof.** Apply endpoint selection to `D_1`, prescribing `x`. If a spanning two-path cover occurs, stop. Otherwise the current path system contains `(x)` and a distinct singleton `(q)`. If `q=y`, stop. Otherwise `y∉{x,q}` because `D_1,D_2` are disjoint, so singleton replacement with `(x)` preserved and target `y` gives the required conclusion. All retained data persist through both steps. ∎
+Apply Lemma 4.5 to the first member `R_t`, prescribing the endpoint `c`. Unless a spanning two-path cover occurs, the descendant chain reaches an oppositely extended singleton pair `((c),(q))` for some `q`. If `q=a`, keep this pair. Otherwise apply Lemma 4.6, preserving `(c)` and prescribing `a`. The same descendant chain then reaches `((c),(a))`.
 
-For `s∈X`, define the two **historical source reductions at `s`** as follows:
+Fix any `v∈V(H)-{a,c}`. If `v∈X`, use the singleton `(a)` at the terminal stage to apply Lemma 4.1 to the named right-extended path `L_v=(a,v)`, producing `(v)` right-extended by `c`; use the singleton `(c)` to apply Lemma 4.1 to the named left-extended path `R_v=(v,c)`, producing `(v)` left-extended by `a`. These are the two source-restriction branches at `v`.
 
-- the right source reduction is the restriction tuple obtained when the retained right-extended path `L_s=(a,s)` is restricted using a stage at which `(a)` is current, leaving `(s)` with the original right extension by `c`;
-- the left source reduction is the restriction tuple obtained when the retained left-extended path `R_s=(s,c)` is restricted using a stage at which `(c)` is current, leaving `(s)` with the original left extension by `a`.
+If `v∈Y`, interchange `a,c` in the preceding sentence. The oppositely extended pair remains `((c),(a))`, so these source restrictions for different vertices coexist as recorded branches at the same terminal pair. Thus every outside vertex has both historical source reductions in the one descendant chain `Sigma`. ∎
 
-For `s∈Y`, interchange `a,c`: the two reductions use current `(c)` on `L_s=(c,s)` and current `(a)` on `R_s=(s,a)`, retaining respectively the right extension by `a` and the left extension by `c`.
-
-These are historical assertions: unlike Theorem 4.2, they assert that the relevant singleton intersection actually occurred at a stage of a lawful continuation.
-
-For a lawful continuation `Sigma`, let `C_{a,c}(Sigma)` be the set of vertices `s∈V(H)-{a,c}` for which both historical source reductions at `s` have been recorded by the end of `Sigma`.
-
-### Lemma 4.4. Two same-orientation vertices
-
-Let `s,t∈X` be distinct, and let `(P,R)` be any stage of a lawful continuation for which `R_0⊆R`. There is a lawful finite continuation from `(P,R)` such that either a spanning two-path cover occurs or the terminal current path system contains `(a)` and `(c)` and the retained data contain
-
-- the right historical source reduction at `s`; and
-- the left historical source reduction at `t`.
-
-The same statement holds with `s,t` interchanged. For `s,t∈Y`, the symmetric statement is obtained by interchanging `a,c`.
-
-**Proof.** The source path `L_s=(a,s)` is right-extended by `c`, so its protected end is `s`. The source path `R_t=(t,c)` is left-extended by `a`, so its protected end is `t`. They are vertex-disjoint because `s!=t`. Apply Lemma 4.3 with prescribed endpoints `a∈V(L_s)` and `c∈V(R_t)`.
-
-Unless a spanning two-path cover occurs, the resulting current path system contains `(a)` and `(c)`. Apply a restriction-recording step to the retained right-extended path `L_s` using the current singleton `(a)`. Lemma 4.1 leaves `(s)` with its original right extension by `c`, which is exactly the right historical source reduction at `s`.
-
-Apply another restriction-recording step to the retained left-extended path `R_t` using current `(c)`. Lemma 4.1 leaves `(t)` with its original left extension by `a`, which is the left historical source reduction at `t`. Restriction recording leaves the current singleton pair `(a),(c)` unchanged. ∎
-
-### Theorem 4.5. Simultaneous historical fixed-pair reductions
-
-For every fixed pair of distinct vertices `a,c`, there is a lawful finite continuation `Sigma` starting from the fixed-pair initial retained data such that either a spanning two-path cover of `H` occurs or
-
-`|V(H)-({a,c}∪C_{a,c}(Sigma))|<=1`.
-
-Thus, in the nonclosing outcome, all but at most one vertex outside `{a,c}` have both historical source reductions recorded along one lawful continuation.
-
-**Proof.** Consider `X`. If `|X|<=1`, make no move for that class. If `|X|>=2`, choose `t∈X`. For each `s∈X-{t}`, apply Lemma 4.4 first to `(s,t)` and then to `(t,s)`. Each application ends, unless a spanning two-path cover occurs, with the same current singleton pair `(a),(c)`, so the continuations concatenate lawfully. Together the two applications record both historical source reductions at `s` and both at `t`. Repeating with the same `t` records both reductions at every vertex of `X`.
-
-Apply the symmetric construction to `Y`. A class of order zero or one can leave at most one vertex unreduced. Since
-
-`|X|+|Y|=n-2>=9`,
-
-both classes cannot have order at most one. Therefore at most one vertex outside `{a,c}` is absent from `C_{a,c}(Sigma)`. ∎
-
-### Corollary 4.6. Four vertices cannot all avoid the historical reductions
-
-Let `Sigma` be a nonclosing continuation from Theorem 4.5. If a later lawful continuation contains two vertex-disjoint current two-vertex paths on four distinct vertices, then at least one of those four vertices belongs to `C_{a,c}(Sigma)`.
-
-**Proof.** The complement of `C_{a,c}(Sigma)` is contained in `{a,c}` together with at most one further vertex, so it has order at most three. ∎
-
-### Proposition 4.7. Static contact away from the fixed pair
+### Proposition 4.8. Static contact away from the fixed pair
 
 Let `s∈X` and `u∉{a,s,c}`.
 
@@ -711,32 +703,31 @@ Let `s∈X` and `u∉{a,s,c}`.
 
 The same statements hold for `s∈Y` after interchanging `a,c`.
 
-**Proof.** Each item is exactly one reversal pair, so boundary antisymmetry proves the assertion. ∎
+**Proof.** Each item is one reversal pair, so boundary antisymmetry proves the assertion. ∎
 
-### Theorem 4.8. Localization of a later recurrence through a historically reduced vertex
+### Theorem 4.9. Localization of later recurrence
 
-Let `Sigma` be a nonclosing continuation from Theorem 4.5, let `s∈C_{a,c}(Sigma)`, and let `Sigma'` be any lawful finite continuation extending `Sigma`. Suppose that at some stage of `Sigma'` the current path system contains a two-vertex path
+Let `Sigma` be a nonclosing descendant chain from Theorem 4.7, and extend it by further certified descendant transitions. Let `s∈V(H)-{a,c}`. Suppose a later oppositely extended pair has a two-vertex member
 
 `Q=(s,u)` or `Q=(u,s)`
 
-with `u∉{a,s,c}`. Then the retained source paths through `s` and the current path `Q` give at least one of the following:
+with `u∉{a,s,c}`. Then the named source paths through `s` and the path `Q` give at least one of the following:
 
-1. a tight path properly containing `Q` and one of the retained source paths through `s`;
+1. a tight path properly containing `Q` and one named source path through `s`;
 2. a vertex-simple proper tight cycle;
-3. an explicit tight triple containing `u` that traverses an ordered edge of `Q` and an ordered edge of a retained source path in the opposite order.
+3. an explicit tight triple containing `u` that traverses an ordered edge of `Q` and an ordered edge of a named source path in the opposite order.
 
-In fact Proposition 4.7 already gives outcome 1 or outcome 3 in this two-vertex situation. The cycle alternative is included because it is also one of the general path-contact outcomes of Appendix A.
-The new-endpoint conclusion itself is therefore static: Proposition 4.7 already supplies it. The role of the historical reductions is instead to certify that `s` has previously undergone both source reductions along a lawful continuation, so that the unresolved equality/recurrence case is localized to exact return on the two old supports `{a,s}` and `{s,c}`.
+Proposition 4.8 already gives outcome 1 or outcome 3 in this two-vertex case. The historical source restrictions are not needed to prove the new-endpoint conclusion. Their role is different: Theorem 4.7 places, inside this same descendant chain, two strict descendant branches from the old source paths through `s` to the singleton `(s)`. Therefore a later member of an oppositely extended pair with vertex set `{a,s}` or `{s,c}` is an exact return to an earlier source support after the strict descendant `(s)` of that source path has already occurred in the same descendant chain.
 
-Consequently, after the two historical source reductions at `s` have actually occurred, any later current two-vertex path through `s` whose other endpoint is outside `{a,c}` produces one of these non-recurrent contact outcomes. The only two-element supports through `s` not covered by this conclusion are the two original supports
+Thus the only two-vertex supports through `s` not covered by the new-endpoint conclusion are
 
 `{a,s}`, `{s,c}`.
 
-The theorem does not assert that an exact later return to either of those two supports is impossible.
+The theorem does not assert that either exact return is impossible. Those two supports are precisely the unresolved recurrence residue.
 
-**Proof.** Because retained data are monotone, the original extended source paths through `s` remain available throughout `Sigma'`. Since `s∈C_{a,c}(Sigma)`, both historical source reductions at `s` have also been recorded. Apply Proposition 4.7 to the current path `Q`; this gives outcome 1 or 3. The final localization statement follows because the only possible other endpoints excluded from Proposition 4.7 are `a` and `c`. ∎
+**Proof.** The two source-restriction branches at `s` belong to `Sigma` by Theorem 4.7 and remain part of every extension of that descendant chain. Apply Proposition 4.8 to `Q`; this gives outcome 1 or 3. The statement about exact return follows from the two strict source restrictions recorded at the terminal singleton pair of Theorem 4.7. ∎
 
-### Lemma 4.9. Four vertices of one orientation
+### Lemma 4.10. Four vertices of one orientation
 
 Let `S` be a four-element subset of `V(H)-{a,c}` such that `(a,s,c)` is tight for every `s∈S`. Then there are distinct `x,y,z∈S` such that
 
@@ -756,9 +747,9 @@ The sum of indegrees in the four-vertex tournament `->_a` is six, so some vertex
 
 Choose `v!=y`. Since `y` is the `->_c` sink, `v->_c y`. The unique `->_a` predecessor `x` of `v` cannot be `y`, because `y` is the `->_a` sink. Hence `x->_a v->_c y`, a mixed chain on three distinct vertices, contradiction. Therefore such a mixed chain exists. Renaming its middle and last vertices as `y,z`, the triples `(x,a,y)`, `(a,y,c)`, `(y,c,z)` are tight, so `(x,a,y,c,z)` is tight. ∎
 
-### Corollary 4.10. A five-vertex path through historically reduced vertices
+### Corollary 4.11. A five-vertex path through historically reduced vertices
 
-Let `Sigma` be a nonclosing continuation from Theorem 4.5. Then there are distinct `x,y,z∈C_{a,c}(Sigma)` such that either
+Let `Sigma` be a nonclosing descendant chain from Theorem 4.7. Then there are distinct vertices `x,y,z`, each having both historical source reductions in `Sigma`, such that either
 
 `(x,a,y,c,z)`
 
@@ -768,7 +759,8 @@ or
 
 is a tight path.
 
-**Proof.** One of `X,Y` has order at least five. At most one vertex outside `{a,c}` is absent from `C_{a,c}(Sigma)`, so the larger class contains at least four vertices of `C_{a,c}(Sigma)`. Apply Lemma 4.9, interchanging `a,c` if necessary. ∎
+**Proof.** One of `X,Y` has order at least five. Choose any four vertices from that class and apply Lemma 4.10, interchanging `a,c` if necessary. Theorem 4.7 supplies both historical source reductions for every outside vertex, in particular for the resulting `x,y,z`. ∎
+
 
 ## 5. Deletion and comparison of path covers
 
@@ -925,25 +917,21 @@ are tight. Each of the four vertices
 
 lies outside `{a,c}` and therefore has both static fixed-pair restrictions from Theorem 4.2.
 
-For this same pair `a,c`, let `Sigma` be the lawful continuation of Theorem 4.5. Since `H` is a counterexample, the spanning-two-path-cover outcome does not occur. Hence at least three of the four displayed end vertices belong to `C_{a,c}(Sigma)` and have both historical source reductions recorded along `Sigma`. The current path systems occurring in `Sigma` are auxiliary to the fixed-pair continuation; they are not asserted to preserve the extremal cover `A|B|C`. What is shared with the extremal cover is the physical vertex pair `a,c` and the retained graph-theoretic source data attached to that pair.
+For this same pair `a,c`, let `Sigma` be the descendant chain of Theorem 4.7. Since `H` is a counterexample, the spanning-two-path-cover outcome does not occur. Hence all four displayed end vertices have both historical source reductions contained in `Sigma`. This descendant chain is auxiliary to the extremal cover `A|B|C`; none of its oppositely extended pairs is asserted to be a pair of components of that cover. What is shared with the extremal cover is the physical vertex pair `a,c` and the named source paths attached to that pair.
 
-For every such historically reduced end vertex `s`, Theorem 4.8 applies to any later lawful continuation: if a current two-vertex path through `s` has other endpoint outside `{a,c}`, its contact with the retained source paths gives a larger tight path, a proper tight cycle, or an explicit reversed/crossing tight triple. The only unresolved two-vertex recurrence supports through `s` are `{a,s}` and `{s,c}`.
+For each of the four end vertices `s`, Theorem 4.9 applies after any further certified descendant transitions: if a later oppositely extended pair has a two-vertex member through `s` whose other endpoint lies outside `{a,c}`, contact with the named source paths gives a larger tight path, a proper tight cycle, or an explicit reversed/crossing tight triple. The only unresolved two-vertex recurrence supports through `s` are `{a,s}` and `{s,c}`.
 
 **Proof.** Proposition 6.1 makes the cover terminal for transfers into `A`. Proposition 3.2 applied to the endpoints `a,c` of `X_0` gives the two displayed tight triples. Since the three components of `A|B|C` are disjoint, the four displayed vertices of `A` lie outside `{a,c}`, so Theorem 4.2 applies to all four.
 
-Apply Theorem 4.5 to the same pair `a,c`. Its nonclosing outcome satisfies
+Apply Theorem 4.7 to the same pair `a,c`. In the nonclosing outcome, that theorem supplies both historical source reductions for every vertex outside `{a,c}`, in particular for all four end vertices of `A`. The final assertion is Theorem 4.9. ∎
 
-`|V(H)-({a,c}∪C_{a,c}(Sigma))|<=1`.
-
-Therefore at most one of the four end vertices is absent from `C_{a,c}(Sigma)`. The final assertion is exactly Theorem 4.8. ∎
-
-The roles of the two ingredients are now distinct. Lexicographic maximality supplies the global descent/equality framework: any literal spanning three-path cover with lexicographically larger component orders is impossible. The lawful fixed-pair continuation supplies historical control when a later construction returns through a vertex that has already undergone both source reductions; Theorem 4.8 localizes the unresolved equality residue to exact return on one of the two old supports.
+The roles of the two ingredients are now distinct. Lexicographic maximality supplies the global descent/equality framework: any literal spanning three-path cover with lexicographically larger component orders is impossible. The fixed-pair descendant chain supplies historical control when a later descendant returns through a vertex that has already undergone both source reductions; Theorem 4.9 localizes the unresolved equality residue to exact return on one of the two old supports.
 
 This does not yet complete the proof. The missing augmentation statement is:
 
 > Let `F` be a spanning three-path cover of a smallest counterexample such that no endpoint can be transferred from one component into another component of at least equal order. Then either a spanning two-path cover exists or there is a spanning three-path cover `F'` with `lambda(F')` lexicographically larger than `lambda(F)`.
 
-No result above yet constructs `F'` in all cases. The current analysis of that missing step is recorded in `GN3/MIGRATION/EVIDENCE/AUGMENTATION_FRONTIER.md`.
+No result above yet constructs `F'` in all cases. The analysis of that missing step is recorded in `GN3/MIGRATION/EVIDENCE/AUGMENTATION_FRONTIER.md`.
 
 ## Appendix A. Intersections of ordered paths
 
