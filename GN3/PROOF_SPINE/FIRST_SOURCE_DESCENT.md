@@ -1,6 +1,6 @@
 # Direct longest-path entrance and a rank-bearing cube route
 
-**Status: supervised GN3 reconstruction. This revision incorporates the independent audit corrections and separates the shortest known route from the longer route that carries additional rank information. It is not yet a final GN3 certification.**
+**Status: supervised GN3 reconstruction. This revision incorporates the independent audit corrections and separates the shortest known route from the longer route that carries additional one-step descent information. It is not yet a final GN3 certification.**
 
 ## 1. Common input
 
@@ -46,13 +46,21 @@ tight, so
 
 `(b_0,a_1,a_0,b_1)`
 
-is a tight four-vertex path; together with the third path this two-covers `H`. If both other paths are singletons, `A` together with the ordered pair on those two vertices already gives a two-path cover. Hence
+is a tight four-vertex path; together with the third path this two-covers `H`. If both other paths are singletons, `A` together with the two-vertex path on those two vertices already gives a two-path cover. Hence
 
 `|A|>=3`.
 
 ### 2.2 The case `|A|>=4`
 
-For a nontrivial path `X=(x_0,...,x_m)` among `B,C`, failure to extend the right end of `A` implies
+At least one of `B,C` is nontrivial. If both were singletons, their two vertices themselves form a tight two-vertex path, and that path together with `A` would be a spanning two-path cover of `H`.
+
+Choose a nontrivial path
+
+`X=(x_0,...,x_m)`
+
+among `B,C`.
+
+Failure to extend the right end of `A` implies
 
 `(x_0,a_s,a_{s-1})`
 
@@ -66,7 +74,7 @@ Thus the two disjoint ordered pairs
 
 `(a_s,a_{s-1})` and `(a_1,a_0)`
 
-occur in retained tight ordered triples with witness vertices attached on opposite ends. The four vertices of these ordered pairs are distinct because `|A|>=4`.
+occur in tight ordered triples with witness vertices attached on opposite ends. The four vertices of these ordered pairs are distinct because `|A|>=4`.
 
 This is exactly the local four-vertex input needed by the later continuation machinery. We also retain one ordinary consecutive tight ordered triple of `A`.
 
@@ -100,9 +108,9 @@ This is the shortest known route to the present local frontier.
 
 ## 3. Why retain the Boolean cube at all?
 
-The longer construction remains potentially useful because it carries additional information: it begins from a finite family of specific maximum spanning three-path forests and yields a **strict rank decrease relative to that family**.
+The longer construction remains potentially useful because it carries additional information: it begins from a finite family of specific maximum spanning three-path forests and yields a **strict numerical decrease relative to that family**.
 
-That rank decrease is not yet known to iterate. It should therefore be viewed as extra structure, not as the reason we can reach the nonextendable configuration.
+That decrease is not yet known to iterate. It should therefore be viewed as extra structure, not as the reason we can reach the nonextendable configuration.
 
 The rest of this document reconstructs that additional argument.
 
@@ -124,11 +132,41 @@ Put
 `K={a,c,p,q,r}`,  
 `W=V(H)-K`.
 
-A direct boundary-antisymmetry argument gives a Hamilton tight path on `K`. Every set
+The following five-vertex fact is substantial enough to state separately.
 
-`K-J={a,c}∪(P-J)`, `J⊆P`,
+### Lemma 4.1
 
-also has a Hamilton tight path.
+If
+
+`(a,p,c)`, `(a,q,c)`, `(a,r,c)`
+
+are tight, then `K={a,c,p,q,r}` has a Hamilton tight path. Moreover, for every `J⊆P`, the complementary set
+
+`K-J={a,c}∪(P-J)`
+
+has a Hamilton tight path.
+
+### Proof
+
+For distinct `x,y∈P`, write `x→_a y` when `(x,a,y)` is tight and `x→_c y` when `(x,c,y)` is tight. Boundary antisymmetry makes both relations tournaments on the three vertices `p,q,r`.
+
+If some distinct `x,y,z` satisfy
+
+`x→_a y` and `y→_c z`,
+
+then
+
+`(x,a,y,c,z)`
+
+is already a Hamilton path on `K`.
+
+Assume no such mixed chain exists. The tournament `→_a` cannot be transitive: if `x→_a y→_a z` and `x→_a z`, then avoiding the two mixed Hamilton paths forces both `z→_c y` and `y→_c z`, impossible. Hence, after relabelling,
+
+`p→_a q→_a r→_a p`.
+
+Avoidance of a mixed chain then forces the opposite cyclic orientation for `→_c`. At this point all turns involving `a` or `c` are fixed. The remaining choices are the orientations of the three ordered triples on `{p,q,r}`. There are only eight possibilities. In each one, one of the two candidate Hamilton orders obtained by traversing the `a`-cycle and `c`-cycle in opposite directions has every turn fixed except one, while the corresponding missing turns in the two candidates are reversals of each other. Boundary antisymmetry therefore makes one candidate tight. Thus `K` has a Hamilton tight path.
+
+The smaller complementary sets are easier. A set of two vertices is a tight path. A set `{a,s,c}` is a tight path by hypothesis. For two spokes `s,t`, if `(s,c,t)` is tight then `(a,s,c,t)` is a tight four-vertex path; otherwise `(t,c,s)` is tight and `(a,t,c,s)` is a tight four-vertex path. Hence every `K-J` has a Hamilton tight path. ∎
 
 For each `J⊆P`, define
 
@@ -140,7 +178,7 @@ If some `G_J` were Hamiltonian, its Hamilton path together with a Hamilton path 
 
 for all eight choices of `J`.
 
-An exact two-path cover of `G_J`, together with a Hamilton path on `K-J`, is a spanning three-path cover of `H`. Because `pc(H)=3`, such a cover has the minimum possible number of path components and exactly `|V(H)|-3` selected edges. Equivalently, it is a maximum spanning forest among spanning subgraphs whose components are tight paths. This verifies the exact hypothesis required by the rank argument in Section 6.
+An exact two-path cover of `G_J`, together with a Hamilton path on `K-J`, is a spanning three-path cover of `H`. Because `pc(H)=3`, such a cover has the minimum possible number of path components and exactly `|V(H)|-3` selected edges. Equivalently, it is a maximum spanning forest among spanning subgraphs whose components are tight paths. This verifies the exact hypothesis required by the numerical comparison in Section 6.
 
 ## 5. Cube comparison lemma
 
@@ -155,7 +193,29 @@ From the cube above, one can select a comparison that produces either
 
 while retaining the exact cube covers from which the comparison was made.
 
+### Lemma 5.2: comparison of two Hamilton orders
+
+Let
+
+`P_0=(v_0,...,v_k)`
+
+and `Q_0` be vertex-simple tight paths on the same vertex set. If their vertex orders differ, then the comparison produces at least one of the following:
+
+1. an edge of `Q_0` that reverses a consecutive edge of `P_0`;
+2. a tight ordered triple crossing one of the two paths in the reverse direction; or
+3. a vertex-simple proper tight cycle.
+
 ### Proof
+
+Read the vertices of `P_0` in their order of occurrence along `Q_0`. Since the orders differ, choose consecutive contacts `v_i,v_j` along `Q_0` with `i>j`, and let `E` be the subpath of `Q_0` from `v_i` to `v_j`; its internal vertices contain no vertex of `P_0`.
+
+If `E` is the single edge `v_i v_j` and `i=j+1`, this is the first outcome. Otherwise let `x` be the successor of `v_i` on `E` and `y` the predecessor of `v_j`. Test the two boundary triples
+
+`(v_{i-1},v_i,x)` and `(y,v_j,v_{j+1})`.
+
+If either is not tight, boundary antisymmetry gives the corresponding reversed tight ordered triple. If both are tight, traverse `E` from `v_i` to `v_j`, then follow `P_0` from `v_j` toward `v_{i-1}`, and close through the first tested triple. Every consecutive triple is inherited from `E` or `P_0`, or is one of the two tested triples. Because `v_i,v_j` were consecutive contacts along `Q_0`, the resulting tight cycle is vertex-simple. ∎
+
+### Proof of Lemma 5.1
 
 Take an exact two-path cover of `G_J` for some nonempty `J`, delete the vertices of `J`, and split the two paths at the deletions. The maximal nonempty subpaths lying in `W` will be called the surviving `W`-subpaths.
 
@@ -183,7 +243,7 @@ If two of them induce different unordered bipartitions of `W` into path supports
 
 those two crossed path supports cannot both be singletons. Choose a crossing endpoint in a nontrivial path support and its neighbor on that path. Boundary antisymmetry gives a proper tight ordered triple.
 
-If the support bipartitions agree but one common support is traversed in two different Hamilton orders, compare the two orders. A first inversion yields either a reversed selected edge, a reverse tight ordered triple, or a vertex-simple proper tight cycle. In the cyclic case, specify any edge at which the cycle is to be opened.
+If the support bipartitions agree but one common support is traversed in two different Hamilton orders, apply Lemma 5.2. A reversed edge or reversed tight ordered triple is already a proper path; a proper cycle is opened at the specified comparison edge.
 
 We may therefore assume that, after exchanging the two paths when necessary,
 
@@ -228,15 +288,15 @@ with every one-vertex extension using the edge `vs` and every two-vertex extensi
 
 Fix `s∈P` and let `{t,u}=P-{s}`. Delete the internal vertex `s` from the original top cover `U|V`. This gives a three-path cover of the same residue covered exactly by the two paths consisting of the tight path on `{t,v,u}` and `B`. Comparing the three-path cover with that exact two-path cover yields a crossing. If a crossed piece is nontrivial, use its inherited neighboring edge. If the two crossed pieces are the singleton sides created by deleting `s`, then the original path through `s` had order three and one of its two edges through `s` supplies the needed adjacent edge. Boundary antisymmetry again produces a proper tight path.
 
-Thus every outcome of the finite cube comparison yields the conclusion of the lemma. ∎
+Thus every outcome of the finite cube comparison yields the conclusion of Lemma 5.1. ∎
 
-## 6. Strict rank decrease relative to the initial family
+## 6. Strict one-step decrease relative to the initial family
 
 Let
 
 `F_1,...,F_r`
 
-be the finite family of maximum spanning three-path forests participating in the comparison of Section 5. In each `F_i`, choose a longest path of order `M_i` and set
+be the finite family of maximum spanning three-path forests participating in the comparison of Section 5. In each `F_i`, choose a longest path of order `M_i` and assign the numerical label
 
 `rho(F_i)=(1,n-M_i)`,  
 `n=|V(H)|`.
@@ -288,7 +348,7 @@ Perform any available endpoint transfer. Each successful transfer increases `|A|
 2. `|A|` first reaches `M_*+1`;
 3. no endpoint transfer is available at either end.
 
-Case 2 gives rank at most
+Case 2 gives the numerical label
 
 `(1,n-M_*-1)`,
 
@@ -304,13 +364,13 @@ If `|A|>=4`, failure of endpoint transfers gives the two disjoint ordered pairs 
 
 If `|A|=3`, delete the middle vertex. As in Section 2.3, the remaining graph has an exact two-path cover: minimality gives at most two paths, and Hamiltonicity would combine with the deleted singleton to two-cover `H`. A selected edge of the exact cover crosses two components of the inherited four-path cover, and boundary antisymmetry with the deleted middle vertex gives the required tight ordered triple.
 
-For bookkeeping only, assign every configuration of this nonextendable type a rank whose first coordinate is `0`. Then it is strictly below every initial rank `(1,n-M_i)`.
+For the sole purpose of comparing this terminal outcome with the initial family, attach the auxiliary bookkeeping label `(0,*)` to it. This is **not** an intrinsic rank on all configurations and is not a recursively defined well-founded measure. It merely records that this one transition lies below every initial label `(1,n-M_i)`.
 
 We have therefore proved:
 
-### Rank-decrease theorem
+### Relative-decrease theorem
 
-If the finite initial family of maximum spanning three-path forests emits a proper tight path or a specified proper tight cycle, there is a finite continuation to a spanning two-path cover or to a configuration with rank strictly below every member of that initial family.
+If the finite initial family of maximum spanning three-path forests produces a proper tight path or a specified proper tight cycle, there is a finite sequence of the transformations above ending either in a spanning two-path cover or in a configuration carrying a numerical label strictly below every member of that initial family.
 
 The decrease is **relative to this initial family**. The theorem does not say that the same argument may be restarted from the final configuration.
 
@@ -318,27 +378,27 @@ The decrease is **relative to this initial family**. The theorem does not say th
 
 The direct longest-path construction of Section 2 already reaches the same nonextendable three-path configuration. Therefore the Boolean cube is not needed merely to reach the current local frontier.
 
-Its extra contribution is the strict decrease from the ranks
+Its extra contribution is the strict one-step decrease from the labels
 
 `(1,n-M_i)`
 
 attached to the particular maximum three-path forests used in the cube comparison.
 
-At present, no accepted theorem uses that numerical decrease to construct a recursive global order after the nonextendable configuration has been reached. Thus the extra rank information is potentially valuable but not yet load-bearing for closure.
+At present, no accepted theorem uses that numerical decrease to construct a recursive global order after the nonextendable configuration has been reached. Thus the extra information is potentially valuable but not yet load-bearing for closure.
 
 ## 8. Exact unresolved statement
 
 The remaining problem on this line is:
 
-> Starting from the nonextendable three-path configuration of Section 2, together with its explicit local ordered-pair/triple data, prove a continuation that either produces a spanning two-path cover or reaches a strictly smaller state in a genuinely well-founded global order.
+> Starting from the nonextendable three-path configuration of Section 2, together with its explicit local ordered-pair/triple data, prove a sequence of valid graph transformations that either produces a spanning two-path cover or reaches a strictly smaller state in a genuinely well-founded global order.
 
-The rank theorem of Section 6 gives one strict decrease from its own initial family but does not provide such a recursive rule.
+The relative-decrease theorem of Section 6 gives one strict decrease from its own initial family but does not provide such a recursive rule.
 
 The invalidated E9007 compositions and the flagged E9006 composition do not supply the missing continuation.
 
 A particularly promising synthesis with the fixed-pair document is the following **unproved strategy**:
 
-> Construct a recursive order in which the generic continuation is strictly decreasing, and show that equality can occur only when the construction stays on one of the two old two-vertex supports through a previously reduced middle vertex. Then use the fixed-pair reduction history to eliminate that equality case.
+> Construct a recursive order in which the generic transformation is strictly decreasing, and show that equality can occur only when the construction stays on one of the two old two-vertex supports through a previously reduced middle vertex. Then use the fixed-pair retained path-contact certificates to eliminate that equality case.
 
 This is a research direction, not a theorem.
 
@@ -348,6 +408,6 @@ The legacy sources for the mathematics retained here are:
 
 - three-vertex cube construction and comparison: E8998 / R2143;
 - cube-to-proper-path/cycle reduction: R2136 and R2153;
-- rank-decrease theorem and direct longest-path entrance: E9003 / R2147.
+- one-step numerical decrease and direct longest-path entrance: E9003 / R2147.
 
 The common small-order theorem, pair-deletion argument, and fixed-pair orientation count now live in [`PRELIMINARIES.md`](PRELIMINARIES.md).
