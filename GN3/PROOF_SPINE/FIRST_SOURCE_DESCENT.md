@@ -1,299 +1,362 @@
-# Branch B: Boolean-cube classification and first-source descent
+# Direct longest-path entrance and a rank-bearing cube route
 
-**Status: active proof-spine reconstruction; unresolved at the phase-zero recursion step; this GN3 rewrite is not yet independently audited.**
+**Status: supervised GN3 reconstruction. This revision incorporates the independent audit corrections and separates the shortest known route from the longer route that carries additional rank information. It is not yet a final GN3 certification.**
 
-## 1. Shared starting point
+## 1. Minimal-counterexample consequences
 
-Assume that the two-path-cover theorem is false, and let `H` be a smallest counterexample. The certified small-order argument gives
+Assume the two-path-cover theorem is false and let `H` be a smallest counterexample. Then
 
-`|H|>10`.
+`|V(H)|>10`
 
-Minimality has an immediate useful consequence. For any distinct vertices `x,y`, the proper subsystem `H-{x,y}` has path-cover number exactly two, and neither rail of an exact two-cover is a singleton. A Hamilton path of the pair-deleted subsystem, or a singleton rail in an exact two-cover, could be combined with a tight trimer on the deleted pair and one suitable retained vertex to two-cover `H`.
+and `pc(H)=3`.
 
-This branch uses that rigidity to build a small cube of related exact two-covers. A finite comparison of the cube must produce a genuine source-visible path or cycle. Once such a birth appears, a marked-rail growth argument either closes `H` or descends in a strict phased rank below every source configuration that participated in the comparison.
+For any distinct vertices `x,y`, the induced subsystem `H-{x,y}` has path-cover number exactly two. Minimality gives a cover by at most two tight paths. It cannot be Hamiltonian, because a Hamilton path in `H-{x,y}` together with a suitable tight ordered triple on `x,y` and one vertex of that path would give a spanning two-path cover of `H`. Moreover, neither path in an exact two-path cover of `H-{x,y}` can be a singleton, for the same reason.
 
-Unlike the fixed-pair branch, this route therefore carries a genuine monotone quantity. Its present defect is that the proven descent theorem is deliberately source-relative: it is not yet a recursive rule after the first transition to phase zero.
+This pair-deletion fact is used repeatedly below.
 
-## 2. Three same-oriented spokes
+## 2. The shortest route to the nonextendable three-path configuration
 
-Choose distinct anchors `a,c` and an exact two-cover
+The Boolean-cube construction is not needed merely to reach the local configuration that was formerly treated as the next state of the proof. There is a direct route.
+
+Choose a globally longest tight path
+
+`A=(a_0,...,a_s)`.
+
+If `A` spans `H`, the theorem is already proved. Otherwise `H-V(A)` is a proper induced subsystem. Minimality gives a cover by at most two tight paths, and it cannot be Hamiltonian because such a path together with `A` would two-cover `H`. Hence
+
+`H-V(A)=B|C`
+
+is an exact two-path cover.
+
+Thus
+
+`A|B|C`
+
+is a spanning cover of `H` by three tight paths.
+
+Global maximality of `A` implies that no endpoint of `B` or `C` can be transferred into either end of `A` so as to create a longer tight path. If an entire second path could be concatenated with `A`, the result together with the third path would be a spanning two-path cover. Therefore, in a counterexample, `A|B|C` is already a three-path configuration in which `A` cannot be enlarged by any of the elementary endpoint moves used below.
+
+### 2.1 The longest path has at least three vertices
+
+If `|A|=1`, all paths are singletons and `H` has only three vertices, impossible here.
+
+If `|A|=2`, write `A=(a_0,a_1)`. Every other path has order at most two. If one of them is `(b_0,b_1)`, failure of the two endpoint extensions gives
+
+`(b_0,a_1,a_0)` and `(a_1,a_0,b_1)`
+
+tight, so
+
+`(b_0,a_1,a_0,b_1)`
+
+is a tight four-vertex path; together with the third path this two-covers `H`. If both other paths are singletons, `A` together with the ordered pair on those two vertices already gives a two-path cover. Hence
+
+`|A|>=3`.
+
+### 2.2 The case `|A|>=4`
+
+For a nontrivial path `X=(x_0,...,x_m)` among `B,C`, failure to extend the right end of `A` implies
+
+`(x_0,a_s,a_{s-1})`
+
+is tight. Dually, failure to extend the left end implies
+
+`(a_1,a_0,x_m)`
+
+is tight.
+
+Thus the two disjoint ordered pairs
+
+`(a_s,a_{s-1})` and `(a_1,a_0)`
+
+occur in retained tight ordered triples with witness vertices attached on opposite ends. The four vertices of these ordered pairs are distinct because `|A|>=4`.
+
+This is exactly the local four-vertex input needed by the later continuation machinery. We also retain one ordinary consecutive tight ordered triple of `A`.
+
+### 2.3 The case `|A|=3`
+
+Write
+
+`A=(a_0,a_1,a_2)`.
+
+Delete `a_1`. The inherited paths
+
+`(a_0)|(a_2)|B|C`
+
+form a four-path cover of `H-a_1`.
+
+Minimality gives a path cover of `H-a_1` by at most two paths. It cannot be Hamiltonian: a Hamilton path of `H-a_1` together with the singleton `(a_1)` would two-cover `H`. Hence `H-a_1` has an exact two-path cover.
+
+Some selected edge `xy` of that exact cover joins two distinct components of the inherited four-path cover; otherwise two connected paths could not cover all four nonempty components. Boundary antisymmetry on `a_1,x,y` makes exactly one of
+
+`(a_1,x,y)` and `(y,x,a_1)`
+
+tight.
+
+Thus the deleted singleton and the selected ordered pair are linked by an explicit tight ordered triple, again giving the local input required by the continuation problem.
+
+### Direct-entrance conclusion
+
+Every smallest counterexample therefore reaches, without any Boolean-cube argument, a spanning three-path cover with a distinguished path that admits no endpoint extension, together with one of the two explicit local configurations above.
+
+This is the shortest known route to the present local frontier.
+
+## 3. Why retain the Boolean cube at all?
+
+The longer construction remains potentially useful because it carries additional information: it begins from a finite family of specific maximum spanning three-path forests and yields a **strict rank decrease relative to that family**.
+
+That rank decrease is not yet known to iterate. It should therefore be viewed as extra structure, not as the reason we can reach the nonextendable configuration.
+
+The rest of this document reconstructs that additional argument.
+
+## 4. Three same-oriented internal vertices and the Boolean cube
+
+Choose distinct `a,c` and an exact two-path cover
 
 `H-{a,c}=U|V`.
 
-Both rails are nontrivial. At most four vertices are rail endpoints, so because `|H|>10` there are at least five internal vertices in this cover.
+Both paths are nontrivial. At most four vertices are endpoints of these two paths, so `|H|>10` leaves at least five internal vertices.
 
-For every internal vertex `x`, exactly one of
+For each internal vertex `x`, exactly one of
 
 `(a,x,c)` and `(c,x,a)`
 
-is tight. Hence three internal vertices `p,q,r` have the same orientation. After interchanging `a,c` if needed, assume
+is tight. Hence there are three internal vertices `p,q,r` with the same orientation. After interchanging `a,c` if necessary, assume
 
-`(a,p,c), (a,q,c), (a,r,c)`
+`(a,p,c)`, `(a,q,c)`, `(a,r,c)`
 
-are all tight.
+are tight.
 
 Put
 
-`P={p,q,r}`
+`P={p,q,r}`,  
+`K={a,c,p,q,r}`,  
+`W=V(H)-K`.
 
-and
+A direct boundary-antisymmetry argument gives a Hamilton tight path on `K`. Every set
 
-`K={a,c,p,q,r}`.
+`K-J={a,c}∪(P-J)`, `J⊆P`,
 
-A direct boundary-antisymmetry argument shows that `K` has a Hamilton tight `P5`. The same is true for every smaller complementary anchor/spoke support `K-J`, `J⊆P`: the support of order three is one of the source trimers, the support of order four has a Hamilton `P4`, and the full five-set has a Hamilton `P5`.
+also has a Hamilton tight path.
 
-Now set
-
-`W=V(H)-K`
-
-and for every `J⊆P` define the cube fiber
+For each `J⊆P`, define
 
 `G_J=H[W∪J]`.
 
-Because `K-J` has a tight Hamilton path, `G_J` cannot be Hamiltonian: otherwise the two complementary Hamilton paths would form a spanning two-cover of `H`. Since `G_J` is proper, minimality gives
+If some `G_J` were Hamiltonian, its Hamilton path together with a Hamilton path on `K-J` would two-cover `H`. Since `G_J` is proper, minimality therefore gives
 
 `pc(G_J)=2`
 
-for all eight fibers.
+for all eight choices of `J`.
 
-Thus we have a complete Boolean cube of exact two-cover residues tied to one retained three-spoke source configuration.
+An exact two-path cover of `G_J`, together with a Hamilton path on `K-J`, is a spanning three-path cover of `H`. Because `pc(H)=3`, such a cover has the minimum possible number of path components and exactly `|V(H)|-3` selected edges. Equivalently, it is a maximum spanning forest among spanning subgraphs whose components are tight paths. This verifies the exact hypothesis required by the rank argument in Section 6.
 
-## 3. Comparing the cube
+## 5. Cube comparison lemma
 
-The cube comparison is best understood by deleting the roots `J` from a chosen exact two-cover of `G_J` and observing what remains on the common core `W`.
+The downstream argument does not need five separate branches. The finite cube comparison has one usable conclusion.
 
-The surviving maximal `W`-segments are the blocks of that cover.
+### Lemma 5.1
 
-### 3.1 Too many blocks
+From the cube above, one can select a comparison that produces either
 
-If at least three `W`-blocks remain, then the same residue `W` is simultaneously displayed as a literal cover by at least three inherited tight paths and, from the bottom cube fiber, as an exact two-cover.
+1. a proper tight path in `H`; or
+2. a proper tight cycle together with a specified edge at which to open it into a proper tight path,
 
-This is the first certificate: a literal component drop on one common residue.
+while retaining the exact cube covers from which the comparison was made.
 
-### 3.2 Two blocks: compare the singleton rows
+### Proof
 
-Outside the component-drop case, every trim leaves exactly two `W`-blocks.
+Take an exact two-path cover of `G_J` for some nonempty `J`, delete the vertices of `J`, and split the two paths at the deletions. The maximal nonempty subpaths lying in `W` will be called the surviving `W`-subpaths.
 
-For a singleton fiber `J={s}`, the root `s` can attach only as an endpoint. Deleting it leaves a literal exact two-cover `F_s` of `W`.
+There are at least two such subpaths. If there were only one, it would be a Hamilton path of `W`, which together with a Hamilton path on `K` would two-cover `H`.
+
+#### Case 1: at least three surviving `W`-subpaths
+
+Compare the inherited cover of `W` by at least three paths with an exact two-path cover of `W`. Some selected edge `xy` of the latter joins two distinct inherited components.
+
+If one of those two inherited components is nontrivial, choose an endpoint of `xy`, say `x`, in that component and let `h` be its neighbor along the inherited path. Boundary antisymmetry on `h,x,y` gives a proper tight ordered triple in one of the two possible directions.
+
+If both crossed inherited components are singletons, at least one has a neighbor in `J` in the original cover of `G_J`. Otherwise both singleton components would already be whole path components before deleting `J`, leaving no place for the vertices of `J` and the third surviving `W`-subpath. Use that neighbor in `J` in place of `h`. Boundary antisymmetry again gives a proper tight ordered triple.
+
+Thus the component-drop situation always produces the required proper path.
+
+#### Case 2: exactly two surviving `W`-subpaths
+
+For a singleton set `J={s}`, the vertex `s` cannot be an entire singleton path: deleting it would leave a Hamilton path of `W`, contradicting `pc(W)=2`. Hence `s` is an endpoint attached to one of the two surviving `W`-paths, and deleting `s` leaves an exact two-path cover `F_s` of `W`.
 
 Compare `F_p,F_q,F_r`.
 
-If two have different unordered support bipartitions of `W`, we obtain the second certificate: two exact covers of one residue with different support bipartitions.
+If two of them induce different unordered bipartitions of `W` into path supports, some selected edge of one cover crosses the two path supports of the other. Since
 
-If the support bipartitions agree but a common support carries different literal Hamilton orders, we obtain the third certificate: same support but different literal rail orders. Comparing the two orders produces a selected reversal, a reverse tight trimer, or a proper tight cycle.
+`|W|=|H|-5 >= 6`,
 
-Outside these two branches, after exchanging whole rails if necessary, all three singleton rows trim to the same literal exact cover
+those two crossed path supports cannot both be singletons. Choose a crossing endpoint in a nontrivial path support and its neighbor on that path. Boundary antisymmetry gives a proper tight ordered triple.
 
-`F=A|B`.
+If the support bipartitions agree but one common support is traversed in two different Hamilton orders, compare the two orders. A first inversion yields either a reversed selected edge, a reverse tight ordered triple, or a vertex-simple proper tight cycle. In the cyclic case, specify any edge at which the cycle is to be opened.
 
-Each spoke `s` has a definite endpoint port `e_s` of `F` to which it attaches.
+We may therefore assume that, after exchanging the two paths when necessary,
 
-### 3.3 Compare the two-root rows
+`F_p=F_q=F_r=F=A|B`
 
-Now take a rank-two fiber `W∪{s,t}`.
+as ordered path covers.
 
-If one root is internal on its rail, deleting it splits that rail into two nonempty pieces and immediately gives the component-drop certificate on the corresponding singleton residue. Thus, outside the already-declared branch, both roots are endpoints.
+For each `s∈P`, let `e_s` be the endpoint of `F` to which `s` is attached in the corresponding singleton extension.
 
-Comparing their one-root trims with the retained singleton rows shows that, outside support or order disagreement, the two-root cover is literally obtained from `F` by the two certified endpoint attachments
+Now consider an exact two-path cover `T_{st}` of `W∪{s,t}`.
+
+If `s` or `t` is internal on its path, deleting that vertex splits one path into two nonempty subpaths and gives a three-path cover of the corresponding singleton set. Compare it with the exact two-path cover already available there. A crossing selected edge again yields a proper tight path. If a crossed piece is nontrivial, use an inherited neighboring edge. If both crossed pieces are singletons, they are the two sides of a length-three path through the deleted internal vertex, and one of the two original edges through that vertex supplies the needed adjacent edge. Boundary antisymmetry then gives the proper three-vertex path.
+
+Thus we may assume both `s,t` are endpoints.
+
+Neither can be an entire singleton path. If, for example, `(s)` were one whole component of `T_{st}`, deleting `s` would leave a Hamilton path on `W∪{t}`, contradicting `pc(G_{\{t\}})=2`.
+
+Hence deleting either endpoint leaves an exact two-path cover. Comparing these one-vertex deletions with the already fixed singleton extensions produces either one of the support/order discrepancies above or the literal equalities
+
+`T_{st}-s = F_t`,  
+`T_{st}-t = F_s`.
+
+In the latter case the attachments at `s,t` are exactly
 
 `s e_s` and `t e_t`.
 
-Two roots cannot share a nontrivial endpoint of `F`, since that endpoint would then have selected degree three. If they share a port at all, that port must therefore be an isolated singleton rail `(v)` of `F`, and their component is the physical tight trimer on `{s,v,t}`.
+There can be no additional edge joining `s` to `t` or any hidden extra splice. A two-path forest on `|W|+2` vertices has `|W|` selected edges, whereas `F` has `|W|-2` selected edges. The two displayed attachments already account for the entire difference of two edges. Therefore
 
-### 3.4 Install all three roots
+`E(T_{st})=E(F)∪{s e_s,t e_t}`.
 
-Install all three certified attachments simultaneously.
+Two of `p,q,r` cannot attach to the same endpoint of a nontrivial path of `F`, because that endpoint would then have degree three in one of the two-vertex extensions. If two added vertices share an attachment point, that point must be an isolated singleton component `(v)` of `F`, and the corresponding three vertices form a tight path.
 
-Unless all three roots attach to the same isolated singleton `v`, this produces an exact top-fiber two-cover in which at least one of `p,q,r` is a rail endpoint. But the retained original top cover `U|V` had all three spokes internal. Hence we obtain the fourth certificate: two exact top-fiber covers with an endpoint/internal discrepancy at a spoke.
+Now install the three verified attachments simultaneously.
 
-The only remaining possibility is the synchronized form
+Unless all three added vertices attach to the same isolated singleton `v`, this gives an exact two-path cover of `G_P` in which at least one of `p,q,r` is an endpoint. The original cover `U|V` of `G_P=H-{a,c}` had all three internal. Comparing these two exact covers of the same residue returns to one of the support/order comparison arguments already handled above and produces a proper path or specified cycle.
 
-`F=(v)|B`,
+The only remaining case is
 
-with every singleton row equal to a dimer on `{v,s}` plus `B`, and every two-root row equal to a tight trimer on `{s,v,t}` plus `B`.
+`F=(v)|B`
 
-Moreover the four-set
+with every one-vertex extension using the edge `vs` and every two-vertex extension using the tight three-vertex path on `{s,v,t}`. In addition, `{v,p,q,r}` has no Hamilton tight four-vertex path, because such a path together with `B` would produce the preceding endpoint/internal discrepancy.
 
-`{v,p,q,r}`
+Fix `s∈P` and let `{t,u}=P-{s}`. Delete the internal vertex `s` from the original top cover `U|V`. This gives a three-path cover of the same residue covered exactly by the two paths consisting of the tight path on `{t,v,u}` and `B`. Comparing the three-path cover with that exact two-path cover yields a crossing. If a crossed piece is nontrivial, use its inherited neighboring edge. If the two crossed pieces are the singleton sides created by deleting `s`, then the original path through `s` had order three and one of its two edges through `s` supplies the needed adjacent edge. Boundary antisymmetry again produces a proper tight path.
 
-has no Hamilton tight `P4`; otherwise that `P4` together with `B` would give another top-fiber exact two-cover with a spoke endpoint, returning to the previous discrepancy case.
+Thus every outcome of the finite cube comparison yields the conclusion of the lemma. ∎
 
-This is the fifth and final cube certificate.
-
-The classification is exhaustive. Starting from the three-spoke cube, one must obtain exactly one of:
-
-1. a common-residue component drop;
-2. same-residue support disagreement;
-3. same-support literal order disagreement;
-4. a top endpoint/internal discrepancy; or
-5. the synchronized singleton-star configuration.
-
-## 4. Every cube leaf produces a source-visible proper path or cycle
-
-The point of the classification is not the labels themselves. What matters is that every leaf can be turned, before any payment or replay, into a graph-intrinsic proper tight path or a proper tight cycle with a named break, while retaining the source packet that created it.
-
-For the first four leaves this is direct.
-
-- In a component-drop comparison, an edge of an exact two-cover must cross two components of the inherited multi-path cover. Combining that selected crossing with an inherited neighboring edge and applying boundary antisymmetry gives a proper tight trimer.
-- Under support disagreement, a selected edge of one exact cover crosses the support components of the other. Again, an inherited neighbor plus the crossing gives a source-visible proper tight trimer.
-- Under literal order disagreement on one support, compare the two Hamilton orders. A first inversion yields either a reversed selected edge, a reverse tight trimer, or a vertex-simple proper tight cycle.
-- Under top endpoint/internal discrepancy, the two nonidentical exact covers of the same residue feed the same exact-cover comparison mechanism.
-
-The synchronized singleton-star leaf also enters the same downstream theorem. Fix a source spoke `s`. Puncture `s` from the retained top cover and compare the resulting three-component inherited cover with the complementary rank-two fiber. A crossing again emits a source-labelled proper tight path. This is the content of legacy PASS R2153.
-
-Thus **all five cube leaves have the same usable output**:
-
-> either `H` is already two-covered, or the retained phase-one source packet emits an actual proper tight path `K`, or a proper tight cycle with a named break producing such a path `K`.
-
-That is the only information needed for the next stage.
-
-## 5. Currentize the proper path
+## 6. Strict rank decrease relative to the initial family
 
 Let
 
 `F_1,...,F_r`
 
-be the finite retained packet of phase-one source checkpoints that participated in the comparison. In each `F_i`, mark a longest rail of order `M_i`, and define the coarse phase-one rank
+be the finite family of maximum spanning three-path forests participating in the comparison of Section 5. In each `F_i`, choose a longest path of order `M_i` and set
 
-`rho(F_i)=(1,n-M_i)`,
-
-where `n=|H|`.
+`rho(F_i)=(1,n-M_i)`,  
+`n=|V(H)|`.
 
 Let
 
 `M_*=max_i M_i`.
 
-Take the emitted proper path `K`. If it came from a cycle, cut at the certified break.
+By Lemma 5.1, the comparison produces a proper tight path `Q`, possibly after opening a specified proper tight cycle.
 
-If `K` spans `H`, we are done. Otherwise, by minimality, `H-V(K)` has a path cover by at most two paths. It cannot be Hamiltonian, since a Hamilton path of the complement together with `K` would already two-cover `H`. Hence
+If `Q` spans `H`, the theorem is proved. Otherwise `H-V(Q)` is proper. Minimality gives a cover by at most two tight paths, and it cannot be Hamiltonian because a Hamilton path of the complement together with `Q` would two-cover `H`. Hence
 
-`H-V(K)=U'|V'`
+`H-V(Q)=R|S`
 
-is an exact two-cover, and
+is an exact two-path cover.
 
-`K|U'|V'`
+Thus
 
-is a spanning three-path forest retaining the original source ancestry.
+`Q|R|S`
 
-Mark a longest rail `A` of this forest and write `L=|A|`.
+is a spanning three-path forest. Choose a longest path `A` in it and let `L=|A|`.
 
-If
+If `L>M_*`, then
 
-`L>M_*`,
+`(1,n-L)<(1,n-M_*)<=rho(F_i)`
 
-then
+for every `i`. This is already the desired strict decrease relative to the entire initial family.
 
-`(1,n-L)<(1,n-M_*)≤rho(F_i)`
+Assume therefore `L<=M_*`.
 
-for every participating source. We have already descended strictly below the entire source packet.
+### 6.1 Endpoint-transfer process
 
-So the only interesting case is `L≤M_*`.
-
-## 6. Grow the marked rail
-
-Write the current forest as
+Write the current three paths as
 
 `A|B|C`.
 
-Try to transfer an endpoint of either donor rail into either end of `A`.
+At either end of `A`, test whether an endpoint of `B` or `C` can be moved into `A`.
 
-At the right end, if the relevant joining turn is tight and the donor is a singleton, the two rails merge and `H` is two-covered. If the donor is nontrivial, a second turn either concatenates the whole donor to `A`, again giving a two-cover, or allows one donor endpoint to be transferred to `A`. In that transfer, the marked rail grows by exactly one while the donor remains a path.
+For example, write `A=(a_0,...,a_s)` and `X=(x_0,...,x_m)`. At the right end, test `(a_{s-1},a_s,x_0)`.
 
-The left end is dual.
+- If it is tight and `X` is a singleton, `A` and `X` merge, giving a spanning two-path cover with the third path.
+- If it is tight and `X` is nontrivial, test `(a_s,x_0,x_1)`. If that is tight, concatenate all of `X` to `A` and again obtain a two-path cover. If it is not tight, delete the edge `x_0x_1` and add `a_sx_0`; the distinguished path grows by one vertex.
 
-Perform any available growth greedily. Every successful step strictly increases `|A|`. Stop if:
+The left end is symmetric.
 
-1. a spanning two-cover appears;
-2. `|A|` first reaches `M_*+1`; or
-3. no inward endpoint transfer is possible at either end.
+Perform any available endpoint transfer. Each successful transfer increases `|A|` by exactly one. The process therefore stops in finite time in one of three ways:
 
-In the second case the phase-one rank is at most
+1. a spanning two-path cover is obtained;
+2. `|A|` first reaches `M_*+1`;
+3. no endpoint transfer is available at either end.
+
+Case 2 gives rank at most
 
 `(1,n-M_*-1)`,
 
-strictly below every source rank.
+strictly below every `rho(F_i)`.
 
-It remains to understand the no-slide terminal wall.
+Case 3 is exactly the nonextendable three-path configuration described directly in Section 2.
 
-## 7. The terminal wall creates a certified phase-zero birth
+### 6.2 Explicit local data in the nonextendable case
 
-At a wall, failure of rightward growth gives a reverse terminal dimer at the right end of `A`, certified by a donor source. Failure of leftward growth gives a reverse initial dimer at the left end, certified by a donor terminal vertex. The witnesses have opposite endpoint polarities.
+The same two size cases from Section 2 apply.
 
-A genuine wall has `|A|≥3`; order two would itself force a two-cover.
+If `|A|>=4`, failure of endpoint transfers gives the two disjoint ordered pairs at the ends of `A` together with tight ordered triples witnessing extension on opposite ends.
 
-### 7.1 Marked rail of order at least four
+If `|A|=3`, delete the middle vertex. As in Section 2.3, the remaining graph has an exact two-path cover: minimality gives at most two paths, and Hamiltonicity would combine with the deleted singleton to two-cover `H`. A selected edge of the exact cover crosses two components of the inherited four-path cover, and boundary antisymmetry with the deleted middle vertex gives the required tight ordered triple.
 
-If `|A|≥4`, the reverse boundary dimers at the two ends of `A` are physically disjoint. Their donor witnesses certify opposite polarities. Hence the wall contains a concrete opposite-sign `2+2` birth.
+For bookkeeping only, assign every configuration of this nonextendable type a rank whose first coordinate is `0`. Then it is strictly below every initial rank `(1,n-M_i)`.
 
-Retain that birth, its witnesses, the no-slide forest, and one actual tight turn `J` of `A`.
+We have therefore proved:
 
-### 7.2 Marked rail of order three
+### Rank-decrease theorem
 
-If
+If the finite initial family of maximum spanning three-path forests emits a proper tight path or a specified proper tight cycle, there is a finite continuation to a spanning two-path cover or to a configuration with rank strictly below every member of that initial family.
 
-`A=(a_0,a_1,a_2)`,
+The decrease is **relative to this initial family**. The theorem does not say that the same argument may be restarted from the final configuration.
 
-delete the hinge `a_1`. The residue inherits the literal four-cover
+## 7. What the Boolean cube adds—and what it does not
 
-`{a_0}|{a_2}|B|C`.
+The direct longest-path construction of Section 2 already reaches the same nonextendable three-path configuration. Therefore the Boolean cube is not needed merely to reach the current local frontier.
 
-Minimality gives an exact two-cover of the residue. Some selected edge of that two-cover must cross two components of the inherited four-cover. Boundary antisymmetry with the deleted hinge then gives a certified signed dimer of one polarity against the hinge singleton of the opposite polarity.
+Its extra contribution is the strict decrease from the ranks
 
-Thus the order-three wall yields a concrete opposite-sign `1+2` birth, again with the no-slide forest, the crossing data, and the fixed tight turn
+`(1,n-M_i)`
 
-`J=(a_0,a_1,a_2)`
+attached to the particular maximum three-path forests used in the cube comparison.
 
-retained.
+At present, no accepted theorem uses that numerical decrease to construct a recursive global order after the nonextendable configuration has been reached. Thus the extra rank information is potentially valuable but not yet load-bearing for closure.
 
-### 7.3 The phase drop
+## 8. Exact unresolved statement
 
-Define this certified terminal-wall state to be the phase-zero entrance. Its coarse rank has leading coordinate `0`, whereas every source checkpoint had leading coordinate `1`.
+The remaining problem on this line is:
 
-Therefore
+> Starting from the nonextendable three-path configuration of Section 2, together with its explicit local ordered-pair/triple data, prove a continuation that either produces a spanning two-path cover or reaches a strictly smaller state in a genuinely well-founded global order.
 
-`(0,...)<(1,n-M_i)`
+The rank theorem of Section 6 gives one strict decrease from its own initial family but does not provide such a recursive rule.
 
-for every source `F_i`.
+The invalidated E9007 compositions and the flagged E9006 composition do not supply the missing continuation.
 
-We have proved the first-source descent theorem:
+A particularly promising synthesis with the fixed-pair document is the following **unproved strategy**:
 
-> from a retained phase-one source packet that emits a source-visible proper path or certified cycle break, there is a finite continuation to TWO-COVER or to a retained checkpoint whose phased rank is strictly below every participating source.
+> Construct a recursive order in which the generic continuation is strictly decreasing, and show that equality can occur only when the construction stays on one of the two old two-vertex supports through a previously reduced middle vertex. Then use the fixed-pair reduction history to eliminate that equality case.
 
-The strictness is genuine. It comes either from increasing the marked rail beyond the old maximum `M_*`, or from the certified transition from phase one to phase zero.
+This is a research direction, not a theorem.
 
-## 8. Why this does not yet finish the theorem
+## 9. Provenance and integrity
 
-The theorem above is intentionally source-relative.
+The legacy sources for the mathematics retained here are:
 
-It does **not** say that any proper path anywhere in `H` may restart the argument. It does not say that an arbitrary later opposite-sign pair automatically gives a new phase-zero descent. Most importantly, it is not a replay rule from a checkpoint already in phase zero.
+- small-order theorem: E8997 / R2152;
+- three-vertex cube construction and comparison: E8998 / R2143;
+- cube-to-proper-path/cycle reduction: R2136 and R2153;
+- rank-decrease theorem and direct longest-path entrance: E9003 / R2147.
 
-So after the first strict descent, the proof still needs a recursive continuation theorem.
-
-A historical attempt routed this continuation through the old E9006 payment layer. That proof carried an integrity warning at the migration baseline: it used signed interval rebirth as though cut memory alone created the current balanced pair needed for payment. That inference is not valid. E9006 must therefore not be used as the missing recursive bridge in its published form.
-
-The accepted payment technology that any repaired continuation may use is narrower and more explicit: genuine marker/deletion events, signed cut memory only after those events, actual reformation of a current opposite-sign pair, and the lawful fixed-singleton descent machinery represented in the legacy chain R175/R427/R428, together with endpoint selection through R224/R433 when needed.
-
-## 9. Exact unresolved step
-
-Everything through the first strict phased-rank descent is supported by independently passed A7C3 mathematics. The remaining obligation is:
-
-> **Recursive phase-zero continuation.** Starting from the certified terminal-wall phase-zero entrance, prove a lawful continuation that either produces TWO-COVER or reaches a genuinely smaller state in a well-founded global order, without pretending that the first-source descent theorem can simply be replayed.
-
-There are at least two plausible forms such a theorem could take.
-
-1. Repair the old phase-zero payment/continuation route using only the accepted marker, reformation, and fixed-singleton payment machinery.
-2. Relate the phase-zero replay obstruction directly to the fixed-pair spent-history branch, showing that a would-be replay at phase zero necessarily consumes history in a way that cannot occur indefinitely.
-
-The second possibility is especially attractive because the two active branches fail for complementary reasons: this branch has a strict rank but lacks a recursive replay theorem, while the fixed-pair branch has strong replay-history control but lacks a global monotone.
-
-## 10. Provenance and integrity notes
-
-The mathematical ingredients used above descend from the following legacy results.
-
-- Small-order gate: E8997 / terminal PASS R2152.
-- Three-spoke Boolean-cube classifier: E8998 / terminal PASS composition R2143.
-- Nonsynchronized cube leaves entering first-source descent: PASS R2136 and the exact path/cycle constructors incorporated into E8998/E9003.
-- Synchronized singleton-star entrance: PASS R2153.
-- First-source prepayment phase descent: E9003 / whole-document PASS recomposition R2147.
-
-The legacy chain `E9003 -> E9006 -> E9007` is **not** treated here as a certified continuation. E9006 is only a historical repair target until its payment argument is replaced or independently revalidated. This branch therefore ends honestly at the first certified phase-zero entrance rather than hiding the missing recursive step behind an Engine edge.
+The old chain through E9006 is not used. The invalidated R2225 and R2228 compositions are not used.
