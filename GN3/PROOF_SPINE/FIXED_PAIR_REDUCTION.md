@@ -15,15 +15,21 @@ For `x∈Y`, write
 
 Thus `L_x` and `R_x` are two-vertex tight paths, and the corresponding tight ordered triple through `a,c` extends each of them at the end containing `x`.
 
+A **path system** is a finite family of pairwise vertex-disjoint tight paths. If `D=(u,v)` is a two-vertex path, a vertex `w∉{u,v}` is a **left extension** of `D` when `(w,u,v)` is tight and a **right extension** when `(u,v,w)` is tight.
+
 ## 1. Two local lemmas
 
 ### Lemma 1.1 — prescribed endpoints for two disjoint two-vertex paths
 
-Let `D_1,D_2` be vertex-disjoint two-vertex tight paths whose specified end extensions have opposite orientation. For arbitrary prescribed vertices
+Let `D_1,D_2` be vertex-disjoint two-vertex tight paths such that one has a specified left extension and the other a specified right extension. For arbitrary prescribed vertices
 
 `x∈V(D_1)`, `y∈V(D_2)`,
 
-there is a finite sequence of path systems ending either in a spanning two-path cover of `H` or in a path system whose two distinguished paths are the singletons `(x)` and `(y)`.
+there is a finite sequence of path systems
+
+`Σ=(\mathcal P_0,...,\mathcal P_m)`
+
+ending either in a spanning two-path cover of `H` or in a path system `\mathcal P_m` containing the singleton paths `(x)` and `(y)` as its two distinguished paths.
 
 ### Lemma 1.2 — contact with an end-extended path
 
@@ -78,32 +84,35 @@ Suppose instead that `v_0` is the first vertex of `Q`. If `Q=(v_0)`, the path `(
 
 ### Lemma 2.1
 
-Let `s,t∈X` be distinct. Then there is a finite sequence `Σ_{s,t}` of path systems such that either `H` acquires a spanning two-path cover or the last distinguished paths are `(a)` and `(c)`, and within that sequence Lemma 1.2 yields the singleton paths `(s)` from `L_s=(a,s)` and `(t)` from `R_t=(t,c)`.
+Let `s,t∈X` be distinct. Then there is a finite sequence
+
+`Σ_{s,t}=(\mathcal P_0,...,\mathcal P_m)`
+
+such that either some `\mathcal P_i` is a spanning two-path cover of `H`, or `\mathcal P_m` contains the singleton paths `(a)` and `(c)` as its two distinguished paths and, for some indices of the same sequence, Lemma 1.2 applied to `L_s=(a,s)` with `(a)` gives `(s)`, while Lemma 1.2 applied to `R_t=(t,c)` with `(c)` gives `(t)`.
 
 The same conclusion holds with `s,t` interchanged. The corresponding statement for two vertices of `Y` is obtained by interchanging `a,c`.
 
 ### Proof
 
-The paths `L_s=(a,s)` and `R_t=(t,c)` are disjoint. The triples `(a,s,c)` and `(a,t,c)` extend them at opposite ends. Apply Lemma 1.1 with prescribed endpoints `a∈L_s` and `c∈R_t`.
+The paths `L_s=(a,s)` and `R_t=(t,c)` are disjoint. The triples `(a,s,c)` and `(a,t,c)` supply a right extension of `L_s` and a left extension of `R_t`. Apply Lemma 1.1 with prescribed endpoints `a∈L_s` and `c∈R_t`.
 
-If the first outcome of Lemma 1.1 occurs, `H` has a spanning two-path cover. Otherwise the terminal distinguished paths are `(a)` and `(c)`.
+If a spanning two-path cover occurs, stop. Otherwise the last path system contains `(a)` and `(c)`.
 
-Apply the reversed form of Lemma 1.2 to `L_s=(a,s)` with the singleton path `(a)`. The end protected by the tight triple `(a,s,c)` is `s`, while `(a)` meets `L_s` only at the other end. Hence the remaining nonempty subpath is `(s)`.
-
-Apply the corresponding form of Lemma 1.2 to `R_t=(t,c)` with `(c)`. The remaining nonempty subpath is `(t)`.
+Apply the reversed form of Lemma 1.2 to `L_s=(a,s)` with the singleton `(a)`. The protected end is `s`, so the remaining nonempty subpath is `(s)`. Apply the corresponding form to `R_t=(t,c)` with `(c)`; the remaining nonempty subpath is `(t)`.
 
 Interchanging `s,t` gives the second sequence. The case `s,t∈Y` is symmetric. ∎
 
 ## 3. The set `C_{a,c}`
 
-Concatenate finitely many sequences of Lemma 2.1, always choosing the branch ending with the singleton pair `(a),(c)` unless a spanning two-path cover has already appeared. For such a concatenated sequence `Σ`, define `C_{a,c}(Σ)` to be the set of vertices `x∈V(H)-{a,c}` for which both of the following applications of Lemma 1.2 occur in `Σ`:
+Concatenate finitely many sequences of Lemma 2.1, always choosing the last path system containing `(a)` and `(c)` unless a spanning two-path cover has already appeared. Let
 
-- the singleton at the outer vertex of `L_x` leaves the one-vertex path `(x)`;
-- the singleton at the outer vertex of `R_x` leaves the one-vertex path `(x)`.
+`Σ=(\mathcal P_0,...,\mathcal P_N)`
+
+be the resulting sequence. Define `C_{a,c}(Σ)` to be the set of vertices `x∈V(H)-{a,c}` for which there are indices `i,j≤N` such that Lemma 1.2, applied at `\mathcal P_i`, leaves `(x)` from `L_x`, and applied at `\mathcal P_j`, leaves `(x)` from `R_x`.
 
 ### Theorem 3.1
 
-There is a finite sequence `Σ` such that either `H` has a spanning two-path cover or
+There is a finite sequence `Σ` such that either some member of `Σ` is a spanning two-path cover of `H` or
 
 `|V(H)-({a,c}∪C_{a,c}(Σ))|≤1`.
 
@@ -119,7 +128,11 @@ both classes cannot have order at most one. Hence at most one vertex outside `{a
 
 ### Corollary 3.2
 
-Let `D_1,D_2` be vertex-disjoint two-vertex paths on four distinct vertices appearing after the sequence `Σ` of Theorem 3.1. Then at least one of the four vertices belongs to `C_{a,c}(Σ)`.
+Let
+
+`Σ'=(\mathcal P_0,...,\mathcal P_N,...,\mathcal P_M)`
+
+extend the sequence `Σ` of Theorem 3.1. If some `\mathcal P_k`, `k>N`, contains two vertex-disjoint two-vertex paths `D_1,D_2` on four distinct vertices, then at least one of those four vertices belongs to `C_{a,c}(Σ)`.
 
 ### Proof
 
@@ -129,13 +142,13 @@ The complement of `C_{a,c}(Σ)` is contained in `{a,c}` together with at most on
 
 ### Proposition 4.1
 
-Let `s∈C_{a,c}(Σ)∩X`, and let `Q=(s,u)` or `(u,s)` be a later two-vertex tight path with
+Let `Σ'` extend `Σ` as in Corollary 3.2. Suppose some member of `Σ'` contains a two-vertex tight path
 
-`u∉{a,c}`.
+`Q=(s,u)` or `Q=(u,s)`
 
-Then Lemma 1.2, applied to `Q` and one of the fixed paths `L_s=(a,s)` or `R_s=(s,c)`, gives at least one of the following:
+with `s∈C_{a,c}(Σ)∩X` and `u∉{a,c}`. Then Lemma 1.2, applied to `Q` and one of the fixed paths `L_s=(a,s)` or `R_s=(s,c)`, gives at least one of the following:
 
-1. a tight path properly containing one of those two paths;
+1. a tight path properly containing one of `L_s,R_s`;
 2. a tight path properly containing `Q`;
 3. a vertex-simple proper tight cycle;
 4. a reversed tight ordered triple containing `u`.
@@ -146,7 +159,7 @@ Consequently the only two-vertex supports through `s` not covered by this conclu
 
 ### Proof
 
-If `Q` has second endpoint outside `{a,c}`, then `Q` is not equal to either `L_s` or `R_s`. Since `s∈C_{a,c}(Σ)`, both endpoint contacts at `s` have occurred in `Σ`, and the fixed tight triple `(a,s,c)` supplies the required end extension for both `L_s` and `R_s`. Apply Lemma 1.2 at `s`. The exceptional singleton case is impossible because `Q` has two vertices. Every nonexceptional outcome listed in Lemma 1.2 contains the new endpoint `u` either in the extended path, the cycle, or the reversed ordered triple. ∎
+Since `u∉{a,c}`, the path `Q` is neither `L_s` nor `R_s`. By the definition of `C_{a,c}(Σ)`, both applications of Lemma 1.2 at `s` occur in `Σ`; the fixed tight triple `(a,s,c)` supplies the required end extensions of `L_s` and `R_s`. Apply Lemma 1.2 to `Q` at `s`. The exceptional singleton case is impossible because `Q` has two vertices. Every remaining outcome contains `u` in the extended path, cycle, or reversed ordered triple. ∎
 
 ## 5. Four vertices of one orientation
 
