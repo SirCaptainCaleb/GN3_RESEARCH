@@ -2,7 +2,7 @@
 
 ## 1. Definitions and minimal counterexample
 
-Let `H` be a finite Strong Level-(1) boundary tournament. For distinct vertices `x,y,z`, call the ordered triple `(x,y,z)` **tight** when it is allowed by the boundary relation. Boundary antisymmetry says that exactly one of
+Let `H` be a finite boundary tournament. For distinct vertices `x,y,z`, call the ordered triple `(x,y,z)` **tight** when it is allowed by the boundary relation. Boundary antisymmetry says that exactly one of
 
 `(x,y,z)`, `(z,y,x)`
 
