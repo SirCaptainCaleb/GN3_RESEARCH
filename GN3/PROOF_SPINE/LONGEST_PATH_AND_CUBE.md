@@ -2,21 +2,33 @@
 
 Let `H` satisfy the conclusions of `PRELIMINARIES.md`.
 
-## 1. A globally longest path
+## 1. Terminal three-path covers
 
-### Theorem 1.1
+Let
 
-There is a spanning three-path cover
+`A=(a_0,...,a_s)`, `X=(x_0,...,x_m)`
+
+be two members of a spanning three-path cover. If `X` is nontrivial, the endpoint `x_0` is **transferable to the right end of `A`** when
+
+`(a_{s-1},a_s,x_0)`
+
+is tight: replace `A` by `(a_0,...,a_s,x_0)` and replace `X` by `(x_1,...,x_m)`. Define transfer of `x_m` to the left end of `A` symmetrically.
+
+### Lemma 1.1 — terminal three-path lemma
+
+Let
 
 `A|B|C`
 
-with `A` a globally longest tight path and with no endpoint of `B` or `C` transferable to either end of `A`. Moreover `|A|≥3`, and one of the following holds.
+be a spanning three-path cover of `H`. Suppose `A` has maximum order among `A,B,C`, and no endpoint of a nontrivial path among `B,C` is transferable to either end of `A`.
 
-1. `|A|≥4`, and there is a nontrivial path `X=(x_0,...,x_m)` among `B,C` such that
+Then `|A|≥3`, and one of the following holds.
+
+1. `|A|≥4`, and there is a nontrivial path `X=(x_0,...,x_m)` among `B,C` such that, writing `A=(a_0,...,a_s)`,
    
    `(x_0,a_s,a_{s-1})` and `(a_1,a_0,x_m)`
    
-   are tight, where `A=(a_0,...,a_s)`.
+   are tight. The ordered pairs `(a_s,a_{s-1})` and `(a_1,a_0)` are disjoint.
 2. `|A|=3`, say `A=(a_0,a_1,a_2)`, and there is an exact two-path cover of `H-a_1` containing an edge `xy` whose endpoints lie in two distinct members of
    
    `(a_0)|(a_2)|B|C`;
@@ -25,29 +37,31 @@ with `A` a globally longest tight path and with no endpoint of `B` or `C` transf
 
 ### Proof
 
-Choose a globally longest tight path
+If `|A|=1`, then all three paths are singletons, contradicting `|V(H)|>10`.
 
-`A=(a_0,...,a_s)`.
+Suppose `|A|=2`, say `A=(a_0,a_1)`. Since `A` is longest among the three paths, `B` and `C` have order at most two. If one of them is nontrivial, say `X=(x_0,x_1)`, then neither endpoint can be transferred into `A`. Hence
 
-If `A` spans `H`, the theorem follows immediately from `pc(H)=3` only if `H` were already Hamiltonian, which would contradict the choice of `H`; hence `A` is proper. By minimality, `H-V(A)` has a cover by at most two tight paths. It cannot be Hamiltonian, since a Hamilton path of `H-V(A)` together with `A` would form a spanning two-path cover of `H`. Therefore
+`(a_0,a_1,x_0)` and `(x_1,a_0,a_1)`
 
-`H-V(A)=B|C`
+are both not tight. Boundary antisymmetry gives
 
-is an exact two-path cover.
+`(x_0,a_1,a_0)` and `(a_1,a_0,x_1)`
 
-If an endpoint of `B` or `C` could be transferred into either end of `A`, the resulting path would be longer than `A`. If an entire one of `B,C` could be concatenated with `A`, the concatenated path together with the remaining path would form a spanning two-path cover. Thus no such transfer is possible.
-
-If `|A|=1`, every path in the cover has order one, so `|V(H)|=3`, impossible. Suppose `|A|=2`, say `A=(a_0,a_1)`. Every other path has order at most two. If one of them is `(b_0,b_1)`, the failure of the two endpoint extensions implies that
-
-`(b_0,a_1,a_0)` and `(a_1,a_0,b_1)`
-
-are tight, so `(b_0,a_1,a_0,b_1)` is a tight four-vertex path; together with the third path this gives a spanning two-path cover. If both other paths are singletons, those two vertices form a two-vertex tight path, which together with `A` again gives a spanning two-path cover. Hence `|A|≥3`.
+tight, so `(x_0,a_1,a_0,x_1)` is a tight four-vertex path; together with the third path it gives a spanning two-path cover, a contradiction. If both `B,C` are singletons, their two vertices form a tight two-vertex path, which together with `A` again gives a spanning two-path cover. Thus `|A|≥3`.
 
 Assume `|A|≥4`. At least one of `B,C` is nontrivial, since otherwise their two singleton vertices form a tight two-vertex path which, together with `A`, two-covers `H`. Choose a nontrivial path
 
 `X=(x_0,...,x_m)`
 
-among `B,C`. Since `(a_{s-1},a_s,x_0)` is not tight, boundary antisymmetry gives `(x_0,a_s,a_{s-1})` tight. Similarly, since `(x_m,a_0,a_1)` is not tight, `(a_1,a_0,x_m)` is tight. This is outcome 1.
+among `B,C`. Since `x_0` is not transferable to the right end of `A`,
+
+`(a_{s-1},a_s,x_0)`
+
+is not tight, so `(x_0,a_s,a_{s-1})` is tight. Since `x_m` is not transferable to the left end,
+
+`(x_m,a_0,a_1)`
+
+is not tight, so `(a_1,a_0,x_m)` is tight. The two end pairs of `A` are disjoint because `|A|≥4`. This is outcome 1.
 
 Now assume `|A|=3`, so `A=(a_0,a_1,a_2)`. The four paths
 
@@ -55,7 +69,25 @@ Now assume `|A|=3`, so `A=(a_0,a_1,a_2)`. The four paths
 
 cover `H-a_1`. By minimality, `H-a_1` has a cover by at most two tight paths. It cannot be Hamiltonian, since a Hamilton path together with `(a_1)` would two-cover `H`. Thus it has an exact two-path cover `P|Q`.
 
-Some edge of `P|Q` joins two distinct components of `(a_0)|(a_2)|B|C`; otherwise each of `P,Q` would lie in one component of that four-path cover and could not cover all four nonempty components. Let `xy` be such an edge. Boundary antisymmetry makes exactly one of `(a_1,x,y)` and `(y,x,a_1)` tight. ∎
+Some edge of `P|Q` joins two distinct components of `(a_0)|(a_2)|B|C`; otherwise each of `P,Q` would lie in one component of that four-path cover and could not cover all four nonempty components. Let `xy` be such an edge. Boundary antisymmetry makes exactly one of `(a_1,x,y)` and `(y,x,a_1)` tight. This is outcome 2. ∎
+
+### Theorem 1.2 — globally longest path
+
+There is a spanning three-path cover
+
+`A|B|C`
+
+such that `A` is a globally longest tight path and the conclusion of Lemma 1.1 holds.
+
+### Proof
+
+Choose a globally longest tight path `A`. It is proper, since a Hamilton tight path would contradict `pc(H)=3`. By minimality, `H-V(A)` has a cover by at most two tight paths. It cannot be Hamiltonian, since a Hamilton path of `H-V(A)` together with `A` would form a spanning two-path cover of `H`. Hence
+
+`H-V(A)=B|C`
+
+is an exact two-path cover.
+
+The path `A` is longest among `A,B,C`. Any endpoint transfer from `B` or `C` into `A` would produce a tight path longer than `A`, contradicting global maximality. Lemma 1.1 therefore applies. ∎
 
 ## 2. Three internal vertices with the same orientation
 
@@ -99,7 +131,52 @@ The tournament `→_a` cannot be transitive. If `x→_a y→_a z` and `x→_a z`
 
 `p→_a q→_a r→_a p`.
 
-The absence of a mixed chain forces the opposite cyclic orientation for `→_c`. The remaining undetermined turns are the three orientations on the vertex set `{p,q,r}`. There are eight possibilities. In each possibility, take the two candidate five-vertex orders obtained by traversing the `a`-cycle and the `c`-cycle in opposite directions. All consecutive triples in each candidate are then determined except one, and the two undetermined triples are complete reversals. Boundary antisymmetry makes one of them tight. Hence one candidate is a Hamilton tight path on `K`.
+Avoiding the three mixed-chain Hamilton paths forces
+
+`r→_c q`, `p→_c r`, `q→_c p`.
+
+Still assuming that `K` has no Hamilton tight path, inspect the following six words. In each row the first two consecutive triples are already tight, so the third must be non-tight; boundary antisymmetry then gives the displayed reversal.
+
+| word | forced tight triple |
+| --- | --- |
+| `a p c r q` | `(q,r,c)` |
+| `a q c p r` | `(r,p,c)` |
+| `a r c q p` | `(p,q,c)` |
+| `p q a r c` | `(a,q,p)` |
+| `q r a p c` | `(a,r,q)` |
+| `r p a q c` | `(a,p,r)` |
+
+Using these six new tight triples, apply the same argument to another six words:
+
+| word | forced tight triple |
+| --- | --- |
+| `a p r c q` | `(c,r,p)` |
+| `a q p c r` | `(c,p,q)` |
+| `a r q c p` | `(c,q,r)` |
+| `p a q r c` | `(r,q,a)` |
+| `q a r p c` | `(p,r,a)` |
+| `r a p q c` | `(q,p,a)` |
+
+Only the orientations of the three triples on `{p,q,r}` remain to be used. Put
+
+`u=1` iff `(q,p,r)` is tight,  
+`v=1` iff `(p,q,r)` is tight,  
+`w=1` iff `(p,r,q)` is tight.
+
+When one of `u,v,w` is zero, boundary antisymmetry supplies the complete reversal of the corresponding triple. For each of the eight values of `(u,v,w)`, the two candidate words below have every consecutive triple certified except for the displayed pair of complete reversals.
+
+| `(u,v,w)` | first candidate | second candidate | remaining reversal pair |
+| --- | --- | --- | --- |
+| `000` | `a c q r p` | `r p q c a` | `(a,c,q)` / `(q,c,a)` |
+| `100` | `c a r q p` | `q p r a c` | `(c,a,r)` / `(r,a,c)` |
+| `010` | `a c p q r` | `q r p c a` | `(a,c,p)` / `(p,c,a)` |
+| `110` | `a c p q r` | `q r p c a` | `(a,c,p)` / `(p,c,a)` |
+| `001` | `c a p r q` | `r q p a c` | `(c,a,p)` / `(p,a,c)` |
+| `101` | `c a p r q` | `r q p a c` | `(c,a,p)` / `(p,a,c)` |
+| `011` | `a c r p q` | `p q r c a` | `(a,c,r)` / `(r,c,a)` |
+| `111` | `c a q p r` | `p r q a c` | `(c,a,q)` / `(q,a,c)` |
+
+In each row boundary antisymmetry makes exactly one triple in the last column tight. The corresponding candidate word is therefore a Hamilton tight path on `K`, contradicting the assumption. Hence `K` is Hamiltonian.
 
 If `|P-J|=0`, the set `K-J={a,c}` is a two-vertex tight path. If `|P-J|=1`, the required path is `(a,s,c)`. If `P-J={s,t}`, then either `(s,c,t)` is tight and `(a,s,c,t)` is a tight path, or `(t,c,s)` is tight and `(a,t,c,s)` is a tight path. ∎
 
@@ -214,7 +291,7 @@ Suppose a proper tight path `Q` is given. Repeated endpoint transfers yield at l
 
 1. a spanning two-path cover of `H`;
 2. a spanning three-path cover containing a path of order at least `M+1`;
-3. a spanning three-path cover `A|B|C` in which no endpoint of `B` or `C` can be transferred into either end of `A`, and `A` satisfies one of the two local alternatives in Theorem 1.1.
+3. a spanning three-path cover `A|B|C` satisfying the hypotheses, and hence the conclusion, of Lemma 1.1.
 
 ### Proof
 
@@ -224,12 +301,6 @@ Since `Q` is proper, minimality gives a cover of `H-V(Q)` by at most two tight p
 
 Then `Q|R|S` is a spanning three-path cover. Choose a longest path `A` and write the other two paths as `B,C`. If `|A|≥M+1`, outcome 2 holds.
 
-Assume `|A|≤M`. At either end of `A`, test whether an endpoint of `B` or `C` can be moved into `A`. Write
+Assume `|A|≤M`. If a nontrivial path `X=(x_0,...,x_m)` among `B,C` has an endpoint transferable into either end of `A`, perform that transfer. If `X` is a singleton and its vertex can be appended or prepended to `A`, merging it with `A` gives a spanning two-path cover with the third path.
 
-`A=(a_0,...,a_s)`, `X=(x_0,...,x_m)`
-
-for one of `B,C`. At the right end test `(a_{s-1},a_s,x_0)`.
-
-If it is tight and `X` is a singleton, merge `A` and `X`; together with the third path this is a spanning two-path cover. If it is tight and `X` is nontrivial, test `(a_s,x_0,x_1)`. If that triple is tight, concatenate all of `X` to `A`, again obtaining a spanning two-path cover with the third path. If it is not tight, boundary antisymmetry gives `(x_1,x_0,a_s)` tight, and replacing the first edge `x_0x_1` of `X` by `a_sx_0` enlarges `A` by one vertex while leaving the remaining vertices of `X` as a tight path. The left end is symmetric.
-
-Repeat whenever such a transfer is possible. Each nonclosing transfer increases `|A|` by one. Since `|A|≤|V(H)|`, the process terminates: either a two-path cover appears, `|A|` reaches `M+1`, or no transfer remains. In the last case Theorem 1.1 applies to the resulting three-path cover and gives outcome 3. ∎
+Every nonclosing transfer increases `|A|` by one and decreases one of the other two paths by one, so `A` remains longest among the three current paths. Repeat while a transfer is possible. Since `|A|≤|V(H)|`, the process terminates: either a spanning two-path cover appears, `|A|` reaches `M+1`, or no endpoint transfer remains. In the last case `A` is still longest among the three current paths, so Lemma 1.1 applies and gives outcome 3. ∎
