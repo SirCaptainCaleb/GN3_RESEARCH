@@ -4,18 +4,16 @@
 
 This directory contains the current blank-page reconstruction of the active proof of the two-path-cover theorem. The organization is mathematical rather than historical: legacy Engine boundaries are not part of the intended GN3 exposition.
 
-A hypothetical smallest counterexample `H` satisfies `|V(H)|>10` and `pc(H)=3`.
+Read the spine in this order.
 
-The present spine contains two complementary mechanisms arising from closely related local geometry.
+1. [`PRELIMINARIES.md`](PRELIMINARIES.md) gives the common starting argument. From a smallest counterexample it proves `pc(H)=3`, the order bound `|V(H)|>10`, the exact two-path-cover structure after deleting any two vertices, and the orientation-class facts through a fixed pair. In particular, any exact two-path cover of `H-{a,c}` has at least five internal vertices and therefore three internal vertices with the same orientation through `{a,c}`.
+2. [`FIXED_PAIR_RETURN.md`](FIXED_PAIR_RETURN.md) uses that common setup to accumulate explicit reduction history at almost every vertex outside a fixed pair `{a,c}` and constrains how a later four-vertex configuration can reuse the same two-vertex supports.
+3. [`FIRST_SOURCE_DESCENT.md`](FIRST_SOURCE_DESCENT.md) gives the direct globally-longest-path route to the present nonextendable three-path configuration, and separately retains the longer Boolean-cube argument because it carries additional one-time rank information.
 
-1. [`FIXED_PAIR_RETURN.md`](FIXED_PAIR_RETURN.md) fixes two vertices `{a,c}` and repeatedly uses vertices `x` for which `(a,x,c)` or `(c,x,a)` is tight. For all but at most one vertex outside `{a,c}`, the construction records strict reductions of both incident ordered pairs in that tight ordered triple to the middle vertex. Any later four-vertex configuration made from two disjoint ordered pairs must therefore meet this recorded history. If the pair through the recorded vertex has a genuinely new second endpoint, a strict extension or reversed-contact configuration follows. The unresolved case is when that pair uses exactly one of the two old supports through `{a,c}`.
+The two later mechanisms arise from closely related local geometry but use it differently.
 
-2. [`FIRST_SOURCE_DESCENT.md`](FIRST_SOURCE_DESCENT.md) now separates two different facts that were previously intertwined. A globally longest tight path gives the **shortest known route** to the current nonextendable three-path configuration; the Boolean cube is not needed for that. The longer cube construction is retained because it additionally yields a strict rank decrease relative to the finite family of maximum spanning three-path forests used in the comparison. That decrease is proved only once relative to its initial family and is not yet a recursive global order.
-
-These mechanisms are not best viewed as unrelated branches. Both begin from abundant vertices with the same orientation through a fixed pair, but they use that geometry differently:
-
-- the fixed-pair argument accumulates explicit reduction history at many vertices and constrains later reuse of the same physical supports;
-- the cube/rank argument extracts a proper path or cycle from related exact two-path covers and obtains one strict rank decrease.
+- The fixed-pair argument records strict reductions at many vertices and constrains later reuse of the same physical supports.
+- The cube/rank argument extracts a proper path or cycle from related exact two-path covers and obtains one strict rank decrease relative to the finite family used in that comparison.
 
 As a route merely to the current nonextendable three-path configuration, the cube construction is subsumed by the globally longest-path argument. Its reason for remaining in the spine is the additional rank and comparison information.
 
