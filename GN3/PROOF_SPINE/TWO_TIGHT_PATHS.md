@@ -468,6 +468,7 @@ Let `A|B|C` be a spanning three-path cover. Suppose `A=(v_0,...,v_{ell-1})` has 
 
 `(x,v_{ell-1},v_{ell-2})`, `(v_1,v_0,x)`
 
+
 are tight.
 
 **Proof.** Since `n>10`, the longest of three spanning components has order at least `ceil(n/3)>=4`. If `B,C` were both singletons, their two vertices would themselves form a tight two-vertex path, and that path together with `A` would two-cover `H`.
@@ -562,19 +563,78 @@ Retained path data are graph-theoretic facts and remain valid even if the paths 
 
 For the fixed pair `a,c`, the initial retained collection `R_0` contains all source extensions described before Lemma 4.1: the extended paths `L_s,R_s` for every `s∈X∪Y`, with their specified extension vertices and sides. The initial current path system may be taken to be empty.
 
-We use the following two accepted continuation operations.
+### Endpoint-selection lemma
 
-**Endpoint selection.** Suppose `R` contains two vertex-disjoint two-vertex extended paths `D_1,D_2`, one protected at its left end and the other at its right end. Let `x` be either prescribed vertex of `D_1`. An endpoint-selection step has one of two outputs:
+Let `(P,R)` be a stage of the fixed-pair argument. Suppose `R` contains two vertex-disjoint two-vertex extended paths `D_1,D_2`, one protected at its left end and the other at its right end. Let `x` be either prescribed vertex of `D_1`. Then either `H` has a spanning two-path cover, or there is a later current path system `P'` and retained collection `R'` such that
 
-- a spanning two-path cover of `H`; or
-- a new pair `(P',R')` with `R⊆R'` such that `P'` contains the two distinct singleton paths `(x)` and `(q)` for some vertex `q`.
+- `R⊆R'`;
+- `P'` contains two distinct singleton paths `(x)` and `(q)` for some vertex `q`;
+- `(x)` carries the same extension side as `D_1`, with an explicit witness obtained from the original extension or from the deleted neighbor of `x` in `D_1`;
+- `(q)` carries the extension side opposite to `(x)`, with the original extension witness of `D_2`.
 
-**Singleton replacement.** Suppose the current path system `P` contains distinct singleton paths `(x)` and `(q)`, and let `y∉{x,q}`. A singleton-replacement step preserving `x` has one of two outputs:
+No current path of `P` other than the prescribed singleton conclusion is asserted to survive. The transition is the explicit construction in the proof below; it is not an arbitrary replacement of the current path system.
 
-- a spanning two-path cover of `H`; or
-- a new pair `(P',R')` with `R⊆R'` such that `P'` contains the singleton paths `(x)` and `(y)`.
+**Proof.** Reverse all path orders if necessary, so that
 
-The first singleton `x` is the one preserved by this operation. The symmetric version preserves `q` and replaces `x`.
+`D_1=(d_0,d_1)`
+
+is left-extended by a vertex `w`, while
+
+`D_2=(t_0,t_1)`
+
+is right-extended by a vertex `z`. Thus `(w,d_0,d_1)` and `(t_0,t_1,z)` are tight, and the protected ends are `d_0` and `t_1`.
+
+First isolate the prescribed vertex `x` of `D_1`. If `x=d_0`, then `(w,d_0)` is an initial segment of the tight path `(w,d_0,d_1)`, so the singleton `(x)` is left-extended by `w`. If `x=d_1`, then `(d_0,d_1)` is a tight two-vertex path, so the singleton `(x)` is left-extended by the deleted neighbor `d_0`. In either case add this left-extended singleton to the retained data while retaining the original extended path `D_1` as historical data.
+
+Set `q=t_1`, the protected end of `D_2`. We now construct a path meeting `D_2` exactly at its other endpoint `t_0`. Let
+
+`O=V(H)-(V(D_1)∪V(D_2)∪{w,z})`.
+
+At most six vertices are excluded, and `n>10`, so `|O|>=5`. By minimality, `H[O]` has a path cover with at most two components. Hence some component is nontrivial; choose two consecutive vertices `u_0,u_1` on it. Boundary antisymmetry makes exactly one of
+
+`(t_0,u_0,u_1)`, `(u_1,u_0,t_0)`
+
+tight. Let `C` be that tight three-vertex path. Then `C` is disjoint from `D_1`, from `q=t_1`, and from both extension vertices unless an extension vertex already lies on one of the two supports. It meets `D_2` exactly at `t_0` and avoids the protected end `q`.
+
+Apply the right-extension part of Lemma 4.1 to the retained path `D_2=(t_0,t_1)` using `Q=C`. The surviving suffix is exactly `(q)`, and it retains the original right-extension witness `z`. Record that restriction tuple. The three paths
+
+`(x)`, `(q)`, `C`
+
+are pairwise vertex-disjoint, so they form a current path system `P'`. Let `R'` be the incoming retained data together with the left-extended singleton `(x)` and the recorded restriction of `D_2` to `(q)`. This is the required nonclosing transition. The case in which `D_1` is right-extended and `D_2` is left-extended is the exact left/right dual. ∎
+
+### Singleton-replacement lemma
+
+Let `(P,R)` be a stage whose current path system contains distinct singleton paths `(p)` and `(t)`, and let `y∉{p,t}`. Then either `H` has a spanning two-path cover, or there is a later current path system `P'` and retained collection `R'` such that
+
+- `R⊆R'`;
+- `(p)` remains the distinguished current singleton throughout the construction and is still current in `P'`;
+- `P'` contains `(p)` and `(y)` as distinct singleton paths;
+- every retained datum concerning `(p)` is unchanged;
+- the construction produces an explicit extension side and witness for the new singleton `(y)`.
+
+No hypothesis on pre-existing extension labels of `(p)` and `(t)` is required. The symmetric form preserves `(t)` and replaces `(p)` by an arbitrary prescribed third vertex.
+
+**Proof.** By Lemma 1.2 choose an exact two-path cover
+
+`H-{p,t}=U|V`
+
+with both paths nontrivial. Relabel the components so that `y∈V(U)`. Since `U` is nontrivial, `y` has a neighbor `d` along `U`. The two-vertex order `(d,y)` is tight. Test the triple
+
+`(d,y,t)`.
+
+If it is tight, let `S=(d,y)`. Then `S` is right-extended by `t`, with protected end `y`. If it is not tight, boundary antisymmetry gives `(t,y,d)` tight; let `S=(t,y)`. Then `S` is right-extended by `d`, again with protected end `y`. Thus in either case `S=(r,y)` is a two-vertex right-extended path, disjoint from `(p)`, whose protected end is the prescribed target `y`. Record `S` with its exact witness and side.
+
+The other deletion-cover component `V` is disjoint from `S`: in the first branch `S⊆V(U)`, and in the second branch `S` uses only `t` and `y`, neither of which lies in `V`. Because `V` is nontrivial, choose consecutive vertices `v_0,v_1` on it. Boundary antisymmetry makes exactly one of
+
+`(r,v_0,v_1)`, `(v_1,v_0,r)`
+
+tight. Let `C` be that tight three-vertex path. It is disjoint from `(p)` and from the protected endpoint `y`, and it meets `S` exactly at the unprotected endpoint `r`.
+
+Apply the right-extension part of Lemma 4.1 to the retained path `S=(r,y)` using `Q=C`. The surviving suffix is exactly `(y)`, with the same right-extension witness as `S`: `t` in the first branch and `d` in the second. Record this restriction tuple. At every stage of this construction the singleton `(p)` is untouched and all auxiliary paths are chosen disjoint from it. Hence the three paths
+
+`(p)`, `(y)`, `C`
+
+are pairwise vertex-disjoint and form a current path system `P'`. Let `R'` be the incoming retained data together with the extended path `S` and its recorded restriction to `(y)`. This gives the required nonclosing transition while preserving every incoming retained datum. Interchanging `p,t` gives the symmetric form. ∎
 
 A **restriction-recording step** does not change the current path system. If `R` contains an extended path to which Lemma 4.1 applies using a current path `Q∈P`, the resulting tuple from item 2 above may be adjoined to `R`.
 
@@ -582,7 +642,7 @@ A **lawful finite continuation** is a finite sequence
 
 `(P_0,R_0),(P_1,R_1),...,(P_m,R_m)`
 
-such that every successive step is either endpoint selection, singleton replacement, or restriction recording, with the hypotheses of that step satisfied at the stage where it is used. A continuation stops immediately if a spanning two-path cover is produced. Thus the current path system can change only through the two accepted continuation operations, while retained path data are monotone: `R_i⊆R_{i+1}`.
+such that every successive change of current path system is an application of the endpoint-selection lemma or the singleton-replacement lemma with its hypotheses satisfied at that stage, and every other step is a restriction-recording step. A continuation stops immediately if a spanning two-path cover is produced. Retained path data are monotone: `R_i⊆R_{i+1}`. No path is current at a later stage merely because it occurs in retained data.
 
 ### Lemma 4.3. Prescribing one vertex of each of two extended two-vertex paths
 
@@ -666,6 +726,7 @@ with `u∉{a,s,c}`. Then the retained source paths through `s` and the current p
 3. an explicit tight triple containing `u` that traverses an ordered edge of `Q` and an ordered edge of a retained source path in the opposite order.
 
 In fact Proposition 4.7 already gives outcome 1 or outcome 3 in this two-vertex situation. The cycle alternative is included because it is also one of the general path-contact outcomes of Appendix A.
+The new-endpoint conclusion itself is therefore static: Proposition 4.7 already supplies it. The role of the historical reductions is instead to certify that `s` has previously undergone both source reductions along a lawful continuation, so that the unresolved equality/recurrence case is localized to exact return on the two old supports `{a,s}` and `{s,c}`.
 
 Consequently, after the two historical source reductions at `s` have actually occurred, any later current two-vertex path through `s` whose other endpoint is outside `{a,c}` produces one of these non-recurrent contact outcomes. The only two-element supports through `s` not covered by this conclusion are the two original supports
 
