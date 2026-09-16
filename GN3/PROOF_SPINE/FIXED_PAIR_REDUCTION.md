@@ -15,7 +15,7 @@ For `x∈Y`, write
 
 Thus `L_x` and `R_x` are two-vertex tight paths, and the corresponding tight ordered triple through `a,c` extends each of them at the end containing `x`.
 
-A **path system** is a finite family of pairwise vertex-disjoint tight paths. If `D=(u,v)` is a two-vertex path, a vertex `w∉{u,v}` is a **left extension** of `D` when `(w,u,v)` is tight and a **right extension** when `(u,v,w)` is tight.
+A **path system** is a family of pairwise vertex-disjoint tight paths. If `D=(u,v)` is a two-vertex path, a vertex `w∉{u,v}` is a **left extension** of `D` when `(w,u,v)` is tight and a **right extension** when `(u,v,w)` is tight.
 
 ## 1. Two local lemmas
 
@@ -25,7 +25,7 @@ Let `D_1,D_2` be vertex-disjoint two-vertex tight paths such that one has a spec
 
 `x∈V(D_1)`, `y∈V(D_2)`,
 
-there is a finite sequence of path systems
+there is a sequence of path systems
 
 `Σ=(\mathcal P_0,...,\mathcal P_m)`
 
@@ -84,7 +84,7 @@ Suppose instead that `v_0` is the first vertex of `Q`. If `Q=(v_0)`, the path `(
 
 ### Lemma 2.1
 
-Let `s,t∈X` be distinct. Then there is a finite sequence
+Let `s,t∈X` be distinct. Then there is a sequence
 
 `Σ_{s,t}=(\mathcal P_0,...,\mathcal P_m)`
 
@@ -104,7 +104,7 @@ Interchanging `s,t` gives the second sequence. The case `s,t∈Y` is symmetric. 
 
 ## 3. The set `C_{a,c}`
 
-Concatenate finitely many sequences of Lemma 2.1, always choosing the last path system containing `(a)` and `(c)` unless a spanning two-path cover has already appeared. Let
+Concatenate the sequences of Lemma 2.1, always choosing the last path system containing `(a)` and `(c)` unless a spanning two-path cover has already appeared. Let
 
 `Σ=(\mathcal P_0,...,\mathcal P_N)`
 
@@ -112,7 +112,7 @@ be the resulting sequence. Define `C_{a,c}(Σ)` to be the set of vertices `x∈V
 
 ### Theorem 3.1
 
-There is a finite sequence `Σ` such that either some member of `Σ` is a spanning two-path cover of `H` or
+There is a sequence `Σ` such that either some member of `Σ` is a spanning two-path cover of `H` or
 
 `|V(H)-({a,c}∪C_{a,c}(Σ))|≤1`.
 
