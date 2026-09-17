@@ -1,8 +1,8 @@
 # Four-vertex structure and fifth-vertex extensions
 
-**Status: UNAUDITED GN3 REWRITE.**
+**Status: REVISED AFTER AUDIT; PENDING RE-AUDIT.**
 
-This module collects local structure theorems for non-Hamiltonian four-vertex boundary tournaments and their extensions. The exact text has not yet received independent GN3 audit.
+This module collects local structure theorems for non-Hamiltonian four-vertex boundary tournaments and their extensions. The revised exact text makes the finite forcing steps explicit and awaits independent re-audit.
 
 ## 1. Two parallel turns force one of two edge-orderable four-vertex forms
 
@@ -32,7 +32,7 @@ or
 
 **Proof.** Since `(a,b,c)` is tight, the candidate path `(a,b,c,d)` can fail only at `(b,c,d)`; hence `(d,c,b)` is tight. Similarly `(a,b,d,c)` forces `(c,d,b)`.
 
-Now `(a,c,d,b)` has second triple `(c,d,b)` tight, so no-Hamiltonicity forces `(d,c,a)`; and `(a,d,c,b)` forces `(c,d,a)`. Finally `(c,a,b,d)` and `(d,a,b,c)` force `(b,a,c)` and `(b,a,d)`.
+Now `(a,c,d,b)` has second triple `(c,d,b)` tight, so non-Hamiltonicity forces `(d,c,a)`; and `(a,d,c,b)` forces `(c,d,a)`. Finally `(c,a,b,d)` and `(d,a,b,c)` force `(b,a,c)` and `(b,a,d)`.
 
 The only remaining freedom can be taken to be the reversal pair `(a,c,b)` versus `(b,c,a)`.
 
@@ -58,19 +58,51 @@ Let `X={a,b,c,z}` induce the boundary tournament whose tight triples, one from e
 
 Then for every vertex `d outside X`, the five-set `X union {d}` has a Hamilton tight path in which `d` is one position from an endpoint.
 
-**Proof.** Every candidate used below places `d` one position from an endpoint. Assume none is a Hamilton tight path. Whenever a candidate already has two required triples tight, failure forces the reverse of its third required triple by boundary antisymmetry.
+**Proof.** Write `uvw` for the assertion that `(u,v,w)` is tight. Assume for contradiction that no Hamilton tight path on `X union {d}` places `d` one position from an endpoint.
 
-Starting from `(d,a,b)` tight, the following implications are forced:
+Exactly one of `dab` and `bad` is tight. We treat the two cases separately. In each row below, two consecutive triples of the displayed five-vertex order are already tight. Since the order is not Hamiltonian, its third consecutive triple is non-tight, and boundary antisymmetry gives the forced triple in the last column.
 
-`dab => adz => czd => bdz => dba => bdc => dbz => bda => cad => zda => bad`.
+If `dab` is tight, the following implications hold successively:
 
-Starting from `(b,a,d)` tight gives
+| known tight triples | five-vertex order | forced tight triple |
+| --- | --- | --- |
+| `dab, abc` | `z d a b c` | `adz` |
+| `adz, zcb` | `a d z c b` | `czd` |
+| `acz, czd` | `a c z d b` | `bdz` |
+| `cab, bdz` | `c a b d z` | `dba` |
+| `dba, baz` | `c d b a z` | `bdc` |
+| `azb, bdc` | `a z b d c` | `dbz` |
+| `dbz, bzc` | `a d b z c` | `bda` |
+| `bda, acz` | `b d a c z` | `cad` |
 
-`bad => cda => dcz => cdb => abd => zdb => cbd => adb => daz => adc => dab`.
+Now `bca`, `cad`, and `adz` are all tight, so
 
-The triples `dab` and `bad` are reverses, so exactly one is tight. Either choice forces the other, a contradiction. Hence one of the candidate Hamilton paths used in the implication chains must exist. In each such candidate, `d` is in position `1` or `3` of the five-vertex order. ∎
+`(b,c,a,d,z)`
 
-## 3. A P5-free fifth vertex over a non-Hamiltonian edge-ordered four-set
+is a Hamilton tight path, a contradiction.
+
+If `bad` is tight, the analogous explicit chain is
+
+| known tight triples | five-vertex order | forced tight triple |
+| --- | --- | --- |
+| `zba, bad` | `z b a d c` | `cda` |
+| `bzc, cda` | `b z c d a` | `dcz` |
+| `dcz, cza` | `b d c z a` | `cdb` |
+| `cdb, baz` | `c d b a z` | `abd` |
+| `cab, abd` | `c a b d z` | `zdb` |
+| `zdb, bca` | `z d b c a` | `cbd` |
+| `zcb, cbd` | `z c b d a` | `adb` |
+| `cza, adb` | `c z a d b` | `daz` |
+
+Now `cda`, `daz`, and `azb` are all tight, so
+
+`(c,d,a,z,b)`
+
+is a Hamilton tight path, again a contradiction.
+
+Every five-vertex order displayed in the two tables, as well as the final path in each case, places `d` in position `1` or `3` when positions are numbered `0,...,4`. ∎
+
+## 3. A non-Hamiltonian five-set over a non-Hamiltonian edge-ordered four-set
 
 Let `X` be a non-Hamiltonian edge-ordered `K_4`. By Lemma 2.4 of the proof spine, its three opposite-edge perfect matchings occur in strict blocks. Write
 
@@ -97,28 +129,55 @@ No edge of `M_high` is incoming to `d`, and no edge of `M_low` is outgoing from 
 `M_mid={{t,s},{l,r}}`,
 `M_high={{t,l},{r,s}}`.
 
-Suppose neither high edge is outgoing. Then for `{t,l}` at least one of `(l,t,d),(t,l,d)` is tight, and for `{r,s}` at least one of `(s,r,d),(r,s,d)` is tight. There are four choices. In each case a single additional mixed triple either immediately gives a Hamilton P5 or, if it fails, its reverse combines with the other known triples to give one:
+Suppose neither edge of `M_high` is outgoing from `d`. For `{t,l}`, at least one of `ltd,tld` is tight; for `{r,s}`, at least one of `srd,rsd` is tight. The four possibilities give contradictions as follows:
 
-- from `ltd,srd`, failure of `(r,d,t)` forces `(t,d,r)`, and `(s,l,t,d,r)` is tight;
-- from `ltd,rsd`, failure of `(s,d,t)` forces `(t,d,s)`, and `(r,l,t,d,s)` is tight;
-- from `tld,srd`, failure of `(r,d,l)` forces `(l,d,r)`, and `(s,t,l,d,r)` is tight;
-- from `tld,rsd`, failure of `(s,d,l)` forces `(l,d,s)`, and `(r,t,l,d,s)` is tight.
+| tight triples | if this were tight | Hamilton path | forced reverse | Hamilton path |
+| --- | --- | --- | --- | --- |
+| `ltd, srd` | `rdt` | `l s r d t` | `tdr` | `s l t d r` |
+| `ltd, rsd` | `sdt` | `l r s d t` | `tds` | `r l t d s` |
+| `tld, srd` | `rdl` | `t s r d l` | `ldr` | `s t l d r` |
+| `tld, rsd` | `sdl` | `t r s d l` | `lds` | `r t l d s` |
 
-Thus some high edge is outgoing. The proof that some low edge is incoming is the reversed argument, or explicitly the same four-case check after exchanging the roles of beginning and end.
+In each row the first displayed Hamilton path uses the two assumed mixed triples and one tight triple inside `X`. Since that path cannot exist, the middle mixed triple is non-tight and its reverse in the fourth column is tight; the last displayed order is then Hamiltonian. Thus some edge of `M_high` is outgoing.
 
-For the forbidden polarities, normalize instead
+Now suppose neither edge of `M_low` is incoming to `d`. For `{t,r}`, at least one of `drt,dtr` is tight; for `{l,s}`, at least one of `dsl,dls` is tight. Again the four possibilities are exhaustive:
+
+| tight triples | if this were tight | Hamilton path | forced reverse | Hamilton path |
+| --- | --- | --- | --- | --- |
+| `drt, dsl` | `rds` | `r d s l t` | `sdr` | `s d r t l` |
+| `drt, dls` | `ldr` | `l d r t s` | `rdl` | `r d l s t` |
+| `dtr, dsl` | `tds` | `t d s l r` | `sdt` | `s d t r l` |
+| `dtr, dls` | `tdl` | `t d l s r` | `ldt` | `l d t r s` |
+
+Thus some edge of `M_low` is incoming.
+
+For the forbidden directions, normalize instead
 
 `M_low={ab,cz}`, `M_mid={ac,bz}`, `M_high={bc,az}`.
 
-Suppose the high edge `bc` were incoming, so `(b,c,d),(c,b,d)` were tight. Successive P5 failures force
+Suppose first that the high edge `bc` is incoming to `d`, so `bcd,cbd` are tight. The following five non-Hamiltonian candidate orders force the displayed reverses in sequence:
 
-`(z,d,c)`, `(d,z,b)`, `(z,d,a)`, `(a,d,b)`, `(d,a,c)`.
+| known tight triples | five-vertex order | forced tight triple |
+| --- | --- | --- |
+| `abc, bcd` | `a b c d z` | `zdc` |
+| `abz, zdc` | `a b z d c` | `dzb` |
+| `dzb, zbc` | `a d z b c` | `zda` |
+| `zcb, cbd` | `z c b d a` | `adb` |
+| `zca, adb` | `z c a d b` | `dac` |
 
-Then `(z,d,a,c,b)` is a Hamilton P5, contradiction. Symmetry exchanges the two high edges. Dually, if the low edge `ab` were outgoing, successive P5 failures force
+Then `zda,dac,acb` are tight, so `(z,d,a,c,b)` is Hamiltonian, a contradiction. The permutation exchanging `a` with `c` and `b` with `z` preserves all three matching blocks and exchanges the two edges of `M_high`, so neither high edge can be incoming.
 
-`(b,d,c)`, `(a,c,d)`, `(z,d,c)`, `(d,z,b)`, `(z,d,a)`,
+Suppose next that the low edge `ab` is outgoing from `d`, so `dab,dba` are tight. The corresponding forcing chain is
 
-and `(z,d,a,b,c)` is Hamilton. Symmetry handles the other low edge. ∎
+| known tight triples | five-vertex order | forced tight triple |
+| --- | --- | --- |
+| `dba, baz` | `c d b a z` | `bdc` |
+| `bdc, caz` | `b d c a z` | `acd` |
+| `bac, acd` | `b a c d z` | `zdc` |
+| `abz, zdc` | `a b z d c` | `dzb` |
+| `dzb, zbc` | `a d z b c` | `zda` |
+
+Then `zda,dab,abc` are tight, so `(z,d,a,b,c)` is Hamiltonian. The same permutation `(a c)(b z)` exchanges the two edges of `M_low`, so no low edge is outgoing. ∎
 
 ### 3.2 The middle matching alternates
 
@@ -135,19 +194,25 @@ Suppose the high edge `{t,l}` is outgoing from `d` and the low edge `{t,r}` is i
 `A=[(d,t,s) is tight]`, `B=[(d,s,t) is tight]`,
 `C=[(d,r,l) is tight]`, `D=[(d,l,r) is tight]`.
 
-Using only the block order on `X`, the assumed high/low gates, P5-freeness, and boundary antisymmetry, one obtains
+The block order gives the tight triples
 
-`A=>B`, `B=>A`, `C=>D`, `D=>C`.
+`rts, trl, lrs, lst, tsr, rlt, slr, stl`.
 
-For example, if `A` holds but `B` fails, then `(t,s,d)` is tight. Avoiding successively
+We prove the four implications explicitly.
 
-`(r,t,s,d,l)`, `(t,r,l,d,s)`, `(t,d,l,r,s)`
+**`A=>B`.** Suppose `A` holds and `B` fails. Then `tsd` is tight. If `sdl` were tight, `(r,t,s,d,l)` would be Hamiltonian, so `lds` is tight. If `rld` were tight, `(t,r,l,d,s)` would be Hamiltonian, so `D=dlr` is tight. If `tdl` were tight, `(t,d,l,r,s)` would be Hamiltonian, so `ldt` is tight. But now `(l,d,t,s,r)` is Hamiltonian, using `ldt`, `A=dts`, and `tsr`. Thus `A=>B`.
 
-forces `(l,d,s)`, then `D`, then `(l,d,t)`; now `(l,d,t,s,r)` is Hamilton, contradiction. The other three implications are the same argument after the evident relabellings.
+**`B=>A`.** Suppose `B` holds and `A` fails. Then `std` is tight. If `tdr` were tight, `(l,s,t,d,r)` would be Hamiltonian, so `rdt` is tight. If `lrd` were tight, `(s,l,r,d,t)` would be Hamiltonian, so `C=drl` is tight. If `sdr` were tight, `(s,d,r,l,t)` would be Hamiltonian, so `rds` is tight. But then `(r,d,s,t,l)` is Hamiltonian, using `rds`, `B=dst`, and `stl`. Thus `B=>A`.
 
-Thus `A=B` and `C=D`. If both common values were `0`, then `(s,t,d)` and `(l,r,d)` are tight; avoiding `(l,s,t,d,r)` forces `(r,d,t)`, after which `(s,l,r,d,t)` is Hamilton. If both common values were `1`, avoiding `(r,d,s,t,l)` forces `(s,d,r)`, after which `(s,d,r,l,t)` is Hamilton. Hence the two common values differ, proving the claim. ∎
+**`C=>D`.** Suppose `C` holds and `D` fails. Then `rld` is tight. If `sdr` were tight, `(s,d,r,l,t)` would be Hamiltonian, so `rds` is tight. If `dst` were tight, `(r,d,s,t,l)` would be Hamiltonian, so `tsd` is tight. If `sdl` were tight, `(r,t,s,d,l)` would be Hamiltonian, so `lds` is tight. But then `(t,r,l,d,s)` is Hamiltonian, using `trl`, `rld`, and `lds`. Thus `C=>D`.
 
-### 3.3 A bidirectional bridge edge forces a Hamilton P5 or P6
+**`D=>C`.** Suppose `D` holds and `C` fails. Then `lrd` is tight. If `tdl` were tight, `(t,d,l,r,s)` would be Hamiltonian, so `ldt` is tight. If `dts` were tight, `(l,d,t,s,r)` would be Hamiltonian, so `std` is tight. If `tdr` were tight, `(l,s,t,d,r)` would be Hamiltonian, so `rdt` is tight. But then `(s,l,r,d,t)` is Hamiltonian, using `slr`, `lrd`, and `rdt`. Thus `D=>C`.
+
+Therefore `A=B` and `C=D`. If both common values were `0`, then `std` and `lrd` would be tight. Non-Hamiltonicity of `(l,s,t,d,r)` forces `tdr` to be non-tight, hence `rdt` is tight; then `(s,l,r,d,t)` is Hamiltonian. If both common values were `1`, then `B=D=1`; non-Hamiltonicity of `(r,d,s,t,l)` forces `rds` to be non-tight, hence `sdr` is tight; then `(s,d,r,l,t)` is Hamiltonian.
+
+Thus the two common values differ. If `A=B=1`, the middle edge `{t,s}` is outgoing from `d`; if `A=B=0`, boundary antisymmetry makes both `tsd,std` tight, so `{t,s}` is incoming. The same statement holds for `{l,r}` using `C=D`, and the two directions are opposite. ∎
+
+### 3.3 An ordered exterior edge extending in both directions forces a Hamilton P5 or P6
 
 Normalize the matching blocks as
 
