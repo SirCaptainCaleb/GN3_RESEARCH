@@ -56,6 +56,8 @@ Using
 
 gives the claimed bound. ∎
 
+For the stronger Johnson-degree density hierarchy, which improves these fixed-subset bounds for every `r>10`, see `JOHNSON_DENSITY.md` Section 4.
+
 ## 3. Two parallel middle vertices force a Hamilton four-path
 
 Let `a,c,x,y` be four distinct vertices of a boundary tournament. If
