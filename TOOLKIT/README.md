@@ -1,8 +1,8 @@
 # GN3 reusable toolkit
 
-The toolkit is intentionally small. Most entries index broad results already proved in the canonical proof spine rather than copying their proofs. A small number of independently natural results that do not belong in the proof spine may live here as standalone theorem files. Migration does not transfer certification: every standalone rewrite carries its own GN3 audit status.
+The toolkit contains selected mathematics that a future researcher could reasonably want independently of the route that first produced it. It is not a second proof graph, discovery log, or archive of every correct lemma.
 
-A result belongs here only when a future researcher could reasonably want the mathematics independently of the route that first produced it. The toolkit is not a second proof graph, discovery log, or archive of every passed lemma.
+Most proof-local facts remain in the canonical proof spine. Standalone toolkit files are used when extraction materially improves retrieval, reuse, or verification. Migration does not transfer certification: each standalone file states the audit status of its exact current text.
 
 ## Indexed from the proof spine
 
@@ -26,7 +26,7 @@ If `F` is a family of five-subsets of a ten-element set containing no complement
 
 ### Path-forest deletion formula — Lemma 5.1
 
-For an ordinary path forest `F` with `k` components and `S⊆V(F)`,
+For an ordinary path forest `F` with `k` components and `S subseteq V(F)`,
 
 `comp(F-S)=k+sum_{v in S}(deg_F(v)-1)-e_F(S)`.
 
@@ -40,30 +40,52 @@ Lemma A.1 converts disagreement in the relative order of common vertices of two 
 
 **Why retained:** these are general path-intersection principles and isolate order-sensitive reasoning that would otherwise be repeatedly rederived.
 
-## Standalone migrated modules
-
-The following files preserve selected reusable mathematics from the A7C3 spare-parts shelf in ordinary GN3 language. The exact current text of all three standalone modules has passed independent GN3 audit.
+## Standalone modules with GN3 audit PASS
 
 ### [Path-cover surgery lemmas](PATH_COVER_SURGERY.md)
 
 Seven general tools for cut-and-join work: a crossing forced by an absorbable deletion, cyclic path rotations, a one-vertex Hamilton absorber, the path/cycle edge-exchange component formula, a two-ended Hamilton splice, the partition-transition identity, and the deletion block-count/unique-crossing lemma.
 
-**Why retained:** these are direct tools for literal spanning replacements and path-cover surgery, including several mechanisms especially relevant to the present augmentation frontier.
-
 ### [Local Hamilton extension lemmas](LOCAL_HAMILTON_EXTENSIONS.md)
 
 Three local extension results: the triangle-free graph of bad exterior pairs around a fixed tight three-path, density of Hamilton five-sets through a prescribed set of at most three vertices, and a four-vertex extension from two parallel middle vertices.
-
-**Why retained:** these turn the five- and six-vertex theory into reusable extension and density principles without carrying the old research vocabulary.
 
 ### [Johnson-graph density bounds](JOHNSON_DENSITY.md)
 
 Two general extremal-set inequalities converting a local cap on the number of selected `k`-sets inside each `(k+1)`-set into global density bounds in `J(r,k)`, together with equality constraints.
 
-**Why retained:** these are clean standalone combinatorial results, broader than the parameter-specific Johnson argument used in the proof spine.
+## Standalone modules awaiting GN3 audit
+
+### [Cover-comparison and matching lemmas](COVER_COMPARISON.md)
+
+A component-drop crossing lemma stated without signed-support language, the observation that two singleton paths carry no triple information by themselves, a Cartesian clause lemma for families of candidate covers, and a weighted symmetric-difference lemma for two matchings. The matching lemma includes the positive-total-weight hypothesis needed by its intrinsic formulation.
+
+### [Cover augmentation lemmas](COVER_AUGMENTATION.md)
+
+Explicit spanning-cover surgery: six seam alternatives from a three-cover, one-cut/two-join augmentation in edge-ordered graphs, a two-cut singleton cross-swap, inequalities forced by repeated singleton transfers, barriers forced by an extreme dimer, a cap obstruction around a three-vertex component, and a general bridge comparison between a three-cover and a fixed two-cover.
+
+### [Path insertion and endpoint replacement lemmas](PATH_INSERTION.md)
+
+Two-sided endpoint replacement forces a reversal in common-vertex order; failed insertion in an increasing path has a canonical barrier gap; complete insertion failure in an arbitrary boundary tournament has a bounded comparison-digraph obstruction; opposite extensions of one ordered pair concatenate immediately.
+
+### [Parallel turns and three-vertex core signatures](PARALLEL_TURNS.md)
+
+A three-coordinate signature compression for exterior vertices around a fixed core, and the strengthening of Lemma 2.2 that three parallel middle vertices admit a Hamilton five-path with at least one of those middle vertices as an endpoint.
+
+### [Four-vertex structure and fifth-vertex extensions](FOUR_VERTEX_STRUCTURE.md)
+
+The two edge-orderable normal forms forced by two parallel turns on a non-Hamiltonian four-set, universal fifth-vertex extension of the cyclic non-Hamiltonian four-set, the gate structure of a P5-free fifth vertex over a non-Hamiltonian edge-ordered four-set, a two-vertex bridge consequence, and the `3/5` density bound for Hamiltonian four-subsets of an edge-ordered complete graph.
+
+### [Complement-free Johnson bounds](JOHNSON_COMPLEMENT_BOUNDS.md)
+
+The intersection-one spectral bound for complement-free families of five-subsets of a ten-set. The companion four-overlap cut bound is already Lemma 2.8 of the proof spine and is not duplicated here.
+
+### [Ternary path-system insertion theorem](TERNARY_PATH_SYSTEMS.md)
+
+For a reversal-symmetric ternary path system satisfying the stated three-vertex completeness axiom, every exterior vertex has at least two insertion positions in a tight path, yielding a sharp `2^(n-1)` lower bound on Hamilton tight paths.
 
 ## Deliberately proof-local
 
 The minimal-counterexample consequences, endpoint-transfer propositions, fixed-pair continuation machinery, internal-deletion crossing proposition, same-orientation selection, eight induced subgraphs, and lexicographic extremal-cover propositions remain in `PROOF_SPINE/TWO_TIGHT_PATHS.md`. They are important, but their present value is primarily inside this proof. Keeping them in place makes the sequential argument easier to read and avoids a second dependency ontology.
 
-The toolkit should grow only when a result is repeatedly reused or is independently natural enough that extracting it improves retrieval or verification.
+Legacy phase-descent, packet, payment, source-routing, and Engine terminology has not been migrated as terminology. Where an old spare part contained reusable mathematics, only its intrinsic graph-theoretic, edge-ordered, set-theoretic, or matching-theoretic core was retained in the modules above.
