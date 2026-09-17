@@ -1,11 +1,14 @@
 - Every boundary tournament has path-cover number at most two.
-  - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `F=A|B|C`, `|A|>=|B|>=|C|`, to a spanning two-path cover or a lexicographically larger spanning three-path cover.
-    - Close the small-complement regime, where `|B|<=4` implies `|C|=1` and hence leaves only `(3,1)` and `(4,1)`.
-      - In `(3,1)`, construct a spanning two-path cover.
+  - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
+    - If `|B|<=4`, then `|C|=1`, leaving only `(3,1)` and `(4,1)`.
+      - [G02] Prove that a smallest counterexample on `n` vertices has no tight path of order `n-4`.
+        - Seek a spanning two-path cover from a tight path and its four-vertex complement.
+        - Choose a three-path and singleton on the complement using its lowest and highest matching blocks.
+        - Use all Hamilton orders on each longest-path vertex set and equal-length replacements of that vertex set.
+          - Seek a longest-path vertex set with Hamilton orders beginning with `(u,v)` and ending with `(v,u)`.
+          - Otherwise seek a finite family of explicit longest-path replacements that cannot be closed without a spanning two-cover.
+        - Test the stronger parent statement that a tight path missing four vertices implies a spanning two-path cover.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
-    - Close the larger-complement regime by a literal cut-and-join augmentation of `F`.
-      - Realize a one-cut/two-join replacement yielding a spanning two-path cover.
-      - Or realize a one-cut/one-join replacement yielding a lexicographically larger spanning three-path cover.
-      - Supply every required join from deletion crossings, extremal endpoint orientations, and ordered-path intersection structure.
-    - Replace both constructive regimes by a cleaner parent theorem or invariant if one directly forces the same augmentation.
-    - Use continuation sequences only as local input to a literal spanning replacement; they do not themselves define a progressing recurrence on covers.
+    - For larger complements, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
+      - Allow multiple cuts, both ends, and reordered paths; verify every new consecutive triple.
+      - Replace local cut-and-join arguments by a parent theorem controlling Hamilton endpoint pairs when possible.
