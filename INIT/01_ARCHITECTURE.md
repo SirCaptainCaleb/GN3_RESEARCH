@@ -12,9 +12,13 @@ GitHub is the durable GN3 authority. Slack is the live communication and search 
 
 ## Canonical mathematical surfaces
 
-- `PROOF_SPINE/TWO_TIGHT_PATHS.md` is the single sequential canonical proof attempt. Open implications remain visibly open in that document.
-- `RESEARCH_TREE.md` is the mutable top-down **outline-only** model of the live search. The file itself contains only a nested itemized outline of mathematical abstractions and progressively finer headline statements; all instructions, framing, rationale, proofs, and explanatory prose belong elsewhere, with maintenance rules in `03_RESEARCH_PROTOCOL.md`.
-- `TOOLKIT/README.md` indexes selected reusable mathematics. Standalone toolkit files carry certification appropriate to their exact current text.
+- `PROOF_SPINE/TWO_TIGHT_PATHS.md` is the single sequential canonical proof attempt. Open mathematical implications remain visibly open in that document.
+- `RESEARCH_TREE.md` is the mutable top-down outline of the live proof search. It is the deliberate exception to the math-only document rule below: it may contain concise proof-strategy guidance, route selection, search directives, and progressively finer mathematical targets. It should remain an outline rather than a store of full proofs or extended discussion; maintenance rules are in `03_RESEARCH_PROTOCOL.md`.
+- `TOOLKIT/README.md` indexes selected reusable mathematics. `TOOLKIT/` contains standalone mathematics worth retaining independently of the route that first produced it. Broadly reusable statements belong there; proof-local mathematics normally remains in the proof spine.
+
+The persistent mathematical documents themselves are **math only**. Files under `PROOF_SPINE/` and `TOOLKIT/`, including `TOOLKIT/README.md`, may contain definitions, mathematical statements, proofs, examples, counterexamples, corollaries, and explicit mathematical remarks. They do not contain document-purpose explanations, curation rationale, “why retained” discussion, workflow instructions, audit status, certification prose, migration commentary, or legacy provenance. Those belong in `INIT/`, Slack, Git history, or `ARCHAEOLOGY/` according to their role.
+
+In particular, audit certification is not embedded as status wrappers in mathematical files. Exact certification is recorded by the audit protocol and its audit threads, keyed to exact revisions; Git history supplies revision identity. Removing or adding nonmathematical metadata must not become a reason to clutter mathematical documents again.
 
 There is **no separate `STATUS.md`, `RESEARCH_STATE.md`, active provenance layer, or project-wide audit ledger**. The proof spine states the proved/open mathematical boundary; the research tree states the current live abstraction and target; the Vice Director tracks which live dependencies require certification; exact certification is governed by `04_AUDIT_PROTOCOL.md` and the relevant audit records. Avoid duplicating those facts into another summary document that can drift.
 
