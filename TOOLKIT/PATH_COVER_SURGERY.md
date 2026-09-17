@@ -1,9 +1,5 @@
 # Path-cover surgery lemmas
 
-**Status: GN3 AUDIT PASS.**
-
-These statements are GN3 rewrites of selected reusable A7C3 spare parts. The exact current text has passed independent GN3 audit; legacy acceptance is provenance only.
-
 ## 1. Crossing forced by an absorbable deletion
 
 Let `H` be a boundary tournament with `pc(H)>2`. Let `D` be a nonempty proper subset of `V(H)`, put `W=V(H)-D`, and let `S` be a nonempty proper subset of `W`. Suppose `H[D union S]` has a Hamilton tight path.
@@ -144,7 +140,3 @@ is tight.
 If `a=1` and `pc(H)>k`, then `pc(H)>=k+1`, so `b_C(T)>=k`. If there is exactly one `S-C` edge in `T`, cutting it produces exactly `k+1` monochromatic blocks. There is at least one `S`-block and at least `k` `C`-blocks, so there is exactly one `S`-block and exactly `k` `C`-blocks. The asserted form of `T` follows.
 
 Suppose the unique crossing is `x,y` with `x in S`, `y in C`, and let `Q` be a Hamilton path of `H[D union S]` ending with `(p,x)`. Replace the unique `S`-block of the mixed component of `T` by `Q`, leaving the adjacent `C`-block and every other component unchanged. If `(p,x,y)` were tight, these `k` paths would cover `H`, contradicting `pc(H)>k`. Hence `(p,x,y)` is not tight, so boundary antisymmetry gives `(y,x,p)`. The other orientation is identical after reversing the role of the splice. ∎
-
-## Legacy provenance
-
-Sections 1–7 rewrite, respectively, A7C3 spare parts `S9003`, `S9004`, `S9005`, `S9006`, `S9009`, `S9013`, and the reusable content of `S9033`.
