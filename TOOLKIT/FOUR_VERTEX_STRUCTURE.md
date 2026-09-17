@@ -6,11 +6,11 @@ This module collects local structure theorems for non-Hamiltonian four-vertex bo
 
 ## 1. Two parallel turns force one of two edge-orderable four-vertex forms
 
-Let `a,b,c,d` be distinct vertices of a boundary tournament. Suppose
+Let `H` be a boundary tournament, and let `a,b,c,d` be distinct vertices of `H`. Suppose
 
 `(a,b,c)`, `(a,b,d)`
 
-are tight and the induced four-vertex tournament has no Hamilton tight path. Then the following six additional triples are tight:
+are tight and `H[{a,b,c,d}]` has no Hamilton tight path. Then the following six additional triples are tight:
 
 `(b,a,c)`, `(b,a,d)`,
 
@@ -30,41 +30,33 @@ or
 
 `M_0 < M_2 < M_1`.
 
-**Proof.** Since `(a,b,c)` is tight, the candidate path `(a,b,c,d)` can fail only at `(b,c,d)`; hence `(d,c,b)` is tight. Similarly `(a,b,d,c)` forces `(c,d,b)`.
+**Proof.** Since `(a,b,c)` is tight, the path `(a,b,c,d)` can fail only at `(b,c,d)`; hence `(d,c,b)` is tight. Similarly `(a,b,d,c)` forces `(c,d,b)`.
 
-Now `(a,c,d,b)` has second triple `(c,d,b)` tight, so non-Hamiltonicity forces `(d,c,a)`; and `(a,d,c,b)` forces `(c,d,a)`. Finally `(c,a,b,d)` and `(d,a,b,c)` force `(b,a,c)` and `(b,a,d)`.
+Now `(a,c,d,b)` has `(c,d,b)` tight, so non-Hamiltonicity forces `(d,c,a)`; and `(a,d,c,b)` similarly forces `(c,d,a)`. Finally `(c,a,b,d)` and `(d,a,b,c)` force `(b,a,c)` and `(b,a,d)`.
 
 The only remaining freedom can be taken to be the reversal pair `(a,c,b)` versus `(b,c,a)`.
 
-If `(a,c,b)` is tight, repeated use of a four-vertex Hamilton candidate whose other triple is already known forces
+Suppose first that `(a,c,b)` is tight. If `(c,b,d)` were tight, then `(a,c,b,d)` would be Hamiltonian; hence `(d,b,c)` is tight. If `(a,d,b)` were tight, then `(a,d,b,c)` would be Hamiltonian because `(d,b,c)` is tight; hence `(b,d,a)` is tight. If `(d,a,c)` were tight, then `(d,a,c,b)` would be Hamiltonian because `(a,c,b)` is tight; hence `(c,a,d)` is tight. These three choices, together with the eight triples already forced, determine every reversal pair and give the block order `M_0<M_1<M_2`.
 
-`(d,b,c)`, `(b,d,a)`, `(c,a,d)`
-
-and the reverses of their opposite choices. These are exactly the comparisons represented by the block order `M_0<M_1<M_2`.
-
-If `(b,c,a)` is tight, the same forcing gives
-
-`(d,a,c)`, `(a,d,b)`, `(c,b,d)`,
-
-which are exactly the comparisons represented by `M_0<M_2<M_1`.
+Suppose instead that `(b,c,a)` is tight. If `(c,a,d)` were tight, then `(b,c,a,d)` would be Hamiltonian; hence `(d,a,c)` is tight. If `(b,d,a)` were tight, then `(b,d,a,c)` would be Hamiltonian because `(d,a,c)` is tight; hence `(a,d,b)` is tight. If `(d,b,c)` were tight, then `(d,b,c,a)` would be Hamiltonian because `(b,c,a)` is tight; hence `(c,b,d)` is tight. These three choices determine every reversal pair and give the block order `M_0<M_2<M_1`.
 
 Both block orders have no increasing Hamilton four-vertex path by the non-Hamiltonian `K_4` classification in Lemma 2.4 of the proof spine, so both completions occur and there are no others. ∎
 
 ## 2. The cyclic non-Hamiltonian four-vertex configuration is extended by every fifth vertex
 
-Let `X={a,b,c,z}` induce the boundary tournament whose tight triples, one from each reversal pair, are
+Let `H` be a boundary tournament and let `X={a,b,c,z} subseteq V(H)`. Suppose the tight triples of `H[X]`, one from each reversal pair, are
 
 `abc, bca, cab, zba, azb, baz, acz, cza, zac, zcb, bzc, cbz`.
 
-Then for every vertex `d outside X`, the five-set `X union {d}` has a Hamilton tight path in which `d` is one position from an endpoint.
+Then for every `d in V(H)-X`, the five-set `X union {d}` has a Hamilton tight path in which `d` is one position from an endpoint.
 
 **Proof.** Write `uvw` for the assertion that `(u,v,w)` is tight. Assume for contradiction that no Hamilton tight path on `X union {d}` places `d` one position from an endpoint.
 
-Exactly one of `dab` and `bad` is tight. We treat the two cases separately. In each row below, two consecutive triples of the displayed five-vertex order are already tight. Since the order is not Hamiltonian, its third consecutive triple is non-tight, and boundary antisymmetry gives the forced triple in the last column.
+Exactly one of `dab` and `bad` is tight. We treat the two cases separately. In each row below, two consecutive triples of the displayed five-vertex order are tight. Since the order is not Hamiltonian, its third consecutive triple is non-tight, and boundary antisymmetry gives the triple in the last column.
 
 If `dab` is tight, the following implications hold successively:
 
-| known tight triples | five-vertex order | forced tight triple |
+| tight triples | five-vertex order | forced tight triple |
 | --- | --- | --- |
 | `dab, abc` | `z d a b c` | `adz` |
 | `adz, zcb` | `a d z c b` | `czd` |
@@ -83,7 +75,7 @@ is a Hamilton tight path, a contradiction.
 
 If `bad` is tight, the analogous explicit chain is
 
-| known tight triples | five-vertex order | forced tight triple |
+| tight triples | five-vertex order | forced tight triple |
 | --- | --- | --- |
 | `zba, bad` | `z b a d c` | `cda` |
 | `bzc, cda` | `b z c d a` | `dcz` |
@@ -104,18 +96,22 @@ Every five-vertex order displayed in the two tables, as well as the final path i
 
 ## 3. A non-Hamiltonian five-set over a non-Hamiltonian edge-ordered four-set
 
-Let `X` be a non-Hamiltonian edge-ordered `K_4`. By Lemma 2.4 of the proof spine, its three opposite-edge perfect matchings occur in strict blocks. Write
+Let `H` be a boundary tournament and let `X subseteq V(H)` have four vertices. Suppose an edge order on the complete graph `K_X` represents `H[X]`, in the sense that for all distinct `u,v,w in X`,
+
+`(u,v,w)` is tight in `H` if and only if `uv<vw`.
+
+Assume `K_X` has no increasing Hamilton path. By Lemma 2.4 of the proof spine, its three opposite-edge perfect matchings occur in strict blocks. Write
 
 `M_low < M_mid < M_high`
 
 when every edge of `M_low` precedes every edge of `M_mid`, and every edge of `M_mid` precedes every edge of `M_high`.
 
-For a vertex `d outside X` and an edge `{u,v}` of `X`, call `{u,v}`
+Let `d in V(H)-X`. For an edge `{u,v}` of `X`, call `{u,v}`
 
 - **outgoing from `d`** if `(d,u,v)` and `(d,v,u)` are both tight;
 - **incoming to `d`** if `(u,v,d)` and `(v,u,d)` are both tight.
 
-Assume `X union {d}` has no Hamilton tight path.
+Assume `H[X union {d}]` has no Hamilton tight path.
 
 ### 3.1 Extreme matching edges
 
@@ -157,7 +153,7 @@ For the forbidden directions, normalize instead
 
 Suppose first that the high edge `bc` is incoming to `d`, so `bcd,cbd` are tight. The following five non-Hamiltonian candidate orders force the displayed reverses in sequence:
 
-| known tight triples | five-vertex order | forced tight triple |
+| tight triples | five-vertex order | forced tight triple |
 | --- | --- | --- |
 | `abc, bcd` | `a b c d z` | `zdc` |
 | `abz, zdc` | `a b z d c` | `dzb` |
@@ -169,7 +165,7 @@ Then `zda,dac,acb` are tight, so `(z,d,a,c,b)` is Hamiltonian, a contradiction. 
 
 Suppose next that the low edge `ab` is outgoing from `d`, so `dab,dba` are tight. The corresponding forcing chain is
 
-| known tight triples | five-vertex order | forced tight triple |
+| tight triples | five-vertex order | forced tight triple |
 | --- | --- | --- |
 | `dba, baz` | `c d b a z` | `bdc` |
 | `bdc, caz` | `b d c a z` | `acd` |
@@ -218,11 +214,11 @@ Normalize the matching blocks as
 
 `M_low={ab,cz}`, `M_mid={ac,bz}`, `M_high={bc,az}`.
 
-Let `u,v` be distinct vertices outside `X`. Suppose that for every `x in X`, both
+Let `u,v` be distinct vertices of `V(H)-X`. Suppose that for every `x in X`, both
 
 `(x,u,v)` and `(u,v,x)`
 
-are tight. Then either `X union {u}` has a Hamilton tight path or `X union {u,v}` has a Hamilton tight path.
+are tight. Then either `H[X union {u}]` has a Hamilton tight path or `H[X union {u,v}]` has a Hamilton tight path.
 
 **Proof.** The block order gives the tight triples
 
@@ -230,7 +226,7 @@ are tight. Then either `X union {u}` has a Hamilton tight path or `X union {u,v}
 
 Assume for contradiction that neither a Hamilton P5 on `X union {u}` nor a Hamilton P6 on `X union {u,v}` exists.
 
-Since `(c,u,v)` and `(u,v,z)` are tight, the candidate
+Since `(c,u,v)` and `(u,v,z)` are tight, the path
 
 `(b,a,c,u,v,z)`
 
