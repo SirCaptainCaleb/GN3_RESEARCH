@@ -6,10 +6,11 @@
           - `S` has intrinsic matching blocks `M_low<M_mid<M_high`; `M_low∪M_high` is an alternating 4-cycle giving four extreme-block `3+1` covers of `S`.
           - For every Hamilton ordering of `X` with endpoints `l,r`, `S+l`, `S+r`, and `S+l+r` are non-Hamiltonian while all mixed faces obtained by deleting one vertex of `S` are Hamiltonian.
           - Every realizable ordered initial or terminal pair of a Hamilton ordering of `X` is universally blocked by `S`; no pair can begin one Hamilton ordering while its reverse ends another.
+          - Every endpoint of every Hamilton ordering has the non-Hamiltonian five-set interface over the same ordered matchings: a low edge enters it, a high edge leaves it, the reverse extreme directions are forbidden, and the middle matching splits directions.
         - Minimal-counterexample exchange step: use exact two-covers of endpoint-pair deletions to turn the universal interface into augmentation or another `n-4` Hamiltonian vertex set.
           - A two-crossing comparison either yields a literal spanning splice or exchanges two vertices to another globally longest vertex set.
           - Show that the finite family of globally longest vertex sets cannot remain closed under the forced two-vertex exchanges while all members remain ordered-end-pair separated.
-          - Use the low/high matching-mate dynamics on successive four-vertex complements to force either an opposite end-pair realization or a spanning two-cover.
+          - Track how the ordered matching interface and low/high mate dynamics change under successive exchanges; force either an opposite end-pair realization or a spanning two-cover.
         - Test the stronger parent theorem directly: every boundary tournament with `pc(H)>2` has every Hamiltonian induced vertex set missing at least five vertices; isolate exactly which deletion-cover hypothesis is needed if full minimality is unnecessary.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For larger complements, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
