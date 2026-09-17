@@ -121,3 +121,42 @@ Summing over all four-sets counts every edge from `F` to `bar(F)` exactly once. 
 Consequently
 
 `e(F,bar(F)) <= (3/2)(10|F|)=15|F|`. ∎
+
+## 4. Hamilton-five density hierarchy in boundary tournaments
+
+Let `H` be a boundary tournament, let `W⊆V(H)` have order `r>=6`, and fix `S⊆W` of order `s∈{0,1,2,3}`. Let `h_5(W;S)` be the number of five-subsets `F` such that
+
+`S⊆F⊆W`
+
+and `H[F]` is Hamiltonian. Then the fraction of five-subsets containing `S` that are non-Hamiltonian is at most
+
+`(r-s)/[(5-s)(r-4)]`.
+
+Equivalently,
+
+`h_5(W;S) >= [1-(r-s)/((5-s)(r-4))] binom(r-s,5-s)`.
+
+For `s=0`, this gives Hamilton-five density at least
+
+`4(r-5)/[5(r-4)]`.
+
+For fixed vertex, pair, and triple, the corresponding asymptotic guaranteed densities tend respectively to `3/4`, `2/3`, and `1/2`. For every `r>10`, these bounds strictly improve the elementary fixed-subset density bounds obtained by direct double counting from the four-of-six theorem.
+
+**Proof.** Let `B_S` be the family of sets
+
+`F-S`
+
+where `S⊆F⊆W`, `|F|=5`, and `H[F]` is non-Hamiltonian. Then `B_S` is `k=(5-s)`-uniform on the `N=r-s` vertices of `W-S`.
+
+Every `(k+1)=(6-s)`-subset `U⊆W-S` corresponds to the six-set `S∪U`. By `SMALL_ORDER_HAMILTONICITY.md` Section 6, at least four of the six five-subsets of `S∪U` are Hamiltonian. Hence at most two members of `B_S` lie inside `U`.
+
+Apply Section 2 with `t=2`. The bad-set density satisfies
+
+`p_bad <= [k+(N-k)]/[k(N-k+1)] = N/[k(N-k+1)]`.
+
+Substituting `N=r-s`, `k=5-s`, and `N-k+1=r-4` gives
+
+`p_bad <= (r-s)/[(5-s)(r-4)]`.
+
+Complementing inside the family of all five-subsets containing `S` gives the displayed Hamiltonian density. ∎
+
