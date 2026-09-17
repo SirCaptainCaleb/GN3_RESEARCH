@@ -8,7 +8,7 @@ This file defines only the durable project topology and authority model. Mathema
 
 GitHub is the durable GN3 authority. Slack is the live communication and search surface. Canonical current mathematics belongs under `GN3/`; the `A7C3/` tree and A7C3-era Slack/Canvas material are legacy provenance and archaeology, not current operating authority.
 
-The completed A7C3→GN3 migration archive is `A7C3/a7c3_migration/`. It includes migration evidence and the thin provenance map. These files are archival recovery aids; they may describe older startup paths or file layouts and must not override the numbered init documents.
+The completed A7C3→GN3 migration archive is `A7C3/a7c3_gn3_migration/`. It includes migration evidence and the thin provenance map. These files are archival recovery aids; they may describe older startup paths or file layouts and must not override the numbered init documents.
 
 ## Canonical mathematical surfaces
 
