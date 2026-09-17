@@ -79,7 +79,7 @@ Scratch research may use temporary names, gadgets, computations, case trees, heu
 
 Canonical GN3 mathematics is different. It inherits only exact statements and proofs that survive compression and the certification policy in `ARCHITECTURE.md`. Repeated downstream use does not certify a result.
 
-`RESEARCH_TREE.md` sits between these layers. It is synthesized working state: more organized than Slack scratch, but neither certified mathematics nor a durable theorem inventory.
+`RESEARCH_TREE.md` sits between these layers. It is synthesized working state: more organized than Slack scratch, but neither certified mathematics nor a durable theorem inventory. It may record compact audit status for exact live facts when that helps distinguish trusted support from optimistic support.
 
 ## Search progress versus proof progress
 
@@ -92,33 +92,44 @@ Exploration can be valuable without advancing the proof. Before reporting **proo
 
 If not, report it as search information, not proof closure.
 
+## Continuous Director/Vice Director synthesis
+
+Synthesis is continuous, not merely an end-of-wave cleanup. The Vice Director should repeatedly restore a top-down view from theorem to unresolved bridge to candidate mechanism to concrete subproblem, because incoming research will naturally skew local and constructive.
+
+For every substantive recent finding, deliberately test the statement as written, natural strengthened forms, and useful weakened forms at the **earliest place in the proof spine where they can apply**. A discovery should not be evaluated only inside the branch that produced it. If a weaker form already closes an earlier obligation, prefer the simpler requirement; if a useful stronger form collapses several obligations and has a real proof, pursue it as new mathematics.
+
+At the same time, inspect mathematics being relied on by the active strategy that is not already in the audited proof spine or an audited toolkit module. Decide whether it has become load-bearing. Load-bearing extra-spine mathematics must be routed to independent audit promptly; optimistic use may continue during research, but the favored route should not silently accumulate unaudited dependencies. A passed exact result may be recorded at its natural node in `RESEARCH_TREE.md`, and the Vice Director then decides whether it should be canonized into the proof spine or toolkit.
+
+The Vice Director updates `RESEARCH_TREE.md` during the cycle whenever the abstraction changes, not only after a wave. Guidance must have an identifiable place in the tree. Before issuing or materially revising guidance, determine which node or closely related cluster of nodes it attacks and why that is the right next descent from the theorem-level objective. If guidance no longer matches the best abstraction, revise the tree and guidance together.
+
 ## Research-tree synthesis
 
-After a guidance wave, the Director or a delegated Vice Director acts as the **compressor**. Only one compressor should own a given synthesis pass.
+The Director or a delegated Vice Director acts as the **compressor**. Only one compressor should own a given synthesis pass.
 
-The compressor reads the `[G##]` roots and their relevant proof threads, then updates `RESEARCH_TREE.md` according to what the burst changed in the mathematical picture. This is synthesis, not transcription:
+The compressor reads the relevant `[G##]` roots and proof threads, then updates `RESEARCH_TREE.md` according to what the mathematics changed in the live picture. This is synthesis, not transcription:
 
 - merge equivalent or overlapping discoveries;
 - replace several local facts by a supported stronger abstraction when appropriate;
 - preserve precise blockers and necessary hypotheses;
 - split a node only when the mathematics genuinely branches;
 - delete dead routes and redundant local steps;
+- place current guidance in the hierarchy rather than treating it as a free-floating task;
 - do not create a node merely because a result was proved or audited.
 
 Researchers normally do not edit the tree directly. They communicate discoveries, corrections, and structural suggestions in `#gn3-research`; the Director or delegated Vice Director performs the low-concurrency rewrite.
 
-The tree should remain aggressively mutable. Its purpose is to show **what the current search looks like**, not to preserve credit, chronology, or every true intermediate statement.
+The tree should remain aggressively mutable. Its purpose is to show **what the current search looks like from the top down**, not to preserve credit, chronology, or every true intermediate statement.
 
 ## Compression cycle
 
 The ordinary cycle is:
 
-**team-wide guidance → tagged research burst → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
+**top-down tree review → team-wide guidance → tagged research burst → continuous Director/Vice Director synthesis and audit triage → research-tree rewrite → next guidance.**
 
 From there, stronger compression happens when mathematics earns a durable role:
 
-1. proof-carrying mathematics enters the canonical sequential proof spine;
-2. independently reusable mathematics enters the small toolkit;
+1. proof-carrying mathematics enters the canonical sequential proof spine after exact audit;
+2. independently reusable mathematics enters the small toolkit after exact audit;
 3. the compact research-state file records the big picture and governing frontier;
 4. unusually valuable negative knowledge or provenance is retained only when it prevents future reconstruction of a known bad route.
 
