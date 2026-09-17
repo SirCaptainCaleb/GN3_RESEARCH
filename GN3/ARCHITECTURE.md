@@ -41,7 +41,7 @@ The intentionally small active GN3 channel set is:
 - `#gn3-changelog` (`C0C1VMME8MV`): high-signal project deltas, architecture changes, certification-impact changes, and major research-state changes.
 - `#gn3-guidance` (`C0C2ET66370`): Director/Vice Director team-wide research guidance waves and material guidance revisions. Each `[G##]` guidance root lives here.
 - `#gn3-research` (`C0C2ENRLHE0`): expansive mathematical research, proof construction, discussion, and temporary structures responding to current or recent guidance.
-- `#gn3-audit` (`C0C2D179WSV`): independent skeptical verification and certification work on exact proposed GN3 mathematics.
+- `#gn3-audit` (`C0C2D179WSV`): independent skeptical verification and certification of exact load-bearing mathematics selected for audit by the Vice Director.
 
 The pre-existing renamed `#gn3-lab` is transitional legacy and is not a canonical GN3 surface.
 
@@ -62,6 +62,18 @@ GitHub placement does not by itself certify a theorem. Exact status must remain 
 A substantive rewrite is new mathematical text for certification purposes. Old A7C3 PASS status is provenance, not automatic certification of a GN3 rewrite. Editorial inheritance is allowed only after an auditor confirms that the mathematics is unchanged.
 
 `GN3/STATUS.md` records the exact audited proof coordinate and the open mathematical frontier. Status metadata belongs outside proof exposition.
+
+## Load-bearing audit model
+
+GN3 does **not** audit every intermediate research result. Slack discoveries, temporary lemmas, research-tree observations, and other extra-spine mathematics remain ordinary search material and may be used optimistically during research. Correctness, recency, or repeated scratch use alone does not create an audit obligation.
+
+The **Vice Director owns audit triage**. During synthesis, the Vice Director determines which exact statements and proofs have become load-bearing for the shortest favored proof, an important live alternative, a proposed canonical rewrite, or a genuinely reusable toolkit theorem. Only mathematics that has crossed that threshold should normally be sent to `#gn3-audit`. The handoff should identify the exact mathematical text to be checked and why it is load-bearing; it should not ask the Auditor to rediscover the research strategy.
+
+Each such audit is owned by **one independent Auditor**. That Auditor checks the exact statement and proof skeptically, together with the canonical dependencies needed to verify it, and returns the certification status of that exact mathematics. Routine audits should not be duplicated in parallel or decomposed among several auditors merely for throughput; if a genuinely large object needs decomposition, the Vice Director decides that explicitly. Passing certification attaches only to the audited text and stated scope.
+
+Research does not pause while an audit is underway. Researchers may continue to use unaudited work optimistically, but canonization waits for the relevant load-bearing audit. If an audit fails, weakens, or materially repairs a statement, the Vice Director propagates that correction through the favored route, research tree, guidance, and any affected canonical candidate. A substantive repair or rewrite is new mathematical text and requires fresh independent audit before certification.
+
+This asymmetry is intentional: **research is broad and cheap; independent audit is narrow and load-bearing.** The goal is to spend skeptical verification effort exactly where the proof begins to depend on it, without turning every exploratory result into certification work.
 
 ## Global proof-coding policy
 
@@ -116,7 +128,7 @@ The Vice Director runs a continuous Director cycle around and between research w
 
 1. **Synchronize the whole live picture.** Read the current proof spine, toolkit, audit status, research tree, current guidance, and relevant new research. Treat the research tree as an object that must be actively maintained during the cycle, not merely rewritten after a wave ends.
 2. **Re-test every substantive recent finding at the earliest possible proof coordinate.** For each finding, test the statement as written and also deliberately test natural strengthened and useful weakened forms. Ask at the earliest place in the proof spine where the relevant hypotheses can hold whether any such form proves, strengthens, simplifies, bypasses, or invalidates an existing step. A downstream discovery may close an upstream branch; a stronger form may collapse several obligations; a weaker form may already be sufficient and substantially easier to certify or reuse. Do not evaluate a result only inside the local branch that produced it.
-3. **Audit-triage all extra-spine mathematics by load-bearingness.** Inspect mathematics currently being relied on in research, guidance, or the research tree that is not already contained in the audited proof spine or an audited toolkit module. Decide whether each such fact has become load-bearing for the favored route or an important live alternative. If it has, route its exact statement and proof to independent audit promptly. Optimistic use during research is allowed, but the active strategy must not silently accumulate unaudited load-bearing dependencies.
+3. **Select load-bearing mathematics for audit.** Inspect mathematics currently being relied on in research, guidance, or the research tree that is not already contained in the audited proof spine or an audited toolkit module. The Vice Director decides which exact statements and proofs have become load-bearing for the favored route or an important live alternative, and sends those—rather than the general backlog of intermediate results—to one independent Auditor in `#gn3-audit`. Optimistic use during research is allowed, but the active strategy must not silently accumulate unaudited load-bearing dependencies.
 4. **Integrate audited load-bearing results into the abstraction.** When an independently audited result passes, record the mathematical fact at the natural node of `GN3/RESEARCH_TREE.md` when it remains part of the live abstraction, with a compact indication that the exact result has passed audit. Then decide whether it should also be compressed into the proof spine at the earliest natural location or into the toolkit if it is genuinely reusable. The research tree may record that a live supporting fact is audited, but it does not itself confer certification.
 5. **Re-evaluate the shortest favored route from the top down.** Starting from the theorem and the earliest unresolved proof step, ask which branches are now closed, subsumed, contradicted, bypassed, or unnecessarily strong. Stop spending research effort on obsolete branches and remove or compress them in the research tree.
 6. **Rewrite the research tree during the cycle.** Maintain `GN3/RESEARCH_TREE.md` as the best current hierarchy of theorem-level objective → unresolved bridge → candidate mechanism → concrete subproblem. Merge overlapping discoveries, promote a supported parent abstraction when it explains several local facts, split only where the mathematics genuinely branches, preserve concrete blockers, and delete dead structure aggressively. The tree should make the global proof strategy legible even when most incoming research is local and constructive.
