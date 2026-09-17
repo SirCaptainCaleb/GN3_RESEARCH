@@ -41,6 +41,8 @@ Stop elaborating an abstraction when it is genuinely defeated and no credible re
 
 Scratch research may use temporary names, case trees, calculations, exploratory constructions, heuristic pictures, and unaudited results. Search may consume unaudited work optimistically unless it has been explicitly failed, invalidated, quarantined, or superseded. Repeated use does not certify it; certification is governed by `04_AUDIT_PROTOCOL.md`.
 
+Concurrent mathematics is part of the live search. During a long research task, resynchronize relevant Slack activity at natural mathematical boundaries when newly posted work could materially change the mechanism, target, or shortest route. This is not a requirement for constant polling; finish a coherent local step, then incorporate important concurrent results before building substantially on a stale picture.
+
 ## Conservative computation discipline
 
 Prefer a human-scale mathematical argument to a broad symbolic or exhaustive computation whenever the former is reasonably available. Computation is most useful when it answers a sharply stated finite question; it is not the default way to compare two formulations or re-derive a known structural fact.
@@ -55,10 +57,10 @@ When computation is genuinely load-bearing, retain only what makes the argument 
 
 The Vice Director runs a continuous Director cycle around and between research waves. A wave is one instrument inside the cycle, not a batch that must finish before direction changes.
 
-1. **Synchronize the live picture.** Read the current proof spine, toolkit, research tree, current guidance, relevant new research, and the audit state of mathematics the favored route depends on.
+1. **Synchronize the live picture.** Read the current proof spine, toolkit, research tree, current guidance, relevant new research, and the certification state of mathematics the favored route actually depends on. During a long cycle, resynchronize at natural mathematical boundaries when concurrent work may have changed that picture.
 2. **Re-test every substantive new result at the earliest possible proof coordinate.** Test the statement as written and natural strengthened or useful weakened forms. Ask at the earliest point where its hypotheses can hold whether it proves, simplifies, strengthens, bypasses, or invalidates an existing step. A result discovered later in the proof may close an earlier branch or make later machinery unnecessary.
-3. **Select load-bearing mathematics for audit.** Determine which exact extra-spine statements and proofs have become necessary to the shortest favored route, an important live alternative, a proposed canonical rewrite, or a genuinely reusable toolkit theorem. Route those exact objects—not the general research backlog—to independent audit under `04_AUDIT_PROTOCOL.md`.
-4. **Integrate audited mathematics.** When an exact result passes, place the mathematical fact at its natural location in the live abstraction if it is still needed, and decide whether it should be compressed into the proof spine or toolkit.
+3. **Select and track load-bearing mathematics for audit.** Determine which exact extra-spine statements and proofs have become necessary to the shortest favored route, an important live alternative, a proposed canonical rewrite, or a genuinely reusable toolkit theorem. The Vice Director owns this audit triage and keeps track of which active load-bearing dependencies still require independent certification. Route only those exact objects—not the general research backlog—to audit under `04_AUDIT_PROTOCOL.md`. There is no chronological audit frontier and no requirement to certify intermediate results that the live strategy does not depend on.
+4. **Integrate audited mathematics.** When an exact result passes, place the mathematical fact at its natural location in the live abstraction if it is still needed, and decide whether it should be compressed into the proof spine or toolkit. If an audit fails, weakens, or materially repairs a live dependency, propagate that change through the favored route, research tree, and guidance.
 5. **Re-evaluate the shortest favored route from the top down.** Start from the theorem and earliest unresolved step. Identify branches that are closed, subsumed, contradicted, bypassed, or unnecessarily strong, and remove or compress obsolete structure.
 6. **Maintain the research tree.** Keep `GN3/RESEARCH_TREE.md` as the best current hierarchy of theorem-level objective → unresolved bridge → candidate mechanism → concrete subproblem. Merge overlapping discoveries, promote a supported parent abstraction when it explains several local facts, preserve concrete blockers, and split only where the mathematics truly branches.
 7. **Place guidance in the tree.** Before or while issuing guidance, identify the live node or closely related node cluster being attacked and why it is the right next descent from the theorem-level objective. If guidance no longer matches the best abstraction, revise the tree and guidance together.
@@ -66,7 +68,7 @@ The Vice Director runs a continuous Director cycle around and between research w
 9. **Canonize only after exact certification.** Durable proof dependencies belong eventually in audited canonical mathematics rather than remaining only in Slack or the tree. A passed local fact need not be canonized if it is still temporary working structure.
 10. **Escalate to Astra when the abstraction itself needs to change.** Escalate for a strategic reframe, stronger parent theorem, global bypass, major invariant change, or substantial architecture decision rather than ordinary local direction.
 
-Then repeat. The cycle exists to keep asking whether new mathematics shortens the proof and improves the abstraction, not merely to generate more local results.
+Then repeat. The cycle exists to keep asking whether new mathematics shortens the proof and improves the abstraction, not merely to generate more local results. Audit tracking is part of this synthesis responsibility: the Vice Director needs to know which facts the favored route presently relies on and which of those still need certification, but GN3 does not maintain a project-wide audit backlog for every research result.
 
 ## Research-tree management
 
