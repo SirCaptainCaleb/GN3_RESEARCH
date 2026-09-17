@@ -36,7 +36,7 @@ Suppose first that `(a,c,b)` is tight. If `(c,b,d)` were tight, then `(a,c,b,d)`
 
 Suppose instead that `(b,c,a)` is tight. If `(c,a,d)` were tight, then `(b,c,a,d)` would be Hamiltonian; hence `(d,a,c)` is tight. If `(b,d,a)` were tight, then `(b,d,a,c)` would be Hamiltonian because `(d,a,c)` is tight; hence `(a,d,b)` is tight. If `(d,b,c)` were tight, then `(d,b,c,a)` would be Hamiltonian because `(b,c,a)` is tight; hence `(c,b,d)` is tight. These three choices determine every reversal pair and give the block order `M_0<M_2<M_1`.
 
-Both block orders have no increasing Hamilton four-vertex path by the non-Hamiltonian `K_4` classification in Lemma 2.4 of the proof spine, so both completions occur and there are no others. ∎
+Both block orders have no increasing Hamilton four-vertex path by the matching-block classification in `SMALL_ORDER_HAMILTONICITY.md` Section 4.1, so both completions occur and there are no others. ∎
 
 ## 2. The cyclic non-Hamiltonian four-vertex configuration is extended by every fifth vertex
 
@@ -96,7 +96,7 @@ Let `H` be a boundary tournament and let `X subseteq V(H)` have four vertices. S
 
 `(u,v,w)` is tight in `H` if and only if `uv<vw`.
 
-Assume `K_X` has no increasing Hamilton path. By Lemma 2.4 of the proof spine, its three opposite-edge perfect matchings occur in strict blocks. Write
+Assume `K_X` has no increasing Hamilton path. By `SMALL_ORDER_HAMILTONICITY.md` Section 4.1, its three opposite-edge perfect matchings occur in strict blocks. Write
 
 `M_low < M_mid < M_high`
 
@@ -246,7 +246,7 @@ Consequently, if `h_4(r)` is the number of four-subsets of an edge-ordered `K_r`
 
 `h_4(r) >= (3/5) binom(r,4)`.
 
-**Proof.** In a non-Hamiltonian edge-ordered `K_4`, Lemma 2.4 says the three opposite-edge perfect matchings occur in strict blocks. Hence for adjacent edges `e,f`, comparison is preserved on passing to their opposite edges `e*,f*`:
+**Proof.** In a non-Hamiltonian edge-ordered `K_4`, `SMALL_ORDER_HAMILTONICITY.md` Section 4.1 says the three opposite-edge perfect matchings occur in strict blocks. Hence for adjacent edges `e,f`, comparison is preserved on passing to their opposite edges `e*,f*`:
 
 `e<f` if and only if `e*<f*`.
 
