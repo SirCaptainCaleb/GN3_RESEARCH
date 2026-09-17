@@ -1,6 +1,6 @@
 # 03 — GN3 research protocol
 
-This file governs live mathematical search, Director/Vice Director synthesis, guidance, and maintenance of `GN3/RESEARCH_TREE.md`.
+This file governs live mathematical search, Director/Vice Director synthesis, guidance, and maintenance of `RESEARCH_TREE.md`.
 
 ## What counts as progress
 
@@ -72,7 +72,7 @@ Then repeat. The cycle exists to keep asking whether new mathematics shortens th
 
 ## Research-tree management
 
-`GN3/RESEARCH_TREE.md` is a **pure nested outline** of the live mathematical search. The file contains nothing except the outline itself: no title, preamble, legend, framing paragraphs, instructions, rationale, commentary, bibliography, audit notes, or closing remarks. All rules for maintaining the tree belong here in `GN3/INIT/` rather than in the tree.
+`RESEARCH_TREE.md` is a **pure nested outline** of the live mathematical search. The file contains nothing except the outline itself: no title, preamble, legend, framing paragraphs, instructions, rationale, commentary, bibliography, audit notes, or closing remarks. All rules for maintaining the tree belong here in `INIT/` rather than in the tree.
 
 Each outline item is one brief Markdown line expressing a mathematical headline statement or guiding abstraction. Multiple short sentences, formulas, or clauses may appear on that same line when needed for precision, but a node has no attached body paragraph. Do not turn a node into a mini-memo, proof sketch, implementation checklist, literature note, or explanation of why it matters.
 
