@@ -6,17 +6,19 @@ This file governs independent certification of GN3 mathematics. Research may use
 
 GN3 does **not** audit every intermediate research result. Slack discoveries, temporary lemmas, research-tree observations, and other extra-spine mathematics remain ordinary search material unless and until the Vice Director determines that they have become load-bearing.
 
-The Vice Director owns audit triage and audit tracking during the Director cycle. Send an exact mathematical object to `#gn3-audit` when independent certification would materially change how the active proof is allowed or expected to rely on it—for example when it has become necessary to the shortest favored proof, an important live alternative, a proposed canonical rewrite, or a genuinely reusable toolkit theorem.
+The Vice Director owns audit triage and audit tracking during the Director cycle. At natural synthesis points, the Vice Director sends a **batch audit request** containing the exact load-bearing mathematical targets that currently need independent certification—for example statements necessary to the shortest favored proof, an important live alternative, proposed canonical rewrites, or genuinely reusable toolkit theorems.
 
-The handoff identifies the exact statement and proof to be checked and why it is load-bearing. It does not ask the Auditor to reconstruct the research strategy, maintain a chronological audit backlog, or inspect unrelated pending research.
+A batch should identify each exact statement and proof to be checked, together with enough context to explain why the items are load-bearing and how they relate. The Auditor is not asked to reconstruct the research strategy, maintain a chronological audit backlog, or inspect unrelated pending research. Batching is for coherent verification and efficient context reuse, not for sweeping up every recent result.
 
-There is no project-wide audit frontier, no requirement that research results carry audit-status tags, and no requirement to certify results merely because they were posted earlier. The Vice Director tracks the certification needs of the mathematics the live strategy actually depends on.
+There is no project-wide audit frontier, no requirement that research results carry audit-status tags, and no requirement to certify results merely because they were posted earlier. The Vice Director tracks the certification needs of the mathematics the live strategy actually depends on and decides what belongs in the next batch.
 
 ## What an audit certifies
 
-An audit certifies an **exact mathematical target**: a stated theorem, lemma, proof section, proposed canonical rewrite, or other explicitly delimited text. GitHub placement, downstream use, recency, and agreement among researchers do not certify mathematics.
+An audit batch may contain several **exact mathematical targets**: stated theorems, lemmas, proof sections, proposed canonical rewrites, or other explicitly delimited texts. GitHub placement, downstream use, recency, and agreement among researchers do not certify mathematics.
 
-Each selected audit is owned by **one independent Auditor**. The Auditor must be independent of the authorship of the exact text being certified. Routine targets should not be duplicated in parallel or decomposed among several auditors merely for throughput. If a target is genuinely too large for one coherent audit, the Vice Director decides explicitly how to divide the certification task without losing whole-object verification.
+Each audit batch is owned by **one independent Auditor**. The Auditor must be independent of the authorship of the exact text being certified. The Auditor may exploit shared definitions, dependencies, or context across the batch, and may choose a sensible internal order of verification. Routine batches should not be duplicated in parallel or split among several auditors merely for throughput. If a batch is genuinely too large for one coherent audit, the Vice Director decides explicitly how to divide it without losing necessary whole-object or cross-dependency verification.
+
+Certification remains **itemwise even when assignment is batched**. Each exact target receives its own scope and disposition; one failed or revised item does not automatically determine the status of the others. The Auditor should also report material dependency interactions across batch items when one target's validity changes what can be concluded about another.
 
 An author may explain or repair the work but may not self-certify it.
 
@@ -26,17 +28,17 @@ Research does not pause while audit is underway. Researchers may continue to use
 
 ## Dependencies
 
-The Auditor checks the exact target together with the canonical facts and explicitly named hypotheses needed to verify it. If the target depends on an uncertified upstream statement, the Auditor may verify the local implication conditional on that exact hypothesis, but doing so does not certify the upstream statement or make the whole dependency chain unconditional.
+The Auditor checks each exact target together with the canonical facts and explicitly named hypotheses needed to verify it. If one batch item depends on another batch item, audit that dependency in a mathematically sensible order. If a target depends on an uncertified statement outside the batch, the Auditor may verify the local implication conditional on that exact hypothesis, but doing so does not certify the upstream statement or make the whole dependency chain unconditional.
 
-The audit response should name any such unresolved dependency clearly. The Vice Director then decides whether that dependency itself has become load-bearing enough to audit. GN3 does not maintain separate `CONTINGENT` status tags or a chronological mechanism for clearing them.
+The audit response should name unresolved dependencies clearly. The Vice Director then decides whether they belong in a later audit batch. GN3 does not maintain separate `CONTINGENT` status tags or a chronological mechanism for clearing them.
 
 ## `#gn3-audit` structure
 
-Each audit target gets one concise top-level root identifying the exact target. Prefer a GitHub path plus commit or blob coordinate for repository text; for Slack mathematics, link the exact research root/thread and state the scope being audited. Retain the `[G##]` tag when useful for retrieval.
+Each Vice-Director batch gets one concise top-level audit root identifying the batch and enumerating or linking its exact targets. Prefer GitHub paths plus commit or blob coordinates for repository text; for Slack mathematics, link the exact research roots/threads and state the scope being audited. Retain the `[G##]` tag when useful for retrieval.
 
-Detailed verification, derivations, counterexamples, objections, proposed repairs, author responses, and discussion belong in replies to the audit root. The final disposition belongs in the same thread and names the exact revision or Slack statement it applies to. That audit thread is the record of the certification event; the Vice Director consumes the result during synthesis and updates the live strategy or canonical candidate as needed.
+Detailed verification, derivations, counterexamples, objections, proposed repairs, author responses, dependency notes, and discussion belong in replies to the batch root. The Auditor may organize replies itemwise when useful. The final batch response gives a separate disposition for every exact target and names the exact revision or Slack statement to which each disposition applies. That thread is the record of the certification event; the Vice Director consumes the results during synthesis and updates the live strategy or canonical candidates as needed.
 
-Use these dispositions:
+Use these dispositions for each target:
 
 - **PASS** — the exact target is certified at the stated scope;
 - **PASS_ADJUSTED** — corrections or qualifications were required and the final repaired version was checked;
@@ -55,6 +57,6 @@ If independent verification begins producing large output with little additional
 
 A PASS does not itself rewrite canonical project state. The Vice Director decides how the certified mathematics affects the favored route and whether it should enter the proof spine or toolkit. When certification changes durable mathematics, update the appropriate canonical text and record the high-signal delta in `#gn3-changelog`. Preserve provenance only when it materially improves recoverability or future audit.
 
-There is no separate `STATUS.md`, project-wide audit ledger, chronological audit frontier, or research-headline status system. Current proof openness is visible in the proof spine. The live abstraction and the set of audit-relevant dependencies are managed by the Vice Director through the Director cycle. Exact certification of an audited target is recorded in its audit thread and, when the mathematics becomes durable, in the corresponding canonical revision.
+There is no separate `STATUS.md`, project-wide audit ledger, chronological audit frontier, or research-headline status system. Current proof openness is visible in the proof spine. The live abstraction and the set of audit-relevant dependencies are managed by the Vice Director through the Director cycle. Exact certification of audited targets is recorded in the corresponding batch audit thread and, when mathematics becomes durable, in the canonical revision that incorporates it.
 
 A REVISION REQUIRED or FAIL that changes the live search is fed back to the Vice Director so the research tree and guidance can be recompressed. Audit transcripts do not belong in the research tree.
