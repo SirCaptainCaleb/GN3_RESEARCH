@@ -101,7 +101,7 @@ GN3 optimizes proof progress, not artifact production. `GN3/RESEARCH_PROTOCOL.md
 - Truthful null returns are first-class: “no proof found” and “no theorem progress found” are legitimate outcomes.
 - A stalled route must be classified as counterexample/impossibility, necessary missing hypothesis, specific structural obstruction, or no proof found. Failure to find a proof does not refute an abstraction.
 - The Director default is the earliest unjustified statement in the shortest presently favored proof, while bounded alternative abstractions remain welcome when they could bypass the gap or simplify the global picture.
-- Director guidance is normally **team-wide rather than individually partitioned**. The team may deliberately pile onto the same frontier; overlap and near-simultaneous discoveries are expected and useful.
+- Director guidance states the current mathematical target and why it matters.
 - Each Director research wave receives a guidance tag `[G##]`. The guidance post is a top-level message in `#gn3-guidance` and states the common target. A researcher responding to that wave posts each exact discovery statement as a top-level `#gn3-research` message prefixed by the same `[G##]`; **the root contains the statement only**, while every proof, derivation, qualification, computation, explanation, and discussion belongs in replies to that root. This tag is a retrieval device, not mathematical notation or permanent theorem identity.
 - Researchers reason abstraction-first and construct at increasing resolution: state the coarse mathematical mechanism, then refine only what is needed to realize it literally.
 - Stop elaborating an abstraction when it is genuinely defeated, not merely when one search attempt fails.
@@ -130,7 +130,7 @@ Then repeat. The purpose of the cycle is not merely to generate more local resul
 
 The tree is organized by mathematical objectives, unresolved obligations, arguments, and competing approaches. Nodes should have semantic names. They are not result IDs, theorem IDs, or permanent objects. A node may contain a compact argument sketch, a synthesized observation, a blocker, or children representing genuine mathematical decomposition or competing routes.
 
-Individual research discoveries normally do **not** become nodes merely because they were proved or audited. During a `[G##]` wave, researchers post discoveries concurrently in Slack. After the wave, the Director or a delegated Vice Director reads the tagged responses and rewrites the relevant portion of the tree to reflect the best current understanding. Several discoveries may collapse into one sentence or one node; a failed branch may be deleted entirely; a stronger abstraction may replace a whole subtree.
+Individual research discoveries normally do **not** become nodes merely because they were proved or audited. During a `[G##]` wave, researchers post discoveries in Slack. After the wave, the Director or a delegated Vice Director reads the tagged responses and rewrites the relevant portion of the tree to reflect the best current understanding. Several discoveries may collapse into one sentence or one node; a failed branch may be deleted entirely; a stronger abstraction may replace a whole subtree.
 
 Only the Director or a delegated Vice Director normally edits `GN3/RESEARCH_TREE.md`. For any synthesis pass, one such worker should act as the compressor so that researchers never need to coordinate concurrent edits to the tree. Researchers communicate corrections or proposed structural changes through `#gn3-research` rather than racing direct tree edits.
 
@@ -152,7 +152,7 @@ Reusable mathematics is selected by factorization rather than historical logging
 
 The ordinary research cycle is:
 
-**team-wide guidance in `#gn3-guidance` → tagged parallel research burst in `#gn3-research` → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
+**team-wide guidance in `#gn3-guidance` → tagged research burst in `#gn3-research` → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
 
 Slack guidance is the low-noise direction stream; Slack research is the high-concurrency discovery stream. `GN3/RESEARCH_TREE.md` is the low-concurrency synthesized model of the current search. `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` is the canonical active proof. `GN3/TOOLKIT/README.md` indexes independently reusable mathematics.
 
