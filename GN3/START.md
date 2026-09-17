@@ -23,6 +23,9 @@ Always retrieve completely, using the method above:
 
 - `GN3/ARCHITECTURE.md`
 - `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md`
+- `GN3/TOOLKIT/README.md`
+
+The toolkit is part of startup mathematical context, not an optional lookup shelf. After reading `GN3/TOOLKIT/README.md`, also retrieve and read every standalone toolkit module that it currently indexes. Results merely indexed back into the proof spine need not be reread separately beyond the required proof-spine read.
 
 Then follow the startup instructions in `GN3/ARCHITECTURE.md` for any additional current-state or role-specific files.
 
