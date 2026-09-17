@@ -1,12 +1,14 @@
 # GN3 Architecture
 
-**Status: PROVISIONAL — governs migration work until this same file is finalized at cutover.**
+**Status: PROVISIONAL — governs migration work until cutover.**
 
 ## Mandatory startup
 
 After only the access, authentication, repository-location, and tool-discovery actions necessary to retrieve this file, every GN3 worker must fetch and read **one complete, internally consistent revision of this entire file** before synchronizing Slack, making mathematical inferences, editing migration state, or doing research. Search excerpts, selected ranges, summaries, memory, and prior initialization do not count. If retrieval truncates or paginates, continue until the complete revision has been obtained.
 
 GitHub is the sole durable GN3 architecture authority. Slack is a live communication and search surface. No Canvas is required for ordinary GN3 startup.
+
+After the complete architecture read, an ordinary research worker reads `GN3/STATUS.md` and `GN3/RESEARCH_STATE.md` before choosing a target. A worker proving or auditing a statement then reads the relevant exact mathematics in `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` and any explicitly cited canonical input. Legacy A7C3 material is pulled only when provenance or archaeology is actually needed.
 
 ## Governing principle
 
@@ -24,7 +26,7 @@ The migration baseline and recovery record is `GN3/MIGRATION/BASELINE.md`. Migra
 
 A7C3 research may continue during migration on the legacy A7C3 surfaces. Anything material after the recorded baseline is a post-baseline delta and must be explicitly incorporated, superseded, or deferred before cutover. Migration work itself belongs under `GN3/` and the new `gn3-*` Slack surfaces.
 
-The user has imposed one migration-order override: **the blank-page simplified proof-spine reconstruction occurs before vocabulary/neologism normalization.** Migration pauses at that boundary for user-supervised work. Do not begin vocabulary normalization first merely because it appears earlier in the original checklist.
+The user-ordered blank-page reconstruction and language reduction have been completed. The migration now follows the remaining checklist from the reconstructed GN3 state rather than restoring legacy proof topology.
 
 ## Live Slack surfaces
 
@@ -43,6 +45,8 @@ Do not mechanically recreate the A7C3 channel taxonomy. Add another GN3 channel 
 GitHub placement does not by itself certify a theorem. Exact status must remain visible. During research, unaudited mathematics may be consumed optimistically unless explicitly failed, invalidated, quarantined, or superseded; canonical certification remains conservative and attaches only to the exact statement/proof independently checked.
 
 A substantive rewrite is new mathematical text for certification purposes. Old A7C3 PASS status is provenance, not automatic certification of a GN3 rewrite. Editorial inheritance is allowed only after an auditor confirms that the mathematics is unchanged.
+
+`GN3/STATUS.md` records the exact audited proof coordinate and the open mathematical frontier. Status metadata belongs outside proof exposition.
 
 ## Global proof-coding policy
 
@@ -74,11 +78,34 @@ The proof-writing standards enforced in `GN3/PROOF_SPINE/` are **project-wide ma
 
 Auditors and integrators must enforce these rules globally. A mathematically plausible argument that violates them is not ready for canonical GN3 status even if its intended legacy source was previously accepted.
 
+## Research method
+
+GN3 optimizes proof progress, not artifact production. `GN3/RESEARCH_PROTOCOL.md` gives the expanded working rules; the durable principles are:
+
+- A useful research step improves a plausible proof, sharpens or removes a load-bearing gap, simplifies the structural picture, supplies a genuinely reusable principle, or identifies a concrete obstruction. Merely producing a valid lemma is not enough.
+- Truthful null returns are first-class: “no proof found” and “no theorem progress found” are legitimate outcomes.
+- A stalled route must be classified as counterexample/impossibility, necessary missing hypothesis, specific structural obstruction, or no proof found. Failure to find a proof does not refute an abstraction.
+- The Director default is the earliest unjustified statement in the shortest presently favored proof, while bounded alternative abstractions remain welcome when they could bypass the gap or simplify the global picture.
+- Researchers reason abstraction-first and construct at increasing resolution: state the coarse mathematical mechanism, then refine only what is needed to realize it literally.
+- Stop elaborating an abstraction when it is genuinely defeated, not merely when one search attempt fails.
+- Scratch research may consume unaudited work optimistically; canonization remains conservative and exact-text based.
+- Distinguish search progress from proof progress. Scratch structure is periodically compressed back into the proof spine, live research state, selected toolkit, or valuable negative-knowledge/provenance evidence.
+
+No role has a quota for named results, lemmas, Engines, or nonempty returns.
+
 ## Canonical mathematical representation
 
-The canonical proof spine will be a sequential, readable mathematical argument rather than an Engine dependency graph. Its exact representation is intentionally **not yet fixed**: the migration will first reconstruct the active proof from a blank page under user supervision. Unresolved steps may be explicit. Engine-like units, if retained later, are secondary organizational devices corresponding to coherent proof sections or genuinely reusable bounded mechanisms.
+The canonical proof spine is the single sequential document `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md`. Fresh researchers understand the theorem through that mathematics, not through an Engine dependency graph. The current exact proof/audit status is in `GN3/STATUS.md`; the compact big-picture route and earliest open bridge are in `GN3/RESEARCH_STATE.md`.
 
-Do not use this provisional architecture to pre-decide theorem boundaries, legacy vocabulary, or proof topology before reconstruction.
+The proof spine may contain explicit open statements, but unresolved implications must remain visibly unproved. At the current migration coordinate the audited argument ends at Proposition 6.2 and the augmentation statement that follows is open.
+
+Engine-like organization is secondary and optional. If a future Engine label is useful for a bounded Slack investigation, it does not create a mathematical ontology or canonical dependency node. A coherent reusable mechanism may become a theorem or section; a one-use argument stays where it is clearest.
+
+Reusable mathematics is selected by factorization rather than historical logging. `GN3/TOOLKIT/README.md` indexes the deliberately small reusable shelf; proof-local lemmas remain in the spine rather than being duplicated into another graph.
+
+## Working-state compression
+
+Slack research may contain temporary terminology, case trees, gadgets, computations, exploratory constructions, and provisional results. Ordinary inheritance is compressed: useful work should return to the sequential proof, the compact research state, the small reusable toolkit, or provenance/negative-knowledge evidence. Temporary search structure does not become mandatory startup context merely because it once helped discovery.
 
 ## Compactness invariant
 
@@ -86,7 +113,7 @@ This file must remain small enough that full-file reading is routine. Keep proof
 
 ## Migration recovery
 
-After reading this file in full, a migration worker reads `GN3/MIGRATION/BASELINE.md`, the evidence index, and the temporary Slack migration checklist. Completed checklist items must have durable evidence; conversational memory is never sufficient. At cutover this Canvas dependency disappears and this same architecture file is finalized rather than replaced.
+After reading this file in full, a migration worker reads `GN3/MIGRATION/BASELINE.md`, the migration evidence, and the temporary Slack migration checklist. Completed checklist items must have durable evidence; conversational memory is never sufficient. At cutover this Canvas dependency disappears and this same architecture file is finalized rather than replaced.
 
 ## End of complete architecture
 
