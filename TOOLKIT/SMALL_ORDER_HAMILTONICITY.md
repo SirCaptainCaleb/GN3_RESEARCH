@@ -1,6 +1,6 @@
 # Small-order Hamiltonicity and edge-order representation
 
-Throughout this file, `H` denotes an arbitrary boundary tournament unless another boundary tournament is explicitly named. No minimal-counterexample hypothesis is used.
+Throughout this file, `H` denotes an arbitrary boundary tournament unless another boundary tournament is explicitly named.
 
 Let `K_V` denote the ordinary complete graph on a vertex set `V`. Its edge set consists of the two-element subsets of `V`. The **line graph** `L(K_V)` is the graph with vertex set `E(K_V)` in which two vertices are adjacent exactly when the corresponding ordinary edges meet.
 
@@ -250,7 +250,7 @@ Let `P` be a tight path of `H` on three vertices and let `x,y,z` be distinct ver
 
 has a Hamilton tight path.
 
-**Proof.** Write `P` on vertices `{a,b,c}`. Assume, for contradiction, that all three five-sets obtained by adding two of `x,y,z` are non-Hamiltonian. By Section 3 shows that each is represented by an edge order. Their restrictions to the common triangle `{a,b,c}` realize the same comparison orientation, so after relabelling the three vertices we may assume
+**Proof.** Write `P` on vertices `{a,b,c}`. Assume, for contradiction, that all three five-sets obtained by adding two of `x,y,z` are non-Hamiltonian. Section 3 shows that each is represented by an edge order. Their restrictions to the common triangle `{a,b,c}` realize the same comparison orientation, so after relabelling the three vertices we may assume
 
 `ab<ac<bc`.
 
@@ -329,4 +329,4 @@ Let `S⊆V(H)` have order five. If `H[S]` is Hamiltonian, at most three four-ele
 
 **Proof.** Let `S` be a five-set. If `H[S]` is Hamiltonian, choose a Hamilton order `(v_0,...,v_4)`. Deleting `v_0` or deleting `v_4` leaves a Hamilton tight four-vertex path, so at most three of the five four-subsets are non-Hamiltonian.
 
-Suppose instead that `H[S]` is non-Hamiltonian. By Section 3 it is represented by an edge order. If two distinct four-subsets were both non-Hamiltonian, they would have the form `T∪{x}` and `T∪{y}` for their three-vertex intersection `T`. Their induced edge orders have no increasing Hamilton path, so Section 4 gives an increasing Hamilton path on all five vertices. By the representation, this is a tight Hamilton path of `H[S]`, a contradiction. Thus in the non-Hamiltonian case at most one four-subset is non-Hamiltonian. ∎
+Suppose instead that `H[S]` is non-Hamiltonian. By Section 3 it is represented by an edge order. If two distinct four-subsets were both non-Hamiltonian, they would have the form `T∪{x}` and `T∪{y}` for their three-vertex intersection `T`. Their induced edge orders have no increasing Hamilton path, so Section 4.2 gives an increasing Hamilton path on all five vertices. By the representation, this is a tight Hamilton path of `H[S]`, a contradiction. Thus in the non-Hamiltonian case at most one four-subset is non-Hamiltonian. ∎
