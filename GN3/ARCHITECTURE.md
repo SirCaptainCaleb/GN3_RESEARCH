@@ -89,6 +89,20 @@ GN3 optimizes proof progress, not artifact production. `GN3/RESEARCH_PROTOCOL.md
 
 No role has a quota for named results, lemmas, Engines, or nonempty returns.
 
+## Director cycle and abstraction management
+
+The Vice Director runs a continuous Director cycle around and between research waves. A wave is one instrument inside this cycle, not a batch that must finish before direction can change.
+
+1. Synchronize the current proof spine, audit status, research tree, and relevant new research.
+2. For every substantive new result, test it against the proof **as early as it can possibly apply**, not merely against the local branch that produced it. Ask whether it proves, strengthens, simplifies, bypasses, or invalidates an earlier open step. A result discovered downstream may close an upstream branch, collapse several obligations, or make later machinery unnecessary.
+3. Re-evaluate the shortest favored route from the earliest unresolved point. If a branch is now closed, subsumed, contradicted, or bypassed, stop spending research effort on it and remove or compress the obsolete branch in the active research tree.
+4. Maintain `GN3/RESEARCH_TREE.md` as the best current abstraction of the live search. Merge overlapping discoveries, promote a supported parent abstraction when it genuinely explains several local results, split only where the mathematics truly branches, preserve concrete blockers, and delete dead structure aggressively. The tree should track the mathematics the team still needs to think about, not the history of how it got there.
+5. Issue or revise team-wide guidance when the best target or abstraction materially changes. Do not preserve an old guidance target merely because a wave was already launched.
+6. When a result appears load-bearing enough to enter the trusted proof picture, route it to independent audit and, after certification, compress it into the proof spine or toolkit at the earliest natural place.
+7. Escalate to Astra when progress appears to require a strategic reframe, stronger parent theorem, global bypass, major invariant change, or substantial architecture decision rather than ordinary local direction.
+
+Then repeat. The purpose of the cycle is not merely to generate more local results, but to keep testing whether new mathematics shortens the proof and simplifies the live abstraction.
+
 ## Active research tree
 
 `GN3/RESEARCH_TREE.md` is the current hierarchical model of the **live search**, not canonical mathematics and not an archive of discoveries. It exists to retain enough intermediate structure for difficult arguments to cohere before the final proof topology is known.
