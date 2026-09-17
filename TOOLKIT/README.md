@@ -1,58 +1,56 @@
 # Reusable mathematics
 
-## Proof-spine lemmas
+The toolkit is the preferred home for general-purpose lemmas that can be used independently of the main proof architecture. In particular, reusable mathematics extracted from the proof spine should be cited here rather than recovered from the sequential proof.
 
-### Comparison representation — Lemma 2.1
+Proof-specific minimal-counterexample reductions, extremal-cover statements, and the fixed-pair continuation machinery remain in `PROOF_SPINE/TWO_TIGHT_PATHS.md`; their hypotheses are specialized to the main argument rather than general utilities.
 
-For a boundary tournament `G`, orient the line graph of the ordinary complete graph by the tight-triple comparisons. Tight paths are exactly directed chains of consecutive ordinary edges; an edge order realizing all tight triples exists exactly when this comparison digraph is acyclic. A shortest comparison cycle has the chordless ordinary-edge form stated in the proof spine.
+## Foundational boundary-tournament utilities
 
-### Fixed three-vertex path extension — Lemma 2.5
+### [Small-order Hamiltonicity and edge-order representation](SMALL_ORDER_HAMILTONICITY.md)
 
-Given a tight three-vertex path `P` and three distinct vertices outside it, at least one five-set obtained from `P` by adding two of the three outside vertices has a Hamilton tight path.
+The universal small-order results formerly available only inside the proof spine:
 
-### Johnson cut bound — Lemma 2.8
+- comparison-digraph representation of boundary tournaments and characterization of edge-order representability by acyclicity;
+- three common-endpoint tight triples force a Hamilton five-path;
+- **every non-Hamiltonian five-vertex boundary tournament is represented by a strict edge order**;
+- the matching-block classification of a non-Hamiltonian edge-ordered `K_4`;
+- two non-Hamiltonian edge-ordered four-sets with a common triple force an increasing Hamilton path on their five-vertex union;
+- extension of a fixed tight three-vertex path by at least one of three exterior pairs;
+- every six-set has at least four Hamiltonian five-subsets;
+- the sharp local restrictions on non-Hamiltonian four-subsets of a five-set.
 
-If `F` is a family of five-subsets of a ten-element set containing no complementary pair, the number of `J(10,5)` edges between `F` and its complement family is at most `15|F|`.
+These statements are universal; no smallest-counterexample hypothesis is used.
 
-### Path-forest deletion formula — Lemma 5.1
+### [Path restriction, forest deletion, and ordered-path intersections](PATH_FORESTS_AND_INTERSECTIONS.md)
 
-For an ordinary path forest `F` with `k` components and `S subseteq V(F)`,
+General path utilities extracted from the proof spine:
 
-`comp(F-S)=k+sum_{v in S}(deg_F(v)-1)-e_F(S)`.
+- restriction of a left- or right-extended path at its first/last intersection;
+- inheritance of an extension by the first or last surviving interval after deletion;
+- the ordinary path-forest deletion formula
+  `comp(F-S)=comp(F)+sum_{v in S}(deg_F(v)-1)-e_F(S)`;
+- disagreement in the relative order of common vertices of two tight paths forces a reversed common edge, a reversed-edge tight triple, or a vertex-simple tight cycle;
+- the corresponding four-way alternative when another path meets an extended end.
 
-When `F` comes from a tight-path cover, every surviving component inherits a tight order.
+## Hamilton-extension and local-structure tools
 
-### Ordered-path intersection lemmas — Appendix A
+### [Local Hamilton extension lemmas](LOCAL_HAMILTON_EXTENSIONS.md)
 
-Lemma A.1 converts disagreement in the relative order of common vertices of two tight paths into a reversed common edge, a tight reversed-edge triple, or a tight cycle. Lemma A.2 gives the corresponding four-way alternative when another path meets an extended end.
+Bad exterior pairs around a fixed tight three-path form a triangle-free graph; Hamilton five-sets through a prescribed subset of order at most three satisfy the stated density bounds; two parallel middle vertices force a Hamilton four-path. Its small-order inputs are now taken from `SMALL_ORDER_HAMILTONICITY.md`.
 
-## Standalone lemmas and theorems
+### [Parallel turns and three-vertex core signatures](PARALLEL_TURNS.md)
+
+Exterior vertices around a fixed three-vertex core admit the stated signature compression; three parallel middle vertices admit a Hamilton five-path with at least one of those middle vertices as an endpoint, and no fixed middle vertex can always be prescribed; four parallel middle vertices force a five-path of the form `(x,a,y,c,z)`.
+
+### [Four-vertex structure and fifth-vertex extensions](FOUR_VERTEX_STRUCTURE.md)
+
+Two parallel turns on a non-Hamiltonian four-set force one of two matching-block edge orders; the cyclic non-Hamiltonian four-vertex configuration is extended by every fifth vertex; non-Hamiltonian fifth-vertex extensions of an edge-ordered non-Hamiltonian four-set satisfy the stated extreme- and middle-matching restrictions; the ordered two-vertex extension consequence and the `3/5` four-subset density bound hold. The matching-block classification is sourced from `SMALL_ORDER_HAMILTONICITY.md`.
+
+## Path-cover manipulation
 
 ### [Path-cover surgery lemmas](PATH_COVER_SURGERY.md)
 
 Crossing under absorbable deletion; cyclic rotations of a tight path; one-vertex absorption from opposite end-edge orientations; the path/cycle edge-exchange component formula; a two-ended Hamilton splice; transitions across a vertex partition; deletion block count and unique-crossing consequences.
-
-### [Local Hamilton extension lemmas](LOCAL_HAMILTON_EXTENSIONS.md)
-
-Bad exterior pairs around a fixed tight three-path form a triangle-free graph; Hamilton five-sets through a prescribed subset of order at most three satisfy the stated density bounds; two parallel middle vertices force a Hamilton four-path.
-
-### [Johnson-graph density bounds](JOHNSON_DENSITY.md)
-
-Local occupancy bounds on `(k+1)`-sets imply the stated quadratic and degree bounds for a family of `k`-sets in `J(r,k)`, together with their equality conditions.
-
-### [Parallel turns and three-vertex core signatures](PARALLEL_TURNS.md)
-
-Exterior vertices around a fixed three-vertex core admit the stated signature compression; three parallel middle vertices admit a Hamilton five-path with at least one of those middle vertices as an endpoint, and no fixed middle vertex can always be prescribed.
-
-### [Complement-free Johnson bounds](JOHNSON_COMPLEMENT_BOUNDS.md)
-
-For a complement-free family `F` of `m` five-subsets of a ten-element set, the graph joining pairs with intersection one has average degree at most
-
-`7+18m/252 <= 16`.
-
-### [Ternary path-system insertion theorem](TERNARY_PATH_SYSTEMS.md)
-
-In a reversal-symmetric ternary path system satisfying the stated three-vertex completeness axiom, every exterior vertex has at least two insertion positions in a tight path. Every `n`-vertex system therefore has at least `2^(n-1)` Hamilton tight paths, and the bound is sharp.
 
 ### [Cover-comparison and matching lemmas](COVER_COMPARISON.md)
 
@@ -64,8 +62,22 @@ Failed concatenations force reversed joining triples; the stated one-cut/two-joi
 
 ### [Path insertion and endpoint replacement lemmas](PATH_INSERTION.md)
 
-Two-sided endpoint replacement forces a reversal in common-vertex order; noninsertability in an edge-ordered complete graph yields the stated barrier gap; complete insertion failure in a boundary tournament yields one of the stated bounded comparison-digraph obstructions; opposite extensions of one ordered pair concatenate.
+Two-sided endpoint replacement forces a reversal in common-vertex order; noninsertability in an edge-ordered complete graph yields the stated barrier gap; complete insertion failure in a boundary tournament yields one of the stated bounded comparison-digraph obstructions; opposite extensions of one ordered pair concatenate. Ordered-path intersection consequences are sourced from `PATH_FORESTS_AND_INTERSECTIONS.md`.
 
-### [Four-vertex structure and fifth-vertex extensions](FOUR_VERTEX_STRUCTURE.md)
+## Johnson-graph and set-family bounds
 
-Two parallel turns on a non-Hamiltonian four-set force one of two matching-block edge orders; the cyclic non-Hamiltonian four-vertex configuration is extended by every fifth vertex; non-Hamiltonian fifth-vertex extensions of an edge-ordered non-Hamiltonian four-set satisfy the stated extreme- and middle-matching restrictions; the ordered two-vertex extension consequence and the `3/5` four-subset density bound hold.
+### [Johnson-graph density bounds](JOHNSON_DENSITY.md)
+
+Local occupancy bounds on `(k+1)`-sets imply the stated quadratic and degree bounds for a family of `k`-sets in `J(r,k)`, together with their equality conditions. This file also contains the extracted `J(10,5)` complement-pair cut bound: if a family of five-subsets of a ten-set contains no complementary pair, then the Johnson cut to its complementary family has size at most `15|F|`.
+
+### [Complement-free Johnson bounds](JOHNSON_COMPLEMENT_BOUNDS.md)
+
+For a complement-free family `F` of `m` five-subsets of a ten-element set, the graph joining pairs with intersection one has average degree at most
+
+`7+18m/252 <= 16`.
+
+## Abstract path systems
+
+### [Ternary path-system insertion theorem](TERNARY_PATH_SYSTEMS.md)
+
+In a reversal-symmetric ternary path system satisfying the stated three-vertex completeness axiom, every exterior vertex has at least two insertion positions in a tight path. Every `n`-vertex system therefore has at least `2^(n-1)` Hamilton tight paths, and the bound is sharp.
