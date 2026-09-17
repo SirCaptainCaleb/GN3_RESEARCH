@@ -1,7 +1,7 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving only `(3,1)` and `(4,1)`.
-      - [G02] Prove that a smallest counterexample has no Hamiltonian vertex set `X` of order `n-4`.
+      - [G03] Prove that a smallest counterexample has no Hamiltonian vertex set `X` of order `n-4`.
         - Universal codimension-four structure in every `H` with `pc(H)>2`.
           - The four-vertex complement `S` has intrinsic matching blocks `M_low<M_mid<M_high`, with the low and high matchings forming an alternating four-cycle.
           - For every Hamilton ordering of `X` with endpoints `l,r`, `S+l`, `S+r`, and `S+l+r` are non-Hamiltonian, while every mixed face obtained by deleting one vertex of `S` is Hamiltonian.
