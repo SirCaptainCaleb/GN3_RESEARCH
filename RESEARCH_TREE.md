@@ -1,18 +1,18 @@
 - Every boundary tournament has path-cover number at most two.
-  - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
-    - If `|B|<=4`, then `|C|=1`, leaving only `(3,1)` and `(4,1)`.
-      - [G06] Eliminate a Hamiltonian `(n-4)`-vertex set `X` by absorbing its middle path into an exact two-cover of its endpoint core.
-        - For a Hamilton ordering `X=(L,u,N,v,R)` with four-vertex complement `S`, the codimension-four interface gives the endpoint barriers `(u,L,s)`, `(s,R,v)` for every `s in S`, and `S` has intrinsic matching blocks.
-        - Let `I,O` be the two edges of the middle matching, with `I` incoming and `O` outgoing at `L`; at `R` the profile is either the same or swapped.
-        - The eight-vertex endpoint core `G_8=H[S union {L,u,v,R}]` has a profile-determined exact two-cover.
-          - Same profile: the four orientation choices give exact `4+4` covers `(u,L,O)|(I,R,v)`.
-          - Swapped profile: the orientation choices give exact `6+2` covers `(u,L,O,R,v)|I`.
-        - Prove that the nonempty middle path `N` can be absorbed into the profile-determined cover family to obtain a spanning two-path cover of `H`.
-          - Same profile: use the four simultaneous `4+4` covers as one family; compress failure across cuts of `N` into a path-level obstruction rather than separate seam inventories.
-          - Swapped profile: deleting `I` leaves a common residue with four exact two-covers whose endpoint/internal roles reverse; use component-drop comparison to force a global attachment or contradiction.
-          - If a failure produces another Hamiltonian `(n-4))-vertex set, treat the exchange as an output of absorption and only then use the certified exchange restrictions.
-        - The unconditional actual-endpoint one-seam theorem remains auxiliary; do not assume the endpoint profiles agree or that three favorable omissions exist without the corresponding profile hypothesis.
+  - Eliminate a smallest counterexample by augmenting an extremal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
+    - If `|B|<=4`, then `|C|=1`, leaving `(3,1)` and `(4,1)`.
+      - [G07] Exclude a counterexample with a Hamiltonian vertex set of codimension four.
+        - Fix the four-set `S` and minimize `|Y|` subject to `Y` Hamiltonian and `pc(K)>2` for `K=H[S union Y]`.
+          - Every proper Hamiltonian `Z subset Y` gives `pc(H[S union Z])<=2`.
+          - Deleting one or two vertices of `Y` while leaving a Hamiltonian remainder gives exact two-covers without singleton components.
+        - Combine actual end-pair deletion covers with the codimension-four endpoint geometry.
+          - For every Hamilton order `Y=(L,u,N,v,R)`, retain both same and swapped middle-matching profiles.
+          - Same profile supplies four endpoint-core `4+4` covers; swapped profile supplies `6+2` covers and four covers of a common pair-deletion residue.
+          - Every end-pair deletion cover admits a Hamilton five-face with at least two cut crossings and two complement-side blocks.
+        - Find one choice of Hamilton order, end pair, deletion cover, and good face whose surgery two-covers `K`.
+          - Compare whole cover families; allow multiple cuts and splitting the middle path.
+          - Use exchanged Hamiltonian sets only with a strict improvement or a proved closure mechanism.
+          - Use one-seam and quiet-gap consequences only through an explicit spanning construction.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
-    - For `|B|>=5`, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
-      - Allow multiple cuts, both ends, and reordered paths; verify every new consecutive triple.
-      - Prefer parent absorption or prescribed-boundary statements over discovery-time cut-and-join inventories.
+    - For `|B|>=5`, construct a two-cover or a three-cover with lexicographically larger sorted component orders.
+      - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
