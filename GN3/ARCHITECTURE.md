@@ -39,12 +39,13 @@ Provenance is kept thin and outside mathematical exposition. Migration evidence 
 The intentionally small active GN3 channel set is:
 
 - `#gn3-changelog` (`C0C1VMME8MV`): high-signal project deltas, architecture changes, certification-impact changes, and major research-state changes.
-- `#gn3-research` (`C0C2ENRLHE0`): expansive mathematical research, proof construction, discussion, and temporary structures.
+- `#gn3-guidance` (`C0C2ET66370`): Director/Vice Director team-wide research guidance waves and material guidance revisions. Each `[G##]` guidance root lives here.
+- `#gn3-research` (`C0C2ENRLHE0`): expansive mathematical research, proof construction, discussion, and temporary structures responding to current or recent guidance.
 - `#gn3-audit` (`C0C2D179WSV`): independent skeptical verification and certification work on exact proposed GN3 mathematics.
 
 The pre-existing renamed `#gn3-lab` is transitional legacy and is not a canonical GN3 surface.
 
-Do not mechanically recreate the A7C3 channel taxonomy. Add another GN3 channel only when a recurring operational need cannot be served cleanly by these three.
+Do not mechanically recreate the A7C3 channel taxonomy. Add another GN3 channel only when a recurring operational need cannot be served cleanly by these four.
 
 ## Authority and mathematical status
 
@@ -93,7 +94,7 @@ GN3 optimizes proof progress, not artifact production. `GN3/RESEARCH_PROTOCOL.md
 - A stalled route must be classified as counterexample/impossibility, necessary missing hypothesis, specific structural obstruction, or no proof found. Failure to find a proof does not refute an abstraction.
 - The Director default is the earliest unjustified statement in the shortest presently favored proof, while bounded alternative abstractions remain welcome when they could bypass the gap or simplify the global picture.
 - Director guidance is normally **team-wide rather than individually partitioned**. The team may deliberately pile onto the same frontier; overlap and near-simultaneous discoveries are expected and useful.
-- Each Director research wave receives a guidance tag `[G##]`. The guidance post states the common target. A researcher responding to that wave posts each concise discovery headline as a top-level `#gn3-research` message prefixed by the same `[G##]`; proof, derivation, qualifications, computations, and discussion belong in replies to that headline. This tag is a retrieval device, not mathematical notation or permanent theorem identity.
+- Each Director research wave receives a guidance tag `[G##]`. The guidance post is a top-level message in `#gn3-guidance` and states the common target. A researcher responding to that wave posts each concise discovery headline as a top-level `#gn3-research` message prefixed by the same `[G##]`; proof, derivation, qualifications, computations, and discussion belong in replies to that headline. This tag is a retrieval device, not mathematical notation or permanent theorem identity.
 - Researchers reason abstraction-first and construct at increasing resolution: state the coarse mathematical mechanism, then refine only what is needed to realize it literally.
 - Stop elaborating an abstraction when it is genuinely defeated, not merely when one search attempt fails.
 - Scratch research may consume unaudited work optimistically; canonization remains conservative and exact-text based.
@@ -109,7 +110,7 @@ The Vice Director runs a continuous Director cycle around and between research w
 2. For every substantive new result, test it against the proof **as early as it can possibly apply**, not merely against the local branch that produced it. Ask whether it proves, strengthens, simplifies, bypasses, or invalidates an earlier open step. A result discovered downstream may close an upstream branch, collapse several obligations, or make later machinery unnecessary.
 3. Re-evaluate the shortest favored route from the earliest unresolved point. If a branch is now closed, subsumed, contradicted, or bypassed, stop spending research effort on it and remove or compress the obsolete branch in the active research tree.
 4. Maintain `GN3/RESEARCH_TREE.md` as the best current abstraction of the live search. Merge overlapping discoveries, promote a supported parent abstraction when it genuinely explains several local results, split only where the mathematics truly branches, preserve concrete blockers, and delete dead structure aggressively. The tree should track the mathematics the team still needs to think about, not the history of how it got there.
-5. Issue or revise team-wide guidance when the best target or abstraction materially changes. Do not preserve an old guidance target merely because a wave was already launched.
+5. Issue or revise team-wide guidance in `#gn3-guidance` when the best target or abstraction materially changes. Do not preserve an old guidance target merely because a wave was already launched.
 6. When a result appears load-bearing enough to enter the trusted proof picture, route it to independent audit and, after certification, compress it into the proof spine or toolkit at the earliest natural place.
 7. Escalate to Astra when progress appears to require a strategic reframe, stronger parent theorem, global bypass, major invariant change, or substantial architecture decision rather than ordinary local direction.
 
@@ -143,9 +144,9 @@ Reusable mathematics is selected by factorization rather than historical logging
 
 The ordinary research cycle is:
 
-**team-wide guidance → tagged parallel research burst → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
+**team-wide guidance in `#gn3-guidance` → tagged parallel research burst in `#gn3-research` → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
 
-Slack is the high-concurrency discovery stream. `GN3/RESEARCH_TREE.md` is the low-concurrency synthesized model of the current search. `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` is the canonical active proof. `GN3/TOOLKIT/README.md` indexes independently reusable mathematics.
+Slack guidance is the low-noise direction stream; Slack research is the high-concurrency discovery stream. `GN3/RESEARCH_TREE.md` is the low-concurrency synthesized model of the current search. `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` is the canonical active proof. `GN3/TOOLKIT/README.md` indexes independently reusable mathematics.
 
 Compression from Slack into the tree is **not copying**. The compressor should remove duplication, merge equivalent discoveries, state the strongest useful abstraction actually supported, retain concrete obstructions, and discard local noise. Compression from the tree into the proof spine or toolkit is stricter still: only mathematics that has earned a durable role survives.
 
