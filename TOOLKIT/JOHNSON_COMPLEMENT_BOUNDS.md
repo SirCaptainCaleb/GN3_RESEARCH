@@ -1,9 +1,5 @@
 # Complement-free Johnson bounds on five-subsets of a ten-set
 
-**Status: GN3 AUDIT PASS.**
-
-The four-overlap cut bound from the same legacy package is already Lemma 2.8 of the canonical proof spine. This module preserves the distinct intersection-one estimate that is not otherwise present in GN3. Its exact mathematical text passed independent GN3 audit in the toolkit batch at snapshot `99e9c98a80d3d0cefcffef343fb67a6f973ee432`.
-
 ## Theorem. Spectral bound for intersection-one pairs
 
 Let `Omega` be a ten-element set. Let `G` be the graph whose vertices are the `252` five-subsets of `Omega`, with two distinct five-sets adjacent exactly when they meet in one element.
@@ -55,9 +51,3 @@ Dividing by `m` gives average degree at most
 `7+18m/252`.
 
 Finally, the `252` five-subsets split into `126` complementary pairs, and a complement-free family contains at most one member of each pair. Hence `m<=126`, giving the bound `16`. ∎
-
-The six polynomial evaluations above are the entire finite numerical check; there is no need to expand the Johnson recurrence or recompute the full association scheme when using this theorem.
-
-## Legacy provenance
-
-This theorem rewrites A7C3 `S9040(B)`. The companion four-overlap cut estimate `S9040(A)` is already present, in simpler form, as Lemma 2.8 of `PROOF_SPINE/TWO_TIGHT_PATHS.md`.
