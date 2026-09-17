@@ -1,8 +1,8 @@
 # Parallel turns and three-vertex core signatures
 
-**Status: UNAUDITED GN3 REWRITE.**
+**Status: GN3 AUDIT PASS.**
 
-This module records two local five-vertex principles built from several tight triples with the same ordered endpoints. The exact text has not yet received independent GN3 audit.
+This module records two local five-vertex principles built from several tight triples with the same ordered endpoints. Its exact mathematical text passed independent GN3 audit in the toolkit batch at snapshot `99e9c98a80d3d0cefcffef343fb67a6f973ee432`.
 
 ## 1. Core-signature compression
 
