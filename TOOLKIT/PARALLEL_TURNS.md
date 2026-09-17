@@ -1,9 +1,5 @@
 # Parallel turns and three-vertex core signatures
 
-**Status: GN3 AUDIT PASS.**
-
-This module records two local five-vertex principles built from several tight triples with the same ordered endpoints. Its exact mathematical text passed independent GN3 audit in the toolkit batch at snapshot `99e9c98a80d3d0cefcffef343fb67a6f973ee432`.
-
 ## 1. Core-signature compression
 
 Fix a three-vertex set
@@ -157,7 +153,3 @@ so `(a,p,c),(a,q,c),(a,r,c)` are tight. The Hamilton increasing paths are exactl
 `(a,p,r,c,q)` and `(r,a,p,c,q)`.
 
 Thus `p` is never an endpoint of a Hamilton tight path in this example. Relabelling `p,q,r` shows that no fixed middle vertex can be prescribed universally.
-
-## Legacy provenance
-
-Section 1 rewrites the reusable part of A7C3 `S9018`. Section 2 is the endpoint strengthening in `S9022`; its basic Hamilton-path existence statement is already Lemma 2.2 of the proof spine.
