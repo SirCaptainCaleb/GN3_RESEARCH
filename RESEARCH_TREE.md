@@ -2,17 +2,24 @@
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving only `(3,1)` and `(4,1)`.
       - [G02] Prove that a smallest counterexample has no Hamiltonian vertex set `X` of order `n-4`.
-        - Universal codimension-four interface: in any `H` with `pc(H)>2`, such an `X` is globally longest and its complement `S` has rigid Hamiltonian-face and endpoint-barrier structure.
-          - `S` has intrinsic matching blocks `M_low<M_mid<M_high`; `M_low∪M_high` is an alternating 4-cycle giving four extreme-block `3+1` covers of `S`.
-          - For every Hamilton ordering of `X` with endpoints `l,r`, `S+l`, `S+r`, and `S+l+r` are non-Hamiltonian while all mixed faces obtained by deleting one vertex of `S` are Hamiltonian.
-          - Every realizable ordered initial or terminal pair of a Hamilton ordering of `X` is universally blocked by `S`; no pair can begin one Hamilton ordering while its reverse ends another.
-          - Every endpoint of every Hamilton ordering has the non-Hamiltonian five-set interface over the same ordered matchings: a low edge enters it, a high edge leaves it, the reverse extreme directions are forbidden, and the middle matching splits directions.
-        - Minimal-counterexample exchange step: use exact two-covers of endpoint-pair deletions to turn the universal interface into augmentation or another `n-4` Hamiltonian vertex set.
-          - A two-crossing comparison either yields a literal spanning splice or exchanges two vertices to another globally longest vertex set.
-          - Show that the finite family of globally longest vertex sets cannot remain closed under the forced two-vertex exchanges while all members remain ordered-end-pair separated.
-          - Track how the ordered matching interface and low/high mate dynamics change under successive exchanges; force either an opposite end-pair realization or a spanning two-cover.
-        - Test the stronger parent theorem directly: every boundary tournament with `pc(H)>2` has every Hamiltonian induced vertex set missing at least five vertices; isolate exactly which deletion-cover hypothesis is needed if full minimality is unnecessary.
+        - Universal codimension-four structure in every `H` with `pc(H)>2`.
+          - The four-vertex complement `S` has intrinsic matching blocks `M_low<M_mid<M_high`, with the low and high matchings forming an alternating four-cycle.
+          - For every Hamilton ordering of `X` with endpoints `l,r`, `S+l`, `S+r`, and `S+l+r` are non-Hamiltonian, while every mixed face obtained by deleting one vertex of `S` is Hamiltonian.
+          - No unordered pair of vertices of `X` is an initial pair of one Hamilton ordering and a terminal pair of another.
+          - Every endpoint of every Hamilton ordering has the rigid non-Hamiltonian five-set interface over the same ordered matchings.
+        - Minimality supplies exact two-path covers after deleting a Hamilton end pair `D` from `X`.
+          - Production bridge: from such a pair-deletion two-cover, construct either a spanning two-path cover of `H` or another Hamiltonian `n-4` vertex set obtained by exchanging `D` with two vertices of `S`.
+            - For `G_D={s in S : H[D union (S-{s})] is Hamiltonian}`, one has `|G_D|>=3`; if a unique bad face exists, the inner member of `D` is not an endpoint of any Hamilton ordering of `X`.
+            - The two-crossing comparison forces at least two crossings for some good face, but its proved conclusion is only a four-shape block-topology classification.
+            - When the two-crossing topology has an isolated two-vertex complement block, the other component is an exchanged Hamiltonian `n-4` set.
+            - Close the remaining splice-shaped block topologies by a prescribed-boundary Hamilton ordering or linkage on the good five-set `D union (S-{s})`; absorb higher-crossing cases into the same parent mechanism rather than extending local obstruction inventories.
+          - Conditional exchange theory after an exchanged `n-4` core has actually been produced.
+            - Across adjacent cores, the matching type of the exchanged pair records which Hamilton end side is possible: low permits only the initial side, high only the terminal side, and middle permits neither.
+            - An exchange from a Hamilton end pair makes at least one inserted vertex globally ineligible as a Hamilton endpoint of the new core, and makes both ineligible when both lie in `G_D`.
+            - Immediate reversal is confined to a unique bad face and an extreme matching mate, preserves the end side, and otherwise forces common-order reversal or the previously isolated exceptional seam.
+            - Use these transport laws to rule out closed exchange families only after the production bridge is established.
+        - Test the stronger parent theorem directly: every boundary tournament with `pc(H)>2` has every Hamiltonian induced vertex set missing at least five vertices; isolate the weakest pair-deletion cover hypothesis sufficient for the production bridge.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For larger complements, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
       - Allow multiple cuts, both ends, and reordered paths; verify every new consecutive triple.
-      - Replace local cut-and-join arguments by a parent theorem controlling Hamilton endpoint pairs or exchange closure when possible.
+      - Replace local cut-and-join arguments by a parent theorem controlling prescribed Hamilton boundary data or exchange transport when possible.
