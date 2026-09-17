@@ -1,6 +1,6 @@
 # 03 — GN3 research protocol
 
-This file governs live mathematical search, Director/Vice Director structural synthesis, guidance, and maintenance of `RESEARCH_TREE.md`.
+This file governs live mathematical search, Director/Vice Director structural synthesis and conceptual ascent, guidance, and maintenance of `RESEARCH_TREE.md`.
 
 ## What counts as progress
 
@@ -53,13 +53,13 @@ Before launching a calculation, state the exact quantity, identity, case set, or
 
 When computation is genuinely load-bearing, retain only what makes the argument checkable: the precise input, method, concise output or certificate, and the mathematical inference drawn from it. A huge transcript is not a proof. If a computation cannot be reduced to a checkable certificate or independently reproducible bounded calculation, treat the conclusion as provisional rather than silently relying on the output.
 
-## Structural synthesis
+## Structural synthesis and conceptual ascent
 
-**Structural synthesis** is the Director/Vice Director comprehension pass over the live mathematics. It replaces the narrower ideas of “integration” and “elevation” as separate housekeeping steps. Its purpose is not merely to place new results, apply them at an earlier proof coordinate, or search for a stronger lemma. Its purpose is to reconstruct the best current mathematical understanding of the problem from the interaction of old and new results, then reshape the proof search so that its abstractions reflect that understanding.
+The Director/Vice Director must perform two complementary comprehension operations over the live mathematics: **structural synthesis** and **conceptual ascent**. They are coupled but not synonymous.
 
-Structural synthesis has two inseparable directions.
+Structural synthesis reconstructs the best combined mathematical picture from old and new work. Conceptual ascent deliberately climbs above that picture in search of stronger, more intrinsic, and more explanatory mathematics. Neither is merely housekeeping, result placement, or application of a recent lemma to an earlier proof point. Together they are the project’s main mechanism for attaining maximal comprehension before choosing strategy.
 
-### Reconciliation and composition
+### Structural synthesis
 
 Read old and new mathematics together and ask what the arguments are **actually saying**, independently of the names, chronology, proof machinery, or local task that produced them.
 
@@ -71,53 +71,58 @@ For each substantive result or mechanism:
 - test how it composes with earlier and later facts, including combinations that were not considered when either fact was discovered;
 - locate redundancy, subsumption, hidden equivalence, incompatibility, and opportunities to replace several local statements by one parent statement;
 - reconsider where the result belongs in the abstraction hierarchy: theorem-level principle, intermediate bridge, local mechanism, obstruction, reusable toolkit fact, or temporary search aid;
-- ask whether the current decomposition of the proof into branches and subproblems is itself the most explanatory and strategically useful decomposition, rather than merely the one inherited from research history.
+- ask whether the current decomposition of the proof into branches and subproblems is itself the most explanatory and strategically useful decomposition, rather than merely the one inherited from research history;
+- reconstruct dependencies according to mathematical necessity rather than discovery order, and distinguish facts that merely helped find a route from facts that actually explain or sustain it.
 
-This reconciliation is not restricted to audited mathematics. Unaudited results may participate provisionally in structural synthesis so long as their certification state is not confused with correctness. Audit establishes confidence in exact mathematics; structural synthesis determines mathematical meaning and role; canonical placement is a later editorial decision.
+Structural synthesis is not restricted to audited mathematics. Unaudited results may participate provisionally so long as their certification state is not confused with correctness. Audit establishes confidence in exact mathematics; structural synthesis determines mathematical meaning, interaction, and role; canonical placement is a later editorial decision.
 
-### Abstraction and conceptual lift
+### Conceptual ascent
 
-For the resulting combined picture, search deliberately for the most informative abstraction that explains **why** the current phenomena occur.
+Starting from the synthesized picture, deliberately search for mathematics one or more abstraction levels above the current statements. The goal is not simply a stronger lemma. It is to identify the concept that makes the lower-level phenomena natural consequences rather than a collection of coincidences.
 
 In particular:
 
 - seek strengthenings, generalizations, parameterized forms, and parent theorems that make several current facts manifestations of one mechanism;
 - strip accidental coordinates, chosen labels, extremal witnesses, or proof-specific language when an intrinsic formulation carries the same content;
-- formulate useful weakenings when the full statement is stronger than the proof actually needs;
+- formulate useful weakenings when the proof needs less than the current statement and the weaker form exposes the real mechanism more clearly;
 - examine contrapositives, obstruction forms, dual formulations, complementary viewpoints, and the **negative space**: what must fail, be absent, or become rigid if the desired construction does not exist;
-- identify the invariant, exchange principle, compactness/closure phenomenon, extremality principle, or local-to-global mechanism that conceptually enables a recent result;
+- ask what invariant, exchange principle, closure phenomenon, extremality principle, compactness principle, or local-to-global mechanism conceptually enables a recent result;
+- search for an object or relation in which several apparently different operations become the same operation viewed in different coordinates;
+- test whether the phenomenon persists when the current numerical threshold, complement size, chosen path, or extremal witness is varied, and identify the sharp parameter on which it really depends;
+- ask whether the theorem should be phrased about existence of a desired object or rigidity of all counterexamples to that object, whichever gives the more explanatory statement;
 - test whether a newly recognized mechanism reaches beyond the current proof coordinate, collapses a branch, changes the natural induction/minimality parameter, or suggests a different global proof architecture;
 - distinguish a genuinely stronger explanation from a reformulation that merely hides the same case complexity behind new terminology.
 
-Structural synthesis should maximize comprehension, not novelty. It may conclude that the current abstraction is already the right one. It may also conclude that a correct new result is strategically peripheral, that an old lemma has become more important in a new formulation, or that the current research tree should be reorganized even when no theorem has just been proved.
+Conceptual ascent should aggressively challenge the current abstraction ceiling. It may conclude that the present formulation is already optimal, but only after actively testing plausible parents, duals, obstruction forms, and generalizations. It should not be reduced to “try the new lemma earlier in the proof.”
 
-### Outputs of a structural-synthesis pass
+### Outputs of a synthesis-and-ascent pass
 
-A pass should leave the project with the clearest available answer to four questions:
+A pass should leave the project with the clearest available answer to five questions:
 
 1. **What do the currently relevant results jointly imply?**
 2. **What underlying mechanism best explains those implications?**
-3. **What is the most natural abstraction hierarchy and shortest plausible proof route now?**
-4. **What exact unresolved mathematical statement should research attack next?**
+3. **What stronger, more intrinsic, dual, obstruction, or negative-space formulation best captures that mechanism?**
+4. **What is the most natural abstraction hierarchy and shortest plausible proof route now?**
+5. **What exact unresolved mathematical statement should research attack next?**
 
-Possible outputs are a revised research tree, a new or revised guidance target, a parent theorem or obstruction proposed for research, a changed dependency chain, a decision to retire or demote machinery, an audit batch for newly load-bearing mathematics, or—when certification and stability justify it—a canonical proof/toolkit edit. Structural synthesis is successful when the mathematical picture becomes more coherent, even if none of these artifacts needs to change.
+Possible outputs are a revised research tree, a new or revised guidance target, a parent theorem or obstruction proposed for research, a changed dependency chain, a decision to retire or demote machinery, an audit batch for newly load-bearing mathematics, or—when certification and stability justify it—a canonical proof/toolkit edit. A pass is successful when the mathematical picture becomes more coherent and explanatory, even if none of these artifacts needs to change.
 
 ## Director cycle
 
 The Vice Director runs a continuous Director cycle around and between research waves. A wave is one instrument inside the cycle, not a batch that must finish before direction changes.
 
 1. **Synchronize the live picture.** Read the current proof spine, toolkit, research tree, current guidance, relevant new research, and the certification state of mathematics the favored route actually depends on. During a long cycle, resynchronize at natural mathematical boundaries when concurrent work may have changed that picture.
-2. **Perform structural synthesis.** Run the full reconciliation/composition and abstraction/conceptual-lift pass above over the mathematics relevant to the live frontier. Re-test substantive new results at their earliest natural proof coordinates, but do not stop there: compare old and new formulations globally, seek the mechanism behind them, test stronger/weaker/dual/obstruction forms, and reconsider the abstraction tree itself. This stage determines the best current mathematical picture before operational choices are made.
+2. **Perform structural synthesis and conceptual ascent.** Run the full synthesis-and-ascent pass above over the mathematics relevant to the live frontier. Re-test substantive new results at their earliest natural proof coordinates, but do not stop there: compare old and new formulations globally, determine what they are really expressing together, seek the mechanism behind them, test stronger/weaker/generalized/dual/obstruction/negative-space forms, and reconsider the abstraction tree itself. This stage determines the best current mathematical picture before operational choices are made.
 3. **Select, track, and batch load-bearing mathematics for audit.** Determine which exact extra-spine statements and proofs have become necessary to the shortest favored route, an important live alternative, a proposed canonical rewrite, or a genuinely reusable toolkit theorem. The Vice Director owns this audit triage and keeps track of which active load-bearing dependencies still require independent certification. At natural synthesis points, group the currently relevant exact targets into a coherent **audit batch** and hand that batch to one independent Auditor under `04_AUDIT_PROTOCOL.md`. A batch may contain several related statements, proofs, or rewrites, and should include enough context to explain their mathematical relationship and priority without asking the Auditor to reconstruct the research strategy. Do not turn the general research backlog into an audit batch: there is no chronological audit frontier and no requirement to certify intermediate results that the live strategy does not depend on.
-4. **Propagate certified mathematics and decide durable placement.** When targets in a batch pass, update the live dependency picture to use the certified facts where they remain relevant. Separately decide whether each fact has earned a stable place in the proof spine, toolkit, or neither, under `01_ARCHITECTURE.md`. If an audit fails, weakens, or materially repairs a live dependency, rerun the affected part of structural synthesis rather than merely patching the old route.
-5. **Re-evaluate the shortest favored route from the top down.** Starting from the theorem and earliest unresolved bridge, express the route in the abstraction discovered by structural synthesis. Remove or compress branches that are closed, subsumed, contradicted, bypassed, unnecessarily strong, or artifacts of an older explanation.
-6. **Rewrite the research tree as a pure outline.** Preserve the hierarchy theorem-level objective → unresolved bridge → candidate mechanism → concrete subproblem only when that hierarchy still reflects the mathematics. If structural synthesis found a better decomposition, rewrite the hierarchy accordingly. Express every node as one brief headline line and let nesting carry the refinement.
+4. **Propagate certified mathematics and decide durable placement.** When targets in a batch pass, update the live dependency picture to use the certified facts where they remain relevant. Separately decide whether each fact has earned a stable place in the proof spine, toolkit, or neither, under `01_ARCHITECTURE.md`. If an audit fails, weakens, or materially repairs a live dependency, rerun the affected structural synthesis and conceptual ascent rather than merely patching the old route.
+5. **Re-evaluate the shortest favored route from the top down.** Starting from the theorem and earliest unresolved bridge, express the route in the abstraction discovered by structural synthesis and conceptual ascent. Remove or compress branches that are closed, subsumed, contradicted, bypassed, unnecessarily strong, or artifacts of an older explanation.
+6. **Rewrite the research tree as a pure outline.** Preserve the hierarchy theorem-level objective → unresolved bridge → candidate mechanism → concrete subproblem only when that hierarchy still reflects the mathematics. If synthesis and ascent found a better decomposition, rewrite the hierarchy accordingly. Express every node as one brief headline line and let nesting carry the refinement.
 7. **Place guidance in the tree.** Ensure the mathematical target of current guidance appears at the correct node or leaf of the outline. The tree records the target itself, not prose explaining why the guidance was chosen; that rationale belongs in `#gn3-guidance`.
 8. **Issue or revise guidance.** State the common mathematical target and enough context to make its role in the current structural picture clear. Do not preserve an old target merely because it was previously issued.
-9. **Canonize only after exact certification and structural stability.** Durable proof dependencies belong eventually in audited canonical mathematics rather than remaining only in Slack or the tree. A passed local fact need not be canonized if structural synthesis has not yet established its durable role.
+9. **Canonize only after exact certification and structural stability.** Durable proof dependencies belong eventually in audited canonical mathematics rather than remaining only in Slack or the tree. A passed local fact need not be canonized if structural synthesis and conceptual ascent have not yet established its durable role.
 10. **Escalate to Astra when the abstraction itself needs to change.** Escalate for a strategic reframe, stronger parent theorem, global bypass, major invariant change, or substantial architecture decision rather than ordinary local direction.
 
-Then repeat. The cycle exists to keep rebuilding the best mathematical understanding as the corpus changes, not merely to accumulate results, move them between surfaces, or push the current proof one lemma at a time. Audit tracking, tree maintenance, and canonical placement serve structural synthesis; they are not substitutes for it.
+Then repeat. The cycle exists to keep rebuilding the best mathematical understanding as the corpus changes, not merely to accumulate results, move them between surfaces, or push the current proof one lemma at a time. Audit tracking, tree maintenance, and canonical placement serve structural synthesis and conceptual ascent; they are not substitutes for them.
 
 ## Research-tree management
 
@@ -133,7 +138,7 @@ Full proofs are excluded from the research tree. Proofs, derivations, casework, 
 
 Individual discoveries enter the tree only when they change the live abstraction, create or eliminate a branch, sharpen an obstruction, or become a concrete leaf target needed by a live route. A discovery does not earn a node merely because it is correct, useful, audited, recent, or repeatedly cited.
 
-Researchers normally communicate tree corrections and structural suggestions through `#gn3-research`; the Director or delegated Vice Director performs the low-concurrency rewrite. For a given structural-synthesis pass, one compressor owns the tree edit so that the hierarchy remains coherent.
+Researchers normally communicate tree corrections and structural suggestions through `#gn3-research`; the Director or delegated Vice Director performs the low-concurrency rewrite. For a given synthesis-and-ascent pass, one compressor owns the tree edit so that the hierarchy remains coherent.
 
 The tree has a low admission bar for a genuinely live branch and a high retention bar thereafter. Merge overlapping nodes, promote stronger parent abstractions, split only where the mathematics truly branches, and delete dead or redundant branches aggressively. Git history is sufficient recovery; chronology, credit, audit transcripts, and obsolete proof ontology do not belong in the outline.
 
@@ -141,6 +146,6 @@ The tree has a low admission bar for a genuinely live branch and a high retentio
 
 Slack is the discovery stream. The research tree is the terse hierarchical outline of the current search. The proof spine is the sequential canonical proof. The toolkit is the selected reusable shelf.
 
-Compression from Slack into the tree is structural synthesis, not copying. Compression from the tree into proof or toolkit is stricter still: only mathematics that has earned a durable role survives.
+Compression from Slack into the tree is structural synthesis and conceptual ascent, not copying. Compression from the tree into proof or toolkit is stricter still: only mathematics that has earned a durable role survives.
 
 There is no separate `RESEARCH_STATE.md`. The research tree carries the current live abstraction and guidance location; the proof spine carries the mathematical route and explicit open boundary. Avoid creating another summary layer that can drift between them.
