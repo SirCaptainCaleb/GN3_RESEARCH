@@ -49,13 +49,17 @@ Guidance is normally **team-wide**. The Director should prefer one common mathem
 
 ## Guidance waves and Slack reporting
 
-Each Director research wave receives a tag `[G##]`, with the number increasing monotonically. The guidance post in `#gn3-research` states the common target and enough mathematical motivation for researchers to understand why it matters.
+Each Director research wave receives a tag `[G##]`, with the number increasing monotonically. The guidance root lives in `#gn3-guidance` and states the common target with enough mathematical motivation for researchers to understand why it matters.
 
-Researchers working under that guidance post each concise discovery as a **top-level headline message** in `#gn3-research` prefixed by the same `[G##]`. The headline should state the mathematical content, not a status update. The proof, derivation, qualifications, computations, counterexamples, and discussion belong in replies to that headline.
+Researchers working under that guidance post each discovery as a top-level message in `#gn3-research` prefixed by the same `[G##]`. **The root is statement-only:** it contains the exact mathematical assertion being reported, with only the hypotheses, notation, cases, formulas, and conclusion needed to state that assertion precisely. It is not a mini-proof or a mini-report.
+
+All supporting material belongs in replies to the root: proofs, derivations, reasons, proof sketches, case analysis, computations, counterexamples, citations used as justification, qualifications, motivation, usefulness commentary, strategic interpretation, and discussion. In particular, a root should not contain sentences such as “this follows from/by/because ...”. The channel timeline should read as a compact index of mathematical statements; the thread is where the argument lives.
+
+If several distinct assertions are discovered, use separate roots unless they naturally form one theorem statement. A precise obstruction or null result may itself be the root statement, but the evidence distinguishing an obstruction from “no proof found” belongs in the thread. Directors and Vice Directors should repair malformed roots by trimming them to the statement while preserving the supporting material in replies.
 
 The tag is deliberately administrative. `[G##]` must not become mathematical notation, theorem identity, provenance inside canonical proofs, or a replacement for stating hypotheses and conclusions. Its purpose is retrieval: after the wave, the Director or Vice Director can collect the responses to exactly that guidance without reconstructing the burst from chronology.
 
-A null return need not manufacture a headline theorem. If useful, a researcher may post a `[G##]` headline stating the precise obstruction or that no proof was found, with enough detail in the thread to distinguish those outcomes.
+A null return need not manufacture a headline theorem. If useful, a researcher may post a `[G##]` root stating the precise obstruction or that no proof was found, with enough detail in the thread to distinguish those outcomes.
 
 ## Researcher default
 
@@ -92,7 +96,7 @@ If not, report it as search information, not proof closure.
 
 After a guidance wave, the Director or a delegated Vice Director acts as the **compressor**. Only one compressor should own a given synthesis pass.
 
-The compressor reads the `[G##]` headlines and their relevant proof threads, then updates `RESEARCH_TREE.md` according to what the burst changed in the mathematical picture. This is synthesis, not transcription:
+The compressor reads the `[G##]` roots and their relevant proof threads, then updates `RESEARCH_TREE.md` according to what the burst changed in the mathematical picture. This is synthesis, not transcription:
 
 - merge equivalent or overlapping discoveries;
 - replace several local facts by a supported stronger abstraction when appropriate;
