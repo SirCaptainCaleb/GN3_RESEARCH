@@ -2,7 +2,7 @@
 
 The toolkit contains selected mathematics that a future researcher could reasonably want independently of the route that first produced it. It is not a second proof graph, discovery log, or archive of every correct lemma.
 
-Most proof-local facts remain in the canonical proof spine. Standalone toolkit files are used when extraction materially improves retrieval, reuse, or verification. Migration does not transfer certification: each standalone file states the audit status of its exact current text.
+Most proof-local facts remain in the canonical proof spine. Standalone toolkit files are used when extraction materially improves retrieval, reuse, or verification. Migration does not transfer certification: each standalone file states the audit status of its exact current mathematical text.
 
 ## Indexed from the proof spine
 
@@ -54,27 +54,9 @@ Three local extension results: the triangle-free graph of bad exterior pairs aro
 
 Two general extremal-set inequalities converting a local cap on the number of selected `k`-sets inside each `(k+1)`-set into global density bounds in `J(r,k)`, together with equality constraints.
 
-## Standalone modules awaiting GN3 audit
-
-### [Cover-comparison and matching lemmas](COVER_COMPARISON.md)
-
-A component-drop crossing lemma stated without signed-support language, the observation that two singleton paths carry no triple information by themselves, a Cartesian clause lemma for families of candidate covers, and a weighted symmetric-difference lemma for two matchings. The matching lemma includes the positive-total-weight hypothesis needed by its intrinsic formulation.
-
-### [Cover augmentation lemmas](COVER_AUGMENTATION.md)
-
-Explicit spanning-cover surgery: six seam alternatives from a three-cover, one-cut/two-join augmentation in edge-ordered graphs, a two-cut singleton cross-swap, inequalities forced by repeated singleton transfers, barriers forced by an extreme dimer, a cap obstruction around a three-vertex component, and a general bridge comparison between a three-cover and a fixed two-cover.
-
-### [Path insertion and endpoint replacement lemmas](PATH_INSERTION.md)
-
-Two-sided endpoint replacement forces a reversal in common-vertex order; failed insertion in an increasing path has a canonical barrier gap; complete insertion failure in an arbitrary boundary tournament has a bounded comparison-digraph obstruction; opposite extensions of one ordered pair concatenate immediately.
-
 ### [Parallel turns and three-vertex core signatures](PARALLEL_TURNS.md)
 
 A three-coordinate signature compression for exterior vertices around a fixed core, and the strengthening of Lemma 2.2 that three parallel middle vertices admit a Hamilton five-path with at least one of those middle vertices as an endpoint.
-
-### [Four-vertex structure and fifth-vertex extensions](FOUR_VERTEX_STRUCTURE.md)
-
-The two edge-orderable normal forms forced by two parallel turns on a non-Hamiltonian four-set, universal fifth-vertex extension of the cyclic non-Hamiltonian four-set, the gate structure of a P5-free fifth vertex over a non-Hamiltonian edge-ordered four-set, a two-vertex bridge consequence, and the `3/5` density bound for Hamiltonian four-subsets of an edge-ordered complete graph.
 
 ### [Complement-free Johnson bounds](JOHNSON_COMPLEMENT_BOUNDS.md)
 
@@ -83,6 +65,24 @@ The intersection-one spectral bound for complement-free families of five-subsets
 ### [Ternary path-system insertion theorem](TERNARY_PATH_SYSTEMS.md)
 
 For a reversal-symmetric ternary path system satisfying the stated three-vertex completeness axiom, every exterior vertex has at least two insertion positions in a tight path, yielding a sharp `2^(n-1)` lower bound on Hamilton tight paths.
+
+## Standalone modules revised after audit and pending re-audit
+
+### [Cover-comparison and matching lemmas](COVER_COMPARISON.md)
+
+A component-drop crossing lemma stated without signed-support language, the direct observation that two singleton components impose no three-vertex tightness condition, an intrinsic Cartesian clause lemma for families of spanning vertex sequences, and a weighted symmetric-difference lemma for two matchings. The matching lemma includes the positive-total-weight hypothesis needed by its intrinsic formulation.
+
+### [Cover augmentation lemmas](COVER_AUGMENTATION.md)
+
+Explicit spanning-cover surgery: reversed joining triples forced by failed component concatenation, one-cut/two-join augmentation in edge-ordered complete graphs, a two-cut singleton cross-swap, inequalities forced by repeated singleton transfers, barriers forced by a globally extreme two-vertex component, a cut-and-join obstruction around a three-vertex component, and comparison of concatenations of a three-cover with a fixed two-cover.
+
+### [Path insertion and endpoint replacement lemmas](PATH_INSERTION.md)
+
+Two-sided endpoint replacement forces a reversal in common-vertex order; failed insertion in an edge-ordered complete graph has a canonical barrier gap; complete insertion failure in an arbitrary boundary tournament has a bounded comparison-digraph obstruction supported on the inserted vertex and at most four consecutive path vertices; opposite extensions of one ordered pair concatenate immediately.
+
+### [Four-vertex structure and fifth-vertex extensions](FOUR_VERTEX_STRUCTURE.md)
+
+The two edge-orderable normal forms forced by two parallel turns on a non-Hamiltonian four-set, universal fifth-vertex extension of the cyclic non-Hamiltonian four-set, explicit extreme- and middle-matching structure for a non-Hamiltonian fifth-vertex extension of an edge-ordered four-set, a two-vertex extension consequence, and the `3/5` density bound for Hamiltonian four-subsets of an edge-ordered complete graph.
 
 ## Deliberately proof-local
 
