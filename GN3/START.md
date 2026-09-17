@@ -45,11 +45,13 @@ For any other long file that must be read completely, use `GitHub.fetch_file(...
 
 ## Mathematical startup after `GN3/INIT/`
 
-During initialization, every GN3 worker then reads completely, from the same pinned revision when practical:
+During initialization, every GN3 worker then reads completely **from the same pinned repository revision**:
 
 - `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md`;
 - `GN3/RESEARCH_TREE.md`;
 - `GN3/TOOLKIT/README.md` and every standalone toolkit module currently indexed there.
+
+Initialization is one coherent snapshot. Do not mix init policy, proof spine, research tree, or toolkit files from different repository revisions merely because `main` advances during the read.
 
 After those reads, synchronize the live Slack surfaces relevant to the assigned role, beginning with `#gn3-changelog` and the current guidance when doing research or direction. Legacy `A7C3/` material is provenance or archaeology and is retrieved only when actually needed.
 
@@ -59,6 +61,10 @@ There is no separate optional research-protocol startup step: the research and a
 
 Once initialized, use `#gn3-changelog` as the normal update stream.
 
+**Changelog completeness is part of the architecture.** A material change to `GN3/START.md`, any numbered `GN3/INIT/` policy, the proved/open boundary of the canonical proof spine, or another durable project fact that an already-initialized worker must know in order to work safely must be surfaced in `#gn3-changelog`. Whoever makes such a durable change is responsible for ensuring the corresponding changelog delta exists before treating the change as operationally complete.
+
+A changelog entry should either state a sufficiently precise delta or explicitly instruct existing workers to reread the changed file or relevant portion. If a change genuinely invalidates ordinary continuity and requires full reinitialization, the changelog must say so explicitly. Otherwise workers may rely on changelog continuity rather than periodically rereading all startup material defensively.
+
 Read changelog entries newer than the worker's last synchronization point. For each relevant entry:
 
 - if the changelog states a sufficiently precise delta, incorporate that delta and continue;
@@ -66,4 +72,4 @@ Read changelog entries newer than the worker's last synchronization point. For e
 - if the change affects exact mathematics being proved, audited, or edited, read the exact current mathematical text needed for that work;
 - do **not** restart the full initialization sequence merely because some project state changed.
 
-Reinitialize only when the worker is genuinely starting fresh or cannot establish a trustworthy continuity from its prior initialization and subsequent changelog synchronization. Ordinary task changes, new guidance, repository edits, and routine Slack activity do not by themselves require reinitialization.
+Reinitialize only when the worker is genuinely starting fresh, a changelog entry explicitly requires it, or the worker cannot establish a trustworthy continuity from its prior initialization and subsequent changelog synchronization. Ordinary task changes, new guidance, repository edits, and routine Slack activity do not by themselves require reinitialization.
