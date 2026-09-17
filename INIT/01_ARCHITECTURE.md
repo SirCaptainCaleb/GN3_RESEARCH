@@ -10,6 +10,8 @@ GitHub is the durable GN3 authority. Slack is the live communication and search 
 
 `ARCHAEOLOGY/` is legacy provenance, recovery material, and source archaeology, not current operating authority. The completed A7C3→GN3 migration archive is `ARCHAEOLOGY/a7c3_gn3_migration/`. Historical files may describe older paths or layouts; those descriptions remain provenance and must not override the current root-level startup files.
 
+For legacy mathematical discovery, search `SEARCH_CORPUS.md` first. It consolidates most old research results into one searchable file and is the preferred archaeology index. Open individual files under `ARCHAEOLOGY/` when the corpus points to a specific source, when exact provenance or surrounding context is needed, or when the sought material is absent from the corpus. `SEARCH_CORPUS.md` remains a discovery aid rather than current mathematical authority: any legacy statement recovered from it must still be rechecked and translated into current GN3 language before use.
+
 ## Canonical mathematical surfaces
 
 - `PROOF_SPINE/TWO_TIGHT_PATHS.md` is the single sequential canonical proof attempt. Open mathematical implications remain visibly open in that document.
