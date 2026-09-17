@@ -1,9 +1,5 @@
 # Ternary path-system insertion theorem
 
-**Status: GN3 AUDIT PASS.**
-
-This module concerns a reversal-symmetric ternary path system rather than a boundary tournament. Its exact mathematical text passed independent GN3 audit in the toolkit batch at snapshot `99e9c98a80d3d0cefcffef343fb67a6f973ee432`.
-
 Let `V` be a finite set and let `E` be a set of ordered triples of distinct vertices. Call a vertex sequence **tight** when every consecutive ordered triple belongs to `E`.
 
 Assume the following two properties.
@@ -50,7 +46,3 @@ For the counting statement, fix a vertex `x`. Every Hamilton tight path on `V-{x
 Starting from `N=1` on one vertex gives `N(V)>=2^(n-1)`.
 
 For sharpness, fix a total order on `V` and declare `(a,b,c)` tight exactly when `b` is not the largest of `{a,b,c}`. The two axioms hold. A Hamilton ordering is tight exactly when it has no interior local maximum. Such an ordering decreases to the minimum element and then increases. It is determined uniquely by choosing which of the other `n-1` vertices lie to the left of the minimum, so there are exactly `2^(n-1)` Hamilton tight paths. ∎
-
-## Legacy provenance
-
-This theorem rewrites A7C3 `S9016`.
