@@ -1,8 +1,8 @@
 # Path insertion and endpoint replacement lemmas
 
-**Status: UNAUDITED GN3 REWRITE.**
+**Status: REVISED AFTER AUDIT; PENDING RE-AUDIT.**
 
-These statements collect local consequences of failed insertion, two-sided endpoint replacement, and extensions of one ordered edge. The exact text has not yet received independent GN3 audit.
+These statements collect local consequences of failed insertion, two-sided endpoint replacement, and extensions of one ordered edge. The revised exact text awaits independent re-audit.
 
 ## 1. Two-sided endpoint replacement forces reversed order
 
@@ -57,11 +57,11 @@ Thus either some pair reverses the order of common vertices or `X union {y}` is 
 
 ## 2. Barrier gaps for a noninsertable vertex in an increasing path
 
-Let `G` be an edge-ordered graph and let
+Let `G` be an edge-ordered complete graph and let
 
 `Q=(q_0,...,q_m)`, `m>=1`,
 
-be an increasing path. Let `x` be a vertex outside `Q` adjacent to every `q_i`. For `0<=i<=m-1`, call the gap between `q_i,q_{i+1}`
+be an increasing path. Let `x` be a vertex outside `Q`. For `0<=i<=m-1`, call the gap between `q_i,q_{i+1}`
 
 - **left-feasible** if `i=0` or `q_{i-1}q_i < q_i x`;
 - **right-feasible** if `i=m-1` or `xq_{i+1} < q_{i+1}q_{i+2}`.
@@ -80,9 +80,15 @@ Moreover, if `x,y` are two such noninsertable vertices and `beta(x)<beta(y)`, th
 
 `xq_{i+1} < q_{i+1}q_{i+2} < yq_{i+1}`.
 
-Thus the edge-order boundary tournament has the tight triple
+Define the boundary tournament `H_G` on `V(G)` by declaring
 
-`(x,q_{i+1},y)`.
+`(u,v,w)` tight exactly when `uv<vw`.
+
+Then the displayed inequalities imply that
+
+`(x,q_{i+1},y)`
+
+is tight in `H_G`.
 
 **Proof.** Put `e_i=q_iq_{i+1}`. Let `L_0` be true and, for `i>=1`, let `L_i` mean `e_{i-1}<q_i x`. Let `R_{m-1}` be true and, for `i<=m-2`, let `R_i` mean `xq_{i+1}<e_{i+1}`.
 
@@ -92,11 +98,11 @@ If no gap satisfied both `L_i` and `R_i`, then `L_0` would force `R_0` to fail. 
 
 so `L_{i+1}` holds. Induction gives `L_{m-1}`, contradicting the automatic truth of `R_{m-1}`. Hence some gap is left- and right-feasible.
 
-At such a gap all comparisons needed for insertion are already correct except possibly the comparison of the two spokes `q_i x` and `xq_{i+1}`. Since insertion fails, totality of the edge order gives
+At such a gap all comparisons needed for insertion are correct except possibly the comparison of the two edges `q_i x` and `xq_{i+1}`. Since insertion fails, totality of the edge order gives
 
 `xq_{i+1}<q_i x`.
 
-For `beta(x)`, every earlier `R_j` fails. The same propagation from `L_0` gives `L_{beta(x)}`, so the displayed spoke inequality follows.
+For `beta(x)`, every earlier `R_j` fails. The same propagation from `L_0` gives `L_{beta(x)}`, so the displayed inequality follows.
 
 Finally let `beta(x)=i<beta(y)`. Right-feasibility of `x` gives
 
@@ -106,7 +112,7 @@ while minimality of `beta(y)` makes `R_i(y)` false, hence
 
 `e_{i+1}<yq_{i+1}`.
 
-The final assertion is exactly the edge-order interpretation of a tight triple. ∎
+By the definition of `H_G`, the comparison `xq_{i+1}<q_{i+1}y` is exactly the tightness of `(x,q_{i+1},y)`. ∎
 
 ## 3. Local obstruction when every insertion position fails
 
@@ -136,7 +142,7 @@ Assume that inserting `x` in every one of the `m+1` positions of the displayed o
 
    `f_m -> e_{m-1}`.
 
-Thus complete failure of one-vertex insertion is witnessed on `x` and at most three consecutive vertices of `B`.
+Every displayed arc in either alternative involves only `x` together with at most four consecutive vertices of `B`.
 
 **Proof.** Failure of the insertion at the left end gives `e_1->f_1`, while failure at the right end gives `f_m->e_{m-1}`.
 
