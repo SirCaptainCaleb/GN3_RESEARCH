@@ -1,8 +1,8 @@
 # Local Hamilton extension lemmas
 
-**Status: PENDING GN3 AUDIT.**
+**Status: GN3 AUDIT PASS.**
 
-These are GN3 formulations of reusable consequences already present in, or naturally derived from, the five- and six-vertex theory in the proof spine. Legacy acceptance of the corresponding A7C3 spare parts does not certify these exact rewrites.
+These are GN3 formulations of reusable consequences already present in, or naturally derived from, the five- and six-vertex theory in the proof spine. The exact current text has passed independent GN3 audit; legacy acceptance is provenance only.
 
 ## 1. Bad extension pairs around a tight three-vertex path form a triangle-free graph
 
