@@ -68,7 +68,7 @@ Two-sided endpoint replacement forces a reversal in common-vertex order; noninse
 
 ### [Johnson-graph density bounds](JOHNSON_DENSITY.md)
 
-Local occupancy bounds on `(k+1)`-sets imply the stated quadratic and degree bounds for a family of `k`-sets in `J(r,k)`, together with their equality conditions. This file also contains the extracted `J(10,5)` complement-pair cut bound: if a family of five-subsets of a ten-set contains no complementary pair, then the Johnson cut to its complementary family has size at most `15|F|`.
+Local occupancy bounds on `(k+1)`-sets imply the stated quadratic and stronger local-degree bounds for a family of `k`-sets in `J(r,k)`, together with their equality conditions. The boundary-tournament specialization gives the stronger fixed-subset Hamilton-five density hierarchy: for `|S|=s<=3`, the non-Hamiltonian fraction among five-sets containing `S` is at most `(r-s)/[(5-s)(r-4)]`, strictly improving the elementary double-counting hierarchy for `r>10`. This file also retains the extracted `J(10,5)` complement-pair cut bound as a separate reusable set-family lemma.
 
 ### [Complement-free Johnson bounds](JOHNSON_COMPLEMENT_BOUNDS.md)
 
