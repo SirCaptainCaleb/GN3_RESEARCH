@@ -91,3 +91,33 @@ yields
 which is equivalent to the claimed bound. Equality forces equality in every pointwise degree bound and in Cauchy-Schwarz, giving the stated regularity conditions. ∎
 
 For `k=2,t=2` the second bound gives `p<=r/[2(r-1)]`. For `k=5,t=2` it gives `p<=r/[5(r-4)]`.
+
+## 3. Complement-pair cut bound in `J(10,5)`
+
+Let `Omega` be a ten-element set and let `F⊆binom(Omega,5)` contain no complementary pair. Put
+
+`bar(F)={Omega-A : A in F}`.
+
+In the Johnson graph `J(10,5)`, whose vertices are the five-subsets of `Omega` and whose adjacent vertices meet in four elements, let `e(F,bar(F))` denote the number of Johnson edges with one endpoint in `F` and one endpoint in `bar(F)`. Then
+
+`e(F,bar(F)) <= 15|F|`.
+
+**Proof.** For every four-set `C⊆Omega`, let
+
+`K_C={C∪{v} : v in Omega-C}`.
+
+This is a clique of order six in `J(10,5)`, and every Johnson edge belongs to exactly one such clique, namely the clique indexed by the intersection of its endpoints. Put
+
+`r_C=|F∩K_C|`, `s_C=|bar(F)∩K_C|`.
+
+Since `F` contains no complementary pair, `F` and `bar(F)` are disjoint. Hence `r_C+s_C<=6`, and therefore
+
+`r_C s_C <= (r_C+s_C)^2/4 <= (3/2)(r_C+s_C)`.
+
+Summing over all four-sets counts every edge from `F` to `bar(F)` exactly once. Each five-set contains exactly five four-subsets, so
+
+`sum_C r_C=5|F|`, `sum_C s_C=5|bar(F)|=5|F|`.
+
+Consequently
+
+`e(F,bar(F)) <= (3/2)(10|F|)=15|F|`. ∎
