@@ -11,26 +11,37 @@ Git can pull a whole folder tree locally with sparse checkout. If the repository
 ```bash
 git clone --filter=blob:none --sparse https://github.com/SirCaptainCaleb/GN3_RESEARCH.git
 cd GN3_RESEARCH
-git sparse-checkout set GN3/INIT GN3/PROOF_SPINE GN3/TOOLKIT GN3/RESEARCH_TREE.md
+git sparse-checkout set GN3/INIT
 ```
 
-Then read every `GN3/INIT/*.md` file in numeric order. The sparse checkout also places the proof spine, toolkit, and research tree locally for the mathematical startup described below.
+This checks out the entire `GN3/INIT/` subtree together at one repository revision. Read every `GN3/INIT/*.md` file in numeric order.
+
+After the init read, the same checkout can add the other startup directories without cloning the legacy tree:
+
+```bash
+git sparse-checkout add GN3/PROOF_SPINE GN3/TOOLKIT
+```
+
+Read `GN3/RESEARCH_TREE.md` from the same revision with `git show HEAD:GN3/RESEARCH_TREE.md` or by adding that file to the sparse checkout with an appropriate non-cone pattern.
 
 ## GitHub-connector retrieval
 
-The GitHub connector does not expose a repository clone operation. When using it:
+The GitHub connector does not expose a repository clone operation. When using it, pin initialization to one commit:
 
 1. Call `GitHub.fetch` on
-   `https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/contents/GN3/INIT`.
-2. Enumerate **every numbered Markdown file returned by that directory listing**. Do not rely on a remembered file list.
-3. For each file, use its returned blob `sha` with `GitHub.fetch_blob` and read the complete blob.
-4. Read the files in numeric filename order and do not begin substantive work until all have been consumed.
+   `https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/branches/main`
+   and record the returned commit SHA.
+2. Call `GitHub.fetch` on
+   `https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/contents/GN3/INIT?ref=<commit-sha>`.
+3. Enumerate **every numbered Markdown file returned by that directory listing**. Do not rely on a remembered file list.
+4. For each file, call `GitHub.fetch_blob` with the blob `sha` returned by the pinned directory listing and read the complete blob.
+5. Read all init files in numeric filename order and do not begin substantive work until all have been consumed.
 
-For any other long required file, obtain its blob SHA with a one-line `GitHub.fetch_file` call (`start_line=1`, `end_line=1`) and then read the whole file with `GitHub.fetch_blob`. Search excerpts, truncated `fetch_file` output, summaries, and memory do not count as a complete read.
+For any other long required file, use the same pinned commit with `GitHub.fetch_file(..., ref=<commit-sha>, start_line=1, end_line=1)` to obtain its blob SHA, then read the whole file with `GitHub.fetch_blob`. Search excerpts, truncated `fetch_file` output, summaries, and memory do not count as complete reads.
 
 ## Mathematical startup after `GN3/INIT/`
 
-Every GN3 worker then reads completely:
+Every GN3 worker then reads completely, from the same pinned revision when practical:
 
 - `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md`;
 - `GN3/RESEARCH_TREE.md`;
