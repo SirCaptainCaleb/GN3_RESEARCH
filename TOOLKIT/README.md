@@ -42,7 +42,7 @@ Lemma A.1 converts disagreement in the relative order of common vertices of two 
 
 ## Standalone migrated modules
 
-The following files preserve selected reusable mathematics from the A7C3 spare-parts shelf in ordinary GN3 language. Their exact rewrites are currently **PENDING GN3 AUDIT**.
+The following files preserve selected reusable mathematics from the A7C3 spare-parts shelf in ordinary GN3 language. The exact current text of all three standalone modules has passed independent GN3 audit.
 
 ### [Path-cover surgery lemmas](PATH_COVER_SURGERY.md)
 
