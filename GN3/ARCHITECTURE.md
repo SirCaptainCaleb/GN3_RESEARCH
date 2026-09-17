@@ -1,12 +1,12 @@
 # GN3 Architecture
 
-**Status: PROVISIONAL — governs migration work until cutover.**
+**Status: CANONICAL.**
 
 ## Mandatory startup
 
-After only the access, authentication, repository-location, and tool-discovery actions necessary to retrieve this file, every GN3 worker must fetch and read **one complete, internally consistent revision of this entire file** before synchronizing Slack, making mathematical inferences, editing migration state, or doing research. Search excerpts, selected ranges, summaries, memory, and prior initialization do not count. If retrieval truncates or paginates, continue until the complete revision has been obtained.
+After only the access, authentication, repository-location, and tool-discovery actions necessary to retrieve this file, every GN3 worker must fetch and read **one complete, internally consistent revision of this entire file** before synchronizing Slack, making mathematical inferences, editing project state, or doing research. Search excerpts, selected ranges, summaries, memory, and prior initialization do not count. If retrieval truncates or paginates, continue until the complete revision has been obtained.
 
-GitHub is the sole durable GN3 architecture authority. Slack is a live communication and search surface. No Canvas is required for ordinary GN3 startup.
+GitHub is the sole durable GN3 architecture authority. Slack is a live communication and search surface. No Canvas is required for GN3 startup.
 
 After the complete architecture read, an ordinary research worker reads `GN3/STATUS.md` and `GN3/RESEARCH_STATE.md` before choosing a target. A worker proving or auditing a statement then reads the relevant exact mathematics in `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` and any explicitly cited canonical input. Legacy A7C3 material is pulled only when provenance or archaeology is actually needed.
 
@@ -18,25 +18,19 @@ Scratchwork may use temporary names, case trees, constructions, computations, an
 
 ## Namespace and legacy boundary
 
-New canonical mathematics belongs under `GN3/`. The existing `A7C3/` tree, A7C3 Slack channels, and A7C3 Canonical Startup Canvas are legacy history, provenance, and archaeology. Do not migrate by renaming or gradually rewriting them into GN3. Make only narrowly necessary archival corrections.
+Canonical mathematics belongs under `GN3/`. The existing `A7C3/` tree, A7C3 Slack channels, and A7C3-era Canvases are legacy history, provenance, and archaeology. Do not mutate them into GN3 canon. Make only narrowly necessary archival corrections.
 
-The migration baseline and recovery record is `GN3/MIGRATION/BASELINE.md`. Migration evidence lives under `GN3/MIGRATION/EVIDENCE/`. Provenance is kept thin and outside mathematical exposition.
-
-## Migration concurrency
-
-A7C3 research may continue during migration on the legacy A7C3 surfaces. Anything material after the recorded baseline is a post-baseline delta and must be explicitly incorporated, superseded, or deferred before cutover. Migration work itself belongs under `GN3/` and the new `gn3-*` Slack surfaces.
-
-The user-ordered blank-page reconstruction and language reduction have been completed. The migration now follows the remaining checklist from the reconstructed GN3 state rather than restoring legacy proof topology.
+Provenance is kept thin and outside mathematical exposition. Migration evidence under `GN3/MIGRATION/` is archaeology, not startup context or architecture authority.
 
 ## Live Slack surfaces
 
 The intentionally small active GN3 channel set is:
 
-- `#gn3-changelog` (`C0C1VMME8MV`): high-signal project deltas, architecture changes, certification-impact changes, and migration/cutover notices.
+- `#gn3-changelog` (`C0C1VMME8MV`): high-signal project deltas, architecture changes, certification-impact changes, and major research-state changes.
 - `#gn3-research` (`C0C2ENRLHE0`): expansive mathematical research, proof construction, discussion, and temporary structures.
 - `#gn3-audit` (`C0C2D179WSV`): independent skeptical verification and certification work on exact proposed GN3 mathematics.
 
-The pre-existing renamed `#gn3-lab` is transitional legacy and is not a canonical GN3 surface established by this migration.
+The pre-existing renamed `#gn3-lab` is transitional legacy and is not a canonical GN3 surface.
 
 Do not mechanically recreate the A7C3 channel taxonomy. Add another GN3 channel only when a recurring operational need cannot be served cleanly by these three.
 
@@ -97,7 +91,7 @@ No role has a quota for named results, lemmas, Engines, or nonempty returns.
 
 The canonical proof spine is the single sequential document `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md`. Fresh researchers understand the theorem through that mathematics, not through an Engine dependency graph. The current exact proof/audit status is in `GN3/STATUS.md`; the compact big-picture route and earliest open bridge are in `GN3/RESEARCH_STATE.md`.
 
-The proof spine may contain explicit open statements, but unresolved implications must remain visibly unproved. At the current migration coordinate the audited argument ends at Proposition 6.2 and the augmentation statement that follows is open.
+The proof spine may contain explicit open statements, but unresolved implications must remain visibly unproved. At the current coordinate the audited argument ends at Proposition 6.2 and the augmentation statement that follows is open.
 
 Engine-like organization is secondary and optional. If a future Engine label is useful for a bounded Slack investigation, it does not create a mathematical ontology or canonical dependency node. A coherent reusable mechanism may become a theorem or section; a one-use argument stays where it is clearest.
 
@@ -107,13 +101,11 @@ Reusable mathematics is selected by factorization rather than historical logging
 
 Slack research may contain temporary terminology, case trees, gadgets, computations, exploratory constructions, and provisional results. Ordinary inheritance is compressed: useful work should return to the sequential proof, the compact research state, the small reusable toolkit, or provenance/negative-knowledge evidence. Temporary search structure does not become mandatory startup context merely because it once helped discovery.
 
-## Compactness invariant
+## Compactness and maintenance
 
 This file must remain small enough that full-file reading is routine. Keep proofs, catalogs, transcripts, detailed archaeology, volatile research state, and migration evidence elsewhere. When architecture grows, compress it rather than teaching workers to read excerpts.
 
-## Migration recovery
-
-After reading this file in full, a migration worker reads `GN3/MIGRATION/BASELINE.md`, the migration evidence, and the temporary Slack migration checklist. Completed checklist items must have durable evidence; conversational memory is never sufficient. At cutover this Canvas dependency disappears and this same architecture file is finalized rather than replaced.
+Reconstruct or recompress the proof architecture when conceptual sprawl or a major discovery makes doing so mathematically useful. Do not optimize lemma count, Engine count, file length, or compression ratio as ends in themselves; the criterion is improved comprehension and research effectiveness.
 
 ## End of complete architecture
 
