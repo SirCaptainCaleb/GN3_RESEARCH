@@ -8,7 +8,7 @@ After only the access, authentication, repository-location, and tool-discovery a
 
 GitHub is the sole durable GN3 architecture authority. Slack is a live communication and search surface. No Canvas is required for GN3 startup.
 
-After the complete architecture read, an ordinary research worker reads `GN3/STATUS.md`, `GN3/RESEARCH_STATE.md`, and the current `GN3/RESEARCH_TREE.md` before choosing a target. A worker proving or auditing a statement then reads the relevant exact mathematics in `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` and any explicitly cited canonical input. Legacy A7C3 material is pulled only when provenance or archaeology is actually needed.
+After the complete architecture read, an ordinary research worker reads `GN3/STATUS.md`, `GN3/RESEARCH_STATE.md`, the current `GN3/RESEARCH_TREE.md`, and the complete reusable toolkit: `GN3/TOOLKIT/README.md` together with every standalone toolkit module it currently indexes. The toolkit is startup mathematical context, not optional archaeology. A worker proving or auditing a statement then reads the relevant exact mathematics in `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` and any explicitly cited canonical input. Legacy A7C3 material is pulled only when provenance or archaeology is actually needed.
 
 ## Governing principle
 
