@@ -97,13 +97,14 @@ Conceptual ascent should aggressively challenge the current abstraction ceiling.
 
 ### Outputs of a synthesis-and-ascent pass
 
-A pass should leave the project with the clearest available answer to five questions:
+A pass should leave the project with the clearest available answer to six questions:
 
 1. **What do the currently relevant results jointly imply?**
 2. **What underlying mechanism best explains those implications?**
 3. **What stronger, more intrinsic, dual, obstruction, or negative-space formulation best captures that mechanism?**
 4. **What is the most natural abstraction hierarchy and shortest plausible proof route now?**
 5. **What exact unresolved mathematical statement should research attack next?**
+6. **Does the new picture require escalation to Astra, and why or why not?**
 
 Possible outputs are a revised research tree, a new or revised guidance target, a parent theorem or obstruction proposed for research, a changed dependency chain, a decision to retire or demote machinery, an audit batch for newly load-bearing mathematics, or—when certification and stability justify it—a canonical proof/toolkit edit. A pass is successful when the mathematical picture becomes more coherent and explanatory, even if none of these artifacts needs to change.
 
@@ -120,7 +121,8 @@ The Vice Director runs a continuous Director cycle around and between research w
 7. **Place guidance in the tree.** Ensure the mathematical target of current guidance appears at the correct node or leaf of the outline. The tree records the target itself, not prose explaining why the guidance was chosen; that rationale belongs in `#gn3-guidance`.
 8. **Issue or revise guidance.** State the common mathematical target and enough context to make its role in the current structural picture clear. Do not preserve an old target merely because it was previously issued.
 9. **Canonize only after exact certification and structural stability.** Durable proof dependencies belong eventually in audited canonical mathematics rather than remaining only in Slack or the tree. A passed local fact need not be canonized if structural synthesis and conceptual ascent have not yet established its durable role.
-10. **Escalate to Astra when the abstraction itself needs to change.** Escalate for a strategic reframe, stronger parent theorem, global bypass, major invariant change, or substantial architecture decision rather than ordinary local direction.
+10. **Make an explicit Astra-escalation decision.** Every Director cycle must decide whether the synthesized picture requires escalation to Astra. Escalate when the abstraction itself needs to change: for example, a strategic reframe, stronger parent theorem that changes the theorem-level route, global bypass, major invariant or induction/minimality change, substantial proof-architecture decision, or a conflict between comparably plausible global architectures that warrants Director-level adjudication. Do not escalate merely because a local lemma is difficult, a current branch needs ordinary tactical direction, or a cleaner coordinate system refines the same already-approved parent strategy.
+11. **Report the Astra decision.** The cycle report to the project owner must state either that the matter was escalated to Astra and what abstraction-level question was sent, or that it was not escalated and the concrete reason the current change remains within the existing strategic mandate. A silent non-escalation is not sufficient. When the case is genuinely borderline, prefer a short Astra escalation over implicitly making a major abstraction decision at Vice-Director level.
 
 Then repeat. The cycle exists to keep rebuilding the best mathematical understanding as the corpus changes, not merely to accumulate results, move them between surfaces, or push the current proof one lemma at a time. Audit tracking, tree maintenance, and canonical placement serve structural synthesis and conceptual ascent; they are not substitutes for them.
 
