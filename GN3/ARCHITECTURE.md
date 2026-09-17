@@ -47,6 +47,14 @@ The pre-existing renamed `#gn3-lab` is transitional legacy and is not a canonica
 
 Do not mechanically recreate the A7C3 channel taxonomy. Add another GN3 channel only when a recurring operational need cannot be served cleanly by these four.
 
+### Research-root discipline
+
+A top-level message in `#gn3-research` is an **index entry for one mathematical result**, not a container for its argument. Every `[G##]` research root must contain only the guidance tag and the exact mathematical statement being reported. The statement may include whatever hypotheses, notation, cases, displayed formulas, or conclusion are necessary to make the claim precise and self-contained.
+
+**No proof or explanatory prose belongs in a research root.** In particular, do not put derivations, reasons, proof sketches, case analysis, computations, citations used as reasons, motivation, usefulness commentary, strategic interpretation, qualifications about how the claim was obtained, or sentences such as “this follows because/from/by ...” in the top-level message. Put all of that in one or more replies to the root. A precise obstruction or null result may itself be the root statement, but the evidence and analysis supporting it still belong in the thread.
+
+If several distinct mathematical assertions are discovered, use separate roots unless they naturally form one theorem statement. Directors and Vice Directors should repair malformed research roots when they notice them: preserve the exact statement at top level and move or retain all argument, explanation, and discussion in the thread. The root timeline should therefore read like a compact list of mathematical statements; opening a thread reveals the work behind each statement.
+
 ## Authority and mathematical status
 
 GitHub placement does not by itself certify a theorem. Exact status must remain visible. During research, unaudited mathematics may be consumed optimistically unless explicitly failed, invalidated, quarantined, or superseded; canonical certification remains conservative and attaches only to the exact statement/proof independently checked.
@@ -94,7 +102,7 @@ GN3 optimizes proof progress, not artifact production. `GN3/RESEARCH_PROTOCOL.md
 - A stalled route must be classified as counterexample/impossibility, necessary missing hypothesis, specific structural obstruction, or no proof found. Failure to find a proof does not refute an abstraction.
 - The Director default is the earliest unjustified statement in the shortest presently favored proof, while bounded alternative abstractions remain welcome when they could bypass the gap or simplify the global picture.
 - Director guidance is normally **team-wide rather than individually partitioned**. The team may deliberately pile onto the same frontier; overlap and near-simultaneous discoveries are expected and useful.
-- Each Director research wave receives a guidance tag `[G##]`. The guidance post is a top-level message in `#gn3-guidance` and states the common target. A researcher responding to that wave posts each concise discovery headline as a top-level `#gn3-research` message prefixed by the same `[G##]`; proof, derivation, qualifications, computations, and discussion belong in replies to that headline. This tag is a retrieval device, not mathematical notation or permanent theorem identity.
+- Each Director research wave receives a guidance tag `[G##]`. The guidance post is a top-level message in `#gn3-guidance` and states the common target. A researcher responding to that wave posts each exact discovery statement as a top-level `#gn3-research` message prefixed by the same `[G##]`; **the root contains the statement only**, while every proof, derivation, qualification, computation, explanation, and discussion belongs in replies to that root. This tag is a retrieval device, not mathematical notation or permanent theorem identity.
 - Researchers reason abstraction-first and construct at increasing resolution: state the coarse mathematical mechanism, then refine only what is needed to realize it literally.
 - Stop elaborating an abstraction when it is genuinely defeated, not merely when one search attempt fails.
 - Scratch research may consume unaudited work optimistically; canonization remains conservative and exact-text based.
