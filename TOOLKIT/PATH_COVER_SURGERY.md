@@ -1,8 +1,8 @@
 # Path-cover surgery lemmas
 
-**Status: PENDING GN3 AUDIT.**
+**Status: GN3 AUDIT PASS.**
 
-These statements are GN3 rewrites of selected reusable A7C3 spare parts. Their legacy acceptance is provenance only; the rewritten text below requires independent GN3 audit before certification.
+These statements are GN3 rewrites of selected reusable A7C3 spare parts. The exact current text has passed independent GN3 audit; legacy acceptance is provenance only.
 
 ## 1. Crossing forced by an absorbable deletion
 
