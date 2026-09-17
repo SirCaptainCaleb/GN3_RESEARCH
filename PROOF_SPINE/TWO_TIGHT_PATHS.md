@@ -387,35 +387,29 @@ Let `S⊆V(H)` have order five. If `H[S]` is Hamiltonian, at most three four-ele
 
 Suppose instead that `H[S]` is non-Hamiltonian. By Lemma 2.3 it is represented by an edge order. If two distinct four-subsets were both non-Hamiltonian, they would have the form `T∪{x}` and `T∪{y}` for their three-vertex intersection `T`. Their induced edge orders have no increasing Hamilton path, so Lemma 2.4 gives an increasing Hamilton path on all five vertices. By the representation, this is a tight Hamilton path of `H[S]`, a contradiction. Thus in the non-Hamiltonian case at most one four-subset is non-Hamiltonian. ∎
 
-### Lemma 2.8. The Johnson cut bound
+### Lemma 2.8. Two-thirds Hamilton-five density
 
-Let `Omega` be a ten-element set and let `F⊆binom(Omega,5)` contain no complementary pair. Put
+Let `W⊆V(H)` have order `r>=6`, and let `h_5(W)` be the number of five-element subsets `F⊆W` for which `H[F]` is Hamiltonian. Then
 
-`bar(F)={Omega-A : A in F}`.
+`h_5(W) >= (2/3) binom(r,5)`.
 
-In the Johnson graph `J(10,5)`, whose vertices are the five-subsets of `Omega` and whose adjacent vertices meet in four elements, let `e(F,bar(F))` denote the number of Johnson edges with one endpoint in `F` and one endpoint in `bar(F)`. Then
+**Proof.** Count pairs `(U,F)` with
 
-`e(F,bar(F)) <= 15|F|`.
+`F⊂U⊆W`, `|F|=5`, `|U|=6`,
 
-**Proof.** For every four-set `C⊆Omega`, let
+such that `H[F]` is Hamiltonian. By Corollary 2.6, every six-set `U` contains at least four Hamiltonian five-subsets, so the number of such pairs is at least
 
-`K_C={C∪{v} : v in Omega-C}`.
+`4 binom(r,6)`.
 
-This is a clique of order six in `J(10,5)`, and every Johnson edge belongs to exactly one such clique, namely the clique indexed by the intersection of its endpoints. Put
+Every Hamiltonian five-set `F` lies in exactly `r-5` six-subsets of `W`. Hence
 
-`r_C=|F∩K_C|`, `s_C=|bar(F)∩K_C|`.
+`(r-5) h_5(W) >= 4 binom(r,6)`.
 
-Since `F` contains no complementary pair, `F` and `bar(F)` are disjoint. Hence `r_C+s_C<=6`, and therefore
+Using
 
-`r_C s_C <= (r_C+s_C)^2/4 <= (3/2)(r_C+s_C)`.
+`binom(r,6)=binom(r,5)(r-5)/6`
 
-Summing over all four-sets counts every edge from `F` to `bar(F)` exactly once. Each five-set contains exactly five four-subsets, so
-
-`sum_C r_C=5|F|`, `sum_C s_C=5|bar(F)|=5|F|`.
-
-Consequently
-
-`e(F,bar(F)) <= (3/2)(10|F|)=15|F|`. ∎
+gives the claimed bound. ∎
 
 ### Theorem 2.9. Order of a smallest counterexample
 
@@ -443,21 +437,15 @@ Using `|B_4|>=|F_5|` gives
 
 so `|F_5|<=42`, contradicting `|F_5|>=84`.
 
-Suppose `n=10`, and let `F` be the family of Hamiltonian five-subsets. It is nonempty by Corollary 2.6 and contains no complementary pair. Fix `A∈F`, put `E=V(H)-A`, and fix `a∈A`. For each `z∈E`, define
+Suppose `n=10`, and let `F` be the family of Hamiltonian five-subsets. Lemma 2.8 gives
 
-`B_z=(E-{z})∪{a}`.
+`|F| >= (2/3) binom(10,5)=168`.
 
-At most one `B_z` is non-Hamiltonian. Indeed, if distinct `x,y in E` made both `B_x,B_y` non-Hamiltonian, order the three-set `E-{x,y}` as a tight path and apply Lemma 2.5 with outside vertices `x,y,a`. One of `E,B_x,B_y` would be Hamiltonian. But `E` is the complement of the Hamiltonian set `A`, so `E` is non-Hamiltonian, and `B_x,B_y` were assumed non-Hamiltonian, a contradiction.
+On the other hand, the `binom(10,5)=252` five-subsets form `126` complementary pairs. The family `F` contains at most one member of each pair, because two complementary Hamiltonian five-sets would give a spanning two-path cover of `H`. Thus
 
-Thus for each `a∈A`, at least four of the five sets `B_z` lie in `F`. As `a` ranges over `A`, these give twenty distinct members of `F`. Their complements
+`|F|<=126`,
 
-`(A-{a})∪{z}`
-
-belong to `bar(F)` and are Johnson neighbors of `A`. Therefore every `A∈F` has at least twenty neighbors in `bar(F)`, so
-
-`e(F,bar(F)) >= 20|F|`,
-
-contradicting Lemma 2.8. Hence `n!=10`, and therefore `n>10`. ∎
+a contradiction. Hence `n!=10`, and therefore `n>10`. ∎
 
 ## 3. Longest paths and endpoint transfers
 
