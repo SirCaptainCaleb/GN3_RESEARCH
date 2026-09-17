@@ -52,6 +52,8 @@ If `(P,w)` is tight and `J=(v_i,...,v_j)` is the last nonempty interval that rem
 
 If `j=k`, `(J,w)` is a terminal segment of `(P,w)`. If `j<k`, `(J,v_{j+1})` is a contiguous subpath of `P`. ∎
 
+If `F` is an ordinary graph and `S⊆V(F)`, write `F-S` for the induced subgraph on `V(F)-S`, `deg_F(v)` for the ordinary degree of `v`, `e_F(S)` for the number of ordinary edges of `F` with both endpoints in `S`, and `comp(F)` for the number of connected components of `F`, counting isolated vertices.
+
 ## 3. Counting components after deletion
 
 Let `F` be an ordinary path forest with `k` components and let `S⊆V(F)`. Then
