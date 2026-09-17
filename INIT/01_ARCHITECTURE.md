@@ -2,19 +2,19 @@
 
 **Status: CANONICAL.**
 
-This file defines only the durable project topology and authority model. Mathematical-language rules are in `02_MATHEMATICAL_LANGUAGE.md`; research operation and Director behavior are in `03_RESEARCH_PROTOCOL.md`; certification and audit are in `04_AUDIT_PROTOCOL.md`. All four are mandatory startup context through `GN3/START.md`.
+This file defines only the durable project topology and authority model. Mathematical-language rules are in `02_MATHEMATICAL_LANGUAGE.md`; research operation and Director behavior are in `03_RESEARCH_PROTOCOL.md`; certification and audit are in `04_AUDIT_PROTOCOL.md`. All four are mandatory startup context through `START.md`.
 
 ## Authority and namespace
 
-GitHub is the durable GN3 authority. Slack is the live communication and search surface. Canonical current mathematics belongs under `GN3/`; the `A7C3/` tree and A7C3-era Slack/Canvas material are legacy provenance and archaeology, not current operating authority.
+GitHub is the durable GN3 authority. Slack is the live communication and search surface. The repository root is the active GN3 namespace: current operating material lives directly in `START.md`, `INIT/`, `PROOF_SPINE/`, `TOOLKIT/`, and `RESEARCH_TREE.md`.
 
-The completed A7C3→GN3 migration archive is `A7C3/a7c3_gn3_migration/`. It includes migration evidence and the thin provenance map. These files are archival recovery aids; they may describe older startup paths or file layouts and must not override the numbered init documents.
+`ARCHAEOLOGY/` is legacy provenance, recovery material, and source archaeology, not current operating authority. The completed A7C3→GN3 migration archive is `ARCHAEOLOGY/a7c3_gn3_migration/`. Historical files may describe older paths or layouts; those descriptions remain provenance and must not override the current root-level startup files.
 
 ## Canonical mathematical surfaces
 
-- `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` is the single sequential canonical proof attempt. Open implications remain visibly open in that document.
-- `GN3/RESEARCH_TREE.md` is the mutable top-down **outline-only** model of the live search. The file itself contains only a nested itemized outline of mathematical abstractions and progressively finer headline statements; all instructions, framing, rationale, proofs, and explanatory prose belong elsewhere, with maintenance rules in `03_RESEARCH_PROTOCOL.md`.
-- `GN3/TOOLKIT/README.md` indexes selected reusable mathematics. Standalone toolkit rewrites have their own exact audit status.
+- `PROOF_SPINE/TWO_TIGHT_PATHS.md` is the single sequential canonical proof attempt. Open implications remain visibly open in that document.
+- `RESEARCH_TREE.md` is the mutable top-down **outline-only** model of the live search. The file itself contains only a nested itemized outline of mathematical abstractions and progressively finer headline statements; all instructions, framing, rationale, proofs, and explanatory prose belong elsewhere, with maintenance rules in `03_RESEARCH_PROTOCOL.md`.
+- `TOOLKIT/README.md` indexes selected reusable mathematics. Standalone toolkit files carry certification appropriate to their exact current text.
 
 There is **no separate `STATUS.md`, `RESEARCH_STATE.md`, active provenance layer, or project-wide audit ledger**. The proof spine states the proved/open mathematical boundary; the research tree states the current live abstraction and target; the Vice Director tracks which live dependencies require certification; exact certification is governed by `04_AUDIT_PROTOCOL.md` and the relevant audit records. Avoid duplicating those facts into another summary document that can drift.
 
@@ -41,4 +41,4 @@ The project deliberately separates live search from canonical mathematics. Slack
 
 Keep the numbered init set small, explicit, and nonredundant. When a policy belongs to mathematical writing, research operation, or audit, put it in the corresponding numbered file rather than duplicating it here. When a newer explicit rule conflicts with older wording elsewhere, the newer rule should be consolidated into the appropriate numbered init document and the duplicate removed.
 
-Because initialization is one-time, changelog completeness is a durability requirement. A material change to `GN3/START.md`, the numbered init policies, the canonical proved/open boundary, or another durable fact that an already-initialized worker must know to work safely must be surfaced in `#gn3-changelog`. The changelog entry either states the usable delta or tells workers exactly what must be reread; if full reinitialization is genuinely required, it says so explicitly.
+Because initialization is one-time, changelog completeness is a durability requirement. A material change to `START.md`, the numbered init policies, the canonical proved/open boundary, or another durable fact that an already-initialized worker must know to work safely must be surfaced in `#gn3-changelog`. The changelog entry either states the usable delta or tells workers exactly what must be reread; if full reinitialization is genuinely required, it says so explicitly.
