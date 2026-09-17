@@ -8,7 +8,7 @@ After only the access, authentication, repository-location, and tool-discovery a
 
 GitHub is the sole durable GN3 architecture authority. Slack is a live communication and search surface. No Canvas is required for GN3 startup.
 
-After the complete architecture read, an ordinary research worker reads `GN3/STATUS.md` and `GN3/RESEARCH_STATE.md` before choosing a target. A worker proving or auditing a statement then reads the relevant exact mathematics in `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` and any explicitly cited canonical input. Legacy A7C3 material is pulled only when provenance or archaeology is actually needed.
+After the complete architecture read, an ordinary research worker reads `GN3/STATUS.md`, `GN3/RESEARCH_STATE.md`, and the current `GN3/RESEARCH_TREE.md` before choosing a target. A worker proving or auditing a statement then reads the relevant exact mathematics in `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` and any explicitly cited canonical input. Legacy A7C3 material is pulled only when provenance or archaeology is actually needed.
 
 ## Governing principle
 
@@ -80,12 +80,28 @@ GN3 optimizes proof progress, not artifact production. `GN3/RESEARCH_PROTOCOL.md
 - Truthful null returns are first-class: “no proof found” and “no theorem progress found” are legitimate outcomes.
 - A stalled route must be classified as counterexample/impossibility, necessary missing hypothesis, specific structural obstruction, or no proof found. Failure to find a proof does not refute an abstraction.
 - The Director default is the earliest unjustified statement in the shortest presently favored proof, while bounded alternative abstractions remain welcome when they could bypass the gap or simplify the global picture.
+- Director guidance is normally **team-wide rather than individually partitioned**. The team may deliberately pile onto the same frontier; overlap and near-simultaneous discoveries are expected and useful.
+- Each Director research wave receives a guidance tag `[G##]`. The guidance post states the common target. A researcher responding to that wave posts each concise discovery headline as a top-level `#gn3-research` message prefixed by the same `[G##]`; proof, derivation, qualifications, computations, and discussion belong in replies to that headline. This tag is a retrieval device, not mathematical notation or permanent theorem identity.
 - Researchers reason abstraction-first and construct at increasing resolution: state the coarse mathematical mechanism, then refine only what is needed to realize it literally.
 - Stop elaborating an abstraction when it is genuinely defeated, not merely when one search attempt fails.
 - Scratch research may consume unaudited work optimistically; canonization remains conservative and exact-text based.
-- Distinguish search progress from proof progress. Scratch structure is periodically compressed back into the proof spine, live research state, selected toolkit, or valuable negative-knowledge/provenance evidence.
+- Distinguish search progress from proof progress. A burst of local results is raw research material, not a theorem inventory. After a guidance wave, the Director or a delegated Vice Director synthesizes the tagged responses, identifies what changed in the mathematical picture, and compresses that information into the active research structure.
 
 No role has a quota for named results, lemmas, Engines, or nonempty returns.
+
+## Active research tree
+
+`GN3/RESEARCH_TREE.md` is the current hierarchical model of the **live search**, not canonical mathematics and not an archive of discoveries. It exists to retain enough intermediate structure for difficult arguments to cohere before the final proof topology is known.
+
+The tree is organized by mathematical objectives, unresolved obligations, arguments, and competing approaches. Nodes should have semantic names. They are not result IDs, theorem IDs, or permanent objects. A node may contain a compact argument sketch, a synthesized observation, a blocker, or children representing genuine mathematical decomposition or competing routes.
+
+Individual research discoveries normally do **not** become nodes merely because they were proved or audited. During a `[G##]` wave, researchers post discoveries concurrently in Slack. After the wave, the Director or a delegated Vice Director reads the tagged responses and rewrites the relevant portion of the tree to reflect the best current understanding. Several discoveries may collapse into one sentence or one node; a failed branch may be deleted entirely; a stronger abstraction may replace a whole subtree.
+
+Only the Director or a delegated Vice Director normally edits `GN3/RESEARCH_TREE.md`. For any synthesis pass, one such worker should act as the compressor so that researchers never need to coordinate concurrent edits to the tree. Researchers communicate corrections or proposed structural changes through `#gn3-research` rather than racing direct tree edits.
+
+The tree has a low admission bar during synthesis but a high retention bar. Keep a branch only while it represents a live unresolved subproblem, a genuinely competitive route, or a local fact still needed by a live route. Once an argument solidifies, compress its surviving mathematics into the proof spine or selected toolkit; once a route dies, remove it from the active tree unless a concise negative lesson is worth preserving elsewhere.
+
+The tree may be aggressively renamed, merged, moved, shortened, or deleted. Git history provides recovery if an apparently dead branch later matters. The tree must not accumulate serial result logs, audit transcripts, proof-history ontology, or mandatory context that no longer helps the active search.
 
 ## Canonical mathematical representation
 
@@ -93,19 +109,27 @@ The canonical proof spine is the single sequential document `GN3/PROOF_SPINE/TWO
 
 The proof spine may contain explicit open statements, but unresolved implications must remain visibly unproved. At the current coordinate the audited argument ends at Proposition 6.2 and the augmentation statement that follows is open.
 
-Engine-like organization is secondary and optional. If a future Engine label is useful for a bounded Slack investigation, it does not create a mathematical ontology or canonical dependency node. A coherent reusable mechanism may become a theorem or section; a one-use argument stays where it is clearest.
+Engine-like organization is not canonical. The active research tree supplies the useful temporary function once served by Engines—organizing uncertain intermediate work before the final argument is known—without turning those structures into permanent proof ontology. A coherent reusable mechanism may become a theorem or section; a one-use argument stays where it is clearest.
 
 Reusable mathematics is selected by factorization rather than historical logging. `GN3/TOOLKIT/README.md` indexes the deliberately small reusable shelf; proof-local lemmas remain in the spine rather than being duplicated into another graph.
 
 ## Working-state compression
 
-Slack research may contain temporary terminology, case trees, gadgets, computations, exploratory constructions, and provisional results. Ordinary inheritance is compressed: useful work should return to the sequential proof, the compact research state, the small reusable toolkit, or provenance/negative-knowledge evidence. Temporary search structure does not become mandatory startup context merely because it once helped discovery.
+The ordinary research cycle is:
+
+**team-wide guidance → tagged parallel research burst → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
+
+Slack is the high-concurrency discovery stream. `GN3/RESEARCH_TREE.md` is the low-concurrency synthesized model of the current search. `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` is the canonical active proof. `GN3/TOOLKIT/README.md` indexes independently reusable mathematics.
+
+Compression from Slack into the tree is **not copying**. The compressor should remove duplication, merge equivalent discoveries, state the strongest useful abstraction actually supported, retain concrete obstructions, and discard local noise. Compression from the tree into the proof spine or toolkit is stricter still: only mathematics that has earned a durable role survives.
+
+Slack research may contain temporary terminology, case trees, gadgets, computations, exploratory constructions, and provisional results. Temporary search structure does not become mandatory permanent context merely because it once helped discovery.
 
 ## Compactness and maintenance
 
-This file must remain small enough that full-file reading is routine. Keep proofs, catalogs, transcripts, detailed archaeology, volatile research state, and migration evidence elsewhere. When architecture grows, compress it rather than teaching workers to read excerpts.
+This file must remain small enough that full-file reading is routine. Keep proofs, catalogs, transcripts, detailed archaeology, volatile research detail, and migration evidence elsewhere. When architecture grows, compress it rather than teaching workers to read excerpts.
 
-Reconstruct or recompress the proof architecture when conceptual sprawl or a major discovery makes doing so mathematically useful. Do not optimize lemma count, Engine count, file length, or compression ratio as ends in themselves; the criterion is improved comprehension and research effectiveness.
+Reconstruct or recompress the proof architecture when conceptual sprawl or a major discovery makes doing so mathematically useful. Reorganize the active research tree whenever its hierarchy stops reflecting the best current abstraction. Do not optimize lemma count, Engine count, node count, file length, or compression ratio as ends in themselves; the criterion is improved comprehension and research effectiveness.
 
 ## End of complete architecture
 
