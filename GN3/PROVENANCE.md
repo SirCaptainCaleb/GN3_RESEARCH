@@ -11,6 +11,16 @@ GN3 statements may point here when recovering an A7C3 source argument, correctio
 - Active proof/audit frontier snapshot: `GN3/MIGRATION/EVIDENCE/ACTIVE_PROOF_AUDIT_STATE_BASELINE.md`.
 - Migration control/recovery record: `GN3/MIGRATION/BASELINE.md`.
 
+## GN3 proof audit baseline
+
+On 2026-09-17 the exact proof-spine blob
+
+`b5a3febaaac576946f8a919fd1046e2af69c5059`
+
+of `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` was confirmed as having completed audit. That certification applies to the exact mathematical text checked at that blob. The document itself explicitly stops after Proposition 6.2 with the augmentation statement still unproved; the audit did not certify the conjecture.
+
+This coordinate is retained here as provenance after removal of the redundant active `STATUS.md` layer. Future certification is governed by `GN3/INIT/04_AUDIT_PROTOCOL.md`; add further provenance entries only when they materially improve recoverability or verification.
+
 ## Provenance convention
 
 When a canonical GN3 theorem or proof passage materially descends from legacy work, record only what is useful for recovery, for example:
