@@ -16,16 +16,16 @@ The completed A7C3→GN3 migration archive is `A7C3/a7c3_gn3_migration/`. It inc
 - `GN3/RESEARCH_TREE.md` is the mutable top-down model of the live search. It is working state, not canonical mathematics, an audit ledger, or a historical archive.
 - `GN3/TOOLKIT/README.md` indexes selected reusable mathematics. Standalone toolkit rewrites have their own exact audit status.
 
-There is **no separate `STATUS.md`, `RESEARCH_STATE.md`, or active provenance layer**. The proof spine states the proved/open mathematical boundary; the research tree states the current live abstraction and target; exact certification is governed by `04_AUDIT_PROTOCOL.md` and the relevant audit records. Avoid duplicating those facts into another summary document that can drift.
+There is **no separate `STATUS.md`, `RESEARCH_STATE.md`, active provenance layer, or project-wide audit ledger**. The proof spine states the proved/open mathematical boundary; the research tree states the current live abstraction and target; the Vice Director tracks which live dependencies require certification; exact certification is governed by `04_AUDIT_PROTOCOL.md` and the relevant audit records. Avoid duplicating those facts into another summary document that can drift.
 
 ## Live Slack surfaces
 
 The active GN3 channel set is:
 
-- `#gn3-changelog` (`C0C1VMME8MV`): high-signal project deltas, architecture changes, certification-impact changes, and major research-state changes.
+- `#gn3-changelog` (`C0C1VMME8MV`): the continuity stream for high-signal project deltas, including startup-policy changes, certification-impact changes, canonical proof-boundary changes, and major research-state changes that already-initialized workers need to know.
 - `#gn3-guidance` (`C0C2ET66370`): Director/Vice Director research guidance waves and material revisions.
 - `#gn3-research` (`C0C2ENRLHE0`): mathematical research, proof construction, discussion, and temporary structures.
-- `#gn3-audit` (`C0C2D179WSV`): independent verification of exact load-bearing mathematics selected for audit.
+- `#gn3-audit` (`C0C2D179WSV`): independent verification of exact load-bearing mathematics selected by the Vice Director for audit.
 
 The renamed `#gn3-lab` is transitional legacy, not a canonical GN3 surface. Add another active channel only for a recurring need that these four cannot serve cleanly.
 
@@ -40,3 +40,5 @@ The project deliberately separates live search from canonical mathematics. Slack
 ## Maintenance
 
 Keep the numbered init set small, explicit, and nonredundant. When a policy belongs to mathematical writing, research operation, or audit, put it in the corresponding numbered file rather than duplicating it here. When a newer explicit rule conflicts with older wording elsewhere, the newer rule should be consolidated into the appropriate numbered init document and the duplicate removed.
+
+Because initialization is one-time, changelog completeness is a durability requirement. A material change to `GN3/START.md`, the numbered init policies, the canonical proved/open boundary, or another durable fact that an already-initialized worker must know to work safely must be surfaced in `#gn3-changelog`. The changelog entry either states the usable delta or tells workers exactly what must be reread; if full reinitialization is genuinely required, it says so explicitly.
