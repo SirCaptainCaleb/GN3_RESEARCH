@@ -1,6 +1,6 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `F=A|B|C`, `|A|>=|B|>=|C|`, to a spanning two-path cover or a lexicographically larger spanning three-path cover.
-    - Close the small-complement regime by proving `|B|<=4 => |C|=1`, hence reducing to `(3,1)` and `(4,1)`.
+    - Close the small-complement regime, where `|B|<=4` implies `|C|=1` and hence leaves only `(3,1)` and `(4,1)`.
       - In `(3,1)`, construct a spanning two-path cover.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - Close the larger-complement regime by a literal cut-and-join augmentation of `F`.
