@@ -8,16 +8,15 @@ This file defines only the durable project topology and authority model. Mathema
 
 GitHub is the durable GN3 authority. Slack is the live communication and search surface. Canonical current mathematics belongs under `GN3/`; the `A7C3/` tree and A7C3-era Slack/Canvas material are legacy provenance and archaeology, not current operating authority.
 
-Migration evidence under `GN3/MIGRATION/` is archival. It may describe older startup paths or file layouts and must not override the numbered init documents.
+The completed A7C3→GN3 migration archive is `A7C3/a7c3_migration/`. It includes migration evidence and the thin provenance map. These files are archival recovery aids; they may describe older startup paths or file layouts and must not override the numbered init documents.
 
 ## Canonical mathematical surfaces
 
 - `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` is the single sequential canonical proof attempt. Open implications remain visibly open in that document.
 - `GN3/RESEARCH_TREE.md` is the mutable top-down model of the live search. It is working state, not canonical mathematics, an audit ledger, or a historical archive.
 - `GN3/TOOLKIT/README.md` indexes selected reusable mathematics. Standalone toolkit rewrites have their own exact audit status.
-- `GN3/PROVENANCE.md` is a thin recovery aid for source and audit history when such history materially helps verification. It is not startup mathematical exposition.
 
-There is **no separate `STATUS.md` or `RESEARCH_STATE.md` layer**. The proof spine states the proved/open mathematical boundary; the research tree states the current live abstraction and target; exact certification is governed by `04_AUDIT_PROTOCOL.md` and the relevant audit records. Avoid duplicating those facts into another summary document that can drift.
+There is **no separate `STATUS.md`, `RESEARCH_STATE.md`, or active provenance layer**. The proof spine states the proved/open mathematical boundary; the research tree states the current live abstraction and target; exact certification is governed by `04_AUDIT_PROTOCOL.md` and the relevant audit records. Avoid duplicating those facts into another summary document that can drift.
 
 ## Live Slack surfaces
 

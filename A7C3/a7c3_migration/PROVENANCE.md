@@ -7,9 +7,9 @@ GN3 statements may point here when recovering an A7C3 source argument, correctio
 ## Migration baseline
 
 - Pre-migration repository coordinate: `7b68b016d3fd309f8a81070bd140e4718d309f53`.
-- A7C3 Canonical Startup snapshot: `GN3/MIGRATION/EVIDENCE/A7C3_CANONICAL_STARTUP_A47.md`.
-- Active proof/audit frontier snapshot: `GN3/MIGRATION/EVIDENCE/ACTIVE_PROOF_AUDIT_STATE_BASELINE.md`.
-- Migration control/recovery record: `GN3/MIGRATION/BASELINE.md`.
+- A7C3 Canonical Startup snapshot: `A7C3/a7c3_migration/EVIDENCE/A7C3_CANONICAL_STARTUP_A47.md`.
+- Active proof/audit frontier snapshot: `A7C3/a7c3_migration/EVIDENCE/ACTIVE_PROOF_AUDIT_STATE_BASELINE.md`.
+- Migration control/recovery record: `A7C3/a7c3_migration/BASELINE.md`.
 
 ## GN3 proof audit baseline
 
