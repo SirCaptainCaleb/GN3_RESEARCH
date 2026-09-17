@@ -48,7 +48,7 @@ Then:
 
 `(u,d,v)`, `(u,x,v)`, `(u,y,v)`
 
-are all tight. Lemma 2.2 of the proof spine gives a Hamilton tight path on
+are all tight. `SMALL_ORDER_HAMILTONICITY.md` Section 2 gives a Hamilton tight path on
 
 `{u,v,d,x,y}=C union {x,y}`.
 
@@ -64,7 +64,7 @@ Relabelling the exterior vertices orders the three sizes, and relabelling `a,b,c
 
 ## 2. Three parallel middle vertices admit a Hamilton five-path with an exterior endpoint
 
-Let `a,c,p,q,r` be distinct vertices of a boundary tournament and suppose
+Let `H` be a boundary tournament, let `a,c,p,q,r` be distinct vertices, and suppose
 
 `(a,p,c)`, `(a,q,c)`, `(a,r,c)`
 
@@ -153,3 +153,27 @@ so `(a,p,c),(a,q,c),(a,r,c)` are tight. The Hamilton increasing paths are exactl
 `(a,p,r,c,q)` and `(r,a,p,c,q)`.
 
 Thus `p` is never an endpoint of a Hamilton tight path in this example. Relabelling `p,q,r` shows that no fixed middle vertex can be prescribed universally.
+
+## 3. Four parallel middle vertices force a five-path
+
+Let `H` be a boundary tournament, let `a,c` be distinct vertices, and let `S⊆V(H)-{a,c}` have order at least four. Suppose
+
+`(a,s,c)`
+
+is tight for every `s∈S`. Then there are distinct `x,y,z∈S` such that
+
+`(x,a,y,c,z)`
+
+is a tight path.
+
+**Proof.** It is enough to prove the result for a four-element subset of `S`, so assume `|S|=4`. Define tournaments on `S` by
+
+`x->_a y` iff `(x,a,y)` is tight,
+
+`x->_c y` iff `(x,c,y)` is tight.
+
+Suppose no distinct `x,y,z` satisfy `x->_a y->_c z`. If a vertex has indegree at least two in `->_a`, then it has outdegree zero in `->_c`; otherwise two of its `->_a` predecessors together with one `->_c` successor would give such a mixed chain.
+
+The sum of indegrees in the four-vertex tournament `->_a` is six, so some vertex `y` has indegree at least two. Hence `y` has outdegree zero in `->_c`, so `y` is the unique `->_c` sink. Every other vertex has positive `->_c` outdegree and therefore `->_a` indegree at most one. The indegree sum then forces `y` to have `->_a` indegree three and each other vertex to have `->_a` indegree one. Thus `y` is also the `->_a` sink.
+
+Choose `v!=y`. Since `y` is the `->_c` sink, `v->_c y`. The unique `->_a` predecessor `x` of `v` cannot be `y`, because `y` is the `->_a` sink. Hence `x->_a v->_c y`, a mixed chain on three distinct vertices, contradiction. Therefore such a mixed chain exists. Renaming its middle and last vertices as `y,z`, the triples `(x,a,y)`, `(a,y,c)`, `(y,c,z)` are tight, so `(x,a,y,c,z)` is tight. ∎
