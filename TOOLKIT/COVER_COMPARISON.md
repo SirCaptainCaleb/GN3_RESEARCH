@@ -26,7 +26,7 @@ is tight.
 
 Thus some edge `xy` of `T` crosses two components of `R`. If the component containing `x` is nontrivial, choose a path neighbor `p` of `x` in that component. The vertices `p,x,y` are distinct, and boundary antisymmetry gives exactly one tight member of the displayed reversal pair. ∎
 
-A crossing between two singleton components gives no three-vertex information by itself. Each singleton component contains no ordered triple at all, and every two-vertex ordering is a tight path vacuously. Thus the orders of two singleton components alone impose no tightness condition on any ordered triple of distinct vertices. Any argument using two singleton components must retain some additional vertex or triple information.
+Each singleton component contains no ordered triple, and every two-vertex ordering is a tight path vacuously. Thus the orders of two singleton components alone impose no tightness condition on any ordered triple of distinct vertices.
 
 ## 2. A Cartesian clause lemma
 
@@ -44,9 +44,9 @@ is true. Then for some `j`, every statement `P_{j,i}` with `i in I_j` is true.
 
 ### Boundary-tournament form
 
-Suppose `pc(H)>k`. For `j=1,...,m`, let `{alpha_{j,i}:i in I_j}` be finite families of ordered triples, and for each `alpha_{j,i}` let `h_{j,i}` be its reverse.
+Let `H` be a boundary tournament, and let `k>=1` be an integer with `pc(H)>k`. For `j=1,...,m`, let `{alpha_{j,i}:i in I_j}` be finite families of ordered triples of distinct vertices of `H`, and for each `alpha_{j,i}` let `h_{j,i}` be its reverse.
 
-Assume that for every tuple `(i_1,...,i_m)` there exist `k` vertex-disjoint vertex sequences whose vertex sets partition `V(H)` and such that:
+Assume that for every tuple `(i_1,...,i_m)` there exist `k` pairwise vertex-disjoint vertex-simple sequences whose vertex sets partition `V(H)` and such that:
 
 - every consecutive ordered triple of every sequence, other than the listed triples
 
@@ -57,7 +57,7 @@ Assume that for every tuple `(i_1,...,i_m)` there exist `k` vertex-disjoint vert
 
 Then for some `j`, every triple `alpha_{j,i}`, `i in I_j`, is tight.
 
-**Proof.** Fix a tuple `(i_1,...,i_m)` and the corresponding `k` sequences. If every listed triple `h_{j,i_j}` were tight, then every consecutive triple in every sequence would be tight. The sequences would therefore be `k` tight paths forming a spanning `k`-path cover of `H`, contrary to `pc(H)>k`.
+**Proof.** Fix a tuple `(i_1,...,i_m)` and the corresponding `k` sequences. If every listed triple `h_{j,i_j}` were tight, then every consecutive triple in every vertex-simple sequence would be tight. The sequences would therefore be `k` tight paths forming a spanning `k`-path cover of `H`, contrary to `pc(H)>k`.
 
 Hence at least one listed triple `h_{j,i_j}` is non-tight. Boundary antisymmetry makes its reverse `alpha_{j,i_j}` tight. Thus for every tuple at least one of the Boolean statements
 
@@ -67,7 +67,7 @@ is true. The Cartesian clause lemma gives an index `j` for which every `alpha_{j
 
 ## 3. A weighted symmetric-difference lemma for two matchings
 
-Let `F` and `J` be matchings in the same finite graph, with
+Let `G=(V,E)` be a finite graph, and let `F` and `J` be matchings in `G`, with
 
 `|F|=|J|+1`.
 
@@ -83,7 +83,7 @@ and
 
 `omega(C)=sum_{e in F intersect C} w(e)`.
 
-Then exactly one of the following conclusions is available:
+Then exactly one of the following holds:
 
 1. some union `S` of alternating components satisfies
 
