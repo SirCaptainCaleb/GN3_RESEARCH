@@ -1,5 +1,7 @@
 # Local Hamilton extension lemmas
 
+Throughout this file, `H` is an arbitrary boundary tournament.
+
 ## 1. Bad extension pairs around a tight three-vertex path form a triangle-free graph
 
 Let `P` be a tight path on three vertices, and let `X` be a set of `m>=3` vertices disjoint from `V(P)`. Define a graph `B_P(X)` on vertex set `X` by joining distinct `x,y` exactly when
@@ -18,7 +20,7 @@ so at least
 
 pairs `{x,y}` extend `P` to a Hamilton five-vertex induced subgraph. Equality in the upper bound occurs exactly when `B_P(X)` is a complete bipartite graph with part sizes `floor(m/2)` and `ceil(m/2)`.
 
-**Proof.** For any three distinct `x,y,z in X`, Lemma 2.5 of the proof spine says that at least one of
+**Proof.** For any three distinct `x,y,z in X`, `SMALL_ORDER_HAMILTONICITY.md` Section 5 says that at least one of
 
 `V(P) union {x,y}`, `V(P) union {x,z}`, `V(P) union {y,z}`
 
@@ -42,7 +44,7 @@ Thus at least two-thirds of all five-subsets of `W` are Hamiltonian; among the f
 
 and `H[F]` is Hamiltonian.
 
-There are `binom(r-s,6-s)` possible six-sets `U`. By Corollary 2.6 of the proof spine, each `U` has at least four Hamiltonian five-subsets. At most `s` of those can fail to contain all of `S`, because a five-subset of `U` is obtained by deleting one vertex. Hence each `U` contributes at least `4-s` admissible pairs.
+There are `binom(r-s,6-s)` possible six-sets `U`. By `SMALL_ORDER_HAMILTONICITY.md` Section 6, each `U` has at least four Hamiltonian five-subsets. At most `s` of those can fail to contain all of `S`, because a five-subset of `U` is obtained by deleting one vertex. Hence each `U` contributes at least `4-s` admissible pairs.
 
 On the other hand, each Hamiltonian five-set `F` containing `S` lies in exactly `r-5` six-subsets of `W`. Therefore
 
