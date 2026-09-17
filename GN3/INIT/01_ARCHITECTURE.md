@@ -13,7 +13,7 @@ The completed A7C3→GN3 migration archive is `A7C3/a7c3_gn3_migration/`. It inc
 ## Canonical mathematical surfaces
 
 - `GN3/PROOF_SPINE/TWO_TIGHT_PATHS.md` is the single sequential canonical proof attempt. Open implications remain visibly open in that document.
-- `GN3/RESEARCH_TREE.md` is the mutable top-down model of the live search. It is working state, not canonical mathematics, an audit ledger, or a historical archive.
+- `GN3/RESEARCH_TREE.md` is the mutable top-down **outline-only** model of the live search. The file itself contains only a nested itemized outline of mathematical abstractions and progressively finer headline statements; all instructions, framing, rationale, proofs, and explanatory prose belong elsewhere, with maintenance rules in `03_RESEARCH_PROTOCOL.md`.
 - `GN3/TOOLKIT/README.md` indexes selected reusable mathematics. Standalone toolkit rewrites have their own exact audit status.
 
 There is **no separate `STATUS.md`, `RESEARCH_STATE.md`, active provenance layer, or project-wide audit ledger**. The proof spine states the proved/open mathematical boundary; the research tree states the current live abstraction and target; the Vice Director tracks which live dependencies require certification; exact certification is governed by `04_AUDIT_PROTOCOL.md` and the relevant audit records. Avoid duplicating those facts into another summary document that can drift.
