@@ -1,9 +1,5 @@
 # Johnson-graph density bounds
 
-**Status: GN3 AUDIT PASS.**
-
-The exact current text has passed independent GN3 audit. The results in this file are pure extremal set theory migrated from A7C3 spare part `S9030`; legacy acceptance is provenance only.
-
 Let `J(r,k)` be the Johnson graph whose vertices are the `k`-subsets of an `r`-element set, with two vertices adjacent exactly when their intersection has order `k-1`.
 
 ## 1. A quadratic density bound from local `(k+1)`-set occupancy
