@@ -1,9 +1,5 @@
 # Local Hamilton extension lemmas
 
-**Status: GN3 AUDIT PASS.**
-
-These are GN3 formulations of reusable consequences already present in, or naturally derived from, the five- and six-vertex theory in the proof spine. The exact current text has passed independent GN3 audit; legacy acceptance is provenance only.
-
 ## 1. Bad extension pairs around a tight three-vertex path form a triangle-free graph
 
 Let `P` be a tight path on three vertices, and let `X` be a set of `m>=3` vertices disjoint from `V(P)`. Define a graph `B_P(X)` on vertex set `X` by joining distinct `x,y` exactly when
@@ -71,7 +67,3 @@ are tight, then at least one of
 is a tight Hamilton path on `{a,c,x,y}`.
 
 **Proof.** Exactly one of `(x,c,y)` and `(y,c,x)` is tight. In the first case `(a,x,c,y)` is tight; in the second `(a,y,c,x)` is tight. ∎
-
-## Legacy provenance
-
-Section 1 is the reusable graph-theoretic consequence of A7C3 spare part `S9023`; Section 2 rewrites `S9029`; Section 3 rewrites `S9038`.
