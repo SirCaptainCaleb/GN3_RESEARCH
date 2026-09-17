@@ -1,6 +1,6 @@
 # GN3 research protocol
 
-This file governs live mathematical search during and after migration. Canonical proof-writing rules remain in `ARCHITECTURE.md`; the current mathematical target is summarized in `RESEARCH_STATE.md`.
+This file governs live mathematical search during and after migration. Canonical proof-writing rules remain in `ARCHITECTURE.md`; the current mathematical target is summarized in `RESEARCH_STATE.md`; the mutable hierarchy of active approaches is `RESEARCH_TREE.md`.
 
 ## What counts as progress
 
@@ -45,6 +45,18 @@ That statement is the default target. The Director should keep the proof-level r
 
 This is a default, not a monopoly. Bounded exploration of genuinely different abstractions is encouraged when it could bypass the gap, yield a stronger parent theorem, or reveal a simpler global picture.
 
+Guidance is normally **team-wide**. The Director should prefer one common mathematical target over individually partitioning the team when parallel independent attacks are useful. Redundant approaches and near-simultaneous discoveries are expected; their value is assessed during synthesis rather than prevented in advance.
+
+## Guidance waves and Slack reporting
+
+Each Director research wave receives a tag `[G##]`, with the number increasing monotonically. The guidance post in `#gn3-research` states the common target and enough mathematical motivation for researchers to understand why it matters.
+
+Researchers working under that guidance post each concise discovery as a **top-level headline message** in `#gn3-research` prefixed by the same `[G##]`. The headline should state the mathematical content, not a status update. The proof, derivation, qualifications, computations, counterexamples, and discussion belong in replies to that headline.
+
+The tag is deliberately administrative. `[G##]` must not become mathematical notation, theorem identity, provenance inside canonical proofs, or a replacement for stating hypotheses and conclusions. Its purpose is retrieval: after the wave, the Director or Vice Director can collect the responses to exactly that guidance without reconstructing the burst from chronology.
+
+A null return need not manufacture a headline theorem. If useful, a researcher may post a `[G##]` headline stating the precise obstruction or that no proof was found, with enough detail in the thread to distinguish those outcomes.
+
 ## Researcher default
 
 Before committing to detailed construction, a researcher should be able to state internally:
@@ -63,6 +75,8 @@ Scratch research may use temporary names, gadgets, computations, case trees, heu
 
 Canonical GN3 mathematics is different. It inherits only exact statements and proofs that survive compression and the certification policy in `ARCHITECTURE.md`. Repeated downstream use does not certify a result.
 
+`RESEARCH_TREE.md` sits between these layers. It is synthesized working state: more organized than Slack scratch, but neither certified mathematics nor a durable theorem inventory.
+
 ## Search progress versus proof progress
 
 Exploration can be valuable without advancing the proof. Before reporting **proof progress**, ask whether the work:
@@ -74,13 +88,34 @@ Exploration can be valuable without advancing the proof. Before reporting **proo
 
 If not, report it as search information, not proof closure.
 
+## Research-tree synthesis
+
+After a guidance wave, the Director or a delegated Vice Director acts as the **compressor**. Only one compressor should own a given synthesis pass.
+
+The compressor reads the `[G##]` headlines and their relevant proof threads, then updates `RESEARCH_TREE.md` according to what the burst changed in the mathematical picture. This is synthesis, not transcription:
+
+- merge equivalent or overlapping discoveries;
+- replace several local facts by a supported stronger abstraction when appropriate;
+- preserve precise blockers and necessary hypotheses;
+- split a node only when the mathematics genuinely branches;
+- delete dead routes and redundant local steps;
+- do not create a node merely because a result was proved or audited.
+
+Researchers normally do not edit the tree directly. They communicate discoveries, corrections, and structural suggestions in `#gn3-research`; the Director or delegated Vice Director performs the low-concurrency rewrite.
+
+The tree should remain aggressively mutable. Its purpose is to show **what the current search looks like**, not to preserve credit, chronology, or every true intermediate statement.
+
 ## Compression cycle
 
-Slack and scratchwork may be expansive. Periodically compress what survived into one of four places only:
+The ordinary cycle is:
 
-1. the canonical sequential proof spine;
-2. the compact research-state description of the live gap;
-3. the small reusable toolkit;
-4. provenance or negative-knowledge evidence when it prevents future reconstruction of a known bad route.
+**team-wide guidance → tagged parallel research burst → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
 
-Temporary search structure does not become required startup context merely because it was useful during discovery.
+From there, stronger compression happens when mathematics earns a durable role:
+
+1. proof-carrying mathematics enters the canonical sequential proof spine;
+2. independently reusable mathematics enters the small toolkit;
+3. the compact research-state file records the big picture and governing frontier;
+4. unusually valuable negative knowledge or provenance is retained only when it prevents future reconstruction of a known bad route.
+
+Temporary search structure does not become permanent startup context merely because it was useful during discovery. The active research tree is startup context only because it represents the current live search; obsolete branches should be removed rather than accumulated.
