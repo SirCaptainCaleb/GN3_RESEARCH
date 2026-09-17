@@ -1,9 +1,5 @@
 # Cover-comparison and matching lemmas
 
-**Status: REVISED AFTER AUDIT; PENDING RE-AUDIT.**
-
-These statements isolate general combinatorial facts that were previously embedded in A7C3 cover-comparison machinery. The mathematical content has been rewritten in intrinsic GN3 language; the revised exact text awaits independent re-audit.
-
 ## 1. A component drop forces a crossing edge
 
 Let `H` be a boundary tournament and let `W subseteq V(H)`. Suppose `H[W]` has path covers
@@ -110,7 +106,3 @@ If some component had `delta=-1`, then with only one component of excess `+1` th
 The positivity hypothesis `W>0` is essential for this formulation: with zero total weight, several zero-weight `F`-heavy components can coexist with `J`-heavy components.
 
 A useful specialization takes `w` to be the indicator of edges crossing a fixed vertex partition. If `J` uses no crossing edge, the second alternative says that one alternating path contains every crossing edge of `F`.
-
-## Legacy provenance
-
-Section 1 is the intrinsic content of A7C3 `S9002`; its singleton warning replaces the formal signed-singleton language of `S9007`. Section 2 rewrites `S9036`. Section 3 is the reusable matching core of `S9043(A)`, with the missing positive-total-weight hypothesis made explicit.
