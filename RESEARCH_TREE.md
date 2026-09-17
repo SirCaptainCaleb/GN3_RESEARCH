@@ -1,14 +1,17 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving only `(3,1)` and `(4,1)`.
-      - [G05] No boundary tournament with `pc(H)>2` has a Hamiltonian vertex set `X` of order `n-4`.
-        - For a Hamilton ordering of `X` with actual endpoints `L,R` and four-vertex complement `S`, the sets `S`, `S union {L}`, `S union {R}`, and `S union {L,R}` are non-Hamiltonian; every `{L,R} union (S-{s})` is Hamiltonian; and `S` has intrinsic matching blocks `M_low<M_mid<M_high`.
-        - The two actual endpoints have the same middle-matching profile: one edge of `M_mid` is incoming to both `L,R`, while the other is outgoing from both.
-        - At least three vertices `s in S` admit a Hamilton ordering of `{L,R} union (S-{s})` whose split at an actual endpoint is a spanning two-path proposal with exactly one non-tight seam.
-          - Force the reverse seams arising from these three or four proposals to be incompatible, yielding a spanning two-path cover.
-          - At most one omitted vertex can be exceptional; every Hamilton ordering of its mixed five-set places `L` before `R` in positions `(1,2)`, `(1,3)`, or `(2,3)`.
-          - Compress common failure into a parallel endpoint turn or a four-vertex bridge and consume that common obstruction rather than enumerating further seams.
-        - Use pair-deletion substitution only if the universal actual-endpoint route reaches a concrete obstruction that it cannot absorb.
+      - [G06] Eliminate a Hamiltonian `(n-4)`-vertex set `X` by absorbing its middle path into an exact two-cover of its endpoint core.
+        - For a Hamilton ordering `X=(L,u,N,v,R)` with four-vertex complement `S`, the codimension-four interface gives the endpoint barriers `(u,L,s)`, `(s,R,v)` for every `s in S`, and `S` has intrinsic matching blocks.
+        - Let `I,O` be the two edges of the middle matching, with `I` incoming and `O` outgoing at `L`; at `R` the profile is either the same or swapped.
+        - The eight-vertex endpoint core `G_8=H[S union {L,u,v,R}]` has a profile-determined exact two-cover.
+          - Same profile: the four orientation choices give exact `4+4` covers `(u,L,O)|(I,R,v)`.
+          - Swapped profile: the orientation choices give exact `6+2` covers `(u,L,O,R,v)|I`.
+        - Prove that the nonempty middle path `N` can be absorbed into the profile-determined cover family to obtain a spanning two-path cover of `H`.
+          - Same profile: use the four simultaneous `4+4` covers as one family; compress failure across cuts of `N` into a path-level obstruction rather than separate seam inventories.
+          - Swapped profile: deleting `I` leaves a common residue with four exact two-covers whose endpoint/internal roles reverse; use component-drop comparison to force a global attachment or contradiction.
+          - If a failure produces another Hamiltonian `(n-4))-vertex set, treat the exchange as an output of absorption and only then use the certified exchange restrictions.
+        - The unconditional actual-endpoint one-seam theorem remains auxiliary; do not assume the endpoint profiles agree or that three favorable omissions exist without the corresponding profile hypothesis.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For `|B|>=5`, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
       - Allow multiple cuts, both ends, and reordered paths; verify every new consecutive triple.
