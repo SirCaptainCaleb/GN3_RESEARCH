@@ -72,7 +72,7 @@ are tight. Then `H[{a,c,p,q,r}]` has a Hamilton tight path with at least one end
 
 In general one cannot prescribe in advance which of `p,q,r` is an endpoint.
 
-**Proof.** Lemma 2.2 of the proof spine gives some Hamilton tight path on the five vertices. If one endpoint lies in `{p,q,r}`, there is nothing to prove. Suppose instead that the endpoints are `a,c`. After relabelling `p,q,r` as `x,y,z`, the path is one of
+**Proof.** `SMALL_ORDER_HAMILTONICITY.md` Section 2 gives some Hamilton tight path on the five vertices. If one endpoint lies in `{p,q,r}`, there is nothing to prove. Suppose instead that the endpoints are `a,c`. After relabelling `p,q,r` as `x,y,z`, the path is one of
 
 `(a,x,y,z,c)`, `(c,x,y,z,a)`.
 
