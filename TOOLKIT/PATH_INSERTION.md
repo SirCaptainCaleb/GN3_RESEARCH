@@ -1,9 +1,5 @@
 # Path insertion and endpoint replacement lemmas
 
-**Status: REVISED AFTER AUDIT; PENDING RE-AUDIT.**
-
-These statements collect local consequences of failed insertion, two-sided endpoint replacement, and extensions of one ordered edge. The revised exact text awaits independent re-audit.
-
 ## 1. Two-sided endpoint replacement forces reversed order
 
 Let `H` be a boundary tournament. Let
@@ -181,7 +177,3 @@ are tight, then
 is a tight path.
 
 Two left extensions of `(a,b)`, or two right extensions of `(a,b)`, do not by themselves imply a four-vertex path; the useful automatic conclusion is the opposite-end concatenation above.
-
-## Legacy provenance
-
-Section 1 rewrites A7C3 `S9012` in the ordinary ordered-path language of Appendix A. Section 2 rewrites `S9021`. Section 3 rewrites `S9031` without naming the two local comparison patterns. Section 4 is the intrinsic content of `S9032`.
