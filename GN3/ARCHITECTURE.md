@@ -16,6 +16,18 @@ After the complete architecture read, an ordinary research worker reads `GN3/STA
 
 Scratchwork may use temporary names, case trees, constructions, computations, and exploratory organization. Canonical GN3 state should inherit only mathematics and operating structure that survives deliberate compression.
 
+## Mathematical language in all communication
+
+The prohibition on proof-meta language is not merely a publication-style rule. It applies to **all mathematical communication in GN3**: Slack research posts and replies, Director guidance, audit discussion, research-tree text, synthesis notes, and canonical proofs.
+
+Whenever the mathematical object or assertion can be named directly, name it directly. Speak about paths, covers, endpoints, triples, orders, intersections, deletions, inequalities, obstructions, and implications rather than replacing them with proof-role descriptions such as “the downstream object”, “the closure witness”, “the output of the previous result”, “the active mechanism”, “the state carried by the branch”, or similar language whose meaning depends on knowing the history of the proof.
+
+Workflow metadata is allowed where it is actually workflow metadata—for example `[G##]`, `[PASS]`, audit status, a request to inspect the earliest open statement, or a note that a branch is obsolete. But workflow language must not substitute for the mathematics itself. A researcher should be able to read a mathematical claim in Slack or in the research tree and understand what it says without reconstructing which proof step produced each object.
+
+This matters especially during research. Meta-language that feels harmless in scratch communication tends to become hidden ontology: later workers reuse a phrase whose mathematical content was never fixed, different branches silently attach different meanings to it, and the ambiguity eventually leaks into the proof. Prefer slightly longer explicit mathematics over a compact proof-history phrase. Temporary terminology is acceptable only when it names a mathematically defined object or condition rather than its role in the argument.
+
+Directors, Vice Directors, auditors, and researchers should actively rewrite meta descriptions into ordinary mathematical language when synthesizing results. The research tree should preserve the best current **mathematical abstraction**, not the vocabulary of the route by which it was discovered.
+
 ## Namespace and legacy boundary
 
 Canonical mathematics belongs under `GN3/`. The existing `A7C3/` tree, A7C3 Slack channels, and A7C3-era Canvases are legacy history, provenance, and archaeology. Do not mutate them into GN3 canon. Make only narrowly necessary archival corrections.
