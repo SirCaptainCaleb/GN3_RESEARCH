@@ -1,9 +1,5 @@
 # Four-vertex structure and fifth-vertex extensions
 
-**Status: REVISED AFTER AUDIT; PENDING RE-AUDIT.**
-
-This module collects local structure theorems for non-Hamiltonian four-vertex boundary tournaments and their extensions. The revised exact text makes the finite forcing steps explicit and awaits independent re-audit.
-
 ## 1. Two parallel turns force one of two edge-orderable four-vertex forms
 
 Let `H` be a boundary tournament, and let `a,b,c,d` be distinct vertices of `H`. Suppose
@@ -275,7 +271,3 @@ For the density statement, count pairs `(X,Y)` where `X` is a Hamiltonian four-s
 `(r-4)h_4(r) >= 3 binom(r,5)`,
 
 which simplifies to the displayed bound. ∎
-
-## Legacy provenance
-
-Section 1 rewrites A7C3 `S9026`; Section 2 rewrites `S9027`; Section 3 rewrites the reusable content of `S9028`; Section 4 rewrites `S9039` using the `K_4` classification already present in the proof spine.
