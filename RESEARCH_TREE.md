@@ -1,21 +1,15 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving only `(3,1)` and `(4,1)`.
-      - [G04] Prove that no boundary tournament with `pc(H)>2` has a Hamiltonian vertex set `X` of order `n-4`; retain smallest-counterexample minimality only as a fallback if the universal route fails.
-        - Universal codimension-four and end-pair structure.
-          - The four-vertex complement `S` is non-Hamiltonian with intrinsic matching blocks, and Hamilton end pairs of `X` have universal exterior barriers and unordered initial/terminal separation.
-          - If `D` is the first two or last two vertices of a Hamilton ordering of `X`, then at least three five-sets `K_s=D union (S-{s})` are Hamiltonian; a missing fourth face forces the inner member of `D` to be globally ineligible as a Hamilton endpoint of `X`.
-          - For every good `s`, writing `Z=X-D`, the complementary set `Y_s=Z union {s}` is non-Hamiltonian but has the explicit exact two-cover `Z|(s)`; hence `K_s|Z|(s)` is a universal spanning three-cover.
-        - Five-set absorption: for some good `s`, absorb the Hamiltonian five-set `K_s` into two paths covering `Y_s`.
-          - Universal split-splice coordinate: range over Hamilton orderings of `K_s`, all internal cuts, and both assignments to `Z|(s)`; every failed proposal yields its complete width-two seam-obstruction clause. Use the overlap of at least three good five-sets, rather than one local seam inventory, to force a successful split or a structural obstruction.
-          - Pair-deletion substitution coordinate: in a smallest counterexample choose an exact two-cover `T` of `H-D`; there is a good `s` for which the cut `C_s=S-{s} | Y_s` has at least two crossings and at least two `C_s`-blocks. Replace the `C_s`-blocks by the same number of tight paths partitioning `K_s` while preserving all incident seams.
-            - If the selected crossing number is two, then there are exactly two `C_s`-blocks; an isolated dimer gives an exchanged `n-4` core, while every nonisolated case is a one-sided prescribed dimer-end problem in `K_s` and failure forces the corresponding reverse seam.
-            - If the crossing number is at least three, treat the two or three `C_s`-blocks simultaneously by a seam-compatible path cover of `K_s`; do not replace this by a growing list of local reverse triples.
-          - Compress families of failed local replacements with complete seam clauses and the Cartesian-clause/cover-comparison principles when they genuinely factor.
-        - Conditional exchange theory is downstream of actual production.
-          - Across genuinely exchanged `n-4` cores, matching type controls possible end side and inserted vertices lose endpoint eligibility; immediate reversal is severely restricted.
-          - Use these transport laws only after a two-cover-or-exchange production statement has been proved for the case being iterated.
+      - [G05] No boundary tournament with `pc(H)>2` has a Hamiltonian vertex set `X` of order `n-4`.
+        - For a Hamilton ordering of `X` with actual endpoints `L,R` and four-vertex complement `S`, the sets `S`, `S union {L}`, `S union {R}`, and `S union {L,R}` are non-Hamiltonian; every `{L,R} union (S-{s})` is Hamiltonian; and `S` has intrinsic matching blocks `M_low<M_mid<M_high`.
+        - The two actual endpoints have the same middle-matching profile: one edge of `M_mid` is incoming to both `L,R`, while the other is outgoing from both.
+        - At least three vertices `s in S` admit a Hamilton ordering of `{L,R} union (S-{s})` whose split at an actual endpoint is a spanning two-path proposal with exactly one non-tight seam.
+          - Force the reverse seams arising from these three or four proposals to be incompatible, yielding a spanning two-path cover.
+          - At most one omitted vertex can be exceptional; every Hamilton ordering of its mixed five-set places `L` before `R` in positions `(1,2)`, `(1,3)`, or `(2,3)`.
+          - Compress common failure into a parallel endpoint turn or a four-vertex bridge and consume that common obstruction rather than enumerating further seams.
+        - Use pair-deletion substitution only if the universal actual-endpoint route reaches a concrete obstruction that it cannot absorb.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
-    - For larger complements, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
+    - For `|B|>=5`, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
       - Allow multiple cuts, both ends, and reordered paths; verify every new consecutive triple.
       - Prefer parent absorption or prescribed-boundary statements over discovery-time cut-and-join inventories.
