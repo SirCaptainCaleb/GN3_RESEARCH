@@ -1,9 +1,5 @@
 # Cover augmentation lemmas
 
-**Status: REVISED AFTER AUDIT; PENDING RE-AUDIT.**
-
-These statements collect explicit cut-and-join moves and the local obstructions produced when such moves fail. The revised exact text awaits independent re-audit.
-
 ## 1. Concatenating two components forces a reversed joining triple
 
 Let `H` be a boundary tournament with `pc(H)>2`, and let
@@ -243,7 +239,3 @@ Moreover, among distinct ordinary edges joining endpoints of two components of `
 Every successful concatenation adds exactly one ordinary edge to the ordinary path forest of `J`. If such a concatenation has the same ordinary forest as `F`, then the forest of `J` is contained in that of `F` and the added joining edge is the unique edge of `F` not already in `J`. Thus at most one distinct joining edge can reconstruct the forest of `F`.
 
 The three unordered pairs of components of `J` supply three distinct ordinary endpoint-joining edges, since the components are pairwise vertex-disjoint. Choose one different from the possible unique edge that reconstructs `F`, orient the corresponding pair of components in either concatenation order, and apply the first assertion. ∎
-
-## Legacy provenance
-
-Sections 1–5 rewrite A7C3 `S9008`, `S9015`, `S9024`, `S9025`, and `S9037`, respectively. Section 6 extracts the intrinsic cut-and-join statement from `S9041`. Section 7 extracts the reusable three-cover joining statement from `S9042`.
