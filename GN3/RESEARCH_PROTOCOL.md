@@ -45,7 +45,7 @@ That statement is the default target. The Director should keep the proof-level r
 
 This is a default, not a monopoly. Bounded exploration of genuinely different abstractions is encouraged when it could bypass the gap, yield a stronger parent theorem, or reveal a simpler global picture.
 
-Guidance is normally **team-wide**. The Director should prefer one common mathematical target over individually partitioning the team when parallel independent attacks are useful. Redundant approaches and near-simultaneous discoveries are expected; their value is assessed during synthesis rather than prevented in advance.
+Guidance is normally **team-wide** and should state the mathematical target and why it matters.
 
 ## Guidance waves and Slack reporting
 
@@ -113,7 +113,7 @@ The tree should remain aggressively mutable. Its purpose is to show **what the c
 
 The ordinary cycle is:
 
-**team-wide guidance → tagged parallel research burst → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
+**team-wide guidance → tagged research burst → Director/Vice Director synthesis → research-tree rewrite → next guidance.**
 
 From there, stronger compression happens when mathematics earns a durable role:
 
