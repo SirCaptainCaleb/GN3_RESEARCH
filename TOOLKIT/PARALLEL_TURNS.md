@@ -154,9 +154,9 @@ Let tight triples be those whose two consecutive ordinary edges increase in this
 
 so `(a,p,c),(a,q,c),(a,r,c)` are tight. The Hamilton increasing paths are exactly
 
-`(a,p,r,c,q)` and `(r,a,p,c,q)`
+`(a,p,r,c,q)` and `(r,a,p,c,q)`.
 
-and their reversals as tight-path orderings when applicable to the same consecutive comparisons; in particular `p` is not an endpoint of any Hamilton path in the displayed orientation family. Relabelling `p,q,r` shows that no fixed middle vertex can be prescribed universally.
+Thus `p` is never an endpoint of a Hamilton tight path in this example. Relabelling `p,q,r` shows that no fixed middle vertex can be prescribed universally.
 
 ## Legacy provenance
 
