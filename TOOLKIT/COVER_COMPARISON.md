@@ -1,8 +1,8 @@
 # Cover-comparison and matching lemmas
 
-**Status: UNAUDITED GN3 REWRITE.**
+**Status: REVISED AFTER AUDIT; PENDING RE-AUDIT.**
 
-These statements isolate general combinatorial facts that were previously embedded in A7C3 cover-comparison machinery. The exact text below has not yet received independent GN3 audit.
+These statements isolate general combinatorial facts that were previously embedded in A7C3 cover-comparison machinery. The mathematical content has been rewritten in intrinsic GN3 language; the revised exact text awaits independent re-audit.
 
 ## 1. A component drop forces a crossing edge
 
@@ -26,7 +26,7 @@ is tight.
 
 Thus some edge `xy` of `T` crosses two components of `R`. If the component containing `x` is nontrivial, choose a path neighbor `p` of `x` in that component. The vertices `p,x,y` are distinct, and boundary antisymmetry gives exactly one tight member of the displayed reversal pair. ∎
 
-A crossing between two singleton components gives no three-vertex information by itself. In particular, an ordered two-vertex path is tight vacuously in either direction, so assigning opposite roles to two singleton paths cannot create a new tight triple. Any argument using two singleton components must retain some additional vertex or triple information.
+A crossing between two singleton components gives no three-vertex information by itself. Each singleton component contains no ordered triple at all, and every two-vertex ordering is a tight path vacuously. Thus the orders of two singleton components alone impose no tightness condition on any ordered triple of distinct vertices. Any argument using two singleton components must retain some additional vertex or triple information.
 
 ## 2. A Cartesian clause lemma
 
@@ -44,13 +44,26 @@ is true. Then for some `j`, every statement `P_{j,i}` with `i in I_j` is true.
 
 ### Boundary-tournament form
 
-Suppose `pc(H)>k`. For `j=1,...,m`, let `{alpha_{j,i}:i in I_j}` be finite families of ordered triples. Assume that for every tuple `(i_1,...,i_m)` there is a spanning `k`-path proposal whose only triples not already known to be tight are
+Suppose `pc(H)>k`. For `j=1,...,m`, let `{alpha_{j,i}:i in I_j}` be finite families of ordered triples, and for each `alpha_{j,i}` let `h_{j,i}` be its reverse.
 
-`h_{1,i_1},...,h_{m,i_m}`,
+Assume that for every tuple `(i_1,...,i_m)` there exist `k` vertex-disjoint vertex sequences whose vertex sets partition `V(H)` and such that:
 
-where `alpha_{j,i}` is the reverse of `h_{j,i}`. Then for some `j`, every triple `alpha_{j,i}` is tight.
+- every consecutive ordered triple of every sequence, other than the listed triples
 
-Indeed, each proposed `k`-cover must contain a non-tight displayed triple; boundary antisymmetry therefore makes at least one corresponding `alpha_{j,i_j}` tight. The Cartesian clause lemma applies.
+  `h_{1,i_1},...,h_{m,i_m}`,
+
+  is tight; and
+- each listed triple `h_{j,i_j}` occurs as a consecutive ordered triple of one of the `k` sequences.
+
+Then for some `j`, every triple `alpha_{j,i}`, `i in I_j`, is tight.
+
+**Proof.** Fix a tuple `(i_1,...,i_m)` and the corresponding `k` sequences. If every listed triple `h_{j,i_j}` were tight, then every consecutive triple in every sequence would be tight. The sequences would therefore be `k` tight paths forming a spanning `k`-path cover of `H`, contrary to `pc(H)>k`.
+
+Hence at least one listed triple `h_{j,i_j}` is non-tight. Boundary antisymmetry makes its reverse `alpha_{j,i_j}` tight. Thus for every tuple at least one of the Boolean statements
+
+`P_{j,i_j} := [alpha_{j,i_j} is tight]`
+
+is true. The Cartesian clause lemma gives an index `j` for which every `alpha_{j,i}` is tight. ∎
 
 ## 3. A weighted symmetric-difference lemma for two matchings
 
