@@ -1,14 +1,15 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving only `(3,1)` and `(4,1)`.
-      - [G02] Prove that a smallest counterexample on `n` vertices has no tight path of order `n-4`.
-        - Seek a spanning two-path cover from a tight path and its four-vertex complement.
-        - Choose a three-path and singleton on the complement using its lowest and highest matching blocks.
-        - Use all Hamilton orders on each longest-path vertex set and equal-length replacements of that vertex set.
-          - Seek a longest-path vertex set with Hamilton orders beginning with `(u,v)` and ending with `(v,u)`.
-          - Otherwise seek a finite family of explicit longest-path replacements that cannot be closed without a spanning two-cover.
-        - Test the stronger parent statement that a tight path missing four vertices implies a spanning two-path cover.
+      - [G02] Prove that a smallest counterexample has no globally longest tight-path vertex set `X` with four-vertex complement `S`.
+        - The non-Hamiltonian four-set `S` has intrinsic matching blocks `M_low<M_mid<M_high`; `M_low∪M_high` is an alternating 4-cycle giving four extreme-block `3+1` covers of `S`.
+        - Every Hamilton ordering of `X` is universally blocked by `S` at its ordered end-pairs; no ordered pair can begin one Hamilton ordering while its reverse ends another.
+        - Compare endpoint-pair deletion covers with the Hamiltonian small faces forced by the four-complement structure.
+          - A two-crossing comparison either yields a literal spanning splice or exchanges two vertices to another globally longest vertex set.
+          - Show that the resulting finite family of globally longest vertex sets cannot remain closed under the forced two-vertex exchanges while all of them satisfy ordered-end-pair separation.
+          - Use the low/high matching-mate dynamics on each four-vertex complement to force either an opposite end-pair realization or a spanning two-cover.
+        - Test the parent statement directly: every boundary tournament with path-cover number greater than two has every Hamiltonian induced vertex set missing at least five vertices.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For larger complements, construct a spanning two-path cover or a spanning three-path cover with lexicographically larger sorted component orders.
       - Allow multiple cuts, both ends, and reordered paths; verify every new consecutive triple.
-      - Replace local cut-and-join arguments by a parent theorem controlling Hamilton endpoint pairs when possible.
+      - Replace local cut-and-join arguments by a parent theorem controlling Hamilton endpoint pairs or exchange closure when possible.
