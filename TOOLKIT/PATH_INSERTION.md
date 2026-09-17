@@ -17,7 +17,7 @@ Then at least one of the three pairs
 
 has two common vertices occurring in different relative orders.
 
-Consequently Lemma A.1 of the proof spine applies to at least one of these pairs and yields a reversed common edge, a tight triple reversing an ordered edge at an intersection, or a vertex-simple tight cycle.
+Consequently `PATH_FORESTS_AND_INTERSECTIONS.md` Section 4 applies to at least one of these pairs and yields a reversed common edge, a tight triple reversing an ordered edge at an intersection, or a vertex-simple tight cycle.
 
 **Proof.** Suppose every pair has its common vertices in the same relative order.
 
