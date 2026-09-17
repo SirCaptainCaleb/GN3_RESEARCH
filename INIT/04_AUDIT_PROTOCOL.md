@@ -16,15 +16,21 @@ There is no project-wide audit frontier, no requirement that research results ca
 
 An audit batch may contain several **exact mathematical targets**: stated theorems, lemmas, proof sections, proposed canonical rewrites, or other explicitly delimited texts. GitHub placement, downstream use, recency, and agreement among researchers do not certify mathematics.
 
-Each audit batch is owned by **one independent Auditor**. The Auditor must be independent of the authorship of the exact text being certified. The Auditor may exploit shared definitions, dependencies, or context across the batch, and may choose a sensible internal order of verification. Routine batches should not be duplicated in parallel or split among several auditors merely for throughput. If a batch is genuinely too large for one coherent audit, the Vice Director decides explicitly how to divide it without losing necessary whole-object or cross-dependency verification.
+Each audit batch is owned by **one independent Auditor**. The Auditor must be independent of the authorship of the incoming exact text being audited. The Auditor may exploit shared definitions, dependencies, or context across the batch, and may choose a sensible internal order of verification. Routine batches should not be duplicated in parallel or split among several auditors merely for throughput. If a batch is genuinely too large for one coherent audit, the Vice Director decides explicitly how to divide it without losing necessary whole-object or cross-dependency verification.
 
 Certification remains **itemwise even when assignment is batched**. Each exact target receives its own scope and disposition; one failed or revised item does not automatically determine the status of the others. The Auditor should also report material dependency interactions across batch items when one target's validity changes what can be concluded about another.
 
-An author may explain or repair the work but may not self-certify it.
+### Repair is part of audit
 
-A substantive repair, strengthening, or rewrite is new mathematical text and requires fresh independent audit. Purely editorial changes may retain certification only after an independent auditor confirms that the mathematics is unchanged.
+The Auditor's job is not only to diagnose defects. When an exact target is repairable and the intended mathematics is clear, the Auditor should normally produce the strongest clean exact repair they can verify, rather than returning only a list of objections. Repairs should remove hidden assumptions, bind variables and scopes, replace unlawful provenance shorthand by intrinsic mathematics, correct local proof gaps, and sharpen hypotheses or conclusions when that is what the verification actually establishes.
 
-Research does not pause while audit is underway. Researchers may continue to use provisional mathematics optimistically. If an audit fails, weakens, or materially repairs a load-bearing statement, the Vice Director propagates that correction through the favored route, research tree, guidance, and any affected canonical candidate.
+A **localized repair** changes presentation, typing, explicit dependency statements, or a locally omitted case without introducing a new proof idea or materially changing the mathematical content. The same Auditor may make such a repair, check the repaired exact text, and certify it as `PASS_ADJUSTED`. The audit record must identify the repaired exact text.
+
+A repair is **substantial** when it changes a theorem's mathematical content, introduces a new proof idea, fills a genuinely nonlocal gap, replaces a failed argument by a materially different one, or otherwise makes the Auditor a substantive author of the revised mathematics. The first Auditor should still attempt and record the repair when useful, but may not certify that repaired text. It remains `REVISION REQUIRED` until a **second independent Auditor**, who did not author the repair, verifies the new exact text. This second-auditor requirement is about mathematical substance rather than the number of words changed: a long explicit expansion of an already-verified argument may be localized, while a short new inference can be substantial.
+
+The original author may explain or repair the work but may not self-certify it. If the original author supplies a revision, the assigned independent Auditor may certify that revision after checking it. If the Auditor supplies only localized repairs, the Auditor may certify them as above; if the Auditor supplies substantial repairs, a second independent Auditor is required.
+
+Research does not pause while audit or repair is underway. Researchers may continue to use provisional mathematics optimistically. If an audit fails, weakens, or materially repairs a load-bearing statement, the Vice Director propagates that correction through the favored route, research tree, guidance, and any affected canonical candidate.
 
 ## Dependencies
 
@@ -36,13 +42,13 @@ The audit response should name unresolved dependencies clearly. The Vice Directo
 
 Each Vice-Director batch gets one concise top-level audit root identifying the batch and enumerating or linking its exact targets. Prefer GitHub paths plus commit or blob coordinates for repository text; for Slack mathematics, link the exact research roots/threads and state the scope being audited. Retain the `[G##]` tag when useful for retrieval.
 
-Detailed verification, derivations, counterexamples, objections, proposed repairs, author responses, dependency notes, and discussion belong in replies to the batch root. The Auditor may organize replies itemwise when useful. The final batch response gives a separate disposition for every exact target and names the exact revision or Slack statement to which each disposition applies. That thread is the record of the certification event; the Vice Director consumes the results during synthesis and updates the live strategy or canonical candidates as needed.
+Detailed verification, derivations, counterexamples, objections, exact proposed repairs, author responses, dependency notes, and discussion belong in replies to the batch root. The Auditor may organize replies itemwise when useful. When a localized repair is made directly to a Slack or repository target, the audit reply should identify the new exact message or revision. When a substantial repair is authored by the Auditor, the audit reply should state plainly that second-auditor verification is required. The final batch response gives a separate disposition for every exact target and names the exact revision or Slack statement to which each disposition applies. That thread is the record of the certification event; the Vice Director consumes the results during synthesis and updates the live strategy or canonical candidates as needed.
 
 Use these dispositions for each target:
 
 - **PASS** — the exact target is certified at the stated scope;
-- **PASS_ADJUSTED** — corrections or qualifications were required and the final repaired version was checked;
-- **REVISION REQUIRED** — not certified as written, but the defect appears repairable or falsity has not been established; state exactly what requires recheck;
+- **PASS_ADJUSTED** — localized corrections or qualifications were required, the final repaired exact text was checked, and no substantive new mathematics was introduced by the certifying Auditor;
+- **REVISION REQUIRED** — not certified as written, but the defect appears repairable or falsity has not been established; this also applies to substantial Auditor-authored repairs awaiting a second independent audit;
 - **FAIL** — false or invalid as stated; give a concrete counterexample, invalid inference, or other decisive reason when possible.
 
 A PASS may include non-load-bearing editorial notes. If only a cleanly separable substatement survives a failed larger target, certify that substatement explicitly rather than inferring partial certification.
@@ -55,7 +61,7 @@ If independent verification begins producing large output with little additional
 
 ## Propagation after audit
 
-A PASS does not itself rewrite canonical project state. The Vice Director decides how the certified mathematics affects the favored route and whether it should enter the proof spine or toolkit. When certification changes durable mathematics, update the appropriate canonical text and record the high-signal delta in `#gn3-changelog`. Preserve provenance only when it materially improves recoverability or future audit.
+A PASS or PASS_ADJUSTED does not itself rewrite canonical project state. The Vice Director decides how the certified mathematics affects the favored route and whether it should enter the proof spine or toolkit. When certification changes durable mathematics, update the appropriate canonical text and record the high-signal delta in `#gn3-changelog`. Preserve provenance only when it materially improves recoverability or future audit.
 
 There is no separate `STATUS.md`, project-wide audit ledger, chronological audit frontier, or research-headline status system. Current proof openness is visible in the proof spine. The live abstraction and the set of audit-relevant dependencies are managed by the Vice Director through the Director cycle. Exact certification of audited targets is recorded in the corresponding batch audit thread and, when mathematics becomes durable, in the canonical revision that incorporates it.
 
