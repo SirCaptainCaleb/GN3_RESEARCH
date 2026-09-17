@@ -6,11 +6,11 @@ These statements collect local consequences of failed insertion, two-sided endpo
 
 ## 1. Two-sided endpoint replacement forces reversed order
 
-Let
+Let `H` be a boundary tournament. Let
 
 `Q=(q_0,q_1,...,q_r)`, `r>=2`,
 
-be a Hamilton tight path on a vertex set `X`, and let `y notin X`. Suppose `H[X union {y}]` is non-Hamiltonian. Assume nevertheless that there is
+be a Hamilton tight path of `H[X]` on a vertex set `X subseteq V(H)`, and let `y in V(H)-X`. Suppose `H[X union {y}]` is non-Hamiltonian. Assume nevertheless that there is
 
 - a Hamilton tight path `L` on `(X-{q_0}) union {y}`, and
 - a Hamilton tight path `R` on `(X-{q_r}) union {y}`.
@@ -116,11 +116,11 @@ By the definition of `H_G`, the comparison `xq_{i+1}<q_{i+1}y` is exactly the ti
 
 ## 3. Local obstruction when every insertion position fails
 
-Let
+Let `H` be a boundary tournament. Let
 
 `B=(b_1,...,b_m)`, `m>=2`,
 
-be a tight path in a boundary tournament, and let `x notin V(B)`. In the comparison digraph `Gamma(H)` put
+be a tight path in `H`, and let `x in V(H)-V(B)`. In the comparison digraph `Gamma(H)` put
 
 `e_i={b_i,b_{i+1}}` for `1<=i<=m-1`,
 
@@ -156,7 +156,7 @@ Suppose first that `t<m-1`. By construction `f_{t+1}->e_{t+1}`. If `f_t->f_{t+1}
 
 with the first comparison omitted when `t=1`. This contradicts failed insertion, so `f_{t+1}->f_t`.
 
-If `t=m-1`, the same argument uses the already known arc `f_m->e_{m-1}`. When the predecessor comparison exists and does not form alternative 1, failed middle insertion forces `f_m->f_{m-1}`. The case `m=2` is the same with no predecessor edge. Thus alternative 2 holds. ∎
+If `t=m-1`, the same argument uses the arc `f_m->e_{m-1}` supplied by failure of the right-end insertion. When the predecessor comparison exists and does not form alternative 1, failed middle insertion forces `f_m->f_{m-1}`. The case `m=2` is the same with no predecessor edge. Thus alternative 2 holds. ∎
 
 ## 4. Opposite extensions of one ordered pair concatenate
 
