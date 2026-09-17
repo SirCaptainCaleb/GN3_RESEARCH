@@ -104,35 +104,35 @@ They are disjoint and span all vertices. The first displayed chain gives every n
 
 Let `G` be an edge-ordered complete graph with no spanning cover by two increasing paths. Let `x,y` be distinct vertices.
 
-Suppose there are spanning three-path covers
+Let `T=(v,t_1,...,t_r)`, `r>=0`, be an increasing path disjoint from an increasing path `A` and from `{x,y}`. Suppose
 
-`A | (y,v,b_2,...,b_m) | (x)`
+`A | (y,v,t_1,...,t_r) | (x)`
 
 and
 
-`A | (x,v,b_2,...,b_m) | (y)`.
+`A | (x,v,t_1,...,t_r) | (y)`
 
-Then
+are spanning three-path covers of `G`. Then
 
 `vx<xy` and `vy<xy`.
 
 Thus `xy` is the largest edge of the triangle `{x,y,v}`.
 
-Dually, if there are spanning three-path covers
+Dually, let `S=(s_0,...,s_r,w)`, `r>=0`, be an increasing path disjoint from an increasing path `A` and from `{x,y}`. If
 
-`A | (...,w,y) | (x)`
+`A | (s_0,...,s_r,w,y) | (x)`
 
 and
 
-`A | (...,w,x) | (y)`,
+`A | (s_0,...,s_r,w,x) | (y)`
 
-then
+are spanning three-path covers of `G`, then
 
 `xy<wx` and `xy<wy`,
 
 so `xy` is the smallest edge of `{x,y,w}`.
 
-If both kinds of replacement occur for the same pair `{x,y}`, with source-side neighbor `v` and terminal-side neighbor `w`, then
+If both pairs of covers exist for the same pair `{x,y}`, with the displayed vertices `v` and `w`, then
 
 `vx,vy < xy < wx,wy`,
 
@@ -142,9 +142,9 @@ and both
 
 are increasing paths.
 
-**Proof.** In the first pair of covers, if `xy<yv`, then `(x,y,v,b_2,...)` is increasing and together with `A` gives a spanning two-path cover. Hence `yv<xy`. The other cover similarly gives `xv<xy`.
+**Proof.** In the first pair of covers, if `xy<yv`, then `(x,y,v,t_1,...,t_r)` is increasing and together with `A` gives a spanning two-path cover. Hence `yv<xy`. The other cover similarly gives `xv<xy`.
 
-For the terminal statement, if `wy<xy`, then appending `x` after `y` produces a spanning two-path cover, and if `wx<xy`, then appending `y` after `x` does the same. Therefore `xy<wy` and `xy<wx`.
+For the second pair of covers, if `wy<xy`, then `(s_0,...,s_r,w,y,x)` is increasing and together with `A` gives a spanning two-path cover. Hence `xy<wy`. If `wx<xy`, then `(s_0,...,s_r,w,x,y)` is increasing and together with `A` gives a spanning two-path cover. Hence `xy<wx`.
 
 Combining the two sets of inequalities gives the final two increasing four-vertex paths. ∎
 
