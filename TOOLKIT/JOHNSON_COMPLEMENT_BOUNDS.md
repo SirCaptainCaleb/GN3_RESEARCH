@@ -1,8 +1,8 @@
 # Complement-free Johnson bounds on five-subsets of a ten-set
 
-**Status: UNAUDITED GN3 REWRITE.**
+**Status: GN3 AUDIT PASS.**
 
-The four-overlap cut bound from the same legacy package is already Lemma 2.8 of the canonical proof spine. This module preserves the distinct intersection-one estimate that is not otherwise present in GN3. The exact text has not yet received independent GN3 audit.
+The four-overlap cut bound from the same legacy package is already Lemma 2.8 of the canonical proof spine. This module preserves the distinct intersection-one estimate that is not otherwise present in GN3. Its exact mathematical text passed independent GN3 audit in the toolkit batch at snapshot `99e9c98a80d3d0cefcffef343fb67a6f973ee432`.
 
 ## Theorem. Spectral bound for intersection-one pairs
 
