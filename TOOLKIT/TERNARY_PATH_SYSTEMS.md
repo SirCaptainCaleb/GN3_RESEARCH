@@ -1,8 +1,8 @@
 # Ternary path-system insertion theorem
 
-**Status: UNAUDITED GN3 REWRITE.**
+**Status: GN3 AUDIT PASS.**
 
-This module concerns a reversal-symmetric ternary path system rather than a boundary tournament. The exact text has not yet received independent GN3 audit.
+This module concerns a reversal-symmetric ternary path system rather than a boundary tournament. Its exact mathematical text passed independent GN3 audit in the toolkit batch at snapshot `99e9c98a80d3d0cefcffef343fb67a6f973ee432`.
 
 Let `V` be a finite set and let `E` be a set of ordered triples of distinct vertices. Call a vertex sequence **tight** when every consecutive ordered triple belongs to `E`.
 
