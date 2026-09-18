@@ -140,3 +140,32 @@ is tight.
 If `a=1` and `pc(H)>k`, then `pc(H)>=k+1`, so `b_C(T)>=k`. If there is exactly one `S-C` edge in `T`, cutting it produces exactly `k+1` monochromatic blocks. There is at least one `S`-block and at least `k` `C`-blocks, so there is exactly one `S`-block and exactly `k` `C`-blocks. The asserted form of `T` follows.
 
 Suppose the unique crossing is `x,y` with `x in S`, `y in C`, and let `Q` be a Hamilton path of `H[D union S]` ending with `(p,x)`. Replace the unique `S`-block of the mixed component of `T` by `Q`, leaving the adjacent `C`-block and every other component unchanged. If `(p,x,y)` were tight, these `k` paths would cover `H`, contradicting `pc(H)>k`. Hence `(p,x,y)` is not tight, so boundary antisymmetry gives `(y,x,p)`. The other orientation is identical after reversing the order of the replacement. ∎
+
+## 8. Two crossings forced by a three-part one-vertex-deletion cover
+
+Let `K` be a boundary tournament with `pc(K)>2`, let `d in V(K)`, and suppose `K-d` has a spanning three-path cover
+
+`C | A | B`
+
+by nonempty tight paths. Put `S=V(A) union V(B)`, and assume:
+
+- `|S|=4` and `K[S]` is non-Hamiltonian;
+- `min{|A|,|B|}<=2`; and
+- whenever one of `A,B` has order three, its displayed tight ordering can be extended by `d` at one end to a tight four-vertex path.
+
+Then every exact two-path cover `F` of `K-d` contains at least two ordinary edges whose endpoints lie in different members of the partition
+
+`V(C) | V(A) | V(B)`.
+
+**Proof.** Let `k` be the number of ordinary edges of `F` joining different members of this partition. Since `F` has two components while the partition has three nonempty classes, `k>=1`.
+
+Suppose `k=1`. Cutting the unique crossing edge produces exactly three nonempty path blocks. Hence each of `V(C),V(A),V(B)` induces one connected block of `F`, and one of the three classes is an entire component of `F`.
+
+The isolated class cannot be `V(C)`: otherwise the other component of `F` is a tight Hamilton path on `S`, contradicting non-Hamiltonicity of `K[S]`.
+
+Thus one of `A,B` is an entire component of `F`. Every component of an exact two-path cover of `K-d` has order at least three. Indeed, if a component had order one or two, then adjoining `d` gives a set of order at most three, which is Hamiltonian; replacing that component by a Hamilton path on the enlarged set would give a spanning two-path cover of `K`.
+
+Because `|A|+|B|=4` and `min{|A|,|B|}<=2`, the isolated component therefore has order three and the other of `A,B` has order one. By hypothesis, the displayed three-vertex path extends with `d` to a tight four-vertex path. Replacing that entire component of `F` by the extended path leaves the other component unchanged and yields a spanning two-path cover of `K`, again a contradiction.
+
+Hence `k>=2`. ∎
+
