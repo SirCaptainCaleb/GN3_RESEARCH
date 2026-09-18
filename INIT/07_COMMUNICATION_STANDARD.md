@@ -2,7 +2,7 @@
 
 **Status: CANONICAL.**
 
-This file is the sole authority for the **shape, self-containment, placement, and repair of live GN3 communication**. Mathematical-language rules remain in `02_MATHEMATICAL_LANGUAGE.md`; audit substance remains in `04_AUDIT_PROTOCOL.md`; controlled terminology remains in `06_TERMINOLOGY.md`.
+This file is the sole authority for the **shape, self-containment, placement, and repair of live GN3 communication**. Mathematical-language rules remain in `02_MATHEMATICAL_LANGUAGE.md`; the shared certification interface is in `04_AUDIT_PROTOCOL.md`; detailed Auditor operation is in `AUDITOR.md`; controlled terminology remains in `06_TERMINOLOGY.md`.
 
 The purpose of this standard is to keep live communication mathematically compilable. A reader should not have to reconstruct neighboring Slack threads, discovery chronology, worker state, or project-specific metaphors in order to know what a mathematical post says.
 
