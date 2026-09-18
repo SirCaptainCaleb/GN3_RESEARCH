@@ -30,11 +30,15 @@ Operations and relations must be defined by their mathematical domains, hypothes
 
 ## Terminology
 
-Prefer standard graph-theoretic and combinatorial language. Introduce a new term only when it cleanly names a recurring mathematical object better than standard language, and give it one complete structural definition.
+Prefer standard graph-theoretic and combinatorial language. Project-coined reusable mathematical vocabulary is controlled by `06_TERMINOLOGY.md`, which is the authoritative terminology registry.
+
+Standard mathematical terms and literal descriptive phrases do not require registration. A reusable GN3-specific English label does. **If a project-coined term is not approved in `06_TERMINOLOGY.md`, do not use it as established shorthand; spell out the mathematics instead.**
 
 Do not introduce vocabulary merely to encode proof position, discovery history, audit state, or workflow. Avoid vague meta-nouns such as “data”, “state”, “current”, “active”, “physical”, “certificate”, or “credit” when the intended referent is actually a path, cover, ordering, orientation, witness, inequality, or other explicit mathematical object or property.
 
-A technical word such as “continuation” is permissible only when it denotes a precisely defined mathematical object, operation, or relation. Its ordinary-language connotations may not smuggle in extra reachability or persistence assumptions.
+A technical word such as “continuation” is permissible only when it denotes a precisely defined and registry-approved mathematical object, operation, or relation. Its ordinary-language connotations may not smuggle in extra reachability or persistence assumptions.
+
+Workers may propose new terminology in discussion, but it is not GN3 mathematical vocabulary until the registry is updated. Archaeology and legacy Slack do not grandfather terminology into the current project.
 
 ## No hidden provenance or unlawful reachability
 
