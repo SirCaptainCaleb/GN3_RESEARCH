@@ -10,7 +10,7 @@ where
 
 is a Hamilton tight path with `m>=3`. Put `Y=V(P)`, `L=x_0`, and `R=x_{m-1}`.
 
-The four-vertex-complement statements below are intrinsic to this decomposition. No smallest-counterexample hypothesis and no minimal choice of the Hamiltonian side is used.
+Only the displayed hypotheses are assumed throughout.
 
 ## 1. Universal four-vertex-complement structure
 
@@ -115,7 +115,7 @@ and
 where `A_w^-` is a Hamilton path on `A∪{y_0}` and `A_w^+` is a Hamilton path on `A∪{y_m}`.
 
 **Proof.**
-The five-vertex complement theorem gives distinct `u,v∈U` such that, for each `w∈{u,v}`, both induced subtournaments `K[(U-{w})∪{y_0}]` and `K[(U-{w})∪{y_m}]` are Hamiltonian. Choose Hamilton paths `A_w^-` and `A_w^+` on these two sets.
+Proposition 3.1 gives distinct `u,v∈U` such that, for each `w∈{u,v}`, both induced subtournaments `K[(U-{w})∪{y_0}]` and `K[(U-{w})∪{y_m}]` are Hamiltonian. Choose Hamilton paths `A_w^-` and `A_w^+` on these two sets.
 
 For each such `w`, the paths `A_w^-` and `(y_1,...,y_m)` are nonempty, vertex-disjoint, and their supports partition `V(K)-{w}`; likewise `(y_0,...,y_{m-1})` and `A_w^+` are nonempty, vertex-disjoint, and partition `V(K)-{w}`. Hence the two displayed pairs are two-path covers of `K-w`.
 
