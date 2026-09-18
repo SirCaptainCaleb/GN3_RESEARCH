@@ -38,9 +38,9 @@ General path utilities extracted from the proof spine:
 
 Bad exterior pairs around a fixed tight three-path form a triangle-free graph; Hamilton five-sets through a prescribed subset of order at most three satisfy the stated density bounds; two parallel middle vertices force a Hamilton four-path. Its small-order inputs are now taken from `SMALL_ORDER_HAMILTONICITY.md`.
 
-### [Parallel turns and three-vertex core signatures](PARALLEL_TURNS.md)
+### [Parallel middle vertices and match sets relative to a fixed three-set](PARALLEL_TURNS.md)
 
-Exterior vertices around a fixed three-vertex core admit the stated signature compression; three parallel middle vertices admit a Hamilton five-path with at least one of those middle vertices as an endpoint, and no fixed middle vertex can always be prescribed; four parallel middle vertices force a five-path of the form `(x,a,y,c,z)`.
+Exterior vertices relative to a fixed three-vertex set admit the stated match-set classification; three parallel middle vertices admit a Hamilton five-path with at least one of those middle vertices as an endpoint, and no fixed middle vertex can always be prescribed; four parallel middle vertices force a five-path of the form `(x,a,y,c,z)`.
 
 ### [Four-vertex structure and fifth-vertex extensions](FOUR_VERTEX_STRUCTURE.md)
 
@@ -48,9 +48,9 @@ Two parallel turns on a non-Hamiltonian four-set force one of two matching-block
 
 ## Path-cover manipulation
 
-### [Path-cover surgery lemmas](PATH_COVER_SURGERY.md)
+### [Path-cover modification lemmas](PATH_COVER_SURGERY.md)
 
-Crossing under absorbable deletion; cyclic rotations of a tight path; one-vertex absorption from opposite end-edge orientations; the path/cycle edge-exchange component formula; a two-ended Hamilton splice; transitions across a vertex partition; deletion block count and unique-crossing consequences.
+Crossing under absorbable deletion; cyclic rotations of a tight path; one-vertex absorption from opposite end-edge orientations; the path/cycle edge-exchange component formula; joining two path-cover components through a Hamilton path; transitions across a vertex partition; deletion block count and unique-crossing consequences.
 
 ### [Cover-comparison and matching lemmas](COVER_COMPARISON.md)
 
