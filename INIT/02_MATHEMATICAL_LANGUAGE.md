@@ -1,6 +1,6 @@
 # 02 — Mathematical language and proof coding
 
-These rules apply to **all mathematical communication in GN3**: Slack research posts and replies, Director guidance, audit discussion, research-tree text, synthesis notes, toolkit statements, and canonical proofs. They are not merely publication-style preferences.
+These rules apply to **all mathematical communication in GN3**: Slack research posts and replies, Director guidance, audit discussion, research-tree text, synthesis notes, toolkit statements, and canonical proofs. They are not merely publication-style preferences. The structural rules for how live Slack messages are divided into roots and replies, made self-contained, and repaired are governed by `07_COMMUNICATION_STANDARD.md`.
 
 ## Say the mathematics, not the proof history
 
