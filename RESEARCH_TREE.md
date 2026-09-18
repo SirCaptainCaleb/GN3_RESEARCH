@@ -3,27 +3,27 @@
     - If `|B|<=4`, then `|C|=1`, leaving `(|B|,|C|)=(3,1),(4,1)`.
       - [G14] Prove codimension-five closure: no boundary tournament `K` with `pc(K)>2` has a Hamiltonian vertex set `Y` whose complement `F` has order five.
         - The complement `F` is non-Hamiltonian.
-        - Use the audited five-vertex-complement family before returning to codimension-four endpoint geometry.
-          - At least two deletions `g∈F` simultaneously make `F-{g}`, `(F-{g})∪{y_0}`, and `(F-{g})∪{y_k}` Hamiltonian for a Hamilton ordering `Y=(y_0,...,y_k)`.
-          - The corresponding one-vertex-deletion tournaments have exact two-path covers with common long-side supports, and failed restoration forces endpoint and second-interior triples.
-          - Compare the multiple exact covers of the same `K-g` by literal support exchange; seek one restoration of `g` or a contradiction independent of `|Y|`.
-        - Moonshot A: prove a five-complement exchange theorem saying that the simultaneous deletion-cover family above alone forces a spanning two-path cover of `K`.
-          - Prefer a theorem stated for an arbitrary Hamiltonian set `Y` and a non-Hamiltonian five-set `F`, with no reference to a former codimension-four path.
-          - Use all available deletions and all Hamilton orderings of `Y` cooperatively rather than fixing one endpoint order.
-        - Moonshot B: prove that one synchronized deletion `g` with the three Hamiltonian short supports
-          `F-{g}`, `(F-{g})∪{y_0}`, and `(F-{g})∪{y_k}`
-          already forces a spanning two-path cover.
-          - Compare the three exact covers of `K-g` simultaneously.
-          - Internal position of `y_0` or `y_k` in a short Hamilton path should trigger a crossed-support comparison; endpoint position should yield a restoration triple.
-          - The desired output is a literal spanning two-path cover, not another endpoint-triple inventory.
-        - If codimension-five closure holds, codimension four closes immediately:
-          - a Hamilton path with four-vertex complement has an endpoint truncation that is Hamiltonian with five-vertex complement;
-          - therefore no separate `m=7,8,9,...` analysis is needed.
-        - Certified fallback if the codimension-five moonshot stalls:
+        - Stabilize the one-vertex deletion family.
+          - At least four vertices `g∈F` make `F-{g}` Hamiltonian.
+          - For every such `g`, `Y∪{g}` is non-Hamiltonian.
+          - For every Hamilton ordering `Q=(q_0,...,q_k)` of `Y`, the cover `Q|(F-{g})` of `K-g` is exact and failed endpoint restoration forces `(q_1,q_0,g)` and `(g,q_k,q_{k-1})`.
+        - Synchronize endpoint-enlarged deletions.
+          - For at least two deletions `g∈F`, the three supports
+            `F-{g}`, `(F-{g})∪{y_0}`, and `(F-{g})∪{y_k}`
+            are all Hamiltonian for a fixed Hamilton ordering `Y=(y_0,...,y_k)`.
+          - Hence the same `K-g` has three exact two-path covers: the fixed-side cover and the two endpoint-enlarged covers.
+        - Primary exchange target: prove that the three exact covers for one synchronized deletion force restoration of `g`.
+          - If an exchanged endpoint is internal in a short Hamilton path, delete it and apply the cardinality-free crossed-support comparison theorem.
+          - If it is an endpoint, use the forced restoration triple.
+          - Run the left and right comparisons together and output a literal spanning two-path cover.
+        - Moonshot A: prove that one synchronized deletion already forces `pc(K)<=2`.
+        - Moonshot B: prove a multi-deletion exchange theorem using the at-least-four stabilized deletions; an obstruction surviving one deletion must be incompatible with another.
+          - In the special five-complement situation arising from a Hamiltonian four-subset of `F`, either at least two outer deletions synchronize at both endpoints or the deletion families have the unique extremal pattern forced by the five-set counting.
+        - If codimension-five closure holds, codimension four closes immediately by truncating one endpoint of any Hamilton path with four-vertex complement.
+        - Certified fallback if direct codimension-five closure stalls:
           - in the universal rigid adjacent-end-cover branch, `(u,L,R,v)` is a tight four-vertex path and the complementary induced tournament has path-cover number two;
           - a singleton component of that residue returns directly to the five-vertex-complement problem;
-          - with two nontrivial residue components, the audited two-sided concatenation theorem blocks one whole end and converts any blocked component endpoint in the four-set into a reversed joining triple.
-          - use the outer-endpoint deletion family and fixed common omissions only as consumers of this `4 + 2`-cover structure, not as an `m`-indexed case ladder.
+          - with two nontrivial residue components, the two-sided concatenation theorem blocks one whole end and converts blocked component endpoints into reversed joining triples.
       - In the `(4,1)` branch, construct a spanning two-path cover or a tight path with four-vertex complement, then invoke G14.
     - If `|B|>=5`, construct a spanning two-path cover or a lexicographically larger spanning three-path cover.
       - Seek an augmentation principle allowing multiple cuts, both ends, and reordered paths.
