@@ -51,12 +51,12 @@ If all present new triples were tight, both spanning sequences would be tight pa
 
 Let \`H\` be a boundary tournament with \`pc(H)>2\` and let
 \`V(H)=V(A)\sqcup W\sqcup V(B)\`,
-where \`A,B\` are nonempty tight paths and \`W\` has a cover \`P\mid Q\` by two nonempty tight paths.
+where \`A,B\` are nonempty tight paths and \`W\` has a cover \`P\mid Q\` by two nontrivial tight paths.
 
 Then either neither \`AP\` nor \`AQ\` is tight, or neither \`PB\` nor \`QB\` is tight.
 
 **Proof.**
-Suppose \`A\` concatenates with one of \`P,Q\`, say \`P\`. If \`B\` concatenates after \`Q\`, then \`AP\mid QB\` is a spanning two-path cover of \`H\`. If \`B\` concatenates after \`P\`, then \`APB\mid Q\` is a spanning two-path cover. Both are impossible. Therefore, once one left concatenation exists, no right concatenation exists with either middle path. The same argument with left and right interchanged proves the dichotomy. ∎
+Suppose \`A\` concatenates with one of \`P,Q\`, say \`P\`. If \`B\` concatenates after \`Q\`, then \`AP\mid QB\` is a spanning two-path cover of \`H\`. If \`B\` concatenates after \`P\`, then \`APB\mid Q\` is a spanning two-path cover: because \`P\` has at least two vertices, every consecutive triple of \`APB\` already occurs in either \`AP\` or \`PB\`. Both are impossible. Therefore, once one left concatenation exists, no right concatenation exists with either middle path. The same argument with left and right interchanged proves the dichotomy. ∎
 
 ## 4. Comparing nested deletion covers
 
