@@ -2,7 +2,18 @@
 
 **Status: CANONICAL.**
 
-This file defines only the durable project topology and authority model. Mathematical-language rules are in `02_MATHEMATICAL_LANGUAGE.md`; research operation, structural synthesis, conceptual ascent, and Director behavior are in `03_RESEARCH_PROTOCOL.md`; certification and audit are in `04_AUDIT_PROTOCOL.md`; computation discipline is in `05_COMPUTATION_DISCIPLINE.md`; the controlled project terminology registry is in `06_TERMINOLOGY.md`; and live communication shape, self-containment, placement, and repair are in `07_COMMUNICATION_STANDARD.md`. Every numbered init file is mandatory startup context through `START.md`.
+This file defines only the durable project topology and authority model. Mathematical-language rules are in 02_MATHEMATICAL_LANGUAGE.md; research operation, structural synthesis, conceptual ascent, and Vice-Director behavior are in 03_RESEARCH_PROTOCOL.md; the shared certification interface is in 04_AUDIT_PROTOCOL.md; computation discipline is in 05_COMPUTATION_DISCIPLINE.md; the controlled project terminology registry is in 06_TERMINOLOGY.md; and live communication shape, self-containment, placement, and repair are in 07_COMMUNICATION_STANDARD.md. Detailed role operation is separated into ASTRA.md and AUDITOR.md. START.md is authoritative for which roles read which files; the init directory is not a universal read-all bundle.
+
+## Role-specific architecture
+
+GN3 deliberately separates strategic direction, research, operational integration, and certification.
+
+- **Astra** is a scarce strategic Director. Astra works at theorem-level abstraction, supplies forward-facing guidance, probes high-level alternatives, and generates or evaluates moonshots. Astra is not responsible for clerical project management. INIT/ASTRA.md is the role-specific startup and resource-discipline authority.
+- **Vice Director** performs structural synthesis and conceptual ascent continuously, issues ordinary guidance, integrates Astra guidance, maintains RESEARCH_TREE.md, selects and tracks audit targets, composes shelf candidates, propagates audit corrections, and handles routine durable project-state maintenance.
+- **Researchers** do mathematics under the live guidance and research protocol. They do not need detailed audit-operation rules merely to conduct research.
+- **Auditors** independently verify and repair exact assigned mathematics. INIT/AUDITOR.md contains the detailed role protocol. Auditors do not need to reconstruct the research strategy unless an exact target depends on it.
+
+Role-specific startup is a context-efficiency feature, not a weakening of mathematical standards. Every role still retrieves any exact mathematics or policy needed for the task at hand. START.md defines the startup route.
 
 ## Authority and namespace
 
@@ -63,6 +74,6 @@ The project deliberately separates live search, structural synthesis, conceptual
 
 ## Maintenance
 
-Keep the numbered init set small, explicit, and nonredundant. When a policy belongs to mathematical writing, research operation, structural synthesis, conceptual ascent, audit, terminology, or live communication, put it in the corresponding numbered file rather than duplicating it here. When a newer explicit rule conflicts with older wording elsewhere, the newer rule should be consolidated into the appropriate numbered init document and the duplicate removed.
+Keep the shared numbered init set small, explicit, and nonredundant, and keep specialized role machinery in the corresponding role-specific file. When a policy belongs to mathematical writing, research operation, structural synthesis, conceptual ascent, shared certification, terminology, or live communication, put it in the corresponding numbered file rather than duplicating it here. Detailed Astra and Auditor operation belongs in ASTRA.md and AUDITOR.md. When a newer explicit rule conflicts with older wording elsewhere, the newer rule should be consolidated into the appropriate numbered init document and the duplicate removed.
 
 Because initialization is one-time, changelog completeness is a durability requirement. A material change to `START.md`, the numbered init policies, the canonical proved/open boundary, or another durable fact that an already-initialized worker must know to work safely must be surfaced in `#gn3-changelog`. The changelog entry either states the usable delta or tells workers exactly what must be reread; if full reinitialization is genuinely required, it says so explicitly.
