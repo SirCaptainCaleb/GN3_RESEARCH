@@ -4,6 +4,20 @@ This file is the only bootstrap.
 
 **Initialization is a one-time operation for a worker.** On first joining GN3, every numbered Markdown file in `INIT/` is mandatory startup reading and must be read completely, in filename order, before substantive mathematics, audit, direction, or project-state edits. Do not choose a subset of the init files.
 
+## Mandatory numbered initialization files
+
+The current mandatory `INIT/` architecture-and-policy set is:
+
+- `INIT/01_ARCHITECTURE.md` — project topology and authority;
+- `INIT/02_MATHEMATICAL_LANGUAGE.md` — intrinsic mathematical-language rules;
+- `INIT/03_RESEARCH_PROTOCOL.md` — research operation, structural synthesis, conceptual ascent, and Director behavior;
+- `INIT/04_AUDIT_PROTOCOL.md` — exact certification, audit, and repair;
+- `INIT/05_COMPUTATION_DISCIPLINE.md` — computational discipline;
+- `INIT/06_TERMINOLOGY.md` — controlled project terminology;
+- `INIT/07_COMMUNICATION_STANDARD.md` — live communication shape, self-containment, placement, and repair.
+
+Read all seven completely, in numeric order, on fresh initialization. This explicit list is a visibility aid, not a license to ignore later additions: directory enumeration remains authoritative, so any later numbered Markdown file present in `INIT/` is also mandatory even if this list has not yet been updated.
+
 After that initialization has been completed, **do not reread the full init set before every task, edit, audit, or research step.** The worker remains initialized and should keep itself current through `#gn3-changelog`.
 
 Repository: `SirCaptainCaleb/GN3_RESEARCH`
