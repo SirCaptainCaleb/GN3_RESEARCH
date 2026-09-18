@@ -254,7 +254,7 @@ Up to cyclic permutation of `o,a,b` and exchange of `c,d`, the disjoint pair is 
 
 `(∅,∅)`, `(∅,{o})`, `(∅,{o,a})`, `(∅,{o,a,b})`, `({o},{a})`, `({o},{a,b})`.
 
-The match-set definition fixes all exterior-core triples used in the following exhaustive table:
+The match-set definition fixes all mixed triples involving one exterior vertex and two vertices of the fixed three-set used in the following exhaustive table:
 
 | `M(c),M(d)` | extra branch | successive forced triples | contradiction |
 | --- | --- | --- | --- |
@@ -351,7 +351,7 @@ Three nonempty pairwise disjoint match sets would have to be `{a},{b},{c}`, but 
 
 `III. M(x)=∅, M(y)={a,b}, M(z)={c}.`
 
-Assume throughout that the relevant five-set is non-Hamiltonian. We use the same forcing rule: if a five-vertex word has two known tight triples, the reverse of its third triple is forced. The initial exterior-core triples are
+Assume throughout that the relevant five-set is non-Hamiltonian. We use the same forcing rule: if a five-vertex word has two known tight triples, the reverse of its third triple is forced. The initial mixed triples involving one exterior vertex and two vertices of the fixed three-set are
 
 `I: cxb,cxa,bxa; byc,cya,bya; czb,cza,azb.`
 
