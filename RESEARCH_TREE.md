@@ -1,18 +1,20 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting an extremal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving `(3,1)` and `(4,1)`.
-      - [G07] Exclude a counterexample with a Hamiltonian vertex set of codimension four.
-        - Fix the four-set `S` and minimize `|Y|` subject to `Y` Hamiltonian and `pc(K)>2` for `K=H[S union Y]`.
-          - Every proper Hamiltonian `Z subset Y` gives `pc(H[S union Z])<=2`.
-          - Deleting one or two vertices of `Y` while leaving a Hamiltonian remainder gives exact two-covers without singleton components.
-        - Combine actual end-pair deletion covers with the codimension-four endpoint geometry.
-          - For every Hamilton order `Y=(L,u,N,v,R)`, retain both possible incoming/outgoing assignments of the two middle-matching edges at the two endpoints.
-          - If the assignments agree, there are four `4+4` covers of the eight-vertex set `S union {L,u,v,R}`; if they are swapped, there are `6+2` covers and four covers of a common pair-deletion residue.
-          - Every end-pair deletion cover admits a Hamilton five-subset with at least two cut crossings and two complement-side blocks.
-        - Find one choice of Hamilton order, end pair, deletion cover, and Hamilton five-subset whose explicit cut-and-join modification gives a spanning two-path cover of `K`.
-          - Compare whole cover families; allow multiple cuts and splitting the middle path.
-          - Use exchanged Hamiltonian sets only with a strict improvement or a proved closure mechanism.
-          - Use local consequences about failed joining triples or internal gaps only through an explicit spanning construction.
+      - [G07] Exclude a counterexample having a Hamiltonian vertex set of codimension four.
+        - Use the audited reduction `K=H[S∪Y]` from `SHELVES/CORE/CODIMENSION_FOUR.md`: `|S|=4`, `Y` is Hamiltonian, `pc(K)>2`, and every one- or two-vertex deletion from `Y` that leaves a Hamiltonian remainder has an exact two-path cover with both components nontrivial.
+        - Fix a Hamilton ordering `Y=(L,Q,R)` and an exact two-path cover `T` of `K-{L,R}`.
+          - Use the audited five-vertex selection to choose `s∈S` for which `K[{L,R}∪(S-{s})]` is Hamiltonian, at least two ordinary edges of `T` cross `S-{s}|(Q∪{s})`, and `T[S-{s}]` has at least two nonempty components.
+          - If a useful component of `T[S-{s}]` lies at an end of a component of `T`, combine the endpoint alternatives and nested deletion-cover comparison in `SHELVES/UTILITY/PATH_COVER_MODIFICATIONS.md` with an explicit cut-and-join construction.
+          - For simultaneous choices with at least three crossing edges, reduce failure of such an endpoint component to the case that every vertex of `S` has ordinary `T`-degree two.
+            - Then the audited utility theorem gives `e=|E(T[S])|∈{0,1,2}`, exactly `8-2e` edges joining `S` to `Q`, and exactly `6-e` nonempty components of `T[Q]`; after contraction, each component of `T` alternates between `Q`-components and `S`-components and begins and ends in `Q`.
+            - Compare the relative order of the `Q`-vertices on each component of `T` with their order on the Hamilton path `Q`.
+              - If the relative orders disagree, use `TOOLKIT/PATH_FORESTS_AND_INTERSECTIONS.md` Sections 4–5 to obtain a reversed common edge, a tight triple reversing an ordered edge, or a vertex-simple tight cycle; convert one of these outcomes into a spanning two-path cover or a strictly stronger Hamiltonian path.
+              - If the relative orders agree, every internal subpath of a component of `T` whose vertices lie in `S` and whose neighboring vertices are `x,y∈Q` gives a direct interval-replacement comparison with the vertices of `Q` lying strictly between `x,y`.
+                - If the inserted `S`-subpath is longer than the replaced `Q`-interval, the resulting Hamiltonian path has complement of order at most three and yields a spanning two-path cover.
+                - If the two intervals have the same order, obtain another codimension-four Hamiltonian set with the same endpoints; force a strict improvement in an explicit cover-comparison quantity or close directly, rather than iterating exchanges without progress.
+                - If the replaced `Q`-interval has exactly one more vertex, its new complement has order five and is non-Hamiltonian; use the current parent audit batch to obtain common Hamiltonian deletions and compare exact two-path covers on one pair-deletion residue.
+                - If every available replacement omits at least two more `Q`-vertices than it inserts from `S`, use the resulting disjoint-interval count as a global constraint rather than expanding local joining-triple cases.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For `|B|>=5`, construct a two-cover or a three-cover with lexicographically larger sorted component orders.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
