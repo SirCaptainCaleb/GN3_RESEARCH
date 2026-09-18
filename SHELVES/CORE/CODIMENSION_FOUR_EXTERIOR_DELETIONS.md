@@ -146,3 +146,107 @@ The three preceding propositions apply directly in `K` to the endpoint truncatio
 
 **Proof.**
 Both truncations are inherited Hamilton tight paths on their vertex sets, and their vertex complements in the same ambient tournament `K` are exactly the two displayed five-sets. ∎
+
+## 4. A five-vertex endpoint construction
+
+Assume now that `m\ge4`.
+
+### Proposition 4.1
+
+There are `s\in S` and a Hamilton ordering `M=(m_0,\ldots,m_4)` of `\{L,R\}\cup(S-\{s\})` such that one of the following holds.
+For `0<=i<=j<=4`, write `M[i,j]=(m_i,\ldots,m_j)`; when `i>j`, take `M[i,j]` to be the empty sequence.
+
+1. `L=m_p` for some `p\in\{0,3,4\}`, and the two vertex sequences `M[0,p](x_1,\ldots,x_{m-2})` and `(s)M[p+1,4]`, with empty pieces omitted, partition `V(K)` and have exactly one non-tight consecutive triple.
+2. `R=m_q` for some `q\in\{0,1,4\}`, and the two vertex sequences `M[0,q-1](s)` and `(x_1,\ldots,x_{m-2})M[q,4]`, with empty pieces omitted, partition `V(K)` and have exactly one non-tight consecutive triple.
+
+**Proof.**
+Write the intrinsic matching blocks of `S` as `M_{\mathrm{low}}<M_{\mathrm{mid}}<M_{\mathrm{high}}`. By `TOOLKIT/FOUR_VERTEX_STRUCTURE.md` Section 3, relative to each of `L,R`, one edge of `M_{\mathrm{mid}}` is incoming and the other is outgoing.
+
+Relabel `S=\{a,b,c,z\}` so that
+`M_{\mathrm{low}}=\{ab,cz\}`,
+`M_{\mathrm{mid}}=\{ac,bz\}`,
+`M_{\mathrm{high}}=\{az,bc\}`,
+and so that `bz` is outgoing from `L` while `ac` is incoming to `L`. Thus
+`(L,b,z),(L,z,b),(a,c,L),(c,a,L)`
+are tight. The matching-block order also gives
+`(z,b,c),(c,a,z),(z,c,a),(a,c,b),(b,a,c),(b,a,z)`
+tight.
+
+Call a Hamilton ordering of `\{L,R\}\cup(S-\{s\})` favorable if `L` occurs in position `0,3,4` or `R` occurs in position `0,1,4`. Suppose no favorable ordering exists.
+
+There are two possibilities for the edge of `M_{\mathrm{mid}}` incoming to `R`.
+
+If `ac` is incoming to `R`, then `(a,c,R),(c,a,R),(R,b,z),(R,z,b)` are tight. Successively testing the Hamilton orders
+`(L,R,z,b,c)`, `(R,z,c,a,L)`, and `(c,z,R,L,a)`
+forces `(z,R,L)`, `(c,z,R)`, and `(a,L,R)`, respectively. Then `(z,c,a,L,R)` is a favorable Hamilton ordering, a contradiction.
+
+If `bz` is incoming to `R`, then `(b,z,R),(z,b,R),(R,a,c),(R,c,a)` are tight. Successively testing
+`(L,b,z,R,c)`,
+`(c,L,b,z,R)`,
+`(L,R,c,a,z)`,
+`(z,c,a,L,R)`,
+`(L,R,a,c,b)`,
+`(b,a,c,L,R)`,
+`(c,R,L,a,z)`,
+`(c,R,z,a,L)`,
+`(L,b,a,z,R)`,
+and `(R,a,b,L,c)`
+forces respectively
+`(c,R,z)`,
+`(b,L,c)`,
+`(c,R,L)`,
+`(R,L,a)`,
+`(a,R,L)`,
+`(R,L,c)`,
+`(z,a,L)`,
+`(a,z,R)`,
+`(a,b,L)`,
+and `(b,a,R)`.
+Then `(b,a,R,L,c)` is a favorable Hamilton ordering, again a contradiction.
+
+Hence a favorable ordering exists. In the first alternative of the statement, the only consecutive triple not inherited from `M` or the Hamilton ordering of `Y` is, according as `p=0,3,4`,
+`(s,m_1,m_2)`, `(m_2,L,x_1)`, or `(m_3,L,x_1)`.
+In the second alternative, the only such triple is, according as `q=0,1,4`,
+`(x_{m-2},R,m_1)`, `(x_{m-2},R,m_2)`, or `(m_2,m_3,s)`.
+If this single new triple were tight, the two displayed sequences would form a spanning two-path cover of `K`, contrary to `pc(K)>2`. Therefore it is non-tight. ∎
+
+## 5. Exact covers on the eight endpoint/complement vertices
+
+Assume now that `m\ge6`, and put `u=x_1`, `v=x_{m-2}`, and `N=(x_2,\ldots,x_{m-3})`. The path `N` is nonempty.
+
+Let the two edges of `M_{\mathrm{mid}}` be denoted `I,O`, where `I` is incoming and `O` is outgoing at `L`.
+
+### Proposition 5.1
+
+At `R` exactly one of the following occurs.
+
+1. `I` is incoming and `O` outgoing. Writing `O=\{o_0,o_1\}` and `I=\{i_0,i_1\}`, every choice of orientations gives an exact two-path cover
+   `(u,L,o_0,o_1)\mid(i_0,i_1,R,v)`
+   of the induced boundary tournament on `S\cup\{L,u,v,R\}`.
+2. `O` is incoming and `I` outgoing. Every orientation `(o_0,o_1)` of `O`, together with either orientation of the two-vertex path on `I`, gives an exact two-path cover
+   `(u,L,o_0,o_1,R,v)\mid I`.
+
+In either case the induced boundary tournament on `S\cup\{L,u,v,R\}` has path-cover number two.
+
+**Proof.**
+By Proposition 1.1, both `S\cup\{L\}` and `S\cup\{R\}` are non-Hamiltonian. Applying `TOOLKIT/FOUR_VERTEX_STRUCTURE.md` Section 3 at each endpoint shows that exactly one edge of `M_{\mathrm{mid}}` is incoming and the other outgoing there. Relative to the fixed names `I,O` at `L`, the assignment at `R` is therefore exactly one of the two cases in the statement.
+
+In the first case, for either orientation `(o_0,o_1)` of `O`, the triple `(L,o_0,o_1)` is tight; Proposition 1.2 gives `(u,L,o_0)`, so `(u,L,o_0,o_1)` is a tight four-vertex path. Similarly, for either orientation `(i_0,i_1)` of `I`, the triple `(i_0,i_1,R)` is tight and Proposition 1.2 gives `(i_1,R,v)`, so `(i_0,i_1,R,v)` is a tight four-vertex path. Their supports partition the eight vertices.
+
+In the second case, `O` is outgoing at `L` and incoming at `R`. Hence for either orientation `(o_0,o_1)`, both `(L,o_0,o_1)` and `(o_0,o_1,R)` are tight. Together with Proposition 1.2 this makes `(u,L,o_0,o_1,R,v)` a tight six-vertex path. The remaining two vertices are exactly `I`, which form a two-vertex path in either orientation.
+
+Thus the induced boundary tournament on `S\cup\{L,u,v,R\}` has path-cover number at most two. If it were Hamiltonian, a Hamilton path on those eight vertices together with the disjoint nonempty tight path `N` would two-cover `K`, impossible. Hence its path-cover number is exactly two. ∎
+
+### Proposition 5.2
+
+Suppose the second case of Proposition 5.1 holds. Write `O=\{b,z\}` and `W=V(K)-I`. Then `K[W]` has the four exact two-path covers
+`(u,L,b,z)\mid Y[2,m-1]`,
+`(u,L,z,b)\mid Y[2,m-1]`,
+`Y[0,m-3]\mid(z,b,R,v)`,
+and
+`Y[0,m-3]\mid(b,z,R,v)`.
+
+**Proof.**
+Proposition 1.2 gives `(u,L,s)` and `(s,R,v)` tight for every `s\in S`. Since `O=\{b,z\}` is outgoing at `L`, both `(L,b,z)` and `(L,z,b)` are tight, giving the two left four-vertex paths. Since `O` is incoming at `R`, both `(z,b,R)` and `(b,z,R)` are tight, giving the two right four-vertex paths. The complementary long pieces are contiguous subpaths of `Y`, so all four displayed pairs are literal two-path covers of `W`.
+
+If `K[W]` were Hamiltonian, a Hamilton path on `W` together with the two-vertex path on `I` would give a spanning two-path cover of `K`, impossible. Therefore `pc(K[W])=2`, and all four displayed covers are exact. ∎
