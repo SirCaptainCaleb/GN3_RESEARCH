@@ -1,5 +1,7 @@
 # Path-cover modification and comparison lemmas
 
+If `P=(p_0,\ldots,p_r)` and `Q=(q_0,\ldots,q_s)` are vertex-disjoint ordered paths, write `PQ` for the concatenated vertex sequence `(p_0,\ldots,p_r,q_0,\ldots,q_s)`. For `0<=i<=j<=r`, write `P[i,j]=(p_i,\ldots,p_j)`.
+
 ## 1. Exterior barriers at Hamilton path ends
 
 ### Proposition 1.1
