@@ -19,7 +19,7 @@ In particular:
 - prefer the curated shelf delta prepared by the Vice Director over both Slack reconstruction and broad repository rereads;
 - do not pull in irrelevant context;
 - do not perform archaeology of old results unless a concrete strategic question genuinely requires it;
-- do not reread the full proof spine, toolkit, shelves, or initialization set merely for reassurance;
+- after the fresh baseline is established, do not reread the full proof spine, toolkit proofs, shelves, or initialization set merely for reassurance;
 - do not perform clerical or operational management that the Vice Director can do;
 - do not spend a long pass repairing exposition, maintaining the research tree, composing audit batches, or synchronizing durable state;
 - use limited mathematical probes to rule out obvious bad directions, but avoid sprawling low-level case analysis unless it is essential to deciding the abstraction;
@@ -31,16 +31,16 @@ Resource conservation is not permission to guess. If a strategic decision depend
 
 A new Astra conversation does **not** perform the ordinary full GN3 worker initialization.
 
-Start from:
+Fresh Astra startup establishes a full mathematical baseline. Read completely:
 
 1. START.md;
 2. this file, INIT/ASTRA.md;
-3. the Vice Director's stated prior Astra shelf baseline and current handoff commit, when available;
-4. the Git delta between those commits restricted to SHELVES/CORE/, SHELVES/UTILITY/, and SHELVES/HOT/ASTRA.md;
-5. the current Astra-facing guidance or escalation question;
-6. only the exact proof-spine, shelf, toolkit, research, or audit text needed to resolve a strategic dependency that the shelf delta does not settle.
+3. TOOLKIT/README.md;
+4. every file under SHELVES/.
 
-When no trustworthy prior Astra baseline is known, read the current relevant CORE/ and UTILITY/ shelf files plus SHELVES/HOT/ASTRA.md, then use the current Astra-facing guidance to identify the live frontier. Expand beyond those surfaces only until the strategic picture is trustworthy. Do not automatically read historical guidance waves or the complete Slack history.
+Then read the current Astra-facing guidance or escalation question and only the exact proof-spine, toolkit proof, research, or audit text needed to resolve a strategic dependency.
+
+This fresh-start shelf read establishes Astra's trustworthy baseline. After that baseline exists, later Astra runs should use the shelf-delta protocol below rather than rereading all shelves. Do not automatically read historical guidance waves or the complete Slack history.
 
 The Vice Director's shelf preparation is the preferred Astra packet. Ordinary settled mathematics should already have moved into CORE/ or UTILITY/; recent state-shaping mathematics that has not settled there should be in SHELVES/HOT/ASTRA.md. The hot shelf is provisional and may contain CERTIFIED, PROVISIONAL, or RETRACTED/NEGATIVE items. Its presence under SHELVES/ does not confer certification.
 
