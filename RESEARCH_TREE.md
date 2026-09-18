@@ -1,20 +1,18 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting an extremal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving `(3,1)` and `(4,1)`.
-      - [G07] Exclude a counterexample having a Hamiltonian vertex set of codimension four.
-        - Use the audited reduction `K=H[S∪Y]` from `SHELVES/CORE/CODIMENSION_FOUR.md`: `|S|=4`, `Y` is Hamiltonian, `pc(K)>2`, and every one- or two-vertex deletion from `Y` that leaves a Hamiltonian remainder has an exact two-path cover with both components nontrivial.
-        - Fix a Hamilton ordering `Y=(L,Q,R)` and an exact two-path cover `T` of `K-{L,R}`.
-          - Use the audited five-vertex selection to choose `s∈S` for which `K[{L,R}∪(S-{s})]` is Hamiltonian, at least two ordinary edges of `T` cross `S-{s}|(Q∪{s})`, and `T[S-{s}]` has at least two nonempty components.
-          - If a useful component of `T[S-{s}]` lies at an end of a component of `T`, combine the endpoint alternatives and nested deletion-cover comparison in `SHELVES/UTILITY/PATH_COVER_MODIFICATIONS.md` with an explicit cut-and-join construction.
-          - For simultaneous choices with at least three crossing edges, reduce failure of such an endpoint component to the case that every vertex of `S` has ordinary `T`-degree two.
-            - Then the audited utility theorem gives `e=|E(T[S])|∈{0,1,2}`, exactly `8-2e` edges joining `S` to `Q`, and exactly `6-e` nonempty components of `T[Q]`; after contraction, each component of `T` alternates between `Q`-components and `S`-components and begins and ends in `Q`.
-            - Compare the relative order of the `Q`-vertices on each component of `T` with their order on the Hamilton path `Q`.
-              - If the relative orders disagree, use `TOOLKIT/PATH_FORESTS_AND_INTERSECTIONS.md` Sections 4–5 to obtain a reversed common edge, a tight triple reversing an ordered edge, or a vertex-simple tight cycle; convert one of these outcomes into a spanning two-path cover or a strictly stronger Hamiltonian path.
-              - If the relative orders agree, every internal subpath of a component of `T` whose vertices lie in `S` and whose neighboring vertices are `x,y∈Q` gives a direct interval-replacement comparison with the vertices of `Q` lying strictly between `x,y`.
-                - If the inserted `S`-subpath is longer than the replaced `Q`-interval, the resulting Hamiltonian path has complement of order at most three and yields a spanning two-path cover.
-                - If the two intervals have the same order, obtain another codimension-four Hamiltonian set with the same endpoints; force a strict improvement in an explicit cover-comparison quantity or close directly, rather than iterating exchanges without progress.
-                - If the replaced `Q`-interval has exactly one more vertex, its new complement has order five and is non-Hamiltonian; use the current parent audit batch to obtain common Hamiltonian deletions and compare exact two-path covers on one pair-deletion residue.
-                - If every available replacement omits at least two more `Q`-vertices than it inserts from `S`, use the resulting disjoint-interval count as a global constraint rather than expanding local joining-triple cases.
+      - [G08] Exclude a counterexample having a Hamiltonian vertex set of codimension four.
+        - Apply the audited minimal-Hamiltonian-side reduction to obtain `K`, a Hamilton path `Y=(L,Q,R)`, and four-vertex complement `S`.
+        - Combine exact two-covers of `K-L`, `K-R`, and `K-{L,R}` with Hamilton paths on `{L,R} union (S-{s})` for every `s in S`.
+          - Construct a spanning two-cover; a Hamilton path on `Q union {s}` for any `s` suffices.
+          - For descent, fix `K,L,R` and minimize `delta=|E_T(S,Q)|` jointly over Hamilton paths of codimension four from `L` to `R` and exact two-covers `T` of `K-{L,R}`.
+          - Produce a complete two-cover, a path longer than `|V(K)|-4`, or another admissible pair with strictly smaller `delta`.
+        - Prove compatibility of the joining triples before using an interval replacement.
+          - A tight replacement `(x,B,y)` also needs `(p,x,first(B))` and `(last(B),y,q)` when the retained predecessor `p` and successor `q` exist.
+          - Use failed joining triples in a complete alternative construction; preserving an ordered pair at each boundary permits inheritance.
+          - Apply cardinality and complement arguments only after the whole replacement path is tight.
+        - Use crossing edges, changed intersection orders, and proper tight cycles only through a spanning construction or a proved strict decrease.
+        - Keep the five-vertex-complement comparison conditional on constructing its complementary Hamilton path.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For `|B|>=5`, construct a two-cover or a three-cover with lexicographically larger sorted component orders.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
