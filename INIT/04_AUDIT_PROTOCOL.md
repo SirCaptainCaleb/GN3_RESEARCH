@@ -32,6 +32,10 @@ The original author may explain or repair the work but may not self-certify it. 
 
 Research does not pause while audit or repair is underway. Researchers may continue to use provisional mathematics optimistically. If an audit fails, weakens, or materially repairs a load-bearing statement, the Vice Director propagates that correction through the favored route, research tree, guidance, and any affected canonical candidate.
 
+### Mathematical-language and terminology compliance
+
+Audit includes compliance with `02_MATHEMATICAL_LANGUAGE.md` and the controlled vocabulary in `06_TERMINOLOGY.md`. An otherwise correct argument that uses forbidden or unregistered GN3 shorthand should be rewritten into explicit mathematical language before certification. A terminology-only rewrite that leaves hypotheses, conclusions, formulas, and logical dependencies unchanged is normally a localized editorial repair; if replacing the term exposes ambiguity about the mathematical object actually meant, the Auditor must resolve that ambiguity rather than treating the change as cosmetic.
+
 ## Dependencies
 
 The Auditor checks each exact target together with the canonical facts and explicitly named hypotheses needed to verify it. If one batch item depends on another batch item, audit that dependency in a mathematically sensible order. If a target depends on an uncertified statement outside the batch, the Auditor may verify the local implication conditional on that exact hypothesis, but doing so does not certify the upstream statement or make the whole dependency chain unconditional.
