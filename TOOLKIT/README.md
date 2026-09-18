@@ -1,5 +1,7 @@
 # Reusable mathematics
 
+This README is the startup-facing **statement index** for the toolkit. It should represent every retained toolkit theorem or lemma at statement-level detail sufficient to recover its hypotheses and conclusion. The linked toolkit modules are primarily the proof and exposition surface and are opened when a proof or exact local detail is needed.
+
 The toolkit is the preferred home for general-purpose lemmas that can be used independently of the main proof architecture. In particular, reusable mathematics extracted from the proof spine should be cited here rather than recovered from the sequential proof.
 
 Proof-specific minimal-counterexample reductions, extremal-cover statements, and the fixed-pair continuation machinery remain in `PROOF_SPINE/TWO_TIGHT_PATHS.md`; their hypotheses are specialized to the main argument rather than general utilities.
