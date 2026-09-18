@@ -6,13 +6,13 @@
           - Every proper Hamiltonian `Z subset Y` gives `pc(H[S union Z])<=2`.
           - Deleting one or two vertices of `Y` while leaving a Hamiltonian remainder gives exact two-covers without singleton components.
         - Combine actual end-pair deletion covers with the codimension-four endpoint geometry.
-          - For every Hamilton order `Y=(L,u,N,v,R)`, retain both same and swapped middle-matching profiles.
-          - Same profile supplies four endpoint-core `4+4` covers; swapped profile supplies `6+2` covers and four covers of a common pair-deletion residue.
-          - Every end-pair deletion cover admits a Hamilton five-face with at least two cut crossings and two complement-side blocks.
-        - Find one choice of Hamilton order, end pair, deletion cover, and good face whose surgery two-covers `K`.
+          - For every Hamilton order `Y=(L,u,N,v,R)`, retain both possible incoming/outgoing assignments of the two middle-matching edges at the two endpoints.
+          - If the assignments agree, there are four `4+4` covers of the eight-vertex set `S union {L,u,v,R}`; if they are swapped, there are `6+2` covers and four covers of a common pair-deletion residue.
+          - Every end-pair deletion cover admits a Hamilton five-subset with at least two cut crossings and two complement-side blocks.
+        - Find one choice of Hamilton order, end pair, deletion cover, and Hamilton five-subset whose explicit cut-and-join modification gives a spanning two-path cover of `K`.
           - Compare whole cover families; allow multiple cuts and splitting the middle path.
           - Use exchanged Hamiltonian sets only with a strict improvement or a proved closure mechanism.
-          - Use one-seam and quiet-gap consequences only through an explicit spanning construction.
+          - Use local consequences about failed joining triples or internal gaps only through an explicit spanning construction.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For `|B|>=5`, construct a two-cover or a three-cover with lexicographically larger sorted component orders.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
