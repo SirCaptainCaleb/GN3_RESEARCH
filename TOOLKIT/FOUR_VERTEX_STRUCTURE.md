@@ -1,6 +1,6 @@
 # Four-vertex structure and fifth-vertex extensions
 
-## 1. Two parallel turns force one of two edge-orderable four-vertex forms
+## 1. Two common-first-pair tight triples force one of two edge-orderable four-vertex forms
 
 Let `H` be a boundary tournament, and let `a,b,c,d` be distinct vertices of `H`. Suppose
 
