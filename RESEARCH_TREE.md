@@ -1,27 +1,29 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`.
     - If `|B|<=4`, then `|C|=1`, leaving `(|B|,|C|)=(3,1),(4,1)`.
-      - [G10] Exclude a boundary tournament `K` with `pc(K)>2` having a Hamilton tight path `P=(L,\ldots,R)` with four-vertex complement `S`.
-        - Use the universal structure on the fixed six-set `S\cup\{L,R\}`.
-          - `K[S]`, `K[S\cup\{L\}]`, `K[S\cup\{R\}]`, and `K[S\cup\{L,R\}]` are non-Hamiltonian.
-          - For every `s\in S`, the three induced subtournaments on `(S-\{s\})\cup\{L\}`, `(S-\{s\})\cup\{R\}`, and `(S-\{s\})\cup\{L,R\}` are Hamiltonian.
-          - The intrinsic matching blocks of `K[S]` and the endpoint directions at `L,R` give the favorable five-vertex ordering with exactly one failed joining triple.
-          - The eight vertices consisting of `S`, the two endpoints of `P`, and their two path neighbors have the exact two-cover alternatives from the codimension-four core shelf.
-        - Use the explicit exterior-deletion family.
-          - For every `s\in S`, `K-s` has the three exact covers obtained by moving neither, one, or both endpoints of `P` to the small side.
-          - Every component of every exact two-path cover of `K-s` has order at least three.
-          - For every distinct `s,t\in S`, `K-\{s,t\}` has the explicit covers `P|(S-\{s,t\})` and the two covers moving `L` or `R` to the surviving pair.
-          - Apply the certified five-vertex-complement theorems directly to the endpoint truncations `P-L` and `P-R`.
-        - Close the favorable five-vertex ordering.
-          - Compare its unique failed joining triple with the simultaneous failed-restoration constraints on the three nested long vertex sets.
-          - Permit arbitrary Hamilton reorderings of the endpoint truncations; preserve every required boundary joining triple explicitly.
-          - In the swapped middle-matching case, combine the four exact common pair-deletion covers with the exterior-deletion family.
-          - In the same middle-matching case, combine the `4+4` endpoint/complement cover with the exterior-deletion family.
-          - Produce a spanning two-path cover, or isolate a strictly smaller finite local obstruction on `S\cup\{L,R}`.
-        - Prove the simultaneous failed-restoration parents needed above.
-          - Every exterior vertex fails to make each of `V(P)-\{L\}`, `V(P)-\{R\}`, and `V(P)-\{L,R\}` Hamiltonian.
-          - Arbitrary Hamilton orderings of the one-end truncations inherit simultaneous two-layer endpoint barriers.
-          - Exclude Hamilton-side order at most five.
+      - [G11] Exclude a boundary tournament `K` with `pc(K)>2` having a Hamilton tight path `P=(x_0,...,x_{m-1})` with four-vertex complement `S`.
+        - Reduce immediately to `m>=7`.
+          - The proof-spine small-order theorem excludes every boundary tournament of order at most ten with path-cover number greater than two.
+        - Use the universal four-complement structure before invoking minimality.
+          - `K[S]`, `K[S∪{x_0}]`, `K[S∪{x_{m-1}}]`, and `K[S∪{x_0,x_{m-1}}]` are non-Hamiltonian.
+          - Deleting any `s∈S` gives explicit exact two-path covers from the Hamiltonian four- and five-vertex complements.
+          - Establish and exploit the two-vertex endpoint extensions `(S-{s})∪{x_0,x_1}` and `(S-{s})∪{x_{m-2},x_{m-1}}` for every `s∈S`.
+          - Convert failed restoration of `s` into endpoint barriers at successive path edges; do not reverse a tight path without proof.
+        - Minimize the Hamiltonian side when deletion from `P` is needed.
+          - Exact two-path covers exist after deleting the first adjacent pair `{x_0,x_1}` and the last adjacent pair `{x_{m-2},x_{m-1}`.
+          - For each end-pair cover, use all four Hamiltonian sets `D∪(S-{s})` simultaneously.
+          - Prove and exploit that at least two omissions `s∈S` have both at least two cut crossings and at least two `S-{s}` path blocks.
+        - Compare the two ends rather than accumulating one-ended obstructions.
+          - If a complement vertex is useful for both end-pair covers, turn the two descriptions into an explicit spanning two-path cover.
+          - If the two useful omission sets are disjoint, they partition `S` into two pairs; compare that partition with the intrinsic middle matching and the two endpoint matching profiles.
+          - Use arbitrary Hamiltonian reorderings of one-end truncations only to improve this comparison; every replacement must check its joining triples explicitly.
+        - Treat `m=7` as the first collision case.
+          - Then `|V(K)|=11`, so every proper induced subtournament has path-cover number at most two.
+          - In each endpoint matching profile, combine the resulting deletion covers with the five-vertex residues forced by explicit endpoint/complement paths.
+          - Close with a literal spanning two-path cover; do not import the obsolete order-six analysis.
+        - For `m>=8`, seek one parent end-pair comparison theorem that yields a spanning two-path cover or a strict contradiction to minimality of the Hamiltonian side.
+          - Use the order-independent endpoint barriers only as inputs to that theorem.
+          - Do not extend crossing-edge, failed-seam, or endpoint-triple inventories unless the next statement consumes them in the spanning construction.
       - In the `(4,1)` branch, construct a spanning two-path cover or a Hamilton tight path with four-vertex complement.
     - If `|B|>=5`, construct a spanning two-path cover or a lexicographically larger spanning three-path cover.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
