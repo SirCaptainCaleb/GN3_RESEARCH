@@ -53,6 +53,8 @@ During initialization, every GN3 worker then reads completely **from the same pi
 - `RESEARCH_TREE.md`;
 - `TOOLKIT/README.md` and every standalone toolkit module currently indexed there.
 
+The shelves are not part of the universal full-read startup burden. After the fixed startup read, a Director or Vice Director reads the current `SHELVES/CORE/` files relevant to the live proof coordinate during synchronization. Researchers and Auditors read shelf files when current guidance, an audit target, or their assigned mathematics depends on them. `SHELVES/UTILITY/` is retrieved by topic when reusable staged mathematics is relevant.
+
 Initialization is one coherent snapshot. Do not mix init policy, proof spine, research tree, or toolkit files from different repository revisions merely because `main` advances during the read.
 
 After those reads, synchronize the live Slack surfaces relevant to the assigned role, beginning with `#gn3-changelog` and the current guidance when doing research or direction. Material under `ARCHAEOLOGY/` is retrieved only when provenance or source archaeology is actually needed.
