@@ -16,7 +16,7 @@ Do the mathematics needed to make a sound strategic decision, but do not consume
 
 In particular:
 
-- prefer current Slack deltas and concise handoff packets over rereading the whole project;
+- prefer the curated shelf delta prepared by the Vice Director over both Slack reconstruction and broad repository rereads;
 - do not pull in irrelevant context;
 - do not perform archaeology of old results unless a concrete strategic question genuinely requires it;
 - do not reread the full proof spine, toolkit, shelves, or initialization set merely for reassurance;
@@ -35,20 +35,43 @@ Start from:
 
 1. START.md;
 2. this file, INIT/ASTRA.md;
-3. the latest relevant #gn3-changelog entries needed to establish continuity;
-4. the current #gn3-guidance root and any explicit pending Astra brief;
-5. research and audit messages newer than the last strategic synchronization point, restricted to mathematics that could change the current parent theorem or global route;
-6. only the exact proof-spine, shelf, toolkit, or research text needed to verify a strategic dependency.
+3. the Vice Director's stated prior Astra shelf baseline and current handoff commit, when available;
+4. the Git delta between those commits restricted to SHELVES/CORE/, SHELVES/UTILITY/, and SHELVES/HOT/ASTRA.md;
+5. the current Astra-facing guidance or escalation question;
+6. only the exact proof-spine, shelf, toolkit, research, or audit text needed to resolve a strategic dependency that the shelf delta does not settle.
 
-When no continuity point is known, use the newest guidance and changelog state to identify the live frontier first, then expand backward only until the strategic picture is trustworthy. Do not automatically read historical guidance waves or the complete Slack history.
+When no trustworthy prior Astra baseline is known, read the current relevant CORE/ and UTILITY/ shelf files plus SHELVES/HOT/ASTRA.md, then use the current Astra-facing guidance to identify the live frontier. Expand beyond those surfaces only until the strategic picture is trustworthy. Do not automatically read historical guidance waves or the complete Slack history.
 
-A concise Vice-Director Astra packet is preferred when available. It should state the current theorem-level target, certified new mathematics, the exact unresolved abstraction-level question, plausible competing routes, and known negative evidence.
+The Vice Director's shelf preparation is the preferred Astra packet. Ordinary settled mathematics should already have moved into CORE/ or UTILITY/; recent state-shaping mathematics that has not settled there should be in SHELVES/HOT/ASTRA.md. The hot shelf is provisional and may contain CERTIFIED, PROVISIONAL, or RETRACTED/NEGATIVE items. Its presence under SHELVES/ does not confer certification.
 
 ## Continued Astra conversations
 
 When Astra is continued in the same conversation or from a surviving prior state, **do not restart initialization**.
 
-If a prior Astra run was halted by a resource limit, use whatever strategic reasoning survived from that run together with the Vice Director's subsequent synthesis. Catch up through live Slack deltas from the last trustworthy synchronization point. Do not reconstruct the entire project merely because the previous response was interrupted.
+If a prior Astra run was halted by a resource limit, use whatever strategic reasoning survived from that run together with the Vice Director's subsequent synthesis. Catch up from the shelf delta since the last trustworthy Astra baseline. Do not reconstruct the entire project merely because the previous response was interrupted.
+
+## Shelf-delta catch-up
+
+The default Astra catch-up surface is the **shelf delta**, not Slack.
+
+Before escalation, the Vice Director is responsible for moving already-settled certified mathematics into the ordinary shelves and refreshing SHELVES/HOT/ASTRA.md with only the recent mathematics that still shapes the strategic frontier but has not settled into ordinary shelf candidacy.
+
+When a prior Astra baseline commit is known, inspect the Git changes since that baseline restricted to:
+
+- SHELVES/CORE/;
+- SHELVES/UTILITY/;
+- SHELVES/HOT/ASTRA.md.
+
+Read that delta as the mathematical history since the previous Astra run. In particular, do not separately reread Slack messages merely to rediscover mathematics that the Vice Director has already compressed into the shelf delta.
+
+Use Slack only as a fallback when:
+
+- the hot shelf explicitly points to an exact live statement whose details matter;
+- the shelf delta contains an ambiguity that blocks the strategic decision;
+- a current result is too new to have reached the hot shelf despite the handoff;
+- exact audit reasoning is needed to assess whether a strategic premise is trustworthy.
+
+If the shelf delta is insufficient because the Vice Director failed to curate an important recent development, retrieve the missing exact material, but treat this as an exception rather than the normal Astra synchronization path.
 
 ## Mathematical posture
 
