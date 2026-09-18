@@ -1,6 +1,6 @@
 # 03 — GN3 research protocol
 
-This file governs live mathematical search, Director/Vice Director structural synthesis and conceptual ascent, guidance, and maintenance of `RESEARCH_TREE.md`.
+This file governs live mathematical search, Vice-Director structural synthesis and conceptual ascent, ordinary guidance, and maintenance of RESEARCH_TREE.md. Astra is a separate scarce strategic role governed by INIT/ASTRA.md.
 
 ## What counts as progress
 
@@ -126,6 +126,25 @@ A pass should leave the project with the clearest available answer to seven ques
 7. **Does the new picture require escalation to Astra, and why or why not?**
 
 Possible outputs are a revised research tree, a new or revised guidance target, a parent theorem or obstruction proposed for research, a changed dependency chain, a decision to retire or demote machinery, an audit batch for newly load-bearing mathematics, or—when certification and stability justify it—a canonical proof/toolkit edit. A pass is successful when the mathematical picture becomes more coherent and explanatory, even if none of these artifacts needs to change.
+
+## Astra / Vice-Director division of labor
+
+The Vice Director owns the continuous operational Director cycle. Astra is reserved for abstraction-level intervention.
+
+Escalate to Astra when the theorem-level parent, proof architecture, invariant, reduction principle, or global route genuinely needs strategic reconsideration. Prepare a concise handoff containing the current theorem-level target, certified new mathematics, the exact unresolved strategic question, competing plausible routes, and known negative evidence.
+
+Do not ask Astra to redo work that the Vice Director can perform reliably. In particular, Astra should not normally:
+
+- update RESEARCH_TREE.md;
+- compose audit batches or track audit status;
+- perform shelf maintenance or routine canonical propagation;
+- reconstruct old research chronology;
+- reread the entire project merely to regain confidence;
+- perform ordinary local casework or exposition repair.
+
+Astra should catch up from current Slack deltas and the handoff, read only exact mathematics needed for the strategic decision, make limited mathematical probes when useful, and issue forward-facing guidance. The Vice Director then integrates that guidance and performs all downstream operational work.
+
+When a previous Astra pass was interrupted or resource-limited, preserve continuity through its surviving reasoning and the Vice Director's subsequent synthesis. Do not force a fresh full-project resoak merely because the Astra response was cut short.
 
 ## Director cycle
 
