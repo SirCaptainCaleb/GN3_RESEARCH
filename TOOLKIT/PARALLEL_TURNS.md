@@ -1,6 +1,6 @@
-# Parallel turns and three-vertex core signatures
+# Parallel middle vertices and match sets relative to a fixed three-set
 
-## 1. Core-signature compression
+## 1. Match sets relative to a fixed three-set
 
 Fix a three-vertex set
 
@@ -28,7 +28,7 @@ Then:
 2. if `U subseteq E` is independent in `Gamma_C`, then the sets `M_C(x)`, `x in U`, are pairwise disjoint, and therefore
 
    `sum_{x in U}|M_C(x)|<=3`;
-3. if `U={x,y,z}` is independent, then, after relabelling the vertices of `C` and the three exterior vertices, the signature triple is exactly one of
+3. if `U={x,y,z}` is independent, then, after relabelling the vertices of `C` and the three exterior vertices, the triple of match sets is exactly one of
 
    `(emptyset,emptyset,emptyset)`,
 
