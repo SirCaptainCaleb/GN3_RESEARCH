@@ -62,7 +62,7 @@ Read:
 1. START.md
 2. INIT/ASTRA.md
 
-Then follow INIT/ASTRA.md. Astra does not perform the ordinary full worker initialization unless a concrete strategic dependency actually requires additional files.
+Then follow INIT/ASTRA.md. Astra's default catch-up is the Vice-Director-prepared Git shelf delta over SHELVES/CORE/, SHELVES/UTILITY/, and SHELVES/HOT/ASTRA.md since the previous Astra baseline. Astra does not perform the ordinary full worker initialization unless a concrete strategic dependency actually requires additional files.
 
 Other roles do not read INIT/ASTRA.md.
 
@@ -97,7 +97,7 @@ Read the exact assigned target, the canonical facts and explicit dependencies ne
 
 ### Astra
 
-Do not perform the ordinary mathematical startup above. INIT/ASTRA.md governs Astra synchronization and explicitly prefers live deltas and exact strategic dependencies over a full-project soak.
+Do not perform the ordinary mathematical startup above. INIT/ASTRA.md governs Astra synchronization and explicitly prefers the curated shelf delta and exact strategic dependencies over either a full-project soak or Slack reconstruction.
 
 ## Preferred retrieval when shell Git is available
 
@@ -138,4 +138,4 @@ For each relevant new changelog entry:
 - read exact current mathematics when a task depends on changed exact text;
 - do not restart the full initialization sequence merely because ordinary project state advanced.
 
-Astra has the stricter resource-conservation rule in INIT/ASTRA.md: continued Astra conversations should synchronize through live deltas rather than resoak the project.
+Astra has the stricter resource-conservation rule in INIT/ASTRA.md: continued Astra conversations should synchronize through the shelf delta prepared by the Vice Director. Slack is fallback, not the default catch-up surface.
