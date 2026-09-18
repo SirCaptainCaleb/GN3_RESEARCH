@@ -2,7 +2,7 @@
 
 **Status: CANONICAL.**
 
-This file defines only the durable project topology and authority model. Mathematical-language rules are in `02_MATHEMATICAL_LANGUAGE.md`; research operation, structural synthesis, conceptual ascent, and Director behavior are in `03_RESEARCH_PROTOCOL.md`; certification and audit are in `04_AUDIT_PROTOCOL.md`. All four are mandatory startup context through `START.md`.
+This file defines only the durable project topology and authority model. Mathematical-language rules are in `02_MATHEMATICAL_LANGUAGE.md`; research operation, structural synthesis, conceptual ascent, and Director behavior are in `03_RESEARCH_PROTOCOL.md`; certification and audit are in `04_AUDIT_PROTOCOL.md`; computation discipline is in `05_COMPUTATION_DISCIPLINE.md`; and the controlled project terminology registry is in `06_TERMINOLOGY.md`. Every numbered init file is mandatory startup context through `START.md`.
 
 ## Authority and namespace
 
