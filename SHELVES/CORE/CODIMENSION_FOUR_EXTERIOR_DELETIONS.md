@@ -6,9 +6,9 @@ Let `K` be a boundary tournament with `pc(K)>2` and
 
 where
 
-`P=Y=(x_0,\ldots,x_{m-1})`
+`P=(x_0,\ldots,x_{m-1})`
 
-is a Hamilton tight path with `m>=3`. Put `L=x_0` and `R=x_{m-1}`.
+is a Hamilton tight path with `m>=3`. Put `Y=V(P)`, `L=x_0`, and `R=x_{m-1}`.
 
 The four-vertex-complement statements below are intrinsic to this decomposition. No smallest-counterexample hypothesis and no minimal choice of the Hamiltonian side is used.
 
@@ -16,58 +16,68 @@ The four-vertex-complement statements below are intrinsic to this decomposition.
 
 ### Proposition 1.1
 
-No tight path of \`K\` has more than \`m\` vertices. The induced boundary tournament \`K[S]\` is non-Hamiltonian.
+No tight path of `K` has more than `m` vertices. The induced boundary tournament `K[S]` is non-Hamiltonian.
 
-Moreover, for every Hamilton ordering of \`Y\` with endpoints \`L,R\`:
+Moreover, for every Hamilton ordering of `Y` with endpoints `L,R`:
 
-1. \`K[S\cup\{L\}]\`, \`K[S\cup\{R\}]\`, and \`K[S\cup\{L,R\}]\` are non-Hamiltonian;
-2. for every \`s\in S\`, each of \`K[(S-\{s\})\cup\{L\}]\`, \`K[(S-\{s\})\cup\{R\}]\`, and \`K[(S-\{s\})\cup\{L,R\}]\` is Hamiltonian;
-3. \`K[S]\` has an edge-order representation in which the three opposite-edge perfect matchings occur as intrinsic strict blocks \`M_{\mathrm{low}}<M_{\mathrm{mid}}<M_{\mathrm{high}}\`.
+1. `K[S\cup\{L\}]`, `K[S\cup\{R\}]`, and `K[S\cup\{L,R\}]` are non-Hamiltonian;
+2. for every `s\in S`, each of `K[(S-\{s\})\cup\{L\}]`, `K[(S-\{s\})\cup\{R\}]`, and `K[(S-\{s\})\cup\{L,R\}]` is Hamiltonian;
+3. `K[S]` has an edge-order representation in which the three opposite-edge perfect matchings occur as intrinsic strict blocks `M_{\mathrm{low}}<M_{\mathrm{mid}}<M_{\mathrm{high}}`.
 
 **Proof.**
-Suppose \`P\` is a tight path of \`K\` on more than \`m=|V(K)|-4\` vertices. If \`P\` spans \`K\`, then \`pc(K)=1\`, impossible. Otherwise its complement has order one, two, or three and is Hamiltonian, so a Hamilton path of the complement together with \`P\` gives a spanning two-path cover of \`K\`, again impossible. Thus no tight path has more than \`m\` vertices.
+Suppose `P` is a tight path of `K` on more than `m=|V(K)|-4` vertices. If `P` spans `K`, then `pc(K)=1`, impossible. Otherwise its complement has order one, two, or three and is Hamiltonian, so a Hamilton path of the complement together with `P` gives a spanning two-path cover of `K`, again impossible. Thus no tight path has more than `m` vertices.
 
-The set \`S\` is non-Hamiltonian, because otherwise Hamilton paths on \`Y\` and \`S\` would two-cover \`K\`.
+The set `S` is non-Hamiltonian, because otherwise Hamilton paths on `Y` and `S` would two-cover `K`.
 
-If \`S\cup\{L\}\` were Hamiltonian, its Hamilton path together with the tight path obtained from the chosen ordering of \`Y\` by deleting \`L\` would two-cover \`K\`. Hence \`S\cup\{L\}\` is non-Hamiltonian, and the same argument applies to \`S\cup\{R\}\`. If \`S\cup\{L,R\}\` were Hamiltonian, its Hamilton path together with the nonempty interior subpath obtained by deleting \`L,R\` from \`Y\` would two-cover \`K\`; hence it too is non-Hamiltonian.
+If `S\cup\{L\}` were Hamiltonian, its Hamilton path together with the tight path obtained from the chosen ordering of `Y` by deleting `L` would two-cover `K`. Hence `S\cup\{L\}` is non-Hamiltonian, and the same argument applies to `S\cup\{R\}`. If `S\cup\{L,R\}` were Hamiltonian, its Hamilton path together with the nonempty interior subpath obtained by deleting `L,R` from `Y` would two-cover `K`; hence it too is non-Hamiltonian.
 
-Fix \`s\in S\`. By Lemma 2.3 of the proof spine, the non-Hamiltonian five-set \`S\cup\{L\}\` has an edge-order representation. If \`(S-\{s\})\cup\{L\}\` were also non-Hamiltonian, then in this edge-ordered complete graph the two four-sets \`S\` and \`(S-\{s\})\cup\{L\}\` would both have no increasing Hamilton path and would meet in the three-set \`S-\{s\}\`. Lemma 2.4 of the proof spine would then give an increasing Hamilton path on all five vertices, a contradiction. Thus \`(S-\{s\})\cup\{L\}\` is Hamiltonian. The same argument applies with \`R\`.
+Fix `s\in S`. By Lemma 2.3 of the proof spine, the non-Hamiltonian five-set `S\cup\{L\}` has an edge-order representation. If `(S-\{s\})\cup\{L\}` were also non-Hamiltonian, then in this edge-ordered complete graph the two four-sets `S` and `(S-\{s\})\cup\{L\}` would both have no increasing Hamilton path and would meet in the three-set `S-\{s\}`. Lemma 2.4 of the proof spine would then give an increasing Hamilton path on all five vertices, a contradiction. Thus `(S-\{s\})\cup\{L\}` is Hamiltonian. The same argument applies with `R`.
 
-Apply \`TOOLKIT/LOCAL_HAMILTON_EXTENSIONS.md\` Section 2 to the six-set \`S\cup\{L,R\}\`. At least four of its five-subsets are Hamiltonian. The two obtained by deleting \`L\` or \`R\` are \`S\cup\{R\}\` and \`S\cup\{L\}\`, which are non-Hamiltonian. Therefore all four sets \`(S-\{s\})\cup\{L,R\}\` are Hamiltonian.
+Apply `TOOLKIT/LOCAL_HAMILTON_EXTENSIONS.md` Section 2 to the six-set `S\cup\{L,R\}`. At least four of its five-subsets are Hamiltonian. The two obtained by deleting `L` or `R` are `S\cup\{R\}` and `S\cup\{L\}`, which are non-Hamiltonian. Therefore all four sets `(S-\{s\})\cup\{L,R\}` are Hamiltonian.
 
-Finally, an edge-order representation of \`S\cup\{L\}\` restricts to one of \`K[S]\`. Since \`K[S]\` is non-Hamiltonian, Lemma 2.4 places the six ordinary edges on \`S\` into three strict opposite-edge perfect-matching blocks. Any two edges from different perfect matchings meet, so their comparison is fixed by the boundary relation on \`S\`; hence the order of the three blocks is intrinsic. ∎
+Finally, an edge-order representation of `S\cup\{L\}` restricts to one of `K[S]`. Since `K[S]` is non-Hamiltonian, Lemma 2.4 places the six ordinary edges on `S` into three strict opposite-edge perfect-matching blocks. Any two edges from different perfect matchings meet, so their comparison is fixed by the boundary relation on `S`; hence the order of the three blocks is intrinsic. ∎
 
 
 ### Proposition 1.2
 
-Assume \`m\ge2\`, and put \`u=x_1\`, \`v=x_{m-2}\`. Then for every \`s\in S\`, the triples \`(u,L,s)\` and \`(s,R,v)\` are tight.
+Assume `m\ge2`, and put `u=x_1`, `v=x_{m-2}`. Then for every `s\in S`, the triples `(u,L,s)` and `(s,R,v)` are tight.
 
 **Proof.**
-If \`(s,L,u)\` were tight, then prepending \`s\` to the Hamilton ordering of \`Y\` would give a Hamilton path on \`Y\cup\{s\}\`. The complementary three-set \`S-\{s\}\` is Hamiltonian, so \`K\` would have a spanning two-path cover. Therefore \`(s,L,u)\` is not tight, and boundary antisymmetry gives \`(u,L,s)\`. The terminal assertion is identical. ∎
+If `(s,L,u)` were tight, then prepending `s` to the Hamilton ordering of `Y` would give a Hamilton path on `Y\cup\{s\}`. The complementary three-set `S-\{s\}` is Hamiltonian, so `K` would have a spanning two-path cover. Therefore `(s,L,u)` is not tight, and boundary antisymmetry gives `(u,L,s)`. The terminal assertion is identical. ∎
 
 
 ## 2. Exact covers after deleting exterior vertices
 
 ### Proposition 2.1
 
-Let K be a boundary tournament with pc(K)>2 and V(K)=S disjoint union V(P), where |S|=4 and P=(x_0,...,x_{m-1}) is a tight path with m>=3. Put L=x_0, R=x_{m-1}, P_L=(x_1,...,x_{m-1}), P_R=(x_0,...,x_{m-2}), and Q=(x_1,...,x_{m-2}).
-For every s in S there exist Hamilton paths A_s^L, A_s^R, A_s^{LR} on, respectively,
-(S-{s}) union {L}, (S-{s}) union {R}, (S-{s}) union {L,R}.
-The following are exact two-path covers of K-s:
-A_s^L | P_L,
-P_R | A_s^R,
-A_s^{LR} | Q.
-Moreover pc(K-s)=2 and every exact two-path cover of K-s has both components of order at least three.
-For every distinct s,t in S, put B=S-{s,t}. Then pc(K-{s,t})=2, and exact two-path covers of K-{s,t} include P | B, P_L | C_L, and P_R | C_R, where B has either of its two orders and C_L,C_R are any tight Hamilton orderings of the three-sets B union {L}, B union {R}.
+Put
+
+`P_L=(x_1,\ldots,x_{m-1})`, `P_R=(x_0,\ldots,x_{m-2})`, and `Q=(x_1,\ldots,x_{m-2})`.
+
+For every `s\in S` there exist Hamilton paths `A_s^L,A_s^R,A_s^{LR}` on, respectively,
+
+`(S-\{s\})\cup\{L\}`, `(S-\{s\})\cup\{R\}`, `(S-\{s\})\cup\{L,R\}`.
+
+The pairs
+
+`A_s^L\mid P_L`, `P_R\mid A_s^R`, `A_s^{LR}\mid Q`
+
+are exact two-path covers of `K-s`. Moreover every exact two-path cover of `K-s` has both components of order at least three.
+
+For distinct `s,t\in S`, put `B=S-\{s,t\}`. Then `pc(K-\{s,t\})=2`, and exact two-path covers of `K-\{s,t\}` include
+
+`P\mid B`, `P_L\mid C_L`, `P_R\mid C_R`,
+
+where `B` has either of its two orders and `C_L,C_R` are any Hamilton paths on the three-vertex sets `B\cup\{L\}` and `B\cup\{R\}`.
 
 **Proof.**
-Proof. The universal codimension-four theorem (root 1789675437.258089, proof 1789675446.826099, independently PASS_ADJUSTED) supplies Hamilton paths on all three asserted vertex sets for every s. Its proof does not use minimality: the induced subtournaments K[S∪{L}], K[S∪{R}], and K[S∪{L,R}] are non-Hamiltonian because each has a complementary nonempty subpath of P; local five-vertex edge-orderability and the four-of-six Hamiltonian-five-subset theorem then give Hamilton paths on precisely the displayed four- and five-vertex sets. The same argument is written in SHELVES/CORE/CODIMENSION_FOUR.md Proposition 2.1, though that file's surrounding setup has already performed a minimization.
+Proposition 1.1 supplies the three Hamilton paths for every `s\in S`. Each displayed pair has disjoint nonempty supports whose union is `V(K)-\{s\}`; the path `Q` is nonempty because `m>=3`. Thus each pair is a two-path cover of `K-s`.
 
-Each displayed pair of paths has disjoint nonempty supports whose union is V(K)-{s}; Q is nonempty since m>=3. If K-s were Hamiltonian, its Hamilton path and the singleton s would two-cover K. Thus pc(K-s)=2. If one component of any exact two-cover of K-s had support C of order one or two, then K[C∪{s}] would have order two or three and would be Hamiltonian; its Hamilton path and the untouched component would two-cover K. Hence both components have order at least three.
+If `K-s` were Hamiltonian, a Hamilton path on `K-s` together with the singleton path `(s)` would two-cover `K`. Hence `pc(K-s)=2`, and the displayed covers are exact.
 
-For distinct s,t, each of the last three displayed pairs partitions V(K)-{s,t}. The two-vertex support B has either ordering as a tight path vacuously, and each of the three-vertex induced subtournaments K[B∪{L}] and K[B∪{R}] is Hamiltonian by boundary antisymmetry. If K-{s,t} were Hamiltonian, its Hamilton path together with the two-vertex path (s,t) would two-cover K. Thus its path-cover number is exactly two. QED.
+Suppose an exact two-path cover of `K-s` had a component with support `C` of order one or two. Then `K[C\cup\{s\}]` has order at most three and is Hamiltonian. Replacing that component by a Hamilton path on `C\cup\{s\}` would give a spanning two-path cover of `K`, a contradiction. Thus both components have order at least three.
 
-This composition uses neither a replacement interval nor smallest-counterexample minimality. In particular, the newly audited five-vertex-complement theorems are accessible immediately by applying them to P_L with complement S∪{L}, or to P_R with complement S∪{R}. These two applications still concern the SAME ambient K, not K-L or K-R. Their hypotheses are therefore produced by endpoint truncation alone. The displayed covers are actual witnesses; no prescribed endpoint order of A_s^L,A_s^R,A_s^{LR} is asserted. New composed corollary pending independent audit.
+Now fix distinct `s,t\in S`. The set `B` has order two, so either ordering is a tight path. Each of `B\cup\{L\}` and `B\cup\{R\}` has order three and therefore has a Hamilton path. Hence the three displayed pairs are two-path covers of `K-\{s,t\}`. If `K-\{s,t\}` were Hamiltonian, a Hamilton path on it together with the two-vertex path `(s,t)` would two-cover `K`. Therefore `pc(K-\{s,t\})=2`, and all three displayed covers are exact. ∎
 
 ## 3. Five-vertex complements
 
@@ -84,7 +94,7 @@ and
 are spanning three-path covers of `K`.
 
 **Proof.**
-Proof. As above, `K[U]` is non-Hamiltonian, so Lemma 2.7 gives a set
+As above, `K[U]` is non-Hamiltonian, so Lemma 2.7 gives a set
 `A_0={w∈U:K[U-{w}] is Hamiltonian}`
 with `|A_0|>=4`.
 
@@ -105,7 +115,7 @@ and
 where `A_w^-` is a Hamilton path on `A∪{y_0}` and `A_w^+` is a Hamilton path on `A∪{y_m}`.
 
 **Proof.**
-Proof. The five-vertex complement theorem gives distinct `u,v∈U` such that, for each `w∈{u,v}`, both induced subtournaments `K[(U-{w})∪{y_0}]` and `K[(U-{w})∪{y_m}]` are Hamiltonian. Choose Hamilton paths `A_w^-` and `A_w^+` on these two sets.
+The five-vertex complement theorem gives distinct `u,v∈U` such that, for each `w∈{u,v}`, both induced subtournaments `K[(U-{w})∪{y_0}]` and `K[(U-{w})∪{y_m}]` are Hamiltonian. Choose Hamilton paths `A_w^-` and `A_w^+` on these two sets.
 
 For each such `w`, the paths `A_w^-` and `(y_1,...,y_m)` are nonempty, vertex-disjoint, and their supports partition `V(K)-{w}`; likewise `(y_0,...,y_{m-1})` and `A_w^+` are nonempty, vertex-disjoint, and partition `V(K)-{w}`. Hence the two displayed pairs are two-path covers of `K-w`.
 
@@ -118,7 +128,7 @@ Let `K` be a boundary tournament with `pc(K)>2`, let `Y=(y_0,y_1,...,y_m)` be a 
 are tight.
 
 **Proof.**
-Proof. Since `Y` is Hamiltonian and `pc(K)>2`, `K[U]` is non-Hamiltonian. Lemma 2.7 therefore gives at least four vertices `w∈U` for which `K[U-{w}]` is Hamiltonian; call their set `A_0`.
+Since `Y` is Hamiltonian and `pc(K)>2`, `K[U]` is non-Hamiltonian. Lemma 2.7 therefore gives at least four vertices `w∈U` for which `K[U-{w}]` is Hamiltonian; call their set `A_0`.
 
 The six-vertex induced subtournament `K[U∪{y_0}]` is non-Hamiltonian, because otherwise its Hamilton path together with the inherited suffix `(y_1,...,y_m)` would two-cover `K`. At least four of its five-vertex induced subtournaments are Hamiltonian. Since `K[U]` is not, at least four vertices `w∈U` make `K[(U-{w})∪{y_0}]` Hamiltonian; call this set `A_L`. The same argument at `y_m` gives a set `A_R⊆U` of order at least four.
 
