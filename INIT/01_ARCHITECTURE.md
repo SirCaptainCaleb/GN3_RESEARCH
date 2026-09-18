@@ -30,7 +30,7 @@ For legacy mathematical discovery, search `SEARCH_CORPUS.md` first, before resor
 - `SHELVES/UTILITY/` is the **utility-argument shelf**. It contains independently audited standalone mathematics that plausibly belongs in the reusable toolkit but has not yet been selected or edited into its final toolkit form.
 - `SHELVES/HOT/` is the **provisional strategic hot shelf**. It is not an audited mathematical shelf and does not confer certification. It exists to compress recent state-shaping mathematics for Astra when that material is too new, provisional, unsettled, or strategically framed to belong yet in `CORE/` or `UTILITY/`. Its operating rules are in `SHELVES/HOT/README.md`; the rolling Astra-facing file is `SHELVES/HOT/ASTRA.md`.
 - `RESEARCH_TREE.md` is the mutable top-down outline of the live proof search. It is deliberately lossy: it may be rewritten aggressively as the strategy changes because audited mathematics worth retaining has a shelf or canonical destination.
-- `TOOLKIT/README.md` indexes selected reusable mathematics. `TOOLKIT/` contains the final selected standalone mathematics worth retaining independently of the route that first produced it.
+- `TOOLKIT/README.md` is the startup-facing statement index for the toolkit and should contain every retained toolkit statement at statement-level detail. Individual files under `TOOLKIT/` contain the corresponding proofs and fuller exposition and are retrieved when needed. `TOOLKIT/` contains the final selected standalone mathematics worth retaining independently of the route that first produced it.
 
 ### Shelf admission and organization
 
