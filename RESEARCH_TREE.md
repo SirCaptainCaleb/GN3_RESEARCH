@@ -1,24 +1,29 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`.
     - If `|B|<=4`, then `|C|=1`, leaving `(|B|,|C|)=(3,1),(4,1)`.
-      - [G13] Every boundary tournament `K` with a tight path `P=(x_0,...,x_{m-1})` and four-vertex complement `S` has `pc(K)<=2`.
-        - A hypothetical counterexample has `m>=7`; write `L=x_0,u=x_1,v=x_{m-2},R=x_{m-1}`.
-        - Exterior single and pair deletions admit explicit two-path covers; endpoint truncations give five-vertex complements in the same tournament.
-        - Ordered exchange between covers of two distinct single-vertex deletions yields a spanning two-path cover.
-          - Define `G_L={s∈S:K[(S-{s})∪{L,u}] is Hamiltonian}` and `G_R={s∈S:K[(S-{s})∪{v,R}] is Hamiltonian}`; each has size at least three.
-          - For distinct `s,t∈G_L∩G_R` and each `w∈{s,t}`, compare `A_w|(x_2,...,R)` and `(L,...,x_{m-3})|B_w`, where `A_w,B_w` span the respective five-sets.
-          - Restore an omitted vertex using compatible Hamilton orders, cuts, and explicitly tight joining triples.
-          - The four support-intersection sizes are `3,2,2,m-4`; ordered attachment constraints remain additional information.
-          - A reconstruction may split or reorder `(x_2,...,x_{m-3})`.
-        - Minimality of the Hamiltonian side supplies exact two-path covers after deleting either adjacent endpoint pair.
-          - For `ε∈{L,R}`, let `D_L={L,u},D_R={v,R}` and let `F_ε` contain all exact two-path covers of `K-D_ε`.
-          - Define `W_ε={s∈G_ε:comp(T[S-{s}])>=2 for some T∈F_ε}`, using ordinary path forests.
-          - If `W_L∩W_R≠∅`, construct a spanning two-path cover from a cooperatively chosen pair of deletion covers.
-          - If `W_L∩W_R=∅`, each union is a two-set and a fixed three-subset of `S` is contiguous in every cover in the corresponding family.
-            - Construct a cover violating that universal three-vertex-block condition, or use it directly to two-cover `K`.
-        - Endpoint matching orientations and first-interior disjunctions constrain ordered reconstructions in both middle-matching cases.
-        - Every counterexample with `m>7` contains a smaller induced counterexample having a tight path with four-vertex complement.
-          - Together with a separate exclusion of `m=7`, this would close all Hamiltonian-side orders.
-      - In the `(4,1)` branch, construct a spanning two-path cover or a tight path with four-vertex complement.
+      - [G14] Prove codimension-five closure: no boundary tournament `K` with `pc(K)>2` has a Hamiltonian vertex set `Y` whose complement `F` has order five.
+        - The complement `F` is non-Hamiltonian.
+        - Use the audited five-vertex-complement family before returning to codimension-four endpoint geometry.
+          - At least two deletions `g∈F` simultaneously make `F-{g}`, `(F-{g})∪{y_0}`, and `(F-{g})∪{y_k}` Hamiltonian for a Hamilton ordering `Y=(y_0,...,y_k)`.
+          - The corresponding one-vertex-deletion tournaments have exact two-path covers with common long-side supports, and failed restoration forces endpoint and second-interior triples.
+          - Compare the multiple exact covers of the same `K-g` by literal support exchange; seek one restoration of `g` or a contradiction independent of `|Y|`.
+        - Moonshot A: prove a five-complement exchange theorem saying that the simultaneous deletion-cover family above alone forces a spanning two-path cover of `K`.
+          - Prefer a theorem stated for an arbitrary Hamiltonian set `Y` and a non-Hamiltonian five-set `F`, with no reference to a former codimension-four path.
+          - Use all available deletions and all Hamilton orderings of `Y` cooperatively rather than fixing one endpoint order.
+        - Moonshot B: prove that one synchronized deletion `g` with the three Hamiltonian short supports
+          `F-{g}`, `(F-{g})∪{y_0}`, and `(F-{g})∪{y_k}`
+          already forces a spanning two-path cover.
+          - Compare the three exact covers of `K-g` simultaneously.
+          - Internal position of `y_0` or `y_k` in a short Hamilton path should trigger a crossed-support comparison; endpoint position should yield a restoration triple.
+          - The desired output is a literal spanning two-path cover, not another endpoint-triple inventory.
+        - If codimension-five closure holds, codimension four closes immediately:
+          - a Hamilton path with four-vertex complement has an endpoint truncation that is Hamiltonian with five-vertex complement;
+          - therefore no separate `m=7,8,9,...` analysis is needed.
+        - Certified fallback if the codimension-five moonshot stalls:
+          - in the universal rigid adjacent-end-cover branch, `(u,L,R,v)` is a tight four-vertex path and the complementary induced tournament has path-cover number two;
+          - a singleton component of that residue returns directly to the five-vertex-complement problem;
+          - with two nontrivial residue components, the audited two-sided concatenation theorem blocks one whole end and converts any blocked component endpoint in the four-set into a reversed joining triple.
+          - use the outer-endpoint deletion family and fixed common omissions only as consumers of this `4 + 2`-cover structure, not as an `m`-indexed case ladder.
+      - In the `(4,1)` branch, construct a spanning two-path cover or a tight path with four-vertex complement, then invoke G14.
     - If `|B|>=5`, construct a spanning two-path cover or a lexicographically larger spanning three-path cover.
       - Seek an augmentation principle allowing multiple cuts, both ends, and reordered paths.
