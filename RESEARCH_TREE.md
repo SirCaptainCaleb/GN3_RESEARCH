@@ -10,7 +10,7 @@
           - Establish and exploit the two-vertex endpoint extensions `(S-{s})∪{x_0,x_1}` and `(S-{s})∪{x_{m-2},x_{m-1}}` for every `s∈S`.
           - Convert failed restoration of `s` into endpoint barriers at successive path edges; do not reverse a tight path without proof.
         - Minimize the Hamiltonian side when deletion from `P` is needed.
-          - Exact two-path covers exist after deleting the first adjacent pair `{x_0,x_1}` and the last adjacent pair `{x_{m-2},x_{m-1}`.
+          - Exact two-path covers exist after deleting the first adjacent pair `{x_0,x_1}` and the last adjacent pair `{x_{m-2},x_{m-1}}`.
           - For each end-pair cover, use all four Hamiltonian sets `D∪(S-{s})` simultaneously.
           - Prove and exploit that at least two omissions `s∈S` have both at least two cut crossings and at least two `S-{s}` path blocks.
         - Compare the two ends rather than accumulating one-ended obstructions.
