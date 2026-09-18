@@ -145,7 +145,7 @@ If `(w,y_1,y_2)` were tight, then `(w,y_1,y_2,...,y_m)` together with a Hamilton
 The three preceding propositions apply directly in `K` to the endpoint truncations `P_L=(x_1,\ldots,x_{m-1})` and `P_R=(x_0,\ldots,x_{m-2})`, whose complements are `S\cup\{L\}` and `S\cup\{R\}`, respectively. Proposition 3.1 applies when the original path has `m>=3`, Proposition 3.2 when `m>=4`, and Proposition 3.3 when `m>=5`.
 
 **Proof.**
-Both truncations are inherited Hamilton tight paths on their vertex sets, and their vertex complements in the same ambient tournament `K` are exactly the two displayed five-sets. ∎
+Both truncations are inherited Hamilton tight paths on their vertex sets, and their vertex complements in the same ambient tournament `K` are exactly the two displayed five-sets. Each truncation has order `m-1`, so when it is written as `(y_0,...,y_k)` one has `k=m-2`. Thus the hypotheses `k>=1`, `k>=2`, and `k>=3` in Propositions 3.1, 3.2, and 3.3 correspond exactly to `m>=3`, `m>=4`, and `m>=5`. ∎
 
 ## 4. A five-vertex endpoint construction
 
