@@ -1,18 +1,20 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting an extremal spanning three-path cover `A|B|C`, `|A|>=|B|>=|C|`.
     - If `|B|<=4`, then `|C|=1`, leaving `(3,1)` and `(4,1)`.
-      - [G08] Exclude a counterexample having a Hamiltonian vertex set of codimension four.
-        - Apply the audited minimal-Hamiltonian-side reduction to obtain `K`, a Hamilton path `Y=(L,Q,R)`, and four-vertex complement `S`.
-        - Combine exact two-covers of `K-L`, `K-R`, and `K-{L,R}` with Hamilton paths on `{L,R} union (S-{s})` for every `s in S`.
-          - Construct a spanning two-cover; a Hamilton path on `Q union {s}` for any `s` suffices.
-          - For descent, fix `K,L,R` and minimize `delta=|E_T(S,Q)|` jointly over Hamilton paths of codimension four from `L` to `R` and exact two-covers `T` of `K-{L,R}`.
-          - Produce a complete two-cover, a path longer than `|V(K)|-4`, or another admissible pair with strictly smaller `delta`.
-        - Prove compatibility of the joining triples before using an interval replacement.
-          - A tight replacement `(x,B,y)` also needs `(p,x,first(B))` and `(last(B),y,q)` when the retained predecessor `p` and successor `q` exist.
-          - Use failed joining triples in a complete alternative construction; preserving an ordered pair at each boundary permits inheritance.
-          - Apply cardinality and complement arguments only after the whole replacement path is tight.
-        - Use crossing edges, changed intersection orders, and proper tight cycles only through a spanning construction or a proved strict decrease.
-        - Keep the five-vertex-complement comparison conditional on constructing its complementary Hamilton path.
+      - [G09] Exclude a counterexample `K` with a tight path `P=(L,Q,R)` and four-vertex complement `S`.
+        - Compare explicit covers after deleting vertices of `S`.
+          - For every `s in S`, the sets `S-s+L`, `S-s+R`, and `S-s+L+R` are Hamiltonian.
+          - Pair their Hamilton paths with `P-L`, `P-R`, and `Q`, respectively, to obtain three exact two-covers of `K-s`.
+          - For every pair `s,t in S`, compare these with the exact cover `P | (S-{s,t})` of `K-{s,t}` and its endpoint-transfer variants.
+          - Every component of an exact two-cover of `K-s` has order at least three.
+        - Restore deleted vertices through compatible path orders to obtain a spanning two-cover.
+          - A Hamilton path on `(V(P)-{L})+{s}`, `(V(P)-{R})+{s}`, or `V(Q)+{s}` suffices, since its complementary four- or five-set is Hamiltonian.
+          - Allow reordered paths and multiple cuts; verify every new consecutive triple.
+        - Apply five-vertex-complement theorems directly to `P-L` and `P-R` in the same ambient `K`.
+          - Use additional simultaneous deletion covers or endpoint triples only where they advance the spanning construction.
+        - Retain minimal-Hamiltonian-side reduction for deletions inside `P` when those extra covers are needed.
+          - Use fixed-endpoint crossing-count descent only with an explicit strictly decreasing admissible modification.
+        - Require both boundary joining triples before any interval replacement or resulting cardinality argument.
       - In `(4,1)`, construct a spanning two-path cover or a tight path of order `n-4`.
     - For `|B|>=5`, construct a two-cover or a three-cover with lexicographically larger sorted component orders.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
