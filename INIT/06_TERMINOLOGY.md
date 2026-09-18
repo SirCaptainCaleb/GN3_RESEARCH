@@ -1,6 +1,6 @@
 # 06 — GN3 terminology registry
 
-This file is the authoritative registry for **project-coined mathematical terminology** in GN3.
+This file is the authoritative registry for **project-coined mathematical terminology** in GN3. The structural rules for live message placement, standalone statement form, and repair are in `07_COMMUNICATION_STANDARD.md`.
 
 It applies to all current mathematical communication: Slack research roots and replies, guidance, audit discussion, the research tree, the proof spine, and the toolkit. It does not rewrite historical material under `ARCHAEOLOGY/`.
 
