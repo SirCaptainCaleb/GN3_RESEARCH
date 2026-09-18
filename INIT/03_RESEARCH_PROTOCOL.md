@@ -21,39 +21,13 @@ When a route stalls, distinguish:
 
 Only the first three justify abandoning or materially revising the abstraction. Failure to find a proof does not refute it.
 
-## Guidance and Slack research roots
+## Guidance and research waves
 
 The ordinary strategic question is: **what is the earliest statement in the shortest currently favored proof that we cannot justify?** That statement is the Director default target. Alternative abstractions remain useful when they could bypass the gap, yield a stronger parent theorem, or simplify the global picture.
 
-Each Director research wave receives a monotonically increasing tag `[G##]`. The guidance root lives in `#gn3-guidance` and states the mathematical target and enough context to explain why it matters.
+Each Director research wave receives a monotonically increasing tag `[G##]`. The guidance root lives in `#gn3-guidance`; researchers responding to that guidance post each mathematical discovery as a top-level `#gn3-research` message with the same tag.
 
-Researchers responding to that guidance post each discovery as a top-level `#gn3-research` message prefixed by the same `[G##]`.
-
-### Hard root-message invariant
-
-A top-level message in `#gn3-research` is a **mathematical headline only**. It states exactly what was proved, disproved, obstructed, or otherwise established. The root contains only the mathematical assertion itself: the minimum hypotheses and notation required to state it, any mathematically necessary cases or formulas, and the conclusion.
-
-If every reply to the root were deleted, the root should read like a theorem, lemma, proposition, counterexample statement, obstruction statement, or precise null statement — **not** like a research note.
-
-The following material is forbidden in a research root and belongs in replies:
-
-- proofs, derivations, proof sketches, forcing chains, case analysis, computations, certificates, or explanation of why the assertion is true;
-- motivation, strategic interpretation, “why this matters,” route discussion, comparison with earlier work, dependency commentary, or suggested next steps;
-- audit status, provenance, archaeology, citations used as justification, implementation notes, worker coordination, or commentary about how the result was found;
-- summaries of several related discoveries when they can instead be posted as separate exact mathematical statements;
-- explanatory paragraphs before or after the mathematical assertion.
-
-A root may be long only when the **statement itself** genuinely requires that much mathematical data. Length never licenses proof, commentary, logic, or research narration in the root. Conversely, do not weaken or make a statement ambiguous merely to keep it short.
-
-All supporting material goes in the thread. The normal shape is therefore:
-
-`[G##] <exact mathematical statement>`
-
-followed by one or more replies containing proof, derivation, qualifications, motivation, strategic consequences, and discussion.
-
-This is a **hard communication invariant, not a style preference**. Before posting, the researcher must remove every sentence that is not part of the exact mathematical assertion and place it in a reply instead. If a researcher posts a violating root, that researcher must immediately edit the root down to the headline statement and move the removed material into the thread. Do not leave an oversized root in place as a historical record; Slack edit history is sufficient. The Vice Director may perform this shape-only cleanup when encountered, provided the mathematical claim itself is not changed.
-
-A precise obstruction or null result may itself be the root statement, but the supporting analysis still belongs in replies.
+The complete root/reply contract, standalone-compilability requirements, correction/retraction rules, and communication-hygiene authority are governed by `07_COMMUNICATION_STANDARD.md`. Do not duplicate those rules here.
 
 The `[G##]` tag is administrative retrieval metadata, not mathematical notation, theorem identity, or provenance inside canonical mathematics.
 
