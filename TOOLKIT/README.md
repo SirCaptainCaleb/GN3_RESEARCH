@@ -44,7 +44,7 @@ Exterior vertices relative to a fixed three-vertex set admit the stated match-se
 
 ### [Four-vertex structure and fifth-vertex extensions](FOUR_VERTEX_STRUCTURE.md)
 
-Two parallel turns on a non-Hamiltonian four-set force one of two matching-block edge orders; the cyclic non-Hamiltonian four-vertex configuration is extended by every fifth vertex; non-Hamiltonian fifth-vertex extensions of an edge-ordered non-Hamiltonian four-set satisfy the stated extreme- and middle-matching restrictions; the ordered two-vertex extension consequence and the `3/5` four-subset density bound hold. The matching-block classification is sourced from `SMALL_ORDER_HAMILTONICITY.md`.
+Two tight triples with a common first ordered pair on a non-Hamiltonian four-set force one of two matching-block edge orders; the cyclic non-Hamiltonian four-vertex configuration is extended by every fifth vertex; non-Hamiltonian fifth-vertex extensions of an edge-ordered non-Hamiltonian four-set satisfy the stated extreme- and middle-matching restrictions; the ordered two-vertex extension consequence and the `3/5` four-subset density bound hold. The matching-block classification is sourced from `SMALL_ORDER_HAMILTONICITY.md`.
 
 ## Path-cover manipulation
 
