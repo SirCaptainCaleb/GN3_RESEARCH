@@ -14,7 +14,7 @@ There is no project-wide audit frontier, no requirement that research results ca
 
 ## What an audit certifies
 
-An audit batch may contain several **exact mathematical targets**: stated theorems, lemmas, proof sections, proposed canonical rewrites, or other explicitly delimited texts. GitHub placement, downstream use, recency, and agreement among researchers do not certify mathematics.
+An audit batch may contain several **exact mathematical targets**: stated theorems, lemmas, proof sections, proposed core- or utility-shelf candidates, proposed canonical rewrites, or other explicitly delimited texts. GitHub placement, downstream use, recency, and agreement among researchers do not certify mathematics.
 
 Each audit batch is owned by **one independent Auditor**. The Auditor must be independent of the authorship of the incoming exact text being audited. The Auditor may exploit shared definitions, dependencies, or context across the batch, and may choose a sensible internal order of verification. Routine batches should not be duplicated in parallel or split among several auditors merely for throughput. If a batch is genuinely too large for one coherent audit, the Vice Director decides explicitly how to divide it without losing necessary whole-object or cross-dependency verification.
 
@@ -35,6 +35,14 @@ Research does not pause while audit or repair is underway. Researchers may conti
 ### Mathematical-language and terminology compliance
 
 Audit includes compliance with `02_MATHEMATICAL_LANGUAGE.md` and the controlled vocabulary in `06_TERMINOLOGY.md`. An otherwise correct argument that uses forbidden or unregistered GN3 shorthand should be rewritten into explicit mathematical language before certification. A terminology-only rewrite that leaves hypotheses, conclusions, formulas, and logical dependencies unchanged is normally a localized editorial repair; if replacing the term exposes ambiguity about the mathematical object actually meant, the Auditor must resolve that ambiguity rather than treating the change as cosmetic.
+
+### Shelf-candidate certification
+
+A mathematical file may enter `SHELVES/CORE/` or `SHELVES/UTILITY/` only after an independent Auditor has certified the **exact composed candidate**. Previously certified ingredients do not by themselves certify a new merged exposition, changed dependency order, new connective argument, or rewritten theorem statement.
+
+The preferred workflow is to place a shelf candidate outside the admitted shelf—normally in a Slack audit attachment/message sequence or on a temporary Git branch—then audit that exact revision. After `PASS` or `PASS_ADJUSTED`, the certified exact text may be copied to the corresponding shelf on the main branch. If the copy is byte-for-byte identical apart from repository location, no second audit is needed. If it is edited while being copied, audit the edited exact text instead.
+
+An admitted shelf file remains certified only at its audited mathematical revision. Any mathematical edit must be drafted and audited before replacing that revision. Purely mechanical repository moves that preserve the exact file contents do not alter certification.
 
 ## Dependencies
 
@@ -65,7 +73,7 @@ If independent verification begins producing large output with little additional
 
 ## Propagation after audit
 
-A PASS or PASS_ADJUSTED does not itself rewrite canonical project state. The Vice Director decides how the certified mathematics affects the favored route and whether it should enter the proof spine or toolkit. When certification changes durable mathematics, update the appropriate canonical text and record the high-signal delta in `#gn3-changelog`. Preserve provenance only when it materially improves recoverability or future audit.
+A PASS or PASS_ADJUSTED does not itself rewrite project state. The Vice Director decides how the certified mathematics affects the favored route, whether it should be incorporated into an audited core- or utility-shelf composition, and later whether a shelf argument should enter the proof spine or toolkit. When certification changes durable mathematics, update the appropriate canonical text and record the high-signal delta in `#gn3-changelog`. Preserve provenance only when it materially improves recoverability or future audit.
 
 There is no separate `STATUS.md`, project-wide audit ledger, chronological audit frontier, or research-headline status system. Current proof openness is visible in the proof spine. The live abstraction and the set of audit-relevant dependencies are managed by the Vice Director through the Director cycle. Exact certification of audited targets is recorded in the corresponding batch audit thread and, when mathematics becomes durable, in the canonical revision that incorporates it.
 
