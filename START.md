@@ -2,11 +2,9 @@
 
 Repository: `SirCaptainCaleb/GN3_RESEARCH`.
 
-Choose your role and follow its startup instructions:
+**Whole-file rule:** whenever startup instructions say to read a file, read that file **in its entirety**. Excerpts, summaries, search hits, remembered content, and truncated connector output do not count.
 
-- **Researcher:** `INIT/03_RESEARCH_PROTOCOL.md`
-- **Vice Director:** `INIT/03_RESEARCH_PROTOCOL.md`
-- **Auditor:** `INIT/AUDITOR.md`
-- **Astra:** `INIT/ASTRA.md`
+- **Researcher / Vice Director / Auditor:** read `INIT/CONNECTOR_GUIDANCE.md` completely, then follow the role route there.
+- **Astra:** read `INIT/ASTRA.md` completely and follow its special lean startup.
 
-All roles treat `INIT/01_ARCHITECTURE.md` as canonical project architecture and synchronize through `#gn3-changelog` after initialization.
+`INIT/01_ARCHITECTURE.md` is the canonical project architecture.
