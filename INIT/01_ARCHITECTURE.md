@@ -2,7 +2,7 @@
 
 **Status: CANONICAL.**
 
-This file defines only the durable project topology and authority model. Mathematical-language rules are in `02_MATHEMATICAL_LANGUAGE.md`; research operation, structural synthesis, conceptual ascent, and Director behavior are in `03_RESEARCH_PROTOCOL.md`; certification and audit are in `04_AUDIT_PROTOCOL.md`; computation discipline is in `05_COMPUTATION_DISCIPLINE.md`; and the controlled project terminology registry is in `06_TERMINOLOGY.md`. Every numbered init file is mandatory startup context through `START.md`.
+This file defines only the durable project topology and authority model. Mathematical-language rules are in `02_MATHEMATICAL_LANGUAGE.md`; research operation, structural synthesis, conceptual ascent, and Director behavior are in `03_RESEARCH_PROTOCOL.md`; certification and audit are in `04_AUDIT_PROTOCOL.md`; computation discipline is in `05_COMPUTATION_DISCIPLINE.md`; the controlled project terminology registry is in `06_TERMINOLOGY.md`; and live communication shape, self-containment, placement, and repair are in `07_COMMUNICATION_STANDARD.md`. Every numbered init file is mandatory startup context through `START.md`.
 
 ## Authority and namespace
 
@@ -63,6 +63,6 @@ The project deliberately separates live search, structural synthesis, conceptual
 
 ## Maintenance
 
-Keep the numbered init set small, explicit, and nonredundant. When a policy belongs to mathematical writing, research operation, structural synthesis, conceptual ascent, or audit, put it in the corresponding numbered file rather than duplicating it here. When a newer explicit rule conflicts with older wording elsewhere, the newer rule should be consolidated into the appropriate numbered init document and the duplicate removed.
+Keep the numbered init set small, explicit, and nonredundant. When a policy belongs to mathematical writing, research operation, structural synthesis, conceptual ascent, audit, terminology, or live communication, put it in the corresponding numbered file rather than duplicating it here. When a newer explicit rule conflicts with older wording elsewhere, the newer rule should be consolidated into the appropriate numbered init document and the duplicate removed.
 
 Because initialization is one-time, changelog completeness is a durability requirement. A material change to `START.md`, the numbered init policies, the canonical proved/open boundary, or another durable fact that an already-initialized worker must know to work safely must be surfaced in `#gn3-changelog`. The changelog entry either states the usable delta or tells workers exactly what must be reread; if full reinitialization is genuinely required, it says so explicitly.
