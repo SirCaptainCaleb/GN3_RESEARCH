@@ -1,29 +1,29 @@
 - Every boundary tournament has path-cover number at most two.
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`.
     - If `|B|<=4`, then `|C|=1`, leaving `(|B|,|C|)=(3,1),(4,1)`.
-      - [G11] Exclude a boundary tournament `K` with `pc(K)>2` having a Hamilton tight path `P=(x_0,...,x_{m-1})` with four-vertex complement `S`.
-        - Reduce immediately to `m>=7`.
-          - The proof-spine small-order theorem excludes every boundary tournament of order at most ten with path-cover number greater than two.
-        - Use the universal four-complement structure before invoking minimality.
-          - `K[S]`, `K[S∪{x_0}]`, `K[S∪{x_{m-1}}]`, and `K[S∪{x_0,x_{m-1}}]` are non-Hamiltonian.
-          - Deleting any `s∈S` gives explicit exact two-path covers from the Hamiltonian four- and five-vertex complements.
-          - Establish and exploit the two-vertex endpoint extensions `(S-{s})∪{x_0,x_1}` and `(S-{s})∪{x_{m-2},x_{m-1}}` for every `s∈S`.
-          - Convert failed restoration of `s` into endpoint barriers at successive path edges; do not reverse a tight path without proof.
-        - Minimize the Hamiltonian side when deletion from `P` is needed.
-          - Exact two-path covers exist after deleting the first adjacent pair `{x_0,x_1}` and the last adjacent pair `{x_{m-2},x_{m-1}}`.
-          - For each end-pair cover, use all four Hamiltonian sets `D∪(S-{s})` simultaneously.
-          - Prove and exploit that at least two omissions `s∈S` have both at least two cut crossings and at least two `S-{s}` path blocks.
-        - Compare the two ends rather than accumulating one-ended obstructions.
-          - If a complement vertex is useful for both end-pair covers, turn the two descriptions into an explicit spanning two-path cover.
-          - If the two useful omission sets are disjoint, they partition `S` into two pairs; compare that partition with the intrinsic middle matching and the two endpoint matching profiles.
-          - Use arbitrary Hamiltonian reorderings of one-end truncations only to improve this comparison; every replacement must check its joining triples explicitly.
-        - Treat `m=7` as the first collision case.
-          - Then `|V(K)|=11`, so every proper induced subtournament has path-cover number at most two.
-          - In each endpoint matching profile, combine the resulting deletion covers with the five-vertex residues forced by explicit endpoint/complement paths.
-          - Close with a literal spanning two-path cover; do not import the obsolete order-six analysis.
-        - For `m>=8`, seek one parent end-pair comparison theorem that yields a spanning two-path cover or a strict contradiction to minimality of the Hamiltonian side.
-          - Use the order-independent endpoint barriers only as inputs to that theorem.
-          - Do not extend crossing-edge, failed-seam, or endpoint-triple inventories unless the next statement consumes them in the spanning construction.
+      - [G12] Exclude a boundary tournament `K` with `pc(K)>2` having a Hamilton tight path `P=(x_0,...,x_{m-1})` with four-vertex complement `S`.
+        - Use `m>=7` only as a domain restriction.
+          - The proof-spine small-order theorem excludes order at most ten.
+          - Do not organize the proof as `m=7,8,9,...` or propagate a local obstruction one vertex deeper merely because the path is longer.
+        - Use the admitted universal shelf `SHELVES/CORE/CODIMENSION_FOUR_EXTERIOR_DELETIONS.md`.
+          - The four-complement structure and explicit exact covers after deleting one or two vertices of `S` are uniform in `m`.
+          - Endpoint truncation gives five-vertex-complement tools in the same ambient tournament.
+          - The certified G09 arbitrary-reordering theorem gives three good omissions at each end and at least two common two-layer endpoint obstructions; no all-four endpoint-extension claim is available.
+        - Primary target: one uniform two-ended absorption/comparison theorem for every `m>=7`.
+          - Let `M_mid` be the intrinsic middle matching of `S`; let `E_L` be its edge outgoing at `x_0`, and `E_R` its edge incoming at `x_{m-1}`.
+          - Pending G12 research root `1789707036.443539` compresses both endpoint-matching cases into the same first-interior two-seam disjunction.
+          - Compare the two ends simultaneously and consume the resulting alternatives in a literal spanning two-path cover or a strict contradiction to the minimal Hamiltonian side.
+          - The finite distinction `E_L=E_R` versus `E_L!=E_R` is structural and independent of `m`; it may be used internally without creating an order-by-order proof.
+          - Arbitrary Hamiltonian reordering is useful only if it changes the global comparison; every replacement must check both joining triples explicitly.
+        - Keep deletions from the long path as a reserve, not the parent route.
+          - The abstract all-four counting theorem at research root `1789705229.101719` is certified, but its intended codimension-four application was invalidated when the all-four endpoint-extension theorem was retracted.
+          - Use minimal-Hamiltonian-side exact covers only when a concrete cut-and-join construction or strict descent consumes them.
+        - Treat `m=7` only as a diagnostic/testbed.
+          - Order eleven supplies extra deletion freedom, so a uniform lemma may be tested there.
+          - Do not make closure of `m=7` a prerequisite for the general case, and do not continue order-eleven microcase work unless it yields a statement that survives arbitrary `m`.
+        - Avoid intact-middle normalization.
+          - Legacy R904 shows the local endpoint-core data alone can coexist with Hamiltonian examples of every order while forbidding every two-cover that keeps the middle rail intact.
+          - Any successful consumer must use additional deletion/minimality information or allow splitting/rearranging the middle.
       - In the `(4,1)` branch, construct a spanning two-path cover or a Hamilton tight path with four-vertex complement.
     - If `|B|>=5`, construct a spanning two-path cover or a lexicographically larger spanning three-path cover.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
