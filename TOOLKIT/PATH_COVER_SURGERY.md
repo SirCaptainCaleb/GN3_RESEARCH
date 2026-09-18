@@ -1,4 +1,4 @@
-# Path-cover surgery lemmas
+# Path-cover modification lemmas
 
 ## 1. Crossing forced by an absorbable deletion
 
@@ -59,7 +59,7 @@ components.
 
 which rearranges to the formula. ∎
 
-## 5. Two-ended Hamilton splice
+## 5. Joining two path-cover components through a Hamilton path
 
 Let `X,Y` partition `V(H)`, and suppose `Y` has an exact two-path cover
 
@@ -139,4 +139,4 @@ is tight.
 
 If `a=1` and `pc(H)>k`, then `pc(H)>=k+1`, so `b_C(T)>=k`. If there is exactly one `S-C` edge in `T`, cutting it produces exactly `k+1` monochromatic blocks. There is at least one `S`-block and at least `k` `C`-blocks, so there is exactly one `S`-block and exactly `k` `C`-blocks. The asserted form of `T` follows.
 
-Suppose the unique crossing is `x,y` with `x in S`, `y in C`, and let `Q` be a Hamilton path of `H[D union S]` ending with `(p,x)`. Replace the unique `S`-block of the mixed component of `T` by `Q`, leaving the adjacent `C`-block and every other component unchanged. If `(p,x,y)` were tight, these `k` paths would cover `H`, contradicting `pc(H)>k`. Hence `(p,x,y)` is not tight, so boundary antisymmetry gives `(y,x,p)`. The other orientation is identical after reversing the role of the splice. ∎
+Suppose the unique crossing is `x,y` with `x in S`, `y in C`, and let `Q` be a Hamilton path of `H[D union S]` ending with `(p,x)`. Replace the unique `S`-block of the mixed component of `T` by `Q`, leaving the adjacent `C`-block and every other component unchanged. If `(p,x,y)` were tight, these `k` paths would cover `H`, contradicting `pc(H)>k`. Hence `(p,x,y)` is not tight, so boundary antisymmetry gives `(y,x,p)`. The other orientation is identical after reversing the order of the replacement. ∎
