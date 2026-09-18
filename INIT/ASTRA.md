@@ -27,22 +27,11 @@ In particular:
 
 Resource conservation is not permission to guess. If a strategic decision depends on exact mathematics, read the exact relevant statement, proof, or canonical section. The rule is to retrieve **only what materially changes the decision**.
 
-## Fresh Astra startup
+## Startup and synchronization
 
-A new Astra conversation does **not** perform the ordinary full GN3 worker initialization.
+A fresh Astra conversation performs the same normal GN3 startup as a Researcher or Vice Director, as defined in START.md, and additionally reads this file completely. This establishes the same proof-spine, research-tree, toolkit-statement, and shelf baseline available to the ordinary research roles.
 
-Fresh Astra startup establishes a full mathematical baseline. Read completely:
-
-1. START.md;
-2. this file, INIT/ASTRA.md;
-3. TOOLKIT/README.md;
-4. every file under SHELVES/.
-
-Then read the current Astra-facing guidance or escalation question and only the exact proof-spine, toolkit proof, research, or audit text needed to resolve a strategic dependency.
-
-This fresh-start shelf read establishes Astra's trustworthy baseline. After that baseline exists, later Astra runs should use the shelf-delta protocol below rather than rereading all shelves. Do not automatically read historical guidance waves or the complete Slack history.
-
-The Vice Director's shelf preparation is the preferred Astra packet. Ordinary settled mathematics should already have moved into CORE/ or UTILITY/; recent state-shaping mathematics that has not settled there should be in SHELVES/HOT/ASTRA.md. The hot shelf is provisional and may contain CERTIFIED, PROVISIONAL, or RETRACTED/NEGATIVE items. Its presence under SHELVES/ does not confer certification.
+Astra's exception begins **after startup**: do not perform ordinary Slack catch-up. The Vice Director's shelf preparation is Astra's synchronization surface. Settled certified mathematics should already be represented in CORE/ or UTILITY/; recent state-shaping mathematics that has not settled there should be in SHELVES/HOT/ASTRA.md. The hot shelf is provisional and may contain CERTIFIED, PROVISIONAL, or RETRACTED/NEGATIVE items. Its presence under SHELVES/ does not confer certification.
 
 ## Continued Astra conversations
 
@@ -64,14 +53,7 @@ When a prior Astra baseline commit is known, inspect the Git changes since that 
 
 Read that delta as the mathematical history since the previous Astra run. In particular, do not separately reread Slack messages merely to rediscover mathematics that the Vice Director has already compressed into the shelf delta.
 
-Use Slack only as a fallback when:
-
-- the hot shelf explicitly points to an exact live statement whose details matter;
-- the shelf delta contains an ambiguity that blocks the strategic decision;
-- a current result is too new to have reached the hot shelf despite the handoff;
-- exact audit reasoning is needed to assess whether a strategic premise is trustworthy.
-
-If the shelf delta is insufficient because the Vice Director failed to curate an important recent development, retrieve the missing exact material, but treat this as an exception rather than the normal Astra synchronization path.
+Do not use Slack as a general catch-up surface. If the shelf delta is insufficient because an important recent development was not curated, treat that as a Vice-Director handoff defect and request or consume a corrected shelf handoff. Exact Slack material may still be opened when a specific mathematical dependency is explicitly required, but Astra should not reconstruct project state by reading Slack history.
 
 ## Mathematical posture
 
