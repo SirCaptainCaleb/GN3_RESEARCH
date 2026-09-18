@@ -343,7 +343,7 @@ Therefore exactly one match set is `∅`. The other two are disjoint nonempty me
 
 `{a}`, `{c}`, `{a,b}`, `{b,c}`, `{a,b,c}`.
 
-Three nonempty pairwise disjoint signatures would have to be `{a},{b},{c}`, but `{b}` is not in the list. After naming the `∅`-signature vertex `x` and ordering `y,z`, only the following three cases remain:
+Three nonempty pairwise disjoint match sets would have to be `{a},{b},{c}`, but `{b}` is not in the list. After naming the vertex `x` with empty match set and ordering `y,z`, only the following three cases remain:
 
 `I. M(x)=∅, M(y)={a}, M(z)={c};`
 
