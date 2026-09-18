@@ -23,7 +23,7 @@ Now let \`D\subset Y\` satisfy the hypotheses of the third assertion. Since \`Y-
 
 Suppose an exact two-path cover of \`K-D\` had a singleton component \`(w)\`. The set \`D\cup\{w\}\` has order at most three and is therefore Hamiltonian. Replacing the singleton by a Hamilton path on \`D\cup\{w\}\` would again give a spanning two-path cover of \`K\`, a contradiction. Thus both components of every exact two-path cover of \`K-D\` have order at least two. ∎
 
-For the remainder of this section fix such a minimal set \`Y\`, write \`m=|Y|\`, and let \`Y=(x_0,x_1,\ldots,x_{m-1})\` be any Hamilton ordering. Put \`L=x_0\` and \`R=x_{m-1}\`.
+For the remainder of this section fix such a minimal set \`Y\`, write \`m=|Y|\`, and let \`Y=(x_0,x_1,\ldots,x_{m-1})\` be any Hamilton ordering. Put \`L=x_0\` and \`R=x_{m-1}\`. For \`0<=i<=j<=m-1\`, write \`Y[i,j]=(x_i,\ldots,x_j)\`.
 
 ## 2. The four-vertex complement
 
@@ -75,7 +75,7 @@ The six-set \`E=S\cup D\` is non-Hamiltonian, since otherwise a Hamilton path on
 
 For every \`s\in G_D\`, \`TOOLKIT/PATH_COVER_SURGERY.md\` Section 1, applied with deleted set \`D\` and side \`C_s\`, gives \`\tau_s\ge1\`.
 
-Let \`\delta\` be the number of ordinary edges of \`T\` crossing \`S|(Y-D)\`, and let \`d_S(s)\`, \`d_Y(s)\` be the numbers of neighbors of \`s\` in \`S\` and \`Y-D\`, respectively, in the ordinary path forest of \`T\`. Since \`K[S]\` is non-Hamiltonian while \`Y-D\` is a tight path, \`\delta\ge1\`. Moving \`s\` across the partition gives
+We have \`\delta\ge1\`. Indeed, if \`\delta=0\`, each component of the exact two-path cover \`T\` lies entirely in one side of the nonempty partition \`S|(Y-D)\`. Since both sides are nonempty and \`T\` has exactly two components, one component spans \`S\`, making \`K[S]\` Hamiltonian, a contradiction. Moving \`s\` across the partition gives
 \`\tau_s=\delta-d_Y(s)+d_S(s)\`.
 
 At most two vertices of \`S\` satisfy \`\tau_s=1\`. If \`\delta=1\`, cutting the unique crossing edge leaves three blocks; at least two lie in \`S\`, so \`T[S]\` has exactly two blocks. A vertex not incident with the crossing edge and satisfying \`\tau_s=1\` must have \`d_S(s)=0\`, hence is an isolated \`S\`-block, and there is at most one such vertex besides the crossing endpoint. If \`\delta=2\`, the equality \`\tau_s=1\` forces \`(d_Y(s),d_S(s))=(1,0)\`, so at most two vertices qualify. If \`\delta=3\`, it forces \`(2,0)\`, so at most one qualifies. If \`\delta\ge4\`, then \`\tau_s\ge\delta-2\ge2\` because every vertex has ordinary degree at most two.
@@ -97,6 +97,7 @@ Assume now that \`m\ge4\`.
 ### Proposition 4.1
 
 There are \`s\in S\` and a Hamilton ordering \`M=(m_0,\ldots,m_4)\` of \`\{L,R\}\cup(S-\{s\})\` such that one of the following holds.
+For \`0<=i<=j<=4\`, write \`M[i,j]=(m_i,\ldots,m_j)\`; when \`i>j\`, take \`M[i,j]\` to be the empty sequence.
 
 1. \`L=m_p\` for some \`p\in\{0,3,4\}\`, and the two vertex sequences \`M[0,p](x_1,\ldots,x_{m-2})\` and \`(s)M[p+1,4]\`, with empty pieces omitted, partition \`V(K)\` and have exactly one non-tight consecutive triple.
 2. \`R=m_q\` for some \`q\in\{0,1,4\}\`, and the two vertex sequences \`M[0,q-1](s)\` and \`(x_1,\ldots,x_{m-2})M[q,4]\`, with empty pieces omitted, partition \`V(K)\` and have exactly one non-tight consecutive triple.
