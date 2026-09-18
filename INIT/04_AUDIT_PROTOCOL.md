@@ -52,6 +52,8 @@ The audit response should name unresolved dependencies clearly. The Vice Directo
 
 ## `#gn3-audit` structure
 
+The general root/reply placement and live-message repair rules are governed by `07_COMMUNICATION_STANDARD.md`. The audit-specific contract is as follows.
+
 Each Vice-Director batch gets one concise top-level audit root identifying the batch and enumerating or linking its exact targets. Prefer GitHub paths plus commit or blob coordinates for repository text; for Slack mathematics, link the exact research roots/threads and state the scope being audited. Retain the `[G##]` tag when useful for retrieval.
 
 Detailed verification, derivations, counterexamples, objections, exact proposed repairs, author responses, dependency notes, and discussion belong in replies to the batch root. The Auditor may organize replies itemwise when useful. When a localized repair is made directly to a Slack or repository target, the audit reply should identify the new exact message or revision. When a substantial repair is authored by the Auditor, the audit reply should state plainly that second-auditor verification is required. The final batch response gives a separate disposition for every exact target and names the exact revision or Slack statement to which each disposition applies. That thread is the record of the certification event; the Vice Director consumes the results during synthesis and updates the live strategy or canonical candidates as needed.
