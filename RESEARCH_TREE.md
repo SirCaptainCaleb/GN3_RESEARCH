@@ -5,7 +5,7 @@
         - Compare explicit covers after deleting vertices of `S`.
           - For every `s in S`, the sets `S-s+L`, `S-s+R`, and `S-s+L+R` are Hamiltonian.
           - Pair their Hamilton paths with `P-L`, `P-R`, and `Q`, respectively, to obtain three exact two-covers of `K-s`.
-          - For every pair `s,t in S`, compare these with the exact cover `P | (S-{s,t})` of `K-{s,t}` and its endpoint-transfer variants.
+          - For every pair `s,t in S`, compare these with the exact cover `P | (S-{s,t})` of `K-{s,t}` and the covers moving `L` or `R` to the remaining pair.
           - Every component of an exact two-cover of `K-s` has order at least three.
         - Restore deleted vertices through compatible path orders to obtain a spanning two-cover.
           - A Hamilton path on `(V(P)-{L})+{s}`, `(V(P)-{R})+{s}`, or `V(Q)+{s}` suffices, since its complementary four- or five-set is Hamiltonian.
