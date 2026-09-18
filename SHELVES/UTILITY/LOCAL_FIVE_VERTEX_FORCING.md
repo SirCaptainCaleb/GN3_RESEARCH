@@ -4,7 +4,7 @@
 
 ### Proposition 1.1
 
-Let \`X=(x_0,\ldots,x_{m-1})\` be a tight path, let \`0\le i\le m-3\`, and let \`s,t\` be distinct vertices outside \`X\`. Suppose
+Let \`H\` be a boundary tournament, let \`X=(x_0,\ldots,x_{m-1})\` be a tight path in \`H\`, let \`0\le i\le m-3\`, and let \`s,t\` be distinct vertices of \`V(H)-V(X)\`. Suppose
 \`(x_{i+1},s,x_i)\`,
 \`(x_{i+1},t,x_i)\`,
 \`(x_{i+2},s,x_{i+1})\`,
@@ -33,7 +33,7 @@ is tight, using the other two hypotheses. The two cases are exclusive by boundar
 
 ### Proposition 2.1
 
-Let \`b,c,r,s,u\` be distinct vertices. Suppose \`H[\{b,c,r,s\}]\` is represented by an edge order whose opposite-edge perfect matchings satisfy
+Let \`H\` be a boundary tournament, and let \`b,c,r,s,u\` be distinct vertices of \`H\`. Suppose \`H[\{b,c,r,s\}]\` is represented by an edge order whose opposite-edge perfect matchings satisfy
 \`\{bc,rs\}<\{br,cs\}<\{bs,cr\}\`.
 Assume \`H[\{b,c,r,s,u\}]\` is non-Hamiltonian and \`(b,c,u)\` is tight.
 
