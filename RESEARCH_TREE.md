@@ -2,20 +2,27 @@
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`.
     - If `|B|<=4`, then `|C|=1`, leaving `(|B|,|C|)=(3,1),(4,1)`.
       - [G12] Exclude a boundary tournament `K` with `pc(K)>2` having a Hamilton tight path `P=(x_0,...,x_{m-1})` with four-vertex complement `S`.
-        - Use the universal exterior-deletion structure without splitting by `m`.
-          - `K[S]` and the endpoint five-/six-vertex supersets are non-Hamiltonian; exterior single and pair deletions have explicit exact two-path covers.
-          - For `L=x_0,u=x_1,v=x_{m-2},R=x_{m-1}`, let `T_L={s:K[(S-{s})∪{L,u}]` is Hamiltonian} and define `T_R` symmetrically; seek `|T_L|,|T_R|>=3`, hence `|T_L∩T_R|>=2`.
-        - Prove the common-deletion exchange theorem: two distinct vertices of `T_L∩T_R` force a spanning two-path cover of `K`.
-          - For fixed `s∈T_L∩T_R`, compare the two exact covers of `K-s` from the left and right endpoint five-sets.
-          - Their support intersections have fixed sizes `3,2,2,m-4`; treat the middle interval as an inert cell rather than a source of new cases.
-          - Either restore `s` directly or derive a path-length-independent obstruction; use the second common omission to destroy that obstruction.
-        - As a uniform fallback, minimize the Hamiltonian side only when deleting vertices of `P`.
-          - For an exact end-pair deletion cover `T` and its good omission set `G⊆S`, use `τ_s>=b_s` for `s∈G` and the fact that at most one omission has `b_s=1`.
-          - Thus `|G|>=3` yields at least two omissions with `τ_s>=2` and `b_s>=2`; compare the left and right such sets with the intrinsic matching blocks of `S`.
-          - Consume the comparison in an explicit spanning two-path cover rather than accumulating crossing or endpoint-triple inventories.
+        - Use `m>=7` only as a domain restriction; do not organize the proof as `m=7,8,9,...`.
+        - Use the universal exterior-deletion structure before minimal-Hamiltonian-side machinery.
+          - Exterior single and pair deletions have explicit exact two-path covers, and endpoint truncations supply the five-vertex-complement tools in the same ambient tournament.
+          - For `L=x_0,u=x_1,v=x_{m-2},R=x_{m-1}`, at least three omissions are good at each adjacent endpoint pair and at least two omissions are common to both ends.
+        - Prove a common-deletion exchange theorem: two distinct common good omissions force a spanning two-path cover of `K`.
+          - For a fixed common omission `s`, compare the left and right exact two-path covers of `K-s`; their component-support intersections have sizes `3,2,2,m-4`.
+          - Treat the `m-4` middle cell as an inert parameter: either restore `s` or obtain a path-length-independent obstruction.
+          - Use the second common omission to eliminate any surviving obstruction.
+        - Develop one uniform two-ended consumer rather than iterating endpoint obstructions into the middle.
+          - Let `M_mid` be the intrinsic middle matching of `S`, `E_L` its edge outgoing at `L`, and `E_R` its edge incoming at `R`.
+          - The certified first-interior two-seam theorem gives a finite disjunction at each end in both cases `E_L=E_R` and `E_L!=E_R`.
+          - Consume the two end disjunctions simultaneously in a literal spanning two-path cover or a strict reduction of the Hamiltonian side; do not iterate the disjunction one vertex deeper.
+          - Allow splitting or reordering the middle path and check every new joining triple explicitly.
+        - Use minimal-Hamiltonian-side deletion covers only as a uniform fallback.
+          - For an exact end-pair deletion cover `T` and good omission set `G⊆S`, one has `τ_s>=b_s` for `s∈G`, and at most one omission has `b_s=1`.
+          - Hence `|G|>=3` gives at least two omissions with `τ_s>=2` and `b_s>=2`.
+          - If the useful sets at the two ends are disjoint, they are complementary two-subsets and force the certified rigid two-edge-path structure; consume that rigidity in the global construction.
         - Prove an interior-reduction theorem: any codimension-four obstruction with `m>7` yields one with a shorter Hamiltonian side while preserving `pc>2` and the four-vertex-complement form.
-          - If successful, the proof-spine bound `m>=7` collapses all remaining length dependence to `m=7`.
-        - Use `m=7` only as a diagnostic finite boundary case for discovering or falsifying the uniform exchange/reduction statements, not as the first step of an `m=7,8,9,...` ladder.
+          - If successful, the proof-spine bound `m>=7` collapses all length dependence to the single boundary value `m=7`.
+        - Use `m=7` only as a diagnostic testbed for the uniform exchange and reduction theorems.
+        - Do not require a two-cover that preserves the entire middle interval as one contiguous ordered block; local endpoint-core data alone do not force such a cover.
       - In the `(4,1)` branch, construct a spanning two-path cover or a Hamilton tight path with four-vertex complement.
     - If `|B|>=5`, construct a spanning two-path cover or a lexicographically larger spanning three-path cover.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
