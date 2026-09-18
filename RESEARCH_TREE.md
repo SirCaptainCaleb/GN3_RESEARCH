@@ -2,28 +2,20 @@
   - Eliminate a smallest counterexample by augmenting a lexicographically maximal spanning three-path cover `A|B|C`.
     - If `|B|<=4`, then `|C|=1`, leaving `(|B|,|C|)=(3,1),(4,1)`.
       - [G12] Exclude a boundary tournament `K` with `pc(K)>2` having a Hamilton tight path `P=(x_0,...,x_{m-1})` with four-vertex complement `S`.
-        - Use `m>=7` only as a domain restriction.
-          - The proof-spine small-order theorem excludes order at most ten.
-          - Do not organize the proof as `m=7,8,9,...` or propagate a local obstruction one vertex deeper merely because the path is longer.
-        - Use the admitted universal shelf `SHELVES/CORE/CODIMENSION_FOUR_EXTERIOR_DELETIONS.md`.
-          - The four-complement structure and explicit exact covers after deleting one or two vertices of `S` are uniform in `m`.
-          - Endpoint truncation gives five-vertex-complement tools in the same ambient tournament.
-          - The certified G09 arbitrary-reordering theorem gives three good omissions at each end and at least two common two-layer endpoint obstructions; no all-four endpoint-extension claim is available.
-        - Primary target: one uniform two-ended absorption/comparison theorem for every `m>=7`.
-          - Let `M_mid` be the intrinsic middle matching of `S`; let `E_L` be its edge outgoing at `x_0`, and `E_R` its edge incoming at `x_{m-1}`.
-          - Pending G12 research root `1789707036.443539` compresses both endpoint-matching cases into the same first-interior two-seam disjunction.
-          - Compare the two ends simultaneously and consume the resulting alternatives in a literal spanning two-path cover or a strict contradiction to the minimal Hamiltonian side.
-          - The finite distinction `E_L=E_R` versus `E_L!=E_R` is structural and independent of `m`; it may be used internally without creating an order-by-order proof.
-          - Arbitrary Hamiltonian reordering is useful only if it changes the global comparison; every replacement must check both joining triples explicitly.
-        - Keep deletions from the long path as a reserve, not the parent route.
-          - The abstract all-four counting theorem at research root `1789705229.101719` is certified, but its intended codimension-four application was invalidated when the all-four endpoint-extension theorem was retracted.
-          - Use minimal-Hamiltonian-side exact covers only when a concrete cut-and-join construction or strict descent consumes them.
-        - Treat `m=7` only as a diagnostic/testbed.
-          - Order eleven supplies extra deletion freedom, so a uniform lemma may be tested there.
-          - Do not make closure of `m=7` a prerequisite for the general case, and do not continue order-eleven microcase work unless it yields a statement that survives arbitrary `m`.
-        - Avoid intact-middle normalization.
-          - Legacy R904 shows the local endpoint-core data alone can coexist with Hamiltonian examples of every order while forbidding every two-cover that keeps the middle rail intact.
-          - Any successful consumer must use additional deletion/minimality information or allow splitting/rearranging the middle.
+        - Use the universal exterior-deletion structure without splitting by `m`.
+          - `K[S]` and the endpoint five-/six-vertex supersets are non-Hamiltonian; exterior single and pair deletions have explicit exact two-path covers.
+          - For `L=x_0,u=x_1,v=x_{m-2},R=x_{m-1}`, let `T_L={s:K[(S-{s})∪{L,u}]` is Hamiltonian} and define `T_R` symmetrically; seek `|T_L|,|T_R|>=3`, hence `|T_L∩T_R|>=2`.
+        - Prove the common-deletion exchange theorem: two distinct vertices of `T_L∩T_R` force a spanning two-path cover of `K`.
+          - For fixed `s∈T_L∩T_R`, compare the two exact covers of `K-s` from the left and right endpoint five-sets.
+          - Their support intersections have fixed sizes `3,2,2,m-4`; treat the middle interval as an inert cell rather than a source of new cases.
+          - Either restore `s` directly or derive a path-length-independent obstruction; use the second common omission to destroy that obstruction.
+        - As a uniform fallback, minimize the Hamiltonian side only when deleting vertices of `P`.
+          - For an exact end-pair deletion cover `T` and its good omission set `G⊆S`, use `τ_s>=b_s` for `s∈G` and the fact that at most one omission has `b_s=1`.
+          - Thus `|G|>=3` yields at least two omissions with `τ_s>=2` and `b_s>=2`; compare the left and right such sets with the intrinsic matching blocks of `S`.
+          - Consume the comparison in an explicit spanning two-path cover rather than accumulating crossing or endpoint-triple inventories.
+        - Prove an interior-reduction theorem: any codimension-four obstruction with `m>7` yields one with a shorter Hamiltonian side while preserving `pc>2` and the four-vertex-complement form.
+          - If successful, the proof-spine bound `m>=7` collapses all remaining length dependence to `m=7`.
+        - Use `m=7` only as a diagnostic finite boundary case for discovering or falsifying the uniform exchange/reduction statements, not as the first step of an `m=7,8,9,...` ladder.
       - In the `(4,1)` branch, construct a spanning two-path cover or a Hamilton tight path with four-vertex complement.
     - If `|B|>=5`, construct a spanning two-path cover or a lexicographically larger spanning three-path cover.
       - Seek a parent augmentation principle allowing multiple cuts, both ends, and reordered paths.
