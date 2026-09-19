@@ -21,6 +21,8 @@ SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 PAGE_CHARS = 20_000
 OUT = Path("_site")
 
+# Durable-context publication is Vice Director maintenance; touching this file intentionally triggers a Pages rebuild.
+
 ROLES = {
     "researcher": {
         "title": "Researcher",
