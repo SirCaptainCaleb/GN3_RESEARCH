@@ -21,6 +21,8 @@ SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 PAGE_CHARS = 20_000
 OUT = Path("_site")
 
+# Manual Pages rebuild trigger: 2026-09-19 refresh
+
 # Manual Pages rebuild trigger: 2026-09-18T22:39-04:00
 
 # Durable-context publication is Vice Director maintenance; touching this file intentionally triggers a Pages rebuild.
