@@ -178,10 +178,12 @@ def build_markdown(role: str, manifest: dict, bodies: dict[str, str]) -> str:
         "",
         info["description"],
         "",
-        "**Scope.** This is a generated, read-only view of slow-changing GN3 context. "
-        "Supabase GN3 is canonical. Live guidance, research-tree state, active research, "
-        "audit queues, failures, removals, and frontier movement are intentionally excluded; "
-        "obtain live state through the GN3 synchronization interface.",
+        "**Scope.** This is a generated, read-only startup snapshot of slow-changing GN3 context. "
+        "Supabase GN3 is canonical. Read this page only at the beginning of a session: ChatGPT may "
+        "cache it for the rest of that session. After startup, obtain all updates directly from "
+        "Supabase GN3 through the GN3 synchronization interface; do not reread this page for freshness. "
+        "Live guidance, research-tree state, active research, audit queues, failures, removals, and "
+        "frontier movement are intentionally excluded.",
         "",
         f"**Transport.** The exporter reads Supabase through revision-pinned GN3 RPCs with "
         f"a maximum content page of {PAGE_CHARS:,} characters and verifies every assembled body.",
@@ -292,16 +294,10 @@ a {{ text-underline-offset: 0.15em; }}
 <h1>GN3 Agent Context</h1>
 <p>Compiled durable context for GN3 research roles. Supabase GN3 remains canonical; live state is synchronized separately.</p>
 <ul>{''.join(cards)}</ul>
-<h2>Republishing these pages</h2>
-<p>The Vice Director owns publication of durable context. After integrating meaningful durable changes in Supabase GN3, trigger the GitHub Actions workflow <code>Publish GN3 role context</code>. Related edits should normally be batched into one rebuild.</p>
-<ol>
-  <li>Open the GitHub repository <code>SirCaptainCaleb/GN3_RESEARCH</code>.</li>
-  <li>Open <strong>Actions</strong>.</li>
-  <li>Select <strong>Publish GN3 role context</strong>.</li>
-  <li>Choose <strong>Run workflow</strong> on the <code>main</code> branch.</li>
-  <li>Verify that the run completes successfully.</li>
-</ol>
-<p>The build reads the current revision-pinned durable context from Supabase and overwrites these generated pages. Live-only research changes do not require a rebuild.</p>
+<h2>Session use</h2>
+<p><strong>Read each role page only at session start.</strong> ChatGPT may cache it for the rest of the session. After startup, load updates directly from Supabase GN3; do not reread Pages for freshness.</p>
+<h2>Republish</h2>
+<p>Vice Director: after batching meaningful durable changes, run <strong>Actions → Publish GN3 role context → Run workflow</strong> on <code>main</code> and verify success. Live-only changes need no rebuild.</p>
 </body>
 </html>
 """
