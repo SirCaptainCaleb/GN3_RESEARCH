@@ -42,16 +42,22 @@ ROLES = {
 
 
 def rpc(name: str, payload: dict) -> object:
+    headers = {
+        "apikey": SUPABASE_KEY,
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "gn3-pages-builder/1.0",
+    }
+    # New sb_secret_* keys are API keys, not JWTs. Legacy service_role
+    # JWTs still use Authorization: Bearer in addition to apikey.
+    if not SUPABASE_KEY.startswith("sb_secret_"):
+        headers["Authorization"] = f"Bearer {SUPABASE_KEY}"
+
     request = urllib.request.Request(
         f"{SUPABASE_URL}/rest/v1/rpc/{name}",
         data=json.dumps(payload).encode("utf-8"),
         method="POST",
-        headers={
-            "apikey": SUPABASE_KEY,
-            "Authorization": f"Bearer {SUPABASE_KEY}",
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        },
+        headers=headers,
     )
     try:
         with urllib.request.urlopen(request, timeout=90) as response:
