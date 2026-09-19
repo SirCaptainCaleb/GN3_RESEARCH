@@ -21,10 +21,6 @@ SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 PAGE_CHARS = 20_000
 OUT = Path("_site")
 
-# Manual Pages rebuild trigger: 2026-09-19 refresh
-
-# Manual Pages rebuild trigger: 2026-09-18T22:39-04:00
-
 # Durable-context publication is Vice Director maintenance; touching this file intentionally triggers a Pages rebuild.
 
 ROLES = {
@@ -296,6 +292,16 @@ a {{ text-underline-offset: 0.15em; }}
 <h1>GN3 Agent Context</h1>
 <p>Compiled durable context for GN3 research roles. Supabase GN3 remains canonical; live state is synchronized separately.</p>
 <ul>{''.join(cards)}</ul>
+<h2>Republishing these pages</h2>
+<p>The Vice Director owns publication of durable context. After integrating meaningful durable changes in Supabase GN3, trigger the GitHub Actions workflow <code>Publish GN3 role context</code>. Related edits should normally be batched into one rebuild.</p>
+<ol>
+  <li>Open the GitHub repository <code>SirCaptainCaleb/GN3_RESEARCH</code>.</li>
+  <li>Open <strong>Actions</strong>.</li>
+  <li>Select <strong>Publish GN3 role context</strong>.</li>
+  <li>Choose <strong>Run workflow</strong> on the <code>main</code> branch.</li>
+  <li>Verify that the run completes successfully.</li>
+</ol>
+<p>The build reads the current revision-pinned durable context from Supabase and overwrites these generated pages. Live-only research changes do not require a rebuild.</p>
 </body>
 </html>
 """
