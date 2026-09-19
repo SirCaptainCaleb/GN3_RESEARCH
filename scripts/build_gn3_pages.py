@@ -186,10 +186,29 @@ def build_markdown(role: str, manifest: dict, bodies: dict[str, str]) -> str:
         "",
     ]
 
-    if role == "auditor":
+    if role in ("researcher", "vice_director"):
         lines += [
-            "**Auditor note.** The exact audit target and its dependency closure are not compiled "
-            "into this durable page because they vary by assignment. Retrieve them from live GN3.",
+            "**Fresh live state.** After reading this page in full, call "
+            f"`gn3_sync('{role}', since_revision := null, cursor := 0, page_chars := 12000, expected_revision := null)`. "
+            "Consume every returned page at the pinned repository revision. Thereafter use the last "
+            "fully consumed revision as numeric `since_revision` for delta synchronization.",
+            "",
+            "**Fallback.** If this generated page is unavailable, incomplete, or visibly truncated, "
+            f"use `gn3_startup('{role}', ...)` and consume the complete canonical startup stream.",
+            "",
+        ]
+    elif role == "astra":
+        lines += [
+            "**Astra live layer.** This page supplies durable context only. Astra still uses "
+            "`gn3_startup('astra', ...)` for the current strategic/live layer until a dedicated "
+            "Astra live-sync interface replaces that step.",
+            "",
+        ]
+    elif role == "auditor":
+        lines += [
+            "**Auditor live target.** The exact audit target and dependency closure are not compiled "
+            "into this durable page because they vary by assignment. Use "
+            "`gn3_startup('auditor', target_id, ...)` for the exact assigned target context.",
             "",
         ]
 
