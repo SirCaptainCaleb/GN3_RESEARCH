@@ -1,0 +1,44 @@
+name: Build research context artifact
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Sync research mirror"
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+jobs:
+  artifact:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout committed mirror
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Assemble context bundle from repository state
+        run: |
+          set -euo pipefail
+          rm -rf _artifact
+          mkdir -p _artifact
+          for schema in gn3n linp template; do
+            test -d "$schema/_context"
+            mkdir -p "_artifact/$schema"
+            cp -a "$schema/_context/." "_artifact/$schema/"
+            cp "$schema/mirror_manifest.json" "_artifact/$schema/mirror_manifest.json"
+          done
+
+      - name: Upload research context artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-context
+          path: _artifact/
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 7
