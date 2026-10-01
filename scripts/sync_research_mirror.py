@@ -18,7 +18,7 @@ TABLES = [
 ]
 CORE_POLICIES = [
     "startup_kernel","worker_kernel","project_policy",
-    "research_full_guidance","architecture_invariants",
+    "research_full_guidance","architecture_invariants","artifact_kernel",
 ]
 MODE_POLICIES = [
     "mode_audit","mode_brainstorm","mode_coordination","mode_isolated_research",
@@ -124,6 +124,28 @@ def write_dictionary_yaml(path: Path, rows: list[dict[str, Any]]):
 def write_json(path: Path, value: Any):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+def write_rpc_signatures(path: Path, catalog: list[dict[str, Any]]):
+    """Write a tiny candidate-lookup list: RPC name, inputs, conservative write flag."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lines = []
+    for item in catalog:
+        lines.append(f"- name: {json.dumps(str(item.get('name') or ''), ensure_ascii=False)}")
+        lines.append(f"  inputs: {json.dumps(str(item.get('inputs') or ''), ensure_ascii=False)}")
+        lines.append(f"  writes: {'true' if item.get('writes') else 'false'}")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+def write_rpc_definitions(path: Path, catalog: list[dict[str, Any]]):
+    """Write exact implementation lookup after a worker narrows candidate RPCs."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    parts = []
+    for item in catalog:
+        name = str(item.get("name") or "")
+        inputs = str(item.get("inputs") or "")
+        result = str(item.get("result") or "")
+        definition = str(item.get("definition") or "")
+        parts.append(f"## {name}({inputs}) -> {result}\n\n```sql\n{definition}\n```")
+    path.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
 
 def write_text(path: Path, text: str):
     """Write generated prose with exactly one terminal newline."""
@@ -351,42 +373,37 @@ def build_schema(folder: str, schema: str):
         except Exception:
             policies[key] = {}
     for key in CORE_POLICIES:
-        write_text(ctx / "policies" / f"{key}.md", body_of(policies[key]))
+        filename = "kernel" if key == "artifact_kernel" else key
+        write_text(ctx / "policies" / f"{filename}.md", body_of(policies[key]))
     for key in MODE_POLICIES:
         write_text(ctx / "roles" / f"{key.removeprefix('mode_')}.md", body_of(policies[key]))
 
     write_json(ctx / "rpc_signatures.json", context(schema, "rpc_signatures"))
     write_json(ctx / "rpc_list.json", context(schema, "rpc_list"))
+    rpc_catalog = context(schema, "rpc_catalog")
+    write_json(ctx / "rpc_catalog.json", rpc_catalog)
+    write_rpc_signatures(ctx / "rpc_signatures.yaml", rpc_catalog)
+    write_rpc_definitions(ctx / "rpc_definitions.md", rpc_catalog)
     write_text(ctx / "simplified_forest.md", render_forest(objects, "simplified", atlas))
     write_text(ctx / "statement_forest.md", render_forest(objects, "statement"))
     write_text(ctx / "statement_plus_proof_forest.md", render_forest(objects, "full"))
 
     state = rows["state"][0] if rows["state"] else {}
-    gt = active.get(str(state.get("grand_theorem_id")), {})
     bootstrap = f"""# {folder} startup bootstrap
 
-Repository revision: {state.get('revision')}
-Supabase schema: {schema}
+This export is a convenience snapshot of the live Supabase project. Supabase state and RPC behavior are authoritative.
 
-This mirror does not allocate a worker ID. A live worker still begins with:
+A fresh worker begins with:
 
     select * from {schema}.startup();
 
-Retain the returned worker ID, then follow the live continuation protocol.
+Retain the returned worker_id. Before mathematical work, use the live {schema}.startup_atlas() orientation surface; use {schema}.atlas() when broader conceptual coverage is needed. Pull exact mathematics through {schema}.read(...), ancestry/subtree navigation, or paged read RPCs as needed.
 
-## Grand theorem
+For current project policy use {schema}.get_policy('project_policy'). For shared operational policy use {schema}.get_policy('artifact_kernel') as the compact convenience kernel, and query more specialized live policy only when the active workflow genuinely requires it.
 
-[{gt.get('id', state.get('grand_theorem_id'))}] {gt.get('title','')}
+For project vocabulary use {schema}.standardization_dictionary(). For exact RPC discovery use {schema}.rpc_signatures(name) and the live PostgreSQL function definitions when implementation detail is required.
 
-{gt.get('statement','')}
-
-## Startup help
-
-{body_of(help_docs.get('startup', {}))}
-
-## Startup kernel
-
-{body_of(policies.get('startup_kernel'))}
+Repository revision at export: {state.get('revision')}
 """
     write_text(ctx / "startup_bootstrap.md", bootstrap)
 
