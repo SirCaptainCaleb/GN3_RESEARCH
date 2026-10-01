@@ -1101,6 +1101,7 @@
       • [1000599] Both endpoints of an oversized quadratic-minimal component disturb the same complementary pair
     • [1000803] At a quadratic-minimal relocation state a large size gap gives a barrier or opposite endpoint extensions
       • [1000144] Two barrier-free large-gap neighbors create a Hamiltonian three-vertex enlargement
+    • [1000917] A side of order 1, 2, or 3 forces an immediate Phi descent once the largest side has order at least 3, 4, or 6 respectively; thus every componentwise minimum on n>=14 has minimum side at least four.
     • [facing_k4_local_twomove_formula01] Inner facing four-windows have local two-move potential formulas.
       • [facing_k4_twomove_formula01] Inner facing four-windows have exact two-move potential formulas
     • [four_path_endpointpair_repartition_or_lock01] Two bad endpoint extensions of a four-path give a two-path repartition or interior noninsertability
@@ -1176,6 +1177,7 @@
       • [five_side_two_bad_endpoint_sixpackage01] Two bad extensions of a Hamiltonian five-set yield a six-set with four positioned good deletions.
     • [1000903] Two disjoint triples have at least three cross-pairs of Hamiltonian five-deletions, each yielding a common-four-core six-set transport package; the earlier directional and one-third fixed-reservoir statements are corollaries.
     • [1000914] For a fixed triple, any family of non-Hamiltonian one-vertex four-extensions amplifies pairwise to Hamiltonian five-sets whose Hamilton paths have both endpoints in the fixed triple; a third of the pairs share one endpoint pair after choosing paths.
+    • [1000918] A 3|1|m cover has at least three endpoint-local five-support descents at each end for m>=7; for m>=10 all six continue, preserving the five-side, to distinct covers of minimum side at least four.
     • [arbitrary_fiveset_prescribed_pair_sixshell_menu01] Any five-set and prescribed exterior pair generate a complete six-shell transport menu
     • [arbitrary_fiveset_prescribed_pair_sixshell_menu02] Any five-set and prescribed exterior pair generate a sharpened six-shell transport menu.
     • [balanced8_adjacent_windows_recomp01] Every eight-vertex boundary tournament has adjacent Hamiltonian four-windows
@@ -1195,7 +1197,6 @@
     • [nonham_five_radius2_pc2_shell01] A non-Hamiltonian five-set forces a radius-two path-cover-two shell on its complement.
     • [pair_centered_central_gap_fan01] Every prescribed pair lies in a linear common-four-core family that is pairwise Hamiltonian on six vertices, a coherent middle-gap fan, or a coherent same-end extender family.
     • [threeside_bounded_endpoint_five_repartition01] A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions.
-      • [1000915] Every 3|1|m cover with m>=7 has at least six distinct radius-two strict descents, three localized at each end of the long path.
     • [two_bad_six_extensions_fourgood01] Two bad six-extensions of any five-set force a four-positioned-deletion six-set.
     • [1000668] Opposite reverse hooks on a five-path force a Hamiltonian outer five-window.
   • [ternary01] In any ternary path system with cyclic coverage and reversal symmetry, every exterior vertex has at least two insertion positions into a tight path, and every n-vertex system has at least 2^(n-1) Hamilton tight paths.

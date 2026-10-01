@@ -1923,6 +1923,10 @@
   object_id: "1000905"
   worker_id: 1061
 -
+  first_recorded_at: "2026-10-01T17:54:19.104919+00:00"
+  object_id: "1000916"
+  worker_id: 1108
+-
   first_recorded_at: "2026-09-29T04:28:16.6564+00:00"
   object_id: "staircase_standard_disturbance01"
   worker_id: 718
@@ -1958,6 +1962,10 @@
   first_recorded_at: "2026-10-01T13:45:30.523051+00:00"
   object_id: "1000906"
   worker_id: 1061
+-
+  first_recorded_at: "2026-10-01T17:57:17.557387+00:00"
+  object_id: "1000917"
+  worker_id: 1108
 -
   first_recorded_at: "2026-09-28T20:25:17.100612+00:00"
   object_id: "recomp_square45_01"
@@ -2358,6 +2366,10 @@
   first_recorded_at: "2026-09-29T13:21:20.567162+00:00"
   object_id: "reversal_five_support_global01"
   worker_id: 672
+-
+  first_recorded_at: "2026-10-01T18:01:39.641833+00:00"
+  object_id: "1000918"
+  worker_id: 1108
 -
   first_recorded_at: "2026-09-29T17:28:28.200658+00:00"
   object_id: "endpoint_reversal_obstruction_recomp01"

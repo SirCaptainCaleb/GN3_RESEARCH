@@ -6283,5 +6283,5 @@
   ],
   "frontier_count": 324,
   "note": "Flat frontier only. After choosing an item, call ancestry() or simplified_ancestry() separately for route context.",
-  "repository_revision": 10966
+  "repository_revision": 10987
 }

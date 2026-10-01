@@ -3268,6 +3268,34 @@
   metadata:
   to_id: "threeside01"
 -
+  created_at: "2026-10-01T17:51:23.245271+00:00"
+  from_id: "1000915"
+  kind: "depends_on"
+  metadata:
+    reason: "The six-way descent fan is the all-prescribed-pairs amplification of the certified endpoint five-repartition lemma."
+  to_id: "threeside_bounded_endpoint_five_repartition01"
+-
+  created_at: "2026-10-01T17:54:31.616581+00:00"
+  from_id: "1000916"
+  kind: "depends_on"
+  metadata:
+    reason: "Supplies the six distinct endpoint-local Hamiltonian five-support descents."
+  to_id: "1000915"
+-
+  created_at: "2026-10-01T17:54:31.616581+00:00"
+  from_id: "1000916"
+  kind: "depends_on"
+  metadata:
+    reason: "Consumes the normalized 5|3|(m-4) state while preserving the five-side."
+  to_id: "threesidedescent6"
+-
+  created_at: "2026-10-01T17:57:25.500298+00:00"
+  from_id: "1000917"
+  kind: "depends_on"
+  metadata:
+    reason: "The c=3 branch is exactly the certified arbitrary-state three-side descent theorem."
+  to_id: "threesidedescent6"
+-
   created_at: "2026-09-20T20:26:46.046265+00:00"
   from_id: "1000131"
   kind: "depends_on"
@@ -3280,11 +3308,51 @@
   metadata:
   to_id: "deletion01"
 -
+  created_at: "2026-10-01T18:01:45.248718+00:00"
+  from_id: "1000918"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000915"
+    reason: "The six-way descent fan is the all-prescribed-pairs amplification of the certified endpoint five-repartition lemma."
+  to_id: "threeside_bounded_endpoint_five_repartition01"
+-
+  created_at: "2026-10-01T18:01:45.248718+00:00"
+  from_id: "1000918"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000916"
+    reason: "Consumes the normalized 5|3|(m-4) state while preserving the five-side."
+  to_id: "threesidedescent6"
+-
   created_at: "2026-09-27T21:35:52.872593+00:00"
   from_id: "1000643"
   kind: "depends_on"
   metadata:
   to_id: "1000640"
+-
+  created_at: "2026-10-01T18:01:50.541588+00:00"
+  from_id: "1000918"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:01:50.541588+00:00"
+  to_id: "1000915"
+-
+  created_at: "2026-10-01T18:01:50.541588+00:00"
+  from_id: "1000918"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:01:50.541588+00:00"
+  to_id: "1000916"
 -
   created_at: "2026-09-20T20:33:34.321647+00:00"
   from_id: "1000741"

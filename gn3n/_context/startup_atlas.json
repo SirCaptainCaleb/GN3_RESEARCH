@@ -744,9 +744,9 @@
       "obstructed_count": 0,
       "pending": false,
       "pending_count": 2,
-      "subtree_object_count": 501,
+      "subtree_object_count": 502,
       "subtree_obstructed_count": 4,
-      "subtree_pending_count": 36,
+      "subtree_pending_count": 37,
       "summary": "Core reusable toolkit: definitions, minimum-counterexample calculus, small-order structure, path restriction, cover surgery, insertion, local extension, edge-order methods, and related proof tools.",
       "support_status": "unchecked",
       "title": "Toolkit"
@@ -1281,15 +1281,15 @@
       "descendant_container_count": 8,
       "id": "quadraticpotential01",
       "mathematical_status": "proved",
-      "member_count": 49,
+      "member_count": 50,
       "obstructed": false,
       "obstructed_count": 1,
       "parent_container_id": "methods01",
       "pending": false,
-      "pending_count": 4,
-      "subtree_object_count": 99,
+      "pending_count": 5,
+      "subtree_object_count": 100,
       "subtree_obstructed_count": 1,
-      "subtree_pending_count": 9,
+      "subtree_pending_count": 10,
       "summary": "Quadratic component-size potential as a general reconfiguration toolkit. This region develops strict-descent criteria, neutral-transfer and restoration cycles, size-gap and complement-imbalance inequalities, global near-balance/staircase reductions, and dedicated two-, three-, four-, and five-side obstruction analyses. Nested branches isolate the sharp half-order extremal route and the local four-side and 4|5 plateau mechanisms.",
       "support_status": "supported",
       "title": "Quadratic component-size potential under path-cover moves"
@@ -2309,5 +2309,5 @@
     "subtree": "atlas(object_or_container_id)"
   },
   "purpose": "First-contact research briefing: enough breadth and depth for a strong fresh mathematician to choose among plausible routes, understand why the main route is where it is, and recognize reusable machinery without loading the entire conceptual Atlas.",
-  "repository_revision": 10966
+  "repository_revision": 10987
 }

@@ -2118,6 +2118,8 @@ declare
   v_artifact_id bigint;
   v_artifact_path text;
   v_filename text;
+  v_hashes jsonb;
+  v_hash_revision bigint;
 begin
   v_project := control_center.active_project();
 
@@ -2141,6 +2143,22 @@ begin
   v_artifact_path := v_meta->>'actions_artifact_path';
   v_filename := 'research_context_'||coalesce(v_artifact_revision::text,'unknown')||'.zip';
 
+  select hashes,artifact_revision
+    into v_hashes,v_hash_revision
+  from control_center.artifact_context_snapshots
+  where project_schema=v_project;
+
+  if v_hashes is not null and v_hash_revision=v_artifact_revision then
+    insert into control_center.artifact_boot_workers(
+      project_schema,worker_id,artifact_revision,hashes,booted_at
+    )
+    values(v_project,v_worker,v_artifact_revision,v_hashes,now())
+    on conflict(project_schema,worker_id) do update
+      set artifact_revision=excluded.artifact_revision,
+          hashes=excluded.hashes,
+          booted_at=excluded.booted_at;
+  end if;
+
   return jsonb_strip_nulls(jsonb_build_object(
     'wid',v_worker,
     'worker_id',v_worker,
@@ -2153,6 +2171,7 @@ begin
     'artifact_filename',v_filename,
     'artifact_id',v_artifact_id,
     'artifact_path',v_artifact_path,
+    'artifact_hash_baseline_bound',(v_hashes is not null and v_hash_revision=v_artifact_revision),
     'library_search_filename',v_filename,
     'library_search_call',
       'await tools.files__search({intent:"nav",search_query:[{q:"'||v_filename||'",search_title_only:true}],scope:{surfaces:["library"]},top_k:5,result_format:"metadata_only"})',

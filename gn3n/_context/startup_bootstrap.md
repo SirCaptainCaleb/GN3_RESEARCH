@@ -1,15 +1,11 @@
-# gn3n startup bootstrap
+# gn3n artifact bootstrap
 
-This export is a convenience snapshot of the live Supabase project. Supabase state and RPC behavior are authoritative.
+This directory is the artifact snapshot for repository revision 10987. Supabase remains authoritative for live state and updates.
 
-A fresh worker begins with:
+If you reached this file through gn3n.boot(), the worker identity and boot contract are already established. Do not call gn3n.startup() or gn3n.atlas() merely to re-ingest context already present here.
 
-    select * from gn3n.startup();
+Use research/startup_atlas.md for compact orientation, research/atlas.md for the broader conceptual map, and research/frontier.md for current theorem-facing leaves. Pull exact live mathematics from Supabase only when needed, especially for changes after this artifact revision or before state-sensitive mutations.
 
-Retain the returned worker_id. Before mathematical work, use the live gn3n.atlas() orientation surface. Pull exact mathematics through gn3n.read(...), ancestry/subtree navigation, or paged read RPCs as needed.
+Use kernel.md, project_policy.md, roles/, standardization_dictionary.txt, and the RPC lookup files as the artifact's baseline operational context. continue(worker_id) will report context files whose live hashes have changed since the artifact snapshot rather than resending unchanged artifact material.
 
-For current project policy use gn3n.get_policy('project_policy'). For shared operational policy use gn3n.get_policy('artifact_kernel') as the compact convenience kernel, and query more specialized live policy only when the active workflow genuinely requires it.
-
-For project vocabulary use gn3n.standardization_dictionary(). For exact RPC discovery use gn3n.rpc_signatures(name) and the live PostgreSQL function definitions when implementation detail is required.
-
-Repository revision at export: 10966
+Repository revision at export: 10987

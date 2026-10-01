@@ -27393,6 +27393,23 @@
           BODY / PROOF
           Apply f7b6b85feaa3 to X,Y and X,Z. Under the stated absence of barriers, y_1 and z_1 extend the same terminal end of X, while y_q and z_r extend the initial end. The certified three-extender Hamiltonization lemma e425e6ca5fe0 applied to the tight path X, with the two same-end extenders y_1,z_1 and the opposite-end extender y_q, shows that V(X) union {y_1,z_1,y_q} is Hamiltonian. Removing those vertices from H leaves the inherited interior path (y_2,...,y_{q-1}) when nonempty and the inherited suffix (z_2,...,z_r) when nonempty. Hence the complement has path-cover number at most two, with the displayed inherited cover.
 
+    • [1000917] Small sides one, two, and three have universal one-move descent thresholds
+        STATEMENT
+        Let C=A|B|D be any spanning three-cover of a boundary tournament, with component orders a>=b>=c. A single legal pairwise repartition strictly decreases the quadratic potential Phi in each of the following size regimes: (1) c=1 and a>=3, with potential drop 2a-4; (2) c=2 and a>=4, with potential drop 2a-6; (3) c=3 and a>=6, with potential drop at least 2a-8. Hence a cover that is Phi-minimal in its connected pairwise-repartition component must satisfy c=1 => a<=2, c=2 => a<=3, and c=3 => a<=5. In particular, on n>=14 vertices every componentwise Phi-minimal spanning three-cover has minimum component order at least four. The first two cases are elementary endpoint absorptions; the third is threesidedescent6. No trapped-component or minimum-counterexample hypothesis is used.
+        BODY / PROOF
+        Order the component sizes a>=b>=c.
+        
+        If c=1, then a+b=n-1, hence a>=ceil((n-1)/2). Let D={x} and write A=(a_1,...,a_a). Repartition D|A as the two-vertex path {x,a_1} together with the inherited path (a_2,...,a_a). Two-vertex paths are vacuously tight. The old contribution to Phi is 1+a^2 and the new contribution is 4+(a-1)^2, so the drop is
+        1+a^2-[4+(a-1)^2]=2a-4>0.
+        
+        If c=2, write D for the two-side. Again a>=ceil((n-2)/2). Choose a displayed endpoint e of A. Every induced boundary tournament on three vertices has a tight Hamilton path, since one orientation in the relevant reversal pair is tight. Hence D union {e} has a Hamilton path. Repartition D|A into that three-path and the inherited path A-e. The potential drop is
+        4+a^2-[9+(a-1)^2]=2a-6,
+        which is positive because n>=14 gives a>=6.
+        
+        If c=3, then a>=ceil((n-3)/2)>=6. Apply the certified arbitrary-state descent theorem threesidedescent6 to D|A. It gives one legal pairwise repartition with strict potential decrease. In its one-endpoint branch the drop is 2a-8; in its two-endpoint branch the drop is 4a-20. For a>=6 one has 4a-20>=2a-8, so the drop is at least 2a-8>0.
+        
+        Therefore every three-cover with minimum component order at most three has an immediate strict descent. A Phi-minimum in its connected pairwise-repartition component can have none, so its minimum component order is at least four.
+
     • [facing_k4_local_twomove_formula01] Inner facing four-windows have local two-move potential formulas
         STATEMENT
         Let H be a boundary tournament, let P=(p_0,...,p_{p-1}) and Q=(q_0,...,q_{q-1}) be vertex-disjoint tight paths with p,q>=3, and let x lie outside both. Regard P|Q|{x} as a three-path cover of its union. If W_L={p_0,q_{q-1},x,p_1} is Hamiltonian, then two pairwise repartitions of this local cover produce W_L | (p_2,...,p_{p-1}) | (q_0,...,q_{q-2}), with quadratic-potential change 20-4p-2q. If W_R={p_0,q_{q-1},x,q_{q-2}} is Hamiltonian, two pairwise repartitions produce the symmetric local cover of component orders 4,p-1,q-2, with change 20-2p-4q.
@@ -29709,6 +29726,42 @@
         
         Finally suppose H is a minimum counterexample. Each five-set S above is proper. Its complement has path-cover number at most two by minimum-counterexample calculus. The complement cannot be Hamiltonian, because a Hamilton path on S together with a Hamilton path on its complement would two-cover H. Therefore the complement is non-Hamiltonian with path-cover number exactly two.
 
+    • [1000918] Three-side singleton lifts have a six-way endpoint descent fan that exits the small-side regime
+        STATEMENT
+        Let C=P|(x)|Q be a spanning three-cover of a boundary tournament, where |P|=3 and Q=(q_0,...,q_{m-1}). Put X=V(P) union {x}.
+        
+        For either displayed end of Q, define the one-label endpoint five-supports F_v and two-label endpoint five-supports F_Z exactly as in threeside_bounded_endpoint_five_repartition01. Let A be the set of v in X for which F_v is Hamiltonian, and B the set of Z in binom(X,2) for which F_Z is Hamiltonian. Then
+        |A|+|B| >= |A|+binom(4-|A|,2) >= 3.
+        Thus at least three endpoint-local five-supports are Hamiltonian at each end.
+        
+        If m>=7, the left- and right-end candidate families are disjoint. Hence C has at least six distinct reachable support partitions of strictly smaller quadratic potential, each reached by at most two legal nonincreasing pairwise repartitions. A one-label support has profile (5,3,m-4) and Phi-drop 8m-40; a two-label support has profile (5,2,m-3) and Phi-drop 6m-28. Therefore every one of the six drops Phi by at least 6m-28.
+        
+        The three-candidate equality case at one endpoint is rigid: either exactly three one-label candidates occur, or exactly two one-label candidates occur together with precisely the two-label candidate on their complementary pair. Consequently, if exactly six candidates occur over both endpoints, then either one label of X is one-label-good at both ends, or X splits into two pairs A_L,A_R and the two ends realize the crossed complementary 2+2 pattern.
+        
+        If m>=10, each of the six endpoint-local descents continues, while preserving its Hamiltonian five-support F, to a distinct spanning three-cover F|A'|B' with min{|A'|,|B'|}>=4. The continuation uses at most two additional legal strict repartitions, never increases Phi, and ends with profile either (5,4,m-5) or (5,5,m-6). The total Phi-drop from C is at least 10m-56.
+        
+        In particular, for a minimum counterexample deletion lift with m=n-4, the m>=7 conclusion gives six distinct descents each dropping Phi by at least 6n-52; when n>=14, m>=10 and all six continue to distinct same-component covers of minimum side at least four, each dropping Phi by at least 10n-96.
+        BODY / PROOF
+        Fix one endpoint of Q. The prescribed-pair theorem threeside_bounded_endpoint_five_repartition01 says that for every pair {u,v} subset X, at least one of F_u,F_v,F_{uv} is Hamiltonian. If A is the set of one-label-good vertices, then every pair contained in X-A must lie in B. Hence, writing a=|A|,
+        |A|+|B| >= a+binom(4-a,2).
+        For a=0,1,2,3,4 this lower bound is respectively 6,4,3,3,4, proving the three-candidate minimum. The same argument applies independently at the other endpoint.
+        
+        The parent theorem supplies an explicit at-most-two-step nonincreasing repartition route for every Hamiltonian candidate. Its one-label and two-label profiles and potential changes are respectively
+        (5,3,m-4), 40-8m,
+        and
+        (5,2,m-3), 28-6m.
+        For m>=7 both are strict and the smaller guaranteed drop is 6m-28. The left and right families are disjoint: they contain different endpoint blocks of Q, and one-label and two-label candidates meet X in different cardinalities.
+        
+        If exactly three candidates occur at one endpoint, the displayed lower-bound table forces a=2 or 3. For a=3 there can be no two-label candidate; for a=2 the only possible two-label candidate is the complementary pair X-A. Applying this at both ends gives the stated six-candidate classification.
+        
+        Now assume m>=10 and fix one of the six Hamiltonian five-supports F. If F is one-label type, its route gives profile (5,3,m-4) with drop 8m-40. Since m-4>=6, apply threesidedescent6 to the 3-side and the long side while keeping F fixed. The resulting profile is (5,4,m-5) or (5,5,m-6), and the additional drop is at least 2(m-4)-8=2m-16. Thus the total drop is at least 10m-56.
+        
+        If F is two-label type, its route gives profile (5,2,m-3) with drop 6m-28. Let D be the 2-side and R the path of order r=m-3. For either displayed endpoint e of R, the three-set D union {e} has a tight Hamilton path. Repartition D|R into that three-path and the inherited path R-e. The drop is
+        4+r^2-[9+(r-1)^2]=2r-6=2m-12,
+        so the new profile is (5,3,m-4) and the cumulative drop is 8m-40. Apply threesidedescent6 as in the one-label case to obtain the same final profiles and total drop at least 10m-56.
+        
+        Each continuation preserves its chosen F, so the six distinct five-supports produce six distinct final covers. Substituting m=n-4 gives the two minimum-counterexample bounds.
+
     • [arbitrary_fiveset_prescribed_pair_sixshell_menu01] Any five-set and prescribed exterior pair generate a complete six-shell transport menu
         STATEMENT
         Let H be a minimum counterexample, let X be any five-vertex set, fix x in X, and let p,q be distinct vertices outside X. Put A=X-{x} and S=A union {p,q}. Then at least two distinct vertices d in A satisfy that S-{d} is Hamiltonian, and each corresponding complement H-(S-{d}) is non-Hamiltonian with path-cover number two. Moreover at least one of the following holds: (1) S is Hamiltonian, with H-S non-Hamiltonian of path-cover number two; (2) at least one of A union {p}, A union {q} is Hamiltonian; (3) S is non-Hamiltonian, both A union {p} and A union {q} are non-Hamiltonian, and the Hamiltonian two-deletion graph J on A has adjacent edges, yielding two Hamiltonian four-subsets of S containing {p,q} and overlapping in three vertices, with the standard overlap-amplification package; (4) S is non-Hamiltonian, both A union {p} and A union {q} are non-Hamiltonian, and J is a perfect matching. In outcome (4), the two matching edges are exactly the two fixed-pair orientation classes of A relative to p,q, every cross pair gives a non-Hamiltonian four-set, and every cross cell carries the complete opposite-orientation hook rectangle. Thus no Hamiltonicity or path-cover hypothesis on the starting five-set X is required.
@@ -30194,43 +30247,6 @@
         Let C=P|(x)|Q be a spanning three-cover of a boundary tournament, with |P|=3 and Q=(q_0,...,q_{m-1}), m>=5. Put X=V(P) union {x}. For every prescribed pair Z={z,zprime} subset X, at least one of F_z={z,q_0,q_1,q_2,q_3}, F_zprime={zprime,q_0,q_1,q_2,q_3}, and F_Z={z,zprime,q_0,q_1,q_2} is Hamiltonian. A Hamiltonian F_z or F_zprime yields a spanning three-cover with component orders (5,3,m-4), whose complement paths have supports X-{z} or X-{zprime}, and {q_4,...,q_{m-1}}. A Hamiltonian F_Z yields a spanning three-cover with orders (5,2,m-3), whose complement paths have supports X-Z and {q_3,...,q_{m-1}}. Thus at most eight vertices near the chosen endpoint are rearranged, and the remaining Q-segment is retained in its displayed order. Relative to C, the quadratic-potential changes are respectively 40-8m and 28-6m. Both are strictly negative for m>=6; at m=5 the first is zero and the second is negative. The analogous result holds at the other endpoint, retaining the displayed prefix of Q. In a minimum-counterexample deletion cover with |P|=3, m>=7, so both branches are strict. The new cover is reachable from C by at most two pairwise repartitions, each nonincreasing in quadratic potential. The first repartitions P|(x) into component orders (1,3) in a one-label branch, or into (2,2) in the two-label branch; the second repartitions the selected singleton or pair with Q, keeping the other short path unchanged. Therefore for m>=6 this is strict descent within the same pairwise-repartition component.
         BODY / PROOF
         Fix Z={z,zprime}. Let U=Z union {q_0,q_1,q_2,q_3}, a six-set. The three listed five-supports are U-{zprime}, U-{z}, and U-{q_3}. They are distinct. By the four-of-six theorem in smallset01, at most two five-subsets of U are non-Hamiltonian. Hence at least one listed support is Hamiltonian. This does not require X or the four-vertex Q-window to be Hamiltonian, and does not use endpoint barriers or cyclic rotation of tight triples. If F_z is Hamiltonian, choose a Hamilton path on it. The three-set X-{z} has a tight Hamilton path: on any three-set a boundary tournament contains a tight ordering by its reversal-pair axiom. Pair these two paths with the displayed suffix (q_4,...,q_{m-1}), which is nonempty for m>=5. Their supports partition V(C), so they form a spanning three-cover. The F_zprime branch is identical. If F_Z is Hamiltonian, X-Z is a two-set and hence a tight path in either order; pair it with a Hamilton path on F_Z and the displayed suffix (q_3,...,q_{m-1}). Again the supports are disjoint and spanning. These are actual repartitions of the original three-cover, with explicit complementary paths, rather than arbitrary complement covers from minimality. In the first branch only X and the first four vertices of Q change path assignments; in the second only X and the first three change assignments. The original potential is 3^2+1^2+m^2=m^2+10. The two new potentials are 5^2+3^2+(m-4)^2 and 5^2+2^2+(m-3)^2, giving the stated differences. For the other endpoint use U=Z union the last four displayed Q-vertices, and take the third candidate by deleting the earliest of these four. The inherited complement is then the displayed prefix, so no reversal of a tight path is invoked. In a minimum counterexample, mincex01 gives order greater than ten, and n=m+4 implies m>=7. This is a replacement for the proposed endpoint alternating-five-window route in threeside_consecutive_fivewindows01: it gives a positioned five-support and inherited complementary two-cover, while it does not assert that all four two-label five-windows are Hamiltonian. The new cover is reachable by at most two legal pairwise repartitions, with no increase of quadratic potential at either step. In the F_z branch, repartition P|(x), on its four-vertex union X, into (z)|R where R is a Hamilton path on X-{z}. Such a three-vertex Hamilton path always exists. This first step preserves the component orders 1,3 and is neutral; omit it if z=x. Now repartition (z)|Q into a Hamilton path on F_z and the displayed suffix (q_4,...,q_{m-1}), leaving R unchanged. Its potential change is 40-8m. The F_zprime branch is identical. In the F_Z branch, first repartition P|(x) into the two two-vertex paths on Z and X-Z. This decreases potential by 2, since 2^2+2^2-(3^2+1^2)=-2. Next repartition the two-path on Z together with Q into a Hamilton path on F_Z and the displayed suffix (q_3,...,q_{m-1}), leaving the other two-path unchanged. This step changes potential by 30-6m, which is nonpositive for m>=5. The combined change is 28-6m. Thus at m=5 each step is still nonincreasing, and the F_Z route is strict in its first step. For m>=6 either branch yields a strict pairwise-reachable decrease, without changing any long-path vertices beyond the first four. All states remain in the original pairwise-repartition component. The omitted singleton label may change or disappear as a singleton during these legal moves; keeping that label omitted throughout is not asserted. A two-cover is not produced.
-
-      • [1000915] A three-side singleton lift has a six-way strict descent fan
-          STATEMENT
-          Let C=P|(x)|Q be a spanning three-cover of a boundary tournament, where |P|=3 and Q=(q_0,...,q_{m-1}) has m>=7. Put X=V(P) union {x}.
-          
-          At the left end define, for v in X and Z in binom(X,2),
-          L_v={v,q_0,q_1,q_2,q_3},
-          L_Z=Z union {q_0,q_1,q_2}.
-          At the right end define
-          R_v={v,q_{m-4},q_{m-3},q_{m-2},q_{m-1}},
-          R_Z=Z union {q_{m-3},q_{m-2},q_{m-1}}.
-          
-          At least three distinct members of the left family {L_v} union {L_Z} are Hamiltonian, and at least three distinct members of the right family {R_v} union {R_Z} are Hamiltonian. Every Hamiltonian member produces, by at most two legal pairwise repartitions from C, each nonincreasing in quadratic potential, a spanning three-cover in the same pairwise-repartition component with that member as a five-vertex component. For L_v or R_v the new component orders are (5,3,m-4) and the total potential change is 40-8m; for L_Z or R_Z they are (5,2,m-3) and the change is 28-6m.
-          
-          The left and right candidate families are disjoint when m>=7. Consequently C has at least six distinct reachable support partitions of strictly smaller quadratic potential, each within pairwise-repartition distance at most two. Every one lowers the potential by at least 6m-28.
-          
-          Moreover, suppose exactly six candidates across the two endpoint families are Hamiltonian. Let A_L be the set of v in X for which L_v is Hamiltonian and define A_R analogously. Then either A_L intersects A_R, so one label of X occurs in a one-label Hamiltonian five-support at both ends, or X has a partition X=A disjoint_union B into two pairs such that the left Hamiltonian candidates are exactly {L_v:v in A} together with L_B, while the right Hamiltonian candidates are exactly {R_v:v in B} together with R_A.
-          
-          In particular, if H is a minimum counterexample and H-x=P|Q is an exact deletion cover with |P|=3, then m=|Q|=|V(H)|-4>=7. Its singleton lift P|(x)|Q is therefore never quadratic-potential-minimal in its pairwise-repartition component; indeed it has at least six distinct descents, each decreasing potential by at least 6|V(H)|-52>=14.
-          BODY / PROOF
-          Use threeside_bounded_endpoint_five_repartition01 at the left endpoint for every prescribed pair Z={u,v} subset X. Write A_L for the set of labels v for which L_v is Hamiltonian, and B_L for the set of pairs Z for which L_Z is Hamiltonian. The cited theorem says, for every pair {u,v}, that at least one of L_u,L_v,L_{uv} is Hamiltonian. Hence every pair contained in X-A_L belongs to B_L.
-          
-          Put a=|A_L|. Since |X|=4,
-          |A_L|+|B_L| >= a + binom(4-a,2).
-          For a=0,1,2,3,4 the right side is respectively 6,4,3,3,4. Thus at least three distinct left candidates are Hamiltonian. The same argument at the right endpoint gives at least three right candidates.
-          
-          For each Hamiltonian candidate, threeside_bounded_endpoint_five_repartition01 supplies the explicit at-most-two-step pairwise-repartition route and its complementary inherited paths. A one-label candidate has profile (5,3,m-4) and potential change 40-8m; a two-label candidate has profile (5,2,m-3) and change 28-6m. For m>=7 both are negative, and
-          min(8m-40,6m-28)=6m-28,
-          so every route decreases potential by at least 6m-28.
-          
-          The two endpoint families are disjoint. Left and right one-label candidates contain different four-vertex Q-blocks when m>=7; left and right two-label candidates contain different three-vertex Q-blocks; and a one-label candidate cannot equal a two-label candidate because they contain different numbers of vertices from X. Hence the three left descents and three right descents give at least six distinct support partitions.
-          
-          For the equality statement, suppose there are exactly three Hamiltonian candidates at one endpoint. If a=|A_L|, the inequality above shows a is 2 or 3. If a=3 then B_L is empty; if a=2 then B_L consists exactly of the unique pair on X-A_L. The same holds on the right.
-          
-          Now suppose there are exactly six Hamiltonian candidates total and A_L cap A_R is empty. Both endpoint families have exactly three candidates, hence |A_L|,|A_R|>=2. Their disjointness inside the four-set X forces |A_L|=|A_R|=2 and X=A_L disjoint_union A_R. The equality description from the preceding paragraph then gives B_L={A_R} and B_R={A_L}, which is precisely the crossed two-pair pattern in the statement. Otherwise A_L cap A_R is nonempty and supplies a label good at both ends.
-          
-          Finally, in a minimum counterexample the certified minimum-counterexample calculus gives |V(H)|>10, so an exact deletion cover with a three-vertex component has m=|V(H)|-4>=7. Substituting m=n-4 into 6m-28 gives 6n-52>=14. Thus its singleton lift cannot be a quadratic-potential minimum in its pairwise-repartition component.
 
     • [two_bad_five_extensions_all_opposite01] Two non-Hamiltonian five-extensions force all four opposite five-deletions Hamiltonian
         STATEMENT
