@@ -4,6 +4,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/sync_research_mirror.py"
+      - ".github/workflows/sync-research-mirror.yml"
 
 permissions:
   contents: write
