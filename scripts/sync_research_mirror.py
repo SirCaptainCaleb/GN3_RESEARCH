@@ -185,12 +185,46 @@ def metadata(o: dict[str, Any]) -> dict[str, Any]:
     m["body_sha256"] = sha256_text(o.get("body") or "")
     return m
 
-def render_forest(objects: list[dict[str, Any]], mode: str) -> str:
-    active = [o for o in objects if o.get("trashed_at") is None]
-    active.sort(key=lambda o: (o.get("tree_path") or "", str(o.get("id"))))
+def render_forest(objects: list[dict[str, Any]], mode: str, atlas: dict[str, Any] | None = None) -> str:
+    active = {o["id"]: o for o in objects if o.get("trashed_at") is None}
+    children: dict[str | None, list[str]] = {}
+    for o in active.values():
+        children.setdefault(o.get("parent_id"), []).append(o["id"])
+
+    atlas_entries = (atlas or {}).get("entries") or []
+    atlas_rank = {e.get("id"): i for i, e in enumerate(atlas_entries) if e.get("id") in active}
+    no_rank = len(atlas_entries) + len(active) + 1
+    rank_memo: dict[str, int] = {}
+
+    def subtree_atlas_rank(oid: str) -> int:
+        if oid in rank_memo:
+            return rank_memo[oid]
+        ranks = []
+        if oid in atlas_rank:
+            ranks.append(atlas_rank[oid])
+        for kid in children.get(oid, []):
+            ranks.append(subtree_atlas_rank(kid))
+        rank_memo[oid] = min(ranks) if ranks else no_rank
+        return rank_memo[oid]
+
+    def sibling_key(oid: str):
+        o = active[oid]
+        ordinary = (
+            o.get("position") is None,
+            o.get("position") or 0,
+            str(oid),
+        )
+        if atlas_entries:
+            return (subtree_atlas_rank(oid),) + ordinary
+        return ordinary
+
+    for ids in children.values():
+        ids.sort(key=sibling_key)
+
     lines = []
-    for o in active:
-        depth = max(0, len([p for p in (o.get("tree_path") or "").strip("/").split("/") if p]) - 1)
+
+    def emit(oid: str, depth: int):
+        o = active[oid]
         pre = "  " * depth
         if mode == "simplified":
             val = (o.get("simplified_statement") or "").strip() or f"‹{o.get('title','')}›"
@@ -206,6 +240,11 @@ def render_forest(objects: list[dict[str, Any]], mode: str) -> str:
                 bd = (o.get("body") or "").strip() or "‹none›"
                 lines.extend(f"{sub}{x}" for x in bd.splitlines())
             lines.append("")
+        for kid in children.get(oid, []):
+            emit(kid, depth + 1)
+
+    for oid in children.get(None, []):
+        emit(oid, 0)
     return "\n".join(lines)
 
 def atlas_text(atlas: dict[str, Any]) -> str:
@@ -318,7 +357,7 @@ def build_schema(folder: str, schema: str):
 
     write_json(ctx / "rpc_signatures.json", context(schema, "rpc_signatures"))
     write_json(ctx / "rpc_list.json", context(schema, "rpc_list"))
-    write_text(ctx / "simplified_forest.md", render_forest(objects, "simplified"))
+    write_text(ctx / "simplified_forest.md", render_forest(objects, "simplified", atlas))
     write_text(ctx / "statement_forest.md", render_forest(objects, "statement"))
     write_text(ctx / "statement_plus_proof_forest.md", render_forest(objects, "full"))
 
