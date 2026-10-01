@@ -299,6 +299,174 @@ def startup_atlas_text(sa: dict[str, Any]) -> str:
         lines.append(f"{'  '*d}• [{e.get('id')}] {(e.get('summary') or e.get('title') or '').strip()}{suffix}")
     return "\n".join(lines)
 
+def frontier_payload(
+    objects: list[dict[str, Any]],
+    edges: list[dict[str, Any]],
+    state_rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Reproduce frontier() from the mirrored live rows."""
+    active = {o["id"]: o for o in objects if o.get("trashed_at") is None}
+    state = state_rows[0] if state_rows else {}
+    root_id = state.get("grand_theorem_id")
+    root = active.get(root_id)
+    root_path = (root or {}).get("tree_path")
+    if not root_path:
+        return {
+            "entries": [],
+            "frontier_count": 0,
+            "repository_revision": state.get("revision"),
+            "definition": "Active theorem-facing terminal research objects visible for work.",
+            "note": "Grand-theorem root unavailable in mirror.",
+        }
+
+    hidden_paths = [
+        o.get("tree_path") for o in active.values()
+        if o.get("atlas_hidden") and o.get("tree_path")
+    ]
+
+    superseded = set()
+    for e in edges:
+        if e.get("kind") != "supersedes":
+            continue
+        metadata = e.get("metadata") or {}
+        if metadata.get("supersession_state", "effective") != "effective":
+            continue
+        replacement = active.get(e.get("from_id"))
+        if replacement and replacement.get("lifecycle_status") == "active" and replacement.get("audit_status") != "failed":
+            superseded.add(e.get("to_id"))
+
+    fenced = set()
+    for e in edges:
+        if e.get("kind") != "fence":
+            continue
+        fence = active.get(e.get("from_id"))
+        if fence and fence.get("lifecycle_status") == "active" and fence.get("audit_status") != "failed":
+            fenced.add(e.get("to_id"))
+
+    visible: dict[str, dict[str, Any]] = {}
+    for oid, o in active.items():
+        tree_path = o.get("tree_path") or ""
+        if o.get("lifecycle_status") != "active":
+            continue
+        if o.get("audit_status") == "failed":
+            continue
+        if o.get("object_type") == "fence":
+            continue
+        if (o.get("attention") or "available") == "hidden":
+            continue
+        if (o.get("support_status") or "unchecked") == "blocked":
+            continue
+        if not tree_path.startswith(root_path):
+            continue
+        if any(tree_path.startswith(hp) for hp in hidden_paths):
+            continue
+        if oid in superseded:
+            continue
+        visible[oid] = o
+
+    visible_parents = {o.get("parent_id") for o in visible.values()}
+    leaves = [o for oid, o in visible.items() if oid not in visible_parents]
+
+    def atlas_height_key(o: dict[str, Any]) -> int:
+        try:
+            return int(o.get("atlas_height"))
+        except (TypeError, ValueError):
+            return -1
+
+    def attention_rank(o: dict[str, Any]) -> int:
+        return {"focus": 0, "available": 1}.get(o.get("attention"), 2)
+
+    leaves.sort(key=lambda o: (
+        attention_rank(o),
+        o.get("atlas_height") is None,
+        -atlas_height_key(o),
+        str(o.get("tree_path") or ""),
+        str(o.get("id") or ""),
+    ))
+
+    entries = []
+    for o in leaves:
+        summary = str(o.get("simplified_statement") or "").strip() or str(o.get("title") or "")
+        entries.append({
+            "id": o.get("id"),
+            "parent_id": o.get("parent_id"),
+            "title": o.get("title"),
+            "summary": summary,
+            "category": o.get("research_level") or o.get("object_type"),
+            "mathematical_status": o.get("mathematical_status"),
+            "audit_status": o.get("audit_status"),
+            "support_status": o.get("support_status"),
+            "attention": o.get("attention"),
+            "pending": o.get("audit_status") == "pending",
+            "obstructed": (o.get("support_status") == "blocked") or (o.get("id") in fenced),
+            "atlas_height": o.get("atlas_height"),
+            "research_interface": o.get("research_interface") or {},
+        })
+
+    return {
+        "entries": entries,
+        "frontier_count": len(entries),
+        "repository_revision": state.get("revision"),
+        "definition": "Active theorem-facing terminal research objects that are visible for work: nonhidden, nonfailed, nonblocked, non-superseded leaves of the grand-theorem reasoning tree.",
+        "note": "Flat frontier only. After choosing an item, call ancestry() or simplified_ancestry() separately for route context.",
+    }
+
+
+def frontier_text(frontier: dict[str, Any]) -> str:
+    """Render the mathematical working surface of frontier() without JSON scaffolding."""
+    lines = [
+        "# Research frontier",
+        "",
+        f"Repository revision: {frontier.get('repository_revision')}",
+        f"Frontier objects: {frontier.get('frontier_count', 0)}",
+        "",
+        str(frontier.get("definition") or ""),
+        "",
+        str(frontier.get("note") or ""),
+    ]
+
+    interface_order = [
+        "given", "produces", "need", "consumer", "warning", "implication",
+        "role", "first_attack", "global_relevance", "trust",
+    ]
+
+    for e in frontier.get("entries") or []:
+        summary = str(e.get("summary") or e.get("title") or "").strip()
+        lines.extend(["", f"## [{e.get('id')}] {summary}"])
+
+        statuses = [
+            str(e.get("attention") or ""),
+            str(e.get("category") or ""),
+            str(e.get("mathematical_status") or ""),
+            str(e.get("audit_status") or ""),
+            str(e.get("support_status") or ""),
+        ]
+        if e.get("pending"):
+            statuses.append("pending")
+        if e.get("obstructed"):
+            statuses.append("obstructed")
+        statuses = [s for s in statuses if s]
+        if statuses:
+            lines.append(" · ".join(statuses))
+
+        if e.get("parent_id"):
+            lines.append(f"Parent: [{e.get('parent_id')}]")
+
+        interface = e.get("research_interface") or {}
+        keys = [k for k in interface_order if interface.get(k) not in (None, "", [], {})]
+        keys += sorted(
+            k for k, v in interface.items()
+            if k not in interface_order and v not in (None, "", [], {})
+        )
+        for key in keys:
+            label = key.replace("_", " ").title()
+            value = interface[key]
+            if isinstance(value, (dict, list)):
+                value = json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+            lines.append(f"**{label}:** {value}")
+
+    return "\n".join(lines)
+
 def build_schema(folder: str, schema: str):
     root = STAGE / folder
     rows = {t: mirror_rows(schema, t) for t in TABLES}
@@ -356,6 +524,10 @@ def build_schema(folder: str, schema: str):
     write_text(ctx / "atlas.md", atlas_text(atlas))
     write_json(ctx / "startup_atlas.json", satlas)
     write_text(ctx / "startup_atlas.md", startup_atlas_text(satlas))
+
+    frontier = frontier_payload(objects, rows["edges"], rows["state"])
+    write_json(ctx / "frontier.json", frontier)
+    write_text(ctx / "frontier.md", frontier_text(frontier))
 
     write_json(ctx / "help" / "_index.json", hindex)
     help_docs = {}
