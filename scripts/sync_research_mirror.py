@@ -104,8 +104,8 @@ def write_yaml(path: Path, value: Any):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(yaml_lines(value)) + "\n", encoding="utf-8")
 
-def write_dictionary_yaml(path: Path, rows: list[dict[str, Any]]):
-    """Write one simple YAML mapping: term -> definition, with note appended in brackets."""
+def write_dictionary_text(path: Path, rows: list[dict[str, Any]]):
+    """Write one plain-text dictionary entry per line: term = definition [note]."""
     path.parent.mkdir(parents=True, exist_ok=True)
     items = sorted(rows, key=lambda r: str(r.get("term") or "").casefold())
     lines = []
@@ -116,9 +116,7 @@ def write_dictionary_yaml(path: Path, rows: list[dict[str, Any]]):
         value = definition
         if note:
             value = f"{value} [{note}]" if value else f"[{note}]"
-        key_yaml = json.dumps(term, ensure_ascii=False)
-        value_yaml = json.dumps(value, ensure_ascii=False)
-        lines.append(f"{key_yaml}: {value_yaml}")
+        lines.append(f"{term} = {value}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 def write_json(path: Path, value: Any):
@@ -126,13 +124,24 @@ def write_json(path: Path, value: Any):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 def write_rpc_signatures(path: Path, catalog: list[dict[str, Any]]):
-    """Write a tiny candidate-lookup list: RPC name, inputs, conservative write flag."""
+    """Write one plain RPC signature per line: name(input1,...,inputN)."""
     path.parent.mkdir(parents=True, exist_ok=True)
+
+    def input_names(arguments: str) -> list[str]:
+        if not arguments.strip():
+            return []
+        names = []
+        for argument in arguments.split(","):
+            token = argument.strip().split(None, 1)[0]
+            if token:
+                names.append(token)
+        return names
+
     lines = []
     for item in catalog:
-        lines.append(f"- name: {json.dumps(str(item.get('name') or ''), ensure_ascii=False)}")
-        lines.append(f"  inputs: {json.dumps(str(item.get('inputs') or ''), ensure_ascii=False)}")
-        lines.append(f"  writes: {'true' if item.get('writes') else 'false'}")
+        name = str(item.get("name") or "")
+        names = input_names(str(item.get("inputs") or ""))
+        lines.append(f"{name}({','.join(names)})")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 def write_rpc_definitions(path: Path, catalog: list[dict[str, Any]]):
@@ -340,8 +349,8 @@ def build_schema(folder: str, schema: str):
 
     for table in ["edges", "reasoning_nodes", "certificates", "object_authors"]:
         write_yaml(root / "relations" / f"{table}.yaml", rows[table])
-    write_dictionary_yaml(
-        root / "vocabulary" / "standardization_dictionary.yaml",
+    write_dictionary_text(
+        root / "vocabulary" / "standardization_dictionary.txt",
         rows["standardization_dictionary"],
     )
     write_yaml(root / "state" / "project.yaml", rows["state"])
@@ -382,7 +391,7 @@ def build_schema(folder: str, schema: str):
     write_json(ctx / "rpc_list.json", context(schema, "rpc_list"))
     rpc_catalog = context(schema, "rpc_catalog")
     write_json(ctx / "rpc_catalog.json", rpc_catalog)
-    write_rpc_signatures(ctx / "rpc_signatures.yaml", rpc_catalog)
+    write_rpc_signatures(ctx / "rpc_signatures.txt", rpc_catalog)
     write_rpc_definitions(ctx / "rpc_definitions.md", rpc_catalog)
     write_text(ctx / "simplified_forest.md", render_forest(objects, "simplified", atlas))
     write_text(ctx / "statement_forest.md", render_forest(objects, "statement"))
