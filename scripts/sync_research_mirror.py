@@ -124,24 +124,13 @@ def write_json(path: Path, value: Any):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 def write_rpc_signatures(path: Path, catalog: list[dict[str, Any]]):
-    """Write one plain RPC signature per line: name(input1,...,inputN)."""
+    """Write one plain RPC signature per line, preserving types and defaults."""
     path.parent.mkdir(parents=True, exist_ok=True)
-
-    def input_names(arguments: str) -> list[str]:
-        if not arguments.strip():
-            return []
-        names = []
-        for argument in arguments.split(","):
-            token = argument.strip().split(None, 1)[0]
-            if token:
-                names.append(token)
-        return names
-
     lines = []
     for item in catalog:
         name = str(item.get("name") or "")
-        names = input_names(str(item.get("inputs") or ""))
-        lines.append(f"{name}({','.join(names)})")
+        inputs = str(item.get("inputs") or "")
+        lines.append(f"{name}({inputs})")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 def write_rpc_definitions(path: Path, catalog: list[dict[str, Any]]):
