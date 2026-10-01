@@ -559,19 +559,15 @@ def build_schema(folder: str, schema: str):
     write_text(ctx / "statement_plus_proof_forest.md", render_forest(objects, "full"))
 
     state = rows["state"][0] if rows["state"] else {}
-    bootstrap = f"""# {folder} startup bootstrap
+    bootstrap = f"""# {folder} artifact bootstrap
 
-This export is a convenience snapshot of the live Supabase project. Supabase state and RPC behavior are authoritative.
+This directory is the artifact snapshot for repository revision {state.get('revision')}. Supabase remains authoritative for live state and updates.
 
-A fresh worker begins with:
+If you reached this file through {schema}.boot(), the worker identity and boot contract are already established. Do not call {schema}.startup() or {schema}.atlas() merely to re-ingest context already present here.
 
-    select * from {schema}.startup();
+Use research/startup_atlas.md for compact orientation, research/atlas.md for the broader conceptual map, and research/frontier.md for current theorem-facing leaves. Pull exact live mathematics from Supabase only when needed, especially for changes after this artifact revision or before state-sensitive mutations.
 
-Retain the returned worker_id. Before mathematical work, use the live {schema}.atlas() orientation surface. Pull exact mathematics through {schema}.read(...), ancestry/subtree navigation, or paged read RPCs as needed.
-
-For current project policy use {schema}.get_policy('project_policy'). For shared operational policy use {schema}.get_policy('artifact_kernel') as the compact convenience kernel, and query more specialized live policy only when the active workflow genuinely requires it.
-
-For project vocabulary use {schema}.standardization_dictionary(). For exact RPC discovery use {schema}.rpc_signatures(name) and the live PostgreSQL function definitions when implementation detail is required.
+Use kernel.md, project_policy.md, roles/, standardization_dictionary.txt, and the RPC lookup files as the artifact's baseline operational context. continue(worker_id) will report context files whose live hashes have changed since the artifact snapshot rather than resending unchanged artifact material.
 
 Repository revision at export: {state.get('revision')}
 """
