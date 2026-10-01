@@ -10,6 +10,11 @@ on:
 
 permissions:
   contents: read
+  actions: write
+
+concurrency:
+  group: research-context-artifact
+  cancel-in-progress: false
 
 jobs:
   artifact:
@@ -39,32 +44,33 @@ jobs:
             test -f "$src/policies/project_policy.md"
             test -f "$schema/vocabulary/standardization_dictionary.yaml"
 
-            mkdir -p "$dst/roles" "$dst/policies" "$dst/research_tree"
+            mkdir -p "$dst/roles" "$dst/research"
 
             # Entry point and compact API lookup.
             cp "$src/startup_bootstrap.md" "$dst/startup_bootstrap.md"
             cp "$src/rpc_signatures.yaml" "$dst/rpc_signatures.yaml"
             cp "$src/rpc_definitions.md" "$dst/rpc_definitions.md"
 
-            # One shared compact kernel plus the project's own policy.
-            cp "$src/policies/kernel.md" "$dst/policies/kernel.md"
-            cp "$src/policies/project_policy.md" "$dst/policies/project_policy.md"
+            # Compact policy views live at the schema root.
+            cp "$src/policies/kernel.md" "$dst/kernel.md"
+            cp "$src/policies/project_policy.md" "$dst/project_policy.md"
 
             # Roles remain separate operational views.
             find "$src/roles" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/roles/" \;
 
-            # The mathematical navigation surface gets its own home.
-            cp "$src/atlas.md" "$dst/research_tree/atlas.md"
-            cp "$src/startup_atlas.md" "$dst/research_tree/startup_atlas.md"
-            cp "$src/simplified_forest.md" "$dst/research_tree/simplified_forest.md"
-            cp "$src/statement_forest.md" "$dst/research_tree/statement_forest.md"
-            cp "$src/statement_plus_proof_forest.md" "$dst/research_tree/statement_plus_proof_forest.md"
+            # Mathematical navigation surface.
+            cp "$src/atlas.md" "$dst/research/atlas.md"
+            cp "$src/startup_atlas.md" "$dst/research/startup_atlas.md"
+            cp "$src/simplified_forest.md" "$dst/research/simplified_forest.md"
+            cp "$src/statement_forest.md" "$dst/research/statement_forest.md"
+            cp "$src/statement_plus_proof_forest.md" "$dst/research/statement_plus_proof_forest.md"
 
             # Vocabulary is small enough to live at the schema root.
             cp "$schema/vocabulary/standardization_dictionary.yaml"                "$dst/standardization_dictionary.yaml"
           done
 
       - name: Upload research context artifact
+        id: upload
         uses: actions/upload-artifact@v4
         with:
           name: research-context
@@ -72,3 +78,17 @@ jobs:
           if-no-files-found: error
           compression-level: 9
           retention-days: 7
+
+      - name: Delete older research context artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh api --paginate             -H "Accept: application/vnd.github+json"             "/repos/$REPO/actions/artifacts?name=research-context&per_page=100"             --jq '.artifacts[].id' |
+          while read -r artifact_id; do
+            if [ "$artifact_id" != "$CURRENT_ARTIFACT_ID" ]; then
+              gh api --method DELETE "/repos/$REPO/actions/artifacts/$artifact_id"
+            fi
+          done
