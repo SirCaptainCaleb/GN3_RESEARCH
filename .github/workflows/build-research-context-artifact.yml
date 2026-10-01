@@ -146,12 +146,19 @@ jobs:
           if not key.startswith("sb_secret_"):
               headers["Authorization"] = f"Bearer {key}"
 
-          req = urllib.request.Request(
-              os.environ["SUPABASE_URL"].rstrip("/") + "/rest/v1/rpc/research_artifact_publish",
-              data=json.dumps(payload).encode(),
-              headers=headers,
-              method="POST",
-          )
-          with urllib.request.urlopen(req, timeout=60) as response:
-              print(response.read().decode())
+          def call_rpc(name, payload):
+              req = urllib.request.Request(
+                  os.environ["SUPABASE_URL"].rstrip("/") + "/rest/v1/rpc/" + name,
+                  data=json.dumps(payload).encode(),
+                  headers=headers,
+                  method="POST",
+              )
+              with urllib.request.urlopen(req, timeout=60) as response:
+                  print(response.read().decode())
+
+          call_rpc("research_artifact_publish", payload)
+          call_rpc("research_artifact_cache_context", {
+              "p_revisions": payload["p_revisions"],
+              "p_commit_sha": os.environ["COMMIT_SHA"],
+          })
           PY
