@@ -97,6 +97,11 @@
       "result": "jsonb"
     },
     {
+      "arguments": "p_worker_id bigint",
+      "name": "boot",
+      "result": "jsonb"
+    },
+    {
       "arguments": "p_limit integer, p_revision_window bigint",
       "name": "brainstorm_recent",
       "result": "jsonb"

@@ -2100,6 +2100,58 @@ $function$
 
 ```
 
+## boot(p_worker_id bigint DEFAULT NULL::bigint) -> jsonb
+
+```sql
+CREATE OR REPLACE FUNCTION control_center.boot(p_worker_id bigint DEFAULT NULL::bigint)
+ RETURNS jsonb
+ LANGUAGE plpgsql
+ SECURITY DEFINER
+AS $function$
+declare
+  v_project text;
+  v_worker bigint := coalesce(p_worker_id, control_center.allocate_identity('operational_id'));
+  v_live_revision bigint;
+  v_meta jsonb;
+  v_artifact_revision bigint;
+  v_body text;
+begin
+  v_project := control_center.active_project();
+
+  if p_worker_id is not null and control_center.worker_retired_by_current_batch(p_worker_id) then
+    return jsonb_build_object(
+      'wid',p_worker_id,
+      'worker_id',p_worker_id,
+      'architecture',v_project,
+      'halt',true,
+      'retired_by_new_research_batch',true,
+      'message','This worker_id was retired by an explicit new-research-batch cutover. Start a new artifact worker with boot().'
+    );
+  end if;
+
+  select revision into v_live_revision from state where singleton;
+  select value into v_meta from control_center.configuration where key='artifact.latest';
+  select body into v_body from control_center.policies where policy_key='artifact_bootstrap';
+
+  v_artifact_revision := nullif(v_meta->'revisions'->>v_project,'')::bigint;
+
+  return jsonb_strip_nulls(jsonb_build_object(
+    'wid',v_worker,
+    'worker_id',v_worker,
+    'architecture',v_project,
+    'artifact_revision',v_artifact_revision,
+    'live_repository_revision',v_live_revision,
+    'updates_after_artifact_revision',greatest(0,v_live_revision-coalesce(v_artifact_revision,v_live_revision)),
+    'release_url',v_meta->>'release_url',
+    'artifact_url',v_meta->>'asset_url',
+    'bootstrap',v_body,
+    'next_required_call',v_project||'.continue('||v_worker::text||')'
+  ));
+end
+$function$
+
+```
+
 ## brainstorm_recent(p_limit integer DEFAULT 2, p_revision_window bigint DEFAULT 200) -> jsonb
 
 ```sql

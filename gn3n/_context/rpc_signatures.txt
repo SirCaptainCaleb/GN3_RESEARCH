@@ -20,6 +20,7 @@ bind_composition(p_worker_id bigint, p_composition_id text, p_source_ids text[],
 bind_composition_v2(p_worker_id bigint, p_composition_id text, p_source_ids text[], p_presence_id bigint, p_presence_generation bigint, p_note text DEFAULT NULL::text)
 bind_replacement_composition_v2(p_worker_id bigint, p_composition_id text, p_source_ids text[], p_presence_id bigint, p_presence_generation bigint, p_note text DEFAULT NULL::text)
 bind_replacement_composition_v2_base_recomposition_audit(p_worker_id bigint, p_composition_id text, p_source_ids text[], p_presence_id bigint, p_presence_generation bigint, p_note text DEFAULT NULL::text)
+boot(p_worker_id bigint DEFAULT NULL::bigint)
 brainstorm_recent(p_limit integer DEFAULT 2, p_revision_window bigint DEFAULT 200)
 broadcast(p_worker_id bigint, p_message text, p_mode text DEFAULT NULL::text)
 broadcast_sticky(p_worker_id bigint, p_message text, p_ttl bigint DEFAULT 0, p_mode text DEFAULT NULL::text)
