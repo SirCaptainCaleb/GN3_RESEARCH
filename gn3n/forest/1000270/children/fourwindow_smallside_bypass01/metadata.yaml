@@ -1,6 +1,6 @@
 atlas_height: "2"
 atlas_hidden: false
-attention: "hidden"
+attention: "focus"
 audit_priority: 100
 audit_requested: false
 audit_requirement: "independent_reconstruction"
@@ -33,9 +33,6 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-29T18:17:40.438494+00:00"
     worker_id: 637
-  supersession_auto_hidden: true
-  supersession_effective_at: "2026-09-29T18:19:55.24415+00:00"
-  supersession_previous_attention: "focus"
 object_type: "research"
 origin_worker_id: 605
 parent_id: "1000270"
@@ -55,5 +52,5 @@ support_status: "supported"
 title: "An anchored four-window yields descent, a Hamiltonian five/six-side, or order at most fourteen"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-29T18:19:55.24415+00:00"
-version: 7
+updated_at: "2026-10-01T17:38:20.468275+00:00"
+version: 8

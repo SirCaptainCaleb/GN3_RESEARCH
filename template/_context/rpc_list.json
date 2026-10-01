@@ -173,6 +173,7 @@
   "unary_chain_candidates",
   "unary_cleanup_candidates",
   "unsupersede",
+  "update_boot",
   "update_broadcast",
   "update_object",
   "update_policy",

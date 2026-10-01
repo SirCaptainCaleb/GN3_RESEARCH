@@ -26,6 +26,7 @@ metadata:
     recorded_at: "2026-09-29T18:48:25.430063+00:00"
     worker_id: 637
   audit_trigger_kind: "explicit_publish_request"
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: 363
     detail: "The certified double-wrap theorem gives a Hamiltonian four-window with pc2 complement in the connected cyclic-interval family; four_window_transport_allorders01 gives exactly the claimed alternatives."
@@ -47,10 +48,10 @@ simplified_statement: "Every nonmatching proper cyclic defect certificate reache
 statement_sha256: "f51c24ab20e8cb9bf80319fa4aaac9cf96b5ff2b262622324b7eab044a889199"
 substantive_worker_ids:
   - 605
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Every nonmatching proper cyclic defect certificate reaches four-window transport"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-29T18:48:25.430063+00:00"
+updated_at: "2026-10-01T17:38:20.468275+00:00"
 version: 7

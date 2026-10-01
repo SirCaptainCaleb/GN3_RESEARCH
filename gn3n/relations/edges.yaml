@@ -2589,8 +2589,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T13:29:16.428269+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T17:44:05.595432+00:00"
   to_id: "fixed_two_core_triple_lift01"
 -
   created_at: "2026-10-01T07:23:47.569741+00:00"
@@ -2599,8 +2599,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T13:29:16.428269+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T17:44:05.595432+00:00"
   to_id: "1000881"
 -
   created_at: "2026-10-01T07:23:47.569741+00:00"
@@ -2609,8 +2609,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T13:29:16.428269+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T17:44:05.595432+00:00"
   to_id: "1000897"
 -
   created_at: "2026-10-01T12:47:19.419259+00:00"
@@ -2708,12 +2708,6 @@
   kind: "depends_on"
   metadata:
   to_id: "singleton_transfer_endpointization01"
--
-  created_at: "2026-10-01T13:41:50.886426+00:00"
-  from_id: "1000905"
-  kind: "depends_on"
-  metadata:
-  to_id: "terminal_singleton_swap_k4_residue01"
 -
   created_at: "2026-10-01T13:41:50.886426+00:00"
   from_id: "1000905"
@@ -2932,6 +2926,195 @@
   metadata:
   to_id: "mincex01"
 -
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000904"
+  to_id: "1000557"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000764"
+      - "four_window_transport_allorders01"
+  to_id: "four_window_transport15"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000764"
+      - "1000904"
+  to_id: "mincex01"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000764"
+  to_id: "shared_endpoint_fork_compression01"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000117"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1000911"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "cyclic_nonmatching_fourwindow_transport01"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1000911"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "proof_rehearsal_20260930"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1000911"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
+  to_id: "four_window_transport_allorders01"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
+  to_id: "1000764"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
+  to_id: "1000904"
+-
+  created_at: "2026-09-29T18:19:40.931844+00:00"
+  from_id: "four_window_transport_allorders01"
+  kind: "supersedes"
+  metadata:
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
+  to_id: "independent_reconstruction"
+-
+  created_at: "2026-09-29T18:19:49.615505+00:00"
+  from_id: "four_window_transport_allorders01"
+  kind: "supersedes"
+  metadata:
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
+  to_id: "fourwindow_smallside_bypass01"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "terminal_singleton_swap_k4_residue01"
+  to_id: "equal_size_block_swap_rectangle01"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000907"
+  to_id: "five_side_arbitrary_escape01"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000906"
+      - "1000907"
+      - "terminal_singleton_swap_k4_residue01"
+  to_id: "mincex01"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000906"
+  to_id: "sixset_prescribed_pair_menu01"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "terminal_singleton_swap_k4_residue01"
+  to_id: "smallset01"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000905"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1000912"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:39:25.898063+00:00"
+  to_id: "terminal_singleton_swap_k4_residue01"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:39:25.898063+00:00"
+  to_id: "1000906"
+-
+  created_at: "2026-10-01T17:39:25.898063+00:00"
+  from_id: "1000912"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:39:25.898063+00:00"
+  to_id: "1000907"
+-
   created_at: "2026-09-28T20:30:46.316948+00:00"
   from_id: "recomp_45plateau_01"
   kind: "depends_on"
@@ -2939,11 +3122,115 @@
     inherited_by_recomposition: true
   to_id: "smallset01"
 -
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000905"
+      - "1000909"
+  to_id: "1000694"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000905"
+    rewired_by_replacement: true
+  to_id: "1000912"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000908"
+      - "1000909"
+  to_id: "five_side_arbitrary_escape01"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000905"
+      - "1000908"
+  to_id: "mincex01"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000905"
+  to_id: "singleton_transfer_endpointization01"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000908"
+  to_id: "sixset_prescribed_pair_menu01"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000905"
+  to_id: "smallset01"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:39:36.313434+00:00"
+  to_id: "1000905"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:39:36.313434+00:00"
+  to_id: "1000908"
+-
+  created_at: "2026-10-01T17:39:36.313434+00:00"
+  from_id: "1000913"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T17:39:36.313434+00:00"
+  to_id: "1000909"
+-
   created_at: "2026-09-26T08:30:49.556184+00:00"
   from_id: "1000686"
   kind: "informs"
   metadata:
   to_id: "1000034"
+-
+  created_at: "2026-10-01T17:43:44.546438+00:00"
+  from_id: "1000894"
+  kind: "depends_on"
+  metadata:
+    reason: "Audit packaging repair: explicit premise for the large-order Hamiltonian-five-side branch."
+  to_id: "ham5_large_escape01"
 -
   created_at: "2026-09-20T20:02:12.584236+00:00"
   from_id: "1000365"
@@ -2956,6 +3243,18 @@
   kind: "depends_on"
   metadata:
   to_id: "extremal01"
+-
+  created_at: "2026-10-01T17:48:15.970041+00:00"
+  from_id: "1000914"
+  kind: "depends_on"
+  metadata:
+  to_id: "mincex01"
+-
+  created_at: "2026-10-01T17:48:15.970041+00:00"
+  from_id: "1000914"
+  kind: "depends_on"
+  metadata:
+  to_id: "smallset01"
 -
   created_at: "2026-09-20T20:22:55.387831+00:00"
   from_id: "1000741"
@@ -7762,12 +8061,6 @@
   metadata:
   to_id: "mincex01"
 -
-  created_at: "2026-09-29T18:37:41.939826+00:00"
-  from_id: "cyclic_nonmatching_fourwindow_transport01"
-  kind: "depends_on"
-  metadata:
-  to_id: "four_window_transport_allorders01"
--
   created_at: "2026-09-26T15:33:11.694132+00:00"
   from_id: "1000219"
   kind: "informs"
@@ -9865,22 +10158,6 @@
   kind: "depends_on"
   metadata:
   to_id: "four_window_transport15"
--
-  created_at: "2026-09-29T18:19:40.931844+00:00"
-  from_id: "four_window_transport_allorders01"
-  kind: "supersedes"
-  metadata:
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-29T18:19:55.24415+00:00"
-  to_id: "independent_reconstruction"
--
-  created_at: "2026-09-29T18:19:49.615505+00:00"
-  from_id: "four_window_transport_allorders01"
-  kind: "supersedes"
-  metadata:
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-29T18:19:55.24415+00:00"
-  to_id: "fourwindow_smallside_bypass01"
 -
   created_at: "2026-09-29T18:23:51.941298+00:00"
   from_id: "global_four_side_transport15"
@@ -12192,12 +12469,6 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-09-29T23:58:16.939093+00:00"
   to_id: "nonham_five_punctured_pc2_cube01"
--
-  created_at: "2026-09-30T05:00:28.78151+00:00"
-  from_id: "proof_rehearsal_20260930"
-  kind: "depends_on"
-  metadata:
-  to_id: "four_window_transport_allorders01"
 -
   created_at: "2026-09-29T21:44:47.802343+00:00"
   from_id: "endpoint_replacement_truncation_dichotomy01"
@@ -14902,12 +15173,6 @@
   metadata:
     rewired_by_replacement: true
   to_id: "endpoint_reversal_obstruction_recomp01"
--
-  created_at: "2026-09-29T18:32:52.239365+00:00"
-  from_id: "1000117"
-  kind: "depends_on"
-  metadata:
-  to_id: "four_window_transport_allorders01"
 -
   created_at: "2026-09-29T17:34:42.26095+00:00"
   from_id: "1000114"

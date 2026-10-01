@@ -1,9 +1,9 @@
-# The fixed-endpoint matching residue always contains two endpoint-preserving Hamiltonian five-supports
+# Any fixed pair across a four-set has two Hamiltonian five-extensions
 
 ## Statement
 
-In the setup of fixed_endpoint_matching_escape01, put E={p_1,p_m}. Independently of the matching hypotheses on the partition X=A union B, at least two vertices x in X satisfy that E union (X-{x}) is a Hamiltonian five-set. In a minimum counterexample each such five-set has non-Hamiltonian path-cover-two complement. Therefore the unresolved matching-shell problem is not production of endpoint-preserving Hamiltonian five-supports; it is aligning one of their complementary two-covers with the inherited interior of P so as to obtain component-respecting escape.
+Let E be any two-set and X any disjoint four-set in a boundary tournament. Then at least two vertices x∈X satisfy that E∪(X−{x}) is Hamiltonian. No path, endpoint, matching, or minimum-counterexample hypothesis is needed. In a minimum counterexample, each such Hamiltonian five-set has non-Hamiltonian path-cover-two complement. In particular, for the fixed-endpoint matching residue with E={p_1,p_m}, endpoint-preserving Hamiltonian five-supports are automatic; the only remaining issue is alignment of a complementary two-cover with the inherited interior of P.
 
 ## Body
 
-Apply twofourhamdeletions01 to the disjoint two-set E={p_1,p_m} and four-set X. It yields at least two x in X for which E union (X-{x}) is Hamiltonian. These supports are proper, so minimum-counterexample calculus gives non-Hamiltonian path-cover-two complements. The proof does not use that A+E and B+E are Hamiltonian. Hence those matching hypotheses only become relevant in the subsequent alignment/transport step, not in producing the five-supports.
+Apply twofourhamdeletions01 directly to the disjoint two-set E and four-set X. It yields at least two x∈X for which E∪(X−{x}) is Hamiltonian. This is a line-independent six-set consequence and uses no path, endpoint, or matching structure. In a minimum counterexample these supports are proper, so minimum-counterexample calculus gives non-Hamiltonian path-cover-two complements. Specializing to E={p_1,p_m} proves the fixed-endpoint matching-shell assertion and shows that the matching hypotheses matter only in the subsequent complementary-cover alignment step.

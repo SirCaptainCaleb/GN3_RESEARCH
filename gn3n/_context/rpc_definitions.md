@@ -2115,7 +2115,9 @@ declare
   v_meta jsonb;
   v_artifact_revision bigint;
   v_body text;
-  v_download_code text;
+  v_artifact_id bigint;
+  v_artifact_path text;
+  v_filename text;
 begin
   v_project := control_center.active_project();
 
@@ -2133,23 +2135,11 @@ begin
   select revision into v_live_revision from state where singleton;
   select value into v_meta from control_center.configuration where key='artifact.latest';
   select body into v_body from control_center.policies where policy_key='artifact_bootstrap';
+
   v_artifact_revision := nullif(v_meta->'revisions'->>v_project,'')::bigint;
-  v_download_code := $CODE$const runs = await tools.mcp__GitHub__fetch({
-  url: "https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/actions/workflows/build-research-context-artifact.yml/runs?status=success&per_page=1"
-});
-const run = JSON.parse(runs.result.content).workflow_runs[0];
-const artifacts = await tools.mcp__GitHub__fetch_workflow_run_artifacts({
-  repo_full_name: "SirCaptainCaleb/GN3_RESEARCH",
-  run_id: run.id,
-  name: "research-context"
-});
-const artifact = artifacts.result.artifacts[0];
-const downloaded = await tools.mcp__GitHub__download_workflow_artifact({
-  repo_full_name: "SirCaptainCaleb/GN3_RESEARCH",
-  artifact_id: artifact.id,
-  file_name: "research-context.zip"
-});
-text(downloaded);$CODE$;
+  v_artifact_id := nullif(v_meta->>'actions_artifact_id','')::bigint;
+  v_artifact_path := v_meta->>'actions_artifact_path';
+  v_filename := 'research_context_'||coalesce(v_artifact_revision::text,'unknown')||'.zip';
 
   return jsonb_strip_nulls(jsonb_build_object(
     'wid',v_worker,
@@ -2160,7 +2150,18 @@ text(downloaded);$CODE$;
     'updates_after_artifact_revision',greatest(0,v_live_revision-coalesce(v_artifact_revision,v_live_revision)),
     'artifact_distribution','github_actions',
     'artifact_name','research-context',
-    'github_artifact_download_code',v_download_code,
+    'artifact_filename',v_filename,
+    'artifact_id',v_artifact_id,
+    'artifact_path',v_artifact_path,
+    'library_search_filename',v_filename,
+    'library_search_call',
+      'await tools.files__search({intent:"nav",search_query:[{q:"'||v_filename||'",search_title_only:true}],scope:{surfaces:["library"]},top_k:5,result_format:"metadata_only"})',
+    'artifact_download_call',
+      'await tools.mcp__GitHub__download_workflow_artifact({repo_full_name:"SirCaptainCaleb/GN3_RESEARCH",artifact_id:'
+      ||coalesce(v_artifact_id::text,'<missing>')
+      ||',file_name:"'||v_filename||'"})',
+    'repair_call_template',
+      'select * from '||v_project||'.update_boot(''<latest artifact url or id>'');',
     'fallback_startup','select * from '||v_project||'.startup();',
     'bootstrap',v_body,
     'next_required_call',v_project||'.continue('||v_worker::text||')'
@@ -12215,6 +12216,75 @@ begin
   return v_result||jsonb_build_object(
     'unsuperseded',true,
     'repository_revision',v_rev
+  );
+end
+$function$
+
+```
+
+## update_boot(p_artifact_path text) -> jsonb
+
+```sql
+CREATE OR REPLACE FUNCTION control_center.update_boot(p_artifact_path text)
+ RETURNS jsonb
+ LANGUAGE plpgsql
+ SECURITY DEFINER
+AS $function$
+declare
+  v_project text;
+  v_id bigint;
+  v_prefix constant text := 'https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/actions/artifacts/';
+  v_value jsonb;
+begin
+  v_project := control_center.active_project();
+
+  if p_artifact_path is null or btrim(p_artifact_path)='' then
+    raise exception 'artifact path is required';
+  end if;
+
+  if p_artifact_path ~ '^[0-9]+$' then
+    v_id := p_artifact_path::bigint;
+    p_artifact_path := v_prefix || v_id::text;
+  elsif p_artifact_path like v_prefix || '%' then
+    begin
+      v_id := substring(p_artifact_path from length(v_prefix)+1)::bigint;
+    exception when others then
+      raise exception 'invalid artifact path %', p_artifact_path;
+    end;
+  else
+    raise exception 'artifact path must be a GitHub Actions artifact API URL or numeric artifact id';
+  end if;
+
+  select value into v_value
+  from control_center.configuration
+  where key='artifact.latest';
+
+  v_value := coalesce(v_value,'{}'::jsonb)
+    || jsonb_build_object(
+      'actions_artifact_id',v_id,
+      'actions_artifact_path',p_artifact_path,
+      'actions_artifact_updated_at',now(),
+      'actions_artifact_updated_by_project',v_project
+    );
+
+  insert into control_center.configuration(key,value,category,description,updated_at)
+  values(
+    'artifact.latest',
+    v_value,
+    'artifact',
+    'Latest published research-context metadata used by boot().',
+    now()
+  )
+  on conflict(key) do update
+  set value=excluded.value,
+      category=excluded.category,
+      description=excluded.description,
+      updated_at=excluded.updated_at;
+
+  return jsonb_build_object(
+    'artifact_id',v_id,
+    'artifact_path',p_artifact_path,
+    'updated',true
   );
 end
 $function$

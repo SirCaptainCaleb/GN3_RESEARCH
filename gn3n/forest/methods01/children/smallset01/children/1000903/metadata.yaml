@@ -2,10 +2,10 @@ atlas_height: null
 atlas_hidden: false
 attention: "available"
 audit_priority: 90
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_check"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 2
 body_sha256: "f9a22a04fa6de12a3b01464d3200b7c716ff5782cab6abb87562732c03eb58a7"
 created_at: "2026-10-01T07:22:31.057568+00:00"
 id: "1000903"
@@ -24,21 +24,21 @@ metadata:
   audit_request_reason: "Elevation strengthened the cross-pair multiplicity to rs>=3(h-3) with an equality classification; request independent check of the new math version."
   audit_request_recorded_at: "2026-10-01T13:34:03.130904+00:00"
   audit_resolution:
-    claim_id: 1064
-    detail: "Four-of-six gives r+s>=4 and each side contributes at least one deletion, so with 1<=r,s<=3 one has rs>=3. Every cross-pair of Hamiltonian deletions gives the common-four-core configuration required by 1000476; the pigeonhole consequence is valid. A separate terminology packaging issue was recorded."
-    math_version: 1
+    claim_id: 1114
+    detail: "Independent reconstruction passes. Four-of-six gives r+s>=4 with r,s>=1; (r-3)(s-3)>=0 gives rs>=3(r+s-3), including the sharp 3/6/9 counts and equality characterization. Each cross-pair correctly feeds 1000476."
+    math_version: 2
     outcome: "pass"
-    recorded_at: "2026-10-01T13:25:00.471671+00:00"
-    worker_id: 1061
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
   audit_trigger_kind: "explicit"
   equivalent_or_stronger: true
   last_audit_observation:
-    claim_id: 1064
-    detail: "Four-of-six gives r+s>=4 and each side contributes at least one deletion, so with 1<=r,s<=3 one has rs>=3. Every cross-pair of Hamiltonian deletions gives the common-four-core configuration required by 1000476; the pigeonhole consequence is valid. A separate terminology packaging issue was recorded."
-    math_version: 1
+    claim_id: 1114
+    detail: "Independent reconstruction passes. Four-of-six gives r+s>=4 with r,s>=1; (r-3)(s-3)>=0 gives rs>=3(r+s-3), including the sharp 3/6/9 counts and equality characterization. Each cross-pair correctly feeds 1000476."
+    math_version: 2
     outcome: "pass"
-    recorded_at: "2026-10-01T13:25:00.471671+00:00"
-    worker_id: 1061
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
   recomposition_audit:
     classified_at: "2026-10-01T07:23:47.569741+00:00"
     scope: "full_mathematical"
@@ -59,10 +59,10 @@ statement_sha256: "8b988ad44508563be75cfe0c2be21e81b1599af6b2951c29c6ceac73e1150
 substantive_worker_ids:
   - 1016
   - 1061
-support_reason: "provisional_unaudited"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Two disjoint triples carry at least three cross-paired common-core transport presentations"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T13:34:03.130904+00:00"
-version: 9
+updated_at: "2026-10-01T17:44:05.595432+00:00"
+version: 11

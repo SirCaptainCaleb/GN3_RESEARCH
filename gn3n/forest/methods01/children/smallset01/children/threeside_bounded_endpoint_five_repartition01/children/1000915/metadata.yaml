@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "89b538a29bf4cef014e26ecbeeb0fa6df5074ef56a0d06cc7eb5b8ebcc82bbbf"
+created_at: "2026-10-01T17:51:08.12458+00:00"
+id: "1000915"
+last_elevation_revision: 0
+last_substantive_worker_id: 1108
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 1108
+parent_id: "threeside_bounded_endpoint_five_repartition01"
+position: 0
+research_interface:
+  consumer: "three-side no-trapping; quadratic-minimum exclusion; endpoint transport and branching arguments"
+  given: "a spanning 3|1|m cover with m at least seven, especially the singleton lift of a deletion cover with a three-vertex side"
+  implication: "three-side singleton lifts are quantitatively far from local Phi-minimality; the minimum-counterexample drop is at least 6n-52"
+  produces: "at least three strict endpoint-local descents at each end, hence six distinct lower-potential support partitions within radius two, with a sharp six-candidate extremal pattern"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every 3|1|m cover with m>=7 has at least six distinct radius-two strict descents, three localized at each end of the long path."
+statement_sha256: "b2d9ce5f2a388c8dcf7dd535142de6f5f47c51e17a98c24f15dedd80495c2b34"
+substantive_worker_ids:
+  - 1108
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "A three-side singleton lift has a six-way strict descent fan"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T17:51:08.12458+00:00"
+version: 2

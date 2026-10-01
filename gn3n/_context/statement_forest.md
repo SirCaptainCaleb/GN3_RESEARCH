@@ -517,6 +517,20 @@
             STATEMENT
             There is a boundary tournament on four vertices {a,b,r_1,r_2} such that R=(r_1,r_2) is a tight path, both (a,r_1,r_2) and (b,r_1,r_2) are tight, but neither (a,b,r_1) nor (b,a,r_1) is tight. Hence boundary antisymmetry alone does not allow two common left extenders of a tight path to be ordered so that both can be prepended. Any argument using such a concatenation requires additional structure.
 
+  • [1000911] Four-window transport compresses to descent, nearby migration, or an endpoint-aligned small support
+      STATEMENT
+      Let H be a minimum counterexample, let W be a Hamiltonian four-set, and let H-W=P|Q be a two-cover. Then at least one of the following holds.
+      
+      (1) |V(H)|<=14.
+      
+      (2) The anchored three-cover W|P|Q admits an endpoint-transfer repartition of strictly smaller quadratic potential.
+      
+      (3) The bounded transport alternative of four_window_transport15 occurs: there are a three-set D, one displayed endpoint e of one complementary path, and both displayed endpoints f,g of the other such that D union {e,f} and D union {e,g} are Hamiltonian five-sets, with the associated six-set carrying the one- and two-label path-cover-two transport data of four_window_transport_allorders01. Moreover this branch can always be sharpened further to one of:
+        (3a) a Hamiltonian four-set W1 with non-Hamiltonian path-cover-two complement and |W intersect W1|=3; or
+        (3b) an endpoint-aligned small support: either a Hamiltonian four-set Z containing e,f,g with non-Hamiltonian path-cover-two complement, or a Hamiltonian five-set S with non-Hamiltonian path-cover-two complement and a Hamilton path whose two endpoints both lie in {e,f,g}.
+      
+      Thus above order fourteen an anchored Hamiltonian four-window cannot terminate in an unstructured order-disagreement residue: it either descends, moves to a distance-one four-window, or produces an explicitly endpoint-aligned Hamiltonian support of order four or five.
+
   • [astraidea001] Weighted longest-path principle and fractional two-cover
       STATEMENT
       For every finite boundary tournament H and every nonnegative vertex weight function w, some tight path P satisfies w(V(P)) >= w(V(H))/2.
@@ -1332,26 +1346,6 @@
       STATEMENT
       Let H be a minimum counterexample. Then every component of every one-vertex deletion two-cover H-x=P|Q has order at least three.
 
-  • [four_window_transport_allorders01] Every anchored four-window gives descent, bounded pc2 transport, or order at most fourteen
-      STATEMENT
-      Let H be a minimum counterexample, let W be a Hamiltonian four-vertex set, and let H-W=P|Q be a two-cover. Then at least one of the following holds: (1) |V(H)|<=14; (2) W|P|Q admits an endpoint-transfer three-cover of strictly smaller quadratic potential; (3) there are a three-set D, one displayed endpoint e of one complement path, and both displayed endpoints f,g of the other complement path such that D∪{e,f} and D∪{e,g} are Hamiltonian five-sets, and the six-set U=D∪{e,f,g} carries explicit path-cover-two transport data: if U is Hamiltonian then H-U supports a full two-label path-cover-two square, while if U is non-Hamiltonian then U has at least four Hamiltonian deletions whose corresponding one-label complement extensions are path-cover-two, with a minimum-degree-one graph of two-label path-cover-two extensions.
-
-    • [1000764] Above order fourteen four-window migration is distance-one or a paired opposite-end fork
-        STATEMENT
-        Let H be a minimum counterexample, let W be a Hamiltonian four-vertex set, and let H-W=P|Q be a two-cover. Then at least one of the following holds. (1) |V(H)|<=14. (2) W|P|Q admits an endpoint-transfer three-cover of strictly smaller quadratic potential. (3) There is another Hamiltonian four-set W1 with H-W1 non-Hamiltonian of path-cover number two and |W intersect W1|=3. (4) There are w in W, d in D=W-{w}, one displayed endpoint e of one complement path, and the two displayed endpoints f,g of the other complement path such that Wf=(D-{d}) union {e,f} and Wg=(D-{d}) union {e,g} are both Hamiltonian, both complements are non-Hamiltonian with path-cover number two, |W intersect Wf|=|W intersect Wg|=2, and |Wf intersect Wg|=3. Thus above order fourteen the anchored four-window system has no bare order-disagreement terminal branch: every non-descent state either moves by Johnson distance one or branches into an adjacent pair of distance-two successors tied to opposite endpoints of one displayed complement path.
-
-      • [1000904] The paired opposite-end four-window fork collapses to an endpoint-aligned four- or five-window
-          STATEMENT
-          Let H be a minimum counterexample of order at least fifteen, let W be a Hamiltonian four-set, and suppose the paired opposite-end fork of 1000764 occurs. Thus there are a three-set D, d in D, one displayed endpoint e of one component of H-W, and the two displayed endpoints f,g of the other component such that
-          W_f=(D-{d}) union {e,f} and W_g=(D-{d}) union {e,g}
-          are Hamiltonian four-sets with non-Hamiltonian path-cover-two complements.
-          
-          Then at least one of the following holds:
-          (1) there is a Hamiltonian four-set Z containing all three displayed endpoints e,f,g, and H-Z is non-Hamiltonian with path-cover number two;
-          (2) the five-set S=(D-{d}) union {e,f,g} is Hamiltonian, H-S is non-Hamiltonian with path-cover number two, and S has a Hamilton path whose two displayed endpoints both belong to {e,f,g}.
-          
-          Consequently the paired-fork alternative of 1000764 is not an unpositioned migration residue: it always produces a proper Hamiltonian support of order four or five whose Hamiltonian structure is explicitly aligned with the three relevant complement endpoints.
-
   • [fourwindow_smallside_bypass01] An anchored four-window yields descent, a Hamiltonian five/six-side, or order at most fourteen
       STATEMENT
       Let H be a minimum counterexample, let W be a Hamiltonian four-vertex set, and let H-W=P|Q be a two-cover. Then at least one of the following holds: (1) the spanning three-cover W|P|Q admits a strict quadratic-potential decrease by an endpoint transfer; (2) H contains a proper Hamiltonian induced set S of order five or six such that H-S is non-Hamiltonian with path-cover number two; (3) |V(H)|<=14.
@@ -1988,6 +1982,18 @@
           STATEMENT
           Unproved proposal. The family amplification depended on the retracted end-adjacent disturbance trichotomy.
 
+    • [1000913] Compatible deletion pairs yield endpoint reversal or a mixed five-side
+        STATEMENT
+        Let H be a minimum counterexample, and let F_a,F_b be fully compatible deletion covers at distinct vertices a,b. Let P,Q be their two common ordered support classes on H-{a,b}.
+        
+        Then the omitted labels cannot insert into different support classes, and they cannot insert into slots of the same class separated by at least two positions, because either situation would give a spanning two-cover of H. Hence the two insertion slots are adjacent or identical.
+        
+        If the slots are adjacent, there are two spanning three-covers differing by transfer of the unique intervening common vertex. That vertex is a displayed endpoint on opposite sides of the transfer, so singleton-transfer endpointization forces an explicit displayed component-end reversal. If the flanking portions of P have orders l and r, the two covers differ in quadratic potential by 2(l-r).
+        
+        If the slots are identical, there is a Hamiltonian five-set X containing {a,b} such that X-{a,b} meets both P and Q, and H-X is non-Hamiltonian with path-cover number exactly two. If |P|>=2, at least two such mixed five-sets occur inside one six-vertex window; if |P|=1, at least one occurs.
+        
+        Consequently every fully compatible deletion pair reduces directly to an explicit endpoint reversal or to a mixed Hamiltonian five-side. If |V(H)|>=18, the latter state has a complementary path of order at least seven and therefore satisfies the five_side_arbitrary_escape01 trichotomy: strict quadratic-potential descent, neutral endpoint/support exchange, or a displayed-edge reversal. This final trichotomy concerns the produced five-side state and does not assert repartition-component reachability from the original deletion covers.
+
     • [centralbridge35] Every deletion state has a canonical bounded central-bridge three-cover
         STATEMENT
         Let H be a minimum counterexample and H-x=P|Q an exact deletion two-cover with P=(p0,...,pm), Q=(q0,...,qs). Then H has a spanning three-path cover whose central component is supported on the join window and has order either three or five: if (pm,x,q0) is tight, use (p0,...,p_{m-1}) | (pm,x,q0) | (q1,...,qs); if it is non-tight, use (p0,...,p_{m-2}) | (q1,q0,x,pm,p_{m-1}) | (q2,...,qs).
@@ -2069,50 +2075,6 @@
           Let H be a boundary tournament with pc(H)>2, let D be a set of deletion labels, and choose one two-cover F_v of H-v for each v in D. Let G be the full-compatibility graph on D, let B be the support-compatibility graph, and let M join distinct a,b when the singleton lifts F_a|{a} and F_b|{b} are adjacent by one pairwise repartition that changes the singleton label a to b. Then
           E(G) subseteq E(M) subseteq E(B).
           Moreover, for an edge ab of M, one component path is unchanged by the repartition; on the other common support, F_a and F_b are fully compatible exactly when their induced relative orders agree. Thus every edge of M is either a full-compatibility edge or a support-compatible/order-incompatible edge.
-
-    • [1000905] Compatible deletion pairs reduce to endpoint reversal or a bounded singleton-swap residue
-        STATEMENT
-        Let H be a minimum counterexample, and let F_a,F_b be fully compatible exact two-covers of H-a and H-b. Use the compatible-pair localization of 1000694, so the two omitted labels insert into one common ordered class P and the other common class Q is unchanged.
-        
-        If the insertion slots are adjacent, write P=(L,z,R) and, after naming the labels suitably,
-        F_b=(L,a,z,R)|Q,   F_a=(L,z,b,R)|Q.
-        Then H has the two spanning three-covers
-        (L,a)|(z,b,R)|Q
-        and
-        (L,a,z)|(b,R)|Q.
-        They differ only by transferring z between the first two components; z is a terminal endpoint in (L,a,z) and an initial endpoint in (z,b,R). Hence singleton_transfer_endpointization01 forces an explicit displayed component-end reversal. Moreover, if l=|L| and r=|R|, the quadratic-potential difference from the first cover to the second is 2(l-r).
-        
-        If the insertion slots are identical, write P=(L,R) and
-        F_b=(L,a,R)|Q,   F_a=(L,b,R)|Q.
-        Then H has the Phi-neutral singleton-swap pair
-        (L,a)|(b,R)|Q
-        and
-        (L,b)|(a,R)|Q.
-        If |L|,|R|>=2, terminal_singleton_swap_k4_residue01 reduces this pair to a proper Hamiltonian four-support with non-Hamiltonian path-cover-two complement or to the explicit six-vertex paired matching-block endpoint residue. If exactly one flank has order at least two, the corresponding four-set on a,b and the two nearest flank vertices is either Hamiltonian or a single matching-block K4 by the common-pair four-set classification; if both flanks have order at most one, the entire insertion support P union {a,b} has order at most four.
-        
-        Together with 1000694's direct two-cover conclusions for different insertion classes or slots separated by at least two, every fully compatible deletion pair is therefore consumed by a spanning two-cover, an explicit endpoint reversal, or a bounded same-slot singleton-swap/K4 residue.
-
-      • [1000908] Every same-slot compatible deletion pair has a mixed Hamiltonian five-support through both omitted labels
-          STATEMENT
-          Let H be a minimum counterexample and suppose fully compatible exact deletion covers of H-a and H-b have identical insertion slot in one common ordered support class P, with the other common class Q unchanged. Thus, in the notation of 1000905,
-          F_b=(L,a,R)|Q,   F_a=(L,b,R)|Q,
-          with P=(L,R).
-          
-          Then P is nonempty and |Q|>=2. Moreover there is a Hamiltonian five-set X containing {a,b} such that X-{a,b} meets both P and Q. If |P|>=2, there are at least two such mixed Hamiltonian five-sets inside one six-vertex window. If |P|=1, at least one such mixed Hamiltonian five-set exists.
-          
-          In a minimum counterexample every such X has non-Hamiltonian complement of path-cover number exactly two. Hence the identical-slot branch of a fully compatible deletion pair always produces a mixed five-side standard input, without any flank-length case split or matching-block analysis. For n>=18, choosing an exact two-cover of H-X gives a complementary path of order at least seven, so five_side_arbitrary_escape01 applies to this mixed five-side state.
-
-    • [1000909] Fully compatible deletion pairs reduce to endpoint reversal or a mixed Hamiltonian five-side
-        STATEMENT
-        Let H be a minimum counterexample, and let F_a,F_b be fully compatible exact two-covers of H-a and H-b. Then at least one of the following holds:
-        
-        (1) the compatible insertion slots are adjacent, and H contains the explicit displayed component-end reversal supplied by 1000905;
-        
-        (2) the compatible insertion slots are identical, and H contains a Hamiltonian five-set X with {a,b} subset X such that X-{a,b} meets both common ordered support classes of F_a,F_b on H-{a,b}. Moreover H-X is non-Hamiltonian with path-cover number exactly two.
-        
-        Thus, in a minimum counterexample, a fully compatible deletion pair has no residual bounded K4/singleton-swap branch: it reduces directly to endpoint reversal or to a mixed Hamiltonian five-side.
-        
-        If |V(H)|>=18, then in alternative (2) one may choose an exact two-cover P|Q of H-X with max{|P|,|Q|}>=7, and the mixed five-side state X|P|Q satisfies the five_side_arbitrary_escape01 trichotomy: strict quadratic-potential descent, a neutral endpoint/support exchange, or a displayed-edge reversal. This last trichotomy is attached to the produced five-side state and does not assert repartition-component reachability from the original deletion covers.
 
     • [gapgeom01] Compatible-triangle common-gap geometry
         STATEMENT
@@ -2496,40 +2458,17 @@
                   
                   Consequently, in a minimum counterexample, if F|D and G|D occur as spanning three-covers with the same unchanged third path D, every non-singleton low-cut equal-size equal-Phi swap with fewer than three reverse cuts and no order disagreement produces two positioned Hamiltonian supports on three blocks, each having non-Hamiltonian path-cover-two complement. Thus the equal-size low-cut equal-Phi swap residue reduces to three reverse support cuts, order disagreement, a terminal singleton swap, or two explicit three-block Hamiltonian-support outputs.
 
-                • [terminal_singleton_swap_k4_residue01] A terminal singleton swap gives a Hamiltonian bypass or a paired matching-block endpoint residue
+                • [1000912] Equal-size low-cut swaps yield transport or a five-side escape
                     STATEMENT
-                    Let H be a minimum counterexample. Suppose two spanning three-covers with the same third path D realize the terminal-singleton switch-rectangle outcome of equal_size_block_swap_rectangle01. Thus for distinct vertices x,y there are nonempty tight paths L,R of order at least two such that one cover displays
-                    (L,x) | (y,R) | D,
-                    the other has supports L union {y} and {x} union R together with D, and there is no order disagreement on L or R. Hence the two switched component orders are independently either (L,y) or (y,L), and either (x,R) or (R,x).
+                    Let H be a minimum counterexample. Suppose two displayed equal-size two-covers F=P|Q and G=A|B of the same support are support-incompatible, have equal quadratic potential, and G has fewer than three support cuts along P,Q. Then either the reverse support-cut count is at least three, there is order disagreement on a common block, or the two covers form a four-block switch rectangle.
                     
-                    If the first switched order is (y,L), then (y,L,x) is a tight path; if the second switched order is (R,x), then (y,R,x) is a tight path. Each such three-block path is a proper Hamiltonian support with non-Hamiltonian path-cover-two complement.
+                    In the switch-rectangle case there are nonempty tight blocks L,X,Y,R with P=(L,X), Q=(Y,R), with the G-supports L union Y and X union R, |L|=|R| and |X|=|Y|. Choose the equivalent description whose exchanged block has order s=min(|X|,|L|).
                     
-                    Consequently the only singleton-swap orientation with no such immediate three-block Hamiltonian bypass is
-                    (L,x), (L,y), (y,R), (x,R).
-                    Write (a,b) for the last two vertices of L and (c,d) for the first two vertices of R. Then either one of the four-sets
-                    W_L={a,b,x,y},  W_R={x,y,c,d}
-                    is Hamiltonian, giving a proper Hamiltonian four-support with non-Hamiltonian path-cover-two complement, or both are non-Hamiltonian and form a paired matching-block residue:
+                    If s>=2, the displayed joins splice to produce two positioned Hamiltonian supports on three of the four blocks; in a minimum counterexample each has non-Hamiltonian path-cover-two complement.
                     
-                    - W_L is edge-orderable with opposite-edge matching {ab,xy} as the lowest matching block and the two cross matchings {ax,by},{ay,bx} above it in one of the two possible orders;
-                    - W_R is edge-orderable with opposite-edge matching {cd,xy} as the highest matching block and the two cross matchings {cx,dy},{cy,dx} below it in one of the two possible orders.
+                    If s=1, the terminal singleton-swap branch also cannot remain terminal. It either gives an immediate three-block Hamiltonian bypass or a Hamiltonian four-support with non-Hamiltonian path-cover-two complement, or it enters the paired six-vertex matching-block residue. In that hard residue there are at least two Hamiltonian five-sets through the swapped pair, each with non-Hamiltonian path-cover-two complement. If |V(H)|>=18, every such five-side state has a complementary path of order at least seven and therefore satisfies the five_side_arbitrary_escape01 trichotomy: strict quadratic-potential descent, neutral endpoint/support exchange, or a displayed-edge reversal.
                     
-                    Thus an equal-size terminal singleton support swap reduces to a three-block Hamiltonian bypass, a Hamiltonian four-support, or one explicit six-vertex paired matching-block endpoint obstruction sharing the swapped pair {x,y}.
-
-                  • [1000906] The paired terminal singleton-swap residue contains two positioned Hamiltonian five-supports
-                      STATEMENT
-                      Continue the hard same-end branch of terminal_singleton_swap_k4_residue01. Thus distinct labels x,y are swapped between tight flanks L,R of order at least two, and the endpoint four-sets are non-Hamiltonian matching-block K4s. Let l_1,l_2 be the last two vertices of L and r_1,r_2 the first two vertices of R, and put
-                      U={l_1,l_2,x,y,r_1,r_2}.
-                      Then at least two distinct d in {l_1,l_2,r_1,r_2} have H[U-{d}] Hamiltonian. Every such Hamiltonian five-set contains the swapped pair {x,y}; in a minimum counterexample its complement is non-Hamiltonian with path-cover number exactly two.
-                      
-                      Consequently the paired matching-block six-vertex residue is not terminal: the hard terminal singleton-swap branch always produces at least two positioned Hamiltonian five-supports through the swapped pair. Combining this with the other branches of terminal_singleton_swap_k4_residue01, every terminal singleton swap with both flanks of order at least two produces a proper Hamiltonian support with non-Hamiltonian pc2 complement.
-
-                    • [1000907] Above order seventeen the hard terminal singleton-swap residue enters the five-side escape trichotomy
-                        STATEMENT
-                        Let H be a minimum counterexample of order n>=18 in the hard paired matching-block branch of terminal_singleton_swap_k4_residue01. Then H has a spanning three-cover X|P|Q with |X|=5 and max{|P|,|Q|}>=7 such that at least one of the following holds for X together with a longest of P,Q: (1) one legal pairwise repartition strictly decreases quadratic potential; (2) one legal pairwise repartition preserves the component-order multiset and exchanges one vertex of X with one displayed endpoint of that long complementary path; (3) a tight triple containing a vertex of X reverses a displayed edge of that long complementary path.
-                        
-                        More precisely, 1000906 supplies a Hamiltonian five-set X through the swapped pair whose complement is non-Hamiltonian with path-cover number exactly two. Any exact two-cover P|Q of H-X has |P|+|Q|=n-5>=13, hence one component has order at least seven. Applying five_side_arbitrary_escape01 to X and that component gives the trichotomy.
-                        
-                        This is an escape statement for the produced five-side state; it does not assert that the new three-cover lies in the same pairwise-repartition component as the original terminal singleton-swap state.
+                    Thus the equal-size low-cut equal-Phi branch reduces to reverse support complexity, order disagreement, an explicit positioned Hamiltonian support, or—above order seventeen—the standard five-side escape trichotomy.
 
               • [singleton_transfer_endpointization01] A singleton support transfer endpointizes unless its endpoint realizations are aligned
                   STATEMENT
@@ -4277,7 +4216,7 @@
 
       • [1000871] Exterior labels around a Hamiltonian five-set yield a six-set or a 3/5-density common-core star
           STATEMENT
-          Let H be a minimum counterexample, X a Hamiltonian five-set, and E any nonempty finite set of exterior vertices. Either X+e is Hamiltonian for some e in E, giving a proper Hamiltonian six-set with non-Hamiltonian path-cover-two complement, or there are x in X and E' subset E with |E'|>=ceil(3|E|/5) such that, with C=X-{x}, every five-set C+e for e in E' is Hamiltonian. Together with C+x=X, this gives a common-four-core Hamiltonian five-star with at least 1+ceil(3|E|/5) leaves, all having non-Hamiltonian path-cover-two complements.
+          Let H be a minimum counterexample, X a Hamiltonian five-set, and E any finite set of exterior vertices. For each e∈E with X∪{e} non-Hamiltonian, at least three vertices x∈X satisfy (X−{x})∪{e} Hamiltonian. Hence, writing E_bad={e∈E:X∪{e} is non-Hamiltonian}, there are at least 3|E_bad| Hamiltonian core-extension incidences (x,e). Consequently either some X∪{e} is a Hamiltonian six-set, or some four-core C=X−{x} extends Hamiltonianly to at least ceil(3|E|/5) exterior labels when all six-set extensions are bad. In the latter case C together with X gives a common-four-core five-star with at least 1+ceil(3|E|/5) Hamiltonian leaves. Every proper Hamiltonian support so obtained has non-Hamiltonian path-cover-two complement.
 
     • [1000364] Many common endpoint extenders need not concatenate
         STATEMENT
@@ -4455,7 +4394,7 @@
 
       • [1000872] One tight triple absorbs every exterior label that remains bad for its containing four-set
           STATEMENT
-          Let X be a non-Hamiltonian four-set containing a tight triple T, and let E be any set of vertices outside X. For every y in E such that X+y is non-Hamiltonian, T+y is Hamiltonian. Hence a fixed tight triple simultaneously absorbs the entire bad-extension family of X. In a minimum counterexample, each proper Hamiltonian four-set T+y has non-Hamiltonian path-cover-two complement.
+          Let X be a non-Hamiltonian four-set containing a fixed tight triple T, and let y be any vertex outside X. Then at least one of X∪{y} and T∪{y} is Hamiltonian. Consequently, for any exterior family E, the single triple T simultaneously absorbs every label y∈E not already absorbed by the full four-set X. In a minimum counterexample, every proper Hamiltonian support among these four- or five-sets has non-Hamiltonian path-cover-two complement.
 
     • [1000656] Three bad extensions of a Hamiltonian four-path force a mixed 5|3 repartition
         STATEMENT
@@ -5522,9 +5461,9 @@
                     STATEMENT
                     Under the preceding locally minimal four-side setup, suppose |P|=7. Let R=(p_2,...,p_6), so R is a Hamiltonian five-set. Then there are r in R and a set X' subset X with |X'|>=3 such that, with D=R-{r}, every D union {x} for x in X' is a Hamiltonian five-set with non-Hamiltonian path-cover-two complement. Hence for every distinct x,y in X', the two leaves D+x and D+y share the four-core D and their six-set D union {x,y} carries the common-four-core transport dichotomy of 1000476. Thus the first long-path boundary m=7 collapses to a positioned three-leaf transport clique on four consecutive interior vertices.
 
-              • [1000874] The fixed-endpoint matching residue always contains two endpoint-preserving Hamiltonian five-supports
+              • [1000874] Any fixed pair across a four-set has two Hamiltonian five-extensions
                   STATEMENT
-                  In the setup of fixed_endpoint_matching_escape01, put E={p_1,p_m}. Independently of the matching hypotheses on the partition X=A union B, at least two vertices x in X satisfy that E union (X-{x}) is a Hamiltonian five-set. In a minimum counterexample each such five-set has non-Hamiltonian path-cover-two complement. Therefore the unresolved matching-shell problem is not production of endpoint-preserving Hamiltonian five-supports; it is aligning one of their complementary two-covers with the inherited interior of P so as to obtain component-respecting escape.
+                  Let E be any two-set and X any disjoint four-set in a boundary tournament. Then at least two vertices x∈X satisfy that E∪(X−{x}) is Hamiltonian. No path, endpoint, matching, or minimum-counterexample hypothesis is needed. In a minimum counterexample, each such Hamiltonian five-set has non-Hamiltonian path-cover-two complement. In particular, for the fixed-endpoint matching residue with E={p_1,p_m}, endpoint-preserving Hamiltonian five-supports are automatic; the only remaining issue is alignment of a complementary two-cover with the inherited interior of P.
 
             • [fixed_endpoint_matching_impossible01] The hard fixed-endpoint branch cannot have a perfect-matching extension graph
                 STATEMENT
@@ -5621,6 +5560,14 @@
     • [1000903] Two disjoint triples carry at least three cross-paired common-core transport presentations
         STATEMENT
         Let H be a minimum counterexample and let C,T be disjoint triples, U=C union T. Let r be the number of c in C for which U-c is Hamiltonian and s the number of t in T for which U-t is Hamiltonian, and put h=r+s. Then 1<=r,s<=3, h>=4, and rs>=3(h-3). Thus h=4 gives at least three cross-pairs, h=5 gives at least six, and h=6 gives all nine. Equality rs=3 occurs exactly when {r,s}={1,3}; hence if there are exactly three cross-paired Hamiltonian deletions, one side has all three Hamiltonian deletions and the other has exactly one. For every cross-pair (c,t), the Hamiltonian five-sets U-c and U-t share the four-core U-{c,t}, so 1000476 supplies a common-four-core six-set transport package. Every Hamiltonian five-lift has non-Hamiltonian path-cover-two complement. In particular there are Hamiltonian lifts preserving either triple in full, one side has at least two Hamiltonian deletions, and for any family of triples T disjoint from a fixed C some fixed two-core C-{c} Hamiltonizes at least ceil(|F|/3) family members.
+
+    • [1000914] Bad four-extensions of a fixed triple force endpoint-aligned Hamiltonian five-sets
+        STATEMENT
+        Let H be a boundary tournament, let T be a three-vertex set, and let B be a set of vertices disjoint from T such that H[T union {u}] is non-Hamiltonian for every u in B. Then for every distinct u,v in B, the five-set S=T union {u,v} is Hamiltonian, and every Hamilton path of H[S] has both endpoints in T.
+        
+        Consequently, if |B|=m, choose one Hamilton path on T union {u,v} for every pair {u,v} subset B and label the pair {u,v} by the unordered pair of endpoints of the chosen path. Some endpoint pair E subset T occurs for at least binom(m,2)/3 pairs, and some u in B belongs to at least ceil((m-1)/3) such pairs with the same endpoint pair E.
+        
+        If H is a minimum counterexample, then every one of these Hamiltonian five-sets has non-Hamiltonian complement of path-cover number exactly two.
 
     • [arbitrary_fiveset_prescribed_pair_sixshell_menu01] Any five-set and prescribed exterior pair generate a complete six-shell transport menu
         STATEMENT
@@ -5824,6 +5771,25 @@
     • [threeside_bounded_endpoint_five_repartition01] A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions
         STATEMENT
         Let C=P|(x)|Q be a spanning three-cover of a boundary tournament, with |P|=3 and Q=(q_0,...,q_{m-1}), m>=5. Put X=V(P) union {x}. For every prescribed pair Z={z,zprime} subset X, at least one of F_z={z,q_0,q_1,q_2,q_3}, F_zprime={zprime,q_0,q_1,q_2,q_3}, and F_Z={z,zprime,q_0,q_1,q_2} is Hamiltonian. A Hamiltonian F_z or F_zprime yields a spanning three-cover with component orders (5,3,m-4), whose complement paths have supports X-{z} or X-{zprime}, and {q_4,...,q_{m-1}}. A Hamiltonian F_Z yields a spanning three-cover with orders (5,2,m-3), whose complement paths have supports X-Z and {q_3,...,q_{m-1}}. Thus at most eight vertices near the chosen endpoint are rearranged, and the remaining Q-segment is retained in its displayed order. Relative to C, the quadratic-potential changes are respectively 40-8m and 28-6m. Both are strictly negative for m>=6; at m=5 the first is zero and the second is negative. The analogous result holds at the other endpoint, retaining the displayed prefix of Q. In a minimum-counterexample deletion cover with |P|=3, m>=7, so both branches are strict. The new cover is reachable from C by at most two pairwise repartitions, each nonincreasing in quadratic potential. The first repartitions P|(x) into component orders (1,3) in a one-label branch, or into (2,2) in the two-label branch; the second repartitions the selected singleton or pair with Q, keeping the other short path unchanged. Therefore for m>=6 this is strict descent within the same pairwise-repartition component.
+
+      • [1000915] A three-side singleton lift has a six-way strict descent fan
+          STATEMENT
+          Let C=P|(x)|Q be a spanning three-cover of a boundary tournament, where |P|=3 and Q=(q_0,...,q_{m-1}) has m>=7. Put X=V(P) union {x}.
+          
+          At the left end define, for v in X and Z in binom(X,2),
+          L_v={v,q_0,q_1,q_2,q_3},
+          L_Z=Z union {q_0,q_1,q_2}.
+          At the right end define
+          R_v={v,q_{m-4},q_{m-3},q_{m-2},q_{m-1}},
+          R_Z=Z union {q_{m-3},q_{m-2},q_{m-1}}.
+          
+          At least three distinct members of the left family {L_v} union {L_Z} are Hamiltonian, and at least three distinct members of the right family {R_v} union {R_Z} are Hamiltonian. Every Hamiltonian member produces, by at most two legal pairwise repartitions from C, each nonincreasing in quadratic potential, a spanning three-cover in the same pairwise-repartition component with that member as a five-vertex component. For L_v or R_v the new component orders are (5,3,m-4) and the total potential change is 40-8m; for L_Z or R_Z they are (5,2,m-3) and the change is 28-6m.
+          
+          The left and right candidate families are disjoint when m>=7. Consequently C has at least six distinct reachable support partitions of strictly smaller quadratic potential, each within pairwise-repartition distance at most two. Every one lowers the potential by at least 6m-28.
+          
+          Moreover, suppose exactly six candidates across the two endpoint families are Hamiltonian. Let A_L be the set of v in X for which L_v is Hamiltonian and define A_R analogously. Then either A_L intersects A_R, so one label of X occurs in a one-label Hamiltonian five-support at both ends, or X has a partition X=A disjoint_union B into two pairs such that the left Hamiltonian candidates are exactly {L_v:v in A} together with L_B, while the right Hamiltonian candidates are exactly {R_v:v in B} together with R_A.
+          
+          In particular, if H is a minimum counterexample and H-x=P|Q is an exact deletion cover with |P|=3, then m=|Q|=|V(H)|-4>=7. Its singleton lift P|(x)|Q is therefore never quadratic-potential-minimal in its pairwise-repartition component; indeed it has at least six distinct descents, each decreasing potential by at least 6|V(H)|-52>=14.
 
     • [two_bad_five_extensions_all_opposite01] Two non-Hamiltonian five-extensions force all four opposite five-deletions Hamiltonian
         STATEMENT

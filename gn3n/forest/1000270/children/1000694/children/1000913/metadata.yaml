@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "0619f83eca34a86dcf898cc9109843ec4ba5c35be1daaf414cb1cee22168860c"
+created_at: "2026-10-01T17:38:15.170979+00:00"
+id: "1000913"
+last_elevation_revision: 0
+last_substantive_worker_id: 1108
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Reasoning-hygiene replacement: independently reconstruct the compressed compatible-deletion-pair theorem and verify the adjacent-slot reversal and identical-slot mixed five-side branches."
+  audit_request_recorded_at: "2026-10-01T17:39:47.485487+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1108
+parent_id: "1000694"
+position: 0
+research_interface:
+  consumer: "defect-span compatibility interface; endpoint transport; defect compression"
+  given: "two fully compatible deletion covers in a minimum counterexample"
+  implication: "the compatible-pair insertion geometry is consumed in one theorem with no residual singleton-swap branch"
+  produces: "an explicit endpoint reversal or a mixed Hamiltonian five-side with path-cover-two complement; above order seventeen the five-side enters the standard escape trichotomy"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A fully compatible deletion pair yields an endpoint reversal or a mixed Hamiltonian five-side; above order seventeen the five-side immediately enters standard escape."
+statement_sha256: "8633438a193b3c837fa01cf7f9a5b61e258f449452551a665b12ec04635bb92c"
+substantive_worker_ids:
+  - 1108
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Compatible deletion pairs yield endpoint reversal or a mixed five-side"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T17:39:47.485487+00:00"
+version: 4

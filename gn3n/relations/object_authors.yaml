@@ -495,9 +495,21 @@
   object_id: "astra003tenbranch"
   worker_id: 643
 -
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000871"
+  worker_id: 1106
+-
   first_recorded_at: "2026-09-26T15:04:07.959214+00:00"
   object_id: "astra003order11connected"
   worker_id: 643
+-
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000872"
+  worker_id: 1106
+-
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000874"
+  worker_id: 1106
 -
   first_recorded_at: "2026-09-26T15:11:40.342186+00:00"
   object_id: "astra003sevenbarrier"
@@ -543,6 +555,14 @@
   object_id: "astra003localorderdisagree"
   worker_id: 643
 -
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000904"
+  worker_id: 1106
+-
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000906"
+  worker_id: 1106
+-
   first_recorded_at: "2026-09-26T15:35:06.297548+00:00"
   object_id: "centralbridgereach"
   worker_id: 643
@@ -555,9 +575,21 @@
   object_id: "foursidedescentobstruction"
   worker_id: 643
 -
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000907"
+  worker_id: 1106
+-
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000908"
+  worker_id: 1106
+-
   first_recorded_at: "2026-09-26T16:19:57.650582+00:00"
   object_id: "astra003sevenbarrier"
   worker_id: 696
+-
+  first_recorded_at: "2026-10-01T17:37:05.128306+00:00"
+  object_id: "1000909"
+  worker_id: 1106
 -
   first_recorded_at: "2026-09-26T16:29:31.511953+00:00"
   object_id: "weightedfractionalduality01"
@@ -959,6 +991,10 @@
   object_id: "singleton_transfer_endpointization01"
   worker_id: 1051
 -
+  first_recorded_at: "2026-10-01T17:37:31.435169+00:00"
+  object_id: "1000911"
+  worker_id: 1108
+-
   first_recorded_at: "2026-09-26T22:44:29.914768+00:00"
   object_id: "astra003lockedonecut"
   worker_id: 691
@@ -1299,6 +1335,10 @@
   object_id: "equal_size_block_swap_rectangle01"
   worker_id: 1051
 -
+  first_recorded_at: "2026-10-01T17:37:52.5344+00:00"
+  object_id: "1000912"
+  worker_id: 1108
+-
   first_recorded_at: "2026-09-27T14:17:05.313794+00:00"
   object_id: "terminalrankcircular01"
   worker_id: 648
@@ -1475,6 +1515,10 @@
   object_id: "terminal_singleton_swap_k4_residue01"
   worker_id: 1051
 -
+  first_recorded_at: "2026-10-01T17:38:15.170979+00:00"
+  object_id: "1000913"
+  worker_id: 1108
+-
   first_recorded_at: "2026-09-27T19:38:27.177864+00:00"
   object_id: "local45sync01"
   worker_id: 678
@@ -1534,6 +1578,10 @@
   first_recorded_at: "2026-10-01T13:29:16.428269+00:00"
   object_id: "1000898"
   worker_id: 1061
+-
+  first_recorded_at: "2026-10-01T17:48:15.970041+00:00"
+  object_id: "1000914"
+  worker_id: 1102
 -
   first_recorded_at: "2026-09-27T22:57:09.321944+00:00"
   object_id: "defectordertoolkit01"
@@ -1758,6 +1806,10 @@
   first_recorded_at: "2026-10-01T13:40:52.445921+00:00"
   object_id: "1000904"
   worker_id: 1062
+-
+  first_recorded_at: "2026-10-01T17:51:08.12458+00:00"
+  object_id: "1000915"
+  worker_id: 1108
 -
   first_recorded_at: "2026-09-28T02:03:07.78179+00:00"
   object_id: "unique_small_transport_recomp02"

@@ -837,6 +837,11 @@
       "result": "jsonb"
     },
     {
+      "arguments": "p_artifact_path text",
+      "name": "update_boot",
+      "result": "jsonb"
+    },
+    {
       "arguments": "p_worker_id bigint, p_broadcast_id bigint, p_message text, p_ttl bigint",
       "name": "update_broadcast",
       "result": "jsonb"

@@ -2,10 +2,10 @@ atlas_height: null
 atlas_hidden: false
 attention: "available"
 audit_priority: 100
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_check"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 3
 body_sha256: "469c6fb0e5cd88c5f64df516167c748181cb2f3d70e129d7427d0d3a2f4a5367"
 created_at: "2026-10-01T07:19:55.077482+00:00"
 id: "1000898"
@@ -19,20 +19,20 @@ metadata:
   audit_request_reason: "Elevation strengthened the complement-pair relation to an induced line-graph incidence isomorphism; corrected an initial overstatement before this request. Request independent check of current math version."
   audit_request_recorded_at: "2026-10-01T13:34:07.248765+00:00"
   audit_resolution:
-    claim_id: 1064
-    detail: "The certified two-bad-extension theorem gives adjacent edges in K. Complementation on two-subsets of a four-set preserves adjacency, so the opposite-edge image J also contains adjacent edges. No route-specific hypotheses are used."
-    math_version: 1
+    claim_id: 1114
+    detail: "Independent reconstruction passes. Complementation on two-subsets of a four-set sends K exactly to J and preserves intersection/disjointness, hence is an automorphism of L(K4); adjacent selected edges therefore transfer from K to J."
+    math_version: 3
     outcome: "pass"
-    recorded_at: "2026-10-01T13:25:00.471671+00:00"
-    worker_id: 1061
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
   audit_trigger_kind: "explicit"
   last_audit_observation:
-    claim_id: 1064
-    detail: "The certified two-bad-extension theorem gives adjacent edges in K. Complementation on two-subsets of a four-set preserves adjacency, so the opposite-edge image J also contains adjacent edges. No route-specific hypotheses are used."
-    math_version: 1
+    claim_id: 1114
+    detail: "Independent reconstruction passes. Complementation on two-subsets of a four-set sends K exactly to J and preserves intersection/disjointness, hence is an automorphism of L(K4); adjacent selected edges therefore transfer from K to J."
+    math_version: 3
     outcome: "pass"
-    recorded_at: "2026-10-01T13:25:00.471671+00:00"
-    worker_id: 1061
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
 object_type: "research"
 origin_worker_id: 1016
 parent_id: "1000880"
@@ -48,10 +48,10 @@ statement_sha256: "bb86f12694612c85f3734ff1a46c524a2cf6ab33c74bdb6eeb4059d3de89c
 substantive_worker_ids:
   - 1016
   - 1061
-support_reason: "provisional_unaudited"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Two bad extensions force adjacency in both complementary endpoint-pair graphs"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-10-01T13:34:07.248765+00:00"
-version: 9
+updated_at: "2026-10-01T17:44:05.595432+00:00"
+version: 11

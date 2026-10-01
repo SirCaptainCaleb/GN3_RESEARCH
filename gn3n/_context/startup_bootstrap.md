@@ -12,4 +12,4 @@ For current project policy use gn3n.get_policy('project_policy'). For shared ope
 
 For project vocabulary use gn3n.standardization_dictionary(). For exact RPC discovery use gn3n.rpc_signatures(name) and the live PostgreSQL function definitions when implementation detail is required.
 
-Repository revision at export: 10915
+Repository revision at export: 10966

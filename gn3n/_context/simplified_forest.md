@@ -265,9 +265,7 @@
           • [1000771] After deficit-one finite closure, the remaining proof route is to convert the surviving disturbance into a global descent or covering move.
             • [support_cut_low_crossing_normal_form01] For two covers of the same support, one or two support cuts force explicit block-transfer normal forms with exact Phi formulas; on equal-Phi size-gap-0/1 pairs, every low-cut disagreement is a neutral singleton/block swap, so every other disagreement has at least three support cuts.
               • [equal_size_block_swap_rectangle01] An equal-size neutral support swap with fewer than three cuts in both directions and no order disagreement is a four-block switch rectangle. After choosing the smaller swap description, it is either a terminal singleton swap or it produces two explicit three-block Hamiltonian supports with pc2 complements.
-                • [terminal_singleton_swap_k4_residue01] An equal-size terminal singleton swap either splices through a long fixed block to a Hamiltonian support, yields a Hamiltonian endpoint four-set, or collapses to a six-vertex paired matching-block residue in which the shared swapped pair is lowest at one end and highest at the other.
-                  • [1000906] The hard paired matching-block residue of a terminal singleton swap always contains at least two Hamiltonian five-sets through the swapped pair, each with a non-Hamiltonian pc2 complement.
-                    • [1000907] For n>=18, the hard terminal singleton-swap residue produces a five-side state that immediately descends, makes a neutral endpoint/support exchange, or exposes a displayed-edge reversal.
+                • [1000912] An equal-size low-cut swap yields reverse complexity, order disagreement, positioned Hamiltonian support, or—above order seventeen—a five-side escape.
               • [singleton_transfer_endpointization01] A singleton transfer between two three-cover states either endpointizes via greedy transport to a reversed component-end edge, or the moved label is universally internal on one side or endpoint-realizable only on the same side of both augmented supports.
           • [recomp_reciprect_01] Reciprocal comparison gives a reverse triple, leave-and-return, s>=2, or the five-block quotient.
           • [recomp_singleton_descent_01] Every non-Hamiltonian deletion singleton lift has immediate strict quadratic descent.
@@ -399,6 +397,7 @@
     • [1000483] Failed-splice obstructions should be modeled by bounded disjunctive transition clauses, with closed unresolved clause families forcing either a consistent augmentation or rigid compressible structure.
       • [1000293] An anti-diagonal pivot chain forces linearly many distinct c-free mixed triples.
       • [crossswapconflict_recomp01] Cross-swap clause conflicts occur only along central anti-diagonals.
+    • [1000913] A fully compatible deletion pair yields an endpoint reversal or a mixed Hamiltonian five-side; above order seventeen the five-side immediately enters standard escape.
     • [commonmiddle01] Two opposite common-middle paths force the full four-corner rectangle, with strong endpoint barriers for exterior vertices.
     • [1000048] Compatibility edges lift to one-move adjacency of deletion singleton states
       • [1000766] A compatibility component supplies canonical central path states inside one trapped pairwise-repartition component
@@ -406,9 +405,6 @@
           • [compatcomponentthird01] A third of the labels share one trapped reconfiguration component unless four covers realize a classified incompatibility pattern
         • [compatcomponentdich01] Compatibility components force a large common reconfiguration family or a uniform incompatibility triple
       • [singletonsupsandwich01] Singleton-swap adjacency lies between full and support compatibility
-    • [1000905] A fully compatible pair of deletion covers is not an open-ended obstruction: adjacent insertion slots create an opposite-end singleton transfer and hence an endpoint reversal, while identical slots create a Phi-neutral singleton swap that reduces to a bounded K4 residue.
-      • [1000908] A same-slot compatible deletion pair always yields a Hamiltonian five-set through both omitted labels that also uses vertices from both common support classes; above order seventeen this mixed five-side enters the standard escape trichotomy.
-    • [1000909] In a minimum counterexample, every fully compatible deletion pair yields either an explicit endpoint reversal or a Hamiltonian five-side mixing the two common support classes; above order seventeen the latter immediately enters five-side escape.
     • [gapgeom01] Three pairwise-compatible deletion covers place their omitted labels at one common gap of one common path, with further compatible covers confined to neighboring gaps.
       • [compatdensity01] The deletion-cover compatibility graph is K4-free, each edge lies in at most two triangles, and on m labels it has at most floor((m^2+2m)/4) edges.
   • [1000227] A direct induction would follow if every near-spanning two-path state of total longest-path deficit at most one can be reconfigured to a deficit-zero two-cover.
@@ -436,7 +432,7 @@
               • [1000865] Each persistent-defect shell yields localized order disagreement or a Hamiltonian-six-set full two-label square.
                 • [1000893] In each large-order persistent-defect shell, the number of independent descent-or-order-disagreement six-sets is at least deg(z)+deg(z′)-2ε-5, hence at least 1 always and at least 3 for a nonadjacent defect pair.
                   • [1000894] Two persistent defects in a rooted seven-shell have at least deg(z)+deg(z′)-2ε-5 common neighbors, and every such neighbor carries a full common-four-core six-set transport package; the n≥18 disturbance conclusion is only a corollary.
-                • [1000870] Each persistent-defect shell yields order disagreement or a full two-label square in certified top-cover normal form.
+                • [1000870] Persistent-defect shells reduce to localized order disagreement or one of four canonical pc2-square normal forms; later bounded-square analysis only has to consume those explicit forms.
               • [1000869] Two persistent defects share a shell neighbor in every shell, and at least three when they are nonadjacent there.
             • [threeside_consecutive_fivewindows01] ‹Three-side common barriers force consecutive five-windows at both ends›
               • [threeside_prescribed_pair_sixmenu01] Three-side endpoint six-sets have no prescribed-pair matching residue
@@ -657,17 +653,15 @@
   • [1000166] ‹Proof rehearsal 2026-09-28: disturbance consumption is the remaining global bridge›
   • [1000482] Every order-twelve deletion state enters codimension four/five or a longest-path endpoint disturbance.
     • [1000480] Every order-twelve minimum counterexample exposes a longest-path mixed crossing or order disagreement.
+  • [1000911] A Hamiltonian four-window either gives small order, strict descent, nearby four-window transport, or an endpoint-aligned four- or five-support.
   • [deletion_side_ge3_01] Every deletion-cover component in a minimum counterexample has order at least three.
-  • [four_window_transport_allorders01] Every anchored four-window gives descent, bounded pc2 transport, or order at most fourteen
-    • [1000764] Above order fourteen four-window migration is distance-one or a paired opposite-end fork
-      • [1000904] The paired opposite-end four-window fork yields an endpoint-aligned Hamiltonian four- or five-window.
   • [fourwindow_smallside_bypass01] An anchored four-window yields descent, a Hamiltonian five/six-side, or order at most fourteen.
   • [proof_rehearsal_20260929] Proof rehearsal 2026-09-29: large-order closure reduces to bounded pc2 transport
     • [1000863] Hamiltonian four-window density yields common-top pc2 squares; universal internality then localizes a bounded square pair whose lower covers satisfy a finite disturbance menu.
       • [unpositioned_fiveside_vacuous01] In the bounded-square setup, existence of some Hamiltonian five-set with pc2 complement is automatic; useful five-side outputs must preserve local positioning.
         • [1000875] Once a displayed path has five vertices, an unpositioned Hamiltonian five-side with pc2 complement is automatic.
-      • [1000873] If every other local disturbance in the bounded-square theorem is absent, its universally internal square endpoints have exactly one vertex between them.
-        • [1000910] A one-gap lower square either yields a positioned small Hamiltonian window or routes its singleton gap through the opposite top component.
+      • [1000873] The complete negative-space residue of the universal-internal bounded-square menu is exact one-gap separation: if the other four disturbances are absent, the square endpoints have exactly one displayed vertex between them.
+        • [1000910] In the exact one-gap residue, excluding order disagreement and positioned small Hamiltonian windows forces the singleton gap to avoid both same-path blocks: it is either terminal next to the opposite component Q, or isolated while Q bridges L to R in top order.
   • [proof_rehearsal_20260930] ‹Proof rehearsal 2026-09-30: reachable four-window transport and the order-eleven star surface›
 • [methods01] Reusable proof tools and auxiliary theories supporting the two-cover program.
   • [extremal01] Hamiltonian five-sets satisfy complementary finite-range and Johnson-degree density bounds, together with reusable equality, overlap, reconfiguration, and terminal-pair counting structure.
@@ -895,7 +889,7 @@
     • [1000256] Parallel three- and four-vertex corridors with common endpoints Hamiltonize their union
     • [1000320] Two same-side extensions of an internal path edge force a Hamiltonian five-window or a doubled reverse barrier
     • [1000326] A Hamiltonian five-set with three exterior labels yields a six-set or a common four-core
-      • [1000871] A Hamiltonian five-set with m exterior labels gives a Hamiltonian six-set or a common four-core star with at least 1+ceil(3m/5) Hamiltonian leaves.
+      • [1000871] Bad exterior extensions of a Hamiltonian five-set create at least three core-extension incidences per label; hence either a Hamiltonian six-set appears or one four-core supports a 3/5-dense Hamiltonian five-star.
     • [1000364] Many common endpoint extenders need not concatenate
     • [1000415] Five parallel middle vertices force an explicitly alternating five-path.
       • [1000005] Parallel middles contain a linear complete alternating fan.
@@ -907,7 +901,7 @@
       • [endpoint_pair_split_descent_m6_01] A rigid endpoint-pair 2+2 split beside a path of order at least six gives strict quadratic descent.
       • [1000190] Above order fourteen the endpoint-pair 2+2 split gives strict quadratic descent.
     • [1000720] A tight triple inside a non-Hamiltonian four-set forces a four- or five-set extension
-      • [1000872] A tight triple inside a bad four-set Hamiltonizes with every exterior label whose full four-set extension remains bad.
+      • [1000872] A fixed tight triple inside a non-Hamiltonian four-set absorbs every exterior label not already absorbed by the whole four-set.
     • [1000656] Three bad extensions of a Hamiltonian four-path force a mixed 5|3 repartition.
     • [five_dualrigid_sameend01] Distinct rigid five-side locks reduce to three synchronized same-end four-core extensions.
     • [five_opposite_swap_gain01] Two opposite five-side swaps force disagreement or a one-vertex longer path
@@ -1070,7 +1064,7 @@
                 • [1000892] A locally minimal 4|m state (m>=7, n>=12) forces a positioned pc2 square whose endpoint branch already descends or is bounded, leaving only universal internality or support/order disagreement.
                   • [1000895] Componentwise Phi-minimality is unnecessary: if the displayed 4|m pair (m≥7) admits no lower-Phi two-path repartition, it already forces the saturated endpoint shell, positioned pc2 square, five-way terminal menu, and at m=7 the three-leaf transport clique.
                 • [1000879] For a locally minimal 4|7 state, four bad interior extensions force a common interior four-core with at least three Hamiltonian leaves and pairwise six-set transport.
-              • [1000874] Every fixed endpoint pair across a four-side already gives two Hamiltonian five-supports; the matching-shell gap is complementary-cover alignment.
+              • [1000874] Any disjoint 2+4 split contains at least two Hamiltonian five-sets retaining the prescribed pair; fixed-endpoint matching shells therefore have an alignment gap, not a support-production gap.
             • [fixed_endpoint_matching_impossible01] The hard fixed-endpoint branch cannot have a perfect-matching extension graph.
             • [fixed_endpoint_matching_orientation01] The fixed-endpoint matching shell is exactly the two orientation classes.
               • [fixed_endpoint_matching_crosshooks01] The fixed-endpoint matching shell carries a complete opposite-orientation hook rectangle.
@@ -1181,6 +1175,7 @@
     • [1000203] Two bad extensions of a Hamiltonian five-set force two-for-two Hamiltonian replacements.
       • [five_side_two_bad_endpoint_sixpackage01] Two bad extensions of a Hamiltonian five-set yield a six-set with four positioned good deletions.
     • [1000903] Two disjoint triples have at least three cross-pairs of Hamiltonian five-deletions, each yielding a common-four-core six-set transport package; the earlier directional and one-third fixed-reservoir statements are corollaries.
+    • [1000914] For a fixed triple, any family of non-Hamiltonian one-vertex four-extensions amplifies pairwise to Hamiltonian five-sets whose Hamilton paths have both endpoints in the fixed triple; a third of the pairs share one endpoint pair after choosing paths.
     • [arbitrary_fiveset_prescribed_pair_sixshell_menu01] Any five-set and prescribed exterior pair generate a complete six-shell transport menu
     • [arbitrary_fiveset_prescribed_pair_sixshell_menu02] Any five-set and prescribed exterior pair generate a sharpened six-shell transport menu.
     • [balanced8_adjacent_windows_recomp01] Every eight-vertex boundary tournament has adjacent Hamiltonian four-windows
@@ -1200,6 +1195,7 @@
     • [nonham_five_radius2_pc2_shell01] A non-Hamiltonian five-set forces a radius-two path-cover-two shell on its complement.
     • [pair_centered_central_gap_fan01] Every prescribed pair lies in a linear common-four-core family that is pairwise Hamiltonian on six vertices, a coherent middle-gap fan, or a coherent same-end extender family.
     • [threeside_bounded_endpoint_five_repartition01] A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions.
+      • [1000915] Every 3|1|m cover with m>=7 has at least six distinct radius-two strict descents, three localized at each end of the long path.
     • [two_bad_six_extensions_fourgood01] Two bad six-extensions of any five-set force a four-positioned-deletion six-set.
     • [1000668] Opposite reverse hooks on a five-path force a Hamiltonian outer five-window.
   • [ternary01] In any ternary path system with cyclic coverage and reversal symmetry, every exterior vertex has at least two insertion positions into a tight path, and every n-vertex system has at least 2^(n-1) Hamilton tight paths.
