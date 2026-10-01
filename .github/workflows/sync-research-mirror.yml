@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Deterministic mirror generation from live Supabase state; release bootstrap trigger.
+  # Deterministic mirror generation from live Supabase state; artifact-download bootstrap trigger.
   sync:
     runs-on: ubuntu-latest
 
