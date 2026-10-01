@@ -29,8 +29,10 @@ jobs:
           mkdir -p _artifact
           for schema in gn3n linp template; do
             test -d "$schema/_context"
+            test -d "$schema/vocabulary"
             mkdir -p "_artifact/$schema"
             cp -a "$schema/_context/." "_artifact/$schema/"
+            cp -a "$schema/vocabulary" "_artifact/$schema/vocabulary"
             cp "$schema/mirror_manifest.json" "_artifact/$schema/mirror_manifest.json"
           done
 
