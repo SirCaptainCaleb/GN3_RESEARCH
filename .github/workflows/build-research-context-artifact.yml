@@ -114,6 +114,7 @@ jobs:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           REPO: ${{ github.repository }}
           COMMIT_SHA: ${{ github.sha }}
+          CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -132,6 +133,7 @@ jobs:
               "p_release_url": f"https://github.com/{repo}/releases/latest",
               "p_asset_url": f"https://github.com/{repo}/releases/latest/download/research-context.zip",
               "p_commit_sha": os.environ["COMMIT_SHA"],
+              "p_artifact_path": f"https://api.github.com/repos/{repo}/actions/artifacts/{os.environ['CURRENT_ARTIFACT_ID']}",
           }
 
           key = os.environ["SUPABASE_SECRET_KEY"]
