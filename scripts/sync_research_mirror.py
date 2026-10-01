@@ -18,7 +18,7 @@ TABLES = [
 ]
 CORE_POLICIES = [
     "startup_kernel","worker_kernel","project_policy",
-    "research_full_guidance","architecture_invariants","artifact_kernel","artifact_bootstrap",
+    "research_full_guidance","architecture_invariants","artifact_kernel",
 ]
 MODE_POLICIES = [
     "mode_audit","mode_brainstorm","mode_coordination","mode_isolated_research",
