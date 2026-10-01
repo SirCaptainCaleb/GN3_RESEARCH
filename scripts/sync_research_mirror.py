@@ -397,7 +397,7 @@ A fresh worker begins with:
 
     select * from {schema}.startup();
 
-Retain the returned worker_id. Before mathematical work, use the live {schema}.startup_atlas() orientation surface; use {schema}.atlas() when broader conceptual coverage is needed. Pull exact mathematics through {schema}.read(...), ancestry/subtree navigation, or paged read RPCs as needed.
+Retain the returned worker_id. Before mathematical work, use the live {schema}.atlas() orientation surface. Pull exact mathematics through {schema}.read(...), ancestry/subtree navigation, or paged read RPCs as needed.
 
 For current project policy use {schema}.get_policy('project_policy'). For shared operational policy use {schema}.get_policy('artifact_kernel') as the compact convenience kernel, and query more specialized live policy only when the active workflow genuinely requires it.
 
