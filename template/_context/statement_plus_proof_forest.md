@@ -16,12 +16,6 @@
     BODY / PROOF
     Permanent central idea bank for brainstorm conjectures and maneuvers. Ideas are published directly as durable children of this root and remain until promoted, archived, or otherwise refiled.
 
-• [methods01] Toolkit
-    STATEMENT
-    Reserved top-level home for project-level reusable mathematics, definitions, methods, fences, abstractions, and imported toolkits. It is organizational rather than a proof inference.
-    BODY / PROOF
-    Reusable results belong here when they are mathematically independent of the proof frame. Proof routes should reference toolkit results instead of carrying standalone mathematics as ancestry.
-
 • [project_policy] Project-specific policy
     STATEMENT
     ‹none›
@@ -51,3 +45,9 @@
     ‹none›
     BODY / PROOF
     ‹none›
+
+• [methods01] Toolkit
+    STATEMENT
+    Reserved top-level home for project-level reusable mathematics, definitions, methods, fences, abstractions, and imported toolkits. It is organizational rather than a proof inference.
+    BODY / PROOF
+    Reusable results belong here when they are mathematically independent of the proof frame. Proof routes should reference toolkit results instead of carrying standalone mathematics as ancestry.

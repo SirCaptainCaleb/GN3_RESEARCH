@@ -10,10 +10,6 @@
     STATEMENT
     ‹none›
 
-• [methods01] Toolkit
-    STATEMENT
-    Reserved top-level home for project-level reusable mathematics, definitions, methods, fences, abstractions, and imported toolkits. It is organizational rather than a proof inference.
-
 • [project_policy] Project-specific policy
     STATEMENT
     ‹none›
@@ -33,3 +29,7 @@
 • [standardization_dictionary] Standardization dictionary
     STATEMENT
     ‹none›
+
+• [methods01] Toolkit
+    STATEMENT
+    Reserved top-level home for project-level reusable mathematics, definitions, methods, fences, abstractions, and imported toolkits. It is organizational rather than a proof inference.
