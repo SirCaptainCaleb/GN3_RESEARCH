@@ -38,17 +38,17 @@ jobs:
             dst="_artifact/$schema"
 
             test -d "$src"
-            test -f "$src/rpc_signatures.yaml"
+            test -f "$src/rpc_signatures.txt"
             test -f "$src/rpc_definitions.md"
             test -f "$src/policies/kernel.md"
             test -f "$src/policies/project_policy.md"
-            test -f "$schema/vocabulary/standardization_dictionary.yaml"
+            test -f "$schema/vocabulary/standardization_dictionary.txt"
 
             mkdir -p "$dst/roles" "$dst/research"
 
             # Entry point and compact API lookup.
             cp "$src/startup_bootstrap.md" "$dst/startup_bootstrap.md"
-            cp "$src/rpc_signatures.yaml" "$dst/rpc_signatures.yaml"
+            cp "$src/rpc_signatures.txt" "$dst/rpc_signatures.txt"
             cp "$src/rpc_definitions.md" "$dst/rpc_definitions.md"
 
             # Compact policy views live at the schema root.
@@ -66,7 +66,7 @@ jobs:
             cp "$src/statement_plus_proof_forest.md" "$dst/research/statement_plus_proof_forest.md"
 
             # Vocabulary is small enough to live at the schema root.
-            cp "$schema/vocabulary/standardization_dictionary.yaml"                "$dst/standardization_dictionary.yaml"
+            cp "$schema/vocabulary/standardization_dictionary.txt"                "$dst/standardization_dictionary.txt"
           done
 
       - name: Upload research context artifact
