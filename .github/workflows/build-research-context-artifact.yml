@@ -61,6 +61,7 @@ jobs:
             # Mathematical navigation surface.
             cp "$src/atlas.md" "$dst/research/atlas.md"
             cp "$src/startup_atlas.md" "$dst/research/startup_atlas.md"
+            cp "$src/frontier.md" "$dst/research/frontier.md"
             cp "$src/simplified_forest.md" "$dst/research/simplified_forest.md"
             cp "$src/statement_forest.md" "$dst/research/statement_forest.md"
             cp "$src/statement_plus_proof_forest.md" "$dst/research/statement_plus_proof_forest.md"
