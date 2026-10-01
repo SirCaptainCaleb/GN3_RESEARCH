@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import json, os, shutil, urllib.request, urllib.error
+import hashlib, json, os, shutil, urllib.request, urllib.error
 from pathlib import Path
 from typing import Any
 
@@ -109,25 +109,64 @@ def write_json(path: Path, value: Any):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 def write_text(path: Path, text: str):
+    """Write generated prose with exactly one terminal newline."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text.rstrip() + "\n", encoding="utf-8")
+    path.write_text(text.rstrip("\n") + "\n", encoding="utf-8")
+
+def write_exact_text(path: Path, text: str):
+    """Write source-controlled text byte-for-byte as UTF-8; no normalization."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(text.encode("utf-8"))
+
+def sha256_text(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 def body_of(v: Any) -> str:
     return str(v.get("body") or "") if isinstance(v, dict) else str(v or "")
 
+CONTENT_STATEMENT_MARKER = "## Statement"
+CONTENT_BODY_MARKER = "## Body"
+
 def content_md(o: dict[str, Any]) -> str:
-    title = (o.get("title") or "").strip()
-    statement = (o.get("statement") or "").strip()
-    body = (o.get("body") or "").strip()
-    return "\n".join([
-        f"# {title}" if title else f"# {o['id']}", "",
-        "## Statement", "", statement or "‹none›", "",
-        "## Body", "", body or "‹none›", "",
-    ])
+    """Compose content.md while preserving statement/body text exactly."""
+    title = o.get("title") or ""
+    statement = o.get("statement")
+    body = o.get("body")
+    if statement is None:
+        statement = ""
+    if body is None:
+        body = ""
+    heading = f"# {title}" if title else f"# {o['id']}"
+    return (
+        heading + "\n\n"
+        + CONTENT_STATEMENT_MARKER + "\n\n"
+        + statement + "\n\n"
+        + CONTENT_BODY_MARKER + "\n\n"
+        + body
+    )
+
+def verify_content_md(rendered: str, o: dict[str, Any]) -> None:
+    """Prove that the exact Supabase statement/body survived composition."""
+    title = o.get("title") or ""
+    heading = f"# {title}" if title else f"# {o['id']}"
+    prefix = heading + "\n\n" + CONTENT_STATEMENT_MARKER + "\n\n"
+    if not rendered.startswith(prefix):
+        raise RuntimeError(f"content prefix mismatch for {o['id']}")
+    rest = rendered[len(prefix):]
+    separator = "\n\n" + CONTENT_BODY_MARKER + "\n\n"
+    statement = o.get("statement") or ""
+    body = o.get("body") or ""
+    expected = statement + separator + body
+    if rest != expected:
+        raise RuntimeError(f"lossy content serialization detected for {o['id']}")
 
 def metadata(o: dict[str, Any]) -> dict[str, Any]:
     omit = {"statement", "body", "tree_path", "trashed_at"}
-    return {k: v for k, v in o.items() if k not in omit}
+    m = {k: v for k, v in o.items() if k not in omit}
+    # Integrity hashes refer to the exact UTF-8 source strings in Supabase.
+    m["statement_sha256"] = sha256_text(o.get("statement") or "")
+    m["body_sha256"] = sha256_text(o.get("body") or "")
+    return m
 
 def render_forest(objects: list[dict[str, Any]], mode: str) -> str:
     active = [o for o in objects if o.get("trashed_at") is None]
@@ -200,7 +239,11 @@ def build_schema(folder: str, schema: str):
         o = active[oid]
         d = parent_dir / str(oid)
         write_yaml(d / "metadata.yaml", metadata(o))
-        write_text(d / "content.md", content_md(o))
+        rendered = content_md(o)
+        verify_content_md(rendered, o)
+        write_exact_text(d / "content.md", rendered)
+        if (d / "content.md").read_bytes() != rendered.encode("utf-8"):
+            raise RuntimeError(f"content.md byte verification failed for {o['id']}")
         cdir = d / "children"
         cdir.mkdir(parents=True, exist_ok=True)
         kids = children.get(oid, [])
@@ -221,6 +264,11 @@ def build_schema(folder: str, schema: str):
         write_yaml(root / "relations" / f"{table}.yaml", rows[table])
     write_yaml(root / "vocabulary" / "standardization_dictionary.yaml", rows["standardization_dictionary"])
     write_yaml(root / "vocabulary" / "standardization_dictionary_sections.yaml", rows["standardization_dictionary_sections"])
+
+    # Machine-readable integrity copies use JSON's fully specified escaping.
+    # JSON is also valid YAML 1.2, and these hashes make silent text loss detectable.
+    write_json(root / "vocabulary" / "standardization_dictionary.json", rows["standardization_dictionary"])
+    write_json(root / "vocabulary" / "standardization_dictionary_sections.json", rows["standardization_dictionary_sections"])
     write_yaml(root / "state" / "project.yaml", rows["state"])
     write_yaml(root / "state" / "architecture_migration_notes.yaml", rows["architecture_migration_notes"])
     write_yaml(root / "state" / "atlas_legacy_snapshots.yaml", rows["atlas_legacy_snapshots"])
