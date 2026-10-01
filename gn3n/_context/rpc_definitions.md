@@ -2115,7 +2115,7 @@ declare
   v_meta jsonb;
   v_artifact_revision bigint;
   v_body text;
-  v_lookup_call text;
+  v_download_code text;
 begin
   v_project := control_center.active_project();
 
@@ -2133,9 +2133,23 @@ begin
   select revision into v_live_revision from state where singleton;
   select value into v_meta from control_center.configuration where key='artifact.latest';
   select body into v_body from control_center.policies where policy_key='artifact_bootstrap';
-
   v_artifact_revision := nullif(v_meta->'revisions'->>v_project,'')::bigint;
-  v_lookup_call := 'await tools.mcp__GitHub__fetch({url:"https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/releases/latest"})';
+  v_download_code := $CODE$const runs = await tools.mcp__GitHub__fetch({
+  url: "https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/actions/workflows/build-research-context-artifact.yml/runs?status=success&per_page=1"
+});
+const run = JSON.parse(runs.result.content).workflow_runs[0];
+const artifacts = await tools.mcp__GitHub__fetch_workflow_run_artifacts({
+  repo_full_name: "SirCaptainCaleb/GN3_RESEARCH",
+  run_id: run.id,
+  name: "research-context"
+});
+const artifact = artifacts.result.artifacts[0];
+const downloaded = await tools.mcp__GitHub__download_workflow_artifact({
+  repo_full_name: "SirCaptainCaleb/GN3_RESEARCH",
+  artifact_id: artifact.id,
+  file_name: "research-context.zip"
+});
+text(downloaded);$CODE$;
 
   return jsonb_strip_nulls(jsonb_build_object(
     'wid',v_worker,
@@ -2144,9 +2158,9 @@ begin
     'artifact_revision',v_artifact_revision,
     'live_repository_revision',v_live_revision,
     'updates_after_artifact_revision',greatest(0,v_live_revision-coalesce(v_artifact_revision,v_live_revision)),
-    'release_url',v_meta->>'release_url',
-    'artifact_url',v_meta->>'asset_url',
-    'github_lookup_call',v_lookup_call,
+    'artifact_distribution','github_actions',
+    'artifact_name','research-context',
+    'github_artifact_download_code',v_download_code,
     'fallback_startup','select * from '||v_project||'.startup();',
     'bootstrap',v_body,
     'next_required_call',v_project||'.continue('||v_worker::text||')'
