@@ -4,7 +4,7 @@ This is the entry point for the complete public RPC manual. Exact live signature
 
 Pages (organized by workflow/topic):
 - help('rpc_lifecycle') — startup, worker lifecycle, deltas, API introspection.
-- help('rpc_navigation') — Atlas, search, subtree/edges, exact reads, diagnostics.
+- help('rpc_navigation') — Atlas, search, reasoning-tree navigation, typed edges, and exact reads.
 - help('rpc_authoring') — objects, reasoning structure, dependencies, recomposition.
 - help('rpc_staging') — staged/race-safe publication.
 - help('rpc_audit') — audit, certification, trust repair.
