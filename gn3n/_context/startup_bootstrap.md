@@ -6,7 +6,7 @@ A fresh worker begins with:
 
     select * from gn3n.startup();
 
-Retain the returned worker_id. Before mathematical work, use the live gn3n.startup_atlas() orientation surface; use gn3n.atlas() when broader conceptual coverage is needed. Pull exact mathematics through gn3n.read(...), ancestry/subtree navigation, or paged read RPCs as needed.
+Retain the returned worker_id. Before mathematical work, use the live gn3n.atlas() orientation surface. Pull exact mathematics through gn3n.read(...), ancestry/subtree navigation, or paged read RPCs as needed.
 
 For current project policy use gn3n.get_policy('project_policy'). For shared operational policy use gn3n.get_policy('artifact_kernel') as the compact convenience kernel, and query more specialized live policy only when the active workflow genuinely requires it.
 

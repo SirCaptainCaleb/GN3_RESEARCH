@@ -21,12 +21,11 @@ A completed short maintenance assignment is not automatically a reason to end a 
 INGEST AND NAVIGATION
 
 Use progressive disclosure. The normal direction is:
-1. gn3n.startup_atlas() for first-contact project orientation;
-2. gn3n.atlas() for the complete semantic-container map;
-3. gn3n.simplified_subtree(...) or gn3n.simplified_ancestry(...) for local reasoning-tree structure;
-4. gn3n.search_compact(...) or filtered search when the concept is known but the object ID is not;
-5. gn3n.read(...) for exact small reads;
-6. read_preview/open_read_ex/read_page/read_more/read_section for large exact content.
+1. gn3n.atlas() for project-wide semantic-container orientation;
+2. gn3n.simplified_subtree(...) or gn3n.simplified_ancestry(...) for local reasoning-tree structure;
+3. gn3n.search_compact(...) or filtered search when the concept is known but the object ID is not;
+4. gn3n.read(...) for exact small reads;
+5. read_preview/open_read_ex/read_page/read_more/read_section for large exact content.
 
 Search is for discovery, not bulk ingestion. Database discovery should be demand-driven. Do not repeatedly poll or rescan the corpus just to see what changed. Pull exact mathematics, definitions, provenance, or dependencies when the current reasoning needs them.
 
