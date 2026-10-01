@@ -27,18 +27,36 @@ jobs:
         with:
           ref: main
 
-      - name: Assemble context bundle from repository state
+      - name: Assemble lean context bundle from repository state
         run: |
           set -euo pipefail
           rm -rf _artifact
           mkdir -p _artifact
+
           for schema in gn3n linp template; do
-            test -d "$schema/_context"
-            test -d "$schema/vocabulary"
-            mkdir -p "_artifact/$schema"
-            cp -a "$schema/_context/." "_artifact/$schema/"
-            cp -a "$schema/vocabulary" "_artifact/$schema/vocabulary"
-            cp "$schema/mirror_manifest.json" "_artifact/$schema/mirror_manifest.json"
+            src="$schema/_context"
+            dst="_artifact/$schema"
+
+            test -d "$src"
+            test -f "$schema/vocabulary/standardization_dictionary.yaml"
+
+            mkdir -p "$dst/help" "$dst/roles" "$dst/policies" "$dst/vocabulary"
+
+            # Deliberately curated worker-facing files only.
+            cp "$src/startup_bootstrap.md" "$dst/startup_bootstrap.md"
+            cp "$src/atlas.md" "$dst/atlas.md"
+            cp "$src/startup_atlas.md" "$dst/startup_atlas.md"
+            cp "$src/simplified_forest.md" "$dst/simplified_forest.md"
+            cp "$src/statement_forest.md" "$dst/statement_forest.md"
+            cp "$src/statement_plus_proof_forest.md" "$dst/statement_plus_proof_forest.md"
+
+            # Human-readable on-demand guidance. No JSON indexes or raw RPC metadata.
+            find "$src/help" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/help/" \;
+            find "$src/roles" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/roles/" \;
+            find "$src/policies" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/policies/" \;
+
+            # One compact human-readable dictionary.
+            cp "$schema/vocabulary/standardization_dictionary.yaml"                "$dst/vocabulary/standardization_dictionary.yaml"
           done
 
       - name: Upload research context artifact
