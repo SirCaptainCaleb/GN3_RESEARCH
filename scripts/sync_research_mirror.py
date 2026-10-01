@@ -105,17 +105,20 @@ def write_yaml(path: Path, value: Any):
     path.write_text("\n".join(yaml_lines(value)) + "\n", encoding="utf-8")
 
 def write_dictionary_yaml(path: Path, rows: list[dict[str, Any]]):
-    """Write only term -> definition, with YAML-safe quoted keys and values."""
+    """Write one simple YAML mapping: term -> definition, with note appended in brackets."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    items = sorted(
-        ((str(r.get("term") or ""), r.get("definition")) for r in rows),
-        key=lambda kv: kv[0].casefold(),
-    )
+    items = sorted(rows, key=lambda r: str(r.get("term") or "").casefold())
     lines = []
-    for term, definition in items:
-        key = json.dumps(term, ensure_ascii=False)
-        value = "null" if definition is None else json.dumps(str(definition), ensure_ascii=False)
-        lines.append(f"{key}: {value}")
+    for row in items:
+        term = str(row.get("term") or "")
+        definition = str(row.get("definition") or "")
+        note = str(row.get("notes") or "")
+        value = definition
+        if note:
+            value = f"{value} [{note}]" if value else f"[{note}]"
+        key_yaml = json.dumps(term, ensure_ascii=False)
+        value_yaml = json.dumps(value, ensure_ascii=False)
+        lines.append(f"{key_yaml}: {value_yaml}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 def write_json(path: Path, value: Any):
