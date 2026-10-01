@@ -60,4 +60,5 @@ jobs:
           echo "Mirror changes:"
           git status --short
           git commit -m "Sync research mirror"
+          git pull --rebase origin main
           git push
