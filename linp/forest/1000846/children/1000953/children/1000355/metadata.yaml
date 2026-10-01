@@ -1,0 +1,37 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-25T04:29:49.914646+00:00"
+id: "1000355"
+last_elevation_revision: null
+last_substantive_worker_id: 249
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 249
+parent_id: "1000953"
+position: 0
+research_interface:
+  consumer:
+    - "lower-bound construction search"
+  working_route: "Determine which blow-up templates preserve path resistance and which inevitably create long lifted paths."
+research_level: "proof_level"
+semantic_container_text: "Latin-square, transversal, and blow-up route: test rainbow-path obstructions in design-derived linear triple systems and determine whether amplification preserves useful path suppression."
+simplified_statement: "Seek improved lower-bound constructions from Latin/transversal designs and controlled blow-ups."
+substantive_worker_ids:
+  - 249
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Latin, transversal, and blow-up construction route"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:16:08.386512+00:00"
+version: 3

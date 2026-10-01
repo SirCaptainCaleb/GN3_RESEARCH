@@ -1,0 +1,9 @@
+# Equality-two-crossing permanent-internal covers have only three contracted block forms
+
+## Statement
+
+Continue the setting of 5ff05be1a5bc. Let T be a two-cover of H-c_0 having exactly two crossing edges across the four classes L, R^+, C^*=C-c_0, D. Then each class occurs as one intact T-block. After contracting the four blocks, the two T-components have exactly one of three possible support forms: (I) L-C^* and R^+-D; (II) L-D and R^+-C^*; or (III) one three-block path using L,R^+,C^* in some order while D is the other isolated component. In particular, C^*, L, and R^+ can never be isolated components, and the matching L-R^+ together with C^*-D is impossible.
+
+## Body
+
+Because T has q=2 and exactly two cross-class edges, equality holds in coversurg01 Section 6 for the four-class partition from 5ff05be1a5bc. Hence each class contributes exactly one nonempty block. Contracting the four blocks turns T into a two-edge path forest on four vertices, so its abstract form is either 2K2 or P3 plus an isolated vertex. If C^* is isolated, replace that component by the inherited tight path C=(c_0,C^*) and leave the other T-component unchanged, giving a spanning two-cover of H. If L is isolated, append c_0 using the inherited prefix (L,c_0) of the Hamilton path (L,c_0,R^+); similarly if R^+ is isolated, prepend c_0 using (c_0,R^+). Each again gives a spanning two-cover. Thus in the P3+isolated case only D may be isolated, forcing form III. In the 2K2 case, if L is paired with R^+, then the other pair is C^* with D; replace the L-R^+ component by the known Hamilton path (L,c_0,R^+) and retain the C^*-D component, again two-covering H. Therefore the L-R^+ matching is impossible. The only remaining perfect matchings are forms I and II.

@@ -1,0 +1,9 @@
+# Shadow-rainbow reduction and its black-box 2/3 ceiling
+
+## Statement
+
+Let H be a linear 3-graph. Color each pair xy in its 2-shadow by the unique third vertex z with xyz in E(H). This is a proper edge-coloring. For any bipartition V(H)=A∪B, retain on A exactly the shadow edges whose color lies in B; every rainbow t-edge path in the retained graph lifts to P_t^(3) in H. Consequently, if every properly edge-colored graph of average degree d has a rainbow path of length at least alpha*d-C, then every P_ell^(3)-free H satisfies |E(H)| <= (2/(3alpha))(ell+C)|V(H)|. Thus even an ideal alpha=1 black-box theorem stops at leading coefficient 2/3.
+
+## Body
+
+Properness: if two shadow edges incident with x had the same color z, their corresponding triples would both contain x and z, contradicting linearity. For the lift, a rainbow path v_0...v_t in the retained graph has distinct colors c_1,...,c_t in B, while all path vertices lie in A. The triples {v_{i-1},v_i,c_i} are therefore distinct; consecutive triples meet in v_i, and nonconsecutive triples are disjoint, because any additional shared point would either repeat a path vertex/color or violate linearity. Hence they form P_t^(3). For the bound, choose A/B independently with probability 1/2. A hyperedge contributes exactly one retained shadow edge precisely when it has two vertices in A and one in B, an event of probability 3/8, so E|E(J)|=3m/8 and E|A|=n/2. If H is P_ell-free, J has no rainbow ell-edge path. The assumed rainbow theorem gives average degree d(J)<=(ell+C)/alpha up to an immaterial strict/integer adjustment, hence |E(J)|<=(ell+C)|A|/(2alpha). Taking expectations yields 3m/8 <= (ell+C)n/(4alpha), so m <= 2(ell+C)n/(3alpha). Beating 2/3 via this shadow route therefore requires using extra triangle/third-vertex structure rather than a generic average-degree rainbow theorem as a black box.

@@ -1,0 +1,68 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 6
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T03:38:40.2484+00:00"
+id: "1001149"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Nonregular leave parity forces a vertex with leave degree at most s-2, hence H-degree at least 3d+1 and endpoint potential at most ell-2; the source inequality gives 6/4/5 ascending edges by residue. Current version also has standardized endpoint terminology."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Nonregular leave parity forces a vertex with leave degree at most s-2, hence H-degree at least 3d+1 and endpoint potential at most ell-2; the source inequality gives 6/4/5 ascending edges by residue. Current version also has standardized endpoint terminology."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_repair:
+    reason: "Terminology cleanup only; mathematics unchanged."
+    recorded_at: "2026-09-25T01:44:16.324066+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "equality degree-potential anticorrelation"
+  uses:
+    - "1001104"
+    - "1000481"
+    - "1000983"
+    - "1000157"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1001104"
+position: 0
+research_interface:
+  consequence: "Equality cannot be degree/potential uniform: it contains a >=3d+1 degree vertex below top potential, forcing 6/4/5 ascending source edges by residue."
+  consumer:
+    - "equality-layer induction"
+    - "ascending-DAG route"
+    - "potential-flow route"
+  given:
+    - "exact equality m=dn"
+    - "P_ell-free"
+    - "leave parity"
+  next_need: "Exploit the 2c(v) distinct higher-potential terminals. If phi(v)=ell-2 they all have potential ell-1; use cumulative terminal capacities/potential cuts to bound such a fan. If phi(v) is lower, iterate upward in the ascending DAG and seek a branching-depth contradiction or a second high-source vertex."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Equality forces a high-degree low-potential ascending source."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Equality forces a high-degree low-potential ascending source"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

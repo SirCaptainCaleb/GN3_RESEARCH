@@ -1,0 +1,9 @@
+# Opposite endpoint deletion covers with intact inherited blocks force a radius-two support migration or order disagreement
+
+## Statement
+
+Let H be a minimum counterexample and let A=(a_1,...,a_r), r>=4, be one component of a spanning path cover. Choose exact two-covers T_1 of H-a_1 and T_r of H-a_r. Suppose T_1 contains (a_2,...,a_r) as one contiguous block in the inherited order, and T_r contains (a_1,...,a_{r-1}) as one contiguous block in the inherited order. Then either the two deletion-cover orders disagree on common vertices, or there exist distinct vertices u,v outside A such that (u,a_2,...,a_{r-1},v) is a tight path. In the latter case A'=(A-{a_1,a_r}) union {u,v} is a Hamiltonian support of order r at Johnson distance two from A.
+
+## Body
+
+Because T_1 is a two-cover of H-a_1, the intact block (a_2,...,a_r) cannot begin its T_1-component. If it did, prepending a_1 would create only the new triple (a_1,a_2,a_3), which is tight in the displayed path A, and would therefore turn T_1 into a spanning two-cover of H. Hence some vertex u outside A immediately precedes a_2 in T_1, and (u,a_2,a_3) is tight. Symmetrically, the intact block (a_1,...,a_{r-1}) cannot end its T_r-component, since appending a_r would two-cover H. Hence some vertex v outside A immediately follows a_{r-1} in T_r, and (a_{r-2},a_{r-1},v) is tight. If u=v, then on the common surviving set H-{a_1,a_r}, T_1 orders u before every a_i with 2<=i<=r-1, whereas T_r orders every such a_i before u. Thus the two deletion-cover orders have relative-order disagreement. If u and v are distinct, the sequence (u,a_2,...,a_{r-1},v) is tight: its first triple is supplied by T_1, its last triple by T_r, and every interior triple is inherited from A. Its support has order r and differs from A by deleting a_1,a_r and adding u,v.

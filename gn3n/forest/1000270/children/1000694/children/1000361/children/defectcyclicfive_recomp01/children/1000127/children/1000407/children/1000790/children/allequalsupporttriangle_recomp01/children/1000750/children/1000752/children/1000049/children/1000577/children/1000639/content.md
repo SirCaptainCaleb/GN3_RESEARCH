@@ -1,0 +1,9 @@
+# The full-support cycle branch gives two opposite near-Hamiltonian truncations
+
+## Statement
+
+Continue b2f0a8047d8d in its cycle branch. Let P_i=(t_i,M_i,t_{i+1}) and let the chosen successful-insertion path R_j have the decomposition R_j=L,t_{i+1},E^o,t_i,R, where L and R are the maximal prefix and suffix outside the reversed endpoint segment E=(t_{i+1},E^o,t_i). If the path-intersection proof closes to a tight cycle C consisting of E followed by P_i from t_i back to t_{i+1}, then both induced subtournaments U-L and U-R are Hamiltonian, where U=V(P_i) union V(R_j). Moreover L and R are both nonempty whenever H[U] is non-Hamiltonian. In the all-equal insertion setting U=H-M_k for the remaining petal k, so this gives two opposite proper Hamiltonian truncations of the non-Hamiltonian path-cover-two subtournament H-M_k.
+
+## Body
+
+The cycle order is t_{i+1},E^o,t_i,M_i,t_{i+1}. To absorb the prefix L, cut this cycle immediately before t_{i+1} and prepend the inherited R_j-prefix L. The join into t_{i+1} and the first edge of E is inherited from R_j, while the remainder follows the tight cycle, so L followed by the cycle-without-repeat is a Hamilton path on U-R. Dually, rotate the cycle so that it ends at t_i and append the inherited suffix R; the final join through t_i into the first vertex of R is inherited from R_j, giving a Hamilton path on U-L. If R were empty, the first construction would Hamiltonize all of U; if L were empty, the second would Hamiltonize all of U. Hence for non-Hamiltonian U both are nonempty. In the all-equal insertion setting V(P_i) union V(R_j)=M_i union M_j union T=H-M_k.

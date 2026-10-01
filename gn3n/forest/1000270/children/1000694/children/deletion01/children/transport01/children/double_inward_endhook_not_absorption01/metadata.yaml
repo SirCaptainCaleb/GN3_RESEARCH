@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-10-01T01:04:15.024625+00:00"
+id: "double_inward_endhook_not_absorption01"
+last_elevation_revision: 10414
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Verify the four-vertex edge-order construction and confirm that simultaneous inward hooks at both ends of a tight three-path do not force Hamiltonicity."
+  audit_request_recorded_at: "2026-10-01T01:04:23.843634+00:00"
+  audit_resolution:
+    claim_id: 845
+    detail: "Independently checked the explicit edge-order example. The order ab<cx<ac<bx<ax<bc consists of the three opposite-edge perfect matchings as strict consecutive blocks, hence the K4 is non-Hamiltonian by the matching-block classification. At the same time ab<bc, ab<ax, and cx<bc give respectively (a,b,c), (b,a,x), and (x,c,b) tight, so both inward hooks coexist without absorption."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:09:12.203304+00:00"
+    worker_id: 737
+  audit_trigger_kind: "explicit"
+  deep_research: true
+  last_audit_observation:
+    claim_id: 845
+    detail: "Independently checked the explicit edge-order example. The order ab<cx<ac<bx<ax<bc consists of the three opposite-edge perfect matchings as strict consecutive blocks, hence the K4 is non-Hamiltonian by the matching-block classification. At the same time ab<bc, ab<ax, and cx<bc give respectively (a,b,c), (b,a,x), and (x,c,b) tight, so both inward hooks coexist without absorption."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:09:12.203304+00:00"
+    worker_id: 737
+  role: "counterexample"
+object_type: "research"
+origin_worker_id: 745
+parent_id: "transport01"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge; proof-route triage"
+  given: "a proposed local defect-compression argument using only the two inward reverse hooks at the ends of a displayed path"
+  produces: "an explicit four-vertex counterexample showing that synchronized inward endpoint hooks alone do not imply absorption"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Even both canonical inward reverse hooks around a tight three-path do not force absorption of the exterior vertex."
+substantive_worker_ids:
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two inward endpoint hooks do not force one-vertex absorption"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:09:12.203304+00:00"
+version: 6

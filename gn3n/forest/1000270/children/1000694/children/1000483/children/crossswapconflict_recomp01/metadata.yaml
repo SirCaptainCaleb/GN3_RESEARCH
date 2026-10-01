@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T01:22:22.435792+00:00"
+id: "crossswapconflict_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 239
+    detail: "Faithful recomposition. It preserves the local satisfiability fence for one pivot cell, the exact classification of reversal collisions across cells as only the two diagonal central c-containing pairs, the absence of side-side/central-side/inherited-path reversal collisions, and the consequence that every diagonal central conflict forces a c-free side alternative. The anti-diagonal path description of the cell-conflict graph is preserved exactly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 239
+    detail: "Faithful recomposition. It preserves the local satisfiability fence for one pivot cell, the exact classification of reversal collisions across cells as only the two diagonal central c-containing pairs, the absence of side-side/central-side/inherited-path reversal collisions, and the consequence that every diagonal central conflict forces a c-free side alternative. The anti-diagonal path description of the cell-conflict graph is preserved exactly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+    worker_id: 694
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T01:22:50.759655+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "1000483"
+position: 1
+research_interface:
+  consumer: "augmenting-clause and deletion-state cross-swap routes"
+  given: "family of pivot-pivot cross-swap clauses on fixed displayed paths A,B and omitted label c"
+  produces: "complete reversal-conflict geometry and forced c-free side bridge on each diagonal central conflict"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Cross-swap clause conflicts occur only along central anti-diagonals."
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Cross-swap clause conflicts occur only along central anti-diagonals"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:25:53.747509+00:00"
+version: 6

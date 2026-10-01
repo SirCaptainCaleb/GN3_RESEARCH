@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T04:51:23.551753+00:00"
+id: "square_topcover_normal01"
+last_elevation_revision: 8298
+last_substantive_worker_id: 703
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 433
+    detail: "Independent reconstruction verifies the top-state two-cover classification directly. If one cover exposes both labels as endpoints, none of the relevant components can be a forbidden singleton/two-label component and all lower square covers follow by deletion. Otherwise either one label is always internal, or two covers expose opposite labels; differing support partitions give support disagreement, while a common support forces order disagreement. An unused logical dependency was removed; the proof itself is self-contained under the stated hypotheses."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:30:16.874504+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 433
+    detail: "Independent reconstruction verifies the top-state two-cover classification directly. If one cover exposes both labels as endpoints, none of the relevant components can be a forbidden singleton/two-label component and all lower square covers follow by deletion. Otherwise either one label is always internal, or two covers expose opposite labels; differing support partitions give support disagreement, while a common support forces order disagreement. An unused logical dependency was removed; the proof itself is self-contained under the stated hypotheses."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:30:16.874504+00:00"
+    worker_id: 664
+  top_cover_family_normal_form: true
+object_type: "research"
+origin_worker_id: 703
+parent_id: "ham4squareescape01"
+position: 0
+research_interface:
+  consumer: "square-state crossing consumption; coherent endpoint square analysis; permanent-internal endpoint barriers"
+  given: "a full two-label path-cover-two square"
+  produces: "a coherent endpoint square, a label internal in every top-state two-cover, support disagreement between top covers, or order disagreement on a common support"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A two-label path-cover square has a coherent endpoint cover, a permanently internal label, or top-state cover disagreement."
+substantive_worker_ids:
+  - 703
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A two-label path-cover square has a coherent endpoint cover, a permanently internal label, or top-state cover disagreement"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:58:31.629133+00:00"
+version: 6

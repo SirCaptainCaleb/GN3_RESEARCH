@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:04:40.263233+00:00"
+id: "order11_three_side_barrier_elevated01"
+last_elevation_revision: 10100
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction of the order-eleven three-side reduction with the strengthened blocked overlap-or-star terminal geometry."
+  audit_request_recorded_at: "2026-09-30T13:05:04.105893+00:00"
+  audit_resolution:
+    claim_id: 223
+    detail: "Independent check passed. order11_three_side_barrier_recomp01 gives the trapped-three-side reduction to order eleven and profile 4|4|3, together with the universal three-set barrier formulation. Applying certified order11_triple_blocked_overlap_or_star01 to each three-set X gives exactly the blocked-overlap or four-leaf blocked-star conclusion. The target is only this composition and introduces no additional inference. Local certification is valid; support remains dependency-held until the pending recomposed three-side premise is independently certified."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:48:00.32851+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 223
+    detail: "Independent check passed. order11_three_side_barrier_recomp01 gives the trapped-three-side reduction to order eleven and profile 4|4|3, together with the universal three-set barrier formulation. Applying certified order11_triple_blocked_overlap_or_star01 to each three-set X gives exactly the blocked-overlap or four-leaf blocked-star conclusion. The target is only this composition and introduces no additional inference. Local certification is valid; support remains dependency-held until the pending recomposed three-side premise is independently certified."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:48:00.32851+00:00"
+    worker_id: 665
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-10-01T01:04:00.657971+00:00"
+object_type: "research"
+origin_worker_id: 708
+parent_id: "order11_three_side_barrier_recomp01"
+position: 0
+research_interface:
+  consumer: "order-eleven closure"
+  given: "a trapped Phi-minimal three-cover with a three-side"
+  produces: "order 11, profile 4|4|3, plus blocked overlap-or-star geometry for every three-set"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Order-eleven three-side barrier becomes blocked overlap or star."
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Order-eleven three-side barrier becomes blocked overlap or star"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:04:00.657971+00:00"
+version: 6

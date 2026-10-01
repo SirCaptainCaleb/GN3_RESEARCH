@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T20:20:32.386177+00:00"
+id: "1000292"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 67
+    detail: "Dictionary-only terminology repair; mathematical content and dependency composition unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T23:48:46.084227+00:00"
+    worker_id: 572
+  last_audit_observation:
+    claim_id: 67
+    detail: "Dictionary-only terminology repair; mathematical content and dependency composition unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T23:48:46.084227+00:00"
+    worker_id: 572
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Dictionary-only repair: removed the prohibited redundant modifier exact from two-cover terminology; mathematics unchanged."
+    recorded_at: "2026-09-27T23:48:35.66681+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 572
+object_type: "research"
+origin_worker_id: 697
+parent_id: "1000739"
+position: 2
+research_interface:
+  consumer: "unconditional pairwise-repartition no-trapping; grand theorem; endpoint transport / defect compression"
+  given: "an arbitrary all-equal spanning three-cover in a minimum counterexample"
+  need: "unify consumption of the three disturbance outputs into defect-span at most two or a spanning two-cover"
+  produces: "multiple crossing, generic paired-noninsertion obstruction, or explicit inherited-order disagreement from two endpoint deletion probes"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "All-equal three-cover endpoint probes always expose scale-free disturbance"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "All-equal three-cover endpoint probes always expose scale-free disturbance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:48:46.084227+00:00"
+version: 11

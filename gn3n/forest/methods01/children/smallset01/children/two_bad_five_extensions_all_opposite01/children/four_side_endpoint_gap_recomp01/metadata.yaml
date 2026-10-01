@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T05:00:26.991064+00:00"
+id: "four_side_endpoint_gap_recomp01"
+last_elevation_revision: 9789
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 753
+    detail: "Independent reconstruction passed. Endpoint Hamiltonicity gives the stated (4,m)->(5,m-1) move with Delta Phi=10-2m. If both endpoint extensions are bad, two_bad_five_extensions_all_opposite01 makes every endpoint-pair residual F_t Hamiltonian; absence of the same repartition forces every t noninsertable into M. The complete failed-insertion classification then yields exactly the mixed four/five-support alternatives, repeated-gap four-set, or four distinct second-type gaps. Four distinct gaps imply m>=7, and the certified spacing trichotomy gives the adjacent cross triple or separated interval connector."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:21:12.195834+00:00"
+    worker_id: 737
+  last_audit_observation:
+    claim_id: 753
+    detail: "Independent reconstruction passed. Endpoint Hamiltonicity gives the stated (4,m)->(5,m-1) move with Delta Phi=10-2m. If both endpoint extensions are bad, two_bad_five_extensions_all_opposite01 makes every endpoint-pair residual F_t Hamiltonian; absence of the same repartition forces every t noninsertable into M. The complete failed-insertion classification then yields exactly the mixed four/five-support alternatives, repeated-gap four-set, or four distinct second-type gaps. Four distinct gaps imply m>=7, and the certified spacing trichotomy gives the adjacent cross triple or separated interval connector."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:21:12.195834+00:00"
+    worker_id: 737
+  recomposition_audit:
+    classified_at: "2026-09-30T05:00:39.376694+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+object_type: "research"
+origin_worker_id: 665
+parent_id: "two_bad_five_extensions_all_opposite01"
+position: 0
+research_interface:
+  consumer: "four-side endpoint transport; deletion-state closure; endpoint transport / defect compression"
+  given: "a minimum-counterexample three-cover with a Hamiltonian four-side beside a path of order at least five"
+  need: "consume the mixed support or complete gap network into defect compression or a two-cover"
+  produces: "one theorem giving nonincreasing endpoint transport, a genuinely mixed Hamiltonian 4/5-support with pc2 complement, or the complete injective four-label second-type gap network"
+research_level: "theorem"
+semantic_container_text: "Four-side endpoint-gap reduction: a four-vertex side beside a path yields direct repartition descent, a bounded mixed Hamiltonian support, or a complete failed-insertion gap network whose reversals, connectors, and cycles provide the remaining closure mechanisms."
+simplified_statement: "A four-side beside a path reduces directly to transport, mixed support, or a complete gap network."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A four-side beside a path reduces directly to transport, mixed support, or a complete gap network"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:21:12.195834+00:00"
+version: 7

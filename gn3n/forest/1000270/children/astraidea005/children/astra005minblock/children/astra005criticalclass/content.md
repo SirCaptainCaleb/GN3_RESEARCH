@@ -1,0 +1,9 @@
+# Two-cover inseparability is an equivalence relation, and a minimal failure is vertex-critical for one nontrivial class
+
+## Statement
+
+Assume a boundary tournament H has at least one spanning two-cover. Define u~v when u and v lie in the same component of every spanning two-cover of H. Then ~ is an equivalence relation, and every component support of every two-cover is a union of whole equivalence classes. H satisfies the prescribed-separation conclusion for every vertex pair if and only if every ~-class is a singleton. In the two-coverable branch of a minimum counterexample (H;s,t) to Astra idea 005, s~t, but for every v outside {s,t}, the induced subtournament H-v has a two-cover separating s and t. Thus deleting any nonprescribed vertex destroys the inseparability of s and t: the nontrivial class containing s,t is vertex-critical with respect to every other vertex.
+
+## Body
+
+Reflexivity and symmetry of ~ are immediate. For transitivity, if u~v and v~w, then in every spanning two-cover u and v lie in one component and v and w lie in one component; because the two components are disjoint, all three lie in the same component, so u~w. Hence ~ is an equivalence relation. If C is a ~-class and P|Q is any spanning two-cover, then any two vertices of C must lie in the same one of P,Q; therefore C is wholly contained in one component and each component support is a union of classes. A pair u,v is separable by some two-cover exactly when u not~ v, so every pair is separable exactly when all classes are singletons. Now let (H;s,t) be a minimum prescribed-separation failure in the branch where H itself has a two-cover. Since no two-cover separates s,t, we have s~t. For v outside {s,t}, minimality says H-v satisfies Astra idea 005 for the surviving prescribed pair s,t, so some two-cover of H-v separates them. Hence s and t are no longer inseparable after deleting v.

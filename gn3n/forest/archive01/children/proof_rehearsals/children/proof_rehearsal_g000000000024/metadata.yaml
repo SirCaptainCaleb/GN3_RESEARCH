@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T00:02:18.160535+00:00"
+id: "proof_rehearsal_g000000000024"
+last_elevation_revision: 0
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: null
+metadata:
+  completed_revision: 2744
+  details:
+    details: "Proof rehearsal through Astra's ideas: local balance improvement gives strict quadratic descent to an equitable three-cover; no certified theorem currently forces escape from the equitable state. The newly proved reduction is 257497a6d724."
+    first_unsupported_inference: "From an arbitrary equitable spanning three-cover, a finite sequence of legal pairwise repartitions must reach a two-cover. Equivalently for the Astra-002/003 route, after local quadratic balancing removes all component-size imbalance, one still needs a general order/orientation mechanism that escapes every equitable three-cover."
+    gap_id: "1000109"
+  gap_id: "1000109"
+  generation: 24
+  opened_revision: 2611
+  reported_outcome: "partial"
+object_type: "proof_rehearsal"
+origin_worker_id: null
+parent_id: "proof_rehearsals"
+position: 24
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+support_reason: null
+support_status: "unchecked"
+title: "Proof rehearsal 24 — 2026-09-27 00:02 UTC"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T16:56:38.614765+00:00"
+version: 2

@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-26T21:08:59.054308+00:00"
+id: "astra004neutral2exchange"
+last_elevation_revision: 0
+last_substantive_worker_id: 576
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 309
+    detail: "The proof uses astra004repeatcutdisturb as the step forcing injectivity of the neutral cut map, but that premise is currently audit-failed/support blocked. Without that step the conclusion |D|=2 and the forced two-ended exchange do not follow from the displayed proof."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-26T22:42:18.320107+00:00"
+    worker_id: 710
+  last_audit_observation:
+    claim_id: 309
+    detail: "The proof uses astra004repeatcutdisturb as the step forcing injectivity of the neutral cut map, but that premise is currently audit-failed/support blocked. Without that step the conclusion |D|=2 and the forced two-ended exchange do not follow from the displayed proof."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-26T22:42:18.320107+00:00"
+    worker_id: 710
+  last_failure:
+    reason: "The proof uses astra004repeatcutdisturb as the step forcing injectivity of the neutral cut map, but that premise is currently audit-failed/support blocked. Without that step the conclusion |D|=2 and the forced two-ended exchange do not follow from the displayed proof."
+    recorded_at: "2026-09-26T22:42:18.320107+00:00"
+object_type: "research"
+origin_worker_id: 576
+parent_id: "astra004cutmapfork"
+position: 0
+research_interface:
+  consumer: "Astra idea 004; grand theorem"
+  given: "the fully order-neutral deletion-sparse sharp-shell branch after excluding all explicit mixed crossing/order disturbance"
+  need: "compare the complement of the two-ended exchanged longest path with U; prove its good-deletion count increases or derive an explicit disturbance"
+  produces: "exactly two good complement deletions, bijective cut map, and a globally longest path obtained by replacing both endpoints of the original longest path"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A disturbance-free sparse shell forces exactly two good deletions and one two-ended longest-support exchange."
+substantive_worker_ids:
+  - 576
+support_reason: "local_audit_failed"
+support_status: "blocked"
+title: "A disturbance-free sparse shell forces exactly two good deletions and one two-ended longest-support exchange"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:44:33.034029+00:00"
+version: 13

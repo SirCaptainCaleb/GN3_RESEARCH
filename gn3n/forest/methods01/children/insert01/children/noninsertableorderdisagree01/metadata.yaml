@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 76
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T15:23:11.535533+00:00"
+id: "noninsertableorderdisagree01"
+last_elevation_revision: 0
+last_substantive_worker_id: 644
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 162
+    detail: "If a Hamilton order on V(P) union {x} preserved every relative order from P, deleting x would leave exactly P, so the Hamilton order would be obtained by inserting x into P, contradicting noninsertability."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  hypotheses_removed:
+    - "quadratic-potential minimality"
+    - "pairwise-repartition trapping"
+    - "five-vertex side"
+    - "endpoint-extension setup"
+  last_audit_observation:
+    claim_id: 162
+    detail: "If a Hamilton order on V(P) union {x} preserved every relative order from P, deleting x would leave exactly P, so the Hamilton order would be obtained by inserting x into P, contradicting noninsertability."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  origin_ids:
+    - "astra003fiveonepath"
+  proof_change: "isolated the pure order-theoretic consequence of noninsertability"
+object_type: "result"
+origin_worker_id: 644
+parent_id: "insert01"
+position: 0
+research_interface:
+  consumer: "insertion arguments; path comparison; endpoint transport"
+  given: "a displayed tight path P, an exterior vertex x noninsertable into P, and Hamiltonicity of P+x"
+  produces: "order disagreement between P and every Hamilton order of the enlarged support"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A Hamiltonian enlargement of a noninsertable path forces order disagreement."
+substantive_worker_ids:
+  - 644
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A Hamiltonian enlargement of a noninsertable path forces order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 4

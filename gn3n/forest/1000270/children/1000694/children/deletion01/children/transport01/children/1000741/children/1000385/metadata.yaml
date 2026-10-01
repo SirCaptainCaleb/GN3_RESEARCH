@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 7
+created_at: "2026-09-21T04:34:07.728524+00:00"
+id: "1000385"
+last_elevation_revision: 0
+last_substantive_worker_id: 598
+legacy_id: null
+lifecycle_status: "active"
+math_version: 7
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 401
+    detail: "Checked the one-crossing endpoint reduction. The unique-crossing block lemma with D={endpoint}, S=A-endpoint, C=U gives one full A-block and two U-blocks; longest-path maximality forces the attached U-block to be a singleton. At the two ends this yields Hamilton paths on (A-a0)+u and (A-am)+v plus U-u,U-v. If u≠v the induced exact U-covers have different supports; if u=v, two-sided endpoint replacement applies because A+u is non-Hamiltonian by global maximality. Thus double crossing or explicit disagreement is exhaustive."
+    math_version: 7
+    outcome: "pass"
+    recorded_at: "2026-09-21T04:49:21.63344+00:00"
+    worker_id: 628
+  last_audit_observation:
+    claim_id: 401
+    detail: "Checked the one-crossing endpoint reduction. The unique-crossing block lemma with D={endpoint}, S=A-endpoint, C=U gives one full A-block and two U-blocks; longest-path maximality forces the attached U-block to be a singleton. At the two ends this yields Hamilton paths on (A-a0)+u and (A-am)+v plus U-u,U-v. If u≠v the induced exact U-covers have different supports; if u=v, two-sided endpoint replacement applies because A+u is non-Hamiltonian by global maximality. Thus double crossing or explicit disagreement is exhaustive."
+    math_version: 7
+    outcome: "pass"
+    recorded_at: "2026-09-21T04:49:21.63344+00:00"
+    worker_id: 628
+object_type: "research"
+origin_worker_id: 598
+parent_id: "1000741"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge"
+  given: "a globally longest tight path and arbitrary exact deletion covers at its two endpoints"
+  need: "consume a two-or-more-crossing endpoint state or the resulting explicit disagreement"
+  produces: "a sharp endpoint dichotomy: double crossing or support/order disagreement; all one-crossing states are singleton replacements and cannot remain compatible"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Endpoint covers of a longest path force double crossing or disagreement."
+substantive_worker_ids:
+  - 598
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint covers of a longest path force double crossing or disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:25:25.297469+00:00"
+version: 11

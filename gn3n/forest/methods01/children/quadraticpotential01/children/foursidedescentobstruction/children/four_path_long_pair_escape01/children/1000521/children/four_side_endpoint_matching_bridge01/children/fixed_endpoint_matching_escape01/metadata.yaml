@@ -1,0 +1,38 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-29T18:13:20.977652+00:00"
+id: "fixed_endpoint_matching_escape01"
+last_elevation_revision: 0
+last_substantive_worker_id: 605
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+object_type: "research"
+origin_worker_id: 605
+parent_id: "four_side_endpoint_matching_bridge01"
+position: 0
+research_interface:
+  consumer: "grand-theorem closure through component-respecting transport"
+  given: "the perfect-matching residue of the hard four-side six-set"
+  need: "turn the two fixed-endpoint Hamiltonian K4s into an actual pairwise repartition or two-cover"
+  produces: "strict reachable Phi descent or a spanning two-cover"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Fixed-endpoint matching shells should force trapped-component escape."
+substantive_worker_ids:
+  - 605
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Fixed-endpoint matching shells should force trapped-component escape"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:53:57.606786+00:00"
+version: 3

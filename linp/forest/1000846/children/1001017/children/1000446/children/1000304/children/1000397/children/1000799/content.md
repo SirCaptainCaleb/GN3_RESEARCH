@@ -1,0 +1,9 @@
+# Repeated-blocker splice obligation for four ascending terminal edges
+
+## Statement
+
+To prove the ascending terminal-degree conjecture, it suffices to rule out four ascending nonspecial edges through one common terminal vertex. Ordering their ranks t1>=t2>=t3>=t4, each lower-ranked edge e_j must intersect the precursor paths of all higher-ranked edges e_i (i<j). Hence e_4, which has only two noncommon vertices, meets three precursor paths through only two blocker vertices, forcing one blocker vertex to lie on two precursor paths. A path-splicing/uncrossing lemma at such a repeated blocker would close the degree-3 conjecture.
+
+## Body
+
+Let e_i={x_i,v,y_i} be four ascending nonspecial edges through v, where x_i is the unique entrance and t_i=phi(e_i), ordered t1>=t2>=t3>=t4. For each i choose a (t_i-1)-edge precursor path R_i ending at x_i such that R_i,e_i is a longest t_i-edge path ending at v. Because e_j shares v with e_i and R_i avoids v, if i<j and e_j were disjoint from R_i then R_i,e_i,e_j would be a (t_i+1)-edge linear path ending in e_j, contradicting t_j<=t_i. Thus e_j meets R_i for every i<j. In particular e_4 meets R_1,R_2,R_3. Since e_4\{v}={x_4,y_4}, at least one of x_4,y_4 lies on two of these precursor paths. The remaining obligation is an uncrossing statement: two precursor paths of ranks at least t_4 passing through the same blocker vertex of e_4 should be spliceable, together with their terminal edges through v, to produce either (a) a t_4-edge path entering e_4 through v or y_4 rather than x_4, making e_4 special, or (b) a path longer than one of the chosen ranks. The known three-center one-factorization family shows that the same argument with only three ascending terminal edges must not force a contradiction, so the repeated-blocker step is the sharp combinatorial point.

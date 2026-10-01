@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T03:00:10.223289+00:00"
+id: "1000703"
+last_elevation_revision: 0
+last_substantive_worker_id: 707
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 445
+    detail: "Independent check succeeds. Choose a reversed transferred-label pair whose oriented segment in R_j reaches an endpoint of R_j: endpoint insertions make the entire R_j the reversed segment, while an internal insertion admits the pair (t_{j+1},t_{j+2}) whose segment runs from the inserted label to the terminal t_{j+1}. The path-intersection dichotomy gives an endpoint-edge reversing triple or a tight cycle. In the cycle branch, attaching any remaining inherited prefix/suffix of R_j Hamiltonizes U=V(P_i)∪V(R_j)=H-M_k; the complementary petal M_k is tight, yielding a forbidden spanning two-cover. Therefore the cycle branch cannot occur."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:01:44.532187+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 445
+    detail: "Independent check succeeds. Choose a reversed transferred-label pair whose oriented segment in R_j reaches an endpoint of R_j: endpoint insertions make the entire R_j the reversed segment, while an internal insertion admits the pair (t_{j+1},t_{j+2}) whose segment runs from the inserted label to the terminal t_{j+1}. The path-intersection dichotomy gives an endpoint-edge reversing triple or a tight cycle. In the cycle branch, attaching any remaining inherited prefix/suffix of R_j Hamiltonizes U=V(P_i)∪V(R_j)=H-M_k; the complementary petal M_k is tight, yielding a forbidden spanning two-cover. Therefore the cycle branch cannot occur."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:01:44.532187+00:00"
+    worker_id: 652
+object_type: "research_note"
+origin_worker_id: 707
+parent_id: "1000577"
+position: 0
+research_interface:
+  consumer: "all-equal {1,1,1} closure; endpoint-transport / defect-compression bridge"
+  given: "the all-three-successful transferred-label insertion branch"
+  need: "combine this endpoint-edge reversal with the exact complementary two-cover of H-S_i, endpoint restoration, or cyclic rotations to obtain direct absorption / defect-span compression"
+  produces: "an explicit tight triple reversing a displayed endpoint edge of some support path P_i; the path-intersection cycle alternative is eliminated by the fixed omitted petal"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Successful transferred-label insertion forces an endpoint-edge reversing triple"
+substantive_worker_ids:
+  - 707
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Successful transferred-label insertion forces an endpoint-edge reversing triple"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:01:44.532187+00:00"
+version: 3

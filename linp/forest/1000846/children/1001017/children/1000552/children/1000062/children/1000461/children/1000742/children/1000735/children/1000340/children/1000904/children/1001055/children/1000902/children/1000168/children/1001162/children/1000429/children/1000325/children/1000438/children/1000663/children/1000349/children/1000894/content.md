@@ -1,0 +1,9 @@
+# One-eighth paid mass yields one-sixteenth distinct certified switcher edges
+
+## Statement
+
+Under the 43/48 near-extremal hypotheses of 4b7e6f0a912c, there is a set E_cert of distinct ascending nonspecial hyperedges with |E_cert| >= (1/16-o(1))S such that every f in E_cert is a switching edge in a paid-cell certificate at one of its terminal vertices. More precisely, one can inject all center-indexed units counted by sum_v(D_v^cell+Y_v) into center-switcher incidences (v,f); since an ascending nonspecial edge has exactly two terminal vertices, each underlying hyperedge receives at most two such incidences.
+
+## Body
+
+Fix a center v and its interior switching-cell system. Every occupied cell contains either one or two switchers from F_v. For each unit counted by Y_v choose one switcher in that paid cell. For each unit counted by D_v^cell choose a second switcher when the same cell is also counted by Y_v; this is possible because D_v^cell counts exactly the doubly occupied cells. If a doubly occupied cell is not paid, assign its D-unit to either of its two switchers. Thus, cell by cell, the D_v^cell+Y_v units inject into distinct incidences (v,f) with f in F_v: a single occupied paid cell contributes one unit and has at least one switcher; a double unpaid cell contributes one unit and has two; a double paid cell contributes two units and has exactly two. Different cells contain different switchers because every switcher has a unique precursor contact on P_v. Now vary v. An ascending nonspecial edge f has one unique entrance and exactly two terminal vertices. Since F_v consists of ascending edges terminal at v, the same underlying f can occur in F_v for at most its two terminal vertices. Hence every underlying hyperedge is the image of at most two of the selected center-switcher incidences. Therefore |E_cert| >= (1/2) sum_v(D_v^cell+Y_v). Apply 4b7e6f0a912c to obtain |E_cert| >= (1/16-o(1))S.

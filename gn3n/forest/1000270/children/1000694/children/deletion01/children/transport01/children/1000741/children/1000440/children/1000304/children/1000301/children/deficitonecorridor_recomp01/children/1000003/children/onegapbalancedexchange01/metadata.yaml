@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T09:54:25.716007+00:00"
+id: "onegapbalancedexchange01"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 385
+    detail: "Explicitly routed a possible one-vertex connector through the cross-triple lemma rather than assuming every coarse connector has at least two A-vertices."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:04:58.253819+00:00"
+    worker_id: 706
+  last_audit_observation:
+    claim_id: 385
+    detail: "Explicitly routed a possible one-vertex connector through the cross-triple lemma rather than assuming every coarse connector has at least two A-vertices."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:04:58.253819+00:00"
+    worker_id: 706
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Interface-hygiene repair: the coarse connector statement only says nonempty A-subpath. Route a one-vertex connector through the cross-triple lemma and use the connector lemma only when at least two A-vertices occur."
+    recorded_at: "2026-09-28T10:04:14.482088+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 706
+object_type: "theorem"
+origin_worker_id: 659
+parent_id: "1000003"
+position: 0
+research_interface:
+  consumer: "well-founded defect-window transport; endpoint transport / defect compression"
+  given: "a one-gap unit-surplus comparison path against a globally longest path"
+  need: "consume the balanced equal-order one-gap support exchange"
+  produces: "bounded gap kernel, Hamiltonian four/five-window with two-coverable complement, order disagreement, reversed splice-junction triple, or one balanced globally longest support exchange confined to the same gap"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: "A one-gap unit-surplus corridor reduces to bounded disturbance or one balanced longest-path exchange."
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A one-gap unit-surplus corridor reduces to bounded disturbance or one balanced longest-path exchange"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T02:30:23.204659+00:00"
+version: 9

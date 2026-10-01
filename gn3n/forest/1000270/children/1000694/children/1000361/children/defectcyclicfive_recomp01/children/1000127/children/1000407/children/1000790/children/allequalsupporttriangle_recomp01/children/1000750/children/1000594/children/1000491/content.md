@@ -1,0 +1,9 @@
+# Four complementary endpoints force a Hamiltonian six-set or order disagreement
+
+## Statement
+
+Assume the endpoint-barrier branch of the all-equal {1,1,1} support triangle in a minimum counterexample. Then for every i the complementary endpoint set E_i has four distinct vertices. Put K_i={t_i,b_i} union E_i. Either H[K_i] is Hamiltonian, in which case its proper complement is non-Hamiltonian with path-cover number two, or H[K_i] is non-Hamiltonian and the four Hamiltonian five-vertex deletions K_i-d, d in E_i, force relative-order disagreement: for arbitrary Hamilton paths chosen on those four deletions, some two order a common pair differently. The analogous statement holds at the terminal end with {a_i,t_{i+1}} in place of {t_i,b_i}.
+
+## Body
+
+By the certified supported four-of-six theorem in smallset01, every six-vertex boundary tournament has a Hamiltonian five-vertex induced subtournament; adjoining the remaining singleton gives a spanning two-cover. A three-vertex boundary tournament is itself Hamiltonian by boundary antisymmetry. Hence a minimum counterexample cannot have order 3 or 6. In the all-equal cube |V(H)|=3r, so r>=3. Therefore each M_j has order r-1>=2 and each A_j has order r>=3; consequently the complementary two-cover M_{i+1}|A_{i+2} has four distinct displayed endpoints, so |E_i|=4. By b7ac977975b4, for every d in E_i the five-set K_i-d={t_i,b_i} union (E_i-{d}) is Hamiltonian. If K_i is non-Hamiltonian, apply astra004fourgooddisagree with D=E_i to H[K_i], yielding relative-order disagreement for arbitrary Hamilton paths on the four deletions. If K_i is Hamiltonian, minimum-counterexample calculus gives a two-cover of the proper complement; that complement cannot be Hamiltonian, since together with K_i it would give a spanning two-cover of H. The terminal-end statement is identical using the second family of Hamiltonian five-sets from b7ac977975b4.

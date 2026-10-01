@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T03:37:48.584885+00:00"
+id: "1000178"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "11ffea4a-24f9-4b2a-8763-55aa84e9a2f0"
+    detail: "Repaired v=r3∩r4 branch and subsequent two-contact rotation checked independently; proof now closes."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:59:17.658539+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "11ffea4a-24f9-4b2a-8763-55aa84e9a2f0"
+    detail: "Repaired v=r3∩r4 branch and subsequent two-contact rotation checked independently; proof now closes."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:59:17.658539+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_failure:
+    reason: "The proof assumes from v∈r4 and b absent that f_b meets R only on r4,r5. It omits the allowed possibility v=r3∩r4, in which case f_b also meets path edge r3. The conclusion is repairable: that omitted case itself gives the wrong-entrance four-edge path r1,r2,r3,f_b, so v must be private to r4 before applying the two-contact rotation."
+    recorded_at: "2026-09-25T01:52:11.564513+00:00"
+  last_local_audit_repair:
+    reason: "Substantive audit repair: handle the omitted possibility v=r3∩r4 before invoking the two-contact rotation; that case itself gives a wrong-entrance four-edge path ending in f_b. Also normalize prohibited endpoint terminology."
+    recorded_at: "2026-09-25T01:53:17.122328+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000870"
+position: 0
+research_interface:
+  consequence: "The v-late suffix obstruction cannot occur alone: it forces the low entrance b into r3, specifically private(r3) or r2∩r3. Thus a five-path to u_b contains a rigid two-contact pattern spanning the central and penultimate zones."
+  consumer:
+    - "p=5 4445 elimination"
+  given:
+    - "4445 triangle"
+    - "a51a7f9cff95 two-contact rotation"
+    - "8b1790d79d74 position-sensitive potential"
+  next_need: "Use g3, which also contains b, against this forced central occurrence. If g3 has no second R-contact, splice/rotate through g3 to obtain a four-edge path ending c; if it has a second contact, classify it using phi(c)=3 and linearity. This should reduce the v-late branch to a finite contact pattern."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A late common-terminal blocker on a 4445 high-terminal path forces the low entrance into the center"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-25T01:59:17.658539+00:00"
+version: 6

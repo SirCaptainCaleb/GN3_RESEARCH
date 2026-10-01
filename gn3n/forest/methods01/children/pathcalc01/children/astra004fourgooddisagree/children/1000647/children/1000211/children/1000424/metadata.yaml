@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T17:21:44.88304+00:00"
+id: "1000424"
+last_elevation_revision: 0
+last_substantive_worker_id: 703
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 411
+    detail: "Independent reconstruction checks each path-intersection outcome yields a common consecutive pair in opposite directions. In the cycle case, opening the cycle one way and the two-vertex reverse path gives the stated pair."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:56:41.474795+00:00"
+    worker_id: 586
+  last_audit_observation:
+    claim_id: 411
+    detail: "Independent reconstruction checks each path-intersection outcome yields a common consecutive pair in opposite directions. In the cycle case, opening the cycle one way and the two-vertex reverse path gives the stated pair."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:56:41.474795+00:00"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 659
+parent_id: "1000211"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression; reversed-edge transport"
+  given: "the unconditional relative-order disagreement supplied by 44a0c8ced13c"
+  need: "embed or transport a reversible pair onto a displayed deletion-cover endpoint edge or globally extremal path edge"
+  produces: "a reversible consecutive pair uv: some tight path contains u,v consecutively and another contains v,u consecutively"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every minimum counterexample contains a reversible consecutive pair."
+substantive_worker_ids:
+  - 659
+  - 703
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every minimum counterexample contains a reversible consecutive pair"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T19:56:41.474795+00:00"
+version: 5

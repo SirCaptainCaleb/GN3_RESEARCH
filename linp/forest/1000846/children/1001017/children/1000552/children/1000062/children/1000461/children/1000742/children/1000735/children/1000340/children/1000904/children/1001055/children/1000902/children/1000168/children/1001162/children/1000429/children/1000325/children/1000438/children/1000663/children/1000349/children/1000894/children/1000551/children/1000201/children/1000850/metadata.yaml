@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-24T20:57:20.988961+00:00"
+id: "1000850"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:08:59.351533+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "1000201"
+position: 0
+research_interface:
+  consequence: "Omega(S) distinct paid edges can be chosen as minimum-rank fundamental-cycle chords in a maximum-rank forest of the cleaned U_11 graph itself; their entire canonical cycles remain ascending/source-clean/terminal-single, with blocker obligations on both sides."
+  consumer:
+    - "post-43/48 terminal-cycle coupling"
+    - "paid 0-1-1 source-rail route"
+    - "rank-flow along terminal cycles"
+  given:
+    - "7ac951de82f4 distinct paid-certified source-clean U_11 edges"
+    - "94c19ac52776 certified terminal-adjacency blocker lemma"
+    - "S/n_+ -> infinity"
+  next_need: "Split a clean fundamental cycle at a paid minimum-rank chord by equal-rank versus strict-rise neighbors. Equal-rank neighbors are candidates for flat-transfer/source-rail lens geometry; repeated strict rises around many paid chords should be charged to rank variation in the maximum-rank forest."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Paid edges have fundamental cycles inside the clean U_11 graph."
+substantive_worker_ids:
+  - 201
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "Paid edges have fundamental cycles inside the clean U_11 graph"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

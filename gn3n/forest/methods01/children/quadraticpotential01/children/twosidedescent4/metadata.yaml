@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T01:26:32.236349+00:00"
+id: "twosidedescent4"
+last_elevation_revision: 7702
+last_substantive_worker_id: 703
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 425
+    detail: "Self-contained reconstruction: a two-vertex side plus either endpoint of an M-path is Hamiltonian on three vertices, and replacing orders (2,M) by (3,M-1) decreases Phi by 2M-6 for M>=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:12:52.413677+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 425
+    detail: "Self-contained reconstruction: a two-vertex side plus either endpoint of an M-path is Hamiltonian on three vertices, and replacing orders (2,M) by (3,M-1) decreases Phi by 2M-6 for M>=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:12:52.413677+00:00"
+    worker_id: 664
+  two_side_descent: true
+object_type: "research"
+origin_worker_id: 703
+parent_id: "quadraticpotential01"
+position: 50
+research_interface:
+  consumer: "quadratic no-trapping; deletion-state two-label replacement; small-side elimination"
+  given: "any spanning three-cover with one component of order two and another of order at least four"
+  produces: "one explicit pairwise repartition decreasing quadratic potential by 2M-6"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every two-side beside a path of order at least four has an immediate strict quadratic descent"
+substantive_worker_ids:
+  - 703
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every two-side beside a path of order at least four has an immediate strict quadratic descent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T12:12:52.413677+00:00"
+version: 5

@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T02:45:28.123782+00:00"
+id: "1000179"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000471"
+position: 0
+research_interface:
+  consequence: "Odd-k rigid no-switch configurations always expose a connector from the common target half S into the complementary B_X half."
+  consumer:
+    - "zero-slack all-special route"
+    - "grand induction"
+  given:
+    - "6894769a092f odd-k dichotomy"
+    - "zero-slack k-regular DXX graph"
+  next_need: "Align the forced S-B_X connector with the unused-color safe target connector from 120f6e614c13 to realize the fixed-target 2-opt exchange."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Odd-k rigid zero-slack branch must contain an S-to-B connector."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Odd-k rigid zero-slack branch must contain an S-to-B connector"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

@@ -1,0 +1,15 @@
+# A one-gap corridor with at least three exterior vertices contains a linear common-core extender or parallel-middle family
+
+## Statement
+
+Let H be a minimum counterexample, let A be a globally longest tight path, and let C be an A-order-preserving tight path of order |A|-1 agreeing with A outside one gap. Put O=V(A)-V(C), E=V(C)-V(A), and r=|E|>=3, so |O|=r+1. Choose any three consecutive vertices D of the O-block in the displayed A-order. Then the graph on E joining x,y when H[D union {x,y}] is Hamiltonian has at least binomial(r,2)-floor(r^2/4) edges and a vertex x of degree at least floor((r-1)/2). Consequently there is a set W subseteq E-{x} of size at least ceil(floor((r-1)/2)/120) such that every D union {x,w}, w in W, is a Hamiltonian five-set and, uniformly, either (1) one fixed Hamiltonian order R of D union {x} is extended by every w in W at the same endpoint, or (2) there are fixed distinct a,b in D union {x} with (a,w,b) tight for every w in W; in case (2), every three distinct vertices p,q,s in W together with a,b form a Hamiltonian five-set. Every displayed Hamiltonian five-set has a non-Hamiltonian complement of path-cover number two.
+
+## Body
+
+Since r>=3, the omitted block O has order r+1>=4. Choose three consecutive O-vertices in the displayed A-order and call their ordered tight path D. Every vertex of E lies outside A and hence outside D.
+
+Apply Section 1 of the certified local Hamilton-extension calculus localextend01 to D and exterior set E. Its bad-pair graph B_D(E), joining x,y when H[D union {x,y}] is non-Hamiltonian, is triangle-free. By Mantel, it has at most floor(r^2/4) edges. Therefore the complementary Hamiltonicity graph G_D(E) has at least binomial(r,2)-floor(r^2/4) edges. For r=2h this lower bound is h(h-1), so the average degree is at least h-1; for r=2h+1 it is h^2, whose average degree is 2h^2/(2h+1)>h-1. Thus in both cases some x in E has degree d>=floor((r-1)/2).
+
+Put F=D union {x}. For every neighbor w of x in G_D(E), the five-set F union {w}=D union {x,w} is Hamiltonian. Apply the certified Hamiltonian-five-set star synchronization theorem 3031be84eb72 to the fixed four-set F and the neighbor set N(x). It gives W subseteq N(x) of size at least ceil(d/120), hence at least ceil(floor((r-1)/2)/120), and exactly the stated common-endpoint-extender or common-parallel-middle alternatives. In the parallel-middle case that theorem also makes every {a,b,p,q,s} with distinct p,q,s in W Hamiltonian.
+
+Finally, every Hamiltonian five-set displayed above is proper in a minimum counterexample. If its complement were Hamiltonian, the two Hamilton paths would cover H. Hence the complement is non-Hamiltonian, and minimality gives path-cover number two. The omitted case r=2 has |O|=3, so the full symmetric-difference support O union E has only five vertices (at most seven after adjoining both gap anchors) and is already a bounded local residue rather than an unbounded synchronization case.

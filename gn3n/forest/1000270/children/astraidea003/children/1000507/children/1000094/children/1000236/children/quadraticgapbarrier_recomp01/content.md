@@ -1,0 +1,11 @@
+# A quadratic size gap forces a small Hamiltonian kernel, a reversed-edge detour, or a universal doubled barrier
+
+## Statement
+
+Let H be a minimum counterexample and let P=(p_1,...,p_a),Q,R be a spanning three-cover minimizing Phi in a trapped connected component of the pairwise-repartition graph, with a>=|Q|>=|R|>=2 and a>=|Q|+2. Then either H has a proper Hamiltonian induced set W of order four or five whose complement is non-Hamiltonian with path-cover number two, or each displayed endpoint x of P launches a doubled incoming barrier: there are q_x in Q and r_x in R with both (q_x,r_x,x) and (r_x,q_x,x) tight. Following either such pair inward along P, either an adjacent inherited edge p_i p_{i+1} admits one of the tight detours (p_{i+1},q_x,r_x,p_i) or (p_{i+1},r_x,q_x,p_i), or that same pair satisfies both (q_x,r_x,p) and (r_x,q_x,p) for every p in P. In particular one endpoint alone yields the trichotomy: small Hamiltonian kernel, reversed-edge four-path detour, or one Q--R pair forming a doubled barrier against every vertex of P.
+
+## Body
+
+Fix an endpoint x of P. The size gap makes x noninsertable into the displayed orders of both Q and R. Apply the failed-insertion normal form to x on each smaller path. A first-type outcome yields a Hamiltonian four-set, or the cyclic four-kernel whose enlargement by the other endpoint of P is a Hamiltonian five-set; minimum-counterexample calculus gives the first conclusion. Otherwise both paths give second-type pivots. The repaired two-pivot theorem then yields either the same small-kernel conclusion or labels q_x,r_x with both incoming triples tight. This argument is endpoint-uniform, so it applies at both ends of P.
+
+For either launching pair, apply incoming-barrier propagation along the support path P. At each successive inherited edge, either the barrier propagates to the next vertex or the one-edge rule opens a four-vertex path whose two P-endpoints occur in the reverse order of the inherited edge. If no opening occurs, induction gives the doubled barrier at every vertex of P. Taking either endpoint yields the final trichotomy.

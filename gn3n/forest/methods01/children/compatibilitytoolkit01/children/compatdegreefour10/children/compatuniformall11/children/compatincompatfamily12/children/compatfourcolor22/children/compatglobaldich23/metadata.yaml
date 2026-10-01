@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 78
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T04:36:39.27518+00:00"
+id: "compatglobaldich23"
+last_elevation_revision: 0
+last_substantive_worker_id: 578
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 112
+    detail: "For m>=17, 4-colorability yields five pairwise incompatible covers; a vertex exists outside those five labels, so compatfiveuniform25 produces a uniform incompatibility triple unless the endpoint branch already occurred."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:24:46.163409+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 112
+    detail: "For m>=17, 4-colorability yields five pairwise incompatible covers; a vertex exists outside those five labels, so compatfiveuniform25 produces a uniform incompatibility triple unless the endpoint branch already occurred."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:24:46.163409+00:00"
+    worker_id: 693
+object_type: "research"
+origin_worker_id: 578
+parent_id: "compatfourcolor22"
+position: 0
+research_interface:
+  consumer: "common-core support-switch analysis or common-core order-transport analysis"
+  given: "at least 17 chosen deletion labels in a minimum counterexample"
+  produces: "either synchronized endpoint structure or a three-label pairwise-uniform incompatibility pattern"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Seventeen deletion labels force endpoint structure or a uniform incompatibility triple"
+substantive_worker_ids:
+  - 578
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Seventeen deletion labels force endpoint structure or a uniform incompatibility triple"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 12

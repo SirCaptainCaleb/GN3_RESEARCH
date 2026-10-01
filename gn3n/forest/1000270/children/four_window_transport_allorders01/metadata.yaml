@@ -1,0 +1,54 @@
+atlas_height: "2"
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:19:04.954045+00:00"
+id: "four_window_transport_allorders01"
+last_elevation_revision: null
+last_substantive_worker_id: 605
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T18:19:49.615505+00:00"
+  audit_resolution:
+    claim_id: 234
+    detail: "Reconstruction is immediate and exact. If n<=14 the small-order alternative holds. If n>=15, four_window_transport15 applies under identical anchored-four-window hypotheses; its strict endpoint-transfer branch is outcome (2), and its bounded shared-endpoint transport package is exactly outcome (3). No hypothesis, constant, or exceptional case is lost."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:19:55.24415+00:00"
+    worker_id: 637
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 234
+    detail: "Reconstruction is immediate and exact. If n<=14 the small-order alternative holds. If n>=15, four_window_transport15 applies under identical anchored-four-window hypotheses; its strict endpoint-transfer branch is outcome (2), and its bounded shared-endpoint transport package is exactly outcome (3). No hypothesis, constant, or exceptional case is lost."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:19:55.24415+00:00"
+    worker_id: 637
+object_type: "research"
+origin_worker_id: 605
+parent_id: "1000270"
+position: 0
+research_interface:
+  consumer: "grand-theorem proof composition; endpoint transport / defect compression"
+  given: "a Hamiltonian four-set with path-cover-two complement in a minimum counterexample"
+  produces: "strict reachable descent from the anchored cover, explicit bounded one/two-label pc2 transport data, or n<=14"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every anchored four-window gives descent, bounded pc2 transport, or order at most fourteen"
+substantive_worker_ids:
+  - 605
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every anchored four-window gives descent, bounded pc2 transport, or order at most fourteen"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:19:55.24415+00:00"
+version: 5

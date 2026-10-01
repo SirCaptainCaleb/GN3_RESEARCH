@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-22T19:35:05.604429+00:00"
+id: "1000504"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bb160f43-5804-417d-a461-a260627e5052"
+    detail: "Replaced prohibited 'physical last vertex' wording in the statement with canonical 'last vertex' terminology; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T01:25:56.822105+00:00"
+    worker_id: "330b4c06-34f1-4dd7-8ca8-de6cbe5332b5"
+  last_audit_observation:
+    claim_id: "bb160f43-5804-417d-a461-a260627e5052"
+    detail: "Replaced prohibited 'physical last vertex' wording in the statement with canonical 'last vertex' terminology; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T01:25:56.822105+00:00"
+    worker_id: "330b4c06-34f1-4dd7-8ca8-de6cbe5332b5"
+  last_local_audit_repair:
+    reason: "Vocabulary-only audit repair replacing prohibited endpoint wording with canonical last-vertex terminology; mathematics unchanged."
+    recorded_at: "2026-09-23T01:24:42.679061+00:00"
+    worker_id: "330b4c06-34f1-4dd7-8ca8-de6cbe5332b5"
+object_type: "lemma"
+origin_worker_id: 195
+parent_id: "1000460"
+position: 0
+research_interface:
+  consequence: "flat transfer has one-step memory: every next longest witness through the shared terminal contains the previous entrance or previous opposite terminal in its final q-2 precursor"
+  consumer:
+    - "flat-transfer cycle chain"
+    - "dense-core all-special conjecture"
+  given:
+    - "equal-rank flat transfer"
+    - "terminal tail-blocker lemma"
+  next_need: "iterate this memory around a flat transfer cycle and show accumulated forced contacts either splice to a long path or violate linearity/minimum-degree saturation"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In a flat equal-rank transfer e→f, every longest witness for f ending at the shared terminal must carry one of the two nonshared vertices of e in its final q−2 precursor edges."
+substantive_worker_ids:
+  - 195
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Flat transfers carry a one-edge blocker memory into the next longest witness"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 10

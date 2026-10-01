@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T00:35:36.58485+00:00"
+id: "1000604"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 323
+    detail: "Independent check: reversing the seven-vertex block converts the five consecutive defects to tight triples and confines all new defects to two disjoint boundary zones of run length at most two; an appropriate cyclic cut leaves matching number at most one, contradicting pc(H)>2."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 323
+    detail: "Independent check: reversing the seven-vertex block converts the five consecutive defects to tight triples and confines all new defects to two disjoint boundary zones of run length at most two; an appropriate cyclic cut leaves matching number at most one, contradicting pc(H)>2."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+object_type: "research"
+origin_worker_id: 688
+parent_id: "defectcyclicfive_recomp01"
+position: 1
+research_interface:
+  consumer: "defect-span compression; finite cyclic-type elimination"
+  given: "the five-type cyclic defect classification for a minimum counterexample"
+  need: "apply the same block-reversal principle to {3,2} or couple the reversed five-path from the 3-run with the remaining 2-run"
+  produces: "complete elimination of the proper one-run type {5}; only {3,1} and {3,2} remain in the 111 branch"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The five-edge cyclic defect run is impossible in a minimum counterexample"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The five-edge cyclic defect run is impossible in a minimum counterexample"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:44:05.128352+00:00"
+version: 8

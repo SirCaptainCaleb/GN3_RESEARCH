@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:22:46.240015+00:00"
+id: "defect101_balanced_deletion_or_fourwindow01"
+last_elevation_revision: 9925
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: verify that a successful 101 balancing slide stays within two-covers of the same H-x and strictly lowers p^2+q^2 whenever the deletion-side orders differ by at least two."
+  audit_request_recorded_at: "2026-09-30T13:22:46.240015+00:00"
+  audit_resolution:
+    claim_id: 87
+    detail: "Independent reconstruction passed. For p>=q+2, a successful left 101 slide preserves the omitted label x and changes the same deletion cover sizes from (p,q) to (p-1,q+1), by defect101_slide_or_fourwindow01 together with defect101_finite_transport01. The fixed-deletion quadratic change is 2(q-p+1)<0, contradicting the choice of P|Q minimizing p^2+q^2 among covers of H-x. Hence the first balancing slide must block and yield the inherited-complement Hamiltonian four-window. The q>=p+2 case is symmetric; otherwise |p-q|<=1. Local proof is sound; support remains subject to the pending transport premises."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:36:04.395803+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 87
+    detail: "Independent reconstruction passed. For p>=q+2, a successful left 101 slide preserves the omitted label x and changes the same deletion cover sizes from (p,q) to (p-1,q+1), by defect101_slide_or_fourwindow01 together with defect101_finite_transport01. The fixed-deletion quadratic change is 2(q-p+1)<0, contradicting the choice of P|Q minimizing p^2+q^2 among covers of H-x. Hence the first balancing slide must block and yield the inherited-complement Hamiltonian four-window. The q>=p+2 case is symmetric; otherwise |p-q|<=1. Local proof is sound; support remains subject to the pending transport premises."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:36:04.395803+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 579
+parent_id: "defect101_slide_or_fourwindow01"
+position: 0
+research_interface:
+  consumer: "defect-span compression; cyclic defect transport; balanced deletion-cover normalization"
+  given: "a fixed deletion label and a quadratic-balance-minimal two-cover of its deletion whose canonical ordering has the exact linear 101 defect pattern"
+  need: "consume the near-balanced 101 deletion state or the positioned inherited-complement four-window"
+  produces: "a balanced or near-balanced deletion cover, or a positioned Hamiltonian four-window whose complement retains the inherited two-path structure"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A balance-minimal one-zero-one deletion state is balanced or exposes a positioned four-window"
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A balance-minimal one-zero-one deletion state is balanced or exposes a positioned four-window"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 6

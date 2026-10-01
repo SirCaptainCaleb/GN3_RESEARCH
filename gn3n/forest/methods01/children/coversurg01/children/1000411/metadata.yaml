@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T14:23:21.291065+00:00"
+id: "1000411"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 263
+    detail: "The exchanged component orders are a-s and b+s and 0<s<d gives strictly smaller imbalance |d-2s|<d; contradiction is valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  coverage: "general-order attack on Astra 002"
+  last_audit_observation:
+    claim_id: 263
+    detail: "The exchanged component orders are a-s and b+s and 0<s<d gives strictly smaller imbalance |d-2s|<d; contradiction is valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  small_order_free: true
+  strengthening: "subsumes endpoint-segment transfer blockade"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "coversurg01"
+position: 0
+research_interface:
+  consumer: "Astra 002; strict pair-union balance improvement; Astra 003 quadratic descent"
+  given: "a minimum-imbalance spanning two-cover A|B"
+  need: "force one balance-improving exchanged partition to have both supports Hamiltonian using boundary-tournament structure"
+  produces: "every support exchange whose net transfer moves sizes toward equality has at least one non-Hamiltonian side"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Minimum-imbalance two-covers forbid every balance-improving Hamiltonian exchange"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum-imbalance two-covers forbid every balance-improving Hamiltonian exchange"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 6

@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T05:02:51.09772+00:00"
+id: "minside_directcross_normal01"
+last_elevation_revision: 7998
+last_substantive_worker_id: 630
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 97
+    detail: "The direct mixed edge fits e2ffb6f50728 with exterior class Q plus the omitted label. Multiple inherited blocks give outcomes (1)/(2); the single-block case is exactly the endpoint-attachment setting of 295ead2879dc, and its neutral singleton transfer is correctly identified as a compatible omission swap by eaf8cbdad3f3."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:08:56.258571+00:00"
+    worker_id: 605
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 97
+    detail: "The direct mixed edge fits e2ffb6f50728 with exterior class Q plus the omitted label. Multiple inherited blocks give outcomes (1)/(2); the single-block case is exactly the endpoint-attachment setting of 295ead2879dc, and its neutral singleton transfer is correctly identified as a compatible omission swap by eaf8cbdad3f3."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:08:56.258571+00:00"
+    worker_id: 605
+  minimum_side_direct_crossing_normal_form: true
+object_type: "research"
+origin_worker_id: 703
+parent_id: "1000051"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression; minimum-side no-trapping; neutral-swap compatibility dynamics"
+  given: "the direct mixed-support crossing branch of an endpoint probe of a globally minimum deletion side, with inherited order preserved"
+  produces: "reciprocal inherited-edge crossing, leave-and-return excursion, endpoint-edge reversal, spanning two-cover, strict quadratic descent, or a fully compatible neutral omission swap"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A minimum-side direct edge reduces to inherited-path disturbance, endpoint reversal, descent, or a compatible omission swap."
+substantive_worker_ids:
+  - 703
+  - 630
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "A minimum-side direct edge reduces to inherited-path disturbance, endpoint reversal, descent, or a compatible omission swap"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:44:33.034029+00:00"
+version: 10

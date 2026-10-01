@@ -1,0 +1,9 @@
+# Every strict charged replacement gives balance descent or a bounded reverse-triple obstruction
+
+## Statement
+
+In the deficit-one setting of ea587a463c5c, let x in C-A be charged to y in A-C with y in a strictly earlier gap than x. Form the canonical A-order-preserving sequence C_{x->y} by deleting x from C and inserting y in its A-order gap among the surviving A-vertices. Then exactly one of the following occurs: (i) C_{x->y} is tight and has no A-edge reversal witness, in which case its binary balance has strictly smaller total mass by ea587a463c5c; (ii) C_{x->y} is tight but exposes an A-edge reversal witness; (iii) C_{x->y} is not tight, and one of at most five newly created consecutive triples is non-tight, so boundary antisymmetry supplies an explicit reversed tight triple supported within distance two of the deletion or insertion site.
+
+## Body
+
+Deleting one vertex x from a displayed tight path changes no inherited consecutive triple except those that cross the new predecessor-successor adjacency; there are at most two such triples. Inserting y into the resulting sequence changes no inherited triple except the at most three consecutive triples whose window contains y. Thus C_{x->y} differs from the certified tight path C in at most five consecutive-triple tests, all lying in bounded neighborhoods of the deletion and insertion locations. If all five tests are tight, the new sequence is a tight path preserving the A-order by construction. If it has no A-edge reversal witness, ea587a463c5c applies and the strict gap inequality makes total binary-balance mass decrease. If it has such a witness, that is already the desired order obstruction. If some new test fails, reverse that single failed triple by boundary antisymmetry to obtain a bounded explicit tight obstruction. Therefore every strict charge supplied by the noncrossing matching is either a certified secondary-potential move or produces bounded local obstruction data.

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T05:55:11.371157+00:00"
+id: "1000059"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9e9fc3a1-8ef4-4def-8ab0-ab59c793b98e"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:15:15.873013+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "9e9fc3a1-8ef4-4def-8ab0-ab59c793b98e"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:15:15.873013+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "pure-high loss-one collapse"
+  uses:
+    - "1001035"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1001035"
+position: 0
+research_interface:
+  consequence: "All five four-of-five slot patterns collapse to one invariant object: a rank-(q+1) edge with a q-edge wrong-entrance witness through common terminal v."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+    - "loss-one transfer machinery"
+  given:
+    - "pure-high 0-1-1 four-single odd-boundary state"
+  next_need: "Apply existing loss-one safe-branch/transfer lemmas to this wrong-entrance witness. The two unused high edges remain available as blockers; show the loss-one state either extends to rank q+1 through the wrong entrance (contradiction) or forces a double contact, which pays the local defect."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every pure-high odd-boundary four-single state is an exact loss-one wrong-entrance state."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every pure-high odd-boundary four-single state is an exact loss-one wrong-entrance state"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:06:54.911014+00:00"
+id: "local45_endpoint_threeleaf_star01"
+last_elevation_revision: 10100
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: 36 reachable balanced four-sides give a 3-shadow of at least 25 endpoint-good triples, hence a fixed plateau-label pair with three Hamiltonian five-set leaves over the two long endpoints; verify the equality-exclusion/Johnson-connectivity counting and the synchronization composition."
+  audit_request_recorded_at: "2026-09-30T13:07:05.704906+00:00"
+  audit_resolution:
+    claim_id: 746
+    detail: "Reconstructed the incidence argument: at least 36 balanced four-sides give at least 144 triple incidences; equality at 24 good triples would force Johnson-graph closure to all 84 triples, so at least 25 good triples. Pair averaging then gives a common pair with three leaves, and the synchronization theorem applies as stated."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:22:43.099331+00:00"
+    worker_id: 745
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 746
+    detail: "Reconstructed the incidence argument: at least 36 balanced four-sides give at least 144 triple incidences; equality at 24 good triples would force Johnson-graph closure to all 84 triples, so at least 25 good triples. Pair averaging then gives a common pair with three leaves, and the synchronization theorem applies as stated."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:22:43.099331+00:00"
+    worker_id: 745
+object_type: "research"
+origin_worker_id: 665
+parent_id: "quadraticpotential01"
+position: 2
+research_interface:
+  consumer: "4|5 plateau termination; endpoint-rooted synchronization; endpoint transport / defect compression"
+  given: "a componentwise Phi-minimal 4|5|m cover in a minimum counterexample, with m at least six"
+  need: "consume the endpoint-rooted synchronized output by a same-component move, endpoint absorption, or defect compression"
+  produces: "a fixed four-core containing both long-path endpoints and two plateau labels, with three Hamiltonian five-set leaves; synchronization yields endpoint-core order disagreement, a Hamiltonian six-support, a Hamiltonian four-support, or an explicit root-core reversal"
+research_level: "theorem"
+semantic_container_text: "Endpoint three-leaf route on a local 4|5 plateau: common five-set leaves rooted at both long endpoints lift to reachable four-sides and synchronized interior locks, then compress through common-core six-shell geometry or repeated long-interior obstruction."
+simplified_statement: "A locally minimal 4|5 plateau contains a three-leaf five-set star rooted at both long endpoints"
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A locally minimal 4|5 plateau contains a three-leaf five-set star rooted at both long endpoints"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 9

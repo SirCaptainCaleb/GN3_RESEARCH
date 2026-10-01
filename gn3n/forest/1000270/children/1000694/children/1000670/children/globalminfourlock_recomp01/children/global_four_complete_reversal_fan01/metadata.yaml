@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:31:58.915843+00:00"
+id: "global_four_complete_reversal_fan01"
+last_elevation_revision: 8826
+last_substantive_worker_id: 555
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T18:31:58.915843+00:00"
+  audit_resolution:
+    claim_id: 351
+    detail: "The statement follows uniformly from certified aab7e8e9fe4a and acdec36ae3ca. Every x in the four-side is noninsertable into each of the two displayed long paths, and applying the noninsertability-to-reversal theorem independently to each of the eight (x,R) pairs gives exactly the stated label-specific reversal family."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:33:12.659143+00:00"
+    worker_id: 605
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 351
+    detail: "The statement follows uniformly from certified aab7e8e9fe4a and acdec36ae3ca. Every x in the four-side is noninsertable into each of the two displayed long paths, and applying the noninsertability-to-reversal theorem independently to each of the eight (x,R) pairs gives exactly the stated label-specific reversal family."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:33:12.659143+00:00"
+    worker_id: 605
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T20:17:56.675737+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 555
+parent_id: "globalminfourlock_recomp01"
+position: 0
+research_interface:
+  consumer: "global four-side closure; repeated reversal synchronization; endpoint transport / defect compression"
+  given: "a globally quadratic-minimal three-cover with a four-vertex component and two components of order at least six"
+  need: "synchronize reversal locations/types across the four labels, forcing a common-edge double reversal, bounded mixed support, or component-end transport"
+  produces: "for every one of the four small-side labels and each of the two long paths, an explicit tight triple containing that label and reversing one displayed edge of that long path"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A global four-side minimum carries a complete label-by-long-path reversal family."
+substantive_worker_ids:
+  - 555
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A global four-side minimum carries a complete label-by-long-path reversal family"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T20:17:56.675737+00:00"
+version: 6

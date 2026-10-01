@@ -1,0 +1,9 @@
+# A dangerous global-top center pays one-eighth into switcher triangles or balanced-lens outputs
+
+## Statement
+
+Let L be the global maximum path length and let v be an active misaligned vertex with phi(v)=L and local defect eta_v as in b032348c1a8a. Use its switching family on a chosen maximum L-edge host path and the interior-cell notation of 9586a4d2317f. Let D be the number of doubly occupied interior cells and Y the number of paid occupied cells. Then D+Y >= L/8-eta_v-O(1). Every doubly occupied cell supports a linear switcher triangle. Every paid cell has a distinct rank-L all-top output edge, and hence manufactures a clean balanced elementary endpoint lens. Thus a low-defect global-top center carries Omega(L) center-indexed triangle/lens obstruction states.
+
+## Body
+
+The inequality D+Y>=L/8-eta_v-O(1) and the switcher triangle attached to each double cell are exactly 9586a4d2317f. It remains to identify the paid outputs when p=L. The strict-rank-rise paid branch phi(h)>L is impossible by definition of global maximum path length. If a paid output h has rank L and is special, 6c54e91ad703 shows that all three vertices of h have endpoint potential L. If h is nonspecial nonascending, 57d5e4c71035 shows the same all-top conclusion. These exhaust paid cells by 9586a4d2317f. Distinct occupied cells have distinct output edges, so the Y paid cells produce Y distinct all-top rank-L edges. Finally 7f30d18ca6b4 shows that every all-top edge manufactures a clean balanced elementary endpoint lens between maximum endpoint paths at two of its vertices. Therefore the entire one-eighth payment at a global-top center is realized by D switcher triangles and Y distinct all-top lens-producing output edges.

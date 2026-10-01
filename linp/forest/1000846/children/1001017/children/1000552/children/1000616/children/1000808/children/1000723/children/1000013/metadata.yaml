@@ -1,0 +1,49 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 91
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-22T08:15:32.206176+00:00"
+id: "1000013"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+object_type: "lemma"
+origin_worker_id: 205
+parent_id: "1000723"
+position: 2
+research_interface:
+  consequence: "a charged spacing theorem, much weaker than constant potential-oriented degree, already yields ex_L(n,P_ell^(3)) <= (2ell/3+O(log ell))n"
+  consumer: "general linear-path Turan upper bound"
+  given: "charged four-edge spacing"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "If the charged four-edge spacing conjecture holds, then at most 3+ceil(log2 p) qualifying ascending nonspecial edges can share a terminal of rank p, yielding the stated 2/3 leading coefficient bound for P_l^(3)-free linear 3-graphs."
+substantive_worker_ids:
+  - 205
+support_reason: "premise_not_currently_supported"
+support_status: "provisional"
+title: "Charged four-edge spacing implies logarithmic charged degree and the 2/3 leading coefficient"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 7

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-24T13:13:39.782021+00:00"
+id: "1000574"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "theorem"
+origin_worker_id: 223
+parent_id: "1000378"
+position: 0
+research_interface:
+  consequence: "The global problem reduces exactly to summing a local cost B(v): aligned vertices cost about 3p/4, while misaligned vertices cost the Astra function gamma(q) at their actual top ascending-terminal rank q<p. No replacement q<=p or asymptotic O(n) is required."
+  consumer:
+    - "post-43/48 exact optimization"
+    - "rank-gap and residue analysis"
+    - "finite-rank improvements"
+  given:
+    - "exact fixed-entrance transfer"
+    - "exact aligned singleton-versus-double cancellation"
+    - "three-uniform contact-multiplicity identity"
+  next_need: "Optimize B(v) jointly with structural restrictions on (p,q). In particular, any theorem excluding q=p-1 for a positive fraction of potential mass immediately yields explicit coefficient savings; conversely the only asymptotically dangerous states have q=p-1 or another o(p) gap."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "For a finite linear 3-graph, the rank-sensitive local bounds B(v) satisfy 3m≤2S−n₊+(1/2)∑_v B(v), where S=∑_v φ(v)."
+substantive_worker_ids:
+  - 223
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Exact rank-sensitive master inequality for the three-uniform Astra-multiplicity synthesis"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:31:24.858521+00:00"
+version: 10

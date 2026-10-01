@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "atlas_height": "2",
+      "category": "proof_level",
+      "descendant_container_count": 0,
+      "id": "methods01",
+      "mathematical_status": "proposal",
+      "member_count": 1,
+      "obstructed_count": 0,
+      "pending_count": 0,
+      "subtree_object_count": 1,
+      "subtree_obstructed_count": 0,
+      "subtree_pending_count": 0,
+      "summary": "Reusable project toolkit: definitions, lemmas, methods, computational techniques, and auxiliary results that support multiple research routes.",
+      "title": "Toolkit"
+    },
+    {
+      "atlas_height": "1",
+      "category": "abstraction",
+      "descendant_container_count": 0,
+      "id": "brainstorms01",
+      "member_count": 1,
+      "obstructed_count": 0,
+      "pending_count": 0,
+      "subtree_object_count": 1,
+      "subtree_obstructed_count": 0,
+      "subtree_pending_count": 0,
+      "summary": "Exploratory ideas, conjectures, speculative routes, and partially developed approaches that may seed future research branches.",
+      "title": "Brainstorms"
+    }
+  ],
+  "has_more": false,
+  "limit": null,
+  "matching_count": 2,
+  "note": "Complete conceptual Atlas derived from live semantic-container boundaries. atlas_height affects sibling prominence/order but never membership. member_count is direct nearest-container ownership; subtree counts include nested containers. A specific object/container selector additionally returns direct member_object_ids. Use atlas('all',limit) for the paginated raw object index.",
+  "repository_revision": 9,
+  "returned_count": 2,
+  "selector": null,
+  "selector_interpretation": "conceptual"
+}

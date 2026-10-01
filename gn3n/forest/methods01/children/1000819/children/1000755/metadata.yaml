@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T22:01:10.365689+00:00"
+id: "1000755"
+last_elevation_revision: 8453
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 255
+    detail: "Replaced ambiguous shell/barrier shorthand in the proof by the explicit endpoint triples supplied by bcfa72bc175f; the theorem statement and mathematics are unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 255
+    detail: "Replaced ambiguous shell/barrier shorthand in the proof by the explicit endpoint triples supplied by bcfa72bc175f; the theorem statement and mathematics are unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology repair: replace ambiguous shell/barrier shorthand with the explicit endpoint-triple statement; mathematics unchanged."
+    recorded_at: "2026-09-29T12:14:49.482469+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 681
+object_type: "research"
+origin_worker_id: 586
+parent_id: "1000819"
+position: 1
+research_interface:
+  consumer: "dense fixed-core Hamiltonian support; longest-path complement transport; endpoint absorption"
+  given: "any globally longest tight path in a minimum counterexample"
+  need: "consume the almost-complete common-core five-shell against the non-Hamiltonian two-coverable complement of the longest path"
+  produces: "either the certified internal-reversal K4 frontier, or a common four-core that Hamiltonianly extends to every complement label except at most two"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A longest path has Hamiltonian five-extensions at all but at most two exterior vertices unless a reversal K4 appears"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A longest path has Hamiltonian five-extensions at all but at most two exterior vertices unless a reversal K4 appears"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:58:23.906131+00:00"
+version: 10

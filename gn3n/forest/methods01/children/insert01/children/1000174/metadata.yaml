@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-27T17:21:51.683391+00:00"
+id: "1000174"
+last_elevation_revision: 0
+last_substantive_worker_id: 616
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 50
+    detail: "Replaced the unstandardized second-type-pivot shorthand by the exact alternative-2 failed-insertion terminology from insert01; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T17:30:33.273512+00:00"
+    worker_id: 627
+  last_audit_observation:
+    claim_id: 50
+    detail: "Replaced the unstandardized second-type-pivot shorthand by the exact alternative-2 failed-insertion terminology from insert01; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T17:30:33.273512+00:00"
+    worker_id: 627
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Replace the unstandardized second-type pivot shorthand by the exact alternative-2 failed-insertion terminology from insert01; mathematics unchanged."
+    recorded_at: "2026-09-27T17:29:16.892404+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 627
+object_type: "research"
+origin_worker_id: 616
+parent_id: "insert01"
+position: 0
+research_interface:
+  consumer: "insertion calculus; four-side quadratic minima; endpoint transport and defect compression"
+  given: "two exterior labels with second-type insertion-obstruction pivots on one displayed tight path"
+  need: "consume the resulting bounded Hamiltonian/cross-triple witness or connector in global transport and repartition arguments"
+  produces: "same gap gives a Hamiltonian four-set; separated gaps give a direct tight connector; adjacent gaps give a Hamiltonian five-set or an explicit cross triple"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two alternative-2 failed-insertion obstructions on one path have a complete spacing trichotomy"
+substantive_worker_ids:
+  - 616
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two alternative-2 failed-insertion obstructions on one path have a complete spacing trichotomy"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 9

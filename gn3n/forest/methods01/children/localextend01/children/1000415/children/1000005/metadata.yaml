@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T00:11:17.332094+00:00"
+id: "1000005"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 323
+    detail: "Independent check: the fixed-anchor relations define ordinary tournaments; the standard low-indegree/outdegree bound yields a center x with |Y|,|Z|>=t, and each y,x,z combination gives the stated five-path with at least t(t-1) ordered endpoint pairs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 323
+    detail: "Independent check: the fixed-anchor relations define ordinary tournaments; the standard low-indegree/outdegree bound yields a center x with |Y|,|Z|>=t, and each y,x,z combination gives the stated five-path with at least t(t-1) ordered endpoint pairs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+object_type: "research"
+origin_worker_id: 694
+parent_id: "1000415"
+position: 0
+research_interface:
+  consumer: "dense five-window gluing over a fixed core"
+  given: "a synchronized family W of parallel middle vertices satisfying (a,w,b) tight"
+  need: "combine the complete alternating fan with exterior disjointness or complement structure to obtain a longer second path or repeated absorption"
+  produces: "one pivot x with linear predecessor and successor sets Y,Z such that every distinct cross-pair yields (y,a,x,b,z)"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Parallel middles contain a linear complete alternating fan."
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Parallel middles contain a linear complete alternating fan"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:44:05.128352+00:00"
+version: 4

@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T15:49:33.924227+00:00"
+id: "1000124"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 379
+    detail: "Independent reconstruction verified endpoint noninsertability from Phi-minimality, the paired-noninsertion menu, and the potential descent calculation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T18:47:27.15579+00:00"
+    worker_id: 586
+  last_audit_observation:
+    claim_id: 379
+    detail: "Independent reconstruction verified endpoint noninsertability from Phi-minimality, the paired-noninsertion menu, and the potential descent calculation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T18:47:27.15579+00:00"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 700
+parent_id: "quadraticpotential01"
+position: 1
+research_interface:
+  consumer: "quadratic no-trapping; endpoint transport / defect compression; large-order proof compression"
+  given: "any locally quadratic-minimal spanning three-cover and any displayed component pair whose orders differ by at least two"
+  produces: "a proper Hamiltonian 4/5-window with path-cover-two complement, an endpoint cross triple through the smaller path, or a direct endpoint interval connector through the smaller path"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every two-step component-size gap at a quadratic minimum exposes the universal transport menu."
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every two-step component-size gap at a quadratic minimum exposes the universal transport menu"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T18:47:27.15579+00:00"
+version: 7

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 45
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-22T16:16:37.462551+00:00"
+id: "1000982"
+last_elevation_revision: null
+last_substantive_worker_id: 204
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1106ba3d-d12f-411d-872d-4a154421af0c"
+    detail: "Checked the Latin-square/proper-coloring correspondence and the lift of a rainbow graph path to a linear hypergraph path. The q/3 density divided by q-o(q) path length gives 1/3+o(1)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:22:18.678425+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  last_audit_observation:
+    claim_id: "1106ba3d-d12f-411d-872d-4a154421af0c"
+    detail: "Checked the Latin-square/proper-coloring correspondence and the lift of a rainbow graph path to a linear hypergraph path. The q/3 density divided by q-o(q) path length gives 1/3+o(1)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:22:18.678425+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  source_doi: "10.1016/j.aim.2026.110892"
+  source_title: "Towards Graham's rearrangement conjecture via rainbow paths"
+  source_year: 2026
+object_type: "research"
+origin_worker_id: 204
+parent_id: "1000355"
+position: 9
+research_interface:
+  consequence: "full transversal designs are asymptotically capped at normalized coefficient 1/3"
+  consumer:
+    - "Latin-square/transversal-design lower-bound route"
+    - "general lower-bound construction search"
+  given:
+    - "Schrijver rainbow-path theorem d-o(d) for properly d-edge-colored d-regular graphs"
+    - "Latin-square representation of TD(3,q)"
+  next_need: "any 3-partite >1/3 construction must use genuinely partial/nonregular Latin structures rather than a full TD(3,q)"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Schrijver rainbow paths give a one-third ceiling for full transversal designs."
+substantive_worker_ids:
+  - 204
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Schrijver rainbow paths give a one-third ceiling for full transversal designs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

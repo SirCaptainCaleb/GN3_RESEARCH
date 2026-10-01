@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T21:55:01.462889+00:00"
+id: "1000260"
+last_elevation_revision: 8453
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 75
+    detail: "Normalized the ambiguous title phrase 'support exchange' to the precise equal-Phi pairwise-repartition conclusion already stated."
+    math_version: 1
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+  last_audit_observation:
+    claim_id: 75
+    detail: "Normalized the ambiguous title phrase 'support exchange' to the precise equal-Phi pairwise-repartition conclusion already stated."
+    math_version: 1
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-29T12:14:33.254031+00:00"
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology repair: replace the ambiguous phrase 'support exchange' in the title by the precise pairwise-repartition conclusion already stated in the theorem."
+    recorded_at: "2026-09-29T05:26:31.90608+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 683
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T18:54:34.424026+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 586
+parent_id: "astra003fivetwosidedlock"
+position: 1
+research_interface:
+  consumer: "five-side plateau escape; reversal localization; global defect compression"
+  given: "a trapped Phi-minimal spanning three-cover with one five-vertex side and both other sides of order at least seven"
+  need: "orient the neutral exchange plateau by a secondary potential; the no-exchange branch now enters the bounded reversal-to-Hamiltonian-window route"
+  produces: "either a Phi-neutral one-for-one support exchange or an explicit tight triple reversing a displayed edge of a long component"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A trapped five-side yields an equal-Phi pairwise repartition or a displayed-edge reversal"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A trapped five-side yields an equal-Phi pairwise repartition or a displayed-edge reversal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:54:34.424026+00:00"
+version: 10

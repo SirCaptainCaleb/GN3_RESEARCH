@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 7
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-21T04:38:49.667063+00:00"
+id: "1000636"
+last_elevation_revision: 0
+last_substantive_worker_id: 628
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 270
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T14:33:55.778421+00:00"
+    worker_id: 720
+  last_audit_observation:
+    claim_id: 377
+    detail: "Independent exact certificate check completed after the initial defer. Decoded 1f003ffc03f8000180070006001 with the stated three leading pad zeros and 105 declared reversal bits. All five prescribed triples are tight. Exhaustive enumeration gives 0 Hamilton tight-path orders on Q∪{a}, Q∪{b}, Q∪{c}, Q∪{a,b}, Q∪{a,c}, and Q∪{b,c}. The local-consistency certificate therefore verifies exactly as stated."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T14:33:56.122975+00:00"
+    worker_id: 597
+object_type: "research"
+origin_worker_id: 628
+parent_id: "1000625"
+position: 1
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge"
+  given: "endpoint-compatible triangle with a hypothetical four-vertex fixed complementary path"
+  lesson: "order-four branch must be consumed using ambient R-path/global data, not seven-vertex local structure alone"
+  produces: "exact seven-vertex witness showing all induced local non-Hamiltonicity constraints are consistent"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The order-four fixed-path endpoint-triangle constraints are locally consistent."
+substantive_worker_ids:
+  - 628
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The order-four fixed-path endpoint-triangle constraints are locally consistent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-26T18:14:06.9164+00:00"
+version: 8

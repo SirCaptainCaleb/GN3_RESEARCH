@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T03:51:04.652688+00:00"
+id: "sharedendpointmigration_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 606
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 154
+    detail: "Recomposition-equivalence verified against certified sources 476ed5aaa6ed and df19e2dfc383. The target faithfully states the stronger migration dichotomy: endpoint deletion gives a distance-one four-window, otherwise at least two D-deletions give Hamiltonian distance-two successors adjacent to each other; complement path-cover conclusions and intersection counts are preserved."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:59:28.781422+00:00"
+    worker_id: 659
+  last_audit_observation:
+    claim_id: 154
+    detail: "Recomposition-equivalence verified against certified sources 476ed5aaa6ed and df19e2dfc383. The target faithfully states the stronger migration dichotomy: endpoint deletion gives a distance-one four-window, otherwise at least two D-deletions give Hamiltonian distance-two successors adjacent to each other; complement path-cover conclusions and intersection counts are preserved."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:59:28.781422+00:00"
+    worker_id: 659
+  reasoning_hygiene_recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-28T03:51:21.935568+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 606
+parent_id: "1000389"
+position: 0
+research_interface:
+  consumer: "four-window migration no-trapping and endpoint transport"
+  given: "a shared-endpoint Hamiltonian five-set inside the Hamiltonian-six branch"
+  produces: "a distance-one anchored four-window successor or two adjacent distance-two successors, all with two-coverable complements"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Shared-endpoint six-windows force adjacent bounded four-window migration."
+substantive_worker_ids:
+  - 606
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Shared-endpoint six-windows force adjacent bounded four-window migration"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:59:28.781422+00:00"
+version: 6

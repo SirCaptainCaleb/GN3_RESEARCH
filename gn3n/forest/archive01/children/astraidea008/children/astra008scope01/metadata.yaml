@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T14:11:54.691804+00:00"
+id: "astra008scope01"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 177
+    detail: "A minimum counterexample has no complementary Hamiltonian pair, so the joint event has probability zero. The longest-path lower bound makes both marginals positive except in the odd sharp half-order shell; there the larger-half marginal is zero and the correlation inequality is vacuous."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:59:52.743371+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 177
+    detail: "A minimum counterexample has no complementary Hamiltonian pair, so the joint event has probability zero. The longest-path lower bound makes both marginals positive except in the odd sharp half-order shell; there the larger-half marginal is zero and the correlation inequality is vacuous."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:59:52.743371+00:00"
+    worker_id: 616
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "astraidea008"
+position: 0
+research_interface:
+  consumer: "brainstorm route assessment"
+  given: "the Astra-008 positive-correlation conjecture plus minimum-counterexample longest-path structure"
+  need: "if revisiting Astra-008, seek a replacement inequality that remains nonvacuous in the sharp odd shell; proving the stated inequality alone cannot finish"
+  produces: "exact scope of Astra-008: nonsharp reduction only, with complete vacuity in the sharp shell"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Astra-008 reduces only to the sharp odd half-order shell."
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Astra-008 reduces only to the sharp odd half-order shell"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T17:49:23.487298+00:00"
+version: 6

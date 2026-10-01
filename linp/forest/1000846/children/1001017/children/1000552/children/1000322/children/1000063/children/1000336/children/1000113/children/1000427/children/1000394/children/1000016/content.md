@@ -1,0 +1,9 @@
+# A loss-one double-blocker splice creates a canonical two-cycle
+
+## Statement
+
+In the boundary setting q=δ, let Q=(g_1,...,g_t), t=q-1, be an x-ending path avoiding y,z, with cells A_i={b_i,c_i}. Suppose a double blocker h through an opposite last vertex a has blockers u∈A_i and b_{i+2}∈A_{i+2}, so the exact splice loss is one. Then the resulting (t-1)-edge x-ending path P_0 admits a forced safe single-blocker rotation using the omitted edge g_i, producing a second (t-1)-edge x-ending path P_1; in P_1 the omitted edge g_1 is a forced safe single blocker and rotating by g_1 returns to P_0. Thus the obvious safe repair of a loss-one chord is a canonical two-state rotation cycle, and any proof of further progress must use another endpoint or another incident edge.
+
+## Body
+
+Write h={a,u,b_{i+2}} with u∈A_i and 2<=i<=t-2. The loss-one splice from ee17956ece60 is P_0=(g_{i-1},g_{i-2},...,g_1,h,g_{i+2},...,g_t), with the evident interpretation when i=2. Its first edge has c_{i-1}=g_{i-1}∩g_i as a last vertex (for i=2 this is c_1 in g_1, since the next edge h meets g_1 at a). The omitted edge g_i contains c_{i-1}. Its only other contact with P_0 is u, which lies in h: the other vertex of A_i lies only in the omitted edges g_i and possibly g_{i+1}, while i<=t-2 ensures u≠x. Since Q avoids y,z, g_i avoids y,z. Hence g_i is a safe single blocker at c_{i-1}. The single-blocker rotation gives P_1=(g_2,g_3,...,g_i,h,g_{i+2},...,g_t), again with the evident i=2 case. Now c_1 is a last vertex of the first edge g_2, and the omitted edge g_1 meets P_1 outside c_1 only at a∈h. It avoids y,z and a≠x, so g_1 is a safe single blocker. Rotating by g_1 gives exactly P_0. No claim is made that these are the only safe moves; the point is that the canonical repair itself closes into a two-cycle.

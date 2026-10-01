@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-22T15:05:28.447792+00:00"
+id: "1000814"
+last_elevation_revision: null
+last_substantive_worker_id: 212
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "2332a8aa-0218-4e82-be97-39e66f1af248"
+    detail: "Removed finite-search provenance only; explicit rainbow-path certificate and mathematical content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T14:02:23.413699+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  auxiliary_graph: "properly colored K30,30 crossed subgraph"
+  last_audit_observation:
+    claim_id: "2332a8aa-0218-4e82-be97-39e66f1af248"
+    detail: "Removed finite-search provenance only; explicit rainbow-path certificate and mathematical content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T14:02:23.413699+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_local_audit_repair:
+    reason: "Editorial audit repair: remove computation/discovery provenance from a directly checkable explicit witness; mathematics unchanged."
+    recorded_at: "2026-09-23T05:11:52.549429+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  quick_bypass: true
+  source_kind: "explicit_finite_witness"
+object_type: "lemma"
+origin_worker_id: 212
+parent_id: "1000871"
+position: 1
+research_interface:
+  consequence: "the first diagonal square cannot beat coefficient 1/3"
+  consumer:
+    - "general lower-bound construction search"
+  given:
+    - "diagonal-product construction"
+    - "one-factorization model of G0"
+  next_need: "if diagonal products remain of interest, prove a general path-growth mechanism before considering higher powers"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The diagonal square G₀⊗G₀ contains a 33-edge linear path, so its normalized density at the first forbidden path length is below one third."
+substantive_worker_ids:
+  - 212
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The diagonal square of G0 already contains P33"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T16:43:43.904311+00:00"
+version: 7

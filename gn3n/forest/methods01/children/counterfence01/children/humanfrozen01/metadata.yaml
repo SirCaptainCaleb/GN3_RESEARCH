@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-23T20:45:22.099667+00:00"
+id: "humanfrozen01"
+last_elevation_revision: 0
+last_substantive_worker_id: 625
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Fresh independent audit requested after the threshold proof was strengthened to certify the full seven-set and all replacement six-sets without exhaustive enumeration. This worker is a substantive editor and must not certify it."
+  audit_request_recorded_at: "2026-09-25T12:05:42.342768+00:00"
+  audit_resolution:
+    claim_id: 84
+    detail: "Independent threshold audit: the displayed edge ranks give exactly the stated L/R capacities, including corrected L(3)=4 via (0,1,5,3). For the seven-set every rank-compatible L(x)+R(y)<=5; for each replacement six-set the only equality-capable ordered pairs are the six listed, and each forces overlap of the two pieces. Hence all claimed non-Hamiltonicity statements follow."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:39:57.722676+00:00"
+    worker_id: 663
+  last_audit_observation:
+    claim_id: 84
+    detail: "Independent threshold audit: the displayed edge ranks give exactly the stated L/R capacities, including corrected L(3)=4 via (0,1,5,3). For the seven-set every rank-compatible L(x)+R(y)<=5; for each replacement six-set the only equality-capable ordered pairs are the six listed, and each forces overlap of the two pieces. Hence all claimed non-Hamiltonicity statements follow."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:39:57.722676+00:00"
+    worker_id: 663
+  last_local_audit_repair:
+    reason: "Localized threshold-proof correction: the L(3) branch with final edge 35 has a four-vertex path (0,1,5,3), not at most three vertices. The corrected case analysis still gives L(3)=4 and does not change the theorem or proof strategy."
+    recorded_at: "2026-09-25T11:53:35.412182+00:00"
+    worker_id: 625
+object_type: "research"
+origin_worker_id: 641
+parent_id: "counterfence01"
+position: 1
+research_interface:
+  consumer: "410141fd4812 and frozen-support sharpness arguments"
+  given: "the explicit seven-vertex edge order used for the frozen-support counterexample"
+  produces: "a fully human certificate of the frozen seven-set: A is Hamiltonian, the full seven-set is non-Hamiltonian, and 6 is its unique Hamiltonian deletion"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For the explicit seven-vertex edge order, deleting vertex 6 leaves a Hamiltonian six-set, while the full seven-set and every six-set obtained by replacing one old vertex with 6 are non-Hamiltonian."
+substantive_worker_ids:
+  - 641
+  - 625
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Human threshold certificate for a frozen seven-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 9

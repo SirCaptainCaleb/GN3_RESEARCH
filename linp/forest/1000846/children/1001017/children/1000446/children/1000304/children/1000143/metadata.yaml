@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-22T10:46:04.192362+00:00"
+id: "1000143"
+last_elevation_revision: null
+last_substantive_worker_id: 182
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "dd1bc8a7-728b-47a4-a3de-152644a15908"
+    detail: "Properness follows from linearity. In a rainbow t-edge path, terminal vertices have phi>=t while distinct entrance colors have phi<t, eliminating color-terminal collisions; linearity then gives a lifted linear hypergraph path ending at the final color, contradicting its potential."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:41:51.131335+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "dd1bc8a7-728b-47a4-a3de-152644a15908"
+    detail: "Properness follows from linearity. In a rainbow t-edge path, terminal vertices have phi>=t while distinct entrance colors have phi<t, eliminating color-terminal collisions; linearity then gives a lifted linear hypergraph path ending at the final color, contradicting its potential."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:41:51.131335+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+object_type: "lemma"
+origin_worker_id: 182
+parent_id: "1000304"
+position: 1
+research_interface:
+  consequence: "Every potential cut separates low-potential entrance colors from high-potential terminal vertices and produces a properly colored graph with no rainbow path as long as the threshold."
+  consumer:
+    - "multi-scale ascending-edge counting"
+    - "potential-oriented rainbow/shadow route"
+    - "2/3-leading-coefficient program"
+  given:
+    - "ascending nonspecial edges with unique entrance labels"
+    - "endpoint potentials phi"
+    - "linearity"
+  warning: "By itself, applying only generic rainbow-path extremal bounds to each threshold gives too coarse a sum to prove A=O(n); further coupling across thresholds is required."
+research_level: "lemma"
+semantic_container_text: "Potential-threshold terminal-graph program: rainbow-path exclusion in threshold terminal graphs converts path structure into global restrictions on ascending-edge layers."
+simplified_statement: "Potential-threshold terminal graphs are rainbow-path-free."
+substantive_worker_ids:
+  - 182
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Potential-threshold terminal graphs are rainbow-path-free"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 6

@@ -1,0 +1,9 @@
+# The no-five-window deletion residue has two opposite Hamiltonian four-sets and two synchronized cross triples
+
+## Statement
+
+Let H be a minimum counterexample and let H-x=P|Q be a deletion two-cover with P=(p_0,...,p_m), Q=(q_0,...,q_s), |P|,|Q|>=3. Assume neither the canonical central five-set {p_{m-1},p_m,x,q_0,q_1} nor the outer five-set {p_1,p_0,x,q_s,q_{s-1}} is Hamiltonian. Then both cross triples (p_m,x,q_0) and (q_s,x,p_0) are tight, and both opposite four-sets S_L={p_1,p_0,q_s,q_{s-1}} and S_R={q_1,q_0,p_m,p_{m-1}} are Hamiltonian with tight orders (p_1,p_0,q_s,q_{s-1}) and (q_1,q_0,p_m,p_{m-1}). If |P|,|Q|>=4 the two four-sets are disjoint.
+
+## Body
+
+Apply 5c57c8c1884e to the displayed deletion order P,x,Q. Its central-five alternative would give the first excluded Hamiltonian five-set. Therefore its outer-four alternative holds; in particular the canonical central triple cannot be non-tight, so (p_m,x,q_0) is tight, and S_L=(p_1,p_0,q_s,q_{s-1}) is a tight four-path. Now apply ba08d1540dd1 to the facing endpoint pair p_0,q_s. Its Hamiltonian-five-window branch is exactly the second excluded five-set. Hence its reverse-cross branch holds and (q_s,x,p_0) is tight. Finally apply 5c57c8c1884e after swapping the two displayed cover components, i.e. to Q,x,P. Its central triple (q_s,x,p_0) is tight, so its outer-four alternative gives the tight four-path S_R=(q_1,q_0,p_m,p_{m-1}). Proper Hamiltonian supports have path-cover-two complements by minimum-counterexample calculus. Disjointness when both component orders are at least four is immediate from the displayed endpoint pairs.

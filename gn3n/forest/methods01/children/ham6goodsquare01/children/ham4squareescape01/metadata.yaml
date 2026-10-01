@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-28T21:01:05.422996+00:00"
+id: "ham4squareescape01"
+last_elevation_revision: 0
+last_substantive_worker_id: 718
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 364
+    detail: "Recorded coversurg01, a25b748fb338, and mincex01 as logical premises and replaced ambiguous title wording with the precise cross-component-edge description."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+  last_audit_observation:
+    claim_id: 364
+    detail: "Recorded coversurg01, a25b748fb338, and mincex01 as logical premises and replaced ambiguous title wording with the precise cross-component-edge description."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "The proof uses the minimum-counterexample fact pc(H)>2 and the proper-Hamiltonian-support complement principle."
+    recorded_at: "2026-09-29T05:52:22.192888+00:00"
+    to_id: "mincex01"
+    worker_id: 630
+object_type: "research"
+origin_worker_id: 718
+parent_id: "ham6goodsquare01"
+position: 0
+research_interface:
+  consumer: "Hamiltonian-six branch; four-side route; two-label square transport"
+  given: "a Hamiltonian four-core D and two labels d,e whose four lower/top residue states K, K+d, K+e, K+d+e all have path-cover number two, with D+d and D+e Hamiltonian"
+  need: "consume the crossing outcome, or combine this theorem with the unconditional Hamiltonian-six square to eliminate the six-set branch in a global extremal argument"
+  produces: "for order at least sixteen: a component-drop crossing in a lower square state, strict quadratic descent, or order disagreement; at order fifteen only the 4|5|6 endpoint residue remains"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A Hamiltonian four-core two-label square yields a cross-component edge, descent, or order disagreement above order fifteen."
+substantive_worker_ids:
+  - 718
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A Hamiltonian four-core two-label square yields a cross-component edge, descent, or order disagreement above order fifteen"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:58:31.629133+00:00"
+version: 10

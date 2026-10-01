@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-26T14:13:07.124314+00:00"
+id: "astra003allsingletons"
+last_elevation_revision: 0
+last_substantive_worker_id: 643
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  last_failure:
+    reason: "Proof invalid: the |S|=8,9,10 argument incorrectly inferred connectivity of a fixed-six-set singleton fiber from four-of-six. Four-of-six only guarantees at least four good deletion labels; bad deletion labels are absent from that fixed-support fiber. The valid conclusion astra003no7singletons (|S|>=8) is unaffected."
+    recorded_at: "2026-09-26T14:44:03.127927+00:00"
+object_type: "research"
+origin_worker_id: 643
+parent_id: "astra003no7singletons"
+position: 0
+research_interface:
+  consumer: "astraidea003"
+  given: "a trapped order-eleven Astra component containing the 4|4|3 and 5|5|1 surfaces"
+  need: "use full omission-label reachability plus the 4|4|3 pair-reachability surface to force a pair merge or global closure"
+  produces: "all eleven vertex labels occur as reachable omission singletons in the same component"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 643
+support_reason: "local_audit_failed"
+support_status: "blocked"
+title: "Every label occurs on the omission surface of a trapped order-eleven Astra component"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:56:12.77133+00:00"
+version: 8

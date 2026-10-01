@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T20:46:21.642987+00:00"
+id: "two_bad_six_extensions_fourgood01"
+last_elevation_revision: 9000
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Dictionary packaging: the title says 'good deletions'; use canonical 'Hamiltonian deletions'."
+      recorded_at: "2026-10-01T00:04:18.507512+00:00"
+      worker_id: 737
+  audit_request_reason: "Independent audit requested for the stronger four-positioned-deletion lemma, which removes the Hamiltonicity assumption on the base five-set."
+  audit_request_recorded_at: "2026-09-29T20:46:34.915832+00:00"
+  audit_resolution:
+    claim_id: 738
+    detail: "Independent check: four-of-six gives at least three replacement labels in X when X is Hamiltonian and at least four when X is non-Hamiltonian, so the two replacement sets intersect. On U=(X-{x}) union {e,f}, e and f are already Hamiltonian deletions and four-of-six forces at least two further Hamiltonian deletions from X-{x}."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 738
+    detail: "Independent check: four-of-six gives at least three replacement labels in X when X is Hamiltonian and at least four when X is non-Hamiltonian, so the two replacement sets intersect. On U=(X-{x}) union {e,f}, e and f are already Hamiltonian deletions and four-of-six forces at least two further Hamiltonian deletions from X-{x}."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Vocabulary and interface repair only: preserve hypotheses and conclusions; remove certification adjectives, replace ambiguous kernel/plateau/shell wording, normalize Hamiltonian-deletion terminology, and remove the unsupported same-component assertion from the exchange interface."
+    recorded_at: "2026-09-29T20:58:16.349829+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 585
+object_type: "toolkit"
+origin_worker_id: 665
+parent_id: "smallset01"
+position: 0
+research_interface:
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two bad six-extensions of any five-set force a four-positioned-deletion six-set."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two bad six-extensions of any five-set force a four-positioned-deletion six-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:04:18.507512+00:00"
+version: 7

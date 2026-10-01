@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T19:03:06.605125+00:00"
+id: "two_bad_five_extensions_all_opposite01"
+last_elevation_revision: 8737
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T19:03:27.128582+00:00"
+  audit_resolution:
+    claim_id: 169
+    detail: "Independent reconstruction passes: on S=X∪{a,b}, four-of-six gives at least four Hamiltonian one-vertex deletions; S-a and S-b are non-Hamiltonian by hypothesis, so all four deletions S-x for x∈X are Hamiltonian. Vocabulary is conforming."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:07:12.934075+00:00"
+    worker_id: 555
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 169
+    detail: "Independent reconstruction passes: on S=X∪{a,b}, four-of-six gives at least four Hamiltonian one-vertex deletions; S-a and S-b are non-Hamiltonian by hypothesis, so all four deletions S-x for x∈X are Hamiltonian. Vocabulary is conforming."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:07:12.934075+00:00"
+    worker_id: 555
+object_type: "toolkit"
+origin_worker_id: 708
+parent_id: "smallset01"
+position: 0
+research_interface:
+  consumer: "small-side extension; four-side endpoint transport; six-set amplification"
+  given: "a four-set with two exterior labels whose corresponding five-vertex singleton extensions are both non-Hamiltonian"
+  produces: "all four five-sets obtained by retaining both exterior labels and deleting one core label are Hamiltonian"
+research_level: "lemma"
+semantic_container_text: "Two-bad-five-extension branch of the small-set toolkit: failure of two five-extensions forces four opposite Hamiltonian deletions, which are organized into endpoint gap networks and finite endpoint-lock packages yielding transport, mixed support, tight cycles, or bounded residual configurations."
+simplified_statement: "Two non-Hamiltonian five-extensions force all four opposite five-deletions Hamiltonian."
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two non-Hamiltonian five-extensions force all four opposite five-deletions Hamiltonian"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:53:23.958254+00:00"
+version: 6

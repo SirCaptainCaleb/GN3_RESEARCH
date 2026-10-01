@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-25T19:57:55.500819+00:00"
+id: "1001050"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "22a5d11a-8ffe-4ffd-9969-17e0e79d847f"
+    detail: "Both ordered-contact cases give legal wrong-entrance splices and the claimed p+4 rank-sum threshold."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:03:57.459091+00:00"
+    worker_id: "314f9d8a-b50d-4323-b033-4c5c09dd9a01"
+  last_audit_observation:
+    claim_id: "22a5d11a-8ffe-4ffd-9969-17e0e79d847f"
+    detail: "Both ordered-contact cases give legal wrong-entrance splices and the claimed p+4 rank-sum threshold."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:03:57.459091+00:00"
+    worker_id: "314f9d8a-b50d-4323-b033-4c5c09dd9a01"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1000570"
+position: 0
+research_interface:
+  consequence: "Any low rank-sum pair with separated contacts must be entrance-retained at both contacts; terminal-retained behavior can survive only in same/overlapping contact cells or above the p+4 rank-sum threshold."
+  consumer:
+    - "paid strict-gap four-edge spacing"
+    - "mixed X/U contact-order reduction"
+    - "7e6abf77cbc5 local congestion route"
+  given:
+    - "one maximum p-edge path"
+    - "two ascending nonspecial singleton terminal edges with disjoint contact intervals"
+  next_need: "Handle the only missing local configuration: a mixed entrance/terminal pair whose singleton contact intervals overlap in one host cell. If that case also pays p+4 (or a comparable deficit), combine with contact ordering to constrain four-edge spacing."
+research_level: "lemma"
+semantic_container_text: "Singleton-contact rank-sum program: classify separated and overlapping mixed singleton contacts, forcing rank-sum surplus except for explicit boundary or triangle configurations."
+simplified_statement: "Separated mixed singleton contacts force rank sum at least host rank plus four."
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Separated mixed singleton contacts force rank sum at least host rank plus four"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:36:19.47265+00:00"
+version: 7

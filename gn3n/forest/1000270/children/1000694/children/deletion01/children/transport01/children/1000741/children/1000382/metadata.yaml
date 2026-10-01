@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:39:46.094202+00:00"
+id: "1000382"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 415
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:21:44.645158+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 415
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:21:44.645158+00:00"
+    worker_id: 596
+object_type: "research"
+origin_worker_id: 697
+parent_id: "1000741"
+position: 850
+research_interface:
+  consumer: "endpoint transport / defect compression; equitable plateau closure"
+  given: "an all-equal spanning three-cover in a minimum counterexample and arbitrary endpoint deletion covers for one component"
+  need: "show one of the two explicit crossing geometries yields defect-span compression or propagates incompatibly across the three equal components"
+  produces: "order disagreement, reciprocal inherited-edge/support crossing, or a same-class leave-and-return excursion"
+research_level: "theorem"
+semantic_container_text: "Equal-cover endpoint-probe analysis: probing opposite endpoints forces relative-order disagreement, reciprocal crossing, or a leave-and-return excursion; the hard all-equal residue localizes to wrap triples and bounded support configurations."
+simplified_statement: "Equal-cover endpoint probes force order disagreement, reciprocal crossing, or a leave-and-return excursion."
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Equal-cover endpoint probes force order disagreement, reciprocal crossing, or a leave-and-return excursion"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:38.352961+00:00"
+version: 8

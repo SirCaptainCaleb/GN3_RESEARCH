@@ -1,0 +1,9 @@
+# Minimum-backward comparison witnesses form a unique bad flip-cube corner with monotone cycles
+
+## Statement
+
+In a minimum-backward normalization (H,F,<), let B be the set of backward comparison arcs. For every nonempty S subseteq B, reversing exactly S gives a boundary tournament H_S with path-cover number at most two, while F remains a spanning three-cover; every two-cover of H_S uses a newly tight triple from S. Every backward arc e_j->e_i has j-i>=2 and lies on a directed comparison cycle whose remaining arcs are forward relative to <. If |B|=1, a shortest such cycle is chordless, so its underlying ordinary edges form a three-edge star, an ordinary triangle, or a vertex-simple ordinary cycle.
+
+## Body
+
+Minimality of the backward count drives all conclusions. No backward arc is used by F, because < extends every F-used comparison. Hence reversing any nonempty S subseteq B preserves F and reduces the backward count by |S|. If H_S still had path-cover number three, it would be a smaller admissible witness, impossible; thus pc(H_S)<=2. Any two-cover of H_S must use a changed triple, otherwise it would already two-cover H. Next, a backward comparison between consecutive edge-order positions could be corrected by swapping those two positions, changing no other relative order and preserving all F-used comparisons, again contradicting minimality; hence every backward arc spans at least one intervening edge. Finally Gamma(H)-B is acyclic, and B is a minimum feedback set compatible with F. For alpha=e_j->e_i, if Gamma(H)-B had no directed path e_i to e_j, restoring alpha would keep the graph acyclic and delete one member of B, contradiction. Thus alpha closes an otherwise-forward directed cycle. When |B|=1, choose a shortest path; a forward chord shortens it and a backward chord would be a second member of B, so the cycle is chordless. The comparison representation gives the three line-graph geometries.

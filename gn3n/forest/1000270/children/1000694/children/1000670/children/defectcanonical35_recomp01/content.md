@@ -1,0 +1,9 @@
+# Minimum defect span three is exactly a canonical deletion-state central 3/5 configuration
+
+## Statement
+
+Let H be a minimum counterexample and let pi=(v_1,...,v_n) attain minimum defect span three, with leftmost defect center i. Put x=v_{i+1}, P=(v_1,...,v_i), and Q=(v_{i+2},...,v_n). Then H-x=P|Q is a deletion cover, and the canonical central cover obtained from this deletion state agrees exactly with the central cover read directly from pi. If i+1 is tight, the central path is (v_i,x,v_{i+2}) and the same span-three configuration also yields a legal strict-Phi descent through a two-vertex middle state. If i+1 is defective, the central path is (v_{i+3},v_{i+2},x,v_i,v_{i-1}); in both cases the exterior components are the inherited tight paths outside the central window.
+
+## Body
+
+Minimum defect span is three, so only centers i,i+1,i+2 can be defective, with the extremes defective. Deleting x=v_{i+1} leaves the inherited prefix P through v_i and suffix Q from v_{i+2}, hence the canonical deletion cover. If the middle center is tight, then (v_i,x,v_{i+2}) is the canonical three-path joining the endpoint pair of P,Q; the exterior remainders are inherited. Independently, cutting at the span-three window also exposes a two-vertex middle block, and moving an endpoint from a sufficiently large exterior path into it strictly lowers Phi. If the middle center is defective, boundary antisymmetry reverses the three consecutive defect triples into the tight five-path (v_{i+3},v_{i+2},x,v_i,v_{i-1}); this is exactly the five-vertex canonical central bridge from the same deletion cover. Thus the defect-span and deletion-state normal forms are one and the same configuration, with the tight-middle branch carrying an immediate descent as well.

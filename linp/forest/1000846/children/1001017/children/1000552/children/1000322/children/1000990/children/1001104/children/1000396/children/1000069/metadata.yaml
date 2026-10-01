@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 8
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T03:56:19.063898+00:00"
+id: "1000069"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "The equality-layer target d_H(v)<=d is exactly k_v>=2d under d_H=3d-k_v; the counterexample inequalities and charge-flow skeleton follow directly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "The equality-layer target d_H(v)<=d is exactly k_v>=2d under d_H=3d-k_v; the counterexample inequalities and charge-flow skeleton follow directly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "grand equality charge reformulation"
+  uses:
+    - "1000396"
+    - "1000265"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000396"
+position: 0
+research_interface:
+  consequence: "Recasts the sole missing equality theorem as amplification of a forced constant-sized positive leave charge to the target charge 2d; a counterexample is exactly a bounded zero-sum charge field with forced ascending flow from negative sites."
+  consumer:
+    - "grand Turan induction"
+    - "potential-cut route"
+    - "Steiner-deficiency induction"
+  given:
+    - "exact-density equality assertion"
+    - "leave-charge coordinates"
+  next_need: "Prove one monotone amplification step. Candidate: choose a maximum-charge vertex w and apply potential superlevel cuts to ascending fans emitted by negative-charge vertices; either enough flow reaches the potential layer of w to force a longer path, or degree/leave conservation creates a vertex with charge larger than k_w."
+research_level: "theorem"
+semantic_container_text: "Leave-charge amplification program: convert negative leave charge into superlevel growth and opposite-end amplification; if amplification stalls, the obstruction collapses to a rigid two-level high-rank state with strong matching and blocker constraints."
+simplified_statement: "The equality-layer conjecture is exactly a leave-charge amplification to 2d."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The equality-layer conjecture is exactly a leave-charge amplification to 2d"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:37:06.600883+00:00"
+version: 6

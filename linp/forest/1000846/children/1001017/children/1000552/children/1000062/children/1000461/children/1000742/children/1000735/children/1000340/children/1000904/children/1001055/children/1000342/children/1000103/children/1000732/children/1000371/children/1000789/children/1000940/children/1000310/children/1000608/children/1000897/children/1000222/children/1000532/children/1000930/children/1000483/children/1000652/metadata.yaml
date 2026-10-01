@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-25T20:45:57.268754+00:00"
+id: "1000652"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "The claimed exhaustive classification of extra intersections in the shortcut sequence misses collisions involving the unused terminal v_{h-1} of the bridge edge E_h. A displayed right-block edge E_b with b>=h+2 may have entrance x_b=v_{h-1}; this is a legitimate backward color-terminal collision [h-1,b] causing a nonconsecutive intersection with E_h, but it is neither contained in [j,l], nor contained in [h,i], nor of the stated spanning form a<l<h<b. Thus failure of the shortcut cycle does not imply alternative (B) as stated."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "The claimed exhaustive classification of extra intersections in the shortcut sequence misses collisions involving the unused terminal v_{h-1} of the bridge edge E_h. A displayed right-block edge E_b with b>=h+2 may have entrance x_b=v_{h-1}; this is a legitimate backward color-terminal collision [h-1,b] causing a nonconsecutive intersection with E_h, but it is neither contained in [j,l], nor contained in [h,i], nor of the stated spanning form a<l<h<b. Thus failure of the shortcut cycle does not imply alternative (B) as stated."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_failure:
+    reason: "The claimed exhaustive classification of extra intersections in the shortcut sequence misses collisions involving the unused terminal v_{h-1} of the bridge edge E_h. A displayed right-block edge E_b with b>=h+2 may have entrance x_b=v_{h-1}; this is a legitimate backward color-terminal collision [h-1,b] causing a nonconsecutive intersection with E_h, but it is neither contained in [j,l], nor contained in [h,i], nor of the stated spanning form a<l<h<b. Thus failure of the shortcut cycle does not imply alternative (B) as stated."
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1000483"
+position: 0
+research_interface:
+  consequence: "Nested collisions are recursively resolvable: either the inner interval can be shortcut out to create a genuine nonspecial cycle, or the failure itself identifies a strictly more local collision obstruction."
+  consumer:
+    - "nested collision recursion"
+    - "crossing-versus-nesting reduction"
+    - "terminal-shadow rank budget"
+  given:
+    - "two nested backward collisions"
+    - "c9a012c1b82e backward direction"
+    - "f2925a904b8e cycle-rank bound"
+  next_need: "Choose a nested pair minimal with respect to flank collisions and intermediate nesting. Then alternative (B) is excluded and the shortcut cycle gives a quantitative rank inequality. Use this to bound the depth of a collision-containment chain or force many side-disjoint primitive cycles."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 220
+support_reason: "The claimed exhaustive classification of extra intersections in the shortcut sequence misses collisions involving the unused terminal v_{h-1} of the bridge edge E_h. A displayed right-block edge E_b with b>=h+2 may have entrance x_b=v_{h-1}; this is a legitimate backward color-terminal collision [h-1,b] causing a nonconsecutive intersection with E_h, but it is neither contained in [j,l], nor contained in [h,i], nor of the stated spanning form a<l<h<b. Thus failure of the shortcut cycle does not imply alternative (B) as stated."
+support_status: "blocked"
+title: "Two nested backward collisions either shortcut to a linear cycle or contain a further collision"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-25T21:58:16.206644+00:00"
+version: 5

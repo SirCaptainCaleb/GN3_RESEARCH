@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T04:35:40.119859+00:00"
+id: "compatsupportham22"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 156
+    detail: "The listed Hamiltonian support enlargements are exactly the supports supplied by the three deletion-cover cube edges in the two parity normal forms."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:21:09.666917+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 156
+    detail: "The listed Hamiltonian support enlargements are exactly the supports supplied by the three deletion-cover cube edges in the two parity normal forms."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:21:09.666917+00:00"
+    worker_id: 693
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compatsupportcube16"
+position: 0
+research_interface:
+  consumer: "deletion-cover incompatibility forcing; endpoint-transport / defect compression"
+  given: "the six D1 cube states and parity classification of a common-core support-switch triple"
+  need: "consume either six single-label Hamiltonian enlargements in the all-split type or the asymmetric 0/1/2-label Hamiltonian enlargements in the one-split type"
+  produces: "a sound Hamiltonian-support normal form for both support-switch parity types, independent of any false deficit monotonicity"
+research_level: "lemma"
+semantic_container_text: "Support-switch Hamiltonian-enlargement branch: the two parity types force core enlargements; adjacent-gap concentration, synchronized reverse crosses, opposite-orientation transpositions, and one-split extender-blocker toggles reduce the remaining geometry to bounded insertion windows, cross-swaps, or order disagreement."
+simplified_statement: "The two support-switch parity types force explicit Hamiltonian core enlargements"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The two support-switch parity types force explicit Hamiltonian core enlargements"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:27:38.933806+00:00"
+version: 7

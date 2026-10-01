@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 8
+created_at: "2026-09-21T00:44:04.144556+00:00"
+id: "1000339"
+last_elevation_revision: 0
+last_substantive_worker_id: 575
+legacy_id: null
+lifecycle_status: "active"
+math_version: 8
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 423
+    detail: "Independent exact check passed. The good-deletion count is correct for component orders 3,4,5; endpoint-hook forcing applies uniformly to the fixed Q; every triple of labels gives the two Hamiltonian five-set fans at both ends of Q; and four pairwise-compatible one-path deletion orders on C would glue to a Hamilton path of C, so some pair must expose the stated relative-order disagreement."
+    math_version: 8
+    outcome: "pass"
+    recorded_at: "2026-09-21T01:24:37.362754+00:00"
+    worker_id: 634
+  last_audit_observation:
+    claim_id: 423
+    detail: "Independent exact check passed. The good-deletion count is correct for component orders 3,4,5; endpoint-hook forcing applies uniformly to the fixed Q; every triple of labels gives the two Hamiltonian five-set fans at both ends of Q; and four pairwise-compatible one-path deletion orders on C would glue to a Hamilton path of C, so some pair must expose the stated relative-order disagreement."
+    math_version: 8
+    outcome: "pass"
+    recorded_at: "2026-09-21T01:24:37.362754+00:00"
+    worker_id: 634
+  last_premise_impact_check:
+    checked_at: "2026-09-23T04:41:17.383762+00:00"
+    note: "Premise-impact reconfirmation: d43a7c9e2f61 preserves the compatibility/gluing interface consumed by the unchanged synchronized-omission-family proof."
+    source_ids:
+      - "compat01"
+      - "1000694"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 575
+parent_id: "1000709"
+position: 1
+research_interface:
+  given: "an exact deletion two-cover with one component of order at most five"
+  need: "transport the forced order disagreement or endpoint fans into a successful mixed support move or endpoint absorption"
+  produces: "a four-label fixed-complement family with endpoint fans and unavoidable order-disagreement inside the enlarged small support"
+research_level: "lemma"
+semantic_container_text: "Small-deletion-side omission families: sides of order three through five yield at least four synchronized deletion labels, common endpoint hooks, Hamiltonian end fans, unavoidable order disagreement, and clean support exchanges, ruling out local frozen behavior in the small-side regime."
+simplified_statement: "Small deletion sides generate synchronized omission families"
+substantive_worker_ids:
+  - 575
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Small deletion sides generate synchronized omission families"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:38.352961+00:00"
+version: 13

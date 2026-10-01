@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T20:25:32.59832+00:00"
+id: "1000067"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 451
+    detail: "Each compatibility edge moves at most three anchor positions by the localization premise; pathwise triangle inequality gives the stated speed bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+  last_audit_observation:
+    claim_id: 451
+    detail: "Each compatibility edge moves at most three anchor positions by the localization premise; pathwise triangle inequality gives the stated speed bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+object_type: "research"
+origin_worker_id: 678
+parent_id: "1000204"
+position: 4
+research_interface:
+  given: "a compatibility path inside the neighborhood of one anchor deletion cover"
+  need: "combine long-range required transport with a short move budget or another monotone quantity"
+  produces: "a Lipschitz bound of three anchor positions per compatibility edge"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Anchor-neighborhood compatibility paths have bounded positional speed."
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Anchor-neighborhood compatibility paths have bounded positional speed"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:48:18.367129+00:00"
+version: 6

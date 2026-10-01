@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T00:43:34.267765+00:00"
+id: "astra003transfer35_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 307
+    detail: "Recomposition faithfully preserves the certified transfer barrier, including the strict inequality 0<t<b-a and the endpoint-segment construction; it preserves the m>=6 contradiction using the t=1 and t=2 barriers with localextend01; and it preserves the surviving 3|5 equal-Phi middle-triple rotation with the Hamilton five-path endpoints in X. The n>=14 no-3-side consequence remains an immediate consequence of the stronger preserved statement that a three-side has no partner of order >=6, while the n=13 profile 3|5|5 is stated explicitly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T00:46:55.242205+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 307
+    detail: "Recomposition faithfully preserves the certified transfer barrier, including the strict inequality 0<t<b-a and the endpoint-segment construction; it preserves the m>=6 contradiction using the t=1 and t=2 barriers with localextend01; and it preserves the surviving 3|5 equal-Phi middle-triple rotation with the Hamilton five-path endpoints in X. The n>=14 no-3-side consequence remains an immediate consequence of the stronger preserved statement that a three-side has no partner of order >=6, while the n=13 profile 3|5|5 is stated explicitly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T00:46:55.242205+00:00"
+    worker_id: 694
+  recomposition_audit:
+    classified_at: "2026-09-28T00:45:16.177264+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "astra003quadraticpotential"
+position: 0
+research_interface:
+  consumer: "Astra-003 trapped-state analysis"
+  given: "Phi-minimal trapped Astra-003 three-cover"
+  produces: "endpoint-transfer barrier, three-side size reduction, and surviving 3|5 equal-Phi rotation"
+research_level: "theorem"
+semantic_container_text: "Quadratic endpoint-transfer reduction to the 3|5 shell: transfer barriers force the canonical 3|5 regime, after which support expansion, balanced eight- and eleven-vertex shells, omission graphs, and endpoint obstructions are used to eliminate trapping."
+simplified_statement: "Quadratic endpoint-transfer barriers reduce a three-side to the 3|5 rotation shell."
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quadratic endpoint-transfer barriers reduce a three-side to the 3|5 rotation shell"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:33.193322+00:00"
+version: 7

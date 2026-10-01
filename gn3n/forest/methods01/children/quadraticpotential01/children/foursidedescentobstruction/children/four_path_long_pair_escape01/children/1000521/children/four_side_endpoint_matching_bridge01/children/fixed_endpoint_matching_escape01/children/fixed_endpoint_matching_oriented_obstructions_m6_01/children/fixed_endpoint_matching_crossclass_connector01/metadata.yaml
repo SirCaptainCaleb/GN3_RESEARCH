@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:04:43.890287+00:00"
+id: "fixed_endpoint_matching_crossclass_connector01"
+last_elevation_revision: 9060
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent check requested. The key new point is the 2+2 coloring argument: with four distinct second-type obstruction gaps, there is an opposite-orientation-class pair at gap distance at least two, so the interval connector can be chosen to carry both fixed-endpoint cross hooks."
+  audit_request_recorded_at: "2026-09-29T21:05:04.373946+00:00"
+  audit_resolution:
+    claim_id: 738
+    detail: "Independent check: after the certified 2+2 endpoint-orientation split and common-middle noninsertability, four distinct second-type gap indices colored 2+2 always contain an opposite-color pair at distance at least two. The spacing theorem gives the interval connector, and the certified cross-hook premise supplies both endpoint hooks."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 738
+    detail: "Independent check: after the certified 2+2 endpoint-orientation split and common-middle noninsertability, four distinct second-type gap indices colored 2+2 always contain an opposite-color pair at distance at least two. The spacing theorem gives the interval connector, and the certified cross-hook premise supplies both endpoint hooks."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-30T00:00:50.852152+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 665
+parent_id: "fixed_endpoint_matching_oriented_obstructions_m6_01"
+position: 0
+research_interface:
+  consumer: "fixed_endpoint_matching_escape01; deletion_state_matching_frontier18; grand-theorem closure"
+  given: "a componentwise quadratic-minimal fixed-endpoint perfect-matching configuration with four labels noninsertable into one middle path"
+  need: "splice the opposite-class interval path with its two forced endpoint hooks to obtain a same-component repartition, spanning two-cover, or defect-span compression"
+  produces: "first-type local four-vertex structure, same-gap Hamiltonian four-set, or a separated interval path whose endpoints lie in opposite fixed-endpoint orientation classes and therefore carry both cross hooks"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Distinct common-middle obstruction gaps force an opposite-class interval path."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Distinct common-middle obstruction gaps force an opposite-class interval path"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:03:43.21888+00:00"
+version: 11

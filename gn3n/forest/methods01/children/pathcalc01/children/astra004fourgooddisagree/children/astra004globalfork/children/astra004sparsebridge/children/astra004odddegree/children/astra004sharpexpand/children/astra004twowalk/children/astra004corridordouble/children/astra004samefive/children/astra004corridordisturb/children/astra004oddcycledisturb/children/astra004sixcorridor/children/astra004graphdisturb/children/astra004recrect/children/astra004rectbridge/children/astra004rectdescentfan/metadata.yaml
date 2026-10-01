@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-26T20:15:22.014775+00:00"
+id: "astra004rectdescentfan"
+last_elevation_revision: 0
+last_substantive_worker_id: 588
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 235
+    detail: "Each maximum path plus the omitted singleton has the two displayed legal repartitions. Both quadratic-potential differences simplify to the stated positive formulas for 2<=r<=lambda-2, giving four descents per reciprocal cover and eight across the pair."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:50:26.429818+00:00"
+    worker_id: 654
+  last_audit_observation:
+    claim_id: 235
+    detail: "Each maximum path plus the omitted singleton has the two displayed legal repartitions. Both quadratic-potential differences simplify to the stated positive formulas for 2<=r<=lambda-2, giving four descents per reciprocal cover and eight across the pair."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:50:26.429818+00:00"
+    worker_id: 654
+  last_local_audit_repair:
+    reason: "Terminology-only audit repair: remove prohibited exact-cover modifier, replace nonstandard bridge/fan/Astra-move wording with explicit reverse-triple and repartition terminology; mathematics and formulas unchanged."
+    recorded_at: "2026-09-26T22:48:55.467828+00:00"
+    worker_id: 588
+object_type: "research"
+origin_worker_id: 642
+parent_id: "astra004rectbridge"
+position: 0
+research_interface:
+  consumer: "Astra idea 004; quadratic no-trapping bridge"
+  given: "the all-nonsingleton reciprocal rectangle in the four-reverse-bridge branch"
+  need: "compare the eight descended states; seek two with a common component and opposite endpoint transfers, or show one reaches a higher-degree Hamiltonian support / merge"
+  produces: "the rigid repeated-label equality residue has eight synchronized legal strict-Phi exits, with exact drop formulas controlled by r"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The central-reverse-triple rectangle has eight strict quadratic descents."
+substantive_worker_ids:
+  - 642
+  - 588
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The central-reverse-triple rectangle has eight strict quadratic descents"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 13

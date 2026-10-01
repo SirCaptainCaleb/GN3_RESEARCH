@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 8
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:05:59.335111+00:00"
+id: "1000203"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "2d6f740b-a7c6-4b04-b81a-b3b73fc7d1b1"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:17:24.874504+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "2d6f740b-a7c6-4b04-b81a-b3b73fc7d1b1"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:17:24.874504+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "negative-charge layer surcharge"
+  uses:
+    - "1000236"
+    - "1000396"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000236"
+position: 0
+research_interface:
+  consequence: "Low-potential negative charge is much more expansion-expensive than top-layer negative charge."
+  consumer:
+    - "charge amplification iteration"
+  given:
+    - "exact-density charge layers"
+  next_need: "Partition negative charge by potential. Either a positive fraction lies below a chosen cutoff, forcing a large upper superlevel via this lemma, or most negative charge is top-heavy, forcing strong charge-potential covariance and allowing the weighted potential-cut inequalities to attack the top-heavy alternative."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Negative charge at level p pays a fixed branching surcharge."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Negative charge at level p pays a fixed branching surcharge"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

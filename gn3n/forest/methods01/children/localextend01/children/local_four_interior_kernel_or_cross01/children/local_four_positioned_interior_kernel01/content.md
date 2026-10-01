@@ -1,0 +1,15 @@
+# A locally minimal complete endpoint family forces a positioned interior Hamiltonian window
+
+## Statement
+
+Let H be a minimum counterexample and let W|P|Q be a spanning three-cover minimizing quadratic potential within its connected pairwise-repartition component, with |W|=4 and |P|,|Q|>=6. Suppose there are w in W and D=W-{w} such that D union {e} is non-Hamiltonian for every displayed endpoint e of P or Q and D union {e,f} is Hamiltonian for every pair of distinct displayed endpoints. Let P° and Q° be obtained by deleting both displayed endpoints from P and Q. Then H contains a proper Hamiltonian induced set K of order four or five such that w is in K, at least three vertices of K lie in V(P°) union V(Q°), and H-K is non-Hamiltonian with path-cover number two. Equivalently, |K intersect W|<=2, with all vertices of K-W lying in the two path interiors.
+
+## Body
+
+Apply four_side_endpointpair_repartition_or_lock01 separately to P and Q. For P, the two non-Hamiltonian sets D union {p_left} and D union {p_right} imply that D union E_P is Hamiltonian. If H[V(P°) union {w}] were Hamiltonian, replacing W|P by (D union E_P)|(P° union {w}) would be a legal pairwise repartition with pairwise quadratic-potential change 10-2|P|<0, contradicting componentwise minimality. Hence w is noninsertable into every position of P°. The same argument applies to Q°.
+
+Apply the failed-insertion normal form insert01 to w on both P° and Q°. If a first-type obstruction occurs on, say, P°, let a,b,c be the three consecutive interior vertices in its local window. By 0425e03e2aa3 the four-set X={w,a,b,c} is either Hamiltonian or the universal cyclic non-Hamiltonian four-set. In the first case take K=X. In the second case, choose any d in D. The universal cyclic-kernel extension conclusion of 0425e03e2aa3 makes X union {d} Hamiltonian, so take K=X union {d}. Thus in either first-type case K has order four or five, contains w, and contains the three interior vertices a,b,c.
+
+It remains that both failed-insertion obstructions are second-type. Let p|p' be the pivot gap in P° and q|q' the pivot gap in Q°. By 4efbe05b945a, either there is a mixed Hamiltonian four-path on {w,p,p',q} or on {w,q,q',p}, in which case this support is the desired K, or the doubled-cross alternative holds. In the latter case put F={w,p,p',q,q'}. If H[F] is Hamiltonian, take K=F. If H[F] is non-Hamiltonian, the five-vertex part of smallset01 says that at most one four-subset of F is non-Hamiltonian. Among the four subsets F-{v} with v!=w, at least three are therefore Hamiltonian; choose one of them as K. Again K contains w and at least three vertices of P° union Q°.
+
+Since |P|,|Q|>=6, H has order at least sixteen, so every such K is proper. Minimum-counterexample calculus then gives pc(H-K)<=2; H-K cannot be Hamiltonian, since otherwise a Hamilton path on K together with one on H-K would two-cover H. Hence H-K is non-Hamiltonian with path-cover number two.

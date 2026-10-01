@@ -1,0 +1,13 @@
+# Nine common plateau locks force a bounded configuration below order twelve or a nine-gap network
+
+## Statement
+
+Let H be a boundary tournament and let X|Y|P be a trapped componentwise quadratic-minimal spanning three-cover of profile 4|5|a with a>=7. Put W=X union Y and M=(p_2,...,p_{a-1}). Then at least one of the following holds: (1) H contains either a Hamiltonian four-set consisting of one locked label in W and three consecutive vertices of M, a Hamiltonian four-set consisting of two locked labels in W and the two vertices of one displayed gap of M, or a Hamiltonian five-set consisting of two locked labels in W and three consecutive vertices of M; (2) H contains the universal cyclic non-Hamiltonian four-vertex configuration arising from a first-type failed-insertion obstruction of one locked label against M; (3) a>=12 and all nine labels w_1,...,w_9 in W have second-type failed-insertion obstructions at nine distinct displayed gaps of M. In outcome (3), every pair of labels is governed by the complete spacing trichotomy: equal gaps do not occur; labels at adjacent gaps yield either a Hamiltonian mixed five-set or the explicit adjacent-gap cross triple, and labels whose gaps are separated by at least one intervening gap are joined by the tight interval connector through the corresponding subpath of M. Consequently for 7<=a<=11 only outcomes (1) or (2) are possible.
+
+## Body
+
+By local45_allnine_common_lock01, all nine labels of W are noninsertable into the same displayed path M. Apply the failed-insertion normal form insert01 to each label. If any label has a first-type obstruction, 1000008 says its four-window is Hamiltonian, giving the first four-set alternative of (1), or is exactly the universal cyclic non-Hamiltonian four-vertex configuration, giving (2). Hence assume all nine labels have second-type obstructions.
+
+If two labels have the same obstruction gap, the equal-gap case of 1000174 gives a Hamiltonian four-set using those two labels and the two gap vertices, giving the second four-set alternative in (1). Thus if (1) and (2) both fail, all nine second-type gaps are distinct. The path M has a-2 vertices and therefore a-3 displayed gaps, so a-3>=9 and a>=12.
+
+For any pair of the nine labels, 1000174 gives the complete spacing trichotomy. Equal gaps have already been excluded. In the adjacent-gap case, a Hamiltonian five-set gives (1), so if (1) still fails the explicit cross triple is forced. For gaps separated by at least one intervening gap, the theorem gives the tight interval connector through the corresponding subpath of M. This proves (3) and the threshold consequence.

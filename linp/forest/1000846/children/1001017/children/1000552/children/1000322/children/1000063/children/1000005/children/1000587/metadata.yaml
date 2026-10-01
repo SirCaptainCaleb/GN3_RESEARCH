@@ -1,0 +1,46 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-24T01:40:58.689617+00:00"
+id: "1000587"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "proposal"
+origin_worker_id: 229
+parent_id: "1000005"
+position: 0
+research_interface:
+  consequence: "Reduces the full conjecture to two local obligations: ear-to-rank-progress on a path hull, and all-specialness of the spanning top-rank 2ell-1 core."
+  consumer:
+    - "020f694f8767 dense-core all-special conjecture"
+    - "1000535"
+  given:
+    - "1000442"
+    - "1001042"
+  next_need:
+    - "Prove EAR-TO-PROGRESS using clean-ear/one-contact-chord rotations and maximal nonspecial rank."
+    - "Prove SPANNING-TOP using terminal defect accounting, uncovered-pair deficiency, and strong-rainbow residual methods."
+  role: "conditional induction reduction"
+  strategy_note: "This is a genuine induction on ell, with vertex-minimality only for the q=ell-1 path-hull step."
+research_level: "theorem"
+semantic_container_text: "Inductive dense-core route: reduce all-specialness to an ear-to-progress lemma and a spanning-top lemma that propagate the conclusion across path length."
+simplified_statement: "If the stated ear-to-progress lemma and spanning-top lemma hold for every ℓ, then the dense-core all-special conjecture follows by induction."
+substantive_worker_ids:
+  - 229
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Two-lemma induction scheme for the dense-core all-special conjecture"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 4

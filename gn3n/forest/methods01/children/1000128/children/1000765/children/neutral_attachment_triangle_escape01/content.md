@@ -1,0 +1,9 @@
+# Above order seventeen a neutral endpoint-attachment triangle forces strict descent or order disagreement
+
+## Statement
+
+Let H be a minimum counterexample of order n>=18. Suppose three distinct deletion covers F_a,F_b,F_c form a 3-cycle in which each cycle edge is a Phi-neutral one-block endpoint-attachment restoration of 295ead2879dc. Then H contains explicit order disagreement or one of the corresponding bounded-support three-covers lies in a pairwise-repartition component containing a three-cover of strictly smaller quadratic potential.
+
+## Body
+
+By eaf8cbdad3f3, every neutral attachment edge is a fully compatible omission swap, and the newly omitted label is the unique singleton split from an endpoint side of the old mixed component; hence for each cycle edge the new deletion label is a displayed endpoint of the old deletion cover. Therefore the three pairwise-compatible covers form an endpoint compatibility triangle. Apply the certified endpoint-triangle theorem 93109600e88d. It yields either a proper Hamiltonian four-set W with non-Hamiltonian path-cover-two complement, or an exceptional cyclic four-set X with its universal exterior Hamiltonian-extension property. In the Hamiltonian-four branch, 7bab8dd31d87 gives strict Phi descent, explicit order disagreement, or a proper Hamiltonian six-set with non-Hamiltonian path-cover-two complement; the six-set branch is consumed by ham6_large_escape01 because n>=18. In the exceptional four-set branch choose any exterior vertex v. Then X+v is a proper Hamiltonian five-set, and its complement is non-Hamiltonian with path-cover number two by minimum-counterexample calculus. Apply ham5_large_escape01 to obtain strict Phi descent or explicit order disagreement. Thus every neutral attachment 3-cycle has one of the stated outcomes.

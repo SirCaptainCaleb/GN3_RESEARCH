@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T20:18:33.902702+00:00"
+id: "1000108"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 308
+    detail: "Certified compatsupportc5close24 propagates support class membership around any support-compatible cycle with nonempty common surviving core, making all covers pairwise support-compatible. Therefore support-class transport has trivial monodromy; any nontrivial datum must refine support membership."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:06.630913+00:00"
+    worker_id: 688
+  last_audit_observation:
+    claim_id: 308
+    detail: "Certified compatsupportc5close24 propagates support class membership around any support-compatible cycle with nonempty common surviving core, making all covers pairwise support-compatible. Therefore support-class transport has trivial monodromy; any nontrivial datum must refine support membership."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:57:11.540339+00:00"
+    worker_id: 688
+object_type: "research"
+origin_worker_id: 678
+parent_id: "1000695"
+position: 2
+research_interface:
+  given: "a cyclic family of deletion covers with support-compatible consecutive pairs"
+  need: "define an order-sensitive transport datum weaker than full pair-state compatibility"
+  produces: "trivial support monodromy; all covers on the cycle are pairwise support-compatible"
+research_level: "lemma"
+semantic_container_text: "Support-level deletion-cover cocycle branch: singleton-swap cycles have trivial support monodromy while genuine order defects persist with controlled parity, forcing endpoint structure or a bounded order-transport normal form and showing that defects survive almost all further deletions."
+simplified_statement: "Support-level deletion-cover cocycles have trivial monodromy"
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Support-level deletion-cover cocycles have trivial monodromy"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 8

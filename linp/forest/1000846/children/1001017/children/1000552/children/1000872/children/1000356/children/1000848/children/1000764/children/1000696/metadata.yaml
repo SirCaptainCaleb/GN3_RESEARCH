@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-24T05:25:33.783608+00:00"
+id: "1000696"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1783626d-b29d-45e7-9886-bae59dd600a8"
+    detail: "Replaced prohibited physical-endpoint wording with standard endpoint language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:47:19.943283+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "1783626d-b29d-45e7-9886-bae59dd600a8"
+    detail: "Replaced prohibited physical-endpoint wording with standard endpoint language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:47:19.943283+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:46:59.807593+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000764"
+position: 0
+research_interface:
+  consequence: "At the first level below the half-rank top boundary, U-type single contacts are shifted strictly left relative to the full seven-slot rank-(q+1) witness window. Rank-q U contacts collapse to one joint; the two rightmost rank-(q+1) slots are X-only."
+  consumer:
+    - "p=2q-3 defect-corrected rank-pair block"
+    - "Astra clean-contact packing"
+  given:
+    - "terminal-tail localization"
+    - "nonspecial unique-longest-entrance property"
+  next_need: "Assume four ranks in {q,q+1} and no doubles. Combine this U-window with 08f894b8cb5e/eac2e3da3eea: rightmost X contacts force empty predecessor cells. Classify the remaining all-single occupancy states; any residual state must have the rank-q U contact at J_{q-2} and high X contacts alternating around it."
+research_level: "lemma"
+semantic_container_text: "Terminal-only odd-boundary branch: eliminate the rightmost witness slots and reduce two low-rank contacts to a rigid middle-edge normal form."
+simplified_statement: "At the odd central boundary terminal-only single contacts lose the rightmost witness slots."
+substantive_worker_ids:
+  - 229
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At the odd central boundary terminal-only single contacts lose the rightmost witness slots"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 8

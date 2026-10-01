@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T13:28:54.690643+00:00"
+id: "compatp4switch35"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 375
+    detail: "Support compatibility along 12,23,34 propagates one common core partition; the stable outer labels leave a2 and a3 as the unique carriers of red-edge support disagreement, giving exactly the stated two-switch corridor."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:30:33.690152+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 375
+    detail: "Support compatibility along 12,23,34 propagates one common core partition; the stable outer labels leave a2 and a3 as the unique carriers of red-edge support disagreement, giving exactly the stated two-switch corridor."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:30:33.690152+00:00"
+    worker_id: 693
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compatfourpattern26"
+position: 0
+research_interface:
+  consumer: "13-to-16-label compatibility branch; endpoint transport / defect compression"
+  given: "four pairwise-incompatible deletion covers with support-compatibility graph P4"
+  need: "combine the three blue order-incompatibilities with the two forced support switches of the internal labels"
+  produces: "one common core partition, stable endpoint labels a1,a4, and exactly two internal labels a2,a3 switching support class across opposite ends of the blue path"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The exceptional P4 pattern is a two-switch support corridor"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The exceptional P4 pattern is a two-switch support corridor"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 6

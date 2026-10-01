@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 3
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-23T21:45:31.563404+00:00"
+id: "1001142"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Verified both all-A and all-B spanning P6 families and the blocker-frequency argument. Any matching deletion misses at least one spanning path ending at each surviving block, so every surviving block retains rank six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:11.776216+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  humanization_target: "1000034"
+  last_audit_observation:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Verified both all-A and all-B spanning P6 families and the blocker-frequency argument. Any matching deletion misses at least one spanning path ending at each surviving block, so every surviving block retains rank six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:11.776216+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1001013"
+position: 0
+research_interface:
+  consequence: "Removes the edge-rank part of the matching-deletion computation. Any remaining humanization only needs to prove two distinct longest-path entrance labels at each surviving edge."
+  consumer:
+    - "09b3a90c50a9 matching-deletion all-special calibration"
+  given:
+    - "cyclic STS(13) two translation orbits"
+    - "all-A and all-B spanning P6 paths"
+    - "matching deletion"
+  next_need: "Strengthen the six endpoint-path families, or use rotations from a surviving rank-six path, to force a second entrance label."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Matching deletions of cyclic STS(13) preserve rank six at every surviving block."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Matching deletions of cyclic STS(13) preserve rank six at every surviving block"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:51:31.687677+00:00"
+version: 8

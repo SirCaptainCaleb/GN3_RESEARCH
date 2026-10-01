@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 3
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 5
+created_at: "2026-09-21T13:11:32.482199+00:00"
+id: "1000651"
+last_elevation_revision: 0
+last_substantive_worker_id: 720
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 345
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-21T14:30:38.112397+00:00"
+    worker_id: 570
+  last_audit_observation:
+    claim_id: 377
+    detail: "Independent reconstruction remains valid: the four support identities give a Gamma K4 when T is deficient; at each K4 vertex the three displayed neighbors acquire only two complementary vertices, leaving four to be covered by neighbors of acquisition size at most three, so at least two additional neighbors are forced and degree is at least five."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-21T14:33:56.122975+00:00"
+    worker_id: 597
+  last_premise_impact_check:
+    checked_at: "2026-09-23T04:42:41.617338+00:00"
+    note: "Premise-impact reconfirmation: 84c2f1d9a6e3 preserves the commuting endpoint splice/support-triangle package and 91e6b4c2d7a0 preserves neighborhood capacity; with b27f4c1a9e63 current-supported, the unchanged K4/degree-five argument remains supported."
+    source_ids:
+      - "1000344"
+      - "1000388"
+      - "1000421"
+      - "1000743"
+      - "1000465"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 720
+parent_id: "1000421"
+position: 0
+research_interface:
+  given: "the minimal order-13 two-end singleton exchange branch with distinct labels and no order disagreement"
+  need: "eliminate the isolated fourth-corner branch, or consume the degree-five K4 via compatibility/order structure into defect compression"
+  produces: "a sharp fork: the spliced fourth Hamiltonian support is odd-graph isolated, or four nearby deficient states form a Gamma K4 and all have degree at least five"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The commuting endpoint corner is isolated or forces a degree-five Gamma clique"
+substantive_worker_ids:
+  - 720
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The commuting endpoint corner is isolated or forces a degree-five Gamma clique"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:24:00.739811+00:00"
+version: 13

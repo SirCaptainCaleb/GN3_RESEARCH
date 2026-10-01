@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:02:05.833679+00:00"
+id: "local45_allnine_common_lock01"
+last_elevation_revision: 10100
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: prescribed-vertex balanced 4|5 mobility should upgrade the previous eight-label plateau lock to all nine labels, with threshold m>=6 and no trapped/minimum-counterexample hypothesis beyond componentwise Phi-minimality."
+  audit_request_recorded_at: "2026-09-30T13:02:24.808324+00:00"
+  audit_resolution:
+    claim_id: 746
+    detail: "For each label, prescribed-vertex balanced 4|5 mobility gives a same-component equal-potential state with that label on the four-side. Applying the certified four-side interior-lock theorem gives the common-middle noninsertability and reversal witness for every label."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:22:43.099331+00:00"
+    worker_id: 745
+  audit_trigger_kind: "explicit"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 746
+    detail: "For each label, prescribed-vertex balanced 4|5 mobility gives a same-component equal-potential state with that label on the four-side. Applying the certified four-side interior-lock theorem gives the common-middle noninsertability and reversal witness for every label."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:22:43.099331+00:00"
+    worker_id: 745
+object_type: "research"
+origin_worker_id: 665
+parent_id: "quadraticpotential01"
+position: 1
+research_interface:
+  consumer: "4|5 plateau termination; reversal synchronization; endpoint transport / defect compression"
+  given: "a componentwise Phi-minimal 4|5|m spanning three-cover with m at least six"
+  need: "synchronize the nine reversal/failed-insertion witnesses, or use the reachable witness states, to force same-component descent, a spanning two-cover, or defect compression"
+  produces: "all nine labels of the 4|5 union simultaneously noninsertable into one common long-path interior, each with a reachable neutral 4|5 witness state, a Hamiltonian endpoint-pair five-support, and a label-specific reversed interior edge"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every label of a locally minimal 4|5 union is locked out of the common long interior"
+substantive_worker_ids:
+  - 665
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Every label of a locally minimal 4|5 union is locked out of the common long interior"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:59:49.30824+00:00"
+version: 7

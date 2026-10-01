@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 60
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-23T20:15:22.156149+00:00"
+id: "1000085"
+last_elevation_revision: null
+last_substantive_worker_id: 183
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 183
+parent_id: "1000966"
+position: 0
+research_interface:
+  consequence: "Strict increase in Z orders the parent hyperedges by nondecreasing rank. Failure of direct lifting has a canonical first obstruction: a contiguous linear cycle of parent hyperedges."
+  consumer:
+    - "ordered-shadow monotone-path route"
+    - "ascending-edge defect"
+  given:
+    - "ordered shadow Z"
+    - "strictly increasing simple rainbow Z-path"
+    - "linearity of H"
+  next_need: "Exploit the monotone rank pattern around the resulting linear cycle, or find conditions excluding such cycles, so an edge-ordered monotone path theorem yields an actual long linear path."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Increasing ordered-shadow paths have nondecreasing parent ranks and lift unless they close a linear cycle."
+substantive_worker_ids:
+  - 183
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Increasing ordered-shadow paths have nondecreasing parent ranks and lift unless they close a linear cycle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

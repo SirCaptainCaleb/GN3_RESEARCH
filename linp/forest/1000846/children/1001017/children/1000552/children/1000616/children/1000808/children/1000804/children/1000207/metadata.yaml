@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-22T08:28:05.141901+00:00"
+id: "1000207"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "37d51aad-c1c6-4e2d-ba4b-7b4fd523fc9b"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:29:02.254851+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "a673c062-96f1-4967-bdb6-310f851f1c8c"
+    detail: "Independently reconstructed the endpoint rotation from the current charged-edge lemma: if the entrance is absent then the high-terminal witness lies on the path and the rotated path preserves/nondecreases endpoint potential."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T03:27:06.258335+00:00"
+    worker_id: "234a62d6-5248-43b9-87ff-446043628031"
+  last_premise_impact_check:
+    checked_at: "2026-09-25T03:27:06.258335+00:00"
+    note: "Independently reconstructed the endpoint rotation from the current charged-edge lemma: if the entrance is absent then the high-terminal witness lies on the path and the rotated path preserves/nondecreases endpoint potential."
+    source_ids:
+      - "1000556"
+      - "1000808"
+    worker_id: "234a62d6-5248-43b9-87ff-446043628031"
+object_type: "lemma"
+origin_worker_id: 205
+parent_id: "1000804"
+position: 1
+research_interface:
+  consequence: "a charged pair witness is either a low-potential entrance lying on the path or an actual nondecreasing-potential rotation step to another endpoint"
+  consumer:
+    - "potential-oriented local bound"
+    - "charged spacing"
+    - "Minty/Pósa endpoint-state walk"
+  given:
+    - "potential-charged ascending edge"
+    - "maximum path at the lower-potential terminal"
+  next_obligation: "iterate these rotations; strict potential rises cannot recur indefinitely, while recurrent equal-potential states should force accumulation of low-entrance blockers"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For a potential-charged ascending edge, a maximum path at the lower-potential terminal either contains the low-potential entrance or admits a length-preserving rotation to an endpoint of no smaller potential."
+substantive_worker_ids:
+  - 205
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A high-terminal witness gives a nondecreasing-potential endpoint rotation"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 8

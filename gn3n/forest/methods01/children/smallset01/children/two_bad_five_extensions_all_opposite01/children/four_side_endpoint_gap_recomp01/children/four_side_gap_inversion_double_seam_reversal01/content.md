@@ -1,0 +1,13 @@
+# Every four-side gap inversion forces both seam reversals
+
+## Statement
+
+Assume outcome (3) of four_side_endpoint_lock_gap_network01 beside the Hamiltonian four-path X=(x_0,x_1,x_2,x_3) and interior path M=(b_1,...,b_h). Then the obstruction-gap order is not the displayed X-order. Moreover, for every inversion i<j with g(x_j)<g(x_i), both tight triples (b_{g(x_j)+1},x_j,x_{j-1}) and (x_{i+1},x_i,b_{g(x_i)}) occur. Thus the inversion directly reverses the two displayed X-edges at the ends of the inverted X-subpath; no cycle splice is required. If j=i+1 these are two reverse seam orientations around the same displayed X-edge, while if j>=i+2 they reverse two distinct displayed X-edges.
+
+## Body
+
+Write g_k=g(x_k). First exclude monotone gap order. Suppose g_0<g_1<g_2<g_3. Since g_1>=2, the second-type prefix path for x_1 contains the tight triple (b_{g_1-1},b_{g_1},x_1). If (b_{g_1},x_1,x_2) were tight, then (b_{g_1-1},b_{g_1},x_1,x_2) would be a Hamiltonian four-path meeting both X and M, contradicting the defining absence of mixed Hamiltonian four/five-supports in outcome (3). Hence boundary antisymmetry gives (x_2,x_1,b_{g_1}) tight. Similarly g_2<=h-2, so the second-type suffix path for x_2 contains (x_2,b_{g_2+1},b_{g_2+2}). Tightness of (x_1,x_2,b_{g_2+1}) would produce the forbidden mixed Hamiltonian four-path (x_1,x_2,b_{g_2+1},b_{g_2+2}); therefore (b_{g_2+1},x_2,x_1) is tight. These two triples concatenate to the mixed Hamiltonian four-path (b_{g_2+1},x_2,x_1,b_{g_1}), again forbidden. Thus the gap order is not x_0<x_1<x_2<x_3, so at least one inversion exists.
+
+Now fix any inversion i<j with g_j<g_i. Because g_j<g_i<=h-1, we have g_j<=h-2. The second-type suffix for x_j therefore contains (x_j,b_{g_j+1},b_{g_j+2}). If the seam triple (x_{j-1},x_j,b_{g_j+1}) were tight, these two triples would concatenate to the mixed Hamiltonian four-path (x_{j-1},x_j,b_{g_j+1},b_{g_j+2}), impossible in outcome (3). Hence boundary antisymmetry gives (b_{g_j+1},x_j,x_{j-1}) tight.
+
+Likewise g_i>g_j>=1 implies g_i>=2. The second-type prefix for x_i contains (b_{g_i-1},b_{g_i},x_i). If the other seam triple (b_{g_i},x_i,x_{i+1}) were tight, then (b_{g_i-1},b_{g_i},x_i,x_{i+1}) would be a forbidden mixed Hamiltonian four-path. Hence boundary antisymmetry gives (x_{i+1},x_i,b_{g_i}) tight. Since i<j, both x_{j-1} and x_{i+1} are defined. Each displayed X-edge is therefore reversed at the corresponding connector seam, proving the claim.

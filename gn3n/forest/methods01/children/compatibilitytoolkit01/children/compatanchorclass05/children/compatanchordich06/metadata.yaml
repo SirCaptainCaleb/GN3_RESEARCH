@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T01:53:48.541575+00:00"
+id: "compatanchordich06"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 184
+    detail: "The anchored burst gives at least k-3 incompatible neighbors localized at d; partitioning by the two anchor paths and applying compatanchorclass05 yields a uniform subfamily of size ceil((k-3)/2) with exactly one of the two stated mechanisms."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+  last_audit_observation:
+    claim_id: 184
+    detail: "The anchored burst gives at least k-3 incompatible neighbors localized at d; partitioning by the two anchor paths and applying compatanchorclass05 yields a uniform subfamily of size ceil((k-3)/2) with exactly one of the two stated mechanisms."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-27T13:23:20.08573+00:00"
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compatanchorclass05"
+position: 0
+research_interface:
+  consumer: "deletion-cover incompatibility forcing; endpoint-transport / defect compression"
+  given: "an anchor deletion cover F_d of compatibility degree k"
+  need: "consume either the repeated support-switch family or the repeated same-path transport family into defect compression or a two-cover"
+  produces: "a uniform family of at least ceil((k-3)/2) anchored incompatibilities of one canonical type"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "High compatibility degree forces many support switches or many same-path relocations."
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "High compatibility degree forces many support switches or many same-path relocations"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T00:58:44.052481+00:00"
+version: 9

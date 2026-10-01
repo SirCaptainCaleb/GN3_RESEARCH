@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-24T05:40:58.110513+00:00"
+id: "1000324"
+last_elevation_revision: null
+last_substantive_worker_id: 209
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8f083569-1a8e-4d0d-90e9-92bcbbffdc2a"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:08:17.972257+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "8f083569-1a8e-4d0d-90e9-92bcbbffdc2a"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:08:17.972257+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000714"
+position: 0
+research_interface:
+  consequence: "Only one one-low odd-central all-single configuration remains: low C is terminal-only with absent entrance, and high rank-(q+1) single contacts occupy A,B,D."
+  consumer:
+    - "p=2q-3 defect-corrected consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "a3a8412d2499 low witness forced to C"
+    - "mixed clean-joint hole"
+    - "F,G exclusions"
+  next_need: "Let Q be a canonical (q-1)-edge entrance rail for the absent low entrance x. Each of h_A,h_B,h_D must meet Q, else Q,f_C,h_i is a wrong-entrance (q+1)-path for h_i. Use three high blockers of Q plus their A/B/D positions on P to force a double contact or a q-edge path ending at x."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The one-low odd-central all-single state reduces to one terminal-low pattern."
+substantive_worker_ids:
+  - 229
+  - 209
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The one-low odd-central all-single state reduces to one terminal-low pattern"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

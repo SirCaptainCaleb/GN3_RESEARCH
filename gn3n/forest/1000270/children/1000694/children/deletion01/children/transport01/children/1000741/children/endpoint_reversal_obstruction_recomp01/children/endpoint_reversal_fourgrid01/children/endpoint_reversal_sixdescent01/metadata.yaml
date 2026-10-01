@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T04:20:57.2009+00:00"
+id: "endpoint_reversal_sixdescent01"
+last_elevation_revision: 8298
+last_substantive_worker_id: 718
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 425
+    detail: "Propagated the distinguished-witness exclusion from endpoint_reversal_fourgrid01 and removed prohibited cover wording; added the four-grid and anchored-four-window dependencies."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:12:52.413677+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 425
+    detail: "Propagated the distinguished-witness exclusion from endpoint_reversal_fourgrid01 and removed prohibited cover wording; added the four-grid and anchored-four-window dependencies."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:12:52.413677+00:00"
+    worker_id: 664
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Audit repair: correct the exact current theorem use, preserve the intended mathematical conclusion, and normalize durable terminology."
+    recorded_at: "2026-09-29T12:08:33.203533+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 664
+object_type: "research"
+origin_worker_id: 718
+parent_id: "endpoint_reversal_fourgrid01"
+position: 0
+research_interface:
+  consumer: "endpoint-reversal closure; grand theorem proof composition"
+  given: "a maximal unresolved endpoint reversal after earlier bounded alternatives are excluded"
+  need: "consume bounded six-windows; separately dispatch orders at most fourteen"
+  produces: "bounded six-window Hamiltonicity/order disagreement, explicit strict Phi descent, or ambient order at most fourteen"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The maximal endpoint-reversal residue enters bounded six-window structure or strict descent."
+substantive_worker_ids:
+  - 718
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The maximal endpoint-reversal residue enters bounded six-window structure or strict descent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:58:18.435805+00:00"
+version: 7

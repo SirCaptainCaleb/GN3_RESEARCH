@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-29T05:09:25.049411+00:00"
+id: "1000721"
+last_elevation_revision: 7998
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_anomaly_reason: "The certified predecessor appears to use the same invalid inference now found in 1db10d32f08b: three isolated defects in an arbitrary cyclic concatenation of a long three-cover do not imply that any linear cut has defect span three. The certified theorem 33b80d34aad4 applies only after defect span three is already known. The repository also retains {1,1,1} as a genuine minimum-span cyclic-defect branch (2923b2b2b233), so this stronger arbitrary-three-cover barrier claim needs independent repair/reverification."
+  audit_anomaly_recorded_at: "2026-09-29T15:30:30.111149+00:00"
+  audit_request_reason: "The certified predecessor appears to use the same invalid inference now found in 1db10d32f08b: three isolated defects in an arbitrary cyclic concatenation of a long three-cover do not imply that any linear cut has defect span three. The certified theorem 33b80d34aad4 applies only after defect span three is already known. The repository also retains {1,1,1} as a genuine minimum-span cyclic-defect branch (2923b2b2b233), so this stronger arbitrary-three-cover barrier claim needs independent repair/reverification."
+  audit_request_recorded_at: "2026-09-29T15:30:30.111149+00:00"
+  audit_resolution:
+    claim_id: 333
+    detail: "The proof uses the same invalid inference from three isolated cyclic defects to minimum linear defect span three."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-29T16:08:26.169042+00:00"
+    worker_id: 601
+  audit_resolution_before_repair:
+    claim_id: 97
+    detail: "At any ordered interface both join triples cannot be tight in a counterexample. If a cyclic orientation had no barrier, its three isolated interface defects would give the forbidden {1,1,1} minimum-span geometry. Applying this to both cyclic orientations yields the stated pair of directed barriers."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:08:56.258571+00:00"
+    worker_id: 605
+  audit_trigger_kind: "anomaly"
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 333
+    detail: "The proof uses the same invalid inference from three isolated cyclic defects to minimum linear defect span three."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-29T16:08:26.169042+00:00"
+    worker_id: 601
+  last_failure:
+    reason: "The proof uses the same invalid inference from three isolated cyclic defects to minimum linear defect span three."
+    recorded_at: "2026-09-29T16:08:26.169042+00:00"
+  repair_attempt_count: 3
+  repair_reason: "Independent reconstruction confirms the anomaly. The proof correctly obtains a cyclic defect graph consisting of three isolated interface defects when a cyclic orientation has no barrier. It then claims that the linear concatenation has 'minimum defect span three' because its contiguous-path number is three. That implication is false: contiguous-path number three controls the matching number of the defect line, not the diameter/span of its defect centers. Here the three defects are separated by internal tight triples because all displayed paths have order at least three, so their linear defect span can be much larger than three. Therefore 0260efaac694 cannot be invoked. Repair was attempted via the certified three-isolated-defect cube 2923b2b2b233 and its size parametrization 810c33003128; unlike the singleton-lift span-three setting, a general long three-cover gives no component of order one, so the cube does not yield the contradiction used in 0260efaac694/33b80d34aad4. No proof of the stated arbitrary-three-cover theorem was found. Restricting to a minimum-defect-span-three ordering would materially weaken the statement and duplicate existing certified theorems, so no permitted statement repair is available."
+  repair_requested_at: "2026-09-29T15:31:43.252966+00:00"
+object_type: "research"
+origin_worker_id: 586
+parent_id: "1000006"
+position: 1
+research_interface:
+  consumer: "direct defect compression; contiguous-block relocation; synchronized barrier consumption"
+  given: "any spanning three-cover in a minimum counterexample with all component orders at least three"
+  need: "consume the opposite-pair residue; common-source/common-target already force mixed four-paths by local antisymmetry"
+  produces: "at least two directed double-non-tight interfaces, one in each cyclic orientation, with only opposite-pair/common-source/common-target geometry"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 586
+support_reason: "The proof uses the same invalid inference from three isolated cyclic defects to minimum linear defect span three."
+support_status: "blocked"
+title: "Every long three-cover has barriers in both cyclic orientations"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-29T16:08:26.169042+00:00"
+version: 13

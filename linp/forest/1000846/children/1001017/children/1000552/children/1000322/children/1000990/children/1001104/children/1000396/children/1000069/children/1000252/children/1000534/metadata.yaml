@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:09:08.331407+00:00"
+id: "1000534"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Reconstructed the kappa+4 dichotomy. If a negative-charge vertex has phi<=ell-3, its opposite endpoint yields charge at least kappa+4; otherwise all negative charge lies at phi=ell-2, forcing rank-(ell-1) ascending flow into the top layer and the stated proper matching-color graph."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Reconstructed the kappa+4 dichotomy. If a negative-charge vertex has phi<=ell-3, its opposite endpoint yields charge at least kappa+4; otherwise all negative charge lies at phi=ell-2, forcing rank-(ell-1) ascending flow into the top layer and the stated proper matching-color graph."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "top-two-layer charge normal form"
+  uses:
+    - "1000252"
+    - "1000157"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000252"
+position: 0
+research_interface:
+  consequence: "Unless charge reaches kappa+4, the entire negative mass is trapped at potential ell-2 and feeds a properly colored matching system into positively charged top-layer vertices."
+  consumer:
+    - "grand equality induction"
+    - "top-heavy exceptional state"
+  given:
+    - "first charge amplification"
+  next_need: "Exploit the top-two-layer matching graph. Combine its color-class lower bounds with the positive-charge budget on T and terminal-pair blocker structure. The finite order-11/order-12 analog suggests classifying alternating cycles or proving a rainbow/rotation path of length ell."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Either charge amplifies by four or all negative charge is trapped one level below the top."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Either charge amplifies by four or all negative charge is trapped one level below the top"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

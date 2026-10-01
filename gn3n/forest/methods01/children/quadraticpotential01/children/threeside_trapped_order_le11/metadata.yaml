@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T23:55:51.163325+00:00"
+id: "threeside_trapped_order_le11"
+last_elevation_revision: 10287
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T23:56:43.423708+00:00"
+  audit_resolution:
+    claim_id: 198
+    detail: "Independent check passed. This is the ambient version of the same size argument: threesidedescent6 excludes a side of order at least six, and balanced-eight excludes a 5|3 pair at a componentwise Phi minimum. Thus the two larger sides are both at most four and the total order is at most eleven."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 198
+    detail: "Independent check passed. This is the ambient version of the same size argument: threesidedescent6 excludes a side of order at least six, and balanced-eight excludes a 5|3 pair at a componentwise Phi minimum. Thus the two larger sides are both at most four and the total order is at most eleven."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-10-01T00:23:23.789352+00:00"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "Astra-003 minimum-side normalization; no-trapping; small-order reduction"
+  given: "any trapped componentwise Phi-minimal spanning three-cover with a three-vertex side"
+  note: "No minimum-counterexample, deletion-state, or edge-orderability hypothesis is used."
+  produces: "both other component orders are at most four and the ambient tournament has order at most eleven"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Any trapped quadratic minimum with a three-side has order at most eleven."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Any trapped quadratic minimum with a three-side has order at most eleven"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 6

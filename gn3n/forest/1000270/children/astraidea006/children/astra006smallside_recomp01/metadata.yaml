@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T01:24:31.70224+00:00"
+id: "astra006smallside_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 239
+    detail: "Faithful recomposition of the certified Phi-minimal tiny-side and three-side package. It preserves exclusion of order-one blocks for n>=6 and order-two blocks for n>=9; for a 3-side against an m>=5 side it preserves the barrier-versus-endpoint-absorption dichotomy; and only in the exactly-one-barrier case does it assert the explicit 4-by-(m-1) two-path repartition shadow. It does not incorrectly claim that this repartition is itself a contiguous-block relocation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 239
+    detail: "Faithful recomposition of the certified Phi-minimal tiny-side and three-side package. It preserves exclusion of order-one blocks for n>=6 and order-two blocks for n>=9; for a 3-side against an m>=5 side it preserves the barrier-versus-endpoint-absorption dichotomy; and only in the exactly-one-barrier case does it assert the explicit 4-by-(m-1) two-path repartition shadow. It does not incorrectly claim that this repartition is itself a contiguous-block relocation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+    worker_id: 694
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T01:24:52.601818+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "astraidea006"
+position: 1
+research_interface:
+  consumer: "Astra-006 relocation no-trapping"
+  given: "Phi-minimal trapped Astra-006 contiguous-block relocation state"
+  produces: "minimum side bounds and complete three-side/long-neighbor interface: absorbed state, barrier, or explicit 4-by-(m-1) support cover"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Quadratic-minimal relocation states have no tiny side and a three-side has a complete long-neighbor interface"
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quadratic-minimal relocation states have no tiny side and a three-side has a complete long-neighbor interface"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:25:53.747509+00:00"
+version: 6

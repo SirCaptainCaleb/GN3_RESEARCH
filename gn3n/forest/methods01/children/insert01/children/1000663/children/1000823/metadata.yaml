@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T20:34:36.939115+00:00"
+id: "1000823"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 361
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:47:17.752948+00:00"
+    worker_id: 572
+  last_audit_observation:
+    claim_id: 361
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:47:17.752948+00:00"
+    worker_id: 572
+object_type: "result"
+origin_worker_id: 697
+parent_id: "1000663"
+position: 1
+research_interface:
+  consumer: "all-equal quadratic-minimum transport; pairwise-repartition no-trapping; endpoint transport / defect compression"
+  given: "an equal-size three-cover and an endpoint deletion cover with one isolated old support and one unique-crossing near-merge of the other two"
+  need: "orient repeated one-for-one neutral migrations by a secondary well-founded support potential, or couple the two simultaneous truncation blockades from opposite endpoint probes"
+  produces: "a neutral one-for-one balanced pairwise repartition, or noninsertability of the omitted endpoint into an endpoint truncation of the opposite old path; in the no-two-cover case the isolated old support also fails to absorb the omitted endpoint"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A unique-crossing endpoint near-merge gives a balanced one-for-one migration or truncation noninsertion"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A unique-crossing endpoint near-merge gives a balanced one-for-one migration or truncation noninsertion"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:47:17.752948+00:00"
+version: 5

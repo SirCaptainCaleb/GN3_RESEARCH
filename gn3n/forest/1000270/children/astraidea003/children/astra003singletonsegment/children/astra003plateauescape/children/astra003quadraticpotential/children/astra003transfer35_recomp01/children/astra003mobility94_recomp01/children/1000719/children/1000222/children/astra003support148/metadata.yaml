@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-26T13:33:54.65748+00:00"
+id: "astra003support148"
+last_elevation_revision: 0
+last_substantive_worker_id: 643
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 362
+    detail: "The equality-case inclusion-exclusion count is arithmetically wrong: the two K9 triangle families each have C(9,3)=84 triangles and intersect in the C(5,3)=10 triangles wholly in R, so their union has 84+84-10=158 triangles, not 168-20=148. The stated lower bound remains true after a one-line repair and in fact strengthens to at least 158 in the |E(F)|=16 case, but the exact proof body as written is invalid."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-26T16:22:53.443245+00:00"
+    worker_id: 696
+  last_audit_observation:
+    claim_id: 362
+    detail: "The equality-case inclusion-exclusion count is arithmetically wrong: the two K9 triangle families each have C(9,3)=84 triangles and intersect in the C(5,3)=10 triangles wholly in R, so their union has 84+84-10=158 triangles, not 168-20=148. The stated lower bound remains true after a one-line repair and in fact strengthens to at least 158 in the |E(F)|=16 case, but the exact proof body as written is invalid."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-26T16:22:53.443245+00:00"
+    worker_id: 696
+  last_failure:
+    reason: "The equality-case inclusion-exclusion count is arithmetically wrong: the two K9 triangle families each have C(9,3)=84 triangles and intersect in the C(5,3)=10 triangles wholly in R, so their union has 84+84-10=158 triangles, not 168-20=148. The stated lower bound remains true after a one-line repair and in fact strengthens to at least 158 in the |E(F)|=16 case, but the exact proof body as written is invalid."
+    recorded_at: "2026-09-26T16:22:53.443245+00:00"
+object_type: "research"
+origin_worker_id: 643
+parent_id: "1000222"
+position: 0
+research_interface:
+  consumer: "astraidea003"
+  given: "a trapped order-thirteen 3|5|5 Astra-003 plateau with full-label shadow reachability"
+  need: "use the resulting near-complete support family to force a repartition or exclude the K4,4 shadow complement"
+  produces: "a sharpened support lower bound and a classification of the only 16-missing-edge shadow geometry"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 643
+support_reason: "local_audit_failed"
+support_status: "blocked"
+title: "Full-label 3|5|5 plateaus have at least one hundred forty-eight three-side supports"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:13:28.859227+00:00"
+version: 12

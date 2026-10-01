@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:36:39.525085+00:00"
+id: "1000641"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 415
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:21:44.645158+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 415
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:21:44.645158+00:00"
+    worker_id: 596
+object_type: "research"
+origin_worker_id: 697
+parent_id: "1000674"
+position: 1
+research_interface:
+  consumer: "equitable plateau escape; endpoint transport / defect compression; path-destruction density methods"
+  given: "an arbitrary all-equal spanning three-cover and arbitrary exact two-covers of the two displayed endpoints of one component"
+  need: "consume an inherited path split, preferably by comparing the two split locations or coupling splits across the three equal components"
+  produces: "a scale-free canonical disturbance: inherited-path splitting in a deletion cover or explicit relative-order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every pair of equal-cover endpoint probes forces inherited-path splitting or order disagreement"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every pair of equal-cover endpoint probes forces inherited-path splitting or order disagreement"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:47:17.752948+00:00"
+version: 6

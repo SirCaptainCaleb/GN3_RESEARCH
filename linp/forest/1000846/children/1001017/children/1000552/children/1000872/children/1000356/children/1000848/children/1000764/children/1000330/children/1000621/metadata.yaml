@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T05:31:15.092815+00:00"
+id: "1000621"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/ending-at language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:05:19.002483+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "odd-central G-slot elimination"
+  uses:
+    - "1000330"
+    - "1001054"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000330"
+position: 0
+research_interface:
+  consequence: "The rightmost joint slot G is completely eliminated. Any four-single obstruction is confined to A,...,F, and F is now the unique rightmost possible witness, necessarily a visible high entrance."
+  consumer:
+    - "defect-corrected consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "p=2q-3"
+    - "four all-single assigned charged edges in ranks {q,q+1}"
+  next_need: "Analyze F occupied. The mixed private-hole rule forces B empty. Split whether E is a clean entrance or terminal-only, and seek the analogous bridge ending at the omitted right joint G or at the low-potential entrance F."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-joint slot."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-joint slot"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

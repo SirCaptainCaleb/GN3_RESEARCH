@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-23T19:34:22.670694+00:00"
+id: "1000473"
+last_elevation_revision: null
+last_substantive_worker_id: 183
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "f601c714-302e-4473-9d3b-9ac00dc36d95"
+    detail: "Independent reconstruction of math_version 2. The certified terminal-tail blocker applies to the maximum p-edge path ending at terminal v: if x is absent, e cannot be the last edge, hence u lies in the final q-2 precursor edges. Combining that with prefix appendability yields private witness indices p-q+2..q-1 and joint indices p-q+1..q-1. For q<=Q these give 2Q-p-2 private slots and 2Q-p-1 joint slots, total 4Q-2p-3; endpoint cases give the same count. Linearity makes witness pairs from distinct charged edges disjoint. Therefore |C_Q(v)|<=4Q-2p-3, and i<=|C_{q_i}(v)| gives q_i>=ceil((2p+i+3)/4)."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:43:46.987645+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  last_audit_observation:
+    claim_id: "f601c714-302e-4473-9d3b-9ac00dc36d95"
+    detail: "Independent reconstruction of math_version 2. The certified terminal-tail blocker applies to the maximum p-edge path ending at terminal v: if x is absent, e cannot be the last edge, hence u lies in the final q-2 precursor edges. Combining that with prefix appendability yields private witness indices p-q+2..q-1 and joint indices p-q+1..q-1. For q<=Q these give 2Q-p-2 private slots and 2Q-p-1 joint slots, total 4Q-2p-3; endpoint cases give the same count. Linearity makes witness pairs from distinct charged edges disjoint. Therefore |C_Q(v)|<=4Q-2p-3, and i<=|C_{q_i}(v)| gives q_i>=ceil((2p+i+3)/4)."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:43:46.987645+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  semantic_container_seed:
+    atlas_key: "single_contact_spacing"
+    headline: "Single-contact central-window geometry"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "lemma"
+origin_worker_id: 183
+parent_id: "1000808"
+position: 0
+research_interface:
+  consequence: "Recovers the original sharp central-window count 4Q-2p-3 with a corrected proof; terminal witnesses are localized by the terminal-tail blocker lemma."
+  consumer:
+    - "charged four-edge spacing route"
+    - "potential-oriented local bounds"
+    - "sublinear charged-degree program"
+  given:
+    - "potential-charged ascending edge"
+    - "maximum path ending at the charged terminal"
+    - "half-path endpoint-potential bound"
+    - "terminal-tail blocker lemma"
+  next_need: "Combine the recovered sharp rank window with reciprocal terminal-tail blockers or clean-contact spacing to control near-top-rank multiplicity."
+research_level: "lemma"
+semantic_container_text: "Single-contact spacing branch: common-terminal ascending edges pack into a central rank window."
+simplified_statement: "Terminal-tail blockers recover the sharp central-window packing bound."
+substantive_worker_ids:
+  - 183
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal-tail blockers recover the sharp central-window packing bound"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T20:55:07.81107+00:00"
+version: 7

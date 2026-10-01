@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T14:30:59.155981+00:00"
+id: "1000829"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 88
+    detail: "For each selected edge e_u, J-e_u is bipartite with e_u endpoints on the same side. This forces a bipartite J to be a forest, while any non-bipartite J has every edge on one odd cycle; the n-edge conclusion is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:38:32.3452+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 88
+    detail: "For each selected edge e_u, J-e_u is bipartite with e_u endpoints on the same side. This forces a bipartite J to be a forest, while any non-bipartite J has every edge on one odd cycle; the n-edge conclusion is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:38:32.3452+00:00"
+    worker_id: 616
+  small_order_free: true
+  strengthening: "arbitrary one-cover-per-label choice"
+  viewpoint: "global deletion-support transversal graph"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "astraidea001"
+position: 0
+research_interface:
+  consumer: "Astra 001 sharp-shell route; Astra 004 support graph; deletion-cover compatibility"
+  given: "the sharp half-order shell and an arbitrary choice of one deletion cover for every omitted vertex"
+  need: "exploit the forest leaves or the forced full odd cycle using ordered path data"
+  produces: "the selected Hamiltonian-support graph is either acyclic or exactly one n-edge odd cycle"
+research_level: "lemma"
+semantic_container_text: "Sharp-shell transversal and support-graph route: transversals of deletion covers reduce to forests or a single odd support cycle, and the descendants analyze degree, cycle, corridor, and repeated-label structure that forces disturbance or transport."
+simplified_statement: "Any transversal of sharp-shell deletion covers is a forest or one odd support cycle."
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Any transversal of sharp-shell deletion covers is a forest or one odd support cycle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:33.193322+00:00"
+version: 6

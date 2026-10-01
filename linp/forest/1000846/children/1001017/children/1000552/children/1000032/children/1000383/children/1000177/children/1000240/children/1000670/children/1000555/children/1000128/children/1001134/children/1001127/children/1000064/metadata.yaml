@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 8
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-25T20:54:31.630359+00:00"
+id: "1000064"
+last_elevation_revision: null
+last_substantive_worker_id: 238
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a25dca39-c717-46f7-9f07-88d08e4879e5"
+    detail: "The proof correctly derives |E(B)|<=|s-t| by replacing the host interval with B in a maximum endpoint path. But the theorem's concluding sentence says 'a clean detour ... cannot use fewer edges than the corresponding interval', which is the reverse implication: the proved inequality says it cannot use MORE edges. The title 'cannot shortcut' likewise conflicts with the formal inequality. As written the mathematical statement contains a false English conclusion even though the displayed inequality and proof are correct."
+    math_version: 3
+    outcome: "fail"
+    recorded_at: "2026-09-26T04:04:30.060789+00:00"
+    worker_id: "8e1471fd-1ed8-49c0-8ce8-93efb11680d1"
+  last_audit_observation:
+    claim_id: "a25dca39-c717-46f7-9f07-88d08e4879e5"
+    detail: "The proof correctly derives |E(B)|<=|s-t| by replacing the host interval with B in a maximum endpoint path. But the theorem's concluding sentence says 'a clean detour ... cannot use fewer edges than the corresponding interval', which is the reverse implication: the proved inequality says it cannot use MORE edges. The title 'cannot shortcut' likewise conflicts with the formal inequality. As written the mathematical statement contains a false English conclusion even though the displayed inequality and proof are correct."
+    math_version: 3
+    outcome: "fail"
+    recorded_at: "2026-09-26T04:04:30.060789+00:00"
+    worker_id: "8e1471fd-1ed8-49c0-8ce8-93efb11680d1"
+  last_failure:
+    reason: "The proof correctly derives |E(B)|<=|s-t| by replacing the host interval with B in a maximum endpoint path. But the theorem's concluding sentence says 'a clean detour ... cannot use fewer edges than the corresponding interval', which is the reverse implication: the proved inequality says it cannot use MORE edges. The title 'cannot shortcut' likewise conflicts with the formal inequality. As written the mathematical statement contains a false English conclusion even though the displayed inequality and proof are correct."
+    recorded_at: "2026-09-26T04:04:30.060789+00:00"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1001127"
+position: 0
+research_interface:
+  consequence: "Clean joint-to-joint detours on a maximum endpoint path cannot be shorter than the host interval they replace."
+  consumer:
+    - "joint-gated terminal-return interval packing"
+    - "common-anchor repeated-intersection route"
+    - "two-path braid arguments"
+  fence: "No claim is made when either attachment is a private host vertex or when the detour has additional host contacts."
+  given:
+    - "maximum endpoint host path"
+    - "two internal host joints"
+    - "a clean linear path joining the two joints and otherwise disjoint from the host"
+  next_need: "When applying the lemma to a return segment extracted from another path, verify cleanliness V(B)∩V(A)={z,u} explicitly; a last-return wording alone does not guarantee it."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 224
+  - 227
+  - 238
+support_reason: "The proof correctly derives |E(B)|<=|s-t| by replacing the host interval with B in a maximum endpoint path. But the theorem's concluding sentence says 'a clean detour ... cannot use fewer edges than the corresponding interval', which is the reverse implication: the proved inequality says it cannot use MORE edges. The title 'cannot shortcut' likewise conflicts with the formal inequality. As written the mathematical statement contains a false English conclusion even though the displayed inequality and proof are correct."
+support_status: "blocked"
+title: "A clean joint-to-joint detour cannot shortcut a maximum host path"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-26T04:04:30.060789+00:00"
+version: 9

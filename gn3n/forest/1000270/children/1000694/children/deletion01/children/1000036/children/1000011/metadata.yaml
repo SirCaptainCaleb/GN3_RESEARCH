@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:02:29.00916+00:00"
+id: "1000011"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 361
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:47:17.752948+00:00"
+    worker_id: 572
+  last_audit_observation:
+    claim_id: 361
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:47:17.752948+00:00"
+    worker_id: 572
+object_type: "result"
+origin_worker_id: 697
+parent_id: "1000036"
+position: 1
+research_interface:
+  consumer: "canonical deletion-cover disturbance; endpoint transport / defect compression; all-equal and general deletion-state routes"
+  given: "an end-adjacent deletion comparison attaining the minimum two crossing edges and preserving inherited relative order"
+  need: "consume form A through synchronized good deletions, and forms B1/B2 through the forced opposite-component endpoint barrier created when the deleted vertex is restored"
+  produces: "exactly three size-independent ordered block forms: one fixed-opposite-component replacement and two mixed endpoint-attachment forms"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "End-adjacent equality-two-crossing deletion covers have only three order-neutral block forms."
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "End-adjacent equality-two-crossing deletion covers have only three order-neutral block forms"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:47:17.752948+00:00"
+version: 8

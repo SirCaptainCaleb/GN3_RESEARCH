@@ -1,0 +1,9 @@
+# The grand theorem reduces to no trapping of deletion-generated three-side states
+
+## Statement
+
+Let H be a minimum counterexample. For every exact deletion two-cover H-x=P|Q, with p=|P|>=q=|Q|, the trapped pairwise-repartition component containing the singleton lift P|Q|{x} also contains a spanning three-cover P^-|C|Q^+ whose component orders are {p-1,q-1,3}, where C is supported on x and the two facing endpoints of P,Q. The singleton lift reaches this state in two strict quadratic-potential descents. Consequently the grand two-cover conjecture follows from the order-independent statement that no deletion-generated three-side state of this form can lie in a trapped pairwise-repartition component. For |V(H)|>=14, every such state itself admits a further strict one-move quadratic descent.
+
+## Body
+
+Assume H is a minimum counterexample and fix any exact deletion two-cover H-x=P|Q, with p=|P|>=q=|Q|. Its singleton lift S0=P|Q|{x} belongs to a trapped pairwise-repartition component, because any reachable cover with at most two components would two-cover H. By the certified theorem bc151d5d2a89, S0 reaches in two legal pairwise repartitions a state S2=P^-|C|Q^+ with |C|=3 and component-order multiset {p-1,q-1,3}; both moves strictly decrease Phi, by 2q-4 and 2p-6 respectively. Since reachability stays inside the same connected component, S2 is trapped as well. Therefore it is enough for grand-theorem closure to exclude trapped components containing these deletion-generated three-side states. No five-side branch is required: boundary antisymmetry chooses one of the two possible orders on the same three-vertex support C in all cases. Finally, when n=|V(H)|>=14, p>=ceil((n-1)/2)>=7, hence |P^-|>=6, and threesidedescent6 gives one additional strict legal descent from S2. Thus the theorem-facing no-trapping interface is a single three-side configuration, already equipped with a forced descending exit at large order.

@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:25:48.548917+00:00"
+id: "four_side_neutral_swap_or_lock01"
+last_elevation_revision: 0
+last_substantive_worker_id: 555
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T18:25:48.548917+00:00"
+  audit_resolution:
+    claim_id: 243
+    detail: "The support partition is exact: W'=(W-{w})∪{e} and R∪{w} are disjoint and partition V(W)∪V(P). If R∪{w} is Hamiltonian this is a legal equal-size, equal-Phi pairwise repartition. Otherwise any insertion of w into the inherited path R would itself Hamiltonize R∪{w}, so w is noninsertable."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:32:05.229822+00:00"
+    worker_id: 605
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 243
+    detail: "The support partition is exact: W'=(W-{w})∪{e} and R∪{w} are disjoint and partition V(W)∪V(P). If R∪{w} is Hamiltonian this is a legal equal-size, equal-Phi pairwise repartition. Otherwise any insertion of w into the inherited path R would itself Hamiltonize R∪{w}, so w is noninsertable."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:32:05.229822+00:00"
+    worker_id: 605
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-30T00:07:38.371502+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 555
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "global four-side structured transport; pairwise-repartition no-trapping; endpoint transport"
+  given: "a Hamiltonian four-side obtained by replacing one four-side label with a displayed endpoint of another component"
+  need: "orient repeated neutral swaps by a secondary invariant, or combine simultaneous full-path locks into endpoint absorption/defect compression"
+  produces: "an equal-Phi legal support exchange, or whole-path noninsertability of the displaced label against the endpoint-truncated path"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A distance-one four-side endpoint replacement gives a neutral support swap or a full-path lock."
+substantive_worker_ids:
+  - 555
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A distance-one four-side endpoint replacement gives a neutral support swap or a full-path lock"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T00:07:38.371502+00:00"
+version: 4

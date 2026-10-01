@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-29T01:18:27.313479+00:00"
+id: "endpoint_reversal_fixedpair01"
+last_elevation_revision: 7702
+last_substantive_worker_id: 622
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 364
+    detail: "Added mincex01 for the proper Hamiltonian-support complement consequence."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+  last_audit_observation:
+    claim_id: 364
+    detail: "Added mincex01 for the proper Hamiltonian-support complement consequence."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "The minimum-counterexample consequence uses the proper-Hamiltonian-support complement principle from mincex01."
+    recorded_at: "2026-09-29T05:50:10.712692+00:00"
+    to_id: "mincex01"
+    worker_id: 630
+object_type: "research"
+origin_worker_id: 718
+parent_id: "pathcalc01"
+position: 50
+research_interface:
+  consumer: "fixed-pair Hamiltonian-window transport; overlap amplification; endpoint-reversal consumption"
+  given: "a fixed ordered pair b,a and a set Y such that (b,y,a) is tight for every y in Y"
+  produces: "a complete Hamiltonian four-set graph on all pairs y,z in Y over the fixed pair {a,b}; in a minimum counterexample each proper four-set has non-Hamiltonian path-cover-two complement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A common oriented fixed pair makes every two outside labels a Hamiltonian four-set"
+substantive_worker_ids:
+  - 718
+  - 622
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A common oriented fixed pair makes every two outside labels a Hamiltonian four-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:59:39.459566+00:00"
+version: 8

@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:52:20.594015+00:00"
+id: "1000672"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+object_type: "result"
+origin_worker_id: 697
+parent_id: "coversurg01"
+position: 1
+research_interface:
+  consumer: "dual crossing counts; reciprocal-crossing equality normalization"
+  given: "an order-preserving comparison cover containing a same-inherited-class edge that skips at least one displayed vertex"
+  need: "use to eliminate same-class shortcuts when reciprocal crossing count is one"
+  produces: "at least two inherited ordinary edges crossing the comparison-cover support partition"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An order-preserving inherited-class shortcut forces two reciprocal support crossings"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An order-preserving inherited-class shortcut forces two reciprocal support crossings"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 5

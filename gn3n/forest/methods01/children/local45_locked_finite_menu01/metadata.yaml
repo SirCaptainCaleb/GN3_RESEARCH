@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T20:33:12.635251+00:00"
+id: "local45_locked_finite_menu01"
+last_elevation_revision: null
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "The durable statement uses the ambiguous technical phrase 'support exchange'. State the actual cyclic vertex transfer / existence of the resulting spanning three-cover explicitly, matching the repaired premise."
+      recorded_at: "2026-10-01T00:04:13.720635+00:00"
+      worker_id: 737
+  audit_request_reason: "Audit with a required wording correction inherited from local45_exchange_or_triplelock01: alternative (1) should assert only existence of an equal-size cyclically exchanged spanning cover, not reachability in the original pairwise-repartition component. The locked-label alternatives (2)-(4) are unchanged."
+  audit_request_recorded_at: "2026-09-29T20:37:50.784861+00:00"
+  audit_resolution:
+    claim_id: 738
+    detail: "Independent check: local45_exchange_or_triplelock01 supplies either the equal-Phi cyclically exchanged cover or three distinct labels noninsertable into P. Applying insert01 and the two-label spacing trichotomy to those three labels gives exactly the first-type, repeated-gap, or separated-gap outcomes. No same-component reachability is used."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 738
+    detail: "Independent check: local45_exchange_or_triplelock01 supplies either the equal-Phi cyclically exchanged cover or three distinct labels noninsertable into P. Applying insert01 and the two-label spacing trichotomy to those three labels gives exactly the first-type, repeated-gap, or separated-gap outcomes. No same-component reachability is used."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Vocabulary and interface repair only: preserve hypotheses and conclusions; remove certification adjectives, replace ambiguous kernel/plateau/shell wording, normalize Hamiltonian-deletion terminology, and remove the unsupported same-component assertion from the exchange interface."
+    recorded_at: "2026-09-29T20:58:16.349829+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 585
+object_type: "research"
+origin_worker_id: 665
+parent_id: "methods01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A quadratic-minimal 4|5|m cover has a cyclic exchange or one of three insertion-obstruction outcomes."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A quadratic-minimal 4|5|m cover has a cyclic exchange or one of three insertion-obstruction outcomes"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T00:04:13.720635+00:00"
+version: 14

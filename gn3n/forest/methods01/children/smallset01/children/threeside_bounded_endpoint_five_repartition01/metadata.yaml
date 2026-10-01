@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T22:48:48.45512+00:00"
+id: "threeside_bounded_endpoint_five_repartition01"
+last_elevation_revision: 9533
+last_substantive_worker_id: 592
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "threeside_bounded_endpoint_five_repartition01"
+  audit_request_reason: "Check current math version 2: four-of-six guarantees one of three supports; explicit complement and at most two legal pairwise moves; first move neutral or -2, second 40-8m or30-6m. Every move nonincreasing for m>=5 and overall strict for m>=6."
+  audit_request_recorded_at: "2026-09-29T22:50:18.795259+00:00"
+  audit_resolution:
+    claim_id: 386
+    detail: "Independent check passed. Four-of-six on Z union {q0,q1,q2,q3} forces one of the three displayed five-supports Hamiltonian. The complementary short path and inherited suffix are explicit in each branch. The two-step reachability is legal, with stepwise nonincrease and total Delta Phi 40-8m or 28-6m as stated; both are strict for m>=6. The symmetric endpoint statement needs no path reversal."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 386
+    detail: "Independent check passed. Four-of-six on Z union {q0,q1,q2,q3} forces one of the three displayed five-supports Hamiltonian. The complementary short path and inherited suffix are explicit in each branch. The two-step reachability is legal, with stepwise nonincrease and total Delta Phi 40-8m or 28-6m as stated; both are strict for m>=6. The symmetric endpoint statement needs no path reversal."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+object_type: "toolkit"
+origin_worker_id: 592
+parent_id: "smallset01"
+position: 0
+research_interface:
+  consumer: "three-side deletion transport; five-side engines; pairwise-repartition minima; correction of consecutive alternating-window route"
+  gap: "two-cover closure and preservation of a fixed omitted label are not asserted"
+  given: "a spanning three-cover of orders 3,1,m and any prescribed pair in its four-vertex short-side union"
+  on_demand_ids:
+    - "threeside01"
+    - "common_endpoint_barriers_fivewindow_counterexample01"
+    - "threeside_consecutive_fivewindows01"
+  produces: "within two nonincreasing pairwise repartitions, a positioned Hamiltonian five-support with an explicit inherited complement two-cover; strict Phi descent for m>=6"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions."
+substantive_worker_ids:
+  - 592
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T23:58:16.939093+00:00"
+version: 7

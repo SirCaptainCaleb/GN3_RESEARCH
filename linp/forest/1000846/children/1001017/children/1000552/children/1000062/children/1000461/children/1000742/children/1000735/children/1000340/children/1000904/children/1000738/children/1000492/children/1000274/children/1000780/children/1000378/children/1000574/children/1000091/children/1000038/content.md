@@ -1,0 +1,9 @@
+# Every flat gap-one top edge manufactures a lens between maximum endpoint paths
+
+## Statement
+
+Let e={x,u,v} be an ascending nonspecial edge of rank p-1 in a finite linear 3-graph, with phi(u)=phi(v)=p and unique entrance x, so phi(x)=p-2. Let R be any maximum (p-2)-edge endpoint path ending at x for which R,e is a longest (p-1)-edge path ending in e, and let P_u,P_v be arbitrary maximum p-edge paths ending at u,v. Then at least one of the three path pairs (R,P_u), (R,P_v), (P_u,P_v) has at least two common vertices. More precisely: if x lies on P_v then R and P_v have a second common vertex; if x lies on P_u then R and P_u have a second common vertex; and if x lies on neither terminal path, then u lies on P_v and v lies on P_u, so P_u and P_v share both u and v.
+
+## Body
+
+Apply the certified terminal tail-blocker lemma to e at terminal v, using the last edge of P_v as the competing snake-incoming edge. Since rank(e)=p-1 and the last edge of P_v has rank at least p, e must meet the precursor of P_v outside v. Thus P_v contains x or u. Symmetrically P_u contains x or v. Suppose x lies on P_v. The entrance rail R is a maximum endpoint path at x because phi(x)=p-2, while P_v is a maximum endpoint path at v. They share x. If x were their unique common vertex, the universal unique-intersection theorem 5854d853a44b would force x to be a same-index internal joint on R, impossible because x is the designated endpoint of R. Hence R and P_v share a second vertex. The same argument applies if x lies on P_u. Finally, if x lies on neither P_v nor P_u, the blocker alternatives force u in V(P_v) and v in V(P_u). Since P_v ends at v and P_u ends at u, the two terminal paths share both u and v. In every case some pair of maximum endpoint paths has a genuine two-vertex overlap and therefore contains a lens after passing to consecutive common vertices.

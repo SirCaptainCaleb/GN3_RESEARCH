@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-25T20:28:27.996417+00:00"
+id: "1000127"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "Independent check against the base construction 74d30147c051: adding one edge to every private branch raises the global rooted-path ceiling and all u_i ranks by exactly one while leaving source and e_i ranks unchanged. The claimed strict terminal-rank inequalities and spacing violation follow. Legacy 'terminal-potential' wording is editorial only."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "Independent check against the base construction 74d30147c051: adding one edge to every private branch raises the global rooted-path ceiling and all u_i ranks by exactly one while leaving source and e_i ranks unchanged. The claimed strict terminal-rank inequalities and spacing violation follow. Legacy 'terminal-potential' wording is editorial only."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "research"
+origin_worker_id: 224
+parent_id: "1000522"
+position: 0
+research_interface:
+  consequence: "Strict terminal-potential rise, even together with source-cleanliness and terminal-singleness at both terminals, does not restore four-edge deficit-doubling. The selected higher-terminal common-anchor certificate is genuinely essential in class H."
+  consumer:
+    - "uphill-certificate branch"
+    - "strict-rise spacing program"
+    - "1000688"
+  given:
+    - "74d30147c051 equal-terminal clean U11 spacing counterexample"
+  next_need: "Analyze class H using the certificate geometry at the higher terminal; do not reduce it to a generic strict-rise local bound or strict-rise four-edge spacing."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For every R≥43 there are four ascending nonspecial edges of ranks (R+1,R+1,R+7,R+7), common-terminal rank R+9, and opposite-terminal ranks R+10 satisfying the stated clean terminal-incidence hypotheses yet violating four-edge spacing."
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Strict-rise clean U11 edges still violate four-edge spacing"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 4

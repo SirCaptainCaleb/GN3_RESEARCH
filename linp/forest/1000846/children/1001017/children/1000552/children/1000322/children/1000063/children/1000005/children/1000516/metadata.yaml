@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-21T20:15:37.515197+00:00"
+id: "1000516"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "conjecture"
+metadata:
+  route: "dense-core maximum-rank reduction"
+  source_kind: "new_project_conjecture"
+object_type: "conjecture"
+origin_worker_id: 262
+parent_id: "1000005"
+position: 40
+research_interface:
+  consumer: "dense-core all-special conjecture"
+  equality_note: "The counterexample has minimum degree 4, exactly the equality threshold 2(L+1)/3, so the strict dense-core conjecture is not refuted."
+  lesson: "Local degrees on a maximum-rank nonspecial edge are insufficient; any surviving dense-core proof must use global minimum degree away from the edge or global rotation/propagation structure."
+  refuted_by: "1000829"
+  role: "refuted_conjecture"
+research_level: "theorem"
+semantic_container_text: "Maximum-rank nonspecial-degree obstruction branch: record the failed degree conjecture and the replacement structural information extracted from its counterexamples."
+simplified_statement: "The conjecture that every maximum-rank nonspecial edge contains a vertex of degree at most ⌊2(L+1)/3⌋ is false."
+substantive_worker_ids:
+  - 262
+  - 225
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Refuted: maximum-rank nonspecial edge degree conjecture"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 5

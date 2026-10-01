@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T04:22:55.784354+00:00"
+id: "compatincompatfamily12"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 348
+    detail: "Maximum degree four implies greedy 5-colorability, hence an independent compatibility set of size at least ceil(m/5). For m>=26 six pairwise-incompatible covers exist; the support-vs-order incompatibility coloring is exhaustive and R(3,3)=6 yields a monochromatic triple."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:28:40.49125+00:00"
+    worker_id: 578
+  last_audit_observation:
+    claim_id: 348
+    detail: "Maximum degree four implies greedy 5-colorability, hence an independent compatibility set of size at least ceil(m/5). For m>=26 six pairwise-incompatible covers exist; the support-vs-order incompatibility coloring is exhaustive and R(3,3)=6 yields a monochromatic triple."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:28:40.49125+00:00"
+    worker_id: 578
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compatuniformall11"
+position: 0
+research_interface:
+  consumer: "deletion-cover incompatibility forcing; endpoint-transport / defect compression"
+  given: "the maximum-degree-four compatibility branch"
+  need: "analyze the two monochromatic triple types, especially the support-compatible/order-incompatible triple"
+  produces: "a pairwise-incompatible family of size ceil(m/5); for m>=26 a triple with uniform incompatibility type"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Low compatibility degree yields large pairwise-incompatible deletion families"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Low compatibility degree yields large pairwise-incompatible deletion families"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 8

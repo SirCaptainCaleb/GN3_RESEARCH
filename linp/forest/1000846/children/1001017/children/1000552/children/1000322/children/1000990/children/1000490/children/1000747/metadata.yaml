@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T04:24:33.606953+00:00"
+id: "1000747"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "Graph construction, proper coloring, degree identity, and forward strong-rainbow lifting all reconstruct correctly. The current version already contains the audit-safe removal of an unused ambiguous converse."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "Graph construction, proper coloring, degree identity, and forward strong-rainbow lifting all reconstruct correctly. The current version already contains the audit-safe removal of an unused ambiguous converse."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_repair:
+    reason: "Editorial repair: remove an unnecessary ambiguous converse; theorem claim and proof are unchanged."
+    recorded_at: "2026-09-25T01:32:42.753356+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "balanced self-colored graph reformulation"
+  uses:
+    - "1000490"
+    - "1001052"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000490"
+position: 0
+research_interface:
+  consequence: "Transforms the equality obstruction into an almost-regular proper self-coloring with d-edge matching color classes; charge becomes graph degree deficit from 2d."
+  consumer:
+    - "grand equality induction"
+    - "strong-rainbow rotation route"
+  given:
+    - "balanced incidence orientation"
+  next_need: "Prove a strong-rainbow path theorem exploiting all three extra properties simultaneously: each color has exactly d edges, color x avoids vertex x, and minimum degree is near 2d in the stalled branch. Generic rainbow bounds do not use these features."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Balanced equality orientation is an almost-regular self-colored matching graph."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Balanced equality orientation is an almost-regular self-colored matching graph"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

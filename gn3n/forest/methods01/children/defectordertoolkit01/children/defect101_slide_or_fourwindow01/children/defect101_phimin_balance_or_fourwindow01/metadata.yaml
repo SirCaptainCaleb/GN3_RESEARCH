@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:21:07.477514+00:00"
+id: "defect101_phimin_balance_or_fourwindow01"
+last_elevation_revision: 9925
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: verify that a successful balancing 101 slide is a legal same-component repartition changing (p,q) to (p-1,q+1), hence strict Phi descent whenever p>=q+2; symmetric on the right."
+  audit_request_recorded_at: "2026-09-30T13:21:07.477514+00:00"
+  audit_resolution:
+    claim_id: 281
+    detail: "Independent reconstruction passed. A successful left 101 slide preserves the omitted label x and changes the displayed deletion-cover pair from (p,q) to (p-1,q+1); therefore the spanning three-cover with singleton x moves by one legal pairwise repartition to the shifted cover in the same connected component. Its Phi change is 2(q-p+1)<0 for p>=q+2, contradicting componentwise Phi-minimality. Hence the left slide must block and expose the certified four-window; the right case is symmetric. If neither blocks, |p-q|<=1. Local proof is sound; support remains held on the pending 101 transport premises."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:42:54.064911+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 281
+    detail: "Independent reconstruction passed. A successful left 101 slide preserves the omitted label x and changes the displayed deletion-cover pair from (p,q) to (p-1,q+1); therefore the spanning three-cover with singleton x moves by one legal pairwise repartition to the shifted cover in the same connected component. Its Phi change is 2(q-p+1)<0 for p>=q+2, contradicting componentwise Phi-minimality. Hence the left slide must block and expose the certified four-window; the right case is symmetric. If neither blocks, |p-q|<=1. Local proof is sound; support remains held on the pending 101 transport premises."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:42:54.064911+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-01T05:29:40.003289+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "defect101_slide_or_fourwindow01"
+position: 0
+research_interface:
+  consumer: "defect-span compression; cyclic defect transport; trapped-component no-trapping"
+  given: "a componentwise Phi-minimal spanning three-cover whose deletion ordering has the exact linear 101 defect pattern"
+  need: "consume the nearly-equal 101 plateau, or use the positioned inherited-complement four-window directly"
+  produces: "near-equality of the two deletion-side orders, or a positioned Hamiltonian four-window whose complement retains the inherited two-path structure"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "At a trapped quadratic minimum a linear one-zero-one defect state is balanced or exposes a positioned four-window"
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At a trapped quadratic minimum a linear one-zero-one defect state is balanced or exposes a positioned four-window"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 8

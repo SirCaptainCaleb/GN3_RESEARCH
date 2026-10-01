@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 3
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T19:18:42.072385+00:00"
+id: "1000606"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Replaced prohibited 'physical last vertex' wording with standard 'last vertex' wording; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:49:20.062772+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Replaced prohibited 'physical last vertex' wording with standard 'last vertex' wording; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:49:20.062772+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:48:00.708145+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 242
+parent_id: "1000608"
+position: 0
+research_interface:
+  consequence: "A source color class is not merely a matching: every edge consumes two distinct vertices above the source potential and outside the same maximum source path."
+  consumer:
+    - "U_11 color-class control"
+    - "source/rainbow coupling"
+    - "post-43/48 potential-superlevel packing"
+  given:
+    - "chosen maximum endpoint path P_x"
+    - "source-clean ascending edges with common entrance x"
+  next_need: "Sum or weight the color-class inequalities without losing a factor n. The useful missing input would control how many clean-source maximum paths can simultaneously omit the same strict-superlevel vertices, or couple these omitted terminal packets to rotation/lens states."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A clean common entrance consumes two distinct strict-superlevel vertices per edge."
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A clean common entrance consumes two distinct strict-superlevel vertices per edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

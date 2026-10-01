@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T05:16:11.448656+00:00"
+id: "1000213"
+last_elevation_revision: 7998
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 75
+    detail: "Replaced nonstandard bridge terminology with explicit Hamiltonian four-set language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+  last_audit_observation:
+    claim_id: 75
+    detail: "Replaced nonstandard bridge terminology with explicit Hamiltonian four-set language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology repair: replace nonstandard bridge language with explicit Hamiltonian four-set language; mathematical claim and proof are unchanged."
+    recorded_at: "2026-09-29T05:26:07.532656+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 683
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T12:29:46.669798+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 586
+parent_id: "1000153"
+position: 1
+research_interface:
+  consumer: "direct endpoint splice; opposite-bridge shell synchronization; defect compression"
+  given: "a deletion two-cover with both canonical central and outer five-windows excluded"
+  need: "use the shared x-crosses together with the reversed endpoint bridges to construct a two-cover or defect-span-two ordering"
+  produces: "two opposite Hamiltonian four-bridges plus the two synchronized cross triples (p_m,x,q_0) and (q_s,x,p_0) through the same omitted label"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The no-five-window deletion residue has two opposite Hamiltonian four-sets and two synchronized cross triples"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The no-five-window deletion residue has two opposite Hamiltonian four-sets and two synchronized cross triples"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T12:29:46.669798+00:00"
+version: 8

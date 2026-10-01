@@ -1,0 +1,38 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T21:33:34.793329+00:00"
+id: "1000699"
+last_elevation_revision: 0
+last_substantive_worker_id: 596
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 596
+parent_id: "1000799"
+position: 0
+research_interface:
+  consumer: "deletion-cover consistency cocycle; endpoint transport"
+  given: "the certified adjacent-gap concentration, synchronized reverse-cross pair, and two-core transposition normal form"
+  need: "consume the four z-alignment types into a two-cover, endpoint absorption, or defect-span compression"
+  produces: "a four-case current frontier indexed only by the third label z"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "The cocycle frontier is the two-core transposition residue"
+substantive_worker_ids:
+  - 596
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "The cocycle frontier is the two-core transposition residue"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T22:32:04.671533+00:00"
+version: 3

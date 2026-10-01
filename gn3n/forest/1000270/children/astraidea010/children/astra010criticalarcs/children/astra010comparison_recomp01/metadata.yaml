@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T00:54:06.435178+00:00"
+id: "astra010comparison_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 318
+    detail: "Recomposition faithfully preserves all three certified source results: the unique bad flip-cube corner for every nonempty subset of backward comparisons, the gap-at-least-two restriction on each backward arc, and the otherwise-forward monotone cycle with the chordless star/triangle/ordinary-cycle classification when |B|=1. Hypotheses, subset quantifiers, new-triple usage condition, and exceptional one-backward geometry are retained without weakening."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T00:54:51.490954+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 318
+    detail: "Recomposition faithfully preserves all three certified source results: the unique bad flip-cube corner for every nonempty subset of backward comparisons, the gap-at-least-two restriction on each backward arc, and the otherwise-forward monotone cycle with the chordless star/triangle/ordinary-cycle classification when |B|=1. Hypotheses, subset quantifiers, new-triple usage condition, and exceptional one-backward geometry are retained without weakening."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T00:54:51.490954+00:00"
+    worker_id: 694
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T00:54:14.803861+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "astra010criticalarcs"
+position: 0
+research_interface:
+  consumer: "Astra idea 010 edge-order reduction"
+  given: "minimum-backward comparison normalization of a path-cover-three witness"
+  produces: "unique bad corner of the comparison-flip cube, spacing of backward arcs, and otherwise-forward monotone cycles"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Minimum-backward comparison witnesses form a unique bad flip-cube corner with monotone cycles."
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum-backward comparison witnesses form a unique bad flip-cube corner with monotone cycles"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:54:51.490954+00:00"
+version: 6

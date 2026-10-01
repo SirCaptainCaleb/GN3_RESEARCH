@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-23T23:21:47.493696+00:00"
+id: "1000754"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    detail: "Replaced prohibited physical-endpoint wording with standard ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    detail: "Replaced prohibited physical-endpoint wording with standard ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard ending-at language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:09:24.851761+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1001034"
+position: 0
+research_interface:
+  consequence: "Humanizes the entire one-private-contact subfamily of the 368 candidate fifth edges and identifies four explicit failure mechanisms."
+  consumer:
+    - "bce2e76b5733 computational extension search"
+    - "five-edge deficit-doubling route"
+  given:
+    - "e56c6d0fce1a 11,11,17,17 configuration"
+    - "one private precursor contact b_j and one new vertex"
+  next_need: "Handle candidates whose old precursor contact is a joint a_j, or which use two old precursor vertices."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In the 11,11,17,17 base configuration, no fifth edge with one private precursor contact b_j and one new vertex can keep all five common-terminal edges ascending and nonspecial."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Human classification of one-private-contact fifth edges around the 11,11,17,17 gadget"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 6

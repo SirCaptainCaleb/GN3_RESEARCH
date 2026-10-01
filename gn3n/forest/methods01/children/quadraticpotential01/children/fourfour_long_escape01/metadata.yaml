@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:29:13.585399+00:00"
+id: "fourfour_long_escape01"
+last_elevation_revision: 10100
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: verify the two-step escape. Any good cross singleton extension gives a +2 4|4->3|5 move followed by threesidedescent6 whose >=4 drop ends below the original Phi; hence all cross singleton extensions are bad. Then c82e8c6d3016 gives a mixed 5|3 repartition anyway, and the same three-side descent yields a strict net drop. Check both final Phi differences 10-2m and 22-4m for m>=6."
+  audit_request_recorded_at: "2026-09-30T13:29:55.14464+00:00"
+  audit_resolution:
+    claim_id: 746
+    detail: "Reconstructed the two-stage descent. The neutral 4|4 -> 3|5 move costs +2, and threesidedescent6 then yields final changes 10-2m or 22-4m relative to the original, both negative for m>=6; the all-bad branch supplies a certified 5|3 repartition and the same calculation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:22:43.099331+00:00"
+    worker_id: 745
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 746
+    detail: "Reconstructed the two-stage descent. The neutral 4|4 -> 3|5 move costs +2, and threesidedescent6 then yields final changes 10-2m or 22-4m relative to the original, both negative for m>=6; the all-bad branch supplies a certified 5|3 repartition and the same calculation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:22:43.099331+00:00"
+    worker_id: 745
+object_type: "research"
+origin_worker_id: 665
+parent_id: "quadraticpotential01"
+position: 4
+research_interface:
+  consumer: "canonical central-bridge no-trapping; post-descent plateau classification; quadratic-potential termination"
+  given: "any spanning three-cover with two Hamiltonian four-sides and a third path of order at least six"
+  implication: "the canonical bridge route cannot become trapped on a 4|4|m plateau once the remaining path has order at least six; the previously studied all-eight-lock and dual-six-kernel states are not genuine local minima"
+  produces: "an explicit path of two legal pairwise repartitions ending at strictly smaller Phi; hence complete exclusion of 4|4|m local minima for m>=6"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Two four-sides beside a path of order at least six cannot be locally quadratic-minimal"
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two four-sides beside a path of order at least six cannot be locally quadratic-minimal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:22:43.099331+00:00"
+version: 7

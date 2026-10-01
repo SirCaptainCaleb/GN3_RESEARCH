@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T01:24:25.388438+00:00"
+id: "astra006gapone_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 287
+    detail: "Recomposition-equivalence check: Phi-maximal one-sided slide behavior is preserved; applying it in both block orders gives the two endpoint transfers, and for p=q+1 their concatenation yields the stated +4 Phi contradiction. The equal-size/order-two corollary also matches the certified interface source."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:47:38.798175+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 287
+    detail: "Recomposition-equivalence check: Phi-maximal one-sided slide behavior is preserved; applying it in both block orders gives the two endpoint transfers, and for p=q+1 their concatenation yields the stated +4 Phi contradiction. The equal-size/order-two corollary also matches the certified interface source."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:47:38.798175+00:00"
+    worker_id: 679
+  recomposition_audit:
+    classified_at: "2026-09-28T01:24:25.388438+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  route_key: "astra_relocation_quadratic"
+object_type: "research"
+origin_worker_id: 694
+parent_id: "astraidea006"
+position: 0
+research_interface:
+  given: "a Phi-maximal trapped contiguous-block relocation state"
+  need: "combine forced reversed interfaces across the three blocks into a merge or nonlocal relocation"
+  produces: "gap-one pairs have a double-failure orientation; unequal pairs otherwise admit both endpoint transfers; at most one block has order two"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Quadratic-maximal relocation states force reversed interfaces on every size-gap-one pair."
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quadratic-maximal relocation states force reversed interfaces on every size-gap-one pair"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:47:38.798175+00:00"
+version: 6

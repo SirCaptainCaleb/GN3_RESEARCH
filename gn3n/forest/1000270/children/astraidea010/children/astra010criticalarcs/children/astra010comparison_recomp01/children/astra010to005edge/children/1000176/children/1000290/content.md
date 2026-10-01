@@ -1,0 +1,9 @@
+# Compatible one-backward deletion states either glue or force a gap-neighbor reverse cross triple
+
+## Statement
+
+In the minimum-order one-backward setup of 37330c37e123, choose exact two-covers F_a,F_b,F_c of H-a,H-b,H-c and suppose they are pairwise compatible. Let gapgeom01 give common paths P=L,R and Q and the precedence tournament on {a,b,c}. Then either the corrected edge-orderable tournament G has the spanning two-cover (L,a,b,c,R)|Q, or the precedence order is b->c->a and (b,ell,a) is tight, or the precedence order is c->a->b and (c,r,b) is tight, where ell is the last vertex of L and r the first vertex of R. In the two exceptional cases the common gap is internal with |L|,|R|>=2.
+
+## Body
+
+Apply the compatible-triangle common-gap theorem. If a->b->c, the flipped triple (a,b,c) is tight in G and all other consecutive triples of (L,a,b,c,R) are inherited, so the canonical two-cover exists. The reversal (c,b,a) is tight in H, so c->b->a cannot be a precedence Hamilton order. Hence any nonglued precedence tournament is transitive with b a source or sink. Direct edge-order comparison eliminates the two additional transitive orders b->a->c and a->c->b: in each, the inherited comparisons at the two sides of the common gap together with the flipped comparison ab<bc make (L,a,b,c,R) increasing in G. Thus only b->c->a and c->a->b remain. In the first residue, the inherited comparisons give ac<bc<cr. If ell a<ab, then ell a<ab<bc<cr and the canonical path glues; otherwise ab<ell a, while F_c gives ell b<ab, so ell b<ab<ell a and therefore (b,ell,a) is tight. In the mirror residue c->a->b, the inherited comparisons give ell a<ab and ab<bc as well as ab<ac. If bc<cr, the canonical path glues; otherwise cr<bc<br from F_a, hence (c,r,b) is tight. The transitive common-gap theorem gives |L|,|R|>=2, so ell and r exist. This is exactly the union of the three certified sequential steps 418959697ffe, 396afca9cc55, and 2ff9ddb8ab93.

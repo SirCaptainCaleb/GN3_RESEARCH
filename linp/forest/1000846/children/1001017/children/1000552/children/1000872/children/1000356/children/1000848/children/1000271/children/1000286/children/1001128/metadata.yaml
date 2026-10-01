@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T06:04:52.300206+00:00"
+id: "1001128"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "mixed-rank source-rail theta by incidence counting"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000286"
+position: 0
+research_interface:
+  consequence: "Every four-edge violation, including mixed q/q+1 ranks, contains a pair of clean source rails with a genuine two-vertex overlap, and both overlap vertices may be taken from the offending edges themselves."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "complete source-rail transversality"
+  next_need: "Uncross a two-vertex-overlap pair of rails of lengths q-1 or q. If the common distinguished vertices appear in the same order, exchange the intervening segments and use maximality of the two source potentials; if their order reverses, the two rails form a labeled linear cycle. The source/terminal labels of the overlap vertices should rule out the equal-segment residue."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Four 0-1-1 source rails force a two-vertex distinguished overlap."
+substantive_worker_ids:
+  - 185
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four 0-1-1 source rails force a two-vertex distinguished overlap"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

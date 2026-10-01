@@ -1,0 +1,33 @@
+{
+  "note": "Help is descriptive documentation only; it does not select a research route. Use rpc_signatures(name) for exact signatures.",
+  "topics": [
+    "api_modification",
+    "atlas",
+    "audit",
+    "batch",
+    "coordination",
+    "lifecycle",
+    "maintenance",
+    "navigation",
+    "observability",
+    "presence",
+    "read",
+    "reasoning",
+    "requests",
+    "role_override",
+    "rpc",
+    "rpc_audit",
+    "rpc_authoring",
+    "rpc_coordination",
+    "rpc_health",
+    "rpc_lifecycle",
+    "rpc_maintenance",
+    "rpc_navigation",
+    "rpc_staging",
+    "simplified_subtree",
+    "staging",
+    "startup",
+    "vocabulary",
+    "writing"
+  ]
+}

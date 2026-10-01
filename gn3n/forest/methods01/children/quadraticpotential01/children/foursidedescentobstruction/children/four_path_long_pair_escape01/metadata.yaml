@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T19:07:23.439641+00:00"
+id: "four_path_long_pair_escape01"
+last_elevation_revision: 8786
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T19:07:43.474285+00:00"
+  audit_resolution:
+    claim_id: 436
+    detail: "Reconstruction passes; potential changes are 10-2m and 24-4m, with neutrality only at m=6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:09:53.568115+00:00"
+    worker_id: 637
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 436
+    detail: "Reconstruction passes; potential changes are 10-2m and 24-4m, with neutrality only at m=6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:09:53.568115+00:00"
+    worker_id: 637
+object_type: "toolkit"
+origin_worker_id: 708
+parent_id: "foursidedescentobstruction"
+position: 1
+research_interface:
+  consumer: "quadratic descent; four-side transport; local pairwise-repartition analysis"
+  given: "any vertex-disjoint tight four-path and tight path of order at least six"
+  produces: "strict pairwise Phi descent, localized six-set order disagreement, or the unique neutral 4|6 to 6|4 interior migration"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A four-path beside a path of order at least six descends, disagrees, or makes the unique neutral migration."
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A four-path beside a path of order at least six descends, disagrees, or makes the unique neutral migration"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:53:32.625468+00:00"
+version: 7

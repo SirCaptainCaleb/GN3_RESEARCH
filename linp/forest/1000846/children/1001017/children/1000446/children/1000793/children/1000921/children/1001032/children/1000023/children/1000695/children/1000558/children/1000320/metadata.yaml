@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T03:14:03.971344+00:00"
+id: "1000320"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "680cadc2-2d01-4c22-9a7d-8fa7e74f74f2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:45:44.151093+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "680cadc2-2d01-4c22-9a7d-8fa7e74f74f2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:45:44.151093+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000558"
+position: 0
+research_interface:
+  consequence: "The density+7/6 equality case is forced entirely into Type A: every vertex has zero total-snake slack, nonspecial terminal count 2phi-5, and exactly four special incidences."
+  consumer:
+    - "equality-layer potential improvement"
+    - "special-edge 4-regular skeleton"
+  given:
+    - "7cae1cb001ac two equality types"
+    - "3a0d8866aba9 double-blocker compensation"
+    - "672725540541 saturation-double-blocker lemma"
+    - "0e550ff0eadd cumulative terminal bound"
+  next_need: "Analyze Type A. Zero snake slack implies no chosen-path double blockers. Relative to a nonspecial-last maximum path, the four special edges occupy exactly two far-end free vertices plus two tail holes; relative to a special-last maximum path, the other three special edges occupy two far endpoints plus one tail hole. At least three of the four special edges through each vertex have full rank phi(v). Use the at-most-one deficient special incidence per vertex globally."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The one-special local equality type is impossible."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The one-special local equality type is impossible"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

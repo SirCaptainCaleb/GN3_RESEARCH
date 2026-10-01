@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T21:40:33.711092+00:00"
+id: "1000039"
+last_elevation_revision: 0
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 255
+    detail: "Reconstructed the residual-cross collapse after excluding the distinguished witness. The tournament on the at-least-three remaining exterior labels yields w->y->z; together with the universal cross triple this creates a tight four-path whose internal edge is reversed, returning to 53005a4e0315."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 255
+    detail: "Reconstructed the residual-cross collapse after excluding the distinguished witness. The tournament on the at-least-three remaining exterior labels yields w->y->z; together with the universal cross triple this creates a tight four-path whose internal edge is reversed, returning to 53005a4e0315."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-29T17:44:33.034029+00:00"
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Repair downstream use of adecd58bef3d after its maximality correction: the tournament collapse is run on the outside labels other than the distinguished reversal witness. At least three such labels remain, which is exactly sufficient."
+    recorded_at: "2026-09-29T05:46:27.403816+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 664
+object_type: "research"
+origin_worker_id: 586
+parent_id: "endpoint_reversal_obstruction_recomp01"
+position: 1
+research_interface:
+  consumer: "endpoint-reversal closure; endpoint transport / defect compression"
+  given: "a maximal tight path carrying an unresolved endpoint reversal and its distinguished exterior witness"
+  produces: "a bounded four-vertex reversal configuration or a positioned Hamiltonian four/five support; the remaining cross-only family on the other outside labels is impossible"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The remaining cross branch of a maximal endpoint reversal collapses to the four-vertex frontier."
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The remaining cross branch of a maximal endpoint reversal collapses to the four-vertex frontier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:44:33.034029+00:00"
+version: 10

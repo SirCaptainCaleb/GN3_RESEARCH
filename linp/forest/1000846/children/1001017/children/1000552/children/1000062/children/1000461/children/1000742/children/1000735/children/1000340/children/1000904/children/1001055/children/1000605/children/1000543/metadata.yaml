@@ -1,0 +1,74 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-24T13:55:42.72008+00:00"
+id: "1000543"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Repaired the switching-count bookkeeping by discarding both non-T cross-period doubles and T-edges still double on the maximum path; added exact dependencies on 88db9b4e8337 and repaired f6c9ded0ae63."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:43.842586+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Recorded exact dependencies to the periodic near-equality theorem and repaired gap-one slack lemma."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:45.773532+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record the repaired gap-one slack lemma used to remove nonterminal and maximum-path-double exceptions."
+    recorded_at: "2026-09-24T21:30:44.774488+00:00"
+    to_id: "1001118"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized bookkeeping repair: cross-period doubles arise in J, so discard both the at-most-delta non-T edges and the at-most-delta T-edges double on the maximum path. The stated O(delta+1) conclusion is unchanged."
+    recorded_at: "2026-09-24T21:26:22.749351+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_premise_impact_check:
+    checked_at: "2026-09-24T22:00:47.487368+00:00"
+    note: "Parity/block-crossing argument remains valid with 88db9b4e8337 math_version 3; q/8-O(r+1) conclusion unchanged."
+    source_ids:
+      - "1000605"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "1000605"
+position: 0
+research_interface:
+  consequence: "Near equality does not merely force many doubles: linearly many doubles must cross the boundaries of the period-four contact blocks. In a gap-one near-extremizer, q/8-O(delta) of these are genuine anchor-to-maximum switching edges."
+  consumer:
+    - "post-43/48 improvement"
+    - "gap-one path uncrossing"
+    - "long-range double-contact geometry"
+  given:
+    - "r=3 periodic near-equality contact normal form"
+    - "gap-one switching matching"
+  next_need: "Exploit cross-period switching edges on the deficiency-one Q/P decomposition. Their omitted Q-vertex and retained common vertex cannot both stay inside one local periodic cell; combine with 32ea928e6ffd to force repeated crossings of balanced lenses or many distinct maximum rotations."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Near-equality forces linearly many cross-period double contacts."
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Near-equality forces linearly many cross-period double contacts"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

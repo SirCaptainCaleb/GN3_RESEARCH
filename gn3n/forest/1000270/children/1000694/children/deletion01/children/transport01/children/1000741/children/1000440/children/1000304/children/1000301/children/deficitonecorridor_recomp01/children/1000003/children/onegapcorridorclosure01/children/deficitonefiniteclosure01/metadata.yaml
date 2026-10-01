@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T10:03:57.614844+00:00"
+id: "deficitonefiniteclosure01"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 372
+    detail: "Independent check passed. Without an initial A-edge reversal, deficitonecorridor_recomp01 either localizes to the one-gap case, already consumed by onegapcorridorclosure01, or exposes a strict charge. Certified 844f5e0c94f9 turns every surviving strict charge into another tight A-order-preserving deficit-one path with strictly smaller binary-balance mass, unless a reversal/bounded obstruction already appears. The balance mass is a nonnegative integer, so only finitely many strict-charge steps can survive before the one-gap or obstruction branch occurs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T10:09:27.104992+00:00"
+    worker_id: 706
+  last_audit_observation:
+    claim_id: 372
+    detail: "Independent check passed. Without an initial A-edge reversal, deficitonecorridor_recomp01 either localizes to the one-gap case, already consumed by onegapcorridorclosure01, or exposes a strict charge. Certified 844f5e0c94f9 turns every surviving strict charge into another tight A-order-preserving deficit-one path with strictly smaller binary-balance mass, unless a reversal/bounded obstruction already appears. The balance mass is a nonnegative integer, so only finitely many strict-charge steps can survive before the one-gap or obstruction branch occurs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T10:09:27.104992+00:00"
+    worker_id: 706
+object_type: "theorem"
+origin_worker_id: 659
+parent_id: "onegapcorridorclosure01"
+position: 0
+research_interface:
+  consumer: "well-founded defect-window transport; endpoint transport / defect compression"
+  given: "a deficit-one A-order-preserving path compared with a globally longest path"
+  need: "consume only the resulting bounded/disturbance menu in the global defect-compression bridge"
+  produces: "finite strict descent in binary-balance mass to bounded Hamiltonian/reversal/order-disagreement outputs; no recurrent deficit-one residue"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: "Deficit-one order-preserving transport admits a finite binary-balance descent."
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Deficit-one order-preserving transport admits a finite binary-balance descent"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-29T02:30:11.507764+00:00"
+version: 7

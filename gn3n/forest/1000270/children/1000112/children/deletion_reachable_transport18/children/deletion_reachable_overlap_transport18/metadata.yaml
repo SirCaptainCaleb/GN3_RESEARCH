@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:21:44.669971+00:00"
+id: "deletion_reachable_overlap_transport18"
+last_elevation_revision: 9251
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested for the deletion-generated same-component upgrade from generic four-side transport to positioned endpoint-rooted overlap."
+  audit_request_recorded_at: "2026-09-29T21:22:11.576973+00:00"
+  audit_resolution:
+    claim_id: 322
+    detail: "Independent check passed. From n>=18 the deletion singleton state reaches a three-side with an inherited partner of order at least eight, then a third strict descent. The one-endpoint branch gives a four-side with a remaining path of order at least seven and therefore the certified endpoint-overlap alternative; the two-endpoint branch gives a five-side and another component of order at least seven, yielding strict descent or a common four-core extending to both endpoints. All moves stay in the original pairwise-repartition component."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:05:15.363393+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 322
+    detail: "Independent check passed. From n>=18 the deletion singleton state reaches a three-side with an inherited partner of order at least eight, then a third strict descent. The one-endpoint branch gives a four-side with a remaining path of order at least seven and therefore the certified endpoint-overlap alternative; the two-endpoint branch gives a five-side and another component of order at least seven, yielding strict descent or a common four-core extending to both endpoints. All moves stay in the original pairwise-repartition component."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:05:15.363393+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-01T00:21:12.195834+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "deletion_reachable_transport18"
+position: 0
+research_interface:
+  consumer: "grand-theorem no-trapping closure; deletion-state transport"
+  given: "any one-vertex deletion state in a minimum counterexample of order at least eighteen"
+  produces: "inside the same repartition component, another strict Phi descent, a reachable four-side with positioned endpoint-rooted overlapping K4s, or a reachable five-side with a common four-core extending to both ends of a long path"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Above order seventeen deletion-generated descent reaches endpoint overlap or a five-side common core."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Above order seventeen deletion-generated descent reaches endpoint overlap or a five-side common core"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:21:12.195834+00:00"
+version: 11

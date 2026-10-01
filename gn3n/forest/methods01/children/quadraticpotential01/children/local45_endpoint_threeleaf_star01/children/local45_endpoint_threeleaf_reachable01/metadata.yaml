@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:11:29.952464+00:00"
+id: "local45_endpoint_threeleaf_reachable01"
+last_elevation_revision: 9925
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent check that the three shadow leaves lift to actual reachable four-sides, with the witness labels locked against the common long interior, and verify the common-w reciprocal-swap triangle alternative."
+  audit_request_recorded_at: "2026-09-30T13:14:17.067733+00:00"
+  audit_resolution:
+    claim_id: 352
+    detail: "Independent check passed. Each good leaf triple {u,v,z_i} in local45_endpoint_threeleaf_star01 lies in the three-shadow of an actual reachable Hamiltonian four-side, so choose A_i={u,v,z_i,w_i} in that reachable family. Its complementary balanced five-side with P gives another equal-Phi state in the same component, hence local_four_allfour_interior_lock01 applies and makes M+w_i non-Hamiltonian/noninsertable. If the w_i are not all equal, at least two distinct synchronized locks result. If all equal w, then because w_i is the unique vertex outside {u,v,z_i} in A_i for every i, w is distinct from u,v,z_1,z_2,z_3, and the three reachable four-sides {u,v,w,z_i} share the claimed three-core. Local proof is correct; support remains held on the pending three-leaf-star premise."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:42:12.979912+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 352
+    detail: "Independent check passed. Each good leaf triple {u,v,z_i} in local45_endpoint_threeleaf_star01 lies in the three-shadow of an actual reachable Hamiltonian four-side, so choose A_i={u,v,z_i,w_i} in that reachable family. Its complementary balanced five-side with P gives another equal-Phi state in the same component, hence local_four_allfour_interior_lock01 applies and makes M+w_i non-Hamiltonian/noninsertable. If the w_i are not all equal, at least two distinct synchronized locks result. If all equal w, then because w_i is the unique vertex outside {u,v,z_i} in A_i for every i, w is distinct from u,v,z_1,z_2,z_3, and the three reachable four-sides {u,v,w,z_i} share the claimed three-core. Local proof is correct; support remains held on the pending three-leaf-star premise."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:42:12.979912+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 708
+parent_id: "local45_endpoint_threeleaf_star01"
+position: 0
+research_interface:
+  consumer: "4|5 plateau termination; reachable swap synchronization; endpoint transport / defect compression"
+  given: "a componentwise Phi-minimal 4|5|m plateau with m>=6"
+  produces: "the endpoint-rooted three-leaf star together with actual reachable four-side witnesses and either two distinct interior locks or a common-core reciprocal-swap triangle anchored by one lock"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The endpoint three-leaf star lifts to reachable four-sides and synchronized interior locks"
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The endpoint three-leaf star lifts to reachable four-sides and synchronized interior locks"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 6

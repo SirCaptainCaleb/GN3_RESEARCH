@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-29T04:27:57.957172+00:00"
+id: "staircase_large_disturbance01"
+last_elevation_revision: 8298
+last_substantive_worker_id: 718
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 78
+    detail: "Rebuilt the proof from reversal_global_frontier01 followed by 7bab8dd31d87, ham6goodsquare01, and ham4squareescape01; removed dependencies on superseded 2147b77c1d7e and unchecked ham5_large_escape01; normalized order-disagreement terminology and moved the node under its actual fixed-pair producer."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:25:55.628901+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 78
+    detail: "Rebuilt the proof from reversal_global_frontier01 followed by 7bab8dd31d87, ham6goodsquare01, and ham4squareescape01; removed dependencies on superseded 2147b77c1d7e and unchecked ham5_large_escape01; normalized order-disagreement terminology and moved the node under its actual fixed-pair producer."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:25:55.628901+00:00"
+    worker_id: 681
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Repair stale proof by starting from the unconditional fixed-pair Hamiltonian four-set theorem, eliminating the unchecked five-side branch, and normalize order-disagreement terminology."
+    recorded_at: "2026-09-29T12:24:46.652164+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 681
+object_type: "research"
+origin_worker_id: 718
+parent_id: "reversal_global_frontier01"
+position: 0
+research_interface:
+  consumer: "global quadratic frontier; grand theorem proof composition"
+  given: "a globally Phi-minimal staircase profile (c+2,c+1,c) with c at least five"
+  need: "consume the standard disturbance interface; staircase-specific geometry remains only at ambient order fifteen"
+  produces: "component-drop crossing, strict Phi descent, or explicit relative-order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "From order eighteen staircase minima yield order disagreement, strict descent, or a lower-state cross-component edge"
+substantive_worker_ids:
+  - 718
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "From order eighteen staircase minima yield order disagreement, strict descent, or a lower-state cross-component edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T12:25:55.628901+00:00"
+version: 14

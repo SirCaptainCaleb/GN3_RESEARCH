@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-24T11:26:54.282714+00:00"
+id: "1000386"
+last_elevation_revision: null
+last_substantive_worker_id: 246
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "3ed7bf5a-21a6-4b29-ab2c-d709f44b855a"
+    detail: "Localized terminology repair only: replaced prohibited physical endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:12:04.798876+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_audit_observation:
+    claim_id: "3ed7bf5a-21a6-4b29-ab2c-d709f44b855a"
+    detail: "Localized terminology repair only: replaced prohibited physical endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:12:04.798876+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_local_audit_repair:
+    reason: "Localized terminology repair completing replacement of prohibited physical wording; mathematics unchanged."
+    recorded_at: "2026-09-24T21:11:40.72549+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+object_type: "lemma"
+origin_worker_id: 246
+parent_id: "1000393"
+position: 0
+research_interface:
+  consequence: "Every uniquely intersecting source-rail pair has reciprocal terminal cross-contacts. Any source hit immediately upgrades that rail pair to a double-overlap pair and hence creates lens structure."
+  consumer:
+    - "one-low odd-central q,(q+1)^3 residue"
+    - "Astra 11/12 reciprocal-terminal route"
+  given:
+    - "universal aligned-joint rigidity for unique maximum-path intersections"
+    - "mandatory foreign-edge contacts in a source-clean 0-1-1 block"
+  next_need: "In a four-rail block, mark source-hit arcs. Each arc manufactures a double-overlap pair; the only pairs left with unique intersections are reciprocal-terminal. Combine this with the exact source-hit imbalance identity and the two-lens dichotomy to classify the minimum-overlap obstruction."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A unique source-rail intersection forces reciprocal terminal contacts."
+substantive_worker_ids:
+  - 246
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A unique source-rail intersection forces reciprocal terminal contacts"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

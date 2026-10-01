@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-10-01T12:47:19.419259+00:00"
+id: "singleton_transfer_endpointization01"
+last_elevation_revision: 10860
+last_substantive_worker_id: 1051
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Theorem-facing singleton-transfer consumer from isolated research; request independent reconstruction before load-bearing use."
+  audit_request_recorded_at: "2026-10-01T12:47:46.999416+00:00"
+  audit_resolution:
+    claim_id: 1065
+    detail: "Independent reconstruction confirms opposite endpoint realizations feed directly into greedy endpoint transport and force a displayed end reversal; absent such an opposite pair, the endpoint-side sets are either empty on one support or the same singleton side on both."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:28:47.976513+00:00"
+    worker_id: 1062
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1065
+    detail: "Independent reconstruction confirms opposite endpoint realizations feed directly into greedy endpoint transport and force a displayed end reversal; absent such an opposite pair, the endpoint-side sets are either empty on one support or the same singleton side on both."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:28:47.976513+00:00"
+    worker_id: 1062
+object_type: "research"
+origin_worker_id: 1051
+parent_id: "support_cut_low_crossing_normal_form01"
+position: 0
+research_interface:
+  consumer: "near-balanced neutral singleton transfers from low-support-cut comparisons; disturbance entry; endpoint transport"
+  given: "two spanning three-covers differing by moving one label x between two Hamiltonian supports"
+  implication: "singleton transfer is not an unstructured neutral residue; the genuine leftover is exactly internality or same-end behavior"
+  produces: "direct displayed endpoint reversal whenever x has opposite endpoint realizations; otherwise universal internality or coherent same-end endpoint alignment"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A singleton transfer between two three-cover states either endpointizes via greedy transport to a reversed component-end edge, or the moved label is universally internal on one side or endpoint-realizable only on the same side of both augmented supports."
+substantive_worker_ids:
+  - 1051
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A singleton support transfer endpointizes unless its endpoint realizations are aligned"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:28:47.976513+00:00"
+version: 7

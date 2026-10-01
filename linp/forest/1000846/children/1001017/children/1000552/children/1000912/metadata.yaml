@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 66
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-23T04:16:01.744922+00:00"
+id: "1000912"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "395c593c-1060-4e6c-9532-d7559bd7f48b"
+    detail: "Faithful recomposition of the certified rank-3 localization lemma and certified rank-4 sharpness fence."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:46:06.157994+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "395c593c-1060-4e6c-9532-d7559bd7f48b"
+    detail: "Faithful recomposition of the certified rank-3 localization lemma and certified rank-4 sharpness fence."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:46:06.157994+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-23T04:16:13.270409+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "1000978"
+    - "1000049"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "1000552"
+position: 10
+research_interface:
+  consequence: "Low-rank nonspecial incoming degree is at most two through rank 3, and rank 4 is the first unrestricted obstruction."
+  consumer:
+    - "special-edge density"
+    - "ascending terminal-degree route"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Rank-three incoming localization is sharp at rank four."
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Rank-three incoming localization is sharp at rank four"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T19:37:34.229774+00:00"
+id: "astra005minblock"
+last_elevation_revision: 0
+last_substantive_worker_id: 576
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 405
+    detail: "Minimality of the prescribed-separation counterexample forces both sides of every separating cover of H-v to have order at least three and prevents either side from Hamiltonizing after v is restored."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T19:43:24.798656+00:00"
+    worker_id: 618
+  last_audit_observation:
+    claim_id: 405
+    detail: "Minimality of the prescribed-separation counterexample forces both sides of every separating cover of H-v to have order at least three and prevents either side from Hamiltonizing after v is restored."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T19:43:24.798656+00:00"
+    worker_id: 618
+object_type: "research"
+origin_worker_id: 576
+parent_id: "astraidea005"
+position: 0
+research_interface:
+  consumer: "Astra idea 005; possible inductive route to the grand theorem"
+  given: "a minimum-order counterexample to the prescribed-vertex separation conjecture"
+  need: "couple the two simultaneous non-Hamiltonian enlargements or their endpoint barriers to restore a separating cover"
+  produces: "for every nonprescribed deletion and every separating two-cover of the deletion, both sides have order at least three and adjoining the omitted vertex to either side is non-Hamiltonian; hence the omitted vertex is globally noninsertable into both paths"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Minimal prescribed-separation failures have doubly blocked deletion covers."
+substantive_worker_ids:
+  - 576
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimal prescribed-separation failures have doubly blocked deletion covers"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T13:37:45.443564+00:00"
+version: 8

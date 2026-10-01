@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T15:24:20.839298+00:00"
+id: "quadraticmonotone_conj"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  topic: "reconfiguration potentials"
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "grand two-cover conjecture; pairwise repartition; defect-compression routes"
+  given: "a spanning three-cover of a finite boundary tournament"
+  need: "show strict Phi descent or navigate an equal-Phi plateau to a merge/descent"
+  produces: "a nonincreasing-Phi route from every three-cover to at most two components"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Conjecturally, every spanning three-cover can be reconfigured to at most two components without ever increasing quadratic component-size potential while three components remain."
+substantive_worker_ids:
+  - 648
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Quadratic-monotone three-cover reconfiguration"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 2

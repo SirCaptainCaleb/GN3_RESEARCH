@@ -1,0 +1,39 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-29T21:30:05.412836+00:00"
+id: "brainstorm_six_matching_forces_hamilton01"
+last_elevation_revision: 10497
+last_substantive_worker_id: 592
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  brainstorm: true
+object_type: "conjecture"
+origin_worker_id: 592
+parent_id: "sixset_deletion_graph_strengthened01"
+position: 0
+research_interface:
+  on_demand_ids:
+    - "sixset_deletion_graph_strengthened01"
+  role: "brainstorm_conjecture"
+  trust: "Unproved speculation; no computation or literature search used."
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "The four-label matching exception forces six-set Hamiltonicity."
+substantive_worker_ids:
+  - 592
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "The four-label matching exception forces six-set Hamiltonicity"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T00:07:53.429593+00:00"
+version: 2

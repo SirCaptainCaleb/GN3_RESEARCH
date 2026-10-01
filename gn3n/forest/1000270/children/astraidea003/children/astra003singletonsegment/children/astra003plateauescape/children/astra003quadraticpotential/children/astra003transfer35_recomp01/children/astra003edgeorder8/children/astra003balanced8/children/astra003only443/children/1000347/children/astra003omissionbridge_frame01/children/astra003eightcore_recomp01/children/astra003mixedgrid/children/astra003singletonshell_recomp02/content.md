@@ -1,0 +1,9 @@
+# Order-eleven singleton shells exclude eight and nine labels and rigidify the ten-label case
+
+## Statement
+
+In a trapped order-eleven Astra-003 component containing a 4|4|3 state, the number of reachable singleton labels is at least ten. If exactly ten singleton labels are reachable, with unique excluded label t, then for any reachable 3|4|4 state X|P|Q with t in X, targeting t through P yields distinct p,p_prime in P such that either Q union {t} is Hamiltonian and gives two omission states with singletons p,p_prime, or Q union {t} is non-Hamiltonian and every set (Q-{q}) union {t,r} is Hamiltonian for r in {p,p_prime} and q in Q. The symmetric alternative holds with P,Q exchanged.
+
+## Body
+
+The eight-label shell is eliminated by the mixed-grid/four-of-six contradiction encoded in the preceding shell analysis. Under a nine-label shell with excluded labels t,u, that same analysis yields a fixed Hamiltonian five-side P+t, a non-Hamiltonian six-set U with at least four good deletions y, and for every such y an omission state (P+t)|(U-y)|(y) together with a six-set P+{t,y} whose bad deletions are exactly t,u. Choose an endpoint p of P distinct from u. The rooted seven-set shell theorem gives two good labels y,z whose simultaneous removal with p leaves a Hamiltonian set; repeated bad extension on P then produces a crossed Hamiltonian five-set. Three legal repartitions expose singleton t, contradicting exclusion. Hence nine labels are impossible. In the ten-label shell, with unique excluded t, the target-singleton construction supplies distinct p,p_prime in P with Q+p and Q+p_prime non-Hamiltonian. If Q+t is Hamiltonian, each gives an omission state with fixed side Q+t. Otherwise, in each six-set Q+{t,r}, t and r are the two bad deletions, so every Q-deletion is Hamiltonian, yielding the full crossed grid. Symmetry gives the same dichotomy on the other side.

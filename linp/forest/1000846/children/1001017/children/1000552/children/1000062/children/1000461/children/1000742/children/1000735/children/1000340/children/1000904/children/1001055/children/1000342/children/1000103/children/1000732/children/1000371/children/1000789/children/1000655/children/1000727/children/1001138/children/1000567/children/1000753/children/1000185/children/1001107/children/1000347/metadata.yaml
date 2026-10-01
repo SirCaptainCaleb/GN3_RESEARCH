@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-25T12:06:25.880497+00:00"
+id: "1000347"
+last_elevation_revision: null
+last_substantive_worker_id: 211
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: near-minimal fixed-floor mass plus low defect forces s=(5/8+o(1))p, so the f4182d73a95c generic-floor hypothesis holds up to o(p^2). Its two-sided retained-contact bound therefore applies. Linearity makes retained terminals distinct, and 6f2198c7d34a supplies the claimed balanced endpoint lens at each attachment."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  last_audit_observation:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: near-minimal fixed-floor mass plus low defect forces s=(5/8+o(1))p, so the f4182d73a95c generic-floor hypothesis holds up to o(p^2). Its two-sided retained-contact bound therefore applies. Linearity makes retained terminals distinct, and 6f2198c7d34a supplies the claimed balanced endpoint lens at each attachment."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  last_local_audit_repair:
+    reason: "Localized audit terminology repair: replace prohibited p-center/center wording by vertex-of-rank wording; mathematics unchanged."
+    recorded_at: "2026-09-25T18:18:33.995293+00:00"
+    worker_id: "5f9d4036-eb9a-492f-a8ab-c8f7f2f131d3"
+object_type: "lemma"
+origin_worker_id: 189
+parent_id: "1001107"
+position: 0
+research_interface:
+  consequence: "A source-mass-cheap center does not merely have many terminal-retained edges; it has linear balanced endpoint-lens attachment density on both halves of one maximum host path."
+  consumer:
+    - "post-43/48 endpoint-lens packing"
+    - "cross-half lens interaction"
+    - "terminal-retained residual branch"
+  given:
+    - "f4182d73a95c two-sided terminal-retention stability"
+    - "6f2198c7d34a terminal-retained endpoint-lens conversion"
+    - "linearity"
+  next_need: "Exploit the interval order of the left and right lens packets. A dense crossing family triggers auxiliary-side intersections; a largely noncrossing family must contain a large nested/disjoint subfamily whose balanced lengths and distinct attachment vertices should force host-length congestion."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Cheap vertices carry balanced endpoint-lens packets on both host halves."
+substantive_worker_ids:
+  - 189
+  - 211
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "Cheap vertices carry balanced endpoint-lens packets on both host halves"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

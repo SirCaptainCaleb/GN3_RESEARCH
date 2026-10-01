@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:10:01.606741+00:00"
+id: "pc2_square_topcover_normal01"
+last_elevation_revision: null
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: verify that the top-cover square normalization uses only the four pc2 square states and no Hamiltonian four-core hypothesis."
+  audit_request_recorded_at: "2026-09-30T13:10:01.606741+00:00"
+  audit_resolution:
+    claim_id: 215
+    detail: "Independent reconstruction passed. The proof uses only the hypotheses that G,G-d,G-e,G-{d,e} are non-Hamiltonian pc2. If a top two-cover has both labels as endpoints, singleton and {d,e}-component degeneracies are excluded by lower-state non-Hamiltonicity, so deleting either/both labels preserves two nonempty paths. Otherwise every top cover has at least one label internal; if neither label is universally internal, choose covers with d endpoint/e internal and e endpoint/d internal. Different support partitions give outcome (3); identical support partitions force distinct linear orders on the common d-support, hence a reversed common pair and outcome (4). No ambient core or minimum-counterexample hypothesis is used."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:30:46.595232+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 215
+    detail: "Independent reconstruction passed. The proof uses only the hypotheses that G,G-d,G-e,G-{d,e} are non-Hamiltonian pc2. If a top two-cover has both labels as endpoints, singleton and {d,e}-component degeneracies are excluded by lower-state non-Hamiltonicity, so deleting either/both labels preserves two nonempty paths. Otherwise every top cover has at least one label internal; if neither label is universally internal, choose covers with d endpoint/e internal and e endpoint/d internal. Different support partitions give outcome (3); identical support partitions force distinct linear orders on the common d-support, hence a reversed common pair and outcome (4). No ambient core or minimum-counterexample hypothesis is used."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:30:46.595232+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 579
+parent_id: "methods01"
+position: 0
+research_interface:
+  consumer: "endpoint-fork squares; Hamiltonian-support complement squares; deletion-cover compatibility"
+  given: "any full two-label square of non-Hamiltonian path-cover-two induced subtournaments"
+  implication: "square_topcover_normal01's Hamiltonian four-core hypothesis is logically unnecessary"
+  produces: "coherent endpoint square, permanently internal label, support-partition disagreement, or order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every full two-label path-cover-two square has a top-cover normal form."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every full two-label path-cover-two square has a top-cover normal form"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T13:37:23.634467+00:00"
+version: 7

@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T22:45:40.612584+00:00"
+id: "common_endpoint_barriers_fivewindow_counterexample01"
+last_elevation_revision: 9533
+last_substantive_worker_id: 592
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_anomaly_reason: "a contradiction edge was recorded involving this claim"
+  audit_anomaly_recorded_at: "2026-09-29T23:35:34.548291+00:00"
+  audit_chain_root: "common_endpoint_barriers_fivewindow_counterexample01"
+  audit_request_reason: "a contradiction edge was recorded involving this claim"
+  audit_request_recorded_at: "2026-09-29T23:35:34.548291+00:00"
+  audit_resolution:
+    claim_id: 198
+    detail: "Independent check passed. The five-vertex base tournament is non-Hamiltonian with the stated tight triples; the relabelling verifies the first two left-end triples for both exterior labels. Fresh Q-vertices realize the remaining left/right prescribed triples on distinct reversal pairs, while the displayed Q order remains tight and the original five-set is unchanged. This correctly refutes the unsupported cyclic-rotation inference from endpoint triples alone."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+  audit_trigger_kind: "anomaly"
+  last_audit_observation:
+    claim_id: 198
+    detail: "Independent check passed. The five-vertex base tournament is non-Hamiltonian with the stated tight triples; the relabelling verifies the first two left-end triples for both exterior labels. Fresh Q-vertices realize the remaining left/right prescribed triples on distinct reversal pairs, while the displayed Q order remains tight and the original five-set is unchanged. This correctly refutes the unsupported cyclic-rotation inference from endpoint triples alone."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-10-01T05:40:03.006533+00:00"
+object_type: "toolkit"
+origin_worker_id: 592
+parent_id: "fixed_terminal_pair_balancing_counterexample01"
+position: 0
+research_interface:
+  consumer: "three-side consecutive-window claims; ordered complement attachment; fixed-terminal-pair grafting"
+  gap: "derive the needed middle-position attachment triples from full specialized hypotheses or replace the alternating-window route"
+  given: "two exterior vertices sharing three endpoint-barrier layers at both ends of a tight path"
+  on_demand_ids:
+    - "threeside01"
+    - "threeside_consecutive_fivewindows01"
+    - "threeside_prescribed_pair_sixmenu01"
+  produces: "an explicit arbitrarily long family with a non-Hamiltonian first five-window; precise ordered attachment triples sufficient for the alternating five-orders"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Common endpoint barriers do not force Hamiltonian five-vertex windows"
+substantive_worker_ids:
+  - 592
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Common endpoint barriers do not force Hamiltonian five-vertex windows"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:40:03.006533+00:00"
+version: 6

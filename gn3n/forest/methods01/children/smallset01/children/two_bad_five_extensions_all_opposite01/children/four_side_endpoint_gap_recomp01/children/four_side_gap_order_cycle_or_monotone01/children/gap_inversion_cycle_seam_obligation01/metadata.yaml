@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-29T22:10:04.598581+00:00"
+id: "gap_inversion_cycle_seam_obligation01"
+last_elevation_revision: 0
+last_substantive_worker_id: 592
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-30T04:54:06.111632+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 592
+parent_id: "four_side_gap_order_cycle_or_monotone01"
+position: 0
+research_interface:
+  consumer: "four_side_gap_order_cycle_or_monotone01; four_side_gap_order_separated01; deletion_state_gap_network13"
+  gap: "derive both cyclic seam triples, or replace the purported tight-cycle conclusion"
+  given: "an inversion between the X-path order and the obstruction-gap order"
+  working_route: "retain the gap network and use the independent local short-gap orientation theorem while the inversion branch is checked"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "The gap-order inversion produces a tight cycle exactly when two specific seam triples are tight, and those seam conditions remain an open proof obligation."
+substantive_worker_ids:
+  - 592
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "The gap-order inversion cycle argument still requires its two seam triples"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T05:00:39.376694+00:00"
+version: 5

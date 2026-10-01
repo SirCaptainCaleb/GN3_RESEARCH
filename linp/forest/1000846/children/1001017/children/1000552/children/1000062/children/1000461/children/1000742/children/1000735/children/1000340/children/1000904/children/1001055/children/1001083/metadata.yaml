@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T12:46:52.524398+00:00"
+id: "1001083"
+last_elevation_revision: null
+last_substantive_worker_id: 258
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Removed project-process/Astra framing from the durable title/proof sentence; theorem content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Removed project-process/Astra framing from the durable title/proof sentence; theorem content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized prose repair: remove project-process/Astra framing from durable mathematics; theorem content unchanged."
+    recorded_at: "2026-09-24T21:16:03.514047+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 258
+parent_id: "1001055"
+position: 0
+research_interface:
+  consequence: "Explains exactly why fractional matching cannot improve the original q+1 constraint packing and identifies an asymptotic 5/4 integrality gap as the source of the 43/48 gain."
+  consumer:
+    - "Astra mechanism abstraction"
+    - "fractional-packing barrier"
+    - "future conflict strengthenings"
+  given:
+    - "fixed-entrance full conflict graph"
+    - "exact transfer independence number"
+  next_need: "Any one-anchor improvement below 43/48 must add genuinely new conflict hyperedges or use labels/double-contact geometry; reweighting the present constraints cannot do it."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The fixed-entrance conflict system has a five-fourths integrality gap over fractional packing."
+substantive_worker_ids:
+  - 258
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The fixed-entrance conflict system has a five-fourths integrality gap over fractional packing"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

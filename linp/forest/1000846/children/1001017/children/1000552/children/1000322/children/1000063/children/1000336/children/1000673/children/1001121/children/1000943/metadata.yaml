@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-22T18:51:27.436515+00:00"
+id: "1000943"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "091862ee-2d04-45b1-a992-fa4cbf787ea5"
+    detail: "First/last-contact choices isolate the two bridge contacts; k>=j+2 separates retained prefix and suffix, and w_2!=x exactly preserves x as the terminal last vertex. Length s+3-(k-j) is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:52:14.741969+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "091862ee-2d04-45b1-a992-fa4cbf787ea5"
+    detail: "First/last-contact choices isolate the two bridge contacts; k>=j+2 separates retained prefix and suffix, and w_2!=x exactly preserves x as the terminal last vertex. Length s+3-(k-j) is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:52:14.741969+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  repairs_failed_predecessor: "1001121"
+object_type: "lemma"
+origin_worker_id: 195
+parent_id: "1001121"
+position: 0
+research_interface:
+  consequence: "the bridge formula survives; only a right-hand contact at x destroys the prescribed x-ending orientation"
+  consumer:
+    - "loss-one fixed-hole escape"
+    - "sharp ascending-rank conjecture"
+  given:
+    - "two one-contact external chords through an omitted vertex"
+    - "right contact is not the prescribed last vertex"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two suitably separated one-contact chords through a fixed external hole splice into the path and can restore full length in the loss-one setting."
+substantive_worker_ids:
+  - 195
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Corrected fixed-hole two-chord bridge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 7

@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-26T19:21:13.770736+00:00"
+id: "astra004samefive"
+last_elevation_revision: 0
+last_substantive_worker_id: 642
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Certified proof explicitly invokes cyclic invariance of ordered tight triples: from (b,c,u) tight it infers (c,u,b) tight, and analogously in the initial case. GN3N exact semantics allow reversal antisymmetry, not arbitrary cyclic rotation. This appears to be the same defect found in compatdoubleendpoint43 and should be independently re-audited."
+  audit_request_recorded_at: "2026-09-28T18:53:36.72948+00:00"
+  audit_resolution:
+    claim_id: 111
+    detail: "The proof uses invalid cyclic rotation of ordered tight triples, e.g. (b,c,u) -> (c,u,b). Under the full corridor hypotheses, the valid terminal-terminal consequences are (b,c,u),(c,b,u),(b,a,v),(a,b,v), with the symmetric initial-initial form. These do not imply the claimed five-path/cross dichotomy."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T19:53:43.745887+00:00"
+    worker_id: 586
+  audit_resolution_before_repair:
+    claim_id: 150
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:43:02.129522+00:00"
+    worker_id: 588
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 111
+    detail: "The proof uses invalid cyclic rotation of ordered tight triples, e.g. (b,c,u) -> (c,u,b). Under the full corridor hypotheses, the valid terminal-terminal consequences are (b,c,u),(c,b,u),(b,a,v),(a,b,v), with the symmetric initial-initial form. These do not imply the claimed five-path/cross dichotomy."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T19:53:43.745887+00:00"
+    worker_id: 586
+  last_failure:
+    reason: "The proof uses invalid cyclic rotation of ordered tight triples, e.g. (b,c,u) -> (c,u,b). Under the full corridor hypotheses, the valid terminal-terminal consequences are (b,c,u),(c,b,u),(b,a,v),(a,b,v), with the symmetric initial-initial form. These do not imply the claimed five-path/cross dichotomy."
+    recorded_at: "2026-09-28T19:53:43.745887+00:00"
+  repair_attempt_count: 1
+  repair_reason: "Repair attempted but the existing statement is materially too strong. Its proof uses invalid cyclic rotation, e.g. (b,c,u) => (c,u,b). In the same-side clean-replacement setting the valid data instead gives doubled endpoint barriers from the original and replacement deletion states: terminal-terminal yields (b,c,u),(c,b,u),(b,a,v),(a,b,v), with the symmetric initial-initial four triples. These do not by themselves imply the claimed five-path or specified reverse cross-bridge. Repairing the statement to the doubled-barrier conclusion would be a substantive weakening, not a small statement tweak."
+  repair_requested_at: "2026-09-28T19:43:32.096831+00:00"
+object_type: "research"
+origin_worker_id: 642
+parent_id: "astra004corridordouble"
+position: 0
+research_interface:
+  consumer: "Astra idea 004; sharp-shell degree-two closure"
+  given: "the remaining same-side branch of a clean four-support degree-two corridor"
+  need: "consume the Hamiltonian five-window with exact-pc2 complement, or transport the explicit reverse cross-bridge"
+  produces: "same-side cleanliness is not neutral: explicit reverse cross-bridge or a bounded Hamiltonian five-window with non-Hamiltonian pc2 complement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Same-side double-clean swaps force a Hamiltonian five-window or a reverse cross-bridge."
+substantive_worker_ids:
+  - 642
+support_reason: "The proof uses invalid cyclic rotation of ordered tight triples, e.g. (b,c,u) -> (c,u,b). Under the full corridor hypotheses, the valid terminal-terminal consequences are (b,c,u),(c,b,u),(b,a,v),(a,b,v), with the symmetric initial-initial form. These do not imply the claimed five-path/cross dichotomy."
+support_status: "blocked"
+title: "Same-side double-clean swaps force a Hamiltonian five-window or a reverse cross-bridge"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T19:53:43.745887+00:00"
+version: 15

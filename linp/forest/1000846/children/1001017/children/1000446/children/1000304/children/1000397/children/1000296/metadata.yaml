@@ -1,0 +1,39 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-21T21:07:26.961567+00:00"
+id: "1000296"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "conjecture"
+metadata:
+  route: "refined ascending accounting"
+  source_kind: "new_project_conjecture"
+object_type: "conjecture"
+origin_worker_id: 262
+parent_id: "1000397"
+position: 25
+research_interface:
+  lesson: "The favorable H_2 term does not locally compensate all excess ascending last-vertex incidences."
+  refuted_by: "1000591"
+  role: "refuted_conjecture"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The inequality a(v)≤3+h(v) is false: a certified example has a(v)=4 and h(v)=0."
+substantive_worker_ids:
+  - 262
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Refuted: compensated terminal-degree conjecture"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:28:47.473199+00:00"
+version: 5

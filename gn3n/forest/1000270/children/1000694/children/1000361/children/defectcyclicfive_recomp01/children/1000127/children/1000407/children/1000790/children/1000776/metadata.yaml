@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T02:43:46.917908+00:00"
+id: "1000776"
+last_elevation_revision: 0
+last_substantive_worker_id: 660
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 227
+    detail: "Independent reconstruction succeeds. The discrete-gradient cube classification gives exactly three exhaustive profile regimes. A gap at least two admits a canonical singleton transfer from a larger side to a smaller side with strict Phi descent. If all gaps are at most one but the profile is nonuniform, certified 5ba8c8a53ce9 gives the three-step Phi-neutral antipodal transport. If all three entries are equal, certified e677f3148059 forces relative-order disagreement. Thus the all-equal {1,1,1} geometry is closed into the standard order-disturbance interface."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:46:16.433166+00:00"
+    worker_id: 652
+  exact_ordered_triples_only: true
+  last_audit_observation:
+    claim_id: 227
+    detail: "Independent reconstruction succeeds. The discrete-gradient cube classification gives exactly three exhaustive profile regimes. A gap at least two admits a canonical singleton transfer from a larger side to a smaller side with strict Phi descent. If all gaps are at most one but the profile is nonuniform, certified 5ba8c8a53ce9 gives the three-step Phi-neutral antipodal transport. If all three entries are equal, certified e677f3148059 forces relative-order disagreement. Thus the all-equal {1,1,1} geometry is closed into the standard order-disturbance interface."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:46:16.433166+00:00"
+    worker_id: 652
+  noncomputational: true
+  scale_free: true
+object_type: "research"
+origin_worker_id: 660
+parent_id: "1000790"
+position: 0
+research_interface:
+  consumer: "single-wrap cyclic-defect closure; grand theorem proof rehearsal"
+  given: "a minimum-span {1,1,1} cyclic defect cube"
+  need: "in a terminal Phi-minimum, only consume the nonuniform neutral-transport regime through the already developed unique-large/unique-small terminal-frontier machinery"
+  produces: "strict Phi descent, the certified nonuniform three-step neutral transport, or certified relative-order disagreement in the all-equal case"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The {1,1,1} cube reduces to strict descent, nonuniform neutral transport, or certified order disagreement"
+substantive_worker_ids:
+  - 660
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The {1,1,1} cube reduces to strict descent, nonuniform neutral transport, or certified order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:46:16.433166+00:00"
+version: 4

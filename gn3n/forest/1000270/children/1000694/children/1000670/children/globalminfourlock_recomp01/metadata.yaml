@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T01:07:02.750136+00:00"
+id: "globalminfourlock_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 382
+    detail: "Faithful recomposition of the certified three-side and four-side global-minimum package. It preserves the bilateral three-side move with Phi drop 2n-24 (and singleton two-cover exception), the n>=13 elimination of sides of order at most three, and the four-side conclusion that x_0,x_3 are noninsertable into both long displayed paths when the other sides have order at least six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:13:28.859227+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 382
+    detail: "Faithful recomposition of the certified three-side and four-side global-minimum package. It preserves the bilateral three-side move with Phi drop 2n-24 (and singleton two-cover exception), the n>=13 elimination of sides of order at most three, and the four-side conclusion that x_0,x_3 are noninsertable into both long displayed paths when the other sides have order at least six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:13:28.859227+00:00"
+    worker_id: 694
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T01:07:16.525329+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "1000670"
+position: 1
+research_interface:
+  consumer: "global quadratic descent and endpoint transport"
+  given: "globally quadratic-minimal spanning three-cover in a no-two-cover boundary tournament"
+  produces: "bilateral three-side descent, minimum component order at least four for n>=13, and simultaneous noninsertability of the endpoints of a four-side against both long paths"
+research_level: "theorem"
+semantic_container_text: "Global four-side quadratic-minimum program: a minimum four-side locks both endpoints against both long paths, creating rigid cross-endpoint six-sets, endpoint five-set grids, reversal families, transport packages, and the remaining 4|4|a / 4|5|a profile analysis."
+simplified_statement: "Global quadratic minima have minimum side four, and a four-side locks both endpoints against both long paths."
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Global quadratic minima have minimum side four, and a four-side locks both endpoints against both long paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:59:57.26387+00:00"
+version: 7

@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T17:14:06.903705+00:00"
+id: "1000552"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Canonical order disagreement allows arbitrary displayed tight paths, and tight paths of order two are vacuously tight. Thus the lexicographic minimization over all disagreeing tight paths can collapse to (u,v) versus (v,u), making the theorem technically true via the reversed-edge branch but vacuous for disturbance localization. Reconstruct with a nontrivial provenance restriction (for example Hamilton paths on the producer supports) before using it as a bridge."
+  audit_request_recorded_at: "2026-09-28T17:28:05.124504+00:00"
+  audit_resolution:
+    claim_id: 96
+    detail: "Canonical terminology only; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T18:50:14.18655+00:00"
+    worker_id: 718
+  last_audit_observation:
+    claim_id: 96
+    detail: "Canonical terminology only; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T18:50:14.18655+00:00"
+    worker_id: 718
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Dictionary-conformance repair only: replaced deprecated alias with canonical term; mathematics unchanged."
+    recorded_at: "2026-09-28T18:47:38.638677+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 718
+object_type: "research"
+origin_worker_id: 659
+parent_id: "1000211"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge"
+  given: "existence of relative-order disagreement"
+  need: "consume the pure two-arc cycle; the other two branches are already local reversal data"
+  produces: "a reversed common edge, a reversing tight triple, or a pure tight-cycle normal form consisting of two internally disjoint opposite arcs"
+research_level: "lemma"
+semantic_container_text: "Minimal order-disagreement classification: a minimal pair of conflicting tight-path orders is either localized or forms a pure two-arc tight cycle, with descendants resolving short crosses, omitted-label replacements, and the resulting local cycle geometry."
+simplified_statement: "A minimal order-disagreement pair is local or a pure two-arc tight cycle."
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A minimal order-disagreement pair is local or a pure two-arc tight cycle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:38.352961+00:00"
+version: 8

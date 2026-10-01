@@ -1,0 +1,37 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-26T04:02:42.416635+00:00"
+id: "1000981"
+last_elevation_revision: null
+last_substantive_worker_id: 226
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+object_type: "research"
+origin_worker_id: 226
+parent_id: "1000297"
+position: 4
+research_interface:
+  first_attack: "Study a longest induced path Q in the clique-covered graph. For each off-path vertex, record the first and last clique of Q it meets. Use inducedness to show that the set of attachment positions is highly clustered; then double-count incidences between off-path vertices and path cliques. Test whether a three-clique membership condition forces a uniform deficit from the naive l-3/2 coefficient."
+  global_relevance: "A constant improvement in the graph theorem translates directly into a better leading coefficient for ex_L(n,P_l^(3)). The representation isolates the special structure absent from arbitrary induced-path-free graphs: each graph vertex belongs to exactly three intersection cliques, and each graph edge lies in exactly one clique. It may expose global induced-path machinery that the current endpoint-local proof never sees."
+  role: "brainstorm_conjecture"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Conjecturally, every graph whose edges are partitioned into color-cliques with each vertex in exactly three cliques and sufficiently large average color-clique incidence contains a long induced path with distinct consecutive colors."
+substantive_worker_ids:
+  - 226
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Clique-cover induced-path threshold"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:28:47.473199+00:00"
+version: 4

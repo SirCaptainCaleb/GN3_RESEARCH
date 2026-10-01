@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-24T05:47:53.594495+00:00"
+id: "1000964"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a3b65003-9965-497e-975d-a36b64acbfc2"
+    detail: "Replaced prohibited physical-endpoint wording with standard endpoint language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:26:52.432597+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "a3b65003-9965-497e-975d-a36b64acbfc2"
+    detail: "Replaced prohibited physical-endpoint wording with standard endpoint language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:26:52.432597+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:26:09.258551+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000315"
+position: 0
+research_interface:
+  consequence: "If the low opposite terminal has potential 2q-2, the three high edges become a matching of three disjoint chords, each joining the left and right halves of the chosen C-path."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 conflict matching"
+  given:
+    - "436d55f14de2 reciprocal central low edge"
+    - "surviving one-low 0-1-1 state"
+  next_need: "Order the three left endpoints and three right endpoints along R. If two chords have the same versus reversed relative order, splice the corresponding prefix/suffix through the two common-v edges. Prove that one ordering gives a q-edge path ending at x and the other a wrong-entrance (q+1)-path. This should be a finite permutation argument on three chords."
+  role: "rising-terminal conflict matching normal form"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In the rising low-terminal branch the three high edges are disjoint two-sided chords."
+substantive_worker_ids:
+  - 225
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "In the rising low-terminal branch the three high edges are disjoint two-sided chords"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T00:43:09.798583+00:00"
+id: "1000690"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e3c30c76-e43d-41e0-a343-32b2963bb12a"
+    detail: "Verified the double high-high assumption makes A adjacent only to all six lows; after deleting its three edges, four triples cannot carry six B/C incidences under linearity (maximum five)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:25:06.23137+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "e3c30c76-e43d-41e0-a343-32b2963bb12a"
+    detail: "Verified the double high-high assumption makes A adjacent only to all six lows; after deleting its three edges, four triples cannot carry six B/C incidences under linearity (maximum five)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:25:06.23137+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000150"
+position: 0
+research_interface:
+  consequence: "Forces at least one terminal matching into the two-high-low-pair regime where the residual high-low obstruction applies twice."
+  consumer:
+    - "Class III rank-five branch"
+    - "1000974"
+  given:
+    - "213f75e9692a nine-vertex residual matching model"
+  next_need: "Apply d9c5b28c09a0 to the two high-low pairs and use the mutual no-P3 conditions to eliminate that regime."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "At least one Class-III terminal matching has two high-low pairs."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At least one Class-III terminal matching has two high-low pairs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

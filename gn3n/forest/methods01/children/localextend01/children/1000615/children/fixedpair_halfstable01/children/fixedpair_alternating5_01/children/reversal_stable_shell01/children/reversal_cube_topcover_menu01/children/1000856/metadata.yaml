@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-10-01T01:08:16.524158+00:00"
+id: "1000856"
+last_elevation_revision: 10352
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Terminology: statement/body use the alias \"relative-order disagreement\"; project dictionary prefers \"order disagreement\". Mathematics unaffected."
+      recorded_at: "2026-10-01T02:19:51.699148+00:00"
+      worker_id: 903
+  audit_request_reason: "Reaudit generalized math version 2: verify arbitrary r>=2 Boolean-cube extension and the K_r vertex-cover argument forcing at least r-1 universally internal labels absent endpoint/support/order disturbance."
+  audit_request_recorded_at: "2026-10-01T01:21:46.428627+00:00"
+  audit_resolution:
+    claim_id: 923
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 923
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+object_type: "research"
+origin_worker_id: 737
+parent_id: "reversal_cube_topcover_menu01"
+position: 1
+research_interface:
+  consumer: "deletion-cube synchronization; endpoint exposure; universal-internal obstruction analysis"
+  given: "a full Boolean cube of non-Hamiltonian path-cover-two states over any label set T"
+  produces: "simultaneous endpoint exposure, support disagreement, order disagreement, or universal internality of all but at most one cube label"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A full pc2 Boolean cube on r labels forces simultaneous endpoints, support/order disagreement, or universal internality of at least r-1 labels."
+substantive_worker_ids:
+  - 737
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every path-cover-two Boolean cube has endpoint, support, order, or almost-total internality"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 9

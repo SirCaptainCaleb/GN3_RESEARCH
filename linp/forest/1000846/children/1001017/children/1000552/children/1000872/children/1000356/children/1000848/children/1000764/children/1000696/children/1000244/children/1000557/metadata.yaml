@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T05:30:29.26544+00:00"
+id: "1000557"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "336738b5-f5b4-4899-8ca2-67663e4af060"
+    detail: "Checked slot exclusions and the remaining L,R splice; it yields a q-edge path ending at C and contradicts phi(C)=q-1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:03:37.560588+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "336738b5-f5b4-4899-8ca2-67663e4af060"
+    detail: "Checked slot exclusions and the remaining L,R splice; it yields a q-edge path ending at C and contradicts phi(C)=q-1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:03:37.560588+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000244"
+position: 0
+research_interface:
+  consequence: "One of the two saturated rank-q witness patterns is eliminated completely in the all-single four-edge state. The only remaining two-low pattern is {A,B}."
+  consumer:
+    - "p=2q-3 defect-corrected rank-pair block"
+  given:
+    - "35ee7b35de05 two-low normal form"
+    - "eac2e3da3eea clean-joint hole"
+    - "0c5ee88a3a70 right-joint deletion"
+  next_need: "Analyze {A,B}. After B deletes D, the two high single witnesses lie among L,private(g_{q-2}),C,R; C can only be terminal-only and R is entrance-only; R excludes private(g_{q-2}). This leaves five explicit high-slot pairs."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The B,C two-low odd-boundary pattern cannot support two additional non-double high edges."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The B,C two-low odd-boundary pattern cannot support two additional non-double high edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

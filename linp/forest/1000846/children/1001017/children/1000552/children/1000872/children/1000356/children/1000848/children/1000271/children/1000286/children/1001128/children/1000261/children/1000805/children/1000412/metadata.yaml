@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T06:22:53.083377+00:00"
+id: "1000412"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9e9fc3a1-8ef4-4def-8ab0-ab59c793b98e"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:15:15.873013+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "9e9fc3a1-8ef4-4def-8ab0-ab59c793b98e"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:15:15.873013+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "balanced-lens no-crossing for source-rail braids"
+  strengthens: "1000805"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000805"
+position: 0
+research_interface:
+  consequence: "The four pairwise-intersecting source rails form a laminar/aligned braid: once an elementary balanced lens is chosen, neither of the other two rails may pierce it cleanly. Any crossing must refine the lens by extra intersections or lie on its boundary/exterior."
+  consumer:
+    - "0-1-1 source-rail K4"
+    - "Astra 11/12 route"
+  given:
+    - "balanced clean lens between maximum rails"
+    - "third path segment across lens"
+  next_need: "Combine with aligned unique intersections 80c9c39fb602. Choose an elementary lens on a nonsimple K4 edge. If a third rail meets both lens rails only once, its two aligned intersection levels cannot lie inside opposite lens sides. Apply this simultaneously to the two other rails; seek an ordering contradiction around the K4, or show one third rail must have a second intersection, increasing theta density."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "No third path can pierce a balanced lens between maximum rails."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "No third path can pierce a balanced lens between maximum rails"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

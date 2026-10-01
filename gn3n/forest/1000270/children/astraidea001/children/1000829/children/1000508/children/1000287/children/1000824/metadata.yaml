@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-27T14:59:56.853727+00:00"
+id: "1000824"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 286
+    detail: "Removed prohibited exact-cover wording and normalized sharp half-order shell terminology on the strengthened version."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:45:16.983011+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 286
+    detail: "Removed prohibited exact-cover wording and normalized sharp half-order shell terminology on the strengthened version."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:45:16.983011+00:00"
+    worker_id: 616
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair: normalize the alias sharp shell to the canonical term sharp half-order shell; mathematics unchanged."
+    recorded_at: "2026-09-27T15:44:15.811509+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 616
+  small_order_free: true
+  viewpoint: "four-state support-switch inconsistency"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "1000287"
+position: 0
+research_interface:
+  consumer: "fragmented sharp-shell transversal; global support-switch route"
+  given: "four pairwise support-incompatible deletion covers with at least one further surviving vertex"
+  need: "convert common-core partition disagreement itself into crossing/order data or a monotone support move"
+  produces: "a triple with genuine common-core support partition disagreement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Four pairwise support-incompatible deletion covers force a common-core support disagreement."
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four pairwise support-incompatible deletion covers force a common-core support disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T15:45:16.983011+00:00"
+version: 8

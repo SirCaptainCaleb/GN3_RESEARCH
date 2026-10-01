@@ -1,0 +1,9 @@
+# Every deletion state yields a central five-path, an outer five-path, or two opposite four-paths
+
+## Statement
+
+Let H be a minimum counterexample and let H-x=P|Q be a deletion two-cover, with P=(p_0,...,p_m), Q=(q_0,...,q_s), and |P|,|Q|>=3. Then at least one of the following holds. (1) The central five-set {p_{m-1},p_m,x,q_0,q_1} has the tight order (q_1,q_0,x,p_m,p_{m-1}). (2) The outer five-set {p_1,p_0,x,q_s,q_{s-1}} is Hamiltonian. (3) Both opposite endpoint four-sets S_L={p_1,p_0,q_s,q_{s-1}} and S_R={q_1,q_0,p_m,p_{m-1}} are Hamiltonian, with explicit tight orders (p_1,p_0,q_s,q_{s-1}) and (q_1,q_0,p_m,p_{m-1}). In every Hamiltonian-support outcome the complement is non-Hamiltonian with path-cover number two. If |P|,|Q|>=4, the two four-sets in outcome (3) are disjoint.
+
+## Body
+
+Apply 5c57c8c1884e. If (p_m,x,q_0) is non-tight, its central-five branch gives outcome (1). Otherwise (p_m,x,q_0) is tight and 5c57c8c1884e gives the outer four-path S_L=(p_1,p_0,q_s,q_{s-1}). Now apply ba08d1540dd1 to the facing pair p_0,q_s. If (p_0,x,q_s) is tight, the displayed path (p_1,p_0,x,q_s,q_{s-1}) gives outcome (2). Otherwise ba08d1540dd1 gives the reverse cross (q_s,x,p_0) tight. Reapply 5c57c8c1884e to the same deletion cover with the roles of P and Q interchanged. Its central join is now exactly (q_s,x,p_0), so it lies in that theorem's outer-four branch and gives S_R=(q_1,q_0,p_m,p_{m-1}) tight. Thus outcome (3) holds. Every displayed support is proper in a minimum counterexample, so a Hamiltonian complement would two-cover H; minimality therefore gives path-cover number two for the complement. If both components have order at least four, their two endpoint pairs are disjoint, so S_L and S_R are disjoint. No path reversal or cyclic permutation of a tight triple is used.

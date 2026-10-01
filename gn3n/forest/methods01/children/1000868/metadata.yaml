@@ -1,0 +1,38 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-10-01T06:11:58.732483+00:00"
+id: "1000868"
+last_elevation_revision: null
+last_substantive_worker_id: 952
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 952
+parent_id: "methods01"
+position: 0
+research_interface:
+  consumer: "order-eleven design closure; blocked-window synchronization"
+  given: "a 3-(8,4,1) design and any four-set outside it"
+  produces: "a canonical perfect matching to the complementary four-set and four complementary design-block pairs"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A 3-(8,4,1) design canonically matches every nonblock four-set to its complement through four complementary block pairs."
+substantive_worker_ids:
+  - 952
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Every nonblock four-set in a 3-(8,4,1) design has a canonical complementary matching frame"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T06:31:19.184716+00:00"
+version: 5

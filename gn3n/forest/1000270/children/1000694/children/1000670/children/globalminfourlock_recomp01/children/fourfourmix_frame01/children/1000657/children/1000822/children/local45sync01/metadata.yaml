@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-27T19:38:27.177864+00:00"
+id: "local45sync01"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  note: "Concurrent stronger result 8e138afbc628 proves the same localization with at least two synchronized labels; retain only as historical duplicate."
+  redundant_with: "1000454"
+object_type: "research"
+origin_worker_id: 678
+parent_id: "1000822"
+position: 0
+research_interface:
+  consumer: "unconditional pairwise-repartition no-trapping; minimum-side-four analysis; endpoint transport"
+  given: "a Phi-minimal three-cover in a connected pairwise-repartition component containing no two-cover, with component orders 4,5,a and a>=7"
+  need: "use the synchronized replacements to obtain a reachable equal-Phi transport with a secondary descent, or consume the resulting family of noninsertability constraints"
+  produces: "one label of the four-vertex path component compatible with both long endpoints, while its insertion into the five-vertex component is non-Hamiltonian and at least three five-side deletions become Hamiltonian after adjoining that label"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A trapped quadratic minimum of profile 4|5|a has a synchronized four-side label."
+substantive_worker_ids:
+  - 678
+support_reason: "awaiting_local_audit"
+support_status: "unchecked"
+title: "A trapped quadratic minimum of profile 4|5|a has a synchronized four-side label"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:07:16.525329+00:00"
+version: 7

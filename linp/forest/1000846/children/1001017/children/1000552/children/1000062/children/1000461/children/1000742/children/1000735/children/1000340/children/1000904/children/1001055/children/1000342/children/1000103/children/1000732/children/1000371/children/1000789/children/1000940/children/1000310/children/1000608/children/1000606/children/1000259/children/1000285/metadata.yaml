@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T19:26:06.417802+00:00"
+id: "1000285"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 242
+parent_id: "1000259"
+position: 0
+research_interface:
+  consequence: "If a rank-q edge is maximum-rank at a low-defect terminal, that terminal star nearly saturates the exact period-four singleton transfer on the canonical source rail and leaves only O(delta) unused rail vertices."
+  consumer:
+    - "post-43/48 flat gap-one terminal coupling"
+    - "joint two-color period-four analysis"
+  given:
+    - "38e2ce9f9772 two-terminal source-rail blocker system"
+    - "eb40ddcc33ca exact period-four fixed-entrance transfer"
+  next_need: "Classify two near-extremal singleton patterns on the same rail, one through each terminal of e. Use opposite-terminal splice geometry and the alternating double-blocker matching. A positive linear incompatibility between the two period-four patterns would improve 43/48."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A saturated terminal star nearly realizes the period-four singleton extremizer on the opposite source rail."
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A saturated terminal star nearly realizes the period-four singleton extremizer on the opposite source rail"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

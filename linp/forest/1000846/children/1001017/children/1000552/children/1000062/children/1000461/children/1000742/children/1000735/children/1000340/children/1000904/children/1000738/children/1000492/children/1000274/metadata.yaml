@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-24T13:04:29.860045+00:00"
+id: "1000274"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:46:36.372419+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  role: "rank-aligned multiplicity improvement"
+  uses:
+    - "1000738"
+    - "1000492"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000492"
+position: 0
+research_interface:
+  consequence: "At aligned vertices nonsingleton contacts cancel in t(v)-X_v, leaving only singleton density (2r-3)/4. Full alignment would improve the leading coefficient to 1-(2r-1)/(4r(r-1))."
+  consumer:
+    - "general-r coefficient improvement"
+    - "rank-gap dichotomy"
+  given:
+    - "maximum ascending terminal rank equals vertex potential"
+  next_need: "Handle misaligned vertices with gap Delta(v)=phi(v)-q(v)>0. Either rank-gap slack in Astra raw count is already large, or transfer anchor-relative double contacts from the q(v)-path into the chosen phi(v)-path. Seek a local inequality interpolating between slopes (2r-3)/4 at Delta=0 and (6r-7)/8 for arbitrary gap."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "If the maximum rank q(v) of an ascending nonspecial edge terminal at v equals φ(v)=p, then t(v)−X_v≤((2r−3)/4)p+O_r(1), yielding global coefficient 19/24 when r=3 under top-rank alignment."
+substantive_worker_ids:
+  - 185
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Top-rank alignment converts Astra double-contact mass directly into multiplicity credit"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:31:24.858521+00:00"
+version: 10

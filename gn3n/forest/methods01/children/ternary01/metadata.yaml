@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 55
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-20T20:19:19.406053+00:00"
+id: "ternary01"
+last_elevation_revision: null
+last_substantive_worker_id: 603
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  curation: "retention_audit_neighboring_model"
+  semantic_container_seed:
+    atlas_key: "neighboring-abstraction"
+    headline: "Abstract ternary insertion theorem"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas"
+object_type: "abstraction"
+origin_worker_id: 603
+parent_id: "methods01"
+position: 0
+research_interface:
+research_level: "abstraction"
+semantic_container_text: "Certified neighboring-model theorem retained for analogy/generalization."
+simplified_statement: "In any ternary path system with cyclic coverage and reversal symmetry, every exterior vertex has at least two insertion positions into a tight path, and every n-vertex system has at least 2^(n-1) Hamilton tight paths."
+substantive_worker_ids:
+  - 603
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Abstract ternary insertion theorem"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T20:51:57.420778+00:00"
+version: 6

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-28T21:36:57.018601+00:00"
+id: "hardreversal_fiveshell01"
+last_elevation_revision: 0
+last_substantive_worker_id: 630
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 220
+    detail: "Independent check. For any exterior triple y,z,w, the three common-endpoint tight triples (p_m,*,p_0) satisfy the certified small-set Hamiltonian-five lemma. Minimum-counterexample calculus gives properness and path-cover-two complements, and every exterior four-set therefore yields four Hamiltonian five-vertex deletions."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:14:33.254031+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 220
+    detail: "Independent check. For any exterior triple y,z,w, the three common-endpoint tight triples (p_m,*,p_0) satisfy the certified small-set Hamiltonian-five lemma. Minimum-counterexample calculus gives properness and path-cover-two complements, and every exterior four-set therefore yields four Hamiltonian five-vertex deletions."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:14:33.254031+00:00"
+    worker_id: 664
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "The proof uses minimum-counterexample calculus to bound the exterior size and identify complements as non-Hamiltonian with path-cover number two."
+    recorded_at: "2026-09-29T05:50:45.480501+00:00"
+    to_id: "mincex01"
+    worker_id: 630
+object_type: "research"
+origin_worker_id: 718
+parent_id: "1000540"
+position: 0
+research_interface:
+  consumer: "hard endpoint-reversal consumption; shortest grand-theorem proof route"
+  given: "the universal hard endpoint-reversal residue in which (p_m,y,p_0) is tight for every vertex y outside the maximal path P"
+  need: "use the complete five-shell to force a bounded reversal kernel, a Hamiltonian six-window with useful complement geometry, or direct endpoint absorption"
+  produces: "every three outside vertices together with p_0,p_m form a Hamiltonian five-set with path-cover-two complement; every four outside vertices give a six-set with at least four Hamiltonian deletions"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A universal endpoint-reversal family gives Hamiltonian five-sets over every exterior triple."
+substantive_worker_ids:
+  - 718
+  - 630
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A universal endpoint-reversal family gives Hamiltonian five-sets over every exterior triple"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:30:03.710796+00:00"
+version: 8

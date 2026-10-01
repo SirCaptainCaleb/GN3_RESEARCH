@@ -1,0 +1,68 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-30T05:00:02.047928+00:00"
+id: "fourset_fixedpair_witness_bound01"
+last_elevation_revision: 10203
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_anomaly_reason: "Likely false theorem/proof: cyclic-position conflation in fixed-pair witness count. The claimed upper bound 4 should be 6 without extra hypotheses; all six witness conditions can be simultaneously satisfied under the boundary-tournament axiom."
+  audit_anomaly_recorded_at: "2026-10-01T00:46:55.007136+00:00"
+  audit_chain_root: "fourset_fixedpair_witness_bound01"
+  audit_request_reason: "Urgent downstream review: the claimed cap four is contradicted by fourset_six_fixedpair_witness_counterexample01. Inspect all incidence-count consumers, especially hamfour_fixedpair_density01, balanced9_multiplicity36_01, balanced9_prescribed_vertex_mobility01, and any recomposed results depending on them."
+  audit_request_recorded_at: "2026-10-01T00:50:15.233546+00:00"
+  audit_resolution:
+    claim_id: 814
+    detail: "Upper bound six is immediate from the six unordered pairs of a four-set; the supplied four-vertex construction realizes all six."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:01:13.82212+00:00"
+    worker_id: 737
+  audit_resolution_before_repair:
+    claim_id: 170
+    detail: "Independent check passed. Normalizing one triple sign leaves four binary signs with six same-class fixed-pair witness conditions. Exhausting b,c,d in {+1,-1} gives at most four simultaneous conditions, exactly as claimed. This is the correct cap for the witness-incidence count used in the nine-vertex multiplicity theorem."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T05:05:33.67551+00:00"
+    worker_id: 665
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 814
+    detail: "Upper bound six is immediate from the six unordered pairs of a four-set; the supplied four-vertex construction realizes all six."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:01:13.82212+00:00"
+    worker_id: 737
+  repair_attempt_count: 1
+  repair_reason: "The claimed universal upper bound four is false. The companion construction fourset_six_fixedpair_witness_counterexample01 is valid and realizes all six witnesses. The sign encoding in this proof misidentifies several fixed-pair same-class conditions: for a pair {i,j}, the relevant triples have endpoints i,j and complementary middle vertices, whereas conditions such as a=-c compare unrelated reversal pairs. I attempted to salvage the intended at-most-four claim, but the explicit six-witness boundary tournament rules it out; changing the bound to six would be materially weaker/new mathematics."
+  repair_requested_at: "2026-10-01T00:58:16.72848+00:00"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "1000615"
+position: 0
+research_interface:
+  consumer: "fixed-pair incidence counting; sanity checks for Hamiltonian four-set density arguments"
+  given: "any four-vertex boundary tournament"
+  produces: "the sharp universal witness multiplicity cap six; no stronger cap follows from boundary antisymmetry alone"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A four-set has at most six same-class fixed-pair witnesses, and all six can occur."
+substantive_worker_ids:
+  - 579
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A four-set has at most six same-class fixed-pair witnesses, and six is sharp"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 13

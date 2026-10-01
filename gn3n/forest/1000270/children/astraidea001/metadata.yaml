@@ -1,0 +1,34 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-26T01:10:57.580156+00:00"
+id: "astraidea001"
+last_elevation_revision: null
+last_substantive_worker_id: 689
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+object_type: "research"
+origin_worker_id: 689
+parent_id: "1000270"
+position: 0
+research_interface:
+research_level: "lemma"
+semantic_container_text: "Weighted and fractional longest-path route: relate the weighted half-path principle to fractional path-cover threshold two, study laminar rounding and its obstructions, and use sharp-half-order deletion transversals, support incompatibility, and ordered disturbance to attack the equality shell."
+simplified_statement: "Weighted longest-path principle and fractional two-cover"
+substantive_worker_ids:
+  - 689
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Weighted longest-path principle and fractional two-cover"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:52.602761+00:00"
+version: 7

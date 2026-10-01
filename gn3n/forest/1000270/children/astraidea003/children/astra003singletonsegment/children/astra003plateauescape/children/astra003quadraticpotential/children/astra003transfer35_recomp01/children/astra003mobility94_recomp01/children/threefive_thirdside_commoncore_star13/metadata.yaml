@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-29T23:48:13.572119+00:00"
+id: "threefive_thirdside_commoncore_star13"
+last_elevation_revision: 9533
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-01T01:01:13.82212+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "astra003mobility94_recomp01"
+position: 0
+research_interface:
+  consumer: "order-thirteen plateau closure; neutral-cycle escape; common-core order/reversal transport"
+  given: "any state of a trapped order-thirteen 3|5|5 Astra component and any prescribed pair of its three-side labels"
+  need: "use the retained fixed five-side and prescribed three-side roots to turn one synchronization output into a 4|4 repartition, strict descent, or component merge"
+  produces: "a same-component neutral support triangle with one fixed five-side and a four-core on the other five-side having three Hamiltonian root extensions, hence positioned gluing/disagreement/K4/reversal outputs"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every trapped three-five-five state has a reachable third-side common-core star."
+substantive_worker_ids:
+  - 579
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Every trapped three-five-five state has a reachable third-side common-core star"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 8

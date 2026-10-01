@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T05:09:52.329963+00:00"
+id: "unique_large_longest_smallorders01"
+last_elevation_revision: 7998
+last_substantive_worker_id: 630
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 57
+    detail: "Independent reconstruction verifies the profile arithmetic. From p=c+2 or c+3 and global longest-path order lambda=p, lambda>=ceil((n-1)/2) forces c<=3 in the first case and c<=4 in the second; the known lower bound on the order of a minimum counterexample leaves exactly (5,3,3) at n=11, (6,3,3) at n=12, and (7,4,4) at n=15."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:55:13.23183+00:00"
+    worker_id: 672
+  last_audit_observation:
+    claim_id: 57
+    detail: "Independent reconstruction verifies the profile arithmetic. From p=c+2 or c+3 and global longest-path order lambda=p, lambda>=ceil((n-1)/2) forces c<=3 in the first case and c<=4 in the second; the known lower bound on the order of a minimum counterexample leaves exactly (5,3,3) at n=11, (6,3,3) at n=12, and (7,4,4) at n=15."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:55:13.23183+00:00"
+    worker_id: 672
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T12:21:26.104203+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 718
+parent_id: "global_sizegap_maximin_bypass01"
+position: 0
+research_interface:
+  consumer: "repair of the original global reduction by bypassing the generic disturbance sink"
+  given: "the endpoint-square-free unique-large global Phi-minimum branch, with its largest displayed component globally longest"
+  need: "dispatch these three finite structural shells using their existing order-specific machinery; separately handle the positive longest-path gap lambda>p"
+  produces: "only the three finite ambient profiles 5|3|3 at n=11, 6|3|3 at n=12, or 7|4|4 at n=15; no such branch exists for n>=16"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A globally longest unique large side forces orders eleven, twelve, or fifteen"
+substantive_worker_ids:
+  - 718
+  - 630
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A globally longest unique large side forces orders eleven, twelve, or fifteen"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T15:08:56.258571+00:00"
+version: 7

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-22T21:58:07.626474+00:00"
+id: "1000651"
+last_elevation_revision: null
+last_substantive_worker_id: 204
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "95a4953b-7def-4618-ba50-0a9285050c8c"
+    detail: "Independently reconstructed: summing the certified terminal bound gives 2b <= (2ell-5)n, and combining with 3m-b <= (2ell-3)n yields m <= (ell-11/6)n. Constants and ell>=3 endpoint cases check."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:31:53.711289+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  claimed_novelty: "internal result; literature novelty not checked per user request"
+  computation_used: false
+  improves: "Devine-Milans (ell-3/2)n"
+  last_audit_observation:
+    claim_id: "95a4953b-7def-4618-ba50-0a9285050c8c"
+    detail: "Independently reconstructed: summing the certified terminal bound gives 2b <= (2ell-5)n, and combining with 3m-b <= (2ell-3)n yields m <= (ell-11/6)n. Constants and ell>=3 endpoint cases check."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:31:53.711289+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  route: "generalized_snake_upper_bound"
+object_type: "theorem"
+origin_worker_id: 204
+parent_id: "1000062"
+position: 2
+research_interface:
+  consequence: "Unconditional additive n/3 improvement of the current internal general upper benchmark."
+  consumer:
+    - "grand upper-bound target"
+    - "generalized snake program"
+  given:
+    - "special-edge hinge 699ece64f652"
+    - "terminal cumulative lemma above"
+  next_need: "Use deeper blocker/contact multiplicity or stateful snakes to turn the constant improvement into a leading-coefficient improvement."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "General upper bound improved to (ell-11/6)n by terminal-snake localization."
+substantive_worker_ids:
+  - 204
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "General upper bound improved to (ell-11/6)n by terminal-snake localization"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

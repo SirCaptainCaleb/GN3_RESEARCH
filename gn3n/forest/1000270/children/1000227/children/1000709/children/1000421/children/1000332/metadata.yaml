@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-21T12:31:21.442009+00:00"
+id: "1000332"
+last_elevation_revision: 0
+last_substantive_worker_id: 598
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 395
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T12:57:34.355588+00:00"
+    worker_id: 570
+  last_audit_observation:
+    claim_id: 395
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T12:57:34.355588+00:00"
+    worker_id: 570
+  last_premise_impact_check:
+    checked_at: "2026-09-23T04:42:30.31781+00:00"
+    note: "Premise-impact reconfirmation: 84c2f1d9a6e3 preserves the endpoint-exchange support triangle and 91e6b4c2d7a0 preserves neighborhood capacity; the unchanged degree-four expansion count remains valid."
+    source_ids:
+      - "1000388"
+      - "1000421"
+      - "1000743"
+      - "1000465"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 598
+parent_id: "1000421"
+position: 0
+research_interface:
+  consumer: "order-thirteen one-defect route and endpoint-transport / defect-compression bridge"
+  given: "the Gamma triangle forced by two opposite singleton endpoint exchanges at order thirteen"
+  need: "use the three simultaneous degree-four expansion neighborhoods, especially their degree-four equality covering pattern, to force compatible-cover geometry or defect compression"
+  produces: "all three triangle states have Gamma-degree at least four; equality forces the two unknown neighbors at each corner to cover all four remaining complement labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The endpoint-exchange support triangle is uniformly degree-four expanding"
+substantive_worker_ids:
+  - 598
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The endpoint-exchange support triangle is uniformly degree-four expanding"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:25:25.297469+00:00"
+version: 9

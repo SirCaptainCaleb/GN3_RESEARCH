@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T04:24:05.257541+00:00"
+id: "1000607"
+last_elevation_revision: 0
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 78
+    detail: "Replaced the stale four-regime derivation by a direct application of reversal_global_frontier01, removed the obsolete dependencies on 238069a2eeb6 and 2147b77c1d7e, and recorded that the fixed-pair theorem supersedes this four-regime result."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:25:55.628901+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 78
+    detail: "Replaced the stale four-regime derivation by a direct application of reversal_global_frontier01, removed the obsolete dependencies on 238069a2eeb6 and 2147b77c1d7e, and recorded that the fixed-pair theorem supersedes this four-regime result."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:25:55.628901+00:00"
+    worker_id: 681
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Repair stale proof using the stronger certified fixed-pair theorem reversal_global_frontier01, which directly establishes regime (2)."
+    recorded_at: "2026-09-29T12:23:51.116158+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 681
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T12:24:19.355641+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 586
+parent_id: "1000104"
+position: 1
+research_interface:
+  consumer: "grand theorem proof composition"
+  given: "minimum counterexample of order at least fifteen and a globally Phi-minimal spanning three-cover"
+  need: "close positioned small-support, doubled-cross, and equitable regimes; staircase is no longer separate"
+  produces: "four surviving regimes: endpoint-pair pc2 grid; positioned Hamiltonian 4/5/6-support; doubled cross barrier; equitable plateau"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Above order fourteen the global quadratic frontier has four regimes."
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Above order fourteen the global quadratic frontier has four regimes"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T12:25:55.628901+00:00"
+version: 11

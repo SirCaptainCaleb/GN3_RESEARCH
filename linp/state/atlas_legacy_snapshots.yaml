@@ -1,0 +1,178 @@
+-
+  atlas_rows:
+    -
+      atlas_key: "dense_core"
+      category: "route"
+      headline: "Minimum-degree / all-special route toward 2/3"
+      object_ids:
+        - "ec94a7e47f72"
+        - "e766796773d9"
+        - "bf6ad3bc66de"
+      purpose: "Retain an independent route toward the 2/3 target through density cores and rank layers."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For dense-core, minimum-degree, or all-special arguments."
+    -
+      atlas_key: "incidence_rank"
+      category: "route"
+      headline: "Incidence-rank program"
+      object_ids:
+        - "76a914294ba8"
+        - "0bd4785331dd"
+      purpose: "Retain the algebraic nullity route as an independent alternative."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For incidence-matrix or terminal-cycle nullity attacks."
+    -
+      atlas_key: "lens_free_repair"
+      category: "route"
+      headline: "Lens-free repair of the post-43/48 stability chain"
+      object_ids:
+        - "411fc64479d2"
+        - "a78c5a025340"
+        - "b35b0fd4e4cd"
+      purpose: "Recover the quantitative switching backbone without the failed automatic-lens conversion."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For current support repair, five-eighths switching mass, or auditing the replacement chain."
+    -
+      atlas_key: "repeated_intersection"
+      category: "route"
+      headline: "Two-host repeated-intersection and common-edge route"
+      object_ids:
+        - "f84b001e0a61"
+        - "20cdd04e92ca"
+        - "dedf810e10a7"
+        - "e552a55fe162"
+      purpose: "Exploit repeated source-path intersections directly through cycles and common high-rank edges, without lens conversion."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For same-terminal local congestion or source-rail overlap after the endpoint-lens failure."
+    -
+      atlas_key: "single_contact_spacing"
+      category: "toolkit"
+      headline: "Single-contact central-window geometry"
+      object_ids:
+        - "7989ed25c41f"
+        - "220a14637b5f"
+        - "49080cbf1371"
+      purpose: "Path-relative packing and central-window localization for ascending singleton contacts."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "When one host path sees many single-contact ascending edges."
+    -
+      atlas_key: "u11_collision"
+      category: "route"
+      headline: "U_11 collision rank-flow and cycle packing"
+      object_ids:
+        - "259bdff45872"
+        - "48125e6d5ad9"
+      purpose: "Turn color-terminal collisions into rank-sum surplus, exact half-rank rotations, or edge-disjoint local cycles."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For strong-rainbow extraction, U_11 collision control, or rank-flow arguments."
+    -
+      atlas_key: "upper_contact_snake"
+      category: "route"
+      headline: "Supported 43/48 bound and exact defect accounting"
+      object_ids:
+        - "a570a11f0001"
+        - "a57007500001"
+        - "178e5b72caae"
+        - "534e479667a5"
+      purpose: "Keep the strongest supported general upper bound and its exact near-equality deficits visible."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For the certified benchmark, near-extremizer defect accounting, or any post-43/48 argument."
+  repository_revision: 4545
+  snapshot_at: "2026-09-30T16:19:13.521463+00:00"
+  snapshot_key: "pre_object_id_cutover_2026_09_30"
+-
+  atlas_rows:
+    -
+      atlas_key: "dense_core"
+      category: "route"
+      headline: "Minimum-degree / all-special route toward 2/3"
+      object_ids:
+        - "1001062"
+        - "1001046"
+        - "1000853"
+      purpose: "Retain an independent route toward the 2/3 target through density cores and rank layers."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For dense-core, minimum-degree, or all-special arguments."
+    -
+      atlas_key: "incidence_rank"
+      category: "route"
+      headline: "Incidence-rank program"
+      object_ids:
+        - "1000531"
+        - "1000046"
+      purpose: "Retain the algebraic nullity route as an independent alternative."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For incidence-matrix or terminal-cycle nullity attacks."
+    -
+      atlas_key: "lens_free_repair"
+      category: "route"
+      headline: "Lens-free repair of the post-43/48 stability chain"
+      object_ids:
+        - "1000303"
+        - "1000755"
+        - "1000796"
+      purpose: "Recover the quantitative switching backbone without the failed automatic-lens conversion."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For current support repair, five-eighths switching mass, or auditing the replacement chain."
+    -
+      atlas_key: "repeated_intersection"
+      category: "route"
+      headline: "Two-host repeated-intersection and common-edge route"
+      object_ids:
+        - "1001127"
+        - "1000147"
+        - "1000997"
+        - "1001033"
+      purpose: "Exploit repeated source-path intersections directly through cycles and common high-rank edges, without lens conversion."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For same-terminal local congestion or source-rail overlap after the endpoint-lens failure."
+    -
+      atlas_key: "single_contact_spacing"
+      category: "toolkit"
+      headline: "Single-contact central-window geometry"
+      object_ids:
+        - "1000546"
+        - "1000155"
+        - "1000342"
+      purpose: "Path-relative packing and central-window localization for ascending singleton contacts."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "When one host path sees many single-contact ascending edges."
+    -
+      atlas_key: "u11_collision"
+      category: "route"
+      headline: "U_11 collision rank-flow and cycle packing"
+      object_ids:
+        - "1000173"
+        - "1000334"
+      purpose: "Turn color-terminal collisions into rank-sum surplus, exact half-rank rotations, or edge-disjoint local cycles."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For strong-rainbow extraction, U_11 collision control, or rank-flow arguments."
+    -
+      atlas_key: "upper_contact_snake"
+      category: "route"
+      headline: "Supported 43/48 bound and exact defect accounting"
+      object_ids:
+        - "1000738"
+        - "1000732"
+        - "1000103"
+        - "1000378"
+      purpose: "Keep the strongest supported general upper bound and its exact near-equality deficits visible."
+      startup_visible: false
+      updated_at: "2026-09-26T04:04:58.241395+00:00"
+      when_to_fetch: "For the certified benchmark, near-extremizer defect accounting, or any post-43/48 argument."
+  repository_revision: 5381
+  snapshot_at: "2026-09-30T18:13:55.034832+00:00"
+  snapshot_key: "pre_derived_atlas_cutover_2026_09_30"

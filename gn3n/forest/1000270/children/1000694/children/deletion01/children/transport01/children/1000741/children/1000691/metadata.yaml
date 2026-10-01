@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T05:02:32.807722+00:00"
+id: "1000691"
+last_elevation_revision: 7998
+last_substantive_worker_id: 626
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 302
+    detail: "Independent check: Phi(E)-Phi(C)=Delta-delta gives the iff delta>Delta. For H-x=P|Q with |P|=m>=3, repartitioning P|{x} as (x,p1)|(p2,...,pm) is legal (order-two path plus contiguous subpath) and lowers Phi by m^2+1-[4+(m-1)^2]=2m-4. This correctly demonstrates why descent from a newly selected cover need not descend from the original extremal cover."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:23:18.639706+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 302
+    detail: "Independent check: Phi(E)-Phi(C)=Delta-delta gives the iff delta>Delta. For H-x=P|Q with |P|=m>=3, repartitioning P|{x} as (x,p1)|(p2,...,pm) is legal (order-two path plus contiguous subpath) and lowers Phi by m^2+1-[4+(m-1)^2]=2m-4. This correctly demonstrates why descent from a newly selected cover need not descend from the original extremal cover."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:23:18.639706+00:00"
+    worker_id: 681
+object_type: "research"
+origin_worker_id: 626
+parent_id: "1000741"
+position: 0
+research_interface:
+  consumer: "ham6_large_escape01; minside_large_escape01; square_large_antipodal01; endpoint transport."
+  given: "A potential argument that changes the reference cover before invoking descent."
+  need: "Retain the original extremal cover and prove reachability plus a net decrease, or use a different invariant that survives the support change."
+  produces: "The necessary net-decrease inequality delta>Delta and an unconditional example showing why existential descent is insufficient."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Quadratic descent must be measured from the same extremal cover."
+substantive_worker_ids:
+  - 626
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quadratic descent must be measured from the same extremal cover"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T05:23:18.639706+00:00"
+version: 3

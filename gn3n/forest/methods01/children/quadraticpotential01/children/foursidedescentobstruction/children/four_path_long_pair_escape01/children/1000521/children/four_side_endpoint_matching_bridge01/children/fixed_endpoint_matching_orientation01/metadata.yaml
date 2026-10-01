@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T20:53:35.63734+00:00"
+id: "fixed_endpoint_matching_orientation01"
+last_elevation_revision: 9000
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent audit requested for the identification of the perfect-matching edges with the two fixed-pair orientation classes."
+  audit_request_recorded_at: "2026-09-29T20:59:00.804912+00:00"
+  audit_resolution:
+    claim_id: 58
+    detail: "Independent check passed. The fixed-endpoint orientation classes are cliques in the Hamiltonian-four graph. A perfect matching on four labels therefore forces the two classes to have size two and to be exactly the matching edges; every cross pair is non-Hamiltonian. Packaging-only vocabulary issue recorded on the canonical duplicate."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 58
+    detail: "Independent check passed. The fixed-endpoint orientation classes are cliques in the Hamiltonian-four graph. A perfect matching on four labels therefore forces the two classes to have size two and to be exactly the matching edges; every cross pair is non-Hamiltonian. Packaging-only vocabulary issue recorded on the canonical duplicate."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T23:58:16.939093+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "four_side_endpoint_matching_bridge01"
+position: 0
+research_interface:
+  consumer: "fixed_endpoint_matching_escape01; endpoint transport; common-middle analysis"
+  given: "the fixed-endpoint perfect-matching residue of the hard four-side endpoint six-set"
+  produces: "a canonical 2+2 orientation partition of the original four-side, with all same-class endpoint K4s Hamiltonian and all cross-class endpoint K4s non-Hamiltonian"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The fixed-endpoint matching shell is exactly the two orientation classes."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The fixed-endpoint matching shell is exactly the two orientation classes"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:53:57.606786+00:00"
+version: 9

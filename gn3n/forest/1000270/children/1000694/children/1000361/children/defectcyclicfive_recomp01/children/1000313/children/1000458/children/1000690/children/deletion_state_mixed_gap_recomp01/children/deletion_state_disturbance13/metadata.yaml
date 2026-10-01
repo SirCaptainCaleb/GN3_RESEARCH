@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T22:12:42.135178+00:00"
+id: "deletion_state_disturbance13"
+last_elevation_revision: 9396
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Repair audit: reconstruct the n>=13 deletion theorem using only the valid gap-network theorem plus four_side_gap_network_disturbance01; independently verify the n=13,14 strict escapes through the third component."
+  audit_request_recorded_at: "2026-09-29T22:12:53.088482+00:00"
+  audit_resolution:
+    claim_id: 198
+    detail: "Independent check passed. The canonical double-wrap state exists with a four-side and a complementary path of order at least five. The stated disturbance menu follows from the certified four-side endpoint/gap machinery; moreover the now-certified unconditional mixed-four-support theorem already supplies alternative (2) directly in this size range. The explicit n=13,14 escape calculations are correct: 4|1->3|2 and 4|2->3|3 are strict, while the remaining 3|7 pair descends by threesidedescent6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 198
+    detail: "Independent check passed. The canonical double-wrap state exists with a four-side and a complementary path of order at least five. The stated disturbance menu follows from the certified four-side endpoint/gap machinery; moreover the now-certified unconditional mixed-four-support theorem already supplies alternative (2) directly in this size range. The explicit n=13,14 escape calculations are correct: 4|1->3|2 and 4|2->3|3 are strict, while the remaining 3|7 pair descends by threesidedescent6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-10-01T00:21:12.195834+00:00"
+object_type: "research"
+origin_worker_id: 708
+parent_id: "deletion_state_mixed_gap_recomp01"
+position: 0
+research_interface:
+  consumer: "deletion-state closure; endpoint transport / defect compression; small-order equality-shell analysis"
+  given: "any one-vertex deletion two-cover in a minimum counterexample of order at least thirteen"
+  produces: "nonincreasing canonical transport, a genuinely mixed Hamiltonian 4/5-support with pc2 complement, or a certified path-intersection reversal/cycle disturbance; at orders 13 and 14 the hard disturbance branch instead has a strict descent"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "From order thirteen every deletion state reaches transport, mixed support, or a certified reversal/cycle disturbance"
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "From order thirteen every deletion state reaches transport, mixed support, or a certified reversal/cycle disturbance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:21:12.195834+00:00"
+version: 13

@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T20:34:39.698534+00:00"
+id: "recomp_min8_25_01"
+last_elevation_revision: 0
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 128
+    detail: "Named the exact normalization and local-structure theorems used in the c=6 and c=7 cases, and replaced trapped/standard-witness/terminal-regime shorthand by the five explicit alternatives."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:39:45.605872+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 128
+    detail: "Named the exact normalization and local-structure theorems used in the c=6 and c=7 cases, and replaced trapped/standard-witness/terminal-regime shorthand by the five explicit alternatives."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:39:45.605872+00:00"
+    worker_id: 703
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-28T20:53:15.675251+00:00"
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Language/provenance repair only: name the certified normalization and local-structure lemmas explicitly and replace trapped/standard-witness/terminal-regime shorthand by the exact alternatives."
+    recorded_at: "2026-09-28T20:39:17.417286+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  recomposition_audit:
+    classified_at: "2026-09-28T20:34:42.068838+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+object_type: "research"
+origin_worker_id: 586
+parent_id: "1000243"
+position: 0
+research_interface:
+  consumer: "large-order minimum-side normalization"
+  given: "a Phi-minimal spanning three-cover in a connected pairwise-repartition component containing no cover with at most two paths, in a minimum counterexample of order at least twenty-five"
+  produces: "minimum component order at least eight, or order disagreement, a proper Hamiltonian four/five-set with path-cover-two complement, an explicit endpoint cross triple, or an endpoint-to-endpoint tight path through a nonempty interval of another component"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "From order twenty-five a Phi-minimal three-cover has minimum side at least eight or explicit local structure."
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "From order twenty-five a Phi-minimal three-cover has minimum side at least eight or explicit local structure"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:53:15.675251+00:00"
+version: 7

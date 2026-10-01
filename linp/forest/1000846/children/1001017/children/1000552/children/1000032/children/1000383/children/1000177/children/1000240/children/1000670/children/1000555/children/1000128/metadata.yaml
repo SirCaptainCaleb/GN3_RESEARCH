@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T14:13:26.64031+00:00"
+id: "1000128"
+last_elevation_revision: null
+last_substantive_worker_id: 258
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "2680ff3a-be7e-481d-9746-8d45e416e22a"
+    detail: "Replaced prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:35:35.148944+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "2680ff3a-be7e-481d-9746-8d45e416e22a"
+    detail: "Replaced prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:35:35.148944+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:33:49.151865+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 258
+parent_id: "1000555"
+position: 0
+research_interface:
+  consequence: "After ordering common-terminal ascending edges by rank, every higher-rank source rail is a transversal of every lower-rank edge. The rail-edge incidence matrix is triangularly complete."
+  consumer:
+    - "gap-one near-equality rail system"
+    - "rank-ordered blocker geometry"
+    - "post-43/48 strengthening"
+  given:
+    - "ascending nonspecial edge"
+    - "canonical maximum source rail"
+    - "common terminal"
+  next_need: "Apply to the near-dangerous gap-one family, where almost all J_q edges are ascending-terminal. Split each forced contact into source hits and opposite-terminal hits; many source hits force a dense source-rail intersection graph, while many terminal hits force ordered terminal contacts on higher-rank rails."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Canonical source rails are downward-complete against common-terminal competitors."
+substantive_worker_ids:
+  - 258
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Canonical source rails are downward-complete against common-terminal competitors"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

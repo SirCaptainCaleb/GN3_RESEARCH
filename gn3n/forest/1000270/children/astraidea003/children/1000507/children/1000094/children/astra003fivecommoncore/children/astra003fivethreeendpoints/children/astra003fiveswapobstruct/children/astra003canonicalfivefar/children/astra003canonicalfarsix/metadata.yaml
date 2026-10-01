@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T18:26:23.765939+00:00"
+id: "astra003canonicalfarsix"
+last_elevation_revision: 0
+last_substantive_worker_id: 576
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 149
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T18:44:41.549868+00:00"
+    worker_id: 662
+  last_audit_observation:
+    claim_id: 149
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T18:44:41.549868+00:00"
+    worker_id: 662
+object_type: "research"
+origin_worker_id: 576
+parent_id: "astra003canonicalfivefar"
+position: 0
+research_interface:
+  consumer: "Astra idea 003; bridge-minimality conjecture; well-founded defect-window transport"
+  given: "the synchronized middle-vertex case of a Phi-minimal canonical five-bridge state, together with a successful equal-Phi exchange at one far endpoint"
+  need: "show repeated equal-Phi continuation cannot cycle indefinitely, or couple the resulting multiple opposite-side obstructions into strict descent / defect compression"
+  produces: "the six-set formed by the shared four-core and both far endpoints is forced non-Hamiltonian; at least two core labels then either continue equal-Phi transport across the opposite side or create bounded insertion obstructions there"
+research_level: "lemma"
+semantic_container_text: "Synchronized far-end six-set branch: a successful far-end exchange creates a non-Hamiltonian six-set whose good deletion pattern has a fixed-pair structure; common four-cores, continuation labels, bounded common windows, and neutral 4-to-5 rotations then force order disturbance or controlled transport."
+simplified_statement: "A successful far-end exchange forces a non-Hamiltonian synchronized six-set"
+substantive_worker_ids:
+  - 576
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A successful far-end exchange forces a non-Hamiltonian synchronized six-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:27:38.933806+00:00"
+version: 15

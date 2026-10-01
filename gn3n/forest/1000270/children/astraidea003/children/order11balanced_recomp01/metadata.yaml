@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T01:22:10.200789+00:00"
+id: "order11balanced_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 239
+    detail: "Faithful recomposition. Fixed-singleton fibers are one-move cliques, so singleton-label sets of distinct omission-containing components are disjoint. The certified order-eleven shell gives at least nine labels in every such component, forcing uniqueness on eleven vertices; existence of a 5|5|1 state for every singleton then places every equitable omission state there, and the certified two-move 4|4|3-to-5|5|1 bridge places the entire 4|4|3 surface there as well. No hypothesis or exceptional case from the source package is lost."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 239
+    detail: "Faithful recomposition. Fixed-singleton fibers are one-move cliques, so singleton-label sets of distinct omission-containing components are disjoint. The certified order-eleven shell gives at least nine labels in every such component, forcing uniqueness on eleven vertices; existence of a 5|5|1 state for every singleton then places every equitable omission state there, and the certified two-move 4|4|3-to-5|5|1 bridge places the entire 4|4|3 surface there as well. No hypothesis or exceptional case from the source package is lost."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+    worker_id: 694
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T01:22:42.890479+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "astraidea003"
+position: 1
+research_interface:
+  consumer: "order-eleven balanced-surface closure"
+  given: "order-eleven minimum counterexample with the established >=9 singleton-label bound per omission component, existence of a 5|5|1 state for every singleton label, and the 4|4|3-to-5|5|1 bridge"
+  produces: "one Astra component containing every 5|5|1 and every 4|4|3 state"
+research_level: "theorem"
+semantic_container_text: "Order-eleven balanced-state connectivity branch: all 5|5|1 and 4|4|3 states are driven into one Astra component, and the descendants analyze triple reachability and longest-path obstruction cases needed to rule out an order-eleven counterexample."
+simplified_statement: "All balanced order-eleven states lie in one Astra component"
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "All balanced order-eleven states lie in one Astra component"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:33.193322+00:00"
+version: 7

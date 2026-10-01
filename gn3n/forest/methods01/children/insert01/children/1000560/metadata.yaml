@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T21:52:43.84633+00:00"
+id: "1000560"
+last_elevation_revision: 8453
+last_substantive_worker_id: 630
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 220
+    detail: "Independent check of insert01 Section 3. Alternative 1 gives (x,b_t,b_{t-1}); alternative 2 gives (b_{t+1},b_t,x), with the final-insertion arc also covering the endpoint reversal (x,b_m,b_{m-1}). Thus every noninsertable exterior vertex reverses a displayed path edge."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:14:33.254031+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 220
+    detail: "Independent check of insert01 Section 3. Alternative 1 gives (x,b_t,b_{t-1}); alternative 2 gives (b_{t+1},b_t,x), with the final-insertion arc also covering the endpoint reversal (x,b_m,b_{m-1}). Thus every noninsertable exterior vertex reverses a displayed path edge."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:14:33.254031+00:00"
+    worker_id: 664
+object_type: "research"
+origin_worker_id: 586
+parent_id: "insert01"
+position: 1
+research_interface:
+  consumer: "insertion calculus; endpoint transport; five-side and quadratic-minimum obstruction routes"
+  given: "a displayed tight path and an exterior vertex that cannot be inserted anywhere in that displayed order"
+  produces: "an explicit tight triple reversing one displayed path edge"
+research_level: "theorem"
+semantic_container_text: "Global noninsertability reversal branch: any vertex noninsertable into a displayed path reverses a displayed edge, and a family of such vertices yields a corresponding labelwise reversal family."
+simplified_statement: "Every globally noninsertable vertex reverses a displayed path edge."
+substantive_worker_ids:
+  - 586
+  - 630
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every globally noninsertable vertex reverses a displayed path edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 7

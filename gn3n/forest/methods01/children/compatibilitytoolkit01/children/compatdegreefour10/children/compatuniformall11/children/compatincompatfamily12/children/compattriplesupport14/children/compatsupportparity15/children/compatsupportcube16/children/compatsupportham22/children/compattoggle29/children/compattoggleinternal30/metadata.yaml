@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T13:18:34.678619+00:00"
+id: "compattoggleinternal30"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 171
+    detail: "Insertion of c into any Hamilton path on a one-label-good support would Hamiltonize the forbidden two-label support; conversely c cannot be an endpoint of a rescued Hamilton path because deleting it would Hamiltonize the forbidden one-label support."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:23:20.08573+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 171
+    detail: "Insertion of c into any Hamilton path on a one-label-good support would Hamiltonize the forbidden two-label support; conversely c cannot be an endpoint of a rescued Hamilton path because deleting it would Hamiltonize the forbidden one-label support."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:23:20.08573+00:00"
+    worker_id: 693
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compattoggle29"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect compression"
+  given: "the symmetric one-split extender-blocker toggle"
+  need: "combine failed-insertion kernels for c on R+a and S+b with the forced-interior appearances of c on R+bc and S+ac"
+  produces: "c is universally noninsertable on both pre-rescue Hamiltonian supports and universally internal on both rescued Hamiltonian supports; b blocks R and a blocks S"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The switching label is universally noninsertable before rescue and forced internal after rescue"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The switching label is universally noninsertable before rescue and forced internal after rescue"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 7

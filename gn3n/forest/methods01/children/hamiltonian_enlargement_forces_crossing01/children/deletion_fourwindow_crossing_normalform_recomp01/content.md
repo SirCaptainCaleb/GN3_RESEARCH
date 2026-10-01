@@ -1,0 +1,13 @@
+# Deletion-label four-window crossing normal form
+
+## Statement
+
+Let H be a minimum counterexample and let x be any vertex. There exists a Hamiltonian four-set containing x. Moreover, for every Hamiltonian four-set W containing x, put A=W-{x} and B=V(H)-W. Then H-W is non-Hamiltonian with path-cover number two, every two-cover of H-x has an ordinary path edge crossing A|B, and for a two-cover T of H-x minimizing the number kappa of such crossing edges, at least one of the following holds: (1) kappa>=3, hence every two-cover has at least three A|B crossing edges; (2) a tight triple containing x reverses the displayed initial or terminal ordered pair of an A-block of T; (3) kappa=2, one component of T has block form B_1|A|B_2 with B_1,B_2 nonempty B-blocks, and the other component lies entirely in B.
+
+## Body
+
+Existence of a Hamiltonian four-set W containing x is supplied by the deletion-label four-window theorem 1000785. Now fix any Hamiltonian W containing x and put A=W-{x}, B=V(H)-W. Since W is a proper Hamiltonian support in a minimum counterexample, H-W cannot be Hamiltonian, while minimum-counterexample calculus gives path-cover number at most two; hence its path-cover number is two. The Hamiltonian enlargement A union {x}=W and hamiltonian_enlargement_forces_crossing01 imply that every two-cover of H-x crosses A|B, so the minimum crossing count kappa is positive.
+
+Choose a two-cover T of H-x minimizing kappa. If kappa>=3, outcome (1) holds. Suppose kappa=1. Exactly one component is mixed. The other cannot lie in A: every deletion-cover component has order at least three by deletion_side_ge3_01, while the mixed component already uses an A-vertex and |A|=3. Thus the other component lies in B, and all three vertices of A form one terminal block of the mixed path. If x extended that terminal block at its outer end, T would restore to a spanning two-cover of H; therefore the extension triple is non-tight and its boundary flip is tight, giving outcome (2).
+
+Suppose kappa=2. If the crossings lie in different components, each component has one terminal A-block and one B-block. The three A-vertices split into two nonempty terminal blocks, so one has order two; the same failed-restoration argument gives outcome (2). If both crossings lie in one component, the other component has no crossing and by the same size argument lies entirely in B. All three A-vertices therefore lie in the mixed component, whose alternating block pattern is A|B|A or B|A|B. In the first pattern one terminal A-block has order two and again yields outcome (2). The only remaining pattern is B_1|A|B_2 with both B-blocks nonempty, which is outcome (3).

@@ -1,0 +1,48 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-21T03:41:55.048797+00:00"
+id: "1000801"
+last_elevation_revision: 0
+last_substantive_worker_id: 666
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 135
+    detail: "Independent check: for distinct d,e in U, a non-Hamiltonian five-set T union {d,e} would have acyclic comparison digraph, contradicting the directed comparison 3-cycle already present on T. Hence T union {d,e} is Hamiltonian. Complementarity and minimality give pc(U-{d,e})=2; Hamiltonicity of U-d would imply Hamiltonicity of a two-deletion by deleting a path endpoint; U itself cannot be Hamiltonian because T has a tight 3-path. Thus all claimed radius-two exclusions and component-size consequences follow."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T03:44:06.8034+00:00"
+    worker_id: 598
+  last_audit_observation:
+    claim_id: 135
+    detail: "Independent check: for distinct d,e in U, a non-Hamiltonian five-set T union {d,e} would have acyclic comparison digraph, contradicting the directed comparison 3-cycle already present on T. Hence T union {d,e} is Hamiltonian. Complementarity and minimality give pc(U-{d,e})=2; Hamiltonicity of U-d would imply Hamiltonicity of a two-deletion by deleting a path endpoint; U itself cannot be Hamiltonian because T has a tight 3-path. Thus all claimed radius-two exclusions and component-size consequences follow."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T03:44:06.8034+00:00"
+    worker_id: 598
+object_type: "research"
+origin_worker_id: 666
+parent_id: "1000741"
+position: 1
+research_interface:
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Cyclic comparison triangles give radius-two stable complements."
+substantive_worker_ids:
+  - 666
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Cyclic comparison triangles give radius-two stable complements"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-23T03:40:10.44487+00:00"
+version: 7

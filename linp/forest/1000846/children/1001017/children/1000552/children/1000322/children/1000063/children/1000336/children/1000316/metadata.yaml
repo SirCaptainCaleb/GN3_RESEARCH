@@ -1,0 +1,68 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-23T02:43:00.498634+00:00"
+id: "1000316"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition faithfully combines the certified defect-count identities, terminal-degree formula, and opposite-terminal bridge/joint dichotomy with unchanged hypotheses and constants."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition faithfully combines the certified defect-count identities, terminal-degree formula, and opposite-terminal bridge/joint dichotomy with unchanged hypotheses and constants."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    backfilled: true
+    classified_at: "2026-09-23T03:45:16.180482+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "1000674"
+    - "1000352"
+    - "1000487"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "1000336"
+position: 0
+research_interface:
+  consequence: "Open alternating components are exactly terminal single/unused defects, terminal degree is their signed defect balance, and opposite-terminal single defects obey a bridge/joint/triangle dichotomy."
+  consumer:
+    - "maximum-rank nonspecial-edge degree conjecture"
+    - "Posa endpoint expansion"
+    - "alternating blocker defect route"
+  given:
+    - "two-terminal alternating blocker matching system"
+    - "globally longest path"
+  next_need: "Apply the splice dichotomy to alternating-component endpoints and control terminal triangles and joint-forced adjacent pairs."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two-terminal blocker systems satisfy exact defect identities, and opposite-terminal single blockers either form a 3-cycle, give a bridge splice, or meet at a consecutive-edge joint."
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal defect accounting and opposite-terminal splice dichotomy"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 12

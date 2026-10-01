@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-20T19:54:54.726726+00:00"
+id: "1000741"
+last_elevation_revision: 0
+last_substantive_worker_id: 673
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  semantic_container_seed:
+    atlas_key: "ordered-exchange-guidance"
+    headline: "Ordered path arguments beyond support expansion"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "research"
+origin_worker_id: 673
+parent_id: "transport01"
+position: 440
+research_interface:
+  closure: "defect span at most two"
+  forbidden_shortcut: "recurrence without descent; unchecked path rearrangement"
+  given: "localized support/order disagreement or bounded insertion obstruction"
+  need: "direct two-cover or endpoint reversal/absorption"
+research_level: "proof_level"
+semantic_container_text: "Endpoint transport and defect compression: ordered endpoint covers, support/order disagreement, short transport, compatible-triangle and rooted-graph structure, codimension shells, and bounded obstruction routes toward compressing the defect span."
+simplified_statement: "A forced support crossing, order disagreement, or bounded local obstruction should yield a spanning two-cover or a transportable endpoint obstruction."
+substantive_worker_ids:
+  - 673
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Endpoint-transport / defect-compression bridge"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:05:20.790279+00:00"
+version: 24

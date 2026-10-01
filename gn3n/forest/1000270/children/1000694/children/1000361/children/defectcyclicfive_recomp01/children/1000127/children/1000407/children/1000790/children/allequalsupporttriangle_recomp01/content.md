@@ -1,0 +1,9 @@
+# All-equal antipodal exchange yields the support triangle with blocked whole-path enlargements
+
+## Statement
+
+Assume the all-equal branch of the {1,1,1} cube. Let the antipodal base cover be A_1|A_2|A_3 with |A_i|=r and write A_i=(t_i,M_i), where t_i is the transferred boundary label. Then the antipodal cover has paths (M_i,t_{i+1}), so each S_i:=V(A_i) union {t_{i+1}} is Hamiltonian with displayed path (t_i,M_i,t_{i+1}). Its complement has two-cover M_{i+1}|A_{i+2}, and neither S_i union V(M_{i+1}) nor S_i union V(A_{i+2}) is Hamiltonian. Moreover S_i intersect S_{i+1}={t_{i+1}}, S_1 intersect S_2 intersect S_3=empty, and S_1 union S_2 union S_3=V(H).
+
+## Body
+
+The antipodal exchange theorem gives the simultaneous cyclic transfer: each A_i loses t_i and gains t_{i+1} at the opposite displayed end while all untouched vertices keep their inherited order. Thus both (t_i,M_i) and (M_i,t_{i+1}) are tight, giving the Hamilton path (t_i,M_i,t_{i+1}) on S_i. Removing S_i leaves M_{i+1}|A_{i+2}. If H-S_i were Hamiltonian, it together with the Hamilton path on S_i would give a spanning two-cover, impossible in the minimum-counterexample setting; hence the complement has path-cover number two. Since the A_i are pairwise disjoint and S_i=V(A_i) union {t_{i+1}}, we also have S_i intersect S_{i+1}={t_{i+1}}, S_1 intersect S_2 intersect S_3=empty, and S_1 union S_2 union S_3=V(H). If S_i union V(M_{i+1}) were Hamiltonian, the remaining inherited path A_{i+2} would complete a spanning two-cover, again impossible. Likewise, if S_i union V(A_{i+2}) were Hamiltonian, the remaining inherited path M_{i+1} would complete a spanning two-cover. Apply cyclically.

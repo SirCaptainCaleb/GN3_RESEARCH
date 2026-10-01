@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T13:17:15.009237+00:00"
+id: "1000342"
+last_elevation_revision: null
+last_substantive_worker_id: 209
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "5869574b-c3ba-4e01-9546-e4cb3014ef9c"
+    detail: "Independent check passed. For c=x the first-occurrence prefix gives a<=q-1; for c=u, x is absent from P and appending e to the prefix forces a<=q-2 by the unique-entrance property. The suffix argument gives b>=p-q+2. Since a contact vertex outside g_p occurs in one edge or two consecutive edges, b<=a+1, yielding p<=2q-2. For rank at most q, private contacts lie at indices L..U and joint contacts at L-1..U with L=p-q+2, U=q-1; q<p ensures these are interior positions, so the counts are 2q-p-2 and 2q-p-1 respectively, totaling max(0,4q-2p-3). Linearity makes contact vertices distinct across edges through v. Terminology conforms to the project dictionary."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:00:05.248418+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_audit_observation:
+    claim_id: "5869574b-c3ba-4e01-9546-e4cb3014ef9c"
+    detail: "Independent check passed. For c=x the first-occurrence prefix gives a<=q-1; for c=u, x is absent from P and appending e to the prefix forces a<=q-2 by the unique-entrance property. The suffix argument gives b>=p-q+2. Since a contact vertex outside g_p occurs in one edge or two consecutive edges, b<=a+1, yielding p<=2q-2. For rank at most q, private contacts lie at indices L..U and joint contacts at L-1..U with L=p-q+2, U=q-1; q<p ensures these are interior positions, so the counts are 2q-p-2 and 2q-p-1 respectively, totaling max(0,4q-2p-3). Linearity makes contact vertices distinct across edges through v. Terminology conforms to the project dictionary."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:00:05.248418+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  semantic_container_seed:
+    atlas_key: "single_contact_spacing"
+    headline: "Single-contact central-window geometry"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "lemma"
+origin_worker_id: 258
+parent_id: "1001055"
+position: 0
+research_interface:
+  consequence: "On a maximum p-path, a rank-q ascending terminal incidence can be single only in a central window of size 4q-2p-3; if p>=2q-1 it is automatically double."
+  consumer:
+    - "contact-snake A-D route"
+    - "rank-gap dichotomy"
+    - "0-1-1 residual"
+  given:
+    - "ascending nonspecial edge"
+    - "arbitrary maximum endpoint path"
+    - "unique entrance"
+  next_need: "Combine this maximum-path single-window bound with the exact short-anchor bound for q close to p. The remaining difficult regime is maximum ascending terminal rank q=p-O(1), especially q=p-1."
+research_level: "lemma"
+semantic_container_text: "Single-contact central-window geometry: ascending terminal contacts on a maximum path localize to a central rank window, with ensuing packing and rank constraints."
+simplified_statement: "A rank-q ascending terminal edge that meets a maximum p-edge endpoint path only once must meet it in a central window, so p<=2q-2 and at most max(0,4q-2p-3) such contacts are possible."
+substantive_worker_ids:
+  - 258
+  - 209
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Single ascending terminal contacts on a maximum path lie in one central rank window"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:05:20.790279+00:00"
+version: 7

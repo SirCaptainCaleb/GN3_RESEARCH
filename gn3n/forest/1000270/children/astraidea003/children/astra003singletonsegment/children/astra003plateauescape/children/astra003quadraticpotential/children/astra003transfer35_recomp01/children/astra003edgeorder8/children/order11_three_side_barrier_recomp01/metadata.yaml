@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T05:01:20.834897+00:00"
+id: "order11_three_side_barrier_recomp01"
+last_elevation_revision: 9789
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 766
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:23:23.789352+00:00"
+    worker_id: 755
+  last_audit_observation:
+    claim_id: 766
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:23:23.789352+00:00"
+    worker_id: 755
+  recomposition_audit:
+    classified_at: "2026-09-30T05:01:35.716907+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 665
+parent_id: "astra003edgeorder8"
+position: 0
+research_interface:
+  consumer: "Astra-003 no-trapping; order-eleven closure; endpoint transport / defect compression"
+  given: "the balanced-eight structural theorem and a trapped quadratic-minimal three-cover with a three-side; in the terminal case, a hypothetical order-eleven minimum counterexample"
+  need: "consume the universal order-eleven three-plus-four no-merge barrier into an actual two-cover"
+  produces: "balanced 4|4 structure on eight vertices, elimination of trapped three-sides above order eleven, and universal reachability/no-merge barriers for every three-set at order eleven"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Balanced-eight structure collapses trapped three-sides to the universal order-eleven barrier."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Balanced-eight structure collapses trapped three-sides to the universal order-eleven barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 6

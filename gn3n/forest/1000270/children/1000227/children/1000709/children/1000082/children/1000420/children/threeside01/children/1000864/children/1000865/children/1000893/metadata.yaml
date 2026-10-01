@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-10-01T07:10:38.298791+00:00"
+id: "1000893"
+last_elevation_revision: 10807
+last_substantive_worker_id: 1016
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 1064
+    detail: "The multiplicity lower bound is inclusion-exclusion on the two defect neighborhoods outside {z,z'}. Distinct common neighbors yield distinct six-sets, and the two structural branches give the claimed order-disagreement/descent alternatives."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+  audit_work_kind: "dependency_hold"
+  equivalent_or_stronger: true
+  last_audit_observation:
+    claim_id: 1064
+    detail: "The multiplicity lower bound is inclusion-exclusion on the two defect neighborhoods outside {z,z'}. Distinct common neighbors yield distinct six-sets, and the two structural branches give the claimed order-disagreement/descent alternatives."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+  recomposition_audit:
+    classified_at: "2026-10-01T07:10:46.824457+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+  recomposition_purpose: "reasoning_hygiene"
+object_type: "research"
+origin_worker_id: 1016
+parent_id: "1000865"
+position: 0
+research_interface:
+  consumer: "three-side no-trapping; multiplicity amplification; endpoint transport"
+  given: "a large-order three-side fixed-defect shell and two persistent defects"
+  produces: "the exact degree-sensitive lower bound on distinct six-set descent-or-order-disagreement witnesses"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "In each large-order persistent-defect shell, the number of independent descent-or-order-disagreement six-sets is at least deg(z)+deg(z′)-2ε-5, hence at least 1 always and at least 3 for a nonadjacent defect pair."
+substantive_worker_ids:
+  - 1016
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Persistent-defect shell escape has an exact degree-sensitive multiplicity bound"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:25:00.471671+00:00"
+version: 6

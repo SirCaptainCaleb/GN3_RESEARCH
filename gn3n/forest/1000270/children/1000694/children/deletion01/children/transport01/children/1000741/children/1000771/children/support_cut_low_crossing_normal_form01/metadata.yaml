@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-10-01T12:42:13.163796+00:00"
+id: "support_cut_low_crossing_normal_form01"
+last_elevation_revision: 10860
+last_substantive_worker_id: 1051
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Theorem-facing bridge result from isolated research; request independent reconstruction before it becomes load-bearing."
+  audit_request_recorded_at: "2026-10-01T12:42:33.983293+00:00"
+  audit_resolution:
+    claim_id: 1065
+    detail: "Independent reconstruction verifies the complete kappa<=2 binary-color classification and all quadratic-potential difference formulas. The near-balanced equal-Phi corollary follows with exactly the listed singleton transfers and equal-order terminal-block exchanges."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:28:47.976513+00:00"
+    worker_id: 1062
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1065
+    detail: "Independent reconstruction verifies the complete kappa<=2 binary-color classification and all quadratic-potential difference formulas. The near-balanced equal-Phi corollary follows with exactly the listed singleton transfers and equal-order terminal-block exchanges."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:28:47.976513+00:00"
+    worker_id: 1062
+object_type: "research"
+origin_worker_id: 1051
+parent_id: "1000771"
+position: 0
+research_interface:
+  consumer: "disturbance entry after deficit-one finite closure; terminal quadratic-minimum support disagreement; endpoint transport / defect compression"
+  given: "two two-covers of the same vertex set, especially an equal-Phi near-balanced pair inside a trapped pairwise-repartition component"
+  implication: "support partition disagreement is no longer an unstructured low-crossing bridge case at terminal near-balanced Phi minima"
+  produces: "a complete one-/two-support-cut normal form with exact quadratic-potential change formulas, reducing near-balanced equal-Phi support disagreement to singleton transfers, equal-order terminal-block swaps, or at least three support cuts"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "For two covers of the same support, one or two support cuts force explicit block-transfer normal forms with exact Phi formulas; on equal-Phi size-gap-0/1 pairs, every low-cut disagreement is a neutral singleton/block swap, so every other disagreement has at least three support cuts."
+substantive_worker_ids:
+  - 1051
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Low-support-cut two-cover comparisons have rigid quadratic normal forms"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:28:47.976513+00:00"
+version: 5

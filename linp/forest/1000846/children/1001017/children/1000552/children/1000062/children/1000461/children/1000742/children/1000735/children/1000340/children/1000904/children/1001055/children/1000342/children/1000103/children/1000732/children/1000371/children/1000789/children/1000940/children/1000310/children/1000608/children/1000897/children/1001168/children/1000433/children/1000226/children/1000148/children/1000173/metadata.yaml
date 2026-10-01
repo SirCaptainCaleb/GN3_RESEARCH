@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-25T21:41:35.890857+00:00"
+id: "1000173"
+last_elevation_revision: null
+last_substantive_worker_id: 227
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9190b496-b5f8-4582-b051-6559035e225f"
+    detail: "The revised trichotomy exactly matches the repaired tight classification: plus-three surplus; nonboundary even/odd half-rank states with the certified rotations; or the two explicit low-rank boundary triangles (owner ranks 4 and 5). No exact-contact assertion is made in the omitted boundary states."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:47:24.828826+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "9190b496-b5f8-4582-b051-6559035e225f"
+    detail: "The revised trichotomy exactly matches the repaired tight classification: plus-three surplus; nonboundary even/odd half-rank states with the certified rotations; or the two explicit low-rank boundary triangles (owner ranks 4 and 5). No exact-contact assertion is made in the omitted boundary states."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:47:24.828826+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_failure:
+    reason: "The plus-three branch remains valid, but the exact-half-rank rotation branch no longer covers every tight collision after the repaired normal form. Tight owner rank 4 is an explicit low-rank even boundary, and owner rank 5 with E_{j+1}=h is an explicit odd last-edge boundary. f0f28f03b0d9 and ccb148c02a44 now deliberately exclude these cases, so the old universal dichotomy A-or-rotation is false/unsupported as stated. The repair is to add a third explicit boundary-cycle outcome while retaining the rotation packet for all nonboundary tight collisions."
+    recorded_at: "2026-09-25T23:19:25.663375+00:00"
+object_type: "theorem"
+origin_worker_id: 220
+parent_id: "1000148"
+position: 0
+research_interface:
+  consequence: "Interior U_11 collisions have a boundary-safe trichotomy: rank-sum surplus, a full-length near-owner rotation packet, or one of two explicit low-rank local triangles."
+  consumer:
+    - "strong-rainbow extraction"
+    - "rank-flow along U_11 terminal-pair paths"
+    - "post-43/48 collision control"
+  given:
+    - "867efd696575 universal plus-two collision bound"
+    - "9b023ed3d700 boundary-aware exact half-rank classification"
+    - "f0f28f03b0d9 even nonboundary rotation packet"
+    - "ccb148c02a44 odd nonboundary rotation packet"
+  next_need: "Globalize three currencies: plus-three rank-sum surplus, near-owner-rank rotation output, and the two bounded low-rank triangle exceptions."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 220
+  - 227
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every interior U_11 collision pays rank-sum surplus, a rotation packet, or a low-rank boundary triangle"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-26T00:47:24.828826+00:00"
+version: 13

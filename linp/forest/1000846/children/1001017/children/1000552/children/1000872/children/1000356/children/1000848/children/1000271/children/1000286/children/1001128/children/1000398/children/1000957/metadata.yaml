@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 6
+created_at: "2026-09-24T11:28:40.154256+00:00"
+id: "1000957"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_premise_impact_check:
+    checked_at: "2026-09-25T01:08:17.972257+00:00"
+    note: "b7c10f82f599 changed terminology only; its pairwise source-rail intersection conclusion is unchanged, so the two-lens-cell/reciprocal-simple-pair theorem remains valid."
+    source_ids:
+      - "1000818"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 246
+parent_id: "1000398"
+position: 0
+research_interface:
+  consequence: "Any four-edge two-rank obstruction has at least two lens cells; all rail pairs outside those multiple-overlap interactions are rigid aligned reciprocal-terminal pairs."
+  consumer:
+    - "0-1-1 consecutive-rank packing bound"
+    - "one-low odd-central q,(q+1)^3 residue"
+    - "Astra 11/12 route"
+  given:
+    - "pairwise source-rail intersection"
+    - "two-unit distinguished overlap"
+    - "universal aligned-joint rigidity"
+    - "reciprocal-terminal rule for unique intersections"
+  next_need: "Eliminate or charge the remaining lens normal forms. Internal clean cells are balanced and cannot be pierced by an offending cross-edge; only endpoint lens cells or exterior cross-edge placements remain. Classify those placements in the one-low q,(q+1)^3 state."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every four-edge two-rank source block has two lens cells and reciprocal simple pairs."
+substantive_worker_ids:
+  - 246
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every four-edge two-rank source block has two lens cells and reciprocal simple pairs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 11

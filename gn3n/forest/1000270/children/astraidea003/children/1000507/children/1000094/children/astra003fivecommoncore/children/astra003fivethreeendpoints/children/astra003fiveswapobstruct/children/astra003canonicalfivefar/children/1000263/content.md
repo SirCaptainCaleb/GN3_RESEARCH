@@ -1,0 +1,9 @@
+# A trapped canonical five-bridge reduces to a Hamiltonian 4/5-side or one doubled cross barrier
+
+## Statement
+
+Let H-x=P|Q be a deletion two-cover whose canonical five-bridge state A|C|B is Phi-minimal in a trapped pairwise-repartition component, with C=(q_1,q_0,x,p_m,p_{m-1}) and |A|,|B|>=7. Then either the equal-Phi far-end exchange alternatives of astra003canonicalfivefar occur, or H contains a proper Hamiltonian induced set W of order four or five with H-W non-Hamiltonian of path-cover number exactly two, or there is one central bridge vertex z in {q_0,x,p_m} whose failed-insertion obstructions on A-p_0 and B-q_s are both second-type and lie in the doubled-cross-barrier branch of 4efbe05b945a.
+
+## Body
+
+Apply astra003canonicalfivefar. If one of its equal-Phi far-end exchanges occurs, we are in the first alternative. Otherwise its case (iii) supplies z in {q_0,x,p_m} such that z is noninsertable into both disjoint inherited outer paths A-p_0 and B-q_s. Apply the failed-insertion normal form insert01 to z on each path. If either obstruction is first-type, 0425e03e2aa3 gives a four-vertex window X containing z that is either Hamiltonian or the exceptional cyclic non-Hamiltonian four-kernel. In the Hamiltonian case take W=X. In the cyclic case choose any exterior vertex d from the other nonempty outer path; the universal cyclic-kernel extension theorem makes W=X union {d} Hamiltonian. In either case W is proper, H-W cannot be Hamiltonian because H is a counterexample, and minimality gives pc(H-W)=2. It remains that both outer obstructions are second-type. Then 4efbe05b945a gives either a mixed tight four-path, yielding the Hamiltonian-four-side alternative with path-cover-two complement by the same minimality argument, or its doubled cross barrier. These cases exhaust the synchronized far-end obstruction branch.

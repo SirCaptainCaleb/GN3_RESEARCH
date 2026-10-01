@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-10-01T07:19:55.077482+00:00"
+id: "1000898"
+last_elevation_revision: 10860
+last_substantive_worker_id: 1061
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Elevation strengthened the complement-pair relation to an induced line-graph incidence isomorphism; corrected an initial overstatement before this request. Request independent check of current math version."
+  audit_request_recorded_at: "2026-10-01T13:34:07.248765+00:00"
+  audit_resolution:
+    claim_id: 1064
+    detail: "The certified two-bad-extension theorem gives adjacent edges in K. Complementation on two-subsets of a four-set preserves adjacency, so the opposite-edge image J also contains adjacent edges. No route-specific hypotheses are used."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1064
+    detail: "The certified two-bad-extension theorem gives adjacent edges in K. Complementation on two-subsets of a four-set preserves adjacency, so the opposite-edge image J also contains adjacent edges. No route-specific hypotheses are used."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+object_type: "research"
+origin_worker_id: 1016
+parent_id: "1000880"
+position: 5
+research_interface:
+  consumer: "endpoint-shell graphs; fixed-pair transport; bounded window amplification"
+  given: "a Hamiltonian four-set with two non-Hamiltonian exterior one-vertex extensions"
+  produces: "adjacent Hamiltonian edges in both direct and complementary pair parameterizations"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For any Hamiltonian four-set X with two bad exterior extensions a,b, the Hamiltonian pair graph K on X and its opposite-edge image J both contain adjacent edges; no minimum-counterexample, path, or extremality context is needed."
+substantive_worker_ids:
+  - 1016
+  - 1061
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Two bad extensions force adjacency in both complementary endpoint-pair graphs"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:34:07.248765+00:00"
+version: 9

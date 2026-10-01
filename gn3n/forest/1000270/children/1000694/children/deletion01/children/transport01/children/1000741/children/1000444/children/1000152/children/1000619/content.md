@@ -1,0 +1,15 @@
+# Internal restoration at a minimum-side endpoint is an exceptional cyclic four-kernel
+
+## Statement
+
+Let H be a minimum counterexample, let H-y=R|Q be a deletion two-cover whose smaller component R has globally minimum order mu, and let z be a displayed endpoint of R. Suppose a two-cover of H-z lies in the support-compatible internal-restoration branch of 89d96023752d and preserves the inherited order on R-z. Then the four vertices consisting of y, z, and the two vertices of R immediately preceding z (or, symmetrically, following z at the initial end) induce the exceptional cyclic non-Hamiltonian four-kernel. Consequently: (1) mu=3 or mu=4 is impossible; (2) if mu=5, the two surviving vertices of R outside the kernel together with the kernel generate four support-compatible deletion covers with fixed complementary path Q, so the synchronized endpoint-family theorem yields crossing multiplicity, a direct mixed-support edge, or explicit order disagreement; (3) if mu>=6, the branch enters the certified cyclic-kernel complement-stability frontier.
+
+## Body
+
+Assume z is the terminal endpoint and write R=(P,b,a,z), where P may be empty. By 303f27f5e204 the internal-restoration path in H-z ends (P,b,y,a). Hence (b,a,z) and (b,y,a) are tight. The universal endpoint hooks c38e8b5c48ee for the original deletion cover H-y=R|Q give (y,z,a) and (z,y,b) tight. On X={b,a,z,y}, these four oriented triples are exactly the four reversal classes of the exceptional cyclic non-Hamiltonian four-set from smallset01: under the identification (a_0,a_1,a_2,a_3)=(a,b,y,z), their cyclic representatives are a_0a_1a_2, a_3a_1a_0, a_0a_2a_3, a_3a_2a_1. Thus X is the exceptional cyclic kernel. The initial-end case is symmetric.
+
+If mu=3, then P is empty. For any endpoint q of Q, the cyclic-kernel extension theorem in smallset01 makes X union {q} Hamiltonian, while Q-q remains a tight path. These two paths cover H, contradiction. If mu=4, then P is a singleton {p}. The same cyclic-kernel extension theorem makes X union {p} Hamiltonian; together with Q this again two-covers H. Hence mu>=5.
+
+Suppose mu=5. Then P has two vertices d,e and is a tight two-vertex path. The cyclic-kernel exterior-forcing theorem in transport01 says that for every u in X the five-set (X-{u}) union {d,e} is Hamiltonian. Put C=X union {d,e}. If H[C] were Hamiltonian, C|Q would two-cover H, so H[C] is non-Hamiltonian. Therefore the four covers F_u=((C-{u})|Q), u in X, form a support-compatible deletion family localized to the fixed decomposition C|Q, with H[C] non-Hamiltonian and Q Hamiltonian. Applying e92b0f47c1a6 gives its synchronized endpoint conclusion: crossing multiplicity at least three, a direct mixed-support edge, or explicit order disagreement.
+
+Finally assume mu>=6. We have identified an exceptional cyclic four-kernel X. Its complement K=H-X contains the displayed two-cover P|Q with |P|=mu-3>=3. The certified theorem 866572f760dc applies to this cyclic-kernel setting and places K in the radius-two stable path-cover-two frontier. Thus the internal-restoration branch has no separate large-scale geometry beyond the existing cyclic-kernel frontier.

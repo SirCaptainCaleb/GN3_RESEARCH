@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 9
+created_at: "2026-09-20T20:19:19.406053+00:00"
+id: "transportpersist01"
+last_elevation_revision: 0
+last_substantive_worker_id: 603
+legacy_id: null
+lifecycle_status: "active"
+math_version: 9
+mathematical_status: "proved"
+metadata:
+  curation: "retention_audit_persistent_transport"
+  last_audit_observation:
+    claim_id: 373
+    detail: "Stale-support reconfirmation. The theorem body is unchanged and its current certified premises are insert01, localextend01, mincex01 and smallset01. I checked the changed-premise seams: the exterior-extension amplification and two-dual-good-vertex counts are exactly current localextend/smallset consequences; persistent noninsertability uses only n>10 from mincex01 plus the displayed two-sided non-Hamiltonicity; the strict-alternation and shifted two-cut arguments use the current bad-five-set/repeated-defect extension statements. No conclusion depends on a superseded weaker formulation. The certificate premise snapshot can be refreshed without changing the mathematics."
+    math_version: 9
+    outcome: "pass"
+    recorded_at: "2026-09-21T15:35:02.082836+00:00"
+    worker_id: 657
+  last_premise_impact_check:
+    checked_at: "2026-09-21T15:35:02.082836+00:00"
+    note: "Stale-support reconfirmation. The theorem body is unchanged and its current certified premises are insert01, localextend01, mincex01 and smallset01. I checked the changed-premise seams: the exterior-extension amplification and two-dual-good-vertex counts are exactly current localextend/smallset consequences; persistent noninsertability uses only n>10 from mincex01 plus the displayed two-sided non-Hamiltonicity; the strict-alternation and shifted two-cut arguments use the current bad-five-set/repeated-defect extension statements. No conclusion depends on a superseded weaker formulation. The certificate premise snapshot can be refreshed without changing the mathematics."
+    source_ids:
+      - "insert01"
+      - "localextend01"
+      - "mincex01"
+      - "smallset01"
+    worker_id: 657
+  semantic_container_seed:
+    atlas_key: "trust-debt"
+    headline: "Stale and provisional route modules"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "research"
+origin_worker_id: 603
+parent_id: "transport01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Persistent-label successful-exchange transport."
+substantive_worker_ids:
+  - 603
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Persistent-label successful-exchange transport"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:21.804103+00:00"
+version: 16

@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-21T11:37:39.060827+00:00"
+id: "1000788"
+last_elevation_revision: 0
+last_substantive_worker_id: 598
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 416
+    detail: "Reconstructed the asymmetric-pivot splice. After symmetry, (q_j,x,p_{i+1}) and its opposite-side reverse (q_{j+1},x,p_i) are tight. Together with the pivot paths (Q_L,x) and (x,P_R), the first central triple makes K=(Q_L,x,P_R) tight, so K|P_L|Q_R is a spanning three-cover with nontrivial side components. Concatenating K P_L creates exactly beta_P=(p_{m-1},p_m,p_0) and alpha_P=(p_m,p_0,p_1); they cannot both be tight. The certified cyclic-rotation lemma then says exactly one tight gives a distinct Hamilton order of P (hence path-order disagreement), while neither tight gives the reversed endpoint four-path (p_1,p_0,p_m,p_{m-1}). The symmetric Q_R K argument is identical. Thus absent order disagreement both endpoint bridges are forced simultaneously."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-21T11:38:32.964996+00:00"
+    worker_id: 684
+  last_audit_observation:
+    claim_id: 416
+    detail: "Reconstructed the asymmetric-pivot splice. After symmetry, (q_j,x,p_{i+1}) and its opposite-side reverse (q_{j+1},x,p_i) are tight. Together with the pivot paths (Q_L,x) and (x,P_R), the first central triple makes K=(Q_L,x,P_R) tight, so K|P_L|Q_R is a spanning three-cover with nontrivial side components. Concatenating K P_L creates exactly beta_P=(p_{m-1},p_m,p_0) and alpha_P=(p_m,p_0,p_1); they cannot both be tight. The certified cyclic-rotation lemma then says exactly one tight gives a distinct Hamilton order of P (hence path-order disagreement), while neither tight gives the reversed endpoint four-path (p_1,p_0,p_m,p_{m-1}). The symmetric Q_R K argument is identical. Thus absent order disagreement both endpoint bridges are forced simultaneously."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-21T11:38:32.964996+00:00"
+    worker_id: 684
+object_type: "research"
+origin_worker_id: 598
+parent_id: "transport01"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge"
+  given: "an exact deletion cover whose two failed-insertion obstructions are second-type interior pivots with asymmetric central cross-join orientation"
+  need: "consume the simultaneous endpoint four-bridges, or the explicit order-disagreement branch, into defect-span compression"
+  produces: "either explicit relative-order disagreement or tight four-paths joining the reversed endpoint pairs of both deletion-cover components"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Asymmetric interior pivot cross-swaps force order disagreement or two endpoint bridges."
+substantive_worker_ids:
+  - 598
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Asymmetric interior pivot cross-swaps force order disagreement or two endpoint bridges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:25:25.297469+00:00"
+version: 8

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T00:53:45.189282+00:00"
+id: "astra005crossing_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 394
+    detail: "Recomposition faithfully preserves the certified cut-barrier theorem, the at-least-two-crossings interior-deletion theorem, and the full equality-two-crossing normal form. The B-split crosswise case, L/R-split crosswise case, unique isolated prescribed-side block exception, and its order-at-least-three bound are all retained with the same hypotheses and no weakened constants or omitted exceptions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T00:54:33.159353+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 394
+    detail: "Recomposition faithfully preserves the certified cut-barrier theorem, the at-least-two-crossings interior-deletion theorem, and the full equality-two-crossing normal form. The B-split crosswise case, L/R-split crosswise case, unique isolated prescribed-side block exception, and its order-at-least-three bound are all retained with the same hypotheses and no weakened constants or omitted exceptions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T00:54:33.159353+00:00"
+    worker_id: 694
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T00:53:53.679096+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "astra005minblock"
+position: 0
+research_interface:
+  consumer: "Astra idea 005 prescribed-separation route"
+  given: "minimum prescribed-separation failure in the two-coverable branch"
+  produces: "simultaneous cut barriers, at least two crossings after interior deletion, and the exact two-crossing normal form"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Inseparable pairs force cut barriers and rigid two-crossing deletion geometry."
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Inseparable pairs force cut barriers and rigid two-crossing deletion geometry"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:54:33.159353+00:00"
+version: 6

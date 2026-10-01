@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T01:21:56.560639+00:00"
+id: "weightednearhalf01"
+last_elevation_revision: 0
+last_substantive_worker_id: 581
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 69
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T01:45:30.621014+00:00"
+    worker_id: 709
+  last_audit_observation:
+    claim_id: 69
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T01:45:30.621014+00:00"
+    worker_id: 709
+object_type: "research"
+origin_worker_id: 581
+parent_id: "astraidea001"
+position: 0
+research_interface:
+  consumer: "astraidea001 and fractional-cover route"
+  given: "minimum counterexample and arbitrary nonnegative vertex weights"
+  need: "remove the residual minimum-vertex loss to reach W/2"
+  produces: "tight path of weight at least (W-min w)/2"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Minimum counterexamples satisfy the weighted half principle up to one minimum vertex."
+substantive_worker_ids:
+  - 581
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum counterexamples satisfy the weighted half principle up to one minimum vertex"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T13:37:43.628003+00:00"
+version: 7

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T05:32:46.209955+00:00"
+id: "1001102"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "336738b5-f5b4-4899-8ca2-67663e4af060"
+    detail: "Checked the four-of-five combinatorial split and both A,D / C,E splices; each gives a q+1 path ending at F, contradicting phi(F)=q."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:03:37.560588+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "336738b5-f5b4-4899-8ca2-67663e4af060"
+    detail: "Checked the four-of-five combinatorial split and both A,D / C,E splices; each gives a q+1 path ending at F, contradicting phi(F)=q."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:03:37.560588+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000621"
+position: 0
+research_interface:
+  consequence: "Both rightmost odd-central witness slots F and G are impossible in a four-single obstruction. All four contacts are forced into the five left slots A,B,C,D,E."
+  consumer:
+    - "p=2q-3 defect-corrected consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "8d1adea102fe G exclusion"
+    - "08f894b8cb5e private clean-hole rule"
+    - "four all-single charged contacts"
+  next_need: "Classify four-of-five occupancy on A,B,C,D,E. Rank-q witnesses lie only in C,D,E; terminal-only rank-q is only C. Clean entrance C forbids A, and clean entrance E forbids B,C. Use these hole rules plus two-edge bridge pairs to reduce to a very small terminal-only core."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

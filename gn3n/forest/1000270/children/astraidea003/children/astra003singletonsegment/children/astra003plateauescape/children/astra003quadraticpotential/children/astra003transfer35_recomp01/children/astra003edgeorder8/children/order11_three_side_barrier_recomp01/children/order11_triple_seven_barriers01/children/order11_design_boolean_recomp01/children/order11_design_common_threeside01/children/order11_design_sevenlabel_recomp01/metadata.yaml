@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-10-01T01:24:33.427958+00:00"
+id: "order11_design_sevenlabel_recomp01"
+last_elevation_revision: 10414
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Reaudit math version 2 recomposition, especially exact five-side deletion labels and the direct derivation of the two unique-bad-deletion five-shells from sixset_deletion_graph_oriented_recomp01 plus smallset01."
+  audit_request_recorded_at: "2026-10-01T01:53:05.722245+00:00"
+  audit_resolution:
+    claim_id: 906
+    detail: "Independently checked the convexity bounds, the m=14 design count, adjacent-pair grouping, balanced-swap construction, and the seven-label perfect-matching normal form."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  audit_trigger_kind: "explicit"
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 906
+    detail: "Independently checked the convexity bounds, the m=14 design count, adjacent-pair grouping, balanced-swap construction, and the seven-label perfect-matching normal form."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  recomposition_audit:
+    classified_at: "2026-10-01T01:25:38.288838+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+object_type: "research"
+origin_worker_id: 745
+parent_id: "order11_design_common_threeside01"
+position: 0
+research_interface:
+  consumer: "order-eleven closure and seven-label exclusion"
+  given: "the order-eleven design branch; optionally the seven-label Astra equality case"
+  produces: "quantitative adjacent-center multiplicity, exact common-three-side deletion structure, balanced swaps, and the reciprocal-swap-fork versus rigid matching-block five-shell normal form"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The order-11 design branch has quantitative adjacent-center multiplicity; each center pair gives an exact common-three-side/five-side package, and the seven-label matching exception consists of a matching-block K4 with two unique-bad-deletion five-shells."
+substantive_worker_ids:
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Order-eleven design multiplicity, swaps, and seven-label normal form"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 8

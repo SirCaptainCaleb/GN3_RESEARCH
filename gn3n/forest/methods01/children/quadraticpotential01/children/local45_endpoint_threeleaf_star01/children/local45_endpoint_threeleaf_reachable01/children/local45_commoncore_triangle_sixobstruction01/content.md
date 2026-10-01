@@ -1,0 +1,9 @@
+# A common-core plateau swap triangle forces a non-Hamiltonian six-shell
+
+## Statement
+
+Let H be a minimum counterexample and let X|Y|P be a componentwise Phi-minimal 4|5|m state with m>=7. Suppose the common-w branch of local45_endpoint_threeleaf_reachable01 occurs: there are disjoint three-sets D,R,Z={z_1,z_2,z_3} partitioning W=V(X) union V(Y), with D={u,v,w}, such that for each i the reachable balanced cover of W has four-side D union {z_i} and five-side R union (Z-{z_i}). Put S=R union Z. Then H[S] is non-Hamiltonian. Moreover at least one r in R has S-{r} Hamiltonian; for every Hamiltonian five-deletion S-{d}, its complement in H is non-Hamiltonian with path-cover number two.
+
+## Body
+
+The three reachable balanced covers give D union {z_i} and R union (Z-{z_i}) Hamiltonian for i=1,2,3. Suppose S=R union Z is Hamiltonian. Since every three-set is a tight path in a boundary tournament, D is Hamiltonian. Repartitioning the fixed nine-vertex subsystem W from one of its 4|5 covers to D|S is one legal pairwise move, changing its quadratic contribution from 4^2+5^2=41 to 3^2+6^2=45, an increase of 4. Now apply threesidedescent6 to the three-side D and the long path P of order m>=7. It gives one legal repartition whose quadratic drop on D|P is at least 2m-8. Relative to the original 4|5|m state, the two-move net change is at most 4-(2m-8)=12-2m<0, contradicting componentwise Phi-minimality. Hence S is non-Hamiltonian. The three deletions S-{z_i}=R union (Z-{z_i}) are Hamiltonian. By the four-of-six theorem smallset01, S has at least four Hamiltonian one-vertex deletions, so at least one additional good deletion is S-{r} for some r in R. Finally any Hamiltonian five-deletion S-{d} is proper; if its complement in H were Hamiltonian, the two Hamilton paths would two-cover H. Minimum-counterexample calculus therefore gives non-Hamiltonian path-cover number two for that complement.

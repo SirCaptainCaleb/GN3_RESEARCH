@@ -1,0 +1,9 @@
+# Lens-free near-top rails retain twenty-five-eighty-eighths whole distinguished pairs
+
+## Statement
+
+In the near-equality regime of a5700a110001, there exist two near-top maximum endpoint paths Q,R such that |V(Q)∩V(R)| >= (5/4-o(1))q, Q and R contain no genuine clean internal lens with distinct sides, and at least (25/88-o(1))q of the early distinguished source-terminal pairs {x_i,u_i} are wholly contained in V(Q)∩V(R).
+
+## Body
+
+Use the common-double-contact averaging part of a5700a110001 to choose two final canonical source rails Q_0,R with at least (25/88-o(1))q early distinguished pairs {x_i,u_i} wholly contained in V(Q_0)∩V(R). By the deterministic-overlap part of the same theorem, |V(Q_0)∩V(R)| >= (5/4-o(1))q, and both rails have endpoint rank q-o(q). Since each canonical source rail is a maximum endpoint path at its source, clean internal lenses between Q_0 and R are balanced by 390e818020e1. If there is a genuine clean internal lens, replace the Q_0-side by the R-side. The replacement has the same edge length, hence remains a maximum path ending at the same endpoint. Moreover the interior of the replaced Q_0-side is disjoint from R by cleanliness, so no vertex of V(Q_0)∩V(R) is deleted, while the R-side contributes at least one new common vertex. Thus overlap with R strictly increases and the entire previous common-vertex set, including every previously whole distinguished pair, is preserved. Repeat. Since the number of vertices is finite and the overlap with R strictly increases at each switch, the process terminates at a maximum endpoint path Q with no genuine clean internal lens relative to R. Throughout the process V(Q_0)∩V(R) remains contained in V(Q)∩V(R). Hence the final pair Q,R retains at least (25/88-o(1))q wholly common distinguished pairs and at least (5/4-o(1))q common vertices. The endpoint ranks are unchanged.

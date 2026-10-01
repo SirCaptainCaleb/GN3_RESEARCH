@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T00:57:42.206346+00:00"
+id: "compatdensityplus2"
+last_elevation_revision: 0
+last_substantive_worker_id: 607
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 184
+    detail: "The abstract graph lemma is correct: high minimum degree contradicts the triangle codegree/isolation bounds for k>=8, the seven-vertex case is handled correctly, and induction gives floor(m^2/4)+2."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+  brainstorm_development: true
+  last_audit_observation:
+    claim_id: 184
+    detail: "The abstract graph lemma is correct: high minimum degree contradicts the triangle codegree/isolation bounds for k>=8, the seven-vertex case is handled correctly, and induction gives floor(m^2/4)+2."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+  source_brainstorm: "1000631"
+object_type: "research"
+origin_worker_id: 607
+parent_id: "compatibilitytoolkit01"
+position: 2
+research_interface:
+  consumer: "deletion-cover incompatibility forcing and endpoint-transport / defect-compression"
+  given: "the certified compatibility graph geometry: edge triangle-codegree at most two and one triangle-isolated edge in every triangle"
+  need: "convert the resulting near-half incompatible degree into support separation/order disagreement concentrated against one deletion state"
+  produces: "e(G) <= floor(m^2/4)+2 for every chosen m-label deletion-cover family, hence essentially bipartite compatibility density"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Compatibility density is within two edges of the bipartite bound"
+substantive_worker_ids:
+  - 607
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Compatibility density is within two edges of the bipartite bound"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T00:58:47.559011+00:00"
+version: 7

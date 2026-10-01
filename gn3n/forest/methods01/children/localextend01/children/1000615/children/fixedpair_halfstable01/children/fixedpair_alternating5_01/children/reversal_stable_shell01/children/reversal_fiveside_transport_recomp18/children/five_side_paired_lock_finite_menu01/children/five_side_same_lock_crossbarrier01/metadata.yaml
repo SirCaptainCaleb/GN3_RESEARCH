@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:08:16.037139+00:00"
+id: "five_side_same_lock_crossbarrier01"
+last_elevation_revision: 9060
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction of the common-lock reduction to mixed Hamiltonian support or doubled cross barrier."
+  audit_request_recorded_at: "2026-09-29T21:08:21.786943+00:00"
+  audit_resolution:
+    claim_id: 60
+    detail: "Independent check passed. The common singleton in both endpoint-good intersections is noninsertable into both long displayed paths. First-type failed insertion yields a Hamiltonian K4 or a cyclic K4 whose extension by another five-side label is Hamiltonian; if both obstructions are second-type, the certified two-path pivot theorem yields a mixed Hamiltonian K4 or the doubled-cross alternative. Complement claims follow from minimality."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:07:38.371502+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 60
+    detail: "Independent check passed. The common singleton in both endpoint-good intersections is noninsertable into both long displayed paths. First-type failed insertion yields a Hamiltonian K4 or a cyclic K4 whose extension by another five-side label is Hamiltonian; if both obstructions are second-type, the certified two-path pivot theorem yields a mixed Hamiltonian K4 or the doubled-cross alternative. Complement claims follow from minimality."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:07:38.371502+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T21:08:52.400994+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 708
+parent_id: "five_side_paired_lock_finite_menu01"
+position: 0
+research_interface:
+  consumer: "five-side plateau termination; doubled-cross-barrier consumption; endpoint transport / defect compression"
+  given: "a locally Phi-minimal trapped five-side with no neutral exchange whose two long paths have the same unique locked five-side label"
+  produces: "a mixed Hamiltonian 4/5-support with pc2 complement, or one doubled cross barrier coupling the two long-path second-type pivots"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A common rigid five-side lock on both long paths gives a mixed small support or doubled cross barrier"
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A common rigid five-side lock on both long paths gives a mixed small support or doubled cross barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T00:07:38.371502+00:00"
+version: 8

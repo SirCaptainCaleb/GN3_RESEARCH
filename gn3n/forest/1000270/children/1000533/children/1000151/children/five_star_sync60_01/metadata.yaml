@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T13:10:44.947439+00:00"
+id: "five_star_sync60_01"
+last_elevation_revision: 8250
+last_substantive_worker_id: 664
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 257
+    detail: "The 60-type classification is correct: at most 48 endpoint-extension types and 12 internal ordered-neighbor types. Pigeonhole gives the stated subset; the internal type yields the Hamiltonian five-set conclusion by the certified parallel-middle lemma."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:12:35.840729+00:00"
+    worker_id: 649
+  last_audit_observation:
+    claim_id: 257
+    detail: "The 60-type classification is correct: at most 48 endpoint-extension types and 12 internal ordered-neighbor types. Pigeonhole gives the stated subset; the internal type yields the Hamiltonian five-set conclusion by the certified parallel-middle lemma."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:12:35.840729+00:00"
+    worker_id: 649
+object_type: "research"
+origin_worker_id: 664
+parent_id: "1000151"
+position: 0
+research_interface:
+  consumer: "dense five-window gluing; common-core support transport; reversal dense-family route"
+  given: "a fixed four-set with many exterior labels whose one-label extensions are Hamiltonian"
+  produces: "a synchronized subfamily of size at least one sixtieth: common same-end extenders of one four-path or common parallel middle labels through one ordered pair"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Hamiltonian five-set stars synchronize with a sixty-type bound"
+substantive_worker_ids:
+  - 664
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Hamiltonian five-set stars synchronize with a sixty-type bound"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T15:12:35.840729+00:00"
+version: 5

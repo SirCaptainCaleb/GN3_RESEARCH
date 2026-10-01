@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:16:23.886583+00:00"
+id: "1000193"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "The stalled bound max k<=kappa+3 gives delta>=2ell-6, hence every endpoint potential is ell-2 or ell-1. Negative charge lies in the lower layer and all ascending edges are S-to-TT rank-(ell-1) edges."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "The stalled bound max k<=kappa+3 gives delta>=2ell-6, hence every endpoint potential is ell-2 or ell-1. Negative charge lies in the lower layer and all ascending edges are S-to-TT rank-(ell-1) edges."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "stalled two-level normal form"
+  uses:
+    - "1000534"
+    - "1000481"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000534"
+position: 0
+research_interface:
+  consequence: "The only obstruction to the second +2 amplification is a graph with exactly two endpoint-potential levels ell-2 and ell-1."
+  consumer:
+    - "grand equality induction"
+    - "packet deletion"
+    - "top-layer matching route"
+  given:
+    - "stalled charge amplification max k<kappa+4"
+  next_need: "Exploit the exact S/T edge-type decomposition. Use packet effective charge on T and S, and classify which edge types can occur at rank ell-1 versus lower rank."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A stalled charge amplification obstruction has only two potential levels."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A stalled charge amplification obstruction has only two potential levels"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

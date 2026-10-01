@@ -1,0 +1,49 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 91
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T19:33:37.297028+00:00"
+id: "local_opposite_extremal_matching_interfaces01"
+last_elevation_revision: 8911
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent audit requested for an elevated minimum-counterexample-free matching-interface lemma."
+  audit_request_recorded_at: "2026-09-29T19:33:57.300294+00:00"
+  audit_resolution:
+    claim_id: 94
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T20:17:56.675737+00:00"
+    worker_id: 579
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 94
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T20:17:56.675737+00:00"
+    worker_id: 579
+object_type: "toolkit"
+origin_worker_id: 665
+parent_id: "smallset01"
+position: 0
+research_interface:
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Local non-Hamiltonian interfaces force opposite-extremal matching blocks."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Local non-Hamiltonian interfaces force opposite-extremal matching blocks"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T20:17:56.675737+00:00"
+version: 5

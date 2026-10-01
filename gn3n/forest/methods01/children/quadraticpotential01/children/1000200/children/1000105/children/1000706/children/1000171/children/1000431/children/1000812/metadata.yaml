@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T18:51:14.040388+00:00"
+id: "1000812"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 224
+    detail: "Body-only attribution cleanup; statement and proof content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T18:55:35.458212+00:00"
+    worker_id: 569
+  last_audit_observation:
+    claim_id: 224
+    detail: "Body-only attribution cleanup; statement and proof content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T18:55:35.458212+00:00"
+    worker_id: 569
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Independent reconstruction found no mathematical defect. Adjusted only the final attribution: 86c6d5d44600 does not itself state the even-c exact maximin profile, so the conclusion is phrased directly as a maximin profile with a globally longest component."
+    recorded_at: "2026-09-27T18:55:21.006704+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 569
+object_type: "research"
+origin_worker_id: 573
+parent_id: "1000431"
+position: 1
+research_interface:
+  consumer: "sharp half-order closure; maximin compression; endpoint transport; quadratic global descent"
+  given: "a secondarily normalized globally quadratic-minimal three-cover on the boundary line lambda=3c-3 with c>=4"
+  need: "vary the medium Hamiltonian set along long paths or local extension families and compare the resulting globally longest complement paths to force support/order incompatibility or endpoint absorption"
+  produces: "universal exact complement profiles for every Hamiltonian medium set: {lambda,rho} on the complement, hence the canonical maximin three-cover profile"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "At lambda equals three c minus three every medium Hamiltonian set has the canonical longest-path complement profile"
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At lambda equals three c minus three every medium Hamiltonian set has the canonical longest-path complement profile"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 9

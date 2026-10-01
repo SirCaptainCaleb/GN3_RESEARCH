@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-10-01T13:45:30.523051+00:00"
+id: "1000906"
+last_elevation_revision: 0
+last_substantive_worker_id: 1061
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Isolated-research strengthening: verify that the terminal paired six-window satisfies the prescribed-pair theorem exactly and that each resulting Hamiltonian five-support has pc2 non-Hamiltonian complement."
+  audit_request_recorded_at: "2026-10-01T13:45:30.523051+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1061
+parent_id: "terminal_singleton_swap_k4_residue01"
+position: 1
+research_interface:
+  consumer: "same-slot compatible deletion pairs; five-side escape; endpoint transport / defect compression"
+  given: "the paired matching-block six-vertex residue from a terminal singleton swap"
+  implication: "the paired matching-block endpoint residue is not a terminal branch"
+  produces: "at least two positioned Hamiltonian five-supports through the swapped pair, each with non-Hamiltonian pc2 complement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The hard paired matching-block residue of a terminal singleton swap always contains at least two Hamiltonian five-sets through the swapped pair, each with a non-Hamiltonian pc2 complement."
+substantive_worker_ids:
+  - 1061
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "The paired terminal singleton-swap residue contains two positioned Hamiltonian five-supports"
+unary_chain_length: 3
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:45:30.523051+00:00"
+version: 6

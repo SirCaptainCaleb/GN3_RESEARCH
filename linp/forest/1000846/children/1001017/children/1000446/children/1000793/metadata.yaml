@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T02:51:07.483469+00:00"
+id: "1000793"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7449ac28-1911-4974-abb7-58a8b3705b0a"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:13:31.625259+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "7449ac28-1911-4974-abb7-58a8b3705b0a"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:13:31.625259+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:13:06.47285+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000446"
+position: 0
+research_interface:
+  consequence: "Directed paths in the entrance-to-terminal orientation automatically certify equally long hypergraph paths via strict potential growth, without needing direct parent-edge-sequence lifting."
+  consumer:
+    - "source-oriented directed/rainbow coupling"
+    - "ascending-edge global bound"
+    - "ordered-shadow route"
+  given:
+    - "ascending nonspecial edges"
+    - "endpoint potential phi"
+  provenance: "user clarification of Mehproof.md setup"
+  relation: "This supplies the correct bridge from the source-oriented digraph in Mehproof.md to the LINP ascending-edge framework."
+  role: "ascending-edge directed-path lift"
+research_level: "lemma"
+semantic_container_text: "Vertex-rank superlevel and ascending-flow program: potential cuts and incidence compatibility turn ascending edges into quantitative rank flow, yielding improved average-rank bounds and rigid equality or near-equality structure."
+simplified_statement: "Ascending-edge directed paths lift through endpoint-potential growth."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ascending-edge directed paths lift through endpoint-potential growth"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:37:06.600883+00:00"
+version: 6

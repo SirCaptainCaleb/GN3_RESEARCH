@@ -1,0 +1,9 @@
+# A common-core plateau swap triangle reduces to overlap or one oriented matching shell
+
+## Statement
+
+In the setting of local45_commoncore_triangle_sixobstruction01, let S=R union Z be the forced non-Hamiltonian six-set, with Z={z_1,z_2,z_3}. Then exactly one of the following structural outcomes occurs. (1) S has Hamiltonian four-subsets S-{d,e} and S-{d,f} sharing three vertices, and their union S-{d} is a Hamiltonian five-set; in the minimum counterexample all three supports have non-Hamiltonian path-cover-two complements. (2) There is a unique r in R such that the Hamiltonian-deletion set of S is G=Z union {r}; its good two-deletion graph is a perfect matching, H[G] is a non-Hamiltonian matching-block K4, and for the complementary pair R-{r} the four labels G split into two fixed-pair orientation classes of order two with the complete opposite-orientation hook rectangle on every cross pair.
+
+## Body
+
+By local45_commoncore_triangle_sixobstruction01, S is non-Hamiltonian, all three z_i are Hamiltonian deletion labels, and at least one r in R is also a Hamiltonian deletion label. Apply the certified theorem sixset_deletion_graph_oriented_recomp01 to S. If its good two-deletion graph has adjacent edges, its alternative (1) gives exactly the overlapping Hamiltonian four-sets and Hamiltonian five-set union stated here, including the pc2 complement conclusions in a minimum counterexample. Otherwise that theorem says the Hamiltonian-deletion set has exactly four labels and the good two-deletion graph is a perfect matching. Since z_1,z_2,z_3 are all good and some r in R is good, the four-label set must be G=Z union {r}; in particular r is unique. The remainder of alternative (2), including the matching-block K4, 2+2 orientation classes relative to the complementary pair R-{r}, and complete hook rectangle, is exactly the oriented matching exception of sixset_deletion_graph_oriented_recomp01.

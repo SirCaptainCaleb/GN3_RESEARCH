@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T03:14:41.690665+00:00"
+id: "independent_reconstruction"
+last_elevation_revision: 0
+last_substantive_worker_id: 652
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 439
+    detail: "Replaced deprecated order-disagreement wording only; mathematical content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T03:45:05.351217+00:00"
+    worker_id: 700
+  last_audit_observation:
+    claim_id: 439
+    detail: "Replaced deprecated order-disagreement wording only; mathematical content unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T03:45:05.351217+00:00"
+    worker_id: 700
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "audit-authorized repair"
+    recorded_at: "2026-09-28T03:43:29.500007+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 700
+  noncomputational: true
+  proof_compression: true
+  scale_free_above_order_14: true
+object_type: "research"
+origin_worker_id: 652
+parent_id: "1000785"
+position: 0
+research_interface:
+  consumer: "global four-window route; shortest proof composition; endpoint transport / defect compression"
+  given: "a Hamiltonian four-set with a two-cover complement in a minimum counterexample"
+  need: "consume the bounded six-window branch; small orders at most fourteen are separated"
+  produces: "bounded six-window Hamiltonicity/order disagreement, strict Phi descent, or total order at most fourteen"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every anchored four-window either descends, yields a bounded six-window, or has order at most fourteen."
+substantive_worker_ids:
+  - 652
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every anchored four-window either descends, yields a bounded six-window, or has order at most fourteen"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T01:29:29.437125+00:00"
+version: 7

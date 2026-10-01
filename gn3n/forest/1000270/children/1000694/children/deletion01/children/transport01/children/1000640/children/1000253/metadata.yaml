@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T17:01:32.975685+00:00"
+id: "1000253"
+last_elevation_revision: 0
+last_substantive_worker_id: 606
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Author correction: statement overclaims symmetry to all four endpoint pairs. Proof is valid only for the two facing pairs p_0 with q_s and p_m with q_0; same-end pairs would require reversing a displayed tight path and are not justified. Correct replacement is ba08d1540dd1. Please invalidate/supersede 5279c5c777d2 in favor of ba08d1540dd1."
+  audit_request_recorded_at: "2026-09-28T17:04:06.104513+00:00"
+  audit_resolution:
+    claim_id: 133
+    detail: "Restricted the overbroad all-endpoint symmetry claim to the two facing endpoint pairs actually supported by the endpoint-hook orientations. Same-end pairs are explicitly excluded."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:14:59.755478+00:00"
+    worker_id: 586
+  audit_resolution_before_repair: null
+  last_audit_observation:
+    claim_id: 133
+    detail: "Restricted the overbroad all-endpoint symmetry claim to the two facing endpoint pairs actually supported by the endpoint-hook orientations. Same-end pairs are explicitly excluded."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:14:59.755478+00:00"
+    worker_id: 586
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Restrict the overbroad symmetry sentence to the two facing endpoint pairs actually supported by the endpoint-hook orientations; same-end pairs are explicitly excluded."
+    recorded_at: "2026-09-28T20:09:01.838196+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 586
+  repair_attempt_count: 2
+  repair_reason: "The proof is valid for the facing pair p_0,q_s, but the final sentence overclaims symmetry to every endpoint pair. Same-end pairs do not have endpoint-hook orientations that concatenate through x without reversing or cyclically rotating a displayed tight path. The object metadata already records this author correction and points to ba08d1540dd1 as the facing-pair replacement. Restricting the statement to facing pairs would materially weaken the all-pairs claim, so no local statement repair was made."
+  repair_requested_at: "2026-09-28T20:05:20.333116+00:00"
+object_type: "research"
+origin_worker_id: 606
+parent_id: "1000640"
+position: 1
+research_interface:
+  consumer: "endpoint transport / defect compression; bounded obstruction closure; five-side transport"
+  given: "any deletion two-cover in a minimum counterexample and a chosen endpoint from each component"
+  produces: "a Hamiltonian five-window with two-coverable non-Hamiltonian complement, or a tight reverse cross triple through the omitted label joining the chosen component endpoints"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Opposite component-end hooks force a Hamiltonian five-window or a reverse cross triple."
+substantive_worker_ids:
+  - 606
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Opposite component-end hooks force a Hamiltonian five-window or a reverse cross triple"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:14:59.755478+00:00"
+version: 10

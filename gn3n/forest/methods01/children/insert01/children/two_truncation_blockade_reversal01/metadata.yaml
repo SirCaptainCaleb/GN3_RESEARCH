@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T17:38:12.022366+00:00"
+id: "two_truncation_blockade_reversal01"
+last_elevation_revision: 8453
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T17:38:12.022366+00:00"
+  audit_resolution:
+    claim_id: 199
+    detail: "Independent reconstruction succeeds: any insertion of x into R would make at least one endpoint truncation Hamiltonian, so x is globally noninsertable and acdec36ae3ca yields a displayed-edge reversal."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:45:25.346467+00:00"
+    worker_id: 555
+  audit_trigger_kind: "explicit_publish_request"
+  elevation_note: "Abstracts away the five-side/Phi-minimal route: only the two failed endpoint truncations are needed to force reversal."
+  elevation_source: "five_noexchange_dualreverse01"
+  last_audit_observation:
+    claim_id: 199
+    detail: "Independent reconstruction succeeds: any insertion of x into R would make at least one endpoint truncation Hamiltonian, so x is globally noninsertable and acdec36ae3ca yields a displayed-edge reversal."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:45:25.346467+00:00"
+    worker_id: 555
+object_type: "research"
+origin_worker_id: 637
+parent_id: "insert01"
+position: 0
+research_interface:
+  consumer: "insertion obstruction; five-side no-exchange; endpoint transport"
+  given: "a displayed tight path and an exterior vertex for which both endpoint-deleted enlargements are non-Hamiltonian"
+  produces: "global noninsertability and an explicit reversed displayed edge"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two blocked endpoint truncations force a displayed-edge reversal"
+substantive_worker_ids:
+  - 637
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two blocked endpoint truncations force a displayed-edge reversal"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-29T17:45:25.346467+00:00"
+version: 6

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T03:11:50.649863+00:00"
+id: "1001135"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Verified equality forces zero chosen-path double blockers; a nonspecial last edge contradicts the strengthened saturation bound, hence every maximum last edge is special and the blocker bijection follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:11.564513+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Verified equality forces zero chosen-path double blockers; a nonspecial last edge contradicts the strengthened saturation bound, hence every maximum last edge is special and the blocker bijection follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:11.564513+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000068"
+position: 0
+research_interface:
+  consequence: "At the clean density+1 equality point, maximum endpoint paths are special-ended everywhere. Nonspecial terminal incidences are exactly a bijective family of single blockers on the tail, and the other two special edges form the two far-end closures."
+  consumer:
+    - "equality-layer classification"
+    - "special-edge maximal-path structure"
+  given:
+    - "c77c818cf1e9 equality local slacks"
+    - "3a0d8866aba9 double-blocker compensation"
+    - "672725540541 terminal saturation forces double blockers"
+  next_need: "Exploit universal special-last behavior. For a special edge h={v,u,w} of rank p, maximum paths ending h can choose any endpoint terminal; compare the three endpoint-normal forms. The two far-end closure edges through each terminal should create a highly overdetermined family of p+1 cycles."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "At density-plus-one equality every maximum endpoint path has a special last edge."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At density-plus-one equality every maximum endpoint path has a special last edge"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

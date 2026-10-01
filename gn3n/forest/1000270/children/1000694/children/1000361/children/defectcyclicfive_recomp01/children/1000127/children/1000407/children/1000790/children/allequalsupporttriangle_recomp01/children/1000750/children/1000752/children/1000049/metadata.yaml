@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 93
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T02:41:00.796976+00:00"
+id: "1000049"
+last_elevation_revision: 0
+last_substantive_worker_id: 660
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 428
+    detail: "Normalized prohibited exact-cover terminology; common-core support-switch argument unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:42:52.894419+00:00"
+    worker_id: 652
+  exact_ordered_triples_only: true
+  last_audit_observation:
+    claim_id: 428
+    detail: "Normalized prohibited exact-cover terminology; common-core support-switch argument unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:42:52.894419+00:00"
+    worker_id: 652
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Normalized prohibited exact-cover terminology; common-core support-switch argument unchanged."
+    recorded_at: "2026-09-28T02:42:27.589548+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 652
+  noncomputational: true
+  scale_free: true
+object_type: "research"
+origin_worker_id: 660
+parent_id: "1000752"
+position: 0
+research_interface:
+  consumer: "common-core support-switch machinery; all-equal {1,1,1} closure; deletion-cover compatibility"
+  given: "the all-three-successful-insertion branch inside the all-equal support triangle"
+  need: "derive intermediate split states, compatibility obstruction, or direct union-splicing from the antipodal three-label support switch"
+  produces: "for each omitted core M_k, two antipodal exact two-covers of H-M_k with common cores M_i,M_j and the whole label triple T switched between them"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three successful transferred-label insertions create antipodal common-core two-covers"
+substantive_worker_ids:
+  - 660
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three successful transferred-label insertions create antipodal common-core two-covers"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:42:52.894419+00:00"
+version: 5

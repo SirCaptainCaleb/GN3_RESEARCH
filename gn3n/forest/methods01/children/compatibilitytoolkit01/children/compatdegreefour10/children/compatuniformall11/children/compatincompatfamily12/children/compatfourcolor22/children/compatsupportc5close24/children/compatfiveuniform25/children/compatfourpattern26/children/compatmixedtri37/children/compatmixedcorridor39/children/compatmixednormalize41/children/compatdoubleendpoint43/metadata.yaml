@@ -1,0 +1,70 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-27T13:40:51.643262+00:00"
+id: "compatdoubleendpoint43"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Proof uses an invalid cyclic-rotation inference: from (b,a,u) tight it asserts (a,u,b) tight. definitions01 explicitly states cyclic rotation is not valid unless the new wrap triple is checked. This step is structurally essential to the Hamiltonian-five branch."
+  audit_request_recorded_at: "2026-09-28T16:22:05.386975+00:00"
+  audit_resolution:
+    claim_id: 133
+    detail: "The proof repeatedly uses invalid cyclic rotation of ordered tight triples; e.g. it turns an endpoint hook such as (b,a,u) into (a,u,b), which boundary antisymmetry does not permit."
+    math_version: 2
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:16:51.609754+00:00"
+    worker_id: 586
+  audit_resolution_before_repair: null
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 133
+    detail: "The proof repeatedly uses invalid cyclic rotation of ordered tight triples; e.g. it turns an endpoint hook such as (b,a,u) into (a,u,b), which boundary antisymmetry does not permit."
+    math_version: 2
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:16:51.609754+00:00"
+    worker_id: 586
+  last_failure:
+    reason: "The proof repeatedly uses invalid cyclic rotation of ordered tight triples; e.g. it turns an endpoint hook such as (b,a,u) into (a,u,b), which boundary antisymmetry does not permit."
+    recorded_at: "2026-09-28T20:16:51.609754+00:00"
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair: remove prohibited 'exact' modifier and ambiguous 'clean' shorthand; mathematical content unchanged."
+    recorded_at: "2026-09-27T14:32:02.800464+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 616
+  repair_attempt_count: 3
+  repair_reason: "The proof repeatedly uses invalid cyclic rotation of ordered tight triples, e.g. (b,a,u) -> (a,u,b). Same-end same-slot replacements are known orientation-safely to force doubled endpoint barriers, but those barriers do not imply the claimed Hamiltonian five-set/reverse-cross dichotomy. Restricting to facing pairs would materially change the theorem."
+  repair_requested_at: "2026-09-28T20:14:59.755478+00:00"
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compatmixednormalize41"
+position: 0
+research_interface:
+  consumer: "mixed-triangle corridor; endpoint-transport / defect compression"
+  given: "one deletion cover H-b=P|Q and same-slot replacement of endpoints a in P and c in Q by the same omitted label b"
+  need: "consume the reverse cross triple or the Hamiltonian five-set with pc-two complement"
+  produces: "a general four-orientation endpoint theorem: Hamiltonian five-set or explicit reverse cross triple through b"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 648
+support_reason: "The proof repeatedly uses invalid cyclic rotation of ordered tight triples; e.g. it turns an endpoint hook such as (b,a,u) into (a,u,b), which boundary antisymmetry does not permit."
+support_status: "blocked"
+title: "Two same-endpoint replacements by one omitted label force a five-set or reverse cross triple"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T20:16:51.609754+00:00"
+version: 15

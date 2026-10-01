@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T23:41:09.4937+00:00"
+id: "five_three_sixcycle_crosshub_fiveshell01"
+last_elevation_revision: 9533
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested. Use the repeated good/bad deletion pair pattern from the six-cycle normal form for both hubs, then apply the certified two-bad-four-extension lemma on the common three-set A_i plus one bad-block label."
+  audit_request_recorded_at: "2026-09-29T23:43:49.763988+00:00"
+  audit_resolution:
+    claim_id: 738
+    detail: "Independent check: for either hub, deleting the other vertex of the preceding bad pair leaves the corresponding four-set non-Hamiltonian. Thus the common three-set has two bad four-extensions by the hubs; the certified controlled two-bad-extension lemma yields the claimed five-vertex Hamilton path with both endpoints in the common three-set."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 738
+    detail: "Independent check: for either hub, deleting the other vertex of the preceding bad pair leaves the corresponding four-set non-Hamiltonian. Thus the common three-set has two bad four-extensions by the hubs; the certified controlled two-bad-extension lemma yields the claimed five-vertex Hamilton path with both endpoints in the common three-set."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:03:43.21888+00:00"
+    worker_id: 737
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-30T00:00:50.852152+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 665
+parent_id: "five_three_sixcycle_normalform01"
+position: 0
+research_interface:
+  consumer: "neutral 3|5 plateau closure; pairwise-repartition no-trapping"
+  given: "the two-hub/three-pair normal form of a directed six-cycle in the neutral 3|5 exchange graph"
+  need: "use the six cross-hub five-paths and their endpoint control to force a Hamiltonian 4|4 partition, a shorter forward cycle, or a legal interaction with the third cover path"
+  produces: "three cross-hub four-cores, each Hamiltonianly extended by both vertices of the preceding pair-block, giving six controlled cross-hub five-paths"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A neutral three-five six-cycle forces a cyclic cross-hub five-shell."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A neutral three-five six-cycle forces a cyclic cross-hub five-shell"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:03:43.21888+00:00"
+version: 7

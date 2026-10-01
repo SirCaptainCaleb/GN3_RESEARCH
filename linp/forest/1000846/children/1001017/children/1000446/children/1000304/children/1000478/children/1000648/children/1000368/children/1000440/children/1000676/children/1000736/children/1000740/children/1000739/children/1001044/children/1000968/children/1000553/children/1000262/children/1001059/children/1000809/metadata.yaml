@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-24T04:00:20.295931+00:00"
+id: "1000809"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1001059"
+position: 0
+research_interface:
+  consequence: "Single far contact is forced to h3. Double far contact is the h1-h2 far 3-cycle; the middle-edge recross is confined to h1 or the first joint r=h1∩h2."
+  consumer:
+    - "p=5 4455 elimination"
+  given:
+    - "ebd9e72015cd double-transversal rail"
+    - "1000194"
+    - "1000206"
+  next_need: "Exclude the remaining private-h1 g3-contact in the double state; then the normal form becomes exact. Try e5,h1,g3,h3 when the g3-contact is private h1: it is a 4-edge path unless h1-g3/e5 labels create the only possible collision."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In the surviving 4455 entrance-a case, the far rank-five edge has only two possible overlap patterns with a canonical three-edge entrance rail."
+substantive_worker_ids:
+  - 229
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Canonical entrance-a rails in 4455 have only two far-middle overlap normal forms"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:29:31.630342+00:00"
+version: 2

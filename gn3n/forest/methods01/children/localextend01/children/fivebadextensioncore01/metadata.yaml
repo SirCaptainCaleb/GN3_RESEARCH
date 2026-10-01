@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 82
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T15:22:38.841459+00:00"
+id: "fivebadextensioncore01"
+last_elevation_revision: 0
+last_substantive_worker_id: 644
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 162
+    detail: "The certified four-of-six theorem gives at least three Hamiltonian x-deletions for each exterior e after counting deletion of e itself; double counting gives ceil(3|E|/5), including the stated |E|=2 and 4 cases."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  hypotheses_removed:
+    - "quadratic-potential minimality"
+    - "trapped pairwise-repartition component"
+    - "path-endpoint origin of the exterior labels"
+  last_audit_observation:
+    claim_id: 162
+    detail: "The certified four-of-six theorem gives at least three Hamiltonian x-deletions for each exterior e after counting deletion of e itself; double counting gives ceil(3|E|/5), including the stated |E|=2 and 4 cases."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  origin_ids:
+    - "astra003fivecommoncore"
+    - "astra003fivethreeendpoints"
+  proof_change: "incidence-count generalization of the common four-core argument"
+object_type: "result"
+origin_worker_id: 644
+parent_id: "localextend01"
+position: 0
+research_interface:
+  consumer: "local extension arguments; Astra-003 five-side arguments; endpoint transport"
+  given: "a Hamiltonian five-set X and exterior vertices whose six-set extensions are non-Hamiltonian"
+  produces: "one four-vertex deletion core extending Hamiltonianly to many exterior labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Bad extensions of a Hamiltonian five-set have a common deletion core."
+substantive_worker_ids:
+  - 644
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Bad extensions of a Hamiltonian five-set have a common deletion core"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 4

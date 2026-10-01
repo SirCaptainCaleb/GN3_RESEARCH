@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T09:04:15.445036+00:00"
+id: "1000506"
+last_elevation_revision: 0
+last_substantive_worker_id: 682
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 335
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T17:26:27.43459+00:00"
+    worker_id: 600
+  last_audit_observation:
+    claim_id: 335
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T17:26:27.43459+00:00"
+    worker_id: 600
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-28T01:13:28.859227+00:00"
+object_type: "research"
+origin_worker_id: 682
+parent_id: "astra003mobility94_recomp01"
+position: 1
+research_interface:
+  consumer: "astraidea003 and the order-thirteen 3|5|5 plateau"
+  given: "the coordinate-wise six-exchange property for three-side supports, with exactly ten active shadow vertices"
+  need: "exclude the K10-e/linear-complement extremal geometry or leverage 104-support density to force an additional active vertex"
+  produces: "the shadow is K10 or K10-e and the support family has size at least 104"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Ten active vertices force at least one hundred four three-side supports."
+substantive_worker_ids:
+  - 682
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ten active vertices force at least one hundred four three-side supports"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:13:28.859227+00:00"
+version: 11

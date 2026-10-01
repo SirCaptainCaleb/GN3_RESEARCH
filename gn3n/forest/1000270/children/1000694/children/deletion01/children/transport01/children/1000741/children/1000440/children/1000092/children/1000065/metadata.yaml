@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:22:34.820085+00:00"
+id: "1000065"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 451
+    detail: "Exact Mantel density yields an anchor with the stated incompatible degree; pigeonhole over the two broad incompatibility classes gives the quantitative uniform-witness bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+  last_audit_observation:
+    claim_id: 451
+    detail: "Exact Mantel density yields an anchor with the stated incompatible degree; pigeonhole over the two broad incompatibility classes gives the quantitative uniform-witness bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+object_type: "research"
+origin_worker_id: 678
+parent_id: "1000092"
+position: 1
+research_interface:
+  given: "the exact Mantel compatibility-density theorem for an m-label chosen deletion family"
+  need: "synchronize the uniform witnesses spatially along one anchor path/support so two interact"
+  produces: "one anchor with at least ceil(floor((m-1)/2)/2) disturbances of one uniform support/order type"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Exact Mantel density forces a quarter-family of one uniform disturbance type."
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Exact Mantel density forces a quarter-family of one uniform disturbance type"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:48:18.367129+00:00"
+version: 7

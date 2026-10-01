@@ -1,0 +1,9 @@
+# Every minimum counterexample has a reversing triple coupled to an alternating stable five-path
+
+## Statement
+
+Let H be a minimum counterexample. Then there are distinct vertices u,v,a,x,y,z such that some tight path contains the ordered edge (u,v), a tight triple containing (v,u) consecutively reverses that edge and has third vertex a, and one of (y,u,x,v,z) and (y,v,x,u,z) is a tight five-vertex path. Moreover, putting G=H-{u,v} and T={x,y,z}, the subtournaments G, G-t for t in T, and G-{s,t} for distinct s,t in T are all non-Hamiltonian with path-cover number two; the complement of {u,v,x,y,z} is also non-Hamiltonian with path-cover number two.
+
+## Body
+
+By 34583959c437 choose a tight path P containing an ordered edge (u,v) and a tight triple whose consecutive ordered pair (v,u) reverses that edge; let a be the third vertex of this reversing triple. Apply fixedpair_halfstable01 to the prescribed pair u,v and choose its larger orientation class C. Since a minimum counterexample has order greater than ten, |C|>=5. Remove a from C if a belongs to C; the remaining set C' has order at least four. Every w in C' satisfies the same middle orientation through u,v: either (u,w,v) is tight for all w in C', or (v,w,u) is tight for all w in C'. Apply the four-parallel-middle theorem in localextend01 to C'. In the first case it yields distinct y,x,z in C' with (y,u,x,v,z) tight; in the second it yields (y,v,x,u,z) tight. These six vertices are distinct because a was excluded before choosing x,y,z. Finally T={x,y,z} lies in the large orientation class C, so fixedpair_halfstable01 gives that G=H-{u,v}, each G-t, and each G-{s,t} for distinct s,t in T are non-Hamiltonian with path-cover number two. The displayed alternating five-set is Hamiltonian and proper, so its complement is non-Hamiltonian with path-cover number two by minimum-counterexample calculus.

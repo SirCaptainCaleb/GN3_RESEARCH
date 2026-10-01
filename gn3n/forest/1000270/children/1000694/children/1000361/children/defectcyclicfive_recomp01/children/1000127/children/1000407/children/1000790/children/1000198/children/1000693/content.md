@@ -1,0 +1,9 @@
+# At order fifteen every four-side descent from the all-equal barrier branch escapes the canonical cube
+
+## Statement
+
+Assume the all-equal {1,1,1} barrier branch with r=5, so |V(H)|=15. Fix one canonical mixed four-path Q_i=(b_i,t_i,t_{i+2},a_{i+1}) from 2bac72daae4a, and choose a two-cover P|R of H-V(Q_i). Suppose its component orders are 6 and 5. Apply foursidedescentobstruction to Q_i|P|R. If its strict-descent alternative occurs, the resulting spanning three-cover has profile 5|5|5 and is not one of the eight canonical cube covers. Thus at order fifteen the four-side descent alternative is a genuine escape from the {1,1,1} cube, never a recurrence inside it.
+
+## Body
+
+Write Q_i=(x_0,x_1,x_2,x_3)=(b_i,t_i,t_{i+2},a_{i+1}) and P=(p_1,...,p_6). Every strict descent in the proof of foursidedescentobstruction replaces Q_i|P by one of four 5|5 repartitions: (a) (Q_i union {p_1}) | (P-{p_1}); (b) (Q_i union {p_6}) | (P-{p_6}); (c) F_L | (M union {x_3}), where F_L={x_0,x_1,x_2,p_1,p_6}; or (d) F_R | (M union {x_0}), where F_R={x_1,x_2,x_3,p_1,p_6} and M=(p_2,...,p_5). Together with the untouched five-path R, each gives profile 5|5|5. In the {1,1,1} cube only the three transferred boundary labels t_1,t_2,t_3 move across cuts; each core M_j stays intact inside a single cube component. Hence any canonical cube component containing a vertex of M_j contains the whole four-vertex core M_j. In cases (a),(b), the new five-side contains both b_i in M_i and a_{i+1} in M_{i+1}, so it mixes two distinct fixed cores and cannot be a cube component. In case (c), F_L contains b_i in M_i and the two transferred labels t_i,t_{i+2}; only two further vertices remain, so F_L cannot contain all four vertices of M_i and therefore cannot be a cube component. The same argument for a_{i+1} in M_{i+1} excludes F_R in case (d). Thus every descended 5|5|5 cover lies outside the canonical eight-state cube.

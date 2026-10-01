@@ -1,0 +1,49 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-24T01:48:43.642156+00:00"
+id: "1000807"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  arithmetic: "all tight induction misses occur when smaller forbidden length is 0 mod 3"
+  prototype:
+    - "1000829"
+    - "order-12 blocker-defect proofs"
+  role: "strengthened induction hypothesis"
+object_type: "proposal"
+origin_worker_id: 185
+parent_id: "1000288"
+position: 0
+research_interface:
+  consequence: "Localizes the genuinely sharp part of the induction to the equality layer r divisible by 3, rather than treating all residues uniformly."
+  consumer:
+    - "1000005"
+    - "1000587"
+  given:
+    - "e6d318739fde path-hull induction"
+    - "39ff078cd8f1 deletion arithmetic"
+    - "order-11 equality counterexample"
+    - "order-12 blocker structures"
+  next_need: "Formulate and prove the weakest equality-topology theorem at parameters divisible by three sufficient to absorb both the path-hull equality case and the ell≡1 mod3 one-vertex deletion case."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A mod-three induction carrying both strict all-specialness above 2r/3 and an equality-structure classification at multiples of three would absorb the known one-degree induction failures."
+substantive_worker_ids:
+  - 185
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Mod-three strengthened induction with an equality-structure layer"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:29:52.140872+00:00"
+version: 3

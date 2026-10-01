@@ -1,0 +1,9 @@
+# Any fixed universal defect-triple certificate must have quadratic size
+
+## Statement
+
+Let V have n vertices and let C be a set of exact ordered triples (x,y,z) of distinct vertices. If every permutation of V contains at least two members of C as consecutive length-three subwords, then |C|>=2n(n-1). Consequently, if F is a family of cyclically oriented triples and every spanning ordering realizes at least two members of F in their prescribed cyclic orientation as consecutive triples, then |F|>=2n(n-1)/3. In particular, a dual certificate forcing two defect edges in every spanning ordering cannot be a bounded-size fixed list of forbidden oriented triples; any such fixed-list certificate must grow quadratically with n.
+
+## Body
+
+Choose a uniformly random permutation pi of V. For one exact ordered triple t=(x,y,z), the number of permutations in which x,y,z occur consecutively in that exact order is (n-2)!, so Pr[t occurs]=1/(n(n-1)). Let X be the number of triples from C occurring as consecutive subwords of pi. By linearity of expectation, E[X]=|C|/(n(n-1)). If every permutation contains at least two members of C, then X>=2 always, hence E[X]>=2 and |C|>=2n(n-1). For a cyclically oriented triple, exactly its three cyclic linearizations represent the same orientation, so replacing each member of F by those three exact words gives |C|=3|F| and yields |F|>=2n(n-1)/3. Requiring the two realized triples to be vertex-disjoint is stronger and therefore obeys the same necessary lower bound. This is only a size obstruction: it does not rule out scalable, adaptive, or algebraically compressed dual certificates.

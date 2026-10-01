@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-25T11:21:33.044893+00:00"
+id: "1001170"
+last_elevation_revision: null
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: null
+metadata:
+  completed_revision: 3753
+  composition_id: "1000272"
+  details:
+    composition_id: "1000272"
+    first_unsupported_inference: "From the certified lower bound sum_v(D_v^cell+I_v) >= (1/8-o(1))S in every 43/48 near-extremal sequence, prove a global reuse/congestion inequality for the center-indexed switcher triangles and distinct output edges internal to each center superlevel, for example sum_v(D_v^cell+I_v)=O(eta+n_+), or any bound ruling out positive-linear mass when eta=o(S) and n_+=o(S). The certified result 619d7583671c only charges distinct flat no-rise terminal incidences after deduplication and does not control center multiplicity of these paid objects."
+    gap_matches_current_bottleneck: true
+  generation: 7
+  opened_revision: 3753
+  reported_outcome: "completed"
+object_type: "proof_rehearsal"
+origin_worker_id: null
+parent_id: "proof_rehearsals"
+position: 7
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+support_reason: null
+support_status: "unchecked"
+title: "Proof rehearsal 7 — 2026-09-25 11:21 UTC"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T16:56:44.762441+00:00"
+version: 2

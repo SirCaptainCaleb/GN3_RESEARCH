@@ -1,0 +1,9 @@
+# A global four-side fork forces a neutral order-five swap or a full interior-path lock
+
+## Statement
+
+Let H be a minimum counterexample of order n>=15 and let W|P|Q be a spanning three-cover globally minimizing quadratic potential, with |W|=4. Write W=D union {w}, |D|=3, and let Q=(f,q_1,...,q_{q-2},g) have order q, with f,g its displayed endpoints. Suppose both D union {f} and D union {g} are non-Hamiltonian. Put M=(q_1,...,q_{q-2}). Then q>=5, D union {f,g} is Hamiltonian, and exactly the following useful conclusion holds: if q>=6, H[V(M) union {w}] is non-Hamiltonian, hence w is noninsertable at every position of the inherited path M; if q=5, either H[V(M) union {w}] is non-Hamiltonian with the same full-path lock, or W|Q admits an equal-Phi legal repartition to (D union {f,g}) | (M union {w}) of orders 5,4.
+
+## Body
+
+By globalminfourlock_recomp01 every component of a global Phi-minimum on n>=13 has order at least four. If q=4, then the profile has two four-sides W,Q while |P|=n-8>=7, contradicting certified c8af4d2786c2. Hence q>=5. Equip D with any Hamilton tight order, which exists on every three-set. Since D+f and D+g are both non-Hamiltonian, the certified two-bad-four-extension lemma inside localextend01 makes F=D+f+g Hamiltonian (indeed with endpoints in D). The supports F and M+w partition V(W) union V(Q). If M+w is Hamiltonian, replacing W|Q by F|(M+w) is one legal pairwise repartition. The old contribution to Phi is 4^2+q^2; the new is 5^2+(q-1)^2, so new-old=10-2q. For q>=6 this is negative, contradicting global minimality. Thus M+w is non-Hamiltonian, and any insertion of w into the inherited path M would Hamiltonize it, so w is noninsertable everywhere in M. For q=5 the potential change is zero, giving the stated neutral swap when M+w is Hamiltonian and the same lock otherwise.

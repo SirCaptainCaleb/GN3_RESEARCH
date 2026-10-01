@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-25T20:15:28.435679+00:00"
+id: "1000116"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "Summing the certified local inequality D_v^cell+Y_v>=p_v/8-eta_v-O(1) over the active misaligned vertices, whose total rank mass is S-o(S), with sum eta=o(S) and n_+=o(S), gives the stated (1/8-o(1))S bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "Summing the certified local inequality D_v^cell+Y_v>=p_v/8-eta_v-O(1) over the active misaligned vertices, whose total rank mass is S-o(S), with sum eta=o(S) and n_+=o(S), gives the stated (1/8-o(1))S bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "corollary"
+origin_worker_id: 224
+parent_id: "1000158"
+position: 0
+research_interface:
+  consequence: "Near 43/48 there are (1/8-o(1))S center-indexed selected payment units without invoking any automatic endpoint lens."
+  consumer:
+    - "lens-free selected paid-edge extraction"
+    - "clean 0-1-1 paid family reconstruction"
+    - "post-43/48 strict-gap route"
+  given:
+    - "223efeb00c7b lens-free near-extremal switching stability"
+    - "614c7d2d181a lens-free local one-eighth payment"
+  next_need: "Inject these cellwise units into center-switcher incidences, then remove the o(S) source-unclean and terminal-nonsingle incidences using the exact four-defect identity."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lens-free global one-eighth paid switching mass."
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Lens-free global one-eighth paid switching mass"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

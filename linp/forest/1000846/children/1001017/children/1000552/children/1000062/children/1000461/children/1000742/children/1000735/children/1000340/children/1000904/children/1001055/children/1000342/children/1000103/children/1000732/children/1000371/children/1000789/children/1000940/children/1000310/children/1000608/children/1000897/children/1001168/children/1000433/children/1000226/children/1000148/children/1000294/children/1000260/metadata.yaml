@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-25T21:29:35.7775+00:00"
+id: "1000260"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "18218d76-ddd4-4e1a-8455-df58186a723e"
+    detail: "For host edge g_t on an (r_i-1)-edge source path, forward prefix and reversed suffix give phi(g_t)>=max(t,r_i-t)>=ceil(r_i/2). The distinct-host count is exactly the certified bounded-reuse conclusion of 3f165c52a1a6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:42:34.306598+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "18218d76-ddd4-4e1a-8455-df58186a723e"
+    detail: "For host edge g_t on an (r_i-1)-edge source path, forward prefix and reversed suffix give phi(g_t)>=max(t,r_i-t)>=ceil(r_i/2). The distinct-host count is exactly the certified bounded-reuse conclusion of 3f165c52a1a6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:42:34.306598+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "corollary"
+origin_worker_id: 220
+parent_id: "1000294"
+position: 0
+research_interface:
+  consequence: "The local-triangle exception expands into a linear number of distinct hyperedges at only a factor-two loss in edge rank."
+  consumer:
+    - "rank-mass expansion from color-terminal collisions"
+    - "post-43/48 U_11 analysis"
+    - "special-versus-nonspecial host split"
+  given:
+    - "3f165c52a1a6 bounded host-edge reuse"
+    - "triangle host lies on the chosen maximum path of the collision owner"
+  next_need: "Split the distinct half-rank host edges into special and nonspecial edges. Many special hosts directly contribute special-edge mass; for many nonspecial hosts, orient by their terminal vertices and test whether their edge-rank/vertex-rank incidences can be fed back into the ascending-edge or terminal-capacity machinery."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Triangle collisions force distinct host edges at half the owner edge rank."
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Triangle collisions force distinct host edges at half the owner edge rank"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

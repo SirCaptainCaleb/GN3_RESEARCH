@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:46:50.627404+00:00"
+id: "complete_pair_family_common4core01"
+last_elevation_revision: 8656
+last_substantive_worker_id: 605
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T18:46:50.627404+00:00"
+  audit_resolution:
+    claim_id: 158
+    detail: "Independent check passed. For each a∈E, the six-set S_a=D∪(E-{a}) has three Hamiltonian deletions indexed by E-{a}; four-of-six therefore forces at least one Hamiltonian deletion d_a∈D. Pigeonhole over four choices of a and three choices in D gives distinct a,b with d_a=d_b=d. The two Hamiltonian five-sets then intersect in (D-{d})∪(E-{a,b}), of order four."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:53:28.815288+00:00"
+    worker_id: 708
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 158
+    detail: "Independent check passed. For each a∈E, the six-set S_a=D∪(E-{a}) has three Hamiltonian deletions indexed by E-{a}; four-of-six therefore forces at least one Hamiltonian deletion d_a∈D. Pigeonhole over four choices of a and three choices in D gives distinct a,b with d_a=d_b=d. The two Hamiltonian five-sets then intersect in (D-{d})∪(E-{a,b}), of order four."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:53:28.815288+00:00"
+    worker_id: 708
+object_type: "research"
+origin_worker_id: 605
+parent_id: "smallset01"
+position: 0
+research_interface:
+  consumer: "fixed-core amplification; six-set transport; endpoint-pair synchronization"
+  given: "a three-set D whose union with every pair of a disjoint four-set E is Hamiltonian"
+  produces: "two Hamiltonian five-sets with four common vertices"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A complete pair-extension family over a three-set contains two five-sets with four common vertices."
+substantive_worker_ids:
+  - 605
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A complete pair-extension family over a three-set contains two five-sets with four common vertices"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:53:28.815288+00:00"
+version: 5

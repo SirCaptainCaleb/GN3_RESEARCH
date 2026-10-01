@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T18:29:59.084704+00:00"
+id: "transferlabelcapacity01"
+last_elevation_revision: 0
+last_substantive_worker_id: 569
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 214
+    detail: "Independent check passes. For fixed selected edge e_a and transfer label x, exactly one support of F_a omits x. In the singleton-transfer normal form of 68deffb43319 that support is one endpoint S of the alternative x-labelled edge. Since an x-labelled sharp-shell edge consists of two disjoint lambda-supports covering V(H)-{x}, its other endpoint T_x=V(H)-(S union {x}) is uniquely determined. The same normal form makes T_x a component support of every partner F_b using label x, hence every such selected e_b is incident with T_x and their number is at most deg_J(T_x)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:45:57.720012+00:00"
+    worker_id: 627
+  last_audit_observation:
+    claim_id: 214
+    detail: "Independent check passes. For fixed selected edge e_a and transfer label x, exactly one support of F_a omits x. In the singleton-transfer normal form of 68deffb43319 that support is one endpoint S of the alternative x-labelled edge. Since an x-labelled sharp-shell edge consists of two disjoint lambda-supports covering V(H)-{x}, its other endpoint T_x=V(H)-(S union {x}) is uniquely determined. The same normal form makes T_x a component support of every partner F_b using label x, hence every such selected e_b is incident with T_x and their number is at most deg_J(T_x)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:45:57.720012+00:00"
+    worker_id: 627
+object_type: "research"
+origin_worker_id: 569
+parent_id: "compatibilitytoolkit01"
+position: 30
+research_interface:
+  consumer: "sharp half-order forest-transversal counting and exchange arguments"
+  given: "one selected deletion-cover edge e_a and one fixed singleton-transfer label x"
+  need: "combine label localization with component-degree bounds"
+  produces: "all selected partner edges using transfer label x are incident with one uniquely determined opposite Hamiltonian support; multiplicity at most its selected-support degree"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A fixed singleton-transfer label determines one opposite support."
+substantive_worker_ids:
+  - 569
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A fixed singleton-transfer label determines one opposite support"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T01:09:44.298256+00:00"
+version: 7

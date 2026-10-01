@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-24T05:42:09.374923+00:00"
+id: "1001146"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aedec060-6d1b-413c-86da-34e94bcdc8ee"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:43:15.302064+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "aedec060-6d1b-413c-86da-34e94bcdc8ee"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:43:15.302064+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:42:29.111897+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1001153"
+position: 0
+research_interface:
+  consequence: "The low terminal-only C contact rotates the maximum v-path to a maximum path ending at the next joint E, forcing E to have top potential. Any high edge contacting E must use E as a terminal, never as its entrance."
+  consumer:
+    - "0-1-1 two-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "fce6ecc978fb surviving C-terminal low edge"
+    - "2e04b9ddaeaf charged endpoint rotation"
+  next_need: "Use phi(E)>=p together with the 0-1-1 condition at E: if E is occupied, the corresponding high edge is single at both v and E. Compare the chosen maximum E-path with the rotated E-ending path to force its entrance into a narrow central window. If E is omitted, the three high contacts are A,B,D and the low source rail P_x must be crossed by all three."
+  role: "one-low odd-boundary rotation pressure"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The surviving low C-terminal rotation forces the next joint to top potential."
+substantive_worker_ids:
+  - 225
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The surviving low C-terminal rotation forces the next joint to top potential"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

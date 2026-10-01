@@ -1,0 +1,9 @@
+# Exact Mantel density forces a quarter-family of one uniform disturbance type
+
+## Statement
+
+Assume the exact compatibility-density theorem 2645d6e9cf57. Let D be any m>=7 chosen deletion labels in a boundary tournament with pc(H)>2, with one chosen deletion cover F_d for each d. Then some anchor F_d has at least K=floor((m-1)/2) incompatible partners, and at least ceil(K/2) of those partners have one common broad incompatibility type: either all are support-incompatible with F_d, or all are support-compatible but order-incompatible with F_d. In the first case each partner supplies the bounded mixed-support transition of compatuniformdisturb; in the second each supplies its certified reversed-edge/reversing-triple/tight-cycle order witness. Thus one anchor carries at least ceil(floor((m-1)/2)/2) uniform disturbance witnesses.
+
+## Body
+
+The exact Mantel bound gives an anchor d with at least K=floor((m-1)/2) incompatible partners. Every incompatible pair (F_d,F_e) belongs to exactly one of two broad classes: support-incompatible, or support-compatible but not fully compatible, which means order-incompatible. Pigeonhole gives at least ceil(K/2) partners in one class. The witness extraction for the two classes is the certified argument already recorded in compatuniformdisturb: support incompatibility yields a direct mixed-support crossing edge or a two-edge passage through the omitted label, while support-compatible order incompatibility yields a reversed common edge, a reversing tight triple, or a vertex-simple tight cycle. The new content is the sharpened quantitative lower bound obtained from exact Mantel density.

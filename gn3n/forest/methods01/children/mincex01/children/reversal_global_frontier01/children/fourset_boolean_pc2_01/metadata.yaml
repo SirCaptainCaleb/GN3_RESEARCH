@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-28T21:37:03.978414+00:00"
+id: "fourset_boolean_pc2_01"
+last_elevation_revision: 0
+last_substantive_worker_id: 703
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Elementary but high-leverage Boolean pc2 family for the remaining matching-block K4 branch; please certify independently."
+  audit_request_recorded_at: "2026-09-28T21:40:20.54152+00:00"
+  audit_resolution:
+    claim_id: 255
+    detail: "For every nonempty proper S of the non-Hamiltonian four-set X, X-S has order at most three and is Hamiltonian. If K+S were Hamiltonian it would pair with X-S to two-cover H; minimality then gives path-cover number exactly two for K+S."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  boolean_extension_family: true
+  last_audit_observation:
+    claim_id: 255
+    detail: "For every nonempty proper S of the non-Hamiltonian four-set X, X-S has order at most three and is Hamiltonian. If K+S were Hamiltonian it would pair with X-S to two-cover H; minimality then gives path-cover number exactly two for K+S."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+object_type: "research"
+origin_worker_id: 703
+parent_id: "reversal_global_frontier01"
+position: 0
+research_interface:
+  consumer: "deletion-cover compatibility; endpoint transport; matching-block residue consumption"
+  given: "a non-Hamiltonian four-set in a minimum counterexample"
+  produces: "for every nonempty proper subset S of the four-set, the complement extension K+S is non-Hamiltonian with path-cover number two"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A non-Hamiltonian four-set gives path-cover-two stability for every nonempty proper complement extension"
+substantive_worker_ids:
+  - 703
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A non-Hamiltonian four-set gives path-cover-two stability for every nonempty proper complement extension"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T12:17:08.199921+00:00"
+version: 9

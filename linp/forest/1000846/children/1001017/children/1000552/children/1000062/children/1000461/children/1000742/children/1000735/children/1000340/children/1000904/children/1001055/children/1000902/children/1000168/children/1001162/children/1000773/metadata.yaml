@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T13:56:21.919039+00:00"
+id: "1000773"
+last_elevation_revision: null
+last_substantive_worker_id: 258
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a72fe2a8-b0b6-4ba4-b408-b66b112919f3"
+    detail: "Replaced prohibited endpoint wording with standard endpoint language; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:12:03.748699+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "a72fe2a8-b0b6-4ba4-b408-b66b112919f3"
+    detail: "Replaced prohibited endpoint wording with standard endpoint language; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:12:03.748699+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited proof-process endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:10:48.155136+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "theorem"
+origin_worker_id: 258
+parent_id: "1001162"
+position: 0
+research_interface:
+  consequence: "Near saturation in the dangerous q=p-1 shell forces about 5q/8 distinct balanced endpoint lenses attached to a single maximum terminal path."
+  consumer:
+    - "r=3 post-43/48 improvement"
+    - "gap-one lens packing"
+    - "minimal-lens uncrossing"
+  given:
+    - "fecba48a3ffd large switching matching"
+    - "b35b0fd4e4cd balanced endpoint lens"
+  next_need: "Prove a packing theorem for balanced endpoint lenses on one host maximum path. Crossing auxiliary sides should force extra intersections; laminar families should be bounded using their distinct endpoint labels and the switching matching omitted mates. Any linear upper bound below 5q/8 yields a strict improvement over 43/48."
+research_level: "theorem"
+semantic_container_text: "Balanced endpoint-lens branch: a large gap-one switching family yields many lenses on one maximum path, whose crossings force off-host intersections and new maximum paths."
+simplified_statement: "Near-saturated gap-one vertices force linearly many balanced endpoint lenses on one maximum path."
+substantive_worker_ids:
+  - 258
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Near-saturated gap-one vertices force linearly many balanced endpoint lenses on one maximum path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 7

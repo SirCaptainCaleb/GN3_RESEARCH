@@ -1,0 +1,9 @@
+# An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path
+
+## Statement
+
+Let e={x,v,u} be an ascending nonspecial edge with unique entrance x, with v and u terminal at e. Suppose e carries at u a selected common-anchor certificate whose canonical anchor precursor A contains x and v. Let P_v be a maximum endpoint path ending at v, and assume e is terminal-single on P_v. Then |V(P_v) intersect V(A)|>=2. More precisely, if x lies on P_v then {x,v} is contained in V(P_v) intersect V(A); if u lies on P_v (so x does not), then A and P_v have a second common vertex outside e in addition to v.
+
+## Body
+
+Apply the certified two-return lemma eb7f3a1e87e0 with the certificate terminal u in the role of its common terminal, the lower terminal v in the role of its opposite terminal, and A as the canonical common-anchor precursor. The hypotheses of the common-anchor certificate give x,v in V(A), while A avoids u. The lemma therefore gives |V(P_v) intersect V(A)|>=2. If the unique off-v contact of e on P_v is x, then x and the endpoint v are the two explicit common vertices. If the unique off-v contact is u, terminal-singleness gives x notin V(P_v), while u notin V(A); hence the second common vertex supplied by the two-return lemma lies outside e. Thus every uphill certified edge has a repeated-intersection certificate between its lower-terminal maximum path and its selected higher-terminal anchor precursor. The inequalities phi(e)<phi(v)<phi(u), source-cleanliness, and terminal-singleness at u are not used once the higher-terminal common-anchor state and terminal-singleness at v are given.

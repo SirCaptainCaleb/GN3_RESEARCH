@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T19:36:54.200657+00:00"
+id: "1000454"
+last_elevation_revision: 0
+last_substantive_worker_id: 556
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 252
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T19:51:01.461533+00:00"
+    worker_id: 573
+  last_audit_observation:
+    claim_id: 252
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T19:51:01.461533+00:00"
+    worker_id: 573
+object_type: "research"
+origin_worker_id: 556
+parent_id: "1000429"
+position: 1
+research_interface:
+  consumer: "pairwise-repartition no-trapping; minimum-component-order-four analysis; endpoint transport / defect compression"
+  given: "a Phi-minimal three-cover of profile 4|5|a, a>=7, inside one connected component of the pairwise-repartition graph"
+  need: "use the doubled synchronization to force a reachable equal-Phi transport, common noninsertability geometry on the long path, or strict descent"
+  produces: "at least two vertices of the four-vertex component whose deletion can be replaced by either long-path endpoint, while adjoining either such vertex to the five-vertex component is non-Hamiltonian and has at least three Hamiltonian deletions in that component"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A local 4|5|a quadratic minimum has two labels extending both long endpoints."
+substantive_worker_ids:
+  - 556
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A local 4|5|a quadratic minimum has two labels extending both long endpoints"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:07:16.525329+00:00"
+version: 8

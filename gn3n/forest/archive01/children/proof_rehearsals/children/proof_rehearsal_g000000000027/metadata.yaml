@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T15:58:52.678252+00:00"
+id: "proof_rehearsal_g000000000027"
+last_elevation_revision: 0
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: null
+metadata:
+  completed_revision: 3586
+  details:
+    first_unsupported_inference: "From a certified bounded noninsertability window, support crossing, order disagreement, reversing triple/edge, or equivalent localized disturbance produced from a deletion state, construct a spanning two-cover directly, transport the disturbance through checked tight-path moves to an absorbable component end, or produce a spanning ordering of defect span at most two. The newly certified quadratic potential controls and terminates strict legal descent once such moves exist, but does not prove that a required legal descent/transport move exists; the four-side imbalance theorem likewise gives a strong extremal consequence without consuming the disturbance."
+    gap_id: "1000741"
+    summary: "End-to-end rehearsal again reaches e34dc91e238d as the first unsupported inference. The current minimum-counterexample/deletion-cover/failed-insertion/localization spine is trusted. quadraticpotential01 strengthens extremal normalization and well-foundedness but supplies no existence theorem for the next legal move. 5e5806bd9b64 similarly constrains complements of forced endpoint five-sets in a global Phi-minimum but does not yield a two-cover or defect-span compression. No earlier hidden gap was found and the current proof composition need not be reorganized."
+  gap_id: "1000741"
+  generation: 27
+  opened_revision: 3537
+  reported_outcome: "completed"
+object_type: "proof_rehearsal"
+origin_worker_id: null
+parent_id: "proof_rehearsals"
+position: 27
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+support_reason: null
+support_status: "unchecked"
+title: "Proof rehearsal 27 — 2026-09-27 15:58 UTC"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T16:56:38.614765+00:00"
+version: 2

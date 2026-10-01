@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T19:15:42.931898+00:00"
+id: "local_four_complete_endpoint_pair_grid01"
+last_elevation_revision: 8786
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent check requested for local strengthening of the complete endpoint-pair Hamiltonian five-set grid."
+  audit_request_recorded_at: "2026-09-29T19:16:32.894741+00:00"
+  audit_resolution:
+    claim_id: 365
+    detail: "Independent check passed. For each displayed endpoint e of either long component R, Hamiltonicity of W∪{e} would permit the legal endpoint-transfer repartition (W∪{e}) | (R-{e}), changing pair sizes (4,m) to (5,m-1) and Phi by 10-2m<0 for m>=6, contradicting componentwise minimality. Hence every W∪{e} is non-Hamiltonian. For arbitrary distinct endpoints e,f, two_bad_five_extensions_all_opposite01 applied to W,e,f then makes (W-{w})∪{e,f} Hamiltonian for every w∈W. This gives the full endpoint-pair grid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:17:30.10292+00:00"
+    worker_id: 708
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 365
+    detail: "Independent check passed. For each displayed endpoint e of either long component R, Hamiltonicity of W∪{e} would permit the legal endpoint-transfer repartition (W∪{e}) | (R-{e}), changing pair sizes (4,m) to (5,m-1) and Phi by 10-2m<0 for m>=6, contradicting componentwise minimality. Hence every W∪{e} is non-Hamiltonian. For arbitrary distinct endpoints e,f, two_bad_five_extensions_all_opposite01 applied to W,e,f then makes (W-{w})∪{e,f} Hamiltonian for every w∈W. This gives the full endpoint-pair grid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:17:30.10292+00:00"
+    worker_id: 708
+object_type: "research"
+origin_worker_id: 579
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "four-side endpoint transport; neutral 4|6 plateau analysis; fixed-core shell amplification"
+  given: "a componentwise Phi-minimal spanning three-cover with a four-vertex component and both other components of order at least six"
+  produces: "for every omitted four-side label and every pair among the four displayed complementary endpoints, a Hamiltonian five-set"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A locally minimal four-side has a complete endpoint-pair Hamiltonian five-set grid."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A locally minimal four-side has a complete endpoint-pair Hamiltonian five-set grid"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T19:17:30.10292+00:00"
+version: 5

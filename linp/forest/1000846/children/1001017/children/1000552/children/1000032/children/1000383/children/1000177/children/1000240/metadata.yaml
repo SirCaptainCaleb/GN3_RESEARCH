@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 7
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:37:17.097545+00:00"
+id: "1000240"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d8bd2e70-cc87-4e06-a9e0-28666a0959c6"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:39:43.578593+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "d8bd2e70-cc87-4e06-a9e0-28666a0959c6"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:39:43.578593+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "critical q,(q+1)^3 boundary localization"
+  uses:
+    - "1000155"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000177"
+position: 0
+research_interface:
+  consequence: "At the extremal charged-rank boundary the low-rank edge has exactly one possible witness slot on every maximum terminal path: the central joint. This is the general p=4 middle-slot phenomenon."
+  consumer:
+    - "two-rank block q,(q+1)^3 case"
+  given:
+    - "phi(v)=2q-2"
+    - "charged ascending rank-q edge at v"
+  next_need: "Separate entrance-central from opposite-terminal-central branches. In the entrance-central branch compare maximum paths for the three rank-(q+1) competitors; in the terminal-central branch use phi(u)>=2q-2 and a maximum u-path to obtain a reciprocal central-joint constraint."
+research_level: "lemma"
+semantic_container_text: "Half-rank boundary program for the 11/12 route: turn a charged low-rank edge into a universal central-joint witness, then organize canonical source rails, crossings, and overlap certificates for consecutive-rank obstructions."
+simplified_statement: "At the half-rank boundary a charged low-rank edge has a universal central-joint witness."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At the half-rank boundary a charged low-rank edge has a universal central-joint witness"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:37:32.388248+00:00"
+version: 6

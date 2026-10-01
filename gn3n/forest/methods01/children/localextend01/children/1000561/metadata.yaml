@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:43:48.198501+00:00"
+id: "1000561"
+last_elevation_revision: 8656
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "five_side_prescribed_pair_sixshell_menu01"
+  audit_packaging_issues:
+    -
+      note: "Title uses good deletion pairs / good graph. Project dictionary prefers Hamiltonian deletion; graph should be described by its defining Hamiltonicity relation. Mathematics unaffected."
+      recorded_at: "2026-09-29T23:57:50.260328+00:00"
+      worker_id: 665
+  audit_request_reason: "Independent check of elevation: adjacent deletion pairs yield a Hamiltonian five-union directly; matching outcome requires a non-Hamiltonian four-core and disappears for Hamiltonian cores."
+  audit_request_recorded_at: "2026-09-29T21:23:56.309921+00:00"
+  audit_resolution:
+    claim_id: 386
+    detail: "Independent check passed. Certified six-set transport gives |D|>=4 and delta(J)>=1. Adjacent J-edges give the stated overlapping Hamiltonian K4 pair and five-set amplification. If J has no adjacent edges, maximum degree is at most one; with minimum degree at least one J is a perfect matching, so |D| is 4 or 6. Vocabulary-only issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 386
+    detail: "Independent check passed. Certified six-set transport gives |D|>=4 and delta(J)>=1. Adjacent J-edges give the stated overlapping Hamiltonian K4 pair and five-set amplification. If J has no adjacent edges, maximum degree is at most one; with minimum degree at least one J is a perfect matching, so |D| is 4 or 6. Vocabulary-only issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-30T00:05:15.363393+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 637
+parent_id: "localextend01"
+position: 1
+research_interface:
+  consumer: "six-set transport; complete endpoint five-shell; fixed-core amplification"
+  given: "any non-Hamiltonian six-set in a minimum counterexample"
+  need: "consume the perfect-matching good-deletion residue; all nonmatching good graphs already amplify"
+  produces: "overlap amplification from adjacent good deletion pairs, or the rigid perfect-matching equality residue on four or six good labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A non-Hamiltonian six-set has adjacent good deletion pairs or a perfect-matching good graph"
+substantive_worker_ids:
+  - 637
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A non-Hamiltonian six-set has adjacent good deletion pairs or a perfect-matching good graph"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T00:05:15.363393+00:00"
+version: 9

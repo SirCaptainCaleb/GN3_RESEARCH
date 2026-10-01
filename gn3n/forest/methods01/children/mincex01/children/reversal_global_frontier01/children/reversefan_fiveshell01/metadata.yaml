@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-28T21:39:42.532195+00:00"
+id: "reversefan_fiveshell01"
+last_elevation_revision: 0
+last_substantive_worker_id: 718
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "New amplifier from complete reverse fan to overlapping Hamiltonian five-sets; orientation-safe smallset composition."
+  audit_request_recorded_at: "2026-09-28T21:40:20.54152+00:00"
+  audit_resolution:
+    claim_id: 364
+    detail: "Added the actually used smallset01 and mincex01 logical premises."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+  last_audit_observation:
+    claim_id: 364
+    detail: "Added the actually used smallset01 and mincex01 logical premises."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "The proof uses minimum-counterexample calculus for n>10 and for the non-Hamiltonian path-cover-two complements."
+    recorded_at: "2026-09-29T05:49:18.301819+00:00"
+    to_id: "mincex01"
+    worker_id: 630
+object_type: "research"
+origin_worker_id: 718
+parent_id: "reversal_global_frontier01"
+position: 0
+research_interface:
+  consumer: "matching-block reverse-fan consumption; shortest grand-theorem route"
+  given: "the complete reverse-fan branch of the bounded reversal frontier"
+  need: "exploit the overlapping five-sets through common-core transport or extract a Hamiltonian four-core"
+  produces: "a graph of Hamiltonian five-set extensions of the fan triple with independence number at most two, and in particular two Hamiltonian five-sets sharing the four-vertex core T+a, both with path-cover-two complements"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A complete reverse fan forces overlapping Hamiltonian five-sets"
+substantive_worker_ids:
+  - 718
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A complete reverse fan forces overlapping Hamiltonian five-sets"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T05:59:46.300317+00:00"
+version: 7

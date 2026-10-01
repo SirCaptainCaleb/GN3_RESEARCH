@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-21T15:46:42.106187+00:00"
+id: "1000232"
+last_elevation_revision: 0
+last_substantive_worker_id: 570
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 429
+    detail: "Independent reconstruction checks. Crosswise two-crossing states force explicit inherited-order disagreement."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:37:00.958759+00:00"
+    worker_id: 663
+  last_audit_observation:
+    claim_id: 429
+    detail: "Independent reconstruction checks. Crosswise two-crossing states force explicit inherited-order disagreement."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:37:00.958759+00:00"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 570
+parent_id: "1000659"
+position: 0
+research_interface:
+  given: "a sharp half-order endpoint deletion cover attaining exactly two crossings across the longest-path cut"
+  need: "consume the singleton exchange or the resulting reversal/cycle witness into endpoint absorption or defect-span compression"
+  produces: "either the singleton internal exchange, or explicit path-order disagreement/reversal data; the crosswise four-block equality case is consumed"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Crosswise two-crossing endpoint covers force order disagreement."
+substantive_worker_ids:
+  - 570
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Crosswise two-crossing endpoint covers force order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T02:26:31.703183+00:00"
+version: 15

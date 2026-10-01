@@ -1,0 +1,9 @@
+# A five-side beside a path of order at least seven gives strict quadratic descent or order disagreement
+
+## Statement
+
+Let H be a boundary tournament and let C=X|P|Q be any spanning three-cover, where X is a Hamiltonian path of order five and P=(p_1,...,p_m) has m>=7. Then at least one of the following holds: (1) a legal pairwise repartition of X|P produces another spanning three-cover with strictly smaller quadratic potential Phi; (2) H contains order disagreement between Hamiltonian paths on overlapping induced supports contained in V(X) together with one displayed endpoint of P. More precisely, for either endpoint e of P, if X+e is Hamiltonian then transferring e from P to X gives outcome (1), while if X+e is non-Hamiltonian then X+e has at least four Hamiltonian one-vertex deletions and outcome (2) follows.
+
+## Body
+
+Fix a displayed endpoint e of P. If H[V(X) union {e}] is Hamiltonian, repartition X|P as (X+e)|(P-e), leaving Q unchanged. The changed component orders are 5,m -> 6,m-1, so the potential change is 6^2+(m-1)^2-(5^2+m^2)=12-2m<0 because m>=7. Thus outcome (1) holds. Otherwise K=H[V(X) union {e}] is a non-Hamiltonian six-vertex boundary tournament. By the four-of-six theorem in smallset01, at least four vertices d of K have K-d Hamiltonian. Apply astra004fourgooddisagree to K and any four such deletion labels. Arbitrary Hamilton paths on those four Hamiltonian five-vertex deletions contain two that order a common pair oppositely, which is outcome (2). The same dichotomy holds for either displayed endpoint e. No minimum-counterexample, trappedness, or local-minimality hypothesis is required.

@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T19:15:16.11041+00:00"
+id: "local_four_twolong_order16_residue01"
+last_elevation_revision: 8786
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Uses the dictionary alias \"relative-order disagreement\" in the title/body/statement; canonical project terminology is \"order disagreement\". This is terminology-only and does not affect the mathematics."
+      recorded_at: "2026-09-29T19:17:17.877531+00:00"
+      worker_id: 708
+  audit_request_reason: "Independent check requested for the local four-side reduction to the unique order-sixteen neutral residue."
+  audit_request_recorded_at: "2026-09-29T19:15:23.243605+00:00"
+  audit_resolution:
+    claim_id: 365
+    detail: "Independent check passed. Applying four_path_long_pair_escape01 to X|P inside a componentwise Phi-minimal spanning three-cover excludes its strict-decrease outcome because any lower-Phi two-cover of V(X)∪V(P) gives a legal pairwise repartition of the original three-cover. Thus absence of order disagreement forces the unique neutral case |P|=6 with Hamiltonian U_P=V(X)∪E_P and neutral repartition U_P|P°|Q. Repeating independently for X|Q forces |Q|=6 and the symmetric neutral repartition. Hence the only no-disagreement residue has total order 16. A separate terminology packaging issue was recorded for use of the alias 'relative-order disagreement'."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:17:30.10292+00:00"
+    worker_id: 708
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 365
+    detail: "Independent check passed. Applying four_path_long_pair_escape01 to X|P inside a componentwise Phi-minimal spanning three-cover excludes its strict-decrease outcome because any lower-Phi two-cover of V(X)∪V(P) gives a legal pairwise repartition of the original three-cover. Thus absence of order disagreement forces the unique neutral case |P|=6 with Hamiltonian U_P=V(X)∪E_P and neutral repartition U_P|P°|Q. Repeating independently for X|Q forces |Q|=6 and the symmetric neutral repartition. Hence the only no-disagreement residue has total order 16. A separate terminology packaging issue was recorded for use of the alias 'relative-order disagreement'."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:17:30.10292+00:00"
+    worker_id: 708
+object_type: "research"
+origin_worker_id: 665
+parent_id: "local_four_allfour_interior_lock01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A locally minimal four-side with two long complements reduces to order sixteen."
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A locally minimal four-side with two long complements reduces to order sixteen"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T19:17:30.10292+00:00"
+version: 6

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-10-01T01:32:08.619087+00:00"
+id: "reversal_halfstable_manydeletion01"
+last_elevation_revision: 10414
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "reversal_manydeletion_compat_density01"
+  audit_request_reason: "Reaudit the strengthened large-order reversal chain through math-v2 reversal_halfstable_manydeletion01, math-v2 universal_internal_transposition01, mutual_internal_endpoint_grid01, and the math-v2 quadratic Mantel disturbance conclusion."
+  audit_request_recorded_at: "2026-10-01T01:52:59.521026+00:00"
+  audit_resolution:
+    claim_id: 906
+    detail: "Independently reconstructed the half-size orientation class, pc2 squares, quarter-size repeated-internality pigeonhole, and transposition to mutual internality."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  audit_trigger_kind: "chain_checkpoint"
+  deep_research: true
+  last_audit_observation:
+    claim_id: 906
+    detail: "Independently reconstructed the half-size orientation class, pc2 squares, quarter-size repeated-internality pigeonhole, and transposition to mutual internality."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  proof_bridge: "multi_deletion_reversal_normalization"
+object_type: "research"
+origin_worker_id: 745
+parent_id: "reversal_pair_three_deletion_normal01"
+position: 0
+research_interface:
+  consumer: "grand-theorem proof composition; endpoint transport; universal-internal synchronization"
+  given: "an arbitrary hypothetical minimum counterexample of order n"
+  produces: "a half-scale common-orientation reversed-pair deletion family, with either direct cover disturbance or quarter-scale repeated internality that transposes to mutual internality and endpoint grids"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A reversed pair persists through at least half the deletions; unless a deletion exposes endpoint/support/order disturbance, one reversed label is internal through a quarter-scale family, which transposes to disturbance in H-d or mutual internality and four-end K4/barrier grids for all but one of those labels."
+substantive_worker_ids:
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A genuine reversed pair normalizes across a linear-size deletion family"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 14

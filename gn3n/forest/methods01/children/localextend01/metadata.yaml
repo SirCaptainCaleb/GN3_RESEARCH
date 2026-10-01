@@ -1,0 +1,48 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 9
+created_at: "2026-09-20T20:51:30.218035+00:00"
+id: "localextend01"
+last_elevation_revision: null
+last_substantive_worker_id: 668
+legacy_id: null
+lifecycle_status: "active"
+math_version: 9
+mathematical_status: "proved"
+metadata:
+  curation: "split_from_smallset_after_retention_audit"
+  last_failure:
+    reason: "Substantive proof gap in the lemma \"Two bad four-extensions force a controlled five-path\": the proof begins by asserting that every non-Hamiltonian four-vertex boundary tournament is edge-orderable. This is false in the current small-set theory: smallset01 explicitly contains a cyclic non-edge-orderable non-Hamiltonian four-vertex configuration. The subsequent matching-block normalization therefore does not cover all hypotheses of the lemma. The lemma may still be true, but it requires a separate argument for the cyclic K4 case (or a strengthened hypothesis), so the object cannot be certified as written."
+    recorded_at: "2026-09-20T23:04:40.157348+00:00"
+  last_local_audit_repair:
+    reason: "Correct one transposed displayed triple in the edge-ordered branch; the matching-block order and the immediately used five-path both require (u_1,r,u_2)."
+    recorded_at: "2026-09-20T23:21:12.316253+00:00"
+    worker_id: 594
+  semantic_container_seed:
+    atlas_key: "astra-mined-local-tools"
+    headline: "Astra-mined local utility lemmas"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "toolkit"
+origin_worker_id: 603
+parent_id: "methods01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: "Local Hamilton-extension and match-set calculus: extension shells, common cores, endpoint-pair families, small Hamiltonian windows, local repartitions, and bounded lock/barrier alternatives."
+simplified_statement: "Bad extensions, match sets, and parallel-middle configurations around short tight paths obey a reusable local Hamilton-extension calculus."
+substantive_worker_ids:
+  - 603
+  - 668
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Local Hamilton-extension and match-set calculus"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:05:20.790279+00:00"
+version: 16

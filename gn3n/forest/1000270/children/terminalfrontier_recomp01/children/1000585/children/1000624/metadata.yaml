@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T02:00:48.156973+00:00"
+id: "1000624"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 155
+    detail: "Independent reconstruction: applying the certified gap-one dichotomy to A|B and A|C leaves nonempty donor-endpoint sets S_B,S_C unless an excluded canonical witness already occurs. Excluding the common-donor branch makes these disjoint nonempty subsets of the two endpoints of A, hence after relabeling S_B={a_0}, S_C={a_r}; the crossed enlargements are Hamiltonian and the opposite enlargements are non-Hamiltonian. In the no-order-disagreement branch any Hamilton order on B+a_0 or C+a_r preserves the core order and therefore is an insertion into that displayed order; two different insertion positions would themselves order the inserted label differently relative to an intervening core vertex, giving order disagreement, so the successful position is unique. The opposite labels are noninsertable and inherit the failed-insertion normal forms. The two good enlargements are disjoint and give the stated two-cover of the complement of A's interior."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:05:35.45336+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 155
+    detail: "Independent reconstruction: applying the certified gap-one dichotomy to A|B and A|C leaves nonempty donor-endpoint sets S_B,S_C unless an excluded canonical witness already occurs. Excluding the common-donor branch makes these disjoint nonempty subsets of the two endpoints of A, hence after relabeling S_B={a_0}, S_C={a_r}; the crossed enlargements are Hamiltonian and the opposite enlargements are non-Hamiltonian. In the no-order-disagreement branch any Hamilton order on B+a_0 or C+a_r preserves the core order and therefore is an insertion into that displayed order; two different insertion positions would themselves order the inserted label differently relative to an intervening core vertex, giving order disagreement, so the successful position is unique. The opposite labels are noninsertable and inherit the failed-insertion normal forms. The two good enlargements are disjoint and give the stated two-cover of the complement of A's interior."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:05:35.45336+00:00"
+    worker_id: 679
+  noncomputational: true
+  proof_rehearsal_generation: 43
+  scale_free: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "1000585"
+position: 0
+research_interface:
+  consumer: "grand theorem proof rehearsal; endpoint transport / defect compression"
+  given: "the unique-large equitable profile after excluding all standard witnesses and the common-donor endpoint branch"
+  need: "couple the two bounded failure windows through the balanced complement cover or the inherited interior path to force a cross triple, order disagreement, or endpoint absorption"
+  produces: "two crossed success/failure insertion windows: a0 uniquely inserts into B while ar is noninsertable there, and ar uniquely inserts into C while a0 is noninsertable there; additionally the complement of A interior has a balanced two-cover"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The remaining unique-large residue is a crossed pair of one-success one-failure insertion windows."
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The remaining unique-large residue is a crossed pair of one-success one-failure insertion windows"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:05:35.45336+00:00"
+version: 4

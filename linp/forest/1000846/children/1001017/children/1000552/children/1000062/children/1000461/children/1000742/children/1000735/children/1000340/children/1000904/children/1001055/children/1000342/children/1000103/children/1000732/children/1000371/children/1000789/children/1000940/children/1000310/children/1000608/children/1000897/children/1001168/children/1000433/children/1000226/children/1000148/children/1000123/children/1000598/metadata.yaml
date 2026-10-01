@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-25T21:53:36.854561+00:00"
+id: "1000598"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "Each tight collision supplies a two-vertex source-path overlap by 1b787a779ada. Rainbowness gives indegree at most one in the collision index graph and uniqueness of each entrance gives outdegree at most one; all arrows go backward, so components are directed paths and admit a matching covering at least half the collision edges."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "Each tight collision supplies a two-vertex source-path overlap by 1b787a779ada. Rainbowness gives indegree at most one in the collision index graph and uniqueness of each entrance gives outdegree at most one; all arrows go backward, so components are directed paths and admit a matching covering at least half the collision edges."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "corollary"
+origin_worker_id: 220
+parent_id: "1000123"
+position: 0
+research_interface:
+  consequence: "The tight plus-two branch has linear, not square-root, packing: half of all tight collisions yield index-disjoint multiple-overlap source-path pairs."
+  consumer:
+    - "multiple-overlap packing"
+    - "strong-rainbow extraction"
+    - "post-43/48 U_11 analysis"
+  given:
+    - "1b787a779ada tight collisions force owner-to-hit multiple source-path overlap"
+    - "simple rainbow terminal-pair path"
+    - "backward direction of color-terminal collisions"
+  next_need: "For an index-disjoint family of pairs (R_i,R_j) with x_j on R_i and at least one further common vertex, use 41100a9882dd to split into a linear-cycle branch and a shared-last-edge branch. Bound reuse of shared last edges or extract edge-disjoint cycles."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Tight U_11 color-terminal collisions contain a half-size matching of multiple-overlap source-path pairs."
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Tight U_11 color-terminal collisions contain a half-size matching of multiple-overlap source-path pairs"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T15:10:38.699151+00:00"
+id: "1000637"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 162
+    detail: "Normalized 'sharp-shell' to 'sharp half-order shell' and removed the prohibited redundant modifier 'exact' from deletion-cover terminology; no mathematics changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  last_audit_observation:
+    claim_id: 162
+    detail: "Normalized 'sharp-shell' to 'sharp half-order shell' and removed the prohibited redundant modifier 'exact' from deletion-cover terminology; no mathematics changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Vocabulary-only audit repair: replace the alias 'sharp-shell' with 'sharp half-order shell' and remove the prohibited redundant modifier 'exact' from deletion-cover terminology. Mathematical content is unchanged."
+    recorded_at: "2026-09-27T15:53:41.351358+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 613
+  small_order_free: true
+  viewpoint: "fully crossed support pairs give actual path crossings"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "1000316"
+position: 0
+research_interface:
+  consumer: "cross-corridor transversal route; endpoint-transport / defect compression"
+  given: "the fully crossed four-cell branch for two sharp-shell deletion covers"
+  need: "consume reciprocal direct crossings, while singleton-transfer pairs are handled by bridge-edge exchange"
+  produces: "one ordinary core edge in each cover crossing the other cover common-double-deletion support partition"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The fully crossed sharp half-order shell pair branch contains reciprocal direct core crossings."
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The fully crossed sharp half-order shell pair branch contains reciprocal direct core crossings"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T15:55:44.482052+00:00"
+version: 6

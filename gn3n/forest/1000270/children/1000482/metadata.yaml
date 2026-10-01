@@ -1,0 +1,53 @@
+atlas_height: "2"
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T02:30:42.585389+00:00"
+id: "1000482"
+last_elevation_revision: null
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 242
+    detail: "Independent reconstruction succeeds. For n=12, deletion-cover sizes p<=q satisfy p,q>=3 and p+q=11, hence 3<=p<=5 and q>=6. The enlarged small side C=P union {x} is non-Hamiltonian and 6f72075b0b54 supplies at least four Hamiltonian vertex deletions. If Q is globally longest, astra004manygoodmixed applies with A=Q,U=C and yields the stated endpoint-crossing/order-disagreement disturbance. If Q is not globally longest, any globally longest path A has |A|>=q+1, so its complement U has |U|<=11-q=p<=5; minimum-counterexample calculus gives |U|>=4 and non-Hamiltonian two-coverable complement, yielding the codimension-4/5 alternative."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:31:31.988102+00:00"
+    worker_id: 652
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 242
+    detail: "Independent reconstruction succeeds. For n=12, deletion-cover sizes p<=q satisfy p,q>=3 and p+q=11, hence 3<=p<=5 and q>=6. The enlarged small side C=P union {x} is non-Hamiltonian and 6f72075b0b54 supplies at least four Hamiltonian vertex deletions. If Q is globally longest, astra004manygoodmixed applies with A=Q,U=C and yields the stated endpoint-crossing/order-disagreement disturbance. If Q is not globally longest, any globally longest path A has |A|>=q+1, so its complement U has |U|<=11-q=p<=5; minimum-counterexample calculus gives |U|>=4 and non-Hamiltonian two-coverable complement, yielding the codimension-4/5 alternative."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:31:31.988102+00:00"
+    worker_id: 652
+object_type: "research"
+origin_worker_id: 688
+parent_id: "1000270"
+position: 0
+research_interface:
+  consumer: "order-12 all-equal 4|4|4 residue; endpoint transport / defect compression"
+  given: "any deletion two-cover in a hypothetical minimum counterexample of order 12"
+  need: "consume the codimension-4/5 frontier or the explicit longest-path crossing/order witness; no order-12 branch remains locally neutral"
+  produces: "either a globally longest path with non-Hamiltonian complement of order 4 or 5, or a globally longest deletion-cover side whose four-good-deletion complement forces direct mixed crossing or order disagreement at endpoint probes"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every order-twelve deletion state enters codimension four/five or a longest-path endpoint disturbance."
+substantive_worker_ids:
+  - 688
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Every order-twelve deletion state enters codimension four/five or a longest-path endpoint disturbance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:44:33.034029+00:00"
+version: 7

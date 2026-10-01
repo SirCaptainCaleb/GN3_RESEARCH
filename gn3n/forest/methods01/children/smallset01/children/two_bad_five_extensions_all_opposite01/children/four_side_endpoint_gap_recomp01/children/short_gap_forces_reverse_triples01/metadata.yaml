@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T22:09:38.971508+00:00"
+id: "short_gap_forces_reverse_triples01"
+last_elevation_revision: 0
+last_substantive_worker_id: 592
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "short_gap_forces_reverse_triples01"
+  audit_request_reason: "Independent checkpoint for the generalized short-gap orientation theorem. It uses only certified local premises and supplies conditional monotone spacing without the questioned inversion-cycle inference."
+  audit_request_recorded_at: "2026-09-29T22:10:21.633963+00:00"
+  audit_resolution:
+    claim_id: 322
+    detail: "Independent check passed. At adjacent obstruction gaps, a tight label triple plus the certified cross triple gives parallel three-paths and hence a Hamiltonian mixed K4; at distance two, the certified interval connector plus the label triple gives parallel 3/4 corridors and hence a Hamiltonian mixed K5. Under mixed-support exclusion these orientations are impossible, so boundary antisymmetry gives the stated reverse label triples and the gap-spacing inequalities."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:05:15.363393+00:00"
+    worker_id: 665
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 322
+    detail: "Independent check passed. At adjacent obstruction gaps, a tight label triple plus the certified cross triple gives parallel three-paths and hence a Hamiltonian mixed K4; at distance two, the certified interval connector plus the label triple gives parallel 3/4 corridors and hence a Hamiltonian mixed K5. Under mixed-support exclusion these orientations are impossible, so boundary antisymmetry gives the stated reverse label triples and the gap-spacing inequalities."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:05:15.363393+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-30T00:00:50.852152+00:00"
+  supersession_previous_attention: "available"
+object_type: "toolkit"
+origin_worker_id: 592
+parent_id: "four_side_endpoint_gap_recomp01"
+position: 0
+research_interface:
+  consumer: "four-label gap networks; flexible endpoint attachment; proof repair for the monotone spacing conclusion"
+  given: "distinct second-type obstruction gaps, adjacent-gap cross triples, and absence of mixed Hamiltonian supports of orders four and five"
+  produces: "all triples with short increasing endpoint gap spans are forced in the reverse orientation; spacing on every tight label path"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Short gaps force reversed endpoint triples without a minimum-counterexample hypothesis."
+substantive_worker_ids:
+  - 592
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Short gaps force reversed endpoint triples without a minimum-counterexample hypothesis"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T05:00:39.376694+00:00"
+version: 11

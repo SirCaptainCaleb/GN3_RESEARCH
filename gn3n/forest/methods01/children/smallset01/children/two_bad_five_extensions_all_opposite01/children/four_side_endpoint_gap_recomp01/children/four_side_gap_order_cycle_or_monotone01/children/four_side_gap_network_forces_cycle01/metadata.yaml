@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-29T22:08:29.98548+00:00"
+id: "four_side_gap_network_forces_cycle01"
+last_elevation_revision: 0
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  last_failure:
+    reason: "Final cycle conclusion depends on the invalid assumption that an inverted X-subpath and opposite gap connector automatically splice to a tight cycle. The monotone-impossible local subargument may be reusable separately, but the theorem as stated is not proved."
+    recorded_at: "2026-09-29T22:09:33.881627+00:00"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "four_side_gap_order_cycle_or_monotone01"
+position: 0
+research_interface:
+  consumer: "four-side endpoint-lock closure; deletion-state mixed frontier; cycle transport; endpoint transport / defect compression"
+  given: "the unresolved four-label injective second-type gap network beside a Hamiltonian four-path"
+  implication: "the endpoint-lock trichotomy has no surviving interval/gap-network branch beyond the proper-cycle output"
+  produces: "a proper tight cycle with non-Hamiltonian path-cover-two complement and a certified local reversal witness; the monotone gap-network residue is eliminated"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 579
+support_reason: "local_audit_failed"
+support_status: "blocked"
+title: "The four-label gap network always forces a proper tight cycle"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:21:12.195834+00:00"
+version: 10

@@ -1,0 +1,9 @@
+# Order-thirteen 3|5|5 plateaux have dense equal-size mobility and at least ninety-four three-side supports
+
+## Statement
+
+Let H be a boundary tournament on thirteen vertices and let C=X|P|Q be a 3|5|5 spanning cover. Then C has at least 79 distinct one-move neighbors with component orders 3,5,5. For every x in X, at least six vertices y outside X yield a one-move neighbor with three-side X-x+y. Consequently, in any connected Astra-003 component consisting only of 3|5|5 states, the family D of three-side supports has coordinate-wise Johnson exchange degree at least six and |D|>=94.
+
+## Body
+
+Four-of-six applied inside each eight-set X union P and X union Q gives at least 38 Hamiltonian five-subsets, hence at least 37 nontrivial repartitions on each side; the reciprocal 5|5 swap theorem adds at least five more, giving at least 79 equal-size neighbors. More locally, for each x in X, four-of-six on P union {x} and Q union {x} gives at least three exchanges into each five-side, hence six distinct supports X-x+y. Thus every support family D in a trapped 3|5|5 component has the coordinate-wise six-exchange property. In its two-shadow G, every used pair lies in at least seven members of D, every nonisolated shadow vertex has degree at least eight, and incidence counting gives |D| >= (28/3)|V(G)|. The extremal possibility |V(G)|=9 forces D to be all triples of a nine-set. That equality geometry is impossible: writing the four excluded vertices as Z, every five-side contains two vertices of Z and exchanges into W succeed while exchanges into Z fail. The resulting six-vertex W-core propagates every three-subset as a five-side core; fixing z in Z then produces a five-set with four non-Hamiltonian four-deletions, contradicting the certified five-set structure theorem. Therefore the two-shadow uses at least ten vertices and |D|>=ceil(280/3)=94.

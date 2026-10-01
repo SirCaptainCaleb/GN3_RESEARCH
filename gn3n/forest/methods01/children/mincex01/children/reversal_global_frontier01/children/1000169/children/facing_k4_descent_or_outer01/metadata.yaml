@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T17:48:06.542227+00:00"
+id: "facing_k4_descent_or_outer01"
+last_elevation_revision: 8453
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T17:48:06.542227+00:00"
+  audit_resolution:
+    claim_id: 298
+    detail: "Removed the prohibited redundant modifier 'exact' from 'deletion two-cover'; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T17:59:52.149282+00:00"
+    worker_id: 605
+  audit_trigger_kind: "explicit_publish_request"
+  compression: "separates the positioned K4 trichotomy into automatic strict descent versus the sole outer-neighbor residue"
+  last_audit_observation:
+    claim_id: 298
+    detail: "Removed the prohibited redundant modifier 'exact' from 'deletion two-cover'; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T17:59:52.149282+00:00"
+    worker_id: 605
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only repair: remove the prohibited redundant modifier exact from deletion two-cover; mathematical statement and proof are unchanged."
+    recorded_at: "2026-09-29T17:59:36.393512+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 605
+  proof_rehearsal: "2026-09-29"
+object_type: "research"
+origin_worker_id: 637
+parent_id: "1000169"
+position: 0
+research_interface:
+  consumer: "canonical central-bridge no-trapping; endpoint transport; quadratic descent"
+  given: "any exact one-vertex deletion two-cover with both paths of order at least three"
+  produces: "a uniform >=6 Phi drop from the singleton lift unless the forced facing K4 omits the deleted label"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Facing endpoint four-windows either give a six-unit quadratic drop or omit the deletion label"
+substantive_worker_ids:
+  - 637
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Facing endpoint four-windows either give a six-unit quadratic drop or omit the deletion label"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:59:52.149282+00:00"
+version: 6

@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T20:29:53.012615+00:00"
+id: "deletion_state_matching_frontier18"
+last_elevation_revision: 8911
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: theorem replaces the generic large-order order-disagreement output by overlap amplification or the fixed-endpoint perfect-matching shell while preserving same-component descent."
+  audit_request_recorded_at: "2026-09-29T20:30:15.054098+00:00"
+  audit_resolution:
+    claim_id: 58
+    detail: "Independent check passed. The canonical double-wrap state has a complementary path of order at least seven. Endpoint Hamiltonicity or Hamiltonian U gives strict descent; otherwise the endpoint six-set has exactly the hard four-label deletion pattern, and the certified endpoint matching theorem gives adjacent-edge amplification or the perfect-matching residue. The component-reachability statement is preserved throughout the explicit pairwise moves."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 58
+    detail: "Independent check passed. The canonical double-wrap state has a complementary path of order at least seven. Endpoint Hamiltonicity or Hamiltonian U gives strict descent; otherwise the endpoint six-set has exactly the hard four-label deletion pattern, and the certified endpoint matching theorem gives adjacent-edge amplification or the perfect-matching residue. The component-reachability statement is preserved throughout the explicit pairwise moves."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Vocabulary and interface repair only: preserve hypotheses and conclusions; remove certification adjectives, replace ambiguous kernel/plateau/shell wording, normalize Hamiltonian-deletion terminology, and remove the unsupported same-component assertion from the exchange interface."
+    recorded_at: "2026-09-29T20:58:16.349829+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 585
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-30T12:52:10.612435+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "deletion_state_escape18"
+position: 0
+research_interface:
+  consumer: "grand-theorem large-order closure; endpoint transport; defect compression"
+  given: "any one-vertex deletion state in a minimum counterexample of order at least eighteen"
+  need: "consume only the fixed-endpoint perfect-matching shell; generic order disagreement is no longer the large-order terminal output"
+  produces: "same-component strict quadratic descent, positioned overlap amplification, or the unique fixed-endpoint perfect-matching shell"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Above order seventeen every deletion state descends or reaches the fixed-endpoint matching frontier"
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Above order seventeen every deletion state descends or reaches the fixed-endpoint matching frontier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T12:52:10.612435+00:00"
+version: 10

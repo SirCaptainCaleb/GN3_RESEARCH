@@ -1,0 +1,12 @@
+-
+  current_bottleneck_id: null
+  current_guidance_id: null
+  current_strategy_id: null
+  grand_theorem_id: "1000270"
+  methodology_version: 1
+  phase: "active"
+  proof_frontier_id: null
+  research_focus_ids:
+  revision: 10915
+  singleton: true
+  updated_at: "2026-10-01T13:56:47.294667+00:00"

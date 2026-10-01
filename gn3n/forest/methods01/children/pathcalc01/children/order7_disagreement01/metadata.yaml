@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T13:19:08.135667+00:00"
+id: "order7_disagreement01"
+last_elevation_revision: 8250
+last_substantive_worker_id: 605
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Recomposition source package incorrectly includes endpoint_reversal_fixedpair01. The global n>=7 disagreement theorem faithfully absorbs fixedpair_three_disagree01 but does not preserve the stronger conditional fixed-pair four-grid theorem. Restore endpoint_reversal_fixedpair01 as independent reusable mathematics rather than treating it as superseded by order7_disagreement01."
+      recorded_at: "2026-09-29T17:59:34.735883+00:00"
+      worker_id: 637
+  audit_request_reason: "High blast radius: if certified, bare unpositioned order disagreement is automatic from order seven and many disturbance-production branches should no longer count as progress."
+  audit_request_recorded_at: "2026-09-29T13:19:48.195096+00:00"
+  audit_resolution:
+    claim_id: 76
+    detail: "Recomposition equivalence verified. The target directly reconstructs the fixed-pair orientation-class mechanism: among n-2>=5 exterior vertices one orientation class has at least three labels, and a 3-vertex tournament on those labels supplies y->z->w, yielding the two four-paths (y,b,z,a) and (z,b,w,a) with opposite relative order on {b,z}. This faithfully preserves the certified endpoint_reversal_fixedpair01 plus fixedpair_three_disagree01 package and strengthens the entry hypothesis to every boundary tournament of order at least seven."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:58:18.435805+00:00"
+    worker_id: 637
+  last_audit_observation:
+    claim_id: 76
+    detail: "Recomposition equivalence verified. The target directly reconstructs the fixed-pair orientation-class mechanism: among n-2>=5 exterior vertices one orientation class has at least three labels, and a 3-vertex tournament on those labels supplies y->z->w, yielding the two four-paths (y,b,z,a) and (z,b,w,a) with opposite relative order on {b,z}. This faithfully preserves the certified endpoint_reversal_fixedpair01 plus fixedpair_three_disagree01 package and strengthens the entry hypothesis to every boundary tournament of order at least seven."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:58:18.435805+00:00"
+    worker_id: 637
+  recomposition_audit:
+    classified_at: "2026-09-29T17:56:53.505974+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 664
+parent_id: "pathcalc01"
+position: 0
+research_interface:
+  consumer: "research-route triage; substantial/positioned disagreement; endpoint transport / defect compression"
+  given: "any boundary tournament of order at least seven"
+  implication: "bare existence of unpositioned order disagreement is automatic at all orders relevant to a minimum counterexample and should not count as theorem-level progress"
+  produces: "two Hamiltonian four-paths on at most five vertices with explicit relative-order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every boundary tournament of order at least seven has five-vertex order disagreement"
+substantive_worker_ids:
+  - 664
+  - 605
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every boundary tournament of order at least seven has five-vertex order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:00:26.088051+00:00"
+version: 14

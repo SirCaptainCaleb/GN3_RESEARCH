@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T05:30:38.464937+00:00"
+id: "1000521"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T00:58:29.065001+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000330"
+position: 0
+research_interface:
+  consequence: "The G-only four-single obstruction is reduced exactly to A,B,C,G, with C terminal-only and a canonical q-edge wrong-entrance path into h_G one edge short of contradiction."
+  consumer:
+    - "a9d95378e855 corrected rank-pair block"
+    - "Astra conflict-matching reconstruction"
+  given:
+    - "47815dccb8b0 excludes F+G"
+    - "a01ddfa76dc8 terminal-only localization"
+    - "eac2e3da3eea joint clean conflict"
+  next_need: "Use the A/B edges as blockers of the loss-one state. Split A/B entrance-visible versus terminal-only. Terminal-only cases are equality states for df8/f0 and should admit a canonical rotation; the X-X case has three visible q-potential entrances A,B,G and should yield a distance/cell conflict."
+  role: "odd-central G-only loss-one normal form"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The G-only odd-central four-single state is an exact loss-one normal form."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The G-only odd-central four-single state is an exact loss-one normal form"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

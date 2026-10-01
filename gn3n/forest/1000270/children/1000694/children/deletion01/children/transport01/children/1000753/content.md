@@ -1,0 +1,9 @@
+# A doubled endpoint barrier propagates along a path unless a four-vertex connector opens
+
+## Statement
+
+Let P=(p_1,...,p_m) be a tight path in a boundary tournament and let y,z be distinct vertices outside P. Say that a vertex v of P carries the incoming doubled barrier B^-(v) when both (y,z,v) and (z,y,v) are tight. If B^-(p_j) holds, then along either subpath of P starting at p_j the following stepwise dichotomy holds: at each adjacent pair u,v with v already carrying B^-, either one of (u,y,z,v) and (u,z,y,v) is a tight four-vertex path, or B^-(u) also holds. Consequently, for every k, either some edge on the p_j--p_k segment opens such a four-vertex connector, or every vertex on that segment carries B^-. The exact left-right symmetric statement holds for the outgoing doubled barrier B^+(v), defined by both (v,y,z) and (v,z,y) tight.
+
+## Body
+
+It suffices to prove the one-edge propagation rule. Let u and v be adjacent vertices of the displayed path and assume B^-(v), so (y,z,v) and (z,y,v) are tight. If (u,y,z) is tight, then (u,y,z,v) is a tight four-vertex path. If (u,z,y) is tight, then (u,z,y,v) is a tight four-vertex path. If neither is tight, boundary antisymmetry applies separately to the reversal pairs (u,y,z)/(z,y,u) and (u,z,y)/(y,z,u), giving both (z,y,u) and (y,z,u) tight. Thus B^-(u) holds. Iterating this local rule along the unique segment of P from p_j to any chosen p_k proves the incoming-barrier statement in either direction; the orientation of the displayed path is irrelevant because the argument only uses adjacency of the two support vertices. For B^+, assume (v,y,z) and (v,z,y) are tight. If either (y,z,u) or (z,y,u) is tight, then respectively (v,y,z,u) or (v,z,y,u) is a tight four-vertex path; if neither is tight, their reversals give (u,z,y) and (u,y,z), namely B^+(u). Again iterate along either subpath. No cyclic permutation of an ordered triple is used.

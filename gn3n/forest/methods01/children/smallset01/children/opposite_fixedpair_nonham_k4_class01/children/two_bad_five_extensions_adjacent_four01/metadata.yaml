@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:04:34.47175+00:00"
+id: "two_bad_five_extensions_adjacent_four01"
+last_elevation_revision: 9060
+last_substantive_worker_id: 585
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "four_side_gap_order_cycle_or_monotone01"
+  audit_request_reason: "Concrete proof symptom: opposing endpoint-sharing tight paths are treated as a tight cycle without deriving its two cyclic seam triples. See gap_inversion_cycle_seam_obligation01, including a four-vertex counterexample to the generic inference. Please check specialized seam implications and affected consumers; no assertion that the specialized theorem is false."
+  audit_request_recorded_at: "2026-09-29T22:10:21.633963+00:00"
+  audit_resolution:
+    claim_id: 58
+    detail: "Independent check passed. Assuming no adjacent edges forces a 2+2 fixed-pair orientation split and all cross four-sets non-Hamiltonian. Their cyclic K4 case is incompatible with the acyclic comparison digraph of the non-Hamiltonian five-set X+a. The three possible matching-block placements synchronize across the rectangle; both extreme placements yield explicit Hamilton paths in X+a, while the middle placement forces comparison inequalities that, combined with a Hamilton order on X, again yield an explicit Hamilton path in X+a or X+b. Hence adjacent Hamiltonian-four edges are forced."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 58
+    detail: "Independent check passed. Assuming no adjacent edges forces a 2+2 fixed-pair orientation split and all cross four-sets non-Hamiltonian. Their cyclic K4 case is incompatible with the acyclic comparison digraph of the non-Hamiltonian five-set X+a. The three possible matching-block placements synchronize across the rectangle; both extreme placements yield explicit Hamilton paths in X+a, while the middle placement forces comparison inequalities that, combined with a Hamilton order on X, again yield an explicit Hamilton path in X+a or X+b. Hence adjacent Hamiltonian-four edges are forced."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+object_type: "toolkit"
+origin_worker_id: 585
+parent_id: "opposite_fixedpair_nonham_k4_class01"
+position: 0
+research_interface:
+  consumer: "four_side_endpoint_matching_bridge01; four_side_m7_matching_frontier01; deletion_state_matching_frontier18"
+  given: "a Hamiltonian four-set with two non-Hamiltonian one-vertex extensions"
+  need: "consume the overlapping five-set with its retained endpoint and path-order information"
+  produces: "two Hamiltonian four-sets containing both exterior vertices and overlapping in three vertices"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two bad extensions of a Hamiltonian four-set force overlapping Hamiltonian four-sets through both exterior vertices."
+substantive_worker_ids:
+  - 585
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two bad extensions of a Hamiltonian four-set force overlapping Hamiltonian four-sets through both exterior vertices"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T00:00:50.852152+00:00"
+version: 13

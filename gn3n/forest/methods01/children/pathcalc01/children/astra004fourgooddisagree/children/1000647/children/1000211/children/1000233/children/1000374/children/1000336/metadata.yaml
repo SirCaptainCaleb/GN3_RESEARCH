@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T18:15:42.63056+00:00"
+id: "1000336"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 111
+    detail: "Independent check confirms the correction: the five-core complement coupling is justified only in the long sliding-window branches, not in the earlier non-Hamiltonian-six-set or short-component branches."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:43:32.096831+00:00"
+    worker_id: 586
+  correction_of: "1000374"
+  last_audit_observation:
+    claim_id: 111
+    detail: "Independent check confirms the correction: the five-core complement coupling is justified only in the long sliding-window branches, not in the earlier non-Hamiltonian-six-set or short-component branches."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:53:43.745887+00:00"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 659
+parent_id: "1000374"
+position: 0
+research_interface:
+  consumer: "proof hygiene; disturbance consumption"
+  given: "the overstrong common-five-core theorem 783367296d15"
+  need: "treat bad-six-set and small-deletion-side disagreement branches separately, or derive a common stronger coupling for them"
+  produces: "a scope fence: five-core complement coupling is available only in the long sliding-window branch of 4cf010e3e5b3"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Correction: five-core complement coupling applies only to the long sliding-window branches."
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Correction: five-core complement coupling applies only to the long sliding-window branches"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T19:53:43.745887+00:00"
+version: 5

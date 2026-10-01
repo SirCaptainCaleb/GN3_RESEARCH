@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:54:46.337143+00:00"
+id: "1000508"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "two-visible-entrance strengthening"
+  uses:
+    - "1000965"
+    - "1001088"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000184"
+position: 0
+research_interface:
+  consequence: "The critical equality gadget has not one but at least two visible rank-(q+1) entrances of potential q packed around the universal rank-q entrance x of potential q-1."
+  consumer:
+    - "q,(q+1)^3 elimination"
+    - "Astra 11/12 route"
+  given:
+    - "top-boundary four-slot normal form"
+  next_need: "Uncross the two visible high edges. If their entrance slots lie on opposite sides of x, their opposite terminals must create reciprocal blockers; if both are on one side, use the unused/terminal slot on the other side to construct a q+1 path ending at one potential-q entrance."
+research_level: "lemma"
+semantic_container_text: "Multiple-visible-entrance branch: top-boundary configurations have at least two visible high entrances whose rails cross the competing charged edges."
+simplified_statement: "Top-boundary q,(q+1)^3 obstructions have at least two visible high entrances."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Top-boundary q,(q+1)^3 obstructions have at least two visible high entrances"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 6

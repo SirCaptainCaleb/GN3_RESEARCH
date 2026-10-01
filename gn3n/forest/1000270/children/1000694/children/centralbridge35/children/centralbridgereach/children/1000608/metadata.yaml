@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T19:21:10.363346+00:00"
+id: "1000608"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 145
+    detail: "Terminology-only: central-path split in place of project-specific central-bridge phrase."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T19:24:02.449474+00:00"
+    worker_id: 569
+  last_audit_observation:
+    claim_id: 145
+    detail: "Terminology-only: central-path split in place of project-specific central-bridge phrase."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T19:24:02.449474+00:00"
+    worker_id: 569
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Independent reconstruction verifies both legal repartitions, all new tight paths, both potential drops, and the n>=14 application of threesidedescent6. Terminology-only repair: replace the project-specific central-bridge phrase by central-path."
+    recorded_at: "2026-09-27T19:23:43.725433+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 569
+object_type: "research"
+origin_worker_id: 573
+parent_id: "centralbridgereach"
+position: 1
+research_interface:
+  consumer: "canonical central-path no-trapping; pairwise-repartition route; quadratic descent; proof rehearsal"
+  given: "any one-vertex deletion two-cover in a minimum counterexample"
+  need: "analyze the descendants of the universal three-side descent and prove they cannot settle in a trapped higher-minimum-side Phi plateau"
+  produces: "a universal two-move strictly Phi-decreasing route from its singleton lift to a three-vertex central-path state; for n>=14 a third strict descent is automatic"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every deletion singleton state descends in two moves to a three-vertex central state."
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every deletion singleton state descends in two moves to a three-vertex central state"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T19:24:02.449474+00:00"
+version: 7

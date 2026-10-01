@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-22T05:50:50.279206+00:00"
+id: "1001148"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ec3059fa-9585-46b7-931d-0349e7808345"
+    detail: "Single-blocker rotations preserve the nonspecial last edge; terminal blockers would create a globally longest path entering the last edge through the wrong terminal, contradicting unique entrance."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-22T05:55:47.905497+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_audit_observation:
+    claim_id: "ec3059fa-9585-46b7-931d-0349e7808345"
+    detail: "Single-blocker rotations preserve the nonspecial last edge; terminal blockers would create a globally longest path entering the last edge through the wrong terminal, contradicting unique entrance."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-22T05:55:47.905497+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_premise_impact_check:
+    checked_at: "2026-09-23T14:06:59.798935+00:00"
+    note: "Premise replacement checked: 174f0763685b preserves the endpoint-preserving single-blocker rotation formerly supplied by 912c72c000da; the unique-entrance premise 7235fdc47d1a is unchanged."
+    source_ids:
+      - "1000640"
+      - "1000101"
+      - "1000512"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+object_type: "lemma"
+origin_worker_id: 205
+parent_id: "1000525"
+position: 1
+research_interface:
+  consequence: "single blockers at the far end are completely safe: unlike earlier terminal rotations, they never lose the fixed nonspecial last edge or its entrance label"
+  consumer:
+    - "opposite-end degree conjecture"
+    - "Minty/Pósa rotation-state graph"
+  given:
+    - "globally longest path ending in a fixed nonspecial edge"
+    - "single blocker at either free opposite endpoint"
+  next_obligation: "analyze double-blocker-only recurrent states; singles give genuine outgoing moves in the finite state graph"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For a longest linear path ending in a nonspecial edge e, any single blocker through an opposite-end free vertex can be rotated to another longest path still ending in e through the same unique entrance."
+substantive_worker_ids:
+  - 205
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every opposite-end single blocker is a safe rotation of the fixed nonspecial last edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 8

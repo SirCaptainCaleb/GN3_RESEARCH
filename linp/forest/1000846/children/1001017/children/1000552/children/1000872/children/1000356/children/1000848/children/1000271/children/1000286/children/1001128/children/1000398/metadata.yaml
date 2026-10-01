@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T11:24:51.356373+00:00"
+id: "1000398"
+last_elevation_revision: null
+last_substantive_worker_id: 246
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "0ce32d46-7bd7-42d8-af01-b3799c9dda82"
+    detail: "The four rails choose exactly one member from each of four distinguished pairs. Per coordinate the pairwise-agreement contribution is C(r,2)+C(4-r,2)>=2, so total distinguished overlap is at least 8. Six rail-pair overlaps cannot sum to 8 if only one pair is >=2 and it equals 2; hence two double-overlap pairs or one triple-overlap pair."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:22:53.29301+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  last_audit_observation:
+    claim_id: "0ce32d46-7bd7-42d8-af01-b3799c9dda82"
+    detail: "The four rails choose exactly one member from each of four distinguished pairs. Per coordinate the pairwise-agreement contribution is C(r,2)+C(4-r,2)>=2, so total distinguished overlap is at least 8. Six rail-pair overlaps cannot sum to 8 if only one pair is >=2 and it equals 2; hence two double-overlap pairs or one triple-overlap pair."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:22:53.29301+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+object_type: "lemma"
+origin_worker_id: 246
+parent_id: "1001128"
+position: 0
+research_interface:
+  consequence: "A four-edge violation has at least two units of genuine overlap: two double-overlap rail pairs or a triple-overlap pair."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 source-rail theta route"
+  given:
+    - "four source-clean 0-1-1 rails"
+    - "distinguished transversal count of f8803379f9a3"
+  next_need: "Combine the resulting two elementary lenses with pairwise rail intersection and universal aligned-joint rigidity. A foreign rail must meet both hosts; balanced-lens non-piercing should force its contacts outside each elementary lens, sharply restricting the remaining contact order."
+research_level: "lemma"
+semantic_container_text: "Four-source-rail overlap program: quantify distinguished overlap and its imbalance, classify the resulting two-rank source blocks, and relate agreements to offending cross-edges."
+simplified_statement: "Four source rails force two units of distinguished overlap."
+substantive_worker_ids:
+  - 246
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four source rails force two units of distinguished overlap"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:36:51.4285+00:00"
+version: 6

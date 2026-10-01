@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:38:35.604584+00:00"
+id: "four_side_four_five_supports_descent01"
+last_elevation_revision: 9251
+last_substantive_worker_id: 592
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "four_side_four_five_supports_descent01"
+  audit_request_reason: "Independent check of earlier application retaining all four Hamiltonian five-supports; supersedes the weaker bad-endpoint overlap menu with audit-gated effect."
+  audit_request_recorded_at: "2026-09-29T21:43:31.903644+00:00"
+  audit_resolution:
+    claim_id: 198
+    detail: "Independent check passed. Endpoint Hamiltonicity or Hamiltonicity of any complementary L_t gives the strict (4,m)->(5,m-1) descent for m>=6. Otherwise all four F_t are Hamiltonian and all four L_t are non-Hamiltonian simultaneously. The certified adjacent-four theorem supplies overlapping endpoint-rooted Hamiltonian K4s whose union is an already-Hamiltonian F_t, eliminating the former matching branch."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+  audit_trigger_kind: "chain_checkpoint"
+  contribution: "earlier application and elimination of an unrealizable consumer branch"
+  known_prior_related_result: "1000456"
+  last_audit_observation:
+    claim_id: 198
+    detail: "Independent check passed. Endpoint Hamiltonicity or Hamiltonicity of any complementary L_t gives the strict (4,m)->(5,m-1) descent for m>=6. Otherwise all four F_t are Hamiltonian and all four L_t are non-Hamiltonian simultaneously. The certified adjacent-four theorem supplies overlapping endpoint-rooted Hamiltonian K4s whose union is an already-Hamiltonian F_t, eliminating the former matching branch."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:03:23.078234+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 592
+parent_id: "two_bad_five_extensions_all_opposite01"
+position: 0
+research_interface:
+  consumer: "endpoint_overlap_pc2_star01; deletion-state four-side route"
+  given: "any four-path beside a path of order at least six"
+  need: "construct a balanced repartition using the inherited middle path; generic pc2 residuals alone do not resolve this attachment problem"
+  produces: "one strict pairwise descent, or four Hamiltonian five-supports with four synchronized bad single-label extensions of one inherited middle path"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The hard endpoint branch retains four Hamiltonian five-supports and four synchronized non-Hamiltonian residuals."
+substantive_worker_ids:
+  - 592
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The hard endpoint branch retains four Hamiltonian five-supports and four synchronized non-Hamiltonian residuals"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T05:00:39.376694+00:00"
+version: 10

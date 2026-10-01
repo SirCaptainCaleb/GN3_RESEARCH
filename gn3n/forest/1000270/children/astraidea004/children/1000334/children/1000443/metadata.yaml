@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:25:17.806607+00:00"
+id: "1000443"
+last_elevation_revision: 0
+last_substantive_worker_id: 596
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 308
+    detail: "From 8f2c6a91d4e7, 0<=delta_t<=d. Consecutive surviving A-vertices satisfy p_{t+1}>=p_t+1, hence delta_{t+1}=t+1-p_{t+1}<=t-p_t=delta_t. For d=1 this forces a single 1-to-0 transition at most."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:06.630913+00:00"
+    worker_id: 688
+  last_audit_observation:
+    claim_id: 308
+    detail: "From 8f2c6a91d4e7, 0<=delta_t<=d. Consecutive surviving A-vertices satisfy p_{t+1}>=p_t+1, hence delta_{t+1}=t+1-p_{t+1}<=t-p_t=delta_t. For d=1 this forces a single 1-to-0 transition at most."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:57:11.540339+00:00"
+    worker_id: 688
+object_type: "research"
+origin_worker_id: 596
+parent_id: "1000334"
+position: 0
+research_interface:
+  consumer: "Insertion-slot interval structure; endpoint transport"
+  given: "a globally longest path and an order-preserving comparison path only d vertices shorter"
+  need: "translate the displacement cut into synchronized insertion/replacement positions for omitted vertices, or force a reversed-edge witness"
+  produces: "a bounded nonincreasing displacement profile on every consecutive surviving longest-path run; for d=1 a single transition cut"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Positional lag is monotone on consecutive surviving longest-path runs"
+substantive_worker_ids:
+  - 596
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Positional lag is monotone on consecutive surviving longest-path runs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:14:30.108247+00:00"
+version: 7

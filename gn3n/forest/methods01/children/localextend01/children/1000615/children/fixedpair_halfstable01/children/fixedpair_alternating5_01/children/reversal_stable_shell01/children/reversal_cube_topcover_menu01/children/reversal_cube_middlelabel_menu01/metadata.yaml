@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-10-01T01:06:53.879492+00:00"
+id: "reversal_cube_middlelabel_menu01"
+last_elevation_revision: 10414
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: verify the two face applications of pc2_square_topcover_normal01 and the deduction that absent joint endpoints/support/order disagreement, either x is universal-internal or both y,z are universal-internal."
+  audit_request_recorded_at: "2026-10-01T01:07:03.307813+00:00"
+  audit_resolution:
+    claim_id: 845
+    detail: "Independently reconstructed. The stable shell supplies the full path-cover-two deletion cube. Apply the top-cover square normal form to pairs {x,y} and {x,z}. Any endpoint/support/order outcome gives alternatives (1)-(3); otherwise each pair forces a permanently internal label. If x is not permanently internal, the two faces force y and z both permanently internal, giving (5)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:09:12.203304+00:00"
+    worker_id: 737
+  audit_trigger_kind: "explicit"
+  deep_research: true
+  last_audit_observation:
+    claim_id: 845
+    detail: "Independently reconstructed. The stable shell supplies the full path-cover-two deletion cube. Apply the top-cover square normal form to pairs {x,y} and {x,z}. Any endpoint/support/order outcome gives alternatives (1)-(3); otherwise each pair forces a permanently internal label. If x is not permanently internal, the two faces force y and z both permanently internal, giving (5)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:09:12.203304+00:00"
+    worker_id: 737
+object_type: "research"
+origin_worker_id: 745
+parent_id: "reversal_cube_topcover_menu01"
+position: 0
+research_interface:
+  consumer: "positioned reversal absorption; endpoint transport; permanent-internal branch analysis"
+  given: "the reversal-linked full three-label pc2 cube with alternating path whose middle cube label is x"
+  produces: "x paired with an outer label as simultaneous endpoints, cover disagreement, x universally internal, or both outer labels universally internal"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The alternating-path middle label x is either jointly exposed at the top cover, or the cube forces cover disagreement or a sharp universal-internal pattern."
+substantive_worker_ids:
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The reversal-linked cube has a middle-label endpoint-or-internal dichotomy"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:09:12.203304+00:00"
+version: 7

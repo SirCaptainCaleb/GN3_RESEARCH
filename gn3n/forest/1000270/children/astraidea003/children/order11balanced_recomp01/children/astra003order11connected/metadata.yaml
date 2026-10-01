@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T15:04:07.959214+00:00"
+id: "astra003order11connected"
+last_elevation_revision: 0
+last_substantive_worker_id: 643
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 228
+    detail: "Independent reconstruction succeeds. A Phi-minimal three-cover in any Astra component has all parts at least three, hence type 4|4|3 or 5|3|3. The first lies in K by the balanced-surface theorem. In the second, four-of-six on the union of the two 3-sides gives a Hamiltonian 5-subset plus singleton, so one legal pairwise repartition produces a 5|5|1 state in K. Thus every three-cover component equals K."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:31:46.561813+00:00"
+    worker_id: 591
+  last_audit_observation:
+    claim_id: 228
+    detail: "Independent reconstruction succeeds. A Phi-minimal three-cover in any Astra component has all parts at least three, hence type 4|4|3 or 5|3|3. The first lies in K by the balanced-surface theorem. In the second, four-of-six on the union of the two 3-sides gives a Hamiltonian 5-subset plus singleton, so one legal pairwise repartition produces a 5|5|1 state in K. Thus every three-cover component equals K."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:31:46.561813+00:00"
+    worker_id: 591
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+object_type: "research"
+origin_worker_id: 643
+parent_id: "order11balanced_recomp01"
+position: 0
+research_interface:
+  consumer: "astraidea003"
+  given: "the universal order-eleven 5|5|1 and 4|4|3 component, plus Phi-minimal small-side descent"
+  need: "exploit closure under every three-cover repartition to force an actual two-component merge"
+  produces: "the entire spanning three-cover move graph is one connected component"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "All spanning three-covers of a hypothetical order-eleven minimum counterexample lie in one Astra component"
+substantive_worker_ids:
+  - 643
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "All spanning three-covers of a hypothetical order-eleven minimum counterexample lie in one Astra component"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:25:53.747509+00:00"
+version: 10

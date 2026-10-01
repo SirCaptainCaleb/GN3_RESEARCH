@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T05:58:10.4385+00:00"
+id: "1000424"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The four-slot reduction plus the explicit splice excludes either outer joint source, leaving only two private source slots for three distinct high edges."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The four-slot reduction plus the explicit splice excludes either outer joint source, leaving only two private source slots for three distinct high edges."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_repair:
+    reason: "Vocabulary-only repair; mathematics unchanged."
+    recorded_at: "2026-09-25T01:32:08.533166+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "rising one-low branch elimination"
+  uses:
+    - "1000964"
+    - "1000233"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000964"
+position: 0
+research_interface:
+  consequence: "The only surviving one-low odd-boundary obstruction has flat opposite terminal phi(C)=2q-3. The entire rising-terminal four-slot/chord branch is eliminated."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "one-low p=2q-3 state"
+    - "phi(C)=2q-2 reciprocal central form"
+  next_need: "Analyze only the flat-C branch phi(C)=p. Use 436d55f14de2: on P_C the low edge contact is either v at the left central joint or source x in one of three central slots. Couple with the three high edges and the C/D terminal-only triangle."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The rising low-terminal odd-boundary branch is impossible."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The rising low-terminal odd-boundary branch is impossible"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

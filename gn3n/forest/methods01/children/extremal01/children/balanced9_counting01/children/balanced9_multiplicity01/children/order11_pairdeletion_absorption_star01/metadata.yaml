@@ -1,0 +1,39 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-30T04:58:17.463842+00:00"
+id: "order11_pairdeletion_absorption_star01"
+last_elevation_revision: 10203
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 579
+parent_id: "balanced9_multiplicity01"
+position: 0
+research_interface:
+  consumer: "order-eleven closure; insertion-obstruction synchronization; two-deletion compatibility"
+  given: "a hypothetical order-eleven counterexample and any prescribed omitted pair"
+  need: "synchronize one common restoration obstruction across the guaranteed three-cover subfamily"
+  produces: "at least twelve balanced pair-deletion covers, each star-shaped, with at least three covers sharing one common obstruction type"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every order-eleven pair deletion has at least twelve star-shaped balanced covers, with three sharing one obstruction type."
+substantive_worker_ids:
+  - 579
+  - 745
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Every order-eleven pair deletion has at least twelve star-shaped balanced restoration states"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:59:59.851876+00:00"
+version: 5

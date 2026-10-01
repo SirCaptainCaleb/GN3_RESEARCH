@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-10-01T01:08:16.524158+00:00"
+id: "1000858"
+last_elevation_revision: 10352
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "order11_sevenlabel_design_normal01"
+  audit_request_reason: "Verify the design-derived seven-label equality-shell normal form, including the classification of six-set good-deletion labels as omission labels and the fork-versus-oriented-matching-block dichotomy."
+  audit_request_recorded_at: "2026-10-01T01:21:59.488695+00:00"
+  audit_resolution:
+    claim_id: 923
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 923
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+object_type: "research"
+origin_worker_id: 737
+parent_id: "two_bad_threecore_opposite_pair_shell01"
+position: 3
+research_interface:
+  consumer: "five-set deletion structure; common-three-side transport; order-eleven design branch"
+  given: "a three-set T with two distinct non-Hamiltonian singleton extensions T+e and T+f"
+  produces: "a Hamiltonian five-set T+e+f whose Hamiltonian deletion labels are exactly T"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Two bad singleton extensions of a three-set make the combined five-set Hamiltonian, with exactly the three core vertices as Hamiltonian deletion labels."
+substantive_worker_ids:
+  - 737
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two bad extensions of a three-set force a Hamiltonian five-set with exactly three Hamiltonian deletions"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 10

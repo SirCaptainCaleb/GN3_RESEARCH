@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T19:58:48.642528+00:00"
+id: "1000458"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "Flat X-switchers obey the recurrence W(n)<=max(W(n-1),W(n-2)+1,W(n-4)+2), which inducts to W(n)<=ceil(n/2). The remaining switchers are U-type or occupy nonflat cells, giving U+2Y>=L/8-eta-O(1)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "Flat X-switchers obey the recurrence W(n)<=max(W(n-1),W(n-2)+1,W(n-4)+2), which inducts to W(n)<=ceil(n/2). The remaining switchers are U-type or occupy nonflat cells, giving U+2Y>=L/8-eta-O(1)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+object_type: "theorem"
+origin_worker_id: 242
+parent_id: "1000506"
+position: 0
+research_interface:
+  consequence: "At a low-defect top center, at least one-eighth of the host scale is forced into terminal-retained switchers or special/all-top output cells; clean entrance-retained flat outputs alone have capacity only one-half."
+  consumer:
+    - "post-43/48 top-layer stability"
+    - "terminal-retained branch"
+    - "special/all-top output branch"
+  given:
+    - "699a1e79304b flat outputs independent"
+    - "eac2e3da3eea clean joint exclusion"
+    - "65894e91ed50 quantitative separation"
+    - "b032348c1a8a dense switching family"
+  next_need: "Globalize the dichotomy. U-type mass carries the quadratic omitted-entrance bound c48823eea604. Nonflat cells output special edges or all-top nonspecial edges; e7b2a94c615d turns every all-top edge into a multiple-overlap endpoint-path state. Bound reuse of these paid objects across centers."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "One-eighth X/U-or-nonflat dichotomy at top-layer switching centers."
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "One-eighth X/U-or-nonflat dichotomy at top-layer switching centers"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T17:28:28.200658+00:00"
+id: "endpoint_reversal_obstruction_recomp01"
+last_elevation_revision: 8355
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T17:28:28.200658+00:00"
+  audit_resolution:
+    claim_id: 159
+    detail: "Recomposition faithfully preserves the certified endpoint-reversal chain: internal and one endpoint orientation reduce to the bounded four-vertex classification, while the genuinely unresolved endpoint orientation is carried through with the maximal-pair argument, the four/five-support alternative, and the universal three-triple family on at least three exterior vertices. No certified exceptional branch or hypothesis is dropped."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:44:33.034029+00:00"
+    worker_id: 605
+  audit_trigger_kind: "explicit_publish_request"
+  composition_intent: "replacement recomposition of d99aa137675e -> 2bbbc5a88109 -> adecd58bef3d"
+  last_audit_observation:
+    claim_id: 159
+    detail: "Recomposition faithfully preserves the certified endpoint-reversal chain: internal and one endpoint orientation reduce to the bounded four-vertex classification, while the genuinely unresolved endpoint orientation is carried through with the maximal-pair argument, the four/five-support alternative, and the universal three-triple family on at least three exterior vertices. No certified exceptional branch or hypothesis is dropped."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:44:33.034029+00:00"
+    worker_id: 605
+  recomposition_audit:
+    classified_at: "2026-09-29T17:30:03.710796+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 637
+parent_id: "1000741"
+position: 0
+research_interface:
+  consumer: "endpoint-reversal closure; endpoint transport / defect compression"
+  given: "a minimum counterexample and the existence of a local displayed-edge reversal"
+  produces: "bounded four-vertex frontier, or a maximal unresolved endpoint reversal with at least three synchronized two-end obstruction labels"
+research_level: "theorem"
+semantic_container_text: "Endpoint-reversal obstruction branch: reduce endpoint reversals to a bounded four-vertex frontier or a universal two-end obstruction family, then use the resulting local reverse data to force transport, disagreement, or a bounded closure witness."
+simplified_statement: "Endpoint reversals reduce to a bounded four-vertex frontier or a universal two-end obstruction family."
+substantive_worker_ids:
+  - 637
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint reversals reduce to a bounded four-vertex frontier or a universal two-end obstruction family"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:52.602761+00:00"
+version: 7

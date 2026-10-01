@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T10:01:01.434039+00:00"
+id: "equalorderonegapclosure01"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 385
+    detail: "Made the one-vertex connector case explicit and routed it through the cross-triple analysis."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:04:58.253819+00:00"
+    worker_id: 706
+  last_audit_observation:
+    claim_id: 385
+    detail: "Made the one-vertex connector case explicit and routed it through the cross-triple analysis."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:04:58.253819+00:00"
+    worker_id: 706
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Interface-hygiene repair: explicitly handle the possible one-vertex connector as the cross-triple case instead of silently assuming every connector contains at least two A-vertices."
+    recorded_at: "2026-09-28T10:04:16.293981+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 706
+object_type: "theorem"
+origin_worker_id: 659
+parent_id: "onegapbalancedexchange01"
+position: 0
+research_interface:
+  consumer: "balanced one-gap exchange closure; endpoint transport / defect compression"
+  given: "two globally longest A-order-compatible paths differing inside one gap"
+  produces: "bounded gap kernel, Hamiltonian four/five-window with two-coverable complement, order disagreement, or explicit reversed splice-junction triple"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: "An equal-order one-gap comparison has no neutral insertion residue."
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An equal-order one-gap comparison has no neutral insertion residue"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T10:04:58.253819+00:00"
+version: 6

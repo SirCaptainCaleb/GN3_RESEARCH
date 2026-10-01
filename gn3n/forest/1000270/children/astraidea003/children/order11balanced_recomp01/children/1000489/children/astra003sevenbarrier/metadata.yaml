@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 76
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-26T15:11:40.342186+00:00"
+id: "astra003sevenbarrier"
+last_elevation_revision: 0
+last_substantive_worker_id: 696
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 335
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T17:26:27.43459+00:00"
+    worker_id: 600
+  last_audit_observation:
+    claim_id: 335
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T17:26:27.43459+00:00"
+    worker_id: 600
+  last_local_audit_repair:
+    reason: "Normalize prohibited project-local terminology only; no mathematical change."
+    recorded_at: "2026-09-26T16:19:57.650582+00:00"
+    worker_id: 696
+object_type: "research"
+origin_worker_id: 702
+parent_id: "1000489"
+position: 0
+research_interface:
+  consumer: "astraidea003 and order-eleven merge closure"
+  given: "a hypothetical order-eleven minimum counterexample plus balanced8"
+  need: "combine this universal seven-set barrier with longest-path or codim4/codim5 structure"
+  produces: "for every 3-set X and every Hamiltonian 4|4 cover P|Q of its complement, both 7-sets X+P and X+Q are non-Hamiltonian"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Universal triple reachability forces a seven-set no-merge barrier"
+substantive_worker_ids:
+  - 702
+  - 696
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Universal triple reachability forces a seven-set no-merge barrier"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:22:42.890479+00:00"
+version: 8

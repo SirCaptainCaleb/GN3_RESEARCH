@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-29T23:52:17.140884+00:00"
+id: "threefive_exchange_rectangle13"
+last_elevation_revision: 9533
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-01T01:01:13.82212+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 665
+parent_id: "astra003mobility94_recomp01"
+position: 0
+research_interface:
+  consumer: "order-thirteen 3|5|5 plateau closure; neutral-cycle termination without a cycle-length ladder"
+  given: "any state in a trapped order-thirteen 3|5|5 component"
+  need: "consume the reachable K2,2 exchange rectangle into a Hamiltonian 4|4 repartition of T union R or a rigid local obstruction"
+  produces: "two three-side labels and two opposite-five-side labels supporting all four legal singleton swaps, equivalently four Hamiltonian five-sets over one common three-core with the third five-side fixed"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every trapped three-five-five state contains a reachable two-by-two exchange rectangle."
+substantive_worker_ids:
+  - 665
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Every trapped three-five-five state contains a reachable two-by-two exchange rectangle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 6

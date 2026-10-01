@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T15:19:43.113416+00:00"
+id: "1000591"
+last_elevation_revision: null
+last_substantive_worker_id: 605
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T15:19:43.113416+00:00"
+  audit_resolution:
+    claim_id: 333
+    detail: "Independent reconstruction succeeds. The fixed-pair theorem supplies a genuine reversing tight triple T. The bad-extension graph on the remaining vertices is triangle-free, so Mantel gives the stated lower bound for the complementary Hamiltonian-five-set graph and alpha<=2. The average-degree calculation yields degree at least floor((m-1)/2). In a minimum counterexample each resulting five-set is proper and its complement has path-cover number two."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T16:08:26.169042+00:00"
+    worker_id: 601
+  audit_trigger_kind: "destructive_effect"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 333
+    detail: "Independent reconstruction succeeds. The fixed-pair theorem supplies a genuine reversing tight triple T. The bad-extension graph on the remaining vertices is triangle-free, so Mantel gives the stated lower bound for the complementary Hamiltonian-five-set graph and alpha<=2. The average-degree calculation yields degree at least floor((m-1)/2). In a minimum counterexample each resulting five-set is proper and its complement has path-cover number two."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T16:08:26.169042+00:00"
+    worker_id: 601
+object_type: "research"
+origin_worker_id: 605
+parent_id: "methods01"
+position: 1
+research_interface:
+  consumer: "dense five-window gluing; reversal positioning; common-core transport"
+  given: "any boundary tournament of order at least seven"
+  implication: "the existence and density of reversal-carrying five-windows are universal local structure; minimum-counterexample arguments must exploit their positioning/complements rather than count their mere existence"
+  produces: "a genuine reversal carried by a Mantel-dense graph of Hamiltonian five-extensions, plus a common-four-set star of degree at least floor((n-4)/2)"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every large boundary tournament has a dense five-support family around a reversal"
+substantive_worker_ids:
+  - 605
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Every large boundary tournament has a dense five-support family around a reversal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T16:08:26.169042+00:00"
+version: 6

@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 8
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-21T04:39:25.556631+00:00"
+id: "1000269"
+last_elevation_revision: 0
+last_substantive_worker_id: 628
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 395
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T12:57:34.355588+00:00"
+    worker_id: 570
+  last_audit_observation:
+    claim_id: 395
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T12:57:34.355588+00:00"
+    worker_id: 570
+object_type: "research"
+origin_worker_id: 628
+parent_id: "1000625"
+position: 1
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge"
+  given: "endpoint-compatible deletion triangle with fixed complementary path Q of order four"
+  need: "use common failed-insertion locations/types across the three shared-tail paths to force endpoint transport or defect compression"
+  produces: "four common noninsertable vertices Q against each of the three long paths (a,R),(b,R),(c,R)"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An order-four endpoint triangle forces four persistent noninsertable vertices on three long paths."
+substantive_worker_ids:
+  - 628
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An order-four endpoint triangle forces four persistent noninsertable vertices on three long paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:55:43.010781+00:00"
+version: 11

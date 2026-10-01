@@ -1,0 +1,11 @@
+# A large one-gap replacement corridor contains many disjoint witnesses of one common type
+
+## Statement
+
+In the one-gap residue of 0204056412a4, let E=V(C)-V(A) have r>=2 vertices. Classify each unordered pair of E by one selected outcome among the four certified longest-path paired-noninsertion types: Hamiltonian four-set, Hamiltonian five-set, tight cross triple, or direct interval connector. Then some type occurs on at least ceil(binomial(r,2)/4) pairs. The graph on E formed by pairs of that type contains a matching of size at least ceil(t/(2r-3)), where t is the number of pairs of the selected type; in particular it contains a matching of size at least ceil(ceil(binomial(r,2)/4)/(2r-3)). Thus an unbounded one-gap corridor yields linearly many pairwise vertex-disjoint exterior pairs carrying one common standard witness type.
+
+## Body
+
+Every vertex of E lies outside the globally longest path A and is therefore noninsertable into the displayed order of A. Hence for every unordered pair {x,y} subset E, theorem 6839f08d0cf8 supplies at least one of four outcomes. Choose one outcome deterministically for each pair. There are binomial(r,2) pairs and four types, so one type occurs on t>=ceil(binomial(r,2)/4) pairs.
+
+Let G be the graph on vertex set E whose edges are precisely the t pairs assigned that type. If a maximum matching of G has size nu, its 2nu endpoints form a vertex cover of G: otherwise an edge disjoint from all matching endpoints could be added to the matching. Every vertex of an r-vertex graph has degree at most r-1, but counting edges incident with the 2nu matching endpoints more sharply by charging each edge to its first endpoint in this cover gives the standard bound t<=nu(2r-3): each matched edge together with all edges incident to its two endpoints accounts for at most 2r-3 distinct edges, and maximality partitions/charges all edges to one matched pair. Hence nu>=ceil(t/(2r-3)). Substituting the pigeonhole lower bound on t gives the displayed matching size. The matched pairs are vertex-disjoint and all carry the same selected witness type.

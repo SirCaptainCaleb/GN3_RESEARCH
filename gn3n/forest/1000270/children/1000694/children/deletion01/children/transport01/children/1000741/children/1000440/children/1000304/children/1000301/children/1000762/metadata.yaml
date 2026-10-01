@@ -1,0 +1,49 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:40:55.668431+00:00"
+id: "1000762"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 208
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:24:00.997586+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 208
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:24:00.997586+00:00"
+    worker_id: 596
+object_type: "research"
+origin_worker_id: 678
+parent_id: "1000301"
+position: 3
+research_interface:
+  given: "a deficit-one order-preserving comparison path and a legal replacement of a later exterior vertex by an earlier-or-same-gap omitted longest-path vertex"
+  need: "force a legal strict-gap charged replacement, or show all such replacements fail in a synchronized way that yields a reversal/transport obstruction"
+  produces: "an exact local transformation law for binary balance; every strict charged replacement decreases total balance mass"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A checked charged replacement zeros one interval of the binary balance."
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A checked charged replacement zeros one interval of the binary balance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:48:18.367129+00:00"
+version: 7

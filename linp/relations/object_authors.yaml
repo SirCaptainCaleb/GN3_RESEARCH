@@ -1,0 +1,5216 @@
+-
+  first_recorded_at: "2026-09-24T13:32:31.59391+00:00"
+  object_id: "research_nudges"
+  worker_id: 188
+-
+  first_recorded_at: "2026-09-24T13:32:34.817826+00:00"
+  object_id: "research_retrospectives"
+  worker_id: 188
+-
+  first_recorded_at: "2026-09-24T17:52:35.225998+00:00"
+  object_id: "research_nudges"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-25T01:01:18.23053+00:00"
+  object_id: "research_nudges"
+  worker_id: 208
+-
+  first_recorded_at: "2026-09-25T02:20:08.833551+00:00"
+  object_id: "research_nudges"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T19:28:38.477351+00:00"
+  object_id: "research_nudges"
+  worker_id: 211
+-
+  first_recorded_at: "2026-09-25T22:08:04.700524+00:00"
+  object_id: "research_nudges"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-27T23:11:24.591333+00:00"
+  object_id: "methods01"
+  worker_id: 197
+-
+  first_recorded_at: "2026-09-25T21:20:17.796574+00:00"
+  object_id: "1000226"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:22:56.65894+00:00"
+  object_id: "1000147"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:23:59.50148+00:00"
+  object_id: "1000910"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:24:19.091312+00:00"
+  object_id: "1000200"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:24:47.999959+00:00"
+  object_id: "1000148"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:26:21.104765+00:00"
+  object_id: "1000000"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:26:38.538639+00:00"
+  object_id: "1000294"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:27:26.623431+00:00"
+  object_id: "1001085"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:29:00.793674+00:00"
+  object_id: "1000997"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:29:35.7775+00:00"
+  object_id: "1000260"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:32:17.534563+00:00"
+  object_id: "1001092"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:33:35.447344+00:00"
+  object_id: "1000463"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:33:47.985522+00:00"
+  object_id: "1000679"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:34:06.778431+00:00"
+  object_id: "1000377"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:34:30.404713+00:00"
+  object_id: "1001091"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:35:19.037181+00:00"
+  object_id: "1000678"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:35:50.889925+00:00"
+  object_id: "1001033"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:36:03.708143+00:00"
+  object_id: "1000544"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:36:53.799037+00:00"
+  object_id: "1000334"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:38:06.837988+00:00"
+  object_id: "1001008"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:38:21.285112+00:00"
+  object_id: "1000909"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:38:40.770965+00:00"
+  object_id: "1000042"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-25T21:38:49.508428+00:00"
+  object_id: "1000851"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:39:34.926259+00:00"
+  object_id: "1000941"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:40:07.19072+00:00"
+  object_id: "1001089"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:40:50.533573+00:00"
+  object_id: "1001125"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:41:35.890857+00:00"
+  object_id: "1000173"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:42:12.860741+00:00"
+  object_id: "1000776"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:42:57.757911+00:00"
+  object_id: "1001009"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:43:28.310137+00:00"
+  object_id: "1000515"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:45:01.338026+00:00"
+  object_id: "1000058"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:45:10.666028+00:00"
+  object_id: "1000030"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:45:25.736592+00:00"
+  object_id: "1000489"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T21:45:25.736592+00:00"
+  object_id: "1001067"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T21:46:37.957188+00:00"
+  object_id: "1000234"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:51:22.520464+00:00"
+  object_id: "1000449"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:53:18.699983+00:00"
+  object_id: "1000123"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:53:36.854561+00:00"
+  object_id: "1000598"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:54:03.847508+00:00"
+  object_id: "1000303"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T21:54:39.13132+00:00"
+  object_id: "1000755"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T21:57:28.543706+00:00"
+  object_id: "1000171"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:58:16.538897+00:00"
+  object_id: "1000896"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:59:33.694365+00:00"
+  object_id: "1001066"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:59:52.95349+00:00"
+  object_id: "1000927"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T22:01:49.310762+00:00"
+  object_id: "1000219"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T22:03:04.228753+00:00"
+  object_id: "1000718"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T22:07:19.923948+00:00"
+  object_id: "1000843"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T22:07:51.805292+00:00"
+  object_id: "1001100"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T22:08:26.184273+00:00"
+  object_id: "1000130"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-25T22:40:07.946273+00:00"
+  object_id: "1000413"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-25T22:41:38.412025+00:00"
+  object_id: "1000433"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-25T22:43:26.358666+00:00"
+  object_id: "1000064"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T22:43:31.100604+00:00"
+  object_id: "1000364"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-25T22:43:31.100604+00:00"
+  object_id: "1001100"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-25T22:45:57.351603+00:00"
+  object_id: "1000064"
+  worker_id: 238
+-
+  first_recorded_at: "2026-09-25T22:53:12.449432+00:00"
+  object_id: "1000226"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T22:53:12.449432+00:00"
+  object_id: "1000148"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T22:53:12.449432+00:00"
+  object_id: "1000040"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T22:56:22.685539+00:00"
+  object_id: "1000679"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T22:58:13.182333+00:00"
+  object_id: "1001089"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T22:58:13.182333+00:00"
+  object_id: "1000678"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T23:15:58.51924+00:00"
+  object_id: "1000909"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-26T00:23:21.719404+00:00"
+  object_id: "1000171"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-26T00:23:21.719404+00:00"
+  object_id: "1000173"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-25T20:50:26.801401+00:00"
+  object_id: "1000769"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:57:04.033314+00:00"
+  object_id: "1000433"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:58:42.227987+00:00"
+  object_id: "1000040"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-21T18:15:36.90109+00:00"
+  object_id: "1000846"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1001160"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1001161"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1000476"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1001017"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1000802"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1000033"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1001063"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1000935"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1000979"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1000519"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:22:49.156921+00:00"
+  object_id: "1000759"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-25T21:07:43.294199+00:00"
+  object_id: "1001112"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-21T18:33:34.306571+00:00"
+  object_id: "1000693"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:44:53.20259+00:00"
+  object_id: "1000511"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:44:53.20259+00:00"
+  object_id: "1000960"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:44:53.20259+00:00"
+  object_id: "1000586"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T18:44:53.20259+00:00"
+  object_id: "1000512"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-25T21:12:44.930878+00:00"
+  object_id: "1000577"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-21T18:56:07.14701+00:00"
+  object_id: "1000867"
+  worker_id: 206
+-
+  first_recorded_at: "2026-09-21T18:56:07.14701+00:00"
+  object_id: "1000952"
+  worker_id: 206
+-
+  first_recorded_at: "2026-09-21T18:56:07.14701+00:00"
+  object_id: "1001094"
+  worker_id: 206
+-
+  first_recorded_at: "2026-09-25T21:16:12.68965+00:00"
+  object_id: "1000301"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:18:51.841923+00:00"
+  object_id: "1000421"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-21T19:10:25.129295+00:00"
+  object_id: "1000671"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T19:10:47.425985+00:00"
+  object_id: "1001133"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T19:11:34.326713+00:00"
+  object_id: "1000488"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T19:13:18.872189+00:00"
+  object_id: "1000514"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:13:18.872189+00:00"
+  object_id: "1000711"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:13:18.872189+00:00"
+  object_id: "1000563"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:23:14.680995+00:00"
+  object_id: "1000001"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:23:14.680995+00:00"
+  object_id: "1000250"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:24:02.781196+00:00"
+  object_id: "1000629"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T19:24:02.781196+00:00"
+  object_id: "1000266"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T19:39:08.801156+00:00"
+  object_id: "1000005"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:39:08.801156+00:00"
+  object_id: "1000976"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:39:08.801156+00:00"
+  object_id: "1000550"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:39:08.801156+00:00"
+  object_id: "1000973"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:39:08.801156+00:00"
+  object_id: "1000353"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:47:36.024086+00:00"
+  object_id: "1000686"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:47:36.024086+00:00"
+  object_id: "1000112"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:52:47.750033+00:00"
+  object_id: "1000318"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T19:54:19.730945+00:00"
+  object_id: "1000446"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T19:54:54.201315+00:00"
+  object_id: "1001062"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T19:55:07.974156+00:00"
+  object_id: "1000822"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T19:55:26.616092+00:00"
+  object_id: "1000304"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T19:55:48.891115+00:00"
+  object_id: "1000611"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T19:57:35.63126+00:00"
+  object_id: "1000295"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T20:02:58.627793+00:00"
+  object_id: "1001046"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:09:03.346287+00:00"
+  object_id: "1000971"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:10:36.027154+00:00"
+  object_id: "1000874"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:11:05.718224+00:00"
+  object_id: "1000863"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:11:05.718224+00:00"
+  object_id: "1000895"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:15:37.515197+00:00"
+  object_id: "1000516"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:15:37.515197+00:00"
+  object_id: "1000662"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:15:37.515197+00:00"
+  object_id: "1000437"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:22:44.298869+00:00"
+  object_id: "1000657"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:24:35.815028+00:00"
+  object_id: "1001021"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:24:40.420539+00:00"
+  object_id: "1000397"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T20:25:04.709703+00:00"
+  object_id: "1000798"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T20:25:17.412079+00:00"
+  object_id: "1000845"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T20:29:24.540373+00:00"
+  object_id: "1000045"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T20:30:57.648638+00:00"
+  object_id: "1000781"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:33:32.266077+00:00"
+  object_id: "1000728"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:34:08.246314+00:00"
+  object_id: "1000343"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:36:00.442992+00:00"
+  object_id: "1000799"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:37:23.857057+00:00"
+  object_id: "1000978"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:39:34.171975+00:00"
+  object_id: "1000583"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T20:39:44.086193+00:00"
+  object_id: "1000856"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:41:12.256411+00:00"
+  object_id: "1000998"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:42:57.833667+00:00"
+  object_id: "1001049"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T20:43:08.082312+00:00"
+  object_id: "1000448"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:48:34.13158+00:00"
+  object_id: "1000109"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T20:49:20.233554+00:00"
+  object_id: "1001087"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T20:49:49.730567+00:00"
+  object_id: "1000049"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-25T21:19:52.099621+00:00"
+  object_id: "1000573"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:21:34.443801+00:00"
+  object_id: "1000595"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1000417"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1000157"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1000636"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1001078"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1000900"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1000278"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1001124"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:57:46.398164+00:00"
+  object_id: "1000813"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T20:59:16.839345+00:00"
+  object_id: "1000086"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T21:01:34.420397+00:00"
+  object_id: "1001045"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T21:02:19.744917+00:00"
+  object_id: "1000946"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T21:02:19.744917+00:00"
+  object_id: "1000399"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T21:05:22.563178+00:00"
+  object_id: "1000182"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T21:05:41.052792+00:00"
+  object_id: "1000037"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T21:07:26.961567+00:00"
+  object_id: "1000296"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:07:26.961567+00:00"
+  object_id: "1000860"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:08:02.138772+00:00"
+  object_id: "1000643"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T21:12:21.46254+00:00"
+  object_id: "1001043"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:15:23.092231+00:00"
+  object_id: "1000591"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:15:43.005857+00:00"
+  object_id: "1000397"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:18:22.029908+00:00"
+  object_id: "1000478"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:18:22.029908+00:00"
+  object_id: "1001002"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:19:54.657374+00:00"
+  object_id: "1000039"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T21:27:31.51234+00:00"
+  object_id: "1000958"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T21:27:31.51234+00:00"
+  object_id: "1001116"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:20:23.609928+00:00"
+  object_id: "1000546"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-25T21:22:59.922767+00:00"
+  object_id: "1001158"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-21T22:27:38.341605+00:00"
+  object_id: "1000293"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T22:28:09.676273+00:00"
+  object_id: "1000145"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:28:09.676273+00:00"
+  object_id: "1000950"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:31:05.933521+00:00"
+  object_id: "1000380"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:32:55.118719+00:00"
+  object_id: "1000403"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:34:23.351333+00:00"
+  object_id: "1000844"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:37:00.408066+00:00"
+  object_id: "1000540"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:41:51.634124+00:00"
+  object_id: "1000066"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:42:58.983714+00:00"
+  object_id: "1000876"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T22:43:31.275726+00:00"
+  object_id: "1000104"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:49:12.738576+00:00"
+  object_id: "1000494"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:49:12.738576+00:00"
+  object_id: "1000680"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:49:21.688564+00:00"
+  object_id: "1000648"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T22:50:30.46599+00:00"
+  object_id: "1000541"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-21T22:53:36.980709+00:00"
+  object_id: "1001152"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:53:36.980709+00:00"
+  object_id: "1000063"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:56:15.259111+00:00"
+  object_id: "1001034"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:56:15.259111+00:00"
+  object_id: "1000841"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-21T22:57:56.4653+00:00"
+  object_id: "1000357"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:57:56.4653+00:00"
+  object_id: "1000681"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:57:56.4653+00:00"
+  object_id: "1000589"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T22:59:43.061563+00:00"
+  object_id: "1001105"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-21T23:00:00.435315+00:00"
+  object_id: "1001030"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T23:09:02.076242+00:00"
+  object_id: "1000682"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-21T23:09:58.106407+00:00"
+  object_id: "1001105"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T01:39:27.91383+00:00"
+  object_id: "1000360"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T01:41:33.790734+00:00"
+  object_id: "1000247"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T01:44:18.012073+00:00"
+  object_id: "1000959"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T01:44:18.012073+00:00"
+  object_id: "1000944"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T01:49:03.53096+00:00"
+  object_id: "1000524"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T01:55:24.097023+00:00"
+  object_id: "1000111"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T01:55:24.097023+00:00"
+  object_id: "1000801"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T02:01:58.948721+00:00"
+  object_id: "1000336"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T02:05:04.198221+00:00"
+  object_id: "1000113"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T02:05:04.198221+00:00"
+  object_id: "1000640"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T02:08:32.739499+00:00"
+  object_id: "1000255"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T02:09:17.204889+00:00"
+  object_id: "1001036"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:14:02.558006+00:00"
+  object_id: "1000187"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T04:16:26.42502+00:00"
+  object_id: "1000034"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-25T20:50:44.92013+00:00"
+  object_id: "1001028"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-22T04:17:19.858316+00:00"
+  object_id: "1000132"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:18:15.376338+00:00"
+  object_id: "1000691"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:18:26.495913+00:00"
+  object_id: "1000477"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T04:20:22.63127+00:00"
+  object_id: "1000074"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T04:21:48.891232+00:00"
+  object_id: "1000359"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:25:31.150167+00:00"
+  object_id: "1001071"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:25:31.150167+00:00"
+  object_id: "1000159"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:27:25.153265+00:00"
+  object_id: "1000784"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:29:09.759213+00:00"
+  object_id: "1000427"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:29:09.759213+00:00"
+  object_id: "1000928"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:29:31.063+00:00"
+  object_id: "1000708"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:31:33.509488+00:00"
+  object_id: "1000535"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:31:49.670087+00:00"
+  object_id: "1000394"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T04:35:06.381506+00:00"
+  object_id: "1000016"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T04:37:59.785458+00:00"
+  object_id: "1001039"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T04:38:51.812258+00:00"
+  object_id: "1000486"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T04:38:51.994391+00:00"
+  object_id: "1000332"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:38:51.994391+00:00"
+  object_id: "1000462"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:39:08.557955+00:00"
+  object_id: "1000110"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:39:08.557955+00:00"
+  object_id: "1000165"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:40:26.401774+00:00"
+  object_id: "1000601"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:40:31.66068+00:00"
+  object_id: "1000854"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T04:43:00.310861+00:00"
+  object_id: "1000180"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T04:44:00.550569+00:00"
+  object_id: "1000948"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-25T20:57:37.090797+00:00"
+  object_id: "1000413"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-22T04:48:31.587677+00:00"
+  object_id: "1001117"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T04:53:28.194831+00:00"
+  object_id: "1000457"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T04:56:44.7877+00:00"
+  object_id: "1000937"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:57:41.371994+00:00"
+  object_id: "1000687"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T04:58:40.970649+00:00"
+  object_id: "1000852"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-25T20:59:30.259599+00:00"
+  object_id: "1000503"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-22T05:00:51.095312+00:00"
+  object_id: "1000527"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:01:16.250641+00:00"
+  object_id: "1000674"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:08:10.895639+00:00"
+  object_id: "1000321"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T05:14:42.83762+00:00"
+  object_id: "1000046"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T05:16:12.55608+00:00"
+  object_id: "1001121"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T05:25:25.607471+00:00"
+  object_id: "1000352"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:27:06.025148+00:00"
+  object_id: "1000487"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:29:26.172435+00:00"
+  object_id: "1000432"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:29:47.354689+00:00"
+  object_id: "1000368"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T05:29:47.354689+00:00"
+  object_id: "1000919"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T05:29:47.354689+00:00"
+  object_id: "1000459"
+  worker_id: 262
+-
+  first_recorded_at: "2026-09-22T05:29:49.69819+00:00"
+  object_id: "1000309"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:31:11.329471+00:00"
+  object_id: "1000289"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:35:49.128728+00:00"
+  object_id: "1000556"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:35:56.926829+00:00"
+  object_id: "1000098"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:39:59.333948+00:00"
+  object_id: "1000829"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:40:10.535585+00:00"
+  object_id: "1000061"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:40:18.707563+00:00"
+  object_id: "1000644"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T05:45:49.939398+00:00"
+  object_id: "1000743"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T05:49:18.117504+00:00"
+  object_id: "1000525"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:49:18.117504+00:00"
+  object_id: "1000920"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:49:49.392098+00:00"
+  object_id: "1000616"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:50:00.265268+00:00"
+  object_id: "1000756"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:50:16.844956+00:00"
+  object_id: "1000501"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:50:50.279206+00:00"
+  object_id: "1001148"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T05:53:05.326302+00:00"
+  object_id: "1000003"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:55:12.444996+00:00"
+  object_id: "1000402"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:55:12.444996+00:00"
+  object_id: "1000499"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:56:59.477497+00:00"
+  object_id: "1000029"
+  worker_id: 222
+-
+  first_recorded_at: "2026-09-22T05:57:13.274176+00:00"
+  object_id: "1000129"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T06:00:57.286745+00:00"
+  object_id: "1000816"
+  worker_id: 234
+-
+  first_recorded_at: "2026-09-22T08:14:21.659663+00:00"
+  object_id: "1000788"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T08:14:21.659663+00:00"
+  object_id: "1000726"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T08:15:32.206176+00:00"
+  object_id: "1000723"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T08:15:32.206176+00:00"
+  object_id: "1000013"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T08:22:44.390686+00:00"
+  object_id: "1000804"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T08:22:44.390686+00:00"
+  object_id: "1000485"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T08:28:05.141901+00:00"
+  object_id: "1000207"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T08:28:05.141901+00:00"
+  object_id: "1000761"
+  worker_id: 205
+-
+  first_recorded_at: "2026-09-22T10:46:04.192362+00:00"
+  object_id: "1000143"
+  worker_id: 182
+-
+  first_recorded_at: "2026-09-22T12:43:48.533474+00:00"
+  object_id: "1000659"
+  worker_id: 182
+-
+  first_recorded_at: "2026-09-22T12:44:54.132653+00:00"
+  object_id: "1000078"
+  worker_id: 182
+-
+  first_recorded_at: "2026-09-22T12:56:18.971597+00:00"
+  object_id: "1001031"
+  worker_id: 247
+-
+  first_recorded_at: "2026-09-22T12:56:32.958493+00:00"
+  object_id: "1001010"
+  worker_id: 247
+-
+  first_recorded_at: "2026-09-25T21:07:46.879541+00:00"
+  object_id: "1000861"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:13:13.780002+00:00"
+  object_id: "1000932"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-22T13:39:21.800169+00:00"
+  object_id: "1000142"
+  worker_id: 247
+-
+  first_recorded_at: "2026-09-22T14:00:23.682659+00:00"
+  object_id: "1000055"
+  worker_id: 247
+-
+  first_recorded_at: "2026-09-22T14:19:12.910871+00:00"
+  object_id: "1000826"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T14:21:31.77633+00:00"
+  object_id: "1000067"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T14:28:17.670125+00:00"
+  object_id: "1000955"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T14:29:26.190182+00:00"
+  object_id: "1000122"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T14:29:39.587955+00:00"
+  object_id: "1000607"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:29:41.82934+00:00"
+  object_id: "1000536"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T14:31:54.72649+00:00"
+  object_id: "1000576"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T14:36:34.08037+00:00"
+  object_id: "1000855"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T14:44:35.955086+00:00"
+  object_id: "1000942"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T14:44:35.955086+00:00"
+  object_id: "1000917"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T14:49:55.74811+00:00"
+  object_id: "1000750"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:50:37.285297+00:00"
+  object_id: "1000554"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T14:52:13.597919+00:00"
+  object_id: "1000835"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:52:13.597919+00:00"
+  object_id: "1001015"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:52:13.597919+00:00"
+  object_id: "1000407"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:52:13.597919+00:00"
+  object_id: "1000115"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:54:03.394605+00:00"
+  object_id: "1000704"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:54:03.394605+00:00"
+  object_id: "1000581"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:54:03.394605+00:00"
+  object_id: "1000052"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:54:03.394605+00:00"
+  object_id: "1000890"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:54:03.394605+00:00"
+  object_id: "1000849"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T14:59:19.047423+00:00"
+  object_id: "1000871"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:05:28.447792+00:00"
+  object_id: "1000814"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:07:55.745779+00:00"
+  object_id: "1000840"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:09:19.46212+00:00"
+  object_id: "1000954"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T15:11:57.466616+00:00"
+  object_id: "1000008"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:11:57.466616+00:00"
+  object_id: "1000650"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:11:57.466616+00:00"
+  object_id: "1001073"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:12:40.785808+00:00"
+  object_id: "1000387"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:12:55.635241+00:00"
+  object_id: "1000660"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:13:56.712485+00:00"
+  object_id: "1001156"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T15:13:56.712485+00:00"
+  object_id: "1000121"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T15:14:35.882176+00:00"
+  object_id: "1000548"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:17:54.932949+00:00"
+  object_id: "1000010"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:20:29.446609+00:00"
+  object_id: "1000500"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:21:04.328623+00:00"
+  object_id: "1000162"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T15:23:00.203644+00:00"
+  object_id: "1001040"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:23:00.203644+00:00"
+  object_id: "1000279"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:23:53.061521+00:00"
+  object_id: "1000899"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:24:57.979168+00:00"
+  object_id: "1000472"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:26:39.292805+00:00"
+  object_id: "1000989"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T15:28:48.604011+00:00"
+  object_id: "1000056"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-22T15:29:21.00252+00:00"
+  object_id: "1000661"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:31:23.554213+00:00"
+  object_id: "1000635"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T15:32:32.838907+00:00"
+  object_id: "1000119"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:46:09.601834+00:00"
+  object_id: "1000752"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T15:49:46.429284+00:00"
+  object_id: "1000136"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T15:49:46.429284+00:00"
+  object_id: "1001011"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T16:01:58.270697+00:00"
+  object_id: "1000027"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T16:05:53.308621+00:00"
+  object_id: "1000612"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T16:16:37.462551+00:00"
+  object_id: "1000982"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T17:09:00.442946+00:00"
+  object_id: "1000707"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T17:13:39.934923+00:00"
+  object_id: "1000026"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T17:15:59.221587+00:00"
+  object_id: "1000372"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T17:23:28.933846+00:00"
+  object_id: "1000021"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T17:26:20.76776+00:00"
+  object_id: "1000214"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T17:27:14.668823+00:00"
+  object_id: "1001026"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T17:36:46.016543+00:00"
+  object_id: "1001110"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T17:38:20.321919+00:00"
+  object_id: "1000585"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T17:51:19.629574+00:00"
+  object_id: "1000114"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T18:28:32.168562+00:00"
+  object_id: "1000815"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T18:31:19.312752+00:00"
+  object_id: "1001143"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T18:31:19.312752+00:00"
+  object_id: "1000509"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T18:31:39.415155+00:00"
+  object_id: "1000701"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T18:33:49.890152+00:00"
+  object_id: "1000639"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T18:35:00.489402+00:00"
+  object_id: "1000523"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T18:35:12.914689+00:00"
+  object_id: "1000083"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T18:48:59.419068+00:00"
+  object_id: "1000839"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T18:50:46.6841+00:00"
+  object_id: "1000955"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T18:50:46.6841+00:00"
+  object_id: "1000002"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T18:51:27.436515+00:00"
+  object_id: "1000943"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T18:51:27.436515+00:00"
+  object_id: "1000891"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T18:54:54.944241+00:00"
+  object_id: "1000326"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T18:55:38.459886+00:00"
+  object_id: "1000716"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T18:56:05.349131+00:00"
+  object_id: "1000137"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T18:57:32.121974+00:00"
+  object_id: "1000513"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T19:02:47.940024+00:00"
+  object_id: "1000825"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T19:07:25.615605+00:00"
+  object_id: "1000889"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T19:11:17.946487+00:00"
+  object_id: "1000237"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T19:12:37.702022+00:00"
+  object_id: "1000649"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T19:12:44.345128+00:00"
+  object_id: "1000561"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:12:44.345128+00:00"
+  object_id: "1000505"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:14:33.961385+00:00"
+  object_id: "1000390"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T19:15:27.702661+00:00"
+  object_id: "1000710"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T19:16:05.933756+00:00"
+  object_id: "1001027"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:19:36.542408+00:00"
+  object_id: "1000218"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:21:51.002485+00:00"
+  object_id: "1000418"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:25:27.391144+00:00"
+  object_id: "1000227"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:27:42.223844+00:00"
+  object_id: "1000331"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:28:39.736088+00:00"
+  object_id: "1000410"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:28:49.884572+00:00"
+  object_id: "1000469"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:30:27.024611+00:00"
+  object_id: "1000597"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:31:42.526871+00:00"
+  object_id: "1001111"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:32:00.278096+00:00"
+  object_id: "1000770"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:33:37.690689+00:00"
+  object_id: "1001004"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:35:05.604429+00:00"
+  object_id: "1000504"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:41:03.520495+00:00"
+  object_id: "1000918"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:41:40.748091+00:00"
+  object_id: "1000191"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:43:32.382939+00:00"
+  object_id: "1000647"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:44:39.722725+00:00"
+  object_id: "1000947"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:45:54.182712+00:00"
+  object_id: "1000374"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:49:12.329647+00:00"
+  object_id: "1000685"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:50:06.912175+00:00"
+  object_id: "1001140"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:51:37.026323+00:00"
+  object_id: "1001065"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T19:52:28.280484+00:00"
+  object_id: "1000017"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:53:00.050473+00:00"
+  object_id: "1001051"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:53:27.507698+00:00"
+  object_id: "1000167"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T19:57:39.548401+00:00"
+  object_id: "1000199"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:05:45.020753+00:00"
+  object_id: "1000961"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T20:08:49.377878+00:00"
+  object_id: "1001122"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:09:04.394177+00:00"
+  object_id: "1000445"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:09:29.323706+00:00"
+  object_id: "1000007"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T20:09:59.408356+00:00"
+  object_id: "1001053"
+  worker_id: 212
+-
+  first_recorded_at: "2026-09-22T20:12:21.509572+00:00"
+  object_id: "1000117"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:13:58.219934+00:00"
+  object_id: "1000014"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:18:47.983607+00:00"
+  object_id: "1000777"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:21:39.490692+00:00"
+  object_id: "1000277"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:23:43.323958+00:00"
+  object_id: "1000911"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:25:00.91053+00:00"
+  object_id: "1000468"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:27:17.648517+00:00"
+  object_id: "1000392"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:29:37.687027+00:00"
+  object_id: "1000768"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:30:39.818617+00:00"
+  object_id: "1000970"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:33:21.406293+00:00"
+  object_id: "1000772"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:34:32.260366+00:00"
+  object_id: "1001093"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:37:18.428571+00:00"
+  object_id: "1000441"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:39:30.921486+00:00"
+  object_id: "1000275"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:41:17.573487+00:00"
+  object_id: "1000080"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:44:43.103769+00:00"
+  object_id: "1000215"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:45:25.136714+00:00"
+  object_id: "1000571"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:47:14.631809+00:00"
+  object_id: "1000925"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T20:53:14.355088+00:00"
+  object_id: "1000531"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T20:54:03.153421+00:00"
+  object_id: "1000993"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T21:07:13.904074+00:00"
+  object_id: "1000269"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T21:08:45.289952+00:00"
+  object_id: "1000819"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T21:10:59.788788+00:00"
+  object_id: "1000081"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T21:11:07.227831+00:00"
+  object_id: "1000830"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T21:11:53.164944+00:00"
+  object_id: "1000684"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T21:13:03.443389+00:00"
+  object_id: "1000603"
+  worker_id: 181
+-
+  first_recorded_at: "2026-09-22T21:13:03.443389+00:00"
+  object_id: "1000431"
+  worker_id: 181
+-
+  first_recorded_at: "2026-09-22T21:14:28.458499+00:00"
+  object_id: "1000995"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T21:15:50.305731+00:00"
+  object_id: "1000794"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T21:17:57.318277+00:00"
+  object_id: "1000338"
+  worker_id: 195
+-
+  first_recorded_at: "2026-09-22T21:58:07.626474+00:00"
+  object_id: "1000872"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T21:58:07.626474+00:00"
+  object_id: "1000062"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T21:58:07.626474+00:00"
+  object_id: "1000651"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T22:01:25.546763+00:00"
+  object_id: "1000461"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T22:01:25.546763+00:00"
+  object_id: "1000480"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T22:05:53.667524+00:00"
+  object_id: "1000356"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T22:05:53.667524+00:00"
+  object_id: "1000922"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-22T23:55:02.945415+00:00"
+  object_id: "1000955"
+  worker_id: 251
+-
+  first_recorded_at: "2026-09-22T23:58:12.856712+00:00"
+  object_id: "1000270"
+  worker_id: 178
+-
+  first_recorded_at: "2026-09-23T00:01:49.809559+00:00"
+  object_id: "1000618"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-23T00:01:49.809559+00:00"
+  object_id: "1000135"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-23T00:01:49.809559+00:00"
+  object_id: "1000241"
+  worker_id: 204
+-
+  first_recorded_at: "2026-09-23T01:13:47.293016+00:00"
+  object_id: "1000955"
+  worker_id: 233
+-
+  first_recorded_at: "2026-09-25T20:51:34.266992+00:00"
+  object_id: "1000542"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-23T02:40:39.138341+00:00"
+  object_id: "1000366"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T02:43:00.498634+00:00"
+  object_id: "1000316"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T02:44:14.194291+00:00"
+  object_id: "1001080"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T02:50:41.151404+00:00"
+  object_id: "1000785"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T02:59:32.56053+00:00"
+  object_id: "1000401"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:01:13.243319+00:00"
+  object_id: "1000071"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:02:40.842501+00:00"
+  object_id: "1000808"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:05:34.916922+00:00"
+  object_id: "1001130"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:09:06.653632+00:00"
+  object_id: "1000060"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:10:16.86533+00:00"
+  object_id: "1000025"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:29:29.937057+00:00"
+  object_id: "1000520"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:36:14.341694+00:00"
+  object_id: "1000041"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:37:01.955091+00:00"
+  object_id: "1000692"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:50:41.363165+00:00"
+  object_id: "1000019"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T03:51:48.440196+00:00"
+  object_id: "1001068"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:16:01.744922+00:00"
+  object_id: "1000912"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:16:01.744922+00:00"
+  object_id: "1000667"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:16:01.744922+00:00"
+  object_id: "1000460"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:16:01.744922+00:00"
+  object_id: "1000101"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:16:01.744922+00:00"
+  object_id: "1000749"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:17:49.571569+00:00"
+  object_id: "1000362"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:17:49.571569+00:00"
+  object_id: "1000673"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:17:49.571569+00:00"
+  object_id: "1000232"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:17:49.571569+00:00"
+  object_id: "1000216"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:17:49.571569+00:00"
+  object_id: "1000047"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-25T20:57:44.643874+00:00"
+  object_id: "1000594"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:01:20.061855+00:00"
+  object_id: "1000936"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-23T04:23:35.289842+00:00"
+  object_id: "1000884"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:23:35.289842+00:00"
+  object_id: "1000204"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:23:35.289842+00:00"
+  object_id: "1000382"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:23:35.289842+00:00"
+  object_id: "1000847"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:23:35.289842+00:00"
+  object_id: "1000983"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:26:35.091498+00:00"
+  object_id: "1000405"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:26:35.091498+00:00"
+  object_id: "1001136"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T04:26:35.091498+00:00"
+  object_id: "1000329"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-25T21:10:32.185506+00:00"
+  object_id: "1000866"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-23T04:31:52.653647+00:00"
+  object_id: "1000481"
+  worker_id: 255
+-
+  first_recorded_at: "2026-09-23T19:34:22.670694+00:00"
+  object_id: "1000473"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T19:44:10.020504+00:00"
+  object_id: "1000721"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T19:45:40.754764+00:00"
+  object_id: "1000155"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T19:51:51.684871+00:00"
+  object_id: "1001154"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T19:53:05.129792+00:00"
+  object_id: "1000164"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T19:54:03.656817+00:00"
+  object_id: "1000923"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T19:54:56.947771+00:00"
+  object_id: "1000230"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T20:14:33.509295+00:00"
+  object_id: "1000966"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T20:15:22.156149+00:00"
+  object_id: "1000085"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T20:40:14.130481+00:00"
+  object_id: "1001097"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T20:40:27.203124+00:00"
+  object_id: "1000221"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T20:42:25.949437+00:00"
+  object_id: "1000637"
+  worker_id: 183
+-
+  first_recorded_at: "2026-09-23T20:43:57.525694+00:00"
+  object_id: "1001095"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T20:45:18.70364+00:00"
+  object_id: "1000720"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T20:47:21.753434+00:00"
+  object_id: "1000701"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T20:47:21.753434+00:00"
+  object_id: "1000649"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T20:49:03.156908+00:00"
+  object_id: "1000513"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T20:58:39.553825+00:00"
+  object_id: "1000516"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:01:01.858232+00:00"
+  object_id: "1000829"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:05:59.711253+00:00"
+  object_id: "1000335"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:07:34.934425+00:00"
+  object_id: "1000189"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:08:08.624881+00:00"
+  object_id: "1000641"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-23T21:08:34.39426+00:00"
+  object_id: "1000533"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:09:35.147622+00:00"
+  object_id: "1000518"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-23T21:09:59.831836+00:00"
+  object_id: "1001096"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:14:41.061006+00:00"
+  object_id: "1000622"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:16:22.198877+00:00"
+  object_id: "1000245"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:20:03.006584+00:00"
+  object_id: "1000800"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:26:25.380529+00:00"
+  object_id: "1000771"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:31:05.309012+00:00"
+  object_id: "1000584"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:31:57.232902+00:00"
+  object_id: "1001115"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:32:39.852958+00:00"
+  object_id: "1000842"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:33:24.158211+00:00"
+  object_id: "1000423"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:35:32.328765+00:00"
+  object_id: "1000210"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T21:42:49.330946+00:00"
+  object_id: "1000054"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-23T21:43:24.071635+00:00"
+  object_id: "1000170"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-23T21:45:31.563404+00:00"
+  object_id: "1001142"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-23T21:47:44.076483+00:00"
+  object_id: "1000980"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-23T21:50:48.238839+00:00"
+  object_id: "1001013"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-23T21:55:17.386439+00:00"
+  object_id: "1000999"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-23T23:15:23.123697+00:00"
+  object_id: "1000070"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-23T23:16:16.28816+00:00"
+  object_id: "1000697"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-23T23:17:06.31761+00:00"
+  object_id: "1001151"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-23T23:17:51.997501+00:00"
+  object_id: "1000100"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-23T23:21:47.493696+00:00"
+  object_id: "1000754"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:22:57.767998+00:00"
+  object_id: "1000044"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-23T23:25:06.326066+00:00"
+  object_id: "1000455"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:25:15.553594+00:00"
+  object_id: "1000311"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-23T23:27:15.542496+00:00"
+  object_id: "1001079"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:28:27.294678+00:00"
+  object_id: "1000202"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:37:01.899326+00:00"
+  object_id: "1000188"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:41:54.298346+00:00"
+  object_id: "1000610"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:42:44.78277+00:00"
+  object_id: "1000823"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:45:52.435666+00:00"
+  object_id: "1000880"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:48:38.996916+00:00"
+  object_id: "1000141"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:50:10.109522+00:00"
+  object_id: "1000633"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:51:48.807225+00:00"
+  object_id: "1000931"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:53:03.581667+00:00"
+  object_id: "1000634"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:54:29.846363+00:00"
+  object_id: "1000420"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-23T23:55:38.540419+00:00"
+  object_id: "1000035"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:00:35.113042+00:00"
+  object_id: "1000057"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:05:24.883312+00:00"
+  object_id: "1000300"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T00:06:23.893709+00:00"
+  object_id: "1000384"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T00:28:29.952667+00:00"
+  object_id: "1000974"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T00:42:13.580799+00:00"
+  object_id: "1000150"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:43:09.798583+00:00"
+  object_id: "1000690"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:43:20.48521+00:00"
+  object_id: "1001164"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T00:45:43.083134+00:00"
+  object_id: "1001086"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:48:03.617822+00:00"
+  object_id: "1000853"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T00:51:24.533026+00:00"
+  object_id: "1000568"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:53:26.927271+00:00"
+  object_id: "1000028"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:56:02.25397+00:00"
+  object_id: "1001137"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T00:59:00.998501+00:00"
+  object_id: "1000065"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:05:33.810402+00:00"
+  object_id: "1001081"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:06:12.868567+00:00"
+  object_id: "1000281"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:06:51.254441+00:00"
+  object_id: "1001041"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:07:25.877543+00:00"
+  object_id: "1001166"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:07:27.152496+00:00"
+  object_id: "1000344"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:08:52.877082+00:00"
+  object_id: "1000767"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:08:58.910995+00:00"
+  object_id: "1000827"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:09:41.979196+00:00"
+  object_id: "1000496"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:09:54.437377+00:00"
+  object_id: "1000709"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:10:34.765953+00:00"
+  object_id: "1000287"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:11:15.116405+00:00"
+  object_id: "1000440"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:12:34.422746+00:00"
+  object_id: "1000015"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:14:54.028113+00:00"
+  object_id: "1001052"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:17:28.961813+00:00"
+  object_id: "1000131"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T01:18:03.067494+00:00"
+  object_id: "1000322"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:18:09.77234+00:00"
+  object_id: "1000963"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T01:32:18.384527+00:00"
+  object_id: "1000249"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:35:27.826683+00:00"
+  object_id: "1000120"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:38:35.985321+00:00"
+  object_id: "1000442"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:39:28.26561+00:00"
+  object_id: "1000288"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T01:40:07.871115+00:00"
+  object_id: "1001042"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:40:58.689617+00:00"
+  object_id: "1000587"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:42:09.071452+00:00"
+  object_id: "1000268"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:42:33.534938+00:00"
+  object_id: "1000133"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:48:06.054301+00:00"
+  object_id: "1000566"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:48:22.914325+00:00"
+  object_id: "1000627"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T01:48:43.642156+00:00"
+  object_id: "1000807"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T01:48:48.235562+00:00"
+  object_id: "1000464"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:49:31.320493+00:00"
+  object_id: "1000228"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:49:33.053085+00:00"
+  object_id: "1000169"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T01:50:49.029225+00:00"
+  object_id: "1001072"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T01:51:52.711678+00:00"
+  object_id: "1000517"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:53:32.219339+00:00"
+  object_id: "1000411"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T01:53:39.648097+00:00"
+  object_id: "1000705"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:54:06.583925+00:00"
+  object_id: "1000564"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T01:58:58.383561+00:00"
+  object_id: "1000862"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:04:27.215428+00:00"
+  object_id: "1000881"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:07:03.105801+00:00"
+  object_id: "1001060"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:09:28.381219+00:00"
+  object_id: "1000991"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:10:49.160921+00:00"
+  object_id: "1000529"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:11:13.130248+00:00"
+  object_id: "1000820"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:11:13.909325+00:00"
+  object_id: "1000094"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:12:21.467971+00:00"
+  object_id: "1000257"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:14:59.159989+00:00"
+  object_id: "1000786"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:15:11.427813+00:00"
+  object_id: "1000482"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:15:16.312049+00:00"
+  object_id: "1000758"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:15:59.799459+00:00"
+  object_id: "1000314"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:16:01.77626+00:00"
+  object_id: "1000615"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:18:25.778146+00:00"
+  object_id: "1000152"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:20:21.401532+00:00"
+  object_id: "1000082"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:21:17.959686+00:00"
+  object_id: "1000354"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:22:25.914534+00:00"
+  object_id: "1000254"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:23:48.693356+00:00"
+  object_id: "1000251"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:24:24.26319+00:00"
+  object_id: "1000302"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:26:01.793131+00:00"
+  object_id: "1001007"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:26:47.980385+00:00"
+  object_id: "1001025"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:27:43.088819+00:00"
+  object_id: "1000183"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:28:17.773225+00:00"
+  object_id: "1000323"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:30:37.688709+00:00"
+  object_id: "1000628"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:30:48.408875+00:00"
+  object_id: "1000229"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:33:15.914857+00:00"
+  object_id: "1000824"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:34:13.363027+00:00"
+  object_id: "1000988"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:35:15.534905+00:00"
+  object_id: "1000528"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:36:15.695426+00:00"
+  object_id: "1000319"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:36:23.627224+00:00"
+  object_id: "1000105"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:37:11.455917+00:00"
+  object_id: "1001145"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:37:27.518573+00:00"
+  object_id: "1000346"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:38:52.18656+00:00"
+  object_id: "1000299"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:39:31.066815+00:00"
+  object_id: "1001103"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:39:51.210034+00:00"
+  object_id: "1000996"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:40:11.712395+00:00"
+  object_id: "1000990"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:40:19.718609+00:00"
+  object_id: "1000154"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:40:55.055898+00:00"
+  object_id: "1000590"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:43:28.278769+00:00"
+  object_id: "1000265"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:43:32.375399+00:00"
+  object_id: "1001019"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:43:44.465432+00:00"
+  object_id: "1000077"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:44:11.775808+00:00"
+  object_id: "1000471"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:44:45.87342+00:00"
+  object_id: "1000073"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:45:28.123782+00:00"
+  object_id: "1000179"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:45:54.029597+00:00"
+  object_id: "1000962"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:45:56.546262+00:00"
+  object_id: "1000367"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:46:28.785744+00:00"
+  object_id: "1000766"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:46:48.14841+00:00"
+  object_id: "1000208"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:47:23.751395+00:00"
+  object_id: "1001064"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:47:26.425402+00:00"
+  object_id: "1000079"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:47:28.61167+00:00"
+  object_id: "1000381"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:49:30.338499+00:00"
+  object_id: "1000719"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:51:03.990543+00:00"
+  object_id: "1000467"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:51:07.483469+00:00"
+  object_id: "1000793"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:51:12.83888+00:00"
+  object_id: "1000838"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:52:49.455175+00:00"
+  object_id: "1000474"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:53:03.83584+00:00"
+  object_id: "1000549"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:53:20.103421+00:00"
+  object_id: "1001150"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:54:30.653287+00:00"
+  object_id: "1000092"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T02:55:58.216534+00:00"
+  object_id: "1001123"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:57:07.462981+00:00"
+  object_id: "1001099"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:58:04.084829+00:00"
+  object_id: "1000225"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:58:17.047764+00:00"
+  object_id: "1000972"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T02:58:56.77172+00:00"
+  object_id: "1000698"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T02:59:32.13648+00:00"
+  object_id: "1000428"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:01:25.53239+00:00"
+  object_id: "1000929"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:01:39.950502+00:00"
+  object_id: "1000084"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:02:54.059289+00:00"
+  object_id: "1000730"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:02:55.868615+00:00"
+  object_id: "1000197"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:03:13.726745+00:00"
+  object_id: "1000921"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:03:47.20783+00:00"
+  object_id: "1001032"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:03:49.421596+00:00"
+  object_id: "1000102"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:04:21.267104+00:00"
+  object_id: "1000087"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:05:02.601198+00:00"
+  object_id: "1000328"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:08:21.737971+00:00"
+  object_id: "1000023"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:08:52.786748+00:00"
+  object_id: "1000887"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:09:02.909727+00:00"
+  object_id: "1000466"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:09:07.747985+00:00"
+  object_id: "1000172"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:09:17.493189+00:00"
+  object_id: "1001077"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:10:07.313606+00:00"
+  object_id: "1000068"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:10:32.853825+00:00"
+  object_id: "1000497"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:10:34.572324+00:00"
+  object_id: "1000306"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:11:50.649863+00:00"
+  object_id: "1001135"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:12:34.737815+00:00"
+  object_id: "1000695"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:13:06.750824+00:00"
+  object_id: "1000558"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:13:42.051917+00:00"
+  object_id: "1001144"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:13:56.912153+00:00"
+  object_id: "1000196"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:14:03.971344+00:00"
+  object_id: "1000320"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:15:15.194998+00:00"
+  object_id: "1000248"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:15:27.458869+00:00"
+  object_id: "1000624"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:16:27.033179+00:00"
+  object_id: "1000389"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:17:04.695265+00:00"
+  object_id: "1000096"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:17:08.275892+00:00"
+  object_id: "1000209"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:17:54.621026+00:00"
+  object_id: "1000276"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:18:53.979785+00:00"
+  object_id: "1001141"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:19:14.188998+00:00"
+  object_id: "1000934"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:20:02.225501+00:00"
+  object_id: "1000834"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:20:02.243401+00:00"
+  object_id: "1000537"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:20:13.671274+00:00"
+  object_id: "1000646"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:20:52.95381+00:00"
+  object_id: "1000715"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:22:00.919718+00:00"
+  object_id: "1000282"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:22:55.587726+00:00"
+  object_id: "1000699"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:23:01.071333+00:00"
+  object_id: "1000495"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:27:27.926023+00:00"
+  object_id: "1001000"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:27:46.46048+00:00"
+  object_id: "1000790"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:29:49.540147+00:00"
+  object_id: "1000569"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:30:06.917771+00:00"
+  object_id: "1000676"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:31:07.690068+00:00"
+  object_id: "1000043"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:31:39.305227+00:00"
+  object_id: "1001155"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:32:55.509884+00:00"
+  object_id: "1001104"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:33:29.540591+00:00"
+  object_id: "1000452"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:34:03.493311+00:00"
+  object_id: "1000604"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:34:51.591143+00:00"
+  object_id: "1000093"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:35:36.038858+00:00"
+  object_id: "1000870"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:36:11.271162+00:00"
+  object_id: "1000125"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:36:20.845079+00:00"
+  object_id: "1000140"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:37:43.211609+00:00"
+  object_id: "1000560"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:37:48.584885+00:00"
+  object_id: "1000178"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:38:40.2484+00:00"
+  object_id: "1001149"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:38:47.897073+00:00"
+  object_id: "1000683"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-25T20:51:36.303547+00:00"
+  object_id: "1000224"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-24T03:39:10.415873+00:00"
+  object_id: "1000736"
+  worker_id: 253
+-
+  first_recorded_at: "2026-09-24T03:40:01.52153+00:00"
+  object_id: "1001119"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:41:17.688776+00:00"
+  object_id: "1000745"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:42:54.798673+00:00"
+  object_id: "1000175"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-25T20:57:45.431058+00:00"
+  object_id: "1000837"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:02:42.537011+00:00"
+  object_id: "1000859"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-24T03:43:22.291504+00:00"
+  object_id: "1001057"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:43:29.278486+00:00"
+  object_id: "1000740"
+  worker_id: 253
+-
+  first_recorded_at: "2026-09-24T03:43:29.278486+00:00"
+  object_id: "1000739"
+  worker_id: 253
+-
+  first_recorded_at: "2026-09-24T03:44:30.54062+00:00"
+  object_id: "1000913"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:45:06.245511+00:00"
+  object_id: "1001044"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:46:27.8694+00:00"
+  object_id: "1000668"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:46:49.406908+00:00"
+  object_id: "1000969"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:47:23.078524+00:00"
+  object_id: "1000869"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:48:15.465013+00:00"
+  object_id: "1000702"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:48:49.383377+00:00"
+  object_id: "1000283"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:49:09.989782+00:00"
+  object_id: "1000339"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:49:35.685269+00:00"
+  object_id: "1000892"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:50:10.199535+00:00"
+  object_id: "1000984"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:50:28.667328+00:00"
+  object_id: "1000968"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:50:44.475819+00:00"
+  object_id: "1000253"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:52:01.546303+00:00"
+  object_id: "1000553"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:52:09.900892+00:00"
+  object_id: "1000444"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:53:03.329218+00:00"
+  object_id: "1000510"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:53:07.46116+00:00"
+  object_id: "1001020"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:53:16.633603+00:00"
+  object_id: "1001016"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:54:04.871228+00:00"
+  object_id: "1000396"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:54:18.41982+00:00"
+  object_id: "1000262"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:55:12.765304+00:00"
+  object_id: "1000099"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:55:27.874203+00:00"
+  object_id: "1000498"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:56:07.578681+00:00"
+  object_id: "1001059"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:56:19.063898+00:00"
+  object_id: "1000069"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:57:34.434181+00:00"
+  object_id: "1000246"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:57:36.546132+00:00"
+  object_id: "1000194"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:57:51.37099+00:00"
+  object_id: "1000425"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:58:07.745732+00:00"
+  object_id: "1000206"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:58:28.309084+00:00"
+  object_id: "1000089"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T03:59:25.856543+00:00"
+  object_id: "1000803"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T03:59:44.308059+00:00"
+  object_id: "1000821"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T03:59:51.782308+00:00"
+  object_id: "1000507"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:00:20.295931+00:00"
+  object_id: "1000809"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:01:09.463648+00:00"
+  object_id: "1000751"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:01:20.513535+00:00"
+  object_id: "1000810"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:01:20.755291+00:00"
+  object_id: "1000791"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:01:41.380152+00:00"
+  object_id: "1001069"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:02:14.965852+00:00"
+  object_id: "1000757"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:02:15.500168+00:00"
+  object_id: "1000865"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:02:17.606684+00:00"
+  object_id: "1000742"
+  worker_id: 253
+-
+  first_recorded_at: "2026-09-24T04:02:17.606684+00:00"
+  object_id: "1000737"
+  worker_id: 253
+-
+  first_recorded_at: "2026-09-24T04:03:37.91498+00:00"
+  object_id: "1000630"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:04:34.163565+00:00"
+  object_id: "1000097"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:04:38.847237+00:00"
+  object_id: "1000632"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:05:08.157584+00:00"
+  object_id: "1000256"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:05:25.044731+00:00"
+  object_id: "1000236"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:05:59.335111+00:00"
+  object_id: "1000203"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:06:27.233846+00:00"
+  object_id: "1000351"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:06:31.531503+00:00"
+  object_id: "1000858"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:08:12.838209+00:00"
+  object_id: "1000252"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:08:17.561487+00:00"
+  object_id: "1001012"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:08:25.616869+00:00"
+  object_id: "1000706"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:08:47.143546+00:00"
+  object_id: "1000212"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:09:08.331407+00:00"
+  object_id: "1000534"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:10:00.252811+00:00"
+  object_id: "1000763"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:10:41.261411+00:00"
+  object_id: "1000760"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:10:51.641361+00:00"
+  object_id: "1001139"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:11:06.143846+00:00"
+  object_id: "1001024"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:12:22.330496+00:00"
+  object_id: "1000614"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:12:54.805526+00:00"
+  object_id: "1000022"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:13:34.674998+00:00"
+  object_id: "1000388"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:15:43.502616+00:00"
+  object_id: "1000032"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:15:52.89733+00:00"
+  object_id: "1000308"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:15:53.547656+00:00"
+  object_id: "1000724"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:16:23.886583+00:00"
+  object_id: "1000193"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:17:02.438584+00:00"
+  object_id: "1000243"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:17:55.48095+00:00"
+  object_id: "1000559"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:20:12.915427+00:00"
+  object_id: "1000490"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:21:22.572528+00:00"
+  object_id: "1000375"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:21:33.693752+00:00"
+  object_id: "1000134"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:23:16.743268+00:00"
+  object_id: "1000797"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:23:27.930111+00:00"
+  object_id: "1000864"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:24:09.328118+00:00"
+  object_id: "1000350"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:24:33.606953+00:00"
+  object_id: "1000747"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:25:39.457996+00:00"
+  object_id: "1000139"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:26:16.270561+00:00"
+  object_id: "1000053"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:26:44.271564+00:00"
+  object_id: "1000383"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:27:07.106997+00:00"
+  object_id: "1000907"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:27:54.320314+00:00"
+  object_id: "1000725"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:27:56.93675+00:00"
+  object_id: "1000213"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:28:41.650183+00:00"
+  object_id: "1000190"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:28:54.414326+00:00"
+  object_id: "1001003"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:28:55.512178+00:00"
+  object_id: "1000181"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:29:31.501137+00:00"
+  object_id: "1000177"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:29:54.142767+00:00"
+  object_id: "1000878"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:36:05.677366+00:00"
+  object_id: "1000450"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:36:44.16587+00:00"
+  object_id: "1000031"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:37:17.097545+00:00"
+  object_id: "1000240"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:38:35.111333+00:00"
+  object_id: "1000545"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:38:57.847278+00:00"
+  object_id: "1000670"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:39:04.694348+00:00"
+  object_id: "1000924"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:39:35.939698+00:00"
+  object_id: "1000555"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:39:44.51906+00:00"
+  object_id: "1001054"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:40:45.170401+00:00"
+  object_id: "1000774"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:44:30.549289+00:00"
+  object_id: "1000879"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:44:48.844597+00:00"
+  object_id: "1000184"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:44:48.991757+00:00"
+  object_id: "1000379"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:45:16.126402+00:00"
+  object_id: "1000430"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:45:32.53591+00:00"
+  object_id: "1000792"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:48:16.023642+00:00"
+  object_id: "1000290"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:48:20.337322+00:00"
+  object_id: "1001088"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:48:52.038942+00:00"
+  object_id: "1000965"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:48:54.758057+00:00"
+  object_id: "1000903"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:49:06.592616+00:00"
+  object_id: "1001037"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:53:09.141583+00:00"
+  object_id: "1000118"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:53:48.03206+00:00"
+  object_id: "1000284"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T04:54:05.646185+00:00"
+  object_id: "1000298"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:54:34.867242+00:00"
+  object_id: "1000363"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:54:46.337143+00:00"
+  object_id: "1000508"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:55:19.211872+00:00"
+  object_id: "1000018"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:56:10.233936+00:00"
+  object_id: "1000153"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:56:44.089684+00:00"
+  object_id: "1001023"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T04:59:06.694651+00:00"
+  object_id: "1000593"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T04:59:57.935164+00:00"
+  object_id: "1000596"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:03:42.293579+00:00"
+  object_id: "1000883"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:04:33.174312+00:00"
+  object_id: "1000422"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:05:23.265468+00:00"
+  object_id: "1000885"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:05:46.689486+00:00"
+  object_id: "1001005"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:07:33.72458+00:00"
+  object_id: "1000656"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:08:24.684798+00:00"
+  object_id: "1000623"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:08:56.874381+00:00"
+  object_id: "1001157"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:09:26.826751+00:00"
+  object_id: "1000857"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:11:19.726476+00:00"
+  object_id: "1001070"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:11:20.367992+00:00"
+  object_id: "1000348"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:11:20.423441+00:00"
+  object_id: "1000939"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:12:35.803798+00:00"
+  object_id: "1000327"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:12:48.477175+00:00"
+  object_id: "1000994"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:12:51.2844+00:00"
+  object_id: "1001106"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:12:59.421278+00:00"
+  object_id: "1000451"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:13:08.389458+00:00"
+  object_id: "1000939"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:13:20.603739+00:00"
+  object_id: "1000138"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:14:30.362395+00:00"
+  object_id: "1000258"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:15:54.218149+00:00"
+  object_id: "1000906"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:16:37.429216+00:00"
+  object_id: "1000291"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:17:10.660466+00:00"
+  object_id: "1000795"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:17:16.079405+00:00"
+  object_id: "1001006"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:18:41.187168+00:00"
+  object_id: "1000908"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:19:43.191465+00:00"
+  object_id: "1000848"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:20:21.990815+00:00"
+  object_id: "1000020"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:20:34.679027+00:00"
+  object_id: "1000764"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:21:07.201555+00:00"
+  object_id: "1000787"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:22:14.629213+00:00"
+  object_id: "1000703"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:23:48.480284+00:00"
+  object_id: "1000404"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:25:33.783608+00:00"
+  object_id: "1000696"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:26:16.612283+00:00"
+  object_id: "1000665"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:28:38.483677+00:00"
+  object_id: "1000330"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:28:48.718787+00:00"
+  object_id: "1000244"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:29:43.313797+00:00"
+  object_id: "1000050"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:30:29.26544+00:00"
+  object_id: "1000557"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:30:38.464937+00:00"
+  object_id: "1000521"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:31:15.092815+00:00"
+  object_id: "1000621"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:31:43.954773+00:00"
+  object_id: "1000454"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:32:11.845131+00:00"
+  object_id: "1000365"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:32:46.209955+00:00"
+  object_id: "1001102"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:32:55.50067+00:00"
+  object_id: "1000625"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:33:04.762638+00:00"
+  object_id: "1001167"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:33:53.448501+00:00"
+  object_id: "1000271"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:37:28.146615+00:00"
+  object_id: "1000539"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:37:57.593534+00:00"
+  object_id: "1000714"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:38:14.282788+00:00"
+  object_id: "1000108"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:38:26.223227+00:00"
+  object_id: "1000779"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:38:33.732981+00:00"
+  object_id: "1000592"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:38:37.053483+00:00"
+  object_id: "1000748"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:40:01.510348+00:00"
+  object_id: "1001153"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:40:58.110513+00:00"
+  object_id: "1000324"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:41:58.013763+00:00"
+  object_id: "1000315"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:42:09.374923+00:00"
+  object_id: "1001146"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:43:25.952527+00:00"
+  object_id: "1000370"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:45:28.913182+00:00"
+  object_id: "1000217"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:45:47.10529+00:00"
+  object_id: "1000575"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:46:17.956829+00:00"
+  object_id: "1000205"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:46:38.318751+00:00"
+  object_id: "1000775"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:46:47.571332+00:00"
+  object_id: "1000620"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:47:09.131077+00:00"
+  object_id: "1000004"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:47:31.826581+00:00"
+  object_id: "1000717"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:47:53.594495+00:00"
+  object_id: "1000964"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:48:55.822574+00:00"
+  object_id: "1000233"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:49:49.086269+00:00"
+  object_id: "1000415"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:50:00.684723+00:00"
+  object_id: "1000072"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:50:56.208837+00:00"
+  object_id: "1001147"
+  worker_id: 229
+-
+  first_recorded_at: "2026-09-24T05:51:04.131111+00:00"
+  object_id: "1001090"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:54:22.580935+00:00"
+  object_id: "1001035"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:55:11.371157+00:00"
+  object_id: "1000059"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:56:31.587964+00:00"
+  object_id: "1000977"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T05:57:41.175096+00:00"
+  object_id: "1000977"
+  worker_id: 225
+-
+  first_recorded_at: "2026-09-24T05:58:10.4385+00:00"
+  object_id: "1000424"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:03:44.059985+00:00"
+  object_id: "1000286"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:04:52.300206+00:00"
+  object_id: "1001128"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:06:23.781287+00:00"
+  object_id: "1000261"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:07:13.493512+00:00"
+  object_id: "1000305"
+  worker_id: 244
+-
+  first_recorded_at: "2026-09-24T06:15:05.890955+00:00"
+  object_id: "1000805"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:20:47.924653+00:00"
+  object_id: "1000818"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:21:52.583726+00:00"
+  object_id: "1000579"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:22:53.083377+00:00"
+  object_id: "1000412"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T06:29:19.728249+00:00"
+  object_id: "1000393"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:24:43.995236+00:00"
+  object_id: "1000916"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T11:24:51.356373+00:00"
+  object_id: "1000398"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:25:06.951824+00:00"
+  object_id: "1000992"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T11:26:06.265906+00:00"
+  object_id: "1000744"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:26:23.374667+00:00"
+  object_id: "1001075"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T11:26:54.282714+00:00"
+  object_id: "1000386"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:27:45.282964+00:00"
+  object_id: "1001165"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:27:57.198437+00:00"
+  object_id: "1000198"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T11:28:21.16538+00:00"
+  object_id: "1000956"
+  worker_id: 244
+-
+  first_recorded_at: "2026-09-24T11:28:40.154256+00:00"
+  object_id: "1000957"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:29:38.902182+00:00"
+  object_id: "1000273"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:29:41.341754+00:00"
+  object_id: "1000090"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T11:32:37.658761+00:00"
+  object_id: "1000011"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:34:18.721171+00:00"
+  object_id: "1000263"
+  worker_id: 246
+-
+  first_recorded_at: "2026-09-24T11:46:53.811491+00:00"
+  object_id: "1000638"
+  worker_id: 244
+-
+  first_recorded_at: "2026-09-24T12:04:49.926519+00:00"
+  object_id: "1000811"
+  worker_id: 244
+-
+  first_recorded_at: "2026-09-24T12:06:49.534786+00:00"
+  object_id: "1000831"
+  worker_id: 244
+-
+  first_recorded_at: "2026-09-24T12:09:01.222509+00:00"
+  object_id: "1000735"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-24T12:15:10.288259+00:00"
+  object_id: "1000340"
+  worker_id: 244
+-
+  first_recorded_at: "2026-09-24T12:31:52.69504+00:00"
+  object_id: "1000163"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T12:32:55.462064+00:00"
+  object_id: "1000904"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T12:36:01.458265+00:00"
+  object_id: "1000012"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T12:43:51.346805+00:00"
+  object_id: "1001055"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T12:46:52.524398+00:00"
+  object_id: "1001083"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T12:48:04.058657+00:00"
+  object_id: "1000902"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T12:51:37.82665+00:00"
+  object_id: "1000738"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-24T12:51:43.885351+00:00"
+  object_id: "1000987"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T12:55:08.143424+00:00"
+  object_id: "1000588"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T12:56:20.398189+00:00"
+  object_id: "1000741"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-24T13:01:36.369208+00:00"
+  object_id: "1000492"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:02:53.951884+00:00"
+  object_id: "1000765"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:04:29.860045+00:00"
+  object_id: "1000274"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:05:42.034061+00:00"
+  object_id: "1000780"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:09:36.341903+00:00"
+  object_id: "1000378"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:13:39.782021+00:00"
+  object_id: "1000574"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:17:15.009237+00:00"
+  object_id: "1000342"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T13:18:32.65593+00:00"
+  object_id: "1000091"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:19:25.709667+00:00"
+  object_id: "1000009"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:22:09.347096+00:00"
+  object_id: "1000713"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:23:22.17253+00:00"
+  object_id: "1000812"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:23:36.478406+00:00"
+  object_id: "1000617"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:27:17.768463+00:00"
+  object_id: "1000103"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T13:28:04.850423+00:00"
+  object_id: "1000168"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T13:30:56.809544+00:00"
+  object_id: "1000038"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:31:05.15238+00:00"
+  object_id: "1000672"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:33:29.382912+00:00"
+  object_id: "1000400"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:33:47.01751+00:00"
+  object_id: "1001162"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:35:00.30186+00:00"
+  object_id: "1000666"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:35:41.084241+00:00"
+  object_id: "1000600"
+  worker_id: 188
+-
+  first_recorded_at: "2026-09-24T13:39:26.795978+00:00"
+  object_id: "1000429"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:43:13.24521+00:00"
+  object_id: "1000605"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T13:50:25.513248+00:00"
+  object_id: "1000231"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:51:27.530192+00:00"
+  object_id: "1001114"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:52:25.755789+00:00"
+  object_id: "1000868"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:52:28.51181+00:00"
+  object_id: "1000796"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T13:53:42.727106+00:00"
+  object_id: "1000479"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:54:02.86456+00:00"
+  object_id: "1000677"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T13:54:09.050754+00:00"
+  object_id: "1000975"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:55:42.72008+00:00"
+  object_id: "1000543"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:56:21.919039+00:00"
+  object_id: "1000773"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T13:56:41.975504+00:00"
+  object_id: "1001120"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T13:57:07.577048+00:00"
+  object_id: "1000264"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T13:59:59.76084+00:00"
+  object_id: "1000465"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:00:44.007667+00:00"
+  object_id: "1001076"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:01:57.805047+00:00"
+  object_id: "1001084"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:02:25.558512+00:00"
+  object_id: "1000493"
+  worker_id: 185
+-
+  first_recorded_at: "2026-09-24T14:02:32.844369+00:00"
+  object_id: "1001118"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T14:03:37.87209+00:00"
+  object_id: "1001163"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:04:47.166399+00:00"
+  object_id: "1000146"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:05:31.754218+00:00"
+  object_id: "1000782"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:10:51.516343+00:00"
+  object_id: "1000967"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:13:26.64031+00:00"
+  object_id: "1000128"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T14:14:41.086693+00:00"
+  object_id: "1000833"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:15:01.386669+00:00"
+  object_id: "1001134"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T14:16:20.927537+00:00"
+  object_id: "1000395"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T14:18:40.333933+00:00"
+  object_id: "1000195"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:19:33.638321+00:00"
+  object_id: "1001022"
+  worker_id: 258
+-
+  first_recorded_at: "2026-09-24T14:22:34.091465+00:00"
+  object_id: "1000414"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:25:52.358889+00:00"
+  object_id: "1000051"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T14:30:01.507525+00:00"
+  object_id: "1000419"
+  worker_id: 223
+-
+  first_recorded_at: "2026-09-24T17:59:13.11905+00:00"
+  object_id: "1000734"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-24T18:09:57.575092+00:00"
+  object_id: "1000732"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-24T18:11:22.60496+00:00"
+  object_id: "1000877"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T18:11:55.760973+00:00"
+  object_id: "1000733"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-24T18:12:45.930533+00:00"
+  object_id: "1000371"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T18:19:53.216968+00:00"
+  object_id: "1000619"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T18:19:53.682727+00:00"
+  object_id: "1000789"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T18:22:37.578647+00:00"
+  object_id: "1000940"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T18:26:20.418324+00:00"
+  object_id: "1000562"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T18:27:04.87231+00:00"
+  object_id: "1001159"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T18:32:42.66086+00:00"
+  object_id: "1001014"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T18:33:09.396649+00:00"
+  object_id: "1001098"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T18:33:15.769113+00:00"
+  object_id: "1000358"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T18:37:25.910175+00:00"
+  object_id: "1000292"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T18:42:48.849144+00:00"
+  object_id: "1000653"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T18:43:42.841437+00:00"
+  object_id: "1000176"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T18:45:27.758244+00:00"
+  object_id: "1000888"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T18:45:54.394968+00:00"
+  object_id: "1000310"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T18:47:21.391104+00:00"
+  object_id: "1000655"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T18:49:42.000375+00:00"
+  object_id: "1000608"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T18:50:47.905802+00:00"
+  object_id: "1000897"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T18:52:12.79498+00:00"
+  object_id: "1001168"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:00:30.931172+00:00"
+  object_id: "1000156"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:06:03.960581+00:00"
+  object_id: "1000832"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:08:38.938245+00:00"
+  object_id: "1000211"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:10:35.765616+00:00"
+  object_id: "1000901"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:11:13.411605+00:00"
+  object_id: "1000727"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:18:42.072385+00:00"
+  object_id: "1000606"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:21:18.072095+00:00"
+  object_id: "1001138"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:22:37.925713+00:00"
+  object_id: "1000631"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:24:11.883407+00:00"
+  object_id: "1000259"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:26:06.417802+00:00"
+  object_id: "1000285"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:40:53.258317+00:00"
+  object_id: "1000325"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:42:43.956015+00:00"
+  object_id: "1000470"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:43:02.343247+00:00"
+  object_id: "1000345"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T19:43:40.105419+00:00"
+  object_id: "1000882"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:45:25.883182+00:00"
+  object_id: "1000238"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:46:23.239619+00:00"
+  object_id: "1000036"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:50:05.462996+00:00"
+  object_id: "1000438"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:52:52.76352+00:00"
+  object_id: "1000391"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:53:47.96257+00:00"
+  object_id: "1000475"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:55:22.252346+00:00"
+  object_id: "1001048"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T19:56:03.163172+00:00"
+  object_id: "1000506"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:56:48.233748+00:00"
+  object_id: "1000572"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T19:57:30.551592+00:00"
+  object_id: "1000663"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T19:58:48.642528+00:00"
+  object_id: "1000458"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T19:59:33.479146+00:00"
+  object_id: "1000491"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T19:59:33.479146+00:00"
+  object_id: "1000817"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T19:59:39.744631+00:00"
+  object_id: "1000280"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:01:15.661335+00:00"
+  object_id: "1001061"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:02:37.790396+00:00"
+  object_id: "1000642"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T20:03:11.247133+00:00"
+  object_id: "1000267"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:10:49.918314+00:00"
+  object_id: "1000933"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T20:38:01.408348+00:00"
+  object_id: "1000369"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:40:00.99671+00:00"
+  object_id: "1000915"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:41:34.380561+00:00"
+  object_id: "1001109"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:41:54.169555+00:00"
+  object_id: "1000669"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:42:09.551006+00:00"
+  object_id: "1000349"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T20:42:57.064895+00:00"
+  object_id: "1000223"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:43:57.540029+00:00"
+  object_id: "1000220"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:44:32.942014+00:00"
+  object_id: "1000894"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T20:44:47.524845+00:00"
+  object_id: "1000658"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:45:43.723673+00:00"
+  object_id: "1000307"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:46:13.80513+00:00"
+  object_id: "1000551"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T20:48:41.235084+00:00"
+  object_id: "1000664"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:48:46.735286+00:00"
+  object_id: "1000567"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:49:02.393763+00:00"
+  object_id: "1001038"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T20:49:49.80577+00:00"
+  object_id: "1000124"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:50:58.419559+00:00"
+  object_id: "1000602"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:52:43.824503+00:00"
+  object_id: "1000502"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T20:52:54.739826+00:00"
+  object_id: "1000905"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:55:31.423731+00:00"
+  object_id: "1000447"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:56:09.878858+00:00"
+  object_id: "1000201"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:57:11.38729+00:00"
+  object_id: "1000599"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:57:20.988961+00:00"
+  object_id: "1000850"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:57:32.823938+00:00"
+  object_id: "1000700"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T20:58:29.33182+00:00"
+  object_id: "1000808"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T20:58:30.743748+00:00"
+  object_id: "1001047"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T20:58:54.656064+00:00"
+  object_id: "1000342"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T20:59:19.989749+00:00"
+  object_id: "1000149"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T21:00:14.459263+00:00"
+  object_id: "1000951"
+  worker_id: 242
+-
+  first_recorded_at: "2026-09-24T21:01:27.882491+00:00"
+  object_id: "1000838"
+  worker_id: 214
+-
+  first_recorded_at: "2026-09-24T21:03:06.707108+00:00"
+  object_id: "1000605"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:03:20.283303+00:00"
+  object_id: "1001029"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T21:03:45.989482+00:00"
+  object_id: "1000945"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T21:04:22.293042+00:00"
+  object_id: "1000753"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T21:05:17.07766+00:00"
+  object_id: "1000185"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T21:05:34.166481+00:00"
+  object_id: "1000048"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T21:09:35.074688+00:00"
+  object_id: "1000185"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:09:51.16815+00:00"
+  object_id: "1001107"
+  worker_id: 250
+-
+  first_recorded_at: "2026-09-24T21:10:37.480688+00:00"
+  object_id: "1000313"
+  worker_id: 201
+-
+  first_recorded_at: "2026-09-24T21:11:15.153984+00:00"
+  object_id: "1000832"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:13:46.163812+00:00"
+  object_id: "1000838"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:16:31.360739+00:00"
+  object_id: "1000666"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:17:52.119555+00:00"
+  object_id: "1000888"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-25T20:52:06.023806+00:00"
+  object_id: "1001127"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:58:25.840192+00:00"
+  object_id: "1001082"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-24T21:19:05.849621+00:00"
+  object_id: "1001128"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:19:14.157381+00:00"
+  object_id: "1000818"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000072"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000217"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000233"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000273"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000625"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000717"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000957"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1000964"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:20:58.61301+00:00"
+  object_id: "1001146"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:24:16.247787+00:00"
+  object_id: "1000023"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:25:17.050158+00:00"
+  object_id: "1001032"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:25:35.513621+00:00"
+  object_id: "1000315"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:25:45.660228+00:00"
+  object_id: "1000921"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:26:41.174178+00:00"
+  object_id: "1000696"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:29:21.988377+00:00"
+  object_id: "1000310"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:31:56.752351+00:00"
+  object_id: "1000310"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:33:37.23785+00:00"
+  object_id: "1001121"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:33:37.23785+00:00"
+  object_id: "1000104"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:34:08.551136+00:00"
+  object_id: "1000519"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:34:50.825886+00:00"
+  object_id: "1001162"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:36:03.1508+00:00"
+  object_id: "1000168"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T21:03:36.202625+00:00"
+  object_id: "1000434"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:12:36.641637+00:00"
+  object_id: "1000582"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-24T21:38:06.372792+00:00"
+  object_id: "1000195"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:38:16.843762+00:00"
+  object_id: "1000414"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:38:48.841048+00:00"
+  object_id: "1000155"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-24T21:39:24.215437+00:00"
+  object_id: "1001134"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:39:24.215437+00:00"
+  object_id: "1000009"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:39:24.215437+00:00"
+  object_id: "1000051"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:39:24.215437+00:00"
+  object_id: "1000205"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:39:24.215437+00:00"
+  object_id: "1000560"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:40:07.465922+00:00"
+  object_id: "1000713"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:40:50.539411+00:00"
+  object_id: "1000731"
+  worker_id: 241
+-
+  first_recorded_at: "2026-09-24T21:41:44.78162+00:00"
+  object_id: "1001115"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:41:44.78162+00:00"
+  object_id: "1000842"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:41:44.78162+00:00"
+  object_id: "1000423"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:42:22.145697+00:00"
+  object_id: "1000370"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:44:16.317727+00:00"
+  object_id: "1000378"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:44:16.317727+00:00"
+  object_id: "1000574"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:44:16.317727+00:00"
+  object_id: "1000103"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:44:16.317727+00:00"
+  object_id: "1000605"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:44:16.317727+00:00"
+  object_id: "1000185"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:44:16.317727+00:00"
+  object_id: "1000634"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:44:16.317727+00:00"
+  object_id: "1000035"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:45:37.241952+00:00"
+  object_id: "1000324"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:46:19.112223+00:00"
+  object_id: "1000714"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:47:03.8642+00:00"
+  object_id: "1000274"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:47:03.8642+00:00"
+  object_id: "1000882"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:47:03.8642+00:00"
+  object_id: "1000633"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:50:31.416952+00:00"
+  object_id: "1000138"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:50:31.416952+00:00"
+  object_id: "1000795"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:50:31.416952+00:00"
+  object_id: "1000497"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:50:31.416952+00:00"
+  object_id: "1000834"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:50:31.416952+00:00"
+  object_id: "1001123"
+  worker_id: 209
+-
+  first_recorded_at: "2026-09-24T21:53:17.492511+00:00"
+  object_id: "1000420"
+  worker_id: 231
+-
+  first_recorded_at: "2026-09-24T21:57:58.511054+00:00"
+  object_id: "1000626"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T21:58:02.70735+00:00"
+  object_id: "1000443"
+  worker_id: 236
+-
+  first_recorded_at: "2026-09-24T21:58:24.041761+00:00"
+  object_id: "1000806"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T21:59:03.14751+00:00"
+  object_id: "1000337"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T21:59:53.387361+00:00"
+  object_id: "1000436"
+  worker_id: 236
+-
+  first_recorded_at: "2026-09-24T22:00:00.613284+00:00"
+  object_id: "1000088"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T22:03:28.759832+00:00"
+  object_id: "1001074"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T22:04:17.785362+00:00"
+  object_id: "1000106"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T22:05:03.781594+00:00"
+  object_id: "1001108"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T22:11:11.253345+00:00"
+  object_id: "1000985"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T22:13:14.436992+00:00"
+  object_id: "1000333"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T22:15:48.622438+00:00"
+  object_id: "1000186"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-24T22:18:26.317987+00:00"
+  object_id: "1000385"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T01:01:38.037049+00:00"
+  object_id: "1000600"
+  worker_id: 208
+-
+  first_recorded_at: "2026-09-25T01:20:07.136552+00:00"
+  object_id: "1000272"
+  worker_id: 208
+-
+  first_recorded_at: "2026-09-25T01:42:09.069339+00:00"
+  object_id: "1000323"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:42:10.925069+00:00"
+  object_id: "1000172"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:43:56.179771+00:00"
+  object_id: "1000238"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:44:03.114628+00:00"
+  object_id: "1000558"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:44:42.959574+00:00"
+  object_id: "1000209"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:44:50.417982+00:00"
+  object_id: "1000790"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:47:47.664661+00:00"
+  object_id: "1000887"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:47:52.25398+00:00"
+  object_id: "1000311"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:48:21.708085+00:00"
+  object_id: "1000984"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:48:26.54465+00:00"
+  object_id: "1001020"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:48:29.96078+00:00"
+  object_id: "1000853"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:48:40.632897+00:00"
+  object_id: "1001150"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:48:43.958387+00:00"
+  object_id: "1001013"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:48:48.716474+00:00"
+  object_id: "1001164"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:50:35.926368+00:00"
+  object_id: "1000502"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T01:52:21.738564+00:00"
+  object_id: "1000562"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T02:03:49.192835+00:00"
+  object_id: "1000052"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T02:15:41.574838+00:00"
+  object_id: "1000450"
+  worker_id: 207
+-
+  first_recorded_at: "2026-09-25T02:15:41.574838+00:00"
+  object_id: "1000549"
+  worker_id: 207
+-
+  first_recorded_at: "2026-09-25T02:15:41.574838+00:00"
+  object_id: "1000698"
+  worker_id: 207
+-
+  first_recorded_at: "2026-09-25T02:15:41.574838+00:00"
+  object_id: "1000792"
+  worker_id: 207
+-
+  first_recorded_at: "2026-09-25T02:15:41.574838+00:00"
+  object_id: "1000803"
+  worker_id: 207
+-
+  first_recorded_at: "2026-09-25T02:15:41.574838+00:00"
+  object_id: "1000879"
+  worker_id: 207
+-
+  first_recorded_at: "2026-09-25T02:15:41.574838+00:00"
+  object_id: "1000929"
+  worker_id: 207
+-
+  first_recorded_at: "2026-09-25T02:28:42.423005+00:00"
+  object_id: "1000792"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T02:34:49.679157+00:00"
+  object_id: "1000792"
+  worker_id: 254
+-
+  first_recorded_at: "2026-09-25T02:53:37.243052+00:00"
+  object_id: "1000115"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T03:29:53.461131+00:00"
+  object_id: "1000115"
+  worker_id: 184
+-
+  first_recorded_at: "2026-09-25T04:09:25.310278+00:00"
+  object_id: "1000689"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T04:29:49.914646+00:00"
+  object_id: "1000953"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T04:29:49.914646+00:00"
+  object_id: "1000552"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T04:29:49.914646+00:00"
+  object_id: "1000426"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T04:29:49.914646+00:00"
+  object_id: "1000893"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T04:29:49.914646+00:00"
+  object_id: "1000355"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T04:29:49.914646+00:00"
+  object_id: "1000192"
+  worker_id: 249
+-
+  first_recorded_at: "2026-09-25T11:29:50.068847+00:00"
+  object_id: "1000694"
+  worker_id: 264
+-
+  first_recorded_at: "2026-09-25T11:32:28.887906+00:00"
+  object_id: "1000570"
+  worker_id: 264
+-
+  first_recorded_at: "2026-09-25T12:00:08.772989+00:00"
+  object_id: "1000526"
+  worker_id: 189
+-
+  first_recorded_at: "2026-09-25T12:02:58.716365+00:00"
+  object_id: "1000006"
+  worker_id: 189
+-
+  first_recorded_at: "2026-09-25T12:05:03.453554+00:00"
+  object_id: "1000949"
+  worker_id: 189
+-
+  first_recorded_at: "2026-09-25T12:05:52.000375+00:00"
+  object_id: "1001132"
+  worker_id: 189
+-
+  first_recorded_at: "2026-09-25T12:06:25.880497+00:00"
+  object_id: "1000347"
+  worker_id: 189
+-
+  first_recorded_at: "2026-09-25T12:14:36.017047+00:00"
+  object_id: "1000406"
+  worker_id: 263
+-
+  first_recorded_at: "2026-09-25T18:17:51.271877+00:00"
+  object_id: "1000886"
+  worker_id: 176
+-
+  first_recorded_at: "2026-09-25T18:17:53.15666+00:00"
+  object_id: "1000406"
+  worker_id: 211
+-
+  first_recorded_at: "2026-09-25T18:18:11.825207+00:00"
+  object_id: "1000526"
+  worker_id: 211
+-
+  first_recorded_at: "2026-09-25T18:18:22.223623+00:00"
+  object_id: "1000006"
+  worker_id: 211
+-
+  first_recorded_at: "2026-09-25T18:18:30.123987+00:00"
+  object_id: "1000272"
+  worker_id: 198
+-
+  first_recorded_at: "2026-09-25T18:18:33.995293+00:00"
+  object_id: "1000347"
+  worker_id: 211
+-
+  first_recorded_at: "2026-09-25T18:18:57.728244+00:00"
+  object_id: "1000949"
+  worker_id: 211
+-
+  first_recorded_at: "2026-09-25T18:19:10.51678+00:00"
+  object_id: "1001132"
+  worker_id: 211
+-
+  first_recorded_at: "2026-09-25T19:11:08.618295+00:00"
+  object_id: "1000239"
+  worker_id: 192
+-
+  first_recorded_at: "2026-09-25T19:15:43.982785+00:00"
+  object_id: "1000484"
+  worker_id: 192
+-
+  first_recorded_at: "2026-09-25T19:16:48.779972+00:00"
+  object_id: "1000722"
+  worker_id: 200
+-
+  first_recorded_at: "2026-09-25T19:17:39.284986+00:00"
+  object_id: "1000373"
+  worker_id: 192
+-
+  first_recorded_at: "2026-09-25T19:19:09.010076+00:00"
+  object_id: "1000409"
+  worker_id: 199
+-
+  first_recorded_at: "2026-09-25T19:26:04.860482+00:00"
+  object_id: "1000580"
+  worker_id: 192
+-
+  first_recorded_at: "2026-09-25T19:30:04.684154+00:00"
+  object_id: "1001131"
+  worker_id: 192
+-
+  first_recorded_at: "2026-09-25T19:32:32.925465+00:00"
+  object_id: "1000875"
+  worker_id: 192
+-
+  first_recorded_at: "2026-09-25T19:34:07.271123+00:00"
+  object_id: "1000095"
+  worker_id: 192
+-
+  first_recorded_at: "2026-09-25T19:34:27.763368+00:00"
+  object_id: "1000317"
+  worker_id: 177
+-
+  first_recorded_at: "2026-09-25T19:37:35.937308+00:00"
+  object_id: "1000580"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T19:52:56.224298+00:00"
+  object_id: "1000361"
+  worker_id: 210
+-
+  first_recorded_at: "2026-09-25T19:53:57.632238+00:00"
+  object_id: "1000166"
+  worker_id: 210
+-
+  first_recorded_at: "2026-09-25T19:57:55.500819+00:00"
+  object_id: "1001050"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:00:05.964682+00:00"
+  object_id: "1000538"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:02:26.492026+00:00"
+  object_id: "1000783"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:05:31.989345+00:00"
+  object_id: "1000926"
+  worker_id: 210
+-
+  first_recorded_at: "2026-09-25T20:06:15.768531+00:00"
+  object_id: "1000489"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T20:06:17.569921+00:00"
+  object_id: "1000898"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:08:31.327437+00:00"
+  object_id: "1000408"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:09:22.730158+00:00"
+  object_id: "1000522"
+  worker_id: 210
+-
+  first_recorded_at: "2026-09-25T20:09:23.97758+00:00"
+  object_id: "1000836"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:12:59.447795+00:00"
+  object_id: "1001101"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:13:45.334821+00:00"
+  object_id: "1000158"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:14:31.253693+00:00"
+  object_id: "1000675"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:15:03.797034+00:00"
+  object_id: "1000435"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:15:21.462703+00:00"
+  object_id: "1000645"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:15:28.435679+00:00"
+  object_id: "1000116"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:16:27.92636+00:00"
+  object_id: "1000565"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:17:00.13313+00:00"
+  object_id: "1000613"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:17:43.916664+00:00"
+  object_id: "1001018"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:18:43.677085+00:00"
+  object_id: "1000762"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:20:37.83406+00:00"
+  object_id: "1000729"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:21:12.500628+00:00"
+  object_id: "1000688"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:28:27.996417+00:00"
+  object_id: "1000127"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:29:13.694805+00:00"
+  object_id: "1001067"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T20:30:14.100942+00:00"
+  object_id: "1000222"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:30:48.773318+00:00"
+  object_id: "1001058"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T20:31:18.773155+00:00"
+  object_id: "1000938"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:31:48.146111+00:00"
+  object_id: "1000532"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:32:17.608062+00:00"
+  object_id: "1000174"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:35:05.35621+00:00"
+  object_id: "1000609"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:35:18.132683+00:00"
+  object_id: "1001001"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T20:38:39.187264+00:00"
+  object_id: "1000930"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:38:40.352904+00:00"
+  object_id: "1000161"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:40:37.752743+00:00"
+  object_id: "1000024"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:43:49.640607+00:00"
+  object_id: "1000530"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:44:43.420517+00:00"
+  object_id: "1000483"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:45:51.448754+00:00"
+  object_id: "1001056"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:45:57.268754+00:00"
+  object_id: "1000652"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:46:23.438651+00:00"
+  object_id: "1000439"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:46:35.97085+00:00"
+  object_id: "1000746"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:47:39.02359+00:00"
+  object_id: "1000107"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T20:47:54.847892+00:00"
+  object_id: "1000453"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:48:20.655048+00:00"
+  object_id: "1000828"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T20:48:32.996732+00:00"
+  object_id: "1000242"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:48:48.07214+00:00"
+  object_id: "1000778"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:49:05.528428+00:00"
+  object_id: "1000416"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:49:58.68799+00:00"
+  object_id: "1000126"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T20:50:04.48137+00:00"
+  object_id: "1000914"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:54:31.630359+00:00"
+  object_id: "1000064"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T20:58:25.907584+00:00"
+  object_id: "1000986"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:03:46.302104+00:00"
+  object_id: "1001113"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:12:40.829841+00:00"
+  object_id: "1000547"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-25T21:15:37.031554+00:00"
+  object_id: "1000376"
+  worker_id: 224
+-
+  first_recorded_at: "2026-09-25T21:16:47.057455+00:00"
+  object_id: "1000364"
+  worker_id: 220
+-
+  first_recorded_at: "2026-09-25T21:19:16.486977+00:00"
+  object_id: "1000076"
+  worker_id: 191
+-
+  first_recorded_at: "2026-09-26T00:23:21.719404+00:00"
+  object_id: "1000896"
+  worker_id: 227
+-
+  first_recorded_at: "2026-09-26T04:02:42.416635+00:00"
+  object_id: "1000075"
+  worker_id: 213
+-
+  first_recorded_at: "2026-09-26T04:02:42.416635+00:00"
+  object_id: "1000151"
+  worker_id: 213
+-
+  first_recorded_at: "2026-09-26T04:02:42.416635+00:00"
+  object_id: "1000578"
+  worker_id: 213
+-
+  first_recorded_at: "2026-09-26T04:02:42.416635+00:00"
+  object_id: "1000981"
+  worker_id: 226
+-
+  first_recorded_at: "2026-09-26T04:02:42.416635+00:00"
+  object_id: "1000312"
+  worker_id: 226
+-
+  first_recorded_at: "2026-09-26T04:02:42.416635+00:00"
+  object_id: "1001129"
+  worker_id: 226
+-
+  first_recorded_at: "2026-09-26T04:10:15.620018+00:00"
+  object_id: "1000160"
+  worker_id: 248
+-
+  first_recorded_at: "2026-09-26T04:10:19.95999+00:00"
+  object_id: "1001126"
+  worker_id: 213
+-
+  first_recorded_at: "2026-09-26T04:11:26.137353+00:00"
+  object_id: "1000456"
+  worker_id: 226
+-
+  first_recorded_at: "2026-09-26T04:13:31.709802+00:00"
+  object_id: "1000235"
+  worker_id: 248
+-
+  first_recorded_at: "2026-09-26T04:15:51.575301+00:00"
+  object_id: "1000873"
+  worker_id: 248
+-
+  first_recorded_at: "2026-09-30T02:50:21.530927+00:00"
+  object_id: "1000341"
+  worker_id: 187
+-
+  first_recorded_at: "2026-09-30T02:52:59.255418+00:00"
+  object_id: "1000712"
+  worker_id: 228

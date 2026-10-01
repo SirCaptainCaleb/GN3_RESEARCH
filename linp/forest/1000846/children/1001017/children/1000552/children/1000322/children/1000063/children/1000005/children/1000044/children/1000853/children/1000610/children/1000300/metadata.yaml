@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T00:05:24.883312+00:00"
+id: "1000300"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "680cadc2-2d01-4c22-9a7d-8fa7e74f74f2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:45:44.151093+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "680cadc2-2d01-4c22-9a7d-8fa7e74f74f2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:45:44.151093+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000610"
+position: 0
+research_interface:
+  consequence: "Identifies every open alternating-chain defect with concrete single-blocker/uncovered-mate data rather than abstract matching deficiency."
+  consumer:
+    - "Class III rank-five nonspecial branch"
+    - "1000976"
+  given:
+    - "8a2c12515954 blocker-count topology"
+    - "0dbbb7d78a48 terminal-blocker localization"
+  next_need: "Use the endpoint identification to splice or rotate the unique/two open alternating chains, separating early and penultimate single-blocker contacts."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Open-chain endpoints in Class III are exactly the terminal defects."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Open-chain endpoints in Class III are exactly the terminal defects"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

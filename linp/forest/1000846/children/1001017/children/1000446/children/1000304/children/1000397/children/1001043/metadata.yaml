@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-21T21:12:21.46254+00:00"
+id: "1001043"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "797df369-3cfb-49d0-89c4-9559c5ba3e66"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:36.126758+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  last_audit_observation:
+    claim_id: "797df369-3cfb-49d0-89c4-9559c5ba3e66"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:36.126758+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  role: "fence"
+  source_kind: "explicit_infinite_family"
+object_type: "counterexample"
+origin_worker_id: 262
+parent_id: "1000397"
+position: 30
+research_interface:
+  consumer: "ascending terminal-degree conjecture"
+  role: "fence"
+  sharpness: "φ-ratio can approach 2 from below"
+  warning: "do not assume ascending edges sharing a last vertex have adjacent or bounded-difference φ-values"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Ascending edges at one last vertex can have unbounded φ-gap."
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ascending edges at one last vertex can have unbounded φ-gap"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

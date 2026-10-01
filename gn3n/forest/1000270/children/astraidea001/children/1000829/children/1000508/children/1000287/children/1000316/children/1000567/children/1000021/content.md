@@ -1,0 +1,9 @@
+# Lexicographically maximal forest transversals trap every singleton-transfer edge near the larger corridor
+
+## Statement
+
+Keep the lexicographically maximal forest transversal J of aef390fce0f3, and suppose its components are paths. Let C,D be distinct components with alpha=|E(C)|>beta=|E(D)|. Assume that for every selected edge of C and every selected edge of D, the corresponding two deletion covers do not have reciprocal direct core crossings. Then alpha>=2beta.
+
+## Body
+
+Put d=alpha-beta and h=d-1. By 5e65e55c7ecd, every selected cover from C is support-incompatible with every selected cover from D. By the pair dichotomy 68deffb43319 and the assumption excluding reciprocal direct crossings together with c30a4d92d20b, every such pair must take the singleton-transfer branch.\n\nFix an arbitrary selected edge e_a of the path C and any selected edge e_b of D. The extremal exchange lemma aef390fce0f3 says that the generated alternative-edge label x has selected edge e_x in C, and after deleting e_x the endpoint s of the alternative edge f_x lying in C belongs to a component with at most\nalpha-beta-1=h\nedges. By the explicit lift in 68deffb43319, s is one of the two support vertices incident with the selected edge e_a. Since C is a path, the component of C-e_x containing s includes one of the two leaves of C; therefore s is at graph distance at most h from a leaf of C.\n\nThus every edge e_a of C has at least one endpoint whose distance from a leaf of C is at most h.\n\nWrite C as the ordinary path\nc_0 c_1 ... c_alpha.\nIf alpha>2d, then alpha>=2d+1. Consider the edge c_d c_{d+1}. The vertex c_d has distance at least d from either leaf, because its distances are d and alpha-d>=d+1. Likewise c_{d+1} has distances d+1 and alpha-d-1>=d. Hence both endpoints have distance at least d=h+1 from every leaf, contradicting the preceding property.\n\nTherefore alpha<=2d=2(alpha-beta), which rearranges to alpha>=2beta. ∎

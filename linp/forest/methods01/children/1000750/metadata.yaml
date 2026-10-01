@@ -1,0 +1,40 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-22T14:49:55.74811+00:00"
+id: "1000750"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  created_for: "lower-bound construction search"
+  source_kind: "curated_external_toolkit"
+object_type: "research"
+origin_worker_id: 195
+parent_id: "methods01"
+position: 200
+research_interface:
+  consumer:
+    - "general lower-bound construction search"
+    - "STS spanning-path obstruction route"
+  working_route: "seek dense P_ell-free components by translating path traversal into monotone, matching, or antipodal state constraints"
+research_level: "abstraction"
+semantic_container_text: null
+simplified_statement: "External structural tools that can be ported into lower-bound constructions."
+substantive_worker_ids:
+  - 195
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "External toolkit for structured lower-bound constructions"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:11:42.645504+00:00"
+version: 3

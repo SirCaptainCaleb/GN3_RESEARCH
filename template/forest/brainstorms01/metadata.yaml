@@ -1,0 +1,35 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-29T17:31:12.114897+00:00"
+id: "brainstorms01"
+last_elevation_revision: null
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: null
+metadata:
+  permanent: true
+  reserved_key: "brainstorms_root"
+object_type: "research"
+origin_worker_id: null
+parent_id: null
+position: 0
+research_interface:
+research_level: "abstraction"
+semantic_container_text: "Exploratory ideas, conjectures, speculative routes, and partially developed approaches that may seed future research branches."
+simplified_statement: "Exploratory ideas and candidate research routes."
+substantive_worker_ids:
+support_reason: null
+support_status: "unchecked"
+title: "Brainstorms"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T23:23:36.41237+00:00"
+version: 1

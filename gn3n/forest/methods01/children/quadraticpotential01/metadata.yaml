@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T15:23:44.151524+00:00"
+id: "quadraticpotential01"
+last_elevation_revision: null
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 162
+    detail: "Made the path-cover move class and move graph explicit, replacing ambiguous 'reconfiguration' and 'plateau' wording. The algebra and extremal claims are unchanged; the dictionary's quadratic-potential definition was broadened consistently to arbitrary q."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  last_audit_observation:
+    claim_id: 162
+    detail: "Made the path-cover move class and move graph explicit, replacing ambiguous 'reconfiguration' and 'plateau' wording. The algebra and extremal claims are unchanged; the dictionary's quadratic-potential definition was broadened consistently to arbitrary q."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:55:44.482052+00:00"
+    worker_id: 613
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Vocabulary/precision audit repair only: replace ambiguous 'reconfiguration' and 'plateau' language by an explicitly specified path-cover move class and move graph. The algebraic statements and conclusions are unchanged."
+    recorded_at: "2026-09-27T15:53:43.07987+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 613
+  semantic_container_seed:
+    atlas_key: "quadratic-global-descent"
+    headline: "Global quadratic normalization and sharp-half-order rigidity"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas"
+  topic: "reconfiguration potentials"
+  unary_chain_standalone: true
+object_type: "toolkit"
+origin_worker_id: 648
+parent_id: "methods01"
+position: 0
+research_interface:
+  consumer: "all GN3N reconfiguration/descent routes"
+  produces: "general algebra and extremal normalization for Phi=sum of squared component orders"
+  working_route: "use as a primary Lyapunov/extremal potential; analyze equal-Phi plateaux with secondary structure"
+research_level: "abstraction"
+semantic_container_text: "Quadratic component-size potential as a general reconfiguration toolkit. This region develops strict-descent criteria, neutral-transfer and restoration cycles, size-gap and complement-imbalance inequalities, global near-balance/staircase reductions, and dedicated two-, three-, four-, and five-side obstruction analyses. Nested branches isolate the sharp half-order extremal route and the local four-side and 4|5 plateau mechanisms."
+simplified_statement: "Quadratic component-size potential under path-cover moves"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quadratic component-size potential under path-cover moves"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:21.804103+00:00"
+version: 8

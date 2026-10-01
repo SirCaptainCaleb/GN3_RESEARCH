@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-10-01T06:26:11.409611+00:00"
+id: "local_four_endpoint_six_dichotomy01"
+last_elevation_revision: 10807
+last_substantive_worker_id: 964
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "neutral_four_six_fixedpair_swap01"
+  audit_packaging_issues:
+    -
+      note: "Standardization alias repaired: durable statement/body now use canonical 'order disagreement'."
+      recorded_at: "2026-10-01T06:53:10.689858+00:00"
+      worker_id: 1016
+  audit_request_reason: "Independent check requested for the neutral m=6 fixed-pair block-swap lemma."
+  audit_request_recorded_at: "2026-10-01T06:36:07.955603+00:00"
+  audit_resolution:
+    claim_id: 1017
+    detail: "Terminology-only repair: replaced deprecated alias 'relative-order disagreement' with canonical 'order disagreement' in statement/body. The endpoint-transfer potential changes, six-set four-of-six branch, m=6 equality case, and n>=17 corollary all reconstruct correctly."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T06:53:46.184027+00:00"
+    worker_id: 1016
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 1017
+    detail: "Terminology-only repair: replaced deprecated alias 'relative-order disagreement' with canonical 'order disagreement' in statement/body. The endpoint-transfer potential changes, six-set four-of-six branch, m=6 equality case, and n>=17 corollary all reconstruct correctly."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T06:53:46.184027+00:00"
+    worker_id: 1016
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair: replace deprecated alias relative-order disagreement with canonical order disagreement."
+    recorded_at: "2026-10-01T06:52:46.000491+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 1016
+object_type: "research"
+origin_worker_id: 964
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "four-side no-trapping; 4|6|a and 4|7|a profile closure; fixed-endpoint matching frontier"
+  given: "a componentwise quadratic-minimal spanning three-cover with a four-vertex component and one complementary path of order at least six"
+  produces: "either explicit relative-order disagreement in the endpoint six-set, or the unique equality case m=6 giving a neutral 4-to-6 endpoint transfer; above order sixteen only disagreement remains"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 964
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A locally minimal four-side beside a path of order at least six either disagrees or makes the unique neutral endpoint transfer"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T07:24:49.605991+00:00"
+version: 13

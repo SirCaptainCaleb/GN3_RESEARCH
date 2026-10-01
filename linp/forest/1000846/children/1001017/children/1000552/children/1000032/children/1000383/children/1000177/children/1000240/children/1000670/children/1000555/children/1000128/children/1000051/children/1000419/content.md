@@ -1,0 +1,13 @@
+# The simple-intersection graph of arbitrary common-terminal source rails is triangle-free
+
+## Statement
+
+Let e_1,...,e_k be ascending nonspecial edges terminal at one vertex v, and choose a canonical maximum source rail R_i ending at the unique entrance x_i of each edge. Every two rails intersect. Form a graph S on {1,...,k} by joining i,j exactly when V(R_i) intersect V(R_j) consists of one vertex. Then S is triangle-free. Consequently at least binom(k,2)-floor(k^2/4) rail pairs have at least two common vertices.
+
+## Body
+
+Suppose R_1,R_2,R_3 form a triangle of simple intersections. By universal unique-intersection alignment 5854d853a44b, each pairwise common vertex is a same-index joint on the two rails containing it. If the three pairwise intersection vertices are not all the same, then they are all distinct: equality of two would put that same vertex on the third pair as well, contradicting uniqueness unless all three coincide. Let their aligned joint indices be a,b,c. They are distinct, since two distinct pairwise-intersection vertices lying on one rail cannot occupy the same joint. The three rail segments joining the pairwise intersections have lengths |a-b|, |a-c|, |b-c|. Choose the shortest segment. The alternative route between its endpoints through the third pair-intersection vertex has length equal to the sum of the other two distances, strictly larger. Because every rail pair has only its designated common vertex, the alternative two-rail route has clean interior and can replace the short segment while preserving the endpoint of the host maximum rail. This contradicts maximality. Hence all three simple intersections must be one common aligned gate w.
+
+Now order the corresponding edge ranks r_1<=r_2<=r_3. By downward-completeness 1c8aac8aa4dd, both higher rails R_2,R_3 meet the lowest edge e_1={x_1,v,u_1}. Neither can meet e_1 at x_1: x_1 is the endpoint of R_1, so that would give R_1 and the higher rail the additional common vertex x_1 besides w; moreover w is an internal joint of R_1 and hence w!=x_1. Thus both R_2 and R_3 contain u_1. But then R_2 and R_3 share both w and u_1, contradicting that their intersection is unique. Therefore S has no triangle.
+
+By the extremal bound for triangle-free graphs, |E(S)|<=floor(k^2/4). Since every rail pair intersects, every nonedge of S is a pair with at least two common vertices. Hence their number is at least binom(k,2)-floor(k^2/4).

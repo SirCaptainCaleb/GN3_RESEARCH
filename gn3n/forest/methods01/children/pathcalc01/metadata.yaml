@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-20T19:49:08.718337+00:00"
+id: "pathcalc01"
+last_elevation_revision: null
+last_substantive_worker_id: 603
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  curation: "canonical_path_calculus"
+  semantic_container_seed:
+    atlas_key: "astra-mined-local-tools"
+    headline: "Astra-mined local utility lemmas"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "toolkit"
+origin_worker_id: 673
+parent_id: "methods01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: "Path restriction and intersection calculus: inherited-order behavior, endpoint extenders, common-gap gluing, deletion-order disagreement, support migration, reversal and tight-cycle localization, and the sharp-shell support-graph consequences that arise when order disturbance is sparse."
+simplified_statement: "Tight paths satisfy canonical restriction and intersection rules, together with a maximum-path splicing lemma that forces a two-sided extension."
+substantive_worker_ids:
+  - 673
+  - 603
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Path restriction and intersection calculus"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:21.804103+00:00"
+version: 9

@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T00:00:13.197952+00:00"
+id: "1000695"
+last_elevation_revision: 0
+last_substantive_worker_id: 559
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  blind_submission: true
+  brainstorm_epoch_id: 38
+  brainstorm_epoch_number: 3
+  brainstorm_ordinal: 1
+  brainstorm_slot: 1
+object_type: "research"
+origin_worker_id: 559
+parent_id: "1000694"
+position: 910
+research_interface:
+  first_attack: "Define the weakest transport datum preserved when passing between covers of H-x and H-y on H-{x,y}. Prove a two-deletion compatibility lemma: if the induced transport between x and y is trivial in both directions, then the two local covers admit a common refinement on H-{x,y}. Then test whether transport around a triple x,y,z must compose trivially by the boundary-tournament axioms."
+  global_relevance: "It replaces repeated local surgery by a global compatibility object. If the gluing theorem is right, every existing deletion-cover lemma becomes information about one common obstruction class, and proving that class trivial would close the theorem at arbitrary order."
+  role: "brainstorm_conjecture"
+research_level: "working_unit"
+semantic_container_text: "Deletion-cover cocycle route: compare singleton-swap states around compatibility cycles, separate support-level consistency from genuine order defects, and reduce nontrivial monodromy to omitted-label gap transport and the two-core transposition residue."
+simplified_statement: "Deletion-cover consistency cocycle"
+substantive_worker_ids:
+  - 559
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Deletion-cover consistency cocycle"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:21.804103+00:00"
+version: 6

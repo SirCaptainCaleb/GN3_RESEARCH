@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-28T02:54:05.61281+00:00"
+id: "1000166"
+last_elevation_revision: null
+last_substantive_worker_id: 652
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  changed_bottleneck: true
+  first_unsupported_inference: "robust crossing/order disturbance -> endpoint absorption/direct two-cover/defect span <=2"
+  highest_leverage_next_result: "global nonlocal disturbance-consumption theorem"
+  historical_rehearsal: true
+  rehearsal_date: "2026-09-28"
+object_type: "research"
+origin_worker_id: 652
+parent_id: "1000270"
+position: 0
+research_interface:
+  consumer: "future proof rehearsals and research allocation"
+  given: "current trusted GN3N landscape after certification of eff0db541a72"
+  need: "global disturbance-consumption theorem"
+  produces: "fresh end-to-end proof attempt and sharpened theorem-level bottleneck"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 652
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Proof rehearsal 2026-09-28: disturbance consumption is the remaining global bridge"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:54:05.61281+00:00"
+version: 2

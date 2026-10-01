@@ -1,0 +1,9 @@
+# The hard four-side six-set yields five-window amplification or a fixed-endpoint matching shell
+
+## Statement
+
+Let H be a minimum counterexample and let C=X|P|Q be a spanning three-cover with X={x_0,x_1,x_2,x_3} Hamiltonian and P=(p_1,...,p_m), m>=7. Put U=X union {p_1,p_m}. Assume U is non-Hamiltonian, U-p_1 and U-p_m are non-Hamiltonian, and U-x_i is Hamiltonian for i=0,1,2,3. Define J on X by x_i x_j in E(J) iff U-{x_i,x_j} is Hamiltonian. Then delta(J)>=1. Hence either J has two adjacent edges, giving two Hamiltonian four-windows containing {p_1,p_m} and overlapping in three vertices, so d9a4b66724d2 yields a Hamiltonian five-window or at least four Hamiltonian four-subsets of their union, all with path-cover-two complements; or J has no adjacent edges, in which case J is a perfect matching, giving two Hamiltonian four-windows sharing exactly {p_1,p_m} and whose other two-vertex parts partition X. In every J-edge case, the complementary induced subtournament has path-cover number two.
+
+## Body
+
+Apply d2205c472e75 to the non-Hamiltonian six-set U. Since U-p_1 and U-p_m are non-Hamiltonian while every U-x_i is Hamiltonian, the Hamiltonian-deletion set is exactly X. Its graph J has minimum degree at least one. For every edge x_i x_j, U-{x_i,x_j} is Hamiltonian and its complement in H is non-Hamiltonian with path-cover number two. Since |X|=4 and delta(J)>=1, J has at least two edges. If two edges meet, the corresponding Hamiltonian four-sets both contain p_1,p_m and one common x-label, so they overlap in three vertices; apply d9a4b66724d2. If no two edges meet, the edges form a perfect matching on X. This yields the claimed normal form.

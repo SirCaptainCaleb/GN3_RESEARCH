@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T11:00:00.011752+00:00"
+id: "1000243"
+last_elevation_revision: 0
+last_substantive_worker_id: 706
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 113
+    detail: "Independent reconstruction: absence of order disagreement gives minimum side at least five by 5ca0bb01c7c0. If the minimum side is five and n>=18, one other side has order at least seven; its endpoint enlargement with the five-side would change component orders 5,m to 6,m-1 and decrease Phi by 12-2m<0, so the associated six-set is non-Hamiltonian. Four-of-six plus the four-Hamiltonian-deletions theorem forces order disagreement, contradiction. Hence the minimum side is at least six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:13:53.34224+00:00"
+    worker_id: 718
+  last_audit_observation:
+    claim_id: 113
+    detail: "Independent reconstruction: absence of order disagreement gives minimum side at least five by 5ca0bb01c7c0. If the minimum side is five and n>=18, one other side has order at least seven; its endpoint enlargement with the five-side would change component orders 5,m to 6,m-1 and decrease Phi by 12-2m<0, so the associated six-set is non-Hamiltonian. Four-of-six plus the four-Hamiltonian-deletions theorem forces order disagreement, contradiction. Hence the minimum side is at least six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:13:53.34224+00:00"
+    worker_id: 718
+object_type: "research"
+origin_worker_id: 706
+parent_id: "1000281"
+position: 0
+research_interface:
+  consumer: "quadratic no-trapping route; global size normalization; endpoint transport / defect compression"
+  given: "a trapped Phi-minimal spanning three-cover in a minimum counterexample of order at least eighteen"
+  produces: "minimum component order at least six unless explicit order disagreement is already present"
+research_level: "theorem"
+semantic_container_text: "Large-order minimum-side escalation: from order eighteen onward a trapped quadratic minimum either has side at least six or order disagreement; rooted six-side shells and successive order thresholds then raise the minimum side further or expose explicit local structure."
+simplified_statement: "From order eighteen onward trapped quadratic minima have minimum side six or order disagreement."
+substantive_worker_ids:
+  - 706
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "From order eighteen onward trapped quadratic minima have minimum side six or order disagreement"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:59:57.26387+00:00"
+version: 7

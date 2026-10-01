@@ -1,0 +1,9 @@
+# The two extreme cuts necessarily expose double-deletion support disagreement
+
+## Statement
+
+In the bijective neutral cut-map branch, let u_L,u_R be the bad labels with cuts 1 and lambda-1 and use the normalized extreme covers from astra004cutmapfork. Then the pair C_L,C_R necessarily exposes explicit two-deletion disturbance. More precisely, either u_R is internal in C_L or u_L is internal in C_R, giving an inherited three-part crossing by deletion01, or both are endpoints and the exact covers obtained on H-{u_L,u_R} have different support partitions. Hence the injective extreme-cut branch cannot be completely support/order neutral.
+
+## Body
+
+Write the cut-1 cover as C_L=P_L|Q_L with P_L=(a_0,R_L) and Q_L=(w_L,a_1,...,a_{lambda-1}), where R_L spans U-{u_L,w_L}. Write the cut-(lambda-1) cover as C_R=P_R|Q_R with P_R=(a_0,...,a_{lambda-2},w_R) and Q_R=(S_R,a_{lambda-1}), where S_R spans U-{u_R,w_R}. Apply the two-deletion endpoint trichotomy to C_L,C_R and any exact cover of H-{u_L,u_R}. If u_R is internal in C_L or u_L internal in C_R, the trichotomy gives the asserted three-part crossing. Assume both are endpoints. Deleting them gives exact two-covers T_L,T_R of H-{u_L,u_R}. In T_L, one support contains every A-vertex except a_0 and the other contains a_0 and no other A-vertex: deleting u_R changes only a U-vertex. Thus the intersections of its two supports with A have sizes lambda-1 and 1, with the large A-set exactly A-{a_0}. In T_R the corresponding A-intersections have sizes lambda-1 and 1, with the large A-set exactly A-{a_{lambda-1}}. Since lambda>=3, a support containing lambda-1 A-vertices cannot match one containing only one A-vertex, while the two large A-sets are unequal because a_0 and a_{lambda-1} are distinct. Therefore the unordered support partitions of T_L and T_R differ. The exact-cover disagreement theorem gives reciprocal ordinary support-partition crossings. This is explicit disturbance.

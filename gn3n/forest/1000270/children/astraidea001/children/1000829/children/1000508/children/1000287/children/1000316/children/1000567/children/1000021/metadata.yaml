@@ -1,0 +1,73 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 6
+created_at: "2026-09-27T15:17:29.357499+00:00"
+id: "1000021"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 313
+    detail: "Recorded missing logical dependencies and normalized nonstandard bridge wording; statement and argument unchanged."
+    math_version: 6
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T16:10:17.216391+00:00"
+    worker_id: 627
+  audit_resolution_before_repair: null
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 313
+    detail: "Recorded missing logical dependencies and normalized nonstandard bridge wording; statement and argument unchanged."
+    math_version: 6
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T16:10:17.216391+00:00"
+    worker_id: 627
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Proof excludes the fully crossed branch via reciprocal direct crossings."
+    recorded_at: "2026-09-27T16:09:30.373533+00:00"
+    to_id: "1000637"
+    worker_id: 627
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Normalize nonstandard bridge wording to alternative edge terminology; no mathematical content changes."
+    recorded_at: "2026-09-27T16:09:46.215359+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 627
+  repair_attempt_count: 2
+  repair_reason: null
+  repair_requested_at: "2026-09-27T16:02:04.928234+00:00"
+  small_order_free: true
+  viewpoint: "geometric decay of neutral corridor sizes"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "1000567"
+position: 0
+research_interface:
+  consumer: "global sharp-shell transversal closure"
+  given: "two path components of a lexicographically maximal forest transversal with no reciprocal direct crossings across the pair"
+  need: "iterate the factor-two gap across all components; with component size at most five this bounds the entire featureless forest by eight edges"
+  produces: "the larger corridor has at least twice as many selected edges as the smaller"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lexicographically maximal forest transversals trap every singleton-transfer edge near the larger corridor."
+substantive_worker_ids:
+  - 614
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Lexicographically maximal forest transversals trap every singleton-transfer edge near the larger corridor"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T18:19:19.121473+00:00"
+version: 11

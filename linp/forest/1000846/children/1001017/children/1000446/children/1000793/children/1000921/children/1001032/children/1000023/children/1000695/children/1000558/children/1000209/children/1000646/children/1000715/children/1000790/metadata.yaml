@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 7
+created_at: "2026-09-24T03:27:46.46048+00:00"
+id: "1000790"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: null
+lifecycle_status: "active"
+math_version: 7
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "The Type-A expansion argument and the no-Type-A weighted-defect case both give the stated additive minimum-degree gap above 7/6; the final P_ell-free edge bound follows by S<=(ell-1)n."
+    math_version: 7
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "The Type-A expansion argument and the no-Type-A weighted-defect case both give the stated additive minimum-degree gap above 7/6; the final P_ell-free edge bound follows by S<=(ell-1)n."
+    math_version: 7
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+object_type: "theorem"
+origin_worker_id: 229
+parent_id: "1000715"
+position: 0
+research_interface:
+  consequence: "The seven-sixths potential floor has an explicit additive gap controlled by minimum degree. In a dense near-extremal core this is Theta(ell) total potential, giving an additive Theta(ell) improvement to the edge bound beyond (ell-13/6)n."
+  consumer:
+    - "general Turan upper bound"
+    - "equality-layer induction"
+  given:
+    - "a3bf58adee0d lowest Type-A level expansion"
+    - "7cae1cb001ac seven-sixths floor"
+    - "6a4d9b21f0c3 minimum-degree potential floor"
+  next_need: "Amplify the additive gap to linear-in-n by using the new theorem a05f009dfcef: every near-extremal witness omits Omega(ell) above-threshold vertices. Try to show these high-degree outside vertices cannot all be Type A at low potential, forcing Omega(ell) local defect per witness and perhaps positive-density exceptional mass."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Minimum degree gives an additive gap above the seven-sixths potential floor."
+substantive_worker_ids:
+  - 229
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum degree gives an additive gap above the seven-sixths potential floor"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 11

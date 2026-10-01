@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:17:38.601537+00:00"
+id: "shared_endpoint_fork_compression01"
+last_elevation_revision: 10497
+last_substantive_worker_id: 555
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T18:17:38.601537+00:00"
+  audit_resolution:
+    claim_id: 233
+    detail: "For each Hamiltonian five-set D union {e,f} and D union {e,g}, the certified five-set deletion argument used in sharedendpointmigration_recomp01 says: unless an endpoint deletion leaves a Hamiltonian D-plus-one four-set, at least two deletions d in D leave a Hamiltonian four-set. If none of D union {e}, D union {f}, D union {g} is Hamiltonian, we obtain two subsets of the three-set D, each of size at least two, so they intersect. A common d gives both required Hamiltonian four-sets."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:19:26.738513+00:00"
+    worker_id: 637
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 233
+    detail: "For each Hamiltonian five-set D union {e,f} and D union {e,g}, the certified five-set deletion argument used in sharedendpointmigration_recomp01 says: unless an endpoint deletion leaves a Hamiltonian D-plus-one four-set, at least two deletions d in D leave a Hamiltonian four-set. If none of D union {e}, D union {f}, D union {g} is Hamiltonian, we obtain two subsets of the three-set D, each of size at least two, so they intersect. A common d gives both required Hamiltonian four-sets."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:19:26.738513+00:00"
+    worker_id: 637
+object_type: "research"
+origin_worker_id: 555
+parent_id: "localextend01"
+position: 0
+research_interface:
+  consumer: "shared-endpoint six-window transport; opposite-end endpoint transport"
+  given: "two Hamiltonian five-sets D+e+f and D+e+g sharing a three-core and one exterior label"
+  need: "consume the forked pair when f,g are opposite endpoints of one displayed path"
+  produces: "a Hamiltonian distance-one four-window, or a common two-vertex subcore of D that extends Hamiltonianly with e and either f or g"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two shared-endpoint Hamiltonian five-sets force a distance-one window or a forked opposite-end four-window pair."
+substantive_worker_ids:
+  - 555
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two shared-endpoint Hamiltonian five-sets force a distance-one window or a forked opposite-end four-window pair"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:19:26.738513+00:00"
+version: 4

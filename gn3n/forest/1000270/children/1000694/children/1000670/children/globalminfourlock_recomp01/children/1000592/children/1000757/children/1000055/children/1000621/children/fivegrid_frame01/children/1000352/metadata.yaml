@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T18:25:00.105133+00:00"
+id: "1000352"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 219
+    detail: "Independent check passes. Every displayed endpoint is a non-Hamiltonian extension of the five-set X, since a Hamiltonian extension would transfer one endpoint from a path of order t>=7 to X and decrease Phi by 2t-12. The two-for-two replacement lemma therefore gives a six-set S with at least four Hamiltonian deletions. If S is non-Hamiltonian, astra004fourgooddisagree gives order disagreement. If S is Hamiltonian, 40c4a8aca820 with c=5,h=1 gives delta^2>=d^2+2s-23. Since r>=7 this forces delta>d; opposite parity makes delta-d odd, and delta=d+1 would imply 4r<=24, contradiction. Hence delta>=d+3, q<=r-2 and p>=m+1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:36:22.870638+00:00"
+    worker_id: 569
+  last_audit_observation:
+    claim_id: 219
+    detail: "Independent check passes. Every displayed endpoint is a non-Hamiltonian extension of the five-set X, since a Hamiltonian extension would transfer one endpoint from a path of order t>=7 to X and decrease Phi by 2t-12. The two-for-two replacement lemma therefore gives a six-set S with at least four Hamiltonian deletions. If S is non-Hamiltonian, astra004fourgooddisagree gives order disagreement. If S is Hamiltonian, 40c4a8aca820 with c=5,h=1 gives delta^2>=d^2+2s-23. Since r>=7 this forces delta>d; opposite parity makes delta-d odd, and delta=d+1 would imply 4r<=24, contradiction. Hence delta>=d+3, q<=r-2 and p>=m+1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:36:22.870638+00:00"
+    worker_id: 569
+object_type: "research"
+origin_worker_id: 573
+parent_id: "fivegrid_frame01"
+position: 0
+research_interface:
+  consumer: "sharp half-order five-side normalization; endpoint transport; global quadratic descent"
+  given: "a globally quadratic-minimal spanning three-cover with one five-vertex path and two paths of orders m>=r>=7, plus any pair of their four endpoints"
+  need: "consume the path-length gain by the sharp half-order maximum, or aggregate the order-disagreement witnesses across endpoint pairs"
+  produces: "either a Hamiltonian six-set whose complementary two-cover gains at least one vertex on the large side and loses at least two on the small side, or a bounded six-set carrying explicit order disagreement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every endpoint pair at a global five-side minimum gives strict imbalance gain or six-set order disagreement."
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every endpoint pair at a global five-side minimum gives strict imbalance gain or six-set order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:07:16.525329+00:00"
+version: 9

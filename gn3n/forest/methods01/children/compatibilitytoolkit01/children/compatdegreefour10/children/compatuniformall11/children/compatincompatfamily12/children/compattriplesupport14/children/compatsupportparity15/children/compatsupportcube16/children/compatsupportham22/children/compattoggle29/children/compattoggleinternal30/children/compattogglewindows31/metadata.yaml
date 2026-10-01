@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T13:19:20.263498+00:00"
+id: "compattogglewindows31"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 171
+    detail: "The four noninsertabilities follow from the one-split Hamiltonicity toggle; each base path has sufficient size because the corresponding one-vertex enlargement is non-Hamiltonian, so insert01 Section 3 applies."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:23:20.08573+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 171
+    detail: "The four noninsertabilities follow from the one-split Hamiltonicity toggle; each base path has sufficient size because the corresponding one-vertex enlargement is non-Hamiltonian, so insert01 Section 3 applies."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:23:20.08573+00:00"
+    worker_id: 693
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compattoggleinternal30"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect compression"
+  given: "the one-split toggle with universal noninsertability on four Hamiltonian supports"
+  need: "couple the two c-windows across disjoint cores; first/first gives paired cyclic kernels, second/second gives paired pivots, mixed types give one of each"
+  produces: "four bounded obstruction windows, with the same failed label c appearing on both cores"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The one-split toggle compresses to four bounded insertion-obstruction windows"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The one-split toggle compresses to four bounded insertion-obstruction windows"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 8

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T02:16:03.845915+00:00"
+id: "1000458"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 443
+    detail: "Made explicit the bridge from tau(Gamma)=3 to a minimum-defect-span-three rotation of the same cyclic order, and normalized prohibited exact-cover terminology."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:20:12.459183+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 443
+    detail: "Made explicit the bridge from tau(Gamma)=3 to a minimum-defect-span-three rotation of the same cyclic order, and normalized prohibited exact-cover terminology."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:20:12.459183+00:00"
+    worker_id: 652
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Added the missing explicit bridge from tau(Gamma)=3 to a minimum-defect-span-three rotation of the same cyclic order, and normalized prohibited exact-cover terminology; mathematical conclusion unchanged."
+    recorded_at: "2026-09-28T02:19:58.311991+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 652
+object_type: "research"
+origin_worker_id: 688
+parent_id: "1000313"
+position: 0
+research_interface:
+  consumer: "all-equal cube endpoint probes; deletion-cover dynamics; four-side/double-wrap closure engine"
+  given: "any one-vertex deletion two-cover in a minimum counterexample"
+  need: "feed the resulting canonical four-path plus two-cover complement into the strongest certified four-side transport theorem"
+  produces: "the singleton lift cannot be the {1,1,1} cyclic matching case and therefore has a certified double-wrap rotation"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every deletion singleton lift has a double-wrap rotation"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every deletion singleton lift has a double-wrap rotation"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:20:12.459183+00:00"
+version: 7

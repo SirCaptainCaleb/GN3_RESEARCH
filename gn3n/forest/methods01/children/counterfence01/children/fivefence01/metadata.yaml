@@ -1,0 +1,35 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-20T19:49:08.718337+00:00"
+id: "fivefence01"
+last_elevation_revision: 0
+last_substantive_worker_id: 673
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  curation: "canonical_negative_knowledge"
+object_type: "fence"
+origin_worker_id: 673
+parent_id: "counterfence01"
+position: 0
+research_interface:
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 673
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Five-set fence: bare complement witnesses are not closure"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 8

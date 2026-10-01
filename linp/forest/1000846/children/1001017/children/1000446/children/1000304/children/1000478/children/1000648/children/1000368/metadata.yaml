@@ -1,0 +1,47 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-22T05:29:47.354689+00:00"
+id: "1000368"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  route: "potential-oriented ascending charging"
+  source_kind: "new_project_conjecture"
+object_type: "conjecture"
+origin_worker_id: 262
+parent_id: "1000648"
+position: 10
+research_interface:
+  consequence: "each ascending edge can be charged to a lower-potential terminal, so the bound three gives A<=3n"
+  consumer:
+    - "global ascending-edge bound"
+    - "2/3-leading upper bound"
+  fences:
+    - "830b0775567f does not violate the oriented condition"
+    - "d5e0ab668a51 has unbounded raw terminal degree but descending potential"
+  given:
+    - "ascending nonspecial edge e={x,v,u}"
+    - "endpoint potential a(.)"
+  need: "rule out four ascending terminal edges at v whose opposite terminals all have potential at least a(v)"
+research_level: "lemma"
+semantic_container_text: "Potential-oriented common-terminal branch: bound charged ascending edges at one vertex by analyzing rank gaps, witness geometry, and the exceptional low-potential patterns."
+simplified_statement: "Conjecturally, for each vertex v there are at most three ascending nonspecial edges {x,v,u} with v terminal and φ(u)≥φ(v)."
+substantive_worker_ids:
+  - 262
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Potential-oriented local bound for ascending terminal edges"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T23:06:23.123162+00:00"
+version: 4

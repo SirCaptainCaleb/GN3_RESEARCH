@@ -1,0 +1,9 @@
+# Equality in deletion averaging is exactly the sharp half-order shell
+
+## Statement
+
+Let H be a minimum-order counterexample on n vertices, and let lambda be its maximum tight-path order. Then tau*(H)=2n/(n-1) if and only if n=2lambda+1. In the equality case every optimal dual vertex weighting for the fractional path-cover linear program is uniform.
+
+## Body
+
+# Equality analysis\n\nLet tau*=tau*(H). The certified deletion-averaging bound gives tau*<=2n/(n-1). We characterize equality.\n\nAssume first that tau*=2n/(n-1). Choose an optimal dual weighting w>=0 normalized so that every tight path has weight at most 1. Put W=sum_v w(v)=tau* and mu=min_v w(v).\n\nBy weightednearhalf01, H has a tight path of weight at least (W-mu)/2. Dual feasibility bounds every path weight by 1, hence\n\n(W-mu)/2 <= 1,\n\nso W<=2+mu. On the other hand mu<=W/n. Therefore\n\nW <= 2+W/n,\n\nwhich rearranges to W<=2n/(n-1). Since equality in the final bound is assumed, equality must hold throughout. In particular mu=W/n. Every vertex weight is at least mu and their sum is n mu=W, so every vertex has weight exactly W/n=2/(n-1). Thus every optimal dual weighting is uniform; the argument applies to any optimal dual solution.\n\nLet lambda be the maximum order of a tight path. Dual feasibility of the uniform optimum gives\n\nlambda * 2/(n-1) <= 1,\n\nso lambda<=(n-1)/2. The certified half-order longest-path bound bcfa72bc175f gives lambda>=ceil((n-1)/2). Hence n is odd and lambda=(n-1)/2, equivalently n=2lambda+1.\n\nConversely, if n=2lambda+1, fractionalsharpshell01 gives\n\ntau*(H)=2+1/lambda=2n/(n-1).\n\nTherefore equality in the universal deletion-averaging fractional bound occurs exactly in the sharp half-order shell, and there the dual extremizer has no hidden nonuniform structure: it is forced to be uniform.

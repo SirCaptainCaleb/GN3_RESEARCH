@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:54:05.694751+00:00"
+id: "local_four_interior_kernel_or_cross01"
+last_elevation_revision: 0
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T18:54:05.694751+00:00"
+  audit_resolution:
+    claim_id: 151
+    detail: "Independently checked the argument. Applying the endpoint-pair repartition/lock lemma to each long component is legitimate under the all-bad singleton hypothesis; because |P|,|Q|>=6, the Hamiltonian-interior alternative would strictly decrease Phi, so local minimality forces w to be noninsertable in both inherited interior paths. The certified failed-insertion dichotomy then gives either a proper Hamiltonian K4/K5 (whose complement is non-Hamiltonian pc2 by minimum-counterexample calculus) or, when both obstructions are second-type, the stated doubled cross triples on pivots p in P° and q in Q°."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:55:10.595223+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 151
+    detail: "Independently checked the argument. Applying the endpoint-pair repartition/lock lemma to each long component is legitimate under the all-bad singleton hypothesis; because |P|,|Q|>=6, the Hamiltonian-interior alternative would strictly decrease Phi, so local minimality forces w to be noninsertable in both inherited interior paths. The certified failed-insertion dichotomy then gives either a proper Hamiltonian K4/K5 (whose complement is non-Hamiltonian pc2 by minimum-counterexample calculus) or, when both obstructions are second-type, the stated doubled cross triples on pivots p in P° and q in Q°."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:55:10.595223+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T18:57:14.40748+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 708
+parent_id: "localextend01"
+position: 0
+research_interface:
+  consumer: "local four-side no-trapping; deletion-state transport; defect compression"
+  given: "a componentwise Phi-minimal four-side with both complement paths of order at least six, in the complete endpoint-pair family branch"
+  need: "consume the doubled interior cross barrier, or show repeated neutral transport cannot avoid the Hamiltonian-kernel branch"
+  produces: "a proper Hamiltonian 4/5-kernel with pc2 complement, or a doubled cross barrier through the distinguished omitted four-side label between the two path interiors"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A locally minimal complete endpoint family yields an interior Hamiltonian kernel or doubled cross barrier."
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A locally minimal complete endpoint family yields an interior Hamiltonian kernel or doubled cross barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:57:14.40748+00:00"
+version: 9

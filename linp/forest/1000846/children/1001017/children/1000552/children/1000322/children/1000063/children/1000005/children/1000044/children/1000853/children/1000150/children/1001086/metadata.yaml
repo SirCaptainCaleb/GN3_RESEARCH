@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T00:45:43.083134+00:00"
+id: "1001086"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000150"
+position: 0
+research_interface:
+  consequence: "Reduces the last rank-five obstruction to three explicit residual triangle types, with exact high-neighbor pattern on every low."
+  consumer:
+    - "Class III rank-five branch"
+  given:
+    - "213f75e9692a residual model"
+    - "d9c5b28c09a0 high-low obstruction"
+  next_need: "Eliminate the h=0 types (HHH+6 HLL and LLL+3 HLL+3 HHL), then the h=1 type (5 HLL+2 HHL), using the mutual no-P3 conditions from the terminal matchings."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Triangle-type classification of the Class-III nine-vertex residual obstruction."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Triangle-type classification of the Class-III nine-vertex residual obstruction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

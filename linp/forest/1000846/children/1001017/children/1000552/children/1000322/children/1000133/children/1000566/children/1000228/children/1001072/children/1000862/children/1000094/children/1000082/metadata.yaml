@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T02:20:21.401532+00:00"
+id: "1000082"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000094"
+position: 0
+research_interface:
+  consequence: "Zero slack is not a general path-forest case: H-D is a matching of 2k/3 triples and the DXX layer is a k-regular 1-factorized graph on 2k vertices."
+  consumer:
+    - "grand induction"
+    - "zero-slack rainbow/matching route"
+  given:
+    - "|D|=k critical core"
+    - "1663a127e081 zero-slack star saturation"
+  next_need: "Exploit the additional partition of V(G) into 2k/3 triples. Show a k-regular k-colored graph on 2k vertices, augmented by those disjoint triple-edges, contains a linear path of forbidden length; adjacent equal-color pairs and triple switches may be used."
+  role: "zero-slack collapse"
+research_level: "lemma"
+semantic_container_text: "Zero-slack critical-core program: reduce equality cores to one-factorized graph structure plus disjoint triples, then use connector and contracted-graph structure to force long paths."
+simplified_statement: "Zero-slack critical cores collapse to a one-factorized graph plus disjoint triples."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Zero-slack critical cores collapse to a one-factorized graph plus disjoint triples"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:36:19.47265+00:00"
+version: 6

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T23:47:05.747723+00:00"
+id: "five_three_no_sixcycle01"
+last_elevation_revision: 9533
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Dictionary packaging: the title uses ambiguous 'shell', and the statement uses 'good deletion pair'. Replace with explicit Hamiltonian five-set / Hamiltonian-deletion language."
+      recorded_at: "2026-10-01T00:04:15.206954+00:00"
+      worker_id: 737
+  audit_request_reason: "Independent reconstruction requested: verify the six-cycle checkerboard forces opposite fixed-pair orientation classes and hence a complementary Hamiltonian 4|4 partition."
+  audit_request_recorded_at: "2026-09-29T23:48:13.572119+00:00"
+  audit_resolution:
+    claim_id: 58
+    detail: "Independent check passed. In the certified six-cycle normal form, for fixed A0 each root a,d forms a non-Hamiltonian fixed-pair four-set with each vertex of the bad block A2. Thus the roots lie in one A0-orientation class and A2 in the other, making both A0+{a,d} and A0+A2 Hamiltonian. Cyclic application also makes A1+A2 Hamiltonian, giving a forbidden complementary Hamiltonian 4|4 partition."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 58
+    detail: "Independent check passed. In the certified six-cycle normal form, for fixed A0 each root a,d forms a non-Hamiltonian fixed-pair four-set with each vertex of the bad block A2. Thus the roots lie in one A0-orientation class and A2 in the other, making both A0+{a,d} and A0+A2 Hamiltonian. Cyclic application also makes A1+A2 Hamiltonian, giving a forbidden complementary Hamiltonian 4|4 partition."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:00:50.852152+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 579
+parent_id: "five_three_sixcycle_normalform01"
+position: 0
+research_interface:
+  consumer: "order-thirteen 3|5|5 plateau closure; neutral-cycle termination"
+  given: "the neutral forward 3|5 exchange graph on an eight-vertex support with no Hamiltonian 4|4 partition"
+  need: "avoid a cycle-length ladder; use the external third-side mobility or a global invariant to consume all remaining cycles at once"
+  produces: "exclusion of directed six-cycles by a fixed-pair orientation-class contradiction"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The neutral three-five forward exchange graph has no directed six-cycle."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The neutral three-five forward exchange graph has no directed six-cycle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:04:15.206954+00:00"
+version: 9

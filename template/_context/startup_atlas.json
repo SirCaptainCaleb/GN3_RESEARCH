@@ -1,0 +1,60 @@
+{
+  "core_map": [
+    {
+      "atlas_height": "2",
+      "audit_status": "not_required",
+      "category": "proof_level",
+      "depth": 0,
+      "descendant_container_count": 0,
+      "id": "methods01",
+      "mathematical_status": "proposal",
+      "member_count": 1,
+      "obstructed": false,
+      "obstructed_count": 0,
+      "pending": false,
+      "pending_count": 0,
+      "subtree_object_count": 1,
+      "subtree_obstructed_count": 0,
+      "subtree_pending_count": 0,
+      "summary": "Reusable project toolkit: definitions, lemmas, methods, computational techniques, and auxiliary results that support multiple research routes.",
+      "support_status": "unchecked",
+      "title": "Toolkit"
+    },
+    {
+      "atlas_height": "1",
+      "audit_status": "not_required",
+      "category": "abstraction",
+      "depth": 0,
+      "descendant_container_count": 0,
+      "id": "brainstorms01",
+      "member_count": 1,
+      "obstructed": false,
+      "obstructed_count": 0,
+      "pending": false,
+      "pending_count": 0,
+      "subtree_object_count": 1,
+      "subtree_obstructed_count": 0,
+      "subtree_pending_count": 0,
+      "summary": "Exploratory ideas, conjectures, speculative routes, and partially developed approaches that may seed future research branches.",
+      "support_status": "unchecked",
+      "title": "Brainstorms"
+    }
+  ],
+  "coverage": {
+    "automatic_landmark_count": 0,
+    "core_map_count": 2,
+    "editorial_landmark_count": 0,
+    "full_container_count": 2,
+    "omitted_hyperlocal_count": 0,
+    "startup_container_count": 2
+  },
+  "deep_landmarks": [],
+  "navigation": {
+    "full_atlas": "atlas()",
+    "note": "Core breadth is exhaustive through a project-configured conceptual depth. Deeper editorially promoted containers are always retained; additional landmarks are selected from mathematical mass and unresolved activity with project-configured branch balancing. Deep landmarks carry their semantic ancestry. Use atlas() when entering a branch or when omitted detail may matter.",
+    "raw_index": "atlas('all',24)",
+    "subtree": "atlas(object_or_container_id)"
+  },
+  "purpose": "First-contact research briefing: enough breadth and depth for a strong fresh mathematician to choose among plausible routes, understand why the main route is where it is, and recognize reusable machinery without loading the entire conceptual Atlas.",
+  "repository_revision": 9
+}

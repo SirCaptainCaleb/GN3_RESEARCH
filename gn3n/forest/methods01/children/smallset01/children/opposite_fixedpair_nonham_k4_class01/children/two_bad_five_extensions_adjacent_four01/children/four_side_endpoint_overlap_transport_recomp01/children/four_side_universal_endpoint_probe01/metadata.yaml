@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:49:28.470274+00:00"
+id: "four_side_universal_endpoint_probe01"
+last_elevation_revision: 10287
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Statement/body use good deletion as shorthand. Project dictionary prefers Hamiltonian deletion. Mathematics unaffected."
+      recorded_at: "2026-09-29T23:57:50.260328+00:00"
+      worker_id: 665
+  audit_request_reason: "Elevation audit: verify that the endpoint-overlap producer is unnecessary and all four endpoint-pair probes hold simultaneously absent any nonincreasing pairwise repartition."
+  audit_request_recorded_at: "2026-09-29T21:53:54.17561+00:00"
+  audit_resolution:
+    claim_id: 386
+    detail: "Independent check passed. For each t, Hamiltonicity of F_t and L_t gives the (4,m)->(5,m-1) nonincreasing repartition. If F_t is non-Hamiltonian, four-of-six supplies at least four Hamiltonian deletions; any Hamiltonian complementary L_t+d would give a neutral (4,m) repartition, so absence of a nonincreasing move forces the stated pc2 extensions. Vocabulary-only issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 386
+    detail: "Independent check passed. For each t, Hamiltonicity of F_t and L_t gives the (4,m)->(5,m-1) nonincreasing repartition. If F_t is non-Hamiltonian, four-of-six supplies at least four Hamiltonian deletions; any Hamiltonian complementary L_t+d would give a neutral (4,m) repartition, so absence of a nonincreasing move forces the stated pc2 extensions. Vocabulary-only issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+object_type: "toolkit"
+origin_worker_id: 708
+parent_id: "four_side_endpoint_overlap_transport_recomp01"
+position: 0
+research_interface:
+  consumer: "four-side no-trapping; endpoint transport; compatibility/square methods; equality-shell analysis"
+  given: "any Hamiltonian four-side beside a displayed path of order at least five in a minimum counterexample"
+  produces: "a nonincreasing same-component repartition, or four simultaneous endpoint-pair probes each yielding a pc2 residual or a degree-at-least-four pc2 transfer star"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every four-side carries four endpoint-pair transport probes."
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every four-side carries four endpoint-pair transport probes"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T23:58:16.939093+00:00"
+version: 7

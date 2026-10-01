@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-10-01T06:26:47.400991+00:00"
+id: "1000883"
+last_elevation_revision: 10710
+last_substantive_worker_id: 952
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "1000883"
+  audit_packaging_issues:
+    -
+      note: "Standardization alias repaired: durable statement/body now use canonical 'order disagreement'."
+      recorded_at: "2026-10-01T06:53:10.689858+00:00"
+      worker_id: 1016
+  audit_request_reason: "High-leverage collapse of the hard four-side endpoint branch. Verify 1000880 adjacency elimination, the 1000715 five-union split, astra004fourgooddisagree on the non-Hamiltonian five-union, and the local-minimum corollary via 1000878."
+  audit_request_recorded_at: "2026-10-01T06:26:56.8652+00:00"
+  audit_resolution:
+    claim_id: 1017
+    detail: "Terminology-only repair: replaced deprecated alias 'relative-order disagreement' with canonical 'order disagreement' in statement/body. The theorem remains the direct locally-minimal corollary of certified 1000878 followed by the verified hard-shell theorem 1000882."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T06:53:46.184027+00:00"
+    worker_id: 1016
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 1017
+    detail: "Terminology-only repair: replaced deprecated alias 'relative-order disagreement' with canonical 'order disagreement' in statement/body. The theorem remains the direct locally-minimal corollary of certified 1000878 followed by the verified hard-shell theorem 1000882."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T06:53:46.184027+00:00"
+    worker_id: 1016
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair: replace deprecated alias relative-order disagreement with canonical order disagreement in the proof body."
+    recorded_at: "2026-10-01T06:53:02.251953+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 1016
+object_type: "research"
+origin_worker_id: 952
+parent_id: "1000882"
+position: 2
+research_interface:
+  consumer: "quadratic no-trapping; grand-theorem proof composition; five-side transport"
+  given: "a pairwise-component Phi-minimal spanning three-cover with a four-side beside a path of order at least seven"
+  produces: "a Hamiltonian five-side with pc2 complement or explicit relative-order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A locally Phi-minimal 4|m state with m>=7 forces a Hamiltonian five-side with pc2 complement or order disagreement."
+substantive_worker_ids:
+  - 952
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every locally minimal four-side beside a path of order at least seven yields a five-side or order disagreement"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T06:53:46.184027+00:00"
+version: 10

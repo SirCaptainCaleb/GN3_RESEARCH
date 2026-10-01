@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T20:25:32.59832+00:00"
+id: "1000126"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 451
+    detail: "Order-reversal bits telescope mod 2 around the cycle; parity conclusion is immediate and correctly scoped."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+  last_audit_observation:
+    claim_id: 451
+    detail: "Order-reversal bits telescope mod 2 around the cycle; parity conclusion is immediate and correctly scoped."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+object_type: "research"
+origin_worker_id: 678
+parent_id: "1000108"
+position: 2
+research_interface:
+  given: "a support-consistent cyclic family of deletion covers and a pair surviving every cover"
+  need: "analyze order transport involving the omitted labels, where telescoping pair parity is not directly available"
+  produces: "even parity of relative-order reversals for that pair around the cycle"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Persistent pair-order disagreement has even parity around a deletion-cover cycle"
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Persistent pair-order disagreement has even parity around a deletion-cover cycle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:52:31.232696+00:00"
+version: 6

@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:47:07.148138+00:00"
+id: "five_side_endpoint_core_m6_01"
+last_elevation_revision: 10287
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T21:48:27.465218+00:00"
+  audit_resolution:
+    claim_id: 386
+    detail: "Independent check passed. A Hamiltonian endpoint extension gives the stated (5,m)->(6,m-1) move with Delta Phi=12-2m. If both endpoint six-sets are non-Hamiltonian, four-of-six gives at least three Hamiltonian replacement labels in X for each endpoint; two 3-subsets of a 5-set intersect, yielding the common label."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 386
+    detail: "Independent check passed. A Hamiltonian endpoint extension gives the stated (5,m)->(6,m-1) move with Delta Phi=12-2m. If both endpoint six-sets are non-Hamiltonian, four-of-six gives at least three Hamiltonian replacement labels in X for each endpoint; two 3-subsets of a 5-set intersect, yielding the common label."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+object_type: "toolkit"
+origin_worker_id: 708
+parent_id: "1000610"
+position: 0
+research_interface:
+  consumer: "five-side transport; equality-shell navigation; deletion-generated descent; endpoint transport"
+  given: "any spanning three-cover with a five-vertex component beside a path of order at least six"
+  produces: "a neutral endpoint transfer at order six or strict descent above six, unless one four-core of the five-side extends Hamiltonianly with both path endpoints"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A five-side beside a path of order at least six gives nonincreasing transport or a common endpoint core"
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A five-side beside a path of order at least six gives nonincreasing transport or a common endpoint core"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T23:58:16.939093+00:00"
+version: 5

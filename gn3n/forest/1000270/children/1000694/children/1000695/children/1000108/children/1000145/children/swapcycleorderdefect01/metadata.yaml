@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T20:37:46.548613+00:00"
+id: "swapcycleorderdefect01"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 451
+    detail: "Support-cycle closure plus the four-cover full-compatibility gluing threshold forces at least one purely order-theoretic incompatibility; argument is sound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+  last_audit_observation:
+    claim_id: 451
+    detail: "Support-cycle closure plus the four-cover full-compatibility gluing threshold forces at least one purely order-theoretic incompatibility; argument is sound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+object_type: "research"
+origin_worker_id: 678
+parent_id: "1000145"
+position: 1
+research_interface:
+  given: "a singleton-swap cycle of at least four deletion covers in a no-two-cover boundary tournament"
+  need: "localize that forced order defect to omitted-label transport intervals and consume it into a merge or defect compression"
+  produces: "a support clique containing at least one genuine relative-order disagreement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every singleton-swap cycle in a counterexample carries a genuine order defect"
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every singleton-swap cycle in a counterexample carries a genuine order defect"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:52:31.232696+00:00"
+version: 8

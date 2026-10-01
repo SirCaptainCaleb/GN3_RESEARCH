@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 5
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-24T02:53:03.83584+00:00"
+id: "1000549"
+last_elevation_revision: null
+last_substantive_worker_id: 207
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d551d03b-efcc-4e5f-9300-785ff8fd63b3"
+    detail: "Checked witness survival under deleting S outside the witness path, the density calculation, and the minimal-counterexample conclusion. The repaired statement correctly stops at existence of a degree-at-most-d survivor and makes no unjustified Hall-expansion claim."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:29:42.21613+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "d551d03b-efcc-4e5f-9300-785ff8fd63b3"
+    detail: "Checked witness survival under deleting S outside the witness path, the density calculation, and the minimal-counterexample conclusion. The repaired statement correctly stops at existence of a degree-at-most-d survivor and makes no unjustified Hall-expansion claim."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:29:42.21613+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Editorial cleanup after substantive repair: restored clear set-difference prose and updated metadata to the corrected packet-deletion/lift-back role; mathematics unchanged."
+    recorded_at: "2026-09-25T01:43:10.077363+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "equality-layer packet deletion and lift-back"
+  uses:
+    - "1000972"
+    - "1000757"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000265"
+position: 0
+research_interface:
+  consequence: "Cheap witness-avoiding packets do not contradict minimality; instead they expose low-degree survivors. The former Hall-expansion conclusion is invalid without an additional lift-back argument."
+  consumer:
+    - "equality-layer induction"
+    - "outside-packet lift-back route"
+  given:
+    - "vertex-minimal counterexample to strengthened S_ell"
+    - "fixed nonspecial witness path"
+  next_need: "Exploit the guaranteed low-degree survivor after a cheap packet deletion. For singleton packets use the exact threshold bridge; for larger packets control how many deleted incidences can account for the survivor degree drop."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Cheap outside packets force a low-degree survivor."
+substantive_worker_ids:
+  - 185
+  - 207
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Cheap outside packets force a low-degree survivor"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

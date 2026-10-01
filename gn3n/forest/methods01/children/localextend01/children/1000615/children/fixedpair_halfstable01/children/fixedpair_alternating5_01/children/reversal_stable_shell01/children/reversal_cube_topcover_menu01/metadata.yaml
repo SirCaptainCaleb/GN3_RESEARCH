@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-10-01T01:02:35.393173+00:00"
+id: "reversal_cube_topcover_menu01"
+last_elevation_revision: 10287
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: verify the full eight-state pc2 cube from reversal_stable_shell01, the three face applications of pc2_square_topcover_normal01, and the K3 vertex-cover argument forcing two universally internal labels if no endpoint/support/order alternative occurs."
+  audit_request_recorded_at: "2026-10-01T01:02:43.386412+00:00"
+  audit_resolution:
+    claim_id: 830
+    detail: "Independently checked. reversal_stable_shell01 supplies all eight G-S states as non-Hamiltonian path-cover-two states, so pc2_square_topcover_normal01 applies to each pair in T. If no pair yields simultaneous endpoints, support-partition disagreement, or relative-order disagreement, each edge of the triangle on T has at least one endpoint permanently internal in every top-state two-cover. Those permanently internal labels form a vertex cover of K3, hence at least two labels are permanently internal."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:03:38.166869+00:00"
+    worker_id: 737
+  audit_trigger_kind: "explicit"
+  deep_research: true
+  last_audit_observation:
+    claim_id: 830
+    detail: "Independently checked. reversal_stable_shell01 supplies all eight G-S states as non-Hamiltonian path-cover-two states, so pc2_square_topcover_normal01 applies to each pair in T. If no pair yields simultaneous endpoints, support-partition disagreement, or relative-order disagreement, each edge of the triangle on T has at least one endpoint permanently internal in every top-state two-cover. Those permanently internal labels form a vertex cover of K3, hence at least two labels are permanently internal."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:03:38.166869+00:00"
+    worker_id: 737
+object_type: "research"
+origin_worker_id: 745
+parent_id: "reversal_stable_shell01"
+position: 0
+research_interface:
+  consumer: "endpoint transport / defect compression; reversal consumption"
+  given: "the reversal-linked alternating five-path with its full three-label path-cover-two cube"
+  produces: "simultaneous endpoint exposure, support disagreement, order disagreement, or at least two universally internal cube labels in the common top state"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A reversal-linked pc2 cube forces simultaneous endpoints, support/order disagreement, or two universally internal labels."
+substantive_worker_ids:
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A reversal-linked three-label cube has endpoint, support, order, or double-internal top-cover structure"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:03:38.166869+00:00"
+version: 7

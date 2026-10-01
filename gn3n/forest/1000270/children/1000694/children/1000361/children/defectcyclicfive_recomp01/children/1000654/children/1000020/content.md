@@ -1,0 +1,9 @@
+# The three-plus-two cyclic certificate has a three-state quadratic-potential landscape
+
+## Statement
+
+Let H be a boundary tournament with pc(H)>2 and let a minimum-span cyclic defect certificate have run type {3,2}. Let r0-r1-r2-r3 be the four cut vertices of the three-edge run in cyclic order, and s0-s1-s2 the three cut vertices of the two-edge run. The three minimum vertex covers of the defect graph are C0={r0,r2,s1}, C1={r1,r2,s1}, and C2={r1,r3,s1}. Label the component-order triple of the cyclic-interval cover from C0 as (a,b,c), where a is the interval from r0 to r2, b from r2 to s1, and c from s1 to r0. Then the three canonical covers have order triples (a,b,c), (a-1,b,c+1), and (a,b-1,c+1). Their successive quadratic-potential changes are 2(c-a+1) and 2(a-b). In particular all three canonical covers have the same Phi if and only if a=b=c+1, in which case their order triples are precisely the three cyclic placements of (r,r,r-1).
+
+## Body
+
+The minimum-cover description follows from the path components of the defect graph: a three-edge path has exactly the three minimum vertex covers {r0,r2}, {r1,r2}, {r1,r3}, while a two-edge path has the unique minimum cover {s1}. By the cyclic-interval cover theorem 5d81c7bd0407, these give three spanning three-covers and consecutive states differ by one legal pairwise repartition. Moving the cut r0 forward to r1 transfers exactly one boundary vertex from the interval r0--r2 to the interval s1--r0, so C1 has sizes (a-1,b,c+1). Moving r2 forward to r3 then transfers exactly one boundary vertex from the interval r2--s1 to the interval r1--r2, so C2 has sizes (a,b-1,c+1). The Phi differences are immediate: Phi(C1)-Phi(C0)=2(c-a+1), and Phi(C2)-Phi(C1)=2(a-b). Equality of all three potentials is equivalent to a=c+1 and a=b; writing r=a gives the three profiles (r,r,r-1), (r-1,r,r), and (r,r-1,r).

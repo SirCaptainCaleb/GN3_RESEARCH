@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T20:32:52.039434+00:00"
+id: "recomp_four_side_long_01"
+last_elevation_revision: 0
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 153
+    detail: "Recomposed directly from 7af43d05be78 followed by 8eabe59de572 on the x_0-to-x_3 interval-path branch, replacing window/connector shorthand by the exact Hamiltonian-set, interval-path, and reverse-triple alternatives."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:36:28.507691+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 153
+    detail: "Recomposed directly from 7af43d05be78 followed by 8eabe59de572 on the x_0-to-x_3 interval-path branch, replacing window/connector shorthand by the exact Hamiltonian-set, interval-path, and reverse-triple alternatives."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:36:28.507691+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Recomposition precision repair only: cite 7af43d05be78 and 8eabe59de572 directly and replace window/connector shorthand by the exact Hamiltonian-set, interval-path, and reverse-triple alternatives."
+    recorded_at: "2026-09-28T20:36:05.460614+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  recomposition_audit:
+    classified_at: "2026-09-28T20:33:58.820375+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 586
+parent_id: "1000556"
+position: 0
+research_interface:
+  consumer: "long-side analysis at a four-side quadratic minimum"
+  given: "a Phi-minimal spanning three-cover with four-vertex path X=(x_0,x_1,x_2,x_3) and a chosen component R of order at least six"
+  produces: "a Hamiltonian four/five-set, opposite ordering of x_0,x_3 by two tight paths, a tight x_0-to-x_3 interval path of internal span two through four, or one explicit reverse triple at the attempted replacement boundary"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Each long side of a four-side Phi-minimum yields a Hamiltonian four/five-set, order disagreement, a short interval path, or a reverse triple."
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Each long side of a four-side Phi-minimum yields a Hamiltonian four/five-set, order disagreement, a short interval path, or a reverse triple"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:36:28.507691+00:00"
+version: 8

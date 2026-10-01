@@ -1,0 +1,38 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T21:33:34.793329+00:00"
+id: "1000530"
+last_elevation_revision: 0
+last_substantive_worker_id: 596
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 596
+parent_id: "pathcutstatefence01"
+position: 0
+research_interface:
+  consumer: "dual obstruction brainstorm; endpoint-transport / defect compression"
+  given: "the terminal-pair representation fence and the certified equivalence between two-covers and spanning orderings of defect span at most two"
+  need: "find a finite dual certificate for minimum defect span three whose witness relations contradict or are reducible by boundary-tournament structure"
+  produces: "a faithful compressed reformulation of the dual route in terms of minimum defect span"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Pivot the dual route from terminal-pair cuts to defect-span certificates"
+substantive_worker_ids:
+  - 596
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Pivot the dual route from terminal-pair cuts to defect-span certificates"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:32:50.580403+00:00"
+version: 3

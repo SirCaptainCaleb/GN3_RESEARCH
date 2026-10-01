@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:17:33.782554+00:00"
+id: "nonham_five_punctured_pc2_cube02"
+last_elevation_revision: 9251
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Proof uses good singletons as shorthand for Hamiltonian deletions. Project dictionary prefers Hamiltonian deletion. Mathematics unaffected."
+      recorded_at: "2026-09-29T23:57:50.260328+00:00"
+      worker_id: 665
+  audit_request_reason: "Independent check requested for the route-free punctured five-label pc2 cube theorem."
+  audit_request_recorded_at: "2026-09-29T21:17:48.293613+00:00"
+  audit_resolution:
+    claim_id: 386
+    detail: "Independent check passed. For 2<=|S|<=4, F-S has order at most three and is Hamiltonian; Hamiltonicity of K+S would two-cover H, so K+S is non-Hamiltonian and proper, hence pc2. For singleton d in the Hamiltonian-deletion set, F-d is Hamiltonian and the same complement argument applies. The 25+at-least-4 count is correct. Vocabulary-only issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 386
+    detail: "Independent check passed. For 2<=|S|<=4, F-S has order at most three and is Hamiltonian; Hamiltonicity of K+S would two-cover H, so K+S is non-Hamiltonian and proper, hence pc2. For singleton d in the Hamiltonian-deletion set, F-d is Hamiltonian and the same complement argument applies. The 25+at-least-4 count is correct. Vocabulary-only issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T23:58:16.939093+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-01T05:29:40.003289+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "smallset01"
+position: 0
+research_interface:
+  consumer: "five-set transport; common-core deletion-cover comparison; compatibility/cube methods; overlap and reversal routes"
+  given: "any non-Hamiltonian five-vertex induced subtournament in a minimum counterexample"
+  produces: "all 25 two-, three-, and four-label pc2 extensions of the complement, plus at least four of its five singleton extensions"
+research_level: "lemma"
+semantic_container_text: "Non-Hamiltonian five-set punctured-cube branch: a non-Hamiltonian five-set forces an almost-complete path-cover-two deletion cube on the complementary labels, with at most one Hamiltonian singleton exception."
+simplified_statement: "A non-Hamiltonian five-set forces an almost-complete path-cover-two cube on its complement."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A non-Hamiltonian five-set forces an almost-complete path-cover-two cube on its complement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 11

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T03:50:44.475819+00:00"
+id: "1000253"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Replaced prohibited proof-process wording with standard last-vertex terminology; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Replaced prohibited proof-process wording with standard last-vertex terminology; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited proof-process word \"physical\" with standard last-vertex language; no mathematical content changed."
+    recorded_at: "2026-09-24T21:07:34.242425+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000283"
+position: 0
+research_interface:
+  consequence: "The {b,c} witness branch reduces completely to the clean private-g4 entrance state."
+  consumer:
+    - "p=5 4455 elimination"
+  given:
+    - "3d216d397f78 rigid two-contact theta"
+    - "e6eec0f670ed low-low witnesses"
+  next_need: "Eliminate the clean state: h={x,v,u}, g4={c,x,d}, e5={d,v,w}, with x,d potential 4 and c potential 3, while f_b,f_c close g1-g2-g3 and their high terminals lie in g1. Determine whether u meets g1; if not, g1-g2-g3-g4-h is a rank-five witness for h through x. Use the other rank-five edge e5 or one closing chord to force a second h-entrance."
+  role: "p=5 4455 two-contact elimination"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The two-contact p=5 4455 low-low state is impossible."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The two-contact p=5 4455 low-low state is impossible"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

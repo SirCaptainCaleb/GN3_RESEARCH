@@ -1,0 +1,9 @@
+# A neutral three-five six-cycle forces a cyclic cross-hub five-shell
+
+## Statement
+
+Assume the two-hub three-pair normal form of five_three_sixcycle_normalform01, with hubs a,d and pair-blocks A_0,A_1,A_2 labelled so that A_0 is the good deletion pair against A_2, A_1 is good against A_0, and A_2 is good against A_1, identically for both hubs. Then for every i modulo three and every x in A_{i-1}, the five-set G_{i,x}={a,d} union A_i union {x} is Hamiltonian. More precisely, G_{i,x} has a Hamilton path whose two endpoints both lie in A_i union {x}. Thus each cross-hub four-core K_i={a,d} union A_i has both vertices of A_{i-1} as Hamiltonian singleton extensions. Altogether a six-cycle forces six cross-hub Hamiltonian five-sets, cyclically linking the three pair-blocks, in addition to the six original one-hub Hamiltonian five-sides.
+
+## Body
+
+Fix i modulo three and x in A_{i-1}; let y be the other vertex of A_{i-1}. In the six-cycle normal form, for each hub h in {a,d}, the five-set F_h={h} union A_i union A_{i-1} is Hamiltonian and the pair A_i is good while A_{i-1} is bad for Hamiltonian deletion. In particular deleting y from F_h leaves the four-set {h} union A_i union {x}, and because y belongs to the bad pair this four-set is non-Hamiltonian. Therefore both four-sets T union {a} and T union {d} are non-Hamiltonian for the three-set T=A_i union {x}. Apply the controlled two-bad-four-extension lemma in localextend01 with exterior vertices a,d. It gives a Hamilton tight path on T union {a,d}=G_{i,x}, and its two endpoints both lie in T=A_i union {x}. This works for both choices x in A_{i-1} and all three i.

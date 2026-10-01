@@ -1,0 +1,9 @@
+# The two-plus-one-plus-one defect type also enters the four-side obstruction engine
+
+## Statement
+
+Let H be a minimum counterexample and let pi=(v_1,...,v_n) be a minimum-defect-span ordering whose cyclic defect graph has run multiset {2,1,1}. Then the two-edge run is exactly the pair of wrap defects at centers v_n and v_1. Hence S=(v_2,v_1,v_n,v_{n-1}) is a tight four-path and H-S has path-cover number two. If n>=15, then either a spanning three-cover with side S admits a legal strict decrease of the quadratic component-size potential, or the two endpoints of S realize the universal paired-noninsertion finite transport menu on one complementary path.
+
+## Body
+
+Type {2,1,1} lies in the linear 101 branch of 0d475452037a. For the original cyclic cut q_0, deleting q_0 from Gamma leaves exactly the two singleton linear defect edges. Since Gamma has four defect edges total, q_0 must delete exactly two defect edges. It cannot lie in either singleton run, and it cannot be an endpoint of the two-edge run, because either choice would delete only one defect edge. Therefore q_0 is the middle vertex of the two-edge run. The two edges incident with q_0 are precisely the two wrap-defect edges, so both wrap triples (v_{n-1},v_n,v_1) and (v_n,v_1,v_2) are non-tight. Boundary antisymmetry gives the consecutive tight triples (v_1,v_n,v_{n-1}) and (v_2,v_1,v_n), hence S=(v_2,v_1,v_n,v_{n-1}) is a tight four-path. By mincex01, the proper Hamiltonian set S has complement of path-cover number two; choose a two-cover P|Q of H-S. If n>=15 then |P|+|Q|=n-4>=11, so one of P,Q has order at least six. Apply foursidedescentobstruction to S together with that long component. Either Phi strictly decreases in one legal pairwise repartition, or the two displayed endpoints of S are simultaneously noninsertable into one common inherited middle path. In the latter case a8c9883902b1 supplies its finite paired-noninsertion menu.

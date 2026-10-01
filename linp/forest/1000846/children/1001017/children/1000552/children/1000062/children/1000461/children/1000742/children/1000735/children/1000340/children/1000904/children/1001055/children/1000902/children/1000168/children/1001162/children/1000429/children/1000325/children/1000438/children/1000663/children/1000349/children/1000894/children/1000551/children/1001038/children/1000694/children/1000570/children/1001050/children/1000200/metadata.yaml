@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-25T21:24:19.091312+00:00"
+id: "1000200"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "856dc915-1ca8-4001-995c-ea28f04add99"
+    detail: "The earlier singleton contact gives a(c_e)>=p-r+1 by the central-window bound. The separated-contact hypothesis makes g_1,...,g_a,e,f a wrong-entrance path ending in f, forcing a<=s-3; combining yields r+s>=p+4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:45:02.432716+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "856dc915-1ca8-4001-995c-ea28f04add99"
+    detail: "The earlier singleton contact gives a(c_e)>=p-r+1 by the central-window bound. The separated-contact hypothesis makes g_1,...,g_a,e,f a wrong-entrance path ending in f, forcing a<=s-3; combining yields r+s>=p+4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:45:02.432716+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1001050"
+position: 0
+research_interface:
+  consequence: "The rank-sum p+4 cost of separated singleton contacts is universal; entrance/terminal contact type is irrelevant."
+  consumer:
+    - "U_11 color-terminal collision analysis"
+    - "common-terminal singleton packing"
+    - "paid strict-gap local analysis"
+  given:
+    - "49080cbf1371 singleton central-window localization"
+    - "two contact-multiplicity-one ascending terminal edges with separated contact intervals"
+  next_need: "Replace uses of the mixed-only separated-contact lemma by this contact-type-free form. For two exact U_11 collision contacts, separated intervals now force adjacent rank sum at least r_i+3; overlapping intervals give a host linear 3-cycle."
+  strengthens: "1001050"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Separated singleton contacts force rank sum at least host rank plus four without a contact-type hypothesis."
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Separated singleton contacts force rank sum at least host rank plus four without a contact-type hypothesis"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

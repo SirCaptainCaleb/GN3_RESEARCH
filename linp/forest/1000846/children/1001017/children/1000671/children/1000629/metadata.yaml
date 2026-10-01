@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-21T19:24:02.781196+00:00"
+id: "1000629"
+last_elevation_revision: null
+last_substantive_worker_id: 234
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "c341c42c-0075-4ab8-a4c3-10d009c9f38a"
+    detail: "Checked independently: terminal-pair graph is simple by linearity, b=v_T-c+beta<=n+beta, and the algebra from beta<=Cs+Dn plus 2m+s<=(2ell-3)n gives exactly the stated bound and 4/5 specialization."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T19:42:59.210094+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_audit_observation:
+    claim_id: "c341c42c-0075-4ab8-a4c3-10d009c9f38a"
+    detail: "Checked independently: terminal-pair graph is simple by linearity, b=v_T-c+beta<=n+beta, and the algebra from beta<=Cs+Dn plus 2m+s<=(2ell-3)n gives exactly the stated bound and 4/5 specialization."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T19:42:59.210094+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_premise_impact_check:
+    checked_at: "2026-09-23T14:08:01.366257+00:00"
+    note: "Premise replacement checked: 599c2c0d2adf preserves the special-edge hinge formerly supplied by 9f0fae709a7c; the unique-entrance premise is unchanged."
+    source_ids:
+      - "1000693"
+      - "1000405"
+      - "1000512"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+object_type: "lemma"
+origin_worker_id: 234
+parent_id: "1000671"
+position: 1
+research_interface:
+  calibration: "beta(T)<=s implies coefficient 4/5; beta(T)=O(n) implies coefficient 2/3"
+  consumer: "general leading-coefficient improvement"
+  given:
+    - "unique entrance for each nonspecial edge"
+    - "special-edge hinge 2m+s<=(2ell-3)n"
+  need: "bound the cycle rank of the terminal-pair graph in terms of s and n"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "If the terminal-pair graph satisfies β(T) <= C s + D n, then m <= [2(C+1)ℓ-3(C+1)+D+1]/(2C+3) · n, giving a leading coefficient below 1 for fixed C,D."
+substantive_worker_ids:
+  - 234
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal-pair cycle-rank reduction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 8

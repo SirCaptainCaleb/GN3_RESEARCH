@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-25T23:31:23.0361+00:00"
+id: "proof_rehearsal_g000000000019"
+last_elevation_revision: 0
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: null
+metadata:
+  completed_revision: 1462
+  details:
+    first_unsupported_inference: "Convert the now-unconditional endpoint disagreement/local obstruction witness into a spanning two-cover, endpoint absorption, or defect-span-at-most-two ordering."
+    gap_id: "1000741"
+    summary: "End-to-end rehearsal using current certified composition plus supported theorem 9a7e3c1f5b20 reaches the same first unsupported inference. Minimum-counterexample deletion covers, failed insertion localization, defect-span equivalence, positional lag, and unconditional opposite-end disagreement all check as supported inputs. The first unsupported step remains e34dc91e238d: consume a support-partition crossing / reversed common edge / reversing triple / tight cycle / bounded insertion window into a direct two-cover, valid endpoint absorption, or a spanning ordering of defect span <=2. No earlier supported theorem was found broken."
+  gap_id: "1000741"
+  generation: 19
+  opened_revision: 1448
+  reported_outcome: "completed"
+object_type: "proof_rehearsal"
+origin_worker_id: null
+parent_id: "proof_rehearsals"
+position: 19
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+support_reason: null
+support_status: "unchecked"
+title: "Proof rehearsal 19 — 2026-09-25 23:31 UTC"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T16:56:38.614765+00:00"
+version: 2

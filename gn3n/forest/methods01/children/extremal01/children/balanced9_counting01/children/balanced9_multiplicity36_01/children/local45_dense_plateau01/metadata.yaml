@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T05:13:32.563407+00:00"
+id: "local45_dense_plateau01"
+last_elevation_revision: 9789
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: every balanced 4|5 partition of the fixed nine-set gives an equal-Phi state in the same trapped component, so the certified two-label long-endpoint replacement theorem should apply at all >=36 states; verify the >=60 swap adjacency transfer too."
+  audit_request_recorded_at: "2026-09-30T05:13:32.563407+00:00"
+  audit_resolution:
+    claim_id: 398
+    detail: "Independent reconstruction passed. Every balanced 4|5 partition of W gives a one-move repartition with P fixed, so all corresponding states lie in the same trapped component and have identical Phi; hence each is Phi-minimal there. balanced9_swap_density01 supplies at least 60 reciprocal-swap adjacencies among at least 36 balanced states. Applying certified 8e138afbc628 separately to each such 4|5|P state yields the stated two-label synchronized endpoint package. Local mathematics is correct; support may remain dependency-held while balanced9_swap_density01 is pending."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:27:42.143339+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 398
+    detail: "Independent reconstruction passed. Every balanced 4|5 partition of W gives a one-move repartition with P fixed, so all corresponding states lie in the same trapped component and have identical Phi; hence each is Phi-minimal there. balanced9_swap_density01 supplies at least 60 reciprocal-swap adjacencies among at least 36 balanced states. Applying certified 8e138afbc628 separately to each such 4|5|P state yields the stated two-label synchronized endpoint package. Local mathematics is correct; support may remain dependency-held while balanced9_swap_density01 is pending."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:27:42.143339+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 579
+parent_id: "balanced9_multiplicity36_01"
+position: 0
+research_interface:
+  consumer: "large-order four/five-side no-trapping; endpoint transport; plateau synchronization"
+  given: "a trapped componentwise Phi-minimal three-cover of profile 4|5|a with a at least seven"
+  need: "aggregate the repeated endpoint-replacement labels across the dense finite network into a strict descent, merge, or defect-span compression"
+  produces: "a same-component finite network of at least 36 equal-Phi 4|5 states and at least 60 reciprocal swaps, with at least two synchronized opposite-end replacement labels at every state"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every trapped local four-five plateau contains thirty-six states with synchronized long-endpoint replacements."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every trapped local four-five plateau contains thirty-six states with synchronized long-endpoint replacements"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 7

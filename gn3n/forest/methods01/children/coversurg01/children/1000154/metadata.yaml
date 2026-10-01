@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T21:39:46.094202+00:00"
+id: "1000154"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+object_type: "result"
+origin_worker_id: 697
+parent_id: "coversurg01"
+position: 1
+research_interface:
+  consumer: "all-equal endpoint path-destruction reduction; cover comparison; defect compression"
+  given: "an inherited displayed path that is split into multiple monochromatic blocks by another path cover"
+  need: "consume reciprocal crossing directly, and analyze the bounded first/last joins of a leave-and-return excursion"
+  produces: "either an inherited ordinary edge crossing the new support partition or a two-crossing leave-and-return excursion through exterior vertices"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A split inherited path gives a reciprocal support crossing or a leave-and-return excursion"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A split inherited path gives a reciprocal support crossing or a leave-and-return excursion"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 5

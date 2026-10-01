@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-22T19:31:42.526871+00:00"
+id: "1001111"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "proposal"
+origin_worker_id: 195
+parent_id: "1000469"
+position: 0
+research_interface:
+  consumer:
+    - "dense-core all-special conjecture"
+    - "global nonspecial-edge path-length route"
+  fence: "mobile ears alone do not automatically lengthen a path; clean ears are pendant and single-contact ears require global compatibility"
+  given:
+    - "far-end transfer lemma"
+    - "equal-rank transfer terminal adjacency"
+    - "transfer q-cycle equality geometry"
+  missing_obligation: "eliminate a closed chain of flat equal-rank ascending transfers, or prove consecutive distinct transfer cycles splice past the 3q/2 scale"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: "The residual flat-transfer obstruction consists of chains or cycles of equal-rank ascending terminal edges glued by extremal q-cycles."
+substantive_worker_ids:
+  - 195
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Flat-transfer cycle chain as the residual boundary obstruction"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 7

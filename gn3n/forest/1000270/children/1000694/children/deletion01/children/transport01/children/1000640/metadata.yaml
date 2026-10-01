@@ -1,0 +1,37 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-20T23:18:39.074815+00:00"
+id: "1000640"
+last_elevation_revision: 0
+last_substantive_worker_id: 668
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 668
+parent_id: "transport01"
+position: 1
+research_interface:
+  given: "any exact one-vertex-deletion two-cover"
+  need: "couple the hooks across the two components to obtain a two-cover or defect-span compression"
+  produces: "two explicit bounded endpoint hooks on each component, synchronized through the omitted vertex"
+research_level: "lemma"
+semantic_container_text: "Endpoint-hook forcing package: deletion covers impose canonical hooks at both ends of the complementary path, and the descendants combine these hooks into local connector, barrier, and transport configurations."
+simplified_statement: "Endpoint hook forcing."
+substantive_worker_ids:
+  - 668
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint hook forcing"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:38.352961+00:00"
+version: 6

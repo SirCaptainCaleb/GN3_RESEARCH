@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T18:40:16.693197+00:00"
+id: "astra003twogoodrotation"
+last_elevation_revision: 0
+last_substantive_worker_id: 576
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 149
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T18:44:41.549868+00:00"
+    worker_id: 662
+  last_audit_observation:
+    claim_id: 149
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T18:44:41.549868+00:00"
+    worker_id: 662
+object_type: "research"
+origin_worker_id: 576
+parent_id: "astra003sixfourpattern"
+position: 0
+research_interface:
+  consumer: "Astra idea 003; well-founded defect-window transport; endpoint-transport / defect compression"
+  given: "the exact-two-good-core boundary case after a successful far-end exchange"
+  need: "orient the remaining quadratic-neutral plateau rotations with a secondary well-founded potential; consume the three-gap insertion window"
+  produces: "relative-order disagreement, a bounded insertion obstruction, a three-gap common insertion window, or a 4|(m+1) excursion whose four-side descent either creates synchronized obstructions or returns exactly to minimum Phi"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The exact-two-good-core branch also reduces to bounded disturbance or a quadratic-neutral 4-to-5 rotation"
+substantive_worker_ids:
+  - 576
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The exact-two-good-core branch also reduces to bounded disturbance or a quadratic-neutral 4-to-5 rotation"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:49:37.466067+00:00"
+version: 15

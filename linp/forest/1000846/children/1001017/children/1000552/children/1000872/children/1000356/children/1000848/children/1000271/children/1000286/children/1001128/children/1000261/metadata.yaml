@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T06:06:23.781287+00:00"
+id: "1000261"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "349471b9-068f-4d8c-8cdf-06724378c160"
+    detail: "Localized terminology repair only: replaced prohibited endpoint wording with standard ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:18.509656+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  last_audit_observation:
+    claim_id: "349471b9-068f-4d8c-8cdf-06724378c160"
+    detail: "Localized terminology repair only: replaced prohibited endpoint wording with standard ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:18.509656+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:16:56.604109+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  role: "two-rail maximum-path lens exchange"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1001128"
+position: 0
+research_interface:
+  consequence: "A two-vertex rail overlap cannot carry arbitrary geometry. Every internal elementary theta cell is exactly balanced; any length imbalance must be attached to one of the low-potential source endpoints."
+  consumer:
+    - "0-1-1 rank-pair block"
+    - "source-rail theta route"
+  given:
+    - "two maximum source rails with a clean elementary lens"
+  next_need: "Use that the overlap vertices in f8803379f9a3 are labeled sources/terminals of the offending edges. Show an internal balanced lens plus either of the other two forced transversal edges creates an unbalanced sublens; or reduce to endpoint-lens states where a source x_j lies on the opposite rail and exploit phi(x_j)=rank(e_j)-1."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Clean lenses between maximum source rails are balanced."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Clean lenses between maximum source rails are balanced"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

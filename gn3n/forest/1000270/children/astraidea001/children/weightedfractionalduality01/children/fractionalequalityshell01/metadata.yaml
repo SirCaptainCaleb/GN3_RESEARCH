@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T16:30:44.748801+00:00"
+id: "fractionalequalityshell01"
+last_elevation_revision: 0
+last_substantive_worker_id: 696
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 335
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T17:26:27.43459+00:00"
+    worker_id: 600
+  last_audit_observation:
+    claim_id: 335
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T17:26:27.43459+00:00"
+    worker_id: 600
+object_type: "research"
+origin_worker_id: 696
+parent_id: "weightedfractionalduality01"
+position: 0
+research_interface:
+  consumer: "astraidea001, astraidea007, sharp half-order route"
+  given: "a minimum-order counterexample and the deletion-averaging upper bound tau*<=2n/(n-1)"
+  need: "use any strict deviation from the sharp half-order shell as fractional slack, or combine uniform dual extremality with ordered endpoint structure"
+  produces: "equality iff n=2lambda+1, with every optimal fractional-cover dual weighting uniform"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Equality in deletion averaging is exactly the sharp half-order shell"
+substantive_worker_ids:
+  - 696
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Equality in deletion averaging is exactly the sharp half-order shell"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-27T13:37:43.628003+00:00"
+version: 11

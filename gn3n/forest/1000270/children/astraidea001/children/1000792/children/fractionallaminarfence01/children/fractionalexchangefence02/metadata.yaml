@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-27T14:25:50.994248+00:00"
+id: "fractionalexchangefence02"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 286
+    detail: "Recast the claim as an evidence-backed route assessment rather than a proof-grade counterexample theorem, and replaced ambiguous support-exchange/uncrossing shorthand by the concrete replacement transformation."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:45:16.983011+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 311
+    detail: "Revalidated unchanged math-v3 route assessment against newly certified fractionallaminarfence01 math v3. The upstream change preserves and clarifies the same laminar obstruction and union-Hamiltonian two-support replacement fence, so the evidence-backed radius-two route assessment remains valid."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:49:59.723555+00:00"
+    worker_id: 616
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only follow-up after trust repair: avoid ambiguous 'positive support', 'support exchange', and bare 'uncrossing' terminology by stating the concrete fractional/replacement transformation."
+    recorded_at: "2026-09-27T15:08:53.955098+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 616
+  last_premise_impact_check:
+    checked_at: "2026-09-27T15:49:59.723555+00:00"
+    note: "Revalidated unchanged math-v3 route assessment against newly certified fractionallaminarfence01 math v3. The upstream change preserves and clarifies the same laminar obstruction and union-Hamiltonian two-support replacement fence, so the evidence-backed radius-two route assessment remains valid."
+    source_ids:
+      - "fractionallaminarfence01"
+    worker_id: 616
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "fractionallaminarfence01"
+position: 0
+research_interface:
+  consumer: "fractional laminarization route"
+  given: "the proved sharp-half-order laminar obstruction together with the evidence-level radius-two replacement counterexample record"
+  need: "prove a sharp-half-order-specific replacement theorem or use a more global optimum-preserving transformation"
+  produces: "a trust-correct route fence: the corpus has no proof-grade universal radius-two replacement theorem, and evidence points against one"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The current radius-two exchange evidence cannot serve as a proof-grade fractional transformation theorem."
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The current radius-two exchange evidence cannot serve as a proof-grade fractional transformation theorem"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-27T15:53:04.281532+00:00"
+version: 10

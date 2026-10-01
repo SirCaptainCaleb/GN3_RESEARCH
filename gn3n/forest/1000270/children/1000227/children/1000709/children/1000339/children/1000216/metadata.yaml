@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-28T17:04:26.38433+00:00"
+id: "1000216"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 133
+    detail: "Recorded the mathematical dependencies on 6f72075b0b54, astra004fourgooddisagree, and mincex01 that the proof explicitly invokes. Mathematical statement and proof unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:14:59.755478+00:00"
+    worker_id: 586
+  last_audit_observation:
+    claim_id: 133
+    detail: "Recorded the mathematical dependencies on 6f72075b0b54, astra004fourgooddisagree, and mincex01 that the proof explicitly invokes. Mathematical statement and proof unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:14:59.755478+00:00"
+    worker_id: 586
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Hamiltonian six-window branch uses minimum-counterexample complement calculus to conclude the complement is non-Hamiltonian of path-cover number two."
+    recorded_at: "2026-09-28T20:11:55.379414+00:00"
+    to_id: "mincex01"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 659
+parent_id: "1000339"
+position: 0
+research_interface:
+  consumer: "small deletion-side closure; six-window transport; endpoint-transport / defect-compression"
+  given: "an exact deletion cover with one component of order three, four, or five, together with four synchronized good omission labels"
+  need: "couple the two end outputs; if both are Hamiltonian six-windows, exploit their common four-label core and opposite placement along Q"
+  produces: "independently at each end of the fixed opposite path: a six-vertex order-disagreement kernel or a Hamiltonian six-window with non-Hamiltonian pc-two complement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Four synchronized omission labels force order disagreement or Hamiltonian six-windows at both ends"
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four synchronized omission labels force order disagreement or Hamiltonian six-windows at both ends"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:14:59.755478+00:00"
+version: 7

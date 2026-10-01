@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 6
+created_at: "2026-09-23T02:59:32.56053+00:00"
+id: "1000401"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: null
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "395c593c-1060-4e6c-9532-d7559bd7f48b"
+    detail: "Faithful recomposition of the alternate Type-B break, forced nonlocal final-cell blocker, and terminal-theta source package."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:46:06.157994+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "395c593c-1060-4e6c-9532-d7559bd7f48b"
+    detail: "Faithful recomposition of the alternate Type-B break, forced nonlocal final-cell blocker, and terminal-theta source package."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:46:06.157994+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    backfilled: true
+    classified_at: "2026-09-23T03:45:16.180482+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "1000948"
+    - "1001140"
+    - "1000167"
+    - "1000199"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "1000336"
+position: 0
+research_interface:
+  consequence: "The canonical Type-B alternate break exposes either a nonlocal final-cell blocker or a terminal theta with branch lengths q-2,1,2."
+  consumer:
+    - "Type-B boundary elimination"
+    - "unified loss-one theta obstruction"
+    - "sharp ascending-rank conjecture"
+  given:
+    - "boundary q=delta"
+    - "loss-one Type-B sink"
+    - "exact Type-B saturation"
+    - "deficiency-two sink normal form"
+  next_need: "Exploit the nonlocal blocker or derive a common minimum-degree escape lemma for the resulting theta."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A Type-B loss-one alternate break forces either a nonlocal double blocker or a terminal theta containing cycles of lengths q−1, q, and 3."
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Type-B alternate break forces a nonlocal blocker or terminal theta"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 16

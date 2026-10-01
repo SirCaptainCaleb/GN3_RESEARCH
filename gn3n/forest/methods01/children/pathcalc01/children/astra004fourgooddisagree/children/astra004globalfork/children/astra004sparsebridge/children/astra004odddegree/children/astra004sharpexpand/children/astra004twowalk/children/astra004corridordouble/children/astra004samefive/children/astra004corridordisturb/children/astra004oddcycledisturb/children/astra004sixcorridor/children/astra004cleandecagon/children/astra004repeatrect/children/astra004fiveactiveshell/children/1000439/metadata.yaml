@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+created_at: "2026-09-28T15:20:34.311748+00:00"
+id: "1000439"
+last_elevation_revision: 0
+last_substantive_worker_id: 706
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 126
+    detail: "The sole maximality contradiction comes from the false unconditional extender theorem e425e6ca5fe0."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+    worker_id: 586
+  audit_resolution_before_repair: null
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 126
+    detail: "The sole maximality contradiction comes from the false unconditional extender theorem e425e6ca5fe0."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+    worker_id: 586
+  last_failure:
+    reason: "The sole maximality contradiction comes from the false unconditional extender theorem e425e6ca5fe0."
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+  repair_attempt_count: 1
+  repair_reason: "The contradiction to maximum path order depends entirely on e425e6ca5fe0 Hamiltonizing C together with e,a,b from two same-side extenders and one opposite extender. The valid replacement theorem has a doubled-barrier alternative, so the stated lambda+1 path is not established."
+  repair_requested_at: "2026-09-28T20:02:06.195567+00:00"
+object_type: "research"
+origin_worker_id: 706
+parent_id: "astra004fiveactiveshell"
+position: 0
+research_interface:
+  consumer: "all-clean degree-two shell; repeated-label corridors; Astra-004 longest-support route"
+  given: "three sharp-shell Hamiltonian lambda-supports with one common ordered lambda-2 core, one fixed active endpoint label, and three labels successively occupying the opposite endpoint"
+  produces: "a tight path of order lambda+1; hence such a same-core active-pair star is impossible"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three same-core star supports exceed the sharp-shell longest order."
+substantive_worker_ids:
+  - 706
+support_reason: "The sole maximality contradiction comes from the false unconditional extender theorem e425e6ca5fe0."
+support_status: "blocked"
+title: "Three same-core star supports exceed the sharp-shell longest order"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:02:49.847884+00:00"
+version: 6

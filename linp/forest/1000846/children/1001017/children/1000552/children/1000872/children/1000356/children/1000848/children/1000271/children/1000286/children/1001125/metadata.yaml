@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-25T21:40:50.533573+00:00"
+id: "1001125"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "fc067b20-8310-4d85-b743-45b3e626537a"
+    detail: "If f misses R_e, then R_e,e,f is a linear (q+1)-edge path: R_e avoids both terminals v,u of e, f is disjoint from R_e by assumption, and distinct linear edges e,f meet exactly at their common terminal v. For phi(f)=q this is overlong; for phi(f)=q+1 it is a longest f-ending path entering f through terminal v rather than unique entrance y. Thus f meets R_e. Reversing the roles, if e misses R_f then R_f,f,e has length phi(f)+1>phi(e)=q, contradiction. All endpoint and nonconsecutive-intersection conditions are satisfied."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:34:11.157787+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "fc067b20-8310-4d85-b743-45b3e626537a"
+    detail: "If f misses R_e, then R_e,e,f is a linear (q+1)-edge path: R_e avoids both terminals v,u of e, f is disjoint from R_e by assumption, and distinct linear edges e,f meet exactly at their common terminal v. For phi(f)=q this is overlong; for phi(f)=q+1 it is a longest f-ending path entering f through terminal v rather than unique entrance y. Thus f meets R_e. Reversing the roles, if e misses R_f then R_f,f,e has length phi(f)+1>phi(e)=q, contradiction. All endpoint and nonconsecutive-intersection conditions are satisfied."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:34:11.157787+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1000286"
+position: 0
+research_interface:
+  consequence: "The complete foreign-edge transversality phenomenon is already a two-edge consecutive-rank fact and does not require assignment or a four-edge block."
+  consumer:
+    - "odd tight U_11 color-terminal collision"
+    - "two-rank source-path overlap"
+    - "0-1-1 local analysis"
+  given:
+    - "two source-clean ascending nonspecial edges sharing a terminal"
+    - "edge ranks equal or consecutive"
+  next_need: "Combine the two mandatory cross-contacts with unique-intersection rigidity. A source hit forces at least two common vertices of the two source paths; if both source paths intersect uniquely, both cross-contacts must be through the opposite terminals."
+  strengthens: "1000286"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Consecutive-rank source-clean common-terminal edges cross each other."
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Consecutive-rank source-clean common-terminal edges cross each other"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

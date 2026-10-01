@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-30T12:53:36.703049+00:00"
+id: "local45_eight_lock_gap_network01"
+last_elevation_revision: 10160
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Elevation audit: verify the eight-lock synchronization, especially the a>=11 threshold in the all-second-type distinct-gap branch and the pairwise spacing conclusions."
+  audit_request_recorded_at: "2026-09-30T12:53:49.337499+00:00"
+  audit_resolution:
+    claim_id: 422
+    detail: "Added the omitted equal-gap Hamiltonian four-set form: two locked labels together with the two vertices of their common displayed gap."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-30T13:46:28.704065+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 422
+    detail: "Added the omitted equal-gap Hamiltonian four-set form: two locked labels together with the two vertices of their common displayed gap."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-30T13:46:28.704065+00:00"
+    worker_id: 665
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Add the omitted equal-gap Hamiltonian four-set form (two locked labels plus the two vertices of one displayed gap) to outcome (1), matching the proof and certified spacing trichotomy."
+    recorded_at: "2026-09-30T13:46:12.74281+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 708
+parent_id: "local45_allnine_common_lock01"
+position: 0
+research_interface:
+  consumer: "large-order no-trapping; failed-insertion synchronization; endpoint transport / defect compression"
+  given: "a trapped componentwise Phi-minimum of profile 4|5|a with a>=7"
+  produces: "for a<=11, a mixed Hamiltonian 4/5-window or universal cyclic four-vertex obstruction; otherwise a nine-label injective second-type gap network with explicit pairwise cross/interval structure"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "All nine plateau labels are locked; below long-path order 12 this forces a bounded Hamiltonian/cyclic obstruction, otherwise their second-type gaps are all distinct."
+substantive_worker_ids:
+  - 708
+  - 745
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Nine common plateau locks force a bounded configuration below order twelve or a nine-gap network"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:59:49.30824+00:00"
+version: 13

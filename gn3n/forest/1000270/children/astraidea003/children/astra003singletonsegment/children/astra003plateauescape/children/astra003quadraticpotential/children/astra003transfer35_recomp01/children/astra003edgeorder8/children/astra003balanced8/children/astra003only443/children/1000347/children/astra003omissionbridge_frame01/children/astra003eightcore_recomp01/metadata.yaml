@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T01:13:42.972812+00:00"
+id: "astra003eightcore_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 187
+    detail: "Faithful recomposition of the targeted-singleton and eight-label-shell chain. It preserves: at least two P-candidates; for each failed direct candidate, at least three reachable Q-singletons; existence of a reachable excluded-target 3|4|4 state with the other excluded labels split one per four-side; simultaneous Hamiltonicity of P+t and Q+t; the common extender/common failed extender with exact bad-deletion sets {u,s} and {v,s}; and the final mutual three-by-three bad-extension conclusion Q+a,Q+b,Q+c and P+d,P+e,P+f non-Hamiltonian."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:14:46.567689+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 187
+    detail: "Faithful recomposition of the targeted-singleton and eight-label-shell chain. It preserves: at least two P-candidates; for each failed direct candidate, at least three reachable Q-singletons; existence of a reachable excluded-target 3|4|4 state with the other excluded labels split one per four-side; simultaneous Hamiltonicity of P+t and Q+t; the common extender/common failed extender with exact bad-deletion sets {u,s} and {v,s}; and the final mutual three-by-three bad-extension conclusion Q+a,Q+b,Q+c and P+d,P+e,P+f non-Hamiltonian."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:14:46.567689+00:00"
+    worker_id: 694
+  maintenance_of_certified_bounded_argument: true
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T01:14:07.334533+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "astra003omissionbridge_frame01"
+position: 0
+research_interface:
+  consumer: "Astra-003 omission-surface expansion"
+  given: "targeted 3|4|4 singleton attempt; specialized further to an eight-reachable-singleton shell"
+  produces: "candidate/spread dichotomy, simultaneous t-extensions, common extender/common failed extender, and mutual three-by-three bad-extension core"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Targeted singleton attempts spread broadly, and an eight-label shell forces a mutual three-by-three bad-extension core."
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Targeted singleton attempts spread broadly, and an eight-label shell forces a mutual three-by-three bad-extension core"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:14:46.567689+00:00"
+version: 7

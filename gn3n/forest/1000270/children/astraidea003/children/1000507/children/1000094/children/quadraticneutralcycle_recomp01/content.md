@@ -1,0 +1,9 @@
+# Quadratic-minimal pairwise-repartition plateaux are balanced, obstructed, or contain a neutral-transfer cycle
+
+## Statement
+
+Let C be a Phi-minimal three-cover in a trapped connected component of the pairwise-repartition graph. If some displayed pair A,B has |A|>=|B|+2, then the two endpoints of A are noninsertable into B and satisfy the generic paired-noninsertion structural alternative. Otherwise the component orders differ by at most one. In a nonuniform equitable Phi-level component, if the paired-noninsertion alternative never occurs on displayed gap-one pairs, every such pair admits a Phi-neutral endpoint transfer; the resulting neutral-transfer graph has minimum degree at least two and therefore contains a simple cycle.
+
+## Body
+
+A size gap at least two is exactly the endpoint-noninsertion regime from the quadratic transfer barrier, so the paired-noninsertion theorem supplies the generic witness immediately. If all size gaps are at most one and the profile is nonuniform, every displayed gap-one pair falls under the neutral endpoint-transport lemma: either the same generic obstruction appears or one endpoint transfers from the larger path to the smaller, preserving Phi. In the witness-free branch, a profile {b+1,b,b} has one larger path and two smaller partners, while {b+1,b+1,b} has one smaller path and two larger partners. The two gap-one pairs yield two distinct neutral-transfer neighbors, because they change different support pairs. A neutral transfer preserves the same nonuniform equitable size multiset and the same Phi-level, so the same argument applies at every reached state. Thus the finite neutral-transfer graph has minimum degree at least two and therefore contains a simple cycle. No per-label repetition conclusion is asserted: path-cover components are not fixed labeled bins, so a closed cycle may permute the three support classes while individual transferred labels cross only once.

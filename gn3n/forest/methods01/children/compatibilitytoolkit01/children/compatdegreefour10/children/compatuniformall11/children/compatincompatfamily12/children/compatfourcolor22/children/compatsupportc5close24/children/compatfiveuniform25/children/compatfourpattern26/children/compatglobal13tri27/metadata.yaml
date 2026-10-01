@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T04:43:16.842569+00:00"
+id: "compatglobal13tri27"
+last_elevation_revision: 0
+last_substantive_worker_id: 578
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 112
+    detail: "In the low-degree branch, 4-colorability gives an independent set of four for m>=13; either it contains a uniform incompatibility triple or compatfourpattern26 gives exactly the P4/2K2 alternatives."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:24:46.163409+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 112
+    detail: "In the low-degree branch, 4-colorability gives an independent set of four for m>=13; either it contains a uniform incompatibility triple or compatfourpattern26 gives exactly the P4/2K2 alternatives."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:24:46.163409+00:00"
+    worker_id: 693
+object_type: "research"
+origin_worker_id: 578
+parent_id: "compatfourpattern26"
+position: 0
+research_interface:
+  consumer: "reduce the remaining compatibility-density branch to two explicit mixed support/order configurations"
+  given: "at least 13 chosen deletion labels in a minimum counterexample"
+  produces: "synchronized endpoint structure, a uniform incompatibility triple, or a P4/2K2 support-compatibility pattern on four pairwise-incompatible covers"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Thirteen deletion labels force endpoint structure, a uniform triple, or one of two four-cover patterns"
+substantive_worker_ids:
+  - 578
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Thirteen deletion labels force endpoint structure, a uniform triple, or one of two four-cover patterns"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 9

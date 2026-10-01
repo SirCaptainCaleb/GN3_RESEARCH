@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T14:44:50.657479+00:00"
+id: "threecoverlexmax01"
+last_elevation_revision: 0
+last_substantive_worker_id: 644
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 391
+    detail: "Restricted pairwise repartitions to two-component covers of the selected pair-union. Under project semantics a one-component two-cover is a direct escape to a global two-cover, not an adjacent three-cover state."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T14:47:30.566175+00:00"
+    worker_id: 616
+  hypotheses_removed:
+    - "no reachable two-cover"
+    - "Astra-003 conjecture framing"
+  last_audit_observation:
+    claim_id: 391
+    detail: "Restricted pairwise repartitions to two-component covers of the selected pair-union. Under project semantics a one-component two-cover is a direct escape to a global two-cover, not an adjacent three-cover state."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T14:47:30.566175+00:00"
+    worker_id: 616
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Small definitional repair: the three-cover move graph compares only two-component repartitions. A one-component cover of the selected union is a direct global two-cover escape, not an adjacent three-cover state."
+    recorded_at: "2026-09-27T14:46:41.850476+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 616
+  origin_ids:
+    - "repartlex01"
+  proof_change: "unchanged proof with natural move-graph hypotheses only"
+object_type: "result"
+origin_worker_id: 644
+parent_id: "coversurg01"
+position: 0
+research_interface:
+  consumer: "three-cover reconfiguration and plateau analysis"
+  given: "a lexicographically maximal spanning three-cover in its pairwise-repartition component"
+  produces: "sharp interval constraints on every pair-union two-cover"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lexicographic maxima confine pairwise repartition sizes."
+substantive_worker_ids:
+  - 644
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Lexicographic maxima confine pairwise repartition sizes"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 5

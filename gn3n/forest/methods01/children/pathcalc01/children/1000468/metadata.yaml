@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T13:14:14.463074+00:00"
+id: "1000468"
+last_elevation_revision: 0
+last_substantive_worker_id: 706
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 116
+    detail: "PASS: pairwise compatibility defines a common K-order and a well-defined gap for each special label. If the three gaps are not all equal, the merged word has no consecutive triple containing all three special labels, so every consecutive triple is inherited from one deletion path. Thus non-Hamiltonicity forces one common gap."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:18:16.599015+00:00"
+    worker_id: 718
+  last_audit_observation:
+    claim_id: 116
+    detail: "PASS: pairwise compatibility defines a common K-order and a well-defined gap for each special label. If the three gaps are not all equal, the merged word has no consecutive triple containing all three special labels, so every consecutive triple is inherited from one deletion path. Thus non-Hamiltonicity forces one common gap."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:18:16.599015+00:00"
+    worker_id: 718
+object_type: "research"
+origin_worker_id: 706
+parent_id: "pathcalc01"
+position: 0
+research_interface:
+  consumer: "seven-set shell synchronization; path comparison; local defect compression"
+  given: "three Hamilton paths obtained by omitting one of three special labels, pairwise compatible on intersections"
+  produces: "Hamiltonian full union unless all three special labels occupy one common gap of the common core order"
+research_level: "abstraction"
+semantic_container_text: null
+simplified_statement: "Three compatible Hamiltonian deletions concentrate in one common gap"
+substantive_worker_ids:
+  - 706
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three compatible Hamiltonian deletions concentrate in one common gap"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:18:16.599015+00:00"
+version: 4

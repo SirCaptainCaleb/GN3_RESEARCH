@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T09:56:33.131418+00:00"
+id: "1000539"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 385
+    detail: "Terminology-only repair removing ambiguous bridge language from finished proof prose."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:04:58.253819+00:00"
+    worker_id: 706
+  last_audit_observation:
+    claim_id: 385
+    detail: "Terminology-only repair removing ambiguous bridge language from finished proof prose."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:04:58.253819+00:00"
+    worker_id: 706
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair: remove ambiguous bridge language from finished proof prose."
+    recorded_at: "2026-09-28T10:04:12.518918+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 706
+  noncomputational: true
+object_type: "research"
+origin_worker_id: 700
+parent_id: "1000003"
+position: 1
+research_interface:
+  consumer: "endpoint transport / defect compression; one-defect closure"
+  given: "a one-gap deficit-one comparison arising from an actual one-defect/deletion-cover state, with at most one exterior comparison-path vertex"
+  need: "only the large one-gap branch |E|>=2 remains route-specific"
+  produces: "a Hamiltonian five-window with path-cover-two complement, or a bounded failed-insertion obstruction"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The tiny one-gap branch is already a Hamiltonian five-window or a bounded failed-insertion obstruction."
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The tiny one-gap branch is already a Hamiltonian five-window or a bounded failed-insertion obstruction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T10:04:58.253819+00:00"
+version: 10

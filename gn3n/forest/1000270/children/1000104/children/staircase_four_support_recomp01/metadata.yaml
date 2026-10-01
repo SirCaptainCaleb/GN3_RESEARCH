@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T17:31:43.374006+00:00"
+id: "staircase_four_support_recomp01"
+last_elevation_revision: 8355
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T17:31:43.374006+00:00"
+  audit_resolution:
+    claim_id: 159
+    detail: "The recomposition validly strengthens the retired staircase package. reversal_global_frontier01 applies to the two endpoints of the largest component and any disjoint three-set, yielding directly a Hamiltonian four-support with non-Hamiltonian two-cover complement; c>=4 supplies ample distinct vertices. This subsumes the older 4/5/6-support conclusion without losing hypotheses needed for the stated target."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:44:33.034029+00:00"
+    worker_id: 605
+  audit_trigger_kind: "explicit_publish_request"
+  composition_intent: "direct stronger replacement of obsolete staircase unary chain"
+  last_audit_observation:
+    claim_id: 159
+    detail: "The recomposition validly strengthens the retired staircase package. reversal_global_frontier01 applies to the two endpoints of the largest component and any disjoint three-set, yielding directly a Hamiltonian four-support with non-Hamiltonian two-cover complement; c>=4 supplies ample distinct vertices. This subsumes the older 4/5/6-support conclusion without losing hypotheses needed for the stated target."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:44:33.034029+00:00"
+    worker_id: 605
+  recomposition_audit:
+    classified_at: "2026-09-29T17:33:12.184134+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 637
+parent_id: "1000104"
+position: 0
+research_interface:
+  consumer: "grand theorem proof composition; positioned small-support closure"
+  given: "a globally quadratic-potential-minimal staircase profile (c+2,c+1,c), c>=4"
+  produces: "a proper Hamiltonian four-set with non-Hamiltonian path-cover-two complement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every large staircase minimum has a Hamiltonian four-support with two-cover complement."
+substantive_worker_ids:
+  - 637
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every large staircase minimum has a Hamiltonian four-support with two-cover complement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:44:33.034029+00:00"
+version: 6

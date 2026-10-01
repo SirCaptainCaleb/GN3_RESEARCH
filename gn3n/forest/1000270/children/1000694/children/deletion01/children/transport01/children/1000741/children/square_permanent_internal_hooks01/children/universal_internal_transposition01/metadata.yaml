@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-10-01T01:32:08.619087+00:00"
+id: "universal_internal_transposition01"
+last_elevation_revision: 10414
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "reversal_manydeletion_compat_density01"
+  audit_request_reason: "Reaudit the strengthened large-order reversal chain through math-v2 reversal_halfstable_manydeletion01, math-v2 universal_internal_transposition01, mutual_internal_endpoint_grid01, and the math-v2 quadratic Mantel disturbance conclusion."
+  audit_request_recorded_at: "2026-10-01T01:52:59.521026+00:00"
+  audit_resolution:
+    claim_id: 906
+    detail: "Independently reconstructed every pair square in H-d; absent endpoint/support/order disturbance, the universally internal labels form a vertex cover of K_r and therefore have size at least r-1."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  audit_trigger_kind: "chain_checkpoint"
+  deep_research: true
+  last_audit_observation:
+    claim_id: 906
+    detail: "Independently reconstructed every pair square in H-d; absent endpoint/support/order disturbance, the universally internal labels form a vertex cover of K_r and therefore have size at least r-1."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+object_type: "research"
+origin_worker_id: 745
+parent_id: "square_permanent_internal_hooks01"
+position: 0
+research_interface:
+  consumer: "multi-deletion reversal route; universal-internal synchronization; endpoint transport"
+  given: "one vertex d universally internal in every two-cover of H-t for t in a label set T"
+  produces: "endpoint/support/order disturbance in H-d, or mutual deletion internality with at least r-1 labels and the corresponding four-end K4-or-doubled-barrier grids"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "If d is universally internal across r deletions, then H-d has endpoint/support/order disturbance or at least r-1 labels become mutually internal with d, each forcing a four-end K4-or-double-barrier grid."
+substantive_worker_ids:
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Universal internality across deletions transposes to mutual internality or cover disturbance"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:29:40.003289+00:00"
+version: 12

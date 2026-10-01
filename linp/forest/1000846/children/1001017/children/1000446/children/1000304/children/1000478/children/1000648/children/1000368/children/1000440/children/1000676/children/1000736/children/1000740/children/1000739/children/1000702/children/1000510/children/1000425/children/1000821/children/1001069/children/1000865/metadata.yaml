@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:02:15.500168+00:00"
+id: "1000865"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "78197c5c-27fe-4ee9-8c4b-69228862991a"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:54:07.904859+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "78197c5c-27fe-4ee9-8c4b-69228862991a"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:54:07.904859+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1001069"
+position: 0
+research_interface:
+  consequence: "The unique joint competitor has only two possible rail states: completely clean from r3, or it hits r3 at its private vertex. It can never use x or the r2-r3 joint."
+  consumer:
+    - "p=5 4555 elimination"
+  given:
+    - "edc545e3d1e7 exact 4555 crossed rectangle"
+  next_need: "Split these two states. In the private-r3 state, j supplies a late contact while both crossed competitors occupy the first two rail edges; seek a four-edge x-ending path using one crossed edge and j. In the clean state, j is a pure two-pole switch through s,v; use entrance/terminal labels on j and the crossed perfect matching."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The joint edge in the exact 4555 rectangle is either rail-clean or hits only the private vertex of the third rail edge."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The joint edge in the exact 4555 rectangle is either rail-clean or hits only the private vertex of the third rail edge"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

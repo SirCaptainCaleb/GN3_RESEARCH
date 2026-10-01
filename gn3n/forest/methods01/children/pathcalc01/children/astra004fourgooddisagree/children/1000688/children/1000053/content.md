@@ -1,0 +1,17 @@
+# From order fifteen a non-Hamiltonian six-set complement square yields crossing, order disagreement, or an order-fifteen endpoint obstruction
+
+## Statement
+
+Let H be a minimum counterexample of order n>=15, let K be a non-Hamiltonian six-set, and put L=H-K. Assume L is non-Hamiltonian. Let d,e be vertices of K such that K-d, K-e, and K-{d,e} are Hamiltonian, and let F=P|Q be any two-cover of H[L union {d,e}]. Put D=K-{d,e} and C=D|P|Q. If C minimizes quadratic potential in its connected pairwise-repartition component, then for n>=16 either deleting d or e from F exposes an ordinary edge joining different inherited path components, or explicit order disagreement occurs. For n=15, one obtains one of those outcomes, a deletion cover with at least two ordinary edges joining different classes of a displayed three-cover, or two displayed endpoints noninsertable into the same displayed opposite path as in 5ec926f6e4fc.
+
+## Body
+
+By d2205c472e75, the four induced subtournaments on L, L union {d}, L union {e}, and L union {d,e} are all non-Hamiltonian with path-cover number two. Apply a0d0b96fe4bd to the top state L union {d,e} and the displayed two-cover F=P|Q. If d or e is internal in its F-component, that theorem gives a component-drop crossing, and we are done. Hence assume the coherent branch: d and e are displayed endpoints of their F-components and deleting either or both from F gives two-covers of the three lower square states.
+
+Because D=K-{d,e}, both D union {d}=K-e and D union {e}=K-d are Hamiltonian. Thus moving d from its F-component into D is a legal pairwise repartition from C, and the same is true for e. If the F-component containing d has order p, this move changes the two affected component orders from 4,p to 5,p-1, so Delta Phi=25+(p-1)^2-[16+p^2]=10-2p. Since C is Phi-minimal in its connected component, p<=5. The same argument shows that the F-component containing e has order at most five.
+
+If d and e lie in different F-components, both component orders are at most five, while their sum is |L|+2=n-4>=11, a contradiction. Hence d and e lie in the same displayed component P of F, whose order p is at most five. Let q be the order of the other component Q. Then p+q=n-4, so q>=6.
+
+If q>=7, apply a25b748fb338 to the spanning three-cover D|Q|P: its four-side D beside the q-path Q yields either a legal strict Phi decrease or explicit order disagreement. The descent is impossible by the assumed Phi-minimality of C, so order disagreement follows. This covers every n>=16, and also n=15 whenever p<=4.
+
+The only remaining case is n=15, p=5, q=6, so C has profile 4|5|6 and Phi(C)=77. Let Phi_* be the global minimum over spanning three-covers of H. For three positive integer component orders summing to 15, the absolute minimum is 75, attained only by 5|5|5; the next possible value is 77, attained by 4|5|6. Since Phi_*<=77, either Phi_*=75 or Phi_*=77. If Phi_*=77, a globally Phi-minimal cover has a four-side, and global_four_side_order15 gives explicit order disagreement. If Phi_*=75, H has a globally Phi-minimal 5|5|5 cover; 5ec926f6e4fc applied to that all-equal cover yields a deletion cover with at least two ordinary three-part crossings, a paired-noninsertion obstruction on a common opposite block, or explicit order disagreement. Hence one of the alternatives in the statement also holds when n=15.

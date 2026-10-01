@@ -1,0 +1,36 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T18:44:33.806929+00:00"
+id: "proof_rehearsal_g000000000031"
+last_elevation_revision: 0
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: null
+metadata:
+  details:
+  generation: 31
+  opened_revision: 3852
+object_type: "proof_rehearsal"
+origin_worker_id: null
+parent_id: "proof_rehearsals"
+position: 31
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+support_reason: null
+support_status: "unchecked"
+title: "Proof rehearsal 31 — 2026-09-27 18:44 UTC"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T18:44:33.806929+00:00"
+version: 1

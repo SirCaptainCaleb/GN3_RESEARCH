@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 5
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 8
+created_at: "2026-09-24T00:48:03.617822+00:00"
+id: "1000853"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: null
+lifecycle_status: "active"
+math_version: 8
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "3de42864-41b8-4008-a92a-5166a947f5e0"
+    detail: "Removed proof-process language from title and proof."
+    math_version: 8
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T02:16:03.748931+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  humanization_target: "1000976"
+  last_audit_observation:
+    claim_id: "3de42864-41b8-4008-a92a-5166a947f5e0"
+    detail: "Removed proof-process language from title and proof."
+    math_version: 8
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T02:16:03.748931+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Editorial-only: remove proof-process language from title and proof; mathematics unchanged."
+    recorded_at: "2026-09-25T02:15:29.362685+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  replaces_finite_search: true
+  semantic_container_seed:
+    atlas_key: "dense_core"
+    headline: "Minimum-degree / all-special route toward 2/3"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000044"
+position: 0
+research_interface:
+  consequence: "Completely replaces the 13,406-system finite negative search d9ee4adc37d3 by human mathematics on the entire n<=12 range."
+  consumer:
+    - "020f694f8767 dense-core all-special conjecture"
+    - "76ef6efb21e7 global nonspecial-edge path-length inequality"
+  given:
+    - "0bc3c18c2692 three-class human reduction"
+    - "4218a20eafe9 Class I all-special theorem"
+    - "8fad0bbb69b6 Class II all-special theorem"
+    - "b9277764ed94 Class III rank lower bound"
+    - "09d85d61b8b0 Class III rank-four exclusion"
+    - "ffa00b5a307c Class III rank-five exclusion"
+research_level: "theorem"
+semantic_container_text: "Finite all-special threshold branch of the minimum-degree route toward the two-thirds target."
+simplified_statement: "For 6<=n<=12, a positive-minimum-degree linear triple system with 3delta>2L+2 has every edge special."
+substantive_worker_ids:
+  - 185
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Strict two-thirds all-special threshold for n<=12"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T20:55:07.81107+00:00"
+version: 12

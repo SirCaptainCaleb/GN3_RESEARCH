@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-29T05:12:44.604306+00:00"
+id: "unique_large_strictcompression01"
+last_elevation_revision: 7998
+last_substantive_worker_id: 630
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 426
+    detail: "Recorded the certified stronger profile-only theorem 09ca8fd0a87d as an explicit logical premise of this now-superseded target."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:29:46.669798+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 426
+    detail: "Recorded the certified stronger profile-only theorem 09ca8fd0a87d as an explicit logical premise of this now-superseded target."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:29:46.669798+00:00"
+    worker_id: 664
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Audit provenance repair: record the stronger certified theorem that directly implies this superseded target."
+    recorded_at: "2026-09-29T12:28:34.893158+00:00"
+    to_id: "1000025"
+    worker_id: 664
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T12:21:26.104203+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 718
+parent_id: "global_sizegap_maximin_bypass01"
+position: 0
+research_interface:
+  consumer: "context-sensitive repair of the original global frontier reduction"
+  given: "the endpoint-square-free unique-large branch of a globally quadratic-minimal three-cover"
+  need: "attack the strict complement-compression branch directly; do not reduce it to the generic disturbance interface unless extra structure is gained"
+  produces: "either one of three finite ambient profiles, or a globally longest path with non-Hamiltonian pc-two complement of order at most 2c-1"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A unique large side yields small orders or a smaller non-Hamiltonian complement"
+substantive_worker_ids:
+  - 718
+  - 630
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A unique large side yields small orders or a smaller non-Hamiltonian complement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T15:08:56.258571+00:00"
+version: 8

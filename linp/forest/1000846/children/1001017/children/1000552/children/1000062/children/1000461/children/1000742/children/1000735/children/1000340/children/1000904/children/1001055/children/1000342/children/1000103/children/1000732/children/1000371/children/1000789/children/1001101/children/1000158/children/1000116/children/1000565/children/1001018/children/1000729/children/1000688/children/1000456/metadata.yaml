@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-26T04:11:26.137353+00:00"
+id: "1000456"
+last_elevation_revision: null
+last_substantive_worker_id: 226
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 226
+parent_id: "1000688"
+position: 1
+research_interface:
+  consequence: "Against the selected certificate anchor, the uphill branch always has repeated intersection; the aligned-X-X escape in the terminal-path comparison 25b5948e8d37 disappears."
+  consumer:
+    - "uphill class H local congestion"
+    - "a54a1a6159e1 post-43/48 closure"
+  given:
+    - "9e490cc47ca8 uphill certificate class"
+    - "eb7f3a1e87e0 two-return common-anchor lemma"
+  next_need: "Bound reuse/order of these lower-path / higher-anchor repeated intersections across many edges assigned to one lower terminal."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path."
+substantive_worker_ids:
+  - 226
+support_reason: "logical premise set changed"
+support_status: "unchecked"
+title: "An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

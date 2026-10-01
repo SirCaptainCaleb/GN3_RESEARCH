@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T18:25:00.105133+00:00"
+id: "1000391"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 219
+    detail: "Independent check passes. With a secondarily balanced global Phi-minimum having minimum side 5, m+r=2lambda-4 and m<=lambda imply m in {lambda-2,lambda-1,lambda}; lambda>=14 gives r>=10, so 73b4a2a15831 applies to every endpoint pair. Its Hamiltonian branch contradicts the path-order cap when m=lambda; decreases Phi by 26-2lambda when m=lambda-1; and when m=lambda-2 decreases Phi except for the lambda=14,p=lambda equality case, where Phi is equal but the new cover has minimum side 6, contradicting secondary maximality. Thus every endpoint pair yields the non-Hamiltonian order-disagreement branch."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:36:22.870638+00:00"
+    worker_id: 569
+  last_audit_observation:
+    claim_id: 219
+    detail: "Independent check passes. With a secondarily balanced global Phi-minimum having minimum side 5, m+r=2lambda-4 and m<=lambda imply m in {lambda-2,lambda-1,lambda}; lambda>=14 gives r>=10, so 73b4a2a15831 applies to every endpoint pair. Its Hamiltonian branch contradicts the path-order cap when m=lambda; decreases Phi by 26-2lambda when m=lambda-1; and when m=lambda-2 decreases Phi except for the lambda=14,p=lambda equality case, where Phi is equal but the new cover has minimum side 6, contradicting secondary maximality. Thus every endpoint pair yields the non-Hamiltonian order-disagreement branch."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:36:22.870638+00:00"
+    worker_id: 569
+object_type: "research"
+origin_worker_id: 573
+parent_id: "1000352"
+position: 2
+research_interface:
+  consumer: "sharp half-order closure; endpoint transport; global quadratic descent"
+  given: "a sharp half-order minimum counterexample with lambda at least fourteen and a secondarily balanced globally quadratic-minimal three-cover"
+  need: "aggregate the six endpoint-pair order-disagreement witnesses through the common five-side into endpoint absorption or defect-span compression"
+  produces: "either minimum path order at least six, or if the minimum is five then every pair of the four other-path endpoints lies in a non-Hamiltonian six-set with four Hamiltonian deletions and explicit order disagreement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "From lambda fourteen onward a normalized sharp-shell five-side forces order disagreement at every endpoint pair."
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "From lambda fourteen onward a normalized sharp-shell five-side forces order disagreement at every endpoint pair"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:07:16.525329+00:00"
+version: 8

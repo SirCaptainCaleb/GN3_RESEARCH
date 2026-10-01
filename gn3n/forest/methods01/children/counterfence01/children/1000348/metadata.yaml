@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T22:06:47.146013+00:00"
+id: "1000348"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 285
+    detail: "The certified collision classification leaves all side literals mutually reversal-free; choosing every side literal tight satisfies every clause, while central reversal pairs can be oriented consistently. The fence is correctly scoped to the abstract clause layer."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:56:13.634576+00:00"
+    worker_id: 694
+  last_audit_observation:
+    claim_id: 285
+    detail: "The certified collision classification leaves all side literals mutually reversal-free; choosing every side literal tight satisfies every clause, while central reversal pairs can be oriented consistently. The fence is correctly scoped to the abstract clause layer."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:56:13.634576+00:00"
+    worker_id: 694
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-28T01:25:53.747509+00:00"
+object_type: "research"
+origin_worker_id: 678
+parent_id: "counterfence01"
+position: 930
+research_interface:
+  given: "any collection of formal cross-swap clauses on fixed A,B,c"
+  need: "discard purely propositional closure as a target and consume the c-free side literals geometrically, via path bridges, repartitions, or order disagreement"
+  produces: "a universal local-consistency model for the clause layer; clause propagation alone cannot yield contradiction"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The cross-swap clause layer alone is always locally satisfiable."
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The cross-swap clause layer alone is always locally satisfiable"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T01:25:53.747509+00:00"
+version: 11

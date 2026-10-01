@@ -1,0 +1,38 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-29T22:19:11.91568+00:00"
+id: "threeside_prescribed_pair_sixmenu01"
+last_elevation_revision: 9396
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 665
+parent_id: "threeside_consecutive_fivewindows01"
+position: 0
+research_interface:
+  consumer: "three-side fixed-defect transport; six-set prescribed-pair transport; grand theorem bridge"
+  given: "the positioned left and right six-sets produced by the three-side common-barrier pair"
+  need: "couple the reduced three-way menus at opposite ends through the same persistent pair Z, seeking a common support migration or defect compression"
+  produces: "at each end, a Hamiltonian six-set, a one-label Hamiltonian five-set, or overlapping Hamiltonian K4s that retain the same prescribed pair; the matching-block equality residue is excluded"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Three-side endpoint six-sets have no prescribed-pair matching residue"
+substantive_worker_ids:
+  - 665
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Three-side endpoint six-sets have no prescribed-pair matching residue"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T22:19:11.91568+00:00"
+version: 1

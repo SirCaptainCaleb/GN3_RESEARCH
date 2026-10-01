@@ -1,0 +1,2309 @@
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Organizational annotation: class split is the branch parent for the uphill-certificate congestion steps."
+  object_id: "1000688"
+  route_key: "uphill-certificate-congestion"
+  updated_at: "2026-09-30T22:54:59.669254+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: "Reasoning-chain root for the certificate-at-either-terminal congestion closure and its same-terminal/uphill split."
+  object_id: "1000729"
+  route_key: "uphill-certificate-congestion"
+  updated_at: "2026-09-30T22:57:08.356713+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000527"
+  route_key: null
+  updated_at: "2026-09-22T05:00:51.095312+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: "Canonical project Toolkit root: reusable mathematics and methods live here rather than carrying a proof frame."
+  object_id: "methods01"
+  route_key: "project_methods"
+  updated_at: "2026-09-27T23:11:40.041765+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Curated blind brainstorm idea from epoch 1 slot 1."
+  object_id: "1000075"
+  route_key: "brainstorm-idea"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified counterexample closing the nullity-vs-special-edge conjecture."
+  object_id: "1000081"
+  route_key: null
+  updated_at: "2026-09-25T05:06:29.110025+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000103"
+  route_key: null
+  updated_at: "2026-09-25T22:34:38.364607+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000361"
+  route_key: null
+  updated_at: "2026-09-25T19:52:56.224298+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Bad-load truncation step in the general-length branch."
+  object_id: "1000001"
+  route_key: null
+  updated_at: "2026-09-21T21:12:26.653931+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Global closure of the critical induced-Boolean family."
+  object_id: "1000002"
+  route_key: null
+  updated_at: "2026-09-25T05:04:38.86427+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000013"
+  route_key: null
+  updated_at: "2026-09-22T08:15:32.206176+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Minimum-degree normalization for the defect-stability route."
+  object_id: "1000063"
+  route_key: null
+  updated_at: "2026-09-25T05:06:23.286931+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000095"
+  route_key: null
+  updated_at: "2026-09-25T19:34:07.271123+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000166"
+  route_key: null
+  updated_at: "2026-09-25T19:53:57.632238+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Dense-core all-special conjectural target after minimum-degree normalization."
+  object_id: "1000005"
+  route_key: null
+  updated_at: "2026-09-25T05:06:25.033199+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reconstructed clean-contact conjectural route."
+  object_id: "1000032"
+  route_key: null
+  updated_at: "2026-09-25T05:06:44.413119+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000168"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000192"
+  route_key: "project_resources"
+  updated_at: "2026-09-25T04:29:49.914646+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000340"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000355"
+  route_key: "lower_latin_blowups"
+  updated_at: "2026-09-25T04:29:49.914646+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Order-six Latin-square rainbow-path result."
+  object_id: "1000423"
+  route_key: null
+  updated_at: "2026-09-25T05:08:07.689778+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000426"
+  route_key: "upper_intersection_rank"
+  updated_at: "2026-09-25T04:29:49.914646+00:00"
+-
+  composition_manifest:
+    -
+      id: "1001026"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000083"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000839"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "arbitrary-Latin cycle-lift recomposition"
+  object_id: "1000019"
+  route_key: null
+  updated_at: "2026-09-25T04:37:40.276774+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000954"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000650"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000387"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "binary-doubling obstruction compression"
+  object_id: "1000025"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+    -
+      id: "1001073"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000010"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000026"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "shared-color construction-fence compression"
+  object_id: "1000041"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000477"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000359"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "saturated cell-graph recomposition"
+  object_id: "1000047"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000392"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000275"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000080"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "switch-cycle escape compression"
+  object_id: "1000060"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Cumulative terminal-snake bound."
+  object_id: "1000062"
+  route_key: null
+  updated_at: "2026-09-25T05:07:38.367694+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000066"
+  route_key: null
+  updated_at: "2026-09-21T22:41:51.634124+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000067"
+  route_key: "lower_sts_hamilton_obstruction"
+  updated_at: "2026-09-22T14:21:31.77633+00:00"
+-
+  composition_manifest:
+    -
+      id: "1001040"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000661"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000390"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000710"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "intersection graph compression"
+  object_id: "1000071"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000078"
+  route_key: null
+  updated_at: "2026-09-22T12:44:54.132653+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000640"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000255"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "single-blocker rotation recomposition"
+  object_id: "1000101"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000104"
+  route_key: null
+  updated_at: "2026-09-21T22:43:31.275726+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000111"
+  route_key: null
+  updated_at: "2026-09-22T01:55:24.097023+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000113"
+  route_key: null
+  updated_at: "2026-09-22T02:05:04.198221+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Fence: ordinary STS doubling cannot improve the one-third leading coefficient."
+  object_id: "1000119"
+  route_key: null
+  updated_at: "2026-09-25T05:06:49.092738+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000129"
+  route_key: null
+  updated_at: "2026-09-22T05:57:13.274176+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000132"
+  route_key: null
+  updated_at: "2026-09-22T04:17:19.858316+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Rank-nullity refinement of the joint-residue route."
+  object_id: "1000135"
+  route_key: null
+  updated_at: "2026-09-25T05:04:08.826848+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "G0-specific arbitrary-Latin full-lap packing."
+  object_id: "1000136"
+  route_key: null
+  updated_at: "2026-09-25T05:08:02.808129+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Almost-period reduction for density-beating Boolean candidates."
+  object_id: "1000137"
+  route_key: null
+  updated_at: "2026-09-25T05:03:51.814165+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000143"
+  route_key: null
+  updated_at: "2026-09-22T10:46:04.192362+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000145"
+  route_key: null
+  updated_at: "2026-09-21T22:28:09.676273+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Curated blind brainstorm idea from epoch 1 slot 1."
+  object_id: "1000151"
+  route_key: "brainstorm-idea"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Continuation of the ascending-edge formulation; nested to preserve inferential ancestry."
+  object_id: "1000157"
+  route_key: null
+  updated_at: "2026-09-21T21:12:42.375109+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000159"
+  route_key: null
+  updated_at: "2026-09-22T04:25:31.150167+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000182"
+  route_key: null
+  updated_at: "2026-09-21T21:05:22.563178+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000110"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000601"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "short-loss sink recomposition"
+  object_id: "1000204"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000207"
+  route_key: null
+  updated_at: "2026-09-22T08:28:05.141901+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Rainbow-shadow branch within the general-length attack."
+  object_id: "1000446"
+  route_key: null
+  updated_at: "2026-09-21T21:12:26.653931+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000456"
+  route_key: "uphill-certificate-congestion"
+  updated_at: "2026-09-26T04:11:26.137353+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001148"
+  route_key: null
+  updated_at: "2026-09-22T05:50:50.279206+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000603"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000338"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "positive-potential-gap recomposition"
+  object_id: "1000216"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000891"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000326"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "fixed-hole residual recomposition"
+  object_id: "1000232"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000239"
+  route_key: null
+  updated_at: "2026-09-25T19:11:08.618295+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Explains the exceptional projective dimensions."
+  object_id: "1000241"
+  route_key: null
+  updated_at: "2026-09-25T05:04:10.731262+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000255"
+  route_key: null
+  updated_at: "2026-09-22T02:08:32.739499+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000266"
+  route_key: null
+  updated_at: "2026-09-21T19:24:02.781196+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Chosen-path double-blocker compensation."
+  object_id: "1000269"
+  route_key: null
+  updated_at: "2026-09-25T05:06:45.924514+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000271"
+  route_key: null
+  updated_at: "2026-09-25T22:35:07.439265+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000732"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000940"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001038"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000436"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000694"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000570"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "Current post-43/48 proof rehearsal; certified chain reaches strict two-terminal-gap extraction and stops at the sublinear minimum-terminal congestion bound."
+  object_id: "1000272"
+  route_key: "post43_paid_object_congestion"
+  updated_at: "2026-09-25T21:03:57.459091+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000278"
+  route_key: null
+  updated_at: "2026-09-21T20:57:46.398164+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000286"
+  route_key: null
+  updated_at: "2026-09-25T22:35:08.928229+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000289"
+  route_key: null
+  updated_at: "2026-09-22T05:31:11.329471+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: "Permanent asynchronous brainstorm idea bank."
+  object_id: "1000297"
+  route_key: "brainstorms"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Ascending-edge formulation branch."
+  object_id: "1000304"
+  route_key: null
+  updated_at: "2026-09-21T21:12:26.653931+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000309"
+  route_key: null
+  updated_at: "2026-09-22T05:29:49.69819+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000525"
+  route_key: null
+  updated_at: "2026-09-22T05:49:18.117504+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Curated blind brainstorm idea from epoch 1 slot 2."
+  object_id: "1000312"
+  route_key: "brainstorm-idea"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000674"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000352"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000487"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Equivalent-or-stronger compression preserving defect accounting, terminal-degree identities, and the opposite-terminal bridge/joint/triangle dichotomy."
+  object_id: "1000316"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Defect-stability subroute toward the exact two-thirds bound."
+  object_id: "1000322"
+  route_key: "upper_defect_stability"
+  updated_at: "2026-09-25T05:06:21.746645+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000325"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000214"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1001110"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "char2 cycle-lift recomposition"
+  object_id: "1000329"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Compatible two-rail Hamiltonicity criterion."
+  object_id: "1000331"
+  route_key: null
+  updated_at: "2026-09-25T05:03:57.24759+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000332"
+  route_key: null
+  updated_at: "2026-09-22T04:38:51.994391+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Order-five transversal-design path result."
+  object_id: "1000335"
+  route_key: null
+  updated_at: "2026-09-25T05:08:06.218053+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000336"
+  route_key: null
+  updated_at: "2026-09-22T02:01:58.948721+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000342"
+  route_key: null
+  updated_at: "2026-09-25T22:34:36.896918+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000349"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000352"
+  route_key: null
+  updated_at: "2026-09-22T05:25:25.607471+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Clean-minus-double identity refining contact multiplicity."
+  object_id: "1000356"
+  route_key: null
+  updated_at: "2026-09-25T05:07:28.015896+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000309"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000289"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "maximum-rank blocker/clean replacement recomposition"
+  object_id: "1000362"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000659"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000078"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001010"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Equivalent-or-stronger compression of the certified reciprocal-stretch unary segment; preserves factor-two band, threshold identity, coarse 2n step, and sharpened 5n/4 conclusion."
+  object_id: "1000366"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000371"
+  route_key: null
+  updated_at: "2026-09-25T22:34:56.174423+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000373"
+  route_key: null
+  updated_at: "2026-09-25T19:17:39.284986+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000380"
+  route_key: null
+  updated_at: "2026-09-21T22:31:05.933521+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000660"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000635"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "odd additive cycle-lift recomposition"
+  object_id: "1000382"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000393"
+  route_key: null
+  updated_at: "2026-09-25T22:35:14.902083+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000399"
+  route_key: null
+  updated_at: "2026-09-21T21:02:19.744917+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000948"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001140"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000167"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000199"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Type-B alternate-break chain compression"
+  object_id: "1000401"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000476"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000693"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "special-edge accounting recomposition"
+  object_id: "1000405"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Exact one-bit core reduction."
+  object_id: "1000410"
+  route_key: null
+  updated_at: "2026-09-25T05:03:53.593334+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Continuation of the ascending-edge formulation; nested to preserve inferential ancestry."
+  object_id: "1000417"
+  route_key: null
+  updated_at: "2026-09-21T21:12:42.375109+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000427"
+  route_key: null
+  updated_at: "2026-09-22T04:29:09.759213+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000429"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000438"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000418"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000227"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "far-end transfer recomposition"
+  object_id: "1000460"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Terminal saturation pays in double-blocker excess."
+  object_id: "1000461"
+  route_key: null
+  updated_at: "2026-09-25T05:07:40.619681+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000462"
+  route_key: null
+  updated_at: "2026-09-22T04:38:51.994391+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation along the ascending-edge counting chain."
+  object_id: "1000478"
+  route_key: null
+  updated_at: "2026-09-25T22:11:36.023519+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "General upper bound improved to (ell-2)n."
+  object_id: "1000480"
+  route_key: null
+  updated_at: "2026-09-25T05:07:42.342295+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000111"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000801"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "endpoint-potential root recomposition"
+  object_id: "1000481"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000484"
+  route_key: null
+  updated_at: "2026-09-25T19:15:43.982785+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000485"
+  route_key: null
+  updated_at: "2026-09-22T08:22:44.390686+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000487"
+  route_key: null
+  updated_at: "2026-09-22T05:27:06.025148+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000488"
+  route_key: null
+  updated_at: "2026-09-21T19:11:34.326713+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Methodology repair: restore missing reasoning-chain continuity to existing annotated descendants; organizational only."
+  object_id: "1000492"
+  route_key: null
+  updated_at: "2026-09-25T19:34:32.243027+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000494"
+  route_key: null
+  updated_at: "2026-09-21T22:49:12.738576+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation: this lemma is the direct causal predecessor of a959e02faa1b."
+  object_id: "1000502"
+  route_key: null
+  updated_at: "2026-09-25T22:10:55.785288+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Intersection-graph entry point: linear paths are induced paths."
+  object_id: "1000511"
+  route_key: null
+  updated_at: "2026-09-25T05:03:16.667456+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Nullity-vs-special-edge conjecture in the incidence-rank route."
+  object_id: "1000514"
+  route_key: null
+  updated_at: "2026-09-25T05:06:26.927179+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000937"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000687"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000852"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "loss-one sink index-graph compression"
+  object_id: "1000520"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000522"
+  route_key: null
+  updated_at: "2026-09-25T20:09:22.730158+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Maximum-degree range of the incidence-rank inequality."
+  object_id: "1000531"
+  route_key: null
+  updated_at: "2026-09-25T05:08:01.005667+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000536"
+  route_key: "punctured_sts_extension_test"
+  updated_at: "2026-09-22T14:29:41.82934+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000538"
+  route_key: null
+  updated_at: "2026-09-25T22:35:02.058521+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation: this lemma is the direct causal predecessor of cfa68aa6d0c5."
+  object_id: "1000546"
+  route_key: null
+  updated_at: "2026-09-25T22:10:55.785288+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000551"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000552"
+  route_key: "upper_snake_terminal"
+  updated_at: "2026-09-25T04:29:49.914646+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000570"
+  route_key: null
+  updated_at: "2026-09-25T11:32:28.887906+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Curated blind brainstorm idea from epoch 1 slot 1."
+  object_id: "1000578"
+  route_key: "brainstorm-idea"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000579"
+  route_key: null
+  updated_at: "2026-09-25T22:35:13.070534+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000580"
+  route_key: null
+  updated_at: "2026-09-25T19:26:04.860482+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Endpoint-potential entry point for charged-edge refinements."
+  object_id: "1000616"
+  route_key: null
+  updated_at: "2026-09-25T05:07:45.616161+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Joint-residue normal form for critical Boolean systems."
+  object_id: "1000618"
+  route_key: null
+  updated_at: "2026-09-25T05:04:06.44014+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000629"
+  route_key: null
+  updated_at: "2026-09-21T19:24:02.781196+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation along the direct reciprocal-terminal chain."
+  object_id: "1000631"
+  route_key: null
+  updated_at: "2026-09-25T22:11:20.819243+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Strengthening of the bad-load truncation argument; nested beneath the result it refines."
+  object_id: "1000636"
+  route_key: null
+  updated_at: "2026-09-21T21:12:42.375109+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000640"
+  route_key: null
+  updated_at: "2026-09-22T02:05:04.198221+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000643"
+  route_key: null
+  updated_at: "2026-09-21T21:08:02.138772+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Combinatorial consequence of complete reciprocal terminal-path transversality; deliberately uses repeated intersections only, not lens conversion."
+  object_id: "1000645"
+  route_key: null
+  updated_at: "2026-09-25T20:18:59.672603+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Terminal-localization upper bound (ell-11/6)n."
+  object_id: "1000651"
+  route_key: null
+  updated_at: "2026-09-25T05:07:43.904811+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Blind two-worker brainstorming epoch."
+  object_id: "1000654"
+  route_key: "brainstorm-epoch-1"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation along the switching-source-mass chain."
+  object_id: "1000655"
+  route_key: null
+  updated_at: "2026-09-25T22:25:05.989543+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000659"
+  route_key: null
+  updated_at: "2026-09-22T12:43:48.533474+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000663"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000691"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000074"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "saturated-fan defect geometry recomposition"
+  object_id: "1000667"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000671"
+  route_key: null
+  updated_at: "2026-09-21T19:10:25.129295+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000854"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000321"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "fixed-hole surplus recomposition"
+  object_id: "1000673"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000674"
+  route_key: null
+  updated_at: "2026-09-22T05:01:16.250641+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000680"
+  route_key: null
+  updated_at: "2026-09-21T22:49:12.738576+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Counterexample forcing repair of the universal two-bit lift claim."
+  object_id: "1000685"
+  route_key: null
+  updated_at: "2026-09-25T05:04:47.22773+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000691"
+  route_key: null
+  updated_at: "2026-09-22T04:18:15.376338+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000039"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000995"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000794"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "ascending-defect rotation-endpoint compression"
+  object_id: "1000692"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000694"
+  route_key: null
+  updated_at: "2026-09-25T11:29:50.068847+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000708"
+  route_key: null
+  updated_at: "2026-09-22T04:29:31.063+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000723"
+  route_key: null
+  updated_at: "2026-09-22T08:15:32.206176+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000726"
+  route_key: null
+  updated_at: "2026-09-22T08:14:21.659663+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation along the central-window switching chain."
+  object_id: "1000727"
+  route_key: null
+  updated_at: "2026-09-25T22:11:52.221068+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000732"
+  route_key: null
+  updated_at: "2026-09-25T22:34:54.364315+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000735"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Methodology repair: restore missing reasoning-chain continuity between existing annotated predecessor and annotated descendants; organizational only."
+  object_id: "1000738"
+  route_key: null
+  updated_at: "2026-09-25T19:34:30.375896+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000742"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000777"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000277"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "flat-transfer rotation recomposition"
+  object_id: "1000749"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000761"
+  route_key: null
+  updated_at: "2026-09-22T08:28:05.141901+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Lens-free repair of the reciprocal terminal-retained route after the automatic clean-lens claim became unsafe."
+  object_id: "1000762"
+  route_key: null
+  updated_at: "2026-09-25T20:18:59.672603+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Methodology repair: restore missing reasoning-chain continuity to existing annotated descendants; organizational only."
+  object_id: "1000765"
+  route_key: null
+  updated_at: "2026-09-25T19:34:39.462809+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Parity-coloring tool for the one-bit core route."
+  object_id: "1000770"
+  route_key: null
+  updated_at: "2026-09-25T05:03:55.345287+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000783"
+  route_key: null
+  updated_at: "2026-09-25T22:35:03.697489+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000768"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000970"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000772"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1001093"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000441"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000215"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000571"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000925"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "rotation graph chain compression"
+  object_id: "1000785"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000788"
+  route_key: null
+  updated_at: "2026-09-22T08:14:21.659663+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000789"
+  route_key: null
+  updated_at: "2026-09-25T22:34:57.984401+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000796"
+  route_key: null
+  updated_at: "2026-09-25T22:35:16.620363+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000801"
+  route_key: null
+  updated_at: "2026-09-22T01:55:24.097023+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000804"
+  route_key: null
+  updated_at: "2026-09-22T08:22:44.390686+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000007"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1001053"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "binary-projective tensor recomposition"
+  object_id: "1001136"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000556"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000816"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000819"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000684"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "charged-edge spacing compression"
+  object_id: "1000808"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000813"
+  route_key: null
+  updated_at: "2026-09-21T20:57:46.398164+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000818"
+  route_key: null
+  updated_at: "2026-09-25T22:35:10.986044+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000829"
+  route_key: null
+  updated_at: "2026-09-22T05:39:59.333948+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Rotation-graph structural bound."
+  object_id: "1000830"
+  route_key: null
+  updated_at: "2026-09-25T05:07:47.461784+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000841"
+  route_key: null
+  updated_at: "2026-09-21T22:56:15.259111+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000844"
+  route_key: null
+  updated_at: "2026-09-21T22:34:23.351333+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: "Main LINP research tree."
+  object_id: "1000846"
+  route_key: null
+  updated_at: "2026-09-21T21:12:26.653931+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000001"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000636"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "weighted truncation recomposition"
+  object_id: "1000847"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1000848"
+  route_key: null
+  updated_at: "2026-09-25T22:35:05.220703+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Contact-multiplicity refinement of snake accounting."
+  object_id: "1000872"
+  route_key: null
+  updated_at: "2026-09-25T05:07:26.517021+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000875"
+  route_key: null
+  updated_at: "2026-09-25T19:34:07.271123+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000509"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000523"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "critical Boolean classification recomposition"
+  object_id: "1000884"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000893"
+  route_key: "lower_boolean_projective"
+  updated_at: "2026-09-25T04:29:49.914646+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000894"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Contact-type-free strengthening of the reciprocal-terminal transversality step; self-contained proof, no lens premise."
+  object_id: "1000898"
+  route_key: null
+  updated_at: "2026-09-25T20:06:35.382435+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000900"
+  route_key: null
+  updated_at: "2026-09-21T20:57:46.398164+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000902"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1000904"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000978"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000049"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "rank-three localization sharpness recomposition"
+  object_id: "1000912"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Noncritical density-beating case reduces to an almost exact two-bit carrier."
+  object_id: "1000918"
+  route_key: null
+  updated_at: "2026-09-25T05:04:45.427382+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000920"
+  route_key: null
+  updated_at: "2026-09-22T05:49:18.117504+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reduction of the remaining contact-snake defect to 0-1-1 ascending edges."
+  object_id: "1000922"
+  route_key: null
+  updated_at: "2026-09-25T05:07:29.624915+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000926"
+  route_key: null
+  updated_at: "2026-09-25T20:05:31.989345+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000928"
+  route_key: null
+  updated_at: "2026-09-22T04:29:09.759213+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000946"
+  route_key: null
+  updated_at: "2026-09-21T21:02:19.744917+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000950"
+  route_key: null
+  updated_at: "2026-09-21T22:28:09.676273+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Cumulative snake-rank indegree refinement."
+  object_id: "1000952"
+  route_key: null
+  updated_at: "2026-09-25T05:06:47.413627+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1000953"
+  route_key: "lower_bound_constructions"
+  updated_at: "2026-09-25T04:29:49.914646+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Exact clique-cover reformulation after the intersection-graph reduction."
+  object_id: "1000960"
+  route_key: null
+  updated_at: "2026-09-25T05:07:59.40213+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Blocker-distortion step in the ascending-edge branch."
+  object_id: "1000971"
+  route_key: null
+  updated_at: "2026-09-21T21:12:26.653931+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Curated blind brainstorm idea from epoch 1 slot 2."
+  object_id: "1000981"
+  route_key: "brainstorm-idea"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Schrijver rainbow-path ceiling for full transversal designs."
+  object_id: "1000982"
+  route_key: null
+  updated_at: "2026-09-25T05:08:09.434592+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000863"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000682"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "terminal degree slack recomposition"
+  object_id: "1000983"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Methodology repair: restore missing reasoning-chain continuity between annotated predecessor and descendant chain; organizational only."
+  object_id: "1000987"
+  route_key: null
+  updated_at: "2026-09-25T19:34:37.985525+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001010"
+  route_key: null
+  updated_at: "2026-09-22T12:56:32.958493+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "General-length attack branch."
+  object_id: "1001017"
+  route_key: null
+  updated_at: "2026-09-21T21:12:26.653931+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Corrected quantitative two-bit carrier lift."
+  object_id: "1001027"
+  route_key: null
+  updated_at: "2026-09-25T05:04:48.790547+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1001034"
+  route_key: null
+  updated_at: "2026-09-21T22:56:15.259111+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001036"
+  route_key: null
+  updated_at: "2026-09-22T02:09:17.204889+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1001038"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
+  object_id: "1001050"
+  route_key: null
+  updated_at: "2026-09-25T22:34:59.879277+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1001055"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Even-path Hamiltonian special case of the corrected two-bit lift."
+  object_id: "1001065"
+  route_key: null
+  updated_at: "2026-09-25T05:04:50.245688+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000486"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000017"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1001051"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: ""
+  object_id: "1001068"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001071"
+  route_key: null
+  updated_at: "2026-09-22T04:25:31.150167+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Strengthening of the entrance-distortion argument; nested beneath the result it refines."
+  object_id: "1001078"
+  route_key: null
+  updated_at: "2026-09-21T21:12:42.375109+00:00"
+-
+  composition_manifest:
+    -
+      id: "1001071"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000159"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000708"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Equivalent-or-stronger compression preserving exact splice loss, rigid nearest-neighbor fan classification, and the two-ended nonlocal-blocker conclusion."
+  object_id: "1001080"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Shadow-rainbow reduction and its generic two-thirds ceiling."
+  object_id: "1001094"
+  route_key: null
+  updated_at: "2026-09-25T05:06:42.57528+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation along the direct logarithmic-spacing chain."
+  object_id: "1001116"
+  route_key: null
+  updated_at: "2026-09-25T22:11:20.819243+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001117"
+  route_key: null
+  updated_at: "2026-09-22T04:48:31.587677+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001124"
+  route_key: null
+  updated_at: "2026-09-21T20:57:46.398164+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Curated blind brainstorm idea from epoch 1 slot 2."
+  object_id: "1001129"
+  route_key: "brainstorm-idea"
+  updated_at: "2026-09-26T04:02:42.416635+00:00"
+-
+  composition_manifest:
+    -
+      id: "1001004"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000191"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000647"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "flat-transfer joint compression"
+  object_id: "1001130"
+  route_key: null
+  updated_at: "2026-09-25T04:49:27.239522+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001131"
+  route_key: null
+  updated_at: "2026-09-25T19:30:04.684154+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Restored reasoning annotation along the clean-retained switching chain."
+  object_id: "1001138"
+  route_key: null
+  updated_at: "2026-09-25T22:11:36.023519+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Near-Steiner structural classification."
+  object_id: "1001143"
+  route_key: null
+  updated_at: "2026-09-25T05:04:12.883482+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Order-four transversal-design path result."
+  object_id: "1001154"
+  route_key: null
+  updated_at: "2026-09-25T05:08:04.41606+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Foundational snake indegree step."
+  object_id: "1001160"
+  route_key: null
+  updated_at: "2026-09-25T05:07:23.20899+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Baseline Devine-Milans upper-bound theorem from the snake inequality."
+  object_id: "1001161"
+  route_key: null
+  updated_at: "2026-09-25T05:07:24.827674+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Certified post-43/48 causal chain"
+  object_id: "1001162"
+  route_key: null
+  updated_at: "2026-09-25T11:54:39.370429+00:00"

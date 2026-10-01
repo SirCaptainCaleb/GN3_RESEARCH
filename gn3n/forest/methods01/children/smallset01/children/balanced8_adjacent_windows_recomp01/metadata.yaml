@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T13:08:23.814347+00:00"
+id: "balanced8_adjacent_windows_recomp01"
+last_elevation_revision: 10100
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "The proof body explicitly invokes balanced8_multiplicity7_01 to choose seven distinct Hamiltonian 4|4 partitions, but that theorem is not listed as a direct dependency. The current direct manifest instead lists lower-level ingredients. Add balanced8_multiplicity7_01 as the direct logical premise, or rewrite the proof to derive the seven partitions explicitly from the declared inputs."
+      recorded_at: "2026-09-30T13:51:23.906403+00:00"
+      worker_id: 665
+  audit_resolution:
+    claim_id: 371
+    detail: "Independent check passed. Choose seven balanced 4|4 partitions, yielding fourteen distinct complement-paired Hamiltonian four-sides. If any two Hamiltonian four-sets meet in three vertices, the conclusion holds. Under the contrary assumption that no such adjacent pair exists, the 14 selected sides contain 14*4=56 distinct triples, hence form a 3-(8,4,1) block family. For any fixed pair {u,v}, exactly three selected blocks contain it, while certified fixed-pair orientation classes on the other six vertices produce at least C(s,2)+C(6-s,2)>=6 Hamiltonian four-sets through {u,v}. Any additional such four-set shares a triple with its unique selected block, contradicting the no-adjacent-pair assumption. A packaging issue was recorded because the proof directly cites balanced8_multiplicity7_01 without declaring it as a direct dependency."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:51:26.537036+00:00"
+    worker_id: 665
+  last_audit_observation:
+    claim_id: 371
+    detail: "Independent check passed. Choose seven balanced 4|4 partitions, yielding fourteen distinct complement-paired Hamiltonian four-sides. If any two Hamiltonian four-sets meet in three vertices, the conclusion holds. Under the contrary assumption that no such adjacent pair exists, the 14 selected sides contain 14*4=56 distinct triples, hence form a 3-(8,4,1) block family. For any fixed pair {u,v}, exactly three selected blocks contain it, while certified fixed-pair orientation classes on the other six vertices produce at least C(s,2)+C(6-s,2)>=6 Hamiltonian four-sets through {u,v}. Any additional such four-set shares a triple with its unique selected block, contradicting the no-adjacent-pair assumption. A packaging issue was recorded because the proof directly cites balanced8_multiplicity7_01 without declaring it as a direct dependency."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:51:26.537036+00:00"
+    worker_id: 665
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-10-01T01:01:13.82212+00:00"
+  recomposition_audit:
+    classified_at: "2026-09-30T13:08:55.359103+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+object_type: "research"
+origin_worker_id: 708
+parent_id: "smallset01"
+position: 0
+research_interface:
+  consumer: "balanced-cover mobility; order-eleven barriers; adjacent-window amplification"
+  given: "any eight-vertex boundary tournament"
+  produces: "two Hamiltonian four-sets sharing a three-vertex core"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every eight-vertex boundary tournament has adjacent Hamiltonian four-windows"
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every eight-vertex boundary tournament has adjacent Hamiltonian four-windows"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 10

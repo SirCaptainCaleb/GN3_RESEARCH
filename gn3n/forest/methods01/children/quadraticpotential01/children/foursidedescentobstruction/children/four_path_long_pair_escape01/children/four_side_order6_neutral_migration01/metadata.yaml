@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T19:04:40.230334+00:00"
+id: "four_side_order6_neutral_migration01"
+last_elevation_revision: 8737
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T19:04:40.230334+00:00"
+  audit_resolution:
+    claim_id: 194
+    detail: "Independent check passed. Four-of-six applied to U, with the two endpoint deletions bad, forces all four U-x deletions Hamiltonian. If U is non-Hamiltonian, the four-good-deletion theorem gives relative-order disagreement. If U is Hamiltonian, U|M is a legal repartition of X|P and 4^2+6^2=6^2+4^2, so the move is exactly Phi-neutral and migrates the four-side to the inherited interior M."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:31:04.788671+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 194
+    detail: "Independent check passed. Four-of-six applied to U, with the two endpoint deletions bad, forces all four U-x deletions Hamiltonian. If U is non-Hamiltonian, the four-good-deletion theorem gives relative-order disagreement. If U is Hamiltonian, U|M is a legal repartition of X|P and 4^2+6^2=6^2+4^2, so the move is exactly Phi-neutral and migrates the four-side to the inherited interior M."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:31:04.788671+00:00"
+    worker_id: 665
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T19:09:53.568115+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 708
+parent_id: "four_path_long_pair_escape01"
+position: 10
+research_interface:
+  consumer: "boundary order-six four-side analysis; neutral-plateau transport; endpoint transport"
+  given: "a four-side beside a six-vertex path in the hard branch where adjoining either displayed endpoint to the four-side is non-Hamiltonian"
+  produces: "explicit order disagreement or a Phi-neutral 4|6 to 6|4 migration moving the four-side onto the path interior"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The order-six endpoint-hard branch gives order disagreement or a neutral four-side migration."
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The order-six endpoint-hard branch gives order disagreement or a neutral four-side migration"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:53:57.606786+00:00"
+version: 7

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T21:48:30.377717+00:00"
+id: "1000707"
+last_elevation_revision: 8453
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 255
+    detail: "Normalized the ambiguous title terminology and placed the theorem under its actual producer reversal_global_frontier01; the mathematical statement and proof content are unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 255
+    detail: "Normalized the ambiguous title terminology and placed the theorem under its actual producer reversal_global_frontier01; the mathematical statement and proof content are unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology repair: replace ambiguous kernel wording and normalize complete reverse fan to the canonical project term; mathematics unchanged."
+    recorded_at: "2026-09-29T12:07:25.93066+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 681
+object_type: "research"
+origin_worker_id: 586
+parent_id: "reversal_global_frontier01"
+position: 0
+research_interface:
+  consumer: "shortest grand-theorem proof composition; bounded reversal frontier"
+  given: "the matching-block four-vertex branch of the reversed-edge classification, especially its complete reverse fan"
+  need: "the reversal route now has no separate matching-block residue; consume the positioned Hamiltonian 4/5 support through small-side/complement transport"
+  produces: "a Hamiltonian four- or five-set containing at least three vertices of the matching-block kernel, with non-Hamiltonian path-cover-two complement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A matching-block reversal four-set always extends to a Hamiltonian four- or five-set"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A matching-block reversal four-set always extends to a Hamiltonian four- or five-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T12:17:08.199921+00:00"
+version: 12

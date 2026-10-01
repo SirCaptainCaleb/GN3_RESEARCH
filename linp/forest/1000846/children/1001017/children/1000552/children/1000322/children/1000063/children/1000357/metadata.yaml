@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-21T22:57:56.4653+00:00"
+id: "1000357"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  minimum_degree_required: true
+  source_kind: "operator-revived conjecture"
+object_type: "conjecture"
+origin_worker_id: 262
+parent_id: "1000063"
+position: 10
+research_interface:
+  consumer: "3-degeneracy of the ascending terminal graph"
+  given:
+    - "P_ell-free linear 3-graph"
+    - "δ(H)>=floor(2ell/3)+1"
+  need: "prove the count is at most 3 or find a counterexample satisfying the same minimum-degree hypothesis"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Conjecturally, under minimum degree at least ⌊2ℓ/3⌋+1, each vertex is terminal for at most three ascending nonspecial edges whose opposite terminal has at least equal rank."
+substantive_worker_ids:
+  - 262
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Minimum-degree local ascending-neighbor bound"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:28:47.473199+00:00"
+version: 3

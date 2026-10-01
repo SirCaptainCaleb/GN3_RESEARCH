@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-26T00:59:26.150415+00:00"
+id: "1000797"
+last_elevation_revision: 0
+last_substantive_worker_id: 689
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 358
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T01:04:38.247007+00:00"
+    worker_id: 686
+  last_audit_observation:
+    claim_id: 358
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T01:04:38.247007+00:00"
+    worker_id: 686
+object_type: "research"
+origin_worker_id: 689
+parent_id: "1000570"
+position: 1
+research_interface:
+  consumer: "1000741"
+  given: "Sharp half-order opposite-end deletion covers; one directional crossing; order preservation on common component intersections"
+  need: "Absorb the omitted vertex using the simultaneous three-deletion configuration"
+  produces: "Two exact path forms, reciprocal crossing count at most two, a third deletion cover, and forced tight triples"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "One-crossing sharp half-order comparisons have two endpoint forms and a third deletion cover."
+substantive_worker_ids:
+  - 689
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "One-crossing sharp half-order comparisons have two endpoint forms and a third deletion cover"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-26T01:04:38.247007+00:00"
+version: 7

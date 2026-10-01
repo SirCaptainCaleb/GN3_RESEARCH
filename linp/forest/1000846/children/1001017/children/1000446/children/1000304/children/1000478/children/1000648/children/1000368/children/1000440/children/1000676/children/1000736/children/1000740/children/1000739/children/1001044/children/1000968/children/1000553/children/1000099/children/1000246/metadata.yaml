@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T03:57:34.434181+00:00"
+id: "1000246"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "894e0ea7-4548-4e31-ae98-6b2d0c57883a"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:53:05.149991+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "894e0ea7-4548-4e31-ae98-6b2d0c57883a"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:53:05.149991+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000099"
+position: 0
+research_interface:
+  consequence: "The second rank-five competitor has only two central-tail geometries: it contains the high joint c, or else its only contact in g2∪g3∪g4 is private(g4)."
+  consumer:
+    - "p=5 4455 elimination"
+  given:
+    - "1734829a2326 terminal-a high-joint profile"
+    - "terminal-tail blocker lemma"
+  next_need: "Analyze the c∈h branch as the triangle f_a-g3-h with joints a,c,v. Analyze the private-g4 branch using the other non-v vertex of h: if it is off P, P with h gives a wrong entrance; if it lies in g1, obtain a rigid two-contact competitor with contacts g1,g4,e5."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In the terminal-left 4455 branch the second rank-five edge either uses c or is pushed to the private g4 slot."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "In the terminal-left 4455 branch the second rank-five edge either uses c or is pushed to the private g4 slot"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

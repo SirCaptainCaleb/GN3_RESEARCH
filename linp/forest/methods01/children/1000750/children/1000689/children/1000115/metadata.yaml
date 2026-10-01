@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 5
+created_at: "2026-09-22T14:52:13.597919+00:00"
+id: "1000115"
+last_elevation_revision: null
+last_substantive_worker_id: 249
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "17c0065e-2570-45c0-ba58-ae2f1e0c899f"
+    detail: "Checked the repaired implication cycle internally. Sperner=>Connector uses component facet reachability and a pigeonhole edge in a fully labeled simplex; Connector=>Hex uses the standard simplex augmentation; Hex=>Pouzet forces a sign change along a monochromatic coordinate path; Pouzet=>Brouwer now uses the valid coordinate-max uniform-continuity contradiction; Brouwer=>Sperner uses the cyclic-successor piecewise-affine map and the boundary-face invariance argument. No prohibited terminology detected."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T03:42:45.913377+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_audit_observation:
+    claim_id: "17c0065e-2570-45c0-ba58-ae2f1e0c899f"
+    detail: "Checked the repaired implication cycle internally. Sperner=>Connector uses component facet reachability and a pigeonhole edge in a fully labeled simplex; Connector=>Hex uses the standard simplex augmentation; Hex=>Pouzet forces a sign change along a monochromatic coordinate path; Pouzet=>Brouwer now uses the valid coordinate-max uniform-continuity contradiction; Brouwer=>Sperner uses the cyclic-successor piecewise-affine map and the boundary-face invariance argument. No prohibited terminology detected."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T03:42:45.913377+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_local_audit_repair:
+    reason: "Substantive repair of Pouzet=>Brouwer: the source-level <90 degree nearest-axis claim is false in dimensions >=3. Replaced it with the correct dimension-dependent separation theta_d=arccos((d-2)/d), proved by a coordinate-max/Cauchy-Schwarz bound. Also made explicit that Brouwer transfers from the box to the simplex by homeomorphism."
+    recorded_at: "2026-09-25T03:29:53.461131+00:00"
+    worker_id: "234a62d6-5248-43b9-87ff-446043628031"
+  proof_import: "short implication cycle paraphrased in full"
+  theorems:
+    - "Sperner"
+    - "Connector"
+    - "Hex"
+    - "Pouzet"
+    - "Brouwer"
+  url: "https://www.cs.uaf.edu/~hartman/pouzethex.pdf"
+object_type: "research"
+origin_worker_id: 195
+parent_id: "1000689"
+position: 1
+research_interface:
+  consumer:
+    - "finite-state path obstruction search"
+    - "product/blow-up construction analysis"
+  working_route: "encode path states in a box/simplex and force either a monochromatic connector or adjacent opposite local directions"
+research_level: "abstraction"
+semantic_container_text: null
+simplified_statement: "Sperner, the Connector Theorem, multidimensional Hex, Pouzet’s lattice-direction lemma, and Brouwer’s fixed-point theorem form a short implication cycle with reusable finite combinatorial steps."
+substantive_worker_ids:
+  - 195
+  - 249
+  - 184
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Sperner--Connector--Hex--Pouzet--Brouwer equivalence toolkit"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T16:43:43.904311+00:00"
+version: 11

@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T19:59:33.479146+00:00"
+id: "1000491"
+last_elevation_revision: null
+last_substantive_worker_id: 250
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:04:47.535287+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 250
+parent_id: "1000512"
+position: 0
+research_interface:
+  consequence: "At global maximum rank, the special branch is an all-top branch rather than a separate geometric case."
+  consumer:
+    - "top-rank rotation output classification"
+    - "top-potential induced core"
+  given:
+    - "7235fdc47d1a special iff multiple longest-path entrance labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every special edge of globally maximum rank L has all three vertices of vertex rank L."
+substantive_worker_ids:
+  - 250
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every special globally top-rank edge is all-top"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:03:22.295525+00:00"
+version: 5

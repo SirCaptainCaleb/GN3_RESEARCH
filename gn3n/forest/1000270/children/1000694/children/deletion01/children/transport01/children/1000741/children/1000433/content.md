@@ -1,0 +1,9 @@
+# Four clean endpoint replacements force doubled barriers at all four ends
+
+## Statement
+
+Let H be a minimum counterexample and let H-b=P|Q be a deletion cover with displayed paths P=(p_0,...,p_m), Q=(q_0,...,q_s), where |P|,|Q|>=4. Suppose that for each of the four displayed endpoints there is a deletion cover obtained by replacing that endpoint by b in the same endpoint position while leaving the opposite component unchanged. Then all eight endpoint-barrier triples are tight: (p_1,b,p_0), (p_1,p_0,b), (b,p_m,p_{m-1}), (p_m,b,p_{m-1}), and the four analogous triples on Q. Thus the completely clean four-endpoint replacement residue is a synchronized doubled-barrier state on both deletion-cover components.
+
+## Body
+
+We prove the assertion for P; the proof for Q is identical. Put R=(p_1,...,p_{m-1}), which has order at least two. The original path P gives tight paths (p_0,R) and (R,p_m). The clean replacement of p_0 by b gives (b,R), while the clean replacement of p_m by b gives (R,b). Apply the certified same-end-extender theorem 7b9f6ae39813 to R with left extenders p_0,b and right extender p_m. If H[V(P) union {b}] is Hamiltonian, a Hamilton path on that support together with the unchanged path Q is a spanning two-cover of H, impossible. Hence the non-Hamiltonian alternative of 7b9f6ae39813 holds, giving both (p_1,b,p_0) and (p_1,p_0,b) tight. Apply the symmetric half of 7b9f6ae39813 to R with right extenders p_m,b and left extender p_0. The same Hamiltonian alternative is impossible, so both (b,p_m,p_{m-1}) and (p_m,b,p_{m-1}) are tight. Repeating the argument on Q yields the remaining four triples. Every inference uses only displayed path tightness and boundary antisymmetry as encoded in 7b9f6ae39813; no cyclic rotation of an ordered triple is used.

@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T03:10:12.444794+00:00"
+id: "astra003singletonfirsttype"
+last_elevation_revision: 0
+last_substantive_worker_id: 702
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 316
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T08:29:27.334202+00:00"
+    worker_id: 643
+  last_audit_observation:
+    claim_id: 316
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T08:29:27.334202+00:00"
+    worker_id: 643
+object_type: "research"
+origin_worker_id: 702
+parent_id: "astra003quadraticpotential"
+position: 0
+research_interface:
+  consumer: "astraidea003 and transport01"
+  given: "a Phi-minimal trapped Astra-003 three-cover with a singleton component"
+  need: "couple the two first-type windows through the common singleton label"
+  produces: "first-type insertion obstructions on every other component of order at least three"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Quadratic-minimal singleton states force first-type insertion obstructions."
+substantive_worker_ids:
+  - 702
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quadratic-minimal singleton states force first-type insertion obstructions"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T00:09:06.849791+00:00"
+version: 6

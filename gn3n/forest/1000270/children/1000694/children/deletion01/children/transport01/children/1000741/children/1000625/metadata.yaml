@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 60
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 6
+created_at: "2026-09-21T00:11:53.85782+00:00"
+id: "1000625"
+last_elevation_revision: 0
+last_substantive_worker_id: 714
+legacy_id: null
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 275
+    detail: "Independent exact check passed. The three endpoint common-gap deletion covers supply the stated first triples, and c38e8b5c48ee supplies exactly the six indexed endpoint hooks. In the non-Hamiltonian four-set branch each remaining reversal pair is forced by an explicit forbidden Hamilton four-path, and the relabelling matches the canonical cyclic K4 orientation exactly. The Hamiltonian-complement and cyclic-kernel exterior-forcing consequences then follow from minimality, smallset01, and transport01."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-21T00:42:10.876639+00:00"
+    worker_id: 589
+  last_audit_observation:
+    claim_id: 275
+    detail: "Independent exact check passed. The three endpoint common-gap deletion covers supply the stated first triples, and c38e8b5c48ee supplies exactly the six indexed endpoint hooks. In the non-Hamiltonian four-set branch each remaining reversal pair is forced by an explicit forbidden Hamilton four-path, and the relabelling matches the canonical cyclic K4 orientation exactly. The Hamiltonian-complement and cyclic-kernel exterior-forcing consequences then follow from minimality, smallset01, and transport01."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-21T00:42:10.876639+00:00"
+    worker_id: 589
+object_type: "research"
+origin_worker_id: 714
+parent_id: "1000741"
+position: 1
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge"
+  given: "an endpoint common-gap compatible deletion triangle in a minimum counterexample"
+  need: "consume the Hamiltonian-four-set branch or the cyclic-kernel exterior forcing to obtain endpoint absorption / defect compression"
+  working_route: "compatibility endpoint triangle -> four-kernel frontier -> transport/exchange"
+research_level: "theorem"
+semantic_container_text: "Compatible-triangle and cyclic-four-kernel branch: endpoint-compatible triangles enter a radius-two stable cyclic-kernel residue, whose stable complements and comparison structure are used to force bounded disturbance or rule out neutral trapping."
+simplified_statement: "Endpoint compatible triangles enter the cyclic four-kernel frontier."
+substantive_worker_ids:
+  - 714
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint compatible triangles enter the cyclic four-kernel frontier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:52.602761+00:00"
+version: 12

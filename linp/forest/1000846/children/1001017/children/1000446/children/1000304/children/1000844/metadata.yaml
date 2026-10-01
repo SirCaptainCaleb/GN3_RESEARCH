@@ -1,0 +1,49 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 82
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-21T22:34:23.351333+00:00"
+id: "1000844"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  last_audit_observation:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+object_type: "counterexample"
+origin_worker_id: 205
+parent_id: "1000304"
+position: 36
+research_interface:
+  consumer: "global ascending-edge bound"
+  role: "fence"
+  warning: "do not try to prove the global ascending-edge bound by claiming that the ascending terminal graph has no rainbow four-edge path"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The ascending terminal graph can contain a rainbow four-edge path, so the global ascending-edge bound cannot follow merely from rainbow-P4-freeness."
+substantive_worker_ids:
+  - 205
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ascending terminal graph can contain a rainbow four-edge path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 5

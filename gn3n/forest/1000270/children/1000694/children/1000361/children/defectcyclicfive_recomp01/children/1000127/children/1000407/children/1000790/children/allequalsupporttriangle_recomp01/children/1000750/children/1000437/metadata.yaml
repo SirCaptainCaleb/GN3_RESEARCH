@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T03:08:06.2477+00:00"
+id: "1000437"
+last_elevation_revision: 0
+last_substantive_worker_id: 707
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 387
+    detail: "Greedy endpoint transport is valid: if every append succeeds it yields a spanning two-cover; the first failure reverses the terminal ordered edge by boundary antisymmetry. The initial-end version is the symmetric prepend argument."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+  last_audit_observation:
+    claim_id: 387
+    detail: "Greedy endpoint transport is valid: if every append succeeds it yields a spanning two-cover; the first failure reverses the terminal ordered edge by boundary antisymmetry. The initial-end version is the symmetric prepend argument."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+object_type: "research_note"
+origin_worker_id: 707
+parent_id: "1000750"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression; all-equal {1,1,1} middle-arm localization"
+  given: "a spanning three-cover X|C|D with X Hamiltonian, and a Hamilton order on X plus an endpoint c_0 of C that places c_0 at the matching end"
+  need: "use as a generic endpoint-transport bridge; in the all-equal middle arm, only the case where the complementary endpoint is internal in every Hamilton order of S_i+x remains outside this direct end-hook mechanism"
+  produces: "after greedily transporting a maximal prefix of C into X, an explicit tight triple reversing the terminal (or initial) edge of the enlarged Hamilton component"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An endpoint Hamilton order greedily transports a complementary path until a reverse end hook appears"
+substantive_worker_ids:
+  - 707
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An endpoint Hamilton order greedily transports a complementary path until a reverse end hook appears"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:50:29.886036+00:00"
+version: 3

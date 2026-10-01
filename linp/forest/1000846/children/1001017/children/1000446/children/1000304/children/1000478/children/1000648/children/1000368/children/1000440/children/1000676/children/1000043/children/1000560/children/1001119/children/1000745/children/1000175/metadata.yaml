@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T03:42:54.798673+00:00"
+id: "1000175"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Added missing depends_on edge to a6058546bd92 at exact math version 1."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Added missing depends_on edge to a6058546bd92 at exact math version 1."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Audit trust repair: proof explicitly uses this premise; add missing logical dependency with exact watched math version."
+    recorded_at: "2026-09-24T21:09:18.793982+00:00"
+    to_id: "1000745"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000745"
+position: 0
+research_interface:
+  consequence: "Every canonical three-edge entrance path for one low entrance must hit both the far rank-five pair and the opposite rank-four pair."
+  consumer:
+    - "p=5 4445 elimination"
+  given:
+    - "a6058546bd92 rank-five transversal"
+    - "canonical entrance paths"
+    - "rank-four edge bounds"
+  next_need: "Classify a 3-edge b-ending path avoiding {v,u_b} that hits both {d,w} and {c,u_c}. Use the fixed five-path positions: c is middle/far joint, u_c lies in g1∪g2, d,w lie in e5. Show the two required contacts force either a 4-edge path ending at b/c or a forbidden two-contact intersection with one of f_c,e5."
+  role: "p=5 4445 double-transversal reduction"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Canonical p=5 entrance paths satisfy two simultaneous two-point transversals."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Canonical p=5 entrance paths satisfy two simultaneous two-point transversals"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

@@ -1,0 +1,9 @@
+# An order-preserving leave-and-return excursion replaces one inherited edge
+
+## Statement
+
+In alternative (2) of 30d64951ab7e, assume additionally that all vertices of the inherited path R=(r_1,...,r_m) occur in the same relative order in their common T-component. Then every pair of consecutive maximal R-blocks along that T-component consists of consecutive intervals of the displayed order on R. In particular, if x is the last R-vertex of the first block and y the first R-vertex of the next block, then x=r_i and y=r_{i+1} for some i, and the intervening nonempty exterior segment of T is a detour replacing the single inherited ordinary edge xy.
+
+## Body
+
+Since every vertex of R lies in one T-component and their relative order there agrees with r_1,...,r_m, each maximal R-block is a contiguous interval of this linear order: if one block contained r_i and r_k with i<j<k but not r_j, then r_j must occur elsewhere in the same T-component, either before r_i or after r_k, contradicting preservation of the relative order. Now take two consecutive maximal R-blocks along the T-component. Their corresponding intervals in r_1,...,r_m cannot have any unused R-index strictly between them, because every R-vertex belongs to some block and any such intermediate block would occur between them in the preserved order. Hence the last index i of the first interval and the first index j of the second satisfy j=i+1. Therefore their boundary vertices x=r_i,y=r_{i+1} form an ordinary edge of the displayed inherited path, while T replaces that edge by the nonempty exterior segment between the two blocks.

@@ -1,0 +1,9 @@
+# Opposite four-bridges force a dense mixed three-label path-cover-two shell
+
+## Statement
+
+Assume outcome (3) of 3048ba8a0b2a with |P|,|Q|>=4, and write A=S_L, B=S_R for the two disjoint Hamiltonian four-sets and R=V(H)-(A union B). Then for every two-set T subset A there are at least two vertices b in B such that H[R union T union {b}] is non-Hamiltonian with path-cover number two. Symmetrically, for every two-set U subset B there are at least two vertices a in A such that H[R union U union {a}] is non-Hamiltonian with path-cover number two. Consequently the common residue R has at least twelve path-cover-two extensions of type 2A+1B and at least twelve of type 1A+2B. In particular some fixed b in B participates in at least three of the six A-pair extensions, and symmetrically some fixed a in A participates in at least three B-pair extensions.
+
+## Body
+
+Fix a two-set T subset A and put S=A-T, so |S|=2. Apply twofourhamdeletions01 to the disjoint sets S and B. For at least two vertices b in B, the five-set W=S union (B-{b}) is Hamiltonian. Its complement in H is exactly R union T union {b}. Since W is a proper Hamiltonian set in a minimum counterexample, this complement cannot be Hamiltonian and has path-cover number two by minimality. This proves the first assertion. Interchanging A and B proves the symmetric assertion. There are six pairs T in A, each with at least two successful b, giving at least twelve distinct extensions of type 2A+1B; similarly there are at least twelve of type 1A+2B. Counting the at least twelve incidences between the six A-pairs and four labels of B, some b has incidence degree at least three. The symmetric pigeonhole statement is identical.

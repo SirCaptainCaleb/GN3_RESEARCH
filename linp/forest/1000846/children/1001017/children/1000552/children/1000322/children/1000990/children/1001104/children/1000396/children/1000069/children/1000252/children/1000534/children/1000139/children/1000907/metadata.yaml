@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:27:07.106997+00:00"
+id: "1000907"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified each negative color class matching forces |S|>=2(a+r), while positive charge gives |S|<=R/a. Summing r<=R/(2a)-a rules out |N|<=2a and yields |N|>=2kappa+5."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified each negative color class matching forces |S|>=2(a+r), while positive charge gives |S|<=R/a. Summing r<=R/(2a)-a rules out |N|<=2a and yields |N|>=2kappa+5."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000139"
+position: 0
+research_interface:
+  consequence: "Failure of kappa+4 amplification cannot be supported by a few negative sources: the trapped state contains at least 2kappa+5 negative vertices (7,9,11 in the three residue classes). Each individual negative mass is at most R/[2(kappa+2)]-(kappa+2)."
+  consumer:
+    - "charge amplification"
+    - "top-two-layer exceptional state"
+  given:
+    - "76c961f0dc48 negative color matching lower bound"
+    - "1ecaca9f1fc7 support charge lower bound"
+  next_need: "Use overlap structure between at least 2kappa+5 large color matchings. Since color classes are matchings on a support S with |S|<=R/(kappa+2), heavy overlap in support is unavoidable. Extract a vertex of high G-degree or an alternating cycle among colors, then use full-rank terminal blocker geometry to force either kappa+4 charge or a forbidden P_ell."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The trapped-negative charge state needs at least two kappa plus five negative vertices."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The trapped-negative charge state needs at least two kappa plus five negative vertices"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

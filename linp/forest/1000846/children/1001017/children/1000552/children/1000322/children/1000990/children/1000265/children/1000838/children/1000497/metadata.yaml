@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-24T03:10:32.853825+00:00"
+id: "1000497"
+last_elevation_revision: null
+last_substantive_worker_id: 209
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e9b765db-58c9-4113-a688-84c4ad054425"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:03:50.165314+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "e9b765db-58c9-4113-a688-84c4ad054425"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:03:50.165314+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000838"
+position: 0
+research_interface:
+  consequence: "Eliminates ascending count A and imposes a quadratic global constraint coupling endpoint potentials to actual degrees. Near-uniform degree/potential saturation is impossible."
+  consumer:
+    - "E_ell equality layer"
+    - "potential concentration/stability"
+    - "weighted cut route"
+  given:
+    - "ascending source-to-terminal orientation"
+    - "0e550ff0eadd terminal capacity"
+    - "419519f0efa5 incident low-rank count"
+  next_need: "Combine with average degree 3d and average potential >=d+5/6. Use convexity plus degree-potential correlation bounds, or derive that enough high-degree vertices must have unusually large potential. Feed that high-potential mass into superlevel-cut recursion."
+  role: "equality-layer potential-flow inequality"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Ascending potential flow forces a quadratic degree-potential constraint."
+substantive_worker_ids:
+  - 225
+  - 209
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ascending potential flow forces a quadratic degree-potential constraint"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

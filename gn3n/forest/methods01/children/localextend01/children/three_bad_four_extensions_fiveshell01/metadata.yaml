@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T18:27:44.400687+00:00"
+id: "three_bad_four_extensions_fiveshell01"
+last_elevation_revision: 8826
+last_substantive_worker_id: 555
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T18:27:44.400687+00:00"
+  audit_resolution:
+    claim_id: 243
+    detail: "Directly follows by applying the certified two-bad-four-extensions lemma from localextend01 to each of the three exterior pairs {e,f}, {e,g}, and {f,g}. Each five-set is Hamiltonian with both path endpoints in the common tight three-set D."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:32:05.229822+00:00"
+    worker_id: 605
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 243
+    detail: "Directly follows by applying the certified two-bad-four-extensions lemma from localextend01 to each of the three exterior pairs {e,f}, {e,g}, and {f,g}. Each five-set is Hamiltonian with both path endpoints in the common tight three-set D."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:32:05.229822+00:00"
+    worker_id: 605
+object_type: "research"
+origin_worker_id: 555
+parent_id: "localextend01"
+position: 0
+research_interface:
+  consumer: "shared-endpoint fork residue; five-side support exchange; opposite-end path transport"
+  given: "a tight three-set with three distinct exterior vertices whose individual four-set extensions are all non-Hamiltonian"
+  need: "when two exterior labels are opposite ends of a displayed path, use the endpoint-controlled five-side to force a descending/neutral repartition or an interior full-path lock"
+  produces: "a complete triangle of Hamiltonian five-set pair extensions, each admitting a Hamilton order with both endpoints in the common three-set"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three bad extensions of a three-path force a complete Hamiltonian five-shell."
+substantive_worker_ids:
+  - 555
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three bad extensions of a three-path force a complete Hamiltonian five-shell"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:32:05.229822+00:00"
+version: 4

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-23T00:01:49.809559+00:00"
+id: "1000241"
+last_elevation_revision: null
+last_substantive_worker_id: 204
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6b180c46-3126-49de-8648-32f0ab983120"
+    detail: "Verified joint-XOR zero; the d=3 contradiction, the d=4 complementary-line/K3,3 reduction, and the displayed d=5 spanning witness mechanism are consistent."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T01:09:06.150556+00:00"
+    worker_id: "9f2c1a6e-7b4d-4f90-ae32-1d57c4b89061"
+  computation_used: false
+  last_audit_observation:
+    claim_id: "6b180c46-3126-49de-8648-32f0ab983120"
+    detail: "Verified joint-XOR zero; the d=3 contradiction, the d=4 complementary-line/K3,3 reduction, and the displayed d=5 spanning witness mechanism are consistent."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T01:09:06.150556+00:00"
+    worker_id: "9f2c1a6e-7b4d-4f90-ae32-1d57c4b89061"
+  role: "generalization/fence"
+  route: "additive_lower_bound"
+object_type: "reduction"
+origin_worker_id: 204
+parent_id: "1000135"
+position: 1
+research_interface:
+  consequence: "The proof generalizes as a normal form and invariant, but its contradiction is intrinsically the d=3,4 exceptional phenomenon."
+  consumer:
+    - "projective lower-bound route"
+    - "additive construction strategy"
+  given:
+    - "new P7 proof d593f8024a92"
+    - "explicit PG(4,2) spanning path bfc5f55c4e7d"
+  next_need: "Search non-projective additive domains where rank/nullity or circuit structure rigidifies Gamma_A(J) enough to make the four-point endpoint residue impossible."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For full projective Boolean systems, the joint-XOR obstruction rules out spanning paths in dimensions 3 and 4, while the mechanism fails from dimension 5 onward."
+substantive_worker_ids:
+  - 204
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The new projective proof explains exactly the d=3 and d=4 exceptional dimensions"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-25T11:22:15.881483+00:00"
+version: 6

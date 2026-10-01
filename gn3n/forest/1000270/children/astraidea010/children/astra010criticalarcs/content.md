@@ -1,0 +1,9 @@
+# A minimal non-edge-orderable three-cover witness is comparison-arc critical
+
+## Statement
+
+Suppose some n-vertex boundary tournament has path-cover number three. Among all triples (H,F,<) where H is an n-vertex boundary tournament with pc(H)=3, F is a spanning three-path cover of H, and < is a strict total order on E(K_n) extending every comparison arc used by the displayed path orders of F, choose one minimizing the number b of comparison arcs of Gamma(H) that point backward relative to <. If b=0 then H is edge-orderable. If b>0, every backward comparison arc alpha is individually two-cover-critical: reversing alpha, and no other comparison, produces a boundary tournament H_alpha with path-cover number at most two. Moreover every spanning two-cover of H_alpha that is not already a two-cover of H must use the newly tight ordered triple corresponding to the reversed arc alpha.
+
+## Body
+
+The comparison arcs used by the three displayed path orders of F form a disjoint union of directed paths, hence are acyclic. Therefore there exists a strict total order < on E(K_n) extending all of them. Choose (H,F,<) globally with b minimal as stated. Let alpha be any comparison arc pointing backward relative to <. Since every comparison used by F points forward, alpha is not used by F. Reverse only alpha to obtain H_alpha. The same three displayed paths remain tight, so pc(H_alpha)<=3. Relative to the same total order <, all comparison directions except alpha are unchanged and alpha now points forward, so the number of backward comparisons is b-1. If pc(H_alpha)=3, then (H_alpha,F,<) contradicts the minimality of b. Hence pc(H_alpha)<=2. Finally, any two-cover of H_alpha that does not use the newly tight ordered triple created by reversing alpha uses only tight triples unchanged from H, and would therefore also be a two-cover of H, contradicting pc(H)=3. Thus every genuinely new two-cover after the flip uses the new triple.

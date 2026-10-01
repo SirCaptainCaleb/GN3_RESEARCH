@@ -1,0 +1,9 @@
+# Singleton ascending-terminal contacts: terminal-only contacts lie in a stricter upper-half band
+
+## Statement
+
+Let H be a finite linear 3-graph, let v have p=phi(v), and let P=(g_1,...,g_p) be any maximum p-edge path ending at v. Let e={x,v,u} be an ascending nonspecial edge of rank q, with unique entrance x and v terminal. Suppose e has exactly one off-v contact w with P. Let a be the first path-edge index containing w and b the last; thus b is a or a+1. Then b>=p-q+2. If w=x, then a<=q-1, hence q>=ceil((p+2)/2). If w=u, then a<=q-2, hence q>=ceil((p+3)/2). In particular terminal-only singleton contacts are excluded from the bottom charged-rank boundary; at p=2q-2 any singleton contact must be the entrance.
+
+## Body
+
+The last edge g_p of P is snake-incoming at v and has rank at least p. Apply the certified terminal tail-blocker lemma c0798e59ef02 to e and g_p. Since e has only one off-v contact w with P, one of the path edges containing w lies among g_{p-q+2},...,g_{p-1}; therefore the last occurrence index satisfies b>=p-q+2. Because a and b differ by at most one, a>=p-q+1. If w=x, stop the prefix at the first edge g_a containing x and append e. This is a linear path ending in e through its unique entrance, of length a+1, so a<=q-1. Hence p-q+1<=q-1, or p<=2q-2. If w=u, the same prefix followed by e enters e through a terminal. A q-edge path of this form would make u a second longest-path entrance, contradicting nonspecialness, so a+1<=q-1 and a<=q-2. Hence p-q+1<=q-2, or p<=2q-3. Thus terminal-only singleton contacts require q>=ceil((p+3)/2). At p=2q-2 the terminal-only alternative is impossible, so any singleton contact is x.

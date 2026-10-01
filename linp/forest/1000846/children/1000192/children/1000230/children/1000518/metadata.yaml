@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 3
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-23T21:09:35.147622+00:00"
+id: "1000518"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Checked the punctured cyclic STS(13) orbit decomposition and representative 5-edge paths; the listed paths are linear and give two distinct entrance labels for each orbit representative, which propagates by the order-three automorphism."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:11.776216+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  humanization_of: "1000589"
+  last_audit_observation:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Checked the punctured cyclic STS(13) orbit decomposition and representative 5-edge paths; the listed paths are linear and give two distinct entrance labels for each orbit representative, which propagates by the order-three automorphism."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:11.776216+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000230"
+position: 0
+research_interface:
+  consequence: "Human replacement for 8248fc8b6611 using multiplier symmetry and explicit P5 certificates."
+  consumer:
+    - "dense-core all-special conjecture"
+    - "minimum-degree local ascending-neighbor bound"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Deleting one point from the cyclic STS(13) produces a 12-vertex linear 3-graph in which every remaining edge has rank 5 and is special."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Human symmetry proof for the punctured cyclic STS(13) all-special calibration"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:00:14.185365+00:00"
+version: 4

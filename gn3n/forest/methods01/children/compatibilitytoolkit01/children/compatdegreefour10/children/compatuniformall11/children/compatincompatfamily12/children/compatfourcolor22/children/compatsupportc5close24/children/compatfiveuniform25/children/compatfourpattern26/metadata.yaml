@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 84
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T04:43:03.152552+00:00"
+id: "compatfourpattern26"
+last_elevation_revision: 0
+last_substantive_worker_id: 578
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 171
+    detail: "With no uniform triple, the support-compatible graph is triangle-free and cycle-free by cycle closure, hence a forest; its complement is triangle-free, so alpha<=2. The only four-vertex forests with alpha<=2 are P4 and 2K2."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:23:20.08573+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 171
+    detail: "With no uniform triple, the support-compatible graph is triangle-free and cycle-free by cycle closure, hence a forest; its complement is triangle-free, so alpha<=2. The only four-vertex forests with alpha<=2 are P4 and 2K2."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:23:20.08573+00:00"
+    worker_id: 693
+object_type: "research"
+origin_worker_id: 578
+parent_id: "compatfiveuniform25"
+position: 0
+research_interface:
+  consumer: "the remaining 13-to-16-label compatibility branch; combine red support switches with blue order transport"
+  given: "four pairwise incompatible deletion covers with no uniform incompatibility triple"
+  produces: "their support-compatibility graph is P4 or 2K2"
+research_level: "lemma"
+semantic_container_text: "Exceptional four-cover compatibility patterns: when four incompatible deletion covers have no uniform triple, only P4/2K2-type support patterns survive; mixed triples and paired-switch corridors normalize those exceptions toward core disagreement or controlled support switching."
+simplified_statement: "Four incompatible deletion covers without a uniform triple have only two support patterns"
+substantive_worker_ids:
+  - 578
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four incompatible deletion covers without a uniform triple have only two support patterns"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T21:59:57.26387+00:00"
+version: 9

@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T21:33:47.114194+00:00"
+id: "hardreversal_pairgrid01"
+last_elevation_revision: 0
+last_substantive_worker_id: 703
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 75
+    detail: "Independent reconstruction verifies that the three-vertex orientation tournament always yields two four-paths ordering a common pair oppositely."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+  derived_from_pair_extension_grid: true
+  last_audit_observation:
+    claim_id: 75
+    detail: "Independent reconstruction verifies that the three-vertex orientation tournament always yields two four-paths ordering a common pair oppositely."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+object_type: "research"
+origin_worker_id: 703
+parent_id: "1000540"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression; shortest grand-theorem proof composition"
+  given: "the complete endpoint pair-extension grid produced by a maximal unresolved endpoint reversal"
+  produces: "two explicit Hamiltonian four-paths on at most five vertices with order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The hard endpoint-pair grid forces order disagreement on five vertices."
+substantive_worker_ids:
+  - 703
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The hard endpoint-pair grid forces order disagreement on five vertices"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:02:17.962733+00:00"
+version: 11

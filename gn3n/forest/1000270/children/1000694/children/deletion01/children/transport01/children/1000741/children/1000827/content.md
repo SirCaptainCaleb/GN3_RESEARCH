@@ -1,0 +1,9 @@
+# An intact surviving endpoint path forces a bounded reverse restoration triple
+
+## Statement
+
+Let H be a boundary tournament with path-cover number greater than two. Let A=(d,a_1,...,a_m), m>=2, be a tight path, and let T=P|Q be a two-path cover of H-d. Suppose the surviving path (a_1,...,a_m) occurs as one contiguous block of one T-component in the inherited order. Then T exposes an explicit tight reverse triple involving d and the boundary immediately preceding that block. More precisely, if u is the predecessor of a_1 in its T-component and v is the predecessor of u when it exists, then at least one of (a_1,d,u) or, when v exists, (d,u,v) is tight.
+
+## Body
+
+The surviving A-block cannot be initial in its T-component. If it were initial, prepend d. The only new consecutive triple is (d,a_1,a_2), which is tight because A is tight, so together with the unchanged other T-component this would give a spanning two-path cover of H, contrary to the hypothesis. Thus the block has an immediate predecessor u; let v be the predecessor of u if one exists. Insert d immediately between u and a_1. Every consecutive triple remains inherited from T or A except possibly (v,u,d), when v exists, and (u,d,a_1); the triple (d,a_1,a_2) is inherited from A and is tight. If all existing new predecessor-side triples were tight, the modified component together with the unchanged other T-component would two-cover H. Hence at least one predecessor-side triple is non-tight. Boundary antisymmetry reverses a failed (u,d,a_1) to the tight triple (a_1,d,u), and reverses a failed (v,u,d) to the tight triple (d,u,v).

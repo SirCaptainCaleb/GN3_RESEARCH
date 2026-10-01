@@ -1,0 +1,9 @@
+# A locally minimal fixed-endpoint matching residue reduces to two oriented obstruction pairs from order six
+
+## Statement
+
+Let H be a minimum counterexample and let C=X|P|Q minimize quadratic potential within its connected pairwise-repartition component, where X is a Hamiltonian four-path and P=(p_1,...,p_m) has m>=6. Put M=(p_2,...,p_{m-1}) and U=X union {p_1,p_m}. Assume U is non-Hamiltonian, U-p_1 and U-p_m are non-Hamiltonian, U-x is Hamiltonian for every x in X, and the graph J on X defined by xy in E(J) iff U-{x,y} is Hamiltonian is a perfect matching. Then J is exactly the two fixed-pair orientation classes C_+,C_- of order two. Moreover H[V(M) union {x}] is non-Hamiltonian for every x in X, so all four labels are noninsertable into M. For each orientation class {y,z}, the two failed-insertion obstructions on M obey the complete two-label menu from 0425e03e2aa3 and 36fccff06d48: a first-type Hamiltonian/cyclic four-set, a same-gap Hamiltonian four-set, a separated-gap interval path, or at adjacent gaps a Hamiltonian five-set or explicit cross triple.
+
+## Body
+
+The orientation conclusion is fixedpair_perfect_matching_orientation01. Fix x in X. Because U-x is Hamiltonian, if M+x were Hamiltonian then (U-x)|(M+x) would repartition X|P with sizes (5,m-1) instead of (4,m), changing Phi by 10-2m<0 for every m>=6, contradicting componentwise minimality. Thus every x is noninsertable into M. Apply insert01 to the two labels in either orientation class. A first-type obstruction gives the Hamiltonian/cyclic four-set alternative via 0425e03e2aa3. If both are second-type, 36fccff06d48 gives the same-gap, separated-gap, and adjacent-gap alternatives. No step uses m>=7.

@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-25T21:20:17.796574+00:00"
+id: "1000226"
+last_elevation_revision: null
+last_substantive_worker_id: 227
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9190b496-b5f8-4582-b051-6559035e225f"
+    detail: "Boundary-aware reconstruction is valid. If neither adjacent parent is the host last edge, the two exact contacts supplied by 608468bb403b close the usual host-segment cycle. If one adjacent parent equals h, the other has a genuine exact contact c; choosing the last host edge containing c makes E_j,g_b,...,g_p (or symmetrically E_{j+1},...) a clean cycle, and f2925a904b8e gives the stated length bound."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:47:24.828826+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "9190b496-b5f8-4582-b051-6559035e225f"
+    detail: "Boundary-aware reconstruction is valid. If neither adjacent parent is the host last edge, the two exact contacts supplied by 608468bb403b close the usual host-segment cycle. If one adjacent parent equals h, the other has a genuine exact contact c; choosing the last host edge containing c makes E_j,g_b,...,g_p (or symmetrically E_{j+1},...) a clean cycle, and f2925a904b8e gives the stated length bound."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:47:24.828826+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1000433"
+position: 0
+research_interface:
+  consequence: "The last-edge multiplicity convention does not destroy cycle closure; it changes the two-contact cycle into a one-contact terminal host-segment cycle."
+  consumer:
+    - "U_11 collision cycle packing"
+    - "rank-sum collision dichotomy"
+    - "post-43/48 terminal-shadow obstruction"
+  given:
+    - "608468bb403b boundary-aware exact-contact theorem"
+    - "f2925a904b8e nonspecial cycle-rank bound"
+  next_need: "Use this boundary-aware cycle form downstream rather than assuming two genuine off-endpoint contacts."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every interior U_11 color-terminal collision closes a local linear cycle, including the last-edge boundary."
+substantive_worker_ids:
+  - 220
+  - 227
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every interior U_11 color-terminal collision closes a local linear cycle, including the last-edge boundary"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

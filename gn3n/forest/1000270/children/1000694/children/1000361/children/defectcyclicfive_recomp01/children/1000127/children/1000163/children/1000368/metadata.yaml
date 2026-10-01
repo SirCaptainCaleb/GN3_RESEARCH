@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 86
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-29T05:51:25.22562+00:00"
+id: "1000368"
+last_elevation_revision: 8151
+last_substantive_worker_id: 683
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 426
+    detail: "Replaced an obsolete/nonexistent span-three theorem nickname by the actual general theorem 33b80d34aad4 and recorded that dependency."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:29:46.669798+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 426
+    detail: "Replaced an obsolete/nonexistent span-three theorem nickname by the actual general theorem 33b80d34aad4 and recorded that dependency."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:29:46.669798+00:00"
+    worker_id: 664
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Audit repair: preserve the mathematical claim while replacing obsolete references or ambiguous project vocabulary by the precise current statement."
+    recorded_at: "2026-09-29T12:21:27.534505+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 664
+object_type: "research"
+origin_worker_id: 683
+parent_id: "1000163"
+position: 7
+research_interface:
+  consumer: "deletion transport and defect compression"
+  given: "any deletion two-cover in any boundary tournament with path-cover number above two"
+  need: "consume the bounded five-set/four-set alternatives globally"
+  produces: "structural deletion trichotomy without order-minimality, plus the synchronized no-five-set residue"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every deletion two-cover in a tournament with path-cover number above two yields a central five-set, an outer five-set, or two opposite four-sets"
+substantive_worker_ids:
+  - 683
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every deletion two-cover in a tournament with path-cover number above two yields a central five-set, an outer five-set, or two opposite four-sets"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T12:29:46.669798+00:00"
+version: 7

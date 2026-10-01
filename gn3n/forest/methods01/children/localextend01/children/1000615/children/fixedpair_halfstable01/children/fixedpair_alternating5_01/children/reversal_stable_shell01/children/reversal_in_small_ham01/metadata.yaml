@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T01:04:36.879518+00:00"
+id: "reversal_in_small_ham01"
+last_elevation_revision: 0
+last_substantive_worker_id: 703
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 75
+    detail: "Independent reconstruction verifies the six-set/five-set dichotomy via four-of-six and preserves the full reversing triple in the Hamiltonian five-set branch."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+  last_audit_observation:
+    claim_id: 75
+    detail: "Independent reconstruction verifies the six-set/five-set dichotomy via four-of-six and preserves the full reversing triple in the Hamiltonian five-set branch."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:27:15.715501+00:00"
+    worker_id: 683
+  reversal_inside_hamiltonian_support: true
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T15:07:34.968973+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 703
+parent_id: "reversal_stable_shell01"
+position: 0
+research_interface:
+  consumer: "endpoint transport / defect compression; five-side quadratic transport; reversal consumption"
+  given: "an arbitrary hypothetical minimum counterexample"
+  produces: "either a Hamiltonian six-side with path-cover-two complement, or a Hamiltonian five-side with path-cover-two complement that literally contains a genuine reversing tight triple"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every minimum counterexample has a Hamiltonian five- or six-set carrying a genuine reversal"
+substantive_worker_ids:
+  - 703
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every minimum counterexample has a Hamiltonian five- or six-set carrying a genuine reversal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T15:07:34.968973+00:00"
+version: 8

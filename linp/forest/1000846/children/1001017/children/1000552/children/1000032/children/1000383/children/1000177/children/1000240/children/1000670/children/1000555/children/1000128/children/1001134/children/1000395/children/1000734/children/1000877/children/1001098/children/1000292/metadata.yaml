@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+created_at: "2026-09-24T18:37:25.910175+00:00"
+id: "1000292"
+last_elevation_revision: null
+last_substantive_worker_id: 250
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8bec4675-71d1-4846-a763-c8ff09943afe"
+    detail: "Independent check passes. a5700a110001 supplies a pair Q_0,R with the stated 5/4 overlap and 25/88 whole-pair count. Every clean internal lens is balanced by 390e818020e1, so replacing the Q-side by the R-side preserves maximum length. Cleanliness makes the removed Q-side interior disjoint from R, hence no previous common vertex is lost, while a genuine distinct R-side contributes at least one new common vertex. Therefore overlap with R strictly increases and all previously whole distinguished pairs remain common. Finiteness forces termination at a lens-free maximum path with both lower bounds preserved. Terminology conforms to the project dictionary."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:51:41.598265+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_audit_observation:
+    claim_id: "8bec4675-71d1-4846-a763-c8ff09943afe"
+    detail: "Independent check passes. a5700a110001 supplies a pair Q_0,R with the stated 5/4 overlap and 25/88 whole-pair count. Every clean internal lens is balanced by 390e818020e1, so replacing the Q-side by the R-side preserves maximum length. Cleanliness makes the removed Q-side interior disjoint from R, hence no previous common vertex is lost, while a genuine distinct R-side contributes at least one new common vertex. Therefore overlap with R strictly increases and all previously whole distinguished pairs remain common. Finiteness forces termination at a lens-free maximum path with both lower bounds preserved. Terminology conforms to the project dictionary."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:51:41.598265+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+object_type: "corollary"
+origin_worker_id: 250
+parent_id: "1001098"
+position: 0
+research_interface:
+  consequence: "Strengthens the labeled lens-free residual from 7/88 whole pairs to 25/88, while retaining universal 5/4-o(1) vertex overlap."
+  consumer:
+    - "post-43/48 braid classification"
+    - "common-hub chord-order attack"
+  given:
+    - "a5700a110001 common-double-contact averaging and deterministic rail overlap"
+    - "390e818020e1 balance of clean lenses between maximum endpoint paths"
+  next_need: "Treat each retained pair {x_i,u_i} as the two contacts of the actual common-terminal ascending edge {x_i,v,u_i}. Prove an order/separation theorem for Omega(q) pairwise disjoint common-hub two-contact chords whose endpoints lie on both lens-free near-top rails."
+research_level: "lemma"
+semantic_container_text: "Lens-free whole-chord braid program: retain many distinguished source-terminal pairs, localize whole ascending chords on avoiding rails, and force source-rail returns, repeated intersections, rank-bounded cycles, or controlled exchange patterns."
+simplified_statement: "Lens-free near-top rails retain twenty-five-eighty-eighths whole distinguished pairs."
+substantive_worker_ids:
+  - 250
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Lens-free near-top rails retain twenty-five-eighty-eighths whole distinguished pairs"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T21:37:06.600883+00:00"
+version: 9

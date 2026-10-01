@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T13:31:52.629597+00:00"
+id: "compatmixedpaired40"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 231
+    detail: "The revised paired-transfer proof correctly splits according to c's class in the blue pair. In both cases support compatibility puts a,b in the same restoration class across F_a,F_b, and the two certified switches place both on the opposite class in F_c. It properly disclaims any slot conclusion from support compatibility alone."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:39:26.51734+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 231
+    detail: "The revised paired-transfer proof correctly splits according to c's class in the blue pair. In both cases support compatibility puts a,b in the same restoration class across F_a,F_b, and the two certified switches place both on the opposite class in F_c. It properly disclaims any slot conclusion from support compatibility alone."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:39:26.51734+00:00"
+    worker_id: 693
+  repair_note: "Removed equal/adjacent insertion-slot claim. That conclusion requires full compatibility, while F_a,F_b here are only support-compatible and order-incompatible. Replaced it with the complete support-level two-case classification."
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compatmixedtri37"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect compression"
+  given: "the common-core one-blue/two-red mixed incompatibility triangle"
+  need: "consume one of the two explicit paired-transfer support patterns using the blue pair's order disagreement and the complementary Hamiltonian/non-Hamiltonian support constraints"
+  produces: "two exact support-pattern cases for the paired transfer, with no unsupported insertion-slot relation"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A one-blue mixed triangle is a paired transfer to the opposite support"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A one-blue mixed triangle is a paired transfer to the opposite support"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 9

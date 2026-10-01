@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T05:26:16.612283+00:00"
+id: "1000665"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "90d413a1-5251-4e58-b3cc-47f91a4f3775"
+    detail: "Replaced prohibited physical-endpoint wording with standard ending-at/last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:13:33.119169+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "90d413a1-5251-4e58-b3cc-47f91a4f3775"
+    detail: "Replaced prohibited physical-endpoint wording with standard ending-at/last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:13:33.119169+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard ending-at/last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:12:16.368155+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "first lower-layer non-double normal form"
+  uses:
+    - "1000155"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000764"
+position: 0
+research_interface:
+  consequence: "At the first layer below the solved half-rank boundary, terminal-only witnesses are one-sided. A low rank-q terminal-only witness is uniquely pinned, while the two rightmost high-rank witness slots can only be low-potential entrances."
+  consumer:
+    - "defect-corrected two-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "phi(v)=2q-3"
+    - "chosen maximum endpoint path"
+    - "charged edge non-double on that path"
+  next_need: "Assume four non-double edges in ranks {q,q+1}. Use distinct witness packing plus the mixed distance-two rule 08f894b8cb5e. If either rightmost slot is occupied, it is a clean entrance and forbids a same-parity private predecessor; if both are unused, all four witnesses are packed into the five left terminal-capable slots and terminal-order constraints should force collision."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "At p=2q-3 terminal-only non-double witnesses are pushed to the left central slots."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At p=2q-3 terminal-only non-double witnesses are pushed to the left central slots"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

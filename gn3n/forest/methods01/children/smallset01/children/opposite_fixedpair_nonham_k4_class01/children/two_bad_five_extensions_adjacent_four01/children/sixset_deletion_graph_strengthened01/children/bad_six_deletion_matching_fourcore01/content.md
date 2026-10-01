@@ -1,0 +1,9 @@
+# A non-Hamiltonian six-set amplifies overlapping four-sets or has exactly four deletion labels forming a non-Hamiltonian core
+
+## Statement
+
+Let H be a minimum counterexample and U a non-Hamiltonian six-vertex set. Define D={d in U:H[U-{d}] is Hamiltonian} and the graph J on D by de in E(J) iff H[U-{d,e}] is Hamiltonian. Then |D|>=4 and delta(J)>=max{1,|D|-4}. Either J contains adjacent edges de,df, or |D|=4, J is a perfect matching, and D is a non-Hamiltonian matching-block K4. In the first case, W=U-{d,e} and W'=U-{d,f} are Hamiltonian four-sets meeting in three vertices, both with non-Hamiltonian complements of path-cover number two. Their five-vertex union F=U-{d} is Hamiltonian, and W,W',F each have a non-Hamiltonian complement of path-cover number two. In the matching case, writing U-D={a,b}, both D+{a}, D+{b} are non-Hamiltonian while all eight four-sets (D-{d})+{a}, (D-{d})+{b}, d in D, are Hamiltonian.
+
+## Body
+
+Apply sixset_deletion_graph_strengthened01 to U. It gives the degree bound and both the four-label restriction and matching-block structure in the case without adjacent edges. It also gives the eight Hamiltonian four-sets in that case. If de,df are adjacent edges, W=U-{d,e} and W'=U-{d,f} are Hamiltonian by definition and intersect in U-{d,e,f}, of order three. Their union F=U-{d} has order five and is already Hamiltonian because d belongs to D. Thus the Hamiltonian-five alternative in the statement always holds for this particular pair. Minimum-counterexample calculus in mincex01 gives non-Hamiltonian path-cover-two complements for W,W',F and for every other proper Hamiltonian support mentioned. These are proper because |H|>10. This additionally strengthens the earlier overlap-amplification menu: for adjacent deletion pairs indexed by D, the five-set union is Hamiltonian directly; no four-subset fallback is needed.

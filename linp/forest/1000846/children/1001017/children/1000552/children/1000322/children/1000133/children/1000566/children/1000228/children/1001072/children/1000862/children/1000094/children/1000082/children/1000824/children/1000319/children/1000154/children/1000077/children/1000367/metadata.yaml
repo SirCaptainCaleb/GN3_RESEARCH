@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T02:45:56.546262+00:00"
+id: "1000367"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "5ae8e502-9633-4e86-848c-b8764536ce7f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:20.388345+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "5ae8e502-9633-4e86-848c-b8764536ce7f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:20.388345+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000077"
+position: 0
+research_interface:
+  consequence: "The rigid branch has no remaining uncolored obstruction at all: some cut always supports both target and return adjacencies for the fixed-target 2-opt move. Only connector colors and the O(1) unsafe ports can prevent the entrance switch."
+  consumer:
+    - "decf9b49b8d7 fixed-target entrance switch"
+    - "zero-slack all-special route"
+  given:
+    - "fb4fc1ee4179 rigid half-neighborhood"
+    - "4596218dad6 contracted minimum degree"
+  next_need: "At an index i in A∩C, count the 3 target connectors y-T_i and all return connectors T_{i+1}-T_1. Show one pair satisfies the freed-color condition and avoids the at most one unsafe port at each of T_i,T_{i+1},T_1. If every i in A∩C fails, charge the failure to retained witness colors/unsafe ports and sum over the intersection."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Rigid zero-slack half-neighborhoods always contain an uncolored fixed-target 2-opt cut."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Rigid zero-slack half-neighborhoods always contain an uncolored fixed-target 2-opt cut"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

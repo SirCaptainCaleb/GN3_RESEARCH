@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-23T03:29:29.937057+00:00"
+id: "1000520"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "cab83ba4-815d-472d-b85c-7a96a1f4a6fb"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:43:55.765078+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "cab83ba4-815d-472d-b85c-7a96a1f4a6fb"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:43:55.765078+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    backfilled: true
+    classified_at: "2026-09-23T03:45:16.180482+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "1000937"
+    - "1000687"
+    - "1000852"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "1000336"
+position: 0
+research_interface:
+  consequence: "Every loss-one sink has an exact saturated cell-index graph and therefore exposes either a lossless double rotation or a nonlocal blocker."
+  consumer:
+    - "sharp ascending-rank conjecture"
+    - "Type-B alternate break"
+    - "second-level Posa expansion"
+  given:
+    - "boundary q=delta"
+    - "loss-one sink normal form"
+  next_need: "Analyze the minimal-loss nonlocal blocker; distance-two/private is the only nonlocal pattern producing loss one."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A loss-one safe sink has a saturated maximum-degree-two blocker index graph and must expose either a lossless double-blocker rotation or a nonlocal double blocker."
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Loss-one sinks have saturated index graphs forcing a nonlocal blocker or lossless rotation"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 14

@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T14:43:39.274519+00:00"
+id: "astra003mixedgrid"
+last_elevation_revision: 0
+last_substantive_worker_id: 702
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 368
+    detail: "Repeated bad extension of the Hamiltonian four-path Q by any two of a,b,c gives the two claimed Hamiltonian five-sets. Their complementary 3-sets yield legal 5|3 repartitions. In each resulting six-set, deleting either excluded label would make that label a reachable omission singleton; hence those are bad, and four-of-six makes them exactly the two bad deletions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T16:05:43.628331+00:00"
+    worker_id: 591
+  last_audit_observation:
+    claim_id: 368
+    detail: "Repeated bad extension of the Hamiltonian four-path Q by any two of a,b,c gives the two claimed Hamiltonian five-sets. Their complementary 3-sets yield legal 5|3 repartitions. In each resulting six-set, deleting either excluded label would make that label a reachable omission singleton; hence those are bad, and four-of-six makes them exactly the two bad deletions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T16:05:43.628331+00:00"
+    worker_id: 591
+object_type: "research"
+origin_worker_id: 702
+parent_id: "astra003eightcore_recomp01"
+position: 0
+research_interface:
+  consumer: "astraidea003 and endpoint-transport/defect-compression"
+  given: "the mutual 3x3 bad-extension core in the eight-label residue"
+  need: "use the common exact bad pair across the 3x2 grid to force endpoint/order structure or an excluded singleton"
+  produces: "six mixed 5|3 repartitions and six associated six-sets with exact common bad-deletion pair {t,u}"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The mutual bad-extension core generates six mixed 5|3 repartitions with exact excluded bad deletions."
+substantive_worker_ids:
+  - 702
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The mutual bad-extension core generates six mixed 5|3 repartitions with exact excluded bad deletions"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:14:07.334533+00:00"
+version: 8

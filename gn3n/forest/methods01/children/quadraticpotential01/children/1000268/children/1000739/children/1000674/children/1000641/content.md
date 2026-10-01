@@ -1,0 +1,9 @@
+# Every pair of equal-cover endpoint probes forces inherited-path splitting or order disagreement
+
+## Statement
+
+Let H be a minimum counterexample with an all-equal spanning three-cover A|B|C, and let a_1,a_r be the displayed endpoints of A. Choose arbitrary exact two-covers T_1 of H-a_1 and T_r of H-a_r. Then either (i) one of T_1,T_r has relative-order disagreement with one of the inherited displayed paths A-a_i, B, C on two vertices that it contains in one path component, or (ii) one of T_1,T_r splits at least one inherited displayed path class into at least two maximal monochromatic blocks. Equivalently, the two endpoint probes cannot both be block-faithful and inherited-order-preserving.
+
+## Body
+
+For either endpoint deletion cover T_i, color every surviving vertex by its inherited class A-a_i, B, or C and cut each T_i component at every ordinary edge joining different classes. If the vertices of some inherited class occur in a relative order different from the displayed path order, outcome (i) already holds. Assume no such disagreement. If some inherited class contributes at least two maximal monochromatic blocks, outcome (ii) holds. It remains to suppose, for contradiction, that neither outcome occurs in either endpoint cover. Then in each T_i all three nonempty inherited classes occur as exactly one contiguous block, each in its displayed order. Because T_i has exactly two nonempty path components and there are exactly three blocks total, one component consists of one block and the other consists of the other two blocks joined by exactly one ordinary cross-class edge. Hence each endpoint deletion cover has crossing count exactly one relative to the inherited three-class partition. The theorem cfd035e1c660 shows that two such unique-crossing endpoint probes on an all-equal three-cover force relative-order disagreement. This contradicts the standing assumption. Therefore splitting or order disagreement is unavoidable.

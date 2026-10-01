@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T02:32:00.748902+00:00"
+id: "1000132"
+last_elevation_revision: 0
+last_substantive_worker_id: 660
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 418
+    detail: "Independent check succeeds with the orientations exactly as written. Since t_{i+2} lies in E_i, the initial barrier gives (b_i,t_i,t_{i+2}); since t_i lies in E_{i+1}, the terminal barrier there gives (t_i,t_{i+2},a_{i+1}). These concatenate directly to the stated tight four-path. No cyclic rotation or reversal is used."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:34:27.260189+00:00"
+    worker_id: 652
+  exact_ordered_triples_only: true
+  last_audit_observation:
+    claim_id: 418
+    detail: "Independent check succeeds with the orientations exactly as written. Since t_{i+2} lies in E_i, the initial barrier gives (b_i,t_i,t_{i+2}); since t_i lies in E_{i+1}, the terminal barrier there gives (t_i,t_{i+2},a_{i+1}). These concatenate directly to the stated tight four-path. No cyclic rotation or reversal is used."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:34:27.260189+00:00"
+    worker_id: 652
+  noncomputational: true
+  scale_free: true
+object_type: "research"
+origin_worker_id: 660
+parent_id: "1000750"
+position: 0
+research_interface:
+  consumer: "all-equal {1,1,1} cube closure; endpoint transport and defect compression"
+  given: "the synchronized endpoint-barrier branch of the all-equal support triangle"
+  need: "combine the three Q_i through their cyclic t-label overlaps, or compare each Q_i with the inherited M/A path orders to force order disagreement, a bounded Hamiltonian support, or defect compression"
+  produces: "three exact mixed four-vertex tight paths Q_i=(b_i,t_i,t_{i+2},a_{i+1}) linking adjacent base components through two transferred labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Adjacent barrier families force three cyclic mixed four-paths"
+substantive_worker_ids:
+  - 660
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Adjacent barrier families force three cyclic mixed four-paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:34:27.260189+00:00"
+version: 4

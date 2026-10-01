@@ -1,0 +1,76 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-24T04:06:27.233846+00:00"
+id: "1000351"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Normalized last-vertex terminology and added exact depends_on edges to a57057ab0001 and a570ca900001."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Normalized last-vertex terminology and added exact depends_on edges to a57057ab0001 and a570ca900001."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record missing logical premise used by the proof."
+    recorded_at: "2026-09-24T21:10:59.177787+00:00"
+    to_id: "1000742"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited proof-process word \"physical\" with standard last-vertex language; no mathematical content changed."
+    recorded_at: "2026-09-24T21:07:40.810247+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_premise_impact_check:
+    checked_at: "2026-09-24T21:16:51.187949+00:00"
+    note: "Its proof uses only the local Type-A conclusions, unchanged in math_version 7; the new eta>=0 qualifier affects only the quantitative global half."
+    source_ids:
+      - "1000737"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000737"
+position: 0
+research_interface:
+  consequence: "Every Type-A vertex admits a rank-(p-1) terminal witness whose other 2p-6 terminal edges form an exact partition fan over all but one two-vertex precursor cell; only two double blockers are possible."
+  consumer:
+    - "general potential-oriented local bound"
+    - "Type-A stability"
+    - "rotation/blocker route"
+    - "grand 2/3 conjecture"
+  given:
+    - "a57057ab0001 Type-A three-layer incidence structure"
+    - "a570ca900001 incident low-rank capacity"
+  next_need: "Exploit the at least 2p-8 single blockers by rotations. Show many are safe or that unsafe single blockers must concentrate through the two exceptional-cell vertices. A linear number of safe rotations from every Type-A state would turn the local equality structure into global expansion."
+  role: "general Type-A saturated terminal fan"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Type-A vertices force an exact saturated rank-minus-one terminal fan."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Type-A vertices force an exact saturated rank-minus-one terminal fan"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 9

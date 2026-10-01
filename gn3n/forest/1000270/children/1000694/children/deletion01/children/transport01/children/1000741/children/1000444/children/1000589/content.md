@@ -1,0 +1,9 @@
+# An order-neutral minimum-side endpoint replacement is same-end and codegree one
+
+## Statement
+
+In the setting of 89d96023752d, suppose the deletion cover T of H-z lies in the support-compatible endpoint-restoration branch and preserves the inherited order on A=V(R)-{z}. If the restored label y occupies the endpoint opposite z, explicit order disagreement follows. Hence in the order-neutral branch y replaces z at the same displayed end. The two deletion covers H-y=R|Q and H-z=T are then fully compatible on H-{y,z}. Moreover, in any chosen deletion-cover compatibility graph containing these two states, the compatibility edge yz has at most one common neighbor: the unique vertex of R immediately inward from z.
+
+## Body
+
+Suppose first that z is terminal in R=(A,z). In the endpoint-restoration branch, T has support partition (A union {y})|Q and its A-vertices occur in the inherited order. If y is initial, then H-y contains the restored component (A,z) with z terminal, while H-z contains (y,A) with y initial. Deleting z from the first cover and y from the second leaves the same support partition A|Q with the same displayed A-order. The opposite-end equal-support theorem 9ba802a32c4e therefore forces order disagreement, contrary to the order-neutral hypothesis. Thus y must be terminal, so T=(A,y)|Q. The initial-z case is symmetric and forces y to be initial. In either case, deleting y from the first cover and z from the second leaves the identical ordered pair A|Q, so the two deletion covers are fully compatible. Now regard them as the chosen states F_y,F_z in any full compatibility graph containing these choices. The vertex z is a displayed endpoint of F_y. By the certified endpoint-edge codegree theorem 0f94f3d4dbbb, any deletion state F_w compatible with both F_y and F_z must have deletion label w equal to the unique inward neighbor of z on the displayed path R. Therefore the compatibility edge yz has codegree at most one.

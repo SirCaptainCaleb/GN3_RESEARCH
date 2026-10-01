@@ -1,0 +1,9 @@
+# The three-plus-two defect type directly enters the four-side obstruction engine
+
+## Statement
+
+Let H be a minimum counterexample and let pi be a minimum-defect-span ordering of cyclic defect type {3,2}. Then H contains a canonical Hamiltonian four-set S supported on the two endpoint pairs of pi, and H-S has path-cover number two. If n=|V(H)|>=15, then at least one of the two complementary paths has order at least six; consequently either a legal pairwise repartition strictly decreases the quadratic component-size potential, or the two endpoints of S are simultaneously noninsertable into one common inherited middle path and hence realize the universal paired-noninsertion finite transport menu.
+
+## Body
+
+By c7e2c2fae33f, both wrap triples (v_{n-1},v_n,v_1) and (v_n,v_1,v_2) are non-tight. Boundary antisymmetry therefore makes (v_1,v_n,v_{n-1}) and (v_2,v_1,v_n) tight, so S=(v_2,v_1,v_n,v_{n-1}) is a tight four-path. Since S is a proper Hamiltonian set in a minimum counterexample, mincex01 gives pc(H-S)=2; choose a two-cover P|Q of H-S. Thus S|P|Q is a spanning three-cover. If n>=15 then |P|+|Q|=n-4>=11, so one component, say P, has order at least six. Apply foursidedescentobstruction to S|P|Q. Either it gives a legal one-move strict decrease of Phi, or the two displayed endpoints of S are both noninsertable into the same inherited middle path M of P. In the latter case a8c9883902b1 applies to those two labels and M, yielding its finite menu: a Hamiltonian four-set, an exceptional cyclic four-kernel with universal one-vertex extension, a Hamiltonian five-set, a tight cross triple, or a direct tight interval connector.

@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T22:13:14.436992+00:00"
+id: "1000333"
+last_elevation_revision: null
+last_substantive_worker_id: 249
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 249
+parent_id: "1000985"
+position: 0
+research_interface:
+  consequence: "Every R-adjacency in the common-vertex skeleton is either metrically strict or maps to a Q-segment all of whose internal vertices are common."
+  consumer:
+    - "two-path braid classification"
+    - "post-43/48 overlap rigidity"
+  given:
+    - "overlap-maximal maximum path Q relative to maximum path R"
+    - "two consecutive common vertices on R"
+  next_need: "Sum or pack the strict-deficit intervals, and analyze overlap among the zero-deficit saturated Q-spans. A positive density of disjoint zero-deficit spans yields a common-vertex core; otherwise many R-adjacencies pay at least one edge of Q-distance deficit and should force high total variation in the common-vertex permutation."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Adjacent R-contacts either pay length deficit or saturate the Q-segment with common vertices."
+substantive_worker_ids:
+  - 249
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Adjacent R-contacts either pay length deficit or saturate the Q-segment with common vertices"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

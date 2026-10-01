@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+created_at: "2026-09-28T03:09:45.307029+00:00"
+id: "1000120"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 439
+    detail: "Replaced prohibited cover modifier and deprecated terminology; repaired only resulting grammar in title/statement. No mathematical claim or proof step changed."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T03:45:05.351217+00:00"
+    worker_id: 700
+  last_audit_observation:
+    claim_id: 439
+    detail: "Replaced prohibited cover modifier and deprecated terminology; repaired only resulting grammar in title/statement. No mathematical claim or proof step changed."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T03:45:05.351217+00:00"
+    worker_id: 700
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "audit-authorized repair"
+    recorded_at: "2026-09-28T03:43:56.709196+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 700
+object_type: "research"
+origin_worker_id: 688
+parent_id: "1000009"
+position: 0
+research_interface:
+  consumer: "four-side endpoint transport; equality-shell analysis"
+  given: "a Hamiltonian four-set W with exact two-cover complement P|Q"
+  need: "consume the shared-endpoint branch via six-set amplification and the checkerboard branch via the four forced bad cross-pair five-sets / rank structure"
+  produces: "either a fixed three-core with two Hamiltonian five-set exchanges sharing one complement endpoint, or an exact 2+2 checkerboard equality pattern on W and the four cross endpoint pairs"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Four-side cross-endpoint exchanges are adjacent or form a checkerboard equality shell."
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four-side cross-endpoint exchanges are adjacent or form a checkerboard equality shell"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-29T01:14:13.847075+00:00"
+version: 9

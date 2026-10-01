@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T01:55:46.694483+00:00"
+id: "1000221"
+last_elevation_revision: 0
+last_substantive_worker_id: 624
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 184
+    detail: "Compatibility-triangle localization puts d,y,z in one support and one insertion gap. In F_d, y and z must therefore be consecutive, so every neighborhood edge lies on one of the two anchor path orders and the neighborhood is a linear forest."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+  brainstorm_development: true
+  last_audit_observation:
+    claim_id: 184
+    detail: "Compatibility-triangle localization puts d,y,z in one support and one insertion gap. In F_d, y and z must therefore be consecutive, so every neighborhood edge lies on one of the two anchor path orders and the neighborhood is a linear forest."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+object_type: "research"
+origin_worker_id: 624
+parent_id: "compatneighborhood02"
+position: 0
+research_interface:
+  consumer: "anchored incompatibility forcing; same-path relocation branch; compatibility density"
+  given: "one anchor deletion cover F_d=P|Q and compatibility triangles through d"
+  need: "use separated neighbor labels along an anchor path to couple the corresponding relocations of d into endpoint transport or defect compression"
+  produces: "a one-dimensional embedding of the entire compatibility neighborhood into the displayed orders of P and Q"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An anchor compatibility neighborhood embeds in its two path orders"
+substantive_worker_ids:
+  - 624
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An anchor compatibility neighborhood embeds in its two path orders"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T13:37:52.308794+00:00"
+version: 5

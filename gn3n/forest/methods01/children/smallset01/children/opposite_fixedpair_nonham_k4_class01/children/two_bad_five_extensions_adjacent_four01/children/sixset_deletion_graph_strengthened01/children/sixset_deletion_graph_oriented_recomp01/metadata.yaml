@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-29T21:53:17.948217+00:00"
+id: "sixset_deletion_graph_oriented_recomp01"
+last_elevation_revision: 10287
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T21:53:52.617219+00:00"
+  audit_resolution:
+    claim_id: 60
+    detail: "Independent check passed. This faithfully composes the certified strengthened six-set deletion graph with the oriented matching-exception theorem. Adjacent Hamiltonian two-deletions give overlapping Hamiltonian K4s with Hamiltonian five-set union; otherwise the only possibility is the four-label non-Hamiltonian matching-block core with the canonical 2+2 fixed-pair orientation split and complete cross-hook rectangle."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:07:38.371502+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 60
+    detail: "Independent check passed. This faithfully composes the certified strengthened six-set deletion graph with the oriented matching-exception theorem. Adjacent Hamiltonian two-deletions give overlapping Hamiltonian K4s with Hamiltonian five-set union; otherwise the only possibility is the four-label non-Hamiltonian matching-block core with the canonical 2+2 fixed-pair orientation split and complete cross-hook rectangle."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T00:07:38.371502+00:00"
+    worker_id: 665
+object_type: "toolkit"
+origin_worker_id: 708
+parent_id: "sixset_deletion_graph_strengthened01"
+position: 0
+research_interface:
+  consumer: "six-set transport; prescribed-pair transport; matching-block residue closure; endpoint transport / defect compression"
+  given: "any six-vertex induced subtournament; with an additional pc2-complement corollary in a minimum counterexample"
+  produces: "a quantitative good-deletion graph with explicit adjacent-overlap amplification, or one canonical 2+2 matching-block orientation shell with a complete cross-hook rectangle"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every six-set has adjacent good-deletion overlap or a canonically oriented matching-block exception."
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every six-set has adjacent good-deletion overlap or a canonically oriented matching-block exception"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T00:07:38.371502+00:00"
+version: 7

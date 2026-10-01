@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 5
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T02:15:11.427813+00:00"
+id: "1000482"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9532c969-9e72-48c2-aa76-ac8cfe6e059b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:50.818056+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "9532c969-9e72-48c2-aa76-ac8cfe6e059b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:50.818056+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "almost-color-complete critical core"
+  uses:
+    - "1001072"
+    - "1000862"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000862"
+position: 0
+research_interface:
+  consequence: "The one-D/two-X lift is a properly colored graph of minimum degree at least k-2, with exact defects localized to forest joints and DDX edges."
+  consumer:
+    - "grand induction"
+    - "linked rainbow-forest route"
+  given:
+    - "|D|=k"
+    - "H-D path forest"
+    - "degree classification on X"
+  next_need: "Combine a long rainbow path in G with the universal forest F, using forest edges as color-free rails between rainbow segments; exploit that all color defects occur only at joints."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The extremal critical-core color graph has minimum degree k minus two."
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The extremal critical-core color graph has minimum degree k minus two"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

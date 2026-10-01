@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 86
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-21T22:56:15.259111+00:00"
+id: "1001034"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "4343863a-6c3d-435e-8d8b-924a253ed469"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T07:59:30.793442+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_audit_observation:
+    claim_id: "4343863a-6c3d-435e-8d8b-924a253ed469"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T07:59:30.793442+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+object_type: "counterexample"
+origin_worker_id: 205
+parent_id: "1000145"
+position: 21
+research_interface:
+  consequence: "no universal midpoint/convexity inequality on four ordered φ-values can underlie the logarithmic bound; multiple contacts can support two edges at each of two deficit scales"
+  consumer:
+    - "logarithmic common-last-vertex route"
+    - "four-edge spacing approaches"
+  role: "fence"
+research_level: "lemma"
+semantic_container_text: "The 11,11,17,17 common-terminal gadget and its extension tests, including explicit fifth-edge constructions and classifications that delimit which local spacing statements can still be true."
+simplified_statement: "Four common-last ascending edges can have values 11,11,17,17."
+substantive_worker_ids:
+  - 205
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four common-last ascending edges can have values 11,11,17,17"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 7

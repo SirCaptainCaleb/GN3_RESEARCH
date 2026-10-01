@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-28T20:38:25.749423+00:00"
+id: "recomp_connectorfree_kernels_01"
+last_elevation_revision: 0
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 260
+    detail: "Recomposed directly from 70435ae42299, 69cfeba96c13, 33a06ec35e0f/e70ecf96df64, and 8797f79d4a78, replacing kernel/barrier/window shorthand by the exact endpoint four-sets, matching-block orders, tight triples, propagated four-paths, and terminal Hamiltonian four-path."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:41:49.211208+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 260
+    detail: "Recomposed directly from 70435ae42299, 69cfeba96c13, 33a06ec35e0f/e70ecf96df64, and 8797f79d4a78, replacing kernel/barrier/window shorthand by the exact endpoint four-sets, matching-block orders, tight triples, propagated four-paths, and terminal Hamiltonian four-path."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:41:49.211208+00:00"
+    worker_id: 703
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-28T20:53:15.675251+00:00"
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Recomposition precision repair only: cite 70435ae42299, 69cfeba96c13, 33a06ec35e0f/e70ecf96df64, and 8797f79d4a78 directly and replace kernel/barrier/window shorthand by explicit four-sets, tight triples, and four-paths."
+    recorded_at: "2026-09-28T20:41:27.206266+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  recomposition_audit:
+    classified_at: "2026-09-28T20:38:27.436053+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 586
+parent_id: "recomp_endpoint_peel_01"
+position: 0
+research_interface:
+  consumer: "minimum-side closure and endpoint transport"
+  given: "a globally minimum smaller-side deletion cover H-x=P|Q in the branch where neither facing pair yields the four-vertex connector alternative of ab8c0e2136f9"
+  produces: "the two reverse peeled-junction hooks; at each end a Hamiltonian four-set or an explicit matching-block order; propagation of two explicit tight triples along the inherited component or a tight four-path; and in the double matching-block case a Hamiltonian four-set meeting x and both deletion-cover components"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Connector-free minimum-side peeling gives reverse hooks, endpoint four-set classification, and a Hamiltonian four-set."
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Connector-free minimum-side peeling gives reverse hooks, endpoint four-set classification, and a Hamiltonian four-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:53:15.675251+00:00"
+version: 8

@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-30T05:16:20.153324+00:00"
+id: "local45_eight_common_locks01"
+last_elevation_revision: 9789
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction requested: >=36 balanced four-sides on the fixed nine-set cover at least eight labels; every label of every four-side should be locked against the common long interior because its endpoint-pair five-support is Hamiltonian and would otherwise give strict (4,a)->(5,a-1) descent."
+  audit_request_recorded_at: "2026-09-30T05:16:20.153324+00:00"
+  audit_resolution:
+    claim_id: 301
+    detail: "Independent reconstruction passed. Each balanced 4|5 partition A|B of W gives an equal-Phi state A|B|P in the same trapped component. Since a>=7, A+p1 and A+pa are non-Hamiltonian or else the pair A|P strictly descends to 5|(a-1). Certified two_bad_five_extensions_all_opposite01 then makes (A-{w})+{p1,pa} Hamiltonian for every w in A. If M+w were Hamiltonian, these two supports would again give a strict 5|(a-1) repartition of A|P, contradiction; hence w is noninsertable into M. At least 36 distinct four-sides cannot be supported on only seven W-labels because C(7,4)=35, so their union contains at least eight labels, all sharing the claimed common-interior lock."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:28:19.615101+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 301
+    detail: "Independent reconstruction passed. Each balanced 4|5 partition A|B of W gives an equal-Phi state A|B|P in the same trapped component. Since a>=7, A+p1 and A+pa are non-Hamiltonian or else the pair A|P strictly descends to 5|(a-1). Certified two_bad_five_extensions_all_opposite01 then makes (A-{w})+{p1,pa} Hamiltonian for every w in A. If M+w were Hamiltonian, these two supports would again give a strict 5|(a-1) repartition of A|P, contradiction; hence w is noninsertable into M. At least 36 distinct four-sides cannot be supported on only seven W-labels because C(7,4)=35, so their union contains at least eight labels, all sharing the claimed common-interior lock."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-30T13:28:19.615101+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 579
+parent_id: "balanced9_multiplicity36_01"
+position: 0
+research_interface:
+  consumer: "large-order no-trapping; failed-insertion synchronization; endpoint transport / defect compression"
+  given: "a trapped componentwise Phi-minimum of profile 4|5|a with a at least seven"
+  need: "synchronize failed-insertion gaps/types across eight roots or combine two positioned five-supports to force a legal descent/merge"
+  produces: "at least eight of the nine plateau labels simultaneously noninsertable into the same long-path interior, each with a positioned Hamiltonian five-support using both long endpoints"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A trapped four-five plateau locks at least eight labels against one common long-path interior."
+substantive_worker_ids:
+  - 579
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A trapped four-five plateau locks at least eight labels against one common long-path interior"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 6

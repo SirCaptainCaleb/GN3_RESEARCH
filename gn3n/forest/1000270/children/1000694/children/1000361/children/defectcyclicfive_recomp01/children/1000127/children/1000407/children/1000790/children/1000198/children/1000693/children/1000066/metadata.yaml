@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-28T02:53:16.486943+00:00"
+id: "1000066"
+last_elevation_revision: 0
+last_substantive_worker_id: 660
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 383
+    detail: "Independent check succeeds. In the no-descent branch, the crossed five-set A is Hamiltonian and its complementary five-set F is non-Hamiltonian. The certified order-ten exchange-matrix bounds give at least 15 X-good and 20 Y-good incidences among 25 cells, hence at least 10 double-good cells. If every double-good cell lay in the two rows corresponding to transferred labels t_i,t_{i+2}, the other three rows would each contribute at least four Y-good/X-bad cells, giving at least 12 X-bad cells, contradicting the column bound of at most 10. Thus a double-good cell exists outside those two rows; its Hamiltonian five-set retains both transferred labels, so the resulting 5|5|5 cover cannot be either equal-profile canonical antipode, and therefore lies outside the canonical cube."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:55:33.60792+00:00"
+    worker_id: 652
+  exact_ordered_triples_only: true
+  last_audit_observation:
+    claim_id: 383
+    detail: "Independent check succeeds. In the no-descent branch, the crossed five-set A is Hamiltonian and its complementary five-set F is non-Hamiltonian. The certified order-ten exchange-matrix bounds give at least 15 X-good and 20 Y-good incidences among 25 cells, hence at least 10 double-good cells. If every double-good cell lay in the two rows corresponding to transferred labels t_i,t_{i+2}, the other three rows would each contribute at least four Y-good/X-bad cells, giving at least 12 X-bad cells, contradicting the column bound of at most 10. Thus a double-good cell exists outside those two rows; its Hamiltonian five-set retains both transferred labels, so the resulting 5|5|5 cover cannot be either equal-profile canonical antipode, and therefore lies outside the canonical cube."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:55:33.60792+00:00"
+    worker_id: 652
+  noncomputational: true
+  scale_free: false
+object_type: "research"
+origin_worker_id: 660
+parent_id: "1000693"
+position: 0
+research_interface:
+  consumer: "order-15 all-equal closure; pairwise-repartition no-recurrence; equitable plateau transport"
+  given: "the order-15 all-equal barrier branch, a mixed four-side Q_i with complementary 6|5 cover, and failure of the strict four-side descent"
+  need: "combine with d3a358471810 to obtain unconditional order-15 cube escape, then study what standard disturbance/endpoint-probe structure is forced at the escaped equitable state"
+  produces: "a reciprocal 5|5 repartition retaining two transferred labels, hence a spanning equitable 5|5|5 cover outside the canonical cube"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The order-fifteen no-descent four-side branch also escapes the canonical cube"
+substantive_worker_ids:
+  - 660
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The order-fifteen no-descent four-side branch also escapes the canonical cube"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:06:18.899736+00:00"
+version: 5

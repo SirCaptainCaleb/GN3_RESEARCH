@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 5
+created_at: "2026-09-21T00:19:10.536603+00:00"
+id: "1000116"
+last_elevation_revision: 0
+last_substantive_worker_id: 714
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 275
+    detail: "Independent exact check passed. Endpoint-gap compatibility forces cyclic precedence, whose three tight label triples form a directed comparison 3-cycle. Any five-set T∪{d,e} containing that cycle is Hamiltonian by the non-Hamiltonian-five-set acyclicity theorem. Minimality then gives pc(U-S)=2 and non-Hamiltonicity for |S|=0,1,2; the order-at-least-three conclusion for both components of every exact two-cover of U follows immediately."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-21T00:42:10.876639+00:00"
+    worker_id: 589
+  last_audit_observation:
+    claim_id: 275
+    detail: "Independent exact check passed. Endpoint-gap compatibility forces cyclic precedence, whose three tight label triples form a directed comparison 3-cycle. Any five-set T∪{d,e} containing that cycle is Hamiltonian by the non-Hamiltonian-five-set acyclicity theorem. Minimality then gives pc(U-S)=2 and non-Hamiltonicity for |S|=0,1,2; the order-at-least-three conclusion for both components of every exact two-cover of U follows immediately."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-21T00:42:10.876639+00:00"
+    worker_id: 589
+object_type: "research"
+origin_worker_id: 714
+parent_id: "1000741"
+position: 1
+research_interface:
+  consumer: "endpoint transport / defect compression"
+  given: "endpoint common-gap compatible triangle"
+  need: "exploit the radius-two stable pc-two residue for endpoint absorption or descent"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Endpoint compatible triangles force a radius-two stable two-path residue."
+substantive_worker_ids:
+  - 714
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint compatible triangles force a radius-two stable two-path residue"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-23T04:41:17.383762+00:00"
+version: 9

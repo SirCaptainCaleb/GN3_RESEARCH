@@ -1,0 +1,12 @@
+-
+  current_bottleneck_id: null
+  current_guidance_id: null
+  current_strategy_id: null
+  grand_theorem_id: null
+  methodology_version: 1
+  phase: "architecture_only"
+  proof_frontier_id: null
+  research_focus_ids:
+  revision: 9
+  singleton: true
+  updated_at: "2026-09-27T23:11:55.267583+00:00"

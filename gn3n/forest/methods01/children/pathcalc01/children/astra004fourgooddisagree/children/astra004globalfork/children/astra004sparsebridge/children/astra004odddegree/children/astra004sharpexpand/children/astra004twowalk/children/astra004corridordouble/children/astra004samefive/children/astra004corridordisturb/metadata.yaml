@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T19:22:01.990984+00:00"
+id: "astra004corridordisturb"
+last_elevation_revision: 0
+last_substantive_worker_id: 642
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 150
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:43:02.129522+00:00"
+    worker_id: 588
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 150
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:43:37.258818+00:00"
+    worker_id: 588
+object_type: "research"
+origin_worker_id: 642
+parent_id: "astra004samefive"
+position: 0
+research_interface:
+  consumer: "Astra idea 004"
+  given: "a clean four-support corridor in a max-degree-two sharp-shell odd component"
+  need: "aggregate the resulting explicit bridge/crossing/order witnesses into an actual longest-support descent or Hamiltonian complement"
+  produces: "complete elimination of a featureless clean degree-two corridor: every corridor exposes a reverse cross-bridge or certified endpoint-deletion support/order complexity"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every clean degree-two sharp-shell corridor exposes ordered support complexity."
+substantive_worker_ids:
+  - 642
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "Every clean degree-two sharp-shell corridor exposes ordered support complexity"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T19:53:43.745887+00:00"
+version: 12

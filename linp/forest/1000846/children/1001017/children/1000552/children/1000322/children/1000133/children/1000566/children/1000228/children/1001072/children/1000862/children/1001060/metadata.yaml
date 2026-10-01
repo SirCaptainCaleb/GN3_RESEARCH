@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T02:07:03.105801+00:00"
+id: "1001060"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/free-end language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/free-end language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/free-end language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:07:29.424904+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000862"
+position: 0
+research_interface:
+  consequence: "Every color at a physical forest endpoint either bridges to another component and yields a quantitative long path, or closes a linear cycle in its own component."
+  consumer:
+    - "grand induction"
+    - "color-complete path-forest lift"
+    - "cycle-ear route"
+  given:
+    - "1000862"
+    - "1000616"
+  next_need: "Count how many of the k distinct connector mates can remain inside the same component while all inter-component mates obey a+ceil(b/2)<=ell-2. For the internal mates, combine the resulting many endpoint-rooted cycles with cycle-ear surplus."
+  role: "bridge-versus-cycle connector lemma"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Free-end connector is either an inter-component bridge or a cycle-closing chord."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Free-end connector is either an inter-component bridge or a cycle-closing chord"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

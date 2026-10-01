@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T14:39:09.438257+00:00"
+id: "twocoverinseparability01"
+last_elevation_revision: 0
+last_substantive_worker_id: 644
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 207
+    detail: "The universal same-component relation is an equivalence relation for any family of partitions; every two-cover component is a union of classes, and distinct classes are exactly separable pairs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:40:15.102493+00:00"
+    worker_id: 616
+  hypotheses_removed:
+    - "minimum prescribed-separation failure"
+    - "distinguished pair s,t"
+  last_audit_observation:
+    claim_id: 207
+    detail: "The universal same-component relation is an equivalence relation for any family of partitions; every two-cover component is a union of classes, and distinct classes are exactly separable pairs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:40:15.102493+00:00"
+    worker_id: 616
+  origin_ids:
+    - "astra005criticalclass"
+  proof_change: "general core separated from line-specific vertex-critical consequence"
+object_type: "result"
+origin_worker_id: 644
+parent_id: "coversurg01"
+position: 0
+research_interface:
+  consumer: "prescribed-separation arguments; cover-support quotient arguments"
+  given: "a nonempty family of two-covers of H"
+  produces: "canonical equivalence classes that every two-cover respects"
+research_level: "lemma"
+semantic_container_text: "Two-cover inseparability toolkit: inseparable pairs admit cut obstructions, interior separations force crossings, and the equality-two-crossing case has a global support normal form."
+simplified_statement: "Two-cover inseparability classes"
+substantive_worker_ids:
+  - 644
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two-cover inseparability classes"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 5

@@ -1,0 +1,13 @@
+# Reciprocal comparison gives a reverse triple, leave-and-return, s>=2, or the five-block quotient
+
+## Statement
+
+In the reciprocal all-equal endpoint-probe setting, assume inherited relative order is preserved. Let J=R_1|R_2|R_3 be the inherited spanning three-path cover and T=P|Q the endpoint-deletion two-cover. Let t be the number of ordinary T-edges joining different inherited J-classes and s the number of ordinary J-edges whose endpoints lie in different T-components. Then at least one of the following holds: (1) T exposes an explicit tight reverse triple in a constant-size endpoint-restoration window; (2) some T-component contains two distinct blocks of one inherited J-class with a nonempty block of another inherited class between them; (3) s>=2. Moreover, if t>=3, outcome (2) does not occur, and s=2, then t=3, exactly two inherited paths are split once between P and Q, the third inherited path is intact, and after contracting the five contiguous inherited blocks the J-quotient is 2K_2 plus an isolated vertex while the T-quotient is P_3 plus K_2.
+
+## Body
+
+Apply f90ca42caa5d. It gives t>=3, s>=2, or, in the t=2,s=1 case, the explicit reverse triple supplied by 37f7522678f7. Thus only the t>=3 branch needs further analysis.
+
+Cut P and Q at all t cross-class T-edges. There are t+2 nonempty monochromatic T-blocks. If one T-component contains two blocks from the same inherited class with a nonempty different-class block between them, outcome (2) holds. Otherwise each inherited class occurs at most once in each T-component and hence contributes at most two blocks. Since t>=3, there are at least five blocks, so at least two inherited classes meet both T-components. Each such class changes T-component membership along its displayed inherited path and therefore contributes an inherited J-edge counted by s. Hence s>=2, proving (3).
+
+Finally assume t>=3, no leave-and-return, and s=2. Exactly two inherited classes then meet both T-components, and each changes membership exactly once; the third class is unsplit. Therefore the block counts are 2,2,1, giving exactly five blocks and hence t=3. The two split classes consist of contiguous inherited intervals separated by their unique reciprocal inherited edges. Contracting the five intervals, J contains exactly those two split edges, so its quotient is 2K_2 plus one isolated block. T has three cross-class edges and two path components. A T-component cannot contain four contracted blocks without repeating one of the three inherited classes and creating leave-and-return; therefore the two components have three and two blocks, giving quotient P_3 plus K_2.

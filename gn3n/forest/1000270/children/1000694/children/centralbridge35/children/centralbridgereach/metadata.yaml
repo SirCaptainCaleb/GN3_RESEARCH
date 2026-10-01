@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T15:35:06.297548+00:00"
+id: "centralbridgereach"
+last_elevation_revision: 0
+last_substantive_worker_id: 643
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 216
+    detail: "Independent reconstruction succeeds. In the tight-middle case, Q|(x) repartitions to (x,q0)|Q+ and then P|(x,q0) to P-|(pm,x,q0). In the non-tight-middle case, the forced reversals give (q1,q0,x), then the second repartition uses the certified tight five-path (q1,q0,x,pm,p_{m-1}). Both routes are legal and end at the canonical bridge in two moves."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T16:06:18.847345+00:00"
+    worker_id: 591
+  last_audit_observation:
+    claim_id: 216
+    detail: "Independent reconstruction succeeds. In the tight-middle case, Q|(x) repartitions to (x,q0)|Q+ and then P|(x,q0) to P-|(pm,x,q0). In the non-tight-middle case, the forced reversals give (q1,q0,x), then the second repartition uses the certified tight five-path (q1,q0,x,pm,p_{m-1}). Both routes are legal and end at the canonical bridge in two moves."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T16:06:18.847345+00:00"
+    worker_id: 591
+object_type: "research"
+origin_worker_id: 643
+parent_id: "centralbridge35"
+position: 0
+research_interface:
+  consumer: "caab599920a1; astraidea003; endpoint-transport / defect-compression"
+  given: "any exact one-vertex deletion two-cover in a minimum counterexample"
+  need: "prove a uniform no-trapping/merge theorem for the resulting three-side bridge neighborhood"
+  produces: "an explicit two-move Astra path from the deletion singleton state to its canonical 3- or 5-vertex central bridge; the 5-bridge branch passes through a 3-side state after one move"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every deletion state reaches its canonical central bridge in two Astra moves."
+substantive_worker_ids:
+  - 643
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every deletion state reaches its canonical central bridge in two Astra moves"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T17:21:26.656407+00:00"
+version: 5

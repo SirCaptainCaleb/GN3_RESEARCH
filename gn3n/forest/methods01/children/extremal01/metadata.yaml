@@ -1,0 +1,54 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 11
+created_at: "2026-09-20T20:19:19.406053+00:00"
+id: "extremal01"
+last_elevation_revision: null
+last_substantive_worker_id: 603
+legacy_id: null
+lifecycle_status: "active"
+math_version: 11
+mathematical_status: "proved"
+metadata:
+  curation: "retention_audit_extremal_module"
+  last_audit_observation:
+    claim_id: 373
+    detail: "Stale-support reconfirmation. The toolkit mathematics is unchanged; the only logical premises are the current certified localextend01 and smallset01. I checked the premise-sensitive uses: the Hamilton-five density hierarchy still uses the current four-of-six statement; fixed-pair bad-extension and rooted-shell arguments use current local extension/match-set conclusions; the bad-six-set and K4 overlap sections use current small-set classifications. The premise updates preserve or strengthen exactly the statements invoked, so the existing proofs and conclusions remain valid at math_version 11."
+    math_version: 11
+    outcome: "pass"
+    recorded_at: "2026-09-21T15:35:02.082836+00:00"
+    worker_id: 657
+  last_premise_impact_check:
+    checked_at: "2026-09-21T15:35:02.082836+00:00"
+    note: "Stale-support reconfirmation. The toolkit mathematics is unchanged; the only logical premises are the current certified localextend01 and smallset01. I checked the premise-sensitive uses: the Hamilton-five density hierarchy still uses the current four-of-six statement; fixed-pair bad-extension and rooted-shell arguments use current local extension/match-set conclusions; the bad-six-set and K4 overlap sections use current small-set classifications. The premise updates preserve or strengthen exactly the statements invoked, so the existing proofs and conclusions remain valid at math_version 11."
+    source_ids:
+      - "localextend01"
+      - "smallset01"
+    worker_id: 657
+  semantic_container_seed:
+    atlas_key: "trust-debt"
+    headline: "Stale and provisional route modules"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "toolkit"
+origin_worker_id: 603
+parent_id: "methods01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: "Extremal Hamiltonicity material retained as a reusable but non-current module."
+simplified_statement: "Hamiltonian five-sets satisfy complementary finite-range and Johnson-degree density bounds, together with reusable equality, overlap, reconfiguration, and terminal-pair counting structure."
+substantive_worker_ids:
+  - 603
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Extremal Hamiltonicity and Johnson-density toolkit"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T20:55:07.81107+00:00"
+version: 18

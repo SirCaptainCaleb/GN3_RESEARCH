@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-27T14:42:36.696082+00:00"
+id: "proof_rehearsal_g000000000026"
+last_elevation_revision: 0
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: null
+metadata:
+  completed_revision: 3302
+  details:
+    first_unsupported_inference: "Given a bounded failed-insertion window, support crossing, relative-order disagreement, reversed edge/triple, or equivalent localized disturbance produced by the certified deletion-cover machinery, infer a spanning two-cover directly or transport it to an absorbable component-end configuration; equivalently produce a spanning ordering of defect span at most two. No currently certified theorem supplies this universal consumption step."
+    gap_id: "1000741"
+    summary: "End-to-end rehearsal confirms the existing current composition remains the shortest trusted route. Minimum-counterexample calculus gives H-x=P|Q; x cannot insert into either displayed component; transport01 localizes both failures to bounded obstruction windows. The first unsupported inference is still e34dc91e238d. Recent sharp-shell deletion-transversal results do not move the gap: the cyclic branch ff3284e79394+ff36134f3abb forces explicit support/order disturbance, but consuming that disturbance still requires e34; the forest branch supplies no bypass. Certified fractional results likewise do not close the sharp shell, and fractionaltoolkit01 remains pending."
+  gap_id: "1000741"
+  generation: 26
+  opened_revision: 3271
+  reported_outcome: "completed"
+object_type: "proof_rehearsal"
+origin_worker_id: null
+parent_id: "proof_rehearsals"
+position: 26
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+support_reason: null
+support_status: "unchecked"
+title: "Proof rehearsal 26 — 2026-09-27 14:42 UTC"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T16:56:38.614765+00:00"
+version: 2

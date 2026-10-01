@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-27T13:43:04.867136+00:00"
+id: "compattoggleasym44"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 263
+    detail: "Removed prohibited 'exact' terminology and recorded the explicit logical dependencies; no mathematical change."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 263
+    detail: "Removed prohibited 'exact' terminology and recorded the explicit logical dependencies; no mathematical change."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair: remove prohibited 'exact' modifier from deletion-cover language; mathematics unchanged."
+    recorded_at: "2026-09-27T14:32:04.700022+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 616
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "compattogglecross33"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect compression"
+  given: "the one-split deletion state with two interior second-type pivots and asymmetric central cross-join orientation"
+  need: "consume the simultaneous reversed endpoint four-paths when no order disagreement occurs"
+  produces: "explicit order disagreement, or synchronized reversed endpoint four-paths on both deletion-cover components"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Asymmetric one-split pivots force order disagreement or reversed endpoint four-paths on both cores"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Asymmetric one-split pivots force order disagreement or reversed endpoint four-paths on both cores"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:58:45.607504+00:00"
+version: 8

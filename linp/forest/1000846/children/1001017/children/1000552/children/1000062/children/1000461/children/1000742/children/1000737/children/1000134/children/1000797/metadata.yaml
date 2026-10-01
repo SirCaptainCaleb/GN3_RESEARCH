@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T04:23:16.743268+00:00"
+id: "1000797"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified the rank-two nonascending source budget gives at most two such edges per exceptional entrance, and each supports at most its two terminal ladder vertices, yielding the factor four."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified the rank-two nonascending source budget gives at most two such edges per exceptional entrance, and each supports at most its two terminal ladder vertices, yielding the factor four."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000134"
+position: 0
+research_interface:
+  consequence: "The entire nonbranching Type-A population is controlled linearly by the exceptional set: one exceptional entrance certifies at most four ladder vertices. Thus if |E|<=6eta n, ladder vertices occupy at most 24eta n."
+  consumer:
+    - "near-floor Type-A stability"
+    - "grand 2/3 route"
+  given:
+    - "1e24a8fe7b2a branch-or-ladder dichotomy"
+    - "ca5f7dc68b1a weighted nonascending entrance budget"
+  next_need: "Control BRANCH Type-A vertices. If the branch population is also O(|E|), the near-seven-sixths structure has no room for a positive-density Type-A core when eta is small, yielding a uniform improvement above 7/6. Use the first rank r with n_r>=3 and the cumulative deficit below r to force either multiple exceptional entrances or a lower-level branching gate."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "One exceptional entrance supports at most four Type-A ladder vertices."
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "One exceptional entrance supports at most four Type-A ladder vertices"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

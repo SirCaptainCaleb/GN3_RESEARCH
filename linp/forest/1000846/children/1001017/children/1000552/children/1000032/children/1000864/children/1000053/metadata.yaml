@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T04:26:16.270561+00:00"
+id: "1000053"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6788f8c2-1265-49e1-8d7f-84867df20480"
+    detail: "p=1 exception and all p>=2 residue formulas independently checked; repaired weighted distance-two packing is correct."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:00:05.645031+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "6788f8c2-1265-49e1-8d7f-84867df20480"
+    detail: "p=1 exception and all p>=2 residue formulas independently checked; repaired weighted distance-two packing is correct."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:00:05.645031+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_failure:
+    reason: "The weighted distance-two packing argument is correct for p>=2, but the statement gives the displayed residue formula for alpha_p without an exception at p=1. When p=1 the index graph is empty, so alpha_1=0, whereas the displayed p≡1 formula gives 1. The main inequality is repairable by treating p=1 separately (X is empty because rank-one edges are special) and applying the residue formula only for p>=2. The statement also uses prohibited 'physical' endpoint terminology."
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+  last_local_audit_repair:
+    reason: "Substantive audit repair: handle p=1 separately, where X(P,v) is empty and alpha_1=0; apply the residue formula only for p>=2. Also normalize prohibited endpoint terminology."
+    recorded_at: "2026-09-25T01:57:16.182578+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1000864"
+position: 0
+research_interface:
+  consequence: "Astra's three-halves terminal packing is now proved exactly for the entrance-visible clean-chord class. The unresolved mass consists only of terminal-only single contacts and double contacts/last-edge exceptions."
+  consumer:
+    - "0904073d4cbf Astra 11/12 route"
+    - "contact-snake clean packing"
+  given:
+    - "c265aa8ded39 distance-two clean-contact incompatibility"
+  next_need: "Combine with the contact-slot identity X+U+2D<=2p-2. Double contacts pay an extra slot automatically; terminal-only U contacts rotate to distinct nondecreasing-potential endpoints with multiplicity at most two (9ebba4a11f7e). Obtain a global charge for U endpoints or show a suitable choice of maximum P_v reduces U."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Clean entrance-only ascending terminal chords satisfy three-halves packing"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:05:30.328063+00:00"
+version: 7

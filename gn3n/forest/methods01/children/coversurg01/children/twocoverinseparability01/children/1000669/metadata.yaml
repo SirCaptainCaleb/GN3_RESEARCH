@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T00:53:23.860649+00:00"
+id: "1000669"
+last_elevation_revision: 0
+last_substantive_worker_id: 717
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 435
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T00:54:10.011108+00:00"
+    worker_id: 677
+  last_audit_observation:
+    claim_id: 435
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T00:54:10.011108+00:00"
+    worker_id: 677
+object_type: "result"
+origin_worker_id: 717
+parent_id: "twocoverinseparability01"
+position: 0
+research_interface:
+  consumer: "Astra idea 005 and prescribed-separation arguments"
+  given: "a two-coverable boundary tournament H and a pair s,t lying together in every two-cover"
+  need: "exploit the simultaneous non-Hamiltonicity along consecutive cuts between s and t"
+  produces: "the cut-obstruction theorem without any minimal-counterexample hypothesis"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Cut obstruction for inseparable pairs needs no minimality"
+substantive_worker_ids:
+  - 717
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Cut obstruction for inseparable pairs needs no minimality"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 6

@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-10-01T06:29:24.757745+00:00"
+id: "1000885"
+last_elevation_revision: 10710
+last_substantive_worker_id: 952
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "1000885"
+  audit_request_reason: "Verify the universal support-crossing conclusion for all four endpoint-rooted five-sides from 1000878: any noncrossing two-cover of the complement would have supports exactly Q and R+x, contradicting non-Hamiltonicity of R+x."
+  audit_request_recorded_at: "2026-10-01T06:29:35.874139+00:00"
+  audit_resolution:
+    claim_id: 1025
+    detail: "Terminology-only repair: removed the prohibited redundant modifier 'exact' from two-cover. The support-crossing argument is unchanged: a noncrossing two-cover would have supports exactly (R+x) and Q, contradicting non-Hamiltonicity of R+x."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T07:00:06.221664+00:00"
+    worker_id: 1016
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 1025
+    detail: "Terminology-only repair: removed the prohibited redundant modifier 'exact' from two-cover. The support-crossing argument is unchanged: a noncrossing two-cover would have supports exactly (R+x) and Q, contradicting non-Hamiltonicity of R+x."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T07:00:06.221664+00:00"
+    worker_id: 1016
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair: remove prohibited redundant modifier 'exact' from two-cover."
+    recorded_at: "2026-10-01T06:57:32.867793+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 1016
+object_type: "research"
+origin_worker_id: 952
+parent_id: "1000878"
+position: 0
+research_interface:
+  consumer: "support-crossing to defect-compression bridge; endpoint transport; deletion-cover incompatibility"
+  given: "a pairwise-component Phi-minimal three-cover with a four-side beside a path of order at least seven"
+  produces: "four positioned Hamiltonian five-sides with pc2 complements, each forcing every complementary two-cover to cross the inherited support partition"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Each of the four endpoint-rooted five-sides in a locally minimal 4|m state has a pc2 complement whose every two-cover crosses the inherited long-interior versus Q cut."
+substantive_worker_ids:
+  - 952
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every saturated endpoint five-side forces complementary support crossing"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T07:00:06.221664+00:00"
+version: 6

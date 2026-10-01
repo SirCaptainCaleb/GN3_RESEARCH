@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-24T02:27:43.088819+00:00"
+id: "1000183"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebd0c6d6-8b38-48c5-a405-566c2d6d1aaa"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000082"
+position: 0
+research_interface:
+  consequence: "A strongly proper rainbow path through s contracted forest triples lifts to a 2s-1-edge linear hypergraph path."
+  consumer:
+    - "grand induction"
+    - "zero-slack critical-core route"
+  given:
+    - "13500728c22f zero-slack model"
+  next_need: "Prove the contracted connector multigraph has a rainbow/proper path through sufficiently many of its c=2k/3 triple-nodes. A spanning contracted path would yield length 4k/3-1."
+  role: "zero-slack contraction lift"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Rainbow connector paths through contracted forest triples double their length."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Rainbow connector paths through contracted forest triples double their length"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-27T14:53:34.038396+00:00"
+id: "astra002odduniform05"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 177
+    detail: "Incompatibility splits exhaustively into support-incompatible versus support-compatible/order-incompatible. Pigeonhole gives a uniform half-family; in the second branch balance forces the omitted anchor label to restore precisely to the smaller common support, yielding the stated one-for-one exchanges and same-side subfamily."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:59:52.743371+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 177
+    detail: "Incompatibility splits exhaustively into support-incompatible versus support-compatible/order-incompatible. Pigeonhole gives a uniform half-family; in the second branch balance forces the omitted anchor label to restore precisely to the smaller common support, yielding the stated one-for-one exchanges and same-side subfamily."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:59:52.743371+00:00"
+    worker_id: 616
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "mincex01"
+position: 0
+research_interface:
+  consumer: "Astra-002"
+  given: "the half-family incompatibility theorem for odd minimum Astra-002 failures"
+  need: "branch A: organize many support-partition changes against one anchor; branch B: aggregate same-side one-for-one exchanges with fixed opposite support and order disagreement"
+  produces: "one anchor with a linear uniform disagreement family; in the order branch a further synchronized same-side one-for-one support-exchange family"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Odd balanced-cover failures force a linear uniform exchange-or-support-switch family"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Odd balanced-cover failures force a linear uniform exchange-or-support-switch family"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T00:08:24.817816+00:00"
+version: 8

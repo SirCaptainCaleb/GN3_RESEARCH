@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 8
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-25T20:15:21.462703+00:00"
+id: "1000645"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "Complete reciprocal transversality gives two distinct common vertices for every X-pair. In the V-class, a single-intersection pair forces the two crossed entrance labels; three such pairs would make two paths share both v and the third entrance, so the single-intersection graph is triangle-free. Mantel then yields the stated count."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "Complete reciprocal transversality gives two distinct common vertices for every X-pair. In the V-class, a single-intersection pair forces the two crossed entrance labels; three such pairs would make two paths share both v and the third entrance, so the single-intersection graph is triangle-free. Mantel then yields the stated count."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1000898"
+position: 0
+research_interface:
+  consequence: "Complete reciprocal transversality cannot remain a simple one-label incidence system: four owner paths force a repeated intersection, and a k-family forces quadratically many repeated intersections unless most owner paths use mixed contact types."
+  consumer:
+    - "terminal-retained branch of bba5d57b341e"
+    - "paid strict-gap local congestion"
+    - "two-rank reciprocal-terminal route"
+  given:
+    - "doubly-terminal-single edges through one common terminal"
+    - "complete reciprocal foreign-edge transversality"
+  next_need: "Use the forced double-intersection pair without invoking the disputed automatic-lens claim. Analyze consecutive common vertices/order on the two maximum opposite-terminal paths, or combine with source-clean rails and the paid certificate. For large families, exploit the quantitative Mantel lower bound on repeated-intersection pairs."
+  strengthens: "reciprocal terminal-path attack; lens-free"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Complete reciprocal transversality forces repeated intersections among opposite-terminal paths."
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Complete reciprocal transversality forces repeated intersections among opposite-terminal paths"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

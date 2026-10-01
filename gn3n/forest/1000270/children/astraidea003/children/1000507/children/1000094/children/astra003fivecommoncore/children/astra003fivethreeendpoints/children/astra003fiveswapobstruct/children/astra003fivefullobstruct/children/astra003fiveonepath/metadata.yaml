@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T18:21:19.473794+00:00"
+id: "astra003fiveonepath"
+last_elevation_revision: 0
+last_substantive_worker_id: 576
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 176
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T18:23:15.721985+00:00"
+    worker_id: 662
+  last_audit_observation:
+    claim_id: 176
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T18:23:15.721985+00:00"
+    worker_id: 662
+object_type: "research"
+origin_worker_id: 576
+parent_id: "astra003fivefullobstruct"
+position: 0
+research_interface:
+  consumer: "Astra idea 003; endpoint-transport / defect-compression bridge"
+  given: "a Phi-minimal trapped three-cover with one five-vertex component and one component of order at least seven"
+  need: "consume the full-path bounded obstruction or explicit order-disagreement witness into strict descent, endpoint transport, or a two-cover"
+  produces: "either an equal-Phi endpoint support exchange, or one displaced five-side vertex noninsertable throughout the entire long component; any Hamiltonian enlargement by that vertex necessarily creates relative-order disagreement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "One long component already forces a full-path insertion obstruction"
+substantive_worker_ids:
+  - 576
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "One long component already forces a full-path insertion obstruction"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:46:55.242205+00:00"
+version: 12

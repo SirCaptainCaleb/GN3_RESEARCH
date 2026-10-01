@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: true
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+created_at: "2026-09-23T01:54:25.042035+00:00"
+id: "project_policy"
+last_elevation_revision: null
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "active"
+math_version: 7
+mathematical_status: null
+metadata:
+  audit_required: false
+  document_kind: "project_policy"
+  factory_reserved: true
+  open_edit: true
+  project_key: "linp"
+  project_local: true
+  sync_behavior: "preserve_contents"
+object_type: "project_document"
+origin_worker_id: null
+parent_id: null
+position: 0
+research_interface:
+research_level: null
+semantic_container_text: null
+simplified_statement: null
+substantive_worker_ids:
+support_reason: "non_mathematical_project_document"
+support_status: "unchecked"
+title: "Project-specific policy"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:10:56.086996+00:00"
+version: 14

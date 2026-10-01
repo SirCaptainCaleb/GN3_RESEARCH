@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+created_at: "2026-09-24T05:07:33.72458+00:00"
+id: "1000656"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a0fcae52-a211-40da-886d-5cce11b6bfc1"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:14:52.279812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "a0fcae52-a211-40da-886d-5cce11b6bfc1"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:14:52.279812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:13:27.17026+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000118"
+position: 0
+research_interface:
+  consequence: "For q>=4, occupying d removes the low-terminal escape completely: u is absent left, so h_d's high opposite terminal must block on the left. If b is also occupied, that blocker is forced by g_{q-3}."
+  consumer:
+    - "abd/bcd/acd elimination"
+    - "Astra 11/12 route"
+  given:
+    - "1adad81ca72e right-joint localization"
+    - "top-boundary four-slot state"
+  next_need: "Use in abd and bcd. In abd, a forces z_a right while d forces z_d left and b forces z_b right; derive two right terminals against one left blocker. In bcd, b's opposite terminal is forced right while c,d entrances share g_q and z_d is far left; localize z_c and close the crossed rectangle."
+  role: "right-joint blocker pressure"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A right-joint high entrance excludes the low terminal from the left half."
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A right-joint high entrance excludes the low terminal from the left half"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

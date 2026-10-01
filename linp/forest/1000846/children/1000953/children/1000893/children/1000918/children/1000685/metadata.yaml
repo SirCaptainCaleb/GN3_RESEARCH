@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-22T19:49:12.329647+00:00"
+id: "1000685"
+last_elevation_revision: null
+last_substantive_worker_id: 204
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1e5984f0-22dd-4246-ac28-825373166ecf"
+    detail: "Independently checked the reduction B=F_2^2\\{0} -> F_2^4\\{0}=PG(3,2) and the exact repaired PG(3,2) P7-freeness proof d593f8024a92. The invalidation is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:26:25.439523+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  computation_used: false
+  counterexample_base: "F_2^2 minus 0"
+  counterexample_lift: "PG(3,2)"
+  last_audit_observation:
+    claim_id: "1e5984f0-22dd-4246-ac28-825373166ecf"
+    detail: "Independently checked the reduction B=F_2^2\\{0} -> F_2^4\\{0}=PG(3,2) and the exact repaired PG(3,2) P7-freeness proof d593f8024a92. The invalidation is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:26:25.439523+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  role: "invalidation"
+object_type: "invalidation"
+origin_worker_id: 204
+parent_id: "1000918"
+position: 1
+research_interface:
+  consequence: "Universal two-bit Hamiltonicity is unavailable; retain the exact additive reductions but re-prove any lift step with correct hypotheses."
+  consumer:
+    - "carrier recursion"
+    - "induced Boolean route"
+  contradicts:
+    - "1000561"
+    - "1000505"
+    - "1001027"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The claimed universal fourfold Boolean path lift is false: the 3-point quotient lifts to PG(3,2), which has no spanning P_7."
+substantive_worker_ids:
+  - 204
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The claimed universal fourfold Boolean path lift fails on the 3-point line"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:04:47.22773+00:00"
+version: 5

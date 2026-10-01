@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+created_at: "2026-09-26T20:35:39.419204+00:00"
+id: "astra004recttransport"
+last_elevation_revision: 0
+last_substantive_worker_id: 642
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 344
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T20:36:09.696609+00:00"
+    worker_id: 618
+  last_audit_observation:
+    claim_id: 344
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T20:36:09.696609+00:00"
+    worker_id: 618
+object_type: "research"
+origin_worker_id: 642
+parent_id: "astra004repeatrect"
+position: 0
+research_interface:
+  consumer: "Astra idea 004; degree-two sharp-shell closure"
+  given: "the clean a,b,c,a singleton rectangle in a 2-regular all-clean odd component, with missing sixth corner N+a"
+  need: "compare endpoint hooks for the two rectangle labels a and d; either repeated transport closes a finite cycle or the paired deletion states force defect compression"
+  produces: "deterministic core mutation N -> (N-d)+a and transport of the omitted rectangle label a -> d, while preserving the same missing support N+a"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A missing sixth corner transports the singleton rectangle to the far core endpoint."
+substantive_worker_ids:
+  - 642
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A missing sixth corner transports the singleton rectangle to the far core endpoint"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 8

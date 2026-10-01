@@ -1,0 +1,9 @@
+# Every four-edge two-rank source block has two lens cells and reciprocal simple pairs
+
+## Statement
+
+Consider four source-clean 0-1-1 edges through one assigned terminal, with ranks in two consecutive levels, and their four maximum source rails. The rail intersection graph is K_4. Counting elementary cells between consecutive common vertices with multiplicity over rail pairs, there are at least two lens cells. Moreover every rail pair having exactly one common vertex meets at an aligned same-index joint, and the two corresponding offending edges cross the opposite rail only at their opposite terminals. Thus after extracting two lens cells, every remaining simple rail-pair interaction is reciprocal-terminal.
+
+## Body
+
+Pairwise intersection of the four source rails is given by b7c10f82f599. By 58c5d1a3642e, either two distinct rail pairs each share at least two distinguished vertices or one rail pair shares at least three distinguished vertices. In the first case, choosing consecutive common vertices on each of the two pairs gives one lens cell per pair. In the second case, ordering the at least three common vertices along either host rail and taking consecutive common vertices gives at least two lens cells on that one pair. Hence there are at least two lens cells counting multiplicity. Now take any rail pair with exactly one common vertex. By 5854d853a44b the common vertex is a joint at the same index on both maximum paths. By 5570b54b0046 neither mandatory foreign-edge contact can be a source hit, so the two cross-contacts are the opposite terminals. This proves the stated normal form. Internal clean lens cells are balanced by 390e818020e1; endpoint cells remain the only unbalanced boundary possibility.

@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+created_at: "2026-09-29T18:56:50.331798+00:00"
+id: "double_endpoint_threecore_amplification01"
+last_elevation_revision: 8737
+last_substantive_worker_id: 579
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T19:07:12.934075+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 579
+parent_id: "four_side_double_endpoint_threecore01"
+position: 0
+research_interface:
+  consumer: "four-side hard branch; opposite-endpoint transport; support migration"
+  given: "a Hamiltonian four-set with two exterior labels whose singleton extensions are both non-Hamiltonian"
+  produces: "for two distinct omitted four-side labels, either a Hamiltonian five-set containing both exterior labels or at least two Hamiltonian four-sets containing both exterior labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two common endpoint three-cores amplify to five-windows or multiple endpoint-pair four-windows."
+substantive_worker_ids:
+  - 579
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Two common endpoint three-cores amplify to five-windows or multiple endpoint-pair four-windows"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:53:57.606786+00:00"
+version: 5
