@@ -2,11 +2,6 @@ name: Build research context artifact
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/build-research-context-artifact.yml"
   workflow_run:
     workflows:
       - "Sync research mirror"
@@ -18,7 +13,7 @@ permissions:
 
 jobs:
   artifact:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
