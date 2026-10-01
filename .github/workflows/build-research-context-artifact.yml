@@ -9,8 +9,7 @@ on:
       - completed
 
 permissions:
-  contents: read
-  actions: write
+  contents: write
 
 concurrency:
   group: research-context-artifact
@@ -69,26 +68,62 @@ jobs:
             cp "$schema/vocabulary/standardization_dictionary.txt"                "$dst/standardization_dictionary.txt"
           done
 
-      - name: Upload research context artifact
-        id: upload
-        uses: actions/upload-artifact@v4
-        with:
-          name: research-context
-          path: _artifact/
-          if-no-files-found: error
-          compression-level: 9
-          retention-days: 7
+      - name: Package research context
+        run: |
+          set -euo pipefail
+          rm -f research-context.zip
+          (cd _artifact && zip -qr ../research-context.zip .)
 
-      - name: Delete older research context artifacts
+      - name: Publish latest research context release
         env:
           GH_TOKEN: ${{ github.token }}
-          CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
-          gh api --paginate             -H "Accept: application/vnd.github+json"             "/repos/$REPO/actions/artifacts?name=research-context&per_page=100"             --jq '.artifacts[].id' |
-          while read -r artifact_id; do
-            if [ "$artifact_id" != "$CURRENT_ARTIFACT_ID" ]; then
-              gh api --method DELETE "/repos/$REPO/actions/artifacts/$artifact_id"
-            fi
-          done
+          gh release delete research-context-latest --repo "$REPO" --yes --cleanup-tag || true
+          gh release create research-context-latest research-context.zip             --repo "$REPO"             --target main             --title "Research Context (latest)"             --notes "Latest generated research-context snapshot. Supabase remains authoritative for live updates."             --latest
+
+      - name: Record published artifact revision in Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          REPO: ${{ github.repository }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, pathlib, urllib.request
+
+          def revision(path):
+              return json.loads(pathlib.Path(path).read_text())["repository_revision"]
+
+          repo = os.environ["REPO"]
+          payload = {
+              "p_revisions": {
+                  "gn3n": revision("gn3n/mirror_manifest.json"),
+                  "linp": revision("linp/mirror_manifest.json"),
+                  "__template__": revision("template/mirror_manifest.json"),
+              },
+              "p_release_url": f"https://github.com/{repo}/releases/latest",
+              "p_asset_url": f"https://github.com/{repo}/releases/latest/download/research-context.zip",
+              "p_commit_sha": os.environ["COMMIT_SHA"],
+          }
+
+          key = os.environ["SUPABASE_SECRET_KEY"]
+          headers = {
+              "apikey": key,
+              "Content-Type": "application/json",
+              "Accept": "application/json",
+          }
+          if not key.startswith("sb_secret_"):
+              headers["Authorization"] = f"Bearer {key}"
+
+          req = urllib.request.Request(
+              os.environ["SUPABASE_URL"].rstrip("/") + "/rest/v1/rpc/research_artifact_publish",
+              data=json.dumps(payload).encode(),
+              headers=headers,
+              method="POST",
+          )
+          with urllib.request.urlopen(req, timeout=60) as response:
+              print(response.read().decode())
+          PY
