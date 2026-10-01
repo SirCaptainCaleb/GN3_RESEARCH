@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: research-context-artifact
@@ -82,6 +83,17 @@ jobs:
           set -euo pipefail
           gh release delete research-context-latest --repo "$REPO" --yes --cleanup-tag || true
           gh release create research-context-latest research-context.zip             --repo "$REPO"             --target main             --title "Research Context (latest)"             --notes "Latest generated research-context snapshot. Supabase remains authoritative for live updates."             --latest
+
+      - name: Delete legacy Actions artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh api --paginate             -H "Accept: application/vnd.github+json"             "/repos/$REPO/actions/artifacts?name=research-context&per_page=100"             --jq '.artifacts[].id' |
+          while read -r artifact_id; do
+            [ -z "$artifact_id" ] || gh api --method DELETE "/repos/$REPO/actions/artifacts/$artifact_id"
+          done
 
       - name: Record published artifact revision in Supabase
         env:
