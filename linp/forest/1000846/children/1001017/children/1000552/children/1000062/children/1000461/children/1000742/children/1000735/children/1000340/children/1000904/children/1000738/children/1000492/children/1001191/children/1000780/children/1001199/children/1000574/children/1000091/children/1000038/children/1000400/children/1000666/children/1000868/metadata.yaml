@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "1855863765932fdca7dd32fcf4078d48089828f3d976d6d76ccd8f91c2db6a12"
+created_at: "2026-09-24T13:52:25.755789+00:00"
+id: "1000868"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:15:52.586383+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "1000666"
+position: 0
+research_interface:
+  consequence: "Every blocker is either immediately converted into a balanced rail-rail lens or is forced onto a potential-p terminal vertex. Thus a lens-free residual state has two-sided high-potential terminal blockers on every entrance rail."
+  consumer:
+    - "flat-cycle elimination"
+    - "balanced-lens route"
+    - "gap-one high-potential reservoir"
+  given:
+    - "flat gap-one terminal cycle"
+    - "two-sided entrance-rail blockers"
+    - "universal unique-intersection rigidity"
+  next_need: "In the lens-free residual, use the two terminal blockers on each R_i as a scarce resource. For c>=5 they are distinct and lie on opposite two-edge arcs. Compare their order along R_i with the short cycle arc through e_i; maximality of R_i should force a minimum separation, potentially summing to a contradiction around the cycle."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Entrance-label blockers on a flat gap-one cycle immediately create balanced rail lenses."
+statement_sha256: "19a700a81fcec5a48c67a4dcdd46a1078bdb9a9fa59f1faa72ac3251ccd9d811"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Entrance-label blockers on a flat gap-one cycle immediately create balanced rail lenses"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:22:10.585833+00:00"
+version: 9

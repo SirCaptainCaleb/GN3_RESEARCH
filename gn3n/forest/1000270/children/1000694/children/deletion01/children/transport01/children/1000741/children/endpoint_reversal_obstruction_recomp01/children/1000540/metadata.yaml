@@ -2,20 +2,23 @@ atlas_height: null
 atlas_hidden: false
 attention: "focus"
 audit_priority: 100
-audit_requested: false
+audit_requested: true
 audit_requirement: "independent_reconstruction"
-audit_status: "certified"
-audited_math_version: 1
-body_sha256: "28451afbb549d06366a20d58c66149a57f6dd277b2b85e6b9f9cf3464d3c0858"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "c9a9dea5d037d6facca6c289fa7c681358562c7c8e9a2c0880f611d95046ca23"
 created_at: "2026-09-28T21:21:51.555245+00:00"
 id: "1000540"
-last_elevation_revision: 0
-last_substantive_worker_id: 586
+last_elevation_revision: 11034
+last_substantive_worker_id: 1165
 legacy_id: null
 lifecycle_status: "active"
-math_version: 1
+math_version: 3
 mathematical_status: "proved"
 metadata:
+  audit_chain_root: "1000540"
+  audit_request_reason: "Elevation moved the ubiquitous five-vertex order-disagreement conclusion into the hard-reversal pair-grid source, superseding hardreversal_pairgrid01."
+  audit_request_recorded_at: "2026-10-01T18:44:05.742512+00:00"
   audit_resolution:
     claim_id: 75
     detail: "Independent reconstruction verifies the complete pair-extension conclusion and radius-two deletion stability from the universal hard-reversal family and minimum-counterexample calculus."
@@ -23,6 +26,7 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-29T05:27:15.715501+00:00"
     worker_id: 683
+  audit_trigger_kind: "chain_checkpoint"
   last_audit_observation:
     claim_id: 75
     detail: "Independent reconstruction verifies the complete pair-extension conclusion and radius-two deletion stability from the universal hard-reversal family and minimum-counterexample calculus."
@@ -38,20 +42,22 @@ origin_worker_id: 586
 parent_id: "endpoint_reversal_obstruction_recomp01"
 position: 1
 research_interface:
-  consumer: "endpoint transport / defect compression; deletion-cover compatibility; shortest grand-theorem proof composition"
-  given: "the maximal unresolved endpoint-reversal residue with its universal cross triples"
-  need: "exploit the complete pair-extension / radius-two-stable family to force compatible deletion states, endpoint absorption, or defect span at most two"
-  produces: "all two-label endpoint-core enlargements are Hamiltonian K4s, and after deleting the two path endpoints the remaining tournament is path-cover-two stable under deletion of any one or any two outside labels"
+  consumer: "endpoint transport / defect compression; deletion-cover compatibility; shortest grand-theorem proof"
+  given: "the maximal hard endpoint-reversal residue"
+  implication: "the former hardreversal_pairgrid01 conclusion is already present at this source node"
+  produces: "complete endpoint-pair K4 grid, radius-two pc2 stability, and order disagreement inside every exterior triple"
 research_level: "theorem"
 semantic_container_text: "Hard endpoint-reversal grid: a universal reverse-cross family becomes a complete endpoint-pair extension grid, whose five- and six-support consequences force bounded Hamiltonian structure, order disagreement, or return to the classified four-vertex obstruction."
-simplified_statement: "The universal hard-reversal cross family is a complete endpoint pair-extension grid."
-statement_sha256: "740e0fce2575578b6c8c8fc2158a985be60357a729dfd18cc92bb774e4fa2cde"
+simplified_statement: "The hard reversal residue gives every endpoint-pair K4, pc2 stability through two exterior deletions, and order disagreement inside every exterior triple."
+statement_sha256: "0141978246517c989a86391f7702eb048411ba464ec5b772e21f508e064e4299"
 substantive_worker_ids:
   - 586
-support_reason: "current_certified_premises"
-support_status: "supported"
-title: "The universal hard-reversal cross family is a complete endpoint pair-extension grid"
+  - 1151
+  - 1165
+support_reason: "audit checkpoint requested"
+support_status: "unchecked"
+title: "The universal hard-reversal cross family is a complete endpoint pair grid with ubiquitous local order disagreement"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-30T21:58:21.804103+00:00"
-version: 8
+updated_at: "2026-10-01T19:28:17.078268+00:00"
+version: 11

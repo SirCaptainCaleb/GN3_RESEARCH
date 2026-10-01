@@ -26,6 +26,7 @@ metadata:
     recorded_at: "2026-09-29T17:44:33.034029+00:00"
     worker_id: 605
   audit_trigger_kind: "explicit_publish_request"
+  audit_work_kind: "dependency_hold"
   composition_intent: "direct stronger replacement of obsolete staircase unary chain"
   last_audit_observation:
     claim_id: 159
@@ -52,10 +53,10 @@ simplified_statement: "Every large staircase minimum has a Hamiltonian four-supp
 statement_sha256: "d5ae9eff47d5f735be6f5b6706125e65cf94fb6a11b87fc2cf5040ae963f38b4"
 substantive_worker_ids:
   - 637
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Every large staircase minimum has a Hamiltonian four-support with two-cover complement"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-29T17:44:33.034029+00:00"
+updated_at: "2026-10-01T18:43:23.594674+00:00"
 version: 6

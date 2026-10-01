@@ -1,6 +1,6 @@
 atlas_height: null
 atlas_hidden: false
-attention: "hidden"
+attention: "focus"
 audit_priority: 100
 audit_requested: false
 audit_requirement: "independent_reconstruction"
@@ -9,7 +9,7 @@ audited_math_version: 2
 body_sha256: "c76025c7bc65451ad0dd6bf6bcc427284d20a950fe110acd485d3d97fdfbe211"
 created_at: "2026-09-29T04:24:05.257541+00:00"
 id: "1000607"
-last_elevation_revision: 0
+last_elevation_revision: 11097
 last_substantive_worker_id: 586
 legacy_id: null
 lifecycle_status: "active"
@@ -23,6 +23,7 @@ metadata:
     outcome: "pass_adjusted"
     recorded_at: "2026-09-29T12:25:55.628901+00:00"
     worker_id: 681
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: 78
     detail: "Replaced the stale four-regime derivation by a direct application of reversal_global_frontier01, removed the obsolete dependencies on 238069a2eeb6 and 2147b77c1d7e, and recorded that the fixed-pair theorem supersedes this four-regime result."
@@ -37,9 +38,6 @@ metadata:
     recorded_at: "2026-09-29T12:23:51.116158+00:00"
     statement_change_policy: "small_local_tweak_only_policy_enforced"
     worker_id: 681
-  supersession_auto_hidden: true
-  supersession_effective_at: "2026-09-29T12:24:19.355641+00:00"
-  supersession_previous_attention: "focus"
 object_type: "research"
 origin_worker_id: 586
 parent_id: "1000104"
@@ -55,10 +53,10 @@ simplified_statement: "Above order fourteen the global quadratic frontier has fo
 statement_sha256: "14cb53513533f1f9df38c2c897c33a9af55929b7e489b8c12bcfb7816c7b18ca"
 substantive_worker_ids:
   - 586
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Above order fourteen the global quadratic frontier has four regimes"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-29T12:25:55.628901+00:00"
-version: 11
+updated_at: "2026-10-01T18:43:23.594674+00:00"
+version: 12

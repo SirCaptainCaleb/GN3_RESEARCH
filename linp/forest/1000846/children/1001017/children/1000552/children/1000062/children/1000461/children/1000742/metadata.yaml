@@ -53,5 +53,5 @@ support_status: "supported"
 title: "A nonspecial terminal of rank q reduces the entire incident low-rank capacity"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-30T21:16:08.386512+00:00"
-version: 8
+updated_at: "2026-10-01T20:15:20.228043+00:00"
+version: 9

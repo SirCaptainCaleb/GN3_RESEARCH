@@ -63,5 +63,5 @@ support_status: "supported"
 title: "A U_11 color-terminal collision has exact blockers except at explicit boundary cases"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-30T17:27:57.58921+00:00"
-version: 14
+updated_at: "2026-10-01T20:14:45.912302+00:00"
+version: 15

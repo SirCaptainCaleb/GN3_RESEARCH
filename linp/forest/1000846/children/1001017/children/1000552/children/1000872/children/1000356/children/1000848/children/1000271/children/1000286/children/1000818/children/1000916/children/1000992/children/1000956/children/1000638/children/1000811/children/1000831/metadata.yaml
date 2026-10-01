@@ -23,6 +23,7 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-24T22:25:06.23137+00:00"
     worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: "e3c30c76-e43d-41e0-a343-32b2963bb12a"
     detail: "Verified both gate-order splices. If the indicated Q2-prefix/Q0-suffix (or symmetric pair) were disjoint, the constructed path has length r+2(b-a) (or s+2(a-b)), contradicting endpoint maximality."
@@ -51,10 +52,10 @@ simplified_statement: "A double triple-gate C4 braid forces a cross-gate blocker
 statement_sha256: "c742e712be27d263205fb70f64c6bd587d6969019f2e3b88c76ffc52eaccc2e9"
 substantive_worker_ids:
   - 244
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "A double triple-gate C4 braid forces a cross-gate blocker"
 unary_chain_length: 0
 unary_chain_standalone: true
-updated_at: "2026-09-30T17:27:57.58921+00:00"
+updated_at: "2026-10-01T20:07:22.602564+00:00"
 version: 7

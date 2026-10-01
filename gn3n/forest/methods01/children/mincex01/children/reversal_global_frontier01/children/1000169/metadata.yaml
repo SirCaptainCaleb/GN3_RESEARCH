@@ -23,6 +23,7 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-29T05:27:15.715501+00:00"
     worker_id: 683
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: 75
     detail: "Independent reconstruction verifies that the fixed-pair four-set theorem applied to the three local labels gives exactly the three displayed positioned four-sets at each facing endpoint pair."
@@ -45,10 +46,10 @@ simplified_statement: "Every facing deletion-cover endpoint pair lies in an expl
 statement_sha256: "deb81f66a180b7ba7207ea404b6eb264baa7668e0a373852d464f713b26b6c65"
 substantive_worker_ids:
   - 586
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Every facing deletion-cover endpoint pair lies in an explicit Hamiltonian four-window"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-29T12:17:08.199921+00:00"
+updated_at: "2026-10-01T18:43:23.594674+00:00"
 version: 5

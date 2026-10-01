@@ -9,7 +9,7 @@ audited_math_version: 1
 body_sha256: "cd5dd6db4653b9d59f113e0e98f1c66fa7271b3d949d1ba897c71f671f8feeeb"
 created_at: "2026-09-28T20:46:30.267276+00:00"
 id: "recomp_sixside_roots_01"
-last_elevation_revision: 0
+last_elevation_revision: 11097
 last_substantive_worker_id: 703
 legacy_id: null
 lifecycle_status: "active"

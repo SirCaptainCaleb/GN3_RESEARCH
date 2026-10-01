@@ -196,8 +196,8 @@
           • [codim4_01] Codimension-four Hamiltonian-side structure.
             • [1000611] Complete bounded-obstruction taxonomy for a deletion state.
           • [endpoint_reversal_obstruction_recomp01] Endpoint reversals reduce to a bounded four-vertex frontier or a universal two-end obstruction family.
-            • [1000540] The universal hard-reversal cross family is a complete endpoint pair-extension grid.
-              • [hardreversal_fiveshell01] A universal endpoint-reversal family gives Hamiltonian five-sets over every exterior triple.
+            • [1000540] The hard reversal residue gives every endpoint-pair K4, pc2 stability through two exterior deletions, and order disagreement inside every exterior triple.
+              • [hardreversal_fiveshell01] Every exterior triple over the endpoint pair is a Hamiltonian five-set with pc2 complement; every exterior pair has a full linear five-shell.
                 • [hardreversal_six_or_disagree01] Opposite-end reversal structure forces a Hamiltonian six-support or six-vertex order disagreement.
                   • [ham6_large_escape01] Above order seventeen a Hamiltonian six-support with path-cover-two complement already descends or disagrees.
                   • [hardreversal_order16_escape01] From order sixteen the hard endpoint-reversal residue yields crossing, strict descent, or order disagreement.
@@ -293,6 +293,7 @@
           • [1000729] Endpoint restoration localizes a one-edge-for-two exchange to a bounded reverse boundary window.
         • [1000753] A doubled endpoint barrier propagates along a path unless a four-vertex connector opens.
         • [1000788] Asymmetric interior pivot cross-swaps force order disagreement or two endpoint bridges.
+        • [1000925] A longest path leaves a pc2 exterior with universal reversed endpoint triples and coupled left/right anchored cover obstructions.
         • [double_inward_endhook_not_absorption01] Even both canonical inward reverse hooks around a tight three-path do not force absorption of the exterior vertex.
         • [endpoint_replacement_truncation_dichotomy01] For any displayed tight path R and outside vertex w, either R+w is Hamiltonian or w is noninsertable everywhere in the inherited order; endpoint replacement is only a transport corollary.
         • [transportpersist01] Persistent-label successful-exchange transport.
@@ -398,6 +399,14 @@
       • [1000293] An anti-diagonal pivot chain forces linearly many distinct c-free mixed triples.
       • [crossswapconflict_recomp01] Cross-swap clause conflicts occur only along central anti-diagonals.
     • [1000913] A fully compatible deletion pair yields an endpoint reversal or a mixed Hamiltonian five-side; above order seventeen the five-side immediately enters standard escape.
+    • [1000922] Any m exact deletion two-covers in a no-two-cover boundary tournament have order disagreement or at least ceil((m-3)/3) covers crossing one fixed anchor cut.
+      • [1000923] For m>=10 chosen deletion covers, one cover is incompatible with at least floor((m-1)/2) others; in a minimum counterexample this gives a fixed half-scale family of order disagreements or support crossings.
+      • [1000927] Every prescribed anchor either has at least m-5 support-incompatible crossing covers or two same-side compatible neighbors disagree in order only through the anchor vertex.
+      • [compatibility_c4free_neartotal_fan01] Without an order-disagreement pair, deletion-cover compatibility is C4-free; one anchor is incompatible with all but O(sqrt(m)) covers.
+        • [compatibility_degree4_prescribed_fan01] Without an order-disagreement pair, every deletion-cover anchor has at most four compatible neighbors, hence at least m-5 crossing covers.
+          • [1000926] Absent support-compatible order disagreement, the support-incompatibility graph of all deletion covers has minimum degree at least n-5 and is Hamilton-connected.
+          • [compatibility_triangle_endpoint_transport01] A same-side compatibility triangle forces a direct opposite-endpoint transport edge or order reversal; otherwise every anchor has degree at most two and incompatible endpoint deletions on both sides.
+            • [compatibility_pathcycle_skeleton01] Absent transport and reversal exits, compatibility is a locally alternating union of paths and cycles, with a pairwise incompatible family of size at least ceil(2m/5).
     • [commonmiddle01] Two opposite common-middle paths force the full four-corner rectangle, with strong endpoint barriers for exterior vertices.
     • [1000048] Compatibility edges lift to one-move adjacency of deletion singleton states
       • [1000766] A compatibility component supplies canonical central path states inside one trapped pairwise-repartition component
@@ -906,10 +915,10 @@
     • [five_dualrigid_sameend01] Distinct rigid five-side locks reduce to three synchronized same-end four-core extensions.
     • [five_opposite_swap_gain01] Two opposite five-side swaps force disagreement or a one-vertex longer path
   • [mincex01] A minimum counterexample has path-cover number three, every proper induced subtournament has path-cover number at most two, and proper Hamiltonian supports have exact two-cover complements.
-    • [reversal_global_frontier01] Every prescribed pair in a minimum counterexample lies in a Hamiltonian four-set with two-path complement
+    • [reversal_global_frontier01] Every prescribed pair lies in at least floor((n-3)/2) Hamiltonian four-sets sharing one exterior vertex, each with pc2 complement.
       • [1000707] A matching-block reversal four-set always extends to a Hamiltonian four- or five-set
-      • [fourset_boolean_pc2_01] A non-Hamiltonian four-set gives path-cover-two stability for every nonempty proper complement extension
-      • [reversefan_fiveshell01] A complete reverse fan forces overlapping Hamiltonian five-sets
+      • [fourset_boolean_pc2_01] If X-S is Hamiltonian, then (H-X)+S is pc2; every four-set therefore gives all 14 nontrivial proper pc2 extensions.
+      • [reversefan_fiveshell01] A reverse-fan triple extends through one vertex to at least floor((|L|-1)/2) Hamiltonian five-sets sharing the same four-core.
       • [staircase_large_disturbance01] From order eighteen staircase minima yield order disagreement, strict descent, or a lower-state cross-component edge
         • [staircase_standard_disturbance01] Every globally minimal staircase profile yields order disagreement, strict descent, or a lower-state cross-component edge
       • [1000169] Every facing deletion-cover endpoint pair lies in an explicit Hamiltonian four-window
@@ -1102,6 +1111,9 @@
     • [1000803] At a quadratic-minimal relocation state a large size gap gives a barrier or opposite endpoint extensions
       • [1000144] Two barrier-free large-gap neighbors create a Hamiltonian three-vertex enlargement
     • [1000917] A side of order 1, 2, or 3 forces an immediate Phi descent once the largest side has order at least 3, 4, or 6 respectively; thus every componentwise minimum on n>=14 has minimum side at least four.
+    • [1000919] At n>=18 every componentwise Phi-minimum either has minimum side at least six, forces order disagreement, or has minimum side four and a proper Hamiltonian six-support with pc2 complement.
+    • [1000920] For n>=18, a global Phi-minimum either has minimum side at least six, forces order disagreement, or has profile 4|4|(n-8) or 4|5|(n-9).
+    • [1000921] For n>=18, every globally Phi-minimal spanning three-cover has minimum side at least six unless explicit order disagreement occurs.
     • [facing_k4_local_twomove_formula01] Inner facing four-windows have local two-move potential formulas.
       • [facing_k4_twomove_formula01] Inner facing four-windows have exact two-move potential formulas
     • [four_path_endpointpair_repartition_or_lock01] Two bad endpoint extensions of a four-path give a two-path repartition or interior noninsertability
@@ -1230,6 +1242,7 @@
     • [defectspanisdeletion] Every minimum span-three ordering is a deletion-cover ordering in disguise
     • [1000014] A fixed two-defect certificate permits arbitrary normalization in three stable regions.
   • [1000868] A 3-(8,4,1) design canonically matches every nonblock four-set to its complement through four complementary block pairs.
+  • [1000924] Every prescribed pair has a Hamiltonian four-extension inside every exterior triple; therefore every five-set has at least three Hamiltonian four-subsets.
   • [astramining20260927] Astra result-mining specialist pass: reusable mathematics extracted
   • [astraminingconclusion01] Astra result-mining specialist conclusion
   • [counterfence01] ‹Reusable counterexamples to tempting universal principles›

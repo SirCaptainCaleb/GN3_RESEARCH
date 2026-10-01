@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "6fb9ed90912d960c0cf19fd3d5f9ef61e177347f51e4773fb901a8a8947bf8cb"
+created_at: "2026-09-24T13:23:36.478406+00:00"
+id: "1000617"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The fixed-entrance envelope and maximum-path central-window envelope combine exactly as stated; their asymptotic crossover is q/p=16/21."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The fixed-entrance envelope and maximum-path central-window envelope combine exactly as stated; their asymptotic crossover is q/p=16/21."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_repair:
+    reason: "Vocabulary-only repair; mathematics unchanged."
+    recorded_at: "2026-09-25T01:32:26.706157+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "r=3 rank-gap interpolation"
+  uses:
+    - "1000342"
+    - "1000574"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "1000574"
+position: 0
+research_interface:
+  consequence: "Large rank gaps are automatically paid by multiplicity on a maximum endpoint path; only q/phi(v)>16/21 remains asymptotically dangerous."
+  consumer:
+    - "post-43/48 improvement"
+    - "rank-gap shell"
+  given:
+    - "exact Astra terminal count"
+    - "maximum-path singleton central window"
+  next_need: "Attack the near-top band, beginning with q=p-1. Use the fact that all unpaid incidences are single blockers of a maximum p-path; their two-contact Posa rotations create p-potential endpoints. Seek a second conflict graph after choosing P_v extremally among maximum v-ending paths."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A two-envelope local inequality isolates the near-top rank shell."
+statement_sha256: "ecacc1c4c25d3370c214213359558dc1cff1d62f9d1a641e6b206ad8993dfd34"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A two-envelope local inequality isolates the near-top rank shell"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:19:47.803651+00:00"
+version: 9

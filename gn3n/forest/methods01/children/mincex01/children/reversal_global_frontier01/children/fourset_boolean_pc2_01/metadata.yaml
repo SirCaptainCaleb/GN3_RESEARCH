@@ -4,16 +4,16 @@ attention: "focus"
 audit_priority: 100
 audit_requested: false
 audit_requirement: "independent_reconstruction"
-audit_status: "certified"
-audited_math_version: 3
-body_sha256: "99aa43a1597eaa645141f463c64807d83c3d8de6c0b6c6f283c11b81c4b6f86e"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "73e41c7ec180f2794c354a957661052729f9aadcd394376d8047bbf71156978d"
 created_at: "2026-09-28T21:37:03.978414+00:00"
 id: "fourset_boolean_pc2_01"
-last_elevation_revision: 0
-last_substantive_worker_id: 703
+last_elevation_revision: 11034
+last_substantive_worker_id: 1151
 legacy_id: null
 lifecycle_status: "active"
-math_version: 3
+math_version: 4
 mathematical_status: "proved"
 metadata:
   audit_request_reason: "Elementary but high-leverage Boolean pc2 family for the remaining matching-block K4 branch; please certify independently."
@@ -38,19 +38,21 @@ origin_worker_id: 703
 parent_id: "reversal_global_frontier01"
 position: 0
 research_interface:
-  consumer: "deletion-cover compatibility; endpoint transport; matching-block residue consumption"
-  given: "a non-Hamiltonian four-set in a minimum counterexample"
-  produces: "for every nonempty proper subset S of the four-set, the complement extension K+S is non-Hamiltonian with path-cover number two"
+  consumer: "deletion-cover compatibility; endpoint transport; bounded-window residues"
+  given: "a vertex cut X in a minimum counterexample and a subset S whose complementary part X-S is Hamiltonian"
+  implication: "the Boolean stability phenomenon is a general complement-duality principle and is orientation-free on four vertices"
+  produces: "the complementary extension (H-X)+S is automatically non-Hamiltonian pc2; every four-set gives all fourteen such states"
 research_level: "theorem"
 semantic_container_text: null
-simplified_statement: "A non-Hamiltonian four-set gives path-cover-two stability for every nonempty proper complement extension"
-statement_sha256: "190d0a5175fb634bcfadd769dda429e05b34c3a3f4c1706f13c80acad682aeb2"
+simplified_statement: "If X-S is Hamiltonian, then (H-X)+S is pc2; every four-set therefore gives all 14 nontrivial proper pc2 extensions."
+statement_sha256: "a23787218c5eb4cebaa1341972b840b0745ccb4c36ca508edd92fc313f8e0dab"
 substantive_worker_ids:
   - 703
-support_reason: "current_certified_premises"
-support_status: "supported"
-title: "A non-Hamiltonian four-set gives path-cover-two stability for every nonempty proper complement extension"
+  - 1151
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Hamiltonian complementary subsets force path-cover-two extensions"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-29T12:17:08.199921+00:00"
-version: 9
+updated_at: "2026-10-01T18:43:23.594674+00:00"
+version: 10

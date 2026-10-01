@@ -1,4 +1,324 @@
 -
+  created_at: "2026-10-01T20:02:14.733081+00:00"
+  from_id: "1001177"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000016"
+-
+  created_at: "2026-10-01T20:02:32.437476+00:00"
+  from_id: "1001178"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000058"
+-
+  created_at: "2026-10-01T20:02:50.727545+00:00"
+  from_id: "1001179"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000106"
+-
+  created_at: "2026-10-01T20:02:52.331015+00:00"
+  from_id: "1001108"
+  kind: "depends_on"
+  metadata:
+    reason: "1001108 explicitly invokes the four-path obstruction in its proof"
+  to_id: "1000106"
+-
+  created_at: "2026-10-01T20:03:09.813099+00:00"
+  from_id: "1001180"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000126"
+-
+  created_at: "2026-10-01T20:07:22.602564+00:00"
+  from_id: "1000048"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001181"
+-
+  created_at: "2026-10-01T20:07:22.602564+00:00"
+  from_id: "1000638"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001181"
+-
+  created_at: "2026-10-01T20:07:22.602564+00:00"
+  from_id: "1000957"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001181"
+-
+  created_at: "2026-10-01T20:07:22.602564+00:00"
+  from_id: "1001181"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000386"
+-
+  created_at: "2026-10-01T20:07:22.602564+00:00"
+  from_id: "1001181"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000273"
+-
+  created_at: "2026-10-01T20:07:22.602564+00:00"
+  from_id: "1001181"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000011"
+-
+  created_at: "2026-10-01T20:07:42.762091+00:00"
+  from_id: "1001182"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000099"
+-
+  created_at: "2026-10-01T20:07:42.762091+00:00"
+  from_id: "1001182"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000246"
+-
+  created_at: "2026-10-01T20:07:42.762091+00:00"
+  from_id: "1001182"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000089"
+-
+  created_at: "2026-10-01T20:11:35.900375+00:00"
+  from_id: "1001184"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000146"
+-
+  created_at: "2026-10-01T20:11:37.600744+00:00"
+  from_id: "1001185"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000187"
+-
+  created_at: "2026-10-01T20:11:40.870551+00:00"
+  from_id: "1001186"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000221"
+-
+  created_at: "2026-10-01T20:12:42.373917+00:00"
+  from_id: "1001187"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000139"
+-
+  created_at: "2026-10-01T20:12:42.373917+00:00"
+  from_id: "1001187"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000907"
+-
+  created_at: "2026-10-01T20:12:42.373917+00:00"
+  from_id: "1001187"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000213"
+-
+  created_at: "2026-10-01T20:12:42.373917+00:00"
+  from_id: "1001187"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000181"
+-
+  created_at: "2026-10-01T20:13:20.208177+00:00"
+  from_id: "1001188"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000927"
+  to_id: "1000334"
+-
+  created_at: "2026-10-01T20:13:20.208177+00:00"
+  from_id: "1001188"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1001066"
+  to_id: "1000342"
+-
+  created_at: "2026-10-01T20:13:20.208177+00:00"
+  from_id: "1001188"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1001066"
+  to_id: "1000393"
+-
+  created_at: "2026-10-01T20:13:20.208177+00:00"
+  from_id: "1001188"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001066"
+-
+  created_at: "2026-10-01T20:13:20.208177+00:00"
+  from_id: "1001188"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000927"
+-
+  created_at: "2026-10-01T20:13:20.208177+00:00"
+  from_id: "1001188"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000219"
+-
+  created_at: "2026-10-01T20:18:04.476548+00:00"
+  from_id: "1000135"
+  kind: "references"
+  metadata:
+    reason: "route reference to rehomed projective construction fence"
+  to_id: "1000241"
+-
+  created_at: "2026-10-01T20:18:07.397194+00:00"
+  from_id: "1001190"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000228"
+-
+  created_at: "2026-10-01T20:18:09.433496+00:00"
+  from_id: "1001191"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable theorem"
+  to_id: "1000274"
+-
+  created_at: "2026-10-01T20:18:11.306927+00:00"
+  from_id: "1001192"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000278"
+-
+  created_at: "2026-10-01T20:18:12.749647+00:00"
+  from_id: "1000389"
+  kind: "references"
+  metadata:
+    reason: "route reference to rehomed equality-obstruction structural lemma"
+  to_id: "1000276"
+-
+  created_at: "2026-10-01T20:19:52.931473+00:00"
+  from_id: "1001198"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000369"
+-
+  created_at: "2026-10-01T20:19:54.811407+00:00"
+  from_id: "1001199"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable theorem"
+  to_id: "1000378"
+-
+  created_at: "2026-10-01T20:21:30.375369+00:00"
+  from_id: "1001200"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000626"
+-
+  created_at: "2026-10-01T20:21:30.375369+00:00"
+  from_id: "1001200"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000806"
+-
+  created_at: "2026-10-01T20:21:30.375369+00:00"
+  from_id: "1001200"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000337"
+-
+  created_at: "2026-10-01T20:21:30.375369+00:00"
+  from_id: "1001200"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000088"
+-
+  created_at: "2026-10-01T20:21:32.662806+00:00"
+  from_id: "1001201"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000154"
+-
+  created_at: "2026-10-01T20:21:32.662806+00:00"
+  from_id: "1001201"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000077"
+-
+  created_at: "2026-10-01T20:21:32.662806+00:00"
+  from_id: "1001201"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000367"
+-
+  created_at: "2026-10-01T20:24:46.708992+00:00"
+  from_id: "1001202"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000394"
+-
   created_at: "2026-09-21T18:22:49.156921+00:00"
   from_id: "1001161"
   kind: "depends_on"
@@ -4193,13 +4513,6 @@
   from_id: "1000638"
   kind: "depends_on"
   metadata:
-    note: "uses reciprocal terminal-only contacts on every simple rail pair"
-  to_id: "1000386"
--
-  created_at: "2026-09-24T11:48:05.835317+00:00"
-  from_id: "1000638"
-  kind: "depends_on"
-  metadata:
     note: "uses mandatory foreign-edge transversality when a diagonal contact omits its terminal"
   to_id: "1000286"
 -
@@ -4886,12 +5199,6 @@
   kind: "depends_on"
   metadata:
   to_id: "1000393"
--
-  created_at: "2026-09-24T21:09:59.018417+00:00"
-  from_id: "1000048"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000386"
 -
   created_at: "2026-09-24T21:10:18.221091+00:00"
   from_id: "1000048"
@@ -5736,13 +6043,6 @@
   metadata:
     reason: "Audit trust repair: proof explicitly uses the ascending-edge accounting inequality."
   to_id: "1000304"
--
-  created_at: "2026-09-24T21:20:58.61301+00:00"
-  from_id: "1000957"
-  kind: "depends_on"
-  metadata:
-    reason: "Audit trust repair: proof explicitly uses reciprocal-terminal rigidity for unique rail intersections."
-  to_id: "1000386"
 -
   created_at: "2026-09-24T21:20:58.61301+00:00"
   from_id: "1000957"

@@ -4691,6 +4691,504 @@
   verification_method: "independent_check"
   verifier_worker_id: 1108
 -
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 1
+  note: "Reconstructed from four_window_transport15, shared-endpoint fork compression, 1000557, and minimum-counterexample calculus; all branches and endpoint-aligned conclusions follow."
+  object_id: "1000911"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000557"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "four_window_transport15"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "shared_endpoint_fork_compression01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000557"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "four_window_transport15"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "shared_endpoint_fork_compression01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-09-29T18:48:25.430063+00:00"
+  math_version: 1
+  note: "The certified double-wrap theorem gives a Hamiltonian four-window with pc2 complement in the connected cyclic-interval family; four_window_transport_allorders01 gives exactly the claimed alternatives."
+  object_id: "cyclic_nonmatching_fourwindow_transport01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000283"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000313"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000911"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000283"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000313"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000911"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 637
+-
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 2
+  note: "PASS_ADJUSTED: Repaired the singleton-swap branch to use sixset_prescribed_pair_menu01 on an arbitrary six-set containing the swapped pair, removing the unsupported assumption that both flanks contain two vertices while preserving the stated five-side escape conclusion."
+  object_id: "1000912"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "equal_size_block_swap_rectangle01"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "five_side_arbitrary_escape01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "sixset_prescribed_pair_menu01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "equal_size_block_swap_rectangle01"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "five_side_arbitrary_escape01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "sixset_prescribed_pair_menu01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 1
+  note: "Reconstructed compatible insertion localization. Different/separated insertions glue to a two-cover; adjacent slots endpointize to a reversal; identical slots yield the mixed Hamiltonian five-side via the prescribed-pair six-set theorem."
+  object_id: "1000913"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000912"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "five_side_arbitrary_escape01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "singleton_transfer_endpointization01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "sixset_prescribed_pair_menu01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "1000912"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "five_side_arbitrary_escape01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "singleton_transfer_endpointization01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "sixset_prescribed_pair_menu01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 2
+  note: "Verified the c=1 and c=2 endpoint absorptions and potential drops directly, and the c=3 case from threesidedescent6; the n>=14 minimum-side consequence follows."
+  object_id: "1000917"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "threesidedescent6"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "threesidedescent6"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 1
+  note: "Verified the endpoint candidate count, equality cases, distinct left/right families, all potential-drop formulas, and the m>=10 continuation to minimum side at least four."
+  object_id: "1000918"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "threeside_bounded_endpoint_five_repartition01"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "threesidedescent6"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "threeside_bounded_endpoint_five_repartition01"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "threesidedescent6"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 1
+  note: "Verified the componentwise-minimum trichotomy by eliminating sides 1–3 via 1000917, side 5 via five-side descent/disagreement, and side 4 via 1000389."
+  object_id: "1000919"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000389"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000917"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "fiveside_descent_or_disagree01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000389"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "1000917"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "fiveside_descent_or_disagree01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 1
+  note: "Verified global-minimum reduction: sides 1–3 descend, side 5 descends or disagrees, and a four-side with both complements at least six triggers the 1000592 disagreement package, leaving exactly 4|4 and 4|5."
+  object_id: "1000920"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000592"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000917"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "fiveside_descent_or_disagree01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000592"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "1000917"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "fiveside_descent_or_disagree01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-10-01T18:36:46.25886+00:00"
+  math_version: 2
+  note: "Verified closure of all c<=5 cases using 1000917, five-side descent/disagreement, 1000592, and trapped-component exclusions 1000822 and 1000323; absent disagreement, c>=6."
+  object_id: "1000921"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000323"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000592"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000822"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000917"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "fiveside_descent_or_disagree01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000323"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000592"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "1000822"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000917"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "fiveside_descent_or_disagree01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1151
+-
+  checked_at: "2026-10-01T19:28:35.317157+00:00"
+  math_version: 3
+  note: "PASS_ADJUSTED: Added the missing justification that pc(H)>2 forbids singleton components in the anchor deletion cover, so both support classes remain nonempty on the common vertex set; also removed prohibited exact-cover terminology."
+  object_id: "1000922"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 1164
+-
   checked_at: "2026-09-27T22:24:00.997586+00:00"
   math_version: 2
   note: null
@@ -16547,48 +17045,6 @@
   verification_method: "independent_reconstruction"
   verifier_worker_id: 683
 -
-  checked_at: "2026-09-29T12:17:08.199921+00:00"
-  math_version: 3
-  note: "For every nonempty proper S of the non-Hamiltonian four-set X, X-S has order at most three and is Hamiltonian. If K+S were Hamiltonian it would pair with X-S to two-cover H; minimality then gives path-cover number exactly two for K+S."
-  object_id: "fourset_boolean_pc2_01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 681
--
-  checked_at: "2026-09-29T12:17:08.199921+00:00"
-  math_version: 3
-  note: "Reconstructed the fixed-pair pigeonhole proof directly. Among any three exterior labels, two have the same orientation relative to L,R; boundary antisymmetry on their pair supplies a Hamiltonian four-order. Properness and minimum-counterexample calculus give the stated non-Hamiltonian path-cover-two complement."
-  object_id: "reversal_global_frontier01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 681
--
   checked_at: "2026-09-28T20:53:15.675251+00:00"
   math_version: 1
   note: "Recomposition-equivalence check succeeds. The replacement faithfully combines the four endpoint-transfer covers of ae257d2f37ff, the eight blocked x-enlargements of eacf4e706392, and the two central five-path/order-incompatible four-core conclusions of e0a9b3dad731. The proper-complement conclusion is preserved via mincex01.\nCertified by recomposition-equivalence audit against the retired certified source package."
@@ -17070,39 +17526,6 @@
   verifier_worker_id: 683
 -
   checked_at: "2026-09-29T05:59:46.300317+00:00"
-  math_version: 3
-  note: "PASS_ADJUSTED: Added the actually used smallset01 and mincex01 logical premises."
-  object_id: "reversefan_fiveshell01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-  verification_method: "independent_check"
-  verifier_worker_id: 630
--
-  checked_at: "2026-09-29T05:59:46.300317+00:00"
   math_version: 2
   note: "PASS_ADJUSTED: Added insert01 as the logical premise explicitly used by the proof."
   object_id: "five_opposite_swap_gain01"
@@ -17553,39 +17976,6 @@
       math_version: 1
       mathematical_status: "proved"
   verification_method: "independent_reconstruction"
-  verifier_worker_id: 664
--
-  checked_at: "2026-09-29T12:14:33.254031+00:00"
-  math_version: 4
-  note: "Independent check. For any exterior triple y,z,w, the three common-endpoint tight triples (p_m,*,p_0) satisfy the certified small-set Hamiltonian-five lemma. Minimum-counterexample calculus gives properness and path-cover-two complements, and every exterior four-set therefore yields four Hamiltonian five-vertex deletions."
-  object_id: "hardreversal_fiveshell01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-  verification_method: "independent_check"
   verifier_worker_id: 664
 -
   checked_at: "2026-09-29T05:30:16.874504+00:00"
@@ -20350,51 +20740,6 @@
       mathematical_status: "proved"
   verification_method: "independent_check"
   verifier_worker_id: 605
--
-  checked_at: "2026-09-29T18:48:25.430063+00:00"
-  math_version: 1
-  note: "The certified double-wrap theorem gives a Hamiltonian four-window with pc2 complement in the connected cyclic-interval family; four_window_transport_allorders01 gives exactly the claimed alternatives."
-  object_id: "cyclic_nonmatching_fourwindow_transport01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000283"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000313"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "four_window_transport_allorders01"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "1000283"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "1000313"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "four_window_transport_allorders01"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-  verification_method: "independent_check"
-  verifier_worker_id: 637
 -
   checked_at: "2026-09-29T18:48:25.430063+00:00"
   math_version: 1
@@ -41500,39 +41845,6 @@
       mathematical_status: "proved"
   verification_method: "independent_reconstruction"
   verifier_worker_id: 681
--
-  checked_at: "2026-09-29T05:27:15.715501+00:00"
-  math_version: 1
-  note: "Independent reconstruction verifies the complete pair-extension conclusion and radius-two deletion stability from the universal hard-reversal family and minimum-counterexample calculus."
-  object_id: "1000540"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "endpoint_reversal_obstruction_recomp01"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "endpoint_reversal_obstruction_recomp01"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 683
 -
   checked_at: "2026-09-29T12:25:55.628901+00:00"
   math_version: 2

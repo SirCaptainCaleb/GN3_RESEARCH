@@ -8904,6 +8904,164 @@
         
         Finally, if n>=18, a two-cover of H-X has total order n-5>=13, so one path has order at least seven. Applying five_side_arbitrary_escape01 gives the stated three-way escape. This composes the compatible-pair localization, adjacent-slot endpointization, and identical-slot five-side construction into one direct theorem.
 
+    • [1000922] Deletion-cover compatibility forces a sharp linear family relative to one fixed support cut
+        STATEMENT
+        Let H be a boundary tournament with pc(H)>2. Let D be a set of m>=4 vertices, and for each d in D choose a two-cover F_d of H-d. Then either two chosen covers are support-compatible but order-incompatible on their common vertex set, or there is an anchor x in D and a set Y subset D-{x} with |Y|>=ceil((m-3)/3) such that for every y in Y some path of F_y either contains a consecutive pair of common vertices lying in opposite component supports of F_x, or contains x internally with its two neighbors lying in opposite component supports of F_x. In the latter case that consecutive triple through x is tight. The bound ceil((m-3)/3) is the sharp degree guarantee obtainable from K4-free compatibility alone.
+        BODY / PROOF
+        Assume no support-compatible pair is order-incompatible. Let G be the graph on D whose edges are support-compatible pairs. Then every edge is full compatibility. Four pairwise adjacent labels would give four pairwise fully compatible deletion two-covers, and the compatibility-gluing theorem would produce a spanning two-cover of H, contradicting pc(H)>2. Thus G is K4-free; no minimum-counterexample minimality is used.
+        
+        By Turan's theorem, e(G)<=floor(m^2/3), so the complement has average degree at least (m-3)/3. Hence some x has complement-degree at least ceil((m-3)/3). Let Y be its non-neighbors and fix F_x=P|Q.
+        
+        Both P and Q have at least two vertices. Indeed, if one component of F_x were a singleton {z}, then the other component together with the two-vertex tight path (x,z) would form a spanning two-cover of H, contradicting pc(H)>2. Therefore, for every y in Y, both P-{y} and Q-{y} are nonempty on U=V(H)-{x,y}.
+        
+        Fix y in Y. Since x and y are nonadjacent in G, the restrictions of F_x and F_y to U are support-incompatible. Because the two nonempty anchor classes P-{y} and Q-{y} partition U, if every path of F_y met at most one anchor class then its restriction to U would induce exactly the same two support classes, a contradiction. Thus some path R of F_y contains common vertices from both anchor classes.
+        
+        If a class transition in R uses two consecutive vertices of U, this gives the first asserted alternative. Otherwise every transition between the two anchor classes must pass through x, the unique vertex of F_y outside U. Since x occurs only once on R, it is internal at the unique such transition and its two neighbors lie in opposite anchor classes. Those three consecutive vertices of the tight path R form a tight triple.
+        
+        Thus all y in Y give the asserted alternatives relative to one fixed support cut of F_x. A balanced complete 3-partite K4-free graph shows the complement-degree bound is graph-theoretically sharp; improving it requires additional boundary-tournament structure.
+
+      • [1000923] Neighborhood-sparse compatibility forces a sharp half-scale incompatibility anchor
+          STATEMENT
+          Let H be a boundary tournament with pc(H)>2, and let D be a set of m>=10 deletion labels with one chosen deletion two-cover F_d for each d in D. Let G be the graph on D in which two labels are adjacent when their chosen covers are fully compatible on their common vertex set. Then some x in D is nonadjacent to at least floor((m-1)/2) other labels. This bound is graph-theoretically sharp under the certified neighborhood condition Delta(G[N_G(v)])<=2.
+          
+          Consequently, for a minimum counterexample H of order n>10, using all n deletion labels, there is one deletion cover F_x and a set Y of at least floor((n-1)/2) other labels such that every F_y, y in Y, is incompatible with F_x. For each y in Y, either F_y is support-compatible with F_x but has order disagreement on their common vertex set, or F_y is support-incompatible and hence crosses the fixed support cut of F_x in the concrete sense of 1000922. In particular, if no support-compatible pair is order-incompatible, then one fixed anchor cut is crossed by at least floor((n-1)/2) deletion covers.
+          BODY / PROOF
+          Write d for the minimum degree of G and choose x with d_G(x)=d. Put N=N_G(x) and M=D-({x} union N), so |M|=m-1-d.
+          
+          The certified compatibility-neighborhood theorem compatneighborhood02 gives Delta(G[N_G(v)])<=2 for every v. Suppose for contradiction that d>=floor(m/2)+1.
+          
+          For u in N, write a_u=d_{G[N]}(u) and b_u=|N_G(u) intersect M|. Since a_u<=2 and d_G(u)>=d,
+          b_u=d_G(u)-1-a_u>=d-3.
+          Also
+          a_u=d_G(u)-1-b_u>=d-1-|M|=2d-m.
+          Under d>=floor(m/2)+1, this lower bound is positive, so G[N] contains an edge uv.
+          
+          Both u and v have at least d-3 neighbors in M. Hence
+          |N_G(u) intersect N_G(v) intersect M|
+          >=2(d-3)-|M|
+          =2d-6-(m-1-d)
+          =3d-m-5.
+          The vertex x is another common neighbor of u and v, so the compatibility edge uv has codegree at least
+          3d-m-4.
+          For m>=10 and d>=floor(m/2)+1 this quantity is at least three: for even m=2r it is at least r-1>=4 when m>=10, and for odd m=2r+1 it is at least r-2>=3 when m>=11. This contradicts the certified edge-codegree-at-most-two consequence used in compatneighborhood02. Therefore d<=floor(m/2).
+          
+          Thus x has at least
+          m-1-floor(m/2)=floor((m-1)/2)
+          nonneighbors, proving the graph claim. The constant is sharp for this graph-theoretic input because a complete bipartite graph with balanced parts satisfies Delta(G[N(v)])=0 and every vertex in a largest part has exactly floor((m-1)/2) nonneighbors.
+          
+          Now let G be the full compatibility graph of the chosen deletion covers. Nonadjacency of x and y means F_x and F_y are not fully compatible. Either their support partitions agree on the common vertex set but their relative orders disagree, or their support partitions differ. In the latter case, the fixed-cut argument of 1000922 applies verbatim: writing F_x=P|Q on H-x and U=V(H)-{x,y}, some path of F_y contains common vertices from both P-{y} and Q-{y}; hence either a consecutive pair of common vertices lies on opposite sides of the fixed P|Q cut, or the unique transition passes through x, whose two path-neighbors lie on opposite sides and form a tight consecutive triple through x.
+          
+          For a minimum counterexample, mincex01 gives n>10, so taking D=V(H) yields the stated half-scale anchored family. If support-compatible order disagreement never occurs, every one of the at least floor((n-1)/2) nonneighbors lies in the support-incompatible crossing case.
+
+      • [1000927] Every deletion-cover anchor forces near-total support crossings or anchor-centered order disagreement
+          STATEMENT
+          Let H be a boundary tournament with pc(H)>2. Let D be a set of m>=4 deletion labels, choose one two-cover F_d of H-d for each d in D, and fix an anchor x in D with F_x=P|Q.
+          
+          Let C be the full-compatibility graph on D. The neighbors of x split canonically into two classes N_P,N_Q according to the common support class into which x is inserted in the neighboring cover; write p=|N_P| and q=|N_Q|.
+          
+          For each S in {N_P,N_Q}, every pair of labels in S is support-compatible. The full-compatibility graph induced by S is triangle-free. Hence S contains at least floor((|S|-1)^2/4) support-compatible but order-incompatible pairs. Moreover every such order disagreement is centered at x: the two covers agree on the relative order of every common pair not involving x, so some common vertex t is ordered on opposite sides of x in the two path orders.
+          
+          Consequently the anchor x satisfies the quantitative tradeoff
+          number of support-incompatible covers relative to F_x = m-1-p-q,
+          while the two compatible side-classes contain at least
+          floor((p-1)^2/4)+floor((q-1)^2/4)
+          anchor-centered order-incompatible pairs.
+          
+          In particular, for every prescribed anchor x, either at least m-5 other covers are support-incompatible with F_x and therefore have the fixed-cut crossing witness of 1000922, or there exist two covers, both fully compatible with F_x and assigned to the same anchor side, that are support-compatible but order-incompatible with disagreement necessarily involving x.
+          BODY / PROOF
+          Fix x and write F_x=P|Q. Let y be fully compatible with x. By the compatible-pair localization in 1000694, when F_x and F_y are compared on H-{x,y}, the omitted vertices x and y restore into the same common support class; restoring them into different classes would give a spanning two-cover of H. Thus each neighbor y of x is assigned canonically to the P-side or Q-side. Let these classes be N_P and N_Q.
+          
+          Take distinct y,z in N_P. Because F_y is fully compatible with F_x, on the common vertex set V(H)-{x,y} it has the same support partition and relative orders as F_x. Since y lies on the P-side, the support of F_y containing x is the P-side with y omitted and x restored, while Q is the other support. The same is true for F_z. Therefore, on V(H)-{y,z}, the two covers F_y and F_z induce the same two support classes:
+          ((P-{y,z}) union {x}) | Q.
+          Hence F_y and F_z are support-compatible. The same argument applies inside N_Q.
+          
+          Now consider the full-compatibility graph induced by N_P. It is triangle-free. Indeed, if y,z,w in N_P were pairwise fully compatible, then x,y,z,w would be four pairwise fully compatible deletion covers. The four-cover gluing theorem in 1000694 would then produce a spanning two-cover of H, contradicting pc(H)>2. Thus Mantel's theorem gives at most floor(p^2/4) full-compatibility edges inside N_P. Every remaining pair in N_P is already known to be support-compatible, so it is support-compatible but order-incompatible. Therefore N_P contains at least
+          binom(p,2)-floor(p^2/4)=floor((p-1)^2/4)
+          order-incompatible pairs. Likewise N_Q contains at least floor((q-1)^2/4).
+          
+          These disagreements are positioned at x. Take y,z in N_P that are support-compatible but order-incompatible. On Q, both covers agree in relative order with F_x, because Q survives both pairwise comparisons with the anchor. On the common vertices P-{y,z}, both covers also agree in relative order with F_x: full compatibility of F_y with F_x fixes every pair not involving x or y, and full compatibility of F_z with F_x fixes every pair not involving x or z. Hence F_y and F_z agree on every common pair not involving x. Since they are order-incompatible, some common vertex t must therefore satisfy opposite relative orders with x in the two anchor-side path orders. Equivalently, the two neighboring covers place x at different insertion cuts of the inherited anchor-side order. The same reasoning applies inside N_Q.
+          
+          Finally, x has exactly m-1-p-q nonneighbors in the full-compatibility graph. A nonneighbor is either support-incompatible or support-compatible but order-incompatible. But if p+q<=4, then x has at least m-5 nonneighbors; any nonneighbor that is support-incompatible has the fixed-cut crossing witness of 1000922, while any support-compatible nonneighbor already gives order disagreement. If p+q>=5, one of p,q is at least three, and the preceding triangle-free argument gives an anchor-centered support-compatible order-incompatible pair among neighbors of x. Thus for every prescribed anchor, either at least m-5 support-incompatible crossing covers occur, or an anchor-centered order-disagreement pair occurs among covers individually fully compatible with the anchor. The quantitative count above records both phenomena simultaneously.
+
+      • [compatibility_c4free_neartotal_fan01] Deletion-cover compatibility is C4-free, forcing a near-total anchored crossing fan
+          STATEMENT
+          Let H have path-cover number greater than 2, and let D be m at least 4 deletion labels with chosen two-covers F_d of H-d. If no pair is support-compatible but order-incompatible, then the full-compatibility graph C on D has at most one common neighbor for every pair of vertices. Hence
+          avgdeg(C) <= (1 + sqrt(4m-3))/2.
+          Therefore some anchor x has at least ceil((2m-3-sqrt(4m-3))/2) support-incompatible covers. Relative to F_x=P|Q, each such cover has the crossing certificate from 1000922. Also the number of support-incompatible pairs is at least binom(m,2)-m(1+sqrt(4m-3))/4, and there is a pairwise support-incompatible subfamily of size at least ceil(2m/(3+sqrt(4m-3))).
+          BODY / PROOF
+          Let C be the full-compatibility graph.
+          
+          Suppose first that ab is a nonedge and x,y are distinct common neighbors. Compare the restrictions of F_a and F_b to the common vertex set with a and b removed. Deleting x makes these two ordered two-block states identical, because both are then the corresponding restriction of F_x; deleting y does the same. By pairdeletionreconstruct01, two distinct equalizing deletions force the original states to have the same supports, with at most the pair x,y as an order disagreement. Thus F_a and F_b are support-compatible. The standing hypothesis excludes support-compatible order-incompatible pairs, so F_a and F_b would be fully compatible, contradiction. Thus every nonedge has at most one common neighbor.
+          
+          Now suppose ab is an edge with distinct common neighbors x,y. If xy were an edge, a,b,x,y would form four mutually compatible deletion covers, forbidden by the four-cover gluing obstruction in 1000694 because pc(H)>2. Hence xy is a nonedge, but then it has the two common neighbors a,b, contradiction. So every pair of vertices of C has at most one common neighbor.
+          
+          Counting length-two paths gives sum_v binom(d_v,2) <= binom(m,2). If dbar is the average degree, convexity yields dbar(dbar-1) <= m-1, hence dbar <= (1+sqrt(4m-3))/2. This gives the claimed edge bound and therefore the quadratic lower bound on incompatible pairs. Some vertex x has compatibility degree at most dbar, so its number of nonneighbors is at least ceil((2m-3-sqrt(4m-3))/2). Under the standing hypothesis every nonneighbor is support-incompatible, and 1000922 supplies the stated crossing witness for each.
+          
+          Finally, the standard greedy bound alpha(C) >= m/(dbar+1) gives alpha(C) >= 2m/(3+sqrt(4m-3)), yielding the pairwise support-incompatible subfamily.
+          
+          Thus the former m/3 anchored fan sharpens to m-O(sqrt(m)), with a simultaneous quadratic supply of incompatible pairs.
+
+        • [compatibility_degree4_prescribed_fan01] Deletion-cover compatibility has maximum degree four, forcing prescribed-anchor crossing fans
+            STATEMENT
+            Let H have path-cover number greater than 2, and let D be m>=4 deletion labels with chosen two-covers F_d of H-d. Assume there is no pair of deletion covers that is support-compatible but order-incompatible. Then the full-compatibility graph C on D has maximum degree at most 4. More precisely, for any anchor x with F_x=P|Q, the compatible neighbors of x split according to whether their restored label lies on P or Q; each side-class is a clique and therefore has size at most 2, since four mutually compatible deletion covers are forbidden. Hence every prescribed anchor x has at least m-5 support-incompatible covers. Relative to F_x, each such cover has the crossing witness from 1000922. Consequently e(C)<=2m and C has an independent set of size at least ceil(m/5), giving a linear pairwise support-incompatible subfamily.
+            BODY / PROOF
+            Fix x and write F_x=P|Q. For every y compatible with x, pairwise compatibility determines which anchor support class contains y: after deleting x and y, the two covers have the same two support classes, and restoring x in F_y and y in F_x occurs in the same class. Partition N_C(x)=N_P union N_Q accordingly.
+            
+            Take y,z in N_P. On the common vertex set V(H)-{y,z}, the support partition induced by F_y is ((P-{y,z}) union {x}) | Q, and the support partition induced by F_z is the same. Thus F_y and F_z are support-compatible. By the standing hypothesis, support-compatible/order-incompatible pairs do not occur, so F_y and F_z are fully compatible. Therefore N_P is a clique. The same argument shows N_Q is a clique.
+            
+            If |N_P|>=3, then x together with any three vertices of N_P would form four mutually compatible deletion covers, contradicting the four-cover gluing obstruction from 1000694 because pc(H)>2. Hence |N_P|<=2, and similarly |N_Q|<=2. Thus deg_C(x)<=4. Since x was arbitrary, Delta(C)<=4.
+            
+            Therefore every anchor x has at least (m-1)-4=m-5 nonneighbors. Under the standing hypothesis, a nonneighbor cannot be support-compatible, so every nonneighbor is support-incompatible. Applying the certified first-crossing conclusion of 1000922 to each such y gives, relative to F_x=P|Q, either an ordinary F_y edge crossing between common P- and Q-side vertices, or x internal in an F_y path with its two neighbors on opposite anchor sides, yielding a tight triple through x across the cut.
+            
+            The degree bound also gives e(C)<=2m. Finally, greedily selecting a vertex and deleting it together with its at most four neighbors produces an independent set of size at least ceil(m/5). This is a pairwise support-incompatible deletion-cover subfamily.
+            
+            This strictly strengthens the earlier C4-free/O(sqrt(m)) estimate: the crossing fan is now m-5 and is available from every prescribed anchor, while the mutually incompatible family is linear rather than order sqrt(m).
+
+          • [1000926] Support-incompatibility graph is Hamilton-connected in every minimum counterexample branch without order disagreement
+              STATEMENT
+              Let H be a minimum counterexample of order n>10. Choose one deletion two-cover F_x of H-x for each x in V(H), and assume no pair of chosen covers is support-compatible but order-incompatible. Form the graph J on V(H) by joining x,y when F_x and F_y are support-incompatible on their common vertex set. Then every vertex of J has degree at least n-5. Consequently J is Hamilton-connected: for any distinct prescribed labels a,b there is an ordering a=x_1,x_2,...,x_n=b of all deletion labels such that each consecutive pair F_{x_i},F_{x_{i+1}} is support-incompatible. In particular J is connected, Hamiltonian, and every prescribed pair of labels lies at the ends of a spanning support-incompatibility chain.
+              BODY / PROOF
+              Under the standing hypothesis, the full-compatibility graph C on the deletion labels has maximum degree at most four by compatibility_degree4_prescribed_fan01. Since every pair of chosen covers is either fully compatible, support-compatible but order-incompatible, or support-incompatible, and the middle alternative is excluded, the support-incompatibility graph J is exactly the complement of C. Hence for every label x,
+              d_J(x)=(n-1)-d_C(x)>=n-5.
+              
+              Because H is a minimum counterexample, mincex01 gives n>10. Therefore
+              n-5 >= (n+1)/2.
+              The standard Hamilton-connected degree criterion now applies: every simple graph on n vertices with minimum degree at least (n+1)/2 is Hamilton-connected. Thus for any distinct prescribed labels a,b, J has a Hamilton path from a to b.
+              
+              Equivalently, one may order all deletion labels
+              a=x_1,x_2,...,x_n=b
+              so that each consecutive pair F_{x_i},F_{x_{i+1}} is support-incompatible on V(H)-{x_i,x_{i+1}}. This packages the m-5 crossing conclusion globally: instead of merely giving many unrelated support-incompatible partners for each anchor, it provides a spanning transport chain through the whole deletion family, with arbitrary prescribed endpoints.
+              
+              This does not by itself close the grand theorem; the next consumer must exploit successive cut changes along such a chain, for example by tracking how support classes transform from one deletion state to the next and forcing endpoint reuse, a parity obstruction, or defect compression.
+
+          • [compatibility_triangle_endpoint_transport01] Compatibility triangles force endpoint transport or order reversal
+              STATEMENT
+              Let H have path-cover number greater than 2, and let D be deletion labels with chosen two-covers. Assume the branch contains no support-compatible but order-incompatible pair. Fix an anchor F_x=P|Q. If two compatible neighbors y,z of x lie on the same anchor side, say P, then x,y,z form a synchronized family F_t=(X-t)|Q with X=P union {x}. Applying the endpoint-synchronization lemma to the two endpoint deletions of Q yields a common t in {x,y,z} such that both endpoint covers are incompatible with F_t and each has at least two cross-class ordinary edges across (X-t)|(Q-q)|{t}. Moreover, unless an order-reversal/disagreement gadget appears, one of these endpoint covers contains a direct ordinary edge joining X-t to Q-q. Consequently, in the residual branch with neither endpoint transport nor order reversal, every anchor has at most one compatible neighbor on each side, hence total compatibility degree at most 2, at least m-3 support-incompatible crossing covers, and at least one incompatible endpoint deletion on each anchor path.
+              BODY / PROOF
+              Fix F_x=P|Q. Suppose y,z are distinct neighbors of x in the full-compatibility graph and both replace x on the P-side. As in compatibility_degree4_prescribed_fan01, the three covers have the common synchronized form
+              F_x=(X-x)|Q, F_y=(X-y)|Q, F_z=(X-z)|Q
+              with X=P union {x}; the structural theorem behind this family gives X non-Hamiltonian and Q Hamiltonian.
+              
+              Apply the endpoint-synchronization result 1000758 to D0={x,y,z}. For the two endpoint labels q0,qs of Q, choose deletion covers G_q. That result supplies one common t in D0 such that both endpoint covers are incompatible with F_t. Each G_q has at least two ordinary edges crossing the three-way partition
+              A=X-t, B=Q-q, {t}.
+              If an endpoint cover has at least three cross-class edges, then one of them must join A directly to B, because the singleton t has ordinary path-degree at most two in a two-path cover. Thus the alternative in 1000758, 'at least three crossings or a direct mixed A-B edge', collapses to the existence of a direct A-B edge. If neither endpoint cover has such a direct A-B edge, the two neutral endpoint-replacement configurations are exactly the case in which 1000758 produces relative-order disagreement, equivalently the associated reversal gadget. Hence a same-side compatibility triangle forces either endpoint transport by a direct A-B edge or an order-reversal/disagreement output.
+              
+              Now exclude both of those useful exits. Then no anchor can have two compatible neighbors on the same side. Therefore each side contributes at most one compatible neighbor and deg_C(x)<=2 for every x. Hence every anchor has at least m-3 support-incompatible covers, so 1000922 supplies at least m-3 crossing witnesses relative to that prescribed anchor. Also, among the two endpoint labels of P, at least one must be incompatible with x: if both were compatible they would form a same-side triangle with x. The same holds for the two endpoints of Q. Thus the residual obstruction has endpoint-local incompatible deletion covers on both anchor components.
+
+            • [compatibility_pathcycle_skeleton01] Residual compatibility is a locally alternating path-cycle skeleton
+                STATEMENT
+                Work in the residual branch where there is no support-compatible/order-incompatible pair, no endpoint-transport edge produced by a same-side compatibility triangle, and no order-reversal/disagreement output from that triangle mechanism. Then the full-compatibility graph C on the deletion labels is triangle-free with maximum degree at most 2. More precisely, for every anchor F_x=P|Q, any two compatible neighbors that lie on opposite anchor sides are support-incompatible with each other, while two same-side compatible neighbors would trigger the excluded triangle mechanism. Hence every degree-two anchor has exactly one compatible neighbor on each side. Therefore every component of C is a path or a cycle of length at least 4. If some component is a path, an endpoint anchor has at least m-2 support-incompatible covers; otherwise C is a union of cycles and every anchor has exactly m-3 support-incompatible covers. In all cases e(C)<=m, there are at least binom(m,2)-m support-incompatible pairs, and C has an independent set of size at least ceil(2m/5), yielding a pairwise support-incompatible deletion-cover subfamily of that size.
+                BODY / PROOF
+                Fix an anchor x with F_x=P|Q. By compatibility_triangle_endpoint_transport01, in the residual branch x cannot have two compatible neighbors lying on the same anchor side: such a same-side pair would create the synchronized compatibility triangle that yields either an endpoint-transport edge or an order-reversal/disagreement output, both excluded here.
+                
+                Now suppose y and z are compatible neighbors of x lying on opposite anchor sides. Compare F_y and F_z on the common vertex set V(H)-{y,z}. Compatibility of F_x with F_y identifies the support class containing x with the anchor side from which y was restored; compatibility of F_x with F_z does the same using the opposite anchor side. Thus in the restrictions of F_y and F_z, the vertex x lies in opposite support classes. Their support partitions therefore differ, so F_y and F_z are support-incompatible. In particular yz is not an edge of the full-compatibility graph. Hence every neighborhood in C is independent, and C is triangle-free.
+                
+                The previous endpoint-transport lemma already gives degree at most 2 in this residual branch. Combining this with neighborhood independence shows that every degree-two anchor has one compatible neighbor on each anchor side. Therefore every connected component of C is a path or a cycle, and triangle-freeness rules out 3-cycles, so all cycle components have length at least 4.
+                
+                If C has a path component, choose an endpoint x of that component. Then deg_C(x)<=1, so x has at least m-2 nonneighbors. Under the standing no-order-disagreement hypothesis, every nonneighbor is support-incompatible, and 1000922 supplies the corresponding crossing witnesses. If every component is a cycle, every vertex has degree 2, so every anchor has exactly m-3 support-incompatible covers.
+                
+                Since Delta(C)<=2, e(C)<=m, so at least binom(m,2)-m pairs are support-incompatible. Finally, the independence number is additive over components. A path on r vertices has independence number ceil(r/2), while a cycle on r>=4 vertices has independence number floor(r/2), whose minimum ratio over r>=4 is 2/5 at r=5. Summing componentwise gives alpha(C)>=ceil(2m/5). An independent set is exactly a pairwise non-compatible family; under the standing hypothesis every such pair is support-incompatible. Thus there is a pairwise support-incompatible deletion-cover subfamily of size at least ceil(2m/5).
+
     • [centralbridge35] Every deletion state has a canonical bounded central-bridge three-cover
         STATEMENT
         Let H be a minimum counterexample and H-x=P|Q an exact deletion two-cover with P=(p0,...,pm), Q=(q0,...,qs). Then H has a spanning three-path cover whose central component is supported on the join window and has order either three or five: if (pm,x,q0) is tight, use (p0,...,p_{m-1}) | (pm,x,q0) | (q1,...,qs); if it is non-tight, use (p0,...,p_{m-2}) | (q1,q0,x,pm,p_{m-1}) | (q2,...,qs).
@@ -11812,6 +11970,29 @@
             
             Thus the asymmetric interior pivot-pivot branch reduces to explicit order disagreement or a synchronized pair of endpoint-to-endpoint tight four-paths. ∎
 
+        • [1000925] A longest path forces a bi-anchored path-cover obstruction on its exterior
+            STATEMENT
+            Let H be a minimum counterexample and let P=(p_0,...,p_m) be a longest tight path. Put K=V(H)-V(P). Then K is non-Hamiltonian with path-cover number two and |K|>=4. For every y in K, (p_1,p_0,y) and (y,p_m,p_{m-1}) are tight.
+            
+            More generally, the complement of every nonempty proper contiguous subpath of P is non-Hamiltonian with path-cover number two. In particular
+            L=K union {p_0,p_1},
+            R=K union {p_{m-1},p_m},
+            and, since |P|>=5,
+            S=K union {p_0,p_1,p_{m-1},p_m}
+            are non-Hamiltonian with path-cover number two.
+            
+            No two-cover of L has a component ending with the ordered pair (p_0,p_1), and no two-cover of R has a component beginning with (p_{m-1},p_m). Moreover S has no Hamilton path beginning with (p_1,p_0) and ending with (p_m,p_{m-1}).
+            BODY / PROOF
+            Since P is a proper Hamiltonian support in a minimum counterexample, its complement K is non-Hamiltonian with path-cover number two. Every boundary tournament of order at most three is Hamiltonian, so |K|>=4.
+            
+            Fix y in K. If (y,p_0,p_1) were tight, then (y,p_0,p_1,...,p_m) would be a tight path longer than P. Hence (y,p_0,p_1) is non-tight, so boundary antisymmetry gives (p_1,p_0,y) tight. Similarly, (p_{m-1},p_m,y) is non-tight by maximality of P, and therefore (y,p_m,p_{m-1}) is tight.
+            
+            Now let I be any nonempty proper contiguous subpath of P. The inherited order makes I Hamiltonian. If H-I were Hamiltonian, Hamilton paths on I and H-I would form a spanning two-cover of H, impossible. Since H-I is a proper induced subtournament of the minimum counterexample, it has path-cover number at most two; non-Hamiltonicity makes the number exactly two. Taking I to be P, the suffix p_2,...,p_m, the prefix p_0,...,p_{m-2}, and the middle p_2,...,p_{m-2} gives the asserted exact two-cover complements. The middle is nonempty because every minimum counterexample has order greater than ten and a longest path has order at least ceil((n-1)/2)>=5.
+            
+            Suppose a two-cover of L had a component T ending with (p_0,p_1). Appending the inherited suffix (p_2,...,p_m) to T preserves tightness at the join because (p_0,p_1,p_2) and all later triples belong to P. Together with the other component of the cover of L this gives a spanning two-cover of H, contradiction. The right-anchor statement is symmetric: if a component of a two-cover of R begins with (p_{m-1},p_m), prepend the inherited prefix (p_0,...,p_{m-2}).
+            
+            Finally, if S had a Hamilton path beginning with (p_1,p_0) and ending with (p_m,p_{m-1}), that path together with the inherited middle path (p_2,...,p_{m-2}) would be a spanning two-cover of H. Thus the two universal reversed endpoint families coexist on one smaller pc2 induced subtournament, but cannot be joined into a reverse-to-reverse Hamilton path.
+
         • [codim5_01] Codimension-five endpoint normalization
             STATEMENT
             For a Hamiltonian side with a non-Hamiltonian five-vertex complement, at least four complement deletions stabilize exact two-covers; inherited-order endpoint attachments normalize to singletons, and endpoint analysis reduces to multiple crossings, order disagreement, or a successful-exchange path with non-Hamiltonian five-vertex complement.
@@ -13979,7 +14160,7 @@
                     
                     If s>=2, the displayed joins splice to produce two positioned Hamiltonian supports on three of the four blocks; in a minimum counterexample each has non-Hamiltonian path-cover-two complement.
                     
-                    If s=1, the terminal singleton-swap branch also cannot remain terminal. It either gives an immediate three-block Hamiltonian bypass or a Hamiltonian four-support with non-Hamiltonian path-cover-two complement, or it enters the paired six-vertex matching-block residue. In that hard residue there are at least two Hamiltonian five-sets through the swapped pair, each with non-Hamiltonian path-cover-two complement. If |V(H)|>=18, every such five-side state has a complementary path of order at least seven and therefore satisfies the five_side_arbitrary_escape01 trichotomy: strict quadratic-potential descent, neutral endpoint/support exchange, or a displayed-edge reversal.
+                    If s=1, let x,y be the swapped singleton labels. Then there are at least two Hamiltonian five-sets containing {x,y}, each with non-Hamiltonian path-cover-two complement. If |V(H)|>=18, every such five-side state has a complementary path of order at least seven and therefore satisfies the five_side_arbitrary_escape01 trichotomy: strict quadratic-potential descent, neutral endpoint/support exchange, or a displayed-edge reversal.
                     
                     Thus the equal-size low-cut equal-Phi branch reduces to reverse support complexity, order disagreement, an explicit positioned Hamiltonian support, or—above order seventeen—the standard five-side escape trichotomy.
                     BODY / PROOF
@@ -13987,13 +14168,13 @@
                     P=(L,X), Q=(Y,R),
                     with G ordered as one of (L,Y),(Y,L) and independently one of (X,R),(R,X), and with |L|=|R|, |X|=|Y|.
                     
-                    Describe the same support switch using the smaller of the exchanged pairs, so s=min(|X|,|L|). When s>=2, all four blocks have order at least two. The middle block in each relevant splice has length at least two, so the two neighboring displayed joins overlap safely: the first G-component gives either (L,Y,R) or (Y,L,X), while the second gives either (L,X,R) or (Y,R,X). Each is a tight three-block path. With the unchanged third path in the spanning three-cover, minimum-counterexample calculus makes the complement non-Hamiltonian of path-cover number two.
+                    Describe the same support switch using the smaller of the exchanged pairs, so s=min(|X|,|L|). When s>=2, all four blocks have order at least two. The middle block in each relevant splice has length at least two, so the two neighboring displayed joins overlap safely: the first G-component gives either (L,Y,R) or (Y,L,X), while the second gives either (L,X,R) or (Y,R,X). Each is a tight three-block path. In a minimum counterexample each such proper Hamiltonian support has non-Hamiltonian path-cover-two complement by minimum-counterexample calculus.
                     
-                    Now let s=1. Write x,y for the swapped labels and L,R for the two flanks. The singleton-swap analysis shows that any switched orientation except the hard same-end orientation immediately splices to a three-block Hamiltonian support with path-cover-two complement. In the hard orientation, the endpoint four-sets are either Hamiltonian—again giving a standard four-support—or both are the paired matching-block residue.
+                    Now let s=1 and write x,y for the swapped singleton labels. Since a minimum counterexample has order greater than ten, choose any four further vertices distinct from x,y and let U be the resulting six-set. Apply sixset_prescribed_pair_menu01 to U with prescribed pair {x,y}. It gives at least two distinct deletions among the other four vertices for which the remaining five-set is Hamiltonian and still contains x,y. Each such five-set is proper, so minimum-counterexample calculus gives a non-Hamiltonian complement of path-cover number exactly two.
                     
-                    In that residue, take the last two vertices of L and first two vertices of R together with x,y. The prescribed-pair six-set lemma gives at least two distinct Hamiltonian five-deletions retaining x,y. Each is a proper Hamiltonian support; its complement cannot be Hamiltonian in a minimum counterexample and hence has path-cover number exactly two.
+                    Finally, when n>=18, any two-cover of such a five-set complement has total order n-5>=13, so one component has order at least seven. Applying five_side_arbitrary_escape01 gives strict descent, a neutral support exchange, or a displayed-edge reversal.
                     
-                    Finally, when n>=18, any two-cover of such a five-set complement has total order n-5>=13, so one component has order at least seven. Applying five_side_arbitrary_escape01 gives strict descent, a neutral support exchange, or a displayed-edge reversal. This reaches the final transport output directly and eliminates the former singleton-swap refinement chain.
+                    Thus the equal-size low-cut equal-Phi branch reduces directly to reverse support complexity, order disagreement, positioned Hamiltonian support, or a five-side escape, without any flank-size assumption in the singleton case.
 
               • [singleton_transfer_endpointization01] A singleton support transfer endpointizes unless its endpoint realizations are aligned
                   STATEMENT
@@ -14449,63 +14630,21 @@
                 BODY / PROOF
                 Apply the repaired adecd58bef3d. If its bounded four-vertex outcome occurs, we are in (1). Otherwise every outside vertex y distinct from the distinguished witness x satisfies (p_1,p_0,y) and (y,p_m,p_{m-1}) tight. If for some such y the middle triple (p_0,y,p_m) is tight, adecd58bef3d gives exactly the Hamiltonian four/five-support in (2), together with a non-Hamiltonian path-cover-two complement. It remains to exclude the branch in which (p_m,y,p_0) is tight for every y outside P distinct from x. Put L=p_0, R=p_m, and W'=V(H)-V(P)-{x}. Minimum-counterexample calculus gives at least four vertices outside P, so |W'|>=3. Define an ordinary tournament T on W' by y->z iff (y,R,z) is tight. This is an ordinary tournament because for each distinct y,z exactly one of (y,R,z) and (z,R,y) is tight. Every tournament on at least three vertices has a vertex y with an in-neighbor w and an out-neighbor z: otherwise every vertex would be a source or sink, impossible for at least three vertices. Choose distinct w,y,z in W' with (w,R,y) and (y,R,z) tight. The residual cross branch gives (R,y,L) tight. Hence Q=(w,R,y,L) is a tight four-vertex path. Its displayed edge R y is internal, and the tight triple (y,R,z) reverses that internal edge. Applying 53005a4e0315 to Q and z yields one of its three bounded four-vertex configurations on {w,R,y,z}, giving (1). Thus the residual cross-only branch is impossible. For an unresolved terminal-end reversal interchange the two displayed ends and repeat the argument, excluding its distinguished reversal witness. No cyclic rotation or reversal of a displayed tight path is used.
 
-            • [1000540] The universal hard-reversal cross family is a complete endpoint pair-extension grid
+            • [1000540] The universal hard-reversal cross family is a complete endpoint pair grid with ubiquitous local order disagreement
                 STATEMENT
-                Continue the maximal unresolved endpoint-reversal setting of adecd58bef3d in the branch where the bounded four-vertex frontier and the direct middle-tight Hamiltonian window are absent. Thus P=(p_0,...,p_m) is a proper tight path and every y outside P satisfies
-                (p_1,p_0,y), (p_m,y,p_0), and (y,p_m,p_{m-1}) tight.
-                
-                Then for every two distinct outside vertices y,z, the four-set
-                {p_0,p_m,y,z}
-                is Hamiltonian. More precisely, exactly one of (y,p_m,z) and (z,p_m,y) is tight, and accordingly one of
-                (y,p_m,z,p_0), (z,p_m,y,p_0)
-                is a tight Hamilton path.
-                
-                Consequently, if K=H-V(P) and G=H-{p_0,p_m}, then:
-                (1) K has order at least four;
-                (2) for every pair y,z in K, H[{p_0,p_m,y,z}] is Hamiltonian and G-{y,z} is non-Hamiltonian with path-cover number two;
-                (3) G itself and G-y for every y in K are also non-Hamiltonian with path-cover number two.
-                
-                Thus the unresolved endpoint reversal produces a complete pair-extension graph over the endpoint core {p_0,p_m}, together with radius-two path-cover-two stability on the corresponding labels in G.
+                Let H be a minimum counterexample and let P=(p_0,...,p_m), m>=2, be a proper tight path. Put K=V(H)-V(P) and G=H-{p_0,p_m}. Assume the universal hard-reversal cross condition that (p_m,y,p_0) is tight for every y in K. Then every pair of distinct y,z in K makes {p_0,p_m,y,z} Hamiltonian. Moreover G, every G-y, and every G-{y,z} are non-Hamiltonian with path-cover number two. Finally, every three distinct vertices y,z,w in K contain two of the corresponding Hamiltonian four-paths that have order disagreement on the common pair involving p_m; hence the disagreement is supported on at most five vertices.
                 BODY / PROOF
-                Fix distinct y,z outside V(P). The hard-residue hypothesis gives
-                (p_m,y,p_0) and (p_m,z,p_0)
-                tight.
+                Let y,z be distinct vertices of K. By hypothesis, (p_m,y,p_0) and (p_m,z,p_0) are tight. Boundary antisymmetry on {y,p_m,z} gives exactly one of (y,p_m,z) and (z,p_m,y). In the first case (y,p_m,z,p_0) is a tight Hamilton path; in the second case (z,p_m,y,p_0) is. Thus every {p_0,p_m,y,z} is Hamiltonian.
                 
-                Apply boundary antisymmetry to the three-set {y,p_m,z}. Exactly one of the reversal mates
-                (y,p_m,z) and (z,p_m,y)
-                is tight.
+                Minimum-counterexample calculus gives |K|>=4. Each displayed four-set is therefore proper, and its complement G-{y,z} is non-Hamiltonian with path-cover number two. Also G=H-{p_0,p_m} has path-cover number two by the two-vertex deletion part of minimum-counterexample calculus and is non-Hamiltonian. For y in K, the three-set {p_0,p_m,y} is Hamiltonian (every boundary tournament on three vertices is Hamiltonian). If G-y were Hamiltonian, its Hamilton path together with one on {p_0,p_m,y} would two-cover H, impossible; since G-y is proper, minimum-counterexample calculus gives path-cover number two.
                 
-                If (y,p_m,z) is tight, then
-                (y,p_m,z,p_0)
-                is a tight four-vertex path: its two consecutive triples are (y,p_m,z) and (p_m,z,p_0). If instead (z,p_m,y) is tight, then
-                (z,p_m,y,p_0)
-                is a tight four-vertex path, using (p_m,y,p_0). Hence {p_0,p_m,y,z} is Hamiltonian for every pair y,z.
-                
-                Put K=H-V(P). Minimum-counterexample calculus gives |K|>=4. For each pair y,z in K, the displayed Hamiltonian four-set is proper, so its complement
-                H-{p_0,p_m,y,z}=G-{y,z}
-                is non-Hamiltonian with path-cover number two.
-                
-                The two-vertex deletion G=H-{p_0,p_m} is non-Hamiltonian with path-cover number two by minimum-counterexample calculus. For every y in K, the three-set {p_0,p_m,y} is Hamiltonian because every boundary tournament of order three is Hamiltonian. If G-y were Hamiltonian, Hamilton paths on G-y and {p_0,p_m,y} would two-cover H. Thus G-y is non-Hamiltonian; being proper, it has path-cover number two.
-                
-                No cyclic rotation and no reversal of a displayed path is used.
+                Now fix distinct y,z,w in K and orient the ordinary complete graph on them by a->b iff (a,p_m,b) is tight. Boundary antisymmetry makes this a tournament. Every three-vertex tournament has a vertex z with an incoming neighbor y and an outgoing neighbor w. Hence (y,p_m,z) and (z,p_m,w) are tight. Together with (p_m,z,p_0) and (p_m,w,p_0), the grid supplies the Hamilton paths R=(y,p_m,z,p_0) and S=(z,p_m,w,p_0). On their common pair {p_m,z}, R orders p_m before z whereas S orders z before p_m. Thus they have order disagreement, supported on {p_0,p_m,y,z,w}.
 
-              • [hardreversal_fiveshell01] A universal endpoint-reversal family gives Hamiltonian five-sets over every exterior triple
+              • [hardreversal_fiveshell01] A universal endpoint reversal gives a complete three-uniform Hamiltonian five-shell
                   STATEMENT
-                  Let H be a minimum counterexample and let P=(p_0,...,p_m), m>=2, be a proper tight path. Put K=V(H)-V(P), and suppose that every y in K satisfies the three tight triples
-                  (p_1,p_0,y), (p_m,y,p_0), and (y,p_m,p_{m-1}).
-                  Then |K|>=4, and for every three distinct y,z,w in K the five-set {p_0,p_m,y,z,w} is Hamiltonian. Consequently its complement is non-Hamiltonian with path-cover number two. Hence for every four-set E subseteq K, the six-set {p_0,p_m} union E has at least four Hamiltonian vertex deletions, namely the deletions of the four vertices of E.
+                  Let H be a minimum counterexample and P=(p_0,...,p_m) a proper tight path with the universal hard-reversal triples. Put K=V(H)-V(P). Then |K|>=4, and for every three-set E subset K the five-set {p_0,p_m} union E is Hamiltonian with non-Hamiltonian path-cover-two complement. Equivalently these five-supports form the complete 3-uniform hypergraph on K. Hence every fixed exterior pair y,z has a full shell of |K|-2 Hamiltonian five-set extensions through the common four-core {p_0,p_m,y,z}, and every four-set E subset K yields a six-set {p_0,p_m} union E with all four exterior deletions Hamiltonian.
                   BODY / PROOF
-                  # Proof
-                  
-                  By minimum-counterexample calculus, every tight path leaves at least four vertices, so |K|>=4.
-                  
-                  Fix distinct y,z,w in K. By hypothesis the three tight triples
-                  (p_m,y,p_0), (p_m,z,p_0), (p_m,w,p_0)
-                  hold. Apply the certified small-set lemma stating that three common-endpoint triples (a,p,c), (a,q,c), (a,r,c) force a Hamiltonian five-path on {a,c,p,q,r}, with a=p_m and c=p_0. Therefore H[{p_0,p_m,y,z,w}] is Hamiltonian.
-                  
-                  This five-set is proper because |K|>=4. If its complement were Hamiltonian, Hamilton paths on the five-set and on its complement would form a spanning two-cover of H, contradicting that H is a minimum counterexample. By minimum-counterexample calculus the complement has path-cover number at most two, hence exactly two.
-                  
-                  Finally fix four distinct outside vertices y,z,w,t. Deleting any one of them from S={p_0,p_m,y,z,w,t} leaves one of the Hamiltonian five-sets just proved. Thus S has at least four Hamiltonian vertex deletions. ∎
+                  Minimum-counterexample calculus gives |K|>=4. For any distinct y,z,w in K, the universal hard-reversal hypothesis gives the three common-endpoint tight triples (p_m,y,p_0),(p_m,z,p_0),(p_m,w,p_0). The certified common-endpoint small-set lemma therefore gives a Hamiltonian path on {p_0,p_m,y,z,w}. This support is proper; if its complement were Hamiltonian, H would have a two-cover, so by minimality the complement has path-cover number exactly two. Since y,z,w were arbitrary, the family is the complete 3-uniform hypergraph on K. Fixing y,z leaves |K|-2 choices of w, giving a full linear shell around the common four-core. For any four-set E subset K, deleting any exterior vertex from {p_0,p_m} union E leaves one of these Hamiltonian five-sets.
 
                 • [hardreversal_six_or_disagree01] Opposite-end reversal structure forces a Hamiltonian six-support or six-vertex order disagreement
                     STATEMENT
@@ -19566,6 +19705,20 @@
       Let U be an eight-element set and F a 3-(8,4,1) family of four-subsets of U. For every four-set C not in F, with D=U-C, there is a unique bijection phi:C->D such that (C-{c}) union {phi(c)} is in F for every c in C. Moreover F is closed under complements, so {c} union (D-{phi(c)}) is also in F for every c. Thus every nonblock four-set is surrounded by four canonically matched complementary block pairs.
       BODY / PROOF
       For c in C, the triple C-{c} lies in a unique block, necessarily (C-{c})+d_c with d_c in D; set phi(c)=d_c. If phi(c)=phi(c') for distinct c,c', the two corresponding blocks share three vertices, contradicting lambda=1, so phi is a bijection. For complement closure, fix A in F. Every pair of A lies in lambda_2=3 blocks, so besides A the six pairs account for twelve distinct blocks meeting A in exactly two vertices. Each point of A lies in lambda_1=7 blocks, and those twelve blocks account for all 24 incidences of A-points with blocks other than A. The one remaining block is disjoint from A, hence U-A. Apply this to the four blocks indexed by c.
+
+  • [1000924] Endpoint-pair Hamiltonicity graphs have independence number at most two in every boundary tournament
+      STATEMENT
+      Let H be any boundary tournament and fix distinct vertices L,R. On any set W disjoint from {L,R}, define a graph J on W by yz in E(J) exactly when H[{L,R,y,z}] is Hamiltonian. Then alpha(J)<=2. Consequently e(J)>=binom(|W|,2)-floor(|W|^2/4). In particular, inside every five-vertex set F and for every prescribed pair {L,R} subset F, some Hamiltonian four-subset of F contains L and R; hence every five-set has at least three Hamiltonian four-subsets.
+      BODY / PROOF
+      Take any three distinct x,y,z in W. For each t in {x,y,z}, boundary antisymmetry gives exactly one of (L,t,R) and (R,t,L) as a tight triple. Two labels, say x,y, have the same type.
+      
+      If (L,x,R) and (L,y,R) are tight, boundary antisymmetry on the ordered triple (x,R,y) gives exactly one of (x,R,y) and (y,R,x). In the first case (L,x,R,y) is a tight Hamilton path on {L,R,x,y}; in the second case (L,y,R,x) is.
+      
+      If instead (R,x,L) and (R,y,L) are tight, apply boundary antisymmetry to (x,L,y). One of (R,x,L,y) and (R,y,L,x) is a tight Hamilton path.
+      
+      Thus every three vertices of W span an edge of J, so alpha(J)<=2. Equivalently the complement of J is triangle-free, and Mantel's theorem gives the edge bound.
+      
+      For the five-set corollary, take W=F-{L,R}, which has three vertices. Hence some Hamiltonian four-subset contains the prescribed pair. Let G be the set of vertices d in F for which F-{d} is Hamiltonian. The prescribed-pair conclusion says that for every pair {L,R} subset F there is d in G outside {L,R}. If |G|<=2, choose a pair containing all vertices of G, a contradiction. Therefore |G|>=3.
 
   • [astra003fivetwosidedlock] A five-side no-swap branch forces a two-sided endpoint lock on one long path
       STATEMENT
@@ -25208,15 +25361,11 @@
         BODY / PROOF
         Because H is a minimum counterexample, every proper induced subtournament has path-cover number at most two. Fix nonempty S with |S|<=3. The induced subtournament H[S] is Hamiltonian: for |S|=1 or 2 this is vacuous, and every three-vertex boundary tournament has a tight Hamilton path because exactly one of an ordered triple and its boundary flip is tight. If H-S were Hamiltonian, a Hamilton path on H-S together with a Hamilton path on S would form a spanning two-cover of H, contradicting that H is a counterexample. Hence H-S is non-Hamiltonian. Since H-S is proper and nonempty in a minimum counterexample, its path-cover number is exactly two.
 
-    • [reversal_global_frontier01] Every prescribed pair in a minimum counterexample lies in a Hamiltonian four-set with two-path complement
+    • [reversal_global_frontier01] Every prescribed pair has a sharp linear star of Hamiltonian four-sets with two-path complements
         STATEMENT
-        Let H be a minimum counterexample. For every two distinct vertices L,R and every three-element set D disjoint from {L,R}, there are distinct y,z in D such that W={L,R,y,z} is Hamiltonian and H-W is non-Hamiltonian with path-cover number two. In particular H contains such a four-set unconditionally, so every branch of a local-reversal reduction already satisfies the former four-or-five-set existence conclusion.
+        Let H be a minimum counterexample and fix distinct vertices L,R. On the r=|V(H)|-2 exterior vertices, join y,z when {L,R,y,z} is Hamiltonian. Then this graph has independence number at most two. Consequently it has at least binom(r,2)-floor(r^2/4) edges and some exterior vertex y has at least floor((r-1)/2)=floor((|V(H)|-3)/2) neighbors z. Thus every prescribed pair lies in a linear star of Hamiltonian four-sets sharing the triple {L,R,y}; every complementary subtournament is non-Hamiltonian with path-cover number two.
         BODY / PROOF
-        Fix L,R and an exterior three-set D. Partition D according to whether (L,y,R) or (R,y,L) is tight. Boundary antisymmetry gives exactly these two classes. Two labels y,z share a class. If (L,y,R) and (L,z,R) are tight, then exactly one of (y,L,z) and (z,L,y) is tight; respectively (y,L,z,R) or (z,L,y,R) is a Hamilton path on W. Each displayed path has precisely the two checked consecutive triples. If instead (R,y,L) and (R,z,L) are tight, use respectively (y,R,z,L) or (z,R,y,L), according to the reversal pair (y,R,z)/(z,R,y). Thus W is Hamiltonian in both cases. This is the elementary fixed-pair argument recorded in bd3c8d17ca06, reproduced here in full.
-        
-        By mincex01, |H|>10, so W is proper. Minimality gives pc(H-W)<=2, and pc(H-W)=1 would combine with the Hamilton path on W to two-cover H, a contradiction. Hence pc(H-W)=2.
-        
-        This strengthens and bypasses the previous global four-or-five-set existence proof: no endpoint-reversal classification, maximal witness, or matching-block extension is needed for this conclusion. It does not assert that W retains an entire previously chosen triple, a displayed orientation of L,R, or a preselected complement cover. Those stronger compatibility requirements, when needed by consumers, remain separate obligations.
+        For any three exterior labels D, partition them according to whether (L,y,R) or (R,y,L) is tight. Two labels y,z share a class. Boundary antisymmetry on the appropriate triple then gives a Hamilton path on {L,R,y,z}, exactly as in the fixed-pair argument. Hence every exterior three-set spans an edge in the graph J whose edges are Hamiltonian four-extensions of {L,R}; equivalently alpha(J)<=2. The complement is triangle-free, so Mantel gives e(J)>=binom(r,2)-floor(r^2/4), and some y has degree at least floor((r-1)/2). Every corresponding four-set is proper because |H|>10. Its complement cannot be Hamiltonian or it would two-cover H; minimality therefore makes the complement pc2. The Mantel degree bound is sharp from alpha(J)<=2 alone. No endpoint-reversal classification or maximal witness is needed.
 
       • [1000707] A matching-block reversal four-set always extends to a Hamiltonian four- or five-set
           STATEMENT
@@ -25242,23 +25391,17 @@
           
           No cyclic permutation or path reversal is used.
 
-      • [fourset_boolean_pc2_01] A non-Hamiltonian four-set gives path-cover-two stability for every nonempty proper complement extension
+      • [fourset_boolean_pc2_01] Hamiltonian complementary subsets force path-cover-two extensions
           STATEMENT
-          Let H be a minimum counterexample, let X be any non-Hamiltonian four-vertex set, and put K=H-X. Then for every nonempty proper subset S of X, the induced subtournament H[V(K) union S] is non-Hamiltonian with path-cover number two. In particular, if X is the matching-block four-set in reversal_global_frontier01, then the fourteen states K+S indexed by nonempty proper subsets S of X form a complete Boolean family of non-Hamiltonian path-cover-two extensions around K.
+          Let H be a minimum counterexample, let X be any nonempty proper vertex set, and put K=V(H)-X. If S is a nonempty proper subset of X and H[X-S] is Hamiltonian, then H[K union S] is non-Hamiltonian with path-cover number exactly two. In particular, for every four-vertex set X, with no assumption on H[X], all fourteen states K union S indexed by nonempty proper S subset X have path-cover number exactly two.
           BODY / PROOF
-          Fix a nonempty proper subset S of X. The complementary set X-S has order one, two, or three. Every boundary tournament of order at most three is Hamiltonian, so H[X-S] has a tight Hamilton path. If H[K union S] were Hamiltonian, a Hamilton path on K union S together with one on X-S would form a spanning two-cover of H, contradicting that H is a counterexample. Thus H[K union S] is non-Hamiltonian. It is a proper induced subtournament of the minimum counterexample H, so mincex01 gives path-cover number at most two; non-Hamiltonicity excludes path-cover number one, hence its path-cover number is exactly two. A four-set has fourteen nonempty proper subsets, so all fourteen states K union S satisfy the conclusion. No orientation property of X beyond |X|=4 and non-Hamiltonicity is needed.
+          Fix nonempty proper S subset X and assume H[X-S] is Hamiltonian. The set K union S is proper because X-S is nonempty. If H[K union S] were Hamiltonian, Hamilton paths on K union S and X-S would form a spanning two-cover of H, contradiction. Therefore H[K union S] is non-Hamiltonian. It is a proper induced subtournament of the minimum counterexample, so its path-cover number is at most two; non-Hamiltonicity makes it exactly two. If |X|=4, then X-S has order one, two, or three for every nonempty proper S, hence is automatically Hamiltonian. Thus all fourteen nontrivial proper extensions are pc2. The former non-Hamiltonian-four-set and matching-block hypotheses were unnecessary.
 
-      • [reversefan_fiveshell01] A complete reverse fan forces overlapping Hamiltonian five-sets
+      • [reversefan_fiveshell01] A complete reverse fan forces a sharp linear star of overlapping Hamiltonian five-sets
           STATEMENT
-          Let H be a minimum counterexample and let T=(x,v,u) be a tight three-vertex path arising from a complete reverse fan, so in particular (x,v,u) is tight. Put L=V(H)-{x,v,u}. Define a graph J on L by ab in E(J) exactly when H[{x,v,u,a,b}] is Hamiltonian. Then alpha(J)<=2. Since |V(H)|>10, |L|>=8, so J has a vertex a of degree at least two. Consequently there exist distinct a,b,c in L such that both five-sets {x,v,u,a,b} and {x,v,u,a,c} are Hamiltonian; each has non-Hamiltonian path-cover-two complement.
+          Let H be a minimum counterexample and let T=(x,v,u) be the tight three-vertex path from a complete reverse fan. Put L=V(H)-V(T) and join a,b in a graph J when T union {a,b} is Hamiltonian. Then alpha(J)<=2. If r=|L|, Mantel's theorem gives e(J)>=binom(r,2)-floor(r^2/4), so some a has at least floor((r-1)/2) neighbors. Hence at least floor((r-1)/2) Hamiltonian five-sets share the same four-core T union {a}; every one has non-Hamiltonian path-cover-two complement. Since |H|>10, r>=8 and the star has at least three leaves.
           BODY / PROOF
-          # Proof
-          
-          The ordered triple T=(x,v,u) is a tight path on three vertices. Apply the certified fixed-three-path extension theorem from smallset01 to T and any three distinct vertices a,b,c of L. At least one of the three five-sets T union {a,b}, T union {a,c}, T union {b,c} is Hamiltonian. Therefore every three vertices of L span an edge of J, equivalently alpha(J)<=2.
-          
-          Minimum-counterexample calculus gives |V(H)|>10, hence |L|>=8. If every vertex of J had degree at most one, J would be a matching plus isolated vertices and would have an independent set of order at least ceil(|L|/2)>=4, contradicting alpha(J)<=2. Thus some a has two distinct neighbors b,c. By definition both T union {a,b} and T union {a,c} are Hamiltonian.
-          
-          Each five-set is proper. If its complement were Hamiltonian, the two complementary Hamilton paths would form a spanning two-cover of H. Hence each complement is non-Hamiltonian; by minimality it has path-cover number two. ∎
+          For any three distinct a,b,c in L, the fixed-three-path extension theorem applied to T gives a Hamiltonian five-set among T+{a,b}, T+{a,c}, T+{b,c}. Thus every three vertices of J span an edge, so alpha(J)<=2 and the complement of J is triangle-free. Mantel gives e(J)>=binom(r,2)-floor(r^2/4). The ceiling of the resulting average-degree lower bound is floor((r-1)/2), so choose a with at least that many neighbors B. For every b in B, T+{a,b} is a proper Hamiltonian five-set. Its complement cannot be Hamiltonian, else H has a two-cover; by minimality the complement has path-cover number exactly two. The degree guarantee is sharp under alpha(J)<=2, via complements of balanced complete bipartite graphs.
 
       • [staircase_large_disturbance01] From order eighteen staircase minima yield order disagreement, strict descent, or a lower-state cross-component edge
           STATEMENT
@@ -27409,6 +27552,103 @@
         If c=3, then a>=ceil((n-3)/2)>=6. Apply the certified arbitrary-state descent theorem threesidedescent6 to D|A. It gives one legal pairwise repartition with strict potential decrease. In its one-endpoint branch the drop is 2a-8; in its two-endpoint branch the drop is 4a-20. For a>=6 one has 4a-20>=2a-8, so the drop is at least 2a-8>0.
         
         Therefore every three-cover with minimum component order at most three has an immediate strict descent. A Phi-minimum in its connected pairwise-repartition component can have none, so its minimum component order is at least four.
+
+    • [1000919] Above order seventeen componentwise quadratic minima reduce to side six or a four-side six-support obstruction
+        STATEMENT
+        Let H be a minimum counterexample of order n>=18, and let C=A|B|D be a spanning three-cover minimizing the quadratic potential Phi within its connected pairwise-repartition component. Write a>=b>=c for the component orders.
+        
+        Then at least one of the following holds:
+        
+        (1) c>=6;
+        
+        (2) H contains explicit order disagreement between Hamiltonian paths on overlapping induced supports;
+        
+        (3) c=4, and H contains a proper Hamiltonian six-vertex support U such that H-U is non-Hamiltonian with path-cover number exactly two.
+        
+        In particular, no componentwise Phi-minimum has minimum side 1,2, or 3; and a componentwise Phi-minimum with minimum side 5 necessarily forces order disagreement. Thus, in the absence of order disagreement, the only possible sub-six terminal side size is four, and every such four-side state carries a Hamiltonian-six path-cover-two obstruction.
+        
+        Equivalently, every connected component of the pairwise-repartition graph has a Phi-minimal representative satisfying this trichotomy.
+        BODY / PROOF
+        Let a>=b>=c be the component orders.
+        
+        If c<=3, apply 1000917. Its local threshold theorem gives an immediate legal pairwise repartition with strictly smaller Phi in every possible c=1,2,3 case occurring at n>=18. This contradicts the assumed componentwise minimality of C.
+        
+        Suppose c=5. Since a+b=n-5>=13, the larger of A,B has order a>=7. Apply fiveside_descent_or_disagree01 to the five-side D and the displayed path A. That theorem gives either a legal pairwise repartition of D|A with strictly smaller Phi, or explicit order disagreement. The first alternative remains in the same pairwise-repartition component as C and contradicts componentwise minimality. Hence c=5 forces order disagreement.
+        
+        It remains to consider c=4. The other two displayed components A,B form a two-cover of H-D. Since n>=18, the hypotheses of 1000389 hold. That theorem gives one of:
+        (i) an explicit spanning three-cover of strictly smaller Phi obtained from D|A|B;
+        (ii) a proper Hamiltonian six-support U whose complement is non-Hamiltonian with path-cover number two;
+        (iii) explicit order disagreement.
+        Again (i) contradicts componentwise Phi-minimality, leaving exactly alternatives (2) or (3) of the present theorem.
+        
+        Therefore, unless c>=6, either order disagreement occurs or c=4 and the Hamiltonian-six obstruction is present.
+        
+        Finally, every connected component of the finite pairwise-repartition graph contains a Phi-minimal vertex, so applying the proved trichotomy to such a representative gives the componentwise formulation.
+
+    • [1000920] Above order seventeen global quadratic minima reduce to the 4|4 and 4|5 plateaus or minimum side six
+        STATEMENT
+        Let H be a minimum counterexample of order n>=18, and let C=A|B|D be a spanning three-cover minimizing
+        Phi(C)=|A|^2+|B|^2+|D|^2
+        among all spanning three-covers of H. Write a>=b>=c for the component orders.
+        
+        Then at least one of the following holds:
+        
+        (1) c>=6;
+        
+        (2) H contains explicit order disagreement between Hamiltonian paths on overlapping induced supports;
+        
+        (3) c=4 and b=4, so the size profile is (n-8)|4|4;
+        
+        (4) c=4 and b=5, so the size profile is (n-9)|5|4.
+        
+        Thus, in the absence of order disagreement, every global quadratic minimum of order at least eighteen either has all three component orders at least six or lies on one of the two narrow four-side plateaus 4|4|(n-8) and 4|5|(n-9). In particular, minimum side five is impossible, and a four-side with both complementary paths of order at least six is impossible.
+        BODY / PROOF
+        Let a>=b>=c be the component orders.
+        
+        First suppose c<=3. Since a global Phi-minimum is in particular Phi-minimal in its own pairwise-repartition component, 1000917 applies. At n>=18 its small-side thresholds force an immediate strict Phi descent, contradicting global minimality. Hence c>=4.
+        
+        Suppose c=5. Then a+b=n-5>=13, so a>=7. Apply fiveside_descent_or_disagree01 to the five-side and the displayed path of order a. That theorem gives either an immediate strict pairwise-repartition descent or explicit order disagreement. Global minimality excludes the descent, so c=5 implies outcome (2).
+        
+        It remains to consider c=4. If b>=6, then the four-side and the two complementary displayed paths satisfy the hypotheses of 1000592: the cover is globally Phi-minimal, the four-side is Hamiltonian, and both complementary paths have order at least six. The conclusion of 1000592 includes unavoidable order disagreement among Hamiltonian paths on the associated cross-endpoint six-set deletion family. Hence, in the absence of outcome (2), one must have b<=5.
+        
+        Since b>=c=4, this leaves only b=4 or b=5. Because a+b+c=n, these give respectively the profiles
+        (n-8,4,4)
+        and
+        (n-9,5,4).
+        
+        These cases together exhaust all possibilities.
+
+    • [1000921] Above order seventeen global quadratic minima have minimum side at least six unless order disagreement occurs
+        STATEMENT
+        Let H be a minimum counterexample of order n>=18, and let C=A|B|D be a spanning three-cover minimizing
+        Phi(C)=|A|^2+|B|^2+|D|^2
+        among all spanning three-covers of H. Write a>=b>=c for the component orders.
+        
+        Then either
+        
+        (1) c>=6; or
+        
+        (2) H contains explicit order disagreement between Hamiltonian paths on overlapping induced supports.
+        
+        Equivalently, if H has no explicit order disagreement, every globally quadratic-minimal spanning three-cover has all three component orders at least six.
+        
+        Thus at order at least eighteen none of the small-side profiles c<=5 can survive at a global quadratic minimum: sides one, two, and three admit immediate descent; side five admits descent or disagreement; and every four-side case either forces disagreement or falls into a trapped 4|4|a or 4|5|a plateau already excluded or disagreement-forcing by the certified local plateau theorems.
+        BODY / PROOF
+        Let a>=b>=c be the component orders.
+        
+        If c<=3, apply 1000917. Since a global Phi-minimum is also componentwise Phi-minimal, the local small-side descent contradicts global minimality.
+        
+        If c=5, then a+b=n-5>=13, so a>=7. Apply fiveside_descent_or_disagree01 to the five-side and the a-side. Its strict repartition descent contradicts global minimality, leaving explicit order disagreement.
+        
+        Now let c=4. If b>=6, apply 1000592 to the globally Phi-minimal four-side state: its cross-endpoint six-set deletion family forces explicit order disagreement.
+        
+        Hence, in the absence of order disagreement, c=4 implies b is 4 or 5.
+        
+        If b=4, the profile is (n-8,4,4), with n-8>=10. Because H is a minimum counterexample, no spanning two-cover exists, so the pairwise-repartition component of C is trapped. The cover C is Phi-minimal in that component. This contradicts 1000822, which excludes every trapped componentwise Phi-minimum of profile 4|4|a for a>=6.
+        
+        If b=5, the profile is (n-9,5,4), with n-9>=9. The same trappedness and componentwise minimality apply, so 1000323 forces explicit order disagreement.
+        
+        Thus every case c<=5 either contradicts global minimality/trappedness or yields order disagreement. Therefore, absent order disagreement, c>=6.
 
     • [facing_k4_local_twomove_formula01] Inner facing four-windows have local two-move potential formulas
         STATEMENT

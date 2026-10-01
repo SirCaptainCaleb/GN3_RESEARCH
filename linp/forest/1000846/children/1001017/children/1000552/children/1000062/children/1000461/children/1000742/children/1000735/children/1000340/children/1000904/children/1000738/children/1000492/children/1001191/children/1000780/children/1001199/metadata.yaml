@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: true
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "ecc38acf38563df0276767e14d176b4596d07b1077253374acc88968477c9049"
+created_at: "2026-10-01T20:19:38.436102+00:00"
+id: "1001199"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  hygiene_wrapper: true
+  organizational: true
+  toolkit_reference: "1000378"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "1000780"
+position: 0
+research_interface:
+  working_route: "continue rank-gap synthesis via toolkit theorem 1000378"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Continue the rank-gap synthesis via toolkit theorem 1000378."
+statement_sha256: "9fe2b142119c612b85b03c42b0621791b3bb9ece273f5ca5d46faa47e6da5021"
+substantive_worker_ids:
+  - 296
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Rank-gap synthesis continuation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:22:23.844817+00:00"
+version: 2

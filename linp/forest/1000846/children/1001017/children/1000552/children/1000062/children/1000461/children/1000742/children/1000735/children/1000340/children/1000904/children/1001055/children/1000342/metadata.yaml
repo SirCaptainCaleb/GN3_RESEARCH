@@ -62,5 +62,5 @@ support_status: "supported"
 title: "Single ascending terminal contacts on a maximum path lie in one central rank window"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-30T21:05:20.790279+00:00"
-version: 7
+updated_at: "2026-10-01T20:15:07.778361+00:00"
+version: 8

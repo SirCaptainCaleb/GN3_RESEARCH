@@ -30,6 +30,7 @@ metadata:
     recorded_at: "2026-10-01T05:29:40.003289+00:00"
     worker_id: 922
   audit_trigger_kind: "explicit"
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: 923
     math_version: 1
@@ -47,10 +48,10 @@ simplified_statement: null
 statement_sha256: "07dd7b986e8322e22472b5d9baf6e72b0ddddc92c1014976087137a16f45d669"
 substantive_worker_ids:
   - 737
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "The order-eleven design branch forces a full path-cover-two Boolean cube on the common three-side"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T05:29:40.003289+00:00"
+updated_at: "2026-10-01T18:43:23.594674+00:00"
 version: 9

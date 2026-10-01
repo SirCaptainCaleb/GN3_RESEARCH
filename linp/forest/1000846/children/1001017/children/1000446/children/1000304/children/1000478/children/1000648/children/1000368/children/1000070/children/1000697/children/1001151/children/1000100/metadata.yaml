@@ -50,7 +50,7 @@ substantive_worker_ids:
 support_reason: "current_certified_premises"
 support_status: "supported"
 title: "The rank-three entrance is universal across maximum paths in the first p=4 obstruction"
-unary_chain_length: 0
-unary_chain_standalone: true
-updated_at: "2026-09-30T17:27:57.58921+00:00"
-version: 5
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:14:05.466054+00:00"
+version: 7

@@ -2,10 +2,10 @@ atlas_height: null
 atlas_hidden: false
 attention: "focus"
 audit_priority: 100
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_reconstruction"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 2
 body_sha256: "a65b37b8292901269fa0f84ba87771fd62ffed05d6f6f75023e9010a92c425ca"
 created_at: "2026-10-01T17:57:17.557387+00:00"
 id: "1000917"
@@ -18,7 +18,21 @@ mathematical_status: "proved"
 metadata:
   audit_request_reason: "Independent reconstruction of the c=1,2 elementary endpoint-transfer descents, the c=3 threesidedescent6 branch, and the n>=14 threshold."
   audit_request_recorded_at: "2026-10-01T17:57:25.500298+00:00"
+  audit_resolution:
+    claim_id: 1152
+    detail: "Verified the c=1 and c=2 endpoint absorptions and potential drops directly, and the c=3 case from threesidedescent6; the n>=14 minimum-side consequence follows."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
   audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1152
+    detail: "Verified the c=1 and c=2 endpoint absorptions and potential drops directly, and the c=3 case from threesidedescent6; the n>=14 minimum-side consequence follows."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
 object_type: "research"
 origin_worker_id: 1108
 parent_id: "quadraticpotential01"
@@ -34,10 +48,10 @@ simplified_statement: "A side of order 1, 2, or 3 forces an immediate Phi descen
 statement_sha256: "fd148e89d2551ff7abe100c313f559bf7249e5889f1bd51074476277c67085f9"
 substantive_worker_ids:
   - 1108
-support_reason: "audit checkpoint requested"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Small sides one, two, and three have universal one-move descent thresholds"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T18:00:04.216885+00:00"
-version: 5
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 7

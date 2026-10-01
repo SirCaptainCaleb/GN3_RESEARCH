@@ -27,6 +27,7 @@ metadata:
     recorded_at: "2026-10-01T02:18:22.803054+00:00"
     worker_id: 901
   audit_trigger_kind: "chain_checkpoint"
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: 906
     detail: "Independently reconstructed the 3-(8,4,1) contradiction forcing a three-vertex overlap, then the five-set deletion classification and the paired deletion covers sharing R."
@@ -50,10 +51,10 @@ statement_sha256: "b387f13ab45c6110fdc0e25ebff5fb463b773cf0a10ca1e0846f1715991bb
 substantive_worker_ids:
   - 755
   - 745
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "The design branch forces paired deletion covers with a common three-side"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T05:29:40.003289+00:00"
+updated_at: "2026-10-01T18:43:23.594674+00:00"
 version: 14

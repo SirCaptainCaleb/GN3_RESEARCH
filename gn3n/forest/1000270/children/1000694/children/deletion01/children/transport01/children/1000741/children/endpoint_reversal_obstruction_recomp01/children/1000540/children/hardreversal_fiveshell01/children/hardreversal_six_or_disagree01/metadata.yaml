@@ -23,6 +23,7 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-29T05:30:16.874504+00:00"
     worker_id: 664
+  audit_work_kind: "dependency_hold"
   hard_reversal_six_or_disagreement: true
   last_audit_observation:
     claim_id: 433
@@ -48,10 +49,10 @@ simplified_statement: "Opposite-end reversal structure forces a Hamiltonian six-
 statement_sha256: "53c2642481b7e70f51884239d8999dd4bb9de8d728c7a0ee2c44327c9972dd3d"
 substantive_worker_ids:
   - 703
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Opposite-end reversal structure forces a Hamiltonian six-support or six-vertex order disagreement"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-09-29T17:30:03.710796+00:00"
+updated_at: "2026-10-01T18:43:23.594674+00:00"
 version: 8

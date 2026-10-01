@@ -2,14 +2,14 @@ atlas_height: null
 atlas_hidden: false
 attention: "focus"
 audit_priority: 100
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_reconstruction"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 1
 body_sha256: "ae966049301392991d5f3560c4ba54b95e27f88b8e10d7c0be355543629f154b"
 created_at: "2026-10-01T18:01:39.641833+00:00"
 id: "1000918"
-last_elevation_revision: 0
+last_elevation_revision: 11034
 last_substantive_worker_id: 1108
 legacy_id: null
 lifecycle_status: "active"
@@ -18,7 +18,21 @@ mathematical_status: "proved"
 metadata:
   audit_request_reason: "Independent reconstruction of the recomposed six-way endpoint descent-and-exit theorem, including the endpoint covering count, equality case, two-label normalization, distinctness, and both Phi bounds."
   audit_request_recorded_at: "2026-10-01T18:02:35.708241+00:00"
+  audit_resolution:
+    claim_id: 1152
+    detail: "Verified the endpoint candidate count, equality cases, distinct left/right families, all potential-drop formulas, and the m>=10 continuation to minimum side at least four."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
   audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1152
+    detail: "Verified the endpoint candidate count, equality cases, distinct left/right families, all potential-drop formulas, and the m>=10 continuation to minimum side at least four."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
 object_type: "research"
 origin_worker_id: 1108
 parent_id: "smallset01"
@@ -34,10 +48,10 @@ simplified_statement: "A 3|1|m cover has at least three endpoint-local five-supp
 statement_sha256: "b0487eb406a2aa92b5a922f1ac2ad3ce510b5b879135a4920f5f25ef5e7f3826"
 substantive_worker_ids:
   - 1108
-support_reason: "provisional_unaudited"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Three-side singleton lifts have a six-way endpoint descent fan that exits the small-side regime"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T18:02:35.708241+00:00"
-version: 7
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 9

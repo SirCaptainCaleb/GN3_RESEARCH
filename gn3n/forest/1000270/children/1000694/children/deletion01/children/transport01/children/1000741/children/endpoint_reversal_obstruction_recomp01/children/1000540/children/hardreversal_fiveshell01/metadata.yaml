@@ -4,16 +4,16 @@ attention: "focus"
 audit_priority: 100
 audit_requested: false
 audit_requirement: "independent_check"
-audit_status: "certified"
-audited_math_version: 4
-body_sha256: "e1ed7fdc9b0b27bf25e49e95b46fcb04b80d9a0ff9e752f5f9df99d1b46a6f0d"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "3f93bfb76e4769f24c124de41d778d5ee98054b228475a7852daec758b933f18"
 created_at: "2026-09-28T21:36:57.018601+00:00"
 id: "hardreversal_fiveshell01"
-last_elevation_revision: 0
-last_substantive_worker_id: 630
+last_elevation_revision: 11034
+last_substantive_worker_id: 1151
 legacy_id: null
 lifecycle_status: "active"
-math_version: 4
+math_version: 5
 mathematical_status: "proved"
 metadata:
   audit_resolution:
@@ -42,21 +42,22 @@ origin_worker_id: 718
 parent_id: "1000540"
 position: 0
 research_interface:
-  consumer: "hard endpoint-reversal consumption; shortest grand-theorem proof route"
-  given: "the universal hard endpoint-reversal residue in which (p_m,y,p_0) is tight for every vertex y outside the maximal path P"
-  need: "use the complete five-shell to force a bounded reversal kernel, a Hamiltonian six-window with useful complement geometry, or direct endpoint absorption"
-  produces: "every three outside vertices together with p_0,p_m form a Hamiltonian five-set with path-cover-two complement; every four outside vertices give a six-set with at least four Hamiltonian deletions"
+  consumer: "hard-reversal consumption; shortest grand-theorem route"
+  given: "the universal hard endpoint-reversal residue"
+  implication: "the residue supplies synchronized five-side states through every exterior triple"
+  produces: "a complete 3-uniform family of Hamiltonian five-supports over the endpoint pair, with full common-core shells and pc2 complements"
 research_level: "lemma"
 semantic_container_text: null
-simplified_statement: "A universal endpoint-reversal family gives Hamiltonian five-sets over every exterior triple."
-statement_sha256: "0c40795de3329fed07b0a92c3d4e6627a10e820de5bda2581a4410dfd647f4a3"
+simplified_statement: "Every exterior triple over the endpoint pair is a Hamiltonian five-set with pc2 complement; every exterior pair has a full linear five-shell."
+statement_sha256: "fdeb01058cd52b30a7e3ce6b504878d61878ee80e82dfb2948bd98202f2b13e3"
 substantive_worker_ids:
   - 718
   - 630
-support_reason: "current_certified_premises"
-support_status: "supported"
-title: "A universal endpoint-reversal family gives Hamiltonian five-sets over every exterior triple"
+  - 1151
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "A universal endpoint reversal gives a complete three-uniform Hamiltonian five-shell"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-29T17:30:03.710796+00:00"
-version: 8
+updated_at: "2026-10-01T18:43:23.594674+00:00"
+version: 9

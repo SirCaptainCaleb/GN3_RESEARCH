@@ -2,23 +2,44 @@ atlas_height: null
 atlas_hidden: false
 attention: "focus"
 audit_priority: 100
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_reconstruction"
-audit_status: "pending"
-audited_math_version: null
-body_sha256: "9f2f94b7b257634d4e8ffca52b27f4d5755437058ed87b5e8ff3ee5d19833d92"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "13dd72eb2d83c447daf69707d5a3b830e606ca7f793376cdbe064a1fbb5096cb"
 created_at: "2026-10-01T17:37:52.5344+00:00"
 id: "1000912"
 last_elevation_revision: 10979
 last_substantive_worker_id: 1108
 legacy_id: null
 lifecycle_status: "active"
-math_version: 1
+math_version: 2
 mathematical_status: "proved"
 metadata:
   audit_request_reason: "Reasoning-hygiene replacement: independently reconstruct the compressed terminal singleton-swap to positioned-support/five-side theorem and verify equivalence to its retired source segment."
   audit_request_recorded_at: "2026-10-01T17:39:47.485487+00:00"
+  audit_resolution:
+    claim_id: 1152
+    detail: "Repaired the singleton-swap branch to use sixset_prescribed_pair_menu01 on an arbitrary six-set containing the swapped pair, removing the unsupported assumption that both flanks contain two vertices while preserving the stated five-side escape conclusion."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
   audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1152
+    detail: "Repaired the singleton-swap branch to use sixset_prescribed_pair_menu01 on an arbitrary six-set containing the swapped pair, removing the unsupported assumption that both flanks contain two vertices while preserving the stated five-side escape conclusion."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "The singleton-swap proof sampled two vertices from each flank without assuming the flanks have order at least two. Replace that branch by the certified prescribed-pair six-set argument, which yields two Hamiltonian five-sets through the swapped pair for every allowed flank size."
+    recorded_at: "2026-10-01T18:35:18.499535+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 1151
 object_type: "research"
 origin_worker_id: 1108
 parent_id: "equal_size_block_swap_rectangle01"
@@ -31,13 +52,13 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "An equal-size low-cut swap yields reverse complexity, order disagreement, positioned Hamiltonian support, or—above order seventeen—a five-side escape."
-statement_sha256: "cfbf20cf560947da165b312ac0c57a862e6a2cd6df7e606e2d582b8628c20ee5"
+statement_sha256: "cb45da574b41333907579af911ad3e74f44430e988ca76a87f75c2bb0222148c"
 substantive_worker_ids:
   - 1108
-support_reason: "provisional_unaudited"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Equal-size low-cut swaps yield transport or a five-side escape"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-10-01T17:39:47.485487+00:00"
-version: 5
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 8

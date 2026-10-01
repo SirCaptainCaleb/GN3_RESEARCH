@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1ea516b5b75cf6522f60228c1ee145fc9eb769765c9e6c79df7529a31c1a2912"
+created_at: "2026-10-01T18:05:54.858906+00:00"
+id: "1000919"
+last_elevation_revision: 11034
+last_substantive_worker_id: 1108
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction of the componentwise terminal trichotomy, especially the distinction between same-component descent and the separate Hamiltonian-six obstruction."
+  audit_request_recorded_at: "2026-10-01T18:06:03.46311+00:00"
+  audit_resolution:
+    claim_id: 1152
+    detail: "Verified the componentwise-minimum trichotomy by eliminating sides 1–3 via 1000917, side 5 via five-side descent/disagreement, and side 4 via 1000389."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1152
+    detail: "Verified the componentwise-minimum trichotomy by eliminating sides 1–3 via 1000917, side 5 via five-side descent/disagreement, and side 4 via 1000389."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
+object_type: "research"
+origin_worker_id: 1108
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "grand no-trapping composition; quadratic plateau reduction; four-side/six-side closure"
+  given: "a minimum counterexample of order at least eighteen and any pairwise-repartition component of spanning three-covers"
+  implication: "small sides one, two, three and side five are not terminal; the only sub-six terminal size is four, and it comes with a six-support obstruction"
+  produces: "a componentwise Phi-minimal representative with minimum side at least six, or global order disagreement, or a minimum-four state carrying a proper Hamiltonian six-support with path-cover-two complement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "At n>=18 every componentwise Phi-minimum either has minimum side at least six, forces order disagreement, or has minimum side four and a proper Hamiltonian six-support with pc2 complement."
+statement_sha256: "fe9da2ed36e2720fb0c980a4a5b1d19cee97ec1c31950ddcb2fba4c5eb85eb15"
+substantive_worker_ids:
+  - 1108
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Above order seventeen componentwise quadratic minima reduce to side six or a four-side six-support obstruction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 8

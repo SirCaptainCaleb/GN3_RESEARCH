@@ -55,5 +55,5 @@ support_status: "supported"
 title: "Correction: terminal-shadow lifting requires strong-rainbow, not ordinary rainbow"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-09-30T17:27:57.58921+00:00"
-version: 5
+updated_at: "2026-10-01T20:14:51.848863+00:00"
+version: 6

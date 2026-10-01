@@ -39,5 +39,5 @@ support_status: "unchecked"
 title: "Maximum average degree three for the ascending terminal graph"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-09-30T17:28:47.473199+00:00"
-version: 2
+updated_at: "2026-10-01T20:09:22.534413+00:00"
+version: 3

@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a78d8874dacb2016afd8b85ebd8158f95fa27fb4190704b8e5a9967233c7a5cd"
+created_at: "2026-09-24T02:44:11.775808+00:00"
+id: "1000471"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a5b6038e-f7ea-451b-b60a-7abaa6c68dcd"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:49:15.657478+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "a5b6038e-f7ea-451b-b60a-7abaa6c68dcd"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:49:15.657478+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1001019"
+position: 0
+research_interface:
+  consequence: "For odd threshold degree, the rigid no-switch case either exposes a genuine connector from the common A-half into the B-half, or collapses further to a complete target-triple/half bipartite neighborhood: N(x)=N(y)=N(z)=S."
+  consumer:
+    - "zero-slack all-special route"
+  given:
+    - "e3c7e513d6ec cut parity"
+    - "fb4fc1ee4179 common-half normal form"
+  next_need: "Exploit branch (A) by rotating/reordering the alternating witness so the S-B connector becomes the bridge chord in a target-port two-switch. In branch (B), use the K_{3,k} target-to-S structure plus proper color matchings to directly construct maximum witnesses ending in e through all three ports."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Odd-k rigid zero-slack branch either crosses into B or all three target ports share the same half-neighborhood."
+statement_sha256: "161a95f96b451ca7169b1147fcaddc053959ba1018a81113bb87ac9484ae9787"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Odd-k rigid zero-slack branch either crosses into B or all three target ports share the same half-neighborhood"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:16:36.540366+00:00"
+version: 7

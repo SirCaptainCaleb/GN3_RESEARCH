@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "079937c908b3f02ef30037db6b312c9bc9077794e62d829db51ef0f856dfb7a4"
+created_at: "2026-10-01T18:08:40.964239+00:00"
+id: "1000921"
+last_elevation_revision: 11034
+last_substantive_worker_id: 1108
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction of the large-order global-minimum side-six theorem, including trappedness of the global-minimum component and closure of the 4|4 and 4|5 residual profiles."
+  audit_request_recorded_at: "2026-10-01T18:09:21.924134+00:00"
+  audit_resolution:
+    claim_id: 1152
+    detail: "Verified closure of all c<=5 cases using 1000917, five-side descent/disagreement, 1000592, and trapped-component exclusions 1000822 and 1000323; absent disagreement, c>=6."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1152
+    detail: "Verified closure of all c<=5 cases using 1000917, five-side descent/disagreement, 1000592, and trapped-component exclusions 1000822 and 1000323; absent disagreement, c>=6."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+    worker_id: 1151
+object_type: "research"
+origin_worker_id: 1108
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "grand theorem proof composition; global quadratic-minimum normalization; maximin and balanced-profile analysis"
+  given: "a minimum counterexample of order at least eighteen and a globally quadratic-minimal spanning three-cover"
+  implication: "all global-minimum small-side regimes through five are eliminated; the former 4|4 and 4|5 residual plateaus are already closed by certified trapped-component theorems"
+  produces: "minimum component order at least six, or explicit order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "For n>=18, every globally Phi-minimal spanning three-cover has minimum side at least six unless explicit order disagreement occurs."
+statement_sha256: "9e41a757e16f0b7a2f3bbbe288d407965af25e9f40cdf419551d62a77ad6eab9"
+substantive_worker_ids:
+  - 1108
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Above order seventeen global quadratic minima have minimum side at least six unless order disagreement occurs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 11

@@ -38,5 +38,5 @@ support_status: "unchecked"
 title: "External toolkit for structured lower-bound constructions"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-09-27T23:11:42.645504+00:00"
-version: 3
+updated_at: "2026-10-01T20:18:51.88343+00:00"
+version: 4

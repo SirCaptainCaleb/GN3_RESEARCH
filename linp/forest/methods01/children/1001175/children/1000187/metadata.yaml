@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "a4dbb2ea03aa15bb555be41f94bece00512e75ce80631acba857176721b6a056"
+created_at: "2026-09-22T04:14:02.558006+00:00"
+id: "1000187"
+last_elevation_revision: null
+last_substantive_worker_id: 234
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  last_audit_observation:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+object_type: "lemma"
+origin_worker_id: 234
+parent_id: "1001175"
+position: 60
+research_interface:
+  consequence: "the sink configuration is reduced to an exact partition/almost-partition of the entrance path by q-1 incident edges at its opposite endpoint; the only single blockers are the three mutually exclusive exceptional types"
+  consumer:
+    - "sharp ascending-rank conjecture"
+    - "second-level Pósa expansion"
+  given:
+    - "boundary q=δ"
+    - "no safe rotation"
+    - "saturated blocker fan"
+research_level: "lemma"
+semantic_container_text: "Saturated boundary-fan structure at edge rank delta: disjoint blocker cells, exact cell-graph normal forms, exceptional single-blocker locations, and forced nonlocal escape configurations."
+simplified_statement: "At q=δ, the blocker sets in a saturated fan are pairwise disjoint; for S=2 they partition the available path vertices, while for S=3 they miss exactly one vertex."
+statement_sha256: "ff620fa6df93ac65fceaf088e2683412c8de29871642bab233d3c3ecd4a61002"
+substantive_worker_ids:
+  - 234
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Exact saturated-fan normal form at the boundary q=δ"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:11:18.161662+00:00"
+version: 11

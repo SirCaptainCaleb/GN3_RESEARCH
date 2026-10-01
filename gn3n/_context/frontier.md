@@ -1,11 +1,19 @@
 # Research frontier
 
-Repository revision: 10987
-Frontier objects: 324
+Repository revision: 11097
+Frontier objects: 331
 
 Active theorem-facing terminal research objects that are visible for work: nonhidden, nonfailed, nonblocked, non-superseded leaves of the grand-theorem reasoning tree.
 
 Flat frontier only. After choosing an item, call ancestry() or simplified_ancestry() separately for route context.
+
+## [1000925] A longest path leaves a pc2 exterior with universal reversed endpoint triples and coupled left/right anchored cover obstructions.
+focus · theorem · proved · pending · unchecked · pending
+Parent: [transport01]
+**Given:** a minimum counterexample and a longest tight path
+**Produces:** a smaller exterior induced subtournament with path-cover number two, universal reversed endpoint triples, and simultaneous left/right anchored non-splicability constraints
+**Consumer:** endpoint transport / defect compression; longest-path route; anchored-cover obstruction analysis
+**Implication:** the remaining longest-path obstruction can be formulated as a two-anchor coupling problem rather than as unrelated failed-insertion signs
 
 ## [fourwindow_smallside_bypass01] An anchored four-window yields descent, a Hamiltonian five/six-side, or order at most fourteen.
 focus · theorem · proved · certified · supported
@@ -14,8 +22,16 @@ Parent: [1000270]
 **Produces:** strict Phi descent, or a Hamiltonian five- or six-set with path-cover-two complement, or total order at most fourteen
 **Consumer:** grand-theorem proof rehearsal; four-window route; no-trapping analysis
 
+## [1000607] Above order fourteen the global quadratic frontier has four regimes.
+focus · theorem · proved · certified · dependency_hold
+Parent: [1000104]
+**Given:** minimum counterexample of order at least fifteen and a globally Phi-minimal spanning three-cover
+**Produces:** four surviving regimes: endpoint-pair pc2 grid; positioned Hamiltonian 4/5/6-support; doubled cross barrier; equitable plateau
+**Need:** close positioned small-support, doubled-cross, and equitable regimes; staircase is no longer separate
+**Consumer:** grand theorem proof composition
+
 ## [staircase_four_support_recomp01] Every large staircase minimum has a Hamiltonian four-support with two-cover complement.
-focus · theorem · proved · certified · supported
+focus · theorem · proved · certified · dependency_hold
 Parent: [1000104]
 **Given:** a globally quadratic-potential-minimal staircase profile (c+2,c+1,c), c>=4
 **Produces:** a proper Hamiltonian four-set with non-Hamiltonian path-cover-two complement
@@ -402,7 +418,7 @@ Parent: [1000690]
 **Consumer:** endpoint-transport / defect-compression; interval-connector and opposite-endpoint-cross consumption
 
 ## [cyclic_nonmatching_fourwindow_transport01] Every nonmatching proper cyclic defect certificate reaches four-window transport
-focus · lemma · proved · certified · dependency_hold
+focus · lemma · proved · certified · supported
 Parent: [1000313]
 **Given:** a nonmatching proper minimum-span cyclic defect certificate
 **Produces:** inside its connected cyclic-interval cover family: a Hamiltonian four-window with pc2 complement, then small order, strict descent, or bounded pc2 transport
@@ -540,12 +556,36 @@ Parent: [1000758]
 **Consumer:** endpoint transport; deletion-cover compatibility; defect compression
 
 ## [1000913] A fully compatible deletion pair yields an endpoint reversal or a mixed Hamiltonian five-side; above order seventeen the five-side immediately enters standard escape.
-focus · theorem · proved · pending · unchecked · pending
+focus · theorem · proved · certified · supported
 Parent: [1000694]
 **Given:** two fully compatible deletion covers in a minimum counterexample
 **Produces:** an explicit endpoint reversal or a mixed Hamiltonian five-side with path-cover-two complement; above order seventeen the five-side enters the standard escape trichotomy
 **Consumer:** defect-span compatibility interface; endpoint transport; defect compression
 **Implication:** the compatible-pair insertion geometry is consumed in one theorem with no residual singleton-swap branch
+
+## [1000923] For m>=10 chosen deletion covers, one cover is incompatible with at least floor((m-1)/2) others; in a minimum counterexample this gives a fixed half-scale family of order disagreements or support crossings.
+focus · theorem · proved · pending · unchecked · pending
+Parent: [1000922]
+**Given:** chosen deletion two-covers with compatibility neighborhoods of maximum degree at most two
+**Produces:** one fixed deletion cover incompatible with at least half of the family, up to rounding
+**Consumer:** compatibility-density, fixed-cut crossing, endpoint transport
+**Implication:** improves the Turan one-third anchor in 1000922 to a graph-theoretically sharp half-scale anchor for m>=10
+
+## [1000927] Every prescribed anchor either has at least m-5 support-incompatible crossing covers or two same-side compatible neighbors disagree in order only through the anchor vertex.
+focus · theorem · proved · pending · unchecked · pending
+Parent: [1000922]
+**Given:** any prescribed deletion-cover anchor and the family of chosen deletion covers
+**Produces:** near-total fixed-cut support crossings or an order disagreement localized at the anchor vertex
+**Consumer:** endpoint transport, defect compression, compatibility-density route
+**Implication:** replaces the global branch split by an anchor-local quantitative crossing-versus-centered-disagreement dichotomy
+
+## [1000926] Absent support-compatible order disagreement, the support-incompatibility graph of all deletion covers has minimum degree at least n-5 and is Hamilton-connected.
+focus · lemma · proved · pending · unchecked · pending
+Parent: [compatibility_degree4_prescribed_fan01]
+**Given:** minimum counterexample and chosen deletion covers with no support-compatible order-incompatible pair
+**Produces:** Hamilton-connected support-incompatibility graph on all deletion labels
+**Consumer:** global cut transport, endpoint reuse, parity/return arguments, defect compression
+**Implication:** support crossings can be organized into a spanning chain with arbitrary prescribed endpoints rather than treated as unrelated local witnesses
 
 ## [1000219] Every deletion singleton state has a two-move canonical quadratic descent.
 focus · theorem · proved · certified · supported
@@ -897,7 +937,7 @@ Parent: [1000269]
 **Consumer:** endpoint-transport / defect-compression bridge
 
 ## [1000912] An equal-size low-cut swap yields reverse complexity, order disagreement, positioned Hamiltonian support, or—above order seventeen—a five-side escape.
-focus · theorem · proved · pending · unchecked · pending
+focus · theorem · proved · certified · supported
 Parent: [equal_size_block_swap_rectangle01]
 **Given:** an equal-Phi comparison of equal-size support-incompatible two-covers in the low-cut regime
 **Produces:** reverse support complexity, order disagreement, positioned Hamiltonian supports, or a five-side escape trichotomy above order seventeen
@@ -931,7 +971,7 @@ Parent: [hardreversal_six_or_disagree01]
 **Consumer:** hard endpoint-reversal closure; Hamiltonian-six branch; large-order proof compression
 
 ## [hardreversal_order16_escape01] From order sixteen the hard endpoint-reversal residue yields crossing, strict descent, or order disagreement.
-focus · theorem · proved · certified · supported
+focus · theorem · proved · certified · dependency_hold
 Parent: [hardreversal_six_or_disagree01]
 **Given:** the universal hard endpoint-reversal residue in a minimum counterexample of order at least sixteen
 **Produces:** explicit order disagreement, strict quadratic descent, or a component-drop crossing in a lower state of a Hamiltonian-four-core two-label pc2 square
@@ -1019,7 +1059,7 @@ Parent: [transport01]
 **Consumer:** endpoint-transport / defect-compression bridge
 
 ## [1000911] A Hamiltonian four-window either gives small order, strict descent, nearby four-window transport, or an endpoint-aligned four- or five-support.
-focus · theorem · proved · pending · unchecked · pending
+focus · theorem · proved · certified · supported
 Parent: [1000270]
 **Given:** a Hamiltonian four-set with a two-cover complement in a minimum counterexample
 **Produces:** small order, strict quadratic-potential descent, distance-one four-window transport, or an endpoint-aligned Hamiltonian support of order four or five; the bounded six-set transport data are retained
@@ -1229,7 +1269,7 @@ Parent: [astra003edgeorder8]
 **Consumer:** astraidea003 and astraidea010
 
 ## [order11_design_sevenlabel_recomp01] The order-11 design branch has quantitative adjacent-center multiplicity; each center pair gives an exact common-three-side/five-side package, and the seven-label matching exception consists of a matching-block K4 with two unique-bad-deletion five-shells.
-focus · theorem · proved · certified · supported
+focus · theorem · proved · certified · dependency_hold
 Parent: [order11_design_common_threeside01]
 **Given:** the order-eleven design branch; optionally the seven-label Astra equality case
 **Produces:** quantitative adjacent-center multiplicity, exact common-three-side deletion structure, balanced swaps, and the reciprocal-swap-fork versus rigid matching-block five-shell normal form
@@ -1527,6 +1567,14 @@ Parent: [1000270]
 **Role:** brainstorm_conjecture
 **First Attack:** Fix one exterior vertex u of high Hamiltonian degree. For each neighbor v choose a Hamilton order on C∪{u,v} and record the induced order on C∪{u}. By pigeonhole over the bounded restriction types, obtain a large class with one common restriction. Compare two labels v,w from that class and test whether their orders splice into a tight path containing C∪{u,v,w}; if not, extract the first forced order disagreement and propagate it across the class.
 **Global Relevance:** This converts the newly certified quadratic abundance of five-windows into a synchronization problem on a bounded core, potentially yielding theorem-scale absorption without small-order case ladders.
+
+## [1000620] Every large staircase minimum has a Hamiltonian four-support with two-cover complement
+available · theorem · proved · certified · dependency_hold
+Parent: [1000104]
+**Given:** a globally quadratic-potential-minimal staircase three-cover of profile (c+2,c+1,c), c>=4
+**Produces:** a proper Hamiltonian four-set with non-Hamiltonian path-cover-two complement
+**Consumer:** grand theorem proof composition; positioned small-support closure
+**Implication:** the former multi-step staircase reversal chain is unnecessary for this endpoint conclusion
 
 ## [1000117] Every deletion singleton component reaches a four-window descent or bounded transport state
 available · theorem · proved · pending · unchecked · pending
@@ -1847,6 +1895,12 @@ Parent: [1000695]
 **Need:** define and prove a reconstruction theorem for an intermediate transport datum; full pair states already glue and support-only data only localize
 **Consumer:** brainstorm portfolio assessment; compatibility route
 
+## [compatibility_pathcycle_skeleton01] Absent transport and reversal exits, compatibility is a locally alternating union of paths and cycles, with a pairwise incompatible family of size at least ceil(2m/5).
+available · lemma · proved · pending · unchecked · pending
+Parent: [compatibility_triangle_endpoint_transport01]
+**Consumer:** endpoint transport / defect compression
+**Producer:** locally alternating compatibility path-cycle skeleton
+
 ## [1000393] Canonical-state graph cannot trap.
 available · working_unit · conjecture · not_required · unchecked
 Parent: [1000667]
@@ -2056,7 +2110,7 @@ Parent: [endpoint_reversal_obstruction_recomp01]
 **Consumer:** endpoint-reversal closure; endpoint transport / defect compression
 
 ## [hardreversal_return01] The unresolved endpoint-reversal residue returns to the bounded four-vertex classification.
-available · theorem · proved · certified · supported
+available · theorem · proved · certified · dependency_hold
 Parent: [hardreversal_pairgrid01]
 **Given:** the complete endpoint pair-extension grid arising from a maximal unresolved endpoint reversal
 **Produces:** a bounded Hamiltonian/cyclic/matching-block four-set; the unresolved endpoint orientation cannot persist indefinitely
@@ -2238,14 +2292,14 @@ Parent: [quadraticneutralcycle_recomp01]
 **Consumer:** global no-trapping; profile-ladder elimination; endpoint transport / defect compression
 
 ## [order11_three_side_barrier_elevated01] Order-eleven three-side barrier becomes blocked overlap or star.
-available · theorem · proved · certified · supported
+available · theorem · proved · certified · dependency_hold
 Parent: [order11_three_side_barrier_recomp01]
 **Given:** a trapped Phi-minimal three-cover with a three-side
 **Produces:** order 11, profile 4|4|3, plus blocked overlap-or-star geometry for every three-set
 **Consumer:** order-eleven closure
 
 ## [1000867] Every extendable four-center in the order-eleven design is surrounded by four matched blocked Hamiltonian 4|4 partitions.
-available · lemma · proved · certified · supported
+available · lemma · proved · certified · dependency_hold
 Parent: [1000860]
 **Given:** the no-blocked-overlap 14-block 3-(8,4,1) design branch and any Hamiltonian four-center outside the design
 **Produces:** a canonical perfect matching between the center and its complement, yielding four complementary blocked Hamiltonian 4|4 partitions around the extendable center
@@ -2253,7 +2307,7 @@ Parent: [1000860]
 **Consumer:** order-eleven closure; blocked-window synchronization; pairwise-repartition transport
 
 ## [1000861] The order-eleven design branch forces a full path-cover-two Boolean cube on the common three-side
-available · theorem · proved · certified · supported
+available · theorem · proved · certified · dependency_hold
 Parent: [order11_design_common_threeside01]
 
 ## [order11_triple_overlap_or_design_barrier01] Order-eleven triples force blocked overlap or a blocked 14-block design.

@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: true
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "de812bcc16d716b61ac9557f8dff2764ad0c205230916c94f8add7e43c764187"
+created_at: "2026-10-01T20:24:15.441596+00:00"
+id: "1001202"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  hygiene_wrapper: true
+  organizational: true
+  toolkit_reference: "1000394"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "1000427"
+position: 0
+research_interface:
+  working_route: "continue boundary-rotation analysis via toolkit lemma 1000394"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Continue the safe-sink route via toolkit lemma 1000394."
+statement_sha256: "02ad453c1f9cd470574e877adff0c278ba832a814b34e538ef65259c5b241bcb"
+substantive_worker_ids:
+  - 296
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Safe-sink continuation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:24:15.441596+00:00"
+version: 1

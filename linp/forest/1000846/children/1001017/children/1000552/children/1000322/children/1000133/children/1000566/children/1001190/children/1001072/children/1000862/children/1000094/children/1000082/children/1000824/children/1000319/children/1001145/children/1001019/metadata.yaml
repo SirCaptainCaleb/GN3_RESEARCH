@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "0035274cbb01a5c99ef9ae621a21c56e24ffb718542bbdb7b7d33d5907086c2a"
+created_at: "2026-09-24T02:43:32.375399+00:00"
+id: "1001019"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a5b6038e-f7ea-451b-b60a-7abaa6c68dcd"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:49:15.657478+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "a5b6038e-f7ea-451b-b60a-7abaa6c68dcd"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:49:15.657478+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "1001145"
+position: 0
+research_interface:
+  consequence: "The rigid no-switch branch has a parity-sensitive transverse connector supply. For odd k every color necessarily sends at least one additional edge across the half-neighborhood cut beyond the two terminal-port edges."
+  consumer:
+    - "zero-slack all-special route"
+  given:
+    - "fb4fc1ee4179 common-half derangement normal form"
+    - "zero-slack perfect color matchings"
+  next_need: "For odd k, localize the extra crossing: if x is not its endpoint it gives an S-to-B connector. Count colors with x matched into S versus B, then combine an S-B crossing with complete y/z-to-S adjacency to form a color-compatible block reversal. For even k, analyze the extremal c_d=2 possibility, which forces each color to preserve S and R after matching y,z."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Rigid zero-slack half-neighborhoods obey a per-color cut-parity law."
+statement_sha256: "d8f8c6beb1d819a2f047425b384e26a7fe306b6bf03cfdaacd06a5aa37acbe92"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Rigid zero-slack half-neighborhoods obey a per-color cut-parity law"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:16:36.540366+00:00"
+version: 6

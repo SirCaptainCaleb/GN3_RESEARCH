@@ -22,6 +22,7 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-25T01:01:06.435844+00:00"
     worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: "f1dc06ed-d27a-4b17-a745-05ad5d47c70f"
     math_version: 5
@@ -53,10 +54,10 @@ simplified_statement: "The C4 source-rail residue forces a four-vertex diagonal 
 statement_sha256: "c9dfc8f36b6f324c31801cec36a75dd07d6675a6e36a50fcd9e0d4e9155f212f"
 substantive_worker_ids:
   - 244
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "The C4 source-rail residue forces a four-vertex diagonal overlap"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-09-30T17:27:57.58921+00:00"
+updated_at: "2026-10-01T20:07:22.602564+00:00"
 version: 10

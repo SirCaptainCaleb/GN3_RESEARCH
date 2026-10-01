@@ -27,6 +27,7 @@ metadata:
     recorded_at: "2026-10-01T06:09:29.459921+00:00"
     worker_id: 965
   audit_trigger_kind: "chain_checkpoint"
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: 970
     detail: "Independent check: uniqueness of the 3-(8,4,1) block through each triple C-{c} gives A_c=(C-{c})∪{d_c} with d_c∈D; lambda=1 forces c↦d_c injective and hence bijective. The standard parameter counts show every block has a unique disjoint complementary block, giving B_c=U-A_c. Blocked/Hamiltonian properties and extendability of C then follow from the certified design branch and 1000860."
@@ -49,10 +50,10 @@ simplified_statement: "Every extendable four-center in the order-eleven design i
 statement_sha256: "262e8f9617e70cbf6384793b8061bb38105231a3d514968aca11157215a57e4f"
 substantive_worker_ids:
   - 952
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Every extendable center in the order-eleven design has a matched blocked 4|4 frame"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-10-01T06:21:09.74364+00:00"
+updated_at: "2026-10-01T18:43:23.594674+00:00"
 version: 7

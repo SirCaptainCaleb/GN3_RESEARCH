@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a20acd6503847285cf9387441388553cb215253c7b4845f83d3c243446ee661c"
+created_at: "2026-09-24T13:18:32.65593+00:00"
+id: "1000091"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "gap-one terminal-potential dichotomy"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000574"
+position: 0
+research_interface:
+  consequence: "A gap-one top-rank edge cannot descend except by landing on a rank-aligned terminal, which already receives the stronger multiplicity discount."
+  consumer:
+    - "post-43/48 gap-one shell"
+    - "near-extremizer anatomy"
+  given:
+    - "rank q ascending edge terminal at vertex of potential q+1"
+  next_need: "Show near-saturation of the exact local cost gamma(q) forces a positive fraction of terminal incidences to have rank q. Then a global near-extremizer with negligible aligned mass must carry a dense nondecreasing top-rank terminal graph; exploit flat/rising structure or potential cuts."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Gap-one top-rank edges either pay to alignment or move nondecreasingly in potential."
+statement_sha256: "5c8388ad47bdd1c63473da7ceec2de9216236cd54831d349403966853ff74c07"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Gap-one top-rank edges either pay to alignment or move nondecreasingly in potential"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:22:20.272696+00:00"
+version: 8

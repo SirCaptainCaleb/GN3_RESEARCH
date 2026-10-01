@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "2200a3e2873573c43207d726719e294e0fa545a4fac3496768a09b94eeef2ef0"
+created_at: "2026-09-25T20:57:44.643874+00:00"
+id: "1000594"
+last_elevation_revision: null
+last_substantive_worker_id: 191
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "The propagation phi(c)-kappa_P(c)=constant along a component is fine, but the proof then asserts that distinct vertices on a linear 3-path have distinct integer prefix-edge coordinates kappa_P(c). That is not implied by the statement: distinct vertices can occur at the same host-edge coordinate (for example a private vertex of g_i and the forward joint g_i∩g_{i+1} both admit prefix edge-count i under the stated coordinate). Hence equal component slack plus a rank band does not imply |K|<=B-A+1 without an additional injectivity hypothesis on kappa or a weakened multiplicity factor."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "The propagation phi(c)-kappa_P(c)=constant along a component is fine, but the proof then asserts that distinct vertices on a linear 3-path have distinct integer prefix-edge coordinates kappa_P(c). That is not implied by the statement: distinct vertices can occur at the same host-edge coordinate (for example a private vertex of g_i and the forward joint g_i∩g_{i+1} both admit prefix edge-count i under the stated coordinate). Hence equal component slack plus a rank band does not imply |K|<=B-A+1 without an additional injectivity hypothesis on kappa or a weakened multiplicity factor."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_failure:
+    reason: "The propagation phi(c)-kappa_P(c)=constant along a component is fine, but the proof then asserts that distinct vertices on a linear 3-path have distinct integer prefix-edge coordinates kappa_P(c). That is not implied by the statement: distinct vertices can occur at the same host-edge coordinate (for example a private vertex of g_i and the forward joint g_i∩g_{i+1} both admit prefix edge-count i under the stated coordinate). Hence equal component slack plus a rank band does not imply |K|<=B-A+1 without an additional injectivity hypothesis on kappa or a weakened multiplicity factor."
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+object_type: "corollary"
+origin_worker_id: 191
+parent_id: "1001184"
+position: 0
+research_interface:
+  consequence: "A connected family of crossing pairs that never creates a second intersection has vertex rank equal to host position plus one component constant; therefore a rank band of width B-A contains at most B-A+1 vertices from such a component."
+  consumer:
+    - "crossing-interval graph for retained vertices"
+    - "post-43/48 endpoint-path packing"
+  given:
+    - "20606dbd4cd9 equality of vertex-rank minus host-position across a crossing pair with unique auxiliary-path intersection"
+  next_need: "Apply the component bound to retained vertices whose ranks are confined to a narrow band. Large crossing components must then contain a pair of auxiliary maximum paths with at least two common vertices."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "95b085d0fa19367ad0e1c1c29b50f6b5464b6fa0444d0f5ed2015a731ad7acf7"
+substantive_worker_ids:
+  - 191
+support_reason: "The propagation phi(c)-kappa_P(c)=constant along a component is fine, but the proof then asserts that distinct vertices on a linear 3-path have distinct integer prefix-edge coordinates kappa_P(c). That is not implied by the statement: distinct vertices can occur at the same host-edge coordinate (for example a private vertex of g_i and the forward joint g_i∩g_{i+1} both admit prefix edge-count i under the stated coordinate). Hence equal component slack plus a rank band does not imply |K|<=B-A+1 without an additional injectivity hypothesis on kappa or a weakened multiplicity factor."
+support_status: "blocked"
+title: "Connected unique-intersection crossing components have constant rank-position difference"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:10:53.333862+00:00"
+version: 5

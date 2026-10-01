@@ -9,11 +9,455 @@
 -
   composition_manifest:
   composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000368"
+  route_key: null
+  updated_at: "2026-10-01T20:09:20.666131+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000322"
+  route_key: null
+  updated_at: "2026-10-01T20:14:15.013789+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000940"
+  route_key: null
+  updated_at: "2026-10-01T20:14:58.261557+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000400"
+  route_key: null
+  updated_at: "2026-10-01T20:22:16.96188+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000862"
+  route_key: null
+  updated_at: "2026-10-01T20:22:40.747318+00:00"
+-
+  composition_manifest:
+  composition_status: null
   node_kind: "root"
   note: "Reasoning-chain root for the certificate-at-either-terminal congestion closure and its same-terminal/uphill split."
   object_id: "1000729"
   route_key: "uphill-certificate-congestion"
   updated_at: "2026-09-30T22:57:08.356713+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000648"
+  route_key: null
+  updated_at: "2026-10-01T20:09:22.534413+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000552"
+  route_key: null
+  updated_at: "2026-10-01T20:14:16.817029+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000789"
+  route_key: null
+  updated_at: "2026-10-01T20:14:59.958547+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000038"
+  route_key: null
+  updated_at: "2026-10-01T20:22:18.593666+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001072"
+  route_key: null
+  updated_at: "2026-10-01T20:22:43.002595+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000386"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000273"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000011"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene recomposition of the authentic sequential one-low source-rail chain into one equivalent theorem; preserve terminal child and external consumers."
+  object_id: "1001181"
+  route_key: null
+  updated_at: "2026-10-01T20:07:22.602564+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000139"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000907"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000213"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000181"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene recomposition of the trapped-negative charge chain into one equivalent theorem."
+  object_id: "1001187"
+  route_key: null
+  updated_at: "2026-10-01T20:12:42.373917+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001017"
+  route_key: null
+  updated_at: "2026-10-01T20:14:18.6594+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Toolkit branch for structured lower-bound constructions."
+  object_id: "1000750"
+  route_key: null
+  updated_at: "2026-10-01T20:18:51.88343+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000091"
+  route_key: null
+  updated_at: "2026-10-01T20:22:20.272696+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001190"
+  route_key: null
+  updated_at: "2026-10-01T20:23:28.840174+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000099"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000246"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000089"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene recomposition of the authentic sequential terminal-left 4455 chain into one equivalent theorem; preserve terminal child and external consumers."
+  object_id: "1001182"
+  route_key: null
+  updated_at: "2026-10-01T20:07:42.762091+00:00"
+-
+  composition_manifest:
+    -
+      id: "1001066"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000927"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000219"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene recomposition of the near-factor-two collision chain into one equivalent theorem; preserve terminal continuation and external consumers."
+  object_id: "1001188"
+  route_key: null
+  updated_at: "2026-10-01T20:13:20.208177+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Sequential parent of 1000896 in the strict-rank-cut analysis; annotate existing reasoning chain without changing mathematics."
+  object_id: "1000171"
+  route_key: null
+  updated_at: "2026-10-01T20:15:24.332242+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Toolkit branch for potential and rank-growth lemmas."
+  object_id: "1001183"
+  route_key: null
+  updated_at: "2026-10-01T20:18:53.524694+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000574"
+  route_key: null
+  updated_at: "2026-10-01T20:22:22.255328+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000566"
+  route_key: null
+  updated_at: "2026-10-01T20:23:30.637646+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene repair: this proved route node is the immediate reasoning parent of recomposition 1001182."
+  object_id: "1000553"
+  route_key: null
+  updated_at: "2026-10-01T20:08:24.972201+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000534"
+  route_key: null
+  updated_at: "2026-10-01T20:13:34.805424+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000595"
+  route_key: null
+  updated_at: "2026-10-01T20:14:42.607142+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000626"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000806"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000337"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000088"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene recomposition of the lens-free flat-cycle chain into one equivalent theorem; preserve terminal continuation and external consumers."
+  object_id: "1001200"
+  route_key: null
+  updated_at: "2026-10-01T20:21:30.375369+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001199"
+  route_key: null
+  updated_at: "2026-10-01T20:22:23.844817+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000133"
+  route_key: null
+  updated_at: "2026-10-01T20:23:32.411693+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000968"
+  route_key: null
+  updated_at: "2026-10-01T20:08:41.282568+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000896"
+  route_key: null
+  updated_at: "2026-10-01T20:13:36.792584+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000226"
+  route_key: null
+  updated_at: "2026-10-01T20:14:44.289756+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000154"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000077"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000367"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene recomposition of the rigid zero-slack switching chain into one equivalent theorem."
+  object_id: "1001201"
+  route_key: null
+  updated_at: "2026-10-01T20:21:32.662806+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000780"
+  route_key: null
+  updated_at: "2026-10-01T20:22:25.43362+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001044"
+  route_key: null
+  updated_at: "2026-10-01T20:08:59.155661+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000252"
+  route_key: null
+  updated_at: "2026-10-01T20:14:06.299868+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000433"
+  route_key: null
+  updated_at: "2026-10-01T20:14:45.912302+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000602"
+  route_key: null
+  updated_at: "2026-10-01T20:22:02.924144+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001191"
+  route_key: null
+  updated_at: "2026-10-01T20:22:28.187565+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000739"
+  route_key: null
+  updated_at: "2026-10-01T20:09:00.992092+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000069"
+  route_key: null
+  updated_at: "2026-10-01T20:14:07.998813+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001168"
+  route_key: null
+  updated_at: "2026-10-01T20:14:47.598215+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000664"
+  route_key: null
+  updated_at: "2026-10-01T20:22:06.403676+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000319"
+  route_key: null
+  updated_at: "2026-10-01T20:22:33.659829+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -25,11 +469,91 @@
 -
   composition_manifest:
   composition_status: null
-  node_kind: "root"
-  note: "Canonical project Toolkit root: reusable mathematics and methods live here rather than carrying a proof frame."
-  object_id: "methods01"
-  route_key: "project_methods"
-  updated_at: "2026-09-27T23:11:40.041765+00:00"
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000740"
+  route_key: null
+  updated_at: "2026-10-01T20:09:02.925924+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000396"
+  route_key: null
+  updated_at: "2026-10-01T20:14:09.518606+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000897"
+  route_key: null
+  updated_at: "2026-10-01T20:14:50.156224+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000220"
+  route_key: null
+  updated_at: "2026-10-01T20:22:08.122904+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000824"
+  route_key: null
+  updated_at: "2026-10-01T20:22:35.419778+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000736"
+  route_key: null
+  updated_at: "2026-10-01T20:09:14.538167+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001104"
+  route_key: null
+  updated_at: "2026-10-01T20:14:11.323952+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000608"
+  route_key: null
+  updated_at: "2026-10-01T20:14:51.848863+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000103"
+  route_key: null
+  updated_at: "2026-10-01T20:15:05.88247+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000340"
+  route_key: null
+  updated_at: "2026-10-01T20:15:16.837958+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000062"
+  route_key: null
+  updated_at: "2026-10-01T20:15:23.676853+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -46,14 +570,6 @@
   object_id: "1000081"
   route_key: null
   updated_at: "2026-09-25T05:06:29.110025+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
-  object_id: "1000103"
-  route_key: null
-  updated_at: "2026-09-25T22:34:38.364607+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -142,14 +658,6 @@
   object_id: "1000192"
   route_key: "project_resources"
   updated_at: "2026-09-25T04:29:49.914646+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1000340"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -284,14 +792,6 @@
   object_id: "1000060"
   route_key: null
   updated_at: "2026-09-25T04:49:27.239522+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Cumulative terminal-snake bound."
-  object_id: "1000062"
-  route_key: null
-  updated_at: "2026-09-25T05:07:38.367694+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -534,6 +1034,30 @@
   updated_at: "2026-09-22T05:50:50.279206+00:00"
 -
   composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: "Canonical reusable Toolkit reasoning root."
+  object_id: "methods01"
+  route_key: null
+  updated_at: "2026-10-01T20:18:50.232498+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000868"
+  route_key: null
+  updated_at: "2026-10-01T20:22:10.585833+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000082"
+  route_key: null
+  updated_at: "2026-10-01T20:22:37.312804+00:00"
+-
+  composition_manifest:
     -
       id: "1000603"
       math_version: 1
@@ -744,14 +1268,6 @@
 -
   composition_manifest:
   composition_status: null
-  node_kind: "branch"
-  note: "Defect-stability subroute toward the exact two-thirds bound."
-  object_id: "1000322"
-  route_key: "upper_defect_stability"
-  updated_at: "2026-09-25T05:06:21.746645+00:00"
--
-  composition_manifest:
-  composition_status: null
   node_kind: "step"
   note: "Certified post-43/48 causal chain"
   object_id: "1000325"
@@ -807,14 +1323,6 @@
   object_id: "1000336"
   route_key: null
   updated_at: "2026-09-22T02:01:58.948721+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
-  object_id: "1000342"
-  route_key: null
-  updated_at: "2026-09-25T22:34:36.896918+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -880,14 +1388,6 @@
   object_id: "1000366"
   route_key: null
   updated_at: "2026-09-25T04:49:27.239522+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
-  object_id: "1000371"
-  route_key: null
-  updated_at: "2026-09-25T22:34:56.174423+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1026,6 +1526,22 @@
   updated_at: "2026-09-25T11:54:39.370429+00:00"
 -
   composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000371"
+  route_key: null
+  updated_at: "2026-10-01T20:15:02.356576+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000342"
+  route_key: null
+  updated_at: "2026-10-01T20:15:07.778361+00:00"
+-
+  composition_manifest:
     -
       id: "1000418"
       math_version: 1
@@ -1042,14 +1558,6 @@
   object_id: "1000460"
   route_key: null
   updated_at: "2026-09-25T04:49:27.239522+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Terminal saturation pays in double-blocker excess."
-  object_id: "1000461"
-  route_key: null
-  updated_at: "2026-09-25T05:07:40.619681+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1124,14 +1632,6 @@
   object_id: "1000488"
   route_key: null
   updated_at: "2026-09-21T19:11:34.326713+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Methodology repair: restore missing reasoning-chain continuity to existing annotated descendants; organizational only."
-  object_id: "1000492"
-  route_key: null
-  updated_at: "2026-09-25T19:34:32.243027+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1235,14 +1735,6 @@
   object_id: "1000551"
   route_key: null
   updated_at: "2026-09-25T11:54:39.370429+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "branch"
-  note: ""
-  object_id: "1000552"
-  route_key: "upper_snake_terminal"
-  updated_at: "2026-09-25T04:29:49.914646+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1520,38 +2012,6 @@
   updated_at: "2026-09-25T22:11:52.221068+00:00"
 -
   composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
-  object_id: "1000732"
-  route_key: null
-  updated_at: "2026-09-25T22:34:54.364315+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1000735"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Methodology repair: restore missing reasoning-chain continuity between existing annotated predecessor and annotated descendants; organizational only."
-  object_id: "1000738"
-  route_key: null
-  updated_at: "2026-09-25T19:34:30.375896+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1000742"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
--
-  composition_manifest:
     -
       id: "1000777"
       math_version: 1
@@ -1584,6 +2044,54 @@
   object_id: "1000762"
   route_key: null
   updated_at: "2026-09-25T20:18:59.672603+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000732"
+  route_key: null
+  updated_at: "2026-10-01T20:15:04.161109+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000735"
+  route_key: null
+  updated_at: "2026-10-01T20:15:18.688067+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000742"
+  route_key: null
+  updated_at: "2026-10-01T20:15:20.228043+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000461"
+  route_key: null
+  updated_at: "2026-10-01T20:15:22.05956+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000492"
+  route_key: null
+  updated_at: "2026-10-01T20:22:29.818819+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000738"
+  route_key: null
+  updated_at: "2026-10-01T20:22:31.918832+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1664,14 +2172,6 @@
   object_id: "1000788"
   route_key: null
   updated_at: "2026-09-22T08:14:21.659663+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
-  object_id: "1000789"
-  route_key: null
-  updated_at: "2026-09-25T22:34:57.984401+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1792,14 +2292,6 @@
   updated_at: "2026-09-21T22:34:23.351333+00:00"
 -
   composition_manifest:
-  composition_status: null
-  node_kind: "root"
-  note: "Main LINP research tree."
-  object_id: "1000846"
-  route_key: null
-  updated_at: "2026-09-21T21:12:26.653931+00:00"
--
-  composition_manifest:
     -
       id: "1000001"
       math_version: 4
@@ -1896,14 +2388,6 @@
   node_kind: "step"
   note: "Certified post-43/48 causal chain"
   object_id: "1000902"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1000904"
   route_key: null
   updated_at: "2026-09-25T11:54:39.370429+00:00"
 -
@@ -2065,14 +2549,6 @@
 -
   composition_manifest:
   composition_status: null
-  node_kind: "branch"
-  note: "General-length attack branch."
-  object_id: "1001017"
-  route_key: null
-  updated_at: "2026-09-21T21:12:26.653931+00:00"
--
-  composition_manifest:
-  composition_status: null
   node_kind: "step"
   note: "Corrected quantitative two-bit carrier lift."
   object_id: "1001027"
@@ -2114,10 +2590,34 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
-  note: "Certified post-43/48 causal chain"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000676"
+  route_key: null
+  updated_at: "2026-10-01T20:09:16.385799+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: "Reasoning-hygiene root annotation repair."
+  object_id: "1000846"
+  route_key: null
+  updated_at: "2026-10-01T20:14:34.435148+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
   object_id: "1001055"
   route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
+  updated_at: "2026-10-01T20:15:09.556429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000904"
+  route_key: null
+  updated_at: "2026-10-01T20:15:11.55896+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -2307,3 +2807,43 @@
   object_id: "1001162"
   route_key: null
   updated_at: "2026-09-25T11:54:39.370429+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000440"
+  route_key: null
+  updated_at: "2026-10-01T20:09:18.451394+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000990"
+  route_key: null
+  updated_at: "2026-10-01T20:14:12.898801+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000310"
+  route_key: null
+  updated_at: "2026-10-01T20:14:53.723064+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000666"
+  route_key: null
+  updated_at: "2026-10-01T20:22:15.004467+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000094"
+  route_key: null
+  updated_at: "2026-10-01T20:22:39.057077+00:00"

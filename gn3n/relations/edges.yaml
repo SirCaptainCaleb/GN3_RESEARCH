@@ -33,6 +33,121 @@
     supersession_state_updated_at: "2026-10-01T00:03:43.21888+00:00"
   to_id: "five_side_two_bad_endpoint_sixpackage01"
 -
+  created_at: "2026-09-29T18:57:14.40748+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "local_four_interior_kernel_or_cross01"
+-
+  created_at: "2026-09-29T18:57:16.898785+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "local_four_interior_positioned_kernel01"
+-
+  created_at: "2026-09-29T12:20:26.819918+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "The fixed-pair theorem applies to every minimum counterexample and directly yields the order-4 conclusion, so the staircase-specific theorem is mathematically unnecessary."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000096"
+-
+  created_at: "2026-09-29T12:24:19.355641+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "The fixed-pair theorem directly forces regime (2) in every minimum counterexample, so the four-regime theorem is mathematically unnecessary."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000607"
+-
+  created_at: "2026-09-29T17:24:26.014951+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "Elevation review: the certified prescribed-pair theorem applies to every minimum counterexample and directly implies the entire staircase-specific four-support statement. The specialized corollary adds no mathematical hypothesis-dependent conclusion and is therefore obsolete as a live theorem node."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000620"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "staircase_reversal_live01"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000208"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000626"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000745"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000096"
+-
+  created_at: "2026-10-01T18:43:23.594674+00:00"
+  from_id: "1000540"
+  kind: "supersedes"
+  metadata:
+    reason: "1000540 now proves the pair-grid order-disagreement conclusion directly for every exterior triple, in addition to the full grid and pc2 stability."
+    replacement_kind: "strictly_stronger"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "hardreversal_pairgrid01"
+-
+  created_at: "2026-10-01T18:43:23.594674+00:00"
+  from_id: "1000921"
+  kind: "supersedes"
+  metadata:
+    reason: "Under identical global-minimum hypotheses, 1000921 closes both residual 4|4 and 4|5 profiles, so its conclusion strictly strengthens 1000920."
+    replacement_kind: "strictly_stronger"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+  to_id: "1000920"
+-
   created_at: "2026-10-01T00:14:59.356316+00:00"
   from_id: "1000842"
   kind: "depends_on"
@@ -51,17 +166,38 @@
   metadata:
   to_id: "hamiltonian_enlargement_forces_crossing01"
 -
+  created_at: "2026-10-01T19:36:48.609139+00:00"
+  from_id: "compatibility_c4free_neartotal_fan01"
+  kind: "depends_on"
+  metadata:
+    role: "two-deletion reconstruction"
+  to_id: "pairdeletionreconstruct01"
+-
   created_at: "2026-10-01T00:15:12.059552+00:00"
   from_id: "1000843"
   kind: "depends_on"
   metadata:
   to_id: "fourfour_long_escape01"
 -
+  created_at: "2026-10-01T19:36:50.276386+00:00"
+  from_id: "compatibility_c4free_neartotal_fan01"
+  kind: "depends_on"
+  metadata:
+    role: "four-cover gluing / K4 obstruction"
+  to_id: "1000694"
+-
   created_at: "2026-10-01T00:15:23.831966+00:00"
   from_id: "1000844"
   kind: "depends_on"
   metadata:
   to_id: "1000615"
+-
+  created_at: "2026-10-01T19:36:52.309429+00:00"
+  from_id: "compatibility_c4free_neartotal_fan01"
+  kind: "depends_on"
+  metadata:
+    role: "certified first-crossing witness"
+  to_id: "1000922"
 -
   created_at: "2026-10-01T00:15:36.31135+00:00"
   from_id: "1000845"
@@ -81,6 +217,15 @@
   metadata:
   to_id: "three_fourcore_extensions_sync01"
 -
+  created_at: "2026-10-01T19:37:06.527042+00:00"
+  from_id: "compatibility_c4free_neartotal_fan01"
+  kind: "supersedes"
+  metadata:
+    reason: "Strict strengthening: codegree-one/C4-free compatibility gives an m-O(sqrt(m)) anchored fan instead of the prior m/3 bound, with the same crossing-certificate conclusion."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T19:37:06.527042+00:00"
+  to_id: "1000922"
+-
   created_at: "2026-10-01T00:15:47.231152+00:00"
   from_id: "1000846"
   kind: "depends_on"
@@ -92,6 +237,13 @@
   kind: "depends_on"
   metadata:
   to_id: "order11_triple_seven_barriers01"
+-
+  created_at: "2026-10-01T19:44:37.267488+00:00"
+  from_id: "compatibility_degree4_prescribed_fan01"
+  kind: "depends_on"
+  metadata:
+    role: "pairwise insertion/support localization and four-cover gluing obstruction"
+  to_id: "1000694"
 -
   created_at: "2026-10-01T00:15:57.830845+00:00"
   from_id: "1000847"
@@ -105,6 +257,13 @@
   metadata:
   to_id: "two_bad_five_extensions_all_opposite01"
 -
+  created_at: "2026-10-01T19:44:39.444184+00:00"
+  from_id: "compatibility_degree4_prescribed_fan01"
+  kind: "depends_on"
+  metadata:
+    role: "certified crossing witness for support-incompatible covers"
+  to_id: "1000922"
+-
   created_at: "2026-10-01T00:17:54.634872+00:00"
   from_id: "1000848"
   kind: "depends_on"
@@ -116,6 +275,15 @@
   kind: "depends_on"
   metadata:
   to_id: "hamiltonian_enlargement_forces_crossing01"
+-
+  created_at: "2026-10-01T19:44:41.243464+00:00"
+  from_id: "compatibility_degree4_prescribed_fan01"
+  kind: "supersedes"
+  metadata:
+    reason: "Stronger prescribed-anchor theorem: Delta<=4, m-5 crossing covers from every anchor, and a linear incompatible subfamily."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T19:44:41.243464+00:00"
+  to_id: "compatibility_c4free_neartotal_fan01"
 -
   created_at: "2026-10-01T00:18:03.369465+00:00"
   from_id: "1000849"
@@ -129,11 +297,25 @@
   metadata:
   to_id: "local_four_allfour_interior_lock01"
 -
+  created_at: "2026-10-01T19:46:03.089523+00:00"
+  from_id: "1000923"
+  kind: "depends_on"
+  metadata:
+    role: "compatibility edge-codegree / neighborhood sparsity"
+  to_id: "compatneighborhood02"
+-
   created_at: "2026-10-01T00:18:10.651616+00:00"
   from_id: "1000850"
   kind: "depends_on"
   metadata:
   to_id: "four_side_endpoint_disturbance_recomp01"
+-
+  created_at: "2026-10-01T19:46:05.534858+00:00"
+  from_id: "1000923"
+  kind: "depends_on"
+  metadata:
+    role: "fixed-cut crossing localization"
+  to_id: "1000922"
 -
   created_at: "2026-10-01T00:18:26.724394+00:00"
   from_id: "deletion_label_threeanchor_crossing01"
@@ -141,6 +323,13 @@
   metadata:
     note: "Elevation removes the special choice of four-window: the crossing and normalization hold for every Hamiltonian four-window through the deletion label."
   to_id: "1000842"
+-
+  created_at: "2026-10-01T19:46:07.607095+00:00"
+  from_id: "1000923"
+  kind: "depends_on"
+  metadata:
+    role: "minimum-counterexample order n>10 and deletion-cover existence"
+  to_id: "mincex01"
 -
   created_at: "2026-10-01T00:18:28.46147+00:00"
   from_id: "deletion_threeanchor_crossing_recomp01"
@@ -156,12 +345,37 @@
     note: "The entire componentwise Phi-minimal 4|4|m hypothesis is impossible for m>=6; the kernel branch is vacuous."
   to_id: "1000843"
 -
+  created_at: "2026-10-01T19:51:11.428974+00:00"
+  from_id: "1000924"
+  kind: "strengthens"
+  metadata:
+  to_id: "1000414"
+-
+  created_at: "2026-10-01T19:51:11.428974+00:00"
+  from_id: "1000925"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000613"
+-
+  created_at: "2026-10-01T19:51:11.428974+00:00"
+  from_id: "1000925"
+  kind: "depends_on"
+  metadata:
+  to_id: "mincex01"
+-
   created_at: "2026-10-01T00:18:34.700707+00:00"
   from_id: "balanced8_adjacent_windows_recomp01"
   kind: "subsumed_by"
   metadata:
     note: "Direct fixed-pair counting yields at least 28 Hamiltonian four-sets and at least 56 adjacent pairs, strictly stronger than existence."
   to_id: "1000844"
+-
+  created_at: "2026-10-01T19:51:28.312118+00:00"
+  from_id: "compatibility_triangle_endpoint_transport01"
+  kind: "depends_on"
+  metadata:
+    role: "endpoint synchronization for a three-cover support-compatible family"
+  to_id: "1000758"
 -
   created_at: "2026-10-01T00:18:40.367776+00:00"
   from_id: "local45_endpoint_threeleaf_star01"
@@ -170,6 +384,13 @@
     note: "Kruskal-Katona strengthens the endpoint-rooted star from three leaves to four and removes minimum-counterexample dependence from the star itself."
   to_id: "1000845"
 -
+  created_at: "2026-10-01T19:51:30.052213+00:00"
+  from_id: "compatibility_triangle_endpoint_transport01"
+  kind: "depends_on"
+  metadata:
+    role: "same-side compatible-neighbor structure"
+  to_id: "compatibility_degree4_prescribed_fan01"
+-
   created_at: "2026-10-01T00:18:41.907356+00:00"
   from_id: "order11_triple_blocked_overlap_or_star01"
   kind: "subsumed_by"
@@ -177,12 +398,26 @@
     note: "The star branch is strengthened: every pair has at least three unblocked centers, each adjacent to four blocked sides."
   to_id: "1000846"
 -
+  created_at: "2026-10-01T19:51:43.302773+00:00"
+  from_id: "compatibility_triangle_endpoint_transport01"
+  kind: "depends_on"
+  metadata:
+    role: "crossing witness for residual support-incompatible endpoint covers"
+  to_id: "1000922"
+-
   created_at: "2026-10-01T00:18:43.67592+00:00"
   from_id: "local45_allnine_common_lock01"
   kind: "subsumed_by"
   metadata:
     note: "Prescribed-vertex mobility yields at least two distinct neutral endpoint witness states for each of the nine labels."
   to_id: "1000849"
+-
+  created_at: "2026-10-01T19:51:47.008495+00:00"
+  from_id: "compatibility_triangle_endpoint_transport01"
+  kind: "strengthens"
+  metadata:
+    reason: "Consumes the high-degree case into endpoint transport or reversal; residual compatibility degree improves from four to two."
+  to_id: "compatibility_degree4_prescribed_fan01"
 -
   created_at: "2026-09-29T20:48:35.777694+00:00"
   from_id: "fixedpair_three_side_descent_m6_01"
@@ -199,6 +434,13 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-10-01T00:19:58.329033+00:00"
   to_id: "global_four_fork_interior_lock01"
+-
+  created_at: "2026-10-01T19:55:02.156551+00:00"
+  from_id: "1000926"
+  kind: "depends_on"
+  metadata:
+    role: "maximum-degree-four compatibility graph"
+  to_id: "compatibility_degree4_prescribed_fan01"
 -
   created_at: "2026-09-30T05:00:39.376694+00:00"
   from_id: "four_side_endpoint_gap_recomp01"
@@ -288,6 +530,13 @@
     supersession_state_updated_at: "2026-10-01T00:21:12.195834+00:00"
   to_id: "deletion_state_interval_frontier15"
 -
+  created_at: "2026-10-01T19:55:03.894335+00:00"
+  from_id: "1000926"
+  kind: "depends_on"
+  metadata:
+    role: "minimum counterexample order greater than ten"
+  to_id: "mincex01"
+-
   created_at: "2026-09-30T13:29:13.585399+00:00"
   from_id: "fourfour_long_escape01"
   kind: "supersedes"
@@ -314,6 +563,13 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-10-01T02:18:22.803054+00:00"
   to_id: "1000376"
+-
+  created_at: "2026-10-01T19:55:33.537479+00:00"
+  from_id: "compatibility_pathcycle_skeleton01"
+  kind: "depends_on"
+  metadata:
+    role: "same-side triangle exit and residual degree-two bound"
+  to_id: "compatibility_triangle_endpoint_transport01"
 -
   created_at: "2026-09-30T05:01:35.716907+00:00"
   from_id: "order11_three_side_barrier_recomp01"
@@ -372,6 +628,13 @@
     supersession_state_updated_at: "2026-10-01T01:01:13.82212+00:00"
   to_id: "eightset_pair_escape_355_13"
 -
+  created_at: "2026-10-01T19:55:40.776093+00:00"
+  from_id: "compatibility_pathcycle_skeleton01"
+  kind: "depends_on"
+  metadata:
+    role: "crossing witness for support-incompatible pairs"
+  to_id: "1000922"
+-
   created_at: "2026-10-01T00:27:08.081236+00:00"
   from_id: "deletion_fourwindow_crossing_normalform_recomp01"
   kind: "depends_on"
@@ -422,6 +685,13 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-10-01T05:32:40.485153+00:00"
   to_id: "1000842"
+-
+  created_at: "2026-10-01T19:55:42.729921+00:00"
+  from_id: "compatibility_pathcycle_skeleton01"
+  kind: "strengthens"
+  metadata:
+    reason: "Refines the residual branch to a triangle-free path/cycle skeleton with locally alternating side-incidences and stronger incompatible-family bounds."
+  to_id: "compatibility_triangle_endpoint_transport01"
 -
   created_at: "2026-09-30T13:36:26.405141+00:00"
   from_id: "deletion_threeanchor_crossing_recomp01"
@@ -487,12 +757,26 @@
     supersession_state_updated_at: "2026-10-01T01:03:14.778798+00:00"
   to_id: "1000847"
 -
+  created_at: "2026-10-01T19:55:45.181943+00:00"
+  from_id: "1000927"
+  kind: "depends_on"
+  metadata:
+    role: "compatible-pair localization and four-cover gluing obstruction"
+  to_id: "1000694"
+-
   created_at: "2026-10-01T00:35:18.719696+00:00"
   from_id: "local45_eight_lock_gap_network01"
   kind: "depends_on"
   metadata:
     reason: "elevation from eight locks to all nine"
   to_id: "local45_allnine_common_lock01"
+-
+  created_at: "2026-10-01T19:55:47.012195+00:00"
+  from_id: "1000927"
+  kind: "depends_on"
+  metadata:
+    role: "fixed-cut crossing conclusion for support-incompatible neighbors"
+  to_id: "1000922"
 -
   created_at: "2026-10-01T00:43:41.343836+00:00"
   from_id: "order11_design_exact42_selector01"
@@ -618,8 +902,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-10-01T01:04:00.657971+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_triple_blocked_overlap_or_star01"
 -
   created_at: "2026-10-01T01:01:46.04475+00:00"
@@ -628,8 +912,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-10-01T01:04:00.657971+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "1000846"
 -
   created_at: "2026-10-01T01:01:46.04475+00:00"
@@ -638,8 +922,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-10-01T01:04:00.657971+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_design_fourcube_shells01"
 -
   created_at: "2026-10-01T01:02:33.136706+00:00"
@@ -1031,18 +1315,12 @@
 -
   created_at: "2026-10-01T01:25:38.288838+00:00"
   from_id: "order11_design_sevenlabel_recomp01"
-  kind: "depends_on"
-  metadata:
-  to_id: "order11_design_common_threeside01"
--
-  created_at: "2026-10-01T01:25:38.288838+00:00"
-  from_id: "order11_design_sevenlabel_recomp01"
   kind: "supersedes"
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-10-01T05:29:40.003289+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_design_threeside_multiplicity01"
 -
   created_at: "2026-10-01T01:25:38.288838+00:00"
@@ -1051,9 +1329,15 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-10-01T05:29:40.003289+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_common_threeside_swap01"
+-
+  created_at: "2026-10-01T01:25:38.288838+00:00"
+  from_id: "order11_design_sevenlabel_recomp01"
+  kind: "depends_on"
+  metadata:
+  to_id: "order11_design_common_threeside01"
 -
   created_at: "2026-10-01T01:29:28.611507+00:00"
   from_id: "reversal_pair_internal_triangle01"
@@ -1331,8 +1615,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-10-01T05:29:40.003289+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_sevenlabel_design_normal01"
 -
   created_at: "2026-10-01T05:36:50.564854+00:00"
@@ -2985,36 +3269,6 @@
     rewired_by_replacement: true
   to_id: "1000911"
 -
-  created_at: "2026-10-01T17:38:20.468275+00:00"
-  from_id: "1000911"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
-  to_id: "four_window_transport_allorders01"
--
-  created_at: "2026-10-01T17:38:20.468275+00:00"
-  from_id: "1000911"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
-  to_id: "1000764"
--
-  created_at: "2026-10-01T17:38:20.468275+00:00"
-  from_id: "1000911"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
-  to_id: "1000904"
--
   created_at: "2026-09-29T18:19:40.931844+00:00"
   from_id: "four_window_transport_allorders01"
   kind: "supersedes"
@@ -3030,6 +3284,36 @@
     supersession_state: "pending_audit"
     supersession_state_updated_at: "2026-10-01T17:38:20.468275+00:00"
   to_id: "fourwindow_smallside_bypass01"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
+  to_id: "four_window_transport_allorders01"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
+  to_id: "1000764"
+-
+  created_at: "2026-10-01T17:38:20.468275+00:00"
+  from_id: "1000911"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
+  to_id: "1000904"
 -
   created_at: "2026-10-01T17:39:25.898063+00:00"
   from_id: "1000912"
@@ -3091,8 +3375,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:39:25.898063+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "terminal_singleton_swap_k4_residue01"
 -
   created_at: "2026-10-01T17:39:25.898063+00:00"
@@ -3101,8 +3385,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:39:25.898063+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "1000906"
 -
   created_at: "2026-10-01T17:39:25.898063+00:00"
@@ -3111,8 +3395,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:39:25.898063+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "1000907"
 -
   created_at: "2026-09-28T20:30:46.316948+00:00"
@@ -3195,8 +3479,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:39:36.313434+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "1000905"
 -
   created_at: "2026-10-01T17:39:36.313434+00:00"
@@ -3205,8 +3489,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:39:36.313434+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "1000908"
 -
   created_at: "2026-10-01T17:39:36.313434+00:00"
@@ -3215,8 +3499,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T17:39:36.313434+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "1000909"
 -
   created_at: "2026-09-26T08:30:49.556184+00:00"
@@ -3340,8 +3624,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:01:50.541588+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "1000915"
 -
   created_at: "2026-10-01T18:01:50.541588+00:00"
@@ -3350,8 +3634,8 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:01:50.541588+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-01T18:36:46.25886+00:00"
   to_id: "1000916"
 -
   created_at: "2026-09-20T20:33:34.321647+00:00"
@@ -3359,6 +3643,27 @@
   kind: "references"
   metadata:
   to_id: "commonmiddle01"
+-
+  created_at: "2026-10-01T18:06:03.46311+00:00"
+  from_id: "1000919"
+  kind: "depends_on"
+  metadata:
+    reason: "Excludes componentwise Phi-minima with minimum side one, two, or three."
+  to_id: "1000917"
+-
+  created_at: "2026-10-01T18:06:03.46311+00:00"
+  from_id: "1000919"
+  kind: "depends_on"
+  metadata:
+    reason: "Eliminates terminal minimum side five unless order disagreement occurs."
+  to_id: "fiveside_descent_or_disagree01"
+-
+  created_at: "2026-10-01T18:06:03.46311+00:00"
+  from_id: "1000919"
+  kind: "depends_on"
+  metadata:
+    reason: "Classifies a terminal four-side as strict descent, Hamiltonian-six pc2 support, or order disagreement."
+  to_id: "1000389"
 -
   created_at: "2026-09-27T15:25:12.292613+00:00"
   from_id: "twofourhamdeletions01"
@@ -25038,6 +25343,13 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000612"
 -
+  created_at: "2026-10-01T18:07:27.932+00:00"
+  from_id: "1000920"
+  kind: "depends_on"
+  metadata:
+    reason: "Excludes global minima with minimum side one, two, or three."
+  to_id: "1000917"
+-
   created_at: "2026-09-28T01:21:25.210512+00:00"
   from_id: "terminalfrontier_recomp01"
   kind: "supersedes"
@@ -25564,6 +25876,13 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000369"
+-
+  created_at: "2026-10-01T18:07:27.932+00:00"
+  from_id: "1000920"
+  kind: "depends_on"
+  metadata:
+    reason: "Excludes terminal minimum side five unless order disagreement occurs."
+  to_id: "fiveside_descent_or_disagree01"
 -
   created_at: "2026-09-29T01:51:42.430428+00:00"
   from_id: "crossswapconflict_recomp01"
@@ -26096,6 +26415,13 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000748"
 -
+  created_at: "2026-10-01T18:07:27.932+00:00"
+  from_id: "1000920"
+  kind: "depends_on"
+  metadata:
+    reason: "At a global minimum, a four-side with both other sides at least six forces order disagreement."
+  to_id: "1000592"
+-
   created_at: "2026-09-29T01:44:32.314259+00:00"
   from_id: "recomp_endpoint_peel_01"
   kind: "supersedes"
@@ -26376,6 +26702,13 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000574"
 -
+  created_at: "2026-10-01T18:09:21.924134+00:00"
+  from_id: "1000921"
+  kind: "depends_on"
+  metadata:
+    reason: "Excludes global minima with minimum side one, two, or three."
+  to_id: "1000917"
+-
   created_at: "2026-09-29T01:44:32.314259+00:00"
   from_id: "recomp_square45_01"
   kind: "supersedes"
@@ -26613,51 +26946,6 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000151"
 -
-  created_at: "2026-09-29T18:57:14.40748+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "local_four_interior_kernel_or_cross01"
--
-  created_at: "2026-09-29T18:57:16.898785+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "local_four_interior_positioned_kernel01"
--
-  created_at: "2026-09-29T12:20:26.819918+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "The fixed-pair theorem applies to every minimum counterexample and directly yields the order-4 conclusion, so the staircase-specific theorem is mathematically unnecessary."
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000096"
--
-  created_at: "2026-09-29T12:24:19.355641+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "The fixed-pair theorem directly forces regime (2) in every minimum counterexample, so the four-regime theorem is mathematically unnecessary."
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000607"
--
-  created_at: "2026-09-29T17:24:26.014951+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "Elevation review: the certified prescribed-pair theorem applies to every minimum counterexample and directly implies the entire staircase-specific four-support statement. The specialized corollary adds no mathematical hypothesis-dependent conclusion and is therefore obsolete as a live theorem node."
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000620"
--
   created_at: "2026-09-29T17:30:03.710796+00:00"
   from_id: "endpoint_reversal_obstruction_recomp01"
   kind: "supersedes"
@@ -26687,56 +26975,6 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000714"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "staircase_reversal_live01"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000208"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000626"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000745"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000096"
 -
   created_at: "2026-09-29T17:34:42.26095+00:00"
   from_id: "direct_mixed_edge_recomp01"
@@ -26841,6 +27079,20 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "local_four_side_order17_disagreement01"
+-
+  created_at: "2026-10-01T18:09:21.924134+00:00"
+  from_id: "1000921"
+  kind: "depends_on"
+  metadata:
+    reason: "Minimum side five gives strict descent or order disagreement."
+  to_id: "fiveside_descent_or_disagree01"
+-
+  created_at: "2026-10-01T18:09:21.924134+00:00"
+  from_id: "1000921"
+  kind: "depends_on"
+  metadata:
+    reason: "At a global four-side minimum, if both other sides are at least six then cross-endpoint six-sets force order disagreement."
+  to_id: "1000592"
 -
   created_at: "2026-09-29T19:07:43.474285+00:00"
   from_id: "four_path_long_pair_escape01"
@@ -27064,6 +27316,13 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000498"
 -
+  created_at: "2026-10-01T18:09:21.924134+00:00"
+  from_id: "1000921"
+  kind: "depends_on"
+  metadata:
+    reason: "Excludes trapped componentwise minima of profile 4|4|a for a at least six."
+  to_id: "1000822"
+-
   created_at: "2026-09-29T01:56:28.077106+00:00"
   from_id: "1000088"
   kind: "supersedes"
@@ -27284,6 +27543,13 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000205"
 -
+  created_at: "2026-10-01T18:09:21.924134+00:00"
+  from_id: "1000921"
+  kind: "depends_on"
+  metadata:
+    reason: "A trapped componentwise minimum of profile 4|5|a for a at least seven forces order disagreement."
+  to_id: "1000323"
+-
   created_at: "2026-09-29T02:24:25.675148+00:00"
   from_id: "1000820"
   kind: "supersedes"
@@ -27377,12 +27643,18 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000667"
 -
+  created_at: "2026-10-01T18:23:28.479253+00:00"
+  from_id: "1000922"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000694"
+-
   created_at: "2026-09-29T15:40:45.882426+00:00"
   from_id: "1000620"
   kind: "supersedes"
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "1000096"

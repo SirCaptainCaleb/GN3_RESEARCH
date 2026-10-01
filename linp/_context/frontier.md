@@ -1,7 +1,7 @@
 # Research frontier
 
-Repository revision: 5447
-Frontier objects: 478
+Repository revision: 5673
+Frontier objects: 441
 
 Active theorem-facing terminal research objects that are visible for work: nonhidden, nonfailed, nonblocked, non-superseded leaves of the grand-theorem reasoning tree.
 
@@ -143,13 +143,12 @@ Parent: [1000410]
 **Consequence:** Around any spanning quotient path, all nonpath edges split evenly between odd/even over the family of P-even bit colorings.
 **Next Need:** Show that one dense odd half contains a spanning path sharing an endpoint with P, under density hypotheses inherited from a putative lower construction.
 
-## [1000241] For full projective Boolean systems, the joint-XOR obstruction rules out spanning paths in dimensions 3 and 4, while the mechanism fails from dimension 5 onward.
+## [1000135] If a zero-sum joint set has size k and rank at most d with k≥d+2, then it contains a proper zero-sum subset of size between 3 and floor(k/2); in PG(3,2) this forces a split into two projective lines.
 focus · lemma · proved · certified · supported
-Parent: [1000135]
-**Given:** ["new P7 proof d593f8024a92","explicit PG(4,2) spanning path bfc5f55c4e7d"]
-**Consumer:** ["projective lower-bound route","additive construction strategy"]
-**Consequence:** The proof generalizes as a normal form and invariant, but its contradiction is intrinsically the d=3,4 exceptional phenomenon.
-**Next Need:** Search non-projective additive domains where rank/nullity or circuit structure rigidifies Gamma_A(J) enough to make the four-point endpoint residue impossible.
+Parent: [1000618]
+**Given:** ["joint XOR invariant","ambient binary rank"]
+**Consumer:** ["P7 proof generalization","low-rank additive constructions"]
+**Consequence:** Explains exactly why six joints in rank four split into two lines, while higher-dimensional projective systems do not inherit that conclusion.
 
 ## [1000685] The claimed universal fourfold Boolean path lift is false: the 3-point quotient lifts to PG(3,2), which has no spanning P_7.
 focus · theorem · proved · certified · supported
@@ -430,14 +429,6 @@ Parent: [1000283]
 **Consequence:** The {b,c} witness branch reduces completely to the clean private-g4 entrance state.
 **Next Need:** Eliminate the clean state: h={x,v,u}, g4={c,x,d}, e5={d,v,w}, with x,d potential 4 and c potential 3, while f_b,f_c close g1-g2-g3 and their high terminals lie in g1. Determine whether u meets g1; if not, g1-g2-g3-g4-h is a rank-five witness for h through x. Use the other rank-five edge e5 or one closing chord to force a second h-entrance.
 
-## [1000375] Clean terminal-left 4455 entrance rails are fourfold transversals.
-focus · lemma · proved · certified · supported
-Parent: [1000791]
-**Given:** ["b0de0851e2b0 clean terminal-a triple transversal","rank-four triangle through f_a,f_b"]
-**Consumer:** ["p=5 4455 elimination"]
-**Consequence:** Every canonical 3-edge rail to the off-path entrance x meets four target edges. In the b-avoiding subcase it contains four distinct prescribed vertices c,u_b,(d or w),(z or u), an extremely tight incidence load.
-**Next Need:** Classify four distinct prescribed vertices on a 3-edge linear path. If they occupy all three rail edges, two targets are bridged by one rail edge; use that bridge with the remaining target and the shared-v edge pair e5,h to build a 4-edge path ending at b or a wrong-entrance rank-4/5 path. If two prescribed vertices lie on one rail joint, exploit linearity to identify the unique possible target pair.
-
 ## [1000243] Every canonical left-entrance rail in the surviving 4455 branch also crosses the opposite rank-four edge.
 focus · lemma · proved · certified · supported
 Parent: [1001059]
@@ -461,6 +452,14 @@ Parent: [1000614]
 **Consumer:** ["p=5 4455 elimination"]
 **Consequence:** The single-far-contact entrance-a branch is fully saturated: e5 hits private(h3), while g3 hits h1,h2,h3.
 **Next Need:** Classify how g3 hits h1,h2. Either one joint h1-h2 lies in g3, or g3 uses distinct contacts on h1 and h2. In the distinct case all three vertices of g3 are consumed by rail contacts; use the rank-four edge through b. In the common-joint case g3,h1,h2 form a 3-cycle.
+
+## [1000375] Clean terminal-left 4455 entrance rails are fourfold transversals.
+focus · lemma · proved · certified · supported
+Parent: [1000791]
+**Given:** ["b0de0851e2b0 clean terminal-a triple transversal","rank-four triangle through f_a,f_b"]
+**Consumer:** ["p=5 4455 elimination"]
+**Consequence:** Every canonical 3-edge rail to the off-path entrance x meets four target edges. In the b-avoiding subcase it contains four distinct prescribed vertices c,u_b,(d or w),(z or u), an extremely tight incidence load.
+**Next Need:** Classify four distinct prescribed vertices on a 3-edge linear path. If they occupy all three rail edges, two targets are bridged by one rail edge; use that bridge with the remaining target and the shared-v edge pair e5,h to build a 4-edge path ending at b or a wrong-entrance rank-4/5 path. If two prescribed vertices lie on one rail joint, exploit linearity to identify the unique possible target pair.
 
 ## [1000029] Strict potential rise can occur above the edge rank at both terminals.
 focus · lemma · proved · certified · supported
@@ -627,13 +626,13 @@ Parent: [1000399]
 **Consumer:** transient ascending-edge bound and repeated-blocker uncrossing
 **Relation:** parallel refinement of the direct snake-digraph stepping idea
 
-## [1000637] Hidden ordered-shadow cycles force a near-doubling rank spread.
+## [1001097] Nonspecial edges on a linear cycle have rank at least the cycle length.
 focus · lemma · proved · certified · supported
-Parent: [1000221]
-**Given:** ["minimal hidden cycle from an increasing rainbow ordered-shadow path","nonspecial cycle-rank lower bound","near-unit parent-rank growth"]
-**Consumer:** ["ordered-shadow monotone-path route"]
-**Consequence:** Any failure to lift is quantitatively short: a hidden cycle has length at most half the largest parent rank, and traversing it consumes at least c-2 units of parent-rank increase.
-**Next Need:** Use this rank budget to bound the cumulative loss from resolving multiple hidden cycles along a long ordered-shadow path, or show a cycle can be shortcut while preserving enough monotone length.
+Parent: [1000085]
+**Given:** ["linear cycle","nonspecial edge characterized by unique longest-path entrance"]
+**Consumer:** ["ordered-shadow cycle obstruction","flat-transfer cycles"]
+**Consequence:** Any hidden cycle obstructing a rainbow ordered-shadow lift has length at most the minimum parent rank on that cycle.
+**Next Need:** Combine cycle length <= minimum rank with strict ordered-shadow label growth to constrain endpoint ranks and entrance/terminal role patterns.
 
 ## [1000643] Maximum-path characterization of ascending and nonascending edges.
 focus · lemma · proved · certified · supported
@@ -641,12 +640,11 @@ Parent: [1001078]
 **Consumer:** repeated-blocker uncrossing and location-sensitive Minty arguments
 **Consequence:** nonascending behavior is equivalent to a two-vertex transversal of the family of longest paths ending at the entrance; strong decrease forces both vertices onto every such path
 
-## [1001002] Global compensated ascending-defect bound
-focus · proof_level · proposal · not_required · unchecked · obstructed
-Parent: [1000278]
-**Given:** ["refined ascending-edge accounting","Minty-type potential","local counterexample to pointwise control"]
-**Need:** prove A-H_2<=Cn for some absolute C; sharp C=3/2 would match the three-center family
-**Consumer:** general leading-coefficient improvement
+## [1000900] Joint snake-incidence and blocker budget.
+focus · lemma · proved · certified · supported
+Parent: [1001078]
+**Consumer:** dense-core all-special conjecture and transfer-potential arguments
+**Consequence:** large downward changes in φ(f) consume extra units of the same finite witness set
 
 ## [1000813] Cyclic-transient decomposition for the transfer digraph
 focus · proof_level · proposal · not_required · unchecked
@@ -739,23 +737,22 @@ Parent: [1000495]
 **Consequence:** Strengthens (ell-13/6)n by an additive c_ell asymptotic to ell/6.
 **Next Need:** To alter the leading coefficient, replace the first-level exceptional-set lower bound |R|>=Theta(ell) by |R|>=Omega(n), or obtain a local weighted defect growing linearly with phi.
 
-## [1000276] Minimal equality obstructions are connected and top cycles have a two-contact first ear.
+## [1001135] At density-plus-one equality every maximum endpoint path has a special last edge.
 focus · lemma · proved · certified · supported
-Parent: [1000389]
-**Given:** ["vertex-minimal E_ell obstruction","56fe77d0057c top cycle closure"]
-**Consumer:** ["minimum-potential equality branch","cycle-ear induction"]
-**Role:** equality-layer connectivity and first-ear lemma
-**Consequence:** The canonical ell-cycle is connected to the outside reservoir by a two-contact chord; one-contact ears are impossible because they immediately create P_ell.
-**Next Need:** Classify the two cycle-contact positions. Show either the first chord itself gives a full-length 2-opt splice, or rotate to one of the second canonical closures so that one contact disappears/moves; iterate outward to form a longer ear.
+Parent: [1000068]
+**Given:** ["c77c818cf1e9 equality local slacks","3a0d8866aba9 double-blocker compensation","672725540541 terminal saturation forces double blockers"]
+**Consumer:** ["equality-layer classification","special-edge maximal-path structure"]
+**Consequence:** At the clean density+1 equality point, maximum endpoint paths are special-ended everywhere. Nonspecial terminal incidences are exactly a bijective family of single blockers on the tail, and the other two special edges form the two far-end closures.
+**Next Need:** Exploit universal special-last behavior. For a special edge h={v,u,w} of rank p, maximum paths ending h can choose any endpoint terminal; compare the three endpoint-normal forms. The two far-end closure edges through each terminal should create a highly overdetermined family of p+1 cycles.
 
-## [1000196] Minimum-potential equality forces two-step ascent on every nonspecial edge.
+## [1000306] Minimum-potential equality is a 3-regular special core plus an all-ascending remainder.
 focus · theorem · proved · certified · supported
-Parent: [1000306]
-**Given:** ["41d502ff7771 equality classification","d4e8b1c27a65 snake saturation proof","672725540541 terminal saturation/double-blocker excess"]
-**Consumer:** ["b1fffccc673c source DAG route","equality-layer induction","potential-flow recurrence"]
-**Role:** rigid minimum-potential equality structure
-**Consequence:** All maximum endpoint paths end in special edges; every nonspecial ascending edge jumps from entrance potential q-1 to terminal potentials at least q+1, so source-DAG arcs rise by >=2.
-**Next Need:** Use the two-step potential flow to bound the (d-1)n all-ascending nonspecial edges. Develop cumulative source/terminal level inequalities; alternatively couple the resulting shallow DAG with the 3-regular special-edge core.
+Parent: [1001077]
+**Given:** ["eeb9576892 density-plus-one potential floor","419519f0efa5 ascending-edge accounting"]
+**Consumer:** ["equality-layer induction","b1fffccc673c source DAG route","special-core decomposition"]
+**Role:** minimum-potential equality classification
+**Consequence:** At equality sum phi=m+n, every vertex has special degree 3 and every nonspecial edge is ascending. For m=dn, there are n special edges and (d-1)n ascending nonspecial edges.
+**Next Need:** Exploit the all-ascending remainder via b1fffccc673c. Couple the height-<ell source DAG with the 3-regular special core; special edges supply three internal rank-supported incidences at every vertex.
 
 ## [1000328] In minimum-potential equality, every special edge lies strictly below all three endpoint potentials.
 focus · lemma · proved · certified · supported
@@ -1207,13 +1204,13 @@ Parent: [1000032]
 **Consequence:** The nearby-contact splice has a quantitative slack form: a later clean entrance must lie p-rank+O(1) cells after any earlier single contact. At p=2q-3 and high rank q+1, the required gap is q-1 for a private entrance and q-2 for a joint entrance.
 **Next Need:** Apply to the seven-slot p=2q-3 witness window. It immediately removes the rightmost entrance-only slots F,G from any four-single packing; continue shrinking the remaining A-E states, then handle all-terminal-only states with the terminal-order inequalities.
 
-## [1000414] A long terminal-only singleton family forces large total potential on its absent entrances.
+## [1000195] Terminal-only singleton ranks two positions apart sum to at least the host potential plus five.
 focus · lemma · proved · certified · supported
-Parent: [1000195]
-**Given:** ["ordered terminal-only singleton family on one maximum path"]
-**Consumer:** ["all-U near-extremal state","global source-potential charging","post-43/48 stability"]
-**Consequence:** A long terminal-only singleton family forces a large packet of distinct absent entrance vertices with total potential roughly k p/2.
-**Next Need:** Find a global reuse bound or weighted source-incidence inequality for these entrance packets. Alternatively, in near-extremal sequences compare this forced off-path potential with the high-potential rotation packet generated on the host path.
+Parent: [1000833]
+**Given:** ["three ordered terminal-only singleton ascending edges"]
+**Consumer:** ["ascending-only singleton transfer","near-half-rank terminal-only packing"]
+**Consequence:** Terminal-only ranks obey a stronger distance-two constraint: positions two apart pay p+5 rather than p+4. Thus three rank<=q terminal-only singles are impossible already at p>=2q-4.
+**Next Need:** Iterate the ordered-contact inequalities as a weighted sequence problem. Determine the minimum possible average rank of a long terminal-only singleton family; combine that rank mass with the exact rank-sensitive terminal count rather than replacing every rank by q.
 
 ## [1000878] Separated terminal-only contact intervals are squeezed from both ends.
 focus · lemma · proved · certified · supported
@@ -1272,77 +1269,6 @@ Parent: [1000904]
 **Consumer:** ["general upper-bound strategy","proof architecture"]
 **Consequence:** Identifies the earliest shortcut, removes unnecessary intermediate machinery from the 11/12 route, and isolates three genuine avenues for improving beyond 43/48.
 **Next Need:** Audit caeba14e4f6b. Then test additional ascending-label constraints against the 3/4-cycle extremal pattern of the local contact transfer process; any reduction in that cycle mean immediately improves 43/48.
-
-## [1000009] Singleton ascending-terminal contacts: terminal-only contacts lie in a stricter upper-half band.
-focus · lemma · proved · certified · supported
-Parent: [1000574]
-**Given:** ["r=3 ascending nonspecial edge","arbitrary maximum endpoint path at a terminal","terminal tail-blocker lemma"]
-**Consumer:** ["r=3 post-43/48 multiplicity strengthening","rank-gap compensation","singleton terminal-edge packing"]
-**Consequence:** Source-singletons can occur at the sharp bottom charged-rank boundary p=2q-2, but terminal-only singletons cannot; terminal-only singletons require p<=2q-3.
-**Next Need:** Exploit the sharp boundary p=2q-2: every surviving singleton is an entrance contact. In potential-charged states the existing central-joint theorem pins that entrance to g_{q-1} cap g_q.
-
-## [1000812] Only doubly terminal-single ascending edges can contribute positively to A-X.
-focus · lemma · proved · certified · supported
-Parent: [1000713]
-**Given:** ["r=3 contact-multiplicity identity","corrected singleton-contact lemma"]
-**Consumer:** ["post-43/48 unpaid-edge reduction","half-rank boundary geometry","direct bound on A-X"]
-**Consequence:** Positive A-X is supported only on terminal-single/terminal-single ascending edges. Such an edge has both terminal potentials at most 2q-2; at equality 2q-2 the sole contact at that terminal must be the entrance.
-**Next Need:** At the sharp boundary phi(t)=2q-2, combine entrance-only singleton contact with the existing universal central-joint theorem for potential-charged edges. Bound how many doubly-terminal-single edges can simultaneously occupy these reciprocal central joints.
-
-## [1000264] Flat gap-one terminal cycles have length at most p minus one.
-focus · lemma · proved · certified · supported
-Parent: [1000666]
-**Given:** ["flat gap-one terminal cycle"]
-**Consumer:** ["flat-cycle blocker-order elimination","post-43/48 gap-one shell"]
-**Consequence:** The residual flat cycle has circumference at most p-1, while every entrance rail has length p-2 and is blocked on both cycle sides within distance two.
-**Next Need:** Choose the nearest forward/backward cycle contacts on each entrance rail. The short cycle arc through e_i has length at most five and is internally rail-disjoint; compare it with the corresponding rail segment. Sum the resulting separation constraints around the cycle or classify equality patterns.
-
-## [1000599] Distance-three entrance rails meet at the intervening cycle terminal.
-focus · lemma · proved · certified · supported
-Parent: [1000220]
-**Given:** ["315871ed0c8b exact adjacent terminal blockers","lens-free equal-length maximum entrance rails","5854d853a44b unique-intersection alignment"]
-**Consumer:** ["flat-cycle elimination","five-cycle rail K5","aligned-joint propagation"]
-**Consequence:** The lens-free flat-cycle rail graph always contains deterministic distance-three chords. For c=5 the rail graph is a complete graph of unique aligned intersections.
-**Next Need:** Exploit the c=5 case first. Each rail then has unique intersections with all four other rails; the two nonadjacent intersections are the labeled terminals t_{i-1},t_{i+2}. Same-index alignment turns this into a level-colored K5 in which equal levels on incident pairs force a common joint shared by the corresponding rail clique. Combine with each rail avoiding its own two cycle terminals to rule out or rigidly classify the K5.
-
-## [1000447] A clean cross-edge of uniquely intersecting maximum rails must cross the aligned joint.
-focus · lemma · proved · certified · supported
-Parent: [1000602]
-**Given:** ["two equal-length maximum endpoint paths with one common aligned joint","a clean cross-edge meeting each rail once"]
-**Consumer:** ["flat-cycle aligned-joint triangle","rail-cycle orientation propagation","post-43/48 gap-one shell"]
-**Consequence:** A clean cross-edge cannot stay on one side of the unique aligned joint of two maximum rails; in the flat-cycle residual every forced distance-two rail chord comes with a canonical left/right terminal orientation.
-**Next Need:** Combine with 87b1d2ae8b86. An early adjacent level forces a distance-two rail intersection; this lemma orients the two prescribed cycle-terminal contacts across that new joint. Compare those terminal-contact positions with the adjacent rail-joint levels k_{i-1},k_i and with 6a28d8bc3cc4. Seek a cyclic alternation contradiction or a forced balanced lens.
-
-## [1001108] Every flat gap-one terminal cycle forces a balanced lens between entrance rails.
-focus · theorem · proved · certified · supported
-Parent: [1000106]
-**Given:** ["adjacent unique entrance-rail joints 960a5153b900","distance-three terminal intersections 8777d2ccd614","distance-two rail disjointness 14bb137811b4","four-path obstruction 188e6b091d88"]
-**Consumer:** ["flat-transfer cycle elimination","post-43/48 gap-one shell","balanced-lens multiplicity transfer"]
-**Consequence:** The entire lens-free flat-cycle branch is empty; every flat gap-one terminal cycle necessarily carries a balanced entrance-rail lens.
-**Next Need:** Return this forced balanced lens to the global gap-one accounting: use no-piercing or chosen-path multiplicity to show that a flat terminal cycle pays a positive defect, rather than surviving as an unpaid rotation cycle.
-
-## [1000479] Terminal blockers on a flat-cycle entrance rail are pushed early by their cycle distance.
-focus · lemma · proved · certified · supported
-Parent: [1000868]
-**Given:** ["lens-free terminal-only blocker on a flat gap-one cycle","maximum entrance rail"]
-**Consumer:** ["flat-cycle elimination","two-sided blocker order","gap-one residual"]
-**Consequence:** Cycle-local terminal blockers are forced into early rail positions: distance one gives index <=p-4, distance two gives <=p-5. The final three or four rail edges are free of these short-arc terminal blockers.
-**Next Need:** Combine the forward and backward blockers. Since both are forced early while R_i ends at x_i, use their order along R_i to form a short cycle-versus-rail theta. If the rail order disagrees with cyclic order, uncross directly; if it agrees, compare the two nested alternate suffixes and seek a second maximum endpoint rotation.
-
-## [1000619] Maximum ascending-terminal rank is nondecreasing across a maximum-rank terminal edge.
-focus · lemma · proved · certified · supported
-Parent: [1000091]
-**Given:** ["ascending edges","maximum ascending-terminal edge rank"]
-**Consumer:** ["rank-gap shell","gap-one transfer","flat transfer cycle reduction"]
-**Consequence:** Top-rank terminal transfer cannot decrease q. Any strict decrease of vertex rank forces a strict decrease of the rank gap; directed cycles of top-rank transfers have one common edge rank.
-
-## [1000617] A two-envelope local inequality isolates the near-top rank shell.
-focus · theorem · proved · certified · supported
-Parent: [1000574]
-**Given:** ["exact Astra terminal count","maximum-path singleton central window"]
-**Consumer:** ["post-43/48 improvement","rank-gap shell"]
-**Consequence:** Large rank gaps are automatically paid by multiplicity on a maximum endpoint path; only q/phi(v)>16/21 remains asymptotically dangerous.
-**Next Need:** Attack the near-top band, beginning with q=p-1. Use the fact that all unpaid incidences are single blockers of a maximum p-path; their two-contact Posa rotations create p-potential endpoints. Seek a second conflict graph after choosing P_v extremally among maximum v-ending paths.
 
 ## [1000484] Single-contact central windows give a two-envelope local bound in every uniformity.
 focus · theorem · proved · certified · supported
@@ -1417,13 +1343,13 @@ Parent: [1001138]
 **Consequence:** Every ascending edge gives a two-point transversal {entrance, opposite terminal} of the entire family of maximum paths at either terminal. The earlier gap-one switching recapture lemma is a special case.
 **Next Need:** For a linear terminal-retained switching family at one host center v, apply the universal transversals simultaneously at the distinct retained terminals u_i. Combine with the common host path P_v and endpoint-lens intersection to force either many paths through v or many paths through their distinct omitted entrances x_i.
 
-## [1000234] A cycle-free flat terminal-retained state forces a rank-p edge common to both host paths.
+## [1000515] A terminal-retained strict-gap edge forces a cycle, a forward return, or a flat shared last edge.
 focus · lemma · proved · certified · supported
-Parent: [1000058]
-**Given:** ["flat terminal-retained state from 7312b3378d20","genuine selected common precursor containing both non-v vertices","5854d853a44b unique-intersection alignment","41100a9882dd cycle-or-shared-last-edge topology","678901b48360 high-rank internal-edge propagation"]
-**Consumer:** ["same-terminal selected U-branch","common-precursor/maximum-path overlap packing","post-43/48 local congestion"]
-**Consequence:** Unless a cycle appears, a flat reciprocal state forces its rank-p last edge to be common to the maximum v-path and the shorter selected precursor. Apart from at most two states using the precursor last edge, cycle-free states place these common rank-p edges in the prefix bounded by 2L+1-p.
-**Next Need:** Count many cycle-free flat U-states: after deleting at most two boundary states, each gives a common rank-p internal edge of P and R, supporting at most two target terminals, with nonconsecutive P-indices and bounded R-position.
+Parent: [1000762]
+**Given:** ["a959e02faa1b repeated intersection for a terminal-retained ascending edge","41100a9882dd endpoint-on-path cycle-or-shared-last-edge topology","strict edge-rank gap q<p<=phi(u)"]
+**Consumer:** ["U-branch of bba5d57b341e","same-terminal strict-gap local congestion","reciprocal maximum-path packing"]
+**Consequence:** Every terminal-retained target edge reduces to a cycle, an additional forward intersection, a rank/superlevel progress edge, or one exact flat shared-last-edge orientation on the maximum v-path.
+**Next Need:** Bound the flat residue. For many F-states, the shared host edges are rank-p ascending edges entered from their forward joints by maximum p-edge paths ending at distinct u_i. Compare adjacent flat states with 3c0ac5d646f1 and the exact contact positions of u_i; nonadjacent states should yield a separated family of endpoint-preserving exchanges.
 
 ## [1000951] Near-minimal switcher source mass forces linear terminal retention on both host halves.
 focus · lemma · proved · certified · supported
@@ -1433,13 +1359,13 @@ Parent: [1001047]
 **Consequence:** Avoiding a fixed quadratic switcher-source gain forces not merely |U_v|=Omega(p), but Omega(p) terminal-retained contacts on each side of the host midpoint; the explicit half-packet constant is 5(5-3sqrt2)/112.
 **Next Need:** Apply 6f2198c7d34a to the linear packet on the early host half. For each early U-state, either the reciprocal maximum terminal path recaptures the omitted entrance (source-terminal lens) or it recaptures v. In the latter case, unless there is an additional common vertex inside the long u-v host tail, the two terminal paths form a >half-host balanced lens. Bound congestion of these two certificate types.
 
-## [1000285] A saturated terminal star nearly realizes the period-four singleton extremizer on the opposite source rail.
+## [1000259] A source rail couples its two terminal stars into one alternating blocker system.
 focus · lemma · proved · certified · supported
-Parent: [1000259]
-**Given:** ["38e2ce9f9772 two-terminal source-rail blocker system","eb40ddcc33ca exact period-four fixed-entrance transfer"]
-**Consumer:** ["post-43/48 flat gap-one terminal coupling","joint two-color period-four analysis"]
-**Consequence:** If a rank-q edge is maximum-rank at a low-defect terminal, that terminal star nearly saturates the exact period-four singleton transfer on the canonical source rail and leaves only O(delta) unused rail vertices.
-**Next Need:** Classify two near-extremal singleton patterns on the same rail, one through each terminal of e. Use opposite-terminal splice geometry and the alternating double-blocker matching. A positive linear incompatibility between the two period-four patterns would improve 43/48.
+Parent: [1000606]
+**Given:** ["ascending rank-q edge e with canonical source rail","downward-complete source rail theorem 1c8aac8aa4dd","rank-truncated nonspecial terminal stars at both terminals"]
+**Consumer:** ["gap-one post-43/48 terminal coupling","two-terminal single-blocker splice route","flat top-rank edge analysis"]
+**Consequence:** The certified two-terminal alternating blocker topology extends verbatim to the common canonical source rail of a non-maximal ascending edge after rank truncation at q+1.
+**Next Need:** In a low-defect flat gap-one state where e is maximum-rank at both terminals, d_u^*,d_v^* are near 11q/8, forcing about 3q/4 single defects per side in the saturated regime. Adapt 437f531f4ad8: opposite-terminal singles at distance two give a q-edge rotation, while the gap-one slack permits q+1; use a third single/blocker or terminal 0-1-1 reciprocity to gain the missing edge.
 
 ## [1000483] Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack.
 focus · lemma · proved · certified · supported
@@ -1449,13 +1375,13 @@ Parent: [1000930]
 **Consequence:** Primitive collision intervals are genuine nonspecial cycles. A primitive span c costs at least c+1 in the colliding edge rank because the first cycle edge has rank at least c but is forced at least one rank below the colliding edge.
 **Next Need:** Use inclusion-minimal intervals as primitive collision cores. Through one fixed cut they are pairwise crossing; every other collision contains at least one primitive core. Split into many primitive cores versus many outer collisions containing one core.
 
-## [1000224] Collision count is bounded by rank spread times squared cycle-packing number.
+## [1000416] Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles.
 focus · lemma · proved · certified · supported
-Parent: [1001028]
-**Given:** ["31cb29f347a8 every collision crosses a strict rank jump","e4a44a230fe7 fixed-cut collision cycle packing"]
-**Consumer:** ["strong-rainbow terminal-shadow route","narrow-rank-shell collision control","post-43/48 obstruction"]
-**Consequence:** Color-terminal collisions are quantitatively controlled by the product of rank spread and the square of the parent-edge cycle-packing number.
-**Next Need:** Bound the cycle-packing number nu for the near-extremal U_11 parent-edge set, ideally by local defect/payment data. Any nu=o(sqrt(p/D)) gives a sublinear collision count on rank-p paths; bounded nu and D=O(1) give O(1) collisions.
+Parent: [1000778]
+**Given:** ["76b25cb9c09b crossing/nested extraction","ac827276704f nested-chain cycle packing"]
+**Consumer:** ["fixed-rank-jump collision congestion","terminal-shadow correction route","post-43/48 obstruction"]
+**Consequence:** The nested branch is no longer a qualitative obstruction: it yields square-root-scale edge-disjoint cycle packing. Only ordered crossing collision families remain as the unresolved fixed-cut geometry.
+**Next Need:** Attack the remaining pairwise crossing family. For j_1<...<j_m<t<i_1<...<i_m, compare the collision-adjacent source-rail blockers from 0706a839f70f across the ordered rails; seek a two-rail repeated intersection or a packing bound.
 
 ## [1000938] Rank spread bounds nondecreasing rainbow terminal paths in a path-free hypergraph.
 focus · lemma · proved · certified · supported
@@ -1563,7 +1489,7 @@ Parent: [1000226]
 
 ## [1000718] At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair.
 focus · theorem · proved · certified · supported
-Parent: [1000219]
+Parent: [1001188]
 **Given:** ["867efd696575 universal collision rank floor","certified tight even/odd normal forms","ed2ef3140f4f and 31582b0327ff overlap-or-triangle reductions","028c2c3f7167 terminal-only singleton window"]
 **Consumer:** ["2q-4 fixed-cut collision control","rank-band decomposition","post-43/48 U_11 terminal-pair path route"]
 **Consequence:** The near-factor-two expansion has now descended another level: at a q to 2q-4 jump, every collision except one four-pattern terminal-only central residue already yields multiple source-path overlap or a local 3-cycle.
@@ -1578,7 +1504,7 @@ Parent: [1000940]
 **Next Need:** Bound reuse of the same high-potential vertex across the center-indexed sets R(v), or show high reuse itself forces additional local defect. Any fixed proportional loss improves the 43/48 leading coefficient.
 
 ## [1000160] Sublinear congestion in the original certificate-centered families alone closes 43/48.
-focus · lemma · proved · pending · unchecked · pending
+focus · lemma · proved · certified · supported
 Parent: [1001018]
 **Given:** ["e2dcd798f528 center-incidence strict-gap extraction before its factor-two quotient","7ddb7afd3083 original selected common-anchor local families"]
 **Consumer:** ["post-43/48 coefficient improvement","common-anchor local congestion route"]
@@ -1609,16 +1535,8 @@ Parent: [1001112]
 **Consequence:** For the cycle neighbor sharing the selected terminal v, a unique intersection with the selected common path is forced to be the reciprocal terminal u and is a same-index aligned joint.
 **Next Need:** Combine the aligned u-index on A and R_f with 52ecd179e799, the late s-index on R_e/R_f, and the localization of u relative to x on A. Do not count mere exclusion of u from an entrance-side replacement interval as additional no-piercing progress.
 
-## [1000174] Uphill 0-1-1 edges are repeated-intersection or aligned X-X.
-focus · lemma · proved · certified · supported
-Parent: [1000688]
-**Given:** ["5854d853a44b unique intersection of maximum endpoint paths is an aligned joint","strict two-terminal edge-rank gap","terminal-singleness at both terminals"]
-**Consumer:** ["uphill-certificate class H from 9e490cc47ca8","post-43/48 local congestion","strict-rise terminal-degree route"]
-**Consequence:** The uphill class splits into a repeated-intersection branch and one rigid X-X branch where the shared entrance is an aligned joint on both terminal maximum paths.
-**Next Need:** For a large H-family at one lower terminal v, either many edges yield repeated terminal-path intersections or many are X-X. In the X-X branch combine same-index alignment on P_v/P_u with the higher-terminal selected common-anchor certificate; in the repeated-intersection branch bound reuse/order of second common vertices.
-
 ## [1000456] An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path.
-focus · lemma · proved · pending · unchecked · pending
+focus · lemma · proved · certified · supported
 Parent: [1000688]
 **Given:** ["9e490cc47ca8 uphill certificate class","eb7f3a1e87e0 two-return common-anchor lemma"]
 **Consumer:** ["uphill class H local congestion","a54a1a6159e1 post-43/48 closure"]
@@ -1626,7 +1544,7 @@ Parent: [1000688]
 **Next Need:** Bound reuse/order of these lower-path / higher-anchor repeated intersections across many edges assigned to one lower terminal.
 
 ## [1001126] Higher-terminal certificate anchors reintersect the lower-terminal maximum path.
-focus · lemma · proved · pending · unchecked · pending
+focus · lemma · proved · certified · supported
 Parent: [1000688]
 **Given:** ["selected common-anchor certificate at the higher terminal","5854d853a44b unique-intersection rigidity for maximum endpoint paths","41100a9882dd repeated endpoint-on-path cycle-or-shared-last-edge theorem"]
 **Consumer:** ["uphill certificate class H","post-43/48 assigned local congestion"]
@@ -1690,7 +1608,7 @@ Parent: [1000663]
 **Next Need:** Control reuse of these induced-core output edges across dangerous centers, or show the double-cell triangle alternative itself injects into cycle-rank/defect. This is now a pure nested-core/global-multiplicity problem.
 
 ## [1000048] Both-prefix reciprocal terminals force a unique rail gate into the late half.
-focus · lemma · proved · certified · supported
+focus · lemma · proved · certified · dependency_hold
 Parent: [1001029]
 **Given:** ["unique aligned intersection of two clean source rails","reciprocal-terminal cross-contacts","both reciprocal terminals on prefix side"]
 **Consumer:** ["paid clean-U_11 fundamental-cycle geometry","two-rank 0-1-1 rail systems","flat-cycle gate orientation"]
@@ -1739,16 +1657,8 @@ Parent: [1000894]
 **Consequence:** The explicit four-edge fence with two doubly occupied flat cells cannot select both occupants of either cell. More generally, any selected double occupancy forces a distinct rotation output edge lying entirely in V_{>=p}.
 **Next Need:** Combine with 6bea6cbb3741: mixed unique-entrance/opposite-terminal overlap at the equality boundary already forces a selected double or adjacent occupied pair with superlevel output. Extend this to every spacing-violating four-edge contact pattern, or isolate a same-type residual.
 
-## [1001109] Long balanced lenses have pairwise intersecting auxiliary sides.
-focus · lemma · proved · certified · supported
-Parent: [1000915]
-**Given:** ["67a0061b9889 crossing-lens intersection","cd79177973e9 long nested-lens intersection","globally longest host path"]
-**Consumer:** ["paid top-output lens packing","long-lens congestion","post-43/48 top-layer route"]
-**Consequence:** All >half-host balanced endpoint lenses on one longest host have pairwise internally intersecting auxiliary sides.
-**Next Need:** Exploit pairwise intersection of auxiliary sides. Seek a bounded transversal/common-vertex theorem using the fact that each auxiliary side is a terminal segment of a maximum endpoint path and is clean relative to the same host; otherwise three pairwise intersections may splice into a path longer than L.
-
 ## [1000235] Distinct doubly occupied switching cells give edge-disjoint local triangles.
-focus · lemma · proved · pending · unchecked · pending
+focus · lemma · proved · certified · supported
 Parent: [1000675]
 **Given:** ["9a6be27912e0 double-cell triangle fact","one-contact switching family on one maximum path"]
 **Consumer:** ["lens-free D+Y payment","post-43/48 cycle-packing route","certificate-centered local congestion"]
@@ -1756,7 +1666,7 @@ Parent: [1000675]
 **Next Need:** Combine with D+Y>=p/8-eta-O(1). If D is a positive fraction of the selected payment, the center produces linearly many edge-disjoint local 3-cycles; otherwise most payment is in distinct paid single cells and must be charged through their progress outputs.
 
 ## [1000873] One-eighth certificate payment splits into cycle packing or distinct progress outputs.
-focus · lemma · proved · pending · unchecked · pending
+focus · lemma · proved · certified · supported
 Parent: [1000435]
 **Given:** ["614c7d2d181a lens-free one-eighth D+Y payment","9a6be27912e0 paid-cell output classification","33be3532211b edge-disjoint double-cell triangles"]
 **Consumer:** ["certificate-centered local congestion","post-43/48 global charging"]
@@ -1779,13 +1689,13 @@ Parent: [1000458]
 **Consequence:** At every low-defect misaligned center, at least one-eighth of the host scale is forced into a bounded-reuse terminal-retained edge or a monotone rank/special/superlevel output.
 **Next Need:** Globalize the paid branches across potential levels. U-type switchers have hyperedge multiplicity at most two across centers and obey c48823eea604. Strict-rank-rise outputs should be charged across superlevel cuts; special outputs feed the special-edge hinge; equal-rank nonascending outputs remain entirely inside V_{>=p} and should recurse into the superlevel core.
 
-## [1000782] Crossing balanced endpoint lenses at equal endpoint potential force a second auxiliary intersection.
+## [1001163] A clean intersection of crossing balanced endpoint lenses yields two new maximum host-endpoint paths.
 focus · lemma · proved · certified · supported
-Parent: [1000146]
-**Given:** ["crossing balanced endpoint lenses on one host","equal endpoint potentials at the retained labels"]
-**Consumer:** ["flat gap-one level","endpoint-lens packing","post-43/48 strengthening"]
-**Consequence:** At one potential level, crossing host intervals cannot be supported by merely unique auxiliary intersections; every crossing pair creates a second auxiliary overlap and hence another balanced lens.
-**Next Need:** Apply to flat potential-p retained endpoints. A dense crossing family yields a dense second-generation lens network; a sparse crossing family is nearly laminar. Analyze these two alternatives separately.
+Parent: [1000465]
+**Given:** ["two crossing balanced endpoint lenses on one maximum host path","clean auxiliary-side intersection"]
+**Consumer:** ["gap-one endpoint-lens packing","lexicographic maximum-path state graph"]
+**Consequence:** Crossing lenses cannot remain a static obstruction: their forced auxiliary intersection produces two alternative maximum v-paths by exact cross-splicing.
+**Next Need:** Choose P lexicographically among maximum v-paths to maximize retained switching endpoints and/or anchor overlap. Show one of the two cross-spliced maximum paths improves this score unless the switching endpoints satisfy a rigid rectangle equality pattern. This can force the large lens family to become laminar.
 
 ## [1000967] A terminal-retained switching endpoint recaptures its omitted entrance or the host endpoint on every maximum path.
 focus · lemma · proved · certified · supported
@@ -2254,13 +2164,6 @@ Parent: [1001036]
 **Consequence:** the no-safe-rotation boundary obstruction is encoded by cycles plus only one open chain when S=2, or two open chains when S=3
 **Next Obligation:** exploit a cycle or one of the few chain endpoints to force a second-level rotation/alternative entrance using minimum degree at blocker vertices
 
-## [1000784] In a saturated boundary fan, a Y-type or Z-type exceptional single blocker cannot use a vertex of the final cell.
-focus · lemma · proved · certified · supported
-Parent: [1000187]
-**Given:** ["boundary q=delta","saturated fan","unique entrance x"]
-**Consumer:** ["sharp ascending-rank conjecture","second-level Posa expansion"]
-**Consequence:** Y/Z defects are forced away from the final cell; final-cell structure splits into external-X versus internal-double-blocker cases
-
 ## [1000180] There is a linear 3-graph with a longest 3-edge path ending at x whose opposite endpoint supports two single-blocking edges with blockers in consecutive private slots.
 focus · lemma · proved · certified · supported
 Parent: [1000332]
@@ -2269,14 +2172,6 @@ Parent: [1000332]
 **Invalidates Dependency:** 1000462
 **Lesson:** two single blockers cannot be spliced by reversing the prefix without accounting for inherited path intersections
 **Refutes:** 1000332
-
-## [1001039] A deficiency-two safe sink has degree δ and one of three saturated clean-edge/single-blocker configurations.
-focus · lemma · proved · certified · supported
-Parent: [1000016]
-**Given:** ["terminal-safe sink deficiency at most two","endpoint blocker budget"]
-**Consumer:** ["loss-one two-cycle escape","sharp ascending-rank conjecture"]
-**Consequence:** the only way an other endpoint of a loss-one two-cycle can fail to escape is one of three exact saturated exceptional patterns
-**Next Obligation:** compare the deficiency-two sink structures at the two other endpoints of the canonical two-cycle
 
 ## [1000928] If a terminal-safe rotation state has no safe clean edge and no safe single blocker, then its endpoint deficiency satisfies δ−s≤3.
 focus · lemma · proved · certified · supported
@@ -2412,217 +2307,14 @@ Parent: [1000322]
 **Consequence:** Single-blocker mobility from a lexicographically maximal state can only move through internal private vertices that themselves have maximum potential L, creating recursive L-path subproblems.
 **Next Need:** For an internal private vertex p with phi(p)=L, analyze a longest p-ending path against the two sides of P and either splice to length L+1 or recurse into a strictly shorter interval.
 
-## [1000411] At least one third of a minimal counterexample lies at threshold degree.
+## [1000566] High-degree-only edges form a universal core of all nonspecial witness paths.
 focus · lemma · proved · certified · supported
-Parent: [1000228]
-**Given:** ["324fa959c567 path-forest complement"]
-**Consumer:** ["grand induction","near-regularity route","threshold-set discharging"]
-**Role:** critical-set counting consequence
-**Consequence:** Every minimal dense-core counterexample has at least (k-1)/(3k-1) of its vertices at exact threshold degree k.
-**Next Need:** Analyze near-equality in the cross-pair count. If D is near the lower bound, almost every D-edge is DXX and almost every X-vertex has internal degree two; this should force a matching-over-path normal form.
-
-## [1000529] Conditional threshold-set deletion endgame under simultaneous Turan excess.
-focus · lemma · proved · certified · supported
-Parent: [1000228]
-**Given:** ["threshold-core conclusions 1e01357bf9c3","simultaneous Turan excess"]
-**Consumer:** ["grand Turan induction"]
-**Role:** conditional Turan endgame
-**Consequence:** If threshold-core structure can be obtained without losing Turan excess, deleting D closes unless D-stars are matching-dominated.
-**Fence:** Current dense-core edge-minimality and Turan vertex-minimality are different. A bridge preserving enough excess is still required.
-**Next Need:** Prove an excess-preserving critical-core reduction, or develop equality-layer induction for H-f when an off-witness edge is removed from a minimal Turan counterexample.
-
-## [1000183] Rainbow connector paths through contracted forest triples double their length.
-focus · lemma · proved · certified · supported
-Parent: [1000082]
-**Given:** ["13500728c22f zero-slack model"]
-**Consumer:** ["grand induction","zero-slack critical-core route"]
-**Role:** zero-slack contraction lift
-**Consequence:** A strongly proper rainbow path through s contracted forest triples lifts to a 2s-1-edge linear hypergraph path.
-**Next Need:** Prove the contracted connector multigraph has a rainbow/proper path through sufficiently many of its c=2k/3 triple-nodes. A spanning contracted path would yield length 4k/3-1.
-
-## [1000299] Zero-slack critical cores are at absolute near-spanning order.
-focus · lemma · proved · certified · supported
-Parent: [1000082]
-**Given:** ["zero-slack critical core"]
-**Consumer:** ["grand induction","near-spanning path endgame"]
-**Consequence:** The zero-slack branch reduces to absolute critical orders n=2ell+1,2ell+2,2ell+3, recovering the philosophy behind the solved order-11/order-12 cases.
-**Next Need:** Develop spanning/all-but-one/all-but-two path constructions in the one-factorized graph plus disjoint-triple model, using the residue-specific number of omitted vertices.
-
-## [1000346] Every pair of zero-slack triples has many same-color double jumps.
-focus · lemma · proved · certified · supported
-Parent: [1000082]
-**Given:** ["zero-slack one-factorized graph plus disjoint triples"]
-**Consumer:** ["grand induction","zero-slack critical-core route"]
-**Consequence:** The contracted triple system is almost complete in every color when colors are allowed to appear twice consecutively; the rainbow-only contraction wastes a major source of path length.
-**Next Need:** Build a long triple chain using distinct double-jump colors while controlling the two shadow endpoints of each jump so they do not hit nonconsecutive forest triples.
-
-## [1000367] Rigid zero-slack half-neighborhoods always contain an uncolored fixed-target 2-opt cut.
-focus · lemma · proved · certified · supported
-Parent: [1000077]
-**Given:** ["fb4fc1ee4179 rigid half-neighborhood","4596218dad6 contracted minimum degree"]
-**Consumer:** ["decf9b49b8d7 fixed-target entrance switch","zero-slack all-special route"]
-**Consequence:** The rigid branch has no remaining uncolored obstruction at all: some cut always supports both target and return adjacencies for the fixed-target 2-opt move. Only connector colors and the O(1) unsafe ports can prevent the entrance switch.
-**Next Need:** At an index i in A∩C, count the 3 target connectors y-T_i and all return connectors T_{i+1}-T_1. Show one pair satisfies the freed-color condition and avoids the at most one unsafe port at each of T_i,T_{i+1},T_1. If every i in A∩C fails, charge the failure to retained witness colors/unsafe ports and sum over the intersection.
-
-## [1000073] Odd-k rigid zero-slack no-switch state must contain an A-to-B connector.
-focus · lemma · proved · certified · supported
-Parent: [1000471]
-**Given:** ["6894769a092f odd-k cut dichotomy","fixed alternating witness"]
-**Consumer:** ["zero-slack all-special route"]
-**Consequence:** For odd k, simultaneous failure of the uncolored entrance switch cannot isolate the common terminal half. The perfect color matchings must contain a transverse connector from an A-triple to a B-triple.
-**Next Need:** Use an A-B connector to rotate the Hamilton ordering of forest triples so that one of its endpoints becomes the penultimate-neighborhood bridge in 767380617163 or decf9b49b8d7. Since y,z are complete to every A-triple, only color/port compatibility remains.
-
-## [1000208] Rigid zero-slack cross-half edges match the entrance half-deficit.
-focus · lemma · proved · certified · supported
-Parent: [1000179]
-**Given:** ["rigid zero-slack common-half structure"]
-**Consumer:** ["odd-k zero-slack entrance-switch route"]
-**Consequence:** Cross-half return resources occur with multiplicity at least k-t, exactly matching the number of x-neighbors in B_X.
-**Next Need:** Combine this multiplicity with the c/2+1 unused-color target connectors at y or z. If t is not extremely close to k, averaging should force a compatible cut; the t=k case is already impossible.
-
-## [1000528] A two-chord block reversal switches the entrance of a zero-slack witness.
-focus · lemma · proved · certified · supported
-Parent: [1000824]
-**Given:** ["b93769ee6fab alternating maximum witness"]
-**Consumer:** ["zero-slack all-special route","grand induction"]
-**Role:** zero-slack entrance switch
-**Consequence:** A compatible pair of contracted chords changes the entrance of the terminal forest triple while preserving maximum length.
-**Next Need:** Show such a compatible pair exists. Uncolored half-neighborhoods force the two required contracted adjacencies; only color reuse and local-port collisions can block them, so classify/charge those blockers.
-
-## [1000766] Unused colors at a reachable endpoint avoid every outgoing forest port.
-focus · lemma · proved · certified · supported
-Parent: [1000824]
-**Given:** ["zero-slack nonspecial alternating witness","unused perfect-matching colors"]
-**Consumer:** ["fixed-target rotation closure","zero-slack all-special route"]
-**Consequence:** Universal-core preservation turns safe omitted-color rotations into a directional port-avoidance law: omitted colors cannot send a reachable opposite endpoint to an outgoing port.
-**Next Need:** Iterate while holding one color omitted. Use the other c/2 omitted colors to generate many reachable opposite endpoints, then show a fixed perfect matching cannot avoid outgoing ports for all reachable orientations.
-
-## [1000962] Color-run accounting is the natural zero-slack near-spanning target.
-focus · lemma · proved · certified · supported
-Parent: [1000824]
-**Given:** ["zero-slack DXX perfect matchings plus disjoint forest triples"]
-**Consumer:** ["grand induction","zero-slack near-spanning construction"]
-**Role:** zero-slack resource accounting
-**Consequence:** Identifies the correct construction target: use all k colors as runs of length 1 or 2, with forest triples plus doubled color-runs supplying exactly ell-k extra edges.
-**Next Need:** Build one color-run chain using all or all-but-O(1) colors. Use 4abe5aca5308 for abundant length-two color runs and decf9b49b8d7/767380617163 as exchange moves; avoid the unnecessarily strong rainbow-Hamilton requirement.
-
-## [1000996] Fixed-target two-connector exchange switches the entrance in zero slack.
-focus · lemma · proved · certified · supported
-Parent: [1000824]
-**Given:** ["b93769ee6fab exact alternating witness","zero-slack perfect colored matchings"]
-**Consumer:** ["grand dense-core induction","zero-slack all-special route"]
-**Role:** zero-slack fixed-target exchange lemma
-**Consequence:** Converts specialness of a forest triple into a concrete forbidden 2-opt condition on two colored connectors for every cut and alternate target port.
-**Next Need:** Count the forced failures. For each cut i, target-port connectors and T1-to-T_{i+1} connectors must either use retained colors or land on one of the few unsafe ports. Sum these obstructions over i and the two alternate ports; perfect matching/color saturation should exceed the available unsafe incidences.
-
-## [1000590] Unused terminal colors are repelled from both ends of a zero-slack witness.
-focus · lemma · proved · certified · supported
-Parent: [1001103]
-**Given:** ["f3a692e51efb penultimate repulsion","alternating witness"]
-**Consumer:** ["zero-slack endpoint expansion"]
-**Role:** zero-slack two-ended terminal repulsion
-**Consequence:** Each alternate terminal has linearly many spare-color contacts forced into the interior of every nonspecial witness.
-**Next Need:** Pair interior spare contacts from y,z with the half-neighborhood/two-switch geometry; endpoint rotations that move an interior contact to an extreme position would immediately create a second entrance.
-
-## [1000251] One-slack critical cores have at most one forest joint.
-focus · lemma · proved · certified · supported
-Parent: [1000094]
-**Given:** ["1663a127e081 one-slack color saturation","6aa954fe903a joint color-degree floor"]
-**Consumer:** ["grand induction","near-saturated critical core"]
-**Role:** one-slack collapse
-**Consequence:** For k>=5, one unit of private-vertex slack leaves at most one forest joint: the universal forest is a matching plus possibly one two-edge component.
-**Next Need:** Treat j=0 and j=1 as finite template families over an arbitrary 1-factorized color graph; then generalize the joint-incidence count to slack sigma, aiming for j=O(sigma).
-
-## [1000254] Zero slack forces the universal path forest to be a matching.
-focus · lemma · proved · certified · supported
-Parent: [1000094]
-**Given:** ["|D|=k","zero slack m+2c=2k"]
-**Consumer:** ["grand induction","zero-slack critical-core route"]
-**Consequence:** Eliminates all zero-slack path-forest components of length >1; the only residual zero-slack geometry is a matching of 2k/3 triples overlaid by k perfect colored matchings.
-**Next Need:** Analyze the residual matching-plus-one-factor system. Any linear path alternates colored connector edges with at most one forest triple between connector steps; seek a rainbow connector path of length about ell/2 or a direct component-level path argument.
-
-## [1000229] Only constant effective slack can obstruct Hamiltonicity of the critical color graph.
-focus · lemma · proved · certified · supported
-Parent: [1000302]
-**Given:** ["411891702b97/e46ac48fe118 slack-joint stability","6aa954fe903a color-graph degree floor"]
-**Consumer:** ["grand induction","critical-core rainbow/linked-forest route"]
-**Role:** effective-defect stability split
-**Consequence:** Outside the constant effective-defect layer sigma-j<=3, the DXX graph is already Hamiltonian as an ordinary graph.
-**Next Need:** Upgrade ordinary Hamilton paths in the large-effective-slack regime to linked rainbow hypergraph paths using the forest rails; separately classify sigma-j=0,1,2,3 as finite-defect perturbations.
-
-## [1000988] Critical-core slack fixes forest-joint count modulo three.
-focus · lemma · proved · certified · supported
-Parent: [1000302]
-**Given:** ["critical-core slack stability"]
-**Consumer:** ["grand induction","finite-defect template classification"]
-**Consequence:** Each fixed slack layer reduces to finitely many matching-plus-local-defect forest shapes, with exact congruence restrictions.
-**Next Need:** Analyze the effective-defect layers sigma-j=0,1,2,3 together with these congruence templates and the dense proper color graph.
-
-## [1000354] Zero-slack component partitions have rainbow cut expansion.
-focus · lemma · proved · certified · supported
-Parent: [1000094]
-**Given:** ["zero-slack color-complete path-forest lift"]
-**Consumer:** ["grand induction","component stitching"]
-**Consequence:** The component connector system satisfies the exact color-cut expansion expected of a rainbow-connected object; every t-part partition exposes at least t-1 crossing colors.
-**Next Need:** Convert this cut expansion into a nonbranching rainbow component chain or prove a tailored rainbow-tree-to-linear-path stitching lemma. Do not infer such a path merely from the cut count.
-
-## [1000152] Zero-slack two-component critical cores always have a free-end cross connector.
-focus · lemma · proved · certified · supported
-Parent: [1000786]
-**Given:** ["1663a127e081 zero slack","c15cf7354428 color completeness","ec447521d952 bridge lemma"]
-**Consumer:** ["grand induction","good-residue critical-core route"]
-**Consequence:** Closes the residual c=2 zero-slack exception left in aec1f9026ce4 for ell≡0,2 mod3.
-**Next Need:** Handle zero-slack c>=3 by component-level connector counting/stitching; some physical cross connector always exists by the same global argument, but one bridge may not yet reach ell.
-
-## [1000314] Zero-slack two-component critical cores are impossible in the good residues.
-focus · lemma · proved · certified · supported
-Parent: [1000786]
-**Given:** ["zero-slack critical core","two path-forest components"]
-**Consumer:** ["grand induction","good-residue critical-core route"]
-**Consequence:** Closes the residual c=2 zero-slack good-residue subcase left open in aec1f9026ce4.
-**Next Need:** Analyze zero-slack c>=3; physical cross connectors are automatic for every component of length <k-1.
-
-## [1001007] One unit of critical-core slack permits at most one forest joint.
-focus · lemma · proved · certified · supported
-Parent: [1000094]
-**Given:** ["|D|=k","m+2c=2k-1"]
-**Consumer:** ["grand induction","small-slack critical-core route"]
-**Consequence:** One-slack critical cores have only two forest shapes: all singleton components, or exactly one length-two component.
-**Next Need:** Analyze the resulting matching-plus-one-factor geometry alongside the zero-slack residual; seek a common path construction using the k colored matchings.
-
-## [1000482] The extremal critical-core color graph has minimum degree k minus two.
-focus · lemma · proved · certified · supported
-Parent: [1000862]
-**Given:** ["|D|=k","H-D path forest","degree classification on X"]
-**Consumer:** ["grand induction","linked rainbow-forest route"]
-**Consequence:** The one-D/two-X lift is a properly colored graph of minimum degree at least k-2, with exact defects localized to forest joints and DDX edges.
-**Next Need:** Combine a long rainbow path in G with the universal forest F, using forest edges as color-free rails between rainbow segments; exploit that all color defects occur only at joints.
-
-## [1000881] Every threshold color supplies many private-to-private forest connectors.
-focus · lemma · proved · certified · supported
-Parent: [1000862]
-**Given:** ["c15cf7354428 color-complete path-forest lift"]
-**Consumer:** ["grand induction","rainbow connector stitching"]
-**Role:** path-forest stitching lemma
-**Consequence:** Every threshold color has at least ceil(3c/2) private-private connector edges, where c is the number of path-forest components.
-**Next Need:** Use the k color matchings of private-private connectors to join/reorder forest rails with distinct colors. For c=1 each color already has at least two private-private chords; seek two chords of distinct colors with crossing/separated endpoints that create a longer linear path.
-
-## [1001025] Private-vertex slack bounds the number of forest joints.
-focus · lemma · proved · certified · supported
-Parent: [1000862]
-**Given:** ["|D|=k color-complete critical core"]
-**Consumer:** ["grand induction","small-slack critical-core route"]
-**Consequence:** Quantifies the matching collapse: private slack sigma pays for forest joints, with j<=sigma throughout sigma<=k-2.
-**Next Need:** Use the finite-width joint set to compress each small-slack core to a matching-plus-O(sigma)-defect colored system, then prove a path-extension theorem depending only on sigma.
-
-## [1001060] Free-end connector is either an inter-component bridge or a cycle-closing chord.
-focus · lemma · proved · certified · supported
-Parent: [1000862]
-**Given:** ["1000862","1000616"]
-**Consumer:** ["grand induction","color-complete path-forest lift","cycle-ear route"]
-**Role:** bridge-versus-cycle connector lemma
-**Consequence:** Every color at a physical forest endpoint either bridges to another component and yields a quantitative long path, or closes a linear cycle in its own component.
-**Next Need:** Count how many of the k distinct connector mates can remain inside the same component while all inter-component mates obey a+ceil(b/2)<=ell-2. For the internal mates, combine the resulting many endpoint-rooted cycles with cycle-ear surplus.
+Parent: [1000133]
+**Given:** ["1e01357bf9c3 threshold-degree cover"]
+**Consumer:** ["grand induction","rotation-state compression","critical-set counting"]
+**Role:** minimal-counterexample common-core lemma
+**Consequence:** All high-degree-only edges form a rigid core common to every bad witness path; all path mobility occurs through edges incident with threshold-degree vertices.
+**Next Need:** Bound the size/shape of the common core or show that enough rotations force many distinct D-supported path edges, giving a density contradiction on D.
 
 ## [1000092] The sharp Turan equality layer forces residue-dependent ascending mass.
 focus · lemma · proved · certified · supported
@@ -2715,14 +2407,6 @@ Parent: [1000236]
 **Consequence:** Low-potential negative charge is much more expansion-expensive than top-layer negative charge.
 **Next Need:** Partition negative charge by potential. Either a positive fraction lies below a chosen cutoff, forcing a large upper superlevel via this lemma, or most negative charge is top-heavy, forcing strong charge-potential covariance and allowing the weighted potential-cut inequalities to attack the top-heavy alternative.
 
-## [1000181] Failure of kappa-plus-four amplification forces many full-rank single blockers at one top vertex.
-focus · lemma · proved · certified · supported
-Parent: [1000213]
-**Given:** ["2fdc43803de8 high top graph degree","db94e08d513d exact double-blocker slack","no kappa+4 amplification"]
-**Consumer:** ["charge amplification","charged spacing","Posa rotation"]
-**Consequence:** The residual trapped state forces a maximum top path carrying at least 2kappa+1 full-rank equal-potential single blockers of distinct colors, while at most three competitors can double-block.
-**Next Need:** Classify the single-blocker contact vertices. If enough contacts are private/free, certified Posa rotations create many top endpoint states; if most are joints, their distinct colors occupy consecutive-edge joints and should force a short alternating blocker chain. Either outcome is a concrete route to kappa+4 amplification or P_ell.
-
 ## [1000725] In the stalled two-level state every longest path is top-potential except for a constant defect.
 focus · theorem · proved · certified · supported
 Parent: [1000193]
@@ -2730,6 +2414,13 @@ Parent: [1000193]
 **Consumer:** ["top-heavy matching elimination","rotation expansion"]
 **Consequence:** Every globally longest path is almost entirely contained in the top layer T; the low layer contributes at most 7,11,15,19 vertices according to top charge kappa,...,kappa+3.
 **Next Need:** Apply terminal-tail blockers from the many S-sourced rank-L edges to such an almost-all-T path. Since only O(1) source vertices from S can lie on the path, almost every incident ascending edge at its top terminal must place its opposite T-terminal on the path, creating a near-saturated matching/chord system.
+
+## [1001187] Trapped-negative charge forces a high-degree top star and, without kappa+4 amplification, many full-rank single blockers.
+focus · theorem · proved · pending · unchecked · pending
+Parent: [1000534]
+**Given:** ["trapped-negative two-layer charge state","incident capacity","color-class matching lower bounds","terminal-degree/double-blocker inequality"]
+**Consumer:** ["charge amplification","charged spacing","Posa rotation"]
+**Consequence:** The trapped-negative state forces at least 2kappa+5 negative sources and a top vertex of degree at least 2kappa+5; under no kappa+4 amplification, a maximum path at that vertex has at least 2kappa+1 full-rank single blockers.
 
 ## [1000803] Quadratic potential flow becomes an exact charge-potential covariance lower bound.
 focus · lemma · proved · certified · supported
@@ -2916,7 +2607,7 @@ Parent: [1000286]
 
 ## [1000263] Terminal-tail blocking pushes the flat terminal lens into the late high-rail zone.
 focus · lemma · proved · certified · supported
-Parent: [1000011]
+Parent: [1001181]
 **Given:** ["minimal balanced terminal-terminal lens state","certified terminal tail-blocker lemma"]
 **Consumer:** ["flat one-low odd-central uncrossing"]
 **Consequence:** All reciprocal terminal contacts relevant to the minimal lens sit in the late zone of the high source rails; the low terminal u_0 is one step more restricted.
@@ -2931,7 +2622,7 @@ Parent: [1000992]
 **Next Need:** Exploit equality t=2 versus t>=3. If t=2, compare the two rail-side 2-edge paths with the star bridge to get a local three-path theta of length two; source/terminal labels should force a repeated pair. If t>=3, one of the remaining simple rails should meet the long lens side internally, violating no-piercing/minimality.
 
 ## [1000831] A double triple-gate C4 braid forces a cross-gate blocker.
-focus · lemma · proved · certified · supported
+focus · lemma · proved · certified · dependency_hold
 Parent: [1000811]
 **Given:** ["double triple-gate C4 braid"]
 **Need:** Identify the forced cross-gate blocker. The other diagonal already has two distinguished terminal common vertices from the C4. If neither terminal lies in the required cross-gate quadrant, a third common vertex is forced; otherwise use terminal-tail localization to compare that terminal position with the gate indices.
@@ -2947,13 +2638,13 @@ Parent: [1000286]
 **Next Need:** Combine the two mandatory cross-contacts with unique-intersection rigidity. A source hit forces at least two common vertices of the two source paths; if both source paths intersect uniquely, both cross-contacts must be through the opposite terminals.
 **Strengthens:** 1000286
 
-## [1000493] No third path can cleanly pierce any clean lens between maximum endpoint paths.
-focus · theorem · proved · certified · supported
-Parent: [1000412]
-**Given:** ["clean lens between two maximum endpoint paths","clean third crossing segment"]
-**Consumer:** ["gap-one switching geometry","0-1-1 lens networks","flat-cycle elimination"]
-**Consequence:** Balancedness is unnecessary for the piercing obstruction. Any clean internal lens is impermeable to a third clean crossing path.
-**Next Need:** Apply to an overlap-maximal gap-one pair (entrance rail Q of length q-1 and maximum terminal path P of length q+1). There are at most two internal lenses by eeada684edf1; switching edges cannot pierce either, so their omitted Q-vertices and retained P/Q vertices must attach through lens boundaries or common/shared segments. Bound the resulting switching matching.
+## [1000805] A third cross-edge cannot pierce a balanced lens between maximum rails.
+focus · lemma · proved · certified · supported
+Parent: [1000261]
+**Given:** ["balanced clean internal lens between maximum source rails","one cross-edge through the two lens interiors"]
+**Consumer:** ["0-1-1 two-rank block","Astra 11/12 source-rail theta route"]
+**Consequence:** The balanced-lens residue cannot be pierced by a foreign offending edge. Since every foreign 0-1-1 edge must meet both source rails, each such edge must place at least one of its two rail contacts outside every elementary internal lens, unless it creates an additional common vertex that refines the lens.
+**Next Need:** Take an elementary lens between the overlap pair from f8803379f9a3. The other two offending edges meet both rails. Use the no-cross-edge lemma to force their four contacts into the exterior tails or onto common lens boundaries. With two edges and only two exterior sides, derive either a new common distinguished vertex, an endpoint lens, or an impossible contact ordering.
 
 ## [1000744] Source-hit imbalance exactly measures excess distinguished rail overlap.
 focus · lemma · proved · certified · supported
@@ -2964,7 +2655,7 @@ Parent: [1000398]
 **Next Need:** Analyze the extremal balanced state s_j=1 for all j as a four-vertex directed source-hit graph. Two-cycles immediately give double-source rail overlaps; in their absence the source-hit arcs are forced into longer directed-cycle structure, which should combine with aligned-joint levels and the two-lens dichotomy.
 
 ## [1000957] Every four-edge two-rank source block has two lens cells and reciprocal simple pairs.
-focus · lemma · proved · certified · supported
+focus · lemma · proved · certified · dependency_hold
 Parent: [1000398]
 **Given:** ["pairwise source-rail intersection","two-unit distinguished overlap","universal aligned-joint rigidity","reciprocal-terminal rule for unique intersections"]
 **Consumer:** ["0-1-1 consecutive-rank packing bound","one-low odd-central q,(q+1)^3 residue","Astra 11/12 route"]

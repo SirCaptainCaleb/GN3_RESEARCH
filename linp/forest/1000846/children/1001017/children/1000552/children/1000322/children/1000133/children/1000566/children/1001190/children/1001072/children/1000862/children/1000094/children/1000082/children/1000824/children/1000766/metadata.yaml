@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 5
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "54db21efa211f04a6a03fb6cb04cf260ab741642bab522f93239b73769bc660d"
+created_at: "2026-09-24T02:46:28.785744+00:00"
+id: "1000766"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "268d0a6f-82c1-4abd-a953-67c2e0e6ce03"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:43:27.172722+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "268d0a6f-82c1-4abd-a953-67c2e0e6ce03"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:43:27.172722+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "zero-slack directional rotation constraint"
+  uses:
+    - "1000101"
+    - "1000824"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000824"
+position: 0
+research_interface:
+  consequence: "Universal-core preservation turns safe omitted-color rotations into a directional port-avoidance law: omitted colors cannot send a reachable opposite endpoint to an outgoing port."
+  consumer:
+    - "fixed-target rotation closure"
+    - "zero-slack all-special route"
+  given:
+    - "zero-slack nonspecial alternating witness"
+    - "unused perfect-matching colors"
+  next_need: "Iterate while holding one color omitted. Use the other c/2 omitted colors to generate many reachable opposite endpoints, then show a fixed perfect matching cannot avoid outgoing ports for all reachable orientations."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Unused colors at a reachable endpoint avoid every outgoing forest port."
+statement_sha256: "f6ce6690647137a95e0c27deadedae45ae5117ffc3c61522f6b4f946ba44beba"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Unused colors at a reachable endpoint avoid every outgoing forest port"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:16:36.540366+00:00"
+version: 6

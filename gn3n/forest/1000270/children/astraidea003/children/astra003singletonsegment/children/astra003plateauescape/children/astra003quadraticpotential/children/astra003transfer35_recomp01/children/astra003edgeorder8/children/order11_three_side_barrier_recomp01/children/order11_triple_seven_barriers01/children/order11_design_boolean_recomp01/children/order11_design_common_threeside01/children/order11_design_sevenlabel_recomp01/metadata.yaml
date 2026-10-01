@@ -26,6 +26,7 @@ metadata:
     recorded_at: "2026-10-01T02:18:22.803054+00:00"
     worker_id: 901
   audit_trigger_kind: "explicit"
+  audit_work_kind: "dependency_hold"
   hygiene_recomposition: true
   last_audit_observation:
     claim_id: 906
@@ -52,10 +53,10 @@ simplified_statement: "The order-11 design branch has quantitative adjacent-cent
 statement_sha256: "0752b4d10561db5df6f9c75dca9c4fc50f46129734fd4b80407e91369d8623ea"
 substantive_worker_ids:
   - 745
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Order-eleven design multiplicity, swaps, and seven-label normal form"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T05:29:40.003289+00:00"
+updated_at: "2026-10-01T18:43:23.594674+00:00"
 version: 8

@@ -884,26 +884,6 @@
             
             For k>6 the argument only produces a zero-sum block of some size between 3 and floor(k/2); it no longer forces the complement to be another triple. In particular the mechanism does not by itself propagate to higher projective dimensions.
 
-          • [1000241] The new projective proof explains exactly the d=3 and d=4 exceptional dimensions
-              STATEMENT
-              For the full projective additive system H_d on F_2^d\{0}, any spanning path has joint XOR zero. For d=3 this is already impossible because a spanning P_3 would have two distinct joints. For d=4 rank-nullity forces the six joints to split into two complementary lines, and the 3-by-3 residue grid gives the endpoint contradiction. Beginning at d=5 this proof mechanism cannot yield a universal obstruction: PG(4,2) has a spanning P_15, and in the displayed witness its 14-joint set even contains a zero-sum triple {2,31,29}; the remaining 11 joints also sum to zero, showing precisely why the two-line collapse disappears.
-              BODY / PROOF
-              Let H_d be the additive triple system on F_2^d\{0}. Its total vector sum is zero for d>=2, so the joint-residue normal form gives XOR(J)=0 for every spanning path.
-              
-              For d=3, H_3 has 7 vertices and a spanning path would have ell=3 and exactly two joints. Two distinct nonzero vectors cannot sum to zero, so H_3 is P_3-free.
-              
-              For d=4, there are six joints. The rank-nullity lemma forces a zero-sum triple and a zero-sum complementary triple. These are the nonzero points of complementary 2-spaces U and W. Therefore the allowable joint graph is K_{3,3}: pairs within one line are forbidden because their sum is the third joint on that line, while every cross pair has sum outside J. Any joint Hamilton path must alternate between the two lines. Its five internal colors occupy a staircase in the 3-by-3 grid U^*+W^*, leaving four residual grid points. The endpoint-pairing condition of the joint-residue normal form fails, exactly as in d593f8024a92.
-              
-              For d=5 the conclusion is false. The project object bfc5f55c4e7d exhibits a spanning P_15 with successive endpoint/joint labels
-                1,2,4,8,16,21,31,11,17,13,22,15,29,14,9,23.
-              Thus the 14 joints are
-                2,4,8,16,21,31,11,17,13,22,15,29,14,9.
-              They still have XOR zero, and indeed already contain the zero-sum triple
-                {2,31,29},
-              since 2+31=29 under XOR. Its 11-point complement therefore also has XOR zero. The line is harmless because its three vertices occur far apart in the joint order rather than consecutively. The rank-nullity step has produced a small circuit but no complementary line and hence no bipartite/grid rigidity.
-              
-              Thus the genuinely general part of the new proof is the joint-XOR/joint-residue machinery. The non-Hamiltonicity conclusion is a small-dimension collapse: d=3 fails at the XOR step, d=4 fails after the forced 3+3 circuit split, while d>=5 requires additional structure and in the full projective family such a structure cannot exist universally because spanning paths do exist.
-
       • [1001143] Near-Steiner classification for induced Boolean Schur triple systems
           STATEMENT
           Let A be a finite subset of an elementary abelian 2-group G with 0 not in A and n=|A| odd. Let H(A) have edges {x,y,x+y} contained in A, and let M be the number of unordered pairs {x,y} in A with x+y not in A. If M<n, then for some subgroup W<=G either A=W\{0}, or A=W\{0,a,b} for two distinct nonzero a,b in W. Equivalently, among odd-order induced Boolean Schur systems, being within fewer than n missing pairs of a Steiner triple system forces a projective system or a two-point deletion of one.
@@ -2683,30 +2663,6 @@
                         BODY / PROOF
                         Let i and ell be the first and last edge indices of Q containing w, and let k and j be the first and last edge indices of R containing w. Because Q and R have only w in common, the splice e_1,...,e_i,f_j,...,f_b is a linear path ending at y. Its length is i+b-j+1, so maximality at y gives j>=i+1. Conversely f_1,...,f_k,e_ell,...,e_a is a linear path ending at x, of length k+a-ell+1, so maximality at x gives ell>=k+1. In a linear path a vertex belongs either to one path edge or to two consecutive path edges. If w belonged to only one edge of Q, then ell=i, hence k<=i-1; but j<=k+1<=i, contradicting j>=i+1. Thus w is a Q-joint and ell=i+1. Similarly, if w belonged to only one edge of R, then j=k; the two inequalities would give k>=i+1 and k<=i, impossible. Hence w is also an R-joint and j=k+1. Substitution gives k>=i and i>=k, so k=i. Therefore w=e_i intersect e_{i+1}=f_i intersect f_{i+1}. This also shows why the previously stated endpoint exception was spurious: when w is a last vertex, the opposite prefix can still be followed by the last edge of that endpoint path, gaining one edge and contradicting maximality.
 
-                      • [1000386] A unique source-rail intersection forces reciprocal terminal contacts
-                          STATEMENT
-                          Let e_i={x_i,v,u_i} and e_j={x_j,v,u_j} be two source-clean 0-1-1 edges through the same assigned terminal v, and let Q_i,Q_j be their maximum source paths ending at x_i,x_j. Assume each foreign edge meets the other source rail, as in the two-rank source-rail block. If V(Q_i) intersect V(Q_j) is a singleton, then Q_i meets e_j at u_j and Q_j meets e_i at u_i. Equivalently, if either cross-contact is a source hit, the two source rails have at least two common vertices.
-                          BODY / PROOF
-                          Suppose Q_i meets e_j at x_j. Since Q_j ends at x_j, the vertex x_j lies on both source rails. If it were their unique common vertex, the universal aligned-joint lemma would force x_j to be a path joint of Q_j. But x_j is the designated last vertex of Q_j and, in the clean source path witnessing the ascending edge e_j, occurs only on the last path edge rather than as an internal joint. Thus x_j cannot be the unique rail intersection. Therefore a uniquely intersecting pair cannot have the contact Q_i with e_j at x_j, so its mandatory contact is u_j. The same argument with i and j reversed forces the other contact to be u_i. Hence unique rail intersections are precisely reciprocal-terminal cross-contact states.
-
-                        • [1000273] Three simple low-high rail pairs force a terminal-terminal lens among the high rails
-                            STATEMENT
-                            In a one-low four-edge source-clean 0-1-1 block, let e_0={x_0,v,u_0} have the lower rank and e_1,e_2,e_3 the three higher-rank edges, with source rails Q_0,Q_1,Q_2,Q_3. Suppose each low-high pair Q_0,Q_i, i=1,2,3, has exactly one common vertex. Then u_0 belongs to all three high rails. Consequently the three high rails cannot be pairwise uniquely intersecting: at least one high-high pair has at least two common vertices. More precisely, if Q_i,Q_k and Q_j,Q_k are both unique for distinct i,j,k in {1,2,3}, then Q_i and Q_j share both u_0 and u_k.
-                            BODY / PROOF
-                            By reciprocal-terminal rigidity for each unique low-high pair, Q_i meets the low edge e_0 at its opposite terminal u_0. Hence u_0 lies on Q_1,Q_2,Q_3. Now fix distinct i,j,k. If Q_i and Q_k intersect uniquely, reciprocal-terminal rigidity applied to the high-high pair forces Q_i to meet e_k at u_k. Likewise, if Q_j and Q_k intersect uniquely, Q_j also meets e_k at u_k. Thus Q_i and Q_j share u_k as well as u_0, so their intersection has size at least two. Taking any two sides of a hypothetical all-simple high triangle gives a contradiction to the third side being simple. Therefore at least one high-high pair is a multiple-overlap pair; when exactly the two pairs through Q_k are simple, the opposite high pair contains the explicit terminal pair {u_0,u_k}.
-
-                          • [1000011] The minimal one-low high-rail residue is a balanced terminal-terminal lens
-                              STATEMENT
-                              Retain the one-low source-rail state of 3ada869c2396 and suppose Q_1,Q_3 and Q_2,Q_3 are uniquely intersecting, while V(Q_1) intersect V(Q_2)={u_0,u_3}. Then u_0 and u_3 are internal vertices of both q-edge high source rails Q_1,Q_2, and the two Q_1/Q_2 segments between u_0 and u_3 form a clean balanced lens. In addition u_0 is a joint at the same path index on Q_1,Q_2,Q_3.
-                              BODY / PROOF
-                              The two simple pairs through Q_3 are reciprocal-terminal by 5570b54b0046. Hence Q_1 and Q_2 both contain u_0 from their low-edge contacts and both contain u_3 from their contacts with e_3. By hypothesis these are their only common vertices. Since the four offending edges share only v, linearity makes u_0,u_3 distinct from the high sources x_1,x_2, so neither lens endpoint is the endpoint of Q_1 or Q_2. Thus the two rail segments between consecutive common vertices u_0,u_3 form a clean internal lens. The clean-lens balance lemma 390e818020e1 gives equal edge lengths on the two sides. Finally Q_1 intersect Q_3={u_0} and Q_2 intersect Q_3={u_0}; universal aligned-joint rigidity 5854d853a44b puts u_0 at the same joint index on each of Q_1,Q_2,Q_3.
-
-                            • [1000263] Terminal-tail blocking pushes the flat terminal lens into the late high-rail zone
-                                STATEMENT
-                                In the minimal one-low high-rail lens state of 039d9d9cd8fd, on each high source rail Q_i of length q the low terminal u_0 lies in one of the final q-2 path edges, and every foreign high terminal u_j lying on Q_i lies in one of the final q-1 path edges. In particular the balanced terminal-terminal lens endpoints and the exterior high-terminal chord contacts are all excluded from the extreme early part of the high source rails.
-                                BODY / PROOF
-                                Append the high edge e_i to its q-edge source rail Q_i and choose the common assigned terminal v as the last vertex. This is a longest path ending in e_i at v. Apply the certified terminal tail-blocker lemma c0798e59ef02 first with e=e_0, the low rank-q nonspecial edge terminal at v, and f=e_i of rank q+1. It forces the unique e_0 contact u_0 on Q_i into one of the q-2 edges immediately preceding e_i in the relevant suffix. Next apply the same lemma with e=e_j, j distinct from i, where e_j has rank q+1 and is terminal at v, and f=e_i. It forces the unique foreign contact of e_j on Q_i, equal to u_j in every reciprocal-terminal pair, into one of the q-1 edges immediately preceding e_i. These are exactly the stated late-zone localizations.
-
                       • [1000796] A contact with a maximum endpoint path manufactures a balanced endpoint lens
                           STATEMENT
                           Let Q be a maximum a-edge path ending at x, so phi(x)=a. Let y be a vertex of Q distinct from x, and let P be any maximum b-edge path ending at y, so phi(y)=b.
@@ -2762,6 +2718,26 @@
                             The smallest instance is g_1={a,b,c}, g_2={c,d,e}, g_3={e,f,g}, with x=g and y=d. Here phi(x)=3, phi(y)=2, Q=(g_1,g_2,g_3), P=(g_1,g_2).
                             
                             The exact failed step in the existing proof is the asserted existence of a next common vertex after suppressing common edge segments that bounds two genuine sides. Maximum endpoint paths may share only common segments and never diverge and rejoin. If the word lens is instead allowed to include coincident sides, the existence claim becomes weaker, but its use in 50edfd4bc99c and no-piercing arguments for distinct lens sides is then unjustified. The robust consequence retained for source-rail work is only that a source hit forces at least two common vertices (5854d853a44b and cddeebb1b0b2). A genuine lens and the legality of both replacements must be established separately. This example does not satisfy or refute the paid four-edge target; it fences one proposed proof tool.
+
+                      • [1001181] Reciprocal source-rail contacts force the balanced one-low terminal lens
+                          STATEMENT
+                          Let e_i={x_i,v,u_i} and e_j={x_j,v,u_j} be source-clean 0-1-1 edges through the same assigned terminal v, with maximum source paths Q_i,Q_j, and suppose each foreign edge meets the other source rail. If Q_i and Q_j have exactly one common vertex, then the cross-contacts are reciprocal-terminal: Q_i meets e_j at u_j and Q_j meets e_i at u_i.
+                          
+                          Consequently, in a one-low four-edge source-clean block with low edge e_0 and high edges e_1,e_2,e_3, if each Q_0,Q_i is uniquely intersecting, then u_0 lies on all three high rails and the high rails cannot all be pairwise uniquely intersecting. More precisely, if Q_i,Q_k and Q_j,Q_k are unique, then Q_i and Q_j share u_0 and u_k.
+                          
+                          In the minimal residue where Q_1,Q_3 and Q_2,Q_3 are unique and V(Q_1)∩V(Q_2)={u_0,u_3}, the vertices u_0,u_3 are internal on Q_1,Q_2, the two Q_1/Q_2 segments between them form a clean balanced lens, and u_0 occurs at the same joint index on Q_1,Q_2,Q_3.
+                          BODY / PROOF
+                          For the first assertion, if Q_i met e_j at the entrance x_j, then x_j would lie on both Q_i and Q_j. A unique intersection at x_j is impossible: unique-intersection alignment for equal-length maximum source paths makes the unique common vertex an internal joint of both paths, whereas x_j is the designated last vertex of Q_j in its clean source-path witness. Hence the mandatory foreign contact is u_j, and symmetrically Q_j meets e_i at u_i.
+                          
+                          Now take the one-low block. Unique low-high intersections therefore force every high rail Q_i to contain u_0. If Q_i,Q_k and Q_j,Q_k are also unique, reciprocal-terminal rigidity for those high-high pairs forces both Q_i and Q_j to contain u_k. Thus Q_i,Q_j share u_0 and u_k, so the three high rails cannot all be pairwise uniquely intersecting.
+                          
+                          In the stated minimal residue, applying this with k=3 gives the two common vertices u_0,u_3 of Q_1,Q_2. Linearity of the four incident edges makes them distinct from the high sources x_1,x_2, so both are internal vertices of Q_1,Q_2. Consecutive common vertices delimit a clean internal lens; the clean-lens balance lemma makes its two sides equal in length. Finally Q_1∩Q_3=Q_2∩Q_3={u_0}; universal aligned-joint rigidity places u_0 at the same joint index on all three high rails.
+
+                        • [1000263] Terminal-tail blocking pushes the flat terminal lens into the late high-rail zone
+                            STATEMENT
+                            In the minimal one-low high-rail lens state of 039d9d9cd8fd, on each high source rail Q_i of length q the low terminal u_0 lies in one of the final q-2 path edges, and every foreign high terminal u_j lying on Q_i lies in one of the final q-1 path edges. In particular the balanced terminal-terminal lens endpoints and the exterior high-terminal chord contacts are all excluded from the extreme early part of the high source rails.
+                            BODY / PROOF
+                            Append the high edge e_i to its q-edge source rail Q_i and choose the common assigned terminal v as the last vertex. This is a longest path ending in e_i at v. Apply the certified terminal tail-blocker lemma c0798e59ef02 first with e=e_0, the low rank-q nonspecial edge terminal at v, and f=e_i of rank q+1. It forces the unique e_0 contact u_0 on Q_i into one of the q-2 edges immediately preceding e_i in the relevant suffix. Next apply the same lemma with e=e_j, j distinct from i, where e_j has rank q+1 and is terminal at v, and f=e_i. It forces the unique foreign contact of e_j on Q_i, equal to u_j in every reciprocal-terminal pair, into one of the q-1 edges immediately preceding e_i. These are exactly the stated late-zone localizations.
 
                   • [1000916] A source hit forces a second source-rail intersection
                       STATEMENT
@@ -2990,68 +2966,11 @@
                         
                         Thus no such interior cross-edge f can exist across a balanced clean lens between maximum endpoint paths.
 
-                      • [1000412] No third path can pierce a balanced lens between maximum rails
+                      • [1001203] Lens non-piercing continuation
                           STATEMENT
-                          Let two maximum endpoint paths contain a clean internal lens with equal-length sides. No nontrivial third path can have a clean subpath joining an interior vertex of one lens side to an interior vertex of the other. The two complementary hybrid replacements have total length larger than the two original lens sides by twice the third-segment length, so one replacement beats a maximum endpoint path.
+                          Route bridge: the source-rail lens analysis continues after toolkit lemma 1000412.
                           BODY / PROOF
-                          Let Q and R be maximum endpoint paths containing a clean internal balanced lens between common vertices a,b. Let the Q-side and R-side of the lens both have edge length t.
-                          
-                          Let T be any linear path having a subpath W from a vertex s in the interior of the Q-side to a vertex r in the interior of the R-side. Assume:
-                          - the interior of W is disjoint from both lens sides;
-                          - W meets the two lens sides only at s and r;
-                          - the two hybrid replacements obtained by using W preserve linearity with the exterior portions of Q and R.
-                          
-                          Write l=|W|>=1.
-                          
-                          As in b5d44965d984, cut the Q-side at s and the R-side at r. Form the two complementary a-b hybrids:
-                            H_1 = (a-to-s on Q), W, (r-to-b on R),
-                            H_2 = (a-to-r on R), reverse(W), (s-to-b on Q).
-                          
-                          The pieces of the two original lens sides are partitioned between H_1,H_2, while W is used once in each. Hence
-                            |H_1|+|H_2|
-                             = |L_Q|+|L_R|+2|W|
-                             = 2t+2l
-                             >2t.
-                          
-                          Thus one hybrid has length at least t+1. Replacing the corresponding t-edge lens side inside Q or R by that hybrid gives an endpoint-preserving path longer than a maximum endpoint path, contradiction.
-                          
-                          Therefore no nontrivial third path can cleanly cross from the interior of one side of a balanced lens to the interior of the other.
-                          
-                          In particular, for an elementary lens between two source rails in a 0-1-1 obstruction, every other source rail is forbidden from piercing the lens with a clean segment. Any apparent crossing must instead hit a lens boundary, have an additional intersection that subdivides the lens, or route entirely outside at least one side.
-
-                        • [1000493] No third path can cleanly pierce any clean lens between maximum endpoint paths
-                            STATEMENT
-                            Let Q,R be maximum endpoint paths and let two common vertices bound any clean lens between them, with arbitrary side lengths A,B. No third path can cleanly pierce from the interior of one lens side to the interior of the other. The two complementary hybrids have total length A+B+2l; if one does not beat the Q-side length A, the other necessarily beats the R-side length B. Thus the earlier no-piercing theorem does not require a balanced lens.
-                            BODY / PROOF
-                            Let Q and R be maximum endpoint paths ending at x and y. Let a,b be two common vertices such that the Q-side L_Q and R-side L_R form a clean lens. Write
-                              A=|L_Q|,
-                              B=|L_R|.
-                            
-                            Let T be a third linear path having a clean subpath W of length l>=1 from an interior vertex s of L_Q to an interior vertex r of L_R. Assume, as in the standard piercing setup, that:
-                            - the interior of W is disjoint from both lens sides;
-                            - W meets the lens sides only at s,r;
-                            - the two complementary a-b hybrids preserve linearity with the exteriors of Q and R.
-                            
-                            Form
-                              H_1=(a-to-s on Q), W, (r-to-b on R),
-                              H_2=(a-to-r on R), reverse(W), (s-to-b on Q).
-                            
-                            The original lens-side pieces are partitioned between H_1,H_2 and W is used once in each, so
-                              |H_1|+|H_2|=A+B+2l>A+B.                           (1)
-                            
-                            If |H_1|>A, replace the Q-side L_Q by H_1. By the clean-piercing hypothesis this gives a linear path ending at x of length
-                              |Q|-A+|H_1|>|Q|=phi(x),
-                            contradiction.
-                            
-                            Otherwise |H_1|<=A. Then from (1),
-                              |H_2|=A+B+2l-|H_1|
-                                   >=B+2l
-                                   >B.
-                            Replace the R-side L_R by H_2. This gives a linear path ending at y longer than R, contradiction.
-                            
-                            Therefore no such clean piercing W exists.
-                            
-                            No equality A=B is required. Balancedness was useful for other lens bookkeeping, but not for the piercing exclusion itself.
+                          Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable lens non-piercing lemma.
 
                   • [1000398] Four source rails force two units of distinguished overlap
                       STATEMENT
@@ -4935,71 +4854,190 @@
                         
                         This is the arbitrary-uniformity contact-snake defect reduction. For r=3, X is exactly the double-contact incidence count and N_{0,1^{r-1}} is N_011.
 
-                      • [1000274] Top-rank alignment converts Astra double-contact mass directly into multiplicity credit
+                      • [1000484] Single-contact central windows give a two-envelope local bound in every uniformity
                           STATEMENT
-                          Let q(v) be the maximum rank of an ascending nonspecial edge terminal at v. If q(v)=phi(v)=p, then choosing the global endpoint path P_v to end in such a top-rank ascending edge gives t(v)-X_v <= ((2r-3)/4)p+O_r(1), where X_v is excess contact multiplicity. Consequently, if every vertex supporting ascending terminal edges is top-rank aligned, the global leading coefficient improves to 1-(2r-1)/(4r(r-1)); for r=3 this is 19/24.
-                          BODY / PROOF
-                          Let H be a finite linear r-uniform hypergraph, r>=3. Fix a nonisolated vertex v and put p=phi(v). Let t(v) be the number of ascending nonspecial edges for which v is terminal.
+                          Let H be a finite linear r-graph, r>=3. Fix a nonisolated vertex v of rank p and a maximum p-edge path
+                            P=(g_1,...,g_p)
+                          with last vertex v and last edge h=g_p. For an incident edge e!=h put
+                            mu_v(e)=|(e\{v}) intersect (V(P)\h)|.
                           
-                          Assume t(v)>0 and that among those edges there is one h of rank exactly p. Since v is terminal at h and phi(h)=p=phi(v), choose the globally selected maximum endpoint path P_v to be a p-edge path ending in h with last vertex v.
+                          Let e be an ascending nonspecial edge of rank s<p at which v is terminal, and suppose mu_v(e)=1. Let c be its unique contact with V(P)\h, and let a and b be the first and last indices of path edges containing c. Then
+                            a<=s-1,
+                            b>=p-s+2.
+                          If c is a terminal vertex of e rather than its unique entrance, then in fact a<=s-2.
                           
-                          Let X_v be the excess contact multiplicity on P_v:
-                            X_v=sum_{e contains v} max(mu_v(e)-1,0).
+                          Consequently, for q<p, if s_q(v;P) is the number of ascending nonspecial edges terminal at v, of edge rank at most q, and having mu_v(e)=1, then
+                            s_q(v;P)
+                            <= B_r(p,q)
+                            := max{0,(r-1)(2q-p)-(2r-3)}.
                           
-                          For every ascending edge terminal at v, its rank is at most p, so it belongs to
-                            J_p(v)={f:v in f, phi(f)<=p}.
-                          Hence
-                            t(v)<=|J_p(v)|.
-                          
-                          Use the fixed-entrance contact decomposition relative to h:
-                          - s singleton contact sets;
-                          - n_j contact sets of size j>=2.
-                          Then
-                            |J_p(v)|=1+s+sum_{j>=2} n_j.
-                          
-                          Meanwhile X_v contains, for these same J_p(v) incidences, at least
-                            sum_{j>=2}(j-1)n_j.
-                          Therefore
+                          Now let t(v)>0 count all ascending nonspecial edges terminal at v, let q=q(v)<p be their maximum edge rank, and let
+                            X_v=sum_{f contains v} max(mu_v(f)-1,0),
+                          with mu_v(h)=1 as in the general contact-multiplicity inequality. Then
                             t(v)-X_v
-                            <= |J_p(v)|-sum_{j>=2}(j-1)n_j
-                            = 1+s+sum_{j>=2}(2-j)n_j
-                            <=1+s.                                             (1)
+                            <= min{
+                                 ((6r-7)/8)q+(7-2r)/4,
+                                 B_r(p,q)
+                               }.
                           
-                          By the arbitrary-r singleton run count a570a11f0001,
-                            s <= lambda(p-2)+(r-1),
-                          where
-                            lambda=(2r-3)/4.
-                          Equivalently,
-                            s <= lambda p + O_r(1).
-                          Thus
-                            t(v)-X_v <= ((2r-3)/4)p + O_r(1).                 (2)
+                          Thus the two leading-order envelopes cross at
+                            q/p = 8(r-1)/(10r-9).
+                          More exactly, whenever B_r(p,q)>0 the central-window envelope is no larger than the fixed-entrance envelope if
+                            q <= [8(r-1)p+2(6r-5)]/(10r-9).
+                          For r=3, B_3(p,q)=max{0,4q-2p-3}, recovering the existing 3-uniform single-contact window.
+                          BODY / PROOF
+                          Write x for the unique entrance of e. Since s<p, the edge e is not the last edge h. Because e and h both contain v and H is linear, no vertex of e\{v} lies in h. The hypothesis mu_v(e)=1 therefore says that c is the only vertex of e\{v} lying anywhere on P.
                           
-                          This is strictly stronger than the raw fixed-entrance terminal count
-                            t(v)<=((6r-7)/8)p+O_r(1):
-                          all nonsingleton contacts are paid by excess multiplicity.
+                          For the left bound, first suppose c=x. By definition of a, the prefix g_1,...,g_a is a linear path with last vertex x. Hence
+                            a<=phi(x)=s-1,
+                          because e is ascending.
                           
-                          GLOBAL CONDITIONAL CONSEQUENCE.
-                          Suppose every vertex with t(v)>0 is top-rank aligned in this sense, so its maximum ascending terminal rank equals phi(v), and choose P_v accordingly. Summing (2),
-                            (r-1)A - X
-                            =sum_v t(v)-X
-                            <= ((2r-3)/4)S + O_r(n_+).                        (3)
+                          Suppose instead that c is one of the terminal vertices of e. Then x and every other vertex of e\{v,c} are absent from P. Hence
+                            g_1,...,g_a,e
+                          is a linear path of length a+1 ending in e, and it enters e through the terminal vertex c. If a+1>s this exceeds the edge rank s. If a+1=s it is a longest path ending in the nonspecial edge e with entrance label c, contradicting that x is the unique entrance. Therefore a+1<=s-1 and a<=s-2.
                           
-                          Since X>=0,
-                            A-X
-                            <= [(r-1)A-X]/(r-1)
-                            <= (2r-3)/(4(r-1)) S + O_r(n_+).                 (4)
+                          For the right bound, suppose b<=p-s+1. Then the final s-1 path edges
+                            g_{p-s+2},...,g_p
+                          avoid c. They also avoid every other vertex of e except v, because c is the unique contact outside h and e cap h={v}. Appending e gives an s-edge linear path ending in e with entrance label v. But v is terminal at e and x is its unique entrance, again a contradiction. Thus b>=p-s+2.
                           
-                          The r-uniform contact identity 6c9c2c5a0fcb gives
-                            rm <= (r-1)S-(r-2)n_+ +(C-X),
-                          and C<=A, hence
-                            rm <= (r-1)S +(A-X)+O_r(n_+).
+                          Now fix q<p. Every contact c belonging to an edge counted by s_q(v;P) has first occurrence at most q-1 and last occurrence at least p-q+2. A vertex of P outside h is either private in one path edge or is a joint of two consecutive path edges. Since q<p, the eligible private positions are the internal edges
+                            g_i,  p-q+2<=i<=q-1,
+                          and the eligible joints are
+                            g_i cap g_{i+1},  p-q+1<=i<=q-1.
+                          There are
+                            max(0,2q-p-2)
+                          eligible internal edge positions, each with r-2 private vertices, and
+                            max(0,2q-p-1)
+                          eligible joints. Their total is exactly
+                            max{0,(r-1)(2q-p)-(2r-3)}.
+                          Distinct edges through v have disjoint off-v vertex sets by linearity, so their unique contacts are distinct. This proves the bound for s_q(v;P).
                           
-                          Using (4), the leading S-coefficient is
-                            [(r-1)+(2r-3)/(4(r-1))]/r
-                            = [4r^2-6r+1]/[4r(r-1)]
-                            = 1-(2r-1)/[4r(r-1)].
+                          For the two-envelope inequality, let T(v) be the t(v) ascending nonspecial edges terminal at v. Every e in T(v) has edge rank at most q<p, so e!=h. Also mu_v(e) cannot be zero: otherwise P,e would be a (p+1)-edge linear path, contradicting phi(e)<=q<p. Hence every e in T(v) has mu_v(e)>=1.
                           
-                          Thus in the fully top-rank-aligned regime the leading coefficient is twice as far below one as Astra's general bound.
+                          Let X_v^T be the excess multiplicity contributed only by T(v). Then
+                            t(v)-X_v
+                            <= t(v)-X_v^T
+                            = sum_{e in T(v)} [1-max(mu_v(e)-1,0)]
+                            <= #{e in T(v): mu_v(e)=1}
+                            <= B_r(p,q).
+                          On the other hand, the certified general-r fixed-entrance capacity bound applied at a maximum-rank edge in T(v) gives
+                            t(v)<=((6r-7)/8)q+(7-2r)/4,
+                          so the same upper bound holds for t(v)-X_v. Taking the minimum gives the claimed two-envelope estimate.
+                          
+                          Finally,
+                            B_r(p,q)-[((6r-7)/8)q+(7-2r)/4]
+                            = ((10r-9)/8)q-(r-1)p-(6r-5)/4
+                          whenever B_r(p,q)>0, which gives the exact crossover condition and the stated leading-order ratio.
+
+                        • [1000373] Minimum-rank terminal assignment forces quadratic off-center rank in every uniformity
+                            STATEMENT
+                            Let H be a finite linear r-graph with r>=3. Fix a vertex v of rank p and a maximum p-edge path P ending at v. Let e_1,...,e_k be distinct ascending nonspecial edges terminal at v, all of edge rank less than p, and suppose every e_i has contact multiplicity one on P. Write q_i=phi(e_i), let x_i be the unique entrance of e_i, and relabel so that
+                              q_1<=...<=q_k.
+                            
+                            Then for every i,
+                              q_i >= ceil(((r-1)p+i+2r-3)/(2(r-1))),
+                            and therefore
+                              sum_{i=1}^k phi(x_i)
+                              >= sum_{i=1}^k [
+                                   ceil(((r-1)p+i+2r-3)/(2(r-1)))-1
+                                 ]
+                              >= kp/2 + k(k-1)/(4(r-1)).
+                            
+                            If, in addition, v has minimum vertex rank among the r-1 terminal vertices of every e_i, then all (r-1)k vertices in union_i(e_i\{v}) are distinct, and the r-2 terminal vertices of e_i other than v all have rank at least p. Hence
+                              sum_{z in union_i(e_i\{v})} phi(z)
+                              >= ((2r-3)/2)pk + k(k-1)/(4(r-1)).
+                            
+                            In particular this applies after assigning any family of globally unpaid signature-(0,1,...,1) ascending edges to a terminal of minimum vertex rank. For r=3 the entrance-rank conclusion becomes
+                              sum_i phi(x_i) >= kp/2+k(k-1)/8,
+                            the same numerical packet bound as the certified 3-uniform minimum-terminal lemma on the terminal-single subclass.
+                            BODY / PROOF
+                            Order the edges by q_1<=...<=q_k. For each i, the edges e_1,...,e_i all have rank at most q_i and contact multiplicity one on the fixed maximum p-edge path P. The central-window theorem 6af906e32265 therefore gives
+                              i <= B_r(p,q_i)
+                                = (r-1)(2q_i-p)-(2r-3).
+                            The right side is positive because i>=1. Rearranging,
+                              2(r-1)q_i >= (r-1)p+i+2r-3,
+                            and integrality gives
+                              q_i >= ceil(((r-1)p+i+2r-3)/(2(r-1))).
+                            
+                            Since e_i is ascending with unique entrance x_i,
+                              phi(x_i)=q_i-1.
+                            Summing the ceiling bounds proves the first displayed estimate. Dropping the ceilings gives
+                              sum_i phi(x_i)
+                              >= kp/2
+                                 + [sum_i i + k(2r-3)]/[2(r-1)]
+                                 - k
+                              = kp/2 + k(k-1)/(4(r-1)).
+                            
+                            Any two distinct edges in the family already share v. By linearity they share no other vertex, so the sets e_i\{v} are pairwise disjoint. Each nonspecial r-edge has one unique entrance and r-1 terminal vertices. Under the minimum-rank assumption on v, the r-2 terminals other than v in every e_i have vertex rank at least p. Adding their total contribution (r-2)pk to the entrance-rank estimate yields
+                              ((r-2)+1/2)pk + k(k-1)/(4(r-1))
+                              = ((2r-3)/2)pk + k(k-1)/(4(r-1)).
+                            
+                            Finally, an edge of signature (0,1,...,1) in the general contact-multiplicity reduction has multiplicity one at every terminal. Assigning each such edge to one of its minimum-rank terminals therefore satisfies the hypotheses at every assigned center.
+
+                          • [1001131] Terminal-single packets obey both central-window and fixed-capacity rank profiles
+                              STATEMENT
+                              Let H be a finite linear r-graph with r>=3. Fix a vertex v of rank p and a maximum p-edge path P ending at v. Let e_1,...,e_k be distinct ascending nonspecial edges terminal at v, each of edge rank less than p and each having contact multiplicity one on P. Write
+                                q_i=phi(e_i)
+                              and relabel so that q_1<=...<=q_k.
+                              
+                              Then for every i,
+                                q_i >= max{
+                                  ceil((8i+4r-14)/(6r-7)),
+                                  ceil(((r-1)p+i+2r-3)/(2(r-1)))
+                                }.
+                              
+                              Equivalently, the central-window lower profile controls the initial segment of the ordered packet, while the fixed-entrance capacity lower profile controls its dense upper tail. Their real-valued profiles cross at
+                                i_*=
+                                ((6r-7)(r-1)p+4r^2+4r-7)/(10r-9).
+                              
+                              If x_i is the unique entrance of e_i, then
+                                sum_i phi(x_i)
+                                >= sum_i [
+                                  max{
+                                    ceil((8i+4r-14)/(6r-7)),
+                                    ceil(((r-1)p+i+2r-3)/(2(r-1)))
+                                  }-1
+                                ].
+                              
+                              If, moreover, v has minimum vertex rank among the r-1 terminal vertices of every e_i, then the r-2 other terminals on each e_i have rank at least p and all off-v vertices are pairwise distinct across the family. Hence their total off-v rank is at least
+                                (r-2)pk
+                              plus the displayed entrance-rank sum.
+                              
+                              This simultaneously strengthens the two separate packet bounds 34f8dc7df3f6 and 5198e921de4f on their common terminal-single domain.
+                              BODY / PROOF
+                              Fix i. Since q_1<=...<=q_i, the first i edges all have edge rank at most q_i.
+                              
+                              First apply the fixed-entrance capacity bound a570a11f0001 at v. The first i edges belong to J_{q_i}(v), so
+                                i<=((6r-7)/8)q_i+(7-2r)/4.
+                              Rearranging and using integrality gives
+                                q_i>=ceil((8i+4r-14)/(6r-7)).
+                              
+                              Second apply the single-contact central-window theorem 6af906e32265 to the same first i edges on P. It gives
+                                i<=(r-1)(2q_i-p)-(2r-3).
+                              Therefore
+                                q_i>=ceil(((r-1)p+i+2r-3)/(2(r-1))).
+                              
+                              Both inequalities hold simultaneously, proving the maximum profile.
+                              
+                              To locate the crossover of the underlying real-valued profiles, solve
+                                (8i+4r-14)/(6r-7)
+                                =((r-1)p+i+2r-3)/(2(r-1)).
+                              After clearing denominators,
+                                (10r-9)i
+                                =(6r-7)(r-1)p+4r^2+4r-7,
+                              which gives i_*.
+                              
+                              Because e_i is ascending, its unique entrance x_i has
+                                phi(x_i)=q_i-1.
+                              Summing the pointwise maximum profile gives the entrance-rank estimate.
+                              
+                              Finally, under minimum-terminal assignment, linearity makes the sets e_i\{v} pairwise disjoint, and each e_i contains r-2 terminal vertices other than v, each of rank at least p. Adding their rank contribution proves the last assertion.
+
+                      • [1001191] Top-rank alignment continuation
+                          STATEMENT
+                          Route bridge: the coefficient-improvement analysis continues after toolkit theorem 1000274.
+                          BODY / PROOF
+                          Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable top-rank-alignment theorem.
 
                         • [1000780] Aligned potential mass earns a second copy of the fixed-entrance coefficient gain
                             STATEMENT
@@ -5068,17 +5106,11 @@
                               S_0=o(S).
                             Hence any asymptotic extremizer for the fixed-entrance coefficient must place asymptotically all potential mass on rank-misaligned vertices q(v)<phi(v).
 
-                          • [1000378] Rank-gap mass and aligned potential simultaneously improve the Astra coefficient
+                          • [1001199] Rank-gap synthesis continuation
                               STATEMENT
-                              Let H be a finite linear r-uniform hypergraph, r>=3. For each nonisolated vertex v let p_v=phi(v), let t(v) count ascending nonspecial edges terminal at v, and when t(v)>0 let q(v) be their maximum rank. Let V_0={v:t(v)>0 and q(v)=p_v}, S_0=sum_{v in V_0}p_v, and G=sum_{v:t(v)>0,q(v)<p_v}(p_v-q(v)). Put S=sum_v p_v and c_r=1-(2r-1)/(8r(r-1)). Then
-                              m <= c_r S - (2r-1)/(8r(r-1)) S_0 - (6r-7)/(8r(r-1)) G + O_r(n_+).
-                              For r=3 this is m <= (43/48)S-(5/48)S_0-(11/48)G+O(n_+). Hence any asymptotic extremizer for the Astra coefficient with S/n_+ tending to infinity must satisfy both S_0=o(S) and G=o(S).
+                              Route bridge: the rank-gap synthesis continues after toolkit theorem 1000378.
                               BODY / PROOF
-                              Set alpha=(6r-7)/8 and lambda=(2r-3)/4. Choose the global endpoint paths as in 3b170b2ae6 on aligned vertices and arbitrarily elsewhere, and let X_v be the resulting excess contact multiplicity. If v is aligned, 3b170b2ae6 gives t(v)-X_v <= lambda p_v+O_r(1)=alpha p_v-(alpha-lambda)p_v+O_r(1). If v is active but misaligned, the fixed-entrance theorem applied at a maximum-rank ascending terminal edge gives t(v)-X_v<=t(v)<=alpha q(v)+O_r(1)=alpha p_v-alpha(p_v-q(v))+O_r(1). If t(v)=0 then t(v)-X_v<=0. Summing and using alpha-lambda=(2r-1)/8 yields
-                              (r-1)A-X <= alpha S -(2r-1)S_0/8-alpha G+O_r(n_+).
-                              Since X>=0, A-X <= ((r-1)A-X)/(r-1). The contact-multiplicity identity gives rm <= (r-1)S-(r-2)n_+ +(C-X), and C<=A, hence
-                              m <= [(r-1)+alpha/(r-1)]S/r -(2r-1)S_0/[8r(r-1)]-alpha G/[r(r-1)]+O_r(n_+).
-                              The first coefficient is c_r, while alpha/[r(r-1)]=(6r-7)/[8r(r-1)]. The extremal consequence follows because both correction terms are nonnegative.
+                              Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable rank-gap theorem.
 
                             • [1000574] Exact rank-sensitive master inequality for the three-uniform Astra-multiplicity synthesis
                                 STATEMENT
@@ -5411,158 +5443,78 @@
                                                     e_i intersect V(R_{i+1})={t_i}.
                                                   The rail endpoints and all entrance labels are absent from the other rail, so the third vertex x_i is outside both outer rails. The general cross-edge statement applies and gives the claimed opposite-side orientation.
 
-                                              • [1000626] Three pairwise uniquely intersecting equal-length maximum paths have one common joint
+                                              • [1001200] Lens-free flat cycles have late aligned rails and no distance-two intersections
                                                   STATEMENT
-                                                  Let A,B,C be maximum endpoint paths of the same length L. Suppose every pair has exactly one common vertex. Then the three pairwise intersections are the same vertex y. Moreover y is an internal joint at the same edge index on all three paths.
+                                                  Let R_i be the equal-length maximum entrance rails in a lens-free flat gap-one terminal cycle.
+                                                  
+                                                  If three such rails are pairwise uniquely intersecting, their three pairwise intersections coincide at one common aligned joint. Consequently the cyclic rail system has only two possible global forms: either every adjacent rail joint lies at level at least ceil((p-2)/2), or all rails share one common early aligned joint. The common-early-joint alternative is impossible in the flat terminal cycle, so every adjacent rail joint lies in the late half.
+                                                  
+                                                  Moreover every distance-two pair R_i,R_{i+2} is vertex-disjoint. If V(R_i)∩V(R_{i+3})={t_{i+2}} has aligned level h_i, then ceil((p-2)/2)<=h_i<=p-4. In particular a lens-free flat terminal cycle cannot have length five.
                                                   BODY / PROOF
-                                                  Write y_AB, y_AC, y_BC for the unique pairwise intersections. By the aligned-joint theorem for unique intersections of maximum endpoint paths, each y_UV is a joint at the same index on U and V.
+                                                  Pairwise unique intersections of equal-length maximum endpoint paths are aligned joints. For three rails A,B,C, the unique pairwise intersections must coincide, giving a common aligned joint.
                                                   
-                                                  Assume the three vertices are not all equal. If two were equal, that vertex would belong to the third pair as well, and uniqueness would force the third intersection to be equal too. Hence y_AB,y_AC,y_BC are three distinct vertices. Their aligned indices a,b,c are therefore pairwise distinct: for example, if a=b, then on A the distinct vertices y_AB and y_AC would both be the intersection of the same two consecutive edges, impossible in a linear hypergraph.
+                                                  Applying the three-rail half-gate argument around the cycle yields the late-or-common-hub dichotomy. The flat-cycle distance-three terminal intersection theorem identifies R_i∩R_{i+3} with t_{i+2}; a common early hub would therefore force consecutive terminal vertices of a cycle edge to coincide, impossible. Thus all adjacent joints are late.
                                                   
-                                                  Relabel A,B,C so that a<b<c and so that A contains y_AB at level a and y_AC at level b, B contains y_AB at level a and y_BC at level c, and C contains y_AC at level b and y_BC at level c. The A-segment from y_AB to y_AC has b-a edges. The route from y_AB along B from level a to level c and then backwards along C from level c to level b has (c-a)+(c-b) edges, strictly more than b-a. Since the three pairwise intersections are exactly the displayed vertices, the interior of this replacement route is disjoint from the remainder of A and its two constituent segments meet only at y_BC. Replacing the A-segment by this route therefore gives a linear path with the same last vertex as A and more than L edges, contradicting maximality of A.
-                                                  
-                                                  Thus all three pairwise intersections coincide at one vertex y. The aligned-joint theorem then places y at the same internal index on all three paths.
+                                                  If R_{i+1} met R_{i+3}, then in the lens-free state that intersection is unique. Together with the known unique intersections of R_i with R_{i+1} and R_{i+3}, the three-path common-joint conclusion would force two distinct prescribed vertices on R_i to coincide. Hence distance-two rails are disjoint. The three-rail half-gate lemma then forces the prescribed distance-three joint into the late half, while terminal-blocker geometry gives h_i<=p-4. For a 5-cycle, distance three is also distance two in reverse cyclic order, contradiction.
 
-                                                • [1000806] A lens-free flat cycle is late-jointed or has one common early rail joint
+                                                • [1001074] Lens-free flat terminal cycles have no lengths six, seven, or nine
                                                     STATEMENT
-                                                    In the lens-free flat-cycle rail system of 960a5153b900, put L=p-2 and let k_i be the aligned level of R_i intersect R_{i+1}. Then exactly one of the following holds:
-                                                    
-                                                    (1) k_i >= ceil(L/2) for every i; or
-                                                    
-                                                    (2) there are an index k<ceil(L/2) and a vertex y such that k_i=k and y_i=y for every i. In case (2), every two distinct entrance rails intersect exactly in {y}, and y is the aligned internal joint at level k on every rail.
+                                                    In the entrance-rail lens-free flat gap-one terminal-cycle setting of 315871ed0c8b, the cycle length c is not 6, 7, or 9. Together with 14bb137811b4, it is therefore not 5,6,7, or9.
                                                     BODY / PROOF
-                                                    Assume some k_i<ceil(L/2). We show that the same joint and level propagate forward around the entire cycle.
+                                                    Write
+                                                      V(R_j) intersect V(R_{j+3})={t_{j+2}}
+                                                    for the unique distance-three intersections supplied by 8777d2ccd614.
                                                     
-                                                    Consider R_i,R_{i+1},R_{i+2}. The first two meet uniquely at y_i, at aligned level k_i, and the last two meet uniquely at y_{i+1}, at aligned level k_{i+1}. Since min{k_i,k_{i+1}}<ceil(L/2), the three-rail half-gate lemma 87b1d2ae8b86 implies that R_i and R_{i+2} intersect.
+                                                    If c=6, applying this once with j=i and once with j=i+3 gives
+                                                      V(R_i) intersect V(R_{i+3})={t_{i+2}}
+                                                    and
+                                                      V(R_{i+3}) intersect V(R_i)={t_{i+5}}.
+                                                    Thus t_{i+2}=t_{i+5}, impossible because these are distinct terminal vertices of the linear cycle.
                                                     
-                                                    They cannot have two common vertices. Indeed, no entrance endpoint of one rail lies on another rail in the lens-free residual, and two internal common vertices of equal-length maximum endpoint paths yield an elementary lens; the usual replacement argument makes that lens balanced. Thus R_i and R_{i+2} have exactly one common vertex.
+                                                    Suppose c=7. Consider R_i,R_{i+1},R_{i+4}. Their three pairwise intersections are unique:
+                                                      V(R_i) intersect V(R_{i+1})={y_i}
+                                                    by 960a5153b900,
+                                                      V(R_{i+1}) intersect V(R_{i+4})={t_{i+3}}
+                                                    by 8777d2ccd614, and, since (i+4)+3=i modulo 7,
+                                                      V(R_{i+4}) intersect V(R_i)={t_{i+6}}
+                                                    by the same lemma. By 8e3ab4a34ced the three unique intersections must coincide. This would give t_{i+3}=t_{i+6}, again impossible for distinct cycle terminals.
                                                     
-                                                    Now all three pairs among R_i,R_{i+1},R_{i+2} have unique intersections. By 8e3ab4a34ced these three intersections are one common vertex, at one common aligned level. Hence
-                                                      y_{i+1}=y_i and k_{i+1}=k_i<ceil(L/2).
+                                                    Suppose c=9. The three rails R_i,R_{i+3},R_{i+6} are pairwise at cyclic distance three, and 8777d2ccd614 gives the unique intersections
+                                                      {t_{i+2}}, {t_{i+5}}, {t_{i+8}},
+                                                    respectively. By 8e3ab4a34ced these three vertices must coincide, contradicting the distinctness of the cycle terminals.
                                                     
-                                                    Repeating the same argument with R_{i+1},R_{i+2},R_{i+3}, and so on, propagates this equality around the cyclic index set. Therefore every adjacent pair has the same unique common vertex y at the same level k.
-                                                    
-                                                    Finally, any two nonadjacent rails already contain y. If they had another common vertex, then, as above, two consecutive common vertices would bound a balanced elementary lens, contrary to the lens-free hypothesis. Thus every pair of distinct entrance rails intersects exactly in {y}.
-                                                    
-                                                    If no k_i is earlier than ceil(L/2), alternative (1) holds. This proves the dichotomy.
+                                                    Hence c is none of 6,7,9. The exclusion c=5 was proved in 14bb137811b4.
 
-                                                  • [1000337] Every aligned joint in a lens-free flat cycle lies in the late half
+                                                  • [1001179] Four-path obstruction continuation
                                                       STATEMENT
-                                                      In the entrance-rail lens-free flat gap-one terminal cycle of 315871ed0c8b, let k_i be the aligned joint level of R_i and R_{i+1}. Then for every i,
-                                                        k_i >= ceil((p-2)/2).
+                                                      Route bridge: flat-cycle elimination continues using toolkit lemma 1000106.
                                                       BODY / PROOF
-                                                      Apply the dichotomy b6043206d165 with L=p-2. Suppose the common-early-joint alternative holds. Then there is a vertex y such that every two distinct entrance rails meet exactly in {y}.
-                                                      
-                                                      On the other hand, the distance-three intersection lemma 8777d2ccd614 gives, for every i,
-                                                        V(R_i) intersect V(R_{i+3})={t_{i+2}}.
-                                                      Hence y=t_{i+2} for every i. Applying this for consecutive values of i gives t_{i+2}=t_{i+3}, impossible because these are the two distinct terminal vertices of the cycle edge e_{i+2}.
-                                                      
-                                                      Therefore the common-early-joint alternative is impossible. The late-jointed alternative of b6043206d165 remains, giving k_i>=ceil((p-2)/2) for every i.
+                                                      Nonmathematical proof-frame wrapper preserving the original route position after rehoming the reusable four-path intersection obstruction.
 
-                                                    • [1000088] Lens-free flat cycles have disjoint distance-two rails and late distance-three terminal joints
+                                                    • [1001108] Every flat gap-one terminal cycle forces a balanced lens between entrance rails
                                                         STATEMENT
-                                                        In the entrance-rail lens-free flat gap-one terminal cycle, every pair R_i,R_{i+2} is vertex-disjoint. Moreover, if h_i is the aligned joint level of
-                                                          V(R_i) intersect V(R_{i+3})={t_{i+2}},
-                                                        then
-                                                          ceil((p-2)/2) <= h_i <= p-4.
-                                                        Consequently, a lens-free flat terminal cycle cannot have length five.
+                                                        Let
+                                                          C=(e_0,...,e_{c-1}), c>=4,
+                                                        be a flat gap-one terminal cycle with
+                                                          e_i={x_i,t_i,t_{i+1}},
+                                                        where every e_i is ascending nonspecial of rank p-1, every t_i has vertex rank p, and every private entrance x_i has vertex rank p-2. For canonical maximum entrance rails R_i ending at x_i, some two distinct rails contain a balanced elementary lens. Equivalently, the entrance-rail lens-free residual is impossible.
                                                         BODY / PROOF
-                                                        First we prove the distance-two disjointness. Fix i and suppose R_{i+1} meets R_{i+3}. In the lens-free residual it cannot have two common vertices with R_{i+3}, since two common internal vertices of equal-length maximum endpoint paths yield a balanced elementary lens. Thus their intersection is unique.
+                                                        Assume for contradiction that the cycle is entrance-rail lens-free. Then all conclusions of 960a5153b900, 8777d2ccd614, and 14bb137811b4 apply.
                                                         
-                                                        The other two pairs in the triple R_i,R_{i+1},R_{i+3} are also uniquely intersecting:
-                                                          V(R_i) intersect V(R_{i+1})={y_i}
-                                                        by 960a5153b900, while
-                                                          V(R_i) intersect V(R_{i+3})={t_{i+2}}
-                                                        by 8777d2ccd614.
-                                                        The vertex y_i is not t_{i+2} by 960a5153b900. But 8e3ab4a34ced says that three equal-length maximum endpoint paths whose three pairwise intersections are unique must have one common intersection vertex. This contradiction proves
-                                                          V(R_{i+1}) intersect V(R_{i+3})=emptyset.
-                                                        Shifting indices gives V(R_i) intersect V(R_{i+2})=emptyset for every i.
+                                                        If c=5, 14bb137811b4 already gives a contradiction.
                                                         
-                                                        Now apply 87b1d2ae8b86 to
-                                                          A=R_{i+1}, B=R_i, C=R_{i+3}.
-                                                        The A-B intersection is the aligned joint y_i at level k_i, the B-C intersection is t_{i+2} at level h_i, and A,C are disjoint by the preceding paragraph. Hence
-                                                          min{k_i,h_i} >= ceil((p-2)/2).
-                                                        In particular h_i>=ceil((p-2)/2). The upper bound h_i<=p-4 is part of 8777d2ccd614.
+                                                        If c=4, the four rails R_0,R_1,R_2,R_3 have unique intersections on each consecutive pair by 960a5153b900, while the opposite pairs R_0,R_2 and R_1,R_3 are disjoint by 14bb137811b4. This is forbidden by the four-path lemma 188e6b091d88.
                                                         
-                                                        Finally suppose c=5. Then R_i and R_{i+2} are distance three in the reverse cyclic orientation, so 8777d2ccd614 says they intersect. This contradicts the distance-two disjointness just proved. Hence no lens-free flat terminal 5-cycle exists.
-
-                                                      • [1001074] Lens-free flat terminal cycles have no lengths six, seven, or nine
-                                                          STATEMENT
-                                                          In the entrance-rail lens-free flat gap-one terminal-cycle setting of 315871ed0c8b, the cycle length c is not 6, 7, or 9. Together with 14bb137811b4, it is therefore not 5,6,7, or9.
-                                                          BODY / PROOF
-                                                          Write
-                                                            V(R_j) intersect V(R_{j+3})={t_{j+2}}
-                                                          for the unique distance-three intersections supplied by 8777d2ccd614.
-                                                          
-                                                          If c=6, applying this once with j=i and once with j=i+3 gives
-                                                            V(R_i) intersect V(R_{i+3})={t_{i+2}}
-                                                          and
-                                                            V(R_{i+3}) intersect V(R_i)={t_{i+5}}.
-                                                          Thus t_{i+2}=t_{i+5}, impossible because these are distinct terminal vertices of the linear cycle.
-                                                          
-                                                          Suppose c=7. Consider R_i,R_{i+1},R_{i+4}. Their three pairwise intersections are unique:
-                                                            V(R_i) intersect V(R_{i+1})={y_i}
-                                                          by 960a5153b900,
-                                                            V(R_{i+1}) intersect V(R_{i+4})={t_{i+3}}
-                                                          by 8777d2ccd614, and, since (i+4)+3=i modulo 7,
-                                                            V(R_{i+4}) intersect V(R_i)={t_{i+6}}
-                                                          by the same lemma. By 8e3ab4a34ced the three unique intersections must coincide. This would give t_{i+3}=t_{i+6}, again impossible for distinct cycle terminals.
-                                                          
-                                                          Suppose c=9. The three rails R_i,R_{i+3},R_{i+6} are pairwise at cyclic distance three, and 8777d2ccd614 gives the unique intersections
-                                                            {t_{i+2}}, {t_{i+5}}, {t_{i+8}},
-                                                          respectively. By 8e3ab4a34ced these three vertices must coincide, contradicting the distinctness of the cycle terminals.
-                                                          
-                                                          Hence c is none of 6,7,9. The exclusion c=5 was proved in 14bb137811b4.
-
-                                                        • [1000106] Four equal-length maximum paths cannot form a chordless cycle of unique intersections
-                                                            STATEMENT
-                                                            Let A,B,C,D be maximum endpoint paths of the same length L. Suppose
-                                                              |V(A) intersect V(B)|=|V(B) intersect V(C)|=|V(C) intersect V(D)|=|V(D) intersect V(A)|=1,
-                                                            while
-                                                              V(A) intersect V(C)=V(B) intersect V(D)=emptyset.
-                                                            Then no such four paths exist.
-                                                            BODY / PROOF
-                                                            By 5854d853a44b, write the four unique consecutive intersections as aligned joints at levels
-                                                              a for A-B, b for B-C, c for C-D, d for D-A.
-                                                            
-                                                            The four joint vertices are distinct. For example, the A-B and B-C joints cannot coincide because that common vertex would lie in A intersect C, which is empty. Hence adjacent levels are distinct: on any one path, two distinct joints cannot occur between the same consecutive edge pair.
-                                                            
-                                                            Consider A. Its segment between the A-B and A-D joints has |d-a| edges. The alternative route from the A-B joint to the A-D joint obtained by following B to the B-C joint, then C to the C-D joint, then D to the A-D joint has
-                                                              |b-a|+|c-b|+|d-c|
-                                                            edges. The hypotheses on pairwise intersections make this alternative route internally disjoint from the remainder of A and internally linear: consecutive constituent paths meet only at the displayed joints and the nonconsecutive pairs are disjoint. Replacing the A-segment by this route therefore gives a path with the same last vertex as A. Maximality of A gives
-                                                              |b-a|+|c-b|+|d-c| <= |d-a|.
-                                                            The reverse inequality is the triangle inequality, so equality holds. Equality in the real-line triangle inequality implies that a,b,c,d occur monotonically in this order. Because adjacent levels are distinct, the monotonicity is strict.
-                                                            
-                                                            Now make the analogous replacement on B. The B-segment between levels a and b can be replaced by the route through A,D,C, giving
-                                                              |d-a|+|c-d|+|b-c| <= |b-a|.
-                                                            Again equality must hold, so a,d,c,b must occur monotonically in this order.
-                                                            
-                                                            But a,b,c,d are strictly monotone. Reversing all inequalities if necessary, suppose a<b<c<d. Then a,d,c,b is neither nondecreasing nor nonincreasing, contradicting the equality condition for the second replacement. Thus the assumed four-path configuration is impossible.
-
-                                                          • [1001108] Every flat gap-one terminal cycle forces a balanced lens between entrance rails
-                                                              STATEMENT
-                                                              Let
-                                                                C=(e_0,...,e_{c-1}), c>=4,
-                                                              be a flat gap-one terminal cycle with
-                                                                e_i={x_i,t_i,t_{i+1}},
-                                                              where every e_i is ascending nonspecial of rank p-1, every t_i has vertex rank p, and every private entrance x_i has vertex rank p-2. For canonical maximum entrance rails R_i ending at x_i, some two distinct rails contain a balanced elementary lens. Equivalently, the entrance-rail lens-free residual is impossible.
-                                                              BODY / PROOF
-                                                              Assume for contradiction that the cycle is entrance-rail lens-free. Then all conclusions of 960a5153b900, 8777d2ccd614, and 14bb137811b4 apply.
-                                                              
-                                                              If c=5, 14bb137811b4 already gives a contradiction.
-                                                              
-                                                              If c=4, the four rails R_0,R_1,R_2,R_3 have unique intersections on each consecutive pair by 960a5153b900, while the opposite pairs R_0,R_2 and R_1,R_3 are disjoint by 14bb137811b4. This is forbidden by the four-path lemma 188e6b091d88.
-                                                              
-                                                              Now let c>=6 and fix i. Consider the four equal-length maximum entrance rails in the cyclic order
-                                                                A=R_i,
-                                                                B=R_{i+1},
-                                                                C=R_{i+2},
-                                                                D=R_{i-1}.
-                                                              The pairs A-B, B-C, and D-A are adjacent rail pairs, so each has exactly one common vertex by 960a5153b900. The pair C-D has cyclic index difference three, so
-                                                                V(C) intersect V(D)={t_{i+1}}
-                                                              by 8777d2ccd614, again a unique intersection. The opposite pairs A-C and B-D have cyclic index difference two and are therefore disjoint by 14bb137811b4. Thus A,B,C,D satisfy exactly the forbidden configuration of 188e6b091d88, a contradiction.
-                                                              
-                                                              Hence no entrance-rail lens-free flat gap-one terminal cycle exists. Therefore every such cycle contains a balanced elementary lens between two distinct canonical entrance rails.
+                                                        Now let c>=6 and fix i. Consider the four equal-length maximum entrance rails in the cyclic order
+                                                          A=R_i,
+                                                          B=R_{i+1},
+                                                          C=R_{i+2},
+                                                          D=R_{i-1}.
+                                                        The pairs A-B, B-C, and D-A are adjacent rail pairs, so each has exactly one common vertex by 960a5153b900. The pair C-D has cyclic index difference three, so
+                                                          V(C) intersect V(D)={t_{i+1}}
+                                                        by 8777d2ccd614, again a unique intersection. The opposite pairs A-C and B-D have cyclic index difference two and are therefore disjoint by 14bb137811b4. Thus A,B,C,D satisfy exactly the forbidden configuration of 188e6b091d88, a contradiction.
+                                                        
+                                                        Hence no entrance-rail lens-free flat gap-one terminal cycle exists. Therefore every such cycle contains a balanced elementary lens between two distinct canonical entrance rails.
 
                                         • [1000479] Terminal blockers on a flat-cycle entrance rail are pushed early by their cycle distance
                                             STATEMENT
@@ -5645,185 +5597,6 @@
                                   The only asymptotically hard misaligned regime for the 43/48 coefficient is therefore
                                     16p/21 < q < p,
                                   with the worst shell q=p-O(1).
-
-                      • [1000484] Single-contact central windows give a two-envelope local bound in every uniformity
-                          STATEMENT
-                          Let H be a finite linear r-graph, r>=3. Fix a nonisolated vertex v of rank p and a maximum p-edge path
-                            P=(g_1,...,g_p)
-                          with last vertex v and last edge h=g_p. For an incident edge e!=h put
-                            mu_v(e)=|(e\{v}) intersect (V(P)\h)|.
-                          
-                          Let e be an ascending nonspecial edge of rank s<p at which v is terminal, and suppose mu_v(e)=1. Let c be its unique contact with V(P)\h, and let a and b be the first and last indices of path edges containing c. Then
-                            a<=s-1,
-                            b>=p-s+2.
-                          If c is a terminal vertex of e rather than its unique entrance, then in fact a<=s-2.
-                          
-                          Consequently, for q<p, if s_q(v;P) is the number of ascending nonspecial edges terminal at v, of edge rank at most q, and having mu_v(e)=1, then
-                            s_q(v;P)
-                            <= B_r(p,q)
-                            := max{0,(r-1)(2q-p)-(2r-3)}.
-                          
-                          Now let t(v)>0 count all ascending nonspecial edges terminal at v, let q=q(v)<p be their maximum edge rank, and let
-                            X_v=sum_{f contains v} max(mu_v(f)-1,0),
-                          with mu_v(h)=1 as in the general contact-multiplicity inequality. Then
-                            t(v)-X_v
-                            <= min{
-                                 ((6r-7)/8)q+(7-2r)/4,
-                                 B_r(p,q)
-                               }.
-                          
-                          Thus the two leading-order envelopes cross at
-                            q/p = 8(r-1)/(10r-9).
-                          More exactly, whenever B_r(p,q)>0 the central-window envelope is no larger than the fixed-entrance envelope if
-                            q <= [8(r-1)p+2(6r-5)]/(10r-9).
-                          For r=3, B_3(p,q)=max{0,4q-2p-3}, recovering the existing 3-uniform single-contact window.
-                          BODY / PROOF
-                          Write x for the unique entrance of e. Since s<p, the edge e is not the last edge h. Because e and h both contain v and H is linear, no vertex of e\{v} lies in h. The hypothesis mu_v(e)=1 therefore says that c is the only vertex of e\{v} lying anywhere on P.
-                          
-                          For the left bound, first suppose c=x. By definition of a, the prefix g_1,...,g_a is a linear path with last vertex x. Hence
-                            a<=phi(x)=s-1,
-                          because e is ascending.
-                          
-                          Suppose instead that c is one of the terminal vertices of e. Then x and every other vertex of e\{v,c} are absent from P. Hence
-                            g_1,...,g_a,e
-                          is a linear path of length a+1 ending in e, and it enters e through the terminal vertex c. If a+1>s this exceeds the edge rank s. If a+1=s it is a longest path ending in the nonspecial edge e with entrance label c, contradicting that x is the unique entrance. Therefore a+1<=s-1 and a<=s-2.
-                          
-                          For the right bound, suppose b<=p-s+1. Then the final s-1 path edges
-                            g_{p-s+2},...,g_p
-                          avoid c. They also avoid every other vertex of e except v, because c is the unique contact outside h and e cap h={v}. Appending e gives an s-edge linear path ending in e with entrance label v. But v is terminal at e and x is its unique entrance, again a contradiction. Thus b>=p-s+2.
-                          
-                          Now fix q<p. Every contact c belonging to an edge counted by s_q(v;P) has first occurrence at most q-1 and last occurrence at least p-q+2. A vertex of P outside h is either private in one path edge or is a joint of two consecutive path edges. Since q<p, the eligible private positions are the internal edges
-                            g_i,  p-q+2<=i<=q-1,
-                          and the eligible joints are
-                            g_i cap g_{i+1},  p-q+1<=i<=q-1.
-                          There are
-                            max(0,2q-p-2)
-                          eligible internal edge positions, each with r-2 private vertices, and
-                            max(0,2q-p-1)
-                          eligible joints. Their total is exactly
-                            max{0,(r-1)(2q-p)-(2r-3)}.
-                          Distinct edges through v have disjoint off-v vertex sets by linearity, so their unique contacts are distinct. This proves the bound for s_q(v;P).
-                          
-                          For the two-envelope inequality, let T(v) be the t(v) ascending nonspecial edges terminal at v. Every e in T(v) has edge rank at most q<p, so e!=h. Also mu_v(e) cannot be zero: otherwise P,e would be a (p+1)-edge linear path, contradicting phi(e)<=q<p. Hence every e in T(v) has mu_v(e)>=1.
-                          
-                          Let X_v^T be the excess multiplicity contributed only by T(v). Then
-                            t(v)-X_v
-                            <= t(v)-X_v^T
-                            = sum_{e in T(v)} [1-max(mu_v(e)-1,0)]
-                            <= #{e in T(v): mu_v(e)=1}
-                            <= B_r(p,q).
-                          On the other hand, the certified general-r fixed-entrance capacity bound applied at a maximum-rank edge in T(v) gives
-                            t(v)<=((6r-7)/8)q+(7-2r)/4,
-                          so the same upper bound holds for t(v)-X_v. Taking the minimum gives the claimed two-envelope estimate.
-                          
-                          Finally,
-                            B_r(p,q)-[((6r-7)/8)q+(7-2r)/4]
-                            = ((10r-9)/8)q-(r-1)p-(6r-5)/4
-                          whenever B_r(p,q)>0, which gives the exact crossover condition and the stated leading-order ratio.
-
-                        • [1000373] Minimum-rank terminal assignment forces quadratic off-center rank in every uniformity
-                            STATEMENT
-                            Let H be a finite linear r-graph with r>=3. Fix a vertex v of rank p and a maximum p-edge path P ending at v. Let e_1,...,e_k be distinct ascending nonspecial edges terminal at v, all of edge rank less than p, and suppose every e_i has contact multiplicity one on P. Write q_i=phi(e_i), let x_i be the unique entrance of e_i, and relabel so that
-                              q_1<=...<=q_k.
-                            
-                            Then for every i,
-                              q_i >= ceil(((r-1)p+i+2r-3)/(2(r-1))),
-                            and therefore
-                              sum_{i=1}^k phi(x_i)
-                              >= sum_{i=1}^k [
-                                   ceil(((r-1)p+i+2r-3)/(2(r-1)))-1
-                                 ]
-                              >= kp/2 + k(k-1)/(4(r-1)).
-                            
-                            If, in addition, v has minimum vertex rank among the r-1 terminal vertices of every e_i, then all (r-1)k vertices in union_i(e_i\{v}) are distinct, and the r-2 terminal vertices of e_i other than v all have rank at least p. Hence
-                              sum_{z in union_i(e_i\{v})} phi(z)
-                              >= ((2r-3)/2)pk + k(k-1)/(4(r-1)).
-                            
-                            In particular this applies after assigning any family of globally unpaid signature-(0,1,...,1) ascending edges to a terminal of minimum vertex rank. For r=3 the entrance-rank conclusion becomes
-                              sum_i phi(x_i) >= kp/2+k(k-1)/8,
-                            the same numerical packet bound as the certified 3-uniform minimum-terminal lemma on the terminal-single subclass.
-                            BODY / PROOF
-                            Order the edges by q_1<=...<=q_k. For each i, the edges e_1,...,e_i all have rank at most q_i and contact multiplicity one on the fixed maximum p-edge path P. The central-window theorem 6af906e32265 therefore gives
-                              i <= B_r(p,q_i)
-                                = (r-1)(2q_i-p)-(2r-3).
-                            The right side is positive because i>=1. Rearranging,
-                              2(r-1)q_i >= (r-1)p+i+2r-3,
-                            and integrality gives
-                              q_i >= ceil(((r-1)p+i+2r-3)/(2(r-1))).
-                            
-                            Since e_i is ascending with unique entrance x_i,
-                              phi(x_i)=q_i-1.
-                            Summing the ceiling bounds proves the first displayed estimate. Dropping the ceilings gives
-                              sum_i phi(x_i)
-                              >= kp/2
-                                 + [sum_i i + k(2r-3)]/[2(r-1)]
-                                 - k
-                              = kp/2 + k(k-1)/(4(r-1)).
-                            
-                            Any two distinct edges in the family already share v. By linearity they share no other vertex, so the sets e_i\{v} are pairwise disjoint. Each nonspecial r-edge has one unique entrance and r-1 terminal vertices. Under the minimum-rank assumption on v, the r-2 terminals other than v in every e_i have vertex rank at least p. Adding their total contribution (r-2)pk to the entrance-rank estimate yields
-                              ((r-2)+1/2)pk + k(k-1)/(4(r-1))
-                              = ((2r-3)/2)pk + k(k-1)/(4(r-1)).
-                            
-                            Finally, an edge of signature (0,1,...,1) in the general contact-multiplicity reduction has multiplicity one at every terminal. Assigning each such edge to one of its minimum-rank terminals therefore satisfies the hypotheses at every assigned center.
-
-                          • [1001131] Terminal-single packets obey both central-window and fixed-capacity rank profiles
-                              STATEMENT
-                              Let H be a finite linear r-graph with r>=3. Fix a vertex v of rank p and a maximum p-edge path P ending at v. Let e_1,...,e_k be distinct ascending nonspecial edges terminal at v, each of edge rank less than p and each having contact multiplicity one on P. Write
-                                q_i=phi(e_i)
-                              and relabel so that q_1<=...<=q_k.
-                              
-                              Then for every i,
-                                q_i >= max{
-                                  ceil((8i+4r-14)/(6r-7)),
-                                  ceil(((r-1)p+i+2r-3)/(2(r-1)))
-                                }.
-                              
-                              Equivalently, the central-window lower profile controls the initial segment of the ordered packet, while the fixed-entrance capacity lower profile controls its dense upper tail. Their real-valued profiles cross at
-                                i_*=
-                                ((6r-7)(r-1)p+4r^2+4r-7)/(10r-9).
-                              
-                              If x_i is the unique entrance of e_i, then
-                                sum_i phi(x_i)
-                                >= sum_i [
-                                  max{
-                                    ceil((8i+4r-14)/(6r-7)),
-                                    ceil(((r-1)p+i+2r-3)/(2(r-1)))
-                                  }-1
-                                ].
-                              
-                              If, moreover, v has minimum vertex rank among the r-1 terminal vertices of every e_i, then the r-2 other terminals on each e_i have rank at least p and all off-v vertices are pairwise distinct across the family. Hence their total off-v rank is at least
-                                (r-2)pk
-                              plus the displayed entrance-rank sum.
-                              
-                              This simultaneously strengthens the two separate packet bounds 34f8dc7df3f6 and 5198e921de4f on their common terminal-single domain.
-                              BODY / PROOF
-                              Fix i. Since q_1<=...<=q_i, the first i edges all have edge rank at most q_i.
-                              
-                              First apply the fixed-entrance capacity bound a570a11f0001 at v. The first i edges belong to J_{q_i}(v), so
-                                i<=((6r-7)/8)q_i+(7-2r)/4.
-                              Rearranging and using integrality gives
-                                q_i>=ceil((8i+4r-14)/(6r-7)).
-                              
-                              Second apply the single-contact central-window theorem 6af906e32265 to the same first i edges on P. It gives
-                                i<=(r-1)(2q_i-p)-(2r-3).
-                              Therefore
-                                q_i>=ceil(((r-1)p+i+2r-3)/(2(r-1))).
-                              
-                              Both inequalities hold simultaneously, proving the maximum profile.
-                              
-                              To locate the crossover of the underlying real-valued profiles, solve
-                                (8i+4r-14)/(6r-7)
-                                =((r-1)p+i+2r-3)/(2(r-1)).
-                              After clearing denominators,
-                                (10r-9)i
-                                =(6r-7)(r-1)p+4r^2+4r-7,
-                              which gives i_*.
-                              
-                              Because e_i is ascending, its unique entrance x_i has
-                                phi(x_i)=q_i-1.
-                              Summing the pointwise maximum profile gives the entrance-rank estimate.
-                              
-                              Finally, under minimum-terminal assignment, linearity makes the sets e_i\{v} pairwise disjoint, and each e_i contains r-2 terminal vertices other than v, each of rank at least p. Adding their rank contribution proves the last assertion.
 
                   • [1001055] Exact transfer solution gives a rank-sensitive 43/48 bound
                       STATEMENT
@@ -7172,66 +6945,11 @@
                                               
                                               If phi(z)>=p, then all three vertices of h have vertex rank at least p, giving (H). Otherwise phi(z)=p-1. By definition, h is then ascending, and we are in (F).
 
-                                            • [1000058] Flat shared-last-edge states have half-density in the terminal-contact window
+                                            • [1001178] Flat host-packing continuation
                                                 STATEMENT
-                                                Let P=(g_1,...,g_p) be a maximum endpoint path with last vertex v. Let F be a family of distinct ascending nonspecial edges
-                                                  e_i={x_i,v,u_i}
-                                                such that:
-                                                - v is terminal at e_i;
-                                                - phi(e_i)=q_i<p<=phi(u_i);
-                                                - the unique off-v contact of e_i with P is u_i;
-                                                - for each i there is a maximum p-edge path Q_i ending at u_i whose last edge is an internal host edge g_{j_i}, and Q_i enters g_{j_i} through the forward joint
-                                                    z_{j_i}=g_{j_i} intersect g_{j_i+1};
-                                                - g_{j_i} is nonspecial ascending of edge rank p with unique entrance z_{j_i}.
-                                                
-                                                For Q<p let
-                                                  F_{<=Q}={e_i in F:q_i<=Q}.
-                                                Then
-                                                  |F_{<=Q}| <= max(0,2Q-p-1).
-                                                
-                                                Consequently, if q_1<=...<=q_k are the edge ranks in F, then
-                                                  q_i >= ceil((p+i+1)/2)
-                                                for every i.
-                                                
-                                                In particular, the host edges g_{j_i} supporting these flat states occupy pairwise nonconsecutive indices.
+                                                Route bridge: the flat terminal-retained analysis continues after toolkit lemma 1000058.
                                                 BODY / PROOF
-                                                First note that two consecutive host edges cannot both have the stated flat orientation. Suppose g_j and g_{j+1} both have edge rank p and are nonspecial ascending with unique entrances
-                                                  z_j=g_j intersect g_{j+1},
-                                                  z_{j+1}=g_{j+1} intersect g_{j+2}.
-                                                Because z_j is the unique entrance of g_j,
-                                                  phi(z_j)=p-1.
-                                                But z_j is not the unique entrance of g_{j+1}; it is one of the two terminal vertices of that nonspecial edge. Hence
-                                                  phi(g_{j+1},z_j)=phi(g_{j+1})=p,
-                                                so phi(z_j)>=p, a contradiction. Thus the supporting indices j_i form an independent set of integers.
-                                                
-                                                Fix e_i of rank q_i<=Q. Since Q_i enters its last edge g_{j_i} through z_{j_i} and ends at u_i, the last vertex u_i is a terminal vertex of g_{j_i}, hence
-                                                  u_i in {b_{j_i}, z_{j_i-1}},
-                                                where b_j denotes the private vertex of g_j.
-                                                
-                                                The edge e_i has exactly one off-v contact on P, namely u_i. Apply the singleton-contact localization 49080cbf1371.
-                                                
-                                                If u_i=b_{j_i}, then
-                                                  p-q_i+2 <= j_i <= q_i-2.
-                                                
-                                                If u_i=z_{j_i-1}, then its occurrence interval on P is {j_i-1,j_i}. The same localization gives
-                                                  p-q_i+2 <= j_i <= q_i-1.
-                                                
-                                                Thus in all cases
-                                                  p-Q+2 <= j_i <= Q-1.                         (1)
-                                                
-                                                There are
-                                                  N=max(0,2Q-p-2)
-                                                integer positions in the interval (1). Since the distinct supporting host edges occupy nonconsecutive positions, there are at most ceil(N/2) distinct supporting edges.
-                                                
-                                                A fixed supporting edge g_j can serve at most two members of F: their distinct last vertices u_i must be among its two terminal vertices b_j and z_{j-1}. Therefore
-                                                  |F_{<=Q}| <= 2 ceil(N/2) <= N+1
-                                                             <= max(0,2Q-p-1),
-                                                where the empty-window case is immediate.
-                                                
-                                                Finally, for the i-th ordered rank q_i, apply the bound with Q=q_i:
-                                                  i <= 2q_i-p-1,
-                                                hence
-                                                  q_i >= ceil((p+i+1)/2).
+                                                Nonmathematical proof-frame wrapper preserving the original route position after rehoming the reusable host-packing lemma to Toolkit.
 
                                               • [1000234] A cycle-free flat terminal-retained state forces a rank-p edge common to both host paths
                                                   STATEMENT
@@ -7634,26 +7352,6 @@
                                           Summing over u,v and eliminating U_u+U_v via the preceding defect identity yields
                                             d_u^*+d_v^*=2q+S_u+S_v-p.
 
-                                        • [1000285] A saturated terminal star nearly realizes the period-four singleton extremizer on the opposite source rail
-                                            STATEMENT
-                                            Let e={x,u,v} be an ascending nonspecial edge of rank q>=4 and let R be a canonical (q-1)-edge source rail of e. Fix one terminal w in {u,v}, and assume q is the maximum rank of an ascending nonspecial edge terminal at w.
-                                            
-                                            Let t(w) be the number of ascending nonspecial edges terminal at w and put delta_w=gamma(q)-t(w)>=0, where gamma(q)=floor((11q-5)/8).
-                                            
-                                            Relative to R, classify the t(w)-1 ascending terminal competitors f!=e as single-contact or double-contact edges, with counts S_w,B_w, and let U_w count vertices of W=V(R) minus {x} unused by all these competitors. Put alpha(q)=ceil((3q-8)/4) and kappa_q=alpha(q)-2gamma(q)+2q. Then kappa_q belongs to {0,1}, and
-                                            alpha(q)-kappa_q-2delta_w <= S_w <= alpha(q),
-                                            0 <= U_w <= kappa_q+2delta_w <= 2delta_w+1.
-                                            
-                                            Thus if delta_w=o(q), the terminal star has S_w=(3/4+o(1))q single blockers on R and leaves only o(q) rail vertices unused. If e is maximum-rank at both terminals u,v and both deficits are o(q), the same source rail simultaneously supports two near-extremal period-four singleton patterns, one from each terminal star.
-                                            BODY / PROOF
-                                            Take T_w in 38e2ce9f9772 to be all ascending terminal edges through w other than e. The maximum-rank assumption ensures every such edge has rank at most q, so the source-rail coupling lemma applies. Its exact identity gives 2t(w)=2q+S_w-U_w, because d_w^*=t(w). Hence S_w-U_w=2gamma(q)-2q-2delta_w. (1)
-                                            
-                                            The exact fixed-entrance transfer theorem eb40ddcc33ca, applied to the q-edge path R,e ending at w, bounds the number of singleton contacts among all incident edges of rank at most q by alpha(q)=ceil((3q-8)/4). Our ascending-terminal competitors form a subfamily, so S_w<=alpha(q). (2)
-                                            
-                                            Combining (1) and (2), U_w=S_w-[2gamma(q)-2q-2delta_w]<=alpha(q)-2gamma(q)+2q+2delta_w=kappa_q+2delta_w. Since U_w>=0, equation (1) also gives S_w>=2gamma(q)-2q-2delta_w=alpha(q)-kappa_q-2delta_w.
-                                            
-                                            Finally, substituting gamma(q)=floor((11q-5)/8) and alpha(q)=ceil((3q-8)/4) in the eight residue classes modulo 8 gives kappa_q in {0,1}. This proves the inequalities and the asymptotic conclusion.
-
                                     • [1000897] Color-terminal collisions on a rank-monotone terminal path point only backward
                                         STATEMENT
                                         Let
@@ -7909,48 +7607,11 @@
                                                         ceil((m-1)/2)
                                                         pairwise edge-disjoint linear cycles of ascending nonspecial edges. Since m>=ceil(sqrt(M)), this is at least the quantity in (2).
 
-                                                      • [1000126] Two crossing backward collisions either shortcut to a linear cycle or expose a further collision
+                                                      • [1001180] Crossing-collision continuation
                                                           STATEMENT
-                                                          Let v_0v_1...v_k be a rainbow terminal-pair path of ascending nonspecial edges
-                                                          E_s={x_s,v_{s-1},v_s}
-                                                          with nondecreasing edge ranks. Suppose
-                                                          x_i=v_j and x_h=v_l
-                                                          are crossing backward collisions with
-                                                          j<l<i<h.
-                                                          
-                                                          Consider the edge sequence
-                                                          C=
-                                                          E_{j+1},E_{j+2},...,E_l,
-                                                          E_h,E_{h-1},...,E_i.
-                                                          
-                                                          Then one of the following holds.
-                                                          
-                                                          (A) C is a linear cycle of length
-                                                          L=(l-j)+(h-i+1).
-                                                          Every edge of C has rank at least L, and r_i>=L+1.
-                                                          
-                                                          (B) There is an additional backward collision x_b=v_a, distinct from the two displayed collisions, with either
-                                                          j<=a<b<=l,
-                                                          or
-                                                          i<=a<b<=h,
-                                                          or
-                                                          j<=a<l<i<b<=h.
-                                                          Thus failure of the crossing shortcut is witnessed in one of the two flanks or by another collision lying inside the crossing rectangle between the displayed chords.
+                                                          Route bridge: fixed-cut collision packing continues using toolkit lemma 1000126.
                                                           BODY / PROOF
-                                                          The displayed sequence has the intended consecutive intersections:
-                                                          the left terminal segment runs from v_j to v_l;
-                                                          E_l meets E_h at x_h=v_l;
-                                                          the reversed right terminal segment runs from E_h down to E_i using the joints v_{h-1},...,v_i;
-                                                          and E_i meets E_{j+1} at x_i=v_j, closing the cycle.
-                                                          All intended intersection vertices are distinct because the terminal graph path is simple and j<l<i<h.
-                                                          
-                                                          If C is not a linear cycle, two nonconsecutive displayed hyperedges have an extra common vertex. Distinct terminal-pair edges on the original simple terminal path cannot create such an intersection through two terminal vertices, and rainbow colors exclude entrance-entrance coincidences. Hence an extra intersection is a color-terminal equality x_b=v_a.
-                                                          
-                                                          By c9a012c1b82e every such equality points backward in the original index order, so a<=b-2. The displayed indices consist of the left block j+1,...,l and the right block i,...,h. Therefore an additional collision must have both endpoints in the left block, both in the right block, or terminal endpoint in the left block and colliding-edge index in the right block. These are exactly the three alternatives in (B). A collision with terminal endpoint on the right and colliding edge on the left would point forward and is impossible.
-                                                          
-                                                          If no such additional collision exists, C is a linear cycle. Its length is
-                                                          L=(l-j)+(h-i+1).
-                                                          All displayed edges are ascending nonspecial, so f2925a904b8e gives rank at least L for each of them. In particular r_{j+1}>=L. The collision x_i=v_j gives r_{j+1}<=r_i-1 by c9a012c1b82e, hence r_i>=L+1.
+                                                          Nonmathematical proof-frame wrapper preserving the original route position after rehoming the reusable crossing-collision shortcut lemma.
 
                                                         • [1000769] A saturated crossing collision family packs linearly many edge-disjoint cycles
                                                             STATEMENT
@@ -8007,33 +7668,6 @@
                                                               
                                                               In either case the number of cycles is at least
                                                               ceil((ceil(sqrt(M))-1)/2).
-
-                                                            • [1000224] Collision count is bounded by rank spread times squared cycle-packing number
-                                                                STATEMENT
-                                                                Let v_0v_1...v_k be a rainbow terminal-pair path of ascending nonspecial edges
-                                                                E_1,...,E_k
-                                                                with nondecreasing ranks r_1<=...<=r_k. Let C be the number of color-terminal collision chords on this path, let
-                                                                D=r_k-r_1,
-                                                                and let nu be the maximum number of pairwise edge-disjoint linear cycles whose edges all belong to {E_1,...,E_k}.
-                                                                
-                                                                Then
-                                                                C <= D(2nu+1)^2.
-                                                                In particular, if D=0 then C=0, and more generally a path with small rank spread and bounded cycle-packing number is close to strong-rainbow.
-                                                                BODY / PROOF
-                                                                By 31cb29f347a8, every collision chord crosses at least one strict rank jump. Assign each collision to one strict jump that it crosses, for example the leftmost such jump. The number J of strict jumps is at most D because the integer rank rises by at least one at each strict jump.
-                                                                
-                                                                Fix one strict jump and let M be the number of collision chords assigned to it. All M chords cross that fixed cut, so e4a44a230fe7 supplies at least
-                                                                ceil((ceil(sqrt(M))-1)/2)
-                                                                pairwise edge-disjoint linear cycles, all using edges from the parent-edge set {E_1,...,E_k}. By the definition of nu,
-                                                                ceil((ceil(sqrt(M))-1)/2) <= nu.
-                                                                Therefore
-                                                                ceil(sqrt(M)) <= 2nu+1,
-                                                                and hence
-                                                                M <= (2nu+1)^2.
-                                                                
-                                                                Summing this bound over the J<=D strict jumps gives
-                                                                C <= J(2nu+1)^2 <= D(2nu+1)^2.
-                                                                When D=0 there are no strict jumps, so C=0.
 
                                         • [1000938] Rank spread bounds nondecreasing rainbow terminal paths in a path-free hypergraph
                                             STATEMENT
@@ -9144,210 +8778,107 @@
                                                       g_{q-1} intersect g_q.
                                                     This proves the stated classification.
 
-                                                  • [1001066] The separated plus-three state at a 2q-3 cut forces adjacent source-path overlap
+                                                  • [1001188] Near-factor-two collision cuts reduce to overlap, triangles, or one terminal-only residue
                                                       STATEMENT
-                                                      Retain case (P_3) of c9982d3355c8:
-                                                        r_i=2q-3,
-                                                        r_j=r_{j+1}=q,
-                                                      and suppose the two exact contact intervals on
-                                                        R_i=(g_1,...,g_{2q-4})
-                                                      are disjoint.
+                                                      Let v_0v_1...v_k be a rainbow terminal-pair path whose parent hyperedges lie in U_11 and have nondecreasing ranks, with chosen maximum source paths R_i.
                                                       
-                                                      Let c_+ be the later exact contact. Then c_+ is the unique entrance of whichever adjacent parent edge F in {E_j,E_{j+1}} contains it.
+                                                      At a cut r_t=q, r_{t+1}=2q-3:
+                                                      1. In the separated plus-three case r_i=2q-3 and r_j=r_{j+1}=q, the later exact contact on R_i is the unique entrance x_s of one adjacent parent edge E_s, and |V(R_i)∩V(R_s)|>=2.
+                                                      2. Consequently, if M interior color-terminal collisions cross the cut, then either there are at least ceil(M/6) pairwise index-disjoint source-path pairs with at least two common vertices, or at least ceil(M/64) pairwise edge-disjoint linear 3-cycles.
                                                       
-                                                      Consequently, if F=E_s with s in {j,j+1}, then
-                                                        x_s=c_+ belongs to V(R_i)
-                                                      and
-                                                        |V(R_i) intersect V(R_s)|>=2.
+                                                      At the next cut r_t=q, r_{t+1}=2q-4, every interior collision again yields adjacent source-path multiple overlap or a local linear 3-cycle, except possibly the single residual rank pattern
+                                                      r_i=2q-4, r_j=r_{j+1}=q,
+                                                      where both exact contacts are opposite terminals with disjoint intervals. In that residue the earlier contact lies in {g_{q-4}∩g_{q-3}, private(g_{q-3})} and the later contact lies in {private(g_{q-2}), g_{q-2}∩g_{q-1}} on R_i=(g_1,...,g_{2q-5}).
                                                       BODY / PROOF
-                                                      By c9982d3355c8, the later contact c_+ has first occurrence index
-                                                        a(c_+)=q-1
-                                                      and is either the private vertex of g_{q-1} or the joint
-                                                        g_{q-1} intersect g_q.
+                                                      For the 2q-3 cut, the separated plus-three contact bounds force the later contact to occur at its maximal singleton position. The stronger opposite-terminal bound is then violated unless this later contact is the unique entrance x_s of its parent edge. Since x_s lies on R_i and R_s ends at x_s, unique-intersection rigidity forbids x_s from being their only common vertex, giving a second intersection.
                                                       
-                                                      Suppose c_+ were the opposite terminal of its rank-q parent edge F. The stronger opposite-terminal part of the certified singleton-window theorem 49080cbf1371 would give
-                                                        a(c_+)<=q-2,
-                                                      contradicting a(c_+)=q-1. Therefore c_+ is the unique entrance x_s of F=E_s.
+                                                      Classifying all crossing collisions at the 2q-3 cut therefore leaves only overlap certificates and local 3-cycles. Choosing overlap certificates with their adjacent target index gives a graph of bounded degree on path indices, so a constant-fraction matching exists; the triangle branch has the certified constant-factor edge-disjoint packing. This gives the stated M/6 versus M/64 alternative.
                                                       
-                                                      Thus x_s lies on R_i. The chosen maximum source path R_s ends at x_s. If R_i and R_s had x_s as their only common vertex, the certified unique-intersection theorem 5854d853a44b would force x_s to be an internal aligned joint of R_s, contradicting that x_s is its last vertex. Hence the two source paths have at least two common vertices.
+                                                      For the 2q-4 cut, the universal collision rank floor restricts r_i to 2q-4,2q-3,2q-2. The higher two owner ranks reduce to the already certified tight or plus-three cases. When r_i=2q-4, the adjacent ranks lie in {q-1,q}; the (q-1,q-1) and mixed (q-1,q) cases again reduce to overlap or triangle. Thus only (q,q) remains. If either exact contact is a unique entrance, unique-intersection rigidity again gives multiple source-path overlap. Hence a genuine new residue has both contacts opposite-terminal. The terminal-only singleton window on the host of length 2q-5 leaves exactly five possible central contact intervals; disjoint ordered pairs must take the earlier interval from the first two and the later interval from the last two, yielding precisely the four stated terminal-only patterns.
 
-                                                    • [1000927] A 2q-3 cut with M crossing collisions forces linear overlap matching or linear 3-cycle packing
+                                                    • [1000718] At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair
                                                         STATEMENT
                                                         Let
                                                         v_0v_1...v_k
                                                         be a rainbow terminal-pair path whose parent hyperedges belong to U_11 and have nondecreasing edge ranks.
                                                         Fix a cut with
                                                           r_t=q,
-                                                          r_{t+1}=2q-3,
-                                                        and suppose M interior color-terminal collisions cross the cut.
+                                                          r_{t+1}=2q-4,
+                                                        and let x_i=v_j be an interior color-terminal collision crossing the cut.
                                                         
                                                         Then at least one of the following holds:
                                                         
-                                                        (1) there are at least ceil(M/6) pairwise index-disjoint pairs of chosen maximum source paths, each pair having at least two common vertices;
+                                                        (1) there is an adjacent index s in {j,j+1} such that
+                                                            |V(R_i) intersect V(R_s)|>=2;
                                                         
-                                                        (2) the hypergraph contains at least ceil(M/64) pairwise edge-disjoint linear 3-cycles arising from the crossing collisions.
+                                                        (2) some edge of R_i together with E_j,E_{j+1} forms a linear 3-cycle;
                                                         
-                                                        Thus collision congestion at the next-to-boundary multiplicative jump has a linear, rather than square-root, structural cost.
-                                                        BODY / PROOF
-                                                        By c9982d3355c8 and ed2ef3140f4f, every crossing collision has one of two structural outputs.
-                                                        
-                                                        Overlap type: there is an adjacent index s in {j,j+1} such that
-                                                          |V(R_i) intersect V(R_s)|>=2.
-                                                        
-                                                        Triangle type: the two exact contact intervals overlap and an edge of R_i together with E_j,E_{j+1} forms a local linear 3-cycle.
-                                                        
-                                                        Let O and T be the numbers of overlap-type and triangle-type collisions, choosing the overlap label when both outputs happen to be available. Then
-                                                          O+T=M.
-                                                        
-                                                        Suppose first that T>=M/2. The certified local-triangle packing theorem 48125e6d5ad9 gives at least
-                                                          ceil(T/32)>=ceil(M/64)
-                                                        pairwise edge-disjoint linear 3-cycles. This is (2).
-                                                        
-                                                        Now suppose O>=M/2. For each overlap-type collision x_i=v_j choose one witnessing adjacent index s in {j,j+1} and draw a directed edge
-                                                          i -> s.
-                                                        
-                                                        Every directed edge points backward because s<=j+1<=i-1. Each owner index i has outdegree at most one. A fixed index s can be the chosen target only for a collision hitting v_s or v_{s-1}; since hit indices are distinct on the rainbow terminal-pair path, the indegree is at most two.
-                                                        
-                                                        The underlying graph therefore has maximum degree at most three. It is also a forest. Indeed, if it contained an undirected cycle, choose the largest index on that cycle. Both incident cycle edges would point from this largest index toward smaller indices, giving outdegree at least two, a contradiction.
-                                                        
-                                                        A forest of maximum degree at most three has an edge coloring with three colors: remove a leaf edge, color the remaining forest inductively, and use at the leaf edge a color absent from the at most two other edges at its nonleaf endpoint. Therefore one color class is a matching of size at least
-                                                          ceil(O/3)>=ceil(M/6).
-                                                        
-                                                        The corresponding source-path pairs are index-disjoint and each has at least two common vertices. This is (1).
-
-                                                      • [1000219] The mixed plus-three state with owner rank 2q-4 forces a triangle or adjacent source-path overlap
-                                                          STATEMENT
-                                                          Let x_i=v_j be an interior U_11 color-terminal collision on a nondecreasing-edge-rank rainbow terminal-pair path, and suppose
+                                                        (3) the ranks are exactly
                                                             r_i=2q-4,
-                                                            {r_j,r_{j+1}}={q-1,q}.
-                                                          Let
+                                                            r_j=r_{j+1}=q,
+                                                        and both exact contacts of E_j,E_{j+1} with
                                                             R_i=(g_1,...,g_{2q-5})
-                                                          be the chosen maximum source path ending at x_i, with exact contacts c_j,c_{j+1} of the two adjacent parent edges.
-                                                          
-                                                          Then at least one of the following holds:
-                                                          
-                                                          (1) the two exact contact intervals overlap, and some edge of R_i together with E_j,E_{j+1} forms a linear 3-cycle;
-                                                          
-                                                          (2) one of c_j,c_{j+1} is the unique entrance x_s of its parent edge E_s, with s in {j,j+1}, and
-                                                              |V(R_i) intersect V(R_s)|>=2.
-                                                          
-                                                          More precisely, in the disjoint-contact case the later exact contact is always a unique entrance.
-                                                          BODY / PROOF
-                                                          Put p=2q-5. Since
-                                                            (q-1)+q=2q-1=p+4,
-                                                          the rank-sum inequality of the certified separated-singleton theorem 2cc651f9fa5d is tight whenever the two contact intervals are disjoint.
-                                                          
-                                                          If the contact intervals overlap, exactness gives a path edge containing both contacts; together with E_j,E_{j+1} it forms the local linear 3-cycle exactly as in 20ee63fa1617. This is (1).
-                                                          
-                                                          Assume the intervals are disjoint and orient them from the earlier contact c_- to the later contact c_+.
-                                                          
-                                                          First suppose the earlier contact belongs to the rank-(q-1) edge. Equality in the proof of 2cc651f9fa5d forces
-                                                            a(c_-)=p-(q-1)+1=q-3,
-                                                            b(c_-)=q-2.
-                                                          Hence disjointness gives
-                                                            a(c_+)>=q-1.
-                                                          The later edge has rank q, and 49080cbf1371 gives a(c_+)<=q-1. Therefore
-                                                            a(c_+)=q-1.
-                                                          An opposite-terminal singleton contact of a rank-q edge would instead satisfy the stronger bound
-                                                            a(c_+)<=q-2.
-                                                          Thus c_+ is the unique entrance of the rank-q edge.
-                                                          
-                                                          Now suppose the earlier contact belongs to the rank-q edge. Equality similarly forces
-                                                            a(c_-)=p-q+1=q-4,
-                                                            b(c_-)=q-3.
-                                                          Thus the later rank-(q-1) contact satisfies
-                                                            a(c_+)>=q-2.
-                                                          The general singleton bound gives a(c_+)<=q-2, while an opposite-terminal contact would satisfy
-                                                            a(c_+)<=q-3.
-                                                          Therefore again c_+ is the unique entrance of its parent edge.
-                                                          
-                                                          Write c_+=x_s for that adjacent parent edge E_s. Since x_s belongs to R_i and is the last vertex of the chosen maximum source path R_s, the two paths cannot have x_s as their unique common vertex by 5854d853a44b. Hence
-                                                            |V(R_i) intersect V(R_s)|>=2,
-                                                          proving (2).
-
-                                                        • [1000718] At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair
-                                                            STATEMENT
-                                                            Let
-                                                            v_0v_1...v_k
-                                                            be a rainbow terminal-pair path whose parent hyperedges belong to U_11 and have nondecreasing edge ranks.
-                                                            Fix a cut with
-                                                              r_t=q,
-                                                              r_{t+1}=2q-4,
-                                                            and let x_i=v_j be an interior color-terminal collision crossing the cut.
-                                                            
-                                                            Then at least one of the following holds:
-                                                            
-                                                            (1) there is an adjacent index s in {j,j+1} such that
-                                                                |V(R_i) intersect V(R_s)|>=2;
-                                                            
-                                                            (2) some edge of R_i together with E_j,E_{j+1} forms a linear 3-cycle;
-                                                            
-                                                            (3) the ranks are exactly
-                                                                r_i=2q-4,
-                                                                r_j=r_{j+1}=q,
-                                                            and both exact contacts of E_j,E_{j+1} with
-                                                                R_i=(g_1,...,g_{2q-5})
-                                                            are opposite terminals, with disjoint contact intervals. Writing c_- for the earlier contact and c_+ for the later one,
-                                                                c_- belongs to {
-                                                                  g_{q-4} intersect g_{q-3},
-                                                                  private(g_{q-3})
-                                                                },
-                                                            and
-                                                                c_+ belongs to {
-                                                                  private(g_{q-2}),
-                                                                  g_{q-2} intersect g_{q-1}
-                                                                }.
-                                                            
-                                                            Thus the first genuinely new state one rank below the 2q-3 cut is a four-pattern terminal-only central configuration.
-                                                            BODY / PROOF
-                                                            A collision crossing the cut satisfies
-                                                              r_i>=2q-4,
-                                                              r_j,r_{j+1}<=q.
-                                                            The certified bound 867efd696575 gives
-                                                              r_i+2<=r_j+r_{j+1}<=2q,
-                                                            so
-                                                              r_i in {2q-4,2q-3,2q-2}.
-                                                            
-                                                            If r_i=2q-2, both adjacent ranks equal q and the certified even tight form gives (1).
-                                                            
-                                                            If r_i=2q-3, the two possibilities are the tight odd pattern (q-1,q), which gives (1), and the plus-three pattern (q,q). By c9982d3355c8 and ed2ef3140f4f, that plus-three pattern gives (1) when its contact intervals are disjoint and (2) when they overlap.
-                                                            
-                                                            Now let r_i=2q-4. The individual lower bounds in 867efd696575 imply
-                                                              r_j,r_{j+1}>=q-1.
-                                                            Hence the only ordered rank pairs are
-                                                              (q-1,q-1), (q-1,q), (q,q).
-                                                            The first is the tight even pattern and gives (1). The mixed pair (q-1,q) gives (1) or (2) by 31582b0327ff.
-                                                            
-                                                            It remains only
-                                                              r_j=r_{j+1}=q.
-                                                            If the two exact contact intervals overlap, exactness gives (2). Suppose they are disjoint.
-                                                            
-                                                            If either exact contact is a unique entrance x_s of its parent edge E_s, then x_s belongs to R_i while R_s ends at x_s. Unique-intersection rigidity 5854d853a44b implies that R_i and R_s have at least two common vertices, giving (1).
-                                                            
-                                                            Therefore failure of (1) and (2) forces both exact contacts to be opposite terminals. Put
-                                                              p=2q-5.
-                                                            The certified terminal-only singleton window 028c2c3f7167 gives, for each rank-q opposite-terminal contact c with first and last occurrence indices a,b,
-                                                              b>=p-q+2=q-3,
-                                                              a<=q-2,
-                                                            with b in {a,a+1}.
-                                                            Thus the possible terminal-only contact vertices are exactly
+                                                        are opposite terminals, with disjoint contact intervals. Writing c_- for the earlier contact and c_+ for the later one,
+                                                            c_- belongs to {
                                                               g_{q-4} intersect g_{q-3},
-                                                              private(g_{q-3}),
-                                                              g_{q-3} intersect g_{q-2},
+                                                              private(g_{q-3})
+                                                            },
+                                                        and
+                                                            c_+ belongs to {
                                                               private(g_{q-2}),
-                                                              g_{q-2} intersect g_{q-1}.
-                                                            
-                                                            Let c_- precede c_+. Because their intervals are disjoint, the earlier interval must end before the later begins. The middle joint
-                                                              g_{q-3} intersect g_{q-2}
-                                                            has interval [q-3,q-2], so if it were c_- there would be no permitted later terminal-only interval beginning after q-2; and if it were c_+ there would be no permitted earlier interval ending before q-3 except the first joint, which is already covered by the stated left set together with the direct interval check below.
-                                                            
-                                                            More directly, the only terminal-only intervals in increasing order are
-                                                              [q-4,q-3],
-                                                              [q-3,q-3],
-                                                              [q-3,q-2],
-                                                              [q-2,q-2],
-                                                              [q-2,q-1].
-                                                            A disjoint ordered pair must therefore choose its earlier interval from the first two and its later interval from the last two. These correspond exactly to the four contact-pair patterns displayed in (3).
+                                                              g_{q-2} intersect g_{q-1}
+                                                            }.
+                                                        
+                                                        Thus the first genuinely new state one rank below the 2q-3 cut is a four-pattern terminal-only central configuration.
+                                                        BODY / PROOF
+                                                        A collision crossing the cut satisfies
+                                                          r_i>=2q-4,
+                                                          r_j,r_{j+1}<=q.
+                                                        The certified bound 867efd696575 gives
+                                                          r_i+2<=r_j+r_{j+1}<=2q,
+                                                        so
+                                                          r_i in {2q-4,2q-3,2q-2}.
+                                                        
+                                                        If r_i=2q-2, both adjacent ranks equal q and the certified even tight form gives (1).
+                                                        
+                                                        If r_i=2q-3, the two possibilities are the tight odd pattern (q-1,q), which gives (1), and the plus-three pattern (q,q). By c9982d3355c8 and ed2ef3140f4f, that plus-three pattern gives (1) when its contact intervals are disjoint and (2) when they overlap.
+                                                        
+                                                        Now let r_i=2q-4. The individual lower bounds in 867efd696575 imply
+                                                          r_j,r_{j+1}>=q-1.
+                                                        Hence the only ordered rank pairs are
+                                                          (q-1,q-1), (q-1,q), (q,q).
+                                                        The first is the tight even pattern and gives (1). The mixed pair (q-1,q) gives (1) or (2) by 31582b0327ff.
+                                                        
+                                                        It remains only
+                                                          r_j=r_{j+1}=q.
+                                                        If the two exact contact intervals overlap, exactness gives (2). Suppose they are disjoint.
+                                                        
+                                                        If either exact contact is a unique entrance x_s of its parent edge E_s, then x_s belongs to R_i while R_s ends at x_s. Unique-intersection rigidity 5854d853a44b implies that R_i and R_s have at least two common vertices, giving (1).
+                                                        
+                                                        Therefore failure of (1) and (2) forces both exact contacts to be opposite terminals. Put
+                                                          p=2q-5.
+                                                        The certified terminal-only singleton window 028c2c3f7167 gives, for each rank-q opposite-terminal contact c with first and last occurrence indices a,b,
+                                                          b>=p-q+2=q-3,
+                                                          a<=q-2,
+                                                        with b in {a,a+1}.
+                                                        Thus the possible terminal-only contact vertices are exactly
+                                                          g_{q-4} intersect g_{q-3},
+                                                          private(g_{q-3}),
+                                                          g_{q-3} intersect g_{q-2},
+                                                          private(g_{q-2}),
+                                                          g_{q-2} intersect g_{q-1}.
+                                                        
+                                                        Let c_- precede c_+. Because their intervals are disjoint, the earlier interval must end before the later begins. The middle joint
+                                                          g_{q-3} intersect g_{q-2}
+                                                        has interval [q-3,q-2], so if it were c_- there would be no permitted later terminal-only interval beginning after q-2; and if it were c_+ there would be no permitted earlier interval ending before q-3 except the first joint, which is already covered by the stated left set together with the direct interval check below.
+                                                        
+                                                        More directly, the only terminal-only intervals in increasing order are
+                                                          [q-4,q-3],
+                                                          [q-3,q-3],
+                                                          [q-3,q-2],
+                                                          [q-2,q-2],
+                                                          [q-2,q-1].
+                                                        A disjoint ordered pair must therefore choose its earlier interval from the first two and its later interval from the last two. These correspond exactly to the four contact-pair patterns displayed in (3).
 
                                           • [1000866] A U_11 collision gives adjacent rank sum, a host 3-cycle, or two repeated source-path intersections
                                               STATEMENT
@@ -10153,37 +9684,6 @@
                                                 phi(e)<a<b.
                                               
                                               The two classes partition Epp. Hence one contains at least |Epp|/2 distinct edges. The proof of a54a1a6159e1 applies to any subfamily of Epp: if each class separately has assigned degree o(p) at rank-p vertices, their union does as well; more weakly, it is enough to derive the contradiction from whichever class has linear global size.
-
-                                            • [1000174] Uphill 0-1-1 edges are repeated-intersection or aligned X-X
-                                                STATEMENT
-                                                Let e={x,v,u} be an ascending nonspecial edge of rank q with unique entrance x and terminals v,u. Assume
-                                                  q<phi(v)=p<phi(u)=s.
-                                                Let P_v and P_u be chosen maximum endpoint paths ending at v and u, respectively, and assume e is terminal-single on both paths.
-                                                
-                                                On P_v, exactly one of {x,u} occurs off v; call the lower-terminal contact type X if x occurs and U if u occurs.
-                                                On P_u, exactly one of {x,v} occurs off u; call the higher-terminal contact type X if x occurs and V if v occurs.
-                                                
-                                                Then:
-                                                
-                                                (1) If the type is U-X, U-V, or X-V, the two maximum paths P_v and P_u have at least two common vertices.
-                                                
-                                                (2) The only type for which P_v and P_u can have a unique common vertex is X-X. In that case, if
-                                                  V(P_v) intersect V(P_u)={x},
-                                                then x is a joint on both paths at the same path index.
-                                                
-                                                Thus every uphill strict-gap doubly-terminal-single edge either carries an explicit repeated-intersection certificate between its two terminal maximum paths, or is in the rigid X-X aligned-joint state.
-                                                BODY / PROOF
-                                                Because q<p and q<s, the edge e cannot be the last edge of either chosen maximum terminal path. Hence terminal-singleness says exactly one of the two non-endpoint vertices of e occurs on the precursor, and linearity prevents the other from appearing only in the last path edge.
-                                                
-                                                Suppose first that P_v has type U. Then u belongs to P_v, while u is the last vertex of P_u. Hence P_v and P_u share u. If u were their unique common vertex, the certified unique-intersection theorem 5854d853a44b would force u to be an internal joint of P_u, contradicting that u is its last vertex. Therefore P_v and P_u have at least two common vertices. This proves both U-X and U-V.
-                                                
-                                                Now suppose P_u has type V. Then v belongs to P_u, while v is the last vertex of P_v. The same argument with v in place of u shows that P_v and P_u cannot intersect only at v. Hence they have at least two common vertices. This proves X-V as well.
-                                                
-                                                The only remaining signature is X-X. Then both paths contain x. They may have additional common vertices, in which case the repeated-intersection conclusion already holds. If x is their unique common vertex, apply 5854d853a44b directly to the two maximum endpoint paths P_v and P_u. It gives an index t with
-                                                  x = g_t intersect g_{t+1} = h_t intersect h_{t+1},
-                                                where P_v=(g_1,...,g_p) and P_u=(h_1,...,h_s). Thus x is an aligned joint at the same index on both paths.
-                                                
-                                                No selected-cell, common-anchor, source-clean, or near-extremal hypothesis is used.
 
                                             • [1001126] Higher-terminal certificate anchors reintersect the lower-terminal maximum path
                                                 STATEMENT
@@ -11699,15 +11199,11 @@
                                         BODY / PROOF
                                         By b7a21d8e4f90 every paid cell has an all-top rank-L output edge g_j. Its three vertices on the host path are the backward joint z_{j-1}, the private vertex b_j of g_j, and the forward joint z_j, so in particular phi(b_j)=L. Since b_j lies on the maximum L-edge host path P_v and b_j is not the last vertex v, apply b35b0fd4e4cd with Q=P_v and y=b_j. For any maximum endpoint path P_{b_j}, this gives a second common vertex and a clean elementary lens adjacent to b_j whose two sides have equal edge length. If two paid cells have different output indices j, their private vertices b_j are distinct path-private vertices, so the resulting lens states have distinct attachment endpoints on P_v. Therefore all Y paid outputs are simultaneously realized as balanced endpoint lenses attached at distinct top-potential vertices of the same maximum host path.
 
-                                      • [1000369] A genuine balanced lens has length at least two
+                                      • [1001198] Balanced-lens continuation
                                           STATEMENT
-                                          Let H be a simple linear hypergraph. Let Q and R be linear paths having a genuine clean balanced lens between distinct boundary vertices a,b, with Q-side and R-side internally vertex-disjoint and distinct. If the common side length is t, then t>=2.
-                                          
-                                          Consequently, every balanced endpoint lens supplied by b35b0fd4e4cd that has genuinely distinct host and auxiliary sides uses at least two host edges and at least two auxiliary edges.
+                                          Route bridge: the balanced-lens analysis continues after toolkit lemma 1000369.
                                           BODY / PROOF
-                                          Suppose t=1. Then the Q-side of the lens consists of one hyperedge e_Q containing both boundary vertices a,b, and the R-side consists of one hyperedge e_R containing both a,b. Because the lens is genuine, its two sides are distinct, so e_Q!=e_R. But then the two distinct hyperedges e_Q,e_R intersect in the two vertices a,b, contradicting linearity. Therefore t cannot equal one. Since a genuine lens is nonempty, t>=2.
-                                          
-                                          The endpoint-lens consequence is immediate because b35b0fd4e4cd produces a clean balanced elementary lens with distinct sides whenever the two maximum endpoint paths do not simply coincide along the relevant terminal segment.
+                                          Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable minimum-length lens lemma.
 
                                         • [1000915] Long nested balanced lenses must intersect off the host
                                             STATEMENT
@@ -12201,19 +11697,11 @@
                                   
                                   The first cross-splice has length L_1=|P[start,a]|+alpha+(|A_2|-beta)+|P[d,v]|. The second has length L_2=|P[start,b]|+beta+(|A_1|-alpha)+|P[c,v]|. Adding and substituting the balanced lens lengths, all intermediate terms telescope and give L_1+L_2=2p. Maximality of P gives L_1<=p and L_2<=p. Since their sum is 2p, equality holds in both: L_1=L_2=p. Thus every auxiliary intersection satisfying these clean cross-splice conditions generates two new maximum endpoint states.
 
-                                • [1000146] Unique auxiliary intersections of crossing endpoint lenses preserve potential-minus-position slack
+                                • [1001184] Crossing-lens slack continuation
                                     STATEMENT
-                                    Let P be a maximum p-edge path ending at v. Let balanced endpoint lenses for retained vertices c,d have crossing host intervals [a,c] and [b,d] with a<b<c<d, and let P_c,P_d be the corresponding maximum endpoint paths ending at c,d. Let kappa_P(c),kappa_P(d) denote the host-prefix edge counts to the chosen occurrences of c,d on P. Suppose the two off-host lens sides have a clean intersection w and that w is the unique common vertex of the full maximum paths P_c and P_d. Then
-                                    phi(c)-kappa_P(c)=phi(d)-kappa_P(d).
-                                    Consequently, for a crossing pair of balanced endpoint lenses, either P_c and P_d have at least two common vertices, or their endpoint slack phi(.)-kappa_P(.) is equal.
+                                    Route bridge: the crossing endpoint-lens analysis continues after toolkit lemma 1000146.
                                     BODY / PROOF
-                                    Let the first host interval be [a,c] and the second [b,d]. Write L_1=|P[a,c]| and L_2=|P[b,d]|. Let alpha be the off-host distance from a to w along P_c and beta the off-host distance from b to w along P_d. By the exact crossing-lens cross-splice equality ff85a782d098, the first hybrid maximum path has length p, which gives alpha-beta=|P[a,b]|. Since the lens sides are balanced, the distance from w to the endpoint c along P_c is L_1-alpha, and from w to d along P_d is L_2-beta. Therefore the edge index of w measured from the initial end of P_c is phi(c)-(L_1-alpha), while on P_d it is phi(d)-(L_2-beta). If w is their unique common vertex, universal unique-intersection alignment 5854d853a44b forces these two indices to be equal. Substitute alpha-beta=|P[a,b]| together with L_1=|P[a,c]| and L_2=|P[b,d]|. After cancellation this becomes phi(c)-kappa_P(c)=phi(d)-kappa_P(d), where kappa_P(c),kappa_P(d) are the corresponding host-prefix coordinates. If the slack values differ, the unique-intersection alternative is impossible, so the two maximum endpoint paths must share a second vertex.
-
-                                  • [1000782] Crossing balanced endpoint lenses at equal endpoint potential force a second auxiliary intersection
-                                      STATEMENT
-                                      Let P be a maximum host path. Let balanced endpoint lenses attached at distinct host vertices c<d have crossing host intervals. If phi(c)=phi(d), then the corresponding maximum endpoint paths P_c and P_d have at least two common vertices. Consequently they contain a balanced elementary lens of their own.
-                                      BODY / PROOF
-                                      By 20606dbd4cd9, if P_c and P_d had only one common vertex then crossing-lens equality would force phi(c)-kappa_P(c)=phi(d)-kappa_P(d). Under phi(c)=phi(d) this gives kappa_P(c)=kappa_P(d), contradicting that c,d are distinct ordered host vertices with c<d. Hence P_c,P_d share at least two vertices. Choosing consecutive common vertices gives an elementary lens; since both P_c,P_d are maximum endpoint paths, the two replacement inequalities balance its sides.
+                                    Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable crossing-lens slack lemma.
 
                                   • [1000594] Connected unique-intersection crossing components have constant rank-position difference
                                       STATEMENT
@@ -12264,6 +11752,12 @@
                                           |E_1| <= (R-1)|C|/2.
                                         
                                         Since E_2 is the complement of E_1 inside E(X), the second inequality follows immediately.
+
+                                  • [1000782] Crossing balanced endpoint lenses at equal endpoint potential force a second auxiliary intersection
+                                      STATEMENT
+                                      Let P be a maximum host path. Let balanced endpoint lenses attached at distinct host vertices c<d have crossing host intervals. If phi(c)=phi(d), then the corresponding maximum endpoint paths P_c and P_d have at least two common vertices. Consequently they contain a balanced elementary lens of their own.
+                                      BODY / PROOF
+                                      By 20606dbd4cd9, if P_c and P_d had only one common vertex then crossing-lens equality would force phi(c)-kappa_P(c)=phi(d)-kappa_P(d). Under phi(c)=phi(d) this gives kappa_P(c)=kappa_P(d), contradicting that c,d are distinct ordered host vertices with c<d. Hence P_c,P_d share at least two vertices. Choosing consecutive common vertices gives an elementary lens; since both P_c,P_d are maximum endpoint paths, the two replacement inequalities balance its sides.
 
                             • [1000967] A terminal-retained switching endpoint recaptures its omitted entrance or the host endpoint on every maximum path
                                 STATEMENT
@@ -17270,22 +16764,6 @@
                     BODY / PROOF
                     Let j_2,l_2 be the first and last path-edge indices containing the unique contact vertex of e_2, so l_2<=j_2+1. Apply the reversed terminal-only inequality f0c177137b7f to e_1 before e_2: l_2>=p-r_1+3. Apply the forward terminal-only inequality df8ad4c65be0 to e_2 before e_3: j_2<=r_3-3. Hence p-r_1+3<=l_2<=j_2+1<=r_3-2, which rearranges to r_1+r_3>=p+5. If r_1,r_3<=q, then p+5<=2q.
 
-                  • [1000414] A long terminal-only singleton family forces large total potential on its absent entrances
-                      STATEMENT
-                      Let P be a maximum p-edge path ending at v, and let e_1,...,e_k be terminal-only singleton ascending edges through v ordered by their contact positions on P. Let x_i be the absent unique entrance of e_i. Then
-                      sum_{i=1}^k phi(x_i) >= [k(p+3)-2p-10]/2.
-                      In particular, for k=Omega(p), the distinct off-path entrances carry Omega(kp) total endpoint potential.
-                      BODY / PROOF
-                      Write r_i=phi(e_i)=phi(x_i)+1. By 2bee7f7c5680, r_i+r_{i+2}>=p+5 for i=1,...,k-2. Summing gives
-                      2 sum_i r_i -(r_1+r_2+r_{k-1}+r_k) >= (k-2)(p+5).
-                      Discarding the nonnegative boundary term yields
-                      sum_i r_i >= (k-2)(p+5)/2.
-                      Therefore
-                      sum_i phi(x_i)=sum_i(r_i-1)
-                      >= (k-2)(p+5)/2-k
-                      = [k(p+3)-2p-10]/2.
-                      The entrance vertices x_i are distinct because distinct edges through v can share no second vertex by linearity.
-
               • [1000878] Separated terminal-only contact intervals are squeezed from both ends
                   STATEMENT
                   In the setting of df8ad4c65be0, let I_e and I_f be the sets of path-edge indices containing the sole terminal contacts u and z, respectively. Thus each I is either {j} or {j,j+1}. Assume
@@ -17467,20 +16945,11 @@
               
               For the final assertion, suppose P' is another longest witness path for the same nonspecial edge and g∈E(P)\E(P'). Since g is outside P', the cover property applied to P' implies g∩D≠∅. Thus every edge actually ejected by a witness-path move is D-supported.
 
-            • [1000228] Deleting threshold-degree vertices leaves a universal path forest
+            • [1001190] Threshold-deletion continuation
                 STATEMENT
-                In the setting of 7de985881169, the induced subhypergraph H-D has edge set C and is a subhypergraph of every nonspecial witness path. Consequently H-D is a linear path forest: every nontrivial component is a subpath of a linear path, every vertex has degree at most two in H-D, and if c is the number of nonempty components then |E(H-D)|=(|V(E(H-D))|-c)/2<=|V(H)\D|/2. In particular every vertex v outside D has at least d_H(v)-2>=k-1 incident edges meeting D.
+                Route bridge: the threshold-degree deletion analysis continues after toolkit lemma 1000228.
                 BODY / PROOF
-                By 7de985881169, every edge avoiding D lies in every longest witness path P for any fixed nonspecial edge. Hence E(H-D) is a subset of E(P).
-                
-                A subset of the edge set of a linear path has no intersections between nonconsecutive selected path edges. Each connected component of such a subset is therefore a linear path (with isolated selected edges allowed as one-edge paths). Thus H-D is a linear path forest and its maximum degree is at most two.
-                
-                A t-edge linear 3-uniform path has exactly 2t+1 vertices. Summing over the c nonempty components of H-D gives
-                |V(E(H-D))|=2|E(H-D)|+c.
-                Hence
-                |E(H-D)|=(|V(E(H-D))|-c)/2<=|V(H)\D|/2.
-                
-                Finally, if v∉D then d_H(v)>=k+1 by definition of D, while d_{H-D}(v)<=2. Therefore at least d_H(v)-2>=k-1 edges incident with v meet D.
+                Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable path-forest lemma.
 
               • [1000411] At least one third of a minimal counterexample lies at threshold degree
                   STATEMENT
@@ -17760,75 +17229,6 @@
                             
                             Likewise T_{c-1} has exactly |B|+1=c/2 contracted neighbors: the |B| earlier triples encoded by B and T_c. Thus its contracted degree is exactly the Dirac lower bound c/2.
 
-                          • [1000154] If both alternate ports fail the zero-slack two-switch, they have an identical complete half-neighborhood
-                              STATEMENT
-                              In the zero-slack alternating witness
-                                T_1,C_1,...,C_{c-1},T_c=e={x,y,z},
-                              let B⊂{1,...,c-1} be as in 4468081d47b0. For p∈{y,z}, let
-                                A_p={j: p has a DXX neighbor in T_j}.
-                              
-                              Suppose the uncolored adjacency requirement of the entrance-switch lemma 767380617163 fails for both alternate ports y and z, i.e.
-                                A_y∩B=A_z∩B=∅.
-                              Then
-                                A_y=A_z={1,...,c-1}\B,
-                              and this common set has size c/2.
-                              
-                              Moreover, for every j in this common set, both y and z are adjacent in the DXX graph to all three vertices of T_j; and neither y nor z has any DXX neighbor in a triple indexed by B.
-                              BODY / PROOF
-                              Apply 4468081d47b0 first to y. Since A_y∩B is empty, its equality branch gives
-                              |A_y|=c/2, |B|=c/2-1,
-                              and A_y∪B={1,...,c-1}.
-                              Thus A_y is exactly the complement of B.
-                              
-                              Apply the same lemma to z. The set B depends only on the fixed witness and T_{c-1}, not on the chosen alternate port. Since A_z∩B is also empty, the equality branch again gives that A_z is the complement of B. Hence A_y=A_z=:A and |A|=c/2.
-                              
-                              The vertex y has degree k=3c/2 in the zero-slack DXX graph. Its neighbors all lie outside e and, by definition of A, all lie in the c/2 triples T_j with j∈A. Those triples contain exactly 3(c/2)=3c/2=k vertices total. Since G is simple and y has k distinct neighbors, it must be adjacent to every vertex in their union and to no vertex outside it. The same argument applies to z.
-
-                            • [1000077] Rigid half-neighborhoods force an unused-color safe target connector
-                                STATEMENT
-                                In the rigid zero-slack half-neighborhood branch, an alternate target port y is complete to c/2 forest triples and its k=3c/2 incident DXX edges use all colors once. Since the witness uses only c-1 colors, c/2+1 unused-color y-edges land in those c/2 triples. Hence some target triple T_i has at least two unused-color y-connectors, and at least one avoids the unique locally unsafe port. Thus a fixed-target 2-opt obstruction can no longer be blamed on the target connector; the remaining obstruction is the return connector.
-                                BODY / PROOF
-                                Assume the rigid zero-slack half-neighborhood conclusion of 21fb5bf1458a for an alternate target port y. Thus A is a set of c/2 forest triples, y is adjacent in the DXX graph to every one of their 3c/2=k vertices, and y has no DXX neighbors outside their union.
-                                
-                                The fixed alternating witness uses exactly c-1 connector colors. Since the total color set has size
-                                  k=3c/2,
-                                the number of colors unused by the witness is
-                                  k-(c-1)=c/2+1.
-                                
-                                Because the DXX coloring is proper and d(y)=k, the k edges incident with y use every threshold color exactly once. All these edges land in the c/2 triples of A. Hence exactly c/2+1 of the y-edges into A have colors unused by the witness.
-                                
-                                Distribute those c/2+1 unused-color y-edges among the c/2 triples of A. Some triple T_i in A receives at least two of them. They meet two distinct vertices of T_i because the graph is simple.
-                                
-                                For the fixed-target 2-opt exchange decf9b49b8d7 at cut i, at most one vertex of T_i is forbidden by the local port-safety condition (namely the port used by the retained connector on the appropriate side). Therefore at least one of the two unused-color y-connectors f from T_i to e is port-safe. Its color is globally unused by the original witness, so it automatically avoids every retained connector color and can also be chosen independently of any return connector g unless g uses that same unused color; with two candidate unused-color f's, even that single conflict can be avoided whenever both are port-safe, and otherwise the unique port-safe choice is the only remaining color issue.
-                                
-                                Thus, in the rigid complete-half-neighborhood branch, target-side color/port compatibility cannot globally obstruct every 2-opt move. There exists a cut i in A for which the target connector f may be chosen with an unused witness color and a safe target-side port. The remaining obstruction is concentrated entirely in finding a compatible return connector from T_{i+1} to T_1 (or the corresponding block-reversal return in the alternate 767380617163 formulation).
-
-                              • [1000367] Rigid zero-slack half-neighborhoods always contain an uncolored fixed-target 2-opt cut
-                                  STATEMENT
-                                  In the rigid zero-slack half-neighborhood branch of fb4fc1ee4179, with alternating witness
-                                    T_1,C_1,...,T_{c-1},T_c=e,
-                                  let A be the common c/2-element neighbor-index set of the alternate ports y,z. Then there exists an index i∈A, 1<=i<=c-2, such that the contracted graph R contains an edge T_1 T_{i+1}.
-                                  
-                                  Thus at cut i the two uncolored adjacencies required by the fixed-target exchange decf9b49b8d7 are both present:
-                                  - y (and z) is adjacent to T_i;
-                                  - T_1 is adjacent to T_{i+1}.
-                                  BODY / PROOF
-                                  By the definition of B in 4468081d47b0, the original connector C_{c-2} between T_{c-2} and T_{c-1} implies c-1∈B. Since A and B partition {1,...,c-1}, we have c-1∉A. Therefore
-                                    A⊂{1,...,c-2}
-                                  and |A|=c/2.
-                                  
-                                  By 4596218dad6, the contracted graph R has minimum degree at least c/2. Hence T_1 has at least c/2 neighbors. At most one of them is T_c=e. Therefore T_1 has at least c/2-1 neighbors among T_2,...,T_{c-1}.
-                                  
-                                  Let
-                                    C={i∈{1,...,c-2}: T_{i+1} is adjacent to T_1}.
-                                  Then |C|>=c/2-1.
-                                  
-                                  Both A and C lie in the universe {1,...,c-2}, of size c-2. Hence
-                                    |A∩C| >= |A|+|C|-(c-2)
-                                            >= c/2+(c/2-1)-(c-2)
-                                            =1.
-                                  Choose i∈A∩C. Since i∈A, y and z are each adjacent to every vertex of T_i in the rigid branch. Since i∈C, T_{i+1} is adjacent to T_1. These are exactly the two contracted adjacencies used in decf9b49b8d7.
-
                           • [1001145] Double failure of the zero-slack switch forces a color derangement on a common neighborhood
                               STATEMENT
                               In the setting of 4468081d47b0, suppose the uncolored two-switch adjacency fails for both alternate terminal ports y,z of e=T_c. Then their contracted neighbor-index sets coincide:
@@ -17960,6 +17360,18 @@
                                        = k-t.
                                       
                                       Therefore the number of genuine cross-half connectors is at least the deficit of x from being complete to S.
+
+                          • [1001201] Rigid zero-slack half-neighborhoods expose a usable fixed-target cut
+                              STATEMENT
+                              In the zero-slack alternating witness T_1,C_1,...,C_{c-1},T_c=e={x,y,z}, suppose both alternate ports y,z fail the initial uncolored two-switch. Then they have the same complete half-neighborhood A of size c/2 among the forest triples, and no neighbors in the complementary index set B.
+                              
+                              In this rigid branch, an alternate port such as y has an unused-color safe connector into some T_i with i in A. Moreover there exists i in A, 1<=i<=c-2, such that the contracted graph also contains an edge T_1T_{i+1}. Thus some cut simultaneously has the target adjacency y-T_i and the return adjacency T_{i+1}-T_1 needed for the fixed-target 2-opt exchange; only color compatibility and the bounded unsafe ports remain.
+                              BODY / PROOF
+                              Failure of the first two-switch for both y and z forces their half-neighborhood sets to avoid B. Tightness gives A_y=A_z equal to the complement of B, of size c/2, and each alternate port is complete to every triple indexed by A.
+                              
+                              Since y has degree 3c/2 in the DXX graph while the witness uses only c-1 colors, at least c/2+1 incident y-edges have unused colors. These land in c/2 target triples, so some T_i receives at least two unused-color y-connectors; at least one avoids the unique unsafe local port.
+                              
+                              For the return side, c-1 lies in B, so A is contained in {1,...,c-2}. Minimum degree c/2 in the contracted graph gives T_1 at least c/2-1 neighbors among T_2,...,T_{c-1}. If C is the corresponding index set, then |A|=c/2, |C|>=c/2-1, and both lie in a universe of size c-2; hence A∩C is nonempty. Any i in the intersection gives both required uncolored adjacencies at one cut.
 
                         • [1000528] A two-chord block reversal switches the entrance of a zero-slack witness
                             STATEMENT
@@ -19649,172 +19061,6 @@
                       Thus failure of the kappa+4 amplification forces a two-layer charge normal form:
                       all negative charge lies in N=L_{ell-2}, all its ascending source flow goes through a strong-rainbow matching graph on the top layer T=L_{ell-1}, and every top-layer vertex carries positive charge at least kappa.
 
-                    • [1000139] Every used top-layer vertex in the trapped-negative charge state has charge at least kappa plus two
-                        STATEMENT
-                        In the exceptional two-layer state of 76c961f0dc48, let
-                          T={u:phi(u)=ell-1}
-                        and let G be the properly edge-colored terminal graph on T generated by negative-charge sources N.
-                        
-                        If u∈T is incident with at least one edge of G, then
-                          k_u>=kappa+2.
-                        Equivalently,
-                          d_H(u)<=2ell-5.
-                        
-                        Hence if S=V(G) is the support of G and
-                          R=sum_{v∈N}(-k_v)
-                        is total negative charge, then
-                          R>= (kappa+2)|S|.
-                        BODY / PROOF
-                        Let u∈T be incident with an edge of G. By construction this graph edge comes from a rank-(ell-1) ascending nonspecial hyperedge e whose source lies in N and for which u is a terminal.
-                        
-                        Thus
-                          phi(u)=ell-1
-                        and
-                          phi(e)=ell-1.
-                        Apply the incident low-rank capacity theorem a570ca900001 at u with q=ell-1 and h=e. Since H is P_ell-free, every hyperedge has rank at most ell-1, so
-                          J_{ell-1}(u)
-                        is the entire incident edge set at u. Therefore
-                          d_H(u)=|J_{ell-1}(u)|
-                                 <=2(ell-1)-3
-                                 =2ell-5.
-                        
-                        In the exact-density charge coordinates,
-                          k_u=3d-d_H(u)
-                              >=3d-(2ell-5)
-                              =(3d-2ell+3)+2
-                              =kappa+2.
-                        
-                        Now let S=V(G). Every u∈S is nonisolated, hence has charge at least kappa+2. All vertices outside N have nonnegative charge, and total charge is zero. Thus the total negative mass
-                          R=sum_{v∈N}(-k_v)
-                        equals the total positive mass and in particular dominates the positive charge on S:
-                          R>=sum_{u∈S}k_u
-                            >=(kappa+2)|S|.
-
-                      • [1000907] The trapped-negative charge state needs at least two kappa plus five negative vertices
-                          STATEMENT
-                          Continue in the exceptional two-layer charge state of 76c961f0dc48 and 1ecaca9f1fc7. Put
-                            a=kappa+2,
-                            N={v:k_v<0},
-                            R=sum_{v∈N}(-k_v),
-                          and let S=V(G) be the support of the top-layer matching graph G.
-                          
-                          Then
-                            |N|>=2a+1=2kappa+5.
-                          
-                          More quantitatively, for every v∈N with -k_v=r,
-                            r <= R/(2a)-a.
-                          BODY / PROOF
-                          Fix v∈N with negative mass r=-k_v. By 76c961f0dc48, the color class corresponding to v is a matching in G of size at least
-                            a+r
-                          because a=kappa+2.
-                          A matching of that size uses at least
-                            2(a+r)
-                          distinct vertices of S. Hence
-                            |S|>=2(a+r).                                       (1)
-                          
-                          By 1ecaca9f1fc7,
-                            R>=a|S|,
-                          so
-                            |S|<=R/a.                                          (2)
-                          
-                          Combining (1) and (2) gives
-                            2(a+r)<=R/a,
-                          hence
-                            r<=R/(2a)-a.                                       (3)
-                          
-                          Let t=|N|. Summing (3) over all v∈N gives
-                            R=sum r
-                             <=t(R/(2a)-a).
-                          If t<=2a, then
-                            tR/(2a)<=R,
-                          so the right-hand side is at most
-                            R-ta<R,
-                          a contradiction. Therefore
-                            t>2a.
-                          Since t is integral,
-                            |N|=t>=2a+1=2kappa+5.
-
-                        • [1000213] The trapped-negative top matching graph has a vertex of degree at least two kappa plus five
-                            STATEMENT
-                            In the exceptional two-layer charge state of 76c961f0dc48, with notation
-                              a=kappa+2,
-                              N={v:k_v<0},
-                              R=sum_{v∈N}(-k_v),
-                            and top matching graph G supported on S=V(G),
-                            one has
-                              average_degree(G)>2a.
-                            Consequently
-                              Delta(G)>=2a+1=2kappa+5.
-                            
-                            Thus some top-layer vertex u with phi(u)=ell-1 is terminal on at least 2kappa+5 distinct rank-(ell-1) ascending nonspecial edges whose unique entrances are distinct negative-charge vertices of potential ell-2 and whose opposite terminals also lie in the top layer.
-                            BODY / PROOF
-                            For each negative vertex v∈N of mass r=-k_v, 76c961f0dc48 gives a color class in G of size at least
-                              a+r.
-                            Summing over colors,
-                              |E(G)|
-                              >= a|N| + R.                                      (1)
-                            
-                            By 1ecaca9f1fc7,
-                              R>=a|S|,
-                            so
-                              |S|<=R/a.                                          (2)
-                            
-                            Therefore
-                              average_degree(G)
-                              =2|E(G)|/|S|
-                              >=2(a|N|+R)/(R/a)
-                              =2a + 2a^2|N|/R
-                              >2a.
-                            
-                            Since graph degrees are integers, some vertex has degree at least
-                              2a+1=2kappa+5.
-                            
-                            Every G-edge incident with such a vertex u comes, by construction, from a rank-(ell-1) ascending nonspecial hyperedge whose source color lies in N and whose two terminals lie in T={phi=ell-1}. Proper coloring implies the incident edges have distinct source colors. This gives the stated hypergraph interpretation.
-
-                          • [1000181] Failure of kappa-plus-four amplification forces many full-rank single blockers at one top vertex
-                              STATEMENT
-                              Continue in the trapped-negative exceptional state and assume
-                                max_v k_v <= kappa+3.
-                              Then there exists a top-layer vertex u with
-                                phi(u)=ell-1
-                              and graph degree
-                                d_G(u)>=2kappa+5
-                              as in 2fdc43803de8.
-                              
-                              Choose any G-edge h incident with u and a longest
-                                p=(ell-1)-edge
-                              path P ending in h with physical last vertex u. Let B_P(u) count incident terminal edges f!=h for which both vertices of f\{u} lie in V(P)\h.
-                              
-                              Then
-                                B_P(u)<=3.
-                              
-                              Consequently, among the other G-edges incident with u, at least
-                                d_G(u)-1-3 >= 2kappa+1
-                              have exactly one of their two non-u vertices on V(P)\h. In particular there are at least 3,5,7 such full-rank equal-potential single blockers in the three residue classes kappa=1,2,3.
-                              BODY / PROOF
-                              Put p=ell-1. Since P is globally longest and ends at u, the certified exact terminal-degree/double-blocker inequality db94e08d513d gives
-                                d_H(u)+B_P(u)<=2p-1=2ell-3.
-                              
-                              In charge coordinates,
-                                d_H(u)=3d-k_u
-                              and
-                                2ell-3=3d-kappa.
-                              Therefore
-                                B_P(u)
-                                <=(3d-kappa)-(3d-k_u)
-                                =k_u-kappa
-                                <=3.
-                              
-                              Now every G-edge f incident with u is a rank-p nonspecial edge for which u is terminal. By terminal adjacency/blocking, any f!=h must meet P in at least one vertex besides u; otherwise appending f to P gives a (p+1)-edge path.
-                              
-                              If both non-u vertices of f lie on P\h, then f is counted by B_P(u). There are at most three such edges. Every remaining G-edge f!=h therefore has exactly one of its two non-u vertices on P\h.
-                              
-                              There are at least
-                                d_G(u)-1-B_P(u)
-                                >=(2kappa+5)-1-3
-                                =2kappa+1
-                              such edges.
-
                     • [1000193] A stalled charge amplification obstruction has only two potential levels
                         STATEMENT
                         If max charge is below kappa+4 in an exact-density P_ell-free equality obstruction, then every vertex has endpoint potential ell-2 or ell-1. All negative charge lies in S=L_{ell-2}; every top-layer vertex in T=L_{ell-1} has charge at least kappa; and every ascending edge is an S-to-TT rank-(ell-1) edge.
@@ -19912,6 +19158,25 @@
                             <=19.                                             (7)
                           
                           Thus every globally longest path ending at a top-layer vertex contains only a constant-size low-potential defect; at charge kappa it contains at most 7 low-level vertices, and even at the maximal stalled charge kappa+3 it contains at most 19.
+
+                    • [1001187] Trapped-negative charge forces a high-degree top star with many single blockers
+                        STATEMENT
+                        In the exceptional trapped-negative two-layer charge state, put a=kappa+2, N={v:k_v<0}, R=sum_{v in N}(-k_v), and let G be the properly edge-colored top-layer terminal graph with support S.
+                        
+                        (i) Every u in S has k_u>=a, hence R>=a|S|.
+                        (ii) For each v in N of negative mass r=-k_v, r<=R/(2a)-a; consequently |N|>=2a+1=2kappa+5.
+                        (iii) The graph G has average degree greater than 2a, so some top-layer vertex u has d_G(u)>=2a+1=2kappa+5. Its incident G-edges come from distinct negative source colors and rank-(ell-1) ascending nonspecial hyperedges.
+                        (iv) If additionally max_w k_w<=kappa+3, then for any G-edge h at such a vertex u and any longest p=(ell-1)-edge path P ending in h with last vertex u, the number B_P(u) of other incident terminal edges double-blocking P is at most 3. Hence at least 2kappa+1 other incident G-edges are full-rank equal-potential single blockers of P.
+                        BODY / PROOF
+                        A used top-layer vertex u is terminal on a rank-(ell-1) nonspecial edge. The incident low-rank capacity bound gives d_H(u)<=2ell-5, hence k_u=3d-d_H(u)>=kappa+2=a. Summing positive charge over S yields R>=a|S|.
+                        
+                        For a negative source v of mass r, its color class in G is a matching of size at least a+r, so |S|>=2(a+r). Together with |S|<=R/a this gives r<=R/(2a)-a. Summing over v in N rules out |N|<=2a, hence |N|>=2a+1.
+                        
+                        Summing the color-class sizes gives |E(G)|>=a|N|+R. With |S|<=R/a,
+                        2|E(G)|/|S| >= 2a+2a^2|N|/R >2a,
+                        so some u has degree at least 2a+1. Proper coloring makes the corresponding source colors distinct.
+                        
+                        Finally assume max_w k_w<=kappa+3. For a longest p-edge path P ending at u, the exact terminal-degree/double-blocker inequality gives d_H(u)+B_P(u)<=2p-1=2ell-3. Since d_H(u)=3d-k_u and 2ell-3=3d-kappa, B_P(u)<=k_u-kappa<=3. Every other incident G-edge must meet P away from u; at most three can double-block, so at least d_G(u)-1-3>=2kappa+1 are single blockers.
 
                 • [1000803] Quadratic potential flow becomes an exact charge-potential covariance lower bound
                     STATEMENT
@@ -22740,13 +22005,11 @@
                     BODY / PROOF
                     Each edge g_i with i>=2 adds exactly two new vertices relative to the preceding prefix, so the sets A_i have size two and partition V(Q)\g_1. A double-blocking edge through a cannot use two vertices from one A_i, since both lie in g_i and then that edge would intersect g_i in two vertices, contradicting linearity. Hence it determines an edge ij with i≠j. Distinct double blockers use disjoint blocker vertices, so each index i is incident in J at most |A_i|=2 times; thus Δ(J)<=2. In the S=2 case the number of indices is q-2 and D=q-3, so |E(J)|=|V(J)|-1. Every finite graph of maximum degree at most two is a disjoint union of paths and cycles. Writing p for the number of path components (isolated vertices included), one has |E(J)|=|V(J)|-p, because each cycle contributes equally many edges and vertices while each path contributes one fewer edge than vertices. Thus p=1. For S=3, D=q-4=|V(J)|-2, so p=2 by the same identity.
 
-                • [1000187] Exact saturated-fan normal form at the boundary q=δ
+                • [1001185] Saturated-fan continuation
                     STATEMENT
-                    In the setting of e5859985e51b, let e={x,y,z} be ascending nonspecial with q=φ(e)=δ, let Q=(g_1,...,g_{q-1}) be a maximum path ending at x and avoiding y,z, let a be the opposite last vertex, and assume Q has no safe single-blocker rotation avoiding y,z. Then the blocker sets of the q-1 edges through a other than g_1 are pairwise disjoint subsets of V(Q)\g_1 of sizes one or two. If S=2, they partition V(Q)\g_1 exactly; the two single blockers occupy exactly two of the three exceptional types {blocker x, contains y, contains z}. If S=3, they cover all but one vertex of V(Q)\g_1, and the three single blockers are exactly one of each exceptional type.
+                    Route bridge: the boundary saturated-fan analysis continues after toolkit lemma 1000187.
                     BODY / PROOF
-                    By e5859985e51b, d_H(a)=q, the number S of single-blocking edges is 2 or 3, the number of double-blocking edges is D=q-1-S, and exactly S-2 vertices of V(Q)\g_1 are unused by blocker incidences. Distinct edges through a have disjoint blocker vertices outside a by linearity, so the blocker sets form pairwise disjoint one- or two-element subsets of V(Q)\g_1. Therefore when S=2 there are no unused blocker vertices and these sets partition V(Q)\g_1; when S=3 exactly one vertex is uncovered.
-                    
-                    Every single-blocking edge is exceptional: its unique blocker is x, or it contains y, or it contains z. These three types are mutually exclusive. Indeed an edge through a containing x and y would intersect e in both x and y, impossible by linearity; similarly for x and z, and an edge containing both y and z would intersect e in both y and z. Also by linearity there is at most one single blocker of each type. Hence with S=3 all three types occur exactly once, while with S=2 exactly two of the three types occur.
+                    Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable saturated-fan normal form.
 
                   • [1000784] Exceptional Y/Z single blockers cannot occupy the final cell
                       STATEMENT
@@ -23143,29 +22406,29 @@
                   BODY / PROOF
                   Because every edge f≠g_1 through a already meets g_1 in a, linearity forbids either other vertex of f from lying in g_1. Thus the two vertices of f\{a} contribute zero, one, or two blockers in V(P)\g_1, giving the partition C,S,D and C+S+D=d_H(a)-1. Distinct edges through a have disjoint blocker vertices outside a, so S+2D<=|V(P)\g_1|=2s-2. Hence 2C+S=2(C+S+D)-(S+2D)>=2(d_H(a)-1)-(2s-2)=2(d_H(a)-s)>=2(δ-s).
 
-                • [1000928] A terminal-safe rotation state has endpoint deficiency at most three
+                • [1001202] Safe-sink continuation
                     STATEMENT
-                    In the setting above, fix two vertices y,z not on P. Call a clean edge safe if it avoids y,z, so prepending it gives an (s+1)-edge path still ending at x and avoiding y,z. Call a single blocker safe if its blocker is not x and the edge avoids y,z, so the single-blocker rotation gives another s-edge path ending at x and avoiding y,z. If there is no safe clean edge and no safe single blocker at a, then δ-s<=3.
+                    Route bridge: the boundary-rotation analysis continues after toolkit lemma 1000394.
                     BODY / PROOF
-                    At most one clean edge through a can contain y and at most one can contain z, by linearity; hence if there is no safe clean edge then C<=2. For single blockers, at most one edge can have blocker x, at most one can contain y, and at most one can contain z, again because two distinct edges through a cannot share a second vertex. Thus absence of a safe single blocker gives S<=3. The deficiency-surplus inequality then yields 2(δ-s)<=2C+S<=7, and since δ-s is an integer, δ-s<=3.
+                    Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable safe-sink deficiency lemma.
 
-                • [1000394] Terminal-safe sinks have endpoint deficiency at most two
-                    STATEMENT
-                    Let H be a linear 3-graph of minimum degree δ, let P=(g_1,...,g_s) be a linear path ending at x, let a be a last vertex of g_1 at the opposite end, and fix y,z outside V(P). If at a there is neither a safe clean extension avoiding y,z nor a safe single-blocker rotation avoiding y,z, then δ-s≤2. Consequently, if a double-blocker splice produces an x-ending path avoiding y,z with loss d from a (δ-1)-edge entrance path in the boundary case q=δ, then every loss d≥2 state admits another safe clean extension or safe single rotation; only loss d=1 can be a local sink.
-                    BODY / PROOF
-                    Use the notation C,S,D of the endpoint-deficiency lemma 5f79968b85de. Absence of a safe clean edge means every clean edge through a contains y or z. By linearity there is at most one clean edge containing y and at most one containing z. Write C_y,C_z in {0,1}, C=C_y+C_z. Absence of a safe single blocker means every single blocker either has blocker x or contains y or z. There is at most one single blocker of each of these three types. Moreover, if C_y=1 then no single blocker can contain y, because the clean-y edge and such a single blocker would both contain a and y; similarly for z. Hence S<=1+(1-C_y)+(1-C_z)=3-C. Therefore 2C+S<=C+3<=5. The deficiency inequality 2C+S>=2(δ-s) gives 2(δ-s)<=5, so the integer δ-s is at most 2. In the boundary setting q=δ, the canonical entrance path has length q-1. A splice of loss d has length s=q-1-d, hence δ-s=d+1. If d>=2 then δ-s>=3, so the state cannot be a sink: a safe clean extension or safe single-blocker rotation exists.
-
-                  • [1000016] A loss-one double-blocker splice creates a canonical two-cycle
+                  • [1001177] Loss-one two-cycle continuation
                       STATEMENT
-                      In the boundary setting q=δ, let Q=(g_1,...,g_t), t=q-1, be an x-ending path avoiding y,z, with cells A_i={b_i,c_i}. Suppose a double blocker h through an opposite last vertex a has blockers u∈A_i and b_{i+2}∈A_{i+2}, so the exact splice loss is one. Then the resulting (t-1)-edge x-ending path P_0 admits a forced safe single-blocker rotation using the omitted edge g_i, producing a second (t-1)-edge x-ending path P_1; in P_1 the omitted edge g_1 is a forced safe single blocker and rotating by g_1 returns to P_0. Thus the obvious safe repair of a loss-one chord is a canonical two-state rotation cycle, and any proof of further progress must use another endpoint or another incident edge.
+                      Route bridge: the boundary loss-one analysis continues using toolkit lemma 1000016.
                       BODY / PROOF
-                      Write h={a,u,b_{i+2}} with u∈A_i and 2<=i<=t-2. The loss-one splice from ee17956ece60 is P_0=(g_{i-1},g_{i-2},...,g_1,h,g_{i+2},...,g_t), with the evident interpretation when i=2. Its first edge has c_{i-1}=g_{i-1}∩g_i as a last vertex (for i=2 this is c_1 in g_1, since the next edge h meets g_1 at a). The omitted edge g_i contains c_{i-1}. Its only other contact with P_0 is u, which lies in h: the other vertex of A_i lies only in the omitted edges g_i and possibly g_{i+1}, while i<=t-2 ensures u≠x. Since Q avoids y,z, g_i avoids y,z. Hence g_i is a safe single blocker at c_{i-1}. The single-blocker rotation gives P_1=(g_2,g_3,...,g_i,h,g_{i+2},...,g_t), again with the evident i=2 case. Now c_1 is a last vertex of the first edge g_2, and the omitted edge g_1 meets P_1 outside c_1 only at a∈h. It avoids y,z and a≠x, so g_1 is a safe single blocker. Rotating by g_1 gives exactly P_0. No claim is made that these are the only safe moves; the point is that the canonical repair itself closes into a two-cycle.
+                      Nonmathematical proof-frame wrapper preserving the original route position after rehoming the reusable two-cycle lemma to Toolkit.
 
                     • [1001039] Exact normal form for a deficiency-two safe sink
                         STATEMENT
                         Let H be a linear 3-graph of minimum degree δ, let P be an x-ending path of length s=δ-2, let a be an opposite last vertex, and let y,z lie outside P. Suppose there is neither a safe clean extension nor a safe single-blocker rotation at a. Then d_H(a)=δ. Writing C for clean edges through a other than the first path edge and S for single blockers, exactly one of the following holds: (i) C=1 and S=2, consisting of one clean Y- or Z-edge together with the X-single and the single of the opposite terminal type; (ii) C=2 and S=0, with one clean Y-edge and one clean Z-edge; (iii) C=2 and S=1, with clean Y and Z edges and the unique single blocker of type X. In cases (i) and (ii) the blocker sets saturate V(P) minus the first edge; in case (iii) exactly one blocker vertex is unused.
                         BODY / PROOF
                         By the endpoint-deficiency inequality, 2C+S>=2(d_H(a)-s)>=2(δ-s)=4. As in 585acf12de9a, absence of safe moves gives C<=2 and S<=3-C, because clean-Y excludes single-Y, clean-Z excludes single-Z, and at most one X-single exists. Hence 2C+S<=C+3<=5. In particular d_H(a)-s<3, so d_H(a)<=s+2=δ; since d_H(a)>=δ, equality holds. Thus C+S+D=δ-1. The inequalities 2C+S>=4 and S<=3-C force C>=1. If C=1 then S>=2 and S<=2, so S=2; the clean edge uses one of Y,Z and the two singles are X and the other terminal type. If C=2 then the clean edges are Y and Z, and both Y- and Z-singles are forbidden, so S is 0 or 1, the latter necessarily X. Finally S+2D=2(δ-1)-2C-S=2δ-2-(2C+S), while |V(P) minus first edge|=2s-2=2δ-6. Thus when 2C+S=4 the blocker budget is saturated exactly; when 2C+S=5 exactly one blocker vertex is unused.
+
+                • [1000928] A terminal-safe rotation state has endpoint deficiency at most three
+                    STATEMENT
+                    In the setting above, fix two vertices y,z not on P. Call a clean edge safe if it avoids y,z, so prepending it gives an (s+1)-edge path still ending at x and avoiding y,z. Call a single blocker safe if its blocker is not x and the edge avoids y,z, so the single-blocker rotation gives another s-edge path ending at x and avoiding y,z. If there is no safe clean edge and no safe single blocker at a, then δ-s<=3.
+                    BODY / PROOF
+                    At most one clean edge through a can contain y and at most one can contain z, by linearity; hence if there is no safe clean edge then C<=2. For single blockers, at most one edge can have blocker x, at most one can contain y, and at most one can contain z, again because two distinct edges through a cannot share a second vertex. Thus absence of a safe single blocker gives S<=3. The deficiency-surplus inequality then yields 2(δ-s)<=2C+S<=7, and since δ-s is an integer, δ-s<=3.
 
             • [1000527] Two-terminal double blockers form an alternating path-cycle system
                 STATEMENT
@@ -24250,56 +23513,6 @@
                       
                       Now apply the special-last case of 1080210bcf37. Since h is special, all 2p-4 nonspecial terminal edges inject bijectively into the tail set, while the two remaining special edges through v occupy the two far free vertices. Because B_v=0, every nonspecial terminal edge is a single-blocker, proving the refined statement.
 
-                    • [1000389] Minimum-potential equality paths have two canonical special cycle closures
-                        STATEMENT
-                        Assume the minimum-potential equality configuration average(phi)=m/n+1, so the conclusions of f9df80bd57f2 hold. Let v have p=phi(v), and let P=(g_1,...,g_p) be any maximum p-edge path ending at v, with last edge h=g_p. Then h is special, and the other two special edges f_1,f_2 through v each close P to a linear cycle of length p+1:
-                        (g_1,g_2,...,g_p,f_i).
-                        Consequently, if p=ell-1 in a P_ell-free equality obstruction, every maximum p-edge endpoint path lies in at least two distinct linear ell-cycles sharing the same p-edge path.
-                        BODY / PROOF
-                        By f9df80bd57f2, every maximum p-edge path ending at v has a special last edge h=g_p. The two other special edges f_1,f_2 through v meet P outside v exactly at the two free vertices of g_1, one each, and have no other contact with P.
-                        
-                        Fix i. The sequence
-                        g_1,g_2,...,g_p,f_i
-                        has consecutive intersections inherited from P, together with
-                        g_p∩f_i={v}
-                        and
-                        f_i∩g_1={a_i},
-                        where a_i is one of the two free vertices of g_1.
-                        
-                        All nonconsecutive pairs are disjoint: f_i has no other contact with P, and P itself is linear. Therefore this sequence is a linear cycle of length p+1.
-                        
-                        The two cycles are distinct because f_1≠f_2 and they close through different free vertices of g_1.
-                        
-                        If p=ell-1, these are linear cycles of length ell. A linear ell-cycle need not itself contain a P_ell, so this is not yet a contradiction; rather it supplies two canonical closures of every maximum endpoint path, to which cycle-ear/chord arguments can be applied.
-
-                      • [1000276] Minimal equality obstructions are connected and top cycles have a two-contact first ear
-                          STATEMENT
-                          Let ell>=4, d=floor(2ell/3), and let H be a vertex-minimal counterexample to the exact-density equality assertion E_ell: |E(H)|=d|V(H)|, delta(H)>=d+1, and H contains a nonspecial edge. Then H is connected.
-                          
-                          Moreover, in the minimum-potential equality branch, if C is one of the canonical linear ell-cycles supplied by 56fe77d0057c, there exists an edge f not in C meeting both V(C) and V(H)\V(C). Every such crossing edge meets C in exactly two vertices; in particular the first connection from C to the outside reservoir is a two-contact chord with one outside vertex.
-                          BODY / PROOF
-                          Suppose H is disconnected, with components H_1,...,H_r. Since
-                          sum_i |E(H_i)| = d sum_i |V(H_i)|,
-                          some component H_i has density at least d.
-                          
-                          Every component inherits minimum degree at least d+1.
-                          
-                          If H_i contains a nonspecial edge, then H_i has fewer vertices than H, is P_ell-free, has density at least d, and minimum degree at least d+1. Thus it is a smaller counterexample to the strengthened equality-layer assertion, contradicting vertex-minimality.
-                          
-                          If every edge of H_i is special, the certified all-special snake bound gives
-                          |E(H_i)| <= ((2ell-3)/3)|V(H_i)|.
-                          For ell>=4,
-                          (2ell-3)/3 < floor(2ell/3)=d,
-                          contradicting density at least d.
-                          
-                          Hence H is connected.
-                          
-                          Now assume the minimum-potential equality branch and let C be a canonical linear ell-cycle from 56fe77d0057c. Exact-density size separation gives |V(H)|>|V(C)|, but connectedness alone already implies that some edge f outside C meets both V(C) and its complement: take the first hyperedge leaving C along an edge-intersection walk from C to any outside vertex.
-                          
-                          We claim f cannot meet C in exactly one vertex. Let w be its unique cycle contact. A linear ell-cycle has ell edges. Delete a cycle edge adjacent to the cycle edge containing w so that, in the remaining (ell-1)-edge cycle path, w occurs in the first edge and is a last vertex. If w is a joint, delete the other incident cycle edge; if w is private, delete either neighboring cycle edge. The resulting (ell-1)-edge path meets f only at w, and the other two vertices of f lie outside C. Appending/prepending f gives a linear P_ell, contradiction.
-                          
-                          Thus every crossing edge has at least two cycle vertices. Since it also has an outside vertex and is 3-uniform, it has exactly two cycle contacts and one outside vertex.
-
               • [1001077] Local capacity incompatibility improves average endpoint potential to density plus one
                   STATEMENT
                   Let H be a finite linear 3-graph in which phi(v)>=2 for every vertex, with n vertices and m edges. Then
@@ -24385,58 +23598,6 @@
                       m-s=(d-1)n,
                       A=(d-1)n.
                     Thus the equality configuration decomposes exactly into a 3-regular special core and an all-ascending nonspecial remainder.
-
-                  • [1000196] Minimum-potential equality forces two-step ascent on every nonspecial edge
-                      STATEMENT
-                      Assume the minimum-potential equality setting of 41d502ff7771: sum_v phi(v)=m+n. Then:
-                      
-                      1. For every vertex v with p=phi(v), every maximum p-edge path ending at v has a special last edge.
-                      
-                      2. Every nonspecial edge e is ascending, and if q=phi(e) with unique entrance x and terminals u,v, then
-                         phi(x)=q-1,
-                         phi(u)>=q+1,
-                         phi(v)>=q+1.
-                      Equivalently every entrance-to-terminal arc in the auxiliary DAG raises endpoint potential by at least two.
-                      
-                      In particular no nonspecial edge has rank equal to the endpoint potential of either terminal.
-                      BODY / PROOF
-                      Fix a vertex v and put p=phi(v). By 41d502ff7771,
-                        d_D^-(v)=2p-1
-                      and
-                        t_ns(v)=2p-4.
-                      
-                      Choose an incoming snake edge h at v of maximum terminal rank t=phi(h,v), and let P be a t-edge path witnessing it, ending with h at v.
-                      
-                      The snake-indegree proof d4e8b1c27a65 gives
-                        d_D^-(v)-1 <= 2(t-1).
-                      Since d_D^-(v)=2p-1 and t<=phi(v)=p, equality forces t=p.
-                      
-                      Moreover, the proof gives that every other incoming edge f at v meets V(P)\h. There are exactly
-                        2p-2
-                      other incoming edges and exactly
-                        |V(P)\h|=2p-2
-                      vertices there.
-                      
-                      All incoming edges at v share v. By linearity, their contact sets with V(P)\h are pairwise disjoint. Since every one of the 2p-2 other incoming edges has at least one contact in a set of size 2p-2, each has exactly one contact and these contacts partition V(P)\h.
-                      
-                      Suppose h were nonspecial. Because P ends in h at last vertex v, v is a terminal of h, so h is counted among the nonspecial terminal edges at v. The certified saturation lemma 672725540541 says, in the case h is nonspecial,
-                        t_ns(v)-D(v) <= 2p-5,
-                      where D(v) counts other nonspecial terminal edges having both non-v vertices in V(P)\h.
-                      Since t_ns(v)=2p-4, this forces D(v)>=1.
-                      
-                      But exact snake saturation above showed every other incoming edge, hence every other nonspecial terminal edge, has exactly one contact with V(P)\h. Therefore D(v)=0, contradiction.
-                      
-                      So h must be special.
-                      
-                      Now take any maximum p-edge path ending at v. Its last edge is an incoming snake edge at v of terminal rank p, hence it is itself a maximum-rank incoming edge and the preceding argument applies. Thus every maximum endpoint path at v has special last edge.
-                      
-                      Finally let e={x,u,w} be nonspecial. By 41d502ff7771 every nonspecial edge is ascending, so if q=phi(e),
-                        phi(x)=q-1,
-                      while terminal potentials satisfy phi(u),phi(w)>=q in general.
-                      
-                      If phi(u)=q, then a q-edge path ending in e with last vertex u is a maximum phi(u)-edge path ending at u whose last edge e is nonspecial, contradicting the result just proved. Hence phi(u)>=q+1, and similarly phi(w)>=q+1.
-                      
-                      Therefore each auxiliary arc from the entrance x to either terminal raises potential by at least two.
 
             • [1000087] Minimum-potential equality forces the special-edge subhypergraph to be a cubic-graph dual
                 STATEMENT
@@ -24560,11 +23721,11 @@
                 BODY / PROOF
                 Fix a nonspecial cycle edge E=E_i. Deleting either one of the two cycle neighbors of E breaks the cycle into a linear path of c-1 edges ending in E. Thus phi(E)>=c-1. If phi(E)=c-1, these two (c-1)-edge paths are both longest paths ending in E, and they enter E through its two distinct cycle joints. That gives two distinct entrance labels for longest paths ending in E, contradicting nonspeciality. Therefore phi(E)>=c.
 
-              • [1000221] Strict ordered-shadow growth forces near-unit parent-rank growth
+              • [1001186] Ordered-shadow growth continuation
                   STATEMENT
-                  Let z_0z_1,...,z_{t-1}z_t be a strictly increasing path in the ordered shadow Z, with labels lambda_i and parent ascending hyperedges E_i of ranks q_i. Write epsilon_i=q_i-lambda_i in {0,1}, so epsilon_i=1 exactly when the chosen auxiliary edge is entrance-terminal and epsilon_i=0 exactly when it is terminal-terminal. Then q_{i+1}-q_i >= 1+epsilon_{i+1}-epsilon_i. In particular parent ranks are nondecreasing; equality q_{i+1}=q_i can occur only when epsilon_i=1 and epsilon_{i+1}=0, i.e. only across an entrance-terminal step followed by a terminal-terminal step. More generally q_j-q_i >= (j-i)+epsilon_j-epsilon_i >= j-i-1.
+                  Route bridge: the ordered-shadow analysis continues after toolkit lemma 1000221.
                   BODY / PROOF
-                  Since lambda_i=q_i-epsilon_i and strict integrality gives lambda_{i+1}>=lambda_i+1, we have q_{i+1}-epsilon_{i+1}>=q_i-epsilon_i+1, hence q_{i+1}-q_i>=1+epsilon_{i+1}-epsilon_i. Because epsilon values lie in {0,1}, the right side is always nonnegative. Equality of parent ranks requires 1+epsilon_{i+1}-epsilon_i=0, forcing epsilon_i=1 and epsilon_{i+1}=0. Summing from i to j-1 gives q_j-q_i >= (j-i)+epsilon_j-epsilon_i, and the final lower bound follows.
+                  Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable ordered-shadow rank-growth lemma.
 
                 • [1000637] Hidden ordered-shadow cycles force a near-doubling rank spread
                     STATEMENT
@@ -24632,11 +23793,11 @@
                 BODY / PROOF
                 Choose a path P of length φ(x) with last vertex x, and let e be its last edge. For every g∈I(x) other than e when e∈I(x), the standard snake-indegree witness argument assigns a distinct vertex of V(P)\e: if such a g avoided V(P)\e, then appending g at x would give a path of length φ(x)+1 ending in g, contradicting φ(g)=φ(g,x)≤φ(x). If e∉I(x), the same argument applies to every g∈I(x), so it gives |I(x)| witnesses rather than |I(x)|-1. For f∈B^-(x), the preceding distortion lemma gives at least w_x(f) vertices of f\{x} lying on P; none lies in e, and these blocker vertices are disjoint for different f by linearity. They are also disjoint from the snake witnesses, because otherwise two distinct edges through x would share another vertex. Since V(P)\e has 2φ(x)-2 vertices, if e∈I(x) then (|I(x)|-1)+Σ_{f∈B^-(x)}w_x(f)≤2φ(x)-2, while if e∉I(x) one has the stronger |I(x)|+Σ_{f∈B^-(x)}w_x(f)≤2φ(x)-2. In either case |I(x)|+Σ_{f∈B^-(x)}w_x(f)≤2φ(x)-1.
 
-              • [1000278] Refined ascending-edge accounting
+              • [1001192] Ascending-accounting continuation
                   STATEMENT
-                  Let A be the number of ascending nonspecial edges and let H_2 be the number of nonascending nonspecial edges e with unique entrance x satisfying φ(x)>2(φ(e)-1). Then 3m-A+H_2 <= Σ_v(2φ(v)-1) <= (2ell-3)n.
+                  Route bridge: the ascending-edge accounting analysis continues after toolkit lemma 1000278.
                   BODY / PROOF
-                  At x, let c(x) be the number of ascending edges with entrance x and h(x) the number counted by H_2. The joint budget gives d_H(x)<=2φ(x)-1+c(x)-h(x): every incident edge is either snake-incoming at x, nonascending with entrance x, or ascending with entrance x, and each strongly decreasing nonascending edge has blocker weight two rather than one. Summing over x gives 3m<=Σ_x(2φ(x)-1)+A-H_2. Since H is P_ell-free, φ(x)<=ell-1 for every x.
+                  Nonmathematical proof-frame wrapper preserving the old route position after rehoming the reusable ascending-accounting lemma.
 
                 • [1001002] Global compensated ascending-defect bound
                     STATEMENT
@@ -25921,163 +25082,6 @@
                                 
                                 Independently, the other rank-four witness is a. Its charged edge contains a and v, so the endpoint-chord lemma a570c0ad0001 applied at i=2 also gives phi(c)>=4.
 
-                              • [1000099] If the left 4455 witness is a terminal, both adjacent middle joints are high
-                                  STATEMENT
-                                  Assume the surviving p=5 4455 witness geometry {a,b}, with
-                                    P=(g1,g2,g3,g4,e5),
-                                    a=g2∩g3,
-                                    b private in g3,
-                                    c=g3∩g4.
-                                  Suppose the rank-four charged edge witnessed at a has a as its opposite terminal rather than its entrance. Write
-                                    f_a={x,v,a},
-                                  where x is the unique entrance.
-                                  
-                                  Then
-                                    phi(a)>=5,
-                                    phi(x)=3,
-                                    x∉V(P),
-                                  and
-                                    phi(c)>=5.
-                                  BODY / PROOF
-                                  Because f_a is rank-four ascending, its unique entrance x satisfies phi(x)=3. Since the selected path-relative witness is the terminal a, the entrance x is absent from the fixed path P. Because f_a is potential-charged at v with phi(v)=5, the opposite terminal satisfies phi(a)>=5.
-                                  
-                                  Now consider
-                                    (g1,g2,f_a,e5,g4).
-                                  
-                                  The consecutive intersections are:
-                                  - g1∩g2, the original first joint;
-                                  - g2∩f_a={a};
-                                  - f_a∩e5={v};
-                                  - e5∩g4={d}.
-                                  
-                                  All nonconsecutive pairs are disjoint. Indeed x is absent from P; a lies only on g2,g3 among the path edges; v lies on e5 as the physical terminal; and the original path has the required nonconsecutive disjointness. In particular f_a is disjoint from g1 and g4.
-                                  
-                                  Thus the displayed sequence is a five-edge linear path. Its final edge is g4, entered through d. The distinct vertex c=g3∩g4 can be chosen as physical last vertex. Hence phi(c)>=5.
-
-                                • [1000246] In the terminal-left 4455 branch the second rank-five edge either uses c or is pushed to the private g4 slot
-                                    STATEMENT
-                                    Continue in the terminal-a subcase of 1734829a2326. Thus
-                                      f_a={x,v,a}
-                                    has terminal a, entrance x off P,
-                                      f_b={b,v,u_b}
-                                    has entrance b,
-                                    and
-                                      phi(b)=3,
-                                    while phi(a),phi(c)>=5.
-                                    
-                                    Let h be the second rank-five charged edge through v.
-                                    
-                                    Then h contains neither a nor b. Hence h∩g3 is either empty or {c}.
-                                    
-                                    If c∉h, then h is disjoint from g3, has no contact with g2, and its terminal-tail contact in g2∪g3∪g4 is necessarily the private vertex of g4.
-                                    BODY / PROOF
-                                    The edges h,f_a,f_b are distinct charged edges through the common vertex v. By linearity, two such edges cannot share any second vertex. Since a∈f_a and b∈f_b, we have a,b∉h. Therefore h can meet g3={a,b,c} only at c.
-                                    
-                                    Assume c∉h. Then h is disjoint from g3.
-                                    
-                                    We claim h is also disjoint from g2. If h met g2, then
-                                      (e5,h,g2,g3)
-                                    would be a four-edge linear path. Consecutive intersections are e5∩h={v}, the h-contact in g2, and g2∩g3={a}. The nonconsecutive pairs e5,g2 and e5,g3 are disjoint by the original path P, while h,g3 are disjoint by assumption. This path ends in g3, entered through a, so the private vertex b can be chosen as physical last vertex. Hence phi(b)>=4, contradicting phi(b)=3.
-                                    
-                                    Thus h is disjoint from g2∪g3.
-                                    
-                                    Apply the terminal-tail blocker lemma to the rank-five edge h against the five-edge path P ending at the common terminal v. Since h≠e5, one of the two non-v vertices of h occurs in the final three precursor edges g2∪g3∪g4. The first two have just been excluded, so h meets g4.
-                                    
-                                    This g4-contact cannot be c because c∉h. It cannot be d=g4∩e5 because h and e5 already share v, and linearity forbids a second common vertex. Hence the contact is the private vertex of g4.
-
-                                  • [1000089] The no-c second-rank-five state in terminal-left 4455 is uniquely clean
-                                      STATEMENT
-                                      In the setting of 362087e475d5, assume c∉h. Let z be the private vertex of g4. Then
-                                        h={z,v,u},
-                                      where z is the unique entrance of h and u∉V(P).
-                                      
-                                      Thus the no-c branch has exactly one form: h meets the fixed path P only in z∈g4 and v∈e5, with z=private(g4) and the opposite terminal u outside P.
-                                      BODY / PROOF
-                                      By 362087e475d5, h is disjoint from g2∪g3 and meets g4 at its private vertex z.
-                                      
-                                      Let t be the other non-v vertex of h. It cannot lie in g4 by linearity. It cannot lie in e5 because h and e5 already share v. Thus the only possible further contact with P is in g1.
-                                      
-                                      Suppose t∈g1. Since h is disjoint from g2∪g3, and e5 is disjoint from g1∪g2∪g3, the sequence
-                                        (e5,h,g1,g2,g3)
-                                      is a five-edge linear path. Its final edge g3 is entered through a=g2∩g3, so the private vertex b can be chosen as physical last vertex. Hence phi(b)>=5, contradicting phi(b)=3.
-                                      
-                                      Therefore t∉V(P). So h meets P only at z and v.
-                                      
-                                      If z were the terminal t and the off-path vertex were the entrance, then
-                                        (g1,g2,g3,g4,h)
-                                      would be a five-edge linear path ending in the nonspecial rank-five edge h and entering it through the terminal z, contradicting unique rank-five entrance. Therefore z is the unique entrance of h. Since h is ascending of rank five, phi(z)=4. Writing the off-path terminal as u gives the stated form.
-
-                                    • [1000791] The clean terminal-left 4455 state forces every low entrance rail to hit three separated edges
-                                        STATEMENT
-                                        Continue in the clean no-c terminal-a state of 14c89ddd9ef1:
-                                          f_a={x,v,a}
-                                        is rank four with unique entrance x, phi(x)=3, and x∉V(P);
-                                          h={z,v,u}
-                                        is the second rank-five edge with entrance z=private(g4) and u∉V(P);
-                                        and e5 is the fixed rank-five edge.
-                                        
-                                        Let
-                                          Q=(q1,q2,q3)
-                                        be any canonical three-edge entrance path ending physically at x and avoiding the terminals v,a, so Q,f_a is a four-edge path ending in f_a through x.
-                                        
-                                        Then Q meets each of the three edges
-                                          g3, e5, h.
-                                        Because Q avoids a and v, these contacts lie respectively in:
-                                          {b,c}, {d,w}, {z,u}.
-                                        BODY / PROOF
-                                        Suppose first that Q is disjoint from g3. Since Q,f_a is canonical and f_a meets g3 at a, the concatenation
-                                          (q1,q2,q3,f_a,g3)
-                                        is a five-edge linear path ending in g3 through a. The private vertex b of g3 is distinct from a and can be chosen as physical last vertex. Hence phi(b)>=5, contradicting phi(b)=3.
-                                        
-                                        Thus Q meets g3. Since Q avoids the terminal a of f_a and a∈g3, the contact is b or c.
-                                        
-                                        Suppose next that Q is disjoint from e5. The edge f_a meets e5 at the common terminal v, while Q avoids v. Hence
-                                          (q1,q2,q3,f_a,e5)
-                                        is a five-edge linear path ending in the nonspecial rank-five edge e5 through v, a terminal rather than its unique entrance. Contradiction. Therefore Q meets e5. As Q avoids v, the contact is one of the two non-v vertices d,w.
-                                        
-                                        Finally suppose Q is disjoint from h. The edges f_a and h are distinct charged edges through v, so they meet exactly at v. Again Q avoids v. Thus
-                                          (q1,q2,q3,f_a,h)
-                                        is a five-edge linear path ending in the nonspecial rank-five edge h through the terminal v rather than through its unique entrance z. Contradiction. Hence Q meets h. Since Q avoids v, the contact is z or u.
-                                        
-                                        In the clean state g3 is disjoint from h, g3 is disjoint from e5, and h,e5 meet only at v, which is absent from Q. Thus these are three genuinely separated contact requirements on the same three-edge rail.
-
-                                      • [1000375] Clean terminal-left 4455 entrance rails are fourfold transversals
-                                          STATEMENT
-                                          Continue in the clean terminal-a state of b0de0851e2b0. Thus
-                                            f_a={x,v,a}
-                                          is rank four with unique entrance x and x∉V(P),
-                                            f_b={b,v,u_b}
-                                          is the other rank-four charged edge with unique entrance b,
-                                            h={z,v,u}
-                                          is the second rank-five edge in the clean state,
-                                          and e5 is the fixed rank-five edge.
-                                          
-                                          Let
-                                            Q=(q1,q2,q3)
-                                          be any canonical three-edge entrance path ending physically at x and avoiding the terminals v,a, so Q,f_a is a four-edge path ending in f_a through x.
-                                          
-                                          Then Q meets each of
-                                            g3, e5, h, f_b.
-                                          The contacts lie respectively in
-                                            {b,c}, {d,w}, {z,u}, {b,u_b}.
-                                          
-                                          In particular, if Q avoids b, then it contains four distinct forced vertices
-                                            c, u_b, one of {d,w}, and one of {z,u}.
-                                          BODY / PROOF
-                                          The first three transversal requirements are b0de0851e2b0.
-                                          
-                                          It remains to prove that Q meets f_b. Suppose Q were disjoint from f_b. Since Q,f_a is canonical, f_a meets Q only at its entrance x and Q avoids the terminals v,a. The two distinct charged edges f_a and f_b share the common terminal v, so by linearity
-                                            f_a∩f_b={v}.
-                                          Thus
-                                            (q1,q2,q3,f_a,f_b)
-                                          is a five-edge linear path.
-                                          
-                                          But f_b has edge rank four. This is impossible; equivalently the displayed path ends in f_b through the terminal v rather than through its unique rank-four entrance b. Hence Q meets f_b.
-                                          
-                                          Because v∉V(Q) and f_b={b,v,u_b}, its Q-contact is b or u_b.
-                                          
-                                          If Q avoids b, the g3-contact from b0de0851e2b0 must be c and the f_b-contact must be u_b. The three target edges g3,e5,h are pairwise disjoint on Q (e5 and h meet only at v, which Q avoids), so their contacts c, one of {d,w}, and one of {z,u} are distinct. Also u_b lies in f_b and cannot lie in g3, e5, or h: f_b shares respectively b,v,v with those distinct edges and linearity forbids a second common vertex. Hence all four forced vertices are distinct.
-
                               • [1000262] If the left 4455 witness is an entrance, every canonical entrance rail must recross the middle edge
                                   STATEMENT
                                   Assume the surviving p=5 4455 witness geometry {a,b} from 7b36d8822911, with
@@ -26296,6 +25300,96 @@
                                       is a five-edge linear path, again ending in e5 through v; the nonconsecutive pair h2,g3 is disjoint by assumption, and e5 is disjoint from h1,h2. This is the same contradiction.
                                       
                                       Hence g3 meets both h1 and h2. Together with a∈g3∩h3, it meets every rail edge.
+
+                              • [1001182] Terminal-left 4455 rigidity collapses the no-c rank-five branch
+                                  STATEMENT
+                                  Assume the surviving p=5 terminal-left 4455 geometry with
+                                  P=(g1,g2,g3,g4,e5),
+                                  a=g2∩g3, b the private vertex of g3, c=g3∩g4,
+                                  and suppose the rank-four charged edge at a is
+                                  f_a={x,v,a}
+                                  with a terminal and x its unique entrance. Then phi(a),phi(c)>=5, phi(x)=3, and x∉V(P).
+                                  
+                                  Let f_b be the charged edge with entrance b, and let h be the second rank-five charged edge through v. Then h contains neither a nor b, so h∩g3 is either empty or {c}. If c∉h, then h is disjoint from g2∪g3 and meets g4 at its private vertex z. In fact this no-c branch is uniquely clean:
+                                  h={z,v,u},
+                                  where z is the unique entrance of h and u∉V(P); hence h meets P only at z and v.
+                                  BODY / PROOF
+                                  Because f_a is rank-four ascending, phi(x)=3. Since a is the path-relative terminal witness, x is absent from P and phi(a)>=5. The sequence (g1,g2,f_a,e5,g4) is a five-edge linear path ending in g4 through d=g4∩e5, so c can be chosen as last vertex and phi(c)>=5.
+                                  
+                                  The distinct charged edges h,f_a,f_b share v and, by linearity, no second vertex. Hence a,b∉h, so h∩g3 is empty or {c}. Assume c∉h. If h met g2, then (e5,h,g2,g3) would be a four-edge linear path ending in g3 through a, allowing b as last vertex and contradicting phi(b)=3. Thus h is disjoint from g2∪g3. The terminal-tail blocker lemma applied to h and P forces a contact in g2∪g3∪g4; the first two are excluded, and linearity excludes d=g4∩e5, so the contact is the private vertex z of g4.
+                                  
+                                  Let t be the other non-v vertex of h. It cannot lie in g4 by linearity or in e5 because h and e5 already share v. If t lay in g1, then (e5,h,g1,g2,g3) would be a five-edge linear path ending in g3 through a, again forcing phi(b)>=5. Hence t∉V(P), and h meets P only at z and v. Finally z cannot be a terminal of the nonspecial rank-five edge h: otherwise (g1,g2,g3,g4,h) would be a five-edge path entering h through a terminal, contradicting its unique rank-five entrance. Therefore z is the unique entrance, phi(z)=4, and writing the off-path terminal as u gives h={z,v,u} with u∉V(P).
+
+                                • [1000791] The clean terminal-left 4455 state forces every low entrance rail to hit three separated edges
+                                    STATEMENT
+                                    Continue in the clean no-c terminal-a state of 14c89ddd9ef1:
+                                      f_a={x,v,a}
+                                    is rank four with unique entrance x, phi(x)=3, and x∉V(P);
+                                      h={z,v,u}
+                                    is the second rank-five edge with entrance z=private(g4) and u∉V(P);
+                                    and e5 is the fixed rank-five edge.
+                                    
+                                    Let
+                                      Q=(q1,q2,q3)
+                                    be any canonical three-edge entrance path ending physically at x and avoiding the terminals v,a, so Q,f_a is a four-edge path ending in f_a through x.
+                                    
+                                    Then Q meets each of the three edges
+                                      g3, e5, h.
+                                    Because Q avoids a and v, these contacts lie respectively in:
+                                      {b,c}, {d,w}, {z,u}.
+                                    BODY / PROOF
+                                    Suppose first that Q is disjoint from g3. Since Q,f_a is canonical and f_a meets g3 at a, the concatenation
+                                      (q1,q2,q3,f_a,g3)
+                                    is a five-edge linear path ending in g3 through a. The private vertex b of g3 is distinct from a and can be chosen as physical last vertex. Hence phi(b)>=5, contradicting phi(b)=3.
+                                    
+                                    Thus Q meets g3. Since Q avoids the terminal a of f_a and a∈g3, the contact is b or c.
+                                    
+                                    Suppose next that Q is disjoint from e5. The edge f_a meets e5 at the common terminal v, while Q avoids v. Hence
+                                      (q1,q2,q3,f_a,e5)
+                                    is a five-edge linear path ending in the nonspecial rank-five edge e5 through v, a terminal rather than its unique entrance. Contradiction. Therefore Q meets e5. As Q avoids v, the contact is one of the two non-v vertices d,w.
+                                    
+                                    Finally suppose Q is disjoint from h. The edges f_a and h are distinct charged edges through v, so they meet exactly at v. Again Q avoids v. Thus
+                                      (q1,q2,q3,f_a,h)
+                                    is a five-edge linear path ending in the nonspecial rank-five edge h through the terminal v rather than through its unique entrance z. Contradiction. Hence Q meets h. Since Q avoids v, the contact is z or u.
+                                    
+                                    In the clean state g3 is disjoint from h, g3 is disjoint from e5, and h,e5 meet only at v, which is absent from Q. Thus these are three genuinely separated contact requirements on the same three-edge rail.
+
+                                  • [1000375] Clean terminal-left 4455 entrance rails are fourfold transversals
+                                      STATEMENT
+                                      Continue in the clean terminal-a state of b0de0851e2b0. Thus
+                                        f_a={x,v,a}
+                                      is rank four with unique entrance x and x∉V(P),
+                                        f_b={b,v,u_b}
+                                      is the other rank-four charged edge with unique entrance b,
+                                        h={z,v,u}
+                                      is the second rank-five edge in the clean state,
+                                      and e5 is the fixed rank-five edge.
+                                      
+                                      Let
+                                        Q=(q1,q2,q3)
+                                      be any canonical three-edge entrance path ending physically at x and avoiding the terminals v,a, so Q,f_a is a four-edge path ending in f_a through x.
+                                      
+                                      Then Q meets each of
+                                        g3, e5, h, f_b.
+                                      The contacts lie respectively in
+                                        {b,c}, {d,w}, {z,u}, {b,u_b}.
+                                      
+                                      In particular, if Q avoids b, then it contains four distinct forced vertices
+                                        c, u_b, one of {d,w}, and one of {z,u}.
+                                      BODY / PROOF
+                                      The first three transversal requirements are b0de0851e2b0.
+                                      
+                                      It remains to prove that Q meets f_b. Suppose Q were disjoint from f_b. Since Q,f_a is canonical, f_a meets Q only at its entrance x and Q avoids the terminals v,a. The two distinct charged edges f_a and f_b share the common terminal v, so by linearity
+                                        f_a∩f_b={v}.
+                                      Thus
+                                        (q1,q2,q3,f_a,f_b)
+                                      is a five-edge linear path.
+                                      
+                                      But f_b has edge rank four. This is impossible; equivalently the displayed path ends in f_b through the terminal v rather than through its unique rank-four entrance b. Hence Q meets f_b.
+                                      
+                                      Because v∉V(Q) and f_b={b,v,u_b}, its Q-contact is b or u_b.
+                                      
+                                      If Q avoids b, the g3-contact from b0de0851e2b0 must be c and the f_b-contact must be u_b. The three target edges g3,e5,h are pairwise disjoint on Q (e5 and h meet only at v, which Q avoids), so their contacts c, one of {d,w}, and one of {z,u} are distinct. Also u_b lies in f_b and cannot lie in g3, e5, or h: f_b shares respectively b,v,v with those distinct edges and linearity forbids a second common vertex. Hence all four forced vertices are distinct.
 
               • [1000568] The mixed p=4 obstruction consists of common-endpoint two-rail paths
                   STATEMENT
@@ -27017,6 +26111,12 @@
         BODY / PROOF
         For every rank-p vertex w, the number of strict-gap source-clean terminal-single ascending edges assigned to w as a minimum-rank terminal and carrying a selected common-anchor D+Y certificate at either terminal is o(p), uniformly over the relevant chosen maximum endpoint paths. Equivalently, both the same-terminal certified class and the uphill-certified class from 9e490cc47ca8 require sublinear assigned local congestion bounds. The certified uphill structural split 25b5948e8d37 does not yet supply such a bound.
 
+    • [proof_rehearsal_g000000000014] Proof rehearsal 14 — 2026-10-01 19:57 UTC
+        STATEMENT
+        ‹none›
+        BODY / PROOF
+        Completed proof rehearsal.
+
 • [project_policy] Project-specific policy
     STATEMENT
     ‹none›
@@ -27623,3 +26723,578 @@
             For s=7, this is L<=floor(244/3)=81.
             
             The argument is purely structural and uses no computation. It also shows why a Hamilton loose cycle in C_s tensor C_s is impossible: covering many PP vertices forces many aligned edges, while every aligned edge consumes an extra JJ incidence beyond the unavoidable one-JJ-per-product-edge budget.
+
+    • [1000241] The new projective proof explains exactly the d=3 and d=4 exceptional dimensions
+        STATEMENT
+        For the full projective additive system H_d on F_2^d\{0}, any spanning path has joint XOR zero. For d=3 this is already impossible because a spanning P_3 would have two distinct joints. For d=4 rank-nullity forces the six joints to split into two complementary lines, and the 3-by-3 residue grid gives the endpoint contradiction. Beginning at d=5 this proof mechanism cannot yield a universal obstruction: PG(4,2) has a spanning P_15, and in the displayed witness its 14-joint set even contains a zero-sum triple {2,31,29}; the remaining 11 joints also sum to zero, showing precisely why the two-line collapse disappears.
+        BODY / PROOF
+        Let H_d be the additive triple system on F_2^d\{0}. Its total vector sum is zero for d>=2, so the joint-residue normal form gives XOR(J)=0 for every spanning path.
+        
+        For d=3, H_3 has 7 vertices and a spanning path would have ell=3 and exactly two joints. Two distinct nonzero vectors cannot sum to zero, so H_3 is P_3-free.
+        
+        For d=4, there are six joints. The rank-nullity lemma forces a zero-sum triple and a zero-sum complementary triple. These are the nonzero points of complementary 2-spaces U and W. Therefore the allowable joint graph is K_{3,3}: pairs within one line are forbidden because their sum is the third joint on that line, while every cross pair has sum outside J. Any joint Hamilton path must alternate between the two lines. Its five internal colors occupy a staircase in the 3-by-3 grid U^*+W^*, leaving four residual grid points. The endpoint-pairing condition of the joint-residue normal form fails, exactly as in d593f8024a92.
+        
+        For d=5 the conclusion is false. The project object bfc5f55c4e7d exhibits a spanning P_15 with successive endpoint/joint labels
+          1,2,4,8,16,21,31,11,17,13,22,15,29,14,9,23.
+        Thus the 14 joints are
+          2,4,8,16,21,31,11,17,13,22,15,29,14,9.
+        They still have XOR zero, and indeed already contain the zero-sum triple
+          {2,31,29},
+        since 2+31=29 under XOR. Its 11-point complement therefore also has XOR zero. The line is harmless because its three vertices occur far apart in the joint order rather than consecutively. The rank-nullity step has produced a small circuit but no complementary line and hence no bipartite/grid rigidity.
+        
+        Thus the genuinely general part of the new proof is the joint-XOR/joint-residue machinery. The non-Hamiltonicity conclusion is a small-dimension collapse: d=3 fails at the XOR step, d=4 fails after the forced 3+3 circuit split, while d>=5 requires additional structure and in the full projective family such a structure cannot exist universally because spanning paths do exist.
+
+  • [1001175] Maximum-path structural toolkit
+      STATEMENT
+      Reusable lemmas about maximum endpoint paths: endpoint-preserving rotations, terminal-contact packing, and rigid intersection geometry.
+      BODY / PROOF
+      Organizational home for certified LINP lemmas whose statements are reusable independently of the proof route in which they were discovered.
+
+    • [1000016] A loss-one double-blocker splice creates a canonical two-cycle
+        STATEMENT
+        In the boundary setting q=δ, let Q=(g_1,...,g_t), t=q-1, be an x-ending path avoiding y,z, with cells A_i={b_i,c_i}. Suppose a double blocker h through an opposite last vertex a has blockers u∈A_i and b_{i+2}∈A_{i+2}, so the exact splice loss is one. Then the resulting (t-1)-edge x-ending path P_0 admits a forced safe single-blocker rotation using the omitted edge g_i, producing a second (t-1)-edge x-ending path P_1; in P_1 the omitted edge g_1 is a forced safe single blocker and rotating by g_1 returns to P_0. Thus the obvious safe repair of a loss-one chord is a canonical two-state rotation cycle, and any proof of further progress must use another endpoint or another incident edge.
+        BODY / PROOF
+        Write h={a,u,b_{i+2}} with u∈A_i and 2<=i<=t-2. The loss-one splice from ee17956ece60 is P_0=(g_{i-1},g_{i-2},...,g_1,h,g_{i+2},...,g_t), with the evident interpretation when i=2. Its first edge has c_{i-1}=g_{i-1}∩g_i as a last vertex (for i=2 this is c_1 in g_1, since the next edge h meets g_1 at a). The omitted edge g_i contains c_{i-1}. Its only other contact with P_0 is u, which lies in h: the other vertex of A_i lies only in the omitted edges g_i and possibly g_{i+1}, while i<=t-2 ensures u≠x. Since Q avoids y,z, g_i avoids y,z. Hence g_i is a safe single blocker at c_{i-1}. The single-blocker rotation gives P_1=(g_2,g_3,...,g_i,h,g_{i+2},...,g_t), again with the evident i=2 case. Now c_1 is a last vertex of the first edge g_2, and the omitted edge g_1 meets P_1 outside c_1 only at a∈h. It avoids y,z and a≠x, so g_1 is a safe single blocker. Rotating by g_1 gives exactly P_0. No claim is made that these are the only safe moves; the point is that the canonical repair itself closes into a two-cycle.
+
+    • [1000058] Flat shared-last-edge states have half-density in the terminal-contact window
+        STATEMENT
+        Let P=(g_1,...,g_p) be a maximum endpoint path with last vertex v. Let F be a family of distinct ascending nonspecial edges
+          e_i={x_i,v,u_i}
+        such that:
+        - v is terminal at e_i;
+        - phi(e_i)=q_i<p<=phi(u_i);
+        - the unique off-v contact of e_i with P is u_i;
+        - for each i there is a maximum p-edge path Q_i ending at u_i whose last edge is an internal host edge g_{j_i}, and Q_i enters g_{j_i} through the forward joint
+            z_{j_i}=g_{j_i} intersect g_{j_i+1};
+        - g_{j_i} is nonspecial ascending of edge rank p with unique entrance z_{j_i}.
+        
+        For Q<p let
+          F_{<=Q}={e_i in F:q_i<=Q}.
+        Then
+          |F_{<=Q}| <= max(0,2Q-p-1).
+        
+        Consequently, if q_1<=...<=q_k are the edge ranks in F, then
+          q_i >= ceil((p+i+1)/2)
+        for every i.
+        
+        In particular, the host edges g_{j_i} supporting these flat states occupy pairwise nonconsecutive indices.
+        BODY / PROOF
+        First note that two consecutive host edges cannot both have the stated flat orientation. Suppose g_j and g_{j+1} both have edge rank p and are nonspecial ascending with unique entrances
+          z_j=g_j intersect g_{j+1},
+          z_{j+1}=g_{j+1} intersect g_{j+2}.
+        Because z_j is the unique entrance of g_j,
+          phi(z_j)=p-1.
+        But z_j is not the unique entrance of g_{j+1}; it is one of the two terminal vertices of that nonspecial edge. Hence
+          phi(g_{j+1},z_j)=phi(g_{j+1})=p,
+        so phi(z_j)>=p, a contradiction. Thus the supporting indices j_i form an independent set of integers.
+        
+        Fix e_i of rank q_i<=Q. Since Q_i enters its last edge g_{j_i} through z_{j_i} and ends at u_i, the last vertex u_i is a terminal vertex of g_{j_i}, hence
+          u_i in {b_{j_i}, z_{j_i-1}},
+        where b_j denotes the private vertex of g_j.
+        
+        The edge e_i has exactly one off-v contact on P, namely u_i. Apply the singleton-contact localization 49080cbf1371.
+        
+        If u_i=b_{j_i}, then
+          p-q_i+2 <= j_i <= q_i-2.
+        
+        If u_i=z_{j_i-1}, then its occurrence interval on P is {j_i-1,j_i}. The same localization gives
+          p-q_i+2 <= j_i <= q_i-1.
+        
+        Thus in all cases
+          p-Q+2 <= j_i <= Q-1.                         (1)
+        
+        There are
+          N=max(0,2Q-p-2)
+        integer positions in the interval (1). Since the distinct supporting host edges occupy nonconsecutive positions, there are at most ceil(N/2) distinct supporting edges.
+        
+        A fixed supporting edge g_j can serve at most two members of F: their distinct last vertices u_i must be among its two terminal vertices b_j and z_{j-1}. Therefore
+          |F_{<=Q}| <= 2 ceil(N/2) <= N+1
+                     <= max(0,2Q-p-1),
+        where the empty-window case is immediate.
+        
+        Finally, for the i-th ordered rank q_i, apply the bound with Q=q_i:
+          i <= 2q_i-p-1,
+        hence
+          q_i >= ceil((p+i+1)/2).
+
+    • [1000106] Four equal-length maximum paths cannot form a chordless cycle of unique intersections
+        STATEMENT
+        Let A,B,C,D be maximum endpoint paths of the same length L. Suppose
+          |V(A) intersect V(B)|=|V(B) intersect V(C)|=|V(C) intersect V(D)|=|V(D) intersect V(A)|=1,
+        while
+          V(A) intersect V(C)=V(B) intersect V(D)=emptyset.
+        Then no such four paths exist.
+        BODY / PROOF
+        By 5854d853a44b, write the four unique consecutive intersections as aligned joints at levels
+          a for A-B, b for B-C, c for C-D, d for D-A.
+        
+        The four joint vertices are distinct. For example, the A-B and B-C joints cannot coincide because that common vertex would lie in A intersect C, which is empty. Hence adjacent levels are distinct: on any one path, two distinct joints cannot occur between the same consecutive edge pair.
+        
+        Consider A. Its segment between the A-B and A-D joints has |d-a| edges. The alternative route from the A-B joint to the A-D joint obtained by following B to the B-C joint, then C to the C-D joint, then D to the A-D joint has
+          |b-a|+|c-b|+|d-c|
+        edges. The hypotheses on pairwise intersections make this alternative route internally disjoint from the remainder of A and internally linear: consecutive constituent paths meet only at the displayed joints and the nonconsecutive pairs are disjoint. Replacing the A-segment by this route therefore gives a path with the same last vertex as A. Maximality of A gives
+          |b-a|+|c-b|+|d-c| <= |d-a|.
+        The reverse inequality is the triangle inequality, so equality holds. Equality in the real-line triangle inequality implies that a,b,c,d occur monotonically in this order. Because adjacent levels are distinct, the monotonicity is strict.
+        
+        Now make the analogous replacement on B. The B-segment between levels a and b can be replaced by the route through A,D,C, giving
+          |d-a|+|c-d|+|b-c| <= |b-a|.
+        Again equality must hold, so a,d,c,b must occur monotonically in this order.
+        
+        But a,b,c,d are strictly monotone. Reversing all inequalities if necessary, suppose a<b<c<d. Then a,d,c,b is neither nondecreasing nor nonincreasing, contradicting the equality condition for the second replacement. Thus the assumed four-path configuration is impossible.
+
+    • [1000146] Unique auxiliary intersections of crossing endpoint lenses preserve potential-minus-position slack
+        STATEMENT
+        Let P be a maximum p-edge path ending at v. Let balanced endpoint lenses for retained vertices c,d have crossing host intervals [a,c] and [b,d] with a<b<c<d, and let P_c,P_d be the corresponding maximum endpoint paths ending at c,d. Let kappa_P(c),kappa_P(d) denote the host-prefix edge counts to the chosen occurrences of c,d on P. Suppose the two off-host lens sides have a clean intersection w and that w is the unique common vertex of the full maximum paths P_c and P_d. Then
+        phi(c)-kappa_P(c)=phi(d)-kappa_P(d).
+        Consequently, for a crossing pair of balanced endpoint lenses, either P_c and P_d have at least two common vertices, or their endpoint slack phi(.)-kappa_P(.) is equal.
+        BODY / PROOF
+        Let the first host interval be [a,c] and the second [b,d]. Write L_1=|P[a,c]| and L_2=|P[b,d]|. Let alpha be the off-host distance from a to w along P_c and beta the off-host distance from b to w along P_d. By the exact crossing-lens cross-splice equality ff85a782d098, the first hybrid maximum path has length p, which gives alpha-beta=|P[a,b]|. Since the lens sides are balanced, the distance from w to the endpoint c along P_c is L_1-alpha, and from w to d along P_d is L_2-beta. Therefore the edge index of w measured from the initial end of P_c is phi(c)-(L_1-alpha), while on P_d it is phi(d)-(L_2-beta). If w is their unique common vertex, universal unique-intersection alignment 5854d853a44b forces these two indices to be equal. Substitute alpha-beta=|P[a,b]| together with L_1=|P[a,c]| and L_2=|P[b,d]|. After cancellation this becomes phi(c)-kappa_P(c)=phi(d)-kappa_P(d), where kappa_P(c),kappa_P(d) are the corresponding host-prefix coordinates. If the slack values differ, the unique-intersection alternative is impossible, so the two maximum endpoint paths must share a second vertex.
+
+    • [1000174] Uphill 0-1-1 edges are repeated-intersection or aligned X-X
+        STATEMENT
+        Let e={x,v,u} be an ascending nonspecial edge of rank q with unique entrance x and terminals v,u. Assume
+          q<phi(v)=p<phi(u)=s.
+        Let P_v and P_u be chosen maximum endpoint paths ending at v and u, respectively, and assume e is terminal-single on both paths.
+        
+        On P_v, exactly one of {x,u} occurs off v; call the lower-terminal contact type X if x occurs and U if u occurs.
+        On P_u, exactly one of {x,v} occurs off u; call the higher-terminal contact type X if x occurs and V if v occurs.
+        
+        Then:
+        
+        (1) If the type is U-X, U-V, or X-V, the two maximum paths P_v and P_u have at least two common vertices.
+        
+        (2) The only type for which P_v and P_u can have a unique common vertex is X-X. In that case, if
+          V(P_v) intersect V(P_u)={x},
+        then x is a joint on both paths at the same path index.
+        
+        Thus every uphill strict-gap doubly-terminal-single edge either carries an explicit repeated-intersection certificate between its two terminal maximum paths, or is in the rigid X-X aligned-joint state.
+        BODY / PROOF
+        Because q<p and q<s, the edge e cannot be the last edge of either chosen maximum terminal path. Hence terminal-singleness says exactly one of the two non-endpoint vertices of e occurs on the precursor, and linearity prevents the other from appearing only in the last path edge.
+        
+        Suppose first that P_v has type U. Then u belongs to P_v, while u is the last vertex of P_u. Hence P_v and P_u share u. If u were their unique common vertex, the certified unique-intersection theorem 5854d853a44b would force u to be an internal joint of P_u, contradicting that u is its last vertex. Therefore P_v and P_u have at least two common vertices. This proves both U-X and U-V.
+        
+        Now suppose P_u has type V. Then v belongs to P_u, while v is the last vertex of P_v. The same argument with v in place of u shows that P_v and P_u cannot intersect only at v. Hence they have at least two common vertices. This proves X-V as well.
+        
+        The only remaining signature is X-X. Then both paths contain x. They may have additional common vertices, in which case the repeated-intersection conclusion already holds. If x is their unique common vertex, apply 5854d853a44b directly to the two maximum endpoint paths P_v and P_u. It gives an index t with
+          x = g_t intersect g_{t+1} = h_t intersect h_{t+1},
+        where P_v=(g_1,...,g_p) and P_u=(h_1,...,h_s). Thus x is an aligned joint at the same index on both paths.
+        
+        No selected-cell, common-anchor, source-clean, or near-extremal hypothesis is used.
+
+    • [1000187] Exact saturated-fan normal form at the boundary q=δ
+        STATEMENT
+        In the setting of e5859985e51b, let e={x,y,z} be ascending nonspecial with q=φ(e)=δ, let Q=(g_1,...,g_{q-1}) be a maximum path ending at x and avoiding y,z, let a be the opposite last vertex, and assume Q has no safe single-blocker rotation avoiding y,z. Then the blocker sets of the q-1 edges through a other than g_1 are pairwise disjoint subsets of V(Q)\g_1 of sizes one or two. If S=2, they partition V(Q)\g_1 exactly; the two single blockers occupy exactly two of the three exceptional types {blocker x, contains y, contains z}. If S=3, they cover all but one vertex of V(Q)\g_1, and the three single blockers are exactly one of each exceptional type.
+        BODY / PROOF
+        By e5859985e51b, d_H(a)=q, the number S of single-blocking edges is 2 or 3, the number of double-blocking edges is D=q-1-S, and exactly S-2 vertices of V(Q)\g_1 are unused by blocker incidences. Distinct edges through a have disjoint blocker vertices outside a by linearity, so the blocker sets form pairwise disjoint one- or two-element subsets of V(Q)\g_1. Therefore when S=2 there are no unused blocker vertices and these sets partition V(Q)\g_1; when S=3 exactly one vertex is uncovered.
+        
+        Every single-blocking edge is exceptional: its unique blocker is x, or it contains y, or it contains z. These three types are mutually exclusive. Indeed an edge through a containing x and y would intersect e in both x and y, impossible by linearity; similarly for x and z, and an edge containing both y and z would intersect e in both y and z. Also by linearity there is at most one single blocker of each type. Hence with S=3 all three types occur exactly once, while with S=2 exactly two of the three types occur.
+
+    • [1000285] A saturated terminal star nearly realizes the period-four singleton extremizer on the opposite source rail
+        STATEMENT
+        Let e={x,u,v} be an ascending nonspecial edge of rank q>=4 and let R be a canonical (q-1)-edge source rail of e. Fix one terminal w in {u,v}, and assume q is the maximum rank of an ascending nonspecial edge terminal at w.
+        
+        Let t(w) be the number of ascending nonspecial edges terminal at w and put delta_w=gamma(q)-t(w)>=0, where gamma(q)=floor((11q-5)/8).
+        
+        Relative to R, classify the t(w)-1 ascending terminal competitors f!=e as single-contact or double-contact edges, with counts S_w,B_w, and let U_w count vertices of W=V(R) minus {x} unused by all these competitors. Put alpha(q)=ceil((3q-8)/4) and kappa_q=alpha(q)-2gamma(q)+2q. Then kappa_q belongs to {0,1}, and
+        alpha(q)-kappa_q-2delta_w <= S_w <= alpha(q),
+        0 <= U_w <= kappa_q+2delta_w <= 2delta_w+1.
+        
+        Thus if delta_w=o(q), the terminal star has S_w=(3/4+o(1))q single blockers on R and leaves only o(q) rail vertices unused. If e is maximum-rank at both terminals u,v and both deficits are o(q), the same source rail simultaneously supports two near-extremal period-four singleton patterns, one from each terminal star.
+        BODY / PROOF
+        Take T_w in 38e2ce9f9772 to be all ascending terminal edges through w other than e. The maximum-rank assumption ensures every such edge has rank at most q, so the source-rail coupling lemma applies. Its exact identity gives 2t(w)=2q+S_w-U_w, because d_w^*=t(w). Hence S_w-U_w=2gamma(q)-2q-2delta_w. (1)
+        
+        The exact fixed-entrance transfer theorem eb40ddcc33ca, applied to the q-edge path R,e ending at w, bounds the number of singleton contacts among all incident edges of rank at most q by alpha(q)=ceil((3q-8)/4). Our ascending-terminal competitors form a subfamily, so S_w<=alpha(q). (2)
+        
+        Combining (1) and (2), U_w=S_w-[2gamma(q)-2q-2delta_w]<=alpha(q)-2gamma(q)+2q+2delta_w=kappa_q+2delta_w. Since U_w>=0, equation (1) also gives S_w>=2gamma(q)-2q-2delta_w=alpha(q)-kappa_q-2delta_w.
+        
+        Finally, substituting gamma(q)=floor((11q-5)/8) and alpha(q)=ceil((3q-8)/4) in the eight residue classes modulo 8 gives kappa_q in {0,1}. This proves the inequalities and the asymptotic conclusion.
+
+    • [1000369] A genuine balanced lens has length at least two
+        STATEMENT
+        Let H be a simple linear hypergraph. Let Q and R be linear paths having a genuine clean balanced lens between distinct boundary vertices a,b, with Q-side and R-side internally vertex-disjoint and distinct. If the common side length is t, then t>=2.
+        
+        Consequently, every balanced endpoint lens supplied by b35b0fd4e4cd that has genuinely distinct host and auxiliary sides uses at least two host edges and at least two auxiliary edges.
+        BODY / PROOF
+        Suppose t=1. Then the Q-side of the lens consists of one hyperedge e_Q containing both boundary vertices a,b, and the R-side consists of one hyperedge e_R containing both a,b. Because the lens is genuine, its two sides are distinct, so e_Q!=e_R. But then the two distinct hyperedges e_Q,e_R intersect in the two vertices a,b, contradicting linearity. Therefore t cannot equal one. Since a genuine lens is nonempty, t>=2.
+        
+        The endpoint-lens consequence is immediate because b35b0fd4e4cd produces a clean balanced elementary lens with distinct sides whenever the two maximum endpoint paths do not simply coincide along the relevant terminal segment.
+
+    • [1000394] Terminal-safe sinks have endpoint deficiency at most two
+        STATEMENT
+        Let H be a linear 3-graph of minimum degree δ, let P=(g_1,...,g_s) be a linear path ending at x, let a be a last vertex of g_1 at the opposite end, and fix y,z outside V(P). If at a there is neither a safe clean extension avoiding y,z nor a safe single-blocker rotation avoiding y,z, then δ-s≤2. Consequently, if a double-blocker splice produces an x-ending path avoiding y,z with loss d from a (δ-1)-edge entrance path in the boundary case q=δ, then every loss d≥2 state admits another safe clean extension or safe single rotation; only loss d=1 can be a local sink.
+        BODY / PROOF
+        Use the notation C,S,D of the endpoint-deficiency lemma 5f79968b85de. Absence of a safe clean edge means every clean edge through a contains y or z. By linearity there is at most one clean edge containing y and at most one containing z. Write C_y,C_z in {0,1}, C=C_y+C_z. Absence of a safe single blocker means every single blocker either has blocker x or contains y or z. There is at most one single blocker of each of these three types. Moreover, if C_y=1 then no single blocker can contain y, because the clean-y edge and such a single blocker would both contain a and y; similarly for z. Hence S<=1+(1-C_y)+(1-C_z)=3-C. Therefore 2C+S<=C+3<=5. The deficiency inequality 2C+S>=2(δ-s) gives 2(δ-s)<=5, so the integer δ-s is at most 2. In the boundary setting q=δ, the canonical entrance path has length q-1. A splice of loss d has length s=q-1-d, hence δ-s=d+1. If d>=2 then δ-s>=3, so the state cannot be a sink: a safe clean extension or safe single-blocker rotation exists.
+
+    • [1000412] No third path can pierce a balanced lens between maximum rails
+        STATEMENT
+        Let two maximum endpoint paths contain a clean internal lens with equal-length sides. No nontrivial third path can have a clean subpath joining an interior vertex of one lens side to an interior vertex of the other. The two complementary hybrid replacements have total length larger than the two original lens sides by twice the third-segment length, so one replacement beats a maximum endpoint path.
+        BODY / PROOF
+        Let Q and R be maximum endpoint paths containing a clean internal balanced lens between common vertices a,b. Let the Q-side and R-side of the lens both have edge length t.
+        
+        Let T be any linear path having a subpath W from a vertex s in the interior of the Q-side to a vertex r in the interior of the R-side. Assume:
+        - the interior of W is disjoint from both lens sides;
+        - W meets the two lens sides only at s and r;
+        - the two hybrid replacements obtained by using W preserve linearity with the exterior portions of Q and R.
+        
+        Write l=|W|>=1.
+        
+        As in b5d44965d984, cut the Q-side at s and the R-side at r. Form the two complementary a-b hybrids:
+          H_1 = (a-to-s on Q), W, (r-to-b on R),
+          H_2 = (a-to-r on R), reverse(W), (s-to-b on Q).
+        
+        The pieces of the two original lens sides are partitioned between H_1,H_2, while W is used once in each. Hence
+          |H_1|+|H_2|
+           = |L_Q|+|L_R|+2|W|
+           = 2t+2l
+           >2t.
+        
+        Thus one hybrid has length at least t+1. Replacing the corresponding t-edge lens side inside Q or R by that hybrid gives an endpoint-preserving path longer than a maximum endpoint path, contradiction.
+        
+        Therefore no nontrivial third path can cleanly cross from the interior of one side of a balanced lens to the interior of the other.
+        
+        In particular, for an elementary lens between two source rails in a 0-1-1 obstruction, every other source rail is forbidden from piercing the lens with a clean segment. Any apparent crossing must instead hit a lens boundary, have an additional intersection that subdivides the lens, or route entirely outside at least one side.
+
+      • [1000493] No third path can cleanly pierce any clean lens between maximum endpoint paths
+          STATEMENT
+          Let Q,R be maximum endpoint paths and let two common vertices bound any clean lens between them, with arbitrary side lengths A,B. No third path can cleanly pierce from the interior of one lens side to the interior of the other. The two complementary hybrids have total length A+B+2l; if one does not beat the Q-side length A, the other necessarily beats the R-side length B. Thus the earlier no-piercing theorem does not require a balanced lens.
+          BODY / PROOF
+          Let Q and R be maximum endpoint paths ending at x and y. Let a,b be two common vertices such that the Q-side L_Q and R-side L_R form a clean lens. Write
+            A=|L_Q|,
+            B=|L_R|.
+          
+          Let T be a third linear path having a clean subpath W of length l>=1 from an interior vertex s of L_Q to an interior vertex r of L_R. Assume, as in the standard piercing setup, that:
+          - the interior of W is disjoint from both lens sides;
+          - W meets the lens sides only at s,r;
+          - the two complementary a-b hybrids preserve linearity with the exteriors of Q and R.
+          
+          Form
+            H_1=(a-to-s on Q), W, (r-to-b on R),
+            H_2=(a-to-r on R), reverse(W), (s-to-b on Q).
+          
+          The original lens-side pieces are partitioned between H_1,H_2 and W is used once in each, so
+            |H_1|+|H_2|=A+B+2l>A+B.                           (1)
+          
+          If |H_1|>A, replace the Q-side L_Q by H_1. By the clean-piercing hypothesis this gives a linear path ending at x of length
+            |Q|-A+|H_1|>|Q|=phi(x),
+          contradiction.
+          
+          Otherwise |H_1|<=A. Then from (1),
+            |H_2|=A+B+2l-|H_1|
+                 >=B+2l
+                 >B.
+          Replace the R-side L_R by H_2. This gives a linear path ending at y longer than R, contradiction.
+          
+          Therefore no such clean piercing W exists.
+          
+          No equality A=B is required. Balancedness was useful for other lens bookkeeping, but not for the piercing exclusion itself.
+
+  • [1001176] Terminal-shadow collision toolkit
+      STATEMENT
+      Reusable lemmas for backward color-terminal collisions on rank-monotone terminal-pair paths, including shortcut cycles and collision-packing mechanisms.
+      BODY / PROOF
+      Organizational home for reusable collision lemmas extracted from the terminal-shadow proof route.
+
+    • [1000126] Two crossing backward collisions either shortcut to a linear cycle or expose a further collision
+        STATEMENT
+        Let v_0v_1...v_k be a rainbow terminal-pair path of ascending nonspecial edges
+        E_s={x_s,v_{s-1},v_s}
+        with nondecreasing edge ranks. Suppose
+        x_i=v_j and x_h=v_l
+        are crossing backward collisions with
+        j<l<i<h.
+        
+        Consider the edge sequence
+        C=
+        E_{j+1},E_{j+2},...,E_l,
+        E_h,E_{h-1},...,E_i.
+        
+        Then one of the following holds.
+        
+        (A) C is a linear cycle of length
+        L=(l-j)+(h-i+1).
+        Every edge of C has rank at least L, and r_i>=L+1.
+        
+        (B) There is an additional backward collision x_b=v_a, distinct from the two displayed collisions, with either
+        j<=a<b<=l,
+        or
+        i<=a<b<=h,
+        or
+        j<=a<l<i<b<=h.
+        Thus failure of the crossing shortcut is witnessed in one of the two flanks or by another collision lying inside the crossing rectangle between the displayed chords.
+        BODY / PROOF
+        The displayed sequence has the intended consecutive intersections:
+        the left terminal segment runs from v_j to v_l;
+        E_l meets E_h at x_h=v_l;
+        the reversed right terminal segment runs from E_h down to E_i using the joints v_{h-1},...,v_i;
+        and E_i meets E_{j+1} at x_i=v_j, closing the cycle.
+        All intended intersection vertices are distinct because the terminal graph path is simple and j<l<i<h.
+        
+        If C is not a linear cycle, two nonconsecutive displayed hyperedges have an extra common vertex. Distinct terminal-pair edges on the original simple terminal path cannot create such an intersection through two terminal vertices, and rainbow colors exclude entrance-entrance coincidences. Hence an extra intersection is a color-terminal equality x_b=v_a.
+        
+        By c9a012c1b82e every such equality points backward in the original index order, so a<=b-2. The displayed indices consist of the left block j+1,...,l and the right block i,...,h. Therefore an additional collision must have both endpoints in the left block, both in the right block, or terminal endpoint in the left block and colliding-edge index in the right block. These are exactly the three alternatives in (B). A collision with terminal endpoint on the right and colliding edge on the left would point forward and is impossible.
+        
+        If no such additional collision exists, C is a linear cycle. Its length is
+        L=(l-j)+(h-i+1).
+        All displayed edges are ascending nonspecial, so f2925a904b8e gives rank at least L for each of them. In particular r_{j+1}>=L. The collision x_i=v_j gives r_{j+1}<=r_i-1 by c9a012c1b82e, hence r_i>=L+1.
+
+    • [1000224] Collision count is bounded by rank spread times squared cycle-packing number
+        STATEMENT
+        Let v_0v_1...v_k be a rainbow terminal-pair path of ascending nonspecial edges
+        E_1,...,E_k
+        with nondecreasing ranks r_1<=...<=r_k. Let C be the number of color-terminal collision chords on this path, let
+        D=r_k-r_1,
+        and let nu be the maximum number of pairwise edge-disjoint linear cycles whose edges all belong to {E_1,...,E_k}.
+        
+        Then
+        C <= D(2nu+1)^2.
+        In particular, if D=0 then C=0, and more generally a path with small rank spread and bounded cycle-packing number is close to strong-rainbow.
+        BODY / PROOF
+        By 31cb29f347a8, every collision chord crosses at least one strict rank jump. Assign each collision to one strict jump that it crosses, for example the leftmost such jump. The number J of strict jumps is at most D because the integer rank rises by at least one at each strict jump.
+        
+        Fix one strict jump and let M be the number of collision chords assigned to it. All M chords cross that fixed cut, so e4a44a230fe7 supplies at least
+        ceil((ceil(sqrt(M))-1)/2)
+        pairwise edge-disjoint linear cycles, all using edges from the parent-edge set {E_1,...,E_k}. By the definition of nu,
+        ceil((ceil(sqrt(M))-1)/2) <= nu.
+        Therefore
+        ceil(sqrt(M)) <= 2nu+1,
+        and hence
+        M <= (2nu+1)^2.
+        
+        Summing this bound over the J<=D strict jumps gives
+        C <= J(2nu+1)^2 <= D(2nu+1)^2.
+        When D=0 there are no strict jumps, so C=0.
+
+  • [1001183] Potential and rank-growth toolkit
+      STATEMENT
+      Reusable lemmas governing endpoint-potential equality, rank growth, and monotone rank propagation.
+      BODY / PROOF
+      Organizational home for certified reusable potential/rank-growth structure.
+
+    • [1000196] Minimum-potential equality forces two-step ascent on every nonspecial edge
+        STATEMENT
+        Assume the minimum-potential equality setting of 41d502ff7771: sum_v phi(v)=m+n. Then:
+        
+        1. For every vertex v with p=phi(v), every maximum p-edge path ending at v has a special last edge.
+        
+        2. Every nonspecial edge e is ascending, and if q=phi(e) with unique entrance x and terminals u,v, then
+           phi(x)=q-1,
+           phi(u)>=q+1,
+           phi(v)>=q+1.
+        Equivalently every entrance-to-terminal arc in the auxiliary DAG raises endpoint potential by at least two.
+        
+        In particular no nonspecial edge has rank equal to the endpoint potential of either terminal.
+        BODY / PROOF
+        Fix a vertex v and put p=phi(v). By 41d502ff7771,
+          d_D^-(v)=2p-1
+        and
+          t_ns(v)=2p-4.
+        
+        Choose an incoming snake edge h at v of maximum terminal rank t=phi(h,v), and let P be a t-edge path witnessing it, ending with h at v.
+        
+        The snake-indegree proof d4e8b1c27a65 gives
+          d_D^-(v)-1 <= 2(t-1).
+        Since d_D^-(v)=2p-1 and t<=phi(v)=p, equality forces t=p.
+        
+        Moreover, the proof gives that every other incoming edge f at v meets V(P)\h. There are exactly
+          2p-2
+        other incoming edges and exactly
+          |V(P)\h|=2p-2
+        vertices there.
+        
+        All incoming edges at v share v. By linearity, their contact sets with V(P)\h are pairwise disjoint. Since every one of the 2p-2 other incoming edges has at least one contact in a set of size 2p-2, each has exactly one contact and these contacts partition V(P)\h.
+        
+        Suppose h were nonspecial. Because P ends in h at last vertex v, v is a terminal of h, so h is counted among the nonspecial terminal edges at v. The certified saturation lemma 672725540541 says, in the case h is nonspecial,
+          t_ns(v)-D(v) <= 2p-5,
+        where D(v) counts other nonspecial terminal edges having both non-v vertices in V(P)\h.
+        Since t_ns(v)=2p-4, this forces D(v)>=1.
+        
+        But exact snake saturation above showed every other incoming edge, hence every other nonspecial terminal edge, has exactly one contact with V(P)\h. Therefore D(v)=0, contradiction.
+        
+        So h must be special.
+        
+        Now take any maximum p-edge path ending at v. Its last edge is an incoming snake edge at v of terminal rank p, hence it is itself a maximum-rank incoming edge and the preceding argument applies. Thus every maximum endpoint path at v has special last edge.
+        
+        Finally let e={x,u,w} be nonspecial. By 41d502ff7771 every nonspecial edge is ascending, so if q=phi(e),
+          phi(x)=q-1,
+        while terminal potentials satisfy phi(u),phi(w)>=q in general.
+        
+        If phi(u)=q, then a q-edge path ending in e with last vertex u is a maximum phi(u)-edge path ending at u whose last edge e is nonspecial, contradicting the result just proved. Hence phi(u)>=q+1, and similarly phi(w)>=q+1.
+        
+        Therefore each auxiliary arc from the entrance x to either terminal raises potential by at least two.
+
+    • [1000221] Strict ordered-shadow growth forces near-unit parent-rank growth
+        STATEMENT
+        Let z_0z_1,...,z_{t-1}z_t be a strictly increasing path in the ordered shadow Z, with labels lambda_i and parent ascending hyperedges E_i of ranks q_i. Write epsilon_i=q_i-lambda_i in {0,1}, so epsilon_i=1 exactly when the chosen auxiliary edge is entrance-terminal and epsilon_i=0 exactly when it is terminal-terminal. Then q_{i+1}-q_i >= 1+epsilon_{i+1}-epsilon_i. In particular parent ranks are nondecreasing; equality q_{i+1}=q_i can occur only when epsilon_i=1 and epsilon_{i+1}=0, i.e. only across an entrance-terminal step followed by a terminal-terminal step. More generally q_j-q_i >= (j-i)+epsilon_j-epsilon_i >= j-i-1.
+        BODY / PROOF
+        Since lambda_i=q_i-epsilon_i and strict integrality gives lambda_{i+1}>=lambda_i+1, we have q_{i+1}-epsilon_{i+1}>=q_i-epsilon_i+1, hence q_{i+1}-q_i>=1+epsilon_{i+1}-epsilon_i. Because epsilon values lie in {0,1}, the right side is always nonnegative. Equality of parent ranks requires 1+epsilon_{i+1}-epsilon_i=0, forcing epsilon_i=1 and epsilon_{i+1}=0. Summing from i to j-1 gives q_j-q_i >= (j-i)+epsilon_j-epsilon_i, and the final lower bound follows.
+
+    • [1000274] Top-rank alignment converts Astra double-contact mass directly into multiplicity credit
+        STATEMENT
+        Let q(v) be the maximum rank of an ascending nonspecial edge terminal at v. If q(v)=phi(v)=p, then choosing the global endpoint path P_v to end in such a top-rank ascending edge gives t(v)-X_v <= ((2r-3)/4)p+O_r(1), where X_v is excess contact multiplicity. Consequently, if every vertex supporting ascending terminal edges is top-rank aligned, the global leading coefficient improves to 1-(2r-1)/(4r(r-1)); for r=3 this is 19/24.
+        BODY / PROOF
+        Let H be a finite linear r-uniform hypergraph, r>=3. Fix a nonisolated vertex v and put p=phi(v). Let t(v) be the number of ascending nonspecial edges for which v is terminal.
+        
+        Assume t(v)>0 and that among those edges there is one h of rank exactly p. Since v is terminal at h and phi(h)=p=phi(v), choose the globally selected maximum endpoint path P_v to be a p-edge path ending in h with last vertex v.
+        
+        Let X_v be the excess contact multiplicity on P_v:
+          X_v=sum_{e contains v} max(mu_v(e)-1,0).
+        
+        For every ascending edge terminal at v, its rank is at most p, so it belongs to
+          J_p(v)={f:v in f, phi(f)<=p}.
+        Hence
+          t(v)<=|J_p(v)|.
+        
+        Use the fixed-entrance contact decomposition relative to h:
+        - s singleton contact sets;
+        - n_j contact sets of size j>=2.
+        Then
+          |J_p(v)|=1+s+sum_{j>=2} n_j.
+        
+        Meanwhile X_v contains, for these same J_p(v) incidences, at least
+          sum_{j>=2}(j-1)n_j.
+        Therefore
+          t(v)-X_v
+          <= |J_p(v)|-sum_{j>=2}(j-1)n_j
+          = 1+s+sum_{j>=2}(2-j)n_j
+          <=1+s.                                             (1)
+        
+        By the arbitrary-r singleton run count a570a11f0001,
+          s <= lambda(p-2)+(r-1),
+        where
+          lambda=(2r-3)/4.
+        Equivalently,
+          s <= lambda p + O_r(1).
+        Thus
+          t(v)-X_v <= ((2r-3)/4)p + O_r(1).                 (2)
+        
+        This is strictly stronger than the raw fixed-entrance terminal count
+          t(v)<=((6r-7)/8)p+O_r(1):
+        all nonsingleton contacts are paid by excess multiplicity.
+        
+        GLOBAL CONDITIONAL CONSEQUENCE.
+        Suppose every vertex with t(v)>0 is top-rank aligned in this sense, so its maximum ascending terminal rank equals phi(v), and choose P_v accordingly. Summing (2),
+          (r-1)A - X
+          =sum_v t(v)-X
+          <= ((2r-3)/4)S + O_r(n_+).                        (3)
+        
+        Since X>=0,
+          A-X
+          <= [(r-1)A-X]/(r-1)
+          <= (2r-3)/(4(r-1)) S + O_r(n_+).                 (4)
+        
+        The r-uniform contact identity 6c9c2c5a0fcb gives
+          rm <= (r-1)S-(r-2)n_+ +(C-X),
+        and C<=A, hence
+          rm <= (r-1)S +(A-X)+O_r(n_+).
+        
+        Using (4), the leading S-coefficient is
+          [(r-1)+(2r-3)/(4(r-1))]/r
+          = [4r^2-6r+1]/[4r(r-1)]
+          = 1-(2r-1)/[4r(r-1)].
+        
+        Thus in the fully top-rank-aligned regime the leading coefficient is twice as far below one as Astra's general bound.
+
+    • [1000278] Refined ascending-edge accounting
+        STATEMENT
+        Let A be the number of ascending nonspecial edges and let H_2 be the number of nonascending nonspecial edges e with unique entrance x satisfying φ(x)>2(φ(e)-1). Then 3m-A+H_2 <= Σ_v(2φ(v)-1) <= (2ell-3)n.
+        BODY / PROOF
+        At x, let c(x) be the number of ascending edges with entrance x and h(x) the number counted by H_2. The joint budget gives d_H(x)<=2φ(x)-1+c(x)-h(x): every incident edge is either snake-incoming at x, nonascending with entrance x, or ascending with entrance x, and each strongly decreasing nonascending edge has blocker weight two rather than one. Summing over x gives 3m<=Σ_x(2φ(x)-1)+A-H_2. Since H is P_ell-free, φ(x)<=ell-1 for every x.
+
+    • [1000378] Rank-gap mass and aligned potential simultaneously improve the Astra coefficient
+        STATEMENT
+        Let H be a finite linear r-uniform hypergraph, r>=3. For each nonisolated vertex v let p_v=phi(v), let t(v) count ascending nonspecial edges terminal at v, and when t(v)>0 let q(v) be their maximum rank. Let V_0={v:t(v)>0 and q(v)=p_v}, S_0=sum_{v in V_0}p_v, and G=sum_{v:t(v)>0,q(v)<p_v}(p_v-q(v)). Put S=sum_v p_v and c_r=1-(2r-1)/(8r(r-1)). Then
+        m <= c_r S - (2r-1)/(8r(r-1)) S_0 - (6r-7)/(8r(r-1)) G + O_r(n_+).
+        For r=3 this is m <= (43/48)S-(5/48)S_0-(11/48)G+O(n_+). Hence any asymptotic extremizer for the Astra coefficient with S/n_+ tending to infinity must satisfy both S_0=o(S) and G=o(S).
+        BODY / PROOF
+        Set alpha=(6r-7)/8 and lambda=(2r-3)/4. Choose the global endpoint paths as in 3b170b2ae6 on aligned vertices and arbitrarily elsewhere, and let X_v be the resulting excess contact multiplicity. If v is aligned, 3b170b2ae6 gives t(v)-X_v <= lambda p_v+O_r(1)=alpha p_v-(alpha-lambda)p_v+O_r(1). If v is active but misaligned, the fixed-entrance theorem applied at a maximum-rank ascending terminal edge gives t(v)-X_v<=t(v)<=alpha q(v)+O_r(1)=alpha p_v-alpha(p_v-q(v))+O_r(1). If t(v)=0 then t(v)-X_v<=0. Summing and using alpha-lambda=(2r-1)/8 yields
+        (r-1)A-X <= alpha S -(2r-1)S_0/8-alpha G+O_r(n_+).
+        Since X>=0, A-X <= ((r-1)A-X)/(r-1). The contact-multiplicity identity gives rm <= (r-1)S-(r-2)n_+ +(C-X), and C<=A, hence
+        m <= [(r-1)+alpha/(r-1)]S/r -(2r-1)S_0/[8r(r-1)]-alpha G/[r(r-1)]+O_r(n_+).
+        The first coefficient is c_r, while alpha/[r(r-1)]=(6r-7)/[8r(r-1)]. The extremal consequence follows because both correction terms are nonnegative.
+
+    • [1000414] A long terminal-only singleton family forces large total potential on its absent entrances
+        STATEMENT
+        Let P be a maximum p-edge path ending at v, and let e_1,...,e_k be terminal-only singleton ascending edges through v ordered by their contact positions on P. Let x_i be the absent unique entrance of e_i. Then
+        sum_{i=1}^k phi(x_i) >= [k(p+3)-2p-10]/2.
+        In particular, for k=Omega(p), the distinct off-path entrances carry Omega(kp) total endpoint potential.
+        BODY / PROOF
+        Write r_i=phi(e_i)=phi(x_i)+1. By 2bee7f7c5680, r_i+r_{i+2}>=p+5 for i=1,...,k-2. Summing gives
+        2 sum_i r_i -(r_1+r_2+r_{k-1}+r_k) >= (k-2)(p+5).
+        Discarding the nonnegative boundary term yields
+        sum_i r_i >= (k-2)(p+5)/2.
+        Therefore
+        sum_i phi(x_i)=sum_i(r_i-1)
+        >= (k-2)(p+5)/2-k
+        = [k(p+3)-2p-10]/2.
+        The entrance vertices x_i are distinct because distinct edges through v can share no second vertex by linearity.
+
+  • [1001189] Critical-core and deletion toolkit
+      STATEMENT
+      Reusable lemmas about threshold-degree deletion, universal witness cores, and path-forest structure in minimal obstructions.
+      BODY / PROOF
+      Organizational home for reusable critical-core and threshold-deletion structure.
+
+    • [1000228] Deleting threshold-degree vertices leaves a universal path forest
+        STATEMENT
+        In the setting of 7de985881169, the induced subhypergraph H-D has edge set C and is a subhypergraph of every nonspecial witness path. Consequently H-D is a linear path forest: every nontrivial component is a subpath of a linear path, every vertex has degree at most two in H-D, and if c is the number of nonempty components then |E(H-D)|=(|V(E(H-D))|-c)/2<=|V(H)\D|/2. In particular every vertex v outside D has at least d_H(v)-2>=k-1 incident edges meeting D.
+        BODY / PROOF
+        By 7de985881169, every edge avoiding D lies in every longest witness path P for any fixed nonspecial edge. Hence E(H-D) is a subset of E(P).
+        
+        A subset of the edge set of a linear path has no intersections between nonconsecutive selected path edges. Each connected component of such a subset is therefore a linear path (with isolated selected edges allowed as one-edge paths). Thus H-D is a linear path forest and its maximum degree is at most two.
+        
+        A t-edge linear 3-uniform path has exactly 2t+1 vertices. Summing over the c nonempty components of H-D gives
+        |V(E(H-D))|=2|E(H-D)|+c.
+        Hence
+        |E(H-D)|=(|V(E(H-D))|-c)/2<=|V(H)\D|/2.
+        
+        Finally, if v∉D then d_H(v)>=k+1 by definition of D, while d_{H-D}(v)<=2. Therefore at least d_H(v)-2>=k-1 edges incident with v meet D.
+
+    • [1000276] Minimal equality obstructions are connected and top cycles have a two-contact first ear
+        STATEMENT
+        Let ell>=4, d=floor(2ell/3), and let H be a vertex-minimal counterexample to the exact-density equality assertion E_ell: |E(H)|=d|V(H)|, delta(H)>=d+1, and H contains a nonspecial edge. Then H is connected.
+        
+        Moreover, in the minimum-potential equality branch, if C is one of the canonical linear ell-cycles supplied by 56fe77d0057c, there exists an edge f not in C meeting both V(C) and V(H)\V(C). Every such crossing edge meets C in exactly two vertices; in particular the first connection from C to the outside reservoir is a two-contact chord with one outside vertex.
+        BODY / PROOF
+        Suppose H is disconnected, with components H_1,...,H_r. Since
+        sum_i |E(H_i)| = d sum_i |V(H_i)|,
+        some component H_i has density at least d.
+        
+        Every component inherits minimum degree at least d+1.
+        
+        If H_i contains a nonspecial edge, then H_i has fewer vertices than H, is P_ell-free, has density at least d, and minimum degree at least d+1. Thus it is a smaller counterexample to the strengthened equality-layer assertion, contradicting vertex-minimality.
+        
+        If every edge of H_i is special, the certified all-special snake bound gives
+        |E(H_i)| <= ((2ell-3)/3)|V(H_i)|.
+        For ell>=4,
+        (2ell-3)/3 < floor(2ell/3)=d,
+        contradicting density at least d.
+        
+        Hence H is connected.
+        
+        Now assume the minimum-potential equality branch and let C be a canonical linear ell-cycle from 56fe77d0057c. Exact-density size separation gives |V(H)|>|V(C)|, but connectedness alone already implies that some edge f outside C meets both V(C) and its complement: take the first hyperedge leaving C along an edge-intersection walk from C to any outside vertex.
+        
+        We claim f cannot meet C in exactly one vertex. Let w be its unique cycle contact. A linear ell-cycle has ell edges. Delete a cycle edge adjacent to the cycle edge containing w so that, in the remaining (ell-1)-edge cycle path, w occurs in the first edge and is a last vertex. If w is a joint, delete the other incident cycle edge; if w is private, delete either neighboring cycle edge. The resulting (ell-1)-edge path meets f only at w, and the other two vertices of f lie outside C. Appending/prepending f gives a linear P_ell, contradiction.
+        
+        Thus every crossing edge has at least two cycle vertices. Since it also has an outside vertex and is 3-uniform, it has exactly two cycle contacts and one outside vertex.
+
+    • [1000389] Minimum-potential equality paths have two canonical special cycle closures
+        STATEMENT
+        Assume the minimum-potential equality configuration average(phi)=m/n+1, so the conclusions of f9df80bd57f2 hold. Let v have p=phi(v), and let P=(g_1,...,g_p) be any maximum p-edge path ending at v, with last edge h=g_p. Then h is special, and the other two special edges f_1,f_2 through v each close P to a linear cycle of length p+1:
+        (g_1,g_2,...,g_p,f_i).
+        Consequently, if p=ell-1 in a P_ell-free equality obstruction, every maximum p-edge endpoint path lies in at least two distinct linear ell-cycles sharing the same p-edge path.
+        BODY / PROOF
+        By f9df80bd57f2, every maximum p-edge path ending at v has a special last edge h=g_p. The two other special edges f_1,f_2 through v meet P outside v exactly at the two free vertices of g_1, one each, and have no other contact with P.
+        
+        Fix i. The sequence
+        g_1,g_2,...,g_p,f_i
+        has consecutive intersections inherited from P, together with
+        g_p∩f_i={v}
+        and
+        f_i∩g_1={a_i},
+        where a_i is one of the two free vertices of g_1.
+        
+        All nonconsecutive pairs are disjoint: f_i has no other contact with P, and P itself is linear. Therefore this sequence is a linear cycle of length p+1.
+        
+        The two cycles are distinct because f_1≠f_2 and they close through different free vertices of g_1.
+        
+        If p=ell-1, these are linear cycles of length ell. A linear ell-cycle need not itself contain a P_ell, so this is not yet a contradiction; rather it supplies two canonical closures of every maximum endpoint path, to which cycle-ear/chord arguments can be applied.

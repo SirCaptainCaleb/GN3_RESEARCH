@@ -56,5 +56,5 @@ support_status: "supported"
 title: "Every interior U_11 color-terminal collision closes a local linear cycle, including the last-edge boundary"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-30T17:27:57.58921+00:00"
-version: 10
+updated_at: "2026-10-01T20:14:44.289756+00:00"
+version: 11

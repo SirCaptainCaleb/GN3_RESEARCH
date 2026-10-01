@@ -1,13 +1,9 @@
-# Every prescribed pair in a minimum counterexample lies in a Hamiltonian four-set with two-path complement
+# Every prescribed pair has a sharp linear star of Hamiltonian four-sets with two-path complements
 
 ## Statement
 
-Let H be a minimum counterexample. For every two distinct vertices L,R and every three-element set D disjoint from {L,R}, there are distinct y,z in D such that W={L,R,y,z} is Hamiltonian and H-W is non-Hamiltonian with path-cover number two. In particular H contains such a four-set unconditionally, so every branch of a local-reversal reduction already satisfies the former four-or-five-set existence conclusion.
+Let H be a minimum counterexample and fix distinct vertices L,R. On the r=|V(H)|-2 exterior vertices, join y,z when {L,R,y,z} is Hamiltonian. Then this graph has independence number at most two. Consequently it has at least binom(r,2)-floor(r^2/4) edges and some exterior vertex y has at least floor((r-1)/2)=floor((|V(H)|-3)/2) neighbors z. Thus every prescribed pair lies in a linear star of Hamiltonian four-sets sharing the triple {L,R,y}; every complementary subtournament is non-Hamiltonian with path-cover number two.
 
 ## Body
 
-Fix L,R and an exterior three-set D. Partition D according to whether (L,y,R) or (R,y,L) is tight. Boundary antisymmetry gives exactly these two classes. Two labels y,z share a class. If (L,y,R) and (L,z,R) are tight, then exactly one of (y,L,z) and (z,L,y) is tight; respectively (y,L,z,R) or (z,L,y,R) is a Hamilton path on W. Each displayed path has precisely the two checked consecutive triples. If instead (R,y,L) and (R,z,L) are tight, use respectively (y,R,z,L) or (z,R,y,L), according to the reversal pair (y,R,z)/(z,R,y). Thus W is Hamiltonian in both cases. This is the elementary fixed-pair argument recorded in bd3c8d17ca06, reproduced here in full.
-
-By mincex01, |H|>10, so W is proper. Minimality gives pc(H-W)<=2, and pc(H-W)=1 would combine with the Hamilton path on W to two-cover H, a contradiction. Hence pc(H-W)=2.
-
-This strengthens and bypasses the previous global four-or-five-set existence proof: no endpoint-reversal classification, maximal witness, or matching-block extension is needed for this conclusion. It does not assert that W retains an entire previously chosen triple, a displayed orientation of L,R, or a preselected complement cover. Those stronger compatibility requirements, when needed by consumers, remain separate obligations.
+For any three exterior labels D, partition them according to whether (L,y,R) or (R,y,L) is tight. Two labels y,z share a class. Boundary antisymmetry on the appropriate triple then gives a Hamilton path on {L,R,y,z}, exactly as in the fixed-pair argument. Hence every exterior three-set spans an edge in the graph J whose edges are Hamiltonian four-extensions of {L,R}; equivalently alpha(J)<=2. The complement is triangle-free, so Mantel gives e(J)>=binom(r,2)-floor(r^2/4), and some y has degree at least floor((r-1)/2). Every corresponding four-set is proper because |H|>10. Its complement cannot be Hamiltonian or it would two-cover H; minimality therefore makes the complement pc2. The Mantel degree bound is sharp from alpha(J)<=2 alone. No endpoint-reversal classification or maximal witness is needed.
