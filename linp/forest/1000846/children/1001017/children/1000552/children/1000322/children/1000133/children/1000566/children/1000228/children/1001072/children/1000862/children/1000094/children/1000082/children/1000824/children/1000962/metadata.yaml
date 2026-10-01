@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "aea948128692f15ecf96f43d83b9ab8221ae1a44e00d23b9d52c90e8bd6a0681"
 created_at: "2026-09-24T02:45:54.029597+00:00"
 id: "1000962"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Color-run accounting is the natural zero-slack near-spanning target."
+statement_sha256: "aec85fe87ce8240e47916da96c60fcc3d034c90e7908a8cf58c25390f3623ddb"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

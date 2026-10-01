@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "c9a11fa33a6f2af47be1e6450c6a03a1c0e12f26cb7e091ad72c4bba55a45fd3"
 created_at: "2026-09-23T03:42:00.499233+00:00"
 id: "1000758"
 last_elevation_revision: 0
@@ -58,6 +59,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Deletion-family crossing producers: support-compatible deletion families force synchronized endpoint crossing multiplicity or order disagreement."
 simplified_statement: "Support-compatible deletion families force synchronized endpoint crossing multiplicity or order disagreement"
+statement_sha256: "72461131b2a0f346ba3415b08113c1760e98c01e859a001de139413c8d218a57"
 substantive_worker_ids:
   - 721
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ In a q,(q+1)^3 charged configuration at terminal v, let h_i be a rank-(q+1) high
 
 ## Body
 
+
 Let e={x,v,u} be an ascending nonspecial edge of rank q with v terminal. Let
   h_1,h_2,h_3
 be distinct ascending nonspecial edges of rank q+1, all terminal at v.

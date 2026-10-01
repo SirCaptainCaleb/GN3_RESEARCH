@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "ef7f03ba38115434985aa0ecb8dded85adfea89a3880296e0d94256163f8f57a"
 created_at: "2026-09-29T04:20:57.2009+00:00"
 id: "endpoint_reversal_sixdescent01"
 last_elevation_revision: 8298
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The maximal endpoint-reversal residue enters bounded six-window structure or strict descent."
+statement_sha256: "af3e756de7bd4433e72f0f60d73a16415311ed47350eb3d32a7358c91bacba35"
 substantive_worker_ids:
   - 718
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1f47192ee34c999d94990dcbc5c411885fba2499c403d8e6b9514a5e0a09ca79"
 created_at: "2026-09-25T20:31:48.146111+00:00"
 id: "1000532"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Many backward collisions through one cut contain a large crossing or nested family."
+statement_sha256: "2416ac41342f996d951d5ae9c4a112d6a40e2d4f5afdafdf38d9c21b21ee3cc2"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

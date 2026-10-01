@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "849fbb97dc2eb1892bf0d20cc8328873dfd13389da4ca19ecddb4ca963864ba4"
 created_at: "2026-09-24T02:45:56.546262+00:00"
 id: "1000367"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rigid zero-slack half-neighborhoods always contain an uncolored fixed-target 2-opt cut."
+statement_sha256: "14e9fc86e635e719a154059be277f66037d902c8d5f196492455dc07af2c142c"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

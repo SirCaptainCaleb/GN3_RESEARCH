@@ -6,6 +6,7 @@ If an antipodal red--blue coloring of Q_n has no monochromatic antipodal path, t
 
 ## Body
 
+
 Source: Wu--Yang 2026, Lemma 2.2 and Theorem 2.3, https://arxiv.org/abs/2607.19276.
 
 Let the red spanning subgraph have components C_1,...,C_r, and let p(x) be the index of the red component containing x. Define
@@ -21,3 +22,4 @@ If the number r of red components exceeds n, choose K>=max{n,r,2}, inject the co
 Wu--Yang then prove the diagonal rook theorem: no such rook labeling Q_K->Omega_K exists. That second step is the technically heavy chain-level obstruction summarized in the parent node.
 
 LINP translation. The clean reusable pattern is: label each state x by (component containing x, component containing its involutive mate). If every allowed local transition preserves one of the two component coordinates, while the involution swaps them, then a global antipodal obstruction becomes available.
+ 

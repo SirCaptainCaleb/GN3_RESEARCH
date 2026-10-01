@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "797a477a657afb4b2125be101c3a105c91a8bfefd1f6fc62a19db16813ebb1cb"
 created_at: "2026-09-24T01:40:07.871115+00:00"
 id: "1001042"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimal-counterexample induction reduces every bad path hull to ears or a spanning top-rank core."
+statement_sha256: "9974105c30fa19ab8c880182d262f0487b86de24d8401433524bef1ea86698dd"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

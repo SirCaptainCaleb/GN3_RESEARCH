@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "55949d0e5a20092f9db15ce098671694d0ea040a0d2e39a604762f546ee4c20e"
 created_at: "2026-09-21T20:57:46.398164+00:00"
 id: "1000900"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Joint snake-incidence and blocker accounting: combine snake incidence with blocker budgets and integer compensation to refine the ascending-edge master inequality."
 simplified_statement: "Joint snake-incidence and blocker budget."
+statement_sha256: "e35e0dcb6314611715e7c9c5dd3010ae7ffb2164bd1bb520de1ffe4ffc1a5b22"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

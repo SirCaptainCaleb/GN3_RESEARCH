@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3ae60dd8264c3be67dd29c1c779175347b1977b54a4d1e3f32425e993385f1c4"
 created_at: "2026-09-29T20:57:04.007847+00:00"
 id: "fixed_endpoint_matching_crosshooks01"
 last_elevation_revision: 9000
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The fixed-endpoint matching shell carries a complete opposite-orientation hook rectangle."
+statement_sha256: "f60555247430da617a3e09685736f646bc78a4771398dca8b7b383c2454dafb3"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

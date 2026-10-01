@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "df3de57b8c5456371cdc6b8e61e86444a37ee016553fff06f3cf93c2bf37ba31"
 created_at: "2026-09-28T01:00:21.264816+00:00"
 id: "1000635"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Conjecturally, shortest connector intervals either contain a large disjoint family that can be spliced simultaneously or concentrate on a bounded window that forces compressible structure."
+statement_sha256: "eb857cf118f2df289e3bbd5a34609edaf6c9e1a883d0ad1adfa9fe0fce698919"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "9a47bdb24b3fd38b5a726bb894dafce4284efba8267d9f09c6ac7c4904b82859"
 created_at: "2026-09-29T05:12:44.604306+00:00"
 id: "unique_large_strictcompression01"
 last_elevation_revision: 7998
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A unique large side yields small orders or a smaller non-Hamiltonian complement"
+statement_sha256: "d32246f730803332e94c2e5158b5a3558c58e08de37a8c0de608e001e1fd43d0"
 substantive_worker_ids:
   - 718
   - 630

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "647c3aab4906b2d456fb0ff45a34750f8d75a47e3352535e077f7337c4d25ae2"
 created_at: "2026-09-28T20:47:45.173569+00:00"
 id: "proof_rehearsal_reversal_bridge_20260928"
 last_elevation_revision: 0
@@ -84,6 +85,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "ec62442d0cd14581ff9d971c06278641f0ef14b411e96068e4c648f3aa38e14e"
 substantive_worker_ids:
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"

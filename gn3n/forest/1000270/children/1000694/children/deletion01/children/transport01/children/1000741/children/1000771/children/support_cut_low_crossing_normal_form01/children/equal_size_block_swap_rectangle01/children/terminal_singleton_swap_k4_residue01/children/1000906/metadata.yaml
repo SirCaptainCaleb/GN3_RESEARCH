@@ -6,6 +6,7 @@ audit_requested: true
 audit_requirement: "independent_reconstruction"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "54661b3fb086c3d5a3feb5de95c5f22bbf513beb9b496f5eed2955bf5b80aefa"
 created_at: "2026-10-01T13:45:30.523051+00:00"
 id: "1000906"
 last_elevation_revision: 0
@@ -30,6 +31,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The hard paired matching-block residue of a terminal singleton swap always contains at least two Hamiltonian five-sets through the swapped pair, each with a non-Hamiltonian pc2 complement."
+statement_sha256: "f3d4740a4db1fa8de09b8bec15a01da506033376e158064b467fdd7993923dcb"
 substantive_worker_ids:
   - 1061
 support_reason: "provisional_unaudited"

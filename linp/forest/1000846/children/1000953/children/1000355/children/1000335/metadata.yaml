@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bfaf94b10256939669b3a07900df65c22a0e861870f2a6dfb52d86dd91a9ebc2"
 created_at: "2026-09-23T21:05:59.711253+00:00"
 id: "1000335"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every order-five transversal design has a spanning seven-edge linear path."
+statement_sha256: "8fc729d8355bc14cae4049597c3d124af09e3e933a56af164e7571447691d608"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

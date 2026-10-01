@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "fbff9179a3d26a1024e52ecaf0daa980b4b035d058280318b04e1d29a6d81054"
 created_at: "2026-09-29T01:00:31.437108+00:00"
 id: "five_opposite_swap_gain01"
 last_elevation_revision: 8355
@@ -28,6 +29,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two opposite five-side swaps force disagreement or a one-vertex longer path"
+statement_sha256: "64d80c7db77efefb1b8f1963fac47da59d22a600f198e44fb27f82a2ba768bb1"
 substantive_worker_ids:
   - 718
 support_reason: "current_certified_premises"

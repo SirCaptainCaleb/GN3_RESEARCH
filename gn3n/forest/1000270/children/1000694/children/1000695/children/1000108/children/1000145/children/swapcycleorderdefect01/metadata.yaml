@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "475325dc040409ac065f2bab9e4da67f4b9c42f2bec83e0dd8ee1275c56a401e"
 created_at: "2026-09-27T20:37:46.548613+00:00"
 id: "swapcycleorderdefect01"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every singleton-swap cycle in a counterexample carries a genuine order defect"
+statement_sha256: "ff0fdecb64930ed6e88be3c27908cc93f650ce8e8b6c52487825f7f1dd2d9430"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

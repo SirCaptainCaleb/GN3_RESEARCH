@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5ecab050956cbc140d74bd7e2e324c489e1346840a0fb9371090d22f5e5d931d"
 created_at: "2026-09-24T19:59:33.479146+00:00"
 id: "1000491"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every special edge of globally maximum rank L has all three vertices of vertex rank L."
+statement_sha256: "f51b5532449674ae15eb74541022194bb9d518d6007f12d48e444d9ac1386170"
 substantive_worker_ids:
   - 250
 support_reason: "current_certified_premises"

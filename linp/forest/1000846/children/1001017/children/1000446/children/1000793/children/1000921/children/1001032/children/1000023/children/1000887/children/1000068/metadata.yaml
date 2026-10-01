@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5afcb437be35bc8d44be52939febd5a9d6eda9aa680c256888ef226b887df2b3"
 created_at: "2026-09-24T03:10:07.313606+00:00"
 id: "1000068"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Equality at density plus one gives an exact three-special-edge blocker normal form."
+statement_sha256: "5b00e6e4ed4e4f9c77fc075a592bf8df6e007b415b6e94d7dd16cd98337ff1e3"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

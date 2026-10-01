@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "64ce10d4e2b2177b5bbc1ccb13186ad4850be3754a7cb06aab5c444612303f76"
 created_at: "2026-09-23T20:40:27.203124+00:00"
 id: "1000221"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Strict ordered-shadow growth forces near-unit parent-rank growth."
+statement_sha256: "e5057929c57393298ee0111130795339a5db698a9f12590e53434d042746c535"
 substantive_worker_ids:
   - 183
 support_reason: "current_certified_premises"

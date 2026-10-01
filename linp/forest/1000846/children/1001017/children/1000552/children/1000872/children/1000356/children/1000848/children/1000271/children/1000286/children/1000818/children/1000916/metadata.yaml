@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c5d67c08e2ef69d72a622d5ba1169f91f3b9fa07669e8a0eeb79ea38cfb593fd"
 created_at: "2026-09-24T11:24:43.995236+00:00"
 id: "1000916"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A source hit forces a second source-rail intersection."
+statement_sha256: "9197040f3af6b5157a5b4a5e787a4787d4c61df7e845a59716ea440f3549d902"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

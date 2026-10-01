@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0f73ce77e53ee7d50ea7b3c318248a78b4ceb61131a8f66dd1aebcc974da3f1f"
 created_at: "2026-09-24T02:35:15.534905+00:00"
 id: "1000528"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A two-chord block reversal switches the entrance of a zero-slack witness."
+statement_sha256: "eff87da52f5046ec56c0039c74100654c701288339331299c92da48c99f8e525"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

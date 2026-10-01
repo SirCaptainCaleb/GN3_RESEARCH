@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a1131c1441618978d65f1d74edd579497e0ff1908dfaee936d74bf663a9f6451"
 created_at: "2026-09-27T04:38:29.779704+00:00"
 id: "compatsupportc5close24"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every support-compatible cycle closes to a clique"
+statement_sha256: "15183c53626ae3a02a0a74f757e89199a0fc69b734b11c5f1b681c6578968579"
 substantive_worker_ids:
   - 578
 support_reason: "current_certified_premises"

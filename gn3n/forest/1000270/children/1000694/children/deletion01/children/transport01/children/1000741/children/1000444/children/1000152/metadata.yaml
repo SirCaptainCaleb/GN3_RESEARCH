@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e5b3b28d8477c93203068b0c1313ab5340fd56183ef931c7ab417d114eba9c1a"
 created_at: "2026-09-28T15:03:34.284614+00:00"
 id: "1000152"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Internal restoration at a minimum-side endpoint forces a reversed endpoint edge."
+statement_sha256: "326e6105fb4f6e8bbcbbd616229a4cc42624269080781390f966c65969574ec4"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

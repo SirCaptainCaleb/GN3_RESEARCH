@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6948c2bfdc6b4ea7550dc75b7bbd11545df58f661ef61c5fa2009144d3f3238a"
 created_at: "2026-09-24T05:55:11.371157+00:00"
 id: "1000059"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every pure-high odd-boundary four-single state is an exact loss-one wrong-entrance state."
+statement_sha256: "13b87ae352c114e9f6c03f8dd890de129a37a2aeb0fda7db6b49b33afe13e785"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

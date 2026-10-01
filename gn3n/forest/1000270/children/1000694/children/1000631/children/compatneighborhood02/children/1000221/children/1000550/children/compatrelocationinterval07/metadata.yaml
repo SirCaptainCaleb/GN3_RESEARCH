@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a39d6c006504ac46e6161e79a5609a76223cb18c9f6c07378d1b775aa1d18d1b"
 created_at: "2026-09-27T04:16:51.201471+00:00"
 id: "compatrelocationinterval07"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Separated anchor neighbors force a long interval of order reversals"
+statement_sha256: "822c73befe0b6fc87e020065a411e6e09e64ab0db6842fb0c472fd127befa6fe"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

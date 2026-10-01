@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "99aa43a1597eaa645141f463c64807d83c3d8de6c0b6c6f283c11b81c4b6f86e"
 created_at: "2026-09-28T21:37:03.978414+00:00"
 id: "fourset_boolean_pc2_01"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A non-Hamiltonian four-set gives path-cover-two stability for every nonempty proper complement extension"
+statement_sha256: "190d0a5175fb634bcfadd769dda429e05b34c3a3f4c1706f13c80acad682aeb2"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

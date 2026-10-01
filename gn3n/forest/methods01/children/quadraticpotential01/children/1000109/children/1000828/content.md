@@ -6,6 +6,7 @@ Let A and B be vertex-disjoint tight paths in a boundary tournament with |A|>=|B
 
 ## Body
 
+
 This is the local balancing statement isolated by the certified reduction 257497a6d724. It is strictly weaker than Astra-002: it asks only for improvement relative to an already displayed imbalanced two-cover, not a balanced two-cover of every boundary tournament.
 
 If true, repeated application removes all component-size imbalance from any three-cover by strict descent of the quadratic potential. The remaining obligation for Astra-003 would then be to escape equitable three-covers by path-order or orientation structure.

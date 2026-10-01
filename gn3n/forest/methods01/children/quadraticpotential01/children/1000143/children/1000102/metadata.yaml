@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "1c3de2b1cba4d9314fd1f4c52b6d036725bb84d49051929b8c9bb8c7c9e47c8a"
 created_at: "2026-09-28T17:10:11.64303+00:00"
 id: "1000102"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Order disagreement between one-label replacement paths yields a local reversal, an old-support cycle, or quadratic descent."
+statement_sha256: "90239be73ec222ddf7cb2d332e2608533413b26a25f99ddbe9debfe3bf12a0f9"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

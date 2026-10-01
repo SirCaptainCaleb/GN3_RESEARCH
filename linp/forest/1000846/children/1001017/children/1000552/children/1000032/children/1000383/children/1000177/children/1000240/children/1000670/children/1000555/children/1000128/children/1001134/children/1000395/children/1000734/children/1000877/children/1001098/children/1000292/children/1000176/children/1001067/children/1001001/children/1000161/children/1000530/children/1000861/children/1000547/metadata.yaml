@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bd60f44fa39f0dbb9d83ef23339e8b227bdfbc509797443e8f9e842378112218"
 created_at: "2026-09-25T21:12:40.829841+00:00"
 id: "1000547"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Return-order inversion has an exact two-splice loss identity."
+statement_sha256: "f9a32a4676d404dbea43b0511af9592d60b63930918d63bb81fe732f7c7cdeb2"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

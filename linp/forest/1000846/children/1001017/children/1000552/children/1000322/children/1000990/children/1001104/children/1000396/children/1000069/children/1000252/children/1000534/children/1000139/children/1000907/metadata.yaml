@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f8208e9a19931e5acd67bb052cf0958f669400046af83828208e939d8d6392d9"
 created_at: "2026-09-24T04:27:07.106997+00:00"
 id: "1000907"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The trapped-negative charge state needs at least two kappa plus five negative vertices."
+statement_sha256: "6054bdafe91de50540261a8e907411e90487069f44f737dd11b9a8e3046813bd"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

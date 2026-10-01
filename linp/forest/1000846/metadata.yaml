@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "660957f3ff9ad6c1b11c1d69ed38b6799b8b03db68f98ff978f9b1c45827f4de"
 created_at: "2026-09-21T18:15:36.90109+00:00"
 id: "1000846"
 last_elevation_revision: null
@@ -39,6 +40,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Project map for the leading term of ex_L(n,P_ell^(3)). The certified quantitative upper-bound milestone is 43/48 via the snake/contact-conflict route; its live post-43/48 reduction asks for sublinear local congestion of selected strict-gap certified edges. Parallel theorem-scale routes toward 2/3 include defect-stability/dense-core and rainbow/ascending-edge methods, while the lower-bound program tests Steiner, design, additive, and product constructions."
 simplified_statement: "Determine sharper leading terms for the 3-uniform linear path Turán numbers ex_L(n,P_ell^(3)), improving either the general upper or lower bounds."
+statement_sha256: "86c6da63973b24c60b33c92b8545b7169d47ee8fe5f4144b0112add1b9a7063f"
 substantive_worker_ids:
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"

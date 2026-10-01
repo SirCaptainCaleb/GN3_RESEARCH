@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "82ee8a02be85bf0fd65f4fc116acfcc974d2a97966d6600df2df261779774ab2"
 created_at: "2026-09-24T02:51:03.990543+00:00"
 id: "1000467"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Equality-layer strict counterexamples are overwhelmingly threshold-degree."
+statement_sha256: "bd0400ec33a07ef680af136ea4de0eae5115e775cb456805dd4bef08d2a49138"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

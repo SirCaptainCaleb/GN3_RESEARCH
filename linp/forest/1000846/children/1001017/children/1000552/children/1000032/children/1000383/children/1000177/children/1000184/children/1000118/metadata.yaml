@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "5fbc6c42070800e41b89113f7fb5a3d29bb5f6a2411c3f9c50a4eb3f42f6bcb0"
 created_at: "2026-09-24T04:53:09.141583+00:00"
 id: "1000118"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A right-joint high entrance has only one near-central blocker slot."
+statement_sha256: "1e05018efbef2d17c628d3399ee6937b1fa29269739ddcb70d83fc624c0505c2"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

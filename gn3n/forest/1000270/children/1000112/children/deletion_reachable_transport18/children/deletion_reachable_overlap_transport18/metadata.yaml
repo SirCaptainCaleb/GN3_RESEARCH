@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2ba111a031804ae9cc69d124774b3dda730be6ba7a4e91125a95442a5a011194"
 created_at: "2026-09-29T21:21:44.669971+00:00"
 id: "deletion_reachable_overlap_transport18"
 last_elevation_revision: 9251
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Above order seventeen deletion-generated descent reaches endpoint overlap or a five-side common core."
+statement_sha256: "a968627dab95095c200392afbaf47e077fe72245b0d28bebd0691cb3c0518293"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

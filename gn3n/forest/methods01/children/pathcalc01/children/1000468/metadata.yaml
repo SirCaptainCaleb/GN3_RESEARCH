@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "158756aab780dfb61d325306b7b29a328d7900f17b3a4b1451867e2b505a3c2d"
 created_at: "2026-09-28T13:14:14.463074+00:00"
 id: "1000468"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Three compatible Hamiltonian deletions concentrate in one common gap"
+statement_sha256: "78f584f9bc4d1e65e5e7a1c96fa22bb5366e1c60cdd395d9bdc55921c52d2c73"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

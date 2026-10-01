@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "50899d48bd9b1af41cc8987f3c631fff295afbc92c70c491a816ef6e5ca61dec"
 created_at: "2026-09-27T21:40:55.668431+00:00"
 id: "1000302"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An adjacent transposition changes the defect line only in a four-center window"
+statement_sha256: "b116b91d5cbd5b1ac3e65d49670042bfa4fc055650f19a840db35f7e922f2ef1"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

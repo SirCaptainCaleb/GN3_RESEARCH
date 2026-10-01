@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3791a1fbb79a3b5ca8ba978a58a5db73504158e4f17d42fb24218e88620600c5"
 created_at: "2026-09-24T04:13:34.674998+00:00"
 id: "1000388"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A single far contact in entrance-a 4455 forces full middle-edge saturation of the entrance rail."
+statement_sha256: "0810d5e01dc746bac59fa3883382276012db6756de793f58c7cd3d9c85c9d0e9"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

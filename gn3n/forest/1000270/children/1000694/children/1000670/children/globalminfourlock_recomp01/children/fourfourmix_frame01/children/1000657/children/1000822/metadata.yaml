@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "75d72de054d66cf644e100010508072732ebfb3582d6621b0b4978c0b35d71b7"
 created_at: "2026-09-27T19:31:40.58998+00:00"
 id: "1000822"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A trapped quadratic minimum cannot have profile 4|4|a with a at least six."
+statement_sha256: "4fdf4cc229aedce9cb46487596447697ef1fff4953ee96c071d71423156d680a"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

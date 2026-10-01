@@ -6,6 +6,7 @@ Let H be a minimum counterexample, let A be a globally longest tight path of ord
 
 ## Body
 
+
 Fix an index i. The vertices x_i,x_{i+1} lie outside the globally longest path A, hence the certified longest-path paired-noninsertion menu 6839f08d0cf8 applies. If it gives a Hamiltonian four- or five-set, record i as a window index. Otherwise its remaining possibilities are a direct interval connector or a tight cross triple through A.
 
 For consecutive corridor vertices, a connector whose A-interval contains at least two vertices is consumed by 435125d4ab86: it gives order disagreement or a reversed splice-junction triple. If the connector contains only one A-vertex z, it is itself a tight cross triple and is handled by d63d3042d1ad. Likewise any cross-triple alternative from the paired-noninsertion menu is consumed by d63d3042d1ad: it gives one of those disturbances, or a successful insertion of some z_i in V(A)-V(C) between x_i and x_{i+1}. In the successful case the resulting path has order lambda and every new junction triple is tight.

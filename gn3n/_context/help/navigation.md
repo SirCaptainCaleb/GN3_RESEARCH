@@ -52,3 +52,7 @@ simplified_ancestry(object_id,max_depth=null)
 
 ancestry(object_id,max_depth=null,include_proofs=false)
   Exact target-to-root reasoning chain. Returns full statement text and trust/version metadata for each node; set include_proofs=true to include each node body/proof. Uses the same depth semantics and truncation marker as simplified_ancestry.
+
+ATLAS INTERPRETATION
+
+Atlas entries are intended to be directional summaries of mathematical routes. Read each ordinary entry as a compact transition from inherited assumptions/state to established output and onward consumer or remaining gap. If an entry merely lists topics, it is malformed organizational metadata rather than an adequate mathematical summary.

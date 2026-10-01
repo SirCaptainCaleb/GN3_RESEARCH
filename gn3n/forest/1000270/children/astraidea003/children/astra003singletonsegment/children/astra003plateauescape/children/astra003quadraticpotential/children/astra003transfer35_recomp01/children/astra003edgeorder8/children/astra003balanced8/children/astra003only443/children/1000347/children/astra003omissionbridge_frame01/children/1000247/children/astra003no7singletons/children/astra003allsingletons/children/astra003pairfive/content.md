@@ -6,6 +6,7 @@ Let K be a trapped order-eleven Astra-003 component containing a 4|4|3 state. Fo
 
 ## Body
 
+
 Fix a pair {a,b}. By 71c87221f4e3, the 4|4|3 surface in K has complete pair reachability on its three-side. Hence K contains a state
 
 X|P|Q

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e04241769d63f29c7c6b3cddfb32bec667c3b0c9a1e4a997b4d24b36fcd67e84"
 created_at: "2026-09-25T22:03:04.228753+00:00"
 id: "1000718"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair."
+statement_sha256: "d9151e7c77bf8ba39791d288c1bc8cf1002806fd64c252cd098a15e0e2e7c5c1"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

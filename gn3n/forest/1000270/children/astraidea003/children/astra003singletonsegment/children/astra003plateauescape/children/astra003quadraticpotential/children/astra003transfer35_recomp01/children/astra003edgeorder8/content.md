@@ -6,6 +6,7 @@ Let W be an eight-vertex set in an edge-orderable boundary tournament. Then W ha
 
 ## Body
 
+
 # Edge-orderable eight-vertex unions cannot support a trapped 3|5 pair
 
 Let W be an eight-vertex set and assume H[W] is edge-orderable.

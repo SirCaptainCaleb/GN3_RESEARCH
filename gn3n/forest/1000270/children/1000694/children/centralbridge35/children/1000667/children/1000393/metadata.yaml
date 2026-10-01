@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "2df58e4f8d8b8e3a188fcc82d1fab66f9793f0c85be4f969f524f90814e40d7d"
 created_at: "2026-09-27T23:50:29.568739+00:00"
 id: "1000393"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Canonical-state graph cannot trap."
+statement_sha256: "c4c534ecc70783a9ceb8441d259c94e3047cb642f10f42d772437174ad659f0a"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

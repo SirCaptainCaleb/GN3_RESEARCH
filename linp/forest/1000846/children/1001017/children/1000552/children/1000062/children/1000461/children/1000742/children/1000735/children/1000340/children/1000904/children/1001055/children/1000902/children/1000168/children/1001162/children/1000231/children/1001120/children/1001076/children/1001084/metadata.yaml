@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "846784574f03ee57eb11e97de178e7671a85cff72e83d72c3b34cf6008dc3424"
 created_at: "2026-09-24T14:01:57.805047+00:00"
 id: "1001084"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Overlap-maximal gap-one pairs have at most one nontrivial switchable cell, regardless of intersection order."
+statement_sha256: "8510284a128f632642224eac201b7858571ff88491bbef827a5a7582c914f050"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6d4ebe8fa1368274bd4d617e4ab206a4889a0f9d4e1d9e3689e9d59e5f620d85"
 created_at: "2026-09-27T19:17:28.326556+00:00"
 id: "compatcomponentthird01"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A third of the labels share one trapped reconfiguration component unless four covers realize a classified incompatibility pattern"
+statement_sha256: "e641f00b1e91f5dd692664506601464f9ff2c9cef28a4f85846515310cf5b3fd"
 substantive_worker_ids:
   - 569
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Im, Kim, Lee and Methuku proved that for every fixed mu>0 and all sufficiently l
 
 ## Body
 
+
 Source: Seonghyuk Im, Jaehoon Kim, Joonkyung Lee, Abhishek Methuku, "A proof of the Elliott-Rodl conjecture on hypertrees in Steiner triple systems", Forum of Mathematics, Sigma 12 (2024), e75, DOI 10.1017/fms.2024.34.
 
 Their theorem states that for every mu>0 there is v_0 such that every v-vertex Steiner triple system with v>=v_0 contains every hypertree on at most (1-mu)v vertices. A linear path is a hypertree. Therefore the maximum linear-path length L in such an STS satisfies

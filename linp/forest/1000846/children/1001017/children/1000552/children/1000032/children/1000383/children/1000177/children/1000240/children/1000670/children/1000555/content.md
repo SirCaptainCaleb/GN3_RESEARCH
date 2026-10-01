@@ -6,6 +6,7 @@ Let e={x,v,u} be ascending nonspecial of rank q with unique entrance x and termi
 
 ## Body
 
+
 Let e={x,v,u} be ascending nonspecial of rank q with unique entrance x and terminal v. Let
   R=(r_1,...,r_{q-1})
 be a canonical entrance path ending physically at x and avoiding v,u, so

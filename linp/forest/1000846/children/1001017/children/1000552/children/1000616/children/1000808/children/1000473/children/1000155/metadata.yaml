@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "9af244105da0817f7216d9c3f9edc17bfdf478281ca0bf3137254ef30360945f"
 created_at: "2026-09-23T19:45:40.754764+00:00"
 id: "1000155"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Ascending nonspecial edges of rank at most Q sharing a terminal on an r-edge path number at most 4Q-2r-3, yielding explicit lower bounds on their ordered ranks."
+statement_sha256: "b0fd6e77307d14b37d874ecf29cea9909fd4a9676d8c2553fd83a5fb4ffa011b"
 substantive_worker_ids:
   - 183
   - 254

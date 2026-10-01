@@ -6,6 +6,7 @@ Sperner's lemma, the Hochberg--McDiarmid--Saks Connector Theorem, multidimension
 
 ## Body
 
+
 Expository source supplied by the user: https://www.cs.uaf.edu/~hartman/pouzethex.pdf
 
 Statements.

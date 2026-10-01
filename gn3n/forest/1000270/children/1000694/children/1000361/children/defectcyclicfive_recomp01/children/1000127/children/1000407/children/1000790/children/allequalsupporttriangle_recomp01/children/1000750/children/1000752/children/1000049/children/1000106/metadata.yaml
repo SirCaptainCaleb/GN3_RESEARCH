@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "6607b1662fd5554a3a74444716501674c64303064971493450d881eaaa9b1244"
 created_at: "2026-09-28T02:48:25.968645+00:00"
 id: "1000106"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Successful transferred-label insertions fill the antipodal switch by a four-state singleton-transfer corridor"
+statement_sha256: "00c08dd90d09853f57260be7458cf90c1ec60dcd520438ce16ae57e8b02f0254"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

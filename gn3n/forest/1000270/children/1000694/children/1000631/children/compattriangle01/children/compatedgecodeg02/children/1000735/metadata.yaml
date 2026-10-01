@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "96f47c22de300eb226d8a14f6038e4a41c6b6030b252b304dbae5f04bfdca845"
 created_at: "2026-09-27T01:46:33.308147+00:00"
 id: "1000735"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Edge-codegree two forces half-density"
+statement_sha256: "732b380a9bca431dc96e3d25b2e3785cc6e8c26051111628b734be5aa7d7b614"
 substantive_worker_ids:
   - 624
 support_reason: "current_certified_premises"

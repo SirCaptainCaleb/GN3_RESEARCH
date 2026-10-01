@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3f98681d2992c37fe11db5c778866d3c4316401975be66cbfce65e6305899a38"
 created_at: "2026-09-24T02:04:27.215428+00:00"
 id: "1000881"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every threshold color supplies many private-to-private forest connectors."
+statement_sha256: "cc869bb23e211f891e23ab5f5e4a502cd15de1e26ebd3eb2c6d696ea0150bd60"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

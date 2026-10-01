@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8a96d2991d8e46c254bd28048ded96896cea94dc83bb5069c7bcefa02619ca2f"
 created_at: "2026-09-28T02:16:03.845915+00:00"
 id: "1000458"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every deletion singleton lift has a double-wrap rotation"
+statement_sha256: "dcdb149817649b2351262ebf8731e663022bd6a8609fef75222ee8ea81426f92"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

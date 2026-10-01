@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "db4eac4831e9dc50993a68bceec34cc8159cbfb9844688a74cdaabf3c1edca04"
 created_at: "2026-09-27T20:35:34.287999+00:00"
 id: "1000312"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The longest-path paired-noninsertion menu reduces from five outcomes to four"
+statement_sha256: "653d86da497baff081aeabca5bcc25a9bdcc3cce089e1211a658b7d39f2abcc4"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "882201149f3fa2f0f2bbe0931bc438491cbab9d9db6f94ffb35be92486b3c9a9"
 created_at: "2026-09-28T11:07:19.749879+00:00"
 id: "1000183"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If two rooted graphs intersect in a perfect matching, their remaining edges are complementary 2-factors."
+statement_sha256: "d7ea9bc8849cdad6023967b8939ffbfbe05b9a31f4a1e22fbbe5927270bc711f"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

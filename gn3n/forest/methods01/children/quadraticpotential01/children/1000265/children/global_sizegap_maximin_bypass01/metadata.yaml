@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "561e43608628024b26610b9bed75a1d9ca86263af9c21e866def58b149d60b04"
 created_at: "2026-09-29T04:58:37.407564+00:00"
 id: "global_sizegap_maximin_bypass01"
 last_elevation_revision: 8250
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Global size-gap bypass in quadratic-minimum covers: a sufficiently imbalanced size profile forces a small non-Hamiltonian complement and several maximin consequences, providing a direct alternative to the balanced sharp-shell analysis."
 simplified_statement: "A global size gap forces a non-Hamiltonian complement of order at most twice the minimum side"
+statement_sha256: "ba00340f7e89c904da78758a22420ae59011e4ff788b4587c6431d6afd52d770"
 substantive_worker_ids:
   - 718
   - 630

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "da63a43c89a674529e068f75dc7cb37cd3ff4d34786a1dfd6e6d0681d1ba981f"
 created_at: "2026-09-28T00:18:19.859494+00:00"
 id: "1000595"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every deletion-cover endpoint gives incompatibility, an isolated compatible edge, or the four-kernel frontier."
+statement_sha256: "a124913abbc4b7eea02f86a32bf90b862e071feb989a2c81ae3f783cc8443771"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

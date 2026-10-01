@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "119680953d8b30ab3a26e50cf9a2c7e11672a37e942b863b38644b3c013fb8b8"
 created_at: "2026-09-28T17:07:22.633011+00:00"
 id: "1000403"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "A linear potential allowance suffices to escape any three-cover"
+statement_sha256: "0b83470899768e1bd3306f789ab7b16824ebf38ac3ea3714c3de5724e514a922"
 substantive_worker_ids:
   - 626
 support_reason: "not_a_proved_or_evidence_claim"

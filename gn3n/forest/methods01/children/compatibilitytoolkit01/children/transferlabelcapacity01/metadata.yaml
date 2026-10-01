@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "23dd480f3270a8c7e3ba4f3da7a2091dca4eb77c35cac1f71fbb75615525dbb9"
 created_at: "2026-09-27T18:29:59.084704+00:00"
 id: "transferlabelcapacity01"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A fixed singleton-transfer label determines one opposite support."
+statement_sha256: "df0914a5e799c9adedbbccd7ac02060ee3ecd46defc460074ca95d6cda507bfd"
 substantive_worker_ids:
   - 569
 support_reason: "current_certified_premises"

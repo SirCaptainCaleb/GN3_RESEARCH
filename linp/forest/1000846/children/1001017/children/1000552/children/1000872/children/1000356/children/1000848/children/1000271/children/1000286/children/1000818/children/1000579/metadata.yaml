@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "270a9605e713c5042801c742d10eb8cd5d18842c71b92b510f1762289effa7bb"
 created_at: "2026-09-24T06:21:52.583726+00:00"
 id: "1000579"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Unique intersections remain aligned joints when maximum rail lengths differ by one."
+statement_sha256: "3b10ab7baf4c9d23608110cfd1e973cd6112363541790535f372a383b48e7160"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

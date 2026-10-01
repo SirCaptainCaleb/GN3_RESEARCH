@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "6c86e04ed70333f2a48ca16325b5de8526cf13cef6928e55ff59861a2d7f5e70"
 created_at: "2026-09-27T13:31:21.823432+00:00"
 id: "compatmixedcorridor39"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A blue-path mixed triangle is an opposite-component support-replacement corridor"
+statement_sha256: "f50fa1a2d19bbf79f324c681552e496ac41cfe9fb35296fcb233b32e129db41d"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

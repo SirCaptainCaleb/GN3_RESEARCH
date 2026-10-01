@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6c4b58122f17839491fdb5974572093767fc9a1a2a71cdb83118b014caedf37b"
 created_at: "2026-09-28T00:20:04.443782+00:00"
 id: "1000653"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three isolated endpoint neighbors force a four-unit triangle deficit."
+statement_sha256: "b21d1b62c65bb711b96301f2a9b6d5583853932ac89a7d656b8a2cd14ce5a317"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

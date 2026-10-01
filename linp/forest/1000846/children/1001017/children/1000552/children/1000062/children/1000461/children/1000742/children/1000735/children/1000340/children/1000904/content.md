@@ -6,6 +6,7 @@ Let h be an ascending edge of rank q and v a terminal. Using the full singleton-
 
 ## Body
 
+
 Let H be a finite linear 3-graph. Fix an ascending edge h of rank q and a terminal v of h. Choose a q-edge path
   P=(g_1,...,g_q)
 with last edge h=g_q and last vertex v. Let

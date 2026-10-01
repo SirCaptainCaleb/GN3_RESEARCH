@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "aba458285a5c6148f01068af76edb06659673312644e872cdd68a9e34df0b7e5"
 created_at: "2026-09-27T21:37:43.755434+00:00"
 id: "1000361"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: "Defect-line dual-certificate program: fixed spanning orders reduce two-cover failure to size-two matchings in the defect line, while the descendants develop bounded cyclic defect certificates, run classifications, rotations, and deletion-state consequences aimed at making that obstruction global."
 simplified_statement: "The fixed-order dual certificate is a two-edge matching in the defect line"
+statement_sha256: "f2ee33a0fea20fb3a14487e5c3f7388baafd9f85d9a3dcd79547783a96fb6f58"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

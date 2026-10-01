@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0e260f4bf5803569d7bbba8a112fda8092c60c154726332c02ec7e41655acb7a"
 created_at: "2026-09-27T21:52:20.594015+00:00"
 id: "1000543"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The reciprocal all-equal residue is multiply crossed or a clean three-edge exchange."
+statement_sha256: "fa3f0b425ce77473f0cc2cb2a3ffa2b89e22619d0710457b06e9a38b4d96d4e6"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

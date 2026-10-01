@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let
 v_0v_1...v_k
 be a rainbow path in the terminal-pair graph whose parent hyperedges
@@ -32,7 +33,9 @@ In either case the collision closes a local linear 3-cycle.
 
 Thus failure of the plus-three edge-rank-sum inequality is confined to exact half-rank states: all nonboundary states emit the near-owner-rank rotation packet, while the only omitted states are two explicit low-rank triangle boundaries.
 
+
 ## Body
+
 
 The universal bound 867efd696575 gives
   r_j+r_{j+1}>=r_i+2.

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9f55dfc7fb566493e8ffe8c4001e8ddf42496dc41d32aab04314582a6f8605db"
 created_at: "2026-09-24T12:48:04.058657+00:00"
 id: "1000902"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Near-equality fixed-entrance program: five-eighths double-contact mass produces large switching families, top-rank rotation endpoints, paid progress-or-obstruction certificates, and endpoint-lens or congestion alternatives."
 simplified_statement: "Near equality in the fixed-entrance bound forces five-eighths double-contact mass."
+statement_sha256: "ef125c2a0427bdb4fbadbc079a28ced75098b44535b2bb237b71d84705d4af20"
 substantive_worker_ids:
   - 258
 support_reason: "current_certified_premises"

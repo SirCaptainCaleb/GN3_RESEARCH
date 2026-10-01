@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "67640b19e32998104b52fa82d037e1183fb425c2a8c90824c90935b8d921b9d1"
 created_at: "2026-09-22T19:35:05.604429+00:00"
 id: "1000504"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In a flat equal-rank transfer e→f, every longest witness for f ending at the shared terminal must carry one of the two nonshared vertices of e in its final q−2 precursor edges."
+statement_sha256: "0d08906b99965330c7508cc0c51eca113eba9dec77bf0e92b8ca0cb66d160cf9"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

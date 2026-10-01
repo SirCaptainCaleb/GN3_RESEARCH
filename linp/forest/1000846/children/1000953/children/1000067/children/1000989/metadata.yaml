@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "e5617cdbe650e2313d6838f99e03901caa28a257065d21168df6a400d924975c"
 created_at: "2026-09-22T15:26:39.292805+00:00"
 id: "1000989"
 last_elevation_revision: null
@@ -32,6 +33,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Every one-rank-above-minimum binary-carrier STS has a signed projective normal form encoded by one bit on each quotient line, modulo independent swaps within carrier pairs."
+statement_sha256: "870ff5135a66492a78568725f5fddf9894e62a8eb075360139b7f8dfe65360b4"
 substantive_worker_ids:
   - 178
 support_reason: "not_a_proved_or_evidence_claim"

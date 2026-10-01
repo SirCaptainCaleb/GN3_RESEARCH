@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample. Let k_1,k_2,k_3,k_4,a,b be six distinct vertices such that both
 (k_1,k_2,a,k_3,k_4)
 and
@@ -30,7 +31,9 @@ the corresponding two-label state L+d+e is non-Hamiltonian with path-cover numbe
 
 Thus the non-Hamiltonian central-gap six-set carries an explicit good-deletion graph containing K_{2,2} between {a,b} and {k_1,k_4}, together with the anchor edge k_1k_4.
 
+
 ## Body
+
 
 The deletions U-a and U-b are Hamiltonian by hypothesis.
 

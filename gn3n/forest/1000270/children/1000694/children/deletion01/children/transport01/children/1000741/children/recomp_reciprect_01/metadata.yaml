@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "58c536626ea0db2464f854089267d8c211ad9de8b985a73332e94ed4b06b393f"
 created_at: "2026-09-28T20:28:47.864389+00:00"
 id: "recomp_reciprect_01"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Reciprocal comparison gives a reverse triple, leave-and-return, s>=2, or the five-block quotient."
+statement_sha256: "da9403c617092a1e6024fcb4c4f015d84bff07de9121843d2c228f2f40adf228"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

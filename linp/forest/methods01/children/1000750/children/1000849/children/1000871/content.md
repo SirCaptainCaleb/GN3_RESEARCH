@@ -6,6 +6,7 @@ For linear 3-graphs H,K define the diagonal product H tensor K on V(H)xV(K) by t
 
 ## Body
 
+
 Linearity is immediate from coordinate projections. Two distinct product triples arising from (e,f,sigma) and (e',f',tau) can share a product vertex only at a pair (u,x) with u in e intersect e' and x in f intersect f'. Since each factor is linear, there is at most one possible first-coordinate intersection and at most one possible second-coordinate intersection; distinct bijections for the same pair (e,f) have at most one fixed matched pair unless they are identical. Hence two distinct product triples intersect in at most one vertex.
 
 The counting formulas are exact: there are |V(H)||V(K)| product vertices, and each ordered factor-edge pair contributes the six distinct bijections between its two 3-sets, so |E(H tensor K)|=6|E(H)||E(K)|.

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "77f15fa1666df29a0c7c086436771f7da17c22f120991b2c71d973ff1b530b69"
 created_at: "2026-09-25T20:29:13.694805+00:00"
 id: "1001067"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A whole chord is endpoint-slack-shallow or its clean source rail reintersects the opposite side."
+statement_sha256: "17e578cf14f7f5f6d63c8fb53a46b80ea88922c9de844107bd3a549d1d3aee71"
 substantive_worker_ids:
   - 191
   - 227

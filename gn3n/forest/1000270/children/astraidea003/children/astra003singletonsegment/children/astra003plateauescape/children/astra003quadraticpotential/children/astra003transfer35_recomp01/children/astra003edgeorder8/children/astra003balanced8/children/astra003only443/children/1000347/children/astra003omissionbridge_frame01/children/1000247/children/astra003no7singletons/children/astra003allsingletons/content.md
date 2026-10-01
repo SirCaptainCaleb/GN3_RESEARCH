@@ -6,6 +6,7 @@ Let K be a trapped order-eleven Astra-003 component containing a 4|4|3 state, an
 
 ## Body
 
+
 By astra003no7singletons, |S|>=8. Put T=V(H)-S. We exclude |S|=8,9,10. Throughout, use the certified order-eleven omission theorem from 2ac31d8f3bb6: in every reachable 5|5|1 state P|Q|(x), each five-side supplies at least three reversible omission swaps. Since labels in T never occur as singletons, every T-label on a side is a bad deletion of the corresponding six-set side union {x}.
 
 A basic connectivity observation will be used repeatedly.

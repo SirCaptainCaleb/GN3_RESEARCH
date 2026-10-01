@@ -6,6 +6,7 @@ Let H be a hypothetical order-eleven minimum counterexample. Then its maximum ti
 
 ## Body
 
+
 Let (H) be a hypothetical minimum counterexample of order eleven, and let
 [
 lambda

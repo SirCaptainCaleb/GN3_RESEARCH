@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b3f18116b7232c982e9b76b93bd66b6ff1fa4d6eb843e594750fd338fc2331e1"
 created_at: "2026-09-27T21:47:55.693857+00:00"
 id: "1000257"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "An endpoint-edge clean detour is bounded by reversal, a Hamiltonian five-window, or a doubled reverse barrier."
+statement_sha256: "583e0bba7fd4779560f051b192389b68b1eb9caee9e9f9f2f334eef6dcd1d6c9"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

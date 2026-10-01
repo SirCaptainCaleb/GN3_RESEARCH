@@ -6,6 +6,7 @@ Let S_0 be the total endpoint potential on vertices v whose maximum ascending-te
 
 ## Body
 
+
 Let H be a finite linear r-uniform hypergraph, r>=3. For each nonisolated vertex v put p_v=phi(v), and let t(v) count ascending nonspecial edges terminal at v. If t(v)>0 let q(v) be the maximum rank of such an edge; if t(v)=0 put q(v)=0.
 
 Define the aligned set

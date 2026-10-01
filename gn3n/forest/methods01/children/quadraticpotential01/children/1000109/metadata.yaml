@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2920da8be0ae766866dc0049fcc26490ff32dc41c8723d186c58393948e044b8"
 created_at: "2026-09-27T00:01:16.392308+00:00"
 id: "1000109"
 last_elevation_revision: 0
@@ -29,6 +30,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Local balance improvement drives quadratic descent to equitable three-covers"
+statement_sha256: "4bc3e0633d8bc627afc5b39b859e701761a954307206ce16fdfe6f616dbe714f"
 substantive_worker_ids:
   - 650
 support_reason: "current_certified_premises"

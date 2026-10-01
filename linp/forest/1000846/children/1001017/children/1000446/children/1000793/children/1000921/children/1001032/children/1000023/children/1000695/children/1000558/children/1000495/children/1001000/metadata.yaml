@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a90e49b3a82f585c80f8a6a5f13df0090f8c9fe840724ad7e2e9dd85b408fe97"
 created_at: "2026-09-24T03:27:27.926023+00:00"
 id: "1001000"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The (ell-13/6)n upper bound has an additional additive Theta(ell) improvement."
+statement_sha256: "b69b84c9149818128eab2ddcc62a761daa5d203d3460feb4a01b89c43c8743b6"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

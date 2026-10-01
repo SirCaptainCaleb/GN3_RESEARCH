@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0ac530933e1aca2629cb8ad66efa09d06f1bd24f95abb08cdfbc04e6a19607a0"
 created_at: "2026-09-27T21:45:33.685919+00:00"
 id: "1000320"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two same-side extensions of an internal path edge force a Hamiltonian five-window or a doubled reverse barrier"
+statement_sha256: "bdc8519e650e753750798695dbbd9b3ce42b85bd30fec5c47132ef51949ae4bc"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

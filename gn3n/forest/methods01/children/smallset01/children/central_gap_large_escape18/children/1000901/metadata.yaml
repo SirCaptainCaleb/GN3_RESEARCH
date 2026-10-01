@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1172d6a7f90f597b4a5eb3369530398936cae192c9ad101305aaa502de05977f"
 created_at: "2026-10-01T07:19:55.077482+00:00"
 id: "1000901"
 last_elevation_revision: 10860
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two leaves inserted in the same middle gap over an ordered four-core make U-a, U-b, U-k1, and U-k4 Hamiltonian; hence at every order U is either a localized order-disagreement six-set or a Hamiltonian six-set with pc2 complement, with large-order descent only a corollary."
+statement_sha256: "202ad2b8719ce4b7659dce5f3053da2f4d2cfef0c8e2786fa5d0d2e40b364e57"
 substantive_worker_ids:
   - 1016
 support_reason: "current_certified_premises"

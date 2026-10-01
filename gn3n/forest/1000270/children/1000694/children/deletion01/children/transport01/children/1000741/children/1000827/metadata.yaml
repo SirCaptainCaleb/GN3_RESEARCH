@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "eceed2124654a5344561798b8b85d27e9e9728ae6834d178d475f4d91ed312b0"
 created_at: "2026-09-28T14:58:18.312899+00:00"
 id: "1000827"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An intact surviving endpoint path forces a bounded reverse restoration triple."
+statement_sha256: "20bb95c5e769235a1968aa48e4e447fd413bc2fce83bc6368623a9dd4718122e"
 substantive_worker_ids:
   - 606
 support_reason: "nonproved_logical_premise"

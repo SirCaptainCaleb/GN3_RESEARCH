@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "abe52a3859b8f5b190e7776804f0a5d9af3202f5cfeeebbec4d75c2ac3af12de"
 created_at: "2026-09-29T22:07:38.643757+00:00"
 id: "defect101_slide_or_fourwindow01"
 last_elevation_revision: 9327
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A linear 101 defect window slides or exposes an inherited-complement four-path"
+statement_sha256: "404abd37ae185348d77778962b140b86490b84a0139f6f343edab7b2b427585f"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

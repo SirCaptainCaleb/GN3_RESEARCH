@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1d4dda9c38a6991ebf3eb6cc7e13faaaa4086fac275c4576abf9ae93ec2bcecf"
 created_at: "2026-09-30T13:29:13.585399+00:00"
 id: "fourfour_long_escape01"
 last_elevation_revision: 10100
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Two four-sides beside a path of order at least six cannot be locally quadratic-minimal"
+statement_sha256: "fa50a003c33671ded683d7f999fd726c0bd24bc64cd0b9f555ab3852d1cab845"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

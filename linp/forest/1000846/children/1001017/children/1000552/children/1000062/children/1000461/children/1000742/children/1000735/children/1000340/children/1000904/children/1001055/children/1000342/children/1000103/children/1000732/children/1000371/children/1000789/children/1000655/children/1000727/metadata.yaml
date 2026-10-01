@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "8735377470dbb2e8daab77d343d4b86406e5fd87659814fa1c49718861e4e742"
 created_at: "2026-09-24T19:11:13.411605+00:00"
 id: "1000727"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Central-window ordering boosts switching source mass to 185/512."
+statement_sha256: "713c572787d4d866d0994d34d0f29c838dcca09a3f95e81fc383739e3b0b3ea1"
 substantive_worker_ids:
   - 201
 support_reason: "failed_or_blocked_premise"

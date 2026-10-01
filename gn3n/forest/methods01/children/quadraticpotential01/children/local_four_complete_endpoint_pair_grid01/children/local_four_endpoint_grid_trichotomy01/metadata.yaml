@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7159d3477147742f51b7956127a42cd129894196f5834716c48f3825692b07bb"
 created_at: "2026-09-29T19:18:01.563668+00:00"
 id: "local_four_endpoint_grid_trichotomy01"
 last_elevation_revision: 8826
@@ -38,6 +39,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A locally minimal four-side yields endpoint-grid disagreement, a Hamiltonian endpoint four-set, or four triple enlargements."
+statement_sha256: "3cc9200d134138001bbe03bfac2bba205c33bff68d9c936e8fa7ecaca6efbb3c"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

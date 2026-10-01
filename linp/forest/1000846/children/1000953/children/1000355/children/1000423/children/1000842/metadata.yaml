@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "aaa6afe64f3e89e0defff68a25e86eb766a00fbf72ebd11582aad2e078feffec"
 created_at: "2026-09-23T21:32:39.852958+00:00"
 id: "1000842"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The crossed-chord order-six normal form forces a forbidden rainbow cycle."
+statement_sha256: "076a911037791818209aaa87c75eb6e0e5b70a866d92471cf0e67c23715fc185"
 substantive_worker_ids:
   - 225
   - 231

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ea156df01bebed9d7d131877dedf2509285fa18a0e3929aa51a69fee2da8b56e"
 created_at: "2026-09-27T21:44:31.906352+00:00"
 id: "1000618"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A c=3 ordering has at most eight adjacent swaps that can destroy a fixed defect matching"
+statement_sha256: "e4e07dd56a6f8bb01316ae46d9d4e9d712e698943b095a38b2941f5f67bde2ca"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "e03829a1afc4f98073f5de0515fe72386ef05248b629b99c3818c0d121e72fde"
 created_at: "2026-09-26T01:11:09.135003+00:00"
 id: "astraidea002"
 last_elevation_revision: null
@@ -28,6 +29,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "A sustained route-specific line for the stronger equitable two-cover conjecture: minimum balanced failures force parity-specific noninsertability; odd-order compatible deletion states have one-gap geometry and sparse compatibility; density then forces a large uniform incompatibility family, with the order-compatible branch synchronizing to one fixed complementary Hamilton path."
 simplified_statement: "Balanced two-cover conjecture"
+statement_sha256: "0debe28502b378f19ccc13b8ee0a5231d040c8dffc8383dc2703bd1581361be8"
 substantive_worker_ids:
   - 689
 support_reason: "not_a_proved_or_evidence_claim"

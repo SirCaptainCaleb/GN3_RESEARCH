@@ -6,6 +6,7 @@ The balanced d-outregular orientation of an exact equality obstruction induces a
 
 ## Body
 
+
 Let H be an exact minimal equality obstruction equipped with the balanced incidence orientation from 6c52dba65423. Thus every hyperedge has a unique chosen source and every vertex is source of exactly d hyperedges.
 
 Construct a graph G on V(H). For every oriented hyperedge

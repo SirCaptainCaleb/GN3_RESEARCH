@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a9701716c0e8155af9cb7822ae98ca25bf0a5d612d6e06f0329409e3b8fe632e"
 created_at: "2026-09-28T01:44:14.297566+00:00"
 id: "1000790"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The cube consists of one base profile, all six single transfers, and an antipodal equal-profile twin"
+statement_sha256: "291d82e8bac048a699fdd61810323c4537de40a4c880274379490a0182134328"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

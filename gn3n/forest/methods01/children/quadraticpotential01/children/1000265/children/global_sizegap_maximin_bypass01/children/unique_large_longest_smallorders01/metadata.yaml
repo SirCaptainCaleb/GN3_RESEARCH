@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "bd250f71bc655ded7f6de4a12d64f045427e188b82fb28e321a5aaec43754303"
 created_at: "2026-09-29T05:09:52.329963+00:00"
 id: "unique_large_longest_smallorders01"
 last_elevation_revision: 7998
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A globally longest unique large side forces orders eleven, twelve, or fifteen"
+statement_sha256: "d0d695e1faa461ff0d5e79dbfac3ec38fa9c7081e767ad24fa7c92573aabfd75"
 substantive_worker_ids:
   - 718
   - 630

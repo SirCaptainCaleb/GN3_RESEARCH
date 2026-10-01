@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e598a7fcd985efd1b54d4b36348170ca789468c446c613c9328f0814456bd317"
 created_at: "2026-09-28T00:54:31.171919+00:00"
 id: "astra010mandatoryresidue_recomp01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The mandatory-triple neighbor has opposite side at least four, with an exact six-set residue at equality."
+statement_sha256: "23f11c151003a5f45b00f58805373040917687be41393a055c83c6884c9a79c6"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

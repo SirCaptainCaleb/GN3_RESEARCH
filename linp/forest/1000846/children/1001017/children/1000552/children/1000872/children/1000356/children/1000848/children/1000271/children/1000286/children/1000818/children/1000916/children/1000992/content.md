@@ -6,6 +6,7 @@ For a four-edge 0-1-1 consecutive-rank violation, let G_s record source-rail pai
 
 ## Body
 
+
 Consider four source-clean 0-1-1 edges e_i={x_i,v,u_i}, i=1,2,3,4, in a consecutive-rank block, with chosen source rails Q_i. Let G_s be the graph on {1,2,3,4} in which ij is an edge exactly when
   |V(Q_i) cap V(Q_j)|=1.
 

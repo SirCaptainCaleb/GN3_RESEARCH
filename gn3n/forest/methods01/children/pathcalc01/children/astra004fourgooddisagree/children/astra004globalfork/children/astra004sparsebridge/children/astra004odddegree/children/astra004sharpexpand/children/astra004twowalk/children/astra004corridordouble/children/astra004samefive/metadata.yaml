@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "b0034d38c9b6d3f4e6bd52650c2988b48ce762b6b1b91315730db254671dab0c"
 created_at: "2026-09-26T19:21:13.770736+00:00"
 id: "astra004samefive"
 last_elevation_revision: 0
@@ -56,6 +57,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Same-side double-clean swaps force a Hamiltonian five-window or a reverse cross-bridge."
+statement_sha256: "1e7d66c430ee2a392fcefd5ec911a8ad7ca2ff131d8dca7b33cbef5453a779cb"
 substantive_worker_ids:
   - 642
 support_reason: "The proof uses invalid cyclic rotation of ordered tight triples, e.g. (b,c,u) -> (c,u,b). Under the full corridor hypotheses, the valid terminal-terminal consequences are (b,c,u),(c,b,u),(b,a,v),(a,b,v), with the symmetric initial-initial form. These do not imply the claimed five-path/cross dichotomy."

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9ecc612d10b8fdfa436fed15d025af82f27213f864a1c669d8fa882ad387036b"
 created_at: "2026-09-24T02:44:45.87342+00:00"
 id: "1000073"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Odd-k rigid zero-slack no-switch state must contain an A-to-B connector."
+statement_sha256: "09c44b12b2eca8d6f51c8236e75a0112815047dddbdcec5492a32cb30d3641fa"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

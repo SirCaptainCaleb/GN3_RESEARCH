@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8d5d6db5154af799c377abe85fbbf7503e9e3e8f93be4ebf45e97172f8028a40"
 created_at: "2026-09-27T21:26:12.583755+00:00"
 id: "1000687"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Neutral opposite-end endpoint transport closes to a full common-middle square."
+statement_sha256: "1e3ffdc541dba28bf142cf40f944090162dcc6ef6062df2fe879b06e66605e97"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

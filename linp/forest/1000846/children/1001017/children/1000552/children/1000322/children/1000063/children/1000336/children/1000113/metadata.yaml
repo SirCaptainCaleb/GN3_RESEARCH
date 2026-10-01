@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "9670411e67845b2c3d5dd82657df7f753d7a781e97ef63ce9f0b2524357db80e"
 created_at: "2026-09-22T02:05:04.198221+00:00"
 id: "1000113"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Minimum-degree boundary-rotation program: convert endpoint deficiency into clean extensions or single-blocker rotations, classify loss-one sinks and fixed-hole attachments, and force motion, rank progress, or cyclic transfer structure."
 simplified_statement: "For a longest x-ending path of length t in minimum degree δ, the number S of single blockers at the opposite endpoint satisfies S≥2(δ−t)."
+statement_sha256: "772ff08bdf29717d9849b1779b9c7b2e12402437485999258df66cd708c11aa9"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

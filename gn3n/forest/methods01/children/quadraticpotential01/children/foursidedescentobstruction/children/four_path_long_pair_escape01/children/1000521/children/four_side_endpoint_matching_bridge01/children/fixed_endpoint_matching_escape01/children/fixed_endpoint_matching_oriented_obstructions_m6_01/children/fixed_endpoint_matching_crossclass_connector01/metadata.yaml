@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "338114b1e07aea1e84dd3cc7822358bf590d5f47a1e10655d1220164d81e8dbf"
 created_at: "2026-09-29T21:04:43.890287+00:00"
 id: "fixed_endpoint_matching_crossclass_connector01"
 last_elevation_revision: 9060
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Distinct common-middle obstruction gaps force an opposite-class interval path."
+statement_sha256: "05f0ce49c605ebbb207b89225a451d76500508a9f503731ac928e2135d412aa7"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

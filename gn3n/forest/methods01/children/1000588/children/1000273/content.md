@@ -6,6 +6,7 @@ A family of hypergraphs has disjoint representatives if every subfamily has matc
 
 ## Body
 
+
 Source: Ron Aharoni and Penny Haxell, "Hall''s theorem for hypergraphs", Journal of Graph Theory 35 (2000), 83--88.
 Publisher: https://onlinelibrary.wiley.com/doi/10.1002/1097-0118(200010)35:2%3C83::AID-JGT2%3E3.0.CO;2-V
 
@@ -23,3 +24,4 @@ Deficiency corollary (full proof). Suppose instead that
 for every J subset I. Introduce d new vertices z_1,...,z_d disjoint from the old ground set, and enlarge every H_i by the d singleton edges {z_1},...,{z_d}. For any J, choose a matching M in the old union requiring at least |J|-d pinning edges, and add all d dummy singleton edges. Pinning the old part and pinning the d fresh singletons are independent tasks, so the enlarged union has matching width at least |J|. Apply Aharoni--Haxell. A full disjoint representative system in the enlarged family uses at most d dummy singletons, hence at least |I|-d representatives are genuine old edges. Thus there is a partial system of disjoint representatives of size at least |I|-d.
 
 LINP relevance. This is a robust "many local option families => globally compatible disjoint choices" engine. Its contrapositive is equally useful: failure to choose many disjoint path-extension gadgets certifies a subfamily with small matching width, hence a small set of edges that pins a large obstruction family.
+ 

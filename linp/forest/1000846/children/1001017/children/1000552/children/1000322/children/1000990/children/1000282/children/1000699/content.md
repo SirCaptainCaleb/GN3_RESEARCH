@@ -6,6 +6,7 @@ Let ell>=5 and d=floor(2ell/3). In an n-vertex linear 3-graph with |E(H)|=dn and
 
 ## Body
 
+
 Fix ell>=5 and d=floor(2ell/3). Let H be an n-vertex linear 3-graph with
   |E(H)|=dn
 and minimum degree at least d+1, as in a vertex-minimal equality-layer obstruction. Let P be any q-edge path with q<=ell-1, put

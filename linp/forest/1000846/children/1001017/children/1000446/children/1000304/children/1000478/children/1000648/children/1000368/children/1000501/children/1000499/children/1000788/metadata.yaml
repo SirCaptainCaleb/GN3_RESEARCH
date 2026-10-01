@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d8322017aec09124c01be1033012c261572505da25092fa5e7bb03c4727719ef"
 created_at: "2026-09-22T08:14:21.659663+00:00"
 id: "1000788"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The equal-potential ascending terminal graph can contain a rainbow four-edge path, so equal-potential structure alone does not imply rainbow-P4-freeness."
+statement_sha256: "358d82ee8a627b87fb22a76dbf6dba333f5800987a63985f7727f48f270f7df4"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

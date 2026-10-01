@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "f166ddd1c0ac1cd1497379d6f5b78f877ea9a2be1d4f12593dc107992fabd835"
 created_at: "2026-09-22T17:09:00.442946+00:00"
 id: "1000707"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Splitting a projective seven-cycle in PG(3,2) across two new points produces a 17-vertex, 42-edge system that nevertheless contains a spanning P_8."
+statement_sha256: "6d403bf111d654f7c938d5b6a51432f64ef7845e9a191c3d6fbf858941564fb3"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

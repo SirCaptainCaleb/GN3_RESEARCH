@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "07f27513914f09bf922cb6449b4f666455e614d8a9bada305eea734662d5f471"
 created_at: "2026-09-25T20:45:51.448754+00:00"
 id: "1001056"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every whole chord on a canonical common anchor has source and terminal returns."
+statement_sha256: "4f4e3e8f7e0552276eb5ea89372047ea22327669ac3f92ef0b81b4cbd8600f87"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

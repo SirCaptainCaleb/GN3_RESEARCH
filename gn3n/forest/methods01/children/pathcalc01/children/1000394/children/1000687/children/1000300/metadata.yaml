@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "edcebafc57dc9a41e2f2af0f3e9d37fb6b221c973f36de51aafc8fdc1eac7bd2"
 created_at: "2026-09-27T21:34:25.991219+00:00"
 id: "1000300"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A fully neutral equal-cover endpoint square yields an order-(r+2) Hamiltonian support or a doubled endpoint barrier."
+statement_sha256: "6b70c33d3bd91678620f1f196633c1f945f4479ffc1d7208e5fa1563c524d74d"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

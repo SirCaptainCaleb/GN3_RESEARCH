@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1264c0e2d45c3a73a94cbe9a4eab344f9142968dcf7d5392c7f681b57fd96c4f"
 created_at: "2026-09-28T01:14:42.150543+00:00"
 id: "astra006wrap_recomp01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Neutral gap-two wraps are involutive outside an arithmetic progression and force a common-middle square or order disagreement inside it."
+statement_sha256: "4744f4f9a9bf73117a482dbd10481cc3129d6296bf9016e6c998f8d1d5add626"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

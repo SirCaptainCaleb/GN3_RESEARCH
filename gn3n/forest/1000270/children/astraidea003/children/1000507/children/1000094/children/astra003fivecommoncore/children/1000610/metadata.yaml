@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1e93bd5d6212f21587628c0c110719025127a7c1689cba1748524284afb62733"
 created_at: "2026-09-28T02:39:48.862851+00:00"
 id: "1000610"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A five-side beside a path of order at least seven gives strict descent or a common endpoint-extension four-core"
+statement_sha256: "747ec2fb093cc6cfc34061cbdbe04c3fbf8a1eafb915c02448e20e9a9d702966"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

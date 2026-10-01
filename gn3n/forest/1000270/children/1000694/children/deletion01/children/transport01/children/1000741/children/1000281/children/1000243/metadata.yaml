@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7122939dcbc20d7e4968f6b5c234a2a9877dcef1bff9957b13c7fa2cafe127b4"
 created_at: "2026-09-28T11:00:00.011752+00:00"
 id: "1000243"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Large-order minimum-side escalation: from order eighteen onward a trapped quadratic minimum either has side at least six or order disagreement; rooted six-side shells and successive order thresholds then raise the minimum side further or expose explicit local structure."
 simplified_statement: "From order eighteen onward trapped quadratic minima have minimum side six or order disagreement."
+statement_sha256: "af0d73829c3b582055b4caf30aef368819871d40233bbdcb4bb9fcc19e4a5e49"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

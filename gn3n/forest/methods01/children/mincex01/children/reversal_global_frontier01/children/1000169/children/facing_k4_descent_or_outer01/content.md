@@ -18,6 +18,7 @@ The symmetric dichotomy holds at the other facing pair q_0,p_{p-1}.
 
 ## Body
 
+
 By 3640577112bf, at least one of W_L,W_R,W_O is Hamiltonian, and every Hamiltonian choice has non-Hamiltonian path-cover-two complement.
 
 If W_L is Hamiltonian, its complement is exactly the disjoint union of the inherited tight paths (p_2,...,p_{p-1}) and (q_0,...,q_{q-2}); hence the displayed three paths cover H. Its potential is

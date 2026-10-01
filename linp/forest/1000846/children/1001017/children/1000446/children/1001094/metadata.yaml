@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "12e4a2474124d66d95d94bfed16294777d9ab7bf38f8a62128b9b43b62d080a0"
 created_at: "2026-09-21T18:56:07.14701+00:00"
 id: "1001094"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Shadow-rainbow reduction and its black-box 2/3 ceiling."
+statement_sha256: "5036f22dc27b31bee26519d35bbf5fd56ed01935b122953d2ac28320e0b82e04"
 substantive_worker_ids:
   - 206
 support_reason: "current_certified_premises"

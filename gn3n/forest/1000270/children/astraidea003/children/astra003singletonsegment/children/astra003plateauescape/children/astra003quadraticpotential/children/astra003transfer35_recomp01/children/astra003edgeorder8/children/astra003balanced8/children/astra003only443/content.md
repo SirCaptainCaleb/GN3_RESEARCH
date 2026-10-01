@@ -6,6 +6,7 @@ Let H be a minimum counterexample and let A|B|C be a Phi-minimal spanning three-
 
 ## Body
 
+
 Let
 [
 A|B|C

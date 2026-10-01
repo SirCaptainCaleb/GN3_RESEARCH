@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "797df68175cadc5fe0c453e945d9a7d30571e9c2d052d9220475ec300d421a7b"
 created_at: "2026-09-29T18:16:24.908623+00:00"
 id: "1000326"
 last_elevation_revision: 10659
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A Hamiltonian five-set with three exterior labels yields a six-set or a common four-core"
+statement_sha256: "e01a8ba2f11253ffd382c0595b8c4a9b7a73a6305d318af3bd5555232590120c"
 substantive_worker_ids:
   - 637
 support_reason: "provisional_unaudited"

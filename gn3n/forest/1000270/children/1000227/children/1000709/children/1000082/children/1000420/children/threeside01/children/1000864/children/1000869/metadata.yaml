@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "aa1c9878a784e9937eb0c784c7cc749d6b30d0fe8bd67586a13bc9cdc37a9e8e"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000869"
 last_elevation_revision: 10807
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two persistent defects share a shell neighbor in every shell, and at least three when they are nonadjacent there."
+statement_sha256: "ced03a937a19c867f23f71cd1640e849d8ee8c456336c4af26d3428f8d11faa1"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

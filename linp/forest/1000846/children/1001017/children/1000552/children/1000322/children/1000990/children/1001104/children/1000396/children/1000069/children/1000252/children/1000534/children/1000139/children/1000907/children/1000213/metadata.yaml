@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "100a3949e71ddb09bf17472c4ba28318383f765fb7dbd57e8d849748d6b1645c"
 created_at: "2026-09-24T04:27:56.93675+00:00"
 id: "1000213"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The trapped-negative top matching graph has a vertex of degree at least two kappa plus five."
+statement_sha256: "b9f3c18bcb634d2d2813878beff376a88b5d8090cc8b22fbdbeb2c95da5699af"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

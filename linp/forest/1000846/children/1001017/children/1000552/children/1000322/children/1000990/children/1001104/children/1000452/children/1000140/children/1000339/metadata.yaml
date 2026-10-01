@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "35f0f4fa0d9bc3335b55732a5f228d6381a036a9d7199cd5db4250a425a02cba"
 created_at: "2026-09-24T03:49:09.989782+00:00"
 id: "1000339"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At Steiner deficiency two, universal vertices exactly pay for leave branching."
+statement_sha256: "ee9fcd47b02f1389f37149b5d34337a20b12ba218344ef3e6a47a6c4ef0156b1"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

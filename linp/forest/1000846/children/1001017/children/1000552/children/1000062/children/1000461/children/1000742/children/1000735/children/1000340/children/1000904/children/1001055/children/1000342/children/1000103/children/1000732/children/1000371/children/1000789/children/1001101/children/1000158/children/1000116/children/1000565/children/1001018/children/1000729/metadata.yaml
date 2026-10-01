@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "65d8957f4715b66b131beff7850a9ff31969b6757bfd6b28ef7af12f010a0a57"
 created_at: "2026-09-25T20:20:37.83406+00:00"
 id: "1000729"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Certified theorem-closing reduction beyond 43/48. Near-extremality supplies linearly many selected strict-gap certified edges; after assigning each edge to a minimum-rank terminal, any o(p) local assigned-degree bound rules out 43/48 saturation. The remaining local problem splits naturally into same-terminal certificates and uphill certificates at the higher-rank terminal."
 simplified_statement: "Certificate-at-either-terminal sublinear congestion closes 43/48."
+statement_sha256: "5cf187dd4fb841fe7824bb5b1571004aab26b927a27017ea7234bf261c30df74"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "dee776e99b621030890fda14aaa2a3487ce457e39f7d8c5904191f1ed37b57ae"
 created_at: "2026-09-29T23:57:51.354012+00:00"
 id: "endpoint_barrier_free_extension01"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Endpoint-barrier layers can be freely extended without changing the initial five-window."
+statement_sha256: "8ef6f660c6700954481eab80f77f3841d8b72f7e73a2ce5c81e71c4a32fd5117"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

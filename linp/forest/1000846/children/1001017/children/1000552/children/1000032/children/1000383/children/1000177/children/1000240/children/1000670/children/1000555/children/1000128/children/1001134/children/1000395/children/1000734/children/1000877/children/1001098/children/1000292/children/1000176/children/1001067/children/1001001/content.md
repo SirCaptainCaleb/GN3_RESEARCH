@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let R be a linear path with endpoints a,b, avoiding a common vertex v. Let F be a family of distinct ascending nonspecial edges
   e={x,v,u}
 such that, for every e in F,
@@ -17,7 +18,9 @@ Fix an integer R0. Then the number of unobstructed members of F with rank at lea
 
 Consequently, every additional rank-at-least-R0 whole chord beyond this endpoint-zone capacity has a clean source rail with a second intersection with R on the side beyond its opposite terminal.
 
+
 ## Body
+
 
 For an unobstructed edge e of rank r>=R0, apply ed412ed8e3b1. If the endpoint opposite x is a, and t is the number of R-edges from u to a, then
   t<=phi(a)-r<=phi(a)-R0.

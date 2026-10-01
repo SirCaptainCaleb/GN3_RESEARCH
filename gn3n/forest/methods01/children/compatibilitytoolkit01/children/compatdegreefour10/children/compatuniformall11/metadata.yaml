@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "661d8805382753093e624f9d20ac35c6175c3baa93bb7ca775dd94e1218f5e29"
 created_at: "2026-09-27T04:20:46.968902+00:00"
 id: "compatuniformall11"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the low-degree branch every deletion state has linearly many uniform disagreements"
+statement_sha256: "62f19071e91e90bcc3681f43638f7a834486635156ebcee09f7a4c1910a2a77e"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

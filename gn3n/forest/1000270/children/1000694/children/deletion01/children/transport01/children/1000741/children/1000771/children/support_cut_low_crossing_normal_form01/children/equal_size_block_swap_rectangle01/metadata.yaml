@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "af7bab6c7e3c318e21cf099f09d8f56910c9d4651d400f29b19e98e75b359698"
 created_at: "2026-10-01T12:56:48.429248+00:00"
 id: "equal_size_block_swap_rectangle01"
 last_elevation_revision: 10860
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "An equal-size neutral support swap with fewer than three cuts in both directions and no order disagreement is a four-block switch rectangle. After choosing the smaller swap description, it is either a terminal singleton swap or it produces two explicit three-block Hamiltonian supports with pc2 complements."
+statement_sha256: "060661209551243ce43b79f4071f828d3c252242e73a5db6fa87d69194a1b05e"
 substantive_worker_ids:
   - 1051
 support_reason: "current_certified_premises"

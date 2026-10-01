@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "703727b8cd1c6cc572b22ef9222573574d6cb7ceb6cbabb0806106c99a446d3c"
 created_at: "2026-09-30T13:04:40.263233+00:00"
 id: "order11_three_side_barrier_elevated01"
 last_elevation_revision: 10100
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Order-eleven three-side barrier becomes blocked overlap or star."
+statement_sha256: "8e67826ce44d39e8c27b944d9d95db4525b0de0279d6f60218b8bb1449d5bfe3"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

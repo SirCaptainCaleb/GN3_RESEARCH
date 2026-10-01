@@ -6,6 +6,7 @@ In an edge-minimal counterexample at threshold k=floor(2ell/3)+1, let D be the d
 
 ## Body
 
+
 Let k=floor(2ell/3)+1, D={v:d_H(v)=k}, and X=V(H)\D. By 324fa959c567, H[X]=H-D is a linear path forest and every v in X has at least k-1 incident edges meeting D.
 
 Fix v in X. Distinct edges through v have disjoint non-v vertex sets by linearity. Therefore two distinct edges through v that meet D cannot use the same vertex d in D; otherwise both hyperedges would contain the pair {v,d}. Consequently the edges through v meeting D inject into D. Hence

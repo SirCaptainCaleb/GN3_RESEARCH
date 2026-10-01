@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "5feb7cbfd1680f0ace993a5cdc7c414543326e4721c9110a4fa9f9903e0ca720"
 created_at: "2026-09-29T22:07:42.85856+00:00"
 id: "deletion_state_gap_smallorder_collapse01"
 last_elevation_revision: 0
@@ -29,6 +30,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "cae8894869de57984a7d334f0a14a4b3d330123d22da73023e6f794aee17760b"
 substantive_worker_ids:
   - 708
 support_reason: "local_audit_failed"

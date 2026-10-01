@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5c800e74d493c9d5f5b6347be8ba3a0deffd5e0cc7f65259fac173374398ca69"
 created_at: "2026-09-27T13:19:20.263498+00:00"
 id: "compattogglewindows31"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The one-split toggle compresses to four bounded insertion-obstruction windows"
+statement_sha256: "039f1251f4f57eb003f3553f2ba517e00c188459278ef4c7a866615fe3aa2a37"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

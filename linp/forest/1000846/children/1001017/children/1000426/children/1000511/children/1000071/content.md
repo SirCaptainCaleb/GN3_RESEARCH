@@ -2,13 +2,16 @@
 
 ## Statement
 
+
 For a finite linear 3-graph H, linear hypergraph paths are exactly induced paths in the hyperedge intersection graph I(H), whose edges admit the natural vertex-clique cover in which each vertex of I(H) belongs to three cliques and each graph edge belongs to exactly one.
 
 This representation sharply restricts chord-rich P_ell-free constructions. If E(H)=A∪B with every edge in A intersecting every edge in B, then each side has matching number at most three and vertex-cover number at most nine, so H has a vertex cover of size at most 18. More generally, if I(H) is chordal then |E(H)|<=3|V(H)|/2.
 
 Consequently, if H is P_ell-free with ell>=4 and has n vertices and m edges, then H contains at least (m-3n/2)/ell pairwise edge-disjoint linear cycles whenever this quantity is positive. In particular, m>(1/3+epsilon)ell n forces more than (1/3+epsilon-3/(2ell))n pairwise edge-disjoint linear cycles.
 
+
 ## Body
+
 
 The certified Pathmaker lemma identifies a linear path in H with an induced graph path in I(H). For a linear 3-graph, the hyperedges through each hypergraph vertex form a clique of I(H); every intersection-graph vertex lies in exactly three such cliques, while linearity makes every intersection-graph edge belong to exactly one.
 

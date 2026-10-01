@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "24b5d681a79f0975eaff471336d74c1886a18e36efbfa1343936f633bae93989"
 created_at: "2026-09-24T13:33:29.382912+00:00"
 id: "1000400"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Flat gap-one cycle geometry: a top-rank flat edge creates a balanced endpoint lens, and lens-free terminal cycles force tightly aligned entrance rails, late joints, short-cycle exclusions, and ultimately another balanced lens."
 simplified_statement: "A flat gap-one top edge forces a balanced elementary lens."
+statement_sha256: "3df9d90cb326b872221a0ffa18b513d7e2e9338b4cec638d14e46b0b7f505f92"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4bfa27224f8152de8dd429afaf1736ad883ba3f63f04f752cb02e1de53d63ed5"
 created_at: "2026-09-24T02:24:24.26319+00:00"
 id: "1000302"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Slack controls forest joints in the extremal critical core."
+statement_sha256: "61fec3673b7dbe74b2318e52aaea27c42033e8cc399db4e4da003b9c10da9b49"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

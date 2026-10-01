@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b5440be28878e882b210db6cda2dffeae3a3b80239147b56e0826eb7a0d7cabd"
 created_at: "2026-09-25T21:40:50.533573+00:00"
 id: "1001125"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Consecutive-rank source-clean common-terminal edges cross each other."
+statement_sha256: "302aceb4557e04957c8867c6dd35bdb2f243f4d64fac299700514764fec9e9d3"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

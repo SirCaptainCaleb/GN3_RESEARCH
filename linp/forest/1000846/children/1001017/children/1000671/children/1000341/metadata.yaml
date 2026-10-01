@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b011ba9ad35802108abe6bc76e9b1f0919d4a4a5f88fb49c468d8b91a99c16c8"
 created_at: "2026-09-30T02:50:21.530927+00:00"
 id: "1000341"
 last_elevation_revision: null
@@ -30,6 +31,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "Conjecturally, excessive terminal degree on a globally longest p-edge path forces p-scale expansion of its rotation component through many reachable terminals or many persistently deleted blocker endpoints."
+statement_sha256: "a5f8ed8f2c2116f0b17851cd1a6980e9fadfa7e5af21ef9548f0ab6c0fcaa880"
 substantive_worker_ids:
   - 187
 support_reason: "not_a_proved_or_evidence_claim"

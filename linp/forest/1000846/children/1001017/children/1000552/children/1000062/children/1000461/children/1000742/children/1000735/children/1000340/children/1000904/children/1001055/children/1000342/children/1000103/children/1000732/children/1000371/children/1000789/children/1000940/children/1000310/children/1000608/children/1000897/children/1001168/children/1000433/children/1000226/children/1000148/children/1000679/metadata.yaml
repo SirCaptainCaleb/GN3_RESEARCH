@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "62ce91299f463951bdd88dcf098dc3443b9d476ce6f0b8179db14f6d9ee36404"
 created_at: "2026-09-25T21:33:47.985522+00:00"
 id: "1000679"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Tight U_11 collision branch: outside explicit low-rank boundary cases, equality forces a half-rank central normal form whose one-sided geometry drives the remaining collision analysis."
 simplified_statement: "Tight U_11 collisions have half-rank central form outside two explicit low-rank boundary cases."
+statement_sha256: "069ecd838eb0a0d77c418fe6d442d7e1d484f73ee7b7f9b6921965a99016b0d4"
 substantive_worker_ids:
   - 220
   - 227

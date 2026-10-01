@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "0af3759a32020404de0498882dd8a8769e6bf882125af6a584dbf5a244c22542"
 created_at: "2026-09-24T00:00:35.113042+00:00"
 id: "1000057"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Correct terminal-blocker localization in Class III."
+statement_sha256: "7e99e0350d0a4768644551d0a10bc01c5ca0b77d8b57508e300c72157e0f6623"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

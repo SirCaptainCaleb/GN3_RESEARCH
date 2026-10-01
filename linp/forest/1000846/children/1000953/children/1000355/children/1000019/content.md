@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let T be a fixed linear 3-graph containing a linear cycle C_s of length s>=3. Blow up each base vertex by q and replace every base triple independently by an arbitrary transversal design TD(3,q). Then the blow-up contains a linear path of length sq-o(q).
 
 More precisely, after cyclically labeling one joint cluster X_0={a_0,...,a_{q-1}}, for q-o(q) consecutive obligations t one can choose pairwise internally resource-disjoint lifted s-edge routes R_t from a_t to a_{t+1}; these concatenate to one path.
@@ -10,7 +11,9 @@ Consequently, if T has v vertices and m edges, the full blow-up has qv vertices 
   m/(vs)+o(1).
 In particular, for the four-cycle in AG(2,3), every arbitrary-Latin affine-plane blow-up has a path of length 4q-o(q), so its normalized density is at most 1/3+o(1). Thus arbitrary local Latin fillings cannot amplify the affine-plane construction above the one-third asymptotic coefficient.
 
+
 ## Body
+
 
 Write the fixed base cycle as E_1,...,E_s. Let X_0,...,X_{s-1} be its successive joint clusters and P_1,...,P_s the private clusters. Label X_0={a_0,...,a_{q-1}} cyclically.
 

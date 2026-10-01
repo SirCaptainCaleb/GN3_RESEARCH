@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5dd345a294dd31a6d354d32e81321fcd2bfe8eec2fde1ed610a4a232a18fd542"
 created_at: "2026-09-22T20:53:14.355088+00:00"
 id: "1000531"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If a linear 3-graph has maximum degree Delta and L>=Delta+2, then L rank_R(N)>=3m; hence any counterexample at path length ell must have Delta>=ell-1."
+statement_sha256: "cebfdda20d3c77ee4a2a5e00f2d0c93aa227f01814d432595b9f4ffaa8e26ef1"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

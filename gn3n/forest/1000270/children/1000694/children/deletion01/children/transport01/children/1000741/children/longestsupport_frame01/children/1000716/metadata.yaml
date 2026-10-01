@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "3b014df6dcadf7a993b7684498fa53a588e15ce56467399c5fb70ff3d2a9d848"
 created_at: "2026-09-21T04:36:55.809566+00:00"
 id: "1000716"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Distinct covers of one sharp-shell deletion have a two-crossing gap."
+statement_sha256: "f8dacab9bd22043cb0bbad80882b78a549b4535f97aa2ba26899d23568f9416f"
 substantive_worker_ids:
   - 580
 support_reason: "current_certified_premises"

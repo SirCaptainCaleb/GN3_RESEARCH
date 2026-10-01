@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2f45d716ec5b1ae4c9293fb520eabbf29a591c1d48ad2d74367cad07285f7fad"
 created_at: "2026-09-27T17:21:42.206137+00:00"
 id: "1000757"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A global quadratic minimum with a four-vertex component has a complete endpoint-pair Hamiltonian five-set grid."
+statement_sha256: "03e01764c4ce749ebcf6edeb155797730f1a172a5b8a433697c6fb0783fc6b8e"
 substantive_worker_ids:
   - 616
 support_reason: "current_certified_premises"

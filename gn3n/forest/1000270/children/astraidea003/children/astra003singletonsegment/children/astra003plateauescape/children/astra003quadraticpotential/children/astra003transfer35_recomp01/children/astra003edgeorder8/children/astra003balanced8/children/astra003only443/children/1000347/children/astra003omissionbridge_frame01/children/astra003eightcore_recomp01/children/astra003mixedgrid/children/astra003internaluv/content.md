@@ -6,6 +6,7 @@ In the eight-label residue, with P={u,a,b,c} and Q={v,d,e,f} as in astra003mixed
 
 ## Body
 
+
 Work in the eight-label residue and notation of astra003mixedgrid.
 
 First consider Q. Let

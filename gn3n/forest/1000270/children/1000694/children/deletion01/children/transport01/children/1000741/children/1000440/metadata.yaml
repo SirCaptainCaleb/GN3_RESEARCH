@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "fe0f5696fe7a5e8cc35d274595aa3e562de7a9781f26d27026fa45efe7020a6a"
 created_at: "2026-09-26T16:24:22.271242+00:00"
 id: "1000440"
 last_elevation_revision: 0
@@ -31,6 +32,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: "Well-founded defect-window transport: local obstruction windows are organized into a descending transport process whose branches expose support migration, endpoint reversals, bounded locks, or a strict reduction of the relevant defect measure."
 simplified_statement: "Well-founded defect-window transport."
+statement_sha256: "7528bc615b15e4397c774b25ba9642f595c669b91bc3827986fd26a815d26c0e"
 substantive_worker_ids:
   - 636
 support_reason: "not_a_proved_or_evidence_claim"

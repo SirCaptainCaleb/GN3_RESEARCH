@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e17309f733e9317e5495c9eb2adeeb419c577023a69c9e19ba3868d01a25f757"
 created_at: "2026-09-27T21:38:52.638792+00:00"
 id: "1000652"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The four transposition alignments reduce to repeated-pair versus split-pair local kernels"
+statement_sha256: "6e39599fce2fbf216fd9177fe642b95ce3d1763f0f99bf7fccea6195ea9b8f16"
 substantive_worker_ids:
   - 596
 support_reason: "current_certified_premises"

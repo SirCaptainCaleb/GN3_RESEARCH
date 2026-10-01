@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c2d73792fe0af96522a0e94e8cba40a7e83bca97a005e16d0be7ed2038f4e4d6"
 created_at: "2026-09-24T06:06:23.781287+00:00"
 id: "1000261"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Clean lenses between maximum source rails are balanced."
+statement_sha256: "5bafc80ebf9eaab8f7fe5cd8d5705d1c540f2638dd960fad0e916490b12feda7"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

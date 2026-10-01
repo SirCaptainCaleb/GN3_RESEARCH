@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "6c8a02d03c05bd59617df3e728936f1d674a1cab432a01a92a954b219094b8e3"
 created_at: "2026-09-21T20:41:12.256411+00:00"
 id: "1000998"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rank-gap forces the terminal blocker for ascending edges."
+statement_sha256: "d28fc0ee71aadaa830ac4741a470681370398b64630b185dd3984e4f7a2acce7"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

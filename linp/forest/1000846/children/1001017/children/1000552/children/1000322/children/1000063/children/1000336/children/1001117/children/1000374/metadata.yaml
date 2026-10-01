@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "47cfa84c714ee0b7788bf86cde3cb0161490f3eb019e7034d8d431ba5e04560f"
 created_at: "2026-09-22T19:45:54.182712+00:00"
 id: "1000374"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A flat Type-A boundary sink either has two branches with a common unique entrance or yields a rainbow terminal triangle of equal-rank ascending edges."
+statement_sha256: "7fbeadc801e4a71340fcbaeedfb98765c896d35903be972ab37e0c80424792e3"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

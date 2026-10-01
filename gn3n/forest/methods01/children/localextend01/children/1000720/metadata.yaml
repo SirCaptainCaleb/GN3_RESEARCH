@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "9b5d0acb176a1fab033ddfc874c2486c018743cbc94c2870e6d5623d70d5614f"
 created_at: "2026-09-29T18:16:24.908623+00:00"
 id: "1000720"
 last_elevation_revision: 10659
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A tight triple inside a non-Hamiltonian four-set forces a four- or five-set extension"
+statement_sha256: "0432316eef960d4fdee13d2c4986a8c5a0a5e0770a6bbf2dc2efccd50503f93a"
 substantive_worker_ids:
   - 637
 support_reason: "provisional_unaudited"

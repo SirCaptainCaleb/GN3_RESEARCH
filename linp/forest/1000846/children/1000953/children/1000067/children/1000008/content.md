@@ -6,6 +6,7 @@ Let S be an edge-transitive Steiner triple system on v=2ell+1 vertices. If S con
 
 ## Body
 
+
 Let m=|E(S)|=v(v-1)/6=ell*v/3. Fix one spanning linear path P with ell blocks and let Gamma be an edge-transitive subgroup of Aut(S). Choose gamma uniformly from Gamma. Then gamma(P) is again a spanning linear path.
 
 For a fixed block e, edge transitivity makes Pr[e in gamma(P)] independent of e. Summing over the m blocks,
@@ -23,3 +24,4 @@ Deleting D leaves at most
 blocks. Thus the only way an edge-transitive STS(2ell+1) can improve the generic lower benchmark is to be intrinsically P_ell-free; once it has one spanning path, sparse surgery cannot rescue it.
 
 For PG(4,2), the explicit spanning P_15 in 7faba12a7542 and edge transitivity imply that at least ceil(31/3)=11 blocks must be deleted to destroy all spanning P_15. An improvement over the generic 14/3 density on 31 vertices would require deleting at most 10, so deletion-based modifications of PG(4,2) cannot improve the P_15 lower bound.
+ 

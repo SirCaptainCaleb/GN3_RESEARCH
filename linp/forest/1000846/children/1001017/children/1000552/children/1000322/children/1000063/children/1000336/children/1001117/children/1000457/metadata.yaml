@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "503e216bb0e44fa84f2b570cc8121fb63b562e29deff37624b57e0a53daf5776"
 created_at: "2026-09-22T04:53:28.194831+00:00"
 id: "1000457"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A clean terminal branch from a deficiency-two path is either special or has rank at least the source rank q."
+statement_sha256: "fba3b30860fced153b82763dd1ed8ef525962eb07ffd3921c36523be804ff653"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "5490b6cf2b3858e02663358705d984a8e73b9cc1831f076e99862ab54b8aa1c2"
 created_at: "2026-09-29T22:00:19.513784+00:00"
 id: "two_endpoint_extensions_shortside_or_descent15"
 last_elevation_revision: 9327
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two Hamiltonian endpoint extensions force descent or a common short side."
+statement_sha256: "5e74924d36413d3255dd007ae0ac9202d3b009769fc17af91de7d4be1f3842c5"
 substantive_worker_ids:
   - 579
 support_reason: "provisional_unaudited"

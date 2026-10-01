@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e76cd8d3aba2c6f3d13800950b7e0eaf12578a0e301ff1e619bdc9fc1deaadda"
 created_at: "2026-09-22T05:00:51.095312+00:00"
 id: "1000527"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The double-blocker matchings at the two terminals of a longest-path last edge form an edge-disjoint alternating path-and-even-cycle system."
+statement_sha256: "19ed85edc4292a74e8a48f6c893d0710f94dd677fa46cadc6571fd8242a82e1c"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

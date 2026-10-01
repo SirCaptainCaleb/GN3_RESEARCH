@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "1057d04be9562da093fed9e52d60b2fcde0de4aefd87b90317b61e7db0007790"
 created_at: "2026-09-24T18:12:45.930533+00:00"
 id: "1000371"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The exact global deficit controls gap-one switching and lens mass."
+statement_sha256: "9c7a3c1696a2255c647bc123c19c57f20498714b8f79a66be40fbf035e2175e8"
 substantive_worker_ids:
   - 201
 support_reason: "current_certified_premises"

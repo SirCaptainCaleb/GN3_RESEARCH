@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "92278f5970285647a68d29b4faed127529a29434890035df9ee1dfb649f139a3"
 created_at: "2026-09-27T19:08:44.566323+00:00"
 id: "pairdeletionreconstruct01"
 last_elevation_revision: null
@@ -38,6 +39,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Two-deletion reconstruction for partitions into linearly ordered blocks"
+statement_sha256: "f3ad604899c5c75d2b592acbb9876f8c289a9faebac5594570c44c4d311f4e66"
 substantive_worker_ids:
   - 569
 support_reason: "current_certified_premises"

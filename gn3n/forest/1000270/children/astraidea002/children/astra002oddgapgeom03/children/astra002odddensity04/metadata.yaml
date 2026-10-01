@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8de14a913dd450392555c76c29ce8f1d954e31f0b96bb257c0b58ae766ad1e97"
 created_at: "2026-09-27T14:48:26.541713+00:00"
 id: "astra002odddensity04"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Odd balanced-cover failures force half-family deletion incompatibility."
+statement_sha256: "8ea45eea7b1c0acbf6d2050c741f0ce7a2bb13657bd8746efe1037073d60e446"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

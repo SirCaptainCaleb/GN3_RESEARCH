@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "d577dd7b7547b86160263cfad163d8529326daea6f568f7359bf68e7b31ae426"
 created_at: "2026-09-21T19:13:18.872189+00:00"
 id: "1000563"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any uniform bound nullity(N)≤Cs+Dn with fixed C>0 yields a P_ℓ-free edge bound whose leading coefficient is 2C/(2C+1)<1."
+statement_sha256: "2cfa23922ee4492207356b1106f03e23f22662ce79792a1e033674abb58af1d6"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

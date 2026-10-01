@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let
 v_0v_1...v_k
 be a rainbow terminal-pair path whose parent hyperedges belong to U_11 and have nondecreasing edge ranks. Fix a cut with
@@ -40,7 +41,9 @@ while c_+ is either the private vertex of g_{q-1} or
 
 Thus all crossing states at a 2q-3 cut are finite-state after two explicit low-rank boundary-cycle exceptions are separated.
 
+
 ## Body
+
 
 Because the collision crosses the cut,
   r_i>=2q-3

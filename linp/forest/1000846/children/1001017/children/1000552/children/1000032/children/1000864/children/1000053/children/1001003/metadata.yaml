@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "7b8aaaca36591d9c7d6e1488de76aca5ad216116574de61a126ec1cfc2d73f4d"
 created_at: "2026-09-24T04:28:54.414326+00:00"
 id: "1001003"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An earlier terminal-only contact is bounded by the later edge rank."
+statement_sha256: "87791d71c74363bf7fd7372f7c349d3c07ca74e3d06e1209a529a79f66cf2c5d"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

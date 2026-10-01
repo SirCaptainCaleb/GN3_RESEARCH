@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "2f89340aff46df0deb3b33d10e70042ba75cb2569ff7597dde3bb04034268eb1"
 created_at: "2026-10-01T06:00:05.418382+00:00"
 id: "1000865"
 last_elevation_revision: 10659
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Each persistent-defect shell yields localized order disagreement or a Hamiltonian-six-set full two-label square."
+statement_sha256: "fdceedc4f69d71a9df3ad2550ca27601527b49a26d476b92248158dfb6e71ace"
 substantive_worker_ids:
   - 952
 support_reason: "not_locally_certified"

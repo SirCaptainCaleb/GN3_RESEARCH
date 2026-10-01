@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d941b78661c5cd95fbb8e2eed0f5067c2e0f515490355710c11aae34f7e5d2f4"
 created_at: "2026-09-26T03:09:52.032029+00:00"
 id: "1000496"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At a terminal pairwise-repartition state, quadratic-potential minimality imposes local inequalities that feed the no-trapping argument."
+statement_sha256: "bb7a95a898e6f3674d94393511c29ea278b62d31f96843d0f6ca25c3225ca163"
 substantive_worker_ids:
   - 682
 support_reason: "current_certified_premises"

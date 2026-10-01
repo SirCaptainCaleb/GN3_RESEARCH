@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "0c53b9ccc570d806b8291bf118bda48f29dfa9766f564a0ca57482f6e23f919f"
 created_at: "2026-09-22T05:29:47.354689+00:00"
 id: "1000919"
 last_elevation_revision: null
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Potential-oriented local bound implies the 2/3 upper bound."
+statement_sha256: "ae325e3082221274440627f59047069018e358eb2acf74f00fbc2f056a0fb6fe"
 substantive_worker_ids:
   - 262
 support_reason: "nonproved_logical_premise"

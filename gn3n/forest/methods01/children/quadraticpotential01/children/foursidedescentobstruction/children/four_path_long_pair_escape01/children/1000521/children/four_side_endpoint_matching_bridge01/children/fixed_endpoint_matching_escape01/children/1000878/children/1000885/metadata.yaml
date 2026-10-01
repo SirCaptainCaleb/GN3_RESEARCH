@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "9f11265556a7fd8d58458f14809796191057ac23b918ec58206eff24635f6564"
 created_at: "2026-10-01T06:29:24.757745+00:00"
 id: "1000885"
 last_elevation_revision: 10710
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Each of the four endpoint-rooted five-sides in a locally minimal 4|m state has a pc2 complement whose every two-cover crosses the inherited long-interior versus Q cut."
+statement_sha256: "9025a60d1e80efdede4f2aa131ca7e408ecc370efc1d7f6a6383801369d392c3"
 substantive_worker_ids:
   - 952
 support_reason: "current_certified_premises"

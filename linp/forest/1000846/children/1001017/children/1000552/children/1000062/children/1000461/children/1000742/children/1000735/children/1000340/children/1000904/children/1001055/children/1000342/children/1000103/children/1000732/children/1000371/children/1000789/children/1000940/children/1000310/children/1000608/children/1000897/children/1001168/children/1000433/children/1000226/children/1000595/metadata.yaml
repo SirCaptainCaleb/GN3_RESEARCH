@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "de7f677acd9029d2208096aed1e476f939ffffb9655a5af169520b82e6e2d4b3"
 created_at: "2026-09-25T21:21:34.443801+00:00"
 id: "1000595"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An interior U_11 color-terminal collision forces adjacent edge-rank sum at least the colliding rank plus two."
+statement_sha256: "832beecff9e18d992eb9e4dca62d8ee81839ccc117b3c9eefa6d0a17d2bf86bd"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

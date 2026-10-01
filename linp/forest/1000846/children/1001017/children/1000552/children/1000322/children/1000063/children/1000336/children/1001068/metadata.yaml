@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7bf219e9f2ef4d045050ecbbae712a3cafd1d5a4a6454ede394f2e3d5515f964"
 created_at: "2026-09-23T03:51:48.440196+00:00"
 id: "1001068"
 last_elevation_revision: null
@@ -56,6 +57,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two deficiency-two safe sinks induce edge-disjoint blocker matchings whose union is alternating cycles together with at most one nontrivial alternating path, with defects pinned at x."
+statement_sha256: "8fccfbbd3245d49014deb156346fa3eca752bd3117651fe62f6431ac88d5553a"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

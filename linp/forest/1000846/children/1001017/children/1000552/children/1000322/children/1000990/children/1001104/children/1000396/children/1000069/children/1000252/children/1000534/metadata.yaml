@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b257817b62f672330f78cbac4bb9736e7068a3017b302f58c2433b311e3dd314"
 created_at: "2026-09-24T04:09:08.331407+00:00"
 id: "1000534"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Either charge amplifies by four or all negative charge is trapped one level below the top."
+statement_sha256: "8856f803c6494100b47401de06deea57736f7c56a5b9d4fc754c520c6c7fa476"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

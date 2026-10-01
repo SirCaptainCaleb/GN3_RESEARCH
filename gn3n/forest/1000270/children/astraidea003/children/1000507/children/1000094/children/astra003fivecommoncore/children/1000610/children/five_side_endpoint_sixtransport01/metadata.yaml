@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "fa87c7254d899a679866f1e2f9ec94957269bc08df446ee55150606fef8334c2"
 created_at: "2026-09-29T20:44:30.671252+00:00"
 id: "five_side_endpoint_sixtransport01"
 last_elevation_revision: 8911
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A trapped five-side exposes a positioned six-support or four-good-deletion transport package"
+statement_sha256: "8461fcd790e793a4ccf1b5dcd4c4bd35662a62d2e96f4f49365ba95dd4c92be1"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

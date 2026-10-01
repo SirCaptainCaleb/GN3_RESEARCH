@@ -6,6 +6,7 @@ Let K be a trapped order-eleven Astra-003 component containing a 4|4|3 state, an
 
 ## Body
 
+
 Let (S) be the eight reachable singleton labels and suppose, for contradiction, that the omission graph has a missing edge (xy).
 
 By astra003eightmissing, in every reachable omission state

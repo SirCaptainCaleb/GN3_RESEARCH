@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "dcddaafd73e35776c2abac18a22bd44d9bdefde78ba555db3c3ce995c30d1929"
 created_at: "2026-09-24T02:30:37.688709+00:00"
 id: "1000628"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Good-residue witnesses contain linearly many genuine two-hole collisions."
+statement_sha256: "47324f844181939e559d75ce8ce5944ff13288e730f845460850d4ec184c88b9"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

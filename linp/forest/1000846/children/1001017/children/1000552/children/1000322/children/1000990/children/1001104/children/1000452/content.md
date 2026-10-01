@@ -6,6 +6,7 @@ Let d=floor(2ell/3). An exact-density P_ell-free linear triple system with |E(H)
 
 ## Body
 
+
 Let ell>=4 and put d=floor(2ell/3). Let H be an n-vertex linear triple system with
   |E(H)|=dn
 and no P_ell.

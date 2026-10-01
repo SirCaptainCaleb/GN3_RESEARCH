@@ -613,3 +613,5 @@ For the density statement, count pairs `(X,Y)` where `X` is a Hamiltonian four-s
 `(r-4)h_4(r) >= 3 binom(r,5)`,
 
 which simplifies to the displayed bound. ∎
+
+

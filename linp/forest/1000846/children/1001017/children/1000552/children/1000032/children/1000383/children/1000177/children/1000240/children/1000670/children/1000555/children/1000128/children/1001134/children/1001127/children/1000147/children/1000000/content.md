@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let
   R=(g_1,...,g_L)
 be a maximum endpoint path with last vertex x, so phi(x)=L. Let h=g_j be an internal edge of R, with j<L and edge rank
@@ -22,7 +23,9 @@ Consequently:
 
 Thus a higher-rank internal edge can avoid a forced return into the remaining suffix only when it is nonspecial and the host path leaves h through its unique entrance.
 
+
 ## Body
+
 
 Assume z is terminal at h. By definition,
   phi(h,z)=phi(h)=r,

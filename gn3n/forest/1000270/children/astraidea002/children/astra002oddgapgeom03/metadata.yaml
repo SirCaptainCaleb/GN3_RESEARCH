@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5ce68a16da880b20b5f4c8041142e4fb6a68e83eab4b7f945d08d4beba8ebf2b"
 created_at: "2026-09-27T14:47:55.121318+00:00"
 id: "astra002oddgapgeom03"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Odd balanced-cover failures inherit one-gap compatibility geometry."
+statement_sha256: "4fc64757eccfb496e32f807202fe7a4d8c9d04492edd21145edccf3ce2bea9ea"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

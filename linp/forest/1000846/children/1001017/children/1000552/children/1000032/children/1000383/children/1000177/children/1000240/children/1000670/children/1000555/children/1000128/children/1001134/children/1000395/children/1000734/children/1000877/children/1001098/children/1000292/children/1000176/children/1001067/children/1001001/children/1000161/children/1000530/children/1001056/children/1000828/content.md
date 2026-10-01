@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let e={x,v,u} be an ascending nonspecial edge of rank r, with unique entrance x and terminals v,u. Assume r<phi(u), and let P_u be a maximum endpoint path ending at u on which e is terminal-single. Suppose the unique off-u contact of e on P_u is x rather than v.
 
 Then e is not an edge of P_u, and if d is the number of P_u-edges on the segment between x and u, then
@@ -9,7 +10,9 @@ Then e is not an edge of P_u, and if d is the number of P_u-edges on the segment
 
 Equivalently, every reciprocal terminal-single type-X state closes a linear cycle of length d+1 through e, and this cycle has length at most r.
 
+
 ## Body
+
 
 Since r<phi(u)=|P_u|, the edge e cannot be the last edge of P_u. It cannot occur earlier either: e contains the endpoint u, while an earlier occurrence of e would place u before the terminal edge and hence repeat u later on the path. Thus e is not an edge of P_u.
 

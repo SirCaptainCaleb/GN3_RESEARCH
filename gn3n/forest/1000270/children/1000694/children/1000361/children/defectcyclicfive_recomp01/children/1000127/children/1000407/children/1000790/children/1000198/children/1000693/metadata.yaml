@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a4680530d516b02a92635681f525a49896c1b51138975a21ac9aafd9f8abac1f"
 created_at: "2026-09-28T02:49:57.140269+00:00"
 id: "1000693"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At order fifteen every four-side descent from the all-equal barrier branch escapes the canonical cube"
+statement_sha256: "c1ecfc29e6de10908ed2a2e5944908ec9cd7bc30771f8655229346d148aaf902"
 substantive_worker_ids:
   - 660
 support_reason: "current_certified_premises"

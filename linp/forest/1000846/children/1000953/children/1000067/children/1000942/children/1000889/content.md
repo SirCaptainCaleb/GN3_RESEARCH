@@ -6,6 +6,7 @@ Let G be any finite properly edge-colored simple graph on u vertices with color 
 
 ## Body
 
+
 Define the color-adjacency graph C on the colors used by G: distinct colors a,b are adjacent in C exactly when some vertex of G is incident with one edge of color a and one edge of color b.
 
 First observe that every q-edge simple path c_0,c_1,...,c_q in C yields a 2q-edge linear path in H_r whenever r>=q. For each i=1,...,q choose a vertex v_i of G incident with an edge e_i^- of color c_{i-1} and an edge e_i^+ of color c_i. Realize this two-edge wedge in the i-th copy of G, and list the lifted hyperedges in the order

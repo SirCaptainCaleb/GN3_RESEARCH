@@ -6,6 +6,7 @@ Let H be a positive-minimum-degree linear triple system on 6<=n<=12, with minimu
 
 ## Body
 
+
 Let H be a linear 3-uniform hypergraph on n vertices, with 6<=n<=12, positive minimum degree delta, and global maximum linear-path length L. Suppose
   3 delta > 2L+2.
 We prove that every edge of H is special.

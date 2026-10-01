@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a finite linear r-graph with r>=3. Let h be an ascending nonspecial edge of rank q>=4, let v be terminal at h, and let
   Q=(g_1,...,g_q=h)
 be a longest h-path with last vertex v. Put
@@ -35,7 +36,9 @@ In particular, the conclusion applies to a family of globally unpaid signature-(
 
 For r=3, every anchor-multiple edge is an anchor-double edge and its unique P-contact lies among the same two off-v vertices, so one obtains the stronger crossing matching of the existing gap-one theory. For r>3 that edgewise matching need not exist, but the symmetric-difference conclusion survives unchanged.
 
+
 ## Body
+
 
 For every f in T\{h}, the set C_Q(f) is nonempty: otherwise Q,f would be a (q+1)-edge linear path, contradicting phi(f)<=q. Since distinct members of T share v, linearity makes the sets C_Q(f) pairwise disjoint.
 

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2f5cb339e2aa700d7d0981ac60ead9752b83f22888f304c44bd61629be5c1ef7"
 created_at: "2026-09-21T03:33:37.845962+00:00"
 id: "1000798"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two Hamiltonian six-deletions do not force a seven-set Hamiltonian."
+statement_sha256: "87a748d30fe457f74e82ceccb0056b8a5d4f443c1f28d04fcd725ce867182619"
 substantive_worker_ids:
   - 666
 support_reason: "current_certified_premises"

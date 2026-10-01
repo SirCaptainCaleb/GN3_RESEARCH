@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a linear 3-graph of minimum degree q, let P=(p_1,...,p_{q-2}) be a linear path ending at x, let u,v be the two opposite last vertices of p_1, and let y,z lie outside V(P). Suppose both u and v are safe sinks: neither admits a safe clean extension avoiding y,z nor a safe single-blocker rotation avoiding y,z.
 
 For each sink r in {u,v}, its endpoint fan has degree exactly q and exactly one of three forms:
@@ -14,7 +15,9 @@ Let W=V(P)\p_1 and let M_r be the matching on W whose edges are the blocker pair
 - if exactly one is imperfect, there is one alternating path from x to its secondary defect;
 - if both are imperfect, x is isolated and there is at most one alternating path joining the two secondary defects.
 
+
 ## Body
+
 
 Fix one sink endpoint r. Let C,S,D be the numbers of clean, single-blocking, and double-blocking edges through r other than p_1. The endpoint-deficiency inequality gives
   C+S+D=d_H(r)-1,

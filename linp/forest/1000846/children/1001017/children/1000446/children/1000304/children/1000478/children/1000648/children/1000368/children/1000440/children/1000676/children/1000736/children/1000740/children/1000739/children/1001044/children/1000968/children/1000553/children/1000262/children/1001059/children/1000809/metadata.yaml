@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "d54fef24e480aadab502c8fbdbc7a2ca0b228d7490034e80c2f5a8b6e86126bb"
 created_at: "2026-09-24T04:00:20.295931+00:00"
 id: "1000809"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the surviving 4455 entrance-a case, the far rank-five edge has only two possible overlap patterns with a canonical three-edge entrance rail."
+statement_sha256: "93750eb49ab21481ce02ef09f9b93d89b9171d197dbbb37f6718467d34bafc10"
 substantive_worker_ids:
   - 229
 support_reason: "not_a_proved_or_evidence_claim"

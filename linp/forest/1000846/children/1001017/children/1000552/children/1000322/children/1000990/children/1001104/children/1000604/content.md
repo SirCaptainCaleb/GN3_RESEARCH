@@ -6,6 +6,7 @@ Let d=floor(2ell/3), n=6d+1+s, and U be the leave graph of an exact-density P_el
 
 ## Body
 
+
 Let ell>=4, d=floor(2ell/3), and let H be an exact-density linear triple system with
   |E(H)|=d|V(H)|.
 Write

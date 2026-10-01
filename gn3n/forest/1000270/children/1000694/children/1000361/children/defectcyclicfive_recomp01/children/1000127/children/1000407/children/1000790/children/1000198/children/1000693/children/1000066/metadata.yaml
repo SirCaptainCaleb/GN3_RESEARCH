@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0737ec1d1dc703bf5a9fd8bd3afbfdd8ec882ec2ed0575cbca07157c5938c9b4"
 created_at: "2026-09-28T02:53:16.486943+00:00"
 id: "1000066"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The order-fifteen no-descent four-side branch also escapes the canonical cube"
+statement_sha256: "2d1802dc56bf7acbfc7a78597d8185b00f9342abd94984ba093f8198459e7314"
 substantive_worker_ids:
   - 660
 support_reason: "current_certified_premises"

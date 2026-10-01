@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "ff9cb5bcf2aaa3ef3b0a56b675781fd4b029cf1bdac70820dff7b9882bee206b"
 created_at: "2026-09-23T02:59:32.56053+00:00"
 id: "1000401"
 last_elevation_revision: null
@@ -60,6 +61,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A Type-B loss-one alternate break forces either a nonlocal double blocker or a terminal theta containing cycles of lengths q−1, q, and 3."
+statement_sha256: "3433af7e55fb8160669bbe5123284ed9c5d967e62a7ebb43ed4ccf815ea4d0d9"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

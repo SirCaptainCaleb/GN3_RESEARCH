@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "245c3e42ef28f8a59dabba5ad559d0a27bc01e680b74b155eeaed7816dd429ba"
 created_at: "2026-09-29T18:31:58.915843+00:00"
 id: "global_four_complete_reversal_fan01"
 last_elevation_revision: 8826
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A global four-side minimum carries a complete label-by-long-path reversal family."
+statement_sha256: "cf7e8b5128bd431d0f46e0f10c9bddb5b73c343f3166731572fa239249776b91"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

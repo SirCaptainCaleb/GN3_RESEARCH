@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "32a1c7d45d3f29b73198abd2d36021e8b285fe12b02998f94abb227f1264183e"
 created_at: "2026-09-24T03:59:51.782308+00:00"
 id: "1000507"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Crossed p=5 rank-five competitors force a reciprocal rank-four tail blocker."
+statement_sha256: "50f929d324515c0243ffa0cb3317201f1dfd7ba9352258f32d3183758ee02bd8"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

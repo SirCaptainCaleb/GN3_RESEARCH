@@ -6,6 +6,7 @@ In the sole surviving p=2q-3 one-low all-single pattern, the contacts are A,B,C,
 
 ## Body
 
+
 Retain the surviving one-low odd-central all-single pattern of 45efc91c2ba8:
   p=phi(v)=2q-3, q>=4,
   P=(g_1,...,g_p),

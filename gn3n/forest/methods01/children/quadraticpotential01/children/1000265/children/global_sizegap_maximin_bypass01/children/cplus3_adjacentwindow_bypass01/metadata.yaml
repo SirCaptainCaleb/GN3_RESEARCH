@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "590fdc34e5af15094d59459282fc1fffb30edb64a0403a500e979649df33ee8d"
 created_at: "2026-09-29T05:07:28.066101+00:00"
 id: "cplus3_adjacentwindow_bypass01"
 last_elevation_revision: 7998
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The c+3,c,c longest-path residue synchronizes two adjacent windows on one lower state"
+statement_sha256: "9d23f64394170f073746570fdd992b940e2de1aad25552aedeeede7a2d7efbcd"
 substantive_worker_ids:
   - 718
   - 630

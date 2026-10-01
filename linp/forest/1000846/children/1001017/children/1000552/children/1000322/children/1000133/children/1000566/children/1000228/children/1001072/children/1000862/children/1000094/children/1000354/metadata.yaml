@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2253e9dfbcf16facd5076acb5e397b529201d33ccb7b134cb0fd49039503e277"
 created_at: "2026-09-24T02:21:17.959686+00:00"
 id: "1000354"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Zero-slack component partitions have rainbow cut expansion."
+statement_sha256: "8614ed40c78bb62b21f65bfc9764c8b2f796429e6a1c01106799d25c358dc289"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

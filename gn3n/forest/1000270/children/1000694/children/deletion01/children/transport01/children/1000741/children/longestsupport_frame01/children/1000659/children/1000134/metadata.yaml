@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "3f3c47fd7e5cbe030c67d9d45ffdba895f792f6453d98b283e0ae0b06e8234c8"
 created_at: "2026-09-21T15:53:19.526371+00:00"
 id: "1000134"
 last_elevation_revision: 0
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every exact two-crossing endpoint cover forces order disagreement."
+statement_sha256: "e3363ef14b2e919f89595130f6713686b42c8c26a8e24d06aa4f1486888798ab"
 substantive_worker_ids:
   - 570
   - 663

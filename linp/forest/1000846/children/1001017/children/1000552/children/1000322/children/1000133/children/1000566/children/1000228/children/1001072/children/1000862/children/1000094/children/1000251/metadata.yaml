@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cb3fdcf15e09d7a1bfa25efd6194e9fd09ea327498b60644a671983d1bd23f42"
 created_at: "2026-09-24T02:23:48.693356+00:00"
 id: "1000251"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "One-slack critical cores have at most one forest joint."
+statement_sha256: "fbb0b1702cb0046ff081171c72c4d0e3f035b4aaef950f1d80a7b04de7b1bad0"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

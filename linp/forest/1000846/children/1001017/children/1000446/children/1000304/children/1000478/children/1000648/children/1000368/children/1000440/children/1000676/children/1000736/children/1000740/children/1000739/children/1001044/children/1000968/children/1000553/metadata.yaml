@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b4de36572dbe91657f0a9ce0de715d47f7e9d7d1dc25aa86eaf521e2238322e2"
 created_at: "2026-09-24T03:52:01.546303+00:00"
 id: "1000553"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The surviving 4455 witness geometry forces the right middle joint to potential at least four."
+statement_sha256: "04a105e43a9ec9aa7c57593ff557931bfefd12ca0450427d7f2156be190e072f"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

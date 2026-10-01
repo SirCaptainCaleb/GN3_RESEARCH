@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d4c39488bfdd1719aeec15a40a50713876fd06d25c2bac68d82719c5d4209cc4"
 created_at: "2026-09-28T10:03:57.614844+00:00"
 id: "deficitonefiniteclosure01"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "Deficit-one order-preserving transport admits a finite binary-balance descent."
+statement_sha256: "55627299fef7fe0b3edfde1bcebc97ad47b3a7732112356c8052f540b2ab8481"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

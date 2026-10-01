@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "40f8a68e5da2106f4e36a7742bd06cc5de51def68484a17603d3bae0e7a9bc80"
 created_at: "2026-09-27T04:25:56.802372+00:00"
 id: "compatsupportcube16"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "One-defect support-switch cube branch: a three-label support-switch triple occupies six cube states; deficit parity, support-switch Hamiltonian enlargements, adjacent-gap concentration, reverse-cross orientation, and extender-blocker toggles reduce the remaining cube geometry to bounded transport or order disagreement."
 simplified_statement: "A three-label support-switch triple occupies six vertices of the one-defect cube"
+statement_sha256: "4e66eeb25592e5a5ea40bbf2aa6560156beeda59116c9fbca89568ee829aff1d"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

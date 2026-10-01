@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "581d63bb01b8c032fa10befb43ce08df369b77984c04a293863bac303bc64b8a"
 created_at: "2026-09-24T19:24:11.883407+00:00"
 id: "1000259"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A source rail couples its two terminal stars into one alternating blocker system."
+statement_sha256: "648fc7d3e9ed1f59869123e69df17d098368687c43f1f01366c1721fe1011e75"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

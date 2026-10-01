@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7276dea2dd7d093d92c2ff1769629c8ba39a7b65718ab8c1c470d2000a105eda"
 created_at: "2026-09-28T21:46:56.771692+00:00"
 id: "1000732"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A complete reverse fan yields a positioned Hamiltonian five-side with an inherited complementary two-cover"
+statement_sha256: "1f115df7ca34f6ae7151b3d8413813eb0e41720d43ff82f6d558b10d689d4e3b"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

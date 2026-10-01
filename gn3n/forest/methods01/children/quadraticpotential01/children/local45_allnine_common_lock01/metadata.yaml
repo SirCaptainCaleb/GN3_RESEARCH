@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1fa2ce2f89439cf88a131a1f858722bac773d060ac2d80f5b838cd6e94006b28"
 created_at: "2026-09-30T13:02:05.833679+00:00"
 id: "local45_allnine_common_lock01"
 last_elevation_revision: 10100
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every label of a locally minimal 4|5 union is locked out of the common long interior"
+statement_sha256: "7cb4e7a7fbc2ffec6ba19ac88c6915a5775a245881e56d3e15edb5cbb5c80033"
 substantive_worker_ids:
   - 665
 support_reason: "dependency_verification_pending"

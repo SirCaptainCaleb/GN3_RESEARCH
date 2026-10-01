@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c044095de008ec0f4e67cf77ddc7a6a30300f943b8a4172eab98c7de4aeedac4"
 created_at: "2026-09-25T20:51:34.266992+00:00"
 id: "1000542"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Strict-gap U11 whole chords carry a three-cycle packet."
+statement_sha256: "ce4b0e88cbe4da028e974314cf53c9506ebf70bd5fb63a313d4b14bff48966f6"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

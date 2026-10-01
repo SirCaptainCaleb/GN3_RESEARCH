@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4edcd84a07ffdea076a457536e0425b10cdb32040776c0edc164e80d5f181d13"
 created_at: "2026-09-24T01:12:34.422746+00:00"
 id: "1000015"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Deficiency-s residual decomposition around a nonspecial edge."
+statement_sha256: "c81e39c400beaaf7801d9a7632c69991eebbd26cd44421dcceb103b351e16c70"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

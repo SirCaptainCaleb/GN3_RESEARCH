@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 17
+body_sha256: "df8d066e6b9edcdab2f665d81451b502c66e7728734ac324a78798020807ae13"
 created_at: "2026-09-20T19:54:54.726726+00:00"
 id: "1000365"
 last_elevation_revision: null
@@ -64,6 +65,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Current finite-kernel defect-compression composition connecting deletion states, bounded obstruction taxonomies, endpoint transport, and the remaining global closure gap."
 simplified_statement: "Current proof composition: bounded obstruction to defect compression"
+statement_sha256: "ddac9621ac81c9ad152544e42db0ec6a966b8b73423a103cd360c8b11d307659"
 substantive_worker_ids:
   - 673
   - 589

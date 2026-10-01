@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a boundary tournament and let
 C=X|Y|P
 be a spanning three-cover minimizing the quadratic potential Phi in its connected pairwise-repartition component, where |X|=4, |Y|=5, and
@@ -22,7 +23,11 @@ are Hamiltonian; replacing Z|P by these two Hamiltonian supports preserves the t
   (c) a tight cross triple (x,p_i,y) or (y,p_i,x) for some p_i in P;
   (d) after possibly interchanging x,y, a tight connector (x,p_{i+1},...,p_j,y) through a nonempty displayed interval of P with j>=i+2.
 
+
+
+
 ## Body
+
 
 Apply 8e138afbc628 to the four-side X. Choose one of the synchronized vertices x in X supplied there. Then for both endpoints e in {p_1,p_m},
 (X-{x}) union {e}

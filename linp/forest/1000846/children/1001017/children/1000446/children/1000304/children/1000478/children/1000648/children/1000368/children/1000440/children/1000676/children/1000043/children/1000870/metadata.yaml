@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "b598bb4d56c6a160d85bc23bfc1a58528d4a6b9ddd8f3d214903359fb9a517f0"
 created_at: "2026-09-24T03:35:36.038858+00:00"
 id: "1000870"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every five-path to a high terminal of the 4445 triangle is suffix-blocked by the middle edge."
+statement_sha256: "2d675e40959ff55cc88b016e3c20e6f2d04d4612487a7df685ec68be7ed3d2b4"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

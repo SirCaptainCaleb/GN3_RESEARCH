@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "8cd1e57bdd5c0ff2390ac1a9b2afa606d0bb22aed96107ce720262befd547761"
 created_at: "2026-09-25T04:04:24.482833+00:00"
 id: "1000588"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: "Reusable combinatorial-topology and matching toolkit: Sperner/Hex/Brouwer-type equivalences, Tucker and antipodal-coloring machinery, and hypergraph Hall/Ryser matching tools retained as general-purpose forcing methods for the project."
 simplified_statement: "A reusable combinatorial-topology and matching toolkit imported from LINP is available for GN3N arguments."
+statement_sha256: "0a842765883d40aa432d241623e75173023ed45602f878812ed55b2d17c2eb77"
 substantive_worker_ids:
   - 698
 support_reason: "not_a_proved_or_evidence_claim"

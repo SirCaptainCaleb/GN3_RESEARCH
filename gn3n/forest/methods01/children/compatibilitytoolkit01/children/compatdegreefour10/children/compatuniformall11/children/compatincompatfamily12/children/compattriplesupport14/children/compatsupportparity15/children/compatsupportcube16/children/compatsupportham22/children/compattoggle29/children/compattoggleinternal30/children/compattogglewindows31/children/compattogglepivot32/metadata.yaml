@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2da307a5be8581af32f47ac20a1e456c527076ca53d00641c018f67de7c4f0f3"
 created_at: "2026-09-27T13:20:02.448765+00:00"
 id: "compattogglepivot32"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The unresolved one-split common-label branch has second-type pivots on both cores"
+statement_sha256: "c0f6969e53da8171400bbf2c0071c2b4806212d74e5f27fcafcccd2a107f803d"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

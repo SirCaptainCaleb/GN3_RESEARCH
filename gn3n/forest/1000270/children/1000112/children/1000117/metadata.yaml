@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "c5d06daab056f6e4bc9e87336644b9fa1c7a5618d162365fac6d41a21d2a16f4"
 created_at: "2026-09-29T18:32:52.239365+00:00"
 id: "1000117"
 last_elevation_revision: 8826
@@ -27,6 +28,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every deletion singleton component reaches a four-window descent or bounded transport state"
+statement_sha256: "95e5691d9f7c5e56f8a00172e569144ce906a8a7388798fa57c55868ddc3f02e"
 substantive_worker_ids:
   - 637
 support_reason: "provisional_unaudited"

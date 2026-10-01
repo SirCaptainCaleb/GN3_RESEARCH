@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "bc150afa57ff7a88718a56386aa007e93ad77ebadf04ba402ae454dc62a2a7cf"
 created_at: "2026-09-25T12:02:58.716365+00:00"
 id: "1000006"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rank windows remove the high-triangle collapse in the source-mass frontier."
+statement_sha256: "053b4d27e7b852bf566b71ac4dc7556542e9e19e061e3481cc6f601502ab24ff"
 substantive_worker_ids:
   - 189
   - 211

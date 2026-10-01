@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "f6f898748107c011d65f1bf90dc152af7a6165b2f08def87dbabb48d16061a2c"
 created_at: "2026-09-21T00:11:53.85782+00:00"
 id: "1000625"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Compatible-triangle and cyclic-four-kernel branch: endpoint-compatible triangles enter a radius-two stable cyclic-kernel residue, whose stable complements and comparison structure are used to force bounded disturbance or rule out neutral trapping."
 simplified_statement: "Endpoint compatible triangles enter the cyclic four-kernel frontier."
+statement_sha256: "01031e898cec67f1fa40d48a85defc198e3b444eeb3628ceabf9e66d7bc3a0b1"
 substantive_worker_ids:
   - 714
 support_reason: "current_certified_premises"

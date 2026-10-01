@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "157982e76418422f7cc1cbbdbfb8a9f291bf328af7e5d227f884fce50653e867"
 created_at: "2026-09-29T19:04:40.230334+00:00"
 id: "four_side_order6_neutral_migration01"
 last_elevation_revision: 8737
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The order-six endpoint-hard branch gives order disagreement or a neutral four-side migration."
+statement_sha256: "b58f7b5dc425a2c8186eece3a527a261ea29e444858d821457246337c0b91ee6"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

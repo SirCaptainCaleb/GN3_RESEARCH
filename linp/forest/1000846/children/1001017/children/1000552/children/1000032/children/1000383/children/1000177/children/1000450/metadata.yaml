@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5b31fbf7129de143c24b8c82f2771b6e610881d14f9aa7c6f3b08e8b17b9ca2d"
 created_at: "2026-09-24T04:36:05.677366+00:00"
 id: "1000450"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any four-edge counterexample with occupied upper consecutive rank lies below the odd central threshold."
+statement_sha256: "62b395fbef5544a9599ccdcd2fcdd327514611a2690a4dbf85887b9af02041c2"
 substantive_worker_ids:
   - 229
   - 207

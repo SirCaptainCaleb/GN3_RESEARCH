@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1e7fc9502e95593cf6d921426309591c15c66536fa4dd6837a4098b76e9a45f2"
 created_at: "2026-09-22T05:14:42.83762+00:00"
 id: "1000046"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For nonspecial edges, nullity_R(N_ns) <= β(T)+h, and for the full incidence matrix nullity_R(N) <= β(T)+h+s."
+statement_sha256: "86f6b7ca9cf9b3d05c799359141e9fcfd65f0fa03c9bdc21f9c7df05f3261cfa"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

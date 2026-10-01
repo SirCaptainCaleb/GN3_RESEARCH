@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "89b7563bde03676a997dd8b45f45a5012dbf04bc63b92bed0111e7340246c2a2"
 created_at: "2026-09-27T20:46:12.081942+00:00"
 id: "1000467"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Failure of both central balanced restorations forces a Hamiltonian five-window across the cut"
+statement_sha256: "5a57b5190b3f64b473bc9880fb5d2074177798dc2d105bd68360f0ca7bdfb5f0"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

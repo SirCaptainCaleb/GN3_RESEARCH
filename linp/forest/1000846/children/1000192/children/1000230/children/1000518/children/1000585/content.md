@@ -6,6 +6,7 @@ In the 12-vertex, 20-edge, 5-regular linear triple system obtained by deleting 0
 
 ## Body
 
+
 The first three blocks are translates of {0,1,4}: {1,2,5}, {2,3,6}, {3,4,7}. The fourth block {4,10,12} is the translate by 10 of {0,2,7}, and the fifth {10,11,1} is the translate by 10 of {0,1,4}. None contains the deleted point 0.
 
 In the displayed cyclic order the successive intersections are respectively

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "41eb1106a77ddf5bb509c8f3855b67e7d135e6fc6a50762fcd6272e8ab03a03d"
 created_at: "2026-09-25T20:58:25.840192+00:00"
 id: "1001082"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "1ad9bb49edaa2282a2872ea629cd4d1cca33287812cf699ae2f6627e855a16a3"
 substantive_worker_ids:
   - 191
 support_reason: "Its key bound |E_1|<=(R-1)|C|/2 depends entirely on the invalid component-size conclusion |K|<=R from 85d576d60e7e. Without injectivity of the integer host coordinate kappa_P on component vertices, the proof does not bound a component by R vertices, so the claimed sharp crossing-pair threshold is unsupported."

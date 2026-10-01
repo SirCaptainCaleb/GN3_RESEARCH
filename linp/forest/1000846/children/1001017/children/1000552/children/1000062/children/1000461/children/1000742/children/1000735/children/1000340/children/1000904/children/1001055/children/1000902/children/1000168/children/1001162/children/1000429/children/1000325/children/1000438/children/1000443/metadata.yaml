@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "a1783231f9e556b8ea3103efefe525ccd19748f4b63e75bbf975f70ec3efe9ff"
 created_at: "2026-09-24T21:58:02.70735+00:00"
 id: "1000443"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Flat ascending rotation outputs with no endpoint rise land at aligned defect vertices."
+statement_sha256: "03cd937eac606b47a92ef418fd6e2ba760b45bc7ef00a3ada8b641b5b2261008"
 substantive_worker_ids:
   - 236
 support_reason: "failed_or_blocked_premise"

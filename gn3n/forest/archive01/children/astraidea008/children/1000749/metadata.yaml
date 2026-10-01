@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6965e0864f6c69202d44ab49974c2545227f2632cfce9208ac6cbf2fb5b77f06"
 created_at: "2026-09-27T13:43:26.448084+00:00"
 id: "1000749"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Astra 008 is exactly a nonnegative complementary-pair determinant"
+statement_sha256: "56d49dd8f7bc2247823e28dcedcb65e67c9509894eb6d1ce07a5d9dd1b6ac44f"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

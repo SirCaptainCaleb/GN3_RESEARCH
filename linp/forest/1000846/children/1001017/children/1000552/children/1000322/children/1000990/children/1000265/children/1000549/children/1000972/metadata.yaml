@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d7466476aa38b91045ab5c50c01198dca140eb3c18187394333b9000774b3522"
 created_at: "2026-09-24T02:58:17.047764+00:00"
 id: "1000972"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Vertex-minimal equality does not by itself give outside packet expansion."
+statement_sha256: "cc99d197700ab496f8898f1a6ee93c2d9942b11e5e294efc5494c48df9af0733"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

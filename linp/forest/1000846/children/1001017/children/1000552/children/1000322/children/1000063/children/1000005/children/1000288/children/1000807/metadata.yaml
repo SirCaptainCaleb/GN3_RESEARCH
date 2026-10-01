@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b59bb9d88e04a9b14c4e31af917a68922a244a68b0b50c6cc94a746ddf3e07bc"
 created_at: "2026-09-24T01:48:43.642156+00:00"
 id: "1000807"
 last_elevation_revision: null
@@ -38,6 +39,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A mod-three induction carrying both strict all-specialness above 2r/3 and an equality-structure classification at multiples of three would absorb the known one-degree induction failures."
+statement_sha256: "3131a5a9ba3b0b38803c548633d5336b7487dc121d4102380a8a5c89409ec551"
 substantive_worker_ids:
   - 185
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "4a06792bd65aaeb6a4304b65bfd2b13bb7b23a245479bbcb1485664f8d8f25de"
 created_at: "2026-09-24T05:11:20.423441+00:00"
 id: "1000939"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every d-containing top-boundary pattern has a common blocker moat."
+statement_sha256: "071bb19c4d716bad04db3cc931320f2e3c1d6b3db8f0228b9f99a609a98e801c"
 substantive_worker_ids:
   - 225
   - 185

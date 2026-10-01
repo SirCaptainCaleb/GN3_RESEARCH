@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e74a31ff6d85d1a18a663abd590dea7833b17d3c6aef5eb550767ca924b2143f"
 created_at: "2026-09-29T18:38:05.07037+00:00"
 id: "endpoint_fiveshell_common4core01"
 last_elevation_revision: 8737
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A complete endpoint-pair family of Hamiltonian five-sets contains two members with four common vertices"
+statement_sha256: "fb2263690a5ee575a0cf31bce1cf86599c13dc9d758613d99f476d20b403910c"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

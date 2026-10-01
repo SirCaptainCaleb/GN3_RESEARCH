@@ -6,6 +6,7 @@ For a vertex v with p=phi(v) and maximum ascending-terminal rank q<p, one has t(
 
 ## Body
 
+
 Let H be a finite linear 3-graph. Fix a nonisolated vertex v and put
   p=phi(v).
 Let t(v) be the number of ascending nonspecial edges terminal at v. If t(v)>0 let

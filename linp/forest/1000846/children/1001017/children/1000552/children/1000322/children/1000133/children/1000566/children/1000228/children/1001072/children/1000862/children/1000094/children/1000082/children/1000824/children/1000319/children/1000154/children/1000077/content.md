@@ -6,6 +6,7 @@ In the rigid zero-slack half-neighborhood branch, an alternate target port y is 
 
 ## Body
 
+
 Assume the rigid zero-slack half-neighborhood conclusion of 21fb5bf1458a for an alternate target port y. Thus A is a set of c/2 forest triples, y is adjacent in the DXX graph to every one of their 3c/2=k vertices, and y has no DXX neighbors outside their union.
 
 The fixed alternating witness uses exactly c-1 connector colors. Since the total color set has size

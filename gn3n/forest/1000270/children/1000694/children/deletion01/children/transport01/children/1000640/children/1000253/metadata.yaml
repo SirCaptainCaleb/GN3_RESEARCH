@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5a2ba6f16135a29db2a156fd82b577cae00608907efa3c73b762a1a9626ec473"
 created_at: "2026-09-28T17:01:32.975685+00:00"
 id: "1000253"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Opposite component-end hooks force a Hamiltonian five-window or a reverse cross triple."
+statement_sha256: "6620d99d3b934383a4ebed0038c1a85005925541018f6c94e02eab09cf918ef6"
 substantive_worker_ids:
   - 606
 support_reason: "current_certified_premises"

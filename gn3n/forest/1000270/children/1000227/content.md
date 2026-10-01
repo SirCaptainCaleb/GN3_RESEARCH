@@ -6,6 +6,7 @@ A direct induction would follow from a no-trapping theorem for near-spanning two
 
 ## Body
 
+
 # One-defect support reconfiguration
 
 This is an independent full-theorem route.

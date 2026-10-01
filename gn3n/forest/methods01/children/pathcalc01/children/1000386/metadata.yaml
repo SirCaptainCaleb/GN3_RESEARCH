@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "069089232c0a5bb80dbf4e20e1fe6ed4420915ac4b1a9548f0b16a2292f286b5"
 created_at: "2026-09-27T19:58:10.451853+00:00"
 id: "1000386"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two same-end extenders force Hamiltonicity or two reverse endpoint triples"
+statement_sha256: "3cf5d923c0d6fe6e9fe25970124db05cdb314dc8edeeb8dd8a69a67fbc153446"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

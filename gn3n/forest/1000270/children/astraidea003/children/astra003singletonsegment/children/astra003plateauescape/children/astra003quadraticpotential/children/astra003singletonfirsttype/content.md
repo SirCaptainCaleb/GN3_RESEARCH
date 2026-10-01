@@ -6,6 +6,7 @@ Let C=B|Q|{x} be a three-component cover in an Astra-003 move component containi
 
 ## Body
 
+
 # Singleton components at a quadratic minimum
 
 Let

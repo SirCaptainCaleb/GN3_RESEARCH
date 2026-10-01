@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 A finite boundary tournament has a spanning cover by at most two tight paths exactly when some spanning ordering has defect span at most two. Every minimum counterexample has minimum defect span exactly three: any exact deletion cover P|Q of H-x yields the canonical ordering P,x,Q with defects confined to the three join centers and with the two outer centers always defective; if all three join triples are defective, the five-vertex join window reverses to a tight path. Deletion covers can be compared through compatibility: at least max(4,q+2) pairwise compatible q-path deletion covers glue to a global q-path cover. Pairwise support-compatible exact two-covers localize to one non-Hamiltonian class X with many Hamiltonian vertex deletions and one inert Hamiltonian class Q. For a compatible pair, the two omitted vertices must insert into the same common class at identical or adjacent slots; separated slots glue, while adjacent slots force a reversing triple through the unique intervening common vertex.
 
+
 ## Body
+
 
 # Defect-span three and deletion-cover compatibility give the canonical global obstruction interface
 

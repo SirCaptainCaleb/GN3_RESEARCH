@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f14082198363c2128eb8ae17aa466bc5c576fc8642d7f0a4c11879e4f53397aa"
 created_at: "2026-09-25T20:50:44.92013+00:00"
 id: "1001028"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Fixed-cut backward collisions force square-root many edge-disjoint nonspecial cycles."
+statement_sha256: "cd1630bff3089165809bbb4c8511b228e3cffd3b9fe5225201150135af36e17c"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

@@ -72,3 +72,8 @@ Detailed lifecycle, publication, recovery, writing, and other specialized rules 
 SEMANTIC-CONTAINER UPKEEP
 
 Semantic containers are maintained opportunistically at low pressure, especially during elevation, audit, and reasoning-hygiene work that already exposes the relevant mathematical region. Fix clear representativeness problems when cheap; otherwise leave them for a later natural encounter. Do not create a dedicated scheduler need, recurring sweep, quota, or size target solely for semantic-container maintenance.
+
+
+ATLAS SEMANTIC STANDARD
+
+Treat the Atlas as a directional mathematical map, not a taxonomy. Except for genuine organizational roots, every semantic container should make clear the branch’s input state, strongest established output/mechanism, and next consumer or unresolved gap. Category-label summaries such as “results about X/Y/Z” are inadequate. When creating or refreshing container_text, write the mathematical transition represented by the branch so a fresh worker can understand how this region advances the proof without opening its members.

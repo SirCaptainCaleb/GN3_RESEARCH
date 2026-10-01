@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "64a1e70e35034dbfa7924fffcfd1ad8290873d03ba3d55eb4a6bc62c5526b758"
 created_at: "2026-09-28T02:18:38.358227+00:00"
 id: "1000750"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "All-equal support-triangle barrier branch: endpoint insertion or order disagreement closes immediately; otherwise synchronized endpoint barriers drive reverse hooks, mixed four- and five-path structure, support crossings, six-support families, and eventual relative-order disturbance."
 simplified_statement: "The all-equal support triangle yields endpoint insertion, order disagreement, or synchronized endpoint barriers"
+statement_sha256: "1fde3e568a89aedf838aef7bd32e12f4dd3a9fbe414f3d6107530184c9a2de09"
 substantive_worker_ids:
   - 660
 support_reason: "current_certified_premises"

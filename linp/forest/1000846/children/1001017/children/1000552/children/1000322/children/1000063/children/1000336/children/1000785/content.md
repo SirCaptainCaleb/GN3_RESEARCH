@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 In the setting of 68593c300c9c, let G(f,x) be the undirected graph whose vertices are the (q-1)-edge paths ending at x with last edge f, with two states adjacent when one is obtained from the other by an endpoint-preserving single-blocker rotation.
 
 (1) Every rotation has a canonical inverse. Every state has degree at least two, and after traversing any rotation edge there is a noninverse rotation available from the other free opposite endpoint.
@@ -10,7 +11,9 @@ In the setting of 68593c300c9c, let G(f,x) be the undirected graph whose vertice
 
 (3) Every chordless 4-cycle is supported in the first four path positions. From any base state P_0=(g_1,...,g_t), if its two incident square rotations delete g_i and g_j with i<j, then (i,j) is one of (1,2),(1,3),(2,3),(2,4); hence all four states share the tail g_5,...,g_t when t>=5. No such square is a connected component: at least one state has a non-x single-blocker rotation outside the square, and in pivot types (2,3) and (2,4) the blocker-universe argument forces the corresponding exit on each endpoint side.
 
+
 ## Body
+
 
 Fix P=(g_1,...,g_t) in the boundary fixed-target state space of 68593c300c9c, with fixed last vertex x and last edge f.
 

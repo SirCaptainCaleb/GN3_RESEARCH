@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "50f3af4c9cf49e7a8bdce44374963f4f28cbbcd90030825003af9771c03818c2"
 created_at: "2026-09-24T21:00:14.459263+00:00"
 id: "1000951"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-minimal switcher source mass forces linear terminal retention on both host halves."
+statement_sha256: "16a1c9158330f1b7baa214d59d082c444c0f1074d063396a5c68d2a2b026979a"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

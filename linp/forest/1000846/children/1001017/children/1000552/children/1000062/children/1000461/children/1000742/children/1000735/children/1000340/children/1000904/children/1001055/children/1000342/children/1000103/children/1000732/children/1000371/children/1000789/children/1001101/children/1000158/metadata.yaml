@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c08f06859a4416fc626452dc1a0c75f8afa92f7c5baf1dc9c51d361fbf8d89e0"
 created_at: "2026-09-25T20:13:45.334821+00:00"
 id: "1000158"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Lens-free 43/48 switching stability."
+statement_sha256: "432db05050772242de71666a6e86e5ef7051051d165d797a327b74c3d46919a5"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

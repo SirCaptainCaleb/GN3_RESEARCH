@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "16290a3780a655435a7299be6e278b40b6ec887effd12116bd2764b397690e0f"
 created_at: "2026-09-25T21:34:06.778431+00:00"
 id: "1000377"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Equality in the U_11 collision rank-sum bound has an exact central normal form."
+statement_sha256: "3f369acdeb235825f9e880b175c699492b9e1188a500a251ec01f6e38d578c4d"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

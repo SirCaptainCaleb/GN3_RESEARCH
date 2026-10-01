@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b30e8dba118a77ff786996ee57d1a3023fcb290fae60bea7d43540d8ca57d75a"
 created_at: "2026-09-21T21:15:23.092231+00:00"
 id: "1000591"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four ascending edges can share one last vertex."
+statement_sha256: "7e031cac139d87147b2fb08fed3dc972a0084f4d1781ef512f61115603c0c321"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

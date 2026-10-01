@@ -99,3 +99,8 @@ LOW-PRESSURE SEMANTIC-CONTAINER MAINTENANCE
 While an audit already requires close reading of a target and its surrounding support, briefly notice whether the effective semantic-container boundary and summary still describe that mathematical region. If an obviously correct, cheap organizational edit is available, it may be made non-substantively. Otherwise leave it unchanged.
 
 Container granularity or wording is not an audit pass/fail criterion. Do not delay mathematical verification to curate containers, do not manufacture packaging findings for ordinary granularity imperfections, and do not optimize toward a container-size quota. A materially misleading container may be repaired as ordinary organizational metadata when encountered.
+
+
+SEMANTIC-CONTAINER WORDING CHECK
+
+When opportunistically repairing a container during audit, prefer a directional mathematical summary: inherited assumptions/state -> established conclusion/mechanism -> enabled consumer or remaining obstruction. Do not replace a misleading container with a mere topic/category label. Container wording remains organizational metadata and is not part of the mathematical pass/fail judgment.

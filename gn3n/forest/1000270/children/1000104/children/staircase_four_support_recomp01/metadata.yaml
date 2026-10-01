@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0a4d0a3eb4e503c1cd464ab5216ed82fa3835fb676cda51141f1f6b0551709da"
 created_at: "2026-09-29T17:31:43.374006+00:00"
 id: "staircase_four_support_recomp01"
 last_elevation_revision: 8355
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every large staircase minimum has a Hamiltonian four-support with two-cover complement."
+statement_sha256: "d5ae9eff47d5f735be6f5b6706125e65cf94fb6a11b87fc2cf5040ae963f38b4"
 substantive_worker_ids:
   - 637
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f8c2f91dc3aeb6b4ca163971414fb5d0b504a90559d673d9ef60dfdae5c0d046"
 created_at: "2026-09-25T20:46:23.438651+00:00"
 id: "1000439"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A middle source-anchor return closes a rank-budgeted chord cycle."
+statement_sha256: "acd7810cd343997c1ac52cbaaddf5bc0fcb43ab17035bd891de90f45eabb868b"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

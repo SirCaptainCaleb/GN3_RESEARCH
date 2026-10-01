@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "e931adac7263344ded65e782a99d27e1585fc53d48e2a1f97ce8424c6461f239"
 created_at: "2026-09-28T17:07:32.075535+00:00"
 id: "1000324"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "If two incident edges are consecutive in an edge ordering and the induced boundary tournament has a spanning two-cover, then there is conjecturally a spanning two-cover avoiding the corresponding consecutive ordered triple."
+statement_sha256: "0e972375afb1156e22ca85cd6a52fe8b0447315ca4a82144e812d700423225fa"
 substantive_worker_ids:
   - 626
 support_reason: "not_a_proved_or_evidence_claim"

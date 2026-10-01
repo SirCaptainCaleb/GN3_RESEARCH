@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "f3f6d4b0567ef05a855624e7d4cacc382c26777b429d774af75a8b391b0a6c31"
 created_at: "2026-09-24T13:28:04.850423+00:00"
 id: "1000168"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Near-43/48 switching-stability program: near-saturated short anchors must overlap maximum terminal paths, producing large switching matchings and top-potential rotation packets that feed the paid 0-1-1 and strict-gap extraction machinery."
 simplified_statement: "Near-saturated short anchors force linear overlap with every maximum terminal path."
+statement_sha256: "7dfeb4804927ef999a6fe76ecfb744d0da0c3c41daf9957628f43e35623fb60d"
 substantive_worker_ids:
   - 258
   - 254

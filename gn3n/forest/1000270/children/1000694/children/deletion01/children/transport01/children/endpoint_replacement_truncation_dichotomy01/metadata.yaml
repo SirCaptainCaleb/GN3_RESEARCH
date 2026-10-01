@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "85f520d9eb63e1e930992a75db701fca7218254702b3708ebd790ce63d4df4d9"
 created_at: "2026-09-29T21:44:38.284531+00:00"
 id: "endpoint_replacement_truncation_dichotomy01"
 last_elevation_revision: 10497
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For any displayed tight path R and outside vertex w, either R+w is Hamiltonian or w is noninsertable everywhere in the inherited order; endpoint replacement is only a transport corollary."
+statement_sha256: "a8357909eeb20406d2a6e86df60dcb7fa011549d26c3225dce3265036669d03e"
 substantive_worker_ids:
   - 708
   - 926

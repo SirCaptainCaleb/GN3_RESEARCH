@@ -6,6 +6,7 @@ Before the 2026 general proof, simple square constraints and explicit Q_4--Q_6 a
 
 ## Body
 
+
 Feder--Subi 2013: https://doi.org/10.1016/j.dam.2012.12.025
 They call a two-edge-coloring of Q_n simple when no square has one pair of opposite edges in one color and the other opposite pair in the other color (equivalently, no alternating square in the relevant sense). Their theorem shows that every simple coloring has a monochromatic path between antipodal vertices, even without assuming antipodality. They also proposed the stronger 1-switch conjecture and proved it for n<=5. The reusable lesson is that a purely 2-dimensional local prohibition on squares can force a global antipodal connection.
 
@@ -19,3 +20,4 @@ LINP relevance. Three escalating templates are available:
 (2) finite cube forcing: prove a bounded-dimensional local configuration already forces the desired splice/path;
 (3) 2-complex test: fill local commutation squares and prove the resulting state complex simply connected, then use an antipodal component obstruction.
 These are potentially useful for product constructions, binary-coordinate blow-ups, or path-state graphs where changing two independent local choices gives a square.
+ 

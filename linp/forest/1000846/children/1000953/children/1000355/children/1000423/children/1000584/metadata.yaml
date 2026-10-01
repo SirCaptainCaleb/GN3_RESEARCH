@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "79795ac0f15162ca7857288c3e34baed230001b2ac58dc7513b07ef6e7765188"
 created_at: "2026-09-23T21:31:05.309012+00:00"
 id: "1000584"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The rainbow-six-cycle branch has one canonical chord matrix."
+statement_sha256: "c1e7ce85fd72fbe978d2976d82900c16d4ffed7931ac2cd9e3a4d6a14e79d3fe"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

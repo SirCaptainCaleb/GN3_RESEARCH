@@ -6,6 +6,7 @@ In the surviving one-low p=2q-3 0-1-1 state, the low opposite terminal cannot ha
 
 ## Body
 
+
 Retain the rising low-terminal branch:
   R=(r_1,...,r_{2q-2})
 is the chosen maximum path ending at C,

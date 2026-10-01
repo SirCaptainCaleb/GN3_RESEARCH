@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "82185bb45a20f847578b04e71c1b4ac4c534921262a5ed955327ef73b6521823"
 created_at: "2026-09-25T20:35:05.35621+00:00"
 id: "1000609"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Forward common-anchor chords pay quadratic deficit or source-rail reintersection."
+statement_sha256: "8457fa8f5710b334ace281e0c31c3d5562463985a98db6b95faf919487fa21c2"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

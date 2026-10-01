@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "22a7d6e592b076a7d33657a0fc117087cdc7274d95a2c36781cae0c460625fbc"
 created_at: "2026-09-21T20:22:44.298869+00:00"
 id: "1000657"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If two nonspecial edges share a terminal and the second has no larger rank, it must meet every corresponding longest-path witness in a second vertex; minimum-rank cycle edges therefore block both neighbors."
+statement_sha256: "50004f5f33c5ac331e929b42457981ec9093cdc4be2b511d9d6fdea2d696dc37"
 substantive_worker_ids:
   - 234
 support_reason: "current_certified_premises"

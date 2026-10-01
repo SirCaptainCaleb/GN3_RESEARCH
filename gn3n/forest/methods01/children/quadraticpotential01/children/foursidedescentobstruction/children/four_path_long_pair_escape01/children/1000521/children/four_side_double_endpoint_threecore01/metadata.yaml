@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fa7b43be185c587ced9b232e1f99e97bce0896a1715a235eaedf84bb8c4c44a0"
 created_at: "2026-09-29T18:54:47.661826+00:00"
 id: "four_side_double_endpoint_threecore01"
 last_elevation_revision: 8737
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The hard four-side six-set has two common three-cores extended by both long endpoints."
+statement_sha256: "7270f0eb0761a3ab7b86d0e9f864cd504af3e8c4046bc1a20e06dd30230ce0f7"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

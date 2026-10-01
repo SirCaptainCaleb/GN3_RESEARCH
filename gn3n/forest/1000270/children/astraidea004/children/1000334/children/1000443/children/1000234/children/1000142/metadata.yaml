@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "dc7e19c53e06370ed439861b40037d528fc5a29e6780cc6ba30a91c1978139cc"
 created_at: "2026-09-27T21:34:46.647659+00:00"
 id: "1000142"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Order-preserving near-longest paths admit a noncrossing omission-to-insertion charging"
+statement_sha256: "3f9cdbd3788757b36e9b593ffd3c6089d195dd461a55595a53fd91f885e29e55"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

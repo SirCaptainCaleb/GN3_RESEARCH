@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e3b9d692c803810a46d6e0e1c645b3d49c830d6e8433f192038d762c21db9109"
 created_at: "2026-09-29T05:28:41.936521+00:00"
 id: "deletion_connector_only18"
 last_elevation_revision: 7998
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Above order seventeen the deletion-state paired-obstruction menu reduces to an interval connector or an opposite endpoint cross"
+statement_sha256: "f5d32c3ea4caa9429fda6260bdd4549b37034a26d5df4ca5dde1509ff9f72c52"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

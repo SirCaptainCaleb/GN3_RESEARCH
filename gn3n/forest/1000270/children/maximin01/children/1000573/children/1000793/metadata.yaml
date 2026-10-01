@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "084d4c0c5fb41506af09c51fa7d02257e4c8d7e423c496607fa094d8adad95bc"
 created_at: "2026-09-23T03:43:29.565286+00:00"
 id: "1000793"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every two deep-central deletions force three crossings or explicit order disagreement"
+statement_sha256: "5b105f7a2013fabeeed280ec054b95e317ec7c01554a383b318e7f5adc06bdad"
 substantive_worker_ids:
   - 721
 support_reason: "current_certified_premises"

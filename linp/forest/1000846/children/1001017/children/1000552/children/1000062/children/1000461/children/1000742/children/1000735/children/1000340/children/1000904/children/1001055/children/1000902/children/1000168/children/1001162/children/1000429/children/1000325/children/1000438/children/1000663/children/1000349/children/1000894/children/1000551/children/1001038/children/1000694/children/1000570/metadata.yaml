@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7ed965dd14ac23b75f713c12245abbd888a0b1cf5be7b936f5cb0b1cf545aa86"
 created_at: "2026-09-25T11:32:28.887906+00:00"
 id: "1000570"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Local strict-gap congestion bottleneck: seek sublinear bounds for paid two-terminal-gap families using minimum-terminal packets and singleton-contact rank-sum constraints."
 simplified_statement: "Any sublinear local bound on the paid two-terminal-gap subclass breaks 43/48 saturation."
+statement_sha256: "45a2a7255c063bd59d22420122e66c9d4f08568c42bc99ab69147c82423cdf6c"
 substantive_worker_ids:
   - 264
 support_reason: "failed_or_blocked_premise"

@@ -6,6 +6,7 @@ There exists a 13-vertex boundary tournament H with a vertex x and disjoint Hami
 
 ## Body
 
+
 # Double-frozen enlarged supports are locally consistent at order thirteen
 
 There exists a boundary tournament H on thirteen vertices with a vertex x and disjoint six-vertex sets P,Q such that:

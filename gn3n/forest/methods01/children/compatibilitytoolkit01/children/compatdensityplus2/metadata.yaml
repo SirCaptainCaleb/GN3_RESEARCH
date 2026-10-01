@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a7595e15b2b8f3c1f741f7f201a3fffa25bba7b47620ffbeb2d84b48dad35378"
 created_at: "2026-09-27T00:57:42.206346+00:00"
 id: "compatdensityplus2"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Compatibility density is within two edges of the bipartite bound"
+statement_sha256: "02c9e82f1a9058198b698e7ecb5e69d98b4d46b793da39f45acb544891d6e337"
 substantive_worker_ids:
   - 607
 support_reason: "current_certified_premises"

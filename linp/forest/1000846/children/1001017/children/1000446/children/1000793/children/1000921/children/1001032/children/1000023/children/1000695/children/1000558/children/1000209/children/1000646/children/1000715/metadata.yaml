@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7fb5fd3c4ae05582567da37e8054608ae07600f8438cba4082b933bd8894768c"
 created_at: "2026-09-24T03:20:52.95381+00:00"
 id: "1000715"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The lowest Type-A potential level forces a large exceptional entrance set."
+statement_sha256: "a5712323d6d295751f9effe6e932a629bb32faf6efd1c39a4baea529aabc103d"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

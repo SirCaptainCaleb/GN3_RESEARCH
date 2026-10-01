@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "2c04449b8f69b546df8c24db6727a847eaa161b9957a40f85c23468fe5440443"
 created_at: "2026-09-24T13:55:42.72008+00:00"
 id: "1000543"
 last_elevation_revision: null
@@ -63,6 +64,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-equality forces linearly many cross-period double contacts."
+statement_sha256: "bc3852209ccf5b90be419945e2da91ab206c81f34cb99d99615a9d5bc0e4f35b"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "3d8494874f29e0fcf1d949f09ac58772a535e915b178b52c82de52decd601b00"
 created_at: "2026-09-28T03:14:41.690665+00:00"
 id: "independent_reconstruction"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every anchored four-window either descends, yields a bounded six-window, or has order at most fourteen."
+statement_sha256: "25e4ad0225f1dd64b1f70431dd276706000bb3d34c33f51de87164d21dacb35c"
 substantive_worker_ids:
   - 652
 support_reason: "current_certified_premises"

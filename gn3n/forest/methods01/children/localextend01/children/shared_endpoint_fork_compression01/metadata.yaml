@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "06b526770b49504c50b847e6d2ad6ef2d1246d62bd87ea5406028e6391f5e6c7"
 created_at: "2026-09-29T18:17:38.601537+00:00"
 id: "shared_endpoint_fork_compression01"
 last_elevation_revision: 10497
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two shared-endpoint Hamiltonian five-sets force a distance-one window or a forked opposite-end four-window pair."
+statement_sha256: "742ecae421ec98884027cda070cc20812650504d80660264ebc0e3a94a78f7d0"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

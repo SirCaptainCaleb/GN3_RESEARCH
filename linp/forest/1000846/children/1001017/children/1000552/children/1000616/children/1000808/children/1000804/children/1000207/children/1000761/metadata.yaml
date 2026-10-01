@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "be79476d81fbd08fbfdb1a6312251c7eb75250cfe27201809d99c7e73e34c6a6"
 created_at: "2026-09-22T08:28:05.141901+00:00"
 id: "1000761"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "The endpoint-state Minty route iterates nondecreasing-potential rotations until equal-potential recurrence must force blocker accumulation or spacing."
+statement_sha256: "8a08e1a44159f835f0483d10a7be2c14a686a39efc3de983ad37d0bb36921e20"
 substantive_worker_ids:
   - 205
 support_reason: "not_locally_certified"

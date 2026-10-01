@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0e95adb61b179660afbb399e6d9c2c7735bc3787f726abde0f72475248598f9a"
 created_at: "2026-09-29T19:05:38.187815+00:00"
 id: "local_four_allfour_interior_lock01"
 last_elevation_revision: 8737
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every four-side label is locked out of each long interior at a local minimum."
+statement_sha256: "d928b7b4da9bcb0c73d1a96af0658afc50a0bf32a463f2a65b07c438ca6e4a13"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

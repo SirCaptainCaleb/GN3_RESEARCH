@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2cd01d8d92f7b19a8da27adcf73ae265d2d19f52a20bc80a0a15102b4b9e49b1"
 created_at: "2026-09-28T09:56:33.131418+00:00"
 id: "1000539"
 last_elevation_revision: 0
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The tiny one-gap branch is already a Hamiltonian five-window or a bounded failed-insertion obstruction."
+statement_sha256: "175d7fd1d0600f22aef78e2707e8e61f0da6a36a370b2c39f8867c96fac48916"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

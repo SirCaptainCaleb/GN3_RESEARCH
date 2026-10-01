@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4aa68e60675a56b3b22e1c9f76692088018bff456f1d6d6ff194f9663cd885da"
 created_at: "2026-09-25T20:21:12.500628+00:00"
 id: "1000688"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Selected strict-gap edges split into same-terminal and uphill certificate classes."
+statement_sha256: "ade753ae6ce6864d75abed7aaed4052d4b100018b79f8dc5b4c9f5c647a0a4cd"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

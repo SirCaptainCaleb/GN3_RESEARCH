@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "69f6d7c37f8a7e91e42783b53045d8e5f966dbf3c01a1ce056465441a501ab04"
 created_at: "2026-09-27T01:50:16.844427+00:00"
 id: "compatneighborhood02"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Local geometry of compatibility neighborhoods: each neighborhood is a path/cycle system in which incompatible pairs localize at the anchor, high degree forces synchronized incompatibility bursts, and separated neighbors create long intervals of order reversal."
 simplified_statement: "Compatibility neighborhoods are unions of paths and cycles"
+statement_sha256: "fba3367c42f1a3f9f2c0dc1bbbc03703fd1da850bda29aed6af3c4c057a5b50d"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

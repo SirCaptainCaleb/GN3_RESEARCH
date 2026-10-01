@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a44c3d484d3e4f21bff0a73b0ed7735fda89fb0c78aba8603a25b59819a03f7f"
 created_at: "2026-09-24T05:08:56.874381+00:00"
 id: "1001157"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every top-boundary pattern containing d has a forced crossed-terminal orientation."
+statement_sha256: "b22075047bb3c752fa51815ea4219365a1763bc4995417c925607f5c09c00f9e"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

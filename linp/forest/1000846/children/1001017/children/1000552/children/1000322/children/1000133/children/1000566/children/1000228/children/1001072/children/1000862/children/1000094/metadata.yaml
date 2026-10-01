@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8dfd3266dbe222a09a040a4857eaa4759cc2cffd31fcbc54e98719738d435e94"
 created_at: "2026-09-24T02:11:13.909325+00:00"
 id: "1000094"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Color-complete critical-core slack program: translate the universal forest into a dense colored connector graph, with zero or near-zero slack forcing matching-like forests, rainbow expansion, entrance switches, and near-spanning path structure."
 simplified_statement: "Color-complete critical cores satisfy m plus 2c at most 2k."
+statement_sha256: "cb05228562f78a6b6d5a5f610573b632f1bf7afe473961c0ba89904eca9e1f21"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

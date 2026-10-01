@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "74a719e444fee19d45a4e030152506ce2b92679e7f284ce4fc72ca53f8d084ca"
 created_at: "2026-09-24T13:05:42.034061+00:00"
 id: "1000780"
 last_elevation_revision: null
@@ -54,6 +55,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Aligned potential mass earns a second copy of the fixed-entrance coefficient gain."
+statement_sha256: "ef5f85970555ed5a6a27600c0e7553f25677e37bc224f98555df88d84837e958"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

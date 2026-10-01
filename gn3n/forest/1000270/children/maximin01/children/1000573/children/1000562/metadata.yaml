@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "be0a5fe45cb73e7dea19a519b588c22a853c31e5dfabc2772ca44ccbaa5c53f2"
 created_at: "2026-09-21T11:27:35.884919+00:00"
 id: "1000562"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every six central deletions force three crossings or explicit order disagreement"
+statement_sha256: "a38e8b8b0983542bf32a435862b2b47755bf8f61e9d9b10ef0118fc80cc858ff"
 substantive_worker_ids:
   - 597
 support_reason: "current_certified_premises"

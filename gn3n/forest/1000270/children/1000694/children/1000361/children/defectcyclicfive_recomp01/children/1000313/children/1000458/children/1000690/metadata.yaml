@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "01c9e12645df0013cf87d77930ebb3879785dc89aabec0482b8c7333567646d1"
 created_at: "2026-09-28T02:19:01.795076+00:00"
 id: "1000690"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Deletion-state paired-obstruction reduction: from order fifteen onward deletion states enter four-side descent or a finite paired-obstruction menu, which is refined into interval connectors, opposite crosses, fixed-endpoint matching fronts, mixed support, and complete gap networks."
 simplified_statement: "Every deletion state of order at least fifteen enters four-side descent or the finite paired-obstruction menu"
+statement_sha256: "89ec1a431de6a274ce4133b2309687a79a030b3395dc8a2aebfee223484c6717"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

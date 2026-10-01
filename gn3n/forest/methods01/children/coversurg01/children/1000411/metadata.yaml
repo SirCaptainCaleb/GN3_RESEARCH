@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "93bb2e0ada5cd8b538db92fa1ee6a956dc7d4f96f51bcc9dc1a7eab14ccffbc1"
 created_at: "2026-09-27T14:23:21.291065+00:00"
 id: "1000411"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum-imbalance two-covers forbid every balance-improving Hamiltonian exchange"
+statement_sha256: "5eb31708d70ecae201f97568ab19b1da43be5d7065188c88f36b34041a1091ac"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

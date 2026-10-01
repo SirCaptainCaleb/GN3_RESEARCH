@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f8697a58b824167dd00a8f5d2faff36b6df523e5bf49ab2d0c69ec68176f7aec"
 created_at: "2026-09-24T12:43:51.346805+00:00"
 id: "1001055"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Exact transfer solution gives a rank-sensitive 43/48 bound."
+statement_sha256: "572c0352f7acfd8ed87ba271a4b3935c04bfe9f8779fa3c2a52318fe9d191f11"
 substantive_worker_ids:
   - 258
 support_reason: "current_certified_premises"

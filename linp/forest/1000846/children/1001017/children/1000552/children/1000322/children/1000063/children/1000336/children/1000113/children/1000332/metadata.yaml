@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "a697f50261e6c7b10548b64f0ccece1c548e1437e25db0cfef1ffbf22e260f34"
 created_at: "2026-09-22T04:38:51.994391+00:00"
 id: "1000332"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Consecutive private single blockers can occur on a longest endpoint path, so the proposed extension-forcing claim is false."
+statement_sha256: "7778dd00e16281f1febd8e665843c6e32db29661c40a09cae0f7642bec1e1e1e"
 substantive_worker_ids:
   - 205
 support_reason: "not_locally_certified"

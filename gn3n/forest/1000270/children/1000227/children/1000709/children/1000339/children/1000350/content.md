@@ -6,6 +6,7 @@ Let H be a minimum counterexample and H-x=P|Q an exact deletion two-cover with 3
 
 ## Body
 
+
 # Small deletion sides admit a clean support exchange
 
 Let H be a minimum counterexample and let

@@ -6,6 +6,7 @@ A viable induction for the dense-core all-special conjecture should carry two st
 
 ## Body
 
+
 The ordinary induction for the dense-core conjecture has a single modular defect. Put
   k_r=floor(2r/3)+1.
 Deleting one vertex from a critical spanning candidate at parameter ell lowers minimum degree by at most one. The comparison

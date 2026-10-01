@@ -6,6 +6,7 @@ In the extremal |D|=k critical core, with private slack sigma=2k-(m+2c) and join
 
 ## Body
 
+
 In the |D|=k critical-core normal form let F=H-D have m edges and c nonempty path components, and write
   j=m-c
 for the total number of forest joints. Let

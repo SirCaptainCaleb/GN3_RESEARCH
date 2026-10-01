@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "998be029b52fb50248d08c2a30149a5dd4e7d53cca843fe3175d48df3262ff4b"
 created_at: "2026-09-24T19:56:48.233748+00:00"
 id: "1000572"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every all-top edge manufactures a balanced endpoint lens."
+statement_sha256: "2853f89d2788a13e037b5f59c3ba9b7c115ed5097712176b0826d4639b627c2c"
 substantive_worker_ids:
   - 250
 support_reason: "failed_or_blocked_premise"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "eb280c19f8a63eba487c1df644f4386b0ae4ff7e673504cd834c38b1e2a02d13"
 created_at: "2026-09-29T19:33:37.297028+00:00"
 id: "local_opposite_extremal_matching_interfaces01"
 last_elevation_revision: 8911
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Local non-Hamiltonian interfaces force opposite-extremal matching blocks."
+statement_sha256: "b605041680eece4657ede1f630b74e5aef5262c194168f6eb841c4105070a11c"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

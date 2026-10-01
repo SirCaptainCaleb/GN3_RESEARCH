@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "55e5bb973697c0f5a8df8e22a103c79587b92b8257f6da1f4f2362212d933462"
 created_at: "2026-09-29T21:44:51.641807+00:00"
 id: "four_side_endpoint_overlap_transport_recomp01"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A four-side beside a path of order at least six has a complete endpoint-overlap transport menu."
+statement_sha256: "834c71b837863468373a7f0e6da9661add9e92a83c6c982d89413dc695e02ad1"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

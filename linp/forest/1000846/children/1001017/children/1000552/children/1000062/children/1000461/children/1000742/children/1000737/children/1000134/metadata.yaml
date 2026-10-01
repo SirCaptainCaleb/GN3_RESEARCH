@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0715c1177376ea141514019556f2bef06719df096453704a83b36a5089f31e0c"
 created_at: "2026-09-24T04:21:33.693752+00:00"
 id: "1000134"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Type-A terminal ranks either branch or form an exact ladder down to an exceptional entrance."
+statement_sha256: "0bf758bae742fb405b62dd6f437685fbdcf80bea1fd0610521a7d0762925360b"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

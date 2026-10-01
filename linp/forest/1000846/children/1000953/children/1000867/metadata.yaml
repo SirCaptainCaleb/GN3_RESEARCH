@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "12a3c1d92aabe9d761cde2da9ce55cd258eb34371886be534782fc8e92f828d8"
 created_at: "2026-09-21T18:56:07.14701+00:00"
 id: "1000867"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For every ℓ≥2 there is a P_ℓ-free linear triple-system component of density exactly (ℓ-1)/3, yielding ex_L(n,P_ℓ^(3)) ≥ ((ℓ-1)/3)n-O(ℓ^2)."
+statement_sha256: "34e762716340e601c67390266d29e109c545e3072bd874d2f1bbcf82a0b4f1b5"
 substantive_worker_ids:
   - 206
 support_reason: "current_certified_premises"

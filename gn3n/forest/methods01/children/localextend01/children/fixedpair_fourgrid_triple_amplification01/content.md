@@ -2,7 +2,9 @@
 
 ## Statement
 
+
 Let H be a boundary tournament, let a,b be distinct vertices, and let Y be disjoint from {a,b} with |Y|>=3. Suppose {a,b,y,z} is Hamiltonian for every two distinct y,z in Y. Then for every three distinct y,z,w in Y, either {a,b,y,z,w} is Hamiltonian, or at least one of {a,y,z,w} and {b,y,z,w} is Hamiltonian.
+
 
 ## Body
 

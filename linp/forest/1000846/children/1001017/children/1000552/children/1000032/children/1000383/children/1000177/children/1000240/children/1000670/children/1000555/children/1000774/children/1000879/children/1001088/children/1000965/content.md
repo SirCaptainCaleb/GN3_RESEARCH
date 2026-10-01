@@ -6,6 +6,7 @@ At phi(v)=2q-2, fix a maximum v-path and a charged rank-q edge e. Its entrance i
 
 ## Body
 
+
 Let v have p=2q-2, let e={x,v,u} be the charged rank-q edge, and fix a maximum path
   P=(g_1,...,g_p)
 ending physically at v.

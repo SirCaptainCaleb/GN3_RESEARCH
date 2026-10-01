@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Consider the standard doubling of an STS on an odd set U by a one-factorization on a disjoint set W of size |U|+1. If a spanning linear path uses a old blocks from U, then its mixed edges select a spanning linear forest on W with exactly a+1 components; each component is rainbow in the one-factorization, every color is used at most twice, and repeated colors occur exactly at U-joints between consecutive mixed hyperedges.
 
 In the binary additive doubling W=F_2^d with color(pq)=p+q, let M be the unused nonzero colors and R the colors used twice. Then
@@ -10,7 +11,9 @@ and the xor of all component endpoints equals xor(M) xor xor(R).
 
 In particular a=0 is impossible: it would give a rainbow Hamiltonian path in the additive one-factorization, but the xor of all nonzero colors is zero whereas the xor of the colors along a Hamiltonian path equals the xor of its two distinct endpoints and is nonzero. Thus every spanning path in the binary doubled STS uses at least one old block.
 
+
 ## Body
+
 
 Let P be a spanning |U|-edge linear path and let a be the number of old STS blocks it uses. Count joints of P lying in U and W. If b=|U|-a is the number of mixed blocks, incidence counting on U gives exactly 2a U-joints, hence |U|-1-2a W-joints.
 

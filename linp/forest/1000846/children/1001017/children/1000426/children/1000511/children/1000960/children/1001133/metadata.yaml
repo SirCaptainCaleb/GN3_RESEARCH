@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "02b8acc71ec90946c32841d8a6301df4c9671fafa3199e31b344c234f8b9e3ec"
 created_at: "2026-09-21T19:10:47.425985+00:00"
 id: "1001133"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If edge weights in a linear 3-graph have weighted vertex degrees at most D, then rank(N)≥3W/(D+2), hence W≤(D+2)n/3."
+statement_sha256: "7e2013669922644d25482f22409b1ce7f592d54a8b90c7ebe44d4d7b2dbfbc8e"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8955c4fac20526e72f1113432666225c7c8f7ded05209c2357b2193b559aee1e"
 created_at: "2026-09-27T21:16:57.69967+00:00"
 id: "1000092"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Some anchor has half-family incompatibility outside consecutive compatibility runs."
+statement_sha256: "771fd2e97a4640d205be1e5f5d7cd8b96efb3d6fbce35970f723c5774615cb41"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

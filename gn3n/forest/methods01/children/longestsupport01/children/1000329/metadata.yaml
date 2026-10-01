@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a8765e5b3a429ffa08a10714b7c33dd2a50686dd517f9ca896f34dcd6f386574"
 created_at: "2026-09-28T21:57:07.444937+00:00"
 id: "1000329"
 last_elevation_revision: 8453
@@ -40,6 +41,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every exterior vertex of a globally longest path reverses one displayed edge."
+statement_sha256: "94c2da2423a82c350baab6b7e7fe9cfcbd919abdc9d6f1ad3408fa63228ddbb7"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

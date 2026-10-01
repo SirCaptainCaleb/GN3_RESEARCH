@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "5a156fb88f684f1dc539cce5f6f6f083a4a70660ceeebd1c0d7ce4902c82dab8"
 created_at: "2026-09-27T00:00:13.197952+00:00"
 id: "1000695"
 last_elevation_revision: 0
@@ -31,6 +32,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: "Deletion-cover cocycle route: compare singleton-swap states around compatibility cycles, separate support-level consistency from genuine order defects, and reduce nontrivial monodromy to omitted-label gap transport and the two-core transposition residue."
 simplified_statement: "Deletion-cover consistency cocycle"
+statement_sha256: "806383d45e8fa03671372f06fbe30b9ad8402466f27c24f79077decb7937261e"
 substantive_worker_ids:
   - 559
 support_reason: "not_a_proved_or_evidence_claim"

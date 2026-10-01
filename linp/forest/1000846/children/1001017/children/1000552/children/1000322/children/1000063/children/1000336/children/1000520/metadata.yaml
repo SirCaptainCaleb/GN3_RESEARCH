@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "241eade7f6754871de8a5dbaee2b86dbce1ee9bbcaf7594e49581d0990d3eb7b"
 created_at: "2026-09-23T03:29:29.937057+00:00"
 id: "1000520"
 last_elevation_revision: null
@@ -55,6 +56,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A loss-one safe sink has a saturated maximum-degree-two blocker index graph and must expose either a lossless double-blocker rotation or a nonlocal double blocker."
+statement_sha256: "36db82243a61ab783a931d72f4cd7e8bcea3e34cef095faf73ade4bb6441d172"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "0425b61b130716842cf73074a094f3c698eed24bdd421c5c723eae5f102c900e"
 created_at: "2026-09-24T19:45:25.883182+00:00"
 id: "1000238"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Doubled rotation packets halve the endpoint-congestion penalty."
+statement_sha256: "bfee1506ef6c4a7b77e5d0e95fbfb1890e12fde7bb9c7d9c8c5fd55bd01f335c"
 substantive_worker_ids:
   - 242
   - 254

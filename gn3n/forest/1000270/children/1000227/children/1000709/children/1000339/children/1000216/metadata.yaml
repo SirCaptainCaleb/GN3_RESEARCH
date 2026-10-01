@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "596349fd971a26b3d36a7a1bba30f4b93d744a4fe972b83df7fbc14e4d85809e"
 created_at: "2026-09-28T17:04:26.38433+00:00"
 id: "1000216"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four synchronized omission labels force order disagreement or Hamiltonian six-windows at both ends"
+statement_sha256: "3e9edfedde22ea24641e714fb864e9774cec0daa17a7c131c3e6fd164a2d15d6"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

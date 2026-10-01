@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "562cd684b31ff886f662e8047f0ea02f725a03d88669f4f6197dd722780d574a"
 created_at: "2026-09-27T21:25:17.806607+00:00"
 id: "1000799"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Reduce the cocycle route to omitted-label gap transport"
+statement_sha256: "77676923511ac851abddcb77624586cb798c816ff7b5ec7b0c40be56b9bf6cd8"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

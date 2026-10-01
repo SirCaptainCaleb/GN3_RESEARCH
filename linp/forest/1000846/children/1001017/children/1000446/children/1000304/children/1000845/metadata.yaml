@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "94803d77c304d192f61e1616328da06c474ec9be489376b0b20d6a8632649223"
 created_at: "2026-09-21T20:25:17.412079+00:00"
 id: "1000845"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Ascending terminal graph need not be a pseudoforest."
+statement_sha256: "0154854191319f85446a542531ec662cb591c0f44165f13f0c7e35dc8aa17616"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

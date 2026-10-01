@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fc1c74d48f7ff6f746f9a450c3c0f16d5ca0f69899cfe7b7390337f286bed19f"
 created_at: "2026-09-20T20:19:19.406053+00:00"
 id: "ternary01"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: "Certified neighboring-model theorem retained for analogy/generalization."
 simplified_statement: "In any ternary path system with cyclic coverage and reversal symmetry, every exterior vertex has at least two insertion positions into a tight path, and every n-vertex system has at least 2^(n-1) Hamilton tight paths."
+statement_sha256: "007d3d09425fb44ef1ea9dbcf00475fef2647b95617fd9b8e50fb2f016f19cde"
 substantive_worker_ids:
   - 603
 support_reason: "current_certified_premises"

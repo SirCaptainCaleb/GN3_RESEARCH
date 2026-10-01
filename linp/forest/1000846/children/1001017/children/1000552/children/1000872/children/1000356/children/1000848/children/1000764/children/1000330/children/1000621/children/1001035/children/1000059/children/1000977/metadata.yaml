@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "9fb3730031556129738a0acfc45399b66c9323ee31c04c8667069c5ab3105cb9"
 created_at: "2026-09-24T05:56:31.587964+00:00"
 id: "1000977"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An equal-rank competitor does not automatically block a loss-one wrong-entrance precursor, because the shared terminal already appears in the precursor and prevents the proposed extension."
+statement_sha256: "030d936d3428392af1a41ef4c333dfb83c27225a4d1938b46a20b5f2e9780acd"
 substantive_worker_ids:
   - 185
   - 225

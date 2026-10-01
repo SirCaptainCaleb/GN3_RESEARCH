@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "07d241a1a518b7569a67819058df2c7de72fbca1f4700dbc5d281463eab7e6d4"
 created_at: "2026-09-22T04:35:06.381506+00:00"
 id: "1000016"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Boundary loss-one rotation program: the canonical two-state rotation exposes a fixed omitted vertex, whose attachment surplus, bridge splices, transfer cycles, and endpoint-preserving rotation graph are used to force escape."
 simplified_statement: "Every loss-one double-blocker splice at q=δ enters a canonical two-state endpoint-preserving rotation cycle."
+statement_sha256: "63760f8a81d614dc14cfd575f448a4d2c0817a70f4f5e7d21ec27ce1fe44ed4f"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

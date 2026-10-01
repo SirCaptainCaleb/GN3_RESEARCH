@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e0eeb330bc8108efb49c380566da21a8f35ab2d382dd4228421d8043725c2246"
 created_at: "2026-09-24T05:16:37.429216+00:00"
 id: "1000291"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "High entrance rails have exact clean interior bands and double-only terminal cells."
+statement_sha256: "546cbc7f84508cac27bfb1adf2050099beefef0db09525160172393360a4ce30"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

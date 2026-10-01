@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b0f41af86d08c5cfcea0cc71673b2b7b69af5ff5ff2c980ab9e2867fb7db020b"
 created_at: "2026-09-30T13:06:54.911014+00:00"
 id: "local45_endpoint_threeleaf_star01"
 last_elevation_revision: 10100
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Endpoint three-leaf route on a local 4|5 plateau: common five-set leaves rooted at both long endpoints lift to reachable four-sides and synchronized interior locks, then compress through common-core six-shell geometry or repeated long-interior obstruction."
 simplified_statement: "A locally minimal 4|5 plateau contains a three-leaf five-set star rooted at both long endpoints"
+statement_sha256: "e02c4d5453c7e164bbe3c0acc444deee33ca47f008eb368f6d6da66f6cfa9f43"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

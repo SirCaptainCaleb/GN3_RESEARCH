@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "8622601fae5ba8b71826343e84cebd1c115f5005fb90da1cddce203deda034cd"
 created_at: "2026-09-24T04:08:25.616869+00:00"
 id: "1000706"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Type-A saturation forces rank-preserving propagation to a second terminal edge."
+statement_sha256: "9098e4ae1112a598f22af0c3ebc3b1b00fd42a5b82f72f0b9087e961003e9da1"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

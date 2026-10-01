@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1a037939d54ad5d93566d1445262f7adcddad1b0d097c6a9f15db4700b65116a"
 created_at: "2026-09-24T18:19:53.216968+00:00"
 id: "1000619"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Maximum ascending-terminal rank is nondecreasing across a maximum-rank terminal edge."
+statement_sha256: "6f854d410e281e0a703785fdb0fa03a7511f68d7e691cfe35a8e97ed1f82ee1a"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

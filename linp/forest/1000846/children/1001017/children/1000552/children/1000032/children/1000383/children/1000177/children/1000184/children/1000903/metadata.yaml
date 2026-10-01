@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "0e07aaa0e69cdaa94693b11f058fd5cf25acaf8c1f73c662a0ec70c725c13c08"
 created_at: "2026-09-24T04:48:54.758057+00:00"
 id: "1000903"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Right-side high entrances obey a conditional left-prefix recoil and unconditional low-rail crossing."
+statement_sha256: "55cd24e34e8b2473fcfd9afaa8f59645f5f6c93d41e597d14d3e2aad3be1070d"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

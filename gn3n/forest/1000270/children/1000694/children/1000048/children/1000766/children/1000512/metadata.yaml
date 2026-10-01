@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "7fa35e9ece241f826e625cbf3d3221d8814e4a141ae954495d0cbe7256f2e2ea"
 created_at: "2026-09-27T19:14:09.046809+00:00"
 id: "1000512"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Compatibility components force a large canonical-state family or a large pairwise-incompatible deletion family"
+statement_sha256: "2f25fb8f9cc5b8e72532e96396c9a9778637e4c6643ea5f02d0d156985fae81f"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

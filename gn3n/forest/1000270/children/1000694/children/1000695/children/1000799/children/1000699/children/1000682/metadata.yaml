@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4404f5e3f47e8d5fee21a85222e8351a238702fa251fb0d0d1767404f1b35c46"
 created_at: "2026-09-27T22:01:19.300097+00:00"
 id: "1000682"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The two-core transposition forces a Hamiltonian five-kernel or one of two core-to-core transport triples"
+statement_sha256: "c5619b18f3bd14d3a30ef1ac396a6b0d089395a485d100a95422af98b19490fe"
 substantive_worker_ids:
   - 596
 support_reason: "current_certified_premises"

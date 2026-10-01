@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "9165b3d5034c99a0c4c23a3ae6da7870ee11755d200dde98164324737d7e8990"
 created_at: "2026-09-27T00:00:13.197952+00:00"
 id: "1000792"
 last_elevation_revision: 0
@@ -36,6 +37,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: "Route-specific work on converting fractional path covers into two-covers by simplifying crossing positive-weight path supports. Laminar mass-at-most-two covers round immediately, and laminarization would exclude the sharp half-order shell; however union-Hamiltonian two-support replacement and generic radius-two replacement are unavailable, so any successful transformation must use sharper optimal-LP, ordered-path, or nonlocal structure."
 simplified_statement: "Every minimum-weight fractional tight-path cover is conjectured to uncross to a laminar optimum, and every laminar optimum of total weight at most two is conjectured to be integral."
+statement_sha256: "693996444a9ae097cc426c805cd2aff633e38b305386688cdc9ef57fb060c4dd"
 substantive_worker_ids:
   - 610
 support_reason: "not_a_proved_or_evidence_claim"

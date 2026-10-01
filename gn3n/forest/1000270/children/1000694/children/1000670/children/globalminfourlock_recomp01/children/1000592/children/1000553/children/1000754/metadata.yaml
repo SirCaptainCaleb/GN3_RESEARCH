@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7424b115595d8af3bcc0c51b77538b0085b07dc7338f0ffdc7cc318dfa380281"
 created_at: "2026-09-28T02:23:39.184816+00:00"
 id: "1000754"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "One four-side label already forces a Hamiltonian kernel or doubled cross barrier."
+statement_sha256: "8933e3045d85c7f7c26664139567de627fc9315441969f0b802725d8ea758e61"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

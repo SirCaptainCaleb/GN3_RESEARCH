@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "975f8f1015c2769d3c39dbfb19d5d47e550ff10d164a2c9fc4d954e7293524c9"
 created_at: "2026-09-28T16:37:40.517301+00:00"
 id: "1000123"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A Phi-minimal 4|5|m three-cover has an endpoint exchange or two noninsertable small-side vertices."
+statement_sha256: "f27b1baa2455a53fae3295e779d60c19c9f81333b24318137aefdb88e40e37df"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

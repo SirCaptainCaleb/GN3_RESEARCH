@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "0d230f534387ffe5321828a12063772694232f3727f26b1a88f39e4afc8110fa"
 created_at: "2026-09-27T23:58:26.924222+00:00"
 id: "1000614"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Every fractional path cover of total mass at most two is conjectured to admit a laminar form that rounds to at most two tight paths."
+statement_sha256: "e15b5773c6beb08edfd4ee431b5137c84f8fd9821951808718fe8487cd53f1df"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

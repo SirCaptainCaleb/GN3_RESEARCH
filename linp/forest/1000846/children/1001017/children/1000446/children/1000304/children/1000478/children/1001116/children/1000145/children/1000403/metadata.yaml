@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8b72b384b0b4f014d8177e1bf37cf75dd579b2b326413a3edf3e10eb5799bcd2"
 created_at: "2026-09-21T22:32:55.118719+00:00"
 id: "1000403"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If the natural splice from a longest e1-path into the reversed tail of a longest e4-path is linear, then 2q2≥q1+q4+2, strengthened to +3 when x2 is private to one e4-path edge."
+statement_sha256: "d6b36e51682aab739eaebb82880f43477a53f64b582e63fb95be51284cd77db9"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

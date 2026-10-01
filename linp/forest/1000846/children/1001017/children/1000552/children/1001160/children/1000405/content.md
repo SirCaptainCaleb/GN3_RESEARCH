@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be an n-vertex P_ell-free linear 3-graph with m edges and s special edges in the snake digraph. Then 2m+s <= (2ell-3)n. Hence if s>=epsilon m-Cn for fixed epsilon>0, then m <= ((2ell-3+C)/(2+epsilon))n. Any fixed positive special-edge density improves the leading coefficient below 1, while unchanged unweighted snake-incidence counting cannot cross the 2/3 leading coefficient.
 
+
 ## Body
+
 
 Let b=m-s. Every nonspecial edge contributes exactly two snake incidences and every special edge contributes three, so |E(D)|=2b+3s=3m-b=2m+s. Since H is P_ell-free, phi(v)<=ell-1, and the snake indegree lemma gives d_D^-(v)<=2ell-3. Summing gives 2m+s<=(2ell-3)n.
 

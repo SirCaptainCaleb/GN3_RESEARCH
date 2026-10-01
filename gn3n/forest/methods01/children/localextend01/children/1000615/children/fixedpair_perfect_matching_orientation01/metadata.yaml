@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d65d0087375aec2b795cfc0ecd82641eeb16491238a5b55c343aaa396888ee53"
 created_at: "2026-09-29T21:01:48.20931+00:00"
 id: "fixedpair_perfect_matching_orientation01"
 last_elevation_revision: 9060
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A perfect matching in a fixed-pair extension graph is exactly the two orientation classes"
+statement_sha256: "c652d570c7c4b51263ec88724a26d9ca763c9e7974c9a21a63dfdc248a9a2285"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

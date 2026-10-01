@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "301c06c0d58bb56b7ec233d1b6f94e33ea37faf23ff58e28a65d89ebaf672510"
 created_at: "2026-09-22T17:38:20.321919+00:00"
 id: "1000585"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The 12-vertex punctured cyclic STS(13) contains a linear 5-cycle, so its finite-field additive blow-ups have paths of length 5q-O(1) and cannot improve the asymptotic one-third lower-bound coefficient."
+statement_sha256: "29cf162cd04e4b8cd14d35503cd08bcb356f2cb07e5c6bba0b83c8f894774ced"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

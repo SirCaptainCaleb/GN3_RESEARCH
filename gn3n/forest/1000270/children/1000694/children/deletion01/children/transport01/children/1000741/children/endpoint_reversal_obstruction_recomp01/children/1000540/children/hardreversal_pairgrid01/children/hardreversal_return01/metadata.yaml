@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2fc733d46a4b56bbeb6156f43fb199ef23a3c2d3ecc5d05f5903930cc93e4ba6"
 created_at: "2026-09-28T21:35:00.982022+00:00"
 id: "hardreversal_return01"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The unresolved endpoint-reversal residue returns to the bounded four-vertex classification."
+statement_sha256: "b3d3b953c9081a4baccd01d297bcfa023e7c95cb9ebf28cae44965e57f4ca157"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

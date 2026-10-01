@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5f097d511d1157b313b37919e7add04eb75e4ba0c1ef41de6a445e13a6f091aa"
 created_at: "2026-09-24T03:11:50.649863+00:00"
 id: "1001135"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At density-plus-one equality every maximum endpoint path has a special last edge."
+statement_sha256: "763d76147ec80b42bdf86d78714e0fe3753278cdbc4254730655f5a24b844a24"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "80854c94e9955ddb3b1e202e32608cc4ed473b0844832fbdc6ab8a1acb67f8ba"
 created_at: "2026-09-22T19:19:36.542408+00:00"
 id: "1000218"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the canonical loss-one two-cycle, an external edge through the fixed hole and the alternate omitted vertex restores a full (q−1)-edge x-ending path."
+statement_sha256: "69f2b5dbefbad8d450be03a98f9f111c59c954e33d95b8beeb6d895f6dc98444"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

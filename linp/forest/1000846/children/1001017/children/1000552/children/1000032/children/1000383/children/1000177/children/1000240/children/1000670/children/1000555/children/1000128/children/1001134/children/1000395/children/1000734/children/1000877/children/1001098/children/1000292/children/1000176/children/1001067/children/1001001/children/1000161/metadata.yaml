@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "753bf381b213b6b92306c8d3970a1d35ed22f95c8019c4b050152ce4e1694fbb"
 created_at: "2026-09-25T20:38:40.352904+00:00"
 id: "1000161"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Top-band common-anchor chords are controlled by opposite-end excess plus return cycles."
+statement_sha256: "71b317d97ced75c3638b891071b5a3ad9de294dc56850127db08592016cf0104"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Let C7 be the 3-uniform linear seven-cycle. In the diagonal product C7 tensor C7
 
 ## Body
 
+
 Write the vertices of C_s as joint vertices J_i and private vertices P_i, i in Z_s, with edge E_i={J_i,P_i,J_{i+1}}. Product vertices in C_s tensor C_s have four types JJ, JP, PJ, PP, with s^2 vertices of each type.
 
 Every diagonal-product triple comes from a bijection between two factor edges. Call it aligned if the private vertex P_i of the first factor edge is matched to the private vertex P_j of the second. An aligned product triple has type multiset {JJ,JJ,PP}. Every other bijection is crossed and has type multiset {JJ,JP,PJ}.

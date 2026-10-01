@@ -6,6 +6,7 @@ From the forced support crossing, order disagreement, or bounded local obstructi
 
 ## Body
 
+
 # Unsupported bridge
 
 Everything before this node supplies structure, not closure. What is still missing is a global theorem that consumes that structure.

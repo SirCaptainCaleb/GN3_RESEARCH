@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7563ab37a7bbd5a6951777e9a6ff42c1eb6cea4612655e93c9d46f60186339a3"
 created_at: "2026-10-01T01:06:53.879492+00:00"
 id: "reversal_cube_middlelabel_menu01"
 last_elevation_revision: 10414
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The alternating-path middle label x is either jointly exposed at the top cover, or the cube forces cover disagreement or a sharp universal-internal pattern."
+statement_sha256: "db6c92bac7b82346ca83a3881a854ee6c303e6636d240beaa1d067fe2df73278"
 substantive_worker_ids:
   - 745
 support_reason: "current_certified_premises"

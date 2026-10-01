@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "abf787bb6d24f7ec83ff8a158ef48507ecb7d9015445c40bcb343404ce03518c"
 created_at: "2026-09-29T21:30:06.287856+00:00"
 id: "brainstorm_endpoint_overlap_common_pair01"
 last_elevation_revision: null
@@ -28,6 +29,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Bad five-extensions admit overlapping four-paths with a common directed consecutive pair"
+statement_sha256: "c6852935f85d78eb15786f05b1b5655266adea20ae63469e7c04ff13b12d13f2"
 substantive_worker_ids:
   - 592
 support_reason: "not_a_proved_or_evidence_claim"

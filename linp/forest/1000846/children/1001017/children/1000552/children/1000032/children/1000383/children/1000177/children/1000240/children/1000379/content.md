@@ -6,6 +6,7 @@ If e={x,v,u} is ascending nonspecial of rank q, charged at terminal v with phi(v
 
 ## Body
 
+
 Retain the setting of 351720508b02:
   e={x,v,u}
 is a potential-charged ascending nonspecial edge of rank q,

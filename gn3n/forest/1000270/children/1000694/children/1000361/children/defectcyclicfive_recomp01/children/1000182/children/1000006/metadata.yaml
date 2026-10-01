@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1c1a8e4265f4f7f33aa97ac7b5fdf4c8d8ba56a42ba6db23807cf112b7ec9ea2"
 created_at: "2026-09-29T05:03:53.914679+00:00"
 id: "1000006"
 last_elevation_revision: 7998
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Minimum defect span three has no three-isolated-defect geometry"
+statement_sha256: "e661e0d1c9783313526ac704b3007286c3ff897c3c0e33aa4e6e6f74561721aa"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

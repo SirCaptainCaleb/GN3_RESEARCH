@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a5591e834bc294113f3613eca33d1a8942fb006dd0a48151c40b3dbb95cf9629"
 created_at: "2026-09-27T15:03:44.560898+00:00"
 id: "exchangegraphisolated01"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The success-only endpoint splice graph is isolated at every deletion singleton"
+statement_sha256: "5d44b6e13b989810528400169c2e226cdf97d76bdb6d5fff618ac6d80039b260"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

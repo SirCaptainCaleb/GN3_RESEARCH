@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "eb1f8aa284f537eff9118259930e0ddcd6714d01eeecbb38211dac2ca35fb1a4"
 created_at: "2026-09-24T05:32:11.845131+00:00"
 id: "1000365"
 last_elevation_revision: null
@@ -55,6 +56,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot."
+statement_sha256: "a44da9b2e3f42ed1e40b50d4a6dd32d53d9e51ee82f7a45c2ffb6c42e6f65169"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

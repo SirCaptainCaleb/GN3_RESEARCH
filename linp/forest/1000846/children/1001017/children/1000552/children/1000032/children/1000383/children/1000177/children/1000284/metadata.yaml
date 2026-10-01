@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "4160aa1e01bf5d7e39f6784471629bfa7e2e16ec1c247ca84dfbbe241f315522"
 created_at: "2026-09-24T04:53:48.03206+00:00"
 id: "1000284"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The proposed general-q mutual-blocking-rail lemma is false because a rank-(q+1) edge cannot terminate a maximum (2q−2)-edge path when q>3; the argument only applies at q=3."
+statement_sha256: "5ba154c41cf49556c143cae1999eff2df1dc882ebceb1965913ea7caf47a357a"
 substantive_worker_ids:
   - 225
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b44fdb8aaff360978319d7bd5d463d5fd97e8857fa64c321cf44bea702d28b96"
 created_at: "2026-09-21T18:56:07.14701+00:00"
 id: "1000952"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Cumulative snake-rank indegree bound."
+statement_sha256: "4c8a9f30bfb432e0a0b0478502b2e21742bf6e28a31c986ee4a4c17ecbb78000"
 substantive_worker_ids:
   - 206
 support_reason: "current_certified_premises"

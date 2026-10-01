@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cb050184b77c8f96949e7bfe597efe434064b8405e4d036b37d6b710bfd5153c"
 created_at: "2026-09-29T19:31:41.169289+00:00"
 id: "second_type_interface_matching_blocks18"
 last_elevation_revision: 8826
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Unresolved second-type endpoint interfaces form opposite-extremal matching-block four-sets"
+statement_sha256: "044571cb4621d5295e90876dd290962fd3f196426d1533f07abec624341833d6"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

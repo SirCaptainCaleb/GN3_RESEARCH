@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "bc2eb349481b684fda82f26beb6af38866a1912a6529494345f9c9d703bee2bd"
 created_at: "2026-09-24T14:00:44.007667+00:00"
 id: "1001076"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Overlap-maximal same-endpoint deficiency-d path pairs have at most d internal lenses."
+statement_sha256: "03f9fb66e735902abb32a7e4efe83b528b23b5764f56ac76b2b360fd4730fe43"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

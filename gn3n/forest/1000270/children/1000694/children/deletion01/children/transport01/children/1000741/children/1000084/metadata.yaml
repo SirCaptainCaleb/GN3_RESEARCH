@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "40685a476649da239a75d62d0a866fe5195e580bf98d374e7c063ecde947fa49"
 created_at: "2026-09-28T04:03:38.719208+00:00"
 id: "1000084"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Two universal endpoint hooks force a Hamiltonian five-window or an endpoint cross triple."
+statement_sha256: "a7f4599b00d83fc244f4f9364d095d3ed3c0f7864cf06cfaed24684b03e04c23"
 substantive_worker_ids:
   - 583
 support_reason: "current_certified_premises"

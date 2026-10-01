@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "72666adc5de22c74c704c7d1b33d49d4c2151bd22b76ce01d32dfa2fa3c68781"
 created_at: "2026-09-23T04:16:01.744922+00:00"
 id: "1000749"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Flat-transfer cycle escape branch: constrained ears on the q-cycle force a nontrivial target-preserving rotation and feed the sink-free rotation graph."
 simplified_statement: "An entrance-joint flat-transfer q-cycle has no clean ear at its second private vertex and therefore forces a nontrivial maximum rotation preserving the target edge."
+statement_sha256: "a81330dcb31ce645bee419eff4fd475cf1e17b1b6dbaf996149cbe17c8f26b57"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

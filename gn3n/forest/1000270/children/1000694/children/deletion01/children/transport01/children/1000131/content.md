@@ -6,6 +6,7 @@ A hypothetical order-eleven minimum counterexample has exact 5|5 deletion covers
 
 ## Body
 
+
 # Order-eleven stress test
 
 Assume, only for this testbed, that an order-eleven minimum counterexample H exists. The order-ten exact-5|5 theorem in the extremal Hamiltonicity module implies that every deletion H-x has an exact 5|5 cover. Fix x and write one such cover as H-x=P|Q.

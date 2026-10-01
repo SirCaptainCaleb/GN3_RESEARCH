@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "51bfd000acdb466d461c47f1e66ef676b66d69de65fc0f51e834252d70b0c3c0"
 created_at: "2026-09-28T00:53:17.745512+00:00"
 id: "1000104"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Global quadratic-minimum proof-rehearsal frontier: reduce a minimum counterexample to a small set of component-size regimes, convert staircase profiles into small Hamiltonian supports, reversals, or transport disturbance, and route the remaining near-balanced regimes into standard closure interfaces."
 simplified_statement: "Proof-rehearsal frontier: five surviving global quadratic-minimum regimes"
+statement_sha256: "0850ac0340df807882c01bf1e3eda52d26fdeecc35668c398cd0161e71af7d0e"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

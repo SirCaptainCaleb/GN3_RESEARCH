@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 In the boundary setting q=delta, suppose a loss-one x-ending path P' of length q-2 avoiding y,z has opposite endpoint a' with neither a safe clean extension nor a safe single-blocker rotation.
 
 Then d_H(a')=q and the endpoint fan is exactly saturated. In Type A with no singleton blocker, the double blockers use every blocker vertex; in Type A with one singleton, that singleton is x-type and exactly one blocker vertex is uncovered; in Type B, the two singleton blockers and the double blockers partition all blocker vertices.
@@ -10,7 +11,9 @@ Partition V(P')p_1 into the standard two-vertex cells A_i and form the double-bl
 
 If no double blocker gives a length-preserving splice, then J must contain a nonlocal edge joining A_i,A_j with |i-j|>=2. Equivalently, every loss-one sink exposes either a lossless double-blocker rotation or a nonlocal double blocker.
 
+
 ## Body
+
 
 Let C,S,D be the clean, single-blocking, and double-blocking counts at a' relative to P'. The endpoint-deficiency inequality gives 2C+S>=4, while disjoint blocker vertices give S+2D<=2q-6 and C+S+D=d_H(a')-1>=q-1. Combining these with the exact Type A/Type B alternatives of 87a6758ddc73 forces equality throughout.
 

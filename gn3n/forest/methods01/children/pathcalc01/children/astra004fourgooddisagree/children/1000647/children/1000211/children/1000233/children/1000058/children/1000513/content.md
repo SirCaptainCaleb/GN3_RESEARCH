@@ -2,7 +2,7 @@
 
 ## Statement
 
-Let H be a minimum counterexample in which every six-vertex induced subtournament is Hamiltonian. Let H-x=P|Q be any deletion two-cover and let P be either displayed component. Then at least one of the following occurs: (1) H contains a tight triple reversing an ordered edge of a tight path supported in V(P) union {x}; (2) H contains a Hamiltonian four- or five-vertex set W contained in V(P) union {x}, with x in W, such that H-W is non-Hamiltonian with path-cover number two.
+Let H be a minimum counterexample in which every six-vertex induced subtournament is Hamiltonian. Let H-x=P|Q be any deletion two-cover and let P be either displayed component. Then at least one of the following occurs: (1) H contains a tight triple reversing an ordered edge of a tight path supported in V(P) union {x}; (2) H contains a Hamiltonian four- or five-vertex set W contained in V(P) union {x}, with x in W, such that H-W is non-Hamiltonian with path-cover number two. 
 
 ## Body
 

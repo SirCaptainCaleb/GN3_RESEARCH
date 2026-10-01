@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "62b15ac7636a921ac51bc720ab45440b7cfd43d0d77a60dae3290851f7545282"
 created_at: "2026-09-24T02:58:56.77172+00:00"
 id: "1000698"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Potential superlevel cuts are controlled by the exact induced-core density defect."
+statement_sha256: "52d8bc6fee693ec1fd0e98ebb20b47dc21949c6ca1805b7ebb0abddecbfb4439"
 substantive_worker_ids:
   - 229
   - 207

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "11d92617ec852e1dc0d3cc7ab36a21e13aa682fa20b84f6fc2d239e5d7e79890"
 created_at: "2026-09-21T19:39:08.801156+00:00"
 id: "1000353"
 last_elevation_revision: null
@@ -32,6 +33,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "9ed1066aa1eab24e23d1fd1dfc25a39ccee7928ce3099a3a8ceaa1fadacd8d6b"
 substantive_worker_ids:
   - 262
 support_reason: "logical premise set changed"

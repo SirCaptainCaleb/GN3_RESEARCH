@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9d5fff49fc93be89ab3d5cae6da83304fe5b62b1357f5685e31120f03fb21312"
 created_at: "2026-09-24T04:21:22.572528+00:00"
 id: "1000375"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Clean terminal-left 4455 entrance rails are fourfold transversals."
+statement_sha256: "4b2cc9c61f5f81e3ef956a2b3d7bf83ef781b77e75416eb94bd7c576ba46270d"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

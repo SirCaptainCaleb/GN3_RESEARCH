@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5aa0c5a756d842a1b94539173a571c1819ef52f3ae3b0e5dcc7f783db31a7ede"
 created_at: "2026-09-24T14:10:51.516343+00:00"
 id: "1000967"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A terminal-retained switching endpoint recaptures its omitted entrance or the host endpoint on every maximum path."
+statement_sha256: "f76c51c7ce5f22ad24e22d0d26ab6fff59465a9e1da11e1bf2eeb885b79017cd"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

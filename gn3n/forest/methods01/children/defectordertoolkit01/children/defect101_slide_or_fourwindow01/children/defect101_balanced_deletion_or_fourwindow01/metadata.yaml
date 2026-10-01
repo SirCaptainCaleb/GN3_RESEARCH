@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7c2369662e2fbfc821d5adc9050c788c44aaea8e5687abb4911472c8311a0ccf"
 created_at: "2026-09-30T13:22:46.240015+00:00"
 id: "defect101_balanced_deletion_or_fourwindow01"
 last_elevation_revision: 9925
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A balance-minimal one-zero-one deletion state is balanced or exposes a positioned four-window"
+statement_sha256: "7e5a59af567f087da9f6c96df2a5f3f880058efff5c6611cb8a5eff1c90a6ca9"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ In the all-visible top-boundary q,(q+1)^3 gadget, if both joint slots a and d ar
 
 ## Body
 
+
 Retain the all-visible top-boundary four-slot notation, and suppose the joint slots a and d are both occupied by high entrances:
   h_a={a,v,z_a},   h_d={d,v,z_d}.
 

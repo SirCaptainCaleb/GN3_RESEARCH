@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9a6a3088c77e88406fa42514329d21b097a61d6b95cd059d7a5f3fcb37d97a25"
 created_at: "2026-09-24T21:59:03.14751+00:00"
 id: "1000337"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every aligned joint in a lens-free flat cycle lies in the late half."
+statement_sha256: "9edbbcfec3749ebb896d20e07f82976d12771e32d630a75434c1c4fe4cb46a87"
 substantive_worker_ids:
   - 249
 support_reason: "current_certified_premises"

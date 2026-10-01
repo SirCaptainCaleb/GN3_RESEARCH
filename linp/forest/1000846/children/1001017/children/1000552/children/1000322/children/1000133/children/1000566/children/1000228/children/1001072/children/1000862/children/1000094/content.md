@@ -6,6 +6,7 @@ In the extremal |D|=k color-complete path-forest normal form, if H-D has m edges
 
 ## Body
 
+
 Assume the color-complete path-forest normal form c15cf7354428. Let F=H[X] have m edges and c nonempty components. As in c45d6694704c, the number of forest-degree-one vertices is
   r=m+2c.
 

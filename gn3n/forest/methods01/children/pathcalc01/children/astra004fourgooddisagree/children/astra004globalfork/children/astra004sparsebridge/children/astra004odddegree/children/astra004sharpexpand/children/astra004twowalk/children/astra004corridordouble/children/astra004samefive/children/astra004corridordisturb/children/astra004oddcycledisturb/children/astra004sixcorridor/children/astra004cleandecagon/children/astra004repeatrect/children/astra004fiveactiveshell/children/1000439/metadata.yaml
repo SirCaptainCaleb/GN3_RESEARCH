@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "69961a482b562d9e66edd931238580e537e9b9047a7cd4250a94a9730331b980"
 created_at: "2026-09-28T15:20:34.311748+00:00"
 id: "1000439"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three same-core star supports exceed the sharp-shell longest order."
+statement_sha256: "44689351ef7e18dd10cd07871a5b7cdf6d15e529e357dff82ca8eee3e6c73493"
 substantive_worker_ids:
   - 706
 support_reason: "The sole maximality contradiction comes from the false unconditional extender theorem e425e6ca5fe0."

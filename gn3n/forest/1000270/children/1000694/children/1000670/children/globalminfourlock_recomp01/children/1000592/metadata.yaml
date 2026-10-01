@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e92396fcf7fe19989465ed2a8efeb8564e1ba009a32908195c532a67e597554d"
 created_at: "2026-09-27T17:08:49.189204+00:00"
 id: "1000592"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Rigid six-set and endpoint-grid branch at a global four-side minimum: cross-endpoint pairs form non-Hamiltonian six-sets, four-side labels stay noninsertable into both long paths, and endpoint-pair grids, doubled barriers, and imbalance gains drive the four-side/five-side continuation toward Hamiltonian kernels or order disagreement."
 simplified_statement: "Every cross-endpoint pair around a global quadratic minimum with a four-vertex component forms a rigid non-Hamiltonian six-set."
+statement_sha256: "b060221febd1ddaf23d9ed83b9e9120a90e2e92370754b82a0801ccfd4507bc0"
 substantive_worker_ids:
   - 616
 support_reason: "current_certified_premises"

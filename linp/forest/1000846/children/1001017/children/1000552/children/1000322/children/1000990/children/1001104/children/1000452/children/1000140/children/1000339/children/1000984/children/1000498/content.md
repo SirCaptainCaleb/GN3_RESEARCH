@@ -6,6 +6,7 @@ Let Z be pair-universal vertices in a linear triple system. For every A subseteq
 
 ## Body
 
+
 Let H be an n-vertex linear triple system and let Z be a set of pair-universal vertices: for every z∈Z and every x!=z, the pair {z,x} lies in a unique hyperedge.
 
 Fix any subset A⊆Z of size a with 1<=a<=(n-1)/2, and put

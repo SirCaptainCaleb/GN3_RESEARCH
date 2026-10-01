@@ -6,6 +6,7 @@ Periodic retrospective epoch 2 synthesized and closed.
 
 ## Body
 
+
 Synthesis at repository revision 3803.
 
 Evidence from the current retrospective window:

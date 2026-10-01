@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "743be1f82e89884a152f207b56475e59adb8eca395e6548ef6beaf1d7dae7d80"
 created_at: "2026-09-28T04:00:57.622588+00:00"
 id: "cube111terminalclosure01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "At a trapped quadratic minimum the {1,1,1} cube already yields a canonical closure input"
+statement_sha256: "63df59adea96744a2a8066799e9c0a79aba641d44acf2a90aa690e85a58dfe90"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

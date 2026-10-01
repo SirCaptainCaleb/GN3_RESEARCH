@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "d40f9e6f5b45283ff4d706f69db24de530b8e17457ca3f5ce7ec67a5829872e5"
 created_at: "2026-09-28T04:42:35.852545+00:00"
 id: "1000303"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Global minimum-side normalization has no terminal cross-triple residue."
+statement_sha256: "0ba5c577ef9d37c2862d76a89eced5b9d5eec9820535822cfc136bd86ca72ac2"
 substantive_worker_ids:
   - 583
 support_reason: "current_certified_premises"

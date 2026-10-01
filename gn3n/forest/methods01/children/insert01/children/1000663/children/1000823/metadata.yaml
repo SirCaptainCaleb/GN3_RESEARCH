@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ad249d420dabacee02f1089eec759abf49c0a1bbed1e8b537118d76c38ab9c4c"
 created_at: "2026-09-27T20:34:36.939115+00:00"
 id: "1000823"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A unique-crossing endpoint near-merge gives a balanced one-for-one migration or truncation noninsertion"
+statement_sha256: "417424c3716b30b951d35673035a51d56f42ddc23549e7901e06b1f377138cc6"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

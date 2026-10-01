@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1f610b76480248205967ff03d3f49eac283460d7e0fadba727e695a4522fa6a4"
 created_at: "2026-09-23T19:54:03.656817+00:00"
 id: "1000923"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Dense equal-potential obstruction reduces to a double-blocked fork or a four-edge charged configuration."
+statement_sha256: "154da9fe6c856007ce9285b0cadabd90714f2a1949acd0505bd7d9c72b95dc47"
 substantive_worker_ids:
   - 183
 support_reason: "current_certified_premises"

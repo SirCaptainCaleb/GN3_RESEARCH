@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "1245c3a6fd6f6af28510e636f6ceb58fce86149622e5e7efe53e38051a656bf7"
 created_at: "2026-09-28T03:13:30.881794+00:00"
 id: "1000389"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Large four-side escape package: above order fourteen a Hamiltonian four-side must descend, enlarge to a six-window, or create order disagreement; descendants turn six-windows and shared-endpoint exchanges into bounded migration and further escape."
 simplified_statement: "Above order fourteen every Hamiltonian four-side escapes by descent, a Hamiltonian six-window, or order disagreement."
+statement_sha256: "eb485486d415c49e1a528cf6a2f85edfe0b2300245d32505eb00c660d1003c75"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

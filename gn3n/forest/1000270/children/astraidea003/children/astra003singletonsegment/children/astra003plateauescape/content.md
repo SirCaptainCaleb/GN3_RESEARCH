@@ -6,6 +6,7 @@ In the reciprocal-one-crossing first form of f6cdd6346980, let C_x,C_m,C_y be th
 
 ## Body
 
+
 # Reciprocal singleton transfers cannot trap the Astra move graph at equality
 
 Assume the reciprocal-one-crossing first form

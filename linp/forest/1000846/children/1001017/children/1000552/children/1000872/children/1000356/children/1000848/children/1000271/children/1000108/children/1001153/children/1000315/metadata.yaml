@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "6d4823cba80e15b10e990bd08f4b7d6d36b52577601ea77d903125c86ba8613e"
 created_at: "2026-09-24T05:41:58.013763+00:00"
 id: "1000315"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A 0-1-1 low edge at the odd boundary is reciprocally central on its other terminal path."
+statement_sha256: "d6f2cad02f26f2578a73ab0c2b15269d3acbe48c5fa8fdccc106c68027089f24"
 substantive_worker_ids:
   - 185
   - 209

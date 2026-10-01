@@ -6,6 +6,7 @@ In the |D|=k critical-core normal form, let sigma=2k-(m+2c), where m,c are the e
 
 ## Body
 
+
 Assume the extremal threshold-set case |D|=k, and let F=H-D have m edges and c nonempty path components. Let
   r=m+2c
 be the number of forest-private vertices and define the private-vertex slack

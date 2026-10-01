@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7400f640b571077ccbda148623116fba939330d2bdeb49cb16365284ed073dfb"
 created_at: "2026-09-27T13:30:38.540602+00:00"
 id: "compatglobal9_38"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Nine deletion labels already force a completely classified incompatibility triple"
+statement_sha256: "40be5ad26392ec4c0ff1a83d857a42746b5d58f00ad5d2ec51cbd4e26b502d3f"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

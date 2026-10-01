@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "203e6047984a463dda4f3674bc07975294c14cbda83edaa4fda37713ce1a11ce"
 created_at: "2026-09-27T19:26:11.100943+00:00"
 id: "1000559"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A reversed component-end edge gives a two-cover, neutral singleton transfer, or strict quadratic descent."
+statement_sha256: "4a0e50eafc92e0047213a311f8b1aec71159ffcbbd251518a5fa71e91051e085"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

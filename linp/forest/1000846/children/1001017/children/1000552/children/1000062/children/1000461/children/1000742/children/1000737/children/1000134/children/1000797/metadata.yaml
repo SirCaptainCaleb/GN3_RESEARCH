@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "48060c691914162660aac741ad0c700c67112e68baeb1cd780f74d5fc06052ed"
 created_at: "2026-09-24T04:23:16.743268+00:00"
 id: "1000797"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "One exceptional entrance supports at most four Type-A ladder vertices."
+statement_sha256: "1ce5ae1b359b05a19cac9cf08d70a1232ccde666441cd123a1ed0b8eb3c9c0ee"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

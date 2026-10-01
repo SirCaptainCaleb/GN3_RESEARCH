@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "075b274c00a2b6b0ba52eee01168ee2311012a2b7db1724aee9b114a48efe745"
 created_at: "2026-09-27T20:25:32.59832+00:00"
 id: "1000067"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Anchor-neighborhood compatibility paths have bounded positional speed."
+statement_sha256: "48912f62a3e51dbb58cb092a61a7d29530877842a88d0e11c7db3bbc4dc66e59"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

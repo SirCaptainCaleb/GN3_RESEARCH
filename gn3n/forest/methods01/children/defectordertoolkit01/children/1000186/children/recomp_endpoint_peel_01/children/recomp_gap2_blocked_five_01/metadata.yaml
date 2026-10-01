@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5652c788c5ae4f80130cc5392cdb6ae63182313a1b932e57daffc305b2b6540f"
 created_at: "2026-09-28T20:44:24.716917+00:00"
 id: "recomp_gap2_blocked_five_01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The connector-free gap-two peel forces a blocked endpoint-transfer square and two order-incompatible five-paths."
+statement_sha256: "c68d4e4818872026bbfd0b0182198c122fdcc6455947c12213a6ed87affae526"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "6fae537bebd4b1198a2cc446b0202f6efbc5c0b38489e215109d4303a1176b62"
 created_at: "2026-09-24T03:03:47.20783+00:00"
 id: "1001032"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-minimum average potential forces simultaneous near-saturation of special and nonspecial incidence capacities."
+statement_sha256: "336a3d67d4e8c92ed6018ecfdf92c8507e2aa6db0aa449fd9c6e148983b4d9ab"
 substantive_worker_ids:
   - 229
   - 254

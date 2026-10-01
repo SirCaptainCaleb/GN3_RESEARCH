@@ -14,7 +14,7 @@ edges not contained in U; every such edge is a clean ear or one-contact chord re
 
 (B) q=ell-1 and U=V(H). In particular P is a spanning top-rank path and |V(H)|=2ell-1.
 
-Thus every nonspecial edge in a minimal counterexample either exposes a quantitatively ear-rich vertex on each maximum witness path, or is top-rank and has a spanning witness.
+Thus every nonspecial edge in a minimal counterexample either exposes a quantitatively ear-rich vertex on each maximum witness path, or is top-rank and has a spanning witness. 
 
 ## Body
 
@@ -26,4 +26,4 @@ By minimality of |V(H)|, G cannot itself satisfy delta(G)>2ell/3, for otherwise 
 delta(G)<=floor(2ell/3)=floor(2(q+1)/3),
 which gives (A), with the same external-ear interpretation as in 62ebb49a0efa.
 
-The only remaining possibility is U=V(H), yielding (B).
+The only remaining possibility is U=V(H), yielding (B). 

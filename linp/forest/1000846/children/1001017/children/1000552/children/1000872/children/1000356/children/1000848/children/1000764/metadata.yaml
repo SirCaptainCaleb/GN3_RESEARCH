@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "97e454b2f3219cf647768217ef458b048bd3ad0293dc68e2719113485dd841ee"
 created_at: "2026-09-24T05:20:34.679027+00:00"
 id: "1000764"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "The 11/12 quantitative branch: a defect-corrected consecutive-rank block reduces the remaining contact-snake obstruction to rigid odd central-boundary contact patterns and their local normal forms."
 simplified_statement: "A defect-corrected consecutive-rank block is sufficient for the 11/12 bound."
+statement_sha256: "111e32475bdae6094b7a37acdb9d1088f0b25ae7f0de4b0f8951276622d0d360"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

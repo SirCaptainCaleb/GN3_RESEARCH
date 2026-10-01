@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "0d80f94dc1b45873e56b59ca18396a1339626856385ca99ad04f756924297e95"
 created_at: "2026-09-24T14:03:37.87209+00:00"
 id: "1001163"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A clean intersection of crossing balanced endpoint lenses yields two new maximum host-endpoint paths."
+statement_sha256: "e1011dbf93f93cb345dcec827eabedf0d6dae84623063a60f13783c05d73fb0c"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

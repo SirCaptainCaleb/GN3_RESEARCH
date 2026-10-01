@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "bb281ea149280f0923c36546f8d701cebd5f4c715e8668d4a60f8138af2f96bb"
 created_at: "2026-09-26T20:15:22.014775+00:00"
 id: "astra004rectdescentfan"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The central-reverse-triple rectangle has eight strict quadratic descents."
+statement_sha256: "401035e5ce3f9a1a48a9c4df6268644c70a56f8346baec2fe8cd9ee50d57c43f"
 substantive_worker_ids:
   - 642
   - 588

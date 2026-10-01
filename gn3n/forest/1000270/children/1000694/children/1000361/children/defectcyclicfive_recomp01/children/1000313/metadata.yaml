@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ab345af5e8000303b83abe2436cd1eddfa6d3561a6dd54de9c334432c6f4d9a6"
 created_at: "2026-09-28T01:27:23.844496+00:00"
 id: "1000313"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Nonmatching cyclic-certificate double-wrap branch: proper nonmatching run types admit a rotation with two wrap defects, producing a four-vertex tight support with two-coverable complement and feeding deletion states into central/outer bridge, paired-obstruction, transport, and gap-network reductions."
 simplified_statement: "Every nonmatching proper cyclic defect certificate has a double-wrap rotation"
+statement_sha256: "90b3ee53579fe47fce6408a82fd98fdc73e0843ffd4129b61630e2085596b736"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

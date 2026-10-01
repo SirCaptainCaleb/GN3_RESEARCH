@@ -6,6 +6,7 @@ audit_requested: true
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "1156115142474e99ce6433f07ff03e45b8145928e9f4e947f11224494605483d"
 created_at: "2026-10-01T13:56:39.996782+00:00"
 id: "1000910"
 last_elevation_revision: 0
@@ -30,6 +31,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A one-gap lower square either yields a positioned small Hamiltonian window or routes its singleton gap through the opposite top component."
+statement_sha256: "89907cb4add2828d93231c140049a0c470c325bf19bc156fc984482b931e0ce0"
 substantive_worker_ids:
   - 1062
 support_reason: "provisional_unaudited"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "fc94734e1f2629d865873f36dddc5a5d9de2a2c29a979fd418dd4acfb2aeb685"
 created_at: "2026-09-20T19:49:08.718337+00:00"
 id: "definitions01"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: null
 semantic_container_text: "Foundational definitions and path conventions for the boundary-tournament program."
 simplified_statement: null
+statement_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 substantive_worker_ids:
   - 673
 support_reason: "not_a_proved_or_evidence_claim"

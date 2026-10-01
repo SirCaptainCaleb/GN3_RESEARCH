@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample. Let mu be the minimum smaller-component order among exact two-covers of one-vertex deletions, and rho the maximum minimum-component order among spanning exact three-path covers. Then rho>=min{4,mu-2}. Hence mu>=6 implies rho>=4. Moreover mu>=6 forces |V(H)|>=13; if |V(H)|=13, then mu=6, every exact two-cover of every vertex deletion has orders 6,6, the maximum tight-path order is exactly six, every seven-vertex induced subtournament is non-Hamiltonian, and rho=4.
 
+
 ## Body
+
 
 # Minimum deletion side controls maximin, and the first large-side shell is universally 6|6
 

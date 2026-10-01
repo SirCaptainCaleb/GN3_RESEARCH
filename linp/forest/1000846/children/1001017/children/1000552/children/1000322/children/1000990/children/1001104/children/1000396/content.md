@@ -6,6 +6,7 @@ For an exact-density system with n=6d+1+s, define k_v=(d_U(v)-s)/2. Then k_v is 
 
 ## Body
 
+
 Fix ell>=4 and d=floor(2ell/3). Let H be an exact-density linear triple system with
   |E(H)|=d n,
 write

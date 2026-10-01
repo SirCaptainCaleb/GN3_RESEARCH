@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ff70b2b1262c774da1c7d08e93a2b03fae4e2165fbf164fe6e83d0e726d977a7"
 created_at: "2026-09-27T00:54:15.50085+00:00"
 id: "1000161"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Equality-two-crossing separations have a global support normal form"
+statement_sha256: "b9e3c057507dbf11617fd9c419f38cbdb2f221314abcdd8a8a3e7e90743cbfdd"
 substantive_worker_ids:
   - 717
 support_reason: "current_certified_premises"

@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample and let C=X|P|Q be a Phi-minimal spanning three-cover in its pairwise-repartition component, with
 X=U disjoint-union {a,b,c}, |U|=3,
 P=(e,M,f)
@@ -24,7 +25,9 @@ the terminal-end version exchanges a with e.
 
 Thus the common-endpoint residue of two adjacent neutral shell swaps is not stationary: absent order disturbance it produces a genuine singleton support swap.
 
+
 ## Body
+
 
 Treat the case in which b and c both extend the initial end of the common tight path K; the other end is symmetric. Because the common K-order contains M in inherited relative order, K is obtained by inserting a into the displayed order M.
 

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "06adb189f9991ff2f85a1780bd1f0e8973520db36b9c3af8f16fca0d1a40e189"
 created_at: "2026-09-25T21:29:35.7775+00:00"
 id: "1000260"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Triangle collisions force distinct host edges at half the owner edge rank."
+statement_sha256: "61c9d9213a803f64db5ae403b7a23e472b22e8b2596494dc73b7df32fe8914b3"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

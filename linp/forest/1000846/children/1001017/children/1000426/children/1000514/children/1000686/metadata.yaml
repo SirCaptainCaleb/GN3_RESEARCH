@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5923a499eaef488c3aeaa99bd37f6f204bb748c9c8daaf41c92d7c450161ae5a"
 created_at: "2026-09-21T19:47:36.024086+00:00"
 id: "1000686"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Nonspecial-edge incidence columns need not be independent: an explicit six-edge configuration with intersection graph K_{3,3} has a nontrivial signed column dependence."
+statement_sha256: "41c47a89be35dd7cf61cfcae46c1fe5cc42b7b42202cddc9af7be61aa8ae30fb"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

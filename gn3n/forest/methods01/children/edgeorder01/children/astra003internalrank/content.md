@@ -6,6 +6,7 @@ Let K be an edge-ordered K4 on {v,a,b,c}. Suppose a-v-b-c is an increasing Hamil
 
 ## Body
 
+
 Let the six edge ranks be denoted by
 
 x=av, y=vb, z=vc,

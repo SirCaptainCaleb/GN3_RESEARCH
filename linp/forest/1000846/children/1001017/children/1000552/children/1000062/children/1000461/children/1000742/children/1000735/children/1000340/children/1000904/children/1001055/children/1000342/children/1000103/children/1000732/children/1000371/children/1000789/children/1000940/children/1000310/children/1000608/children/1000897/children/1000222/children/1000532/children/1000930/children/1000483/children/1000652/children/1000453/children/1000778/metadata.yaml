@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "decae8611b62c52e181319c8c08db80a9bd90f150ed103c76c6ddf98b8001cbd"
 created_at: "2026-09-25T20:48:48.07214+00:00"
 id: "1000778"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A saturated nested collision chain packs linearly many edge-disjoint linear cycles."
+statement_sha256: "49464bda8f5202882f97d260bc02414e0cc6333c7624cb07fcb6c209a6d7b66c"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

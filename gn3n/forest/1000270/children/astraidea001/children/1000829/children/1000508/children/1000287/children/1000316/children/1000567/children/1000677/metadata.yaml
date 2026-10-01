@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "aa2825bc1f98dfcb6d114a7f90df02a34a4490e5ca3f7ba321c3f6f322507981"
 created_at: "2026-09-27T17:02:32.080927+00:00"
 id: "1000677"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A singleton-transfer replacement either stays in the larger component or escapes to a component of size at least the pair sum plus one."
+statement_sha256: "b830366f828992171bb8a861261e4a62d13d1d4fda083ceecf76fcb9d9ce683c"
 substantive_worker_ids:
   - 627
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Let H be d-regular on 2d+1+s vertices and let e be a nonspecial edge of global m
 
 ## Body
 
+
 Let H be a d-regular linear 3-uniform hypergraph on n=2d+1+s vertices, where s>=0. Let e={x,y,z} be a nonspecial edge of global maximum rank d, with unique entrance x, and choose a globally longest d-edge path
   P=(g_1,...,g_{d-1},e)
 ending in e through x. Put

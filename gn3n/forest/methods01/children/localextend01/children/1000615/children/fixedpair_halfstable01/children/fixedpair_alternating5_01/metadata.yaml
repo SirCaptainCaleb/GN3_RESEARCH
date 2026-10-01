@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "49837b32e58b2cb89bf6350b07454af183558499b7b07673c18589a59d8d1d00"
 created_at: "2026-09-29T01:02:08.003011+00:00"
 id: "fixedpair_alternating5_01"
 last_elevation_revision: 8355
@@ -42,6 +43,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Prescribed-pair alternating-five toolkit: every prescribed pair sits in an alternating Hamiltonian five-set with a stable complement family, yielding three-side realizations, deletion cubes, descending small-side moves, and reversal-carrying stable shells."
 simplified_statement: "Every prescribed pair lies in an alternating Hamiltonian five-set with a stable three-label complement family"
+statement_sha256: "1b4885e171714c69c6a45fc4fba98e9e18e56a179ed38a74a44c55500c72d88d"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

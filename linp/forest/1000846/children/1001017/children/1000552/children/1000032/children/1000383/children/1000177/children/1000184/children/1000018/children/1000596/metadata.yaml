@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "ed8bcddedaad41b8a524232ebc39f917c59a8659900c2d1319fb3c51cc500574"
 created_at: "2026-09-24T04:59:57.935164+00:00"
 id: "1000596"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The half-rank four-slot gadget has a three-edge conflict graph with forced cross-blockers."
+statement_sha256: "4e5018713c2552fececd46213b5a812c83a58f46bad4e6ce5f265acea8aca8ab"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

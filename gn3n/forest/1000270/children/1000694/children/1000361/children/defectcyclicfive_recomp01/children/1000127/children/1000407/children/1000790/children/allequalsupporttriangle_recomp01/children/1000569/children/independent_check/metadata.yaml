@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3c9946982ea3f92b27ee083ec6857ab882c2430a9f813a752d9122c2b729a2ee"
 created_at: "2026-09-28T03:10:21.408331+00:00"
 id: "independent_check"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "All three all-equal support paths have explicit endpoint-edge reversals"
+statement_sha256: "d4bb714007ec589ec7d3b983a13bd2a1aff51ac4eecd3bac90ef3c13264ffd93"
 substantive_worker_ids:
   - 652
 support_reason: "current_certified_premises"

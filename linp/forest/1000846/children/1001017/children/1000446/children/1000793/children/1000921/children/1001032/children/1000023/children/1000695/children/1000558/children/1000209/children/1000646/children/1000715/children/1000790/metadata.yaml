@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 7
+body_sha256: "ba0dfb0f4b20c48fc80206f52f7a14b3bf0e5b26f94787ead8144830e09b3ce6"
 created_at: "2026-09-24T03:27:46.46048+00:00"
 id: "1000790"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Minimum degree gives an additive gap above the seven-sixths potential floor."
+statement_sha256: "264c224951f6df9563ad939d06b4b088c3bacb2729f0dcb748c6834db4a6c460"
 substantive_worker_ids:
   - 229
   - 254

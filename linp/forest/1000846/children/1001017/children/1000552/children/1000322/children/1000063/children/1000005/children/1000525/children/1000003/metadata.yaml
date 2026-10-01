@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a0bd46864eb50d65980c22a2bef080ca916ba93e094c823e0eca6c485ed69990"
 created_at: "2026-09-22T05:53:05.326302+00:00"
 id: "1000003"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "There is a 9-vertex linear 3-graph with maximum path length 3 and a maximum-rank nonspecial edge for which every longest ending path has both opposite-end free vertices of degree 3>2."
+statement_sha256: "4602d9f80ab19983f12d093c17412d85036f68b5dfdaf708c6f90ebf36bafa60"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

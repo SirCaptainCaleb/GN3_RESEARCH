@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "fb88e4641fb01197f8dbc1f24bb1ed74f83c1130783c655c3d318d67db790c5f"
 created_at: "2026-09-23T03:51:02.007659+00:00"
 id: "1000191"
 last_elevation_revision: 0
@@ -52,6 +53,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Minimum deletion side controls maximin, and the first large-side shell is universally 6|6"
+statement_sha256: "6cc09b95ceb74806a6631228c0d9e3a30e7f5921065d3193c438c07df58c78ce"
 substantive_worker_ids:
   - 721
 support_reason: "current_certified_premises"

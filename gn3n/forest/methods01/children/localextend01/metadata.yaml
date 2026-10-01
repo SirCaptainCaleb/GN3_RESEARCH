@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 9
+body_sha256: "ad51adf1c4e54214dd976ee8deb15ee6f4c0d7ca6a3aca9eec7c26331acbb026"
 created_at: "2026-09-20T20:51:30.218035+00:00"
 id: "localextend01"
 last_elevation_revision: null
@@ -36,6 +37,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Local Hamilton-extension and match-set calculus: extension shells, common cores, endpoint-pair families, small Hamiltonian windows, local repartitions, and bounded lock/barrier alternatives."
 simplified_statement: "Bad extensions, match sets, and parallel-middle configurations around short tight paths obey a reusable local Hamilton-extension calculus."
+statement_sha256: "f3c039e33bc906be9ad405c059d620853fe8e57ee538aa0d86b8b1bb7361fc65"
 substantive_worker_ids:
   - 603
   - 668

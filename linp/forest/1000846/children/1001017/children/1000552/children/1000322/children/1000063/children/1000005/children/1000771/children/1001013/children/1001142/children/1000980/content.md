@@ -6,6 +6,7 @@ For a surviving block e in a matching deletion of cyclic STS(13), the six explic
 
 ## Body
 
+
 Keep the notation and six endpoint-path families from fb007f7c4b89.
 
 For A_0, the six paths have entrance labels

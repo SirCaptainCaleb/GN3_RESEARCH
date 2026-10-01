@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8d26dfb52da52c783768d7f04b1f2c0c0aedc60ffbd7467806a4b9a158369c04"
 created_at: "2026-09-24T22:13:14.436992+00:00"
 id: "1000333"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Adjacent R-contacts either pay length deficit or saturate the Q-segment with common vertices."
+statement_sha256: "55d96b8aaea305adcf188d35c722a926d5095047770d06ef7dc79a1fe54f5dac"
 substantive_worker_ids:
   - 249
 support_reason: "current_certified_premises"

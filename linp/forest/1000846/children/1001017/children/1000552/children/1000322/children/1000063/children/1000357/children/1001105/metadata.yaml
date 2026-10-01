@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "055a516f1f18cc280c77e6d6d7fe29bcd8cdb99fd0d7bb9e3684dad68785cc3f"
 created_at: "2026-09-21T22:59:43.061563+00:00"
 id: "1001105"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum degree forces ascending edges to have large φ."
+statement_sha256: "32d31b902e74107c493ef4338e56a168888394846e11216c6ffaa03f18628e4f"
 substantive_worker_ids:
   - 262
   - 234

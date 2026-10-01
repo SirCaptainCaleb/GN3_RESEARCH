@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c5cb50789d55c09539716804899703f7c679e171c39105ba375c4a962160777d"
 created_at: "2026-09-28T03:58:48.056249+00:00"
 id: "1000003"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A one-gap deficit-one residue is bounded or exposes a standard paired-noninsertion witness."
+statement_sha256: "55ae6a5a5b4a32b766d4794d3e924dc9a88eefc20bdb4ec79e992fee386c6c3b"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

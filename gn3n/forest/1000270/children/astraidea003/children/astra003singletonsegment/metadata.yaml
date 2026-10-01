@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a6e5d210f54771f96861f7402fc17a898be7b4dcadb3ba451fa04537af34c108"
 created_at: "2026-09-26T01:52:28.407833+00:00"
 id: "astra003singletonsegment"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Astra pairwise-repartition singleton-transfer program: singleton residues generate a long reconfiguration line through plateau escape, quadratic minimality, endpoint transfer, balanced small-order shells, and eventual obstruction or connectivity results."
 simplified_statement: "Singleton-transfer endpoint residue is a two-step Astra repartition segment."
+statement_sha256: "55cb6119fa2dfd901ecaca6fbb0186e7089040ad293e360a0a8bea0255e04c33"
 substantive_worker_ids:
   - 561
 support_reason: "current_certified_premises"

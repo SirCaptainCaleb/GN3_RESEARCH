@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c549db9d3237c31b0130b03a7a557f109287161c36bae4eddae0930bb010e454"
 created_at: "2026-09-27T15:04:53.596744+00:00"
 id: "1000316"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Sharp half-order shell support-incompatible pairs are crossed or generate a deletion edge joining the selected components."
+statement_sha256: "1e6c1df535d079f012e76b4be68cca080ffbe8742f4a1e70ff134f70773e3468"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

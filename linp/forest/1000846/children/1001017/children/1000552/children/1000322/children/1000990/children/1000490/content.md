@@ -6,6 +6,7 @@ In the simultaneous strengthened S_ell induction, after the strict layer is excl
 
 ## Body
 
+
 Work in the simultaneous induction for the strengthened assertion S_ell, with
   d=floor(2ell/3).
 Assume the strict layer has already been excluded on the current vertex size using the smaller-order induction, so let H be a vertex-minimal counterexample to S_ell with exact density

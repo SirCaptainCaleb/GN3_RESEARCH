@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let e={x,v,u} be an ascending nonspecial edge with unique entrance x and edge rank q. Let
   P=(g_1,...,g_p)
 be a maximum endpoint path with last vertex v such that u belongs to V(P) and x does not. Assume
@@ -32,7 +33,9 @@ and phi(z)=p-1.
 
 Thus, after excluding cycles, further forward intersections, edge-rank rise, and host edges contained in V_{>=p}, the only remaining shared-last-edge state is the flat rank-p ascending orientation.
 
+
 ## Body
+
 
 By a959e02faa1b, P and Q have at least two common vertices. Apply 41100a9882dd with endpoint u of Q lying on P. Either P union Q contains a linear cycle, giving (C), or the last edge h=f_s of Q is an edge of P. Since u is a last vertex of Q, u belongs to h. The edge h cannot be g_p: both e and g_p contain v, while u belongs to e; if u also belonged to g_p, the distinct edges e and g_p would share u and v, contrary to linearity. Hence h=g_j for some j<p.
 

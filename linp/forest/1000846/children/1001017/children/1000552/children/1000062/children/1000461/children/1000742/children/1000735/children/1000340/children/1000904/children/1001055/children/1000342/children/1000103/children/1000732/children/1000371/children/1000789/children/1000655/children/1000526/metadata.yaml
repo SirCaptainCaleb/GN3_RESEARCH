@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "d573cbe28ff5ccf18e225d00615f298a886f3ba4d85a23d32f21179d17bb8d15"
 created_at: "2026-09-25T12:00:08.772989+00:00"
 id: "1000526"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Common-terminal rank windows add a quadratic source-rank bonus."
+statement_sha256: "640960593009800d9d87fc0b508fc54cdc842e66476d4f3097558130c9065c4a"
 substantive_worker_ids:
   - 189
   - 211

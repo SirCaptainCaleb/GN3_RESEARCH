@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a9e695c5a1e30fb08fd86cbf554148b3cd2175edde233297fef5809840fa3ef6"
 created_at: "2026-09-26T15:35:06.297548+00:00"
 id: "centralbridgereach"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every deletion state reaches its canonical central bridge in two Astra moves."
+statement_sha256: "9e160ed9b535f558004e250e7eb96bf97445f8381bbb5b93950c7722d35a87d4"
 substantive_worker_ids:
   - 643
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "08e8382c391ef6e708cd4ad1cdfaa999bb660b3787e4dafc8c8f1ed952d8c97a"
 created_at: "2026-09-24T11:28:21.16538+00:00"
 id: "1000956"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The simple source-rail graph is triangle-free."
+statement_sha256: "d3357e717c74de5640a843f6f9d200feb69300f9bb0ac44be15292e246da99c9"
 substantive_worker_ids:
   - 244
 support_reason: "current_certified_premises"

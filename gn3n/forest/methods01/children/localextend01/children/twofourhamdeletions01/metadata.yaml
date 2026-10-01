@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "072ff33d5cc590dc96e8ada36c890f4c5e25ceeac8007ad35bad8c7e235a0f55"
 created_at: "2026-09-27T15:24:51.811549+00:00"
 id: "twofourhamdeletions01"
 last_elevation_revision: 0
@@ -54,6 +55,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Four-of-six extension calculus from a fixed two-set across a four-set: multiple Hamiltonian three-of-four extensions feed common three-core, endpoint-pair, and interior-reversal consequences, especially for locally quadratic-minimal four-side configurations."
 simplified_statement: "A two-set has at least two Hamiltonian three-of-four extensions across any four-set."
+statement_sha256: "b718714aede1314f667c40b3232cfe1fff6210997ae698305499d9ea952d6a0c"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

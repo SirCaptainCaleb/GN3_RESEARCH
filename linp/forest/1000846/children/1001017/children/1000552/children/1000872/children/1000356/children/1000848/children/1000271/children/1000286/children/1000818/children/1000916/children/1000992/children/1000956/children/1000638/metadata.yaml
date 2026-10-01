@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "2dd002ba6321833f3727e82fae97bf74d3889e5a769c2e7630bbde6782053081"
 created_at: "2026-09-24T11:46:53.811491+00:00"
 id: "1000638"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The C4 source-rail residue forces a four-vertex diagonal overlap."
+statement_sha256: "c9dfc8f36b6f324c31801cec36a75dd07d6675a6e36a50fcd9e0d4e9155f212f"
 substantive_worker_ids:
   - 244
 support_reason: "current_certified_premises"

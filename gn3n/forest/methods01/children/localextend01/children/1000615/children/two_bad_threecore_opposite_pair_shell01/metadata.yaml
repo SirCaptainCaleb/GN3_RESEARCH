@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "25841a4bdf30000f4fe592d72ac8d7e841d8cfcb3d87427e9178d105de4d32bc"
 created_at: "2026-09-29T23:55:02.128655+00:00"
 id: "two_bad_threecore_opposite_pair_shell01"
 last_elevation_revision: 10287
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two bad extensions of a three-set force every opposite-pair four-set Hamiltonian"
+statement_sha256: "00907268ffe3e067394adb9ed72fffaf9eddceb2ea0c1182e2dccd4443c7853b"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

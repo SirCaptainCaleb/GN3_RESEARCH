@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "3ec20bef21feeaead55f2e85b33283c046a1784dc36aad598e5364fe10d9c45c"
 created_at: "2026-09-24T05:20:21.990815+00:00"
 id: "1000020"
 last_elevation_revision: null
@@ -55,6 +56,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Strict-rise high terminals have reciprocal central entrance structure."
+statement_sha256: "ce2fef5856820eafaa8c05f4b386247022a63c4dd4ab64f653ecb4bdc9937d30"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

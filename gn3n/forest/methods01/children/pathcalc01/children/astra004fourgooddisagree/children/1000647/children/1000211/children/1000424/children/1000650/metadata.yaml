@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ebf6cd8abaa1a245732acc6f48515c0b49bab53f4f1e7b9048f9c14dd8a83ff1"
 created_at: "2026-09-28T17:22:51.963999+00:00"
 id: "1000650"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Correction: reversible two-vertex pairs are vacuous and do not consume the cycle residue."
+statement_sha256: "2f4d16055bf1db6fedb44d904143f13257aee49e6e7e02ae5ee01f7f80804f33"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "481b082ccf30cb57aaa84ba9ec36d2049acee4627782881a550e76e6f20e74ed"
 created_at: "2026-09-27T14:57:16.379498+00:00"
 id: "1000724"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every deletion-cover transversal in the sharp half-order shell exposes ordered or support disturbance."
+statement_sha256: "569778692d88065310da93d972a0d138d1d7587baad4057d1d2a094ff902628f"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

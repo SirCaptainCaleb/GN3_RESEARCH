@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a091df2dd23f3fff4a83ef7436b0107f4f5f59e45be7642ec5392ef8c67303b8"
 created_at: "2026-09-24T00:05:24.883312+00:00"
 id: "1000300"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Open-chain endpoints in Class III are exactly the terminal defects."
+statement_sha256: "f9aa17d2f212c0b2180810b328b175fabcb74fc923cdbd635a24d71f3429242d"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

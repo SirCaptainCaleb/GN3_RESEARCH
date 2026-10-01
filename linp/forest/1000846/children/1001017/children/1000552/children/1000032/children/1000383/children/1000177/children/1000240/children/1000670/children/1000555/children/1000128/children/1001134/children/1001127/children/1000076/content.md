@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain the X-branch of f84b001e0a61. Thus
   e_i={x_i,v,u_i}, i=1,...,k,
 have edge ranks
@@ -19,7 +20,9 @@ In particular, since q_a>=q_{h+1}, any strict median rank jump q_h<q_{h+1} satis
   M <= 4q_h-2q_{h+1}-1.
 Thus a linear shared-entrance packet is incompatible with a large rank gap between the lower half of the family and its higher host paths.
 
+
 ## Body
+
 
 For every i in I,
   phi(x_i)=q_i-1 <= q_h-1.

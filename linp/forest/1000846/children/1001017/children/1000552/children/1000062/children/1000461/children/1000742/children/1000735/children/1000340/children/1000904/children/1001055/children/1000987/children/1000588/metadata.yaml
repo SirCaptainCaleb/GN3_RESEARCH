@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1d47170e1975ba9b4941a8372df6279dad25e63fbb8ab4fe3ea16d859ecd321a"
 created_at: "2026-09-24T12:55:08.143424+00:00"
 id: "1000588"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Global r-uniform bound from ascending incidence and fixed-entrance transfer."
+statement_sha256: "67f5cfdfe4bc81a689729be2bf7a3e807cf672533507c9880700e85cc7bc5d7c"
 substantive_worker_ids:
   - 258
 support_reason: "current_certified_premises"

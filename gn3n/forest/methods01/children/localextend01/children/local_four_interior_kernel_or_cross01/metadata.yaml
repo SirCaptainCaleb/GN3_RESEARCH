@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fd42bcb8ab64f1b0c6525812c2de27d69ec36ce4f93f2c7379e07718eeb02d3e"
 created_at: "2026-09-29T18:54:05.694751+00:00"
 id: "local_four_interior_kernel_or_cross01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A locally minimal complete endpoint family yields an interior Hamiltonian kernel or doubled cross barrier."
+statement_sha256: "f90592097cd8376bb8925766a4cb24e2798d0518598114fba2bdf3789c580d42"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

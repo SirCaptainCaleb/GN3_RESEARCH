@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "882cb7a7a7cb835a109ef9fa4b93c3bb23e11077cd771a8ce600f48057b08ea2"
 created_at: "2026-09-28T02:40:40.045437+00:00"
 id: "1000207"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every neutral endpoint-attachment swap cycle with surviving core forces order disagreement."
+statement_sha256: "34dae64899cb952d616619b236e797fcd3e735ef4d3eefc624097e965c9177ac"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

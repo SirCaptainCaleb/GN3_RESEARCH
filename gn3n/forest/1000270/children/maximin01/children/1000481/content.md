@@ -6,6 +6,7 @@ In the sharp maximin residue with rho=r and longest-path order a, a>=2r and ever
 
 ## Body
 
+
 Let H be a minimum counterexample in the sharp maximin residue with rho=r. By maximin01, n=a+2r+1, a is the global maximum tight-path order, and every tight (r+1)-path T has complementary exact covers P|Q of orders a,r, with P globally longest.
 
 First, a>=2r. For any vertex v, an exact two-cover H-v=U|W has |U|+|W|=a+2r and each side at most a, so a+2r<=2a. The same identity shows both |U|,|W|>=2r.

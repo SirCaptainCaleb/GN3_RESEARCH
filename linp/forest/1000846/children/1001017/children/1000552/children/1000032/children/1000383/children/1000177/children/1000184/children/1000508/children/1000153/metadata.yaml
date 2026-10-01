@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c76c890ca32b80da9dbf6ff59b7cdba42bc1d1bf45d92e934fb2dc3e36371f46"
 created_at: "2026-09-24T04:56:10.233936+00:00"
 id: "1000153"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every visible high entrance rail crosses the other three charged edges."
+statement_sha256: "3aa19224f6be2c075d3b243009932271d8123fa4376755fc5d7dc211f4ae52e2"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

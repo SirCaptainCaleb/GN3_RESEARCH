@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "24736e72660eafb0053ce701ecdf22d21537eae610345b50601625c3bd9a5a9a"
 created_at: "2026-09-25T20:57:37.090797+00:00"
 id: "1000413"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "U_11 color-terminal collisions are confined to one factor-two edge-rank scale."
+statement_sha256: "9475417d7f9d3bd21ed3dc7ccdd67eb882e7d27b52aad040b15bb57aee4f184c"
 substantive_worker_ids:
   - 220
   - 238

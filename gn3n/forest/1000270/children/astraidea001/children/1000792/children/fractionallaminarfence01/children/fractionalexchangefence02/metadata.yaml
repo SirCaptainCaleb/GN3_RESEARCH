@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "53a868be2d40d1900a27c8250f102bf384f55c9a32c021a4de7095f01609837f"
 created_at: "2026-09-27T14:25:50.994248+00:00"
 id: "fractionalexchangefence02"
 last_elevation_revision: 0
@@ -55,6 +56,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The current radius-two exchange evidence cannot serve as a proof-grade fractional transformation theorem."
+statement_sha256: "38566f552d0bb9d31e394603129d9f7fb556efdf9f3861177bebc855548e42a6"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

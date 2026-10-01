@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d8f9b7749bc26c141e7038d7110c295a52d7739d53fb930edb5d4c70c0b0c63f"
 created_at: "2026-09-27T22:04:09.315099+00:00"
 id: "1000291"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A longest component in a global quadratic minimum propagates its complementary size profile to every equal-order path."
+statement_sha256: "46682966a967970ac958ae339f118bee6aaf0ec9348c677e92be3c445fa66d9e"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

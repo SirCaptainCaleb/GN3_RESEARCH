@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "39d072c08abca35d42fc5d3d002be331ebf24eaa60b24b8b0b131926f7da1738"
 created_at: "2026-09-26T18:46:13.30934+00:00"
 id: "astra004manygoodmixed"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Many Hamiltonian complement deletions force a direct mixed longest-path crossing or order disagreement."
+statement_sha256: "d9888716d180700227949b4a9117e3bd7edfc9a765c3ee61b5f5ae5989038090"
 substantive_worker_ids:
   - 642
 support_reason: "dependency_verification_pending"

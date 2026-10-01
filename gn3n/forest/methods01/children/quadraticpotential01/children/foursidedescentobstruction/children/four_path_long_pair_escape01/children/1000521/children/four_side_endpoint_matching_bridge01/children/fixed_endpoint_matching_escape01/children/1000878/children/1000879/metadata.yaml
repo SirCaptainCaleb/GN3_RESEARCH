@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1894ec38b7cc60b21e69d6f6529ef6e22e64cc06f4a5b2c90a961579666b8f24"
 created_at: "2026-10-01T06:20:03.667669+00:00"
 id: "1000879"
 last_elevation_revision: 10807
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a locally minimal 4|7 state, four bad interior extensions force a common interior four-core with at least three Hamiltonian leaves and pairwise six-set transport."
+statement_sha256: "499a6a3c0522046b446d40db31ac5c6e541f943dee77c1a42b464f6f29b90f59"
 substantive_worker_ids:
   - 952
 support_reason: "current_certified_premises"

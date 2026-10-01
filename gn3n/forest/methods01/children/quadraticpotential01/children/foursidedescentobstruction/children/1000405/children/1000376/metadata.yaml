@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "dd1ed7ff082ba2c33d7e522d0c830e066ada56b6c8c87aad3076c182d542200d"
 created_at: "2026-09-28T17:11:03.25042+00:00"
 id: "1000376"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A two-move exchange forbids whole-path extensions at a four-side quadratic minimum."
+statement_sha256: "92db504aa88b9a07b29ca28849ac54a576883892f3bd04232e066a00e30a55a1"
 substantive_worker_ids:
   - 626
 support_reason: "current_certified_premises"

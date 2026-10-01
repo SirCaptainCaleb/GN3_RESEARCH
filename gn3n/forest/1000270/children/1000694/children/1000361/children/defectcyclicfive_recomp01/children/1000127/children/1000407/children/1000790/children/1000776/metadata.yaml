@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d125ae80fcf3688d6b48f615e16528ffef5da2d5dc683277f7725d8b4d356d9d"
 created_at: "2026-09-28T02:43:46.917908+00:00"
 id: "1000776"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The {1,1,1} cube reduces to strict descent, nonuniform neutral transport, or certified order disagreement"
+statement_sha256: "e1351b1808afed9839da11239988b75491d6de165f9723e03933458a2b5f8b9b"
 substantive_worker_ids:
   - 660
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7d51bf1923a2a740d4e8ad23d1cc18d76c54ffa06ee15d46ca775592277adbf8"
 created_at: "2026-09-25T22:07:19.923948+00:00"
 id: "1000843"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Repeated endpoint-path intersection program: force a second intersection when a maximum endpoint path meets another maximum path away from its endpoint, then amplify this into large matchings of repeated intersections arising from color-terminal collisions."
 simplified_statement: "If y is a non-last vertex of a maximum path Q, then every maximum path ending at y meets Q in at least two vertices."
+statement_sha256: "9c8d6b1575c9f24623dc1b04cb98b4d983ad89b522da8b0382ea52376b19afb2"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

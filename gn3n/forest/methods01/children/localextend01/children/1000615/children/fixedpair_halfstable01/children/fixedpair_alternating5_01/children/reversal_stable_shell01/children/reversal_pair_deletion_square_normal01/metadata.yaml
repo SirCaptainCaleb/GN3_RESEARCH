@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2267eaec4b3a98c891cfbd4f7a387a99a23c826be6148fa80ab72e64cc5633f9"
 created_at: "2026-10-01T01:09:06.731904+00:00"
 id: "reversal_pair_deletion_square_normal01"
 last_elevation_revision: 10352
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A genuine reversed pair can always be normalized to a full pc2 square in one vertex deletion; the top cover then exposes the pair as endpoints or forces internality/support/order disturbance."
+statement_sha256: "7ec4bf22a05c3bf589baee5b8ef4b9ccdfc6015ec4a3148ca6ebbc21e0315ef0"
 substantive_worker_ids:
   - 745
 support_reason: "current_certified_premises"

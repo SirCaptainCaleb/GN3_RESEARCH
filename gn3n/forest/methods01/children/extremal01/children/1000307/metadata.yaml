@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a15cfc0aa4811325a53760da78996f4c942304f2bd4a79486d0fbae815c17b38"
 created_at: "2026-09-27T22:17:10.033184+00:00"
 id: "1000307"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A repeated longest-path three-window generates quadratically many Hamiltonian five-sets."
+statement_sha256: "52d1e83145860aa5cf759351db40e9524e4e91f4d69125728a66e8a05a1520ff"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

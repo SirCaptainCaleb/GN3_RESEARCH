@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e1d6725b374c1982f876949464346d368a4b5aa6ca71066e4dc39b17c20c25b0"
 created_at: "2026-09-22T08:14:21.659663+00:00"
 id: "1000726"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If e={x,v,u} is ascending nonspecial with edge rank q and φ(v)<φ(u), then q≥ceil((φ(v)+3)/2)."
+statement_sha256: "137995c6597570fd64392e008d24f1327b41009047c308f4d5f63413c35e68db"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

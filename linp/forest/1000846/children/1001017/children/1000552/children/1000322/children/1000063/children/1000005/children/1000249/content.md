@@ -18,7 +18,7 @@ This yields a four-way proof agenda:
 (C) q=delta: eliminate the exact saturated-fan boundary states;
 (D) delta<q<=L: prove a stability theorem showing that small rotation defect forces a punctured-Steiner-like alternating-blocker/strong-rainbow residual structure, then eliminate it.
 
-The missing global bridge is no longer 'propagate nonspeciality to maximum rank' in one jump. It is enough to prove that every nonspecial edge in one of these bands either contradicts the corresponding local structure or transfers to a nonspecial edge/state in a strictly higher band.
+The missing global bridge is no longer 'propagate nonspeciality to maximum rank' in one jump. It is enough to prove that every nonspecial edge in one of these bands either contradicts the corresponding local structure or transfers to a nonspecial edge/state in a strictly higher band. 
 
 ## Body
 

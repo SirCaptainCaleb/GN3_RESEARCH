@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0376163430d99311d440716420d14dfa24d46965611f72c6c20de2890d6d2c4b"
 created_at: "2026-09-25T20:12:59.447795+00:00"
 id: "1001101"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Lens-free switching-stability program: retain linear paid strict-gap switching mass without endpoint lenses, convert selected edges to fundamental-cycle chords, and reduce the remaining obstruction to certificate congestion, repeated intersections, theta structure, or late aligned gates."
 simplified_statement: "Lens-free dense switching theorem."
+statement_sha256: "a69ab976ae61561d69ea3659281c78dc8d76157b53761edf2bd0e59aeb1550f6"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

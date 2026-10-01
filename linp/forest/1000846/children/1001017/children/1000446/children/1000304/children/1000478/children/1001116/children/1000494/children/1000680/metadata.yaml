@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5ae00510e6a3e5d74c78f867b06a5f9f5c6db0ea1e9d2aef2fba8a4bbd28d3fa"
 created_at: "2026-09-21T22:49:12.738576+00:00"
 id: "1000680"
 last_elevation_revision: null
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If the five-edge deficit-doubling inequality holds, then k such edges sharing a last vertex with maximum rank p satisfy k≤3 floor(log2 p)+4."
+statement_sha256: "d14adb1ba35799568a85f3a9e1baaf41e5dc331a155061e099de546b95392449"
 substantive_worker_ids:
   - 205
 support_reason: "premise_not_currently_supported"

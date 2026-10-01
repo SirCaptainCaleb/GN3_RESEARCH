@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "69e2b0814f2729917d08b436a23aaa1df8405d1607c701dd5f494a566fbb0ab9"
 created_at: "2026-09-29T22:48:48.45512+00:00"
 id: "threeside_bounded_endpoint_five_repartition01"
 last_elevation_revision: 9533
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions."
+statement_sha256: "63ffcb4327700a18c8b99ee842c1c00e0e333315f9271ca74d5a8c0538338125"
 substantive_worker_ids:
   - 592
 support_reason: "current_certified_premises"

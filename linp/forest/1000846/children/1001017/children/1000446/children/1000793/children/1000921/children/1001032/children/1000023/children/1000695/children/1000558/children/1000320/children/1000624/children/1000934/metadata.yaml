@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8ae0a8da4836321bbc1f086e146d52aef909e33d1bfb06e7ff273720adaec4f6"
 created_at: "2026-09-24T03:19:14.188998+00:00"
 id: "1000934"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Type-A vertices source only ascending nonspecial edges and have an exact degree decomposition."
+statement_sha256: "4f5e5ad0bff477aac13ed5a7a2edc217d44d411cbbb1aca758678ae3f9dae2c8"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

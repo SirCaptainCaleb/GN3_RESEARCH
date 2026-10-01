@@ -6,6 +6,7 @@ In an exact-density P_ell-free equality obstruction, either max_v k_v>=kappa+4, 
 
 ## Body
 
+
 Retain the exact-density charge setting and write
   kappa=3d-2ell+3.
 

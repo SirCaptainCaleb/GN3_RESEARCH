@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cefb12bc80d9c12b5937f2e231d63efdeaf97fb7c9a29849f16aa59f6b2175e1"
 created_at: "2026-09-29T19:29:41.242985+00:00"
 id: "reversal_seven_shell_sync01"
 last_elevation_revision: 8826
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every minimum counterexample has a seven-vertex reversal shell with synchronized bounded outputs"
+statement_sha256: "645e3b22b5deffc6385381c6cdeb8813b54600e2dea8f4663cc28bb7c241a577"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

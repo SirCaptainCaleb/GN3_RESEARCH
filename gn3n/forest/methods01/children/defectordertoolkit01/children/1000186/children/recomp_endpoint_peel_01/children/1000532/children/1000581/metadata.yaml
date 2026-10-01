@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "967e44ac4755425c009fc107c3ea544d1d4851ee955589406a36a2c99f73b404"
 created_at: "2026-09-28T18:36:34.752809+00:00"
 id: "1000581"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The connector-free two-end peel does not itself form a tight cycle; instead it yields two reverse cross hooks."
+statement_sha256: "54068360d51882de001285f3a39bb146da2971c58996ae7bc08599d9b609d798"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

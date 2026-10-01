@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8aa9b34ccbf62ce0da257c3ff883372fd6e9ff7305fa908d081059136326136b"
 created_at: "2026-09-25T20:30:14.100942+00:00"
 id: "1000222"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Backward color-terminal collisions are stabbed by strict rank jumps."
+statement_sha256: "042098c7c636501032fd5ef4f2487441cc5c1786285ce1ffa0437385e727ba3d"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

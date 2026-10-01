@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "190a8099f44d26356d2e7aefe4eb21ef07cb35a8a713975faf4937b661392ebc"
 created_at: "2026-09-27T20:24:50.856601+00:00"
 id: "1000658"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Retracted: inherited-pair splice criterion"
+statement_sha256: "fca7aa104a226736a3f83cdc251bb8b5423c5e6028f7085ad348eac35214f434"
 substantive_worker_ids:
   - 556
 support_reason: "not_locally_certified"

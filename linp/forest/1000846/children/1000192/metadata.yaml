@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "f7ad00b491d233696c76944b37cd898fb4bebe23dceb54d03889b78afb63d20a"
 created_at: "2026-09-25T04:29:49.914646+00:00"
 id: "1000192"
 last_elevation_revision: null
@@ -26,6 +27,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: "Literature and proof-replacement program: maintain the relevant known bounds, current conjectural landscape, and human replacements for computational ingredients in the main Turan project."
 simplified_statement: "Background bounds, literature reductions, and proof replacements relevant to the main Turán problem."
+statement_sha256: "3a7f5d7f4671622e3bf566de41084364cf8b86937b2693355c1704fb66dbd6a0"
 substantive_worker_ids:
   - 249
 support_reason: "not_a_proved_or_evidence_claim"

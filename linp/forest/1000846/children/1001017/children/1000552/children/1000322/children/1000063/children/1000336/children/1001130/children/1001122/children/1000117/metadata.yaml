@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "931032748778134fbc74a60313c7050747e53dd9b4020c71d2619682801104b4"
 created_at: "2026-09-22T20:12:21.509572+00:00"
 id: "1000117"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every q consecutive flat equal-rank ascending transfers contain a labeled linear cycle of length at most q."
+statement_sha256: "e920b255571f79a80357c600402d8fdb0520c504fa0145753788fbd9bdb34727"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

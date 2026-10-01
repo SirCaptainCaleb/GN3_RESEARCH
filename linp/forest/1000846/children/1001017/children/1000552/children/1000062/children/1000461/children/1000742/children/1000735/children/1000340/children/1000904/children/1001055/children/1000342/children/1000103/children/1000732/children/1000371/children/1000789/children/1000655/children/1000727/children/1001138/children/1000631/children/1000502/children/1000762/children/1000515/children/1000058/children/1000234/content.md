@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain a flat state from 7312b3378d20. Thus e={x,v,u} has edge rank below p, its unique contact on the maximum p-edge path P ending at v is u, and a maximum p-edge path Q ending at u has last edge h, where h is an internal edge of P, h is nonspecial ascending of edge rank p, and Q enters h through the forward joint of P.
 
 Assume additionally that e belongs to a selected common-precursor family: there is a maximum endpoint path R of length L<p that avoids v and contains both x and u.
@@ -16,7 +17,9 @@ In the second case, either h is the last edge of R, or h is internal on R. If h 
 
 For a family of such flat states using one fixed precursor R, the boundary alternative h=last(R) can occur for at most two target edges.
 
+
 ## Body
+
 
 The endpoint u of Q lies on R. Since Q and R are maximum endpoint paths ending at distinct vertices u and last(R), they cannot have u as their unique common vertex: by 5854d853a44b, a unique common vertex of two maximum endpoint paths is an internal joint on both paths, whereas u is the last vertex of Q. Hence Q and R have at least two common vertices.
 

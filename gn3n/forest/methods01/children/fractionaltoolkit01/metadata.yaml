@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "4e901bd9ef16e5b767855b8bea3cc2a0ca0e73ec08544079ba24820789cca050"
 created_at: "2026-09-27T14:38:23.71515+00:00"
 id: "fractionaltoolkit01"
 last_elevation_revision: null
@@ -32,6 +33,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: "Reusable fractional path-cover machinery: LP duality and weighted capture, deletion-family averaging, dual slack accounting, laminar rounding, and sharp set-system obstructions to naive uncrossing."
 simplified_statement: "Fractional path-cover duality, deletion averaging, dual slack accounting, laminar rounding, and uncrossing form a reusable toolkit for boundary tournaments."
+statement_sha256: "a65d2d362528aceead99597617d9aecad57ebbad2afab3a84469a9f00b329ba2"
 substantive_worker_ids:
   - 644
 support_reason: "awaiting_local_audit"

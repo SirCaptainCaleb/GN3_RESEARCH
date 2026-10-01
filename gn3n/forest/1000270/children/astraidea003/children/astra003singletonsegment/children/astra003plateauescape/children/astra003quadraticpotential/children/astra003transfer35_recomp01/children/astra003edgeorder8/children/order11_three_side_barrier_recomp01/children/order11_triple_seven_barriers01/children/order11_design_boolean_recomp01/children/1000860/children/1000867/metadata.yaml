@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d2efb44ec1416c73be7dfcde23f6b67d64f0a3c054d676d9f21068ded1a269dd"
 created_at: "2026-10-01T06:05:02.909666+00:00"
 id: "1000867"
 last_elevation_revision: 10659
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every extendable four-center in the order-eleven design is surrounded by four matched blocked Hamiltonian 4|4 partitions."
+statement_sha256: "262e8f9617e70cbf6384793b8061bb38105231a3d514968aca11157215a57e4f"
 substantive_worker_ids:
   - 952
 support_reason: "current_certified_premises"

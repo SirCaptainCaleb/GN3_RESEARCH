@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "57da5527369258d0af08ee727b2ecf71ac74063b8f744746b702905b7c47c079"
 created_at: "2026-09-22T15:13:56.712485+00:00"
 id: "1001156"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any spanning path in AG(d,3) has joint vectors summing to zero in F_3^d; in particular this algebraically forbids a spanning P_4 in AG(2,3)."
+statement_sha256: "38739630b8eee306b30afd720698ad30528e17b9b16371275ccf31c3171f3f00"
 substantive_worker_ids:
   - 178
 support_reason: "current_certified_premises"

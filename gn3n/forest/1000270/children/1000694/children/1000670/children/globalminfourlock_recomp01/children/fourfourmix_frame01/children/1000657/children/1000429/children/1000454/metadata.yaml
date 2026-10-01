@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "04aad99c44939f1d9334dcf86a9c4364b82b3d863d6494885c7a1a81a5d82b53"
 created_at: "2026-09-27T19:36:54.200657+00:00"
 id: "1000454"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A local 4|5|a quadratic minimum has two labels extending both long endpoints."
+statement_sha256: "4f41b6ba3ecaf45c47ba4be7df80801a70190e3315edaa02d627bee79870393f"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

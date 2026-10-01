@@ -6,6 +6,7 @@ audit_requested: true
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "f9a22a04fa6de12a3b01464d3200b7c716ff5782cab6abb87562732c03eb58a7"
 created_at: "2026-10-01T07:22:31.057568+00:00"
 id: "1000903"
 last_elevation_revision: 10860
@@ -54,6 +55,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two disjoint triples have at least three cross-pairs of Hamiltonian five-deletions, each yielding a common-four-core six-set transport package; the earlier directional and one-third fixed-reservoir statements are corollaries."
+statement_sha256: "8b988ad44508563be75cfe0c2be21e81b1599af6b2951c29c6ceac73e11509cb"
 substantive_worker_ids:
   - 1016
   - 1061

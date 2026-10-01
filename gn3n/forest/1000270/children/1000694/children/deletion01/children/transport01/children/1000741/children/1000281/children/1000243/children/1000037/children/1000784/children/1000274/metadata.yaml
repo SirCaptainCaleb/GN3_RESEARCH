@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "d9e9e15a5fc10db86c6f945b9a29916ea6114294c3711d2468c883b7db048115"
 created_at: "2026-09-28T11:13:39.055908+00:00"
 id: "1000274"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An edge common to two rooted graphs gives a Phi-neutral repartition or local insertion structure."
+statement_sha256: "733a288b8e8ea129e9c61b4a71a5956e552566a8971bd1bc2071aa2b1352f3ab"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

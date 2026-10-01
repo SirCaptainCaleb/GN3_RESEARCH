@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f8dad9591c3d79fd8426bc3fd77020a87f29064b198ae9c2b562b1d201e8cc6f"
 created_at: "2026-09-28T10:06:41.323999+00:00"
 id: "1000380"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Corridor order reduces fixed-core five-path synchronization to ten templates."
+statement_sha256: "cc94018584ac2dba2cf5380fc67550826e178340b943b5d8107d02ceb12b7923"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

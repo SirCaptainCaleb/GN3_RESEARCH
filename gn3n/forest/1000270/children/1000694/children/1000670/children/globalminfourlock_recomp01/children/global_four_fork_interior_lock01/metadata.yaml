@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8988e1b2794e383dd4bfca3f3e9d61d37838fa32e9954fe5f686e07ab50e0966"
 created_at: "2026-09-29T18:30:09.473863+00:00"
 id: "global_four_fork_interior_lock01"
 last_elevation_revision: 8826
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A global four-side fork forces a neutral order-five swap or a full interior-path lock."
+statement_sha256: "11ff00d3a608ad0a7269dd9fb627e6dd7fe9082a3049757f35f682227b5bd47d"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

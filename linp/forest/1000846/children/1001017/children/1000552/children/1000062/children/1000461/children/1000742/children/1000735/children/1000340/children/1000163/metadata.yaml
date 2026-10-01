@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7c11e79075c0b7031edfdbc26632b230fb6a91fddea72f0d0a1533b451cd78e0"
 created_at: "2026-09-24T12:31:52.69504+00:00"
 id: "1000163"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Full endpoint conflict matching sharpens the fixed-entrance incident-rank bound."
+statement_sha256: "377e0844374276f8cbcfb584fc65f46b2be673c21f1f5b38bc30d60eb23c46f5"
 substantive_worker_ids:
   - 258
 support_reason: "current_certified_premises"

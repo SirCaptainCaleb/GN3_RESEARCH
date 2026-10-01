@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a4f21765676654e0a8977d85a4de4f9224f0cb49aa78e28d6c8852ae92b36980"
 created_at: "2026-09-21T22:50:30.46599+00:00"
 id: "1000541"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Sublinear common-last-vertex control suffices for the 2/3 leading coefficient."
+statement_sha256: "7254ce67cc732c5e9b401c0959106c8ed6755f79d222ae7ddc30e6c04288b95e"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

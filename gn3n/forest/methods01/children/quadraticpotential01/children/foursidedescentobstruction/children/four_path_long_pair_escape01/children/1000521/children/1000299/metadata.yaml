@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7ce8e9276b69b91c64c046e51eca191f93119816e9ca7ddef6da5cc6e46b19a6"
 created_at: "2026-09-28T02:36:47.217185+00:00"
 id: "1000299"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "From order seventeen onward a global quadratic minimum has no four-vertex component unless order disagreement already occurs."
+statement_sha256: "c6b8fcd4bdf11bc2022df799093e22bba31c0a460c1816a31c6b42a0fc0b09d0"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

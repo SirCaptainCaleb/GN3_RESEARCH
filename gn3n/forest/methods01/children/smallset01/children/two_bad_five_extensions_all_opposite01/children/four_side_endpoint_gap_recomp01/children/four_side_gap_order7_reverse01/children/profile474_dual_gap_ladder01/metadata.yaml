@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "750b5e383d7e96b7d015f0f674f93aa6876fbad9ec6dadef3a0e010d2b56d869"
 created_at: "2026-09-29T22:17:13.670439+00:00"
 id: "profile474_dual_gap_ladder01"
 last_elevation_revision: 9396
@@ -26,6 +27,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Dual hard locks in a 4|7|4 cover force four gap-aligned triple-component Hamiltonian four-sets."
+statement_sha256: "d8335d04545d25c405848555990388b24a38a424061c5e6cf94f7777d7e4654e"
 substantive_worker_ids:
   - 708
 support_reason: "not_locally_certified"

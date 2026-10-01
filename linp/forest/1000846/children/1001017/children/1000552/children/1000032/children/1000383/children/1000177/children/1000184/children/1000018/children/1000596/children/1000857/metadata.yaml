@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "75a9d7bbe0c752449d90d295824294568a79710ff6a49424d0803e5396a391cf"
 created_at: "2026-09-24T05:09:26.826751+00:00"
 id: "1000857"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The bcd top-boundary pattern forces a three-edge blocker moat."
+statement_sha256: "d6789da1af039f0ba4acb6bf4b94256b3a3bb5aba5bae7dd82431b25082568ce"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

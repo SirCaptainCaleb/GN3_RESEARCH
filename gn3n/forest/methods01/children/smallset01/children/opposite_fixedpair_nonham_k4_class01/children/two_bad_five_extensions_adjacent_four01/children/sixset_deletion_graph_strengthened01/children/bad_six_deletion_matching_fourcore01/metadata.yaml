@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "02ab1aeae9b67b043ab2c85cd2457865e82255142f3105dd411e2282300062e2"
 created_at: "2026-09-29T21:20:39.892942+00:00"
 id: "bad_six_deletion_matching_fourcore01"
 last_elevation_revision: 9251
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A non-Hamiltonian six-set amplifies overlapping four-sets or has exactly four deletion labels forming a non-Hamiltonian core."
+statement_sha256: "aac947695c6aed2c6eeec7ba14046d238e3796a595471f422b0e84dee880cc52"
 substantive_worker_ids:
   - 592
 support_reason: "current_certified_premises"

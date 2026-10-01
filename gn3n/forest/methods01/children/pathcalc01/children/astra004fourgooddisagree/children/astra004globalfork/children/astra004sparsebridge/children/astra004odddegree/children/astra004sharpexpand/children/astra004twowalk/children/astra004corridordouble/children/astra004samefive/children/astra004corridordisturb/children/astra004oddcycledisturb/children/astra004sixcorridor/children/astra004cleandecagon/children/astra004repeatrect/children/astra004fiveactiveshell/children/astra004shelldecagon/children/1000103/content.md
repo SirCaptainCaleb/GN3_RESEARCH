@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample in the sharp half-order shell |V(H)|=2lambda+1, and let
 S_0S_1...S_{m-1}S_0
 be a connected 2-regular component of the Hamiltonian-support odd graph. Choose one Hamilton order on each support and suppose every length-two subwalk takes the clean alternative of astra004twowalk.
@@ -10,7 +11,9 @@ Then no such component exists.
 
 Equivalently, every 2-regular sharp-shell support component contains a length-two subwalk exposing one of the non-clean astra004twowalk outcomes: an inherited three-part crossing or relative-order disagreement.
 
+
 ## Body
+
 
 Apply astra004shelldecagon.
 

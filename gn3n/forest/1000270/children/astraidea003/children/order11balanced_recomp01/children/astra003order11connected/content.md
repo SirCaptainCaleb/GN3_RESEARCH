@@ -6,6 +6,7 @@ Let H be a hypothetical order-eleven minimum counterexample. Then the Astra-003 
 
 ## Body
 
+
 Let K be the universal order-eleven component from 59bfc75bfb10. Thus every spanning 5|5|1 state and every spanning 4|4|3 state belongs to K.
 
 Take an arbitrary spanning three-component cover C of H, and let L be its Astra connected component. Since H is a counterexample, no spanning two-cover exists anywhere, so L contains no two-component state.

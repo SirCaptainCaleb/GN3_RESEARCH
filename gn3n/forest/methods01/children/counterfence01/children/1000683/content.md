@@ -2,11 +2,14 @@
 
 ## Statement
 
+
 There exists a boundary tournament on four vertices W={0,1,2,3} such that W is Hamiltonian, but for w=1 the tight path A=(3,2,0) on W-{1} cannot be extended by w at either endpoint: neither (1,3,2,0) nor (3,2,0,1) is tight.
 
 Consequently, in an anchored Hamiltonian four-window W, a deletion two-cover in which W-{w} occurs as one contiguous three-vertex block cannot be eliminated merely from Hamiltonicity of W by asserting that w must prepend or append the displayed block order.
 
+
 ## Body
+
 
 Define the boundary tournament by declaring the following member of each reversal pair tight:
 (1,0,2), (3,0,1), (3,0,2),

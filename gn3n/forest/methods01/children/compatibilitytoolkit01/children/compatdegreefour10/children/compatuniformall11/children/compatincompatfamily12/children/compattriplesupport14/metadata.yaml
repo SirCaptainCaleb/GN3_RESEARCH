@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b842b4c99c148749e7f7ee43ee71cd50cfc5b1ca92ccfe0db08f805289cf9992"
 created_at: "2026-09-27T04:24:03.047866+00:00"
 id: "compattriplesupport14"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A support-incompatible triple either disagrees on the common core or switches every deleted label between the two core classes"
+statement_sha256: "e21c35bd202ab497b4d2bf72a36306d002738dcb494ae8214fc6a2a26f374154"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

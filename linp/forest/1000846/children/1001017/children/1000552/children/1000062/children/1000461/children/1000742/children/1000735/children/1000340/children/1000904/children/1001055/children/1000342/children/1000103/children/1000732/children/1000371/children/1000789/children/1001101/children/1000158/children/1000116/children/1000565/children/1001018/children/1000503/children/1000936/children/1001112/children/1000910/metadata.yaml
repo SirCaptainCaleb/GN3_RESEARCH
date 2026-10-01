@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "52d5d47b23fb70c9a569a92a5e2b66eccb2250b8a04fb5fa7750a73e25181221"
 created_at: "2026-09-25T21:23:59.50148+00:00"
 id: "1000910"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A unique selected-common-path intersection with the same-terminal cycle neighbor is exactly the reciprocal terminal."
+statement_sha256: "760db9b18f88286cb0224e3d003570dd2d45e0784ab3ebb30bd3f10e38190077"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

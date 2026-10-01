@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "09fc96b1ac1c12c7d51c27931cb148419ad8642adb6a984a75828adeb213d8c0"
 created_at: "2026-09-29T23:41:09.4937+00:00"
 id: "five_three_sixcycle_crosshub_fiveshell01"
 last_elevation_revision: 9533
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A neutral three-five six-cycle forces a cyclic cross-hub five-shell."
+statement_sha256: "72153f143460d32326c58be16f96272a073fc832e56eb3f25e249b22b7d58f63"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

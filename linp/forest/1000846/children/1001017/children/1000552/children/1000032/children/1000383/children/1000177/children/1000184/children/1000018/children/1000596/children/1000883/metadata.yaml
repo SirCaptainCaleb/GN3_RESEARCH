@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "059d3e2fe2098c666135f0efb79bd54247b830f6f8795eeb8dd478440cf4031e"
 created_at: "2026-09-24T05:03:42.293579+00:00"
 id: "1000883"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Joint-pair conflict collapses to a left blocker or the missing right-private slot."
+statement_sha256: "a224dc2e5ad551100e7fdef5cc5b679cdd6290ed98caa88c0bbe0336ec056a73"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

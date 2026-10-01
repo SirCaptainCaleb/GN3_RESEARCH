@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample, let R=(r_0,...,r_m), m>=3, be a displayed tight path, let y be one displayed endpoint of R, and let T be a two-cover of H-y containing an ordinary edge from an exterior class X to V(R)-{y}. Assume every T-component preserves the relative order of its surviving R-vertices. Then at least one of the following occurs:
 
 (1) reciprocal support crossing: some inherited edge r_i r_{i+1} of R-y has endpoints in different T-components;
@@ -20,7 +21,9 @@ Let H be a minimum counterexample, let R=(r_0,...,r_m), m>=3, be a displayed tig
 
 Thus, after excluding relative-order disagreement, every direct mixed-support crossing is consumed into reciprocal support separation, one of the standard bounded defect-compression inputs, immediate closure, strict descent, or a neutral singleton transfer.
 
+
 ## Body
+
 
 Apply e2ffb6f50728.
 

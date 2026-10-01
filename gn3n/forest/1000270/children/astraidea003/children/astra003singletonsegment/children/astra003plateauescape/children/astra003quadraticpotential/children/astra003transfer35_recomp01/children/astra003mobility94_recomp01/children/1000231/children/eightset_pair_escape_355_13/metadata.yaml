@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "50dffa250a49c2010b73463f86771e76e06bb7a2c4ba23ce8ae8053ac681b201"
 created_at: "2026-09-29T23:41:01.067959+00:00"
 id: "eightset_pair_escape_355_13"
 last_elevation_revision: 9533
@@ -30,6 +31,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every pair in an eight-set escapes through an external reachable three-side on a trapped 3|5|5 plateau."
+statement_sha256: "d2bb5ae31b8ae557a4b85a85ff35492845f8cff8114c4c11d54c9763c5271d3a"
 substantive_worker_ids:
   - 579
 support_reason: "provisional_unaudited"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "02903b4fa4e61195ad7591fbf7111f15bb3ea459e24a0e408a75e7ecc79ad030"
 created_at: "2026-09-24T02:15:11.427813+00:00"
 id: "1000482"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The extremal critical-core color graph has minimum degree k minus two."
+statement_sha256: "a1c8391ad1a123daa79c96e056df2f01adeccb0c2bbff1eabb890d5dcb7956fc"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a0b0d44e21eca2d15887b4d6123252b8773b0d51d87f430798031da8f0457aab"
 created_at: "2026-09-28T16:49:08.192328+00:00"
 id: "1000596"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "From order sixteen onward a coherent endpoint square forces order disagreement."
+statement_sha256: "0a523e26f2b1707e981cda02384a586146c81cc39360dcc828a9e9e24306ce94"
 substantive_worker_ids:
   - 606
 support_reason: "dependency_verification_pending"

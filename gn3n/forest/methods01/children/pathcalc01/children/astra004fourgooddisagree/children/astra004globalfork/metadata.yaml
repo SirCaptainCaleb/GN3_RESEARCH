@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a38ac28c077396a3cfac52cac7f2940c1cbbdd6b89449f7ef3c960aa8ca0c85f"
 created_at: "2026-09-26T18:45:40.486207+00:00"
 id: "astra004globalfork"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Longest-path complement fork: a complement either has enough Hamiltonian deletions to force direct mixed crossing/order disagreement, or enters a deletion-sparse sharp-shell regime governed by support graphs, odd walks, neutral cuts, corridors, and repeated-label transport."
 simplified_statement: "A longest-path complement is either deletion-sparse or intrinsically order-disturbed."
+statement_sha256: "7bb0fd7d040874ecab2d32fdd28b4a39d4ab053105650acd34311ca1926c6e7e"
 substantive_worker_ids:
   - 642
 support_reason: "current_certified_premises"

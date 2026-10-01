@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "55fa2d1a3cd915c096e42903958200c51e85748884996e7d902296212cf9ab4b"
 created_at: "2026-10-01T00:55:56.262386+00:00"
 id: "balanced9_density84_54_01"
 last_elevation_revision: 10203
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every nine-vertex boundary tournament has at least 84 Hamiltonian five-sets and 54 Hamiltonian four-sets."
+statement_sha256: "6af70fef85a90d75ffb53220347a62960d69ee4bfb8a96e2b5d69e88ef315241"
 substantive_worker_ids:
   - 745
 support_reason: "current_certified_premises"

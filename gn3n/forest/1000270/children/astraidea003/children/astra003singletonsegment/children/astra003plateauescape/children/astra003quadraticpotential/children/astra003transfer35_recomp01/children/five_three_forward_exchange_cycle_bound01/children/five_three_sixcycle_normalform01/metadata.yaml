@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6598ceeb1a61da340250b1956e66c25deafdbb0c8bdf22dfd0467f69e0255ee0"
 created_at: "2026-09-29T23:35:06.840858+00:00"
 id: "five_three_sixcycle_normalform01"
 last_elevation_revision: 9533
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every neutral three-five exchange six-cycle has a two-label three-pair normal form."
+statement_sha256: "ff336f6f44149e339151bb5cdacbde1221180ab5d5c2bf9c058cb4a7a0ab0877"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

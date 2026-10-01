@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bde0932e4c79bb69f0288bbf40d5a364939f55def14ea83b522aaab3b217171e"
 created_at: "2026-09-24T13:59:59.76084+00:00"
 id: "1000465"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Crossing balanced endpoint lenses on one maximum path must intersect off the host."
+statement_sha256: "6d71f0856df0c095af4d3408ab2d68ada89983377ddd7467d4d0503ec40f1117"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

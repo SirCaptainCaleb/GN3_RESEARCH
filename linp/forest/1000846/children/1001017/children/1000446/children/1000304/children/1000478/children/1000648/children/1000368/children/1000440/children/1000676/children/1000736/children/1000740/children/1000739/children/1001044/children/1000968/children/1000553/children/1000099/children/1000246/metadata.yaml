@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d9bfdd01796bf8821da2b305803ace6c6946faabb28d5b863ad6dbee6a07ca73"
 created_at: "2026-09-24T03:57:34.434181+00:00"
 id: "1000246"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the terminal-left 4455 branch the second rank-five edge either uses c or is pushed to the private g4 slot."
+statement_sha256: "0f54950ca54c81323cd2e9296d425b9b0daf93292dd7f8f2c4402920a167d072"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

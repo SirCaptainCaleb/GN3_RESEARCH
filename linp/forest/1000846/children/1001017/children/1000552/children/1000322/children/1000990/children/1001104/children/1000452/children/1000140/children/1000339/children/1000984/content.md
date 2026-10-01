@@ -6,6 +6,7 @@ In the s=2 equality layer let B be the leave vertices of degree at least 4, b=|B
 
 ## Body
 
+
 Assume the exact-density equality layer has Steiner deficiency s=2, with leave U. Let
   B={v:d_U(v)>=4}
 be the set of leave branch vertices and put b=|B|.

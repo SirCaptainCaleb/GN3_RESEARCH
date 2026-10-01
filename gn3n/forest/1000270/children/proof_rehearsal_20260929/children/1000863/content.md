@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 For every n-vertex boundary tournament J, at least (2/5) binom(n,4) of its four-vertex subsets are Hamiltonian. Consequently some three-set C in J has a Hamiltonian extension set
 Y={y notin C : C union {y} is Hamiltonian}
 with |Y| >= ceil(2(n-3)/5).
@@ -30,7 +31,9 @@ Writing the top path as P=(L,y,M,z,R), with M=(m_1,...,m_h), every such lower tw
 
 Thus dense Hamiltonian four-window structure reduces, in one theorem, to a common-top disturbance or to a bounded local lower-square obstruction. In the global construction on H, with N=|V(G)|, s>=ceil(2N/5)-2, so for N>=16 the displayed distance above is at most floor(2(N-5)/(ceil(2N/5)-6)).
 
+
 ## Body
+
 
 Every five-set contains at least two Hamiltonian four-subsets: a Hamiltonian five-set has at least two Hamiltonian vertex deletions, while a non-Hamiltonian five-set has at most one non-Hamiltonian four-subset. Double-counting incidences between Hamiltonian four-sets and containing five-sets gives
 h_4(n-4) >= 2 binom(n,5),

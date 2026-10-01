@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b7feef40b761480b069e0bec5f7ec5bcb162a23c8b87ca8939bae075762047e6"
 created_at: "2026-09-25T21:24:19.091312+00:00"
 id: "1000200"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Separated singleton contacts force rank sum at least host rank plus four without a contact-type hypothesis."
+statement_sha256: "5eb83d6b376c6dc94d282bb0e1e01fb9c2fe15e62b61a0ec4f785cbff65af657"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

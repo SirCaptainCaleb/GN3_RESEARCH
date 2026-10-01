@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "931c260b3810974de274afea0107b8625d974525699998b9bb6092b8fd65a143"
 created_at: "2026-09-29T21:23:18.52392+00:00"
 id: "fourpath_endpoint_exchange_local01"
 last_elevation_revision: 9251
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A Hamiltonian endpoint replacement gives a neutral two-path exchange or a full-path lock."
+statement_sha256: "154759db9a539cc76f0aa30b7de3af43e25f94a9c521c5f1704d78e15ae33595"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ In the extremal |E(F)|=16 case of a trapped order-thirteen 3|5|5 Astra-003 plate
 
 ## Body
 
+
 Assume the extremal shadow-complement case from astra003support148: F is K_{4,4} on disjoint four-sets A,C, with the remaining five vertices R isolated in F.
 
 The proof of astra003support148 shows that every G-triangle not wholly contained in R belongs to D. In particular, every three-subset X of A occurs as the three-side of some state X|P|Q in the trapped 3|5|5 component.

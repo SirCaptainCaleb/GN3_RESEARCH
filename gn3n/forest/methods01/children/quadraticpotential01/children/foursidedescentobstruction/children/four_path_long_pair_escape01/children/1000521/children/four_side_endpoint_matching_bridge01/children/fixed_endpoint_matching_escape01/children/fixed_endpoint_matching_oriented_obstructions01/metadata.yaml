@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "31ee5070e6f246f534be9ec882eb62769ba7d847237acedc202763dca65522f6"
 created_at: "2026-09-29T20:56:24.98697+00:00"
 id: "fixed_endpoint_matching_oriented_obstructions01"
 last_elevation_revision: 9000
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The fixed-endpoint matching residue reduces to two oriented insertion-obstruction pairs."
+statement_sha256: "8a20b9912d36d33ecc607cf0927b354faab886a37694306edc4957fb01614a57"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

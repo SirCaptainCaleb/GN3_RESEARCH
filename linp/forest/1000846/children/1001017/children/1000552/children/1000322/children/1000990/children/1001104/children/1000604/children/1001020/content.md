@@ -6,6 +6,7 @@ For an exact-density P_ell-free system with n=6d+1+s and leave U, one has Delta(
 
 ## Body
 
+
 Let ell>=4, d=floor(2ell/3), n=6d+1+s, and let U be the leave graph of an exact-density P_ell-free linear triple system H.
 
 For every vertex v,

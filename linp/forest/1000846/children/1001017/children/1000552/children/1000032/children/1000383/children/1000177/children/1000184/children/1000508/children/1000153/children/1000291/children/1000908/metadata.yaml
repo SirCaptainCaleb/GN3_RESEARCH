@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "db1f5583d8dc05e8860846c627cc79666860bd864ad84ff38ff7e05ab6d1218c"
 created_at: "2026-09-24T05:18:41.187168+00:00"
 id: "1000908"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Distance-two single blockers are incompatible on every canonical entrance rail."
+statement_sha256: "96170477e4cf49eacae5bf0a31d642f2b2e0ea6774f4acaa54859899c94ebef0"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

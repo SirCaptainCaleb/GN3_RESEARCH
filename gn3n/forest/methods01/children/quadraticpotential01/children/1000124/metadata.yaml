@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "91587b78a6f226495a479f4be7981e1c5bd7bdcd2692789327e9c8bab310e467"
 created_at: "2026-09-28T15:49:33.924227+00:00"
 id: "1000124"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every two-step component-size gap at a quadratic minimum exposes the universal transport menu."
+statement_sha256: "c0010ccb6b1ad90104dc534ff665ce89d7fce5b65f72edbbb07d2159e4af4087"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

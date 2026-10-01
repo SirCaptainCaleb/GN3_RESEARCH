@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "98c436c226a35941c94fc351a9e2790cb4aa596c1bfda903238b6433db87da08"
 created_at: "2026-09-22T19:49:12.329647+00:00"
 id: "1000685"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The claimed universal fourfold Boolean path lift is false: the 3-point quotient lifts to PG(3,2), which has no spanning P_7."
+statement_sha256: "d4a6d2a443d9a8196f150a3fadc0d2af855eff336cd86daa1fdb0268ad058146"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

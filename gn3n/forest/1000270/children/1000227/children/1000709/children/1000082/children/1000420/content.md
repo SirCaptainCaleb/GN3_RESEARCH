@@ -6,6 +6,7 @@ Let W=A disjoint-union {r} be a seven-vertex boundary tournament with |A|=6. Def
 
 ## Body
 
+
 # Rooted seven-set Hamiltonian shell graph
 
 Let W=A disjoint-union {r} be a seven-vertex boundary tournament with |A|=6. Define a graph G on A by joining distinct vertices a,b exactly when the five-set

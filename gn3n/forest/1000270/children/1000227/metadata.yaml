@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "d47d0a2136669bad19bb934b73310e2a5d073200f2acf1caed157545b386eee0"
 created_at: "2026-09-20T19:54:54.726726+00:00"
 id: "1000227"
 last_elevation_revision: null
@@ -28,6 +29,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "One-defect support reconfiguration route, with frozen-support obstructions and deletion-level order disagreement retained above the more specialized reconfiguration subbranches."
 simplified_statement: "A direct induction would follow if every near-spanning two-path state of total longest-path deficit at most one can be reconfigured to a deficit-zero two-cover."
+statement_sha256: "27a60c60693528dfcf18d05cc1434a7af1484e3870cbaff08c131486503df2e9"
 substantive_worker_ids:
   - 673
 support_reason: "not_a_proved_or_evidence_claim"

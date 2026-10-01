@@ -6,6 +6,7 @@ In the setting of 0c8144b5ac80, assume no order disagreement occurs. Fix the two
 
 ## Body
 
+
 By 0c8144b5ac80, absent order disagreement every edge of the intersection graph G=G_e intersect G_f yields a Hamiltonian six-set S_{ab}, and e(G)>=3.
 
 If two edges {a,b} and {a,c} share a vertex a, then

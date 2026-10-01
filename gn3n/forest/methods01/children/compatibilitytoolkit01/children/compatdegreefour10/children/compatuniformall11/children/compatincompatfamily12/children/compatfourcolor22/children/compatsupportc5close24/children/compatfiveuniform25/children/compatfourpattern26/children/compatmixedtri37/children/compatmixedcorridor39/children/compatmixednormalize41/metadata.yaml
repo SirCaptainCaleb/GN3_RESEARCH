@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b5b088e99745c4595a9ffe240910ad88b10dc8091f9321e3a95c96079c94e7d6"
 created_at: "2026-09-27T13:37:55.784573+00:00"
 id: "compatmixednormalize41"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Normalizing the fixed supports turns a mixed corridor into two legitimate local insertion gadgets"
+statement_sha256: "932434c6b6ebd8c251ba9e6ecd6fc90900d051ef02b841f6cfed3d96116d6f41"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain the hard unique-intersection residual of d0a41dede20a for
   e={x,v,u},
 and let f be the fundamental-cycle neighbor of e that shares terminal v. Let R_e and R_f be canonical maximum source paths for e and f. Let A be the selected common-path precursor at terminal v, so both x and u lie on A.
@@ -18,7 +19,9 @@ Moreover u is an internal joint on both maximum endpoint paths R_f and A at the 
 
 Thus, in the unique-intersection branch, the second gate of R_f against the selected common path is canonically labeled by the reciprocal terminal u; it is not an unspecified return vertex.
 
+
 ## Body
+
 
 Because R_e and R_f have exactly one common vertex and f is the fundamental-cycle neighbor sharing terminal v, f4f2089110b2 applies and gives
   u in V(R_f)

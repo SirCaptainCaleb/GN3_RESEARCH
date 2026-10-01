@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8b99066be182d8d99ad7591b0df688672aae80680475c7a6635bcf40b565a105"
 created_at: "2026-09-24T06:04:52.300206+00:00"
 id: "1001128"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four 0-1-1 source rails force a two-vertex distinguished overlap."
+statement_sha256: "144c90648832f605b66ca2a3ce6376e2dbe8c0a1053ced10be0e13cf06e50b97"
 substantive_worker_ids:
   - 185
   - 254

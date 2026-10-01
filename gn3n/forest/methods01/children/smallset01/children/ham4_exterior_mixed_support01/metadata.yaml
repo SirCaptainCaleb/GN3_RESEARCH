@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "38a3a6269674d57456272a668ff2e893b2884bedfd6809e379cfdb801fa4df32"
 created_at: "2026-09-29T22:19:33.841324+00:00"
 id: "ham4_exterior_mixed_support01"
 last_elevation_revision: 9396
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every exterior vertex of a Hamiltonian four-set lies in a mixed Hamiltonian four- or five-support."
+statement_sha256: "03d5a532acdbca1ebd67ae6027cf51ddcf0a5db73df1372be9e2d1fe089506af"
 substantive_worker_ids:
   - 579
 support_reason: "provisional_unaudited"

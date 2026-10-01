@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b2ff1c764080b08464f2ea3e8f3fb6f2cc0a9084dff75eed4e60bee82d0d2902"
 created_at: "2026-09-28T18:32:01.227512+00:00"
 id: "1000463"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every endpoint deletion cover has a bounded restoration reversal."
+statement_sha256: "dcde003fc605b5a35ba532a7c33755bc0214bcce83f6a7e2ef8acc2a8aaa9b8f"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

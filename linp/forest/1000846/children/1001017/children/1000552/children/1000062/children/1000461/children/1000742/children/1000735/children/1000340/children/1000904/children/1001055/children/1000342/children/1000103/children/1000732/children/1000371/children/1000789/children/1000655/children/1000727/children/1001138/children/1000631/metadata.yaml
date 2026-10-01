@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2d93d9da64ad53ded12445bfd2d6b8f82d22879cfbc270d58265497dcfa266c7"
 created_at: "2026-09-24T19:22:37.925713+00:00"
 id: "1000631"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Reciprocal-transversal branch: ascending edges meet both terminal maximum paths in controlled two-point patterns, leading to source-terminal lenses, repeated intersections, or shared-last-edge structure."
 simplified_statement: "Ascending edges are reciprocal two-point transversals of terminal maximum paths."
+statement_sha256: "cb8526286d98aede9eab6bea008cd5469d998329e8b6b2b0f25116fbcafb5084"
 substantive_worker_ids:
   - 201
 support_reason: "current_certified_premises"

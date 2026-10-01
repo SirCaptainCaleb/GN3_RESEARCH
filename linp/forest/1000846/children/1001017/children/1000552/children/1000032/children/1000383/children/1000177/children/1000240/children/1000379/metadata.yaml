@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7bfdfcfa9380052411be0e5b72d561363bd1f5999d418d1bbaea5b8a1df23546"
 created_at: "2026-09-24T04:44:48.991757+00:00"
 id: "1000379"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Half-rank charged edges are reciprocally central at both terminals."
+statement_sha256: "94b8931f7531240a83e3a581b54faf6acb9b3b09549c5753a461d20df12305ec"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

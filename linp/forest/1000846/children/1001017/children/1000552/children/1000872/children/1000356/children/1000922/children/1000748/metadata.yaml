@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9eb1cf6ccae4cd451cfeaa22ebc766c40cb38bcedb2d7e4b497ce5fec3efdd62"
 created_at: "2026-09-24T05:38:37.053483+00:00"
 id: "1000748"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A three-per-two-ranks bound for 0-1-1 edges alone gives the 11/12 coefficient."
+statement_sha256: "59b88211e3fb31b4c1923f0e46fd1ef3e51df536b6504af4027f9c9c1af4b0f4"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

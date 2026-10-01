@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "7ca1d0390efb776ee3b252a4a97208b2f88a49cd2da512177c06f3fb0029dfdf"
 created_at: "2026-09-24T20:48:46.735286+00:00"
 id: "1000567"
 last_elevation_revision: null
@@ -65,6 +66,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Clean-retained switcher packing program: sharpen cell-packing bounds and analyze near-equality through terminal retention, balanced packets, and period-five structure."
 simplified_statement: "Clean-retained switchers satisfy four-fifths cell packing."
+statement_sha256: "1aaadfd4e7440edd2a9d26e4e8fad98146ac2da5a75ebcc59ed2bc1b1e776f1d"
 substantive_worker_ids:
   - 201
 support_reason: "failed_or_blocked_premise"

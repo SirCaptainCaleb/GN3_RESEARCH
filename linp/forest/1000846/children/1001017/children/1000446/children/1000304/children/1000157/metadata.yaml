@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "4c0c53c01e73f2551bc3a382bf03eb28f422353a3bd1064c81c2b72e96b37f08"
 created_at: "2026-09-21T20:57:46.398164+00:00"
 id: "1000157"
 last_elevation_revision: null
@@ -37,6 +38,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Directed graph of ascending edges and a level-cut inequality."
+statement_sha256: "76347a3d4faa015d8af8afffaaa8bd383c4f720f541daffb20d0100f8019abec"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

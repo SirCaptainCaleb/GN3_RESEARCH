@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "e714de4e93426ebf9d1241cfa5f1cd448c9faa88017024e7afb25e1cd76e2976"
 created_at: "2026-09-26T04:02:42.416635+00:00"
 id: "1000578"
 last_elevation_revision: null
@@ -26,6 +27,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Random endpoint exposure is proposed to average local path-extension obstructions across the three vertices of each edge, with the goal of deriving a lower average congestion bound than deterministic endpoint assignment."
+statement_sha256: "573ca12d8ed746bb6e4c65301a6a661b4567c432142e120dad3333732c9ea378"
 substantive_worker_ids:
   - 213
 support_reason: "not_a_proved_or_evidence_claim"

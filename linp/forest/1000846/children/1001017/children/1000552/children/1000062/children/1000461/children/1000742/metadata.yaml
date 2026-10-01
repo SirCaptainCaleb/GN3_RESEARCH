@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5739c7d3792aff4029e268991909e1c2ef4d3c9db41f311e10b52fef3dbdd272"
 created_at: "2026-09-24T04:02:17.606684+00:00"
 id: "1000742"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Terminal-incidence capacity program leading from rank-sensitive snake bounds to the 11/12 estimate and, through first-edge and contact-conflict refinements, the 43/48 regime."
 simplified_statement: "A nonspecial terminal of rank q reduces the entire incident low-rank capacity."
+statement_sha256: "6d2758da9d2618d383b8de0c1a91a4ef7930baa18b982cbcfa4d14741fd68a98"
 substantive_worker_ids:
   - 253
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a4289fec088162d5c870476c03fc4ec9a3a94b8327353768d524373d7d571cde"
 created_at: "2026-09-24T02:43:44.465432+00:00"
 id: "1000077"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rigid half-neighborhoods force an unused-color safe target connector."
+statement_sha256: "66bb05bc0a773b1ffe64099d3cb18cdd2796ff8b095e757cf841d9a61e79f9da"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ For two source-clean 0-1-1 edges through a common assigned terminal, if the sour
 
 ## Body
 
+
 Let e_i={x_i,v,u_i} and e_j={x_j,v,u_j} be two distinct 0-1-1 ascending nonspecial edges assigned at the common terminal v, and let Q_i,Q_j be their chosen source-clean maximum endpoint paths ending physically at x_i,x_j.
 
 Suppose x_j belongs to V(Q_i). Then Q_i and Q_j have at least two common vertices.

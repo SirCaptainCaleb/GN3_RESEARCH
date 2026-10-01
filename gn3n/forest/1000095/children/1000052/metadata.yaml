@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "69dc4f39d8ec94d701fc4b31bbfe599376de4afb9eed3f130213bfb08db56671"
 created_at: "2026-09-28T17:07:29.483778+00:00"
 id: "1000052"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "A cyclic companion prevents a mandatory ordered triple"
+statement_sha256: "9ed003d3849781b4dc78c8f5d6dcbfd3acb10544d53d6a511ec97ea03ce227d9"
 substantive_worker_ids:
   - 626
 support_reason: "not_a_proved_or_evidence_claim"

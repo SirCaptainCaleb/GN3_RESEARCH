@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "284e2a551ed5c9d32f2179d9f89147a9ac71ce914fda30fe7fad70bc89730879"
 created_at: "2026-09-27T18:18:00.192361+00:00"
 id: "1000203"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Bad five-extension replacement branch: two failed one-vertex extensions of a Hamiltonian five-side force two-for-two Hamiltonian replacements and a six-set carrying several positioned good deletions."
 simplified_statement: "Two bad extensions of a Hamiltonian five-set force two-for-two Hamiltonian replacements."
+statement_sha256: "4e799d6177be8f8197d8c1c8ea51ce347936d1e7e580d042aa749ad0045eaa04"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

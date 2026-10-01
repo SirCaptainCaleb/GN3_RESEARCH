@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1580d8d67f2765de2aaf0d7e52dc540f40be9c421c8c7863f04fb6d2b9c49c00"
 created_at: "2026-09-23T21:31:57.232902+00:00"
 id: "1001115"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The rainbow-six-cycle normal form forces a color collision."
+statement_sha256: "135415cc4c41566fdd02d3dbb617f1e45c08b0dd3b3da8459762d7084134cccb"
 substantive_worker_ids:
   - 225
   - 231

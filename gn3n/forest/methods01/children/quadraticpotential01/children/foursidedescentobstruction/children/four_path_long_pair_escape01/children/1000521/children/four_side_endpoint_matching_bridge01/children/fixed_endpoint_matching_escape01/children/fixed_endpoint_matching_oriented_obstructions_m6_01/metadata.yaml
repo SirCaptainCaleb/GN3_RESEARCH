@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8d08d0cc1c0f95254d574d3c374780ce7d822965bb9ed33857a3689542cc5089"
 created_at: "2026-09-29T21:03:11.942055+00:00"
 id: "fixed_endpoint_matching_oriented_obstructions_m6_01"
 last_elevation_revision: 9060
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A locally minimal fixed-endpoint matching residue reduces to two oriented obstruction pairs from order six."
+statement_sha256: "f9df5e1d007386f029af6bfd0b29fbc531a967dd997a0ccada806838ff0c4ce7"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

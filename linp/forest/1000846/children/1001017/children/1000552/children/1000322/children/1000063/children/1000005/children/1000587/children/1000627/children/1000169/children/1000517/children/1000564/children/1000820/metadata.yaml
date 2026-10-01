@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a56491a1041da0559c9cd7aa138fa2e3daa034c186e3ca02d85d26aa61630588"
 created_at: "2026-09-24T02:11:13.130248+00:00"
 id: "1000820"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An early endpoint blocker forces opposite-endpoint prefix escape."
+statement_sha256: "7a695193f360f431b5242316adeda20a1d7879a8c96956712e1e9580e933f62a"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

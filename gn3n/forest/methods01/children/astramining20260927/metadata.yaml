@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "ece3c6cc134f726fc302c53d476e5bdc17b66a80e7f2bf5b49958cdd08c9cbde"
 created_at: "2026-09-27T14:52:40.694648+00:00"
 id: "astramining20260927"
 last_elevation_revision: null
@@ -28,6 +29,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Astra result-mining specialist pass: reusable mathematics extracted"
+statement_sha256: "5bac19ca013f1a8465f46b8fd946b62dc5eacc88889dbf2d75d6bb521074151b"
 substantive_worker_ids:
   - 644
 support_reason: "not_a_proved_or_evidence_claim"

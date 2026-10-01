@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e8a1c0814335d0e6eae434e8a2ce641d0efef9f778e6a9fbc0e562019b9f81f3"
 created_at: "2026-09-24T04:02:15.500168+00:00"
 id: "1000865"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The joint edge in the exact 4555 rectangle is either rail-clean or hits only the private vertex of the third rail edge."
+statement_sha256: "6d2c341362dba2aebc600c24f545fc2a6d254b8e839368edc2ee39a9a0c6293b"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

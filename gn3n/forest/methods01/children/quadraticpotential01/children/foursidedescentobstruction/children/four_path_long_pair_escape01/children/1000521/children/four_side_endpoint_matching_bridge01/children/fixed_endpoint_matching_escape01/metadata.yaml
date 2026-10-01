@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "23f472dd6ebf63a1607caa8256b4697f3960011c1c0a035d3874e699b9cae929"
 created_at: "2026-09-29T18:13:20.977652+00:00"
 id: "fixed_endpoint_matching_escape01"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Fixed-endpoint matching shells should force trapped-component escape."
+statement_sha256: "0e1bbcc7352caba89a37299b0974d6ed890904de52625163686aa9e747a6e5d7"
 substantive_worker_ids:
   - 605
 support_reason: "not_a_proved_or_evidence_claim"

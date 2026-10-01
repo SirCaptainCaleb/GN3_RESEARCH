@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6573f970d2951f4faa61afb84b08b765996177564843389a196d28b29bdc42f2"
 created_at: "2026-09-24T04:25:39.457996+00:00"
 id: "1000139"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every used top-layer vertex in the trapped-negative charge state has charge at least kappa plus two."
+statement_sha256: "317e30a9173cc2426af20989f4bfafccc060157167ec0db2cf8fd596a0c95289"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "ff3ff41edaf5ba74551cf8c8f0ec5a8bb7722aee41f292ffcd0351ba2307c8c8"
 created_at: "2026-09-26T18:52:27.629182+00:00"
 id: "astra004sparsebridge"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Sharp-shell support-graph and corridor analysis: sparse longest-path complements force pervasive crossings or a bounded slack bridge, then odd-walk swaps, degree-two corridors, repeated labels, cycles, neutral cuts, and support disturbance are analyzed to force escape."
 simplified_statement: "Deletion-sparse longest complements reduce to pervasive three-crossing or a bounded slack bridge."
+statement_sha256: "925f3e80dd134ed0412f94741c782b353bc35c58ac5bac2c04fd73a4f914df9c"
 substantive_worker_ids:
   - 642
 support_reason: "The proof establishes only that the exceptional A-block A_1 has cardinality |A_1|<=sigma and is contiguous as a monochromatic block in the audited deletion-cover path. It does not show that V(A_1) consists of consecutive vertices in the original displayed longest-path order A. The statement therefore overclaims in its final sentence that all such behavior is confined to at most sigma consecutive vertices of the displayed longest path. The valid conclusion is a size bound on the A-block support unless an additional order-compatibility argument is supplied."

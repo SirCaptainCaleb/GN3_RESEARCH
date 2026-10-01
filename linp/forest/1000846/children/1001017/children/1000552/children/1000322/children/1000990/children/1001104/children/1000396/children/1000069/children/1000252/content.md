@@ -6,6 +6,7 @@ Let k_v=3d-d_H(v) in a P_ell-free exact-density equality obstruction and kappa=3
 
 ## Body
 
+
 Let H be a P_ell-free exact-density equality obstruction, with
   d=floor(2ell/3),
 leave charges

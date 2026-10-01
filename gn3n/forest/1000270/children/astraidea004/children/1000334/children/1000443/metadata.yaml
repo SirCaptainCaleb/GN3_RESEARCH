@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d0f8364a7fee6aa479e7bbb4abb0b8ab9cd72d7419e1b30d7a160f301c014a24"
 created_at: "2026-09-27T21:25:17.806607+00:00"
 id: "1000443"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Positional lag is monotone on consecutive surviving longest-path runs"
+statement_sha256: "8ef69e00300b24986f2f98a53e78bc68876ae132f1e04d76076081f377d1de9d"
 substantive_worker_ids:
   - 596
 support_reason: "current_certified_premises"

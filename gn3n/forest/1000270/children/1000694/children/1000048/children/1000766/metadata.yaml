@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a244c27583807319b5a80df1a2de83ba3662a1fa8321eba960ab13c57e353c7a"
 created_at: "2026-09-27T19:08:19.549294+00:00"
 id: "1000766"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A compatibility component supplies canonical central path states inside one trapped pairwise-repartition component"
+statement_sha256: "e37da4cfe51cf68a1ea4b679ee109952f641118f9af35f6587a3f5d4669fed4d"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

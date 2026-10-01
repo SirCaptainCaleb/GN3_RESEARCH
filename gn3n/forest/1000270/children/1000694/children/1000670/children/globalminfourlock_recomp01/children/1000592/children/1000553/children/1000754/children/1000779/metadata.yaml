@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "047ec0dd17d1ff89a834946603993856457f020467ca72a38ec5ccdb9a41a762"
 created_at: "2026-09-28T02:27:52.771602+00:00"
 id: "1000779"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Doubled barriers at the two middle vertices of a four-path force a Hamiltonian four- or five-set."
+statement_sha256: "1082c7aa73c0d41591587887b4138e823c2a4c5a6b003ea2734eb5bbb68a52b8"
 substantive_worker_ids:
   - 694
 support_reason: "The proof depends essentially on the false unconditional extender theorem e425e6ca5fe0."

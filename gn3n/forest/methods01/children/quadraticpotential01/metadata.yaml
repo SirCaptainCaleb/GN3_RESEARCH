@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2c80c3828adf17d8a78259cf3b559a1fd898f4d881371851297e50b66f0d0915"
 created_at: "2026-09-27T15:23:44.151524+00:00"
 id: "quadraticpotential01"
 last_elevation_revision: null
@@ -54,6 +55,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: "Quadratic component-size potential as a general reconfiguration toolkit. This region develops strict-descent criteria, neutral-transfer and restoration cycles, size-gap and complement-imbalance inequalities, global near-balance/staircase reductions, and dedicated two-, three-, four-, and five-side obstruction analyses. Nested branches isolate the sharp half-order extremal route and the local four-side and 4|5 plateau mechanisms."
 simplified_statement: "Quadratic component-size potential under path-cover moves"
+statement_sha256: "149d1321481458e736709eacbb544e2e929598892c181d45bd126de51a943490"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

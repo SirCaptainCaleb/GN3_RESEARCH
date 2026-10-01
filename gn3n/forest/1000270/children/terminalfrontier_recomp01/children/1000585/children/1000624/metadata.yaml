@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5bd1a840f161aae2798072ffc442d736fb1ee7bcc7d8da770f950a2c142ee3c3"
 created_at: "2026-09-28T02:00:48.156973+00:00"
 id: "1000624"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The remaining unique-large residue is a crossed pair of one-success one-failure insertion windows."
+statement_sha256: "bef476ee62883608d6eecda695c12060a73b630426f9c184ac320fccbbae399d"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

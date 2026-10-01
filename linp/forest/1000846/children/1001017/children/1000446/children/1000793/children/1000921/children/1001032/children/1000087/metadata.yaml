@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "909326851cef4dbd2f34dbea968c69114c79b717fcdefa83b8293ae532076e12"
 created_at: "2026-09-24T03:04:21.267104+00:00"
 id: "1000087"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum-potential equality forces the special-edge subhypergraph to be a cubic-graph dual."
+statement_sha256: "6945e51c5c1c0cb8bb4d9cccf342a135fd07a62c30d3dfbe7ad70d30e3bea918"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

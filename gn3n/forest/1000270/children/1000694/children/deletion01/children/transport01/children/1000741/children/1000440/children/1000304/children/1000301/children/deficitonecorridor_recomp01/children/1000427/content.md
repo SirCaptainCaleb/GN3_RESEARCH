@@ -6,6 +6,7 @@ Let H be a minimum counterexample, let A be a globally longest tight path, and l
 
 ## Body
 
+
 Apply the certified deficit-one corridor theorem deficitonecorridor_recomp01. If a charge is strict, its charged replacement gives strict binary-balance descent, an A-edge reversal, or one of the certified bounded reversed-triple obstructions, giving (1) or (2). Otherwise, after at most two prefix-suffix splices, either a reversed mixed-junction triple already occurs or there is a tight A-order-preserving path C* of order |A|-1 agreeing with A outside one gap. Write O=V(A)-V(C*) and E=V(C*)-V(A), so |O|=|E|+1.
 
 If |E|<=1, then |O|<=2 and the symmetric difference has order at most three. Adding the two common anchors of an internal gap gives support order at most five; an endpoint gap has at most one anchor, giving order at most four. This is (4).

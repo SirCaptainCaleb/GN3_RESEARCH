@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let e={x,v,u} be an ascending nonspecial edge of rank q, with unique entrance x and terminals v,u. Let
   P=(g_1,...,g_s)
 be a maximum s-edge path with last vertex u, where s=phi(u)>q. Assume e has contact multiplicity one at u on P, i.e.
@@ -14,7 +15,9 @@ Equivalently, if q+r<=s+3, then f has a non-v vertex on P.
 
 The conclusion is independent of whether the unique off-u contact of e on P is its entrance x or the other terminal v. In particular, for a doubly-terminal-single strict-gap family assigned at a common terminal v of rank p with phi(u)>=p, every foreign edge f of rank r satisfying q+r<=p+3 must meet the chosen maximum u-path away from v.
 
+
 ## Body
+
 
 Let c be the unique off-u contact of e with the precursor V(P)\g_s. Since e\{u}={x,v}, there are two cases.
 

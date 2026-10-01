@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1228ad84ae07f9fa9577529e9bf202846046bb28af6ac3164322968e399374c5"
 created_at: "2026-09-27T14:15:10.606516+00:00"
 id: "astra001slackcharge01"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Dual slack charges across successful omission replacements"
+statement_sha256: "f144975248d9ea14c2acc64a6a3d5f50024b8369da71923dec22f249ce2187d0"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

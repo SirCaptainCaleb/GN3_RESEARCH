@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2c9461f9d723927c9606438e21012e885d6e3ea3b32b789f010958b190df0ed2"
 created_at: "2026-09-28T10:01:01.434039+00:00"
 id: "equalorderonegapclosure01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "An equal-order one-gap comparison has no neutral insertion residue."
+statement_sha256: "26b10ce73631e9635bd289b2a3b5aaec9330979e10749d5fd153e3a44244eda7"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

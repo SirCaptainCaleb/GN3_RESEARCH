@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "8f1747a50654f364c4c7f022079364a2f17bd69fe493bc57653ce24ab07c0297"
 created_at: "2026-09-27T04:32:24.937628+00:00"
 id: "compatd2hubs21"
 last_elevation_revision: 0
@@ -28,6 +29,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "9339573a6d7ee535e9fe2dcff849d58b6020854d27a174754bb89e837fc28dff"
 substantive_worker_ids:
   - 648
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b2d3941d15532107ceb51d1079fd7bcd23ac964b0faae3cc9f77c8559f50536f"
 created_at: "2026-09-27T21:50:54.53322+00:00"
 id: "1000538"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any fixed universal defect-triple certificate must have quadratic size"
+statement_sha256: "7e8c8537e07180763a7ef6f67f933cac46c5d17f09e36ce26eeb9c82139bfcad"
 substantive_worker_ids:
   - 596
 support_reason: "current_certified_premises"

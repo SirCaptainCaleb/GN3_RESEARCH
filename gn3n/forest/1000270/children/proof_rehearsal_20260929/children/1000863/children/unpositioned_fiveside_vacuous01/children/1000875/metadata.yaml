@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "56c198115feada9a27fced19db8f75dbffa1aa149956b1b66cee14b82270b0d0"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000875"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Once a displayed path has five vertices, an unpositioned Hamiltonian five-side with pc2 complement is automatic."
+statement_sha256: "f3d605ef856a53e5ba13c179024db61fb44690475796e082e043529c61fd545e"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

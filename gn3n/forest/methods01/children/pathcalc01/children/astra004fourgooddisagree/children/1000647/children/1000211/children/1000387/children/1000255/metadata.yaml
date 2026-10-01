@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c8c53c8d767b2acb1ebe6668d19a86134fb3f96ae4c1298d32c654278249b108"
 created_at: "2026-09-28T17:35:52.384924+00:00"
 id: "1000255"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An internal reversed edge localizes to a Hamiltonian, cyclic, or uniquely ordered matching-block four-kernel."
+statement_sha256: "b171cdd66213105cfeefa5e00bf4379b8214d2dd778c2f5bfbaf038888add16e"
 substantive_worker_ids:
   - 606
 support_reason: "current_certified_premises"

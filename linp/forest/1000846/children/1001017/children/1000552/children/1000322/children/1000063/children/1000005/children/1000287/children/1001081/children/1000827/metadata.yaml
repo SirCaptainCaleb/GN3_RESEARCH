@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4bc8154c2e5ec90014ff7521c02cdc26664ba4b39306982cc43b7410769fd866"
 created_at: "2026-09-24T01:08:58.910995+00:00"
 id: "1000827"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Punctured-Steiner maximum-rank obstructions have one of two saturated defect topologies."
+statement_sha256: "60ba3841b5f146353f5ea279d5698050238111ea2c9100d5949fd999a712f036"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

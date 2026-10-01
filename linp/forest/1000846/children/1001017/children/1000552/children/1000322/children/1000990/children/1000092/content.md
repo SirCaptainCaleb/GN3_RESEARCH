@@ -6,6 +6,7 @@ Let d=floor(2ell/3). If a P_ell-free linear 3-graph satisfies |E(H)|=d|V(H)| and
 
 ## Body
 
+
 Let H be an n-vertex P_ell-free linear 3-graph with
   m=d n,  d=floor(2ell/3),
 and let A be the number of ascending nonspecial edges.

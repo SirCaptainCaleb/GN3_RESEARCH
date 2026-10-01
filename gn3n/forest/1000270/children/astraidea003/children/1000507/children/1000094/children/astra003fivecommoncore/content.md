@@ -6,6 +6,7 @@ Let X|P|Q be a spanning three-path cover minimizing the quadratic potential in a
 
 ## Body
 
+
 Let X|P|Q minimize the quadratic potential Phi inside a connected component of the pairwise-repartition graph containing no two-cover, where X is a tight path of order five and P=(p_1,...,p_m) with m>=7.
 
 Because m-5>=2, transferring either single endpoint of P to X would strictly improve the size pair (5,m) to (6,m-1). The endpoint-transfer theorem therefore gives that both six-sets

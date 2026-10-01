@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "d873cf50ddff9e2fd7914dcc96b6a7dff6c0adb561b45a91cb1a22e382a2097a"
 created_at: "2026-09-25T21:42:12.860741+00:00"
 id: "1000776"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "b2671ae68541a40aa1143e6cdade9b7fa1abfd714c058bacd590347278591efa"
 substantive_worker_ids:
   - 220
 support_reason: "The proof applies the unique-intersection theorem 5854d853a44b to Q and R_j even though both maximum endpoint paths have the same last vertex x_j. That theorem requires distinct endpoints. A second common vertex between Q and R_j is therefore not established, so 41100a9882dd cannot be invoked and the cycle/shared-last-edge branch is unsupported."

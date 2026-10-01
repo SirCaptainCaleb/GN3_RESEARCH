@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample. Then either H contains one of the bounded four-vertex configurations arising from the reversed-edge classification—a Hamiltonian four-set with non-Hamiltonian path-cover-two complement, the exceptional cyclic non-Hamiltonian four-set, or the non-Hamiltonian matching-block four-set with its forced reverse fan—or there is a tight path P=(p_0,...,p_m), m>=2, and an exterior vertex x with (p_1,p_0,x) tight, chosen with |P| maximal among all such unresolved initial-end reversal pairs, such that for every y outside V(P) with y!=x both (p_1,p_0,y) and (y,p_m,p_{m-1}) are tight, and for each such y either H has a proper Hamiltonian support of order four or five containing y and the two ends of P whose complement is non-Hamiltonian with path-cover number two, or (p_m,y,p_0) is tight. Consequently, if no such small Hamiltonian support occurs, at least three vertices y outside V(P), distinct from x, simultaneously satisfy (p_1,p_0,y), (p_m,y,p_0), and (y,p_m,p_{m-1}) tight. The terminal-end version holds symmetrically.
 
+
 ## Body
+
 
 Take the reversal supplied by 7ba450ffcfe5 on a tight path. If the reversed displayed edge is internal, apply 53005a4e0315. Its Hamiltonian, cyclic, and matching-block alternatives give the bounded four-vertex frontier; in the matching-block case 4f2ce6135f9c supplies the forced reverse fan. Thus only endpoint-edge reversals remain.
 

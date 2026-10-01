@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0f300f839164a9d663dbc8344054a3fd20246c8d33b1aac3984e1cfce491e3c5"
 created_at: "2026-09-29T18:41:57.110376+00:00"
 id: "local_four_common_endpoint_core15"
 last_elevation_revision: 8656
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Above order fourteen a locally minimal four-side has a common endpoint-pair three-core."
+statement_sha256: "42c76dc6c6bbf8ddce723a7ae446b1852f8bb8e6d042a15d30a88aeea4e49fba"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

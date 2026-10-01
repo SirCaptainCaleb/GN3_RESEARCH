@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "bae59ed8fa7becf386199c48960180aeaba5084878e67606c19ff1f81fb307d7"
 created_at: "2026-09-24T03:48:49.383377+00:00"
 id: "1000283"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The two-contact 4455 low-low branch is a rigid four-cycle plus rank-five triangle."
+statement_sha256: "0a55e4568255265f12688f74ca1f7e41d6d103d67a2ce5ed0b761f4d5e7213ab"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

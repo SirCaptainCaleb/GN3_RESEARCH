@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "747e3c094f200e7ef8ab460b5fedd438000e07aff72483c54c4357ce4290b5cf"
 created_at: "2026-09-24T01:18:09.77234+00:00"
 id: "1000963"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "High terminal degree forces outside single-blocker expansion."
+statement_sha256: "ef57565a7a3ed4b4575d2c28a1ffe3325130ed2b5850f484b978254508590516"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

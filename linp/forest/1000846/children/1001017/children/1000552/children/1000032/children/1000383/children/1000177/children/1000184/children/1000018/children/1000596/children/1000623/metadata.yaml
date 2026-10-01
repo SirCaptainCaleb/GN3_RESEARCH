@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "304e273d4c4cbfdf6d15bd1f908f90f019163bc4753b0775aef0fa677a78edf0"
 created_at: "2026-09-24T05:08:24.684798+00:00"
 id: "1000623"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The four top-boundary missing-slot patterns reduce to crossed terminals plus two exact closures."
+statement_sha256: "4d325a40ee8dadc5b85a4b5fd695933630b3d779441808dba02ff9759ba3b2c3"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

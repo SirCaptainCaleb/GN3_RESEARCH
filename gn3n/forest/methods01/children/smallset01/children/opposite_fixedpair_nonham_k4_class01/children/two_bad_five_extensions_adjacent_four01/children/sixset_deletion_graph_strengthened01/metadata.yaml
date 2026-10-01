@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2d3d654e3bfe25189b21d65dd76e8289cf160e8222cf3e363dff675d221a3862"
 created_at: "2026-09-29T21:19:47.547294+00:00"
 id: "sixset_deletion_graph_strengthened01"
 last_elevation_revision: 9251
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every six-set has a deletion graph of positive minimum degree, with only a four-label non-Hamiltonian-core matching exception."
+statement_sha256: "75e047d75c1b744b2d8ab5b9178509354e00cca22c46f98622c6e86d20c1e49e"
 substantive_worker_ids:
   - 592
 support_reason: "current_certified_premises"

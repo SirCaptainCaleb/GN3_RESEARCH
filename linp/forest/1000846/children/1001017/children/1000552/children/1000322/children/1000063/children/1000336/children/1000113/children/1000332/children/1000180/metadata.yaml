@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "d5d57e1e60751094493108a2db021cd8e10e34ae8f838c58f94e772dbee60d33"
 created_at: "2026-09-22T04:43:00.310861+00:00"
 id: "1000180"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "There is a linear 3-graph with a longest 3-edge path ending at x whose opposite endpoint supports two single-blocking edges with blockers in consecutive private slots."
+statement_sha256: "785c4b2c26cdc910756d1b390712e6f0ea9ed917a18d99028f1c735d5af6ae7a"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

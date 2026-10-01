@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 In the bounded-square setting of 1000863, suppose the top two-cover is
 P|Q with P=(L,y,M,z,R),
 where y,z are internal on P and M is nonempty.
@@ -14,7 +15,9 @@ Indeed P has order at least five, so any five consecutive vertices of P form a H
 
 Therefore a five-side branch can serve as genuine obstruction consumption only if it retains additional positioning information, such as prescribed local crossing/reversal vertices, a prescribed fixed core, or an ordered attachment condition. Mere existence of some Hamiltonian five-set is not a discriminating outcome in this setting.
 
+
 ## Body
+
 
 Because y and z are internal on the displayed path P and the middle segment M is nonempty, each of L,M,R is nonempty. Hence
 |P| >= |L|+1+|M|+1+|R| >= 5.

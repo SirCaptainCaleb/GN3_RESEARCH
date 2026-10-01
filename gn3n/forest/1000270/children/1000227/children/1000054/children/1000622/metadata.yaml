@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "f16dbc6f04b10208f2fed8f993779a92198307b543ef4fcb48a7fdd01cba8285"
 created_at: "2026-09-21T14:47:53.134025+00:00"
 id: "1000622"
 last_elevation_revision: 0
@@ -37,6 +38,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Transfer invariants and the limits of support-only closure."
+statement_sha256: "cf1679b3122b7945c30bd9fb9b31628075f304511cc5e008c5718c1e29ca1afb"
 substantive_worker_ids:
   - 567
 support_reason: "current_certified_premises"

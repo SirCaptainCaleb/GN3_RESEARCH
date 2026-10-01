@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7fc0b73d45ee6808c4fa4912f9638312156a6fe79d069455665bc4dcf823584b"
 created_at: "2026-09-24T05:37:28.146615+00:00"
 id: "1000539"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At the odd boundary a one-low four-single obstruction pins the low witness to C."
+statement_sha256: "9b0769de8835a191e2bf312e7f29e8ff801e8c7f435c7d078fbce1ed422b1cd0"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

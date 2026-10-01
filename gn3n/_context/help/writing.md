@@ -68,3 +68,12 @@ Container summaries and boundaries are organizational metadata. Maintain them op
 SIMPLIFIED TREE VIEW
 
 simplified_subtree(root_id,max_depth=null) shows a compact indented subtree using simplified_statement rather than full object bodies. max_depth defaults from the configurable subtree.simplified_default_depth. A … child marker means deeper descendants of that branch were omitted by the depth limit.
+
+
+DIRECTIONAL CONTAINER WRITING STANDARD
+
+semantic_container_text must describe mathematical motion, not subject classification. For an ordinary research branch, summarize the effective transition: what is assumed or inherited, what has been established, and what this now enables or leaves unresolved. Prefer prose of the form “Given A, we obtain B via C; this reduces the route to D / leaves E.”
+
+Do not use semantic_container_text as a bag of keywords, a contents list, or a heading such as “Results about X.” Such labels destroy Atlas utility because they do not tell a reader what the branch proves or where it goes.
+
+A container summarizes the represented descendant region, not only its boundary node. Start a new boundary when the mathematical state or direction materially changes, not merely when terminology changes. Special organizational roots such as Toolkit, Brainstorms, Archive, or project documentation may remain categorical because they are genuinely organizational rather than proof-directional.

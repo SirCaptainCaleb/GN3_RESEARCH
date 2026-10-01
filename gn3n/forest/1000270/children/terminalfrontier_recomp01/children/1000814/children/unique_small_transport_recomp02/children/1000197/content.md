@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample. Let A,B,C be disjoint displayed tight paths of a common order r>=3, and let x,y be distinct vertices outside them such that both x and y initial-extend each of A,B,C.
 
 Suppose a two-cover T of H-{x,y}=A union B union C is order-neutral on each displayed core and has exactly two cross-core edges. Suppose one T-component has leave-and-return form
@@ -11,6 +12,7 @@ where A=A_1 A_2 is the displayed A-order split into two nonempty contiguous bloc
 Then either H has a spanning two-cover, or H contains a proper Hamiltonian four-set W whose complement is non-Hamiltonian with path-cover number two.
 
 Consequently, in the witness-free unique-small plateau of unique_small_transport_recomp02, the two-crossing leave-and-return alternative cannot occur.
+
 
 ## Body
 

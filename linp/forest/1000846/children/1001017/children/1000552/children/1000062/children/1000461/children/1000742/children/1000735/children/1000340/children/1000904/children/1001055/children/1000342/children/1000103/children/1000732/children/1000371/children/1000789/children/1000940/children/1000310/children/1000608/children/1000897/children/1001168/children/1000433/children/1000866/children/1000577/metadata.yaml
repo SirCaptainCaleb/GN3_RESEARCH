@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "983dbf0fa99678628501ac434d6c2d5842825d8c0b5603e8d036b6fb8580a1e4"
 created_at: "2026-09-25T21:12:44.930878+00:00"
 id: "1000577"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Repeated-intersection collisions contain a linear-size matching of source-path pairs."
+statement_sha256: "6e88d487b35f8fa68004319909ce91ceae709e27b0dbca84e62dc4e8407589d9"
 substantive_worker_ids:
   - 220
 support_reason: "failed_or_blocked_premise"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "83f9e80fcaa838379253b5b710bc28caaecb82e628a35afe89f663117e81eb87"
 created_at: "2026-09-24T12:04:49.926519+00:00"
 id: "1000811"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The C4 residue is overlap-rich or a double triple-gate braid."
+statement_sha256: "357739fa6e169ca3bebea47aa104dce37ccf8ea567d4cff16d2bc471b2f0eb5d"
 substantive_worker_ids:
   - 244
 support_reason: "current_certified_premises"

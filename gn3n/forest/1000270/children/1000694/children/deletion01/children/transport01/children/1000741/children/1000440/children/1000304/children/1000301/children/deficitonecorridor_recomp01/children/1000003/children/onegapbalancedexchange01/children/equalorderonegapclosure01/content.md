@@ -6,6 +6,7 @@ Let H be a minimum counterexample, let A be a globally longest tight path of ord
 
 ## Body
 
+
 Assume |E|>=2 and choose consecutive vertices x,y of the E-block in the displayed order of B. Since x,y lie outside the globally longest path A, the certified longest-path paired-noninsertion theorem 6839f08d0cf8 applies. Its Hamiltonian four- or five-support outcomes give (1), using minimum-counterexample calculus for the complement.
 
 Suppose it gives a direct connector D from x to y through an A-interval. If that interval contains exactly one A-vertex z, then D is a tight cross triple and is handled by the cross-triple paragraph below. Otherwise the interval contains at least two A-vertices. If it contains a vertex of A∩B, then D places such a common vertex strictly between x and y while B does not, yielding order disagreement. Otherwise the interior of D lies in O and is disjoint from B. Replace the edge xy of B by D. All internal triples are tight and only the at most two junction triples can be new. If all existing junction triples were tight, the splice would be a tight path of order at least lambda+2, contradicting maximality of A. Hence a junction is non-tight and boundary antisymmetry gives (3).

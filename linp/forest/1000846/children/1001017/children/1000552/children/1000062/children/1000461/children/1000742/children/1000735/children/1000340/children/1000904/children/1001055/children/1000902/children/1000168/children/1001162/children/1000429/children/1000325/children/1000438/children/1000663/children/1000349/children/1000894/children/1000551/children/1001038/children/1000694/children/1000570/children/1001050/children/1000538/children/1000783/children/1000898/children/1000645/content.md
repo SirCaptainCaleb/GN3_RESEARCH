@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a finite linear 3-graph, let v be a vertex, and let
   e_i={x_i,v,u_i},  i=1,...,k,
 be distinct ascending nonspecial edges, with unique entrance x_i and terminals v,u_i. For each i let P_i be a maximum endpoint path ending at u_i, and assume e_i is terminal-single on P_i.
@@ -26,7 +27,9 @@ If, moreover, the hypotheses of c9bb03cb2b41 hold for every owner edge e_i and i
   phi(e_i)+phi(e_j) <= phi(u_i)+3
 for every ordered pair i!=j, then complete reciprocal transversality is automatic, so the conclusions above apply.
 
+
 ## Body
+
 
 Terminal-singleness says that exactly one of x_i,v occurs in the precursor of P_i. In every case P_i contains its last vertex u_i.
 

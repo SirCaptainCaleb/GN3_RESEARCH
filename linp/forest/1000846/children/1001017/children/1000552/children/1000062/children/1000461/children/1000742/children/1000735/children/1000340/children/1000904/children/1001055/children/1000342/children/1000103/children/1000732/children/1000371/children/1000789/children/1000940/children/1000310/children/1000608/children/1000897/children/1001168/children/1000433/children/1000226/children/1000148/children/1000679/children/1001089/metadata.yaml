@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "9c8a69cafb28a1fceb9bef6c271fd7e122aac42439787d31947022d7eb6a3810"
 created_at: "2026-09-25T21:40:07.19072+00:00"
 id: "1001089"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The even half-rank central collision has one surviving two-entrance pattern and a full-length rotation."
+statement_sha256: "5e0975a844c80722c8f23a9c4b407e78972ec069d73db9cd5b88f531a5a710e2"
 substantive_worker_ids:
   - 220
   - 227

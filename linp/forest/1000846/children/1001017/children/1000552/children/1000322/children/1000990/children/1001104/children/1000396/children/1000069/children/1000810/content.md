@@ -6,6 +6,7 @@ If |E(H)|=d|V(H)|-r and q_v:=3d-d_H(v), then sum_v q_v=3r. Deleting a vertex w p
 
 ## Body
 
+
 Fix ell and d=floor(2ell/3). Let H be an n-vertex linear triple system with
   |E(H)|=dn-r,
 where r>=0 is the edge deficit from the conjectural d n bound.

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4b9eef01a0ca29f0e7589146b7b4564e3efdf969476a0222d8daf4cfbdec504c"
 created_at: "2026-09-24T02:09:28.381219+00:00"
 id: "1000991"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A two-hole collision across one omitted cell gives the full wrong-entrance lift."
+statement_sha256: "c88fd67c70d68f0e42bba9359258de7375e968cda326597e9680d6ce9b56803a"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

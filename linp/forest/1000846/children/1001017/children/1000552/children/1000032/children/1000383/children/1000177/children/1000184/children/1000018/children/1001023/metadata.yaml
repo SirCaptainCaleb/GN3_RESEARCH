@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d7ee52dd01628fcfb437f78ba3ab05313ca7dfa1c115cd53354093afc47a3c7d"
 created_at: "2026-09-24T04:56:44.089684+00:00"
 id: "1001023"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every high entrance rail in the critical two-rank pattern crosses the low edge."
+statement_sha256: "d21b4879c7280f12c8c0a76a6665cc964f371b2f842773b7f8d96dc92cd4ce26"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

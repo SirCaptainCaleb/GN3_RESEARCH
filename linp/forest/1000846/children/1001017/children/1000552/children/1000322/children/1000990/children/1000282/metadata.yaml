@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5d668052b417f974d5c1f18e11f902a10f2f240285ff3a5275f7e462ae481e96"
 created_at: "2026-09-24T03:22:00.919718+00:00"
 id: "1000282"
 last_elevation_revision: null
@@ -56,6 +57,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every equality-layer bad witness omits a vertex of degree at least d plus two."
+statement_sha256: "2d204b39422d7b5b85388b6a756c75ab560e6f7af0fb5a33e13f75d9d9467842"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

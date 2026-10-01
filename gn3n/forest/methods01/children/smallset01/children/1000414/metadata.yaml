@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "42ea84e2178761bc08ca9aedd7a185efe180ae48c26148c5d6e8342506a95ce0"
 created_at: "2026-09-27T04:40:40.77884+00:00"
 id: "1000414"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Endpoint-pair Hamiltonicity graph branch: endpoint-pair Hamiltonicity has independence number at most two, yielding a dense complementary blocker family and a compact graph-theoretic encoding of local extension constraints."
 simplified_statement: "Endpoint-pair Hamiltonicity graphs have independence number at most two."
+statement_sha256: "d0bbad4d82e307393b2b96d2ae3a23c19569c1c63750afae184ead3bff442a05"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

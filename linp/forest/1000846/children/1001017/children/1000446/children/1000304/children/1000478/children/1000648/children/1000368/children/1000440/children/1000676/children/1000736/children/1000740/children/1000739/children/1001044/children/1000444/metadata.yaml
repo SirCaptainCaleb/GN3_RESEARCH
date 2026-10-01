@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "6c2cd6b1926155a2f4039875b4204d5347d39f0d576f55ad311f2f9082d857d6"
 created_at: "2026-09-24T03:52:09.900892+00:00"
 id: "1000444"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The low-low witness geometry is impossible in the p=5 pattern 4455."
+statement_sha256: "7c0a6267ca1eaae151449e393edb7b641ec11c975eed250f8bd1c17e912fef0c"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

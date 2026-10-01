@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "af629d828d4a42bbe11bc21532bdc57c9a1e3e41738bb31d39ba571adff4680b"
 created_at: "2026-09-27T14:20:49.760881+00:00"
 id: "1000504"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Sharp half-order shell optima are fractional perfect matchings on longest-path supports"
+statement_sha256: "430f036b8484b6bec9f74d7bee72a49bdf9b2c2c52d787b383591c74c4d4be5c"
 substantive_worker_ids:
   - 646
 support_reason: "current_certified_premises"

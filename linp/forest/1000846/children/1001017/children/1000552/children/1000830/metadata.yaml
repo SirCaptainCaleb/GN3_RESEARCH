@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "195a12c395bff4e94076dcda37c2c3696825f952a4c05a0e4a60564116b5176a"
 created_at: "2026-09-22T21:11:07.227831+00:00"
 id: "1000830"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The fixed-target single-blocker rotation graph is K4-free."
+statement_sha256: "ae234374259c0e3f7eee964da28f572ad7381b638fbae9a1b628b30b6bc860ed"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

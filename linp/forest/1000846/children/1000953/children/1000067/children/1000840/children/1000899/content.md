@@ -6,6 +6,7 @@ Let H be a linear 3-graph and C its binary incidence code. If ell is congruent t
 
 ## Body
 
+
 Fix a vertex v and choose t distinct incident edges. Since H is linear, these edges intersect pairwise exactly in v and their remaining 2t vertices are all distinct. Summing their incidence vectors over F_2, the vertex v survives exactly when t is odd. Thus the resulting codeword has weight 2t when t is even and 2t+1 when t is odd.
 
 If ell=4a+2, choose t=(ell+2)/2=2a+2, which is even. The resulting codeword has weight 2t=ell+2.

@@ -2,11 +2,13 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample. Let A,B,C be disjoint displayed tight paths of common order r>=3, and let x,y be distinct vertices outside them such that both x and y initial-extend each of A,B,C.
 
 Suppose a two-cover T of H-{x,y}=A union B union C is order-neutral on each displayed core and has exactly two cross-core edges. Suppose one T-component has leave-and-return form A_1,D,A_2, where A=A_1A_2 is split into two nonempty contiguous displayed blocks, D is one whole remaining core, and the other T-component is the third whole core E.
 
 Then H contains a proper Hamiltonian four-set whose complement is non-Hamiltonian with path-cover number two. Hence this two-crossing leave-and-return configuration is impossible in the witness-free unique-small plateau.
+
 
 ## Body
 

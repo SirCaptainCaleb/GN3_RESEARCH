@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fd40fda944f5eb86bb9f902491ab4ed380329432dbfb3f7a15996684ec32fca9"
 created_at: "2026-09-26T21:06:26.907774+00:00"
 id: "astra004cuttripledegree"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three pairwise-compatible labels at one cut force odd degree at least three."
+statement_sha256: "2766e1f64ecabff3cb977dc6035f21dbcca3d13ba1407cf604c14a9a71342aff"
 substantive_worker_ids:
   - 576
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ For every finite linear r-uniform hypergraph, choose one maximum endpoint path P
 
 ## Body
 
+
 Let H be a finite linear r-uniform hypergraph, r>=3. For every nonisolated vertex v choose a maximum endpoint path
   P_v=(g_1,...,g_p),  p=phi(v),
 ending at v, and let h_v=g_p be its last edge.

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2870c8f4cec0c4bb2da567c5f79d299c8371e23cc46d738e05647977e06da560"
 created_at: "2026-09-24T04:59:06.694651+00:00"
 id: "1000593"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A left-joint high entrance forces its high terminal across the central cut."
+statement_sha256: "29f8d31c80e375bb19130629076ff91496e3b6f7afacb5df2e53ea2aa160f24b"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

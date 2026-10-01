@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "919d44fc7bb9924cb6c5d3dbcbbfdfb7875e5e5a9eb1cd39aac14a234f6ff805"
 created_at: "2026-09-24T18:42:48.849144+00:00"
 id: "1000653"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Switching edges inject into the half-potential superlevel."
+statement_sha256: "5edf84ea9502545f9949ae118cbea26642d65f0c17b525995c46fccf24d6776d"
 substantive_worker_ids:
   - 201
 support_reason: "failed_or_blocked_premise"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9113e6357d05480f7add787afd4240f360f7c427cad1b03d48954c110f488f95"
 created_at: "2026-09-28T01:07:52.031585+00:00"
 id: "mandatorytriple4side_recomp01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Endpoint-minimal mandatory-triple covers have opposite side at least four, and the four-side branch forces the mandatory side to have order at least six."
+statement_sha256: "9363d56a27076b16c9efe31a82b1b178d5b56042ed5ad8f8150a9845b23c5f97"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

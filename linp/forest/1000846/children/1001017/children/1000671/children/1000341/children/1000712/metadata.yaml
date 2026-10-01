@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "3fe1a839d9cf21dbef6288a97cc3898497df29a0a9a55cbb5b496fbfff0b7554"
 created_at: "2026-09-30T02:52:59.255418+00:00"
 id: "1000712"
 last_elevation_revision: null
@@ -33,6 +34,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Conjecturally, terminal degree p+t forces either Ω(t) reachable terminal pairs or a rotation sequence omitting Ω(t) distinct original private path vertices."
+statement_sha256: "19471b21ad2dfd0c211be80eec6767002e45965e0a1f5d22d3e8e5ea622c83c3"
 substantive_worker_ids:
   - 228
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 7
+body_sha256: "40ccafe05d38748e476b647bd11f8bdc196c60f2d9556a02b8116e50c08a3635"
 created_at: "2026-09-24T04:02:17.606684+00:00"
 id: "1000737"
 last_elevation_revision: null
@@ -54,6 +55,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Near-seven-sixths Type-A structure: confine special edges to potential levels, analyze Type-A rank ladders and saturated rank-minus-one fans, and use rotations and predecessor-capacity recurrences to force exceptional entrances or expansion."
 simplified_statement: "Near the seven-sixths floor, almost all vertices have a special subhypergraph confined to individual potential levels."
+statement_sha256: "767de05f5c879721ddf6710526cce158bae99fb688cfb637c64d0407bdfe190c"
 substantive_worker_ids:
   - 253
 support_reason: "current_certified_premises"

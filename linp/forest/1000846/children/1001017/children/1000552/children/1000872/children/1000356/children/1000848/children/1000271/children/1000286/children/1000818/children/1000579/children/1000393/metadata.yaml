@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "597f83fc87847734e41d6b50b274ff2a2ecc90de432ffa92a3efd8380ca46527"
 created_at: "2026-09-24T06:29:19.728249+00:00"
 id: "1000393"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A unique intersection of two maximum endpoint paths is an aligned joint."
+statement_sha256: "99b0c2016a47e62113bcc250b13b376b870e4d6cd18d257ccbcbc86f0c7746a4"
 substantive_worker_ids:
   - 246
 support_reason: "current_certified_premises"

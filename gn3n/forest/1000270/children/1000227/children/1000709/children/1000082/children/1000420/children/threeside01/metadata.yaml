@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 10
+body_sha256: "46ecf326214a7f4d33c7c9bf18888cda754049fb94297714d46683e17b19e587"
 created_at: "2026-09-20T20:19:19.406053+00:00"
 id: "threeside01"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Three-side fixed-defect transport"
+statement_sha256: "d1007fb94b66c3f5e583f41070aa3ef36d2c55e3650ec2754101b6c1a8fc5cfb"
 substantive_worker_ids:
   - 603
   - 575

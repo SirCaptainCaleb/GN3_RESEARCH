@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ef28e1fe93b9c070d0f78ea8cefeeb2826908f9c775bf49f18089c944eb775bd"
 created_at: "2026-09-24T04:54:05.646185+00:00"
 id: "1000298"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A right-joint high entrance pushes the low terminal to the first path edge."
+statement_sha256: "240d28c71c5a3d04cb0742e520bd43be8c54312d6bfe76403d55e7b07e8fe5ad"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

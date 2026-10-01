@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c8813a76cb2566e7889564f676b02bc18c84349d099143cc939d00c9bfc51d4a"
 created_at: "2026-09-23T23:37:01.899326+00:00"
 id: "1000188"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every vertex deletion of a 12-vertex 5-regular linear triple system has a spanning P5."
+statement_sha256: "1e38163dafa48ac8d317ebde45d98b53de376b007c51ec2fb196062307ecadea"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

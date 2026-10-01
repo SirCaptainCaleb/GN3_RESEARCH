@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "89c92de4d1187e98f8e92675513658d97ee6fbce29f81ed0d6749c3e5ebdb2b5"
 created_at: "2026-09-28T17:38:06.96833+00:00"
 id: "1000164"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Reversal-support route: every minimum counterexample supplies a genuine reversing tight triple; dense Hamiltonian five-supports around that reversal are organized into stars and seven-vertex shells that force further reversal, order disagreement, or a bounded Hamiltonian output."
 simplified_statement: "Every minimum counterexample has a genuine reversing tight triple."
+statement_sha256: "85be13d1b4997b1db78c29c3ef80b2fe651836e9984984c40b6ebb47ca2a6824"
 substantive_worker_ids:
   - 659
   - 703

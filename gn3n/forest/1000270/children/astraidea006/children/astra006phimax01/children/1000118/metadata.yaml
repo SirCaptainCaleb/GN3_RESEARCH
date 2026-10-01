@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6202921f52fdfee4d8355a3dce5b30422db58e6ed7192083a7576ccfe2ff121a"
 created_at: "2026-09-27T20:19:20.729801+00:00"
 id: "1000118"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Quadratic-maximal three-block states forbid whole-block insertion across a central interval."
+statement_sha256: "8b259ba26d46d85bd3fe3a2b5daa0dadba02729907f0e7c4870cbe33987911fa"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

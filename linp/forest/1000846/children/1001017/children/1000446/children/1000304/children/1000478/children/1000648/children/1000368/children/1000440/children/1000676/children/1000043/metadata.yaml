@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "19cf5afd7466ab43afdf64b455ff1d94cb501e090fa1e5a5b50043db343fd155"
 created_at: "2026-09-24T03:31:07.690068+00:00"
 id: "1000043"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The p=5 pattern 4445 contains a canonical low-high terminal triangle."
+statement_sha256: "9ccb502bc3fdb147995b243aacd7860b1fe9ad5c3c931f269dfed9f55fb3826a"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

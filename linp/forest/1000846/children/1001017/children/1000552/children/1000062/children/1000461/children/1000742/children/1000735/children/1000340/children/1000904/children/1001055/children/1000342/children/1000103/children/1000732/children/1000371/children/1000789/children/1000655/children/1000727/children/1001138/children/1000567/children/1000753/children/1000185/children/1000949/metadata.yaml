@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8dcb18a7ed6b4128fda8400bd9cbb1667a0fd322308180b620061b7c26fb1a3a"
 created_at: "2026-09-25T12:05:03.453554+00:00"
 id: "1000949"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-minimal switching states require order at least 201 over 88 times the host rank."
+statement_sha256: "9b407b466e4723e0f18fbb4907fb3fabfe3e055bf03dd47dab07a0c439ad71f5"
 substantive_worker_ids:
   - 189
   - 211

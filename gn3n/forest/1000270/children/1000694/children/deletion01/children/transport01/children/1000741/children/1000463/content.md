@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a boundary tournament with pc(H)>2. Let
 A=(d,a_1,...,a_m), m>=2,
 be a displayed tight path, and let T=P|Q be any two-cover of H-d.
@@ -20,7 +21,9 @@ The terminal-end symmetric statement holds for a displayed path (...,a_m,d), by 
 
 No support-compatibility, crossing-count, or inherited-order hypothesis on T is required.
 
+
 ## Body
+
 
 Let S be the T-component containing a_1.
 

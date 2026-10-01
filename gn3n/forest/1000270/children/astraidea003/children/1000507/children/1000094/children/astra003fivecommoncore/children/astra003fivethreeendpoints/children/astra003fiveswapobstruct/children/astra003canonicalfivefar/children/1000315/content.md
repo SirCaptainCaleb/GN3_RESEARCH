@@ -14,6 +14,7 @@ Consequently, if mu=0, some vertex of C_0 is associated in (2)-(3) with at least
 
 ## Body
 
+
 Because X|P|Q is Phi-minimal and each outer component has order at least seven, adjoining any displayed outer endpoint e to X would change pair sizes 5,m to 6,m-1 with strict Phi decrease. Hence X union {e} is non-Hamiltonian.
 
 Fix a safe endpoint e. The six-set X union {e} is non-Hamiltonian while deleting e leaves the Hamiltonian five-set X. By the four-of-six theorem, at least three vertices x in X satisfy

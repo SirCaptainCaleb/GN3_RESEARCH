@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 8
+body_sha256: "e35065387b37800cf241a4301593552cf74f5332f6ad784f3ff25f188246dffb"
 created_at: "2026-09-23T21:33:24.158211+00:00"
 id: "1000423"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Order-six Latin rainbow-path branch: classify full-color rainbow paths in Latin-square constructions and use them to rule out the corresponding lower-bound mechanism."
 simplified_statement: null
+statement_sha256: "a54bc7f5edfa7eb11ec6f3cca632cf26cd7882b42435a2d89b6b4d09d3011fc0"
 substantive_worker_ids:
   - 225
   - 231

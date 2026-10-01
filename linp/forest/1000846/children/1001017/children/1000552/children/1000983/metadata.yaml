@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f7a619d8c3c8d4c30f523e014fb9cfb9e5ad511a9cdeeea48fe0532329ce3a39"
 created_at: "2026-09-23T04:23:35.289842+00:00"
 id: "1000983"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Longest-path terminal degree with exact double-blocker slack."
+statement_sha256: "ddc2cb86e8cbc0fcb57506e49d72e86ae40e4015f5a6641b04abf6bda92c53bf"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

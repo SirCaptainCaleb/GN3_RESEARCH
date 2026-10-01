@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the order-thirteen mu=6 shell, an exact deletion state H-x=P|Q is double-frozen at x exactly when P--Q is an isolated edge of the Hamiltonian-support odd graph G. For either deficient support P union {x} or Q union {x}, every Johnson-radius-three neighbor has degree at least three. More quantitatively, if J is the radius-three graph on nonisolated Hamiltonian six-supports and a=deg_J(P), b=deg_J(Q), then the twelve labels in P union Q force twelve distinct G-edges between the proper J-neighborhoods of P and Q. These bridge edges are C4-free, so 12<=b+binom(a,2) and 12<=a+binom(b,2). Hence max(a,b)>=5; if a=2,3,4 then b>=11,9,6 respectively, with symmetric conclusions.
 
+
 ## Body
+
 
 # Double-frozen deletion states are isolated odd edges with twelve forced radius-three bridge edges
 

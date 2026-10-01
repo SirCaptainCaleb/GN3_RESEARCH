@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "f190e5023a74d8332c7f34a615be20d4ae072110d88d7f2e4de8674ab2cd191f"
 created_at: "2026-09-22T08:28:05.141901+00:00"
 id: "1000207"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a potential-charged ascending edge, a maximum path at the lower-potential terminal either contains the low-potential entrance or admits a length-preserving rotation to an endpoint of no smaller potential."
+statement_sha256: "56f27ed731a9d647225e9d5f548adbb845c08bf64274f6c672060cbf3d6d6fca"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

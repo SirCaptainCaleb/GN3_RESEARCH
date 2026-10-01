@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "33da0cc71062a64b46a9f455129cbda839a1acdd8805324e885d5b668c425342"
 created_at: "2026-09-24T21:03:20.283303+00:00"
 id: "1001029"
 last_elevation_revision: null
@@ -56,6 +57,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Disjoint outer maximum rails force aligned gates past half the shorter rail."
+statement_sha256: "1cab1b2a405628d0a2ac0fb76f3ba5571aa67cf91c597b3a336eac45dd9a723a"
 substantive_worker_ids:
   - 201
 support_reason: "current_certified_premises"

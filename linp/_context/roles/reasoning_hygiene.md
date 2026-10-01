@@ -70,3 +70,8 @@ LOW-PRESSURE SEMANTIC-CONTAINER MAINTENANCE
 While inspecting or moving a reasoning region for hygiene, also notice whether its inherited semantic container still matches the region after the structural cleanup. Cheap, obvious fixes to semantic_container_text or a nearby boundary are appropriate, especially when a move would otherwise leave a misleading inherited summary.
 
 This is opportunistic secondary maintenance, not a hygiene quota or mandatory sweep. Do not split or merge containers merely to hit a target size, and do not expand a hygiene assignment solely to perfect Atlas granularity. If the correct boundary is not clear from the mathematics already being inspected, leave it alone.
+
+
+SEMANTIC-CONTAINER WORDING CHECK
+
+When hygiene exposes a container boundary, preserve or rewrite it as a directional summary of the represented branch: starting configuration/hypotheses, strongest established transition, and resulting consumer or unresolved gap. Do not use category inventories or “results about ...” summaries except for genuine organizational roots. Structural cleanup should improve the readability of the mathematical route rather than merely relabel its subject.

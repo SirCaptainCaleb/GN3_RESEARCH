@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "a8c3c873eaf47716fc8911454444bc0eedb26729884b3fde1ae17d4ad50433ea"
 created_at: "2026-09-26T01:11:26.362853+00:00"
 id: "astraidea003"
 last_elevation_revision: null
@@ -28,6 +29,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Certified quadratic-potential and endpoint-transfer machinery for pairwise repartition, including order-independent descent, merge, transport, and reduction statements across arbitrary order."
 simplified_statement: "Pairwise repartition connects three-covers to two-covers."
+statement_sha256: "95c54a8b0e7d512e7807bef091809957c5ac6a75588b9dbe0016413976d53b70"
 substantive_worker_ids:
   - 689
 support_reason: "not_a_proved_or_evidence_claim"

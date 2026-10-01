@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d9f1259043ae9d203dd1bc7ad2c4cad77ecadfce2930910ca1168f2ec6d0f5de"
 created_at: "2026-09-29T19:24:49.890022+00:00"
 id: "opposite_endpoint_cross_locked_package18"
 last_elevation_revision: 8826
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An unresolved opposite endpoint cross carries two four-side interface reversals and both adjacent pivot hooks"
+statement_sha256: "a41307f347f97f5aa8649186f1e0388fbd378546b5e65e03e2c71be7266cabe6"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

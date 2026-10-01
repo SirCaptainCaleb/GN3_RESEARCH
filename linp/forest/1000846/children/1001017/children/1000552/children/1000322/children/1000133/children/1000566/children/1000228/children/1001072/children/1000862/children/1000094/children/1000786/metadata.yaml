@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "b2761bbeaf65483ed5f4cf609eb21a5c2deeb5926430e650613ad74449ada1cd"
 created_at: "2026-09-24T02:14:59.159989+00:00"
 id: "1000786"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Zero-slack critical cores with at most two forest components are impossible in the good residues."
+statement_sha256: "8e28f5c9756d0f685f0844d3255b862a8e2afa5aa4947c742cd2948951e6f0b9"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

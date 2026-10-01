@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6065fb50244026e3e6b9006c511ed0e08d9a26fc8996abf7c175c3be2af13258"
 created_at: "2026-09-24T03:58:28.309084+00:00"
 id: "1000089"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The no-c second-rank-five state in terminal-left 4455 is uniquely clean."
+statement_sha256: "1c1d14d4b5bf63639dac9ec108a13791951b9aa3af9bef88db47a8f989c2ebe5"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

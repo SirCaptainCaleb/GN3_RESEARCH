@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "4b32e4823012b7384ce0dfe8ca5163c2ce22b8964768b26bb9d52b1d3a27cc8f"
 created_at: "2026-09-24T14:14:41.086693+00:00"
 id: "1000833"
 last_elevation_revision: null
@@ -64,6 +65,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Consecutive terminal-only singleton ranks sum to at least the host potential plus four."
+statement_sha256: "68aa33f1703a9a1d15c35d6982cd3e3274f0ec0beb436cd8d7690674316b9826"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

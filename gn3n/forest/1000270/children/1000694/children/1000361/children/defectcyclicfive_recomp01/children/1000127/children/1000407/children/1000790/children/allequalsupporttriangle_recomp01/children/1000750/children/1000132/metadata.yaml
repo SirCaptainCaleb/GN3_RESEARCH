@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e86d047a087a94fac67e11480a76a4c98b40c19859575d7a4856872e27cff74d"
 created_at: "2026-09-28T02:32:00.748902+00:00"
 id: "1000132"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Adjacent barrier families force three cyclic mixed four-paths"
+statement_sha256: "4243051547ce59bb7fb7a7e8d6eb34749f1a9906b80139ffc80327fb1c1d6ae0"
 substantive_worker_ids:
   - 660
 support_reason: "current_certified_premises"

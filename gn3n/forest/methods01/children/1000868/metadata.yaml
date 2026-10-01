@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "d6a7449cde6a4a7da86bdbd8335498c3a55225d50d2d408f2f201059849ce341"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000868"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A 3-(8,4,1) design canonically matches every nonblock four-set to its complement through four complementary block pairs."
+statement_sha256: "a3dee15c343c882cbea5f4bcf3ce122c261ad823cdcad186e2560d84013b7c46"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

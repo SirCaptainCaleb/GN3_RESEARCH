@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3eac865918e3b83d8bd65ca6c7b11c10a1fc7d4567edaa4c97ae5ff684172df7"
 created_at: "2026-09-25T21:32:17.534563+00:00"
 id: "1001092"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Fourfold triangle-host reuse forces two further color-terminal collisions."
+statement_sha256: "246a30f08b13c69a8e83a28f311c03726fd09e3234433471fdc8c523e81e00ac"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

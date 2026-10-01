@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c0100bd5f54a099acca889b279146067aef0a5d4bdf7a247ed2bd8956233f61b"
 created_at: "2026-09-25T12:05:52.000375+00:00"
 id: "1001132"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Five-elevenths retention upgrades the disjoint inside-outside packets."
+statement_sha256: "ee73f12d6469d59f8a6a0947c757a2947e147be6953f6bea28f5cbe1313bd80c"
 substantive_worker_ids:
   - 189
   - 211

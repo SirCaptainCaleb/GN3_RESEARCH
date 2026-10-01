@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a boundary tournament, let K be a vertex set, and let E={a,b,c,d} be four vertices disjoint from K. Suppose that for every unordered pair {x,y} subset E there is a Hamilton path P_{xy} on K union {x,y}. Then at least one of the following holds:
 
 (1) two of the six chosen paths P_{xy} induce different relative orders on their common vertices;
@@ -14,7 +15,9 @@ More precisely, if the six pair-extension paths are pairwise order-compatible on
 (e_4,e_3,e_2,e_1)
 is a tight Hamilton path on E.
 
+
 ## Body
+
 
 Assume outcome (1) does not occur. Then all six chosen paths induce one common relative order C on K.
 

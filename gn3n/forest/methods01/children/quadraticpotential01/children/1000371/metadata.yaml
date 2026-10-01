@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "0c5a59886d2d704d811cd0358b71bc9cc08b07f8e0105d28e603b7e0a25c6e57"
 created_at: "2026-09-27T16:30:10.497031+00:00"
 id: "1000371"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A global quadratic minimum with a four-vertex component forces almost the same imbalance in every deletion cover"
+statement_sha256: "44a500548f59423b5e2a149cfd2b978e662295a31d622cb9ec44a57cd7a8380f"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

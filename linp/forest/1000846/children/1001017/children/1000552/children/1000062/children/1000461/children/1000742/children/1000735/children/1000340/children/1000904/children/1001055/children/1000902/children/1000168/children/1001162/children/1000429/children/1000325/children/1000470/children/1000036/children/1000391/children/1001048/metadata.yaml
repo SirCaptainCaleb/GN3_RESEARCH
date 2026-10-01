@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "cc40a5ea10385fa5697b60e3cf4ee2cb0d8886a6965e56e21b1b830e96a9fd89"
 created_at: "2026-09-24T19:55:22.252346+00:00"
 id: "1001048"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An all-top edge forces a multiple-overlap pair among its three maximum endpoint paths."
+statement_sha256: "1ad6d48f255814c3badcc6fd0fc1f33919d3dbb803a6592421f3cc0971e8e560"
 substantive_worker_ids:
   - 250
 support_reason: "current_certified_premises"

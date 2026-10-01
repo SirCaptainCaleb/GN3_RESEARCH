@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "58f2d154b9c6dea85610ba100b14a8d1769c0878479c430c3e326e123610931d"
 created_at: "2026-09-24T20:50:58.419559+00:00"
 id: "1000602"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Disjoint outer rails force consecutive aligned joints into the late half."
+statement_sha256: "d31b691a60a99fa3257109ccf729243b959294af938d0db697b0ec2ae31a4fd8"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

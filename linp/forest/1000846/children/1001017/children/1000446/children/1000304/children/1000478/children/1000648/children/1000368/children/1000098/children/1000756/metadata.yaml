@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "e348311571594b9a8c209a77cdc1655554a5228bcb19b42ed8723480ed7633a1"
 created_at: "2026-09-22T05:50:00.265268+00:00"
 id: "1000756"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Terminal potentials of an ascending edge are at most twice its rank minus two."
+statement_sha256: "c01268ad8f95d75a92a5b43ce394db12623e55eb35290355c389c0a88dfd06e9"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Let H-x=P|Q be an exact deletion two-cover in a minimum counterexample. If the f
 
 ## Body
 
+
 # Boundary second-type pivots reduce to matching-block four-kernels
 
 Let H be a minimum counterexample and let

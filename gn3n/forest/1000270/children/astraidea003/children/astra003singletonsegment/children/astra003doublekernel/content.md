@@ -6,6 +6,7 @@ In the reciprocal-one-crossing first form, write B=(b,r,...) and Q=(...,s,q). Le
 
 ## Body
 
+
 # Two endpoint kernels sharing the transfer edge
 
 Assume the reciprocal-one-crossing first form from f6cdd6346980:

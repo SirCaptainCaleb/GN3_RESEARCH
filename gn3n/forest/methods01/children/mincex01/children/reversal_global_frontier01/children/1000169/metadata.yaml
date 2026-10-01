@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c5e9089e36710fcc8f5615344ec80b67f7020b1604d52c24a729c77b262fdc69"
 created_at: "2026-09-29T01:10:47.218219+00:00"
 id: "1000169"
 last_elevation_revision: 7702
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every facing deletion-cover endpoint pair lies in an explicit Hamiltonian four-window"
+statement_sha256: "deb81f66a180b7ba7207ea404b6eb264baa7668e0a373852d464f713b26b6c65"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "abbc5bd73e5656a45a3ca1d96f8248c9e8335dfb7d70fa794884c3e6a47222c6"
 created_at: "2026-09-27T20:33:10.439817+00:00"
 id: "1000663"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Near-Hamiltonian one-missing-vertex insertion branch: a path missing one vertex yields either a balanced cover or separated noninsertion obstructions, isolating the finite insertion geometry needed for subsequent endpoint-replacement arguments."
 simplified_statement: "A Hamilton path missing one vertex gives a balanced cover or two separated noninsertion obstructions"
+statement_sha256: "079349a50aef1d9742d5a1c8ef64f8a95bf46dcca08c0b27465a4850d1398148"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

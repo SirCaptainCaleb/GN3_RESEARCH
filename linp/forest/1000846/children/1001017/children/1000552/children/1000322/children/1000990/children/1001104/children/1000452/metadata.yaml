@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a06acc287bba7303201e3b3697bf17101eadaeb189fca994bdce01731b6204e7"
 created_at: "2026-09-24T03:33:29.540591+00:00"
 id: "1000452"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Equality obstructions have Steiner deficiency at least two."
+statement_sha256: "2371b9f9a2b7385c69b819e57c00845d2de307ad0ecace6157e8d8cc188614c9"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

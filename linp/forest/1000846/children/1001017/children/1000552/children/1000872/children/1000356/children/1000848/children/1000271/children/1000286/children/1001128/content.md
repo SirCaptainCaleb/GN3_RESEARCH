@@ -6,6 +6,7 @@ For four source-clean 0-1-1 edges through one assigned terminal, with ranks in a
 
 ## Body
 
+
 Let
   e_i={x_i,v,u_i}, i=1,2,3,4,
 be four 0-1-1 ascending nonspecial edges through the common terminal v, with ranks in {q,q+1}, and let Q_i be their chosen clean source rails as in 3d93f4d4b775.

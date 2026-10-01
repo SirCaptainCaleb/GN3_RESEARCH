@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b7214d33f145e52ad321bc9a9dc0beacd90c0f6abf89f0ba145d7e14107e01a5"
 created_at: "2026-09-24T11:26:06.265906+00:00"
 id: "1000744"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Source-hit imbalance exactly measures excess distinguished rail overlap."
+statement_sha256: "6f51dadc3848d2e93d79a97a53d89e3ff0caf83f748a682cffd6356bb8849afc"
 substantive_worker_ids:
   - 246
 support_reason: "current_certified_premises"

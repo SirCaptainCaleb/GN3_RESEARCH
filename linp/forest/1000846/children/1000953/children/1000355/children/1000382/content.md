@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let T be a linear 3-graph containing a linear cycle of length s, and let q be odd. In the additive Z_q blow-up of T, that base cycle lifts to a linear cycle of length sq. Hence a fixed template with v vertices and m edges has normalized density at its first forbidden path length at most m/(vs). In particular the 11-vertex, 15-edge P5-extremal template G0 contains a base 5-cycle, so its additive blow-up contains a 5q-cycle and is bounded by 3/11<1/3.
 
+
 ## Body
+
 
 Write the base cycle as E_1,...,E_s with joint clusters X_0,...,X_{s-1} and private clusters P_i. In the additive transversal design over Z_q, restrict edge type E_i to triples whose successive joint coordinates satisfy y=x+a_i. The private coordinate is -2x-a_i, injective in x because q is odd. Choose the shifts so A=sum_i a_i generates Z_q, for instance a_1=1 and the rest zero. One circuit sends state x in X_0 to x+A, so q circuits traverse all q states before returning. Joint vertices are used only by their two consecutive lifted edges, private coordinates are all distinct within an edge type, and nonconsecutive base cycle edges are disjoint. Thus the lift is a linear cycle of length sq.
 

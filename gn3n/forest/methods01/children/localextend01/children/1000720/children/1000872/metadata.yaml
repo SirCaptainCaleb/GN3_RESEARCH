@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "487c02628b060eb2605e4edf522001cf3a5493d2f01d0d69221ac724969a2b27"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000872"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A tight triple inside a bad four-set Hamiltonizes with every exterior label whose full four-set extension remains bad."
+statement_sha256: "75cdc801790755cebe1c536994a8367ea558cdfa45a61a71b86cb7dbfdbdf262"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

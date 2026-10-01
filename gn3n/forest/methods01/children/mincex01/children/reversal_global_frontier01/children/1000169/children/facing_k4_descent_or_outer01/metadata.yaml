@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "98ea276473a90d65f00afc6087b543818a0a6e2500585b5bdadbedf58c160175"
 created_at: "2026-09-29T17:48:06.542227+00:00"
 id: "facing_k4_descent_or_outer01"
 last_elevation_revision: 8453
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Facing endpoint four-windows either give a six-unit quadratic drop or omit the deletion label"
+statement_sha256: "829065346ccf8f821b8fac882ec3d234288200dc6ae3e421c8ee1594ede17ce1"
 substantive_worker_ids:
   - 637
 support_reason: "current_certified_premises"

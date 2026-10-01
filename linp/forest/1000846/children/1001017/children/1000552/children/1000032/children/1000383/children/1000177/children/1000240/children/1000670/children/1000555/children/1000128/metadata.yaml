@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1101c23a6073ddb1b832b34182096ac152a3d059d340998b53f5414529b6b140"
 created_at: "2026-09-24T14:13:26.64031+00:00"
 id: "1000128"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Canonical source rails are downward-complete against common-terminal competitors."
+statement_sha256: "7c319c9475eed97fa679f62a14727229f07b1c8d1a29e1ddf3dbd261e2881b90"
 substantive_worker_ids:
   - 258
 support_reason: "current_certified_premises"

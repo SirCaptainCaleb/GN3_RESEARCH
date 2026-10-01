@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample of order n>=18. Let k_1,k_2,k_3,k_4,a,b be six distinct vertices such that both
 (k_1,k_2,a,k_3,k_4)
 and
@@ -17,7 +18,9 @@ Then H contains either:
 
 Thus, above order seventeen, a repeated central-gap insertion on one ordered four-core is already a standard no-trapping disturbance.
 
+
 ## Body
+
 
 The deletions U-a and U-b are Hamiltonian by the two displayed five-paths.
 

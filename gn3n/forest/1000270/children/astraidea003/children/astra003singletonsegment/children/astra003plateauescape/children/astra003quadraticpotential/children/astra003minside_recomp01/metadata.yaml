@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a6c20bbd56c3b9bdd6e23110bcaa7c95f34d6b17d4906d2355b87d90990a8c83"
 created_at: "2026-09-28T00:46:38.580918+00:00"
 id: "astra003minside_recomp01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Quadratic minima have no one- or two-vertex side, and a three-side forces crossed endpoint five-sets."
+statement_sha256: "6a289f5fbe1942a33e919e71dd98a6da57e0db319bef5a259d7e72e14a236875"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

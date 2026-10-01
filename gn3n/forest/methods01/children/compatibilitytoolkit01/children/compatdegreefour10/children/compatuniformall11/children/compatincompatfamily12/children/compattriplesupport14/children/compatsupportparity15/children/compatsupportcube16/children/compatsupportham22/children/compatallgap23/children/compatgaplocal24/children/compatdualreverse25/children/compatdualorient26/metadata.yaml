@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ac206e578fc0eac8a0ba0568ae60f98acb64e2e4a72d3b9752015aa67bc09aec"
 created_at: "2026-09-27T04:44:22.611077+00:00"
 id: "compatdualorient26"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Synchronized reverse crosses give a Hamiltonian four-set unless their orientations oppose"
+statement_sha256: "19b74fd3a57d944d544cddfcd6ddbe97ec8c7917044c745c49fc66ff4dd98419"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

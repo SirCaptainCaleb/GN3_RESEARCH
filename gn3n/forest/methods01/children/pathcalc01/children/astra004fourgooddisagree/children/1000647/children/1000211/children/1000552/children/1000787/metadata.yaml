@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "149cb6bbd2bc359579e9654558739400f7a21ab2b7f51f6fd95d729f98027ff4"
 created_at: "2026-09-28T17:19:28.603684+00:00"
 id: "1000787"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A tight-cycle support with pc-two complement forces a reverse obstruction at every cyclic cut."
+statement_sha256: "89e80699f4a6aeab6c69adda7c4aca3667abadfa06a94c9780bed9f7c4bae28e"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

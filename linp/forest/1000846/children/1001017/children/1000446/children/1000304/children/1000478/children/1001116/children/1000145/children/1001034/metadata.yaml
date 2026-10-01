@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "05486afa7502e5eded711c9b7493966b18e9759de03254ca2050342b70ec4379"
 created_at: "2026-09-21T22:56:15.259111+00:00"
 id: "1001034"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "The 11,11,17,17 common-terminal gadget and its extension tests, including explicit fifth-edge constructions and classifications that delimit which local spacing statements can still be true."
 simplified_statement: "Four common-last ascending edges can have values 11,11,17,17."
+statement_sha256: "ed251268af95f18d9277143044e6f0fb5d3b222165f1e8c4c493cb7df75682c1"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

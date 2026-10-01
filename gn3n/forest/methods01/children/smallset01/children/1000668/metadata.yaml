@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "dd4a5796fad05a4d030f39131bbed90b76f590184cb2bfa18f69139a1eb4c6f0"
 created_at: "2026-09-27T20:46:12.081942+00:00"
 id: "1000668"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Opposite reverse hooks on a five-path force a Hamiltonian outer five-window."
+statement_sha256: "06d48ed662c71fb2199a5131db59fc6ccea5c3757521d9ff2df8a58f01076162"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

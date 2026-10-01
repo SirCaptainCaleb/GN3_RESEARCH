@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "35eee6f7a34fec18e30b9a6b9c0ee6479dd280ea052925cbe6be932b7392cbba"
 created_at: "2026-09-24T04:23:27.930111+00:00"
 id: "1000864"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Distance-two private clean entrance contacts are incompatible."
+statement_sha256: "ce1a1ecfeef1bdb24c44dd32679fc4c1959eabb9102bb108743c2ca787df2eeb"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

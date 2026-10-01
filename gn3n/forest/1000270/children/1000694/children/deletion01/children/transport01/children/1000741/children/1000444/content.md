@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample, and let mu be the minimum smaller-component order among all two-covers of one-vertex deletions. Let H-y=R|Q be a deletion two-cover with |R|=mu<=|Q|, and let z be an endpoint of the displayed path R. Put A=V(R)-{z}. Choose any two-cover T of H-z.
 
 Then at least one of the following holds.
@@ -17,6 +18,7 @@ Q_1 | (A, y, Q_2),
 where Q_1,Q_2 are nonempty Q-blocks. If the displayed orders within these blocks disagree with the inherited R,Q orders, explicit order disagreement is already present.
 
 In particular, probing an endpoint of a globally minimum deletion side cannot produce an arbitrary support-incompatible cover: absent direct crossing/order disagreement it is either a support-compatible endpoint/internal restoration or one rigid two-crossing block configuration with the entire (mu-1)-vertex remainder of the minimum side kept intact.
+
 
 ## Body
 

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "858a2ea6cb42da3af75cbf80f15ff84401450ea78b009c27fea2311d00d44b18"
 created_at: "2026-09-24T03:44:30.54062+00:00"
 id: "1000913"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Double far-edge contact on a canonical 4445 entrance rail is confined to its first two edges."
+statement_sha256: "5ab1dc3be711eac8ed9665c0e291d77dd75eda02c69fd6047860d3fff16c9da6"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

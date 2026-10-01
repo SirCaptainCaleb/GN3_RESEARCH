@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e3a627bf72c299df97ce30ee66711d9c155d6990a9ea0308c150c94bc5f52661"
 created_at: "2026-09-22T22:05:53.667524+00:00"
 id: "1000922"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The entire contact-snake defect reduces to 0-1-1 ascending edges."
+statement_sha256: "1c8057dc144f0bed480ad41881c0cbc59798786b0c58e1aa0914aa0f3ae0b41a"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

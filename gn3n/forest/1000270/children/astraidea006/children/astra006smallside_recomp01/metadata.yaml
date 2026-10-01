@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7ae1250d98ef25baa9652fb1220a7b82572caa2ce7b31558f0e8fa832259a121"
 created_at: "2026-09-28T01:24:31.70224+00:00"
 id: "astra006smallside_recomp01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Quadratic-minimal relocation states have no tiny side and a three-side has a complete long-neighbor interface"
+statement_sha256: "1f79ed29b1bbdd118947902ea9537bb218fea6a9bdd8b93d180ce47462925cec"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

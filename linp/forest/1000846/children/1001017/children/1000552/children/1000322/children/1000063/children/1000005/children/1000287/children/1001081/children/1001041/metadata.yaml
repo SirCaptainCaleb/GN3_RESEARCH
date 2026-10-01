@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4a1811dc595a46afd0fd8740cd2d181bbdaa21fadcf2e949e18f75f3467d3507"
 created_at: "2026-09-24T01:06:51.254441+00:00"
 id: "1001041"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Colored-complement decomposition of the general punctured-Steiner residual."
+statement_sha256: "673b77df7f7adf3c835a52f4e7f35f81ef02057e1945bbfa2fcba997f8ed7404"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

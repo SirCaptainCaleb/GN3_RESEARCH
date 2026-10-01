@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample and let {F_t:t in D}, |D|>=3, be a pairwise support-compatible family localized as F_t=(X-{t})|Q, with H[X] non-Hamiltonian and Q Hamiltonian. Then for every y in Q and every exact two-cover G_y of H-y, G_y is support-compatible with at most one F_t; for |D|=3 some single F_t is support-incompatible with chosen covers at both endpoints of a Hamilton order of Q. Fix such t and write A=X-{t}. Every endpoint cover has at least two ordinary edges crossing the three-part partition A|(Q-{y})|{t}. Moreover, either one endpoint has at least three such crossings, or one endpoint has a direct A-(Q-{y}) crossing, or the two endpoint probes force relative-order disagreement and hence a reversed common edge, reversing tight triple, or vertex-simple tight cycle.
 
+
 ## Body
+
 
 # Support-compatible deletion families force synchronized endpoint crossing multiplicity or order disagreement
 

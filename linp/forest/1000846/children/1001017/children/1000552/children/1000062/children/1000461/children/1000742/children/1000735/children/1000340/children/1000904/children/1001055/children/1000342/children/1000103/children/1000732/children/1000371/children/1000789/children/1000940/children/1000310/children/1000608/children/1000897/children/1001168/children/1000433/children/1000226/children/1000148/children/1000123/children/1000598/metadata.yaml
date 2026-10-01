@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "69094f8c8b86ca3a2c9a0ce7948a7630b79dff0671da6ae094723eeaa2d279ab"
 created_at: "2026-09-25T21:53:36.854561+00:00"
 id: "1000598"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Tight U_11 color-terminal collisions contain a half-size matching of multiple-overlap source-path pairs."
+statement_sha256: "7736571c0fa68278a07d9e0d1fbbab7f06e75295b7ae903b360c90bdf99272ab"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "54db21efa211f04a6a03fb6cb04cf260ab741642bab522f93239b73769bc660d"
 created_at: "2026-09-24T02:46:28.785744+00:00"
 id: "1000766"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Unused colors at a reachable endpoint avoid every outgoing forest port."
+statement_sha256: "f6ce6690647137a95e0c27deadedae45ae5117ffc3c61522f6b4f946ba44beba"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

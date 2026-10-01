@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f4754f0773c7200b692ef7bb8a8f988204b78d9aae4983386921dbea368b571b"
 created_at: "2026-09-27T04:41:54.146175+00:00"
 id: "compatallgap23"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "All-split support switching forces order disagreement or adjacent-gap concentration on both cores"
+statement_sha256: "1dd05e746164b58daa9cfea96d56746e046779259d1af93e0040d6a36bb6cdaa"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

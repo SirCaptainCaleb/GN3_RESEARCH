@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "91cc0371e9840f21676faee1e281a01be30db6d4f6f2580741d80a1fd761ee6b"
 created_at: "2026-09-25T20:48:20.655048+00:00"
 id: "1000828"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Reciprocal type X is a short nonspecial chord cycle."
+statement_sha256: "77c2e2ccfada42532be155df2b31c68e72ca01574559274d7c4897df4a867fb2"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

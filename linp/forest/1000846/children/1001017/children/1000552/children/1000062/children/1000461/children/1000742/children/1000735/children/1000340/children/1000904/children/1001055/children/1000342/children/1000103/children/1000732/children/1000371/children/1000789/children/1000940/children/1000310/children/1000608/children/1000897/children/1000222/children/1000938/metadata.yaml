@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e70633ac28643640ec1347cfa03caf6a06496ca174921371a70dd5e911d85af4"
 created_at: "2026-09-25T20:31:18.773155+00:00"
 id: "1000938"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rank spread bounds nondecreasing rainbow terminal paths in a path-free hypergraph."
+statement_sha256: "283c282241f6d2453863b0e64eba74dd4ba28cb996c7a8690e1f8a6f48c269c1"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

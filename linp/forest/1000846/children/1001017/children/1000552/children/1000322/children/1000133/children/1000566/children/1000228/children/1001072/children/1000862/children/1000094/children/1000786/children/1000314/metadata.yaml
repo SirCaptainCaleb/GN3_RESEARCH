@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "72ade6ee66d106fee19b3543ff5fef5bf9bb9672fd6d5b9ae5e27071f579a49e"
 created_at: "2026-09-24T02:15:59.799459+00:00"
 id: "1000314"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Zero-slack two-component critical cores are impossible in the good residues."
+statement_sha256: "e3d5c512f28514128ea04d19edef8ba1c516dd5282a5f127181a593267f9bb2e"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

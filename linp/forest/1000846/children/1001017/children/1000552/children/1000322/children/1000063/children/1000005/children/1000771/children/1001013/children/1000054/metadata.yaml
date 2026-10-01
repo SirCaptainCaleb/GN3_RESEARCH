@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ce5b9f1acb9f991e33472ee994169949ea5860ca63e8b477cd55e71de596e858"
 created_at: "2026-09-23T21:42:49.330946+00:00"
 id: "1000054"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Each cyclic STS(13) block orbit has matching number three."
+statement_sha256: "52a5b30de33bf50e78920da3f2c0a926866f38e2a83c83b98e9d7e59d25e46d5"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

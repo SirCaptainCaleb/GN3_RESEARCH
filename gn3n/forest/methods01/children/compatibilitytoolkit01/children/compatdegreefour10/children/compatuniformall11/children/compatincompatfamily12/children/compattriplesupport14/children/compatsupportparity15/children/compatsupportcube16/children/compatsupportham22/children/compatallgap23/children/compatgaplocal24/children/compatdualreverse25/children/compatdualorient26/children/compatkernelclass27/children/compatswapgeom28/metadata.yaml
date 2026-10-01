@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1032c635e9662b809b111a17cac96d89bf29ce329e723ce9bd75fbf8fa3b23ce"
 created_at: "2026-09-27T04:47:57.585183+00:00"
 id: "compatswapgeom28"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Opposite reverse-cross orientation is exactly a two-core label transposition"
+statement_sha256: "bf82fff4d718830b7ac4b3a05be737c9bebff368fb9de40da665f1c06714eb30"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

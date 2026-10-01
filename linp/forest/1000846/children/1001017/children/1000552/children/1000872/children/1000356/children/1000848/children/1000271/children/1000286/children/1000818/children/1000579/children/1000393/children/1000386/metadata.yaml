@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "935b127f5f49e1c21dd475df11db99f5972d483a53ff10fdcfcb789de81cb338"
 created_at: "2026-09-24T11:26:54.282714+00:00"
 id: "1000386"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A unique source-rail intersection forces reciprocal terminal contacts."
+statement_sha256: "81faa1d4c1d669de75087f0f18122a1370ace9b6bbce0d388471cdedfbc463ed"
 substantive_worker_ids:
   - 246
 support_reason: "current_certified_premises"

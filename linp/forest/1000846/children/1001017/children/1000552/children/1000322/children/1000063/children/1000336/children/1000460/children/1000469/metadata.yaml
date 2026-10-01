@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "725f40dc2f2f23d91126778a7104179e9853a6a19677ece67c30ee2d0a0b4ec5"
 created_at: "2026-09-22T19:28:49.884572+00:00"
 id: "1000469"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A terminal-clean boundary transfer closes a linear q-cycle and, in the flat ascending case, realizes equality in terminal contact spacing."
+statement_sha256: "f908d586e0e13b8180232af1cc4d72be53ac8e2814e28df54c9702b50f7a5b37"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

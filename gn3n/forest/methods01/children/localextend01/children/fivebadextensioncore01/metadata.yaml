@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7f2e8fe8839a8dd69c696416ab8c95a46f72163986023fbe008f0cdeebd6fb67"
 created_at: "2026-09-27T15:22:38.841459+00:00"
 id: "fivebadextensioncore01"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Bad extensions of a Hamiltonian five-set have a common deletion core."
+statement_sha256: "f2d7d6b002cc4051b1c753ade2c2759898f2b77014deb4767b8dcf3147f79116"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

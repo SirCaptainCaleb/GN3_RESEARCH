@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "413584b3677f3ca0ba8b8e940de4cf5cf053e1b6723b1f6d07d6fc9d1ce55067"
 created_at: "2026-09-24T01:49:33.053085+00:00"
 id: "1000169"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two-hole alternate witnesses have exact alternating blocker defects."
+statement_sha256: "3045bb3cc6fae3ecb3ba875edf16b8810cfcd65313ae983b2dbfaad01d9ecd4d"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

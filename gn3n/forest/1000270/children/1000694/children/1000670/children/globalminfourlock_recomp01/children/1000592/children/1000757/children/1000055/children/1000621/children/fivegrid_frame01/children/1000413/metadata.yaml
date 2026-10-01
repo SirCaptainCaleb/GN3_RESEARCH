@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ca0de7e9242fd640abddb135bc7338841ac1b377b89dce142fc08e62278ea187"
 created_at: "2026-09-28T10:59:19.421424+00:00"
 id: "1000413"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A five-side at a local quadratic minimum forces endpoint six-set order disagreement."
+statement_sha256: "27ee3a8163644036a65a7f9dd090284c59d9f96b3855a988b3fa86831683ee4f"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

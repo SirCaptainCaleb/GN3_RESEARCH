@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "f2152a066fb204ec63ab1f3adda86b7f119843bb1ca93a9dda8ea6374a6716af"
 created_at: "2026-09-28T09:57:45.356929+00:00"
 id: "1000355"
 last_elevation_revision: 0
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "All but two consecutive pairs in a large one-gap corridor force Hamiltonian windows unless disturbance already occurs."
+statement_sha256: "8571af93d88c55c754b10c4571561f1f9bee4d30527479894d7453fae3a59740"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "007fbe50a1ac2bc84a44da2fb7ec998c23833122b815cdc1ee123607cbd4b2ee"
 created_at: "2026-09-24T05:38:14.282788+00:00"
 id: "1000108"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "One-low odd-boundary branch: force the low witness into the central C position and eliminate or rigidify the resulting visible-entrance configurations."
 simplified_statement: "In a source-clean one-low odd-boundary obstruction the rank-q witness is forced to C."
+statement_sha256: "2f89b4039f278033b7f218ed97903788f8346d0a6381675c53482c0b1e0e01ee"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

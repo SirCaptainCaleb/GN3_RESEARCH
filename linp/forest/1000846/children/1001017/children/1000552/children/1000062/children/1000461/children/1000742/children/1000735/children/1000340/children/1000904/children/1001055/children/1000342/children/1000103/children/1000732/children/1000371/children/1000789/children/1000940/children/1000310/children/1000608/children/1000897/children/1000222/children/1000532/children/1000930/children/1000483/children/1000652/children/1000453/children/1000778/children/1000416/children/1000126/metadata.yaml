@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b5dbf8e387334a7b844000dde3f451c67a4539a1d5780bccbbbca56533a40c24"
 created_at: "2026-09-25T20:49:58.68799+00:00"
 id: "1000126"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two crossing backward collisions either shortcut to a linear cycle or expose a further collision."
+statement_sha256: "d8a323bb07c3710f506c3e0242ba240d1a3c083214cfe84ae426bb25eedda6c1"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

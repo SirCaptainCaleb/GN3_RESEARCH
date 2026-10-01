@@ -6,6 +6,7 @@ Let H be a hypothetical order-eleven minimum counterexample. For every three-set
 
 ## Body
 
+
 Let (H) be a hypothetical minimum counterexample of order eleven.
 
 Fix an arbitrary three-element set

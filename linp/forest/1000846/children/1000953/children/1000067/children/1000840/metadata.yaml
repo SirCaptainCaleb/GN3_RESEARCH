@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f01d5c6fb22c227c2ed79195cfa929486b30817276975f00c0e72c910bf67c7e"
 created_at: "2026-09-22T15:07:55.745779+00:00"
 id: "1000840"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Incidence-code obstruction program for Steiner lower bounds: missing codeword weights certify forbidden path lengths and delimit what algebraic constructions can achieve."
 simplified_statement: "If a 3-uniform hypergraph contains P_ℓ, then its binary incidence code contains a word of weight ℓ+2; hence absence of that weight certifies P_ℓ-freeness."
+statement_sha256: "75166f46354bbdfa693641bfdc1dfb74e3858a8469c2ba586390fd502e312a8c"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

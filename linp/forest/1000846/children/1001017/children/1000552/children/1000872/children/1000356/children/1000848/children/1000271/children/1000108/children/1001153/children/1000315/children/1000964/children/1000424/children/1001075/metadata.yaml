@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8a9d9739776e66f5021e701b2dc539f1e3d10bb23ee6a4a306a82fa8b7d37e8f"
 created_at: "2026-09-24T11:26:23.374667+00:00"
 id: "1001075"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The flat low-terminal branch is theta-or-terminal-central."
+statement_sha256: "f767d6d24303803dd732fae43fbfd6da8020070706041f9730cceb80cc5fdf46"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

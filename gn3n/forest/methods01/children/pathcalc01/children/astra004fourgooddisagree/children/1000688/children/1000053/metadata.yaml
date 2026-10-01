@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "ed0e07ed35df62e9c0f12910549723297ef3ec15e4f05859fa3f63ed2a95c35e"
 created_at: "2026-09-28T17:06:28.916028+00:00"
 id: "1000053"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "From order fifteen a non-Hamiltonian six-set complement square yields crossing, order disagreement, or an order-fifteen endpoint obstruction."
+statement_sha256: "832d6532a470c86b96491bc1e2b3c20d2d241b8fcbbe2f6af54bb7b21c0e09dd"
 substantive_worker_ids:
   - 700
 support_reason: "dependency_verification_pending"

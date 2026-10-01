@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "057c1e5518d7ca380a8a7d529c30cdf74051f301b0fc9becfef473006b9f3368"
 created_at: "2026-09-29T18:48:46.536245+00:00"
 id: "local_four_interior_positioned_kernel01"
 last_elevation_revision: 8656
@@ -52,6 +53,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A locally minimal complete endpoint family yields a positioned Hamiltonian interior kernel"
+statement_sha256: "efeee0df75217849d93568abe60e9df33581af1e02bb7b91216ae296095e5bf7"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

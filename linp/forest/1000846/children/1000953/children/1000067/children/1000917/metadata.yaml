@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e325fda734b1d19a5e16d5069018f88a8e81b6ebdeea2babf47822630aac8ff6"
 created_at: "2026-09-22T14:44:35.955086+00:00"
 id: "1000917"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a spanning P_ℓ in a 3-graph on 2ℓ+1 vertices with joint set J, the binary incidence code contains 1_V+1_J, imposing parity constraints against every dual codeword."
+statement_sha256: "7d7e7451b821b20dfa21cd9bbf9a6df4112182ea035c02d48b112fd58ea7bd85"
 substantive_worker_ids:
   - 178
 support_reason: "current_certified_premises"

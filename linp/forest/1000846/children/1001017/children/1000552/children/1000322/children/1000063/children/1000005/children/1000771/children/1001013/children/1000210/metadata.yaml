@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "36c75a6647147a7a5a4c5032837de249b29a3801d349f5c551dbefcfbcf2b7d0"
 created_at: "2026-09-23T21:35:32.328765+00:00"
 id: "1000210"
 last_elevation_revision: null
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three affine endpoint paths do not survive arbitrary matching deletions."
+statement_sha256: "9eedb3ac27664d3d9c11566ce36c905010934da66865694bf06e790e7ad827d5"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

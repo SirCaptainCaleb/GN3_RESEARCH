@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b44ee8120c6fa2380ed7d1c1d57782d2d0c3140844cb4eba4d5aeb96c6a14f99"
 created_at: "2026-09-28T01:27:51.193926+00:00"
 id: "twosourceblockade_recomp01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Global quadratic minima obey an exact two-source endpoint blockade and a near-balance-or-square dichotomy"
+statement_sha256: "39ebb3bef47733adec0b3b25baed0dd6cf7ca64bbb571d98674d0b864d4624c0"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

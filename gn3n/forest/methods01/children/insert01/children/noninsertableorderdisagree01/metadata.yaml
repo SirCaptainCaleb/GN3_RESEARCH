@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fb02930cfab9b30e7d42e010077dbe5dd62da4b49ab20a3e7a5d0135ea456006"
 created_at: "2026-09-27T15:23:11.535533+00:00"
 id: "noninsertableorderdisagree01"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A Hamiltonian enlargement of a noninsertable path forces order disagreement."
+statement_sha256: "7f336f33914c649671857c127ccfc00e216d930725e31cea94917486fa92d5f1"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

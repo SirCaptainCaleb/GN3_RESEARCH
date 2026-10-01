@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d43e3f48d34118d4e9e8c6e3c0d9be99afd61b2f2a784575b25353dd64bd3ce8"
 created_at: "2026-09-27T04:23:13.145243+00:00"
 id: "compattripletransport13"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A support-compatible order-incompatible triple either disagrees on the common core or moves every deleted label between two gaps"
+statement_sha256: "9eb3c82b0350bb54a1beccc384f6c1ad35385b9d153bbc27be1badebb2d5ed32"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

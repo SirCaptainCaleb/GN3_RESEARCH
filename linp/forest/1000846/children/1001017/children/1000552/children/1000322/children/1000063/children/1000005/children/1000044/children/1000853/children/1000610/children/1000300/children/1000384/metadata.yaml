@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "81b50d1859064274932bd790f7f8503d44836fc94f9df784a8104c9b9d766c9e"
 created_at: "2026-09-24T00:06:23.893709+00:00"
 id: "1000384"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A late Class-III single blocker is pinned to the private vertex of g4."
+statement_sha256: "4486e55c8ed218b1630c1cfe93ea3e8f252341f10e59d641501cab2709467ba9"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

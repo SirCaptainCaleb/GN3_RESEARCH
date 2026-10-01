@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "372fe5af4d84ad6c9c5a9da55694c5f17609f6055c465ec1237d09eb2a7c720a"
 created_at: "2026-09-29T18:46:48.114259+00:00"
 id: "four_side_double_interior_reversal_m6_01"
 last_elevation_revision: 8656
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A locally minimal four-side beside a path of order at least six has two interior reversal labels."
+statement_sha256: "88d755f214d4219d8364159cbd13378edb6f402be37e39bfe7a9d1348cf3d795"
 substantive_worker_ids:
   - 605
 support_reason: "current_certified_premises"

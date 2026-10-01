@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5d53b43e37c865764950697d102370cdcab213ae7ca2dd9acf36786d9556bce4"
 created_at: "2026-09-25T21:33:35.447344+00:00"
 id: "1000463"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An internal edge above the endpoint-path rank propagates forward with loss at most one or creates a cycle."
+statement_sha256: "6815b7668f054e6d68c0e8587c0b1d10f74e3267d067aaa7ae36a68781452899"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

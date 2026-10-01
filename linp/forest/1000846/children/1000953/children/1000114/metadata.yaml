@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "94e4e4d7f7c514616d4bb43b4d887285b46424a523ed6d4b8928110cbe258796"
 created_at: "2026-09-22T17:51:19.629574+00:00"
 id: "1000114"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "52011f6ea52d63b29178bab5086169b67d1911adc4392264bdb8bb00fb11e9ad"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

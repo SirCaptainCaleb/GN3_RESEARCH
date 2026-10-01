@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d85adb0a85753a605eeef9c92c756f52a168d5f208d12359d7ec01168694f355"
 created_at: "2026-09-27T14:14:29.919119+00:00"
 id: "1000022"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum counterexamples already satisfy a stronger n-minus-one version of Astra 009"
+statement_sha256: "b959b277a5a04caf2c464d47365212fa4fa90d8a0cdff70ca3ab735b8b792ceb"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

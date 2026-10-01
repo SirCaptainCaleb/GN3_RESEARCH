@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "825a0373135d4ef4d167c95e5c1bec65eefb84bb617500894c458f1526f0a172"
 created_at: "2026-09-21T22:27:38.341605+00:00"
 id: "1000293"
 last_elevation_revision: null
@@ -26,6 +27,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The conjectural incidence-rank bound rank_R(N_↑)≥2A/3 for ascending edges is false; a family with A=9t has rank 5t+2 for every t≥3."
+statement_sha256: "9b663953ca404b2add8c571deea02eea31bb0967597a0272de1930a043458835"
 substantive_worker_ids:
   - 234
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "643ee0ec2f73e506547af85162d38dd3cc84c8f8e6cb2649daf2018b9e94cb00"
 created_at: "2026-09-22T04:31:33.509488+00:00"
 id: "1000535"
 last_elevation_revision: null
@@ -34,6 +35,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Conjecturally, if a finite linear 3-graph of minimum degree δ contains a nonspecial edge and has maximum linear-path length L, then 3δ≤2L+2."
+statement_sha256: "205b333ecb87932d91bba8e41088be7d8b1afced751b38753947a3e64ab0b320"
 substantive_worker_ids:
   - 262
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d83562893719424c4b2fdb6c44d59fc6b57f0726607cafbbe5b195c83969df0e"
 created_at: "2026-09-27T21:15:05.913339+00:00"
 id: "1000727"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Same-isolated unique-crossing endpoint probes force relative-order disagreement"
+statement_sha256: "173769686a3e2577f5bdb4270469f31e06ea652ef52cbf0c62a08646b877b273"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

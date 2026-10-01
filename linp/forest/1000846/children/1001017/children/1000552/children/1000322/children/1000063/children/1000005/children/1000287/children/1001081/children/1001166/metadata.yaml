@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a9da038e5a33af72846c6e059d2bb2cafcd390012b811cf74a34078aaa21f6ba"
 created_at: "2026-09-24T01:07:25.877543+00:00"
 id: "1001166"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Punctured-Steiner terminal defects are exactly saturated."
+statement_sha256: "3a14f57bff5bc00e28faaf24c4b71bf5190d5d2446bb583ebfe22dc404c5b365"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

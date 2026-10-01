@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "d4224b792caf7596a86501097d9b80d705deb6e9c477d8e645efef67aa108dba"
 created_at: "2026-09-23T23:45:52.435666+00:00"
 id: "1000880"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Contact-gap restrictions for a rank-four nonspecial edge against a P5."
+statement_sha256: "dc9d805f64da23a1fcfb99114d774daa2d89796bebb3c3aa3a0976270dbcd68a"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

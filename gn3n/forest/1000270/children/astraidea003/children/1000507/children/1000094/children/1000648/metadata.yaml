@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2a0638d1733e727b80b1ad050906e4311ba6fce707fbfc4a020423d1981f18f3"
 created_at: "2026-09-27T21:58:18.186137+00:00"
 id: "1000648"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A quadratic-minimal size gap yields a Hamiltonian kernel, cross triple, or endpoint connector"
+statement_sha256: "b07a0ca69fe519d76f8c0303810f23e7f56861529ebac6d8d9020f9ceb9039e0"
 substantive_worker_ids:
   - 596
 support_reason: "current_certified_premises"

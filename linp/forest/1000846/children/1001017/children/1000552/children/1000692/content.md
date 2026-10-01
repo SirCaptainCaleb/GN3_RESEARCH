@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a P_ell^(3)-free linear 3-graph with m edges and n vertices. Let A be the number of ascending edges. For every nonspecial nonascending edge f with unique entrance x define
   r(f)=ceil(phi(x)/(phi(f)-1))-2,
 and let R=sum_f r(f). Then
@@ -17,7 +18,9 @@ Moreover, for a fixed charged pair (P_v,v), the U-edges expand with multiplicity
   |U(P_v,v)| <= 2|W(P_v,v)|+1.
 Thus the leading ascending-edge obstruction is localized to near-top-rank clean entrance chords and large sets of nondecreasing-potential rotation endpoints.
 
+
 ## Body
+
 
 Fix a vertex x. Let I(x) be the incident edges e with phi(e,x)=phi(e), let C(x) be the ascending edges with unique entrance x, and let B^-(x) be the nonspecial nonascending edges with unique entrance x. These classes partition the incident edges. For f in B^-(x), the joint snake-incidence/blocker budget gives
   w_x(f)=ceil(phi(x)/(phi(f)-1))-1

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0035274cbb01a5c99ef9ae621a21c56e24ffb718542bbdb7b7d33d5907086c2a"
 created_at: "2026-09-24T02:43:32.375399+00:00"
 id: "1001019"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rigid zero-slack half-neighborhoods obey a per-color cut-parity law."
+statement_sha256: "d8f8c6beb1d819a2f047425b384e26a7fe306b6bf03cfdaacd06a5aa37acbe92"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

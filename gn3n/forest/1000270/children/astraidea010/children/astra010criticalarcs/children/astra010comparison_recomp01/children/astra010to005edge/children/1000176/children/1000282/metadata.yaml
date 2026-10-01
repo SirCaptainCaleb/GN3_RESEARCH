@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e7b155c76ad002b22b7aa875ca7f604068a5691acdfca71e0ea0b3742353719a"
 created_at: "2026-09-27T13:24:15.038567+00:00"
 id: "1000282"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Each triple-deletion state has a unique possible re-extension component."
+statement_sha256: "dcded9c00416dbe00d3ebb243e5d7a50d4380ce979501646f2aa38c7f3722580"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

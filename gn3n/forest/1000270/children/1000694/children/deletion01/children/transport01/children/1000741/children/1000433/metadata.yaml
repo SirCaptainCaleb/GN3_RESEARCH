@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f26bfc832f3f38f92022f53efa5337ba02558174eb7dc181bb6344be34a10bcb"
 created_at: "2026-09-28T16:25:04.640386+00:00"
 id: "1000433"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four clean endpoint replacements force doubled barriers at all four ends."
+statement_sha256: "0d098031576b97971b59bcf9e66690ec6b26a67ecdc31a020d5cf6593d0f3a53"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "eae659541ae08f81e37ff13f68b5ed77cae812b260341ac51566a94ba41b5262"
 created_at: "2026-09-22T05:49:18.117504+00:00"
 id: "1000920"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Assuming the opposite-end degree bound, any linear 3-graph with a maximum-rank nonspecial edge satisfies 3δ≤2L+2."
+statement_sha256: "016026c927d115e467da82958f23dd890189798dcd4609834791c20fd6e5b7e3"
 substantive_worker_ids:
   - 205
 support_reason: "premise_not_currently_supported"

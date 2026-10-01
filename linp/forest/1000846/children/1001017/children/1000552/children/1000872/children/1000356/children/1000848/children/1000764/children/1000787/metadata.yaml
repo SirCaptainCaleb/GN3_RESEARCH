@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "52785f4f32e207d89ff9fd0b9489d56cad2de4e5810c634d84f40629ae458c5b"
 created_at: "2026-09-24T05:21:07.201555+00:00"
 id: "1000787"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The defect-corrected two-rank block is automatic at the half-rank top boundary."
+statement_sha256: "1a177d4ff81412af6ff28e345a0b4c7807c4454a291fe912387e9d3a6e5cb801"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

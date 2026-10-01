@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In an entrance-joint equal-rank flat-transfer q-cycle C=(h_1,...,h_{q-2},e,f), let x=f∩h_1 be the unique entrance of target f and let p be the private vertex of h_2. No noncycle edge through p is clean relative to C. In minimum degree q, p therefore has a one-contact ear; relative to P=(h_2,...,h_{q-2},e,f), it in fact has at least two single blockers, one with blocker different from x. Such a blocker gives a nontrivial (q-1)-edge maximum x-ending rotation that still ends with f.
 
+
 ## Body
+
 
 If an edge a through p met C only at p, then
   a,h_2,h_3,...,h_{q-2},e,f

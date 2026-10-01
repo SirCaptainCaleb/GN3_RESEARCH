@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "84e20df881fc61ec167e5810a80dccb3e7c51021b2ec722048c6ea3621d3a898"
 created_at: "2026-09-24T03:01:25.53239+00:00"
 id: "1000929"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Summed potential cuts retain the exact induced-core density defects."
+statement_sha256: "6b43ba568d88427abc97b6ce7e85ed206a168456e7fdb788840cfbdb7502d09f"
 substantive_worker_ids:
   - 229
   - 207

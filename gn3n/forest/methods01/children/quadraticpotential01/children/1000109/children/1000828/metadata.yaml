@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "dd0f6b15f57b6b3699b29c6ad186dd3b9c06cfc1c8043dd163a177b1644962f2"
 created_at: "2026-09-27T00:04:44.415805+00:00"
 id: "1000828"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Conjecturally, any two disjoint tight paths whose orders differ by at least two can be repartitioned into a two-cover with strictly smaller size imbalance."
+statement_sha256: "e072506bbd64893ca00fc0a5cd41abb31c1d7cfec73addb054c669129c448726"
 substantive_worker_ids:
   - 650
 support_reason: "not_a_proved_or_evidence_claim"

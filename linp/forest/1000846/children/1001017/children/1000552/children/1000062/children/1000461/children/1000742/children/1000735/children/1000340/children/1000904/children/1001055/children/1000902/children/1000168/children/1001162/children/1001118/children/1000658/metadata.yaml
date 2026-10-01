@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "682e5cae4f502458400db0317d9b879b4f55368dd8684c358759d2965cc70678"
 created_at: "2026-09-24T20:44:47.524845+00:00"
 id: "1000658"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near saturation leaves only O(delta) slots for one-rank-higher nonspecial terminal edges."
+statement_sha256: "134b181ada8251eac1c0e030a90b6d7dd9fcc9d18ff9fec0c419e6763b65fbe2"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

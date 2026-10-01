@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "f1092b09e40aa0b601407a1cf1c757081cb51c28d9eba9e94d9d43fe4de1cf41"
 created_at: "2026-09-24T20:02:37.790396+00:00"
 id: "1000642"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Paid top-output cells give distinct top-potential lens attachments on one host path."
+statement_sha256: "eb53539814879a26e9f128564d7e4590e863bb44682fab7b9f0f3e6733aa2e0b"
 substantive_worker_ids:
   - 250
 support_reason: "failed_or_blocked_premise"

@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In an endpoint-compatible cyclic deletion triangle H-a=(b,c,R)|Q, H-b=(c,a,R)|Q, H-c=(a,b,R)|Q with |Q|=4, there is a common q in Q such that (Q-{q}) union {z} is Hamiltonian for each z in {a,b,c}. The four-set X_q={a,b,c,q} is Hamiltonian, H-X_q has path-cover number two with explicit exact cover R|(Q-{q}), and if R begins at r_0 then (r_0,q,a),(r_0,q,b),(r_0,q,c) are tight. If the original endpoint kernel X_0={a,b,c,r_0} is the exceptional cyclic non-Hamiltonian K4, then X_q union {d} is Hamiltonian for every d outside X_q, while K=H-X_q and every K-d are non-Hamiltonian of path-cover number exactly two. Thus the explicit complement cover lies in a deletion-stable pc2 residue.
 
+
 ## Body
+
 
 # An order-four endpoint triangle has a common-exchange Hamiltonian four-kernel and, in the cyclic subbranch, a universal five-shell
 

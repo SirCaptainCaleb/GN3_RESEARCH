@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7b872dc5bd0e08999933b0ed5018949005cf631a21140e17e2a5f0087617724f"
 created_at: "2026-09-27T21:30:34.781558+00:00"
 id: "1000234"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Positional lag is exactly the omission-minus-insertion prefix balance"
+statement_sha256: "07fd84fcf2faf319ad49e54bb2c80dfd0788dd7a5eafcd6ac9919b28399a0e23"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

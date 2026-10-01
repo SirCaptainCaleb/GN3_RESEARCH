@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "108146f98202c5dc466f442c56f070a0d860af71e7726fa36ca054ae1567af00"
 created_at: "2026-09-24T02:45:28.123782+00:00"
 id: "1000179"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Odd-k rigid zero-slack branch must contain an S-to-B connector."
+statement_sha256: "1fe54dfa42b7336e48c5b80ba3699b97c6218e029144484670e2d4309779d608"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

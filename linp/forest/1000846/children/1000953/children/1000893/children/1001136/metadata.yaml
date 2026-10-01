@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "553d28e9ead82b76c7178d22a6ae0e76ad7aad6026c486095948556260df1753"
 created_at: "2026-09-23T04:26:35.091498+00:00"
 id: "1001136"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For every d≥3, PG(d-1,2) tensor-squared has a linear path of length (2^d-1)(2^{d-1}-1)-1, and its normalized density at the first forbidden length is below 1/3."
+statement_sha256: "93e4ce452dedc663fcca4a60a990fd9cc694fdcc0a72469e74d2787d04709f06"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "2a57adff1672bf01e7563dfcd7fbab0eff04fa2ef45b4c1ad11be63bde9414b3"
 created_at: "2026-09-22T08:15:32.206176+00:00"
 id: "1000013"
 last_elevation_revision: null
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If the charged four-edge spacing conjecture holds, then at most 3+ceil(log2 p) qualifying ascending nonspecial edges can share a terminal of rank p, yielding the stated 2/3 leading coefficient bound for P_l^(3)-free linear 3-graphs."
+statement_sha256: "0354912fbecaefa4de49d5a73d034a4b1bf212b1139118e83cc30d5a5412a7a6"
 substantive_worker_ids:
   - 205
 support_reason: "premise_not_currently_supported"

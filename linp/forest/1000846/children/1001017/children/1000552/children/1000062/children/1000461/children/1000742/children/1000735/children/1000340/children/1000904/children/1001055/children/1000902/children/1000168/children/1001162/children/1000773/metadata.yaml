@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7e6160dc1e278b25c78b4b59597f5d090273191bfeb2281d92f545ccb8b625ad"
 created_at: "2026-09-24T13:56:21.919039+00:00"
 id: "1000773"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Balanced endpoint-lens branch: a large gap-one switching family yields many lenses on one maximum path, whose crossings force off-host intersections and new maximum paths."
 simplified_statement: "Near-saturated gap-one vertices force linearly many balanced endpoint lenses on one maximum path."
+statement_sha256: "4ccac07e97311c3e388a53fc0c021aa857f575d55a7e824605b17fefa82fb8b0"
 substantive_worker_ids:
   - 258
 support_reason: "current_certified_premises"

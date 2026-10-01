@@ -6,6 +6,7 @@ Let G0 be the 11-vertex 15-edge P5-extremal linear triple system represented by 
 
 ## Body
 
+
 Let the six base vertices be 0,...,5 and let centers A,B,C,D,E correspond to the one-factors
  A: 01,25,34;
  B: 02,13,45;
@@ -66,3 +67,5 @@ Using center indices 0=A,1=B,2=C,3=D,4=E, the 33 successive colors are
  (3,2),(2,4),(2,2),(3,5),(3,4),(2,3),(2,1),(3,0),(0,3),(0,0),
  (5,5),(4,1),(0,2),(5,2),(5,4),(5,1),(2,0),(4,0),(4,3),(4,5),(3,3),(2,5),(5,3),(5,0).
 They are pairwise distinct. The 34 displayed X,Y vertices are also pairwise distinct. Hence the lifted triples meet consecutively in exactly the displayed X/Y vertex, while nonconsecutive triples have distinct X-endpoints, Y-endpoints, and colors, so are disjoint. This proves the claimed P33.
+
+

@@ -6,6 +6,7 @@ Let P be a globally longest L-edge path ending in a maximum-rank nonspecial edge
 
 ## Body
 
+
 Let H be a finite linear 3-uniform hypergraph with global maximum path length L. Let
   P=(g_1,...,g_{L-1},e)
 be a globally longest path ending in a nonspecial edge e={x,y,z}, entered through x, so y,z are terminal vertices of e. Put

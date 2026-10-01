@@ -6,6 +6,7 @@ If max charge is below kappa+4 in an exact-density P_ell-free equality obstructi
 
 ## Body
 
+
 Assume the stalled branch of 76c961f0dc48:
   max_v k_v < kappa+4,
 where

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "79e336105c0ea2c4714a51418bfd95df860f98a324adf51ebb4f3d9ed17a5656"
 created_at: "2026-09-28T00:09:06.727697+00:00"
 id: "1000415"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Five parallel middle vertices force an explicitly alternating five-path."
+statement_sha256: "28a39d5156025b4ed06cfb40e2de0b606157513cf6750c6bc44a2d0f49e8fd20"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "4e66715bb5582bc59b7d167147a557aa76196ccc8ae9eedd7d4163318b5fca2d"
 created_at: "2026-09-24T13:13:39.782021+00:00"
 id: "1000574"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "For a finite linear 3-graph, the rank-sensitive local bounds B(v) satisfy 3m≤2S−n₊+(1/2)∑_v B(v), where S=∑_v φ(v)."
+statement_sha256: "a2ffe6e068f7e3d614489e29a9e2fe078188ea7d0dfed3424ff31db404f05b97"
 substantive_worker_ids:
   - 223
   - 231

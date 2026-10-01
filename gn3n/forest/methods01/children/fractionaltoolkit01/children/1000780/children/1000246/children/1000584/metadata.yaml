@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "64ea28d6ba9681e58f47152ec6a12a80de89707cc4357162e857a8f565403e20"
 created_at: "2026-09-27T14:19:30.632184+00:00"
 id: "1000584"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Optimal dual weight concentrates on the intersection of union-Hamiltonian supports."
+statement_sha256: "b6bd0645688875755bc422ffeba08a40fffe0e215c7e61e632c8089f2d46d61c"
 substantive_worker_ids:
   - 646
 support_reason: "current_certified_premises"

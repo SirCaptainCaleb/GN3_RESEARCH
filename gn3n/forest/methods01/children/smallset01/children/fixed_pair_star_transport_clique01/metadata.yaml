@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "6b8b7311f7b1c20a1db62dfa805a72cb37e1899b8a39465d4722e94490c60ff5"
 created_at: "2026-10-01T06:02:08.334562+00:00"
 id: "fixed_pair_star_transport_clique01"
 last_elevation_revision: 10659
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every fixed pair has a one-third Hamiltonian five-star over one four-core; all leaf pairs carry six-set transport, and the star splits into at most 120 path types: pairwise-Hamiltonian interior classes, a coherent middle-gap fan, or coherent same-end extender families."
+statement_sha256: "2d23118b29b9e321ea57142262a50928b3d6c15fa255d62260f746d06111b0dc"
 substantive_worker_ids:
   - 922
   - 967

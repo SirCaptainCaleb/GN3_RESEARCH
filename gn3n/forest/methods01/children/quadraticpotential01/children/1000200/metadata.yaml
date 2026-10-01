@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b52b752a0953be0034884fa43f01904668242e6d7bee357f5ec57e503e2d735a"
 created_at: "2026-09-27T17:33:05.765367+00:00"
 id: "1000200"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: "Hamiltonian-enlargement complement-imbalance route: enlarging one component constrains every complementary two-cover; in the sharp half-order shell this yields the one-third minimum-side bound, its equality structure, secondary maximin normalization, and the canonical longest-path complement profile along the boundary case."
 simplified_statement: "Replacing one component by a Hamiltonian set h vertices larger forces a complement-imbalance penalty"
+statement_sha256: "eb342bdaf6282afc93b2fd534644068adb55b05c0c11d920d7c8e024008406d7"
 substantive_worker_ids:
   - 616
 support_reason: "current_certified_premises"

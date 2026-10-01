@@ -6,6 +6,7 @@ Let N_p={v:phi(v)=p,k_v<0} and R_p=sum_{N_p}(-k_v). Then (2p-1)|V_{p+1}| >= 2[(3
 
 ## Body
 
+
 In the exact-density setting of 34747339fa9, fix a potential level p and let
   N_p={v:phi(v)=p and k_v<0},
   R_p=sum_{v∈N_p}(-k_v).

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "a68902b53e71311d7c9307dc53fffcc87b463387ba6d91d9b994b788a6f5bee4"
 created_at: "2026-09-24T21:04:22.293042+00:00"
 id: "1000753"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Clean-retained switchers satisfy three-quarters cell packing."
+statement_sha256: "abad9912f71d1c90a41b62235fd439cd4b83c734eba2807e50bf6d5ae99184e0"
 substantive_worker_ids:
   - 201
 support_reason: "current_certified_premises"

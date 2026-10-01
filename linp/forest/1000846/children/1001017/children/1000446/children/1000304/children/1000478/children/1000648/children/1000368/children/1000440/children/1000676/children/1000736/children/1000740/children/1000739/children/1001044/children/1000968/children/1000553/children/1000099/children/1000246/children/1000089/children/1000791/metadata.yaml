@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a39d5fdf68f034f6c8d05ea606b9b54a3f0a5ffda961cda393542e737f4e2f22"
 created_at: "2026-09-24T04:01:20.755291+00:00"
 id: "1000791"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The clean terminal-left 4455 state forces every low entrance rail to hit three separated edges."
+statement_sha256: "bb4a9cdb8872451fad1e4dfe631ef49460b712c58deacd935a5b94b0083b809d"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

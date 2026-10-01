@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2e4a3c584bb1ed953f5847dbdbb214562807dbc99ea274186cd1ff982bef5f57"
 created_at: "2026-09-28T01:13:42.972812+00:00"
 id: "astra003eightcore_recomp01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Targeted singleton attempts spread broadly, and an eight-label shell forces a mutual three-by-three bad-extension core."
+statement_sha256: "15bab6d069373c1ced9b8595e8f5f64119788ff562f37e85c0ce33b39e0552e9"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

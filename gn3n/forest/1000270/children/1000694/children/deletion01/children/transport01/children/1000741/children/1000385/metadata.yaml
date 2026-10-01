@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 7
+body_sha256: "6bcae88d88b8eb0663c73f5d824d03ce52b0a7d83a4edb8166a621a03a9d51b8"
 created_at: "2026-09-21T04:34:07.728524+00:00"
 id: "1000385"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Endpoint covers of a longest path force double crossing or disagreement."
+statement_sha256: "b0de56df204c606e2135dccd2bfee1358753d5ef395be61f1782bb95fa882e3f"
 substantive_worker_ids:
   - 598
 support_reason: "current_certified_premises"

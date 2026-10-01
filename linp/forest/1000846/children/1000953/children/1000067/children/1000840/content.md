@@ -6,6 +6,7 @@ Let H be a 3-uniform hypergraph and let C be the binary linear code spanned by t
 
 ## Body
 
+
 Let e_1,...,e_ell be the edges of a linear path, and let J be its ell-1 joint vertices e_i intersect e_{i+1}. Sum the ell edge-incidence vectors over F_2. Every joint belongs to exactly two path edges and cancels. Every other path vertex belongs to exactly one path edge and survives. Since a 3-uniform linear path has 2ell+1 vertices, the surviving set has
  (2ell+1)-(ell-1)=ell+2
 vertices. Hence the sum is a codeword of C of weight ell+2.

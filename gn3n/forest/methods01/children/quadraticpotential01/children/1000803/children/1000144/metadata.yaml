@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6d7937971a00c09152b7db6bd9f217abefed1002a21f369f9f3dd4536737dea7"
 created_at: "2026-09-28T01:37:26.531775+00:00"
 id: "1000144"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two barrier-free large-gap neighbors create a Hamiltonian three-vertex enlargement"
+statement_sha256: "5057fc6dd6fb3296b90ea9a26748274918f20c895d7526f6acae2fc7a7c02b28"
 substantive_worker_ids:
   - 688
 support_reason: "failed_or_blocked_premise"

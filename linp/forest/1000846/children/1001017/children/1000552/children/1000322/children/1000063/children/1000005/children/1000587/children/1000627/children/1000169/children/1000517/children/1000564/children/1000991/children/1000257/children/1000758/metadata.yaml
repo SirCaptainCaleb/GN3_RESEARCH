@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "23330b61af76d0e1ee4233811d19f68a1766dd7ac2472dea0307eb5734ad26da"
 created_at: "2026-09-24T02:15:16.312049+00:00"
 id: "1000758"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lexicographically maximal two-hole states push gap-three rotations onto no-better hole pairs."
+statement_sha256: "fac724f013f8e0042c56cbd381f4c43051eb3028867a1f7a7961c793e107dc44"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "192c48d1d04198b2df59c5b707c1a39eba6198af354c1b5a21b7f02ed606eb24"
 created_at: "2026-09-24T19:46:23.239619+00:00"
 id: "1000036"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Top-rank rotation outputs split into special, flat-oriented, or top-joint states."
+statement_sha256: "468b622cce5a65563977fa4af57b93ff6f44dd1b44b08e347e13878d8e544011"
 substantive_worker_ids:
   - 201
 support_reason: "current_certified_premises"

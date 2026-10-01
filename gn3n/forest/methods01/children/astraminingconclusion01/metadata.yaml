@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "ddc40fef84ee608acb9ff8734294a85c6d307e8461ce2c89c72d4b3ef2d2e4dd"
 created_at: "2026-09-27T15:28:09.393661+00:00"
 id: "astraminingconclusion01"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Astra result-mining specialist conclusion"
+statement_sha256: "44490a598bbba43231434a992968888f66d7a8b9793bef6b4285e53704cc3753"
 substantive_worker_ids:
   - 644
 support_reason: "finite_or_empirical_evidence"

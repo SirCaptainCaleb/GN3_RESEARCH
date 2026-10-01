@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "8d8832b18a1e3386bb44e6360d7d43634452bb2d7359f5ae57df469a8f054376"
 created_at: "2026-09-28T17:09:03.918088+00:00"
 id: "1000210"
 last_elevation_revision: 0
@@ -57,6 +58,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "From order fifteen a non-Hamiltonian six-set yields quadratic descent or explicit cover/order structure."
+statement_sha256: "cfd557067189d113ce2cd666f969392561179a2472c2bd982689df6d54fd420c"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

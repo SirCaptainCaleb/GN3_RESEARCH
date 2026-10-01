@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "51460af3ae36d3970822b3b20f0c885edbbd49aec62f2665d68c5a4b7705f7cb"
 created_at: "2026-09-27T21:52:20.594015+00:00"
 id: "1000672"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An order-preserving inherited-class shortcut forces two reciprocal support crossings"
+statement_sha256: "d65cede363e32ada041a1354252450a364a0c69d04b2bf022c0c8251be0b6cab"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

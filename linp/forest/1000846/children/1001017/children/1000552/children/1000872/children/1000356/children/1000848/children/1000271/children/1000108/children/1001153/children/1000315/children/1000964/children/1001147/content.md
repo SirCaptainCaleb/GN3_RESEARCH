@@ -45,4 +45,4 @@ The central joint with j=q-1 is x. But h_i and e are distinct edges through v, s
 
 Distinct high edges through v have disjoint non-v pairs by linearity, so their entrances are distinct. Hence the three y_i occupy three of the four slots.
 
-Finally d734b1420b2f says each h_i has one contact in each half. If y_i is in the left pair {a,b}, its other non-v vertex z_i must be the right-half contact. If y_i is in the right pair {c,d}, z_i must be the left-half contact.
+Finally d734b1420b2f says each h_i has one contact in each half. If y_i is in the left pair {a,b}, its other non-v vertex z_i must be the right-half contact. If y_i is in the right pair {c,d}, z_i must be the left-half contact. 

@@ -6,6 +6,7 @@ In a zero-slack maximum witness for a nonspecial forest triple, fix either oppos
 
 ## Body
 
+
 Work in the zero-slack critical-core model, and let
   P=T_1,C_1,T_2,C_2,...,T_{c-1},C_{c-1},T_c=e
 be a maximum witness for a nonspecial forest triple e={x,y,z}, entered through x. Put

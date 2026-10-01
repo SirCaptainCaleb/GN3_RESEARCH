@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1115ab35ed0c4a592dd0bef042a6ab3275c49730719f762899eabb980f821d16"
 created_at: "2026-09-29T20:29:53.012615+00:00"
 id: "deletion_state_matching_frontier18"
 last_elevation_revision: 8911
@@ -54,6 +55,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Above order seventeen every deletion state descends or reaches the fixed-endpoint matching frontier"
+statement_sha256: "8621d5b6b5fec9a54ec0f19be04d4e53f1ce534b5f9106a9d42a6a556870311c"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

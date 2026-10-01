@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9670212749de43a455b269e1f6e59c98b21540f9bcf72853e9fbb12a3cd62b76"
 created_at: "2026-09-27T01:52:31.64715+00:00"
 id: "1000044"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The Hall obstruction has an alternating nonempty core."
+statement_sha256: "a9ace4551a0146a3d3cc454239841aac415015e6271809cefc9764e1309f27f7"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

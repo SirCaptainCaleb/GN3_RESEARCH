@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "3276df798872a49f79b37c49989065fe14e47dcc659f3cf97db1a808742a9d1e"
 created_at: "2026-09-28T17:07:34.378388+00:00"
 id: "1000262"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Two overlapping paths with a common internal interval admit a two-cover."
+statement_sha256: "3a552b527cb6ac44ceb9905b8bc10218bcd115a37730f65736d149a0de468e95"
 substantive_worker_ids:
   - 626
 support_reason: "not_a_proved_or_evidence_claim"

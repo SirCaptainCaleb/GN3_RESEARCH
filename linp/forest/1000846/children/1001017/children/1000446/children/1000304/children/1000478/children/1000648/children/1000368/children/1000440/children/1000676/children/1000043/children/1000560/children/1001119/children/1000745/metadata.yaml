@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9c7239b59c2e8788bdd5a6b203c40a37fd4f870a170075c270ceedf1a45e5faa"
 created_at: "2026-09-24T03:41:17.688776+00:00"
 id: "1000745"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Canonical p=5 entrance paths must cross the rank-five terminal edge itself."
+statement_sha256: "301681a5a2f2563773623c19426f94848addebce231828c6c1ca5577954e9b28"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

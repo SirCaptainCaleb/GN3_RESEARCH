@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "b24de858901285f61f38b4b103ca8b23e9417c82fd73c7953aae1be89363dc0b"
 created_at: "2026-09-29T01:31:21.903478+00:00"
 id: "alllong_neutralcycle01"
 last_elevation_revision: 7702
@@ -58,6 +59,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "All-long deletion states cannot remain in neutral omission-replacement dynamics."
+statement_sha256: "dfd015a19f264b4af774dc6b671515ae774a2168521bae36120d47c3d5253f71"
 substantive_worker_ids:
   - 718
 support_reason: "current_certified_premises"

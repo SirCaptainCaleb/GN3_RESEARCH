@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c236a170e67f346d1e4453bc4a9d1c3d74b4ca5327aeb10bedcbc215cbebd1a9"
 created_at: "2026-09-24T03:05:02.601198+00:00"
 id: "1000328"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In minimum-potential equality, every special edge lies strictly below all three endpoint potentials."
+statement_sha256: "3e8260751134a06ce186772db1d6333422fd7663588fd8f5ddf3ecbdef3b29ce"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

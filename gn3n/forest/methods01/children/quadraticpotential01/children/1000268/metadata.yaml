@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bc6faf57ffe5c04b69719637d1211812733156a770749300f1f96bfd83e4ef9d"
 created_at: "2026-09-27T19:44:22.522565+00:00"
 id: "1000268"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Equitable quadratic-minimum branch: balanced three-cover profiles are absolute quadratic minima, and endpoint deletion probes then force multiple crossings, noninsertability, support migration, near-merges, or order disagreement."
 simplified_statement: "Equitable three-cover size profiles are absolute quadratic minima"
+statement_sha256: "023aadccc2c59a72d07dd1892f0e65c5eaf27b17adaf22f62ae41dddac1a7eef"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

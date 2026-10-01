@@ -6,6 +6,7 @@ Let D be the family of three-side supports in a trapped order-thirteen 3|5|5 Ast
 
 ## Body
 
+
 # Sharpening the full-label shadow bound
 
 Use the full-label shadow theorem 47fd923c847c. Thus every vertex lies in the two-shadow G, every shadow edge has D-codegree at least seven, and for every edge uv of G,

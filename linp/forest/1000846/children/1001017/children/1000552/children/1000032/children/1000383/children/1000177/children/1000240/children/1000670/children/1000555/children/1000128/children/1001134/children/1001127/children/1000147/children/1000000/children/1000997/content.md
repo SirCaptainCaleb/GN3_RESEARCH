@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let A and B be maximum endpoint paths of lengths L_A,L_B, and let p>max{L_A,L_B}. Let H be a set of T distinct hyperedges such that every h in H belongs to both A and B and has edge rank at least p.
 
 Discard the at most two members of H that are the last edge of A or the last edge of B. For every remaining h, at least one of the following holds:
@@ -18,7 +19,9 @@ Consequently at least one of the following holds:
 
 Applied to the type-U non-cycle outcome of 20cdd04e92ca, where T>=M/6, this gives either at least M/12-1 distinct common edges lying on linear cycles, or at least M/12-1 common nonspecial edges that both higher-rank source paths leave through their unique entrances.
 
+
 ## Body
+
 
 After discarding the last edges of A and B, each h in H is internal to both paths. Since phi(h)>=p>L_A,L_B, apply 0000bd602854.
 

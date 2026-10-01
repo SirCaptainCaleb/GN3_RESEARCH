@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "9ab545aa59d05b432096847889cdedd081507bb9494d4b576195b35dfa4aeb73"
 created_at: "2026-09-22T14:52:13.597919+00:00"
 id: "1000069"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Sperner, Connector, multidimensional Hex, Pouzet, and Brouwer admit a short implication cycle whose discrete middle is reusable for finite path-state spaces."
+statement_sha256: "6adf70094d9520a9bcd0edae7aa35c661060c91fe6172f51847bc36b4c9c11b4"
 substantive_worker_ids:
   - 590
   - 698

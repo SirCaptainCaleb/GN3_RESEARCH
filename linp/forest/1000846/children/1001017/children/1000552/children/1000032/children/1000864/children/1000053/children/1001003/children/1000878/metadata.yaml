@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "65d569a7a3f61cd357c5dfb56524dbc3aa3de2d89646e089f430ffdab4f56b8b"
 created_at: "2026-09-24T04:29:54.142767+00:00"
 id: "1000878"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Separated terminal-only contact intervals are squeezed from both ends."
+statement_sha256: "b69a854d2fb4464b85088cc6f7d818d6eba67ae21597dd43cf354fa88720db4e"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

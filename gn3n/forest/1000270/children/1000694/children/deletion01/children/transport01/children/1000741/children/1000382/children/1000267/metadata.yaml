@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ab4aab8b8b7a0318f16820df3b51c41fd66188955fdc8f043ed87d287659566d"
 created_at: "2026-09-27T21:52:20.594015+00:00"
 id: "1000267"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two forward crossings and one reciprocal crossing force a three-edge forest exchange."
+statement_sha256: "646eed45619aab93f5afc42684750b2b7a2d803a57185fe3806944398a927a61"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

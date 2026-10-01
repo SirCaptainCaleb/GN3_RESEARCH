@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b5483bd98e1f020d17e17d07d142ff6923d1e7ab770e4ca09fb886c67cdcb829"
 created_at: "2026-09-28T00:57:24.919467+00:00"
 id: "1000179"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The two-plus-one-plus-one defect type also enters the four-side obstruction engine"
+statement_sha256: "674b62174eb98d69bed00ec060d797cb0e9b759d4cdd81a7ee041288166baa60"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

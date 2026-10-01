@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bbd893a1a5e2b23d1f30558092b8f07cda83ed340d3aee6c0e8a00d69f8dafa9"
 created_at: "2026-09-28T21:55:01.462889+00:00"
 id: "1000260"
 last_elevation_revision: 8453
@@ -54,6 +55,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A trapped five-side yields an equal-Phi pairwise repartition or a displayed-edge reversal"
+statement_sha256: "2da576ddec4875457d828683469243be57307a00ac8cf69f715ab9b743f001cd"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

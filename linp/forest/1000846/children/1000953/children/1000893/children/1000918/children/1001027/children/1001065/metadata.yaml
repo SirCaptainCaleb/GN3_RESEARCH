@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "da45202d41554a0f3cb3178d183857d334d615894decc2b071ffcd62e4d27f4c"
 created_at: "2026-09-22T19:51:37.026323+00:00"
 id: "1001065"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If an odd-order Boolean quotient has an even-length spanning additive path, then its full two-bit lift has a spanning path of length four times as large plus three."
+statement_sha256: "23e1043dec3dd70f0d67688d0cd69763ba75b48dc52444fa97548f567be9af04"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

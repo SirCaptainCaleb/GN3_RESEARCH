@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "e1ed7fdc9b0b27bf25e49e95b46fcb04b80d9a0ff9e752f5f9df99d1b46a6f0d"
 created_at: "2026-09-28T21:36:57.018601+00:00"
 id: "hardreversal_fiveshell01"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A universal endpoint-reversal family gives Hamiltonian five-sets over every exterior triple."
+statement_sha256: "0c40795de3329fed07b0a92c3d4e6627a10e820de5bda2581a4410dfd647f4a3"
 substantive_worker_ids:
   - 718
   - 630

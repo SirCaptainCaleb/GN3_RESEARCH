@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "0c221b55289a20a900bca12c0ef5a0cd0c7a0b2f51375d01c97bbcdc263be2ab"
 created_at: "2026-09-28T17:01:02.534885+00:00"
 id: "1000688"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A non-Hamiltonian six-set yields one- and two-label path-cover-two extensions."
+statement_sha256: "a2af99d96b7ac048e8bca6824f48bd3b0f6284645bd9cf5db12d2a2e1dea93c2"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

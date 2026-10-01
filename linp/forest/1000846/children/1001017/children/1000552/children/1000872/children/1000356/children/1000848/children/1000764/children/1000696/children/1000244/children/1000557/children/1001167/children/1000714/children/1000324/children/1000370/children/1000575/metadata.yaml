@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "bf5471d4e78bb1d9bf8238e78cbcce490bf6105316df649567abc785be627fc0"
 created_at: "2026-09-24T05:45:47.10529+00:00"
 id: "1000575"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The terminal-only D contact forces the outer right joint to top potential."
+statement_sha256: "d746aeed5c594d82382f996b16ee8cc6449c1f30dfc674c082ef8b723e464cfa"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

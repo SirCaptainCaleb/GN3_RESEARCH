@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7a298f5849040f116d9a91943533ec1d56407309376c0f1de4fbca073ae75154"
 created_at: "2026-09-30T05:12:03.337663+00:00"
 id: "balanced_pair_repartition_through10"
 last_elevation_revision: 9789
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every component pair of total order at most ten can be optimally balanced in one move."
+statement_sha256: "ce18c3a62ffd1e5d6288f431c5176c297b968a90ffaea999c174adda4234ba50"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

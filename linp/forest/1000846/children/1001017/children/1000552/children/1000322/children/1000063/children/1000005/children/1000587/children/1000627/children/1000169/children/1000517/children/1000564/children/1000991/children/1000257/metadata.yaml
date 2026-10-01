@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1effc273b9271613d846a8b2425d2aa2ca1a3b4c05519a6c6ad0ec2a403caa51"
 created_at: "2026-09-24T02:12:21.467971+00:00"
 id: "1000257"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two-hole gap-three collisions rotate the wrong-entrance state."
+statement_sha256: "43ca67eb54f850d9a6dcd10d7799c91d209f326e5c5e831de15b9f76a9dd839a"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

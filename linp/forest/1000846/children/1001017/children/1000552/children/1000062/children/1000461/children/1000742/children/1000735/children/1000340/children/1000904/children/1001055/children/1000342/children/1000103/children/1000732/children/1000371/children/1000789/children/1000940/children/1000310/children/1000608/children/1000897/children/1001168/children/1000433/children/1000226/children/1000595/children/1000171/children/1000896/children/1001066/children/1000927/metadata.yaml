@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d3b837ee61049f82a0b19ca9edee08651fbc08e2dc6e46ad248f6e611658668e"
 created_at: "2026-09-25T21:59:52.95349+00:00"
 id: "1000927"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A 2q-3 cut with M crossing collisions forces linear overlap matching or linear 3-cycle packing."
+statement_sha256: "cf820166a8c142545f851bc2d871730579bb41de4313bd340d50ab7315391303"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

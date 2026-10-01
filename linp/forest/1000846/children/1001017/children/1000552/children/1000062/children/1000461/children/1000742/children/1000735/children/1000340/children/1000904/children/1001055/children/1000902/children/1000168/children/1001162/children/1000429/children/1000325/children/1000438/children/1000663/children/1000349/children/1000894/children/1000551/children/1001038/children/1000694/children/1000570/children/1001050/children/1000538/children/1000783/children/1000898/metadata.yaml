@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "21aabe16ecb685641ada39356a0a6990af32bb90cdaec9557a2db0410e4ed181"
 created_at: "2026-09-25T20:06:17.569921+00:00"
 id: "1000898"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Terminal-single reciprocity gives contact-type-free foreign transversality below the rank-sum threshold."
+statement_sha256: "85ebf36bc85887142d3d729bd07181222486fa8683adbaefad2cb738ee9cda11"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

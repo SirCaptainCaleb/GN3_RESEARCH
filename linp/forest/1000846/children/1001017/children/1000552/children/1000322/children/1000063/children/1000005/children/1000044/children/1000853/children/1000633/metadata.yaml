@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "cf2e8b9ed3603f49529f19ad3ff686f298d946ff367e11c81065ecfa05717648"
 created_at: "2026-09-23T23:50:10.109522+00:00"
 id: "1000633"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Class-II systems have no rank-four nonspecial edge."
+statement_sha256: "5bc185c2054f1505a0c37d673eb32d1654edb738c407cf853500dd0d635b5158"
 substantive_worker_ids:
   - 225
   - 231

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1d68021cb0fd80a2fbbdb4a0486debb222c923a2bdd3a642ec67a257ccc74578"
 created_at: "2026-09-22T18:51:27.436515+00:00"
 id: "1000943"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two suitably separated one-contact chords through a fixed external hole splice into the path and can restore full length in the loss-one setting."
+statement_sha256: "f5ad3cb3ef472bb011f1c1f9d487d8ebb19c9caf20cbbf5ecb31b6eaa1e8d30b"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "aad9b7615affd2aa9eb5fa420427c267d3aff1565f91f061fb19ac476c0a8670"
 created_at: "2026-09-29T20:22:46.518123+00:00"
 id: "opposite_cross_adjacent_fourwindows01"
 last_elevation_revision: 8911
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An unresolved opposite cross forces multiple adjacent Hamiltonian four-windows"
+statement_sha256: "79d28b26de45baef4d7ebe22f33d147c6bbd948939648cc2d29a5270c3ba7923"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

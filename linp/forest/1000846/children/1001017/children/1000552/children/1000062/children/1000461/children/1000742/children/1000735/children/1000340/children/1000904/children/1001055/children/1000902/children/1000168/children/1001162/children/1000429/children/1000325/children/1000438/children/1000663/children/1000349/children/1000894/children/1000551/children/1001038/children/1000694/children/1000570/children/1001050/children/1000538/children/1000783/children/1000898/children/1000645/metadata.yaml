@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a2e8d5152bb53bf9b9f25529b674a194cad29cb45cfe1a9dc9e9168e7ffe69a4"
 created_at: "2026-09-25T20:15:21.462703+00:00"
 id: "1000645"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Complete reciprocal transversality forces repeated intersections among opposite-terminal paths."
+statement_sha256: "8a9aae618c241b0cd5efef852296d2a578cba5ccf480a76476256a90624a460e"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

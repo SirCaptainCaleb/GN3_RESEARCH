@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "1b14a273a53e9b060f8c0759b8e16a1660dd51a2739b9a972e2f22334b9c7cf4"
 created_at: "2026-09-24T21:09:51.16815+00:00"
 id: "1001107"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-minimal source mass forces improved terminal retention on both host halves."
+statement_sha256: "5be1e7290a0612ce9c56191af55ba684856e8511174fda99c57daf081992af3d"
 substantive_worker_ids:
   - 250
 support_reason: "failed_or_blocked_premise"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a14191368ae515cbf978c2fb00869c9ea597148a8a453902f989992a8e55bc08"
 created_at: "2026-09-27T17:31:08.082499+00:00"
 id: "1000259"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "One vertex of a global four-vertex component controls at least three endpoint complement comparisons."
+statement_sha256: "0b0441cc0bfda8a7c12c49167a89558c3c350081f540ff7895bb7c8fed3d4c2f"
 substantive_worker_ids:
   - 616
 support_reason: "current_certified_premises"

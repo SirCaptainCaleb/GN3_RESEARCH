@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample and let A|B|C be a lexicographically maximal spanning three-path cover with decreasing component orders a>=b>=c>=2. Put g=a-(b+c)>=1. First, in any spanning three-cover with |B|,|C|>=2, internal deletion positions of A admitting clean inherited-order split augmentations form an independent set. In the central interval g<=i<=a-g-1, every block-faithful deletion cover must cross-pair the A-prefix/A-suffix with B,C; adjacent block-faithful positions use opposite pairings, and three consecutive such positions force the two outer component orders. Consequently six consecutive central block-faithful positions would contain two adjacent clean positions, impossible. Hence every six consecutive central positions contain an index at which every exact deletion cover splits or reorders an inherited path.
 
+
 ## Body
+
 
 # Clean deletion augmentations are sparse, forcing recurrent central path destruction
 

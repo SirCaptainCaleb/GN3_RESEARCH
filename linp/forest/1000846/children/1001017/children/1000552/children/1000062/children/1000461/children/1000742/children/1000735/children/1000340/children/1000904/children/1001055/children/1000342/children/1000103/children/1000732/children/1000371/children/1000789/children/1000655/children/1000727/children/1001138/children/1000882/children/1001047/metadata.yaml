@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "eaf4648c63f15d437e2864d23be6cc2b8bde2530fb6429b9ddf51bc307ae95ea"
 created_at: "2026-09-24T20:58:30.743748+00:00"
 id: "1001047"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Terminal-retained source mass pays quadratically for left-right contact imbalance."
+statement_sha256: "1f285525bcba67fcd6ddd1c0b02319c74dacc4153b32e79a9e947abec9169b01"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "c0d431bf3b05cfe6aa42508d74b095cc64199157285cea71f8820894bd3e6749"
 created_at: "2026-09-24T20:56:09.878858+00:00"
 id: "1000201"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Paid 0-1-1 edges are overwhelmingly canonical terminal-cycle chords."
+statement_sha256: "03aac8c40a6cd9a1708d1be5db4e1fd17bc56aca04d7abd09818e91adc58a38b"
 substantive_worker_ids:
   - 201
 support_reason: "failed_or_blocked_premise"

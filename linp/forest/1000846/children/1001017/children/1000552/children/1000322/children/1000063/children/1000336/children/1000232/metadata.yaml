@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "752e816de3967efdb7b95318d00faa16a3c6d421eb9639ff87889b4210cb0780"
 created_at: "2026-09-23T04:17:49.571569+00:00"
 id: "1000232"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Fixed-hole one-contact chord branch: external chords either splice across the hole or collapse into one short window, feeding escape from boundary rotation sinks."
 simplified_statement: "For a fixed external hole with at least three one-contact chords, either two chords form a corrected bridge or all non-x contacts lie in two consecutive path edges."
+statement_sha256: "f00d1ec42eab9d1a3a22eded3cc273c9b7283fd9802935c9954f598aa2f907c2"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

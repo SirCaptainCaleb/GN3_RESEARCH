@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ff65927b56a458ef3dbb442cabbe548ad8a8d356f155862ef5b06189dffb1863"
 created_at: "2026-09-24T00:59:00.998501+00:00"
 id: "1000065"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Middle entrance slots force opposite terminals into the first edge."
+statement_sha256: "0713e7e56c528b325386a204107b3125e797b7f83f3160c07eb5d1bc1a1006aa"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Let P=(p_1,...,p_s) be a linear path and o outside P. Suppose f={o,r,r_prime} an
 
 ## Body
 
+
 Let P=(p_1,...,p_s) be a linear 3-uniform path ending at a prescribed last vertex x. Let o notin V(P), and let
   f={o,r,r'},  g={o,t,t'}
 be distinct hyperedges through o such that r,r',t,t' are four distinct vertices of V(P).

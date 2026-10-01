@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "09581cc6c56e2c087dc155fa03529915e2c747ec21c9baa26050fedd583f7eb7"
 created_at: "2026-09-21T20:02:58.627793+00:00"
 id: "1001046"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Ascending-edge layers satisfy 2(delta-2k+1)(n_k-n_{k+1}) <= (2k+1)n_{k+1} whenever delta>2k-1."
+statement_sha256: "33061b078708323326675388bfe7f2451f4c511ad353834f2e05f5eadefd4ec7"
 substantive_worker_ids:
   - 234
 support_reason: "current_certified_premises"

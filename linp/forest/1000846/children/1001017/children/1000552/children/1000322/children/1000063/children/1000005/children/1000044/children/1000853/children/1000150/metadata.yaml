@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "25b9546a421a0834d7d37d967e1273674d0e528cbe80586a58378feee3a629d4"
 created_at: "2026-09-24T00:42:13.580799+00:00"
 id: "1000150"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Class-III rank-five nonspeciality reduces to a nine-vertex residual matching obstruction."
+statement_sha256: "91c634e977a2c686f1a13908b03d0975b835dd00d968c55f75766b6581650e2f"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

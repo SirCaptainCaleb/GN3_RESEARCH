@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "b8b8ce4844736e2738a1eedeecc519c688d2f5afa36d6d730426ea63a2e5b1ef"
 created_at: "2026-09-23T23:25:15.553594+00:00"
 id: "1000311"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every P4-free linear triple system of minimum degree three is all-special."
+statement_sha256: "9d5f1d8672825707a396f9ec903d55a86f7cad51553cb63d66ac2d4f47d5eaef"
 substantive_worker_ids:
   - 185
   - 254

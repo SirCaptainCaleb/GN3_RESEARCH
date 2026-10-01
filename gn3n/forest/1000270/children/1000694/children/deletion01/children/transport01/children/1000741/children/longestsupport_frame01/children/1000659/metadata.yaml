@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "93bbb512f97f3d0dd24f814e0acc2c8d2f581268a83d55923f2d2c345c0d5c26"
 created_at: "2026-09-21T04:39:55.113471+00:00"
 id: "1000659"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two-crossing endpoint covers in the sharp half-order shell."
+statement_sha256: "78b26516780567323bc33bf012903539fd79c3452b61664263a9570dedd4709a"
 substantive_worker_ids:
   - 598
 support_reason: "current_certified_premises"

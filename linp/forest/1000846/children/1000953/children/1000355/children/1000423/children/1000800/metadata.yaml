@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "800a65bbfd9a0e75bf103c852ea2951bd2825cadebadcdcd9e2bc3a0695eceb3"
 created_at: "2026-09-23T21:20:03.006584+00:00"
 id: "1000800"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Crossed missing-color chords force the opposite endpoint chord."
+statement_sha256: "8fa29b205f0541ce1d4864c11f14a2b3426eb7f7686c79c145795bc26d95627f"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

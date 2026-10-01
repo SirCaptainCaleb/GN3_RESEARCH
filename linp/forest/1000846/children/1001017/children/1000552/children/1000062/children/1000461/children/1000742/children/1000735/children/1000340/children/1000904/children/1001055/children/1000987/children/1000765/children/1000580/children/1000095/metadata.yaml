@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "00d77dc0c3fd0f7f158fb2d001315a4258b856f70c00ce8d664e7379b17b8468"
 created_at: "2026-09-25T19:34:07.271123+00:00"
 id: "1000095"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-saturated terminal-single families force linear balanced endpoint-lens packets in every uniformity."
+statement_sha256: "dfcd6e71c004e20c60e142b823421db06e23a9687863c3a060911f60a534e2a9"
 substantive_worker_ids:
   - 192
 support_reason: "failed_or_blocked_premise"

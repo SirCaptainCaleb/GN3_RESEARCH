@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "dc99feb104c6cce16c8b438112b6e8a150c469d19d6f2493edce5bacd7556cb6"
 created_at: "2026-09-25T21:46:37.957188+00:00"
 id: "1000234"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A cycle-free flat terminal-retained state forces a rank-p edge common to both host paths."
+statement_sha256: "3af0a58f79ad5570080c66bc8c580187a6f578153b55e59415ab5e32746b9a0a"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

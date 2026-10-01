@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ae6ae2c29c28b277d1f36daeed7e851ad3790477ab9ca915351a333758473360"
 created_at: "2026-09-28T01:10:45.511224+00:00"
 id: "astra003mobility94_recomp01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Order-thirteen 3|5|5 mobility program: dense equal-size reachability forces many three-side supports, widespread vertex and pair participation, exchange rectangles, common-core stars, and quantitative support expansion that constrains any trapped plateau."
 simplified_statement: "Order-thirteen 3|5|5 plateaux have dense equal-size mobility and at least ninety-four three-side supports."
+statement_sha256: "3131ee1cac276b8a92df5c0b969e8c01748413a9c8b58784ca642afdd55d47b4"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

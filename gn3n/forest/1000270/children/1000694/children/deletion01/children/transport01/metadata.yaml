@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 12
+body_sha256: "59be202c4d90c8016c382d0733dd5fa6eeab5ad92d45da20ee8631f2d2a542a7"
 created_at: "2026-09-20T19:52:30.627761+00:00"
 id: "transport01"
 last_elevation_revision: 0
@@ -31,6 +32,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Endpoint transport and local obstruction geometry: endpoint hooks, replacement and pivot structure, bounded reverse windows, mixed Hamiltonian windows, cross barriers, local connectors, and truncation-or-lock alternatives."
 simplified_statement: "Endpoint transport and local obstruction geometry."
+statement_sha256: "4cafa9ec6a48c90dcf2932b1049344599600b47da29516253657bbc697051690"
 substantive_worker_ids:
   - 673
   - 603

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fe91106e3c5295b7b5e2ebe1c47426e2aaa842f323710a590f79701635c4827d"
 created_at: "2026-09-28T01:29:33.774567+00:00"
 id: "1000127"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Three-isolated-defect cube interface: span-three defect orderings with three isolated cyclic defects form an exact singleton-transfer cube, whose interface slides, descent/transport trichotomy, and nested discrete-gradient geometry reduce the defect configuration to endpoint disturbance, neutral transport, or order disagreement."
 simplified_statement: "The three-isolated-defect case is an exact cube of singleton transfers"
+statement_sha256: "8761281abcaa0b47d25f22b6f0ce446fbfc3f9da04025b76dfbf5b9eed1aed04"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

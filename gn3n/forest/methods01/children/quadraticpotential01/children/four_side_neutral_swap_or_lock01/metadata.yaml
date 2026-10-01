@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "81dc6e1908f188294930aae3f1ddfddbd70eab6ff207a7b2295c1633a24a9887"
 created_at: "2026-09-29T18:25:48.548917+00:00"
 id: "four_side_neutral_swap_or_lock01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A distance-one four-side endpoint replacement gives a neutral support swap or a full-path lock."
+statement_sha256: "bf518fce6d861ef14cd8d167532fb4bb2469ef6ec8bbed8edff03873bf6cf810"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Suppose that for every vertex v and every q, at most three potential-charged asc
 
 ## Body
 
+
 Fix a vertex v with p=phi(v), and let n_q(v) be the number of potential-charged ascending nonspecial edges e={x,v,u} such that v is terminal, phi(u)>=p, and phi(e)=q.
 
 By the certified terminal-potential/rank lower bound a7b7670e955a, every such edge has

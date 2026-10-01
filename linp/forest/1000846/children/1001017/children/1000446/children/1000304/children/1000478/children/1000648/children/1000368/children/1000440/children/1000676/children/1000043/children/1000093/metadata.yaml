@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "a9943dc9d19000a6073380f649136a2b70e30477fe953a564a8f299c606b82c5"
 created_at: "2026-09-24T03:34:51.591143+00:00"
 id: "1000093"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the p=5 charged 4445 setting, every five-edge path to a high terminal places the corresponding low joint in the middle two edges, and if the joint itself appears there it is exactly the r₃∩r₄ joint."
+statement_sha256: "4e687ca25202c4a392e008e53b663735b43c9c3fa993725b75ac099b9c46ea8f"
 substantive_worker_ids:
   - 229
 support_reason: "not_a_proved_or_evidence_claim"

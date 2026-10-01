@@ -6,6 +6,7 @@ Let ell>=5 and d=floor(2ell/3). If a linear 3-graph H satisfies |E(H)|=d|V(H)| a
 
 ## Body
 
+
 Fix ell>=5 and put d=floor(2ell/3). Let H be an n-vertex linear 3-uniform hypergraph with
   |E(H)|=d n.
 Let P be any linear path with q<=ell-1 edges, and put

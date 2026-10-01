@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain the hypotheses and notation of ed412ed8e3b1 and suppose branch (B) occurs. Let z be the first vertex of S that lies on the far suffix of R from u toward y, when that suffix is traversed starting at u. Let
   a = number of R-edges from u to z along that suffix,
   b = number of S-edges from z to x along S toward its endpoint x.
@@ -11,7 +12,9 @@ Then
 
 Equivalently, the first reintersection that allows a forward whole chord to evade the deficit-shallow alternative cannot be simultaneously far from u on the host rail and far from x on the clean source rail.
 
+
 ## Body
+
 
 By the choice of z, the open R-subpath from u to z contains no vertex of S. The source path S avoids u, and source cleanness gives S∩e={x}; the host path R avoids v, while the R-subpath from u to z lies after x and therefore does not contain x. Hence the three pieces
   e,

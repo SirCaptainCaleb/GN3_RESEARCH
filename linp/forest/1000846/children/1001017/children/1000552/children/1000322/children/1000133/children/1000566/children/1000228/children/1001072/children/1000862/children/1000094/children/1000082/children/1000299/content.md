@@ -6,6 +6,7 @@ In the zero-slack |D|=k critical-core model one has |V(H)|=3k. With k=floor(2ell
 
 ## Body
 
+
 Assume the zero-slack extremal critical-core model 13500728c22f. Then |D|=k and the DXX color graph has |X|=2k vertices. Hence
   |V(H)|=|D|+|X|=3k.
 

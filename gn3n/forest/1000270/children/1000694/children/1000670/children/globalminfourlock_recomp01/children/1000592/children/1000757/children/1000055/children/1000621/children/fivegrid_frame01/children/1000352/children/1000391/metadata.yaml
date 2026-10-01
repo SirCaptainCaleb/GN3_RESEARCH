@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "540ac427a1efefddf70579714099616094ae2118083960e245e355d0ea6d5e0e"
 created_at: "2026-09-27T18:25:00.105133+00:00"
 id: "1000391"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "From lambda fourteen onward a normalized sharp-shell five-side forces order disagreement at every endpoint pair."
+statement_sha256: "87ec288983c5f84d9cc25a272e2d97733239d6e6977e2b608b073b5f3ab556bc"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "99b79b26f724e1dd4cf7f998def7f0536684c014ab17f451852022faa8050ec0"
 created_at: "2026-09-29T18:35:51.77631+00:00"
 id: "cyclic_nonmatching_fourwindow_transport01"
 last_elevation_revision: 8786
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every nonmatching proper cyclic defect certificate reaches four-window transport"
+statement_sha256: "f51c24ab20e8cb9bf80319fa4aaac9cf96b5ff2b262622324b7eab044a889199"
 substantive_worker_ids:
   - 605
 support_reason: "current_certified_premises"

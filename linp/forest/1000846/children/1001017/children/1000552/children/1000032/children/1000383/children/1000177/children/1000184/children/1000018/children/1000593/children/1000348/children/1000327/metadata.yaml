@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "1f453a64846d944f66d83d48d500d35d10589b926c19804bcc7bc086f438b124"
 created_at: "2026-09-24T05:12:35.803798+00:00"
 id: "1000327"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the d-free abc top-boundary pattern, two opposite terminals lie to the right of the central block and the third lies strictly to its left, giving a crossed blocker moat."
+statement_sha256: "e2558f9a44ad80e6cb5b14286f21ab9681faf6b64be0c941bd39212620716c03"
 substantive_worker_ids:
   - 229
 support_reason: "not_a_proved_or_evidence_claim"

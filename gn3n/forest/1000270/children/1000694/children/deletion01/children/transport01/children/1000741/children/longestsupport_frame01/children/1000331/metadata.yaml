@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "e47221a8fec859c0c1b86f542170392da86b04e8d678fc9b10c81679a25a37da"
 created_at: "2026-09-23T03:05:28.78771+00:00"
 id: "1000331"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Longest-path complements force synchronized crossing, pervasive mixing, and a rigid two-crossing geometry."
+statement_sha256: "974175830dd6811590c6a265d7e7a83a4c70a361dcdc53286886460e1a4d531d"
 substantive_worker_ids:
   - 721
 support_reason: "current_certified_premises"

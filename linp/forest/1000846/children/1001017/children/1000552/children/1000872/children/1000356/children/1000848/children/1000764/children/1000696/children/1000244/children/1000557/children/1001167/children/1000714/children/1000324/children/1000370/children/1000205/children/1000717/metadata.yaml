@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "c5146a3c76b4e32b6be74619cdea5b373f9fbd78914bbcd358981560e571818b"
 created_at: "2026-09-24T05:47:31.826581+00:00"
 id: "1000717"
 last_elevation_revision: null
@@ -56,6 +57,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The final odd-boundary residue forces the entire central edge to top potential."
+statement_sha256: "a7137ca2de254e5c39953e945a641a6be0bf2a5dd23d1cc57da96b0605e3dde7"
 substantive_worker_ids:
   - 225
   - 231

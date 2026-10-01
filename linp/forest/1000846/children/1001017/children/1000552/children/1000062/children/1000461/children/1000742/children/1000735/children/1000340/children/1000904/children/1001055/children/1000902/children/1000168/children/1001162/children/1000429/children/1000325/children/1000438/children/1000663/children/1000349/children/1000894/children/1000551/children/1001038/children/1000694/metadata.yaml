@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "1f6296bbed78722a9914db15b8af4e3f8b9e4727f7efdbb949cded45cb0afa68"
 created_at: "2026-09-25T11:29:50.068847+00:00"
 id: "1000694"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Paid two-terminal strict-gap program: extract linearly many strict-gap paid edges, preserve them as clean fundamental-cycle chords, and reduce improvement beyond 43/48 to controlling their local congestion."
 simplified_statement: "Near 43/48, linearly many paid-certified edges have strict rank gap at both terminals."
+statement_sha256: "16fb0c7357a68bae68e52d63044a0ab3dfc57587759d7fd65d979d39df269f6d"
 substantive_worker_ids:
   - 264
 support_reason: "failed_or_blocked_premise"

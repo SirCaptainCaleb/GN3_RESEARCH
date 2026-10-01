@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "abb3301e514152a59c4ce9bb8902b7c5fd4b4032030f79d0d7de993befdfe277"
 created_at: "2026-09-28T02:08:41.048388+00:00"
 id: "1000769"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A one-edge-for-two exchange has only matching or three-block-path quotient type."
+statement_sha256: "8ba37329cb75ea3557cacad01470041508031f181565c8e265af72aad6c72126"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0818f6174bc013619c2164f7d4fa08526784a8a0ce4af64d3892db9b4a6fbf0d"
 created_at: "2026-09-28T01:43:35.978566+00:00"
 id: "1000407"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Three-isolated-defect cube program: use the discrete-gradient size parametrization of the eight cube states to classify neutral transfers and equality profiles, then force endpoint disturbance, support migration, or relative-order disagreement from the surviving cube geometry."
 simplified_statement: "The three-isolated-defect cube has an exact discrete-gradient size parametrization"
+statement_sha256: "fd9ba96cfdbadeacd2389b5e301f3443bc755418d49505267c704e7848baf567"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ In the setting of astra003fivecommoncore, choose x in X so that D=V(X)-{x} exten
 
 ## Body
 
+
 Let X|P|Q be a quadratic-potential-minimal three-cover in a connected component of the pairwise-repartition graph containing no two-cover, with |X|=5.
 
 First suppose P=(p_1,...,p_m), m>=7. By astra003fivecommoncore, choose x in V(X) such that, with D=V(X)-{x}, both

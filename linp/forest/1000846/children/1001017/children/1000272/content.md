@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Suppose the current 43/48 leading coefficient cannot be improved. Then there is a sequence with
   m_j >= (43/48-o(1))S_j.
 The exact rank-sensitive theorem a57007500001 forces n_j^+/S_j -> 0, hence S_j/n_j^+ -> infinity. The certified extraction 9fba15f1495c then yields a set Epp of distinct source-clean, doubly-terminal-single, paid-certified ascending nonspecial edges with
@@ -12,7 +13,9 @@ Assign each edge of Epp to a terminal of minimum vertex rank. The current end-to
 
 Thus the first unsupported inference in the current proof organization is exactly the sublinear local congestion bound g(p)=o(p) for minimum-terminal assignments inside the paid-certified source-clean doubly-terminal-single strict-two-terminal-gap class.
 
+
 ## Body
+
 
 Proof rehearsal.
 

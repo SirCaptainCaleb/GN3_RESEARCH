@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "711277b2aec729b685926b5209479bf248ae709f3e5e2590f21578d8af0b1eb6"
 created_at: "2026-10-01T07:19:55.077482+00:00"
 id: "1000899"
 last_elevation_revision: 10860
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If x,y are internal in one displayed two-cover, then every lower two-cover after deleting them crosses at least twice whenever they lie on different components or nonconsecutively on one component; universal internality is needed only to classify the adjacent one-crossing equality case."
+statement_sha256: "b66da9806e43ae716c89ee9bd0dfa5fa33d008aa468b36d7e0e8056a1c8b00b7"
 substantive_worker_ids:
   - 1016
 support_reason: "current_certified_premises"

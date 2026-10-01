@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "e2bcafabf844ba2172178007fdc8f05d2f9799dc14a8cd2aeb07d5cfd0d08351"
 created_at: "2026-09-25T20:47:54.847892+00:00"
 id: "1000453"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "d2f1151dc9e86fe3254aa98ee97a072b8f8be84e0fcb1f6b0a45733e061244ad"
 substantive_worker_ids:
   - 220
 support_reason: "The proof relies on 94579ab0aabc to say every failed adjacent nested shortcut produces a collision wholly in a left/right flank or a collision strictly between the two nesting levels. That classification is incomplete: a collision can start at the unused bridge terminal index i_{a+1}-1 and extend into the right block. Saturation does not exclude this case, and it need not lie inside either claimed flank. Hence the flank-cycle conclusion and the asserted edge-disjoint primitive-cycle selection are not established."

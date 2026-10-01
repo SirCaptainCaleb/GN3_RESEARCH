@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3ba56757f5930d680a93e237334d005cf416b1184dfd68c3abecdb285fc693dc"
 created_at: "2026-09-29T21:17:33.782554+00:00"
 id: "nonham_five_punctured_pc2_cube02"
 last_elevation_revision: 9251
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Non-Hamiltonian five-set punctured-cube branch: a non-Hamiltonian five-set forces an almost-complete path-cover-two deletion cube on the complementary labels, with at most one Hamiltonian singleton exception."
 simplified_statement: "A non-Hamiltonian five-set forces an almost-complete path-cover-two cube on its complement."
+statement_sha256: "4104e673d5fd9f016e21515159ed97e862bd08c000ce54377b6f3c3e1e15182c"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

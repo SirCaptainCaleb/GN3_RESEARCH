@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 At any vertex z of a linear 3-graph, at most two nonspecial incoming snake edges of rank at most 3 can coexist. This threshold is sharp without additional hypotheses: there is a linear triple system with three distinct nonspecial incoming snake edges of rank exactly 4 at one vertex.
 
+
 ## Body
+
 
 Suppose three distinct nonspecial incoming snake edges e,e_1,e_2 enter z and all have rank at most 3. Choose e of maximum rank q. Rank 1 is immediately special. If q=2, the two-edge path e_1,e enters e through z while (e,z) is already a snake incidence, giving two longest entrance labels and making e special. Thus q=3.
 

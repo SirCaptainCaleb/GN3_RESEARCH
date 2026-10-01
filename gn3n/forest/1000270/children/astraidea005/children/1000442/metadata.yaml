@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "16580586208bf2755f87eea63fd3d643b3af6d52c160395a602b7de3e6636917"
 created_at: "2026-09-28T17:07:35.481703+00:00"
 id: "1000442"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "No three vertices are inseparable in every two-cover"
+statement_sha256: "8e387a923a03adc7085899f3879f1b532f5de1dd412b21f7bf60a84af3b8b1be"
 substantive_worker_ids:
   - 626
 support_reason: "not_a_proved_or_evidence_claim"

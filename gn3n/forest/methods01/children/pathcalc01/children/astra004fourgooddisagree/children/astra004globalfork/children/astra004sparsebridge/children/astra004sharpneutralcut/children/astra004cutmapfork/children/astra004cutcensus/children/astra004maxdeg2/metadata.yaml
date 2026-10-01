@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1d289caf08ff52b86fb74b375181a7bc547e5bba299f9d6d7fa54aafd41e304c"
 created_at: "2026-09-26T21:09:11.807692+00:00"
 id: "astra004maxdeg2"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An extremal longest support has odd degree exactly two unless disturbance already occurs."
+statement_sha256: "c5fd8c5fa42594523215e5488e6cf275b8d76830133a895e3f45f9895cb6fd19"
 substantive_worker_ids:
   - 642
 support_reason: "dependency_verification_pending"

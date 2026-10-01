@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b510600d31bf380c2310a9dcdd9540a2862214e5106baddc5cd8511e2b01853b"
 created_at: "2026-09-27T14:46:13.269696+00:00"
 id: "1000493"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The sharp-shell transversal dichotomy is support-theoretically sharp via balanced trees."
+statement_sha256: "a21f387ef92d6155969ef7fa9d076d7cd978756ba73c9e7f0fa2cccff70bca68"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

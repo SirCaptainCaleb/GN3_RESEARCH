@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0012996c06911010e49c9b9506ff8c60af4b131643e4957e6f048aa885102ed6"
 created_at: "2026-09-24T05:46:47.571332+00:00"
 id: "1000620"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The clean-minus-double defect is bounded by the number of 0-1-1 ascending edges."
+statement_sha256: "72b0e9c6f158b19cccec2231be51db6f4a43a52d846c2256e5a2f259c0b6f752"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

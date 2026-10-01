@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "86d845faf6398acf53b21c37b4829f59dd8371052034a82e5a27cb623bd11472"
 created_at: "2026-09-29T18:36:04.983126+00:00"
 id: "1000557"
 last_elevation_revision: 8786
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Adjacent Hamiltonian four-windows force a pc2 square or a two-label core fan."
+statement_sha256: "0da8368661eefff4995cdbfc6224a9d652afc587898fd9317a89920f1f30bc68"
 substantive_worker_ids:
   - 637
 support_reason: "current_certified_premises"

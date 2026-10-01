@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "515b86a6e0c2492921435fe1f01d620128da6a49b23468d30f7751e3ca6d75ad"
 created_at: "2026-09-22T05:29:47.354689+00:00"
 id: "1000368"
 last_elevation_revision: null
@@ -36,6 +37,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Potential-oriented common-terminal branch: bound charged ascending edges at one vertex by analyzing rank gaps, witness geometry, and the exceptional low-potential patterns."
 simplified_statement: "Conjecturally, for each vertex v there are at most three ascending nonspecial edges {x,v,u} with v terminal and φ(u)≥φ(v)."
+statement_sha256: "4d9a4923d966486d791c5cea4f79feef7ed74c164581885ae7e15215daad539c"
 substantive_worker_ids:
   - 262
 support_reason: "not_a_proved_or_evidence_claim"

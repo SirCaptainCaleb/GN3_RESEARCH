@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "94ba00170f12d2fbf2d7b1fc03a0d272b0d38dfda4405acdcc9822a64e337b36"
 created_at: "2026-09-29T20:46:21.642987+00:00"
 id: "two_bad_six_extensions_fourgood01"
 last_elevation_revision: 9000
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two bad six-extensions of any five-set force a four-positioned-deletion six-set."
+statement_sha256: "304337b9fe18091da25818e93d4e6b1a5e11313e69786546e49232130e02898a"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

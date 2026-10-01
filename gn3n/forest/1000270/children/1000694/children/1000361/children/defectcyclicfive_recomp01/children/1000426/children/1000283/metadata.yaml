@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ac7f25a7058501681c51fb6e9ec3c4829ef46b201e02a084b8ab902a9bd22ea8"
 created_at: "2026-09-28T00:29:14.836606+00:00"
 id: "1000283"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum-span cyclic certificates generate a connected family of cyclic-interval three-covers"
+statement_sha256: "91aff2345560c98cf0e124eaccf59461d816acde3587949fd9a24f2e766ae6dd"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

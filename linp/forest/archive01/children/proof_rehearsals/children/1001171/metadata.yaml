@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "d980c6fe59e8e1b9a23ca9e5698e4d39576953ed16478b0491a51c94bc62fd46"
 created_at: "2026-09-25T19:06:34.604238+00:00"
 id: "1001171"
 last_elevation_revision: null
@@ -32,6 +33,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "d03092d4af8d9af25f391935bdf520adfb0ad62853ac8d42832032ccc84f15fe"
 substantive_worker_ids:
 support_reason: null
 support_status: "unchecked"

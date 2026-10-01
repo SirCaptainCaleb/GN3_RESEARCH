@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "551dcb14cea03179cb8d2aadd9d4fa1da3c958158780fac0776c6c8fa1290fd1"
 created_at: "2026-09-30T13:18:07.564872+00:00"
 id: "blocked_fourcore_star_outer_shell01"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A blocked center in a four-core extension star forces a complete outer-pair six-shell or positioned disturbance"
+statement_sha256: "40dd3eba242d7cbe138ce0788a62586bfe503399ab67a4eeb626e21d8f984b0b"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

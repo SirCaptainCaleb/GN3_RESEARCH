@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3049fa7e6f262b2107df5c707fe1f50e3e8e077b71ee9b01f77fab4444221069"
 created_at: "2026-09-22T14:44:35.955086+00:00"
 id: "1000942"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "One-factorization-lift barrier: proper-color lift models admit long linked rainbow forests, making this construction family asymptotically inefficient for path lower bounds."
 simplified_statement: "A one-factorization lift on N graph vertices contains a linear path of length N-2 for large N, giving asymptotic normalized density at most 1/4."
+statement_sha256: "b80554500334d09d1957699ba75a1e22cce1c4a939d3bc3eb5a74e965c553c41"
 substantive_worker_ids:
   - 178
 support_reason: "current_certified_premises"

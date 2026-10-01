@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4e6b72cdace262ddac5b84cff2a0520f78b623be76e4cfc27c1e13905b743664"
 created_at: "2026-09-27T14:49:02.623177+00:00"
 id: "1000070"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every degree-three sharp-shell support star forces a disturbed two-edge walk."
+statement_sha256: "08e5d1e797a5207d5dfec1665f6f730720500322b8b9d995b82a1583c01949bd"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

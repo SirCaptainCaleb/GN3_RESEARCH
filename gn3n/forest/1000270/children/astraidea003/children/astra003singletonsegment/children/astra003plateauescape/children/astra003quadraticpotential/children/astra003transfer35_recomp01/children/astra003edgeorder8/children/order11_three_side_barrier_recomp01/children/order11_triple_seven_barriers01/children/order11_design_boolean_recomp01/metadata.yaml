@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5a768b44f6e87af7111cbf2142f631a3909c2ef238ad9d1dbd202a8ec89901fa"
 created_at: "2026-10-01T01:01:18.731778+00:00"
 id: "order11_design_boolean_recomp01"
 last_elevation_revision: 10287
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every order-eleven triple has adjacent nonextendable Hamiltonian four-sets or at least fourteen extendable four-centers, each with all fourteen proper complementary path-cover-two extensions."
+statement_sha256: "e33c880fd95224a4a9ccd0a1266b448b25dc308382eb611c1bfd253b19b190bb"
 substantive_worker_ids:
   - 755
 support_reason: "current_certified_premises"

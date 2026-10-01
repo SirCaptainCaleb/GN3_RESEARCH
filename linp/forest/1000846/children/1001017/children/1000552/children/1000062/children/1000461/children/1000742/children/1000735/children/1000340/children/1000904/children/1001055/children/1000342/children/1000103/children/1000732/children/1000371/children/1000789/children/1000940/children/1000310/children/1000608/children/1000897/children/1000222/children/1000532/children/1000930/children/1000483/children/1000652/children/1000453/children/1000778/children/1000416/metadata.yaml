@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b281c4e141ce8a1981d141c5abfa8edcfc223b0d72705221947e2c2c7fe5296c"
 created_at: "2026-09-25T20:49:05.528428+00:00"
 id: "1000416"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles."
+statement_sha256: "2606bc474e3776aae719c7a0bc8c5c4ebc84eb0ff0cb20d153e36ff65ce92879"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

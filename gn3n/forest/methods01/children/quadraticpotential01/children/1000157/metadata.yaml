@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1758d9c2d4266c97accbf01eef9609aaa50138b4c6edd5e0213a1791e3dcc46e"
 created_at: "2026-09-27T22:15:11.535601+00:00"
 id: "1000157"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "An oversized longest component forces a one-step moving longest-path family."
+statement_sha256: "5932ad39d9a4a17684854d2cf6a14933e9acb57fe5360b094e4ead43d71bb453"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

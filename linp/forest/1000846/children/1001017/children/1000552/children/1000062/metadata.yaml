@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1832ee2c8869c1cb04304dc0472cef9043c1657f4ee98e441ac9aa3dea17812f"
 created_at: "2026-09-22T21:58:07.626474+00:00"
 id: "1000062"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Terminal snake-incidence program: cumulative nonspecial incidence bounds initiate the rank-sensitive terminal accounting that feeds the coefficient estimates."
 simplified_statement: "Nonspecial terminal snake incidences have cumulative bound 2q-3."
+statement_sha256: "9315884ac58b3d9dab11bdee04eeff2b232c6a968446176f49d66e3b36ae84fb"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

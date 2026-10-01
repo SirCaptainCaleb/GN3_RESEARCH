@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "df5f6be5506f0e9f00ccf1a255441deaf3a7ce9b3237a16bd4ec1c5ac9a85741"
 created_at: "2026-09-28T00:45:48.842485+00:00"
 id: "astra003sixcore_recomp01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Synchronized far-end six-sets force order disturbance and a good common four-core"
+statement_sha256: "49447ac5556611b0ff9e818dcb9306517d84d007225a18ad2047dd7528bfa20e"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

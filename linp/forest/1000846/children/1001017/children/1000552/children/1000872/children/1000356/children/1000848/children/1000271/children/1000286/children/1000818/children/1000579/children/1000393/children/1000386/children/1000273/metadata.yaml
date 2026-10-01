@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "db46c5dec596db385d24ee99770e646bca477d536343c9a199f5378ebdbf64b2"
 created_at: "2026-09-24T11:29:38.902182+00:00"
 id: "1000273"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three simple low-high rail pairs force a terminal-terminal lens among the high rails."
+statement_sha256: "c2224218db635728130ededd93afd5d5e54bc0df8ae047d71af192c3609d6433"
 substantive_worker_ids:
   - 246
   - 231

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "801023a185f87d31894b48b30e11d697ea600b5c0581d70fb8b45ed8bc2e432d"
 created_at: "2026-09-24T05:46:38.318751+00:00"
 id: "1000775"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "High 0-1-1 terminal paths have a four-level reciprocal central normal form."
+statement_sha256: "e4263afcb77253b2e46e52a7ff4bfb98a0edf1721c64469a6cec090a9f96053c"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

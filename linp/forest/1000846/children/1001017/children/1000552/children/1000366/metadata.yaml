@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "fe4eed4543534fe760e66687920332a27d15e08f8d2bde93fec01e88514bebce"
 created_at: "2026-09-23T02:40:39.138341+00:00"
 id: "1000366"
 last_elevation_revision: null
@@ -57,6 +58,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Reciprocal stretch bound for ascending edges."
+statement_sha256: "8257de2c92eb83825e8bc4df28e8b5d4634c2de2218d78628df1d5900783a9f7"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

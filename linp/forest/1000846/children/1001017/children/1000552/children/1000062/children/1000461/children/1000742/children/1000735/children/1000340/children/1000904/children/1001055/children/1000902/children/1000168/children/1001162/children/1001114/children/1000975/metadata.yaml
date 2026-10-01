@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b810994a03f4c31e8aa300770ac88411bd0b1de024d8ed704d3e162432ed69b7"
 created_at: "2026-09-24T13:54:09.050754+00:00"
 id: "1000975"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every gap-one switching edge manufactures an endpoint lens on the maximum path."
+statement_sha256: "94bf5eff40d8ff575334eaff1940dbcb4c4f3cba991a166ba346ae3bc93f570c"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

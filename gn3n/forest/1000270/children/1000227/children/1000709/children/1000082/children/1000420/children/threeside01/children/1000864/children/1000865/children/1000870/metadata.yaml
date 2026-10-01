@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "57964c07eb29d82cace2653c3b6717609b8a8550fb42bfc6b98022979a4f35fc"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000870"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Each persistent-defect shell yields order disagreement or a full two-label square in certified top-cover normal form."
+statement_sha256: "8149adc25626fd6cd6ed6b96b1a102ae1288ceb12ab99e857df5e52b7b302fbb"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

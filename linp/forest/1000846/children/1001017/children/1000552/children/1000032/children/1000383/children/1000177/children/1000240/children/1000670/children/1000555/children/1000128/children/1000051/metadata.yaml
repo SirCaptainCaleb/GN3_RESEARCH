@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "91d3731e3b11092e0986ea5877d1ab1b9f63cbc44f33d5ac248d68f30f049fe6"
 created_at: "2026-09-24T14:25:52.358889+00:00"
 id: "1000051"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Canonical source rails of arbitrary common-terminal ascending edges are pairwise intersecting."
+statement_sha256: "8ee7e85d450b5eeb0bdc4b93449d8b7e142b94130942bb26656be495615517d6"
 substantive_worker_ids:
   - 223
   - 209

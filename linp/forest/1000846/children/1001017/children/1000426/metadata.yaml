@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "404671ec11c2c8d56df6894c6ba936a088a3cddcd885acbe45b9c41c471a2ae0"
 created_at: "2026-09-25T04:29:49.914646+00:00"
 id: "1000426"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Incidence-rank program using algebraic nullity and rank control as an independent route toward the path bound."
 simplified_statement: "Attack the general-length upper bound through the intersection graph and incidence-matrix rank."
+statement_sha256: "713579fe4ee21a7dbecc32901311165b1a09b0b09da5ff60ccb8e9bb6341bbef"
 substantive_worker_ids:
   - 249
 support_reason: "not_a_proved_or_evidence_claim"

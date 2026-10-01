@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "eecb1a7bb330ff06a819c08b5089b1ec3d2867dfc6df019f51f5cbb9f1005cfd"
 created_at: "2026-09-27T13:43:04.867136+00:00"
 id: "compattoggleasym44"
 last_elevation_revision: 0
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Asymmetric one-split pivots force order disagreement or reversed endpoint four-paths on both cores"
+statement_sha256: "9e50cea9d910d7a6ed5da172ddfd4d3f722ef63fe8fa41df5cc7f29356df7585"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

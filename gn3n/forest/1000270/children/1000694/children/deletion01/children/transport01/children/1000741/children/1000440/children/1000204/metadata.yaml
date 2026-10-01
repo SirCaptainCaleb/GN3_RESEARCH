@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7eb90b3082be8167d937a107e2c837ce81bec5d8d93faa2aaf494ff2472414c5"
 created_at: "2026-09-27T20:20:42.827631+00:00"
 id: "1000204"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Compatibility-window transport inside the well-founded defect process: compatible anchor neighbors occupy a short interval, after which degree, isolation, incompatibility, and four-kernel alternatives drive the transport toward bounded disturbance."
 simplified_statement: "Pairwise-compatible anchor neighbors occupy at most four consecutive positions."
+statement_sha256: "8bf17556bc3edf6c50c54e8f969adbe0bde283bd466d5bc239354aa57ff2a696"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

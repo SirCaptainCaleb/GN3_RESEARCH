@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c38ccc65b0fc70fd9516359011dcf765eb514c446eba765860fabe7a0143d66a"
 created_at: "2026-09-28T09:52:33.16217+00:00"
 id: "1000700"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A cross triple on consecutive exterior corridor vertices yields disturbance or a balanced longest-path exchange."
+statement_sha256: "ba3fc7de3a96ba3df273a2e8c597e9597af609b80b8b2a7524a34c83045ef2d3"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

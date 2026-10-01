@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "b455a7bcb2cde47a65c2957db37b67c9c6154dfc59f8956a1ec1554d4da20ccc"
 created_at: "2026-09-27T19:21:10.363346+00:00"
 id: "1000608"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every deletion singleton state descends in two moves to a three-vertex central state."
+statement_sha256: "5cbd1b9e24d326ac6d8d826d4b06000c4f025a05ac756d642502670ef23f70c4"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

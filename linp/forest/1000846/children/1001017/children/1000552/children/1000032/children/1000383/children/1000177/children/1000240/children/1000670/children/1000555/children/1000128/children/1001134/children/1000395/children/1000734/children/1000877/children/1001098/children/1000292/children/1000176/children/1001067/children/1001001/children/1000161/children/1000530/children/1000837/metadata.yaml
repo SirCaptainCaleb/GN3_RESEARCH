@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "65a819c051ee4aa175c7a33eee8f435368be74e1ccd5849b9ca5eb4b3b4680a4"
 created_at: "2026-09-25T20:57:45.431058+00:00"
 id: "1000837"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "0bfb0c5f996a7623b4f5127749f595e77fa563599f3c4ad4d3f7cdd01398ae4f"
 substantive_worker_ids:
   - 224
 support_reason: "The proof's branch (B) does not establish a clean two-path exchange. Choosing z nearest to x in the R-order only shows that the open R-segment R(z,x) contains no S-vertex. It does not show that the open S-segment S(z,x) contains no R-vertex: another common vertex can be farther from x on R but closer to x on S. Thus the balance theorem 390e818020e1 cannot be applied. This is precisely the order-inversion case separated explicitly in c10cb2dd049c; the stated two-way cycle/equal-exchange dichotomy omits that third possibility."

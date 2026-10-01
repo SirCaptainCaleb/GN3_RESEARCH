@@ -6,6 +6,7 @@ Let Q,R be maximum endpoint paths and let two common vertices bound any clean le
 
 ## Body
 
+
 Let Q and R be maximum endpoint paths ending at x and y. Let a,b be two common vertices such that the Q-side L_Q and R-side L_R form a clean lens. Write
   A=|L_Q|,
   B=|L_R|.

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "023710acaec2caeea51b44f854615d5aa839be621f1c94c9b6c8927e61130666"
 created_at: "2026-09-23T04:26:35.091498+00:00"
 id: "1000329"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Characteristic-two additive blow-ups lift every fixed base cycle to an almost q-fold path."
+statement_sha256: "6211d66bf750b65d1d336dcecae4502deb130098983ca10f910d949f80651ef2"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

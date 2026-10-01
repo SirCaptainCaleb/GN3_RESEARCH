@@ -1,0 +1,20 @@
+[
+  {
+    "instructions": "Define terms whose meaning workers should use consistently. Prefer atomic words; include multiword phrases only when the phrase is genuinely atomic.",
+    "position": 1,
+    "section": "canonical",
+    "title": "Canonical terms"
+  },
+  {
+    "instructions": "Terms or phrases that workers should not use in durable mathematics; name a preferred replacement when one exists.",
+    "position": 2,
+    "section": "prohibited",
+    "title": "Prohibited terms"
+  },
+  {
+    "instructions": "Terms currently used inconsistently or unclearly. Define them precisely where possible; otherwise prohibit them.",
+    "position": 3,
+    "section": "ambiguous",
+    "title": "Ambiguous terms"
+  }
+]

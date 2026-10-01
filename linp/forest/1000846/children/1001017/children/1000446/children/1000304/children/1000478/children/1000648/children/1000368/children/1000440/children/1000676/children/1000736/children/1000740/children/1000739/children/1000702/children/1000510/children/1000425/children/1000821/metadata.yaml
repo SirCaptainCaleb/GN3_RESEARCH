@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "4fd2a536964ed22ecbd8d54348a8e6e3995ea9d07144e11d58f1b4f9109093d7"
 created_at: "2026-09-24T03:59:44.308059+00:00"
 id: "1000821"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Potential-five pattern 4555 reduces to exactly two crossed edges and one joint edge."
+statement_sha256: "7a80acb234bb3bd186e9f5bb0ce18bef2316d48ed7820ffd0041cadd47caf113"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

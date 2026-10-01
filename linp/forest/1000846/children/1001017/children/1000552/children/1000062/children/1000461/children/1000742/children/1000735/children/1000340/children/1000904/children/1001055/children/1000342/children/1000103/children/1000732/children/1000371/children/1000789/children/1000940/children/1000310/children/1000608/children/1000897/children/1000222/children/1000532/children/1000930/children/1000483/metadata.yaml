@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5fd99d71f6fae54e6abcf10a1e1b5faffca6107fbaf4a3fe096907231527803a"
 created_at: "2026-09-25T20:44:43.420517+00:00"
 id: "1000483"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Minimal backward-collision cycle program: identify inclusion-minimal collisions with one unit of rank slack and iterate nested-collision shortcuts toward many edge-disjoint linear cycles."
 simplified_statement: "Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack."
+statement_sha256: "1ed9c0e775fe72fe0493757752c2efdb55a92cc976934ddb6dc60e2cbcb81683"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

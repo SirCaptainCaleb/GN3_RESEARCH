@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bc246a8b8c40aacb3e628d47ff041302f3d88e0d5b0112ff0c3bc94dd4510405"
 created_at: "2026-09-22T17:23:28.933846+00:00"
 id: "1000021"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Additive affine-plane blow-ups have a 4q-cycle and cannot beat one third."
+statement_sha256: "fb463a4f6a6c9be1e73ae01ec2e8ed86767043ae58d8910070802432a9adc277"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

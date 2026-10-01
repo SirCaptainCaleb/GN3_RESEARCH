@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let G be a boundary tournament and let x,y be distinct vertices such that all four states
 G, G-x, G-y, G-{x,y}
 are non-Hamiltonian with path-cover number two. Suppose x and y are internal in every two-cover of G.
@@ -27,7 +28,9 @@ form a coherent internal-deletion square of two-covers on one fixed support part
 
 Thus a universally-internal adjacent square pair has the following sharpened sparse residue: either some lower state has crossing multiplicity at least two, or a sparse lower cover already creates order disagreement, or the adjacent pair is simultaneously deletion-stable in both singleton directions and in the double deletion.
 
+
 ## Body
+
 
 By the adjacent-internal-square bypass ladder, a one-crossing equality cover of G-x has support partition
 V(A union {y} union B) | V(Q),

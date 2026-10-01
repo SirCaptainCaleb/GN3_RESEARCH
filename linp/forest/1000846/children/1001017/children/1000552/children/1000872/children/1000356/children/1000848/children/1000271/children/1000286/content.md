@@ -6,6 +6,7 @@ Let e_i={x_i,v,u_i} be 0-1-1 ascending nonspecial edges through common assigned 
 
 ## Body
 
+
 Let e_i={x_i,v,u_i}, i=1,...,k, be distinct 0-1-1 ascending nonspecial edges through a common terminal v, all assigned to v. Assume their ranks belong to {q,q+1}.
 
 For each i, because the source incidence is clean, choose the globally fixed maximum endpoint path

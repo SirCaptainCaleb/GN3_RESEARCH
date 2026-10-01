@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3a71c4d66f43ae7730be9eb88fe00f24fab95a0fae9a318f69aaffd21c0b9adf"
 created_at: "2026-09-25T20:47:39.02359+00:00"
 id: "1000107"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any source return on the terminal side of a whole chord pays the nonspecial cycle budget."
+statement_sha256: "e078b9a28bccbdf05cb38be7d64c3a86b228b3e0035680a3e596156e5b88be89"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

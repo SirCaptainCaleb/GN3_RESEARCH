@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample with lexicographically maximal spanning three-cover A|B|C, decreasing component orders a>=b>=c>=2, gap g=a-(b+c), and deep-central interval J={i:max(g,2)<=i<=min(a-g-1,a-3)}. Every block-faithful exact cover of H-a_i with i in J is automatically clean: after naming {P,Q}={B,C}, it has block order L_i P | Q R_i. Hence adjacent indices in J cannot both be block-faithful. Consequently every two consecutive indices in J contain an index i such that every exact two-cover of H-a_i has either at least three ordinary edges joining distinct members of L_i|R_i|B|C, or relative-order disagreement on an inherited support, yielding a reversed common edge, reversing tight triple, or vertex-simple tight cycle.
 
+
 ## Body
+
 
 # Every two deep-central deletions force three crossings or explicit order disagreement
 

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6736b58932fc17ba59bf8a408072c8668bab0aecc5517311deff09d2a78a668b"
 created_at: "2026-10-01T06:20:03.667669+00:00"
 id: "1000878"
 last_elevation_revision: 10807
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A locally minimal 4|m state with m>=7 has a non-Hamiltonian endpoint six-shell whose two endpoint deletions are bad and all four four-side deletions are Hamiltonian."
+statement_sha256: "e44c0475957200f61aeab08dbb6046b97d4f6e2c6bfbab1724950e1b1022aee7"
 substantive_worker_ids:
   - 952
 support_reason: "current_certified_premises"

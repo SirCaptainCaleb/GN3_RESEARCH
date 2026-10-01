@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 In the setting of 3a833de66417, the unordered pair of complementary 2-factors {F_e,F_f} of K_6-M has exactly one of the following two forms:
 
 (A) both F_e and F_f are six-cycles;
@@ -10,7 +11,9 @@ In the setting of 3a833de66417, the unordered pair of complementary 2-factors {F
 
 In particular two disjoint-triangle factors cannot occur simultaneously.
 
+
 ## Body
+
 
 Each F-factor is a simple 2-regular graph on six vertices, so it is either a six-cycle or the disjoint union of two triangles.
 

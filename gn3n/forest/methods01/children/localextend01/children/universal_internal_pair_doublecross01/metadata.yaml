@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "b45417d57caab995f35fb706b1b5b1e40e738f2732d5f8b789d3c1b25c075ff9"
 created_at: "2026-10-01T06:22:26.574561+00:00"
 id: "universal_internal_pair_doublecross01"
 last_elevation_revision: 10807
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two universally internal cube labels force double crossing unless adjacent; in the adjacent case every sparse lower cover must bypass the deleted pair directly from its left fragment to its right fragment."
+statement_sha256: "774e7aadab728e33f081115b3c62d322e4ec51ad07c20b6d048385a054d79032"
 substantive_worker_ids:
   - 922
 support_reason: "provisional_unaudited"

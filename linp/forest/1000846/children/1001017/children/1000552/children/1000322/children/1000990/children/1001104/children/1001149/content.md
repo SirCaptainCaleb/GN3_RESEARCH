@@ -6,6 +6,7 @@ Every exact-density P_ell-free equality obstruction contains a vertex v with d_H
 
 ## Body
 
+
 Let H be an exact-density P_ell-free linear triple system,
   |E(H)|=dn,  d=floor(2ell/3),
 and write n=6d+1+s with leave graph U.

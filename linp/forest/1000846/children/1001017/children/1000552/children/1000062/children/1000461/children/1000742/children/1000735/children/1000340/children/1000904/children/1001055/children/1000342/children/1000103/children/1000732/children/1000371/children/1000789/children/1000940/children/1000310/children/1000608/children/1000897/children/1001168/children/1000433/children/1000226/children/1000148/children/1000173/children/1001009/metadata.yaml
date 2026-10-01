@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "094f2cfdb9f8a163ad8391548126e8b335da403da2cd1f78885ebebe23e3106b"
 created_at: "2026-09-25T21:42:57.757911+00:00"
 id: "1001009"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Tight-collision rotation outputs split into rank rise, rank-p special/nonascending, or one exact ascending entrance."
+statement_sha256: "9cbadd96d8303deac6e5eff6bf9f9657acc8fd71a08dc7b4e5ba2e4888f71452"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

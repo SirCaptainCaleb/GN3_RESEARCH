@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "f90c6a93ac9ab8d1e8a68e8851658664973156f8b44c47b58ad40fd845a16435"
 created_at: "2026-09-29T22:10:04.598581+00:00"
 id: "gap_inversion_cycle_seam_obligation01"
 last_elevation_revision: 0
@@ -30,6 +31,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "The gap-order inversion produces a tight cycle exactly when two specific seam triples are tight, and those seam conditions remain an open proof obligation."
+statement_sha256: "cc365abcc2f1e9c7803568c9576f11f89a1f7f16f44bac82dc6d6d5984ba1aeb"
 substantive_worker_ids:
   - 592
 support_reason: "not_a_proved_or_evidence_claim"

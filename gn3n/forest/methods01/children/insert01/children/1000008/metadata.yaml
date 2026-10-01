@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "59c57b930903bb65dd9d731a410077464c7a57ede5c0ecfe191385b75b506f4c"
 created_at: "2026-09-27T22:12:13.90403+00:00"
 id: "1000008"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A first-type failed-insertion window is Hamiltonian or the universal cyclic four-kernel."
+statement_sha256: "7eda265107c24ee752cd1da75dca0822c32ddabd2a3c0e70cbaefcf2ab914441"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

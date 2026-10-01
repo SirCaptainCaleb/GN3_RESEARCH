@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8e2f53eac4ae473efd834592a47e48b36b0df25db157488b32683b9c589292fb"
 created_at: "2026-09-27T18:10:32.557087+00:00"
 id: "1000621"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "From lambda ten onward a secondarily balanced global quadratic minimum has no component of order four."
+statement_sha256: "b217d4173a56e16c4020b91296e73b1efd06a86b86931828eef6a5261e38d58d"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ In the extremal C4 simple-rail skeleton, the two nonsimple rail pairs have expli
 
 ## Body
 
+
 Assume the extremal simple-rail skeleton of de60628c8d58 is a 4-cycle. Relabel so the simple edges are
   13, 32, 24, 41,
 and hence the nonsimple/theta pairs are

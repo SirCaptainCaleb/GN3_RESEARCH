@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "10abb0fac3a7c622bedc7d52966f5e00460731fec1088d11ca21dd5d2af9bb6c"
 created_at: "2026-09-25T04:29:49.914646+00:00"
 id: "1000552"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Main quantitative upper-bound spine. Contact-snake accounting first yields the 11/12 regime and then, through the full contact-conflict graph, the certified 43/48 coefficient. Near equality forces switching and strict-gap structure; after lens-free reconstruction, improvement beyond 43/48 is reduced to local certificate congestion. Reusable machinery includes contact multiplicity, blockers, central windows, source rails, rotations, and collision/cycle extraction."
 simplified_statement: "Attack the general-length upper bound by charging snake extensions and terminal contacts along longest paths."
+statement_sha256: "761efaa24e496676c9dca3d0595389b4736d5c61f2217524e41465441a29135e"
 substantive_worker_ids:
   - 249
 support_reason: "not_a_proved_or_evidence_claim"

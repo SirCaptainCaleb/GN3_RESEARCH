@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "d58e41c503cda31c4583ab8ad10ffb61ef6d7b33df79d0b58f410c82305076d9"
 created_at: "2026-09-28T02:20:20.553633+00:00"
 id: "1000107"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "85e841167e4ffb0b089a2548bfd13905273e94067685957e62f22f04297ef61e"
 substantive_worker_ids:
   - 660
 support_reason: "Proof invalid: it uses cyclic rotation of an ordered tight triple ((b_i,t_i,d) => (t_i,d,b_i)), which is not valid in a boundary tournament."

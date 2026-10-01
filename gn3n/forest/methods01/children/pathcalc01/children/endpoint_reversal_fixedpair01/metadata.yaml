@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "4e22f11d051f4f35a3c2d645577d22a48d49256a2280fd505466e4c12facff4d"
 created_at: "2026-09-29T01:18:27.313479+00:00"
 id: "endpoint_reversal_fixedpair01"
 last_elevation_revision: 7702
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A common oriented fixed pair makes every two outside labels a Hamiltonian four-set"
+statement_sha256: "65c9db0cee37a8876653f8ba7c7b40a70ea24f5d6bad1324a848e9d18d634b24"
 substantive_worker_ids:
   - 718
   - 622

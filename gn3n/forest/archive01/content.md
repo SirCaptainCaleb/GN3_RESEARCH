@@ -6,4 +6,3 @@ Retired grand-theorem routes and obsolete organizational shells. Attempts belong
 
 ## Body
 
-‹none›

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0e15b300ebb8b09386f540716cb29447a35e121583190ad7219dcb1877844f37"
 created_at: "2026-09-27T20:18:33.902702+00:00"
 id: "1000108"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Support-level deletion-cover cocycle branch: singleton-swap cycles have trivial support monodromy while genuine order defects persist with controlled parity, forcing endpoint structure or a bounded order-transport normal form and showing that defects survive almost all further deletions."
 simplified_statement: "Support-level deletion-cover cocycles have trivial monodromy"
+statement_sha256: "698ad581db5537a6de35e39cee36725d97ecd57d09bceba7d3e24aa68abf0f34"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

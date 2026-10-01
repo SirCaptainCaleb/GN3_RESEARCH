@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bad3c6f92f47edf7e0f158d1f2e4ebcb53e6b35f1a489a6a1f612a0185187e74"
 created_at: "2026-09-22T19:30:27.024611+00:00"
 id: "1000597"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every private vertex of a linear q-cycle in minimum degree at least q has a noncycle ear meeting the cycle in at most one additional vertex."
+statement_sha256: "479941cfec03b0c3a6bc85aa6011bc7e60357ae3012818be642bcdce896e4bc5"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

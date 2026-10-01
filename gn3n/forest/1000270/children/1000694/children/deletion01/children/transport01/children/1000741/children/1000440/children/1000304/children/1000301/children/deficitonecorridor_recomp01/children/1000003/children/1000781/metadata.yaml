@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e5fcc77a8e21d50e41e739fe3e1b34074928ff7ba557847be48c8036b962ee25"
 created_at: "2026-09-28T04:00:36.06512+00:00"
 id: "1000781"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A large one-gap replacement corridor contains many disjoint witnesses of one common type."
+statement_sha256: "b81908ca3bc409abd25cdace81d6b5a302272cf9fd230851bf727bf61dd41e21"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

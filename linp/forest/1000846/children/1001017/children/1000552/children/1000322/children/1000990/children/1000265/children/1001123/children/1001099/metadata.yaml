@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bc82139d5914877bd503cc50fdf77df499063b336d9b1f053bcf2a01176f960f"
 created_at: "2026-09-24T02:57:07.462981+00:00"
 id: "1001099"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Potential-oriented local degree would close the zero residue equality layer."
+statement_sha256: "783f284e2ee0e8290c419bf29123e55231a8b545f1dd147876c81bb659ea478f"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

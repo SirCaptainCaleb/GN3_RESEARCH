@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7c609f84e1fe71c9ba2c383a0d2bb57300b02e3dec6d8ec3bd6fbd3ef0648f99"
 created_at: "2026-09-27T01:53:48.541575+00:00"
 id: "compatanchordich06"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "High compatibility degree forces many support switches or many same-path relocations."
+statement_sha256: "3ef6f9fd403485b8ff7d638434617f75f235db71e84ac8f9f873a56e88279446"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

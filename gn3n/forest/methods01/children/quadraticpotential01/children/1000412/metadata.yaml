@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "30a26197df9e9f0a745057e21bdb9a7c323e9ce782cbdcb6c4b754a6be13d95f"
 created_at: "2026-09-27T19:41:10.171743+00:00"
 id: "1000412"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Local 4-by-5 quadratic plateau: equal-potential 4|5 repartitions generate a constrained plateau whose distinct states are crossed or singleton-adjacent; the resulting exchange graph forces support crossings, six-set order disagreement, or escape from the trapped local minimum."
 simplified_statement: "Every local 4|5|a quadratic minimum has a nontrivial equal-potential 4|5 repartition."
+statement_sha256: "b40bad8b47e9e5a8fd5f1513706d351b505e060054fdfac250930d5844e4c50b"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

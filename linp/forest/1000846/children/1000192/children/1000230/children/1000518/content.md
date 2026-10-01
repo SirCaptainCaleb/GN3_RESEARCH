@@ -6,6 +6,7 @@ Deleting one point from the cyclic STS(13) gives a 12-vertex linear 3-graph in w
 
 ## Body
 
+
 Write A_i={i,i+1,i+4} and B_i={i,i+2,i+7} in Z_13. Delete 0 and its six incident blocks. The map μ(x)=3x is an automorphism fixing 0, with μ(A_i)=A_{3i-1} and μ(B_i)=B_{3i+6}. The surviving blocks form the μ-orbits
 (A1,A2,A5), (A3,A8,A10), (A4,A11,A6), (A7),
 (B1,B9,B7), (B8,B4,B5), (B12,B3,B2), (B10).

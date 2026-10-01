@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7701de62706c1edd684dfc51f7a1b2f247da8a9f8b1f754358c0d740d6869443"
 created_at: "2026-09-28T03:10:30.080176+00:00"
 id: "1000016"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The shared-endpoint exchange branch amplifies to a Hamiltonian six-window or order disagreement."
+statement_sha256: "fa3c91e453d738aa27250cacb5f6e4bcf81931567d852954743175e394836fe1"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

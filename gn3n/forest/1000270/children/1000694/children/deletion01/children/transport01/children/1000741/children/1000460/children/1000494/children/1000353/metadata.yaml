@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "29865b19c7fd7d167d19e057d643856a1c543667a9cc77b99bfba524924fac8d"
 created_at: "2026-09-25T12:30:18.246975+00:00"
 id: "1000353"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Equal endpoint support partitions force same-support restoration and an opposite-end bridge."
+statement_sha256: "7e9d7e6655bf31763153ef1dcb213dbb91bf4bf876e0d5ca1b70b6104341d40a"
 substantive_worker_ids:
   - 625
 support_reason: "current_certified_premises"

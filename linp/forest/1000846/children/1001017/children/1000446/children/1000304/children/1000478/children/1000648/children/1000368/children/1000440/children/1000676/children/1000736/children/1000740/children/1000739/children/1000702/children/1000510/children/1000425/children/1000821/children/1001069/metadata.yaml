@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6e9da1b31c300dcaba9a69b1e35b1775c0de2e180ba235c294f08d60f8e774bb"
 created_at: "2026-09-24T04:01:41.380152+00:00"
 id: "1001069"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The exact 4555 normal form is a crossed two-pole incidence rectangle."
+statement_sha256: "942abcf43b3dd00f9e0b963adb5708cc5f4afa190eeb601d4f9b5540a3faaa96"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

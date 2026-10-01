@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "38343d43cc5d024b8940ccc2c6196cc53e49aab2d02fcd68843d2fa22c8dcd4a"
 created_at: "2026-09-24T13:02:53.951884+00:00"
 id: "1000765"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Near equality in the arbitrary-r fixed-entrance bound forces linear double-contact mass."
+statement_sha256: "67f2e0e3a907386c78b64141e50b2bc260d358b796186e80108e7337e217c2f3"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

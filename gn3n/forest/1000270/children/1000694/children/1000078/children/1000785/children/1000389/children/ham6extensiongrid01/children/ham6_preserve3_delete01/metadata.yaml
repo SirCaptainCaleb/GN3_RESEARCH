@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7da7485c4de965e96cda52be9bf0a01e57fe890230302b58b5bbd20ae1ceb57d"
 created_at: "2026-09-29T13:20:07.137862+00:00"
 id: "ham6_preserve3_delete01"
 last_elevation_revision: 8250
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A Hamiltonian six-support has a good deletion outside any prescribed three-set."
+statement_sha256: "dd9eee51b3edaa88d8b789862ad63b963cd4e28d97e3be58e9f6bf6832e0f066"
 substantive_worker_ids:
   - 672
 support_reason: "current_certified_premises"

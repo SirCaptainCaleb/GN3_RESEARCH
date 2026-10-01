@@ -6,6 +6,7 @@ Let L=ell-1 in the stalled state max k<=kappa+3. If u is top-potential with k_u=
 
 ## Body
 
+
 Assume the stalled two-level state 2b32ca95800e. Put
   L=ell-1,
   S={phi=L-1},

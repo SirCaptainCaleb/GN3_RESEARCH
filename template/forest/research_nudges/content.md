@@ -6,4 +6,3 @@ Project-local research nudges. Blank in the template; projects populate and cura
 
 ## Body
 
-‹none›

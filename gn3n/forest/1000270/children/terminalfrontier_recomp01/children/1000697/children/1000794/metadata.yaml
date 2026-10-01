@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ef095cda2bc6802a5308353ece0e8605085212eae89a57ee7523eb97d84efb37"
 created_at: "2026-09-28T02:02:23.98135+00:00"
 id: "1000794"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every join-adjacent opposite-donor residue forces a reverse cross triple."
+statement_sha256: "f35e52a62a7557b2e2e852dc635ec383e2f93f3323471911a713149d771523c0"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

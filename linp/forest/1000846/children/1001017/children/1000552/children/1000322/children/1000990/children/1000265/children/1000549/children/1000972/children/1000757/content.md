@@ -6,6 +6,7 @@ For a witness-avoiding set S, the density deficit updates exactly by r(H-S)=r(H)
 
 ## Body
 
+
 Let H be a vertex-minimal counterexample to the equality-layer assertion S_ell at density threshold d. Fix a nonspecial edge e together with a witness path P for e.
 
 Let S⊆V(H)\V(P). Then e and its witness survive in H-S, and nonspeciality survives as well: deleting vertices cannot create a new entrance witness, while P still certifies the old rank and entrance. Let N(S) denote the set of hyperedges meeting S.

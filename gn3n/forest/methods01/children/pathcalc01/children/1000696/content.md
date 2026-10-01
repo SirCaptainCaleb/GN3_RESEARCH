@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a boundary tournament. Let K be a vertex set and let x,y be distinct vertices outside K. Suppose P_x is a tight Hamilton path on K union {x} and P_y is a tight Hamilton path on K union {y}, and the vertices of K occur in the same relative order in P_x and P_y. Write that common order as
 C=(c_1,...,c_m).
 Then P_x and P_y are obtained by inserting x and y into two gaps g_x,g_y of C, with endpoint gaps allowed.
@@ -14,7 +15,9 @@ Then P_x and P_y are obtained by inserting x and y into two gaps g_x,g_y of C, w
 
 Thus if K union {x,y} is non-Hamiltonian and no reverse-cross or Hamiltonian-four witness occurs, x and y must occupy one common endpoint gap of the compatible core order; equivalently P_x and P_y are two same-end extensions of the same tight core path C.
 
+
 ## Body
+
 
 Because P_x and P_y induce the same relative order on K and each has only one vertex outside K, each is obtained from the common word C by inserting its exceptional vertex in one gap.
 

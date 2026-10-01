@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1f6419e07dda8ae56330477243031a0a12a1b5463a490c61a596bbb3b5e9ed65"
 created_at: "2026-09-27T14:23:38.411606+00:00"
 id: "cocyclescope01"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The cocycle route needs an intermediate datum between support and full pair-state compatibility"
+statement_sha256: "016349bb856987d57444b73905a306bf2358283e7871780fff50f9469785db7c"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

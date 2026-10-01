@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cd61456e5b7aaa2418f669c666bfacf40a81ab6252c4c1eb964da017296619b5"
 created_at: "2026-10-01T05:58:42.532628+00:00"
 id: "1000864"
 last_elevation_revision: 10659
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any two persistent three-side defects have a common neighbor in every rooted shell, yielding paired Hamiltonian five-sets and a six-set transport package."
+statement_sha256: "2fbeec9ea86ee4b2d08b0420d3b67949cdbd1c2a065cd97a855f47f614cab6cc"
 substantive_worker_ids:
   - 952
 support_reason: "current_certified_premises"

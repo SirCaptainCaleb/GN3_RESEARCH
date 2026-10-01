@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "462ae17d3608c40f52b19d58136c464785400506af0c19a78c30b4636990ac4a"
 created_at: "2026-09-25T21:26:21.104765+00:00"
 id: "1000000"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A higher-rank internal edge on a maximum endpoint path forces a suffix return unless the path leaves through its unique entrance."
+statement_sha256: "017b241dfd832db3c8466a4e3b06c2e7cbcbcba494fe8ae20430063daad43fc4"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

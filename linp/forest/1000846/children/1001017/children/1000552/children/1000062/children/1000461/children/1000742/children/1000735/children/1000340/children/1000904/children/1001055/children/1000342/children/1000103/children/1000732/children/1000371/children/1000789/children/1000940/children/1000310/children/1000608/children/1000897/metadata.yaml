@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a3cddb60dfc1eb7888598e4cb252d23cef69f40e2620960297864c44a8187d61"
 created_at: "2026-09-24T18:50:47.905802+00:00"
 id: "1000897"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Backward color-terminal collision program: localize collisions on rank-monotone terminal paths, force blocker and rank-jump structure, and organize crossing or nested collision families for cycle extraction."
 simplified_statement: "Color-terminal collisions on a rank-monotone terminal path point only backward."
+statement_sha256: "6a299262e42b37d757f7a76394d1a156c260e3fa937761518343596ae26ce740"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

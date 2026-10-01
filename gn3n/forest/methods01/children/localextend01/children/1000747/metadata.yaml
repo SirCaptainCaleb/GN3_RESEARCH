@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "736e642e2e98b2590589b610a0643842b40f8c6ba1fa5ce5b94a8bb5a839ac79"
 created_at: "2026-09-28T14:53:38.737584+00:00"
 id: "1000747"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Complete pair-extension over one core forces a triple enlargement or a Hamiltonian exterior four-set"
+statement_sha256: "df50d2510c18b9fe238e85ec212129af3ffe51d1716cc801599bcf38ae7e7ecc"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

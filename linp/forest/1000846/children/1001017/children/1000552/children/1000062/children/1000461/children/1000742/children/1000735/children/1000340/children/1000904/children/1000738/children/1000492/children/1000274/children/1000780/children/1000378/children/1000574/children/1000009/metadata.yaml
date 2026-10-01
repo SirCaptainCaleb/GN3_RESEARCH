@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "185b5cbc653b4bb1f3901d2eca2b8e32562f23655b845eccac959e69594c433f"
 created_at: "2026-09-24T13:19:25.709667+00:00"
 id: "1000009"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Singleton ascending-terminal contacts: terminal-only contacts lie in a stricter upper-half band."
+statement_sha256: "3f91ccc03d7224b24443f23fc7d803f74d32bc157e616bf695be291e0f70a42f"
 substantive_worker_ids:
   - 223
   - 209

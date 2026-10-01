@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "aac4a09dff11f202d951ad387ff1e8310858ee5d2ce67040ed70acc29dea0b15"
 created_at: "2026-09-26T01:26:22.953534+00:00"
 id: "fractionalpathavg01"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A tight path concentrates deletion averaging to fractional mass 2+1/lambda."
+statement_sha256: "8843c3d5a8a042a08f90faafa5cbdfeaf2f945e77e5f50b5142b9027e4996666"
 substantive_worker_ids:
   - 581
 support_reason: "current_certified_premises"

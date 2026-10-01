@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7e548712e254659940af97dbac13f67226d77c3506e96f08d6c48f944f42f3f9"
 created_at: "2026-09-24T18:11:22.60496+00:00"
 id: "1000877"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Lens-free near-dangerous gap-one overlap program: obtain quantitative source-rail overlap and retain many whole distinguished pairs for subsequent collision or cycle arguments."
 simplified_statement: "Near-dangerous gap-one states admit sixteen-elevenths lens-free overlap."
+statement_sha256: "5a7f5a4eefadf7f91236c2509572cf7a9ed2c19ed170e204199f54a0748833f3"
 substantive_worker_ids:
   - 250
 support_reason: "current_certified_premises"

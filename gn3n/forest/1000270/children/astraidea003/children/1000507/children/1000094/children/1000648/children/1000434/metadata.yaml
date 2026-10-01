@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "719256c032558f3b3247ea016c425b8b902c7d27b5028e9b636d62688130c833"
 created_at: "2026-09-27T22:08:25.641146+00:00"
 id: "1000434"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A quadratic-minimal component oversized against both partners yields a bounded kernel, endpoint cross triple, or doubled cross barrier"
+statement_sha256: "c9a11d3ec3f5d5b0a2d795b61864363d52172f33221183fe20d86ed6879678b3"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

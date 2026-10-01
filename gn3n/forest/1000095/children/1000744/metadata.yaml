@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "e0e955f64542b6b2422aac5f88efb55738cb863ad3133300c0032a9fc138468b"
 created_at: "2026-09-28T17:07:28.460842+00:00"
 id: "1000744"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Deletion covers can be chosen with bounded inherited fragmentation"
+statement_sha256: "95ea34c4d327dd88a2bb2499b7a565513421f7f46e4b7d55fc481fdb93d0c9fc"
 substantive_worker_ids:
   - 626
 support_reason: "not_a_proved_or_evidence_claim"

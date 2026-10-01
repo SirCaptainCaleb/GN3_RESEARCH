@@ -6,6 +6,7 @@ For a d-regular finite linear 3-graph H, the conjectural statement that H always
 
 ## Body
 
+
 Let H be d-regular on n vertices, with m edges and incidence matrix N. Then 3m=dn, so m=dn/3.
 
 Suppose the maximum linear-path length is L<=d-2, and put ell=L+1. Then H is P_ell-free and ell<=d-1. Since rank_R(N)<=n,

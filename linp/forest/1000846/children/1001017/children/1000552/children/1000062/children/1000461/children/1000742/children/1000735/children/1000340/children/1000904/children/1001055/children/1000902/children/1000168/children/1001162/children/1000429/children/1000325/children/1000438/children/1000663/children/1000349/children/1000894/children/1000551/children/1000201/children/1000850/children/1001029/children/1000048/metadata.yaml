@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "1a5946b1f593c22a8e76b4c5ffc90a9c2dd87cf99f64d5cc2f60e5d8ac4b6de8"
 created_at: "2026-09-24T21:05:34.166481+00:00"
 id: "1000048"
 last_elevation_revision: null
@@ -57,6 +58,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Both-prefix reciprocal terminals force a unique rail gate into the late half."
+statement_sha256: "1aa1fb143eb99946458e75bce538c2a1cef9a500d2a6711c8c596684f6d3f830"
 substantive_worker_ids:
   - 201
 support_reason: "current_certified_premises"

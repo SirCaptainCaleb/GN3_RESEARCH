@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "3222da5d4c5ae0fba523bca5c03e995c6d99743766e15f4c8c6af61002977490"
 created_at: "2026-09-24T05:32:55.50067+00:00"
 id: "1000625"
 last_elevation_revision: null
@@ -57,6 +58,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At the odd central boundary a four-single obstruction cannot occupy the right-private slot."
+statement_sha256: "fb07f24d033a9d11c922722200eb1d0c97b15d870c5326dafe7c7cac97223e89"
 substantive_worker_ids:
   - 225
   - 231

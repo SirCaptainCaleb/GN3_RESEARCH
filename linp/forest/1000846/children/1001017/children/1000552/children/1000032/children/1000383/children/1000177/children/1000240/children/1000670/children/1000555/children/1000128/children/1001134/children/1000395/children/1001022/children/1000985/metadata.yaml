@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ac0fefc7d47f62e5b6b4b7132b9543cef8ade0b979c3b52710ff51aa29a7b303"
 created_at: "2026-09-24T22:11:11.253345+00:00"
 id: "1000985"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Overlap-maximal maximum paths contain no clean four-point crossing braid cell."
+statement_sha256: "d403491dedf0cdd6cfeddddc78e79a9b6637ecdc1286b50fb981a9496858acb0"
 substantive_worker_ids:
   - 249
 support_reason: "current_certified_premises"

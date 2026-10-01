@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the canonical loss-one double-blocker two-cycle, both rotated states omit the same path vertex b_{i+1}; their second omitted vertices differ. This fixed hole b has at least two neighbor incidences outside the original path. Hence either one edge through b is otherwise disjoint from the original path, or at least two distinct b-edges are one-contact external chords.
 
+
 ## Body
+
 
 Write Q=(g_1,...,g_t), with g_1={a,a',c_1}, and A_j={b_j,c_j} the two new vertices at step j. Let h={a,u,b_{i+2}} be the loss-one blocker, with u in A_i and d the other vertex of A_i. The canonical states are
   P_0=(g_{i-1},...,g_1,h,g_{i+2},...,g_t),

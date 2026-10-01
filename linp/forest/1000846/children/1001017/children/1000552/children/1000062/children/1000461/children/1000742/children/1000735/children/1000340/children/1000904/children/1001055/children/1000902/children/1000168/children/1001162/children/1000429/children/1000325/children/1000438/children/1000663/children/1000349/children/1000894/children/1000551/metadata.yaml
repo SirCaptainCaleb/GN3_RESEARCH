@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "80d7520ef169b7103bb4b68da7623261bfe36b0395b36d68a37b893d0f837995"
 created_at: "2026-09-24T20:46:13.80513+00:00"
 id: "1000551"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Near-43/48 paid 0-1-1 extraction program: show linear paid-certified mass, canonicalize it as terminal-cycle chords, and pass to local strict-gap structure on almost all near-extremal potential mass."
 simplified_statement: "Near 43/48 there are one-sixteenth many distinct paid-certified 0-1-1 edges."
+statement_sha256: "71b1c3d7dbe45aa8fe0dbd64c7850cea95a05e6d6f65c1c2146a49c34948a84e"
 substantive_worker_ids:
   - 250
 support_reason: "failed_or_blocked_premise"

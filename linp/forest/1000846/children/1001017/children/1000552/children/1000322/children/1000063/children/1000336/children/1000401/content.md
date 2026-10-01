@@ -2,13 +2,16 @@
 
 ## Statement
 
+
 In loss-one sink case (B), let P=(p_1,...,p_s), s=q-2, end at x with opposite last vertex a, and let h_x be the mandatory x-type singleton blocker. Then C=(p_1,...,p_s,h_x) is a linear cycle of length q-1. Deleting p_s yields a canonical second x-ending path P^*=(p_{s-1},...,p_1,h_x).
 
 Write A_s={b_s,x} and A_{s-1}={b_{s-1},c_{s-1}} with c_{s-1}=p_{s-1}∩p_s. If neither last vertex of A_{s-1} admits a safe single-blocker rotation on P^*, then the unique double blocker through a containing b_s pairs b_s with a blocker in some cell A_j with j<=s-2.
 
 Moreover, at c=c_{s-1}, the deleted edge p_s={c,b_s,x} is itself an x-type single blocker relative to P^*. Hence if c is a safe sink, its deficiency-two normal form cannot be the perfect-double-matching type. In that case c has a clean edge f through one of the terminals y,z of e={x,y,z}, and P^*, p_s, and f,e form three internally disjoint c-to-x branches of lengths q-2,1,2. Thus their union is a theta containing linear cycles of lengths q-1, q, and 3.
 
+
 ## Body
+
 
 The loss-one Type-B normal form provides an x-type single blocker h_x through the opposite endpoint a and x. Relative to the deficiency-two path P=(p_1,...,p_s), h_x meets p_1 at a, meets p_s at x, and is disjoint from the internal edges, so C=(p_1,...,p_s,h_x) is a linear (q-1)-cycle. Deleting h_x recovers P. Deleting p_s instead leaves the path
 P^*=(p_{s-1},p_{s-2},...,p_1,h_x),

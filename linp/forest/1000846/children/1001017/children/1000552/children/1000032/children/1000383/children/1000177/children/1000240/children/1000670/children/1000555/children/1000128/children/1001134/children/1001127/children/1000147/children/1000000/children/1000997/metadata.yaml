@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "56dedb4fa8a4f480fa10936ac6bdcd4c606caa104e5a74871662a84c6be15cf1"
 created_at: "2026-09-25T21:29:00.793674+00:00"
 id: "1000997"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Many common high-rank edges of two endpoint paths force either many cycle-bearing common edges or many common nonspecial edges traversed through their unique entrances."
+statement_sha256: "7ffb425d7b818cb740d39c5a585aa00c51b2c540fb8f2fcbef54e961924af4f3"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

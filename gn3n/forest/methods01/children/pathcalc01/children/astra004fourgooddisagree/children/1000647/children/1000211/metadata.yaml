@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "0a9c054597bb945641ab1e67d64483cab6d115f269f4501a465c7a51d6111296"
 created_at: "2026-09-28T17:12:21.214618+00:00"
 id: "1000211"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Order-disagreement extraction program: prove every minimum counterexample has nonvacuous disagreement, then localize it to overlapping short Hamilton paths, reversible consecutive pairs, reversing triples, or a classified minimal disagreement cycle suitable for downstream transport arguments."
 simplified_statement: "Every minimum counterexample contains order disagreement."
+statement_sha256: "358b26e690a9a11764b3978bc108641c6b4b88b9f500ce4473ea93ed4089063e"
 substantive_worker_ids:
   - 659
   - 703

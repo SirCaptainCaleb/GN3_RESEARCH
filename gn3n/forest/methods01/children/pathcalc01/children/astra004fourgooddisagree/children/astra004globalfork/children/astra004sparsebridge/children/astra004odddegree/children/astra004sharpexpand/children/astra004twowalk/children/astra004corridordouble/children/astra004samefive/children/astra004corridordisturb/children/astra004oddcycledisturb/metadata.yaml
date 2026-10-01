@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8fe5cb4907fdfffa7aae0fbae7b3722e25ba5ae41b7cdd7232a76b31e7b6f292"
 created_at: "2026-09-26T19:26:24.538835+00:00"
 id: "astra004oddcycledisturb"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Odd support-cycle disturbance branch in the sharp shell: odd cycles force a two-walk disturbance or repeated-label double crossing, and the descendants analyze six-edge corridors, clean cycles, repeated labels, decagon structure, and graph-level disturbance."
 simplified_statement: "Every odd support cycle forces two-walk disturbance or a repeated-label double crossing."
+statement_sha256: "c22ffd3ce4ef4688cc9ff319f6251e7aa3361610ff81cd0e6c281d4350b6bcee"
 substantive_worker_ids:
   - 642
 support_reason: "current_certified_premises"

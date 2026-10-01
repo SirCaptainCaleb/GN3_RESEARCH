@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "3163c197c2cf8fabbe6ae3c64af67f64d3cf48c3256b7ca5cc05c340f7611b5e"
 created_at: "2026-09-24T11:28:40.154256+00:00"
 id: "1000957"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every four-edge two-rank source block has two lens cells and reciprocal simple pairs."
+statement_sha256: "99e52ca82b4e2699278fadf251703ef1d7ac2748b76661be310462efbf621364"
 substantive_worker_ids:
   - 246
   - 231

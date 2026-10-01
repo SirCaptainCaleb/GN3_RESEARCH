@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "495d0e5f3a15bbfc46f0c4e27a39b2f86804fca2dc5de872fbd30b71d1419930"
 created_at: "2026-09-24T06:07:13.493512+00:00"
 id: "1000305"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two high edges must meet the early part of the low clean source path."
+statement_sha256: "c8ebee8edaa1d38fea8a921f237084f6a8512ad2e63712ddc9c0a41dbaa96d62"
 substantive_worker_ids:
   - 244
 support_reason: "current_certified_premises"

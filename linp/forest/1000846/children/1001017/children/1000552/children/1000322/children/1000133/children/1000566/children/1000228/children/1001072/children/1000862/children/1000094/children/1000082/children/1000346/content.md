@@ -6,6 +6,7 @@ In the zero-slack |D|=k critical-core model, for every two distinct forest tripl
 
 ## Body
 
+
 Work in the zero-slack critical-core model 13500728c22f. Thus X is partitioned into disjoint forest triples F_1,...,F_c, where c=2k/3, and for each color d in D the d-colored graph on X is a perfect matching M_d.
 
 Fix a color d and a forest triple A. Since |A|=3 and M_d is a perfect matching, the restriction of M_d to the three vertices of A has one of two forms:

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c57d7d9a23f86c8703e6f88063117de8ce94f4e72b770a9da79bc37221ab88f2"
 created_at: "2026-09-25T21:19:16.486977+00:00"
 id: "1000076"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A shared-entrance packet forces the lower-half edge ranks upward."
+statement_sha256: "d8f0bd13066f18bc4d8f3c1cdc9b3b6a3de0b01f4f618e57e5046f7c497e03e5"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

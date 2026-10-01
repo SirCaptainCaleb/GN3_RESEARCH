@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "b3284831602f21ed83361c664259275e4c4e69c25b1ed5ff284cd94471b0ac52"
 created_at: "2026-10-01T06:33:26.561848+00:00"
 id: "local_466_neutral_cycle01"
 last_elevation_revision: 10710
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "f3ffdae28e69e3d9dc9edfa6eee2c7b2a6177420e7779e5f6098087e67cc90e9"
 substantive_worker_ids:
   - 964
 support_reason: "current_certified_premises"

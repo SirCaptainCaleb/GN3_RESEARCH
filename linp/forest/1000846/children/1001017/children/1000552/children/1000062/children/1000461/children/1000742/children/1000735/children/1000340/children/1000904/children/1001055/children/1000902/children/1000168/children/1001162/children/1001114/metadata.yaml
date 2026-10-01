@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4ecadc32f0f5c44134f9fdf0df3f2b507e7af4ad97f6e741eb758f7d04244c9d"
 created_at: "2026-09-24T13:51:27.530192+00:00"
 id: "1001114"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-saturated gap-one states have linear symmetric difference and a dense switching matching."
+statement_sha256: "fa08193972851ca0ea11c1df6780822030f491aab9ce3b12cbae48694fcebe02"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

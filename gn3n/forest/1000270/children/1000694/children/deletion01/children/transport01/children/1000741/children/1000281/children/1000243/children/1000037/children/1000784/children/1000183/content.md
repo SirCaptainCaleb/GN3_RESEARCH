@@ -6,6 +6,7 @@ Let G_e and G_f be the two rooted graphs on the six vertices of X from 84ac56baf
 
 ## Body
 
+
 The rooted-graph theorem 84ac56baf953 gives
 |E(G_e)|>=9 and |E(G_f)|>=9.
 In the perfect-matching branch of f28243a560f5 their intersection M has exactly three edges. Since both graphs lie in K_6,

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "3dc2b364d22006806979e97b8ae1172c13f8ad057d951acd397acf8e19e14b40"
 created_at: "2026-09-25T21:35:19.037181+00:00"
 id: "1000678"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The nonboundary odd half-rank tight collision is one-sided at the middle joint."
+statement_sha256: "8929b7cbba4a2dfefc39d61659ee1f2aa6b19148f50e3fe65986b92f6b623b94"
 substantive_worker_ids:
   - 220
   - 227

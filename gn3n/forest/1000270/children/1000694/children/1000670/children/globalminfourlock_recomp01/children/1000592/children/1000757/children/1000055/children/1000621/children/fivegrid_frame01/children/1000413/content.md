@@ -2,11 +2,14 @@
 
 ## Statement
 
+
 Let H be a boundary tournament and let C=X|P|Q be a spanning three-cover that minimizes the quadratic potential Phi within its connected component of the pairwise-repartition graph. Assume X is a Hamiltonian path of order five and P=(p_1,...,p_m) has order m>=7. Then for each displayed endpoint e in {p_1,p_m}, the six-set K=V(X) union {e} is non-Hamiltonian and has at least four Hamiltonian one-vertex deletions. Consequently arbitrary Hamilton paths chosen on four such deletions contain a pair with relative-order disagreement; hence K contains one of the standard reversed-edge, reversing-triple, or tight-cycle witnesses.
 
 Thus a five-side beside a path of order at least seven cannot occur order-neutrally at a local quadratic minimum.
 
+
 ## Body
+
 
 Fix an endpoint e of P. If H[V(X) union {e}] were Hamiltonian, repartition the pair X|P as
 (V(X) union {e}) | (P-e),

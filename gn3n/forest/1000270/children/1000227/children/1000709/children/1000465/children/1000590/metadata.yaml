@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "463ffdb1f133051ad8701eac4cc33a16486d04b2b3f8db63601df534405be3d7"
 created_at: "2026-09-21T04:43:50.950055+00:00"
 id: "1000590"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The order-thirteen radius-three deficient-support graph has no two-regular component"
+statement_sha256: "3b6bd8b0840b68173c25eb522d98eef693435e5665a56043f47bfde3841c4b73"
 substantive_worker_ids:
   - 598
 support_reason: "current_certified_premises"

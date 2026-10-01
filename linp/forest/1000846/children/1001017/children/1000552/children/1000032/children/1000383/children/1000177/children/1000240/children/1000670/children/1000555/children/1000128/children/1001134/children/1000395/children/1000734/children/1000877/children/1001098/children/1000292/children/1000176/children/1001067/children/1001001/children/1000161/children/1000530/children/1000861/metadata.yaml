@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b0f26a290176ff390d78af42b86db7cfd9feb851531e3e9d1d7df4e6b6c4e809"
 created_at: "2026-09-25T21:07:46.879541+00:00"
 id: "1000861"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Whole common-anchor chords give a cycle, a clean equal exchange, or a return-order inversion."
+statement_sha256: "832e071d825cc399467c656742418b68fbf1febc1cdfb217ec091cd5835f807b"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

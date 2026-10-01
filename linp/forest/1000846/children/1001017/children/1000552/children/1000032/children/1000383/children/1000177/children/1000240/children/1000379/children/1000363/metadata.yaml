@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a22bbb53d1324ed9276f7c29a49bd2b63c688ec3dd3887e8d53e76b9cd87f54a"
 created_at: "2026-09-24T04:54:34.867242+00:00"
 id: "1000363"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A half-rank charged edge has the same universal central entrance at both terminals."
+statement_sha256: "697e20b4d4b4778cb9f24094035534e3811ecfb05257cdc8f5781545fbe0b57f"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

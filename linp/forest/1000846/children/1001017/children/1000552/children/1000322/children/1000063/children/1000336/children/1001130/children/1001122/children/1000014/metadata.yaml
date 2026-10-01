@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e9d3fe564886254f9f88d39b663ce183a87b1ef602b2ce26815591027cc79fd7"
 created_at: "2026-09-22T20:13:58.219934+00:00"
 id: "1000014"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In a flat-transfer triangle of entrance-joint type, every entrance-to-entrance rail contains all three entrance vertices."
+statement_sha256: "f2b997a40d1ebe0ae415be82821631b86b7000d3fc2a01da290e645ee2f9640e"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

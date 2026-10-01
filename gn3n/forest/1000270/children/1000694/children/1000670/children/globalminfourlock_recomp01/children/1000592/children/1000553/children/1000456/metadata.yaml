@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "80ad8aec4b5d4b0568c119369256e115b3c1a8572bd0f26d48282f048d365e25"
 created_at: "2026-09-27T17:17:38.051804+00:00"
 id: "1000456"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every vertex of a four-vertex component remains noninsertable after deleting both endpoints of either long path."
+statement_sha256: "ab7cddd607de536e4ab2bf05e3361430f873bd4619207eb8d532f8c735e12cfe"
 substantive_worker_ids:
   - 616
 support_reason: "current_certified_premises"

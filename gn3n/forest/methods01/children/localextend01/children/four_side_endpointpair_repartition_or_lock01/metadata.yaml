@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5e830cfd12506b7845f828843a7cedf0db11c8c3763d9de55a58deb5e0e63ad9"
 created_at: "2026-09-29T18:35:54.467869+00:00"
 id: "four_side_endpointpair_repartition_or_lock01"
 last_elevation_revision: 8786
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two bad endpoint extensions of a four-side give a repartition or an interior lock."
+statement_sha256: "b890265c56ec487327c2209d32edeb372f9926b6eeec3f9d15d3f3007a72e6a7"
 substantive_worker_ids:
   - 605
 support_reason: "current_certified_premises"

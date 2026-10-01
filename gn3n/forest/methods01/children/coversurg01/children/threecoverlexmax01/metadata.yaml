@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1d215b1631dbfd69fe2ae065f111f4feabfeee5d8d2c7ee270715b891a87f3ea"
 created_at: "2026-09-27T14:44:50.657479+00:00"
 id: "threecoverlexmax01"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lexicographic maxima confine pairwise repartition sizes."
+statement_sha256: "3dd224a991abadf16eca387637a3eeff11a51bd4316637ca80366e9cfdb93fd3"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

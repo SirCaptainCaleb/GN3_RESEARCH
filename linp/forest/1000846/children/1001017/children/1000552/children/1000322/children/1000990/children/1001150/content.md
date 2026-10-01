@@ -6,6 +6,7 @@ Let ell>=6, d=floor(2ell/3), and H be P_ell-free with |E(H)|>=d|V(H)|+1. Suppose
 
 ## Body
 
+
 Let ell>=6 and put
   d=floor(2ell/3),  k=d+1.
 Suppose H is a P_ell-free linear 3-graph satisfying the simultaneous strict-layer hypotheses:

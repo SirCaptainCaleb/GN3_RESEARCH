@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5c0484cefc637d5e3fc114132d5c17b718d19bed52e3f97660348929f1fbd48c"
 created_at: "2026-09-24T04:29:31.501137+00:00"
 id: "1000177"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two consecutive charged rank levels suffice for the 11/12 leading coefficient."
+statement_sha256: "c54b1fe22bcb92f8f778daa0cd0710b174ce4045b84bf893c77e1a9785627b01"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

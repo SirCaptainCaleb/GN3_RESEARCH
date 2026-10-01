@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8fd77abb7afa80a1f5bda3c9e2f8e9cad41803c527de5733fbd02513356018bf"
 created_at: "2026-09-24T05:40:01.510348+00:00"
 id: "1001153"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The visible-entrance C branch of the one-low odd-boundary obstruction is impossible."
+statement_sha256: "87c764fd93a0b31c88cde7a030c64f8513146fa4156b0f95f1d3b39412bcc3bc"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

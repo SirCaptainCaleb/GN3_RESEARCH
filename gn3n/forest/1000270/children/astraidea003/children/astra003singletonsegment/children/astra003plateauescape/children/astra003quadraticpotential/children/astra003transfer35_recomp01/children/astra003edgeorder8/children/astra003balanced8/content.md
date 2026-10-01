@@ -6,6 +6,7 @@ Every boundary tournament on eight vertices has a partition into two Hamiltonian
 
 ## Body
 
+
 # Exact eight-vertex balanced two-cover theorem
 
 Let (H) be a boundary tournament on vertex set ([8]).

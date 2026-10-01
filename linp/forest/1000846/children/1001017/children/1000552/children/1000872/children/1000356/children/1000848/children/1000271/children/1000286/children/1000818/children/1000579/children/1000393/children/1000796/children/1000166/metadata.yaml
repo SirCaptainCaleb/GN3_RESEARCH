@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4ec2a6b744ece1e835d3e31e609a95ef48700cdf54417a150272d915aa07f729"
 created_at: "2026-09-25T19:53:57.632238+00:00"
 id: "1000166"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A loose path refutes automatic production of a genuine endpoint lens."
+statement_sha256: "a551eb92ecff720790a3957223e1342034aaea4dc2d068c84b71dc2ea570a5f1"
 substantive_worker_ids:
   - 210
 support_reason: "current_certified_premises"

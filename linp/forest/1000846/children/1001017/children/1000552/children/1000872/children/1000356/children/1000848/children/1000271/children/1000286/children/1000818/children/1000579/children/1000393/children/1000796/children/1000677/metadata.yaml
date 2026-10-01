@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "f7393afd4caab63dac1d138d997a77a173aca15115a89e61d376747da3b75fe0"
 created_at: "2026-09-24T13:54:02.86456+00:00"
 id: "1000677"
 last_elevation_revision: null
@@ -59,6 +60,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every foreign contact in a four-edge 0-1-1 block is a balanced-lens certificate."
+statement_sha256: "34f0d4cd233bb359c0b163d37aa6e6b52de59c8761e4d05da6443fbedcdbeb51"
 substantive_worker_ids:
   - 258
 support_reason: "failed_or_blocked_premise"

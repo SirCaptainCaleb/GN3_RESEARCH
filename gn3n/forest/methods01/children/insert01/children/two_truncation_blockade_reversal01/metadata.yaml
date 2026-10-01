@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "615095a62f8226020060dcae9c323acb3ba7e205dad4329fced4af77775cf5f4"
 created_at: "2026-09-29T17:38:12.022366+00:00"
 id: "two_truncation_blockade_reversal01"
 last_elevation_revision: 8453
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two blocked endpoint truncations force a displayed-edge reversal"
+statement_sha256: "c4f8907d79003dd43e82478e97893be3937b3bf306b14ef698682ebf361b438a"
 substantive_worker_ids:
   - 637
 support_reason: "current_certified_premises"

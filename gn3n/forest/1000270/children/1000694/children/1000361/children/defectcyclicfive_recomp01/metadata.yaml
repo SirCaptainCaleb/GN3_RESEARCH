@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "22577bf56ece54b056b57286f7608f2852e9542cd4a5a542ba2ec2537c0a299e"
 created_at: "2026-09-28T01:12:44.37722+00:00"
 id: "defectcyclicfive_recomp01"
 last_elevation_revision: 0
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Cyclic defect-certificate classification at minimum defect span three: only five proper run geometries and one full-cycle case survive, and the descendant branches analyze isolated-defect cubes, all-equal support triangles, double-wrap rotations, deletion-state transport, and bounded obstruction shells."
 simplified_statement: "Minimum span three has a uniformly bounded cyclic defect certificate with only five run geometries"
+statement_sha256: "5efb65f51f4f79c8c3022d28c7a0c0e2c8b90a22859f47f76346211b0a7ec487"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

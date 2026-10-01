@@ -6,6 +6,7 @@ audit_requested: true
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "469c6fb0e5cd88c5f64df516167c748181cb2f3d70e129d7427d0d3a2f4a5367"
 created_at: "2026-10-01T07:19:55.077482+00:00"
 id: "1000898"
 last_elevation_revision: 10860
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For any Hamiltonian four-set X with two bad exterior extensions a,b, the Hamiltonian pair graph K on X and its opposite-edge image J both contain adjacent edges; no minimum-counterexample, path, or extremality context is needed."
+statement_sha256: "bb86f12694612c85f3734ff1a46c524a2cf6ab33c74bdb6eeb4059d3de89c818"
 substantive_worker_ids:
   - 1016
   - 1061

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "17353e6b149ba6a029f8fd4090b07b45e21f5ec1b3c67242431b8d8140872b32"
 created_at: "2026-09-27T22:03:35.07176+00:00"
 id: "1000293"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An anti-diagonal pivot chain forces linearly many distinct c-free mixed triples."
+statement_sha256: "f42affe553cf6fcc2329376b11f9182e7ae0fe9da46b1a8948b799f4979233e4"
 substantive_worker_ids:
   - 596
 support_reason: "current_certified_premises"

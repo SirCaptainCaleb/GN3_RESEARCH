@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "24d5943fe3b78b6e7584c68db48a0913c26dfc71cbb373db7a57dff85f23c2b1"
 created_at: "2026-09-27T14:49:38.650826+00:00"
 id: "1000508"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A disturbance-free forest transversal is a union of support paths of length at most five."
+statement_sha256: "72b211d3dc37757fd2165c0c9b4944d300e1d4d5e6ae7deea574bfcba2c9606d"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

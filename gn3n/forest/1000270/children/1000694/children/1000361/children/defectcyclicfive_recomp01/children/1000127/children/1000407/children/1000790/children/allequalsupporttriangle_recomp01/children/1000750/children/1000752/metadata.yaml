@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "93f59a4b77f82ca6e746d89cb2471b53cea5bdc657ee53d40cacb59b2db78864"
 created_at: "2026-09-28T02:35:13.056288+00:00"
 id: "1000752"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "All-equal support-triangle disagreement branch: transferred-label insertion either fails with an explicit endpoint hook or succeeds along an antipodal singleton-transfer corridor; the surviving full-support alternatives force endpoint-edge reversals and hence relative-order disagreement."
 simplified_statement: "The all-equal support triangle always forces relative-order disagreement"
+statement_sha256: "5a26734374fae8581b9486a30f859838de1ee000f5f5d29e72eb2a81cf546c14"
 substantive_worker_ids:
   - 660
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Let H be a minimum counterexample and suppose a minimum-span cyclic defect certi
 
 ## Body
 
+
 Apply c195f52d5b31 directly to C. Its hypotheses are exactly the present ones: H is a minimum counterexample and C is a spanning three-cover minimizing the quadratic potential in a trapped connected component of the pairwise-repartition graph. Therefore H has one of the listed outcomes: a proper Hamiltonian four- or five-vertex support with path-cover-two complement, an explicit cross triple or interval connector, order disagreement, an inherited displayed-path edge separated by a comparison cover, a leave-and-return excursion through another displayed core, crossing multiplicity at least three, a bounded local defect-compression obstruction, or a reversed join.
 
 Thus the {1,1,1} state cannot remain without one of those outcomes. ∎

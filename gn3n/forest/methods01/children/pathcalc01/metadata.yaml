@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "4087030d2ba87a8da944dfb41e9ad82af941abc05d61965e0ef20438e20bd159"
 created_at: "2026-09-20T19:49:08.718337+00:00"
 id: "pathcalc01"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Path restriction and intersection calculus: inherited-order behavior, endpoint extenders, common-gap gluing, deletion-order disagreement, support migration, reversal and tight-cycle localization, and the sharp-shell support-graph consequences that arise when order disturbance is sparse."
 simplified_statement: "Tight paths satisfy canonical restriction and intersection rules, together with a maximum-path splicing lemma that forces a two-sided extension."
+statement_sha256: "cacc44f156f46b6f27e97d11c42c85ebfb04a7ef15774f93b4cfed94e94381b7"
 substantive_worker_ids:
   - 673
   - 603

@@ -6,6 +6,7 @@ Let H and K be finite linear 3-graphs containing linear paths of lengths a>=1 an
 
 ## Body
 
+
 Write a Cartesian-product edge as either e x {y}, with e in E(H), or {x} x f, with f in E(K). Let E_1,...,E_a be a linear path in H and choose distinct terminal vertices p in E_1\E_2 and q in E_a\E_{a-1} (for a=1 choose two distinct vertices of E_1). Let F_1,...,F_b be a linear path in K. Choose y_0 in F_1\F_2, y_i=F_i intersect F_{i+1} for 1<=i<b, and y_b in F_b\F_{b-1}, with the evident endpoint choices when b=1.
 
 For each i=0,...,b, place a copy of the H-path in the fiber over y_i, alternating its orientation. Between the copies over y_{i-1} and y_i insert the product edge {s_i} x F_i, where s_i is their common H-terminal coordinate. Because the orientations alternate, s_i alternates between p and q.

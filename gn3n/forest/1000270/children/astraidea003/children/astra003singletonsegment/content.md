@@ -6,6 +6,7 @@ In the reciprocal-one-crossing first form of f6cdd6346980, the three associated 
 
 ## Body
 
+
 # Singleton transfer as an Astra repartition segment
 
 Assume the first form of f6cdd6346980. Thus H is a minimum counterexample in the sharp half-order shell |V(H)|=2lambda+1, there are distinct vertices x,y,m and tight paths B,Q of order lambda-1 such that

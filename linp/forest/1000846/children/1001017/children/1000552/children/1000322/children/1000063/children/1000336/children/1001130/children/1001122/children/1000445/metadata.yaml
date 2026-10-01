@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7329cf00730fc8aa647ca36107be5b101a1db6e0370d3dba87f47c80992ab95c"
 created_at: "2026-09-22T20:09:04.394177+00:00"
 id: "1000445"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a private vertex of a c-edge linear cycle in minimum degree q, the ear counts satisfy 2C₀+C₁≥2q−2c+1."
+statement_sha256: "88c2ec8ec4d8c373b17b646bede7871bdfb515456af6e918505718e21f596bb6"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ In the half-rank top-boundary q,(q+1)^3 configuration with q>=4, suppose the occ
 
 ## Body
 
+
 The bcd statement is c0b8ea014642.
 
 For acd, the corrected moat 5d36d3a8d0ec gives

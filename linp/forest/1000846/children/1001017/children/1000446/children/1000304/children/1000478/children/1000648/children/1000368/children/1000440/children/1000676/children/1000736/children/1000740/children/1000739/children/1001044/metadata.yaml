@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "41334d980e40bbc6addd637f619d34ab383b4f649aea249791fa00ae984dc068"
 created_at: "2026-09-24T03:45:06.245511+00:00"
 id: "1001044"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Potential-five pattern 4455 has only two rank-four witness geometries."
+statement_sha256: "12c431105ad5e6615021e68f5c2f887e36d38172342a5dc1f7566fef6d0ecce1"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

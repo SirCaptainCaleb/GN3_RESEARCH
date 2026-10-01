@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7cdd9ad4b09c783836741c54c6d861b07038a7ea556f36800ba84554db967ec2"
 created_at: "2026-09-27T14:24:00.182946+00:00"
 id: "1000298"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Astra 007 alone is inert on a minimum counterexample unless fractional mass reaches two"
+statement_sha256: "efdc7b280fbbf165815712e42f11eafd39cff28f96b9a7df5605f83f775bdb21"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3215c493f27c2092f3d8583164c23ac9af5c1e0000056480e6ce4a6eac0c7b60"
 created_at: "2026-09-26T18:04:55.954873+00:00"
 id: "astra003fivethreeendpoints"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Five-side synchronization program: a five-vertex side synchronizes most surrounding endpoints; the descendants turn that synchronization into controlled swaps, insertion obstructions, far-end alignment, migration, and bounded disturbance sufficient to progress from a trapped five-side."
 simplified_statement: "A five-vertex side synchronizes at least three of four surrounding endpoints"
+statement_sha256: "deae1d04ed849ea45640ceebe3a4c4cd2729548e9e08f52f0fd78ba974cc92bb"
 substantive_worker_ids:
   - 662
 support_reason: "current_certified_premises"

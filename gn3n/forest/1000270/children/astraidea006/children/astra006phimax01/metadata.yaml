@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "6c11ea995086896d9ef5eddcdb5f08fa204b027b644ab5631263e79131b3985d"
 created_at: "2026-09-27T14:58:49.025183+00:00"
 id: "astra006phimax01"
 last_elevation_revision: 0
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Quadratic-maximal relocation plateaux can slide only from larger blocks toward smaller ones."
+statement_sha256: "44f84c09fb42205b806135968dbad01a15cf077427e382d326580b53e28a87bd"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

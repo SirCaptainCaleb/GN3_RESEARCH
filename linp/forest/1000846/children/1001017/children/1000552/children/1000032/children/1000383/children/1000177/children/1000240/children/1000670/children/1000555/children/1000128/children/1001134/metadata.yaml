@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c13dde10d7aeae0bf608b415635d2c29964cfe19540c6606b469f30302095340"
 created_at: "2026-09-24T14:15:01.386669+00:00"
 id: "1001134"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Rank-ordered source-rail overlap program: force linear distinguished overlap, then convert same-type overlap into endpoint lenses or repeated-intersection certificates on higher-rank source paths."
 simplified_statement: "Rank-ordered source rails force linear distinguished overlap."
+statement_sha256: "7817dfaf5c5ea23426ab17964504b0bb1ef1df16df7842dcafeb3ece631bf11c"
 substantive_worker_ids:
   - 258
   - 209

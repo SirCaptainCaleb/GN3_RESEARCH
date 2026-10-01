@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "b49925ad7d487f341789113d899345e023ea36a468a3e1cad74e474358327ae5"
 created_at: "2026-09-24T13:27:17.768463+00:00"
 id: "1000103"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Central-window amplification and 43/48 stability chain: central rank windows sharpen the multiplicity inequality, control the exact deficit, force switching and terminal-retention structure near equality, and feed collision/cycle mechanisms."
 simplified_statement: "For the chosen maximum endpoint paths, the central-window bounds imply 3m <= 2S-n_+ +(1/2)sum_v B(v), with B(v) determined by the terminal rank profile."
+statement_sha256: "4928505f7b87a2abc1287b493117e7e64f61d542183998c00538bc5e2afe807d"
 substantive_worker_ids:
   - 258
   - 231

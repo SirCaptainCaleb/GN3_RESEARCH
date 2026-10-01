@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ffd7676bcca6eff23900fb1cb2b07980a71d5d395a89d15c24bbf943cce35d09"
 created_at: "2026-09-21T22:20:23.609928+00:00"
 id: "1000546"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Clean ascending attachments to one path have exponentially growing spacing toward the last attachment, so any suitably separated family has logarithmic size."
+statement_sha256: "f9986be2651e66e5695bb1ef0f56cf21290a086636094fe84d44b5e77814d571"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

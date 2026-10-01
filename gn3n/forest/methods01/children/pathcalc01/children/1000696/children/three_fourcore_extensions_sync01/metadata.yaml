@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "22e34a481699b91023d25421b7903df2e96f717ce448a9b082af6f18c8dacbf8"
 created_at: "2026-09-29T13:08:38.343675+00:00"
 id: "three_fourcore_extensions_sync01"
 last_elevation_revision: 8250
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three Hamiltonian extensions of one four-set force gluing, order disagreement, a Hamiltonian four-set, or reversal"
+statement_sha256: "e93c9a9cc80d983a4b26f4826212452937dac2c66961c27bf008286932e8474f"
 substantive_worker_ids:
   - 664
 support_reason: "current_certified_premises"

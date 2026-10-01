@@ -6,6 +6,7 @@ Let H be a minimum counterexample and let V(H)=R disjoint-union S with d(R)=1 an
 
 ## Body
 
+
 # One-defect transfers are alternating Hamiltonian-deletion moves
 
 Let H be a minimum counterexample. For a vertex set T write

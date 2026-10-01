@@ -2,11 +2,14 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample of order n>=17, and let C=A|B|X be a spanning three-cover that minimizes the quadratic potential Phi within a connected pairwise-repartition component containing no cover with at most two components. If H contains no explicit order disagreement of the standard four-side type, then every component of C has order at least five.
 
 Equivalently, any trapped Phi-minimal three-cover of order at least seventeen having a four-vertex component already forces explicit order disagreement.
 
+
 ## Body
+
 
 Write a=|A|>=b=|B|>=c=|X|.
 

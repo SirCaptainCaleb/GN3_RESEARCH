@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "70d8909364a93641bb0e4573496382557c69a7a7ef244976fa773a32e77cf3a1"
 created_at: "2026-09-24T18:49:42.000375+00:00"
 id: "1000608"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Correction: terminal-shadow lifting requires strong-rainbow, not ordinary rainbow."
+statement_sha256: "f6cd9ebd0bb398914b2e501bb060127873439d8ff5ad0064bd0b98edf3475f9b"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

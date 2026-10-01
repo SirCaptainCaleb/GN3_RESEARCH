@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7726776af265813cce8d0cd51eca5371a6f683ee3ebd7bb1c6b3f1ea334cee15"
 created_at: "2026-09-24T03:43:22.291504+00:00"
 id: "1001057"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A single far-edge contact cannot occur in the middle of a canonical 4445 entrance rail."
+statement_sha256: "5dc81d0defe78ecf5467b73577937d7601938421cd304736f7465346e39d0327"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

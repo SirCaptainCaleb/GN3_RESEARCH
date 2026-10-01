@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8f4b6856122669f52602d003f2f831ce93c84fdf3281a50dec8cb7223b13bae0"
 created_at: "2026-09-29T23:55:25.692175+00:00"
 id: "five_three_forward_full_branching01"
 last_elevation_revision: 10287
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every forward three-five exchange edge is fully branching and lies on a six-cycle."
+statement_sha256: "5cbd55c1ef48144a2deaf3633cc669caf1bbe94c0975ce9d9e4fee54aa164de9"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

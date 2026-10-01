@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "66ab2b6c1d706ec9f55c3a005781d2e5e46e885c975435c73770d6c848713b64"
 created_at: "2026-09-27T15:03:14.501678+00:00"
 id: "1000410"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Sharp half-order shell three-deletion core disagreement is a crossed rectangle or a one/two-vertex transfer."
+statement_sha256: "7978b2a7dc23a66012fb3ae29da48bee93c543f500344b07e44a11943d137148"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

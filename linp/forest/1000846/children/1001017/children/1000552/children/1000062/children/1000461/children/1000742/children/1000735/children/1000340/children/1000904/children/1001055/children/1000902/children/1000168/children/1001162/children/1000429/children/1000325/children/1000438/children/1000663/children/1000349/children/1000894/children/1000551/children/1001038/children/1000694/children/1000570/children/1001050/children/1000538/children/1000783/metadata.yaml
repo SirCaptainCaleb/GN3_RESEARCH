@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a581544c3f8a0aa4212f53820b3aa73403417a32564ce6cdbf6d0b121ac5b6d6"
 created_at: "2026-09-25T20:02:26.492026+00:00"
 id: "1000783"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A reciprocal common-terminal contact forces foreign-edge transversality below the rank-sum threshold."
+statement_sha256: "ca1f9b0741a0b1725091f565ad16da0fb913979f6df53056dc265920daedc162"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

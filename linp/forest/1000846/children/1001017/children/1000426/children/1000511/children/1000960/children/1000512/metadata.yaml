@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "f05d248544cfa77816ea8a679771de23cb4ac50fd0863265cda968dcccf314b3"
 created_at: "2026-09-21T18:44:53.20259+00:00"
 id: "1000512"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A rank-at-least-two edge of a linear 3-graph is nonspecial exactly when all longest paths ending at it use the same entrance label."
+statement_sha256: "6caf8829f764c10774d7c2539f568f45a2c48a4474d2fa70e93d54035671d228"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

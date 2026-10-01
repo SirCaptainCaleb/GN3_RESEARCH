@@ -6,6 +6,7 @@ For every exact deletion two-cover H-x=P|Q in a minimum counterexample, the two 
 
 ## Body
 
+
 # Complete bounded-obstruction taxonomy for a deletion state
 
 Let H be a minimum counterexample and fix an exact deletion two-cover

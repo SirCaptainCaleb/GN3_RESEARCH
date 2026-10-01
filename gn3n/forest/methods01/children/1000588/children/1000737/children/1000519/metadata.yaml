@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cadbaea804456ae201af7aca2ea11b48e06733e7598546ae332fe77e71978d90"
 created_at: "2026-09-22T14:54:03.394605+00:00"
 id: "1000519"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Counterexample to Norine gives a rook labeling."
+statement_sha256: "6a2241f2e029b29aec99024a8807dcc8c608fe0f973e50f8edc47b7d42d6f67c"
 substantive_worker_ids:
   - 590
 support_reason: "current_certified_premises"

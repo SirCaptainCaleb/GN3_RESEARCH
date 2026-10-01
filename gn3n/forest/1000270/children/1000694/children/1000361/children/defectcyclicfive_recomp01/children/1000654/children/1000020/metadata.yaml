@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3ea675ecd7374bb00c281e93e4230e8202538b4795edd0483e325303da742821"
 created_at: "2026-09-29T05:00:30.109988+00:00"
 id: "1000020"
 last_elevation_revision: 8151
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The three-plus-two cyclic certificate has a three-state quadratic-potential landscape"
+statement_sha256: "eb4c8675225ecd6687ed169f2dee9287b4e0866ad06c9dc29a14498e511aa633"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

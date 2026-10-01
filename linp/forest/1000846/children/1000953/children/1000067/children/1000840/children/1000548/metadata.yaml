@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4a8dab8d2df2909b7b56955fba84594f6ae91faa19c5e3305f0873ef9876ed66"
 created_at: "2026-09-22T15:14:35.882176+00:00"
 id: "1000548"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Over any field, a linear P_ℓ yields an alternating incidence sum with support exactly ℓ+2, so missing support size ℓ+2 certifies P_ℓ-freeness."
+statement_sha256: "7a3b8fa296b5995035bd642ff3daebf7bdd7abd184df1d2be5e544dca94585db"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

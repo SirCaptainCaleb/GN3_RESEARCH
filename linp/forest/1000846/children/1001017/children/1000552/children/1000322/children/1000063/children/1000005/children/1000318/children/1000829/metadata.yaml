@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "629caf7d2f8188545eae0a87ee3521c53956898529f174cbb76f0c98ae9ad173"
 created_at: "2026-09-22T05:39:59.333948+00:00"
 id: "1000829"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "There is an 11-vertex linear 3-graph of minimum degree 4 with no 6-edge linear path and a maximum-rank nonspecial edge whose three vertices all have degree 5."
+statement_sha256: "0eb81af8dd72cf9d535a8c98871763fb79d510dbf0207aff850fc181ba41921a"
 substantive_worker_ids:
   - 205
   - 225

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7b4a496b9e0eb92f3008c0c8c39d4fb88c542c9cee1f13a8e5feb863cb44cbf8"
 created_at: "2026-09-26T18:27:45.758782+00:00"
 id: "astra003canonicaltwocont"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two opposite-side continuation labels give controlled transport, disagreement, or obstruction"
+statement_sha256: "4b2d30a8973f7eb730acee1e81583f699de332c698525c7907da89b884e7039a"
 substantive_worker_ids:
   - 576
 support_reason: "current_certified_premises"

@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample. Let X,Q partition V(H), with H[X] non-Hamiltonian and Q Hamiltonian. Let d,e be distinct vertices of X. Suppose P is a Hamilton path on X-{d}, R is a Hamilton path on X-{e}, and P|Q and R|Q are deletion covers of H-d and H-e respectively.
 
 If P and R order two common vertices differently, then at least one of the following holds:
@@ -16,7 +17,9 @@ If P and R order two common vertices differently, then at least one of the follo
 
 In particular, a path-intersection cycle containing the restored label d always belongs to the strict-descent branch.
 
+
 ## Body
+
 
 Apply the path-intersection calculus pathcalc01 to P and R. Read the common vertices in their order along R and choose consecutive common vertices v_i,v_j along R that occur in reverse order along P. Let E be the R-subpath from v_i to v_j. By construction the interior of E contains no common vertex.
 

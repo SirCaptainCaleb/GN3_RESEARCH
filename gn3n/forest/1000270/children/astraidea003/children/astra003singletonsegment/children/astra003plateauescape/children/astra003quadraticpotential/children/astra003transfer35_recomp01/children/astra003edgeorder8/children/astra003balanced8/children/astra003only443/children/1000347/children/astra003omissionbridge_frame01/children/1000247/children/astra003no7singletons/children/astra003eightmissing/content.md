@@ -6,6 +6,7 @@ Let K be a trapped order-eleven Astra-003 component containing a 4|4|3 state, an
 
 ## Body
 
+
 Let (S) be the eight labels occurring as singletons in reachable (5|5|1) states of a trapped order-eleven Astra component, and put
 [
 T=V(H)-S,qquad |T|=3.

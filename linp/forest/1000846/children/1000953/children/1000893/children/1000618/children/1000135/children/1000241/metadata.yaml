@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "692843de46ae8ae0a755f449952bd2c943eb4fb98ac81c9af40d0fa97f7db0df"
 created_at: "2026-09-23T00:01:49.809559+00:00"
 id: "1000241"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For full projective Boolean systems, the joint-XOR obstruction rules out spanning paths in dimensions 3 and 4, while the mechanism fails from dimension 5 onward."
+statement_sha256: "fe6d3396dfc13630cabb634d119790ee2ac465d3559c088f1c67b591de2cfd87"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

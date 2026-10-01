@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4443c7b4c82db0e3eeee5538011c5d0017da95eaed25a05c260d3c8553d47cfe"
 created_at: "2026-09-27T14:38:52.493596+00:00"
 id: "fractionaldeletionfamilyavg01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Deletion-family averaging for fractional path covers"
+statement_sha256: "59f6b809791599522ef55c1c44601b29e6b29f8ef8a55bb3542f609efc0e5379"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

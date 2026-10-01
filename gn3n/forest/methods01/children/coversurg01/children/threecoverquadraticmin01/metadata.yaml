@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a45bb8d7d816f3d9bdecb022524402e7e2a73aabbf500392a69b2911233652fb"
 created_at: "2026-09-27T14:40:44.813118+00:00"
 id: "threecoverquadraticmin01"
 last_elevation_revision: 0
@@ -55,6 +56,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Quadratic minima are pairwise minimum-imbalance covers."
+statement_sha256: "0e413f082c26b6b76b681fcc7a26d8ccb0e417f1a71de6f499e846b0f0fd8f8b"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

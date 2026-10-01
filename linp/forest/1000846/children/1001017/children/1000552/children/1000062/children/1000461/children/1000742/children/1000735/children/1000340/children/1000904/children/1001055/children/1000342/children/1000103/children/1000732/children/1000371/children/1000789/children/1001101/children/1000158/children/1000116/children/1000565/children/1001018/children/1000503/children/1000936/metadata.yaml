@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "87fb1e9d3def1c2c9c33613a639691cb0000390cd1d14b882618d0931199afdc"
 created_at: "2026-09-25T21:01:20.061855+00:00"
 id: "1000936"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lens-free selected cycle chords yield theta, outer intersection, or two late gates."
+statement_sha256: "be8b7e44aecab02f7f1938b84b0e6a321ca32713a0621829944149609930c86a"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

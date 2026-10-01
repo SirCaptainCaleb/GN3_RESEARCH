@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6d07eee8752ef733671d1021b5ad61bd45c3416402fc3d7126dd358e6cb60ee9"
 created_at: "2026-09-29T18:27:44.400687+00:00"
 id: "three_bad_four_extensions_fiveshell01"
 last_elevation_revision: 8826
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three bad extensions of a three-path force a complete Hamiltonian five-shell."
+statement_sha256: "41bbbd69824bb15e5002f35cf8a7b65143a1227b0d20266ac4fb3f614922a28a"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

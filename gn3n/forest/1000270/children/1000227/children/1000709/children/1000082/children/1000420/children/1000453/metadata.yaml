@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c1352404580d9ba2fb6f2f6acd2180514153b56d63c601b10bac074c20ab54d1"
 created_at: "2026-09-28T15:00:38.773301+00:00"
 id: "1000453"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A rooted eight-set has at least twenty-one Hamiltonian five-shells"
+statement_sha256: "c4a77b3d5847736b7a75f8ae215386471916ac18d67ef35c229dc0c792d525be"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

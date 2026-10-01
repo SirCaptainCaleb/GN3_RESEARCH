@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2be04b6bdadf525c47c315515a05a9c113c29279096e7d4b914756f0e001ed08"
 created_at: "2026-09-22T04:39:08.557955+00:00"
 id: "1000165"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Ma–Hou–Gao (2020): minimum degree and long linear paths in general 3-graphs."
+statement_sha256: "5d8bdd30f68c33595093c868c912fe15c57815a3f23cb271cfa55d0c06de632d"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

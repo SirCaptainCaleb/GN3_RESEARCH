@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "a50255cdf3064c0c226f650ae7e6f671dfd2bf15aa5c6e98675c56d8a43312eb"
 created_at: "2026-09-24T03:53:07.46116+00:00"
 id: "1001020"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Sharp endpoint threshold strengthens the equality leave spike."
+statement_sha256: "a17052ed564439d20d11f39858fa22b5aa3f7c03d90f09ed1bf9471e6f464af8"
 substantive_worker_ids:
   - 185
   - 254

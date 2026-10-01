@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f5079ff70902554139d3900dad70d0ed1c1797ea895b937af059ace3d084f811"
 created_at: "2026-09-24T03:15:27.458869+00:00"
 id: "1000624"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Type-A equality vertices have at most one deficient special incidence."
+statement_sha256: "5cfc42b4564fca5aaaefc6832304203639a2250768fe3de422d43f6f4ab2a62c"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

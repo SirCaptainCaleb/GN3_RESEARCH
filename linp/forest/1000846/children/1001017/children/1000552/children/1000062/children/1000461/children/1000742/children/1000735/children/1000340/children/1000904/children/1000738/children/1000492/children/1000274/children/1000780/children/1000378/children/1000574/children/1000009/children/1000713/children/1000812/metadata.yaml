@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "6bb2ace39253eb639fa2b554c7fe7987900d7f4d0a4f7aa8de431c4d0922e2fd"
 created_at: "2026-09-24T13:23:22.17253+00:00"
 id: "1000812"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Only doubly terminal-single ascending edges can contribute positively to A-X."
+statement_sha256: "f7165c5cdaf4569ab491789ba000666dacfe9b45756da2f280d076a4908844a1"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Let H be a hypothetical order-eleven minimum counterexample with maximum tight-p
 
 ## Body
 
+
 Let
 [
 Y=(y_0,y_1,y_2,y_3,y_4,y_5)

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "30a61f50c49425f38201885ffe59a40d57312d4e1148e6e7afcf3339facc1f97"
 created_at: "2026-09-25T20:32:17.608062+00:00"
 id: "1000174"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Uphill 0-1-1 edges are repeated-intersection or aligned X-X."
+statement_sha256: "08ba14e2cef26164972b093ed725ea4a14308ef520ee337e0bed78054dcda46b"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

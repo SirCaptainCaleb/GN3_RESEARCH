@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "6b0f5fab6b3d9b21e6b476934b4194ecbe46a75222fdc2f8c295d3eb685f5a91"
 created_at: "2026-09-24T04:15:53.547656+00:00"
 id: "1000724"
 last_elevation_revision: null
@@ -64,6 +65,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Exactly two top terminal edges at a Type-A vertex force a universal two-entrance gate."
+statement_sha256: "d4de6fc55140969e05daa334522ab9ac63cd6d67a4a3299293444006341fe679"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

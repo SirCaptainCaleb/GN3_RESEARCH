@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "25c117780a1599f1664a69b915b6d8eb66763bca28bc0d9192f454748d384a4b"
 created_at: "2026-09-28T00:11:34.913775+00:00"
 id: "1000722"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Synchronized five-window families yield endpoint extenders or a linear alternating fan"
+statement_sha256: "94802179908774f12b58a17d579ba6c42aba40cb96009d4b32af7387280d3f9b"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

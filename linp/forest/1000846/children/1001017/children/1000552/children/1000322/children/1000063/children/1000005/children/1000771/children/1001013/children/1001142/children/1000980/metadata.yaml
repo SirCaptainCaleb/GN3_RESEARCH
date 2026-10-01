@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cbde2781f57d99e166841723d9b73dbf50a120ea3025423b59f5eb7d698238f8"
 created_at: "2026-09-23T21:47:44.076483+00:00"
 id: "1000980"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Matching-deletion specialness reduces to two exceptional blocker-pair types per block orbit."
+statement_sha256: "e75ffc6936059235050fec8986f7b92f3eb4eae58d3832c1b769ec7041ca3c3d"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

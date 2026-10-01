@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "29d9b827fa7c66b2d08b90b882a5be0813698fd969a9e4e0927661a7a9295c41"
 created_at: "2026-09-22T05:57:13.274176+00:00"
 id: "1000129"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "There is a 13-vertex linear 3-graph with maximum path length 6 and a maximum-rank nonspecial edge whose unique longest ending path has both opposite-end free vertices of degree 5>4."
+statement_sha256: "a8d2d6dc7d3f14966d7700f35a24b4f78b115fd5212782edbeec5e79c1e9b59e"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

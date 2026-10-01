@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "97bac7386c31b62f5bfd0ebd62cb36d6cb74e2e2c2a568cdc062489dda878a27"
 created_at: "2026-09-24T20:42:09.551006+00:00"
 id: "1000349"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "43/48 near-extremizers carry one-eighth paid progress-or-obstruction mass."
+statement_sha256: "0dc0b7844921cd91e9ab54df31bebc2e1b36bc4a4625eb119b0c8b8a6f032e05"
 substantive_worker_ids:
   - 250
 support_reason: "failed_or_blocked_premise"

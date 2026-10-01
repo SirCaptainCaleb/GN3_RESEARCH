@@ -6,6 +6,7 @@ Let C=X|P|Q be any spanning three-path cover, with X=(x_0,x_1,x_2,x_3) a tight f
 
 ## Body
 
+
 Let
 
 C = X | P | Q,

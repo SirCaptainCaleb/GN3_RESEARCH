@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "10b75e52f485e2463365f57908773616d5b2ea3a098dac28cced97840122a3c2"
 created_at: "2026-09-24T11:29:41.341754+00:00"
 id: "1000090"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The extremal C4 rail skeleton carries two clean length-two bridges."
+statement_sha256: "52568531c2d29b83b1cb53573fdd18bb6f979ab7617f217b451f00444ab6c4d2"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

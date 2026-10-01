@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let
   A=(g_1,...,g_L)
 be a maximum endpoint path with last vertex a, so phi(a)=L. Let h=g_j be an internal edge, j<L, with edge rank
@@ -21,7 +22,9 @@ Equivalently, every internal path edge with
   j>2L+1-phi(g_j)
 forces a linear cycle through the propagation process.
 
+
 ## Body
+
 
 Put z=g_j intersect g_{j+1}.
 

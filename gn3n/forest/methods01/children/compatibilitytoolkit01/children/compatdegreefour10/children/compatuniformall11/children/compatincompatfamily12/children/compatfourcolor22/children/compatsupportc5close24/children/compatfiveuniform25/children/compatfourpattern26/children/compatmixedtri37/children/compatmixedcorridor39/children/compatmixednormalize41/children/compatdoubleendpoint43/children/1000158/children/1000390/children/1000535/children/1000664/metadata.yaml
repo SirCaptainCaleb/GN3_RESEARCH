@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1a1d371ef4accecb256100e9fe89fd8971e732c81cf92c6585890c05dd3e9b2c"
 created_at: "2026-09-28T16:17:44.309691+00:00"
 id: "1000664"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two clean endpoint replacements on one component force a two-cover or doubled barriers at both ends"
+statement_sha256: "b5891926d9d63c98ee0687fe4926050a557dfd1fd5291cd6df64a7efda9d5ebc"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

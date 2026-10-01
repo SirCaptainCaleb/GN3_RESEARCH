@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "d8ba927fb84972b2d7356a5a4c2d859c499da9a51475c96580d61656f18f63f7"
 created_at: "2026-09-27T21:33:34.793329+00:00"
 id: "1000699"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "The cocycle frontier is the two-core transposition residue"
+statement_sha256: "c26d55ed5c6a96277b4f7c9894ebd3b26ee6e04e7e3ce3882da95d79f03a7017"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

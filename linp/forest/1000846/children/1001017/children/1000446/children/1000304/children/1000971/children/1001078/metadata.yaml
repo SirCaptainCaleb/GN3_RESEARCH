@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fd53756cfa5802f710604ef90c916fc83373aa5501094bde1ad875a6de80f2bc"
 created_at: "2026-09-21T20:57:46.398164+00:00"
 id: "1001078"
 last_elevation_revision: null
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Entrance-value distortion with consecutive-contact correction."
+statement_sha256: "64c80c71690e897044454b0672c9af51996f9c89937984578281192e54a05f00"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

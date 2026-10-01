@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "2a6114d6b5259689538c53dc6a97a3ce065caa729b7215d858beb40d9e89e40a"
 created_at: "2026-09-23T03:13:43.656949+00:00"
 id: "1000537"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Global minimum-side deletion states normalize to an endpoint carrying both large-side barriers"
+statement_sha256: "c0385984a451b2d8034149c8fa11fa998e70ba6d9aee3d622f5521ee0180434b"
 substantive_worker_ids:
   - 721
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ba27c5ee2e7a20ce15b4a231cf6089051e388129805a0dcfdff04d3c429da745"
 created_at: "2026-09-29T19:03:06.605125+00:00"
 id: "two_bad_five_extensions_all_opposite01"
 last_elevation_revision: 8737
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Two-bad-five-extension branch of the small-set toolkit: failure of two five-extensions forces four opposite Hamiltonian deletions, which are organized into endpoint gap networks and finite endpoint-lock packages yielding transport, mixed support, tight cycles, or bounded residual configurations."
 simplified_statement: "Two non-Hamiltonian five-extensions force all four opposite five-deletions Hamiltonian."
+statement_sha256: "2bf10ec9265216a77c35f2070ef5708f200de0ac2e2ecdb56bb54f1c8c4cc67f"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

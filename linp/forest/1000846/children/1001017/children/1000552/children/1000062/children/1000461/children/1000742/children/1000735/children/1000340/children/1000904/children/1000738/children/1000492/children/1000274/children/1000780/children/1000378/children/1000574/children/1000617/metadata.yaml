@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "6fb9ed90912d960c0cf19fd3d5f9ef61e177347f51e4773fb901a8a8947bf8cb"
 created_at: "2026-09-24T13:23:36.478406+00:00"
 id: "1000617"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A two-envelope local inequality isolates the near-top rank shell."
+statement_sha256: "ecacc1c4c25d3370c214213359558dc1cff1d62f9d1a641e6b206ad8993dfd34"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

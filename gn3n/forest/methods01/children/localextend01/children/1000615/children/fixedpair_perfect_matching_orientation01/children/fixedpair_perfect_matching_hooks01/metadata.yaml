@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "de7878c9821610e913452f66ba1adc52f2ae08470f1c0dfda69ab9e5227221a5"
 created_at: "2026-09-29T21:02:09.458863+00:00"
 id: "fixedpair_perfect_matching_hooks01"
 last_elevation_revision: 9060
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A fixed-pair perfect matching forces a complete opposite-orientation hook rectangle"
+statement_sha256: "9d4348373544f69c3f62277b0f0e5740cd1c515b3582f505d0e018865fe6c88a"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

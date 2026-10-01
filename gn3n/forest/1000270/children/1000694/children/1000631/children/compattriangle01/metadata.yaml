@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "0cad699a6103b3e987256d55eb2b3f43501d7f18f448f190c143aa42ec890641"
 created_at: "2026-09-27T00:49:41.891635+00:00"
 id: "compattriangle01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Compatibility triangles concentrate in one insertion gap"
+statement_sha256: "88b92f08d265b9694d16137309359b771f73b00292f8183234559f15afd5afb3"
 substantive_worker_ids:
   - 607
   - 624

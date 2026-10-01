@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "3ff3cfd9a1e33211b2a87d153b07f9d92de39dfa97dd58f70296a0929751cc41"
 created_at: "2026-09-28T15:21:27.414958+00:00"
 id: "1000103"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "An all-clean two-regular sharp-shell support component is impossible."
+statement_sha256: "74897425a62c9fd84ce0113da479fc37cf5d2d67d68c4cee3b8a7a39118ff3bd"
 substantive_worker_ids:
   - 706
 support_reason: "The repeated-label branch rests on failed theorem 8867264db573."

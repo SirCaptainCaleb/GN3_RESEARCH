@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "26d8a70f6520bba28495b0422a0e4b613e399cc5e8b923e00f757427d2425588"
 created_at: "2026-09-24T02:20:21.401532+00:00"
 id: "1000082"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Zero-slack critical-core program: reduce equality cores to one-factorized graph structure plus disjoint triples, then use connector and contracted-graph structure to force long paths."
 simplified_statement: "Zero-slack critical cores collapse to a one-factorized graph plus disjoint triples."
+statement_sha256: "eba76b1b00a4168600a7040f59616784348883a078e2b4f2bef23b1716bee8f5"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

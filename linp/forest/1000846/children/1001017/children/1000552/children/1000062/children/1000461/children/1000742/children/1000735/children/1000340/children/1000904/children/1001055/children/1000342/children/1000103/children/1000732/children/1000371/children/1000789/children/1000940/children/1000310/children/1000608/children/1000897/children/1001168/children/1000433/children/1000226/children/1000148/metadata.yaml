@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "afbb8c9f5a4fc20f99ac3476484f02ce676b042ed14a1250956ea3a03a949142"
 created_at: "2026-09-25T21:24:47.999959+00:00"
 id: "1000148"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Turn color-terminal collisions into rank-sum surplus, exact half-rank rotations, or edge-disjoint local cycles."
 simplified_statement: "Every interior U_11 color-terminal collision has rank-sum surplus, a local 3-cycle, or an explicit last-edge boundary cycle."
+statement_sha256: "c6d3acc6eaba86c62a6abbba4b60a885f60b4b82e277129e606c5604c1b5a5fc"
 substantive_worker_ids:
   - 220
   - 227

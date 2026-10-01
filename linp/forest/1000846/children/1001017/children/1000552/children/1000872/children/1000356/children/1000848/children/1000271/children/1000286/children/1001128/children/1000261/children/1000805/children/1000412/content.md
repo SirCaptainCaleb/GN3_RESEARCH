@@ -6,6 +6,7 @@ Let two maximum endpoint paths contain a clean internal lens with equal-length s
 
 ## Body
 
+
 Let Q and R be maximum endpoint paths containing a clean internal balanced lens between common vertices a,b. Let the Q-side and R-side of the lens both have edge length t.
 
 Let T be any linear path having a subpath W from a vertex s in the interior of the Q-side to a vertex r in the interior of the R-side. Assume:

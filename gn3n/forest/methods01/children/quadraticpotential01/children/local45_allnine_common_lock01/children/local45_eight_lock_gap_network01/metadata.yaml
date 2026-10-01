@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "cf58098038f2ba832535539788fe313d119a38039483d1ec6a9006966080faac"
 created_at: "2026-09-30T12:53:36.703049+00:00"
 id: "local45_eight_lock_gap_network01"
 last_elevation_revision: 10160
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "All nine plateau labels are locked; below long-path order 12 this forces a bounded Hamiltonian/cyclic obstruction, otherwise their second-type gaps are all distinct."
+statement_sha256: "afbc99934897735355c610151347e3ee48935039acf68cb58d61326f29e5964d"
 substantive_worker_ids:
   - 708
   - 745

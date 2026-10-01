@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4201cc08d02b5c2d0900b623126ec5b0e2f7197c70185bce02e12a1b51423339"
 created_at: "2026-09-28T01:26:14.697297+00:00"
 id: "1000402"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every three-plus-one cyclic certificate has a double-wrap rotation"
+statement_sha256: "390f5d408ea417523118d1ab5350de16923de479404da35d4612b4e824eac704"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

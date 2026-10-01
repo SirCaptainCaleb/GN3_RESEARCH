@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "9e83cb52e289c5fb99848bb7f5279f028f353a364a3e230719f38e4fc426bbfe"
 created_at: "2026-09-28T03:11:57.377616+00:00"
 id: "1000263"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A trapped canonical five-bridge reduces to a Hamiltonian 4/5-side or one doubled cross barrier"
+statement_sha256: "db0ee683253ff777357f694eaa40e2200a9a6a2bc94825cd7413e9a9974a4c36"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8d1c4a53624f42464e1c3f64fb1ab07e7786e7a9fffb43f903dc10702332ae8b"
 created_at: "2026-09-24T04:36:44.16587+00:00"
 id: "1000031"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A clean private entrance forbids every private single contact two positions earlier."
+statement_sha256: "5728f7407aa5948cc4d21a2e4a2a5c7d0a1172266489ca70c0fe3747d323e7bd"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

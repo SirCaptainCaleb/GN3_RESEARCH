@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "62435925ba8be39c9bd5c6392ddb60dae52f8e862204e548d6b411b85acfe3dd"
 created_at: "2026-09-25T19:15:43.982785+00:00"
 id: "1000484"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Single-contact central windows give a two-envelope local bound in every uniformity."
+statement_sha256: "0f4d3696548376e115182c0ab3fbe65fb6882d9af0c80a8619ef0c3e82287a38"
 substantive_worker_ids:
   - 192
 support_reason: "current_certified_premises"

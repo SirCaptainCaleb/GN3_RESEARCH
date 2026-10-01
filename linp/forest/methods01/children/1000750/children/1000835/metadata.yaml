@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "56cb8e07b59d4da46e1b0e04c888db96296661c44d052adca90b8744b8175e83"
 created_at: "2026-09-22T14:52:13.597919+00:00"
 id: "1000835"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "There are edge orderings of K_n in which every increasing simple path has length at most (1/2+o(1))n."
+statement_sha256: "e9ba3998e53c027dd482af62ef27d92588a164185786722f69b2795b17f0db55"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

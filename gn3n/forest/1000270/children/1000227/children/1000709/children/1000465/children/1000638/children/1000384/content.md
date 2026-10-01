@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the order-thirteen mu=6 shell, let Gamma be the Johnson-radius-three graph on deficient seven-supports. Gamma has no 2-regular connected component. More quantitatively, there is no simple path R_0,...,R_8 whose internal vertices R_1,...,R_7 all have Gamma-degree two. Hence every maximal chain of degree-two states contains at most six degree-two vertices and is bracketed by degree-at-least-three expansion states. The proof first excludes 3-,4-,5-cycles in the sliding-triple model, then eliminates all longer 2-regular cycles by forcing period three, and finally applies the same odd-neighbor/transfer-clique mechanism at two deep vertices of a hypothetical long degree-two path.
 
+
 ## Body
+
 
 # The radius-three deficient-support graph has no closed degree-two component and bounded degree-two corridors
 

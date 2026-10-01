@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "635ddf258ee729f51ed6b5f79e79dade0d50b1e5b6f75c8730a71020a601133c"
 created_at: "2026-09-27T22:18:10.586172+00:00"
 id: "1000091"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Adjacent moving windows force a two-label internal-or-small-endpoint core."
+statement_sha256: "99798b3069f5e2d8fe5e8f56dbc4743ace3c87252ad4d932874be6d42b688adb"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

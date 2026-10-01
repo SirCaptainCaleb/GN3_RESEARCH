@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d7d24092ae93a73237a8bd5dee83c13d9c8eb514a25a0b134ff177f0415c35f5"
 created_at: "2026-09-22T10:46:04.192362+00:00"
 id: "1000143"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Potential-threshold terminal-graph program: rainbow-path exclusion in threshold terminal graphs converts path structure into global restrictions on ascending-edge layers."
 simplified_statement: "Potential-threshold terminal graphs are rainbow-path-free."
+statement_sha256: "6418f9898f38849d5126a3b6525c7dc1f4ab177ce7f8730f5b12c272b743c655"
 substantive_worker_ids:
   - 182
 support_reason: "current_certified_premises"

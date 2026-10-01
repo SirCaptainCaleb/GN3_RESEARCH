@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "792d6ac767b5396f7f874cd519f8cea940d62ea01774c9fe9a7fd556975f2631"
 created_at: "2026-09-28T09:46:17.575979+00:00"
 id: "1000256"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Parallel three- and four-vertex corridors with common endpoints Hamiltonize their union"
+statement_sha256: "8099c47491e1bd0160fe2a9f420ed0238b171b7757a05939f67b0e9653bddc35"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

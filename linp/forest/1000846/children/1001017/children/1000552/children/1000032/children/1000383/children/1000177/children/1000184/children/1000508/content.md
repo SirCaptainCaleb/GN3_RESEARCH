@@ -6,6 +6,7 @@ In the top-boundary q,(q+1)^3 four-slot normal form, at least two of the three r
 
 ## Body
 
+
 Retain the top-boundary four-slot normal form 28445330afcc:
 the three rank-(q+1) witnesses occupy three of
   {a,b,c,d},

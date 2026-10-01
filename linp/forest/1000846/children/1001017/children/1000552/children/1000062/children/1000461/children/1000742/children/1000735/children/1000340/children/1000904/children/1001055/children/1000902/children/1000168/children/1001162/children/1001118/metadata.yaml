@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "777afd6d1eb932d058e4357afb98818168ba33f6bde210c1c0d6b30b21c57ac0"
 created_at: "2026-09-24T14:02:32.844369+00:00"
 id: "1001118"
 last_elevation_revision: null
@@ -59,6 +60,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Gap-one local slack splits exactly into anchor slack, foreign low-rank edges, and maximum-path doubles."
+statement_sha256: "44ad722b25aaaf2a5d7300770d346ec7fc3001a0f776d19678c2182dc9a2d238"
 substantive_worker_ids:
   - 258
 support_reason: "current_certified_premises"

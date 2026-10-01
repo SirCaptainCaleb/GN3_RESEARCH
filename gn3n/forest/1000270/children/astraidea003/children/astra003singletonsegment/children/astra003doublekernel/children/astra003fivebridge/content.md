@@ -6,6 +6,7 @@ Under the reciprocal-one-crossing first form, assume both endpoint four-sets X_L
 
 ## Body
 
+
 # The double-kernel residue creates a Hamiltonian five-bridge and escapes the equality plateau
 
 Assume the first form

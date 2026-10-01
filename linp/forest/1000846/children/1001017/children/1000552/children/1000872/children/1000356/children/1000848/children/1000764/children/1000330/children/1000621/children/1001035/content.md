@@ -6,6 +6,7 @@ At p=2q-3, if four assigned 0-1-1 rank-(q+1) edges are all single-contact on one
 
 ## Body
 
+
 Let v have
   p=phi(v)=2q-3, q>=4,
 and let

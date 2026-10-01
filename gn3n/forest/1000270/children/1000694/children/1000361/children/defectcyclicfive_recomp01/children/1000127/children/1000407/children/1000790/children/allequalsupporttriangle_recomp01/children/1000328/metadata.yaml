@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "684487f94b67b343ad4e9a610fa7624e49bb2175ffdfdb35051b91aa8ddd5c29"
 created_at: "2026-09-28T02:15:07.357224+00:00"
 id: "1000328"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "6d5f255254fe92474f9c61b0f219cedc552cbeb9680ef4daa35aa7e3d93621bf"
 substantive_worker_ids:
   - 660
 support_reason: "local_audit_failed"

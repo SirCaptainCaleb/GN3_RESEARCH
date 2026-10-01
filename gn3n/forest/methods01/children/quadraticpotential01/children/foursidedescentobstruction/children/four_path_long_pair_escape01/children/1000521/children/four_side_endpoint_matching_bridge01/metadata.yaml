@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c3d297bcfc2f3f713104cb099c7afa275104045d225741436af1d4ef5465f46f"
 created_at: "2026-09-29T18:06:33.513264+00:00"
 id: "four_side_endpoint_matching_bridge01"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Four-side endpoint-six obstruction branch: local minimality saturates the endpoint shell, the former fixed-endpoint perfect-matching residue is eliminated, and overlapping Hamiltonian windows force positioned pc2 squares whose endpoint branch descends or is bounded while the remaining branches expose standard support/order/internality disturbances."
 simplified_statement: "The hard four-side six-set yields five-window amplification or a fixed-endpoint matching shell."
+statement_sha256: "eeed440e5ec28c959d98dec945c6cacaeabf3cde096f2fd2d11d750c4882b3b4"
 substantive_worker_ids:
   - 605
 support_reason: "current_certified_premises"

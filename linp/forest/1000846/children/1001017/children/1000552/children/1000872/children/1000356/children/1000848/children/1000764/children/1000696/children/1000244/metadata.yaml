@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1a756d356c5a19bef849fca8380289301c9295efc5470d8150d94b5b51913e5d"
 created_at: "2026-09-24T05:28:48.718787+00:00"
 id: "1000244"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two non-double rank-q edges at p=2q-3 have a two-pattern middle-edge normal form."
+statement_sha256: "548d2b596153cf8a577ac37a442efeefaa8c878ed175294e2912a63d6bb7d596"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

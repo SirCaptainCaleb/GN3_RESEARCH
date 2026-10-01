@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1a4686e9bfc1351670bc5b600ebb5d136e52e90a1a20a94606b087b088d9e63e"
 created_at: "2026-09-24T19:53:47.96257+00:00"
 id: "1000475"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Consecutive top-rank host edges cannot both be forward-flat ascending outputs."
+statement_sha256: "8106d61dfaa9721baf2b644d3898dd25de62318de23a92c2bb2d02ce9dd244fb"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

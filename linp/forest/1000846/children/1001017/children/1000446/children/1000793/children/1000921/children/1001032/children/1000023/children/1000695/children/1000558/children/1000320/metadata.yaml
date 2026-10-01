@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1cd02eb80569e3330ca8236c8bd04b9c23f0ca1be246300040c798c1e2682bb0"
 created_at: "2026-09-24T03:14:03.971344+00:00"
 id: "1000320"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The one-special local equality type is impossible."
+statement_sha256: "f12aefced6514c01f7902b88f0d3651a7bbd16b80faff14ed079d8feecec39c5"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

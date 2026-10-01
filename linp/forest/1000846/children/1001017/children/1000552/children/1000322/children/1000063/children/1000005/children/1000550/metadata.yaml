@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1fc7c1d81c6fd651d5bd56a2bd60476cb82e039f63c3988a8d74dbb1ef2fe47b"
 created_at: "2026-09-21T19:39:08.801156+00:00"
 id: "1000550"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum-degree all-special transfer by peeling."
+statement_sha256: "a19264e6b459b00078c8bb9424bf7f088715d181c7e53f9bc33e618e23100aeb"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

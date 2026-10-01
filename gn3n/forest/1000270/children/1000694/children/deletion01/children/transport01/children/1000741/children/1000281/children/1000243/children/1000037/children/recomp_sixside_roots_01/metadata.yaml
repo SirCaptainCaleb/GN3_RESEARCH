@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cd5dd6db4653b9d59f113e0e98f1c66fa7271b3d949d1ba897c71f671f8feeeb"
 created_at: "2026-09-28T20:46:30.267276+00:00"
 id: "recomp_sixside_roots_01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Four endpoint roots over a six-set force a Hamiltonian four-set or a classified perfect-matching extension grid."
+statement_sha256: "1e6a89b8a2ba6ae98e529712a2545a5776efd9e99b71a79b24925af4b71419a2"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

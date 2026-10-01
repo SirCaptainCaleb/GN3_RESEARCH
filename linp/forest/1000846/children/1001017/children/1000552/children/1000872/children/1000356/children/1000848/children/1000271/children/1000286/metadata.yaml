@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "78fbcc237a59f01a44842d2f97a6166efc1389fb23d311050794487680f7c233"
 created_at: "2026-09-24T06:03:44.059985+00:00"
 id: "1000286"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every source-clean rail in a two-rank 0-1-1 block crosses every foreign edge."
+statement_sha256: "a6a681305d32e091db0a007ba07ade2c8b3cbab2f289100e03f228cb54251751"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

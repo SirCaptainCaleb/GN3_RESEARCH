@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "52e26ca85f6d60e35eac0d8444b69e6447e039b8e04531882d25957a88805895"
 created_at: "2026-09-28T15:21:28.092254+00:00"
 id: "1000551"
 last_elevation_revision: 0
@@ -52,6 +53,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A globally minimum-side endpoint probe has no neutral residue."
+statement_sha256: "80ed4106a31d0ea56039adaf91e99342a26bf018fc74b9cd1934fd9206df673b"
 substantive_worker_ids:
   - 700
 support_reason: "dependency_verification_pending"

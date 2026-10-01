@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "dd611f3e13b1f485d14272cb935bd14cc90074bb32dbd388bfe4f80dd7e725b2"
 created_at: "2026-09-24T01:54:06.583925+00:00"
 id: "1000564"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Good-residue two-hole witnesses force linearly many three-center collisions."
+statement_sha256: "5f7d9fa05e6e61762f589cdebfedb98c010bc5f4ab61b372c81b6d300befb951"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

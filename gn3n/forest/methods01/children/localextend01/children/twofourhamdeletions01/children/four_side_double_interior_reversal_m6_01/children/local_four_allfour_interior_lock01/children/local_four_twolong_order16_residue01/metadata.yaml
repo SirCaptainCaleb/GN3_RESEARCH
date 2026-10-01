@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "706e14513db1c97ccd417087dc9e05f98b4b9ab538bdbfc58c9a332ef66e02bc"
 created_at: "2026-09-29T19:15:16.11041+00:00"
 id: "local_four_twolong_order16_residue01"
 last_elevation_revision: 8786
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A locally minimal four-side with two long complements reduces to order sixteen."
+statement_sha256: "84a8a48a7c3b31ef279b703b77b2c94b8a632c4aefd03fe36018fade4dff5655"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

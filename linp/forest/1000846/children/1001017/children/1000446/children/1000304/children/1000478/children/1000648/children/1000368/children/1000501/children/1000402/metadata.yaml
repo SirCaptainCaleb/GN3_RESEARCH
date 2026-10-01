@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "8ccf9b96a56d113ab0b52efdf48d6391767671906c2c3ed03f2cf3aa5ecca19d"
 created_at: "2026-09-22T05:55:12.444996+00:00"
 id: "1000402"
 last_elevation_revision: null
@@ -33,6 +34,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Conjecturally, for each vertex v there are at most two ascending nonspecial edges {x,v,u} with v terminal and φ(u)>φ(v)."
+statement_sha256: "90c4d00019173c13d401a8b96b8f04e034ef0194367b6f1a0e92a93f2ceb5cc1"
 substantive_worker_ids:
   - 222
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "8883e7a382992fd33d11441e0f398d40ce39f7025cab5eabf122a4ebe3998a96"
 created_at: "2026-09-24T13:52:28.51181+00:00"
 id: "1000796"
 last_elevation_revision: null
@@ -55,6 +56,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "4df4ba75163c4b3d66155d2be6222fd41b0c9982603a844d85737b66e323232f"
 substantive_worker_ids:
   - 258
 support_reason: "The proof unjustifiably assumes that after suppressing common initial edge segments there is a common vertex z simultaneously consecutive to y on both maximum paths. Common vertices need not occur in compatible order, and the explicit loose-path construction 23fac5740304 satisfies the hypotheses while the two maximum paths are nested and contain no genuine pair of distinct internally disjoint replacement sides. The weaker conclusion |V(Q)∩V(P)|>=2 remains valid."

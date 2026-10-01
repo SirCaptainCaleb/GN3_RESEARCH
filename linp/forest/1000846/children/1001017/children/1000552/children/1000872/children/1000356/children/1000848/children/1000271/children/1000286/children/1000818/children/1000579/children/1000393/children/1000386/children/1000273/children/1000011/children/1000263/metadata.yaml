@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5e7ec515ff945a490d4033762e10853f2601bb7fa2aea1a4fd7afbbfa46f21ee"
 created_at: "2026-09-24T11:34:18.721171+00:00"
 id: "1000263"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Terminal-tail blocking pushes the flat terminal lens into the late high-rail zone."
+statement_sha256: "3e684c39a63e1691eac14a8e14f1c02e34963988bc5f84dd95cbb940ca296d4b"
 substantive_worker_ids:
   - 246
 support_reason: "current_certified_premises"

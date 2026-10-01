@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "401cf9f7aa7a53944bb22c5ac6e7e742860b58bd94ef8962ec61a8a39bc3b7e6"
 created_at: "2026-09-28T18:41:27.298824+00:00"
 id: "1000305"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every facing endpoint pair lies in a positioned Hamiltonian four- or five-window."
+statement_sha256: "29f1cf1c5ccb0f8dcef3bbf95400505f84c423e9fb4e4890b3116eb53e883d6a"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

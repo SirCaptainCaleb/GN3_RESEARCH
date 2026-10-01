@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c1a7b2fcc8e76edc3ef789e26f829f7e797d4b6ba42760ff855479bce44dd0dd"
 created_at: "2026-09-24T03:46:49.406908+00:00"
 id: "1000969"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A pair-universal star converts degree-potential defect exactly into clean ascending sources."
+statement_sha256: "04040b849e060b4f139290fc3cf2b8e332499e8ae3ad73c1c618138ead02c07a"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

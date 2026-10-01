@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let e={x,v,u} be an ascending nonspecial edge with unique entrance x and terminals v,u. Let P_v be a maximum endpoint path ending at v such that u belongs to V(P_v) and x does not. Let P_u and P_x be arbitrary maximum endpoint paths ending at u and x respectively.
 
 Then:
@@ -18,7 +19,9 @@ Hence every terminal-retained ascending edge produces either a source-recapture 
 
 If in addition phi(u)>phi(e) and e is terminal-single on P_u, then exactly one of x,v lies on P_u, so the two alternatives in (3),(4) are exclusive.
 
+
 ## Body
+
 
 The paths P_v and P_u share u. Suppose they shared no other vertex. They are maximum endpoint paths with distinct last vertices v and u. By the certified unique-intersection theorem 5854d853a44b, their unique common vertex u would have to be an internal joint of both paths. But u is the last vertex of P_u, contradiction. Thus
   |V(P_v) intersect V(P_u)|>=2,

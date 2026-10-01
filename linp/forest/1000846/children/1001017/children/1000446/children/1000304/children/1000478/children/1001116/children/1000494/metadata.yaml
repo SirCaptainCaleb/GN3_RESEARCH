@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "62bc5572b9e385f447dc75eabc48f47e802a4dab3dad6f1e756557a15cbad3e8"
 created_at: "2026-09-21T22:49:12.738576+00:00"
 id: "1000494"
 last_elevation_revision: null
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Five-edge deficit-doubling program: seek a five-edge common-terminal rank-spacing inequality robust to the four-edge counterexamples, and use the resulting deficit recurrence to obtain logarithmic common-terminal ascending degree."
 simplified_statement: "For five ascending nonspecial edges sharing a last vertex with ranks q1≤q2≤q3≤q4≤q5, conjecturally 2q4≥q1+q5+1."
+statement_sha256: "950a361ff09c4e69583b8fcb40f77a9ea7a07e84ec53b06bcb48f13ae47d1e4b"
 substantive_worker_ids:
   - 205
 support_reason: "not_a_proved_or_evidence_claim"

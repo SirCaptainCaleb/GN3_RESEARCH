@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "314f123dc6081419d462ceca672aab57e0f49d9131eb528fc716c25254ea7c39"
 created_at: "2026-09-27T20:25:32.59832+00:00"
 id: "1000740"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Coarse singleton-intersection defect axioms admit arbitrary odd-order abstract models."
+statement_sha256: "79189da07108777ea09127132f18c8b4f002510e7562353f390ecb56451533e7"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

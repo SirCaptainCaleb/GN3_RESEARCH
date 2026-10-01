@@ -6,6 +6,7 @@ Major-result retrospective for the arbitrary-uniformity single-contact central-w
 
 ## Body
 
+
 Synthesis at repository revision 3866.
 
 Evidence from the triggering result and its immediate consumption:

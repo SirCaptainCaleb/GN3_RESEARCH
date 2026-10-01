@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e2b71c6354710683be3945a1f4f911f9b0744c41f87a804c3e504210e59aa028"
 created_at: "2026-09-27T22:11:57.614122+00:00"
 id: "1000186"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Span-three endpoint-hook and peel branch: a reversed cyclic endpoint hook yields synchronized cross-component hooks, connector-or-transfer forks, two-end peeling of a minimum side, and connector-free endpoint kernels whose blocked gap-two residue produces an order-incompatible transfer square."
 simplified_statement: "Every span-three ordering has a reversed cyclic endpoint hook."
+statement_sha256: "1e6b2677c123c304e7be5df039333c148917a0af2e687044003b9ec1417557b0"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

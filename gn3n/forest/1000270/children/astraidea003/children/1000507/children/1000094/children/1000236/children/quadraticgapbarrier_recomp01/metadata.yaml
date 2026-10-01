@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "858c9945ce400e1dd7a9e83692116faa707967d4589ca3f41583d2b823df92d7"
 created_at: "2026-09-28T01:21:21.376275+00:00"
 id: "quadraticgapbarrier_recomp01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A quadratic size gap forces a small Hamiltonian kernel, a reversed-edge detour, or a universal doubled barrier"
+statement_sha256: "d786e22a85ca92a57b93ced1ab4639ea9da833fa2943d547e8ac71c37bfb9c8b"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

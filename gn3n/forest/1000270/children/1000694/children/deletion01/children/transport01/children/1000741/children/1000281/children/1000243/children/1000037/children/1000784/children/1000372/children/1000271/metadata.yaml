@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "ee2f6a6af66532fdb8aadbd2a2873f72f7d25767daee37fef82ac7abd3a98ac3"
 created_at: "2026-09-28T13:07:51.30071+00:00"
 id: "1000271"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A Phi-neutral singleton swap at a six-set yields local order or insertion structure."
+statement_sha256: "c4e744ef286b08e2cb687c1427474347d2bcb94d53b824e12ec4ef8d2d54a149"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

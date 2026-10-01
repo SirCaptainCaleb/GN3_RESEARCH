@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3fc45af9f07c9381e1891bccfc7bf1fe615d9cb52f398817283c80e0ffbbf9e5"
 created_at: "2026-09-28T00:40:10.554484+00:00"
 id: "1000654"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Three-plus-two cyclic-defect branch: simultaneous central and wrap reversals give a small quadratic-potential landscape and direct access to four-side obstruction, repeated descent, persistent outer barriers, or a bounded transport kernel."
 simplified_statement: "The three-plus-two cyclic defect type has simultaneous central and wrap reversals"
+statement_sha256: "dbe280c602fe39abc240c0a2371cbcf7af251093f41bf606d8e7f3c212fb830a"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

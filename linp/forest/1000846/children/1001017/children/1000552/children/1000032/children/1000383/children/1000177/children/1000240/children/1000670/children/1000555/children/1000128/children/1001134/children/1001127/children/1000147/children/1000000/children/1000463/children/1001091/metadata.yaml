@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "80f3c37a21da1999f476c60ab2c6f695d786edd1d154e1bb449f5b28b5875ae1"
 created_at: "2026-09-25T21:34:30.404713+00:00"
 id: "1001091"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "f24e27dbec634a75f8a8cb1f2489d25d21982664106637e8d0c9d445c753b970"
 substantive_worker_ids:
   - 224
 support_reason: "The proof applies 678901b48360 to every h in H, but that theorem requires h=a_j to be an internal edge j<L. The statement allows h to be the last edge a_{q-1}. A last host edge can have edge rank at least p>q-1 because edge rank is a maximum over all h-ending paths, not the length of this particular host path. Therefore the positional conclusion j<=2q-p-1 and the bound T<=2q-p-1 are not established without separately handling the last-edge boundary case."

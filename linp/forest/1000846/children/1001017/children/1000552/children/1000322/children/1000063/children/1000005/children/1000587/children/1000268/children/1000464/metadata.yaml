@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cd4bc1cba94eda04598e71cc9f1df7853eb232bd720c74caefb05f4f7df99f6b"
 created_at: "2026-09-24T01:48:48.235562+00:00"
 id: "1000464"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two-hole alternate paths have an exact alternating blocker-matching defect identity."
+statement_sha256: "a8ce11f5d263b25e3bdbc502d0793bc6ee127c8d08be248d7fd716b26c7a8da6"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

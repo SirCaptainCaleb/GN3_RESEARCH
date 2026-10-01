@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "1600fad4d9af7cc60d1e7fbfeeb4e25804097d0fee17183eca0f7a1457616129"
 created_at: "2026-10-01T06:16:14.28958+00:00"
 id: "generic_six_disturbance_universal18"
 last_elevation_revision: 10807
@@ -28,6 +29,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Above order seventeen every six-set already yields order disagreement or strict descent, so special six-set routes must preserve stronger structural data to make genuine progress."
+statement_sha256: "3ad5f20afdb94b2fdc44c7b2ac502cc226271b7a25cb48c11adec75e0aac8c08"
 substantive_worker_ids:
   - 922
 support_reason: "provisional_unaudited"

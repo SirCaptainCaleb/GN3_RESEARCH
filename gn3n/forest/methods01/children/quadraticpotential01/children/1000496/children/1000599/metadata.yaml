@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "15a9a4222214530c2c1be7dfb0e89e18cece9c342bd9af2b653fd22ea21e57d7"
 created_at: "2026-09-27T21:50:49.490554+00:00"
 id: "1000599"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Both endpoints of an oversized quadratic-minimal component disturb the same complementary pair"
+statement_sha256: "6dc307ea3810ed33813c18da6e0dbb7fcfd0eac9be8532b5bf4d160c0e29b0c4"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4f7993978c9dd6131ef0b3e89485bec8755e496f02eebd3a278a96bc9da34d14"
 created_at: "2026-09-27T19:21:19.868949+00:00"
 id: "singletonsupsandwich01"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Singleton-swap adjacency lies between full and support compatibility"
+statement_sha256: "0273f839a98d865921cbc6e311303dd2e9760a88cb778568df13998d2594062b"
 substantive_worker_ids:
   - 569
 support_reason: "current_certified_premises"

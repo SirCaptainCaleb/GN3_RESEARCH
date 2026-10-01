@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b1cab79382f972a5fa99f5f1904b6b899d1c78fbd95df7f69a8a41a2f67cc598"
 created_at: "2026-09-28T17:11:49.630273+00:00"
 id: "1000398"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two four-vertex paths beside a path of order at least six admit a two-move descent."
+statement_sha256: "2c3b3d4edfac503505200e72c8ded4fe9cfe0b82b35d968fd5b2a5b54290858f"
 substantive_worker_ids:
   - 626
 support_reason: "current_certified_premises"

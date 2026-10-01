@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample in the order-thirteen mu=6 shell and let A|B|C be a spanning 5|4|4 three-cover, A=(a_0,...,a_4). For i=1 and i=3, every exact 6|6 cover of H-a_i has at least three ordinary edges crossing the inherited four-part partition. For i=1, write the inherited class orders as L_1,R_3,B_4,C_4. If equality t=3 holds, exactly one of R,B,C is split and, up to swapping B,C and the cover components, the five block sizes have exactly one of three forms: (I) R=R_1 sqcup R_2 with (B_4+R_2)|(C_4+L_1+R_1); (II) B=B_2 sqcup B'_2 with (C_4+B_2)|(R_3+L_1+B'_2); or (III) B=B_3 sqcup B_1 with (R_3+B_3)|(C_4+L_1+B_1). The i=3 case is symmetric. Otherwise t>=4.
 
+
 ## Body
+
 
 # The near-end deletions of every 5|4|4 cover are three-crossed, with only three equality geometries
 

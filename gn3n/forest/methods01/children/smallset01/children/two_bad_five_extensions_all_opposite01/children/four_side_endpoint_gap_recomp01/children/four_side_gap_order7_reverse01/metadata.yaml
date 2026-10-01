@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "929f09e752858b2aa659191b02dc39cd5a1e4f5ff9849870ec03f549f6e2d593"
 created_at: "2026-09-29T22:16:17.739731+00:00"
 id: "four_side_gap_order7_reverse01"
 last_elevation_revision: 9396
@@ -26,6 +27,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A hard four-side lock against a seven-path uses the four interior gaps in exact reverse order."
+statement_sha256: "d1564acd23bec886c75c3daec3619b034cab41c8288d412fa0de43dd6ddb4bfa"
 substantive_worker_ids:
   - 708
 support_reason: "not_locally_certified"

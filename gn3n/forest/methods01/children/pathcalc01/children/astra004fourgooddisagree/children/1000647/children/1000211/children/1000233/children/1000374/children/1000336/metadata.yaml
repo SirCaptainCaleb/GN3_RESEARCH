@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "43fe68c01acba767b7f2a0fd064d93e216688883090a4df0181f2962b94e8c28"
 created_at: "2026-09-28T18:15:42.63056+00:00"
 id: "1000336"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Correction: five-core complement coupling applies only to the long sliding-window branches."
+statement_sha256: "a3434ac1a1777e1a46aa7d5ef2fdb5f1a09bc99a1c0fdb82ed37c61f379ceeb0"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

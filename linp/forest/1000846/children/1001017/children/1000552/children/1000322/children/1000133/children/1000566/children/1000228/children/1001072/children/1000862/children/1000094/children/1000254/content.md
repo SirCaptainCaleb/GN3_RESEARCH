@@ -6,6 +6,7 @@ In the |D|=k critical-core normal form, if m+2c=2k then H-D has no forest joints
 
 ## Body
 
+
 Assume the extremal |D|=k critical-core normal form and zero slack
   m+2c=2k.
 Let F=H-D be the universal path forest.

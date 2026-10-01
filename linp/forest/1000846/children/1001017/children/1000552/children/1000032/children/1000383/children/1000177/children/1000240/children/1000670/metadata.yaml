@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1b611e99e277bac35165b5a10fd0410213190beee085300744f4285c72f12782"
 created_at: "2026-09-24T04:38:57.847278+00:00"
 id: "1000670"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Clean contacts two positions apart cannot coexist on a canonical low-rank entrance rail."
+statement_sha256: "5ec956de3d42aa879385c305b8e8d0620fdd56cd0140306cb13900be7dfe44df"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

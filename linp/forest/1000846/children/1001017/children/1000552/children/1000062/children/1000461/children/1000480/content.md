@@ -36,3 +36,4 @@ Substituting into (2) gives
       = (3ell-6)n.
 Hence
   m <= (ell-2)n.
+

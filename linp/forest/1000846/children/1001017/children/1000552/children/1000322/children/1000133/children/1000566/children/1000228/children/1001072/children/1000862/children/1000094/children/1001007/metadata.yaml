@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ed985c8b41d00b6799a288e5c5c31dae268dbecc00affc1616bf6c5d8118c4e2"
 created_at: "2026-09-24T02:26:01.793131+00:00"
 id: "1001007"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "One unit of critical-core slack permits at most one forest joint."
+statement_sha256: "59e5b6d6f65ba76fdeb76331785a904036cfc7d4174acc20df2b248eff40d636"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

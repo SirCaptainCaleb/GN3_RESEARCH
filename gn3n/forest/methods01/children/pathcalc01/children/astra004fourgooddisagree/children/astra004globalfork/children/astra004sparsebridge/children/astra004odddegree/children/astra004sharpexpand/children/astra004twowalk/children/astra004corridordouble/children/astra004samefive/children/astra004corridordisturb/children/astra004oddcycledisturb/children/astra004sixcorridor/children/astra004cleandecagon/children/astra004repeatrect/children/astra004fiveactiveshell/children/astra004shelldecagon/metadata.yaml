@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3fa09d573b9ae1aa95434d58f5aca69394a9acaa15bc01e63cf1bb387a8dea01"
 created_at: "2026-09-26T20:42:47.096136+00:00"
 id: "astra004shelldecagon"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An all-clean two-regular shell either has a three-step repeated label or is a canonical decagon."
+statement_sha256: "74f5320a29e83f1f022f7e05910f7709554fb7a52dad5e3e7bff579b34b90206"
 substantive_worker_ids:
   - 576
 support_reason: "current_certified_premises"

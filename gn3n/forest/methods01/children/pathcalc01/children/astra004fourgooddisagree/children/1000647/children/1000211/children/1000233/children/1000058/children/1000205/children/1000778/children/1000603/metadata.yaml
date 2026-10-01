@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2f5f86dc71ac8c580ec5f0fc26471a7715a8db228d3b8662dacf3dc9a9e4f486"
 created_at: "2026-09-28T18:19:19.145777+00:00"
 id: "1000603"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A span-two omission replacement always creates a Hamiltonian four-window."
+statement_sha256: "167d219f0ed843d55d261d910a73e297327b1c5b48dee93957abb1fa76cc0bee"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

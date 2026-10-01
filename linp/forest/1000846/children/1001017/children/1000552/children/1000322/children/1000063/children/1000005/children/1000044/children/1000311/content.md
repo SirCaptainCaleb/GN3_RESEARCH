@@ -6,6 +6,7 @@ If H is a linear 3-uniform hypergraph with no P_4^(3) and minimum degree at leas
 
 ## Body
 
+
 Let H be a linear 3-uniform hypergraph with minimum degree at least three and no P_4. We prove that every edge is special.
 
 Work in one connected component of the intersection graph F=L(H). By the pathmaker lemma, F has no induced P_4, so F is a connected cograph.

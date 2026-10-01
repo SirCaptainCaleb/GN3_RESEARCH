@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e863b4f8bf1349d4d3c131bf09832f94021726de20a1ece017157be3ae7ee196"
 created_at: "2026-09-27T00:56:14.230103+00:00"
 id: "1000335"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Compatible separating deletion covers have one local insertion obstruction."
+statement_sha256: "17df96679ac7138702435a2ec0686fa780e8746af0a3bde3c841264b59ea713a"
 substantive_worker_ids:
   - 717
 support_reason: "current_certified_premises"

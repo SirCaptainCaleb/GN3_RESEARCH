@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "42300dba023d2e5fe1ad83e3026a21cfc06fc208c62cdf72698c5bf434a1c6ae"
 created_at: "2026-09-29T22:13:57.860711+00:00"
 id: "prescribed_pair_mixed_four_supports01"
 last_elevation_revision: 9396
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Prescribed-pair mixed four-supports exist in every exterior three-set"
+statement_sha256: "7bb0ba7947f6805dae0a929a0b02aca2808dc3a195e1e2d3ea6fbf0c26e40063"
 substantive_worker_ids:
   - 592
 support_reason: "current_certified_premises"

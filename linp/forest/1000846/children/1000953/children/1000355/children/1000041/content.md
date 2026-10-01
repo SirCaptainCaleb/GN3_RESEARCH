@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Three related lower-construction fences hold.
 
 (1) If a linear 3-graph H on n vertices has a vertex cover C of size t, then |E(H)|<=t(n-1)/2 and every linear path has at most 2t edges. Thus a path cap certified solely by a fixed t-vertex global transversal has normalized density below 1/4 at ell=2t+1.
@@ -10,7 +11,9 @@ Three related lower-construction fences hold.
 
 (3) More flexible fixed-multiplicity sharing still cannot beat the one-third benchmark. For fixed r>=3 and even N, let d=N-1 and take r disjoint copies of K_N, each arbitrarily one-factorized by the same d color labels; adjoining one common vertex for each color and lifting the graph edges gives H_{r,N}. Then H_{r,N} contains a linear path of length at least (3r/(2(r+1))-o(1))d. Since |E|/|V|=(r/(2(r+1))+o(1))d, its normalized density at its first forbidden path length is at most 1/3+o(1).
 
+
 ## Body
+
 
 For the static-transversal bound, fix c in a vertex cover C of size t. By linearity, the edges through c have pairwise disjoint sets of other vertices, so d_H(c)<=floor((n-1)/2). Since C meets every edge,
   |E(H)|<=sum_{c in C}d_H(c)<=t(n-1)/2.

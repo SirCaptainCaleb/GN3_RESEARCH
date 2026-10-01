@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "f35551608739b66afed861e0b490bc3dc4ef999aced9d7705d05433432b9f123"
 created_at: "2026-09-24T02:51:07.483469+00:00"
 id: "1000793"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Vertex-rank superlevel and ascending-flow program: potential cuts and incidence compatibility turn ascending edges into quantitative rank flow, yielding improved average-rank bounds and rigid equality or near-equality structure."
 simplified_statement: "Ascending-edge directed paths lift through endpoint-potential growth."
+statement_sha256: "ccce77a66f106b2b7d2ae70d20d8eb42be9d3cc817791100736005798cac4b51"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

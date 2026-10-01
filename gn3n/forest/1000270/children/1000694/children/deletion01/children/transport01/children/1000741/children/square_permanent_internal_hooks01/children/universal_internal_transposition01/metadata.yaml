@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7359258a2b61511e778a8093c19cf7e3909df97ba62fcaff274fb87985bef2a7"
 created_at: "2026-10-01T01:32:08.619087+00:00"
 id: "universal_internal_transposition01"
 last_elevation_revision: 10414
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "If d is universally internal across r deletions, then H-d has endpoint/support/order disturbance or at least r-1 labels become mutually internal with d, each forcing a four-end K4-or-double-barrier grid."
+statement_sha256: "b61e7ea6dd5345d0d4c63fa53e16bc3afc0d4f9d6f69208fe146b8e15adc0128"
 substantive_worker_ids:
   - 745
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 9
+body_sha256: "1d34e691fb8b4fad43e4273df144dd65f336f921f9dbe4204d769b65cefd1978"
 created_at: "2026-09-21T11:46:52.134362+00:00"
 id: "1000141"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Correction: synchronized three-label producers and the max-degree-two branch are disjoint"
+statement_sha256: "0a5284a9f068005074b598273a2ac315a296985aff5d30dc9de603ee37b2ccfb"
 substantive_worker_ids:
   - 597
   - 721

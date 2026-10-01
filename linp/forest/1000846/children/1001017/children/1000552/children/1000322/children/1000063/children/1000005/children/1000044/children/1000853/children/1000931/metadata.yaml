@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "78dc041194820206c0ffbf181bcffcafaefd9cc998bd1f351e94ed2216b6dbd0"
 created_at: "2026-09-23T23:51:48.807225+00:00"
 id: "1000931"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Class-II rank-three nonspeciality forces an alternating terminal C6."
+statement_sha256: "0fbb4ba575a7ca185b9d07cdc82d5d54cd4a4ce7b3791ca48f8b4e03f37117cd"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

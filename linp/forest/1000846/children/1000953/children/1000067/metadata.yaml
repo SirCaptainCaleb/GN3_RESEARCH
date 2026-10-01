@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "01a43580f61bbee454da1da12969616c0d4a0e6f8c950436426228940b49bc3e"
 created_at: "2026-09-22T14:21:31.77633+00:00"
 id: "1000067"
 last_elevation_revision: null
@@ -32,6 +33,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Steiner-system and algebraic lower-bound program: test spanning-path obstructions in projective, affine, and low-rank triple systems, develop incidence-code certificates, and identify barriers preventing standard lifts from improving the one-third coefficient."
 simplified_statement: "A non-Hamiltonian Steiner triple system on 2ℓ+1 vertices would yield a P_ℓ-free construction of density ℓ/3 per vertex, improving the generic (ℓ-1)/3 benchmark."
+statement_sha256: "9e653225fdb67e9a8451c7247d1d9a400d493eef359091429bfc4cbb8ee7f354"
 substantive_worker_ids:
   - 212
 support_reason: "not_a_proved_or_evidence_claim"

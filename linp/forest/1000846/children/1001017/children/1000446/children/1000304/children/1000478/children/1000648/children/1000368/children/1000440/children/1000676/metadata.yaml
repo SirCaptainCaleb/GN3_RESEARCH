@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6aefe10b49d7e89cb0f200d6b76f8e4b5dffc85601f6a46658978f656f0f9f3f"
 created_at: "2026-09-24T03:30:06.917771+00:00"
 id: "1000676"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Potential-five obstruction classification: resolve the 4445, 4455, and 4555 charged rank patterns through entrance witnesses, path chords, and central-window restrictions."
 simplified_statement: "In the p=5 pattern 4445, two middle-edge witnesses are forced entrances."
+statement_sha256: "8230447ec2d1f886abd4243e8a2076894133e4bcee94025eb965a907fe249a04"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

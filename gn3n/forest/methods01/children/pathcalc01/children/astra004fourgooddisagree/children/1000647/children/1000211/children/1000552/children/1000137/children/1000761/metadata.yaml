@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "8b0df9b22f096ae76ab818a5ac9277f629b4887e59e6140affa28f4a9e515d46"
 created_at: "2026-09-28T18:54:39.268928+00:00"
 id: "1000761"
 last_elevation_revision: 0
@@ -59,6 +60,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A pure-cycle residue without direct reversal has a complete cycle-edge by complement-endpoint four-window grid."
+statement_sha256: "cf3147cba52e8c52dd44b5cf3beb3192ce1a2703c5a431a49d435e9e3a900dfb"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

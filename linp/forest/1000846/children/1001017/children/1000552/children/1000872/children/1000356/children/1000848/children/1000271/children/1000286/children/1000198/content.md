@@ -6,6 +6,7 @@ In a four-edge 0-1-1 consecutive-rank obstruction, every forced foreign contact 
 
 ## Body
 
+
 Let e_j={x_j,v,u_j} be a 0-1-1 ascending nonspecial edge, and let P_{x_j},P_{u_j} be the globally chosen maximum endpoint paths ending physically at x_j,u_j.
 
 Let Q be any other chosen maximum endpoint path whose physical endpoint is distinct from x_j,u_j.

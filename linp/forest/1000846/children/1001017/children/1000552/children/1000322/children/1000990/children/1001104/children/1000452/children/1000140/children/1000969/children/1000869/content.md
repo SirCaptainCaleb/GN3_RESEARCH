@@ -6,6 +6,7 @@ Let v be pair-universal and P a maximum p=phi(v)-edge path ending at v. Then the
 
 ## Body
 
+
 In the notation of d8167d92002d, the last path edge g_p is itself an edge through the pair-universal vertex v. Its two vertices other than v both lie in V(P)\{v}. Hence its star pair is counted by B_2, so
   B_2>=1.
 

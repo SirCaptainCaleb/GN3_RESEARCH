@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "9298c9dd3ea9ec1df9be246e74ba3e80a690ded303cf5d378002a794a37f52d7"
 created_at: "2026-09-28T21:52:43.84633+00:00"
 id: "1000560"
 last_elevation_revision: 8453
@@ -40,6 +41,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Global noninsertability reversal branch: any vertex noninsertable into a displayed path reverses a displayed edge, and a family of such vertices yields a corresponding labelwise reversal family."
 simplified_statement: "Every globally noninsertable vertex reverses a displayed path edge."
+statement_sha256: "76942b649faae56285078dd0844399b45baaecd262e287f440dacb5ddf263bb4"
 substantive_worker_ids:
   - 586
   - 630

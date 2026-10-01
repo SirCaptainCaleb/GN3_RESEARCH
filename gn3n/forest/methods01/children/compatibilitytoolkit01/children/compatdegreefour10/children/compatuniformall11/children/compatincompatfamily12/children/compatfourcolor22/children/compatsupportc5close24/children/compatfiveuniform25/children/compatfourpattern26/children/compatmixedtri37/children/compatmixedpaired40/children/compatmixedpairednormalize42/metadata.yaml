@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "786d003f51cb6776b30d997d793982a3b5fce3c4369bd90b0dab9ad709723853"
 created_at: "2026-09-27T13:38:32.125812+00:00"
 id: "compatmixedpairednormalize42"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Paired transfer normalizes to a Hamiltonicity blockade plus one local insertion gadget"
+statement_sha256: "2c565dd8787bcf8332f0be2e69de127c9092a1b8c8f0c1c02dad136cb5174517"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Let Q be a maximum p-edge path ending at x and R a maximum (p+1)-edge path endin
 
 ## Body
 
+
 Let
   Q=(e_1,...,e_p),   R=(f_1,...,f_{p+1})
 be maximum endpoint paths ending physically at x,y, with

@@ -6,6 +6,7 @@ After Astra's recovered direct proof, the earliest natural shortcut is immediate
 
 ## Body
 
+
 RETROSPECTIVE SHORTCUT MAP AFTER RECOVERY OF ASTRA'S DIRECT PROOF.
 
 The recovered theorem a57011120001 shows that the 11/12 leading coefficient requires only:

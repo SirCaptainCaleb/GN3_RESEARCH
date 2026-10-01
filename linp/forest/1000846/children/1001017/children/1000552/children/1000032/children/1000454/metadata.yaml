@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "97d98d8af0bf150ddb53c5cfca4f305a6b752e958b7a238c47daa84f70429069"
 created_at: "2026-09-24T05:31:43.954773+00:00"
 id: "1000454"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Quantitative separation between an earlier single blocker and a later clean entrance."
+statement_sha256: "e7e9fede62a4bb9eeed87a98fc8e594774ba51901b504e4bc5f7fdc5faadf653"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7e5818993bc37a7ee9f1866a42fc39cd7c33eca496c29309677deed908f01162"
 created_at: "2026-09-29T18:39:43.822734+00:00"
 id: "local_four_double_interior_reversal15"
 last_elevation_revision: 8656
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A locally minimal anchored four-window has two distinct interior reversal labels."
+statement_sha256: "b233bfbf6ab218fe9bbe326c6c0fda5fdd023dfb7e9cb0ea40d5f42f0176c335"
 substantive_worker_ids:
   - 555
 support_reason: "current_certified_premises"

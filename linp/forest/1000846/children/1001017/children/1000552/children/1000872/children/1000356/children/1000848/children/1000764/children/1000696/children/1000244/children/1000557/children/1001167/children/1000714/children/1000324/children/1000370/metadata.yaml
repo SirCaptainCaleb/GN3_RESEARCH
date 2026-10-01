@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "2c5a86ed2395deb5d8cd8e19b3e321a909a67011b6943c3f3ed14ae337659619"
 created_at: "2026-09-24T05:43:25.952527+00:00"
 id: "1000370"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The surviving one-low odd-boundary state forces D terminal-only."
+statement_sha256: "073bd19a7a5a68b538dc3722803dd8c7b47818bcb0d88e31285f15b74dacf6d7"
 substantive_worker_ids:
   - 185
   - 209

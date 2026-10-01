@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "fb4c4d6c1916a3ffcee0ccdbd44bfb3dfdf6a68274b4907907d558ed1ad4d9e9"
 created_at: "2026-09-24T01:08:52.877082+00:00"
 id: "1000767"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The S-entrance pattern in the pure p=4 obstruction is impossible."
+statement_sha256: "34abfa12729dc9e7ed091e0dc9446fe7a6e0e0dc6edeeffb4ba1346a14573369"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

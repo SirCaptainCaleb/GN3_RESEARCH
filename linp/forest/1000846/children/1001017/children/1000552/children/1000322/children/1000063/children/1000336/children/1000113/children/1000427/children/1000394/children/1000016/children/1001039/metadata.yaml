@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "ed35bf7069598bb9bac8aeb1623477875fa1fabdd3b7229933352370f989f92c"
 created_at: "2026-09-22T04:37:59.785458+00:00"
 id: "1001039"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A deficiency-two safe sink has degree δ and one of three saturated clean-edge/single-blocker configurations."
+statement_sha256: "459451d672faee5d886477a6a1bf2b3cf75c0430d6498b0e50f78416e8cded14"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

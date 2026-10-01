@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "08034207188fe52facb9e94a5907bc9dfc31c9c1187922a88791dffa8502a8d5"
 created_at: "2026-09-23T23:16:16.28816+00:00"
 id: "1000697"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Potential four counterexamples saturate the five-slot central witness window."
+statement_sha256: "916a803f91a866966e4e966cfcfbee7ff12e188eedfc6068a1403874a3c6f37e"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

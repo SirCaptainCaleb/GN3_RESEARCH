@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b992f16aa1b7d84a0849efc76851e2dded4316fad5958095e95cb6816d533ef5"
 created_at: "2026-09-21T19:13:18.872189+00:00"
 id: "1000514"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Conjecturally, for every linear 3-graph the real nullity of its incidence matrix is at most the number of special edges."
+statement_sha256: "5d642d855da846a27bd9ca3ce090b24984965684309ed936a85412d7c605843a"
 substantive_worker_ids:
   - 262
 support_reason: "logical premise set changed"

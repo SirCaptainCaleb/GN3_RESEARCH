@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a finite linear r-graph, r>=3. Fix a nonisolated vertex v of rank p and a maximum p-edge path
   P=(g_1,...,g_p)
 with last vertex v and last edge h=g_p. For an incident edge e!=h put
@@ -32,7 +33,9 @@ More exactly, whenever B_r(p,q)>0 the central-window envelope is no larger than 
   q <= [8(r-1)p+2(6r-5)]/(10r-9).
 For r=3, B_3(p,q)=max{0,4q-2p-3}, recovering the existing 3-uniform single-contact window.
 
+
 ## Body
+
 
 Write x for the unique entrance of e. Since s<p, the edge e is not the last edge h. Because e and h both contain v and H is linear, no vertex of e\{v} lies in h. The hypothesis mu_v(e)=1 therefore says that c is the only vertex of e\{v} lying anywhere on P.
 

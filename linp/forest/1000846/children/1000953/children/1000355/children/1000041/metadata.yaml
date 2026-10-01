@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c389230e22fdafe11db88d4707a42aaa9dcc2a280b2a926129e3029eaa0789f9"
 created_at: "2026-09-23T03:36:14.341694+00:00"
 id: "1000041"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Static transversals and fixed-multiplicity shared-color lifts cannot beat one third."
+statement_sha256: "9325b6d6763a19b8fcfb5e321855c55f81d71f388afd76cb4dcd599f6a23f951"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ff819b40c532e4178c6e8130b6e4f4d94443070459ac7bdd503b5602df67aadf"
 created_at: "2026-09-24T01:42:09.071452+00:00"
 id: "1000268"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Spanning top-rank induction works after one vertex deletion in two residue classes."
+statement_sha256: "ba2e55f1a7edf60f3d7b290f25a95f07429d049672ae18dea85e8be1dfa88895"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

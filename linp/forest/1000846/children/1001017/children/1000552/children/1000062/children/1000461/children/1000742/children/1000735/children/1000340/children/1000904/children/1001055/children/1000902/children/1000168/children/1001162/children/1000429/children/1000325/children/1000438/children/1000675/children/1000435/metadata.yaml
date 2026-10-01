@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4af820966870d0598cab80148a3a65ffae7b6b4ead824a718b1108f79abd0beb"
 created_at: "2026-09-25T20:15:03.797034+00:00"
 id: "1000435"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lens-free one-eighth local payment at low-defect misaligned centers."
+statement_sha256: "403effde304df4d98030b897c8622449030f3d4c7622a71ee0aa4482a8765b51"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

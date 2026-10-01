@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "42e4432736e86c43128c323525a2c742ac45d2bdeac0e3bc35d08fdef62281a9"
 created_at: "2026-09-27T21:30:34.781558+00:00"
 id: "1000178"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Separated three-label gap transports are locally consistent with boundary antisymmetry"
+statement_sha256: "d70a2be5842e6381f51ac4e0ada3be97b9e4383f77fbdc3fe9d4beb34a9160be"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

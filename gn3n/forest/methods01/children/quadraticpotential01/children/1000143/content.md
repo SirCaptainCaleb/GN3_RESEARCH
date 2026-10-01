@@ -2,11 +2,13 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample and let H-d=P|Q be a deletion cover, with P=(p_0,...,p_{N-1}). Consider the singleton lift P|Q|{d}. Suppose that for some 0<=j<i<=N-1 there is a vertex-simple tight cycle whose cyclic order is
 d,p_j,p_{j+1},...,p_i,d
 up to cyclic rotation.
 
 Then the singleton lift has a legal pairwise repartition with strictly smaller quadratic potential.
+
 
 ## Body
 

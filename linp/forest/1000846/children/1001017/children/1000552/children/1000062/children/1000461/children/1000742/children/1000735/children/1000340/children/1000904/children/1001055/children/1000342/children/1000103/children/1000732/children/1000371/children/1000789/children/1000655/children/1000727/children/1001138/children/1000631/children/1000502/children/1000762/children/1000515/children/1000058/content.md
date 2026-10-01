@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let P=(g_1,...,g_p) be a maximum endpoint path with last vertex v. Let F be a family of distinct ascending nonspecial edges
   e_i={x_i,v,u_i}
 such that:
@@ -23,7 +24,9 @@ for every i.
 
 In particular, the host edges g_{j_i} supporting these flat states occupy pairwise nonconsecutive indices.
 
+
 ## Body
+
 
 First note that two consecutive host edges cannot both have the stated flat orientation. Suppose g_j and g_{j+1} both have edge rank p and are nonspecial ascending with unique entrances
   z_j=g_j intersect g_{j+1},

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "4e1ca6ec33f3ad08097d07cbf81f96097889051a7b93de70b6f5edc3877f82ca"
 created_at: "2026-09-22T19:16:05.933756+00:00"
 id: "1001027"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "For a full two-bit Boolean lift A of B, the longest-path length satisfies L(A)≥4L(B)-1, improves to 4L(B)+3 when L(B) is even, and the lift preserves the normalized density/path-length ratio asymptotically."
+statement_sha256: "7c253318b554b50c180ae0df20f0364d0f868e99e99bdf6ab335f56da1b4b42d"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

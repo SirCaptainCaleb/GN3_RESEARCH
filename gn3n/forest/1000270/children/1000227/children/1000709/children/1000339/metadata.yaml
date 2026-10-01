@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 8
+body_sha256: "79e0977e35ce1f9a642fee1a14999bb7d7698684bd938cc9aac622142319fde9"
 created_at: "2026-09-21T00:44:04.144556+00:00"
 id: "1000339"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Small-deletion-side omission families: sides of order three through five yield at least four synchronized deletion labels, common endpoint hooks, Hamiltonian end fans, unavoidable order disagreement, and clean support exchanges, ruling out local frozen behavior in the small-side regime."
 simplified_statement: "Small deletion sides generate synchronized omission families"
+statement_sha256: "b3ea655a5e59ac7b20ec22f1023d949efc9befb68e063aad889c360c54aef532"
 substantive_worker_ids:
   - 575
 support_reason: "current_certified_premises"

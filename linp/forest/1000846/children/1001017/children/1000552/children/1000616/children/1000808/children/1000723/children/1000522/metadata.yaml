@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1cbf641805b70ed0e76d61b0adb617cbb814c56252150e7bfe657d376dd8daa6"
 created_at: "2026-09-25T20:09:22.730158+00:00"
 id: "1000522"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "There are arbitrarily large examples with four ascending nonspecial edges of ranks (R+1,R+1,R+7,R+7) satisfying the stated clean terminal-incidence hypotheses yet violating four-edge spacing."
+statement_sha256: "aa395aef1f835c2905d5b827c2c23f781e55a62e8cc56ae8263b4430b2c75abe"
 substantive_worker_ids:
   - 210
 support_reason: "current_certified_premises"

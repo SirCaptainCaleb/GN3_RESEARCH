@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "321501368ccdba6ec5e04fe129360f762eb17e5fdeb6c4dc9c0bd9aaa8ccfbc6"
 created_at: "2026-09-24T20:52:43.824503+00:00"
 id: "1000502"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every terminal-retained switcher yields a source-terminal lens or a two-terminal overlap."
+statement_sha256: "a34a25e351c3b8437c8f17eb73357c34bcbb358300338050a4aa55f935c0df04"
 substantive_worker_ids:
   - 250
   - 254

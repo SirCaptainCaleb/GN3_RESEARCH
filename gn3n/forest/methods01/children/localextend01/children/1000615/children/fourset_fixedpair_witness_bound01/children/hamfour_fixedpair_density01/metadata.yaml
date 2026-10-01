@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "445bb5e5e478178af48894638dec0a67d12cfb69c4b400b6d76d2c8747ed48f6"
 created_at: "2026-09-30T05:05:14.153173+00:00"
 id: "hamfour_fixedpair_density01"
 last_elevation_revision: 9789
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Fixed-pair orientation gives a three-quarter density theorem for Hamiltonian four-sets"
+statement_sha256: "f092bd74ad791503c97fb7ee3c812ec1408be5fe9f1ee4586ffba88be62e4c03"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

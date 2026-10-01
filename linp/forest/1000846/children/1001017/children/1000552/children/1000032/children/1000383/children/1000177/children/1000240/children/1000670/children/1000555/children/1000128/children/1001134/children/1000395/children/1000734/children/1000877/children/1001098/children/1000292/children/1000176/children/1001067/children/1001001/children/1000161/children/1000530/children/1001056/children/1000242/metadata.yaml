@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "05989a8be518d4a6cacaee7dec28e900fd1e140f4bd26912bf40a8f032a083a6"
 created_at: "2026-09-25T20:48:32.996732+00:00"
 id: "1000242"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Reciprocal V-type terminal-single edges close a canonical terminal cycle."
+statement_sha256: "ff03b456a2f9a23293d15d05c91b3409edef080bbcac145e29ca561e12c60b02"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

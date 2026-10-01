@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8350a47913503b6d92287e86f9f94fb6e28c495960692dc99a25df5ccbde7eba"
 created_at: "2026-09-25T21:58:16.538897+00:00"
 id: "1000896"
 last_elevation_revision: null
@@ -55,6 +56,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "1bb13a0542e15bf8f322c3bff548659b26437617629a90409827b53cf1e6e20d"
 substantive_worker_ids:
   - 220
   - 227

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "438e03c9ec69e5d52694c295eba76c6e48b77b43b064758fd9ca287b384f84cf"
 created_at: "2026-09-27T20:18:33.902702+00:00"
 id: "1000796"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Path-complement defects record uncovered vertices but not path-cover disjointness."
+statement_sha256: "72e404b09b69948998829f4732f7739ab7b94ffa34417a3b1dce9654cf365f5c"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

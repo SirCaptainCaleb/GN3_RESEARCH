@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1addabf5c2aeb178f82b4ff26f441095a6a9ea6a31be68738cbd0cbe0b32ee5b"
 created_at: "2026-09-24T05:33:04.762638+00:00"
 id: "1001167"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At p=2q-3 two rank-q edges force a double in every four-edge consecutive-rank family."
+statement_sha256: "6494710f045d19fb8e8a465e5c3da8e2c867e1396326a8d40b89ca275de0ab72"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

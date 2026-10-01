@@ -6,6 +6,7 @@ Let e_1 have rank q and e_2,e_4 rank q+1, all potential-charged ascending nonspe
 
 ## Body
 
+
 Let e_1={x_1,v,u_1} be a potential-charged ascending nonspecial edge of rank q, and let e_2={x_2,v,u_2}, e_4={x_4,v,u_4} be potential-charged ascending nonspecial edges of rank q+1, all sharing the charged terminal v.
 
 Choose:

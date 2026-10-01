@@ -6,6 +6,7 @@ In the arbitrary-r fixed-entrance transfer, suppose |J_q(v)| is within t of the 
 
 ## Body
 
+
 Retain the arbitrary-r fixed-entrance setup of dcf886f98a51. Put
   M=(r-1)(q-1)
 for the number of contact vertices in W, and let

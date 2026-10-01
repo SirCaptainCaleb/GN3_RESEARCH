@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "421afc81f542d5809df690f312a0f9587f6ac9b474237c080e5a823c67f3052d"
 created_at: "2026-09-24T13:43:13.24521+00:00"
 id: "1000605"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Near equality has a periodic four-cell contact normal form."
+statement_sha256: "711937df157cb3db2a5b1c41c91ec84b9ff694d4f10c9ba7fbdee9eeee913bd0"
 substantive_worker_ids:
   - 258
   - 209

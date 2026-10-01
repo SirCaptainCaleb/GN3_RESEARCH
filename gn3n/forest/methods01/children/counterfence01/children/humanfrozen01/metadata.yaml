@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "e4ffe7a5ddbaca5a89a57fbf5ecb7dc909e98223b6623ec578d5ebd9deb7b352"
 created_at: "2026-09-23T20:45:22.099667+00:00"
 id: "humanfrozen01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For the explicit seven-vertex edge order, deleting vertex 6 leaves a Hamiltonian six-set, while the full seven-set and every six-set obtained by replacing one old vertex with 6 are non-Hamiltonian."
+statement_sha256: "cee6f8520f73bf176493509ed60f8706ab5a0c023045836b1983fda410ef067e"
 substantive_worker_ids:
   - 641
   - 625

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "d5c8fed3b5b676ccd57b3f942b595f18a8bac2e0ddf72e15d00c01cf91e4b8c6"
 created_at: "2026-09-28T02:10:12.916384+00:00"
 id: "1000306"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Endpoint restoration orients the endpoint-adjacent block of a one-edge-for-two exchange."
+statement_sha256: "4abbe27afe9c06a7bd40c5c86fba2fdbbf877af165affed7fc7b22782bea996a"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

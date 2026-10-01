@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3b6b7a9b4963dcdd348ece2fe279978405ce4051b6e4c9f71d15b6ffe95f27f3"
 created_at: "2026-09-24T04:54:46.337143+00:00"
 id: "1000508"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Multiple-visible-entrance branch: top-boundary configurations have at least two visible high entrances whose rails cross the competing charged edges."
 simplified_statement: "Top-boundary q,(q+1)^3 obstructions have at least two visible high entrances."
+statement_sha256: "632ef51782ab023d040796b40be64e50d271b3fc9f8d3cccf8f5fdfb4d935d9f"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bf7992411b89bd68df2066399f802e43bfbf9c1ccb99e3ce72e0d040bb3f3ee2"
 created_at: "2026-09-24T00:28:29.952667+00:00"
 id: "1000974"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Failed high-low terminal pair forces both other high vertices onto the low mate."
+statement_sha256: "e1864735c584e2197a8a33392dd7118121ac116a2bb9d9471702f2c9d79a503c"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

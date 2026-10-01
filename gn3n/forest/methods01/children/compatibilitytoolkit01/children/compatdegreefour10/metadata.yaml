@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6ffc77e74c537ccefde5d783d38d72ed8915445b90b88e1f64935743c94723bc"
 created_at: "2026-09-27T04:19:34.702469+00:00"
 id: "compatdegreefour10"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Low-degree deletion-compatibility program: absent synchronized endpoint structure, compatibility degree is bounded; this yields large uniform-incompatibility families whose support patterns, coloring constraints, cubes, toggle moves, and mixed corridors are progressively normalized toward disagreement or transport."
 simplified_statement: "Either synchronized endpoint structure occurs or compatibility degree is at most four"
+statement_sha256: "6efa48a2b4100803f76ffbf75413fe160c2b77b5109ea5e84c14ff497f6182ea"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

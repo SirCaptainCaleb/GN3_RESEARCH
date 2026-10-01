@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "290c8d3d090bd788a9c335789ffdb52c0ea61974d8faf2bd9e9d98b06912fcd6"
 created_at: "2026-10-01T00:15:23.831966+00:00"
 id: "1000844"
 last_elevation_revision: 10160
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every eight-vertex boundary tournament has at least 28 Hamiltonian four-sets and 56 pairs meeting in three vertices."
+statement_sha256: "b94ef8ea4a517268eaf5fab8e4241ef0c1875d6fb527a5455be596961d9a9df6"
 substantive_worker_ids:
   - 737
   - 745

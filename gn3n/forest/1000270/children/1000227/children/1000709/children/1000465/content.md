@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the order-thirteen mu=6 shell, let Gamma be the graph on deficient seven-supports, adjacent at Johnson distance at most three. Every vertex R with Hamiltonian complement S has at least two Gamma-neighbors, and more precisely the acquired sets Y(R')=R' intersect S cover S, so sum_{R' in N(R)} d_J(R,R')>=6. If deg_Gamma(R)=2, its two neighbors are both at distance three, their acquired triples partition S, and every deletion label in either triple has a fixed-complement exact-cover family, yielding either relative-order disagreement or the certified common-gap geometry. Consequently, any 2-regular component admits a cyclic sliding-triple representation S_i=T_{i-1} disjoint-union T_i in which every three consecutive T-triples are pairwise disjoint, the move R_i to R_{i+1} drops T_{i+1} and gains T_{i-1}, and both T_{i-2} and T_{i+1} are fixed-support Hamiltonian-deletion label triples for R_i.
 
+
 ## Body
+
 
 # Radius-three support expansion has capacity six, and degree-two equality is a sliding-triple system
 

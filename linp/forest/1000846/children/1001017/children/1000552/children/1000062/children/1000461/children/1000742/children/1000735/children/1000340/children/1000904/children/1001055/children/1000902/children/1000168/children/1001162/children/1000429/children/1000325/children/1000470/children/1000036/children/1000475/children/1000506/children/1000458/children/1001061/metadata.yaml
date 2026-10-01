@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "0434e0ea2e7d472b808ed58b4498e046dc62cd8aa1ab328bea517b9c8500c965"
 created_at: "2026-09-24T20:01:15.661335+00:00"
 id: "1001061"
 last_elevation_revision: null
@@ -54,6 +55,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every low-defect misaligned center pays one-eighth into terminal retention or monotone output progress."
+statement_sha256: "1bcbc15688d7fe07f0f89973ab910b63970e9d20f1db61fc1377924311f5a295"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

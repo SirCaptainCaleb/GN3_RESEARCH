@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample. Suppose the current deletion-cover or trapped-three-cover machinery produces one of the certified standard disturbance witnesses: support crossing, order disagreement, a reversed inherited edge or reversing tight triple, a bounded Hamiltonian four- or five-support with non-Hamiltonian two-coverable complement, a leave-and-return excursion, crossing multiplicity, or one of the bounded local defect-compression configurations. Prove that at least one of the following follows:
 
 (1) H has a spanning two-cover, equivalently a spanning ordering of defect span at most two;
@@ -12,7 +13,9 @@ Let H be a minimum counterexample. Suppose the current deletion-cover or trapped
 
 This is an entry theorem, not a termination theorem: once outcome (3) is reached, the binary-balance machinery gives finite descent to bounded closure inputs.
 
+
 ## Body
+
 
 The theorem-scale gap has narrowed after certification of the deficit-one corridor closure. Earlier formulations of endpoint transport had to prove both (a) entry into a controlled transport regime and (b) well-founded termination inside that regime. The second obligation is now available whenever one reaches an A-order-preserving comparison path of deficit one against a globally longest path.
 

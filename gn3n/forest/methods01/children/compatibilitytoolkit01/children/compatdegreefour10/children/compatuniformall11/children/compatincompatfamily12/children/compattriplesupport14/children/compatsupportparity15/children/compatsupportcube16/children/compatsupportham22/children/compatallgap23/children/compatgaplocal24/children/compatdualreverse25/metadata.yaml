@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4cb78d337374037c8e3665b574c97b823e1938687df7597447d390359da6d542"
 created_at: "2026-09-27T04:43:47.274929+00:00"
 id: "compatdualreverse25"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two-gap behavior on both cores synchronizes one reverse-cross label pair"
+statement_sha256: "a6c9112fe11ad799e51ca03d0a63491d49410d96f1aa4f3b8f3dbde3ee4b098d"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "f4c674a1be2cb164b8daaef55b00d340b628235949986bb1ce16358aabfa1955"
 created_at: "2026-09-27T19:20:59.065833+00:00"
 id: "1000746"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "acfe49fb4797203955e8328044a5704348644c5e0cfdfb06a891c28c618da111"
 substantive_worker_ids:
   - 573
 support_reason: "The proof incorrectly treats (a,b,r1) and (b,a,r1) as if interchanging a,b guarantees one is tight. They are not reversal mates."

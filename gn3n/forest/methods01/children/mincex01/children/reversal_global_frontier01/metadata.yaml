@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "60ee7a6e0ce7a6988ae906f10cf563ca1f35ba1ffaeb6fc7e4ad25b2dd2bd54e"
 created_at: "2026-09-28T21:35:30.426916+00:00"
 id: "reversal_global_frontier01"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Prescribed-pair Hamiltonian four-window frontier in minimum counterexamples: every vertex pair lies in a Hamiltonian four-set with two-path complement, and the descendants exploit this universal pair coverage to generate reversal, crossing, and local obstruction structure."
 simplified_statement: "Every prescribed pair in a minimum counterexample lies in a Hamiltonian four-set with two-path complement"
+statement_sha256: "8e2a517062e645b90c53ec8fd5abb263511853ae1ecda63b96d0f26a830ef94d"
 substantive_worker_ids:
   - 703
   - 626

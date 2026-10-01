@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "b5d36f499817fa78031b50a9a3f456fc12a5e46d226a27d359b4deb1dac13f78"
 created_at: "2026-09-28T03:16:23.26705+00:00"
 id: "1000731"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Nonescaping anchored four-window amplification: above order fourteen a four-window must descend, disagree, or migrate only a few labels; failure to escape amplifies through an adjacent five-union and two-label endpoint-square structure until the residual coherent square is exposed."
 simplified_statement: "Above order fourteen every anchored four-window descends, disagrees, or migrates by at most two labels."
+statement_sha256: "6ca2c92c005573543dafbc4e9524474e2feafc62a55068dcd4a114555d2327b1"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

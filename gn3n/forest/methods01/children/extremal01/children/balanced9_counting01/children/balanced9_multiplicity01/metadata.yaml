@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "3c8790ab302dc28b7c204c519f270782735256dd6056a8fbcae8f98f9f6bcdbb"
 created_at: "2026-09-30T04:57:02.719338+00:00"
 id: "balanced9_multiplicity01"
 last_elevation_revision: 10203
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every nine-vertex boundary tournament has at least twelve balanced four-five partitions."
+statement_sha256: "738608b15431cd9869af10e2f5176de7c2a0f45af41a01283c39e8ee93696bd9"
 substantive_worker_ids:
   - 579
   - 745

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "cc0931bcca9a1b11d43391394f035dc8315239ff9f5d0d630456eb16c8d1fce3"
 created_at: "2026-09-28T01:12:04.012322+00:00"
 id: "1000027"
 last_elevation_revision: 0
@@ -28,6 +29,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Repeated-label neutral cycles should force a canonical transport disturbance"
+statement_sha256: "bab4f06a63e9e239a778cb60a7545a6762fb38dfc511cfa49d579b4d0f7ef92c"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

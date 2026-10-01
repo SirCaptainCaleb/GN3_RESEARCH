@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample of order thirteen with mu=6, and let V(H)=R disjoint-union S be a minimum D=1 state with |R|=7, |S|=6, d(R)=1, d(S)=0, trapped for alternating single-vertex transfers. If G={r in R:H[R-{r}] is Hamiltonian}, then good R-deletions have the canonical cover (R-{r})|S, while every bad R-deletion and every S-deletion has only fully mixed exact 6|6 covers. Every S-deletion cover has, up to swapping components, support type (5R+1S)|(2R+4S) or (4R+2S)|(3R+3S); restoring the deleted S-vertex to the R-heavier component gives a new D=1 support at Johnson distance respectively 2 or 3 from R, and the six S-labels yield at least two distinct coupled escapes. Moreover, any crosswise exact-two-crossing endpoint cover in this shell yields a D=1 support at Johnson distance at most three; with the smaller endpoint block of size s in {1,2}, its two restored states and every canonical good-label transfer state form alternating radius-three/single-transfer four-cycles, and the far restored state is adjacent in Gamma to the entire good-label transfer clique.
 
+
 ## Body
+
 
 # Trapped order-thirteen states force radius-three coupled escapes and alternating reconfiguration squares
 

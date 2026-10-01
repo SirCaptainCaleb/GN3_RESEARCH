@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "6b4e89b5d43490af6ba40e34ebb5fcb577000f05f7fff747d2c99e22dac66c54"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000871"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A Hamiltonian five-set with m exterior labels gives a Hamiltonian six-set or a common four-core star with at least 1+ceil(3m/5) Hamiltonian leaves."
+statement_sha256: "2810be0dc85b1c7034ce9a77c3358f820a0834dbf5ceab4afda65bf9b6e7158a"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

@@ -6,6 +6,7 @@ Let H be a hypothetical order-eleven minimum counterexample with a longest six-p
 
 ## Body
 
+
 Write
 M=(m_1,m_2,m_3,m_4)
 and suppose the neutral codim5 branch gives distinct exterior endpoints a,ell,c,r with

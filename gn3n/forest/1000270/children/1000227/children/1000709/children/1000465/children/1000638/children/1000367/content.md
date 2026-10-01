@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the order-thirteen mu=6 shell, let G be the Hamiltonian-support odd graph and J the graph on its nonisolated Hamiltonian six-sets joining supports at Johnson distance at most three. For every edge P--Q of G, with p=deg_G(P), q=deg_G(Q), a=deg_J(P), b=deg_J(Q), at least 14-p-q distinct G-edges join the proper J-neighborhoods of P and Q. Hence 14-p-q <= b+binom(a,2), 14-p-q <= a+binom(b,2), p<=b+1, and q<=a+1. If a=2, every legal single-transfer edge from P yields synchronized two-end support crossing for a three-label fixed-complement deletion family; in the subcase p,q<=2, b>=9 and every J-neighbor of Q has J-degree at least three. If no three-label synchronized-crossing producer exists anywhere in the shell, every G-vertex has degree at most two and delta(J)>=5, equivalently delta(Gamma)>=5 for the complementary deficient-support graph.
 
+
 ## Body
+
 
 # Odd-edge bridge inequalities force synchronized crossing or global radius-three expansion
 

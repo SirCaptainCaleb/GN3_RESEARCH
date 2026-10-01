@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a0f69eb49a705440266706b9bd41b4431bb59a053877c2aedb987bfd5d51ae47"
 created_at: "2026-09-29T04:51:23.551753+00:00"
 id: "square_topcover_normal01"
 last_elevation_revision: 8298
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A two-label path-cover square has a coherent endpoint cover, a permanently internal label, or top-state cover disagreement."
+statement_sha256: "f0101743da358a174ae21bb2e82871a1246599dd9c07c6012a18c464c8256ba0"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

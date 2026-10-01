@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "6ac58368c998d6e4e4e3d64e21c17b7419bfddffa3734b75c3d41077b204efe9"
 created_at: "2026-09-28T02:30:12.355075+00:00"
 id: "1000358"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The all-equal barrier geometry has a rigid nine-label endpoint shell"
+statement_sha256: "662650b58ff627087c13224b90acc3da411d649fefdc1c54f6d9b4f66527de37"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

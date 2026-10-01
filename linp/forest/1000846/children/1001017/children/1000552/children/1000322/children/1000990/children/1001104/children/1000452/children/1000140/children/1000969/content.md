@@ -6,6 +6,7 @@ Let v be pair-universal and P a maximum p=phi(v)-edge path ending at v. If B_j c
 
 ## Body
 
+
 Let H be a finite linear 3-graph and let v be pair-universal: every pair {v,x}, x!=v, lies in a unique hyperedge. Equivalently the d_H(v)=(n-1)/2 edges through v induce a perfect matching on V(H)\{v}.
 
 Choose a maximum p-edge path

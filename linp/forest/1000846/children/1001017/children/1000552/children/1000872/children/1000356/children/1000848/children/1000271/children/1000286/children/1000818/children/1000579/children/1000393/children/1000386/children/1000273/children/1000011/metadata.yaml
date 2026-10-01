@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "f70851102a0bcb6e6eeb0f364bc8dd4b8d70afbcbbe197435b52f3e777635c44"
 created_at: "2026-09-24T11:32:37.658761+00:00"
 id: "1000011"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The minimal one-low high-rail residue is a balanced terminal-terminal lens."
+statement_sha256: "2853400866eb73244910b0d3a440b1c8723bbcf29d6c2823a95828f638dca0f3"
 substantive_worker_ids:
   - 246
 support_reason: "current_certified_premises"

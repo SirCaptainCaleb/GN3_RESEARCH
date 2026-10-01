@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "ac074056dd80043219836349adaa01fb8a12f7ae3de09db872c6cba2876c9b54"
 created_at: "2026-09-22T04:17:19.858316+00:00"
 id: "1000132"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The double blockers of a saturated boundary fan form a maximum-degree-two index multigraph with one path component when S=2 and two path components when S=3, all other components being cycles."
+statement_sha256: "5e543f237787b575df3c6afefb8edc73ec9cf6a11b24e629eca6f37a8cc1f6ab"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

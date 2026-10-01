@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "3ecbd6a850d99d9a3dcb09187257c8614de332f8c21b98090a4951ff82e7f7af"
 created_at: "2026-09-24T01:35:27.826683+00:00"
 id: "1000120"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lexicographically maximal fixed-edge paths push rotations onto maximum-potential private vertices."
+statement_sha256: "fca2838945a9e42abafb2f1ae40b221b4e9c27ecf427fea75e109cb1b940c09d"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

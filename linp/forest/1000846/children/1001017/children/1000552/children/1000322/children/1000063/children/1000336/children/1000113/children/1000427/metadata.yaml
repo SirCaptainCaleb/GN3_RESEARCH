@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "01778fbe1b494bf1d86de0df9715c6e7deac263de1a45de8ef082bf0629afb8a"
 created_at: "2026-09-22T04:29:09.759213+00:00"
 id: "1000427"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For an endpoint fan with C clean edges and S single blockers, 2C+S≥2(d_H(a)−s)≥2(δ−s)."
+statement_sha256: "faa81c742f999a23d91218a69773e36003735e65991e0f9a43af951d280495af"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "220e794f1d1e77a71841684775983dd368bc3184a403a0c97033ec6eebc44b0b"
 created_at: "2026-09-28T02:53:08.958895+00:00"
 id: "1000078"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Anchored four-window transport route: every deletion state is driven to a Hamiltonian four-window or bounded barrier, then repeated endpoint exchanges, five- and six-window amplification, and short label migration reduce nonescaping states to order disagreement, strict descent, or a coherent endpoint-square obstruction."
 simplified_statement: "Every deletion state reduces to a Hamiltonian four-window, the universal cyclic four-kernel, or a doubled cross barrier."
+statement_sha256: "2715617920927b9ede1cf8fcc379a4054392c99e83a60521b15c5c3fbb8132d6"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

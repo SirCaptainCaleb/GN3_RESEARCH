@@ -6,6 +6,7 @@ Let ell>=2 and let H be an n-vertex, m-edge linear 3-graph with no P_ell and m/n
 
 ## Body
 
+
 Because H is linear, every unordered pair of vertices lies in at most one hyperedge. Hence
   3m <= C(n,2),
 so

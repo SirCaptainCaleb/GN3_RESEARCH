@@ -22,4 +22,4 @@ Suppose b occurs in r_3 union r_4. We use the position-sensitive path-potential 
 
 If b is private to r_3, then
   phi(b)>=max{3,5-3+1}=3;
-this alone is compatible. But because b lies in the final-two-precursor tail and is not on r_4, the blocker contact with f_b is already completed at r_3. Then the suffix r_4,r_5 followed backwards through f_b?
+this alone is compatible. But because b lies in the final-two-precursor tail and is not on r_4, the blocker contact with f_b is already completed at r_3. Then the suffix r_4,r_5 followed backwards through f_b? 

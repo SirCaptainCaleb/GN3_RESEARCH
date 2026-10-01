@@ -6,6 +6,7 @@ In the setting of the two-terminal alternating blocker system of 765d552ff81d, f
 
 ## Body
 
+
 Fix W=V(P)\e in the setting of 765d552ff81d. For a terminal v, the B_v double blockers use 2B_v vertices of W in disjoint pairs. The S_v single blockers use S_v further vertices, disjoint from those pairs and from one another by linearity. If U_v vertices of W are unused by the v-star, then
 2L-2-2B_v=S_v+U_v.
 Summing over y,z and using p=(2L-2)-(B_y+B_z) yields

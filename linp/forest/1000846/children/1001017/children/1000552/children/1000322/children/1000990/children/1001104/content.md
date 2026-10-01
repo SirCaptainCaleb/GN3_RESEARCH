@@ -6,6 +6,7 @@ Every n-vertex linear triple system with |E(H)|=dn satisfies n>=6d+1. Equality n
 
 ## Body
 
+
 Let H be an n-vertex linear 3-uniform hypergraph with
   |E(H)|=dn.
 Then the average vertex degree is

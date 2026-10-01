@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "05b62c2a59b65017e5649c08bd750d182f5fd7fb744e4c1d877dd4060ec6a7c8"
 created_at: "2026-09-23T04:23:35.289842+00:00"
 id: "1000204"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Boundary states with loss at least two always admit further safe motion, while loss-one sinks have exactly two exceptional forms."
+statement_sha256: "98b1b93f7f78069a1765adfc2529a3c5abd19b7d337e4319dabe49e99a249fc5"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

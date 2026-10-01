@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "855503a3c4985515052613ffca0e3c123ec038453a690413e02bbe69ba04bb8e"
 created_at: "2026-09-24T02:18:25.778146+00:00"
 id: "1000152"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Zero-slack two-component critical cores always have a free-end cross connector."
+statement_sha256: "45632029a964d7b291b50c3e427ccd26a1b3ca700532cfb7d63f1798c4a98ac7"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

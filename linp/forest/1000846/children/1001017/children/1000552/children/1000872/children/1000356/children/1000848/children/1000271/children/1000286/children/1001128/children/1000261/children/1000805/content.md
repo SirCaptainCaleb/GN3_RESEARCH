@@ -6,6 +6,7 @@ Let two maximum endpoint paths contain a clean internal lens whose two sides hav
 
 ## Body
 
+
 Let Q and R be maximum endpoint paths, and suppose two common vertices a,b bound a clean internal lens:
 - the Q-side L_Q from a to b and the R-side L_R from a to b are internally vertex-disjoint from each other and from the complementary host rail as required for endpoint-preserving exchange;
 - both are internal to their respective endpoint paths;

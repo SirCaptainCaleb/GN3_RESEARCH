@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "89f70b56d208f4fad31335da43bfeeaa4c2039dc4d08bf2fdf3a92f23c13f90a"
 created_at: "2026-09-24T05:38:33.732981+00:00"
 id: "1000592"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At p=2q-3 the unique low edge cannot use the private middle witness."
+statement_sha256: "067c5d859a3d8a926e4f139a68a1eade4904442cf0c4e019f69b954d90b2f383"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "34a60c74502ae2a77f8847397bb1eda14aed203b4239f9f93814e520035dd236"
 created_at: "2026-09-25T20:15:28.435679+00:00"
 id: "1000116"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lens-free global one-eighth paid switching mass."
+statement_sha256: "fa485fa29a68a6cd253bf69a0e7612c61a897f2b9ca687098221a19fc4562432"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

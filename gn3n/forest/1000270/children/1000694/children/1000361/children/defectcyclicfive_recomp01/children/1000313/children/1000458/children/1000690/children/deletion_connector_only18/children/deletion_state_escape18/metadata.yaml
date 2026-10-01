@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "64d579c8d6361a4218b5e11ec01c794e53032e88d6468c3ed838f3ca28c8e809"
 created_at: "2026-09-29T05:34:23.009141+00:00"
 id: "deletion_state_escape18"
 last_elevation_revision: 8151
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Above order seventeen every deletion state enters strict quadratic descent or explicit order disagreement"
+statement_sha256: "10d2099b92b43e9816a947673ded865ada5d2c02979ee3fb13c89cfcf5995821"
 substantive_worker_ids:
   - 703
   - 555

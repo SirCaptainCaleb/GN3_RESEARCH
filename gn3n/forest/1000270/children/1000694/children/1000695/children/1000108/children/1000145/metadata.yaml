@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d22796677b9c23ce9ffbe4e069eaf36a4c4bc450d8627a09c8001a1158087cdf"
 created_at: "2026-09-27T20:35:34.287999+00:00"
 id: "1000145"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every singleton-swap cycle closes to a support-compatibility clique"
+statement_sha256: "d367dbd7f3ac3d74a51f50cab8d1ca0e870c9c6fab994c1607a4bf28e916a2ee"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

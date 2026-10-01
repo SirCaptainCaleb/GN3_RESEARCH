@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "865ebd429df77a3848568cbf7e8c70de0cc0a44ebcf36c46f10484114f390a02"
 created_at: "2026-09-24T21:03:45.989482+00:00"
 id: "1000945"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "One-sixteenth of near-extremal potential mass lies on distinct edges with strict rank-ascent certificates."
+statement_sha256: "2f34df75b0e4361ab5bac634f695995be8349aca6a22ee5897b1fdf399f3e039"
 substantive_worker_ids:
   - 250
 support_reason: "failed_or_blocked_premise"

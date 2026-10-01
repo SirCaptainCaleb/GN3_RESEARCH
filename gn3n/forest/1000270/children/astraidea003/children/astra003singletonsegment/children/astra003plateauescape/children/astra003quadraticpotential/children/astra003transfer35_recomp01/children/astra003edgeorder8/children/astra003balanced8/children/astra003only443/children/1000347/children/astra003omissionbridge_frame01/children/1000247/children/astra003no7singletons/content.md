@@ -6,6 +6,7 @@ Let K be a trapped order-eleven Astra-003 component containing a 4|4|3 state, an
 
 ## Body
 
+
 Assume for contradiction that |S|=7, and let T=V(H)-S, |T|=4. By 50a62b7e1ffb, every reachable omission state P|Q|(x) has x in S, each five-side contains exactly three vertices of S and two of T, and in each six-set P union {x} the two T-labels on P are exactly the two bad five-deletions while x and the three S-labels on P are exactly the four good deletions.
 
 Fix one reachable state

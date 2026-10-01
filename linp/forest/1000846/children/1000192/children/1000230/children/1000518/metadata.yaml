@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3bc292d2693127d83b420995c7cf7098f253ee32a37adb0754df4589f7a46173"
 created_at: "2026-09-23T21:09:35.147622+00:00"
 id: "1000518"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Deleting one point from the cyclic STS(13) produces a 12-vertex linear 3-graph in which every remaining edge has rank 5 and is special."
+statement_sha256: "16ca2ab0fd831fd2ec11a587d9e9c7597f31e10295da91ef196f375670f2cf4d"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

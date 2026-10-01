@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5ebc65edd453f7e0dd64ca58012060c3ddf6b16e8a47b1d25a4a6f0450a72ff6"
 created_at: "2026-09-28T00:21:47.951606+00:00"
 id: "1000597"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Endpoint incidences force incompatible pairs or triangle-free compatibility edges."
+statement_sha256: "92942fbc25e3a0f14fd04897b1c4fe0c6e4fdb7f6948d263fe3d226e5bd4b020"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

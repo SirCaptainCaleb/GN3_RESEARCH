@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2541c3bda2f754f7b6a0580666094f67a87f8ff2f0855d77f7612904fec95936"
 created_at: "2026-09-24T05:07:33.72458+00:00"
 id: "1000656"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A right-joint high entrance excludes the low terminal from the left half."
+statement_sha256: "adf2e8afee1f6f0a08ed6bfe47c9801dec74a556129de6b90c92393fc3ee2f91"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

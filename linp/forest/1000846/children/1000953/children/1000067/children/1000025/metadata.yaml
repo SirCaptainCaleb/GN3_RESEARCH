@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "616a55875807ea39a32f22458d5914c921f375d236bc7d7ed564a9dc77b82c02"
 created_at: "2026-09-23T03:10:16.86533+00:00"
 id: "1000025"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In a doubled STS, a spanning path using a old blocks induces a rainbow spanning forest on the new vertices with a+1 components; in the binary additive case |M|-|R|=a and a=0 is impossible."
+statement_sha256: "4c0389dac3b3d0d92053ee5d7acea3495f9e24723d921b1c3647f85d65a2ea09"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

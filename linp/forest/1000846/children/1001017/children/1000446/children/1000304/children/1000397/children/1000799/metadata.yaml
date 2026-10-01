@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "299172bd2dabfa18448f1359ca8a15cc002e0cb35a25f7cae8385b87311c4427"
 created_at: "2026-09-21T20:36:00.442992+00:00"
 id: "1000799"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Four-edge repeated-blocker branch: when four ascending edges share a terminal, repeated blockers impose splice obligations that replace the refuted bounded-degree conjecture."
 simplified_statement: null
+statement_sha256: "7849f095de9c1411f1e5c5a51d175be7616e9ad4dc579cf0275c5e67e2dab6bd"
 substantive_worker_ids:
   - 262
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "89b3b31dbb5e7e060e6b8107cf2b0bd06cf861a64678809b8ef3d7c5933884bc"
 created_at: "2026-09-21T01:20:33.733928+00:00"
 id: "1000217"
 last_elevation_revision: 0
@@ -37,6 +38,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Large minimum deletion side excludes complements of order at most six"
+statement_sha256: "b5a982eeafe511b319dd2f8daa34cb1c4e6599687afc45c5dadfc044da968f30"
 substantive_worker_ids:
   - 589
 support_reason: "current_certified_premises"

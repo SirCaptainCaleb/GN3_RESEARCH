@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d1299d0909116158fd8598b2966cd43b6b7a99c63e10e0e7c9355e8f66739b23"
 created_at: "2026-09-24T05:49:49.086269+00:00"
 id: "1000415"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The final odd-boundary residue manufactures a high-rank central edge."
+statement_sha256: "4f6fd9a1a0f4ab06e00fa0379b9fc12b256d70a1b549ad1a72f49f29b0c8a304"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

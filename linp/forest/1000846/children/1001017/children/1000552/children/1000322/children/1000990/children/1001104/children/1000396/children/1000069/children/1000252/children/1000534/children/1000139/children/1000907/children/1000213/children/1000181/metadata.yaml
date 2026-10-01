@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bcfdd3b32f8b69b5a7bc43a4f58d08bc47dc591babae45348d21e02493f6269a"
 created_at: "2026-09-24T04:28:55.512178+00:00"
 id: "1000181"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Failure of kappa-plus-four amplification forces many full-rank single blockers at one top vertex."
+statement_sha256: "f7f988643976b440ce921ac972025ec43bc864ecc936b803f6c3215fdad7815d"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

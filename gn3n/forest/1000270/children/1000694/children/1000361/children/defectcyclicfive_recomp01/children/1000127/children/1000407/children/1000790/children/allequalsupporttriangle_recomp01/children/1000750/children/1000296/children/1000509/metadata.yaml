@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "634bd9ea56aa911b7525a2282be54bc877b5adfdbfcb8db574307a0f954c05f2"
 created_at: "2026-09-28T03:13:23.492147+00:00"
 id: "1000509"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Equality-two-crossing permanent-internal covers have only three contracted block forms"
+statement_sha256: "366681af7d9de0aa83cf50f521b989d6bb2b32d27cce2f0c7a5017d991bb8ad8"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

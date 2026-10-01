@@ -6,6 +6,7 @@ If the low opposite terminal C has phi(C)=2q-2, then on its chosen maximum path 
 
 ## Body
 
+
 Retain the rising low-terminal branch d734b1420b2f. Thus
   R=(r_1,...,r_{2q-2})
 is the chosen maximum path ending at C,

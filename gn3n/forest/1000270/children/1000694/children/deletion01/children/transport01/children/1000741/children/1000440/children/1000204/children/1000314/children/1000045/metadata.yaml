@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "b0f222b28604d66f5f8f2985804f81be8511ab11e41a72f0d96554f72eabaf80"
 created_at: "2026-09-28T00:03:54.877078+00:00"
 id: "1000045"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An endpoint-labeled compatibility edge has a unique possible common neighbor."
+statement_sha256: "f49eca65118b1e6178cf6618db40e577cc6b634c5fa1c3cdf2def31f98b04ad1"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

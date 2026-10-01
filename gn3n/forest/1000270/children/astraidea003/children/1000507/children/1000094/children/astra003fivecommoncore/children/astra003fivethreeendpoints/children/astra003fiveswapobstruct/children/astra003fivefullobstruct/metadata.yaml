@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "47877b14abbc162624fa0107e1c17caca666674ece5857358f29287d02e47884"
 created_at: "2026-09-26T18:19:12.890351+00:00"
 id: "astra003fivefullobstruct"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Five-side synchronization yields a full-path insertion obstruction or order disagreement"
+statement_sha256: "357ee846258f159bb8563f3d360bb845fc4c7c121ae77d3f440ed5cf19e3084e"
 substantive_worker_ids:
   - 576
 support_reason: "current_certified_premises"

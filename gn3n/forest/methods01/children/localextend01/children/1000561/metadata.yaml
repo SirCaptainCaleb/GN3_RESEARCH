@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "efc995bf05772d9cfd22f21a1b1fbfbec92fcf39a6ec128a8e9b9b3c5b6766f5"
 created_at: "2026-09-29T18:43:48.198501+00:00"
 id: "1000561"
 last_elevation_revision: 8656
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A non-Hamiltonian six-set has adjacent good deletion pairs or a perfect-matching good graph"
+statement_sha256: "9de69dbb2880e0f0e2a5fdeaab5cc2336dc5c402e966437cd1910f906b6629b9"
 substantive_worker_ids:
   - 637
 support_reason: "current_certified_premises"

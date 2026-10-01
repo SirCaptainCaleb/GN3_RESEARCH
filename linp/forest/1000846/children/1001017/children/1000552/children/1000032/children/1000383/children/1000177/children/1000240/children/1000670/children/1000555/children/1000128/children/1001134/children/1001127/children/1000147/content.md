@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain f84b001e0a61. Thus there are indices a,b and a set I of size M, together with one fixed type X or U, such that for every i in I a label y_i lies on both maximum source paths R_a,R_b, where
   y_i=x_i in type X,
   y_i=u_i in type U,
@@ -23,7 +24,9 @@ Hence either at least M/2 labels are cycle-bearing with one of the two hosts, or
 
 In type U, every edge h_i arising from alternative (3) has edge rank at least p. Consequently the second outcome strengthens to: R_a and R_b share at least M/6 distinct hyperedges of edge rank at least p.
 
+
 ## Body
+
 
 Fix i in I. The vertex y_i is the last vertex of P_i and lies on R_a. By f84b001e0a61, P_i and R_a have at least two common vertices. Apply 41100a9882dd with P=P_i and A=R_a. Either P_i union R_a contains a linear cycle, or the last edge h_i of P_i is an edge of R_a.
 

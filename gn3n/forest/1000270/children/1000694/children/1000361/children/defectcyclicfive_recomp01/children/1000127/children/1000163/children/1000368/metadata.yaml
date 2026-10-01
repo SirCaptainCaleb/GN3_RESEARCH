@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "4fcb3cca2569cd9852e0be6b07805efd35c50edf8230e57483e725906601b960"
 created_at: "2026-09-29T05:51:25.22562+00:00"
 id: "1000368"
 last_elevation_revision: 8151
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every deletion two-cover in a tournament with path-cover number above two yields a central five-set, an outer five-set, or two opposite four-sets"
+statement_sha256: "5890385be5528fd26ffacbf0a728346049640fb736678b46220494c463f99151"
 substantive_worker_ids:
   - 683
 support_reason: "current_certified_premises"

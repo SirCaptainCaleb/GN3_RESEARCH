@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fa54768fafaf23da9ba901b108b81d3c2f05b1b6016694e9e5beea7f01100c58"
 created_at: "2026-09-23T00:01:49.809559+00:00"
 id: "1000618"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An induced Boolean Schur system on 2ℓ+1 vertices has a spanning P_ℓ exactly when its joints and residual four vertices satisfy the stated distinct-sum and endpoint-pairing conditions; necessarily XOR(J)=XOR(A)."
+statement_sha256: "0e8eebd07a25d733db6fdb9b002209dc3edd6163a9b727964b8909510551a1ea"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

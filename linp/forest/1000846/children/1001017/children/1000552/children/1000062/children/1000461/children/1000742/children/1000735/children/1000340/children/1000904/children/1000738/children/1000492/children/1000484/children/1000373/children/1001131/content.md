@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a finite linear r-graph with r>=3. Fix a vertex v of rank p and a maximum p-edge path P ending at v. Let e_1,...,e_k be distinct ascending nonspecial edges terminal at v, each of edge rank less than p and each having contact multiplicity one on P. Write
   q_i=phi(e_i)
 and relabel so that q_1<=...<=q_k.
@@ -31,7 +32,9 @@ plus the displayed entrance-rank sum.
 
 This simultaneously strengthens the two separate packet bounds 34f8dc7df3f6 and 5198e921de4f on their common terminal-single domain.
 
+
 ## Body
+
 
 Fix i. Since q_1<=...<=q_i, the first i edges all have edge rank at most q_i.
 

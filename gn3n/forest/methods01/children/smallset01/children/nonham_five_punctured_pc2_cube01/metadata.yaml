@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "54adae74390cfd8f4424ec3721c2dca737dcf85394ac1b2fcbfbdb06fb0e62a5"
 created_at: "2026-09-29T21:16:45.635002+00:00"
 id: "nonham_five_punctured_pc2_cube01"
 last_elevation_revision: 9251
@@ -29,6 +30,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A non-Hamiltonian five-set forces an almost-complete path-cover-two cube on its complement."
+statement_sha256: "403277630d05db0470e7ad078200e9e526c53c652442a0ebeef315be2469a064"
 substantive_worker_ids:
   - 579
 support_reason: "provisional_unaudited"

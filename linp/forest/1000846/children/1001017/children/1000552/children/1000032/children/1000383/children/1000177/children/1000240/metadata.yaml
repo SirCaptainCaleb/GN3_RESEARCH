@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "52f80872969f2bd41efeba0e562ef19079f4752c9e0ffa50b6f66b639d3f7aad"
 created_at: "2026-09-24T04:37:17.097545+00:00"
 id: "1000240"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Half-rank boundary program for the 11/12 route: turn a charged low-rank edge into a universal central-joint witness, then organize canonical source rails, crossings, and overlap certificates for consecutive-rank obstructions."
 simplified_statement: "At the half-rank boundary a charged low-rank edge has a universal central-joint witness."
+statement_sha256: "64a2b58af13be5f98deed9efeaf81f071699f307805e786ba59c89a2f77d6063"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

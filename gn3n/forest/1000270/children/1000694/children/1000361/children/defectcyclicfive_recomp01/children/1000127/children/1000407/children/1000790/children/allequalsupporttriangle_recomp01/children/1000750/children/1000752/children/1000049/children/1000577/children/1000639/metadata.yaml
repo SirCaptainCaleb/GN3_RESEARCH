@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "730554d2e4d0fb67fdce72799beab6a6107d139f5d761f9e45eeca030c9ebd55"
 created_at: "2026-09-28T02:58:39.696732+00:00"
 id: "1000639"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The full-support cycle branch gives two opposite near-Hamiltonian truncations"
+statement_sha256: "d878e805b97bf8eca423ce2b29a61491364e89d5d09f3134438fef4edf730013"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "eb2201fc79ea677ab1ae59da91754a06270636dec45a4787a750834155b09a53"
 created_at: "2026-09-25T20:51:36.303547+00:00"
 id: "1000224"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Collision count is bounded by rank spread times squared cycle-packing number."
+statement_sha256: "1dea85b37863d9220076ff37f2f7f0fde002acc95c57e54208278334b4dc694b"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

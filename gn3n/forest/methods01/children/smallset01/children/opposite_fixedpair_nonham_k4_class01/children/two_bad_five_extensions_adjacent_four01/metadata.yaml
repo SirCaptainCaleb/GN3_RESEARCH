@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0adec609ced3fde4029f6ce54ab9ed4c211df85cf9d2e1b364979856d865577b"
 created_at: "2026-09-29T21:04:34.47175+00:00"
 id: "two_bad_five_extensions_adjacent_four01"
 last_elevation_revision: 9060
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two bad extensions of a Hamiltonian four-set force overlapping Hamiltonian four-sets through both exterior vertices."
+statement_sha256: "7f4bf55f5532ebcd2cafe572b7e71dcf718626ca9105c343f1860b5e7f3cc648"
 substantive_worker_ids:
   - 585
 support_reason: "current_certified_premises"

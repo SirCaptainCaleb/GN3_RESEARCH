@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 8
+body_sha256: "afb6daed1b790581ec4cda849670d0d7fd26c18748e24770fc6ebab9e583a707"
 created_at: "2026-09-24T00:48:03.617822+00:00"
 id: "1000853"
 last_elevation_revision: null
@@ -59,6 +60,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Finite all-special threshold branch of the minimum-degree route toward the two-thirds target."
 simplified_statement: "For 6<=n<=12, a positive-minimum-degree linear triple system with 3delta>2L+2 has every edge special."
+statement_sha256: "c3be5fa7010ceaddb725331432288f52f58115efd283cf0f9670f504e1645cb9"
 substantive_worker_ids:
   - 185
   - 254

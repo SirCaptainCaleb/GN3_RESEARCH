@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "181e4c59177fe07610bfd7f625cd1cdb7a12ea733e8caacbc8d88de2c672a1f2"
 created_at: "2026-09-24T01:05:33.810402+00:00"
 id: "1001081"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Punctured-Steiner residual program: classify regular residual systems and their blocker normal forms as finite models for the dense-core all-special conjecture."
 simplified_statement: "Universal residual and blocker normal form for punctured-Steiner regular systems."
+statement_sha256: "71860a84ebe7af11e77664c1f16b9eb65aac8e7438fdbd013f57a755578a3786"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

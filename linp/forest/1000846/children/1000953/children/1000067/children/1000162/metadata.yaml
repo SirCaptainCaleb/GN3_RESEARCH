@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "26c58be7f410fb77e018341fb303cf9a9c4ee644a855546591273321d8288531"
 created_at: "2026-09-22T15:21:04.328623+00:00"
 id: "1000162"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In any low-2-rank Steiner triple system with carrier labels h(x), a spanning path joint set J must satisfy XOR_{x∈J} h(x)=0."
+statement_sha256: "09c23b2769e1779b9711cbc4e095a574b270e8ddce0f7361d415a90aaf864eda"
 substantive_worker_ids:
   - 178
 support_reason: "current_certified_premises"

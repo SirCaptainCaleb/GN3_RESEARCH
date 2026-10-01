@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "5edde89916408356acf0ab2d3a9a07bd208d27379b8da9421dfdb4cc5d2c365b"
 created_at: "2026-09-24T20:52:54.739826+00:00"
 id: "1000905"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Terminal-retained cheap states force disjoint inside-outside packets."
+statement_sha256: "56365c11ea9e7464c1db6d29319d1bab471e05f74db1a886f779596de700a136"
 substantive_worker_ids:
   - 201
 support_reason: "failed_or_blocked_premise"

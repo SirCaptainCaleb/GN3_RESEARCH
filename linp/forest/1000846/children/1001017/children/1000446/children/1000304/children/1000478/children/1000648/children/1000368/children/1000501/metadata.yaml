@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "051ae22ca0d995295736902edca427c31d180bb391a31616652ed4045cc9b0dd"
 created_at: "2026-09-22T05:50:16.844956+00:00"
 id: "1000501"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Strict-rise/equal-level decomposition for the potential-oriented bound: combine separate control of rising and flat charged terminal edges to recover the two-thirds coefficient."
 simplified_statement: "Strict-rise plus equal-level control suffices for the 2/3 leading coefficient."
+statement_sha256: "873684ddd527d9f342a45febab7e663cc94dbf69369882a0d752e05b80107a82"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

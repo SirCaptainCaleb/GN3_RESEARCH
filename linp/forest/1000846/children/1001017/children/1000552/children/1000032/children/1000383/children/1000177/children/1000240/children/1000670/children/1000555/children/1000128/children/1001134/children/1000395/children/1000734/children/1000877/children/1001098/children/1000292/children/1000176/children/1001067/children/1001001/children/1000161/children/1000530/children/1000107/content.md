@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let h={y,v,w} be an ascending nonspecial anchor and let R be a canonical source precursor for h, so R avoids v. Let e={x,v,u} be a distinct ascending nonspecial edge of rank r terminal at v, with both x,u on R, and let S be a canonical clean source rail ending at x.
 
 Orient R so that x occurs before u. Suppose S has a common vertex with R strictly on the u-side of x. Among all such common vertices choose z minimizing the S-distance from x. Let
@@ -13,7 +14,9 @@ Then
 
 Here R[u,z] is the unique R-segment between u and z, regardless of whether z lies between x and u or beyond u. Consequently, the only source-return pattern not carrying this cycle budget is one in which every common vertex of S and R other than x lies strictly on the R-side of x opposite u.
 
+
 ## Body
+
 
 By the minimal choice of z in S-distance from x among common vertices lying on the u-side of x, the open S-segment S(z,x) contains no vertex of the R-segment R[u,z]. Indeed any such vertex would itself be a common vertex on the u-side of x and would be closer to x along S.
 

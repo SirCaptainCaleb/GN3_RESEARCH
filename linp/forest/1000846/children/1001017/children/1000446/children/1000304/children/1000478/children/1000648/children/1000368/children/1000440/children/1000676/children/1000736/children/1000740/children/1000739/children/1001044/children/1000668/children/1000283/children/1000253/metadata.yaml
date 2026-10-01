@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8eeff94db36b2fb7e6a6b32080c4a70a44bc14fe8f546aeef90819abba962061"
 created_at: "2026-09-24T03:50:44.475819+00:00"
 id: "1000253"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The two-contact p=5 4455 low-low state is impossible."
+statement_sha256: "9f1f9620cecdd0372eafc43bbba9b809350b3094d88617755fb703101c3b670b"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

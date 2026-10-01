@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b6338028377badb8578f4a1922dc52801bea875208f6746aa2cb801db907697e"
 created_at: "2026-09-28T00:26:28.345543+00:00"
 id: "1000426"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every minimum-span cyclic certificate has at least five three-piece rotations"
+statement_sha256: "8f73a60f75bf26f754d1c1fc22e727d4b8500ebeaac14d1447548f80b5871a4b"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

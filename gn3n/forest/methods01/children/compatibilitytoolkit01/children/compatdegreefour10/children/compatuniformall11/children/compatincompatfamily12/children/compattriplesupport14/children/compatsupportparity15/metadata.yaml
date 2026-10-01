@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "09e56d600f0f0c3f6a747a11af32802786ab2c8f908a0d30245de8df4d750d4e"
 created_at: "2026-09-27T04:24:42.807969+00:00"
 id: "compatsupportparity15"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Three-label support-switch cube: odd split parity places six states in a one-defect cube; the missing antipodes, Hamiltonian core enlargements, adjacent-gap concentration, and pivot/toggle structure are then used to force order disagreement or bounded transport."
 simplified_statement: "The three-label support-switch configuration has an odd split parity"
+statement_sha256: "f2403cf40a32978c474c55495ee350242f01e1092b6938f8277c8f6566853d3b"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

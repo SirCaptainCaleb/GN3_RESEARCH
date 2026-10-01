@@ -6,6 +6,7 @@ Let X|P|Q minimize the quadratic potential in a connected component of the pairw
 
 ## Body
 
+
 Write P=(p_1,...,p_m), Q=(q_1,...,q_k), with m,k>=7, and let
 E={p_1,p_m,q_1,q_k}.
 

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a18061c825a09db75ec7671a71e4945e8dcc2ae76f2f152eb0eb360277c1aab6"
 created_at: "2026-09-25T21:16:12.68965+00:00"
 id: "1000301"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A repeated endpoint-on-path intersection gives a linear cycle or a shared last edge."
+statement_sha256: "d3780dff907014802a3c83297c6e4c1f7e697391d86670949ab7dee92f008f4d"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

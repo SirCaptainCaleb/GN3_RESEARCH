@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "450a69d2dbdd4fadc6fc928b031dda97b59f7e23043ce9b8613c3a7283e75b4e"
 created_at: "2026-09-24T05:50:00.684723+00:00"
 id: "1000072"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The rising four-slot gadget orders the two far terminals on its fully occupied side."
+statement_sha256: "629127271ca6c89e26772cb2a0720d89c8b41d0a11b2cae728a40a12b9623223"
 substantive_worker_ids:
   - 225
   - 231

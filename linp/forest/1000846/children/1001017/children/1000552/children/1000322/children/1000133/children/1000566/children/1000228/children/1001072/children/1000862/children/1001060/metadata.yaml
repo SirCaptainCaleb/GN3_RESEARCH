@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "033eda712aa5e162257739c789c7fcc8dd0b297774c858fc0f2f7556ad2c0803"
 created_at: "2026-09-24T02:07:03.105801+00:00"
 id: "1001060"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Free-end connector is either an inter-component bridge or a cycle-closing chord."
+statement_sha256: "6210c634a305a5d8c8f216a8f2f9384fe37d778a007500bed5607e9c7c97477a"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

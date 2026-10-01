@@ -6,6 +6,7 @@ Let H be a hypothetical order-eleven minimum counterexample and P|Q|(x) any span
 
 ## Body
 
+
 Fix a spanning omission state
 
 P | Q | (x)

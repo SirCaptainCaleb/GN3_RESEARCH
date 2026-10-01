@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "876180872aec6af0b47503af42c32d8a15618b33a7209e048bcf6c17d57bc04a"
 created_at: "2026-09-27T18:54:08.109599+00:00"
 id: "1000698"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "At lambda equals 3c minus 3 every maximin cover contains a globally longest path"
+statement_sha256: "ded7af034c168e91bc276625c558f5d12c1694162a138da50b115533e594d5ed"
 substantive_worker_ids:
   - 569
 support_reason: "current_certified_premises"

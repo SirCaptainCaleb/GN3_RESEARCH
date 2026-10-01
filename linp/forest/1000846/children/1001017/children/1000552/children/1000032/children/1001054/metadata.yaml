@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5f1c4e246eee5d7eef6e70821890d6318ee597af39acd04c19070b542831461c"
 created_at: "2026-09-24T04:39:44.51906+00:00"
 id: "1001054"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A clean joint entrance forbids the immediately preceding first-contact cell."
+statement_sha256: "89d89f3484791c73b03f2cff61ef09d233c123a4bcfa80c8e07ab868f1abc9cf"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

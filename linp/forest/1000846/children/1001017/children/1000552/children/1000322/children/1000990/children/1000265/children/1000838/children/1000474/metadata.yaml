@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "396424ee2d3b856c80dcc6a6a2cf043c6cd0d9202110565578fdc7067ab8e762"
 created_at: "2026-09-24T02:52:49.455175+00:00"
 id: "1000474"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Exact-density nonspecial obstructions have average endpoint potential d plus five-sixths."
+statement_sha256: "0aa591ae832c1df75943cc8ecec3cf0a575b2bb1bea9969a08ecf86ed4cd712f"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

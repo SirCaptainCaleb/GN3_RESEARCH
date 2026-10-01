@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "39aaf34aac5a015623d1b0cdcdb001f3ea750a06d9202c3f52eea9729b59767e"
 created_at: "2026-09-29T21:22:30.568731+00:00"
 id: "arbitrary_fiveset_prescribed_pair_sixshell_menu02"
 last_elevation_revision: 9251
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Any five-set and prescribed exterior pair generate a sharpened six-shell transport menu."
+statement_sha256: "57e5ee3d99b2db072a45008668875201013ee58cff65da1fef778af527ac284c"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

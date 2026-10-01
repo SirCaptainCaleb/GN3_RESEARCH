@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "5fff92d85ade042e8e33cfdafb769f436582da16e2a76d1f8dc4e871a2d686f2"
 created_at: "2026-09-21T00:52:48.510011+00:00"
 id: "1000350"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Small deletion sides admit a clean support exchange"
+statement_sha256: "72ea88e12875d8e470f2c61fddfb87893e536dd78a2d669fed08ff1fe1ba002d"
 substantive_worker_ids:
   - 575
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3038ee0c8843a185b4dc1ccbf596a7cb31bb5419dc91be4540cc456fa8a1d7dd"
 created_at: "2026-09-30T04:59:10.099675+00:00"
 id: "deletion_state_mixed_gap_recomp01"
 last_elevation_revision: 10203
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Deletion-state double-wrap transport compresses directly to mixed support or a complete gap network"
+statement_sha256: "6e4a66bdcbd47bc82e56faa3a30cd6231f4f264f15612d662a2288d098c3917f"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

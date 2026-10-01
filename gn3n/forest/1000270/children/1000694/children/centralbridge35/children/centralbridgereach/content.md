@@ -6,6 +6,7 @@ Let H be a minimum counterexample and H-x=P|Q an exact deletion two-cover, with 
 
 ## Body
 
+
 Let
 
 H-x=P|Q

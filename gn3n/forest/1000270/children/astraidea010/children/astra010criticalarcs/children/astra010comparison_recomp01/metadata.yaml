@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0f51b2f59723173a34792f8e3bda014a68d20343ea123de0283cc4420f51593f"
 created_at: "2026-09-28T00:54:06.435178+00:00"
 id: "astra010comparison_recomp01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Minimum-backward comparison witnesses form a unique bad flip-cube corner with monotone cycles."
+statement_sha256: "e2755868d472ebcd2b5d9d568d4168d6bd23472a1810ced96817f9acd82731fe"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

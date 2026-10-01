@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "baf85fbc3934941ec4ff6578860f4a4bf5f3ee437baab499a3d519063984cc53"
 created_at: "2026-09-28T03:07:39.502404+00:00"
 id: "1000009"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every anchored four-window has a repeated cross-endpoint five-set exchange core."
+statement_sha256: "9072cfd72b38b868258d48104e75c9d7d0d2ba67189392cb0bec39bdc97f68da"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

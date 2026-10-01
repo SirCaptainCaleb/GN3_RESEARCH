@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0f93398c601057ec5183be4f4953727da9c9bd9de537b0b98c1dec7a8ee11a6d"
 created_at: "2026-09-24T04:28:41.650183+00:00"
 id: "1000190"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Clean entrance-only ascending terminal chords satisfy the three-halves path-slot bound."
+statement_sha256: "30e30a5809cb8e3b20af0f3abc1facea494d4792d54d46097eb2bbbddea4cc15"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

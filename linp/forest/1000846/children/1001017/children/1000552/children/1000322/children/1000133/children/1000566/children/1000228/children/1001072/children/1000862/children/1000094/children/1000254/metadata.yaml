@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "693bcecb0cd8e105e63b3ffa3e465d5fc3073428f0f3e81d20104766fa6fa543"
 created_at: "2026-09-24T02:22:25.914534+00:00"
 id: "1000254"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Zero slack forces the universal path forest to be a matching."
+statement_sha256: "e754c0f94b04878e99b376df43fa4702536a5e7ae9ef529721cc0871ac4f86f9"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

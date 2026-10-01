@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "4063f1efa29d3dc787c3b173aae91e2dd16041c7707308d1e3f6668872530a3a"
 created_at: "2026-09-27T15:17:29.357499+00:00"
 id: "1000021"
 last_elevation_revision: 0
@@ -62,6 +63,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lexicographically maximal forest transversals trap every singleton-transfer edge near the larger corridor."
+statement_sha256: "12740f700e9682a6d9412ff7ac4f6986da04274daf257ad6d63994cea8c92cc1"
 substantive_worker_ids:
   - 614
 support_reason: "dependency_verification_pending"

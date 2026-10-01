@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "615b0505e7af1b1f9e41be74835ea260c3aa0d9665e0b9a7c617f6dea65ae6d4"
 created_at: "2026-09-24T19:10:35.765616+00:00"
 id: "1000901"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two separated endpoint lenses from one source rail are at most half-rank."
+statement_sha256: "52418d67f7b8f6a736dd7ce7542e56e76a2230721fe9a870867a2b7d1f33ffd4"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

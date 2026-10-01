@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "89a1e442491754d1a181beed6e7bdd1306ab91ca6715e8e6d0129bc175868fce"
 created_at: "2026-09-24T05:12:51.2844+00:00"
 id: "1001106"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A competing high edge can meet a high entrance rail late only as a double blocker."
+statement_sha256: "445c4bae4ca30b73229cf785d2ffc1692113fab84acc7fc1fc6ce39786e63ca1"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

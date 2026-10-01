@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "dd95232f32088dd43d3925978e4500f6c42a63507a9e3078effbdcc5ebdb0094"
 created_at: "2026-09-26T20:54:31.745349+00:00"
 id: "astra004only8shell"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "6e24fbb8d575fa2ddddb72ee296419a037b11c0421d79574c255b42bfdaee6fa"
 substantive_worker_ids:
   - 576
 support_reason: "not_a_proved_or_evidence_claim"

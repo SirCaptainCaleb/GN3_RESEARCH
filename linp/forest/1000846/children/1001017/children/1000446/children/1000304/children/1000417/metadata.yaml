@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "9a41148ce70f9038acd28497e2ca5acbc10f782d38392639fd095bd3f520f9d7"
 created_at: "2026-09-21T20:57:46.398164+00:00"
 id: "1000417"
 last_elevation_revision: null
@@ -37,6 +38,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Low-φ nonspecial edges force larger-φ adjacency."
+statement_sha256: "d19c18d193d30bcad022ebc3485a05e15de88549d7cda9bf23006056f65af099"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

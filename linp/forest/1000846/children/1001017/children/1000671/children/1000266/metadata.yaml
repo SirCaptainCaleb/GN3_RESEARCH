@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "9fb96087cca384b9520cccfcabaa94b0f7c6c6669964ad236c22eb835f45c1ed"
 created_at: "2026-09-21T19:24:02.781196+00:00"
 id: "1000266"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "The bound β(T) <= s is false: nonspecial systems can have s=0 while their terminal-pair graph has positive cycle rank."
+statement_sha256: "f1c887b208c1e9ece4b824d26f375f76d580482a6ccf5ccaa3c0043551e2e3bf"
 substantive_worker_ids:
   - 234
 support_reason: "not_a_proved_or_evidence_claim"

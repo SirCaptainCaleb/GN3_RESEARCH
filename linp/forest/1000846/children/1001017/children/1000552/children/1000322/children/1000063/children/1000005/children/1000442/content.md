@@ -17,7 +17,7 @@ and in particular at least
     delta-floor(2(q+1)/3)
 incident edges not wholly contained in V(P).
 
-Every such external incident edge meets V(P) in either exactly v or exactly two vertices including v; equivalently, relative to the spanning path hull it is a clean ear or a one-contact chord. Thus, under induction on ell, every lower-rank nonspecial edge q<=ell-2 forces an ear-rich vertex on each maximum q-edge witness path.
+Every such external incident edge meets V(P) in either exactly v or exactly two vertices including v; equivalently, relative to the spanning path hull it is a clean ear or a one-contact chord. Thus, under induction on ell, every lower-rank nonspecial edge q<=ell-2 forces an ear-rich vertex on each maximum q-edge witness path. 
 
 ## Body
 
@@ -34,4 +34,4 @@ Choose v in U with d_G(v)=delta(G). Since d_H(v)>=delta, at least
 d_H(v)-d_G(v)>=delta-floor(2(q+1)/3)
 edges through v are not wholly contained in U.
 
-Finally, because H is linear and v lies in U, an edge f through v not contained in U cannot contain two further vertices of U if those two together with v form an edge already represented inside the path hull; more generally it can meet U only in v or in v plus one additional vertex unless f itself is wholly contained in U. Thus each external f is either a clean ear (one U-contact) or a one-contact chord (two U-contacts total).
+Finally, because H is linear and v lies in U, an edge f through v not contained in U cannot contain two further vertices of U if those two together with v form an edge already represented inside the path hull; more generally it can meet U only in v or in v plus one additional vertex unless f itself is wholly contained in U. Thus each external f is either a clean ear (one U-contact) or a one-contact chord (two U-contacts total). 

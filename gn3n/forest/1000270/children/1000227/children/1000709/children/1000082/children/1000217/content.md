@@ -6,6 +6,7 @@ Let H be a minimum counterexample and let mu be the minimum smaller-component or
 
 ## Body
 
+
 # Large minimum deletion side excludes complements of order at most six
 
 Let H be a minimum counterexample, and let

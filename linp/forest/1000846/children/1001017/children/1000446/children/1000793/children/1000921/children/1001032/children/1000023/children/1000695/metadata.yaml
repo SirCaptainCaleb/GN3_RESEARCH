@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "66ef0dd1ccc8b83bb70e9b52c0d48025e6cd27c94ea5542ce04f0cba460ef61b"
 created_at: "2026-09-24T03:12:34.737815+00:00"
 id: "1000695"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For endpoint potential at least three, the weighted local snake defect is at least one."
+statement_sha256: "15696bc5c3de40247403a0c5845714271e09a2b9e9abdb7ffa2b8b098863380d"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

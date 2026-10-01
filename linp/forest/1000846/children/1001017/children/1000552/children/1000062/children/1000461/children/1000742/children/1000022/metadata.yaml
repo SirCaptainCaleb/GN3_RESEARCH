@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "771020d6d5c6ed9c50426c589a6affefae89ce88f12a2a6887af0f68b9c1eb59"
 created_at: "2026-09-24T04:12:54.805526+00:00"
 id: "1000022"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near the seven-sixths floor, full-rank nonspecial terminal vertices have density at most three eta."
+statement_sha256: "1d585f5ff65ab63f96a960c13094794a8632483c564c667369702c098d785e6b"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

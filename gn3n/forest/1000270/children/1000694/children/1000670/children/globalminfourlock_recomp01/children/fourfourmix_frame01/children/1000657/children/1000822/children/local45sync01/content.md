@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a boundary tournament and let C=X|Y|P be a spanning three-cover. Suppose C minimizes the quadratic potential Phi within its connected component of the pairwise-repartition graph, and that component contains no two-cover. Assume |X|=4, |Y|=5, and P=(p_1,...,p_a) with a>=7. Then there exists x in V(X) such that both (V(X)-{x}) union {p_1} and (V(X)-{x}) union {p_a} are Hamiltonian, V(Y) union {x} is non-Hamiltonian, and at least three vertices y in V(Y) satisfy (V(Y)-{y}) union {x} Hamiltonian.
 
+
 ## Body
+
 
 Let C=X|Y|P minimize Phi inside its connected component K of the pairwise-repartition graph, where K contains no two-cover, |X|=4, |Y|=5, and P=(p_1,...,p_a) with a>=7.
 

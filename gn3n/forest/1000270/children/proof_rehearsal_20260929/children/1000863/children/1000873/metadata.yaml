@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "eee630022e1685182951a22ea67cf84cedd4d8dc63dff00a8555980ff4e33a0c"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000873"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If every other local disturbance in the bounded-square theorem is absent, its universally internal square endpoints have exactly one vertex between them."
+statement_sha256: "9ba60f8c350d8bcb4eb39267f73603baebfb1d3e4b00a1c4db8e38f64c0bae03"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

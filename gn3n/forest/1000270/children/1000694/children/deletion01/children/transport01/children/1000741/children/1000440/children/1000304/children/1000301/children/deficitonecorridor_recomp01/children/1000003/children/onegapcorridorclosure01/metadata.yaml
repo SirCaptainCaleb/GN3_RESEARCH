@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "96cdab9452dc90945588764a6967474cbb9929cdd749f5b3ee25960f8591c4e8"
 created_at: "2026-09-28T10:02:25.146908+00:00"
 id: "onegapcorridorclosure01"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "The one-gap unit-surplus corridor has no unbounded neutral residue."
+statement_sha256: "9c1545d6e365b682ed556bc22acfdb0b573e3787535ea1384e6271b75a2eb443"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

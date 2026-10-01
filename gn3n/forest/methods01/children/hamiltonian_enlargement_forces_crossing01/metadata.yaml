@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fff64de1fa96270c3f6e70c78bf24bee0d9aeda81427b8db5f4f222fa264b676"
 created_at: "2026-09-30T13:24:32.364234+00:00"
 id: "hamiltonian_enlargement_forces_crossing01"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Hamiltonian enlargement crossing toolkit: a one-vertex Hamiltonian enlargement forces every complementary deletion cover across the inherited cut; three-anchor windows sharpen this to multiple crossings, omitted-label reversals, or leave-and-return excursions, with endpoint Hamiltonicity providing the corresponding coarse transport alternative."
 simplified_statement: "A Hamiltonian one-vertex enlargement forces every complementary deletion cover to cross the underlying cut."
+statement_sha256: "dbd0a4dbc3535d0269e045216d07d8aaadae432f279d71793fe1de69a87c8811"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

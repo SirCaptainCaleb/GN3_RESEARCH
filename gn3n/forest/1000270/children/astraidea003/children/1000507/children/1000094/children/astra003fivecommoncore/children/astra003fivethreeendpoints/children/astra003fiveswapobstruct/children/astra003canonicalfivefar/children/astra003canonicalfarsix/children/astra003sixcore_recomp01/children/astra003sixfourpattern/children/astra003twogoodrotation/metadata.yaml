@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fdb9f25f5fb0b88a746923bfa90b87b7ab79cf4f6e7fda58044e33726672e269"
 created_at: "2026-09-26T18:40:16.693197+00:00"
 id: "astra003twogoodrotation"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The exact-two-good-core branch also reduces to bounded disturbance or a quadratic-neutral 4-to-5 rotation"
+statement_sha256: "f28370c55db82ce13a208f1164a925dcd536aec00a9fd1d0b7e898159bdd9d0b"
 substantive_worker_ids:
   - 576
 support_reason: "current_certified_premises"

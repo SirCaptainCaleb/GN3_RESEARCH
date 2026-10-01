@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "f9c0aee5181bc0c15ccb3833c0872220aff1e8f26087a308b7ecfdfab7099e03"
 created_at: "2026-09-21T11:37:15.73758+00:00"
 id: "1000035"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Absent a three-label crossing producer, the coupled graph has minimum degree six"
+statement_sha256: "40fa478b45ccbfad0b021125d62460a203460f97a4f614fe5af469debda397ee"
 substantive_worker_ids:
   - 597
   - 721

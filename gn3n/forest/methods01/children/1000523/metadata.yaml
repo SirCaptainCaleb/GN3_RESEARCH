@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3dfa174b5a4d9ae854e5031bfa1cfe1cc18237592c8daaf9677983512317070c"
 created_at: "2026-09-29T12:37:11.083889+00:00"
 id: "1000523"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two disjoint four-sets force twenty-four mixed Hamiltonian five-sets"
+statement_sha256: "14c73cc2b68765c694e6f2856ff048ed882dff7b19f958ec56e24c23fc254b41"
 substantive_worker_ids:
   - 681
 support_reason: "current_certified_premises"

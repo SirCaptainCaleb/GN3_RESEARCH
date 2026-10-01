@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample of order n>=18. Then for every six-vertex set U subseteq V(H), at least one of the following holds:
 
 (1) H contains explicit relative-order disagreement between Hamilton paths on overlapping induced supports;
@@ -10,7 +11,9 @@ Let H be a minimum counterexample of order n>=18. Then for every six-vertex set 
 
 In particular, above order seventeen, obtaining only the conclusion "order disagreement or strict descent" from a specially constructed six-set does not by itself consume or distinguish the special construction. Any argument that needs the special six-set geometry must retain additional data such as prescribed vertices, a common core, explicit deletion states, or reachability from the relevant cover.
 
+
 ## Body
+
 
 Fix any six-set U. By the certified four-of-six theorem, at least four one-vertex deletions U-d are Hamiltonian.
 

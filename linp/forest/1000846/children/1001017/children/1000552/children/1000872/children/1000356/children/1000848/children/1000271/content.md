@@ -6,6 +6,7 @@ Choose maximum endpoint paths P_x. Count only ascending nonspecial edges whose u
 
 ## Body
 
+
 For each nonisolated vertex x choose a maximum endpoint path P_x as in c312c26b7c1d. Call an ascending nonspecial edge e clean at its source x if x is its unique entrance and
   mu_x(e)=0
 relative to P_x.

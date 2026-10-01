@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "2346fadc25a42be9b434bbe6a281cf17e57c93b0963723a62077a5a29ca4c754"
 created_at: "2026-09-27T00:00:13.197952+00:00"
 id: "1000276"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "No-sink orientation of the three-cover graph."
+statement_sha256: "df1609a3ce8ddf207a931dac957b847aa7191998f9b96760024452171e74cce4"
 substantive_worker_ids:
   - 559
 support_reason: "not_a_proved_or_evidence_claim"

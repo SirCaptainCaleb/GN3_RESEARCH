@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "950f986fcda0c2c57a85f90ef5097d0b042fbfbd51de102300089d1256d1fb88"
 created_at: "2026-09-27T20:20:42.827631+00:00"
 id: "1000580"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every pair outside a longest path falls into the universal paired-noninsertion menu"
+statement_sha256: "9b75066b23ffad3cb1eb4983ad07c2b01cb44ec031cf05e6b9d583cc33eb6bfb"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

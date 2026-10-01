@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "2bb743543d7be6ebffc210c685b9160181ad95b60ba5e31ebebe98bc3a1a8dc8"
 created_at: "2026-09-24T03:50:10.199535+00:00"
 id: "1000984"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "At deficiency two, P_l-freeness forces many leave branches and universal vertices."
+statement_sha256: "a24ac2dc53229e63acd40b1cd59348629de1b81e6604396315c3d1461b06ce30"
 substantive_worker_ids:
   - 185
   - 254

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "de1654f9466f187332658d51db5ba49eaaf71eaeb64b926f18cc836af5c063e7"
 created_at: "2026-09-24T03:22:55.587726+00:00"
 id: "1000699"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every equality-layer witness omits many above-threshold vertices."
+statement_sha256: "e10a0de534269748e6cb11113ed28748f595cd8afac5e91ab88b5b8191ccbdf7"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "78a4b7fe314de738d08ccbda1526f3978c057882e67d67e8a196480690a9f2ab"
 created_at: "2026-09-28T00:02:36.276503+00:00"
 id: "1000089"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A repeated longest-path three-window forces a linear synchronized exterior family"
+statement_sha256: "541c5acb6fc24d8ab148599542bddc320c7e191efeb290efd894bc1157573f38"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

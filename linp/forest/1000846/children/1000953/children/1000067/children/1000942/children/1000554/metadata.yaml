@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9da796886d503544ede0f7aa48a67fc135de565d7464c71001aef8c02e394043"
 created_at: "2026-09-22T14:50:37.285297+00:00"
 id: "1000554"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If linear 3-graphs H and K contain paths of lengths a and b, then H□K contains a path of length (a+1)(b+1)-1, so repeated Cartesian powers cannot yield a positive asymptotic path-density coefficient."
+statement_sha256: "d1caeda1707eb609f81a5cbd72f28fe8f4ecb73cbd32184317fdf9b798adb6b3"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

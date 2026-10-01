@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b0c0ef66aab8ecbbb800340ca1d73422f50d061aa0cfb50a677db52589f7710b"
 created_at: "2026-09-24T01:53:32.219339+00:00"
 id: "1000411"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At least one third of a minimal counterexample lies at threshold degree."
+statement_sha256: "9dc5c2e610d51e04847312d6da7494e9070c6a5b65acd96f97f0f1cfd3906504"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

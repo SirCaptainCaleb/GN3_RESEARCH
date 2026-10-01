@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "a9b8f52901c4decdddab5955fff72476b93589ec4127bc051c1baa446ae57f0d"
 created_at: "2026-09-24T17:59:13.11905+00:00"
 id: "1000734"
 last_elevation_revision: null
@@ -56,6 +57,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Retaining double contacts forces near-complete source-rail coverage and sixteen-elevenths overlap."
+statement_sha256: "bd46264cad938703753efb45bb3c784e566c4d19670e5babd6f003e8767cb445"
 substantive_worker_ids:
   - 241
 support_reason: "current_certified_premises"

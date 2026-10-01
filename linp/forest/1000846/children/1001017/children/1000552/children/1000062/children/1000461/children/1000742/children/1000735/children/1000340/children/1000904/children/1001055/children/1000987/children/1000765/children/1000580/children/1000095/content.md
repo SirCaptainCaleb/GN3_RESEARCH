@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain the setup of 80e2e6b25cab. Thus H is a finite linear r-graph, r>=3; P is a maximum p-edge endpoint path ending at v, with
   U=V(P)\last(P);
 Q is a rank-q ascending anchor path ending at v, q<p; and F is any family of D distinct edges through v such that each f in F has at least two contacts with the anchor precursor R=V(Q)\h but exactly one off-v contact
@@ -21,7 +22,9 @@ Thus near equality in the arbitrary-r fixed-entrance bound, together with termin
 
 For globally unpaid signature-(0,1,...,1) ascending edges, terminal-singleness is automatic on the chosen endpoint path. This gives a uniformity-independent geometric replacement for the r=3 anchor-to-maximum crossing-matching step.
 
+
 ## Body
+
 
 Distinct members f,f' of F both contain v. By linearity,
   (f\{v}) intersect (f'\{v})=emptyset.

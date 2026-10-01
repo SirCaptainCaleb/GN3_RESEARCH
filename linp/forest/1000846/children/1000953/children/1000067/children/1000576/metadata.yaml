@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6939b9ec13203bcc1c6f389f8a37b7018f8ac4c36f26f5d2f2eca9b76c1355e8"
 created_at: "2026-09-22T14:31:54.72649+00:00"
 id: "1000576"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "PG(4,2) contains a spanning 15-edge linear path, so the PG(3,2) non-Hamiltonicity phenomenon does not persist in the next binary projective dimension."
+statement_sha256: "4e4759b1374e9cf6ba896a257fc1b42c00f5810eb23716445ebe61aca2313a90"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

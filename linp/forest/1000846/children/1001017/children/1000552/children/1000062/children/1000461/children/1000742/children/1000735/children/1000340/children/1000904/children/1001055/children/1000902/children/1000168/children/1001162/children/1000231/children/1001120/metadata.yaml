@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "7a2511b30e119f3dec5a8eb1dba9ba167a4287c7f74910953df3795d6d7e6301"
 created_at: "2026-09-24T13:56:41.975504+00:00"
 id: "1001120"
 last_elevation_revision: null
@@ -57,6 +58,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Overlap-maximal gap-one path pairs have no balanced internal lens and at most one internal lens total."
+statement_sha256: "666b321448c8de264df88e64824493241f26423c45f886575156eaf0db415eb6"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a boundary tournament with maximum tight-path order lambda. Let C=(c_1,...,c_m) be a tight path of order m=lambda-2, and let e,a,b,c be four distinct vertices outside C. Suppose
 (e,C,a), (e,C,b), (e,C,c)
 are tight paths. Then for every ordered pair of distinct leaves u,v in {a,b,c},
@@ -16,7 +17,9 @@ The left-right symmetric statement holds when the three displayed paths have the
 (a,C,e), (b,C,e), (c,C,e):
 then (c_1,u,v) is tight for every ordered pair of distinct leaves u,v, and {c_1,a,b,c} is Hamiltonian.
 
+
 ## Body
+
 
 Fix two distinct leaves u,v in {a,b,c}. The three paths
 (e,C,u), (e,C,v)

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "4e38b7a30f64285930e9afffcfd44f5ab0ba0add20e1bc3cf995eb4850ece73a"
 created_at: "2026-09-24T05:17:10.660466+00:00"
 id: "1000795"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the 4555 rank-pair state the low edge double-blocks every high entrance rail."
+statement_sha256: "48be116908117268ba9e465dfd404e8e4d8f0944e82b8bef519c8c0e3f14729b"
 substantive_worker_ids:
   - 225
   - 209

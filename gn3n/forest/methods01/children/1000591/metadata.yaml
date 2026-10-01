@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "316099811926baae169329729fd8f418dfd609b6cd9a4bda7414a21ca13866d2"
 created_at: "2026-09-29T15:19:43.113416+00:00"
 id: "1000591"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every large boundary tournament has a dense five-support family around a reversal"
+statement_sha256: "4a3c144c87bd663eef8fc526cf8e10a845ac1dbc30f0d0f362bf9387aef82432"
 substantive_worker_ids:
   - 605
 support_reason: "dependency_verification_pending"

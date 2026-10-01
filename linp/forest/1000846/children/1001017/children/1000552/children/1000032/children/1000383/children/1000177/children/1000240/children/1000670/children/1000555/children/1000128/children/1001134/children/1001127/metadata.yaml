@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cbf0e8da987e9cdf6e3ac722fae4ba161917410a538329fc4a948f5648fa94e4"
 created_at: "2026-09-25T20:52:06.023806+00:00"
 id: "1001127"
 last_elevation_revision: null
@@ -54,6 +55,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Repeated source-path intersection route: same-type overlap packets force cycles or many common high-rank edges, and shared-block orientation and rank propagation constrain the remaining residue without converting through lenses."
 simplified_statement: "A common-minimum-terminal family of k ascending edges forces two higher-rank source paths and k/8-O(1) same-type labels, each giving repeated intersections with both paths."
+statement_sha256: "13f0be4319c3bbcef0060c7cef834db02c9fb86a4139b02a7d599b6973ce59bf"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

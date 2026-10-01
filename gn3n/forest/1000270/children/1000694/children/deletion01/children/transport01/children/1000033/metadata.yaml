@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e042577cb91e212af9f7bab6ac115df2d806fc9b529a6804504767c40e86849b"
 created_at: "2026-09-27T22:08:25.641146+00:00"
 id: "1000033"
 last_elevation_revision: 0
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two alternative-2 pivots for one exterior vertex force a mixed Hamiltonian four-set or a doubled cross barrier."
+statement_sha256: "df255ff9378fc9844e5e3c6ebe7a75d96aed186b24d98e02088e4e2a64600029"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

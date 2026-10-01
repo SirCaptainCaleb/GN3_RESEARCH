@@ -6,6 +6,7 @@ Let e={x,v,u} be ascending nonspecial of rank q with unique entrance x, and let 
 
 ## Body
 
+
 Let e={x,v,u} be an ascending nonspecial edge of rank q, with unique entrance x and terminal v. Let
   R=(r_1,...,r_{q-1})
 be a canonical entrance path ending physically at x such that R,e is a longest q-edge path ending in e through x; in particular R avoids the two terminals v,u.

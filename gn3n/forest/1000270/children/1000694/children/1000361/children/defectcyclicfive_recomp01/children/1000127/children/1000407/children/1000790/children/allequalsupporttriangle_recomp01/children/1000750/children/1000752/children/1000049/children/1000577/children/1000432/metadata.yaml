@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ec6e853638f8c2e52e0fc159914f6a373d2443cd40b4dfb403f93508f2f29ecb"
 created_at: "2026-09-28T02:58:32.692164+00:00"
 id: "1000432"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Without an endpoint-edge reversal, all three transferred-label insertions are internal"
+statement_sha256: "adcc4dce00247879d90fd1fb06e39f77db6ef19c52fc075be1db319445e19e2e"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

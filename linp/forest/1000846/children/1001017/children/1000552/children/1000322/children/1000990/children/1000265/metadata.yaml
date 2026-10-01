@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f4c8649417deb70640977068efae6a4065cd0c9ff3ef3098fd9d487c76ae8e66"
 created_at: "2026-09-24T02:43:28.278769+00:00"
 id: "1000265"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Sharp equality-layer reduction: reduce the Turan bound to the exact-density case and analyze the resulting potential-deficiency and upward-transition constraints."
 simplified_statement: "The sharp Turan bound reduces to the exact-density equality layer."
+statement_sha256: "1b68e3f927379597109f4497c09fc69eab4d97e61db71372cd756518f6411fcf"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

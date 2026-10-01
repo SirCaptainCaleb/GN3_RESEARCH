@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e5aa51c0391101a780519ee8854236457963a8a8b32e2b8c8b233cef51ca51dc"
 created_at: "2026-09-24T01:11:15.116405+00:00"
 id: "1000440"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Potential-five obstruction classification: enumerate charged rank patterns and resolve the 4445 and related low/high witness geometries by entrance, crossing, and terminal constraints."
 simplified_statement: "Potential-five charged obstructions have four rank patterns."
+statement_sha256: "5a5849df917ea4802507cdf17530b8d4b6f8a38527b104a67c7c9065a9fa2bf1"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

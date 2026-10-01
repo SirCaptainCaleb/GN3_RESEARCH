@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "805388668a030c506a08e342b3613da66f4c20d0110a90c7f16cc5b72dc72221"
 created_at: "2026-09-22T05:50:50.279206+00:00"
 id: "1001148"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a longest linear path ending in a nonspecial edge e, any single blocker through an opposite-end free vertex can be rotated to another longest path still ending in e through the same unique entrance."
+statement_sha256: "f6813ee805d509ebc2d49639e8b850c2d637dd5e15780f97089fc042470cbf73"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

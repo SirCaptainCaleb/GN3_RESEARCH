@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c66bdaf7680619fcd1f99fdf1434f30dede03e5a3cbcfe70d71d654d6e4d12de"
 created_at: "2026-09-26T18:35:53.860817+00:00"
 id: "astra003sixfourpattern"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The exact-two-good-core six-set has a three-pattern Hamiltonian four-overlap normal form"
+statement_sha256: "2690a739e659ef35f536cd577e30ed7cd2e8014db2d0a63906161ba6ed950901"
 substantive_worker_ids:
   - 576
 support_reason: "current_certified_premises"

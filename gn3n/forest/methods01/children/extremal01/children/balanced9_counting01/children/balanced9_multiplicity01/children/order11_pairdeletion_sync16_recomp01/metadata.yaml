@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "af14111312aa060b83c6c454c90690b9456d527edcf7d37aac8ab31e860d035b"
 created_at: "2026-10-01T00:27:38.35643+00:00"
 id: "order11_pairdeletion_sync16_recomp01"
 last_elevation_revision: 10160
@@ -63,6 +64,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Twelve pair-deletion covers force a threefold common absorption obstruction; the four-side-blocked branch gives nine common-pair Hamiltonian five-sets."
+statement_sha256: "b1b721ebcc53ce102955e4f3e8afb5227e2c2727142bfd68bcff3c1d3119ac91"
 substantive_worker_ids:
   - 745
 support_reason: "current_certified_premises"

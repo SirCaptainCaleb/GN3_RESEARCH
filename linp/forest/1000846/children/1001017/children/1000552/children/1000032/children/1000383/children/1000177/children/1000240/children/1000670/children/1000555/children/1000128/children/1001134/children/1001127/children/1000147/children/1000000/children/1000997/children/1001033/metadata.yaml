@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "3f3119bde116264e1d4a2b9f92551452acd7706d2574bd3ec803212ad7362fdb"
 created_at: "2026-09-25T21:35:50.889925+00:00"
 id: "1001033"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If two oriented linear paths have cycle-free union, their common edges form a contiguous block; under common unique-entrance traversal that block has the same orientation in both paths."
+statement_sha256: "efe99569135c9335268d61ddd39a55d2b5de8cda787f332ff1fad6b018960924"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

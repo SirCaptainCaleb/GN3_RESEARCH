@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain residual case (4) of d0a41dede20a for a selected strict-gap edge
   e={x,v,u}
 of edge rank r. Let R_e be its canonical maximum source path, of length r-1, and let A be the selected common-path precursor at terminal v.
@@ -23,7 +24,9 @@ then at least one of the following holds:
 
 Consequently, if both fundamental-cycle neighbors meet A uniquely, then for a long entrance-side replacement region both of their unique A-gates lie outside A(z,x).
 
+
 ## Body
+
 
 Put n=r-1=|R_e|. The segment R_e[z,x] is a terminal segment of R_e ending at its last vertex x and has ell edges.
 

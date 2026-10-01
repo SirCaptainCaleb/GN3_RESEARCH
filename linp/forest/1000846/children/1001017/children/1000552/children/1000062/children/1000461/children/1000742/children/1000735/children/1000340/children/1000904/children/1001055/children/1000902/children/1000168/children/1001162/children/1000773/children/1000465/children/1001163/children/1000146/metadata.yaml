@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "637cc24dfa9f60e4f7bd4a6d181c64bde6cf0eecf69318b0871ec328a1d100fd"
 created_at: "2026-09-24T14:04:47.166399+00:00"
 id: "1000146"
 last_elevation_revision: null
@@ -57,6 +58,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Unique auxiliary intersections of crossing endpoint lenses preserve potential-minus-position slack."
+statement_sha256: "68a384163c42882ef8eb308cc7a574ba791b821d43824df7c87cf96e7435b66a"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

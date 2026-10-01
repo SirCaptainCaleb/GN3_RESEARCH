@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c38f7716b63b83863dadab79e92cdbf535babe920693ba49c5a3cf6a119b92fb"
 created_at: "2026-09-29T20:20:18.263654+00:00"
 id: "fixedpair_three_side_descent14"
 last_elevation_revision: 8911
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "From order fourteen every prescribed pair has a one-move descending small-side realization"
+statement_sha256: "700f07eda1a829a992489cf39ab2e8db677df7a22267ddaff6e540ee24db211d"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

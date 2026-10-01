@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c2ca4855dbb195f650bd6afed49f9e534b5305493c2603016ddc5987c5ccd60e"
 created_at: "2026-09-22T05:40:10.535585+00:00"
 id: "1000061"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A potential-oriented charged ascending edge can have rank below both terminal potentials."
+statement_sha256: "bf88bb5b1086a975ff2cfd212c0a10d19d0e979c8e9a3ec82cf114dbade35559"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

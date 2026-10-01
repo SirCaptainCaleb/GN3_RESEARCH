@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "13db138ea0a46129c44cd93b1b40d61b1e998a339e034906873bd64c2b57ec63"
 created_at: "2026-09-28T02:29:16.798034+00:00"
 id: "1000195"
 last_elevation_revision: 0
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "b8afc18c21b7569c0358f1961164d4def7ecb4900067add1870731f4ad47afed"
 substantive_worker_ids:
   - 707
 support_reason: "A local repair preserving the six Hamiltonian-support conclusion would require a new theorem converting the valid endpoint barriers into Hamiltonicity of the six sets. No such argument is present. The independently valid residue has been separated into 2bac72daae4a (three mixed four-paths) and repaired 74f08b5c2f52 (nine-label shell geometry)."

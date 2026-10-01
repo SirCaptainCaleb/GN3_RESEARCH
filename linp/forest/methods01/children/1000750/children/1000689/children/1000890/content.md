@@ -6,6 +6,7 @@ Tucker's combinatorial lemma is the antipodal analogue of Sperner: an antipodall
 
 ## Body
 
+
 Classical form. Let K triangulate B^d, with its boundary triangulation invariant under x->-x. Label vertices by {+/-1,...,+/-d}, with lambda(-v)=-lambda(v) on boundary vertices. Then some edge uv is complementary:
   lambda(u)=-lambda(v).
 
@@ -25,3 +26,4 @@ Constructive proof note. Freund--Todd do more than derive Tucker topologically: 
 Useful poset/octahedral variant. A common equivalent formulation labels nonzero sign vectors x in {-,0,+}^d antipodally. Under a monotonicity/no-complementary-pair condition along comparable sign vectors, at least d label magnitudes are required. This is often the easiest form to match to a discrete state poset.
 
 LINP relevance. If a path-state can be encoded by a sign vector recording which side of d local cuts/choices is active, path reversal or complementary construction may provide the antipodal involution. Tucker then says that avoiding a local complementary pair is impossible once the labeling dimension is too small. This is a natural finite certificate to seek before importing any chain-level topology.
+ 

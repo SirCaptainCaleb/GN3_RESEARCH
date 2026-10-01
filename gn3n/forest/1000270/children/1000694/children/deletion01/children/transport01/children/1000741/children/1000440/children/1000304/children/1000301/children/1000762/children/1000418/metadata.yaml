@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "40ff321d2175dfc67a513f3e5ddd08a7d124e9811a95e15c61dcbc0bd1497185"
 created_at: "2026-09-27T21:44:31.906352+00:00"
 id: "1000418"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every strict charged replacement gives balance descent or a bounded reverse-triple obstruction."
+statement_sha256: "757f649308849f8d76f88e70f1e4d9b1e4302024e60cfb11c309b9d74730dfd1"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

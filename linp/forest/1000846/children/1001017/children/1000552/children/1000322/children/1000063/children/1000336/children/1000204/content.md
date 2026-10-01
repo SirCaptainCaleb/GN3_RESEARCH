@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the boundary case q=delta, suppose a lossy double-blocker splice from a canonical entrance path produces an x-ending path avoiding y,z and the new opposite endpoint has no safe clean extension and no safe single-blocker rotation. Loss two is impossible. For loss one, exactly one of two forms remains: (A) two clean edges, one through y and one through z, with at most one single blocker, necessarily x-type; or (B) one clean edge through one terminal and exactly two single blockers, one x-type and one through the other terminal.
 
+
 ## Body
+
 
 Let r be the loss and let C,S,D count clean, single-blocking and double-blocking edges at the new opposite endpoint. Endpoint deficiency gives
   2C+S >= 2(r+1).

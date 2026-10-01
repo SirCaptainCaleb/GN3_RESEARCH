@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "306d12755c3afe73c3331b6572c491d00a6a0a55e297d6941a3b1aecb7fc00df"
 created_at: "2026-09-27T21:37:43.755434+00:00"
 id: "1000301"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "The binary balance of longest paths is proposed as a secondary coordinate for one-defect reconfiguration."
+statement_sha256: "23356ba51dde21e80315e114c52bd3f9a115fcc8e72f888a45a04130cd605960"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "4979d7a9247eb77ffffb89996dfc9176a5aad01a8fbc4bedc69898d6785724a2"
 created_at: "2026-09-27T14:17:38.607712+00:00"
 id: "1000246"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A laminar two-for-two fractional replacement must contain the whole union."
+statement_sha256: "9902658b92799c651f65cacb32d300a62870924df21d645081d6bfad8d676124"
 substantive_worker_ids:
   - 646
 support_reason: "current_certified_premises"

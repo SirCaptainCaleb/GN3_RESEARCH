@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "21892276235b45a88111ea41f30ee44d169b5e035be1a4e349defcb873a38132"
 created_at: "2026-09-27T00:00:13.197952+00:00"
 id: "1000334"
 last_elevation_revision: 0
@@ -31,6 +32,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Conjecturally, the feasible insertion slots of an outside vertex along a longest path form one interval, or at worst two intervals with controlled boundary signs."
+statement_sha256: "34621b19095d113988a2bfd8ef5565fb500eb21fd6f552188660e50746f6562b"
 substantive_worker_ids:
   - 610
 support_reason: "not_a_proved_or_evidence_claim"

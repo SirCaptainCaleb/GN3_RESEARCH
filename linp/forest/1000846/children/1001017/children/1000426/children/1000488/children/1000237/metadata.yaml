@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c61b1ab462fc30a23af858adaee58373ed0af0141cd4e2df8a602f8d241e96e7"
 created_at: "2026-09-22T19:11:17.946487+00:00"
 id: "1000237"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A bounded matching number alone yields only an asymptotic ℓ/4 coefficient for P_ℓ-free linear 3-graphs, so it cannot beat the one-third lower-bound coefficient."
+statement_sha256: "20db539d2519bd0e9eed4701dd56c069cdef7a1eb42d813fbd0526a1138cc719"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

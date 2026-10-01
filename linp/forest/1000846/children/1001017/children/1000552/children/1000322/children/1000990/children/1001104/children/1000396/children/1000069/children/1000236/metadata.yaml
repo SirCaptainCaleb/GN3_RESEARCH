@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2970e71141dc15bf5bf17a01c5e43e5cd1e6d60a4b71cbb8536b98246f05359d"
 created_at: "2026-09-24T04:05:25.044731+00:00"
 id: "1000236"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Ascending flow gives a levelwise charge-to-superlevel growth inequality."
+statement_sha256: "9399057e1951e839e215dca71537c39d12c07f303da93a11ab4c2151986cada9"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

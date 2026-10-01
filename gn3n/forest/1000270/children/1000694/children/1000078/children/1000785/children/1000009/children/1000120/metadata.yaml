@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "9482c6f9421f1ee2eeebd78b2c69648ff5e79a12200dd0f8ffa9193b79090fb2"
 created_at: "2026-09-28T03:09:45.307029+00:00"
 id: "1000120"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Four-side cross-endpoint exchanges are adjacent or form a checkerboard equality shell."
+statement_sha256: "376a6c7f5b7e6d303be86a914a73f219f8b3e6c0cb41b3e50c5254023aefe6ec"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

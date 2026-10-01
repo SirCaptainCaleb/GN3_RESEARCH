@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "db0f791bd213d7e90cb0e3fd46a127aff0a7243d4b4f012430590bf12cbb1547"
 created_at: "2026-09-24T02:49:30.338499+00:00"
 id: "1000719"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Exact-density equality obstructions have a huge outside reservoir."
+statement_sha256: "07c38e83422349185ea327d3acfa3481991c2468623d110f7e9ef278e628b649"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

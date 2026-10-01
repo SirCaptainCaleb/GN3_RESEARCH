@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a finite linear r-graph with r>=3. Fix a vertex v of rank p and a maximum p-edge path P ending at v. Let e_1,...,e_k be distinct ascending nonspecial edges terminal at v, all of edge rank less than p, and suppose every e_i has contact multiplicity one on P. Write q_i=phi(e_i), let x_i be the unique entrance of e_i, and relabel so that
   q_1<=...<=q_k.
 
@@ -22,7 +23,9 @@ In particular this applies after assigning any family of globally unpaid signatu
   sum_i phi(x_i) >= kp/2+k(k-1)/8,
 the same numerical packet bound as the certified 3-uniform minimum-terminal lemma on the terminal-single subclass.
 
+
 ## Body
+
 
 Order the edges by q_1<=...<=q_k. For each i, the edges e_1,...,e_i all have rank at most q_i and contact multiplicity one on the fixed maximum p-edge path P. The central-window theorem 6af906e32265 therefore gives
   i <= B_r(p,q_i)

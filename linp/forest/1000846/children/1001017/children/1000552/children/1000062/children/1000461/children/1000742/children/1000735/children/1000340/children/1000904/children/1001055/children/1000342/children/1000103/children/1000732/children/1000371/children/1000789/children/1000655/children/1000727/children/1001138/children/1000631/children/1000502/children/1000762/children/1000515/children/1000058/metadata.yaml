@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "79117373f711d8ab000ae6ec81b26697aa357b168297030a731bff96b56720be"
 created_at: "2026-09-25T21:45:01.338026+00:00"
 id: "1000058"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Flat shared-last-edge states have half-density in the terminal-contact window."
+statement_sha256: "5fc7294a186b11fd9521a68c7b462cb9842207d2405833e0de8d040c37ce817a"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

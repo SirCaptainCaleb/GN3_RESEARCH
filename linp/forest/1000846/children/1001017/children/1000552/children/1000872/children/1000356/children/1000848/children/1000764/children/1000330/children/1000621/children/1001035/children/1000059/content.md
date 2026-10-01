@@ -6,6 +6,7 @@ At p=2q-3, any four assigned 0-1-1 rank-(q+1) edges that are all single-contact 
 
 ## Body
 
+
 Retain the setting of e581db151e69:
   p=2q-3,
   P=(g_1,...,g_p)

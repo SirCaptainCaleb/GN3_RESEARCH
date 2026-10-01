@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a7b2c41e783bdfa02a797bf6327c7b83e470f65e72e84ba8dcf2a171106d5d61"
 created_at: "2026-09-28T02:12:20.71269+00:00"
 id: "1000569"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The all-equal support triangle forces three synchronized reverse boundary triples"
+statement_sha256: "fd75555525b33731edb6a87dd656ef73cea9546d1d3418959d96b4e3fdc1d3b1"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

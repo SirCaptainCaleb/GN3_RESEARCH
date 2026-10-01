@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a boundary tournament on a vertex set K union {a,b,c}, where a,b,c are distinct. Suppose there are Hamilton paths
 P_a on K union {b,c},
 P_b on K union {a,c},
@@ -12,7 +13,9 @@ Then there is a common linear order C of K such that each special label x in {a,
 
 Consequently, if the full set K union {a,b,c} is non-Hamiltonian, all three labels occupy one common insertion gap of the common K-order. The only residual obstruction is therefore localized to one gap and the three labels.
 
+
 ## Body
+
 
 Pairwise compatibility implies that the restrictions of P_a,P_b,P_c to K have one common relative order; write it as C=(k_1,...,k_m).
 

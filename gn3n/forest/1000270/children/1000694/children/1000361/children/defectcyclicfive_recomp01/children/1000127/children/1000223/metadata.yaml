@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "51be33962efb4ae8cd958e96e88fed29dc74b05b1c316604b382eeea75a44379"
 created_at: "2026-09-28T01:39:28.577661+00:00"
 id: "1000223"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every interface of a three-isolated-defect cube state is a one-sided slide"
+statement_sha256: "671ebcb73951fed54f0b3620583ed79866583035beafca86554185bba12bcb78"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

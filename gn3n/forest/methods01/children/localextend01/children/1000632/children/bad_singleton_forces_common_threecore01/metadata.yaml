@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "71313474e0ddde6f8d49f7ebfd02dc497415d4e6335dade83d3036ea970aa975"
 created_at: "2026-09-29T18:55:04.087202+00:00"
 id: "bad_singleton_forces_common_threecore01"
 last_elevation_revision: 8737
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "One bad singleton extension forces a common three-core across two exterior pairs."
+statement_sha256: "baceebf448c2c7cfec778cef62465317b07d77778a8e4abb1bda9e818c534026"
 substantive_worker_ids:
   - 579
 support_reason: "provisional_unaudited"

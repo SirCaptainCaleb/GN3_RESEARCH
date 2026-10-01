@@ -6,6 +6,7 @@ In the |D|=k critical-core normal form, let G on X=V(H)\D consist of all DXX edg
 
 ## Body
 
+
 Assume |D|=k and put X=V(H)\D, with forest F=H[X]. By ee2c9575cf8f every x in X has degree k+1 or k+2, and F has no isolated vertices.
 
 Fix x in X. Let t=d_F(x), so t is 1 or 2. The number of cross-edges through x meeting D is

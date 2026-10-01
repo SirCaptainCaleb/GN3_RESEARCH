@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "426dc0082010712a8c172e86cd9ac11c52ee79ace8a2e01e8cd02fa3039d20c8"
 created_at: "2026-09-25T21:03:36.202625+00:00"
 id: "1000434"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The selected-terminal cycle-neighbor rail cannot pierce a certificate-anchor lens."
+statement_sha256: "f710dcbd2f19dc5421fe3e47adff3b91d4f7d1fc37625419ccb448820769c1f5"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

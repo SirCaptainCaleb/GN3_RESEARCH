@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7de5a22d80b29eb963473c9ed18268757ea7a49c5e11f1d3e95dbe9b5c6661f6"
 created_at: "2026-09-24T11:27:45.282964+00:00"
 id: "1001165"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Distinguished agreements and offending cross-edges are complementary."
+statement_sha256: "15a0593321208f9b7d5cce045050eab19a611d454404e02071e28cd3cc8dc2d3"
 substantive_worker_ids:
   - 246
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ef2c840405212bf281114d6137a7dc1f07a4f6c5ae7808b66fa2e3400408b71d"
 created_at: "2026-09-25T21:26:38.538639+00:00"
 id: "1000294"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Local 3-cycle collisions have bounded host-edge reuse."
+statement_sha256: "10ef2007208455449634863088379d41b7dddf444a9d72ff695f350ce3b37cc5"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

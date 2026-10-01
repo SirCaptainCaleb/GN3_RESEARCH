@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "28ee1a763a6f6ca2bab51c7eb662351c423158a26d9a052c8fa5ea0bf6b10168"
 created_at: "2026-09-28T09:58:24.668022+00:00"
 id: "endpointonegapdescent01"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "Endpoint one-gap unit-surplus corridors admit a finite exterior-count descent."
+statement_sha256: "4a3157624d46d350047dcf1d33e7054cff247ffc762c71de36ed09b1fe1fb0d4"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

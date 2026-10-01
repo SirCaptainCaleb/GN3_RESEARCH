@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "07daa2b271352d2a47d1ad32ada71cb7c906c00cc998a204c412e94948bc7904"
 created_at: "2026-09-27T00:50:47.147518+00:00"
 id: "compatedgecodeg02"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Compatibility edges have codegree at most two"
+statement_sha256: "ff81422688ef474a29204007196451793944d6532531a95b9aa1062b7d34c8e3"
 substantive_worker_ids:
   - 607
 support_reason: "current_certified_premises"

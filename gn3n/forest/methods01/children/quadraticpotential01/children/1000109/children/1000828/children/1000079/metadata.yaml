@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e21d5eb1cd95bc206bc3193c13ac4efd348df79930ac8b1d16aa5a7530a546c1"
 created_at: "2026-09-27T21:47:05.830423+00:00"
 id: "1000079"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Strict pair-union balance improvement is equivalent to balanced refinement on every two-coverable tournament"
+statement_sha256: "ab4f99dba804bf1e14bbce20157557551c67fcb0db9c0c121236b83551ba4efe"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

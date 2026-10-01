@@ -6,6 +6,7 @@ In the |D|=k critical-core normal form, if m+2c=2k-1 then every threshold star i
 
 ## Body
 
+
 Assume |D|=k and one unit of private-vertex slack:
   m+2c=2k-1.
 Let F=H-D and let P be the set of forest-private vertices, so |P|=2k-1.

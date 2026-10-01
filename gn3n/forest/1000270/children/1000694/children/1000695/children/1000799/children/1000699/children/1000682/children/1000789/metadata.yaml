@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8f3c5b15566234356b41dcf7af1a277db6813b8487c7be371b9681c54181329b"
 created_at: "2026-09-27T22:13:49.716044+00:00"
 id: "1000789"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The transposition already collapses at four vertices: Hamiltonian kernel or both transport triples"
+statement_sha256: "d8983988ada3dd460729917bc39ea63b856fe99b8b3a1f279b559b88276d20e5"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "ef259d74374a664d3891e56873f619aad38023e9507107e9384cbdf9d633f78c"
 created_at: "2026-09-21T18:22:49.156921+00:00"
 id: "1001017"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Upper-bound landscape for general path length. The snake/contact branch is the deepest quantitative route, reaching the certified 43/48 bound and a detailed near-extremal stability theory. Defect-stability/dense-core, rainbow-shadow/ascending-edge, rotation-expansion, and incidence-rank remain serious alternative routes toward 2/3 and share reusable rank, blocker, terminal-graph, and rotation machinery."
 simplified_statement: "A general-length strategy combining special-edge density with incidence-rank bounds."
+statement_sha256: "6eeecf65f6e696fd8e6d1748832aa95c706060fa2da0ccd1221c3ecb46e9c400"
 substantive_worker_ids:
   - 262
 support_reason: "not_a_proved_or_evidence_claim"

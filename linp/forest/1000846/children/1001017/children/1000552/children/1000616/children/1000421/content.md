@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let P=(g_1,...,g_L) be an L-edge linear path in a linear 3-uniform hypergraph, and let R be an integer with 0<=R<L.
 
 Then the number of vertices z in V(P) with
@@ -20,7 +21,9 @@ eligible private vertices and
   2R-L+1
 eligible joints.
 
+
 ## Body
+
 
 Apply 8b1790d79d74.
 

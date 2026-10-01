@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample in the sharp half-order shell |V(H)|=2lambda+1, and let A=(a_0,...,a_{lambda-1}) be globally longest. For any exact cover of either endpoint deletion, either there is relative-order disagreement among surviving A-vertices or a tight triple reversing an ordered edge of A, or every surviving a_i occurs at its original position i in its component. In this neutral case the two components are positionwise complementary across the A|U cut and the crossing number is 1+2 times the number of ownership changes, hence odd. If arbitrary exact covers are chosen at both endpoints and neither already has ordered disagreement, then a_{lambda-1} is terminal in the left cover and a_0 is initial in the right cover; endpoint-state trichotomy excludes both internal restoration and clean omission swap, so the two induced covers of H-{a_0,a_{lambda-1}} exhibit bridge disagreement, yielding support crossing or explicit order disagreement.
 
+
 ## Body
+
 
 # Opposite endpoint covers in the sharp half-order shell are position-locked odd weaves or force bridge disagreement
 

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "012a3938168bea6545cd8632e0fc3b1fe2cb42337d8407c2ae44bf7fbac1ee1f"
 created_at: "2026-09-28T02:21:58.461702+00:00"
 id: "1000241"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two second-type pivots on disjoint paths force a mixed four-path or doubled cross barrier, including boundary gaps."
+statement_sha256: "f199cc8d773da7c20bd92ceb806fd830141f02f790400c58dd830fbe46cd9c3d"
 substantive_worker_ids:
   - 694
 support_reason: "current_certified_premises"

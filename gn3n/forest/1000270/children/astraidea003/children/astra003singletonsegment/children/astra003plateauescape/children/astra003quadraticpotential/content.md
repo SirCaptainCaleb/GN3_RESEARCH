@@ -6,6 +6,7 @@ Let C=P_1|P_2|P_3 be a three-component cover in a connected component of the Ast
 
 ## Body
 
+
 # Quadratic potential for the Astra pairwise-repartition graph
 
 For a spanning cover C=P_1|P_2|P_3 with three nonempty tight paths, define

@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let
   e_1,...,e_M
 be distinct ascending nonspecial edges with unique entrances
@@ -19,7 +20,9 @@ Consequently
 
 Equivalently, relative to the baseline Q/2 per edge, M distinct entrance labels lying on one Q-source path force a quadratic rank-mass bonus of at least M(M+3)/8.
 
+
 ## Body
+
 
 Each entrance x_j has vertex rank
   phi(x_j)=r_j-1.

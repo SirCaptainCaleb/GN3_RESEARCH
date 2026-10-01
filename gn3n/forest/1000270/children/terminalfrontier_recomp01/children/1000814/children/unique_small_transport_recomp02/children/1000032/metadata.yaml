@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "cccac7e2059c1b837407e87d1fea1e66131361b155f5f8300ae6a49e80007cf8"
 created_at: "2026-09-28T18:20:27.041125+00:00"
 id: "1000032"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Corrected: a two-crossing leave-return forces a Hamiltonian four-window"
+statement_sha256: "b58b9f7f8c50fd257d39fce370eaa8b3a9f5d3e88b2e2a747c77478a421b5465"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

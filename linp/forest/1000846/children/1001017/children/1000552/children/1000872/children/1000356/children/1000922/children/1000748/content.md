@@ -6,6 +6,7 @@ Assign every 0-1-1 ascending edge to a minimum-potential terminal v. If for ever
 
 ## Body
 
+
 Fix chosen maximum endpoint paths P_v at every nonisolated vertex and let U be the number of certified 0-1-1 edges from ceef20074f6f. Thus for every such edge
   e={x,y,z}
 the entrance x is clean:

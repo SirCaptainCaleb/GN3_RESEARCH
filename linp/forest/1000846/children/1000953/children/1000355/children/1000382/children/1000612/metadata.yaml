@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7435650604b926ff57863bb80b581e7d91fa488a9a20c9893d93989472a674ba"
 created_at: "2026-09-22T16:05:53.308621+00:00"
 id: "1000612"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "PG(3,2) contains a seven-edge linear cycle."
+statement_sha256: "01a0966c001864b0330abadc05021cc06b758ace46ad8d6bf901a74569889688"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

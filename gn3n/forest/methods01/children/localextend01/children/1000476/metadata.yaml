@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1f18226f7be687d6ff72c80d62a4908d663da847c4944dd8af0e090c7b2936d7"
 created_at: "2026-09-29T18:41:26.543207+00:00"
 id: "1000476"
 last_elevation_revision: 8656
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two Hamiltonian five-sets with a common four-core yield a Hamiltonian six-set or four-good-deletion transport"
+statement_sha256: "e3a0a710a29ef83004304e024e505e04a9433966cab4d1b535ad7cd960bdbbd8"
 substantive_worker_ids:
   - 637
 support_reason: "current_certified_premises"

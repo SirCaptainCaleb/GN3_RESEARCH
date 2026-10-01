@@ -6,6 +6,7 @@ Let v have phi(v)=2q-2 and let e={x,v,u} be a potential-charged ascending nonspe
 
 ## Body
 
+
 Let v have endpoint potential p=2q-2, and let e={x,v,u} be a potential-charged ascending nonspecial edge of rank q, with v terminal and phi(u)>=p.
 
 Fix any p-edge path

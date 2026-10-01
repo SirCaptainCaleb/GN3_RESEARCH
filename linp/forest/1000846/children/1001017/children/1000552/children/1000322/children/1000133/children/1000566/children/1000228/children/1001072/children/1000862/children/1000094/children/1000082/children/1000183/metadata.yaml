@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "15dd8ac8f8b9db7e762ea9497f4c5a8ac88ed1b3c1c9dd690e946d4cf5adb113"
 created_at: "2026-09-24T02:27:43.088819+00:00"
 id: "1000183"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rainbow connector paths through contracted forest triples double their length."
+statement_sha256: "0f1c56789b1f8c04e7fdb8c37f6edba294391fd6f1462d44caafcb71fa099c91"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ For an alternate (ell-2)-edge wrong-entrance witness Q in a spanning top-rank co
 
 ## Body
 
+
 Let Q=(h_1,...,h_s) with s=\ell-2 be one of the alternate wrong-entrance witnesses from 8e4a8307bc49, ending in e. Let u,v be the two free vertices of h_1 at the opposite end, and put
   W=V(Q)\setminus h_1,
 so |W|=2s-2=2\ell-6. Let O=V(H)\setminus V(Q), so |O|=2.

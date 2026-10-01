@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the order-thirteen mu=6 shell, let Q be a Hamiltonian six-set with deficient seven-complement X, and D={t in X:X-t is Hamiltonian}. If |D|>=3, then either two canonical covers (X-t)|Q have relative-order disagreement, yielding the standard reversed-edge/reversing-triple/tight-cycle witness, or |D|=3 and the three covers are pairwise compatible on one four-vertex core P=X-D with one common insertion gap; the transitive precedence case is exactly a 2+2 gap, and a cyclic endpoint gap enters the certified four-kernel frontier. Separately, if distinct a,c in X give order-preserving singleton replacements at the two endpoints q_0,q_5 of Q=(q_0,...,q_5), then those replacements splice to a second globally longest six-path on (Q-{q_0,q_5}) union {a,c}; the associated deficient supports N_a=(X-{a}) union {q_0} and N_c=(X-{c}) union {q_5} satisfy d_J(X,N_a)=d_J(X,N_c)=1 and d_J(N_a,N_c)=2, so X,N_a,N_c form a Gamma-triangle with the two corresponding hybrid single-transfer triangles.
 
+
 ## Body
+
 
 # Three-label producers collapse to a four-core, while opposite endpoint exchanges force a longest-path and support-triangle package
 

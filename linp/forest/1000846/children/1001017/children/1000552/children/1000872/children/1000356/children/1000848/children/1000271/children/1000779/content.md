@@ -6,6 +6,7 @@ Let h_i={y_i,v,z_i}, i=1,2,3,4, be four rank-(q+1) ascending nonspecial edges th
 
 ## Body
 
+
 Let
   h_i={y_i,v,z_i}, i=1,2,3,4,
 be four distinct ascending nonspecial edges of the same rank q+1 through common terminal v, with phi(y_i)=q. For each i let

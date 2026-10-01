@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "3a29c504270113aaa8e46b3334374dbcb66d784c1c0774c8db7127ee2f1b07ba"
 created_at: "2026-09-25T20:40:37.752743+00:00"
 id: "1000024"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "87794aba9e4d9f3e38f096e0c0942c566266c978f9e3dd3b7bb9b4100bf8b424"
 substantive_worker_ids:
   - 220
 support_reason: "The argument that F is not an edge of R_i is invalid when F is the last edge and s=r_i-1. In that case R_i may be a longest F-ending path with last vertex x_i, which is a terminal of F. The proof confuses the last vertex x_i with the entrance into the last edge. Nonspeciality does not rule this out, so the later cycle/localization argument is not justified."

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0d3fcaa0327417772ae435df710f2852084d3836fd80092ff99436c2a3b82ae4"
 created_at: "2026-09-21T18:22:49.156921+00:00"
 id: "1000759"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Ramani (2026): four-edge paths via incidence rank."
+statement_sha256: "8d7bfa82eac77dcd5dafc2924b817c95bc1ba309d42ece7fbc638b396e9e3678"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

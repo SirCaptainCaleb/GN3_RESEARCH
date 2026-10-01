@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "5edbdd1f8bc802f04237aa7e3db62fb0a0702c33a76a173fd250bd6af8b401bd"
 created_at: "2026-09-29T04:27:57.957172+00:00"
 id: "staircase_large_disturbance01"
 last_elevation_revision: 8298
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "From order eighteen staircase minima yield order disagreement, strict descent, or a lower-state cross-component edge"
+statement_sha256: "accf17b215d7d3fe44d4841dd0ebf63f4b0d0f909aa3c9611a9b73a123542b5f"
 substantive_worker_ids:
   - 718
 support_reason: "current_certified_premises"

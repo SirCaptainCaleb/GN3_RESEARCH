@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "27c7b66302033d7217969b603ec25bc614204612d984a2750ae24b694e0ede5f"
 created_at: "2026-09-29T22:10:26.392747+00:00"
 id: "four_side_gap_network_disturbance01"
 last_elevation_revision: 9396
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The four-label gap network forces a positioned junction reversal or a proper tight cycle."
+statement_sha256: "b6b745563ff5bff94eda4cf72aa968c837d99909060d45b7ed9bb0d7eda88b17"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

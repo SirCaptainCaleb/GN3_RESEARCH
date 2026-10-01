@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "0eb94a9ff503a6e3a29a37eb4d2f06a1f25c233bc9d7d6b97c373781f4e153ba"
 created_at: "2026-09-21T20:43:08.082312+00:00"
 id: "1000448"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "High-rank competitor captures all vertices of a lower ascending edge."
+statement_sha256: "42a4ef69e3e76b4e681c6e2e635d91282ad66eca5dd108297f75c37f4b246319"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

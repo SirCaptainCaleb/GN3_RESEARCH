@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "e0ed470eaa368c6d0dc3f2f208ea767c3587cc78b58a5626c7105d1fbb9f6ede"
 created_at: "2026-09-28T02:41:00.796976+00:00"
 id: "1000049"
 last_elevation_revision: 0
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three successful transferred-label insertions create antipodal common-core two-covers"
+statement_sha256: "db3c5ebfdfca14930c5759a3d3161cc0b328e73ae01bec9c6114d2874df10dd6"
 substantive_worker_ids:
   - 660
 support_reason: "current_certified_premises"

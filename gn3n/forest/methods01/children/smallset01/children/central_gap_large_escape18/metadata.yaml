@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "5da86948ac45d2249d3d32d852384073633c484f50f70587e7e20ac3fd06f12c"
 created_at: "2026-10-01T06:12:59.917228+00:00"
 id: "central_gap_large_escape18"
 last_elevation_revision: 10807
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Above order seventeen, two leaves inserted in the same central gap of one ordered four-core force order disagreement or strict quadratic descent."
+statement_sha256: "f30db512e1cd4bb63b467c53b2d577c2a34d3f975a82291fe72ec82079911c76"
 substantive_worker_ids:
   - 922
 support_reason: "provisional_unaudited"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "82575b24ab24f7033b31d385356478aa87c5655de21138d1d4db0b0e75ff7610"
 created_at: "2026-09-27T00:59:40.10919+00:00"
 id: "compatuniformdisturb"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "One deletion state carries linearly many uniform disagreement witnesses"
+statement_sha256: "142c11535dc316ad2fdca3c0af2d7217e2aaba9aba0f2c35a141910abf2a09bc"
 substantive_worker_ids:
   - 607
 support_reason: "current_certified_premises"

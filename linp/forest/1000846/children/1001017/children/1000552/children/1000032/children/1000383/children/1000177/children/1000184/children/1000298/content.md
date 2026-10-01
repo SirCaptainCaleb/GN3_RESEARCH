@@ -6,6 +6,7 @@ In the top-boundary q,(q+1)^3 setup, suppose the right joint d=g_q∩g_{q+1} is 
 
 ## Body
 
+
 Use the top-boundary notation:
   p=2q-2,
   P=(g_1,...,g_p) ending physically at v,

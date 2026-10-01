@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e4a8d5af92016dfe9198c2812f6ac83af4fd0f0ee03de63b55bcf3ccfdd1ba9f"
 created_at: "2026-09-29T23:47:05.747723+00:00"
 id: "five_three_no_sixcycle01"
 last_elevation_revision: 9533
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The neutral three-five forward exchange graph has no directed six-cycle."
+statement_sha256: "2854fd16f4e3d63175e1f924f3ee1b94a60d04e2caf315064bc3dd3b1b67d7de"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

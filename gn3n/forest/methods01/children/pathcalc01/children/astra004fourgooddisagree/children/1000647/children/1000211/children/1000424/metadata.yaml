@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "1855183a65ff6c5439a445d2f6b4b9f23a3f4253f91a2f3985557522c3c8d590"
 created_at: "2026-09-28T17:21:44.88304+00:00"
 id: "1000424"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every minimum counterexample contains a reversible consecutive pair."
+statement_sha256: "132fe61a16a5939d36a89f54f12de45d8b9160c01c7e7d9a14e9012208cd40f7"
 substantive_worker_ids:
   - 659
   - 703

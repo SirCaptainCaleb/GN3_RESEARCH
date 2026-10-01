@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "617478e88051ec6c37cead3eda59ff9fabe34d6a589055364e47574d80f94579"
 created_at: "2026-09-22T15:05:28.447792+00:00"
 id: "1000814"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The diagonal square G₀⊗G₀ contains a 33-edge linear path, so its normalized density at the first forbidden path length is below one third."
+statement_sha256: "66ad57fd61bfc80b8f08863ba7ea3888cf0de5f19fdb410a2364480ac48914d6"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

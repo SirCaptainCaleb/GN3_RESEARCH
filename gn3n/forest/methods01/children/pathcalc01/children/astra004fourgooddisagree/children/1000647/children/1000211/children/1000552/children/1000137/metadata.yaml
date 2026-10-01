@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1070bbb12db54a7787d9c8a5f45dfa7c9cb279d988352b917162973da545a606"
 created_at: "2026-09-28T17:27:44.415642+00:00"
 id: "1000137"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The pure cycle residue forces a genuine reversed pair or a complement endpoint hook."
+statement_sha256: "8928a8dc232f1cbeeadc2f87e937e2f57c699ae286a1b3fb81f04a285b017b2b"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f96accb5a5343fbf70ae99eb05c0d04c1edf9e135f389ab2cfc3f15da8f4769d"
 created_at: "2026-09-27T20:15:45.592553+00:00"
 id: "1000471"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Canonical-bridge descent alone does not rule out trapping."
+statement_sha256: "1ed4fdd50785b88b9054a55c6b01c770993b5b7aa56d7d789a62146c8fe6e4d3"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

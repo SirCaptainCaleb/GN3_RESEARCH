@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let G be a boundary tournament and let x,y be distinct vertices such that all four states
 G, G-x, G-y, G-{x,y}
 are non-Hamiltonian with path-cover number two. Suppose x and y are internal in every two-cover of G.
@@ -29,7 +30,9 @@ there is at least one cross-class ordinary edge. If there is exactly one, it joi
 Thus across the three lower states of the full square, every minimum-crossing cover bypasses the deleted position locally while leaving the opposite top component Q intact:
 A <-> (yB), (Ax) <-> B, and A <-> B, respectively.
 
+
 ## Body
+
 
 Each displayed partition in the statement consists of three nonempty Hamiltonian classes. Hence any two-cover of the corresponding lower state has at least one ordinary edge joining distinct classes: if a two-cover had no such edge, its two components could occupy at most two of the three nonempty classes.
 

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5ef6f9cd8bd5e4ff007532e757ec66d66308bc9470a46566620f9625e14c983d"
 created_at: "2026-09-29T22:12:42.135178+00:00"
 id: "deletion_state_disturbance13"
 last_elevation_revision: 9396
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "From order thirteen every deletion state reaches transport, mixed support, or a certified reversal/cycle disturbance"
+statement_sha256: "e92b7324136204130c0c6a4dfb3fae0788047346995695b721ea47eab67113a8"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

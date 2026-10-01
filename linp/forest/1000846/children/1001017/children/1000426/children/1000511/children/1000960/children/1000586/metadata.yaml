@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a9e04d267e92791013708346a660ae4b7038e7781c752c071fbe73dafd8d51f8"
 created_at: "2026-09-21T18:44:53.20259+00:00"
 id: "1000586"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a linear 3-graph with incidence matrix N and intersection adjacency matrix A, N^T N=3I+A, so rank(N)=m-mult_A(-3)≤n."
+statement_sha256: "f4c2fa6b6053a57ca2886c3abb82a7c272f0ce6f9254dc2359b592f263613314"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

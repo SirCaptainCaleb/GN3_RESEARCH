@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "76f10612a170c254e63fc92c41a04ba856984fb8fca4fec3916de627a6234b71"
 created_at: "2026-09-24T13:35:00.30186+00:00"
 id: "1000666"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Entrance rails on a flat gap-one terminal cycle are blocked on both sides within distance two."
+statement_sha256: "fdb45be79ae6378c03bfb9c12f01d8eb3ee70d283b9be85994174c433852a02b"
 substantive_worker_ids:
   - 223
   - 209

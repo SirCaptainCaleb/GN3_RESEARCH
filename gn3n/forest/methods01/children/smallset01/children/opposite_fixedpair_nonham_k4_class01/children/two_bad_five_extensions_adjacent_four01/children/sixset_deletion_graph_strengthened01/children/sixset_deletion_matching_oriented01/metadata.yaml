@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "be7abf81759edd267c6997aca23f292ecddeb84bbdad82b7e1912af23ddca952"
 created_at: "2026-09-29T21:50:02.809285+00:00"
 id: "sixset_deletion_matching_oriented01"
 last_elevation_revision: 10287
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The six-set matching exception has a canonical orientation split and complete hook rectangle."
+statement_sha256: "dad74a99829f86cb0f3957af1b4e930130845a5d9732ed11825dc685cf073bac"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

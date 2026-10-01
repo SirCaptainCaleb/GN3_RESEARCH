@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "8f507ffa985232db49fb375dd7736d27f54434eb5d90333c15ff29b3cbabd051"
 created_at: "2026-09-21T04:30:14.717272+00:00"
 id: "1000517"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Unique endpoint crossings synchronize onto one complementary component."
+statement_sha256: "01604d70dd7e4460c19e8271c55838c4b9a51ee5bc3ed9afc6c003cf8074b97d"
 substantive_worker_ids:
   - 598
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2bb5c341f418dda162825ac6b9be99704ef8f0e31f92f4e0df60917989082b53"
 created_at: "2026-09-22T20:25:00.91053+00:00"
 id: "1000468"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every state in the boundary fixed-target entrance-path rotation graph has positive outdegree, so the finite directed rotation graph contains a directed cycle."
+statement_sha256: "511d01e79a0ca7226722d89f663c97229d10d74b16ea6b70fe9179bc47a379d5"
 substantive_worker_ids:
   - 195
 support_reason: "current_certified_premises"

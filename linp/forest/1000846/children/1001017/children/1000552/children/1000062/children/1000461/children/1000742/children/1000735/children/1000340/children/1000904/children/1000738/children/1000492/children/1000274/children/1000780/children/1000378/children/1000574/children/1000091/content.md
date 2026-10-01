@@ -6,6 +6,7 @@ Let e={x,v,u} be ascending nonspecial of rank q with phi(v)=q+1 and v terminal. 
 
 ## Body
 
+
 Let H be a finite linear 3-graph. Let
   e={x,v,u}
 be an ascending nonspecial edge of rank q, with v terminal and

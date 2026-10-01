@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2b57d37046586ae2ed989fc0a3b4a0452da3e48de4dcd20479959fc06e2eeaf7"
 created_at: "2026-09-23T04:16:01.744922+00:00"
 id: "1000912"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Rank-three incoming localization is sharp at rank four."
+statement_sha256: "87c712e5cf815abfba1881581cfbc0767e6ee3c81eaf6fec07e557c0cdbb234d"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

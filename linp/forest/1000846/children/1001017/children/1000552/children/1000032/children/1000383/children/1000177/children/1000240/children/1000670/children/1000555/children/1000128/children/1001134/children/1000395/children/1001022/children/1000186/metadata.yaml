@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6ebc82b886fe368adb94a959a6a7d48776a33f4c67d11fa93ad99c20e5b660f7"
 created_at: "2026-09-24T22:15:48.622438+00:00"
 id: "1000186"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Overlap-maximal maximum path pairs admit no clean complementary switch."
+statement_sha256: "0305e6aa40c394fc3ce27243ad4351e30eca856f6cc0184af671f8d5a2352485"
 substantive_worker_ids:
   - 249
 support_reason: "current_certified_premises"

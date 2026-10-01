@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8689837ee5b2232e6f6479d7df4c16dac93310b669cf983157f9dc2d723fb5c8"
 created_at: "2026-09-24T05:23:48.480284+00:00"
 id: "1000404"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Three critical high entrance rails force a two-vertex overlap."
+statement_sha256: "1b81978c1aebf18c8b7704bd11063bf80418058f3177296c4f00b21be6f8a6fd"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

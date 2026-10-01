@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "422abad4de5d869ee25105f4d49a380b3024ebbd03e93f6532a3ce728fce8d50"
 created_at: "2026-09-27T04:43:03.3804+00:00"
 id: "compatgaplocal24"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Adjacent-gap concentration yields a reverse cross triple or a common-gap four-set"
+statement_sha256: "10c1e6f3c721cc7ed771b245174121b0029409e557d25ffca78b2ac76bc3cb5d"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Retain the setup of 80e2e6b25cab. Thus Q is a rank-q anchor path ending at v, R=V(Q)\h, P is a maximum p-edge path ending at v with U=V(P)\last(P), and every switching edge f in a family F through v satisfies
   |C_Q(f)|>=2,
   C_Q(f)=(f\{v}) intersect R,
@@ -31,7 +32,9 @@ Consequently, if |F|=D, then either there is a retained crossing matching of siz
 
 For r=3 the external case is impossible: |C_Q(f)|>=2 already exhausts the two vertices of f\{v}. Thus the dichotomy collapses to the ordinary anchor-to-maximum crossing matching used in the 3-uniform gap-one theory.
 
+
 ## Body
+
 
 Fix f in F. Distinct edges of F all contain v, so linearity implies their off-v vertex sets f\{v} are pairwise disjoint. It is therefore enough to verify the asserted location of the chosen vertices edge by edge.
 

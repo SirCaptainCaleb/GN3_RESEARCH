@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 In the order-thirteen mu=6 shell, let S be a Hamiltonian six-set, R=V(H)-S its deficient seven-complement, G the Hamiltonian-support odd graph, and Gamma the Johnson-radius-three deficient-support graph. Then deg_G(S) equals the number of r in R for which R-r is Hamiltonian. If a Gamma-neighbor R' of R has degree two, then the acquired triple R-R' consists of Hamiltonian deletion labels of R, so deg_G(S)>=3. Conversely, all legal transfers r with R-r Hamiltonian produce deficient supports S union {r} forming a clique K_deg_G(S) in Gamma. Hence inside a 2-regular Gamma component, disjoint Hamiltonian supports force deg_G(S)=3; in the sliding-triple representation this yields T_{i-2}=T_{i+1}.
 
+
 ## Body
+
 
 # Odd-degree repulsion and transfer cliques rigidify radius-three equality
 

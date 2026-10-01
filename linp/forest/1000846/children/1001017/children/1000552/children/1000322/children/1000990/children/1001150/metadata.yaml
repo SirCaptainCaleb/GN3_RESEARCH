@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "187ee3a4471aeb48f8d03371c0e3849abae17f2d3376e1accd60e20f4ca1c6b7"
 created_at: "2026-09-24T02:53:20.103421+00:00"
 id: "1001150"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Threshold-cover plus sharp deletion kills the strict Turan layer for ell at least six."
+statement_sha256: "e43d6d855fea428b8eec0fd426b972ae74737e0b5410ad53504f3a2abefabd4e"
 substantive_worker_ids:
   - 185
   - 254

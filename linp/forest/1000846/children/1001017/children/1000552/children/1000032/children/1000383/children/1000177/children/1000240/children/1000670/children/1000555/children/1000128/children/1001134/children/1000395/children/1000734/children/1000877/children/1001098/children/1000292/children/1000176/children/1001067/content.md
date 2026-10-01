@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let e={x,v,u} be an ascending nonspecial edge of rank r, with unique entrance x, and let
   S=(s_1,...,s_{r-1})
 be a maximum source path ending at x such that S,e is a longest r-edge path ending in e through x and S avoids u,v.
@@ -26,7 +27,9 @@ For the precursor of a rank-q ascending anchor path this specializes to
   t <= q-r-1
 in the unobstructed forward orientation.
 
+
 ## Body
+
 
 The R-side T contains u but, by definition of the side opposite x, contains neither x nor v. By source cleanness, S avoids u and v.
 

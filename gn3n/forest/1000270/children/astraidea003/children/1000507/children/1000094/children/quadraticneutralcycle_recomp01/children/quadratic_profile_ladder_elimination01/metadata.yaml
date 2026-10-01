@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "c4b7411ab851ef834b0aaffe04037a5c84cd74e397009838b618a72b448a7146"
 created_at: "2026-09-30T13:11:44.642103+00:00"
 id: "quadratic_profile_ladder_elimination01"
 last_elevation_revision: 9925
@@ -70,6 +71,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Trapped quadratic minima admit a profile-independent obstruction and disturbance reduction"
+statement_sha256: "2be883fc6ace344f34dd2ebbfe2900cab67a367ab1181daa6992683d78348c1c"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

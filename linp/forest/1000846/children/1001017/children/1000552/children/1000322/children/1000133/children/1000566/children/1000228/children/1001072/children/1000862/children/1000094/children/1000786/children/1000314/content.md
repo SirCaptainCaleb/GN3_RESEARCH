@@ -6,6 +6,7 @@ In the zero-slack |D|=k critical-core setting m+2c=2k with c=2, some physical fo
 
 ## Body
 
+
 Assume the zero-slack |D|=k critical-core setting m+2c=2k and c=2. Let the two forest components have lengths a,b, so
   a+b=m=2k-4.
 

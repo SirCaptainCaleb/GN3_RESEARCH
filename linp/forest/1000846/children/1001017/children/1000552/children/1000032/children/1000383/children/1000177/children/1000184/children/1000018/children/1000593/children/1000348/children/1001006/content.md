@@ -35,6 +35,7 @@ with
    z_L∈V(g_{q+1}∪...∪g_{2q-3}),
    first_P(z_R)<=q-4.
 
+
 ## Body
 
 We use first-occurrence coordinates for prefix splices, so a joint blocker is met only on the final retained prefix edge.

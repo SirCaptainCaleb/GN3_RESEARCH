@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "389ae6b9d045fb5b6cc8b28aa9492a422411bdea1d1180e3db6c5999006805f8"
 created_at: "2026-09-21T22:53:36.980709+00:00"
 id: "1001152"
 last_elevation_revision: null
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimal-counterexample minimum-degree reduction."
+statement_sha256: "b39eff81a6a4d3a3abf4a41ec35a8bafa3cff4736926219df8761241176f13ca"
 substantive_worker_ids:
   - 262
 support_reason: "current_certified_premises"

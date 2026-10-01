@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e9ae7881d104a32857c0fa4ccf05be3f9c68e8ae4540a9c09c357828f7236399"
 created_at: "2026-09-25T20:30:48.773318+00:00"
 id: "1001058"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A forward whole-chord reintersection pays a nonspecial cycle budget."
+statement_sha256: "b27d4e88503f1b5d5adc46b103ec95e3ce4b96d5e76fff1b996ad3365c256f7b"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

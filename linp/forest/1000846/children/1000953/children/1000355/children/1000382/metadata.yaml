@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "638fc07543545160971da84cc0510b426cb45bcf0e7bbe723f3a0a582f6e78cc"
 created_at: "2026-09-23T04:23:35.289842+00:00"
 id: "1000382"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Odd-order additive Latin blow-ups lift every base linear cycle."
+statement_sha256: "8ecbdbd14a329dbfc3e7c401f7c735795ab18f3d111094d9c2c22e27291fbdd2"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

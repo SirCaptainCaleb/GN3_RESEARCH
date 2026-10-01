@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "10717b9904eedfc859eb89073e5e2cdaca019a267e1e136cb2b46d1bfde1b090"
 created_at: "2026-09-27T19:36:38.824297+00:00"
 id: "1000548"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two noninsertable exterior vertices on one path have a universal structural alternative"
+statement_sha256: "7994da76681a8c88a2bc3a851c49d96946c4fbce543dcee121e8d73987907e17"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "9175e29596b1fc928be4ead5a258ef0a0345ff176e804d01f26145d09895909f"
 created_at: "2026-09-24T05:26:16.612283+00:00"
 id: "1000665"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At p=2q-3 terminal-only non-double witnesses are pushed to the left central slots."
+statement_sha256: "807c7bd90db809487bc2b7ed12bf72f49e44914ef6beb25229d8a8742cf0568a"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

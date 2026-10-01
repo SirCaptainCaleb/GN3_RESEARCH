@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f88b2bfc180382510c300bcb3cc393341e89b71e32fba635bff078a26ec59af9"
 created_at: "2026-09-25T21:22:59.922767+00:00"
 id: "1001158"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A long entrance-side replacement region pushes cycle-neighbor gates outside the common-path interval."
+statement_sha256: "216d0f69203786075b7a8156c9ac30864ba4f043e875471e9c459312e93478f1"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

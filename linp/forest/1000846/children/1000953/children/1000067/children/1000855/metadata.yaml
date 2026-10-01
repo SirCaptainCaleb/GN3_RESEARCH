@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "ec07d8b9c376b046961e28dd0af9528eaed8a1fe56de78be6a1f62a23e020297"
 created_at: "2026-09-22T14:36:34.08037+00:00"
 id: "1000855"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "PG(4,2) contains a spanning P_15 on its 31 points, ruling out a direct extension of the PG(3,2) lower-bound obstruction."
+statement_sha256: "04d194e2e484c862cee8f293eaf961e6b78fe29e8c87524344bd431570bf39a7"
 substantive_worker_ids:
   - 178
 support_reason: "current_certified_premises"

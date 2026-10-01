@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "18f874889c4f3e9db69a877295c124620af7932c1420a74c72bb36d41bda6885"
 created_at: "2026-09-22T15:23:53.061521+00:00"
 id: "1000899"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In two residue classes modulo four, sufficiently large maximum degree already forces a binary incidence-code word of weight ℓ+2, preventing the missing-weight certificate from beating density ℓ/3."
+statement_sha256: "72953e1509d78271039c9c035b4a5728651f319b94b8e88a836ebe2e199b28eb"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "53145666bb5c4708a0b9738536002b0c24cf73d49237eab093aee93d16806c24"
 created_at: "2026-09-28T02:39:18.305749+00:00"
 id: "1000765"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The neutral endpoint-attachment move is a fully compatible omission swap."
+statement_sha256: "7e05c1db25c2c113d78d6d0826f7c310af7fe3b9149eb52591804219ec1d17b6"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8d519e2bfd185e6646cd98d027ded0a61b7809d518987d24ebaf7c36ea29cb1f"
 created_at: "2026-09-22T04:48:31.587677+00:00"
 id: "1001117"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Type-A loss-one branch: terminal-theta structure and its flat-transfer refinement force either a common entrance configuration or a rainbow equal-rank terminal triangle."
 simplified_statement: "Loss-one case A forms a terminal theta consisting of a common long branch and two terminal branches, producing two q-cycles and one 3-cycle."
+statement_sha256: "9787701af7fb1db96def9a378274857c111b502b17495d828efb86432ddd589c"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

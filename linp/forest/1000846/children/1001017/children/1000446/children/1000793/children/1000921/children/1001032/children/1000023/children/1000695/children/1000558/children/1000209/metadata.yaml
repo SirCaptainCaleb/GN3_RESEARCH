@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "f6b7b46f10c5b9220af2147a3469581aeeb6e393f754988b8934fb715e789fd2"
 created_at: "2026-09-24T03:17:08.275892+00:00"
 id: "1000209"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The density-plus-seven-sixths potential bound is never attained in the dense regime."
+statement_sha256: "037b234de9451f78297f05eb426bb37b329c2716a0dced8aad9e45d47bded9a5"
 substantive_worker_ids:
   - 229
   - 254

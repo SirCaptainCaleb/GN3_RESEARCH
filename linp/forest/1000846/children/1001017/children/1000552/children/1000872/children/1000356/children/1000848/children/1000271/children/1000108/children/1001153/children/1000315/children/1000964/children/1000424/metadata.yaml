@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "fc73e83b5d0de5aec28d077f2b2a946b06bccde02ad7fe151dbd1ad874ec5d9a"
 created_at: "2026-09-24T05:58:10.4385+00:00"
 id: "1000424"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The rising low-terminal odd-boundary branch is impossible."
+statement_sha256: "3649fc56541a30271bb0d909bb43d2ec1c2443b197d5260fcf384412f64ae688"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "991b63ed6beb360083b7603dc6479fa596f4f4d3787a46bac278f5054232d6ff"
 created_at: "2026-09-22T15:28:48.604011+00:00"
 id: "1000056"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A spanning path in the signed-projective normal form induces quotient data satisfying A_Q y=p and a switching-invariant signed parity identity."
+statement_sha256: "0e06d2822150b7f2eea19bee40178b86b10d3b500352d6558e33d7e559e76e5f"
 substantive_worker_ids:
   - 178
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "808130bfa423180d5886cdb651ca64b0d4fa9a04a3b08d8365b9fc6925256ffd"
 created_at: "2026-09-24T18:37:25.910175+00:00"
 id: "1000292"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Lens-free whole-chord braid program: retain many distinguished source-terminal pairs, localize whole ascending chords on avoiding rails, and force source-rail returns, repeated intersections, rank-bounded cycles, or controlled exchange patterns."
 simplified_statement: "Lens-free near-top rails retain twenty-five-eighty-eighths whole distinguished pairs."
+statement_sha256: "959a940166efaf5eb4a734c994ac8eea6b878eea7ff855264da4a5ca9e05ca51"
 substantive_worker_ids:
   - 250
 support_reason: "current_certified_premises"

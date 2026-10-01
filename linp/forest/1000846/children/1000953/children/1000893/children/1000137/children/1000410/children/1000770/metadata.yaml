@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ec6d960b91f012f936d8c686020e53c2cc6975c506d332e87ebbe55d86ab7d78"
 created_at: "2026-09-22T19:32:00.278096+00:00"
 id: "1000770"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a spanning path P in an additive triple system, the P-even F_2-colorings form a space of dimension r+1, and every additive triple outside P is odd in exactly half of those colorings."
+statement_sha256: "f395ada365e98282cdb23e093ea0bedc0f1aede52d10104d9549c7471a350762"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "17074f65d578898a8ed1d4ab633b4fb0594fd4bcdc0f2013b3978c035e192a95"
 created_at: "2026-09-27T21:21:27.960136+00:00"
 id: "1000394"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Opposite-end neutral transport square: opposite endpoint deletion covers with intact inherited blocks force radius-two migration or disagreement; the neutral residue closes to a common-middle square whose synchronized complements either Hamiltonize or create doubled endpoint barriers."
 simplified_statement: "Opposite endpoint deletion covers with intact inherited blocks force a radius-two support migration or order disagreement."
+statement_sha256: "744d641820629eec76da5440842364c28b1e98297c64ff9ffd1bff0de1582fd7"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

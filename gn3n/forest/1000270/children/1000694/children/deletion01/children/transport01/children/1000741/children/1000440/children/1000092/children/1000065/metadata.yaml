@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ed33a4ca9648a0079dad6e3f8a642f4d4032c80e6dbadfa3410cccace1236849"
 created_at: "2026-09-27T21:22:34.820085+00:00"
 id: "1000065"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Exact Mantel density forces a quarter-family of one uniform disturbance type."
+statement_sha256: "28e5f6639cd700bb21a40e5141cf695f6ad910e5077630e6eadea215f805979f"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

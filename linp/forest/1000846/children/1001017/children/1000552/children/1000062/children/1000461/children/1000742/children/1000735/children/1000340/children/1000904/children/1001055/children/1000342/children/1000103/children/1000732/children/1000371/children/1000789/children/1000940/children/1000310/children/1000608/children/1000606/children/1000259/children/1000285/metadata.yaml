@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "33334ce9269fe9699a723a07b1886d841ba5994d52c8a64a30a020ecc0f361ae"
 created_at: "2026-09-24T19:26:06.417802+00:00"
 id: "1000285"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A saturated terminal star nearly realizes the period-four singleton extremizer on the opposite source rail."
+statement_sha256: "075183636252eaafcd5dde59cdb047c5a201c875075781331f9ba135482c555c"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

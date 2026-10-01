@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4823b57f6bf2669c22533f4af2dbca8e163345aa3929400b115aef3749aa4a85"
 created_at: "2026-09-27T14:17:05.313794+00:00"
 id: "terminalrankcircular01"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any positive terminal-pair completion rank already exhibits a spanning two-cover, so that rank is identically empty or zero in a counterexample and cannot bootstrap the theorem."
+statement_sha256: "d23dc4a943f4c75081695de18ec39494b222fd9340ce09e9f8ff1b2de8b259da"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

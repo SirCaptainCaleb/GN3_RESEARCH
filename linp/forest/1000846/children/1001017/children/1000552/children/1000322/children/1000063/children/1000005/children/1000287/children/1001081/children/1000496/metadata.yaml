@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "29fa98b0532d65eaae38da916dde486719c764497994f14cc914dbe21f5647f4"
 created_at: "2026-09-24T01:09:41.979196+00:00"
 id: "1000496"
 last_elevation_revision: null
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "General early-or-penultimate localization of punctured-Steiner terminal defects."
+statement_sha256: "0274e37dc5e34f22a1e22ee22040f23eec27e4e0afe50872a568482663f717bc"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

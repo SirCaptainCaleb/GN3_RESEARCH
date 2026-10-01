@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "67d79a51ffc48c6a9887746f56211f576acd6831fdac81b0554457a5c60c679d"
 created_at: "2026-09-24T04:05:59.335111+00:00"
 id: "1000203"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Negative charge at level p pays a fixed branching surcharge."
+statement_sha256: "5faa4eec6c9a303b216f4188f4f22ff4fb451b169638e6b26f311eae0fa02332"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

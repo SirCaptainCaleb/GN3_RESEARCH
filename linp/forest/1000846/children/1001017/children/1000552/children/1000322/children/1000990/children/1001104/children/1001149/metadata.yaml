@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "40a54ae421d52c31dbce4ec93dfdcdc849839bae1853cc79af432393a721f624"
 created_at: "2026-09-24T03:38:40.2484+00:00"
 id: "1001149"
 last_elevation_revision: null
@@ -57,6 +58,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Equality forces a high-degree low-potential ascending source."
+statement_sha256: "71c60b5295759785b8bf3d461857280b271ed506601855edf284a669502d5058"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

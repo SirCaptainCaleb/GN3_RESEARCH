@@ -6,6 +6,7 @@ A minimum counterexample has an exact one-vertex deletion two-cover P|Q. The omi
 
 ## Body
 
+
 # Current composition
 
 Assume the grand conjecture is false and let H be a minimum counterexample.

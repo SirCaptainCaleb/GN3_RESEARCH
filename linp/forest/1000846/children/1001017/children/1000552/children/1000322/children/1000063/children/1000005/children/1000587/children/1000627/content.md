@@ -6,6 +6,7 @@ Let H have 2ell-1 vertices and a spanning (ell-1)-edge path ending in a nonspeci
 
 ## Body
 
+
 Let P=(g_1,...,g_{\ell-2},e) be the spanning path, where e is nonspecial and is entered through x. Let a,b be the two vertices of g_1\g_2.
 
 Fix a. Since a lies only in g_1 among the path edges, deleting a removes g_1 but leaves

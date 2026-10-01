@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "265f8570bbbe5d64c940e9e8527901c000779c92f27d34c8ea203c7b9e64c7c5"
 created_at: "2026-09-28T02:15:43.03812+00:00"
 id: "allequalsupporttriangle_recomp01"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "All-equal matching-cube support-triangle program: antipodal equality produces three coupled Hamiltonian supports with blocked whole-path enlargement; reverse boundary triples, endpoint barriers, mixed supports, greedy transport, and coarse crossings then force a canonical disturbance or closure input."
 simplified_statement: "All-equal antipodal exchange yields the support triangle with blocked whole-path enlargements"
+statement_sha256: "30fd14547c927af54594ea9076997d368a3a4e04e5ac346d01b2cadea661260a"
 substantive_worker_ids:
   - 652
 support_reason: "current_certified_premises"

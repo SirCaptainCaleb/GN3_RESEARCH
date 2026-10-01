@@ -6,6 +6,7 @@ If a linear 3-graph H satisfies |E(H)|=d|V(H)| and minimum degree at least d+1, 
 
 ## Body
 
+
 Let H be an n-vertex linear 3-uniform hypergraph with
   |E(H)|=dn
 and minimum degree at least d+1. Put

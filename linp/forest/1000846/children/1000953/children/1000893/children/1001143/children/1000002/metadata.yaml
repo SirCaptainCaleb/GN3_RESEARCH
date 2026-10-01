@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "75db97eb1986105e589a0cc27f8c958677c6a8bf04ce35e5a518ceb32698dd90"
 created_at: "2026-09-22T18:50:46.6841+00:00"
 id: "1000002"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Among critical induced Boolean Schur systems, strict improvement over the generic density bound occurs only at lengths 3 and 7: all larger projective and two-point-deleted projective candidates are Hamiltonian."
+statement_sha256: "03e044f84f1dad27299e4b92247ff134ed1b6c6b87ababfbd0596f75e582e27e"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "57d5dea774a3f9ad3dda612618507ce4cc54c586b241be8624804b4c792e2733"
 created_at: "2026-09-28T17:07:33.325679+00:00"
 id: "1000502"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Every vertex becomes exposed on a minimum-potential plateau"
+statement_sha256: "5d3511d33e82df2dc0697bb482ad275f6a543b3deabd4fc7d7bb111aaf93e412"
 substantive_worker_ids:
   - 626
 support_reason: "not_a_proved_or_evidence_claim"

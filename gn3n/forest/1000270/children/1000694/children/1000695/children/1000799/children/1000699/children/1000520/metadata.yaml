@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f6c54de466819431dff569ff9abb3f8c8fbcedbcb78ece48b099f9511ddd1f6c"
 created_at: "2026-09-27T21:49:51.962807+00:00"
 id: "1000520"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every two-label core enlargement is non-Hamiltonian in the all-split cocycle branch"
+statement_sha256: "527a979ea6ec73e53983d5d0c9fb451426b3170c1debc566116d09e58e3ea941"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

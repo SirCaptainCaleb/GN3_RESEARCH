@@ -6,6 +6,7 @@ In an exact-density P_ell-free equality obstruction with n=6d+3 (Steiner deficie
 
 ## Body
 
+
 Let H be an exact-density P_ell-free linear triple system with
   |E(H)|=d|V(H)|,  d=floor(2ell/3),
 and suppose its Steiner deficiency is

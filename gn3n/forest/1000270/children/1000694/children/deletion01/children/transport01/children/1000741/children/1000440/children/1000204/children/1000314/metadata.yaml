@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "0f151fcb331bc1f1fa38787ede078b325f07a85d7604d05364536d047f69d5dc"
 created_at: "2026-09-27T20:35:34.287999+00:00"
 id: "1000314"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Anchor-neighborhood compatibility geometry: compatible deletion states form consecutive runs along one anchor path; endpoint-labeled edges then have tightly bounded common neighbors, leading to sparse compatibility, forced incompatibility, or the four-kernel frontier."
 simplified_statement: "Each anchor-neighborhood compatibility component is a consecutive run on one anchor path."
+statement_sha256: "8c84c7e6c7a988b413ccf5461eb0886727bfffdcd0aac6474b946baf6efb8610"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "5c9b1745b0e81b8e4b2af9ee8b9a75841457ba095cc7abea9f7882f3271e2a13"
 created_at: "2026-09-21T13:04:17.485089+00:00"
 id: "1000064"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimal endpoint exchanges force a coupled square-triangle configuration"
+statement_sha256: "3b21e6ba52a440c29bad6d40a9619dd1931ba8b45badb05ac1a9ab1e77acad68"
 substantive_worker_ids:
   - 720
 support_reason: "current_certified_premises"

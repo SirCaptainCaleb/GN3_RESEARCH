@@ -2,13 +2,16 @@
 
 ## Statement
 
+
 In the boundary fixed-target entrance rotation graph, a terminal-label switch occurs exactly when the rotating edge blocks at the opposite terminal sigma(P). Such a switch closes the current entrance path into a linear q-cycle C=(g_1,...,g_{q-2},f,h) in which the fixed target edge f={x,y,z} has cycle joints y,z and private entrance x.
 
 For any edge a!=f through x with at most one additional vertex on C, if a is cycle-clean or its unique extra contact is the private vertex of either cycle neighbor of f, then phi(a)>=q. Since phi(x)=q-1 forces every edge through x to have rank at most q, every such favorable ear has rank exactly q and is either special or ascending nonspecial with unique entrance x.
 
 Moreover, among edges through x other than f, if C_0,S,D count those with respectively 0,1,2 non-x contacts on the q-1 edge path C-h, then 2C_0+S>=2. Hence every switch cycle exposes either a clean favorable rank-q ear or at least two distinct one-contact ears; neighboring-private one-contact ears are favorable in the same sense.
 
+
 ## Body
+
 
 A single-blocker rotation changes the terminal label precisely when its unique blocker is the terminal sigma(P) opposite the predecessor joint tau(P). In that case the rotating edge h meets the old path only in the opposite endpoint a on g_1 and sigma(P) on f, so adjoining h closes the path into a q-edge linear cycle. The two cycle neighbors of f meet f at y and z, leaving x private.
 

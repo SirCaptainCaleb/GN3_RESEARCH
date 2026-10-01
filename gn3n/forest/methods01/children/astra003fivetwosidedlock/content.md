@@ -6,6 +6,7 @@ Let X|P|Q be a quadratic-potential-minimal trapped three-cover with |X|=5 and |P
 
 ## Body
 
+
 By astra003fivethreeendpoints, choose x in V(X), with D=V(X)-{x}, such that D union {e} is Hamiltonian for at least three of the four endpoints of P and Q. Apply astra003fiveswapobstruct to these synchronized endpoints.
 
 If any corresponding support exchange exists, we are in the first alternative. Suppose therefore that none exists. Among at least three endpoints drawn from the two endpoint pairs of P and Q, two belong to the same path. Call that path

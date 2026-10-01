@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "240ff2025f3493644aeebee03dad5642b83ebb14c05280d7911924b092565316"
 created_at: "2026-09-24T05:47:09.131077+00:00"
 id: "1000004"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "High 0-1-1 edges at the odd boundary have reciprocal central-gate normal forms."
+statement_sha256: "dacc6deadd0fcfb94dcbbefe0c24b00b0a32797163bd9b193f426e2dc9708680"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a20acd6503847285cf9387441388553cb215253c7b4845f83d3c243446ee661c"
 created_at: "2026-09-24T13:18:32.65593+00:00"
 id: "1000091"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Gap-one top-rank edges either pay to alignment or move nondecreasingly in potential."
+statement_sha256: "5c8388ad47bdd1c63473da7ceec2de9216236cd54831d349403966853ff74c07"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

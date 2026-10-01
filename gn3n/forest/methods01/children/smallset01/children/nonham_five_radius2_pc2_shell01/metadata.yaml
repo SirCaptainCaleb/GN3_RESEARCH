@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "91dce84eb6f1f5c1c2686dbe6c7bc7d1dd6e10f6ef59438d8af3b1ebd00b91fd"
 created_at: "2026-09-29T21:15:33.029352+00:00"
 id: "nonham_five_radius2_pc2_shell01"
 last_elevation_revision: 9251
@@ -29,6 +30,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A non-Hamiltonian five-set forces a radius-two path-cover-two shell on its complement."
+statement_sha256: "7e701811cf2d3fcdfc4db4643abde0f9b4f5e9d056b2ebe3a604d868f6d3bee8"
 substantive_worker_ids:
   - 579
 support_reason: "provisional_unaudited"

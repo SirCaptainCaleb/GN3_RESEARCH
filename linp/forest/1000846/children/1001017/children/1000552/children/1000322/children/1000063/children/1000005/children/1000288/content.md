@@ -6,6 +6,7 @@ A proposed induction for 3delta<=2L+2 tracks a nonspecial target edge together w
 
 ## Body
 
+
 Goal: prove the grand nonspecial-edge inequality
   3 delta(H) <= 2L+2
 whenever H contains a nonspecial edge, where L is the global maximum path length.

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1d633f5ecf038909fa06e381bf33a18a7dd93caa8bb0d463870e914942ce8aa5"
 created_at: "2026-09-24T04:01:20.513535+00:00"
 id: "1000810"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Vertex charge and density deficit obey an exact deletion recurrence."
+statement_sha256: "ad6e0e66867f465458f95b791b0e8ce74df9f81e53e6c9d65875ca907ae4b67e"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

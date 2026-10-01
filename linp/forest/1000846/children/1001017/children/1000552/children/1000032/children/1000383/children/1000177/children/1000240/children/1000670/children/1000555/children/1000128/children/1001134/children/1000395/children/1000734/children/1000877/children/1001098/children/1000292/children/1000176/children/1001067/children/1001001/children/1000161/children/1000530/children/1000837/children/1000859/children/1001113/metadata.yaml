@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "311ba15b9bf60b17c5cc95c9c8a4945dd0575008475a7597b2767000081c1191"
 created_at: "2026-09-25T21:03:46.302104+00:00"
 id: "1001113"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Large narrow-rank exchange families reduce to repeated source overlap or laminar host intervals."
+statement_sha256: "310ec232113de211b8ce39b8158f665c4aa7b2cecc76503e2670c02adae5c396"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

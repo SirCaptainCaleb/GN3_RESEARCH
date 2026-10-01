@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "45128e040a8f97ad51bdf604b8c7fe7670811caf619b11a934153c282e0f243b"
 created_at: "2026-09-24T03:03:13.726745+00:00"
 id: "1000921"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Special/nonspecial incidence compatibility gives the d plus five-sixths potential bound and rigid equality."
+statement_sha256: "26812d2d4cbf1129f34de510bb20319549daed64d3880ef307a44198ee1ca50f"
 substantive_worker_ids:
   - 229
   - 254

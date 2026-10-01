@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "77fcb32c0ca74cadc38e4613b48e4fdd9ea4ce065d5c55dbb9bf133e4eeb2897"
 created_at: "2026-09-24T02:55:58.216534+00:00"
 id: "1001123"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Ascending terminal density would reduce equality to the single critical residue."
+statement_sha256: "32c1c48dbd9720d5e70896c7b43c7f8f0c44d90af61b01949bf1d2f2c8a6380e"
 substantive_worker_ids:
   - 225
   - 209

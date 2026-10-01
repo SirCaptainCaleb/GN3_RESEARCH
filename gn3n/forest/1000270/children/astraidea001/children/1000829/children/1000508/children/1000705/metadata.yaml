@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f132ff799d05a854d20ab6bb4ce9dab6efcc0f38c1936f75cf22aaa2e41a6d6e"
 created_at: "2026-09-27T14:52:54.09149+00:00"
 id: "1000705"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Neutral support corridors alternate compatibility with forced distance-two support switches."
+statement_sha256: "df2b79d67a42bbaad15300ced6677e5252bd501ec76a6272b54e806b999cfad0"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

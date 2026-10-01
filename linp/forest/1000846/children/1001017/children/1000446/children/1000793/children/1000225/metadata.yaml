@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "722248cd0d7e169a9b8c3d4c92e4aa51eb6a0dff8f3be65979d3123a84b64619"
 created_at: "2026-09-24T02:58:04.084829+00:00"
 id: "1000225"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Potential superlevel cuts isolate ascending edges while retaining all special edges."
+statement_sha256: "6cc23812b95d6bedc4e1fe4eeeaea7983b8258f14a2a571a0f3aedb71ae41ac4"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

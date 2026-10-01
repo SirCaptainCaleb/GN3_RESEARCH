@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2792c4e9cdd2844040bfcaa56d6ac66ffa0ea5af976c322bf47f841fc7fcc44b"
 created_at: "2026-09-24T03:29:49.540147+00:00"
 id: "1000569"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Strict integer form of the ell minus thirteen-sixths upper bound."
+statement_sha256: "ba4e3846f433767e60ec36759a0d90243edde5737336c270ac4e11a7817acede"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

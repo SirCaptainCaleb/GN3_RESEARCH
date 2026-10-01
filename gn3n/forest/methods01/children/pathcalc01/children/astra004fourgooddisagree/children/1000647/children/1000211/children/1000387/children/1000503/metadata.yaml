@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fadffc87343b433aa85ec27cddbe32a68fb0ab72cfff04ad27444fd3e614b18e"
 created_at: "2026-09-28T17:36:29.91351+00:00"
 id: "1000503"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Gap: the proof does not obtain a concrete five/six-window disagreement from 44a0c8ced13c."
+statement_sha256: "a2661551c2eea858954fdc29c66f1b0d196f4f5e6f1b8a52fa175cbb3f5131cc"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

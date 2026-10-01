@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e2dcad0074a984b03a1ab1689dd239064ae998b1d1e6037354cf169ceb86cb1d"
 created_at: "2026-10-01T07:09:49.202001+00:00"
 id: "1000892"
 last_elevation_revision: 10807
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A locally minimal 4|m state (m>=7, n>=12) forces a positioned pc2 square whose endpoint branch already descends or is bounded, leaving only universal internality or support/order disagreement."
+statement_sha256: "1de2be4f8c42028eb595824f74a949ea2347ca138c27ccd96d8b0842850ef688"
 substantive_worker_ids:
   - 1016
 support_reason: "current_certified_premises"

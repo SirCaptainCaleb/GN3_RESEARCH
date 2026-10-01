@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "58954d8ebe3e2b58d446005e0e23215f3c3fbc7b1f6e2f788dc5edbb4279985b"
 created_at: "2026-09-21T00:58:08.999941+00:00"
 id: "1000420"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Rooted-shell branch of supported transport: large minimum deletion sides produce rooted Hamiltonian shells and fixed-defect three-side transport."
 simplified_statement: "Rooted seven-set Hamiltonian shell graph"
+statement_sha256: "affb4ad6b546a2e4da2f4207a45d0e3c478cb6743b6e4485c78a6cc54f374442"
 substantive_worker_ids:
   - 575
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e1bc343f81c7c5c5f6e15229d54fb3371702f60d41bcf933f649b418cd03863c"
 created_at: "2026-09-27T14:16:38.715171+00:00"
 id: "1000666"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The contiguous-path number is the vertex-cover number of the defect line"
+statement_sha256: "99506a6e857e9ac8e03c730dbbf59ab58bdf11b5838f56889584490828aa767f"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

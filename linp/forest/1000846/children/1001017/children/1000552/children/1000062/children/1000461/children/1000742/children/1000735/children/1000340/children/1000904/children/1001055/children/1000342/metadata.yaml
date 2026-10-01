@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "75a6457f7cb7720240a16d702804e6f975b0fc5297e445b88398695afb66e362"
 created_at: "2026-09-24T13:17:15.009237+00:00"
 id: "1000342"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Single-contact central-window geometry: ascending terminal contacts on a maximum path localize to a central rank window, with ensuing packing and rank constraints."
 simplified_statement: "A rank-q ascending terminal edge that meets a maximum p-edge endpoint path only once must meet it in a central window, so p<=2q-2 and at most max(0,4q-2p-3) such contacts are possible."
+statement_sha256: "68de97cd8d73a3a595c4336bd6df0188ba75750804a06eb289389b30a2ceb7bd"
 substantive_worker_ids:
   - 258
   - 209

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "14d474dfa866c13ee08cf303e8d544bd2c609f9a65c1989004f2a8db76681f91"
 created_at: "2026-09-27T19:08:19.549294+00:00"
 id: "1000048"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Compatibility edges lift to one-move adjacency of deletion singleton states"
+statement_sha256: "fec6679fa4971536d477f01f3bf01c11e8c0b507c70316899a239035c2c453c1"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

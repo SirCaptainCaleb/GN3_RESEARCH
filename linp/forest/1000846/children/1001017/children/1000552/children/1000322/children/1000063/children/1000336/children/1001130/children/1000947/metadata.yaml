@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b77ca4517edf8bc98826498ca1417ce0d77966742fe473f90781bfc3a5403fae"
 created_at: "2026-09-22T19:44:39.722725+00:00"
 id: "1000947"
 last_elevation_revision: null
@@ -33,6 +34,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "An all-entrance flat-transfer chain supplies consecutive (q−2)-edge entrance-to-entrance paths, so any closure argument must exploit their labeled overlap and inherited blocker memory rather than generic path overlap alone."
+statement_sha256: "13c0541a0fdfc4633e98236a43b578e5f17aa6cc406aefb73db5ea06183fa66f"
 substantive_worker_ids:
   - 195
 support_reason: "not_a_proved_or_evidence_claim"

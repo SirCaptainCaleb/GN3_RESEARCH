@@ -6,6 +6,7 @@ In the surviving one-low odd-boundary 0-1-1 state with flat opposite terminal ph
 
 ## Body
 
+
 Retain the surviving one-low odd-boundary 0-1-1 state with
   e={x,v,C},
   phi(e)=q,

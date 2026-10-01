@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fd93bb3b22fb00295aa1ee45d9cba4930d01180f1c1ffd8c26c558152ffe58de"
 created_at: "2026-09-27T14:21:18.918304+00:00"
 id: "1000805"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum-imbalance two-covers force nested endpoint-segment Hamiltonicity blockades"
+statement_sha256: "a96ca6f98cfccad304221ac939d82d6d3a26f60af551bedb4cd1d4c42a0e831a"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

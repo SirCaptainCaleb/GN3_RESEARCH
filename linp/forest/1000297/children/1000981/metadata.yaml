@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "26e41a49b6ec3141a5335d18624cdc96e08cdf6587ae251e75bc324e5ae3b3f5"
 created_at: "2026-09-26T04:02:42.416635+00:00"
 id: "1000981"
 last_elevation_revision: null
@@ -26,6 +27,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Conjecturally, every graph whose edges are partitioned into color-cliques with each vertex in exactly three cliques and sufficiently large average color-clique incidence contains a long induced path with distinct consecutive colors."
+statement_sha256: "c0a853e573adf244941264ffb2e62e8fef087948b09cdc4604f887653d594c8e"
 substantive_worker_ids:
   - 226
 support_reason: "not_a_proved_or_evidence_claim"

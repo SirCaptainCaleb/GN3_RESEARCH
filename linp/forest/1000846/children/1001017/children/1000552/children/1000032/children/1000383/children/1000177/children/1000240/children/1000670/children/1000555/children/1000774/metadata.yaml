@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4e1081e85b4c24eaab199d1b909550d3f3467da8194a0f29905bb2a66c943604"
 created_at: "2026-09-24T04:40:45.170401+00:00"
 id: "1000774"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The q,(q+1)^3 equality pattern forces tail-terminal or cross-splice obstructions."
+statement_sha256: "b580fafaf323bbb11cbb53e27d782e8b649e52b496f2404875ef64b39d69b035"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

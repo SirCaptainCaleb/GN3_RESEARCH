@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "a4a2c86e36bcce3cf71c290b6536239213ad69caae5f5a5a347d690bdf5e71fb"
 created_at: "2026-09-27T14:56:48.250567+00:00"
 id: "1000678"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Support-switch triples in the sharp half-order shell force core disagreement or a double-crossed same-deletion pair."
+statement_sha256: "f97690040a48d94d176fb8eefdb6739cbb2404ddcaeac2af0a02015651a38132"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

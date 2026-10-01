@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7b641bd5ed8bd7bc37747a9f74e948e94c0dcc995747967401896980c509ad42"
 created_at: "2026-09-24T03:36:20.845079+00:00"
 id: "1000140"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Steiner deficiency two forces pair-universal vertices."
+statement_sha256: "6bb11915b49a4de232be99de841aee1beead3609932703c4a314250ad0b43049"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

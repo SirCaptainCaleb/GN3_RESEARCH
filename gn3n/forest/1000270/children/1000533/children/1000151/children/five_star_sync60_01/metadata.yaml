@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e8442c3d3daa83a4045e25bd75d656c26d50844eff8f08139614b335d5ae4a71"
 created_at: "2026-09-29T13:10:44.947439+00:00"
 id: "five_star_sync60_01"
 last_elevation_revision: 8250
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Hamiltonian five-set stars synchronize with a sixty-type bound"
+statement_sha256: "f90f81eb10462f689a9fd2c13fdf3f182a76a2d77894a50b71550df6ad5972dc"
 substantive_worker_ids:
   - 664
 support_reason: "current_certified_premises"

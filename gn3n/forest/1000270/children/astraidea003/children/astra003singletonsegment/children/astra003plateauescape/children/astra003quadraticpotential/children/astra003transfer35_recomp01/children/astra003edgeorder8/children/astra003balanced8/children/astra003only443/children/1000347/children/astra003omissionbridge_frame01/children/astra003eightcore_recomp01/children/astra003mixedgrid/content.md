@@ -6,6 +6,7 @@ In the eight-label residue of 851be99bfc11, write P={u,a,b,c}, Q=(q0,q1,q2,q3)={
 
 ## Body
 
+
 Work in the eight-label residue of 851be99bfc11. Write
 [
 X={t,s,w},qquad P={u,a,b,c},

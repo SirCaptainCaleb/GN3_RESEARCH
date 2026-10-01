@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "110bf2564c5235dc125b031ee6aed86870d0e3cf5d08ed11cb28e112178920c3"
 created_at: "2026-09-23T03:11:57.757877+00:00"
 id: "1000465"
 last_elevation_revision: 0
@@ -53,6 +54,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Order-thirteen radius-three support-expansion program: capacity-six expansion, degree-two equality, isolated double-frozen odd edges, and coupled odd/Johnson graph inequalities are combined to rule out two-regular deficient-support behavior and force crossing or reconfiguration escape."
 simplified_statement: "Radius-three support expansion has capacity six, and degree-two equality is a sliding-triple system"
+statement_sha256: "f947dd9af7e1dcc544a5a27ee97b2f05723419ff4ee2157c4ba63973aec1ec6c"
 substantive_worker_ids:
   - 721
 support_reason: "current_certified_premises"

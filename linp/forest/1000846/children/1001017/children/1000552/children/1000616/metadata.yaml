@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "cc3947ddb6b028d8c9a5def08a842e20db8cc20711ff1ced14b0922d6fe0bb97"
 created_at: "2026-09-22T05:49:49.392098+00:00"
 id: "1000616"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Half-path endpoint-potential branch: vertices on a linear path inherit endpoint-potential lower bounds, yielding sharp terminal-tail and central-window restrictions."
 simplified_statement: "A vertex on a linear path has half-path endpoint potential."
+statement_sha256: "3bb399de7936b6e160a552bd678d22ae9798cdba5939d245d48dab267260db84"
 substantive_worker_ids:
   - 222
 support_reason: "current_certified_premises"

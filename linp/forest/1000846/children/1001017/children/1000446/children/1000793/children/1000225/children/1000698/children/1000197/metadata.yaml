@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c67eb26b9100d685d4a6abc4e8173de0b33cb7138135722d740b3eab0897c6ee"
 created_at: "2026-09-24T03:02:55.868615+00:00"
 id: "1000197"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Weighted potential-cut inequality for the exact-density layer."
+statement_sha256: "ef0891eb2a153cc70d50cef6d182789fcd58a87628efe232fb2a9b8c3529806d"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7e092ab67324e0f99221e53c0b9211b5561be075faf0beb1faf5715b2957e61f"
 created_at: "2026-09-29T12:56:28.215754+00:00"
 id: "reversal_dense_fivefamily01"
 last_elevation_revision: 8250
@@ -37,6 +38,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every genuine reversal lies in a dense family of Hamiltonian five-supports"
+statement_sha256: "b20fe8ef22e04cd6043966e1ff639cf0f74e6349bd45a91ea562864f28878f23"
 substantive_worker_ids:
   - 664
 support_reason: "current_certified_premises"

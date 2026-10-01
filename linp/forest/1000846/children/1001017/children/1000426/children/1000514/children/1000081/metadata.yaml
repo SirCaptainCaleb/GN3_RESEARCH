@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1641468cd53cf0e577a659c5e2e3b764db1d79fa12c4b9d994d026e9b451da2a"
 created_at: "2026-09-22T21:10:59.788788+00:00"
 id: "1000081"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "There is a family with no special edges but positive incidence-matrix nullity, refuting the special-edge nullity conjecture."
+statement_sha256: "fe430aa6310011ad4579c6d181ed9150b9753a586073e1621ce7639272ffec8a"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

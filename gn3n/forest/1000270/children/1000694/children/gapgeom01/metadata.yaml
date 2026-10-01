@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "f1bf008333a5125d83bf6fd8df13f82819814828df014b39314360f1fcd16243"
 created_at: "2026-09-20T19:52:30.627761+00:00"
 id: "gapgeom01"
 last_elevation_revision: 0
@@ -31,6 +32,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Three pairwise-compatible deletion covers place their omitted labels at one common gap of one common path, with further compatible covers confined to neighboring gaps."
+statement_sha256: "5332af480ab48d3e685d6af2390960f15d0b2cc573c6978ba61369e1565d5449"
 substantive_worker_ids:
   - 673
 support_reason: "current_certified_premises"

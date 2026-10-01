@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "536dd6aaa0d2eb513198b1ce2605d25c28c25ecdaf9f008364a88420d825a487"
 created_at: "2026-09-29T12:59:24.955729+00:00"
 id: "reversal_threeleaf_star01"
 last_elevation_revision: 8250
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A dense reversal family contains a common-four-set star of at least three Hamiltonian five-supports"
+statement_sha256: "a4855ac636d5377064005c7e0ec6802684671cefaae10d6bac99836cfaf2fcca"
 substantive_worker_ids:
   - 664
 support_reason: "current_certified_premises"

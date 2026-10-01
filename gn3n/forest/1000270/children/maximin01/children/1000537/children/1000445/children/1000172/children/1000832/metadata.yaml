@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "ea9cdb8c5b13149bcd03b0ec15bfb23e3c726e7241ad55c9b29b18770eb7671d"
 created_at: "2026-09-27T20:29:57.248364+00:00"
 id: "1000832"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Retracted: synchronized barrier-shell double crossing"
+statement_sha256: "bd3f899e4a271fd59a0adff4fcc28e3393f8d65a7ef841c31affef1c2eaec40a"
 substantive_worker_ids:
   - 556
 support_reason: "not_locally_certified"

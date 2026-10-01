@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2e08eb3ff1a9a20b5b4e64189158d0ad411a7022a6cfe9c588301d206c5297b3"
 created_at: "2026-09-27T01:53:43.934377+00:00"
 id: "1000804"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two common compatibility neighbors force an order-reversal separator"
+statement_sha256: "f594565e02771c0a297d856a6634f2e0cdf7a3afdfcf4a7a4488be929e871337"
 substantive_worker_ids:
   - 624
 support_reason: "current_certified_premises"

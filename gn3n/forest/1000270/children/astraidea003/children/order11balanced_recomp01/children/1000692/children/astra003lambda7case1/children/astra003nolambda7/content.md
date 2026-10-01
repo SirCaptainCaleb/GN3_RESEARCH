@@ -6,6 +6,7 @@ A hypothetical order-eleven minimum counterexample cannot have maximum tight-pat
 
 ## Body
 
+
 Let
 [
 Y=(L,u,x_2,x_3,x_4,v,R)

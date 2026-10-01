@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a4bc9d5c05a7e2e107e86dd3b688998bb196bc4e87d9e2f8423415a0c1b22720"
 created_at: "2026-09-22T14:54:03.394605+00:00"
 id: "1000408"
 last_elevation_revision: 0
@@ -59,6 +60,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Low-dimensional cube forcing before the general Norine proof."
+statement_sha256: "8afb3fa4e26258ad5b32021a44d522ee76327a4fbb4053cdb1a88872f7bc75fe"
 substantive_worker_ids:
   - 590
 support_reason: "current_certified_premises"

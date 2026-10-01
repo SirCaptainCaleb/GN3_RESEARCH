@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "6325c2f640b6c14f5b308bc84ab4ce21cf73a027520f5cc81720aa7e23033f60"
 created_at: "2026-09-27T23:50:31.51727+00:00"
 id: "1000464"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Endpoint-incidence Hall route."
+statement_sha256: "07ea66656cb48609f3a9d285ef3407f5f49ab9d385dbd8124da631605e2e6678"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

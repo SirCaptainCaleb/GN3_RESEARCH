@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1250c34304f8940285b1af22385d4e1af77019c8eb11f959d0f8745e886dc56f"
 created_at: "2026-09-24T05:33:53.448501+00:00"
 id: "1000271"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A clean-only defect-corrected two-rank block suffices for the 11/12 bound."
+statement_sha256: "e85007ec69eb4be05953f7ec5d41db107d900f82afabd6cd484e00133064c54f"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

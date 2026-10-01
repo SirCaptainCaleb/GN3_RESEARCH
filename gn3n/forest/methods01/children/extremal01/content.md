@@ -899,3 +899,4 @@ Using
 gives the claimed bound. ∎
 
 For the stronger Johnson-degree density hierarchy, which improves these fixed-subset bounds for every `r>10`, see `the Johnson-density hierarchy earlier in this module` Section 4.
+

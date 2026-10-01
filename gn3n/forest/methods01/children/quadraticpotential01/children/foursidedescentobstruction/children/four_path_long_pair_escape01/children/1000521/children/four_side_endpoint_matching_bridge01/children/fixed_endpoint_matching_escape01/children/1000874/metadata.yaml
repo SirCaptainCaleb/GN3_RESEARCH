@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "9ed04b025309dabb8109eac08e19349e3dd25c3aa7a1393e4cbc4c5540e6f65e"
 created_at: "2026-10-01T06:11:58.732483+00:00"
 id: "1000874"
 last_elevation_revision: 0
@@ -26,6 +27,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every fixed endpoint pair across a four-side already gives two Hamiltonian five-supports; the matching-shell gap is complementary-cover alignment."
+statement_sha256: "1e69f67f5da2dc3a002916c6b0f6bf9e93b1dc57783303b6f8f4b3c1ed876200"
 substantive_worker_ids:
   - 952
 support_reason: "provisional_unaudited"

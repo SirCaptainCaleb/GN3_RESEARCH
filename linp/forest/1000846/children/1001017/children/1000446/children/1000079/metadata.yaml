@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7cfb2a2d45d83d7e62de4f2ff142c46b448bd5781fe1686e817b7b6bde666135"
 created_at: "2026-09-24T02:47:26.425402+00:00"
 id: "1000079"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Longest directed paths force complementary source/rainbow endpoint degrees."
+statement_sha256: "f5d74592d4cce6ae4c3bc389975115106a4298e16b3ecff537d913e300b4414c"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "2c9dc63fa39e0d2efa8901aa630e2e069de0440e4e98f178bad6297bbd808622"
 created_at: "2026-09-28T17:14:06.903705+00:00"
 id: "1000552"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Minimal order-disagreement classification: a minimal pair of conflicting tight-path orders is either localized or forms a pure two-arc tight cycle, with descendants resolving short crosses, omitted-label replacements, and the resulting local cycle geometry."
 simplified_statement: "A minimal order-disagreement pair is local or a pure two-arc tight cycle."
+statement_sha256: "aa207becd13cfdf47d37e5fab208a4227a56214c55f0285cca99764544b9ada0"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

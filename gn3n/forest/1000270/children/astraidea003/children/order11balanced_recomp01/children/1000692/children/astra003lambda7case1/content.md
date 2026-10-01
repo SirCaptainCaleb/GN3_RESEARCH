@@ -6,6 +6,7 @@ Let H be a hypothetical order-eleven minimum counterexample with a longest tight
 
 ## Body
 
+
 Let
 [
 Y=(L,u,x_2,x_3,x_4,v,R)

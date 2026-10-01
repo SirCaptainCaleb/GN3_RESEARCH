@@ -6,6 +6,7 @@ For every vertex v with p=phi(v), at most floor(3p/4) ascending nonspecial edges
 
 ## Body
 
+
 Let H be a finite linear 3-graph. For a vertex v with p=phi(v), let c_+(v) denote the number of ascending nonspecial edges e={x,v,u} such that v is a terminal of e and phi(u)>=p.
 
 Conjectural local inequality:

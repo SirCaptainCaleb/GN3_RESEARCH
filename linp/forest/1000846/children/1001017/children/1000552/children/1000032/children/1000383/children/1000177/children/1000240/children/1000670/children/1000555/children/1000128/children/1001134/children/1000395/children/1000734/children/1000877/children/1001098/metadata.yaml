@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "ce2386ff5604c880aeec48c47ad33d47cd4622e4507d31f48d9bc5ff59604c4a"
 created_at: "2026-09-24T18:33:09.396649+00:00"
 id: "1001098"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Sixteen-elevenths lens-free overlap retains linearly many whole distinguished pairs."
+statement_sha256: "3d3dee590a0fb4693c6d864e7f2425fea300f6f99856b3115e3e5251af5bd026"
 substantive_worker_ids:
   - 250
 support_reason: "current_certified_premises"

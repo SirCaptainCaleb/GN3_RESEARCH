@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "fe3f903d1051cec0893354b5e0ccf0bd400984b103520cf6649c4ffc8601c438"
 created_at: "2026-09-30T05:00:02.047928+00:00"
 id: "fourset_fixedpair_witness_bound01"
 last_elevation_revision: 10203
@@ -56,6 +57,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A four-set has at most six same-class fixed-pair witnesses, and all six can occur."
+statement_sha256: "d9fb826bc89c5c4c4b6154950afadbfc5d3fd606b27e9d2984d40c8bfd2490c1"
 substantive_worker_ids:
   - 579
   - 745

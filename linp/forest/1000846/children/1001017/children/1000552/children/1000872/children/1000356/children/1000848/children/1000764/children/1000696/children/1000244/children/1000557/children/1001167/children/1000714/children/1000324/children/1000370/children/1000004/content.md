@@ -6,6 +6,7 @@ Let h={y,v,z} be a 0-1-1 ascending edge of rank q+1 with q>=5, phi(v)=2q-3 and p
 
 ## Body
 
+
 Let h={y,v,z} be a 0-1-1 ascending nonspecial edge of rank q+1, q>=5, with
   phi(y)=q,
   phi(v)=2q-3,

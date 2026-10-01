@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "28451afbb549d06366a20d58c66149a57f6dd277b2b85e6b9f9cf3464d3c0858"
 created_at: "2026-09-28T21:21:51.555245+00:00"
 id: "1000540"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Hard endpoint-reversal grid: a universal reverse-cross family becomes a complete endpoint-pair extension grid, whose five- and six-support consequences force bounded Hamiltonian structure, order disagreement, or return to the classified four-vertex obstruction."
 simplified_statement: "The universal hard-reversal cross family is a complete endpoint pair-extension grid."
+statement_sha256: "740e0fce2575578b6c8c8fc2158a985be60357a729dfd18cc92bb774e4fa2cde"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

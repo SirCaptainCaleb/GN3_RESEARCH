@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b5d351388c708313dc068baf90419fd22466e19590c5a3c2ab4214334b1ad198"
 created_at: "2026-09-22T22:05:53.667524+00:00"
 id: "1000356"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Contact-snake defect program: the clean-minus-double identity reduces the upper-bound problem to structured 0-1-1 and two-rank configurations, whose source-rail intersections, blocker patterns, and lens geometry drive the 11/12 analysis."
 simplified_statement: "Clean-minus-double identity for the contact snake."
+statement_sha256: "62d8562fa24cd4a9f9e22c3f6534559f6cc0cc0ff88f77b0fd61403c4fc48877"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

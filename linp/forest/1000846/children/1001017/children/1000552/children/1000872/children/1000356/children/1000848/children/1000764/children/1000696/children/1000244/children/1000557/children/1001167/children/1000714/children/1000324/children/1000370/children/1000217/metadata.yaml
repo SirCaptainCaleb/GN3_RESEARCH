@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "a8bb7d2df9498083ad5fe43a5b30bbdbe89a070682b9511e0aef54577bb26100"
 created_at: "2026-09-24T05:45:28.913182+00:00"
 id: "1000217"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The final one-low odd-boundary state creates a four-vertex high-potential central packet."
+statement_sha256: "f44e006d597b24c9897bf6f37d64a0245ac05bbfcf2a15ec52e633646ff578ea"
 substantive_worker_ids:
   - 225
   - 231

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fcf30eb540e177c0b8706ec05b11c29d390d0dd7da087a92183e762b84a5872c"
 created_at: "2026-09-21T22:34:23.351333+00:00"
 id: "1000844"
 last_elevation_revision: null
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The ascending terminal graph can contain a rainbow four-edge path, so the global ascending-edge bound cannot follow merely from rainbow-P4-freeness."
+statement_sha256: "2cbed337c97033fcb07b9912ffaba39732be9b9939105cce730362e1d78fc137"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

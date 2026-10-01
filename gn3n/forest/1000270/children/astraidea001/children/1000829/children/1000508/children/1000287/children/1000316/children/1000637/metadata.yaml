@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "448d0859b9f57c0207a2583f9f811694f0f94979552dc31fe36ae7cd889c9fb7"
 created_at: "2026-09-27T15:10:38.699151+00:00"
 id: "1000637"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The fully crossed sharp half-order shell pair branch contains reciprocal direct core crossings."
+statement_sha256: "6679dcbac691e57b19d845f05b87c52c7f6e881ddaeb793033bf3bcbfb65f07f"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

@@ -6,4 +6,3 @@ Project-local asynchronous retrospective root. Blank in the template; projects c
 
 ## Body
 
-‹none›

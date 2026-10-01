@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "77a928641e353a681a415972d93ed91e4f7087b1ffb449f39ae939fecd00d752"
 created_at: "2026-09-24T05:38:26.223227+00:00"
 id: "1000779"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four mutually blocking high entrance rails force a two-vertex overlap."
+statement_sha256: "f75cee52241fb435348655655956af7fe6208bd559f98294695b56c8c995a6d4"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

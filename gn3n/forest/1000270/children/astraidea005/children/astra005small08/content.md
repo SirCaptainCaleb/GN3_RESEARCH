@@ -6,6 +6,7 @@ Let H be a boundary tournament on n<=8 vertices, and let s,t be distinct vertice
 
 ## Body
 
+
 # Separation through order eight
 
 Let H be a boundary tournament on n<=8 vertices, and fix distinct vertices s,t.

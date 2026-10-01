@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "855dc961da75e554c8973bcb32f3fe812c63d9f0d6d6669349214043cf6b4217"
 created_at: "2026-09-28T01:04:28.679935+00:00"
 id: "fivegrid_frame01"
 last_elevation_revision: 0
@@ -25,6 +26,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: "Five-side continuation of the quadratic-minimum program: after excluding persistent four-sides, endpoint-pair replacement grids on a five-side are used to force descent, order disagreement, or a larger Hamiltonian support in the remaining global minima."
 simplified_statement: null
+statement_sha256: "89dff9d2f4385213068a19d03cce75ade922686698b04e21707c0f71eb716baf"
 substantive_worker_ids:
   - 582
 support_reason: "not_a_proved_or_evidence_claim"

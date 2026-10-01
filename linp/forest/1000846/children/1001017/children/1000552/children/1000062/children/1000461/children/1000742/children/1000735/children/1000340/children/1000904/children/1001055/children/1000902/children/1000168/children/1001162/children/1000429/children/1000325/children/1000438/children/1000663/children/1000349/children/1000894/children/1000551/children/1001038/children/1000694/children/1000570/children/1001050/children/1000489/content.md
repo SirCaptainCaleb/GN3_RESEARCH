@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let P=(g_1,...,g_p) be a maximum p-edge path with last vertex v and last edge g_p. Let
   e_U={x,v,u},   phi(e_U)=r,
   e_X={y,v,z},   phi(e_X)=s
@@ -21,7 +22,9 @@ Moreover, if r+s=p+3, exactly one of the following two configurations occurs.
 
 For the local switching-cell system of 9586a4d2317f, suppose additionally that e_U and e_X are both selected as distinct center-switcher witnesses by the D+Y cellwise injection of c8d14f7306ab. In case (O), at least one of the two adjacent occupied cells C_{q-2},C_{q-1} is paid. In case (E), the common cell C_{q-1} is doubly occupied and paid. Hence, by 39d0d99258db, every equality case forces a nearby switching output edge all of whose vertices have rank at least p.
 
+
 ## Body
+
 
 Write the three vertices of a host edge g_k as
   A=g_{k-1}∩g_k,

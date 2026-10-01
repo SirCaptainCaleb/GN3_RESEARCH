@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8aad6d7567439ce45085e465888247179abfa18437ae799e0a4f4cd85bf28c85"
 created_at: "2026-09-26T01:55:23.057386+00:00"
 id: "astra003doublekernel"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Singleton-transfer hooks synchronize two endpoint matching-block kernels."
+statement_sha256: "11956e3f2d0e47259cadae6e8d08c3fc197b357c1590da11f61bd35a33130c30"
 substantive_worker_ids:
   - 561
 support_reason: "current_certified_premises"

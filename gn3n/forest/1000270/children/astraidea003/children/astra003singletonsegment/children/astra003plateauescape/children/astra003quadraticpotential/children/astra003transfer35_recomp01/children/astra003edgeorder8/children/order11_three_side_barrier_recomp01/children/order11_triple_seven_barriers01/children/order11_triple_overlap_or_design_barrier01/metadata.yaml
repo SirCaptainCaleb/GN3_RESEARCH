@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "f570ffd83f1643cbd89f10b41b428f849885fdd86e361e62026dd9a39c0a8155"
 created_at: "2026-09-30T12:56:48.824812+00:00"
 id: "order11_triple_overlap_or_design_barrier01"
 last_elevation_revision: 10160
@@ -26,6 +27,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Order-eleven triples force blocked overlap or a blocked 14-block design."
+statement_sha256: "9065ca99fae26aa819c98972b6341e5cce8bfecae860b32ce9674e05557b20ed"
 substantive_worker_ids:
   - 708
 support_reason: "not_locally_certified"

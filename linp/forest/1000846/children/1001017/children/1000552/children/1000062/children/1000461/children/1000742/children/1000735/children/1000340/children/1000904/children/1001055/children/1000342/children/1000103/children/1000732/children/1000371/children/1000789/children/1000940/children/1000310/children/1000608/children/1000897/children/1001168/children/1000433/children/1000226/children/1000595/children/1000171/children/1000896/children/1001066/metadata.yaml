@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9d205d6058da3a65faa349dbf04ad62b80f87eb867fb8129f111f29571b0f48c"
 created_at: "2026-09-25T21:59:33.694365+00:00"
 id: "1001066"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The separated plus-three state at a 2q-3 cut forces adjacent source-path overlap."
+statement_sha256: "745ba978ff5750519fbe3fb9dcfcc38655ed527a3b9a8b9a8f1642b0e6372e48"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

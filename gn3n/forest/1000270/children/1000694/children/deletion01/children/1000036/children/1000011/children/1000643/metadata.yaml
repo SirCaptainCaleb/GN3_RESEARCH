@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c0e2a6c0e072513508028ec6b2bb2cf0cc424a5a2f66301a3138c54e7f8215e2"
 created_at: "2026-09-27T21:35:52.872593+00:00"
 id: "1000643"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Wrapped end-adjacent form A reduces to a Hamiltonian four-set or one matching-block K4."
+statement_sha256: "07a9902b4b989e898db7b4f36ee9e642eedd763e054d8c407e2587e79758de54"
 substantive_worker_ids:
   - 556
 support_reason: "current_certified_premises"

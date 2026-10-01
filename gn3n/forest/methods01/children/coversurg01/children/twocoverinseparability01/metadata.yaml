@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "adca64ba803b09e26f7a863e9eda83e686f8075a9075d8774e648f31b03ad054"
 created_at: "2026-09-27T14:39:09.438257+00:00"
 id: "twocoverinseparability01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Two-cover inseparability toolkit: inseparable pairs admit cut obstructions, interior separations force crossings, and the equality-two-crossing case has a global support normal form."
 simplified_statement: "Two-cover inseparability classes"
+statement_sha256: "4b14f7d376b8440d1af3b6bca52ec26c8bc9aa130a36cd10dbd9a613d58b678b"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "9ce44b72bb21b32b250fae0f1c76c8ba5e39af887ad0c68572c10e7b1bcaf0e7"
 created_at: "2026-09-23T02:44:14.194291+00:00"
 id: "1001080"
 last_elevation_revision: null
@@ -54,6 +55,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A saturated boundary fan either has a lossless consecutive double-blocker splice or contains a nonlocal double blocker; two simultaneous sink fans cannot both avoid such a nonlocal blocker."
+statement_sha256: "cde15a097f262fa1ba54448470117f8ba38b9fcffc9f7395b5e261c920e7fd15"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

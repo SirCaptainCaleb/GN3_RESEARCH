@@ -6,6 +6,7 @@ Every 3-partite 3-uniform hypergraph H satisfies tau(H)<=2 nu(H). A short deriva
 
 ## Body
 
+
 Let the vertex classes of H be A,B,C; write a=|A| and t=tau(H). For each x in A let H_x be the bipartite graph on B union C whose edges yz are exactly those with xyz in E(H).
 
 For S subset A put G_S=union_{x in S}H_x. By Konig, G_S has a vertex cover of size nu(G_S). Then
@@ -33,3 +34,4 @@ Choosing an edge yz from H_x means choosing the triple xyz in H. Distinct repres
 which is equivalent to tau(H)<=2nu(H).
 
 This proof is worth retaining as a reusable template: convert a transversal parameter into lower bounds on matching numbers of bipartite links, turn those into matching-width bounds by the factor-two pinning estimate, and invoke hypergraph Hall to select disjoint representatives.
+ 

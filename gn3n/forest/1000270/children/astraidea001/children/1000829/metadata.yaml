@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fe95b0d5c0ec94fdff5e0ccfe6f3baa1e6193d160dc82f5d689e053634ca52e5"
 created_at: "2026-09-27T14:30:59.155981+00:00"
 id: "1000829"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Sharp-shell transversal and support-graph route: transversals of deletion covers reduce to forests or a single odd support cycle, and the descendants analyze degree, cycle, corridor, and repeated-label structure that forces disturbance or transport."
 simplified_statement: "Any transversal of sharp-shell deletion covers is a forest or one odd support cycle."
+statement_sha256: "1993b352782d00606715aa8bdbab0ef4d4ff5563bf4ce971fc17aae594ab696d"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

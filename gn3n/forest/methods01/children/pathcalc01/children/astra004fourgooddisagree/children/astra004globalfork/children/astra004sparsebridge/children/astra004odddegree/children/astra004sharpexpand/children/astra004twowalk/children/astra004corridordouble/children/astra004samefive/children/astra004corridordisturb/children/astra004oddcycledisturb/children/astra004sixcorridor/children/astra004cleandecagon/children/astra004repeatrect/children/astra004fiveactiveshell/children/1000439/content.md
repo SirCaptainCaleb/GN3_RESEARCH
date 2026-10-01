@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Work in the sharp half-order shell |V(H)|=2lambda+1, and let C be an ordered tight path of order lambda-2. Let e,a,b,c be four distinct vertices outside C. Suppose the three Hamiltonian lambda-supports
 V(C) union {e,a},
 V(C) union {e,b},
@@ -12,7 +13,9 @@ Then H has a tight path of order lambda+1, contradicting maximality of lambda.
 
 Consequently no all-clean five-label shell can contain three same-parity supports forming an active-pair star {e,a},{e,b},{e,c} with the inherited clean orders.
 
+
 ## Body
+
 
 Reverse all three displayed orders simultaneously if necessary so that the common orders are
 (e,C,a), (e,C,b), (e,C,c).

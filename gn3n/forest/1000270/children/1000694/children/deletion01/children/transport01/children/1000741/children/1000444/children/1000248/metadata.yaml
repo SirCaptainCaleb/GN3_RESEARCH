@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d00b7a2c1fd0bae961cc4cf9f191c5c3eeae21e55b95d1965b114a8915152565"
 created_at: "2026-09-28T15:08:19.956653+00:00"
 id: "1000248"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The rigid minimum-side two-crossing block forces a reversed boundary edge."
+statement_sha256: "0173a0cc80922b102d92b93e75f884c3318705aba467a419462063943f22a51b"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

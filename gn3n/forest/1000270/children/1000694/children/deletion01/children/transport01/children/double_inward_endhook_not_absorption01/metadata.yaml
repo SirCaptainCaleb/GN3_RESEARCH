@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3b61075d261c7b736ef380e340b827d5745f16be5189aafd8484c0ec29ff314e"
 created_at: "2026-10-01T01:04:15.024625+00:00"
 id: "double_inward_endhook_not_absorption01"
 last_elevation_revision: 10414
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Even both canonical inward reverse hooks around a tight three-path do not force absorption of the exterior vertex."
+statement_sha256: "2a71a57e3df5679779322fb4c0b26816b4b39ffd58df365094c6baf143705358"
 substantive_worker_ids:
   - 745
 support_reason: "current_certified_premises"

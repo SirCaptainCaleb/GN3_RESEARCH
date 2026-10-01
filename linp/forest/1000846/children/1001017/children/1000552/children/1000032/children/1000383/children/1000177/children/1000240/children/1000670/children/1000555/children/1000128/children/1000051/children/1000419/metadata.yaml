@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "184b026e6b7d38bb8123e28179dbf05ec8d3fd1c8468eafd2d0b4a2850300da3"
 created_at: "2026-09-24T14:30:01.507525+00:00"
 id: "1000419"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The simple-intersection graph of arbitrary common-terminal source rails is triangle-free."
+statement_sha256: "ab6f8161dfd76fcfb9ead7f0c74e1a3c1891cc006daa108f9a84c56563e9726a"
 substantive_worker_ids:
   - 223
 support_reason: "current_certified_premises"

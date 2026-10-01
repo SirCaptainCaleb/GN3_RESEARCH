@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b84c32503f0c26eeabfbd4f9ff581e14224c2d01a4b2f784d12ee04bbd5081e6"
 created_at: "2026-09-24T02:16:01.77626+00:00"
 id: "1000615"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Gap-three rotation position gives a quantitative hole-potential floor."
+statement_sha256: "69bf7af84e3206f4a899f4b9fbb5fb366a7faeaae2e51ce841028c2eb3957ab5"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

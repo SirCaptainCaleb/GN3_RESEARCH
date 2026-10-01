@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "f4e4791035658f0a06704943717a99e3fc3b901a646d8bfeeb01eddef8c35b21"
 created_at: "2026-09-21T20:24:35.815028+00:00"
 id: "1001021"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "For a lower-rank nonspecial edge f meeting a longest witness for e in r vertices, p <= r(q-1); in particular p >= 2q-1 forces all three vertices of f onto the witness path."
+statement_sha256: "1089b76e7a4f91a367a41e66776623efc1d50a39cc1dcd4de85e927ac8c57056"
 substantive_worker_ids:
   - 234
 support_reason: "current_certified_premises"

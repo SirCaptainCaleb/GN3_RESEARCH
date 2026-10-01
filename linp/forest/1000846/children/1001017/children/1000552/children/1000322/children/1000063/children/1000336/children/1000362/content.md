@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let P=(g_1,...,g_{L-1},e) be globally longest with nonspecial e={x,y,z} entered through x, and W=V(P) minus e. The double blockers through x,y,z form three pairwise edge-disjoint matchings on W. At terminal vertices y,z every other incident edge is blocking on W. At entrance x, clean replacements may occur; every such clean edge has rank L, and if it is special then every alternate-entrance longest witness for it meets the fixed terminal pair {y,z}.
 
+
 ## Body
+
 
 For each v in {x,y,z}, linearity makes the blocker pairs f minus {v} pairwise disjoint, hence a matching M_v. The same blocker pair cannot appear in two colors, since the corresponding hyperedges would share two vertices. Thus M_x,M_y,M_z are pairwise edge-disjoint.
 

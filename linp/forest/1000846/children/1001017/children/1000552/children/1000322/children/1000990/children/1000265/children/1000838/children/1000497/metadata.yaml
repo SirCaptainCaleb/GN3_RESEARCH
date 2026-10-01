@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "9a0036606784c2b5734683a8f56957161ad8c9514ab5007899926cc3e3303b60"
 created_at: "2026-09-24T03:10:32.853825+00:00"
 id: "1000497"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Ascending potential flow forces a quadratic degree-potential constraint."
+statement_sha256: "11fc4afba64d5966589c3b0fbc4f09c51aa4b5597b44e960fc3d8f8d770041d9"
 substantive_worker_ids:
   - 225
   - 209

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "89ad13120ce95903839a39d080ea789f3019d6ea39770528c167ef149ab158da"
 created_at: "2026-09-28T03:56:46.060624+00:00"
 id: "1000018"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Two neutral endpoint reversals generate a synchronized three-omission family."
+statement_sha256: "d803f1d59eabe4b5fc0a60c9e4bb7b32de2687a757d0180efc9e870fb3078d13"
 substantive_worker_ids:
   - 583
 support_reason: "current_certified_premises"

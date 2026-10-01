@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "a29f0e3ec935c5b721076e7ea4645a2921fbbde351f45fb42d44d259dc3e75c2"
 created_at: "2026-09-27T21:25:17.806607+00:00"
 id: "1000304"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Longest-path displacement profiles are proposed as a nonlocal secondary potential for one-defect reconfiguration."
+statement_sha256: "61d71ca2b5ee4bab51d05713d3b4902c99020a8fe2bea7b8c99265d4d186bec5"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

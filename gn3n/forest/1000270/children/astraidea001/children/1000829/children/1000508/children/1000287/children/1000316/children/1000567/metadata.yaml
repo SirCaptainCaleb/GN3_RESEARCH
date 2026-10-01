@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "03a89bdf726aa3ee5dcd14406bba2c3324428e019cf49e5045e9d95f361940c8"
 created_at: "2026-09-27T15:09:23.21809+00:00"
 id: "1000567"
 last_elevation_revision: 0
@@ -58,6 +59,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lexicographically maximal forest transversals constrain singleton-transfer label edges."
+statement_sha256: "f5807f4b3c19cdc321d1983dc8dbc4eae10d57e5156e4d7549d655edc387f857"
 substantive_worker_ids:
   - 614
 support_reason: "Independent recheck confirms the third-component argument is invalid when |E|>alpha because deleting e_x changes an entry above alpha. The certified replacement d0c8789888c4 captures the strongest valid lexicographic conclusion. Same-label rigidity was checked as a possible rescue and is insufficient."

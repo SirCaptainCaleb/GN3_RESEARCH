@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b4f8f613103fb4f47d3d7460b34f2bfff6f6482c5a16345162f1e48600669435"
 created_at: "2026-09-27T21:40:55.668431+00:00"
 id: "1000762"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A checked charged replacement zeros one interval of the binary balance."
+statement_sha256: "ab71b0bbb314b3dff1debe25655bf02e8ad3ee9c4b9edc025ed33d1479db516d"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

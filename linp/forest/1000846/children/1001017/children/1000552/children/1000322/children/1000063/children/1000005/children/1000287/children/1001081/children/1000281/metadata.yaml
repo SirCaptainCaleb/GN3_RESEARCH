@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2863879eab5dc86ad44e1127a8baeed56374ae3d836d2757cef60f7a7a925237"
 created_at: "2026-09-24T01:06:12.868567+00:00"
 id: "1000281"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Extremal-deletion transfer for punctured-Steiner regular systems."
+statement_sha256: "f89823d253d6eae4ae18c93df2eb815bbfee520010cdc77023872950f98be140"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

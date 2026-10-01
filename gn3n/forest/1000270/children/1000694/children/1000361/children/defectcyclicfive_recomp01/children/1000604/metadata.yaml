@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5940956b2e7e5625b3c6fff2213ab044aba1d73f3bc80b5642000a017157809e"
 created_at: "2026-09-28T00:35:36.58485+00:00"
 id: "1000604"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The five-edge cyclic defect run is impossible in a minimum counterexample"
+statement_sha256: "9c34da252e2b3d47e110ecf14c59a65c0c05f0be1f903da656a7d3d426381236"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

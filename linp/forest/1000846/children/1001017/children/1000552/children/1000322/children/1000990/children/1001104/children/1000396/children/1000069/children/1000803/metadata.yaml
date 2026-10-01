@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a1a6768b6dd9074bdd3d62d4f528580dc8ce60ec5bf4fca68346fe82d13ce449"
 created_at: "2026-09-24T03:59:25.856543+00:00"
 id: "1000803"
 last_elevation_revision: null
@@ -54,6 +55,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Quadratic potential flow becomes an exact charge-potential covariance lower bound."
+statement_sha256: "ef196e4152614b9aef44be88997f68d57bcacc6fbb3831485df990834922d147"
 substantive_worker_ids:
   - 185
   - 207

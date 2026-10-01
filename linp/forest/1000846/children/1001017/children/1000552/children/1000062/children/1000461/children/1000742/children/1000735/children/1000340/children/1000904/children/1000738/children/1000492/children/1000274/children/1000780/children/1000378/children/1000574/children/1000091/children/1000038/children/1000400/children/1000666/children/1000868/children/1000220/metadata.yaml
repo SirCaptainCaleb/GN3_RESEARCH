@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f6547efe68e846e2b8f805275da4cda290f8135532078481246f594126273aa3"
 created_at: "2026-09-24T20:43:57.540029+00:00"
 id: "1000220"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lens-free flat cycles force the two adjacent edges to be exact opposite-terminal single blockers on every entrance rail."
+statement_sha256: "40daf63c0094b76e896d50f14a0860c77f15be0532dfa0e65a703d003adbb1c1"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

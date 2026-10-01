@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "28a56731162f7ae5dbc8c6c258b700279e0cb6fa47ead8e3edd0f5da79a4b2ed"
 created_at: "2026-09-28T00:43:34.267765+00:00"
 id: "astra003transfer35_recomp01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Quadratic endpoint-transfer reduction to the 3|5 shell: transfer barriers force the canonical 3|5 regime, after which support expansion, balanced eight- and eleven-vertex shells, omission graphs, and endpoint obstructions are used to eliminate trapping."
 simplified_statement: "Quadratic endpoint-transfer barriers reduce a three-side to the 3|5 rotation shell."
+statement_sha256: "94938345edbaac549b621710206fc388bc815a51547e2b637a66dd68bcb54420"
 substantive_worker_ids:
   - 582
 support_reason: "current_certified_premises"

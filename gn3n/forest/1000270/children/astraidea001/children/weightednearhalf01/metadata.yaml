@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d8aa90d5e5b80ac0125ece19d028fd0da782fee9050addd7a711db189c8e53ad"
 created_at: "2026-09-26T01:21:56.560639+00:00"
 id: "weightednearhalf01"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum counterexamples satisfy the weighted half principle up to one minimum vertex."
+statement_sha256: "c8e8d4431c45859f43b6597c20c9f7acc9a921acf8b515c2b76d4f4e25fcbf87"
 substantive_worker_ids:
   - 581
 support_reason: "current_certified_premises"

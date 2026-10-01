@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bb76ffa237e9e280de35ccfbf48975e7adb068aa57e96b2521ee4add5df5fb25"
 created_at: "2026-09-27T21:39:46.094202+00:00"
 id: "1000154"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A split inherited path gives a reciprocal support crossing or a leave-and-return excursion"
+statement_sha256: "509095076b2e77151048a88bc7c20d7ae82e0797bd9af4dcbe870c6b01594052"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

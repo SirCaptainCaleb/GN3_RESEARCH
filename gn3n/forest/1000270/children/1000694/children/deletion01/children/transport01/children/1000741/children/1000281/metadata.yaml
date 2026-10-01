@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "8fddb19b6607f0ff6b6a0852eef060f542dc6a56da59800826a8bacf8cbc68f9"
 created_at: "2026-09-28T04:07:14.776947+00:00"
 id: "1000281"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: "Large-order trapped-minimum reduction to minimum side five: from order seventeen onward quadratic minima either exhibit order disagreement or enter the five-side regime, whose descendants develop common cores, endpoint grids, codimension shells, and bounded transport obstructions."
 simplified_statement: "From order seventeen onward trapped quadratic minima have minimum side five or order disagreement."
+statement_sha256: "151a9e31a694a3abd0f09ad0da6974a566b875ef0c87cf1c39379aff5e180590"
 substantive_worker_ids:
   - 583
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e6414391cc0d042adf57b4bc9aff9de537c7c79869d434e85267dd06e9a00a26"
 created_at: "2026-09-29T20:58:17.749728+00:00"
 id: "fixed_endpoint_matching_no_adjacent_only01"
 last_elevation_revision: 9000
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four common middle-path locks eliminate the adjacent-gap-only residue."
+statement_sha256: "943c8a41f795037aff39b752d841519cdb1903afc96d4f5061b28e8ba668471d"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

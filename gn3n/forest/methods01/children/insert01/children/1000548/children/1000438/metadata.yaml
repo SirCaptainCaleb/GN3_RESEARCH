@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9497f3678815b3f0060b70abf490c46f70d98ed92625b3d9f390f56ec5a5bdcc"
 created_at: "2026-09-27T19:44:22.522565+00:00"
 id: "1000438"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A size-gap-one pair admits neutral endpoint transport or a universal noninsertion witness"
+statement_sha256: "ede58198a95db1bf928eecb31746431d942090b6aabc51638b35f171a56109d0"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

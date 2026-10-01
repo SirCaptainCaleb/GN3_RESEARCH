@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "60e7f2956df40d01c7bd9c819ad8485f2feb217d54514a45555fae8b428359f6"
 created_at: "2026-09-28T10:23:00.09191+00:00"
 id: "1000771"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "After deficit-one finite closure, the remaining proof route is to convert the surviving disturbance into a global descent or covering move."
+statement_sha256: "2eac15a7acfc68eaed52534d4e4199d67e3b4d2ffa2f44a24ef16cb9e37b507f"
 substantive_worker_ids:
   - 706
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c0cf2da20a65b4c4781072651ab03a016e1732e73dbaf56b96a169335afc2f2b"
 created_at: "2026-09-24T03:37:43.211609+00:00"
 id: "1000560"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the p=5 pattern 4445, both high terminals are forced into the first two path edges."
+statement_sha256: "5c420ea2750679b1accde464afe54d381ed921f7cb557c35108b19ba0fcec612"
 substantive_worker_ids:
   - 225
   - 209

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "58e77e576deec78c7ddba2f9abb7113a80cb1c7e3289b44fa9a97e445152c415"
 created_at: "2026-09-23T03:09:06.653632+00:00"
 id: "1000060"
 last_elevation_revision: null
@@ -55,6 +56,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A terminal-label switch closes a rank-q linear cycle, and favorable ears at its private entrance have rank q with controlled entrance structure."
+statement_sha256: "5a2999a7a94f1b14b029553527c83548526286218af2c4fa836764c68425ede8"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

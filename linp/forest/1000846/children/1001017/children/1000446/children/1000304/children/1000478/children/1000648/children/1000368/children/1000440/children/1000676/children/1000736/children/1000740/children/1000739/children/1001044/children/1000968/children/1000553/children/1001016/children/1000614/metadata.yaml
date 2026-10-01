@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e6d2ff99e4049e8fc9eb009497ca31dfd036ded12dc9d146016d781664c2bd94"
 created_at: "2026-09-24T04:12:22.330496+00:00"
 id: "1000614"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A unique far-edge contact on a canonical entrance-a rail in 4455 is forced to the last rail edge."
+statement_sha256: "4758b227a234c6311879bed29eb5c898152c9eebf08e89bfad65eb7de1ee2fc1"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

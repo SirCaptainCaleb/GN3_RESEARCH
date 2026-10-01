@@ -6,6 +6,7 @@ In the zero-slack |D|=k critical-core normal form, let a union A of forest compo
 
 ## Body
 
+
 Assume the zero-slack |D|=k critical-core setting. Let the path-forest components be C_1,...,C_c, and let P_i be the set of forest-degree-one vertices in C_i. If C_i has a_i edges then
   |P_i|=a_i+2.
 Since zero slack means m+2c=2k, the total private mass is

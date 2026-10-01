@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "103d742c391aac8a7f8038c557b007b9026a74d00a0ca46ebc82b608ffabf0fc"
 created_at: "2026-09-29T01:20:33.585521+00:00"
 id: "fiveside_descent_or_disagree01"
 last_elevation_revision: 7702
@@ -41,6 +42,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A five-side beside a path of order at least seven gives strict quadratic descent or order disagreement."
+statement_sha256: "83941ebc4a3954142ede43db01daa957124df69bcfc4a92992edac4f59fbd541"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "d653e547cf65e5d00eb10c85771a3188d5760efc54239516485041bde9b67f55"
 created_at: "2026-09-24T18:45:54.394968+00:00"
 id: "1000310"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Near-43/48 terminal-shadow program: reduce near-extremizers to dense doubly-terminal-single structure and analyze strong-rainbow color-terminal collisions on rank-monotone terminal paths."
 simplified_statement: "43/48 near-extremizers reduce to a dense doubly-terminal-single rainbow graph."
+statement_sha256: "c47079ee63a5d6007e31bb35a5808873ac36e9112da481e4326a93ec079ef6f0"
 substantive_worker_ids:
   - 201
   - 209

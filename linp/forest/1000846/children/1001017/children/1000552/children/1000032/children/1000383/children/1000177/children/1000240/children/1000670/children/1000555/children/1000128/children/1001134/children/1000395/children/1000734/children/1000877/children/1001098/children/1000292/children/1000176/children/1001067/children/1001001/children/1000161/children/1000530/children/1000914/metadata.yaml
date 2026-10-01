@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a7067e68a9743f6ed5eb9b9374f4b1fd5662134cbe6da51c7869df5015f8c98c"
 created_at: "2026-09-25T20:50:04.48137+00:00"
 id: "1000914"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A whole ascending chord spans at most rank minus one path edges."
+statement_sha256: "2a51ebc20316171b522c510b93b0008dee49ffb2982bb708e509bd9709b60798"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

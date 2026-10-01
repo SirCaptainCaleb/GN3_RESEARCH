@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "140ae054e31462d50f78db9c4c158649a202cd6acff91a9c12e5ba9a6c8bf73b"
 created_at: "2026-09-27T18:30:20.766389+00:00"
 id: "foresttransferbound13"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A disturbance-free forest without reciprocal direct crossings has at most thirteen selected edges."
+statement_sha256: "0b8af829bfcd580ff3641952f098402cebe563c4bc572e3545c587ef4cebdb16"
 substantive_worker_ids:
   - 569
 support_reason: "current_certified_premises"

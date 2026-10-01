@@ -6,6 +6,7 @@ In the exact-density charge coordinates k_v=(d_U(v)-s)/2, one has d_H(v)=3d-k_v.
 
 ## Body
 
+
 Retain the exact-density charge coordinates of 588537713840:
   k_v=(d_U(v)-s)/2,
 so

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3cca76eb6617ec7ee94ab80812642a42f378958a322e4ec870ab86e8355b854c"
 created_at: "2026-09-22T19:27:42.223844+00:00"
 id: "1000331"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A full one-bit Boolean lift is Hamiltonian whenever the quotient has two spanning half-length paths with a common endpoint satisfying the stated parity condition; linear independence of their incidence vectors suffices."
+statement_sha256: "494af01eccb3f7ac124b4d63cf5d2af4d9d605b91cb0c24fc0ec95d8675e3fd4"
 substantive_worker_ids:
   - 204
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ab44cc4372b07c175c3e7a1de850b718eec4ec23a9d94aa2dfdc0abf8e11f440"
 created_at: "2026-09-28T02:57:58.598106+00:00"
 id: "1000529"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A doubled cross barrier always yields a Hamiltonian four- or five-window."
+statement_sha256: "9535ba028dcc997d1647ca315e345fd8d29618cb317bb0cd08598e2478048c70"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

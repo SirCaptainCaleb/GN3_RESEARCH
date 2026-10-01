@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "3463f19fac6ab3b199bf36e3d019251014e2adeaa5559bcc386be71955beb803"
 created_at: "2026-09-27T21:51:41.07353+00:00"
 id: "1000014"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A fixed two-defect certificate permits arbitrary normalization in three stable regions."
+statement_sha256: "52797866c1645f7bd37e675546025a2d3632355cb79bedfb81b33222d08ed671"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

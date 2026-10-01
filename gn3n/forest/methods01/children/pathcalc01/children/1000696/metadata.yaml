@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "747da3316d05a9c40736f3520f409a8c1c9e82c7c60d646b417f2a44fb9e4fd6"
 created_at: "2026-09-28T11:27:03.610223+00:00"
 id: "1000696"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Compatible one-label path extensions glue outside one common gap"
+statement_sha256: "005586284762c36d37785da3d78bd5cbea3d3f30b7deade62e43ca904bad21cd"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

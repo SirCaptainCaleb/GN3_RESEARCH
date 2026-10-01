@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8f687949bd913b4046e804101033be547a1a7a03f01319be4a3cb9e72ebc54e5"
 created_at: "2026-09-22T21:13:03.443389+00:00"
 id: "1000431"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If an ascending edge has rank q≤δ−1, every fixed-entrance rotation state has at least 4(δ−q)−2 distinct safe-rotation neighbors."
+statement_sha256: "3aadd354b7ba67a67a9cafac658465406afdc30580d1750cd85b5d5f40cc62f3"
 substantive_worker_ids:
   - 181
 support_reason: "current_certified_premises"

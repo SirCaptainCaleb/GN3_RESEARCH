@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c985c1fce69902e4b5641db4d0b5b0c9023f0ba8f551b66bbea3ed0629deb3cb"
 created_at: "2026-09-28T22:05:05.456643+00:00"
 id: "1000615"
 last_elevation_revision: 8453
@@ -40,6 +41,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Fixed-pair orientation and extension-graph machinery: orientation classes form Hamiltonian four-extension cliques, giving dense prescribed-pair support families, exact perfect-matching orientation structure, witness bounds, and small-support consequences used throughout local extension arguments."
 simplified_statement: "Fixed-pair orientation classes are Hamiltonian four-extension cliques"
+statement_sha256: "9e982f695da68d866d271116de39fce0d871f44621f067025fe58f679e2760f6"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

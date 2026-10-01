@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "0bc062ddcdb1c17a847c0564008b8c5515d6ea51137896c893b39562589905e8"
 created_at: "2026-09-22T05:55:12.444996+00:00"
 id: "1000499"
 last_elevation_revision: null
@@ -31,6 +32,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Conjecturally, the equal-potential terminal graph of ascending nonspecial edges has maximum average degree at most 3."
+statement_sha256: "93afd0b35b339ba4d8f745d7de7a8edde141d773a35427b553c29d87447f7623"
 substantive_worker_ids:
   - 222
 support_reason: "not_a_proved_or_evidence_claim"

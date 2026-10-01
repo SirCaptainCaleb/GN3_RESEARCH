@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "01ccf3b25c3b9d4d9d63f6d8ea940c4043ab71b38529971fb8e2e0f502937e29"
 created_at: "2026-09-27T01:53:13.934709+00:00"
 id: "compatanchorclass05"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Anchored incompatibility splits into support switches and near-label transport."
+statement_sha256: "936a8cf18ea0ab69b112fc1327569c571b37cc18f0c52b4f75aa9bf283035eac"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

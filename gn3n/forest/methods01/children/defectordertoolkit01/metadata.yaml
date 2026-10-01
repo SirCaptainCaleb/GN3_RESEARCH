@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "87c32c3a08186a273ebe413b63663d99d0f9776f6043127d08445f96d5824f49"
 created_at: "2026-09-27T22:57:09.321944+00:00"
 id: "defectordertoolkit01"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: "Spanning-order and defect-line toolkit: reusable facts on defect centers and lines, swap stability, cyclic endpoint hooks, connector-or-transfer forks, minimum-side peels, matching-block endpoint kernels, and bounded propagation of defect structure."
 simplified_statement: null
+statement_sha256: "c24c663ca2b36c8ef2c9595f1fcdf0c65d2b0063f3ec8e631d4de9206e41f816"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

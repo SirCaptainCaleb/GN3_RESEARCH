@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "4e3f000ea721968228e724e3ca4377b020b19d9ed5cc371160a86036982fccdb"
 created_at: "2026-09-28T02:22:20.447173+00:00"
 id: "1000594"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "18a7a9bd13f61ad51db0c678632c7b227dfb8bd8650d06ded255e8f9a8351550"
 substantive_worker_ids:
   - 660
 support_reason: "Proof invalid: it uses cyclic rotation of ordered tight triples to create common-middle triples. Ordered tight triples are not cyclically invariant."

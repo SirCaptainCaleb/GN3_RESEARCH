@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2db177edf1461889d36fea40da8347ff2bd31387d64bee4df3db9a1796e17d38"
 created_at: "2026-09-24T05:22:14.629213+00:00"
 id: "1000703"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A unique intersection of two equal-potential entrance rails is an aligned joint."
+statement_sha256: "e175e3019119edd4219b24e9577c86052c8606af3ccdaaf066971318976c51ed"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

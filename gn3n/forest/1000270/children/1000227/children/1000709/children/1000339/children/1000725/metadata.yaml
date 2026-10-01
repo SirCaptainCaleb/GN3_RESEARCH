@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1435d6cac6c01db6c9c2aa2361a2cfed1b0ef1414acfe66bcee07ed968b6bf90"
 created_at: "2026-09-21T03:53:47.941203+00:00"
 id: "1000725"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four good deletions need not contain a compatible triangle"
+statement_sha256: "94a6e74fe7fde331568e95968a3bf448d07bc877b0468c33bcd090333a3f530d"
 substantive_worker_ids:
   - 720
 support_reason: "current_certified_premises"

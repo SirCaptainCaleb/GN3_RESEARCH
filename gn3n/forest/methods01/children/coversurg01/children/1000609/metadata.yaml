@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b4276f47c11f8b737ff0a4eda57dac6d9622bedfdc7f54eebad20a197473319d"
 created_at: "2026-09-26T13:38:45.83167+00:00"
 id: "1000609"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every 4|4|3 state reaches an equitable 5|5|1 omission state in two moves."
+statement_sha256: "5835a8cb6d63cebe11e704bd86559c329bbafcaa8f0e8d4d10f8fc5b2245a8e9"
 substantive_worker_ids:
   - 682
 support_reason: "current_certified_premises"

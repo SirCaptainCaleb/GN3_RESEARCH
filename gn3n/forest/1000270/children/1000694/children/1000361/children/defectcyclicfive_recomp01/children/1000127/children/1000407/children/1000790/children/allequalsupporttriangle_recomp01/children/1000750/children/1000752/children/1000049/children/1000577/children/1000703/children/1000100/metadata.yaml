@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "a877cea1a2c2249a8d474204987a4269b1b75e4255b43e50d03c80785121da08"
 created_at: "2026-09-28T03:04:27.214467+00:00"
 id: "1000100"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Successful transferred-label insertions force endpoint reversals on at least two supports"
+statement_sha256: "b62f067012f9cf3774753685385f5a273cf2fce529b3fcd77833a6d8b8a5c351"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

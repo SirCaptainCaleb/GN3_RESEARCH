@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "91ad2372bf5ef95ea3246a578b67e611995189f6e062957c1b6aa8016ab23f21"
 created_at: "2026-09-27T14:54:55.741663+00:00"
 id: "astra002fixedfamily06"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The synchronized order-disagreement branch is a fixed-complement Hamiltonian-deletion family."
+statement_sha256: "d86339f0648d6ba69cb0bb61d17b72fef1e1a106e7e3cf64cb49c46383f7fb8f"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

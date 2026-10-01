@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "3d68f390cac25fd01fe50c54b78b5a8c25e18d9b08b0556f70a172860847f8e7"
 created_at: "2026-09-28T17:42:46.667673+00:00"
 id: "1000205"
 last_elevation_revision: 0
@@ -52,6 +53,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Universal six-set Hamiltonicity forces an edge reversal, a short cross triple, or a local tight cycle."
+statement_sha256: "bd14a6384e76f6de09ee40bb90c283e26a639d3b8ba0c987d41bb7e3558fde1d"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

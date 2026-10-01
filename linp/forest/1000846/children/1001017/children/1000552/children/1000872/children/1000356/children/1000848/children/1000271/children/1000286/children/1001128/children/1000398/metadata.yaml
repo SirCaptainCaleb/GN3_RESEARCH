@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "aac7cba18160d872813fcd874000979ed5da7506406498860d970ac8a1055c21"
 created_at: "2026-09-24T11:24:51.356373+00:00"
 id: "1000398"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Four-source-rail overlap program: quantify distinguished overlap and its imbalance, classify the resulting two-rank source blocks, and relate agreements to offending cross-edges."
 simplified_statement: "Four source rails force two units of distinguished overlap."
+statement_sha256: "7cf055768ba87f9be3852543793042ac16835a771ef2a1a4fe790b095953f4ea"
 substantive_worker_ids:
   - 246
 support_reason: "current_certified_premises"

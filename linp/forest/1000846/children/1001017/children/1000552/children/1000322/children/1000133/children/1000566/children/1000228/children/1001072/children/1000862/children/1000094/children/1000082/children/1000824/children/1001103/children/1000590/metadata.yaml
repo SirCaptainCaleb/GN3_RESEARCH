@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "67903e7d18d45ccef6e7600f70414560dc780cbf57f01decc7b18d359cecae0e"
 created_at: "2026-09-24T02:40:55.055898+00:00"
 id: "1000590"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Unused terminal colors are repelled from both ends of a zero-slack witness."
+statement_sha256: "603b1d2dcfd6acfa92547557e404adfd1c3d2fcec4f55634e17d42be4b8b3ac2"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

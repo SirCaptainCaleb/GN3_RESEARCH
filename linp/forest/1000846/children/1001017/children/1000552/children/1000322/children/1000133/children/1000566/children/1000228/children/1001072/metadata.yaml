@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "852bc297061edd47f8fa54d84da38067548b52af21b437932864817fd96afda9"
 created_at: "2026-09-24T01:50:49.029225+00:00"
 id: "1001072"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A nonregular minimal counterexample has at least k threshold-degree vertices."
+statement_sha256: "670ae71fce87ef0766602ca07ad299cd39946dd915ffc756ccc23a6d35a26468"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

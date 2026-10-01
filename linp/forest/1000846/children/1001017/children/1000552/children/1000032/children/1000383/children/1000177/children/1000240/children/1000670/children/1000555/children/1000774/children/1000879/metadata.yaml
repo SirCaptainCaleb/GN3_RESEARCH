@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "9e9d2316d3d7436abefcc665f6eef5c6bff229b836ea3c60f8118f71a24ed530"
 created_at: "2026-09-24T04:44:30.549289+00:00"
 id: "1000879"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Clean single contacts avoid the first and penultimate rail edges."
+statement_sha256: "993e4ac9d8de93ead5ccbdcf86d9598a26732d0db1a8c6ff6ea8e075badc111c"
 substantive_worker_ids:
   - 185
   - 207

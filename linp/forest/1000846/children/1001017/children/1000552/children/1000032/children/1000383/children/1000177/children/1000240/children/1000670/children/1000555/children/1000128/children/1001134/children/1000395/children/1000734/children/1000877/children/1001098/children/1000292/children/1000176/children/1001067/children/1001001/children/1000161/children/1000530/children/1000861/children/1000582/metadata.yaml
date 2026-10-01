@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "46b614d157300f179b5b94d76985fc1308fd1b3d73a034ff7214da2afa4e73fd"
 created_at: "2026-09-25T21:12:36.641637+00:00"
 id: "1000582"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Overlap-maximal source-clean paths make entrance-side inversions pay deficit or saturation."
+statement_sha256: "59321c8641f77462f9c13b62473a8656985b0c392878ed586dc6c48c6711c0d5"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

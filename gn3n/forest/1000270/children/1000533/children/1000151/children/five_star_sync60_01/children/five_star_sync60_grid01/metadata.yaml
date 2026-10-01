@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c0e537c1c5f549fde0018ebc87a8a48ec7d0d205f6dbf653abfa2d7ce8d44c5d"
 created_at: "2026-09-29T13:12:35.791307+00:00"
 id: "five_star_sync60_grid01"
 last_elevation_revision: 8250
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Hamiltonian five-set stars synchronize into same-end extenders or a complete Hamiltonian four-grid"
+statement_sha256: "9ee2ed34b55c605126b5df608abc3902ca8d315465696145852ecf0d0c4b463d"
 substantive_worker_ids:
   - 664
 support_reason: "current_certified_premises"

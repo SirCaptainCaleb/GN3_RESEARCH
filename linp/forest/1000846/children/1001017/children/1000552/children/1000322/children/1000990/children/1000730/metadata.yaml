@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5996892286c2f9e763a7afe849dc81f01c8c8c9a61f203415d1c6eda398b8714"
 created_at: "2026-09-24T03:02:54.059289+00:00"
 id: "1000730"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two two-contact chords through one outside owner give an exact bridge splice."
+statement_sha256: "f321a8b0db094b7e32dd3ad32e2ee4bd0955b0d5650526333e618f888328900a"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

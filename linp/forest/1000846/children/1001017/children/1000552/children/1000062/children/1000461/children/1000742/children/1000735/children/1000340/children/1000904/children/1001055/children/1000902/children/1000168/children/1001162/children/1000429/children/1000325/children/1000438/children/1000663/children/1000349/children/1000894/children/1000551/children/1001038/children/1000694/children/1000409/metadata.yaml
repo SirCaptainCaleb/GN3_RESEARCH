@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "24287c06107be77f63ec492146fe799a6fefca64d7f928740e2806a38aa52ac3"
 created_at: "2026-09-25T19:19:09.010076+00:00"
 id: "1000409"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Local one-eighth strict-gap paid mass survives as clean fundamental-cycle chords."
+statement_sha256: "7f002826bf35380fc8429963dcd035e58b342084790e0edb6e8d372f423199c5"
 substantive_worker_ids:
   - 199
 support_reason: "failed_or_blocked_premise"

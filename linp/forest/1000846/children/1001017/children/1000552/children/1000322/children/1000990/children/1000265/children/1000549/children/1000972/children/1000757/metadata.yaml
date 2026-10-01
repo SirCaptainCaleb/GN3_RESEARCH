@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8d1224a9c4fecac4fe1b7466439c01be6382a09151a91788be4340412c82e452"
 created_at: "2026-09-24T04:02:14.965852+00:00"
 id: "1000757"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Cheap witness-avoiding singleton deletion forces an exact threshold bridge."
+statement_sha256: "e9176a9e6e1260730e1b53d24abdc7069ae486a32daf8bac8bb28002eabf82ff"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

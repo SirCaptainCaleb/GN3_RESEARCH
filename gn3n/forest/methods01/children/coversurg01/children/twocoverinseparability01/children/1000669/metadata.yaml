@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "37242e98eefdc217d42bf8f8d69da75e7c7a5952ae8143180efea480d02428f3"
 created_at: "2026-09-27T00:53:23.860649+00:00"
 id: "1000669"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Cut obstruction for inseparable pairs needs no minimality"
+statement_sha256: "2aedc52470b13eb48fa3174377bd521fb1197109d00b95bedb8c2a28d3aba509"
 substantive_worker_ids:
   - 717
 support_reason: "current_certified_premises"

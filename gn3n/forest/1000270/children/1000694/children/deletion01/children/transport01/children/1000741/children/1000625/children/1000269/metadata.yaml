@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "79f706992738dd3fa5fd6bfb878fe7dc0f415a663c7c95eb17a142bed42bf810"
 created_at: "2026-09-21T04:39:25.556631+00:00"
 id: "1000269"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An order-four endpoint triangle forces four persistent noninsertable vertices on three long paths."
+statement_sha256: "600f8cbcd2011f0900f3c133dbbc4dace8eed2d5c3f4300f1f89206d631791b6"
 substantive_worker_ids:
   - 628
 support_reason: "current_certified_premises"

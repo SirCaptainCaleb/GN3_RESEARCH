@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "2e9133259a6ed713e38d2b3d19dd3f6be15f70b2676e3eb91623122e7020043f"
 created_at: "2026-09-26T15:12:57.737912+00:00"
 id: "astra003lambda7case1"
 last_elevation_revision: 0
@@ -30,6 +31,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "6f0134529a81d26ec1d8e3b09adde367d1e671cf535bdef067e706e66acae724"
 substantive_worker_ids:
   - 702
 support_reason: "Invalidated by definitions01 path-construction hygiene: arbitrary reversal of a tight path is not valid. See astra003lambda7reversalcorrection."

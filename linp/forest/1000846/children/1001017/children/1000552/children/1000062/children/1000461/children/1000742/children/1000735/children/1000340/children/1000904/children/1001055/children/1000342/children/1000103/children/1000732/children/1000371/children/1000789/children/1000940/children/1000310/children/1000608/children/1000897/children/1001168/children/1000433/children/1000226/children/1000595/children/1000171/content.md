@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let
 v_0v_1...v_k
 be a rainbow terminal-pair path whose parent hyperedges
@@ -28,7 +29,9 @@ If q>=4, the collision is in the even central case with m=q-1>=3; the exact cont
 
 (3) If q>=4 and M collisions cross a cut with s=2q-2, then at least ceil(M/2) can be chosen so that their source-path pairs (R_i,R_j) are index-disjoint and every selected pair has at least two common vertices. At q=3, every crossing collision is instead one of the rank-4 local-triangle cases from (2).
 
+
 ## Body
+
 
 Let x_i=v_j cross the cut. Since j<t<i and the edge ranks are nondecreasing,
   r_j<=q,

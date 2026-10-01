@@ -6,6 +6,7 @@ Let H have minimum degree delta=q>=5, let e={x,y,z} be an ascending nonspecial e
 
 ## Body
 
+
 Write A_i={b_i,c_i} for i=2,...,t, where b_i is private to g_i along Q, c_i=g_i∩g_{i+1} for i<t, and c_t=x.
 
 First consider a double-blocking edge h through an opposite last vertex a with blockers u∈A_i and v∈A_j, 2<=i<j<=t. If v=b_j, the splice

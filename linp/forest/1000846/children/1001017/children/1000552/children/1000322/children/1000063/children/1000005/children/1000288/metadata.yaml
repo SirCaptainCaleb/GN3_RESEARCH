@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "941e475e70bbf19297bbd590c1289717442f7d70b875946ac933a479aa428d36"
 created_at: "2026-09-24T01:39:28.26561+00:00"
 id: "1000288"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A lexicographic induction on nonspecial path states would prove the grand two-thirds conjecture if flat equal-rank transfer cycles and canonical loss-one fixed-hole/theta states can be eliminated at the 3q/2 scale."
+statement_sha256: "cc0547c1e859f564c8363f1dc5931bc56dba25e0a73206452b205ead163c2362"
 substantive_worker_ids:
   - 185
 support_reason: "not_a_proved_or_evidence_claim"

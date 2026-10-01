@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample of order n>=18, and let C=A|B|X be a spanning three-cover minimizing the quadratic potential Phi within a connected pairwise-repartition component containing no cover with at most two components. Then either H contains explicit order disagreement, or every component of C has order at least six.
 
+
 ## Body
+
 
 Assume no explicit order disagreement is present. By the certified order-seventeen normalization 5ca0bb01c7c0, every component of C has order at least five.
 

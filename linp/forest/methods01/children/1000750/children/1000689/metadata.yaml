@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "8999fad7a2439d938cbce063624f4c8654154d3ddb89649cd470f9368a671326"
 created_at: "2026-09-25T04:09:25.310278+00:00"
 id: "1000689"
 last_elevation_revision: null
@@ -32,6 +33,7 @@ research_interface:
 research_level: "abstraction"
 semantic_container_text: null
 simplified_statement: "Reusable combinatorial-topology and matching tools for structured hypergraph constructions."
+statement_sha256: "642226d70341d451024239e4c8011f33a9cda1b31ea6191741a48ce113f2f81f"
 substantive_worker_ids:
   - 249
 support_reason: "not_a_proved_or_evidence_claim"

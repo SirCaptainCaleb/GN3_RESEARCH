@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "7b91e739d125eada2a4359a5f04e7a27a6a1c29c0372efeedb4d2db806497640"
 created_at: "2026-09-22T14:54:03.394605+00:00"
 id: "1000038"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Ryser for 3-partite 3-graphs from Aharoni--Haxell and Konig."
+statement_sha256: "e2c8492f53fdf696b5158c1b5600c354cb058ccc973fa1bb2b7cf96993b88426"
 substantive_worker_ids:
   - 590
   - 705

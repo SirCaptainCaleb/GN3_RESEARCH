@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "7479e7b8b414b3aaee65f5ff3e94be179d965ffc6f8635f8206ebb82ac1f4296"
 created_at: "2026-09-21T00:46:02.181116+00:00"
 id: "1000791"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Double-frozen enlarged supports are locally consistent at order thirteen"
+statement_sha256: "a11b48df030b6f1b0917c5a925c1d6f663f1d73442de7a684cc123ed8fddc4a0"
 substantive_worker_ids:
   - 575
 support_reason: "current_certified_premises"

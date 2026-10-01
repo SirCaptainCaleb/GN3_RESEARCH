@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "511d72876b17ddcce8513d4ddcdefc6c05332e7ee41752401824950e5b0b685d"
 created_at: "2026-09-27T00:00:13.197952+00:00"
 id: "1000461"
 last_elevation_revision: 0
@@ -31,6 +32,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Deletion-cover cocycle"
+statement_sha256: "98a897f5bfcb83e9f0aae6347c87923da23573b5734942c87a5df25bcafa3d51"
 substantive_worker_ids:
   - 610
 support_reason: "not_a_proved_or_evidence_claim"

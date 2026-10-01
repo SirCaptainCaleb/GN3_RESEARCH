@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "3f66ce8fe890b83903ec7dbb4b28408615abb8163b597d7be73a65bb62a62c22"
 created_at: "2026-09-24T05:30:38.464937+00:00"
 id: "1000521"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The G-only odd-central four-single state is an exact loss-one normal form."
+statement_sha256: "3649116f48f56a7505ef9275e5201720fcf0c411b1191f48b14546157a6aca54"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

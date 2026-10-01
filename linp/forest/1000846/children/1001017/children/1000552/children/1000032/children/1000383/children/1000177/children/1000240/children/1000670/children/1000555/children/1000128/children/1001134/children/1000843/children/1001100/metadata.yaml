@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "13341c00ee23e7e3ee78b4b9919f929cfd3a48dcce0418c65a518fb01a159654"
 created_at: "2026-09-25T22:07:51.805292+00:00"
 id: "1001100"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "M interior U₁₁ color-terminal collisions force at least ⌈M/13⌉ endpoint-disjoint pairs of chosen maximum endpoint paths, each pair sharing at least two vertices."
+statement_sha256: "cf3c745b7b6005a2654ee9f4cc8012d6141aecd1e9e5b64723937e7429be787d"
 substantive_worker_ids:
   - 220
   - 238

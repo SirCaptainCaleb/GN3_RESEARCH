@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample and let mu be the minimum smaller-component order among all exact two-path covers of all one-vertex deletions. Then either deletion-cover dynamics already exposes an explicit support crossing or relative-order disagreement, or there is a globally extremal deletion state H-y=R|Q with |R|=mu<=|Q| and an endpoint z of R such that, for Q=(q_0,...,q_s), both (q_1,q_0,z) and (z,q_s,q_{s-1}) are tight. The proof begins with a minimum-side transfer dichotomy: any extremal H-x=P|Q has either a two-end barrier vertex of P or a tight bridge (q_0,p_{k+1},p_k,q_s) through a reversed P-edge. A clean deletion-state swap converts the reversed-edge branch into a globally extremal barrier state, and a second minimal-distance argument transports the barrier vertex to an endpoint unless an explicit disagreement occurs.
 
+
 ## Body
+
 
 # Global minimum-side deletion states normalize to an endpoint carrying both large-side barriers
 

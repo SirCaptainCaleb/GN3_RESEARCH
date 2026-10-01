@@ -6,6 +6,7 @@ Let d=floor(2ell/3), k=d+1, and let H be an edge-minimal counterexample to S_ell
 
 ## Body
 
+
 Fix ell>=4, put d=floor(2ell/3) and k=d+1. Assume H is an edge-minimal counterexample to the equality-layer assertion S_ell of dde3d702703d with
   m=|E(H)| >= d|V(H)|+1.
 Then every vertex has degree at least k, H contains a nonspecial edge, and for

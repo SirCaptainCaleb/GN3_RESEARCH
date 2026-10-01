@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bb47fa8c79327afc699e18c7df3b9f639081a5e8fae66c4b1ab350b3d157939e"
 created_at: "2026-09-24T02:38:52.18656+00:00"
 id: "1000299"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Zero-slack critical cores are at absolute near-spanning order."
+statement_sha256: "82f046ecad75e6e3928c3d632511760adf2ffe0c3523459c0ba26b3ca371907a"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "af780ba3456e9e7b718c13e1cdd057c25ea4affd813997a0c7500ac74c61dc11"
 created_at: "2026-09-30T13:11:29.952464+00:00"
 id: "local45_endpoint_threeleaf_reachable01"
 last_elevation_revision: 9925
@@ -43,6 +44,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "The endpoint three-leaf star lifts to reachable four-sides and synchronized interior locks"
+statement_sha256: "f4fd3ec88585686f108280681e36616d4c32bba96ba5f6f9d9b285dd0eeb2cfc"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

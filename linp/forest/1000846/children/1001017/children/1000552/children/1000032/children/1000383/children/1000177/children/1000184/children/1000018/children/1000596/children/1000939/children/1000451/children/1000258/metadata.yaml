@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "86db9b803856a8eef3da0c060594405d14022bf1955cb276005ad896d24a1420"
 created_at: "2026-09-24T05:14:30.362395+00:00"
 id: "1000258"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every top-boundary critical gadget contains a rank-q base with two rank-(q+1) entrance sides."
+statement_sha256: "e1f52b2a5f81c12f5b4b701bb82527d73181106cff831533e9035a38cf7facd7"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

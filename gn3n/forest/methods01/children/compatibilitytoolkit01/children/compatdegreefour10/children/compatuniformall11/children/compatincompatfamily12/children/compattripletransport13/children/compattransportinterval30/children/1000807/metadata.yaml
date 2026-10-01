@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "6de8000131495666913d5712a9d0e461405f02821278b66c815ec3f9914d61c9"
 created_at: "2026-09-27T19:24:28.057435+00:00"
 id: "1000807"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two labels using one endpoint collapse the third transport interval to width one"
+statement_sha256: "e4cb50a5ed43ce86f20a29e354132bdcb1df16a0ef5b538201481f45aee0e591"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

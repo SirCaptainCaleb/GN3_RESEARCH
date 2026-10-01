@@ -6,6 +6,7 @@ In the s=2 equality layer the leave U is even of average degree two. If z is the
 
 ## Body
 
+
 Assume the exact-density equality layer has Steiner deficiency s=2:
   n=6d+3.
 Let U be the uncovered-pair leave graph. Then every leave degree is even and

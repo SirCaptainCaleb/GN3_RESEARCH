@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2b9a9ef3f8091d79efe776d14425a490fe141d373197afdc5cce139c807072d9"
 created_at: "2026-09-27T14:11:54.691804+00:00"
 id: "astra008scope01"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Astra-008 reduces only to the sharp odd half-order shell."
+statement_sha256: "615d5d64f26cd074534d0f681aad35b91626e243e8d57f05d6a2c138da4809ff"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

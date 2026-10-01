@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "5141e81d415cf9c14f51952fc7a273f1aeae639b446a7d3287723274a784d7a8"
 created_at: "2026-09-24T04:04:38.847237+00:00"
 id: "1000632"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Type-A potential levels have a two-level predecessor-capacity recurrence."
+statement_sha256: "3feeb3da03b9a3533165ba7620101c5aa206f347ac70bac667c1534de2b59267"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

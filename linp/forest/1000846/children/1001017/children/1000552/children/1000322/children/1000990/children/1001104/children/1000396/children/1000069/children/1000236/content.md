@@ -6,6 +6,7 @@ For L_p={v:phi(v)=p} and V_{p+1}={u:phi(u)>=p+1}, one has 2 sum_{v in L_p} max(0
 
 ## Body
 
+
 Let H be a finite linear 3-graph. For p>=1 define
   L_p={v:phi(v)=p},
   V_{p+1}={u:phi(u)>=p+1}.

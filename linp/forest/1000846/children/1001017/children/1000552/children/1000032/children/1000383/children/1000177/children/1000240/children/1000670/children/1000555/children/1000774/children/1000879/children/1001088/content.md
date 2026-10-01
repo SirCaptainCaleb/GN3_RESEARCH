@@ -6,6 +6,7 @@ Let P=(g_1,...,g_p) be a maximum path ending at v. Let e,f be ascending nonspeci
 
 ## Body
 
+
 Let P=(g_1,...,g_p) be a maximum p-edge path ending at v, with h=g_p. Let
   e={x,v,u},  f={y,v,z}
 be distinct ascending nonspecial edges, neither equal h, such that relative to V(P)\V(h):

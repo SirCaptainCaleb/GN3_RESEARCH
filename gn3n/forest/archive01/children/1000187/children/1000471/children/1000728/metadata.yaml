@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "a90b62ef9323eccfdeced33346c16a38523698f9668a5506a33504829ac089b7"
 created_at: "2026-09-27T21:33:34.793329+00:00"
 id: "1000728"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "A canonical central-state argument may be reduced to persistence of a bounded disturbance witness throughout the reachable repartition component."
+statement_sha256: "7cd6fba5b6b6133af64238065be35cd3698503e690b3581c15e4234d61cc3f87"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2afc615b313fbfcd5ae0f27a79a4dc6ac0ef0999c41258d88b8d2ba013daca73"
 created_at: "2026-09-27T04:43:16.842569+00:00"
 id: "compatglobal13tri27"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Thirteen deletion labels force endpoint structure, a uniform triple, or one of two four-cover patterns"
+statement_sha256: "6ca0edb9a8ff5576e133930c929e2b28fae708873ddf280e6963aef0d56c358f"
 substantive_worker_ids:
   - 578
 support_reason: "current_certified_premises"

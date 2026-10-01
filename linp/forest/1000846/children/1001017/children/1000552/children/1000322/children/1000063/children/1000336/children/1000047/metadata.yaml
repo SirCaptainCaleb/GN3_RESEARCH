@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "019572908a4a78ceab80134278cb7afb76b742b42c4a5325063c286f139acaf5"
 created_at: "2026-09-23T04:17:49.571569+00:00"
 id: "1000047"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A saturated boundary fan yields a degree-two cell multigraph, and every adjacent-cell double blocker is forced through the forward joint of the later cell."
+statement_sha256: "772c63cbaee82c960705248b03cb1d093b63e1718b282cc70cccea65b652d866"
 substantive_worker_ids:
   - 255
 support_reason: "current_certified_premises"

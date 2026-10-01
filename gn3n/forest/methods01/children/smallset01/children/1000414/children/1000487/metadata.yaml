@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d2c7506d35a11d351ed7c017a1ede0ac4641438a65aaf64caa59130f0e627c8c"
 created_at: "2026-09-27T04:41:20.811468+00:00"
 id: "1000487"
 last_elevation_revision: 0
@@ -37,6 +38,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the edge-orderable mandatory-triple setting, the endpoint-pair Hamiltonicity graph on the opposite path has independence number at most two, yielding a dense complementary blocker family."
+statement_sha256: "12c3e6ec800a7d9f5ea9dccfd9bc366f9499f5f582de34590bf9763c9b4f19f3"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

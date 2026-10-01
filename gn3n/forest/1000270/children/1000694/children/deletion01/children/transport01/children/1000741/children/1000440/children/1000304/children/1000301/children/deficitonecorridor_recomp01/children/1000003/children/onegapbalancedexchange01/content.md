@@ -6,6 +6,7 @@ Let H be a minimum counterexample, let A be a globally longest tight path of ord
 
 ## Body
 
+
 If |E|<=1, apply 0204056412a4 for the stated bounded-gap conclusion. Assume |E|>=2 and choose consecutive vertices x,y of the E-block in the displayed order of C. Both lie outside the globally longest path A and therefore are noninsertable into its displayed order.
 
 The paired-noninsertion reduction used in 0204056412a4 gives one of four outcomes for this chosen pair: a Hamiltonian four-set, a Hamiltonian five-set, a tight cross triple through A, or a direct tight A-interval connector between x and y. In either Hamiltonian-support outcome, the support is proper because a minimum counterexample has order greater than ten; minimum-counterexample calculus then gives a non-Hamiltonian complement of path-cover number two.

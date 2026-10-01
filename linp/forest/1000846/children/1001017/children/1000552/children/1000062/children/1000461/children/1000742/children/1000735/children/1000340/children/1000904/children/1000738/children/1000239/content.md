@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a finite linear r-graph with r>=3. Let v be a vertex of rank p, and let e_1,...,e_k be distinct ascending nonspecial edges terminal at v. Assume that, for every e_i, the vertex v has minimum vertex rank among the r-1 terminal vertices of e_i. Write q_i=phi(e_i), let x_i be the unique entrance of e_i, and relabel so that q_1<=...<=q_k.
 
 Then the sets e_i\{v} are pairwise disjoint and, for every i,
@@ -18,7 +19,9 @@ Moreover, besides x_i each edge e_i contains r-2 terminal vertices, all of rank 
 
 In particular, a common-terminal family of size k=Theta(p) forces total vertex rank Theta(p^2) on pairwise distinct vertices outside v.
 
+
 ## Body
+
 
 For each i put
   J_{q_i}(v)={f containing v: phi(f)<=q_i}.

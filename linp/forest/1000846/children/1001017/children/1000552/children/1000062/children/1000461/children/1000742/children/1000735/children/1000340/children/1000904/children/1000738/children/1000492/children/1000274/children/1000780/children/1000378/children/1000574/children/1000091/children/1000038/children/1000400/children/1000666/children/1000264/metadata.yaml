@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2f2659f28d90b3e22e26202e83741e2091a4d1e21a598fd0cb28ca78bee6b52b"
 created_at: "2026-09-24T13:57:07.577048+00:00"
 id: "1000264"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Flat gap-one terminal cycles have length at most p minus one."
+statement_sha256: "d98f32eba354b05f2e92b7519ce708568daedd7aa4abbec9df607c13625381d0"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

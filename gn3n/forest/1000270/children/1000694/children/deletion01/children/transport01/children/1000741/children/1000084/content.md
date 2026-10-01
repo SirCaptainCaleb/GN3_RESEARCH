@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample and let H-x=P|Q be a deletion two-cover, where P=(p_0,...,p_m) has order at least four (m>=3). Then exactly one of the following orientation alternatives holds:
 
 (1) (p_0,x,p_m) is tight. In this case
@@ -14,6 +15,7 @@ Hence W is proper Hamiltonian and H-W is non-Hamiltonian of path-cover number tw
 (p_m,x,p_0).
 
 Thus every deletion-cover component of order at least four yields either a canonical Hamiltonian five-window supported on its two displayed end edges and the omitted vertex, or a direct tight cross triple joining its two endpoints through the omitted vertex. The same conclusion holds for Q.
+
 
 ## Body
 

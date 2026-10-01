@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "236d27976acf01a6ce71125abaf4ce0a4ee875c1b1cf4cae7098ada9965fb6be"
 created_at: "2026-09-25T20:17:00.13313+00:00"
 id: "1000613"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lens-free flat terminal incidences are paid by local defect."
+statement_sha256: "245b8bc8df8c13c101f39b622e3c85234e386a512d4e7372997f539daf113324"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

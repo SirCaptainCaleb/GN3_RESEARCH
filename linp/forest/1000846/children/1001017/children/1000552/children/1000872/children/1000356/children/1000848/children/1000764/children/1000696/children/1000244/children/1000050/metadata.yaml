@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7e4f76c5fca552140fa44948215e161205d925133fe103750de4f4b8a909f114"
 created_at: "2026-09-24T05:29:43.313797+00:00"
 id: "1000050"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The forced middle-private low entrance raises the outer right joint to full terminal potential."
+statement_sha256: "7c51c77f06490514b579efa69cf619b33c8fb5de5c101617543a3a927056ec92"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

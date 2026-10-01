@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "c79d8954aa5ba4300d30cf991ccb55a10cd2e23b7baa972e365dd8b2db1d2fd0"
 created_at: "2026-09-28T20:59:48.569544+00:00"
 id: "ham6goodsquare01"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Hamiltonian six-set two-label-square toolkit: a six-set with two-coverable complement contains a full square of two-label deletions; its endpoint coherence, internal-label alternatives, and four-core structure force crossing, descent, or order disagreement in the large-order regime."
 simplified_statement: "Every Hamiltonian six-set with two-coverable complement contains a full two-label square."
+statement_sha256: "f013eb463e903cad41e99649f8154c3dd964e886eb0576a90a75a8e8037d80af"
 substantive_worker_ids:
   - 718
 support_reason: "current_certified_premises"

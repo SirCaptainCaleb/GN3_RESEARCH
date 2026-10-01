@@ -2,11 +2,14 @@
 
 ## Statement
 
+
 Let H be a boundary tournament and let C=X|P|Q be a spanning three-cover minimizing Phi within its connected pairwise-repartition component, where X is a Hamiltonian path of order six. Let e,f be distinct displayed endpoints of components of C other than X, and assume the component containing each of e,f has order at least eight. The two endpoints may belong to the same component.
 
 Then there are at least three unordered pairs {a,b} subset V(X) such that, with D=V(X)-{a,b}, both five-sets D union {e} and D union {f} are Hamiltonian. For each such pair, putting S=D union {e,f}, either S is Hamiltonian or H[S] contains explicit relative-order disagreement among Hamiltonian vertex-deletion paths. Consequently, if no order disagreement occurs, at least three distinct two-for-two replacements of X by {e,f} produce Hamiltonian six-sets.
 
+
 ## Body
+
 
 Fix one endpoint e, lying on a displayed path R of order m>=8. If X union {e} were Hamiltonian, replacing X|R by (X union {e}) | (R-e) would change the pair of component orders
 6,m -> 7,m-1.

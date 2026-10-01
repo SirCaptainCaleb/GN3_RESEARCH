@@ -6,6 +6,7 @@ The current proofs astra003lambda7case1, astra003noLambda7, and astra003nolambda
 
 ## Body
 
+
 The project convention in definitions01 is: for each three distinct x,y,z, exactly one of (x,y,z) and (z,y,x) is tight. Accordingly, arbitrary reversal of a tight path is not valid; reversing even one tight triple gives its non-tight mate.
 
 This invalidates the currently pending lambda-seven arguments as written.

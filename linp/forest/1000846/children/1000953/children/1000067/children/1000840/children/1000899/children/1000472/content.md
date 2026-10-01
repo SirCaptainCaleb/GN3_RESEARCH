@@ -6,6 +6,7 @@ Let H be a linear 3-graph and let C_3 be the F_3-linear span of its edge-inciden
 
 ## Body
 
+
 For the path implication, let e_1,...,e_ell be a linear path and form the alternating sum
   1_{e_1}-1_{e_2}+1_{e_3}-... .
 Every joint lies in two consecutive path edges with opposite coefficients and cancels. Every other path vertex lies in exactly one path edge and has coefficient plus or minus one. There are ell+2 such non-joint vertices, so the resulting ternary codeword has Hamming weight ell+2.

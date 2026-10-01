@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "00e44bbf7676e90cc6da4e8087476bfdda36133c5564f1583f31b6c75b91daf8"
 created_at: "2026-09-25T20:45:57.268754+00:00"
 id: "1000652"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "c7b94656b1efedc48d38fa620107b5b3f5bcc1cbecb02d15d8778a89e47a5641"
 substantive_worker_ids:
   - 220
 support_reason: "The claimed exhaustive classification of extra intersections in the shortcut sequence misses collisions involving the unused terminal v_{h-1} of the bridge edge E_h. A displayed right-block edge E_b with b>=h+2 may have entrance x_b=v_{h-1}; this is a legitimate backward color-terminal collision [h-1,b] causing a nonconsecutive intersection with E_h, but it is neither contained in [j,l], nor contained in [h,i], nor of the stated spanning form a<l<h<b. Thus failure of the shortcut cycle does not imply alternative (B) as stated."

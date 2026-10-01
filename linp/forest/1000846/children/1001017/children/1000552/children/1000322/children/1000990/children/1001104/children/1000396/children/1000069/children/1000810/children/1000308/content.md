@@ -6,6 +6,7 @@ At exact density, for any vertex set S with charge K(S)=sum_{v in S}k_v and m_i(
 
 ## Body
 
+
 Let H be an exact-density linear triple system:
   |E(H)|=d|V(H)|.
 Use the equality charges

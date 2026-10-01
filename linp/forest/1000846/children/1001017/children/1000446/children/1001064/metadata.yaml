@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "025591806f1bab57a57921efb97b086469bfd11f8a3d6df8ee5b92122a2a0527"
 created_at: "2026-09-24T02:47:23.751395+00:00"
 id: "1001064"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Source/non-source decomposition couples a forced digraph to a proper colored graph."
+statement_sha256: "3655922cf9d7efae6a12c38cc325227962d8b01473e730274c868b76ca588d56"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

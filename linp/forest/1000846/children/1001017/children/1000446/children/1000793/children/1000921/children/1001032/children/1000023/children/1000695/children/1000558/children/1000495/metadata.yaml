@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e415d3f56c617fc21f025ae616de2c50d950b4e44eae88411c2e6876cd181caa"
 created_at: "2026-09-24T03:23:01.071333+00:00"
 id: "1000495"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "General upper bound improved to (ell-13/6)n."
+statement_sha256: "8d6a7b8cd485c0acd2887c3595260b9fdf43b97d1bc03c071df2a89c2897fc4a"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

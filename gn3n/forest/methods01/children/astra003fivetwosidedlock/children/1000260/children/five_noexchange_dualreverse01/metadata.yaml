@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "7a7935fb1e65046dd31e10a764087e6ca9edf676a5dae6179ff67b5b993e3e7f"
 created_at: "2026-09-29T01:09:17.320925+00:00"
 id: "five_noexchange_dualreverse01"
 last_elevation_revision: 8355
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A five-side with no neutral endpoint exchange forces reversed displayed edges on both long components"
+statement_sha256: "4358154646f06fa121c5a2d0cef12e3c9fa60b6095a079fa50bfab5cae4b53f8"
 substantive_worker_ids:
   - 703
 support_reason: "current_certified_premises"

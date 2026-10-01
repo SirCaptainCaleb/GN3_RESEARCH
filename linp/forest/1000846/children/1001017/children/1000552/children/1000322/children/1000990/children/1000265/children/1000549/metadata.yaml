@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "9c0b277e776b5455b13167c1d520ac8c49e0cfeb145a3b8a50109cad0f026548"
 created_at: "2026-09-24T02:53:03.83584+00:00"
 id: "1000549"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Cheap outside packets force a low-degree survivor."
+statement_sha256: "ad471c1151bc9ffe1bd52a35c7d2d8ce8f2cc5faed4025ca2b633cca2aafc339"
 substantive_worker_ids:
   - 185
   - 207

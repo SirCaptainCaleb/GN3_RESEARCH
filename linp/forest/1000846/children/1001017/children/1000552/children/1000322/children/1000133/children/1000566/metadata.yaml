@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "fea8f4249e53827841ccd4ad603430369ceba45bebd95b069b5af861b86fb4a3"
 created_at: "2026-09-24T01:48:06.054301+00:00"
 id: "1000566"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "High-degree-only edges form a universal core of all nonspecial witness paths."
+statement_sha256: "0ff23e688a7b36bc693ae5a1e069e9f96dba05686df51cfa45605c666c40737e"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

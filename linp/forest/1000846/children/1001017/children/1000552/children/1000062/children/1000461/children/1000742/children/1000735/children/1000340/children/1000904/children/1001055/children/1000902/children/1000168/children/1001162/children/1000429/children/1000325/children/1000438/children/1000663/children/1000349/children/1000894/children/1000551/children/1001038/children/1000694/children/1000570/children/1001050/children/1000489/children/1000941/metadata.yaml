@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cb29d3dd351ae799b06263fd6cd21c5ddb04eb65e5b9fcfca41d5a8b02d2bf9e"
 created_at: "2026-09-25T21:39:34.926259+00:00"
 id: "1000941"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Opposite singleton-contact types have rank sum p plus three only with a superlevel output."
+statement_sha256: "8b356b1787870aacfb182dd0c688f9a54e33f19c7623df2127462f4aaae311e3"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

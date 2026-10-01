@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "42c663fb482f4db646ba14a98fdf1173ed798837a12a2ec6eda0473fee6ab70a"
 created_at: "2026-09-28T11:04:39.016769+00:00"
 id: "1000784"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The intersection of two rooted graphs contains adjacent edges or is a perfect matching."
+statement_sha256: "63a9f58a242d5f5667d716439c3273b5aac8e69ac63875c6c914392234c809a0"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

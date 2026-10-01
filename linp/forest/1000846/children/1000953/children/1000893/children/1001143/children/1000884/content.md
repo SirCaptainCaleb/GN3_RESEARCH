@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let A⊂F_2^d\{0} have |A|=2ell+1, and let H(A) be the induced Boolean Schur triple system. If H(A) is P_ell-free and has density greater than (ell-1)/3, then A is either a punctured subspace or a punctured subspace with two additional points deleted; equivalently ell=2^{r-1}-1 or ell=2^{r-1}-2. For 2<=ell<=15, the only strict-density-improving P_ell-free cases in these two families are the Fano example at ell=3 and PG(3,2) at ell=7.
 
+
 ## Body
+
 
 Put n=|A|=2ell+1 and let M be the number of unordered pairs {x,y}⊂A with x+y∉A. Since every Schur triple accounts for exactly three good pairs,
   3|E(H(A))| = binom(n,2)-M.

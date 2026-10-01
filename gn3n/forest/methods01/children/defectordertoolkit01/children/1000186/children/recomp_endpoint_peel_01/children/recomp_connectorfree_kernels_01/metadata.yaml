@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "recomposition_equivalence"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "8e11b0f10064e242f361b61b6312a853373cb061b582d236c398e6c02545b39b"
 created_at: "2026-09-28T20:38:25.749423+00:00"
 id: "recomp_connectorfree_kernels_01"
 last_elevation_revision: 0
@@ -54,6 +55,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Connector-free minimum-side peeling gives reverse hooks, endpoint four-set classification, and a Hamiltonian four-set."
+statement_sha256: "fde7233472e6d862bc36446e685a7aa7aa8b0e0a67521a6203ce8c7a242854b6"
 substantive_worker_ids:
   - 586
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "1360551ecbf673e0bc6964e02f57e389dd7a16ebc168552844031c7eb75ec8d0"
 created_at: "2026-09-29T15:17:57.204369+00:00"
 id: "1000086"
 last_elevation_revision: null
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every boundary tournament of order at least seven has a five-vertex reversal"
+statement_sha256: "13300687c50985f84f0bc0c2c70aa49aeacdcb8ae179dadb076257acf273e583"
 substantive_worker_ids:
   - 605
 support_reason: "provisional_unaudited"

@@ -6,6 +6,7 @@ Let H be a boundary tournament and let C=X|P|Q be a spanning three-cover minimiz
 
 ## Body
 
+
 By 0c8144b5ac80, the edge common to G_e and G_f gives Hamiltonicity of D union {e} and D union {f}. The same theorem says that the six-set S=D union {e,f} is Hamiltonian unless explicit order disagreement already occurs. Hence assume no order disagreement and S Hamiltonian.
 
 Put R=V(M) union {a,b}. If R is Hamiltonian, S|R is a two-component repartition of V(X) union V(P). Both new component orders equal the old orders: |S|=6=|X| and |R|=|P|. Thus it is a legal Phi-neutral repartition, giving (2).

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b1e847adbc4d4825711147dd544249f218892d9deee037d30b8d0281c40d65c8"
 created_at: "2026-09-27T23:50:27.393598+00:00"
 id: "1000185"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Conjecturally, compatibility graphs near the Mantel bound admit a coherent two-class structural partition, with the equality case rigidly complete bipartite."
+statement_sha256: "59be7791a0c4918375c0e3de9ba94172f3a7016a8084595aedc31fece2959986"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

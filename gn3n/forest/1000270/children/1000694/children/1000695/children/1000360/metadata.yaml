@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b483a74d63516d6f959c5454df19b13b794a13612261ac944e56f243d138fc27"
 created_at: "2026-09-28T01:00:21.264816+00:00"
 id: "1000360"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Pair-deletion parity cocycle"
+statement_sha256: "2e5971f694131a2db7c0202110efdae08ef771baa63bcf608e96770e3f8cedca"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

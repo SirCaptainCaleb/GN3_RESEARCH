@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e6786364991b47c907544fab1b2aa71e3fca4cbc26fb0c1afbd8b29ac3ddb0a5"
 created_at: "2026-09-27T04:35:40.119859+00:00"
 id: "compatsupportham22"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Support-switch Hamiltonian-enlargement branch: the two parity types force core enlargements; adjacent-gap concentration, synchronized reverse crosses, opposite-orientation transpositions, and one-split extender-blocker toggles reduce the remaining geometry to bounded insertion windows, cross-swaps, or order disagreement."
 simplified_statement: "The two support-switch parity types force explicit Hamiltonian core enlargements"
+statement_sha256: "03b92f70194c0ef91126a6e71150bbfa5209d1b39ad85cc4ff690777b0e40e80"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

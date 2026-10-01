@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "259495ba70ddceb74d97be14034b33a69c8c9ce52c2ddcb0085263122d2de6c2"
 created_at: "2026-09-24T04:15:52.89733+00:00"
 id: "1000308"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Packet deletion has an exact effective-charge formula."
+statement_sha256: "8f52945292ba9dc3cf19c398c64b70c350ebf549b598f6159213e8dcf7847d85"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

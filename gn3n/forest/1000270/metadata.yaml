@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "8a64326938661b8b2e1709199099f0fd45e8fe3bccb01defc681e13acb6e1f20"
 created_at: "2026-09-20T18:54:34.860606+00:00"
 id: "1000270"
 last_elevation_revision: null
@@ -30,6 +31,7 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: "Grand two-cover proof program: minimum-counterexample reductions, quadratic-minimum regimes, deletion-state and defect-span interfaces, support-reconfiguration and pairwise-repartition routes, and bounded transport or obstruction mechanisms aimed at reducing spanning covers to two paths."
 simplified_statement: "Every finite 3-uniform boundary tournament is conjectured to have path-cover number at most two."
+statement_sha256: "ea1a77abcca81576d8c94b23c745831053320ba41e48e9a77a30cf586c021498"
 substantive_worker_ids:
   - 584
   - 673

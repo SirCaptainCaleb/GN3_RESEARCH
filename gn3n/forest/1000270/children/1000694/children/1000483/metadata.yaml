@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "6a3267ced76fa8d9f5460b4ea0dc44e34b19b66139987f20924a4ac5cb9dc07e"
 created_at: "2026-09-27T21:37:43.755434+00:00"
 id: "1000483"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: "Failed-splice clause-system route: exchange failures are encoded by bounded transition clauses whose overlaps force cross triples, pivot conflicts, or other rigid local structure, seeking closure by consistency or compressibility rather than by an ordinary support graph."
 simplified_statement: "Failed-splice obstructions should be modeled by bounded disjunctive transition clauses, with closed unresolved clause families forcing either a consistent augmentation or rigid compressible structure."
+statement_sha256: "63d467e5eef8f1ba8f1243f3757edaf80139b186aae3116c2993f6a278d1b7b3"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

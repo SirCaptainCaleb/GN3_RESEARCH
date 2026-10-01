@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2ecc8a824f1e8f067bf75be23a0d7db74861046eaaef5b38287479c1f2491227"
 created_at: "2026-09-27T15:55:01.072697+00:00"
 id: "1000285"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Four-side endpoint five-sets force quantitatively more imbalanced complement covers."
+statement_sha256: "316bc4e65ef656d215458aea1afcc16f87cd2cf2713c87f101275b41fbac56e0"
 substantive_worker_ids:
   - 614
 support_reason: "current_certified_premises"

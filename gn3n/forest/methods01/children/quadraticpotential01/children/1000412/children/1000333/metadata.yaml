@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "d3730e955a0672ac1425a95aeebf6258e43023fe31db71411d7785389f02e8a6"
 created_at: "2026-09-27T19:47:36.271384+00:00"
 id: "1000333"
 last_elevation_revision: 0
@@ -50,6 +51,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Rigid local 4|5 plateau: a trapped 4|5|a quadratic minimum contains a nine-vertex residue whose two-covers all have profile 4|5, and the descendants force crossings, singleton-switch structure, endpoint blockade, or order disagreement."
 simplified_statement: "The nine-set of a trapped local 4|5|a minimum has only 4|5 two-covers."
+statement_sha256: "acfb6fe5f24082b22c8e8cd512fa62559323b368567b440f4d0e4a8f0f1c5416"
 substantive_worker_ids:
   - 573
   - 626

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "968fa939e80fd209910e77c52fd21277a9b9e92c9a157d6fecd51a85ca03d192"
 created_at: "2026-09-29T20:53:35.63734+00:00"
 id: "fixed_endpoint_matching_orientation01"
 last_elevation_revision: 9000
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The fixed-endpoint matching shell is exactly the two orientation classes."
+statement_sha256: "773e0aa3b7bebd9347691f75a08120e6a5d62b9505f25dc4852ff4835f0febcf"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

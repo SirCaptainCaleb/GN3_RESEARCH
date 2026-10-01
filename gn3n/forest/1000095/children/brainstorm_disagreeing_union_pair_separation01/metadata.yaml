@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "d1550a741990d3012ed0f8797441b2c4a3b22ae272e1dd6513608da46507a015"
 created_at: "2026-09-29T21:30:08.018148+00:00"
 id: "brainstorm_disagreeing_union_pair_separation01"
 last_elevation_revision: null
@@ -28,6 +29,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "A reversed common pair can be separated on the union of two long paths"
+statement_sha256: "0bd03bcd038e47e6a79b7f49217122981a84008b6e3ecc7c382cc62d601cb302"
 substantive_worker_ids:
   - 592
 support_reason: "not_a_proved_or_evidence_claim"

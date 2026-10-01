@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "96bfa46e0fa6c678e705386473e753dc35e444dbc872625a5001a2befa5de362"
 created_at: "2026-09-29T22:45:40.612584+00:00"
 id: "common_endpoint_barriers_fivewindow_counterexample01"
 last_elevation_revision: 9533
@@ -54,6 +55,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Common endpoint barriers do not force Hamiltonian five-vertex windows"
+statement_sha256: "61c39a3e13918dd5650e43712a5fcb66d9708b0b8405d54bb0523ee9020fccc3"
 substantive_worker_ids:
   - 592
 support_reason: "current_certified_premises"

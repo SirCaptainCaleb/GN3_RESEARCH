@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ffae46f7697b509ddd9d9edd5b4d24bbb1b6fad0bc2e8f4f614b1719d0ae4dda"
 created_at: "2026-09-24T01:38:35.985321+00:00"
 id: "1000442"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Path-hull induction for nonspecial edges: use lower-rank witness structure to reduce the dense-core conjecture to progressively more constrained path hulls."
 simplified_statement: "Inductive path-hull reduction for lower-rank nonspecial edges."
+statement_sha256: "08822526706ad7210aa1cff6f3c2bc980a783b7ecf10351c662a30a653d1ee72"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

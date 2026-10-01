@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0c1c87c4f961384a8ebdb91f0d134f71a4eeae785b26192ee318ab3e9ae399a1"
 created_at: "2026-09-25T21:13:13.780002+00:00"
 id: "1000932"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every overlap-maximal return-order inversion pays one edge of metric deficit."
+statement_sha256: "6ed508f7f8d2358ca82a6c6a437bc92501451f6aaa0895bdcdd36159802d9d8d"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

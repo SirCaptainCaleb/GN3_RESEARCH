@@ -6,6 +6,7 @@ Let e={x,v,u} be a 0-1-1 ascending edge of rank q>=4, assigned to terminal v wit
 
 ## Body
 
+
 Let e={x,v,u} be a 0-1-1 ascending nonspecial edge of rank q>=4, with unique entrance x. Assume
   phi(v)=2q-3
 and e is assigned to v as a minimum-potential terminal. Suppose, as in the surviving one-low odd-boundary state, that the opposite terminal u satisfies phi(u)>=phi(v).

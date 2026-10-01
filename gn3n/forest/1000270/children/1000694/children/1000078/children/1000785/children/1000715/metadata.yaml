@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "974e9e2d43b7cf1f3fe7b44929e5f302698bae0ac74f093241d045a6a5f8704a"
 created_at: "2026-09-28T16:10:33.687493+00:00"
 id: "1000715"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two Hamiltonian four-sets meeting in three vertices yield a Hamiltonian five-set or four Hamiltonian four-subsets."
+statement_sha256: "3217d4ed851b2166890f8eb54351b414d07da6c02f5abbd074c7e0b11fb08a8c"
 substantive_worker_ids:
   - 606
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "962df40f0f9e19f3a685d3448d5b7cb08ddbfeda49e44ad385deffb8de79459b"
 created_at: "2026-09-27T04:35:45.303375+00:00"
 id: "compatfourcolor22"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Low-degree compatibility branch: four-colorability and clique closure of support-compatible cycles compress large deletion-label families to uniform incompatibility triples or a small set of four-cover support patterns, followed by mixed-triangle transport analysis."
 simplified_statement: "The low-degree compatibility branch is four-colorable"
+statement_sha256: "6fdea667b045f42d3b3318ceb156abe361457122fe940f5fad4c032bbebd6b27"
 substantive_worker_ids:
   - 578
 support_reason: "current_certified_premises"

@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample, let A be a globally longest tight path of order lambda, and put U=V(H)-V(A). Define D={u in U: H[U-u] is Hamiltonian}. Then for u in D the cover A|(U-u) is exact, and any exact cover of H-a with a in A is support-compatible with at most one such fixed-A cover. Hence |D|>=3 forces one fixed-A deletion state to be support-crossed by chosen deletion covers at both ends of A, while |D|<=2 forces every exact cover of H-u to mix the cut A|(U-u) for every u in U-D. More generally, whenever C=U-u is non-Hamiltonian, every exact cover of H-u has at least two ordinary crossing edges across A|C. If exactly two crossings occur, cutting them yields two A-blocks and two C-blocks; either the cover is crosswise, or its unique non-crosswise shape is C_1-A_1-C_2 together with the remaining A-block, with |A_1|<=2lambda-|V(H)|+1. Thus in the sharp half-order shell |V(H)|=2lambda+1 only the crosswise shape occurs.
 
+
 ## Body
+
 
 # Longest-path complements force synchronized crossing, pervasive mixing, and a rigid two-crossing geometry
 

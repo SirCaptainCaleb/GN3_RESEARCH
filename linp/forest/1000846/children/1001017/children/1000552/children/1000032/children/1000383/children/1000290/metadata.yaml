@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "0c759587327077a37a163523259e739af778b918ccd3685f2a1864ef9331d7ad"
 created_at: "2026-09-24T04:48:16.023642+00:00"
 id: "1000290"
 last_elevation_revision: null
@@ -35,6 +36,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "A consecutive-rank bound of at most three charged ascending edges in each pair {q,q+1} would imply c₊(v)≤⌊3φ(v)/4⌋ and hence the 11/12 leading coefficient."
+statement_sha256: "8c2039e2012925383ce39461d700d1dbe456ab8552fd929e7c847d4895dd21b4"
 substantive_worker_ids:
   - 229
 support_reason: "not_a_proved_or_evidence_claim"

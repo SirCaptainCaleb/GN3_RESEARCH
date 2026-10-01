@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ae91c7112cc1f7f6418572adf2b2c3e07757ae73aa1dabfccf770b3898b0ed81"
 created_at: "2026-09-24T22:03:28.759832+00:00"
 id: "1001074"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lens-free flat terminal cycles have no lengths six, seven, or nine."
+statement_sha256: "c29ddf3d2d23883ea29d98e8811574121cc04a4c0fd0712269cd401030f2ec8a"
 substantive_worker_ids:
   - 249
 support_reason: "current_certified_premises"

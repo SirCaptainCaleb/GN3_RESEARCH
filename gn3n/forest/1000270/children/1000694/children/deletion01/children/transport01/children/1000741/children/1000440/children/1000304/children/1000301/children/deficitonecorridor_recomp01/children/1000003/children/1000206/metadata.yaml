@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "98138dbbae8dbcf5dedbf7642298ba8f979a88fe5c183831f6671e9b382e0b44"
 created_at: "2026-09-28T09:50:45.689375+00:00"
 id: "1000206"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A connector between consecutive exterior corridor vertices already forces order disagreement or a reversed splice junction."
+statement_sha256: "67f520cc18d37f229ef7030b7f859a0cb67e14da146021811642de907161b45a"
 substantive_worker_ids:
   - 700
 support_reason: "current_certified_premises"

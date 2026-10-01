@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let P be a maximum p-edge path ending at v. For each vertex c in a finite set C, choose:
 (1) an occurrence of c on P, with kappa_P(c) equal to the number of P-edges in the prefix ending at that occurrence;
 (2) a maximum endpoint path P_c ending at c;
@@ -17,7 +18,9 @@ Consequently, if all vertex ranks phi(c), c in K, lie in an integer interval [A,
   |K| <= B-A+1.
 In particular, no connected component contains two distinct vertices of the same vertex rank.
 
+
 ## Body
+
 
 For every edge cd of G, 20606dbd4cd9 gives
   phi(c)-kappa_P(c)=phi(d)-kappa_P(d).

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e526261425677f0b329ebf7890363825e816fc60b7a964b7bdee8b475ccf6caa"
 created_at: "2026-09-25T19:57:55.500819+00:00"
 id: "1001050"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Singleton-contact rank-sum program: classify separated and overlapping mixed singleton contacts, forcing rank-sum surplus except for explicit boundary or triangle configurations."
 simplified_statement: "Separated mixed singleton contacts force rank sum at least host rank plus four."
+statement_sha256: "ce207c382b6391752cbc4da2a64cbc6441e41654bf51ed463757cbb19f79694f"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

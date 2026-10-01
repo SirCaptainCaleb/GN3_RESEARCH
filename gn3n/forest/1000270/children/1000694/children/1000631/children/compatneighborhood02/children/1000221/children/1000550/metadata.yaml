@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4fcff4fad3fc9c3640b7698daf386d98acd5756d1c317fa8eebb79bfcedef947"
 created_at: "2026-09-27T01:56:14.591417+00:00"
 id: "1000550"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An anchor of compatibility degree k forces k-2 localized incompatibilities"
+statement_sha256: "9fb208c19875f488e3a21f9d586d58c192e7e2b3c741e58a173f6127dae6e154"
 substantive_worker_ids:
   - 624
 support_reason: "current_certified_premises"

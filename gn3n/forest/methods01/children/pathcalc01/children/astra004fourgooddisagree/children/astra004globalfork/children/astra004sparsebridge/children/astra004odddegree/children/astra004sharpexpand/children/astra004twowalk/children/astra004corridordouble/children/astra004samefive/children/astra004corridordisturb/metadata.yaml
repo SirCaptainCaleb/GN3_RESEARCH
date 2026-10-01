@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "cd85c68de118e436a0e2864576709966f7c9c93c57262402563a883c0d046cea"
 created_at: "2026-09-26T19:22:01.990984+00:00"
 id: "astra004corridordisturb"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every clean degree-two sharp-shell corridor exposes ordered support complexity."
+statement_sha256: "470603278548926f55141217c089800806ec6b1423ab01c99917dc32654b218c"
 substantive_worker_ids:
   - 642
 support_reason: "failed_or_blocked_premise"

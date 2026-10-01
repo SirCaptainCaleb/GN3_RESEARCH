@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "41b9509e9c1ccf0366e94349ba5732560304ddfb0f7eac73d7a05dd2baaf29d9"
 created_at: "2026-09-24T03:57:51.37099+00:00"
 id: "1000425"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The p=5 pattern 4555 has a late/joint/crossed rail normal form."
+statement_sha256: "cd9360e18321d398412b974cd1f445eb17dd960d57ccd7d216b9902a3d8a44a0"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

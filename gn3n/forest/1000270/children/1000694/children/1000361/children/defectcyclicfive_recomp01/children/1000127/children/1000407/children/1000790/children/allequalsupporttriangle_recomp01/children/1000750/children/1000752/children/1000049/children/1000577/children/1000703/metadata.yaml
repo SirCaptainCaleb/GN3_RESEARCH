@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "81281497ff1271049c82a580581c96c5c716b9ffcb86ddfc4cf7fb04ef521a1a"
 created_at: "2026-09-28T03:00:10.223289+00:00"
 id: "1000703"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Successful transferred-label insertion forces an endpoint-edge reversing triple"
+statement_sha256: "11f00762c977a05268de542e158f0776a81d140d99fa3770937fd999a4d7a024"
 substantive_worker_ids:
   - 707
 support_reason: "current_certified_premises"

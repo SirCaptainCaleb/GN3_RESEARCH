@@ -6,6 +6,7 @@ Every boundary tournament on n<=8 vertices has a spanning two-path cover whose c
 
 ## Body
 
+
 For (2le nle6), the balanced partition sizes are at most three on each side whenever (nle6), except for the harmless (4|3) case first appearing at (n=7). Every vertex set of order one or two is a tight path support, and every three-vertex boundary tournament has a tight Hamilton path. Hence the balanced two-cover statement is immediate for (nle6).
 
 For (n=8), the statement is exactly astra003balanced8: every eight-vertex boundary tournament has an exact (4|4) cover.

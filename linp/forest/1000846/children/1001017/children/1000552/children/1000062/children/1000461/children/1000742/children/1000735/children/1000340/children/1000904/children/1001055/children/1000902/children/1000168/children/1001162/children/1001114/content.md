@@ -6,6 +6,7 @@ In a near-saturated gap-one state p=q+1, the anchor-to-maximum switching matchin
 
 ## Body
 
+
 Let v be in the gap-one shell:
   p=phi(v)=q+1,
 and suppose q(v)=q. Choose:

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1f1f6be4c51eb5902a3a939e3adce101289e01dbd0e54f8b96659b6f8b86b5ee"
 created_at: "2026-09-25T21:36:03.708143+00:00"
 id: "1000544"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Nonspecial middle edges have strict half-path edge rank."
+statement_sha256: "533ffb2763339b035cc7f1243a1d6af445341b1ff40a0066a91fbca6cfeef03b"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

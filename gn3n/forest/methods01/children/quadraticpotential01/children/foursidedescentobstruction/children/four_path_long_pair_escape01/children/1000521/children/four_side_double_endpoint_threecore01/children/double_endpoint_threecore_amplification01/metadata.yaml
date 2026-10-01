@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "30541b14f220e57752f024bd74ea55e54c6515adbfde9231b2429d9c5dfca8fe"
 created_at: "2026-09-29T18:56:50.331798+00:00"
 id: "double_endpoint_threecore_amplification01"
 last_elevation_revision: 8737
@@ -29,6 +30,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two common endpoint three-cores amplify to five-windows or multiple endpoint-pair four-windows."
+statement_sha256: "d5a527653afdfedc3ed6c232f0c00ce1ae98e047280216271046aa8d73a0eecf"
 substantive_worker_ids:
   - 579
 support_reason: "provisional_unaudited"

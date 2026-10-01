@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "f4cc43ca81ad51413d00df29fd86b76141f3a39f0afd2140e13d198ba5250b14"
 created_at: "2026-09-27T21:42:47.447455+00:00"
 id: "1000097"
 last_elevation_revision: 0
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A tight detour replacing one edge gives a reversed-edge path or a bounded wrap extension"
+statement_sha256: "76f2ae09bcfb52beb9a91869449683300f1886acbef60665372d93ee6827232b"
 substantive_worker_ids:
   - 697
 support_reason: "current_certified_premises"

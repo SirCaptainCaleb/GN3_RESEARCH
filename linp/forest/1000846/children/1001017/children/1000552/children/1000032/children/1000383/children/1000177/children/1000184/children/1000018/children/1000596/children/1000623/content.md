@@ -6,6 +6,7 @@ For q>=4, the all-visible top-boundary q,(q+1)^3 gadget has the following patter
 
 ## Body
 
+
 Assume q>=4 and retain the all-visible four-slot top-boundary normal form.
 
 Pattern abd.

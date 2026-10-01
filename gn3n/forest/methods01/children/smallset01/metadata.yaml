@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "f91f7918996fdcac6cf0cf5df0386f92277a46f2641973f87b8fb0287b369cd7"
 created_at: "2026-09-20T19:49:08.718337+00:00"
 id: "smallset01"
 last_elevation_revision: null
@@ -29,6 +30,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Foundational small-order Hamiltonicity and structure used throughout the two-cover program."
 simplified_statement: "Small-order Hamiltonicity and structure"
+statement_sha256: "c03c71ac05e1b66af31555dc0021c495d2e3e3eb72ef95bf70c58b9b5ead870c"
 substantive_worker_ids:
   - 673
   - 603

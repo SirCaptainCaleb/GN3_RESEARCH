@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "4a0bacb42a2fbd4e09cd43bdb9ecfb48a179a059881f09e31058836b80ff1ca8"
 created_at: "2026-09-26T19:41:06.610899+00:00"
 id: "astra005criticalclass"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two-cover inseparability is an equivalence relation, and a minimal failure is vertex-critical for one nontrivial class."
+statement_sha256: "16888dfd232536c32ad070ea550c2b0eaaf24eb43612777ea45adaffb93fecf7"
 substantive_worker_ids:
   - 576
 support_reason: "current_certified_premises"

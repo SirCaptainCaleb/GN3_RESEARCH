@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "05fa651ce06377045e1a5d2ab635a66022c338bd9d40e305e1c0d2e901668ca3"
 created_at: "2026-09-23T19:34:22.670694+00:00"
 id: "1000473"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Single-contact spacing branch: common-terminal ascending edges pack into a central rank window."
 simplified_statement: "Terminal-tail blockers recover the sharp central-window packing bound."
+statement_sha256: "35182d1fd0584b5fdedc8d7f6f7a97a49b98de9252b175f9a61431bde951f5cc"
 substantive_worker_ids:
   - 183
 support_reason: "current_certified_premises"

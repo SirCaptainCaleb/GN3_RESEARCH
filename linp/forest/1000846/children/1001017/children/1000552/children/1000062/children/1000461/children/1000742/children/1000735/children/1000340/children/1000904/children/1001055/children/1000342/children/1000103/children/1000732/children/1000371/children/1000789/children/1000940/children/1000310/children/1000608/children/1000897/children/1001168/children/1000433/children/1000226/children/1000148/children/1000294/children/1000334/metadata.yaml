@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "101a42df3d2c85c3bc4f1500c8dac7018508c9823c8d7b67c457cabd72ebfd20"
 created_at: "2026-09-25T21:36:53.799037+00:00"
 id: "1000334"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A family of interior U_11 collisions of local 3-cycle type yields at least ceil(|T|/32) pairwise edge-disjoint linear 3-cycles."
+statement_sha256: "093f59db217778ee23d4e0767dc2ccfc5abacd2d84c03f060406d87464912b20"
 substantive_worker_ids:
   - 220
 support_reason: "current_certified_premises"

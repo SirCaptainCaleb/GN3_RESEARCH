@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0d400b154e0e4e86068d9ccecba24bbe38550279b60f64a662025ae0e46f2935"
 created_at: "2026-09-22T15:24:57.979168+00:00"
 id: "1000472"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "If a linear 3-graph has maximum degree at least floor((ℓ+2)/2), its ternary incidence code contains a word of weight ℓ+2, so missing-weight ternary certificates cannot beat the one-third coefficient."
+statement_sha256: "3d4b41944e9bc0579a2f8922267726d04fd31f9baa97ad8918525cbbb66aa0aa"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

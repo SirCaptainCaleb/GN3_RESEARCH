@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "8dc098017571180e54f10c20b994257bdd313a4b053a8c1a7d9a40f5f2dc891c"
 created_at: "2026-09-24T05:51:04.131111+00:00"
 id: "1001090"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The rising one-low branch becomes a four-slot oriented-chord conflict system."
+statement_sha256: "7ab273517122b7871b9bea9e9139d4f3c5a80e8ca366eb1c39eadeeb0241977c"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

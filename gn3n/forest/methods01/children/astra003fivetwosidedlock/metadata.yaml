@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9b2f7ec39f4141d5779fae12982fff4e1156bec4289015ca6b61b08d191d60d3"
 created_at: "2026-09-26T18:20:00.243361+00:00"
 id: "astra003fivetwosidedlock"
 last_elevation_revision: null
@@ -39,6 +40,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Five-side two-end locking branch: when a five-side admits no neutral swap, one long path becomes locked at both endpoints; trapped continuations then yield an equal-potential repartition or displayed-edge reversals on the long components."
 simplified_statement: "A five-side no-swap branch forces a two-sided endpoint lock on one long path"
+statement_sha256: "858c14c611d48449aea6bdaa9b9b870cce28d5be97387845a71a80a3cf4b0c22"
 substantive_worker_ids:
   - 662
 support_reason: "current_certified_premises"

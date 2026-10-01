@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "d4c869173b3d0132ea2c3c99294cf693d6347d41ab5396068d503c0267a9ad28"
 created_at: "2026-09-24T20:48:41.235084+00:00"
 id: "1000664"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Lens-free flat cycles induce a cycle of unique aligned entrance-rail joints."
+statement_sha256: "522fb2ebe04f377e4d5168ab8d7125be875bca17e932c76f494600f809d533fd"
 substantive_worker_ids:
   - 242
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2c5fc5c706464d9800dacba72798999bea7e5958caa4b98de58ff179c856a719"
 created_at: "2026-09-27T19:24:28.057435+00:00"
 id: "1000808"
 last_elevation_revision: 0
@@ -52,6 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two endpoint extenders force every third insertable label into the adjacent gap."
+statement_sha256: "944f72507025203e4b13be6f01a475b61696fd5eef6dc51c7c797e50acc80f94"
 substantive_worker_ids:
   - 573
 support_reason: "current_certified_premises"

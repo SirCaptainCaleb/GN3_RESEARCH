@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "dceef05a3c519401608d905226bf4ae4bec13ca8506236448442b3513caa88c7"
 created_at: "2026-09-21T00:19:11.083181+00:00"
 id: "1000709"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "One-defect deletion-state reconfiguration: support expansion, alternating deletion moves, synchronized omission families, crossing producers, frozen-support obstructions, and the bridge from minimum deletion side to maximin compression."
 simplified_statement: "One-defect states are deletion covers with the omitted vertex restored"
+statement_sha256: "817faf42232e353adb70e23497109d846694cd487494a8f62841db2e6cef8006"
 substantive_worker_ids:
   - 575
 support_reason: "current_certified_premises"

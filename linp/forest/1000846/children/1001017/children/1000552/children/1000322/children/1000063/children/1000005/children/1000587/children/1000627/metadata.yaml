@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2362ae570c8ca24166b2b5c82f22418230a62c30e3416a96ecec4df164eff506"
 created_at: "2026-09-24T01:48:22.914325+00:00"
 id: "1000627"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Two-hole good-residue witness program: produce alternate entrance witnesses with exact alternating blocker defects and convert them into genuine multi-center collision structure."
 simplified_statement: "Good-residue spanning cores have two-hole alternate entrance witnesses."
+statement_sha256: "c366645ce7670632ee994348c79251aa90296a2e545a3fe2294181f6fa84ad75"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

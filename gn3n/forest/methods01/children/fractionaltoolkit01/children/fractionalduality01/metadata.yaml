@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9dee6ee002b9449847c47573d8db0ea606b8148d25cb2da3c61b396749dd4e4a"
 created_at: "2026-09-27T14:42:33.099087+00:00"
 id: "fractionalduality01"
 last_elevation_revision: 0
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The fractional path-cover number equals max_w w(V(H))/max_P w(V(P)); equivalently, tau*(H)<=T exactly when every nonnegative weighting has a tight path carrying at least a 1/T fraction of the total weight."
+statement_sha256: "8c69fe5d49e4736513eab7f1cd4835f1f6e59636511434f26ad342b752a08125"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

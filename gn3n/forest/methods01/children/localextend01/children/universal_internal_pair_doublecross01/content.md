@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let G be a boundary tournament and let x,y be distinct vertices such that G and G-{x,y} are non-Hamiltonian with path-cover number two. Suppose x and y are internal in every two-cover of G.
 
 Fix any displayed two-cover F=P|Q of G.
@@ -20,7 +21,9 @@ Consequently, for every top two-cover, the universally internal pair x,y yields 
 
 If, in addition, all two-covers of G have one common unordered support partition and no common-support order disagreement, then in the residue where x,y are adjacent in every top cover they lie in one fixed support class and occur there as one fixed ordered adjacent pair in every two-cover.
 
+
 ## Body
+
 
 Fix a displayed two-cover F=P|Q of G.
 

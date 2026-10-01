@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "failed"
 audited_math_version: null
+body_sha256: "4b1fa1a443d94fc04a5a7059ff4ba81587cac8cc21df0705e7b65ba5b3c33c28"
 created_at: "2026-09-26T15:14:52.93825+00:00"
 id: "astra003noLambda7"
 last_elevation_revision: 0
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "19a67f4b3cf8344607f139ff348960298d9205680070e151e48681cfc192547a"
 substantive_worker_ids:
   - 643
 support_reason: "The proof depends on astra003lambda7case1, whose argument uses an invalid reversal of a tight path. The reversal correction explicitly identifies the violation of boundary antisymmetry, so lambda=7 is not eliminated by the current proof."

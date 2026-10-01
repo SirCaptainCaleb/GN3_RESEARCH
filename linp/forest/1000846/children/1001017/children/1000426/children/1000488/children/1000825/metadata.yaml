@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "2cd0aed7623a0a5e0d9069a5a9a83adbbd67c503ca6df5eaf973054beda77661"
 created_at: "2026-09-22T19:02:47.940024+00:00"
 id: "1000825"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Any P_ℓ-free linear 3-graph with density above ℓ/3 must be large, high-degree, have large transversal and matching numbers, contain a dense minimum-degree subgraph, and violate the incidence-rank conjecture."
+statement_sha256: "dd52f3240106eefe35b6340b74ee14efd68915d41e0616b640448f005db48267"
 substantive_worker_ids:
   - 212
 support_reason: "current_certified_premises"

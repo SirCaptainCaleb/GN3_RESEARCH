@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 5
+body_sha256: "cb6ca577a45809e676716fdf7dce7810385756453a1752405476ee59b3bd08bf"
 created_at: "2026-09-21T20:30:57.648638+00:00"
 id: "1000781"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A maximum-total-rank spanning forest of the terminal-pair graph represents each unit of cycle rank by a nonforest chord that is minimum-rank on its fundamental cycle and blocks on both terminal sides."
+statement_sha256: "ebd1216714c0857d3bb782a3231ce23e788b523cef4919835865462932e5565b"
 substantive_worker_ids:
   - 234
 support_reason: "current_certified_premises"

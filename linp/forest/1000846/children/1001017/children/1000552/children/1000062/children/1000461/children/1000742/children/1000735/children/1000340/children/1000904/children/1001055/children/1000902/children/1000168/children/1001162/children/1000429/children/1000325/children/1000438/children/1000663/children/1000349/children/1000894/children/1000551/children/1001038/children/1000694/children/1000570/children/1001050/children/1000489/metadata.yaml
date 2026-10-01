@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "20b9e413aff70edc5ac827bdb6455ee5cad2641fcd895e2f68cf7664d4383842"
 created_at: "2026-09-25T20:06:15.768531+00:00"
 id: "1000489"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Mixed overlapping singleton contacts have two exact boundary forms."
+statement_sha256: "f5a0087d46fc93b72f0130b1505daf0c611ee3afe19c4267e716450e4f52f2d0"
 substantive_worker_ids:
   - 191
   - 227

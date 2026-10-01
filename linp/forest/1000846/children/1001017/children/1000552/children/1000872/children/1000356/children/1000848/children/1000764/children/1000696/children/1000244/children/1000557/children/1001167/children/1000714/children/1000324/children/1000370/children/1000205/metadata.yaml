@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 6
+body_sha256: "abe82b5c602134bac06041174483990b4859caf81acdce1b9ac4b4a725fbe240"
 created_at: "2026-09-24T05:46:17.956829+00:00"
 id: "1000205"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The final odd-boundary residue forces two successive top-potential rotated endpoints."
+statement_sha256: "b3e91a578d3a80b648265a1620819f6c637abae3419f1f57be6d8dabe083d08d"
 substantive_worker_ids:
   - 225
   - 209

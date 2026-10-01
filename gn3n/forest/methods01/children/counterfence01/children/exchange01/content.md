@@ -207,3 +207,4 @@ Suppose an edge-ordered complete graph on A union {z} has A Hamiltonian but ever
 Restrict the expanded total order to A union {y}. Each block contributes exactly its single edge ay, at the old position of az, and every A-internal edge retains its relative position. Tight triples and Hamiltonicity on that induced set therefore agree under z -> y. This proves the claim. ∎
 
 For equal sizes |A|=|F|=m, if F is also non-Hamiltonian, the initial partition A|F and every partition obtained by one cross-swap fail to be two Hamiltonian supports. If F-x is Hamiltonian, this gives an old m|(m-1) cover for which equitable addition at old-support exchange distance at most two fails: the classified options have either F or one replacement (A-a)+y as a component.
+

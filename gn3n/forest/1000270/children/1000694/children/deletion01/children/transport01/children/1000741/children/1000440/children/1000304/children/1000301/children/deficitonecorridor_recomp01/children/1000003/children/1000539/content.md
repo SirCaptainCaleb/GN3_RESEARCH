@@ -6,6 +6,7 @@ Let H be a minimum counterexample and let R|S be a one-defect state with d(R)=1,
 
 ## Body
 
+
 By the one-defect/deletion-cover equivalence d8dce2799f24, R=V(C) union {w}, H-w=C|S is a deletion two-cover, and H[R] is non-Hamiltonian. Therefore w cannot be inserted into any position of the displayed path C: a successful insertion would Hamiltonize R. The failed-insertion normal form insert01 consequently applies whenever needed and yields a bounded obstruction supported on w together with at most four consecutive vertices of C.
 
 It remains to record the stronger internal-gap conclusion when |E|=1. Then |O|=2. If the unique discrepancy gap has common anchors u,v, write its A-corridor as (u,a,b,v) and its C-corridor as (u,x,v), where E={x} and O={a,b}. The reusable lemma 53d257fcf0a8 shows that W={u,a,b,v,x} is Hamiltonian. In a minimum counterexample W is proper; if H-W were Hamiltonian then W together with H-W would two-cover H. Hence H-W is non-Hamiltonian, and minimality gives path-cover number two.

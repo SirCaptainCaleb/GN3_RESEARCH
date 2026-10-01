@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b2c8f22869923e1027531c50f9709fa3e7b7df7e2e53f28489a4168a121e9b67"
 created_at: "2026-09-27T21:33:34.793329+00:00"
 id: "1000530"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Pivot the dual route from terminal-pair cuts to defect-span certificates"
+statement_sha256: "248fb63aa9bfcef8764a85e644867408b85ffd913bad0c8cc34799119f43ad53"
 substantive_worker_ids:
   - 596
 support_reason: "not_a_proved_or_evidence_claim"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "c0225fc1c012cd19edbc5f59212a895af4b7640ed4e1a5a22b4dc28edb9581ab"
 created_at: "2026-09-29T20:56:34.347762+00:00"
 id: "opposite_fixedpair_nonham_k4_class01"
 last_elevation_revision: 9000
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Opposite-fixed-pair small-set classification: non-Hamiltonian four-sets with the forced opposite orientation have a rigid cyclic or edge-ordered form, and the descendant package uses two bad five-extensions to build overlapping four-sets, endpoint-overlap transport, and six-set deletion structure."
 simplified_statement: "An opposite-oriented fixed pair classifies every non-Hamiltonian four-set."
+statement_sha256: "f520485b7cec27032262bfe611d89b9f868c674ad519fa8f0a79d9efdeac7d00"
 substantive_worker_ids:
   - 579
 support_reason: "current_certified_premises"

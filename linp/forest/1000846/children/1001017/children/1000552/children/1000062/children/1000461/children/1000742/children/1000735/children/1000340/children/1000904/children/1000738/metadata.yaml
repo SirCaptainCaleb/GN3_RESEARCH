@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "e935d3c2bc9acf14126ce5b223a3a6884c8bfed6f55c44e5301f1079da4a2599"
 created_at: "2026-09-24T12:51:37.82665+00:00"
 id: "1000738"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: "Run-counting and rank-sensitive refinement program: replace contact transfer by ordered common-terminal counting, extend the multiplicity inequalities across uniformities, and exploit alignment, rank gaps, singleton windows, and flat gap-one cycles for stronger bounds."
 simplified_statement: "For every r>=3, run counting gives m<=c_r S-d_r n_+ and hence a general linear-path Turan upper bound with leading coefficient c_r=1-(2r-1)/(8r(r-1))."
+statement_sha256: "87da762745810814b2f7577d2c8cfcc234c39596088c03dd07a60a201bea5229"
 substantive_worker_ids:
   - 241
 support_reason: "current_certified_premises"

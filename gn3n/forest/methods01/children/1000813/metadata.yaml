@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "b39cfd5afd3bfd228a873856acbb6bf9ca500a04eeea3e9f3d7b1c8c134f3db5"
 created_at: "2026-09-29T12:33:21.882657+00:00"
 id: "1000813"
 last_elevation_revision: null
@@ -48,6 +49,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Two deletion covers with a direct mixed edge force path disturbance, endpoint reversal, descent, or an omission swap."
+statement_sha256: "6ef3b98f1e0d8d764c9dab7051ce81f8587752a974a5942b349da60345549e2a"
 substantive_worker_ids:
   - 681
 support_reason: "dependency_verification_pending"

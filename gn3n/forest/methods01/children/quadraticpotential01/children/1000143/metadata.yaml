@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "ac4763ba14efbbea5387756631b58565a763829009edc8b7a4e4a1a97eb72d9f"
 created_at: "2026-09-28T17:09:47.265601+00:00"
 id: "1000143"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A restoration-containing interval cycle forces strict quadratic descent."
+statement_sha256: "37c6c7b571085c73531199f4d59aa1e6eabf5ce2f9cf0447b6d197ca6f02e096"
 substantive_worker_ids:
   - 706
 support_reason: "current_certified_premises"

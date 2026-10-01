@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9bc1463266da4fb9e445391bd338b4b3690921b444465c0c7153dd9ecac16e04"
 created_at: "2026-09-24T01:53:39.648097+00:00"
 id: "1000705"
 last_elevation_revision: null
@@ -44,6 +45,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Critical residue deletions either give two-hole witnesses or fall exactly onto equality."
+statement_sha256: "a2f32eb1f7bbf37e41732f476f1dce1f2589f797d727fafea7f940c77428bb23"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

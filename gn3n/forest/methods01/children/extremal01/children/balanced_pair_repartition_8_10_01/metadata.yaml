@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "202be24de883e3acf66e03483a94435bb4957b65c3b7d9c5d98e8540604b5b5c"
 created_at: "2026-09-30T00:10:06.11884+00:00"
 id: "balanced_pair_repartition_8_10_01"
 last_elevation_revision: 0
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Universal pair balancing at total orders eight and ten."
+statement_sha256: "9702fa27c7a593f5828449c22470d104737f747da6f13a08b0055e73f402f3cf"
 substantive_worker_ids:
   - 665
 support_reason: "current_certified_premises"

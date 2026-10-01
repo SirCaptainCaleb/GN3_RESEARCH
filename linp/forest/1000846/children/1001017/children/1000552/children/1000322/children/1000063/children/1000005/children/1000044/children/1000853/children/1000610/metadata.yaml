@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9a18dc514e6efff238e68024eda2f7a26748c795c789d0e4d50e663cec86f29b"
 created_at: "2026-09-23T23:41:54.298346+00:00"
 id: "1000610"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Class-III finite all-special branch: alternating blocker chains around maximum-rank nonspecial edges reduce the remaining small-order cases to explicit matching obstructions."
 simplified_statement: "Class-III maximum-rank nonspecial edges have only one or two alternating blocker chains."
+statement_sha256: "ecdef8e38e52b9a1ab8bbee1cda0db465c3a0141f0d80e8c347c105e5557e4ed"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

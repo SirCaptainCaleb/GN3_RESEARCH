@@ -6,6 +6,7 @@ The imported tools suggest four concrete construction/obstruction interfaces for
 
 ## Body
 
+
 1. Chung-style algebraic transition labels.
 Target: a dense linear 3-graph component H built from a vector space or recursively split vertex set. Assign each legal transition between intersecting hyperedges a label in F_2^k or another ordered group. Seek a canonical orientation/order so that any linear path induces a monotone label sequence. The dream identity is an analogue of
   sum_{i=r}^s a_i = state_{r-1}-state_s,
@@ -28,3 +29,4 @@ Priority experiments.
 (C) When a path-extension search stalls because many candidate edges intersect, compute the associated matching-width/pinning problem rather than only ordinary matching number.
 
 Success criterion. A useful new lower-bound component on N=N(ell) vertices and M edges must prove maximum linear-path length <ell while M/(N ell)>1/3 asymptotically (or improve the additive term on an infinite set of ell). The imported machinery is valuable only insofar as it certifies that path cap without destroying density.
+ 

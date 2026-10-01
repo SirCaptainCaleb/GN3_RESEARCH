@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "a11650e956d3fa3dcf537aa8f8ae2d43445af6e2646632033ed95459907e33ec"
 created_at: "2026-09-27T17:21:51.683391+00:00"
 id: "1000174"
 last_elevation_revision: 0
@@ -48,6 +49,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two alternative-2 failed-insertion obstructions on one path have a complete spacing trichotomy"
+statement_sha256: "5f0da6aa5a5de5a020fc2dfa791e9f2e713978653e15a4d9ca61cb6efe3a11e5"
 substantive_worker_ids:
   - 616
 support_reason: "current_certified_premises"

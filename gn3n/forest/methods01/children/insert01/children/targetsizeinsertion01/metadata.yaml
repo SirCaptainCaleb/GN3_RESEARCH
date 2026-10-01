@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "dc42721af6a5b8661a880baf6434e7765bd7a75a9163bde7a403850cd73f9919"
 created_at: "2026-09-27T15:23:11.535533+00:00"
 id: "targetsizeinsertion01"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Forbidden target-size covers force noninsertability."
+statement_sha256: "4dcd6a9398c7d84b0f8e8b989c3182da0af02295b35e7c0c19d5963265ee28ea"
 substantive_worker_ids:
   - 644
 support_reason: "current_certified_premises"

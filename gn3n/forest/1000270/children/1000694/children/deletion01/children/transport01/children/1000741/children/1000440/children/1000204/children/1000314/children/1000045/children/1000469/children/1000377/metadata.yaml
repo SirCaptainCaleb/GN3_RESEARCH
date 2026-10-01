@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "a59d327b5832914a92b30c06402ac3feae8dbfc3b7632d0ce268052c6a2b9866"
 created_at: "2026-09-28T00:14:09.893895+00:00"
 id: "1000377"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Large-order endpoint compatibility triangles force a cyclic kernel, strict descent, or a finite transport menu."
+statement_sha256: "0a4675a29bb74f71d4b2a4f624200ab81d97c2d5f1ba40776b972d9b46779de3"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

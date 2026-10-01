@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "802d9f3d244a60e79b45768d5cbc7d7fb846b12c3ee037cbad95c926dcdb9468"
 created_at: "2026-09-25T12:14:36.017047+00:00"
 id: "1000406"
 last_elevation_revision: null
@@ -53,6 +54,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minimum-terminal rank-gap families force a disjoint two-tier rank packet."
+statement_sha256: "04b1ce6c5276f8df9bb9a6df3b20c73dbf1779320e6a13c119e46356865fecb7"
 substantive_worker_ids:
   - 263
   - 211

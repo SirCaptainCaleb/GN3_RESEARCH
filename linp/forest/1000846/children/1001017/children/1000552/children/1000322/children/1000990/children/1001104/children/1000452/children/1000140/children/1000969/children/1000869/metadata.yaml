@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "13dd833739a2d29d4d52386c90f6a76624a721edcfbef53a91174b83d799ce50"
 created_at: "2026-09-24T03:47:23.078524+00:00"
 id: "1000869"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every universal-star maximum path omits a large higher-potential terminal packet."
+statement_sha256: "12812559facbd5827288f614402ae32b4fc8a7e4df0d220080b8d25647864ad3"
 substantive_worker_ids:
   - 185
 support_reason: "current_certified_premises"

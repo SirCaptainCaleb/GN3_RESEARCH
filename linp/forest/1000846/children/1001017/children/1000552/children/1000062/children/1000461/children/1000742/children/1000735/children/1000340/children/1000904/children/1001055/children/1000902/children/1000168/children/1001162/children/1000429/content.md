@@ -6,6 +6,7 @@ Let P be a maximum p-path ending at v and F a family of distinct edges through v
 
 ## Body
 
+
 Let P=(g_1,...,g_p) be a maximum p-edge linear path ending at v. Let F be a family of distinct edges f through v such that each f has exactly one contact vertex with V(P)\g_p. By linearity these contact vertices are distinct.
 
 For 1<=i<=p-2 define the two-slot cell

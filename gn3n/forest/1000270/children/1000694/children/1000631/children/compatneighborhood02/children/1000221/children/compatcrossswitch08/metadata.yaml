@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "29f632989090eedaa4319c2393062beb152734903cbbdd321c5482422002ef1d"
 created_at: "2026-09-27T04:17:30.040102+00:00"
 id: "compatcrossswitch08"
 last_elevation_revision: 0
@@ -42,6 +43,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "An anchor neighborhood has complete cross-path incompatibility"
+statement_sha256: "cc903c7f9d26c5975e70ff35a49705796c5530ce47a6d5fd17a80586880b6ddb"
 substantive_worker_ids:
   - 648
 support_reason: "current_certified_premises"

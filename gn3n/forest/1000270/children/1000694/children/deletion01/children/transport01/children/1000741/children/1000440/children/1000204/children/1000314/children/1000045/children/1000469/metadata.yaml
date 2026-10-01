@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "0085f2ddcdb58e566507dfedc45d22bf88ce2242dc21f54548019b0c3de980ef"
 created_at: "2026-09-28T00:11:40.731756+00:00"
 id: "1000469"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every endpoint compatibility triangle enters the cyclic four-kernel frontier."
+statement_sha256: "66369894f936ceee5de65170becad11b21a455ecd565bf3aff093b77e3a62729"
 substantive_worker_ids:
   - 688
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "662990ea8240f58ecc3f25878336ef30b6f3dc237882322f027e0b387d3642ae"
 created_at: "2026-09-29T20:19:02.217412+00:00"
 id: "fixedpair_three_side_cover01"
 last_elevation_revision: 8911
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every prescribed pair lies on a three-side with path-cover-two complement"
+statement_sha256: "9be99579b202a497cbe5c7ea8cba26d0deca1bfc2a75b690daee3fda564f6e27"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

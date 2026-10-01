@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "f4f4ef16a744538e9904de0a06e610dac871665927075dd3ba809f9ad7db0541"
 created_at: "2026-10-01T01:43:47.374557+00:00"
 id: "reversal_manydeletion_compat_density01"
 last_elevation_revision: 10414
@@ -46,6 +47,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "At order at least 27, the quiet reversal branch forces quadratically many support/order incompatibilities among its special deletion covers, plus one linear anchor-centered disturbance family."
+statement_sha256: "8e1b1e0fe70a5463e59a9a260f6a1859c5bf26f1a9e3349b31e44c15b5b2ed5d"
 substantive_worker_ids:
   - 745
 support_reason: "current_certified_premises"

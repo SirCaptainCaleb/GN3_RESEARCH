@@ -6,6 +6,7 @@ There are edge orderings of K_n for which every increasing simple path has lengt
 
 ## Body
 
+
 Source: A. R. Calderbank, F. R. K. Chung, D. G. Sturtevant, "Increasing sequences with nonzero block sums and increasing paths in edge-ordered graphs", Discrete Mathematics 50 (1984), 15--28.
 Primary source: https://fanchung.ucsd.edu/mypaps/fanpap/63iswnbsaipieog.PDF
 
@@ -28,3 +29,4 @@ General n. Section 4 recursively orders K_{n,n} and K_n by splitting each part a
 Proof-import decision. The algebraic reduction, recurrences, and projection lemma are recorded here because they are clean and reusable. The appendix establishing the finite t=8,d=4 local claim is intentionally not recopied; it is a long configuration analysis and is best consulted in the linked source, pp. 20--28.
 
 LINP relevance. This is a template for a dense construction with a global path cap: assign algebraic labels to permitted transitions, make path simplicity equivalent to a nonvanishing interval-sum condition, then prove a finite projection must branch enough to force an asymptotic cap. A useful port would replace "increasing" by a canonical orientation/order on intersections of hyperedges or on states in a blow-up component.
+ 

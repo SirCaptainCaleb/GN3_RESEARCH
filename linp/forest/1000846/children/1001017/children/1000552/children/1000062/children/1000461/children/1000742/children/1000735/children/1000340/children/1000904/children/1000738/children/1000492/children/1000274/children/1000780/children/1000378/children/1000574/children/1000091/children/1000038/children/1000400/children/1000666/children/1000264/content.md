@@ -6,6 +6,7 @@ A flat terminal cycle of rank-(p-1) ascending edges with terminal potential p an
 
 ## Body
 
+
 Let
   C=(e_0,...,e_{c-1})
 be a linear terminal cycle of flat gap-one top edges:

@@ -2,13 +2,16 @@
 
 ## Statement
 
+
 Let e->f be an equal-rank ascending terminal-clean transfer of rank q. Let y=e∩f be the source-shared joint on the transfer q-cycle and let b be the other cycle joint of f.
 
 Then y is terminal for f. The joint b is the unique entrance x_f of f if and only if phi(b)=q-1; if b is instead the other terminal of f, then phi(b)>=q.
 
 In the entrance-joint case b=x_f, the deficiency-two precursor R=(g_2,...,g_{q-1}) is a (q-2)-edge linear path whose two last vertices can be chosen as x_f and the entrance x_e of e. Moreover R avoids both terminals of e and both terminals of f.
 
+
 ## Body
+
 
 The transfer-cycle construction already forces the shared joint y=e∩f to be terminal for f. No corresponding type is automatic for the opposite joint b.
 

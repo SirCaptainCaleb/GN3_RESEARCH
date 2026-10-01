@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "abb643a8376771c20a44b5082b75c6b43c69649e0e954600867c5dc6bc1382d9"
 created_at: "2026-09-25T21:38:06.837988+00:00"
 id: "1001008"
 last_elevation_revision: null
@@ -45,6 +46,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A consistently oriented shared block has descending rank at every ascending edge."
+statement_sha256: "73f743b1f5f7dbc3d3e1a8c73c7efc655ad4b746be1b2dd0eeabb22c9dac2443"
 substantive_worker_ids:
   - 224
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "bb65aacd6070c3635f484cfb0b23be2afd28059aa8488bfb640b04caeb80f24f"
 created_at: "2026-09-27T20:41:51.18478+00:00"
 id: "astra006nearbalancedsync01"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Near-balanced quadratic-maximal three-block states have two barriers from one common block"
+statement_sha256: "ad1da9449758886bea916c5294379d82e814ae65008e502bc2eeb75a1d3385fb"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

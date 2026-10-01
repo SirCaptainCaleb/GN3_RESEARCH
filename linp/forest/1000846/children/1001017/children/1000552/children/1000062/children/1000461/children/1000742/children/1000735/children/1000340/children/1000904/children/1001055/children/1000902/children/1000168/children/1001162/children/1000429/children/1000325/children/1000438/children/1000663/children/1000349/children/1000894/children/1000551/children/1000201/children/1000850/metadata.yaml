@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "1a2a86bdc5a41c59dbeea8e094eff716c249cc8f42922e70f815fab75a680541"
 created_at: "2026-09-24T20:57:20.988961+00:00"
 id: "1000850"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Paid edges have fundamental cycles inside the clean U_11 graph."
+statement_sha256: "c627f422c3892e26610d3cec236921f80e129badf18b5488812aeba05d67f57c"
 substantive_worker_ids:
   - 201
 support_reason: "failed_or_blocked_premise"

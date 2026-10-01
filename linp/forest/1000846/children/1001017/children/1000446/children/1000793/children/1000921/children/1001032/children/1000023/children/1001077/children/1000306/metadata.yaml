@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5744b313b4c42fdc88b99b82afc815763e3e527e72aee346475359ed7e72bc77"
 created_at: "2026-09-24T03:10:34.572324+00:00"
 id: "1000306"
 last_elevation_revision: null
@@ -51,6 +52,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Minimum-potential equality is a 3-regular special core plus an all-ascending remainder."
+statement_sha256: "2bcd935b75236b7a6ca4edc0e2966467fe4f77807dcd7ea950c0aece83cd956f"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

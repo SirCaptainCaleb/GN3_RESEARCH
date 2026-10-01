@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "1999c014b90d59ec48ceb5dc20229cf341038a5175e3afd001f125157edf643f"
 created_at: "2026-09-28T03:19:54.425376+00:00"
 id: "four_side_longer_path01"
 last_elevation_revision: 0
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A global four-side minimum forces a path longer than its displayed largest side."
+statement_sha256: "574944eef87acf8e782156f2a01ff847b7b8dd79b2dc22e5b22ebce101f4fced"
 substantive_worker_ids:
   - 652
 support_reason: "current_certified_premises"

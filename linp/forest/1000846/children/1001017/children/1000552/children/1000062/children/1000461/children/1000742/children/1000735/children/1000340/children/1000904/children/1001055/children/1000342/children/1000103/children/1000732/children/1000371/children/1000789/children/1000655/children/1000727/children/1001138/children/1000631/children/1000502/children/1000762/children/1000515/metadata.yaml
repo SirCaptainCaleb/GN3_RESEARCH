@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "9bd0a9e7d720abde328f828c6f79ad2396c6d3540526629a8f82b6a2a0828eb6"
 created_at: "2026-09-25T21:43:28.310137+00:00"
 id: "1000515"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A terminal-retained strict-gap edge forces a cycle, a forward return, or a flat shared last edge."
+statement_sha256: "883338e8ddb17d88226280dd6ea2767ec63ab3233537fa8fc92b21ea8d9b234c"
 substantive_worker_ids:
   - 191
 support_reason: "current_certified_premises"

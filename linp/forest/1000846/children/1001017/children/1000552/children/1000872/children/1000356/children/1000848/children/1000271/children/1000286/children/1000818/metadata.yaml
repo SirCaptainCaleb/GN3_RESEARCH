@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "aec78e66f6eeedce7cdfbf8cea06793277978855bee21f7c60d360a1ebdd7731"
 created_at: "2026-09-24T06:20:47.924653+00:00"
 id: "1000818"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: "Pairwise-intersecting source-rail program for two-rank 0-1-1 blocks: exploit aligned joints, repeated source hits, and distinguished overlap among the canonical rails."
 simplified_statement: "Source-clean rails in a two-rank 0-1-1 block are pairwise intersecting."
+statement_sha256: "7153353196cba04d868358e9535f1ba8ce501f4f0da5e13ecebc777c64ef39ee"
 substantive_worker_ids:
   - 185
   - 254

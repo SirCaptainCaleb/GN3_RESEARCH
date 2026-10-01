@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "5888374fcae3ec75f2fbd6ee20fbf633e6dfe3f8e63c3163f394d0c906d78a58"
 created_at: "2026-09-24T03:13:56.912153+00:00"
 id: "1000196"
 last_elevation_revision: null
@@ -52,6 +53,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Minimum-potential equality forces two-step ascent on every nonspecial edge."
+statement_sha256: "e788ddfc626739b6c176d8e1010fa5a1923bf15cc181409ff5645c77abc2c596"
 substantive_worker_ids:
   - 225
 support_reason: "current_certified_premises"

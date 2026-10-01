@@ -6,6 +6,7 @@ Let C=X|P|Q be any spanning three-path cover of a boundary tournament, where X i
 
 ## Body
 
+
 Let
 
 C = X | P | Q

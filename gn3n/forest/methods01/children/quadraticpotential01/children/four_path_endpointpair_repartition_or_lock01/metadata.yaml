@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "01497597624d4754eddf7db3ad3ff7d4ffe291900737f48c36715dc32e3c83ca"
 created_at: "2026-09-29T19:20:00.209031+00:00"
 id: "four_path_endpointpair_repartition_or_lock01"
 last_elevation_revision: 8826
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two bad endpoint extensions of a four-path give a two-path repartition or interior noninsertability"
+statement_sha256: "f4638dc520aa55edf36ad086ada1528cc79ae61bb37d56f477e9fbeb8ddf63a1"
 substantive_worker_ids:
   - 708
 support_reason: "current_certified_premises"

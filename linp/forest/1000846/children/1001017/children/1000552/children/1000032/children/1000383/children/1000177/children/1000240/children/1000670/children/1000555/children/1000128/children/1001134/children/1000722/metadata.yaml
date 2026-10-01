@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "39f952e7c6c289e85e9f29ddbccbf79c82fdeb913e8229efd9d430f3f6b5c61f"
 created_at: "2026-09-25T19:16:48.779972+00:00"
 id: "1000722"
 last_elevation_revision: null
@@ -49,6 +50,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Same-type distinguished overlap yields two balanced endpoint lenses per label."
+statement_sha256: "6948e220aa3d135521d6c0e9f6929ab08c55e511c127d98be704145bfb639223"
 substantive_worker_ids:
   - 200
 support_reason: "failed_or_blocked_premise"

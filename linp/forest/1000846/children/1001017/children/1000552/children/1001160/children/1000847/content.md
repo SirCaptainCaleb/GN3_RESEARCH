@@ -2,12 +2,15 @@
 
 ## Statement
 
+
 Let H be P_ell-free with incidence matrix N. For any nonincreasing weights 1>=g_1>=...>=g_{ell-1}>=0, define G=sum_e g_{phi(e)}, Q(v)=sum_{e nonspecial, entrance(e)=v} g_{phi(e)}, E_L^g=sum_v(Q(v)-L)_+, and S_g=g_1+2sum_{t=2}^{ell-1}g_t. Then
   G <= ((S_g+L+2)/3) rank_R(N)+E_L^g
     <= ((S_g+L+2)/3)n+E_L^g.
 The unweighted bad-load truncation inequality is the specialization g_t=1.
 
+
 ## Body
+
 
 Give each special edge e weight g_{phi(e)}. Give a nonspecial edge e with entrance v weight
   g_{phi(e)} min(1,L/Q(v)),

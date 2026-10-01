@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "b789abf96e82a092bd7c0b13b45488de7db156d81e7567112d08eba6a6bbd64c"
 created_at: "2026-09-27T23:58:28.655291+00:00"
 id: "1000277"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Cyclic defect rotation route"
+statement_sha256: "6d84cefe5f480efa46d2dede19f2675ec9266bf207de6c8fa66d1abdca0b570a"
 substantive_worker_ids:
   - 694
 support_reason: "not_a_proved_or_evidence_claim"

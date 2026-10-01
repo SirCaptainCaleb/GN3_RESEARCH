@@ -6,6 +6,7 @@ Let C be a spanning three-cover of a boundary tournament H. Assume that whenever
 
 ## Body
 
+
 # Proof
 
 For a spanning three-cover C=P_1|P_2|P_3 define the quadratic potential

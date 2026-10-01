@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "78473eee7c8b37a726d43f087fcabff0ca40898d25247473453353513f58beb8"
 created_at: "2026-09-28T16:58:38.722882+00:00"
 id: "1000323"
 last_elevation_revision: 0
@@ -45,6 +46,7 @@ research_interface:
 research_level: "theorem"
 semantic_container_text: null
 simplified_statement: "Every trapped local 4-by-5-long quadratic minimum forces order disagreement."
+statement_sha256: "790a7100536592ccce26a099fad4a7e51ac66f941b40264e614dad8f09326afb"
 substantive_worker_ids:
   - 659
 support_reason: "current_certified_premises"

@@ -6,6 +6,7 @@ Astra interruption reconstruction: the certified inequality 3m-A<=2 sum_v phi(v)
 
 ## Body
 
+
 Astra's interrupted Work transcript states:
 (1) two clean contacts in certain nearby path positions would create a path too long for an ascending edge's entrance;
 (2) there are linearly many disjoint pairs of such positions, producing a deficit linear in edge rank;

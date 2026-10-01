@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
+body_sha256: "8a0b132bf1cd23b8ae25ba3c8f1a29b893d98f159a08c1cd80fe306f6d839a3f"
 created_at: "2026-09-24T05:47:53.594495+00:00"
 id: "1000964"
 last_elevation_revision: null
@@ -50,6 +51,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "In the rising low-terminal branch the three high edges are disjoint two-sided chords."
+statement_sha256: "455692968b4765cb01fd48bb087a3d22722a28e2ab83332706ebaab9eb59f8a9"
 substantive_worker_ids:
   - 225
   - 231

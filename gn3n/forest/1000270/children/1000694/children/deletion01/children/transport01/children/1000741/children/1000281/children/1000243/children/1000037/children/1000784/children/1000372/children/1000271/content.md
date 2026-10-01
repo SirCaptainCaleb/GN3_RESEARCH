@@ -6,6 +6,7 @@ Let H be a boundary tournament and let C=X|P|Q be a spanning three-cover minimiz
 
 ## Body
 
+
 Put K=V(X)-{x}. If A and A' order K differently, outcome (1) holds. Hence suppose they induce the same relative order C_K on K.
 
 Because y is a displayed endpoint of P and m>=8, the seven-set V(X) union {y} is non-Hamiltonian. Indeed, if it were Hamiltonian, then together with the inherited endpoint truncation P-y it would repartition X|P with size pair

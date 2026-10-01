@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "399d65459d3ee8f246980dc852d817fead1b5cc923f9035fd13693fb95da3c74"
 created_at: "2026-09-25T21:54:03.847508+00:00"
 id: "1000303"
 last_elevation_revision: null
@@ -47,6 +48,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "At a low-defect terminal, either aligned top rank already costs linear defect or the misaligned case forces many edges that switch from double contact on an anchor path to single contact on the maximum path."
+statement_sha256: "3fe39822b4a90bb43623cc18f65e8add1e851c0c4a040243a7a66a88c31f406d"
 substantive_worker_ids:
   - 227
 support_reason: "current_certified_premises"

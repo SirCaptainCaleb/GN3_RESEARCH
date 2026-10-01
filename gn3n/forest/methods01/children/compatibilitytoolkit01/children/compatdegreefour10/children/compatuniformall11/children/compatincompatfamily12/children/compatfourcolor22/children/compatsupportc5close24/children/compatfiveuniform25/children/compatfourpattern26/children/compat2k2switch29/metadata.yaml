@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "ac0a640032c4ace34357462f77875b24bc34639ad4700b506bc57254c4875291"
 created_at: "2026-09-27T04:44:30.37277+00:00"
 id: "compat2k2switch29"
 last_elevation_revision: 0
@@ -40,6 +41,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "The exceptional 2K2 pattern has a core-disagreement or paired-switch normal form"
+statement_sha256: "3c81ab2080f5d2895a32149e441e111d6f39ff4e4fb68255f79e9d7f114595aa"
 substantive_worker_ids:
   - 578
 support_reason: "current_certified_premises"

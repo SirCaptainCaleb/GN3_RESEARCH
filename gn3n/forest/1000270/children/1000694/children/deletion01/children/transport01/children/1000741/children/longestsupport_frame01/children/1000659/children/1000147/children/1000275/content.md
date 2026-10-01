@@ -2,9 +2,12 @@
 
 ## Statement
 
+
 Let H be a minimum counterexample in the sharp half-order shell |V(H)|=2lambda+1, let A=(a_0,...,a_{lambda-1}) be globally longest, and let U=V(H)-V(A). Suppose exact endpoint covers of H-a_0 and H-a_{lambda-1} each have exactly two crossings across the corresponding A|U cut and lie in the crosswise four-block case. Then at some stage one obtains inherited relative-order disagreement, an explicit endpoint reversal, or a restored D=1 state at Johnson distance two; otherwise the two endpoint covers have their forced neutral orientations, their induced covers of H-{a_0,a_{lambda-1}} exhibit bridge disagreement, and—if that disagreement is in support partition rather than common-support order—each induced cover crosses the other's support partition at least twice. In particular a singleton support exchange cannot remain order-neutral.
 
+
 ## Body
+
 
 # Opposite crosswise endpoint covers force order disagreement, radius-two transport, or reciprocal double crossing
 

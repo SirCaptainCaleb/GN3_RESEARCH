@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "885b210b1baa81d01adaae4b7322afd00192400a590094193dc2f8ec7bbe6f14"
 created_at: "2026-09-24T02:59:32.13648+00:00"
 id: "1000428"
 last_elevation_revision: null
@@ -43,6 +44,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Ascending sources are exactly the one-step incidence rank defects."
+statement_sha256: "66486b71416d803fde7586782ea46303d70c8ed3a264ac9d22183be1dbbfba76"
 substantive_worker_ids:
   - 229
 support_reason: "current_certified_premises"

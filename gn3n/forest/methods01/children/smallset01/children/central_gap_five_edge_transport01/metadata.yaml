@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "pending"
 audited_math_version: null
+body_sha256: "3c5e40f5f23e386bb4dc0dda7f776f91670fdb5317cc16d703b980f4d2492311"
 created_at: "2026-10-01T06:11:10.434302+00:00"
 id: "central_gap_five_edge_transport01"
 last_elevation_revision: 0
@@ -27,6 +28,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Two leaves inserted in the same central gap produce four explicit Hamiltonian one-deletions and five Hamiltonian two-deletions, yielding a fixed five-edge pc2 transport package."
+statement_sha256: "daf43464334421c02856b1716521a3989f7fc9efd6447a1a27e52d05907af4f8"
 substantive_worker_ids:
   - 922
 support_reason: "provisional_unaudited"

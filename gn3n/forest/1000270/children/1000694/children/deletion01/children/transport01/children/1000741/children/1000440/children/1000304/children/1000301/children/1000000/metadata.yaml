@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "810d66b35ef83e1ae58557ec31ed4282a3a106ab87551dc542d6bf4c6b27c9c8"
 created_at: "2026-09-27T21:51:01.560238+00:00"
 id: "1000000"
 last_elevation_revision: 0
@@ -38,6 +39,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "A binary balance down-step is exactly where strict omission-to-insertion transport is necessary."
+statement_sha256: "d41dc42c7f44879ce6fb46a10f47fb50f7ef7d8f850b3083b0ba938d63421ab2"
 substantive_worker_ids:
   - 678
 support_reason: "current_certified_premises"

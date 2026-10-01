@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 2
+body_sha256: "3848811f269e78eb76f3df6792bb7be8701f5ee8131088c45e1f361f42965fff"
 created_at: "2026-09-21T21:02:19.744917+00:00"
 id: "1000946"
 last_elevation_revision: null
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Minty-type potential on the directed graph obtained from nonspecial edges."
+statement_sha256: "84fe3a6837a0f676d8c1588d732e5e105512cd2d1e61445ce84c4763206e0616"
 substantive_worker_ids:
   - 205
 support_reason: "current_certified_premises"

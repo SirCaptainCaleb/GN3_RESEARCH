@@ -6,6 +6,7 @@ Every switching edge in a gap-one anchor-to-maximum switching matching manufactu
 
 ## Body
 
+
 Let v be in the gap-one shell phi(v)=q+1, and let
   P
 be a maximum (q+1)-edge endpoint path ending physically at v.

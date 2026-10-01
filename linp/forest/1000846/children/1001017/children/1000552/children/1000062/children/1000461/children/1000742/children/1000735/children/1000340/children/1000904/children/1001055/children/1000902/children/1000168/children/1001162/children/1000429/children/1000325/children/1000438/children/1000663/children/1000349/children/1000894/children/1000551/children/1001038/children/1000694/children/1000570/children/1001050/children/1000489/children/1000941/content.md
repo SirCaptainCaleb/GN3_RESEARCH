@@ -2,6 +2,7 @@
 
 ## Statement
 
+
 Let P=(g_1,...,g_p) be a maximum p-edge path with last vertex v. Let e and f be distinct selected ascending nonspecial edges terminal at v, neither equal to g_p, each having exactly one off-v contact with V(P)\g_p.
 
 Assume the contact of one edge is its unique entrance and the contact of the other edge is its opposite terminal. Then
@@ -14,7 +15,9 @@ then one of the standard rotation-output edges associated with the two selected 
 Consequently, in any selected family in which no such superlevel rotation output is allowed, every opposite-type pair satisfies
   phi(e)+phi(f) >= p+4.
 
+
 ## Body
+
 
 If the two contact intervals are disjoint, e9fc907b07c9 gives the stronger bound
   phi(e)+phi(f)>=p+4.

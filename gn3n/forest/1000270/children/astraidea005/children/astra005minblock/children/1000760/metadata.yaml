@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
+body_sha256: "b1b9631547e400bd1e3e9cc82ecba9947b4ce0a9bf119b96f55fb1c4d6264455"
 created_at: "2026-09-27T00:56:45.988661+00:00"
 id: "1000760"
 last_elevation_revision: 0
@@ -41,6 +42,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Prescribed-separation deletion covers have linear incompatibility density."
+statement_sha256: "e712e61f6f7e08246b069ae77ce122c62643eba7dc5cb94308d34fb68a7cbd10"
 substantive_worker_ids:
   - 717
 support_reason: "current_certified_premises"

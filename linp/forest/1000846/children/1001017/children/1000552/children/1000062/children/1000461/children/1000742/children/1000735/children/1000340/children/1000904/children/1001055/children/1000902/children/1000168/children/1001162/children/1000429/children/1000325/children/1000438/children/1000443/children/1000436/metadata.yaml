@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
+body_sha256: "94146812e39bad5a29e31b78eafd18d97fe21f77c69fe53c1b9b89df85e2351a"
 created_at: "2026-09-24T21:59:53.387361+00:00"
 id: "1000436"
 last_elevation_revision: null
@@ -46,6 +47,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Distinct flat rotation terminal incidences are globally paid by local defect."
+statement_sha256: "7498dc409b68efa0adbc0ec43cc932b39876cefa24729ca258dfadfefb7ad6c2"
 substantive_worker_ids:
   - 236
 support_reason: "failed_or_blocked_premise"

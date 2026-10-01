@@ -6,6 +6,7 @@ In the half-rank top-boundary q,(q+1)^3 configuration, if the left joint a=g_{q-
 
 ## Body
 
+
 Retain the top-boundary setup
   p=2q-2,
   P=(g_1,...,g_p) ending physically at v,

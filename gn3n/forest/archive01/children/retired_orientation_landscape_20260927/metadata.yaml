@@ -6,6 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
+body_sha256: "c6c5faf19233046df0c61c359e6cc1ecb3f6b53971545948b28f044368d56689"
 created_at: "2026-09-27T02:39:41.013553+00:00"
 id: "retired_orientation_landscape_20260927"
 last_elevation_revision: null
@@ -26,6 +27,7 @@ research_interface:
 research_level: null
 semantic_container_text: null
 simplified_statement: null
+statement_sha256: "b8a39c0bc1006a377af99b822a6165453ab7efcb670b627cb1d1fda5c79d776e"
 substantive_worker_ids:
   - 621
 support_reason: "not_a_proved_or_evidence_claim"
