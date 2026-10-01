@@ -1,0 +1,48 @@
+name: Build GN3N context artifact
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/build_gn3_context_artifact.py"
+      - ".github/workflows/build-gn3-context-artifact.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gn3n-context-artifact
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Build coherent GN3N context bundle
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GN3_SCHEMA: gn3n
+        run: python scripts/build_gn3_context_artifact.py
+
+      - name: Upload GN3N context artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gn3n-context
+          path: _context_artifact/
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 7
