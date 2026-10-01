@@ -38,25 +38,35 @@ jobs:
             dst="_artifact/$schema"
 
             test -d "$src"
+            test -f "$src/rpc_signatures.yaml"
+            test -f "$src/rpc_definitions.md"
+            test -f "$src/policies/kernel.md"
+            test -f "$src/policies/project_policy.md"
             test -f "$schema/vocabulary/standardization_dictionary.yaml"
 
-            mkdir -p "$dst/help" "$dst/roles" "$dst/policies" "$dst/vocabulary"
+            mkdir -p "$dst/roles" "$dst/policies" "$dst/research_tree"
 
-            # Deliberately curated worker-facing files only.
+            # Entry point and compact API lookup.
             cp "$src/startup_bootstrap.md" "$dst/startup_bootstrap.md"
-            cp "$src/atlas.md" "$dst/atlas.md"
-            cp "$src/startup_atlas.md" "$dst/startup_atlas.md"
-            cp "$src/simplified_forest.md" "$dst/simplified_forest.md"
-            cp "$src/statement_forest.md" "$dst/statement_forest.md"
-            cp "$src/statement_plus_proof_forest.md" "$dst/statement_plus_proof_forest.md"
+            cp "$src/rpc_signatures.yaml" "$dst/rpc_signatures.yaml"
+            cp "$src/rpc_definitions.md" "$dst/rpc_definitions.md"
 
-            # Human-readable on-demand guidance. No JSON indexes or raw RPC metadata.
-            find "$src/help" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/help/" \;
+            # One shared compact kernel plus the project's own policy.
+            cp "$src/policies/kernel.md" "$dst/policies/kernel.md"
+            cp "$src/policies/project_policy.md" "$dst/policies/project_policy.md"
+
+            # Roles remain separate operational views.
             find "$src/roles" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/roles/" \;
-            find "$src/policies" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/policies/" \;
 
-            # One compact human-readable dictionary.
-            cp "$schema/vocabulary/standardization_dictionary.yaml"                "$dst/vocabulary/standardization_dictionary.yaml"
+            # The mathematical navigation surface gets its own home.
+            cp "$src/atlas.md" "$dst/research_tree/atlas.md"
+            cp "$src/startup_atlas.md" "$dst/research_tree/startup_atlas.md"
+            cp "$src/simplified_forest.md" "$dst/research_tree/simplified_forest.md"
+            cp "$src/statement_forest.md" "$dst/research_tree/statement_forest.md"
+            cp "$src/statement_plus_proof_forest.md" "$dst/research_tree/statement_plus_proof_forest.md"
+
+            # Vocabulary is small enough to live at the schema root.
+            cp "$schema/vocabulary/standardization_dictionary.yaml"                "$dst/standardization_dictionary.yaml"
           done
 
       - name: Upload research context artifact
