@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Deterministic mirror generation from live Supabase state.
+  # Deterministic mirror generation from live Supabase state; manual rebuild trigger.
   sync:
     runs-on: ubuntu-latest
 
