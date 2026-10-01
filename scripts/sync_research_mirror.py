@@ -13,7 +13,7 @@ PAGE = 500
 SCHEMAS = {"gn3n": "gn3n", "linp": "linp", "template": "__template__"}
 TABLES = [
     "objects","edges","reasoning_nodes","certificates","object_authors",
-    "standardization_dictionary","standardization_dictionary_sections","state",
+    "standardization_dictionary","state",
     "architecture_migration_notes","atlas_legacy_snapshots",
 ]
 CORE_POLICIES = [
@@ -103,6 +103,20 @@ def yaml_lines(value: Any, indent: int = 0) -> list[str]:
 def write_yaml(path: Path, value: Any):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(yaml_lines(value)) + "\n", encoding="utf-8")
+
+def write_dictionary_yaml(path: Path, rows: list[dict[str, Any]]):
+    """Write only term -> definition, with YAML-safe quoted keys and values."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    items = sorted(
+        ((str(r.get("term") or ""), r.get("definition")) for r in rows),
+        key=lambda kv: kv[0].casefold(),
+    )
+    lines = []
+    for term, definition in items:
+        key = json.dumps(term, ensure_ascii=False)
+        value = "null" if definition is None else json.dumps(str(definition), ensure_ascii=False)
+        lines.append(f"{key}: {value}")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 def write_json(path: Path, value: Any):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -262,13 +276,10 @@ def build_schema(folder: str, schema: str):
 
     for table in ["edges", "reasoning_nodes", "certificates", "object_authors"]:
         write_yaml(root / "relations" / f"{table}.yaml", rows[table])
-    write_yaml(root / "vocabulary" / "standardization_dictionary.yaml", rows["standardization_dictionary"])
-    write_yaml(root / "vocabulary" / "standardization_dictionary_sections.yaml", rows["standardization_dictionary_sections"])
-
-    # Machine-readable integrity copies use JSON's fully specified escaping.
-    # JSON is also valid YAML 1.2, and these hashes make silent text loss detectable.
-    write_json(root / "vocabulary" / "standardization_dictionary.json", rows["standardization_dictionary"])
-    write_json(root / "vocabulary" / "standardization_dictionary_sections.json", rows["standardization_dictionary_sections"])
+    write_dictionary_yaml(
+        root / "vocabulary" / "standardization_dictionary.yaml",
+        rows["standardization_dictionary"],
+    )
     write_yaml(root / "state" / "project.yaml", rows["state"])
     write_yaml(root / "state" / "architecture_migration_notes.yaml", rows["architecture_migration_notes"])
     write_yaml(root / "state" / "atlas_legacy_snapshots.yaml", rows["atlas_legacy_snapshots"])
