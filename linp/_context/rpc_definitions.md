@@ -2115,6 +2115,7 @@ declare
   v_meta jsonb;
   v_artifact_revision bigint;
   v_body text;
+  v_lookup_call text;
 begin
   v_project := control_center.active_project();
 
@@ -2134,6 +2135,7 @@ begin
   select body into v_body from control_center.policies where policy_key='artifact_bootstrap';
 
   v_artifact_revision := nullif(v_meta->'revisions'->>v_project,'')::bigint;
+  v_lookup_call := 'await tools.mcp__GitHub__fetch({url:"https://api.github.com/repos/SirCaptainCaleb/GN3_RESEARCH/releases/latest"})';
 
   return jsonb_strip_nulls(jsonb_build_object(
     'wid',v_worker,
@@ -2144,6 +2146,8 @@ begin
     'updates_after_artifact_revision',greatest(0,v_live_revision-coalesce(v_artifact_revision,v_live_revision)),
     'release_url',v_meta->>'release_url',
     'artifact_url',v_meta->>'asset_url',
+    'github_lookup_call',v_lookup_call,
+    'fallback_startup','select * from '||v_project||'.startup();',
     'bootstrap',v_body,
     'next_required_call',v_project||'.continue('||v_worker::text||')'
   ));
