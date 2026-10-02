@@ -72,6 +72,7 @@ def research_md(row: dict[str, Any]) -> str:
     bits += ["", "## Metadata", "",
              f"- ID: {row['id']}",
              f"- Kind: {row.get('kind')}",
+             f"- Version: {row.get('version')}",
              f"- Math version: {row.get('math_version')}",
              f"- Audit: {row.get('audit_status')}",
              f"- Refutation: {row.get('refutation_status')}"]
@@ -158,9 +159,18 @@ Read, in this order:
 4. API.json
 5. MAIN_LINES/README.md and then every Main Line it lists
 
-The Main Lines are deliberately last: they are the final attention-primer before research begins.
+The Main Lines are deliberately last: they are the final attention-primer before route selection.
 
-After completing startup ingestion, do not consult Supabase, GitHub, search/read/context, or any other shared research state while doing mathematical research. Work only from this startup snapshot and your own local notes. Keep intermediate reasoning local.
+After choosing a route, perform one narrow live freshness check before proof work:
+- call changes(...) to obtain the compact live Main Line and Research Line version lists;
+- compare the chosen Main Line version, if any, with main_line_versions in MANIFEST.json;
+- compare the chosen Research Line version, if any, with research_line_versions in MANIFEST.json;
+- if either chosen version differs, fetch only that manuscript with read([id]) and use the live manuscript;
+- policy_events from changes(...) may be read normally.
+
+Do not use changes(...) as a mathematical changelog. Mathematical updates live in the Main Line and Research Line manuscripts themselves.
+
+After that route-specific freshness check, do not consult Supabase, GitHub, search/read/context, or any other shared research state while doing mathematical research. Work only from the startup snapshot, any refreshed chosen manuscripts, and your own local notes. Keep intermediate reasoning local.
 
 Publish only after substantial progress. Publication is a separate synchronization phase:
 - encode the complete save_batch operations array;
@@ -170,6 +180,8 @@ Publish only after substantial progress. Publication is a separate synchronizati
 - call commit_staged_batch(...) to commit the reviewed batch atomically.
 
 If shared state changes after review, commit will refuse and require a fresh overlap review.
+
+After a substantial publication, reread the Research Line you are continuing before resuming work. This is the normal mathematical refresh point. Re-read a Main Line only when its version changed or its global relationship has materially shifted.
 
 Snapshot event: {rev.get('event_id')}
 Generated: {rev.get('generated_at')}
@@ -182,7 +194,12 @@ Generated: {rev.get('generated_at')}
         "generated_at": rev.get("generated_at"),
         "tables": list(TABLES),
         "main_line_count": len(main_lines),
+        "main_line_versions": {d["id"]: d.get("version") for d in main_lines},
         "research_line_count": sum(r.get("kind") == "line" for r in active_research),
+        "research_line_versions": {
+            r["id"]: {"version": r.get("version"), "math_version": r.get("math_version")}
+            for r in active_research if r.get("kind") == "line"
+        },
         "toolkit_count": sum(r.get("kind") == "toolkit" for r in active_research),
         "brainstorm_count": len(data["brainstorms"]),
         "mirror_format": 7,
