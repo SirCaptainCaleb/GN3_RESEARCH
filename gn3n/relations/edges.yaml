@@ -5511,11 +5511,29 @@
   metadata:
   to_id: "compatsupportham22"
 -
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "mincex01"
+-
   created_at: "2026-09-27T21:49:51.962807+00:00"
   from_id: "enlargement_is_nonhamiltonian_in_the_allsplit_cocycle_branch"
   kind: "informs"
   metadata:
   to_id: "deletioncover_consistency_cocycle"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "defectspanisdeletion"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "defectcanonical35_recomp01"
 -
   created_at: "2026-09-28T02:22:24.989853+00:00"
   from_id: "enters_fourside_descent_or_the_finite_pairedobstruction_menu"
@@ -5523,6 +5541,12 @@
   metadata:
     reason: "explicit premise used in repaired proof"
   to_id: "every_deletion_singleton_lift_has_a_doublewrap_rotation"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "cyclic_nonmatching_fourwindow_transport01"
 -
   created_at: "2026-09-28T02:19:29.966056+00:00"
   from_id: "enters_fourside_descent_or_the_finite_pairedobstruction_menu"
@@ -5640,30 +5664,6 @@
   to_id: "mincex01"
 -
   created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "mincex01"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "defectspanisdeletion"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "defectcanonical35_recomp01"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "cyclic_nonmatching_fourwindow_transport01"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
   from_id: "in_the_deletion_component_and_gives_an_explicit_large_descent"
   kind: "depends_on"
   metadata:
@@ -5680,46 +5680,28 @@
   to_id: "order11_sevenlabel_design_normal01"
 -
   created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
+  from_id: "defect_lines_and_spanningorder_compression"
   kind: "depends_on"
   metadata:
   to_id: "defect101_finite_transport01"
 -
   created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
+  from_id: "defect_lines_and_spanningorder_compression"
   kind: "depends_on"
   metadata:
   to_id: "threeside01"
 -
   created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
+  from_id: "defect_lines_and_spanningorder_compression"
   kind: "depends_on"
   metadata:
   to_id: "threeside_trapped_order_le11"
 -
   created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
+  from_id: "defect_lines_and_spanningorder_compression"
   kind: "depends_on"
   metadata:
   to_id: "five_side_arbitrary_escape01"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "common_endpoint_barriers_fivewindow_counterexample01"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "minimum_defect_span_three_has_no_threeisolateddefect_geometry"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "every_deletion_singleton_lift_has_a_doublewrap_rotation"
 -
   created_at: "2026-09-21T15:53:19.526371+00:00"
   from_id: "exact_twocrossing_endpoint_cover_forces_order_disagreement"
@@ -5732,6 +5714,24 @@
   kind: "depends_on"
   metadata:
   to_id: "twocrossing_endpoint_covers_in_the_sharp_halforder_shell"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "common_endpoint_barriers_fivewindow_counterexample01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "minimum_defect_span_three_has_no_threeisolateddefect_geometry"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "every_deletion_singleton_lift_has_a_doublewrap_rotation"
 -
   created_at: "2026-10-02T03:48:19.207828+00:00"
   from_id: "descent_or_carries_order_disagreement_inside_the_same_43_layer"
@@ -6052,6 +6052,12 @@
   metadata:
   to_id: "threecoverquadraticmin01"
 -
+  created_at: "2026-10-02T02:37:45.984894+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "fixeddefect_shell_edge_lies_in_a_common_43_descent_diamond"
+-
   created_at: "2026-10-02T03:57:15.266967+00:00"
   from_id: "proof_rehearsal_index2_quadratic01"
   kind: "depends_on"
@@ -6163,12 +6169,6 @@
   kind: "depends_on"
   metadata:
   to_id: "threeside01"
--
-  created_at: "2026-10-02T02:37:45.984894+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "fixeddefect_shell_edge_lies_in_a_common_43_descent_diamond"
 -
   created_at: "2026-09-21T04:38:49.667063+00:00"
   from_id: "fixedpath_endpointtriangle_constraints_are_locally_consistent"
@@ -8136,6 +8136,12 @@
   metadata:
   to_id: "has_a_hamiltonian_fourwindow_inside_every_containing_fiveset"
 -
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "deletion_supports_form_a_forest_or_a_spanning_odd_cycle"
+-
   created_at: "2026-10-01T06:11:58.732483+00:00"
   from_id: "has_multiplicity_three_when_the_defects_are_nonadjacent"
   kind: "depends_on"
@@ -8153,6 +8159,12 @@
   kind: "depends_on"
   metadata:
   to_id: "has_multiplicity_three_when_the_defects_are_nonadjacent"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "disturbance_consumption_is_the_remaining_global_bridge"
 -
   created_at: "2026-10-01T07:19:55.077482+00:00"
   from_id: "degreecounted_commoncore_transport_packages_at_every_order"
@@ -8248,18 +8260,6 @@
   metadata:
   to_id: "endpointtransport_defectcompression_bridge"
 -
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "deletion_supports_form_a_forest_or_a_spanning_odd_cycle"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "20260928_disturbance_consumption_is_the_remaining_global_bridge"
--
   created_at: "2026-10-01T06:31:00.116285+00:00"
   from_id: "local_four_neutral_six_transport01"
   kind: "depends_on"
@@ -8279,52 +8279,28 @@
   to_id: "mincex01"
 -
   created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
   kind: "references"
   metadata:
   to_id: "compatibility_give_the_canonical_global_obstruction_interface"
 -
   created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
   kind: "references"
   metadata:
   to_id: "every_minimum_counterexample_contains_order_disagreement"
 -
   created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
   kind: "references"
   metadata:
   to_id: "grand_twocover_conjecture"
 -
   created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
   kind: "references"
   metadata:
   to_id: "mincex01"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "oddcycle_rank_transport_reversal_density01"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "oddcycle_order_coherence_or_c4_obstruction01"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "endpointtransport_defectcompression_bridge"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "gives_fractional_masstwo_certificates_and_a_dual_obstruction"
 -
   created_at: "2026-09-27T14:44:58.636343+00:00"
   from_id: "improvement_drives_quadratic_descent_to_equitable_threecovers"
@@ -8340,11 +8316,41 @@
     role: "shows why strict pair-union balance improvement would feed three-cover descent"
   to_id: "astraidea002"
 -
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "oddcycle_rank_transport_reversal_density01"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "oddcycle_order_coherence_or_c4_obstruction01"
+-
   created_at: "2026-10-01T06:11:58.732483+00:00"
   from_id: "in_a_3841_design_has_a_canonical_complementary_matching_frame"
   kind: "strengthens"
   metadata:
   to_id: "center_in_the_ordereleven_design_has_a_matched_blocked_44_frame"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "endpointtransport_defectcompression_bridge"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "gives_fractional_masstwo_certificates_and_a_dual_obstruction"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "in_the_deletion_component_and_gives_an_explicit_large_descent"
 -
   created_at: "2026-09-29T05:27:55.61467+00:00"
   from_id: "minside_large_escape01"
@@ -8357,12 +8363,6 @@
   kind: "depends_on"
   metadata:
   to_id: "cyclic_defect_type_has_simultaneous_central_and_wrap_reversals"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "in_the_deletion_component_and_gives_an_explicit_large_descent"
 -
   created_at: "2026-10-02T02:27:30.789244+00:00"
   from_id: "fixeddefect_shell_edge_lies_in_a_common_43_descent_diamond"
@@ -9321,6 +9321,12 @@
   metadata:
   to_id: "endpointtransport_defectcompression_bridge"
 -
+  created_at: "2026-10-02T03:55:45.236135+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "minimum_counterexample_has_a_genuine_reversing_tight_triple"
+-
   created_at: "2026-10-01T06:36:07.833926+00:00"
   from_id: "fourside_square_descends_or_is_supported_on_one_small_component"
   kind: "depends_on"
@@ -9374,12 +9380,6 @@
 -
   created_at: "2026-09-29T12:56:28.215754+00:00"
   from_id: "reversal_dense_fivefamily01"
-  kind: "depends_on"
-  metadata:
-  to_id: "minimum_counterexample_has_a_genuine_reversing_tight_triple"
--
-  created_at: "2026-10-02T03:55:45.236135+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
   kind: "depends_on"
   metadata:
   to_id: "minimum_counterexample_has_a_genuine_reversing_tight_triple"
@@ -9766,6 +9766,12 @@
     rewired_by_replacement: true
   to_id: "capacity_six_and_degreetwo_equality_is_a_slidingtriple_system"
 -
+  created_at: "2026-10-02T03:55:45.236135+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "number_is_the_vertexcover_number_of_the_defect_line"
+-
   created_at: "2026-09-21T00:11:53.85782+00:00"
   from_id: "compatible_triangles_enter_the_cyclic_fourkernel_frontier"
   kind: "depends_on"
@@ -9885,12 +9891,6 @@
 -
   created_at: "2026-09-28T00:35:36.58485+00:00"
   from_id: "cyclic_defect_run_is_impossible_in_a_minimum_counterexample"
-  kind: "depends_on"
-  metadata:
-  to_id: "number_is_the_vertexcover_number_of_the_defect_line"
--
-  created_at: "2026-10-02T03:55:45.236135+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
   kind: "depends_on"
   metadata:
   to_id: "number_is_the_vertexcover_number_of_the_defect_line"
@@ -10250,6 +10250,12 @@
   metadata:
   to_id: "a_complementary_path_until_a_reverse_end_hook_appears"
 -
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "of_selected_deletion_supports_force_twodeletion_disturbance"
+-
   created_at: "2026-09-28T01:00:51.460697+00:00"
   from_id: "fourfourmix_frame01"
   kind: "references"
@@ -10350,12 +10356,6 @@
   kind: "strengthens"
   metadata:
   to_id: "astra004oddcycledisturb"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "of_selected_deletion_supports_force_twodeletion_disturbance"
 -
   created_at: "2026-09-28T18:19:19.145777+00:00"
   from_id: "omission_replacement_always_creates_a_hamiltonian_fourwindow"
@@ -10486,6 +10486,18 @@
     reason: "Direct premise used in repaired internal-detour proof."
   to_id: "one_edge_gives_a_reversededge_path_or_a_bounded_wrap_extension"
 -
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "only_transport_disagreement_or_a_disturbed_balanced_odd_cycle"
+-
+  created_at: "2026-10-02T03:55:45.236135+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "only_in_a_degreefour_shell_with_a_2k2_p4_or_claw_core_graph"
+-
   created_at: "2026-09-27T19:24:28.057435+00:00"
   from_id: "one_endpoint_collapse_the_third_transport_interval_to_width_one"
   kind: "depends_on"
@@ -10546,23 +10558,11 @@
   metadata:
   to_id: "only_in_a_degreefour_shell_with_a_2k2_p4_or_claw_core_graph"
 -
-  created_at: "2026-10-02T03:55:45.236135+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "only_in_a_degreefour_shell_with_a_2k2_p4_or_claw_core_graph"
--
   created_at: "2026-10-01T07:19:55.077482+00:00"
   from_id: "only_local_internality_except_in_the_adjacent_equality_case"
   kind: "strengthens"
   metadata:
   to_id: "universal_internal_pair_doublecross01"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "only_transport_disagreement_or_a_disturbed_balanced_odd_cycle"
 -
   created_at: "2026-09-28T20:35:54.217896+00:00"
   from_id: "onward_a_coherent_endpoint_square_forces_order_disagreement"
@@ -10731,6 +10731,12 @@
   metadata:
   to_id: "or_generate_a_deletion_edge_joining_the_selected_components"
 -
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "order_defect_survives_all_but_at_most_two_further_deletions"
+-
   created_at: "2026-09-27T17:03:03.240066+00:00"
   from_id: "escapes_to_a_component_of_size_at_least_the_pair_sum_plus_one"
   kind: "depends_on"
@@ -10762,12 +10768,6 @@
   metadata:
   to_id: "deletioncover_consistency_cocycle"
 -
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "order_defect_survives_all_but_at_most_two_further_deletions"
--
   created_at: "2026-09-28T17:29:01.383616+00:00"
   from_id: "order_disagreement_always_yields_a_genuine_local_reversal"
   kind: "depends_on"
@@ -10788,6 +10788,12 @@
   metadata:
     purpose: "Motivation only; conjecture remains unproved."
   to_id: "order_disagreement_always_yields_a_genuine_local_reversal"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "references"
+  metadata:
+  to_id: "order_transport_forces_linearly_many_adjacentslot_reversals"
 -
   created_at: "2026-09-28T15:00:38.773301+00:00"
   from_id: "order_disagreement_or_a_rootanchored_hamiltonian_fourwindow"
@@ -10875,12 +10881,6 @@
   kind: "depends_on"
   metadata:
   to_id: "deletion_supports_form_a_forest_or_a_spanning_odd_cycle"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "references"
-  metadata:
-  to_id: "order_transport_forces_linearly_many_adjacentslot_reversals"
 -
   created_at: "2026-09-21T15:54:02.450047+00:00"
   from_id: "ordercompatible_endpoint_covers_force_bridge_disagreement"
@@ -23032,6 +23032,12 @@
     supersession_state_updated_at: "2026-10-01T01:01:13.82212+00:00"
   to_id: "balanced8_adjacent_windows01"
 -
+  created_at: "2026-10-02T02:37:45.984894+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside_transport_descends_to_a_monotone_43_corridor"
+-
   created_at: "2026-09-28T20:12:54.208049+00:00"
   from_id: "a_sixside_force_order_disagreement_or_a_hamiltonian_fourwindow"
   kind: "depends_on"
@@ -23156,12 +23162,6 @@
   kind: "depends_on"
   metadata:
   to_id: "independence_number_at_most_two_in_every_boundary_tournament"
--
-  created_at: "2026-10-02T02:37:45.984894+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "threeside_transport_descends_to_a_monotone_43_corridor"
 -
   created_at: "2026-10-02T03:48:19.207828+00:00"
   from_id: "descent_or_carries_order_disagreement_inside_the_same_43_layer"
@@ -23388,6 +23388,12 @@
   metadata:
   to_id: "synchronization_forces_a_shelllocal_reversing_triple"
 -
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "defect_lines_and_spanningorder_compression"
+  kind: "depends_on"
+  metadata:
+  to_id: "to_descent_nearby_migration_or_an_endpointaligned_small_support"
+-
   created_at: "2026-09-27T04:25:03.555486+00:00"
   from_id: "astraidea005"
   kind: "informs"
@@ -23411,12 +23417,6 @@
   kind: "informs"
   metadata:
   to_id: "mandatorytriple_covers_have_no_short_opposite_component"
--
-  created_at: "2026-10-02T02:18:46.269373+00:00"
-  from_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  kind: "depends_on"
-  metadata:
-  to_id: "to_descent_nearby_migration_or_an_endpointaligned_small_support"
 -
   created_at: "2026-10-01T17:38:20.468275+00:00"
   from_id: "reaches_a_fourwindow_descent_or_bounded_transport_state"
@@ -23512,6 +23512,12 @@
   metadata:
   to_id: "deletion_covers_cross_a_longestpath_cut_at_least_twice"
 -
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  kind: "consumes"
+  metadata:
+  to_id: "transversal_forces_a_positioned_transport_disturbance"
+-
   created_at: "2026-09-27T19:08:53.674983+00:00"
   from_id: "pairdeletionreconstruct01"
   kind: "informs"
@@ -23565,12 +23571,6 @@
   kind: "depends_on"
   metadata:
   to_id: "only_transport_disagreement_or_a_disturbed_balanced_odd_cycle"
--
-  created_at: "2026-10-02T02:20:42.883375+00:00"
-  from_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  kind: "consumes"
-  metadata:
-  to_id: "transversal_forces_a_positioned_transport_disturbance"
 -
   created_at: "2026-09-27T14:57:43.457005+00:00"
   from_id: "transversal_is_a_union_of_support_paths_of_length_at_most_five"

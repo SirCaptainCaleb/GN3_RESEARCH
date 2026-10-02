@@ -846,7 +846,7 @@ Parent: [rankpair_obstruction_cannot_occupy_the_rightjoint_slot]
 
 ## [a_onelow_foursingle_obstruction_pins_the_low_witness_to_c] At the odd boundary a one-low four-single obstruction pins the low witness to C.
 focus · lemma · proved · certified · supported
-Parent: [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2]
+Parent: [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_b]
 **Given:** ["8d1adea102fe/f378e6022301 right-slot exclusions","a01ddfa76dc8 low terminal-only localization","c448268039f5 one-rank-higher contacts on canonical low entrance rail"]
 **Consumer:** ["p=2q-3 one-low defect-corrected block","Astra 11/12 route"]
 **Consequence:** Any all-single q,(q+1)^3 obstruction at p=2q-3 has its low edge centered at C=g_{q-2}∩g_{q-1}. The D and E low-entrance branches are eliminated.
@@ -2299,7 +2299,7 @@ Parent: [high_entrance_rail_crosses_the_other_three_charged_edges]
 **Consequence:** On every high entrance rail the low edge is either a clean single blocker in the strict interior band 3..q-2 or a double blocker. Together with f4011e425d67, all three foreign charged edges obey the same late-double rule.
 **Next Need:** Count the low edge plus two high competitors on one q-edge high rail. If all three are single blockers, their contact intervals lie in the first q-2 cells and can be subjected to distance-two clean-contact conflicts. If any are double, charge the extra contact as Astra's paid defect.
 
-## [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_2] A competing high edge can meet a high entrance rail late only as a double blocker.
+## [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_b] A competing high edge can meet a high entrance rail late only as a double blocker.
 focus · lemma · proved · certified · supported
 Parent: [high_entrance_rail_crosses_the_other_three_charged_edges]
 **Given:** ["two rank-(q+1) high edges through one terminal","canonical q-edge entrance rail for one high edge"]
@@ -2859,14 +2859,14 @@ Parent: [densecore_allspecial_conjecture]
 **Warning:** minimum-degree hypothesis is essential
 **Role:** fence
 
-## [minimum_degree_forces_ascending_edges_to_have_large_2] Minimum degree forces ascending edges to have large φ.
+## [minimum_degree_forces_ascending_edges_to_have_large_b] Minimum degree forces ascending edges to have large φ.
 available · lemma · proved · certified · supported
 Parent: [minimumdegree_local_ascendingneighbor_bound]
 **Consumer:** ["minimum-degree local ascending-neighbor bound","dense-core all-special route"]
 **Correction:** statement restored with a correct opposite-endpoint proof; c3e95f4ce77d was never a counterexample because its global minimum degree is 3
 **Proved By:** minimum_degree_forces_ascending_edges_to_have_large
 
-## [minimum_degree_forces_ascending_edges_to_have_large_3] Minimum degree forces ascending edges to have large φ.
+## [minimum_degree_forces_ascending_edges_to_have_large_c] Minimum degree forces ascending edges to have large φ.
 available · lemma · proved · certified · supported
 Parent: [minimumdegree_local_ascendingneighbor_bound]
 **Consumer:** ["minimum-degree local ascending-neighbor bound","dense-core all-special route"]

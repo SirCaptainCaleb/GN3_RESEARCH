@@ -45,7 +45,7 @@ research_interface:
     - "q,(q+1)^3 elimination"
   given:
     - "terminal tail-blocker lemma"
-    - "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_2"
+    - "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_b"
     - "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker"
   next_need: "Build the conflict matching on these rails. A q(q+1)^3 violation supplies three high rails; match each unavoidable near-tail conflict to a distinct double-blocker contact, or show all contacts stay in the interior bands and then use distance-two clean-contact incompatibility to force an empty slot deficit."
   role: "exact clean-versus-paid rail decomposition"

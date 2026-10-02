@@ -2352,39 +2352,60 @@ CREATE OR REPLACE FUNCTION control_center.canonical_object_id(p_id text)
  STABLE SECURITY DEFINER
 AS $function$
 declare
-  v_current text:=p_id;
+  v_current text := p_id;
   v_next text[];
-  v_steps integer:=0;
-  v_project text;
   v_alias text;
+  v_project text;
+  v_alias_steps integer := 0;
+  v_supersession_steps integer := 0;
 begin
-  v_project:=control_center.active_project();
+  v_project := control_center.active_project();
+
   if v_current is null or btrim(v_current)='' then
     raise exception 'object id is required';
   end if;
 
-  if not exists(select 1 from objects where id=v_current and trashed_at is null)
-     and to_regclass(format('%I.object_id_migration_map',v_project)) is not null then
-    execute format(
-      'select proposed_new_id from %I.object_id_migration_map
-       where old_id=$1 and migration_status in (''migrated'',''reserved'',''frozen'',''proposed_reserved'',''proposed'')',
-      v_project
-    ) into v_alias using v_current;
-    if v_alias is not null then v_current:=v_alias; end if;
-  end if;
-
   loop
-    if not exists(select 1 from objects where id=v_current and trashed_at is null) then
+    exit when exists(
+      select 1 from objects where id=v_current and trashed_at is null
+    );
+
+    v_alias := null;
+    if to_regclass(format('%I.object_id_migration_map',v_project)) is not null then
+      execute format(
+        'select proposed_new_id
+           from %I.object_id_migration_map
+          where old_id=$1
+            and migration_status <> ''cancelled''
+          limit 1',
+        v_project
+      )
+      into v_alias
+      using v_current;
+    end if;
+
+    if v_alias is null or v_alias=v_current then
       raise exception 'object % not found',p_id;
     end if;
-    v_next:=control_center.superseded_by(v_current);
-    if cardinality(v_next)=0 then return v_current;
+
+    v_current := v_alias;
+    v_alias_steps := v_alias_steps + 1;
+    if v_alias_steps > 64 then
+      raise exception 'object-id alias chain exceeded 64 steps from %',p_id;
+    end if;
+  end loop;
+
+  loop
+    v_next := control_center.superseded_by(v_current);
+    if cardinality(v_next)=0 then
+      return v_current;
     elsif cardinality(v_next)>1 then
       raise exception 'object % has multiple live superseding objects: %',v_current,v_next;
     end if;
-    v_current:=v_next[1];
-    v_steps:=v_steps+1;
-    if v_steps>control_center.config_int('supersession.max_chain_steps') then
+
+    v_current := v_next[1];
+    v_supersession_steps := v_supersession_steps + 1;
+    if v_supersession_steps > control_center.config_int('supersession.max_chain_steps') then
       raise exception 'supersession chain exceeded configured maximum steps from %',p_id;
     end if;
   end loop;

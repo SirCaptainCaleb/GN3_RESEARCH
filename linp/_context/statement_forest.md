@@ -650,7 +650,7 @@
                       STATEMENT
                       Under the p=2q-3 four-single rank-pair hypotheses with q>=4, the private right slot F=private(g_q) cannot be occupied. Since F is a clean rank-(q+1) entrance it empties B; splitting on the label/occupancy of E, the remaining star contacts always contain one of the bridge pairs {A,C}, {A,D}, or {C,E}, each producing a (q+1)-edge path ending at F and contradicting phi(F)=q. Together with the G-slot elimination, every four-single obstruction is confined to A,B,C,D,E.
 
-                  • [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot
+                  • [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_b] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot
                       STATEMENT
                       Let p=phi(v)=2q-3 with q>=4, and fix a maximum path
                          P=(g_1,...,g_p)
@@ -3317,7 +3317,7 @@
                         3<=k<=q-2.
                       Thus a one-contact low blocker lies in the interior rail band r_3,...,r_{q-2}; if e meets either of the final two rail edges r_{q-1},r_q, then e has two contacts on Q_i.
 
-                  • [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_2] A competing high edge can meet a high entrance rail late only as a double blocker
+                  • [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_b] A competing high edge can meet a high entrance rail late only as a double blocker
                       STATEMENT
                       Let h_i={y_i,v,z_i} and h_j={y_j,v,z_j} be distinct ascending nonspecial edges of rank q+1 through the common terminal v, with phi(y_i)=phi(y_j)=q. Let Q_i=(r_1,...,r_q) be a canonical q-edge entrance path ending at y_i and avoiding v,z_i.
                       
@@ -4575,7 +4575,7 @@
               STATEMENT
               Let H be a P_ell^(3)-free linear 3-graph with minimum degree δ(H)>=floor(2ell/3)+1. Fix v∈V(H). Then there are at most three ascending nonspecial edges e={x,v,u} for which v is a last vertex and φ(u)>=φ(v).
 
-            • [minimum_degree_forces_ascending_edges_to_have_large_2] Minimum degree forces ascending edges to have large φ
+            • [minimum_degree_forces_ascending_edges_to_have_large_b] Minimum degree forces ascending edges to have large φ
                 STATEMENT
                 Let H be a finite linear 3-graph with minimum degree δ. If e is an ascending nonspecial edge, then φ(e)>=ceil((δ+3)/2).
 
@@ -4587,7 +4587,7 @@
                   STATEMENT
                   For every L>=2 there is a finite linear 3-graph H_L with minimum degree 4 containing an ascending nonspecial edge. In fact H_L has a distinguished edge e with φ(e)=L+3 and unique entrance x satisfying φ(x)=L+2.
 
-            • [minimum_degree_forces_ascending_edges_to_have_large_3] Minimum degree forces ascending edges to have large φ
+            • [minimum_degree_forces_ascending_edges_to_have_large_c] Minimum degree forces ascending edges to have large φ
                 STATEMENT
                 Let H be a finite linear 3-graph with minimum degree δ. If e is an ascending nonspecial edge, then φ(e)>=ceil((δ+3)/2).
 

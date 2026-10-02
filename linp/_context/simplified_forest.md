@@ -433,10 +433,10 @@
             • [generalize_the_p4_specialedge_lemma_to_dense_cores] ‹Generalize the P4 special-edge lemma to dense cores›
             • [twoterminal_rank_ascent_from_a_lowrank_nonspecial_edge] Two-terminal rank ascent from a low-rank nonspecial edge.
           • [minimumdegree_local_ascendingneighbor_bound] Conjecturally, under minimum degree at least ⌊2ℓ/3⌋+1, each vertex is terminal for at most three ascending nonspecial edges whose opposite terminal has at least equal rank.
-            • [minimum_degree_forces_ascending_edges_to_have_large_2] Minimum degree forces ascending edges to have large φ.
+            • [minimum_degree_forces_ascending_edges_to_have_large_b] Minimum degree forces ascending edges to have large φ.
             • [degree_four_does_not_eliminate_ascending_nonspecial_edges] Minimum degree four does not eliminate ascending nonspecial edges: there are examples with δ=4 containing such an edge for every L≥2.
               • [boosters_preserve_an_ascending_edge_at_minimum_degree_four] Affine-plane boosters preserve an ascending edge at minimum degree four.
-            • [minimum_degree_forces_ascending_edges_to_have_large_3] Minimum degree forces ascending edges to have large φ.
+            • [minimum_degree_forces_ascending_edges_to_have_large_c] Minimum degree forces ascending edges to have large φ.
             • [minimumdegree_local_bound_implies_the_23_upper_bound] Minimum-degree local bound implies the 2/3 upper bound.
         • [paths_push_rotations_onto_maximumpotential_private_vertices] Lexicographically maximal fixed-edge paths push rotations onto maximum-potential private vertices.
       • [snake_indegree_lemma] Snake indegree lemma.
@@ -452,7 +452,7 @@
                 • [rankpair_obstruction_cannot_occupy_the_rightjoint_slot] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-joint slot.
                   • [a_foursingle_obstruction_cannot_occupy_the_rightprivate_slot] At the odd central boundary a four-single obstruction cannot occupy the right-private slot.
                   • [rankpair_obstruction_cannot_occupy_the_rightprivate_slot] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot.
-                  • [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot.
+                  • [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_b] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot.
                     • [a_onelow_foursingle_obstruction_pins_the_low_witness_to_c] At the odd boundary a one-low four-single obstruction pins the low witness to C.
                   • [states_force_terminal_central_joints_and_lossone_witnesses] Pure-high odd-boundary four-single states force terminal central joints and loss-one witnesses.
                     • [foursingle_state_is_an_exact_lossone_wrongentrance_state] Every pure-high odd-boundary four-single state is an exact loss-one wrong-entrance state.
@@ -700,7 +700,7 @@
               • [qq13_obstructions_have_at_least_two_visible_high_entrances] Top-boundary q,(q+1)^3 obstructions have at least two visible high entrances.
                 • [high_entrance_rail_crosses_the_other_three_charged_edges] Every visible high entrance rail crosses the other three charged edges.
                   • [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker] A low edge can meet a high entrance rail late only as a double blocker.
-                  • [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_2] A competing high edge can meet a high entrance rail late only as a double blocker.
+                  • [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_b] A competing high edge can meet a high entrance rail late only as a double blocker.
                   • [have_exact_clean_interior_bands_and_doubleonly_terminal_cells] High entrance rails have exact clean interior bands and double-only terminal cells.
                     • [blockers_are_incompatible_on_every_canonical_entrance_rail] Distance-two single blockers are incompatible on every canonical entrance rail.
                     • [state_the_low_edge_doubleblocks_every_high_entrance_rail] In the 4555 rank-pair state the low edge double-blocks every high entrance rail.

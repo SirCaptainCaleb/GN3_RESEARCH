@@ -31,21 +31,25 @@
   object_id: "linp_route08"
   worker_id: 392
 -
-  first_recorded_at: "2026-09-21T22:59:43.061563+00:00"
-  object_id: "minimum_degree_forces_ascending_edges_to_have_large_3"
-  worker_id: 262
+  first_recorded_at: "2026-09-24T05:12:51.2844+00:00"
+  object_id: "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_b"
+  worker_id: 225
 -
   first_recorded_at: "2026-09-21T23:00:00.435315+00:00"
-  object_id: "minimum_degree_forces_ascending_edges_to_have_large_2"
+  object_id: "minimum_degree_forces_ascending_edges_to_have_large_b"
   worker_id: 234
+-
+  first_recorded_at: "2026-09-21T22:59:43.061563+00:00"
+  object_id: "minimum_degree_forces_ascending_edges_to_have_large_c"
+  worker_id: 262
 -
   first_recorded_at: "2026-09-21T23:09:58.106407+00:00"
-  object_id: "minimum_degree_forces_ascending_edges_to_have_large_3"
+  object_id: "minimum_degree_forces_ascending_edges_to_have_large_c"
   worker_id: 234
 -
-  first_recorded_at: "2026-09-24T05:12:51.2844+00:00"
-  object_id: "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_2"
-  worker_id: 225
+  first_recorded_at: "2026-09-24T05:32:46.209955+00:00"
+  object_id: "rankpair_obstruction_cannot_occupy_the_rightprivate_slot_b"
+  worker_id: 229
 -
   first_recorded_at: "2026-09-24T05:13:20.603739+00:00"
   object_id: "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker"
@@ -54,10 +58,6 @@
   first_recorded_at: "2026-09-24T05:32:11.845131+00:00"
   object_id: "rankpair_obstruction_cannot_occupy_the_rightprivate_slot"
   worker_id: 185
--
-  first_recorded_at: "2026-09-24T05:32:46.209955+00:00"
-  object_id: "rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2"
-  worker_id: 229
 -
   first_recorded_at: "2026-09-24T21:50:31.416952+00:00"
   object_id: "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker"
@@ -3743,14 +3743,6 @@
   object_id: "ascendingaccounting_continuation"
   worker_id: 351
 -
-  first_recorded_at: "2026-10-01T20:16:55.860612+00:00"
-  object_id: "toprank_alignment_continuation_2"
-  worker_id: 296
--
-  first_recorded_at: "2026-10-01T20:16:59.936382+00:00"
-  object_id: "ascendingaccounting_continuation_2"
-  worker_id: 296
--
   first_recorded_at: "2026-10-01T21:35:30.656938+00:00"
   object_id: "singleton_transfer_is_periodic_away_from_few_defects"
   worker_id: 294
@@ -3786,6 +3778,14 @@
   first_recorded_at: "2026-09-25T21:29:00.793674+00:00"
   object_id: "force_cyclebearing_edges_or_common_uniqueentrance_traversal"
   worker_id: 191
+-
+  first_recorded_at: "2026-10-01T20:16:59.936382+00:00"
+  object_id: "ascendingaccounting_continuation_b"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:16:55.860612+00:00"
+  object_id: "toprank_alignment_continuation_b"
+  worker_id: 296
 -
   first_recorded_at: "2026-10-01T20:02:02.653536+00:00"
   object_id: "lossone_twocycle_continuation"

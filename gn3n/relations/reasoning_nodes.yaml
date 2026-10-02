@@ -1497,6 +1497,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "disturbance_consumption_is_the_remaining_global_bridge"
+  route_key: "proof_rehearsal_20260928"
+  updated_at: "2026-09-28T02:54:05.61281+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Reasoning hygiene: annotate existing theorem in its current chain."
   object_id: "local_four_common_endpoint_core15"
   route_key: "elevation_20260929"
@@ -1605,14 +1613,6 @@
   object_id: "endpoint_pair_split_descent_m6_01"
   route_key: "elevation_20260929"
   updated_at: "2026-09-29T18:47:33.314981+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: ""
-  object_id: "20260928_disturbance_consumption_is_the_remaining_global_bridge"
-  route_key: "proof_rehearsal_20260928"
-  updated_at: "2026-09-28T02:54:05.61281+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -2646,6 +2646,14 @@
 -
   composition_manifest:
   composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "defect_lines_and_spanningorder_compression"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T02:18:46.269373+00:00"
+-
+  composition_manifest:
+  composition_status: null
   node_kind: "step"
   note: "Sequential continuation of three-side fixed-defect transport; branches into the square route and multiplicity-three refinement."
   object_id: "defects_share_a_shell_neighbor_in_every_rooted_sevenset"
@@ -2657,14 +2665,6 @@
   node_kind: "step"
   note: ""
   object_id: "in_the_deletion_component_and_gives_an_explicit_large_descent"
-  route_key: "defect-span/spanning-order-compression"
-  updated_at: "2026-10-02T02:18:46.269373+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "root"
-  note: ""
-  object_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
   route_key: "defect-span/spanning-order-compression"
   updated_at: "2026-10-02T02:18:46.269373+00:00"
 -
@@ -2745,6 +2745,14 @@
 -
   composition_manifest:
   composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  route_key: "proof-rehearsal-index1-deletion-cover"
+  updated_at: "2026-10-02T02:20:42.883375+00:00"
+-
+  composition_manifest:
+  composition_status: null
   node_kind: "branch"
   note: "Organizational Toolkit home for reusable finite block-design lemmas."
   object_id: "finite_blockdesign_toolkit"
@@ -2758,14 +2766,6 @@
   object_id: "a_threeside_singleton_lift_has_a_sixway_strict_descent_fan"
   route_key: "threeside_sixway_descent_fan"
   updated_at: "2026-10-01T17:51:08.12458+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "root"
-  note: ""
-  object_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  route_key: "proof-rehearsal-index1-deletion-cover"
-  updated_at: "2026-10-02T02:20:42.883375+00:00"
 -
   composition_manifest:
   composition_status: null

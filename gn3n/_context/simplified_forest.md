@@ -681,10 +681,10 @@
     • [astra006smallside_recomp01] Quadratic-minimal relocation states have no tiny side and a three-side has a complete long-neighbor interface
     • [astra006nearbalancedsync01] Near-balanced quadratic-maximal three-block states have two barriers from one common block
       • [one_block_force_a_mixed_fourvertex_path_across_the_other_blocks] Two barriers from one block force a mixed four-vertex path across the other blocks
-  • [20260928_disturbance_consumption_is_the_remaining_global_bridge] ‹Proof rehearsal 2026-09-28: disturbance consumption is the remaining global bridge›
   • [codimension_fourfive_or_a_longestpath_endpoint_disturbance] Every order-twelve deletion state enters codimension four/five or a longest-path endpoint disturbance.
     • [exposes_a_longestpath_mixed_crossing_or_order_disagreement] Every order-twelve minimum counterexample exposes a longest-path mixed crossing or order disagreement.
   • [deletion_side_ge3_01] Every deletion-cover component in a minimum counterexample has order at least three.
+  • [disturbance_consumption_is_the_remaining_global_bridge] ‹Proof rehearsal 2026-09-28: disturbance consumption is the remaining global bridge›
   • [fourwindow_smallside_bypass01] An anchored four-window yields descent, a Hamiltonian five/six-side, or order at most fourteen.
   • [proof_rehearsal_20260929] Proof rehearsal 2026-09-29: large-order closure reduces to bounded pc2 transport
     • [fourwindows_force_commontop_bounded_square_disturbances] Hamiltonian four-window density yields common-top pc2 squares; universal internality then localizes a bounded square pair whose lower covers satisfy a finite disturbance menu.
@@ -1409,9 +1409,9 @@
     • [astra008scope01] Astra-008 reduces only to the sharp odd half-order shell.
 • [project_policy] ‹Project-specific policy›
 • [proof_rehearsals01] Top-level collection of comprehensive proof rehearsals for the major GN3N proof-attack lines.
-  • [i_deletioncover_compatibility_and_global_obstruction_structure] Deletion-cover compatibility is an onboarding-ready local-to-global route: every selected transversal already forces positioned disturbance; compatibility structure localizes it, while the balanced odd cycle supplies additional global monodromy/fractional structure whose integral consumption remains open.
+  • [deletioncover_compatibility_and_global_obstruction_structure] Deletion-cover compatibility is an onboarding-ready local-to-global route: every selected transversal already forces positioned disturbance; compatibility structure localizes it, while the balanced odd cycle supplies additional global monodromy/fractional structure whose integral consumption remains open.
   • [proof_rehearsal_index2_quadratic01] Phi normalizes trapped three-covers until size information is exhausted. The unique-small plateau is now sharpened to a finite bounded endgame—pc2 square/overlap/matching-block six-shell, positioned endpoint reversal, or doubled reverse barrier—while the unresolved theorem is still global disturbance -> defect span <=2.
-  • [proof_rehearsal_iii_defect_lines_and_spanningorder_compression] Defect span three normalizes to a deletion state; fixed-label transport and bounded-window machinery now both terminate at positioned endpoint reversals or 4/5 windows. The remaining gap is endpoint obstruction consumption into defect-line matching number at most one.
+  • [defect_lines_and_spanningorder_compression] Defect span three normalizes to a deletion state; fixed-label transport and bounded-window machinery now both terminate at positioned endpoint reversals or 4/5 windows. The remaining gap is endpoint obstruction consumption into defect-line matching number at most one.
   • [proof_rehearsal_index4_endpoint_transport01] INDEX 4 synthesis: bounded pc2 windows occur abundantly in certified common-core families and transport to literal endpoint reversals; closure fails only at phase-locked same-end/internal shells and their normalized bypass residues, where global gluing or well-founded termination is still missing.
   • [proof_rehearsal_index5_longest_reversal01] Longest-path/reversal theory already produces abundant positioned reversals and synchronized small Hamiltonian supports; the live gap is their consumption into endpoint absorption or defect compression.
   • [proof_rehearsal_index6_no_trapping01] Deletion-generated trapped three-cover components descend to synchronized transport/reversal geometry; neutral recurrence is already non-structureless. The live gap is converting reachable disturbance or many rooted states into a component-respecting escape.

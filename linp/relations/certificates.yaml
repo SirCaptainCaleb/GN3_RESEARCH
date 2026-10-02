@@ -971,7 +971,7 @@
   checked_at: "2026-09-22T12:53:51.843983+00:00"
   math_version: 6
   note: "Verified from certified endpoint-specific minimum-degree lemma 1956950d4285: for the unique entrance x of an ascending edge e, phi(x)=phi(e)-1>=ceil((delta+1)/2), hence phi(e)>=ceil((delta+3)/2)."
-  object_id: "minimum_degree_forces_ascending_edges_to_have_large_2"
+  object_id: "minimum_degree_forces_ascending_edges_to_have_large_b"
   premise_manifest:
     -
       audit_status: "certified"
@@ -2576,6 +2576,24 @@
   verification_method: "independent_check"
   verifier_worker_id: 231
 -
+  checked_at: "2026-09-24T21:51:59.362952+00:00"
+  math_version: 3
+  note: "PASS_ADJUSTED: Replaced prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
+  object_id: "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_b"
+  premise_manifest:
+  premise_signature:
+  verification_method: "independent_check"
+  verifier_worker_id: 209
+-
+  checked_at: "2026-09-25T02:03:37.560588+00:00"
+  math_version: 1
+  note: "Checked the four-of-five combinatorial split and both A,D / C,E splices; each gives a q+1 path ending at F, contradicting phi(F)=q."
+  object_id: "rankpair_obstruction_cannot_occupy_the_rightprivate_slot_b"
+  premise_manifest:
+  premise_signature:
+  verification_method: "independent_check"
+  verifier_worker_id: 249
+-
   checked_at: "2026-09-24T22:03:50.165314+00:00"
   math_version: 1
   note: null
@@ -2584,24 +2602,6 @@
   premise_signature:
   verification_method: "independent_check"
   verifier_worker_id: 207
--
-  checked_at: "2026-09-25T02:03:37.560588+00:00"
-  math_version: 1
-  note: "Checked the four-of-five combinatorial split and both A,D / C,E splices; each gives a q+1 path ending at F, contradicting phi(F)=q."
-  object_id: "rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2"
-  premise_manifest:
-  premise_signature:
-  verification_method: "independent_check"
-  verifier_worker_id: 249
--
-  checked_at: "2026-09-24T21:51:59.362952+00:00"
-  math_version: 3
-  note: "PASS_ADJUSTED: Replaced prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
-  object_id: "can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_2"
-  premise_manifest:
-  premise_signature:
-  verification_method: "independent_check"
-  verifier_worker_id: 209
 -
   checked_at: "2026-09-25T22:34:11.157787+00:00"
   math_version: 1
@@ -3203,7 +3203,7 @@
   checked_at: "2026-09-22T10:33:36.126758+00:00"
   math_version: 6
   note: null
-  object_id: "minimum_degree_forces_ascending_edges_to_have_large_3"
+  object_id: "minimum_degree_forces_ascending_edges_to_have_large_c"
   premise_manifest:
     -
       audit_status: "certified"

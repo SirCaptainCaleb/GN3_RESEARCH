@@ -442,7 +442,7 @@
     STATEMENT
     Top-level home for comprehensive end-to-end proof rehearsals of the major GN3N proof-attack lines.
 
-  • [i_deletioncover_compatibility_and_global_obstruction_structure] Proof rehearsal I — deletion-cover compatibility and global obstruction structure
+  • [deletioncover_compatibility_and_global_obstruction_structure] Proof rehearsal I — deletion-cover compatibility and global obstruction structure
       STATEMENT
       Assume that H is a minimum counterexample to the assertion that every finite boundary 3-tournament has path-cover number at most two.  A selected deletion cover at each vertex determines a graph of Hamiltonian supports.  Compatibility either reconstructs a two-cover, localizes all variation to one non-Hamiltonian support with Hamiltonian vertex deletions, or forces the selected supports into a spanning odd cycle.  The argument reduces the conjecture to a single remaining compression lemma for the resulting order or support discrepancy.
 
@@ -450,7 +450,7 @@
       STATEMENT
       Let H be a minimum counterexample and let C be a three-cover in the connected component of a singleton lift under pairwise repartitions. Minimizing the quadratic potential Phi(C)=sum |P|^2 makes every displayed pair a minimum-imbalance two-cover of its union. The equitable size profiles are the absolute minima of Phi, and the remaining equal-potential moves force order disagreement, explicit inter-support edges, endpoint reversals, or a bounded common-core configuration. The conjecture is reduced to converting one of these positioned configurations into a two-cover.
 
-  • [proof_rehearsal_iii_defect_lines_and_spanningorder_compression] Proof rehearsal III — defect lines and spanning-order compression
+  • [defect_lines_and_spanningorder_compression] Proof rehearsal III — defect lines and spanning-order compression
       STATEMENT
       Let H be a minimum counterexample. A spanning ordering has a minimum number of contiguous tight-path pieces equal to one plus the matching number of its defect line. Hence the conjecture is equivalent to finding a spanning ordering whose defect line has matching number at most one. An ordering of minimum defect span three is precisely a deletion-cover ordering P,x,Q. Transport of the fixed deleted vertex and transport of Hamiltonian four- and five-vertex supports reduce the argument to a displayed end-edge reversal or an endpoint-aligned Hamiltonian support with two-coverable complement.
 
@@ -477,10 +477,6 @@
 • [grand_twocover_conjecture] Grand two-cover conjecture
     STATEMENT
     Every finite 3-uniform boundary tournament has path-cover number at most two.
-
-  • [20260928_disturbance_consumption_is_the_remaining_global_bridge] Proof rehearsal 2026-09-28: disturbance consumption is the remaining global bridge
-      STATEMENT
-      Fresh global rehearsal: the all-equal {1,1,1} cube is now closed into the standard disturbance interface, while the first unsupported theorem-wide inference remains the endpoint-transport / defect-compression bridge converting robust order/support disturbance into endpoint absorption, a direct two-cover, or defect span at most two.
 
   • [astraidea001] Weighted longest-path principle and fractional two-cover
       STATEMENT
@@ -1347,6 +1343,10 @@
         • [sameend_extenders_do_not_automatically_concatenate] Same-end extenders do not automatically concatenate
             STATEMENT
             There is a boundary tournament on four vertices {a,b,r_1,r_2} such that R=(r_1,r_2) is a tight path, both (a,r_1,r_2) and (b,r_1,r_2) are tight, but neither (a,b,r_1) nor (b,a,r_1) is tight. Hence boundary antisymmetry alone does not allow two common left extenders of a tight path to be ordered so that both can be prepended. Any argument using such a concatenation requires additional structure.
+
+  • [disturbance_consumption_is_the_remaining_global_bridge] Proof rehearsal 2026-09-28: disturbance consumption is the remaining global bridge
+      STATEMENT
+      Fresh global rehearsal: the all-equal {1,1,1} cube is now closed into the standard disturbance interface, while the first unsupported theorem-wide inference remains the endpoint-transport / defect-compression bridge converting robust order/support disturbance into endpoint absorption, a direct two-cover, or defect span at most two.
 
   • [fourwindow_smallside_bypass01] An anchored four-window yields descent, a Hamiltonian five/six-side, or order at most fourteen
       STATEMENT

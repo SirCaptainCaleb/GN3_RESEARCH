@@ -1,4 +1,8 @@
 -
+  first_recorded_at: "2026-10-02T04:08:15.109435+00:00"
+  object_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  worker_id: 1194
+-
   first_recorded_at: "2026-10-01T00:43:41.343836+00:00"
   object_id: "order11_design_exact42_selector01"
   worker_id: 745
@@ -19,13 +23,29 @@
   object_id: "localextend01"
   worker_id: 668
 -
+  first_recorded_at: "2026-10-02T02:20:42.883375+00:00"
+  object_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  worker_id: 1230
+-
+  first_recorded_at: "2026-10-02T03:53:51.690924+00:00"
+  object_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  worker_id: 1256
+-
   first_recorded_at: "2026-09-29T04:27:57.957172+00:00"
   object_id: "staircase_large_disturbance01"
   worker_id: 718
 -
+  first_recorded_at: "2026-10-02T04:54:59.89663+00:00"
+  object_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  worker_id: 1285
+-
   first_recorded_at: "2026-09-29T04:51:23.551753+00:00"
   object_id: "square_topcover_normal01"
   worker_id: 703
+-
+  first_recorded_at: "2026-10-02T13:20:17.405326+00:00"
+  object_id: "deletioncover_compatibility_and_global_obstruction_structure"
+  worker_id: 1286
 -
   first_recorded_at: "2026-09-29T04:51:51.638992+00:00"
   object_id: "square_large_antipodal01"
@@ -1659,6 +1679,10 @@
   object_id: "every_minimum_counterexample_contains_order_disagreement"
   worker_id: 703
 -
+  first_recorded_at: "2026-10-02T04:08:54.978005+00:00"
+  object_id: "defect_lines_and_spanningorder_compression"
+  worker_id: 1194
+-
   first_recorded_at: "2026-10-01T01:02:35.393173+00:00"
   object_id: "reversal_cube_topcover_menu01"
   worker_id: 745
@@ -1734,10 +1758,6 @@
   first_recorded_at: "2026-09-28T00:10:11.585337+00:00"
   object_id: "astra003ninefamily_recomp01"
   worker_id: 558
--
-  first_recorded_at: "2026-10-02T04:08:54.978005+00:00"
-  object_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
-  worker_id: 1194
 -
   first_recorded_at: "2026-09-28T00:43:34.267765+00:00"
   object_id: "astra003transfer35_recomp01"
@@ -3867,6 +3887,10 @@
   object_id: "cube_has_endpoint_support_order_or_almosttotal_internality"
   worker_id: 745
 -
+  first_recorded_at: "2026-09-28T02:54:05.61281+00:00"
+  object_id: "disturbance_consumption_is_the_remaining_global_bridge"
+  worker_id: 652
+-
   first_recorded_at: "2026-09-27T21:51:41.07353+00:00"
   object_id: "diagonal_pivotclause_overlap_forces_a_cfree_cross_triple"
   worker_id: 678
@@ -3898,10 +3922,6 @@
   first_recorded_at: "2026-09-27T21:25:17.806607+00:00"
   object_id: "twosided_endpoint_transfer_combines_into_a_wrap_relocation"
   worker_id: 596
--
-  first_recorded_at: "2026-09-28T02:54:05.61281+00:00"
-  object_id: "20260928_disturbance_consumption_is_the_remaining_global_bridge"
-  worker_id: 652
 -
   first_recorded_at: "2026-09-27T18:54:08.109599+00:00"
   object_id: "3c_minus_3_every_maximin_cover_contains_a_globally_longest_path"
@@ -4759,21 +4779,21 @@
   object_id: "equalsize_lowcut_swaps_yield_transport_or_a_fiveside_escape"
   worker_id: 1108
 -
-  first_recorded_at: "2026-10-02T02:14:16.443768+00:00"
-  object_id: "oddcycle_rank_monodromy_has_a_reversaldensity_parity_gap"
-  worker_id: 1195
--
   first_recorded_at: "2026-10-02T02:18:46.269373+00:00"
-  object_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
+  object_id: "defect_lines_and_spanningorder_compression"
   worker_id: 1232
 -
   first_recorded_at: "2026-10-02T04:57:17.791929+00:00"
-  object_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
+  object_id: "defect_lines_and_spanningorder_compression"
   worker_id: 1285
 -
   first_recorded_at: "2026-10-02T13:31:02.184162+00:00"
-  object_id: "proof_rehearsal_iii_defect_lines_and_spanningorder_compression"
+  object_id: "defect_lines_and_spanningorder_compression"
   worker_id: 1286
+-
+  first_recorded_at: "2026-10-02T02:14:16.443768+00:00"
+  object_id: "oddcycle_rank_monodromy_has_a_reversaldensity_parity_gap"
+  worker_id: 1195
 -
   first_recorded_at: "2026-10-02T01:20:54.557769+00:00"
   object_id: "a_common_incompatibility_reservoir_or_a_centered_order_defect"
@@ -5770,26 +5790,6 @@
   first_recorded_at: "2026-09-27T20:46:12.081942+00:00"
   object_id: "hooks_on_a_fivepath_force_a_hamiltonian_outer_fivewindow"
   worker_id: 697
--
-  first_recorded_at: "2026-10-02T04:08:15.109435+00:00"
-  object_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  worker_id: 1194
--
-  first_recorded_at: "2026-10-02T02:20:42.883375+00:00"
-  object_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  worker_id: 1230
--
-  first_recorded_at: "2026-10-02T03:53:51.690924+00:00"
-  object_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  worker_id: 1256
--
-  first_recorded_at: "2026-10-02T04:54:59.89663+00:00"
-  object_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  worker_id: 1285
--
-  first_recorded_at: "2026-10-02T13:20:17.405326+00:00"
-  object_id: "i_deletioncover_compatibility_and_global_obstruction_structure"
-  worker_id: 1286
 -
   first_recorded_at: "2026-09-27T00:01:16.392308+00:00"
   object_id: "improvement_drives_quadratic_descent_to_equitable_threecovers"

@@ -31,7 +31,7 @@ metadata:
   role: "pure-high odd-boundary label normal form"
   uses:
     - "entrance_forbids_the_immediately_preceding_firstcontact_cell"
-    - "rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2"
+    - "rankpair_obstruction_cannot_occupy_the_rightprivate_slot_b"
 object_type: "lemma"
 origin_worker_id: 185
 parent_id: "rankpair_obstruction_cannot_occupy_the_rightjoint_slot"

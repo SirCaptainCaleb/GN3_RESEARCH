@@ -2334,7 +2334,7 @@
                       
                       Together with 8d1adea102fe, every four-single rank-pair obstruction at p=2q-3 is confined to the five slots A,B,C,D,E.
 
-                  • [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot
+                  • [rankpair_obstruction_cannot_occupy_the_rightprivate_slot_b] At p=2q-3 a four-single rank-pair obstruction cannot occupy the right-private slot
                       STATEMENT
                       Let p=phi(v)=2q-3 with q>=4, and fix a maximum path
                          P=(g_1,...,g_p)
@@ -10055,7 +10055,7 @@
                       
                       Combining the bounds yields 3<=k<=q-2. Hence any contact of e in r_{q-1} or r_q cannot be the unique contact; e must then use both non-v vertices on Q_i.
 
-                  • [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_2] A competing high edge can meet a high entrance rail late only as a double blocker
+                  • [can_meet_a_high_entrance_rail_late_only_as_a_double_blocker_b] A competing high edge can meet a high entrance rail late only as a double blocker
                       STATEMENT
                       Let h_i={y_i,v,z_i} and h_j={y_j,v,z_j} be distinct ascending nonspecial edges of rank q+1 through the common terminal v, with phi(y_i)=phi(y_j)=q. Let Q_i=(r_1,...,r_q) be a canonical q-edge entrance path ending at y_i and avoiding v,z_i.
                       
@@ -15576,7 +15576,7 @@
               BODY / PROOF
               This is the minimum-degree-aware version of the local idea visible in the earlier degeneracy attack. The unrestricted analogue is false, but every known counterexample has minimum degree 1 and therefore lies outside the admissible regime of a smallest counterexample to the target 2ell/3 bound. The inequality is tailored to degeneracy: in any subgraph of the ascending terminal graph, choosing v with minimum φ among the remaining vertices makes every remaining neighbor u satisfy φ(u)>=φ(v), so the displayed bound would force degree at most three.
 
-            • [minimum_degree_forces_ascending_edges_to_have_large_2] Minimum degree forces ascending edges to have large φ
+            • [minimum_degree_forces_ascending_edges_to_have_large_b] Minimum degree forces ascending edges to have large φ
                 STATEMENT
                 Let H be a finite linear 3-graph with minimum degree δ. If e is an ascending nonspecial edge, then φ(e)>=ceil((δ+3)/2).
                 BODY / PROOF
@@ -15602,7 +15602,7 @@
                   
                   In fact the longest path in H_L has length L+6: take a three-edge booster prefix at a_0, traverse E_1,...,E_L, and append a three-edge booster suffix at a_L. Thus H_L is P_{L+7}^{(3)}-free, but its minimum degree remains 4. Consequently this family does not enter the admissible regime δ>2ell/3 when ell=L+7; it refutes only fixed-threshold minimum-degree statements and reinforces the need for minimum degree scaling with ell.
 
-            • [minimum_degree_forces_ascending_edges_to_have_large_3] Minimum degree forces ascending edges to have large φ
+            • [minimum_degree_forces_ascending_edges_to_have_large_c] Minimum degree forces ascending edges to have large φ
                 STATEMENT
                 Let H be a finite linear 3-graph with minimum degree δ. If e is an ascending nonspecial edge, then φ(e)>=ceil((δ+3)/2).
                 BODY / PROOF

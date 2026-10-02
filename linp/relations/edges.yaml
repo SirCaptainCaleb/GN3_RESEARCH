@@ -1097,14 +1097,14 @@
   to_id: "exact_transfer_solution_gives_a_ranksensitive_4348_bound"
 -
   created_at: "2026-09-23T04:32:00.620172+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large_2"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large_b"
   kind: "depends_on"
   metadata:
     rewired_by_replacement: true
   to_id: "endpointpotential_floor_and_a_stronger_ascendingedge_rank_floor"
 -
   created_at: "2026-09-23T04:32:00.620172+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large_3"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large_c"
   kind: "depends_on"
   metadata:
     rewired_by_replacement: true
@@ -4339,23 +4339,23 @@
     note: "Refutes Δ(T^up)<=3."
   to_id: "refuted_ascending_terminaldegree_conjecture"
 -
-  created_at: "2026-09-22T01:55:24.097023+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large"
+  created_at: "2026-09-21T23:08:03.287524+00:00"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large_b"
   kind: "fence"
   metadata:
-  to_id: "minimum_degree_forces_ascending_edges_to_have_large_2"
--
-  created_at: "2026-09-22T01:55:24.097023+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large"
-  kind: "fence"
-  metadata:
-  to_id: "minimum_degree_forces_ascending_edges_to_have_large_3"
+  to_id: "k33_copies_refute_the_ascendingincidence_rank_bound"
 -
   created_at: "2026-09-22T04:18:15.376338+00:00"
   from_id: "carry_exactly_the_exceptional_defects_in_the_saturated_fan"
   kind: "depends_on"
   metadata:
   to_id: "exact_saturatedfan_normal_form_at_the_boundary_q"
+-
+  created_at: "2026-09-22T01:55:24.097023+00:00"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large"
+  kind: "fence"
+  metadata:
+  to_id: "minimum_degree_forces_ascending_edges_to_have_large_b"
 -
   created_at: "2026-09-23T02:43:35.523637+00:00"
   from_id: "defect_accounting_and_oppositeterminal_splice_dichotomy"
@@ -4526,17 +4526,17 @@
     rewired_by_replacement: true
   to_id: "give_endpointpreserving_rotations_safe_below_the_boundary"
 -
-  created_at: "2026-09-21T23:08:03.287524+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large_2"
-  kind: "fence"
-  metadata:
-  to_id: "k33_copies_refute_the_ascendingincidence_rank_bound"
--
   created_at: "2026-09-25T22:56:22.685539+00:00"
   from_id: "central_form_outside_two_explicit_lowrank_boundary_cases"
   kind: "depends_on"
   metadata:
   to_id: "edges_on_a_linear_cycle_have_rank_at_least_the_cycle_length"
+-
+  created_at: "2026-09-22T01:55:24.097023+00:00"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large"
+  kind: "fence"
+  metadata:
+  to_id: "minimum_degree_forces_ascending_edges_to_have_large_c"
 -
   created_at: "2026-09-22T01:55:24.097023+00:00"
   from_id: "minimum_degree_forces_ascending_edges_to_have_large"
@@ -4587,13 +4587,7 @@
   to_id: "terminal_adjacency_forces_rank_rise_or_a_blocker"
 -
   created_at: "2026-09-21T23:08:03.287524+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large_2"
-  kind: "fence"
-  metadata:
-  to_id: "minimumdegree_local_ascendingneighbor_bound"
--
-  created_at: "2026-09-21T23:09:58.106407+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large_3"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large_b"
   kind: "fence"
   metadata:
   to_id: "minimumdegree_local_ascendingneighbor_bound"
@@ -4634,6 +4628,12 @@
   metadata:
   to_id: "refuted_maximumrank_nonspecial_edge_degree_conjecture"
 -
+  created_at: "2026-09-21T23:09:58.106407+00:00"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large_c"
+  kind: "fence"
+  metadata:
+  to_id: "minimumdegree_local_ascendingneighbor_bound"
+-
   created_at: "2026-09-23T04:17:49.571569+00:00"
   from_id: "blocker_system_with_terminalpair_control_on_clean_replacements"
   kind: "depends_on"
@@ -4666,6 +4666,12 @@
   metadata:
     rewired_by_replacement: true
   to_id: "sourcerail_contacts_force_the_balanced_onelow_terminal_lens"
+-
+  created_at: "2026-09-21T23:09:58.106407+00:00"
+  from_id: "minimum_degree_forces_ascending_edges_to_have_large_c"
+  kind: "fence"
+  metadata:
+  to_id: "k33_copies_refute_the_ascendingincidence_rank_bound"
 -
   created_at: "2026-09-23T02:50:57.059564+00:00"
   from_id: "structure_and_escape_in_the_boundary_fixedtarget_rotation_graph"
@@ -4727,12 +4733,6 @@
   kind: "depends_on"
   metadata:
   to_id: "contacts_on_a_maximum_path_lie_in_one_central_rank_window"
--
-  created_at: "2026-09-21T23:09:58.106407+00:00"
-  from_id: "minimum_degree_forces_ascending_edges_to_have_large_3"
-  kind: "fence"
-  metadata:
-  to_id: "k33_copies_refute_the_ascendingincidence_rank_bound"
 -
   created_at: "2026-09-22T12:43:48.533474+00:00"
   from_id: "rainbow_graphs_lie_in_a_factortwo_potential_band"
