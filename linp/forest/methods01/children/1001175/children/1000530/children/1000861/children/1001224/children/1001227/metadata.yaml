@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "b0d0489ea17554c60f3e45eed7104c803e73825bf579d2d470c0481ab8ac55b1"
+created_at: "2026-10-01T21:33:21.93605+00:00"
+id: "1001227"
+last_elevation_revision: null
+last_substantive_worker_id: 321
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "1001227"
+  audit_request_reason: "Independent audit of the leading-order elimination: check hypergraph junction/private-vertex rotations, the twelve-class one-sided rank ordering, fixed-path conventions, and at-most-two cross-terminal charging. New reduction is provisional and leaves terminal-side and U11 branches open."
+  audit_request_recorded_at: "2026-10-01T21:34:21.270474+00:00"
+  audit_trigger_kind: "chain_checkpoint"
+  leading_coefficient_scope: true
+  origin_worker_id: 303
+  publication_worker_id: 321
+  source: "Isolated research accumulated in this conversation; no computation or external literature"
+object_type: "research"
+origin_worker_id: 321
+parent_id: "1001224"
+position: 0
+research_interface:
+  consequence: "A whole leading-order branch is eliminated without payment transfer or minimum-terminal reassignment."
+  consumer:
+    - "Original certificate-centered 43/48 congestion reduction"
+  given:
+    - "Selected original-center strict-gap families"
+    - "Quadratic one-sided rank spread"
+    - "Rotation contact-drop budget"
+  next_need: "Control terminal-side return mass and the two-opposite-terminal-contact residual; either can still have linear mass."
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: "Entrance-side returns with at least one entrance contact contribute O(sqrt(n_+S)+n_+)=o(S); terminal-side returns and two opposite-terminal contacts remain."
+statement_sha256: "456b9d277bf484ac59dc2ba7ed09291a7d08193b9e7d9d585b0a3a524e4444f5"
+substantive_worker_ids:
+  - 321
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Entrance-side returns with an entrance terminal-path contact have sublinear total mass"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T21:34:21.270474+00:00"
+version: 8

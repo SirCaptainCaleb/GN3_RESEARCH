@@ -7,6 +7,14 @@
   object_id: "1001191"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:26:16.195911+00:00"
+  object_id: "1001207"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:33:07.080405+00:00"
+  object_id: "1001223"
+  worker_id: 321
+-
   first_recorded_at: "2026-10-01T20:01:19.672275+00:00"
   object_id: "1001176"
   worker_id: 296
@@ -15,12 +23,28 @@
   object_id: "1001192"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:28:51.01297+00:00"
+  object_id: "1001208"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:33:19.997966+00:00"
+  object_id: "1001224"
+  worker_id: 321
+-
   first_recorded_at: "2026-10-01T20:02:02.653536+00:00"
   object_id: "1001177"
   worker_id: 296
 -
   first_recorded_at: "2026-10-01T20:16:39.485466+00:00"
   object_id: "1001193"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:28:52.812587+00:00"
+  object_id: "1001209"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:33:20.335238+00:00"
+  object_id: "1001225"
   worker_id: 296
 -
   first_recorded_at: "2026-10-01T20:02:21.768201+00:00"
@@ -31,6 +55,14 @@
   object_id: "1001194"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:28:54.682243+00:00"
+  object_id: "1001210"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:33:21.126007+00:00"
+  object_id: "1001226"
+  worker_id: 321
+-
   first_recorded_at: "2026-10-01T20:02:38.810342+00:00"
   object_id: "1001179"
   worker_id: 296
@@ -38,6 +70,14 @@
   first_recorded_at: "2026-10-01T20:16:54.001997+00:00"
   object_id: "1001195"
   worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:31:02.739119+00:00"
+  object_id: "1001211"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:33:21.93605+00:00"
+  object_id: "1001227"
+  worker_id: 321
 -
   first_recorded_at: "2026-10-01T20:03:00.706105+00:00"
   object_id: "1001180"
@@ -47,6 +87,14 @@
   object_id: "1001196"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:31:05.064823+00:00"
+  object_id: "1001212"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:33:23.006397+00:00"
+  object_id: "1001228"
+  worker_id: 321
+-
   first_recorded_at: "2026-10-01T20:07:17.435851+00:00"
   object_id: "1001181"
   worker_id: 296
@@ -54,6 +102,14 @@
   first_recorded_at: "2026-10-01T20:16:59.936382+00:00"
   object_id: "1001197"
   worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:31:06.866767+00:00"
+  object_id: "1001213"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:34:19.881383+00:00"
+  object_id: "1001229"
+  worker_id: 321
 -
   first_recorded_at: "2026-09-24T13:32:31.59391+00:00"
   object_id: "research_nudges"
@@ -75,6 +131,14 @@
   object_id: "1001198"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:31:08.586149+00:00"
+  object_id: "1001214"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:35:30.656938+00:00"
+  object_id: "1001230"
+  worker_id: 294
+-
   first_recorded_at: "2026-10-01T20:10:28.374552+00:00"
   object_id: "1001183"
   worker_id: 296
@@ -82,6 +146,14 @@
   first_recorded_at: "2026-10-01T20:19:38.436102+00:00"
   object_id: "1001199"
   worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:35:17.052248+00:00"
+  object_id: "1001215"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:36:27.172736+00:00"
+  object_id: "1001231"
+  worker_id: 290
 -
   first_recorded_at: "2026-09-25T01:01:18.23053+00:00"
   object_id: "research_nudges"
@@ -102,6 +174,14 @@
   first_recorded_at: "2026-10-01T20:21:11.75459+00:00"
   object_id: "1001200"
   worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:50:33.709228+00:00"
+  object_id: "1001216"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:36:28.114369+00:00"
+  object_id: "1001232"
+  worker_id: 294
 -
   first_recorded_at: "2026-09-25T22:08:04.700524+00:00"
   object_id: "research_nudges"
@@ -375,6 +455,14 @@
   object_id: "1001201"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:50:57.221875+00:00"
+  object_id: "1001217"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:36:29.405472+00:00"
+  object_id: "1001233"
+  worker_id: 290
+-
   first_recorded_at: "2026-10-01T20:10:45.702842+00:00"
   object_id: "1001186"
   worker_id: 296
@@ -382,6 +470,14 @@
   first_recorded_at: "2026-10-01T20:24:15.441596+00:00"
   object_id: "1001202"
   worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:51:36.078403+00:00"
+  object_id: "1001218"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T21:36:31.373986+00:00"
+  object_id: "1001234"
+  worker_id: 290
 -
   first_recorded_at: "2026-10-01T20:12:34.282436+00:00"
   object_id: "1001187"
@@ -391,12 +487,32 @@
   object_id: "1001203"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:52:06.575905+00:00"
+  object_id: "1001219"
+  worker_id: 296
+-
   first_recorded_at: "2026-10-01T20:13:12.968122+00:00"
   object_id: "1001188"
   worker_id: 296
 -
+  first_recorded_at: "2026-10-01T20:25:52.007815+00:00"
+  object_id: "1001204"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:53:18.489101+00:00"
+  object_id: "1001220"
+  worker_id: 296
+-
   first_recorded_at: "2026-10-01T20:16:07.450085+00:00"
   object_id: "1001189"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:25:53.847975+00:00"
+  object_id: "1001205"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:53:44.699041+00:00"
+  object_id: "1001221"
   worker_id: 296
 -
   first_recorded_at: "2026-09-25T20:50:26.801401+00:00"
@@ -5329,4 +5445,12 @@
 -
   first_recorded_at: "2026-10-01T20:16:15.230485+00:00"
   object_id: "1001190"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:26:14.261327+00:00"
+  object_id: "1001206"
+  worker_id: 296
+-
+  first_recorded_at: "2026-10-01T20:54:02.376567+00:00"
+  object_id: "1001222"
   worker_id: 296

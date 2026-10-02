@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a7067e68a9743f6ed5eb9b9374f4b1fd5662134cbe6da51c7869df5015f8c98c"
+created_at: "2026-09-25T20:50:04.48137+00:00"
+id: "1000914"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "Because R avoids v, e meets R exactly at x,u; linearity forbids x,u from sharing another host edge. The minimal x-u segment plus e is therefore a linear cycle, and the nonspecial cycle-rank bound gives d<=r-1. Legacy 'endpoint-potential' wording is editorial only."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "Because R avoids v, e meets R exactly at x,u; linearity forbids x,u from sharing another host edge. The minimal x-u segment plus e is therefore a linear cycle, and the nonspecial cycle-rank bound gives d<=r-1. Legacy 'endpoint-potential' wording is editorial only."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1000530"
+position: 0
+research_interface:
+  consequence: "Every whole chord spans an anchor interval of edge-length at most its edge rank minus one."
+  consumer:
+    - "same-terminal certificate class S"
+    - "common-anchor interval packing"
+    - "whole-chord braid analysis"
+  given:
+    - "whole ascending nonspecial chord e={x,v,u} on a path avoiding v"
+    - "f2925a904b8e nonspecial cycle-rank bound"
+  next_need: "Combine interval-length bounds for pairwise disjoint chord endpoints with endpoint order and the mandatory source/terminal returns. Seek a crossing/nesting interval theorem that turns linear chord density into repeated cycle overlap or rank deficit."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A whole ascending chord spans at most rank minus one path edges."
+statement_sha256: "2a51ebc20316171b522c510b93b0008dee49ffb2982bb708e509bd9709b60798"
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A whole ascending chord spans at most rank minus one path edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 5

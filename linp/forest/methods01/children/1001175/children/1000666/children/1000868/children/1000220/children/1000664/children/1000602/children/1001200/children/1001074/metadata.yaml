@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "ae91c7112cc1f7f6418572adf2b2c3e07757ae73aa1dabfccf770b3898b0ed81"
+created_at: "2026-09-24T22:03:28.759832+00:00"
+id: "1001074"
+last_elevation_revision: null
+last_substantive_worker_id: 249
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 249
+parent_id: "1001200"
+position: 0
+research_interface:
+  consequence: "All short lens-free flat terminal cycles except possibly length four and eight are eliminated through length nine."
+  consumer:
+    - "flat-cycle elimination"
+    - "post-43/48 gap-one shell"
+  given:
+    - "distance-three terminal intersections 8777d2ccd614"
+    - "adjacent unique rail intersections 960a5153b900"
+    - "common-joint triangle lemma 8e3ab4a34ced"
+  next_need: "The first unresolved lens-free lengths are 4, 8, and then lengths at least 10. Length 8 has a forced four-cycle in the rail-intersection graph from index steps 1 and 3; derive a four-rail splice or ordering obstruction there."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lens-free flat terminal cycles have no lengths six, seven, or nine."
+statement_sha256: "c29ddf3d2d23883ea29d98e8811574121cc04a4c0fd0712269cd401030f2ec8a"
+substantive_worker_ids:
+  - 249
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Lens-free flat terminal cycles have no lengths six, seven, or nine"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 10

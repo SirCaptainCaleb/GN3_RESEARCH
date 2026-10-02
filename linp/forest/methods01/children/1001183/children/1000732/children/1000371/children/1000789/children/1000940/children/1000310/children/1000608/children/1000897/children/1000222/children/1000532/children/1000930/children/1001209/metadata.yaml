@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: true
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "3ef251c880be5b4f1c5d88c9a0e2a90b7b40c790252f24e8644f8aeb91911bd2"
+created_at: "2026-10-01T20:28:52.812587+00:00"
+id: "1001209"
+last_elevation_revision: 5770
+last_substantive_worker_id: 296
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  hygiene_wrapper: true
+  organizational: true
+  toolkit_reference: "1000483"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "1000930"
+position: 0
+research_interface:
+  working_route: "continue nested-collision analysis via toolkit lemma 1000483"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Continue the primitive-collision route via toolkit lemma 1000483."
+statement_sha256: "1ca15070adf822325153741f48a6de99081ed85b9fa3e08ab0ac8734e6bf67fc"
+substantive_worker_ids:
+  - 296
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Primitive-collision continuation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 2

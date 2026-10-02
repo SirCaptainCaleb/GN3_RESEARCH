@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "5fd99d71f6fae54e6abcf10a1e1b5faffca6107fbaf4a3fe096907231527803a"
+created_at: "2026-09-25T20:44:43.420517+00:00"
+id: "1000483"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "Inclusion-minimality makes the interior terminal subpath strong-rainbow, hence it lifts linearly; adding the colliding edge closes exactly a c-edge cycle. The nonspecial cycle-rank bound gives rank at least c on every cycle edge, while the hit-terminal rank drop yields r_i>=c+1."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "Inclusion-minimality makes the interior terminal subpath strong-rainbow, hence it lifts linearly; adding the colliding edge closes exactly a c-edge cycle. The nonspecial cycle-rank bound gives rank at least c on every cycle edge, while the hit-terminal rank drop yields r_i>=c+1."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1001176"
+position: 30
+research_interface:
+  consequence: "Primitive collision intervals are genuine nonspecial cycles. A primitive span c costs at least c+1 in the colliding edge rank because the first cycle edge has rank at least c but is forced at least one rank below the colliding edge."
+  consumer:
+    - "nested collision recursion"
+    - "fixed-cut collision packing"
+    - "terminal-shadow rank budget"
+  given:
+    - "c9a012c1b82e backward-collision direction"
+    - "8924e63f61db strong-rainbow lifting"
+    - "f2925a904b8e nonspecial cycle-rank bound"
+  next_need: "Use inclusion-minimal intervals as primitive collision cores. Through one fixed cut they are pairwise crossing; every other collision contains at least one primitive core. Split into many primitive cores versus many outer collisions containing one core."
+research_level: "lemma"
+semantic_container_text: "Minimal backward-collision cycle program: identify inclusion-minimal collisions with one unit of rank slack and iterate nested-collision shortcuts toward many edge-disjoint linear cycles."
+simplified_statement: "Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack."
+statement_sha256: "1ed9c0e775fe72fe0493757752c2efdb55a92cc976934ddb6dc60e2cbcb81683"
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:29:09.236+00:00"
+version: 11

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "cca8d3a8ae40903b710f488b6b3db69929564d5a5d4443e8b26ab448aaf26585"
+created_at: "2026-09-25T21:15:37.031554+00:00"
+id: "1000376"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "In the unique-intersection residual, R_e[s,x], e, and R_f[u,s] form a clean linear cycle: R_e avoids u,v, R_f contains u but excludes x and v, and the two source paths meet only at s. Its length is r-t+d_f(s,u); the nonspecial cycle-rank bound for e gives d_f(s,u)<=t."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "In the unique-intersection residual, R_e[s,x], e, and R_f[u,s] form a clean linear cycle: R_e avoids u,v, R_f contains u but excludes x and v, and the two source paths meet only at s. Its length is r-t+d_f(s,u); the nonspecial cycle-rank bound for e gives d_f(s,u)<=t."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1001112"
+position: 0
+research_interface:
+  consequence: "In the hard unique-intersection residual, each reciprocal terminal lies within the aligned gate index of that gate on the corresponding neighboring maximum source path."
+  consumer:
+    - "same-terminal selected strict-gap class S"
+    - "fundamental-cycle gate-position analysis"
+    - "post-43/48 local congestion"
+  given:
+    - "d0a41dede20a unique late fundamental-cycle gate residual"
+    - "f4f2089110b2 reciprocal-terminal labeling"
+    - "f2925a904b8e nonspecial cycle-rank bound"
+  next_need: "If the neighboring source path meets the selected common precursor uniquely at u, align the u-index on both paths and combine it with this distance inequality and the late lower bound t>=ceil((r-1)/2). Seek an ordered-rank or endpoint-zone capacity bound."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A reciprocal fundamental-cycle terminal lies within the aligned-gate distance budget."
+statement_sha256: "2b4ff4042557cc8608836f21acb9d204487f2d097b91fdaa6a1a421356981b64"
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A reciprocal fundamental-cycle terminal lies within the aligned-gate distance budget"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 7

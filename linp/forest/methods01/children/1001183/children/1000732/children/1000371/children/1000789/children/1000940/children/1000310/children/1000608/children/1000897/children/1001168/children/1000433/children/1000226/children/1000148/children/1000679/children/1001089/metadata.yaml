@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "9c8a69cafb28a1fceb9bef6c271fd7e122aac42439787d31947022d7eb6a3810"
+created_at: "2026-09-25T21:40:07.19072+00:00"
+id: "1001089"
+last_elevation_revision: null
+last_substantive_worker_id: 227
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9190b496-b5f8-4582-b051-6559035e225f"
+    detail: "For m>=3 the repaired tight-even premise supplies two genuine contacts among L,B,R. The opposite-terminal window excludes terminal type for B,R; the {L,R} and {L,B} pairs each create an (m+1)-edge endpoint path contradicting the entrance rank, leaving exactly {B,R}, both entrances. The private-contact rotation is legal and yields the stated near-owner-rank last edge and last vertices."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:47:24.828826+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "9190b496-b5f8-4582-b051-6559035e225f"
+    detail: "For m>=3 the repaired tight-even premise supplies two genuine contacts among L,B,R. The opposite-terminal window excludes terminal type for B,R; the {L,R} and {L,B} pairs each create an (m+1)-edge endpoint path contradicting the entrance rank, leaving exactly {B,R}, both entrances. The private-contact rotation is legal and yields the stated near-owner-rank last edge and last vertices."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:47:24.828826+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1000679"
+position: 0
+research_interface:
+  consequence: "Outside the separated rank-4 exception, an even tight collision has exactly the B/R entrance pair and emits a full-length rotation packet."
+  consumer:
+    - "tight collision rotation output"
+    - "strong-rainbow extraction"
+    - "post-43/48 U_11 path route"
+  fence: "Does not apply to the low-rank even case r_i=4 isolated in 9b023ed3d700."
+  given:
+    - "9b023ed3d700 even central tight case with m>=3"
+    - "49080cbf1371 opposite-terminal contact bound"
+    - "a51a7f9cff95 two-contact rotation"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The even half-rank central collision has one surviving two-entrance pattern and a full-length rotation."
+statement_sha256: "5e0975a844c80722c8f23a9c4b407e78972ec069d73db9cd5b88f531a5a710e2"
+substantive_worker_ids:
+  - 220
+  - 227
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The even half-rank central collision has one surviving two-entrance pattern and a full-length rotation"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 11

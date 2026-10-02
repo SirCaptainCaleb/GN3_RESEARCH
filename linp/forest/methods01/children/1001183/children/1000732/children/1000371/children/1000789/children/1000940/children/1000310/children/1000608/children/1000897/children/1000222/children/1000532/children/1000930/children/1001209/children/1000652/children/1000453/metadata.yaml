@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "e2bcafabf844ba2172178007fdc8f05d2f9799dc14a8cd2aeb07d5cfd0d08351"
+created_at: "2026-09-25T20:47:54.847892+00:00"
+id: "1000453"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "The proof relies on 94579ab0aabc to say every failed adjacent nested shortcut produces a collision wholly in a left/right flank or a collision strictly between the two nesting levels. That classification is incomplete: a collision can start at the unused bridge terminal index i_{a+1}-1 and extend into the right block. Saturation does not exclude this case, and it need not lie inside either claimed flank. Hence the flank-cycle conclusion and the asserted edge-disjoint primitive-cycle selection are not established."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "The proof relies on 94579ab0aabc to say every failed adjacent nested shortcut produces a collision wholly in a left/right flank or a collision strictly between the two nesting levels. That classification is incomplete: a collision can start at the unused bridge terminal index i_{a+1}-1 and extend into the right block. Saturation does not exclude this case, and it need not lie inside either claimed flank. Hence the flank-cycle conclusion and the asserted edge-disjoint primitive-cycle selection are not established."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_failure:
+    reason: "The proof relies on 94579ab0aabc to say every failed adjacent nested shortcut produces a collision wholly in a left/right flank or a collision strictly between the two nesting levels. That classification is incomplete: a collision can start at the unused bridge terminal index i_{a+1}-1 and extend into the right block. Saturation does not exclude this case, and it need not lie inside either claimed flank. Hence the flank-cycle conclusion and the asserted edge-disjoint primitive-cycle selection are not established."
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1000652"
+position: 0
+research_interface:
+  consequence: "A long nested collision chain cannot remain amorphous: each nesting level either closes by a shortcut cycle or pays for a separate primitive cycle in a disjoint flank."
+  consumer:
+    - "nested collision depth control"
+    - "terminal-shadow congestion route"
+    - "cycle packing alternative"
+  given:
+    - "94579ab0aabc nested-shortcut trichotomy"
+    - "6aba8c1331b7 primitive collision cycles"
+    - "a saturated containment chain of collision intervals"
+  next_need: "Exploit either branch quantitatively. Many F-levels give edge-disjoint primitive cycles; many S-levels give shortcut-cycle inequalities L_a<=r_{i_a}-1. Couple the former to paid/source-rail structure or the latter to narrow-rank concentration."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "d2f1151dc9e86fe3254aa98ee97a072b8f8be84e0fcb1f6b0a45733e061244ad"
+substantive_worker_ids:
+  - 220
+support_reason: "The proof relies on 94579ab0aabc to say every failed adjacent nested shortcut produces a collision wholly in a left/right flank or a collision strictly between the two nesting levels. That classification is incomplete: a collision can start at the unused bridge terminal index i_{a+1}-1 and extend into the right block. Saturation does not exclude this case, and it need not lie inside either claimed flank. Hence the flank-cycle conclusion and the asserted edge-disjoint primitive-cycle selection are not established."
+support_status: "blocked"
+title: "A saturated nested collision chain yields shortcut cycles or edge-disjoint primitive flank cycles"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 5

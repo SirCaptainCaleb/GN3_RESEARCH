@@ -137,6 +137,39 @@
   verification_method: "independent_reconstruction"
   verifier_worker_id: 207
 -
+  checked_at: "2026-09-25T02:00:59.342528+00:00"
+  math_version: 3
+  note: null
+  object_id: "1000945"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000438"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000894"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000438"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "1000894"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 207
+-
   checked_at: "2026-09-26T00:47:24.828826+00:00"
   math_version: 2
   note: "The repaired statement no longer infers host-coordinate injectivity from distinct vertices. Pairwise source-rail intersection plus the assumed 20606dbd4cd9 crossing-exchange hypotheses make all phi(x_i)-kappa_R(x_i) equal unless some rail pair intersects twice. Under the explicitly added pairwise-distinct kappa_R coordinates and a D-width rank interval, the endpoint ranks are distinct among only D+1 integer values, giving m<=D+1."
@@ -13606,39 +13639,6 @@
   premise_signature:
   verification_method: "independent_check"
   verifier_worker_id: 256
--
-  checked_at: "2026-09-25T02:00:59.342528+00:00"
-  math_version: 3
-  note: null
-  object_id: "1000945"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000438"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000789"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "1000438"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-    -
-      id: "1000789"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-  verification_method: "independent_check"
-  verifier_worker_id: 207
 -
   checked_at: "2026-09-22T05:48:46.15307+00:00"
   math_version: 2

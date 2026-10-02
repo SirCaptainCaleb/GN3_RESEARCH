@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "094f2cfdb9f8a163ad8391548126e8b335da403da2cd1f78885ebebe23e3106b"
+created_at: "2026-09-25T21:42:57.757911+00:00"
+id: "1001009"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "18218d76-ddd4-4e1a-8455-df58186a723e"
+    detail: "Given the rotation packet phi(h),phi(y),phi(z)>=p, the four alternatives are exhaustive and disjoint. In the nonspecial nonascending rank-p case the unique entrance has rank >=p; in the ascending case it has rank p-1, so y,z are the two high-rank terminals. The parity boundary description agrees with the explicit rotated last-edge geometry."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:42:34.306598+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "a25dca39-c717-46f7-9f07-88d08e4879e5"
+    detail: "Reconfirmed against premise 259bdff45872 math_version 2. The four alternatives exhaust phi(h)>p versus phi(h)=p with special/nonspecial and ascending/nonascending; in the nonspecial cases deleting the last edge from a longest h-path gives the unique entrance rank at least p-1, so nonascending forces rank at least p, while ascending forces rank exactly p-1. The two rotation endpoints already have vertex rank at least p, giving the stated vertex-rank conclusions. No terminology conflict found."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T04:04:30.060789+00:00"
+    worker_id: "8e1471fd-1ed8-49c0-8ce8-93efb11680d1"
+  last_premise_impact_check:
+    checked_at: "2026-09-26T04:04:30.060789+00:00"
+    note: "Reconfirmed against premise 259bdff45872 math_version 2. The four alternatives exhaust phi(h)>p versus phi(h)=p with special/nonspecial and ascending/nonascending; in the nonspecial cases deleting the last edge from a longest h-path gives the unique entrance rank at least p-1, so nonascending forces rank at least p, while ascending forces rank exactly p-1. The two rotation endpoints already have vertex rank at least p, giving the stated vertex-rank conclusions. No terminology conflict found."
+    source_ids:
+      - "1000173"
+    worker_id: "8e1471fd-1ed8-49c0-8ce8-93efb11680d1"
+object_type: "corollary"
+origin_worker_id: 220
+parent_id: "1000173"
+position: 0
+research_interface:
+  consequence: "The tight-collision rotation packet reproduces a clean progress-versus-flat split from current-supported local facts alone, without any lens premise."
+  consumer:
+    - "rotation-output reuse"
+    - "rank-flow iteration"
+    - "post-43/48 collision control"
+  given:
+    - "259bdff45872 tight-collision rotation packet"
+    - "canonical special/nonspecial and ascending-edge definitions"
+  next_need: "Globalize the four output classes. Rank-rise outputs move upward in edge rank; special and nonascending rank-p outputs have all three vertices at vertex rank at least p; the only non-progress state is an ascending rank-p edge with its unique entrance at the third output vertex of rank p-1. Analyze reuse/iteration of that exact flat ascending state."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Tight-collision rotation outputs split into rank rise, rank-p special/nonascending, or one exact ascending entrance."
+statement_sha256: "9cbadd96d8303deac6e5eff6bf9f9657acc8fd71a08dc7b4e5ba2e4888f71452"
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Tight-collision rotation outputs split into rank rise, rank-p special/nonascending, or one exact ascending entrance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 9

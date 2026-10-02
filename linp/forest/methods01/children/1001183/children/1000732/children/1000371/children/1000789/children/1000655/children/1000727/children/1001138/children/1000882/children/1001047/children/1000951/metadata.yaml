@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "50f3af4c9cf49e7a8bdce44374963f4f28cbbcd90030825003af9771c03818c2"
+created_at: "2026-09-24T21:00:14.459263+00:00"
+id: "1000951"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e9765ee8-6698-4acb-ae78-a64bf02a25ae"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:47.161968+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "e9765ee8-6698-4acb-ae78-a64bf02a25ae"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:47.161968+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 242
+parent_id: "1001047"
+position: 0
+research_interface:
+  consequence: "Avoiding a fixed quadratic switcher-source gain forces not merely |U_v|=Omega(p), but Omega(p) terminal-retained contacts on each side of the host midpoint; the explicit half-packet constant is 5(5-3sqrt2)/112."
+  consumer:
+    - "post-43/48 terminal-retained branch"
+    - "reciprocal U-lens congestion"
+    - "source-mass stability"
+  given:
+    - "a5066873364f generic switcher source-mass floor"
+    - "7e047fd40dd7 clean-retained source-mass bound"
+    - "e7b1762fb5c8 terminal-retained left-right imbalance penalty"
+    - "b032348c1a8a low-defect switching density"
+  next_need: "Apply 6f2198c7d34a to the linear packet on the early host half. For each early U-state, either the reciprocal maximum terminal path recaptures the omitted entrance (source-terminal lens) or it recaptures v. In the latter case, unless there is an additional common vertex inside the long u-v host tail, the two terminal paths form a >half-host balanced lens. Bound congestion of these two certificate types."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Near-minimal switcher source mass forces linear terminal retention on both host halves."
+statement_sha256: "16a1c9158330f1b7baa214d59d082c444c0f1074d063396a5c68d2a2b026979a"
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Near-minimal switcher source mass forces linear terminal retention on both host halves"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 7

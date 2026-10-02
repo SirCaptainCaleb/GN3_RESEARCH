@@ -1,0 +1,57 @@
+atlas_height: "2"
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "65d8957f4715b66b131beff7850a9ff31969b6757bfd6b28ef7af12f010a0a57"
+created_at: "2026-09-25T20:20:37.83406+00:00"
+id: "1000729"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7e1acbb6-d423-45c8-b7b5-8c3c2f187cef"
+    detail: "Assigning each strict-gap certified edge once to a minimum-rank terminal converts any o(p) local congestion bound into |E_j|<=sum_w g(phi(w))=o(S_j), using S_j/n_j^+->infinity. This contradicts the linear-size extraction, without transferring the certificate between terminals."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:49:26.739585+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "7e1acbb6-d423-45c8-b7b5-8c3c2f187cef"
+    detail: "Assigning each strict-gap certified edge once to a minimum-rank terminal converts any o(p) local congestion bound into |E_j|<=sum_w g(phi(w))=o(S_j), using S_j/n_j^+->infinity. This contradicts the linear-size extraction, without transferring the certificate between terminals."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:49:26.739585+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1001018"
+position: 0
+research_interface:
+  consequence: "The theorem-closing local problem is correctly stated with the selected certificate allowed at either terminal; payment transfer under minimum-terminal assignment is unnecessary."
+  consumer:
+    - "post-43/48 coefficient improvement"
+    - "same-terminal versus uphill-certificate split"
+  given:
+    - "e2dcd798f528 lens-free strict-gap paid family with certificate terminal retained"
+  next_need: "Split assigned edges according to whether a selected certificate lies at the assigned minimum-rank terminal. Same-terminal certificates admit the common-host selected-cell analysis; the residual consists of certificates lying strictly at the higher-rank terminal."
+research_level: "lemma"
+semantic_container_text: "Certified theorem-closing reduction beyond 43/48. Near-extremality supplies linearly many selected strict-gap certified edges; after assigning each edge to a minimum-rank terminal, any o(p) local assigned-degree bound rules out 43/48 saturation. The remaining local problem splits naturally into same-terminal certificates and uphill certificates at the higher-rank terminal."
+simplified_statement: "Certificate-at-either-terminal sublinear congestion closes 43/48."
+statement_sha256: "5cf187dd4fb841fe7824bb5b1571004aab26b927a27017ea7234bf261c30df74"
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Certificate-at-either-terminal sublinear congestion closes 43/48"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 9

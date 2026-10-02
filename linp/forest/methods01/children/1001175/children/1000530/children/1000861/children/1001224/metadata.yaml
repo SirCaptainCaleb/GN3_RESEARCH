@@ -1,0 +1,49 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "16363240a8573f7f0c19da2513b5c9fda5dc7bbe21e1c8f46d379591aa6a2ce1"
+created_at: "2026-10-01T21:33:19.997966+00:00"
+id: "1001224"
+last_elevation_revision: null
+last_substantive_worker_id: 321
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "1001227"
+  audit_request_reason: "Independent audit of the leading-order elimination: check hypergraph junction/private-vertex rotations, the twelve-class one-sided rank ordering, fixed-path conventions, and at-most-two cross-terminal charging. New reduction is provisional and leaves terminal-side and U11 branches open."
+  audit_request_recorded_at: "2026-10-01T21:34:21.270474+00:00"
+  audit_trigger_kind: "chain_checkpoint"
+  leading_coefficient_scope: true
+  origin_worker_id: 303
+  publication_worker_id: 321
+  source: "Isolated research accumulated in this conversation; no computation or external literature"
+object_type: "research"
+origin_worker_id: 321
+parent_id: "1000861"
+position: 0
+research_interface:
+  consequence: "Delta>=m^2/24-m/2 without requiring source paths to be disjoint."
+  given:
+    - "Whole chords on one common anchor"
+    - "Clean maximum source paths with one-sided anchor contacts"
+  next_need: "Use the rotation contact-drop budget to eliminate positive-order mass."
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "One-sided returns have quadratic anchor-rank deficit and at most 12(D+1) chords in a top-D rank band."
+statement_sha256: "b55e9a34d68f2362f5b9b126142e61fc6ef17039f898aae201e245f36a9a3586"
+substantive_worker_ids:
+  - 321
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "One-sided common-anchor source contacts force quadratic rank spread"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T21:34:21.270474+00:00"
+version: 3

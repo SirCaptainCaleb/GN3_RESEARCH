@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d4c869173b3d0132ea2c3c99294cf693d6347d41ab5396068d503c0267a9ad28"
+created_at: "2026-09-24T20:48:41.235084+00:00"
+id: "1000664"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 242
+parent_id: "1000220"
+position: 0
+research_interface:
+  consequence: "After all balanced entrance-rail lenses are excluded, a flat terminal cycle becomes a rigid cycle of equal-length maximum rails joined one-at-a-time at anonymous aligned levels."
+  consumer:
+    - "flat-cycle elimination"
+    - "aligned-joint rail-cycle uncrossing"
+    - "post-43/48 gap-one shell"
+  given:
+    - "315871ed0c8b exact adjacent terminal blockers"
+    - "0c885137ea8c pairwise intersection of common-terminal source rails"
+    - "5854d853a44b unique-intersection alignment"
+    - "lens-free residual"
+  next_need: "Analyze the cyclic sequence of aligned levels k_i. On R_i the two neighboring rail joints occur at levels k_{i-1},k_i while the prescribed terminal-only blockers t_{i-1},t_{i+2} also lie on R_i. A local extremum of k_i should yield either a three-rail splice longer than p-2 or force the outer rails R_{i-1},R_{i+1} to intersect, creating a triangle of aligned rail joints and an alternate maximum-path state."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lens-free flat cycles induce a cycle of unique aligned entrance-rail joints."
+statement_sha256: "522fb2ebe04f377e4d5168ab8d7125be875bca17e932c76f494600f809d533fd"
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Lens-free flat cycles induce a cycle of unique aligned entrance-rail joints"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 9

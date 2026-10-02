@@ -60,5 +60,5 @@ support_status: "supported"
 title: "The top-boundary q,(q+1)^3 obstruction has a fixed four-slot witness normal form"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-30T21:37:06.600883+00:00"
-version: 7
+updated_at: "2026-10-01T20:54:33.840621+00:00"
+version: 8

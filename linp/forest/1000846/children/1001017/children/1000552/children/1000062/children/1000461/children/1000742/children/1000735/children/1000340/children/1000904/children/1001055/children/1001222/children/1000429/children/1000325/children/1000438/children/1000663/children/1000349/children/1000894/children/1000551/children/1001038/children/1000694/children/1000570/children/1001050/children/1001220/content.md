@@ -1,0 +1,9 @@
+# Terminal-single reciprocity forces repeated intersections below the rank-sum threshold
+
+## Statement
+
+Let e_i={x_i,v,u_i}, i=1,...,k, be distinct ascending nonspecial edges through a common terminal v. For each i choose a maximum path P_i ending at u_i on which e_i is terminal-single. If for every ordered pair i!=j one has phi(e_i)+phi(e_j)<=phi(u_i)+3, then P_i contains a non-v vertex of e_j. Partition owners according to whether the unique off-u_i contact of e_i on P_i is x_i or v. Every pair in the first class has at least two common vertices; in the second class the graph of pairs intersecting only at v is triangle-free. Hence at least binom(m,2)+binom(n,2)-floor(n^2/4) owner pairs have at least two common vertices, and for k>=4 some pair necessarily has a repeated intersection.
+
+## Body
+
+For a mixed singleton pair on one maximum host path, disjoint contact intervals force rank sum at least host rank plus four, while overlapping intervals form a host triangle. More importantly, fix one owner e_i and its opposite-terminal maximum path P_i. Terminal-singleness leaves exactly one of x_i,v in the precursor. If a foreign edge e_j avoids P_i away from v, the appropriate prefix or reversed-suffix wrong-entrance splice forces phi(e_i)+phi(e_j)>=phi(u_i)+4, regardless of whether the retained owner contact is x_i or v. Thus the displayed rank-sum inequalities give complete reciprocal transversality. If two owners both retain their entrances, the two foreign contacts give two distinct common vertices. For owners retaining v, a pair with intersection only {v} forces each path to contain the other owner entrance; three such single-intersection pairs would make two paths share a third entrance as well as v, contradiction. The single-intersection graph is therefore triangle-free, and Mantel gives the quantitative repeated-intersection bound.

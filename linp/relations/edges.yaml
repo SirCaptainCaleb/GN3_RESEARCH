@@ -6,12 +6,109 @@
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000016"
 -
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000324"
+      - "1000714"
+    reason: "Audit trust repair: proof explicitly uses the clean-joint entrance hole lemma."
+  to_id: "1001054"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1000217"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001216"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001207"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001216"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000557"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001167"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000714"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000324"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000370"
+-
   created_at: "2026-10-01T20:02:32.437476+00:00"
   from_id: "1001178"
   kind: "references"
   metadata:
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000058"
+-
+  created_at: "2026-10-01T20:51:09.026259+00:00"
+  from_id: "1001217"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000070"
+-
+  created_at: "2026-10-01T20:51:09.026259+00:00"
+  from_id: "1001217"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000697"
+-
+  created_at: "2026-10-01T20:51:09.026259+00:00"
+  from_id: "1001217"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001151"
+-
+  created_at: "2026-10-01T20:51:09.026259+00:00"
+  from_id: "1001217"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000100"
 -
   created_at: "2026-10-01T20:02:50.727545+00:00"
   from_id: "1001179"
@@ -20,6 +117,77 @@
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000106"
 -
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000734"
+    math_version: 1
+  to_id: "1000128"
+-
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000292"
+  to_id: "1000261"
+-
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000877"
+      - "1001098"
+  to_id: "1001022"
+-
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000734"
+    math_version: 1
+  to_id: "1001055"
+-
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000734"
+-
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000877"
+-
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001098"
+-
+  created_at: "2026-10-01T20:51:44.90774+00:00"
+  from_id: "1001218"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000292"
+-
   created_at: "2026-10-01T20:02:52.331015+00:00"
   from_id: "1001108"
   kind: "depends_on"
@@ -27,12 +195,95 @@
     reason: "1001108 explicitly invokes the four-path obstruction in its proof"
   to_id: "1000106"
 -
+  created_at: "2026-10-01T20:52:36.213714+00:00"
+  from_id: "1001219"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000991"
+-
+  created_at: "2026-10-01T20:52:36.213714+00:00"
+  from_id: "1001219"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000257"
+-
+  created_at: "2026-10-01T20:52:36.213714+00:00"
+  from_id: "1001219"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000758"
+-
+  created_at: "2026-10-01T20:52:36.213714+00:00"
+  from_id: "1001219"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000615"
+-
   created_at: "2026-10-01T20:03:09.813099+00:00"
   from_id: "1001180"
   kind: "references"
   metadata:
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000126"
+-
+  created_at: "2026-10-01T20:53:26.672474+00:00"
+  from_id: "1001220"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000783"
+      - "1000898"
+  to_id: "1000342"
+-
+  created_at: "2026-10-01T20:53:26.672474+00:00"
+  from_id: "1001220"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000538"
+  to_id: "1001050"
+-
+  created_at: "2026-10-01T20:53:26.672474+00:00"
+  from_id: "1001220"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000538"
+-
+  created_at: "2026-10-01T20:53:26.672474+00:00"
+  from_id: "1001220"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000783"
+-
+  created_at: "2026-10-01T20:53:26.672474+00:00"
+  from_id: "1001220"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000898"
+-
+  created_at: "2026-10-01T20:53:26.672474+00:00"
+  from_id: "1001220"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000645"
 -
   created_at: "2026-10-01T20:07:22.602564+00:00"
   from_id: "1000048"
@@ -79,6 +330,30 @@
     structural_retirement: true
   to_id: "1000011"
 -
+  created_at: "2026-10-01T20:53:59.726183+00:00"
+  from_id: "1001221"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000118"
+-
+  created_at: "2026-10-01T20:53:59.726183+00:00"
+  from_id: "1001221"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000656"
+-
+  created_at: "2026-10-01T20:53:59.726183+00:00"
+  from_id: "1001221"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001157"
+-
   created_at: "2026-10-01T20:07:42.762091+00:00"
   from_id: "1001182"
   kind: "supersedes"
@@ -103,12 +378,109 @@
     structural_retirement: true
   to_id: "1000089"
 -
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1001222"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000168"
+  to_id: "1000356"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1001222"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1001162"
+  to_id: "1001055"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1000103"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001222"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1000303"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001222"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1000325"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001222"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1000371"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001222"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1000574"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001222"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1000789"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001222"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1001101"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001222"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1001222"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000902"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1001222"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000168"
+-
+  created_at: "2026-10-01T20:54:08.708629+00:00"
+  from_id: "1001222"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001162"
+-
   created_at: "2026-10-01T20:11:35.900375+00:00"
   from_id: "1001184"
   kind: "references"
   metadata:
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000146"
+-
+  created_at: "2026-10-01T21:33:21.126007+00:00"
+  from_id: "1001226"
+  kind: "depends_on"
+  metadata:
+  to_id: "1001097"
 -
   created_at: "2026-10-01T20:11:37.600744+00:00"
   from_id: "1001185"
@@ -117,12 +489,48 @@
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000187"
 -
+  created_at: "2026-10-01T21:33:21.93605+00:00"
+  from_id: "1001227"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000565"
+-
+  created_at: "2026-10-01T21:33:21.93605+00:00"
+  from_id: "1001227"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000861"
+-
+  created_at: "2026-10-01T21:33:21.93605+00:00"
+  from_id: "1001227"
+  kind: "depends_on"
+  metadata:
+  to_id: "1001018"
+-
+  created_at: "2026-10-01T21:33:21.93605+00:00"
+  from_id: "1001227"
+  kind: "depends_on"
+  metadata:
+  to_id: "1001223"
+-
+  created_at: "2026-10-01T21:33:21.93605+00:00"
+  from_id: "1001227"
+  kind: "depends_on"
+  metadata:
+  to_id: "1001224"
+-
   created_at: "2026-10-01T20:11:40.870551+00:00"
   from_id: "1001186"
   kind: "references"
   metadata:
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000221"
+-
+  created_at: "2026-10-01T21:33:23.006397+00:00"
+  from_id: "1001228"
+  kind: "depends_on"
+  metadata:
+  to_id: "1001223"
 -
   created_at: "2026-10-01T20:12:42.373917+00:00"
   from_id: "1001187"
@@ -155,6 +563,13 @@
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
   to_id: "1000181"
+-
+  created_at: "2026-10-01T21:35:00.521115+00:00"
+  from_id: "1001227"
+  kind: "informs"
+  metadata:
+    note: "Eliminates one leading-order subfamily in the original certificate-centered congestion target; terminal-side returns and U11 remain."
+  to_id: "1000160"
 -
   created_at: "2026-10-01T20:13:20.208177+00:00"
   from_id: "1001188"
@@ -207,12 +622,30 @@
     structural_retirement: true
   to_id: "1000219"
 -
+  created_at: "2026-10-01T21:35:30.656938+00:00"
+  from_id: "1001230"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000904"
+-
   created_at: "2026-10-01T20:18:04.476548+00:00"
   from_id: "1000135"
   kind: "references"
   metadata:
     reason: "route reference to rehomed projective construction fence"
   to_id: "1000241"
+-
+  created_at: "2026-10-01T21:36:28.114369+00:00"
+  from_id: "1001232"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000259"
+-
+  created_at: "2026-10-01T21:36:28.114369+00:00"
+  from_id: "1001232"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000285"
 -
   created_at: "2026-10-01T20:18:07.397194+00:00"
   from_id: "1001190"
@@ -318,6 +751,437 @@
   metadata:
     reason: "proof-frame bridge to rehomed reusable lemma"
   to_id: "1000394"
+-
+  created_at: "2026-10-01T20:26:23.771658+00:00"
+  from_id: "1001204"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000610"
+-
+  created_at: "2026-10-01T20:26:23.771658+00:00"
+  from_id: "1001204"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000300"
+-
+  created_at: "2026-10-01T20:26:23.771658+00:00"
+  from_id: "1001204"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000384"
+-
+  created_at: "2026-10-01T20:26:25.579684+00:00"
+  from_id: "1001205"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001016"
+-
+  created_at: "2026-10-01T20:26:25.579684+00:00"
+  from_id: "1001205"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000614"
+-
+  created_at: "2026-10-01T20:26:25.579684+00:00"
+  from_id: "1001205"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000388"
+-
+  created_at: "2026-10-01T20:26:27.503739+00:00"
+  from_id: "1001206"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000408"
+  to_id: "1000267"
+-
+  created_at: "2026-10-01T20:26:27.503739+00:00"
+  from_id: "1001206"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000408"
+  to_id: "1000663"
+-
+  created_at: "2026-10-01T20:26:27.503739+00:00"
+  from_id: "1001206"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000408"
+  to_id: "1000894"
+-
+  created_at: "2026-10-01T20:26:27.503739+00:00"
+  from_id: "1000836"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1001206"
+-
+  created_at: "2026-10-01T20:26:27.503739+00:00"
+  from_id: "1001206"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000546"
+-
+  created_at: "2026-10-01T20:26:27.503739+00:00"
+  from_id: "1001206"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000926"
+-
+  created_at: "2026-10-01T20:26:27.503739+00:00"
+  from_id: "1001206"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000408"
+-
+  created_at: "2026-10-01T20:26:29.248399+00:00"
+  from_id: "1001207"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000205"
+    reason: "Audit trust repair: proof explicitly uses the charged endpoint rotation."
+  to_id: "1000207"
+-
+  created_at: "2026-10-01T20:26:29.248399+00:00"
+  from_id: "1001207"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000717"
+  to_id: "1000575"
+-
+  created_at: "2026-10-01T20:26:29.248399+00:00"
+  from_id: "1001207"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000205"
+      - "1000717"
+    reason: "Audit trust repair: proof explicitly imports the C-terminal rotation conclusion."
+  to_id: "1001146"
+-
+  created_at: "2026-10-01T20:26:29.248399+00:00"
+  from_id: "1001207"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000205"
+-
+  created_at: "2026-10-01T20:26:29.248399+00:00"
+  from_id: "1001207"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000717"
+-
+  created_at: "2026-10-01T20:26:29.248399+00:00"
+  from_id: "1001207"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000415"
+-
+  created_at: "2026-10-01T20:29:22.063941+00:00"
+  from_id: "1001208"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000432"
+-
+  created_at: "2026-10-01T20:29:24.390918+00:00"
+  from_id: "1001209"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000483"
+-
+  created_at: "2026-10-01T20:29:26.05807+00:00"
+  from_id: "1001210"
+  kind: "references"
+  metadata:
+    reason: "proof-frame bridge to rehomed reusable lemma"
+  to_id: "1000515"
+-
+  created_at: "2026-10-01T20:32:03.385141+00:00"
+  from_id: "1001211"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000702"
+-
+  created_at: "2026-10-01T20:32:03.385141+00:00"
+  from_id: "1001211"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000510"
+-
+  created_at: "2026-10-01T20:32:03.385141+00:00"
+  from_id: "1001211"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000425"
+-
+  created_at: "2026-10-01T20:32:05.961948+00:00"
+  from_id: "1001212"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000475"
+-
+  created_at: "2026-10-01T20:32:05.961948+00:00"
+  from_id: "1001212"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000506"
+-
+  created_at: "2026-10-01T20:32:05.961948+00:00"
+  from_id: "1001212"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000458"
+-
+  created_at: "2026-10-01T20:32:08.047113+00:00"
+  from_id: "1001213"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001145"
+-
+  created_at: "2026-10-01T20:32:08.047113+00:00"
+  from_id: "1001213"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1001019"
+-
+  created_at: "2026-10-01T20:32:08.047113+00:00"
+  from_id: "1001213"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000471"
+-
+  created_at: "2026-10-01T20:32:10.617212+00:00"
+  from_id: "1001214"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000627"
+-
+  created_at: "2026-10-01T20:32:10.617212+00:00"
+  from_id: "1001214"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000169"
+-
+  created_at: "2026-10-01T20:32:10.617212+00:00"
+  from_id: "1001214"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+  to_id: "1000517"
+-
+  created_at: "2026-10-01T20:36:32.881653+00:00"
+  from_id: "1000945"
+  kind: "depends_on"
+  metadata:
+    replacement_note: "Repair stale support edge: the strict-rank-ascent proof uses the distinct paid-certified switcher extraction 1000894 plus the supported rotation-output theorem, not the failed lens-conversion theorem 1000789."
+  to_id: "1000894"
+-
+  created_at: "2026-10-01T20:40:54.820384+00:00"
+  from_id: "1000161"
+  kind: "references"
+  metadata:
+    reason: "Reusable common-anchor return-intersection theorem rehomed to Toolkit; preserve route pointer."
+  to_id: "1000530"
+-
+  created_at: "2026-10-01T20:40:54.820384+00:00"
+  from_id: "1000724"
+  kind: "references"
+  metadata:
+    reason: "Reusable Type-A gate theorem rehomed to Toolkit; preserve route pointer."
+  to_id: "1000559"
+-
+  created_at: "2026-10-01T20:40:54.820384+00:00"
+  from_id: "1000116"
+  kind: "references"
+  metadata:
+    reason: "Reusable near-43/48 paid clean 0-1-1 extraction rehomed to Toolkit; preserve route pointer."
+  to_id: "1000565"
+-
+  created_at: "2026-10-01T20:42:26.296333+00:00"
+  from_id: "1000400"
+  kind: "references"
+  metadata:
+    reason: "Reusable flat-cycle entrance-rail theorem rehomed to Toolkit; preserve route pointer."
+  to_id: "1000666"
+-
+  created_at: "2026-10-01T20:42:26.296333+00:00"
+  from_id: "1000905"
+  kind: "references"
+  metadata:
+    reason: "Reusable switching-state order theorem rehomed to Toolkit; preserve route pointer."
+  to_id: "1000700"
+-
+  created_at: "2026-10-01T20:42:26.296333+00:00"
+  from_id: "1000103"
+  kind: "references"
+  metadata:
+    reason: "Reusable exact global rank-sensitive bound rehomed to Toolkit; preserve route pointer."
+  to_id: "1000732"
+-
+  created_at: "2026-10-01T20:42:26.296333+00:00"
+  from_id: "1000740"
+  kind: "references"
+  metadata:
+    reason: "Reusable odd-central rank-window theorem rehomed to Toolkit; preserve route pointer."
+  to_id: "1000739"
+-
+  created_at: "2026-10-01T20:42:26.296333+00:00"
+  from_id: "1001119"
+  kind: "references"
+  metadata:
+    reason: "Reusable canonical entrance-path transversal theorem rehomed to Toolkit; preserve route pointer."
+  to_id: "1000745"
+-
+  created_at: "2026-10-01T20:44:01.574204+00:00"
+  from_id: "1000972"
+  kind: "references"
+  metadata:
+    reason: "Reusable deletion/threshold-bridge lemma rehomed to Toolkit; preserve route pointer."
+  to_id: "1000757"
+-
+  created_at: "2026-10-01T20:44:01.574204+00:00"
+  from_id: "1000715"
+  kind: "references"
+  metadata:
+    reason: "Reusable minimum-degree potential-floor theorem rehomed to Toolkit; preserve route pointer."
+  to_id: "1000790"
+-
+  created_at: "2026-10-01T20:44:01.574204+00:00"
+  from_id: "1000811"
+  kind: "references"
+  metadata:
+    reason: "Reusable cross-gate blocker lemma rehomed to Toolkit; preserve route pointer."
+  to_id: "1000831"
+-
+  created_at: "2026-10-01T20:44:15.163194+00:00"
+  from_id: "1000638"
+  kind: "references"
+  metadata:
+    reason: "Reusable C4 braid theorem rehomed to Maximum-path Toolkit; preserve route pointer."
+  to_id: "1000811"
+-
+  created_at: "2026-10-01T20:45:28.741383+00:00"
+  from_id: "1000624"
+  kind: "references"
+  metadata:
+    reason: "Reusable Type-A degree decomposition rehomed to Potential/rank-growth Toolkit; preserve route pointer."
+  to_id: "1000934"
+-
+  created_at: "2026-10-01T20:45:28.741383+00:00"
+  from_id: "1001088"
+  kind: "references"
+  metadata:
+    reason: "Reusable half-rank visible-entrance lemma rehomed to Maximum-path Toolkit; preserve route pointer."
+  to_id: "1000965"
+-
+  created_at: "2026-10-01T20:45:28.741383+00:00"
+  from_id: "1001033"
+  kind: "references"
+  metadata:
+    reason: "Reusable rank-drop block lemma rehomed to Potential/rank-growth Toolkit; preserve route pointer."
+  to_id: "1001008"
+-
+  created_at: "2026-10-01T20:45:28.741383+00:00"
+  from_id: "1000760"
+  kind: "references"
+  metadata:
+    reason: "Reusable endpoint-potential forcing lemma rehomed to Maximum-path Toolkit; preserve route pointer."
+  to_id: "1001024"
+-
+  created_at: "2026-10-01T20:46:29.427599+00:00"
+  from_id: "1000850"
+  kind: "references"
+  metadata:
+    reason: "Reusable aligned-gate maximum-rail lemma rehomed to Maximum-path Toolkit; preserve route pointer."
+  to_id: "1001029"
+-
+  created_at: "2026-10-01T20:46:29.427599+00:00"
+  from_id: "1001076"
+  kind: "references"
+  metadata:
+    reason: "Reusable overlap-maximal gap-one cell lemma rehomed to Maximum-path Toolkit; preserve route pointer."
+  to_id: "1001084"
+-
+  created_at: "2026-10-01T20:46:29.427599+00:00"
+  from_id: "1000068"
+  kind: "references"
+  metadata:
+    reason: "Reusable equality special-last theorem rehomed to Critical-core Toolkit; preserve route pointer."
+  to_id: "1001135"
+-
+  created_at: "2026-10-01T20:46:29.427599+00:00"
+  from_id: "1000699"
+  kind: "references"
+  metadata:
+    reason: "Reusable exact-density high-degree theorem rehomed to Critical-core Toolkit; preserve route pointer."
+  to_id: "1001155"
+-
+  created_at: "2026-10-01T20:46:41.212733+00:00"
+  from_id: "1001120"
+  kind: "references"
+  metadata:
+    reason: "Reusable overlap-maximal deficiency-d lens theorem rehomed to Maximum-path Toolkit; preserve route pointer."
+  to_id: "1001076"
 -
   created_at: "2026-09-21T18:22:49.156921+00:00"
   from_id: "1001161"
@@ -3179,12 +4043,6 @@
   metadata:
   to_id: "1000067"
 -
-  created_at: "2026-09-24T21:20:58.61301+00:00"
-  from_id: "1000217"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000370"
--
   created_at: "2026-09-22T19:49:12.329647+00:00"
   from_id: "1000561"
   kind: "contradicts"
@@ -4647,12 +5505,6 @@
   metadata:
   to_id: "1000732"
 -
-  created_at: "2026-09-24T18:12:57.330021+00:00"
-  from_id: "1000371"
-  kind: "depends_on"
-  metadata:
-  to_id: "1001162"
--
   created_at: "2026-09-24T18:12:58.891855+00:00"
   from_id: "1000371"
   kind: "depends_on"
@@ -4664,12 +5516,6 @@
   kind: "depends_on"
   metadata:
   to_id: "1000371"
--
-  created_at: "2026-09-24T18:20:01.524936+00:00"
-  from_id: "1000789"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000168"
 -
   created_at: "2026-09-24T18:20:17.689119+00:00"
   from_id: "1000789"
@@ -4874,12 +5720,6 @@
   kind: "depends_on"
   metadata:
   to_id: "1000789"
--
-  created_at: "2026-09-24T19:41:04.163123+00:00"
-  from_id: "1000325"
-  kind: "depends_on"
-  metadata:
-  to_id: "1001162"
 -
   created_at: "2026-09-24T19:46:29.639219+00:00"
   from_id: "1000036"
@@ -5138,12 +5978,6 @@
   kind: "depends_on"
   metadata:
   to_id: "1000438"
--
-  created_at: "2026-09-24T21:03:45.989482+00:00"
-  from_id: "1000945"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000789"
 -
   created_at: "2026-09-24T21:04:50.775843+00:00"
   from_id: "1000753"
@@ -5668,13 +6502,6 @@
   from_id: "1000205"
   kind: "depends_on"
   metadata:
-    reason: "Audit trust repair: proof assumes the surviving state forces D terminal-only."
-  to_id: "1000370"
--
-  created_at: "2026-09-24T21:39:24.215437+00:00"
-  from_id: "1000205"
-  kind: "depends_on"
-  metadata:
     reason: "Audit trust repair: proof explicitly uses the charged endpoint rotation."
   to_id: "1000207"
 -
@@ -5824,12 +6651,6 @@
   from_id: "1000574"
   kind: "depends_on"
   metadata:
-  to_id: "1000902"
--
-  created_at: "2026-09-24T21:44:16.317727+00:00"
-  from_id: "1000574"
-  kind: "depends_on"
-  metadata:
   to_id: "1000356"
 -
   created_at: "2026-09-24T21:44:16.317727+00:00"
@@ -5843,12 +6664,6 @@
   kind: "depends_on"
   metadata:
   to_id: "1000342"
--
-  created_at: "2026-09-24T21:44:16.317727+00:00"
-  from_id: "1000103"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000902"
 -
   created_at: "2026-09-24T21:44:16.317727+00:00"
   from_id: "1000103"
@@ -6751,29 +7566,11 @@
   metadata:
   to_id: "1000663"
 -
-  created_at: "2026-09-25T20:09:31.56457+00:00"
-  from_id: "1000836"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000926"
--
-  created_at: "2026-09-25T20:09:31.56457+00:00"
-  from_id: "1000836"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000408"
--
   created_at: "2026-09-25T20:13:07.643404+00:00"
   from_id: "1001101"
   kind: "depends_on"
   metadata:
   to_id: "1000371"
--
-  created_at: "2026-09-25T20:13:07.643404+00:00"
-  from_id: "1001101"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000168"
 -
   created_at: "2026-09-25T20:13:07.643404+00:00"
   from_id: "1001101"
@@ -7557,12 +8354,6 @@
   metadata:
   to_id: "1000732"
 -
-  created_at: "2026-09-25T21:54:17.914284+00:00"
-  from_id: "1000303"
-  kind: "depends_on"
-  metadata:
-  to_id: "1000168"
--
   created_at: "2026-09-25T21:54:19.445771+00:00"
   from_id: "1000303"
   kind: "depends_on"
@@ -7670,3 +8461,23 @@
   kind: "depends_on"
   metadata:
   to_id: "1000963"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000370"
+    reason: "Audit trust repair: proof explicitly applies the quantitative clean-contact separation lemma."
+  to_id: "1000454"
+-
+  created_at: "2026-10-01T20:50:40.36178+00:00"
+  from_id: "1001216"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000714"
+    reason: "Audit trust repair: proof explicitly uses the odd-boundary terminal-only witness-window lemma."
+  to_id: "1000696"

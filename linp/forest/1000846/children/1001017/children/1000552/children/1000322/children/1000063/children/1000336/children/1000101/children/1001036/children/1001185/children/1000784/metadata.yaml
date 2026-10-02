@@ -52,7 +52,7 @@ substantive_worker_ids:
 support_reason: "current_certified_premises"
 support_status: "supported"
 title: "Exceptional Y/Z single blockers cannot occupy the final cell"
-unary_chain_length: 0
-unary_chain_standalone: true
-updated_at: "2026-10-01T20:11:06.293093+00:00"
-version: 10
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:43:39.251856+00:00"
+version: 11

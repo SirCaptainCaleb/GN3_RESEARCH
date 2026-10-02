@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "6d260b3e0416f3773fa5050f5eb52f0f71521c2cb2a73a8b24fb12c85caa3b58"
+created_at: "2026-09-24T13:50:25.513248+00:00"
+id: "1000231"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:15:52.586383+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "1001222"
+position: 0
+research_interface:
+  consequence: "The deficiency-one discrepancy between anchor and maximum paths can be spent on at most one elementary lens. Every other disjoint lens is exactly balanced."
+  consumer:
+    - "gap-one switching matching"
+    - "balanced-lens no-piercing"
+    - "post-43/48 strengthening"
+  given:
+    - "gap-one anchor path of length q"
+    - "maximum endpoint path of length q+1"
+    - "clean elementary lens decomposition"
+  next_need: "Combine with the switching matching of size about 5q/8. Contract common Q/P subpaths and choose the unique possible unbalanced cell. Show that many switching pairs must cross interiors of balanced cells, contradicting no-piercing, unless the overlap is concentrated into very few long cells; then exploit the large omitted set O to rule out that concentration."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Deficiency-one path pairs have at most one unbalanced elementary lens."
+statement_sha256: "7c72af743c0750ba0590e0eb788018df29a571170d55def9cc4913edefc1af64"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Deficiency-one path pairs have at most one unbalanced elementary lens"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 7

@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: true
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "dea620b3f983d044b94bb1ca7aae31b6f07268e2eff8c3e853b6e6a0f9022eba"
+created_at: "2026-10-01T20:02:21.768201+00:00"
+id: "1001178"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  hygiene_wrapper: true
+  organizational: true
+  toolkit_reference: "1000058"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "1001210"
+position: 0
+research_interface:
+  working_route: "continue the flat terminal-retained route after toolkit result 1000058"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Continue the flat-state route via toolkit lemma 1000058."
+statement_sha256: "c563382369345d15401cd97d7c77464273957213bdf827e04296fc1b0f1c11d9"
+substantive_worker_ids:
+  - 296
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Flat host-packing continuation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 3

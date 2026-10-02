@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "ee274b7b223c5bdb2d6c53fa56c92fab89520282c63b64d5788e75dcbda004af"
+created_at: "2026-09-24T20:42:57.064895+00:00"
+id: "1000223"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_premise_impact_check:
+    checked_at: "2026-09-25T01:03:36.018022+00:00"
+    note: "91f6c32ab805 changed terminology only; its distinct top-potential balanced-lens attachment conclusion is unchanged, so the 401/1024 source-mass/lens dichotomy remains valid."
+    source_ids:
+      - "1000642"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "1000669"
+position: 0
+research_interface:
+  consequence: "At a low-defect global-top center, either at least L/16 switcher triangles occur, or the center simultaneously pays ~401 L^2/1024 source-potential mass and L/16 top-potential balanced lenses."
+  consumer:
+    - "post-43/48 global packing"
+    - "switcher-triangle congestion"
+    - "equal-top lens packing"
+    - "weighted source-potential route"
+  given:
+    - "98152151c212 cell-dispersion source-mass theorem"
+    - "9586a4d2317f one-eighth payment theorem"
+    - "91f6c32ab805 paid top-output lens attachments"
+    - "b032348c1a8a dense switching family"
+  next_need: "Globalize either branch. For triangle-heavy centers, exploit that both switchers are whole chords on the same anchor path. For the source+lens branch, combine quadratic source budget with crossing/laminar lens packing; both currencies occur at the same centers."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Top centers pay in triangles or simultaneous source mass and lenses."
+statement_sha256: "b47789adccf70f5870335c9a5392829c32f9fe56fb88b70bbe1e0038d1d90fc3"
+substantive_worker_ids:
+  - 201
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "Top centers pay in triangles or simultaneous source mass and lenses"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 11

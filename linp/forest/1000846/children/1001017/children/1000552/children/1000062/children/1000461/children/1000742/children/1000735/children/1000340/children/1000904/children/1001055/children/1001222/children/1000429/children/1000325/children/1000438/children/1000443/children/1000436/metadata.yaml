@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "94146812e39bad5a29e31b78eafd18d97fe21f77c69fe53c1b9b89df85e2351a"
+created_at: "2026-09-24T21:59:53.387361+00:00"
+id: "1000436"
+last_elevation_revision: null
+last_substantive_worker_id: 236
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e3c30c76-e43d-41e0-a343-32b2963bb12a"
+    detail: "Verified the aligned-vertex reduction and arithmetic gamma(p)<=4(beta(p)-a(p)) for p>=8; summing distinct terminal incidences gives the stated defect charge, with bounded low-potential remainder."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:25:06.23137+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "e3c30c76-e43d-41e0-a343-32b2963bb12a"
+    detail: "Verified the aligned-vertex reduction and arithmetic gamma(p)<=4(beta(p)-a(p)) for p>=8; summing distinct terminal incidences gives the stated defect charge, with bounded low-potential remainder."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:25:06.23137+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 236
+parent_id: "1000443"
+position: 0
+research_interface:
+  consequence: "Distinct flat ascending no-rise outputs no longer require endpoint-reuse control: after deduplication by (edge,last vertex), they are at most 4eta+O(n_+). Only repeated production of the identical terminal incidence remains."
+  consumer:
+    - "e233684ca13b endpoint-congestion route"
+    - "post-43/48 rotation packing"
+  given:
+    - "631ebe3d4728 flat-output aligned-sink lemma"
+    - "b032348c1a8a aligned defect bound"
+    - "fixed-entrance terminal count"
+  next_need: "Bound how many different source vertices can produce the same flat certificate (h,w). Any O(1), or sufficiently small aggregate, bound now charges the entire flat branch to eta+O(n_+)."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Distinct flat rotation terminal incidences are globally paid by local defect."
+statement_sha256: "7498dc409b68efa0adbc0ec43cc932b39876cefa24729ca258dfadfefb7ad6c2"
+substantive_worker_ids:
+  - 236
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Distinct flat rotation terminal incidences are globally paid by local defect"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 9

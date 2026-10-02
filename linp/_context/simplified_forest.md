@@ -70,51 +70,18 @@
         • [1000478] Conjecturally, every finite linear 3-graph has at most 3|V(H)|/2 ascending edges.
           • [1000648] Conjecturally, the terminal graph of ascending nonspecial edges has maximum average degree at most 3.
             • [1000368] Conjecturally, for each vertex v there are at most three ascending nonspecial edges {x,v,u} with v terminal and φ(u)≥φ(v).
-              • [1000070] For a vertex v with φ(v)=p≤3, at most three potential-charged ascending nonspecial edges are terminal at v; for p=4, four such edges have rank pattern (3,4,4,4) or (4,4,4,4).
-                • [1000697] Potential four counterexamples saturate the five-slot central witness window.
-                  • [1001151] At potential four, a rank-three charged edge is pinned by its entrance.
-                    • [1000100] The rank-three entrance is universal across maximum paths in the first p=4 obstruction.
               • [1000440] Potential-five charged obstructions have four rank patterns.
                 • [1000676] In the p=5 pattern 4445, two middle-edge witnesses are forced entrances.
-                  • [1000736] A five-edge path chord excludes the potential-five pattern 4445.
-                    • [1000740] An endpoint chord raises the next joint's vertex rank.
-                      • [1000739] At most two ascending terminal edges occupy the odd central rank window.
-                        • [1000702] At potential five, four charged ascending terminal edges contain at most two rank-four edges.
-                          • [1000510] In the p=5 pattern 4555, three rank-five competitors force an early-blocking edge.
-                            • [1000425] The p=5 pattern 4555 has a late/joint/crossed rail normal form.
-                              • [1000507] Crossed p=5 rank-five competitors force a reciprocal rank-four tail blocker.
-                              • [1000821] Potential-five pattern 4555 reduces to exactly two crossed edges and one joint edge.
-                                • [1001069] The exact 4555 normal form is a crossed two-pole incidence rectangle.
-                                  • [1000865] The joint edge in the exact 4555 rectangle is either rail-clean or hits only the private vertex of the third rail edge.
-                        • [1001044] Potential-five pattern 4455 has only two rank-four witness geometries.
-                          • [1000968] The low-low witness geometry in the potential-five 4455 pattern is impossible.
-                            • [1000553] The surviving 4455 witness geometry forces the right middle joint to potential at least four.
-                              • [1000262] If the left 4455 witness is an entrance, every canonical entrance rail must recross the middle edge.
-                                • [1001059] Every canonical left-entrance rail in 4455 crosses both the middle edge and the far rank-five edge.
-                                  • [1000243] Every canonical left-entrance rail in the surviving 4455 branch also crosses the opposite rank-four edge.
-                                  • [1000809] In the surviving 4455 entrance-a case, the far rank-five edge has only two possible overlap patterns with a canonical three-edge entrance rail.
-                              • [1001016] The final 4455 witness geometry splits into a high-c branch or a forced two-contact entrance rail.
-                                • [1000614] A unique far-edge contact on a canonical entrance-a rail in 4455 is forced to the last rail edge.
-                                  • [1000388] A single far contact in entrance-a 4455 forces full middle-edge saturation of the entrance rail.
-                              • [1001182] The terminal-a 4455 branch forces high adjacent joints, and the no-c rank-five competitor has one clean form.
-                                • [1000791] The clean terminal-left 4455 state forces every low entrance rail to hit three separated edges.
-                                  • [1000375] Clean terminal-left 4455 entrance rails are fourfold transversals.
-                          • [1000444] The low-low witness geometry is impossible in the p=5 pattern 4455.
-                          • [1000668] ‹In the 4455 low-low witness geometry the second rank-five edge either enters privately through g4 or has two precursor contacts›
-                            • [1000283] The two-contact 4455 low-low branch is a rigid four-cycle plus rank-five triangle.
-                              • [1000253] The two-contact p=5 4455 low-low state is impossible.
                   • [1000043] The p=5 pattern 4445 contains a canonical low-high terminal triangle.
                     • [1000093] In the p=5 charged 4445 setting, every five-edge path to a high terminal places the corresponding low joint in the middle two edges, and if the joint itself appears there it is exactly the r₃∩r₄ joint.
                     • [1000560] In the p=5 pattern 4445, both high terminals are forced into the first two path edges.
                       • [1001119] Canonical entrance paths in the p=5 4445 pattern must cross the far end of the five-path.
-                        • [1000745] Canonical p=5 entrance paths must cross the rank-five terminal edge itself.
-                          • [1000175] Canonical p=5 entrance paths satisfy two simultaneous two-point transversals.
-                          • [1001057] A single far-edge contact cannot occur in the middle of a canonical 4445 entrance rail.
-                            • [1000913] Double far-edge contact on a canonical 4445 entrance rail is confined to its first two edges.
                     • [1000870] Every five-path to a high terminal of the 4445 triangle is suffix-blocked by the middle edge.
                       • [1000125] In the 4445 triangle, every five-edge path to a high terminal satisfies a three-way late-contact alternative involving the common terminal, the low joint, or the third middle vertex.
                       • [1000178] ‹A late common-terminal blocker on a 4445 high-terminal path forces the low entrance into the center›
                         • [1000683] ‹The v-late branch of a 4445 high-terminal path forces the third middle vertex to an end side›
+                  • [1000736] A five-edge path chord excludes the potential-five pattern 4445.
+                    • [1000740] An endpoint chord raises the next joint's vertex rank.
               • [1000098] Any long terminal path captures a lower-rank ascending edge.
                 • [1000743] Terminal potentials of an ascending edge are at most three times its rank.
                 • [1000756] Terminal potentials of an ascending edge are at most twice its rank minus two.
@@ -135,6 +102,7 @@
               • [1000767] The S-entrance pattern in the pure p=4 obstruction is impossible.
               • [1001079] Certified low-potential case of the potential-oriented local bound.
               • [1001137] Absent entrances in the pure p=4 obstruction are pinned to the first joint.
+              • [1001217] In a (3,4,4,4) potential-four obstruction, the rank-three entrance is the same middle joint of every maximum v-path.
               • [1000919] Potential-oriented local bound implies the 2/3 upper bound.
               • [1000459] Finite falsification search for the potential-oriented local bound.
               • [1000061] A potential-oriented charged ascending edge can have rank below both terminal potentials.
@@ -150,10 +118,8 @@
               • [1000540] A linear 3-graph exists with four ascending nonspecial edges through one last vertex of ranks 12,16,20,20, violating 2q2≥q1+q4+1.
             • [1000494] For five ascending nonspecial edges sharing a last vertex with ranks q1≤q2≤q3≤q4≤q5, conjecturally 2q4≥q1+q5+1.
               • [1000680] If the five-edge deficit-doubling inequality holds, then k such edges sharing a last vertex with maximum rank p satisfy k≤3 floor(log2 p)+4.
-            • [1000546] Clean ascending attachments to one path have exponentially growing spacing toward the last attachment, so any suitably separated family has logarithmic size.
-              • [1000926] A bounded excess over host prefixes gives logarithmic-plus-excess contact degree.
-                • [1000408] Large entrance-prefix excess converts into early triangle-or-superlevel certificate mass.
-                  • [1000836] A linear selected local family forces U-mass, early triangles, or early superlevel outputs.
+            • [1001206] Prefix-excess spacing forces logarithmic contact degree or linear early structural payment.
+              • [1000836] A linear selected local family forces U-mass, early triangles, or early superlevel outputs.
             • [1000380] Terminal φ-values of an ascending edge are comparable.
           • [1000293] The conjectural incidence-rank bound rank_R(N_↑)≥2A/3 for ascending edges is false; a family with A=9t has rank 5t+2 for every t≥3.
             • [1000876] Three-colored K3,3 copies refute the ascending-incidence rank bound.
@@ -203,17 +169,14 @@
                     • [1000569] Strict integer form of the ell minus thirteen-sixths upper bound.
                     • [1000646] Near the seven-sixths floor, almost every vertex is Type A and almost every nonspecial edge is ascending.
                       • [1000715] The lowest Type-A potential level forces a large exceptional entrance set.
-                        • [1000790] Minimum degree gives an additive gap above the seven-sixths potential floor.
                     • [1001141] Near the density-plus-seven-sixths floor, only O(eta n) vertices and edges are exceptional.
                       • [1000834] The bottom potential layer forces distance from the seven-sixths floor.
                   • [1000320] The one-special local equality type is impossible.
                     • [1000624] Type-A equality vertices have at most one deficient special incidence.
-                      • [1000934] Type-A vertices source only ascending nonspecial edges and have an exact degree decomposition.
                   • [1000495] General upper bound improved to (ell-13/6)n.
                     • [1001000] The (ell-13/6)n upper bound has an additional additive Theta(ell) improvement.
               • [1000887] Special/ascending compatibility improves the universal average endpoint potential floor to density plus one.
                 • [1000068] Equality at density plus one gives an exact three-special-edge blocker normal form.
-                  • [1001135] At density-plus-one equality every maximum endpoint path has a special last edge.
               • [1001077] Local capacity incompatibility improves average endpoint potential to density plus one.
                 • [1000306] Minimum-potential equality is a 3-regular special core plus an all-ascending remainder.
             • [1000087] Minimum-potential equality forces the special-edge subhypergraph to be a cubic-graph dual.
@@ -279,13 +242,11 @@
                       • [1000346] Every pair of zero-slack triples has many same-color double jumps.
                       • [1000824] Zero-slack nonspecial witnesses alternate exactly and all colored connectors are special.
                         • [1000319] Failure of an uncolored entrance switch forces an exact half-neighborhood partition.
-                          • [1001145] Double failure of the zero-slack switch forces a color derangement on a common neighborhood.
-                            • [1001019] Rigid zero-slack half-neighborhoods obey a per-color cut-parity law.
-                              • [1000471] Odd-k rigid zero-slack branch either crosses into B or all three target ports share the same half-neighborhood.
-                                • [1000073] Odd-k rigid zero-slack no-switch state must contain an A-to-B connector.
-                                • [1000179] Odd-k rigid zero-slack branch must contain an S-to-B connector.
-                                  • [1000208] Rigid zero-slack cross-half edges match the entrance half-deficit.
                           • [1001201] Rigid zero-slack half-neighborhoods expose a cut with both target and return adjacencies.
+                          • [1001213] Odd zero-slack rigidity forces a transverse connector or a common target neighborhood.
+                            • [1000073] Odd-k rigid zero-slack no-switch state must contain an A-to-B connector.
+                            • [1000179] Odd-k rigid zero-slack branch must contain an S-to-B connector.
+                              • [1000208] Rigid zero-slack cross-half edges match the entrance half-deficit.
                         • [1000528] A two-chord block reversal switches the entrance of a zero-slack witness.
                         • [1000766] Unused colors at a reachable endpoint avoid every outgoing forest port.
                         • [1000962] Color-run accounting is the natural zero-slack near-spanning target.
@@ -310,7 +271,6 @@
           • [1000265] The sharp Turan bound reduces to the exact-density equality layer.
             • [1000549] Cheap outside packets force a low-degree survivor.
               • [1000972] Vertex-minimal equality does not by itself give outside packet expansion.
-                • [1000757] Cheap witness-avoiding singleton deletion forces an exact threshold bridge.
             • [1000838] ‹Exact density forces a potential-deficiency surplus of upward 0-1-1 transitions›
               • [1000474] Exact-density nonspecial obstructions have average endpoint potential d plus five-sixths.
               • [1000497] Ascending potential flow forces a quadratic degree-potential constraint.
@@ -333,7 +293,6 @@
               • [1000140] Steiner deficiency two forces pair-universal vertices.
                 • [1000339] At Steiner deficiency two, universal vertices exactly pay for leave branching.
                   • [1000984] At deficiency two, P_l-freeness forces many leave branches and universal vertices.
-                    • [1000498] Any set of pair-universal vertices generates a dense strong-rainbow matching graph.
                 • [1000969] A pair-universal star converts degree-potential defect exactly into clean ascending sources.
                   • [1000869] Every universal-star maximum path omits a large higher-potential terminal packet.
             • [1000604] Equality obstructions force a leave-degree spike in residues zero and two.
@@ -342,7 +301,6 @@
           • [1000092] The sharp Turan equality layer forces residue-dependent ascending mass.
           • [1000282] Every equality-layer bad witness omits a vertex of degree at least d plus two.
             • [1000699] Every equality-layer witness omits many above-threshold vertices.
-              • [1001155] Exact density forces at least 4d minus one above-threshold vertices.
           • [1000467] Equality-layer strict counterexamples are overwhelmingly threshold-degree.
           • [1000490] Exact minimal equality obstructions admit a balanced d-outregular incidence orientation.
             • [1000747] Balanced equality orientation is an almost-regular self-colored matching graph.
@@ -366,10 +324,10 @@
                 • [1001111] The residual flat-transfer obstruction consists of chains or cycles of equal-rank ascending terminal edges glued by extremal q-cycles.
               • [1000504] In a flat equal-rank transfer e→f, every longest witness for f ending at the shared terminal must carry one of the two nonshared vertices of e in its final q−2 precursor edges.
             • [1000673] A canonical loss-one two-cycle has a fixed omitted vertex with enough external incidence to force either a disjoint external edge or at least two one-contact external chords.
+              • [1001208] Continue the fixed-hole route via toolkit lemma 1000432.
+                • [1000644] At the fixed hole, 2C+R≥3; equality forces degree q and exactly one of two saturated incidence patterns.
               • [1001121] ‹Two fixed-hole one-contact chords give an exact bridge splice›
                 • [1000943] Two suitably separated one-contact chords through a fixed external hole splice into the path and can restore full length in the loss-one setting.
-              • [1000432] Relative to the rotated loss-one state, the fixed hole has at least three external incidences, forcing either a disjoint edge or at least three one-contact external chords.
-                • [1000644] At the fixed hole, 2C+R≥3; equality forces degree q and exactly one of two saturated incidence patterns.
             • [1000749] An entrance-joint flat-transfer q-cycle has no clean ear at its second private vertex and therefore forces a nontrivial maximum rotation preserving the target edge.
               • [1000468] Every state in the boundary fixed-target entrance-path rotation graph has positive outdegree, so the finite directed rotation graph contains a directed cycle.
             • [1001130] For an equal-rank ascending flat transfer, the second target-cycle joint is either the target entrance of rank q−1 or a terminal of rank at least q; in the entrance case there is a (q−2)-edge path joining the two entrances while avoiding both terminal pairs.
@@ -406,9 +364,6 @@
           • [1000005] Conjecturally, every P_ℓ-free linear 3-graph with minimum degree greater than 2ℓ/3 has every edge special in the Devine–Milans snake digraph.
             • [1000044] ‹The n<=12 strict two-thirds search reduces to three structural classes›
               • [1000853] For 6<=n<=12, a positive-minimum-degree linear triple system with 3delta>2L+2 has every edge special.
-                • [1000610] Class-III maximum-rank nonspecial edges have only one or two alternating blocker chains.
-                  • [1000300] Open-chain endpoints in Class III are exactly the terminal defects.
-                    • [1000384] A late Class-III single blocker is pinned to the private vertex of g4.
                 • [1000035] Class-III systems have no rank-four nonspecial edge.
                 • [1000057] Correct terminal-blocker localization in Class III.
                 • [1000141] Class-II rank-four nonspeciality forces a crossed terminal rectangle.
@@ -424,6 +379,7 @@
                 • [1000931] Class-II rank-three nonspeciality forces an alternating terminal C6.
                 • [1000974] Failed high-low terminal pair forces both other high vertices onto the low mate.
                 • [1001164] Class-III systems have no rank-five nonspecial edge.
+                • [1001204] Class-III blocker defects are explicit alternating chains, with late single blockers pinned to private(g4).
               • [1000311] Every P4-free linear triple system of minimum degree three is all-special.
             • [1000287] Conjecturally, every d-regular linear 3-graph on 2d+2 vertices with maximum linear-path length d is all-special.
               • [1001081] Universal residual and blocker normal form for punctured-Steiner regular systems.
@@ -439,19 +395,14 @@
               • [1000105] Inductive path-hull ears are threshold-supported in an edge-minimal counterexample.
               • [1001042] Minimal-counterexample induction reduces every bad path hull to ears or a spanning top-rank core.
             • [1000587] If the stated ear-to-progress lemma and spanning-top lemma hold for every ℓ, then the dense-core all-special conjecture follows by induction.
-              • [1000627] Good-residue spanning cores have two-hole alternate entrance witnesses.
-                • [1000169] Two-hole alternate witnesses have exact alternating blocker defects.
-                  • [1000517] Two-hole wrong-entrance witnesses carry four edge-disjoint large blocker matchings.
-                    • [1000564] Good-residue two-hole witnesses force linearly many three-center collisions.
-                      • [1000820] An early endpoint blocker forces opposite-endpoint prefix escape.
-                      • [1000991] A two-hole collision across one omitted cell gives the full wrong-entrance lift.
-                        • [1000257] Two-hole gap-three collisions rotate the wrong-entrance state.
-                          • [1000758] Lexicographically maximal two-hole states push gap-three rotations onto no-better hole pairs.
-                            • [1000615] Gap-three rotation position gives a quantitative hole-potential floor.
-                    • [1000628] Good-residue witnesses contain linearly many genuine two-hole collisions.
               • [1000268] Spanning top-rank induction works after one vertex deletion in two residue classes.
                 • [1000464] Two-hole alternate paths have an exact alternating blocker-matching defect identity.
                 • [1000705] Critical residue deletions either give two-hole witnesses or fall exactly onto equality.
+              • [1001214] Good-residue two-hole witnesses force four large blocker matchings and multi-center collisions.
+                • [1000564] Good-residue two-hole witnesses force linearly many three-center collisions.
+                  • [1000820] An early endpoint blocker forces opposite-endpoint prefix escape.
+                  • [1001219] In a lexicographically maximal two-hole wrong-entrance state, gap-two collisions are impossible and a gap-three cut at i forces both holes to potential at least max{i,s-i-2}.
+                • [1000628] Good-residue witnesses contain linearly many genuine two-hole collisions.
             • [1000771] Matching deletions are exactly the minimum-degree-five deletions of STS(13).
               • [1001013] Every matching deletion of cyclic STS(13) is all-special.
                 • [1000054] Each cyclic STS(13) block orbit has matching number three.
@@ -522,8 +473,6 @@
                       • [1000090] The extremal C4 rail skeleton carries two clean length-two bridges.
                       • [1000956] The simple source-rail graph is triangle-free.
                         • [1000638] The C4 source-rail residue forces a four-vertex diagonal overlap.
-                          • [1000811] The C4 residue is overlap-rich or a double triple-gate braid.
-                            • [1000831] A double triple-gate C4 braid forces a cross-gate blocker.
                 • [1001128] Four 0-1-1 source rails force a two-vertex distinguished overlap.
                   • [1000398] Four source rails force two units of distinguished overlap.
                     • [1000744] Source-hit imbalance exactly measures excess distinguished rail overlap.
@@ -550,18 +499,12 @@
               • [1000696] At the odd central boundary terminal-only single contacts lose the rightmost witness slots.
                 • [1000244] Two non-double rank-q edges at p=2q-3 have a two-pattern middle-edge normal form.
                   • [1000050] The forced middle-private low entrance raises the outer right joint to full terminal potential.
-                  • [1000557] The B,C two-low odd-boundary pattern cannot support two additional non-double high edges.
-                    • [1001167] At p=2q-3 two rank-q edges force a double in every four-edge consecutive-rank family.
-                      • [1000714] At the odd central boundary a unique non-double rank-q edge cannot use D or E.
-                        • [1000324] The one-low odd-central all-single state reduces to one terminal-low pattern.
-                          • [1000370] The surviving one-low odd-boundary state forces D terminal-only.
-                            • [1000004] High 0-1-1 edges at the odd boundary have reciprocal central-gate normal forms.
-                            • [1000205] The final odd-boundary residue forces two successive top-potential rotated endpoints.
-                              • [1000717] The final odd-boundary residue forces the entire central edge to top potential.
-                                • [1000415] The final odd-boundary residue manufactures a high-rank central edge.
-                            • [1000217] The final one-low odd-boundary state creates a four-vertex high-potential central packet.
-                              • [1000775] High 0-1-1 terminal paths have a four-level reciprocal central normal form.
-                            • [1000575] The terminal-only D contact forces the outer right joint to top potential.
+                  • [1001216] At p=2q-3, two rank-q members force a double; the sole all-single one-low state has terminal-only contacts at C and D.
+                    • [1000004] High 0-1-1 edges at the odd boundary have reciprocal central-gate normal forms.
+                    • [1000217] The final one-low odd-boundary state creates a four-vertex high-potential central packet.
+                      • [1000775] High 0-1-1 terminal paths have a four-level reciprocal central normal form.
+                    • [1000575] The terminal-only D contact forces the outer right joint to top potential.
+                    • [1001207] The final odd-boundary residue forces the central edge and all its vertices to top potential.
               • [1000592] At p=2q-3 the unique low edge cannot use the private middle witness.
               • [1000665] At p=2q-3 terminal-only non-double witnesses are pushed to the left central slots.
               • [1000787] The defect-corrected two-rank block is automatic at the half-rank top boundary.
@@ -588,19 +531,6 @@
                               • [1000091] Gap-one top-rank edges either pay to alignment or move nondecreasingly in potential.
                                 • [1000038] Every flat gap-one top edge manufactures a lens between maximum endpoint paths.
                                   • [1000400] A flat gap-one top edge forces a balanced elementary lens.
-                                    • [1000666] Entrance rails on a flat gap-one terminal cycle are blocked on both sides within distance two.
-                                      • [1000264] Flat gap-one terminal cycles have length at most p minus one.
-                                      • [1000868] Entrance-label blockers on a flat gap-one cycle immediately create balanced rail lenses.
-                                        • [1000220] Lens-free flat cycles force the two adjacent edges to be exact opposite-terminal single blockers on every entrance rail.
-                                          • [1000599] Distance-three entrance rails meet at the intervening cycle terminal.
-                                          • [1000664] Lens-free flat cycles induce a cycle of unique aligned entrance-rail joints.
-                                            • [1000602] Disjoint outer rails force consecutive aligned joints into the late half.
-                                              • [1000447] A clean cross-edge of uniquely intersecting maximum rails must cross the aligned joint.
-                                              • [1001200] Lens-free flat cycles have late aligned joints, distance-two disjoint rails, and no 5-cycle.
-                                                • [1001074] Lens-free flat terminal cycles have no lengths six, seven, or nine.
-                                                  • [1001179] Continue the flat-cycle route via toolkit lemma 1000106.
-                                                    • [1001108] Every flat gap-one terminal cycle forces a balanced lens between entrance rails.
-                                        • [1000479] Terminal blockers on a flat-cycle entrance rail are pushed early by their cycle distance.
                                 • [1000619] Maximum ascending-terminal rank is nondecreasing across a maximum-rank terminal edge.
                                   • [1000562] Maximum-rank terminal transfer reaches a charged step or alignment within the rank gap.
                               • [1000617] A two-envelope local inequality isolates the near-top rank shell.
@@ -608,185 +538,70 @@
                   • [1001055] Exact transfer solution gives a rank-sensitive 43/48 bound.
                     • [1000342] A rank-q ascending terminal edge that meets a maximum p-edge endpoint path only once must meet it in a central window, so p<=2q-2 and at most max(0,4q-2p-3) such contacts are possible.
                       • [1000103] For the chosen maximum endpoint paths, the central-window bounds imply 3m <= 2S-n_+ +(1/2)sum_v B(v), with B(v) determined by the terminal rank profile.
-                        • [1000732] Every n-vertex linear 3-graph with no P_ell satisfies m<=((43ell-75)/48)n for ell>=8, with sharper residue-dependent constants and explicit bounds for ell=4,5,6,7.
-                          • [1000371] The exact global deficit controls gap-one switching and lens mass.
-                            • [1000789] Low global defect forces near-top rank and dense switching lenses.
-                              • [1000940] 43/48 near-extremizers carry five-eighths switching and lens mass.
-                                • [1000310] 43/48 near-extremizers reduce to a dense doubly-terminal-single rainbow graph.
-                                  • [1000608] Correction: terminal-shadow lifting requires strong-rainbow, not ordinary rainbow.
-                                    • [1000897] Color-terminal collisions on a rank-monotone terminal path point only backward.
-                                      • [1000222] Backward color-terminal collisions are stabbed by strict rank jumps.
-                                        • [1000532] Many backward collisions through one cut contain a large crossing or nested family.
-                                          • [1000930] A shortest backward collision closes a genuine linear cycle.
-                                            • [1000483] Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack.
-                                              • [1000652] ‹Two nested backward collisions either shortcut to a linear cycle or contain a further collision›
-                                                • [1000453] ‹A saturated nested collision chain yields shortcut cycles or edge-disjoint primitive flank cycles›
-                                                  • [1000778] A saturated nested collision chain packs linearly many edge-disjoint linear cycles.
-                                                    • [1000416] Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles.
-                                                      • [1001180] Continue collision packing via toolkit lemma 1000126.
-                                                        • [1000769] A saturated crossing collision family packs linearly many edge-disjoint cycles.
-                                                          • [1001028] Fixed-cut backward collisions force square-root many edge-disjoint nonspecial cycles.
-                                        • [1000938] Rank spread bounds nondecreasing rainbow terminal paths in a path-free hypergraph.
-                                      • [1001168] A backward color-terminal collision forces double blocking of the colliding source rail.
-                                        • [1000433] A U_11 color-terminal collision has exact blockers except at explicit boundary cases.
-                                          • [1000226] Every interior U_11 color-terminal collision closes a local linear cycle, including the last-edge boundary.
-                                            • [1000148] Every interior U_11 color-terminal collision has rank-sum surplus, a local 3-cycle, or an explicit last-edge boundary cycle.
-                                              • [1000679] Tight U_11 collisions have half-rank central form outside two explicit low-rank boundary cases.
-                                                • [1000678] The nonboundary odd half-rank tight collision is one-sided at the middle joint.
-                                                  • [1000776] ‹The odd tight U_11 collision reduces to a cycle, multiple source-path overlap, or reciprocal terminal exchange›
-                                                    • [1000030] In the odd tight reciprocal-exchange residue the two cross-terminal contacts lie on the same side of the aligned joint.
-                                                      • [1000449] The reciprocal terminal-exchange residue of an odd tight U_11 collision is impossible.
-                                                  • [1000909] ‹A nonboundary odd tight U_11 collision forces a full-length rotation and near-owner-rank output›
-                                                • [1001089] The even half-rank central collision has one surviving two-entrance pattern and a full-length rotation.
-                                              • [1000123] Every interior U_11 color-terminal collision pays plus three or forces owner-to-hit source-path overlap.
-                                                • [1000598] Tight U_11 color-terminal collisions contain a half-size matching of multiple-overlap source-path pairs.
-                                              • [1000173] ‹Every interior U_11 collision pays rank-sum surplus, a rotation packet, or a low-rank boundary triangle›
-                                                • [1001009] Tight-collision rotation outputs split into rank rise, rank-p special/nonascending, or one exact ascending entrance.
-                                              • [1000294] Local 3-cycle collisions have bounded host-edge reuse.
-                                                • [1000260] Triangle collisions force distinct host edges at half the owner edge rank.
-                                                • [1000334] A family of interior U_11 collisions of local 3-cycle type yields at least ceil(|T|/32) pairwise edge-disjoint linear 3-cycles.
-                                                • [1001092] Fourfold triangle-host reuse forces two further color-terminal collisions.
-                                              • [1000377] Equality in the U_11 collision rank-sum bound has an exact central normal form.
-                                                • [1000544] Nonspecial middle edges have strict half-path edge rank.
-                                              • [1001085] Many local triangle collisions force linearly many edge-disjoint 3-cycles.
-                                            • [1000595] An interior U_11 color-terminal collision forces adjacent edge-rank sum at least the colliding rank plus two.
-                                              • [1000171] ‹The sharp 2q-1 cut barrier; the 2q-2 boundary gives overlap except for the rank-4 triangle›
-                                                • [1000896] ‹A 2q-3 cut has three rank patterns, with only explicit low-rank boundary cycles obstructing the normal forms›
-                                                  • [1001188] Near-factor-two collision cuts force overlap or triangles, except one four-pattern terminal-only residue at 2q-4.
-                                                    • [1000718] At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair.
-                                          • [1000866] ‹A U_11 collision gives adjacent rank sum, a host 3-cycle, or two repeated source-path intersections›
-                                            • [1000577] Repeated-intersection collisions contain a linear-size matching of source-path pairs.
-                                        • [1000024] ‹Collision-adjacent double blockers are localized on the source-rail tail›
-                                      • [1000413] U_11 color-terminal collisions are confined to one factor-two edge-rank scale.
-                                        • [1000986] A factor-two edge-rank jump is a barrier to U_11 color-terminal collisions.
-                                    • [1000606] A clean common entrance consumes two distinct strict-superlevel vertices per edge.
-                                      • [1000259] A source rail couples its two terminal stars into one alternating blocker system.
-                                • [1001159] 43/48 near-extremizers carry five-sixteenths top-potential rotation mass.
-                                  • [1000358] Low defect forces thick potential superlevels.
-                                  • [1001014] Sublinear rotation-endpoint reuse would lower the r=3 coefficient to 19/24.
-                              • [1001101] Lens-free dense switching theorem.
-                                • [1000158] Lens-free 43/48 switching stability.
-                                  • [1000116] Lens-free global one-eighth paid switching mass.
-                                    • [1000565] Lens-free local one-eighth paid clean 0-1-1 extraction.
-                                      • [1001018] Lens-free strict two-terminal-gap paid family with certificate terminal retained.
-                                        • [1000729] Certificate-at-either-terminal sublinear congestion closes 43/48.
-                                          • [1000688] Selected strict-gap edges split into same-terminal and uphill certificate classes.
-                                            • [1001126] Higher-terminal certificate anchors reintersect the lower-terminal maximum path.
-                                            • [1000456] An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path.
-                                        • [1000160] Sublinear congestion in the original certificate-centered families alone closes 43/48.
-                                        • [1000503] Lens-free selected strict-gap mass survives as clean fundamental-cycle chords.
-                                          • [1000936] Lens-free selected cycle chords yield theta, outer intersection, or two late gates.
-                                            • [1000434] The selected-terminal cycle-neighbor rail cannot pierce a certificate-anchor lens.
-                                              • [1001158] A long entrance-side replacement region pushes cycle-neighbor gates outside the common-path interval.
-                                            • [1001112] Unique source-path intersections label fundamental-cycle neighbors by reciprocal terminals.
-                                              • [1000376] A reciprocal fundamental-cycle terminal lies within the aligned-gate distance budget.
-                                              • [1000910] A unique selected-common-path intersection with the same-terminal cycle neighbor is exactly the reciprocal terminal.
-                                • [1000613] Lens-free flat terminal incidences are paid by local defect.
-                              • [1000655] Switching families force quadratic entrance-potential mass.
-                                • [1000727] Central-window ordering boosts switching source mass to 185/512.
-                                  • [1001138] ‹Clean-retained switchers gain a one-sixth quadratic source term›
-                                    • [1000567] Clean-retained switchers satisfy four-fifths cell packing.
-                                      • [1000124] Near-minimal source mass forces three-sevenths terminal retention.
-                                        • [1000905] Terminal-retained cheap states force disjoint inside-outside packets.
-                                          • [1000700] Cheap switching states require order at least 127 over 56 times the host potential.
-                                      • [1000149] Near equality in clean-retained packing has a unique period-five normal form.
-                                      • [1000753] Clean-retained switchers satisfy three-quarters cell packing.
-                                        • [1000185] Near-minimal source mass forces five-elevenths terminal retention.
-                                          • [1000949] Near-minimal switching states require order at least 201 over 88 times the host rank.
-                                          • [1001107] Near-minimal source mass forces improved terminal retention on both host halves.
-                                            • [1000347] Cheap vertices carry balanced endpoint-lens packets on both host halves.
-                                          • [1001132] Five-elevenths retention upgrades the disjoint inside-outside packets.
-                                        • [1000731] Retaining the strict rank gap gives three-fifths entrance-contact packing.
-                                    • [1000631] Ascending edges are reciprocal two-point transversals of terminal maximum paths.
-                                      • [1000502] Every terminal-retained switcher yields a source-terminal lens or a two-terminal overlap.
-                                        • [1000762] Terminal-retained edges force repeated maximum-path intersections without lens conversion.
-                                          • [1000515] A terminal-retained strict-gap edge forces a cycle, a forward return, or a flat shared last edge.
-                                            • [1001178] Continue the flat-state route via toolkit lemma 1000058.
-                                              • [1000234] A cycle-free flat terminal-retained state forces a rank-p edge common to both host paths.
-                                    • [1000882] Terminal-only singleton ranks have a cumulative four-slot bound.
-                                      • [1001047] Terminal-retained source mass pays quadratically for left-right contact imbalance.
-                                        • [1000951] Near-minimal switcher source mass forces linear terminal retention on both host halves.
-                                • [1000211] Ascending source potential has a quadratic terminal-capacity budget.
-                                • [1000526] Common-terminal rank windows add a quadratic source-rank bonus.
-                                  • [1000006] Rank windows remove the high-triangle collapse in the source-mass frontier.
-                              • [1000303] At a low-defect terminal, either aligned top rank already costs linear defect or the misaligned case forces many edges that switch from double contact on an anchor path to single contact on the maximum path.
-                                • [1000755] Any sequence asymptotically saturating the 43/48 bound has almost all rank mass on misaligned vertices and carries linear-scale five-eighths switching mass even without endpoint-lens conversion.
-                              • [1000653] Switching edges inject into the half-potential superlevel.
-                          • [1000733] The one-rank saving improves the global bound for every uniformity.
-                    • [1000902] Near equality in the fixed-entrance bound forces five-eighths double-contact mass.
-                      • [1000168] Near-saturated short anchors force linear overlap with every maximum terminal path.
-                        • [1001162] Near-saturated gap-one vertices force a large anchor-to-maximum-path switching matching.
-                          • [1000429] A large gap-one switching family forces a linear packet of top-potential rotation endpoints.
-                            • [1000325] Single-blocker cells yield two top-potential rotation endpoints.
-                              • [1000438] Every single-blocker rotation output pays by rank rise, specialness, flat orientation, or a high-potential joint.
-                                • [1000663] Every dangerous center pays one-eighth into progress or local obstruction.
-                                  • [1000349] 43/48 near-extremizers carry one-eighth paid progress-or-obstruction mass.
-                                    • [1000894] One-eighth paid mass yields one-sixteenth distinct certified switcher edges.
-                                      • [1000551] Near 43/48 there are one-sixteenth many distinct paid-certified 0-1-1 edges.
-                                        • [1001038] Almost all near-extremal potential mass has local one-eighth paid-certified 0-1-1 degree.
-                                          • [1000694] Near 43/48, linearly many paid-certified edges have strict rank gap at both terminals.
-                                            • [1000570] Any sublinear local bound on the paid two-terminal-gap subclass breaks 43/48 saturation.
-                                              • [1001050] Separated mixed singleton contacts force rank sum at least host rank plus four.
-                                                • [1000200] Separated singleton contacts force rank sum at least host rank plus four without a contact-type hypothesis.
-                                                • [1000489] Mixed overlapping singleton contacts have two exact boundary forms.
-                                                  • [1000941] Opposite singleton-contact types have rank sum p plus three only with a superlevel output.
-                                                • [1000538] A mixed singleton pair either pays rank sum or forms a host triangle.
-                                                  • [1000783] A reciprocal common-terminal contact forces foreign-edge transversality below the rank-sum threshold.
-                                                    • [1000898] Terminal-single reciprocity gives contact-type-free foreign transversality below the rank-sum threshold.
-                                                      • [1000645] Complete reciprocal transversality forces repeated intersections among opposite-terminal paths.
-                                              • [1000406] Minimum-terminal rank-gap families force a disjoint two-tier rank packet.
-                                              • [1000361] ‹Payment at one terminal does not yet supply payment at the minimum-rank terminal›
-                                            • [1000409] Local one-eighth strict-gap paid mass survives as clean fundamental-cycle chords.
-                                        • [1000201] Paid 0-1-1 edges are overwhelmingly canonical terminal-cycle chords.
-                                          • [1000850] Paid edges have fundamental cycles inside the clean U_11 graph.
-                                            • [1001029] Disjoint outer maximum rails force aligned gates past half the shorter rail.
-                                              • [1000048] Both-prefix reciprocal terminals force a unique rail gate into the late half.
-                                              • [1000313] Every paid clean-cycle chord yields theta, outer intersection, or two late source gates.
-                                      • [1000851] Two selected contacts from one interior pair force a superlevel rotation output.
-                                      • [1000945] One-sixteenth of near-extremal potential mass lies on distinct edges with strict rank-ascent certificates.
-                                  • [1000267] One-eighth payment is exactly internal superlevel edges or switcher triangles.
-                                  • [1000669] Cell dispersion forces a source-mass / switcher-triangle tradeoff.
-                                    • [1000223] Top centers pay in triangles or simultaneous source mass and lenses.
-                                    • [1000307] Continuous triangle-lens-source frontier at top centers.
-                                  • [1000817] A dangerous global-top center pays one-eighth into switcher triangles or balanced-lens outputs.
-                                    • [1000642] Paid top-output cells give distinct top-potential lens attachments on one host path.
-                                      • [1001198] Continue the balanced-lens route via toolkit lemma 1000369.
-                                        • [1000915] Long nested balanced lenses must intersect off the host.
-                                          • [1001109] Long balanced lenses have pairwise intersecting auxiliary sides.
-                                • [1000280] Consecutive flat rotation outputs are impossible at every potential level.
-                                • [1000443] Flat ascending rotation outputs with no endpoint rise land at aligned defect vertices.
-                                  • [1000436] Distinct flat rotation terminal incidences are globally paid by local defect.
-                                • [1000675] Lens-free exact D+Y cell payment theorem.
-                                  • [1000235] Distinct doubly occupied switching cells give edge-disjoint local triangles.
-                                  • [1000435] Lens-free one-eighth local payment at low-defect misaligned centers.
-                                    • [1000873] One-eighth certificate payment splits into cycle packing or distinct progress outputs.
-                              • [1000470] Switching rotations force a linear packet of high-rank host edges.
-                                • [1000036] Top-rank rotation outputs split into special, flat-oriented, or top-joint states.
-                                  • [1000391] Nonascending top-rank rotation outputs are all-top edges.
-                                    • [1000572] Every all-top edge manufactures a balanced endpoint lens.
-                                    • [1001048] An all-top edge forces a multiple-overlap pair among its three maximum endpoint paths.
-                                  • [1000475] Consecutive top-rank host edges cannot both be forward-flat ascending outputs.
-                                    • [1000506] One-eighth paid-cell dichotomy for top-layer switching families.
-                                      • [1000458] One-eighth X/U-or-nonflat dichotomy at top-layer switching centers.
-                                        • [1000933] A low-defect global-top center has either quadratic omitted-source mass or a linear top-lens packet.
-                                        • [1001061] Every low-defect misaligned center pays one-eighth into terminal retention or monotone output progress.
-                              • [1000238] Doubled rotation packets halve the endpoint-congestion penalty.
-                          • [1000773] Near-saturated gap-one vertices force linearly many balanced endpoint lenses on one maximum path.
-                            • [1000465] Crossing balanced endpoint lenses on one maximum path must intersect off the host.
-                              • [1001163] A clean intersection of crossing balanced endpoint lenses yields two new maximum host-endpoint paths.
-                                • [1001184] Continue the crossing-lens route via toolkit lemma 1000146.
-                                  • [1000594] ‹Connected unique-intersection crossing components have constant rank-position difference›
-                                    • [1001082] ‹A narrow vertex-rank band bounds uniquely-intersecting crossing pairs›
-                                  • [1000782] Crossing balanced endpoint lenses at equal endpoint potential force a second auxiliary intersection.
-                            • [1000967] A terminal-retained switching endpoint recaptures its omitted entrance or the host endpoint on every maximum path.
-                          • [1000231] Deficiency-one path pairs have at most one unbalanced elementary lens.
-                            • [1001120] Overlap-maximal gap-one path pairs have no balanced internal lens and at most one internal lens total.
-                              • [1001076] Overlap-maximal same-endpoint deficiency-d path pairs have at most d internal lenses.
-                                • [1001084] Overlap-maximal gap-one pairs have at most one nontrivial switchable cell, regardless of intersection order.
-                          • [1001114] Near-saturated gap-one states have linear symmetric difference and a dense switching matching.
-                            • [1000975] Every gap-one switching edge manufactures an endpoint lens on the maximum path.
-                          • [1001118] Gap-one local slack splits exactly into anchor slack, foreign low-rank edges, and maximum-path doubles.
-                            • [1000658] Near saturation leaves only O(delta) slots for one-rank-higher nonspecial terminal edges.
+                    • [1001222] Near-saturated gap-one vertices force a (5/8)q-O(1)-delta switching matching between anchor vertices retained and omitted by every maximum path.
+                      • [1000429] A large gap-one switching family forces a linear packet of top-potential rotation endpoints.
+                        • [1000325] Single-blocker cells yield two top-potential rotation endpoints.
+                          • [1000438] Every single-blocker rotation output pays by rank rise, specialness, flat orientation, or a high-potential joint.
+                            • [1000663] Every dangerous center pays one-eighth into progress or local obstruction.
+                              • [1000349] 43/48 near-extremizers carry one-eighth paid progress-or-obstruction mass.
+                                • [1000894] One-eighth paid mass yields one-sixteenth distinct certified switcher edges.
+                                  • [1000551] Near 43/48 there are one-sixteenth many distinct paid-certified 0-1-1 edges.
+                                    • [1001038] Almost all near-extremal potential mass has local one-eighth paid-certified 0-1-1 degree.
+                                      • [1000694] Near 43/48, linearly many paid-certified edges have strict rank gap at both terminals.
+                                        • [1000570] Any sublinear local bound on the paid two-terminal-gap subclass breaks 43/48 saturation.
+                                          • [1001050] Separated mixed singleton contacts force rank sum at least host rank plus four.
+                                            • [1000200] Separated singleton contacts force rank sum at least host rank plus four without a contact-type hypothesis.
+                                            • [1000489] Mixed overlapping singleton contacts have two exact boundary forms.
+                                              • [1000941] Opposite singleton-contact types have rank sum p plus three only with a superlevel output.
+                                            • [1001220] Complete reciprocal transversality below the rank-sum threshold forces repeated intersections among opposite-terminal maximum paths.
+                                          • [1000406] Minimum-terminal rank-gap families force a disjoint two-tier rank packet.
+                                          • [1000361] ‹Payment at one terminal does not yet supply payment at the minimum-rank terminal›
+                                        • [1000409] Local one-eighth strict-gap paid mass survives as clean fundamental-cycle chords.
+                                    • [1000201] Paid 0-1-1 edges are overwhelmingly canonical terminal-cycle chords.
+                                      • [1000850] Paid edges have fundamental cycles inside the clean U_11 graph.
+                                  • [1000851] Two selected contacts from one interior pair force a superlevel rotation output.
+                                  • [1000945] One-sixteenth of near-extremal potential mass lies on distinct edges with strict rank-ascent certificates.
+                              • [1000267] One-eighth payment is exactly internal superlevel edges or switcher triangles.
+                              • [1000669] Cell dispersion forces a source-mass / switcher-triangle tradeoff.
+                                • [1000223] Top centers pay in triangles or simultaneous source mass and lenses.
+                                • [1000307] Continuous triangle-lens-source frontier at top centers.
+                              • [1000817] A dangerous global-top center pays one-eighth into switcher triangles or balanced-lens outputs.
+                                • [1000642] Paid top-output cells give distinct top-potential lens attachments on one host path.
+                                  • [1001198] Continue the balanced-lens route via toolkit lemma 1000369.
+                                    • [1000915] Long nested balanced lenses must intersect off the host.
+                                      • [1001109] Long balanced lenses have pairwise intersecting auxiliary sides.
+                            • [1000280] Consecutive flat rotation outputs are impossible at every potential level.
+                            • [1000443] Flat ascending rotation outputs with no endpoint rise land at aligned defect vertices.
+                              • [1000436] Distinct flat rotation terminal incidences are globally paid by local defect.
+                            • [1000675] Lens-free exact D+Y cell payment theorem.
+                              • [1000235] Distinct doubly occupied switching cells give edge-disjoint local triangles.
+                              • [1000435] Lens-free one-eighth local payment at low-defect misaligned centers.
+                                • [1000873] One-eighth certificate payment splits into cycle packing or distinct progress outputs.
+                          • [1000470] Switching rotations force a linear packet of high-rank host edges.
+                            • [1000036] Top-rank rotation outputs split into special, flat-oriented, or top-joint states.
+                              • [1000391] Nonascending top-rank rotation outputs are all-top edges.
+                                • [1000572] Every all-top edge manufactures a balanced endpoint lens.
+                                • [1001048] An all-top edge forces a multiple-overlap pair among its three maximum endpoint paths.
+                              • [1001212] Top-layer switching packets force one-eighth-scale terminal retention or nonflat paid structure.
+                                • [1000933] A low-defect global-top center has either quadratic omitted-source mass or a linear top-lens packet.
+                                • [1001061] Every low-defect misaligned center pays one-eighth into terminal retention or monotone output progress.
+                                • [1001215] Globalize the all-level one-eighth payment by bounded-congestion monotone charging; this would strictly beat the 43/48 leading coefficient.
+                                  • [1001225] Near 43/48, one of terminal-retained, switcher-triangle, or superlevel-output currency has Omega(S) center-indexed mass, with clean minimum-rank fundamental-cycle certificates retained.
+                          • [1000238] Doubled rotation packets halve the endpoint-congestion penalty.
+                      • [1000773] Near-saturated gap-one vertices force linearly many balanced endpoint lenses on one maximum path.
+                        • [1000465] Crossing balanced endpoint lenses on one maximum path must intersect off the host.
+                          • [1001163] A clean intersection of crossing balanced endpoint lenses yields two new maximum host-endpoint paths.
+                            • [1001184] Continue the crossing-lens route via toolkit lemma 1000146.
+                              • [1000594] ‹Connected unique-intersection crossing components have constant rank-position difference›
+                                • [1001082] ‹A narrow vertex-rank band bounds uniquely-intersecting crossing pairs›
+                              • [1000782] Crossing balanced endpoint lenses at equal endpoint potential force a second auxiliary intersection.
+                        • [1000967] A terminal-retained switching endpoint recaptures its omitted entrance or the host endpoint on every maximum path.
+                      • [1000231] Deficiency-one path pairs have at most one unbalanced elementary lens.
+                        • [1001120] Overlap-maximal gap-one path pairs have no balanced internal lens and at most one internal lens total.
+                      • [1001114] Near-saturated gap-one states have linear symmetric difference and a dense switching matching.
+                        • [1000975] Every gap-one switching edge manufactures an endpoint lens on the maximum path.
+                      • [1001118] Gap-one local slack splits exactly into anchor slack, foreign low-rank edges, and maximum-path doubles.
+                        • [1000658] Near saturation leaves only O(delta) slots for one-rank-higher nonspecial terminal edges.
                     • [1000605] Near equality has a periodic four-cell contact normal form.
                       • [1000543] Near-equality forces linearly many cross-period double contacts.
                     • [1000987] The fixed-entrance conflict transfer extends to linear r-uniform paths.
@@ -798,6 +613,7 @@
                     • [1001083] The fixed-entrance conflict system has a five-fourths integrality gap over fractional packing.
                       • [1000741] The eleven-eighths fixed-entrance incidence coefficient is asymptotically sharp.
                   • [1000012] The recovered direct proof suggests improving the post-capacity step by strengthening path-contact counting with ascendingness; the existing conflict-graph mechanism already reaches the 43/48 coefficient.
+                  • [1001230] If a singleton-transfer walk is within D of the 3/4-per-column optimum, all but at most 4D+6 transitions follow the unique period-four pattern 2,1,0,0.
                 • [1000163] Full endpoint conflict matching sharpens the fixed-entrance incident-rank bound.
             • [1000737] Near the seven-sixths floor, almost all vertices have a special subhypergraph confined to individual potential levels.
               • [1000134] Type-A terminal ranks either branch or form an exact ladder down to an exceptional entrance.
@@ -806,7 +622,6 @@
               • [1000351] Type-A vertices force an exact saturated rank-minus-one terminal fan.
                 • [1000706] Type-A saturation forces rank-preserving propagation to a second terminal edge.
                   • [1000724] Exactly two top terminal edges at a Type-A vertex force a universal two-entrance gate.
-                    • [1000559] Two Type-A top-terminal entrances force a special universal gate two levels below.
                 • [1000763] A Type-A saturated rank-minus-one fan has at least p minus five genuine early private rotations.
                   • [1001139] Type-A rotation expansion forces linearly many near-top-potential vertices on one witness path.
               • [1000632] Type-A potential levels have a two-level predecessor-capacity recurrence.
@@ -822,7 +637,6 @@
             • [1000721] Any violation of charged four-edge spacing forces either the second edge's opposite terminal into the final q2-2 precursor edges of a longest e4-path, or a failure of the natural splice with a longest e1-path to be linear.
             • [1001012] In the φ(v)=5 rank-five four-edge configuration, at least one of the three competing edges meets at least two precursor path edges.
               • [1000760] In the φ(v)=5 pure rank-five configuration, a competing edge meeting the precursor only at a path joint cannot meet the final precursor joint; if it meets the preceding joint a, then φ(c)≥5.
-                • [1001024] In the φ(v)=5 pure rank-five configuration, a rank-five competing edge whose only precursor vertex is the first joint forces both free vertices of g1 to have vertex rank at least 5.
             • [1000522] There are arbitrarily large examples with four ascending nonspecial edges of ranks (R+1,R+1,R+7,R+7) satisfying the stated clean terminal-incidence hypotheses yet violating four-edge spacing.
               • [1000127] For every R≥43 there are four ascending nonspecial edges of ranks (R+1,R+1,R+7,R+7), common-terminal rank R+9, and opposite-terminal ranks R+10 satisfying the stated clean terminal-incidence hypotheses yet violating four-edge spacing.
             • [1000013] If the charged four-edge spacing conjecture holds, then at most 3+ceil(log2 p) qualifying ascending nonspecial edges can share a terminal of rank p, yielding the stated 2/3 leading coefficient bound for P_l^(3)-free linear 3-graphs.
@@ -862,54 +676,14 @@
                   • [1000703] A unique intersection of two equal-potential entrance rails is an aligned joint.
                     • [1000404] Three critical high entrance rails force a two-vertex overlap.
                   • [1001106] A competing high edge can meet a high entrance rail late only as a double blocker.
-              • [1000118] A right-joint high entrance has only one near-central blocker slot.
-                • [1000656] A right-joint high entrance excludes the low terminal from the left half.
-                  • [1001157] Every top-boundary pattern containing d has a forced crossed-terminal orientation.
               • [1000298] A right-joint high entrance pushes the low terminal to the first path edge.
               • [1000903] Right-side high entrances obey a conditional left-prefix recoil and unconditional low-rail crossing.
+              • [1001221] Every top-boundary q,(q+1)^3 pattern containing d has a forced left/right crossed-terminal orientation.
             • [1000240] At the half-rank boundary a charged low-rank edge has a universal central-joint witness.
               • [1000670] Clean contacts two positions apart cannot coexist on a canonical low-rank entrance rail.
                 • [1000555] Every one-rank-higher terminal competitor crosses the low entrance rail.
                   • [1000128] Canonical source rails are downward-complete against common-terminal competitors.
                     • [1001134] Rank-ordered source rails force linear distinguished overlap.
-                      • [1000395] Near-dangerous gap-one states force two near-top source rails with eleven-sixteenths overlap.
-                        • [1000734] Retaining double contacts forces near-complete source-rail coverage and sixteen-elevenths overlap.
-                          • [1000877] Near-dangerous gap-one states admit sixteen-elevenths lens-free overlap.
-                            • [1001098] Sixteen-elevenths lens-free overlap retains linearly many whole distinguished pairs.
-                              • [1000292] Lens-free near-top rails retain twenty-five-eighty-eighths whole distinguished pairs.
-                                • [1000176] A whole ascending chord localizes its opposite terminal to the far end of every avoiding rail.
-                                  • [1001067] A whole chord is endpoint-slack-shallow or its clean source rail reintersects the opposite side.
-                                    • [1001001] High-rank unobstructed whole chords pack into two endpoint vertex-rank zones.
-                                      • [1000161] Top-band common-anchor chords are controlled by opposite-end excess plus return cycles.
-                                        • [1000530] Every whole chord on a canonical common anchor has a second source-rail intersection.
-                                          • [1000439] A middle source-anchor return closes a rank-budgeted chord cycle.
-                                          • [1000837] ‹A whole edge yields a rank-bounded cycle or an equal-length entrance-side exchange›
-                                            • [1000040] ‹Crossing equal-length source-path exchanges have constant rank-position slack unless two source paths meet twice›
-                                            • [1000859] ‹A common exchange return vertex has narrow-band capacity unless source paths overlap twice›
-                                              • [1001113] Large narrow-rank exchange families reduce to repeated source overlap or laminar host intervals.
-                                          • [1000861] Whole common-anchor chords give a cycle, a clean equal exchange, or a return-order inversion.
-                                            • [1000582] Overlap-maximal source-clean paths make entrance-side inversions pay deficit or saturation.
-                                              • [1000932] Every overlap-maximal return-order inversion pays one edge of metric deficit.
-                                            • [1000547] Return-order inversion has an exact two-splice loss identity.
-                                          • [1000914] A whole ascending chord spans at most rank minus one path edges.
-                                            • [1000542] Strict-gap U11 whole chords carry a three-cycle packet.
-                                          • [1001056] Every whole chord on a canonical common anchor has source and terminal returns.
-                                            • [1000242] Reciprocal V-type terminal-single edges close a canonical terminal cycle.
-                                            • [1000746] Reciprocal X-type whole chords create a three-way multiple-overlap state.
-                                            • [1000828] Reciprocal type X is a short nonspecial chord cycle.
-                                          • [1000107] Any source return on the terminal side of a whole chord pays the nonspecial cycle budget.
-                                    • [1000609] Forward common-anchor chords pay quadratic deficit or source-rail reintersection.
-                                    • [1001058] A forward whole-chord reintersection pays a nonspecial cycle budget.
-                                  • [1000832] ‹A paired terminal inside its source endpoint lens spends the remaining edge rank›
-                                • [1000156] The claimed low-rank residue from the lens-free whole-pair braid is invalid because the cumulative fixed-entrance bound was used with the inequality direction reversed.
-                                • [1000345] Every retained whole chord spans another common vertex in the lens-free braid.
-                                • [1000888] ‹Earlier first contact of two common-hub double chords is bounded by the later chord rank›
-                                • [1000901] Two separated endpoint lenses from one source rail are at most half-rank.
-                        • [1001022] Near-dangerous gap-one states force a macroscopic lens-free overlap of near-top maximum paths.
-                          • [1000186] Overlap-maximal maximum path pairs admit no clean complementary switch.
-                          • [1000385] Unlabeled lens-free overlap of maximum paths can be complete.
-                          • [1000985] Overlap-maximal maximum paths contain no clean four-point crossing braid cell.
-                            • [1000333] Adjacent R-contacts either pay length deficit or saturate the Q-segment with common vertices.
                       • [1001127] A common-minimum-terminal family of k ascending edges forces two higher-rank source paths and k/8-O(1) same-type labels, each giving repeated intersections with both paths.
                         • [1000064] ‹A clean joint-to-joint detour cannot shortcut a maximum host path›
                         • [1000147] A same-type overlap packet of size M forces either at least M/2 cycle-bearing labels or at least M/6 common last edges on the two host paths.
@@ -918,10 +692,27 @@
                               • [1001091] ‹Shared edges above the host-path rank are confined to an initial prefix unless a cycle occurs›
                             • [1000997] Many common high-rank edges of two endpoint paths force either many cycle-bearing common edges or many common nonspecial edges traversed through their unique entrances.
                               • [1001033] If two oriented linear paths have cycle-free union, their common edges form a contiguous block; under common unique-entrance traversal that block has the same orientation in both paths.
-                                • [1001008] A consistently oriented shared block has descending rank at every ascending edge.
                         • [1000076] A shared-entrance packet forces the lower-half edge ranks upward.
                       • [1000843] If y is a non-last vertex of a maximum path Q, then every maximum path ending at y meets Q in at least two vertices.
                         • [1001100] M interior U₁₁ color-terminal collisions force at least ⌈M/13⌉ endpoint-disjoint pairs of chosen maximum endpoint paths, each pair sharing at least two vertices.
+                      • [1000395] Near-dangerous gap-one states force two near-top source rails with eleven-sixteenths overlap.
+                        • [1001022] Near-dangerous gap-one states force a macroscopic lens-free overlap of near-top maximum paths.
+                          • [1000186] Overlap-maximal maximum path pairs admit no clean complementary switch.
+                          • [1000385] Unlabeled lens-free overlap of maximum paths can be complete.
+                          • [1000985] Overlap-maximal maximum paths contain no clean four-point crossing braid cell.
+                            • [1000333] Adjacent R-contacts either pay length deficit or saturate the Q-segment with common vertices.
+                        • [1001218] Near saturation yields lens-free near-top rails with at least (5/4-o(1))q overlap and (25/88-o(1))q whole distinguished pairs.
+                          • [1000156] The claimed low-rank residue from the lens-free whole-pair braid is invalid because the cumulative fixed-entrance bound was used with the inequality direction reversed.
+                          • [1000176] A whole ascending chord localizes its opposite terminal to the far end of every avoiding rail.
+                            • [1000832] ‹A paired terminal inside its source endpoint lens spends the remaining edge rank›
+                            • [1001067] A whole chord is endpoint-slack-shallow or its clean source rail reintersects the opposite side.
+                              • [1000609] Forward common-anchor chords pay quadratic deficit or source-rail reintersection.
+                              • [1001058] A forward whole-chord reintersection pays a nonspecial cycle budget.
+                              • [1001001] High-rank unobstructed whole chords pack into two endpoint vertex-rank zones.
+                                • [1000161] Top-band common-anchor chords are controlled by opposite-end excess plus return cycles.
+                          • [1000345] Every retained whole chord spans another common vertex in the lens-free braid.
+                          • [1000888] ‹Earlier first contact of two common-hub double chords is bounded by the later chord rank›
+                          • [1000901] Two separated endpoint lenses from one source rail are at most half-rank.
                       • [1000722] Same-type distinguished overlap yields two balanced endpoint lenses per label.
                       • [1000301] A repeated endpoint-on-path intersection gives a linear cycle or a shared last edge.
                         • [1000364] Endpoint-retaining repeated intersections force a cycle or adjacent source-path last-edge containment.
@@ -931,7 +722,6 @@
                     • [1000792] Every high competitor in the q,(q+1)^3 pattern has a private-singleton, joint, or two-vertex contact with the low entrance rail.
                     • [1000879] Clean single contacts avoid the first and penultimate rail edges.
                       • [1001088] A later terminal-only contact is bounded from the right by the earlier edge rank.
-                        • [1000965] Half-rank q,(q+1)^3 obstructions have a visible high entrance.
               • [1000379] Half-rank charged edges are reciprocally central at both terminals.
                 • [1000363] A half-rank charged edge has the same universal central entrance at both terminals.
               • [1000545] Half-rank boundary edges have reciprocal central-joint constraints at both terminals.
@@ -974,10 +764,34 @@
       • [1000518] Deleting one point from the cyclic STS(13) produces a 12-vertex linear 3-graph in which every remaining edge has rank 5 and is special.
         • [1000585] The 12-vertex punctured cyclic STS(13) contains a linear 5-cycle, so its finite-field additive blow-ups have paths of length 5q-O(1) and cannot improve the asymptotic one-third lower-bound coefficient.
     • [1000112] ‹Current conjecture, proposal, and numerical-evidence map›
+  • [1001233] Inductively, the 1/3 target reduces exactly to paying edges meeting a longest path from path-pair capacity, path-length slack, and the outside extremal defect.
 • [methods01] Reusable combinatorial and extremal tools for the linear-path Turán program.
   • [1001175] Reusable maximum-path rotation, contact-packing, and intersection lemmas.
     • [1000016] Every loss-one double-blocker splice at q=δ enters a canonical two-state endpoint-preserving rotation cycle.
     • [1000187] At q=δ, the blocker sets in a saturated fan are pairwise disjoint; for S=2 they partition the available path vertices, while for S=3 they miss exactly one vertex.
+    • [1000530] Every whole chord on a canonical common anchor has a second source-rail intersection.
+      • [1000439] A middle source-anchor return closes a rank-budgeted chord cycle.
+      • [1000837] ‹A whole edge yields a rank-bounded cycle or an equal-length entrance-side exchange›
+        • [1000040] ‹Crossing equal-length source-path exchanges have constant rank-position slack unless two source paths meet twice›
+        • [1000859] ‹A common exchange return vertex has narrow-band capacity unless source paths overlap twice›
+          • [1001113] Large narrow-rank exchange families reduce to repeated source overlap or laminar host intervals.
+      • [1000861] Whole common-anchor chords give a cycle, a clean equal exchange, or a return-order inversion.
+        • [1000582] Overlap-maximal source-clean paths make entrance-side inversions pay deficit or saturation.
+          • [1000932] Every overlap-maximal return-order inversion pays one edge of metric deficit.
+        • [1001223] Rotations give sum of positive potential drops at single chord contacts <=12p.
+        • [1001224] One-sided returns have quadratic anchor-rank deficit and at most 12(D+1) chords in a top-D rank band.
+          • [1001227] Entrance-side returns with at least one entrance contact contribute O(sqrt(n_+S)+n_+)=o(S); terminal-side returns and two opposite-terminal contacts remain.
+            • [1001228] Two opposite-terminal contacts have sum |p_u-p_v|<=12S and only o(S) relatively imbalanced certificate incidences.
+        • [1001226] Ranks <=R have central-source capacity max(0,4R-2q-1); substantial repeated halving is unavailable.
+        • [1000547] Return-order inversion has an exact two-splice loss identity.
+          • [1001229] A clean mutually crossing m-tail family has total anchor-switch loss >=(m-1)^2.
+      • [1000914] A whole ascending chord spans at most rank minus one path edges.
+        • [1000542] Strict-gap U11 whole chords carry a three-cycle packet.
+      • [1001056] Every whole chord on a canonical common anchor has source and terminal returns.
+        • [1000242] Reciprocal V-type terminal-single edges close a canonical terminal cycle.
+        • [1000746] Reciprocal X-type whole chords create a three-way multiple-overlap state.
+        • [1000828] Reciprocal type X is a short nonspecial chord cycle.
+      • [1000107] Any source return on the terminal side of a whole chord pays the nonspecial cycle budget.
     • [1000058] Flat shared-last-edge states have half-density in the terminal-contact window.
     • [1000106] Four equal-length maximum paths cannot form a chordless cycle of unique intersections.
     • [1000146] Unique auxiliary intersections of crossing endpoint lenses preserve potential-minus-position slack.
@@ -987,10 +801,182 @@
     • [1000394] A terminal-safe sink has endpoint deficiency at most two; in the boundary case, only loss-one states can be local sinks after a double-blocker splice.
     • [1000412] No third path can pierce a balanced lens between maximum rails.
       • [1000493] No third path can cleanly pierce any clean lens between maximum endpoint paths.
+    • [1000432] Relative to the rotated loss-one state, the fixed hole has at least three external incidences, forcing either a disjoint edge or at least three one-contact external chords.
+    • [1000666] Entrance rails on a flat gap-one terminal cycle are blocked on both sides within distance two.
+      • [1000264] Flat gap-one terminal cycles have length at most p minus one.
+      • [1000868] Entrance-label blockers on a flat gap-one cycle immediately create balanced rail lenses.
+        • [1000220] Lens-free flat cycles force the two adjacent edges to be exact opposite-terminal single blockers on every entrance rail.
+          • [1000599] Distance-three entrance rails meet at the intervening cycle terminal.
+          • [1000664] Lens-free flat cycles induce a cycle of unique aligned entrance-rail joints.
+            • [1000602] Disjoint outer rails force consecutive aligned joints into the late half.
+              • [1000447] A clean cross-edge of uniquely intersecting maximum rails must cross the aligned joint.
+              • [1001200] Lens-free flat cycles have late aligned joints, distance-two disjoint rails, and no 5-cycle.
+                • [1001074] Lens-free flat terminal cycles have no lengths six, seven, or nine.
+                  • [1001179] Continue the flat-cycle route via toolkit lemma 1000106.
+                    • [1001108] Every flat gap-one terminal cycle forces a balanced lens between entrance rails.
+        • [1000479] Terminal blockers on a flat-cycle entrance rail are pushed early by their cycle distance.
+    • [1000515] A terminal-retained strict-gap edge forces a cycle, a forward return, or a flat shared last edge.
+    • [1000745] Canonical p=5 entrance paths must cross the rank-five terminal edge itself.
+      • [1000175] Canonical p=5 entrance paths satisfy two simultaneous two-point transversals.
+      • [1001057] A single far-edge contact cannot occur in the middle of a canonical 4445 entrance rail.
+        • [1000913] Double far-edge contact on a canonical 4445 entrance rail is confined to its first two edges.
+    • [1000831] A double triple-gate C4 braid forces a cross-gate blocker.
+    • [1000811] The C4 residue is overlap-rich or a double triple-gate braid.
+    • [1000965] Half-rank q,(q+1)^3 obstructions have a visible high entrance.
+    • [1001024] In the φ(v)=5 pure rank-five configuration, a rank-five competing edge whose only precursor vertex is the first joint forces both free vertices of g1 to have vertex rank at least 5.
+    • [1001029] Disjoint outer maximum rails force aligned gates past half the shorter rail.
+      • [1000048] Both-prefix reciprocal terminals force a unique rail gate into the late half.
+      • [1000313] Every paid clean-cycle chord yields theta, outer intersection, or two late source gates.
+    • [1001076] Overlap-maximal same-endpoint deficiency-d path pairs have at most d internal lenses.
+    • [1001084] Overlap-maximal gap-one pairs have at most one nontrivial switchable cell, regardless of intersection order.
+  • [1001176] Reusable backward-collision and shortcut-cycle lemmas for terminal-shadow paths.
+    • [1000483] Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack.
+    • [1000126] Two crossing backward collisions either shortcut to a linear cycle or expose a further collision.
+    • [1000224] Collision count is bounded by rank spread times squared cycle-packing number.
+  • [1001183] Reusable potential-equality and rank-growth lemmas.
+    • [1000732] Every n-vertex linear 3-graph with no P_ell satisfies m<=((43ell-75)/48)n for ell>=8, with sharper residue-dependent constants and explicit bounds for ell=4,5,6,7.
+      • [1000371] The exact global deficit controls gap-one switching and lens mass.
+        • [1000789] Low global defect forces near-top rank and dense switching lenses.
+          • [1000940] 43/48 near-extremizers carry five-eighths switching and lens mass.
+            • [1000310] 43/48 near-extremizers reduce to a dense doubly-terminal-single rainbow graph.
+              • [1000608] Correction: terminal-shadow lifting requires strong-rainbow, not ordinary rainbow.
+                • [1000897] Color-terminal collisions on a rank-monotone terminal path point only backward.
+                  • [1001168] A backward color-terminal collision forces double blocking of the colliding source rail.
+                    • [1000433] A U_11 color-terminal collision has exact blockers except at explicit boundary cases.
+                      • [1000226] Every interior U_11 color-terminal collision closes a local linear cycle, including the last-edge boundary.
+                        • [1000148] Every interior U_11 color-terminal collision has rank-sum surplus, a local 3-cycle, or an explicit last-edge boundary cycle.
+                          • [1000679] Tight U_11 collisions have half-rank central form outside two explicit low-rank boundary cases.
+                            • [1000678] The nonboundary odd half-rank tight collision is one-sided at the middle joint.
+                              • [1000776] ‹The odd tight U_11 collision reduces to a cycle, multiple source-path overlap, or reciprocal terminal exchange›
+                                • [1000030] In the odd tight reciprocal-exchange residue the two cross-terminal contacts lie on the same side of the aligned joint.
+                                  • [1000449] The reciprocal terminal-exchange residue of an odd tight U_11 collision is impossible.
+                              • [1000909] ‹A nonboundary odd tight U_11 collision forces a full-length rotation and near-owner-rank output›
+                            • [1001089] The even half-rank central collision has one surviving two-entrance pattern and a full-length rotation.
+                          • [1000123] Every interior U_11 color-terminal collision pays plus three or forces owner-to-hit source-path overlap.
+                            • [1000598] Tight U_11 color-terminal collisions contain a half-size matching of multiple-overlap source-path pairs.
+                          • [1000173] ‹Every interior U_11 collision pays rank-sum surplus, a rotation packet, or a low-rank boundary triangle›
+                            • [1001009] Tight-collision rotation outputs split into rank rise, rank-p special/nonascending, or one exact ascending entrance.
+                          • [1000294] Local 3-cycle collisions have bounded host-edge reuse.
+                            • [1000260] Triangle collisions force distinct host edges at half the owner edge rank.
+                            • [1000334] A family of interior U_11 collisions of local 3-cycle type yields at least ceil(|T|/32) pairwise edge-disjoint linear 3-cycles.
+                            • [1001092] Fourfold triangle-host reuse forces two further color-terminal collisions.
+                          • [1000377] Equality in the U_11 collision rank-sum bound has an exact central normal form.
+                            • [1000544] Nonspecial middle edges have strict half-path edge rank.
+                          • [1001085] Many local triangle collisions force linearly many edge-disjoint 3-cycles.
+                        • [1000595] An interior U_11 color-terminal collision forces adjacent edge-rank sum at least the colliding rank plus two.
+                          • [1000171] ‹The sharp 2q-1 cut barrier; the 2q-2 boundary gives overlap except for the rank-4 triangle›
+                            • [1000896] ‹A 2q-3 cut has three rank patterns, with only explicit low-rank boundary cycles obstructing the normal forms›
+                              • [1001188] Near-factor-two collision cuts force overlap or triangles, except one four-pattern terminal-only residue at 2q-4.
+                                • [1000718] At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair.
+                      • [1000866] ‹A U_11 collision gives adjacent rank sum, a host 3-cycle, or two repeated source-path intersections›
+                        • [1000577] Repeated-intersection collisions contain a linear-size matching of source-path pairs.
+                    • [1000024] ‹Collision-adjacent double blockers are localized on the source-rail tail›
+                  • [1000222] Backward color-terminal collisions are stabbed by strict rank jumps.
+                    • [1000532] Many backward collisions through one cut contain a large crossing or nested family.
+                      • [1000930] A shortest backward collision closes a genuine linear cycle.
+                        • [1001209] Continue the primitive-collision route via toolkit lemma 1000483.
+                          • [1000652] ‹Two nested backward collisions either shortcut to a linear cycle or contain a further collision›
+                            • [1000453] ‹A saturated nested collision chain yields shortcut cycles or edge-disjoint primitive flank cycles›
+                              • [1000778] A saturated nested collision chain packs linearly many edge-disjoint linear cycles.
+                                • [1000416] Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles.
+                                  • [1001180] Continue collision packing via toolkit lemma 1000126.
+                                    • [1000769] A saturated crossing collision family packs linearly many edge-disjoint cycles.
+                                      • [1001028] Fixed-cut backward collisions force square-root many edge-disjoint nonspecial cycles.
+                    • [1000938] Rank spread bounds nondecreasing rainbow terminal paths in a path-free hypergraph.
+                  • [1000413] U_11 color-terminal collisions are confined to one factor-two edge-rank scale.
+                    • [1000986] A factor-two edge-rank jump is a barrier to U_11 color-terminal collisions.
+                • [1000606] A clean common entrance consumes two distinct strict-superlevel vertices per edge.
+                  • [1000259] A source rail couples its two terminal stars into one alternating blocker system.
+                    • [1001232] If the rank-q truncations of both terminal stars of an ascending edge have total deficit Delta, their common source rail forces at least q/8-3Delta-O(1) distinct linear 3-cycles, each reusable by at most three base edges.
+            • [1001159] 43/48 near-extremizers carry five-sixteenths top-potential rotation mass.
+              • [1000358] Low defect forces thick potential superlevels.
+              • [1001014] Sublinear rotation-endpoint reuse would lower the r=3 coefficient to 19/24.
+          • [1001101] Lens-free dense switching theorem.
+            • [1000158] Lens-free 43/48 switching stability.
+              • [1000116] Lens-free global one-eighth paid switching mass.
+            • [1000613] Lens-free flat terminal incidences are paid by local defect.
+          • [1000655] Switching families force quadratic entrance-potential mass.
+            • [1000727] Central-window ordering boosts switching source mass to 185/512.
+              • [1001138] ‹Clean-retained switchers gain a one-sixth quadratic source term›
+                • [1000567] Clean-retained switchers satisfy four-fifths cell packing.
+                  • [1000124] Near-minimal source mass forces three-sevenths terminal retention.
+                    • [1000905] Terminal-retained cheap states force disjoint inside-outside packets.
+                  • [1000149] Near equality in clean-retained packing has a unique period-five normal form.
+                  • [1000753] Clean-retained switchers satisfy three-quarters cell packing.
+                    • [1000185] Near-minimal source mass forces five-elevenths terminal retention.
+                      • [1000949] Near-minimal switching states require order at least 201 over 88 times the host rank.
+                      • [1001107] Near-minimal source mass forces improved terminal retention on both host halves.
+                        • [1000347] Cheap vertices carry balanced endpoint-lens packets on both host halves.
+                      • [1001132] Five-elevenths retention upgrades the disjoint inside-outside packets.
+                    • [1000731] Retaining the strict rank gap gives three-fifths entrance-contact packing.
+                • [1000631] Ascending edges are reciprocal two-point transversals of terminal maximum paths.
+                  • [1000502] Every terminal-retained switcher yields a source-terminal lens or a two-terminal overlap.
+                    • [1000762] Terminal-retained edges force repeated maximum-path intersections without lens conversion.
+                      • [1001210] Continue the terminal-retained route via toolkit lemma 1000515.
+                        • [1001178] Continue the flat-state route via toolkit lemma 1000058.
+                          • [1000234] A cycle-free flat terminal-retained state forces a rank-p edge common to both host paths.
+                • [1000882] Terminal-only singleton ranks have a cumulative four-slot bound.
+                  • [1001047] Terminal-retained source mass pays quadratically for left-right contact imbalance.
+                    • [1000951] Near-minimal switcher source mass forces linear terminal retention on both host halves.
+            • [1000211] Ascending source potential has a quadratic terminal-capacity budget.
+            • [1000526] Common-terminal rank windows add a quadratic source-rank bonus.
+              • [1000006] Rank windows remove the high-triangle collapse in the source-mass frontier.
+          • [1000303] At a low-defect terminal, either aligned top rank already costs linear defect or the misaligned case forces many edges that switch from double contact on an anchor path to single contact on the maximum path.
+            • [1000755] Any sequence asymptotically saturating the 43/48 bound has almost all rank mass on misaligned vertices and carries linear-scale five-eighths switching mass even without endpoint-lens conversion.
+          • [1000653] Switching edges inject into the half-potential superlevel.
+      • [1000733] The one-rank saving improves the global bound for every uniformity.
+    • [1000739] At most two ascending terminal edges occupy the odd central rank window.
+      • [1001044] Potential-five pattern 4455 has only two rank-four witness geometries.
+        • [1000968] The low-low witness geometry in the potential-five 4455 pattern is impossible.
+          • [1000553] The surviving 4455 witness geometry forces the right middle joint to potential at least four.
+            • [1000262] If the left 4455 witness is an entrance, every canonical entrance rail must recross the middle edge.
+              • [1001059] Every canonical left-entrance rail in 4455 crosses both the middle edge and the far rank-five edge.
+                • [1000243] Every canonical left-entrance rail in the surviving 4455 branch also crosses the opposite rank-four edge.
+                • [1000809] In the surviving 4455 entrance-a case, the far rank-five edge has only two possible overlap patterns with a canonical three-edge entrance rail.
+            • [1001182] The terminal-a 4455 branch forces high adjacent joints, and the no-c rank-five competitor has one clean form.
+              • [1000791] The clean terminal-left 4455 state forces every low entrance rail to hit three separated edges.
+                • [1000375] Clean terminal-left 4455 entrance rails are fourfold transversals.
+            • [1001205] In entrance-a 4455, a unique far contact forces e5 to private(h3) and g3 across the entire entrance rail.
+        • [1000444] The low-low witness geometry is impossible in the p=5 pattern 4455.
+        • [1000668] ‹In the 4455 low-low witness geometry the second rank-five edge either enters privately through g4 or has two precursor contacts›
+          • [1000283] The two-contact 4455 low-low branch is a rigid four-cycle plus rank-five triangle.
+            • [1000253] The two-contact p=5 4455 low-low state is impossible.
+      • [1001211] Potential-five 4555 reduces to a late/joint/crossed rail normal form with a crossed competitor.
+        • [1000507] Crossed p=5 rank-five competitors force a reciprocal rank-four tail blocker.
+        • [1000821] Potential-five pattern 4555 reduces to exactly two crossed edges and one joint edge.
+          • [1001069] The exact 4555 normal form is a crossed two-pole incidence rectangle.
+            • [1000865] The joint edge in the exact 4555 rectangle is either rail-clean or hits only the private vertex of the third rail edge.
+    • [1000196] Minimum-potential equality forces two-step ascent on every nonspecial edge.
+    • [1000221] Strict ordered-shadow growth forces near-unit parent-rank growth.
+    • [1000274] If the maximum rank q(v) of an ascending nonspecial edge terminal at v equals φ(v)=p, then t(v)−X_v≤((2r−3)/4)p+O_r(1), yielding global coefficient 19/24 when r=3 under top-rank alignment.
+    • [1000278] Refined ascending-edge accounting.
+    • [1000378] Rank-gap mass and aligned-potential mass both subtract from the 43/48-type upper bound; asymptotic extremizers must make both masses negligible.
+    • [1000414] A long terminal-only singleton family forces large total potential on its absent entrances.
+    • [1000559] Two Type-A top-terminal entrances force a special universal gate two levels below.
+    • [1000790] Minimum degree gives an additive gap above the seven-sixths potential floor.
+    • [1000934] Type-A vertices source only ascending nonspecial edges and have an exact degree decomposition.
+    • [1001008] A consistently oriented shared block has descending rank at every ascending edge.
   • [1001189] Reusable threshold-deletion and critical-core lemmas.
     • [1000228] Deleting threshold-degree vertices leaves a universal path forest.
     • [1000276] Minimal equality obstructions are connected and top cycles have a two-contact first ear.
     • [1000389] Minimum-potential equality paths have two canonical special cycle closures.
+    • [1000757] Cheap witness-avoiding singleton deletion forces an exact threshold bridge.
+    • [1001135] At density-plus-one equality every maximum endpoint path has a special last edge.
+    • [1001155] Exact density forces at least 4d minus one above-threshold vertices.
+  • [1000565] Lens-free local one-eighth paid clean 0-1-1 extraction.
+    • [1001018] Lens-free strict two-terminal-gap paid family with certificate terminal retained.
+      • [1000729] Certificate-at-either-terminal sublinear congestion closes 43/48.
+        • [1000688] Selected strict-gap edges split into same-terminal and uphill certificate classes.
+          • [1001126] Higher-terminal certificate anchors reintersect the lower-terminal maximum path.
+          • [1000456] An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path.
+      • [1000160] Sublinear congestion in the original certificate-centered families alone closes 43/48.
+      • [1000503] Lens-free selected strict-gap mass survives as clean fundamental-cycle chords.
+        • [1000936] Lens-free selected cycle chords yield theta, outer intersection, or two late gates.
+          • [1000434] The selected-terminal cycle-neighbor rail cannot pierce a certificate-anchor lens.
+            • [1001158] A long entrance-side replacement region pushes cycle-neighbor gates outside the common-path interval.
+          • [1001112] Unique source-path intersections label fundamental-cycle neighbors by reciprocal terminals.
+            • [1000376] A reciprocal fundamental-cycle terminal lies within the aligned-gate distance budget.
+            • [1000910] A unique selected-common-path intersection with the same-terminal cycle neighbor is exactly the reciprocal terminal.
   • [1000750] External structural tools that can be ported into lower-bound constructions.
     • [1000689] Reusable combinatorial-topology and matching tools for structured hypergraph constructions.
       • [1000115] Sperner, the Connector Theorem, multidimensional Hex, Pouzet’s lattice-direction lemma, and Brouwer’s fixed-point theorem form a short implication cycle with reusable finite combinatorial steps.
@@ -1005,19 +991,13 @@
       • [1000871] The diagonal product of linear 3-graphs is linear with |V(H⊗K)|=|V(H)||V(K)| and |E(H⊗K)|=6|E(H)||E(K)|, making path-length growth the key test for density amplification.
         • [1000814] The diagonal square G₀⊗G₀ contains a 33-edge linear path, so its normalized density at the first forbidden path length is below one third.
         • [1000961] Every linear path in C_s⊗C_s has length at most ⌊(5s²−1)/3⌋; in particular, C₇⊗C₇ has maximum path length at most 81.
+    • [1000498] Any set of pair-universal vertices generates a dense strong-rainbow matching graph.
     • [1000241] For full projective Boolean systems, the joint-XOR obstruction rules out spanning paths in dimensions 3 and 4, while the mechanism fails from dimension 5 onward.
-  • [1001176] Reusable backward-collision and shortcut-cycle lemmas for terminal-shadow paths.
-    • [1000126] Two crossing backward collisions either shortcut to a linear cycle or expose a further collision.
-    • [1000224] Collision count is bounded by rank spread times squared cycle-packing number.
-  • [1001183] Reusable potential-equality and rank-growth lemmas.
-    • [1000196] Minimum-potential equality forces two-step ascent on every nonspecial edge.
-    • [1000221] Strict ordered-shadow growth forces near-unit parent-rank growth.
-    • [1000274] If the maximum rank q(v) of an ascending nonspecial edge terminal at v equals φ(v)=p, then t(v)−X_v≤((2r−3)/4)p+O_r(1), yielding global coefficient 19/24 when r=3 under top-rank alignment.
-    • [1000278] Refined ascending-edge accounting.
-    • [1000378] Rank-gap mass and aligned-potential mass both subtract from the 43/48-type upper bound; asymptotic extremizers must make both masses negligible.
-    • [1000414] A long terminal-only singleton family forces large total potential on its absent entrances.
+  • [1000700] Cheap switching states require order at least 127 over 56 times the host potential.
 • [1000297] Exploratory conjectures and candidate routes for improving linear-path Turán bounds.
   • [1000075] Conjecturally, a P_ℓ-free linear 3-graph admits a 2-shadow decomposition whose sufficiently long label-compatible graph paths lift to linear hypergraph paths, enabling a stronger density bound.
+    • [1001231] Encode a linear triple system by its properly colored 2-shadow: linear hypergraph paths are exactly graph paths whose vertices and edge-colors are all distinct; e(G)=3m.
+    • [1001234] Two alternating reusable hubs give arbitrarily long ordinary 2-shadow paths but linear hypergraph paths of length at most four.
   • [1000151] Conjecturally, every P_ℓ-free linear triple system either has a small high-degree hub set carrying many edges or a bounded-degree remainder dense enough to force a long linear path.
   • [1000578] Random endpoint exposure is proposed to average local path-extension obstructions across the three vertices of each edge, with the goal of deriving a lower average congestion bound than deterministic endpoint assignment.
   • [1000981] Conjecturally, every graph whose edges are partitioned into color-cliques with each vertex in exactly three cliques and sufficiently large average color-clique incidence contains a long induced path with distinct consecutive colors.
@@ -1032,6 +1012,7 @@
     • [1001173] ‹Proof rehearsal 12 — 2026-09-25 22:27 UTC›
     • [1001174] ‹Proof rehearsal 13 — 2026-09-26 04:03 UTC›
     • [proof_rehearsal_g000000000014] ‹Proof rehearsal 14 — 2026-10-01 19:57 UTC›
+    • [proof_rehearsal_g000000000015] ‹Proof rehearsal 15 — 2026-10-01 21:36 UTC›
 • [project_policy] ‹Project-specific policy›
 • [research_nudges] ‹Research nudges›
 • [research_retrospectives] ‹Research retrospectives›

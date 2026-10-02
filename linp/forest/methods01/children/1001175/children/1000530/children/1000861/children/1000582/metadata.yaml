@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "46b614d157300f179b5b94d76985fc1308fd1b3d73a034ff7214da2afa4e73fd"
+created_at: "2026-09-25T21:12:36.641637+00:00"
+id: "1000582"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "856dc915-1ca8-4001-995c-ea28f04add99"
+    detail: "The overlap-maximal exchange is valid because the chosen R-segment meets S only at its boundary and avoids u,v. Equal segment lengths preserve maximality; comparing gained and lost R-vertices forces every removed internal S-vertex to lie on R."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:45:02.432716+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "856dc915-1ca8-4001-995c-ea28f04add99"
+    detail: "The overlap-maximal exchange is valid because the chosen R-segment meets S only at its boundary and avoids u,v. Equal segment lengths preserve maximality; comparing gained and lost R-vertices forces every removed internal S-vertex to lie on R."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:45:02.432716+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1000861"
+position: 0
+research_interface:
+  consequence: "After choosing the clean maximum source path overlap-maximally relative to the common precursor, each entrance-side return interval either has positive integer metric deficit or has a source-side segment entirely saturated by common-precursor vertices."
+  consumer:
+    - "same-terminal selected strict-gap class S"
+    - "order-inversion branch"
+    - "two-path braid classification"
+  given:
+    - "47e9d5af3551 overlap-maximal path replacement argument"
+    - "source-clean maximum x-ending paths avoiding u,v"
+    - "c10cb2dd049c return-order inversion"
+  next_need: "Pack the positive-deficit intervals, and analyze saturated inversion segments via common-vertex order. A long saturated segment should yield either a clean four-point crossing cell forbidden by dcbde59c47b6 or a shared-edge/common-subpath block."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Overlap-maximal source-clean paths make entrance-side inversions pay deficit or saturation."
+statement_sha256: "59321c8641f77462f9c13b62473a8656985b0c392878ed586dc6c48c6711c0d5"
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Overlap-maximal source-clean paths make entrance-side inversions pay deficit or saturation"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 7

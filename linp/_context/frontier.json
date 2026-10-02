@@ -1178,52 +1178,27 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000175",
+      "id": "1001119",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000745",
+      "parent_id": "1000560",
       "pending": false,
       "research_interface": {
-        "consequence": "Every canonical three-edge entrance path for one low entrance must hit both the far rank-five pair and the opposite rank-four pair.",
+        "consequence": "Every maximum b-ending path avoiding u_b is forced to hit the far terminal pair e5∪g4; otherwise it splices to a six-edge path ending at the other low-potential joint c.",
         "consumer": [
-          "p=5 4445 elimination"
+          "p=5 4445 elimination",
+          "two-path uncrossing"
         ],
         "given": [
-          "a6058546bd92 rank-five transversal",
-          "canonical entrance paths",
-          "rank-four edge bounds"
+          "7d676959b033 early high-terminal localization",
+          "canonical entrance path for ascending edge"
         ],
-        "next_need": "Classify a 3-edge b-ending path avoiding {v,u_b} that hits both {d,w} and {c,u_c}. Use the fixed five-path positions: c is middle/far joint, u_c lies in g1∪g2, d,w lie in e5. Show the two required contacts force either a 4-edge path ending at b/c or a forbidden two-contact intersection with one of f_c,e5.",
-        "role": "p=5 4445 double-transversal reduction"
+        "next_need": "Classify the forced R_b contact with e5∪g4. Since R_b avoids v, only the two non-v vertices of e5 and the three vertices of g4 are available, with d=e5∩g4 shared. Show contacts away from d create a 4-edge b- or c-ending path; reduce to R_b passing through d.",
+        "role": "p=5 4445 forced cross-contact"
       },
-      "summary": "Canonical p=5 entrance paths satisfy two simultaneous two-point transversals.",
+      "summary": "Canonical entrance paths in the p=5 4445 pattern must cross the far end of the five-path.",
       "support_status": "supported",
-      "title": "Canonical p=5 entrance paths satisfy two simultaneous two-point transversals"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000913",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001057",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every canonical b-ending entrance rail is now classified relative to e5: either one contact on h1 or h3, or two contacts forming a 3-cycle e5-h1-h2 with h3 as a stem to b. Middle-only contact and all other double-contact placements are impossible.",
-        "consumer": [
-          "p=5 4445 elimination"
-        ],
-        "given": [
-          "a6058546bd92 forced e5 crossing",
-          "unique entrance of f_b"
-        ],
-        "next_need": "Eliminate the remaining cycle-plus-stem state. Compare h3-b-f_b with the visible middle edge g3 through b and the early placement u_b∈g1∪g2. A second edge through b attached to the stem should either produce a four-edge path ending c or force g3 to hit the far 3-cycle."
-      },
-      "summary": "Double far-edge contact on a canonical 4445 entrance rail is confined to its first two edges.",
-      "support_status": "supported",
-      "title": "Double far-edge contact on a canonical 4445 entrance rail is confined to its first two edges"
+      "title": "Canonical entrance paths in the p=5 4445 pattern must cross the far end of the five-path"
     },
     {
       "atlas_height": null,
@@ -1255,207 +1230,21 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000507",
+      "id": "1000740",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000425",
+      "parent_id": "1000736",
       "pending": false,
       "research_interface": {
-        "consequence": "Every canonical entrance path of a crossed rank-five competitor is forced back through x or u in one of its final two precursor edges.",
+        "consequence": "An endpoint chord raises the next joint's rank in the central odd case.",
         "consumer": [
-          "p=5 4555 elimination",
-          "1000368"
-        ],
-        "given": [
-          "5ef77fe98dff crossed competitor normal form",
-          "c0798e59ef02 terminal tail-blocker lemma"
-        ],
-        "next_need": "Take two crossed competitors if available. Their entrance paths each require a late {x,u} blocker. Use linearity and the low potential phi(x)=3 to show both cannot use x independently; if both use u, uncross their tails at u. Also analyze the one-crossed + joint + late residual state separately.",
-        "role": "p=5 4555 reciprocal-tail constraint"
+          "odd central rank window",
+          "path-relative ascending terminal bounds"
+        ]
       },
-      "summary": "Crossed p=5 rank-five competitors force a reciprocal rank-four tail blocker.",
+      "summary": "An endpoint chord raises the next joint's vertex rank.",
       "support_status": "supported",
-      "title": "Crossed p=5 rank-five competitors force a reciprocal rank-four tail blocker"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000865",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001069",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The unique joint competitor has only two possible rail states: completely clean from r3, or it hits r3 at its private vertex. It can never use x or the r2-r3 joint.",
-        "consumer": [
-          "p=5 4555 elimination"
-        ],
-        "given": [
-          "edc545e3d1e7 exact 4555 crossed rectangle"
-        ],
-        "next_need": "Split these two states. In the private-r3 state, j supplies a late contact while both crossed competitors occupy the first two rail edges; seek a four-edge x-ending path using one crossed edge and j. In the clean state, j is a pure two-pole switch through s,v; use entrance/terminal labels on j and the crossed perfect matching."
-      },
-      "summary": "The joint edge in the exact 4555 rectangle is either rail-clean or hits only the private vertex of the third rail edge.",
-      "support_status": "supported",
-      "title": "The joint edge in the exact 4555 rectangle is either rail-clean or hits only the private vertex of the third rail edge"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000444",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001044",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Completely eliminates the {b,c} rank-four witness geometry. Any 4455 obstruction must use witnesses {a,b}.",
-        "consumer": [
-          "p=5 4455 elimination",
-          "1000368"
-        ],
-        "given": [
-          "c88a9ec76475 first-edge terminal localization",
-          "96ce63c6b236 clean/two-contact dichotomy",
-          "37e5daffc494 two-contact exclusion"
-        ],
-        "next_need": "Analyze {a,b}. The b-witness is an entrance with phi(b)=3. Split whether a is an entrance (phi(a)=3) or an opposite terminal (its rank-four entrance is absent from P and phi(a)>=5). Use the edge through a,v plus endpoint-chord and wrong-entrance splices to eliminate both.",
-        "role": "p=5 4455 low-low elimination"
-      },
-      "summary": "The low-low witness geometry is impossible in the p=5 pattern 4455.",
-      "support_status": "supported",
-      "title": "The low-low witness geometry is impossible in the p=5 pattern 4455"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000253",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000283",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The {b,c} witness branch reduces completely to the clean private-g4 entrance state.",
-        "consumer": [
-          "p=5 4455 elimination"
-        ],
-        "given": [
-          "3d216d397f78 rigid two-contact theta",
-          "e6eec0f670ed low-low witnesses"
-        ],
-        "next_need": "Eliminate the clean state: h={x,v,u}, g4={c,x,d}, e5={d,v,w}, with x,d potential 4 and c potential 3, while f_b,f_c close g1-g2-g3 and their high terminals lie in g1. Determine whether u meets g1; if not, g1-g2-g3-g4-h is a rank-five witness for h through x. Use the other rank-five edge e5 or one closing chord to force a second h-entrance.",
-        "role": "p=5 4455 two-contact elimination"
-      },
-      "summary": "The two-contact p=5 4455 low-low state is impossible.",
-      "support_status": "supported",
-      "title": "The two-contact p=5 4455 low-low state is impossible"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000243",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001059",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every canonical a-rail is a threefold transversal: it must meet g3 away from a, e5 away from v, and the opposite rank-four edge f_b away from v. If the g3 contact is c rather than b, the rail must carry the high terminal u_b as an additional forced vertex.",
-        "consumer": [
-          "p=5 4455 elimination"
-        ],
-        "given": [
-          "3925baec6cf9 middle-edge recrossing",
-          "ebd9e72015cd far-edge crossing",
-          "rank-four triangle f_a-g3-f_b"
-        ],
-        "next_need": "Exploit the b-avoiding case first: R_a then contains three distinct forced vertices c, u_b, and one of d,w. Classify their placements on a 3-edge path using linearity and phi(a)=phi(b)=3. If b is present, compare the same rail as a simultaneous entrance rail interaction with both low entrances a,b."
-      },
-      "summary": "Every canonical left-entrance rail in the surviving 4455 branch also crosses the opposite rank-four edge.",
-      "support_status": "supported",
-      "title": "Every canonical left-entrance rail in the surviving 4455 branch also crosses the opposite rank-four edge"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "not_required",
-      "category": "lemma",
-      "id": "1000809",
-      "mathematical_status": "proposal",
-      "obstructed": false,
-      "parent_id": "1001059",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Single far contact is forced to h3. Double far contact is the h1-h2 far 3-cycle; the middle-edge recross is confined to h1 or the first joint r=h1∩h2.",
-        "consumer": [
-          "p=5 4455 elimination"
-        ],
-        "given": [
-          "ebd9e72015cd double-transversal rail",
-          "1000194",
-          "1000206"
-        ],
-        "next_need": "Exclude the remaining private-h1 g3-contact in the double state; then the normal form becomes exact. Try e5,h1,g3,h3 when the g3-contact is private h1: it is a 4-edge path unless h1-g3/e5 labels create the only possible collision."
-      },
-      "summary": "In the surviving 4455 entrance-a case, the far rank-five edge has only two possible overlap patterns with a canonical three-edge entrance rail.",
-      "support_status": "unchecked",
-      "title": "Canonical entrance-a rails in 4455 have only two far-middle overlap normal forms"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000388",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000614",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The single-far-contact entrance-a branch is fully saturated: e5 hits private(h3), while g3 hits h1,h2,h3.",
-        "consumer": [
-          "p=5 4455 elimination"
-        ],
-        "given": [
-          "8b0147365e90 unique far contact on h3",
-          "e277460104ac mandatory g3 recross"
-        ],
-        "next_need": "Classify how g3 hits h1,h2. Either one joint h1-h2 lies in g3, or g3 uses distinct contacts on h1 and h2. In the distinct case all three vertices of g3 are consumed by rail contacts; use the rank-four edge through b. In the common-joint case g3,h1,h2 form a 3-cycle."
-      },
-      "summary": "A single far contact in entrance-a 4455 forces full middle-edge saturation of the entrance rail.",
-      "support_status": "supported",
-      "title": "A single far contact in entrance-a 4455 forces full middle-edge saturation of the entrance rail"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000375",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000791",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every canonical 3-edge rail to the off-path entrance x meets four target edges. In the b-avoiding subcase it contains four distinct prescribed vertices c,u_b,(d or w),(z or u), an extremely tight incidence load.",
-        "consumer": [
-          "p=5 4455 elimination"
-        ],
-        "given": [
-          "b0de0851e2b0 clean terminal-a triple transversal",
-          "rank-four triangle through f_a,f_b"
-        ],
-        "next_need": "Classify four distinct prescribed vertices on a 3-edge linear path. If they occupy all three rail edges, two targets are bridged by one rail edge; use that bridge with the remaining target and the shared-v edge pair e5,h to build a 4-edge path ending at b or a wrong-entrance rank-4/5 path. If two prescribed vertices lie on one rail joint, exploit linearity to identify the unique possible target pair."
-      },
-      "summary": "Clean terminal-left 4455 entrance rails are fourfold transversals.",
-      "support_status": "supported",
-      "title": "Clean terminal-left 4455 entrance rails are fourfold transversals"
+      "title": "An endpoint chord raises the next joint's vertex rank"
     },
     {
       "atlas_height": null,
@@ -1680,6 +1469,33 @@
     {
       "atlas_height": null,
       "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1001217",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000368",
+      "pending": true,
+      "research_interface": {
+        "consequence": "The first p=4 low-rank obstruction has one universal potential-two entrance serving as the middle joint of every maximum v-path.",
+        "consumer": [
+          "potential-oriented local bound",
+          "charged four-edge spacing route"
+        ],
+        "given": [
+          "central-window packing",
+          "path-relative witness localization",
+          "nonspecial unique-entrance property"
+        ],
+        "next_need": "Compare two rank-four longest paths through the universal middle joint x and uncross them."
+      },
+      "summary": "In a (3,4,4,4) potential-four obstruction, the rank-three entrance is the same middle joint of every maximum v-path.",
+      "support_status": "unchecked",
+      "title": "Universal middle-joint entrance in the first potential-four obstruction"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
       "audit_status": "certified",
       "category": "theorem",
       "id": "1000958",
@@ -1889,26 +1705,26 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000926",
+      "id": "1000836",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000546",
+      "parent_id": "1001206",
       "pending": false,
       "research_interface": {
-        "consequence": "Linear target degree forces a linear family of terminal contacts or a linear family of entrance contacts with linear prefix excess.",
+        "consequence": "A linear selected local obstruction has only three macroscopic forms: terminal-retained mass, early switcher-triangle mass, or early V_{>=p} output-edge mass.",
         "consumer": [
-          "paid four-edge spacing",
-          "sublinear local degree"
+          "7e6abf77cbc5 local congestion route",
+          "post-43/48 paid strict-gap analysis"
         ],
         "given": [
-          "linear 3-graph",
-          "single entrance contacts on one host path"
+          "cfa68aa6d0c5 logarithmic-plus-prefix-excess bound",
+          "5a46bb34148e high-excess certificate conversion"
         ],
-        "need": "Use the paid common-anchor structure to bound terminal-retained contacts or large excess phi(x)-a; no automatic lens assertion is used."
+        "next_need": "Attack the three currencies separately with the hypotheses still unused: source-cleanliness and opposite-terminal singleness. For U use reciprocal terminal-path transversality; for triangles use the two clean source rails and opposite-terminal paths; for superlevel outputs exploit nested potential-core reuse/maximum-rank forest structure."
       },
-      "summary": "A bounded excess over host prefixes gives logarithmic-plus-excess contact degree.",
-      "support_status": "supported",
-      "title": "A bounded excess over host prefixes gives logarithmic-plus-excess contact degree"
+      "summary": "A linear selected local family forces U-mass, early triangles, or early superlevel outputs.",
+      "support_status": "dependency_hold",
+      "title": "A linear selected local family forces U-mass, early triangles, or early superlevel outputs"
     },
     {
       "atlas_height": null,
@@ -2200,28 +2016,28 @@
       "atlas_height": null,
       "attention": "focus",
       "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000790",
+      "category": "lemma",
+      "id": "1000715",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000715",
+      "parent_id": "1000646",
       "pending": false,
       "research_interface": {
-        "consequence": "The seven-sixths potential floor has an explicit additive gap controlled by minimum degree. In a dense near-extremal core this is Theta(ell) total potential, giving an additive Theta(ell) improvement to the edge bound beyond (ell-13/6)n.",
+        "consequence": "The first Type-A level cannot appear without at least 2p0-5 exceptional entrance vertices. Thus the seven-sixths floor has an additive total-potential gap of order the minimum endpoint potential, hence order delta in dense cores.",
         "consumer": [
-          "general Turan upper bound",
-          "equality-layer induction"
+          "quantitative equality-layer stability",
+          "grand Turan induction"
         ],
         "given": [
-          "a3bf58adee0d lowest Type-A level expansion",
-          "7cae1cb001ac seven-sixths floor",
-          "6a4d9b21f0c3 minimum-degree potential floor"
+          "92cce33dd917 near-floor stability",
+          "d059bf8631a0 Type-A source orientation",
+          "minimum-degree endpoint-potential floor"
         ],
-        "next_need": "Amplify the additive gap to linear-in-n by using the new theorem a05f009dfcef: every near-extremal witness omits Omega(ell) above-threshold vertices. Try to show these high-degree outside vertices cannot all be Type A at low potential, forcing Omega(ell) local defect per witness and perhaps positive-density exceptional mass."
+        "next_need": "Use several consecutive low Type-A levels, not just the first. Each level sends its nonspecial terminal load into lower levels or R. Iterating the pair-capacity argument may force geometric/linear growth of the exceptional lower set and yield eta bounded below independently of n."
       },
-      "summary": "Minimum degree gives an additive gap above the seven-sixths potential floor.",
+      "summary": "The lowest Type-A potential level forces a large exceptional entrance set.",
       "support_status": "supported",
-      "title": "Minimum degree gives an additive gap above the seven-sixths potential floor"
+      "title": "The lowest Type-A potential level forces a large exceptional entrance set"
     },
     {
       "atlas_height": null,
@@ -2255,26 +2071,27 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000934",
+      "id": "1000624",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000624",
+      "parent_id": "1000320",
       "pending": false,
       "research_interface": {
-        "consequence": "Type-A vertices are perfectly source-oriented: every nonspecial entrance incidence is ascending, and degree equals saturated incoming capacity plus ascending source count. Thus every nonascending nonspecial edge must have its entrance at a non-Type-A vertex.",
+        "consequence": "At a Type-A equality vertex, the four special incidences are almost flat: at least three have rank exactly phi(v), and the only possible defect is a unique edge of rank phi(v)-1.",
         "consumer": [
-          "near-equality stability",
-          "strict-potential DAG"
+          "equality-layer Type-A classification",
+          "special-edge potential orientation"
         ],
         "given": [
-          "Type A",
-          "22362096041e local ascending source inequality"
+          "Type A from 45050da20aaa",
+          "672725540541 critical blocker slots",
+          "3a0d8866aba9 zero-double-blocker consequence"
         ],
-        "next_need": "If S=m+7n/6+eta n, show only O(eta n) vertices are non-Type-A and hence all nonascending edges are sourced in an O(eta n) set. Combine degree/linearity with the minimum-potential level to force eta bounded below independently of n."
+        "next_need": "Orient a deficient special incidence v->e when phi(e)=phi(v)-1. Since an edge rank is common to its three endpoints, endpoints of a special edge differ in potential by at most one whenever all are Type A. Analyze the resulting level-graded 4-regular special hypergraph; degree/flow across potential levels may force a constant-level component with no deficient incidences."
       },
-      "summary": "Type-A vertices source only ascending nonspecial edges and have an exact degree decomposition.",
+      "summary": "Type-A equality vertices have at most one deficient special incidence.",
       "support_status": "supported",
-      "title": "Type-A vertices source only ascending nonspecial edges and have an exact degree decomposition"
+      "title": "Type-A equality vertices have at most one deficient special incidence"
     },
     {
       "atlas_height": null,
@@ -2310,27 +2127,28 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1001135",
+      "id": "1000068",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000068",
+      "parent_id": "1000887",
       "pending": false,
       "research_interface": {
-        "consequence": "At the clean density+1 equality point, maximum endpoint paths are special-ended everywhere. Nonspecial terminal incidences are exactly a bijective family of single blockers on the tail, and the other two special edges form the two far-end closures.",
+        "consequence": "At the density+1 equality point, every vertex lies in exactly three special edges, and all three have rank equal to the vertex potential. Relative to any maximum endpoint path, the special edges occupy exactly the unclaimed blocker slots.",
         "consumer": [
           "equality-layer classification",
-          "special-edge maximal-path structure"
+          "special-edge level decomposition",
+          "grand Turan route"
         ],
         "given": [
-          "c77c818cf1e9 equality local slacks",
-          "3a0d8866aba9 double-blocker compensation",
-          "672725540541 terminal saturation forces double blockers"
+          "c77c818cf1e9 equality characterization",
+          "0e550ff0eadd terminal injection",
+          "fe38f0d97e12 snake-indegree saturation"
         ],
-        "next_need": "Exploit universal special-last behavior. For a special edge h={v,u,w} of rank p, maximum paths ending h can choose any endpoint terminal; compare the three endpoint-normal forms. The two far-end closure edges through each terminal should create a highly overdetermined family of p+1 cycles."
+        "next_need": "Propagate equality across a special edge: if e={a,b,c} is special of rank q, then q=phi(a)=phi(b)=phi(c). Therefore the special-edge subhypergraph partitions into constant-potential components. Use 3-regularity plus specialness to constrain these components; seek a cycle/alternating-witness contradiction."
       },
-      "summary": "At density-plus-one equality every maximum endpoint path has a special last edge.",
+      "summary": "Equality at density plus one gives an exact three-special-edge blocker normal form.",
       "support_status": "supported",
-      "title": "At density-plus-one equality every maximum endpoint path has a special last edge"
+      "title": "Equality at density plus one gives an exact three-special-edge blocker normal form"
     },
     {
       "atlas_height": null,
@@ -2752,34 +2570,6 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1001157",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000656",
-      "pending": false,
-      "research_interface": {
-        "consequence": "All three slot patterns containing d reduce to crossed-terminal chord systems. Only abc has a qualitatively different missing-slot closure. A single general crossed-rectangle uncrossing lemma would eliminate abd,bcd,acd simultaneously.",
-        "consumer": [
-          "top-boundary q,(q+1)^3 elimination",
-          "Astra 11/12 route"
-        ],
-        "given": [
-          "94bd984bc952 d-pressure",
-          "8479f1cdc5d5 a-crossing",
-          "872bb5f4effc conflict graph",
-          "5d36d3a8d0ec/e0bd1cc438eb acd moat"
-        ],
-        "next_need": "Prove crossed-rectangle lemma: on a maximum 2q-2 path with universal central entrance x of potential q-1, three rank-(q+1) common-v edges whose central entrances and far terminals alternate left/right cannot coexist. Use canonical q-edge entrance rails of two crossed edges; each must meet the low gate {x,u} and the third high edge."
-      },
-      "summary": "Every top-boundary pattern containing d has a forced crossed-terminal orientation.",
-      "support_status": "supported",
-      "title": "Every top-boundary pattern containing d has a forced crossed-terminal orientation"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
       "id": "1000298",
       "mathematical_status": "proved",
       "obstructed": false,
@@ -2963,6 +2753,33 @@
     {
       "atlas_height": null,
       "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1001221",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000184",
+      "pending": true,
+      "research_interface": {
+        "consequence": "Every top-boundary triple containing d has terminals forced to opposite sides of the central entrance.",
+        "consumer": [
+          "top-boundary q,(q+1)^3 elimination",
+          "Astra 11/12 route"
+        ],
+        "given": [
+          "top-boundary four-slot normal form",
+          "right-joint blocker localization",
+          "left/right conflict-pair bounds"
+        ],
+        "next_need": "Prove one crossed-rectangle uncrossing lemma eliminating the three d-containing patterns simultaneously."
+      },
+      "summary": "Every top-boundary q,(q+1)^3 pattern containing d has a forced left/right crossed-terminal orientation.",
+      "support_status": "unchecked",
+      "title": "Top-boundary d-patterns have a forced crossed-terminal orientation"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
       "id": "1000363",
@@ -3038,387 +2855,6 @@
       "summary": "The simple-intersection graph of arbitrary common-terminal source rails is triangle-free.",
       "support_status": "supported",
       "title": "The simple-intersection graph of arbitrary common-terminal source rails is triangle-free"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "not_required",
-      "category": "lemma",
-      "id": "1000156",
-      "mathematical_status": "proposal",
-      "obstructed": false,
-      "parent_id": "1000292",
-      "pending": false,
-      "research_interface": {
-        "consumer": [
-          "post-43/48 labeled braid"
-        ],
-        "lesson": "The cumulative fixed-entrance rank bound controls low-rank counts from above, so near saturation at rank q does not force a low-rank prefix. Do not infer a positive-density uniformly lower-rank subfamily from the 25/88 whole-pair count alone.",
-        "replacement_target": "Use chord order, contact multiplicity, or an independent lower-rank distribution theorem; do not reuse the reversed cumulative-rank inequality.",
-        "role": "retracted_claim"
-      },
-      "summary": "The claimed low-rank residue from the lens-free whole-pair braid is invalid because the cumulative fixed-entrance bound was used with the inequality direction reversed.",
-      "support_status": "unchecked",
-      "title": "RETRACTED: low-rank residue from the lens-free whole-pair braid"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000609",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001067",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Forward whole chords without a second source/anchor intersection have ordered anchor deficits growing at least one per two edges, hence quadratic total deficit; top two anchor-rank levels force reintersection.",
-        "consumer": [
-          "same-terminal certificate class S",
-          "common-anchor deficit recurrence",
-          "paid strict-gap local congestion"
-        ],
-        "given": [
-          "ed412ed8e3b1 endpoint-slack/reintersection dichotomy",
-          "common rank-q anchor precursor containing every whole chord",
-          "source-clean maximum paths"
-        ],
-        "next_need": "Use near-top rank concentration or selected-cell geometry to show the quadratic-deficit alternative is too expensive; otherwise exploit the many forced source/anchor reintersections, whose first return arcs satisfy the cycle budget ebd43314756d."
-      },
-      "summary": "Forward common-anchor chords pay quadratic deficit or source-rail reintersection.",
-      "support_status": "supported",
-      "title": "Forward common-anchor chords pay quadratic deficit or source-rail reintersection"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000107",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000530",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every whole chord either has a rank-budgeted source return on the terminal side, or all its extra source/anchor intersections are trapped strictly beyond its entrance on the opposite side.",
-        "consumer": [
-          "common-anchor four-edge spacing",
-          "deficit recurrence",
-          "two-return braid analysis"
-        ],
-        "given": [
-          "76a6a3666ad9 mandatory second source/anchor intersection",
-          "f2925a904b8e nonspecial cycle-rank bound",
-          "canonical clean source rail"
-        ],
-        "next_need": "Combine the one-sided trapped-source alternative with eb7f3a1e87e0 terminal returns. Show the source and terminal return systems cannot both stay on the entrance side for four selected chords, or derive ordered nesting that forces rank/deficit growth."
-      },
-      "summary": "Any source return on the terminal side of a whole chord pays the nonspecial cycle budget.",
-      "support_status": "supported",
-      "title": "Any source return on the terminal side of a whole chord pays the nonspecial cycle budget"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000439",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000530",
-      "pending": false,
-      "research_interface": {
-        "consequence": "A second source/anchor hit between x and u is already a rank-budgeted cycle; together with ebd43314756d, all returns on the u-side of x are cycle-budgeted.",
-        "consumer": [
-          "same-terminal certificate class S",
-          "whole-chord side-location analysis",
-          "return-cycle packing"
-        ],
-        "given": [
-          "76a6a3666ad9 automatic second source/anchor intersection",
-          "f2925a904b8e nonspecial cycle-rank bound",
-          "canonical clean source rail and whole chord on a common anchor"
-        ],
-        "next_need": "The only non-cycle-budgeted residual is when every extra source/anchor intersection lies on the R-side beyond x away from u. Analyze this entrance-side braid using maximum-path balance/overlap maximality and selected-cell geometry."
-      },
-      "summary": "A middle source-anchor return closes a rank-budgeted chord cycle.",
-      "support_status": "supported",
-      "title": "A middle source-anchor return closes a rank-budgeted chord cycle"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001113",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000859",
-      "pending": false,
-      "research_interface": {
-        "consequence": "After excluding pairs of source paths with two common vertices, repeated return vertices have O(D) capacity; the residual contains a large disjoint, nested, or crossing interval family, and crossing has size at most D+1. Once K^(1/4)>D+1, a large laminar family is forced.",
-        "consumer": [
-          "same-terminal selected strict-gap class",
-          "laminar exchange residual",
-          "post-43/48 local congestion"
-        ],
-        "given": [
-          "c0e80055b547 common-return narrow-band capacity",
-          "0b61bef44e7f crossing narrow-band capacity",
-          "interval-graph perfection and Erdos-Szekeres"
-        ],
-        "next_need": "Exploit disjoint/nested equal-length host intervals with opposite-terminal return paths and the two late fundamental-cycle gates from d0a41dede20a."
-      },
-      "summary": "Large narrow-rank exchange families reduce to repeated source overlap or laminar host intervals.",
-      "support_status": "supported",
-      "title": "Large narrow-rank exchange families reduce to repeated source overlap or laminar host intervals"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000547",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000861",
-      "pending": false,
-      "research_interface": {
-        "consequence": "An inverted pair of nearest returns has a quantitative cost: the sum of the losses of the two legal endpoint-preserving tail switches equals the total length of the two reversed middle segments.",
-        "consumer": [
-          "common-path inversion branch",
-          "narrow-rank laminar exchange reduction",
-          "two-late-gate fundamental-cycle residual"
-        ],
-        "given": [
-          "return-order inversion with nearest-return cleanliness",
-          "maximum endpoint paths R and S"
-        ],
-        "next_need": "Bound either canonical switch loss from above using the strict-gap selected-certificate geometry or the two late fundamental-cycle gates. Then the reversed middle core is short, allowing bounded-capacity packing of inversion states."
-      },
-      "summary": "Return-order inversion has an exact two-splice loss identity.",
-      "support_status": "supported",
-      "title": "Return-order inversion has an exact two-splice loss identity"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000932",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000582",
-      "pending": false,
-      "research_interface": {
-        "consequence": "At an overlap-maximal clean maximum source path, every return-order inversion pays at least one edge of strict metric deficit between the source-path tail and the corresponding common-precursor interval.",
-        "consumer": [
-          "same-terminal selected strict-gap class S",
-          "return-order inversion packing",
-          "common-precursor braid analysis"
-        ],
-        "given": [
-          "c10cb2dd049c return-order inversion",
-          "813525f7f639 overlap-maximal source-clean replacement lemma"
-        ],
-        "next_need": "Convert many unit inversion deficits into a rank or path-position budget. The natural target is a telescoping/variation bound on the common-vertex permutation of one source path versus the common precursor, or combine the deficit with the two late reciprocal-terminal gates from the fundamental cycle."
-      },
-      "summary": "Every overlap-maximal return-order inversion pays one edge of metric deficit.",
-      "support_status": "supported",
-      "title": "Every overlap-maximal return-order inversion pays one edge of metric deficit"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000542",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000914",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Each S-edge supports three rank-budgeted cycles through the same nonspecial edge: two terminal cycles plus the common-anchor chord cycle.",
-        "consumer": [
-          "same-terminal certificate class S",
-          "three-cycle packet packing",
-          "cycle overlap route"
-        ],
-        "given": [
-          "strict edge-rank gap at both terminals",
-          "terminal-singleness on chosen maximum paths",
-          "cd38122f7d7d whole-chord anchor cycle",
-          "f2925a904b8e cycle-rank bound"
-        ],
-        "next_need": "Classify overlap among the three external cycle sides. If they are sufficiently disjoint, splice them to create forbidden long terminal paths; if they overlap heavily, charge repeated intersections/gates on the common anchor and terminal paths."
-      },
-      "summary": "Strict-gap U11 whole chords carry a three-cycle packet.",
-      "support_status": "supported",
-      "title": "Strict-gap U11 whole chords carry a three-cycle packet"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000242",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001056",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Reciprocal V-type edges are not merely repeated-intersection states: each canonically closes a terminal suffix into a nonspecial linear cycle of length at most its edge rank.",
-        "consumer": [
-          "same-terminal certificate class S reciprocal V branch",
-          "uphill H reciprocal V branch",
-          "terminal-cycle packing"
-        ],
-        "given": [
-          "terminal-singleness of e on a maximum u-path",
-          "reciprocal contact is the other terminal v",
-          "f2925a904b8e nonspecial cycle-rank bound"
-        ],
-        "next_need": "For a large common-terminal family of reciprocal V-type edges, compare the canonical terminal cycles and their lower-terminal/common-anchor returns; bound cycle overlap or show selected common-anchor structure forces rank deficit."
-      },
-      "summary": "Reciprocal V-type terminal-single edges close a canonical terminal cycle.",
-      "support_status": "supported",
-      "title": "Reciprocal V-type terminal-single edges close a canonical terminal cycle"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000746",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001056",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every reciprocal X-type selected whole chord produces three maximum paths with pairwise multiple overlap, and the anchor/terminal-path pair contains the labeled whole chord {x,u}.",
-        "consumer": [
-          "same-terminal certificate class S",
-          "three-path braid packing",
-          "reciprocal X branch"
-        ],
-        "given": [
-          "eb7f3a1e87e0 two-return common-anchor lemma",
-          "5854d853a44b unique-intersection alignment",
-          "reciprocal X-type terminal-singleness"
-        ],
-        "next_need": "Bound a linear family of such three-way multiple-overlap states sharing one anchor R. Concentration on common gates should force repeated labeled braid cells; dispersed states should force many independent overlaps/cycles."
-      },
-      "summary": "Reciprocal X-type whole chords create a three-way multiple-overlap state.",
-      "support_status": "supported",
-      "title": "Reciprocal X-type whole chords create a three-way multiple-overlap state"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000828",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001056",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The X-type reciprocal branch has an intrinsic cycle of length at most r; only reciprocal type V requires an external-return analysis.",
-        "consumer": [
-          "common-anchor two-return analysis",
-          "paid four-edge spacing",
-          "reciprocal terminal-path packing"
-        ],
-        "given": [
-          "terminal-single reciprocal type X",
-          "strict terminal rank gap r<phi(u)",
-          "f2925a904b8e nonspecial cycle-rank bound"
-        ],
-        "next_need": "For four common-anchor chords, combine this short X-cycle with anchor order. If many chords are reciprocal X, their terminal paths each join the two anchor chord endpoints within r-1 edges; if many are V, each contributes an external third anchor intersection by eb7f3a1e87e0."
-      },
-      "summary": "Reciprocal type X is a short nonspecial chord cycle.",
-      "support_status": "supported",
-      "title": "Reciprocal type X is a short nonspecial chord cycle"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001058",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001067",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The reintersection escape branch carries an explicit rank budget a+b<=r-1.",
-        "consumer": [
-          "common-anchor deficit recurrence",
-          "paid strict-gap four-edge spacing",
-          "whole-pair braid classification"
-        ],
-        "given": [
-          "ed412ed8e3b1 forward whole-chord deficit-or-reintersection dichotomy",
-          "f2925a904b8e nonspecial cycle-rank bound"
-        ],
-        "next_need": "Use several selected whole chords on one common anchor: either many are deficit-shallow and pack into short terminal end-zones, or many create budgeted source/anchor cycles whose first reintersection arcs must overlap or nest."
-      },
-      "summary": "A forward whole-chord reintersection pays a nonspecial cycle budget.",
-      "support_status": "supported",
-      "title": "A forward whole-chord reintersection pays a nonspecial cycle budget"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000345",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000292",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The retained 25/88 whole chords cannot appear as elementary cells of the common-vertex skeleton; every one participates in a higher-order nesting/interleaving pattern.",
-        "consumer": [
-          "post-43/48 labeled braid classification",
-          "common-hub chord interval packing"
-        ],
-        "given": [
-          "3ef8a7c2d941 lens-free near-top rails with 25/88 whole distinguished pairs"
-        ],
-        "next_need": "Exploit the resulting family of Omega(q) paired common vertices, each of whose pair-intervals is pierced by another common vertex. Classify whether many intervals are nested, crossing, or aligned simultaneously in the two rail orders; combine with c7a91e54b028 and 25f8bd73849e."
-      },
-      "summary": "Every retained whole chord spans another common vertex in the lens-free braid.",
-      "support_status": "supported",
-      "title": "Every retained whole chord spans another common vertex in the lens-free braid"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000901",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000292",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Two independent endpoint lenses from the same source rail cannot both extend beyond half the source rank; a longer lens forces a second Q-R intersection inside the two host-side lens paths.",
-        "consumer": [
-          "whole-pair three-rail fan",
-          "post-43/48 labeled braid",
-          "endpoint-lens packing"
-        ],
-        "given": [
-          "one maximum source rail S ending at x",
-          "two clean balanced endpoint lenses from S to host maximum paths Q,R",
-          "host lens sides otherwise disjoint"
-        ],
-        "next_need": "Apply to each of the 25/88 whole pairs. If many source lenses are long, they force extra Q-R common vertices inside their host intervals. If most are short on both hosts, pack the resulting short endpoint intervals at the distinct entrance labels and combine with the paired terminals."
-      },
-      "summary": "Two separated endpoint lenses from one source rail are at most half-rank.",
-      "support_status": "supported",
-      "title": "Two separated endpoint lenses from one source rail are at most half-rank"
     },
     {
       "atlas_height": null,
@@ -3499,6 +2935,164 @@
       "summary": "Adjacent R-contacts either pay length deficit or saturate the Q-segment with common vertices.",
       "support_status": "supported",
       "title": "Adjacent R-contacts either pay length deficit or saturate the Q-segment with common vertices"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "not_required",
+      "category": "lemma",
+      "id": "1000156",
+      "mathematical_status": "proposal",
+      "obstructed": false,
+      "parent_id": "1001218",
+      "pending": false,
+      "research_interface": {
+        "consumer": [
+          "post-43/48 labeled braid"
+        ],
+        "lesson": "The cumulative fixed-entrance rank bound controls low-rank counts from above, so near saturation at rank q does not force a low-rank prefix. Do not infer a positive-density uniformly lower-rank subfamily from the 25/88 whole-pair count alone.",
+        "replacement_target": "Use chord order, contact multiplicity, or an independent lower-rank distribution theorem; do not reuse the reversed cumulative-rank inequality.",
+        "role": "retracted_claim"
+      },
+      "summary": "The claimed low-rank residue from the lens-free whole-pair braid is invalid because the cumulative fixed-entrance bound was used with the inequality direction reversed.",
+      "support_status": "unchecked",
+      "title": "RETRACTED: low-rank residue from the lens-free whole-pair braid"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000609",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001067",
+      "pending": false,
+      "research_interface": {
+        "consequence": "Forward whole chords without a second source/anchor intersection have ordered anchor deficits growing at least one per two edges, hence quadratic total deficit; top two anchor-rank levels force reintersection.",
+        "consumer": [
+          "same-terminal certificate class S",
+          "common-anchor deficit recurrence",
+          "paid strict-gap local congestion"
+        ],
+        "given": [
+          "ed412ed8e3b1 endpoint-slack/reintersection dichotomy",
+          "common rank-q anchor precursor containing every whole chord",
+          "source-clean maximum paths"
+        ],
+        "next_need": "Use near-top rank concentration or selected-cell geometry to show the quadratic-deficit alternative is too expensive; otherwise exploit the many forced source/anchor reintersections, whose first return arcs satisfy the cycle budget ebd43314756d."
+      },
+      "summary": "Forward common-anchor chords pay quadratic deficit or source-rail reintersection.",
+      "support_status": "supported",
+      "title": "Forward common-anchor chords pay quadratic deficit or source-rail reintersection"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000161",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001001",
+      "pending": false,
+      "research_interface": {
+        "consequence": "Top-band common-anchor chords have only 2E+4D+O(1) unobstructed capacity, where E is the single opposite-anchor-end potential excess; all additional chords force distinguished source/anchor returns.",
+        "consumer": [
+          "same-terminal certificate class S",
+          "paid common-anchor congestion",
+          "return-cycle packing"
+        ],
+        "given": [
+          "df81004a830d two-endpoint whole-chord packing",
+          "common rank-q anchor precursor",
+          "anchor entrance endpoint has potential q-1"
+        ],
+        "next_need": "Either globally charge large opposite-end excess E at many dangerous centers, or prove a packing/uncrossing bound for the forced return cycles. Combining either with rank-band mass in the selected S-family would give an o(p) local bound."
+      },
+      "summary": "Top-band common-anchor chords are controlled by opposite-end excess plus return cycles.",
+      "support_status": "supported",
+      "title": "Top-band common-anchor chords are controlled by opposite-end excess plus return cycles"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1001058",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001067",
+      "pending": false,
+      "research_interface": {
+        "consequence": "The reintersection escape branch carries an explicit rank budget a+b<=r-1.",
+        "consumer": [
+          "common-anchor deficit recurrence",
+          "paid strict-gap four-edge spacing",
+          "whole-pair braid classification"
+        ],
+        "given": [
+          "ed412ed8e3b1 forward whole-chord deficit-or-reintersection dichotomy",
+          "f2925a904b8e nonspecial cycle-rank bound"
+        ],
+        "next_need": "Use several selected whole chords on one common anchor: either many are deficit-shallow and pack into short terminal end-zones, or many create budgeted source/anchor cycles whose first reintersection arcs must overlap or nest."
+      },
+      "summary": "A forward whole-chord reintersection pays a nonspecial cycle budget.",
+      "support_status": "supported",
+      "title": "A forward whole-chord reintersection pays a nonspecial cycle budget"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000345",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001218",
+      "pending": false,
+      "research_interface": {
+        "consequence": "The retained 25/88 whole chords cannot appear as elementary cells of the common-vertex skeleton; every one participates in a higher-order nesting/interleaving pattern.",
+        "consumer": [
+          "post-43/48 labeled braid classification",
+          "common-hub chord interval packing"
+        ],
+        "given": [
+          "3ef8a7c2d941 lens-free near-top rails with 25/88 whole distinguished pairs"
+        ],
+        "next_need": "Exploit the resulting family of Omega(q) paired common vertices, each of whose pair-intervals is pierced by another common vertex. Classify whether many intervals are nested, crossing, or aligned simultaneously in the two rail orders; combine with c7a91e54b028 and 25f8bd73849e."
+      },
+      "summary": "Every retained whole chord spans another common vertex in the lens-free braid.",
+      "support_status": "supported",
+      "title": "Every retained whole chord spans another common vertex in the lens-free braid"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000901",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001218",
+      "pending": false,
+      "research_interface": {
+        "consequence": "Two independent endpoint lenses from the same source rail cannot both extend beyond half the source rank; a longer lens forces a second Q-R intersection inside the two host-side lens paths.",
+        "consumer": [
+          "whole-pair three-rail fan",
+          "post-43/48 labeled braid",
+          "endpoint-lens packing"
+        ],
+        "given": [
+          "one maximum source rail S ending at x",
+          "two clean balanced endpoint lenses from S to host maximum paths Q,R",
+          "host lens sides otherwise disjoint"
+        ],
+        "next_need": "Apply to each of the 25/88 whole pairs. If many source lenses are long, they force extra Q-R common vertices inside their host intervals. If most are short on both hosts, pack the resulting short endpoint intervals at the distinct entrance labels and combine with the paired terminals."
+      },
+      "summary": "Two separated endpoint lenses from one source rail are at most half-rank.",
+      "support_status": "supported",
+      "title": "Two separated endpoint lenses from one source rail are at most half-rank"
     },
     {
       "atlas_height": null,
@@ -3588,26 +3182,26 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1001008",
+      "id": "1001033",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1001033",
+      "parent_id": "1000997",
       "pending": false,
       "research_interface": {
-        "consequence": "Inside a width-D common block, all but at most a D/(D+1)-type fraction of a long block cannot be ascending; every ascending block edge forces a strict one-step edge-rank drop.",
+        "consequence": "Cycle-free path unions have a contiguous common-edge block, and one selected common edge with matching unique-entrance traversal synchronizes the orientation of the entire block.",
         "consumer": [
           "common-unique-entrance branch of dedf810e10a7",
-          "narrow-rank decomposition of shared high-rank edges"
+          "type-U same-terminal strict-gap branch"
         ],
         "given": [
-          "e552a55fe162 consistently oriented common block",
-          "canonical definitions of ascending edge, unique entrance, and terminal at an edge"
+          "two linear paths with no linear cycle in their union",
+          "one shared internal nonspecial edge traversed toward both last vertices through its unique entrance"
         ],
-        "next_need": "Pigeonhole the shared high-rank block into additive rank bands. If a long narrow band occurs, many of its edges are nonspecial nonascending; connect those entrance-rank excesses to a global or local defect. If ranks spread widely, use the spread itself as rank-growth progress."
+        "next_need": "In dedf810e10a7 the E-type subfamily therefore lies in a consistently ordered common block. Exploit positions of many selected E-type edges inside this synchronized block; each selected edge either is nonascending or forces its immediate successor to have smaller edge rank."
       },
-      "summary": "A consistently oriented shared block has descending rank at every ascending edge.",
+      "summary": "If two oriented linear paths have cycle-free union, their common edges form a contiguous block; under common unique-entrance traversal that block has the same orientation in both paths.",
       "support_status": "supported",
-      "title": "A consistently oriented shared block has descending rank at every ascending edge"
+      "title": "Cycle-free common unique-entrance edges form one consistently oriented block"
     },
     {
       "atlas_height": null,
@@ -3641,25 +3235,25 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000965",
+      "id": "1001088",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1001088",
+      "parent_id": "1000879",
       "pending": false,
       "research_interface": {
-        "consequence": "The three high competitors cannot all hide their entrances off the maximum terminal path. At least one low-potential high entrance is visible in one of four slots adjacent to the universal central low entrance; if two entrances are absent their terminal witnesses are rigidly L+B or L+R.",
+        "consequence": "Together with df8ad4c65be0, two terminal-only contacts are squeezed simultaneously from the left and right. The formulation uses last-occurrence coordinates and therefore avoids the joint off-by-one issue.",
         "consumer": [
-          "two-rank block",
-          "Astra 11/12 route"
+          "half-rank four-slot classification",
+          "Astra local 3/4 route"
         ],
         "given": [
-          "half-rank q,(q+1)^3 pattern"
+          "two terminal-only single-contact ascending edges on one maximum terminal path"
         ],
-        "next_need": "Split by the visible entrance slot A/B/L/R and use phi(entrance)=q versus phi(x)=q-1. Seek the general analogue of the p=4 splice g1,h,f4,g3: a high edge with visible entrance plus another high edge should bridge across the central pair and create a (q+1)-edge path ending at a potential-q entrance."
+        "next_need": "Apply at p=2q-2 to the four central high-edge witness slots. Two absent-entrance rank-(q+1) competitors must have slot pattern {left joint,right private} or {left joint,right joint}; three absent entrances are impossible."
       },
-      "summary": "Half-rank q,(q+1)^3 obstructions have a visible high entrance.",
+      "summary": "A later terminal-only contact is bounded from the right by the earlier edge rank.",
       "support_status": "supported",
-      "title": "Half-rank q,(q+1)^3 obstructions have a visible high entrance"
+      "title": "A later terminal-only contact is bounded from the right by the earlier edge rank"
     },
     {
       "atlas_height": null,
@@ -4089,958 +3683,27 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "theorem",
-      "id": "1000371",
+      "id": "1000103",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000732",
+      "parent_id": "1000342",
       "pending": false,
       "research_interface": {
-        "consequence": "The global deficit eta_v itself controls the gap-one switching/lens mass. Zero local deficit is possible only in the exact q=p-1 shell and then forces at least floor(5(p-1)/8) balanced endpoint lenses.",
+        "consequence": "Misaligned vertices pay the minimum of the short-anchor Astra cost and the maximum-path singleton-window cost; p>=2q-1 costs zero.",
         "consumer": [
-          "post-43/48 leading-coefficient improvement",
-          "global near-equality analysis",
-          "gap-one lens packing"
+          "post-43/48 optimization",
+          "rank-gap shell reduction"
         ],
         "given": [
-          "a57007500001 exact global/local deficit identity",
-          "fecba48a3ffd gap-one switching matching",
-          "ab7d5ecf773c balanced endpoint-lens conversion"
+          "1000342",
+          "1001055",
+          "1000356"
         ],
-        "next_need": "Prove that a maximum p-edge path cannot support floor(5(p-1)/8)-o(p) distinct balanced endpoint lenses arising from a disjoint switching matching without creating linear total defect. Any fixed positive proportional loss improves the 43/48 leading coefficient."
+        "next_need": "Attack q=p-O(1), beginning with q=p-1."
       },
-      "summary": "The exact global deficit controls gap-one switching and lens mass.",
-      "support_status": "supported",
-      "title": "The exact global deficit controls gap-one switching and lens mass"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000755",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000303",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The global (5/8-o(1))S switching-edge mass near 43/48 survives the failure of automatic balanced endpoint lenses.",
-        "consumer": [
-          "repair of the post-43/48 stability chain",
-          "dense doubly-terminal-single U_11 extraction",
-          "paid-certificate strict-gap extraction"
-        ],
-        "given": [
-          "a57007500001 exact global defect identity",
-          "411fc64479d2 lens-free local switching theorem"
-        ],
-        "next_need": "Retarget downstream stability and paid-certificate lemmas that used d287da5967d5 only for defect concentration and switching mass to this lens-free theorem; keep any genuine lens claims separate."
-      },
-      "summary": "Any sequence asymptotically saturating the 43/48 bound has almost all rank mass on misaligned vertices and carries linear-scale five-eighths switching mass even without endpoint-lens conversion.",
-      "support_status": "supported",
-      "title": "Near 43/48, five-eighths switching mass survives without endpoint lenses"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000211",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000655",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The total entrance-potential weight of all ascending edges is globally controlled by a quadratic endpoint-potential budget; center-indexed switching source mass inherits the same budget.",
-        "consumer": [
-          "94b30079730f quadratic switching source mass",
-          "post-43/48 weighted source route",
-          "potential-flow optimization"
-        ],
-        "given": [
-          "0e550ff0eadd certified nonspecial terminal capacity",
-          "ascending source-to-terminal potential rise"
-        ],
-        "next_need": "Combine with 94b30079730f using potential-gap weights rather than raw phi(x): raw quadratic coefficients are too loose. Seek a lower bound on sum_{switchers}(phi(center)-phi(source)) or a thresholded version that can be compared with reciprocal-stretch / superlevel capacities."
-      },
-      "summary": "Ascending source potential has a quadratic terminal-capacity budget.",
-      "support_status": "supported",
-      "title": "Ascending source potential has a quadratic terminal-capacity budget"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000700",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000905",
-      "pending": false,
-      "research_interface": {
-        "consequence": "A locally cheap post-43/48 center of potential p needs ambient order at least (127/56-o(1))p. Below that ratio, the center must pay a fixed quadratic switching-source gain.",
-        "consumer": [
-          "small-order post-43/48 exclusion",
-          "finite-order stability",
-          "global extremal classification"
-        ],
-        "given": [
-          "1bab77ec4e49 three-sevenths terminal-retention threshold",
-          "terminal-retained entrances are distinct and omitted from the host path"
-        ],
-        "next_need": "Use this to separate small-order and large-order regimes. In the large-order residual, simultaneous packet reuse remains the bottleneck; in the small-order regime the U-heavy escape is unavailable and the clean-retained 445/1024 source-mass bill applies quantitatively."
-      },
-      "summary": "Cheap switching states require order at least 127 over 56 times the host potential.",
-      "support_status": "supported",
-      "title": "Cheap switching states require order at least 127 over 56 times the host potential"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000149",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000567",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Near saturation of the sharp 4/5 clean-retained packing is rigid: apart from O(defect) cells it is the unique period-five pattern double/private/empty/joint/empty.",
-        "consumer": [
-          "post-43/48 clean-retained equality analysis",
-          "periodic cell geometry",
-          "switcher-triangle classification"
-        ],
-        "given": [
-          "7e047fd40dd7 four-fifths clean-retained finite-state packing"
-        ],
-        "next_need": "Impose rank labels and anchor-switching labels on the period-five pattern. Each five-cell block contains one doubly occupied switcher cell and hence a switcher triangle; test whether successive period-five triangles are compatible with the anchor period-four cross-period structure or force paid rotation outputs."
-      },
-      "summary": "Near equality in clean-retained packing has a unique period-five normal form.",
-      "support_status": "supported",
-      "title": "Near equality in clean-retained packing has a unique period-five normal form"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000731",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000753",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Entrance-contact density is at most 3/5, including for the full ascending singleton family. At a near-43/48 center this forces about31p/40 opposite-terminal contacts.",
-        "consumer": [
-          "post-43/48 improvement",
-          "full terminal-contact family"
-        ],
-        "given": [
-          "maximum endpoint path",
-          "ascending entrance singleton contacts of strictly smaller rank"
-        ],
-        "next_need": "Sum the full-family bound globally. Since31/40>11/16, near extremizers must have a positive density of ascending edges that are opposite-terminal singletons at BOTH terminal paths. Analyze these reciprocal configurations while preserving the source-rank constraint."
-      },
-      "summary": "Retaining the strict rank gap gives three-fifths entrance-contact packing.",
-      "support_status": "supported",
-      "title": "Retaining the strict rank gap gives three-fifths entrance-contact packing"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000631",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001138",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every ascending edge gives a two-point transversal {entrance, opposite terminal} of the entire family of maximum paths at either terminal. The earlier gap-one switching recapture lemma is a special case.",
-        "consumer": [
-          "terminal-retained switching branch",
-          "reciprocal terminal-path arguments",
-          "potential-oriented local bound",
-          "two-path lens packing"
-        ],
-        "given": [
-          "ascending nonspecial edge with unique entrance",
-          "definition of endpoint potential and edge rank"
-        ],
-        "next_need": "For a linear terminal-retained switching family at one host center v, apply the universal transversals simultaneously at the distinct retained terminals u_i. Combine with the common host path P_v and endpoint-lens intersection to force either many paths through v or many paths through their distinct omitted entrances x_i."
-      },
-      "summary": "Ascending edges are reciprocal two-point transversals of terminal maximum paths.",
-      "support_status": "supported",
-      "title": "Ascending edges are reciprocal two-point transversals of terminal maximum paths"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000515",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000762",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every terminal-retained target edge reduces to a cycle, an additional forward intersection, a rank/superlevel progress edge, or one exact flat shared-last-edge orientation on the maximum v-path.",
-        "consumer": [
-          "U-branch of bba5d57b341e",
-          "same-terminal strict-gap local congestion",
-          "reciprocal maximum-path packing"
-        ],
-        "given": [
-          "a959e02faa1b repeated intersection for a terminal-retained ascending edge",
-          "41100a9882dd endpoint-on-path cycle-or-shared-last-edge topology",
-          "strict edge-rank gap q<p<=phi(u)"
-        ],
-        "next_need": "Bound the flat residue. For many F-states, the shared host edges are rank-p ascending edges entered from their forward joints by maximum p-edge paths ending at distinct u_i. Compare adjacent flat states with 3c0ac5d646f1 and the exact contact positions of u_i; nonadjacent states should yield a separated family of endpoint-preserving exchanges."
-      },
-      "summary": "A terminal-retained strict-gap edge forces a cycle, a forward return, or a flat shared last edge.",
-      "support_status": "supported",
-      "title": "A terminal-retained strict-gap edge forces a cycle, a forward return, or a flat shared last edge"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000951",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001047",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Avoiding a fixed quadratic switcher-source gain forces not merely |U_v|=Omega(p), but Omega(p) terminal-retained contacts on each side of the host midpoint; the explicit half-packet constant is 5(5-3sqrt2)/112.",
-        "consumer": [
-          "post-43/48 terminal-retained branch",
-          "reciprocal U-lens congestion",
-          "source-mass stability"
-        ],
-        "given": [
-          "a5066873364f generic switcher source-mass floor",
-          "7e047fd40dd7 clean-retained source-mass bound",
-          "e7b1762fb5c8 terminal-retained left-right imbalance penalty",
-          "b032348c1a8a low-defect switching density"
-        ],
-        "next_need": "Apply 6f2198c7d34a to the linear packet on the early host half. For each early U-state, either the reciprocal maximum terminal path recaptures the omitted entrance (source-terminal lens) or it recaptures v. In the latter case, unless there is an additional common vertex inside the long u-v host tail, the two terminal paths form a >half-host balanced lens. Bound congestion of these two certificate types."
-      },
-      "summary": "Near-minimal switcher source mass forces linear terminal retention on both host halves.",
-      "support_status": "supported",
-      "title": "Near-minimal switcher source mass forces linear terminal retention on both host halves"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000259",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000606",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The certified two-terminal alternating blocker topology extends verbatim to the common canonical source rail of a non-maximal ascending edge after rank truncation at q+1.",
-        "consumer": [
-          "gap-one post-43/48 terminal coupling",
-          "two-terminal single-blocker splice route",
-          "flat top-rank edge analysis"
-        ],
-        "given": [
-          "ascending rank-q edge e with canonical source rail",
-          "downward-complete source rail theorem 1c8aac8aa4dd",
-          "rank-truncated nonspecial terminal stars at both terminals"
-        ],
-        "next_need": "In a low-defect flat gap-one state where e is maximum-rank at both terminals, d_u^*,d_v^* are near 11q/8, forcing about 3q/4 single defects per side in the saturated regime. Adapt 437f531f4ad8: opposite-terminal singles at distance two give a q-edge rotation, while the gap-one slack permits q+1; use a third single/blocker or terminal 0-1-1 reciprocity to gain the missing edge."
-      },
-      "summary": "A source rail couples its two terminal stars into one alternating blocker system.",
-      "support_status": "supported",
-      "title": "A source rail couples its two terminal stars into one alternating blocker system"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000483",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000930",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Primitive collision intervals are genuine nonspecial cycles. A primitive span c costs at least c+1 in the colliding edge rank because the first cycle edge has rank at least c but is forced at least one rank below the colliding edge.",
-        "consumer": [
-          "nested collision recursion",
-          "fixed-cut collision packing",
-          "terminal-shadow rank budget"
-        ],
-        "given": [
-          "c9a012c1b82e backward-collision direction",
-          "8924e63f61db strong-rainbow lifting",
-          "f2925a904b8e nonspecial cycle-rank bound"
-        ],
-        "next_need": "Use inclusion-minimal intervals as primitive collision cores. Through one fixed cut they are pairwise crossing; every other collision contains at least one primitive core. Split into many primitive cores versus many outer collisions containing one core."
-      },
-      "summary": "Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack.",
-      "support_status": "supported",
-      "title": "Every inclusion-minimal backward collision is a nonspecial cycle with one unit of rank slack"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000416",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000778",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The nested branch is no longer a qualitative obstruction: it yields square-root-scale edge-disjoint cycle packing. Only ordered crossing collision families remain as the unresolved fixed-cut geometry.",
-        "consumer": [
-          "fixed-rank-jump collision congestion",
-          "terminal-shadow correction route",
-          "post-43/48 obstruction"
-        ],
-        "given": [
-          "76b25cb9c09b crossing/nested extraction",
-          "ac827276704f nested-chain cycle packing"
-        ],
-        "next_need": "Attack the remaining pairwise crossing family. For j_1<...<j_m<t<i_1<...<i_m, compare the collision-adjacent source-rail blockers from 0706a839f70f across the ordered rails; seek a two-rail repeated intersection or a packing bound."
-      },
-      "summary": "Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles.",
-      "support_status": "supported",
-      "title": "Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000938",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000222",
-      "pending": false,
-      "research_interface": {
-        "consequence": "A long ordinary rainbow terminal path is harmless only if it accumulates proportionally many strict edge-rank jumps.",
-        "consumer": [
-          "terminal-shadow path bounds",
-          "narrow-rank-shell analysis",
-          "post-43/48 obstruction"
-        ],
-        "given": [
-          "31cb29f347a8 rank-jump stabbing",
-          "8924e63f61db strong-rainbow lifting",
-          "P_ell^(3)-freeness"
-        ],
-        "next_need": "Obtain long nondecreasing-rank rainbow paths in the dense U_11 terminal graph, or show that any obstruction to such a path already creates local defect. The bound is strongest when the parent ranks occupy few consecutive values."
-      },
-      "summary": "Rank spread bounds nondecreasing rainbow terminal paths in a path-free hypergraph.",
-      "support_status": "supported",
-      "title": "Rank spread bounds nondecreasing rainbow terminal paths in a path-free hypergraph"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000986",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000413",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Large multiplicative rank jumps completely separate the color-terminal collision systems on their two sides.",
-        "consumer": [
-          "geometric edge-rank decomposition",
-          "terminal-pair path lifting",
-          "post-43/48 U_11 analysis"
-        ],
-        "given": [
-          "5ba61d0a77eb multiplicative locality of U_11 collisions",
-          "nondecreasing edge ranks"
-        ],
-        "next_need": "Split any nondecreasing-rank rainbow path at factor-two jumps. Collision systems are confined to the resulting rank blocks, so only blocks with rank ratio <2 require the cycle-packing analysis."
-      },
-      "summary": "A factor-two edge-rank jump is a barrier to U_11 color-terminal collisions.",
-      "support_status": "supported",
-      "title": "A factor-two edge-rank jump is a barrier to U_11 color-terminal collisions"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000598",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000123",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The tight plus-two branch has linear, not square-root, packing: half of all tight collisions yield index-disjoint multiple-overlap source-path pairs.",
-        "consumer": [
-          "multiple-overlap packing",
-          "strong-rainbow extraction",
-          "post-43/48 U_11 analysis"
-        ],
-        "given": [
-          "1b787a779ada tight collisions force owner-to-hit multiple source-path overlap",
-          "simple rainbow terminal-pair path",
-          "backward direction of color-terminal collisions"
-        ],
-        "next_need": "For an index-disjoint family of pairs (R_i,R_j) with x_j on R_i and at least one further common vertex, use 41100a9882dd to split into a linear-cycle branch and a shared-last-edge branch. Bound reuse of shared last edges or extract edge-disjoint cycles."
-      },
-      "summary": "Tight U_11 color-terminal collisions contain a half-size matching of multiple-overlap source-path pairs.",
-      "support_status": "supported",
-      "title": "Tight U_11 color-terminal collisions contain a half-size matching of multiple-overlap source-path pairs"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001009",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000173",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The tight-collision rotation packet reproduces a clean progress-versus-flat split from current-supported local facts alone, without any lens premise.",
-        "consumer": [
-          "rotation-output reuse",
-          "rank-flow iteration",
-          "post-43/48 collision control"
-        ],
-        "given": [
-          "259bdff45872 tight-collision rotation packet",
-          "canonical special/nonspecial and ascending-edge definitions"
-        ],
-        "next_need": "Globalize the four output classes. Rank-rise outputs move upward in edge rank; special and nonascending rank-p outputs have all three vertices at vertex rank at least p; the only non-progress state is an ascending rank-p edge with its unique entrance at the third output vertex of rank p-1. Analyze reuse/iteration of that exact flat ascending state."
-      },
-      "summary": "Tight-collision rotation outputs split into rank rise, rank-p special/nonascending, or one exact ascending entrance.",
-      "support_status": "supported",
-      "title": "Tight-collision rotation outputs split into rank rise, rank-p special/nonascending, or one exact ascending entrance"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000260",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000294",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The local-triangle exception expands into a linear number of distinct hyperedges at only a factor-two loss in edge rank.",
-        "consumer": [
-          "rank-mass expansion from color-terminal collisions",
-          "post-43/48 U_11 analysis",
-          "special-versus-nonspecial host split"
-        ],
-        "given": [
-          "3f165c52a1a6 bounded host-edge reuse",
-          "triangle host lies on the chosen maximum path of the collision owner"
-        ],
-        "next_need": "Split the distinct half-rank host edges into special and nonspecial edges. Many special hosts directly contribute special-edge mass; for many nonspecial hosts, orient by their terminal vertices and test whether their edge-rank/vertex-rank incidences can be fed back into the ascending-edge or terminal-capacity machinery."
-      },
-      "summary": "Triangle collisions force distinct host edges at half the owner edge rank.",
-      "support_status": "supported",
-      "title": "Triangle collisions force distinct host edges at half the owner edge rank"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000334",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000294",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The explicit local-triangle exception is not merely a source of distinct host edges: a constant fraction of triangle collisions give pairwise edge-disjoint linear 3-cycles.",
-        "consumer": [
-          "color-terminal collision cycle-packing number",
-          "strong-rainbow extraction",
-          "post-43/48 U_11 obstruction"
-        ],
-        "given": [
-          "3f165c52a1a6 bounded host-edge reuse for local 3-cycle collisions",
-          "pairwise disjoint distinguished parent-edge pairs after parity selection"
-        ],
-        "next_need": "Combine this linear triangle-cycle packing with the nontriangle rank-sum surplus r_j+r_{j+1}>=r_i+3. The triangle part is now directly controlled by the parent-edge cycle-packing number nu: T_triangle<=32nu. Seek an analogous additive bound for the nontriangle part from summed rank surplus."
-      },
-      "summary": "A family of interior U_11 collisions of local 3-cycle type yields at least ceil(|T|/32) pairwise edge-disjoint linear 3-cycles.",
-      "support_status": "supported",
-      "title": "Local 3-cycle collisions force a linear packing of edge-disjoint 3-cycles"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001092",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000294",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The extremal host-reuse case is not inert: every host edge used by four local triangle collisions creates at least two further color-terminal collisions.",
-        "consumer": [
-          "triangle-host reuse analysis",
-          "color-terminal collision amplification",
-          "post-43/48 U_11 congestion"
-        ],
-        "given": [
-          "3f165c52a1a6 parity-selected triangle family with disjoint parent-edge pairs",
-          "simple rainbow terminal-pair path"
-        ],
-        "next_need": "Feed these induced collisions back into the crossing/nested collision machinery. A family with many fourfold-reused hosts either expands the collision count or, after removing such hosts, improves the effective host-reuse constant below four."
-      },
-      "summary": "Fourfold triangle-host reuse forces two further color-terminal collisions.",
-      "support_status": "supported",
-      "title": "Fourfold triangle-host reuse forces two further color-terminal collisions"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000544",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000377",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The parity of the host path creates a sharp middle-edge distinction: an odd-length path gives a one-unit nonspecial edge-rank penalty at its unique middle edge, while an even-length path pins the unique entrance when the middle-edge rank is minimal.",
-        "consumer": [
-          "tight U_11 color-terminal collision triangles",
-          "middle-edge rank arguments",
-          "path-center obstruction"
-        ],
-        "given": [
-          "linear path",
-          "unique entrance characterization of a nonspecial edge"
-        ],
-        "next_need": "Apply to 532b773126a8. Even-owner equality triangles with nonspecial host have host edge rank at least q+1, strictly above the bare half-rank q. Odd-owner equality triangles with a nonspecial rank-(q+1) host force its unique entrance to be the central joint c_j."
-      },
-      "summary": "Nonspecial middle edges have strict half-path edge rank.",
-      "support_status": "supported",
-      "title": "Nonspecial middle edges have strict half-path edge rank"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000678",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000679",
-      "pending": false,
-      "research_interface": {
-        "consequence": "In every nonboundary odd tight collision the lower-rank parent enters at the middle joint and the higher-rank parent returns on the left middle edge.",
-        "consumer": [
-          "odd tight collision rotation output",
-          "strong-rainbow extraction",
-          "post-43/48 U_11 path route"
-        ],
-        "fence": "Excludes the sole boundary m=2, E_{j+1}=h, which is already isolated in 9b023ed3d700.",
-        "given": [
-          "9b023ed3d700 odd central tight case",
-          "49080cbf1371 stronger opposite-terminal contact bound",
-          "608468bb403b non-last-edge exact contacts"
-        ]
-      },
-      "summary": "The nonboundary odd half-rank tight collision is one-sided at the middle joint.",
-      "support_status": "supported",
-      "title": "The nonboundary odd half-rank tight collision is one-sided at the middle joint"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000449",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000030",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The hardest simple-rail residual does not exist. Every odd collision attaining the minimum r_i+2 adjacent-rank sum forces extra topology beyond its mandatory central 3-cycle: another cycle or multiple source-path overlap.",
-        "consumer": [
-          "odd half-rank collision packing",
-          "tight U_11 color-terminal collision analysis",
-          "post-43/48 terminal-pair path route"
-        ],
-        "given": [
-          "ac73dd583c10 odd tight collision trichotomy",
-          "080bb595a7d0 same-side reciprocal contacts",
-          "9b00516e2965 one-sided central triangle"
-        ],
-        "next_need": "Count the two surviving odd-tight outcomes. A Q∪R_j cycle is attached to the collision owner through the fixed central prefix; a multiple intersection R_j,R_{j+1} can be converted into a bounded-reuse overlap certificate. Combine with 48125e6d5ad9, which already gives linear edge-disjoint packing for the local triangle family."
-      },
-      "summary": "The reciprocal terminal-exchange residue of an odd tight U_11 collision is impossible.",
-      "support_status": "supported",
-      "title": "The reciprocal terminal-exchange residue of an odd tight U_11 collision is impossible"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001089",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000679",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Outside the separated rank-4 exception, an even tight collision has exactly the B/R entrance pair and emits a full-length rotation packet.",
-        "consumer": [
-          "tight collision rotation output",
-          "strong-rainbow extraction",
-          "post-43/48 U_11 path route"
-        ],
-        "fence": "Does not apply to the low-rank even case r_i=4 isolated in 9b023ed3d700.",
-        "given": [
-          "9b023ed3d700 even central tight case with m>=3",
-          "49080cbf1371 opposite-terminal contact bound",
-          "a51a7f9cff95 two-contact rotation"
-        ]
-      },
-      "summary": "The even half-rank central collision has one surviving two-entrance pattern and a full-length rotation.",
-      "support_status": "supported",
-      "title": "The even half-rank central collision has one surviving two-entrance pattern and a full-length rotation"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001085",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000148",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The local linear-3-cycle exception cannot occur with unbounded reuse: M such collisions force Omega(M) pairwise edge-disjoint linear 3-cycles.",
-        "consumer": [
-          "U_11 color-terminal collision counting",
-          "post-43/48 local congestion",
-          "cycle-packing obstruction"
-        ],
-        "given": [
-          "20ee63fa1617 local 3-cycle alternative",
-          "rainbow terminal-pair path",
-          "linearity"
-        ],
-        "next_need": "Combine this with the +3 edge-rank-sum alternative. A large family of color-terminal collisions now forces either substantial rank-sum growth or a linear packing of edge-disjoint nonspecial 3-cycles; seek a global defect/edge-rank charge for the latter."
-      },
-      "summary": "Many local triangle collisions force linearly many edge-disjoint 3-cycles.",
-      "support_status": "supported",
-      "title": "Many local triangle collisions force linearly many edge-disjoint 3-cycles"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000595",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000226",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The two parent edges adjacent to a hit terminal vertex jointly carry more edge rank than the colliding edge by at least two.",
-        "consumer": [
-          "edge-rank recurrence along collision intervals",
-          "strong-rainbow extraction",
-          "post-43/48 U_11 path analysis"
-        ],
-        "given": [
-          "220a14637b5f path-relative central-window packing",
-          "c9a012c1b82e rank drop at a color-terminal collision",
-          "U_11 interior collision"
-        ],
-        "next_need": "Iterate the inequality along nested or chained collision intervals. A collision owner can exceed the later adjacent hit-edge rank only by at most the earlier adjacent rank minus two; seek a Fibonacci-type or additive-growth obstruction for long collision chains."
-      },
-      "summary": "An interior U_11 color-terminal collision forces adjacent edge-rank sum at least the colliding rank plus two.",
-      "support_status": "supported",
-      "title": "An interior U_11 color-terminal collision forces adjacent edge-rank sum at least the colliding rank plus two"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000718",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001188",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The near-factor-two expansion has now descended another level: at a q to 2q-4 jump, every collision except one four-pattern terminal-only central residue already yields multiple source-path overlap or a local 3-cycle.",
-        "consumer": [
-          "2q-4 fixed-cut collision control",
-          "rank-band decomposition",
-          "post-43/48 U_11 terminal-pair path route"
-        ],
-        "given": [
-          "867efd696575 universal collision rank floor",
-          "certified tight even/odd normal forms",
-          "ed2ef3140f4f and 31582b0327ff overlap-or-triangle reductions",
-          "028c2c3f7167 terminal-only singleton window"
-        ],
-        "next_need": "Eliminate or charge the four terminal-only ordered pairs in residue (3). Use the absent unique entrances of E_j,E_{j+1} and their chosen source paths; consecutive-rank common-terminal transversality or reciprocal terminal-path central localization may force a second cycle or multiple overlap."
-      },
-      "summary": "At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair.",
-      "support_status": "supported",
-      "title": "At a 2q-4 cut the only new collision residue is a four-pattern terminal-only central pair"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1001159",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000940",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Near 43/48, at least (5/16-o(1))S center-indexed maximum-path rotations end at vertices whose endpoint potential is at least that of the center.",
-        "consumer": [
-          "post-43/48 leading-coefficient improvement",
-          "global rotation-endpoint reuse",
-          "potential-flow packing"
-        ],
-        "given": [
-          "d287da5967d5 global five-eighths switching mass",
-          "5f8d96bf566a single-blocker rotation packet"
-        ],
-        "next_need": "Bound reuse of the same high-potential vertex across the center-indexed sets R(v), or show high reuse itself forces additional local defect. Any fixed proportional loss improves the 43/48 leading coefficient."
-      },
-      "summary": "43/48 near-extremizers carry five-sixteenths top-potential rotation mass.",
-      "support_status": "supported",
-      "title": "43/48 near-extremizers carry five-sixteenths top-potential rotation mass"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000160",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001018",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The theorem-closing target is a single certificate-centered local statement on the original G_v-type families, with global mass S/8 rather than the quotient S/16.",
-        "consumer": [
-          "post-43/48 coefficient improvement",
-          "common-anchor local congestion route"
-        ],
-        "given": [
-          "e2dcd798f528 center-incidence strict-gap extraction before its factor-two quotient",
-          "7ddb7afd3083 original selected common-anchor local families"
-        ],
-        "next_need": "Prove o(p) for the strict-gap source-clean doubly-terminal-single edges in one original selected common-anchor family centered at a rank-p vertex. The opposite terminal may have smaller, equal, or larger vertex rank than p; no minimum-terminal orientation is required."
-      },
-      "summary": "Sublinear congestion in the original certificate-centered families alone closes 43/48.",
-      "support_status": "supported",
-      "title": "Sublinear congestion in the original certificate-centered families alone closes 43/48"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001158",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000434",
-      "pending": false,
-      "research_interface": {
-        "consequence": "For a replacement region longer than half the source path, a unique common-path gate of a fundamental-cycle neighbor cannot lie in the open common-path side. However, for the neighbor sharing the selected terminal, ccb173020cad identifies that unique gate as u, which is already outside the entrance-side interval by construction; this branch therefore gives no additional restriction there.",
-        "consumer": [
-          "selected common-path/fundamental-cycle coupling",
-          "same-terminal strict-gap local congestion"
-        ],
-        "given": [
-          "d0a41dede20a two late fundamental-cycle gates",
-          "bbaf9e0b90fc explicit entrance-side equal-length replacement region",
-          "6118d601301a no-piercing constraint for a cycle-neighbor source path"
-        ],
-        "next_need": "Use ccb173020cad instead: compare the aligned u-index on the selected common path and neighbor source path with the late aligned s-index on R_e/R_f and with 52ecd179e799. Seek a nontrivial index inequality or rank-gap budget."
-      },
-      "summary": "A long entrance-side replacement region pushes cycle-neighbor gates outside the common-path interval.",
-      "support_status": "supported",
-      "title": "A long entrance-side replacement region pushes cycle-neighbor gates outside the common-path interval"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000376",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001112",
-      "pending": false,
-      "research_interface": {
-        "consequence": "In the hard unique-intersection residual, each reciprocal terminal lies within the aligned gate index of that gate on the corresponding neighboring maximum source path.",
-        "consumer": [
-          "same-terminal selected strict-gap class S",
-          "fundamental-cycle gate-position analysis",
-          "post-43/48 local congestion"
-        ],
-        "given": [
-          "d0a41dede20a unique late fundamental-cycle gate residual",
-          "f4f2089110b2 reciprocal-terminal labeling",
-          "f2925a904b8e nonspecial cycle-rank bound"
-        ],
-        "next_need": "If the neighboring source path meets the selected common precursor uniquely at u, align the u-index on both paths and combine it with this distance inequality and the late lower bound t>=ceil((r-1)/2). Seek an ordered-rank or endpoint-zone capacity bound."
-      },
-      "summary": "A reciprocal fundamental-cycle terminal lies within the aligned-gate distance budget.",
-      "support_status": "supported",
-      "title": "A reciprocal fundamental-cycle terminal lies within the aligned-gate distance budget"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000910",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001112",
-      "pending": false,
-      "research_interface": {
-        "consequence": "For the cycle neighbor sharing the selected terminal v, a unique intersection with the selected common path is forced to be the reciprocal terminal u and is a same-index aligned joint.",
-        "consumer": [
-          "selected common-path/fundamental-cycle coupling",
-          "same-terminal strict-gap residual",
-          "gate-position analysis"
-        ],
-        "given": [
-          "f4f2089110b2 reciprocal-terminal labeling in the unique source-path intersection branch",
-          "selected common path contains both non-v vertices x,u of e",
-          "5854d853a44b unique-intersection alignment"
-        ],
-        "next_need": "Combine the aligned u-index on A and R_f with 52ecd179e799, the late s-index on R_e/R_f, and the localization of u relative to x on A. Do not count mere exclusion of u from an entrance-side replacement interval as additional no-piercing progress."
-      },
-      "summary": "A unique selected-common-path intersection with the same-terminal cycle neighbor is exactly the reciprocal terminal.",
-      "support_status": "supported",
-      "title": "A unique selected-common-path intersection with the same-terminal cycle neighbor is exactly the reciprocal terminal"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000456",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000688",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Against the selected certificate anchor, the uphill branch always has repeated intersection; the aligned-X-X escape in the terminal-path comparison 25b5948e8d37 disappears.",
-        "consumer": [
-          "uphill class H local congestion",
-          "a54a1a6159e1 post-43/48 closure"
-        ],
-        "given": [
-          "9e490cc47ca8 uphill certificate class",
-          "eb7f3a1e87e0 two-return common-anchor lemma"
-        ],
-        "next_need": "Bound reuse/order of these lower-path / higher-anchor repeated intersections across many edges assigned to one lower terminal."
-      },
-      "summary": "An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path.",
-      "support_status": "supported",
-      "title": "An uphill higher-terminal certificate forces a repeated intersection with the lower terminal path"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001126",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000688",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Every uphill certificate contributes either a linear cycle with the fixed lower-terminal maximum path or a certificate anchor containing that path's fixed last edge; U-type lower-path contacts force all extra anchor/path intersections outside the owner edge.",
-        "consumer": [
-          "uphill certificate class H",
-          "post-43/48 assigned local congestion"
-        ],
-        "given": [
-          "selected common-anchor certificate at the higher terminal",
-          "5854d853a44b unique-intersection rigidity for maximum endpoint paths",
-          "41100a9882dd repeated endpoint-on-path cycle-or-shared-last-edge theorem"
-        ],
-        "next_need": "For many H-edges assigned to one lower terminal v, split by cycle-bearing certificate anchors versus anchors containing the single fixed last edge of P_v. Bound reuse of the fixed edge across the higher-terminal certificate anchors, using their distinct owner edges and fundamental-cycle data."
-      },
-      "summary": "Higher-terminal certificate anchors reintersect the lower-terminal maximum path.",
-      "support_status": "supported",
-      "title": "Higher-terminal certificate anchors reintersect the lower-terminal maximum path"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000613",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001101",
-      "pending": false,
-      "research_interface": {
-        "consequence": "All rank-tight ascending terminal incidences are globally paid by local defect; near 43/48 they are o(S).",
-        "consumer": [
-          "lens-free strict two-terminal-gap extraction",
-          "rank-tight incidence deletion",
-          "post-43/48 paid local route"
-        ],
-        "given": [
-          "f3588b3a3bc7 aligned local-defect bound",
-          "exact fixed-entrance terminal count"
-        ],
-        "next_need": "Apply to the opposite-terminal rank-tight incidences inside 7ddb7afd3083; quotient the remaining strict-gap center incidences by underlying edges."
-      },
-      "summary": "Lens-free flat terminal incidences are paid by local defect.",
-      "support_status": "supported",
-      "title": "Lens-free flat terminal incidences are paid by local defect"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000733",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000732",
-      "pending": false,
-      "research_interface": {
-        "consequence": "For all r>=3 and ell>=5, improves the global upper bound by (6r-7)n/[8r(r-1)]. For r=4 gives (89ell-165)n/96; for r=5 gives (151ell-287)n/160. Retains an extra negative excess-contact term.",
-        "consumer": [
-          "general-r Turan benchmark",
-          "multiplicity compensation"
-        ],
-        "given": [
-          "arbitrary-uniformity fixed-entrance transfer",
-          "excess contact multiplicity accounting"
-        ],
-        "next_need": "Force a linear amount of excess contact multiplicity or local deficit to reduce the leading coefficient. The aligned case is already cheaper at every uniformity; the difficulty is near-top misaligned rank."
-      },
-      "summary": "The one-rank saving improves the global bound for every uniformity.",
-      "support_status": "supported",
-      "title": "The one-rank saving improves the global bound for every uniformity"
+      "summary": "For the chosen maximum endpoint paths, the central-window bounds imply 3m <= 2S-n_+ +(1/2)sum_v B(v), with B(v) determined by the terminal rank profile.",
+      "support_status": "dependency_hold",
+      "title": "Maximum-path central windows sharpen the Astra multiplicity master inequality"
     },
     {
       "atlas_height": null,
@@ -5073,53 +3736,135 @@
       "atlas_height": null,
       "attention": "focus",
       "audit_status": "certified",
-      "category": "lemma",
-      "id": "1001084",
+      "category": "theorem",
+      "id": "1000588",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1001076",
+      "parent_id": "1000987",
       "pending": false,
       "research_interface": {
-        "consequence": "Any simultaneously switchable collection of aligned or reversed cells spends the same single deficiency unit; at most one nontrivial cell survives.",
+        "consequence": "The 3-uniform 43/48 coefficient is the r=3 specialization of (8r^2-10r+1)/(8r(r-1)).",
         "consumer": [
-          "gap-one switching matching",
-          "two-rail braid simplification"
+          "general r-uniform linear path Turan bounds"
         ],
         "given": [
-          "gap-one anchor Q and overlap-maximal maximum path P",
-          "simultaneously switchable two-common-vertex cells of either orientation"
+          "dcf886f98a51 r-uniform fixed-entrance transfer",
+          "endpoint-path witness counting"
         ],
-        "next_need": "Construct a canonical disjoint cell decomposition of the actual Q/P overlap, or show failure of such a decomposition itself forces extra path intersections useful to the switching-matching route."
+        "next_need": "Exploit higher contact multiplicity or destroy the four-state extremal cycle to improve this coefficient."
       },
-      "summary": "Overlap-maximal gap-one pairs have at most one nontrivial switchable cell, regardless of intersection order.",
+      "summary": "Global r-uniform bound from ascending incidence and fixed-entrance transfer.",
       "support_status": "supported",
-      "title": "Overlap-maximal gap-one pairs have at most one nontrivial switchable cell, regardless of intersection order"
+      "title": "Global r-uniform bound from ascending incidence and fixed-entrance transfer"
     },
     {
       "atlas_height": null,
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000429",
+      "id": "1000875",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1001162",
+      "parent_id": "1000580",
       "pending": false,
       "research_interface": {
-        "consequence": "Near-saturated gap-one local states force roughly 5p/16 distinct p-potential rotation endpoints. Thus the dangerous local configuration consumes a linear packet of top-level endpoint potential.",
+        "consequence": "The lost r=3 edgewise crossing matching is replaced by an exact dichotomy: either many genuine retained crossing pairs survive, or many disjoint 2-to-1 external bridges join anchor-only vertices to maximum-path-only vertices.",
         "consumer": [
-          "post-43/48 gap-one shell",
-          "potential-level expansion"
+          "general-r near-top uncrossing",
+          "switching-hyperedge path-order analysis",
+          "coefficient improvement beyond c_r"
         ],
         "given": [
-          "maximum terminal path",
-          "large switching family"
+          "80e2e6b25cab general-r switching family",
+          "linearity"
         ],
-        "next_need": "Bound reuse of these endpoint packets across many gap-one vertices, or combine with the flat/nondecreasing terminal graph. If many packets overlap, common high-potential vertices support many rotation states/flat edges; if packets spread, their union forces large high-potential level size and potential mass."
+        "next_need": "Prove a path-order obstruction for one of the two large alternatives. The external-bridge branch is the genuinely new r>=4 phenomenon."
       },
-      "summary": "A large gap-one switching family forces a linear packet of top-potential rotation endpoints.",
+      "summary": "General-r switching hyperedges split into retained pairs or external three-vertex bridges.",
       "support_status": "supported",
-      "title": "A large gap-one switching family forces a linear packet of top-potential rotation endpoints"
+      "title": "General-r switching hyperedges split into retained pairs or external three-vertex bridges"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "theorem",
+      "id": "1000741",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001083",
+      "pending": false,
+      "research_interface": {
+        "consequence": "The 11/8 leading local coefficient is attained asymptotically by actual hypergraphs; universal J_q bounds cannot improve it.",
+        "consumer": [
+          "43/48 strengthening attempt",
+          "fixed-entrance local capacity",
+          "multiple-path refinements"
+        ],
+        "fence": "Does not prove global 43/48 sharpness or a sharp bound on ascending-only terminal incidence counts.",
+        "given": [
+          "explicit path plus incident-edge construction",
+          "human classification by number of v-incident edges on a linear path"
+        ],
+        "proof_key": "Repeat singleton pattern (b,z),(b),empty,empty; pair remaining internal positions with translated copies four k indices away. All paths have length at most q; no q-path ends at the fixed entrance."
+      },
+      "summary": "The eleven-eighths fixed-entrance incidence coefficient is asymptotically sharp.",
+      "support_status": "supported",
+      "title": "The eleven-eighths fixed-entrance incidence coefficient is asymptotically sharp"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1001120",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000231",
+      "pending": false,
+      "research_interface": {
+        "consequence": "After choosing the maximum path to maximize anchor-edge overlap, all balanced internal lenses disappear and at most one unbalanced internal lens remains. The large switching matching must therefore live on an essentially single-defect Q/P geometry.",
+        "consumer": [
+          "gap-one switching matching",
+          "post-43/48 path uncrossing"
+        ],
+        "given": [
+          "gap-one q versus q+1 endpoint paths",
+          "overlap-maximal choice of maximum path",
+          "deficiency-one lens budget"
+        ],
+        "next_need": "Classify the remaining overlap-maximal geometry including the initial prefix fork. Show the q/8 cross-period switching edges cannot all connect retained common vertices to omitted vertices inside the one defect region/prefix without producing an endpoint-preserving rotation that increases Q-overlap."
+      },
+      "summary": "Overlap-maximal gap-one path pairs have no balanced internal lens and at most one internal lens total.",
+      "support_status": "supported",
+      "title": "Overlap-maximal gap-one path pairs have no balanced internal lens and at most one internal lens total"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "theorem",
+      "id": "1000238",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000325",
+      "pending": false,
+      "research_interface": {
+        "consequence": "The doubled packet halves the old congestion penalty: m<=19S/24+(K/6)n+o(S), rather than +(K/3)n.",
+        "consumer": [
+          "post-43/48 coefficient improvement",
+          "global endpoint-congestion route"
+        ],
+        "given": [
+          "465568d6d8dc doubled endpoint packet",
+          "a57007500001 exact defect identity",
+          "b032348c1a8a switching family"
+        ],
+        "next_need": "Prove an aggregate reuse bound sum_v |R(v)| <= K n_+ with K<(5/8-o(1))S/n_+. Pointwise bounded reuse is unnecessary. Split endpoint certificates by special versus nonspecial host edge; for nonspecial hosts all maximum rotations enter through the unique gate."
+      },
+      "summary": "Doubled rotation packets halve the endpoint-congestion penalty.",
+      "support_status": "dependency_hold",
+      "title": "Doubled rotation packets halve the endpoint-congestion penalty"
     },
     {
       "atlas_height": null,
@@ -5177,29 +3922,58 @@
       "atlas_height": null,
       "attention": "focus",
       "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000048",
+      "category": "theorem",
+      "id": "1000850",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1001029",
+      "parent_id": "1000201",
       "pending": false,
       "research_interface": {
-        "consequence": "Both-prefix reciprocal-terminal states force the unique aligned gate strictly into the late half: 2t>=max(m,n)+1. Thus an early simple gate orients at least one reciprocal terminal to the suffix side.",
+        "consequence": "Omega(S) distinct paid edges can be chosen as minimum-rank fundamental-cycle chords in a maximum-rank forest of the cleaned U_11 graph itself; their entire canonical cycles remain ascending/source-clean/terminal-single, with blocker obligations on both sides.",
         "consumer": [
-          "paid clean-U_11 fundamental-cycle geometry",
-          "two-rank 0-1-1 rail systems",
-          "flat-cycle gate orientation"
+          "post-43/48 terminal-cycle coupling",
+          "paid 0-1-1 source-rail route",
+          "rank-flow along terminal cycles"
         ],
         "given": [
-          "unique aligned intersection of two clean source rails",
-          "reciprocal-terminal cross-contacts",
-          "both reciprocal terminals on prefix side"
+          "7ac951de82f4 distinct paid-certified source-clean U_11 edges",
+          "94c19ac52776 certified terminal-adjacency blocker lemma",
+          "S/n_+ -> infinity"
         ],
-        "next_need": "Apply around a paid fundamental-cycle chord. For two near-flat cycle neighbors, combine the two gate orientations with e4cf6b2dc266: either outer neighbor rails intersect, an adjacent rail pair has multiple overlap, or the paid chord acquires a forced alternating prefix/suffix orientation at its two terminals. Test whether the paid-cell certificate is compatible with that orientation."
+        "next_need": "Split a clean fundamental cycle at a paid minimum-rank chord by equal-rank versus strict-rise neighbors. Equal-rank neighbors are candidates for flat-transfer/source-rail lens geometry; repeated strict rises around many paid chords should be charged to rank variation in the maximum-rank forest."
       },
-      "summary": "Both-prefix reciprocal terminals force a unique rail gate into the late half.",
+      "summary": "Paid edges have fundamental cycles inside the clean U_11 graph.",
       "support_status": "dependency_hold",
-      "title": "Both-prefix reciprocal terminals force a unique rail gate into the late half"
+      "title": "Paid edges have fundamental cycles inside the clean U_11 graph"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000409",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000694",
+      "pending": false,
+      "research_interface": {
+        "consequence": "The post-43/48 obstruction can be kept at full local density p/8-o(p) while simultaneously imposing strict rank gap, paid certification at the same center, clean U_11 membership, and a canonical minimum-rank fundamental-cycle blocker certificate.",
+        "consumer": [
+          "7e6abf77cbc5 sublinear local-congestion route",
+          "post-43/48 paid strict-gap terminal-cycle coupling",
+          "clean U_11 rank-flow and forest-branch packing"
+        ],
+        "given": [
+          "e6137a4bc902 local one-eighth paid-certified source-clean doubly-terminal-single families",
+          "9fba15f1495c center-incidence strict two-terminal edge-rank gap outside o(S)",
+          "94c19ac52776 terminal-adjacency blocker lemma",
+          "maximum-total-edge-rank spanning-forest exchange"
+        ],
+        "next_need": "At a vertex v, partition H_v by the first forest edge on each chord's fundamental cycle. All chords in one branch block the same maximum terminal witness for that forest edge, while their paid-cell certificates are centered at v. Combine this shared-witness packing with 59c5795520ff and the paid-cell geometry; a sublinear branch bound or an expansion-versus-reuse dichotomy would close 7e6abf77cbc5."
+      },
+      "summary": "Local one-eighth strict-gap paid mass survives as clean fundamental-cycle chords.",
+      "support_status": "dependency_hold",
+      "title": "Local one-eighth strict-gap paid mass survives as clean fundamental-cycle chords"
     },
     {
       "atlas_height": null,
@@ -5287,30 +4061,30 @@
     {
       "atlas_height": null,
       "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000645",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1001220",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000898",
-      "pending": false,
+      "parent_id": "1001050",
+      "pending": true,
       "research_interface": {
-        "consequence": "Complete reciprocal transversality cannot remain a simple one-label incidence system: four owner paths force a repeated intersection, and a k-family forces quadratically many repeated intersections unless most owner paths use mixed contact types.",
+        "consequence": "Low rank-sum reciprocal terminal paths cannot remain pairwise singly intersecting; four owners already force a repeated intersection and larger families force quadratically many.",
         "consumer": [
-          "terminal-retained branch of bba5d57b341e",
-          "paid strict-gap local congestion",
-          "two-rank reciprocal-terminal route"
+          "terminal-retained strict-gap branch",
+          "paid local congestion"
         ],
         "given": [
-          "doubly-terminal-single edges through one common terminal",
-          "complete reciprocal foreign-edge transversality"
+          "singleton central-window bounds",
+          "terminal-singleness",
+          "linearity",
+          "Mantel theorem"
         ],
-        "next_need": "Use the forced double-intersection pair without invoking the disputed automatic-lens claim. Analyze consecutive common vertices/order on the two maximum opposite-terminal paths, or combine with source-clean rails and the paid certificate. For large families, exploit the quantitative Mantel lower bound on repeated-intersection pairs.",
-        "strengthens": "reciprocal terminal-path attack; lens-free"
+        "next_need": "Exploit the forced repeated-intersection pair by path order/uncrossing without relying on automatic lens production."
       },
-      "summary": "Complete reciprocal transversality forces repeated intersections among opposite-terminal paths.",
-      "support_status": "supported",
-      "title": "Complete reciprocal transversality forces repeated intersections among opposite-terminal paths"
+      "summary": "Complete reciprocal transversality below the rank-sum threshold forces repeated intersections among opposite-terminal maximum paths.",
+      "support_status": "unchecked",
+      "title": "Terminal-single reciprocity forces repeated intersections below the rank-sum threshold"
     },
     {
       "atlas_height": null,
@@ -5338,6 +4112,62 @@
       "summary": "Two selected contacts from one interior pair force a superlevel rotation output.",
       "support_status": "supported",
       "title": "Two selected contacts from one interior pair force a superlevel rotation output"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000945",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000894",
+      "pending": false,
+      "research_interface": {
+        "consequence": "Upgrades the distinct paid-edge family to explicit strict edge-rank ascent witnesses on a linear-sized set of distinct ascending edges.",
+        "consumer": [
+          "post-43/48 rank-layer charging",
+          "strict rank-ascent congestion",
+          "weighted edge-rank flow"
+        ],
+        "given": [
+          "c8d14f7306ab distinct paid-certified switchers",
+          "b032348c1a8a misaligned switching families",
+          "6205fe95ecf8 rotation-output rank lower bound"
+        ],
+        "next_need": "Bound how many distinct lower-rank certified switchers can feed the same higher-rank output layer. A weighted rank-layer inequality that charges each certificate by a positive function of phi(h)-phi(f) would convert this linear family into a strict global defect."
+      },
+      "summary": "One-sixteenth of near-extremal potential mass lies on distinct edges with strict rank-ascent certificates.",
+      "support_status": "supported",
+      "title": "One-sixteenth of near-extremal potential mass lies on distinct edges with strict rank-ascent certificates"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "certified",
+      "category": "theorem",
+      "id": "1000307",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000669",
+      "pending": false,
+      "research_interface": {
+        "consequence": "Exact continuous local frontier: D+Y >= L/8-o(L) and M/L^2 >= 5/16+(5/8-D/L)^2/4-o(1). Triangle concentration is the unique way to suppress source mass, and below density 1/8 it forces a complementary paid-output/lens packet.",
+        "consumer": [
+          "global post-43/48 optimization",
+          "triangle/lens/source weighted charging",
+          "near-extremizer stability"
+        ],
+        "given": [
+          "b032348c1a8a dense switching theorem",
+          "9586a4d2317f one-eighth paid-cell theorem",
+          "98152151c212 cell-dispersion source-mass theorem"
+        ],
+        "next_need": "Find global capacities/reuse bounds for any two of the three currencies. The continuous form permits optimization against imperfect global bounds rather than requiring one branch to be eliminated completely."
+      },
+      "summary": "Continuous triangle-lens-source frontier at top centers.",
+      "support_status": "dependency_hold",
+      "title": "Continuous triangle-lens-source frontier at top centers"
     },
     {
       "atlas_height": null,
@@ -5390,7 +4220,7 @@
         "next_need": "Globalize one of the two currencies across many low-defect centers: bound reuse of paid progress outputs, or charge the locally edge-disjoint triangle packets across centers. Either route now has linear local density with an explicit 1/16 coefficient."
       },
       "summary": "One-eighth certificate payment splits into cycle packing or distinct progress outputs.",
-      "support_status": "supported",
+      "support_status": "dependency_hold",
       "title": "One-eighth certificate payment splits into cycle packing or distinct progress outputs"
     },
     {
@@ -5428,7 +4258,7 @@
       "id": "1001061",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000458",
+      "parent_id": "1001212",
       "pending": false,
       "research_interface": {
         "consequence": "At every low-defect misaligned center, at least one-eighth of the host scale is forced into a bounded-reuse terminal-retained edge or a monotone rank/special/superlevel output.",
@@ -5450,6 +4280,32 @@
       "summary": "Every low-defect misaligned center pays one-eighth into terminal retention or monotone output progress.",
       "support_status": "supported",
       "title": "Every low-defect misaligned center pays one-eighth into terminal retention or monotone output progress"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1001225",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001215",
+      "pending": true,
+      "research_interface": {
+        "consequence": "The leading-coefficient problem reduces to three globally linear, structurally enriched currencies with explicit asymptotic constants; no lower-order refinement is relevant.",
+        "consumer": [
+          "post-43/48 leading-coefficient improvement"
+        ],
+        "given": [
+          "1000409 clean fundamental-cycle normalization",
+          "1000836 local U/triangle/superlevel-output trichotomy",
+          "near-extremal strict-gap paid extraction"
+        ],
+        "next_need": "For each of the three enriched currencies, prove a global bounded-reuse or defect-charging inequality. Since one currency has Omega(S) center-indexed mass, it is enough to rule out linear global reuse in each branch separately. The fundamental-cycle certificate is available in every branch and should be used to control reuse."
+      },
+      "summary": "Near 43/48, one of terminal-retained, switcher-triangle, or superlevel-output currency has Omega(S) center-indexed mass, with clean minimum-rank fundamental-cycle certificates retained.",
+      "support_status": "unchecked",
+      "title": "Near-43/48 obstructions force one globally linear enriched payment currency"
     },
     {
       "atlas_height": null,
@@ -5562,86 +4418,6 @@
       "atlas_height": null,
       "attention": "focus",
       "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000588",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000987",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The 3-uniform 43/48 coefficient is the r=3 specialization of (8r^2-10r+1)/(8r(r-1)).",
-        "consumer": [
-          "general r-uniform linear path Turan bounds"
-        ],
-        "given": [
-          "dcf886f98a51 r-uniform fixed-entrance transfer",
-          "endpoint-path witness counting"
-        ],
-        "next_need": "Exploit higher contact multiplicity or destroy the four-state extremal cycle to improve this coefficient."
-      },
-      "summary": "Global r-uniform bound from ascending incidence and fixed-entrance transfer.",
-      "support_status": "supported",
-      "title": "Global r-uniform bound from ascending incidence and fixed-entrance transfer"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000875",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000580",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The lost r=3 edgewise crossing matching is replaced by an exact dichotomy: either many genuine retained crossing pairs survive, or many disjoint 2-to-1 external bridges join anchor-only vertices to maximum-path-only vertices.",
-        "consumer": [
-          "general-r near-top uncrossing",
-          "switching-hyperedge path-order analysis",
-          "coefficient improvement beyond c_r"
-        ],
-        "given": [
-          "80e2e6b25cab general-r switching family",
-          "linearity"
-        ],
-        "next_need": "Prove a path-order obstruction for one of the two large alternatives. The external-bridge branch is the genuinely new r>=4 phenomenon."
-      },
-      "summary": "General-r switching hyperedges split into retained pairs or external three-vertex bridges.",
-      "support_status": "supported",
-      "title": "General-r switching hyperedges split into retained pairs or external three-vertex bridges"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000741",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001083",
-      "pending": false,
-      "research_interface": {
-        "consequence": "The 11/8 leading local coefficient is attained asymptotically by actual hypergraphs; universal J_q bounds cannot improve it.",
-        "consumer": [
-          "43/48 strengthening attempt",
-          "fixed-entrance local capacity",
-          "multiple-path refinements"
-        ],
-        "fence": "Does not prove global 43/48 sharpness or a sharp bound on ascending-only terminal incidence counts.",
-        "given": [
-          "explicit path plus incident-edge construction",
-          "human classification by number of v-incident edges on a linear path"
-        ],
-        "proof_key": "Repeat singleton pattern (b,z),(b),empty,empty; pair remaining internal positions with translated copies four k indices away. All paths have length at most q; no q-path ends at the fixed entrance."
-      },
-      "summary": "The eleven-eighths fixed-entrance incidence coefficient is asymptotically sharp.",
-      "support_status": "supported",
-      "title": "The eleven-eighths fixed-entrance incidence coefficient is asymptotically sharp"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
       "category": "lemma",
       "id": "1000350",
       "mathematical_status": "proved",
@@ -5696,28 +4472,28 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000559",
+      "id": "1000724",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000724",
+      "parent_id": "1000706",
       "pending": false,
       "research_interface": {
-        "consequence": "When the two top-terminal entrances are Type A, their universal gate is a special edge of rank p-2 in their common potential level.",
+        "consequence": "Every Type-A vertex has at least two rank-(p-1) nonspecial terminal edges. If there are exactly two, all longest witnesses for both edges pass through one fixed penultimate gate containing their two entrances.",
         "consumer": [
-          "near-floor special-component route",
-          "Type-A transfer iteration",
+          "Type-A equality classification",
+          "general potential-oriented local bound",
           "grand 2/3 conjecture"
         ],
         "given": [
-          "a4df41ae3d99 universal gate",
-          "a57057ab0001 Type-A incidence classification"
+          "0e550ff0eadd cumulative terminal rank bound",
+          "a1a7159e2c43 rank-preserving propagation"
         ],
-        "next_need": "Count/propagate these gates. For Type-A v with exactly two rank-(p-1) terminal edges, either one entrance is exceptional/non-Type-A or v induces a special gate two levels below. Bound multiplicity of v per special gate, or iterate through the special component to force many distinct low-level vertices.",
-        "role": "bridge from Type-A terminal fans to same-level special structure"
+        "next_need": "Analyze the universal gate. If both entrance vertices are Type A, show the gate is a special rank-(q-1) edge in their common potential level. Then propagate these gates through the large Type-A special subhypergraph; alternatively show a third rank-q terminal edge is forced.",
+        "role": "universal gate in the minimal top-rank Type-A fan"
       },
-      "summary": "Two Type-A top-terminal entrances force a special universal gate two levels below.",
+      "summary": "Exactly two top terminal edges at a Type-A vertex force a universal two-entrance gate.",
       "support_status": "supported",
-      "title": "Two Type-A top-terminal entrances force a special universal gate two levels below"
+      "title": "Exactly two top terminal edges at a Type-A vertex force a universal two-entrance gate"
     },
     {
       "atlas_height": null,
@@ -6014,31 +4790,6 @@
       "atlas_height": null,
       "attention": "focus",
       "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000384",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000300",
-      "pending": false,
-      "research_interface": {
-        "consequence": "Collapses the penultimate exception from two possible vertices of g4\\e to the unique private vertex of g4.",
-        "consumer": [
-          "40f4db11ffac open-chain endpoint identification",
-          "Class III rank-five branch"
-        ],
-        "given": [
-          "0dbbb7d78a48 terminal-blocker localization"
-        ],
-        "next_need": "Exploit the alternating-chain edge incident with this pinned private endpoint; in the (4,3) case it is forced to have the opposite terminal color and an early second endpoint."
-      },
-      "summary": "A late Class-III single blocker is pinned to the private vertex of g4.",
-      "support_status": "supported",
-      "title": "A late Class-III single blocker is pinned to the private vertex of g4"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
       "category": "theorem",
       "id": "1000633",
       "mathematical_status": "proved",
@@ -6218,6 +4969,26 @@
       "summary": "Class-III systems have no rank-five nonspecial edge.",
       "support_status": "supported",
       "title": "Class-III systems have no rank-five nonspecial edge"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1001204",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000853",
+      "pending": true,
+      "research_interface": {
+        "consequence": "Class-III terminal defects are explicit one- or two-chain alternating structures, with every genuinely late single blocker pinned to private(g4).",
+        "consumer": [
+          "Class III rank-five nonspecial branch"
+        ]
+      },
+      "summary": "Class-III blocker defects are explicit alternating chains, with late single blockers pinned to private(g4).",
+      "support_status": "unchecked",
+      "title": "Class-III blocker defects reduce to one or two explicit alternating chains"
     },
     {
       "atlas_height": null,
@@ -6832,29 +5603,29 @@
     {
       "atlas_height": null,
       "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000615",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1001219",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000758",
-      "pending": false,
+      "parent_id": "1000564",
+      "pending": true,
       "research_interface": {
-        "consequence": "Gap-three recurrence is strongly position-sensitive: rotations near either end can occur only when both omitted vertices already support nearly full-length endpoint paths.",
+        "consequence": "Gap-two collisions are forbidden and every gap-three rotation near an end forces both omitted vertices to have nearly full path potential.",
         "consumer": [
           "two-hole recurrence",
           "high-potential hole splice route"
         ],
         "given": [
-          "a7e06ef01132 lexicographically maximal two-hole state",
-          "387e8e7dba7c gap-three rotation",
-          "8b1790d79d74 position-sensitive potential"
+          "two-hole collision splice",
+          "gap-three state rotation",
+          "position-sensitive path-vertex potential floor"
         ],
-        "next_need": "Take a maximum path ending at a high-potential hole and compare its first contacts with Q. If a hole potential exceeds roughly 2s/3, use first-contact localization/uncrossing to force a full wrong-entrance lift or a top-rank transfer."
+        "next_need": "Use maximum paths ending at the forced high-potential holes to obtain a cross-splice or top-rank transfer."
       },
-      "summary": "Gap-three rotation position gives a quantitative hole-potential floor.",
-      "support_status": "supported",
-      "title": "Gap-three rotation position gives a quantitative hole-potential floor"
+      "summary": "In a lexicographically maximal two-hole wrong-entrance state, gap-two collisions are impossible and a gap-three cut at i forces both holes to potential at least max{i,s-i-2}.",
+      "support_status": "unchecked",
+      "title": "Gap-three two-hole rotations force high-potential omitted vertices"
     },
     {
       "atlas_height": null,
@@ -6864,7 +5635,7 @@
       "id": "1000628",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000517",
+      "parent_id": "1001214",
       "pending": false,
       "research_interface": {
         "consequence": "Replaces mixed three-center collision density by a linear supply of collisions involving both omitted holes, precisely the configurations addressed by de0c1d15d897 and 387e8e7dba7c.",
@@ -7186,33 +5957,6 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000644",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000432",
-      "pending": false,
-      "research_interface": {
-        "consequence": "the fixed-hole star has mobility defect at least three; equality leaves only the saturated types (0 disjoint,3 one-contact) or (1 disjoint,1 one-contact)",
-        "consumer": [
-          "fixed-hole bridge route",
-          "sharp ascending-rank conjecture"
-        ],
-        "given": [
-          "canonical loss-one two-cycle",
-          "fixed omitted vertex b",
-          "minimum degree q"
-        ],
-        "next_obligation": "show excess 2C+R>=4 gives an escape, or eliminate the two equality types by bridge/contact-position arguments"
-      },
-      "summary": "At the fixed hole, 2C+R≥3; equality forces degree q and exactly one of two saturated incidence patterns.",
-      "support_status": "supported",
-      "title": "Exact deficiency equation at the fixed hole"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
       "id": "1000468",
       "mathematical_status": "proved",
       "obstructed": false,
@@ -7494,27 +6238,24 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000757",
+      "id": "1000972",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000972",
+      "parent_id": "1000549",
       "pending": false,
       "research_interface": {
-        "consequence": "Cheap deletion need not contradict minimality, but for a singleton it forces a unique bridge to a degree-(d+1) vertex that drops exactly to d.",
+        "consequence": "The outside Hall assignment is presently unsupported; packet deletion can create the low-degree vertex predicted by the equality theorem.",
         "consumer": [
-          "deficit-layer induction",
-          "lift-back route",
-          "replacement for invalid packet Hall expansion"
+          "E_ell induction",
+          "outside-reservoir Hall route"
         ],
-        "given": [
-          "vertex-minimal equality obstruction",
-          "witness-avoiding deletion"
-        ],
-        "next_need": "Extend the singleton bridge to small positive deficit: formulate a deficit-layer conclusion with degree threshold d+f(r), so deleting a high-charge witness-avoiding vertex yields a bounded number of exact bridge incidences that can be spliced back into the preserved witness."
+        "corrects": "1000549",
+        "next_need": "Develop a lift-back lemma: if H-S has a degree<=d vertex after deleting an outside packet S, use the edges from that vertex into S to force a splice/path; or restrict to packets whose deletion provably preserves degree>d.",
+        "role": "logical fence"
       },
-      "summary": "Cheap witness-avoiding singleton deletion forces an exact threshold bridge.",
+      "summary": "Vertex-minimal equality does not by itself give outside packet expansion.",
       "support_status": "supported",
-      "title": "Cheap witness-avoiding singleton deletion forces an exact threshold bridge"
+      "title": "Vertex-minimal equality does not by itself give outside packet expansion"
     },
     {
       "atlas_height": null,
@@ -7603,27 +6344,29 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "theorem",
-      "id": "1001155",
+      "id": "1000699",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000699",
+      "parent_id": "1000282",
       "pending": false,
       "research_interface": {
-        "consequence": "The omitted high-degree packet is the shadow of a global set R of size at least 4d-1; every short witness necessarily misses many members of R.",
+        "consequence": "Every witness misses an Omega(ell)-sized packet of above-threshold vertices: d,d-2,d-1 by residue. The equality obstruction cannot concentrate all degree excess on the witness.",
         "consumer": [
           "equality-layer induction",
-          "high-degree packet route"
+          "outside-reservoir route",
+          "high-degree packet deletion"
         ],
         "given": [
           "exact density m=dn",
           "minimum degree d+1",
-          "linearity"
+          "linearity",
+          "path length <=ell-1"
         ],
-        "next_need": "Exploit that the same fixed high-degree set R is missed substantially by every nonspecial witness. Compare multiple rotated witnesses: each can cover at most 2q+1 vertices of R, so sufficiently many witness states should force repeated omitted high-degree vertices or strong coverage constraints."
+        "next_need": "Apply the vertex-minimal packet inequality to this high-degree outside set. Count edges meeting the packet versus total excess; seek a subset whose shared-edge savings make deletion cost <=d|S|, or show the required anti-sharing forces many distinct attachments/chords into P."
       },
-      "summary": "Exact density forces at least 4d minus one above-threshold vertices.",
+      "summary": "Every equality-layer witness omits many above-threshold vertices.",
       "support_status": "supported",
-      "title": "Exact density forces at least 4d minus one above-threshold vertices"
+      "title": "Every equality-layer witness omits many above-threshold vertices"
     },
     {
       "atlas_height": null,
@@ -7857,26 +6600,27 @@
       "atlas_height": null,
       "attention": "focus",
       "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000498",
+      "category": "theorem",
+      "id": "1000984",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000984",
+      "parent_id": "1000339",
       "pending": false,
       "research_interface": {
-        "consequence": "Multiple universal stars canonically form a dense proper matching-color graph with strong rainbow lifting; one may choose any subset of universal centers as colors.",
+        "consequence": "Small branching is impossible. Residue 0 needs at least three branch vertices and three pair-universal vertices; residue 2 needs at least two of each.",
         "consumer": [
-          "s=2 equality layer",
-          "rainbow matching route"
+          "s=2 equality classification",
+          "grand equality induction"
         ],
         "given": [
-          "set of pair-universal vertices"
+          "Steiner deficiency s=2",
+          "P_ell-free"
         ],
-        "next_need": "Generic rainbow bounds alone are numerically too weak near n≈4ell. Exploit the stronger fact that every color class is an almost-perfect matching and couple the rainbow path with the leave branch structure or with universal-star endpoint paths."
+        "next_need": "Delete only a strategically chosen subset of branch vertices, using their leave degrees to improve the degree-loss estimate. Alternatively exploit the resulting multiple universal stars: in residues 0 and 2 there are at least 3 or 2 perfect star matchings, whose pairwise unions are alternating even cycles."
       },
-      "summary": "Any set of pair-universal vertices generates a dense strong-rainbow matching graph.",
+      "summary": "At deficiency two, P_l-freeness forces many leave branches and universal vertices.",
       "support_status": "supported",
-      "title": "Any set of pair-universal vertices generates a dense strong-rainbow matching graph"
+      "title": "At deficiency two, P_l-freeness forces many leave branches and universal vertices"
     },
     {
       "atlas_height": null,
@@ -8118,24 +6862,25 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1001024",
+      "id": "1000760",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000760",
+      "parent_id": "1001012",
       "pending": false,
       "research_interface": {
-        "consequence": "A joint-only blocker at the first joint raises both far-left free vertices to potential at least five. Together with the middle-joint case, every surviving one-joint blocker creates a high-potential reservoir away from the fixed entrance d.",
+        "consequence": "A one-vertex joint blocker cannot occur at the final precursor joint c. If it occurs at the middle joint a, it forces the next joint c to endpoint potential at least five.",
         "consumer": [
-          "p=5 5555 elimination"
+          "p=5 5555 elimination",
+          "charged four-edge spacing"
         ],
         "given": [
-          "a819a693d91f joint-only classification"
+          "e2095c60d904 corrected simple/multi-precursor dichotomy"
         ],
-        "next_need": "Combine these high-potential labels with a second competitor. A simple early competitor can only use private(g2), while a simple late competitor uses private(g4) as entrance. Determine whether the remaining high labels force any second multi-blocker to use a high terminal rather than its low entrance, enabling endpoint rotation/uncrossing."
+        "next_need": "Analyze the first joint r and the middle-joint case using entrance/terminal labels. For a joint-only competitor, if the joint is its entrance then that joint has potential 4; if it is its opposite terminal then potential >=5. Combine the middle case phi(c)>=5 with a second competitor or with the fixed entrance d of potential 4."
       },
-      "summary": "In the φ(v)=5 pure rank-five configuration, a rank-five competing edge whose only precursor vertex is the first joint forces both free vertices of g1 to have vertex rank at least 5.",
+      "summary": "In the φ(v)=5 pure rank-five configuration, a competing edge meeting the precursor only at a path joint cannot meet the final precursor joint; if it meets the preceding joint a, then φ(c)≥5.",
       "support_status": "supported",
-      "title": "A first-joint-only rank-five competitor forces both far-left free vertices to potential at least five"
+      "title": "Joint-only blockers in the p=5 pure rank-five obstruction are pushed away from the final joint"
     },
     {
       "atlas_height": null,
@@ -8446,26 +7191,28 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000831",
+      "id": "1000638",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000811",
+      "parent_id": "1000956",
       "pending": false,
       "research_interface": {
-        "consequence": "The non-overlap-rich C4 cannot be an empty rectangular braid: the opposite diagonal must contain a common vertex crossing the interval between its two aligned triple gates.",
+        "consequence": "Every C4 residue contains a diagonal pair of source paths sharing four distinguished vertices, including both source endpoints.",
         "consumer": [
           "C4 elimination",
           "one-low q,(q+1)^3 residue",
           "Astra 11/12 source-rail route"
         ],
         "given": [
-          "double triple-gate C4 braid"
+          "C4 simple source-rail skeleton",
+          "simple pairs are reciprocal terminal-only",
+          "complete source-rail transversality"
         ],
-        "need": "Identify the forced cross-gate blocker. The other diagonal already has two distinguished terminal common vertices from the C4. If neither terminal lies in the required cross-gate quadrant, a third common vertex is forced; otherwise use terminal-tail localization to compare that terminal position with the gate indices."
+        "need": "Exploit the four-overlap diagonal using endpoint lenses, balanced internal lenses, and no-piercing."
       },
-      "summary": "A double triple-gate C4 braid forces a cross-gate blocker.",
+      "summary": "The C4 source-rail residue forces a four-vertex diagonal overlap.",
       "support_status": "dependency_hold",
-      "title": "A double triple-gate C4 braid forces a cross-gate blocker"
+      "title": "The C4 source-rail residue forces a four-vertex diagonal overlap"
     },
     {
       "atlas_height": null,
@@ -8869,7 +7616,7 @@
       "id": "1000004",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000370",
+      "parent_id": "1001216",
       "pending": false,
       "research_interface": {
         "consequence": "Every opposite high terminal supplies a second central coordinate system for its edge; strict terminal rises make this system especially rigid.",
@@ -8885,32 +7632,6 @@
       "summary": "High 0-1-1 edges at the odd boundary have reciprocal central-gate normal forms.",
       "support_status": "supported",
       "title": "High 0-1-1 edges at the odd boundary have reciprocal central-gate normal forms"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "lemma",
-      "id": "1000415",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000717",
-      "pending": false,
-      "research_interface": {
-        "consequence": "A surviving local +1 rank-pair violation creates a completely high-potential central hyperedge of rank at least p. This gives a natural object to charge the local excess to in a global conflict-matching proof if direct elimination stalls.",
-        "consumer": [
-          "0-1-1 conflict matching",
-          "Astra 11/12 route"
-        ],
-        "given": [
-          "C-terminal p-edge rotation",
-          "a3ea758efa27 central vertex packet"
-        ],
-        "next_need": "Either inject these manufactured high-rank central edges/vertices across violating fans, or use their maximum endpoint paths together with the reciprocal 0-1-1 normal forms at C and D to force an additional contact."
-      },
-      "summary": "The final odd-boundary residue manufactures a high-rank central edge.",
-      "support_status": "supported",
-      "title": "The final odd-boundary residue manufactures a high-rank central edge"
     },
     {
       "atlas_height": null,
@@ -8949,7 +7670,7 @@
       "id": "1000575",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "1000370",
+      "parent_id": "1001216",
       "pending": false,
       "research_interface": {
         "consequence": "The sole one-low residual contains two adjacent high-potential rotation endpoints E,G immediately to the right of its adjacent terminal-only contacts C,D.",
@@ -8967,6 +7688,27 @@
       "summary": "The terminal-only D contact forces the outer right joint to top potential.",
       "support_status": "supported",
       "title": "The terminal-only D contact forces the outer right joint to top potential"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1001207",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1001216",
+      "pending": true,
+      "research_interface": {
+        "consequence": "The final odd-boundary residue manufactures a central edge whose rank and all three vertex potentials are at least p.",
+        "consumer": [
+          "0-1-1 conflict matching",
+          "Astra 11/12 route"
+        ]
+      },
+      "summary": "The final odd-boundary residue forces the central edge and all its vertices to top potential.",
+      "support_status": "unchecked",
+      "title": "The final odd-boundary residue forces a completely top-potential central edge"
     },
     {
       "atlas_height": null,
@@ -9230,6 +7972,21 @@
       "summary": "For every ℓ≥2 there is a P_ℓ-free linear triple-system component of density exactly (ℓ-1)/3, yielding ex_L(n,P_ℓ^(3)) ≥ ((ℓ-1)/3)n-O(ℓ^2).",
       "support_status": "supported",
       "title": "Residue-free (ell-1)/3 lower construction"
+    },
+    {
+      "atlas_height": "1",
+      "attention": "available",
+      "audit_status": "pending",
+      "category": "lemma",
+      "id": "1001233",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000846",
+      "pending": true,
+      "research_interface": {},
+      "summary": "Inductively, the 1/3 target reduces exactly to paying edges meeting a longest path from path-pair capacity, path-length slack, and the outside extremal defect.",
+      "support_status": "unchecked",
+      "title": "Longest-path pair-capacity reduction with outside extremal defect"
     },
     {
       "atlas_height": null,
@@ -10191,32 +8948,6 @@
       "attention": "available",
       "audit_status": "certified",
       "category": "lemma",
-      "id": "1000100",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1001151",
-      "pending": false,
-      "research_interface": {
-        "consequence": "A (3,4,4,4) p=4 counterexample forces one common potential-2 vertex to be the middle joint of every maximum v-ending path, including longest paths ending in each rank-4 charged edge.",
-        "consumer": [
-          "50b6278b9537 potential-oriented local bound",
-          "charged four-edge spacing route"
-        ],
-        "given": [
-          "fc5f50164b35 pinned rank-3 entrance",
-          "definition of terminal snake vertex"
-        ],
-        "next_need": "Compare two such rank-4 longest paths through the common middle joint x; uncross their two-edge prefixes/suffixes to force a 3-edge path ending at x or an alternate entrance for one rank-4 edge."
-      },
-      "summary": "The rank-three entrance is universal across maximum paths in the first p=4 obstruction.",
-      "support_status": "supported",
-      "title": "The rank-three entrance is universal across maximum paths in the first p=4 obstruction"
-    },
-    {
-      "atlas_height": null,
-      "attention": "available",
-      "audit_status": "certified",
-      "category": "lemma",
       "id": "1000459",
       "mathematical_status": "evidence",
       "obstructed": false,
@@ -10340,6 +9071,33 @@
     {
       "atlas_height": null,
       "attention": "available",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000436",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000443",
+      "pending": false,
+      "research_interface": {
+        "consequence": "Distinct flat ascending no-rise outputs no longer require endpoint-reuse control: after deduplication by (edge,last vertex), they are at most 4eta+O(n_+). Only repeated production of the identical terminal incidence remains.",
+        "consumer": [
+          "e233684ca13b endpoint-congestion route",
+          "post-43/48 rotation packing"
+        ],
+        "given": [
+          "631ebe3d4728 flat-output aligned-sink lemma",
+          "b032348c1a8a aligned defect bound",
+          "fixed-entrance terminal count"
+        ],
+        "next_need": "Bound how many different source vertices can produce the same flat certificate (h,w). Any O(1), or sufficiently small aggregate, bound now charges the entire flat branch to eta+O(n_+)."
+      },
+      "summary": "Distinct flat rotation terminal incidences are globally paid by local defect.",
+      "support_status": "dependency_hold",
+      "title": "Distinct flat rotation terminal incidences are globally paid by local defect"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
       "audit_status": "not_required",
       "category": "working_unit",
       "id": "1000361",
@@ -10360,6 +9118,29 @@
       "summary": "Payment at one terminal does not yet supply payment at the minimum-rank terminal",
       "support_status": "unchecked",
       "title": "Payment at one terminal does not yet supply payment at the minimum-rank terminal"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
+      "audit_status": "pending",
+      "category": "lemma",
+      "id": "1001230",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000904",
+      "pending": true,
+      "research_interface": {
+        "consumer": [
+          "near-equality analysis of terminal contact patterns"
+        ],
+        "given": [
+          "1000904 singleton-column transfer automaton and potential function"
+        ],
+        "need": "Independent verification of the exact defect count and period-four decoding."
+      },
+      "summary": "If a singleton-transfer walk is within D of the 3/4-per-column optimum, all but at most 4D+6 transitions follow the unique period-four pattern 2,1,0,0.",
+      "support_status": "unchecked",
+      "title": "Near-extremal singleton transfer is periodic away from few defects"
     },
     {
       "atlas_height": null,
@@ -10732,6 +9513,27 @@
       "summary": "In a saturated boundary fan, open-chain endpoints are exactly the singleton or uncovered blocker defects; X-type defects lie in the final cell while Y/Z defects lie earlier.",
       "support_status": "supported",
       "title": "Open-chain defects and their ordered locations in saturated boundary fans"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
+      "audit_status": "certified",
+      "category": "lemma",
+      "id": "1000673",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000336",
+      "pending": false,
+      "research_interface": {
+        "consequence": "The canonical loss-one two-cycle has one fixed omitted vertex whose star necessarily escapes the original path.",
+        "consumer": [
+          "fixed-hole escape",
+          "sharp ascending-rank route"
+        ]
+      },
+      "summary": "A canonical loss-one two-cycle has a fixed omitted vertex with enough external incidence to force either a disjoint external edge or at least two one-contact external chords.",
+      "support_status": "supported",
+      "title": "A loss-one two-cycle has a fixed hole with unavoidable external attachment surplus"
     },
     {
       "atlas_height": null,
@@ -11145,7 +9947,7 @@
       "title": "Terminal-pair cycle-rank reduction"
     }
   ],
-  "frontier_count": 441,
+  "frontier_count": 398,
   "note": "Flat frontier only. After choosing an item, call ancestry() or simplified_ancestry() separately for route context.",
-  "repository_revision": 5673
+  "repository_revision": 5944
 }

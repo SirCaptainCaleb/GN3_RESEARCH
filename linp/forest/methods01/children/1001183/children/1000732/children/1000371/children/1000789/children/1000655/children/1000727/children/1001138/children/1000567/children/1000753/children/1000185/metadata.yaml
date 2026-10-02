@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 7
+body_sha256: "5f8fced314ee2ed0fd405b2e5f00fcee1256799e58b967d77e3f3125b455e497"
+created_at: "2026-09-24T21:05:17.07766+00:00"
+id: "1000185"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 7
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 7
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 7
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "1000753"
+position: 0
+research_interface:
+  consequence: "Near the generic 185/512 switching-source floor, at least 5/11 of switchers must be terminal-retained. At low defect this is at least (25/88-o(1))p terminal-retained edges."
+  consumer:
+    - "post-43/48 stability"
+    - "terminal-retained residual branch"
+    - "inside-outside packet route"
+  given:
+    - "a6f97c9fd9c3 three-quarters clean-retained packing"
+    - "c48823eea604 terminal-retained quadratic rank packet"
+    - "a5066873364f generic 185/512 source-mass floor"
+    - "b032348c1a8a dense switching family"
+  next_need: "Update the inside/outside packet and ambient-order barrier using k>=25p/88. The locally cheap residual now forces a larger omitted-source packet and needs order at least (201/88-o(1))p."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Near-minimal source mass forces five-elevenths terminal retention."
+statement_sha256: "9bdeecfa767eef2adcbf91e561ea3eff4dba37b0e1bc1b68ac97e5c0c439713e"
+substantive_worker_ids:
+  - 201
+  - 209
+  - 231
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Near-minimal source mass forces five-elevenths terminal retention"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 12

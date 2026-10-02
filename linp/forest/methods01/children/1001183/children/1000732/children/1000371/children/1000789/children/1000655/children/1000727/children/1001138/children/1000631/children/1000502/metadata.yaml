@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "321501368ccdba6ec5e04fe129360f762eb17e5fdeb6c4dc9c0bd9aaa8ccfbc6"
+created_at: "2026-09-24T20:52:43.824503+00:00"
+id: "1000502"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "f3d3f85c-272d-4202-8b1b-3f87a5afa0c4"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:01:46.328635+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "f3d3f85c-272d-4202-8b1b-3f87a5afa0c4"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:01:46.328635+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 250
+parent_id: "1000631"
+position: 0
+research_interface:
+  consequence: "Converts every terminal-retained switcher into a reciprocal lens/overlap certificate, reducing the U-branch to two explicit maximum-path geometries."
+  consumer:
+    - "terminal-retained switching branch"
+    - "post-43/48 paid-certified 0-1-1 families"
+    - "balanced-lens packing"
+  given:
+    - "8f040f62964a reciprocal terminal-path transversal"
+    - "b35b0fd4e4cd balanced endpoint-lens conversion"
+  next_need: "Apply to the linear-size terminal-retained branch forced by near-minimal source mass. Separate X-recapture and V-recapture. X-recapture produces many source-terminal lenses at distinct entrances; V-recapture gives terminal-terminal path pairs sharing both labels u,v. Bound congestion of one of these two certificate families."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every terminal-retained switcher yields a source-terminal lens or a two-terminal overlap."
+statement_sha256: "a34a25e351c3b8437c8f17eb73357c34bcbb358300338050a4aa55f935c0df04"
+substantive_worker_ids:
+  - 250
+  - 254
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "Every terminal-retained switcher yields a source-terminal lens or a two-terminal overlap"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 10

@@ -52,5 +52,5 @@ support_status: "supported"
 title: "Two non-double rank-q edges at p=2q-3 have a two-pattern middle-edge normal form"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-09-30T17:27:57.58921+00:00"
-version: 5
+updated_at: "2026-10-01T20:27:12.932654+00:00"
+version: 6

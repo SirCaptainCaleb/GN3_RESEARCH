@@ -55,5 +55,5 @@ support_status: "supported"
 title: "Clean-minus-double identity for the contact snake"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-09-30T21:37:06.600883+00:00"
-version: 7
+updated_at: "2026-10-01T20:27:20.191028+00:00"
+version: 8

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "1057d04be9562da093fed9e52d60b2fcde0de4aefd87b90317b61e7db0007790"
+created_at: "2026-09-24T18:12:45.930533+00:00"
+id: "1000371"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "theorem"
+origin_worker_id: 201
+parent_id: "1000732"
+position: 0
+research_interface:
+  consequence: "The global deficit eta_v itself controls the gap-one switching/lens mass. Zero local deficit is possible only in the exact q=p-1 shell and then forces at least floor(5(p-1)/8) balanced endpoint lenses."
+  consumer:
+    - "post-43/48 leading-coefficient improvement"
+    - "global near-equality analysis"
+    - "gap-one lens packing"
+  given:
+    - "a57007500001 exact global/local deficit identity"
+    - "fecba48a3ffd gap-one switching matching"
+    - "ab7d5ecf773c balanced endpoint-lens conversion"
+  next_need: "Prove that a maximum p-edge path cannot support floor(5(p-1)/8)-o(p) distinct balanced endpoint lenses arising from a disjoint switching matching without creating linear total defect. Any fixed positive proportional loss improves the 43/48 leading coefficient."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The exact global deficit controls gap-one switching and lens mass."
+statement_sha256: "9c7a3c1696a2255c647bc123c19c57f20498714b8f79a66be40fbf035e2175e8"
+substantive_worker_ids:
+  - 201
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "The exact global deficit controls gap-one switching and lens mass"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 11

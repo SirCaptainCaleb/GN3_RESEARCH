@@ -49,6 +49,73 @@
 -
   composition_manifest:
   composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000370"
+  route_key: null
+  updated_at: "2026-10-01T20:27:03.821288+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000475"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000506"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000458"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Recompose the top-layer switching paid-structure chain while preserving terminal branches."
+  object_id: "1001212"
+  route_key: null
+  updated_at: "2026-10-01T20:32:05.961948+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000991"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000257"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000758"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000615"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene replacement recomposition of the four-step two-hole rotation chain into its endpoint theorem."
+  object_id: "1001219"
+  route_key: null
+  updated_at: "2026-10-01T20:52:36.213714+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1001229"
+  route_key: null
+  updated_at: "2026-10-01T21:34:19.881383+00:00"
+-
+  composition_manifest:
+  composition_status: null
   node_kind: "root"
   note: "Reasoning-chain root for the certificate-at-either-terminal congestion closure and its same-terminal/uphill split."
   object_id: "1000729"
@@ -94,6 +161,73 @@
   object_id: "1001072"
   route_key: null
   updated_at: "2026-10-01T20:22:43.002595+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000324"
+  route_key: null
+  updated_at: "2026-10-01T20:27:05.351072+00:00"
+-
+  composition_manifest:
+    -
+      id: "1001145"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001019"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000471"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Recompose the odd zero-slack rigidity chain while preserving terminal branches."
+  object_id: "1001213"
+  route_key: null
+  updated_at: "2026-10-01T20:32:08.047113+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000538"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000783"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000898"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000645"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene replacement recomposition of the reciprocal-transversality chain into its endpoint repeated-intersection theorem."
+  object_id: "1001220"
+  route_key: null
+  updated_at: "2026-10-01T20:53:26.672474+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001231"
+  route_key: "strong-rainbow-shadow"
+  updated_at: "2026-10-01T21:36:27.172736+00:00"
 -
   composition_manifest:
     -
@@ -179,6 +313,53 @@
   updated_at: "2026-10-01T20:23:28.840174+00:00"
 -
   composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000714"
+  route_key: null
+  updated_at: "2026-10-01T20:27:07.153116+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000036"
+  route_key: null
+  updated_at: "2026-10-01T20:32:41.277089+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000118"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000656"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001157"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene replacement recomposition of the three-step top-boundary d-pattern chain into its crossed-terminal endpoint theorem."
+  object_id: "1001221"
+  route_key: null
+  updated_at: "2026-10-01T20:53:59.726183+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001233"
+  route_key: "pair-capacity-defect"
+  updated_at: "2026-10-01T21:36:29.405472+00:00"
+-
+  composition_manifest:
     -
       id: "1000099"
       math_version: 1
@@ -259,6 +440,53 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001167"
+  route_key: null
+  updated_at: "2026-10-01T20:27:08.811321+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000470"
+  route_key: null
+  updated_at: "2026-10-01T20:32:43.06933+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000902"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000168"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001162"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene replacement recomposition of the three-step gap-one stability chain into its five-eighths switching-matching endpoint theorem."
+  object_id: "1001222"
+  route_key: null
+  updated_at: "2026-10-01T20:54:08.708629+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1001234"
+  route_key: "shadow-extraction-fence"
+  updated_at: "2026-10-01T21:36:31.373986+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Reasoning-hygiene repair: this proved route node is the immediate reasoning parent of recomposition 1001182."
   object_id: "1000553"
   route_key: null
@@ -328,6 +556,60 @@
   composition_status: null
   node_kind: "step"
   note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000557"
+  route_key: null
+  updated_at: "2026-10-01T20:27:10.585297+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000587"
+  route_key: null
+  updated_at: "2026-10-01T20:32:57.051591+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000732"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000940"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001038"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000436"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000694"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000570"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "Current post-43/48 proof rehearsal; certified chain reaches strict two-terminal-gap extraction and stops at the sublinear minimum-terminal congestion bound."
+  object_id: "1000272"
+  route_key: "post43_paid_object_congestion"
+  updated_at: "2026-10-01T20:54:08.708629+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
   object_id: "1000968"
   route_key: null
   updated_at: "2026-10-01T20:08:41.282568+00:00"
@@ -380,6 +662,69 @@
   updated_at: "2026-10-01T20:22:25.43362+00:00"
 -
   composition_manifest:
+    -
+      id: "1000610"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000300"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000384"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Class-III blocker chain recomposition."
+  object_id: "1001204"
+  route_key: null
+  updated_at: "2026-10-01T20:26:23.771658+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000244"
+  route_key: null
+  updated_at: "2026-10-01T20:27:12.932654+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001215"
+  route_key: null
+  updated_at: "2026-10-01T20:35:17.052248+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene annotation restoring continuity above the recomposed near-top rail theorem; mathematics unchanged."
+  object_id: "1000395"
+  route_key: null
+  updated_at: "2026-10-01T20:54:33.840621+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene annotation restoring continuity above the recomposed two-hole rotation theorem; mathematics unchanged."
+  object_id: "1000564"
+  route_key: null
+  updated_at: "2026-10-01T20:54:33.840621+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene annotation restoring continuity above the recomposed top-boundary theorem; mathematics unchanged."
+  object_id: "1000184"
+  route_key: null
+  updated_at: "2026-10-01T20:54:33.840621+00:00"
+-
+  composition_manifest:
   composition_status: null
   node_kind: "step"
   note: "Reasoning-hygiene route annotation repair."
@@ -420,6 +765,53 @@
   updated_at: "2026-10-01T20:22:28.187565+00:00"
 -
   composition_manifest:
+    -
+      id: "1001016"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000614"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000388"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Entrance-a 4455 chain recomposition."
+  object_id: "1001205"
+  route_key: null
+  updated_at: "2026-10-01T20:26:25.579684+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000696"
+  route_key: null
+  updated_at: "2026-10-01T20:27:14.917513+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: "Canonical maximum-path structural Toolkit branch; organizational annotation only."
+  object_id: "1001175"
+  route_key: null
+  updated_at: "2026-10-01T20:43:01.057674+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1001223"
+  route_key: null
+  updated_at: "2026-10-01T21:33:07.080405+00:00"
+-
+  composition_manifest:
   composition_status: null
   node_kind: "step"
   note: "Reasoning-hygiene route annotation repair."
@@ -458,6 +850,78 @@
   object_id: "1000319"
   route_key: null
   updated_at: "2026-10-01T20:22:33.659829+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000546"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000926"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000408"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "blocked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "Prefix-excess switching chain recomposition."
+  object_id: "1001206"
+  route_key: null
+  updated_at: "2026-10-01T20:26:27.503739+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000764"
+  route_key: null
+  updated_at: "2026-10-01T20:27:16.5332+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000557"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001167"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000714"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000324"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000370"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene replacement recomposition of the five-step odd-boundary chain into its endpoint theorem."
+  object_id: "1001216"
+  route_key: null
+  updated_at: "2026-10-01T20:50:40.36178+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1001224"
+  route_key: null
+  updated_at: "2026-10-01T21:33:19.997966+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -506,6 +970,88 @@
   object_id: "1000824"
   route_key: null
   updated_at: "2026-10-01T20:22:35.419778+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000205"
+      math_version: 6
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000717"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000415"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Odd-boundary central-edge chain recomposition."
+  object_id: "1001207"
+  route_key: null
+  updated_at: "2026-10-01T20:26:29.248399+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000702"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000510"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000425"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Recompose the p=5 4555 sequential prefix while preserving its two terminal branches."
+  object_id: "1001211"
+  route_key: null
+  updated_at: "2026-10-01T20:32:03.385141+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000070"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000697"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001151"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000100"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene replacement recomposition of the four-step potential-four chain into its endpoint theorem."
+  object_id: "1001217"
+  route_key: null
+  updated_at: "2026-10-01T20:51:09.026259+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001225"
+  route_key: null
+  updated_at: "2026-10-01T21:33:20.335238+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -606,14 +1152,6 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
-  note: "Minimum-degree normalization for the defect-stability route."
-  object_id: "1000063"
-  route_key: null
-  updated_at: "2026-09-25T05:06:23.286931+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
   note: ""
   object_id: "1000095"
   route_key: null
@@ -630,26 +1168,10 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
-  note: "Dense-core all-special conjectural target after minimum-degree normalization."
-  object_id: "1000005"
-  route_key: null
-  updated_at: "2026-09-25T05:06:25.033199+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
   note: "Reconstructed clean-contact conjectural route."
   object_id: "1000032"
   route_key: null
   updated_at: "2026-09-25T05:06:44.413119+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1000168"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1058,6 +1580,46 @@
   updated_at: "2026-10-01T20:22:37.312804+00:00"
 -
   composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000853"
+  route_key: null
+  updated_at: "2026-10-01T20:26:56.580428+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000005"
+  route_key: null
+  updated_at: "2026-10-01T20:27:00.091926+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000063"
+  route_key: null
+  updated_at: "2026-10-01T20:27:02.037029+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000168"
+  route_key: null
+  updated_at: "2026-10-01T20:32:50.689917+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "1001226"
+  route_key: null
+  updated_at: "2026-10-01T21:33:21.126007+00:00"
+-
+  composition_manifest:
     -
       id: "1000603"
       math_version: 1
@@ -1140,44 +1702,6 @@
   object_id: "1000271"
   route_key: null
   updated_at: "2026-09-25T22:35:07.439265+00:00"
--
-  composition_manifest:
-    -
-      id: "1000732"
-      math_version: 4
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      id: "1000940"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      id: "1001038"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      id: "1000436"
-      math_version: 4
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      id: "1000694"
-      math_version: 4
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      id: "1000570"
-      math_version: 2
-      mathematical_status: "proved"
-      support_status: "supported"
-  composition_status: "provisional"
-  node_kind: "step"
-  note: "Current post-43/48 proof rehearsal; certified chain reaches strict two-terminal-gap extraction and stops at the sublinear minimum-terminal congestion bound."
-  object_id: "1000272"
-  route_key: "post43_paid_object_congestion"
-  updated_at: "2026-09-25T21:03:57.459091+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1267,14 +1791,6 @@
   updated_at: "2026-09-25T04:49:27.239522+00:00"
 -
   composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1000325"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
--
-  composition_manifest:
     -
       id: "1000214"
       math_version: 1
@@ -1339,14 +1855,6 @@
   object_id: "1000352"
   route_key: null
   updated_at: "2026-09-22T05:25:25.607471+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Clean-minus-double identity refining contact multiplicity."
-  object_id: "1000356"
-  route_key: null
-  updated_at: "2026-09-25T05:07:28.015896+00:00"
 -
   composition_manifest:
     -
@@ -1513,14 +2021,6 @@
   composition_status: null
   node_kind: "step"
   note: "Certified post-43/48 causal chain"
-  object_id: "1000429"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
   object_id: "1000438"
   route_key: null
   updated_at: "2026-09-25T11:54:39.370429+00:00"
@@ -1540,6 +2040,30 @@
   object_id: "1000342"
   route_key: null
   updated_at: "2026-10-01T20:15:07.778361+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000356"
+  route_key: null
+  updated_at: "2026-10-01T20:27:20.191028+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000325"
+  route_key: null
+  updated_at: "2026-10-01T20:32:45.019903+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000429"
+  route_key: null
+  updated_at: "2026-10-01T20:32:46.868766+00:00"
 -
   composition_manifest:
     -
@@ -2096,6 +2620,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "1001227"
+  route_key: null
+  updated_at: "2026-10-01T21:33:21.93605+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Methodology repair: restore missing reasoning-chain continuity to existing annotated descendants; organizational only."
   object_id: "1000765"
   route_key: null
@@ -2312,22 +2844,6 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
-  note: "Restore causal reasoning-chain annotation continuity; organizational only, no mathematical change."
-  object_id: "1000848"
-  route_key: null
-  updated_at: "2026-09-25T22:35:05.220703+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Contact-multiplicity refinement of snake accounting."
-  object_id: "1000872"
-  route_key: null
-  updated_at: "2026-09-25T05:07:26.517021+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
   note: ""
   object_id: "1000875"
   route_key: null
@@ -2382,14 +2898,6 @@
   object_id: "1000900"
   route_key: null
   updated_at: "2026-09-21T20:57:46.398164+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1000902"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
 -
   composition_manifest:
     -
@@ -2622,6 +3130,30 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000848"
+  route_key: null
+  updated_at: "2026-10-01T20:27:18.41976+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000872"
+  route_key: null
+  updated_at: "2026-10-01T20:27:22.113652+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000902"
+  route_key: null
+  updated_at: "2026-10-01T20:32:54.924303+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Even-path Hamiltonian special case of the corrected two-bit lift."
   object_id: "1001065"
   route_key: null
@@ -2803,14 +3335,6 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
-  note: "Certified post-43/48 causal chain"
-  object_id: "1001162"
-  route_key: null
-  updated_at: "2026-09-25T11:54:39.370429+00:00"
--
-  composition_manifest:
-  composition_status: null
-  node_kind: "step"
   note: "Reasoning-hygiene route annotation repair."
   object_id: "1000440"
   route_key: null
@@ -2847,3 +3371,78 @@
   object_id: "1000094"
   route_key: null
   updated_at: "2026-10-01T20:22:39.057077+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1000044"
+  route_key: null
+  updated_at: "2026-10-01T20:26:58.319981+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000627"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000169"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000517"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Recompose the good-residue two-hole blocker chain while preserving terminal branches."
+  object_id: "1001214"
+  route_key: null
+  updated_at: "2026-10-01T20:32:10.617212+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Reasoning-hygiene route annotation repair."
+  object_id: "1001162"
+  route_key: null
+  updated_at: "2026-10-01T20:32:48.760699+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000734"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000877"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1001098"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "1000292"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  composition_status: "current"
+  node_kind: "step"
+  note: "Reasoning-hygiene replacement recomposition of the four-step near-top source-rail chain into its strongest endpoint theorem."
+  object_id: "1001218"
+  route_key: null
+  updated_at: "2026-10-01T20:51:44.90774+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1001228"
+  route_key: null
+  updated_at: "2026-10-01T21:33:23.006397+00:00"

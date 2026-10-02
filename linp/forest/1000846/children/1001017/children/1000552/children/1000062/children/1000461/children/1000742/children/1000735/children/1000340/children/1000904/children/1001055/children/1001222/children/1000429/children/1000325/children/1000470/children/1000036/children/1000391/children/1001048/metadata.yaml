@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "cc40a5ea10385fa5697b60e3cf4ee2cb0d8886a6965e56e21b1b830e96a9fd89"
+created_at: "2026-09-24T19:55:22.252346+00:00"
+id: "1001048"
+last_elevation_revision: null
+last_substantive_worker_id: 250
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8d6a59f3-4002-4b62-998b-73d9e2c37880"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:00:59.342528+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "8d6a59f3-4002-4b62-998b-73d9e2c37880"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:00:59.342528+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 250
+parent_id: "1000391"
+position: 0
+research_interface:
+  consequence: "Every all-top output edge forces a nontrivial overlap/lens state among maximum endpoint paths at its three vertices; the nonascending top branch cannot consist of three mutually simple endpoint states."
+  consumer:
+    - "post-43/48 nonascending top-output branch"
+    - "top-potential induced core"
+    - "endpoint-lens packing"
+  given:
+    - "57d5e4c71035 all-top rank-L rotation outputs"
+    - "5854d853a44b unique-intersection alignment"
+  next_need: "Apply the multiple-overlap pair to many all-top output edges. Seek an injective or bounded-congestion choice of the resulting second common vertex/lens, or show repeated choices force a dense common maximum-path braid."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An all-top edge forces a multiple-overlap pair among its three maximum endpoint paths."
+statement_sha256: "1ad6d48f255814c3badcc6fd0fc1f33919d3dbb803a6592421f3cc0971e8e560"
+substantive_worker_ids:
+  - 250
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An all-top edge forces a multiple-overlap pair among its three maximum endpoint paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 7

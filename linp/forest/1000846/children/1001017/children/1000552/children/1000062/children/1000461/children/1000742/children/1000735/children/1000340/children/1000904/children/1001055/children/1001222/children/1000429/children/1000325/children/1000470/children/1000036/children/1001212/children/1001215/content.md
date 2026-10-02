@@ -1,0 +1,9 @@
+# Global monotone-payment charging would force a leading-coefficient gain
+
+## Statement
+
+Conjectural synthesis target. Let B be the active misaligned vertices and, for v in B with p_v=phi(v), let U_v and Y_v be the terminal-retained and nonflat-cell payments from 1001061. Seek an absolute-constant global charging inequality that bounds the total one-eighth payment sum_v(U_v+2Y_v) by bounded-congestion terminal resources: aligned-potential mass, rank-gap mass, special-edge mass, and monotone potential/rank-rise flow. Any such bound with no positive multiple of the full potential mass S on the right converts the local inequality U_v+2Y_v >= p_v/8-eta_v-O(1) into a strict improvement of the 43/48 leading coefficient.
+
+## Body
+
+The local obstruction is already strong enough: 1001061 gives a payment of p/8 minus defect at every low-defect misaligned center, not merely at global-top centers. The remaining issue is global reuse. U-type switchers are actual hyperedges and can be terminal-retained for at most their two terminal centers. Nonflat cells have monotone outputs: strict rank rise, a special edge, or an equal-rank all-superlevel edge. This suggests following each paid output upward through potential/rank levels until it terminates at an aligned vertex, a special edge, or genuine rank-gap slack. The desired theorem is a bounded-congestion flow/charging statement for this iteration. If the iteration can be charged with O(1) multiplicity to those already-profitable terminal resources, then a near-43/48 configuration cannot support linear low-defect misaligned potential mass. This is the leading-coefficient bottleneck; lower-order refinements of the local p/8 constant are irrelevant until this global charging is established.

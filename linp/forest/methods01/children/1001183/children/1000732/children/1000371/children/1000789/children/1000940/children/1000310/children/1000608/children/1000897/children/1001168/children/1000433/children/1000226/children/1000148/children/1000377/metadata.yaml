@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "16290a3780a655435a7299be6e278b40b6ec887effd12116bd2764b397690e0f"
+created_at: "2026-09-25T21:34:06.778431+00:00"
+id: "1000377"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "At equality the two certified ordered lower bounds must both be tight. Substituting even/odd r_i into the exact singleton-contact windows gives exactly the displayed central vertices, and distinct exact contacts force the stated local 3-cycle."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "At equality the two certified ordered lower bounds must both be tight. Substituting even/odd r_i into the exact singleton-contact windows gives exactly the displayed central vertices, and distinct exact contacts force the stated local 3-cycle."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "1000148"
+position: 0
+research_interface:
+  consequence: "The only collisions attaining r_j+r_{j+1}=r_i+2 are exact central triangle states with completely determined adjacent ranks and a constant-size list of contact positions."
+  consumer:
+    - "tight color-terminal collision analysis"
+    - "local linear 3-cycle branch"
+    - "post-43/48 U_11 finite-state reduction"
+  given:
+    - "867efd696575 universal adjacent edge-rank-sum bound"
+    - "49080cbf1371 exact singleton central window"
+    - "608468bb403b distinct exact contacts"
+  next_need: "Use the even/odd central normal forms to analyze repeated equality collisions. In the even case every equality collision is supported by the single middle edge g_q of its owner source path; in the odd case by one of the two middle edges. Combine with bounded host-edge reuse and half-rank host-edge rank to charge equality collisions."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Equality in the U_11 collision rank-sum bound has an exact central normal form."
+statement_sha256: "3f369acdeb235825f9e880b175c699492b9e1188a500a251ec01f6e38d578c4d"
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Equality in the U_11 collision rank-sum bound has an exact central normal form"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 6

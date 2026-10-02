@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "342a0712c1c7f2943c6f4a800fde0b8b648a3d2a792c20afd012c1249e192bb9"
+created_at: "2026-09-24T14:05:31.754218+00:00"
+id: "1000782"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Added the exact dependency on repaired slack theorem 20606dbd4cd9."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:43.842586+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Recorded the crossing-lens slack theorem as an exact logical premise."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:45.773532+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record the repaired crossing-lens slack theorem used to force a second auxiliary intersection at equal endpoint potential."
+    recorded_at: "2026-09-24T21:31:36.044309+00:00"
+    to_id: "1000146"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "corollary"
+origin_worker_id: 223
+parent_id: "1001184"
+position: 1
+research_interface:
+  consequence: "At one potential level, crossing host intervals cannot be supported by merely unique auxiliary intersections; every crossing pair creates a second auxiliary overlap and hence another balanced lens."
+  consumer:
+    - "flat gap-one level"
+    - "endpoint-lens packing"
+    - "post-43/48 strengthening"
+  given:
+    - "crossing balanced endpoint lenses on one host"
+    - "equal endpoint potentials at the retained labels"
+  next_need: "Apply to flat potential-p retained endpoints. A dense crossing family yields a dense second-generation lens network; a sparse crossing family is nearly laminar. Analyze these two alternatives separately."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Crossing balanced endpoint lenses at equal endpoint potential force a second auxiliary intersection."
+statement_sha256: "51c5818a339251b75898228d0f510c5baa8b2d728d8e51b2aad70da5b2e539fb"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Crossing balanced endpoint lenses at equal endpoint potential force a second auxiliary intersection"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 11

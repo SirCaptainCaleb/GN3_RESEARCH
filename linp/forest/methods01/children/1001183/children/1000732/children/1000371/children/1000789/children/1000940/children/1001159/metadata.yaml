@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "8887ba5aa6eab42ab01ae34817f424f76bc6b94f133098faec3834b206144dee"
+created_at: "2026-09-24T18:27:04.87231+00:00"
+id: "1001159"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The centerwise rotation bound |R(v)|>=s(v)/2-O(1), summed against the certified 5S/8 switching mass and n_+=o(S), gives the stated 5S/16 center-indexed endpoint mass."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The centerwise rotation bound |R(v)|>=s(v)/2-O(1), summed against the certified 5S/8 switching mass and n_+=o(S), gives the stated 5S/16 center-indexed endpoint mass."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+object_type: "corollary"
+origin_worker_id: 242
+parent_id: "1000940"
+position: 0
+research_interface:
+  consequence: "Near 43/48, at least (5/16-o(1))S center-indexed maximum-path rotations end at vertices whose endpoint potential is at least that of the center."
+  consumer:
+    - "post-43/48 leading-coefficient improvement"
+    - "global rotation-endpoint reuse"
+    - "potential-flow packing"
+  given:
+    - "d287da5967d5 global five-eighths switching mass"
+    - "5f8d96bf566a single-blocker rotation packet"
+  next_need: "Bound reuse of the same high-potential vertex across the center-indexed sets R(v), or show high reuse itself forces additional local defect. Any fixed proportional loss improves the 43/48 leading coefficient."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "43/48 near-extremizers carry five-sixteenths top-potential rotation mass."
+statement_sha256: "47fc4d5287b8b0a0bd76d1b56832a66290fa5b3586ee905a4d0bbae8dd405734"
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "43/48 near-extremizers carry five-sixteenths top-potential rotation mass"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 7

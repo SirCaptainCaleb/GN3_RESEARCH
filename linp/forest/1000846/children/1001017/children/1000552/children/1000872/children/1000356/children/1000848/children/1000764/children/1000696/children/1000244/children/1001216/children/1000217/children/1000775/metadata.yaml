@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "801023a185f87d31894b48b30e11d697ea600b5c0581d70fb8b45ed8bc2e432d"
+created_at: "2026-09-24T05:46:38.318751+00:00"
+id: "1000775"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "1000217"
+position: 0
+research_interface:
+  consequence: "For q>=5, the chosen path at the high D terminal has only finitely many central contact states; at phi(D)=2q the sole contact is forced to be the entrance at the exact central joint."
+  consumer:
+    - "final one-low odd-boundary state"
+    - "Astra 11/12 0-1-1 block"
+  given:
+    - "0-1-1 rank-(q+1) edge"
+    - "terminal potential at least 2q-3"
+    - "terminal-potential bound"
+    - "terminal-tail and half-path localization"
+  next_need: "Apply to h_D in 310000f0630b. Compare its reciprocal central state with the explicit P_v rotation ending at G. For s=2q or 2q-1 seek an immediate uncrossing; for s<=2q-2 combine with the analogous C-path normal form 436d55f14de2."
+  role: "reciprocal high-terminal central normal form"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "High 0-1-1 terminal paths have a four-level reciprocal central normal form."
+statement_sha256: "e4263afcb77253b2e46e52a7ff4bfb98a0edf1721c64469a6cec090a9f96053c"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "High 0-1-1 terminal paths have a four-level reciprocal central normal form"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:50:40.36178+00:00"
+version: 6

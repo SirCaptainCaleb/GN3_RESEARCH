@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d468e64050fba24107d131640613941cef1d10322f4a37db89f489eb4fcb4d29"
+created_at: "2026-09-25T20:43:49.640607+00:00"
+id: "1000530"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "22a5d11a-8ffe-4ffd-9969-17e0e79d847f"
+    detail: "R and S are maximum endpoint paths at distinct last vertices; a unique common vertex x would have to be an internal aligned joint, contradicting that x is the last vertex of S."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:03:57.459091+00:00"
+    worker_id: "314f9d8a-b50d-4323-b033-4c5c09dd9a01"
+  last_audit_observation:
+    claim_id: "22a5d11a-8ffe-4ffd-9969-17e0e79d847f"
+    detail: "R and S are maximum endpoint paths at distinct last vertices; a unique common vertex x would have to be an internal aligned joint, contradicting that x is the last vertex of S."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:03:57.459091+00:00"
+    worker_id: "314f9d8a-b50d-4323-b033-4c5c09dd9a01"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1001175"
+position: 100
+research_interface:
+  consequence: "Second source/anchor intersection is automatic for every whole chord on a canonical common anchor; endpoint-slack lemmas only need to determine which side contains a return."
+  consumer:
+    - "same-terminal certificate class S"
+    - "whole-chord side-location analysis"
+    - "return-cycle packing"
+  given:
+    - "5854d853a44b unique-intersection alignment"
+    - "canonical maximum source rail of the anchor"
+    - "whole chord with its entrance on that rail"
+  next_need: "Classify the location of the mandatory second intersection relative to x,u. If none lies beyond u toward the opposite endpoint, ed412ed8e3b1 forces endpoint-slack shallowness; otherwise the first such return gives the nonspecial cycle budget."
+research_level: "lemma"
+semantic_container_text: "Common-anchor return-intersection program: every retained whole chord must meet the canonical source rail again, converting the braid into controlled returns, overlap, or cycles."
+simplified_statement: "Every whole chord on a canonical common anchor has a second source-rail intersection."
+statement_sha256: "ff14ef30f39a26b756f9ada17aa197330bb141d574b92d18505681c4f1eec2f5"
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every whole chord on a canonical common anchor has a second source-rail intersection"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 8

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "282d13b88176eea5baafde7feeee246b66e21027b5026de2f1c24fdc9b004cdc"
+created_at: "2026-09-24T20:49:49.80577+00:00"
+id: "1000124"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "1000567"
+position: 0
+research_interface:
+  consequence: "To stay near the generic 185/512 source-mass floor, at least 3/7 of switchers must be terminal-retained. For a low-defect p-center this means |U_v| >= (15/56-o(1))p; any fixed deficit below that proportion forces a fixed quadratic source-mass gain."
+  consumer:
+    - "post-43/48 stability"
+    - "terminal-retained branch"
+    - "weighted source-mass optimization"
+  given:
+    - "7e047fd40dd7 four-fifths clean-retained packing"
+    - "c48823eea604 terminal-retained quadratic rank bound"
+    - "a5066873364f generic switcher source-mass floor"
+    - "b032348c1a8a dense switching family"
+  next_need: "Exploit the now-quantified U branch. A near-sharp center must carry about 0.268p terminal-retained switchers, each with an omitted entrance and reciprocal two-point transversal. Combine their ordered contact geometry with c48823eea604 and 8f040f62964a to force lens/rotation congestion."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Near-minimal source mass forces three-sevenths terminal retention."
+statement_sha256: "9febba6eefb8127eb7fba585eea10609a0d936dcfbc8d2e63ab9ee261f5f79fc"
+substantive_worker_ids:
+  - 201
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Near-minimal source mass forces three-sevenths terminal retention"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 9

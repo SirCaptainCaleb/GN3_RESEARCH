@@ -22,6 +22,7 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-24T22:00:47.487368+00:00"
     worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
     math_version: 5
@@ -52,10 +53,10 @@ statement_sha256: "4928505f7b87a2abc1287b493117e7e64f61d542183998c00538bc5e2afe8
 substantive_worker_ids:
   - 258
   - 231
-support_reason: "current_certified_premises"
-support_status: "supported"
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
 title: "Maximum-path central windows sharpen the Astra multiplicity master inequality"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-10-01T20:15:05.88247+00:00"
+updated_at: "2026-10-01T20:54:08.708629+00:00"
 version: 11

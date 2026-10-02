@@ -69,5 +69,5 @@ support_status: "supported"
 title: "Strict two-thirds all-special threshold for n<=12"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-30T20:55:07.81107+00:00"
-version: 12
+updated_at: "2026-10-01T20:26:56.580428+00:00"
+version: 13

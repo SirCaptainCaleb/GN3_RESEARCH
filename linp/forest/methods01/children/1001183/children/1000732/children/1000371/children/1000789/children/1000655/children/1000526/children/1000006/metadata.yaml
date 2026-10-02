@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 65
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "bc150afa57ff7a88718a56386aa007e93ad77ebadf04ba402ae454dc62a2a7cf"
+created_at: "2026-09-25T12:02:58.716365+00:00"
+id: "1000006"
+last_elevation_revision: null
+last_substantive_worker_id: 211
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: the 98152151c212 family also satisfies the general common-terminal rank-window hypotheses because terminality at rank-p v implies phi(e)<=p. Taking the maximum of the two valid lower bounds gives the envelope; the crossover is D=(1-1/sqrt(2))s+O(1), and the low-defect coefficient is 185/512."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: the 98152151c212 family also satisfies the general common-terminal rank-window hypotheses because terminality at rank-p v implies phi(e)<=p. Taking the maximum of the two valid lower bounds gives the envelope; the crossover is D=(1-1/sqrt(2))s+O(1), and the low-defect coefficient is 185/512."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  last_local_audit_repair:
+    reason: "Localized audit terminology repair: replace legacy source-potential wording by source-rank wording; mathematics unchanged."
+    recorded_at: "2026-09-25T18:18:22.223623+00:00"
+    worker_id: "5f9d4036-eb9a-492f-a8ab-c8f7f2f131d3"
+object_type: "lemma"
+origin_worker_id: 189
+parent_id: "1000526"
+position: 0
+research_interface:
+  consequence: "Combining cell dispersion with ordered-rank packing gives a two-regime envelope. Dense double cells no longer suppress the source-potential quadratic bonus below k^2/8; low-defect centers have a uniform 185/512 p^2 source-mass floor."
+  consumer:
+    - "41e898729cd2 triangle-lens-source frontier"
+    - "post-43/48 global source-potential optimization"
+  given:
+    - "98152151c212 cell-dispersion source-mass theorem"
+    - "75fdc99c76a8 common-terminal rank-window source bonus"
+  next_need: "Re-optimize the global source/triangle/output accounting using this envelope. Any global argument that previously needed a separate large-D triangle-capacity bound may now replace part of that branch by the uniform source floor."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Rank windows remove the high-triangle collapse in the source-mass frontier."
+statement_sha256: "053b4d27e7b852bf566b71ac4dc7556542e9e19e061e3481cc6f601502ab24ff"
+substantive_worker_ids:
+  - 189
+  - 211
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Rank windows remove the high-triangle collapse in the source-mass frontier"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 8

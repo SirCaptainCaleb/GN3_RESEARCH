@@ -1,4 +1,8 @@
-TEMPORARY BANS: No web search. Do not explore fixed small-order cases, residues, classifications, or investigations likely to lead to case ladders (such as successive bounded component-size profiles). Do not call or read the live Atlas during ordinary research, audit, coordination, proof rehearsal, or isolated-research ingestion. Use the locally downloaded artifact surfaces (especially research/startup_atlas.md, research/atlas.md, frontier/forest files) plus authoritative result deltas from sync()/continue(). Atlas access is allowed only when the assigned task explicitly concerns Atlas evaluation, maintenance, reconstruction, or debugging.
+TEMPORARY BANS: No web search. Do not explore fixed small-order cases, residues, classifications, or investigations likely to lead to case ladders (such as successive bounded component-size profiles).
+
+TEMPORARY NO-ATLAS BAN: Do not access, call, read, inspect, query, evaluate, maintain, reconstruct, debug, or otherwise use the Atlas or any Atlas-derived live surface for any purpose. No Atlas. Use the locally downloaded non-Atlas artifact surfaces and authoritative result deltas from sync()/continue() instead.
+
+LEADING-COEFFICIENT RESTRICTION: Give no attention to anything that only promises to improve lower-order terms. Attack only directions that could feasibly improve the leading coefficient. Do not spend research effort polishing additive constants, bounded-error terms, finite exceptions, or other lower-order refinements unless they are necessary components of a route with a credible leading-coefficient improvement.
 
 ## Common Pitfalls
 

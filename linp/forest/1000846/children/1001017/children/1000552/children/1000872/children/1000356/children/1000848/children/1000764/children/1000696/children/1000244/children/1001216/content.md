@@ -1,0 +1,9 @@
+# Odd-boundary consecutive-rank four-edge normal form
+
+## Statement
+
+Let q>=4, p=2q-3, and let P be a maximum p-edge path ending at v. For four potential-charged ascending nonspecial edges at v with ranks in {q,q+1}: if at least two have rank q, then some edge is double on P. If exactly one has rank q and all four are single on P, then its sole contact is C=g_{q-2}∩g_{q-1}, C is its opposite terminal and its unique entrance is off P; E=g_{q-1}∩g_q is unoccupied; the three rank-(q+1) contacts are A=g_{q-3}∩g_{q-2}, B=private(g_{q-2}), D=private(g_{q-1}); and the D-edge is terminal-only with its entrance off P.
+
+## Body
+
+For two rank-q members, the certified two-low normal form leaves only the {A,B} and {B,C} middle patterns. The {B,C} state cannot host two further non-double high edges. In the {A,B} state, B removes the right-joint slot and canonical entrance-rail localization removes the preceding private slot; every remaining pair of high single contacts yields a wrong-entrance or too-long splice. Hence an all-single four-edge family with two rank-q members is impossible. Now assume exactly one rank-q member and all four contacts are single. The odd-central window and the same clean-hole/wrong-entrance splices exclude the two rightmost low-witness slots, so the low contact is C. If C were its entrance, or if E were occupied, the reversed suffix together with the corresponding high edge and the low edge would give a rank-q longest path entering the low edge through a terminal, contradiction. Thus C is terminal-only, E is empty, and the high contacts are A,B,D. Finally, if D were the visible entrance of its rank-(q+1) edge, its distance two from the occupied A-contact would violate the quantitative clean-contact separation bound k-j>=q-1. Hence D is terminal-only as well.

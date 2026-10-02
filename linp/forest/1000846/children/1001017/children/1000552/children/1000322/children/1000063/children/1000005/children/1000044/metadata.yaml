@@ -67,5 +67,5 @@ support_status: "supported"
 title: "The n<=12 strict two-thirds search reduces to three structural classes"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-09-30T22:28:32.207682+00:00"
-version: 9
+updated_at: "2026-10-01T20:26:58.319981+00:00"
+version: 10

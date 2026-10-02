@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "dc99feb104c6cce16c8b438112b6e8a150c469d19d6f2493edce5bacd7556cb6"
+created_at: "2026-09-25T21:46:37.957188+00:00"
+id: "1000234"
+last_elevation_revision: null
+last_substantive_worker_id: 191
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a56e997a-e019-4c12-9dbc-e04b6186b5b3"
+    detail: "Version 2 correctly separates the boundary case missed previously: cycle-free topology only forces h onto R. If h is internal, the propagation bound applies; if h=last(R), no internal conclusion is claimed, and a fixed nonspecial h supports at most two distinct target states via its two terminal vertices."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:54:03.201991+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "a56e997a-e019-4c12-9dbc-e04b6186b5b3"
+    detail: "Version 2 correctly separates the boundary case missed previously: cycle-free topology only forces h onto R. If h is internal, the propagation bound applies; if h=last(R), no internal conclusion is claimed, and a fixed nonspecial h supports at most two distinct target states via its two terminal vertices."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:54:03.201991+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "corollary"
+origin_worker_id: 191
+parent_id: "1001178"
+position: 0
+research_interface:
+  consequence: "Unless a cycle appears, a flat reciprocal state forces its rank-p last edge to be common to the maximum v-path and the shorter selected precursor. Apart from at most two states using the precursor last edge, cycle-free states place these common rank-p edges in the prefix bounded by 2L+1-p."
+  consumer:
+    - "same-terminal selected U-branch"
+    - "common-precursor/maximum-path overlap packing"
+    - "post-43/48 local congestion"
+  given:
+    - "flat terminal-retained state from 7312b3378d20"
+    - "genuine selected common precursor containing both non-v vertices"
+    - "5854d853a44b unique-intersection alignment"
+    - "41100a9882dd cycle-or-shared-last-edge topology"
+    - "678901b48360 high-rank internal-edge propagation"
+  next_need: "Count many cycle-free flat U-states: after deleting at most two boundary states, each gives a common rank-p internal edge of P and R, supporting at most two target terminals, with nonconsecutive P-indices and bounded R-position."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A cycle-free flat terminal-retained state forces a rank-p edge common to both host paths."
+statement_sha256: "3af0a58f79ad5570080c66bc8c580187a6f578153b55e59415ab5e32746b9a0a"
+substantive_worker_ids:
+  - 191
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A cycle-free flat terminal-retained state forces a rank-p edge common to both host paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 11

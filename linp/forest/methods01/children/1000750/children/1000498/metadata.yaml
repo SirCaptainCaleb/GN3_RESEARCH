@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 5
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2036c6ff7e0858aeeca1130599a2773927b7f1cebcad2642933f9775a474716d"
+created_at: "2026-09-24T03:55:27.874203+00:00"
+id: "1000498"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "many-universal strong-rainbow reduction"
+  uses:
+    - "1000984"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "1000750"
+position: 100
+research_interface:
+  consequence: "Multiple universal stars canonically form a dense proper matching-color graph with strong rainbow lifting; one may choose any subset of universal centers as colors."
+  consumer:
+    - "s=2 equality layer"
+    - "rainbow matching route"
+  given:
+    - "set of pair-universal vertices"
+  next_need: "Generic rainbow bounds alone are numerically too weak near n≈4ell. Exploit the stronger fact that every color class is an almost-perfect matching and couple the rainbow path with the leave branch structure or with universal-star endpoint paths."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Any set of pair-universal vertices generates a dense strong-rainbow matching graph."
+statement_sha256: "0287f6030c7262909830f8090ac9da8fc3cdc1edc49af508e5bc691f1ff07146"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Any set of pair-universal vertices generates a dense strong-rainbow matching graph"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:29:11.575256+00:00"
+version: 7

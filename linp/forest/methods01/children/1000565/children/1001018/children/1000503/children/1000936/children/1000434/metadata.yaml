@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "426dc0082010712a8c172e86cd9ac11c52ee79ace8a2e01e8cd02fa3039d20c8"
+created_at: "2026-09-25T21:03:36.202625+00:00"
+id: "1000434"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "The cycle-neighbor source rail meets both the chord source rail and certificate anchor rail. If both intersections are unique, they are aligned joints. A clean lens with those two gates in opposite interiors would be cleanly pierced by the intervening subpath of the neighbor rail, contradicting the certified no-piercing theorem."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "The cycle-neighbor source rail meets both the chord source rail and certificate anchor rail. If both intersections are unique, they are aligned joints. A clean lens with those two gates in opposite interiors would be cleanly pierced by the intervening subpath of the neighbor rail, contradicting the certified no-piercing theorem."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "1000936"
+position: 0
+research_interface:
+  consequence: "The selected-terminal cycle neighbor either creates another multiple-overlap pair or, under unique intersections, its two gates cannot lie on opposite interiors of any clean R_e/A certificate lens."
+  consumer:
+    - "same-terminal class S four-rail braid"
+    - "selected common-anchor/fundamental-cycle coupling"
+    - "post-43/48 local congestion"
+  given:
+    - "d0a41dede20a late-gate fundamental-cycle residual"
+    - "0c885137ea8c common-terminal source-rail intersection"
+    - "5854d853a44b unique-intersection alignment"
+    - "6cb0d0ddee15 no clean third-path piercing"
+  next_need: "Combine with bbaf9e0b90fc. In the entrance-side equal-length exchange branch, the explicit clean R_e/A lens forces the two unique R_f gates to avoid opposite interiors; use the late position of the R_f/R_e gate to pin the R_f/A gate to a boundary or the complementary anchor region. Then compare with terminal-singleness/blocker obligations."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The selected-terminal cycle-neighbor rail cannot pierce a certificate-anchor lens."
+statement_sha256: "f710dcbd2f19dc5421fe3e47adff3b91d4f7d1fc37625419ccb448820769c1f5"
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The selected-terminal cycle-neighbor rail cannot pierce a certificate-anchor lens"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 5
