@@ -662,4 +662,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Manual research-mirror sync trigger; no functional effect.
+# Manual research-mirror sync trigger after rehearsal-policy and dictionary updates; no functional effect.
