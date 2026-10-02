@@ -197,6 +197,69 @@ def verify_content_md(rendered: str, o: dict[str, Any]) -> None:
     if rest != expected:
         raise RuntimeError(f"lossy content serialization detected for {o['id']}")
 
+def proof_rehearsal_root(objects: list[dict[str, Any]]) -> dict[str, Any] | None:
+    """Find the current comprehensive proof-rehearsal root without schema-specific logic."""
+    active = [o for o in objects if o.get("trashed_at") is None]
+    by_id = {o.get("id"): o for o in active}
+    preferred = by_id.get("proof_rehearsals01")
+    if preferred and str(preferred.get("title") or "").strip() == "Comprehensive Proof Rehearsals":
+        return preferred
+
+    candidates = [
+        o for o in active
+        if str(o.get("title") or "").strip() == "Comprehensive Proof Rehearsals"
+    ]
+    if not candidates:
+        return None
+    candidates.sort(key=lambda o: (
+        o.get("lifecycle_status") != "active",
+        str(o.get("updated_at") or ""),
+        str(o.get("id") or ""),
+    ))
+    return candidates[0]
+
+def write_research_main_lines(path: Path, objects: list[dict[str, Any]]) -> tuple[str | None, int]:
+    """Export direct children of the current comprehensive proof-rehearsal root."""
+    path.mkdir(parents=True, exist_ok=True)
+    root = proof_rehearsal_root(objects)
+    if root is None:
+        write_text(
+            path / "README.md",
+            "# Research main lines\n\n"
+            "No Comprehensive Proof Rehearsals root is defined yet. "
+            "Add direct children beneath that root to populate this folder."
+        )
+        return None, 0
+
+    kids = [
+        o for o in objects
+        if o.get("trashed_at") is None and o.get("parent_id") == root.get("id")
+    ]
+    kids.sort(key=lambda o: (
+        o.get("position") is None,
+        o.get("position") or 0,
+        str(o.get("id") or ""),
+    ))
+
+    index = [
+        "# Research main lines",
+        "",
+        f"Source root: [{root.get('id')}] {root.get('title')}",
+        "",
+    ]
+    if kids:
+        for child in kids:
+            filename = f"{child['id']}.md"
+            index.append(f"- `{filename}` — {child.get('title') or child['id']}")
+            rendered = content_md(child)
+            verify_content_md(rendered, child)
+            write_exact_text(path / filename, rendered)
+    else:
+        index.append("No proof-rehearsal children have been added yet.")
+
+    write_text(path / "README.md", "\n".join(index))
+    return str(root.get("id")), len(kids)
+
 def metadata(o: dict[str, Any]) -> dict[str, Any]:
     omit = {"statement", "body", "tree_path", "trashed_at"}
     m = {k: v for k, v in o.items() if k not in omit}
@@ -515,6 +578,9 @@ def build_schema(folder: str, schema: str):
     write_yaml(root / "state" / "atlas_legacy_snapshots.yaml", rows["atlas_legacy_snapshots"])
 
     ctx = root / "_context"
+    main_line_root_id, main_line_count = write_research_main_lines(
+        ctx / "research_main_lines", objects
+    )
     atlas = context(schema, "atlas")
     satlas = context(schema, "startup_atlas")
     hindex = context(schema, "help")
@@ -565,9 +631,9 @@ This directory is the artifact snapshot for repository revision {state.get('revi
 
 If you reached this file through {schema}.boot(), the worker identity and boot contract are already established. Do not call {schema}.startup() or {schema}.atlas() merely to re-ingest context already present here.
 
-Use research/startup_atlas.md for compact orientation, research/atlas.md for the broader conceptual map, and research/frontier.md for current theorem-facing leaves. Pull exact live mathematics from Supabase only when needed, especially for changes after this artifact revision or before state-sensitive mutations.
+Use research_main_lines/ for the current comprehensive proof-route rehearsals. Use research_lookup/frontier.md and the forest views in research_lookup/ for broader lookup and orientation. Atlas and startup-Atlas views are intentionally not packaged in the generated artifact.
 
-Use kernel.md, project_policy.md, roles/, standardization_dictionary.txt, and the RPC lookup files as the artifact's baseline operational context. continue(worker_id) will report context files whose live hashes have changed since the artifact snapshot rather than resending unchanged artifact material.
+Use kernel.md, project_policy.md, roles/, standardization_dictionary.txt, and the RPC lookup files as the artifact's baseline operational context. Pull exact live mathematics from Supabase only when needed, especially for changes after this artifact revision or before state-sensitive mutations. continue(worker_id) will report context files whose live hashes have changed since the artifact snapshot rather than resending unchanged artifact material.
 
 Repository revision at export: {state.get('revision')}
 """
@@ -579,7 +645,9 @@ Repository revision at export: {state.get('revision')}
         "repository_revision": state.get("revision"),
         "live_object_count": len(active),
         "root_count": len(roots),
-        "mirror_format": 1,
+        "research_main_lines_root_id": main_line_root_id,
+        "research_main_line_count": main_line_count,
+        "mirror_format": 2,
     })
 
 def main():
