@@ -1,9 +1,0 @@
-# Quadratic-minimal relocation states have no tiny side and a three-side has a complete long-neighbor interface
-
-## Statement
-
-Let A|B|C be a Phi-minimal equipped three-block state in a trapped Astra-006 contiguous-block relocation component. If n>=6 no block has order one, and if n>=9 no block has order two. Let X=(x_1,x_2,x_3) be a three-block and P=(p_1,...,p_m) a block of order m>=5. Then either neither ordered interface is needed because the relocation component contains the absorbed state {x_2}|(x_3,P,x_1)|Z, or at least one ordered interface is double non-tight. If exactly one orientation is double non-tight, X union P has an explicit two-path cover of orders 4 and m-1 given by the reversed four-path at the barrier and the complementary inherited path.
-
-## Body
-
-A 1|p pair with p>=3 admits an immediate balancing relocation lowering Phi. For a 2|p pair with p>=4, inspecting both block orders shows every nonmerging interface pattern except the two single-tight endpoint patterns lowers Phi; those surviving tight triples concatenate across the long block to a two-cover, contradiction. Hence the stated minimum block orders follow. Now take a 3|m pair with m>=5. At each block order, merge and the balancing m,3 to m-1,4 slide are excluded by trapping/minimality. Thus each orientation is either double non-tight or has the opposite single-tight endpoint pattern. If neither orientation is double non-tight, the two surviving endpoint triples concatenate with P to form the tight path (x_3,P,x_1), and moving x_1 behind P gives the reachable absorbed state with singleton x_2. If exactly one orientation is double non-tight, boundary antisymmetry gives the reversed four-path across that interface, while the nonbarrier orientation supplies the complementary endpoint triple; together these yield the explicit 4 and m-1 two-path cover of X union P.

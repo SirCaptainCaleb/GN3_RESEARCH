@@ -1,9 +1,0 @@
-# Ordered shadow graph for chaining ascending edges
-
-## Statement
-
-For each ascending nonspecial hyperedge e={x,u,v} of rank q with unique entrance x, form an auxiliary edge-ordered graph Z on V(H) by adding the two entrance-terminal edges xu,xv with order label q-1 and the terminal-pair edge uv with order label q; color all three auxiliary edges by the parent hyperedge e. Investigate whether sufficiently many ascending hyperedges force a long strictly increasing rainbow path in Z of a liftable form, and whether such a path yields a long linear path in H.
-
-## Body
-
-The motivation is that an ascending hyperedge is exactly a one-step rank-rise gadget: phi(x)=q-1 and phi(e)=q. Encoding e by the ordered triangle xu,xv at level q-1 and uv at level q makes that ascent explicit inside a graph. A strictly increasing path in Z cannot remain indefinitely inside one rank layer, potentially coupling the flat equal-potential and strict-rise regimes that are currently analyzed separately. The main obstruction is lifting: an arbitrary increasing path in Z need not correspond to a linear hypergraph path, because consecutive auxiliary edges may come from the same parent hyperedge in an unusable pattern, and unused third vertices of later parent hyperedges may intersect earlier parent hyperedges. A useful version should therefore require a rainbow condition on parent-hyperedge colors and an additional compatibility condition ensuring that for the chosen parent sequence E_1,...,E_t, consecutive parents intersect exactly in the shared Z-vertex and nonconsecutive parents are disjoint. The first research task is to characterize a weaker checkable condition on an increasing rainbow Z-path that automatically guarantees this lift, ideally using the order labels and entrance/terminal roles rather than explicitly testing all hyperedge intersections. The second task is then to apply edge-ordered graph monotone-path principles to force such liftable paths from density.

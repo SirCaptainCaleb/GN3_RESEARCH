@@ -1,9 +1,0 @@
-# The {1,1,1} cube reduces to strict descent, nonuniform neutral transport, or certified order disagreement
-
-## Statement
-
-Let Gamma be a minimum-span cyclic defect certificate of run type {1,1,1}, with base component-order profile g. Then exactly one of the following structural regimes applies. (1) Some pair of entries of g differs by at least two, and one canonical cube state has strictly smaller quadratic potential than the antipodal base states. (2) The profile is equitable but nonuniform, and the two antipodal equal-profile states are joined inside the cube by the certified three-step Phi-neutral singleton-transfer path of 5ba8c8a53ce9. (3) The profile is all equal, and the antipodal support triangle forces certified relative-order disagreement by e677f3148059. Thus the all-equal {1,1,1} residue is no longer a separate unresolved local geometry; only the nonuniform neutral-transport regime remains to be consumed by the standard terminal-frontier machinery when strict descent is excluded.
-
-## Body
-
-By f3965b3ddf4e, the six nonconstant cube states are exactly the six ordered singleton transfers of g. If a pair of base orders differs by at least two, transferring one vertex from the larger to the smaller strictly decreases Phi, giving (1). Otherwise g is equitable. If it is not all equal, 5ba8c8a53ce9 gives the stated three-step Phi-neutral path between antipodes, giving (2). If all three base orders are equal, the canonical antipodal exchange has the support-triangle structure used in e677f3148059, whose certified conclusion is unavoidable relative-order disagreement, giving (3). These cases exhaust all integer triples g.

@@ -1,9 +1,0 @@
-# Every label of a locally minimal 4|5 union is locked out of the common long interior
-
-## Statement
-
-Let H be a boundary tournament and let X|Y|P be a spanning three-cover minimizing quadratic potential within its connected pairwise-repartition component, with |X|=4, |Y|=5, and P=(p_1,...,p_m) of order m>=6. Put W=V(X) union V(Y) and M=(p_2,...,p_{m-1}). Then every vertex w in W is noninsertable into every position of the displayed path M. More precisely, for every w in W there exists a balanced Hamiltonian partition A_w|B_w of H[W] with |A_w|=4, |B_w|=5 and w in A_w such that A_w|B_w|P lies in the same pairwise-repartition component and has the same Phi, and, writing C_w=A_w-{w}, the five-set C_w union {p_1,p_m} is Hamiltonian while M union {w} is non-Hamiltonian. Consequently each of the nine labels w supplies a tight triple through w reversing a displayed edge of M.
-
-## Body
-
-Fix w in W. By balanced9_prescribed_vertex_mobility01, H[W] has a balanced Hamiltonian 4|5 partition A_w|B_w with w in A_w. Replacing X|Y by A_w|B_w is one legal pairwise repartition on the same nine-vertex union, preserves the component-order multiset {4,5,m}, and therefore preserves Phi. Hence A_w|B_w|P lies in the same connected pairwise-repartition component and is also Phi-minimal there. Apply local_four_allfour_interior_lock01 to its four-side A_w and the path P, whose order is m>=6. For the chosen w in A_w, that theorem gives that (A_w-{w}) union {p_1,p_m} is Hamiltonian, whereas M union {w} is non-Hamiltonian. Thus w is noninsertable into every position of the displayed path M and has a label-specific reversal witness on a displayed edge of M. Since w was arbitrary in W, all nine labels are simultaneously locked against the same interior M. No trappedness, minimum-counterexample hypothesis, or m>=7 threshold is used beyond the hypotheses of the two cited local theorems.

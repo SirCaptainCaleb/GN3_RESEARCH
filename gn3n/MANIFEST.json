@@ -1,0 +1,19 @@
+{
+  "brainstorm_count": 0,
+  "generated_at": "2026-10-02T23:42:35.190124+00:00",
+  "main_line_count": 6,
+  "mirror_format": 7,
+  "research_line_count": 0,
+  "schema": "gn3n",
+  "snapshot_event_id": 0,
+  "tables": [
+    "documents",
+    "research",
+    "research_versions",
+    "dependencies",
+    "supersessions",
+    "brainstorms",
+    "dictionary"
+  ],
+  "toolkit_count": 76
+}

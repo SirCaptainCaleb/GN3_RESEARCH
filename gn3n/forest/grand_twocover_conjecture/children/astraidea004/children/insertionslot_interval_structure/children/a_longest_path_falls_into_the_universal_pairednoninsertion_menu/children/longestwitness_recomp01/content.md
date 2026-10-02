@@ -1,9 +1,0 @@
-# Outside a globally longest path, one paired-noninsertion type occurs on many disjoint pairs and either separates or concentrates on one exact path core
-
-## Statement
-
-Let P be a globally longest tight path and U=V(H)-V(P) have r>=2 vertices. Classify each outside pair by the four coarse paired-noninsertion outcomes. Some type occurs on at least one quarter of all pairs and therefore on a matching of at least ceil(r(r-1)/(8(2r-3))) pairwise disjoint outside pairs. For any integer s>=2, after choosing one certified path interval for each witness, either s witness intervals are pairwise disjoint on P or some vertex p_t of P belongs to at least ceil(t/(s-1)) of the t matching witnesses. In the concentrated branch, Hamiltonian four-/five-set witnesses repeat one exact three-vertex window on at least one third of those pairs; cross-triple witnesses share the exact anchor p_t; interval connectors all cross p_t.
-
-## Body
-
-Global maximality of P makes every exterior vertex noninsertable, so the paired-noninsertion theorem assigns each outside pair one of four coarse outcomes. A largest color class has at least binom(r,2)/4 edges. Greedily extracting a matching, one chosen edge removes at most 2r-3 edges, yielding at least ceil(r(r-1)/(8(2r-3))) disjoint pairs of one common type. Associate to each witness the interval of P it uses. For intervals on a line, matching number equals piercing number: if there are not s disjoint witness intervals, at most s-1 path vertices hit them all, so one vertex p_t hits at least ceil(t/(s-1)) witnesses. This proves the separated-or-concentrated alternative directly. In the concentrated branch a path vertex lies in at most three windows of three consecutive P-vertices, so Hamiltonian four-/five-set witnesses repeat one exact window on at least ceil(k/3) pairs. Cross-triple intervals are singletons, hence all use p_t exactly, while interval connectors already traverse subpaths containing p_t.

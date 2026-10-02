@@ -1,9 +1,0 @@
-# Shared-endpoint six-windows force adjacent bounded four-window migration
-
-## Statement
-
-In the Hamiltonian-six shared-endpoint setting, let W=D union {w} with |D|=3 and let F=D union {e,f} be a Hamiltonian five-set supplied by the shared endpoint, where e,f lie outside W. Then either (1) at least one of D union {e}, D union {f} is Hamiltonian, giving a Hamiltonian four-window W_prime with |W intersect W_prime|=3; or (2) there exist distinct d_1,d_2 in D such that W_1=(D-{d_1}) union {e,f} and W_2=(D-{d_2}) union {e,f} are Hamiltonian, each H-W_i is non-Hamiltonian with path-cover number two, |W intersect W_i|=2, and |W_1 intersect W_2|=3. Thus every such shared-endpoint six-window yields either a distance-one anchored successor or two mutually adjacent distance-two successors.
-
-## Body
-
-Because F is Hamiltonian and has order five, the certified five-set deletion theorem gives at least two Hamiltonian four-subsets of F. The five possible four-subsets are obtained by deleting e, deleting f, or deleting one of the three vertices of D. If deleting f or deleting e gives a Hamiltonian four-set, then D union {e} or D union {f} is Hamiltonian, respectively, and it shares the three vertices D with W, giving outcome (1). Otherwise both endpoint deletions are non-Hamiltonian. Hence at least two distinct deletions d_1,d_2 in D yield Hamiltonian four-sets W_i=(D-{d_i}) union {e,f}. Each W_i is a proper Hamiltonian support in a minimum counterexample, so H-W_i is non-Hamiltonian with path-cover number two. Since W=D union {w}, each W_i shares exactly the two surviving vertices of D with W, while W_1 and W_2 share e,f and the unique vertex of D outside {d_1,d_2}; therefore |W intersect W_i|=2 and |W_1 intersect W_2|=3. This proves the dichotomy directly.

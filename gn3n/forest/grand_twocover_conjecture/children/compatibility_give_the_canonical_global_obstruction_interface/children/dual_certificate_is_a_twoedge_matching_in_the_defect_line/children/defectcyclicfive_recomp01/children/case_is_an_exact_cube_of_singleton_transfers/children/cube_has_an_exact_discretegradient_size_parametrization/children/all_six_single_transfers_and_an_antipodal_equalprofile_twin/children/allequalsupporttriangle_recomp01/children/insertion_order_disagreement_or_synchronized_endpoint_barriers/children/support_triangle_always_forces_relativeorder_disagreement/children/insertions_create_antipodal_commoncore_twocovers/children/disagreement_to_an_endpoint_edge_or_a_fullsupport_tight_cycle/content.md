@@ -1,9 +1,0 @@
-# Successful insertion localizes order disagreement to an endpoint edge or a full-support tight cycle
-
-## Statement
-
-Assume the all-three-successful-insertion branch of 1278e049ce8e. Then there exist distinct indices i,j modulo three such that the successful-insertion path R_j on M_j union T orders t_{i+1} before t_i, opposite to P_i=(t_i,M_i,t_{i+1}). Since V(R_j) intersect V(P_i)={t_i,t_{i+1}}, the reversed-order path-intersection argument applied to P_i and R_j localizes at the two endpoint edges of P_i: either there is a tight triple reversing one of the displayed endpoint edges of P_i, or there is a vertex-simple tight cycle whose vertex set contains all of V(P_i). In the latter case, if the R_j subpath from t_{i+1} to t_i has an interior vertex, the cycle support properly contains V(P_i) and hence is a Hamiltonian enlargement of S_i.
-
-## Body
-
-Every R_j is a total order on T={t_1,t_2,t_3} and preserves t_j before t_{j+1}. No total order can simultaneously satisfy the three cyclic inequalities t_1<t_2, t_2<t_3, t_3<t_1. Hence R_j reverses at least one other cyclic pair, say it places t_{i+1} before t_i. The supports of P_i and R_j meet exactly in {t_i,t_{i+1}} because their non-T petals M_i and M_j are disjoint. Apply Section 4 of pathcalc01 with P=P_i and Q=R_j. The two common vertices are the two ends v_0=t_i and v_k=t_{i+1} of P_i and occur oppositely on Q. In the proof of pathcalc01 the only possible reversing triples are therefore the endpoint-local triples based on (v_0,v_1) or (v_{k-1},v_k). If neither reversal occurs, the proof constructs a tight cycle by following the Q-subpath from v_k to v_0 and then P from v_0 through v_{k-1} back to v_k; this cycle contains every vertex of P_i. If the Q-subpath has an interior vertex then the cycle support strictly contains V(P_i), and cutting the cycle at any place gives a tight Hamilton path on that larger support.

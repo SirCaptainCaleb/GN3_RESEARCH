@@ -1,9 +1,0 @@
-# A unique-crossing endpoint near-merge gives a balanced one-for-one migration or truncation noninsertion
-
-## Statement
-
-Let H be a boundary tournament with a spanning three-cover A|B|C whose three supports have the same order r>=3. Let x be an endpoint of a displayed path on A. Suppose H-x has a deletion cover B|L such that L is a Hamilton path on (A-{x}) union C and has exactly one ordinary crossing edge relative to the partition (A-{x})|C. Let c be the endpoint of the C-block of L incident with that crossing edge. Then either: (1) (C-{c}) union {x} is Hamiltonian, in which case A|C has a balanced pairwise repartition obtained by the one-for-one support migration x<->c; or (2) x is noninsertable into the displayed C-block with c deleted. If H has no two-cover, then additionally B union {x} is non-Hamiltonian.
-
-## Body
-
-Cut the unique ordinary crossing edge of L. Its two nonempty maximal blocks have supports A-{x} and C. Let c be the endpoint of the C-block incident with the crossing. The segment of L consisting of the whole A-{x} block together with c is a tight path on (A-{x}) union {c}; this has order r. Deleting c from the C-block leaves an inherited tight path on C-{c}, of order r-1. If H[(C-{c}) union {x}] is Hamiltonian, choose a Hamilton path on that support. Together with the tight path on (A-{x}) union {c}, it gives a two-cover of A union C with two supports of order r. Relative to the original pair A|C this is exactly the one-for-one support migration x<->c, hence a balanced pairwise repartition. If H[(C-{c}) union {x}] is non-Hamiltonian, then x cannot be inserted at any position of the displayed inherited path on C-{c}, because any such insertion would produce a Hamilton path on that support. Thus x is noninsertable there. Finally, if B union {x} were Hamiltonian, a Hamilton path on B union {x} together with L would two-cover H, so in a no-two-cover tournament B union {x} is non-Hamiltonian.

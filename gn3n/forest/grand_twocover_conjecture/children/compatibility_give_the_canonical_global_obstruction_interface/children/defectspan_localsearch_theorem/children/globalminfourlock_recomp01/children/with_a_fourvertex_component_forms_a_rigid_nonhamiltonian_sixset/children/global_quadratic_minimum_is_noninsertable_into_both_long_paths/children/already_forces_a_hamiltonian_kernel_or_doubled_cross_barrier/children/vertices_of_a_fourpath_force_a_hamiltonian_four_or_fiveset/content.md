@@ -1,9 +1,0 @@
-# Doubled barriers at the two middle vertices of a four-path force a Hamiltonian four- or five-set
-
-## Statement
-
-Let X=(x_0,x_1,x_2,x_3) be a tight four-vertex path in a boundary tournament. Suppose x_1 carries a doubled incoming barrier witnessed by two distinct exterior vertices a,b, and x_2 carries a doubled incoming barrier witnessed by two distinct exterior vertices c,d; the two witness pairs need not be disjoint. Then H contains a Hamiltonian set of order four or five contained in V(X) union {a,b,c,d}.
-
-## Body
-
-Consider the ordered middle pair R=(x_1,x_2). Since X is tight, x_0 left-extends R and x_3 right-extends R. For u in {a,b}, exactly one of (x_1,x_2,u) and its reverse (u,x_2,x_1) is tight. If (x_1,x_2,u) is tight for some u, then R has two right extenders x_3,u and the left extender x_0; by e425e6ca5fe0 the five-set {x_0,x_1,x_2,x_3,u} is Hamiltonian. Thus we may assume both (a,x_2,x_1) and (b,x_2,x_1) are tight. Symmetrically, for v in {c,d}, exactly one of (v,x_1,x_2) and (x_2,x_1,v) is tight. If (v,x_1,x_2) is tight for some v, then R has two left extenders x_0,v and the right extender x_3, so e425e6ca5fe0 again gives the Hamiltonian five-set {x_0,x_1,x_2,x_3,v}. Hence we may assume both (x_2,x_1,c) and (x_2,x_1,d) are tight. Now use the reversed ordered pair Rrev=(x_2,x_1), which is a tight path vacuously. The vertices a,b are two left extenders of Rrev, while c,d are two right extenders. If one of c,d is distinct from both a,b, then e425e6ca5fe0 applied to the two left extenders a,b and that distinct right extender gives a Hamiltonian five-set. Otherwise {c,d}={a,b}. Since a,b are distinct, (a,x_2,x_1) and (x_2,x_1,b) are tight, so (a,x_2,x_1,b) is itself a Hamiltonian four-vertex path. These alternatives are exhaustive.

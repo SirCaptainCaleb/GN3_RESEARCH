@@ -1,9 +1,0 @@
-# Proof rehearsal 9 — 2026-09-25 19:40 UTC
-
-## Statement
-
-For a rank-p center v with k source-clean, doubly-terminal-single, paid-certified strict-two-terminal-gap edges assigned to v as a minimum-rank terminal, the certified local consequences do not yet imply k=o(p). 59c5795520ff forces k distinct opposite terminals of rank at least p and a disjoint entrance packet with total rank at least (p/2)k+k(k-1)/8; a47f1ec7709f further forces Omega(k) same-label vertices lying simultaneously on two source rails and hence two balanced endpoint lenses per label; 5a5ceede5e3f adds clean fundamental-cycle blockers. The unsupported step is to bound global reuse/congestion of these high-rank vertices, lens states, or forest-branch blocker certificates strongly enough to convert those local packets into k=o(p). Without such a packing theorem the same off-center high-rank structure may be reused across many centers, so summing local Omega(p k+k^2) rank mass is unjustified.
-
-## Body
-
-For a rank-p center v with k source-clean, doubly-terminal-single, paid-certified strict-two-terminal-gap edges assigned to v as a minimum-rank terminal, the certified local consequences do not yet imply k=o(p). 59c5795520ff forces k distinct opposite terminals of rank at least p and a disjoint entrance packet with total rank at least (p/2)k+k(k-1)/8; a47f1ec7709f further forces Omega(k) same-label vertices lying simultaneously on two source rails and hence two balanced endpoint lenses per label; 5a5ceede5e3f adds clean fundamental-cycle blockers. The unsupported step is to bound global reuse/congestion of these high-rank vertices, lens states, or forest-branch blocker certificates strongly enough to convert those local packets into k=o(p). Without such a packing theorem the same off-center high-rank structure may be reused across many centers, so summing local Omega(p k+k^2) rank mass is unjustified.

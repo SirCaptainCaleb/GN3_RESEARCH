@@ -1,9 +1,0 @@
-# The mandatory-triple neighbor has opposite side at least four, with an exact six-set residue at equality
-
-## Statement
-
-In the corrected one-backward edge-orderable neighbor, choose a spanning two-cover A|B with the mandatory ordered triple contained consecutively in A and |A| minimum. Then |A|>=3, |B|>=4, and adjoining either endpoint v,w of A to B gives a non-Hamiltonian induced subtournament. If |B|=4 and E=V(B) union {v,w}, then H[E] is non-Hamiltonian, H[E-{v}] and H[E-{w}] are non-Hamiltonian, and H[E-{b}] is Hamiltonian for every b in V(B); hence v,w are exactly the two bad deletion labels of E.
-
-## Body
-
-The endpoint barriers are part of the mandatory-triple minimality setup. Since B plus either endpoint is non-Hamiltonian, |B| cannot be at most two because every boundary tournament on at most three vertices is Hamiltonian; thus |B|>=3. Suppose |B|=3. The Hamiltonian three-set B has two non-Hamiltonian one-vertex extensions by the endpoints v,w. In the edge-orderable setting, the certified two-bad-four-extensions theorem makes B union {v,w} Hamiltonian. Deleting v,w from A leaves an inherited path residue. If neither endpoint lies in the mandatory triple, this gives a two-cover with a strictly smaller triple-containing component; if an endpoint lies in the triple, the new two-cover splits the mandatory triple across components. Both contradict the defining minimality/mandatory property. Therefore |B|>=4. Now assume |B|=4 and put E=B union {v,w}. The endpoint deletions E-v and E-w are non-Hamiltonian. Four-of-six therefore forces every B-deletion E-b to be Hamiltonian. If E itself were Hamiltonian, the same A-{v,w} residue argument would again produce either a smaller mandatory-triple component or a two-cover containing no full mandatory triple. Hence E is non-Hamiltonian and v,w are exactly its bad deletion labels.

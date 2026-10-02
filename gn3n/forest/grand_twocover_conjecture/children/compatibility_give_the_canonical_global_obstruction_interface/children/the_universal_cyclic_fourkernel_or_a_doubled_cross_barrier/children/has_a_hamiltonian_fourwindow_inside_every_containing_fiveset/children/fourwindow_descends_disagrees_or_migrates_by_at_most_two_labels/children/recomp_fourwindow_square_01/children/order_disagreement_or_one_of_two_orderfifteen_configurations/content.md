@@ -1,9 +1,0 @@
-# From order fifteen onward a coherent endpoint square yields order disagreement or one of two order-fifteen configurations
-
-## Statement
-
-Let H be a minimum counterexample of order n>=15 satisfying the coherent two-label endpoint-square hypotheses of recomp_square45_01, and let C_a=(D+a)|(F-a) be Phi-minimal in its connected pairwise-repartition component. Then at least one of the following holds: (1) order disagreement occurs; (2) when n=15, a deletion cover has at least two ordinary path edges joining different classes of a displayed 5|5|5 three-cover; (3) when n=15, two displayed endpoints are noninsertable into the same displayed opposite path as in 5ec926f6e4fc.
-
-## Body
-
-For n>=16, apply b8c7d08433a5 to obtain explicit order disagreement. Now let n=15. The state C_a has profile 4|5|6 in the only no-disagreement branch of recomp_square45_01, hence Phi(C_a)=16+25+36=77. Let Phi_min be the global minimum of Phi over all spanning three-covers of H. Since every three-cover has three positive component orders summing to 15, the unique absolute minimum profile is 5|5|5 with Phi=75, and the next possible value achieved by C_a is 77. Thus Phi_min is either 75 or 77. If Phi_min=77, a globally Phi-minimal cover has profile 4|5|6 and therefore has a four-vertex component; global_four_side_order15 gives explicit order disagreement. If Phi_min=75, H has a globally Phi-minimal all-equal 5|5|5 cover. Apply certified 5ec926f6e4fc to that cover: it yields either a deletion cover with at least two ordinary path edges joining different classes of the displayed three-cover, two displayed endpoints noninsertable into the same displayed opposite path, or explicit order disagreement. Hence in every case one of the alternatives in the statement occurs.

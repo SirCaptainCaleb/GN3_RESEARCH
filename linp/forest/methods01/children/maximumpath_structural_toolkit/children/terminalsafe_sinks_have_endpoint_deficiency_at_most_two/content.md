@@ -1,9 +1,0 @@
-# Terminal-safe sinks have endpoint deficiency at most two
-
-## Statement
-
-Let H be a linear 3-graph of minimum degree δ, let P=(g_1,...,g_s) be a linear path ending at x, let a be a last vertex of g_1 at the opposite end, and fix y,z outside V(P). If at a there is neither a safe clean extension avoiding y,z nor a safe single-blocker rotation avoiding y,z, then δ-s≤2. Consequently, if a double-blocker splice produces an x-ending path avoiding y,z with loss d from a (δ-1)-edge entrance path in the boundary case q=δ, then every loss d≥2 state admits another safe clean extension or safe single rotation; only loss d=1 can be a local sink.
-
-## Body
-
-Use the notation C,S,D of the endpoint-deficiency lemma 5f79968b85de. Absence of a safe clean edge means every clean edge through a contains y or z. By linearity there is at most one clean edge containing y and at most one containing z. Write C_y,C_z in {0,1}, C=C_y+C_z. Absence of a safe single blocker means every single blocker either has blocker x or contains y or z. There is at most one single blocker of each of these three types. Moreover, if C_y=1 then no single blocker can contain y, because the clean-y edge and such a single blocker would both contain a and y; similarly for z. Hence S<=1+(1-C_y)+(1-C_z)=3-C. Therefore 2C+S<=C+3<=5. The deficiency inequality 2C+S>=2(δ-s) gives 2(δ-s)<=5, so the integer δ-s is at most 2. In the boundary setting q=δ, the canonical entrance path has length q-1. A splice of loss d has length s=q-1-d, hence δ-s=d+1. If d>=2 then δ-s>=3, so the state cannot be a sink: a safe clean extension or safe single-blocker rotation exists.

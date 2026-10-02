@@ -1,0 +1,713 @@
+[
+  {
+    "definition": "In a boundary 3-tournament, a tight triple is an ordered triple of distinct vertices that is a hyperedge.",
+    "notes": "Its boundary flip is a non-tight triple; a cyclic rotation has no implied status.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "tight triple",
+    "updated_at": "2026-09-29T19:10:15.114059+00:00"
+  },
+  {
+    "definition": "A boundary r-tournament is an r-uniform directed hypergraph such that for every ordered r-tuple e of distinct vertices, exactly one of e and its boundary flip is a hyperedge.",
+    "notes": "In GN3N, r=3 unless otherwise specified. For r=3, call hyperedges tight triples when natural.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "boundary tournament",
+    "updated_at": "2026-09-29T19:10:16.934346+00:00"
+  },
+  {
+    "definition": "A fan is a nonempty family of hyperedges that has a pivot.",
+    "notes": "Terse notation is permitted. If p is understood as the pivot, phrases such as an (u,v)-fan, a complete (u,v)-fan, a reverse (u,v)-fan, and a complete reverse (u,v)-fan may be used when the corresponding modifier is defined.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "fan",
+    "updated_at": "2026-09-29T19:11:19.211901+00:00"
+  },
+  {
+    "definition": "For a path cover C=P_1|...|P_q, the quantity Phi(C)=sum_i |P_i|^2.",
+    "notes": "When Phi has been fixed locally, quadratic potential and Phi are interchangeable. The definition applies to any fixed number q of path-cover components.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "quadratic potential",
+    "updated_at": "2026-09-27T15:54:47.821676+00:00"
+  },
+  {
+    "definition": "For a boundary tournament H and a vertex x, a deletion cover at x is a two-cover of H-x.",
+    "notes": "When x matters, write deletion cover at x or a two-cover of H-x.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "deletion cover",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Let R,S partition a vertex set. Write ell(X) for the maximum number of vertices in a tight path of H[X]. The bipartition R|S is a one-defect state if (|R|-ell(R))+(|S|-ell(S))=1.",
+    "notes": "No minimum-counterexample or deletion-cover hypothesis is part of the definition.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "one-defect state",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "A two-cover is a path cover consisting of one or two nonempty tight paths.",
+    "notes": "The paths together contain every vertex by the definition of path cover.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "two-cover",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Relative to a pivot p of a fan F, a leaf is a vertex other than p contained in some member of F.",
+    "notes": "Leaf is relative to a chosen pivot when a fan has more than one pivot.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "leaf",
+    "updated_at": "2026-09-28T21:23:53.248797+00:00"
+  },
+  {
+    "definition": "A reverse fan on the ordered pair (u,v) with pivot p is a fan containing both (p,v,u) and (v,u,p).",
+    "notes": "The terse form reverse (u,v)-fan is permitted when the pivot is clear from context. Reverse refers to reversing the designated ordered pair (u,v) to (v,u).",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "reverse fan",
+    "updated_at": "2026-09-28T21:23:53.248797+00:00"
+  },
+  {
+    "definition": "A pivot of a nonempty family F of hyperedges is a vertex contained in every member of F.",
+    "notes": "A family may have more than one pivot.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "pivot",
+    "updated_at": "2026-09-29T19:11:20.896701+00:00"
+  },
+  {
+    "definition": "A left fan with pivot p is a fan in which every hyperedge has the form (p,u,v).",
+    "notes": "The vertices u and v may vary from hyperedge to hyperedge. The terse form left p-fan is permitted.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "left fan",
+    "updated_at": "2026-09-29T19:11:22.910053+00:00"
+  },
+  {
+    "definition": "A right fan with pivot p is a fan in which every hyperedge has the form (u,v,p).",
+    "notes": "The vertices u and v may vary from hyperedge to hyperedge. The terse form right p-fan is permitted.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "right fan",
+    "updated_at": "2026-09-29T19:11:24.784622+00:00"
+  },
+  {
+    "definition": "A complete fan on the ordered pair (u,v) with pivot p is the fan consisting of the three hyperedges (p,u,v), (u,p,v), and (u,v,p).",
+    "notes": "The terse form complete (u,v)-fan is permitted when the pivot is clear from context.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "complete fan",
+    "updated_at": "2026-09-29T19:11:26.769606+00:00"
+  },
+  {
+    "definition": "A complete reverse fan on the ordered pair (u,v) with pivot p is the fan consisting of the three hyperedges (p,v,u), (v,p,u), and (v,u,p).",
+    "notes": "The terse form complete reverse (u,v)-fan is permitted when the pivot is clear from context. Equivalently, it is the complete fan obtained by reversing the designated ordered pair (u,v).",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "complete reverse fan",
+    "updated_at": "2026-09-29T19:11:28.556968+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Avoid the project-name phrase. Use the ordinary graph-theoretic word component when its ambient graph is clear; otherwise name the graph explicitly.",
+    "preferred_term": "component",
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "Astra component",
+    "updated_at": "2026-09-26T15:45:38.77332+00:00"
+  },
+  {
+    "definition": "A family of vertex sets in which any two members are disjoint or one contains the other.",
+    "notes": "Use only in the standard set-system sense. In fractional-cover work, the relevant family is usually the path supports carrying positive weight.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "laminar",
+    "updated_at": "2026-09-27T15:02:05.06248+00:00"
+  },
+  {
+    "definition": "An edge whose deletion increases the number of connected components of the graph under discussion.",
+    "notes": "Use only in the standard graph-theoretic sense unless a separately defined atomic technical term explicitly modifies it. Do not use bare bridge for a path segment, local connector, join window, or heuristic transport gadget.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "bridge",
+    "updated_at": "2026-09-26T15:49:57.299479+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use exact as a modifier for covers, deletion covers, path covers, or related spanning path-cover notions. In GN3N a cover is spanning by definition, so exact is redundant.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "exact",
+    "updated_at": "2026-09-26T19:20:51.744048+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use this phrase. Use deletion cover for a cover after deleting a vertex, and Hamiltonian deletion for a vertex whose deletion leaves the relevant induced subtournament Hamiltonian.",
+    "preferred_term": "deletion cover",
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "Hamiltonian deletion cover",
+    "updated_at": "2026-09-26T19:20:51.744048+00:00"
+  },
+  {
+    "definition": "A path cover, unless another kind of cover is explicitly specified.",
+    "notes": "Project-wide convention: unqualified cover always means path cover. Qualify only when a different notion of cover is intended.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "cover",
+    "updated_at": "2026-09-26T19:20:51.744048+00:00"
+  },
+  {
+    "definition": "Two path covers of the same vertex set are compatible if every pair of vertices lies in the same path in both covers or in different paths in both covers, and every pair lying together in both covers occurs in the same relative order in the two path orders.",
+    "notes": "For covers on different ambient vertex sets, first restrict both covers to the vertex set being compared.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "compatible",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "The support of a path is its vertex set.",
+    "notes": "For a path cover, the component supports are the vertex sets of its paths.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "support",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "In a directed 3-uniform hypergraph, a hyperedge is a distinguished ordered triple of distinct vertices.",
+    "notes": "In GN3N, tight triple is usually preferred when discussing the boundary tournament itself. The terms hyperedge and 3-edge are also permitted.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "hyperedge",
+    "updated_at": "2026-09-29T19:10:11.272936+00:00"
+  },
+  {
+    "definition": "The minimum number pc(H) of vertex-disjoint tight paths whose supports partition V(H).",
+    "notes": "Because cover means path cover project-wide, pc(H) is the cover number of H.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "path-cover number",
+    "updated_at": "2026-09-27T15:03:53.058386+00:00"
+  },
+  {
+    "definition": "An edge is an unordered pair of distinct vertices.",
+    "notes": "Use edge in the ordinary graph-theoretic 2-uniform sense. In boundary-tournament mathematics, do not use edge for an ordered triple; use tight triple, hyperedge, or 3-edge.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "edge",
+    "updated_at": "2026-09-29T19:10:09.140823+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Permitted synonym for a 3-uniform directed hyperedge. Prefer tight triple when the boundary-tournament structure is central.",
+    "preferred_term": "hyperedge",
+    "section": "canonical",
+    "status": "alias",
+    "term": "3-edge",
+    "updated_at": "2026-09-29T19:10:13.405716+00:00"
+  },
+  {
+    "definition": "A fully directed hypergraph consists of a vertex set together with a collection of distinguished ordered lists of distinct vertices called hyperedges.",
+    "notes": "Use hyperedge, not edge, for these ordered lists.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "fully directed hypergraph",
+    "updated_at": "2026-09-29T19:10:19.031917+00:00"
+  },
+  {
+    "definition": "An edge-ordered K4 in which the three opposite-edge perfect matchings occur as three strict consecutive two-edge blocks in the edge order.",
+    "notes": "By the certified four-vertex classification, these are exactly the edge-ordered K4s with no increasing Hamilton path.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "matching-block K4",
+    "updated_at": "2026-09-27T15:03:53.058386+00:00"
+  },
+  {
+    "definition": "An r-digraph is an r-uniform fully directed hypergraph, so every hyperedge is an ordered r-tuple of distinct vertices.",
+    "notes": "Canonical abbreviation for r-uniform fully directed hypergraph.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "r-digraph",
+    "updated_at": "2026-09-29T19:10:20.74365+00:00"
+  },
+  {
+    "definition": "An r-k-tournament is an r-digraph in which every induced sub-r-digraph on r vertices has exactly k hyperedges.",
+    "notes": "Use hyperedge rather than edge for the r-uniform directed objects.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "r-k-tournament",
+    "updated_at": "2026-09-29T19:10:22.506581+00:00"
+  },
+  {
+    "definition": "Given any list, its boundary flip is the list obtained by swapping its first and last elements.",
+    "notes": "For an ordered r-tuple (v_1,...,v_r), the boundary flip is (v_r,v_2,...,v_{r-1},v_1).",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "boundary flip",
+    "updated_at": "2026-09-28T19:16:17.361526+00:00"
+  },
+  {
+    "definition": "Let P_1,...,P_k be specified ordered paths. A path cover is block-faithful relative to P_1,...,P_k if, for every i, all vertices of P_i occur consecutively, in the order of P_i, within a single path of the cover.",
+    "notes": "Always state the reference paths P_1,...,P_k.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "block-faithful",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "An arc of the comparison digraph.",
+    "notes": "When orientation matters, name both unordered-pair endpoints of the arc.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "comparison arc",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "A connected component of a specified graph.",
+    "notes": "Always identify the graph when it is not already unambiguous. Do not use component for an arbitrary family or state class.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "component",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "For a vertex ordering pi=(v_1,...,v_n), the contiguous-path number c(pi) is the minimum k for which {1,...,n} can be partitioned into k consecutive intervals, each interval inducing a tight path in the order inherited from pi.",
+    "notes": "This parameter belongs to an ordering pi, not directly to H.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "contiguous-path number",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "For an ordering (v_1,...,v_n), its defect line is the graph with vertex set {1,...,n-1} and edge {i-1,i} for every defect center i.",
+    "notes": "The vertices 1,...,n-1 represent the cuts between consecutive positions.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "defect line",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "For an ordering with defect-center set D, its defect span is 0 when D is empty and max(D)-min(D)+1 otherwise.",
+    "notes": "The definition depends only on the stated ordering and its defect centers.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "defect span",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "The vertex x associated with a deletion cover of H-x.",
+    "notes": "Use only when treating several deletion covers indexed by their omitted vertices.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "deletion label",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Let H-x=P|Q be a deletion cover. It is double-frozen if H[V(P) union {x}] is frozen at x and H[V(Q) union {x}] is frozen at x.",
+    "notes": "No additional trapping or minimality property is implied.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "double-frozen",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "For a dual-feasible weighting w and a vertex set S that is the support of a tight path, the dual slack of S is 1-sum_{v in S} w(v).",
+    "notes": "Name S when more than one path support is under discussion.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "dual slack",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "A dual-feasible weighting on H is a function w:V(H)->R_{>=0} such that sum_{v in V(P)} w(v)<=1 for every tight path P in H.",
+    "notes": "This is the dual feasibility condition for fractional path cover.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "dual-feasible weighting",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use plateau without specifying the quantity that is constant and the moves under which it is constant.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "plateau",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "In an ordinary graph, a non-edge is an unordered pair of distinct vertices that is not an edge.",
+    "notes": "Do not use non-edge for an ordered triple that is absent from a boundary tournament; use non-tight triple or non-hyperedge.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "non-edge",
+    "updated_at": "2026-09-29T19:10:27.511393+00:00"
+  },
+  {
+    "definition": "For a boundary 3-tournament H, the comparison digraph Gamma(H) has one vertex for each unordered pair {u,v} of vertices of H and, for distinct u,v,w, has the arc {u,v}->{v,w} exactly when (u,v,w) is a tight triple of H.",
+    "notes": "Its underlying graph is the line graph of the complete graph on V(H).",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "comparison digraph",
+    "updated_at": "2026-09-29T19:10:32.956008+00:00"
+  },
+  {
+    "definition": "A boundary 3-tournament H is edge-orderable if there is a strict total order < on the edges of the complete graph on V(H) such that, for all distinct u,v,w, (u,v,w) is a tight triple of H exactly when {u,v}<{v,w}.",
+    "notes": "Here edge has its ordinary 2-uniform graph meaning. Equivalent to acyclicity of the comparison digraph.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "edge-orderable",
+    "updated_at": "2026-09-29T19:11:13.600526+00:00"
+  },
+  {
+    "definition": "For a vertex ordering (v_1,...,v_n), an index i with 2<=i<=n-1 is a defect center if (v_{i-1},v_i,v_{i+1}) is a non-tight triple.",
+    "notes": "Indices refer to the stated ordering.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "defect center",
+    "updated_at": "2026-09-29T19:11:17.208302+00:00"
+  },
+  {
+    "definition": "A fractional path cover of H assigns a nonnegative real number x_P to each tight-path support P so that, for every vertex v, the sum of x_P over supports P containing v is at least 1. Its mass is sum_P x_P.",
+    "notes": "tau*(H) denotes the minimum mass.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "fractional path cover",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "For a non-Hamiltonian vertex set R and x in R, R is frozen at x if H[R-{x}] is Hamiltonian and H[R-{y}] is non-Hamiltonian for every y in R-{x}.",
+    "notes": "Equivalently, x is the unique Hamiltonian deletion of R.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "frozen",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "For a vertex set R and v in R, v is a Hamiltonian deletion of R if H[R-{v}] has a tight path containing every vertex of R-{v}.",
+    "notes": "This is a property of the pair (R,v).",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "Hamiltonian deletion",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "A vertex set S is a Hamiltonian support if H[S] has a tight path containing every vertex of S.",
+    "notes": "This term records the vertex set, not a particular Hamilton path order.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "Hamiltonian support",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Fix a boundary tournament H and an integer lambda with |V(H)|=2lambda+1. The Hamiltonian-support odd graph has as vertices the Hamiltonian lambda-subsets of V(H), with two such subsets adjacent exactly when they are disjoint.",
+    "notes": "The name refers to the induced subgraph of the ordinary odd graph on Hamiltonian lambda-subsets.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "Hamiltonian-support odd graph",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Let H admit at least one two-cover. Distinct vertices x,y are inseparable if x and y belong to the same path of every two-cover of H.",
+    "notes": "The existence assumption prevents vacuous truth.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "inseparable pair",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Let P=(v_1,...,v_m) be a tight path and let x notin V(P). The vertex x is noninsertable into P if none of the m+1 sequences obtained by inserting x into P at one position is a tight path.",
+    "notes": "Noninsertability is relative to the specified path order P.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "noninsertable",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Two ordered paths with at least two common vertices have an order disagreement if some two common vertices occur in opposite relative orders in the two paths.",
+    "notes": "The term concerns only relative order of common vertices.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "order disagreement",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Two support-compatible path covers are order-incompatible if some pair of vertices lying in one common component support occurs in opposite relative orders in the two corresponding path orders.",
+    "notes": "This is stronger than support compatibility and does not change the support partition.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "order-incompatible",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "A pairwise repartition of a path cover replaces exactly two paths by a path cover of the union of their vertex sets and leaves every other path unchanged.",
+    "notes": "State the two paths being repartitioned.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "pairwise repartition",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Let C be a path cover and let C_0 be a subcollection of its paths. A repartition of C_0 replaces those paths by another path cover of the same union of vertex sets, leaving all paths outside C_0 unchanged.",
+    "notes": "Name the paths being replaced when this is not clear.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "repartition",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "If H-x has a deletion cover P|Q, the singleton lift of that deletion cover is the three-cover P|Q|{x} of H.",
+    "notes": "No additional property is implied.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "singleton lift",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Two path covers of the same vertex set are support-compatible if they induce the same partition of the vertex set into path supports.",
+    "notes": "Relative order inside the supports is ignored.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "support-compatible",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "Two path covers of the same vertex set are support-incompatible if they induce different partitions of the vertex set into path supports.",
+    "notes": "This is the negation of support-compatible.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "support-incompatible",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "A three-cover is a path cover consisting of exactly three nonempty tight paths.",
+    "notes": "Do not use three-cover to mean a cover with at most three paths.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "three-cover",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Use Hamiltonian deletion. Do not introduce good as a technical modifier.",
+    "preferred_term": "Hamiltonian deletion",
+    "section": "canonical",
+    "status": "alias",
+    "term": "good deletion",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Use order disagreement.",
+    "preferred_term": "order disagreement",
+    "section": "canonical",
+    "status": "alias",
+    "term": "relative-order disagreement",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Use support-compatible when describing two path covers.",
+    "preferred_term": "support-compatible",
+    "section": "canonical",
+    "status": "alias",
+    "term": "support compatibility",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Use inseparable pair for a pair of vertices. If discussing the resulting relation, define that relation explicitly.",
+    "preferred_term": "inseparable pair",
+    "section": "canonical",
+    "status": "alias",
+    "term": "two-cover inseparability",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use clean as an unexplained technical modifier. State the property meant by clean directly.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "clean",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use crossing without naming the objects that cross and the precise crossing relation.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "crossing",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Use kernel only with an explicit definition or in a standard mathematical sense already fixed in context. Prefer naming the vertex set and its property.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "kernel",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use barrier as a technical noun without an explicit local definition of the obstruction it denotes. Prefer stating the forbidden or forced extension property directly.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "barrier",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Avoid shell as frame-carrying shorthand. State the family of vertex sets, covers, or states directly.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "shell",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State the transformation explicitly. No generic uncrossing operation is assumed.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "uncrossing",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "When referring to a fractional path cover, write positive-weight path support for a path support P with x_P>0.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "positive support",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State which vertex sets are changed and which path or Hamiltonicity property is preserved.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "support exchange",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State the objects forming the state space and the legal move relation before using reconfiguration as shorthand.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "reconfiguration",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "A tight path is a sequence (v_1,...,v_m) of distinct vertices such that (v_i,v_{i+1},v_{i+2}) is a tight triple for every 1<=i<=m-2.",
+    "notes": "Paths with one or two vertices are tight vacuously.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "tight path",
+    "updated_at": "2026-09-29T19:10:24.413205+00:00"
+  },
+  {
+    "definition": "Let H admit at least one two-cover. A tight triple (a,b,c) is mandatory if, in every two-cover of H, one path contains a,b,c consecutively in that order.",
+    "notes": "Call (a,b,c) a tight triple, not an ordered edge.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "mandatory triple",
+    "updated_at": "2026-09-29T19:10:31.084486+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Avoid this frame-carrying phrase. Describe the family of deletion or restoration states directly.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "omission surface",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State the insertion position that fails. If every insertion position fails, use noninsertable.",
+    "preferred_term": null,
+    "section": "ambiguous",
+    "status": "ambiguous",
+    "term": "failed insertion",
+    "updated_at": "2026-09-28T19:29:19.241397+00:00"
+  },
+  {
+    "definition": "In a boundary 3-tournament, a non-tight triple is an ordered triple of distinct vertices that is not a hyperedge.",
+    "notes": "For every ordered triple, exactly one of it and its boundary flip is a tight triple.",
+    "preferred_term": null,
+    "section": "canonical",
+    "status": "canonical",
+    "term": "non-tight triple",
+    "updated_at": "2026-09-29T19:10:29.286968+00:00"
+  }
+]

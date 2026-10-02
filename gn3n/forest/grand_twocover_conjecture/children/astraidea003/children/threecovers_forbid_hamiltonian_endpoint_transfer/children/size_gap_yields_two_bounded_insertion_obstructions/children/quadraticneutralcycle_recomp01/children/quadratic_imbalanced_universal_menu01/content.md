@@ -1,9 +1,0 @@
-# Every imbalanced trapped quadratic minimum reduces to one size-independent obstruction menu
-
-## Statement
-
-Let H be a boundary tournament and let A|B|C be a spanning three-cover minimizing quadratic potential within a trapped connected pairwise-repartition component. Suppose two displayed components, say A=(a_1,...,a_r) and B, satisfy |A|>=|B|+2 and |B|>=2. Then the two endpoints a_1,a_r are both noninsertable into the displayed path B. Consequently, independently of all component orders, at least one of the following holds relative to B and {a_1,a_r}: (1) a Hamiltonian four-set using one endpoint of A and three consecutive vertices of B; (2) the exceptional cyclic non-Hamiltonian four-kernel on one endpoint of A and three consecutive vertices of B, with every exterior one-vertex extension Hamiltonian; (3) a Hamiltonian five-set using both endpoints of A and three consecutive vertices of B; (4) a tight cross triple joining the two endpoints of A through one vertex of B; (5) a direct tight interval path joining the two endpoints of A through a displayed subinterval of B. Thus every trapped Phi-minimum containing a component pair with size gap at least two and smaller member of order at least two is governed by one fixed finite local/connector menu, with no component-size ladder.
-
-## Body
-
-By 9d023d8f93d9, at a trapped Phi-minimum with |A|>=|B|+2 neither endpoint of A can be transferred into B; equivalently both a_1 and a_r are noninsertable into the displayed order of B. Apply a8c9883902b1 to the path B and the two exterior vertices a_1,a_r. Its five alternatives are exactly the five listed outcomes. No bound or special value of |A|,|B|,|C| is used beyond the size gap and |B|>=2. Hence the conclusion is uniform over every profile satisfying these hypotheses.

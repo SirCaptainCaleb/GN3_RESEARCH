@@ -1,9 +1,0 @@
-# A common rigid five-side lock on both long paths gives a mixed small support or doubled cross barrier
-
-## Statement
-
-Let H be a minimum counterexample and let X|P|Q be a spanning three-cover minimizing quadratic potential within a trapped pairwise-repartition component, with |X|=5 and |P|,|Q|>=7. Assume no equal-Phi endpoint support exchange is legal. Suppose the endpoint-good intersections for both P and Q are singletons with the same label x in X. Then either H contains a proper Hamiltonian support of order four or five meeting x and at least one long path, with non-Hamiltonian path-cover-two complement, or x has second-type failed-insertion pivots on both P and Q and the corresponding pivot-side vertices form the doubled cross barrier supplied by 4efbe05b945a.
-
-## Body
-
-By 45229a54c95a applied separately to P and Q, the common singleton label x is globally noninsertable into both displayed long paths. Apply the failed-insertion normal form to x on each path. If either obstruction is first-type, 0425e03e2aa3 gives a Hamiltonian four-window, or the universal cyclic non-Hamiltonian four-set. In the latter case, adjoining any vertex d in X-{x} gives a Hamiltonian five-set because d lies outside that four-set. Thus in either first-type case H has a proper Hamiltonian support of order four or five; minimum-counterexample calculus gives non-Hamiltonian path-cover-two complement. Hence assume both obstructions are second-type. Apply 4efbe05b945a to the two disjoint long paths P,Q and the common exterior label x. It yields either a mixed Hamiltonian four-set, again with non-Hamiltonian path-cover-two complement, or both cross triples of the doubled cross barrier. These alternatives exhaust the same-lock rigid branch.

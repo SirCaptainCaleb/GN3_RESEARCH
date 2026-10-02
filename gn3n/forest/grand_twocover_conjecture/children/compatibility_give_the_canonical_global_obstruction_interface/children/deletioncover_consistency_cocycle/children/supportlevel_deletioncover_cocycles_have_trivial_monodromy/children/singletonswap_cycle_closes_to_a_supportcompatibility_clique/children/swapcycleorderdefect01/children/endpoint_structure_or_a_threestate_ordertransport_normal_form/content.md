@@ -1,9 +1,0 @@
-# A nine-label singleton-swap cycle forces endpoint structure or a three-state order-transport normal form
-
-## Statement
-
-Let H be a minimum counterexample and let F_{a_1},...,F_{a_k}, k>=9, be deletion covers with distinct omitted labels and nonempty common surviving core whose singleton lifts form a cycle in the singleton-swap graph. Then one of two outcomes holds. (1) The synchronized endpoint conclusion of compatthreeoneside09 occurs. (2) Some three covers F_a,F_b,F_c on the cycle are pairwise support-compatible but pairwise order-incompatible, and hence the certified three-state transport theorem compattripletransport13 applies: after localizing to one critical support X and a fixed complementary Hamilton path Q, either their restrictions to the common core X-{a,b,c} disagree in relative order, or all three share one common core order and each omitted label is transported between two distinct insertion gaps across the two paths that contain it.
-
-## Body
-
-By the singleton-swap cycle closure theorem 2eec2c8ee1b9, all covers on the cycle are pairwise support-compatible. Apply the certified nine-label classification compatglobal9_38 to any nine labels from the cycle. Its alternatives (ii), (iv), and (v) each contain at least one support-incompatible pair, so they are impossible inside this support clique. Thus either alternative (i), the synchronized endpoint conclusion of compatthreeoneside09, holds, or alternative (iii) gives three pairwise incompatible covers whose incompatibilities are all support-compatible and therefore purely order-theoretic. In the latter case compattripletransport13 gives the asserted common-core-disagreement/two-gap-transport normal form.

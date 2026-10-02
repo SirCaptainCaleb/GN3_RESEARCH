@@ -1,9 +1,0 @@
-# A checked charged replacement zeros one interval of the binary balance
-
-## Statement
-
-Let A be a globally longest path and C an order-preserving comparison path of order |A|-1 with no A-edge reversal witness, so its omission-minus-insertion gap-prefix balance B takes values in {0,1}. Let x in C-A lie in gap s and let y in A-C lie in a gap r<=s. Suppose replacing x by y yields another tight path C' of the same order, still preserving the A-order and producing no reversal witness. Then the new gap-prefix balance satisfies B'=B-1 on precisely the gap boundaries r,...,s-1 and B'=B elsewhere. In particular B=1 throughout that interval, and if r<s the number of 1-valued balance positions strictly decreases by s-r.
-
-## Body
-
-At every gap-prefix boundary before r, neither membership change has occurred, so B'=B. From gap r onward, y is no longer omitted, decreasing the cumulative omission count by one. From gap s onward, x is no longer exterior, also decreasing the cumulative exterior count by one and cancelling the previous change. Hence B'=B-1 exactly for r<=t<s and B'=B outside that range. Since C' is assumed order-preserving with no reversal witness and still has deficit one, the positional-lag theorem forces B' to remain in {0,1}; therefore B must equal 1 throughout the changed interval. When r<s, each of those 1s becomes 0, so the statistic sum_t B_t strictly drops by s-r. The noncrossing charging theorem 2e87c90b1c55 supplies candidate pairs with r<=s; the remaining mathematical obligation is to force at least one strict-gap charged pair to be a legal checked replacement, or else extract a reversal/order-disagreement witness.

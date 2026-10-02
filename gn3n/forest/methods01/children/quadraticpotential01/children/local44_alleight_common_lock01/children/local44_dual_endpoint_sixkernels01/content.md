@@ -1,9 +1,0 @@
-# A locally minimal 4|4 plateau carries two rigid endpoint six-kernels
-
-## Statement
-
-Let H be a minimum counterexample and let X|Y|P be a spanning three-cover minimizing quadratic potential within its connected pairwise-repartition component, with |X|=|Y|=4 and P=(p_1,...,p_m) of order m>=7. For A in {X,Y}, put U_A=V(A) union {p_1,p_m}. Then U_A is non-Hamiltonian, its Hamiltonian one-vertex deletions are exactly the four vertices of A, and its two endpoint deletions U_A-{p_1}=A union {p_m} and U_A-{p_m}=A union {p_1} are non-Hamiltonian. Consequently, for arbitrary Hamilton paths chosen on the four good deletions U_A-{a}, a in A, some two exhibit relative-order disagreement on their common vertices. Thus the plateau carries two rigid bad six-kernels sharing the distinguished endpoint pair {p_1,p_m}, one with good-deletion set X and one with good-deletion set Y.
-
-## Body
-
-Fix A in {X,Y}. By local_four_allfour_interior_lock01, for every a in A the five-set (A-{a}) union {p_1,p_m}=U_A-{a} is Hamiltonian. If U_A-{p_m}=A union {p_1} were Hamiltonian, then repartitioning A|P as (A union {p_1}) | (p_2,...,p_m) would change pair orders (4,m) to (5,m-1), with Phi change 10-2m<0 for m>=7, contradicting componentwise Phi-minimality. The same argument excludes U_A-{p_1}=A union {p_m}. If U_A itself were Hamiltonian, then U_A | (p_2,...,p_{m-1}) would repartition A|P from orders (4,m) to (6,m-2), with Phi change 24-4m<0 for m>=7, again contradicting componentwise minimality. Hence U_A is non-Hamiltonian, and among its six one-vertex deletions precisely the four A-deletions are Hamiltonian. Applying astra004fourgooddisagree to U_A and those four good deletion labels gives relative-order disagreement between two arbitrary chosen Hamilton deletion paths. Repeating for A=X and A=Y gives the two asserted six-kernels sharing {p_1,p_m}.

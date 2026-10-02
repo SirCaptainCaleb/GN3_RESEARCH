@@ -1,9 +1,0 @@
-# A quadratic-minimal component oversized against both partners yields a bounded kernel, endpoint cross triple, or doubled cross barrier
-
-## Statement
-
-Let H be a minimum counterexample and let P|Q|R be a spanning three-path cover that minimizes Phi in a trapped Astra-003 move component. Write P=(x,...,y) and assume |P|>=|Q|+2 and |P|>=|R|+2. Then at least one of the following holds: (1) H has a proper Hamiltonian induced set W of order four or five whose complement has path-cover number exactly two; (2) there is an explicit tight cross triple (x,z,y) or (y,z,x) with z in V(Q) union V(R); or (3) for one endpoint e in {x,y} there are q in V(Q), r in V(R) such that both (r,q,e) and (q,r,e) are tight. In particular, endpoint-to-endpoint interval connectors cannot be the sole output simultaneously against both smaller components.
-
-## Body
-
-Apply c671dca6534e to P,Q and to P,R. If either application yields its Hamiltonian-kernel alternative, outcome (1) holds. If either yields its endpoint cross-triple alternative, outcome (2) holds. It remains that both applications yield endpoint-to-endpoint interval connectors. Inspect the certified construction of c671dca6534e: a connector occurs only in the separated-gap branch where both endpoints x,y have alternative-2 failed-insertion obstructions on the relevant smaller path. Hence one may fix either endpoint e, say e=x, and obtain an alternative-2 pivot for e on Q and another on R. Apply the repaired certified two-path pivot theorem 0b012e2e3816 to these two pivots. Either it gives a mixed Hamiltonian four-set W, in which case W is proper and minimum-counterexample complementation gives outcome (1), or it gives a doubled cross barrier with pivot-side vertices q in Q and r in R, namely both (r,q,e) and (q,r,e) tight, which is outcome (3). Thus the simultaneous connector branch always collapses to a bounded kernel or doubled barrier.

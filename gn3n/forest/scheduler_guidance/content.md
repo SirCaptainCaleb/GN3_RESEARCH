@@ -1,8 +1,0 @@
-# Scheduler guidance
-
-## Statement
-
-
-
-## Body
-

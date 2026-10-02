@@ -1,9 +1,0 @@
-# Dense equal-potential obstruction reduces to a double-blocked fork or a four-edge charged configuration
-
-## Statement
-
-In the setting of 237ecc9a25b6, let f,g be excluded edges sharing v, and let e_f,e_g be basis edges adjacent at v on their respective fundamental bicircular circuits. Then all of f,g,e_f,e_g are ascending nonspecial edges terminal at v whose opposite terminals have the same vertex rank phi(v), and phi(f)<=phi(e_f), phi(g)<=phi(e_g). Hence exactly one of the following holds: (i) e_f=e_g, in which case one basis edge has two distinct excluded terminal blockers f,g at v on every longest terminal-v witness; or (ii) e_f!=e_g, in which case f,g,e_f,e_g are four distinct potential-charged ascending edges at v, with two distinguished rank inequalities phi(f)<=phi(e_f) and phi(g)<=phi(e_g).
-
-## Body
-
-The equal-potential component J is connected using only terminal-pair edges whose endpoints have equal vertex rank. Therefore every vertex of J has one common vertex-rank value p. Each edge of J corresponds to an ascending nonspecial hyperedge whose two terminal vertices both have rank p. In particular every one of f,g,e_f,e_g is potential-charged at v. The rank inequalities phi(f)<=phi(e_f) and phi(g)<=phi(e_g) are part of the maximum-rank unicyclic-basis conclusion in 237ecc9a25b6. Since f and g are distinct excluded edges sharing v, each is distinct from every basis edge. If e_f=e_g=e, then terminal adjacency forcing rank rise or a blocker says both f and g meet every longest path ending in e at v in a second vertex. Their non-v vertex pairs are disjoint by linearity, so these are two distinct blocker obligations on the same witness family, giving (i). If e_f and e_g are distinct, then f,g,e_f,e_g are four distinct ascending nonspecial hyperedges through v, all charged at v because their opposite terminal ranks equal p=phi(v), and the two basis-exchange rank inequalities remain, giving (ii).

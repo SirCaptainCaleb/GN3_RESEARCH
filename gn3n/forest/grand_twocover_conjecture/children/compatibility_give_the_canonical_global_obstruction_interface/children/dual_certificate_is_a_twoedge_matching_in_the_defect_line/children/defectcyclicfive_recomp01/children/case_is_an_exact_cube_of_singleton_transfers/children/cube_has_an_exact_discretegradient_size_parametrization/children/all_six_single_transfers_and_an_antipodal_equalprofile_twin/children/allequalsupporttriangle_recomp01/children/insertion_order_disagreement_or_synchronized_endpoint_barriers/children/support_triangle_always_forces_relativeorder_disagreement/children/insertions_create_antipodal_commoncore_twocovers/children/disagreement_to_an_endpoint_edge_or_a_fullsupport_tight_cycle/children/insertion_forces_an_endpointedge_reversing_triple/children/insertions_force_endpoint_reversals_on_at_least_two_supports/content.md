@@ -1,9 +1,0 @@
-# Successful transferred-label insertions force endpoint reversals on at least two supports
-
-## Statement
-
-In the all-three-successful-insertion branch, at least two distinct displayed support paths P_i receive a tight triple reversing one of their two endpoint edges. More precisely, every cyclic transferred-label pair whose order is reversed by some R_j relative to P_i yields an endpoint-edge reversing triple for P_i, and the set of reversed cyclic pairs covers at least two of the three P_i.
-
-## Body
-
-For each j classify the insertion of t_{j+2} into P_j by L, M, or R according as it lies before t_j, strictly between t_j and t_{j+1}, or after t_{j+1}. The induced order on T={t_1,t_2,t_3} shows: type L reverses exactly the cyclic pair of P_{j+1}; type M reverses the cyclic pairs of both P_{j+1} and P_{j+2}; type R reverses exactly the cyclic pair of P_{j+2}. For any such reversed pair, apply the path-intersection argument exactly as in d6b6225e634c. In types L and R the reversed R_j segment is all of R_j; in type M the segment for P_{j+1} reaches the terminal endpoint of R_j and the segment for P_{j+2} reaches the initial endpoint. Hence in every case the cycle alternative can be completed with the remaining prefix or suffix of R_j to Hamiltonize U=H-M_k, contradicting that M_k is a tight complementary path in a counterexample. Therefore every reversed cyclic pair yields an endpoint-edge reversing triple on the corresponding P_i. Finally P_i fails to receive any reversed pair only if the source insertion R_{i-1} is type R and R_{i-2} is type L. Two distinct indices cannot both satisfy this condition, since their requirements assign conflicting L and R types to a common source insertion. Thus at most one P_i escapes, and at least two distinct support paths receive endpoint-edge reversals.

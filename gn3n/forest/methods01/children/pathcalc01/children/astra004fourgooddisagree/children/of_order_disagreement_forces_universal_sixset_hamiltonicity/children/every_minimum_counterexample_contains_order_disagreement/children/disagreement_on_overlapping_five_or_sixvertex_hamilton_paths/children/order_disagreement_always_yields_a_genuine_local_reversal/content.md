@@ -1,9 +1,0 @@
-# Substantial order disagreement always yields a genuine local reversal
-
-## Statement
-
-Let H be a minimum counterexample and let P,Q be Hamilton paths of order at least five on overlapping induced supports with at least five common vertices and with order disagreement. Then either P and Q traverse some common ordinary edge in opposite directions, or there is a tight triple reversing a displayed ordered edge of P or Q. Consequently every minimum counterexample contains such genuine local reversal data arising from substantial Hamilton-path overlap.
-
-## Body
-
-Apply Section 4 of the path-intersection calculus pathcalc01 to P,Q. If its first outcome occurs, P and Q traverse a common ordinary edge in opposite directions, which is the first conclusion. If its second outcome occurs, it supplies a tight triple reversing an ordered edge of P or Q, which is the second conclusion. In its third outcome, pathcalc01 constructs a vertex-simple tight cycle C contained in V(P) union V(Q). The cycle cannot span H: opening C at any cyclic edge would give a Hamilton path of H, contradicting that H is a minimum counterexample. Hence C is proper. The first assertion of f21cfb4840ff applies to any proper tight cycle in a minimum counterexample: its complement is non-Hamiltonian with path-cover number two, and the cut-obstruction argument from f2bf5c6337c4 yields a tight triple reversing either a displayed cycle edge or an edge of a complementary path. Thus the cycle outcome also yields a reversing tight triple. This proves the dichotomy. By 50137573941d, every minimum counterexample contains Hamilton paths satisfying these hypotheses, so the final assertion follows. The hypotheses that both paths have order at least five and at least five common vertices prevent the vacuous two-vertex-path degeneration of the definition of order disagreement.

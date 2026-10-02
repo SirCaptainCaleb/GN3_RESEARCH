@@ -1,9 +1,0 @@
-# Every long three-cover has barriers in both cyclic orientations
-
-## Statement
-
-Let H be a minimum counterexample and let A|B|C be any spanning three-path cover with |A|,|B|,|C|>=3. For an ordered interface X|Y, call it a barrier when both join triples needed to concatenate X followed by Y are non-tight. Then each of the two cyclic orientations A->B->C->A and A->C->B->A contains a barrier. Consequently the cover has at least two directed barrier interfaces, one from each orientation cycle. Any such pair is, after relabeling, either opposite barriers X|Y and Y|X, two barriers X|Y and X|Z with common source X, or two barriers Y|X and Z|X with common target X.
-
-## Body
-
-Concatenate the displayed paths cyclically in the order A,B,C. Because pc(H)>2, no ordered interface can have both join triples tight: otherwise two adjacent blocks concatenate to one tight path and, together with the third block, give a spanning two-cover. Suppose this cyclic orientation has no barrier. Then each of its three interfaces has exactly one non-tight join triple. Internal triples of A,B,C are tight, and because every block has order at least three, the three defective interface triples are separated around the cyclic order by tight internal triples. Hence the cyclic defect graph has run type {1,1,1}. The linear concatenation is a spanning ordering with contiguous-path number at most three; since pc(H)>2 it has minimum defect span three. This contradicts 0260efaac694. Thus A->B->C->A contains a barrier. Apply the same argument to the cyclic order A,C,B to obtain a barrier in the reverse orientation cycle. The two directed edge sets {A->B,B->C,C->A} and {A->C,C->B,B->A} are disjoint. Choosing one barrier from each gives two directed edges on three block labels; after relabeling they are either opposite orientations of one unordered pair, share a source, or share a target.

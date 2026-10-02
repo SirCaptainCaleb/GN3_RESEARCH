@@ -1,9 +1,0 @@
-# Flat-transfer cycle chain as the residual boundary obstruction
-
-## Statement
-
-Iterate the transfer alternative from 5ca3b62fde96 on boundary ascending nonspecial edges. Order states lexicographically by edge rank and then entrance-vertex potential. Any transfer to larger rank is strict progress; at fixed rank q, any nonascending transfer has entrance potential at least q and therefore rises above the source ascending entrance potential q-1. Hence a closed transfer chain can consist only of ascending nonspecial rank-q edges. By 321866bdcbef each such transfer is a terminal adjacency, and by 68606ec8e860 each step lies on a linear q-cycle and realizes equality in terminal contact spacing. The remaining hard case is therefore a chain or cycle of equal-rank ascending terminal edges glued by these extremal q-cycles.
-
-## Body
-
-This isolates the lexicographically flat part of the far-end transfer mechanism. It does not claim that rank/potential progress alone terminates the overall path-state process, because safe single-blocker rotations may occur before a transfer. It says that once a transfer is emitted, every failure of strict rank or entrance-potential rise has a very explicit geometry: equal-rank ascending terminal adjacency plus an extremal q-cycle. A proof can now target only these flat chains. Two plausible routes are (1) show two nonidentical consecutive transfer q-cycles splice to a path longer than the dense-core threshold, with identical-cycle repetition forcing eventual backtracking/linearity conflict; or (2) use terminal-tail blockers from consecutive flat transfers to obtain incompatible equality conditions on their longest witnesses. The cycle-ear lemma 874b13ee141e supplies additional local attachments if needed, but ear packing is not yet proved.

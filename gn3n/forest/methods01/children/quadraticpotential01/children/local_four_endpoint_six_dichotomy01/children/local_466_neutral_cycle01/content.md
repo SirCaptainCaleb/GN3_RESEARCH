@@ -1,9 +1,0 @@
-# A disagreement-free local 4|6|6 minimum lies on an equal-potential transfer cycle
-
-## Statement
-
-Let H be a minimum counterexample and let A|P|Q be a spanning three-cover of profile 4|6|6 that minimizes quadratic potential within its connected pairwise-repartition component. Assume no state in this equal-potential 4|6|6 region exhibits order disagreement. Then from every such state there are at least two distinct legal equal-potential pairwise repartitions to other 4|6|6 states, obtained by transferring the four-side across P and across Q. Consequently the finite graph of equal-potential 4|6|6 states in the component has minimum degree at least two and therefore contains a cycle.
-
-## Body
-
-Fix a componentwise Phi-minimal state A|P|Q with |A|=4 and |P|=|Q|=6. Apply local_four_endpoint_six_dichotomy01 to the pair A|P. If its endpoint six-set were non-Hamiltonian, that theorem would yield order disagreement, contrary to hypothesis. Hence the equality branch holds: the endpoint six-set U_P is Hamiltonian and A|P may be replaced by U_P|R_P, where R_P is the inherited four-vertex interior of P. This is an equal-Phi move from A|P|Q to R_P|U_P|Q. Applying the same argument to A|Q gives a second equal-Phi move to R_Q|P|U_Q. The two resulting four-sides R_P and R_Q are distinct because P and Q are disjoint, so the two neighbors are distinct. Every reached state remains in the same pairwise-repartition component, has profile 4|6|6, and has the same minimum Phi. Thus, under the standing no-disagreement assumption on this region, the same argument applies at every vertex of the finite equal-Phi 4|6|6 transition graph. Its minimum degree is at least two, so it contains a cycle.

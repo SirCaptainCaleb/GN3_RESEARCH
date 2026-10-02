@@ -1,9 +1,0 @@
-# Neutral cut multiplicities satisfy an exact deficit equation
-
-## Statement
-
-Keep the completely neutral sharp-shell sparse cut-map setup, with d=|D|<=2 and b=lambda+1-d bad complement labels, each assigned a cut in {1,...,lambda-1}. Assume no explicit disturbance occurs in any same-cut pair or same-cut triple. Then every cut has multiplicity at most two. If r is the number of cuts of multiplicity two and m the number of cuts of multiplicity zero, then r-m=2-d. In particular: if d=0 there are at least two repeated cuts; if d=1 there is at least one repeated cut; if d=2 then repeated and missing cuts occur in equal numbers, and the unique repetition-free case is the bijection onto all cuts. Thus the fully neutral sparse branch has an exact census: repeated-cut odd-walk transitions account for the entire excess of bad labels over available cut positions.
-
-## Body
-
-# Proof\n\nBy astra004samecutfork, any same-cut pair either produces explicit double-deletion disturbance or is support-compatible and yields a fixed-support odd two-walk. Under the hypothesis of no explicit disturbance, every same-cut pair is therefore compatible. If some cut carried three distinct labels, their three chosen covers would be pairwise compatible, and astra004cuttriangle would force a degree-three longest support and hence direct mixed-support/order disturbance via astra004threegoodmixed. Therefore every cut has multiplicity at most two.\n\nLet r,m,s be the numbers of cuts of multiplicity two, zero, and one respectively. There are lambda-1 possible cuts, so\nr+m+s=lambda-1.\nThe number of bad labels is\nb=2r+s=lambda+1-d.\nSubtracting the first equation from the second gives\nr-m=2-d.\nThe listed consequences are immediate. If d=2 and there is no repeated cut, then r=0, hence m=0, so every cut has multiplicity one. Conversely that is exactly the bijective case of astra004cutmapfork. ∎

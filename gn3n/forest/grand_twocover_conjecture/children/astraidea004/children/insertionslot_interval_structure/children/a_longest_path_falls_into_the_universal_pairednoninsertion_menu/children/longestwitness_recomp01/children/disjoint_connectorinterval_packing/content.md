@@ -1,9 +1,0 @@
-# Disjoint connector-interval packing
-
-## Statement
-
-Fix a globally longest tight path P and let U be the outside vertices. For every pair x,y in U for which the certified paired-noninsertion menu supplies a direct tight connector from x to y through a subpath of P, choose a connector using a shortest P-interval I_xy. Conjecture that either these intervals contain a large vertex-disjoint subfamily whose connectors can be spliced simultaneously to absorb the corresponding outside pairs, or a bounded set of vertices of P meets a positive fraction of all connector intervals; in the concentrated case the common window forces a synchronized five-window, common-middle, or endpoint-extender structure strong enough to compress the cover.
-
-## Body
-
-Intervals have an exact packing-versus-piercing theorem, so the combinatorial skeleton is available for free once connector intervals are canonicalized. The mathematical work is in the simultaneous-splicing lemma for disjoint intervals and in translating a heavily pierced interval family into one of the project's synchronized local structures. Start with two disjoint connector intervals and prove that the two certified connector paths can be installed independently in the displayed longest-path order without creating a hidden interaction. Then generalize by induction. For the pierced branch, pigeonhole the bounded local connector templates at the stabbing window and compare with the existing repeated-three-window and parallel-middle machinery. If direct connectors are sparse, use the other outcomes of the paired-noninsertion menu to obtain a separate dense structural class rather than forcing this route.

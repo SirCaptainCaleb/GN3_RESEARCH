@@ -1,9 +1,0 @@
-# Distinct flat rotation terminal incidences are globally paid by local defect
-
-## Statement
-
-For each nonisolated vertex w let eta_w be the local defect from a57007500001. Let C be any set of distinct pairs (h,w) such that h is an ascending nonspecial edge terminal at w and phi(h)=phi(w)=p_w. Restrict first to p_w>=8. Then |C| <= 4 sum_w eta_w. Without the restriction p_w>=8, one has |C| <= 4 sum_w eta_w + O(n_+). Consequently, after the rotation outputs of 631ebe3d4728 are deduplicated by the ordered terminal incidence (h,w), all flat ascending no-endpoint-rise outputs cost only O(eta+n_+); the remaining issue is multiplicity with which one fixed pair (h,w) can be produced by different source vertices.
-
-## Body
-
-Fix w with p=phi(w)>=8 and let t(w) count ascending nonspecial edges terminal at w. Since every pair (h,w) in C is one such terminal incidence, the number of pairs of C ending at w is at most t(w). Because h has rank p for at least one such pair whenever the contribution is nonzero, w is active aligned. By b032348c1a8a, writing a(p)=ceil((3p-4)/4), we have eta_w>=beta(p)-a(p). Also the fixed-entrance bound gives t(w)<=gamma(p), where beta(p)=floor((11p-16)/8) and gamma(p)=floor((11p-5)/8) for p>=8. We claim gamma(p)<=4(beta(p)-a(p)) for every p>=8. For p=8,9,10, direct substitution gives respectively (gamma,beta-a)=(10,4),(11,4),(13,4). For p>=11, use gamma(p)<=11p/8 and beta(p)-a(p)>=(5p-24)/8; then 11p/8 <=4(5p-24)/8 because 11p<=20p-96 for p>=11. Hence t(w)<=4eta_w. Summing over w proves |C|<=4 sum_w eta_w for p_w>=8. Potentials below eight contribute only O(1) possible ascending terminal incidences per vertex, hence O(n_+) in total. Finally 631ebe3d4728 shows that every flat ascending rotation output with no endpoint rise is exactly of this aligned form, so its distinct (h,w) certificate belongs to C.

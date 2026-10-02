@@ -1,0 +1,33 @@
+{
+  "api": [
+    "boot()",
+    "search(query, filters := {})",
+    "read(ids, math_versions := {})",
+    "context(research_id)",
+    "save_research(session_id, payload, expected_version := null)",
+    "save_batch(session_id, operations)",
+    "save_document(session_id, payload, expected_version := null)",
+    "brainstorms(active_only := true)",
+    "save_brainstorm(session_id, payload, expected_version := null)",
+    "promote_brainstorm(session_id, brainstorm_id, payload := {}, expected_version)",
+    "dictionary()",
+    "changes(since_event := 0, until_event := null, limit := 100)",
+    "startup_steward()",
+    "claim_chore(session_id, kinds := {audit,maintenance})",
+    "finish_chore(session_id, chore_id, outcome := {})",
+    "request_audit(session_id, target_type, target_id, target_version)",
+    "stage_batch_chunk(session_id, batch_id, part_no, chunk)",
+    "review_staged_batch(session_id, batch_id)",
+    "commit_staged_batch(session_id, batch_id, overlap_checked)",
+    "discard_staged_batch(session_id, batch_id)",
+    "help()"
+  ],
+  "research_contract": [
+    "Startup is fully informed: ingest the current artifact, any required startup delta, and the Main Lines before research begins.",
+    "During mathematical research, workers self-police the no-consultation rule and keep intermediate reasoning local.",
+    "Publish only after substantial progress, as one coherent batch; connector-size limits are handled by numbered staging chunks.",
+    "review_staged_batch() is a required concurrency barrier: inspect other-session findings since startup and resolve semantic overlap before commit.",
+    "commit_staged_batch() requires overlap_checked=true and refuses if another session published after the review, forcing a fresh review."
+  ],
+  "usage": "Call through the active project schema."
+}

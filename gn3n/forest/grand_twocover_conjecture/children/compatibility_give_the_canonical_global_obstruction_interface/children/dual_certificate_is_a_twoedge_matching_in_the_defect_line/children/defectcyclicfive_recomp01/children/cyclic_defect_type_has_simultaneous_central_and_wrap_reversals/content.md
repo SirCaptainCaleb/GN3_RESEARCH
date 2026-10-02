@@ -1,9 +1,0 @@
-# The three-plus-two cyclic defect type has simultaneous central and wrap reversals
-
-## Statement
-
-Let H be a minimum counterexample and let pi=(v_1,...,v_n) be a minimum-defect-span ordering whose cyclic defect graph has run multiset {3,2}. Then pi is in the linear 111 branch. If its three consecutive linear defect centers are i,i+1,i+2, the two-edge cyclic run is exactly the pair of wrap defects at centers v_n and v_1. Consequently C=(v_{i+3},v_{i+2},v_{i+1},v_i,v_{i-1}) is a tight five-path and S=(v_2,v_1,v_n,v_{n-1}) is a tight four-path. Moreover the separating cyclic centers v_2 and v_{n-1} are tight.
-
-## Body
-
-By 0d475452037a, type {3,2} occurs only in the linear 111 branch. For the original linear cut q_0, deleting q_0 from the cyclic defect graph leaves exactly the three-edge linear defect run. Therefore q_0 must lie in the two-edge run, and deleting q_0 must destroy that entire component. The only vertex of a two-edge path whose deletion removes both edges is its middle vertex. Hence the two-edge run consists exactly of the two cyclic defect edges incident with q_0, i.e. the two wrap triples (v_{n-1},v_n,v_1) and (v_n,v_1,v_2) are both non-tight. Boundary antisymmetry gives (v_1,v_n,v_{n-1}) and (v_2,v_1,v_n) tight, which are the two consecutive triples of S=(v_2,v_1,v_n,v_{n-1}). The three consecutive linear defects give the tight reversed five-path C by fb1d4006afb5. Since the cyclic defect components are exactly one run of length three and one run of length two, the centers immediately separating the wrap run from the central run, in particular the cyclic centers v_2 and v_{n-1} adjacent outward from the wrap run, are nondefective whenever they are not part of the central run; equivalently their displayed forward triples are tight. The possible minimal-gap overlap with the central five-window is retained rather than excluded.

@@ -1,9 +1,0 @@
-# Every minimum-span cyclic certificate has at least five three-piece rotations
-
-## Statement
-
-Let H be a boundary tournament with pc(H)>2 and let pi be a spanning ordering of defect span three. Form its cyclic defect graph Gamma. Then at least five cyclic cut vertices q satisfy nu(Gamma-q)=2; equivalently, at least five rotations of the cyclic vertex order have contiguous-path number exactly three. More precisely, for the proper run types {1,1,1}, {2,1,1}, {3,1}, {3,2}, {5}, the numbers of such cut vertices are respectively 6,5,6,5,6. For the full-cycle case Gamma=C5, all five cuts have value two.
-
-## Body
-
-By 0d475452037a, Gamma is either C5 or has one of the five listed proper run multisets. For a path run of r defect edges, its matching contribution is ceil(r/2). Deleting a vertex of that run lowers this contribution by one exactly as follows for the run lengths occurring here: for r=1, either of its two vertices works; for r=2, only the middle vertex works; for r=3, every one of its four vertices works; and for r=5, every one of its six vertices works. Deleting a vertex belonging to one run leaves all other run components unchanged. Since every proper certificate has total matching number three, each such critical vertex q therefore satisfies nu(Gamma-q)=2. Different run components are vertex-disjoint, so summing the critical vertices gives 6 for {1,1,1}, 1+2+2=5 for {2,1,1}, 4+2=6 for {3,1}, 4+1=5 for {3,2}, and 6 for {5}. If Gamma=C5, deleting any cycle vertex leaves a three-edge path, whose matching number is two. Finally, by 52f5b958156e the defect line of the rotation cut at q is Gamma-q, and by ca8dc4ee0bde its contiguous-path number is 1+nu(Gamma-q)=3.

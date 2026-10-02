@@ -1,9 +1,0 @@
-# A componentwise minimal 4|5|m state has a four-leaf endpoint-rooted Hamiltonian star
-
-## Statement
-
-Let H be a boundary tournament and let X|Y|P be a spanning three-cover minimizing quadratic potential within its connected pairwise-repartition component, with |X|=4, |Y|=5, and P=(p_1,...,p_m) of order m>=6. Put W=V(X) union V(Y). Then there exist distinct u,v,z_1,z_2,z_3,z_4 in W such that every five-set {u,v,p_1,p_m,z_i} is Hamiltonian. Thus C={u,v,p_1,p_m} has at least four Hamiltonian one-label extensions inside W. For any three chosen leaves, three_fourcore_extensions_sync01 gives order disagreement on C, a Hamiltonian six-set C plus two leaves, a Hamiltonian four-set inside C plus the three leaves, or an explicit leaf-core reversing triple. If H is a minimum counterexample, every proper Hamiltonian support in the latter two outcomes has non-Hamiltonian path-cover-two complement.
-
-## Body
-
-Let F be the family of four-sides of balanced Hamiltonian 4|5 partitions of H[W]. By balanced9_multiplicity36_01, |F|>=36. Every A in F gives a same-Phi reachable state A|B|P and is therefore componentwise Phi-minimal. By local_four_allfour_interior_lock01, every triple T contained in A has T union {p_1,p_m} Hamiltonian. Hence the entire 3-shadow of F is good. Kruskal-Katona gives |partial_3(F)|>=38, since 36=C(7,4)+C(3,3) and therefore the minimum shadow is C(7,3)+C(3,2)=38. Counting pair/triple incidences gives at least 3*38=114 incidences over the 36 pairs of W, so some pair {u,v} lies in at least four distinct good triples {u,v,z_i}. This gives the four leaves. Applying three_fourcore_extensions_sync01 to any three leaves yields the stated synchronization outcomes. The minimum-counterexample hypothesis is needed only for the path-cover-two complement conclusion, not for the four-leaf star.

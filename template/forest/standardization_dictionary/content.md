@@ -1,8 +1,0 @@
-# Standardization dictionary
-
-## Statement
-
-
-
-## Body
-

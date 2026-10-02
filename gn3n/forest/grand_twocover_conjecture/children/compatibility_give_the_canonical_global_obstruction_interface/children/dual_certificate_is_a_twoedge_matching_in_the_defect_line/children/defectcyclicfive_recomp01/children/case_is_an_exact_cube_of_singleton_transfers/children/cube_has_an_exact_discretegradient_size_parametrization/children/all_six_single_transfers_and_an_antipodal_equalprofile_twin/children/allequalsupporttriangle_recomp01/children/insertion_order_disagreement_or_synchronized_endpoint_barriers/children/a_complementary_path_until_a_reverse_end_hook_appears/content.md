@@ -1,9 +1,0 @@
-# An endpoint Hamilton order greedily transports a complementary path until a reverse end hook appears
-
-## Statement
-
-Let H be a boundary tournament with pc(H)>2 and let X|C|D be a spanning three-cover, where H[X] is Hamiltonian and C=(c_0,c_1,...,c_m) is a tight path. Suppose H[X union {c_0}] has a Hamilton tight path R_0 whose terminal vertex is c_0 (the initial-end version is symmetric). Then for some 0<=h<m there is a Hamilton tight path R_h on X union {c_0,...,c_h}, ending with c_h, such that the attempted append of c_{h+1} fails at the final triple. Consequently, if q is the predecessor of c_h in R_h, then (c_{h+1},c_h,q) is tight, reversing the terminal ordered edge (q,c_h) of R_h. Thus endpoint Hamiltonicity of the first complementary label transports along C until it produces an explicit reversible component-end edge.
-
-## Body
-
-Start with the assumed Hamilton path R_0 ending at c_0. Inductively, if R_h=(...,q,c_h) is a Hamilton path on X union {c_0,...,c_h} and (q,c_h,c_{h+1}) is tight, append c_{h+1} to obtain R_{h+1}. If this succeeds for every h<m, then R_m is a Hamilton path on X union V(C); together with the disjoint tight path D it gives a spanning two-cover of H, contrary to pc(H)>2. Hence there is a first h<m for which (q,c_h,c_{h+1}) is non-tight. Boundary antisymmetry gives the tight reverse (c_{h+1},c_h,q), which reverses the terminal ordered edge (q,c_h) of R_h. Every intermediate state R_h | C[h+1,m] | D is a spanning three-cover, so the reversal is already located at a genuine component end. The proof for a Hamilton order beginning at c_0 follows by reversing the direction of the greedy transport along C.

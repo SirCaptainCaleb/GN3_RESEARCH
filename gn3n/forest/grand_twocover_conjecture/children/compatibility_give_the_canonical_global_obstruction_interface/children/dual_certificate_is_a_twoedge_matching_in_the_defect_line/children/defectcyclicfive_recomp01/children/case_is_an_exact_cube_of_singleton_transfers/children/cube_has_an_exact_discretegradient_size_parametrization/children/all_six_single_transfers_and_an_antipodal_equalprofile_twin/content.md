@@ -1,9 +1,0 @@
-# The cube consists of one base profile, all six single transfers, and an antipodal equal-profile twin
-
-## Statement
-
-With notation s_i=g_i+x_{i+1}-x_i from 810c33003128, the eight cube states realize exactly seven component-order triples: the base profile g=(g_1,g_2,g_3) occurs at both x=000 and x=111, and the remaining six states are exactly the six ordered one-vertex transfers of g between two distinct components. Hence if some pair of base orders differs by at least two, one cube state has strictly smaller Phi than the two antipodal base states. If the base orders differ pairwise by at most one, all six non-antipodal cube states have Phi at least Phi(g), while 000 and 111 are distinct equal-Phi covers with all three cuts simultaneously shifted by one cyclic position.
-
-## Body
-
-From s_i=g_i+x_{i+1}-x_i, the two constant bit vectors 000 and 111 have zero discrete gradient and therefore both give g. Every nonconstant binary triple on a 3-cycle has exactly one 0-to-1 transition and one 1-to-0 transition. Thus its gradient has one +1 coordinate, one -1 coordinate, and one 0 coordinate. As x ranges over the six nonconstant states, these are exactly the six ordered transfers e_i-e_j for i != j. The Phi comparison is the standard one-vertex transfer formula: moving one vertex from a component of order a to one of order b changes Phi by 2(b-a)+2, which is negative exactly when a>=b+2. If all pairwise gaps are at most one, no ordered transfer decreases Phi. The two constant states are distinct cut sets because each isolated defect edge has two distinct endpoints, so shifting all three bits changes all three cuts while preserving the size profile.

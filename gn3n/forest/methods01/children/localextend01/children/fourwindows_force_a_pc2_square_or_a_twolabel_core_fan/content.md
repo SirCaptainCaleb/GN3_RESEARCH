@@ -1,9 +1,0 @@
-# Adjacent Hamiltonian four-windows force a pc2 square or a two-label core fan
-
-## Statement
-
-Let H be a minimum counterexample. Let C be a three-vertex set and let f,g be distinct vertices outside C. Suppose C union {f} and C union {g} are Hamiltonian four-sets, each with non-Hamiltonian path-cover-two complement. Put K=H-(C union {f,g}). Then K+{f}, K+{g}, and K+{f,g}=H-C are non-Hamiltonian with path-cover number two. Moreover either (1) C union {f,g} is Hamiltonian, in which case K itself is non-Hamiltonian with path-cover number two and K,K+{f},K+{g},K+{f,g} form a full two-label pc2 square; or (2) C union {f,g} is non-Hamiltonian, in which case for at least two distinct c in C the four-set (C-{c}) union {f,g} is Hamiltonian and therefore K+{c} is non-Hamiltonian with path-cover number two.
-
-## Body
-
-The two hypotheses give path-cover-two complements K+{g}=H-(C+{f}) and K+{f}=H-(C+{g}). Every three-vertex boundary tournament is Hamiltonian, so C is Hamiltonian; since it is proper, minimum-counterexample calculus gives K+{f,g}=H-C non-Hamiltonian with path-cover number two. Put S=C+{f,g}. If S is Hamiltonian, then its proper complement K is non-Hamiltonian with path-cover number two, giving the full square. Otherwise apply d9a4b66724d2 to the adjacent Hamiltonian four-sets C+{f} and C+{g}. At least four of the five four-subsets of S are Hamiltonian. Two are already S-{g}=C+{f} and S-{f}=C+{g}; hence at least two of the three remaining sets S-{c}, c in C, are Hamiltonian. For each such c, its complement is K+{c}; minimum-counterexample calculus makes that complement non-Hamiltonian with path-cover number two.

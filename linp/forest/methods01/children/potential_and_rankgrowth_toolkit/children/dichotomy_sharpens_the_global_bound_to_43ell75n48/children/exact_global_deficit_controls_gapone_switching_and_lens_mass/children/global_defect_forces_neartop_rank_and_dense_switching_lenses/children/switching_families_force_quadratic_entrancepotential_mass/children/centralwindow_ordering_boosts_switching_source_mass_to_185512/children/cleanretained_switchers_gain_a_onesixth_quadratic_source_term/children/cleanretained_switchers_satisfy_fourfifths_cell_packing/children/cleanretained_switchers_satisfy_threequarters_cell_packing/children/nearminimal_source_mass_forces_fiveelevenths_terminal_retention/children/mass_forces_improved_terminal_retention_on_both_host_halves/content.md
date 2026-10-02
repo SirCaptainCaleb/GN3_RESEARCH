@@ -1,9 +1,0 @@
-# Near-minimal source mass forces improved terminal retention on both host halves
-
-## Statement
-
-Let v be an active misaligned p-center with low-defect switching family F_v=X_v disjoint_union U_v. Write a=|X_v|, k=|U_v|, s=a+k. Let k_-,k_+ count U_v contacts whose first host-path occurrence lies strictly left and strictly right of the midpoint (p-1)/2, and put d=(k_--k_+)/s, t=k/s. Then, up to O(p), the switching-source mass M_v satisfies M_v >= (p/2)s+s^2/8 + max{0, s^2[(1-t)(5-11t)+3d^2]/24}. Consequently, if eta_v=o(p), so s=(5/8-o(1))p, and M_v differs from the generic floor (p/2)s+s^2/8 by o(p^2), then t>=5/11-o(1) and min{k_-,k_+} >= [4/11-sqrt(42)/22-o(1)]s >= [5(8-sqrt(42))/176-o(1)]p.
-
-## Body
-
-The generic ordering theorem a5066873364f gives M_v >= (p/2)s+s^2/8-O(p). The strengthened clean-retained theorem a6f97c9fd9c3 gives sum_{X_v} phi(x_f) >= (p/2)a+a^2/3-O(p). The terminal-retained left-right theorem e7b1762fb5c8 gives sum_{U_v} phi(x_f) >= (p/2)k+k^2/8+(k_--k_+)^2/8-O(p). Adding the latter two inequalities and using a=s-k yields M_v >= (p/2)s+s^2/8 + a(11a-6s)/24 +(k_--k_+)^2/8-O(p). With t=k/s and d=(k_--k_+)/s, a=(1-t)s, so the correction is s^2[(1-t)(5-11t)+3d^2]/24. Taking the better of this and the generic bound proves the displayed max-form. Now suppose eta_v=o(p) and M_v is within o(p^2) of the generic floor. By b032348c1a8a, s=(5/8-o(1))p, hence s=Theta(p). Therefore [(1-t)(5-11t)+3d^2]<=o(1). In particular t>=5/11-o(1). For t>=5/11 this implies 3d^2 <= (1-t)(11t-5)+o(1). There are at most two midpoint contacts, hence min{k_-,k_+}/s >= (1/2)[t-|d|]-o(1) >= (1/2)[t-sqrt((1-t)(11t-5)/3)]-o(1). On 5/11<=t<=1 the last function is minimized at t_0=8/11-3sqrt(42)/154, where the square root equals sqrt(42)/14. The minimum is 4/11-sqrt(42)/22. Multiplying by s=(5/8-o(1))p gives the final constant 5(8-sqrt(42))/176.

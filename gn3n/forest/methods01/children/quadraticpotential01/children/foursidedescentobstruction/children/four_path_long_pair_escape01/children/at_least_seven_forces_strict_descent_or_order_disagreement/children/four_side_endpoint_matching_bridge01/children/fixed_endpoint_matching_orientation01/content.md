@@ -1,9 +1,0 @@
-# The fixed-endpoint matching shell is exactly the two orientation classes
-
-## Statement
-
-In the perfect-matching branch of four_side_endpoint_matching_bridge01, write the fixed endpoint pair as {a,b} and let X be the four-vertex side. Partition X into C_+={x in X:(a,x,b) is tight} and C_-={x in X:(b,x,a) is tight}. Then |C_+|=|C_-|=2, and the two edges of the good-pair graph J are exactly the two pairs C_+ and C_-. Consequently every cross pair {y,z} with y in C_+, z in C_- gives a non-Hamiltonian four-set {a,b,y,z}, while each same-class pair gives a Hamiltonian four-set with the explicit fixed-pair Hamilton orders supplied by endpoint_reversal_fixedpair01.
-
-## Body
-
-Boundary antisymmetry partitions X into C_+ and C_-. By bd3c8d17ca06, each orientation class is a clique in the fixed-pair Hamiltonian-four graph: any two distinct vertices of C_+ form a Hamiltonian four-set with {a,b}, and likewise for C_-. In the perfect-matching branch of four_side_endpoint_matching_bridge01, the good-pair graph J on X has degree exactly one at every vertex, hence contains exactly two disjoint edges. Therefore neither C_+ nor C_- can contain three vertices, since three vertices in one class would span at least three J-edges. As |X|=4 and C_+,C_- partition X, both classes have order exactly two. Their unique internal pairs are J-edges, so these are precisely the two perfect-matching edges. Every cross pair is therefore a nonedge of J, hence its four-set with {a,b} is non-Hamiltonian. The explicit Hamilton orders on the two same-class four-sets are those given by endpoint_reversal_fixedpair01.

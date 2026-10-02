@@ -1,0 +1,23 @@
+# A quadratic-minimal 4|5|m cover has a cyclic exchange or one of three insertion-obstruction outcomes
+
+**Summary:** A quadratic-minimal 4|5|m cover has a cyclic exchange or one of three insertion-obstruction outcomes.
+
+## Statement
+
+Let H be a boundary tournament and let C=X|Y|P minimize quadratic potential within its connected pairwise-repartition component, with |X|=4, |Y|=5, and P=(p_1,...,p_m) of order m>=7. Then at least one of the following holds. (1) C has a nontrivial equal-Phi cyclic support exchange of profile 4|5|m. (2) Some y in Y has a first-type failed-insertion window on P, whose associated four-set is either Hamiltonian or the cyclic non-Hamiltonian four-vertex configuration from smallset01, whose every one-vertex extension is Hamiltonian. (3) Two distinct labels y,z in Y have second-type obstruction at the same gap of P, and {y,z} together with that displayed gap edge is Hamiltonian. (4) Two distinct labels y,z in Y are joined by a tight connector (y,p_{r+1},...,p_s,z) through an interval of P with s>=r+2. Thus, once neutral cyclic exchange is excluded, the 4|5|m potential-minimizing cover reduces to a four-vertex configuration or a direct connector between two vertices of the five-side through the long path.
+
+## Body
+
+Apply local45_exchange_or_triplelock01. If its neutral cyclic-exchange alternative occurs, we have (1). Otherwise choose three distinct labels y_1,y_2,y_3 in Y that are noninsertable into every position of P.
+
+Apply the failed-insertion normal form insert01 separately to these three labels. If some label has alternative 1, 0425e03e2aa3 gives exactly outcome (2).
+
+Assume all three have alternative 2, at gap indices i,j,k. Sort the indices. If two are equal, the same-gap case of 36fccff06d48 yields outcome (3). If they are pairwise distinct, the smallest and largest differ by at least two, and the separated-gap case of 36fccff06d48 yields outcome (4). These cases exhaust the three locked labels.
+
+## Metadata
+
+- ID: local45_locked_finite_menu01
+- Kind: toolkit
+- Math version: 1
+- Audit: unaudited
+- Refutation: unrefuted

@@ -1,9 +1,0 @@
-# Rotation-expansion route for forcing special-edge density
-
-## Statement
-
-Use Pósa-style rotations of longest linear paths to turn the snake digraph's terminal incidences into an endpoint-expansion argument. The target is a quantitative dichotomy: after discarding O(n) low-rank or star-like mass, a positive fraction of hyperedges should admit longest paths entering through at least two labels, hence be special.
-
-## Body
-
-Status: proposal, not a proved lemma. The snake digraph already records which vertices of an edge can occur as terminals of a longest path ending at that edge, so it can be viewed as a compressed rotation-endpoint system. A nonspecial edge has a unique entrance label, while its other two vertices are valid terminal incidences. The cumulative snake-rank lemma shows that low-rank nonspecial mass is O(q n) for every fixed q, so any obstruction to positive special-edge density must be concentrated at high terminal rank. The proposed next step is to fix a longest path and perform endpoint rotations through off-path edges. One seeks a Pósa-type expansion inequality for the resulting terminal set: heavy concentration of rotations at a single entrance label should be chargeable to star-like petals (costing fresh ground vertices), while repeated reuse across different labels should create a second longest-path entrance label and hence a special edge. A successful inequality of the form s >= epsilon*m-Cn with absolute epsilon>0,C would combine with 2m+s <= (2ell-3)n to improve the leading coefficient below 1. Stronger control b=O(n) would reach the snake scheme's 2/3 ceiling. Falsification test: construct, for unbounded ell, P_ell-free linear triple systems with m=Theta(ell n), s=o(m), and high terminal rank on almost all nonspecial edges; such examples would defeat this branch.

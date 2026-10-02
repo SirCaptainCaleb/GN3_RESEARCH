@@ -1,9 +1,0 @@
-# Exact normal form for a deficiency-two safe sink
-
-## Statement
-
-Let H be a linear 3-graph of minimum degree δ, let P be an x-ending path of length s=δ-2, let a be an opposite last vertex, and let y,z lie outside P. Suppose there is neither a safe clean extension nor a safe single-blocker rotation at a. Then d_H(a)=δ. Writing C for clean edges through a other than the first path edge and S for single blockers, exactly one of the following holds: (i) C=1 and S=2, consisting of one clean Y- or Z-edge together with the X-single and the single of the opposite terminal type; (ii) C=2 and S=0, with one clean Y-edge and one clean Z-edge; (iii) C=2 and S=1, with clean Y and Z edges and the unique single blocker of type X. In cases (i) and (ii) the blocker sets saturate V(P) minus the first edge; in case (iii) exactly one blocker vertex is unused.
-
-## Body
-
-By the endpoint-deficiency inequality, 2C+S>=2(d_H(a)-s)>=2(δ-s)=4. As in 585acf12de9a, absence of safe moves gives C<=2 and S<=3-C, because clean-Y excludes single-Y, clean-Z excludes single-Z, and at most one X-single exists. Hence 2C+S<=C+3<=5. In particular d_H(a)-s<3, so d_H(a)<=s+2=δ; since d_H(a)>=δ, equality holds. Thus C+S+D=δ-1. The inequalities 2C+S>=4 and S<=3-C force C>=1. If C=1 then S>=2 and S<=2, so S=2; the clean edge uses one of Y,Z and the two singles are X and the other terminal type. If C=2 then the clean edges are Y and Z, and both Y- and Z-singles are forbidden, so S is 0 or 1, the latter necessarily X. Finally S+2D=2(δ-1)-2C-S=2δ-2-(2C+S), while |V(P) minus first edge|=2s-2=2δ-6. Thus when 2C+S=4 the blocker budget is saturated exactly; when 2C+S=5 exactly one blocker vertex is unused.

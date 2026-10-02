@@ -1,9 +1,0 @@
-# A common-middle square either Hamiltonizes all four corners or has a doubled same-side reverse barrier
-
-## Statement
-
-Let M=(m_1,...,m_h), h>=2, be a tight path in a boundary tournament, and let a,ell,c,r be four distinct exterior vertices such that all four paths (a,M,c), (a,M,r), (ell,M,c), (ell,M,r) are tight. Then either H[V(M) union {a,ell,c,r}] is Hamiltonian, or at least one endpoint side has a doubled reverse barrier: either both (m_1,ell,a) and (m_1,a,ell) are tight, or both (r,c,m_h) and (c,r,m_h) are tight. More precisely, if one of (a,ell,m_1),(ell,a,m_1) is tight and one of (m_h,c,r),(m_h,r,c) is tight, then concatenating the corresponding endpoint orders around M gives a Hamilton path on all h+4 vertices.
-
-## Body
-
-Call the left side forward if at least one of (a,ell,m_1) and (ell,a,m_1) is tight. If it is not forward, both triples are non-tight. Boundary antisymmetry applied to the two separate reversal pairs gives (m_1,ell,a) and (m_1,a,ell) tight, which is the doubled left reverse barrier. Similarly call the right side forward if at least one of (m_h,c,r),(m_h,r,c) is tight. If it is not forward, antisymmetry gives both (r,c,m_h) and (c,r,m_h) tight. It remains only the case that both sides are forward. Choose an ordering (x,y) of {a,ell} with (x,y,m_1) tight, and an ordering (z,w) of {c,r} with (m_h,z,w) tight. Then (x,y,M,z,w) is a tight path: the first join triple is the chosen left-forward triple; the triple (y,m_1,m_2) is inherited from the square path (y,M,z); all triples internal to M are inherited from M; the triple (m_{h-1},m_h,z) is inherited from (y,M,z); and the final triple is the chosen right-forward triple. Thus the full support is Hamiltonian. No cardinality or minimum-counterexample hypothesis is used.

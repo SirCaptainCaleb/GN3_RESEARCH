@@ -1,9 +1,0 @@
-# Every nonmatching proper cyclic defect certificate has a double-wrap rotation
-
-## Statement
-
-Let H be a minimum counterexample and let pi be a minimum-defect-span-three ordering with proper cyclic defect graph Gamma. If Gamma is not the three-edge matching of run type {1,1,1}, then the same cyclic vertex order admits a cut q with nu(Gamma-q)=2 such that both cyclic defect edges incident with q are present. Consequently the corresponding rotation has contiguous-path number three, both wrap triples are non-tight, S=(v_2,v_1,v_n,v_{n-1}) is a tight four-path, and pc(H-S)=2. Thus among the five proper cyclic run geometries, {1,1,1} is the only one that cannot be represented in double-wrap form.
-
-## Body
-
-By the certified five-type classification, the non-{1,1,1} proper run multisets are {2,1,1}, {3,1}, {3,2}, and {5}. In each case choose q to be a degree-two vertex of a nontrivial defect run so that deleting q leaves matching number two: for {2,1,1}, take the middle vertex of the 2-run, leaving the two singleton edges; for {3,1}, take an internal vertex of the 3-run adjacent to an end of that run, leaving one end edge of the 3-run together with the singleton; for {3,2}, take the middle vertex of the 2-run, leaving the 3-run, whose matching number is two; for {5}, take the second vertex of the 5-run from one end, leaving a 3-run, again of matching number two. Hence in every case nu(Gamma-q)=2, so the cyclic defect identity gives contiguous-path number c(pi_q)=1+nu(Gamma-q)=3. Because q is incident with two defect edges of Gamma, those two edges are exactly the two wrap tests in the linear rotation pi_q, so both wrap triples are non-tight. Boundary antisymmetry reverses them to tight triples (v_1,v_n,v_{n-1}) and (v_2,v_1,v_n), yielding the tight four-path S=(v_2,v_1,v_n,v_{n-1}). Finally S is a proper Hamiltonian support, and the minimum-counterexample calculus gives pc(H-S)=2.

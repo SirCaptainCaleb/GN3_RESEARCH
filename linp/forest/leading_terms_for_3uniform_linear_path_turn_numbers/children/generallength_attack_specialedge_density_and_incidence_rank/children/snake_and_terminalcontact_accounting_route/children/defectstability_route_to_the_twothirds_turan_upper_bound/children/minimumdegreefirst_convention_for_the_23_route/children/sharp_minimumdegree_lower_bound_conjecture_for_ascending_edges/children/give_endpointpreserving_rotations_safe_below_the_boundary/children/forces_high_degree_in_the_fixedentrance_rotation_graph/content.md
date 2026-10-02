@@ -1,9 +1,0 @@
-# Rank deficiency forces high degree in the fixed-entrance rotation graph
-
-## Statement
-
-Let H have minimum degree delta, and let e={x,y,z} be an ascending nonspecial edge of rank q=phi(e) with q<=delta-1. Fix a (q-1)-edge path Q ending at x and avoiding y,z. In the graph whose states are such (q-1)-edge x-ending paths avoiding y,z and whose edges are endpoint-preserving safe single-blocker rotations, Q has at least 4(delta-q)-2 distinct neighbors.
-
-## Body
-
-Put t=q-1=phi(x). Let a be either of the two free vertices of the first edge of Q. Classify edges f distinct from the first path edge through a as clean, single-blocking, or double-blocking relative to V(Q) minus the first edge. A clean edge would prepend to Q and create a (t+1)-edge path ending at x, contradicting phi(x)=t, so C=0. The endpoint-deficiency inequality 2C+S>=2(delta-t) therefore gives S>=2(delta-q+1). Among these single blockers, at most one has blocker x, at most one contains y, and at most one contains z, by linearity. Hence at least 2(delta-q)-1 are safe: their blocker is not x and the edge avoids y,z. Each gives an endpoint-preserving rotation to another t-edge path ending at x and avoiding y,z, and distinct blocking edges give distinct path states. Apply the same argument at the other free vertex of the first path edge. No safe blocking edge can occur at both free vertices, since it would share those two vertices with the first path edge and violate linearity, and the resulting states from the two endpoint sides are distinct for the same edge-set reason. Thus the total number of distinct rotation neighbors is at least 2(2(delta-q)-1)=4(delta-q)-2.

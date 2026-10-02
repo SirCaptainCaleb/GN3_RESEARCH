@@ -1,9 +1,0 @@
-# From order thirteen every deletion state reaches transport, mixed support, a proper cycle, or a separated four-reversal gap network
-
-## Statement
-
-Let H be a minimum counterexample of order n>=13 and let H-x=P|Q be any one-vertex deletion two-cover. Then there is a canonical double-wrap spanning three-cover S|R|T with S=(s_0,s_1,s_2,s_3) a Hamiltonian four-path and H-S=R|T a two-cover. After relabeling |R|>=|T|, at least one of the following holds: (1) one legal repartition of S|R has nonincreasing quadratic potential, neutral only in the 4|5 equality case and strict once |R|>=6; (2) H contains a proper Hamiltonian support of order four or five meeting both S and the displayed interior of R, with non-Hamiltonian path-cover-two complement; (3) H contains a proper vertex-simple tight cycle formed from a displayed subpath of S and an oppositely oriented connector through the interior of R; (4) |R|>=8 and the four vertices s_0,s_1,s_2,s_3 have second-type failed-insertion pivots at distinct interior gaps g_0<g_1<g_2<g_3 in the same order, with g_2-g_0>=3 and g_3-g_1>=3, each s_i reversing its own displayed interior edge. Consequently, at n=13 outcome (4) forces |R|=8 and |T|=1, while at n=14 it forces |T|<=2.
-
-## Body
-
-Use 8ededbb50716 and 687bbaa431c3 to obtain the canonical double-wrap four-side S with pc(H-S)=2, and choose H-S=R|T with |R|>=|T|. Since n>=13, |R|>=5. Apply four_side_endpoint_lock_gap_network01. Its first two alternatives give (1) and (2). In its gap-network alternative apply four_side_gap_order_separated01. Either the gap order has an inversion, giving the proper tight cycle in (3), or the monotone separated-gap conclusion holds, giving (4) and in particular |R|>=8. For n=13, |R|+|T|=9 and both components are nonempty, so |R|>=8 and |R|>=|T| force (|R|,|T|)=(8,1). For n=14, |R|+|T|=10 and |R|>=8 force |T|<=2. The reversed-edge triples in (4) are the reverse-through-gap triples of the second-type normal form.

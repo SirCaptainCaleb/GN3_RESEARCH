@@ -1,9 +1,0 @@
-# A restored-label disagreement cycle descends unless it is an opposite singleton-transfer pair
-
-## Statement
-
-Let H have a spanning three-cover P|Q|{d}, where P=(p_0,...,p_{N-1}) is tight and K=V(P) union {d} is non-Hamiltonian. Suppose there is a vertex-simple tight cycle on {d} union {p_j,...,p_i}. Then j>=2 and i<=N-3. Moreover P|{d} has legal repartitions with tail sizes a=j-1 and b=N-i-2 whose Phi drops are respectively 2(a-1)(N-a) and 2(b-1)(N-b). Hence at a local Phi minimum a=b=1. In that exceptional case both opposite Phi-neutral singleton transfers exist: {p_0}|R_L and R_R|{p_{N-1}}, where R_L is Hamiltonian on {d} union {p_1,...,p_{N-1}} and R_R is Hamiltonian on {d} union {p_0,...,p_{N-2}}; the third component Q is unchanged.
-
-## Body
-
-Rotate the tight cycle to see that d both left-extends and right-extends I=(p_j,...,p_i). Since K is non-Hamiltonian, I cannot begin at p_0 or end at p_{N-1}. Put l=p_{j-1} and r=p_{i+1}. The inherited path P makes l a left extender of I and r a right extender. Apply e425e6ca5fe0 to the two left extenders d,l and the right extender r. It yields a Hamilton path on I union {d,l,r} ending at r; append the inherited suffix after r. If j=1 this Hamiltonizes all of K, impossible, so j>=2. Otherwise this repartitions P|{d} into the left tail P[0..j-2], of order a=j-1, and one path on the remaining N+1-a vertices. Symmetrically, use d,r as right extenders and l as a left extender. This gives a path covering {d} union P[0..i+1]; if i=N-2 it Hamiltonizes K, impossible, so i<=N-3. The remaining right tail has order b=N-i-2. Replacing pair sizes N,1 by t,N+1-t has Phi drop 2(t-1)(N-t). Since 1<=a,b<=N-1, either move is strict unless its tail is a singleton. Local Phi-minimality therefore forces a=b=1, giving j=2 and i=N-3 and exactly the two stated opposite neutral singleton transfers.

@@ -1,9 +1,0 @@
-# Two high edges must meet the early part of the low clean source path
-
-## Statement
-
-In the surviving source-clean one-low odd-boundary state, let e={x,v,C} have edge rank q and let Q=(s_1,...,s_{q-1}) be the chosen maximum path with last vertex x. Let h_1,h_2,h_3 be the three edge-rank-(q+1) ascending edges through v. Then at least two of h_1,h_2,h_3 meet V(s_1 union ... union s_{q-3}). More precisely, any h_i avoiding the first q-3 edges of Q can meet Q only in the unique vertex of s_{q-1} that is neither x nor s_{q-2} cap s_{q-1}; hence at most one high edge can avoid the first q-3 edges.
-
-## Body
-
-Because the source incidence of e is clean, e meets Q only in x: its two terminals v,C are absent from Q, and linearity excludes either terminal from the last edge of Q once that edge already contains x. Each high edge h_i shares v with e, so by linearity it contains neither x nor C. By 3d93f4d4b775, every h_i meets Q. Now let h be one of the high edges and suppose its first contact with Q occurs on s_{q-2}. Then s_1,...,s_{q-2},h,e is a linear q-edge path. The prefix meets h only in its first contact, e is disjoint from the prefix, and h cap e={v}. Its last edge is e and its entrance label is v, whereas e is nonspecial of edge rank q with unique entrance x. This is impossible. Therefore a high edge avoiding s_1,...,s_{q-3} cannot meet s_{q-2}. Since it must meet Q, it meets s_{q-1}. It cannot meet s_{q-1} at x, because h and e already meet at v. It cannot meet at the joint s_{q-2} cap s_{q-1}, because that would also be a contact with s_{q-2}. Thus its Q-contact is forced to the single remaining vertex of s_{q-1}, the last-edge vertex distinct from x and from s_{q-2} cap s_{q-1}. Two distinct high edges cannot both use this vertex, since they already share v and the hypergraph is linear. Hence at most one high edge avoids the first q-3 edges, and at least two meet V(s_1 union ... union s_{q-3}).

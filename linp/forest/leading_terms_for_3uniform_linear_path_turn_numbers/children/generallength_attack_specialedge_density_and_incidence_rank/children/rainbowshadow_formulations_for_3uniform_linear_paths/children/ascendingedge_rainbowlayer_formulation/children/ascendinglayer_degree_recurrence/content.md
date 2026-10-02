@@ -1,9 +1,0 @@
-# Ascending-layer degree recurrence
-
-## Statement
-
-Let H be a linear 3-graph, let φ(v) be the maximum length of a linear path ending at v, and let J_k be the ascending-edge layer from 419519f0efa5. If φ(x)=k, then every edge incident with x has rank at most k+1, at most 2k-1 incident edges have rank at most k, and therefore the color class of x in J_k has size at least d_H(x)-(2k-1). On the terminal side, every vertex y of J_k has d_{J_k}(y)<=2k+1. Consequently, if δ(H)>=δ and n_k=|{v:φ(v)>=k}|, then for every k with δ>2k-1, 2(δ-2k+1)(n_k-n_{k+1}) <= (2k+1)n_{k+1}.
-
-## Body
-
-Proof. Fix x with φ(x)=k. If an incident edge e had rank t>=k+2, then either x is a snake terminal of e, giving φ(x)>=t, or e is nonspecial with unique entrance x, in which case deleting e from a longest t-edge path entering e through x gives a (t-1)-edge path ending at x. Either way φ(x)>=k+1, contradiction. Hence every incident edge has rank at most k+1. By the incident low-rank counting argument in 419519f0efa5, because k<=φ(x), at most 2k-1 incident edges have rank at most k. Every remaining incident edge therefore has rank exactly k+1. Since φ(x)=k, x cannot be a terminal of such an edge; by the unique-entrance characterization it is the unique entrance, and the edge is ascending in J_k with color x. Thus the color class of x has size at least d_H(x)-(2k-1). Now fix a terminal vertex y of J_k. Every incident J_k edge has hypergraph rank k+1 and y is a terminal, so φ(y)>=k+1. Applying the same incident low-rank count at q=k+1 shows that at most 2k+1 incident hyperedges have rank at most k+1; hence d_{J_k}(y)<=2k+1. If L_k={x:φ(x)=k}, then |L_k|=n_k-n_{k+1}. Under minimum degree δ, summing the color-class lower bound gives |E(J_k)| >= (δ-2k+1)|L_k| whenever δ>2k-1, while summing terminal degrees gives 2|E(J_k)| <= (2k+1)n_{k+1}. Combining yields the recurrence.

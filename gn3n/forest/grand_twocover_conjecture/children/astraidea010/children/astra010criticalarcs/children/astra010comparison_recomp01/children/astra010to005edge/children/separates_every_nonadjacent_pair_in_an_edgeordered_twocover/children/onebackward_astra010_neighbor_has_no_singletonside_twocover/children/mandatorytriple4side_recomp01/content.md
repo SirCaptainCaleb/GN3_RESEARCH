@@ -1,9 +1,0 @@
-# Endpoint-minimal mandatory-triple covers have opposite side at least four, and the four-side branch forces the mandatory side to have order at least six
-
-## Statement
-
-Let G be an edge-orderable boundary tournament with a mandatory ordered tight triple T, and choose a spanning two-cover A|B whose displayed A contains T consecutively and has minimum possible order. Then |B|>=4. If |B|=4 and u,v are the endpoints of A, put X=V(B) union {u,v} and C=A-{u,v}. Then X is non-Hamiltonian; its four deletions X-{w}, w in V(B), are Hamiltonian while X-{u} and X-{v} are non-Hamiltonian; and C union {w} is non-Hamiltonian for every w in V(B). Consequently |A|>=6.
-
-## Body
-
-Endpoint minimality makes B together with either endpoint of A non-Hamiltonian. The standard two-bad-extension consequence rules out an opposite side of order three, giving |B|>=4. Assume equality and let u,v be the endpoints of A. Four-of-six applied to X=B union {u,v} forces all four B-vertex deletions to be Hamiltonian; X itself cannot be Hamiltonian, because a Hamilton path on X together with the inherited A-{u,v} path would either reduce the mandatory-triple component or split T between components. Thus X has exactly the stated deletion pattern. For each w in B, if C union {w} were Hamiltonian, pairing it with the Hamiltonian complement X-{w} would give the same forbidden reduction/splitting of T; hence all C+w are non-Hamiltonian. This already forces |C|>=3 and therefore |A|>=5. The certified mandatory-triple local-extension consequence for the hypothetical equality |A|=5 then supplies, for every pair x,y in B, a Hamilton path on C union {x,y} that does not display T consecutively, while the complementary endpoint-pair side has a Hamiltonian choice. These two paths form a spanning two-cover omitting the mandatory triple, contradiction. Therefore |A|>=6.
