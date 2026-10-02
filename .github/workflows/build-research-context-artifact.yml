@@ -44,7 +44,7 @@ jobs:
             test -f "$src/policies/project_policy.md"
             test -f "$schema/vocabulary/standardization_dictionary.txt"
 
-            mkdir -p "$dst/roles" "$dst/research"
+            mkdir -p "$dst/roles" "$dst/research_lookup" "$dst/research_main_lines"
 
             # Entry point and compact API lookup.
             cp "$src/startup_bootstrap.md" "$dst/startup_bootstrap.md"
@@ -58,13 +58,14 @@ jobs:
             # Roles remain separate operational views.
             find "$src/roles" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/roles/" \;
 
-            # Mathematical navigation surface.
-            cp "$src/atlas.md" "$dst/research/atlas.md"
-            cp "$src/startup_atlas.md" "$dst/research/startup_atlas.md"
-            cp "$src/frontier.md" "$dst/research/frontier.md"
-            cp "$src/simplified_forest.md" "$dst/research/simplified_forest.md"
-            cp "$src/statement_forest.md" "$dst/research/statement_forest.md"
-            cp "$src/statement_plus_proof_forest.md" "$dst/research/statement_plus_proof_forest.md"
+            # Mathematical lookup surface. Atlas views are intentionally omitted.
+            cp "$src/frontier.md" "$dst/research_lookup/frontier.md"
+            cp "$src/simplified_forest.md" "$dst/research_lookup/simplified_forest.md"
+            cp "$src/statement_forest.md" "$dst/research_lookup/statement_forest.md"
+            cp "$src/statement_plus_proof_forest.md" "$dst/research_lookup/statement_plus_proof_forest.md"
+
+            # Primary proof directions: direct children of Comprehensive Proof Rehearsals.
+            cp -R "$src/research_main_lines/." "$dst/research_main_lines/"
 
             # Vocabulary is small enough to live at the schema root.
             cp "$schema/vocabulary/standardization_dictionary.txt"                "$dst/standardization_dictionary.txt"
