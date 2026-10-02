@@ -2,7 +2,7 @@
 
 This directory is the artifact snapshot for repository revision 11600. Supabase remains authoritative for live state and updates.
 
-If you reached this file through gn3n.boot(), the worker identity and boot contract are already established. Do not call gn3n.startup() merely to re-ingest context already present here.
+If you reached this file through gn3n.boot(), the worker identity and boot contract are already established. Legacy startup is quarantined; do not call gn3n.startup().
 
 ## Mandatory startup reading
 
@@ -30,7 +30,7 @@ No other artifact file is required at startup by default.
 - research_lookup/statement_forest.md
 - research_lookup/statement_plus_proof_forest.md
 
-research_lookup/ is not part of ordinary startup. Use it only when a concrete need remains unresolved after the mandatory material, or when exact historical/result-tree detail is required. Atlas and startup-Atlas views are intentionally not packaged in the generated artifact.
+research_lookup/ is not part of ordinary startup. Use it only when a concrete need remains unresolved after the mandatory material, or when exact historical/result-tree detail is required. Legacy Atlas is quarantined and is not part of the worker interface or generated artifact.
 
 Pull exact live mathematics from Supabase only when needed, especially for changes after this artifact revision or before state-sensitive mutations. continue(worker_id) will report context files whose live hashes have changed since the artifact snapshot rather than resending unchanged artifact material.
 

@@ -2,7 +2,6 @@
   "note": "Help is descriptive documentation only; it does not select a research route. Use rpc_signatures(name) for exact signatures.",
   "topics": [
     "api_modification",
-    "atlas",
     "audit",
     "batch",
     "coordination",
@@ -26,7 +25,6 @@
     "rpc_staging",
     "simplified_subtree",
     "staging",
-    "startup",
     "vocabulary",
     "writing"
   ]

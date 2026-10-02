@@ -42,11 +42,6 @@
       "result": "jsonb"
     },
     {
-      "arguments": "p_category text, p_limit integer",
-      "name": "atlas",
-      "result": "jsonb"
-    },
-    {
       "arguments": "p_worker_id bigint, p_id text, p_note text",
       "name": "audit_packaging_issue",
       "result": "jsonb"
@@ -313,6 +308,11 @@
     },
     {
       "arguments": "",
+      "name": "health_check_packet_size",
+      "result": "jsonb"
+    },
+    {
+      "arguments": "",
       "name": "health_check_project_triggers",
       "result": "jsonb"
     },
@@ -338,11 +338,6 @@
     },
     {
       "arguments": "",
-      "name": "health_check_startup_size",
-      "result": "jsonb"
-    },
-    {
-      "arguments": "",
       "name": "health_check_support_integrity",
       "result": "jsonb"
     },
@@ -359,11 +354,6 @@
     {
       "arguments": "p_topic text",
       "name": "help",
-      "result": "jsonb"
-    },
-    {
-      "arguments": "p_topic text",
-      "name": "help_core",
       "result": "jsonb"
     },
     {
@@ -757,11 +747,6 @@
       "result": "jsonb"
     },
     {
-      "arguments": "p_worker_id bigint",
-      "name": "startup",
-      "result": "jsonb"
-    },
-    {
       "arguments": "",
       "name": "storage_report",
       "result": "jsonb"
@@ -887,5 +872,5 @@
       "result": "jsonb"
     }
   ],
-  "note": "Default discovery hides deprecated compatibility wrappers and internal implementation functions. Supply an exact name only for debugging/compatibility inspection."
+  "note": "Default discovery hides deprecated compatibility wrappers, quarantined startup/Atlas RPCs, help_core, and internal implementation functions. Supply an exact name only for debugging/compatibility inspection."
 }

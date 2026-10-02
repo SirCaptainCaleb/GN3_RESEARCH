@@ -655,383 +655,6 @@ $function$
 
 ```
 
-## atlas(p_category text DEFAULT NULL::text, p_limit integer DEFAULT 24) -> jsonb
-
-```sql
-CREATE OR REPLACE FUNCTION control_center.atlas(p_category text DEFAULT NULL::text, p_limit integer DEFAULT 24)
- RETURNS jsonb
- LANGUAGE plpgsql
- STABLE SECURITY DEFINER
-AS $function$
-declare
-  v_selector text := nullif(btrim(coalesce(p_category,'')),'');
-  v_mode text;
-  v_root_path text;
-  v_entries jsonb;
-  v_count integer;
-  v_returned integer;
-  v_limit integer;
-begin
-  perform control_center.active_project();
-
-  if v_selector is null then
-    v_mode := 'conceptual';
-  elsif v_selector in ('all','objects','raw') then
-    v_mode := 'raw_objects';
-  elsif exists(select 1 from objects where id=v_selector and trashed_at is null) then
-    v_mode := 'subtree';
-    select tree_path into v_root_path from objects where id=v_selector and trashed_at is null;
-  elsif v_selector in ('pending','obstructed') then
-    v_mode := v_selector;
-  else
-    v_mode := 'classification';
-  end if;
-
-  if v_mode='raw_objects' then
-    v_limit := greatest(1,least(control_center.config_int('api.large_limit'),coalesce(p_limit,24)));
-
-    with
-    ranked as materialized (
-      select o.id,
-             row_number() over (
-               partition by o.parent_id
-               order by
-                 case
-                   when o.parent_id is null
-                    and o.id=(select grand_theorem_id from state where singleton)
-                   then 0 else 1
-                 end,
-                 (o.atlas_height is null),
-                 o.atlas_height desc nulls last,
-                 o.position asc nulls last,
-                 o.id
-             ) as sibling_rank
-      from objects o
-      where o.trashed_at is null
-    ),
-    eligible as materialized (
-      select
-        o.*,
-        (o.audit_status='pending') as is_pending,
-        (
-          o.support_status='blocked'
-          or exists (
-            select 1
-            from edges fe
-            join objects fo on fo.id=fe.from_id
-            where fe.kind='fence'
-              and fe.to_id=o.id
-              and fo.trashed_at is null
-              and fo.lifecycle_status='active'
-              and fo.audit_status <> 'failed'
-          )
-        ) as is_obstructed
-      from objects o
-      where o.trashed_at is null
-        and (
-          o.lifecycle_status='active'
-          or (
-            o.lifecycle_status='retained'
-            and exists (
-              select 1
-              from objects child
-              where child.trashed_at is null
-                and child.lifecycle_status='active'
-                and child.tree_path like o.tree_path || '%'
-                and child.id <> o.id
-            )
-          )
-        )
-        and o.simplified_statement is not null
-        and o.audit_status <> 'failed'
-        and o.object_type <> 'fence'
-        and not exists (
-          select 1
-          from objects h
-          where h.atlas_hidden
-            and h.trashed_at is null
-            and o.tree_path like h.tree_path || '%'
-        )
-        and not exists (
-          select 1
-          from edges se
-          join objects replacement on replacement.id=se.from_id
-          where se.kind='supersedes'
-            and se.to_id=o.id
-            and coalesce(se.metadata->>'supersession_state','effective')='effective'
-            and replacement.trashed_at is null
-            and replacement.lifecycle_status='active'
-            and replacement.audit_status <> 'failed'
-        )
-    ),
-    projected as materialized (
-      select
-        e.*,
-        (
-          select p.id
-          from eligible p
-          where p.id<>e.id
-            and e.tree_path like p.tree_path || '%'
-          order by char_length(p.tree_path) desc
-          limit 1
-        ) as atlas_parent_id,
-        (
-          select count(*)::integer
-          from eligible p
-          where p.id<>e.id
-            and e.tree_path like p.tree_path || '%'
-        ) as atlas_depth,
-        (
-          select string_agg(lpad(r.sibling_rank::text,10,'0'),'.' order by u.ord)
-          from unnest(string_to_array(trim(both '/' from e.tree_path),'/'))
-               with ordinality as u(segment,ord)
-          join ranked r on r.id=u.segment
-        ) as atlas_sort_key
-      from eligible e
-    ),
-    limited as (
-      select *
-      from projected
-      order by atlas_depth,atlas_sort_key,id
-      limit v_limit
-    )
-    select
-      coalesce((
-        select jsonb_agg(
-          jsonb_strip_nulls(jsonb_build_object(
-            'id',l.id,
-            'parent_id',l.parent_id,
-            'atlas_parent_id',l.atlas_parent_id,
-            'title',l.title,
-            'summary',l.simplified_statement,
-            'category',coalesce(l.research_level,l.object_type),
-            'mathematical_status',l.mathematical_status,
-            'audit_status',l.audit_status,
-            'support_status',l.support_status,
-            'pending',l.is_pending,
-            'obstructed',l.is_obstructed,
-            'atlas_height',l.atlas_height
-          ))
-          order by l.atlas_depth,l.atlas_sort_key,l.id
-        )
-        from limited l
-      ),'[]'::jsonb),
-      (select count(*)::integer from projected)
-    into v_entries,v_count;
-
-    v_returned:=jsonb_array_length(v_entries);
-
-    return jsonb_build_object(
-      'selector',v_selector,
-      'selector_interpretation','raw_objects',
-      'entries',v_entries,
-      'matching_count',v_count,
-      'returned_count',v_returned,
-      'has_more',v_count>v_returned,
-      'limit',v_limit,
-      'repository_revision',(select revision from state where singleton),
-      'note','Paginated raw eligible-object index. The complete conceptual research map is atlas() with no selector.'
-    );
-  end if;
-
-  with
-  ranked as materialized (
-    select o.id,
-           row_number() over (
-             partition by o.parent_id
-             order by
-               case
-                 when o.parent_id is null
-                  and o.id=(select grand_theorem_id from state where singleton)
-                 then 0 else 1
-               end,
-               (o.atlas_height is null),
-               o.atlas_height desc nulls last,
-               o.position asc nulls last,
-               o.id
-           ) as sibling_rank
-    from objects o
-    where o.trashed_at is null
-  ),
-  visible as materialized (
-    select
-      o.*,
-      (o.audit_status='pending') as is_pending,
-      (
-        o.support_status='blocked'
-        or exists (
-          select 1
-          from edges fe
-          join objects fo on fo.id=fe.from_id
-          where fe.kind='fence'
-            and fe.to_id=o.id
-            and fo.trashed_at is null
-            and fo.lifecycle_status='active'
-            and fo.audit_status <> 'failed'
-        )
-      ) as is_obstructed
-    from objects o
-    where o.trashed_at is null
-      and (
-        o.lifecycle_status='active'
-        or (
-          o.lifecycle_status='retained'
-          and exists (
-            select 1
-            from objects child
-            where child.trashed_at is null
-              and child.lifecycle_status='active'
-              and child.tree_path like o.tree_path || '%'
-              and child.id <> o.id
-          )
-        )
-      )
-      and o.audit_status <> 'failed'
-      and o.object_type <> 'fence'
-      and not exists (
-        select 1
-        from objects h
-        where h.atlas_hidden
-          and h.trashed_at is null
-          and o.tree_path like h.tree_path || '%'
-      )
-      and not exists (
-        select 1
-        from edges se
-        join objects replacement on replacement.id=se.from_id
-        where se.kind='supersedes'
-          and se.to_id=o.id
-          and coalesce(se.metadata->>'supersession_state','effective')='effective'
-          and replacement.trashed_at is null
-          and replacement.lifecycle_status='active'
-          and replacement.audit_status <> 'failed'
-      )
-  ),
-  containers as materialized (
-    select
-      v.*,
-      (
-        select p.id
-        from visible p
-        where p.semantic_container_text is not null
-          and p.id<>v.id
-          and v.tree_path like p.tree_path || '%'
-        order by char_length(p.tree_path) desc
-        limit 1
-      ) as parent_container_id,
-      (
-        select count(*)::integer
-        from visible p
-        where p.semantic_container_text is not null
-          and p.id<>v.id
-          and v.tree_path like p.tree_path || '%'
-      ) as container_depth,
-      (
-        select string_agg(lpad(r.sibling_rank::text,10,'0'),'.' order by u.ord)
-        from unnest(string_to_array(trim(both '/' from v.tree_path),'/'))
-             with ordinality as u(segment,ord)
-        join ranked r on r.id=u.segment
-      ) as atlas_sort_key
-    from visible v
-    where v.semantic_container_text is not null
-  ),
-  ownership as materialized (
-    select
-      v.*,
-      (
-        select c.id
-        from containers c
-        where v.tree_path like c.tree_path || '%'
-        order by char_length(c.tree_path) desc
-        limit 1
-      ) as container_id
-    from visible v
-  ),
-  stats as materialized (
-    select
-      c.*,
-      (select count(*)::integer from ownership o where o.container_id=c.id) as member_count,
-      (select count(*)::integer from visible d where d.tree_path like c.tree_path || '%') as subtree_object_count,
-      (select count(*)::integer from containers d where d.id<>c.id and d.tree_path like c.tree_path || '%') as descendant_container_count,
-      (select count(*)::integer from ownership o where o.container_id=c.id and o.is_pending) as pending_count,
-      (select count(*)::integer from ownership o where o.container_id=c.id and o.is_obstructed) as obstructed_count,
-      (select count(*)::integer from visible d where d.tree_path like c.tree_path || '%' and d.is_pending) as subtree_pending_count,
-      (select count(*)::integer from visible d where d.tree_path like c.tree_path || '%' and d.is_obstructed) as subtree_obstructed_count,
-      case when v_mode='subtree' then (
-        select coalesce(jsonb_agg(o.id order by o.tree_path,o.id),'[]'::jsonb)
-        from ownership o
-        where o.container_id=c.id
-      ) else null end as member_object_ids,
-      (
-        select bool_or(
-          v_selector in (o.object_type,o.research_level,o.mathematical_status,o.audit_status,o.support_status)
-        )
-        from ownership o
-        where o.container_id=c.id
-      ) as direct_classification_match
-    from containers c
-  ),
-  selected as materialized (
-    select s.*
-    from stats s
-    where
-      v_mode='conceptual'
-      or (v_mode='subtree' and s.tree_path like v_root_path || '%')
-      or (v_mode='pending' and s.pending_count>0)
-      or (v_mode='obstructed' and s.obstructed_count>0)
-      or (
-        v_mode='classification'
-        and (
-          v_selector in (s.object_type,s.research_level,s.mathematical_status,s.audit_status,s.support_status)
-          or coalesce(s.direct_classification_match,false)
-        )
-      )
-  )
-  select
-    coalesce((
-      select jsonb_agg(
-        jsonb_strip_nulls(jsonb_build_object(
-          'id',s.id,
-          'parent_container_id',s.parent_container_id,
-          'title',s.title,
-          'summary',s.semantic_container_text,
-          'category',coalesce(s.research_level,s.object_type),
-          'mathematical_status',s.mathematical_status,
-          'member_count',s.member_count,
-          'subtree_object_count',s.subtree_object_count,
-          'descendant_container_count',s.descendant_container_count,
-          'pending_count',s.pending_count,
-          'obstructed_count',s.obstructed_count,
-          'subtree_pending_count',s.subtree_pending_count,
-          'subtree_obstructed_count',s.subtree_obstructed_count,
-          'atlas_height',s.atlas_height,
-          'member_object_ids',s.member_object_ids
-        ))
-        order by s.atlas_sort_key,s.id
-      )
-      from selected s
-    ),'[]'::jsonb),
-    (select count(*)::integer from selected)
-  into v_entries,v_count;
-
-  v_returned:=jsonb_array_length(v_entries);
-
-  return jsonb_build_object(
-    'selector',v_selector,
-    'selector_interpretation',v_mode,
-    'entries',v_entries,
-    'matching_count',v_count,
-    'returned_count',v_returned,
-    'has_more',false,
-    'limit',null,
-    'repository_revision',(select revision from state where singleton),
-    'note','Complete conceptual Atlas derived from live semantic-container boundaries. atlas_height affects sibling prominence/order but never membership. member_count is direct nearest-container ownership; subtree counts include nested containers. A specific object/container selector additionally returns direct member_object_ids. Use atlas(''all'',limit) for the paginated raw object index.'
-  );
-end
-$function$
-
-```
-
 ## audit_packaging_issue(p_worker_id bigint, p_id text, p_note text) -> jsonb
 
 ```sql
@@ -5056,6 +4679,39 @@ end$function$
 
 ```
 
+## health_check_packet_size() -> jsonb
+
+```sql
+CREATE OR REPLACE FUNCTION control_center.health_check_packet_size()
+ RETURNS jsonb
+ LANGUAGE plpgsql
+ STABLE SECURITY DEFINER
+AS $function$
+declare lim int;
+begin
+  perform control_center.active_project();
+  select packet_warning_chars into lim from settings where singleton;
+  return (
+    with rows as (
+      select policy_key,length(body) chars from policies
+      where policy_key='worker_kernel' or policy_key like 'mode_%'
+    ), calc as (
+      select coalesce(max(chars) filter(where policy_key like 'mode_%'),0) max_mode_chars,
+             coalesce(max(chars) filter(where policy_key='worker_kernel'),0) kernel_chars
+      from rows
+    )
+    select jsonb_build_object(
+      'count',case when kernel_chars+max_mode_chars>lim then 1 else 0 end,
+      'items',case when kernel_chars+max_mode_chars>lim
+        then (select coalesce(jsonb_agg(jsonb_build_object('policy_key',policy_key,'chars',chars,'warning_chars',lim)
+                                        order by policy_key),'[]'::jsonb) from rows)
+        else '[]'::jsonb end)
+    from calc
+  );
+end$function$
+
+```
+
 ## health_check_project_triggers() -> jsonb
 
 ```sql
@@ -5195,39 +4851,6 @@ end$function$
 
 ```
 
-## health_check_startup_size() -> jsonb
-
-```sql
-CREATE OR REPLACE FUNCTION control_center.health_check_startup_size()
- RETURNS jsonb
- LANGUAGE plpgsql
- STABLE SECURITY DEFINER
-AS $function$
-declare lim int;
-begin
-  perform control_center.active_project();
-  select startup_warning_chars into lim from settings where singleton;
-  return (
-    with rows as (
-      select policy_key,length(body) chars from policies
-      where policy_key='worker_kernel' or policy_key like 'mode_%'
-    ), calc as (
-      select coalesce(max(chars) filter(where policy_key like 'mode_%'),0) max_mode_chars,
-             coalesce(max(chars) filter(where policy_key='worker_kernel'),0) kernel_chars
-      from rows
-    )
-    select jsonb_build_object(
-      'count',case when kernel_chars+max_mode_chars>lim then 1 else 0 end,
-      'items',case when kernel_chars+max_mode_chars>lim
-        then (select coalesce(jsonb_agg(jsonb_build_object('policy_key',policy_key,'chars',chars,'warning_chars',lim)
-                                        order by policy_key),'[]'::jsonb) from rows)
-        else '[]'::jsonb end)
-    from calc
-  );
-end$function$
-
-```
-
 ## health_check_support_integrity() -> jsonb
 
 ```sql
@@ -5320,7 +4943,7 @@ begin
     'unplaced_research_roots',control_center.health_check_unplaced_research_roots(),
     'live_project_state',control_center.health_check_live_project_state(),
     'managed_ddl_guards',control_center.health_check_managed_ddl_guards(),
-    'startup_size',control_center.health_check_startup_size(),
+    'packet_size',control_center.health_check_packet_size(),
     'project_wrappers',control_center.health_check_project_wrappers(),
     'rpc_contract',control_center.health_check_rpc_contract(),
     'project_triggers',control_center.health_check_project_triggers(),
@@ -5345,73 +4968,6 @@ AS $function$
 BEGIN
   PERFORM control_center.active_project();
   RETURN control_center.help_core(p_topic);
-END
-$function$
-
-```
-
-## help_core(p_topic text) -> jsonb
-
-```sql
-CREATE OR REPLACE FUNCTION control_center.help_core(p_topic text)
- RETURNS jsonb
- LANGUAGE plpgsql
- STABLE SECURITY DEFINER
-AS $function$
-DECLARE
-  v_topic text:=lower(replace(btrim(coalesce(p_topic,'')),' ','_'));
-  v_alias text;
-  v_key text;
-  v_result jsonb;
-BEGIN
-  PERFORM control_center.active_project();
-
-  IF v_topic='' OR v_topic='index' THEN
-    RETURN jsonb_build_object(
-      'topics',(
-        SELECT coalesce(jsonb_agg(replace(policy_key,'help_','') ORDER BY policy_key),'[]'::jsonb)
-        FROM policies WHERE policy_key LIKE 'help_%'
-      ),
-      'note','Help is descriptive documentation only; it does not select a research route. Use rpc_signatures(name) for exact signatures.'
-    );
-  END IF;
-
-  v_alias:=CASE v_topic
-    WHEN 'request' THEN 'requests'
-    WHEN 'steering' THEN 'requests'
-    WHEN 'role' THEN 'role_override'
-    WHEN 'roles' THEN 'role_override'
-    WHEN 'force_role' THEN 'role_override'
-    WHEN 'dependencies' THEN 'navigation'
-    WHEN 'relations' THEN 'navigation'
-    WHEN 'publication' THEN 'staging'
-    WHEN 'publish' THEN 'staging'
-    WHEN 'stage' THEN 'staging'
-    WHEN 'leases' THEN 'lifecycle'
-    WHEN 'continue' THEN 'lifecycle'
-    WHEN 'solver' THEN 'computation'
-    WHEN 'sat' THEN 'computation'
-    WHEN 'milp' THEN 'computation'
-    WHEN 'enumeration' THEN 'computation'
-    WHEN 'api' THEN 'api_modification'
-    WHEN 'api_changes' THEN 'api_modification'
-    WHEN 'rpc_modification' THEN 'api_modification'
-    ELSE v_topic
-  END;
-
-  v_key:='help_'||v_alias;
-  SELECT jsonb_build_object(
-    'topic',v_alias,'requested_topic',v_topic,'aliased',v_alias<>v_topic,
-    'body',body,'updated_at',updated_at
-  ) INTO v_result
-  FROM policies WHERE policy_key=v_key;
-
-  IF v_result IS NOT NULL THEN RETURN v_result; END IF;
-
-  RETURN jsonb_build_object(
-    'topic',v_topic,'found',false,
-    'index',control_center.active_project()||'.help(NULL)'
-  );
 END
 $function$
 
@@ -10026,6 +9582,7 @@ CREATE OR REPLACE FUNCTION control_center.rpc_list()
 AS $function$
   select coalesce(array_agg(distinct rpc_name order by rpc_name),'{}'::text[])
   from control_center.public_rpc_contract
+  where rpc_name not in ('startup','atlas','help_core')
 $function$
 
 ```
@@ -10037,47 +9594,52 @@ CREATE OR REPLACE FUNCTION control_center.rpc_signatures(p_name text DEFAULT NUL
  RETURNS jsonb
  LANGUAGE plpgsql
  STABLE SECURITY DEFINER
-AS $function$begin
-  PERFORM control_center.active_project();
-  
-  RETURN (
+AS $function$
+begin
+  perform control_center.active_project();
 
-  select jsonb_build_object(
-    'functions',coalesce(jsonb_agg(jsonb_build_object(
-      'name',p.proname,
-      'arguments',pg_get_function_identity_arguments(p.oid),
-      'result',pg_get_function_result(p.oid)
-    ) order by p.proname,pg_get_function_identity_arguments(p.oid)),'[]'::jsonb),
-    'discovery_mode',case when p_name is null then 'canonical' else 'exact_name' end,
-    'note',case when p_name is null
-      then 'Default discovery hides deprecated compatibility wrappers and internal implementation functions. Supply an exact name only for debugging/compatibility inspection.'
-      else null end
-  )
-  from pg_proc p
-  join pg_namespace n on n.oid=p.pronamespace
-  where n.nspname=control_center.active_project()
-    and p.proname like '%'
-    and (p_name is not null or p.proname not in (
-      'append_stage',
-      'begin_proof_activity',
-      'bind_composition',
-      'certify_object',
-      'certify_object_ex_base_v4',
-      'commit_stage_base',
-      'commit_stage_locked_base',
-      'continue_base',
-      'mark_proof_node',
-      'open_read_ex_base',
-      'read_page_base',
-      'replace_stage',
-      'stage_batch_base',
-      'watch_stage_reads',
-      'record_acceptance'
-    ))
-    and (p_name is null or p.proname=p_name)
-
+  return (
+    select jsonb_build_object(
+      'functions',coalesce(jsonb_agg(jsonb_build_object(
+        'name',p.proname,
+        'arguments',pg_get_function_identity_arguments(p.oid),
+        'result',pg_get_function_result(p.oid)
+      ) order by p.proname,pg_get_function_identity_arguments(p.oid)),'[]'::jsonb),
+      'discovery_mode',case when p_name is null then 'canonical' else 'exact_name' end,
+      'note',case when p_name is null
+        then 'Default discovery hides deprecated compatibility wrappers, quarantined startup/Atlas RPCs, help_core, and internal implementation functions. Supply an exact name only for debugging/compatibility inspection.'
+        else null end
+    )
+    from pg_proc p
+    join pg_namespace n on n.oid=p.pronamespace
+    where n.nspname=control_center.active_project()
+      and (
+        p_name is not null
+        or p.proname not in (
+          'append_stage',
+          'begin_proof_activity',
+          'bind_composition',
+          'certify_object',
+          'certify_object_ex_base_v4',
+          'commit_stage_base',
+          'commit_stage_locked_base',
+          'continue_base',
+          'mark_proof_node',
+          'open_read_ex_base',
+          'read_page_base',
+          'replace_stage',
+          'stage_batch_base',
+          'watch_stage_reads',
+          'record_acceptance',
+          'startup',
+          'atlas',
+          'help_core'
+        )
+      )
+      and (p_name is null or p.proname=p_name)
   );
-end$function$
+end
+$function$
 
 ```
 
@@ -11109,55 +10671,6 @@ AS $function$begin
 
   );
 end$function$
-
-```
-
-## startup(p_worker_id bigint DEFAULT NULL::bigint) -> jsonb
-
-```sql
-CREATE OR REPLACE FUNCTION control_center.startup(p_worker_id bigint DEFAULT NULL::bigint)
- RETURNS jsonb
- LANGUAGE plpgsql
- SECURITY DEFINER
-AS $function$
-declare
-  v_packet jsonb;
-  v_revision bigint;
-  v_broadcasts jsonb;
-  v_dictionary jsonb;
-begin
-  perform control_center.active_project();
-  v_packet := control_center.startup_pre_broadcast_v2(p_worker_id);
-  if coalesce((v_packet->>'halt')::boolean,false) then
-    return v_packet;
-  end if;
-
-  v_revision := (v_packet->>'repository_revision')::bigint;
-
-  -- No scheduler mode exists before the first continue(), so startup may
-  -- safely deliver only global broadcasts. Mode-filtered broadcasts are
-  -- delivered once continue() chooses the assignment mode.
-  select coalesce(jsonb_agg(jsonb_build_object(
-    'id',b.id,
-    'message',b.message,
-    'creation_time',b.creation_time,
-    'end_time',b.end_time,
-    'ttl',b.ttl
-  ) order by b.creation_time,b.id),'[]'::jsonb)
-  into v_broadcasts
-  from broadcasts b
-  where b.creation_time <= v_revision
-    and v_revision <= b.end_time
-    and b.mode_filter is null;
-
-  v_dictionary := control_center.standardization_dictionary();
-
-  return v_packet || jsonb_build_object(
-    'broadcasts', v_broadcasts,
-    'standardization_dictionary', v_dictionary
-  );
-end
-$function$
 
 ```
 
