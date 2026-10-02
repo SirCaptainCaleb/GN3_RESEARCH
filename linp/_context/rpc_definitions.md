@@ -12361,10 +12361,10 @@ $function$
 
 ```
 
-## update_object(p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true) -> jsonb
+## update_object(p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true, p_nonsubstantive_override boolean DEFAULT false) -> jsonb
 
 ```sql
-CREATE OR REPLACE FUNCTION control_center.update_object(p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true)
+CREATE OR REPLACE FUNCTION control_center.update_object(p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true, p_nonsubstantive_override boolean DEFAULT false)
  RETURNS jsonb
  LANGUAGE plpgsql
  SECURITY DEFINER
@@ -12385,6 +12385,7 @@ declare
   v_audit_repair boolean:=false;
   v_repair_reason text;
   v_metadata jsonb;
+  v_effective_substantive boolean := p_substantive and not coalesce(p_nonsubstantive_override,false);
 begin
   PERFORM control_center.active_project();
 
@@ -12411,15 +12412,15 @@ begin
     raise exception 'project_document objects are non-mathematical; mathematical_status cannot be set';
   end if;
 
-  v_math_changed:=(not v_open_document) and p_substantive and (
+  v_math_changed:=(not v_open_document) and v_effective_substantive and (
     p_patch ? 'statement'
     or p_patch ? 'body'
     or p_patch ? 'mathematical_status'
   );
 
-  if not v_open_document and not p_substantive and (
+  if not v_open_document and not v_effective_substantive and (
     p_patch ? 'statement' or p_patch ? 'body' or p_patch ? 'mathematical_status'
-  ) then
+  ) and not coalesce(p_nonsubstantive_override,false) then
     raise exception 'statement/body/mathematical_status changes are always substantive';
   end if;
 
@@ -12606,14 +12607,16 @@ begin
       'math_version',v_row.math_version,
       'audit_status',v_row.audit_status,
       'support_status',v_row.support_status,
-      'audit_repair_authorized',v_audit_repair
+      'audit_repair_authorized',v_audit_repair,
+      'nonsubstantive_override',coalesce(p_nonsubstantive_override,false)
     )
   );
 
 
   return to_jsonb(v_row)||jsonb_build_object(
     'repository_revision',v_rev,
-    'audit_repair_authorized',v_audit_repair
+    'audit_repair_authorized',v_audit_repair,
+    'nonsubstantive_override',coalesce(p_nonsubstantive_override,false)
   );
 end
 $function$

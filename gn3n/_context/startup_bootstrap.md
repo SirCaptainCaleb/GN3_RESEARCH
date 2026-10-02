@@ -2,7 +2,7 @@
 
 This directory is the artifact snapshot for repository revision 11600. Supabase remains authoritative for live state and updates.
 
-If you reached this file through gn3n.boot(), the worker identity and boot contract are already established. Do not call gn3n.startup() or gn3n.atlas() merely to re-ingest context already present here.
+If you reached this file through gn3n.boot(), the worker identity and boot contract are already established. Do not call gn3n.startup() merely to re-ingest context already present here.
 
 Use research_main_lines/ for the current comprehensive proof-route rehearsals. Use research_lookup/frontier.md and the forest views in research_lookup/ for broader lookup and orientation. Atlas and startup-Atlas views are intentionally not packaged in the generated artifact.
 

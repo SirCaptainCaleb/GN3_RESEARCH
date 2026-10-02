@@ -847,7 +847,7 @@
       "result": "jsonb"
     },
     {
-      "arguments": "p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean",
+      "arguments": "p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean, p_nonsubstantive_override boolean",
       "name": "update_object",
       "result": "jsonb"
     },
