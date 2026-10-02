@@ -1,13 +1,11 @@
 name: Sync research mirror
-# Manual mirror-sync trigger after research-context layout and rehearsal updates
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "17 * * * *"
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - "scripts/sync_research_mirror.py"
       - ".github/workflows/sync-research-mirror.yml"
@@ -20,36 +18,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Deterministic mirror generation from live Supabase state; artifact-download bootstrap trigger.
   sync:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 1
-
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
-
-      - name: Build desired mirror in staging
+      - name: Build clean mirror from Supabase
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: python scripts/sync_research_mirror.py
-
-      - name: Reconcile mirror including removals
+      - name: Reconcile repository mirror
         run: |
-          mkdir -p gn3n linp template
           rsync -a --delete .mirror-stage/gn3n/ gn3n/
           rsync -a --delete .mirror-stage/linp/ linp/
-          rsync -a --delete .mirror-stage/template/ template/
-          rm -rf .mirror-stage
-
-      - name: Commit changed mirror files
+          rm -rf .mirror-stage template
+      - name: Commit mirror changes
         run: |
           git config user.name "research-mirror[bot]"
           git config user.email "research-mirror[bot]@users.noreply.github.com"
@@ -58,8 +46,6 @@ jobs:
             echo "Mirror already current."
             exit 0
           fi
-          echo "Mirror changes:"
-          git status --short
-          git commit -m "Sync research mirror"
+          git commit -m "Sync clean research mirror"
           git pull --rebase origin main
           git push

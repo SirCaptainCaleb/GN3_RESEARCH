@@ -3,10 +3,8 @@ name: Build research context artifact
 on:
   workflow_dispatch:
   workflow_run:
-    workflows:
-      - "Sync research mirror"
-    types:
-      - completed
+    workflows: ["Sync research mirror"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -20,97 +18,37 @@ jobs:
   artifact:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout committed mirror
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
           ref: main
-
-      - name: Assemble lean context bundle from repository state
-        run: |
-          set -euo pipefail
-          rm -rf _artifact
-          mkdir -p _artifact
-
-          for schema in gn3n linp template; do
-            src="$schema/_context"
-            dst="_artifact/$schema"
-
-            test -d "$src"
-            test -f "$src/rpc_signatures.txt"
-            test -f "$src/rpc_definitions.md"
-            test -f "$src/policies/kernel.md"
-            test -f "$src/policies/project_policy.md"
-            test -f "$schema/vocabulary/standardization_dictionary.txt"
-
-            mkdir -p "$dst/roles" "$dst/research_lookup" "$dst/research_main_lines"
-
-            # Entry point and compact API lookup.
-            cp "$src/startup_bootstrap.md" "$dst/startup_bootstrap.md"
-            cp "$src/rpc_signatures.txt" "$dst/rpc_signatures.txt"
-            cp "$src/rpc_definitions.md" "$dst/rpc_definitions.md"
-
-            # Compact policy views live at the schema root.
-            cp "$src/policies/kernel.md" "$dst/kernel.md"
-            cp "$src/policies/project_policy.md" "$dst/project_policy.md"
-
-            # Roles remain separate operational views.
-            find "$src/roles" -maxdepth 1 -type f -name '*.md' -exec cp {} "$dst/roles/" \;
-
-            # Mathematical lookup surface. Atlas views are intentionally omitted.
-            cp "$src/frontier.md" "$dst/research_lookup/frontier.md"
-            cp "$src/simplified_forest.md" "$dst/research_lookup/simplified_forest.md"
-            cp "$src/statement_forest.md" "$dst/research_lookup/statement_forest.md"
-            cp "$src/statement_plus_proof_forest.md" "$dst/research_lookup/statement_plus_proof_forest.md"
-
-            # Primary proof directions: direct children of Comprehensive Proof Rehearsals.
-            cp -R "$src/research_main_lines/." "$dst/research_main_lines/"
-
-            # Vocabulary is small enough to live at the schema root.
-            cp "$schema/vocabulary/standardization_dictionary.txt"                "$dst/standardization_dictionary.txt"
-          done
-
-      - name: Package research context
+      - name: Package GN3N and LINP
         run: |
           set -euo pipefail
           rm -f research-context.zip
-          (cd _artifact && zip -qr ../research-context.zip .)
-
-      - name: Upload research context artifact
+          zip -qr research-context.zip gn3n linp
+      - name: Upload Actions artifact
         id: upload
         uses: actions/upload-artifact@v4
         with:
           name: research-context
-          path: _artifact/
+          path: |
+            gn3n/
+            linp/
           if-no-files-found: error
           compression-level: 9
           retention-days: 7
-
-      - name: Publish latest research context release
+      - name: Publish latest release
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
           gh release delete research-context-latest --repo "$REPO" --yes --cleanup-tag || true
-          gh release create research-context-latest research-context.zip             --repo "$REPO"             --target main             --title "Research Context (latest)"             --notes "Latest generated research-context snapshot. Supabase remains authoritative for live updates."             --latest
-
-      - name: Delete older Actions artifacts
-        env:
-          GH_TOKEN: ${{ github.token }}
-          CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
-          REPO: ${{ github.repository }}
-        run: |
-          set -euo pipefail
-          gh api --paginate             -H "Accept: application/vnd.github+json"             "/repos/$REPO/actions/artifacts?name=research-context&per_page=100"             --jq '.artifacts[].id' |
-          while read -r artifact_id; do
-            if [ -n "$artifact_id" ] && [ "$artifact_id" != "$CURRENT_ARTIFACT_ID" ]; then
-              gh api --method DELETE "/repos/$REPO/actions/artifacts/$artifact_id"
-            fi
-          done
-
-      - name: Record published artifact revision in Supabase
+          gh release create research-context-latest research-context.zip \
+            --repo "$REPO" --target main --title "Research Context (latest)" \
+            --notes "Latest clean GN3N/LINP research snapshot. Supabase remains authoritative for publication."
+      - name: Record artifact metadata in Supabase
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
@@ -118,48 +56,27 @@ jobs:
           COMMIT_SHA: ${{ github.sha }}
           CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
         run: |
-          set -euo pipefail
           python - <<'PY'
           import json, os, pathlib, urllib.request
-
-          def revision(path):
-              return json.loads(pathlib.Path(path).read_text())["repository_revision"]
-
-          repo = os.environ["REPO"]
+          def manifest(schema):
+              return json.loads(pathlib.Path(schema, "MANIFEST.json").read_text())
           payload = {
               "p_revisions": {
-                  "gn3n": revision("gn3n/mirror_manifest.json"),
-                  "linp": revision("linp/mirror_manifest.json"),
-                  "__template__": revision("template/mirror_manifest.json"),
+                  "gn3n": manifest("gn3n")["snapshot_event_id"],
+                  "linp": manifest("linp")["snapshot_event_id"],
               },
-              "p_release_url": f"https://github.com/{repo}/releases/latest",
-              "p_asset_url": f"https://github.com/{repo}/releases/latest/download/research-context.zip",
+              "p_release_url": f"https://github.com/{os.environ['REPO']}/releases/tag/research-context-latest",
+              "p_asset_url": f"https://github.com/{os.environ['REPO']}/releases/download/research-context-latest/research-context.zip",
               "p_commit_sha": os.environ["COMMIT_SHA"],
-              "p_artifact_path": f"https://api.github.com/repos/{repo}/actions/artifacts/{os.environ['CURRENT_ARTIFACT_ID']}",
+              "p_artifact_path": f"https://api.github.com/repos/{os.environ['REPO']}/actions/artifacts/{os.environ['CURRENT_ARTIFACT_ID']}",
           }
-
           key = os.environ["SUPABASE_SECRET_KEY"]
-          headers = {
-              "apikey": key,
-              "Content-Type": "application/json",
-              "Accept": "application/json",
-          }
+          headers = {"apikey": key, "Content-Type": "application/json", "Accept": "application/json"}
           if not key.startswith("sb_secret_"):
               headers["Authorization"] = f"Bearer {key}"
-
-          def call_rpc(name, payload):
-              req = urllib.request.Request(
-                  os.environ["SUPABASE_URL"].rstrip("/") + "/rest/v1/rpc/" + name,
-                  data=json.dumps(payload).encode(),
-                  headers=headers,
-                  method="POST",
-              )
-              with urllib.request.urlopen(req, timeout=60) as response:
-                  print(response.read().decode())
-
-          call_rpc("research_artifact_publish", payload)
-          call_rpc("research_artifact_cache_context", {
-              "p_revisions": payload["p_revisions"],
-              "p_commit_sha": os.environ["COMMIT_SHA"],
-          })
+          req = urllib.request.Request(
+              os.environ["SUPABASE_URL"].rstrip("/") + "/rest/v1/rpc/research_artifact_publish",
+              data=json.dumps(payload).encode(), headers=headers, method="POST")
+          with urllib.request.urlopen(req, timeout=60) as r:
+              print(r.read().decode())
           PY
