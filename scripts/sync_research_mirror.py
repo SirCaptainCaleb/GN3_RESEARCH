@@ -14,11 +14,14 @@ SCHEMAS = {"gn3n": "gn3n", "linp": "linp", "template": "__template__"}
 TABLES = [
     "objects","edges","reasoning_nodes","certificates","object_authors",
     "standardization_dictionary","state",
-    "architecture_migration_notes","atlas_legacy_snapshots",
+    "architecture_migration_notes",
 ]
 CORE_POLICIES = [
-    "startup_kernel","worker_kernel","project_policy",
-    "research_full_guidance","architecture_invariants","artifact_kernel",
+    "worker_kernel",
+    "project_policy",
+    "research_full_guidance",
+    "architecture_invariants",
+    "artifact_kernel",
 ]
 MODE_POLICIES = [
     "mode_audit","mode_brainstorm","mode_coordination","mode_isolated_research",
@@ -268,38 +271,19 @@ def metadata(o: dict[str, Any]) -> dict[str, Any]:
     m["body_sha256"] = sha256_text(o.get("body") or "")
     return m
 
-def render_forest(objects: list[dict[str, Any]], mode: str, atlas: dict[str, Any] | None = None) -> str:
+def render_forest(objects: list[dict[str, Any]], mode: str) -> str:
     active = {o["id"]: o for o in objects if o.get("trashed_at") is None}
     children: dict[str | None, list[str]] = {}
     for o in active.values():
         children.setdefault(o.get("parent_id"), []).append(o["id"])
 
-    atlas_entries = (atlas or {}).get("entries") or []
-    atlas_rank = {e.get("id"): i for i, e in enumerate(atlas_entries) if e.get("id") in active}
-    no_rank = len(atlas_entries) + len(active) + 1
-    rank_memo: dict[str, int] = {}
-
-    def subtree_atlas_rank(oid: str) -> int:
-        if oid in rank_memo:
-            return rank_memo[oid]
-        ranks = []
-        if oid in atlas_rank:
-            ranks.append(atlas_rank[oid])
-        for kid in children.get(oid, []):
-            ranks.append(subtree_atlas_rank(kid))
-        rank_memo[oid] = min(ranks) if ranks else no_rank
-        return rank_memo[oid]
-
     def sibling_key(oid: str):
         o = active[oid]
-        ordinary = (
+        return (
             o.get("position") is None,
             o.get("position") or 0,
             str(oid),
         )
-        if atlas_entries:
-            return (subtree_atlas_rank(oid),) + ordinary
-        return ordinary
 
     for ids in children.values():
         ids.sort(key=sibling_key)
@@ -328,38 +312,6 @@ def render_forest(objects: list[dict[str, Any]], mode: str, atlas: dict[str, Any
 
     for oid in children.get(None, []):
         emit(oid, 0)
-    return "\n".join(lines)
-
-def atlas_text(atlas: dict[str, Any]) -> str:
-    entries = atlas.get("entries") or []
-    by_id = {e.get("id"): e for e in entries}
-    memo = {}
-    def depth(e):
-        eid = e.get("id")
-        if eid in memo: return memo[eid]
-        p = e.get("parent_container_id")
-        memo[eid] = 0 if not p or p not in by_id else depth(by_id[p]) + 1
-        return memo[eid]
-    lines = []
-    for e in entries:
-        mark = []
-        if e.get("pending_count"): mark.append(f"pending={e['pending_count']}")
-        if e.get("obstructed_count"): mark.append(f"obstructed={e['obstructed_count']}")
-        suffix = f" [{' '.join(mark)}]" if mark else ""
-        lines.append(f"{'  '*depth(e)}• [{e.get('id')}] {(e.get('summary') or e.get('title') or '').strip()}{suffix}")
-    return "\n".join(lines)
-
-def startup_atlas_text(sa: dict[str, Any]) -> str:
-    lines, seen = [], set()
-    for e in (sa.get("core_map") or []) + (sa.get("deep_landmarks") or []):
-        if e.get("id") in seen: continue
-        seen.add(e.get("id"))
-        d = int(e.get("depth") or 0)
-        mark = []
-        if e.get("pending"): mark.append("pending")
-        if e.get("obstructed"): mark.append("obstructed")
-        suffix = f" [{' '.join(mark)}]" if mark else ""
-        lines.append(f"{'  '*d}• [{e.get('id')}] {(e.get('summary') or e.get('title') or '').strip()}{suffix}")
     return "\n".join(lines)
 
 def frontier_payload(
@@ -575,21 +527,13 @@ def build_schema(folder: str, schema: str):
     )
     write_yaml(root / "state" / "project.yaml", rows["state"])
     write_yaml(root / "state" / "architecture_migration_notes.yaml", rows["architecture_migration_notes"])
-    write_yaml(root / "state" / "atlas_legacy_snapshots.yaml", rows["atlas_legacy_snapshots"])
 
     ctx = root / "_context"
     main_line_root_id, main_line_count = write_research_main_lines(
         ctx / "research_main_lines", objects
     )
-    atlas = context(schema, "atlas")
-    satlas = context(schema, "startup_atlas")
     hindex = context(schema, "help")
     topics = hindex.get("topics") or []
-
-    write_json(ctx / "atlas.json", atlas)
-    write_text(ctx / "atlas.md", atlas_text(atlas))
-    write_json(ctx / "startup_atlas.json", satlas)
-    write_text(ctx / "startup_atlas.md", startup_atlas_text(satlas))
 
     frontier = frontier_payload(objects, rows["edges"], rows["state"])
     write_json(ctx / "frontier.json", frontier)
@@ -620,7 +564,7 @@ def build_schema(folder: str, schema: str):
     write_json(ctx / "rpc_catalog.json", rpc_catalog)
     write_rpc_signatures(ctx / "rpc_signatures.txt", rpc_catalog)
     write_rpc_definitions(ctx / "rpc_definitions.md", rpc_catalog)
-    write_text(ctx / "simplified_forest.md", render_forest(objects, "simplified", atlas))
+    write_text(ctx / "simplified_forest.md", render_forest(objects, "simplified"))
     write_text(ctx / "statement_forest.md", render_forest(objects, "statement"))
     write_text(ctx / "statement_plus_proof_forest.md", render_forest(objects, "full"))
 
@@ -629,7 +573,7 @@ def build_schema(folder: str, schema: str):
 
 This directory is the artifact snapshot for repository revision {state.get('revision')}. Supabase remains authoritative for live state and updates.
 
-If you reached this file through {schema}.boot(), the worker identity and boot contract are already established. Do not call {schema}.startup() merely to re-ingest context already present here.
+If you reached this file through {schema}.boot(), the worker identity and boot contract are already established. Legacy startup is quarantined; do not call {schema}.startup().
 
 ## Mandatory startup reading
 
@@ -657,7 +601,7 @@ No other artifact file is required at startup by default.
 - research_lookup/statement_forest.md
 - research_lookup/statement_plus_proof_forest.md
 
-research_lookup/ is not part of ordinary startup. Use it only when a concrete need remains unresolved after the mandatory material, or when exact historical/result-tree detail is required. Atlas and startup-Atlas views are intentionally not packaged in the generated artifact.
+research_lookup/ is not part of ordinary startup. Use it only when a concrete need remains unresolved after the mandatory material, or when exact historical/result-tree detail is required. Legacy Atlas is quarantined and is not part of the worker interface or generated artifact.
 
 Pull exact live mathematics from Supabase only when needed, especially for changes after this artifact revision or before state-sensitive mutations. continue(worker_id) will report context files whose live hashes have changed since the artifact snapshot rather than resending unchanged artifact material.
 
