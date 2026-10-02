@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "b598bb4d56c6a160d85bc23bfc1a58528d4a6b9ddd8f3d214903359fb9a517f0"
+created_at: "2026-09-24T03:35:36.038858+00:00"
+id: "of_the_4445_triangle_is_suffixblocked_by_the_middle_edge"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000870"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Replaced prohibited physical-endpoint terminology with standard ending-at/last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:53:47.424095+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Replaced prohibited physical-endpoint terminology with standard ending-at/last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:53:47.424095+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard ending-at/last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:53:23.074955+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "p5_pattern_4445_contains_a_canonical_lowhigh_terminal_triangle"
+position: 0
+research_interface:
+  consequence: "Every five-path to either high opposite terminal must carry an extra contact with the common middle edge g3 in its last two edges, or an additional tail contact with the corresponding charged edge. Thus the triangle is a universal suffix-blocker trap."
+  consumer:
+    - "p=5 4445 elimination"
+  given:
+    - "0b8e51bfe396 canonical low-high triangle"
+  next_need: "Combine with terminal-tail blocker lemma: f_b already forces b or v into r3∪r4. If r4 is not that blocker, then r4 or r5 must meet g3. Use phi(b)=phi(c)=3 and first-contact localization to show the extra g3 contact is confined to a or forces a four-edge endpoint path. Apply simultaneously for u_b and u_c."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every five-path to a high terminal of the 4445 triangle is suffix-blocked by the middle edge."
+statement_sha256: "2d675e40959ff55cc88b016e3c20e6f2d04d4612487a7df685ec68be7ed3d2b4"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every five-path to a high terminal of the 4445 triangle is suffix-blocked by the middle edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

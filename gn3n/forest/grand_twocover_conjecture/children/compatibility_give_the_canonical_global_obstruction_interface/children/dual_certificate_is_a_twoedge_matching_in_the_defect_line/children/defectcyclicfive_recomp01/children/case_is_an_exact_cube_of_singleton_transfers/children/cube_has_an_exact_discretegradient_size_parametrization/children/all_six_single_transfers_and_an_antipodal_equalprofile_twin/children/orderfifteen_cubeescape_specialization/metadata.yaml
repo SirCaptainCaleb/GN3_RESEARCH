@@ -1,0 +1,37 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "7aa4121a619d104cb08597c7b85eed0848d97847316a9185955b4c11b656ef8c"
+created_at: "2026-09-28T03:06:00.802469+00:00"
+id: "orderfifteen_cubeescape_specialization"
+last_elevation_revision: 0
+last_substantive_worker_id: 652
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  organizational_only: true
+object_type: "research"
+origin_worker_id: 652
+parent_id: "all_six_single_transfers_and_an_antipodal_equalprofile_twin"
+position: 0
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Order-fifteen cube-escape specialization"
+statement_sha256: "41119610dc30d59a1e32ff9410c8629514ae74924d3cb9f6b7258b49246186fc"
+substantive_worker_ids:
+  - 652
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Order-fifteen cube-escape specialization"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:06:00.802469+00:00"
+version: 2

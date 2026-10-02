@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "40381c25ab14b54ff17cbaa12642c4f899a3aec0d3cc4a4a64720a1e114b204a"
+created_at: "2026-09-24T03:36:11.271162+00:00"
+id: "in_the_4445_triangle_satisfy_a_threeway_latecontact_alternative"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000125"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "of_the_4445_triangle_is_suffixblocked_by_the_middle_edge"
+position: 0
+research_interface:
+  consequence: "Late contacts on high-terminal five-paths are forced into v, the corresponding low entrance joint, or the third middle-edge vertex a."
+  consumer:
+    - "p=5 4445 elimination"
+  given:
+    - "c2e8b77d6c94 suffix trap"
+    - "8b1790d79d74 positional potential"
+  next_need: "Eliminate/absorb the residual case c=r3∩r4 on a path to u_b (and symmetrically b on a path to u_c). Likely use the opposite charged edge f_c: since c is its entrance, appending/replacing f_c should yield a wrong-entrance rank-4 path or a four-edge path ending b."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In the 4445 triangle, every five-edge path to a high terminal satisfies a three-way late-contact alternative involving the common terminal, the low joint, or the third middle vertex."
+statement_sha256: "1b1f12f66ed103ec97271f5c3987f6a450e10c8b7356f9dd2cd404b7946da68b"
+substantive_worker_ids:
+  - 229
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "High-terminal five-paths in the 4445 triangle satisfy a three-way late-contact alternative"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:29:31.630342+00:00"
+version: 2

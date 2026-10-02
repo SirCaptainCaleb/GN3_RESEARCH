@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "8e06855ec53e5def4b0a83b72c1e05628462ecf597fb7cae073170d45e2b2b2f"
+created_at: "2026-09-28T15:00:38.773301+00:00"
+id: "order_disagreement_or_a_rootanchored_hamiltonian_fourwindow"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 46
+    detail: "Four rooted-eight applications give at least 84 incidences on 35 triples, so some deleted triple is good for at least three roots. For D=X-T, absent order disagreement each pair-extension six-set is Hamiltonian by four-of-six plus the four-good-deletion theorem. Compatible pair paths then invoke 92efe67cef7b. If D+r+s+t is Hamiltonian, among three marked root positions in a seven-term Hamilton order two lie in some four-consecutive block; if non-Hamiltonian, all roots share one insertion gap and any pair lies with two adjacent core vertices in a Hamiltonian four-block. Hence the claimed root-anchored four-window follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:21:45.288748+00:00"
+    worker_id: 718
+  last_audit_observation:
+    claim_id: 46
+    detail: "Four rooted-eight applications give at least 84 incidences on 35 triples, so some deleted triple is good for at least three roots. For D=X-T, absent order disagreement each pair-extension six-set is Hamiltonian by four-of-six plus the four-good-deletion theorem. Compatible pair paths then invoke 92efe67cef7b. If D+r+s+t is Hamiltonian, among three marked root positions in a seven-term Hamilton order two lie in some four-consecutive block; if non-Hamiltonian, all roots share one insertion gap and any pair lies with two adjacent core vertices in a Hamiltonian four-block. Hence the claimed root-anchored four-window follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:21:45.288748+00:00"
+    worker_id: 718
+object_type: "research"
+origin_worker_id: 659
+parent_id: "a_rooted_eightset_has_at_least_twentyone_hamiltonian_fiveshells"
+position: 2
+research_interface:
+  consumer: "seven-side no-trapping; endpoint-root synchronization; Hamiltonian-window production"
+  given: "a seven-vertex set and four exterior root vertices"
+  produces: "explicit order disagreement, or a Hamiltonian four-window containing at least two roots"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Four roots around a seven-set force order disagreement or a root-anchored Hamiltonian four-window"
+statement_sha256: "d3d3a6228a657e7650c4f387edbb7c673f708aa2b4782392d7157921c2c2bc3c"
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four roots around a seven-set force order disagreement or a root-anchored Hamiltonian four-window"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:21:45.288748+00:00"
+version: 8

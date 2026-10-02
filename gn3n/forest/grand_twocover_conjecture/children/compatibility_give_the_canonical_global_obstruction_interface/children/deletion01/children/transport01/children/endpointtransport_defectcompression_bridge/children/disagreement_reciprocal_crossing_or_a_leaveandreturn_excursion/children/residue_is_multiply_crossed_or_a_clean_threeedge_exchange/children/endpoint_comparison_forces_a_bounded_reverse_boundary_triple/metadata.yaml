@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "f7f77fcefdc16fb429badd5e4d4ce4ec8f9fbdeabbb1caaf621b5eb4e5f25b2c"
+created_at: "2026-09-28T02:19:02.583963+00:00"
+id: "endpoint_comparison_forces_a_bounded_reverse_boundary_triple"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 206
+    detail: "Corrected predecessor indexing and made the restoration argument self-contained, removing reliance on the pending deed772c77a5 lemma; added explicit certified dependencies."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:22:44.605999+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 206
+    detail: "Corrected predecessor indexing and made the restoration argument self-contained, removing reliance on the pending deed772c77a5 lemma; added explicit certified dependencies."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:22:44.605999+00:00"
+    worker_id: 652
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Repaired the predecessor indexing when the preceding inherited block has length one and removed reliance on the pending deed772c77a5 by giving the endpoint-restoration insertion argument directly; conclusion unchanged."
+    recorded_at: "2026-09-28T02:21:54.645522+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 652
+  noncomputational: true
+  scale_free: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "residue_is_multiply_crossed_or_a_clean_threeedge_exchange"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge; all-equal endpoint probes; grand theorem closure"
+  given: "the doubly sparse reciprocal all-equal endpoint-comparison residue t=2,s=1"
+  need: "consume bounded reverse triples into defect span at most two; the sparse comparison geometry itself is no longer a separate bridge case"
+  produces: "an explicit bounded reverse triple involving the omitted endpoint and a neighboring comparison-cover block"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every sparse order-neutral endpoint comparison forces a bounded reverse boundary triple."
+statement_sha256: "4553727622daebe9a2c776b9bba82c7f8a4f9db2bade9bcd9ccd885f5ccd1f76"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every sparse order-neutral endpoint comparison forces a bounded reverse boundary triple"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:22:44.605999+00:00"
+version: 8

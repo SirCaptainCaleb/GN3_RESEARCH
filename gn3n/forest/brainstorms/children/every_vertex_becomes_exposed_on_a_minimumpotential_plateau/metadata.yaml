@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "57d5dea774a3f9ad3dda612618507ce4cc54c586b241be8624804b4c792e2733"
+created_at: "2026-09-28T17:07:33.325679+00:00"
+id: "every_vertex_becomes_exposed_on_a_minimumpotential_plateau"
+last_elevation_revision: null
+last_substantive_worker_id: 626
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  requested_by_user: true
+  role: "brainstorm_conjecture"
+object_type: "research"
+origin_worker_id: 626
+parent_id: "brainstorms"
+position: 0
+research_interface:
+  role: "brainstorm_conjecture"
+  trust: "Unproved speculative conjecture; no computation or literature search used."
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Every vertex becomes exposed on a minimum-potential plateau"
+statement_sha256: "5d3511d33e82df2dc0697bb482ad275f6a543b3deabd4fc7d7bb111aaf93e412"
+substantive_worker_ids:
+  - 626
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Every vertex becomes exposed on a minimum-potential plateau"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T17:07:33.325679+00:00"
+version: 1

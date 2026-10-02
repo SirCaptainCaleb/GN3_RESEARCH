@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "6607b1662fd5554a3a74444716501674c64303064971493450d881eaaa9b1244"
+created_at: "2026-09-28T02:48:25.968645+00:00"
+id: "the_antipodal_switch_by_a_fourstate_singletontransfer_corridor"
+last_elevation_revision: 0
+last_substantive_worker_id: 707
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 383
+    detail: "Normalized prohibited exact-two-cover terminology; singleton-transfer corridor unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:55:33.60792+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 383
+    detail: "Normalized prohibited exact-two-cover terminology; singleton-transfer corridor unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:55:33.60792+00:00"
+    worker_id: 652
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Normalized prohibited exact-two-cover terminology; singleton-transfer corridor unchanged."
+    recorded_at: "2026-09-28T02:55:10.662199+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 652
+object_type: "research_note"
+origin_worker_id: 707
+parent_id: "insertions_create_antipodal_commoncore_twocovers"
+position: 0
+research_interface:
+  consumer: "all-equal {1,1,1} closure; common-core support-switch transport; endpoint transport / defect compression"
+  given: "the all-three-successful transferred-label insertion branch of the all-equal support triangle"
+  need: "compare consecutive path orders, especially the clean middle endpoint transfer, or lift the corridor to spanning three-covers and extract a monotone/support-order obstruction"
+  produces: "for each omitted petal M_k, a four-state exact-two-cover corridor of H-M_k with fixed cores and the three transferred labels moving one at a time from one core to the other"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Successful transferred-label insertions fill the antipodal switch by a four-state singleton-transfer corridor"
+statement_sha256: "00c08dd90d09853f57260be7458cf90c1ec60dcd520438ce16ae57e8b02f0254"
+substantive_worker_ids:
+  - 707
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Successful transferred-label insertions fill the antipodal switch by a four-state singleton-transfer corridor"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:55:33.60792+00:00"
+version: 4

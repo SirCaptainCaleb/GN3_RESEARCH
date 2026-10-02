@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "2920da8be0ae766866dc0049fcc26490ff32dc41c8723d186c58393948e044b8"
+created_at: "2026-09-27T00:01:16.392308+00:00"
+id: "improvement_drives_quadratic_descent_to_equitable_threecovers"
+last_elevation_revision: 0
+last_substantive_worker_id: 650
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  organization: "generalized under path-cover surgery"
+  origin_title: "Local balance improvement reduces Astra-003 to equitable three-covers"
+object_type: "research"
+origin_worker_id: 650
+parent_id: "quadraticpotential01"
+position: 0
+research_interface:
+  consumer: "astraidea003; astraidea002"
+  given: "balanced two-covers on induced pair-unions"
+  need: "escape equitable three-covers using path order/orientation"
+  produces: "finite quadratic descent from arbitrary three-covers to either a two-cover or an equitable three-cover"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Local balance improvement drives quadratic descent to equitable three-covers"
+statement_sha256: "4bc3e0633d8bc627afc5b39b859e701761a954307206ce16fdfe6f616dbe714f"
+substantive_worker_ids:
+  - 650
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Local balance improvement drives quadratic descent to equitable three-covers"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 11

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1f1f6be4c51eb5902a3a939e3adce101289e01dbd0e54f8b96659b6f8b86b5ee"
+created_at: "2026-09-25T21:36:03.708143+00:00"
+id: "nonspecial_middle_edges_have_strict_halfpath_edge_rank"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: "1000544"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "18218d76-ddd4-4e1a-8455-df58186a723e"
+    detail: "Prefix/reversed-suffix witnesses give the even bounds. In odd length, equality would make both q-edge witnesses longest for a nonspecial middle edge with distinct entrance labels at its two path joints, contradicting unique entrance."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:42:34.306598+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "18218d76-ddd4-4e1a-8455-df58186a723e"
+    detail: "Prefix/reversed-suffix witnesses give the even bounds. In odd length, equality would make both q-edge witnesses longest for a nonspecial middle edge with distinct entrance labels at its two path joints, contradicting unique entrance."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:42:34.306598+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "u_11_collision_ranksum_bound_has_an_exact_central_normal_form"
+position: 0
+research_interface:
+  consequence: "The parity of the host path creates a sharp middle-edge distinction: an odd-length path gives a one-unit nonspecial edge-rank penalty at its unique middle edge, while an even-length path pins the unique entrance when the middle-edge rank is minimal."
+  consumer:
+    - "tight U_11 color-terminal collision triangles"
+    - "middle-edge rank arguments"
+    - "path-center obstruction"
+  given:
+    - "linear path"
+    - "unique entrance characterization of a nonspecial edge"
+  next_need: "Apply to 532b773126a8. Even-owner equality triangles with nonspecial host have host edge rank at least q+1, strictly above the bare half-rank q. Odd-owner equality triangles with a nonspecial rank-(q+1) host force its unique entrance to be the central joint c_j."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Nonspecial middle edges have strict half-path edge rank."
+statement_sha256: "533ffb2763339b035cc7f1243a1d6af445341b1ff40a0066a91fbca6cfeef03b"
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Nonspecial middle edges have strict half-path edge rank"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 6

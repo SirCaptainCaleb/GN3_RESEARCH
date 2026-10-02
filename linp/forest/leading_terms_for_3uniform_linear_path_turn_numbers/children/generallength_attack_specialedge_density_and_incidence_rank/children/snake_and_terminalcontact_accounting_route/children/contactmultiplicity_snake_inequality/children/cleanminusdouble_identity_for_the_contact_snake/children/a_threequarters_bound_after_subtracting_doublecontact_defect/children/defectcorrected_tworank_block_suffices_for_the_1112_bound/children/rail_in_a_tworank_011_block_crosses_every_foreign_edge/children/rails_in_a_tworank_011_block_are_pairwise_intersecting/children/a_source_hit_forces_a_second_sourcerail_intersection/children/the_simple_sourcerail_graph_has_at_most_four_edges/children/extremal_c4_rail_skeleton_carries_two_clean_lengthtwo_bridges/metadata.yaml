@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "10b75e52f485e2463365f57908773616d5b2ea3a098dac28cced97840122a3c2"
+created_at: "2026-09-24T11:29:41.341754+00:00"
+id: "extremal_c4_rail_skeleton_carries_two_clean_lengthtwo_bridges"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000090"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "2d6f740b-a7c6-4b04-b81a-b3b73fc7d1b1"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:17:24.874504+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "2d6f740b-a7c6-4b04-b81a-b3b73fc7d1b1"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:17:24.874504+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "C4 extremal lens bridge"
+  uses:
+    - "a_source_hit_forces_a_second_sourcerail_intersection"
+    - "clean_lenses_between_maximum_source_rails_are_balanced"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "the_simple_sourcerail_graph_has_at_most_four_edges"
+position: 0
+research_interface:
+  consequence: "Each of the two theta rail pairs has two labeled terminal boundaries joined by a clean two-edge bridge through v. Any elementary lens on those boundaries must have side length at least two."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra conflict matching"
+  given:
+    - "C4 simple source-rail skeleton"
+  next_need: "Exploit equality t=2 versus t>=3. If t=2, compare the two rail-side 2-edge paths with the star bridge to get a local three-path theta of length two; source/terminal labels should force a repeated pair. If t>=3, one of the remaining simple rails should meet the long lens side internally, violating no-piercing/minimality."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The extremal C4 rail skeleton carries two clean length-two bridges."
+statement_sha256: "52568531c2d29b83b1cb53573fdd18bb6f979ab7617f217b451f00444ab6c4d2"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The extremal C4 rail skeleton carries two clean length-two bridges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

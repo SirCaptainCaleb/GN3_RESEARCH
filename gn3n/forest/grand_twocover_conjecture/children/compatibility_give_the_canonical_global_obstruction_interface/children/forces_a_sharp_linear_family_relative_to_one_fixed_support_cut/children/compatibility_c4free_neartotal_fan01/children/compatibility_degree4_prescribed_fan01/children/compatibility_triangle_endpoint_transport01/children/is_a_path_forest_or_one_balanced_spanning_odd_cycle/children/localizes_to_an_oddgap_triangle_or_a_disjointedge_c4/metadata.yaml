@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "f149d5f0f60edb72cd6f08fef32fff52a9f00318cac5c0ef19ac5b86302b8dfc"
+created_at: "2026-10-02T02:13:57.761043+00:00"
+id: "localizes_to_an_oddgap_triangle_or_a_disjointedge_c4"
+last_elevation_revision: 11239
+last_substantive_worker_id: 1195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "localizes_to_an_oddgap_triangle_or_a_disjointedge_c4"
+  audit_request_reason: "Independent check of the corrected balanced odd-cycle order-obstruction classification, especially the odd-gap directed-triangle alternative and the extension-size calculation."
+  audit_request_recorded_at: "2026-10-02T02:14:29.26284+00:00"
+  audit_trigger_kind: "chain_checkpoint"
+object_type: "theorem"
+origin_worker_id: 1195
+parent_id: "is_a_path_forest_or_one_balanced_spanning_odd_cycle"
+position: 0
+research_interface:
+  consumer: "Odd-cycle residual analysis and localization of order monodromy."
+  given: "The balanced spanning odd-cycle support configuration with compatible Hamilton orders."
+  produces: "The exact minimal obstruction menu for global pair-order coherence: odd-gap directed triangle or disjoint-edge directed C4."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "In the balanced odd-cycle residue, failure of one global support order is witnessed either by a directed triangle with three odd cyclic gaps or by a directed C4 on two disjoint ground-cycle edges."
+statement_sha256: "f10a7b9c4b9f83235116294109372ee391e3306181a18719878daf956e212805"
+substantive_worker_ids:
+  - 1195
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Balanced odd-cycle order incoherence localizes to an odd-gap triangle or a disjoint-edge C4"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:14:29.26284+00:00"
+version: 3

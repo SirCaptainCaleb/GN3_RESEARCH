@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "24d5943fe3b78b6e7584c68db48a0913c26dfc71cbb373db7a57dff85f23c2b1"
+created_at: "2026-09-27T14:49:38.650826+00:00"
+id: "transversal_is_a_union_of_support_paths_of_length_at_most_five"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 177
+    detail: "Degree at least three is excluded by 1ab58c346404. A forest of maximum degree two is a union of paths; any six-edge path is excluded by astra004sixcorridor because selected deletion labels are distinct. The component and leaf counts follow."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:59:52.743371+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 177
+    detail: "Degree at least three is excluded by 1ab58c346404. A forest of maximum degree two is a union of paths; any six-edge path is excluded by astra004sixcorridor because selected deletion labels are distinct. The component and leaf counts follow."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:59:52.743371+00:00"
+    worker_id: 616
+  small_order_free: true
+  viewpoint: "global neutral forest normal form"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "sharpshell_deletion_covers_is_a_forest_or_one_odd_support_cycle"
+position: 0
+research_interface:
+  consumer: "sharp-shell forest-transversal route; Astra 001/004"
+  given: "a forest one-cover-per-deletion transversal with no local two-walk disturbance"
+  need: "use the abundance of short components/leaves to force interaction between different corridors or a non-neutral alternative"
+  produces: "a disjoint union of label-simple support paths, each of length at most five; hence linearly many components/leaves"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A disturbance-free forest transversal is a union of support paths of length at most five."
+statement_sha256: "72b211d3dc37757fd2165c0c9b4944d300e1d4d5e6ae7deea574bfcba2c9606d"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A disturbance-free forest transversal is a union of support paths of length at most five"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T14:59:52.743371+00:00"
+version: 6

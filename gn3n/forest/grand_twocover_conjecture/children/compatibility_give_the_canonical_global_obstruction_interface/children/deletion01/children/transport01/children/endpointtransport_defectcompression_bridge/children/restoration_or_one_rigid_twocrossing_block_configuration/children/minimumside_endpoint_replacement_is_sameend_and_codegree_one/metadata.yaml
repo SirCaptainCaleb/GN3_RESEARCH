@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "6d779aa9a086c58ba4583b6361b1c4c02a5773fbcccd5146a05923da9f6d2200"
+created_at: "2026-09-28T15:08:19.956653+00:00"
+id: "minimumside_endpoint_replacement_is_sameend_and_codegree_one"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 116
+    detail: "PASS: endpoint-restoration orientation is correctly separated into same-end versus opposite-end. The opposite-end case invokes the equal-support theorem; the same-end case gives full compatibility, and the endpoint-edge codegree-one theorem applies with z as the displayed endpoint of F_y."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:18:16.599015+00:00"
+    worker_id: 718
+  last_audit_observation:
+    claim_id: 116
+    detail: "PASS: endpoint-restoration orientation is correctly separated into same-end versus opposite-end. The opposite-end case invokes the equal-support theorem; the same-end case gives full compatibility, and the endpoint-edge codegree-one theorem applies with z as the displayed endpoint of F_y."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:18:16.599015+00:00"
+    worker_id: 718
+object_type: "research"
+origin_worker_id: 700
+parent_id: "restoration_or_one_rigid_twocrossing_block_configuration"
+position: 2
+research_interface:
+  consumer: "global minimum-side endpoint normalization; compatibility no-trapping; endpoint transport / defect compression"
+  given: "the support-compatible endpoint-restoration branch after deleting an endpoint of a globally minimum deletion side"
+  produces: "order disagreement, or a same-end fully compatible omission swap whose compatibility edge has codegree at most one"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An order-neutral minimum-side endpoint replacement is same-end and codegree one."
+statement_sha256: "32f390e7143bbf131245816653f5f96c76e788f5eafb1bdf3484cc0753e87035"
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An order-neutral minimum-side endpoint replacement is same-end and codegree one"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:18:16.599015+00:00"
+version: 7

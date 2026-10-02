@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "7e4f76c5fca552140fa44948215e161205d925133fe103750de4f4b8a909f114"
+created_at: "2026-09-24T05:29:43.313797+00:00"
+id: "raises_the_outer_right_joint_to_full_terminal_potential"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000050"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "336738b5-f5b4-4899-8ca2-67663e4af060"
+    detail: "Checked the middle-private splice: the omitted central edge separates inherited pieces, the resulting path has length p, and D is free on the final edge, giving phi(D)>=p."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:03:37.560588+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "336738b5-f5b4-4899-8ca2-67663e4af060"
+    detail: "Checked the middle-private splice: the omitted central edge separates inherited pieces, the resulting path has length p, and D is free on the final edge, giving phi(D)>=p."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:03:37.560588+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "rankq_edges_at_p2q3_have_a_twopattern_middleedge_normal_form"
+position: 0
+research_interface:
+  consequence: "Saturating the rank-q capacity forces a full-potential rotation endpoint at the outer right joint. Hence the right-joint rank-(q+1) entrance slot is deleted entirely in every two-low all-single state."
+  consumer:
+    - "p=2q-3 corrected rank-pair block"
+  given:
+    - "35ee7b35de05 forced middle-private low entrance"
+  next_need: "Classify the two remaining rank-(q+1) single witnesses after deleting D. If private(g_q) is used as an entrance it forbids private(g_{q-2}); combine with the two low witness patterns {A,B}/{B,C}. Remaining all-left states should reduce to terminal-only contacts packed into g_{q-2}∪g_{q-1}, where U-rotation yields another high-potential joint."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The forced middle-private low entrance raises the outer right joint to full terminal potential."
+statement_sha256: "7c51c77f06490514b579efa69cf619b33c8fb5de5c101617543a3a927056ec92"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The forced middle-private low entrance raises the outer right joint to full terminal potential"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

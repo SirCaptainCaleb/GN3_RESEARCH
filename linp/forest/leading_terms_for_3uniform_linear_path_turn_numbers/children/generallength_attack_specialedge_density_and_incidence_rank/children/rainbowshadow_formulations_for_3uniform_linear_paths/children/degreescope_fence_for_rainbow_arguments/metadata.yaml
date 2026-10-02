@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "b8c311af23045b855ecd340ce1c51da43ccda48cb368e22cfcee7b2b572bf1ac"
+created_at: "2026-09-21T19:55:48.891115+00:00"
+id: "degreescope_fence_for_rainbow_arguments"
+last_elevation_revision: null
+last_substantive_worker_id: 222
+legacy_id: "1000611"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  operator_emphasis: "both minimum-degree reductions should be applied when useful; neither replaces the other"
+  role: "scope_fence"
+object_type: "fence"
+origin_worker_id: 222
+parent_id: "rainbowshadow_formulations_for_3uniform_linear_paths"
+position: 40
+research_interface:
+  related_dense_core: "densecore_allspecial_conjecture"
+  related_hypergraph_core: "originalhypergraph_densitycore_minimumdegree_reduction"
+  related_shadow_core: "twostage_minimumdegree_normalization_for_the_rainbow_shadow"
+  warning: "Rainbow minimum-degree hypotheses live on the properly edge-colored graph; original hypergraph minimum degree remains a separate usable hypothesis."
+research_level: "abstraction"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "2e18547fe4a62e595340e7b7b3ad3d8d6d0349231a2acb76b84653d4706293cc"
+substantive_worker_ids:
+  - 222
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Degree-scope fence for rainbow arguments"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-21T19:55:48.891115+00:00"
+version: 1

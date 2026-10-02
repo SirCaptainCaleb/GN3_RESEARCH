@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 6
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "de1654f9466f187332658d51db5ba49eaaf71eaeb64b926f18cc836af5c063e7"
+created_at: "2026-09-24T03:22:55.587726+00:00"
+id: "every_equalitylayer_witness_omits_many_abovethreshold_vertices"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000699"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "The outside excess identity and linear maximum-degree cap imply h>2E_O/n and hence at least 4d-2ell omitted vertices of degree at least d+2; residue evaluations are correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "The outside excess identity and linear maximum-degree cap imply h>2E_O/n and hence at least 4d-2ell omitted vertices of degree at least d+2; residue evaluations are correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "quantitative equality outside-excess forcing"
+  uses:
+    - "bad_witness_omits_a_vertex_of_degree_at_least_d_plus_two"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "bad_witness_omits_a_vertex_of_degree_at_least_d_plus_two"
+position: 0
+research_interface:
+  consequence: "Every witness misses an Omega(ell)-sized packet of above-threshold vertices: d,d-2,d-1 by residue. The equality obstruction cannot concentrate all degree excess on the witness."
+  consumer:
+    - "equality-layer induction"
+    - "outside-reservoir route"
+    - "high-degree packet deletion"
+  given:
+    - "exact density m=dn"
+    - "minimum degree d+1"
+    - "linearity"
+    - "path length <=ell-1"
+  next_need: "Apply the vertex-minimal packet inequality to this high-degree outside set. Count edges meeting the packet versus total excess; seek a subset whose shared-edge savings make deletion cost <=d|S|, or show the required anti-sharing forces many distinct attachments/chords into P."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every equality-layer witness omits many above-threshold vertices."
+statement_sha256: "e10a0de534269748e6cb11113ed28748f595cd8afac5e91ab88b5b8191ccbdf7"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every equality-layer witness omits many above-threshold vertices"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

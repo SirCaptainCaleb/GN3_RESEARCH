@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "c9a11fa33a6f2af47be1e6450c6a03a1c0e12f26cb7e091ad72c4bba55a45fd3"
+created_at: "2026-09-23T03:42:00.499233+00:00"
+id: "endpoint_crossing_multiplicity_or_order_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 721
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction after synchronized support-crossing recomposition."
+  audit_request_recorded_at: "2026-09-23T03:42:16.011979+00:00"
+  audit_resolution:
+    claim_id: 296
+    detail: "Recomposition faithfully preserves the certified support-compatible localization and synchronized endpoint-crossing argument, with the same crossing multiplicities and endpoint-replacement alternative."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:22:56.920739+00:00"
+    worker_id: 663
+  last_audit_observation:
+    claim_id: 296
+    detail: "Recomposition faithfully preserves the certified support-compatible localization and synchronized endpoint-crossing argument, with the same crossing multiplicities and endpoint-replacement alternative."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:22:56.920739+00:00"
+    worker_id: 663
+  recomposition: true
+  recomposition_audit:
+    backfilled: true
+    classified_at: "2026-09-23T03:45:16.180482+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  semantic_container_seed:
+    atlas_key: "crossing-producers"
+    headline: "Certified global crossing producers"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+  source_chain:
+    - "deletion_families_force_dense_external_support_crossing"
+    - "forces_crossing_multiplicity_or_order_disagreement"
+  structural_replacement: true
+object_type: "research"
+origin_worker_id: 721
+parent_id: "compatibility_give_the_canonical_global_obstruction_interface"
+position: 0
+research_interface:
+  given: "a support-compatible deletion family localized to X|Q"
+  need: "feed the resulting endpoint witness into defect-span compression"
+  produces: "a synchronized endpoint state with >=3 crossings, a direct mixed-support edge, or explicit order disagreement"
+research_level: "theorem"
+semantic_container_text: "Deletion-family crossing producers: support-compatible deletion families force synchronized endpoint crossing multiplicity or order disagreement."
+simplified_statement: "Support-compatible deletion families force synchronized endpoint crossing multiplicity or order disagreement"
+statement_sha256: "72461131b2a0f346ba3415b08113c1760e98c01e859a001de139413c8d218a57"
+substantive_worker_ids:
+  - 721
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Support-compatible deletion families force synchronized endpoint crossing multiplicity or order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T20:55:07.81107+00:00"
+version: 15

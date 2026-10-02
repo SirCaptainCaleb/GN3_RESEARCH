@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "3f3c47fd7e5cbe030c67d9d45ffdba895f792f6453d98b283e0ae0b06e8234c8"
+created_at: "2026-09-21T15:53:19.526371+00:00"
+id: "exact_twocrossing_endpoint_cover_forces_order_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 663
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Fresh independent reconstruction requested after substantive repair of the singleton internal-exchange argument."
+  audit_request_recorded_at: "2026-09-25T22:43:32.903244+00:00"
+  audit_resolution:
+    claim_id: 52
+    detail: "Independent reconstruction succeeds. The certified two-crossing classification leaves crosswise and singleton internal-exchange cases. The crosswise case is supplied by 4cd0c6fd1e31; in the singleton case, after excluding inherited-order disagreement, B1 must begin at a1 and maximality of A forces (z,a1,a0) tight, reversing the endpoint edge."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:57:57.231099+00:00"
+    worker_id: 711
+  last_audit_observation:
+    claim_id: 52
+    detail: "Independent reconstruction succeeds. The certified two-crossing classification leaves crosswise and singleton internal-exchange cases. The crosswise case is supplied by 4cd0c6fd1e31; in the singleton case, after excluding inherited-order disagreement, B1 must begin at a1 and maximality of A forces (z,a1,a0) tight, reversing the endpoint edge."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:57:57.231099+00:00"
+    worker_id: 711
+  last_failure:
+    reason: "Singleton internal-exchange proof omits a cross-block order case: for k>=2, k is only the first inherited index in B_1, so B_2 may contain an earlier-indexed A-vertex and the claimed prefix disjointness does not follow. A repair would need to dispose of cross-block inherited-order disagreement first."
+    recorded_at: "2026-09-23T04:37:00.958759+00:00"
+  last_local_audit_repair:
+    reason: "Substantive repair of the failed singleton internal-exchange argument. The proof now first compares the full A-order across both B_1 and B_2. Cross-block disorder is discharged by pathcalc01. In the remaining order-preserving branch B_1 necessarily begins at a_1, so prepending a_0 has exactly one new triple and maximality forces its reverse. This removes the invalid k>=2 disjoint-prefix step. Fresh independent audit required."
+    recorded_at: "2026-09-25T22:42:59.07457+00:00"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 570
+parent_id: "twocrossing_endpoint_covers_in_the_sharp_halforder_shell"
+position: 0
+research_interface:
+  given: "a sharp half-order endpoint deletion cover with exactly two longest-path/complement crossings"
+  need: "consume the reversal/cycle witness into endpoint absorption or defect-span compression; otherwise analyze crossing multiplicity at least three"
+  produces: "explicit relative-order disagreement/reversal data in every classified support shape"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every exact two-crossing endpoint cover forces order disagreement."
+statement_sha256: "e3363ef14b2e919f89595130f6713686b42c8c26a8e24d06aa4f1486888798ab"
+substantive_worker_ids:
+  - 570
+  - 663
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every exact two-crossing endpoint cover forces order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T02:27:11.7008+00:00"
+version: 20

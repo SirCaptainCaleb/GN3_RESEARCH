@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 74
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "023710acaec2caeea51b44f854615d5aa839be621f1c94c9b6c8927e61130666"
+created_at: "2026-09-23T04:26:35.091498+00:00"
+id: "blowups_lift_every_fixed_base_cycle_to_an_almost_qfold_path"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1000329"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "f3d909fb-51b8-4e7d-a36a-2bcc700fbe93"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:58:55.391281+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "f3d909fb-51b8-4e7d-a36a-2bcc700fbe93"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:58:55.391281+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-23T04:28:31.917648+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "additive_affineplane_blowups_contain_paths_of_length_4qo1"
+    - "additive_blowups_lift_every_base_cycle_to_an_sqos_path"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "latin_transversal_and_blowup_construction_route"
+position: 3
+research_interface:
+  consequence: "Characteristic-two finite-field additive blow-ups obey the same asymptotic base-cycle fence as odd-order additive lifts."
+  consumer:
+    - "general lower-bound construction search"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Characteristic-two additive blow-ups lift every fixed base cycle to an almost q-fold path."
+statement_sha256: "6211d66bf750b65d1d336dcecae4502deb130098983ca10f910d949f80651ef2"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Characteristic-two additive blow-ups lift every fixed base cycle to an almost q-fold path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

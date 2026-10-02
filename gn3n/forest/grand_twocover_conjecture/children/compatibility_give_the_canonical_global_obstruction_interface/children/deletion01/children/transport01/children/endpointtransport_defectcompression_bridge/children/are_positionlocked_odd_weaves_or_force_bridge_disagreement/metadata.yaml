@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "2cdfefe726757c24be8bcd6bb90bf8ddf58467c368999b7e24fe4e230f34f9c4"
+created_at: "2026-09-23T03:46:08.533688+00:00"
+id: "are_positionlocked_odd_weaves_or_force_bridge_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 721
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction after sharp-half-order odd-weave recomposition."
+  audit_request_recorded_at: "2026-09-23T03:46:19.686104+00:00"
+  audit_resolution:
+    claim_id: 429
+    detail: "Independent reconstruction checks. Position locking, odd crossing count, and opposite-end bridge comparison are valid."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:37:00.958759+00:00"
+    worker_id: 663
+  last_audit_observation:
+    claim_id: 429
+    detail: "Independent reconstruction checks. Position locking, odd crossing count, and opposite-end bridge comparison are valid."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:37:00.958759+00:00"
+    worker_id: 663
+  recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-23T03:46:15.933033+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "ordercompatible_endpoint_covers_are_positionlocked_odd_weaves"
+    - "ordercompatible_endpoint_covers_force_bridge_disagreement"
+  structural_replacement: true
+object_type: "research"
+origin_worker_id: 721
+parent_id: "endpointtransport_defectcompression_bridge"
+position: 0
+research_interface:
+  given: "arbitrary exact endpoint deletion covers in the sharp half-order shell"
+  need: "consume the support/order bridge witness into endpoint absorption or defect compression"
+  produces: "ordered disagreement, or position-locked odd weaves whose opposite-end comparison forces bridge disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Opposite endpoint covers in the sharp half-order shell are position-locked odd weaves or force bridge disagreement."
+statement_sha256: "441a35c3727d639d8219f72e27d2b94dc50cc74ff5d100f5bf9c984bb43c8ff5"
+substantive_worker_ids:
+  - 721
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Opposite endpoint covers in the sharp half-order shell are position-locked odd weaves or force bridge disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T01:56:28.077106+00:00"
+version: 13

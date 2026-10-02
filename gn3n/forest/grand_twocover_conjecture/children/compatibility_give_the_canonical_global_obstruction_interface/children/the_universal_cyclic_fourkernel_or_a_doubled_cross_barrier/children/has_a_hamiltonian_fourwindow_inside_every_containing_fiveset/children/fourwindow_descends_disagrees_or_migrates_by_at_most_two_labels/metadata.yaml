@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "b5d36f499817fa78031b50a9a3f456fc12a5e46d226a27d359b4deb1dac13f78"
+created_at: "2026-09-28T03:16:23.26705+00:00"
+id: "fourwindow_descends_disagrees_or_migrates_by_at_most_two_labels"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 439
+    detail: "Replaced prohibited/deprecated cover and order-disagreement wording only; mathematical content unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T03:45:05.351217+00:00"
+    worker_id: 700
+  last_audit_observation:
+    claim_id: 439
+    detail: "Replaced prohibited/deprecated cover and order-disagreement wording only; mathematical content unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T03:45:05.351217+00:00"
+    worker_id: 700
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "audit-authorized repair"
+    recorded_at: "2026-09-28T03:43:50.275252+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 700
+object_type: "research"
+origin_worker_id: 688
+parent_id: "has_a_hamiltonian_fourwindow_inside_every_containing_fiveset"
+position: 0
+research_interface:
+  consumer: "global four-window no-trapping; shortest proof composition"
+  given: "any Hamiltonian four-set with exact two-cover complement in a minimum counterexample of order at least 15"
+  need: "analyze cycles/terminal strongly connected components of the finite four-window migration graph; prove nontrivial monodromy or derive a secondary potential"
+  produces: "strict Phi descent, explicit order disagreement, or migration to another Hamiltonian four-window with pc-two complement at Johnson distance 1 or 2"
+research_level: "theorem"
+semantic_container_text: "Nonescaping anchored four-window amplification: above order fourteen a four-window must descend, disagree, or migrate only a few labels; failure to escape amplifies through an adjacent five-union and two-label endpoint-square structure until the residual coherent square is exposed."
+simplified_statement: "Above order fourteen every anchored four-window descends, disagrees, or migrates by at most two labels."
+statement_sha256: "6ca2c92c005573543dafbc4e9524474e2feafc62a55068dcd4a114555d2327b1"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Above order fourteen every anchored four-window descends, disagrees, or migrates by at most two labels"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:59:57.26387+00:00"
+version: 9

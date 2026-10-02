@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "adb40696a696c38aad54795270df014f6d153885d1aa198af029a7176f1b7994"
+created_at: "2026-09-23T03:47:52.882495+00:00"
+id: "544_cover_are_threecrossed_with_only_three_equality_geometries"
+last_elevation_revision: 0
+last_substantive_worker_id: 721
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction after 5|4|4 dense-crossing recomposition."
+  audit_request_recorded_at: "2026-09-23T03:48:03.317362+00:00"
+  audit_resolution:
+    claim_id: 131
+    detail: "Recomposition preserves the certified near-end 5|4|4 crossing theorem. The transition count forces at least three crossings, and the equality t=3 branch has exactly the three certified five-block size geometries, with the opposite near-end case symmetric."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:32:36.276666+00:00"
+    worker_id: 663
+  last_audit_observation:
+    claim_id: 131
+    detail: "Recomposition preserves the certified near-end 5|4|4 crossing theorem. The transition count forces at least three crossings, and the equality t=3 branch has exactly the three certified five-block size geometries, with the opposite near-end case symmetric."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:32:36.276666+00:00"
+    worker_id: 663
+  recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-23T03:48:00.383558+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "a_544_cover_has_two_universally_threecrossed_internal_deletions"
+    - "equality_in_a_544_deletion_has_only_three_blocksize_forms"
+  structural_replacement: true
+object_type: "research"
+origin_worker_id: 721
+parent_id: "maximin_and_the_first_largeside_shell_is_universally_66"
+position: 0
+research_interface:
+  given: "a spanning 5|4|4 cover in the order-13 mu=6 shell"
+  need: "consume the equality geometry or the t>=4 branch into defect compression"
+  produces: "two universal t>=3 deletion labels and the complete three-form classification of t=3 equality"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The near-end deletions of every 5|4|4 cover are three-crossed, with only three equality geometries"
+statement_sha256: "929f4c99d457af5c4babed2c14e54ae9e4e7fc9ebcbe3a0d200e923199d0264f"
+substantive_worker_ids:
+  - 721
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The near-end deletions of every 5|4|4 cover are three-crossed, with only three equality geometries"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:23:16.503617+00:00"
+version: 15

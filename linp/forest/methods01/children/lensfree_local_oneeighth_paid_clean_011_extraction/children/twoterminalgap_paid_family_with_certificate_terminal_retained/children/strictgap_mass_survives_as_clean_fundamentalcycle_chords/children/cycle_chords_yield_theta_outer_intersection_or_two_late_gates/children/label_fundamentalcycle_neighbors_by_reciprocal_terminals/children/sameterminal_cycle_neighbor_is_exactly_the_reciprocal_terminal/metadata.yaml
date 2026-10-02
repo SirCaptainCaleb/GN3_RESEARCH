@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "52d5d47b23fb70c9a569a92a5e2b66eccb2250b8a04fb5fa7750a73e25181221"
+created_at: "2026-09-25T21:23:59.50148+00:00"
+id: "sameterminal_cycle_neighbor_is_exactly_the_reciprocal_terminal"
+last_elevation_revision: null
+last_substantive_worker_id: 191
+legacy_id: "1000910"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "4809408e-74ef-4e11-839d-dded5d282458"
+    detail: "Reciprocal-terminal labeling gives u on R_f; the selected precursor contains u; uniqueness forces the intersection to be {u}; unique-intersection alignment then gives the same internal joint index."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:44:08.014442+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "4809408e-74ef-4e11-839d-dded5d282458"
+    detail: "Reciprocal-terminal labeling gives u on R_f; the selected precursor contains u; uniqueness forces the intersection to be {u}; unique-intersection alignment then gives the same internal joint index."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:44:08.014442+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "corollary"
+origin_worker_id: 191
+parent_id: "label_fundamentalcycle_neighbors_by_reciprocal_terminals"
+position: 1
+research_interface:
+  consequence: "For the cycle neighbor sharing the selected terminal v, a unique intersection with the selected common path is forced to be the reciprocal terminal u and is a same-index aligned joint."
+  consumer:
+    - "selected common-path/fundamental-cycle coupling"
+    - "same-terminal strict-gap residual"
+    - "gate-position analysis"
+  given:
+    - "f4f2089110b2 reciprocal-terminal labeling in the unique source-path intersection branch"
+    - "selected common path contains both non-v vertices x,u of e"
+    - "5854d853a44b unique-intersection alignment"
+  next_need: "Combine the aligned u-index on A and R_f with 52ecd179e799, the late s-index on R_e/R_f, and the localization of u relative to x on A. Do not count mere exclusion of u from an entrance-side replacement interval as additional no-piercing progress."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A unique selected-common-path intersection with the same-terminal cycle neighbor is exactly the reciprocal terminal."
+statement_sha256: "760db9b18f88286cb0224e3d003570dd2d45e0784ab3ebb30bd3f10e38190077"
+substantive_worker_ids:
+  - 191
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A unique selected-common-path intersection with the same-terminal cycle neighbor is exactly the reciprocal terminal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 5

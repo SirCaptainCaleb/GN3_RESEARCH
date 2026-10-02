@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "cfd64e4646fac44949f60b0cc18747fb426981b5921a99aa6c1763f9e1bed0b3"
+created_at: "2026-09-24T19:42:43.956015+00:00"
+id: "rotations_force_a_linear_packet_of_highrank_host_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: "1000470"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "singleblocker_cells_yield_two_toppotential_rotation_endpoints"
+position: 0
+research_interface:
+  consequence: "Low-defect centers force a linear packet of rank-at-least-p host edges, about 5p/16 in the extremal regime."
+  consumer:
+    - "post-43/48 edge-rank congestion"
+    - "top-rank edge stability"
+    - "rotation reuse"
+  given:
+    - "465568d6d8dc doubled single-blocker rotation packet"
+    - "b032348c1a8a dense switching theorem"
+  next_need: "Bound reuse of these high-rank host edges across many dangerous centers, or combine with special/nonspecial structure of top-rank edges. At global top potential this becomes a packet of genuinely top-rank hyperedges."
+research_level: "theorem"
+semantic_container_text: "High-rank switching packet program: rotations produce linear packets of top-rank host edges whose output types and adjacency restrictions control endpoint congestion."
+simplified_statement: "Switching rotations force a linear packet of high-rank host edges."
+statement_sha256: "19cbd469df28baeea68e64d196c0450bf5f2558a9d1f571d7809dcb9598f4fb9"
+substantive_worker_ids:
+  - 201
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Switching rotations force a linear packet of high-rank host edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 8

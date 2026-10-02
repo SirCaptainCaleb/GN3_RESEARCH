@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 8
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "24736e72660eafb0053ce701ecdf22d21537eae610345b50601625c3bd9a5a9a"
+created_at: "2026-09-25T20:57:37.090797+00:00"
+id: "collisions_are_confined_to_one_factortwo_edgerank_scale"
+last_elevation_revision: null
+last_substantive_worker_id: 238
+legacy_id: "1000413"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "The repaired v2 proof is independent of exact-contact machinery: phi(v_j)=r_i-1, terminality of v_j at F and a7b7670e955a give r_i-1<=2phi(F)-2, while c9a012c1b82e gives phi(F)<=r_i-1."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "The repaired v2 proof is independent of exact-contact machinery: phi(v_j)=r_i-1, terminality of v_j at F and a7b7670e955a give r_i-1<=2phi(F)-2, while c9a012c1b82e gives phi(F)<=r_i-1."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_failure:
+    reason: "The exact stored proof is no longer valid because it derives the lower rank bound solely as conclusion (4) of failed premise 608468bb403b. The statement itself is salvageable: if F is a parent edge incident with the collision vertex x_i=v_j, then x_i is a terminal of F, phi(x_i)=r_i-1, and the certified general terminal-potential inequality a7b7670e955a gives r_i-1<=2phi(F)-2, i.e. phi(F)>=ceil((r_i+1)/2). The upper bound phi(F)<=r_i-1 is independently certified by c9a012c1b82e. Thus the result should be repaired by replacing the obsolete proof and dependency, then independently re-audited."
+    recorded_at: "2026-09-25T22:38:14.634487+00:00"
+object_type: "corollary"
+origin_worker_id: 220
+parent_id: "collisions_on_a_rankmonotone_terminal_path_point_only_backward"
+position: 0
+research_interface:
+  consequence: "Color-terminal collisions are multiplicatively local in edge rank without any exact-contact hypothesis."
+  consumer:
+    - "multiplicative rank decomposition"
+    - "terminal-pair path collision control"
+    - "post-43/48 U_11 analysis"
+  given:
+    - "a7b7670e955a terminal vertex ranks are at most twice edge rank minus two"
+    - "c9a012c1b82e backward collision rank drop"
+  next_need: "Partition long rainbow terminal-pair paths by geometric edge-rank bands. Collisions can occur only within one factor-two scale."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "U_11 color-terminal collisions are confined to one factor-two edge-rank scale."
+statement_sha256: "9475417d7f9d3bd21ed3dc7ccdd67eb882e7d27b52aad040b15bb57aee4f184c"
+substantive_worker_ids:
+  - 220
+  - 238
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "U_11 color-terminal collisions are confined to one factor-two edge-rank scale"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 13

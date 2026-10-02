@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "fc73e83b5d0de5aec28d077f2b2a946b06bccde02ad7fe151dbd1ad874ec5d9a"
+created_at: "2026-09-24T05:58:10.4385+00:00"
+id: "the_rising_lowterminal_oddboundary_branch_is_impossible"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000424"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The four-slot reduction plus the explicit splice excludes either outer joint source, leaving only two private source slots for three distinct high edges."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The four-slot reduction plus the explicit splice excludes either outer joint source, leaving only two private source slots for three distinct high edges."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_repair:
+    reason: "Vocabulary-only repair; mathematics unchanged."
+    recorded_at: "2026-09-25T01:32:08.533166+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "rising one-low branch elimination"
+  uses:
+    - "branch_the_three_high_edges_are_disjoint_twosided_chords"
+    - "lowterminal_branch_has_a_pure_fourslot_crosscut_entrance_gadget"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "branch_the_three_high_edges_are_disjoint_twosided_chords"
+position: 0
+research_interface:
+  consequence: "The only surviving one-low odd-boundary obstruction has flat opposite terminal phi(C)=2q-3. The entire rising-terminal four-slot/chord branch is eliminated."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "one-low p=2q-3 state"
+    - "phi(C)=2q-2 reciprocal central form"
+  next_need: "Analyze only the flat-C branch phi(C)=p. Use 436d55f14de2: on P_C the low edge contact is either v at the left central joint or source x in one of three central slots. Couple with the three high edges and the C/D terminal-only triangle."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The rising low-terminal odd-boundary branch is impossible."
+statement_sha256: "3649fc56541a30271bb0d909bb43d2ec1c2443b197d5260fcf384412f64ae688"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The rising low-terminal odd-boundary branch is impossible"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

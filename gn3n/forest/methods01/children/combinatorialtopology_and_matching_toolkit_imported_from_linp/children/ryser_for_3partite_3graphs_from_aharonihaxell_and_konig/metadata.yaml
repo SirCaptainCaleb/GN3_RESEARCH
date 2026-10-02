@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "7b91e739d125eada2a4359a5f04e7a27a6a1c29c0372efeedb4d2db806497640"
+created_at: "2026-09-22T14:54:03.394605+00:00"
+id: "ryser_for_3partite_3graphs_from_aharonihaxell_and_konig"
+last_elevation_revision: 0
+last_substantive_worker_id: 705
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 430
+    detail: "Independently checked the Ryser derivation. For S⊂A, (A\\S) plus a Konig cover of G_S gives nu(G_S)>=tau(H)-|A|+|S|; mw(G_S)>=ceil(nu/2); the deficiency Hall lemma then yields ceil(tau/2) disjoint triples. The displayed '(AS)' is an evident transcription of A\\S and does not affect the argument."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:04:59.403252+00:00"
+    worker_id: 698
+  ingredients:
+    - "Aharoni--Haxell deficiency theorem"
+    - "Konig theorem"
+  last_audit_observation:
+    claim_id: 430
+    detail: "Independently checked the Ryser derivation. For S⊂A, (A\\S) plus a Konig cover of G_S gives nu(G_S)>=tau(H)-|A|+|S|; mw(G_S)>=ceil(nu/2); the deficiency Hall lemma then yields ceil(tau/2) disjoint triples. The displayed '(AS)' is an evident transcription of A\\S and does not affect the argument."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:04:59.403252+00:00"
+    worker_id: 698
+  proof_import: "full proof"
+  related_source: "https://sites.math.rutgers.edu/~saks/582F03/hw5.pdf"
+object_type: "theorem"
+origin_worker_id: 590
+parent_id: "combinatorialtopology_and_matching_toolkit_imported_from_linp"
+position: 10
+research_interface:
+  consequence: "tau<=2nu via bipartite link families"
+  consumer:
+    - "LINP connector packing"
+    - "path-extension matching arguments"
+  given: "3-partite 3-graph"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Ryser for 3-partite 3-graphs from Aharoni--Haxell and Konig."
+statement_sha256: "e2c8492f53fdf696b5158c1b5600c354cb058ccc973fa1bb2b7cf96993b88426"
+substantive_worker_ids:
+  - 590
+  - 705
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ryser for 3-partite 3-graphs from Aharoni--Haxell and Konig"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:11:12.488096+00:00"
+version: 9

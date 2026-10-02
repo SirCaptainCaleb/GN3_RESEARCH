@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "29fa98b0532d65eaae38da916dde486719c764497994f14cc914dbe21f5647f4"
+created_at: "2026-09-24T01:09:41.979196+00:00"
+id: "localization_of_puncturedsteiner_terminal_defects"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000496"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "and_blocker_normal_form_for_puncturedsteiner_regular_systems"
+position: 0
+research_interface:
+  consequence: "Generalizes the corrected d=5 localization: a terminal single blocker is either early, or uniquely pinned to the private vertex of g_{d-1}; first contact at g_{d-2} is impossible."
+  consumer:
+    - "ba1f1d706d77 saturated defect topologies"
+    - "general punctured-Steiner all-special route"
+  given:
+    - "efe44a01f2dc maximum-rank punctured-Steiner setup"
+  next_need: "Eliminate the one-chain and terminal-triangle topologies by tracing alternating-chain endpoints against this early/penultimate dichotomy."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "General early-or-penultimate localization of punctured-Steiner terminal defects."
+statement_sha256: "0274e37dc5e34f22a1e22ee22040f23eec27e4e0afe50872a568482663f717bc"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "General early-or-penultimate localization of punctured-Steiner terminal defects"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:51:23.28984+00:00"
+version: 6

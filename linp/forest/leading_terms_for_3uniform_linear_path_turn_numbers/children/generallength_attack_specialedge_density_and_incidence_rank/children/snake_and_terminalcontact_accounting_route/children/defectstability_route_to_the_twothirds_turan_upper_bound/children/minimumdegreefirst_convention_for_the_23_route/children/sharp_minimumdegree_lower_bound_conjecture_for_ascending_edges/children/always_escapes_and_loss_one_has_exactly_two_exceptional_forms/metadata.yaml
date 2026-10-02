@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "05b62c2a59b65017e5649c08bd750d182f5fd7fb744e4c1d877dd4060ec6a7c8"
+created_at: "2026-09-23T04:23:35.289842+00:00"
+id: "always_escapes_and_loss_one_has_exactly_two_exceptional_forms"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1000204"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition preserves the certified endpoint-deficiency case split exactly: loss two is impossible; loss one has precisely the two stated exceptional forms."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition preserves the certified endpoint-deficiency case split exactly: loss two is impossible; loss one has precisely the two stated exceptional forms."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-23T04:23:47.377289+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "shortloss_sink_normal_forms"
+    - "losstwo_sinks_are_impossible_lossone_sinks_have_two_exact_forms"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "sharp_minimumdegree_lower_bound_conjecture_for_ascending_edges"
+position: 2
+research_interface:
+  consequence: "Loss two cannot be a sink; loss one has only two exact exceptional blocker/clean-edge configurations."
+  consumer:
+    - "sharp ascending-rank route"
+    - "loss-one terminal-theta route"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Boundary states with loss at least two always admit further safe motion, while loss-one sinks have exactly two exceptional forms."
+statement_sha256: "98b1b93f7f78069a1765adfc2529a3c5abd19b7d337e4319dabe49e99a249fc5"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Short-loss boundary sinks: loss two always escapes and loss one has exactly two exceptional forms"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 10

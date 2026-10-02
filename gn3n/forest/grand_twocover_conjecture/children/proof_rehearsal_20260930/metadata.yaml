@@ -1,0 +1,41 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "8036e6b156f75e283cba56278254ba07a3a9cbb02dc98949a5772ba64876be61"
+created_at: "2026-09-30T05:00:28.78151+00:00"
+id: "proof_rehearsal_20260930"
+last_elevation_revision: null
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 708
+parent_id: "grand_twocover_conjecture"
+position: 0
+research_interface:
+  consumer: "grand-theorem proof composition; proof-rehearsal scheduler; endpoint transport / defect compression"
+  given: "a hypothetical minimum counterexample"
+  need: "large order: convert the canonical reachable four-window transport/lock package into direct merge or defect span <=2; order eleven: synchronize the universal no-merge structure, provisionally via pair-deletion restoration stars"
+  produces: "an updated two-branch proof map: reachable anchored-four-window transport for the large-order route, and the universal order-eleven 3+4 no-merge surface for the finite branch"
+  warning: "generic Hamiltonian small-support existence, generic mixed-support existence, bare order disagreement, and bare reversal are already ubiquitous and are not closure progress"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "da4771a861531afe828ae8ff7cd25dc2252516eed5ccf4f0a75074fcaf6ad75e"
+substantive_worker_ids:
+  - 708
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Proof rehearsal 2026-09-30: reachable four-window transport and the order-eleven star surface"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 9

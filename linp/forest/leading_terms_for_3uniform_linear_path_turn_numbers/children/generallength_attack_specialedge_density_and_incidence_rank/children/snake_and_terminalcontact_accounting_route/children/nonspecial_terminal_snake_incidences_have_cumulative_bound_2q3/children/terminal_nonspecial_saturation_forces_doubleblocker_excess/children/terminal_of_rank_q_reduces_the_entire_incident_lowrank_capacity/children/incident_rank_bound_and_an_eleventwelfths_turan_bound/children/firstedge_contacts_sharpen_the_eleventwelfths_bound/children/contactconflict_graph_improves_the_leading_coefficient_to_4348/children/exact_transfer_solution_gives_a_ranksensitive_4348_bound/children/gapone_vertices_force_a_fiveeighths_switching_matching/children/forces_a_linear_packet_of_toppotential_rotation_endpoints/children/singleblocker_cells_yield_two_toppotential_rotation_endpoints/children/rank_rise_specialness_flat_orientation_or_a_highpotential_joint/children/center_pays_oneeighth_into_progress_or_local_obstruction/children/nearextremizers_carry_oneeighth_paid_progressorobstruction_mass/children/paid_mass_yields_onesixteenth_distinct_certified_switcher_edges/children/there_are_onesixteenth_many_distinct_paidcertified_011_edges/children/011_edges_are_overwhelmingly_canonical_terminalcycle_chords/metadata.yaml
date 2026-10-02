@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "c0d431bf3b05cfe6aa42508d74b095cc64199157285cea71f8820894bd3e6749"
+created_at: "2026-09-24T20:56:09.878858+00:00"
+id: "011_edges_are_overwhelmingly_canonical_terminalcycle_chords"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: "1000201"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "there_are_onesixteenth_many_distinct_paidcertified_011_edges"
+position: 0
+research_interface:
+  consequence: "Almost every paid-certified edge can also be chosen as a canonical minimum-rank fundamental-cycle chord, so each of Omega(S) distinct edges carries both local paid-cell geometry and two global terminal-cycle blocker obligations."
+  consumer:
+    - "post-43/48 coefficient improvement"
+    - "terminal-cycle plus paid-certificate coupling"
+    - "0-1-1 source-rail route"
+  given:
+    - "7ac951de82f4 linear distinct paid-certified 0-1-1 family"
+    - "ad344ad2a913 certified maximum-rank spanning-forest blocker-chord theorem"
+    - "S/n_+ -> infinity"
+  next_need: "Exploit interaction between the paid certificate at one terminal and the two fundamental-cycle blocker obligations. A promising split is whether either cycle neighbor has equal rank to e; equal-rank gives flat transfer geometry, while strict rank rise consumes rank budget along the forest cycle."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Paid 0-1-1 edges are overwhelmingly canonical terminal-cycle chords."
+statement_sha256: "03aac8c40a6cd9a1708d1be5db4e1fd17bc56aca04d7abd09818e91adc58a38b"
+substantive_worker_ids:
+  - 201
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Paid 0-1-1 edges are overwhelmingly canonical terminal-cycle chords"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 8

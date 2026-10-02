@@ -1,0 +1,48 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: true
+audit_requirement: "recomposition_equivalence"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "3eb0f275871b6275890561fd8638cf47c2ffd368b21db9c382c2f147869a4e88"
+created_at: "2026-10-01T20:25:52.007815+00:00"
+id: "defects_reduce_to_one_or_two_explicit_alternating_chains"
+last_elevation_revision: 5770
+last_substantive_worker_id: 296
+legacy_id: "1001204"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  reasoning_hygiene_recomposition: true
+  recomposition_audit:
+    classified_at: "2026-10-01T20:26:23.771658+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  source_ids:
+    - "edges_have_only_one_or_two_alternating_blocker_chains"
+    - "endpoints_in_class_iii_are_exactly_the_terminal_defects"
+    - "classiii_single_blocker_is_pinned_to_the_private_vertex_of_g4"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "strict_twothirds_allspecial_threshold_for_n12"
+position: 0
+research_interface:
+  consequence: "Class-III terminal defects are explicit one- or two-chain alternating structures, with every genuinely late single blocker pinned to private(g4)."
+  consumer:
+    - "Class III rank-five nonspecial branch"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Class-III blocker defects are explicit alternating chains, with late single blockers pinned to private(g4)."
+statement_sha256: "cc9d8396baa62f2040ffcec536ca9b2c3055579402acdcef58a654801ad1845c"
+substantive_worker_ids:
+  - 296
+support_reason: "recomposition_equivalence_audit_pending"
+support_status: "unchecked"
+title: "Class-III blocker defects reduce to one or two explicit alternating chains"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:26:23.771658+00:00"
+version: 4

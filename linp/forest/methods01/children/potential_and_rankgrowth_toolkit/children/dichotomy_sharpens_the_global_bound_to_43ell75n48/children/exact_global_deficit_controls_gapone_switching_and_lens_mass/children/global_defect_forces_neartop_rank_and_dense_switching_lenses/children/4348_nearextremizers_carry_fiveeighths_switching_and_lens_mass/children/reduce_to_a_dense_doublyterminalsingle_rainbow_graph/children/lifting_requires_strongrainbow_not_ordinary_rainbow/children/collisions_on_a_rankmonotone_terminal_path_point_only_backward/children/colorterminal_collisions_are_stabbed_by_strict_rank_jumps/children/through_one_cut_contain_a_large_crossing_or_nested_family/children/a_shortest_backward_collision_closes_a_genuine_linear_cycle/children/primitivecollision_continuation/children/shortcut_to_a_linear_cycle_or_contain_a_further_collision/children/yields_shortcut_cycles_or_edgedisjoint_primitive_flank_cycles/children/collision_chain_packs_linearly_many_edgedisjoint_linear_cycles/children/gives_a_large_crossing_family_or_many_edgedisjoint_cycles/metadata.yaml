@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b281c4e141ce8a1981d141c5abfa8edcfc223b0d72705221947e2c2c7fe5296c"
+created_at: "2026-09-25T20:49:05.528428+00:00"
+id: "gives_a_large_crossing_family_or_many_edgedisjoint_cycles"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: "1000416"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "Erdos-Szekeres gives a sqrt(M)-sized crossing or nested collision family through the fixed cut. In the nested case, extending to a saturated chain preserves the fixed-cut property and the cited nested-chain packing theorem yields the stated number of edge-disjoint nonspecial cycles. Support may become blocked through the failed nested-chain premise, but the displayed inference from that premise is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "ec5aaeab-4d8f-422a-8957-cdea85e4fe09"
+    detail: "Erdos-Szekeres gives a sqrt(M)-sized crossing or nested collision family through the fixed cut. In the nested case, extending to a saturated chain preserves the fixed-cut property and the cited nested-chain packing theorem yields the stated number of edge-disjoint nonspecial cycles. Support may become blocked through the failed nested-chain premise, but the displayed inference from that premise is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:58:16.206644+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "corollary"
+origin_worker_id: 220
+parent_id: "collision_chain_packs_linearly_many_edgedisjoint_linear_cycles"
+position: 0
+research_interface:
+  consequence: "The nested branch is no longer a qualitative obstruction: it yields square-root-scale edge-disjoint cycle packing. Only ordered crossing collision families remain as the unresolved fixed-cut geometry."
+  consumer:
+    - "fixed-rank-jump collision congestion"
+    - "terminal-shadow correction route"
+    - "post-43/48 obstruction"
+  given:
+    - "76b25cb9c09b crossing/nested extraction"
+    - "ac827276704f nested-chain cycle packing"
+  next_need: "Attack the remaining pairwise crossing family. For j_1<...<j_m<t<i_1<...<i_m, compare the collision-adjacent source-rail blockers from 0706a839f70f across the ordered rails; seek a two-rail repeated intersection or a packing bound."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles."
+statement_sha256: "2606bc474e3776aae719c7a0bc8c5c4ebc84eb0ff0cb20d153e36ff65ce92879"
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Fixed-cut collision congestion gives a large crossing family or many edge-disjoint cycles"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 6

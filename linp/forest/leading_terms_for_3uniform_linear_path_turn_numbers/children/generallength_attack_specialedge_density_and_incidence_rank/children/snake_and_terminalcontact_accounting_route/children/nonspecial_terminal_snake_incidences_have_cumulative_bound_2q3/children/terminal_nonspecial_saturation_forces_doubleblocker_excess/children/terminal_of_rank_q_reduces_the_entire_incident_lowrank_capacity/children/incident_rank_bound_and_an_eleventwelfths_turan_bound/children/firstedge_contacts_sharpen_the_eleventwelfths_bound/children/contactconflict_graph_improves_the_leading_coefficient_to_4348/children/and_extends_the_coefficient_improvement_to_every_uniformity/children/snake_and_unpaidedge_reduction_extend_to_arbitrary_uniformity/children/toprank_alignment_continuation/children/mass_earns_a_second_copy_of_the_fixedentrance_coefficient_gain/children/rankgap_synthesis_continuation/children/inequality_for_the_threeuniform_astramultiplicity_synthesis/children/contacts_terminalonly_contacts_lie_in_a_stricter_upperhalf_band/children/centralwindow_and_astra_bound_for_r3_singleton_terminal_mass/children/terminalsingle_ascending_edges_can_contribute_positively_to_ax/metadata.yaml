@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "6bb2ace39253eb639fa2b554c7fe7987900d7f4d0a4f7aa8de431c4d0922e2fd"
+created_at: "2026-09-24T13:23:22.17253+00:00"
+id: "terminalsingle_ascending_edges_can_contribute_positively_to_ax"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: "1000812"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:15:52.586383+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "centralwindow_and_astra_bound_for_r3_singleton_terminal_mass"
+position: 0
+research_interface:
+  consequence: "Positive A-X is supported only on terminal-single/terminal-single ascending edges. Such an edge has both terminal potentials at most 2q-2; at equality 2q-2 the sole contact at that terminal must be the entrance."
+  consumer:
+    - "post-43/48 unpaid-edge reduction"
+    - "half-rank boundary geometry"
+    - "direct bound on A-X"
+  given:
+    - "r=3 contact-multiplicity identity"
+    - "corrected singleton-contact lemma"
+  next_need: "At the sharp boundary phi(t)=2q-2, combine entrance-only singleton contact with the existing universal central-joint theorem for potential-charged edges. Bound how many doubly-terminal-single edges can simultaneously occupy these reciprocal central joints."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Only doubly terminal-single ascending edges can contribute positively to A-X."
+statement_sha256: "f7165c5cdaf4569ab491789ba000666dacfe9b45756da2f280d076a4908844a1"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Only doubly terminal-single ascending edges can contribute positively to A-X"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:19:47.803651+00:00"
+version: 9

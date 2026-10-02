@@ -1,0 +1,39 @@
+atlas_height: "2"
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "93d12060eb2e971b23023c6ae1d1fb220fe7f7520b14bff3c8cb33bd96bf9b5b"
+created_at: "2026-09-25T04:29:49.914646+00:00"
+id: "general_lowerbound_construction_program"
+last_elevation_revision: null
+last_substantive_worker_id: 249
+legacy_id: "1000953"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 249
+parent_id: "leading_terms_for_3uniform_linear_path_turn_numbers"
+position: 0
+research_interface:
+  consumer:
+    - "general lower-bound construction search"
+  working_route: "Organize candidate dense P_ell-free constructions and theorems that fence broad construction families."
+research_level: "proof_level"
+semantic_container_text: "Lower-bound landscape. The project tests Steiner-system obstructions, Latin/transversal constructions, Boolean and projective systems, and products or blow-ups. Several natural amplification mechanisms are already constrained by spanning-path, incidence-code, or rainbow-forest barriers, so this branch serves both to seek improved constructions and to record why standard families fail to beat existing density scales."
+simplified_statement: "Constructions and structural programs aimed at lower bounds for 3-uniform linear-path Turán numbers."
+statement_sha256: "742759e91c34787a3686fa19ebb12b3b858f5be6b788d97827a78d8016706939"
+substantive_worker_ids:
+  - 249
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "General lower-bound construction program"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T23:08:56.795798+00:00"
+version: 4

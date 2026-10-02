@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "676cbc065a35992f0075274996e93eebba80ae818292013efbe42b9011c5939a"
+created_at: "2026-09-24T11:25:06.951824+00:00"
+id: "the_simple_sourcerail_graph_has_at_most_four_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000992"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "finite simple/theta rail skeleton"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "a_source_hit_forces_a_second_sourcerail_intersection"
+position: 0
+research_interface:
+  consequence: "Every violating four-rail system has at least two theta/double-overlap pairs. The extremal case with exactly two theta pairs has only two graph types, C4 or triangle-plus-pendant, with labeled shared terminals on the theta pairs."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "four source-clean 0-1-1 rails"
+    - "simple pairs are reciprocal U-U"
+  next_need: "Choose elementary balanced lenses on the theta pairs. In the C4 case the opposite theta lenses have labeled terminal boundaries; in the triangle-plus-pendant case the adjacent theta pairs share a labeled terminal u_1. Use 5b9a94e1b26f to forbid the remaining simple rails from piercing these lenses and collapse the finite skeleton."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The simple source-rail graph has at most four edges."
+statement_sha256: "127e1270638a2c1adee837e80c72cc01420ad682ebbfc922a66348ee9e034274"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The simple source-rail graph has at most four edges"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

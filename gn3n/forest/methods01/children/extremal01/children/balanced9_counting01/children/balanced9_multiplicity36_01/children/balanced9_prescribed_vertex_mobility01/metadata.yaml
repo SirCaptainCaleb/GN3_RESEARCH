@@ -6,7 +6,7 @@ audit_requested: false
 audit_requirement: "independent_reconstruction"
 audit_status: "pending"
 audited_math_version: null
-body_sha256: "01610bbc76153360d1dba3adf3144b478530458a32c452bf46f1a308cd9dd150"
+body_sha256: "f937ea6e145d36506564791fe6a210c6cd55bde90d8202cc13a89de3fb09b24f"
 created_at: "2026-09-30T12:51:39.632214+00:00"
 id: "balanced9_prescribed_vertex_mobility01"
 last_elevation_revision: 10203

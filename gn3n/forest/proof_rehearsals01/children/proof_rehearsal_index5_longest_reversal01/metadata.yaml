@@ -21,8 +21,8 @@ metadata:
   route_key: "proof-rehearsal/index5-longest-reversal"
   sharp_shell_failed_closure:
     - "astra004repeatcutdisturb"
-    - "1000578"
-    - "1000545"
+    - "the_neutral_deletionsparse_cut_map_cannot_be_disturbancefree"
+    - "sharpshell_longest_path_exposes_explicit_transport_disturbance"
   synthesis_only: true
 object_type: "research"
 origin_worker_id: 1273

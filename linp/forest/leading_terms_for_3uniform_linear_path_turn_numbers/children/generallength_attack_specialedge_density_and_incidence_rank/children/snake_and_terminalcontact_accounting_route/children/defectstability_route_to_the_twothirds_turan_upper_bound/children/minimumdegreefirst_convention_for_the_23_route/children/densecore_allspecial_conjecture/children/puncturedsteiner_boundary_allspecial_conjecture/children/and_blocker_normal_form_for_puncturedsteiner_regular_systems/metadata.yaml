@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "181e4c59177fe07610bfd7f625cd1cdb7a12ea733e8caacbc8d88de2c672a1f2"
+created_at: "2026-09-24T01:05:33.810402+00:00"
+id: "and_blocker_normal_form_for_puncturedsteiner_regular_systems"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1001081"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:00:12.161369+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "theorem"
+origin_worker_id: 225
+parent_id: "puncturedsteiner_boundary_allspecial_conjecture"
+position: 1
+research_interface:
+  consequence: "Generalizes the full structural skeleton of the n=12 Class-III proof: perfect-matching leave, residual degree profile (d-2)^3,(d-3)^(2d-4), two terminal perfect matchings with forbidden residual precursors, and exactly one or two alternating blocker-chain defects."
+  consumer:
+    - "dense-core all-special conjecture"
+    - "punctured Steiner systems"
+    - "maximum-rank blocker route"
+  given:
+    - "d-regular linear triple system on 2d+2 vertices"
+    - "maximum-rank nonspecial edge of rank d"
+  next_need: "Generalize the d=5 residual matching contradiction: show that no residual system with this degree profile can support the two perfect matchings and their mutual no-(d-2)-path conditions."
+research_level: "theorem"
+semantic_container_text: "Punctured-Steiner residual program: classify regular residual systems and their blocker normal forms as finite models for the dense-core all-special conjecture."
+simplified_statement: "Universal residual and blocker normal form for punctured-Steiner regular systems."
+statement_sha256: "71860a84ebe7af11e77664c1f16b9eb65aac8e7438fdbd013f57a755578a3786"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Universal residual and blocker normal form for punctured-Steiner regular systems"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:51:23.28984+00:00"
+version: 8

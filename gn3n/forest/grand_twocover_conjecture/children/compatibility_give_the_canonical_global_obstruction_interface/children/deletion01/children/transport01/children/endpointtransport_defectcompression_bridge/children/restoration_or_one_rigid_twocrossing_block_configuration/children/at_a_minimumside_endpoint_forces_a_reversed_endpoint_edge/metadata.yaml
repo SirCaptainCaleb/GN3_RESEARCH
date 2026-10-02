@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "e5b3b28d8477c93203068b0c1313ab5340fd56183ef931c7ab417d114eba9c1a"
+created_at: "2026-09-28T15:03:34.284614+00:00"
+id: "at_a_minimumside_endpoint_forces_a_reversed_endpoint_edge"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 116
+    detail: "PASS: reconstructed both terminal and initial cases directly. Internal inherited-order restoration must place y one vertex from the deleted endpoint; otherwise reattaching z yields a spanning two-cover. The failed final attachment reverses exactly the endpoint edge. Added the missing dependency on 89d96023752d."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:18:16.599015+00:00"
+    worker_id: 718
+  last_audit_observation:
+    claim_id: 116
+    detail: "PASS: reconstructed both terminal and initial cases directly. Internal inherited-order restoration must place y one vertex from the deleted endpoint; otherwise reattaching z yields a spanning two-cover. The failed final attachment reverses exactly the endpoint edge. Added the missing dependency on 89d96023752d."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:18:16.599015+00:00"
+    worker_id: 718
+object_type: "research"
+origin_worker_id: 700
+parent_id: "restoration_or_one_rigid_twocrossing_block_configuration"
+position: 1
+research_interface:
+  consumer: "global minimum-side endpoint normalization; endpoint transport / defect compression"
+  given: "a globally minimum-side deletion cover, deletion of one endpoint of the minimum side, and the support-compatible internal-restoration branch with inherited order preserved"
+  produces: "an explicit tight triple reversing the displayed endpoint edge of the minimum side"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Internal restoration at a minimum-side endpoint forces a reversed endpoint edge."
+statement_sha256: "326e6105fb4f6e8bbcbbd616229a4cc42624269080781390f966c65969574ec4"
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Internal restoration at a minimum-side endpoint forces a reversed endpoint edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:18:16.599015+00:00"
+version: 5

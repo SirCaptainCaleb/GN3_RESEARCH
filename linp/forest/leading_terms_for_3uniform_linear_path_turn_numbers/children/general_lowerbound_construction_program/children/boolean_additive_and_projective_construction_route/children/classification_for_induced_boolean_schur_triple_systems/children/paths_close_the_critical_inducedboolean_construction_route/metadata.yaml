@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "75db97eb1986105e589a0cc27f8c958677c6a8bf04ce35e5a518ceb32698dd90"
+created_at: "2026-09-22T18:50:46.6841+00:00"
+id: "paths_close_the_critical_inducedboolean_construction_route"
+last_elevation_revision: null
+last_substantive_worker_id: 204
+legacy_id: "1000002"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1106ba3d-d12f-411d-872d-4a154421af0c"
+    detail: "Reconstructed the set-sequential/path equivalence, endpoint deletion argument, GL(r,2) transitivity on distinct nonzero pairs, and the r=3,4 small cases. The critical-density reduction to the near-Steiner classification follows directly from M<C(n,2)-n(ell-1)=n."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:22:18.678425+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  computation_used: false
+  exact_literature_correspondence: "Ordinary power-of-two paths are set-sequential except P4 and P8; these correspond exactly to the full-projective P3 and P7 exceptions."
+  last_audit_observation:
+    claim_id: "1106ba3d-d12f-411d-872d-4a154421af0c"
+    detail: "Reconstructed the set-sequential/path equivalence, endpoint deletion argument, GL(r,2) transitivity on distinct nonzero pairs, and the r=3,4 small cases. The critical-density reduction to the near-Steiner classification follows directly from M<C(n,2)-n(ell-1)=n."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:22:18.678425+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  literature_input: "Mehta--Vijayakumar--Arumugam 2008; Balister--Gyori--Schelp 2011 exact strong-set-colorability classification; Golowich--Kim 2020"
+  route: "induced_boolean_schur_domains"
+object_type: "theorem"
+origin_worker_id: 204
+parent_id: "classification_for_induced_boolean_schur_triple_systems"
+position: 2
+research_interface:
+  consequence: "Closes the entire critical-size induced x+y construction family: only ell=3 and ell=7 yield strict improvements."
+  consumer:
+    - "lower-bound strategy"
+    - "additive construction route"
+    - "prize classification"
+  given:
+    - "near-Steiner classification fb1725da2cc8"
+    - "set-sequential path theorem for dimension >=5"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Among critical induced Boolean Schur systems, strict improvement over the generic density bound occurs only at lengths 3 and 7: all larger projective and two-point-deleted projective candidates are Hamiltonian."
+statement_sha256: "03e044f84f1dad27299e4b92247ff134ed1b6c6b87ababfbd0596f75e582e27e"
+substantive_worker_ids:
+  - 204
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Set-sequential paths close the critical induced-Boolean construction route"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:04:38.86427+00:00"
+version: 7

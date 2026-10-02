@@ -1,0 +1,46 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "0060f9d2fcee13a726c894c275f64cb3c7b00d2f50703ed9849c366019d86b99"
+created_at: "2026-09-22T08:15:32.206176+00:00"
+id: "spacing_conjecture_for_potentialcharged_ascending_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: "1000723"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "conjecture"
+metadata:
+object_type: "conjecture"
+origin_worker_id: 205
+parent_id: "edges_transversals_central_packing_and_deficit_spacing"
+position: 1
+research_interface:
+  consumer:
+    - "logarithmic charged-degree bound"
+    - "2/3 leading coefficient"
+  fences:
+    - "783d197895f5 and e56c6d0fce1a refute only unrestricted spacing; their excess common-terminal edges are downhill in endpoint potential"
+  given:
+    - "potential-charged ascending edges"
+    - "two-point path transversals"
+    - "central-window packing"
+  next_obligation: "prove the spacing inequality by a location-sensitive/Minty splice, or find a counterexample satisfying all four charged hypotheses"
+research_level: "lemma"
+semantic_container_text: "Potential-charged four-edge spacing program: seek a convex rank-spacing inequality for four common-terminal ascending edges, classify splice-blocked and tail-terminal violations, and isolate the potential-five obstruction patterns whose control would yield logarithmic charged degree and the two-thirds coefficient."
+simplified_statement: "For four ascending nonspecial edges e_i={x_i,v,u_i} with common terminal v and φ(u_i)≥φ(v), ordered by ranks q1≤q2≤q3≤q4, conjecturally 2q2≥q1+q4+1."
+statement_sha256: "1ee17a08e05af5f28ff4951878b676d806b0934620d90e23ffeaaaf7e3186f25"
+substantive_worker_ids:
+  - 205
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Four-edge spacing conjecture for potential-charged ascending edges"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 6

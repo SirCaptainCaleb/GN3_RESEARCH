@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "01ce699a180d32771b16cfb48ba276da322bab3655ab9e679d210d8b026816ca"
+created_at: "2026-09-24T19:59:33.479146+00:00"
+id: "pays_oneeighth_into_switcher_triangles_or_balancedlens_outputs"
+last_elevation_revision: null
+last_substantive_worker_id: 250
+legacy_id: "1000817"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "At a global-top center strict rank-rise outputs are impossible; paid outputs are therefore special or nonascending rank-L edges and are all-top. Together with the local one-eighth theorem and all-top lens construction, this yields the stated triangle/lens payment."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "At a global-top center strict rank-rise outputs are impossible; paid outputs are therefore special or nonascending rank-L edges and are all-top. Together with the local one-eighth theorem and all-top lens construction, this yields the stated triangle/lens payment."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+object_type: "corollary"
+origin_worker_id: 250
+parent_id: "center_pays_oneeighth_into_progress_or_local_obstruction"
+position: 0
+research_interface:
+  consequence: "At global top, rank rise disappears and specialness/nonascending output collapse to one all-top balanced-lens currency; only switcher triangles and balanced-lens outputs remain."
+  consumer:
+    - "post-43/48 global packing"
+    - "top-layer stability"
+    - "triangle/lens congestion"
+  given:
+    - "9586a4d2317f one-eighth paid-cell theorem"
+    - "6c54e91ad703 special top-rank edges are all-top"
+    - "57d5e4c71035 nonascending top outputs are all-top"
+    - "7f30d18ca6b4 all-top edges manufacture balanced lenses"
+  next_need: "Bound global reuse of the center-indexed switcher triangles and all-top balanced-lens output edges. Any o(L)-scale average reuse on near-extremizers converts the one-eighth local payment into linear global defect and beats 43/48."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A dangerous global-top center pays one-eighth into switcher triangles or balanced-lens outputs."
+statement_sha256: "f16e0d504d5518588e03d4c6e5479692c06bef700e0e018fa5af06409b7d6643"
+substantive_worker_ids:
+  - 250
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "A dangerous global-top center pays one-eighth into switcher triangles or balanced-lens outputs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 9

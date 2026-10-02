@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "c85b646f53faea882360946a288613ae6d72c762d27961569704a05a4915467a"
+created_at: "2026-09-24T00:43:20.48521+00:00"
+id: "classiii_systems_have_no_rankfive_nonspecial_edge"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: "1001164"
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "3de42864-41b8-4008-a92a-5166a947f5e0"
+    detail: "Terminology-only normalization of last-vertex phrasing."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T02:16:03.748931+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "3de42864-41b8-4008-a92a-5166a947f5e0"
+    detail: "Terminology-only normalization of last-vertex phrasing."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T02:16:03.748931+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Terminology-only: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T02:15:27.637836+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "theorem"
+origin_worker_id: 229
+parent_id: "strict_twothirds_allspecial_threshold_for_n12"
+position: 0
+research_interface:
+  consequence: "Closes the last rank-five branch; Class III is all-special by a purely human residual-one-hole argument."
+  consumer:
+    - "d9ee4adc37d3 finite strict-threshold evidence"
+    - "0bc3c18c2692 Class III"
+  given:
+    - "d9c5b28c09a0 failed high-low pair lemma"
+    - "b9277764ed94 rank >=4"
+    - "09d85d61b8b0 rank-4 exclusion"
+  proof_key: "Remove e, obtaining a 9-vertex 7-edge residual system of degrees 3,3,3,2^6. Terminal matchings cannot all suppress three-edge residual precursors; classify the mate pattern of x* and force a wrong terminal entrance."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Class-III systems have no rank-five nonspecial edge."
+statement_sha256: "63c90b27b5ca08c214ff5085f4584b1f81f10d1e0cb732eb0656339f7b25affb"
+substantive_worker_ids:
+  - 229
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Class-III systems have no rank-five nonspecial edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

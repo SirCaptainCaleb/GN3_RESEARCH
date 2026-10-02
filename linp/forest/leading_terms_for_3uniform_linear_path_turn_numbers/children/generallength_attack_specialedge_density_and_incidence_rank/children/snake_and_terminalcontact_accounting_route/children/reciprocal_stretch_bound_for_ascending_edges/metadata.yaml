@@ -1,0 +1,70 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "fe4eed4543534fe760e66687920332a27d15e08f8d2bde93fec01e88514bebce"
+created_at: "2026-09-23T02:40:39.138341+00:00"
+id: "reciprocal_stretch_bound_for_ascending_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1000366"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition exactly preserves the certified factor-two threshold band, reciprocal-threshold identity, and 5/4 rainbow-Turan sharpening; the finite S_p maximization is unchanged."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition exactly preserves the certified factor-two threshold band, reciprocal-threshold identity, and 5/4 rainbow-Turan sharpening; the finite S_p maximization is unchanged."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    backfilled: true
+    classified_at: "2026-09-23T03:45:16.180482+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "rainbow_graphs_lie_in_a_factortwo_potential_band"
+    - "global_reciprocal_stretch_bound_for_ascending_edges"
+    - "rainbowturn_sharpening_of_the_global_reciprocal_stretch_bound"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "snake_and_terminalcontact_accounting_route"
+position: 6
+research_interface:
+  consequence: "The factor-two threshold band and all rank layers combine into the unconditional reciprocal-stretch bound 5n/4."
+  consumer:
+    - "multi-scale ascending-defect control"
+    - "2/3-leading-coefficient program"
+  given:
+    - "potential-threshold rainbow graphs"
+    - "terminal potential band"
+    - "rainbow path Turan bound"
+  limitation: "Nearly rank-tight ascending edges can still contribute very little, so this alone does not change the Turan leading coefficient."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Reciprocal stretch bound for ascending edges."
+statement_sha256: "8257de2c92eb83825e8bc4df28e8b5d4634c2de2218d78628df1d5900783a9f7"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Reciprocal stretch bound for ascending edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 14

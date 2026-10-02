@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "58b084e87083bd3a2db8d244e626ca7402dbb5a9634e7e74f52374dad7f4c06c"
+created_at: "2026-09-25T12:40:11.416563+00:00"
+id: "unique_support_crossing_reduces_to_a_singleton_transfer"
+last_elevation_revision: 0
+last_substantive_worker_id: 663
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Fresh independent reconstruction requested after substantive repair of the missing reciprocal-one-crossing restoration subcase."
+  audit_request_recorded_at: "2026-09-25T22:43:32.903244+00:00"
+  audit_resolution:
+    claim_id: 52
+    detail: "Independent reconstruction succeeds. The reciprocal one-crossing decomposition forces a split block M; endpoint-restoration cases and the four order cases all close when |M|>=2 using only overlap splicing across a block of order at least two and the certified two-vertex-deletion calculus. Added the previously missing depends_on edge to mincex01 and reopened the shared audit basis so that premise is now watched."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:57:57.231099+00:00"
+    worker_id: 711
+  branch: "unequal common support partitions"
+  equality_case: "reciprocal crossing number one"
+  last_audit_observation:
+    claim_id: 52
+    detail: "Independent reconstruction succeeds. The reciprocal one-crossing decomposition forces a split block M; endpoint-restoration cases and the four order cases all close when |M|>=2 using only overlap splicing across a block of order at least two and the certified two-vertex-deletion calculus. Added the previously missing depends_on edge to mincex01 and reopened the shared audit basis so that premise is now watched."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-26T00:57:57.231099+00:00"
+    worker_id: 711
+  last_failure:
+    reason: "The proof has an uncovered restoration subcase. While trying to prove that y must restore to the split support P, it assumes instead that y restores to Q and lets x restore to the pure block B. In the subcase P=MB with mixed component QM, the proof claims xBy is tight because B is terminal in P and |B|>=2. But y is restoring to Q in this branch, so no B-y junction is available; terminality of B inside P only supplies the M-B join. The theorem appears locally repairable: if |M|>=2 then QM from T_y and MB from T_x splice to the Hamilton path QMB of H-{x,y}, while |M|=1 is already the desired conclusion. That case is not present in the exact proof audited."
+    recorded_at: "2026-09-25T22:27:38.111915+00:00"
+  last_local_audit_repair:
+    reason: "Substantive local repair of the failed restoration subcase. When y restores to Q, x restores to B, and P=MB: mixed order MQ gives the spanning two-cover xB | MQy using |Q|>=2; mixed order QM with |M|>=2 gives a Hamilton path QMB of H-{x,y} by splicing QM and MB through the common block M. This closes exactly the audit gap; theorem statement unchanged. Requires fresh independent audit."
+    recorded_at: "2026-09-25T22:42:06.308958+00:00"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 625
+parent_id: "deletion_covers_of_a_longest_path_always_expose_disagreement"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge and one-defect support dynamics"
+  given: "opposite endpoint deletion covers whose common two-deletion covers have different partitions and reciprocal crossing number one"
+  need: "consume the singleton-transfer residue or show reciprocal crossing multiplicity at least two forces compression"
+  produces: "explicit order disagreement or a singleton support transfer"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Reciprocal unique support crossing reduces to a singleton transfer."
+statement_sha256: "a4d4ec4654febea972b0c1e76b8f228b34c7ac277f5817004524ac0ada882ac6"
+substantive_worker_ids:
+  - 625
+  - 663
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Reciprocal unique support crossing reduces to a singleton transfer"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-26T00:57:57.231099+00:00"
+version: 9

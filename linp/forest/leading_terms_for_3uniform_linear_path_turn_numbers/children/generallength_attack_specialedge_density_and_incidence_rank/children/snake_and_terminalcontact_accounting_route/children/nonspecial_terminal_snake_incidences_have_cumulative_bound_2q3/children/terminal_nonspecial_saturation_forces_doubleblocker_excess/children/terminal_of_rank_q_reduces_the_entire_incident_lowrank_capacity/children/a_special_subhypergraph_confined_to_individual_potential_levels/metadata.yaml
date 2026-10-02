@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 7
+body_sha256: "40ccafe05d38748e476b647bd11f8bdc196c60f2d9556a02b8116e50c08a3635"
+created_at: "2026-09-24T04:02:17.606684+00:00"
+id: "a_special_subhypergraph_confined_to_individual_potential_levels"
+last_elevation_revision: null
+last_substantive_worker_id: 253
+legacy_id: "1000737"
+lifecycle_status: "active"
+math_version: 7
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8690bdab-f667-4cb7-9e5c-a3d75daa036e"
+    detail: "Made the quantitative near-floor hypothesis eta>=0 explicit, matching the exact hypothesis of certified premise fa7e5e79b905; no proof mechanism changed."
+    math_version: 7
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:16:51.187949+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "8690bdab-f667-4cb7-9e5c-a3d75daa036e"
+    detail: "Made the quantitative near-floor hypothesis eta>=0 explicit, matching the exact hypothesis of certified premise fa7e5e79b905; no proof mechanism changed."
+    math_version: 7
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:16:51.187949+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized hypothesis repair: the quantitative stability argument invokes fa7e5e79b905, whose exact hypothesis is eta>=0; make this standing near-floor assumption explicit. No proof mechanism changes."
+    recorded_at: "2026-09-24T21:16:31.518306+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 253
+parent_id: "terminal_of_rank_q_reduces_the_entire_incident_lowrank_capacity"
+position: 0
+research_interface:
+  consequence: "All four Type-A special edges have full vertex rank. Deleting at most 66ηn vertices leaves special components within single potential levels, special degree 2..4, and original nonspecial edges ascending with rank jumps≥2."
+  consumer:
+    - "equality_vertices_have_at_most_one_deficient_special_incidence"
+    - "floor_only_oeta_n_vertices_and_edges_are_exceptional"
+    - "potential-cut and ascending-DAG route"
+    - "grand 2/3 conjecture"
+  fence: "Classification and vertex ranks are those of H, not recomputed in the induced subhypergraph. No leading-coefficient improvement asserted."
+  given:
+    - "terminal_of_rank_q_reduces_the_entire_incident_lowrank_capacity"
+    - "nonspecial_terminal_snake_incidences_have_cumulative_bound_2q3"
+    - "directed_graph_of_ascending_edges_and_a_levelcut_inequality"
+    - "floor_only_oeta_n_vertices_and_edges_are_exceptional"
+  next_need: "Control ascending edges between these large same-level special subhypergraphs. The remaining obstacle is global edge mass, not a fixed p=5 configuration."
+research_level: "lemma"
+semantic_container_text: "Near-seven-sixths Type-A structure: confine special edges to potential levels, analyze Type-A rank ladders and saturated rank-minus-one fans, and use rotations and predecessor-capacity recurrences to force exceptional entrances or expansion."
+simplified_statement: "Near the seven-sixths floor, almost all vertices have a special subhypergraph confined to individual potential levels."
+statement_sha256: "767de05f5c879721ddf6710526cce158bae99fb688cfb637c64d0407bdfe190c"
+substantive_worker_ids:
+  - 253
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Near the seven-sixths floor, almost all vertices have a special subhypergraph confined to individual potential levels"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:37:32.388248+00:00"
+version: 12

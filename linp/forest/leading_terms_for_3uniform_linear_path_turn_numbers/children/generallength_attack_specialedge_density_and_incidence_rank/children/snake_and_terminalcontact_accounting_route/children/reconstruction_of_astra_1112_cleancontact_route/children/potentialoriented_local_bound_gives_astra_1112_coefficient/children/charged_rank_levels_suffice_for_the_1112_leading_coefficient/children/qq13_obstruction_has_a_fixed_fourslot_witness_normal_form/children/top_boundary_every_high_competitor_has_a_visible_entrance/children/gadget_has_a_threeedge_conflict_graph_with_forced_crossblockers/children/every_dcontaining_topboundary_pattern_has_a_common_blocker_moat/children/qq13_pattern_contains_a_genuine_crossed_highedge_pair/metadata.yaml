@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "6c5e6d34ff85831ccc529c1e49791d1f7b89f9fe961a0bf1eb721a82e79f6987"
+created_at: "2026-09-24T05:12:59.421278+00:00"
+id: "qq13_pattern_contains_a_genuine_crossed_highedge_pair"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000451"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9e7fb5e8-0934-4cec-8441-9d64718d94d2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:49.699528+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "9e7fb5e8-0934-4cec-8441-9d64718d94d2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:49.699528+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "every_dcontaining_topboundary_pattern_has_a_common_blocker_moat"
+position: 0
+research_interface:
+  consequence: "All four top-boundary slot patterns share one invariant: a pair of rank-(q+1) high edges cross the universal central gate in opposite directions. The remaining proof can ignore the missing-slot pattern and attack one abstract crossed pair."
+  consumer:
+    - "q,(q+1)^3 top-boundary elimination"
+    - "Astra 11/12 route"
+  given:
+    - "d22fb281de15 unified d-pattern moat"
+    - "4b2eb2497cf0 no a-closure"
+    - "872bb5f4effc conflict graph"
+  next_need: "Take canonical q-edge entrance rails of the crossed pair. By 21dfd53c201f/e43d175aa905 each rail meets the low edge and the other two high edges. Use the opposite path-order of their fixed P contacts to uncross the two rails into a q-edge x-ending path or a (q+2)-edge high-edge path."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every top-boundary q,(q+1)^3 pattern contains a genuine crossed high-edge pair."
+statement_sha256: "5eed39845cf1e73489fe8763073c10dcf6c94bdbfd238e2aef591a2024fb6b8f"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every top-boundary q,(q+1)^3 pattern contains a genuine crossed high-edge pair"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

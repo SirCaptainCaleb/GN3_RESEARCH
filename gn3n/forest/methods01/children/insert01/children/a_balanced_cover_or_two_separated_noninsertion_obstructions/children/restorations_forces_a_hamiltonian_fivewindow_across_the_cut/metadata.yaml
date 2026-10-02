@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "89b7563bde03676a997dd8b45f45a5012dbf04bc63b92bed0111e7340246c2a2"
+created_at: "2026-09-27T20:46:12.081942+00:00"
+id: "restorations_forces_a_hamiltonian_fivewindow_across_the_cut"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 404
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:53:21.090654+00:00"
+    worker_id: 572
+  last_audit_observation:
+    claim_id: 404
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:53:21.090654+00:00"
+    worker_id: 572
+object_type: "research"
+origin_worker_id: 697
+parent_id: "a_balanced_cover_or_two_separated_noninsertion_obstructions"
+position: 2
+research_interface:
+  consumer: "all-equal three-cover transport; balanced-cover route; defect-span bridge"
+  given: "the no-balanced-restoration branch for a Hamilton path on all but one vertex of an even-order support"
+  need: "splice the bounded five-window into the two outer inherited path pieces, or exploit its complement through minimum-counterexample two-coverability"
+  produces: "a Hamiltonian five-vertex bridge centered on the unique central cut, with an explicit inherited-order path whenever the opposite window is non-Hamiltonian"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Failure of both central balanced restorations forces a Hamiltonian five-window across the cut"
+statement_sha256: "5a57b5190b3f64b473bc9880fb5d2074177798dc2d105bd68360f0ca7bdfb5f0"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Failure of both central balanced restorations forces a Hamiltonian five-window across the cut"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:53:21.090654+00:00"
+version: 7

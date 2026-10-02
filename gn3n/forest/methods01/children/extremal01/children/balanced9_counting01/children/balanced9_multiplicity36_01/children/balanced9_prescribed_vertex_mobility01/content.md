@@ -6,7 +6,7 @@ Let H be a boundary tournament on nine vertices. For every vertex v, at least si
 
 ## Body
 
-Fix a vertex v. For each w!=v, the fixed pair {v,w} has seven exterior vertices. By 1000615 their two orientation classes yield at least C(3,2)+C(4,2)=9 same-class exterior pairs, hence at least nine Hamiltonian four-sets containing {v,w}. Summing over the eight choices of w gives at least 72 incidences between w and Hamiltonian four-sets containing v. Each such four-set contains exactly three choices of w besides v, so at least 24 Hamiltonian four-sets contain v.
+Fix a vertex v. For each w!=v, the fixed pair {v,w} has seven exterior vertices. By orientation_classes_are_hamiltonian_fourextension_cliques their two orientation classes yield at least C(3,2)+C(4,2)=9 same-class exterior pairs, hence at least nine Hamiltonian four-sets containing {v,w}. Summing over the eight choices of w gives at least 72 incidences between w and Hamiltonian four-sets containing v. Each such four-set contains exactly three choices of w besides v, so at least 24 Hamiltonian four-sets contain v.
 
 Now work on the eight-vertex set V-v. Count incidences (F,E) with E a six-set and F a Hamiltonian five-set contained in E. There are C(8,6)=28 six-sets and each contains at least four Hamiltonian five-subsets by smallset01, giving at least 112 incidences. Every five-set lies in exactly three six-sets, so at least ceil(112/3)=38 five-subsets of V-v are Hamiltonian. Complementation identifies the 56 four-subsets containing v with the 56 five-subsets of V-v. Inclusion-exclusion therefore gives at least 24+38-56=6 balanced 4|5 partitions with v on the four-side.
 

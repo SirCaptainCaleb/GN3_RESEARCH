@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "22396e3f5c94a293aeb688517b200b235b73268f3f2070db397695c054a0b34b"
+created_at: "2026-09-28T16:17:13.717374+00:00"
+id: "at_a_minimumside_endpoint_is_an_exceptional_cyclic_fourkernel"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "My proof incorrectly identifies four orientations with the exceptional cyclic K4 by cyclically rotating ordered triples. definitions01 explicitly forbids cyclic rotation without checking the new triple. The theorem should not be used."
+  audit_request_recorded_at: "2026-09-28T16:22:05.386975+00:00"
+  audit_resolution:
+    claim_id: 195
+    detail: "The displayed four triples do not force the claimed cyclic four-vertex type."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:19:02.6061+00:00"
+    worker_id: 703
+  audit_resolution_before_repair: null
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 195
+    detail: "The displayed four triples do not force the claimed cyclic four-vertex type."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:19:02.6061+00:00"
+    worker_id: 703
+  last_failure:
+    reason: "The displayed four triples do not force the claimed cyclic four-vertex type."
+    recorded_at: "2026-09-28T20:19:02.6061+00:00"
+  repair_attempt_count: 3
+  repair_reason: "Repeated reconstruction confirms the proof gap is structural: the four displayed tight triples on X={b,a,y,z} do not determine the full four-vertex boundary tournament and therefore do not force the exceptional cyclic non-Hamiltonian type. The certified local classification yields a Hamiltonian/cyclic/matching-block trichotomy; collapsing this to the cyclic branch would require new mathematics. The statement is not known false, so retain REPAIR."
+  repair_requested_at: "2026-09-28T20:10:57.622193+00:00"
+object_type: "research"
+origin_worker_id: 700
+parent_id: "at_a_minimumside_endpoint_forces_a_reversed_endpoint_edge"
+position: 1
+research_interface:
+  consumer: "global minimum-side normalization; endpoint transport / defect compression; cyclic-kernel closure"
+  given: "the support-compatible internal-restoration branch after deleting an endpoint of a globally minimum deletion side"
+  produces: "the exceptional cyclic four-kernel; contradiction for mu<=4, synchronized fixed-complement deletion family for mu=5, and the standard radius-two stable cyclic-kernel frontier for mu>=6"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Internal restoration at a minimum-side endpoint is an exceptional cyclic four-kernel."
+statement_sha256: "701ef34741f69b35ad94432f718b6633fa0b8e50aa1788629a86daee45eab7f4"
+substantive_worker_ids:
+  - 700
+support_reason: "The displayed four triples do not force the claimed cyclic four-vertex type."
+support_status: "blocked"
+title: "Internal restoration at a minimum-side endpoint is an exceptional cyclic four-kernel"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:19:02.6061+00:00"
+version: 14

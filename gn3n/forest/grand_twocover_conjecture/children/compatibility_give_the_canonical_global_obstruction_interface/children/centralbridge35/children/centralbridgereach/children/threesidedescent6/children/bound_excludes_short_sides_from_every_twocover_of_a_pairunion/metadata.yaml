@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 65
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c588f117090bf7f5e298c0d6ac711a4ac9338fee96425992ddbd42306ddad349"
+created_at: "2026-09-28T17:14:40.24258+00:00"
+id: "bound_excludes_short_sides_from_every_twocover_of_a_pairunion"
+last_elevation_revision: 0
+last_substantive_worker_id: 626
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 258
+    detail: "Independent check passes. Any pair-union two-cover with a side of order at most three can be converted to 3|(a+b-3); combining its potential cost with threesidedescent6 contradicts c>(a-3)(b-3)+4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 258
+    detail: "Independent check passes. Any pair-union two-cover with a side of order at most three can be converted to 3|(a+b-3); combining its potential cost with threesidedescent6 contradicts c>(a-3)(b-3)+4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+object_type: "research"
+origin_worker_id: 626
+parent_id: "threesidedescent6"
+position: 1
+research_interface:
+  consumer: "Non-singleton quadratic minima; generalization of the nine-set 4|5 rigidity argument."
+  given: "A trapped component-minimum three-cover with orders a,b,c and c>(a-3)(b-3)+4."
+  need: "Find a structural producer of a two-cover with a side at most three, or a Hamiltonian subset missing at most three vertices, in a pair-union satisfying the inequality."
+  produces: "Every two-cover of the pair-union A union B has both sides at least four; long Hamiltonian subsets of that union are excluded."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A product bound excludes short sides from every two-cover of a pair-union."
+statement_sha256: "31ec0a5a454b057fdccdad56deb20f70589b7e1ae2111f8524b86e4af48b7224"
+substantive_worker_ids:
+  - 626
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A product bound excludes short sides from every two-cover of a pair-union"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T00:59:52.705871+00:00"
+version: 6

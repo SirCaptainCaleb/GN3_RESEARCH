@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "5b4f9ef1178449a95616abad58d008b39dafb3c7943c90037d5682a7c150fd22"
+created_at: "2026-09-26T08:30:49.556184+00:00"
+id: "threecovers_forbid_hamiltonian_endpoint_transfer"
+last_elevation_revision: 0
+last_substantive_worker_id: 682
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 64
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T08:35:08.658799+00:00"
+    worker_id: 643
+  last_audit_observation:
+    claim_id: 64
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T08:35:08.658799+00:00"
+    worker_id: 643
+object_type: "research"
+origin_worker_id: 682
+parent_id: "astraidea003"
+position: 0
+research_interface:
+  consumer: "Astra-003 quadratic descent"
+  given: "a Phi-minimal trapped three-cover and a pair of components whose orders differ by at least two"
+  need: "combine the two endpoint obstructions with small-set structure or path-order forcing"
+  produces: "both one-endpoint enlargements of the smaller component are non-Hamiltonian"
+research_level: "lemma"
+semantic_container_text: "Quadratic-minimal endpoint-transfer blockade in the pairwise-repartition route: improving Hamiltonian endpoint transfers are forbidden, forcing size-gap obstructions, lower bounds on small sides, and a bounded menu of insertion or transport failures."
+simplified_statement: "Quadratic-minimal three-covers forbid Hamiltonian endpoint transfer"
+statement_sha256: "a875e3ce84631e6612792726042890f2e284c8da678bf4f8a93885c39b5082ad"
+substantive_worker_ids:
+  - 682
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quadratic-minimal three-covers forbid Hamiltonian endpoint transfer"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:01:56.265656+00:00"
+version: 10

@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b1cab79382f972a5fa99f5f1904b6b899d1c78fbd95df7f69a8a41a2f67cc598"
+created_at: "2026-09-28T17:11:49.630273+00:00"
+id: "beside_a_path_of_order_at_least_six_admit_a_twomove_descent"
+last_elevation_revision: 0
+last_substantive_worker_id: 626
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 258
+    detail: "Independent check passes. The first 4|4 to 5|3 move costs 2, while threesidedescent6 then yields net drops 2m-10 or 4m-22, both positive for m>=6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 258
+    detail: "Independent check passes. The first 4|4 to 5|3 move costs 2, while threesidedescent6 then yields net drops 2m-10 or 4m-22, both positive for m>=6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+object_type: "research"
+origin_worker_id: 626
+parent_id: "threesidedescent6"
+position: 0
+research_interface:
+  consumer: "Non-singleton quadratic minima; exclusion of simultaneous four-vertex sides."
+  given: "Any spanning three-cover with two four-vertex paths and a third of order at least six."
+  need: "Extend temporary 5|3 replacements to other non-singleton extremal configurations; compare every final state to the original potential."
+  produces: "An explicit two-move strict descent despite a potential increase of two at the intermediate state."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two four-vertex paths beside a path of order at least six admit a two-move descent."
+statement_sha256: "2c3b3d4edfac503505200e72c8ded4fe9cfe0b82b35d968fd5b2a5b54290858f"
+substantive_worker_ids:
+  - 626
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two four-vertex paths beside a path of order at least six admit a two-move descent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T00:57:50.268905+00:00"
+version: 7

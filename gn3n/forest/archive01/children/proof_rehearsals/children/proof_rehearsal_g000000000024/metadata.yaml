@@ -20,8 +20,8 @@ metadata:
   details:
     details: "Proof rehearsal through Astra's ideas: local balance improvement gives strict quadratic descent to an equitable three-cover; no certified theorem currently forces escape from the equitable state. The newly proved reduction is 257497a6d724."
     first_unsupported_inference: "From an arbitrary equitable spanning three-cover, a finite sequence of legal pairwise repartitions must reach a two-cover. Equivalently for the Astra-002/003 route, after local quadratic balancing removes all component-size imbalance, one still needs a general order/orientation mechanism that escapes every equitable three-cover."
-    gap_id: "1000109"
-  gap_id: "1000109"
+    gap_id: "improvement_drives_quadratic_descent_to_equitable_threecovers"
+  gap_id: "improvement_drives_quadratic_descent_to_equitable_threecovers"
   generation: 24
   opened_revision: 2611
   reported_outcome: "partial"

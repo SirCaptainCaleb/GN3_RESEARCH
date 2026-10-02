@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1e93bd5d6212f21587628c0c110719025127a7c1689cba1748524284afb62733"
+created_at: "2026-09-28T02:39:48.862851+00:00"
+id: "gives_strict_descent_or_a_common_endpointextension_fourcore"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 428
+    detail: "Independent check succeeds. If either endpoint enlargement X+p_1 or X+p_m is Hamiltonian, replacing sizes (5,m) by (6,m-1) drops Phi by 2m-12>0. Otherwise each six-set X+e is non-Hamiltonian; four-of-six gives at least four Hamiltonian five-deletions, one being deletion of e itself, so at least three x in X work for each endpoint. Two 3-subsets of a 5-set intersect, yielding a common x."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:42:52.894419+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 428
+    detail: "Independent check succeeds. If either endpoint enlargement X+p_1 or X+p_m is Hamiltonian, replacing sizes (5,m) by (6,m-1) drops Phi by 2m-12>0. Otherwise each six-set X+e is non-Hamiltonian; four-of-six gives at least four Hamiltonian five-deletions, one being deletion of e itself, so at least three x in X work for each endpoint. Two 3-subsets of a 5-set intersect, yielding a common x."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:42:52.894419+00:00"
+    worker_id: 652
+  noncomputational: true
+  scale_free: true
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T23:58:16.939093+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 694
+parent_id: "astra003fivecommoncore"
+position: 0
+research_interface:
+  consumer: "deletion-state central-five branch; five-side no-trapping; endpoint transport"
+  given: "any spanning three-cover with a five-vertex path beside another path of order at least seven"
+  need: "consume the common endpoint-extension core via opposite-end replacement / transport; apply directly to central-five deletion bridges"
+  produces: "strict quadratic descent or a four-vertex subset of the five-side that extends Hamiltonianly with either endpoint of the long path"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A five-side beside a path of order at least seven gives strict descent or a common endpoint-extension four-core"
+statement_sha256: "747ec2fb093cc6cfc34061cbdbe04c3fbf8a1eafb915c02448e20e9a9d702966"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A five-side beside a path of order at least seven gives strict descent or a common endpoint-extension four-core"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T23:58:16.939093+00:00"
+version: 6

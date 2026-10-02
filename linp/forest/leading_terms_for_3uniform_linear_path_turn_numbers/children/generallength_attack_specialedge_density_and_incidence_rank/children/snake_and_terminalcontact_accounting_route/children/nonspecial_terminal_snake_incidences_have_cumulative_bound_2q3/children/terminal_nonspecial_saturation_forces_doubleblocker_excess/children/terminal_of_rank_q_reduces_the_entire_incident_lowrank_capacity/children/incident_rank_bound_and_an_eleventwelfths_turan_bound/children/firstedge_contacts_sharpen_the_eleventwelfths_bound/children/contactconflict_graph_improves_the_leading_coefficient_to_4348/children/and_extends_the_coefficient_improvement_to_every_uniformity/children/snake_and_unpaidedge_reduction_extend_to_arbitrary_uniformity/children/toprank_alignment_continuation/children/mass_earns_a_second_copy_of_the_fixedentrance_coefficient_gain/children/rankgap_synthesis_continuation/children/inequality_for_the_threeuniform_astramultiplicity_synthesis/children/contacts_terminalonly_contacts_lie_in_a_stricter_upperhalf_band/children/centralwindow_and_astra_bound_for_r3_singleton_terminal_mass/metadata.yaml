@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "28ffe1d56b163e03b7a754318cb73e85ccc231de98aff59484fdaf6cd6c1f692"
+created_at: "2026-09-24T13:22:09.347096+00:00"
+id: "centralwindow_and_astra_bound_for_r3_singleton_terminal_mass"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000713"
+lifecycle_status: "retained"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_failure:
+    reason: "The misaligned statement omits the necessary max(0,·) on the central-window term. When p>=2q-1, the certified central-window theorem says there are no single contacts, so t(v)-X_v=0 is possible, while 4q-2p-3 is negative. Thus t(v)-X_v <= min{gamma(q),4q-2p-3} is false as stated. The correct bound is min{gamma(q), max(0,4q-2p-3)}. The asymptotic 16/21 crossover remains the same in the positive regime."
+    recorded_at: "2026-09-24T21:38:57.927125+00:00"
+object_type: "theorem"
+origin_worker_id: 223
+parent_id: "contacts_terminalonly_contacts_lie_in_a_stricter_upperhalf_band"
+position: 0
+research_interface:
+  consequence: "For misaligned vertices the true available local cost is min(gamma(q),4q-2p-3), not gamma(q) alone. Rank ratios below 16/21 are substantially cheaper than Astra; only the near-top rank regime remains dangerous."
+  consumer:
+    - "r=3 post-43/48 strengthening"
+    - "rank-ratio dichotomy"
+    - "exact local master inequality"
+  given:
+    - "r=3 exact Astra terminal-rank transfer"
+    - "path-relative central-window packing"
+    - "chosen-path excess contact multiplicity"
+  next_need: "Concentrate exclusively on q/p>16/21, especially q=p-1,p-2. In that regime use the singleton-contact central windows and opposite-terminal potential orientation to force additional double contacts or a constant charged singleton degree."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "47a40ef071f4a5c2fa9cde75fd8a1c6661e8361044b11836598bbbbef24b0514"
+substantive_worker_ids:
+  - 223
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Hybrid central-window and Astra bound for r=3 singleton terminal mass"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:19:47.803651+00:00"
+version: 12

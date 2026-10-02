@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 45
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "8dcb18a7ed6b4128fda8400bd9cbb1667a0fd322308180b620061b7c26fb1a3a"
+created_at: "2026-09-25T12:05:03.453554+00:00"
+id: "states_require_order_at_least_201_over_88_times_the_host_rank"
+last_elevation_revision: null
+last_substantive_worker_id: 211
+legacy_id: "1000949"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: 28f6933b98de gives k>=(25/88-o(1))p omitted entrances. A p-edge linear 3-path has 2p+1 vertices; terminal-retained entrances lie outside it and are pairwise distinct by linearity. Hence n>=2p+1+k=(201/88-o(1))p."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: 28f6933b98de gives k>=(25/88-o(1))p omitted entrances. A p-edge linear 3-path has 2p+1 vertices; terminal-retained entrances lie outside it and are pairwise distinct by linearity. Hence n>=2p+1+k=(201/88-o(1))p."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  last_local_audit_repair:
+    reason: "Localized audit terminology repair: replace prohibited p-center and legacy potential/source-potential wording by canonical vertex/rank wording; mathematics unchanged."
+    recorded_at: "2026-09-25T18:18:57.728244+00:00"
+    worker_id: "5f9d4036-eb9a-492f-a8ab-c8f7f2f131d3"
+object_type: "lemma"
+origin_worker_id: 189
+parent_id: "nearminimal_source_mass_forces_fiveelevenths_terminal_retention"
+position: 0
+research_interface:
+  consequence: "The updated terminal-retention threshold improves the ambient-order barrier from 127/56 to 201/88."
+  consumer:
+    - "small-order post-43/48 exclusion"
+    - "finite-order stability"
+    - "global extremal classification"
+  given:
+    - "28f6933b98de five-elevenths terminal-retention threshold"
+    - "maximum p-edge path has 2p+1 vertices"
+    - "linearity"
+  next_need: "Use the 201/88 split in global optimization: below this order/potential ratio, locally cheap centers are impossible; above it, exploit the large omitted-source packet and two-sided reciprocal-lens structure."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Near-minimal switching states require order at least 201 over 88 times the host rank."
+statement_sha256: "9b407b466e4723e0f18fbb4907fb3fabfe3e055bf03dd47dab07a0c439ad71f5"
+substantive_worker_ids:
+  - 189
+  - 211
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Near-minimal switching states require order at least 201 over 88 times the host rank"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 7

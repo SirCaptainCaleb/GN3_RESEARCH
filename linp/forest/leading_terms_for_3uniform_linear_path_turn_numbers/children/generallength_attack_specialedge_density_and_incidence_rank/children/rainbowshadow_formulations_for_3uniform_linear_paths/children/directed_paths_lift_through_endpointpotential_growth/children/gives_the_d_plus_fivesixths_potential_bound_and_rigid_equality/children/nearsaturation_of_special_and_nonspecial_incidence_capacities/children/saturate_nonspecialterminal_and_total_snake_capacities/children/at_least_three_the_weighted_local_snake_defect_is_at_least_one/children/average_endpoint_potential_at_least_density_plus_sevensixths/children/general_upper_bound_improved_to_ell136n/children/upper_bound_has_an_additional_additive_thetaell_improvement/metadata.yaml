@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a90e49b3a82f585c80f8a6a5f13df0090f8c9fe840724ad7e2e9dd85b408fe97"
+created_at: "2026-09-24T03:27:27.926023+00:00"
+id: "upper_bound_has_an_additional_additive_thetaell_improvement"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1001000"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "2607f959-190f-4bbb-ab05-8c3b18d30426"
+    detail: "The minimal-counterexample deletion step forces delta(H)>=ell-2. The endpoint-potential floor then gives phi>=3. In the no-Type-A case stability plus linear-neighborhood size yields eta n>=c_ell; with Type A present the minimum Type-A potential lemma yields the same bound. Combining with phi<=ell-1 gives the stated additive c_ell improvement."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:32:22.599+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "2607f959-190f-4bbb-ab05-8c3b18d30426"
+    detail: "The minimal-counterexample deletion step forces delta(H)>=ell-2. The endpoint-potential floor then gives phi>=3. In the no-Type-A case stability plus linear-neighborhood size yields eta n>=c_ell; with Type A present the minimum Type-A potential lemma yields the same bound. Combining with phi<=ell-1 gives the stated additive c_ell improvement."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:32:22.599+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "theorem"
+origin_worker_id: 225
+parent_id: "general_upper_bound_improved_to_ell136n"
+position: 0
+research_interface:
+  consequence: "Strengthens (ell-13/6)n by an additive c_ell asymptotic to ell/6."
+  consumer:
+    - "general Turan upper bound"
+    - "finite equality induction"
+  given:
+    - "7cae1cb001ac dense potential floor"
+    - "92cce33dd917 near-floor stability"
+    - "a3bf58adee0d first Type-A level exceptional-set bound"
+    - "6a4d9b21f0c3 endpoint-potential floor"
+  next_need: "To alter the leading coefficient, replace the first-level exceptional-set lower bound |R|>=Theta(ell) by |R|>=Omega(n), or obtain a local weighted defect growing linearly with phi."
+  role: "quantitative refinement of the new general upper bound"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The (ell-13/6)n upper bound has an additional additive Theta(ell) improvement."
+statement_sha256: "b69b84c9149818128eab2ddcc62a761daa5d203d3460feb4a01b89c43c8743b6"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The (ell-13/6)n upper bound has an additional additive Theta(ell) improvement"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

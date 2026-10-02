@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b52b752a0953be0034884fa43f01904668242e6d7bee357f5ec57e503e2d735a"
+created_at: "2026-09-27T17:33:05.765367+00:00"
+id: "set_h_vertices_larger_forces_a_complementimbalance_penalty"
+last_elevation_revision: 0
+last_substantive_worker_id: 616
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 370
+    detail: "Clarified the title so it does not imply set containment X subset F; mathematical statement and proof unchanged."
+    math_version: 1
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T17:35:56.353552+00:00"
+    worker_id: 627
+  last_audit_observation:
+    claim_id: 370
+    detail: "Clarified the title so it does not imply set containment X subset F; mathematical statement and proof unchanged."
+    math_version: 1
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T17:35:56.353552+00:00"
+    worker_id: 627
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Clarify that the Hamiltonian set F need only have order c+h; it need not contain the original support X. Mathematical statement and proof unchanged."
+    recorded_at: "2026-09-27T17:35:43.205423+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 627
+object_type: "research"
+origin_worker_id: 616
+parent_id: "quadraticpotential01"
+position: 1
+research_interface:
+  consumer: "all quadratic-potential descent, support-enlargement, maximin, and complement-compression routes"
+  given: "a globally quadratic-minimal spanning three-cover and a Hamiltonian support larger by h than one displayed component, with a two-component cover of the complement"
+  produces: "the general complement-imbalance penalty delta^2 >= d^2+h(2s-4c-3h)"
+research_level: "abstraction"
+semantic_container_text: "Hamiltonian-enlargement complement-imbalance route: enlarging one component constrains every complementary two-cover; in the sharp half-order shell this yields the one-third minimum-side bound, its equality structure, secondary maximin normalization, and the canonical longest-path complement profile along the boundary case."
+simplified_statement: "Replacing one component by a Hamiltonian set h vertices larger forces a complement-imbalance penalty"
+statement_sha256: "eb342bdaf6282afc93b2fd534644068adb55b05c0c11d920d7c8e024008406d7"
+substantive_worker_ids:
+  - 616
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Replacing one component by a Hamiltonian set h vertices larger forces a complement-imbalance penalty"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:21.804103+00:00"
+version: 8

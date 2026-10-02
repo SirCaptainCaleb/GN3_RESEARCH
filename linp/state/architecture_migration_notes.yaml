@@ -83,53 +83,6 @@
   note_key: "phase1_non_uuid_atlas_prep_2026_09_30"
   phase: "phase_1"
 -
-  created_at: "2026-09-30T16:42:58.549913+00:00"
-  note:
-    atlas_height_policy: "No overrides assigned; ordinary tree ordering left intact."
-    counts:
-      atlas_worthy_simplified_statements_added: 31
-      distinct_fenced_claims: 19
-      existing_simplified_statements_retained: 0
-      failed_objects_observed: 20
-      fence_edges_from_partition: 24
-      live_mathematical_objects_broad: 831
-      nodes_marked_atlas_hidden: 1
-      non_null_atlas_height: 0
-      objects_inspected: 998
-      retired_objects_observed: 2
-      superseded_objects_observed: 44
-      trashed_objects_observed: 87
-    hidden:
-      -
-        id: "scheduler_guidance"
-        reason: "administrative leaf document with no mathematical descendants"
-    integrator_review:
-      - "Legacy Atlas references retained supported object 1000173; no simplified statement was added because it is not active."
-      - "Legacy Atlas references retained failed/blocked object 1000796; it should be omitted by derived lifecycle/audit filtering."
-      - "There are 44 superseded targets in this partition although lifecycle_status itself does not say superseded; derived Atlas must honor supersedes edges."
-      - "There are 24 fence edges affecting 19 claims; fence nodes should normally be omitted while their target claims remain visible and marked obstructed."
-      - "Toolkit organizational parents remain unhidden so certified mathematical descendants stay navigable."
-    owned_roots:
-      - "1000488"
-      - "1000846"
-      - "methods01"
-      - "scheduler_guidance"
-    partition: 4
-    selection_policy: "Backfilled concise statements for current navigation-worthy results: active objects represented in the legacy Atlas (excluding noncurrent entries), the standalone incidence-rank subtree, and certified reusable toolkit results. Did not blanket-surface hundreds of proof-development lemmas."
-    status: "complete"
-    verification:
-      atlas_legacy_snapshots_unchanged: true
-      control_center_or_wrappers_changed: false
-      edges_digest: "f3c247ab6995122733fe3fed2f15f112"
-      edges_unchanged: true
-      legacy_snapshot_digest: "70dacccf0e35a96d086e84e7add71eac"
-      manual_atlas_digest: "a33b2b3f9c80d8a53ca3ee6cb9d827ef"
-      manual_atlas_unchanged: true
-      object_ids_parent_ids_tree_paths_unchanged: true
-      partition_structure_digest: "87145d1b3aa444c1b26ff7196f2f5ee9"
-  note_key: "atlas_transition_partition4_2026_09_30"
-  phase: "atlas_content_transition"
--
   created_at: "2026-09-30T15:43:11.721596+00:00"
   note:
     canonical_type: "bigint/bigint[]"
@@ -425,290 +378,6 @@
   note_key: "object_id_migration_prep_type_b_2026_09_30"
   phase: "object_id_migration_preparation"
 -
-  created_at: "2026-09-30T16:41:06.144278+00:00"
-  note:
-    ambiguities:
-      - "1000266 is a refuted conjecture but has useful descendant lemmas; do not subtree-hide it. Final renderer should use fence/lifecycle semantics rather than atlas_hidden."
-      - "1000788 strengthens 1000844 and both are dedicated fence results; both were intentionally left without simplified_statement."
-      - "Strategy/proposal nodes 1000671, 1000341, 1000712, 1000761, and 1000485 are current mathematical routes and received concise statements despite not being proved results."
-    counts:
-      atlas_height_nonnull: 0
-      atlas_hidden_true: 0
-      existing_simplified_retained: 0
-      fence_relationships_relevant: 3
-      live_mathematical_objects: 19
-      objects_inspected: 19
-      retired_failed_trashed_observed: 0
-      simplified_statement_added: 17
-      superseded_observed: 0
-    fence_cases:
-      -
-        fence_result: "1000788"
-        note: "Dedicated equal-potential rainbow-P4 counterexample; leave atlas_hidden=false and let derived renderer omit the fence result while marking the claim obstructed."
-        obstructed_claim: "1000499"
-      -
-        fence_result: "1000844"
-        note: "Dedicated ascending-terminal rainbow-P4 counterexample; leave atlas_hidden=false and let derived renderer omit the fence result while marking the claim obstructed."
-        obstructed_claim: "1000478"
-      -
-        fence_result: "1000876"
-        note: "Fence source lies outside partition 1; partition-owned refuted conjecture remains structurally visible because it has useful descendants and received a simplified statement."
-        obstructed_claim: "1000266"
-    ordering: "No atlas_height overrides assigned; ordinary tree order retained."
-    partition: 1
-    project: "linp"
-    scope: "Top-level roots assigned by bigint-safe hash partition rule; Atlas content backfill only; no cutover."
-    structural_hiding: "No atlas_hidden flags assigned; no owned subtree was wholly archival/administrative/obsolete."
-    top_level_roots:
-      - "1000671"
-      - "1000788"
-      - "1000804"
-      - "1000844"
-    writes: "Only objects.simplified_statement was changed on owned objects; atlas_hidden and atlas_height remained unchanged."
-  note_key: "atlas_transition_partition_1_2026_09_30"
-  phase: "atlas_content_transition"
--
-  created_at: "2026-09-30T16:43:21.694118+00:00"
-  note:
-    ambiguities:
-      - "1000145 is lifecycle-active but explicitly refuted by fences; keep structurally visible and let the derived Atlas mark it obstructed rather than atlas-hide its useful descendants."
-      - "1000403 is a proved conditional lemma with a fence from 1000540 whose metadata says only that its hypothesis is essential; generic 'fence means obstructed claim' rendering may overstate this relation."
-      - "1000525 and 1000104 are lifecycle_status=retained; they received concise statements for provenance but should normally be omitted by lifecycle filtering."
-      - "The four non-mathematical roots were hidden structurally; no mathematical subtree was hidden."
-      - "The two superseded owned objects 1000111 and 1000801 are already trashed and were not otherwise edited."
-    counts:
-      atlas_height_nonnull: 0
-      atlas_hidden_true: 4
-      existing_simplified_retained: 0
-      failed_observed: 0
-      fence_relationships_relevant_to_live_rendering: 7
-      fence_relationships_touching_partition: 9
-      live_active_mathematical_objects: 22
-      nontrashed_mathematical_objects_including_retained: 24
-      objects_inspected: 46
-      retained_observed: 8
-      retired_observed: 0
-      simplified_statement_added: 24
-      superseded_observed: 2
-      trashed_observed: 6
-    fence_cases:
-      -
-        fence_result: "1000129"
-        note: "Counterexample fences a conditional consequence depending on the opposite-end degree bound."
-        obstructed_claim: "1000920"
-      -
-        fence_result: "1000522"
-        note: "Owned counterexample fences an external-partition claim."
-        obstructed_claim: "1000570"
-      -
-        fence_result: "1000525"
-        note: "Retained refuted root fences an external-partition claim; renderer should derive lifecycle and obstruction rather than subtree-hide it."
-        obstructed_claim: "1000516"
-      -
-        fence_result: "1000540"
-        note: "Explicit counterexample refutes the common-last-vertex four-edge spacing conjecture."
-        obstructed_claim: "1000145"
-      -
-        fence_result: "1000540"
-        note: "Metadata says this demonstrates necessity of the splice hypothesis rather than refuting the proved conditional lemma; final integrator should review how generic fence rendering treats this edge."
-        obstructed_claim: "1000403"
-      -
-        fence_result: "1000829"
-        note: "Owned equality-threshold counterexample fences an external-partition claim."
-        obstructed_claim: "1000662"
-      -
-        fence_result: "1001034"
-        note: "External-partition fence also obstructs the owned four-edge spacing conjecture."
-        obstructed_claim: "1000145"
-      -
-        fence_result: "1000801"
-        note: "Source is trashed; normally irrelevant to live Atlas rendering."
-        obstructed_claim: "1001030"
-      -
-        fence_result: "1000801"
-        note: "Source is trashed; normally irrelevant to live Atlas rendering."
-        obstructed_claim: "1001105"
-    ordering: "No atlas_height overrides assigned; ordinary tree order retained."
-    partition: 3
-    project: "linp"
-    scope: "Top-level roots assigned by bigint-safe hash partition rule; Atlas content backfill only; no cutover."
-    structural_hiding:
-      - "archive01: archive/proof-rehearsal subtree"
-      - "project_policy: non-mathematical project policy"
-      - "research_nudges: methodological guidance"
-      - "research_retrospectives: process retrospectives"
-    top_level_roots:
-      - "1000111"
-      - "1000129"
-      - "1000145"
-      - "1000494"
-      - "1000525"
-      - "1000723"
-      - "1000726"
-      - "1000829"
-      - "archive01"
-      - "project_policy"
-      - "research_nudges"
-      - "research_retrospectives"
-    verification:
-      edge_count: 1165
-      edge_hash: "f3c247ab6995122733fe3fed2f15f112"
-      legacy_snapshot_count: 1
-      legacy_snapshot_hash: "126e6c2cf962be29a50d85365dbd6062"
-      manual_atlas_count: 7
-      manual_atlas_hash: "f35d05bfd22cbc05f1e0beac773b33ed"
-      partition_structural_hash: "ad8492720c6b2171d3ebfcf808fecac6"
-      partition_version_hash: "746f135431948792f30eb111154583d9"
-    writes: "Only objects.simplified_statement and objects.atlas_hidden were changed on owned objects; atlas_height remained NULL everywhere in the partition."
-  note_key: "atlas_transition_partition_3_2026_09_30"
-  phase: "atlas_content_transition"
--
-  created_at: "2026-09-30T17:27:20.511515+00:00"
-  note:
-    counts:
-      atlas_hidden_true: 1
-      deliberately_left_null_result_like: 0
-      lemma_level_with_simplified: 24
-      live_lemma_level: 24
-      live_theorem_level: 2
-      newly_added_this_pass: 4
-      non_null_atlas_height: 0
-      theorem_level_with_simplified: 2
-      total_live_objects: 35
-      total_simplified_after_pass: 30
-    cutover_performed: false
-    new_simplified_ids:
-      - "1000578"
-      - "1000846"
-      - "1000518"
-      - "1000585"
-    partition: 4
-    partition_rule: "depth 1-2: own id; depth >=3: third tree_path component; normalized hash mod 4 = 3"
-    remaining_live_nulls:
-      -
-        category: "organizational research program"
-        id: "1000230"
-      -
-        category: "proof rehearsal"
-        id: "1000272"
-      -
-        category: "organizational toolkit root"
-        id: "methods01"
-      -
-        category: "experimental porting map / proposal scaffold"
-        id: "1000849"
-      -
-        category: "administrative guidance document"
-        id: "scheduler_guidance"
-    required_second_pass_audit: "No live result-like object matching theorem/lemma/result/corollary/counterexample/reduction/literature or proved/conjecture/evidence criteria remains with simplified_statement NULL."
-    status: "complete"
-  note_key: "atlas_transition_partition4_correction_2026_09_30"
-  phase: "atlas_content_transition_correction"
--
-  created_at: "2026-09-30T17:27:57.39548+00:00"
-  note:
-    counts:
-      atlas_height_nonnull: 0
-      atlas_hidden_true: 4
-      deliberate_result_like_nulls: 2
-      lemma_with_simplified_statement: 46
-      live_lemma_level: 47
-      live_objects: 70
-      live_theorem_level: 7
-      newly_added_this_correction: 28
-      simplified_statement_total: 55
-      theorem_with_simplified_statement: 7
-    deliberate_exclusions:
-      -
-        id: "1000462"
-        reason: "Retained obsolete unsupported 4/7 rank-floor proposal whose sole derivation used a refuted premise; it carries no currently supported mathematical claim."
-      -
-        id: "1000114"
-        reason: "Curated prize-shelf/container summarizing other lower-bound results rather than an independent mathematical statement."
-    note: "Second pass intentionally broadened mathematical metadata coverage. No derived Atlas cutover performed; no atlas_height changes; no additional atlas_hidden flags."
-    partition: 3
-    partition_rule: "depth 1-2 anchor=self id; depth>=3 anchor=third tree_path component; bucket 2"
-    phase: "atlas_content_transition_correction"
-    project: "linp"
-    representative_additions:
-      - "1000410: density-beating Boolean systems reduce to non-Hamiltonian exact one-bit cores"
-      - "1001143: near-Steiner classification for induced Boolean Schur systems"
-      - "1000002: set-sequential paths close the critical induced-Boolean route except lengths 3 and 7"
-      - "1001027: corrected two-bit carrier lift lower bounds longest paths"
-      - "1000960: exact clique-cover characterization of linear triple-system intersection graphs"
-      - "1000586: incidence-rank spectral identity"
-      - "1001133: weighted incidence-rank inequality"
-      - "1000071: intersection-graph structure forces many edge-disjoint linear cycles"
-  note_key: "atlas_transition_partition_3_correction_2026_09_30"
-  phase: "atlas_content_transition"
--
-  created_at: "2026-09-30T17:28:06.057876+00:00"
-  note:
-    counts:
-      atlas_height_nonnull: 0
-      atlas_hidden_true: 0
-      lemma_level_with_simplified: 42
-      live_lemma_level: 43
-      live_null_after_pass: 6
-      live_objects: 63
-      live_theorem_level: 8
-      newly_added_this_pass: 34
-      result_like_deliberately_left_null: 1
-      theorem_level_with_simplified: 8
-      total_simplified_after_pass: 57
-    cutover: "Not performed."
-    deliberate_nulls:
-      -
-        category: "retracted obsolete mathematical artifact"
-        id: "1000826"
-        reason: "Explicitly retracted incorrect MPTS calculation; retained only as a correction marker and should not be surfaced as current mathematics."
-      -
-        category: "organizational route container"
-        id: "1000953"
-        reason: "General lower-bound program container; substantive child mathematics is individually summarized."
-      -
-        category: "proof rehearsal"
-        id: "1001172"
-        reason: "Proof-rehearsal artifact, not an independent current mathematical result."
-      -
-        category: "proof rehearsal"
-        id: "1001174"
-        reason: "Proof-rehearsal artifact, not an independent current mathematical result."
-      -
-        category: "toolkit container"
-        id: "1000750"
-        reason: "Container for external toolkit material rather than an independent mathematical theorem or lemma."
-      -
-        category: "research retrospective/guidance"
-        id: "1000317"
-        reason: "Retrospective guidance artifact rather than mathematical content."
-    partition: 1
-    partition_rule: "depth 1-2 anchor=self id; depth >=3 anchor=third tree_path component; normalized hash modulo 4"
-    policy: "Correction pass favors inclusion of live meaningful mathematics; compactness is deferred to derived-Atlas rendering and lifecycle/hierarchy policy."
-    project: "linp"
-    samples_added:
-      -
-        id: "1000008"
-        title: "Edge-transitive Steiner systems have a sharp deletion barrier"
-      -
-        id: "1000119"
-        title: "STS doubling cannot beat the one-third leading coefficient"
-      -
-        id: "1000500"
-        title: "Almost-spanning hypertrees give a 1/3 ceiling for Steiner-system lower constructions"
-      -
-        id: "1000752"
-        title: "Density above ell/3 forces the path weight in the binary incidence code"
-      -
-        id: "1000955"
-        title: "PG(3,2) gives a 7/3 lower bound for P7"
-      -
-        id: "1001096"
-        title: "Human proof of the exact six-block deletion threshold in cyclic STS(13)"
-    writes: "Only objects.simplified_statement was changed on owned objects; atlas_hidden and atlas_height were not changed."
-  note_key: "atlas_transition_partition_1_correction_2026_09_30"
-  phase: "atlas_content_transition_correction"
--
   created_at: "2026-09-30T17:32:09.326188+00:00"
   note:
     corrections:
@@ -759,3 +428,334 @@
     summary: "Manual Atlas storage was retired; atlas() now derives from the live reasoning tree and Atlas object metadata."
   note_key: "derived_atlas_cutover_2026_09_30"
   phase: "derived_atlas_cutover"
+-
+  created_at: "2026-09-30T17:27:57.39548+00:00"
+  note:
+    counts:
+      atlas_height_nonnull: 0
+      atlas_hidden_true: 4
+      deliberate_result_like_nulls: 2
+      lemma_with_simplified_statement: 46
+      live_lemma_level: 47
+      live_objects: 70
+      live_theorem_level: 7
+      newly_added_this_correction: 28
+      simplified_statement_total: 55
+      theorem_with_simplified_statement: 7
+    deliberate_exclusions:
+      -
+        id: "proposed_47_minimumdegree_floor_for_ascending_edge_rank"
+        reason: "Retained obsolete unsupported 4/7 rank-floor proposal whose sole derivation used a refuted premise; it carries no currently supported mathematical claim."
+      -
+        id: "prize_shelf_exceptional_lowerbound_constructions"
+        reason: "Curated prize-shelf/container summarizing other lower-bound results rather than an independent mathematical statement."
+    note: "Second pass intentionally broadened mathematical metadata coverage. No derived Atlas cutover performed; no atlas_height changes; no additional atlas_hidden flags."
+    partition: 3
+    partition_rule: "depth 1-2 anchor=self id; depth>=3 anchor=third tree_path component; bucket 2"
+    phase: "atlas_content_transition_correction"
+    project: "linp"
+    representative_additions:
+      - "1000410: density-beating Boolean systems reduce to non-Hamiltonian exact one-bit cores"
+      - "1001143: near-Steiner classification for induced Boolean Schur systems"
+      - "1000002: set-sequential paths close the critical induced-Boolean route except lengths 3 and 7"
+      - "1001027: corrected two-bit carrier lift lower bounds longest paths"
+      - "1000960: exact clique-cover characterization of linear triple-system intersection graphs"
+      - "1000586: incidence-rank spectral identity"
+      - "1001133: weighted incidence-rank inequality"
+      - "1000071: intersection-graph structure forces many edge-disjoint linear cycles"
+  note_key: "atlas_transition_partition_3_correction_2026_09_30"
+  phase: "atlas_content_transition"
+-
+  created_at: "2026-09-30T16:42:58.549913+00:00"
+  note:
+    atlas_height_policy: "No overrides assigned; ordinary tree ordering left intact."
+    counts:
+      atlas_worthy_simplified_statements_added: 31
+      distinct_fenced_claims: 19
+      existing_simplified_statements_retained: 0
+      failed_objects_observed: 20
+      fence_edges_from_partition: 24
+      live_mathematical_objects_broad: 831
+      nodes_marked_atlas_hidden: 1
+      non_null_atlas_height: 0
+      objects_inspected: 998
+      retired_objects_observed: 2
+      superseded_objects_observed: 44
+      trashed_objects_observed: 87
+    hidden:
+      -
+        id: "scheduler_guidance"
+        reason: "administrative leaf document with no mathematical descendants"
+    integrator_review:
+      - "Legacy Atlas references retained supported object 1000173; no simplified statement was added because it is not active."
+      - "Legacy Atlas references retained failed/blocked object 1000796; it should be omitted by derived lifecycle/audit filtering."
+      - "There are 44 superseded targets in this partition although lifecycle_status itself does not say superseded; derived Atlas must honor supersedes edges."
+      - "There are 24 fence edges affecting 19 claims; fence nodes should normally be omitted while their target claims remain visible and marked obstructed."
+      - "Toolkit organizational parents remain unhidden so certified mathematical descendants stay navigable."
+    owned_roots:
+      - "incidencerank_path_conjecture"
+      - "leading_terms_for_3uniform_linear_path_turn_numbers"
+      - "methods01"
+      - "scheduler_guidance"
+    partition: 4
+    selection_policy: "Backfilled concise statements for current navigation-worthy results: active objects represented in the legacy Atlas (excluding noncurrent entries), the standalone incidence-rank subtree, and certified reusable toolkit results. Did not blanket-surface hundreds of proof-development lemmas."
+    status: "complete"
+    verification:
+      atlas_legacy_snapshots_unchanged: true
+      control_center_or_wrappers_changed: false
+      edges_digest: "f3c247ab6995122733fe3fed2f15f112"
+      edges_unchanged: true
+      legacy_snapshot_digest: "70dacccf0e35a96d086e84e7add71eac"
+      manual_atlas_digest: "a33b2b3f9c80d8a53ca3ee6cb9d827ef"
+      manual_atlas_unchanged: true
+      object_ids_parent_ids_tree_paths_unchanged: true
+      partition_structure_digest: "87145d1b3aa444c1b26ff7196f2f5ee9"
+  note_key: "atlas_transition_partition4_2026_09_30"
+  phase: "atlas_content_transition"
+-
+  created_at: "2026-09-30T16:43:21.694118+00:00"
+  note:
+    ambiguities:
+      - "1000145 is lifecycle-active but explicitly refuted by fences; keep structurally visible and let the derived Atlas mark it obstructed rather than atlas-hide its useful descendants."
+      - "1000403 is a proved conditional lemma with a fence from 1000540 whose metadata says only that its hypothesis is essential; generic 'fence means obstructed claim' rendering may overstate this relation."
+      - "1000525 and 1000104 are lifecycle_status=retained; they received concise statements for provenance but should normally be omitted by lifecycle filtering."
+      - "The four non-mathematical roots were hidden structurally; no mathematical subtree was hidden."
+      - "The two superseded owned objects 1000111 and 1000801 are already trashed and were not otherwise edited."
+    counts:
+      atlas_height_nonnull: 0
+      atlas_hidden_true: 4
+      existing_simplified_retained: 0
+      failed_observed: 0
+      fence_relationships_relevant_to_live_rendering: 7
+      fence_relationships_touching_partition: 9
+      live_active_mathematical_objects: 22
+      nontrashed_mathematical_objects_including_retained: 24
+      objects_inspected: 46
+      retained_observed: 8
+      retired_observed: 0
+      simplified_statement_added: 24
+      superseded_observed: 2
+      trashed_observed: 6
+    fence_cases:
+      -
+        fence_result: "oppositeend_degree_bound_fails_even_existentially"
+        note: "Counterexample fences a conditional consequence depending on the opposite-end degree bound."
+        obstructed_claim: "degree_bound_proves_the_maximumranknonspecial_branch_of_32l2"
+      -
+        fence_result: "minimumterminal_edges_violate_spacing_in_two_double_cells"
+        note: "Owned counterexample fences an external-partition claim."
+        obstructed_claim: "on_the_paid_twoterminalgap_subclass_breaks_4348_saturation"
+      -
+        fence_result: "23_degree_bound_for_longest_paths_ending_in_a_nonspecial_edge"
+        note: "Retained refuted root fences an external-partition claim; renderer should derive lifecycle and obstruction rather than subtree-hide it."
+        obstructed_claim: "refuted_maximumrank_nonspecial_edge_degree_conjecture"
+      -
+        fence_result: "twocontact_counterexample_to_fouredge_spacing"
+        note: "Explicit counterexample refutes the common-last-vertex four-edge spacing conjecture."
+        obstructed_claim: "fouredge_spacing_conjecture_at_a_common_last_vertex"
+      -
+        fence_result: "twocontact_counterexample_to_fouredge_spacing"
+        note: "Metadata says this demonstrates necessity of the splice hypothesis rather than refuting the proved conditional lemma; final integrator should review how generic fence rendering treats this edge."
+        obstructed_claim: "uncrossed_splice_gives_fouredge_spacing"
+      -
+        fence_result: "human_counterexample_at_the_23_equality_threshold"
+        note: "Owned equality-threshold counterexample fences an external-partition claim."
+        obstructed_claim: "numerical_evidence_for_maximumrank_nonspecial_degree_conjecture"
+      -
+        fence_result: "four_commonlast_ascending_edges_can_have_values_11111717"
+        note: "External-partition fence also obstructs the owned four-edge spacing conjecture."
+        obstructed_claim: "fouredge_spacing_conjecture_at_a_common_last_vertex"
+      -
+        fence_result: "minimum_degree_forces_ascending_edges_to_have_large"
+        note: "Source is trashed; normally irrelevant to live Atlas rendering."
+        obstructed_claim: "minimum_degree_forces_ascending_edges_to_have_large_2"
+      -
+        fence_result: "minimum_degree_forces_ascending_edges_to_have_large"
+        note: "Source is trashed; normally irrelevant to live Atlas rendering."
+        obstructed_claim: "minimum_degree_forces_ascending_edges_to_have_large_3"
+    ordering: "No atlas_height overrides assigned; ordinary tree order retained."
+    partition: 3
+    project: "linp"
+    scope: "Top-level roots assigned by bigint-safe hash partition rule; Atlas content backfill only; no cutover."
+    structural_hiding:
+      - "archive01: archive/proof-rehearsal subtree"
+      - "project_policy: non-mathematical project policy"
+      - "research_nudges: methodological guidance"
+      - "research_retrospectives: process retrospectives"
+    top_level_roots:
+      - "endpointspecific_path_length_from_minimum_degree"
+      - "oppositeend_degree_bound_fails_even_existentially"
+      - "fouredge_spacing_conjecture_at_a_common_last_vertex"
+      - "fiveedge_deficitdoubling_conjecture"
+      - "23_degree_bound_for_longest_paths_ending_in_a_nonspecial_edge"
+      - "spacing_conjecture_for_potentialcharged_ascending_edges"
+      - "terminalpotential_rise_forces_a_narrower_upperhalf_rank_band"
+      - "human_counterexample_at_the_23_equality_threshold"
+      - "archive01"
+      - "project_policy"
+      - "research_nudges"
+      - "research_retrospectives"
+    verification:
+      edge_count: 1165
+      edge_hash: "f3c247ab6995122733fe3fed2f15f112"
+      legacy_snapshot_count: 1
+      legacy_snapshot_hash: "126e6c2cf962be29a50d85365dbd6062"
+      manual_atlas_count: 7
+      manual_atlas_hash: "f35d05bfd22cbc05f1e0beac773b33ed"
+      partition_structural_hash: "ad8492720c6b2171d3ebfcf808fecac6"
+      partition_version_hash: "746f135431948792f30eb111154583d9"
+    writes: "Only objects.simplified_statement and objects.atlas_hidden were changed on owned objects; atlas_height remained NULL everywhere in the partition."
+  note_key: "atlas_transition_partition_3_2026_09_30"
+  phase: "atlas_content_transition"
+-
+  created_at: "2026-09-30T17:27:20.511515+00:00"
+  note:
+    counts:
+      atlas_hidden_true: 1
+      deliberately_left_null_result_like: 0
+      lemma_level_with_simplified: 24
+      live_lemma_level: 24
+      live_theorem_level: 2
+      newly_added_this_pass: 4
+      non_null_atlas_height: 0
+      theorem_level_with_simplified: 2
+      total_live_objects: 35
+      total_simplified_after_pass: 30
+    cutover_performed: false
+    new_simplified_ids:
+      - "random_endpoint_exposure_and_entropy_charging"
+      - "leading_terms_for_3uniform_linear_path_turn_numbers"
+      - "proof_for_the_punctured_cyclic_sts13_allspecial_calibration"
+      - "the_fiveregular_sts13_puncture_contains_a_linear_fivecycle"
+    partition: 4
+    partition_rule: "depth 1-2: own id; depth >=3: third tree_path component; normalized hash mod 4 = 3"
+    remaining_live_nulls:
+      -
+        category: "organizational research program"
+        id: "humanproof_replacement_program_for_computational_evidence"
+      -
+        category: "proof rehearsal"
+        id: "post4348_proof_rehearsal_paid_strictgap_local_congestion"
+      -
+        category: "organizational toolkit root"
+        id: "methods01"
+      -
+        category: "experimental porting map / proposal scaffold"
+        id: "porting_map_from_the_external_toolkit_into_linp_constructions"
+      -
+        category: "administrative guidance document"
+        id: "scheduler_guidance"
+    required_second_pass_audit: "No live result-like object matching theorem/lemma/result/corollary/counterexample/reduction/literature or proved/conjecture/evidence criteria remains with simplified_statement NULL."
+    status: "complete"
+  note_key: "atlas_transition_partition4_correction_2026_09_30"
+  phase: "atlas_content_transition_correction"
+-
+  created_at: "2026-09-30T17:28:06.057876+00:00"
+  note:
+    counts:
+      atlas_height_nonnull: 0
+      atlas_hidden_true: 0
+      lemma_level_with_simplified: 42
+      live_lemma_level: 43
+      live_null_after_pass: 6
+      live_objects: 63
+      live_theorem_level: 8
+      newly_added_this_pass: 34
+      result_like_deliberately_left_null: 1
+      theorem_level_with_simplified: 8
+      total_simplified_after_pass: 57
+    cutover: "Not performed."
+    deliberate_nulls:
+      -
+        category: "retracted obsolete mathematical artifact"
+        id: "retracted_incorrect_mpts_lowerbound_calculation"
+        reason: "Explicitly retracted incorrect MPTS calculation; retained only as a correction marker and should not be surfaced as current mathematics."
+      -
+        category: "organizational route container"
+        id: "general_lowerbound_construction_program"
+        reason: "General lower-bound program container; substantive child mathematics is individually summarized."
+      -
+        category: "proof rehearsal"
+        id: "proof_rehearsal_9_20260925_1940_utc"
+        reason: "Proof-rehearsal artifact, not an independent current mathematical result."
+      -
+        category: "proof rehearsal"
+        id: "proof_rehearsal_13_20260926_0403_utc"
+        reason: "Proof-rehearsal artifact, not an independent current mathematical result."
+      -
+        category: "toolkit container"
+        id: "external_toolkit_for_structured_lowerbound_constructions"
+        reason: "Container for external toolkit material rather than an independent mathematical theorem or lemma."
+      -
+        category: "research retrospective/guidance"
+        id: "majorresult_retrospective_epoch_3"
+        reason: "Retrospective guidance artifact rather than mathematical content."
+    partition: 1
+    partition_rule: "depth 1-2 anchor=self id; depth >=3 anchor=third tree_path component; normalized hash modulo 4"
+    policy: "Correction pass favors inclusion of live meaningful mathematics; compactness is deferred to derived-Atlas rendering and lifecycle/hierarchy policy."
+    project: "linp"
+    samples_added:
+      -
+        id: "edgetransitive_steiner_systems_have_a_sharp_deletion_barrier"
+        title: "Edge-transitive Steiner systems have a sharp deletion barrier"
+      -
+        id: "sts_doubling_cannot_beat_the_onethird_leading_coefficient"
+        title: "STS doubling cannot beat the one-third leading coefficient"
+      -
+        id: "give_a_13_ceiling_for_steinersystem_lower_constructions"
+        title: "Almost-spanning hypertrees give a 1/3 ceiling for Steiner-system lower constructions"
+      -
+        id: "above_ell3_forces_the_path_weight_in_the_binary_incidence_code"
+        title: "Density above ell/3 forces the path weight in the binary incidence code"
+      -
+        id: "pg32_gives_a_73_lower_bound_for_p7"
+        title: "PG(3,2) gives a 7/3 lower bound for P7"
+      -
+        id: "proof_of_the_exact_sixblock_deletion_threshold_in_cyclic_sts13"
+        title: "Human proof of the exact six-block deletion threshold in cyclic STS(13)"
+    writes: "Only objects.simplified_statement was changed on owned objects; atlas_hidden and atlas_height were not changed."
+  note_key: "atlas_transition_partition_1_correction_2026_09_30"
+  phase: "atlas_content_transition_correction"
+-
+  created_at: "2026-09-30T16:41:06.144278+00:00"
+  note:
+    ambiguities:
+      - "1000266 is a refuted conjecture but has useful descendant lemmas; do not subtree-hide it. Final renderer should use fence/lifecycle semantics rather than atlas_hidden."
+      - "1000788 strengthens 1000844 and both are dedicated fence results; both were intentionally left without simplified_statement."
+      - "Strategy/proposal nodes 1000671, 1000341, 1000712, 1000761, and 1000485 are current mathematical routes and received concise statements despite not being proved results."
+    counts:
+      atlas_height_nonnull: 0
+      atlas_hidden_true: 0
+      existing_simplified_retained: 0
+      fence_relationships_relevant: 3
+      live_mathematical_objects: 19
+      objects_inspected: 19
+      retired_failed_trashed_observed: 0
+      simplified_statement_added: 17
+      superseded_observed: 0
+    fence_cases:
+      -
+        fence_result: "equalpotential_ascending_terminal_has_rainbow_fouredge_path"
+        note: "Dedicated equal-potential rainbow-P4 counterexample; leave atlas_hidden=false and let derived renderer omit the fence result while marking the claim obstructed."
+        obstructed_claim: "ascending_terminal_graph_has_maximum_average_degree_three"
+      -
+        fence_result: "ascending_terminal_graph_can_contain_a_rainbow_fouredge_path"
+        note: "Dedicated ascending-terminal rainbow-P4 counterexample; leave atlas_hidden=false and let derived renderer omit the fence result while marking the claim obstructed."
+        obstructed_claim: "global_bound_for_ascending_edges"
+      -
+        fence_result: "k33_copies_refute_the_ascendingincidence_rank_bound"
+        note: "Fence source lies outside partition 1; partition-owned refuted conjecture remains structurally visible because it has useful descendants and received a simplified statement."
+        obstructed_claim: "refuted_terminalpair_cycle_rank_is_controlled_by_special_edges"
+    ordering: "No atlas_height overrides assigned; ordinary tree order retained."
+    partition: 1
+    project: "linp"
+    scope: "Top-level roots assigned by bigint-safe hash partition rule; Atlas content backfill only; no cutover."
+    structural_hiding: "No atlas_hidden flags assigned; no owned subtree was wholly archival/administrative/obsolete."
+    top_level_roots:
+      - "rotationexpansion_route_for_forcing_specialedge_density"
+      - "equalpotential_ascending_terminal_has_rainbow_fouredge_path"
+      - "any_ranklong_terminal_path_has_a_terminaltail_blocker"
+      - "ascending_terminal_graph_can_contain_a_rainbow_fouredge_path"
+    writes: "Only objects.simplified_statement was changed on owned objects; atlas_hidden and atlas_height remained unchanged."
+  note_key: "atlas_transition_partition_1_2026_09_30"
+  phase: "atlas_content_transition"

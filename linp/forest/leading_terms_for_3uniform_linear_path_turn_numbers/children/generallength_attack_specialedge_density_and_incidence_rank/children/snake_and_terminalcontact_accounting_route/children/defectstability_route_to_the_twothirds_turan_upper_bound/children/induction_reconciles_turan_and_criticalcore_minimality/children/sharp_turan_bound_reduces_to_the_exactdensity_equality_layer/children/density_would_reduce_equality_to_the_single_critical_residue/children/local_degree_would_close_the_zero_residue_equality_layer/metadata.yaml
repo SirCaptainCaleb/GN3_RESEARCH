@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "bc82139d5914877bd503cc50fdf77df499063b336d9b1f053bcf2a01176f960f"
+created_at: "2026-09-24T02:57:07.462981+00:00"
+id: "local_degree_would_close_the_zero_residue_equality_layer"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1001099"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "density_would_reduce_equality_to_the_single_critical_residue"
+position: 0
+research_interface:
+  consequence: "The local charged-degree conjecture implies 3-degeneracy of T_up and closes the ell≡0 mod3 equality layer."
+  consumer:
+    - "grand equality-layer induction"
+  given:
+    - "50b6278b9537 potential-oriented local bound"
+    - "f7f7b7e447c8 equality ascending-mass arithmetic"
+  next_need: "For ell≡2 mod3 need A<2n, so 3-degeneracy is insufficient. Seek a sharper decomposition using strict-rise edges (593637dc8b57) plus equal-potential terminal structure."
+  role: "conditional equality-layer residue reduction"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Potential-oriented local degree would close the zero residue equality layer."
+statement_sha256: "783f284e2ee0e8290c419bf29123e55231a8b545f1dd147876c81bb659ea478f"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Potential-oriented local degree would close the zero residue equality layer"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

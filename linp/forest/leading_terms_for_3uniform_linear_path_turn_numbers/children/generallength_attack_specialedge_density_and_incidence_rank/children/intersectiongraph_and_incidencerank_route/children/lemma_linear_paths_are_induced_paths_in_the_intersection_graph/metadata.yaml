@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "399b01513421b34b9b701418be35c4af71ec9f9b52c7db98385191c1b19db493"
+created_at: "2026-09-21T18:44:53.20259+00:00"
+id: "lemma_linear_paths_are_induced_paths_in_the_intersection_graph"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000511"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  authors:
+    - "Richard C. Devine"
+    - "Kevin G. Milans"
+  last_audit_observation:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  source: "linear_paths.tex"
+  source_kind: "project_source"
+object_type: "source_lemma"
+origin_worker_id: 262
+parent_id: "intersectiongraph_and_incidencerank_route"
+position: 1
+research_interface:
+  consumer: "intersection-graph reformulations, P4 cograph method, longest-path entrance labels"
+  given: "linear r-graph"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A sequence of hyperedges in a linear r-graph forms a linear path exactly when the corresponding vertices form an induced path in its intersection graph."
+statement_sha256: "10b07144023fb16dc643186bdbe6efd327ca692e7d521285b554da73b35b441c"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Pathmaker lemma: linear paths are induced paths in the intersection graph"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:03:16.667456+00:00"
+version: 5

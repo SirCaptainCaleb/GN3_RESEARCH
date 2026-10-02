@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "64a1e70e35034dbfa7924fffcfd1ad8290873d03ba3d55eb4a6bc62c5526b758"
+created_at: "2026-09-28T02:18:38.358227+00:00"
+id: "insertion_order_disagreement_or_synchronized_endpoint_barriers"
+last_elevation_revision: 0
+last_substantive_worker_id: 660
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 339
+    detail: "Replaced the unsupported universal-noninsertion premise by the correct three-way split: endpoint insertion, noninsertable Hamiltonian enlargement with order disagreement, or universally non-Hamiltonian enlargements with synchronized barriers; reparented the repaired lemma directly under the support triangle."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:27:45.170864+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 339
+    detail: "Replaced the unsupported universal-noninsertion premise by the correct three-way split: endpoint insertion, noninsertable Hamiltonian enlargement with order disagreement, or universally non-Hamiltonian enlargements with synchronized barriers; reparented the repaired lemma directly under the support triangle."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:27:45.170864+00:00"
+    worker_id: 652
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Removed the false universal noninsertability premise and replaced the dichotomy by the correct trichotomy: insertion, noninsertable Hamiltonian enlargement with order disagreement, or universally non-Hamiltonian enlargements with synchronized endpoint barriers."
+    recorded_at: "2026-09-28T02:26:47.499206+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 652
+  noncomputational: true
+  scale_free: true
+object_type: "research"
+origin_worker_id: 660
+parent_id: "allequalsupporttriangle_recomp01"
+position: 1
+research_interface:
+  consumer: "all-equal {1,1,1} cube closure; endpoint transport and defect compression"
+  given: "the all-equal support triangle and the endpoint sets of its complementary two-covers"
+  need: "consume the endpoint-insertion branch or combine the synchronized barrier families across adjacent supports into defect compression"
+  produces: "a structural trichotomy: endpoint insertion, order disagreement on a Hamiltonian one-vertex enlargement, or synchronized endpoint-barrier families"
+research_level: "lemma"
+semantic_container_text: "All-equal support-triangle barrier branch: endpoint insertion or order disagreement closes immediately; otherwise synchronized endpoint barriers drive reverse hooks, mixed four- and five-path structure, support crossings, six-support families, and eventual relative-order disturbance."
+simplified_statement: "The all-equal support triangle yields endpoint insertion, order disagreement, or synchronized endpoint barriers"
+statement_sha256: "1fde3e568a89aedf838aef7bd32e12f4dd3a9fbe414f3d6107530184c9a2de09"
+substantive_worker_ids:
+  - 660
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The all-equal support triangle yields endpoint insertion, order disagreement, or synchronized endpoint barriers"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:33.193322+00:00"
+version: 9

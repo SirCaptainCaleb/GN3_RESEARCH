@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "3fc45af9f07c9381e1891bccfc7bf1fe615d9cb52f398817283c80e0ffbbf9e5"
+created_at: "2026-09-28T00:40:10.554484+00:00"
+id: "cyclic_defect_type_has_simultaneous_central_and_wrap_reversals"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 323
+    detail: "Independent check: type {3,2} forces the cut through the middle of the two-edge wrap run; the three linear defects reverse to the stated five-path, the wrap defects reverse to the four-path, and the immediately separating centers are nondefective by run separation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 323
+    detail: "Independent check: type {3,2} forces the cut through the middle of the two-edge wrap run; the three linear defects reverse to the stated five-path, the wrap defects reverse to the four-path, and the immediately separating centers are nondefective by run separation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+object_type: "research"
+origin_worker_id: 688
+parent_id: "defectcyclicfive_recomp01"
+position: 1
+research_interface:
+  consumer: "finite cyclic-type elimination; endpoint-hook transport; pairwise-repartition no-trapping"
+  given: "the {3,2} case of the minimum-span cyclic defect classification"
+  need: "analyze the spacing between the central three-run and wrap two-run; minimal gaps and separated gaps should be consumed differently"
+  produces: "a canonical reversed central five-path together with both reversed wrap hooks, forming an outer tight four-path"
+research_level: "lemma"
+semantic_container_text: "Three-plus-two cyclic-defect branch: simultaneous central and wrap reversals give a small quadratic-potential landscape and direct access to four-side obstruction, repeated descent, persistent outer barriers, or a bounded transport kernel."
+simplified_statement: "The three-plus-two cyclic defect type has simultaneous central and wrap reversals"
+statement_sha256: "dbe280c602fe39abc240c0a2371cbcf7af251093f41bf606d8e7f3c212fb830a"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The three-plus-two cyclic defect type has simultaneous central and wrap reversals"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 8

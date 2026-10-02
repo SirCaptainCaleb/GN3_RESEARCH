@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d00b7a2c1fd0bae961cc4cf9f191c5c3eeae21e55b95d1965b114a8915152565"
+created_at: "2026-09-28T15:08:19.956653+00:00"
+id: "minimumside_twocrossing_block_forces_a_reversed_boundary_edge"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 133
+    detail: "Independent check: one orientation of the rigid two-crossing block would restore z for free and two-cover H, so only the opposite orientation survives. Restoring z there creates exactly two possible new triples; failure of either reverses the displayed endpoint edge or mixed join edge as claimed."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:14:59.755478+00:00"
+    worker_id: 586
+  last_audit_observation:
+    claim_id: 133
+    detail: "Independent check: one orientation of the rigid two-crossing block would restore z for free and two-cover H, so only the opposite orientation survives. Restoring z there creates exactly two possible new triples; failure of either reverses the displayed endpoint edge or mixed join edge as claimed."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:14:59.755478+00:00"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 700
+parent_id: "restoration_or_one_rigid_twocrossing_block_configuration"
+position: 1
+research_interface:
+  consumer: "global minimum-side endpoint normalization; endpoint transport / defect compression"
+  given: "the rigid two-crossing block branch after deleting an endpoint of a globally minimum deletion side, with inherited orders preserved"
+  produces: "an explicit reversed endpoint edge of the old minimum side or a reversed join edge in the comparison cover"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The rigid minimum-side two-crossing block forces a reversed boundary edge."
+statement_sha256: "0173a0cc80922b102d92b93e75f884c3318705aba467a419462063943f22a51b"
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The rigid minimum-side two-crossing block forces a reversed boundary edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:14:59.755478+00:00"
+version: 5

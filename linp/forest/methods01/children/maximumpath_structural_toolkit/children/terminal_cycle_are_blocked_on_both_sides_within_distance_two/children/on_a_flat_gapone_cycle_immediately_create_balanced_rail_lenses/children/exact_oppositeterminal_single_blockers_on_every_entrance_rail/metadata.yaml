@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "f6547efe68e846e2b8f805275da4cda290f8135532078481246f594126273aa3"
+created_at: "2026-09-24T20:43:57.540029+00:00"
+id: "exact_oppositeterminal_single_blockers_on_every_entrance_rail"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: "1000220"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 242
+parent_id: "on_a_flat_gapone_cycle_immediately_create_balanced_rail_lenses"
+position: 0
+research_interface:
+  consequence: "In the balanced-lens-free flat-cycle residual, the vague two-sided blocking becomes exact: the immediately adjacent cycle edges themselves are terminal-only single blockers on every entrance rail, both occurring before the final three rail edges."
+  consumer:
+    - "flat-cycle elimination"
+    - "two-terminal shared-rail period-four analysis"
+    - "post-43/48 gap-one shell"
+  given:
+    - "flat gap-one terminal cycle"
+    - "canonical source-rail downward completeness"
+    - "entrance-label blocker creates a balanced rail lens"
+    - "lens-free residual"
+  next_need: "At a near-saturated cycle vertex, combine these forced adjacent single blockers with 3d8b4bb5087a and 38e2ce9f9772. The same R_i then carries two near-periodic singleton patterns and has one prescribed opposite-color singleton from each neighboring cycle edge. Classify the allowed phase/location of these prescribed blockers; the gap-one splice misses by one edge, so the next neighboring cycle edge is the natural source of the missing +1."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lens-free flat cycles force the two adjacent edges to be exact opposite-terminal single blockers on every entrance rail."
+statement_sha256: "40daf63c0094b76e896d50f14a0860c77f15be0532dfa0e65a703d003adbb1c1"
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Lens-free flat cycles force the two adjacent edges to be exact opposite-terminal single blockers on every entrance rail"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 9

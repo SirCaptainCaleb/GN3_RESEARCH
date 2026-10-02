@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "cf2e8b9ed3603f49529f19ad3ff686f298d946ff367e11c81065ecfa05717648"
+created_at: "2026-09-23T23:50:10.109522+00:00"
+id: "classii_systems_have_no_rankfour_nonspecial_edge"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000633"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ca809cc1-d337-4e02-917b-a3c397df10df"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:11:37.623969+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "theorem"
+origin_worker_id: 225
+parent_id: "strict_twothirds_allspecial_threshold_for_n12"
+position: 0
+research_interface:
+  consequence: "Completely eliminates maximum-rank nonspecial edges in Class II by a residual eight-vertex degree contradiction."
+  consumer:
+    - "d9ee4adc37d3 Class II"
+  given:
+    - "1f16e26bffcf crossed terminal rectangle"
+    - "4-regularity"
+    - "12 vertices"
+    - "linearity"
+  next_need: "Eliminate rank-three (or lower) nonspecial edges in Class II; then Class II is fully humanized."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Class-II systems have no rank-four nonspecial edge."
+statement_sha256: "5bc185c2054f1505a0c37d673eb32d1654edb738c407cf853500dd0d635b5158"
+substantive_worker_ids:
+  - 225
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Class-II systems have no rank-four nonspecial edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

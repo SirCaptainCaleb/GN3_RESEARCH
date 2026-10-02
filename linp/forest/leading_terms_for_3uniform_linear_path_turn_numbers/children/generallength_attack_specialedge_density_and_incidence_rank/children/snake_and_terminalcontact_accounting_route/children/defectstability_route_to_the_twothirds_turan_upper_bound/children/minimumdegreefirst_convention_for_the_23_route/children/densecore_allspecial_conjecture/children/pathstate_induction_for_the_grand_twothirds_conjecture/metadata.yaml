@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "941e475e70bbf19297bbd590c1289717442f7d70b875946ac933a479aa428d36"
+created_at: "2026-09-24T01:39:28.26561+00:00"
+id: "pathstate_induction_for_the_grand_twothirds_conjecture"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000288"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  role: "grand-conjecture induction architecture"
+  uses:
+    - "rankband_decomposition_for_the_grand_twothirds_conjecture"
+    - "forces_motion_rank_progress_or_a_flat_terminal_adjacency"
+    - "terminalsafe_sinks_have_endpoint_deficiency_at_most_two"
+    - "index_graphs_forcing_a_nonlocal_blocker_or_lossless_rotation"
+    - "alternate_break_forces_a_nonlocal_blocker_or_terminal_theta"
+    - "every_qstep_flat_transfer_walk_contains_a_labeled_linear_cycle"
+    - "privatevertex_ear_surplus_on_a_short_linear_cycle"
+    - "defect_accounting_and_oppositeterminal_splice_dichotomy"
+object_type: "proposal"
+origin_worker_id: 185
+parent_id: "densecore_allspecial_conjecture"
+position: 0
+research_interface:
+  consequence: "Reduces a plausible inductive proof to two finite-width recurrent geometries instead of arbitrary nonspecial configurations."
+  consumer:
+    - "densecore_allspecial_conjecture"
+    - "global_nonspecialedge_pathlength_inequality"
+  given:
+    - "dense-core minimum degree"
+    - "rotation/transfer machinery"
+    - "loss-one sink classification"
+    - "maximum-rank defect accounting"
+  missing:
+    - "boundary cycle closure at 3q/2 scale"
+    - "fixed-hole closure at 3q/2 scale"
+    - "clean bridge from arbitrary nonascending nonspecial edge into the inductive ascending state space"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A lexicographic induction on nonspecial path states would prove the grand two-thirds conjecture if flat equal-rank transfer cycles and canonical loss-one fixed-hole/theta states can be eliminated at the 3q/2 scale."
+statement_sha256: "cc0547c1e859f564c8363f1dc5931bc56dba25e0a73206452b205ead163c2362"
+substantive_worker_ids:
+  - 185
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Lexicographic path-state induction for the grand two-thirds conjecture"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:29:52.140872+00:00"
+version: 3

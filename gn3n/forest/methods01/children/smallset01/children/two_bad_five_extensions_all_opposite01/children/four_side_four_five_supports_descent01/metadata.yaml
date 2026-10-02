@@ -28,7 +28,7 @@ metadata:
     worker_id: 665
   audit_trigger_kind: "chain_checkpoint"
   contribution: "earlier application and elimination of an unrealizable consumer branch"
-  known_prior_related_result: "1000456"
+  known_prior_related_result: "noninsertable_after_deleting_both_endpoints_of_either_long_path"
   last_audit_observation:
     claim_id: 198
     detail: "Independent check passed. Endpoint Hamiltonicity or Hamiltonicity of any complementary L_t gives the strict (4,m)->(5,m-1) descent for m>=6. Otherwise all four F_t are Hamiltonian and all four L_t are non-Hamiltonian simultaneously. The certified adjacent-four theorem supplies overlapping endpoint-rooted Hamiltonian K4s whose union is an already-Hamiltonian F_t, eliminating the former matching branch."

@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "f4cc43ca81ad51413d00df29fd86b76141f3a39f0afd2140e13d198ba5250b14"
+created_at: "2026-09-27T21:42:47.447455+00:00"
+id: "one_edge_gives_a_reversededge_path_or_a_bounded_wrap_extension"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+object_type: "result"
+origin_worker_id: 697
+parent_id: "leaveandreturn_excursion_replaces_one_inherited_edge"
+position: 2
+research_interface:
+  consumer: "equal-cover leave-and-return branch; endpoint transport / defect compression"
+  given: "a tight exterior detour replacing one distinguished inherited path edge"
+  need: "combine the wrap extension with the neighboring inherited triple, or use the reversed-edge path directly"
+  produces: "a tight path reversing that edge, or one of two explicit bounded triples extending the old edge toward a detour endpoint"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A tight detour replacing one edge gives a reversed-edge path or a bounded wrap extension"
+statement_sha256: "76f2ae09bcfb52beb9a91869449683300f1886acbef60665372d93ee6827232b"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A tight detour replacing one edge gives a reversed-edge path or a bounded wrap extension"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 7

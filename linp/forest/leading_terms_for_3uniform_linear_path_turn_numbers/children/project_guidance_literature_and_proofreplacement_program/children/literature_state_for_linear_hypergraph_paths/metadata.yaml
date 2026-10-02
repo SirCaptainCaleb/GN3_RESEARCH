@@ -1,0 +1,37 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "c5e6b0a295934648df6e3257c4f18df0c23ca97ade015d793bb4ac5d40e7d3ea"
+created_at: "2026-09-21T18:22:49.156921+00:00"
+id: "literature_state_for_linear_hypergraph_paths"
+last_elevation_revision: null
+last_substantive_worker_id: null
+legacy_id: "1000144"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: null
+metadata:
+  as_of: "2026-09-21"
+object_type: "literature_index"
+origin_worker_id: 262
+parent_id: "project_guidance_literature_and_proofreplacement_program"
+position: 2
+research_interface:
+  consumer: "project orientation and literature bridge"
+research_level: "abstraction"
+semantic_container_text: "Literature context for linear-hypergraph path bounds: recorded results on acyclic and Berge paths, minimum-degree forcing, incidence-rank methods, rainbow paths, and exact or asymptotic Turán bounds that frame the live program."
+simplified_statement: null
+statement_sha256: "05227ca3514632edd54d6c8ccf069fc684fb065e74a7bec84977ab82f9f90a98"
+substantive_worker_ids:
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Literature state for linear hypergraph paths"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:46:42.244242+00:00"
+version: 3

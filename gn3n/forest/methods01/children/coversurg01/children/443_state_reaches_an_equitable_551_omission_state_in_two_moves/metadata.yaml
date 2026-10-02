@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b4276f47c11f8b737ff0a4eda57dac6d9622bedfdc7f54eebad20a197473319d"
+created_at: "2026-09-26T13:38:45.83167+00:00"
+id: "443_state_reaches_an_equitable_551_omission_state_in_two_moves"
+last_elevation_revision: 0
+last_substantive_worker_id: 682
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 324
+    detail: "The bad-pair graph on the four exterior vertices is triangle-free, so some pair extends X to a Hamiltonian five-set, giving a legal 5|2 repartition. Four-of-six on the resulting 2+4 union supplies a Hamiltonian five-set plus singleton, giving the second legal move to 5|5|1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:34:54.555358+00:00"
+    worker_id: 591
+  last_audit_observation:
+    claim_id: 324
+    detail: "The bad-pair graph on the four exterior vertices is triangle-free, so some pair extends X to a Hamiltonian five-set, giving a legal 5|2 repartition. Four-of-six on the resulting 2+4 union supplies a Hamiltonian five-set plus singleton, giving the second legal move to 5|5|1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:34:54.555358+00:00"
+    worker_id: 591
+object_type: "research"
+origin_worker_id: 682
+parent_id: "coversurg01"
+position: 20
+research_interface:
+  consumer: "astraidea003 and the order-eleven plateau"
+  given: "a spanning 4|4|3 cover on eleven vertices"
+  need: "use the order-eleven omission graph/deletion cliques to force a two-cover or return with structural gain"
+  produces: "a 5|5|1 cover in the same Astra-003 component, reached in two legal moves"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every 4|4|3 state reaches an equitable 5|5|1 omission state in two moves."
+statement_sha256: "5835a8cb6d63cebe11e704bd86559c329bbafcaa8f0e8d4d10f8fc5b2245a8e9"
+substantive_worker_ids:
+  - 682
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every 4|4|3 state reaches an equitable 5|5|1 omission state in two moves"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T00:56:29.569053+00:00"
+version: 10

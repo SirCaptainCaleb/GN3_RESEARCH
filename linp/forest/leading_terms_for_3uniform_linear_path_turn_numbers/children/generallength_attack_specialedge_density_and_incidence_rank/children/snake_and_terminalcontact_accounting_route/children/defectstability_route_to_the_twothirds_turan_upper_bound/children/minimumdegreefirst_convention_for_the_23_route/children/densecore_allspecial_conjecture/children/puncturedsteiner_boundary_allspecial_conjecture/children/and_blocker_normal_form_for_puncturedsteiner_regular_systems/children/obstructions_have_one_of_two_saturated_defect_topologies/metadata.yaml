@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "4bc8154c2e5ec90014ff7521c02cdc26664ba4b39306982cc43b7410769fd866"
+created_at: "2026-09-24T01:08:58.910995+00:00"
+id: "obstructions_have_one_of_two_saturated_defect_topologies"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000827"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "and_blocker_normal_form_for_puncturedsteiner_regular_systems"
+position: 0
+research_interface:
+  consequence: "Reduces the infinite punctured-Steiner obstruction to two saturated topologies: one open chain, or two open chains plus a canonical terminal 3-cycle."
+  consumer:
+    - "punctured-Steiner all-special conjecture"
+    - "general maximum-rank nonspecial-edge route"
+  given:
+    - "and_blocker_normal_form_for_puncturedsteiner_regular_systems"
+    - "puncturedsteiner_terminal_defects_are_exactly_saturated"
+  next_need: "Prove an uncrossing/rotation lemma that eliminates either topology independent of d; this would generalize the entire n=12 Class-III proof."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Punctured-Steiner maximum-rank obstructions have one of two saturated defect topologies."
+statement_sha256: "60ba3841b5f146353f5ea279d5698050238111ea2c9100d5949fd999a712f036"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Punctured-Steiner maximum-rank obstructions have one of two saturated defect topologies"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:51:23.28984+00:00"
+version: 6

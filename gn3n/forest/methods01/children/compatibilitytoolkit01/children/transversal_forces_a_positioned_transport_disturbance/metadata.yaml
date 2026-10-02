@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: true
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "50aa6e28128d81d80ed0ec2dc88bbecb86aa66bf84609cb1d501c857ded31b1f"
+created_at: "2026-10-02T02:20:42.883375+00:00"
+id: "transversal_forces_a_positioned_transport_disturbance"
+last_elevation_revision: 0
+last_substantive_worker_id: 1230
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "New corollary combines the global deletion-support obstruction theorem with the generalized balanced odd-cycle disturbance theorem and is the main producer for the INDEX 1 proof rehearsal."
+  audit_request_recorded_at: "2026-10-02T02:20:42.883375+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "theorem"
+origin_worker_id: 1230
+parent_id: "compatibilitytoolkit01"
+position: 1
+research_interface:
+  consumer: "Comprehensive INDEX 1 proof rehearsal; endpoint transport and defect compression."
+  given: "A minimum counterexample and an arbitrary selected exact deletion cover for every vertex."
+  implication: "The balanced selected-support odd cycle is no longer a structurally clean residual branch."
+  produces: "An exhaustive positioned disturbance trichotomy: selected order defect, endpoint mixed-support crossing, or internal three-piece double-deletion crossing."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Any arbitrary choice of one deletion cover per vertex forces a positioned order defect, endpoint mixed-support edge, or inherited three-piece double-deletion crossing."
+statement_sha256: "740925ae216d35e25a01158a00222fffe7f1e36f9e34678601f421b955a913f4"
+substantive_worker_ids:
+  - 1230
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Every selected deletion-cover transversal forces a positioned transport disturbance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:20:42.883375+00:00"
+version: 5

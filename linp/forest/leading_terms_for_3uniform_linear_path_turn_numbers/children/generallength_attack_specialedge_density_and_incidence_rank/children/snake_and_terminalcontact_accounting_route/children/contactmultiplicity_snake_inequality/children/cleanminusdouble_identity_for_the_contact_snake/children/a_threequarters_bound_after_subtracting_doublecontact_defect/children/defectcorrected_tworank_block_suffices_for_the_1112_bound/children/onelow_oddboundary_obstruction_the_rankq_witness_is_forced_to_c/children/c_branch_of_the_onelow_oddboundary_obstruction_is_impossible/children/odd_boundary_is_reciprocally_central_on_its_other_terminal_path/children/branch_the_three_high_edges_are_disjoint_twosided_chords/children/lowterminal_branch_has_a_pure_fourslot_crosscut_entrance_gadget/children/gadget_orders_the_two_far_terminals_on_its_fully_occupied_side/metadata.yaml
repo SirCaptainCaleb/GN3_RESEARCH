@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "450a69d2dbdd4fadc6fc928b031dda97b59f7e23043ce9b8613c3a7283e75b4e"
+created_at: "2026-09-24T05:50:00.684723+00:00"
+id: "gadget_orders_the_two_far_terminals_on_its_fully_occupied_side"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000072"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a3b65003-9965-497e-975d-a36b64acbfc2"
+    detail: "Replaced prohibited physical-endpoint wording, including one residual 'x is physical' phrase, with standard last-vertex language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:26:52.432597+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "a3b65003-9965-497e-975d-a36b64acbfc2"
+    detail: "Replaced prohibited physical-endpoint wording, including one residual 'x is physical' phrase, with standard last-vertex language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:26:52.432597+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace one remaining prohibited physical-endpoint phrase; mathematics unchanged."
+    recorded_at: "2026-09-24T21:26:19.674047+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "lowterminal_branch_has_a_pure_fourslot_crosscut_entrance_gadget"
+position: 0
+research_interface:
+  consequence: "On the doubly occupied side of any three-of-four entrance pattern, the remote terminals have forced monotone order: joint-side chord lands no farther from center than private-side chord."
+  consumer:
+    - "rising low-terminal elimination"
+    - "Astra 11/12 conflict matching"
+  given:
+    - "33522a8389e9 pure four-slot cross-cut gadget"
+  next_need: "Bring in the third cross-cut chord. Its entrance lies on the opposite side and its terminal on the doubly occupied side. Use its source-clean entrance rail to derive the reverse inequality between the two same-side chords, or show equality forces a two-cycle/theta. This is now an order-cycle problem rather than arbitrary path geometry."
+  role: "ordered conflict matching in rising branch"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The rising four-slot gadget orders the two far terminals on its fully occupied side."
+statement_sha256: "629127271ca6c89e26772cb2a0720d89c8b41d0a11b2cae728a40a12b9623223"
+substantive_worker_ids:
+  - 225
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The rising four-slot gadget orders the two far terminals on its fully occupied side"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

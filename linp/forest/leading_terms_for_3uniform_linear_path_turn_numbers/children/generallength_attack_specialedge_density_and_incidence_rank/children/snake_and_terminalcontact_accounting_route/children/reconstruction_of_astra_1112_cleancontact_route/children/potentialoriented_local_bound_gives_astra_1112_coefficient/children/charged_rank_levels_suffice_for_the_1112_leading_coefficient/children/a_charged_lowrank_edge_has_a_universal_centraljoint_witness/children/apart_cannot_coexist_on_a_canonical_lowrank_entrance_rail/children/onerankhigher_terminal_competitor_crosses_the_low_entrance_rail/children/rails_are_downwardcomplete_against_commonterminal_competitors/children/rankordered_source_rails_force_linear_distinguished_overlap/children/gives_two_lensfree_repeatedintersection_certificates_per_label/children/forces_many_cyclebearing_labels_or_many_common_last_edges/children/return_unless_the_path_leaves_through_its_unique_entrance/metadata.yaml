@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 86
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "462ae17d3608c40f52b19d58136c464785400506af0c19a78c30b4636990ac4a"
+created_at: "2026-09-25T21:26:21.104765+00:00"
+id: "return_unless_the_path_leaves_through_its_unique_entrance"
+last_elevation_revision: null
+last_substantive_worker_id: 191
+legacy_id: "1000000"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "4809408e-74ef-4e11-839d-dded5d282458"
+    detail: "If the departure joint is terminal at h, any maximum h-path avoiding the remaining suffix would concatenate to a path longer than L. Special/nonspecial terminal characterization gives exactly the stated exception."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:44:08.014442+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "4809408e-74ef-4e11-839d-dded5d282458"
+    detail: "If the departure joint is terminal at h, any maximum h-path avoiding the remaining suffix would concatenate to a path longer than L. Special/nonspecial terminal characterization gives exactly the stated exception."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:44:08.014442+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 191
+parent_id: "forces_many_cyclebearing_labels_or_many_common_last_edges"
+position: 0
+research_interface:
+  consequence: "A common edge of rank at least p lying internally on a source path of length below p either forces every appropriate maximum path ending in that edge to return into the remaining suffix, or the edge is nonspecial and the source path leaves it through its unique entrance."
+  consumer:
+    - "opposite-terminal branch of same-type overlap packets"
+    - "high-edge-rank common-edge residue"
+    - "post-43/48 local congestion"
+  given:
+    - "maximum endpoint path"
+    - "an internal edge whose edge rank exceeds the path length"
+    - "canonical terminal-at-an-edge and unique-entrance dichotomy"
+  next_need: "Apply simultaneously to the two higher-rank source paths in the U-residue of 20cdd04e92ca. Many common high-rank edges either create many suffix-return obligations or are traversed toward their unique entrances on both hosts; analyze these two ordered families separately."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A higher-rank internal edge on a maximum endpoint path forces a suffix return unless the path leaves through its unique entrance."
+statement_sha256: "017b241dfd832db3c8466a4e3b06c2e7cbcbcba494fe8ae20430063daad43fc4"
+substantive_worker_ids:
+  - 191
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A higher-rank internal edge on a maximum endpoint path forces a suffix return unless the path leaves through its unique entrance"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

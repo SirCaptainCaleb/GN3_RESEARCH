@@ -1,0 +1,73 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 7
+body_sha256: "df25c6882169a1cfcc3d686355bb357c3ca852a55b81ef8929cb78579b049f55"
+created_at: "2026-09-27T20:02:09.137162+00:00"
+id: "a_facingendpoint_fiveset_or_four_sameend_tight_triples"
+last_elevation_revision: 0
+last_substantive_worker_id: 556
+legacy_id: null
+lifecycle_status: "active"
+math_version: 7
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Depends essentially on compatdoubleendpoint43, whose proof uses invalid cyclic rotation under definitions01; endpoint-pair theorem must be reconstructed without that dependency or blocked."
+  audit_request_recorded_at: "2026-09-28T16:22:05.386975+00:00"
+  audit_resolution:
+    claim_id: 72
+    detail: "Replaced barrier shorthand by four explicit tight endpoint triples and spelled out both terminal-terminal and initial-initial orientations. Current dependencies are deletion01, ba08d1540dd1, 8b617062a9ed, and minimum-counterexample calculus."
+    math_version: 7
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:10:13.383674+00:00"
+    worker_id: 703
+  audit_resolution_before_repair: null
+  last_audit_observation:
+    claim_id: 72
+    detail: "Replaced barrier shorthand by four explicit tight endpoint triples and spelled out both terminal-terminal and initial-initial orientations. Current dependencies are deletion01, ba08d1540dd1, 8b617062a9ed, and minimum-counterexample calculus."
+    math_version: 7
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:10:13.383674+00:00"
+    worker_id: 703
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Same-end branch uses the orientation-safe doubled-barrier lemma."
+    recorded_at: "2026-09-28T19:40:19.702364+00:00"
+    to_id: "selected_sameend_replacements_force_four_tight_endpoint_triples"
+    worker_id: 586
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Precision cleanup: spell out the initial-end triples explicitly."
+    recorded_at: "2026-09-28T20:09:25.005586+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  repair_attempt_count: 2
+  repair_reason: "Second repair attempt: the facing-endpoint subcases are covered orientation-safely by certified ba08d1540dd1. For the two same-end subcases, the old compatdoubleendpoint43 proof is invalid because it cyclically rotates tight triples. A new orientation-safe reduction was proved and published as 8b617062a9ed: the two selected same-end replacements force doubled endpoint barriers at both chosen ends. Those four barriers do not by themselves supply the five-vertex Hamilton path claimed by 65298d96f1b2; the remaining gap is to combine the two doubled barriers across components. Restricting the theorem to facing pairs would be a material weakening, so I am leaving the intended arbitrary-endpoint statement in REPAIR rather than silently weakening it."
+  repair_requested_at: "2026-09-28T18:55:33.282271+00:00"
+object_type: "research"
+origin_worker_id: 556
+parent_id: "compatdoubleendpoint43"
+position: 1
+research_interface:
+  consumer: "endpoint transport and defect compression"
+  given: "a deletion cover H-b=P|Q with |P|,|Q|>=3, one chosen endpoint from each component, and arbitrary deletion covers at those endpoints"
+  produces: "support/order disagreement; for facing endpoints, a reverse cross triple or Hamiltonian five-set with path-cover-two complement; for same-end replacements, four explicit tight endpoint triples"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every deletion state yields support/order disagreement, a facing-endpoint five-set, or four same-end tight triples"
+statement_sha256: "9420b22e34d2f991357a3208193938aaa19aa1ced14e51740f22f283ed6d41de"
+substantive_worker_ids:
+  - 556
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every deletion state yields support/order disagreement, a facing-endpoint five-set, or four same-end tight triples"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:10:13.383674+00:00"
+version: 23

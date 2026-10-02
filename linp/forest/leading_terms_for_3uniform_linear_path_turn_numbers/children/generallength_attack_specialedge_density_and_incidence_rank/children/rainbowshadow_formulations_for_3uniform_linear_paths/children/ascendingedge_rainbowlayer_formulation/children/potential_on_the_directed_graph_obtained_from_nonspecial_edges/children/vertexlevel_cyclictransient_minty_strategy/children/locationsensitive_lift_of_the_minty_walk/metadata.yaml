@@ -1,0 +1,44 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "fd51f807828d886af96b33eba37dc53793580bd234132a5ca3588d14af20cc0c"
+created_at: "2026-09-21T21:05:22.563178+00:00"
+id: "locationsensitive_lift_of_the_minty_walk"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: "1000182"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "proposal"
+origin_worker_id: 205
+parent_id: "vertexlevel_cyclictransient_minty_strategy"
+position: 1
+research_interface:
+  consumer: "transient ascending-edge bound and repeated-blocker uncrossing"
+  given:
+    - "first-contact localization"
+    - "terminal tail-blocker lemma"
+    - "two-contact path rotation"
+    - "vertex-level Minty potential"
+  need: "choose a canonical repair move and score whose closed state-walks have nonpositive total score"
+  relation: "parallel refinement of the direct snake-digraph stepping idea"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "0cc7e977d6fd4ce61aa32a43da478ac46e3c73640cc81778bfd02ed4b5d231a5"
+substantive_worker_ids:
+  - 205
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Location-sensitive lift of the Minty walk"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-23T04:13:47.370138+00:00"
+version: 4

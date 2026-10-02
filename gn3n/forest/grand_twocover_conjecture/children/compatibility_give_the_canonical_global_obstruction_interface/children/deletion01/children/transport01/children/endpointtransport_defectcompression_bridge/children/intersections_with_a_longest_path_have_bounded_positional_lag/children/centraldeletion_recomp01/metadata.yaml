@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "4d4ff35589f28ea18739783b157b5e612ca7a8dc5dad2bc11daf647ab4575e6f"
+created_at: "2026-09-28T01:21:19.196258+00:00"
+id: "centraldeletion_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 287
+    detail: "Recomposition-equivalence check: positional lag with component deficit d<=sigma gives exactly the stated central range sigma<i<lambda-sigma-1; the deletion trichotomies and opposite-end disagreement yield at most two labels clean from both anchors. The count M=max(0,lambda-2sigma-2) and max(0,M-2) consequence are preserved exactly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:47:38.798175+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 287
+    detail: "Recomposition-equivalence check: positional lag with component deficit d<=sigma gives exactly the stated central range sigma<i<lambda-sigma-1; the deletion trichotomies and opposite-end disagreement yield at most two labels clean from both anchors. The count M=max(0,lambda-2sigma-2) and max(0,M-2) consequence are preserved exactly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:47:38.798175+00:00"
+    worker_id: 679
+  recomposition_audit:
+    classified_at: "2026-09-28T01:21:19.196258+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  route_key: "endpoint_transport_defect_compression"
+object_type: "research"
+origin_worker_id: 694
+parent_id: "intersections_with_a_longest_path_have_bounded_positional_lag"
+position: 0
+research_interface:
+  given: "a minimum counterexample, a globally longest path, and neutral two-covers of its two endpoint deletions"
+  need: "aggregate the resulting central disturbance family into endpoint absorption or defect compression"
+  produces: "central deletion trichotomy from both ends, with at most two labels simultaneously clean"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Central longest-path deletions are disturbed from at least one endpoint except for two labels."
+statement_sha256: "0f51452f0200497e11d77a3b912a9fa95b5d908dc64718d9aced6d6509fafa54"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Central longest-path deletions are disturbed from at least one endpoint except for two labels"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:47:38.798175+00:00"
+version: 6

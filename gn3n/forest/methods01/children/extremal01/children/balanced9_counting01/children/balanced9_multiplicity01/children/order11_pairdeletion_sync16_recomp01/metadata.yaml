@@ -6,7 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 4
-body_sha256: "af14111312aa060b83c6c454c90690b9456d527edcf7d37aac8ab31e860d035b"
+body_sha256: "16def3332cc531a02f06178296241c92b140ac2ef53e788036d89c2216bdc4c0"
 created_at: "2026-10-01T00:27:38.35643+00:00"
 id: "order11_pairdeletion_sync16_recomp01"
 last_elevation_revision: 10160

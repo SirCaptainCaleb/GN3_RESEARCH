@@ -1,0 +1,42 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "5dff695171a415247892ec3f1b816aa9c9fb643984db45d41f78468d1e1a2418"
+created_at: "2026-10-01T20:01:19.672275+00:00"
+id: "terminalshadow_collision_toolkit"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: "1001176"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  hygiene_created: true
+  organizational: true
+  toolkit_scope: "terminal_shadow_collisions"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "methods01"
+position: 400
+research_interface:
+  consumer:
+    - "terminal-shadow and strong-rainbow routes"
+  working_route: "reusable collision structure; not a proof step"
+research_level: "abstraction"
+semantic_container_text: null
+simplified_statement: "Reusable backward-collision and shortcut-cycle lemmas for terminal-shadow paths."
+statement_sha256: "7529b38aecd26867ed6a08269d15ed3a2797ee2ab56e303c60052e0b82264bec"
+substantive_worker_ids:
+  - 296
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Terminal-shadow collision toolkit"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:01:19.672275+00:00"
+version: 1

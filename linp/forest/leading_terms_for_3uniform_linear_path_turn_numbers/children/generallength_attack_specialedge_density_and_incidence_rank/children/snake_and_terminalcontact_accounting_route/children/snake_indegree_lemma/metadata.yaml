@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "8f29d62a1c558f99e1b4b398053cc668b0dc62c5b0e0dc0c8f145577f4d4aa1e"
+created_at: "2026-09-21T18:22:49.156921+00:00"
+id: "snake_indegree_lemma"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1001160"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  authors:
+    - "Richard C. Devine"
+    - "Kevin G. Milans"
+  last_audit_observation:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  source: "linear_paths.tex"
+  source_kind: "project_source"
+object_type: "source_lemma"
+origin_worker_id: 262
+parent_id: "snake_and_terminalcontact_accounting_route"
+position: 1
+research_interface:
+  consumer: "general path upper bounds and special-edge accounting"
+  given: "linear r-graph; snake digraph"
+  need: "local terminal-path obstruction"
+research_level: "lemma"
+semantic_container_text: "Snake indegree program: bound incoming snake structure and convert it into local restrictions on nonspecial terminal incidence."
+simplified_statement: "Snake indegree lemma."
+statement_sha256: "49112b95124b9a4e91c710bb718ea8f75ef63f0e08f667564526c8c1192ecd11"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Snake indegree lemma"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 7

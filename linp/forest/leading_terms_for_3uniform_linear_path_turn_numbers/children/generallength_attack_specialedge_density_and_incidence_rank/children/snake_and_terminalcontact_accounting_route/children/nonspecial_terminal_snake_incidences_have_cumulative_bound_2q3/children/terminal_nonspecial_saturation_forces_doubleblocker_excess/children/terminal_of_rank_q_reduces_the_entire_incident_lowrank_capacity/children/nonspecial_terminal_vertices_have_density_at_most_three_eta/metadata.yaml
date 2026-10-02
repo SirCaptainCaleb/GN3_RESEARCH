@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "771020d6d5c6ed9c50426c589a6affefae89ce88f12a2a6887af0f68b9c1eb59"
+created_at: "2026-09-24T04:12:54.805526+00:00"
+id: "nonspecial_terminal_vertices_have_density_at_most_three_eta"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000022"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified a full-rank nonspecial terminal edge invokes the certified |J_p(v)|<=2p-3 capacity, forcing b(v)>=2. Comparing to the universal weight-one baseline gives |F|<=3 eta n."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified a full-rank nonspecial terminal edge invokes the certified |J_p(v)|<=2p-3 capacity, forcing b(v)>=2. Comparing to the universal weight-one baseline gives |F|<=3 eta n."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "terminal_of_rank_q_reduces_the_entire_incident_lowrank_capacity"
+position: 0
+research_interface:
+  consequence: "Near the seven-sixths floor, full-rank nonspecial terminal behavior is twice as expensive locally as Type A. Only 3eta n vertices can support it; elsewhere every nonspecial terminal edge drops rank by at least one."
+  consumer:
+    - "near-floor stability"
+    - "charged-edge obstruction control"
+    - "grand 2/3 route"
+  given:
+    - "a570ca900001 full-rank nonspecial terminal capacity"
+    - "9fe13355ecae local weighted defect"
+    - "global slack identity"
+  next_need: "Combine with a57057ab0001: on the large Type-A core the drop is already known, while this lemma controls the remaining near-floor full-rank terminal sites. Refine the exceptional decomposition by separating full-rank sites from other non-Type-A defects."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Near the seven-sixths floor, full-rank nonspecial terminal vertices have density at most three eta."
+statement_sha256: "1d585f5ff65ab63f96a960c13094794a8632483c564c667369702c098d785e6b"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Near the seven-sixths floor, full-rank nonspecial terminal vertices have density at most three eta"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

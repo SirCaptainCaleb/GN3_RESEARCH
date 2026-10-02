@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c5d67c08e2ef69d72a622d5ba1169f91f3b9fa07669e8a0eeb79ea38cfb593fd"
+created_at: "2026-09-24T11:24:43.995236+00:00"
+id: "a_source_hit_forces_a_second_sourcerail_intersection"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000916"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "labeled source-rail K4 dichotomy"
+  uses:
+    - "intersection_of_two_maximum_endpoint_paths_is_an_aligned_joint"
+    - "rail_in_a_tworank_011_block_crosses_every_foreign_edge"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "rails_in_a_tworank_011_block_are_pairwise_intersecting"
+position: 0
+research_interface:
+  consequence: "Every simple rail-pair is U-U; every directed X-hit creates a theta/double-overlap pair."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "0-1-1 source-clean rail K4"
+  next_need: "Analyze the graph of simple U-U pairs. Two common simple neighbors force two shared terminal vertices and hence rule out simplicity."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A source hit forces a second source-rail intersection."
+statement_sha256: "9197040f3af6b5157a5b4a5e787a4787d4c61df7e845a59716ea440f3549d902"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A source hit forces a second source-rail intersection"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

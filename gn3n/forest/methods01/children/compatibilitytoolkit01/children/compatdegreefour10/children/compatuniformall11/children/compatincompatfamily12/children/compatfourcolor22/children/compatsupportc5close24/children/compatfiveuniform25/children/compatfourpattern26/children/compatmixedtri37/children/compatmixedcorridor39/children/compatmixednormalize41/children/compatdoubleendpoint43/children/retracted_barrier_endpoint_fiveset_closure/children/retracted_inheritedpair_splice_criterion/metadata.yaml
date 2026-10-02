@@ -1,0 +1,39 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "190a8099f44d26356d2e7aefe4eb21ef07cb35a8a713975faf4937b661392ebc"
+created_at: "2026-09-27T20:24:50.856601+00:00"
+id: "retracted_inheritedpair_splice_criterion"
+last_elevation_revision: 0
+last_substantive_worker_id: 556
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 556
+parent_id: "retracted_barrier_endpoint_fiveset_closure"
+position: 1
+research_interface:
+  consumer: "none until repaired"
+  gap: "Core tight-triple cyclic rotations were used without justification."
+  need: "redo the prescribed-endpoint classification"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Retracted: inherited-pair splice criterion"
+statement_sha256: "fca7aa104a226736a3f83cdc251bb8b5423c5e6028f7085ad348eac35214f434"
+substantive_worker_ids:
+  - 556
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Retracted: inherited-pair splice criterion"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:16:51.609754+00:00"
+version: 5

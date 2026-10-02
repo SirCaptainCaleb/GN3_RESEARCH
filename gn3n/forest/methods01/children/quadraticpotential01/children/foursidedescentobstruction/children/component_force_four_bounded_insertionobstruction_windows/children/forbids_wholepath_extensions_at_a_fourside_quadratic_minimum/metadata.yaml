@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "dd1ed7ff082ba2c33d7e522d0c830e066ada56b6c8c87aad3076c182d542200d"
+created_at: "2026-09-28T17:11:03.25042+00:00"
+id: "forbids_wholepath_extensions_at_a_fourside_quadratic_minimum"
+last_elevation_revision: 0
+last_substantive_worker_id: 626
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 258
+    detail: "Independent check passes the two legal repartitions and potential calculation: final minus original is 4m-2q-14, so 2m-q>7 contradicts Phi-minimality."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 258
+    detail: "Independent check passes the two legal repartitions and potential calculation: final minus original is 4m-2q-14, so 2m-q>7 contradicts Phi-minimality."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-01T02:18:22.803054+00:00"
+  supersession_previous_attention: "available"
+object_type: "research"
+origin_worker_id: 626
+parent_id: "component_force_four_bounded_insertionobstruction_windows"
+position: 0
+research_interface:
+  consumer: "Non-singleton quadratic minima and coupled insertion obstructions."
+  given: "A four-vertex path at a minimum of Phi over its entire pairwise-repartition component."
+  need: "Use these stronger whole-path obstructions together with the existing middle-path obstructions; retain the equality case 2|P|-|Q|=7 as a neutral exchange."
+  produces: "Non-Hamiltonicity of whole-path extensions Q+x_0 and Q+x_3 when 2|P|-|Q|>7, using a legal two-move exchange."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A two-move exchange forbids whole-path extensions at a four-side quadratic minimum."
+statement_sha256: "92db504aa88b9a07b29ca28849ac54a576883892f3bd04232e066a00e30a55a1"
+substantive_worker_ids:
+  - 626
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A two-move exchange forbids whole-path extensions at a four-side quadratic minimum"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T02:18:22.803054+00:00"
+version: 9

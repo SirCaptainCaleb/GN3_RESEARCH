@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b31f4aca48f9bcfa168861b140c8baa664718788c8431e34a18265b7033ffb01"
+created_at: "2026-09-26T14:25:34.03699+00:00"
+id: "edge_forces_order_disagreement_on_both_local_deletion_cliques"
+last_elevation_revision: 0
+last_substantive_worker_id: 682
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 197
+    detail: "Independent check: four support-compatible deletion covers cannot all be order-compatible, since that would induce a four-vertex tournament all of whose triples are cyclic; each side therefore has an order-disagreement witness."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T16:18:42.338369+00:00"
+    worker_id: 696
+  last_audit_observation:
+    claim_id: 197
+    detail: "Independent check: four support-compatible deletion covers cannot all be order-compatible, since that would induce a four-vertex tournament all of whose triples are cyclic; each side therefore has an order-disagreement witness."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T16:18:42.338369+00:00"
+    worker_id: 696
+object_type: "research"
+origin_worker_id: 682
+parent_id: "astra003eightmissing"
+position: 1
+research_interface:
+  consumer: "astraidea003 and e34dc91e238d"
+  given: "an eight-label omission shell with missing edge xy and a reachable x-state"
+  need: "consume the two-sided disagreement via endpoint transport/defect compression or use it to force the missing omission edge"
+  produces: "explicit relative-order disagreement on each of the two local four-good-deletion cliques; hence reversed-edge/reversing-triple/tight-cycle witnesses on both sides"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A missing eight-label omission edge forces order disagreement on both local deletion cliques."
+statement_sha256: "7ae2a98daae65ae8deebfa7601940c4b5535412de1c8802213a4459a3ce72bd9"
+substantive_worker_ids:
+  - 682
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A missing eight-label omission edge forces order disagreement on both local deletion cliques"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:56:12.77133+00:00"
+version: 9

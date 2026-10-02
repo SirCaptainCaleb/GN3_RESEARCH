@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "31f5c573fe92936bf8c817a095e6e83f7e119b0f4a9631edccba44e147d07453"
+created_at: "2026-09-24T20:49:02.393763+00:00"
+id: "potential_mass_has_local_oneeighth_paidcertified_011_degree"
+last_elevation_revision: null
+last_substantive_worker_id: 250
+legacy_id: "1001038"
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The paid-cell units inject into distinct switcher incidences at each center; deleting source-unclean or terminal-multiple edges costs o(S) globally because each ascending edge is terminal at at most two centers. The positive-part conclusion follows."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The paid-cell units inject into distinct switcher incidences at each center; deleting source-unclean or terminal-multiple edges costs o(S) globally because each ascending edge is terminal at at most two centers. The positive-part conclusion follows."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+object_type: "corollary"
+origin_worker_id: 250
+parent_id: "there_are_onesixteenth_many_distinct_paidcertified_011_edges"
+position: 0
+research_interface:
+  consequence: "Upgrades the global one-sixteenth family to a local stability statement: almost every unit of endpoint-potential mass sits at a terminal supporting linearly many paid-certified clean/single ascending edges."
+  consumer:
+    - "post-43/48 local paid-block analysis"
+    - "source-rail plus rotation-certificate coupling"
+    - "0-1-1 rank-band packing"
+  given:
+    - "9586a4d2317f arbitrary-level one-eighth paid-cell theorem"
+    - "d287da5967d5 near-extremal local-defect stability"
+    - "420e9aea15cc doubly-terminal-single stability"
+    - "a57007500001 exact source-clean defect A-C"
+  next_need: "At a typical center v, analyze a linear-size family |G_v|~p_v/8 of paid-certified 0-1-1 edges. Split their certificates using 39d0d99258db into double-cell triangles versus output edges internal to V_{>=p_v}; then exploit the 0-1-1 source/terminal constraints to bound one branch or recurse into the superlevel core."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Almost all near-extremal potential mass has local one-eighth paid-certified 0-1-1 degree."
+statement_sha256: "57155b1019066a2f8ca6bf5be672233a0bcfafb9d93b373a44828df2801c14b3"
+substantive_worker_ids:
+  - 250
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Almost all near-extremal potential mass has local one-eighth paid-certified 0-1-1 degree"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 11

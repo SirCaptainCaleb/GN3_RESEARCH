@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "99ac6503cdb5f33c79f9f4655132ffcb13a8568a54d7a2ec5bd77efd13c009a6"
+created_at: "2026-09-28T17:46:56.943731+00:00"
+id: "reversededge_kernel_forces_a_threeorder_reverse_fan"
+last_elevation_revision: 0
+last_substantive_worker_id: 606
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 183
+    detail: "Independent check: both matching-block orientation cases restrict to the same edge chain xv<uv<xu on {x,u,v}, which gives exactly the three stated tight triples and the two-sided reverse fan."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:59:45.993537+00:00"
+    worker_id: 586
+  last_audit_observation:
+    claim_id: 183
+    detail: "Independent check: both matching-block orientation cases restrict to the same edge chain xv<uv<xu on {x,u,v}, which gives exactly the three stated tight triples and the two-sided reverse fan."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:59:45.993537+00:00"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 606
+parent_id: "hamiltonian_cyclic_or_uniquely_ordered_matchingblock_fourkernel"
+position: 1
+research_interface:
+  consumer: "endpoint transport; repeated-witness splicing; disturbance consumption"
+  given: "the uniquely ordered matching-block branch of an internal reversed-edge four-kernel"
+  produces: "one witness extending the reversed ordered pair on both sides, plus the third compatible Hamilton order; edge order xv<uv<xu"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The matching-block reversed-edge kernel forces a three-order reverse fan."
+statement_sha256: "59a961611882fc52c9574d684a2f40136f2fcec71ce2508c337438d7646925ac"
+substantive_worker_ids:
+  - 606
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The matching-block reversed-edge kernel forces a three-order reverse fan"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T19:59:45.993537+00:00"
+version: 5

@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "67903e7d18d45ccef6e7600f70414560dc780cbf57f01decc7b18d359cecae0e"
+created_at: "2026-09-24T02:40:55.055898+00:00"
+id: "colors_are_repelled_from_both_ends_of_a_zeroslack_witness"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000590"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7449ac28-1911-4974-abb7-58a8b3705b0a"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language and removed abandoned draft prose; mathematical argument unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:13:31.625259+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "7449ac28-1911-4974-abb7-58a8b3705b0a"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language and removed abandoned draft prose; mathematical argument unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:13:31.625259+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair and removal of abandoned draft wording; mathematical argument unchanged."
+    recorded_at: "2026-09-24T22:13:10.086991+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "are_repelled_from_the_penultimate_triple_of_a_zeroslack_witness"
+position: 0
+research_interface:
+  consequence: "Each alternate terminal has linearly many spare-color contacts forced into the interior of every nonspecial witness."
+  consumer:
+    - "zero-slack endpoint expansion"
+  given:
+    - "f3a692e51efb penultimate repulsion"
+    - "alternating witness"
+  next_need: "Pair interior spare contacts from y,z with the half-neighborhood/two-switch geometry; endpoint rotations that move an interior contact to an extreme position would immediately create a second entrance."
+  role: "zero-slack two-ended terminal repulsion"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Unused terminal colors are repelled from both ends of a zero-slack witness."
+statement_sha256: "603b1d2dcfd6acfa92547557e404adfd1c3d2fcec4f55634e17d42be4b8b3ac2"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Unused terminal colors are repelled from both ends of a zero-slack witness"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:16:36.540366+00:00"
+version: 7

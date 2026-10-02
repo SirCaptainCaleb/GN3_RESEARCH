@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "6edc3de87c0bb8567b1d3c8b73e277495113a6cf52ba5921f0035384d386563e"
+created_at: "2026-09-24T19:06:03.960581+00:00"
+id: "inside_its_source_endpoint_lens_spends_the_remaining_edge_rank"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000832"
+lifecycle_status: "retained"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8f083569-1a8e-4d0d-90e9-92bcbbffdc2a"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:08:17.972257+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "8f083569-1a8e-4d0d-90e9-92bcbbffdc2a"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:08:17.972257+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_failure:
+    reason: "The displayed cycle S[z,x], e, Q[u,z] is only linear if the Q-subpath from u to z avoids the opposite terminal v. The proof explicitly notes this requirement, but the theorem statement assumes only that Q is a maximum endpoint path containing x and does not require v to be absent from Q[u,z] (or from the host lens side). Thus the claimed inequality is not proved under the stated hypotheses. A direct repair is to add the missing v-avoidance hypothesis."
+    recorded_at: "2026-09-24T21:09:39.227853+00:00"
+object_type: "lemma"
+origin_worker_id: 242
+parent_id: "its_opposite_terminal_to_the_far_end_of_every_avoiding_rail"
+position: 0
+research_interface:
+  consequence: "A source lens and its own paired terminal are not independent: if the terminal lies inside the host-side lens, lens length plus terminal depth is at most the parent edge rank minus one."
+  consumer:
+    - "whole-pair braid classification"
+    - "endpoint-lens packing"
+    - "post-43/48 labeled source-rail route"
+  given:
+    - "ascending edge with clean maximum source rail"
+    - "balanced endpoint lens with a host maximum path"
+    - "paired terminal lying inside the host lens side"
+    - "f2925a904b8e nonspecial cycle-rank bound"
+  next_need: "For the 25/88 whole-pair braid, attach the canonical source lens at each common entrance x_i on Q and R. Split by whether u_i lies inside either host lens. Long lenses then force u_i into a tiny boundary zone; if u_i lies outside both, the two source lenses separate x_i from its terminal on both hosts and should constrain nesting/crossing."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "1a5aebcca9906af7e68c4f572ba36f28721717fd010f0ee3c1bbdfb564f8032f"
+substantive_worker_ids:
+  - 242
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A paired terminal inside its source endpoint lens spends the remaining edge rank"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:51:44.90774+00:00"
+version: 9

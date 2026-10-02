@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "3038ee0c8843a185b4dc1ccbf596a7cb31bb5419dc91be4540cc456fa8a1d7dd"
+created_at: "2026-09-30T04:59:10.099675+00:00"
+id: "deletion_state_mixed_gap_recomp01"
+last_elevation_revision: 10203
+last_substantive_worker_id: 665
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 753
+    detail: "Independent reconstruction passed. The deletion lift and nonmatching cyclic theorem give the canonical double-wrap four-side S with pc2 complement. For n>=13 the longer complement path has order m>=5. Applying the independently reconstructed four-side endpoint-gap theorem to S|R|T yields exactly the nonincreasing (5,m-1) move, mixed bounded Hamiltonian support, or complete four-label distinct-gap network. The arithmetic gives neutrality only at m=5 and strict descent for m>=6; n>=15 forces m>=6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:21:12.195834+00:00"
+    worker_id: 737
+  last_audit_observation:
+    claim_id: 753
+    detail: "Independent reconstruction passed. The deletion lift and nonmatching cyclic theorem give the canonical double-wrap four-side S with pc2 complement. For n>=13 the longer complement path has order m>=5. Applying the independently reconstructed four-side endpoint-gap theorem to S|R|T yields exactly the nonincreasing (5,m-1) move, mixed bounded Hamiltonian support, or complete four-label distinct-gap network. The arithmetic gives neutrality only at m=5 and strict descent for m>=6; n>=15 forces m>=6."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T00:21:12.195834+00:00"
+    worker_id: 737
+  recomposition_audit:
+    classified_at: "2026-09-30T04:59:36.046834+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+object_type: "research"
+origin_worker_id: 665
+parent_id: "enters_fourside_descent_or_the_finite_pairedobstruction_menu"
+position: 0
+research_interface:
+  consumer: "deletion-state closure; endpoint transport / defect compression; proof rehearsal"
+  given: "any one-vertex deletion two-cover in a minimum counterexample of order at least thirteen"
+  need: "consume the mixed support or complete four-label gap network into defect compression/two-cover closure"
+  produces: "canonical double-wrap state followed directly by nonincreasing transport, a genuinely mixed Hamiltonian 4/5-support with pc2 complement, or the complete injective four-label second-type gap network"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Deletion-state double-wrap transport compresses directly to mixed support or a complete gap network"
+statement_sha256: "6e4a66bdcbd47bc82e56faa3a30cd6231f4f264f15612d662a2288d098c3917f"
+substantive_worker_ids:
+  - 665
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Deletion-state double-wrap transport compresses directly to mixed support or a complete gap network"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:21:12.195834+00:00"
+version: 6

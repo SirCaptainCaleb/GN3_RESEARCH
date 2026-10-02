@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "b1e847adbc4d4825711147dd544249f218892d9deee037d30b8d0281c40d65c8"
+created_at: "2026-09-27T23:50:27.393598+00:00"
+id: "stability_at_the_mantel_barrier"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  source: "brainstorm_maintenance_2026-09-27"
+object_type: "research"
+origin_worker_id: 694
+parent_id: "compatibilitytoolkit01"
+position: 0
+research_interface:
+  first_attack: "Start from the exact Mantel theorem and characterize what equality forces in every compatibility neighborhood. Intersect those equality conditions across two anchors in opposite parts. Ask whether the resulting consecutive-run constraints synchronize the deleted labels into two global orders; if synchronization fails, isolate the first incompatible order witness and test whether it splices directly."
+  global_relevance: "If compatibility density is the theorem-scale bottleneck, stability could convert a coarse extremal count into a canonical global decomposition. It is distinct from local defect-window transport because the organizing object is the whole compatibility graph."
+  role: "brainstorm_conjecture"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Conjecturally, compatibility graphs near the Mantel bound admit a coherent two-class structural partition, with the equality case rigidly complete bipartite."
+statement_sha256: "59be7791a0c4918375c0e3de9ba94172f3a7016a8084595aedc31fece2959986"
+substantive_worker_ids:
+  - 694
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Stability at the Mantel barrier"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T00:07:53.429593+00:00"
+version: 3

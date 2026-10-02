@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "fd53756cfa5802f710604ef90c916fc83373aa5501094bde1ad875a6de80f2bc"
+created_at: "2026-09-21T20:57:46.398164+00:00"
+id: "entrancevalue_distortion_with_consecutivecontact_correction"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: "1001078"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "2a3f97a4-a100-409a-ae41-95fc1147aa5b"
+    detail: "Independent block-by-block reconstruction confirms the consecutive-contact correction and the bound φ(x)≤r(φ(f)-1)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T05:48:46.15307+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_audit_observation:
+    claim_id: "2a3f97a4-a100-409a-ae41-95fc1147aa5b"
+    detail: "Independent block-by-block reconstruction confirms the consecutive-contact correction and the bound φ(x)≤r(φ(f)-1)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T05:48:46.15307+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+object_type: "lemma"
+origin_worker_id: 205
+parent_id: "entrancerank_distortion_by_blockers"
+position: 2
+research_interface:
+  consumer: "blocker counting and transfer-potential arguments"
+  correction: "allows a vertex of f to lie in two consecutive edges of P"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Entrance-value distortion with consecutive-contact correction."
+statement_sha256: "64c80c71690e897044454b0672c9af51996f9c89937984578281192e54a05f00"
+substantive_worker_ids:
+  - 205
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Entrance-value distortion with consecutive-contact correction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

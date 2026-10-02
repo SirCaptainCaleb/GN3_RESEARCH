@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "b7e416617162ed49de2f0acf6f9e9766b1e75232ca6cb26f932b270ccbfd54da"
+created_at: "2026-09-24T02:40:11.712395+00:00"
+id: "induction_reconciles_turan_and_criticalcore_minimality"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000990"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "defectstability_route_to_the_twothirds_turan_upper_bound"
+position: 0
+research_interface:
+  consequence: "If the equality-layer statement S_ell is proved, strict Turan counterexamples inherit the exact threshold-cover property under one unified minimality notion."
+  consumer:
+    - "grand Turan induction"
+    - "threshold-degree critical-core route"
+  next_need: "Prove/classify the equality layer m=dn with a nonspecial edge. Use it simultaneously with the strict layer; the zero-/small-slack critical-core templates are candidate equality structures."
+  role: "minimality-bridge strengthening"
+  warning: "No claim is made that an arbitrary minimal counterexample has exact excess one. The threshold-cover conclusion requires m>=dn+1 and uses the equality case after deleting an off-witness edge."
+research_level: "lemma"
+semantic_container_text: "Exact-density equality-layer program: reduce sharp Turan equality to rigid degree and potential structure, analyze threshold-degree and outside-reservoir behavior, and convert leave-charge or incidence orientations into ascending flow and deletion constraints."
+simplified_statement: "Equality-layer induction reconciles Turan and critical-core minimality."
+statement_sha256: "efe42f79addda2422176fd9b152f8febf44183a7017ce7821aa7d25811609226"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Equality-layer induction reconciles Turan and critical-core minimality"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:14:12.898801+00:00"
+version: 8

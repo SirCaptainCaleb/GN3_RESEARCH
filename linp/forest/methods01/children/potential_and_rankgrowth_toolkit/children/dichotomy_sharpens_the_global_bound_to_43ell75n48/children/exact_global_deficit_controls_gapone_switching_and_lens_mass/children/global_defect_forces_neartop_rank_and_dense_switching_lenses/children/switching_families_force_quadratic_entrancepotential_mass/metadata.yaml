@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "a8a9a025db067af62661dccd0487615d99ba6228f0ac6e297a7b4fe89e90cb7c"
+created_at: "2026-09-24T18:47:21.391104+00:00"
+id: "switching_families_force_quadratic_entrancepotential_mass"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: "1000655"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "theorem"
+origin_worker_id: 201
+parent_id: "global_defect_forces_neartop_rank_and_dense_switching_lenses"
+position: 0
+research_interface:
+  consequence: "A low-defect p-center forces about 5p^2/16 units of entrance-potential weight across its switchers; globally this center-indexed weight has multiplicity at most two over ascending hyperedges."
+  consumer:
+    - "post-43/48 weighted-potential route"
+    - "weighted potential cuts"
+    - "global switching congestion"
+  given:
+    - "b032348c1a8a dense switching theorem"
+    - "5bbd8a32451a terminal-only singleton source-potential inequality"
+    - "a7b7670e955a terminal-rank inequality"
+  next_need: "Combine the lower bound with a global upper bound for sum_{ascending e} phi(entrance(e)), especially the weighted potential-cut identities 2c8e7b462e49/d00e931df2d6. Optimize weights to test whether 43/48 near-equality is incompatible with the required quadratic source mass."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Switching families force quadratic entrance-potential mass."
+statement_sha256: "64499af50796adcff6f459b6b447ae63abdab8b23c76a422721e7c715d1a8727"
+substantive_worker_ids:
+  - 201
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Switching families force quadratic entrance-potential mass"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 10

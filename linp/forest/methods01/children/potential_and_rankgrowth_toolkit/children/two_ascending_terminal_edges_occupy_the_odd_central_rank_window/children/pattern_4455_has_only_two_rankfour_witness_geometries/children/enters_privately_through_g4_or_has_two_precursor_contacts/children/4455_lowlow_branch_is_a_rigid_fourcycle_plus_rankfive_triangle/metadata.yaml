@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "bae59ed8fa7becf386199c48960180aeaba5084878e67606c19ff1f81fb307d7"
+created_at: "2026-09-24T03:48:49.383377+00:00"
+id: "4455_lowlow_branch_is_a_rigid_fourcycle_plus_rankfive_triangle"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000283"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Replaced prohibited physical-endpoint terminology with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:53:47.424095+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Replaced prohibited physical-endpoint terminology with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:53:47.424095+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:53:24.911636+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "enters_privately_through_g4_or_has_two_precursor_contacts"
+position: 0
+research_interface:
+  consequence: "The remaining double-contact {b,c} branch is exactly a theta: a linear 4-cycle h-g2-g3-g4 and a linear 3-cycle h-g4-e5 sharing h,g4."
+  consumer:
+    - "p=5 4455 elimination"
+    - "charged four-edge spacing"
+  given:
+    - "96ce63c6b236 4455 two-contact reduction"
+  next_need: "Use the rank-four edges f_b,f_c through the low entrances b,c against this theta. Since c lies on the 4-cycle and phi(c)=3, any ear that breaks the cycle at c into a 4-edge path is forbidden. The charged edges through b,c should force exactly such an ear unless they are trapped into the same theta."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The two-contact 4455 low-low branch is a rigid four-cycle plus rank-five triangle."
+statement_sha256: "0a55e4568255265f12688f74ca1f7e41d6d103d67a2ce5ed0b761f4d5e7213ab"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The two-contact 4455 low-low branch is a rigid four-cycle plus rank-five triangle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 6

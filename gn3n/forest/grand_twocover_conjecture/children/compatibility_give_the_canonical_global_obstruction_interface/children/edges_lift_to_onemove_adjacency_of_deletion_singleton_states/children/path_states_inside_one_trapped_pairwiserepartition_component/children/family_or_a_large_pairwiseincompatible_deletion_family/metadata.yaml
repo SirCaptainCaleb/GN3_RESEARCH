@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "7fa35e9ece241f826e625cbf3d3221d8814e4a141ae954495d0cbe7256f2e2ea"
+created_at: "2026-09-27T19:14:09.046809+00:00"
+id: "family_or_a_large_pairwiseincompatible_deletion_family"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 349
+    detail: "Terminology cleanup only: canonical central-path states instead of neighborhoods."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T19:16:13.201182+00:00"
+    worker_id: 569
+  last_audit_observation:
+    claim_id: 349
+    detail: "Terminology cleanup only: canonical central-path states instead of neighborhoods."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T19:16:13.201182+00:00"
+    worker_id: 569
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Completed the same terminology cleanup in the proof body: canonical central-path states rather than neighborhoods. Mathematics unchanged."
+    recorded_at: "2026-09-27T19:15:59.957528+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 569
+object_type: "research"
+origin_worker_id: 573
+parent_id: "path_states_inside_one_trapped_pairwiserepartition_component"
+position: 1
+research_interface:
+  consumer: "canonical central-path no-trapping; deletion-cover incompatibility forcing; endpoint transport"
+  given: "any chosen family of m deletion two-covers in a minimum counterexample"
+  need: "consume either many canonical central-path neighborhoods in one trapped component or a large incompatible deletion family into a merge/defect compression"
+  produces: "for every threshold t, either t deletion labels contribute canonical central-path states inside one trapped reconfiguration component, or at least ceil(m/(t-1)) chosen deletion covers are pairwise incompatible"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Compatibility components force a large canonical-state family or a large pairwise-incompatible deletion family"
+statement_sha256: "2f25fb8f9cc5b8e72532e96396c9a9778637e4c6643ea5f02d0d156985fae81f"
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Compatibility components force a large canonical-state family or a large pairwise-incompatible deletion family"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T19:18:09.03132+00:00"
+version: 8

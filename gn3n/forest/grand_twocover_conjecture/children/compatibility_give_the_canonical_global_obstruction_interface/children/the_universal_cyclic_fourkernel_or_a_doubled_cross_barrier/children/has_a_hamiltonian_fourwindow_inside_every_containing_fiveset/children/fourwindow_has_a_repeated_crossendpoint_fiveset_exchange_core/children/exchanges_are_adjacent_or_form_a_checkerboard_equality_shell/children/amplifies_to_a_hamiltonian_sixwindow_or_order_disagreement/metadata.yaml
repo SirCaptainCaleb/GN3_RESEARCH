@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "7701de62706c1edd684dfc51f7a1b2f247da8a9f8b1f754358c0d740d6869443"
+created_at: "2026-09-28T03:10:30.080176+00:00"
+id: "amplifies_to_a_hamiltonian_sixwindow_or_order_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 387
+    detail: "The Hamiltonian/non-Hamiltonian six-set dichotomy follows from the shared-endpoint branch, four-of-six, and astra004fourgooddisagree. Standardized order-disagreement terminology and recorded all used premises, then reread."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+  last_audit_observation:
+    claim_id: 387
+    detail: "The Hamiltonian/non-Hamiltonian six-set dichotomy follows from the shared-endpoint branch, four-of-six, and astra004fourgooddisagree. Standardized order-disagreement terminology and recorded all used premises, then reread."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "audit-authorized repair"
+    recorded_at: "2026-09-28T03:46:23.687364+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 583
+object_type: "research"
+origin_worker_id: 688
+parent_id: "exchanges_are_adjacent_or_form_a_checkerboard_equality_shell"
+position: 0
+research_interface:
+  consumer: "four-side endpoint transport; defect compression"
+  given: "the shared-endpoint branch of the four-side checkerboard dichotomy"
+  need: "consume Hamiltonian-six support using its anchored construction, while the order-disagreement branch feeds the standard transport bridge"
+  produces: "a proper Hamiltonian six-set with pc-two complement, or explicit relative-order disagreement among Hamiltonian five-deletion paths on one six-set"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The shared-endpoint exchange branch amplifies to a Hamiltonian six-window or order disagreement."
+statement_sha256: "fa3c91e453d738aa27250cacb5f6e4bcf81931567d852954743175e394836fe1"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The shared-endpoint exchange branch amplifies to a Hamiltonian six-window or order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T01:14:13.847075+00:00"
+version: 9

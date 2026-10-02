@@ -1,0 +1,36 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 97
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "acd251987fa4ece649700ed5f973b28e3481cc80354596c01e1f471e7f229009"
+created_at: "2026-09-29T18:40:03.253068+00:00"
+id: "the_endpointpair_22_split_gives_strict_quadratic_descent"
+last_elevation_revision: 8656
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 637
+parent_id: "omission_split_forces_all_four_singleton_extensions"
+position: 2
+research_interface:
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Above order fourteen the endpoint-pair 2+2 split gives strict quadratic descent."
+statement_sha256: "58883857897fd33e1d25bd3fe98c07e2badd3707cc1ed2738291c3b2e4fe3674"
+substantive_worker_ids:
+  - 637
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Above order fourteen the endpoint-pair 2+2 split gives strict quadratic descent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:40:03.253068+00:00"
+version: 3

@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "421afc81f542d5809df690f312a0f9587f6ac9b474237c080e5a823c67f3052d"
+created_at: "2026-09-24T13:43:13.24521+00:00"
+id: "near_equality_has_a_periodic_fourcell_contact_normal_form"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000605"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ebcea349-bbe2-4acb-badc-163a1ae6afcb"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:00:47.487368+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "theorem"
+origin_worker_id: 258
+parent_id: "exact_transfer_solution_gives_a_ranksensitive_4348_bound"
+position: 0
+research_interface:
+  consequence: "Near equality is periodic: apart from O(r) defects the singleton cells repeat the unique critical four-state cycle, while unused contact vertices are O(r)."
+  consumer:
+    - "43/48 stability"
+    - "gap-one transfer"
+    - "double-contact geometry"
+  given:
+    - "eb40ddcc33ca exact transfer"
+  next_need: "Classify how the forced double contacts can pair the complementary vertices of the 0,0,2,1 pattern. Any incompatibility of those pairings with rank labels or maximum-path transfer improves the 43/48 coefficient."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Near equality has a periodic four-cell contact normal form."
+statement_sha256: "711937df157cb3db2a5b1c41c91ec84b9ff694d4f10c9ba7fbdee9eeee913bd0"
+substantive_worker_ids:
+  - 258
+  - 209
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Near equality has a periodic four-cell contact normal form"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

@@ -68,6 +68,6 @@ If j=0, then
 P_a=(a,k_1,k_2,k_3,k_4)
 for every a in A_1, so the leaves form a common left-extender family. If j=4, then
 P_a=(k_1,k_2,k_3,k_4,a)
-for every a in A_1, giving a common right-extender family. These are outcome (3). No pairwise Hamiltonicity follows merely from common same-end extension: certified 1000149 gives a counterexample to that concatenation inference.
+for every a in A_1, giving a common right-extender family. These are outcome (3). No pairwise Hamiltonicity follows merely from common same-end extension: certified sameend_extenders_do_not_automatically_concatenate gives a counterexample to that concatenation inference.
 
 This exhausts the five insertion slots and proves the corrected three-way conclusion.

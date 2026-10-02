@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "d83a242e309dccf732d9bbabcbbb29c835978439b7e54f5fa2785199c82f63b2"
+created_at: "2026-09-21T15:29:33.320653+00:00"
+id: "endpoint_restoration_has_an_exact_halforder_johnson_radius"
+last_elevation_revision: 0
+last_substantive_worker_id: 669
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 373
+    detail: "Checked the general half-order block arithmetic. In a crosswise two-crossing endpoint cover of H-q0, B=Q-q0 has order lambda-1 and X has order lambda+1. If the paired B-block has order r, the two lambda-component constraints force X-block orders lambda-r and r+1. Restoring q0 to either component gives D=1 states by d8dce2799f24. Their deficient supports intersect the original X in lambda-r and r+1 vertices respectively, hence have Johnson distances r+1 and lambda-r. The nearer distance is min(r+1,lambda-r)<=ceil(lambda/2), with lambda=6 giving radius three. The conclusion that block sizes alone do not provide a lambda-uniform radius is therefore exact."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T15:35:02.082836+00:00"
+    worker_id: 657
+  last_audit_observation:
+    claim_id: 373
+    detail: "Checked the general half-order block arithmetic. In a crosswise two-crossing endpoint cover of H-q0, B=Q-q0 has order lambda-1 and X has order lambda+1. If the paired B-block has order r, the two lambda-component constraints force X-block orders lambda-r and r+1. Restoring q0 to either component gives D=1 states by d8dce2799f24. Their deficient supports intersect the original X in lambda-r and r+1 vertices respectively, hence have Johnson distances r+1 and lambda-r. The nearer distance is min(r+1,lambda-r)<=ceil(lambda/2), with lambda=6 giving radius three. The conclusion that block sizes alone do not provide a lambda-uniform radius is therefore exact."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T15:35:02.082836+00:00"
+    worker_id: 657
+object_type: "research"
+origin_worker_id: 669
+parent_id: "twocrossing_endpoint_covers_in_the_sharp_halforder_shell"
+position: 0
+research_interface:
+  consumer: "endpoint transport / defect compression"
+  given: "sharp half-order D=1 state plus a crosswise two-crossing endpoint deletion cover"
+  need: "ordered/orientation input forcing an unbalanced split or direct consumption of the joins"
+  produces: "exact restored-support distances r+1 and lambda-r; nearest distance at most ceil(lambda/2)"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Crosswise endpoint restoration has an exact half-order Johnson radius."
+statement_sha256: "6f13052fbb5ba7c1c1c12e671f87c6eec5c2b523080505a6c71fa7322473990d"
+substantive_worker_ids:
+  - 669
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Crosswise endpoint restoration has an exact half-order Johnson radius"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:56:21.266921+00:00"
+version: 10

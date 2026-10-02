@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "228ce94d0a3966bca04446a3c0364d24f246ae6c91b1f28921b7e9b5dee9984c"
+created_at: "2026-09-21T18:22:49.156921+00:00"
+id: "tangwuzhang_2026_exact_p5_and_general_conjectural_scale"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000979"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  arxiv: "2601.19068"
+  audit_resolution:
+    claim_id: "58465fec-580d-4753-b498-c0aaaccec671"
+    detail: "Verified against the 2026 Tang-Wu-Zhang paper: exact 15n/11 P5 theorem, equality characterization, MPTS formulas, and stated universal-c conjecture all match."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:58:54.556232+00:00"
+    worker_id: "820d7b84-2e16-49b4-b64b-45cf022f2d58"
+  authors:
+    - "Chaoliang Tang"
+    - "Hehui Wu"
+    - "Junchi Zhang"
+  last_audit_observation:
+    claim_id: "58465fec-580d-4753-b498-c0aaaccec671"
+    detail: "Verified against the 2026 Tang-Wu-Zhang paper: exact 15n/11 P5 theorem, equality characterization, MPTS formulas, and stated universal-c conjecture all match."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:58:54.556232+00:00"
+    worker_id: "820d7b84-2e16-49b4-b64b-45cf022f2d58"
+  source_kind: "external_literature"
+  year: 2026
+object_type: "literature_result"
+origin_worker_id: 262
+parent_id: "literature_state_for_linear_hypergraph_paths"
+position: 40
+research_interface:
+  role: "exact P5 calibration; conjectural asymptotic target; MPTS lower construction"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Tang–Wu–Zhang (2026): exact P5 and general conjectural scale."
+statement_sha256: "8f99b0fcf2092dcda5582b79ab6ef5799e71eb4d741d54c6d086bdda72002372"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Tang–Wu–Zhang (2026): exact P5 and general conjectural scale"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

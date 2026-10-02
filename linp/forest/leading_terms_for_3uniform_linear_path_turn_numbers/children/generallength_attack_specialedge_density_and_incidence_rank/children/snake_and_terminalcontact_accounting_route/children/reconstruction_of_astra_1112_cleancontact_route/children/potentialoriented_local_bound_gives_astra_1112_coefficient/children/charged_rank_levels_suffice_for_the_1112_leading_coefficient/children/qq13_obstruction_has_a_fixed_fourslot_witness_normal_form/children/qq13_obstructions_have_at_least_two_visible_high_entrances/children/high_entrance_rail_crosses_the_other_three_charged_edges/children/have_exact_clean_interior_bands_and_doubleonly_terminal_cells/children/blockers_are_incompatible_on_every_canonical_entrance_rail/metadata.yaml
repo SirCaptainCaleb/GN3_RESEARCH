@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "db1f5583d8dc05e8860846c627cc79666860bd864ad84ff38ff7e05ab6d1218c"
+created_at: "2026-09-24T05:18:41.187168+00:00"
+id: "blockers_are_incompatible_on_every_canonical_entrance_rail"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000908"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a0fcae52-a211-40da-886d-5cce11b6bfc1"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:14:52.279812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "a0fcae52-a211-40da-886d-5cce11b6bfc1"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:14:52.279812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:13:27.17026+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "have_exact_clean_interior_bands_and_doubleonly_terminal_cells"
+position: 0
+research_interface:
+  consequence: "On any canonical entrance rail, private single-contact blockers through the target terminal cannot occupy cells at distance two. This applies simultaneously on all three high rails in a q,(q+1)^3 block."
+  consumer:
+    - "Astra conflict matching"
+    - "q,(q+1)^3 high-rail packing"
+  given:
+    - "canonical entrance rail"
+    - "two foreign single blockers through target terminal"
+  next_need: "Combine across the three high rails with 3e837f0c5fe6. If a rail has no double blocker, its three foreign contacts are interior private cells avoiding distance two. Compare the three resulting contact orders; seek a cyclic-order contradiction or show one rail must contain a double blocker, furnishing the paid conflict Astra's count needs."
+  role: "universal rail conflict"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Distance-two single blockers are incompatible on every canonical entrance rail."
+statement_sha256: "96170477e4cf49eacae5bf0a31d642f2b2e0ea6774f4acaa54859899c94ebef0"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Distance-two single blockers are incompatible on every canonical entrance rail"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

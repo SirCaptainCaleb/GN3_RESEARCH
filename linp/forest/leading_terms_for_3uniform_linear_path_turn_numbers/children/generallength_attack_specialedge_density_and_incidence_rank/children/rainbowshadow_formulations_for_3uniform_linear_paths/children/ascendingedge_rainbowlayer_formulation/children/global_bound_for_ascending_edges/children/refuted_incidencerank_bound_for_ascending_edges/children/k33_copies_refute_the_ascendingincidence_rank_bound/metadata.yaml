@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a489a4ac749e79a6ce2cefefb5ced6dfa036db6375bc65ec9f6ee69ddbff4d92"
+created_at: "2026-09-21T22:42:58.983714+00:00"
+id: "k33_copies_refute_the_ascendingincidence_rank_bound"
+last_elevation_revision: null
+last_substantive_worker_id: 234
+legacy_id: "1000876"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "5837e337-0022-431f-81da-f6fd3882ba11"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:30:15.970739+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  last_audit_observation:
+    claim_id: "5837e337-0022-431f-81da-f6fd3882ba11"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:30:15.970739+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+object_type: "counterexample"
+origin_worker_id: 234
+parent_id: "refuted_incidencerank_bound_for_ascending_edges"
+position: 1
+research_interface:
+  consequence:
+    - "refutes rank_R(N_↑)>=2A/3"
+    - "gives A/n->3/2 with every edge ascending"
+  consumer:
+    - "global ascending-edge bound"
+    - "ascending-incidence rank route"
+  parameters: "A=9t, n=6t+3, rank=5t+2"
+  role: "counterexample and sharpness calibration"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Three-colored K3,3 copies refute the ascending-incidence rank bound."
+statement_sha256: "1dd33e45f361e99ca5cce2af23fc65576037d898353dd47cb00aa65438c7f8ba"
+substantive_worker_ids:
+  - 234
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three-colored K3,3 copies refute the ascending-incidence rank bound"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

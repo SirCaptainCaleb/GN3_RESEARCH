@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "9497f3678815b3f0060b70abf490c46f70d98ed92625b3d9f390f56ec5a5bdcc"
+created_at: "2026-09-27T19:44:22.522565+00:00"
+id: "neutral_endpoint_transport_or_a_universal_noninsertion_witness"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 252
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T19:51:01.461533+00:00"
+    worker_id: 573
+  last_audit_observation:
+    claim_id: 252
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T19:51:01.461533+00:00"
+    worker_id: 573
+object_type: "result"
+origin_worker_id: 697
+parent_id: "vertices_on_one_path_have_a_universal_structural_alternative"
+position: 2
+research_interface:
+  consumer: "equitable three-cover plateau navigation; quadratic-monotone reconfiguration; endpoint transport"
+  given: "two displayed components whose orders differ by one"
+  need: "show repeated neutral transfers cannot cycle without producing a merge, strict descent, or order-sensitive progress"
+  produces: "either an equal-Phi endpoint transfer swapping the two orders, or the generic paired-noninsertion structural witness"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A size-gap-one pair admits neutral endpoint transport or a universal noninsertion witness"
+statement_sha256: "ede58198a95db1bf928eecb31746431d942090b6aabc51638b35f171a56109d0"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A size-gap-one pair admits neutral endpoint transport or a universal noninsertion witness"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 6

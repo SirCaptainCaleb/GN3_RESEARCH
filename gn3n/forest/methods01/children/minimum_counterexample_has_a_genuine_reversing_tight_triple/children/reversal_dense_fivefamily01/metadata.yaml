@@ -1,0 +1,50 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "7e092ab67324e0f99221e53c0b9211b5561be075faf0beb1faf5715b2957e61f"
+created_at: "2026-09-29T12:56:28.215754+00:00"
+id: "reversal_dense_fivefamily01"
+last_elevation_revision: 8250
+last_substantive_worker_id: 664
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 212
+    detail: "Independently reconstructed: the bad-extension graph around the reversing triple is triangle-free, so its complement J_T has the stated density and alpha<=2; every Hamiltonian five-support is proper (n>10) and has a non-Hamiltonian path-cover-two complement by minimum-counterexample calculus."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:07:34.968973+00:00"
+    worker_id: 611
+  last_audit_observation:
+    claim_id: 212
+    detail: "Independently reconstructed: the bad-extension graph around the reversing triple is triangle-free, so its complement J_T has the stated density and alpha<=2; every Hamiltonian five-support is proper (n>10) and has a non-Hamiltonian path-cover-two complement by minimum-counterexample calculus."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:07:34.968973+00:00"
+    worker_id: 611
+object_type: "research"
+origin_worker_id: 664
+parent_id: "minimum_counterexample_has_a_genuine_reversing_tight_triple"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every genuine reversal lies in a dense family of Hamiltonian five-supports"
+statement_sha256: "b20fe8ef22e04cd6043966e1ff639cf0f74e6349bd45a91ea562864f28878f23"
+substantive_worker_ids:
+  - 664
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every genuine reversal lies in a dense family of Hamiltonian five-supports"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:58:28.111169+00:00"
+version: 7

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "779bcbec20e1bf6350768b5fec20f370287c26c1dea7422e5b120a95d67263d2"
+created_at: "2026-09-25T19:26:04.860482+00:00"
+id: "linear_anchortomaximum_symmetric_difference_in_every_uniformity"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: "1000580"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "cd4d40ca-6d4c-4068-8395-ec5f2fdf7161"
+    detail: "Independent check of math version 2: every f in T\\{h} must meet the anchor precursor R off v, else appending f to the q-edge h-path gives a (q+1)-edge path; linearity makes these contact sets pairwise disjoint. The certified fixed-entrance transfer bounds singleton contact sets by s_r(q), yielding D_Q(T)>=t-1-s_r(q). Each multiple-contact edge with exactly one U-contact contributes a distinct vertex of R\\U, and the finite-set identity |U\\R|-|R\\U|=|U|-|R|=(r-1)(p-q) gives the second side. The J_max algebra reduces exactly to floor(((r-1)(q-1)-s_r(q))/2)-tau and has leading term ((2r-1)/8)q. The unpaid-signature specialization is valid under the stated q<phi(v) restriction, and the r=3 crossing refinement follows because two anchor contacts exhaust f\\{v}."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:41:16.217468+00:00"
+    worker_id: "02ff34cb-915c-45e0-b8c3-2594d9731bc8"
+  last_audit_observation:
+    claim_id: "cd4d40ca-6d4c-4068-8395-ec5f2fdf7161"
+    detail: "Independent check of math version 2: every f in T\\{h} must meet the anchor precursor R off v, else appending f to the q-edge h-path gives a (q+1)-edge path; linearity makes these contact sets pairwise disjoint. The certified fixed-entrance transfer bounds singleton contact sets by s_r(q), yielding D_Q(T)>=t-1-s_r(q). Each multiple-contact edge with exactly one U-contact contributes a distinct vertex of R\\U, and the finite-set identity |U\\R|-|R\\U|=|U|-|R|=(r-1)(p-q) gives the second side. The J_max algebra reduces exactly to floor(((r-1)(q-1)-s_r(q))/2)-tau and has leading term ((2r-1)/8)q. The unpaid-signature specialization is valid under the stated q<phi(v) restriction, and the r=3 crossing refinement follows because two anchor contacts exhaust f\\{v}."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:41:16.217468+00:00"
+    worker_id: "02ff34cb-915c-45e0-b8c3-2594d9731bc8"
+object_type: "research"
+origin_worker_id: 192
+parent_id: "arbitraryr_fixedentrance_bound_forces_linear_doublecontact_mass"
+position: 0
+research_interface:
+  consequence: "The r=3 crossing matching does not generalize edgewise, but near saturation still forces Omega_r(q) vertices on each side of the anchor/max-path symmetric difference for globally unpaid terminal-single families."
+  consumer:
+    - "general-r coefficient improvement"
+    - "near-top rank-gap shell"
+    - "anchor-to-maximum uncrossing"
+  given:
+    - "dcf886f98a51 exact arbitrary-r singleton-contact bound"
+    - "6c9c2c5a0fcb unpaid terminal-single reduction"
+  next_need: "Exploit the resulting switching hyperedges. Each anchor-multiple/P-single edge contains at least one Q-only vertex; split whether its unique P-contact is retained from the anchor contact set or lies outside Q, and derive an r-uniform splice/rotation obstruction from a linear family of these disjoint gadgets."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Unpaid near-saturation forces linear anchor-to-maximum symmetric difference in every uniformity."
+statement_sha256: "2dd1424eb2c973479d6c24eba817c10dc0577f7b0c3c0d7ec8607d1ef18770d5"
+substantive_worker_ids:
+  - 192
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Unpaid near-saturation forces linear anchor-to-maximum symmetric difference in every uniformity"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

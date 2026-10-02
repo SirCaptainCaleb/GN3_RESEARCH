@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a56491a1041da0559c9cd7aa138fa2e3daa034c186e3ca02d85d26aa61630588"
+created_at: "2026-09-24T02:11:13.130248+00:00"
+id: "an_early_endpoint_blocker_forces_oppositeendpoint_prefix_escape"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000820"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a2025dac-0b48-4c68-865d-2088ebb5161b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:48:35.038774+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "a2025dac-0b48-4c68-865d-2088ebb5161b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:48:35.038774+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "twohole_witnesses_force_linearly_many_threecenter_collisions"
+position: 0
+research_interface:
+  consequence: "Endpoint-color blocker contacts obey a monotone prefix-expansion rule: an early blocker at one free endpoint forces many blocker incidences from the other endpoint to cross beyond that prefix."
+  consumer:
+    - "collision path-order expansion"
+    - "SPANNING-TOP good residues"
+  given:
+    - "two-hole wrong-entrance witness"
+    - "64823c8c54de cycle-ear surplus"
+  next_need: "Iterate the prefix-escape inequality between u and v. Seek a growth lemma for earliest-contact frontiers; if the frontier reaches within two cells of a hole-pair collision, apply de0c1d15d897 for the full lift."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An early endpoint blocker forces opposite-endpoint prefix escape."
+statement_sha256: "7a695193f360f431b5242316adeda20a1d7879a8c96956712e1e9580e933f62a"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An early endpoint blocker forces opposite-endpoint prefix escape"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:32:10.617212+00:00"
+version: 6

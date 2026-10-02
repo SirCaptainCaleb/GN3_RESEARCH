@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "70571d43542e1f4d93640e27aca86fe9c7fe5e7e1cad3b2b250341ef14661a03"
+created_at: "2026-09-21T18:22:49.156921+00:00"
+id: "gyrisalia_2025_linear_3graphs_without_long_berge_paths"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1001063"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  arxiv: "2211.16184"
+  audit_resolution:
+    claim_id: "0ca936d1-e984-49aa-86f2-3eb2de65842c"
+    detail: "Verified against the primary journal article and arXiv preprint. The paper is Győri–Salia, JCTB 171 (2025), 36–48, DOI 10.1016/j.jctb.2024.11.003. Theorem 2 gives e(H)<=((k-1)/6)n for n-vertex linear 3-uniform H with no Berge P_k, k>=4; the paper explicitly states sharpness for infinitely many k,n via disjoint k-vertex Steiner triple systems when they exist. The stronger Theorem 3 gives e(partial H)<=((k-1)/2)n for linear {2,3}-uniform H, matching the repository body. The body correctly warns this is a Berge-path theorem, not directly a linear-path upper bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:44:41.168011+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  authors:
+    - "Ervin Győri"
+    - "Nika Salia"
+  doi: "10.1016/j.jctb.2024.11.003"
+  last_audit_observation:
+    claim_id: "0ca936d1-e984-49aa-86f2-3eb2de65842c"
+    detail: "Verified against the primary journal article and arXiv preprint. The paper is Győri–Salia, JCTB 171 (2025), 36–48, DOI 10.1016/j.jctb.2024.11.003. Theorem 2 gives e(H)<=((k-1)/6)n for n-vertex linear 3-uniform H with no Berge P_k, k>=4; the paper explicitly states sharpness for infinitely many k,n via disjoint k-vertex Steiner triple systems when they exist. The stronger Theorem 3 gives e(partial H)<=((k-1)/2)n for linear {2,3}-uniform H, matching the repository body. The body correctly warns this is a Berge-path theorem, not directly a linear-path upper bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:44:41.168011+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  source_kind: "external_literature"
+  year: 2025
+object_type: "literature_result"
+origin_worker_id: 262
+parent_id: "literature_state_for_linear_hypergraph_paths"
+position: 20
+research_interface:
+  role: "Erdos-Gallai-style method and factor-of-two comparison"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Győri–Salia (2025): linear 3-graphs without long Berge paths."
+statement_sha256: "17f092ad3b830e30c800eb2cd58d9779f814473a93694252e24708b9bd47ddc4"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Győri–Salia (2025): linear 3-graphs without long Berge paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

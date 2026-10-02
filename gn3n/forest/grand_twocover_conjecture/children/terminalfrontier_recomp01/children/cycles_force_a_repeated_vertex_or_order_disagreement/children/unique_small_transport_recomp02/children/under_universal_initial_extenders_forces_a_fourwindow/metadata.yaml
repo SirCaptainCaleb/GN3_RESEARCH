@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "e100219c9e145d0361166841850fabed4781f61d4f9fcceeb4a2e1473d6cf903"
+created_at: "2026-09-28T18:19:29.96748+00:00"
+id: "under_universal_initial_extenders_forces_a_fourwindow"
+last_elevation_revision: 0
+last_substantive_worker_id: 706
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Author correction: the final K4 argument is invalid. From (d1,a,x),(d1,x,a),(d1,a,y),(d1,y,a), smallset01 does not force a reversal-pair contradiction; e.g. (x,y,a) and (y,x,a) are not reverses. The proof only establishes that if the first A-block is singleton, both x and y fail both prepend orders and hence these four reverse triples hold. Do not use the claimed Hamiltonian-four-set conclusion pending repair/retraction."
+  audit_request_recorded_at: "2026-09-28T18:19:47.306369+00:00"
+  audit_resolution:
+    claim_id: 111
+    detail: "Replaced the invalid final K4 reversal-pair argument by a direct boundary-antisymmetry dichotomy: exactly one of (x,a,y),(y,a,x) is tight, yielding Hamilton path (d1,x,a,y) or (d1,y,a,x). Statement unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:43:32.096831+00:00"
+    worker_id: 586
+  last_audit_observation:
+    claim_id: 111
+    detail: "Replaced the invalid final K4 reversal-pair argument by a direct boundary-antisymmetry dichotomy: exactly one of (x,a,y),(y,a,x) is tight, yielding Hamilton path (d1,x,a,y) or (d1,y,a,x). Statement unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:53:43.745887+00:00"
+    worker_id: 586
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Audit repair: the previous final K4 step used the wrong reversal pair. Replace it by the direct antisymmetry dichotomy (x,a,y) versus (y,a,x), yielding Hamilton paths (d_1,x,a,y) or (d_1,y,a,x). Statement unchanged."
+    recorded_at: "2026-09-28T19:42:07.522114+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 706
+parent_id: "unique_small_transport_recomp02"
+position: 0
+research_interface:
+  consumer: "unique-small plateau closure; disturbance-consumption bridge"
+  given: "the universal-initial-extender configuration of the unique-small plateau and an order-neutral two-crossing leave-and-return cover of the three cores"
+  produces: "a spanning two-cover or a Hamiltonian four-window with non-Hamiltonian two-coverable complement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A two-crossing leave-return under universal initial extenders forces a four-window"
+statement_sha256: "a8c8101e716bdd5efc30a38a72e4cbba30902180afe0f0b6435180279be70907"
+substantive_worker_ids:
+  - 706
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A two-crossing leave-return under universal initial extenders forces a four-window"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T19:53:43.745887+00:00"
+version: 7

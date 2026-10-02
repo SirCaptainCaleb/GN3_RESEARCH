@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "6f3f72aa06fac1cfb39dba58b21f1757e831934cd8acdc8b399dddcebbb76d0d"
+created_at: "2026-09-25T20:35:18.132683+00:00"
+id: "whole_chords_pack_into_two_endpoint_vertexrank_zones"
+last_elevation_revision: null
+last_substantive_worker_id: 191
+legacy_id: "1001001"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "4809408e-74ef-4e11-839d-dded5d282458"
+    detail: "The unobstructed dichotomy localizes each opposite terminal to an endpoint segment of at most phi(endpoint)-R0 edges; linearity makes opposite terminals distinct, so the two 2D+1 capacities sum exactly as claimed. Title terminology was normalized non-substantively."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:44:08.014442+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "Stale-certificate reconfirmation: ed412ed8e3b1 changed only terminology; its splice dichotomy is mathematically unchanged, so the endpoint-zone counting proof remains valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_premise_impact_check:
+    checked_at: "2026-09-25T21:50:14.331777+00:00"
+    note: "Stale-certificate reconfirmation: ed412ed8e3b1 changed only terminology; its splice dichotomy is mathematically unchanged, so the endpoint-zone counting proof remains valid."
+    source_ids:
+      - "or_its_clean_source_rail_reintersects_the_opposite_side"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "corollary"
+origin_worker_id: 191
+parent_id: "or_its_clean_source_rail_reintersects_the_opposite_side"
+position: 1
+research_interface:
+  consequence: "High-rank whole chords exceeding the two endpoint-potential capacities must create distinguished second source/host intersections."
+  consumer:
+    - "common-anchor deficit recurrence"
+    - "paid strict-gap local congestion"
+    - "whole-pair braid overlap charging"
+  given:
+    - "ed412ed8e3b1 whole-chord endpoint-slack dichotomy"
+    - "linearity"
+  next_need: "For the common anchor precursor, bound the opposite endpoint potential or bound reuse/nesting of the forced second intersections. Either estimate turns this corollary into a sublinear rank-band bound."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "High-rank unobstructed whole chords pack into two endpoint vertex-rank zones."
+statement_sha256: "f036faef2d6ee10dff8ae84e603d7d44404022f71d9d282c5b260fef49118bf4"
+substantive_worker_ids:
+  - 191
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "High-rank unobstructed whole chords pack into two endpoint vertex-rank zones"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:51:44.90774+00:00"
+version: 9

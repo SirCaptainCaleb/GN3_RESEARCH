@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "e210fc226157cd099f36f155cf537665ad866fa443634f5a975e1f1e0fef4168"
+created_at: "2026-09-24T02:28:17.773225+00:00"
+id: "the_zeroslack_contracted_triple_graph_has_a_hamilton_path"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: "1000323"
+lifecycle_status: "retained"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_failure:
+    reason: "The Hamilton-cycle conclusion omits the c=2 edge case. Zero slack gives c=2k/3, and k=3 is not excluded by the statement, so c=2 can occur at the level of the stated hypotheses. The degree argument then gives the contracted simple graph R=K_2: it has a Hamilton path but no Hamilton cycle under the standard simple-graph definition. The proof itself only invokes Dirac for c>=3. The statement should say R always has a Hamilton path, and has a Hamilton cycle when c>=3 (or add c>=3 to the hypotheses)."
+    recorded_at: "2026-09-24T22:16:41.267387+00:00"
+  last_local_audit_repair:
+    reason: "Substantive audit repair: correct the c=2 edge case. The degree bound remains unchanged; conclude a Hamilton path for all c, and a Hamilton cycle only when c>=3."
+    recorded_at: "2026-09-25T01:41:40.389893+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "cores_collapse_to_a_onefactorized_graph_plus_disjoint_triples"
+position: 0
+research_interface:
+  consequence: "Ignoring colors and endpoint collisions, the contracted triple graph is Hamiltonian at the exact Dirac threshold."
+  consumer:
+    - "283f95e0c27e contraction lift"
+    - "grand induction"
+  given:
+    - "13500728c22f zero-slack model"
+  next_need: "Color-and-port selection theorem: along some Hamilton ordering of R, choose connectors with distinct D-colors and distinct ports at each internal triple."
+  role: "zero-slack contracted density"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "ecb6213780561bae605239f7939c4a553ea071708ae1098de53a96c7f41ea0b7"
+substantive_worker_ids:
+  - 225
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The zero-slack contracted triple graph has a Hamilton path"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:16:36.540366+00:00"
+version: 9

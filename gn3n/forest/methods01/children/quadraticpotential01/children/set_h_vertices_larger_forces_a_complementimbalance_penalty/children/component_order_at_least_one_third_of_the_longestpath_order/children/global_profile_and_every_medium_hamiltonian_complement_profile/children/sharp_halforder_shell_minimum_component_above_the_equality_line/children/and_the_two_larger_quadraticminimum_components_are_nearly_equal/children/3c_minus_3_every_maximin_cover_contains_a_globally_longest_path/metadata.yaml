@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "876180872aec6af0b47503af42c32d8a15618b33a7209e048bcf6c17d57bc04a"
+created_at: "2026-09-27T18:54:08.109599+00:00"
+id: "3c_minus_3_every_maximin_cover_contains_a_globally_longest_path"
+last_elevation_revision: 0
+last_substantive_worker_id: 569
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 203
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T19:00:58.552492+00:00"
+    worker_id: 573
+  last_audit_observation:
+    claim_id: 203
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T19:00:58.552492+00:00"
+    worker_id: 573
+object_type: "research"
+origin_worker_id: 569
+parent_id: "and_the_two_larger_quadraticminimum_components_are_nearly_equal"
+position: 1
+research_interface:
+  consumer: "quadratic global descent; maximin compression; longest-path endpoint transport"
+  given: "the sharp half-order boundary regime lambda=3c-3 for a secondarily normalized global quadratic minimum"
+  need: "compare the universal longest component across maximin covers, or use the balanced complement to force compatible endpoint transport"
+  produces: "every maximin three-cover contains a globally longest component; exact maximin profiles (lambda,rho,rho) or (lambda,rho+1,rho)"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "At lambda equals 3c minus 3 every maximin cover contains a globally longest path"
+statement_sha256: "ded7af034c168e91bc276625c558f5d12c1694162a138da50b115533e594d5ed"
+substantive_worker_ids:
+  - 569
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At lambda equals 3c minus 3 every maximin cover contains a globally longest path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 6

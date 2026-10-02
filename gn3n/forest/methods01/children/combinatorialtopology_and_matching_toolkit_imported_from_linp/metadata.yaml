@@ -1,0 +1,44 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "8cd1e57bdd5c0ff2390ac1a9b2afa606d0bb22aed96107ce720262befd547761"
+created_at: "2026-09-25T04:04:24.482833+00:00"
+id: "combinatorialtopology_and_matching_toolkit_imported_from_linp"
+last_elevation_revision: null
+last_substantive_worker_id: 698
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  copy_rpc: "control_center.copy_subtrees_between_projects"
+  import_kind: "trust_preserving_cross_project_toolkit"
+  source_project: "LINP"
+  source_repository_revision: 3622
+object_type: "research"
+origin_worker_id: 698
+parent_id: "methods01"
+position: 900
+research_interface:
+  consumer:
+    - "finite-state obstruction search"
+    - "endpoint-transport / defect-compression bridge"
+  working_route: "Look for antipodal/reversal symmetry, commutation squares, inward-pointing escape directions, or disjoint representative formulations in GN3N state spaces."
+research_level: "abstraction"
+semantic_container_text: "Reusable combinatorial-topology and matching toolkit: Sperner/Hex/Brouwer-type equivalences, Tucker and antipodal-coloring machinery, and hypergraph Hall/Ryser matching tools retained as general-purpose forcing methods for the project."
+simplified_statement: "A reusable combinatorial-topology and matching toolkit imported from LINP is available for GN3N arguments."
+statement_sha256: "0a842765883d40aa432d241623e75173023ed45602f878812ed55b2d17c2eb77"
+substantive_worker_ids:
+  - 698
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Reusable combinatorial-topology and matching toolkit imported from LINP"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:21.804103+00:00"
+version: 7

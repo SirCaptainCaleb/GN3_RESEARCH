@@ -1,8 +1,10 @@
 {
   "folder": "gn3n",
   "live_object_count": 1420,
-  "mirror_format": 1,
-  "repository_revision": 11502,
+  "mirror_format": 2,
+  "repository_revision": 11600,
+  "research_main_line_count": 6,
+  "research_main_lines_root_id": "proof_rehearsals01",
   "root_count": 9,
   "supabase_schema": "gn3n"
 }

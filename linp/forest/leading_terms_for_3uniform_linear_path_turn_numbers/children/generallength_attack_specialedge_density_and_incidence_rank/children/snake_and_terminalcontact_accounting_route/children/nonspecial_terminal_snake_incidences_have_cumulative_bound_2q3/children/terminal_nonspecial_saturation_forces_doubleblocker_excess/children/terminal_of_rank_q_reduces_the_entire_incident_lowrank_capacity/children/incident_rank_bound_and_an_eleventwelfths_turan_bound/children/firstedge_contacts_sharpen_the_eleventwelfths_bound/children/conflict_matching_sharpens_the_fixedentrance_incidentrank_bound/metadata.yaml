@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "7c11e79075c0b7031edfdbc26632b230fb6a91fddea72f0d0a1533b451cd78e0"
+created_at: "2026-09-24T12:31:52.69504+00:00"
+id: "conflict_matching_sharpens_the_fixedentrance_incidentrank_bound"
+last_elevation_revision: null
+last_substantive_worker_id: 258
+legacy_id: "1000163"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "The four forbidden singleton positions plus q-3 disjoint pair constraints partition W and force u+2d>=q+1, yielding floor((3q-3)/2). The parity/low-rank corrections in the global A and m bounds are algebraically correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "aca08fb0-02f3-4a55-9fa8-79721cd5ffba"
+    detail: "The four forbidden singleton positions plus q-3 disjoint pair constraints partition W and force u+2d>=q+1, yielding floor((3q-3)/2). The parity/low-rank corrections in the global A and m bounds are algebraically correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:17:44.163964+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 258
+parent_id: "firstedge_contacts_sharpen_the_eleventwelfths_bound"
+position: 0
+research_interface:
+  consequence: "Adds the missing first-end conflict pair and yields a rank-parity-sensitive additive improvement."
+  consumer:
+    - "grand general-length upper bound"
+    - "Astra fixed-entrance route"
+  given:
+    - "ascending last edge"
+    - "linearity"
+    - "fixed entrance phi(x)=q-1"
+    - "419519f0efa5 ascending-incidence inequality"
+  next_need: "Determine the exact weighted cover number of the full singleton-contact conflict graph and whether double-contact geometry forces further savings."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Full endpoint conflict matching sharpens the fixed-entrance incident-rank bound."
+statement_sha256: "377e0844374276f8cbcfb584fc65f46b2be673c21f1f5b38bc30d60eb23c46f5"
+substantive_worker_ids:
+  - 258
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Full endpoint conflict matching sharpens the fixed-entrance incident-rank bound"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

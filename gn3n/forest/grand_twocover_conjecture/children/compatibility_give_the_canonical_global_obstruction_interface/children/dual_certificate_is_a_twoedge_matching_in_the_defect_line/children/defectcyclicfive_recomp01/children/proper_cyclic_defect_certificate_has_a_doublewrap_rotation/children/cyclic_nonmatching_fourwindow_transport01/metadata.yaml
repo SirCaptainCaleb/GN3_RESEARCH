@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "99b79b26f724e1dd4cf7f998def7f0536684c014ab17f451852022faa8050ec0"
+created_at: "2026-09-29T18:35:51.77631+00:00"
+id: "cyclic_nonmatching_fourwindow_transport01"
+last_elevation_revision: 8786
+last_substantive_worker_id: 605
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T18:35:51.77631+00:00"
+  audit_resolution:
+    claim_id: 363
+    detail: "The certified double-wrap theorem gives a Hamiltonian four-window with pc2 complement in the connected cyclic-interval family; four_window_transport_allorders01 gives exactly the claimed alternatives."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:48:25.430063+00:00"
+    worker_id: 637
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 363
+    detail: "The certified double-wrap theorem gives a Hamiltonian four-window with pc2 complement in the connected cyclic-interval family; four_window_transport_allorders01 gives exactly the claimed alternatives."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:48:25.430063+00:00"
+    worker_id: 637
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-10-01T18:36:46.25886+00:00"
+object_type: "research"
+origin_worker_id: 605
+parent_id: "proper_cyclic_defect_certificate_has_a_doublewrap_rotation"
+position: 0
+research_interface:
+  consumer: "cyclic defect elimination; pairwise-repartition no-trapping; grand-theorem transport"
+  given: "a nonmatching proper minimum-span cyclic defect certificate"
+  produces: "inside its connected cyclic-interval cover family: a Hamiltonian four-window with pc2 complement, then small order, strict descent, or bounded pc2 transport"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every nonmatching proper cyclic defect certificate reaches four-window transport"
+statement_sha256: "f51c24ab20e8cb9bf80319fa4aaac9cf96b5ff2b262622324b7eab044a889199"
+substantive_worker_ids:
+  - 605
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every nonmatching proper cyclic defect certificate reaches four-window transport"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 7

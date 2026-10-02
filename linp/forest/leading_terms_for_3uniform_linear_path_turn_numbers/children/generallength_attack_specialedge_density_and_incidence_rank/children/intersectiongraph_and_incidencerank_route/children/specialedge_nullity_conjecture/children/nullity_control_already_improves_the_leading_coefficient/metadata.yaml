@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "d577dd7b7547b86160263cfad163d8529326daea6f568f7359bf68e7b31ae426"
+created_at: "2026-09-21T19:13:18.872189+00:00"
+id: "nullity_control_already_improves_the_leading_coefficient"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000563"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8a06994a-a08a-405f-ae77-57e35b485287"
+    detail: "Algebra checked independently from nullity=m-rank>=m-n and 2m+s<=(2ell-3)n; rearrangement and sharp C=1,D=0 specialization are correct."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T19:16:05.231379+00:00"
+    worker_id: "589b5b1e-202c-4553-9dd3-d8f1d14c9b54"
+  last_audit_observation:
+    claim_id: "8a06994a-a08a-405f-ae77-57e35b485287"
+    detail: "Algebra checked independently from nullity=m-rank>=m-n and 2m+s<=(2ell-3)n; rearrangement and sharp C=1,D=0 specialization are correct."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T19:16:05.231379+00:00"
+    worker_id: "589b5b1e-202c-4553-9dd3-d8f1d14c9b54"
+  last_premise_impact_check:
+    checked_at: "2026-09-23T14:08:01.366257+00:00"
+    note: "Premise replacement checked: 599c2c0d2adf preserves the special-edge hinge formerly supplied by 9f0fae709a7c; the incidence-rank premise is unchanged."
+    source_ids:
+      - "specialedge_criterion_and_the_23_snakecounting_ceiling"
+      - "and_the_twothirds_ceiling_of_unweighted_snake_counting"
+      - "incidencerank_spectral_identity"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  source_kind: "new_project_result"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "specialedge_nullity_conjecture"
+position: 20
+research_interface:
+  consumer: "leading-coefficient improvement"
+  given:
+    - "2m+s<=(2ell-3)n"
+    - "rank(N)<=n"
+  need: "it suffices to prove nullity(N)<=Cs+Dn for any absolute C>0,D>=0"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Any uniform bound nullity(N)≤Cs+Dn with fixed C>0 yields a P_ℓ-free edge bound whose leading coefficient is 2C/(2C+1)<1."
+statement_sha256: "2cfa23922ee4492207356b1106f03e23f22662ce79792a1e033674abb58af1d6"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Constant-factor nullity control already improves the leading coefficient"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:05:44.108025+00:00"
+version: 7

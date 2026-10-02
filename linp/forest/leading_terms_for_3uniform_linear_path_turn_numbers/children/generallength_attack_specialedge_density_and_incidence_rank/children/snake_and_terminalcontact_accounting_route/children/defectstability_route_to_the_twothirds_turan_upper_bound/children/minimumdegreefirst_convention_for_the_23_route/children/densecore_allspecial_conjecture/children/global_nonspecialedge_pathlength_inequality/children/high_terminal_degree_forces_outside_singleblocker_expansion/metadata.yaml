@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 4
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "747e3c094f200e7ef8ab460b5fedd438000e07aff72483c54c4357ce4290b5cf"
+created_at: "2026-09-24T01:18:09.77234+00:00"
+id: "high_terminal_degree_forces_outside_singleblocker_expansion"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000963"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  generalizes: "order-11/order-12 terminal blocker counting"
+  last_audit_observation:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  route: "general upper bound via blocker-expansion dichotomy"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "global_nonspecialedge_pathlength_inequality"
+position: 0
+research_interface:
+  consequence: "High terminal degree cannot hide entirely in double blockers: excess over L/terminal saturation is paid by distinct single blockers reaching outside the longest path."
+  consumer:
+    - "020f694f8767 dense-core all-special conjecture"
+    - "76ef6efb21e7 global nonspecial-edge path-length inequality"
+    - "Pósa endpoint expansion route"
+  given:
+    - "globally longest path ending in a maximum-rank nonspecial edge"
+    - "linearity"
+  next_need: "Convert many outside single blockers into many distinct safe rotations/endpoints, or show heavy collisions force alternating blocker cycles of the critical-order type."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "High terminal degree forces outside single-blocker expansion."
+statement_sha256: "ef57565a7a3ed4b4575d2c28a1ffe3325130ed2b5850f484b978254508590516"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "High terminal degree forces outside single-blocker expansion"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

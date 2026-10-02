@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 6
+body_sha256: "e2844fecf2095dd13cd8e5fe87f8726d328901ff349ae604d3e70d899e74d093"
+created_at: "2026-09-23T02:21:11.212332+00:00"
+id: "coupled_escapes_and_alternating_reconfiguration_squares"
+last_elevation_revision: 0
+last_substantive_worker_id: 721
+legacy_id: null
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent reconstruction after structural unary-chain recomposition."
+  audit_request_recorded_at: "2026-09-23T02:21:34.969591+00:00"
+  audit_resolution:
+    claim_id: 408
+    detail: "Recomposition faithfully preserves the certified trapped mixed-shell theorem, radius-2/3 coupled escapes, crosswise two-crossing restoration distances, and alternating-square/good-label-clique construction with the same hypotheses and constants."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:29:51.703537+00:00"
+    worker_id: 663
+  last_audit_observation:
+    claim_id: 408
+    detail: "Recomposition faithfully preserves the certified trapped mixed-shell theorem, radius-2/3 coupled escapes, crosswise two-crossing restoration distances, and alternating-square/good-label-clique construction with the same hypotheses and constants."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:29:51.703537+00:00"
+    worker_id: 663
+  recomposition: true
+  recomposition_audit:
+    backfilled: true
+    classified_at: "2026-09-23T03:45:16.180482+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  source_chain:
+    - "trapped_orderthirteen_states_force_a_mixed_deletion_shell"
+    - "traps_have_multiple_coupled_escapes_at_radius_at_most_three"
+    - "endpoint_twocrossing_state_is_a_radiusthree_onedefect_move"
+    - "covers_create_alternating_coupledsingletransfer_squares"
+  structural_replacement: true
+object_type: "research"
+origin_worker_id: 721
+parent_id: "repulsion_and_transfer_cliques_rigidify_radiusthree_equality"
+position: 0
+research_interface:
+  given: "a trapped order-13 D=1 state or a crosswise endpoint two-crossing state in the mu=6 shell"
+  need: "use the radius-three coupled geometry to rule out a trapped component or force compatibility/order transport"
+  produces: "mixed deletion shell; at least two coupled radius-at-most-three exits; explicit alternating Gamma/single-transfer squares and a good-label clique"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Trapped order-thirteen states force radius-three coupled escapes and alternating reconfiguration squares"
+statement_sha256: "4bf8acf8d73e165061b6f7ca6afc079076630fec65387b7f518e73001076f326"
+substantive_worker_ids:
+  - 721
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Trapped order-thirteen states force radius-three coupled escapes and alternating reconfiguration squares"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:24:00.739811+00:00"
+version: 17

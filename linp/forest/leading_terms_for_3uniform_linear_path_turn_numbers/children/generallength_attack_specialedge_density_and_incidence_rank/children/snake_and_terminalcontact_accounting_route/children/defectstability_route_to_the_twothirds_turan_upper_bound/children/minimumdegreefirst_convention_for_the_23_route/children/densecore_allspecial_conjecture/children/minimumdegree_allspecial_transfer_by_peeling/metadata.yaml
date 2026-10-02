@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "1fc7c1d81c6fd651d5bd56a2bd60476cb82e039f63c3988a8d74dbb1ef2fe47b"
+created_at: "2026-09-21T19:39:08.801156+00:00"
+id: "minimumdegree_allspecial_transfer_by_peeling"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000550"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_premise_impact_check:
+    checked_at: "2026-09-23T14:08:01.366257+00:00"
+    note: "Premise replacement checked: 599c2c0d2adf preserves the special-edge accounting inequality and coefficient criterion formerly supplied by 9f0fae709a7c."
+    source_ids:
+      - "specialedge_criterion_and_the_23_snakecounting_ceiling"
+      - "and_the_twothirds_ceiling_of_unweighted_snake_counting"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  source_kind: "new_project_result"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "densecore_allspecial_conjecture"
+position: 20
+research_interface:
+  consumer: "global Turan upper bound"
+  given: "an all-special theorem above minimum degree k"
+  specialization: "k=floor(2ell/3) gives leading coefficient 2/3"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Minimum-degree all-special transfer by peeling."
+statement_sha256: "a19264e6b459b00078c8bb9424bf7f088715d181c7e53f9bc33e618e23100aeb"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum-degree all-special transfer by peeling"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

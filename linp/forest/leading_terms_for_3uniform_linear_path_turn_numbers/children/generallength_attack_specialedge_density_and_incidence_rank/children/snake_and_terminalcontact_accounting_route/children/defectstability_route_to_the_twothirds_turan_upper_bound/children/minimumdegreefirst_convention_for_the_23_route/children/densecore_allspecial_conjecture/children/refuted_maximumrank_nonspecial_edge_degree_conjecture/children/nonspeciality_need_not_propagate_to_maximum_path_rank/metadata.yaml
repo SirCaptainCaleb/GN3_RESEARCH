@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2378a4db752a327bdc8cce25f7a56459878d84b0d75634ca5bd9ca117dbbb533"
+created_at: "2026-09-21T20:15:37.515197+00:00"
+id: "nonspeciality_need_not_propagate_to_maximum_path_rank"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000437"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "063c7130-9026-4c4d-bcac-51453302dfff"
+    detail: "Independent reconstruction of the displayed 6-edge example gives ranks (4,4,3,4,3,3); all rank-4 edges are special, while (0,1,7) has rank 3 with unique entrance 1. Thus nonspeciality need not occur at maximum rank."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:43:58.01996+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "063c7130-9026-4c4d-bcac-51453302dfff"
+    detail: "Independent reconstruction of the displayed 6-edge example gives ranks (4,4,3,4,3,3); all rank-4 edges are special, while (0,1,7) has rank 3 with unique entrance 1. Thus nonspeciality need not occur at maximum rank."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:43:58.01996+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  source_kind: "explicit_fence"
+object_type: "counterexample"
+origin_worker_id: 262
+parent_id: "refuted_maximumrank_nonspecial_edge_degree_conjecture"
+position: 20
+research_interface:
+  consumer: "unrestricted propagation of nonspeciality to maximum edge rank"
+  main_route_relevance: "outside the admissible minimum-degree regime; dense minimum degree may still force propagation"
+  minimum_degree: 1
+  role: "fence"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Nonspeciality need not propagate to maximum path rank."
+statement_sha256: "1cf82b7935f3020b7353622f9127935d411bd368192ea716d09971744acd3296"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Nonspeciality need not propagate to maximum path rank"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

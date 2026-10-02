@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "97e454b2f3219cf647768217ef458b048bd3ad0293dc68e2719113485dd841ee"
+created_at: "2026-09-24T05:20:34.679027+00:00"
+id: "consecutiverank_block_is_sufficient_for_the_1112_bound"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000764"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "abc22e41-88de-4258-9e11-581a6ae735e2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:57:46.576193+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "abc22e41-88de-4258-9e11-581a6ae735e2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:57:46.576193+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "a_threequarters_bound_after_subtracting_doublecontact_defect"
+position: 0
+research_interface:
+  consequence: "The critical local theorem can be weakened from forbidding four charged edges in two adjacent ranks to forbidding four after double contacts are credited. An excess edge is harmless if it is double on the chosen maximum terminal path."
+  consumer:
+    - "Astra 11/12 route"
+  given:
+    - "bed2a5868628 double-defect global reduction"
+    - "2665d2c81d39 rank-pair arithmetic"
+  next_need: "Prove the corrected two-rank block. Existing spacing eliminates every clean four-edge pattern except q(q+1)^3. For that equality pattern, show every four-edge realization has at least one double contact on P_v. The top-boundary case is much stronger: all three high edges are double by the all-visible crossed-terminal structure."
+research_level: "lemma"
+semantic_container_text: "The 11/12 quantitative branch: a defect-corrected consecutive-rank block reduces the remaining contact-snake obstruction to rigid odd central-boundary contact patterns and their local normal forms."
+simplified_statement: "A defect-corrected consecutive-rank block is sufficient for the 11/12 bound."
+statement_sha256: "111e32475bdae6094b7a37acdb9d1088f0b25ae7f0de4b0f8951276622d0d360"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A defect-corrected consecutive-rank block is sufficient for the 11/12 bound"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:27:16.5332+00:00"
+version: 7

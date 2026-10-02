@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "cfe1c7cf784be9df0e9659f7b1e2f9db6c5180edbb9ef9e597d129e83817fc6c"
+created_at: "2026-10-01T19:44:29.361898+00:00"
+id: "compatibility_degree4_prescribed_fan01"
+last_elevation_revision: 11097
+last_substantive_worker_id: 1151
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "compatibility_pathcycle_skeleton01"
+  audit_request_reason: "Verify opposite-side neighbor support incompatibility, path-cycle classification, and the ceil(2m/5) independent-set bound."
+  audit_request_recorded_at: "2026-10-01T19:55:45.092725+00:00"
+  audit_resolution:
+    claim_id: 1199
+    detail: "Independent check: compatible neighbors split by anchor side; each side-class is a clique, and three same-side neighbors with the anchor would violate four-cover gluing, so Delta(C)<=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
+  audit_trigger_kind: "chain_checkpoint"
+  isolated_research: true
+  last_audit_observation:
+    claim_id: 1199
+    detail: "Independent check: compatible neighbors split by anchor side; each side-class is a clique, and three same-side neighbors with the anchor would violate four-cover gluing, so Delta(C)<=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
+  strengthens: "compatibility_c4free_neartotal_fan01"
+object_type: "research"
+origin_worker_id: 1151
+parent_id: "compatibility_c4free_neartotal_fan01"
+position: 0
+research_interface:
+  consumer: "endpoint transport / defect compression"
+  producer: "prescribed-anchor deletion-cover crossing supply"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Without an order-disagreement pair, every deletion-cover anchor has at most four compatible neighbors, hence at least m-5 crossing covers."
+statement_sha256: "d38daa6a7401116357c4f5d543d5dba9fe913f918916732ba8b9e3f00488dccd"
+substantive_worker_ids:
+  - 1151
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Deletion-cover compatibility has maximum degree four, forcing prescribed-anchor crossing fans"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-02T00:14:35.276297+00:00"
+version: 9

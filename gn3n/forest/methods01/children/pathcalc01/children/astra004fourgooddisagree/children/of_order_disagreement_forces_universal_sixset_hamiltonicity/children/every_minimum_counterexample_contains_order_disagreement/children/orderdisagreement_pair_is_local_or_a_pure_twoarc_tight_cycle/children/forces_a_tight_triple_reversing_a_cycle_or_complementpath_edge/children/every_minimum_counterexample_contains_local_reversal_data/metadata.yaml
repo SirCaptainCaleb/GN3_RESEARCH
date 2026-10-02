@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "e947fb993f09de48637f91a99542fb0ed189b1ac66a7ce42f192292701c33cad"
+created_at: "2026-09-28T17:23:46.475896+00:00"
+id: "every_minimum_counterexample_contains_local_reversal_data"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Depends on aa6c87f1e473 as a meaningful minimal-disagreement normalization. Under the canonical definition, reversed two-vertex paths already give order disagreement, so the resulting local-reversal conclusion can be vacuous. Replace by a provenance-preserving composition from the substantial Hamilton-path disagreement constructed in 44a0c8ced13c."
+  audit_request_recorded_at: "2026-09-28T17:28:05.124504+00:00"
+  audit_resolution:
+    claim_id: 381
+    detail: "Replaced the vacuous two-vertex-path formulation by the substantial version obtained from 50137573941d and 1772cf5706fa: the reversed edge or reversing triple now arises from Hamilton paths of order at least five with at least five common vertices."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:57:06.47717+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 381
+    detail: "Replaced the vacuous two-vertex-path formulation by the substantial version obtained from 50137573941d and 1772cf5706fa: the reversed edge or reversing triple now arises from Hamilton paths of order at least five with at least five common vertices."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:57:06.47717+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Repair the vacuous two-vertex-path formulation by composing the substantial order-disagreement theorem 50137573941d with 1772cf5706fa; this preserves the intended local-reversal claim while making its nonvacuity explicit."
+    recorded_at: "2026-09-28T19:51:12.16144+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+object_type: "research"
+origin_worker_id: 700
+parent_id: "forces_a_tight_triple_reversing_a_cycle_or_complementpath_edge"
+position: 2
+research_interface:
+  consumer: "endpoint transport / defect compression; grand theorem proof composition"
+  given: "a minimum counterexample"
+  produces: "a reversed common edge between substantial Hamilton paths, or a tight triple reversing an edge of a Hamilton path of order at least five"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every minimum counterexample contains local reversal data."
+statement_sha256: "9d720fd6e60d9f317e8b180e1fd9fea48e03b27c7cbd1e58b635150c5efb6681"
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every minimum counterexample contains local reversal data"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:10:13.383674+00:00"
+version: 11

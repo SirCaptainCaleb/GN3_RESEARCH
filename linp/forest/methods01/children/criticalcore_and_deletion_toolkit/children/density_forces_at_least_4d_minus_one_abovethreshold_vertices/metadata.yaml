@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 6
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "311e8356fa78c559b3716ab5b11295041eac062296380f84d7fe403f4149d46b"
+created_at: "2026-09-24T03:31:39.305227+00:00"
+id: "density_forces_at_least_4d_minus_one_abovethreshold_vertices"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1001155"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Global excess above d+1 is (2d-1)n; bounding each high-degree vertex's excess by (n-2d-3)/2 forces at least 4d-1 such vertices, and the pathwise omission bound follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Global excess above d+1 is (2d-1)n; bounding each high-degree vertex's excess by (n-2d-3)/2 forces at least 4d-1 such vertices, and the pathwise omission bound follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "global high-degree mass strengthening"
+  uses:
+    - "every_equalitylayer_witness_omits_many_abovethreshold_vertices"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "criticalcore_and_deletion_toolkit"
+position: 180
+research_interface:
+  consequence: "The omitted high-degree packet is the shadow of a global set R of size at least 4d-1; every short witness necessarily misses many members of R."
+  consumer:
+    - "equality-layer induction"
+    - "high-degree packet route"
+  given:
+    - "exact density m=dn"
+    - "minimum degree d+1"
+    - "linearity"
+  next_need: "Exploit that the same fixed high-degree set R is missed substantially by every nonspecial witness. Compare multiple rotated witnesses: each can cover at most 2q+1 vertices of R, so sufficiently many witness states should force repeated omitted high-degree vertices or strong coverage constraints."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Exact density forces at least 4d minus one above-threshold vertices."
+statement_sha256: "31b3540d597f2745b1db7e5894f5b1053b68add267130f191ac053fb882286c7"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Exact density forces at least 4d minus one above-threshold vertices"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:46:21.495404+00:00"
+version: 8

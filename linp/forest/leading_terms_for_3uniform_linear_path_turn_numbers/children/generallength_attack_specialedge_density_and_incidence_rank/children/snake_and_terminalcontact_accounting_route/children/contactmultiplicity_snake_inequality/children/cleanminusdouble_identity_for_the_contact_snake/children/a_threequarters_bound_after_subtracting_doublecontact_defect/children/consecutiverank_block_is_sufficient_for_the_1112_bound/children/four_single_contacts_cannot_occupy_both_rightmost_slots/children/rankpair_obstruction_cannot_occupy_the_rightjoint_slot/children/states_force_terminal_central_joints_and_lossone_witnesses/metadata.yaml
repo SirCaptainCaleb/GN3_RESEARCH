@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "ec51ae90037f8cc08e418b1cf77726d262f290cc1ddb3804dad06f0235fb3a28"
+created_at: "2026-09-24T05:54:22.580935+00:00"
+id: "states_force_terminal_central_joints_and_lossone_witnesses"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1001035"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "pure-high odd-boundary label normal form"
+  uses:
+    - "entrance_forbids_the_immediately_preceding_firstcontact_cell"
+    - "rankpair_obstruction_cannot_occupy_the_rightprivate_slot_2"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "rankpair_obstruction_cannot_occupy_the_rightjoint_slot"
+position: 0
+research_interface:
+  consequence: "Every pure-high state contains a terminal-only central joint; missing-B and missing-D states collapse to a canonical loss-one wrong-entrance path with two further high edges available."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "p=2q-3"
+    - "four pure-high 0-1-1 single contacts"
+  next_need: "Use one of the remaining two high edges against the loss-one path. Any clean attachment to its far endpoint gives the missing +1 edge; otherwise its unique single contacts should be forced into the omitted central cells, producing a double contact on another terminal path."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Pure-high odd-boundary four-single states force terminal central joints and loss-one witnesses."
+statement_sha256: "a66d7547d7be18f53773162e782ed72b6ae8c3a0e5ed51fd352d9c999374b598"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Pure-high odd-boundary four-single states force terminal central joints and loss-one witnesses"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

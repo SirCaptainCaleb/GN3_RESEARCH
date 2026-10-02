@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "52670bbdddd7977609e058515a40442a7590c37c6f6609ffb297295d7c80093a"
+created_at: "2026-09-25T21:02:42.537011+00:00"
+id: "has_narrowband_capacity_unless_source_paths_overlap_twice"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: "1000859"
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "The D+1 conclusion is proved only when all x_i lie on one fixed side of z in R. The stated hypotheses do not impose this. If endpoints occur on both sides, equal-length alignment determines distance from z only up to a sign, so each rank permits two positions and the proof itself yields only m<=2(D+1). Add a same-side hypothesis or weaken the bound accordingly."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "a205927d-b8cb-4ece-8e10-917703d6de95"
+    detail: "The D+1 conclusion is proved only when all x_i lie on one fixed side of z in R. The stated hypotheses do not impose this. If endpoints occur on both sides, equal-length alignment determines distance from z only up to a sign, so each rank permits two positions and the proof itself yields only m<=2(D+1). Add a same-side hypothesis or weaken the bound accordingly."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_failure:
+    reason: "The D+1 conclusion is proved only when all x_i lie on one fixed side of z in R. The stated hypotheses do not impose this. If endpoints occur on both sides, equal-length alignment determines distance from z only up to a sign, so each rank permits two positions and the proof itself yields only m<=2(D+1). Add a same-side hypothesis or weaken the bound accordingly."
+    recorded_at: "2026-09-25T21:50:14.331777+00:00"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "a_rankbounded_cycle_or_an_equallength_entranceside_exchange"
+position: 0
+research_interface:
+  consequence: "A common return vertex supports at most D+1 exchanges on one side of the host path in an edge-rank band of width D unless two maximum source paths already have at least two common vertices; two sides give 2(D+1)."
+  consumer:
+    - "same-terminal selected strict-gap class"
+    - "common-return-vertex branch"
+    - "post-43/48 local congestion"
+  given:
+    - "equal-length exchange intervals sharing one return vertex"
+    - "5854d853a44b unique-intersection alignment"
+    - "ascending source rank phi(x_i)=r_i-1"
+  next_need: "Combine this gate bound with an interval-family decomposition for distinct return vertices. The remaining large families must distribute returns and therefore contain structured crossing/nested/disjoint exchange intervals; crossing is handled by 0b61bef44e7f."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "8e795d4bf6d7a25ff28c45756e2e0784026005390af0b9a71262436ce47e8c2d"
+substantive_worker_ids:
+  - 224
+support_reason: "The D+1 conclusion is proved only when all x_i lie on one fixed side of z in R. The stated hypotheses do not impose this. If endpoints occur on both sides, equal-length alignment determines distance from z only up to a sign, so each rank permits two positions and the proof itself yields only m<=2(D+1). Add a same-side hypothesis or weaken the bound accordingly."
+support_status: "blocked"
+title: "A common exchange return vertex has narrow-band capacity unless source paths overlap twice"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 8

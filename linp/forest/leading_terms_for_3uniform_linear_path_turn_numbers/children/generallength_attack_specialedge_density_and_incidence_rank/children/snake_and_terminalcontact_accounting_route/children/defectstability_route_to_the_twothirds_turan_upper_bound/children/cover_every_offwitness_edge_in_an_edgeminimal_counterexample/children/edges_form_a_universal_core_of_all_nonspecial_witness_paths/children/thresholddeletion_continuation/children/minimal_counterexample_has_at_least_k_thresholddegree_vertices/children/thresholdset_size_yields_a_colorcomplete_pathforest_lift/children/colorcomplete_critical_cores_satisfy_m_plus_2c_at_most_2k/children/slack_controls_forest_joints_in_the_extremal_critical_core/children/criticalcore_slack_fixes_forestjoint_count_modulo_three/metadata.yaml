@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 5
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a8cb3fcd4d9cb79d04203bad4b60421769b31e3b2e60651fec4fa0d80789ac48"
+created_at: "2026-09-24T02:34:13.363027+00:00"
+id: "criticalcore_slack_fixes_forestjoint_count_modulo_three"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000988"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "268d0a6f-82c1-4abd-a953-67c2e0e6ce03"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:43:27.172722+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "268d0a6f-82c1-4abd-a953-67c2e0e6ce03"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:43:27.172722+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "small-slack arithmetic classification"
+  uses:
+    - "slack_controls_forest_joints_in_the_extremal_critical_core"
+    - "privatevertex_slack_bounds_the_number_of_forest_joints"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "slack_controls_forest_joints_in_the_extremal_critical_core"
+position: 0
+research_interface:
+  consequence: "Each fixed slack layer reduces to finitely many matching-plus-local-defect forest shapes, with exact congruence restrictions."
+  consumer:
+    - "grand induction"
+    - "finite-defect template classification"
+  given:
+    - "critical-core slack stability"
+  next_need: "Analyze the effective-defect layers sigma-j=0,1,2,3 together with these congruence templates and the dense proper color graph."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Critical-core slack fixes forest-joint count modulo three."
+statement_sha256: "751c9549ca2156c4108f2078c03a45a962e34b62e54e7372d3c9fcbfa176899a"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Critical-core slack fixes forest-joint count modulo three"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:16:36.540366+00:00"
+version: 6

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b5dbf8e387334a7b844000dde3f451c67a4539a1d5780bccbbbca56533a40c24"
+created_at: "2026-09-25T20:49:58.68799+00:00"
+id: "either_shortcut_to_a_linear_cycle_or_expose_a_further_collision"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: "1000126"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "22a5d11a-8ffe-4ffd-9969-17e0e79d847f"
+    detail: "Checked the crossing-shortcut cycle order, classification of any extra intersection as a backward color-terminal collision, and the L and r_i bounds."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:03:57.459091+00:00"
+    worker_id: "314f9d8a-b50d-4323-b033-4c5c09dd9a01"
+  last_audit_observation:
+    claim_id: "22a5d11a-8ffe-4ffd-9969-17e0e79d847f"
+    detail: "Checked the crossing-shortcut cycle order, classification of any extra intersection as a backward color-terminal collision, and the L and r_i bounds."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:03:57.459091+00:00"
+    worker_id: "314f9d8a-b50d-4323-b033-4c5c09dd9a01"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "terminalshadow_collision_toolkit"
+position: 10
+research_interface:
+  consequence: "Crossing collision pairs have the same recursive form as nested pairs: either they directly close a nonspecial cycle or the obstruction is a strictly more local collision."
+  consumer:
+    - "crossing collision saturation"
+    - "fixed-cut congestion"
+    - "terminal-shadow cycle packing"
+  given:
+    - "two pairwise crossing backward collisions"
+    - "c9a012c1b82e backward direction"
+    - "f2925a904b8e cycle-rank bound"
+  next_need: "Saturate an ordered crossing family j_1<...<j_m<t<i_1<...<i_m. For consecutive crossing chords, rectangle collisions allow insertion; once saturated, any failed shortcut lies in a disjoint flank. Then extract edge-disjoint witness cycles from alternating levels."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two crossing backward collisions either shortcut to a linear cycle or expose a further collision."
+statement_sha256: "d8a323bb07c3710f506c3e0242ba240d1a3c083214cfe84ae426bb25eedda6c1"
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two crossing backward collisions either shortcut to a linear cycle or expose a further collision"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:13:31.222589+00:00"
+version: 9

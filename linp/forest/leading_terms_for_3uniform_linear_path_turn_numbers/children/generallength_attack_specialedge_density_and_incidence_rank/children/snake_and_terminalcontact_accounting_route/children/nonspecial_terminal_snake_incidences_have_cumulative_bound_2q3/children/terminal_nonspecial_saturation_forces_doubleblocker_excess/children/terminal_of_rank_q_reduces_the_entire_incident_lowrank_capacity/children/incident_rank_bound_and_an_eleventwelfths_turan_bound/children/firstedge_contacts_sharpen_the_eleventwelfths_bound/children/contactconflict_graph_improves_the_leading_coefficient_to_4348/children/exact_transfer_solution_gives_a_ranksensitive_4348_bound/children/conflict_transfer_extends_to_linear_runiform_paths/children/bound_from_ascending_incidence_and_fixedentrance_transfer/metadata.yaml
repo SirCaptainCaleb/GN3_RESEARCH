@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1d47170e1975ba9b4941a8372df6279dad25e63fbb8ab4fe3ea16d859ecd321a"
+created_at: "2026-09-24T12:55:08.143424+00:00"
+id: "bound_from_ascending_incidence_and_fixedentrance_transfer"
+last_elevation_revision: null
+last_substantive_worker_id: 258
+legacy_id: "1000588"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "3b2bad76-883c-4455-b8ab-60edaab8b36b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T20:58:43.768532+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  last_audit_observation:
+    claim_id: "3b2bad76-883c-4455-b8ab-60edaab8b36b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T20:58:43.768532+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+object_type: "theorem"
+origin_worker_id: 258
+parent_id: "conflict_transfer_extends_to_linear_runiform_paths"
+position: 0
+research_interface:
+  consequence: "The 3-uniform 43/48 coefficient is the r=3 specialization of (8r^2-10r+1)/(8r(r-1))."
+  consumer:
+    - "general r-uniform linear path Turan bounds"
+  given:
+    - "dcf886f98a51 r-uniform fixed-entrance transfer"
+    - "endpoint-path witness counting"
+  next_need: "Exploit higher contact multiplicity or destroy the four-state extremal cycle to improve this coefficient."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Global r-uniform bound from ascending incidence and fixed-entrance transfer."
+statement_sha256: "67f5cfdfe4bc81a689729be2bf7a3e807cf672533507c9880700e85cc7bc5d7c"
+substantive_worker_ids:
+  - 258
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Global r-uniform bound from ascending incidence and fixed-entrance transfer"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

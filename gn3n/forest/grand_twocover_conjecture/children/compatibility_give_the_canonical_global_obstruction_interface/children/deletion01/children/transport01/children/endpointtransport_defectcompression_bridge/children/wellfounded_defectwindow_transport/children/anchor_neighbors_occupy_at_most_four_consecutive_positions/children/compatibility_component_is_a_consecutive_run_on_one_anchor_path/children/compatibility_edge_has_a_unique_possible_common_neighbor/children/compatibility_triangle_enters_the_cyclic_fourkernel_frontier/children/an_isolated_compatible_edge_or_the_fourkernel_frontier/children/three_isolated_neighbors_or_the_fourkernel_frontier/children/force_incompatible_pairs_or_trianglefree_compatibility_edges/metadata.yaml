@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "5ebc65edd453f7e0dd64ca58012060c3ddf6b16e8a47b1d25a4a6f0450a72ff6"
+created_at: "2026-09-28T00:21:47.951606+00:00"
+id: "force_incompatible_pairs_or_trianglefree_compatibility_edges"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 62
+    detail: "Independent check: without endpoint triangles, each anchor contributes either at least two incompatible endpoint incidences or at least three triangle-free compatible endpoint incidences. Each unordered incompatible pair or triangle-free compatibility edge accounts for at most two directed endpoint incidences, yielding I>=|A| and Z>=3|B|/2, hence I+(2/3)Z>=n."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:50:47.409954+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 62
+    detail: "Independent check: without endpoint triangles, each anchor contributes either at least two incompatible endpoint incidences or at least three triangle-free compatible endpoint incidences. Each unordered incompatible pair or triangle-free compatibility edge accounts for at most two directed endpoint incidences, yielding I>=|A| and Z>=3|B|/2, hence I+(2/3)Z>=n."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:50:47.409954+00:00"
+    worker_id: 679
+object_type: "research"
+origin_worker_id: 688
+parent_id: "three_isolated_neighbors_or_the_fourkernel_frontier"
+position: 1
+research_interface:
+  consumer: "global compatibility-density and near-Mantel equality analysis"
+  given: "one chosen deletion cover for every vertex, with no endpoint compatibility triangle/four-kernel frontier anywhere"
+  need: "combine with exact Mantel density or near-extremal triangle structure to force a large incompatible family or an endpoint kernel"
+  produces: "global inequality I+(2/3)Z>=n between incompatible pairs and triangle-free compatibility edges"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Endpoint incidences force incompatible pairs or triangle-free compatibility edges."
+statement_sha256: "92942fbc25e3a0f14fd04897b1c4fe0c6e4fdb7f6948d263fe3d226e5bd4b020"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint incidences force incompatible pairs or triangle-free compatibility edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:48:18.367129+00:00"
+version: 6

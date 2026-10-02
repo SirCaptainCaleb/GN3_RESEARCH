@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "39f952e7c6c289e85e9f29ddbccbf79c82fdeb913e8229efd9d430f3f6b5c61f"
+created_at: "2026-09-25T19:16:48.779972+00:00"
+id: "overlap_yields_two_balanced_endpoint_lenses_per_label"
+last_elevation_revision: null
+last_substantive_worker_id: 200
+legacy_id: "1000722"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "06d7bf28-56d5-475d-91c8-e44eff1ca664"
+    detail: "The agreement pigeonhole loses exactly the stated factor two, both common-label cases are valid, the terminal-label case gives unique host-rail contact and first-index <=q_i-2, and the balanced-lens conclusion follows from the certified endpoint-lens lemma."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:36:04.553599+00:00"
+    worker_id: "8ac117d0-d449-4c1b-b412-a2d1dfffdc6a"
+  last_audit_observation:
+    claim_id: "06d7bf28-56d5-475d-91c8-e44eff1ca664"
+    detail: "The agreement pigeonhole loses exactly the stated factor two, both common-label cases are valid, the terminal-label case gives unique host-rail contact and first-index <=q_i-2, and the balanced-lens conclusion follows from the certified endpoint-lens lemma."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:36:04.553599+00:00"
+    worker_id: "8ac117d0-d449-4c1b-b412-a2d1dfffdc6a"
+object_type: "lemma"
+origin_worker_id: 200
+parent_id: "rankordered_source_rails_force_linear_distinguished_overlap"
+position: 0
+research_interface:
+  consequence: "A linear common-minimum-terminal family forces two high source rails to contain linearly many common labels all from one rank tier. Each label gives two balanced endpoint lenses; in the terminal-label branch the parent edge has exactly one contact with each host rail, at that terminal, and the contact is localized before edge q_i-1."
+  consumer:
+    - "7e6abf77cbc5 sublinear local paid two-terminal-gap bound"
+    - "9fba15f1495c paid two-terminal rank-gap family"
+    - "post-43/48 labeled source-rail route"
+  given:
+    - "f9b8f7df1398 rank-ordered distinguished source-rail overlap"
+    - "a7b7670e955a terminal vertex-rank versus edge-rank bound"
+    - "b35b0fd4e4cd balanced endpoint lens from a maximum-path contact"
+    - "813f5b668319 first-contact localization"
+    - "minimum-rank terminal assignment"
+  next_need: "Exploit the resulting two-host lens family under the source-clean, doubly-terminal-single, paid-certified hypotheses. The terminal branch now has exact single-contact attachments on both hosts; the entrance branch has canonical three-source-rail fans."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Same-type distinguished overlap yields two balanced endpoint lenses per label."
+statement_sha256: "6948e220aa3d135521d6c0e9f6929ab08c55e511c127d98be704145bfb639223"
+substantive_worker_ids:
+  - 200
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "Same-type distinguished overlap yields two balanced endpoint lenses per label"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 9

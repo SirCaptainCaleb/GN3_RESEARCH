@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "06d4c127ab5a123cfa6e44ba72cf7dc8cb2a1e057251f48f7ba617cbbcc3d0bc"
+created_at: "2026-10-01T19:55:33.138791+00:00"
+id: "support_crossings_or_anchorcentered_order_disagreement"
+last_elevation_revision: 11181
+last_substantive_worker_id: 1164
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "After the localized mathematical repair, simplified_statement still reflects the old false dichotomy by saying at least m-5 support-incompatible covers. It should be refreshed to distinguish support-incompatible from support-compatible/order-incompatible nonneighbors."
+      recorded_at: "2026-10-02T00:15:15.368274+00:00"
+      worker_id: 1193
+  audit_request_reason: "Independently reconstruct the anchor-side partition, Mantel count, and proof that same-side order disagreement must involve the anchor vertex."
+  audit_request_recorded_at: "2026-10-01T19:55:48.841158+00:00"
+  audit_resolution:
+    claim_id: 1196
+    detail: "Separated full-compatibility nonneighbors into support-incompatible and support-compatible/order-incompatible classes. The correct identity is s_x+o_x=m-1-p-q; when p+q<=4 there are at least m-5 such incompatible covers of either type, while p+q>=5 still forces the same-side neighbor-neighbor order disagreement centered at x. The same-side compatibility and Mantel count are unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-02T00:15:49.072216+00:00"
+    worker_id: 1193
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1196
+    detail: "Separated full-compatibility nonneighbors into support-incompatible and support-compatible/order-incompatible classes. The correct identity is s_x+o_x=m-1-p-q; when p+q<=4 there are at least m-5 such incompatible covers of either type, while p+q>=5 still forces the same-side neighbor-neighbor order disagreement centered at x. The same-side compatibility and Mantel count are unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-10-02T00:15:49.072216+00:00"
+    worker_id: 1193
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "The original quantitative conclusion identified every full-compatibility nonneighbor with support-incompatibility. A nonneighbor may instead be support-compatible but order-incompatible. The local repair separates these two classes; the earlier same-side compatibility and Mantel arguments are unchanged."
+    recorded_at: "2026-10-02T00:15:07.263575+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 1193
+  source: "isolated_research"
+  worker_id: 1164
+object_type: "research"
+origin_worker_id: 1164
+parent_id: "forces_a_sharp_linear_family_relative_to_one_fixed_support_cut"
+position: 0
+research_interface:
+  consumer: "endpoint transport, defect compression, compatibility-density route"
+  given: "any prescribed deletion-cover anchor and the family of chosen deletion covers"
+  implication: "replaces the global branch split by an anchor-local quantitative crossing-versus-centered-disagreement dichotomy"
+  produces: "near-total fixed-cut support crossings or an order disagreement localized at the anchor vertex"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every prescribed anchor either has at least m-5 support-incompatible crossing covers or two same-side compatible neighbors disagree in order only through the anchor vertex."
+statement_sha256: "0a201643f3d7e6568ed652f5100d74ed6fcedcf08099595d08b4734701883e3b"
+substantive_worker_ids:
+  - 1164
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every deletion-cover anchor forces near-total support crossings or anchor-centered order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T00:15:49.072216+00:00"
+version: 9

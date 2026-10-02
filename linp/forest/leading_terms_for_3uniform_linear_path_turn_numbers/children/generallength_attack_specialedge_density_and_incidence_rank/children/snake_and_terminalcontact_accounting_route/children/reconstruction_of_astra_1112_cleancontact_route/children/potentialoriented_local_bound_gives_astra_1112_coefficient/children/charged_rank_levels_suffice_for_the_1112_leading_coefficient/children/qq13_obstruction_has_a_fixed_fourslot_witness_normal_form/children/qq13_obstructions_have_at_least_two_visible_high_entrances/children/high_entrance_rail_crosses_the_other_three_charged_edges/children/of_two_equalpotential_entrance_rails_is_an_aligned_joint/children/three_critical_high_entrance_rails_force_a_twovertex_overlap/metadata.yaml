@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "8689837ee5b2232e6f6479d7df4c16dac93310b669cf983157f9dc2d723fb5c8"
+created_at: "2026-09-24T05:23:48.480284+00:00"
+id: "three_critical_high_entrance_rails_force_a_twovertex_overlap"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000404"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "abc22e41-88de-4258-9e11-581a6ae735e2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:57:46.576193+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "abc22e41-88de-4258-9e11-581a6ae735e2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:57:46.576193+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "of_two_equalpotential_entrance_rails_is_an_aligned_joint"
+position: 0
+research_interface:
+  consequence: "The three high rails cannot form a simple single-intersection braid. At least one pair has two distinct common vertices, so the residual obstruction contains a genuine two-rail theta/overlap."
+  consumer:
+    - "q,(q+1)^3 elimination"
+    - "Astra rail conflict matching"
+  given:
+    - "21dfd53c201f complete charged-edge transversality of high rails"
+    - "a15746990e9b unique-intersection alignment"
+  next_need: "Analyze two q-edge entrance rails with endpoint potentials q and at least two common vertices. Choose two consecutive common vertices along one rail. If their order agrees on the other rail, compare the two alternative segments; if the order reverses, the union contains a linear cycle. Use mandatory target labels to rule out complete segment coincidence and force a q+1 endpoint path or a short cycle with an ear."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three critical high entrance rails force a two-vertex overlap."
+statement_sha256: "1b81978c1aebf18c8b7704bd11063bf80418058f3177296c4f00b21be6f8a6fd"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three critical high entrance rails force a two-vertex overlap"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

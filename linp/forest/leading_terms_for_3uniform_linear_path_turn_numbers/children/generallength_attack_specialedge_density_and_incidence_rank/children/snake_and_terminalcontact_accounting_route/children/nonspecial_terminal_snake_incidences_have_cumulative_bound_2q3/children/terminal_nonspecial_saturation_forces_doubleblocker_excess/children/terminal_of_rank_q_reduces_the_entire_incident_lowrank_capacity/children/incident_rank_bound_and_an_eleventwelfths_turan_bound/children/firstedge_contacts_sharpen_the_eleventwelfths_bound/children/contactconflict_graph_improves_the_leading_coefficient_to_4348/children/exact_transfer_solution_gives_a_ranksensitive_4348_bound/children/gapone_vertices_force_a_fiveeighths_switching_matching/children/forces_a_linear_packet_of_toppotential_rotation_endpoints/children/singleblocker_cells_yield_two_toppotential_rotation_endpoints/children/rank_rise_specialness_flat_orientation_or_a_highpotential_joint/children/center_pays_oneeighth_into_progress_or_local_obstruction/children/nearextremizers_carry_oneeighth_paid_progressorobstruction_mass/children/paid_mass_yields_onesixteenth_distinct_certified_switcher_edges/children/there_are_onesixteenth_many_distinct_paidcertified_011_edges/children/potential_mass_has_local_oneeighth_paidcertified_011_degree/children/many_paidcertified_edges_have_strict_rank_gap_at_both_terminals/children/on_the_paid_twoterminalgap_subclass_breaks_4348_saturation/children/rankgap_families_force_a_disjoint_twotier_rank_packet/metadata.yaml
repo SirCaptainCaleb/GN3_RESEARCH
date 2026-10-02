@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "802d9f3d244a60e79b45768d5cbc7d7fb846b12c3ee037cbad95c926dcdb9468"
+created_at: "2026-09-25T12:14:36.017047+00:00"
+id: "rankgap_families_force_a_disjoint_twotier_rank_packet"
+last_elevation_revision: null
+last_substantive_worker_id: 211
+legacy_id: "1000406"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent check of the disjointness argument and summation from the certified charged central-window rank ordering."
+  audit_request_recorded_at: "2026-09-25T12:14:46.612524+00:00"
+  audit_resolution:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: linearity makes all non-v pairs disjoint; 220a14637b5f applies on a maximum p-edge path since q_i<p; phi(x_i)=q_i-1 gives the k(k-1)/8 entrance-rank bonus, and phi(u_i)>=p gives the second tier."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  last_audit_observation:
+    claim_id: "253df8a8-717a-49ec-bb1a-b0d0e01b014b"
+    detail: "Independent check: linearity makes all non-v pairs disjoint; 220a14637b5f applies on a maximum p-edge path since q_i<p; phi(x_i)=q_i-1 gives the k(k-1)/8 entrance-rank bonus, and phi(u_i)>=p gives the second tier."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:07:11.729175+00:00"
+    worker_id: "4096204f-020f-40fb-847b-515f2fb100d3"
+  last_local_audit_repair:
+    reason: "Localized audit repair: replace the unnecessarily charged 6959dc2c0376 citation by certified path-relative theorem 220a14637b5f, whose hypotheses exactly match the statement; no mathematical content or bound changed."
+    recorded_at: "2026-09-25T18:17:53.15666+00:00"
+    worker_id: "5f9d4036-eb9a-492f-a8ab-c8f7f2f131d3"
+object_type: "lemma"
+origin_worker_id: 263
+parent_id: "on_the_paid_twoterminalgap_subclass_breaks_4348_saturation"
+position: 0
+research_interface:
+  consequence: "A linear local rank-oriented family cannot be hidden in one resource: it simultaneously consumes k distinct vertices of rank at least p and a disjoint unique-entrance packet with a quadratic-in-k vertex-rank bonus."
+  consumer:
+    - "7e6abf77cbc5 paid two-terminal-gap local bound"
+    - "post-43/48 global reuse route"
+    - "vertex-rank superlevel packing"
+  given:
+    - "220a14637b5f path-relative central-window packing"
+    - "linearity"
+    - "ascending nonspecial edges assigned to a minimum-rank terminal"
+  next_need: "Globalize reuse of the two packets for the paid source-clean doubly-terminal-single subclass. If high-rank opposite terminals are heavily reused across assigned vertices, combine their terminal-capacity/blocker structure with unique-entrance-packet reuse; if either packet has low reuse, obtain expansion."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Minimum-terminal rank-gap families force a disjoint two-tier rank packet."
+statement_sha256: "04b1ce6c5276f8df9bb9a6df3b20c73dbf1779320e6a13c119e46356865fecb7"
+substantive_worker_ids:
+  - 263
+  - 211
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum-terminal rank-gap families force a disjoint two-tier rank packet"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 12

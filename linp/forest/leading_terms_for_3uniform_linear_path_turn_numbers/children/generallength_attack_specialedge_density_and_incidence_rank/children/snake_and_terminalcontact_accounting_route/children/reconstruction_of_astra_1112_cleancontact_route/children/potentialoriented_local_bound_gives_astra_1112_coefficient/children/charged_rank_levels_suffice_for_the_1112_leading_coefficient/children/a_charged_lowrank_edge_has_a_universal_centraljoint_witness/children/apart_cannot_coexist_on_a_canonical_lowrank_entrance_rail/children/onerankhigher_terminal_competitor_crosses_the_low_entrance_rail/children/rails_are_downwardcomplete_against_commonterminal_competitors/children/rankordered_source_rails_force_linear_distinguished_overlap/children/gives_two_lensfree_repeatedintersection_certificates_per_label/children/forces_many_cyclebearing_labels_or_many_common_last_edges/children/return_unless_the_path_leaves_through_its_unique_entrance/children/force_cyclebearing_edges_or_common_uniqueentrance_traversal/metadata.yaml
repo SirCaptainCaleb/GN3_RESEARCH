@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "56dedb4fa8a4f480fa10936ac6bdcd4c606caa104e5a74871662a84c6be15cf1"
+created_at: "2026-09-25T21:29:00.793674+00:00"
+id: "force_cyclebearing_edges_or_common_uniqueentrance_traversal"
+last_elevation_revision: null
+last_substantive_worker_id: 191
+legacy_id: "1000997"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "After removing host last edges, every common h is internal and has rank exceeding both host lengths. If either forward joint is terminal at h, 0000bd602854 plus 41100a9882dd yields a cycle containing h; otherwise h is nonspecial and both hosts must leave h through its unique entrance. The half-size dichotomy follows."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "After removing host last edges, every common h is internal and has rank exceeding both host lengths. If either forward joint is terminal at h, 0000bd602854 plus 41100a9882dd yields a cycle containing h; otherwise h is nonspecial and both hosts must leave h through its unique entrance. The half-size dichotomy follows."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "corollary"
+origin_worker_id: 191
+parent_id: "return_unless_the_path_leaves_through_its_unique_entrance"
+position: 0
+research_interface:
+  consequence: "A linear packet of common edges whose ranks exceed both host lengths reduces directly to many cycle-bearing edges or many common nonspecial edges that both hosts leave through the same unique entrance."
+  consumer:
+    - "type-U same-terminal strict-gap branch"
+    - "ordered source-path overlap analysis"
+    - "post-43/48 local congestion"
+  given:
+    - "0000bd602854 higher-rank internal-edge suffix-return lemma"
+    - "41100a9882dd repeated endpoint-on-path intersection gives a cycle or shared last edge"
+    - "two maximum endpoint paths sharing T edges whose edge ranks exceed both path lengths"
+  next_need: "Cycle-bearing branch: use that the distinguished common edge has edge rank at least p and lies on both shorter source paths; seek bounded reuse or a cycle-overlap packing theorem. Common-entrance branch: analyze the order of these common edges on A and B and the intervening path segments; any nontrivial divergence must respect the same unique-entrance orientation at every common edge."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Many common high-rank edges of two endpoint paths force either many cycle-bearing common edges or many common nonspecial edges traversed through their unique entrances."
+statement_sha256: "7ffb425d7b818cb740d39c5a585aa00c51b2c540fb8f2fcbef54e961924af4f3"
+substantive_worker_ids:
+  - 191
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Many common higher-rank edges force cycle-bearing edges or common unique-entrance traversal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T22:04:59.345731+00:00"
+version: 6

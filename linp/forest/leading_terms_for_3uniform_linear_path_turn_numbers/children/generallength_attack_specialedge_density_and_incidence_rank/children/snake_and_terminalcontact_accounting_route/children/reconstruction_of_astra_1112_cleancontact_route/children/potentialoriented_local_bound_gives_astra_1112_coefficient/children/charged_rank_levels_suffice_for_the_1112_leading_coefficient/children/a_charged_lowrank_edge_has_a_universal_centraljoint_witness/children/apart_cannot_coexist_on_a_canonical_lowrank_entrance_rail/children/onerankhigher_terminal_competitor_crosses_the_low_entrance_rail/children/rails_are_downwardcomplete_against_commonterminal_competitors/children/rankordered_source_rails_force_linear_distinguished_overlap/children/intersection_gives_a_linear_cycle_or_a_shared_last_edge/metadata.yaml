@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a18061c825a09db75ec7671a71e4945e8dcc2ae76f2f152eb0eb360277c1aab6"
+created_at: "2026-09-25T21:16:12.68965+00:00"
+id: "intersection_gives_a_linear_cycle_or_a_shared_last_edge"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: "1000301"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "The repeated-intersection argument correctly extracts a shortest/nearest common-vertex segment; unless the terminal edge is shared, the two corresponding subpaths close a genuine linear cycle. This is the standard path-union obstruction needed by the downstream repeated-intersection route."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "The repeated-intersection argument correctly extracts a shortest/nearest common-vertex segment; unless the terminal edge is shared, the two corresponding subpaths close a genuine linear cycle. This is the standard path-union obstruction needed by the downstream repeated-intersection route."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "rankordered_source_rails_force_linear_distinguished_overlap"
+position: 1
+research_interface:
+  consequence: "Repeated endpoint-on-path intersection has only two topological forms relevant here: a genuine linear cycle or shared-last-edge containment. No balanced-lens assertion is needed."
+  consumer:
+    - "U_11 repeated source-path intersections"
+    - "endpoint-return analysis"
+    - "maximum-path overlap classification"
+  given:
+    - "two linear paths"
+    - "last vertex of one path lies on the other"
+    - "a second common vertex"
+  next_need: "Apply to repeated source-path pairs from 802cfb1d27f2. The non-cycle residue is literal containment of the lower-rank source path last edge in the higher-rank source path; bound reuse of these shared last edges."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A repeated endpoint-on-path intersection gives a linear cycle or a shared last edge."
+statement_sha256: "d3780dff907014802a3c83297c6e4c1f7e697391d86670949ab7dee92f008f4d"
+substantive_worker_ids:
+  - 220
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A repeated endpoint-on-path intersection gives a linear cycle or a shared last edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 5

@@ -1,0 +1,59 @@
+atlas_height: "2"
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "6c51053a379ebe97088eee5ff9589bda5d1b1a94f588153097262000470cd58d"
+created_at: "2026-09-28T01:20:56.667599+00:00"
+id: "terminalfrontier_recomp01"
+last_elevation_revision: null
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 68
+    detail: "Independent reconstruction succeeds. Size gaps at least two are exhausted by the certified size-gap compression; all-equal profiles enter the certified endpoint-probe compression; nonuniform equitable profiles reduce via the gap-one dichotomy to paired noninsertion or Phi-neutral transfer. In the two-large/one-small neutral subcase, absence of order disagreement normalizes each transferred label to insertion in the displayed smaller path; uniqueness and the two-label insertion lemmas leave only a common endpoint gap after the Hamiltonian enlargement, reverse-cross, and Hamiltonian-four-set branches are removed. The final donor-end alignment follows from the direct two-cover contradiction plus boundary reversal. The statement correctly leaves general neutral gap-one transport unresolved outside that conditional two-large subcase."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:02.702405+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 68
+    detail: "Independent reconstruction succeeds. Size gaps at least two are exhausted by the certified size-gap compression; all-equal profiles enter the certified endpoint-probe compression; nonuniform equitable profiles reduce via the gap-one dichotomy to paired noninsertion or Phi-neutral transfer. In the two-large/one-small neutral subcase, absence of order disagreement normalizes each transferred label to insertion in the displayed smaller path; uniqueness and the two-label insertion lemmas leave only a common endpoint gap after the Hamiltonian enlargement, reverse-cross, and Hamiltonian-four-set branches are removed. The final donor-end alignment follows from the direct two-cover contradiction plus boundary reversal. The statement correctly leaves general neutral gap-one transport unresolved outside that conditional two-large subcase."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:25:02.702405+00:00"
+    worker_id: 694
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T01:21:25.210512+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+object_type: "research"
+origin_worker_id: 582
+parent_id: "grand_twocover_conjecture"
+position: 0
+research_interface:
+  consumer: "grand theorem closure"
+  given: "trapped Phi-minimal spanning three-cover in a minimum counterexample"
+  produces: "canonical scale-independent closure witnesses, with the only remaining neutral-transfer residue localized to a common endpoint gap and aligned donor ends unless a reversed join is exposed"
+research_level: "theorem"
+semantic_container_text: "Terminal quadratic-minimum frontier: canonical closure witnesses eliminate structureless neutral transport; the remaining unique-large and unique-small residues localize to donor insertion gaps or short aligned transfer cycles and then force standard transport disturbance, order disagreement, reverse crossing, or a bounded Hamiltonian window."
+simplified_statement: "Terminal quadratic minima reduce to canonical closure witnesses or an aligned same-end neutral transfer"
+statement_sha256: "74b9f820a395b0114744825cc3db95ea7ec4e0af198197f8b5bc963fb3400c09"
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal quadratic minima reduce to canonical closure witnesses or an aligned same-end neutral transfer"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:52.602761+00:00"
+version: 7

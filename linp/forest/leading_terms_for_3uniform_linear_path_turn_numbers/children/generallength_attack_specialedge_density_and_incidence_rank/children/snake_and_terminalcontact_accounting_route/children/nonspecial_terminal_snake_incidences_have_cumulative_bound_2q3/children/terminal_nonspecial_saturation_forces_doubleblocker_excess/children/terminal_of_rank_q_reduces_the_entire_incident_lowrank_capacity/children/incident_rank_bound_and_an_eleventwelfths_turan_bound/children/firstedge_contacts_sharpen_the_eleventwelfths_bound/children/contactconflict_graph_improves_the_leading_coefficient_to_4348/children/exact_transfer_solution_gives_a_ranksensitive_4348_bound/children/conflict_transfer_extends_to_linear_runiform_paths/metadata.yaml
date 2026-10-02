@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "5987f9df31e65a4110cd8f70fca4bee70a7ac1c534bab2e9ced174a383259df8"
+created_at: "2026-09-24T12:51:43.885351+00:00"
+id: "conflict_transfer_extends_to_linear_runiform_paths"
+last_elevation_revision: null
+last_substantive_worker_id: 258
+legacy_id: "1000987"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "94e4b2bb-b275-4249-a93a-aa351ce59f72"
+    detail: "Independent reconstruction verifies the general-r contact partition, both boundary forbidden families, the two-step singleton conflict rule, the four-state weighted recurrence and base residue vectors, endpoint contribution alpha_r, and conversion from singleton capacity to |J_q(v)|. For r=3 the formula reduces exactly to the certified floor((11q-5)/8) bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:05:48.113503+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "94e4b2bb-b275-4249-a93a-aa351ce59f72"
+    detail: "Independent reconstruction verifies the general-r contact partition, both boundary forbidden families, the two-step singleton conflict rule, the four-state weighted recurrence and base residue vectors, endpoint contribution alpha_r, and conversion from singleton capacity to |J_q(v)|. For r=3 the formula reduces exactly to the certified floor((11q-5)/8) bound."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:05:48.113503+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "theorem"
+origin_worker_id: 258
+parent_id: "exact_transfer_solution_gives_a_ranksensitive_4348_bound"
+position: 0
+research_interface:
+  consequence: "The true invariant is a two-step cell exclusion: one occupied singleton cell kills one next-cell joint and r-2 private vertices two cells later. Its four-state cycle has weight 2r-3 per four cells, yielding local slope (6r-7)/8."
+  consumer:
+    - "r-uniform linear Turan program"
+    - "abstract endpoint-potential methods"
+  given:
+    - "linear r-uniform path geometry"
+    - "unique ascending entrance"
+    - "fixed-entrance splice"
+  next_need: "Derive the r-uniform analogue of the global ascending-incidence identity, then combine it with this local theorem; separately test whether higher contact multiplicities yield a stronger r-dependent correction."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The fixed-entrance conflict transfer extends to linear r-uniform paths."
+statement_sha256: "b848b572023c87c92c03660d77588e4e72c23db0fbed13bfd7ff90c97f0f1843"
+substantive_worker_ids:
+  - 258
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The fixed-entrance conflict transfer extends to linear r-uniform paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 6
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "13dd833739a2d29d4d52386c90f6a76624a721edcfbef53a91174b83d799ce50"
+created_at: "2026-09-24T03:47:23.078524+00:00"
+id: "maximum_path_omits_a_large_higherpotential_terminal_packet"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000869"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d8bd2e70-cc87-4e06-a9e0-28666a0959c6"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:39:43.578593+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "d8bd2e70-cc87-4e06-a9e0-28666a0959c6"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:39:43.578593+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "pair-universal pathwise branching"
+  uses:
+    - "degreepotential_defect_exactly_into_clean_ascending_sources"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "degreepotential_defect_exactly_into_clean_ascending_sources"
+position: 0
+research_interface:
+  consequence: "Every maximum path at the universal source omits a large disjoint packet of higher-potential terminals; at top-minus-one source potential the omitted packet has size 12/8/10 by residue."
+  consumer:
+    - "s=2 equality layer"
+    - "common-entrance fan route"
+  given:
+    - "pair-universal vertex"
+    - "maximum endpoint path"
+  next_need: "Exploit repeated maximum paths at v. If the omitted top-potential packets vary, rotations generate many top vertices; if they overlap heavily, one source edge is clean for many distinct entrance rails, inviting a two-rail uncrossing contradiction."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every universal-star maximum path omits a large higher-potential terminal packet."
+statement_sha256: "12812559facbd5827288f614402ae32b4fc8a7e4df0d220080b8d25647864ad3"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every universal-star maximum path omits a large higher-potential terminal packet"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

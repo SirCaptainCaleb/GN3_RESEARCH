@@ -1,0 +1,44 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "29ab82347b58f08209068590c31e235e6826d0dc01737c42ff22e544d8e17dab"
+created_at: "2026-09-21T21:18:22.029908+00:00"
+id: "global_compensated_ascendingdefect_bound"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1001002"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proposal"
+metadata:
+  route: "global compensation"
+  source_kind: "new_project_proposal"
+object_type: "proposal"
+origin_worker_id: 262
+parent_id: "ascendingaccounting_continuation"
+position: 0
+research_interface:
+  consumer: "general leading-coefficient improvement"
+  given:
+    - "refined ascending-edge accounting"
+    - "Minty-type potential"
+    - "local counterexample to pointwise control"
+  need: "prove A-H_2<=Cn for some absolute C; sharp C=3/2 would match the three-center family"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "a918db9eb3f63b810d414b82a8cfe60ec74b24becca54da0f64970b9ea96bb3d"
+substantive_worker_ids:
+  - 262
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Global compensated ascending-defect bound"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:16:45.054878+00:00"
+version: 3

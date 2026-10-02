@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "58c536626ea0db2464f854089267d8c211ad9de8b985a73332e94ed4b06b393f"
+created_at: "2026-09-28T20:28:47.864389+00:00"
+id: "recomp_reciprect_01"
+last_elevation_revision: 0
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 448
+    detail: "Replaced unnamed clean/witness/rectangle language by f90ca42caa5d and 37f7522678f7, and stated the t,s and five-block quotient conclusions directly."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:34:56.248301+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 448
+    detail: "Replaced unnamed clean/witness/rectangle language by f90ca42caa5d and 37f7522678f7, and stated the t,s and five-block quotient conclusions directly."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:34:56.248301+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Final language-precision cleanup: state the t,s and five-block conclusion directly without multiple-crossing/rigid-form shorthand."
+    recorded_at: "2026-09-28T20:33:33.270493+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  recomposition_audit:
+    classified_at: "2026-09-28T20:28:49.442131+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 586
+parent_id: "endpointtransport_defectcompression_bridge"
+position: 0
+research_interface:
+  consumer: "endpoint restoration and reciprocal-crossing analysis"
+  given: "an order-preserving comparison between an inherited three-path cover J and an endpoint-deletion two-cover T in the reciprocal-crossing all-equal endpoint-probe setting"
+  produces: "an explicit reverse triple, a leave-and-return excursion, reciprocal multiplicity s at least two, and when t>=3 with no leave-and-return and s=2 the exact five-block quotients J=2K2 plus an isolated block and T=P3 plus K2"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Reciprocal comparison gives a reverse triple, leave-and-return, s>=2, or the five-block quotient."
+statement_sha256: "da9403c617092a1e6024fcb4c4f015d84bff07de9121843d2c228f2f40adf228"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Reciprocal comparison gives a reverse triple, leave-and-return, s>=2, or the five-block quotient"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:34:56.248301+00:00"
+version: 8

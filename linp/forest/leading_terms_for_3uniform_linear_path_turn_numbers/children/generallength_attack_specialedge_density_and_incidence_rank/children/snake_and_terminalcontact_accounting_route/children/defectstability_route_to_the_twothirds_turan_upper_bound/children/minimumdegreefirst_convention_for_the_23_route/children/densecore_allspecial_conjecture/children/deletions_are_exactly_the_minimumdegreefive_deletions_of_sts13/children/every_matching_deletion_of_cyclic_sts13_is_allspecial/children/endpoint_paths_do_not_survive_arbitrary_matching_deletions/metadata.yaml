@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 45
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "36c75a6647147a7a5a4c5032837de249b29a3801d349f5c551dbefcfbcf2b7d0"
+created_at: "2026-09-23T21:35:32.328765+00:00"
+id: "endpoint_paths_do_not_survive_arbitrary_matching_deletions"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000210"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "90d413a1-5251-4e58-b3cc-47f91a4f3775"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:13:33.119169+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "90d413a1-5251-4e58-b3cc-47f91a4f3775"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:13:33.119169+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "counterexample"
+origin_worker_id: 225
+parent_id: "every_matching_deletion_of_cyclic_sts13_is_allspecial"
+position: 0
+research_interface:
+  consumer: "all_matching_deletions_of_cyclic_sts13_are_allspecial"
+  next_need: "Construct additional A0-ending spanning paths beyond the C3 affine-stabilizer orbit, or use a structural minimum-degree/rotation proof."
+  role: "route fence"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three affine endpoint paths do not survive arbitrary matching deletions."
+statement_sha256: "9eedb3ac27664d3d9c11566ce36c905010934da66865694bf06e790e7ad827d5"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three affine endpoint paths do not survive arbitrary matching deletions"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:51:31.687677+00:00"
+version: 8

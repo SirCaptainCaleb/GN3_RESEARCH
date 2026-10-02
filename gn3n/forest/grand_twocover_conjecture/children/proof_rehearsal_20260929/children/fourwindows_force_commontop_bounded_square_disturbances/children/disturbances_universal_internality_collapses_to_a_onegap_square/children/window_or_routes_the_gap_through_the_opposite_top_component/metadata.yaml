@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1156115142474e99ce6433f07ff03e45b8145928e9f4e947f11224494605483d"
+created_at: "2026-10-01T13:56:39.996782+00:00"
+id: "window_or_routes_the_gap_through_the_opposite_top_component"
+last_elevation_revision: 10938
+last_substantive_worker_id: 1062
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent check requested for the one-gap lower-square block classification and positioned small-window alternative."
+  audit_request_recorded_at: "2026-10-01T13:56:47.294667+00:00"
+  audit_resolution:
+    claim_id: 1114
+    detail: "Independent reconstruction passes. The cases according to the number of lower-cover transitions incident with the singleton gap exhaust the two-transition block structure; the replacement arguments correctly contradict universal internality/non-Hamiltonicity unless one of the four stated outcomes occurs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
+  audit_trigger_kind: "explicit"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 1114
+    detail: "Independent reconstruction passes. The cases according to the number of lower-cover transitions incident with the singleton gap exhaust the two-transition block structure; the replacement arguments correctly contradict universal internality/non-Hamiltonicity unless one of the four stated outcomes occurs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
+object_type: "research"
+origin_worker_id: 1062
+parent_id: "disturbances_universal_internality_collapses_to_a_onegap_square"
+position: 0
+research_interface:
+  consumer: "finite obstruction closure; endpoint transport; common-top square consumption"
+  given: "the rigid one-gap square residue of disturbances_universal_internality_collapses_to_a_onegap_square and a lower two-cover in two-transition intact-block normal form"
+  implication: "after the standard disturbances are removed, the singleton gap has no direct lower-cover attachment to L or R"
+  produces: "order disagreement, a positioned four/five-window through the one-gap triple, or one of two sharply localized Q-attachment patterns"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In the exact one-gap residue, excluding order disagreement and positioned small Hamiltonian windows forces the singleton gap to avoid both same-path blocks: it is either terminal next to the opposite component Q, or isolated while Q bridges L to R in top order."
+statement_sha256: "c54b68322e56392f492b9c0cfb4a57fe9ef70dc0d2a34e0f6d0b07ecae3c6720"
+substantive_worker_ids:
+  - 1062
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "A one-gap lower square either produces a positioned small window or routes the gap through the opposite top component"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T17:44:05.595432+00:00"
+version: 10

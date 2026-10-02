@@ -1,0 +1,72 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a4bc9d5c05a7e2e107e86dd3b688998bb196bc4e87d9e2f8423415a0c1b22720"
+created_at: "2026-09-22T14:54:03.394605+00:00"
+id: "lowdimensional_cube_forcing_before_the_general_norine_proof"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: "1000581"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "efe839e8-a302-49bc-9c77-c2cb3b8d8fc1"
+    detail: "Verified against Feder--Subi (Discrete Appl. Math. 161 (2013), 1421--1426, DOI 10.1016/j.dam.2012.12.025), West--Wise (Discuss. Math. Graph Theory 39 (2019), 271--284), and Džavoronok arXiv:2606.04181. Feder--Subi prove the simple-labeling/no-alternating-square monochromatic antipodal-path theorem without requiring antipodality and establish their 1-switch conjecture for n<=5. West--Wise prove every antipodal edge-coloring of Q_k has a monochromatic antipodal geodesic for 2<=k<=6 and explicitly use alternating-4-cycle/local propagation arguments for Q4--Q6. Džavoronok states the centrally symmetric simply connected 2-complex criterion described. The repository summary is faithful."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:51:20.969626+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "efe839e8-a302-49bc-9c77-c2cb3b8d8fc1"
+    detail: "Verified against Feder--Subi (Discrete Appl. Math. 161 (2013), 1421--1426, DOI 10.1016/j.dam.2012.12.025), West--Wise (Discuss. Math. Graph Theory 39 (2019), 271--284), and Džavoronok arXiv:2606.04181. Feder--Subi prove the simple-labeling/no-alternating-square monochromatic antipodal-path theorem without requiring antipodality and establish their 1-switch conjecture for n<=5. West--Wise prove every antipodal edge-coloring of Q_k has a monochromatic antipodal geodesic for 2<=k<=6 and explicitly use alternating-4-cycle/local propagation arguments for Q4--Q6. Džavoronok states the centrally symmetric simply connected 2-complex criterion described. The repository summary is faithful."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:51:20.969626+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  proof_import: "local mechanisms summarized; papers linked"
+  sources:
+    -
+      authors:
+        - "Tomas Feder"
+        - "Carlos Subi"
+      url: "https://doi.org/10.1016/j.dam.2012.12.025"
+      year: 2013
+    -
+      authors:
+        - "Douglas B. West"
+        - "Jennifer I. Wise"
+      url: "https://dwest.web.illinois.edu/pubs/antip.pdf"
+      year: 2019
+    -
+      author: "Adam Dzavoronok"
+      url: "https://arxiv.org/abs/2606.04181"
+      year: 2026
+object_type: "research"
+origin_worker_id: 195
+parent_id: "norine_antipodalcoloring_toolkit"
+position: 20
+research_interface:
+  consumer:
+    - "finite-state construction testing"
+    - "binary product constructions"
+  working_route: "look for square/commutation constraints in the path-state graph before invoking high-dimensional topology"
+research_level: "abstraction"
+semantic_container_text: null
+simplified_statement: "Low-dimensional cube constraints already force monochromatic antipodal paths and provide local mechanisms that can be ported to finite state spaces."
+statement_sha256: "8afb3fa4e26258ad5b32021a44d522ee76327a4fbb4053cdb1a88872f7bc75fe"
+substantive_worker_ids:
+  - 195
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Low-dimensional cube forcing before the general Norine proof"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T16:43:43.904311+00:00"
+version: 7

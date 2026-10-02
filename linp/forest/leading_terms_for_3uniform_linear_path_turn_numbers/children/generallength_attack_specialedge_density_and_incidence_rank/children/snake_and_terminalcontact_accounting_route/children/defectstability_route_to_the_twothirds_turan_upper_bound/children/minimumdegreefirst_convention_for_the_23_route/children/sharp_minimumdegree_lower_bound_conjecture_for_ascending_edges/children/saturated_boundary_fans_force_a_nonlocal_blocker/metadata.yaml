@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "9ce44b72bb21b32b250fae0f1c76c8ba5e39af887ad0c68572c10e7b1bcaf0e7"
+created_at: "2026-09-23T02:44:14.194291+00:00"
+id: "saturated_boundary_fans_force_a_nonlocal_blocker"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1001080"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition faithfully preserves exact splice losses, the nearest-neighbor rigid-ladder classification, and the two-ended linearity contradiction yielding a nonlocal blocker."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "b6f0fcd0-c0e9-473e-a642-96a02ab4f919"
+    detail: "Recomposition faithfully preserves exact splice losses, the nearest-neighbor rigid-ladder classification, and the two-ended linearity contradiction yielding a nonlocal blocker."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:41:35.119092+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    backfilled: true
+    classified_at: "2026-09-23T03:45:16.180482+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "exact_loss_formula_for_a_doubleblocker_splice"
+    - "nearestneighbor_saturated_fans_reduce_to_one_rigid_ladder"
+    - "twoended_boundary_sink_forces_a_nonlocal_blocker"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "sharp_minimumdegree_lower_bound_conjecture_for_ascending_edges"
+position: 0
+research_interface:
+  consequence: "A two-sided canonical sink at q=delta>=5 cannot remain in nearest-neighbor ladder geometry; some endpoint exposes a lossy nonlocal splice."
+  consumer:
+    - "sharp ascending-rank conjecture"
+    - "location-sensitive Minty/Posa route"
+    - "second-level Posa expansion"
+  next_need: "Combine nonlocal splice loss with deficiency-surplus control and close the remaining small-loss cases."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A saturated boundary fan either has a lossless consecutive double-blocker splice or contains a nonlocal double blocker; two simultaneous sink fans cannot both avoid such a nonlocal blocker."
+statement_sha256: "cde15a097f262fa1ba54448470117f8ba38b9fcffc9f7395b5e261c920e7fd15"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Saturated boundary fans force a nonlocal blocker"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 12

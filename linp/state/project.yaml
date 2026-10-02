@@ -2,11 +2,11 @@
   current_bottleneck_id: null
   current_guidance_id: null
   current_strategy_id: null
-  grand_theorem_id: "1000846"
+  grand_theorem_id: "leading_terms_for_3uniform_linear_path_turn_numbers"
   methodology_version: 1
   phase: "active"
   proof_frontier_id: null
   research_focus_ids:
-  revision: 6003
+  revision: 6004
   singleton: true
-  updated_at: "2026-10-02T13:51:06.903969+00:00"
+  updated_at: "2026-10-02T14:56:08.211002+00:00"

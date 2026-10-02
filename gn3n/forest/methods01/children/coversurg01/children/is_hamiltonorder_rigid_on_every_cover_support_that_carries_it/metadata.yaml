@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "94f37b00bfdfe5a8776724e595b0912d9e89564e6d25645b0d49e1fd420f70c4"
+created_at: "2026-09-27T04:50:21.258164+00:00"
+id: "is_hamiltonorder_rigid_on_every_cover_support_that_carries_it"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 156
+    detail: "Replacing the displayed A-path by any Hamilton path on the same support that avoids T would create a spanning two-cover avoiding the mandatory triple."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:21:09.666917+00:00"
+    worker_id: 693
+  last_audit_observation:
+    claim_id: 156
+    detail: "Replacing the displayed A-path by any Hamilton path on the same support that avoids T would create a spanning two-cover avoiding the mandatory triple."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T13:21:09.666917+00:00"
+    worker_id: 693
+  minimality_required: false
+  small_order_free: true
+object_type: "research"
+origin_worker_id: 614
+parent_id: "coversurg01"
+position: 0
+research_interface:
+  consumer: "Astra idea 010 one-backward residue; prescribed separation; complementary exchange arguments"
+  given: "any spanning two-cover carrying a mandatory ordered triple"
+  need: "classify or break Hamiltonian supports with a compulsory consecutive three-vertex block"
+  produces: "Hamilton-order rigidity of the entire T-side support"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A mandatory triple is Hamilton-order rigid on every cover support that carries it."
+statement_sha256: "2c34ad1727c35d0d299c094f7a0b12d376dda3b43d591a1c6c36d4ba600f1da8"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A mandatory triple is Hamilton-order rigid on every cover support that carries it"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 6

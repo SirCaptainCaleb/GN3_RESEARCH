@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "db5b92461d5214a6f050c263e4e6976294a6d26072aec2eb92ca62bae8d4788e"
+created_at: "2026-10-01T07:19:55.077482+00:00"
+id: "every_proper_sixset_has_an_allorder_fourgood_structural_package"
+last_elevation_revision: 10860
+last_substantive_worker_id: 1016
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_recorded_at: "2026-10-01T07:19:55.077482+00:00"
+  audit_resolution:
+    claim_id: 1064
+    detail: "smallset01 supplies at least four Hamiltonian deletions of every six-set. Splitting on Hamiltonicity of U gives exactly the two stated branches via four_good_six_interface01 and minimum-counterexample calculus; the large-order corollary follows from ham6_large_escape01."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1064
+    detail: "smallset01 supplies at least four Hamiltonian deletions of every six-set. Splitting on Hamiltonicity of U gives exactly the two stated branches via four_good_six_interface01 and minimum-counterexample calculus; the large-order corollary follows from ham6_large_escape01."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+object_type: "research"
+origin_worker_id: 1016
+parent_id: "generic_six_disturbance_universal18"
+position: 7
+research_interface:
+  consumer: "six-set transport routes; proof-route hygiene; large-order no-trapping"
+  given: "an arbitrary proper six-set in a minimum counterexample"
+  produces: "an order-independent nonham/order-disagreement versus Hamiltonian/pc2-complement dichotomy, with the n>=18 disturbance only as a final corollary"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "In any minimum counterexample, every proper six-set has at least four Hamiltonian deletions and hence is either non-Hamiltonian with localized order disagreement or Hamiltonian with pc2 complement; only the final descent consumer needs n≥18."
+statement_sha256: "31934c11ed2192566c6ddb70a8215787c0f4e30e3f14601ec15269f44ea1589f"
+substantive_worker_ids:
+  - 1016
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every proper six-set has an all-order four-good structural package"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:25:00.471671+00:00"
+version: 8

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "5739c7d3792aff4029e268991909e1c2ef4d3c9db41f311e10b52fef3dbdd272"
+created_at: "2026-09-24T04:02:17.606684+00:00"
+id: "terminal_of_rank_q_reduces_the_entire_incident_lowrank_capacity"
+last_elevation_revision: null
+last_substantive_worker_id: 253
+legacy_id: "1000742"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Checked the injection into W\\C for q>=4 and the q=3/q=2 cases. The unique-entrance contradiction is valid and yields the stated capacity bounds."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Checked the injection into W\\C for q>=4 and the q=3/q=2 cases. The unique-entrance contradiction is valid and yields the stated capacity bounds."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 253
+parent_id: "terminal_nonspecial_saturation_forces_doubleblocker_excess"
+position: 0
+research_interface:
+  consequence: "The 2q-3 capacity bounds ALL incident edges of rank≤q if one rank-q edge is nonspecial terminal at v, including special edges. Full-rank nonspecial terminal incidences force snake slack at least two."
+  consumer:
+    - "Type-A stability"
+    - "all-special dense-core program"
+    - "rank-incidence bounds"
+  given:
+    - "unique entrance of a nonspecial rank-q last edge"
+research_level: "lemma"
+semantic_container_text: "Terminal-incidence capacity program leading from rank-sensitive snake bounds to the 11/12 estimate and, through first-edge and contact-conflict refinements, the 43/48 regime."
+simplified_statement: "A nonspecial terminal of rank q reduces the entire incident low-rank capacity."
+statement_sha256: "6d2758da9d2618d383b8de0c1a91a4ef7930baa18b982cbcfa4d14741fd68a98"
+substantive_worker_ids:
+  - 253
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A nonspecial terminal of rank q reduces the entire incident low-rank capacity"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:15:20.228043+00:00"
+version: 9

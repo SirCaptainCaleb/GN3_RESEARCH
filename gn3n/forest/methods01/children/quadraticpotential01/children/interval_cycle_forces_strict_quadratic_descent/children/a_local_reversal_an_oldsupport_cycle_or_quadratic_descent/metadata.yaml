@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "1c3de2b1cba4d9314fd1f4c52b6d036725bb84d49051929b8c9bb8c7c9e47c8a"
+created_at: "2026-09-28T17:10:11.64303+00:00"
+id: "a_local_reversal_an_oldsupport_cycle_or_quadratic_descent"
+last_elevation_revision: 0
+last_substantive_worker_id: 706
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 72
+    detail: "Removed proof-process wording and clarified that choosing d as the starting point of a tight cycle is not cyclic rotation of an ordered tight triple."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:10:13.383674+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 72
+    detail: "Removed proof-process wording and clarified that choosing d as the starting point of a tight cycle is not cyclic rotation of an ordered tight triple."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:10:13.383674+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Precision cleanup: distinguish choosing a start on a cycle from rotating an ordered tight triple."
+    recorded_at: "2026-09-28T20:09:25.005586+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+object_type: "research"
+origin_worker_id: 706
+parent_id: "interval_cycle_forces_strict_quadratic_descent"
+position: 0
+research_interface:
+  consumer: "support-compatible deletion families; endpoint transport / defect compression; small deletion-side closure"
+  given: "two fixed-complement deletion covers whose varying Hamiltonian supports differ by one omitted/restored label and are order-incompatible"
+  produces: "reversed common edge, reversing triple, old-path-only tight cycle, or strict quadratic descent; no restored-label cycle residue"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Order disagreement between one-label replacement paths yields a local reversal, an old-support cycle, or quadratic descent."
+statement_sha256: "90239be73ec222ddf7cb2d332e2608533413b26a25f99ddbe9debfe3bf12a0f9"
+substantive_worker_ids:
+  - 706
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Order disagreement between one-label replacement paths yields a local reversal, an old-support cycle, or quadratic descent"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:39:05.595673+00:00"
+version: 11

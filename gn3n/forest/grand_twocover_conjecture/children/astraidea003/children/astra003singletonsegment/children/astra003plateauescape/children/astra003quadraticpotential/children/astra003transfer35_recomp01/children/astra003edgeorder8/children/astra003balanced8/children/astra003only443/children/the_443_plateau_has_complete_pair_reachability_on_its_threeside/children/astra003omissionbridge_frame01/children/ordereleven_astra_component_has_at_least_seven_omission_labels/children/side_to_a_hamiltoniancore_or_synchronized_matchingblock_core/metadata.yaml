@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "3afc3c31ba1c1922a904a36c590629de24bebe6d87fdcbdf6f51c8a428968643"
+created_at: "2026-09-26T14:10:24.668031+00:00"
+id: "side_to_a_hamiltoniancore_or_synchronized_matchingblock_core"
+last_elevation_revision: 0
+last_substantive_worker_id: 682
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 324
+    detail: "The cyclic K4 core is excluded because every fifth vertex Hamiltonizes it, contradicting the two known bad five-extensions. The Hamiltonian-core branch follows from repeated bad extension; otherwise the edge-orderable matching-block extension theorem applies separately to both excluded labels."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:34:54.555358+00:00"
+    worker_id: 591
+  last_audit_observation:
+    claim_id: 324
+    detail: "The cyclic K4 core is excluded because every fifth vertex Hamiltonizes it, contradicting the two known bad five-extensions. The Hamiltonian-core branch follows from repeated bad extension; otherwise the edge-orderable matching-block extension theorem applies separately to both excluded labels."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:34:54.555358+00:00"
+    worker_id: 591
+object_type: "research"
+origin_worker_id: 682
+parent_id: "ordereleven_astra_component_has_at_least_seven_omission_labels"
+position: 1
+research_interface:
+  consumer: "astraidea003 and the order-eleven seven-label equality shell"
+  given: "the |S|=7 omission-label equality shell and one side P=A+{t1,t2} of a 5|5|1 state"
+  need: "combine the two sides and reciprocal 5|5 mobility to force a mixed S-T exchange or a T singleton"
+  produces: "a two-branch local normal form: Hamiltonian core with two explicit cross-exterior Hamiltonian five-sets, or matching-block core constraining both excluded labels; cyclic core excluded"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Seven-label equality shells reduce each side to a Hamiltonian-core or synchronized matching-block core."
+statement_sha256: "b66195cda6bad335af4fcf006ef88c08d91187045757f8b5e1b789905b1ba2e3"
+substantive_worker_ids:
+  - 682
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Seven-label equality shells reduce each side to a Hamiltonian-core or synchronized matching-block core"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:56:12.77133+00:00"
+version: 10

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "cd4bc1cba94eda04598e71cc9f1df7853eb232bd720c74caefb05f4f7df99f6b"
+created_at: "2026-09-24T01:48:48.235562+00:00"
+id: "paths_have_an_exact_alternating_blockermatching_defect_identity"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000464"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a2025dac-0b48-4c68-865d-2088ebb5161b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:48:35.038774+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "a2025dac-0b48-4c68-865d-2088ebb5161b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:48:35.038774+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "works_after_one_vertex_deletion_in_two_residue_classes"
+position: 0
+research_interface:
+  consequence: "The two omitted vertices generate exactly the same alternating-matching defect object as the order-12 terminal-star proof: two edge-disjoint matchings on the path vertices, with the number of open alternating chains given exactly by a degree-defect identity."
+  consumer:
+    - "two-hole lift"
+    - "SPANNING-TOP induction"
+    - "alternating blocker stability"
+  given:
+    - "spanning top-rank core on 2ell-1 vertices"
+    - "an alternate-entrance (ell-2)-path supplied by deletion induction"
+  next_need: "Exploit path order. Show that an alternating component with suitably separated contacts gives an (ell-1)-edge lift preserving the alternate entrance; otherwise all components are path-local, forcing enough local congestion to violate linearity/minimum degree."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two-hole alternate paths have an exact alternating blocker-matching defect identity."
+statement_sha256: "a8ce11f5d263b25e3bdbc502d0793bc6ee127c8d08be248d7fd716b26c7a8da6"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two-hole alternate paths have an exact alternating blocker-matching defect identity"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

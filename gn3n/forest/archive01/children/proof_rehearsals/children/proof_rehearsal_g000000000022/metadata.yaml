@@ -20,8 +20,8 @@ metadata:
   details:
     comparison: "Matches the current bottleneck e34dc91e238d exactly; existing composition 76a4b8652534 remains coherent and need not be revised."
     first_unsupported_inference: "From an exact deletion state H-x=P|Q and the certified bounded four/nine-vertex insertion-obstruction witness, construct a spanning two-cover directly, transport a checked reversing witness to an absorbable endpoint, or equivalently produce a spanning ordering of defect span at most two. The newly certified Astra canonical-bridge descent reduces the theorem to no trapping of the 3- or 5-bridge state, but does not prove that no-trapping statement, so it does not move the first unsupported inference earlier or later in the shortest current composition."
-    gap_id: "1000741"
-  gap_id: "1000741"
+    gap_id: "endpointtransport_defectcompression_bridge"
+  gap_id: "endpointtransport_defectcompression_bridge"
   generation: 22
   opened_revision: 1850
   reported_outcome: "completed"

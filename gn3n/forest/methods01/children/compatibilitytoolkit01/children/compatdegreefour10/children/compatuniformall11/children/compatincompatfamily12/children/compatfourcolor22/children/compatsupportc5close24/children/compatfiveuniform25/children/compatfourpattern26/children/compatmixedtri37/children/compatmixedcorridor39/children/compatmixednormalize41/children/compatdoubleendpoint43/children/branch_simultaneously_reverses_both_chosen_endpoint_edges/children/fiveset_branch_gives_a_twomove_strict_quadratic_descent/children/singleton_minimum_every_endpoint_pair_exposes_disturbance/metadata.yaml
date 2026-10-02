@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "b974462bf77812631c1a7fa56adb29e4b262780df2ec86da293a20043f4e63f8"
+created_at: "2026-09-28T16:15:56.711504+00:00"
+id: "singleton_minimum_every_endpoint_pair_exposes_disturbance"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Depends on 65298d96f1b2 and 7c2b036e7ecf, both now challenged because compatdoubleendpoint43 uses invalid cyclic rotation."
+  audit_request_recorded_at: "2026-09-28T16:22:05.386975+00:00"
+  audit_resolution:
+    claim_id: 126
+    detail: "The proof still relies on the invalid pre-repair compatdoubleendpoint43 and 7c2b036e7ecf five-window branch."
+    math_version: 2
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+    worker_id: 586
+  audit_resolution_before_repair: null
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 126
+    detail: "The proof still relies on the invalid pre-repair compatdoubleendpoint43 and 7c2b036e7ecf five-window branch."
+    math_version: 2
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+    worker_id: 586
+  last_failure:
+    reason: "The proof still relies on the invalid pre-repair compatdoubleendpoint43 and 7c2b036e7ecf five-window branch."
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Audit repair: remove reliance on the overbroad 65298 theorem by reconstructing exactly the restricted endpoint trichotomy valid under the present |P|,|Q|>=3 hypotheses. Statement unchanged."
+    recorded_at: "2026-09-28T18:48:42.179841+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 718
+  repair_attempt_count: 2
+  repair_reason: "This proof still uses the pre-repair compatdoubleendpoint43 five-window/reverse-cross dichotomy and then 7c2b036e7ecf. The certified repaired theorem 65298d96f1b2 now distinguishes facing pairs from same-end pairs: same-end same-slot replacements yield doubled barriers, not necessarily a five-window or reverse cross triple. Therefore the claimed conclusion for every arbitrary endpoint pair no longer follows."
+  repair_requested_at: "2026-09-28T20:02:06.195567+00:00"
+object_type: "research"
+origin_worker_id: 659
+parent_id: "fiveset_branch_gives_a_twomove_strict_quadratic_descent"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge; trapped deletion-state normalization"
+  given: "a deletion singleton lift that is Phi-minimal in its pairwise-repartition component, with both deletion-cover components of order at least three"
+  need: "synchronize the four endpoint-pair disturbances to force endpoint absorption or defect span at most two"
+  produces: "for every chosen cross-component endpoint pair and arbitrary endpoint-deletion covers, support/order complexity or an explicit reverse endpoint triple through the omitted label; no Hamiltonian-window residue"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "f4842f9109af1d0d1ccc738bcc5eabc8c73d91094361bd09e9003569268277de"
+substantive_worker_ids:
+  - 659
+support_reason: "local_audit_failed"
+support_status: "blocked"
+title: "At a trapped deletion singleton minimum every endpoint pair exposes disturbance"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:16:51.609754+00:00"
+version: 10

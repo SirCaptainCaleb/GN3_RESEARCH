@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "c808fb75bdfcbd71580c7b9486ab97b9162ba7e2617389a35f1a8a34b7d3d60d"
+created_at: "2026-09-28T20:27:21.901224+00:00"
+id: "recomp_onebackward_01"
+last_elevation_revision: 0
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 448
+    detail: "Named the certified endpoint-obstruction and least-right-feasible-gap sources explicitly, and replaced barrier/kernel shorthand by the exact tight-triple and Hamiltonian-four-set conclusions."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:34:56.248301+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 448
+    detail: "Named the certified endpoint-obstruction and least-right-feasible-gap sources explicitly, and replaced barrier/kernel shorthand by the exact tight-triple and Hamiltonian-four-set conclusions."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:34:56.248301+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Final language cleanup only: replace the remaining kernel shorthand by Hamiltonian four-set."
+    recorded_at: "2026-09-28T20:33:33.270493+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  recomposition_audit:
+    classified_at: "2026-09-28T20:27:24.079012+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 586
+parent_id: "onebackward_astra010_neighbor_has_no_singletonside_twocover"
+position: 0
+research_interface:
+  consumer: "Astra-010 one-backward closure; endpoint transport"
+  given: "the one-backward comparison correction together with an endpoint-minimal spanning two-cover A|B of the corrected edge-orderable tournament, where A contains the mandatory ordered triple consecutively"
+  produces: "in the original tournament H, either a tight triple joining the endpoints of A through one vertex of B, or a Hamiltonian four-set on those endpoints and one displayed edge of B whose complement is non-Hamiltonian with path-cover number two"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The one-backward mandatory side forces an original-tournament tight triple or Hamiltonian four-set."
+statement_sha256: "2aa676b0ab36c8d91fc09ffa5ac25eb30696860bb1502a403473390055067f8e"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The one-backward mandatory side forces an original-tournament tight triple or Hamiltonian four-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:34:56.248301+00:00"
+version: 8

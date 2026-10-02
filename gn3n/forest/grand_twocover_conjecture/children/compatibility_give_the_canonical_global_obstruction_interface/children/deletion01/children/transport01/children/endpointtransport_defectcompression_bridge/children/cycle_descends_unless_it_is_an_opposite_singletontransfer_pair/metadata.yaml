@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "c3c8e10a9e0c8dde29d19fc74fa64c6ccc10def5915bfe165090a2ae82d85d2e"
+created_at: "2026-09-28T11:33:54.978814+00:00"
+id: "cycle_descends_unless_it_is_an_opposite_singletontransfer_pair"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Repair request: the claimed endpoint-preserving Hamilton path invokes the invalid same-end-extender step in e425e6ca5fe0. Also the statement must specify the cyclic order, not merely the support. The downstream descent conclusion is now independently repaired in a84543b510f4 v3 by unconditional singleton descent; this does NOT establish this object's stronger bounds j>=2 and i<=N-3."
+  audit_request_recorded_at: "2026-09-28T17:03:21.547357+00:00"
+  audit_resolution:
+    claim_id: 126
+    detail: "The proof uses the invalid unconditional extender theorem to construct both tail repartitions."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+    worker_id: 586
+  audit_resolution_before_repair: null
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 126
+    detail: "The proof uses the invalid unconditional extender theorem to construct both tail repartitions."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+    worker_id: 586
+  last_failure:
+    reason: "The proof uses the invalid unconditional extender theorem to construct both tail repartitions."
+    recorded_at: "2026-09-28T20:02:49.847884+00:00"
+  repair_attempt_count: 1
+  repair_reason: "The displayed tail-size repartitions rely on e425e6ca5fe0 to Hamiltonize I together with two same-side extenders and one opposite extender. That inference is invalid. Although the singleton lift has a simpler unconditional strict-descent move once |P|>=3, that does not establish the statement's specific two tail repartitions and exceptional opposite-transfer structure; statement repair would be substantive."
+  repair_requested_at: "2026-09-28T20:02:06.195567+00:00"
+object_type: "research"
+origin_worker_id: 659
+parent_id: "endpointtransport_defectcompression_bridge"
+position: 1
+research_interface:
+  consumer: "restoration-aware order disagreement; quadratic no-trapping; endpoint transport"
+  given: "a restoration-containing tight cycle inside a deletion singleton lift P|Q|{d}"
+  need: "consume the exceptional opposite-singleton-transfer residue"
+  produces: "strict Phi descent unless two opposite neutral endpoint singleton transfers are simultaneously available"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A restored-label disagreement cycle descends unless it is an opposite singleton-transfer pair."
+statement_sha256: "b8c75fd99088a0cfb52c0a2743a4ea738d53d2131f39a0f0dc4a8d89e4825f69"
+substantive_worker_ids:
+  - 659
+support_reason: "The proof uses the invalid unconditional extender theorem to construct both tail repartitions."
+support_status: "blocked"
+title: "A restored-label disagreement cycle descends unless it is an opposite singleton-transfer pair"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:02:49.847884+00:00"
+version: 8

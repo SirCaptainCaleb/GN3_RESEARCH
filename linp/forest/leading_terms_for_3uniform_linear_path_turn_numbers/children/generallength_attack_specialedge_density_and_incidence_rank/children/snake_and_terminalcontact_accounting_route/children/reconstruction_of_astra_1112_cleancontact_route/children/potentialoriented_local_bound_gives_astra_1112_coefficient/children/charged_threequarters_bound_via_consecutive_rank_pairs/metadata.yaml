@@ -1,0 +1,48 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "0c759587327077a37a163523259e739af778b918ccd3685f2a1864ef9331d7ad"
+created_at: "2026-09-24T04:48:16.023642+00:00"
+id: "charged_threequarters_bound_via_consecutive_rank_pairs"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000290"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "proposal"
+origin_worker_id: 229
+parent_id: "potentialoriented_local_bound_gives_astra_1112_coefficient"
+position: 0
+research_interface:
+  consequence: "Corrects the earlier factor-two guess in 0904073d4cbf. The natural local quantity is charged degree c_+(v), targeted at 3phi(v)/4."
+  consumer:
+    - "11/12 leading coefficient"
+    - "general linear-path Turan upper bound"
+  given:
+    - "user screenshots of interrupted Astra work"
+    - "419519f0efa5 ascending accounting"
+    - "a7b7670e955a charged rank floor"
+    - "2665d2c81d39 rank-pair arithmetic"
+    - "990186a1aaa6/08f894b8cb5e/eac2e3da3eea clean-contact splices"
+  next_need: "Prove the consecutive-rank block n_q(v)+n_{q+1}(v)<=3. Focus first on q,(q+1)^3 and (q+1)^4; clean singleton chords are controlled, while residual two-contact chords must be closed using the third competitor and tail/cross-splice obstruction abeab7363c1a."
+  role: "reconstructed Astra route"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A consecutive-rank bound of at most three charged ascending edges in each pair {q,q+1} would imply c₊(v)≤⌊3φ(v)/4⌋ and hence the 11/12 leading coefficient."
+statement_sha256: "8c2039e2012925383ce39461d700d1dbe456ab8552fd929e7c847d4895dd21b4"
+substantive_worker_ids:
+  - 229
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Recovered Astra 11/12 architecture: charged three-quarters bound via consecutive rank pairs"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:29:31.630342+00:00"
+version: 3

@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "b2cc91c343afebd5155f284a3ed8d11a947779152e7e2eb22465259e71288279"
+created_at: "2026-09-22T05:45:49.939398+00:00"
+id: "of_an_ascending_edge_are_at_most_three_times_its_rank"
+last_elevation_revision: null
+last_substantive_worker_id: 234
+legacy_id: "1000743"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e9373ffe-728a-4655-8934-804ca6667402"
+    detail: "Terminology-only normalization to φ(v) and 'ending at v'."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-22T13:58:19.303954+00:00"
+    worker_id: "0ffc0017-e439-479a-9e4e-0087635d78f1"
+  last_audit_observation:
+    claim_id: "e9373ffe-728a-4655-8934-804ca6667402"
+    detail: "Terminology-only normalization to φ(v) and 'ending at v'."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-22T13:58:19.303954+00:00"
+    worker_id: "0ffc0017-e439-479a-9e4e-0087635d78f1"
+  last_local_audit_repair:
+    reason: "Normalize legacy a(v) notation to canonical φ(v) and remove prohibited physically wording; no mathematical content changed."
+    recorded_at: "2026-09-22T13:57:58.571653+00:00"
+    worker_id: "0ffc0017-e439-479a-9e4e-0087635d78f1"
+object_type: "lemma"
+origin_worker_id: 234
+parent_id: "any_long_terminal_path_captures_a_lowerrank_ascending_edge"
+position: 1
+research_interface:
+  consequence: "each terminal endpoint potential is at most 3q-3 for an ascending edge of rank q; charged edges have rank at least one third of the charged terminal potential"
+  consumer:
+    - "potential-oriented local bound"
+    - "multi-scale ascending-edge arguments"
+  fence: "does not assert q equals the terminal potential; 0e0b0a3c7b04 shows genuine rank drop"
+  given:
+    - "ascending nonspecial edge"
+    - "long-terminal-path capture lemma"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Terminal potentials of an ascending edge are at most three times its rank."
+statement_sha256: "6f342a59dc75beed263eea5a6e767711fb3719dd994fc3df1ad058941bccd2af"
+substantive_worker_ids:
+  - 234
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal potentials of an ascending edge are at most three times its rank"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

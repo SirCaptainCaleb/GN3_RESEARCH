@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "a53f90bdeff33db9a87ce1c19fd97d138766098a452eb8db33c9a6c7a214f683"
+created_at: "2026-10-01T06:11:58.732483+00:00"
+id: "fixed_pair_across_a_fourset_has_two_hamiltonian_fiveextensions"
+last_elevation_revision: 10938
+last_substantive_worker_id: 1106
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 952
+parent_id: "fixed_endpoint_matching_escape01"
+position: 7
+research_interface:
+  consumer: "fixed-endpoint matching escape"
+  given: "the fixed-endpoint matching-shell residue"
+  produces: "at least two endpoint-preserving Hamiltonian five-sides with pc2 complements and isolates complementary-cover alignment as the true gap"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Any disjoint 2+4 split contains at least two Hamiltonian five-sets retaining the prescribed pair; fixed-endpoint matching shells therefore have an alignment gap, not a support-production gap."
+statement_sha256: "4104e6a3ecb0ddfb690aa08ae10e6867ca12fad6eeea44f49d91de2ae54ac9a9"
+substantive_worker_ids:
+  - 952
+  - 1106
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Any fixed pair across a four-set has two Hamiltonian five-extensions"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T17:37:05.128306+00:00"
+version: 4

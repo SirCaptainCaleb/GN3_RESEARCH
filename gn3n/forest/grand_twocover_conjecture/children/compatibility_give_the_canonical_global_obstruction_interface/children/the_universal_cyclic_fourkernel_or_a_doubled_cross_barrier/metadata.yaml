@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "220e794f1d1e77a71841684775983dd368bc3184a403a0c97033ec6eebc44b0b"
+created_at: "2026-09-28T02:53:08.958895+00:00"
+id: "the_universal_cyclic_fourkernel_or_a_doubled_cross_barrier"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 388
+    detail: "Independent reconstruction succeeds. The omitted vertex x is noninsertable into both displayed deletion-cover paths P and Q, so the certified failed-insertion normal form applies independently. If either obstruction is first-type, certified 0425e03e2aa3 gives either a Hamiltonian four-window containing x or the universal cyclic non-Hamiltonian four-kernel; in the Hamiltonian case minimum-counterexample calculus gives a non-Hamiltonian complement of path-cover number two. If both obstructions are second-type, certified 4efbe05b945a applies at arbitrary path gaps, including boundary gaps, and gives either a mixed Hamiltonian four-path containing x or the doubled cross triples (q_j,p_i,x),(p_i,q_j,x). The alternatives exhaust the two normal-form types."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:53:52.40374+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 388
+    detail: "Independent reconstruction succeeds. The omitted vertex x is noninsertable into both displayed deletion-cover paths P and Q, so the certified failed-insertion normal form applies independently. If either obstruction is first-type, certified 0425e03e2aa3 gives either a Hamiltonian four-window containing x or the universal cyclic non-Hamiltonian four-kernel; in the Hamiltonian case minimum-counterexample calculus gives a non-Hamiltonian complement of path-cover number two. If both obstructions are second-type, certified 4efbe05b945a applies at arbitrary path gaps, including boundary gaps, and gives either a mixed Hamiltonian four-path containing x or the doubled cross triples (q_j,p_i,x),(p_i,q_j,x). The alternatives exhaust the two normal-form types."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:53:52.40374+00:00"
+    worker_id: 652
+object_type: "research"
+origin_worker_id: 688
+parent_id: "compatibility_give_the_canonical_global_obstruction_interface"
+position: 0
+research_interface:
+  consumer: "shortest grand-theorem proof composition; endpoint transport / defect compression"
+  given: "any one-vertex deletion two-cover in a minimum counterexample"
+  need: "consume only the universal cyclic-kernel branch and doubled-cross-barrier branch; arbitrary path lengths and boundary/interior pivot distinctions are eliminated"
+  produces: "a three-frontier bounded taxonomy: Hamiltonian four-window, universal cyclic K4, or doubled cross barrier"
+research_level: "theorem"
+semantic_container_text: "Anchored four-window transport route: every deletion state is driven to a Hamiltonian four-window or bounded barrier, then repeated endpoint exchanges, five- and six-window amplification, and short label migration reduce nonescaping states to order disagreement, strict descent, or a coherent endpoint-square obstruction."
+simplified_statement: "Every deletion state reduces to a Hamiltonian four-window, the universal cyclic four-kernel, or a doubled cross barrier."
+statement_sha256: "2715617920927b9ede1cf8fcc379a4054392c99e83a60521b15c5c3fbb8132d6"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every deletion state reduces to a Hamiltonian four-window, the universal cyclic four-kernel, or a doubled cross barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:52.602761+00:00"
+version: 6

@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: true
+audit_requirement: "recomposition_equivalence"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "095e0a5649b3d30b6393b7865728cb6ffd7b3147f4c63707cdefb9c1f06599e7"
+created_at: "2026-10-01T20:07:38.946048+00:00"
+id: "terminalleft_4455_rigidity_collapses_the_noc_rankfive_branch"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: "1001182"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  reasoning_hygiene_recomposition: true
+  recomposition_audit:
+    classified_at: "2026-10-01T20:07:42.762091+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  source_ids:
+    - "4455_witness_is_a_terminal_both_adjacent_middle_joints_are_high"
+    - "rankfive_edge_either_uses_c_or_is_pushed_to_the_private_g4_slot"
+    - "noc_secondrankfive_state_in_terminalleft_4455_is_uniquely_clean"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "forces_the_right_middle_joint_to_potential_at_least_four"
+position: 0
+research_interface:
+  consequence: "The terminal-a branch has high adjacent joints, and its no-c second rank-five competitor is forced into one clean form with entrance private(g4) and opposite terminal off P."
+  consumer:
+    - "p=5 4455 elimination"
+  given:
+    - "surviving p=5 terminal-left 4455 geometry"
+    - "terminal-tail blocker lemma"
+    - "rank-five nonspeciality"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The terminal-a 4455 branch forces high adjacent joints, and the no-c rank-five competitor has one clean form."
+statement_sha256: "5e3d71e8c7278b43b7c48f03e86067da5eac2dd254568282b531e1a99773cce1"
+substantive_worker_ids:
+  - 296
+support_reason: "recomposition_equivalence_audit_pending"
+support_status: "unchecked"
+title: "Terminal-left 4455 rigidity collapses the no-c rank-five branch"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 5

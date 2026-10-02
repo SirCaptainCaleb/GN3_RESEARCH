@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "f4c8649417deb70640977068efae6a4065cd0c9ff3ef3098fd9d487c76ae8e66"
+created_at: "2026-09-24T02:43:28.278769+00:00"
+id: "sharp_turan_bound_reduces_to_the_exactdensity_equality_layer"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000265"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "3b2bad76-883c-4455-b8ab-60edaab8b36b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T20:58:43.768532+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  last_audit_observation:
+    claim_id: "3b2bad76-883c-4455-b8ab-60edaab8b36b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T20:58:43.768532+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+object_type: "theorem"
+origin_worker_id: 225
+parent_id: "induction_reconciles_turan_and_criticalcore_minimality"
+position: 0
+research_interface:
+  consequence: "For ell>=5, the sharp bound ex_L(n,P_ell)<=floor(2ell/3)n follows from the exact-density equality layer alone. Strict excess is eliminated by threshold-core plus rainbow density."
+  consumer:
+    - "grand linear Turan conjecture"
+  given:
+    - "equality-layer low-degree assertion E_ell"
+    - "e4fb292edb26 rainbow path Turan bound"
+  next_need: "Prove E_ell: at exact density d n, a P_ell-free graph with a nonspecial edge must have a vertex of degree <=d. This is now the sole missing induction layer for the sharp Turan theorem (ell=4 separately solved)."
+  role: "grand induction reduction"
+research_level: "theorem"
+semantic_container_text: "Sharp equality-layer reduction: reduce the Turan bound to the exact-density case and analyze the resulting potential-deficiency and upward-transition constraints."
+simplified_statement: "The sharp Turan bound reduces to the exact-density equality layer."
+statement_sha256: "1b68e3f927379597109f4497c09fc69eab4d97e61db71372cd756518f6411fcf"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The sharp Turan bound reduces to the exact-density equality layer"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 6

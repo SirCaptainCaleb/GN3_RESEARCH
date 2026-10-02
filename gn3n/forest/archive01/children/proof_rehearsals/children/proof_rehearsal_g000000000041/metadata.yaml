@@ -25,15 +25,15 @@ parent_id: "proof_rehearsals"
 position: 41
 research_interface:
   consumer: "grand two-cover conjecture"
-  gap: "1000741"
+  gap: "endpointtransport_defectcompression_bridge"
   given: "the certified five-regime global quadratic-minimum frontier and canonical deletion-cover transport inputs"
   need: "transport local ordered-triple/order-disagreement structure to a two-cover, a displayed endpoint reversal, or defect span at most two with termination of neutral moves"
   on_demand_ids:
-    - "1000265"
-    - "1000212"
-    - "1000342"
-    - "1000559"
-    - "1000741"
+    - "to_adjacent_size_gaps_or_a_standard_obstruction_interface"
+    - "quadratic_minima_are_equitable_or_maximintight_staircases"
+    - "doubledcross_sizegap_outcome_retains_both_local_reverse_pivots"
+    - "twocover_neutral_singleton_transfer_or_strict_quadratic_descent"
+    - "endpointtransport_defectcompression_bridge"
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: null

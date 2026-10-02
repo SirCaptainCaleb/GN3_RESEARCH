@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "0cad699a6103b3e987256d55eb2b3f43501d7f18f448f190c143aa42ec890641"
+created_at: "2026-09-27T00:49:41.891635+00:00"
+id: "compattriangle01"
+last_elevation_revision: 0
+last_substantive_worker_id: 624
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Recheck narrow statement repair after failed audit: Hamilton residual order weakened to the common linear order actually proved."
+  audit_request_recorded_at: "2026-09-27T01:44:50.76117+00:00"
+  audit_resolution:
+    claim_id: 325
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T01:46:03.371926+00:00"
+    worker_id: 614
+  brainstorm_development: true
+  last_audit_observation:
+    claim_id: 325
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-27T01:46:03.371926+00:00"
+    worker_id: 614
+  last_failure:
+    reason: "The proof establishes only a common linear order R on X-{a,b,c}, obtained by deleting the two surviving labels from each Hamilton path P_d. It does not establish that R itself is a tight/Hamilton path. In the concluded common-gap case, the triple of R crossing that gap may be non-tight and is not consecutive in any P_d. Thus the statement's claim of a Hamilton order R is unsupported; replacing it by common linear order would match the proof."
+    recorded_at: "2026-09-27T00:53:08.462072+00:00"
+object_type: "research"
+origin_worker_id: 607
+parent_id: "deletioncover_incompatibility_forcing"
+position: 100
+research_interface:
+  consumer: "deletion-cover incompatibility forcing"
+  given: "three pairwise compatible deletion covers in any boundary tournament with pc(H)>2"
+  need: "consume the transitive one-unknown-triple or cyclic three-label same-gap residue, or use triangle overlap to force a fourth compatible label"
+  produces: "one fixed Hamiltonian support plus a second support where all three deleted labels occupy one common insertion gap"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Compatibility triangles concentrate in one insertion gap"
+statement_sha256: "88b92f08d265b9694d16137309359b771f73b00292f8183234559f15afd5afb3"
+substantive_worker_ids:
+  - 607
+  - 624
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Compatibility triangles concentrate in one insertion gap"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T13:37:52.308794+00:00"
+version: 10

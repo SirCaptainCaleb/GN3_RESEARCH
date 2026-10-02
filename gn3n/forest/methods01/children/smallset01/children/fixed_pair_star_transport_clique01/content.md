@@ -6,7 +6,7 @@ Let H be a minimum counterexample. Let C be a three-set, let B={u,v} be a two-se
 
 Then there exist a two-set D contained in C and A_0 contained in A with |A_0| >= ceil(|A|/3) such that, with K=D union B, every five-set K union {a}, a in A_0, is Hamiltonian and its complement is non-Hamiltonian with path-cover number two.
 
-For every distinct a,b in A_0, the common-four-core theorem applies to K union {a} and K union {b}. Hence U_ab=K union {a,b} is either Hamiltonian with non-Hamiltonian path-cover-two complement, or is non-Hamiltonian with the four-good-deletion one-/two-label transport package of 1000476.
+For every distinct a,b in A_0, the common-four-core theorem applies to K union {a} and K union {b}. Hence U_ab=K union {a,b} is either Hamiltonian with non-Hamiltonian path-cover-two complement, or is non-Hamiltonian with the four-good-deletion one-/two-label transport package of yield_a_hamiltonian_sixset_or_fourgooddeletion_transport.
 
 Moreover, after choosing one Hamilton path on K union {a} for each a in A_0, the set A_0 can be partitioned into at most 120 classes according to the relative order of K and the insertion slot of a. In every class there is an ordering K=(k_1,k_2,k_3,k_4) and one slot j common to all its leaves. If j is 1 or 3, then K union {a,b} is Hamiltonian for every two distinct leaves a,b in that class. If j=2, then (k_1,k_2,a,k_3,k_4) is a tight Hamilton path for every leaf a in the class. If j=0, then (a,k_1,k_2,k_3,k_4) is a tight Hamilton path for every leaf a, so all leaves are common left extenders of the same ordered four-path K. If j=4, then (k_1,k_2,k_3,k_4,a) is a tight Hamilton path for every leaf a, so all leaves are common right extenders of K. No pairwise Hamiltonicity is asserted for the endpoint slots.
 
@@ -18,7 +18,7 @@ For each a in A, apply the four-of-six theorem to C union B union {a}. At least 
 
 Pigeonhole c(a) over C. Some c occurs for at least ceil(|A|/3) labels. Put D=C-{c}, K=D union B, and let A_0 be those labels. Then K union {a} is Hamiltonian for every a in A_0. Each is proper, and minimum-counterexample calculus gives a non-Hamiltonian path-cover-two complement.
 
-Fix distinct a,b in A_0. The Hamiltonian five-sets K union {a} and K union {b} share the four-core K, so 1000476 gives the stated six-set transport dichotomy.
+Fix distinct a,b in A_0. The Hamiltonian five-sets K union {a} and K union {b} share the four-core K, so yield_a_hamiltonian_sixset_or_fourgooddeletion_transport gives the stated six-set transport dichotomy.
 
 Choose one Hamilton path P_a on K union {a} for each a in A_0. Record the relative order of K and the insertion slot of a. There are at most 4!*5=120 records.
 
@@ -30,8 +30,8 @@ If the common slot is 3, then P_a=(k_1,k_2,k_3,a,k_4). Exactly one of (a,k_4,b) 
 
 If the common slot is 2, then by definition (k_1,k_2,a,k_3,k_4) is a tight Hamilton path for every leaf a, giving the coherent central-gap fan.
 
-If the common slot is 0, then P_a=(a,k_1,k_2,k_3,k_4) for every leaf a. Thus (k_1,k_2,k_3,k_4) itself is a tight path and every leaf is a common left extender through the same initial ordered pair. Boundary antisymmetry does not in general concatenate two such same-end extenders; 1000149 gives an explicit counterexample, so no pairwise-Hamiltonicity conclusion is made here.
+If the common slot is 0, then P_a=(a,k_1,k_2,k_3,k_4) for every leaf a. Thus (k_1,k_2,k_3,k_4) itself is a tight path and every leaf is a common left extender through the same initial ordered pair. Boundary antisymmetry does not in general concatenate two such same-end extenders; sameend_extenders_do_not_automatically_concatenate gives an explicit counterexample, so no pairwise-Hamiltonicity conclusion is made here.
 
 The slot-4 case is the corresponding common right-extender family: P_a=(k_1,k_2,k_3,k_4,a) for every leaf a, again with no automatic concatenation claim.
 
-Pigeonholing among at most 120 classes gives one of size at least ceil(|A_0|/120) >= ceil(|A|/360). The pairwise 1000476 transport statement was established before this path-type partition and therefore remains valid for every leaf pair in every class.
+Pigeonholing among at most 120 classes gives one of size at least ceil(|A_0|/120) >= ceil(|A|/360). The pairwise yield_a_hamiltonian_sixset_or_fourgooddeletion_transport transport statement was established before this path-type partition and therefore remains valid for every leaf pair in every class.

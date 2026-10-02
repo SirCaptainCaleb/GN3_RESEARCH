@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "40ff321d2175dfc67a513f3e5ddd08a7d124e9811a95e15c61dcbc0bd1497185"
+created_at: "2026-09-27T21:44:31.906352+00:00"
+id: "gives_balance_descent_or_a_bounded_reversetriple_obstruction"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 308
+    detail: "Deleting x creates at most two new consecutive-triple tests and inserting y creates at most three, hence at most five total. If all pass, ea587a463c5c gives strict balance descent absent reversal; if one fails, boundary antisymmetry gives the stated local reversed tight triple."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:06.630913+00:00"
+    worker_id: 688
+  last_audit_observation:
+    claim_id: 308
+    detail: "Deleting x creates at most two new consecutive-triple tests and inserting y creates at most three, hence at most five total. If all pass, ea587a463c5c gives strict balance descent absent reversal; if one fails, boundary antisymmetry gives the stated local reversed tight triple."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:57:11.540339+00:00"
+    worker_id: 688
+object_type: "research"
+origin_worker_id: 678
+parent_id: "charged_replacement_zeros_one_interval_of_the_binary_balance"
+position: 2
+research_interface:
+  given: "a strict earlier-gap charge from an exterior comparison-path vertex to an omitted longest-path vertex"
+  need: "synchronize the bounded failure witnesses when every strict charged surgery fails, or prove one surgery is legal"
+  produces: "either strict binary-balance descent, an A-edge reversal witness, or one of at most five bounded reversed tight triples"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every strict charged replacement gives balance descent or a bounded reverse-triple obstruction."
+statement_sha256: "757f649308849f8d76f88e70f1e4d9b1e4302024e60cfb11c309b9d74730dfd1"
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every strict charged replacement gives balance descent or a bounded reverse-triple obstruction"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:48:18.367129+00:00"
+version: 8

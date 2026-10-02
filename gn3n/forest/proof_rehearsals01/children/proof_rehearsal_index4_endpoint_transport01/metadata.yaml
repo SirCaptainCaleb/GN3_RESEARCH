@@ -26,13 +26,13 @@ position: 4
 research_interface:
   artifact_kind: "research_launch_synthesis"
   certified_launch_points:
-    - "1000911"
+    - "to_descent_nearby_migration_or_an_endpointaligned_small_support"
     - "endpoint_hamiltonicity_crossing_plus_transport01"
-    - "1000559"
+    - "twocover_neutral_singleton_transfer_or_strict_quadratic_descent"
     - "singleton_transfer_endpointization01"
-    - "1000696"
+    - "compatible_onelabel_path_extensions_glue_outside_one_common_gap"
     - "three_fourcore_extensions_sync01"
-    - "1000476"
+    - "yield_a_hamiltonian_sixset_or_fourgooddeletion_transport"
   do_not_backtrack:
     - "generic reversal/disagreement/crossing existence"
     - "same-end concatenation from endpoint-extension alone"
@@ -42,7 +42,7 @@ research_interface:
     - "Hamiltonicity without endpoint realization"
   first_unsupported_inference: "consume coherent same-end or universal-internal phase-lock and reachable common-core pc2 shells into a two-cover, same-component strict descent, or certified terminating corridor"
   pending_launch_points:
-    - "1000848"
+    - "a_mandatory_deletioncrossing_cut_at_every_successful_step"
     - "shared_edge_double_reversal_sixpackage01"
     - "commoncore_fivepair_sixshell_normal01"
     - "blocked_extender_coherent_sameend_escape01"

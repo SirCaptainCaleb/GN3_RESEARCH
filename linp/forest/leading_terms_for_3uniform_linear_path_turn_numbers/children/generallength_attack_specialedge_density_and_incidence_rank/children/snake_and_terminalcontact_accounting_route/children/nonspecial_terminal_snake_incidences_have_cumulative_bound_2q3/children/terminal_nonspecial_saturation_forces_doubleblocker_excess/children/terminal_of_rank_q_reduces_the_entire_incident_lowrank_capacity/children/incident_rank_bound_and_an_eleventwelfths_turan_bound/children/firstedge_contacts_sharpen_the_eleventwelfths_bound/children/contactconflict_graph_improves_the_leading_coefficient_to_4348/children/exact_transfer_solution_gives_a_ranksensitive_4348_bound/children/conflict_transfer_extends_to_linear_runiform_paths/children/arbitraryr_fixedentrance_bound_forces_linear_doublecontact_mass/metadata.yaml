@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "38343d43cc5d024b8940ccc2c6196cc53e49aab2d02fcd68843d2fa22c8dcd4a"
+created_at: "2026-09-24T13:02:53.951884+00:00"
+id: "arbitraryr_fixedentrance_bound_forces_linear_doublecontact_mass"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000765"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The identities M=s+2N+E and |J|=1+(M+s-E)/2 give the claimed near-equality bounds, including E<=2t+1 and n_2>=floor((M-s_max)/2)-3t-1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "The identities M=s+2N+E and |J|=1+(M+s-E)/2 give the claimed near-equality bounds, including E<=2t+1 and n_2>=floor((M-s_max)/2)-3t-1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "general-r fixed-entrance stability"
+  uses:
+    - "conflict_transfer_extends_to_linear_runiform_paths"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "conflict_transfer_extends_to_linear_runiform_paths"
+position: 0
+research_interface:
+  consequence: "Any local near-extremizer has about (2r-1)q/8 genuine double-contact edges; contacts of size at least three and unused vertices have only O(deficit) total mass."
+  consumer:
+    - "general-r multiplicity compensation"
+    - "coefficient improvement beyond c_r"
+  given:
+    - "exact arbitrary-r fixed-entrance transfer"
+  next_need: "Transfer anchor-relative doubles to the chosen endpoint paths in 6c9c2c5a0fcb. Split by q(v)=phi(v) versus rank gap. When q(v)=phi(v), the anchor path may be chosen globally and the double mass directly contributes to X; when q(v)<phi(v), the rank gap itself gives slack in Astra terminal counting."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Near equality in the arbitrary-r fixed-entrance bound forces linear double-contact mass."
+statement_sha256: "67f2e0e3a907386c78b64141e50b2bc260d358b796186e80108e7337e217c2f3"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Near equality in the arbitrary-r fixed-entrance bound forces linear double-contact mass"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

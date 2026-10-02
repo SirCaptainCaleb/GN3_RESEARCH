@@ -745,30 +745,6 @@
   phase: 1
   updated_at: "2026-09-30T16:03:24.472296+00:00"
 -
-  body: "\nType B object-ID migration preparation only; no object IDs or consumers were rewritten.\n\nClassification:\n- 1,559 current objects total.\n- 833 IDs are exactly 12 lowercase hexadecimal characters and are treated as opaque/hash-like legacy automatic IDs to replace.\n- 726 IDs are preserved unchanged under the conservative human-readable rule.\n- No current object ID occupied the reserved seven-digit decimal namespace before reservation.\n\nFrozen mapping:\n- gn3n.object_id_migration_proposal contains 833 rows.\n- Proposed IDs 1000000..1000832 were durably reserved by atomically advancing gn3n.identity_counters(counter_key='object_id') to 1000833.\n- Mapping rows are status=reserved; objects.id is untouched.\n\nTyped arrays definitely carrying object IDs:\nassignment_requests.target_ids; atlas.object_ids; changes.object_ids; claims.target_ids; commit_receipts.object_ids; needs.target_ids; polls.target_ids; read_sessions.object_ids; runs.target_ids; signals.related_object_ids; state.research_focus_ids.\nCurrent live nonempty counts observed: atlas 26 rows/172 refs; changes 1961 rows/3315 refs; needs 3 rows/45 refs; polls 5 rows/19 refs; runs 44 rows/279 refs; signals 39 rows/110 refs. Other listed carriers were empty at inspection time.\n\nJSON/JSONB classifications:\n- Definitely object IDs, safe with key-aware structural rewrite: certificates.premise_manifest[*].id; certificates.premise_signature[*].id; reasoning_nodes.composition_manifest[*].id; audit_snapshots premise/signature/version maps when present; stage baselines/read_math_baselines object keys (except __state_revision).\n- Mixed/polymorphic, requires semantic parsing by operation/key rather than blind string replacement: stages.operations; stages.payload; assignment_requests.disposition/intent; polls.action_resolution; scheduler_reviews.trigger/completion; runs.payload; signals.evidence; changes.details; objects.metadata; objects.research_interface; edges.metadata; transition_receipts.result_packet.\n- Historical records should retain prose/free-text verbatim. Rewrite only structured fields/keys that semantically denote object IDs; never global replace IDs inside arbitrary strings.\n- Stage JSON carriers were empty at inspection time, but control_center serializers/deserializers actively use them and the integrator must still support them.\n\nManual Atlas:\n- gn3n.atlas remains untouched historical/manual state.\n- 26 rows contain 172 object-ID occurrences.\n- 94 occurrences (85 distinct IDs) belong to the replacement set.\n- Rewrite atlas.object_ids from the frozen mapping during integration, or archive the old Atlas first if the integration plan supersedes it.\n\nImportant code paths (inspection only; control_center unchanged):\nallocate_identity; create_object_core; stage_batch_base/append_stage_v2/replace_stage_v2/verify_stage/commit_stage_locked_base; premise_manifest/premise_signature/certify_object_ex/refresh_support; open_read_ex_base/read_page_base; record_change/change_page/important_changes; raise_need/assign_worker_core/request_assignment; raise_signal/signals; submit_poll/poll_status/resolve_poll_action; atlas; scheduler review functions.\nThese paths serialize/deserialze IDs in arrays or structured JSON and must be compatible with the rewritten IDs after cutover.\n\nIntegrator hazards:\n1. Rewrite JSON object keys as well as string values where IDs are map keys.\n2. Do not rewrite hashes, math_version values, worker IDs, claim/stage/poll/signal IDs, or free-text prose merely because they resemble strings.\n3. Stage operations are polymorphic; parse by op schema (id/object_id/parent_id/etc.) rather than recursively replacing every text value.\n4. Historical scheduler/change/signal payloads contain mixed structured references and prose; key-aware rewrite only.\n5. Consume gn3n.object_id_migration_proposal as the authoritative frozen old->new map and do not allocate new IDs for those 833 rows again.\n"
-  created_at: "2026-09-30T16:04:50.209478+00:00"
-  details:
-    collision_count: 0
-    counter_next: 1000833
-    cutover_executed: false
-    manual_atlas:
-      distinct_replacement_ids: 85
-      occurrences: 172
-      replacement_occurrences: 94
-      rows: 26
-    mapping_table: "gn3n.object_id_migration_proposal"
-    preserved_ids: 726
-    replacement_ids: 833
-    reserved_range:
-      - "1000000"
-      - "1000832"
-    schema: "gn3n"
-    total_objects: 1559
-    worker_type: "B"
-  note_key: "object_id_migration_prep_type_b"
-  phase: 2
-  updated_at: "2026-09-30T16:04:50.209478+00:00"
--
   body: "GN3N Atlas content transition, corrected hash partition 1. Broad simplified-statement backfill completed without derived-Atlas cutover. Current supported/pending mathematical results were simplified; blocked active chains, failed retained results, and a proof-rehearsal proposal were deliberately left NULL. atlas_hidden and atlas_height were left untouched. Manual Atlas and legacy snapshot state were not modified."
   created_at: "2026-09-30T17:53:30.956932+00:00"
   details:
@@ -826,3 +802,27 @@
   note_key: "startup_atlas_utility_20260930"
   phase: 1
   updated_at: "2026-09-30T23:07:08.019114+00:00"
+-
+  body: "\nType B object-ID migration preparation only; no object IDs or consumers were rewritten.\n\nClassification:\n- 1,559 current objects total.\n- 833 IDs are exactly 12 lowercase hexadecimal characters and are treated as opaque/hash-like legacy automatic IDs to replace.\n- 726 IDs are preserved unchanged under the conservative human-readable rule.\n- No current object ID occupied the reserved seven-digit decimal namespace before reservation.\n\nFrozen mapping:\n- gn3n.object_id_migration_proposal contains 833 rows.\n- Proposed IDs exactly_where_strict_omissiontoinsertion_transport_is_necessary..retracted_synchronized_barriershell_double_crossing were durably reserved by atomically advancing gn3n.identity_counters(counter_key='object_id') to 1000833.\n- Mapping rows are status=reserved; objects.id is untouched.\n\nTyped arrays definitely carrying object IDs:\nassignment_requests.target_ids; atlas.object_ids; changes.object_ids; claims.target_ids; commit_receipts.object_ids; needs.target_ids; polls.target_ids; read_sessions.object_ids; runs.target_ids; signals.related_object_ids; state.research_focus_ids.\nCurrent live nonempty counts observed: atlas 26 rows/172 refs; changes 1961 rows/3315 refs; needs 3 rows/45 refs; polls 5 rows/19 refs; runs 44 rows/279 refs; signals 39 rows/110 refs. Other listed carriers were empty at inspection time.\n\nJSON/JSONB classifications:\n- Definitely object IDs, safe with key-aware structural rewrite: certificates.premise_manifest[*].id; certificates.premise_signature[*].id; reasoning_nodes.composition_manifest[*].id; audit_snapshots premise/signature/version maps when present; stage baselines/read_math_baselines object keys (except __state_revision).\n- Mixed/polymorphic, requires semantic parsing by operation/key rather than blind string replacement: stages.operations; stages.payload; assignment_requests.disposition/intent; polls.action_resolution; scheduler_reviews.trigger/completion; runs.payload; signals.evidence; changes.details; objects.metadata; objects.research_interface; edges.metadata; transition_receipts.result_packet.\n- Historical records should retain prose/free-text verbatim. Rewrite only structured fields/keys that semantically denote object IDs; never global replace IDs inside arbitrary strings.\n- Stage JSON carriers were empty at inspection time, but control_center serializers/deserializers actively use them and the integrator must still support them.\n\nManual Atlas:\n- gn3n.atlas remains untouched historical/manual state.\n- 26 rows contain 172 object-ID occurrences.\n- 94 occurrences (85 distinct IDs) belong to the replacement set.\n- Rewrite atlas.object_ids from the frozen mapping during integration, or archive the old Atlas first if the integration plan supersedes it.\n\nImportant code paths (inspection only; control_center unchanged):\nallocate_identity; create_object_core; stage_batch_base/append_stage_v2/replace_stage_v2/verify_stage/commit_stage_locked_base; premise_manifest/premise_signature/certify_object_ex/refresh_support; open_read_ex_base/read_page_base; record_change/change_page/important_changes; raise_need/assign_worker_core/request_assignment; raise_signal/signals; submit_poll/poll_status/resolve_poll_action; atlas; scheduler review functions.\nThese paths serialize/deserialze IDs in arrays or structured JSON and must be compatible with the rewritten IDs after cutover.\n\nIntegrator hazards:\n1. Rewrite JSON object keys as well as string values where IDs are map keys.\n2. Do not rewrite hashes, math_version values, worker IDs, claim/stage/poll/signal IDs, or free-text prose merely because they resemble strings.\n3. Stage operations are polymorphic; parse by op schema (id/object_id/parent_id/etc.) rather than recursively replacing every text value.\n4. Historical scheduler/change/signal payloads contain mixed structured references and prose; key-aware rewrite only.\n5. Consume gn3n.object_id_migration_proposal as the authoritative frozen old->new map and do not allocate new IDs for those 833 rows again.\n"
+  created_at: "2026-09-30T16:04:50.209478+00:00"
+  details:
+    collision_count: 0
+    counter_next: 1000833
+    cutover_executed: false
+    manual_atlas:
+      distinct_replacement_ids: 85
+      occurrences: 172
+      replacement_occurrences: 94
+      rows: 26
+    mapping_table: "gn3n.object_id_migration_proposal"
+    preserved_ids: 726
+    replacement_ids: 833
+    reserved_range:
+      - "exactly_where_strict_omissiontoinsertion_transport_is_necessary"
+      - "retracted_synchronized_barriershell_double_crossing"
+    schema: "gn3n"
+    total_objects: 1559
+    worker_type: "B"
+  note_key: "object_id_migration_prep_type_b"
+  phase: 2
+  updated_at: "2026-09-30T16:04:50.209478+00:00"

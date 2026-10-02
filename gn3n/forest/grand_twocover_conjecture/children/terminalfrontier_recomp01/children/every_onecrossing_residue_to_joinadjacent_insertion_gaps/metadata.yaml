@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d58eef855699a92476f77d61ceaff04bdc96c580c8025cd6166b1f0772ece252"
+created_at: "2026-09-28T02:00:46.298909+00:00"
+id: "every_onecrossing_residue_to_joinadjacent_insertion_gaps"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 155
+    detail: "Independent reconstruction: for a two-cover T of H-{x,y}, transition counting across M|B|C gives at least one cross-core edge. With exactly one and no order disagreement, cutting it leaves exactly three monochromatic blocks, so M,B,C each occur as one whole displayed-order block and one is isolated while the other two concatenate. If B is isolated, C|M would combine with B+x and the inherited extension (M,y) to two-cover H, so the concatenation must be M|C. Any successful y-insertion deeper than the first two C-gaps preserves the two triples at the M-C join, again yielding a two-cover with B+x; hence y is confined to the first two gaps. The C-isolated case is symmetric. If M is isolated, the same argument using (M,y) and (x,M) confines x to the last two B-gaps and y to the first two C-gaps, with the reversed concatenation mirrored. This proves the stated localization."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:05:35.45336+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 155
+    detail: "Independent reconstruction: for a two-cover T of H-{x,y}, transition counting across M|B|C gives at least one cross-core edge. With exactly one and no order disagreement, cutting it leaves exactly three monochromatic blocks, so M,B,C each occur as one whole displayed-order block and one is isolated while the other two concatenate. If B is isolated, C|M would combine with B+x and the inherited extension (M,y) to two-cover H, so the concatenation must be M|C. Any successful y-insertion deeper than the first two C-gaps preserves the two triples at the M-C join, again yielding a two-cover with B+x; hence y is confined to the first two gaps. The C-isolated case is symmetric. If M is isolated, the same argument using (M,y) and (x,M) confines x to the last two B-gaps and y to the first two C-gaps, with the reversed concatenation mirrored. This proves the stated localization."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:05:35.45336+00:00"
+    worker_id: 679
+  noncomputational: true
+  proof_rehearsal_generation: 43
+  scale_free: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "terminalfrontier_recomp01"
+position: 0
+research_interface:
+  consumer: "grand theorem proof rehearsal; endpoint transport / defect compression"
+  given: "the unique-large opposite-donor branch: x transfers only into B and y only into C, with the cross enlargements non-Hamiltonian"
+  need: "consume the bounded join-adjacent good-vs-bad endpoint geometry"
+  produces: "either order/crossing disturbance or a one-crossing two-deletion cover whose successful insertions are confined to the first/last two gaps adjacent to its sole core-core join"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Opposite donor endpoints localize every one-crossing residue to join-adjacent insertion gaps."
+statement_sha256: "39f44eb3a954b381e8ad2082a2ee2adb5ccd747e2e1094cceb3bca4a313b9a94"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Opposite donor endpoints localize every one-crossing residue to join-adjacent insertion gaps"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:05:35.45336+00:00"
+version: 4

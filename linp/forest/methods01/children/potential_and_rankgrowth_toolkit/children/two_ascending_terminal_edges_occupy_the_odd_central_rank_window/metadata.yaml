@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 6
+body_sha256: "5c782813ccf2d50b8cb139105cc9f1908da0af8f031bac3eedfce88ad7cc40ac"
+created_at: "2026-09-24T03:43:29.278486+00:00"
+id: "two_ascending_terminal_edges_occupy_the_odd_central_rank_window"
+last_elevation_revision: null
+last_substantive_worker_id: 253
+legacy_id: "1000739"
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "100a09b2-888e-4309-a9dd-5c8004cf7ab7"
+    detail: "The terminal-rank inequality reduces all counted edges to rank q in the odd window. On a length 2q-3 v-ending path, visible entrances are confined to the three vertices of g_{q-1}, while an absent entrance forces the opposite terminal to the left joint only. Three distinct witnesses would occupy all three positions, and the endpoint-chord lemma raises the right joint from q-1 to at least q, contradiction. The p=2q-2 and >=2q-1 refinements follow as stated."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:40:18.660812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "100a09b2-888e-4309-a9dd-5c8004cf7ab7"
+    detail: "The terminal-rank inequality reduces all counted edges to rank q in the odd window. On a length 2q-3 v-ending path, visible entrances are confined to the three vertices of g_{q-1}, while an absent entrance forces the opposite terminal to the left joint only. Three distinct witnesses would occupy all three positions, and the endpoint-chord lemma raises the right joint from q-1 to at least q, contradiction. The p=2q-2 and >=2q-1 refinements follow as stated."
+    math_version: 6
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:40:18.660812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 253
+parent_id: "potential_and_rankgrowth_toolkit"
+position: 120
+research_interface:
+  consequence: "Improves the odd central window from three to two at all ranks, without charging. Three ascending terminal edges of ranks at most Q force φ(v)≤2Q-4."
+  consumer:
+    - "potentialoriented_local_bound_for_ascending_terminal_edges"
+    - "potentialfive_charged_obstructions_have_four_rank_patterns"
+    - "centralwindow_packing_for_commonterminal_ascending_edges"
+  next_need: "Use the stronger third-rank floor; p=5 leaves 4455/4555/5555."
+research_level: "lemma"
+semantic_container_text: "Odd central-window and potential-five rank-pattern program: sharply limit low-rank charged terminal edges and classify the surviving 4555 and 4455 witness geometries through rail, entrance, crossing, and terminal constraints."
+simplified_statement: "At most two ascending terminal edges occupy the odd central rank window."
+statement_sha256: "42508523f5caf742aabb5c2d16fb07d582d4330c266d5f7f2cd56822ec1f148e"
+substantive_worker_ids:
+  - 253
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At most two ascending terminal edges occupy the odd central rank window"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 15

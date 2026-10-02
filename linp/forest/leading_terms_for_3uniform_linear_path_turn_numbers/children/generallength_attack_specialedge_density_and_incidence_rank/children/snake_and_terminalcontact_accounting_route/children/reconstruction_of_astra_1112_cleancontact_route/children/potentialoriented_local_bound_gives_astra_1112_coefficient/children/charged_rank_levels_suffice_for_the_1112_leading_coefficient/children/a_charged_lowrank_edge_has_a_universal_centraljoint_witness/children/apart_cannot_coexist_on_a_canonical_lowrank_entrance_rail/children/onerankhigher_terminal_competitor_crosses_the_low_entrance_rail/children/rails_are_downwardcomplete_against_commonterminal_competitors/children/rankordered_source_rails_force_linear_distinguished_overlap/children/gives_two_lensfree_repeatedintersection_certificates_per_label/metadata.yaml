@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "cbf0e8da987e9cdf6e3ac722fae4ba161917410a538329fc4a948f5648fa94e4"
+created_at: "2026-09-25T20:52:06.023806+00:00"
+id: "gives_two_lensfree_repeatedintersection_certificates_per_label"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: "1001127"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "The binary distinguished-overlap averaging is correct. In type U, absence of x_i and v from each host forces the unique contact u_i and first-contact localization gives the q_i-2 bound. For either type, a unique intersection of P_i with R_a or R_b at its endpoint y_i contradicts the certified unique-intersection alignment theorem, so the repeated-intersection conclusion is lens-free and valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "9ca22ff5-6fc2-4fa3-8ed4-02d1ffbbf7a0"
+    detail: "The binary distinguished-overlap averaging is correct. In type U, absence of x_i and v from each host forces the unique contact u_i and first-contact localization gives the q_i-2 bound. For either type, a unique intersection of P_i with R_a or R_b at its endpoint y_i contradicts the certified unique-intersection alignment theorem, so the repeated-intersection conclusion is lens-free and valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:04:59.345731+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  semantic_container_seed:
+    atlas_key: "repeated_intersection"
+    headline: "Two-host repeated-intersection and common-edge route"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas"
+object_type: "lemma"
+origin_worker_id: 224
+parent_id: "rankordered_source_rails_force_linear_distinguished_overlap"
+position: 0
+research_interface:
+  consequence: "A linear common-minimum-terminal family forces two higher-rank source rails to share k/8-O(1) labels of one type, and every such label forces a second intersection with each host rail. The terminal-label branch additionally has exact one-contact attachment and early first-contact localization."
+  consumer:
+    - "7e6abf77cbc5 sublinear local paid two-terminal-gap bound"
+    - "same-terminal selected common-anchor class S"
+    - "lens-free source-rail overlap route"
+  given:
+    - "f9b8f7df1398 rank-ordered distinguished source-rail overlap"
+    - "a7b7670e955a terminal potential versus edge rank"
+    - "813f5b668319 first-contact localization"
+    - "5854d853a44b unique intersection of maximum endpoint paths is an aligned joint"
+    - "minimum-rank terminal assignment"
+  next_need: "Exploit the two-host repeated-intersection packet without lens conversion. In the X branch, three maximum source rails repeatedly intersect at each label; in the U branch, one maximum u_i-path repeatedly intersects both hosts while the parent edge attaches to each host exactly at u_i. Bound reuse/gates or derive ordered braid/cycle congestion."
+research_level: "lemma"
+semantic_container_text: "Repeated source-path intersection route: same-type overlap packets force cycles or many common high-rank edges, and shared-block orientation and rank propagation constrain the remaining residue without converting through lenses."
+simplified_statement: "A common-minimum-terminal family of k ascending edges forces two higher-rank source paths and k/8-O(1) same-type labels, each giving repeated intersections with both paths."
+statement_sha256: "13f0be4319c3bbcef0060c7cef834db02c9fb86a4139b02a7d599b6973ce59bf"
+substantive_worker_ids:
+  - 224
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Same-type distinguished overlap gives two lens-free repeated-intersection certificates per label"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:16:37.188883+00:00"
+version: 9

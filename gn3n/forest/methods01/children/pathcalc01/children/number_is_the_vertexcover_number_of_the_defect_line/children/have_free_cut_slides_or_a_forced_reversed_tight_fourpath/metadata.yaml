@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "6d73fd3e86206005707b70886229a48c467112152066c81e8a6760f02930657a"
+created_at: "2026-09-27T14:19:23.976598+00:00"
+id: "have_free_cut_slides_or_a_forced_reversed_tight_fourpath"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 263
+    detail: "Removed nonstandard 'bridge' terminology and corrected the unsupported termination claim: one-step cut slides can reverse each other, so only the local merge/slide/reversed-four-path trichotomy is asserted."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  coverage: "Astra 006 plateau normalization"
+  last_audit_observation:
+    claim_id: 263
+    detail: "Removed nonstandard 'bridge' terminology and corrected the unsupported termination claim: one-step cut slides can reverse each other, so only the local merge/slide/reversed-four-path trichotomy is asserted."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Mathematical audit repair: remove the unsupported termination claim. A one-step cut slide can make the reverse slide the unique available move, so cut slides may form a 2-cycle. Preserve the valid local trichotomy and state the missing global-invariant obligation."
+    recorded_at: "2026-09-27T14:33:50.258157+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 616
+  small_order_free: true
+  viewpoint: "cut sliding and reverse bridges"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "number_is_the_vertexcover_number_of_the_defect_line"
+position: 0
+research_interface:
+  consumer: "Astra 006 block relocation route; defect transport"
+  given: "a c<=3 ordering displayed as three contiguous tight blocks"
+  need: "combine the local merge/slide/reversed-tight-four-path trichotomy with a monotone invariant or a genuinely nonlocal block relocation"
+  produces: "whole-block permutation freedom and a correct local merge/slide/reversed-tight-four-path trichotomy; cut slides alone need not terminate"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three-block plateaux have free cut slides or a forced reversed tight four-path"
+statement_sha256: "529f5e92ef8e64705127c4a0c32502362b5628c04b147fe518d557521f11173c"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three-block plateaux have free cut slides or a forced reversed tight four-path"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 8

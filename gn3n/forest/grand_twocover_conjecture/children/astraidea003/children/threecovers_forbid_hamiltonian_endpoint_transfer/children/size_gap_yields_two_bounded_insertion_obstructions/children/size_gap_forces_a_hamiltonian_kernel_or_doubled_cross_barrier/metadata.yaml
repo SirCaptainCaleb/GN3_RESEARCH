@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "d53ef88c4c23ebf754edb2fad442d857ff31a271225dc50eb7e3b6591019731d"
+created_at: "2026-09-27T22:12:13.90403+00:00"
+id: "size_gap_forces_a_hamiltonian_kernel_or_doubled_cross_barrier"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 415
+    detail: "The original unconditional Hamiltonian-kernel conclusion was weakened exactly where the repaired dependency requires it: when both smaller-path obstructions are second-type, retain the additional doubled cross barrier alternative (r,q,x) and (q,r,x). All first-type and Hamiltonian branches remain unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T22:22:38.690253+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 415
+    detail: "The original unconditional Hamiltonian-kernel conclusion was weakened exactly where the repaired dependency requires it: when both smaller-path obstructions are second-type, retain the additional doubled cross barrier alternative (r,q,x) and (q,r,x). All first-type and Hamiltonian branches remain unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T22:22:38.690253+00:00"
+    worker_id: 596
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Dependency 0b012e2e3816 was correctly repaired from an unconditional mixed Hamiltonian-four-set conclusion to a Hamiltonian-four-set-or-doubled-cross-barrier dichotomy. This consumer must retain that new barrier branch. The repaired theorem follows by applying the same first-type analysis and then the certified repaired two-pivot theorem."
+    recorded_at: "2026-09-27T22:22:24.385367+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 596
+object_type: "research"
+origin_worker_id: 697
+parent_id: "size_gap_yields_two_bounded_insertion_obstructions"
+position: 2
+research_interface:
+  consumer: "quadratic no-trapping; endpoint transport / defect compression"
+  given: "a Phi-minimal trapped three-cover whose largest component exceeds the second-largest by at least two"
+  need: "consume the doubled cross barrier into checked repartition/defect compression; Hamiltonian-kernel branch enters codimension-four/five complement machinery"
+  produces: "a Hamiltonian induced 4/5-set with non-Hamiltonian pc-two complement, or a doubled cross barrier using one endpoint of the largest path and one vertex from each smaller path"
+research_level: "theorem"
+semantic_container_text: "Quadratic size-gap barrier branch: a largest-second gap at a quadratic minimum yields a small Hamiltonian kernel, reversed-edge detour, or doubled cross barrier; the barrier alternative is propagated until a connector or further bounded obstruction appears."
+simplified_statement: "Every quadratic-minimal largest-second size gap forces a Hamiltonian kernel or doubled cross barrier"
+statement_sha256: "41a3dd82898b4620546a92b59a32cae70d902678902d973acd539e363b86b633"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every quadratic-minimal largest-second size gap forces a Hamiltonian kernel or doubled cross barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 10

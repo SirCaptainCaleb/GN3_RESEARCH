@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "f2152a066fb204ec63ab1f3adda86b7f119843bb1ca93a9dda8ea6374a6716af"
+created_at: "2026-09-28T09:57:45.356929+00:00"
+id: "force_hamiltonian_windows_unless_disturbance_already_occurs"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 172
+    detail: "Explicitly routed a possible one-vertex coarse connector through the cross-triple lemma; the connector lemma is used only for intervals with at least two A-vertices."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:07:58.093521+00:00"
+    worker_id: 706
+  last_audit_observation:
+    claim_id: 172
+    detail: "Explicitly routed a possible one-vertex coarse connector through the cross-triple lemma; the connector lemma is used only for intervals with at least two A-vertices."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T10:07:58.093521+00:00"
+    worker_id: 706
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Interface-hygiene repair: the coarse connector statement only guarantees a nonempty A-subpath. Route a one-vertex connector through the cross-triple lemma and reserve the connector lemma for intervals with at least two A-vertices."
+    recorded_at: "2026-09-28T10:07:34.629796+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 706
+  noncomputational: true
+object_type: "research"
+origin_worker_id: 700
+parent_id: "is_bounded_or_exposes_a_standard_pairednoninsertion_witness"
+position: 1
+research_interface:
+  consumer: "endpoint transport / defect compression; bounded-window synchronization"
+  given: "a large one-gap deficit-one corridor with r exterior vertices"
+  need: "synchronize the dense Hamiltonian-window family into a direct two-cover or defect-span compression"
+  produces: "disturbance, or Hamiltonian four/five windows with path-cover-two complements at all but at most two consecutive-pair positions"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "All but two consecutive pairs in a large one-gap corridor force Hamiltonian windows unless disturbance already occurs."
+statement_sha256: "8571af93d88c55c754b10c4571561f1f9bee4d30527479894d7453fae3a59740"
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "All but two consecutive pairs in a large one-gap corridor force Hamiltonian windows unless disturbance already occurs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T10:07:58.093521+00:00"
+version: 10

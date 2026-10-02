@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "851b393c3cc361524b925679d4c002f76528b4e7be43242bdecb25cbdce40f3a"
+created_at: "2026-09-28T17:37:45.647935+00:00"
+id: "every_minimum_counterexample_has_nonvacuous_order_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 703
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 411
+    detail: "Independent reconstruction checks the three cases: a non-Hamiltonian six-set gives disagreement among Hamiltonian five-deletions; a deletion component of order three through five gives substantial disagreement; in the long case the sliding five-window insertion-side argument forces a five/six or six/six disagreement. Both paths always have order at least three."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:56:41.474795+00:00"
+    worker_id: 586
+  last_audit_observation:
+    claim_id: 411
+    detail: "Independent reconstruction checks the three cases: a non-Hamiltonian six-set gives disagreement among Hamiltonian five-deletions; a deletion component of order three through five gives substantial disagreement; in the long case the sliding five-window insertion-side argument forces a five/six or six/six disagreement. Both paths always have order at least three."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T19:56:41.474795+00:00"
+    worker_id: 586
+  repairs: "50137573941d,7ba450ffcfe5"
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T17:58:18.435805+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 659
+parent_id: "every_minimum_counterexample_contains_order_disagreement"
+position: 0
+research_interface:
+  consumer: "path-intersection localization; endpoint transport / defect compression"
+  given: "a hypothetical minimum counterexample"
+  need: "apply pathcalc and consume its cycle branch to obtain a genuine reversing tight triple"
+  produces: "relative-order disagreement between two nontrivial tight paths, each of order at least three; no vacuous two-vertex witness"
+research_level: "theorem"
+semantic_container_text: "Nonvacuous order-disagreement route: universal six-set Hamiltonicity and long deletion components are pushed through local reversals, omitted-label replacements, short cycles, and Hamiltonian four/five-windows until a genuine order disagreement is exposed."
+simplified_statement: "Every minimum counterexample has nonvacuous order disagreement."
+statement_sha256: "b2849f5e96b4180517db69b94659b52a1016d25c31f14d791690cf1b0f053ecd"
+substantive_worker_ids:
+  - 659
+  - 703
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every minimum counterexample has nonvacuous order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 9

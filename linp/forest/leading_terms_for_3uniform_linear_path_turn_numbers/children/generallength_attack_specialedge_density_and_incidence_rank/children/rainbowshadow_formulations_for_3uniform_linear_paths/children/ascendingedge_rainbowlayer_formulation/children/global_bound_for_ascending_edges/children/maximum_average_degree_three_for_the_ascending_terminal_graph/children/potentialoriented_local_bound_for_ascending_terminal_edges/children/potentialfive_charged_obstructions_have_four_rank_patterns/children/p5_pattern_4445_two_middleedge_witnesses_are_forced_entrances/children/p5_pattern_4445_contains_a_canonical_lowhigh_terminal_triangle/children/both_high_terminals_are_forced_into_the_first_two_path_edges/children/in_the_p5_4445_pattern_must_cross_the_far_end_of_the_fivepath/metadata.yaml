@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "60bfc2465ce01f15211993ebe776ea1c2d5c889b34b95fa4eb79fdde1bcee619"
+created_at: "2026-09-24T03:40:01.52153+00:00"
+id: "in_the_p5_4445_pattern_must_cross_the_far_end_of_the_fivepath"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1001119"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "d1630e61-5bc1-493f-b264-7f8f29d5683b"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T00:58:59.633671+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-25T00:58:16.994185+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "both_high_terminals_are_forced_into_the_first_two_path_edges"
+position: 0
+research_interface:
+  consequence: "Every maximum b-ending path avoiding u_b is forced to hit the far terminal pair e5∪g4; otherwise it splices to a six-edge path ending at the other low-potential joint c."
+  consumer:
+    - "p=5 4445 elimination"
+    - "two-path uncrossing"
+  given:
+    - "7d676959b033 early high-terminal localization"
+    - "canonical entrance path for ascending edge"
+  next_need: "Classify the forced R_b contact with e5∪g4. Since R_b avoids v, only the two non-v vertices of e5 and the three vertices of g4 are available, with d=e5∩g4 shared. Show contacts away from d create a 4-edge b- or c-ending path; reduce to R_b passing through d."
+  role: "p=5 4445 forced cross-contact"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Canonical entrance paths in the p=5 4445 pattern must cross the far end of the five-path."
+statement_sha256: "3f9d19265249943c7b066e82f7e60c13dabda0493e7ce31b818afc4c4d74fa37"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Canonical entrance paths in the p=5 4445 pattern must cross the far end of the five-path"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

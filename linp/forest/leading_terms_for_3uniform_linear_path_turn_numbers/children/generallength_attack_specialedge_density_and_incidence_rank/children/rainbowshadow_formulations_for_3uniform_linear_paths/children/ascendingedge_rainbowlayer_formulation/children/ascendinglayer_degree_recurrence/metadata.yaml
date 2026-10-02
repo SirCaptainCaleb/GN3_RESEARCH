@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "09581cc6c56e2c087dc155fa03529915e2c747ec21c9baa26050fedd583f7eb7"
+created_at: "2026-09-21T20:02:58.627793+00:00"
+id: "ascendinglayer_degree_recurrence"
+last_elevation_revision: null
+last_substantive_worker_id: 234
+legacy_id: "1001046"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e9373ffe-728a-4655-8934-804ca6667402"
+    detail: "Terminology-only normalization from a(v) to φ(v)."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-22T13:58:19.303954+00:00"
+    worker_id: "0ffc0017-e439-479a-9e4e-0087635d78f1"
+  last_audit_observation:
+    claim_id: "e9373ffe-728a-4655-8934-804ca6667402"
+    detail: "Terminology-only normalization from a(v) to φ(v)."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-22T13:58:19.303954+00:00"
+    worker_id: "0ffc0017-e439-479a-9e4e-0087635d78f1"
+  last_local_audit_repair:
+    reason: "Normalize legacy a(v) notation to canonical φ(v); no mathematical content changed."
+    recorded_at: "2026-09-22T13:57:58.571653+00:00"
+    worker_id: "0ffc0017-e439-479a-9e4e-0087635d78f1"
+object_type: "lemma"
+origin_worker_id: 234
+parent_id: "ascendingedge_rainbowlayer_formulation"
+position: 1
+research_interface:
+  consequence: "low endpoint-rank vertices in a dense core force quantitative growth into the next path-rank layer"
+  consumer: "dense-core all-special and rank-layer expansion routes"
+  given:
+    - "ascending-edge rainbow-layer formulation"
+    - "minimum degree in the original hypergraph"
+  recurrence: "2(delta-2k+1)(n_k-n_{k+1}) <= (2k+1)n_{k+1}"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Ascending-edge layers satisfy 2(delta-2k+1)(n_k-n_{k+1}) <= (2k+1)n_{k+1} whenever delta>2k-1."
+statement_sha256: "33061b078708323326675388bfe7f2451f4c511ad353834f2e05f5eadefd4ec7"
+substantive_worker_ids:
+  - 234
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ascending-layer degree recurrence"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-22T13:58:19.303954+00:00"
+version: 5

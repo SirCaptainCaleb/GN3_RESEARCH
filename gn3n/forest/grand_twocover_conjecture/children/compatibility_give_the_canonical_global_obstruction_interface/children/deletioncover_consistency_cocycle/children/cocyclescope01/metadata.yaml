@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1f6419e07dda8ae56330477243031a0a12a1b5463a490c61a596bbb3b5e9ed65"
+created_at: "2026-09-27T14:23:38.411606+00:00"
+id: "cocyclescope01"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 286
+    detail: "The route reduction is correct: full ordered pair-state consistency already reaches the certified gluing theorem, support-only consistency only localizes, and endpoint-pair data are weaker still. The genuinely new theorem would have to reconstruct full pair-state consistency from a strictly weaker transport datum."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:45:16.983011+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 286
+    detail: "The route reduction is correct: full ordered pair-state consistency already reaches the certified gluing theorem, support-only consistency only localizes, and endpoint-pair data are weaker still. The genuinely new theorem would have to reconstruct full pair-state consistency from a strictly weaker transport datum."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:45:16.983011+00:00"
+    worker_id: 616
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "deletioncover_consistency_cocycle"
+position: 0
+research_interface:
+  consumer: "brainstorm portfolio assessment; compatibility route"
+  given: "the deletion-cover consistency cocycle brainstorm and the certified compatibility hierarchy"
+  need: "define and prove a reconstruction theorem for an intermediate transport datum; full pair states already glue and support-only data only localize"
+  produces: "precise missing theorem: cycle-trivial intermediate transport must reconstruct full pair-state consistency"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The cocycle route needs an intermediate datum between support and full pair-state compatibility"
+statement_sha256: "016349bb856987d57444b73905a306bf2358283e7871780fff50f9469785db7c"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The cocycle route needs an intermediate datum between support and full pair-state compatibility"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T22:32:04.671533+00:00"
+version: 6

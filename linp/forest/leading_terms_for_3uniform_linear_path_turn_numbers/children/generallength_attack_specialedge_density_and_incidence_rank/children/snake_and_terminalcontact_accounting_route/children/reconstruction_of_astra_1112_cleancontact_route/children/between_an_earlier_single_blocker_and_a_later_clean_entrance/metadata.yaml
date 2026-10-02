@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "97d98d8af0bf150ddb53c5cfca4f305a6b752e958b7a238c47daa84f70429069"
+created_at: "2026-09-24T05:31:43.954773+00:00"
+id: "between_an_earlier_single_blocker_and_a_later_clean_entrance"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000454"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "100a09b2-888e-4309-a9dd-5c8004cf7ab7"
+    detail: "Standardized endpoint terminology and repaired the resulting article in one sentence; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:40:18.660812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "100a09b2-888e-4309-a9dd-5c8004cf7ab7"
+    detail: "Standardized endpoint terminology and repaired the resulting article in one sentence; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:40:18.660812+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized grammar repair after endpoint terminology normalization; mathematics unchanged."
+    recorded_at: "2026-09-24T21:37:34.730246+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "reconstruction_of_astra_1112_cleancontact_route"
+position: 0
+research_interface:
+  consequence: "The nearby-contact splice has a quantitative slack form: a later clean entrance must lie p-rank+O(1) cells after any earlier single contact. At p=2q-3 and high rank q+1, the required gap is q-1 for a private entrance and q-2 for a joint entrance."
+  consumer:
+    - "p=2q-3 corrected rank-pair block"
+    - "Astra conflict matching"
+  given:
+    - "maximum endpoint path"
+    - "earlier arbitrary single contact"
+    - "later clean entrance contact"
+  next_need: "Apply to the seven-slot p=2q-3 witness window. It immediately removes the rightmost entrance-only slots F,G from any four-single packing; continue shrinking the remaining A-E states, then handle all-terminal-only states with the terminal-order inequalities."
+  role: "quantitative clean-contact separation"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Quantitative separation between an earlier single blocker and a later clean entrance."
+statement_sha256: "e7e9fede62a4bb9eeed87a98fc8e594774ba51901b504e4bc5f7fdc5faadf653"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Quantitative separation between an earlier single blocker and a later clean entrance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

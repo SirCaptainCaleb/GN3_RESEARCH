@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "3d3627c1f805e32d929f1fe6c9be915dfe97745328ca8b6cb89d3531598ac974"
+created_at: "2026-09-28T03:19:16.70411+00:00"
+id: "force_a_hamiltonian_sixsupport_or_explicit_order_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 707
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 387
+    detail: "The K_2,2 incidence argument is sound: absence of a shared endpoint forces equality/checkerboard structure, four-of-six forces both endpoint deletions, and the resulting transfer decreases Phi for |P|>=6. Standardized order-disagreement wording and recorded premises, then reread."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+  last_audit_observation:
+    claim_id: 387
+    detail: "The K_2,2 incidence argument is sound: absence of a shared endpoint forces equality/checkerboard structure, four-of-six forces both endpoint deletions, and the resulting transfer decreases Phi for |P|>=6. Standardized order-disagreement wording and recorded premises, then reread."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "audit-authorized repair"
+    recorded_at: "2026-09-28T03:46:27.333028+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 583
+object_type: "research_note"
+origin_worker_id: 707
+parent_id: "with_a_fourvertex_component_forms_a_rigid_nonhamiltonian_sixset"
+position: 0
+research_interface:
+  consumer: "global four-side closure; global quadratic-minimum classification; endpoint transport / defect compression"
+  given: "a globally Phi-minimal spanning three-cover with a Hamiltonian four-side and two complementary paths of order at least six"
+  need: "consume the Hamiltonian-six support or the order-disagreement witness into defect compression; compare with the four/five-kernel interface"
+  produces: "either a proper Hamiltonian six-set with exact-pc2 complement or explicit relative-order disagreement; the exact checkerboard endpoint-exchange shell is impossible at such a global minimum"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Global four-side minima force a Hamiltonian six-support or explicit order disagreement."
+statement_sha256: "a58889a0886740b4dd046a7cb6376c9d57aaf5d960496cd6879f9c1b40b60b5c"
+substantive_worker_ids:
+  - 707
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Global four-side minima force a Hamiltonian six-support or explicit order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T01:10:52.341932+00:00"
+version: 8

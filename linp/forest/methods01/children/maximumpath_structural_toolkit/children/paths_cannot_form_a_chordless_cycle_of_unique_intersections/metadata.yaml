@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "0ba77995364fafae563c75c4b65f44674e7cb86c3215670cf79c7e45477fce78"
+created_at: "2026-09-24T22:04:17.785362+00:00"
+id: "paths_cannot_form_a_chordless_cycle_of_unique_intersections"
+last_elevation_revision: null
+last_substantive_worker_id: 249
+legacy_id: "1000106"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 249
+parent_id: "maximumpath_structural_toolkit"
+position: 30
+research_interface:
+  consequence: "The graph whose edges are unique intersections among equal-length maximum paths has no induced four-cycle whose opposite path pairs are disjoint."
+  consumer:
+    - "flat-cycle elimination"
+    - "rail intersection packing"
+  given:
+    - "equal-length maximum endpoint paths"
+    - "unique-intersection alignment 5854d853a44b"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Four equal-length maximum paths cannot form a chordless cycle of unique intersections."
+statement_sha256: "4ad450ff2b70279130b235cbf2f34daa430774dc97c1ae815e49b1310ae9ca1f"
+substantive_worker_ids:
+  - 249
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four equal-length maximum paths cannot form a chordless cycle of unique intersections"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:02:48.984834+00:00"
+version: 7

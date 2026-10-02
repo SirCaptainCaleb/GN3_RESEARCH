@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "21437c9543ca8ba4daf4bccc50cbb3b58bc087a4d04944dde064e116cf0fa9d5"
+created_at: "2026-09-22T22:01:25.546763+00:00"
+id: "terminal_nonspecial_saturation_forces_doubleblocker_excess"
+last_elevation_revision: null
+last_substantive_worker_id: 204
+legacy_id: "1000461"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1c980088-a767-495d-ae76-e772a46457ea"
+    detail: "Vocabulary-only replacement of prohibited physical-endpoint language plus duplicated phrasing cleanup; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T14:13:24.936206+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  computation_used: false
+  last_audit_observation:
+    claim_id: "1c980088-a767-495d-ae76-e772a46457ea"
+    detail: "Vocabulary-only replacement of prohibited physical-endpoint language plus duplicated phrasing cleanup; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T14:13:24.936206+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_local_audit_repair:
+    reason: "Editorial cleanup after vocabulary repair; remove duplicated last-vertex phrasing without changing mathematics."
+    recorded_at: "2026-09-23T14:11:58.861164+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  proof_style: "terminal blocker injection plus critical-slot splice"
+  route: "generalized_snake_upper_bound"
+object_type: "lemma"
+origin_worker_id: 204
+parent_id: "nonspecial_terminal_snake_incidences_have_cumulative_bound_2q3"
+position: 1
+research_interface:
+  consequence: "Near-saturation of nonspecial terminal incidences necessarily pays in double-blocker multiplicity."
+  consumer:
+    - "contact-multiplicity snake"
+    - "general upper bound"
+  given:
+    - "terminal cumulative bound 0e550ff0eadd"
+    - "chosen maximum endpoint path"
+  next_need: "Look for a second layer of critical slots/rotations that forces more than O(1) excess per high-potential vertex."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Terminal nonspecial saturation forces double-blocker excess."
+statement_sha256: "8d55e6c5256c809bc6f3978e4add52267399cacfe6f296cdecfb3cb862dedebf"
+substantive_worker_ids:
+  - 204
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal nonspecial saturation forces double-blocker excess"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:15:22.05956+00:00"
+version: 9

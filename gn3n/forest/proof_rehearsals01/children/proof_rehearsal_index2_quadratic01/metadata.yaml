@@ -30,16 +30,16 @@ position: 2
 research_interface:
   artifact_kind: "research_launch_synthesis"
   certified_launch_points:
-    - "1000633 + 1000694 for the main generic consumer"
+    - "quadratic_minima_have_no_structureless_neutraltransfer_residue + compatibility_give_the_canonical_global_obstruction_interface for the main generic consumer"
     - "unique_small_transport_recomp02 for the certified unique-small base"
-    - "1000292 for the all-equal consumer"
+    - "threecover_endpoint_probes_always_expose_scalefree_disturbance for the all-equal consumer"
     - "global_sizegap_maximin_bypass01 for the global-minimum context-sensitive bypass"
-    - "1000753 for certified doubled-barrier propagation"
+    - "propagates_along_a_path_unless_a_fourvertex_connector_opens for certified doubled-barrier propagation"
   first_unsupported_inference: "the synchronized bounded outputs now available on the equitable plateau force a spanning two-cover / defect span <=2; doubled reverse barrier remains an exact certified local obstruction rather than a solved absorption case"
   fresh_research_incorporated: true
   minimal_closure_package:
     - "consume the synchronized bounded menu (pc2 square / overlapping windows / matching-block shell / endpoint reversal / doubled barrier) into defect span <=2"
-    - "or prove the general 1000633 canonical disturbance consumer"
+    - "or prove the general quadratic_minima_have_no_structureless_neutraltransfer_residue canonical disturbance consumer"
     - "or give a well-founded equal-Phi support/order/provenance escape theorem that implies one of those consumers"
   pending_launch_points:
     - "unique_small_bounded_endgame01"
@@ -51,12 +51,12 @@ research_interface:
   proof_rehearsal_index: 2
   route_summary: "minimum counterexample -> deletion-generated trapped component -> Phi-minimum -> simultaneous pairwise balance extremality -> canonical disturbance -> equitable plateau -> synchronized bounded endgame -> defect-span/endpoint-transport consumer -> two-cover"
   strategic_fences:
-    - "pure pair-union balance improvement is equivalent to balanced refinement (1000079)"
-    - "strict Phi descent cannot continue from equitable profiles (1000268)"
+    - "pure pair-union balance improvement is equivalent to balanced refinement (to_balanced_refinement_on_every_twocoverable_tournament)"
+    - "strict Phi descent cannot continue from equitable profiles (threecover_size_profiles_are_absolute_quadratic_minima)"
     - "raw reversal existence is already a known sink; positioning/synchronization is required"
-    - "generic doubled-barrier absorption is not proved; use certified propagation 1000753 and retain the obstruction honestly"
-    - "global c<=5 minima are eliminated above order seventeen unless disagreement occurs (1000921)"
-    - "all-equal unique-crossing classification is already consumed by 1000292"
+    - "generic doubled-barrier absorption is not proved; use certified propagation propagates_along_a_path_unless_a_fourvertex_connector_opens and retain the obstruction honestly"
+    - "global c<=5 minima are eliminated above order seventeen unless disagreement occurs (have_minimum_side_at_least_six_unless_order_disagreement_occurs)"
+    - "all-equal unique-crossing classification is already consumed by threecover_endpoint_probes_always_expose_scalefree_disturbance"
     - "unique-small raw neutral-cycle/four-hook/coherent-same-end work is superseded as a launch point by unique_small_bounded_endgame01"
 research_level: "proof_level"
 semantic_container_text: null

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "afc93fdd5053013af15842b1c35019e520d15808728ff5d70f2279cdbbc34247"
+created_at: "2026-09-24T20:44:32.942014+00:00"
+id: "paid_mass_yields_onesixteenth_distinct_certified_switcher_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 250
+legacy_id: "1000894"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6788f8c2-1265-49e1-8d7f-84867df20480"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:00:05.645031+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "6788f8c2-1265-49e1-8d7f-84867df20480"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:00:05.645031+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 250
+parent_id: "nearextremizers_carry_oneeighth_paid_progressorobstruction_mass"
+position: 0
+research_interface:
+  consequence: "Removes arbitrary center reuse from half of the paid-event accounting: the near-extremal obstruction contains Omega(S) genuinely distinct ascending edges equipped with rigid progress/obstruction certificates."
+  consumer:
+    - "post-43/48 coefficient improvement"
+    - "distinct-edge paid-certificate packing"
+    - "rank-flow/special-output charging"
+  given:
+    - "4b7e6f0a912c global one-eighth paid-event mass"
+    - "ascending nonspecial edges have exactly two terminal vertices"
+  next_need: "Exploit that a positive fraction of distinct ascending edges now carry paid certificates. Separate certificates into double-cell, rank-rise, special-output, and high-joint output types; prove one type forces extra global defect or bounded output reuse."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "One-eighth paid mass yields one-sixteenth distinct certified switcher edges."
+statement_sha256: "6c0a63b5154e7d63f8608f907ed835bf14c104cca12f53e379e5cdd3918ec166"
+substantive_worker_ids:
+  - 250
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "One-eighth paid mass yields one-sixteenth distinct certified switcher edges"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 7

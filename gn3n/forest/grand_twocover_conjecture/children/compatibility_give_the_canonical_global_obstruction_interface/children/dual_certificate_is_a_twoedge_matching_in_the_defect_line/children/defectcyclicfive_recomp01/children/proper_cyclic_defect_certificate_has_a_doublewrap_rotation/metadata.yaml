@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "ab345af5e8000303b83abe2436cd1eddfa6d3561a6dd54de9c334432c6f4d9a6"
+created_at: "2026-09-28T01:27:23.844496+00:00"
+id: "proper_cyclic_defect_certificate_has_a_doublewrap_rotation"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 442
+    detail: "Independent reconstruction succeeds. For every proper cyclic run type other than the three-edge matching, one can choose a degree-two vertex q in a nontrivial run so that nu(Gamma-q)=2: the middle of the 2-run for {2,1,1} and {3,2}; an internal vertex adjacent to an end of the 3-run for {3,1}; and the second vertex from an end of the 5-run for {5}, leaving a 3-run. Thus both defect edges incident with q become the two failed wrap tests of the rotation, whose reversals concatenate to the tight four-path (v_2,v_1,v_n,v_{n-1}). Since the minimum counterexample has order greater than ten, this four-set is proper, and its complement has path-cover number two. The matching type {1,1,1} has no degree-two defect vertex and is correctly the sole exception."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:29:49.36168+00:00"
+    worker_id: 694
+  last_audit_observation:
+    claim_id: 442
+    detail: "Independent reconstruction succeeds. For every proper cyclic run type other than the three-edge matching, one can choose a degree-two vertex q in a nontrivial run so that nu(Gamma-q)=2: the middle of the 2-run for {2,1,1} and {3,2}; an internal vertex adjacent to an end of the 3-run for {3,1}; and the second vertex from an end of the 5-run for {5}, leaving a 3-run. Thus both defect edges incident with q become the two failed wrap tests of the rotation, whose reversals concatenate to the tight four-path (v_2,v_1,v_n,v_{n-1}). Since the minimum counterexample has order greater than ten, this four-set is proper, and its complement has path-cover number two. The matching type {1,1,1} has no degree-two defect vertex and is correctly the sole exception."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:29:49.36168+00:00"
+    worker_id: 694
+object_type: "research"
+origin_worker_id: 688
+parent_id: "defectcyclicfive_recomp01"
+position: 0
+research_interface:
+  consumer: "cyclic defect elimination and four-side obstruction machinery"
+  given: "the certified five-type proper cyclic defect classification"
+  need: "focus all remaining genuinely single-wrap work on the unique {1,1,1} matching geometry"
+  produces: "a two-regime reduction: either the defect graph is the three-edge matching {1,1,1}, or the same cyclic order has a double-wrap span-three rotation with a canonical tight four-path and two-coverable complement"
+research_level: "theorem"
+semantic_container_text: "Nonmatching cyclic-certificate double-wrap branch: proper nonmatching run types admit a rotation with two wrap defects, producing a four-vertex tight support with two-coverable complement and feeding deletion states into central/outer bridge, paired-obstruction, transport, and gap-network reductions."
+simplified_statement: "Every nonmatching proper cyclic defect certificate has a double-wrap rotation"
+statement_sha256: "90b3ee53579fe47fce6408a82fd98fdc73e0843ffd4129b61630e2085596b736"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every nonmatching proper cyclic defect certificate has a double-wrap rotation"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:33.193322+00:00"
+version: 7

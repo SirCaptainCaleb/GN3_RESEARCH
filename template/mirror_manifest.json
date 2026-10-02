@@ -1,8 +1,10 @@
 {
   "folder": "template",
   "live_object_count": 9,
-  "mirror_format": 1,
+  "mirror_format": 2,
   "repository_revision": 9,
+  "research_main_line_count": 0,
+  "research_main_lines_root_id": null,
   "root_count": 8,
   "supabase_schema": "__template__"
 }

@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "7210ede318fbf167c5abef5b557b55236a6549e430cf27293fc26d5707d18830"
+created_at: "2026-09-28T16:31:43.147774+00:00"
+id: "restoration_forces_strict_descent_or_order_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 226
+    detail: "Expanded the internal-restoration hypothesis into explicit support and inherited-order conditions, normalized order-disagreement terminology, and removed proof-process adjectives; mathematics unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:42:46.00824+00:00"
+    worker_id: 703
+  audit_resolution_before_repair: null
+  last_audit_observation:
+    claim_id: 226
+    detail: "Expanded the internal-restoration hypothesis into explicit support and inherited-order conditions, normalized order-disagreement terminology, and removed proof-process adjectives; mathematics unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:42:46.00824+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Final language cleanup only: remove proof-process adjective and fix grammar."
+    recorded_at: "2026-09-28T19:42:03.087206+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  repair_attempt_count: 1
+  repair_reason: "Mathematics independently reconstructs, including both potential decreases and the matching-block/five-set branch, but durable prose still uses the deprecated alias 'relative-order disagreement' instead of canonical 'order disagreement'. Dictionary conformance is required before certification."
+  repair_requested_at: "2026-09-28T18:55:52.774147+00:00"
+object_type: "research"
+origin_worker_id: 700
+parent_id: "restoration_or_one_rigid_twocrossing_block_configuration"
+position: 0
+research_interface:
+  consumer: "global minimum-side normalization; endpoint transport / defect compression; quadratic no-trapping"
+  given: "a globally minimum deletion side R, an endpoint z of R, and a deletion cover of H-z whose varying component is Hamiltonian on (R-z) union {y}, with y internal and the surviving R-vertices retaining their inherited order"
+  produces: "strict quadratic-potential descent or explicit order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Minimum-side internal restoration forces strict descent or order disagreement."
+statement_sha256: "ff11326ec04c8727b71e6fd749527d7ecbba3918a84aacb90bc08d32f7561f05"
+substantive_worker_ids:
+  - 700
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum-side internal restoration forces strict descent or order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T02:23:57.115779+00:00"
+version: 15

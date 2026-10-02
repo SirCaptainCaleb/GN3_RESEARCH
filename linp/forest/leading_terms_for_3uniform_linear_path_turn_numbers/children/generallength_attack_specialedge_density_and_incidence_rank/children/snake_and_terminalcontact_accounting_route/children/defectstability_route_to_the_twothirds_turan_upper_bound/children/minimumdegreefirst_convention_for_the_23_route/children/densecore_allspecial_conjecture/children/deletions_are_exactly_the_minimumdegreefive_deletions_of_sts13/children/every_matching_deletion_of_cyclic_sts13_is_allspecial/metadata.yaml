@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 4
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "ba56125284abd273c339648901973f099d4877248d587e44ac8b368e4a206b04"
+created_at: "2026-09-23T21:50:48.238839+00:00"
+id: "every_matching_deletion_of_cyclic_sts13_is_allspecial"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: "1001013"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "42272559-4090-4848-848f-3f3a3887a5e3"
+    detail: "Title-only normalization removing proof-process language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T02:08:27.517495+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  humanization_of: "all_matching_deletions_of_cyclic_sts13_are_allspecial"
+  last_audit_observation:
+    claim_id: "42272559-4090-4848-848f-3f3a3887a5e3"
+    detail: "Title-only normalization removing proof-process language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T02:08:27.517495+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Editorial-only: remove proof-process language from the title; statement and proof mathematics unchanged."
+    recorded_at: "2026-09-25T02:08:15.999522+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "deletions_are_exactly_the_minimumdegreefive_deletions_of_sts13"
+position: 0
+research_interface:
+  consequence: "Completely replaces exhaustive specialness checking for matching deletions of cyclic STS(13) by explicit symmetry and path certificates."
+  consumer:
+    - "dense-core all-special conjecture"
+    - "minimum-degree local ascending-neighbor bound"
+  given:
+    - "aad44f4c4df5 matching/minimum-degree lemma"
+    - "fb007f7c4b89 rank-six endpoint families"
+    - "db0744b66eb3 exceptional-pair reduction"
+  supersedes:
+    - "all_matching_deletions_of_cyclic_sts13_are_allspecial"
+research_level: "theorem"
+semantic_container_text: "STS(13) matching-deletion calibration: prove all-specialness under matching deletions and analyze the finite extremal configurations that realize the dense-core boundary."
+simplified_statement: "Every matching deletion of cyclic STS(13) is all-special."
+statement_sha256: "b58066f2cdc64f538c7cbbf8207acc80f1536325890b7a4095cd2c020c504c10"
+substantive_worker_ids:
+  - 185
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every matching deletion of cyclic STS(13) is all-special"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:51:31.687677+00:00"
+version: 12

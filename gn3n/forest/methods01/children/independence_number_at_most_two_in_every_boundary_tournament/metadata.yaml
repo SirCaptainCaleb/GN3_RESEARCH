@@ -1,0 +1,56 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "58c31b4aa132160462afb40994ea03aeb32aceb870e3f22993ff836951b72b42"
+created_at: "2026-10-01T19:49:43.514486+00:00"
+id: "independence_number_at_most_two_in_every_boundary_tournament"
+last_elevation_revision: null
+last_substantive_worker_id: 1165
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Independent check of the universal prescribed-pair four-extension proof and the three-of-five corollary."
+  audit_request_recorded_at: "2026-10-01T19:51:17.456432+00:00"
+  audit_resolution:
+    claim_id: 1199
+    detail: "Independent check: the three-label pigeonhole argument gives a Hamiltonian four-subset through any prescribed pair; Mantel and the five-set deletion count follow."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1199
+    detail: "Independent check: the three-label pigeonhole argument gives a Hamiltonian four-subset through any prescribed pair; Mantel and the five-set deletion count follow."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
+object_type: "research"
+origin_worker_id: 1165
+parent_id: "methods01"
+position: 0
+research_interface:
+  consumer: "minimum-counterexample four-window density; prescribed-pair star arguments; small-set structure"
+  given: "any boundary tournament and a prescribed vertex pair"
+  produces: "a Hamiltonian four-extension inside every exterior triple; universal alpha<=2 endpoint-pair graph; at least three Hamiltonian four-deletions in every five-set"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every prescribed pair has a Hamiltonian four-extension inside every exterior triple; therefore every five-set has at least three Hamiltonian four-subsets."
+statement_sha256: "76a577ec7a1aec82f6986dcdc646b20c4958d7becc5f4bbde03a51ea0c92d69a"
+substantive_worker_ids:
+  - 1165
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint-pair Hamiltonicity graphs have independence number at most two in every boundary tournament"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T00:14:35.276297+00:00"
+version: 5

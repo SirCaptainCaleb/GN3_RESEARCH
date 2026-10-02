@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b03c0cdeb92b182e8852a984d72687a469d5fc7cb17a02645b53c486aa5680e1"
+created_at: "2026-09-21T21:27:31.51234+00:00"
+id: "unbounded_commonlastvertex_degree_for_ascending_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000958"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "5837e337-0022-431f-81da-f6fd3882ba11"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:30:15.970739+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  family: "path plus clique attachments"
+  last_audit_observation:
+    claim_id: "5837e337-0022-431f-81da-f6fd3882ba11"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:30:15.970739+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  source_kind: "new_project_construction"
+object_type: "counterexample"
+origin_worker_id: 262
+parent_id: "global_bound_for_ascending_edges"
+position: 10
+research_interface:
+  consumer:
+    - "unrestricted pointwise ascending-degree bounds"
+  main_route_relevance: "outside the admissible minimum-degree regime; does not rule out constant or logarithmic local control under the free minimum-degree assumption"
+  minimum_degree: 1
+  parameters: "common last-vertex degree r+1 with L=6*2^(r-1)"
+  role: "fence"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Unbounded common-last-vertex degree for ascending edges."
+statement_sha256: "63b037eaa3c40a60a3df12fda997b6f23dcf5eb9b69a11c28caf75c646cb7b6a"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Unbounded common-last-vertex degree for ascending edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

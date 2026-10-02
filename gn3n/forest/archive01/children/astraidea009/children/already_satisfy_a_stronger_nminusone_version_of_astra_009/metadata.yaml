@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d85adb0a85753a605eeef9c92c756f52a168d5f208d12359d7ec01168694f355"
+created_at: "2026-09-27T14:14:29.919119+00:00"
+id: "already_satisfy_a_stronger_nminusone_version_of_astra_009"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 263
+    detail: "Minimum-counterexample deletion covers immediately give an n-1 two-path packing with arbitrary omitted vertex; argument is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  coverage: "strategic evaluation of previously untouched Astra 009"
+  last_audit_observation:
+    claim_id: 263
+    detail: "Minimum-counterexample deletion covers immediately give an n-1 two-path packing with arbitrary omitted vertex; argument is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  small_order_free: true
+object_type: "research"
+origin_worker_id: 614
+parent_id: "astraidea009"
+position: 0
+research_interface:
+  consumer: "Astra 009 portfolio evaluation; grand theorem strategy"
+  given: "minimum-counterexample calculus"
+  need: "replace bare near-spanning packing by an absorption-ready strengthening if this route is pursued"
+  produces: "two disjoint paths covering n-1 vertices for every prescribed omitted vertex; Astra 009 is quantitatively subsumed on minimum counterexamples"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Minimum counterexamples already satisfy a stronger n-minus-one version of Astra 009"
+statement_sha256: "b959b277a5a04caf2c464d47365212fa4fa90d8a0cdff70ca3ab735b8b792ceb"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum counterexamples already satisfy a stronger n-minus-one version of Astra 009"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T16:56:38.614765+00:00"
+version: 6

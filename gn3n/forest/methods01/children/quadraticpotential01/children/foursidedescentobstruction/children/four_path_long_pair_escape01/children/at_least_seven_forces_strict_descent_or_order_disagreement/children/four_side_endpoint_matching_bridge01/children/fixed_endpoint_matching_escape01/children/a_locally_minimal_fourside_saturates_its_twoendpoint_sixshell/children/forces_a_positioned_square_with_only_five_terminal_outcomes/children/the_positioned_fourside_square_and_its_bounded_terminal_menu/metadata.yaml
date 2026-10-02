@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "4b49ac85d5337aa39d38b737a1f59bc34674849dada585028ecf83c06df27f61"
+created_at: "2026-10-01T07:19:55.077482+00:00"
+id: "the_positioned_fourside_square_and_its_bounded_terminal_menu"
+last_elevation_revision: 10860
+last_substantive_worker_id: 1016
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_recorded_at: "2026-10-01T07:19:55.077482+00:00"
+  audit_resolution:
+    claim_id: 1065
+    detail: "Independent reconstruction confirms every descent used for shell saturation is pair-local; the positioned square and five-way terminal menu need no stronger global minimality. For m=7, the common-four-core conclusion follows from the Hamiltonian interior five-path plus four non-Hamiltonian one-vertex extensions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:28:47.976513+00:00"
+    worker_id: 1062
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1065
+    detail: "Independent reconstruction confirms every descent used for shell saturation is pair-local; the positioned square and five-way terminal menu need no stronger global minimality. For m=7, the common-four-core conclusion follows from the Hamiltonian interior five-path plus four non-Hamiltonian one-vertex extensions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:28:47.976513+00:00"
+    worker_id: 1062
+object_type: "research"
+origin_worker_id: 1016
+parent_id: "forces_a_positioned_square_with_only_five_terminal_outcomes"
+position: 2
+research_interface:
+  consumer: "earlier four-side applications before full componentwise minimization; no-trapping; endpoint transport"
+  given: "a minimum-counterexample spanning 4|m|q cover, m>=7, with no lower-Phi repartition of the displayed 4|m pair"
+  produces: "the saturated endpoint shell, positioned pc2 square and bounded terminal menu; at m=7, the three-leaf transport clique"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Componentwise Phi-minimality is unnecessary: if the displayed 4|m pair (m≥7) admits no lower-Phi two-path repartition, it already forces the saturated endpoint shell, positioned pc2 square, five-way terminal menu, and at m=7 the three-leaf transport clique."
+statement_sha256: "0cf21d00ea765bdac6bbfb0033ab3db2f6cef1b21fbcee866084321625807ee8"
+substantive_worker_ids:
+  - 1016
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Pair-local non-descent already forces the positioned four-side square and its bounded terminal menu"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:28:47.976513+00:00"
+version: 11

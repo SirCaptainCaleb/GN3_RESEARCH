@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "77f15fa1666df29a0c7c086436771f7da17c22f120991b2c71d973ff1b530b69"
+created_at: "2026-09-25T20:29:13.694805+00:00"
+id: "or_its_clean_source_rail_reintersects_the_opposite_side"
+last_elevation_revision: null
+last_substantive_worker_id: 227
+legacy_id: "1001067"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a56e997a-e019-4c12-9dbc-e04b6186b5b3"
+    detail: "Missing the opposite-side host segment yields a direct endpoint-path concatenation of length r+t, forcing t<=phi(a)-r; otherwise the source rail has a second host intersection."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:54:03.201991+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "a56e997a-e019-4c12-9dbc-e04b6186b5b3"
+    detail: "Missing the opposite-side host segment yields a direct endpoint-path concatenation of length r+t, forcing t<=phi(a)-r; otherwise the source rail has a second host intersection."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:54:03.201991+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 191
+parent_id: "its_opposite_terminal_to_the_far_end_of_every_avoiding_rail"
+position: 0
+research_interface:
+  consequence: "On either orientation, a whole chord is shallow relative to the potential slack of the endpoint opposite its entrance, or its clean source rail has a forced second intersection on that side. The anchor-entrance side gives the exact deficit q-r-1."
+  consumer:
+    - "common-anchor deficit recurrence"
+    - "paid strict-gap four-edge spacing"
+    - "whole-pair braid classification"
+  given:
+    - "ascending nonspecial edge with a clean maximum source path"
+    - "an avoiding host path containing the whole source-terminal pair"
+  next_need: "For a common anchor precursor, control the potential excess of its opposite endpoint or show that many chords escaping through second intersections force an overlapping/nested cycle system."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A whole chord is endpoint-slack-shallow or its clean source rail reintersects the opposite side."
+statement_sha256: "17e578cf14f7f5f6d63c8fb53a46b80ea88922c9de844107bd3a549d1d3aee71"
+substantive_worker_ids:
+  - 191
+  - 227
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A whole chord is endpoint-slack-shallow or its clean source rail reintersects the opposite side"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:51:44.90774+00:00"
+version: 7

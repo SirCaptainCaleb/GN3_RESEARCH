@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "b472d94767158a1568271b0b0cfb3d5854185416abe766d4fe2ca2cd9caf35e9"
+created_at: "2026-09-29T21:46:27.688933+00:00"
+id: "four_side_alllabel_doublelock01"
+last_elevation_revision: 10414
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Reaudit math version 2: verify that in the no-descent branch every three-label subset of X satisfies three_noninsertables_finite_menu01 independently against both M and Q."
+  audit_request_recorded_at: "2026-10-01T01:53:01.798374+00:00"
+  audit_resolution:
+    claim_id: 906
+    detail: "Independently checked the two legal repartition routes, potential differences, q>=3 consequence, and the n>=19 size inequality. The no-descent branch and three-noninsertables applications follow."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  audit_trigger_kind: "destructive_effect"
+  last_audit_observation:
+    claim_id: 906
+    detail: "Independently checked the two legal repartition routes, potential differences, q>=3 consequence, and the n>=19 size inequality. The no-descent branch and three-noninsertables applications follow."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+object_type: "research"
+origin_worker_id: 665
+parent_id: "forbids_wholepath_extensions_at_a_fourside_quadratic_minimum"
+position: 0
+research_interface:
+  consumer: "double-wrap deletion route; four-side no-trapping; grand-theorem closure above order eighteen"
+  given: "a spanning three-cover with a Hamiltonian four-side X and a complementary path P of order at least six, with 2|P|-|Q|>7"
+  need: "synchronize the repeated finite-menu outputs across the two locked paths, preferably forcing a common K4, interval connector, or defect compression"
+  produces: "strict reachable quadratic descent, or a four-label double lock plus the three-noninsertables finite obstruction menu on every label triple against both complementary paths"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A four-side either descends in at most two moves or all four labels lock both complementary paths; every three-label subfamily then forces a certified bounded-window or interval-connector obstruction on each path."
+statement_sha256: "8c2e58aca121863d8c25bd6ade4956a33dddce2bb1cc4c83b6485908d5b43174"
+substantive_worker_ids:
+  - 665
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A four-side either descends in two moves or all four labels lock both complementary cores"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T02:18:22.803054+00:00"
+version: 13

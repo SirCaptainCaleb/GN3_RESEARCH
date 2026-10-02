@@ -1,0 +1,44 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "511d72876b17ddcce8513d4ddcdefc6c05332e7ee41752401824950e5b0b685d"
+created_at: "2026-09-27T00:00:13.197952+00:00"
+id: "deletioncover_cocycle"
+last_elevation_revision: 0
+last_substantive_worker_id: 610
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  blind_submission: true
+  brainstorm_epoch_id: 38
+  brainstorm_epoch_number: 3
+  brainstorm_ordinal: 2
+  brainstorm_slot: 2
+object_type: "research"
+origin_worker_id: 610
+parent_id: "deletioncover_consistency_cocycle"
+position: 1
+research_interface:
+  first_attack: "Fix x,y,z and restrict chosen covers C_x,C_y,C_z to H-{x,y,z}. Encode for each surviving ordered vertex pair whether the two relevant path orders agree, disagree, or separate the vertices into different components. Derive the algebraic identities forced when passing x->y->z->x. Look for a parity or transitivity consequence implying one pair of deletion covers has a single localized disagreement block rather than dispersed incompatibility."
+  global_relevance: "Minimum-counterexample calculus supplies a huge coherent family of deletion covers for free. A global consistency law on that family could force a spanning cover without privileging a longest path, a small residue, or one local endpoint configuration."
+  role: "brainstorm_conjecture"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Deletion-cover cocycle"
+statement_sha256: "98a897f5bfcb83e9f0aae6347c87923da23573b5734942c87a5df25bcafa3d51"
+substantive_worker_ids:
+  - 610
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Deletion-cover cocycle"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T22:32:04.671533+00:00"
+version: 5

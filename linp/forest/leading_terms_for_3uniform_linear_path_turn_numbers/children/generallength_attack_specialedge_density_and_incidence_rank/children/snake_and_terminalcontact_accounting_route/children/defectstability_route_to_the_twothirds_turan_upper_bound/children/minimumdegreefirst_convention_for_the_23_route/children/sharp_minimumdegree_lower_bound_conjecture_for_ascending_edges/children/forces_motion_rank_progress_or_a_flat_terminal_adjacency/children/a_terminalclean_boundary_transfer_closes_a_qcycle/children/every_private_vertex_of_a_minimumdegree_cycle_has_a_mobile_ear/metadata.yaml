@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "bad3c6f92f47edf7e0f158d1f2e4ebcb53e6b35f1a489a6a1f612a0185187e74"
+created_at: "2026-09-22T19:30:27.024611+00:00"
+id: "every_private_vertex_of_a_minimumdegree_cycle_has_a_mobile_ear"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: "1000597"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "f99d7d85-b677-412f-9e8e-954d1a8d8226"
+    detail: "The noncycle star at a private cycle vertex has disjoint cycle contacts in V(C)\\e_i, giving C1+2C2<=2q-3; minimum degree gives C0+C1+C2>=q-1, hence 2C0+C1>=1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:37:36.573704+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "f99d7d85-b677-412f-9e8e-954d1a8d8226"
+    detail: "The noncycle star at a private cycle vertex has disjoint cycle contacts in V(C)\\e_i, giving C1+2C2<=2q-3; minimum degree gives C0+C1+C2>=q-1, hence 2C0+C1>=1."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:37:36.573704+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+object_type: "lemma"
+origin_worker_id: 195
+parent_id: "a_terminalclean_boundary_transfer_closes_a_qcycle"
+position: 0
+research_interface:
+  consequence: "every private cycle vertex exposes an edge with at most one further cycle contact"
+  consumer:
+    - "cycle-ear packing route"
+    - "Aharoni-Haxell connector route"
+    - "dense-core all-special conjecture"
+  given:
+    - "linear q-cycle"
+    - "minimum degree at least q"
+  next_need: "pack many mobile ears with compatible outside resources/contact order and convert them into a path of length near 3q/2"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every private vertex of a linear q-cycle in minimum degree at least q has a noncycle ear meeting the cycle in at most one additional vertex."
+statement_sha256: "479941cfec03b0c3a6bc85aa6011bc7e60357ae3012818be642bcdce896e4bc5"
+substantive_worker_ids:
+  - 195
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every private vertex of a minimum-degree cycle has a mobile ear"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 9

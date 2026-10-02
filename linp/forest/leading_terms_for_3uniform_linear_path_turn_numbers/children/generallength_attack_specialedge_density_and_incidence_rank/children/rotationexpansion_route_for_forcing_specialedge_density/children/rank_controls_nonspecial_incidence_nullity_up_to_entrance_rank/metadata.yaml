@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "1e7fc9502e95593cf6d921426309591c15c66536fa4dd6837a4098b76e9a45f2"
+created_at: "2026-09-22T05:14:42.83762+00:00"
+id: "rank_controls_nonspecial_incidence_nullity_up_to_entrance_rank"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000046"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  last_audit_observation:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  route: "terminal-cycle/incidence-rank bridge"
+  source_kind: "new_project_result"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "rotationexpansion_route_for_forcing_specialedge_density"
+position: 30
+research_interface:
+  consequence: "terminal-cycle control automatically yields incidence-nullity control, with an additive entrance-support term"
+  consumer:
+    - "special-edge nullity route"
+    - "terminal-pair cycle-rank route"
+  given:
+    - "unique entrance for nonspecial edges"
+    - "terminal-pair graph T"
+    - "incidence matrix"
+  next_need: "reduce the entrance-rank term h or prove β(T)+h<=Cs+Dn with constants strong enough for a coefficient gain"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For nonspecial edges, nullity_R(N_ns) <= β(T)+h, and for the full incidence matrix nullity_R(N) <= β(T)+h+s."
+statement_sha256: "86f6b7ca9cf9b3d05c799359141e9fcfd65f0fa03c9bdc21f9c7df05f3261cfa"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal-cycle rank controls nonspecial incidence nullity up to entrance rank"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 6

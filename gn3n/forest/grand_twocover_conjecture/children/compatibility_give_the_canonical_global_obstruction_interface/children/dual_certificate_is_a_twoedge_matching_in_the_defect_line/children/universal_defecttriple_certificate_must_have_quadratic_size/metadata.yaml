@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b2d3941d15532107ceb51d1079fd7bcd23ac964b0faae3cc9f77c8559f50536f"
+created_at: "2026-09-27T21:50:54.53322+00:00"
+id: "universal_defecttriple_certificate_must_have_quadratic_size"
+last_elevation_revision: 0
+last_substantive_worker_id: 596
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 404
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:53:21.090654+00:00"
+    worker_id: 572
+  last_audit_observation:
+    claim_id: 404
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:53:21.090654+00:00"
+    worker_id: 572
+object_type: "research"
+origin_worker_id: 596
+parent_id: "dual_certificate_is_a_twoedge_matching_in_the_defect_line"
+position: 0
+research_interface:
+  consumer: "dual obstruction brainstorm"
+  given: "a proposed fixed family of oriented triples intended to witness two defects in every spanning ordering"
+  need: "seek scalable/adaptive certificates or an algebraic/topological compression rather than a bounded obstruction list"
+  produces: "a quadratic lower bound on the size of any such fixed-list certificate"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Any fixed universal defect-triple certificate must have quadratic size"
+statement_sha256: "7e8c8537e07180763a7ef6f67f933cac46c5d17f09e36ce26eeb9c82139bfcad"
+substantive_worker_ids:
+  - 596
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Any fixed universal defect-triple certificate must have quadratic size"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:53:21.090654+00:00"
+version: 5

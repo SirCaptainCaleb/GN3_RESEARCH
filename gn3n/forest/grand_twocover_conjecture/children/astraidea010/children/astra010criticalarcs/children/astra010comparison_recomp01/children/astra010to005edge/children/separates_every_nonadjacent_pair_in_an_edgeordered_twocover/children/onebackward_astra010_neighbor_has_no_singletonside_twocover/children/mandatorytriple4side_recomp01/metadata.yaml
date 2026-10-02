@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "9113e6357d05480f7add787afd4240f360f7c427cad1b03d48954c110f488f95"
+created_at: "2026-09-28T01:07:52.031585+00:00"
+id: "mandatorytriple4side_recomp01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 382
+    detail: "Faithful recomposition of the endpoint-minimal mandatory-triple chain. It preserves |B|>=4, the |B|=4 six-set with precisely the four B-deletions Hamiltonian and the two A-endpoint deletions non-Hamiltonian, the four interior-plus-w non-Hamiltonian enlargements, and the exclusion of |A|=5 via the alternating C-plus-pair Hamilton paths and complementary Hamiltonian four-set. Hence |A|>=6 exactly as in the source chain."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:13:28.859227+00:00"
+    worker_id: 694
+  hygiene_recomposition: true
+  last_audit_observation:
+    claim_id: 382
+    detail: "Faithful recomposition of the endpoint-minimal mandatory-triple chain. It preserves |B|>=4, the |B|=4 six-set with precisely the four B-deletions Hamiltonian and the two A-endpoint deletions non-Hamiltonian, the four interior-plus-w non-Hamiltonian enlargements, and the exclusion of |A|=5 via the alternating C-plus-pair Hamilton paths and complementary Hamiltonian four-set. Hence |A|>=6 exactly as in the source chain."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:13:28.859227+00:00"
+    worker_id: 694
+  maintenance_of_certified_bounded_argument: true
+  proof_shortcut: true
+  recomposition_audit:
+    classified_at: "2026-09-28T01:08:04.57678+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "onebackward_astra010_neighbor_has_no_singletonside_twocover"
+position: 0
+research_interface:
+  consumer: "Astra-010/Astra-005 mandatory-triple route"
+  given: "edge-orderable tournament with a mandatory consecutive triple and an endpoint-minimal two-cover"
+  produces: "opposite side order at least four; exact equality-side deletion kernel and complementary obstructions; mandatory side order at least six in the four-side branch"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Endpoint-minimal mandatory-triple covers have opposite side at least four, and the four-side branch forces the mandatory side to have order at least six."
+statement_sha256: "9363d56a27076b16c9efe31a82b1b178d5b56042ed5ad8f8150a9845b23c5f97"
+substantive_worker_ids:
+  - 582
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint-minimal mandatory-triple covers have opposite side at least four, and the four-side branch forces the mandatory side to have order at least six"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:13:28.859227+00:00"
+version: 6

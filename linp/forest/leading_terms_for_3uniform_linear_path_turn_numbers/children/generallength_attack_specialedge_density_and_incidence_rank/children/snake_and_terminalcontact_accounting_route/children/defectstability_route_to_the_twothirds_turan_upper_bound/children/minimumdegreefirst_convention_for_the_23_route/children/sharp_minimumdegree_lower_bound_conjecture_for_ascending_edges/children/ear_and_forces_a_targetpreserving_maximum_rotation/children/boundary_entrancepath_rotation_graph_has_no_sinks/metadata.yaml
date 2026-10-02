@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "2bb5c341f418dda162825ac6b9be99704ef8f0e31f92f4e0df60917989082b53"
+created_at: "2026-09-22T20:25:00.91053+00:00"
+id: "boundary_entrancepath_rotation_graph_has_no_sinks"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: "1000468"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6b180c46-3126-49de-8648-32f0ab983120"
+    detail: "Replaced prohibited physical/physically endpoint wording by canonical last-vertex language; proof unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T01:09:06.150556+00:00"
+    worker_id: "9f2c1a6e-7b4d-4f90-ae32-1d57c4b89061"
+  last_audit_observation:
+    claim_id: "6b180c46-3126-49de-8648-32f0ab983120"
+    detail: "Replaced prohibited physical/physically endpoint wording by canonical last-vertex language; proof unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T01:09:06.150556+00:00"
+    worker_id: "9f2c1a6e-7b4d-4f90-ae32-1d57c4b89061"
+  last_local_audit_repair:
+    reason: "Vocabulary-only audit repair: replace prohibited physical/physically endpoint wording with canonical last-vertex language."
+    recorded_at: "2026-09-23T01:08:10.191106+00:00"
+    worker_id: "9f2c1a6e-7b4d-4f90-ae32-1d57c4b89061"
+object_type: "lemma"
+origin_worker_id: 195
+parent_id: "ear_and_forces_a_targetpreserving_maximum_rotation"
+position: 0
+research_interface:
+  consequence: "every fixed target edge has a finite recurrent class of maximum entrance-ending paths preserving that target edge"
+  consumer:
+    - "flat-transfer recurrence"
+    - "boundary q=delta attack"
+    - "dense-core all-special conjecture"
+  given:
+    - "ascending nonspecial rank-q edge"
+    - "minimum degree at least q"
+    - "entrance potential q-1"
+  next_need: "find a secondary statistic that cannot return unchanged around a rotation cycle; compare blocker locations or incoming-transfer memory"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every state in the boundary fixed-target entrance-path rotation graph has positive outdegree, so the finite directed rotation graph contains a directed cycle."
+statement_sha256: "511d01e79a0ca7226722d89f663c97229d10d74b16ea6b70fe9179bc47a379d5"
+substantive_worker_ids:
+  - 195
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Boundary entrance-path rotation graph has no sinks"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 12

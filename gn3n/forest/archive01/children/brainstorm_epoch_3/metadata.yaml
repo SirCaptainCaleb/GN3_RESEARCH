@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "76b01a3c7f2a8f3db9a8d3f87cdadb2dca81a963a96e632c653d629d31791e02"
+created_at: "2026-09-27T00:00:13.197952+00:00"
+id: "brainstorm_epoch_3"
+last_elevation_revision: null
+last_substantive_worker_id: null
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: null
+metadata:
+  baseline_revision: 2027
+  blind_submission: true
+  brainstorm_epoch_id: 38
+  brainstorm_epoch_number: 3
+  ideas_per_worker: 3
+  opened_revision: 2366
+  trigger:
+    baseline_revision: 2027
+    bottleneck_revision_age: 0
+    current_bottleneck_id: "endpointtransport_defectcompression_bridge"
+    kind: "periodic"
+    major_result_ids:
+    opened_revision: 2366
+    revision_gap: 339
+  trigger_kind: "periodic"
+  workers: 2
+object_type: "research"
+origin_worker_id: 610
+parent_id: "archive01"
+position: 3
+research_interface:
+research_level: "abstraction"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+substantive_worker_ids:
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Brainstorm Epoch 3"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T16:56:38.614765+00:00"
+version: 4

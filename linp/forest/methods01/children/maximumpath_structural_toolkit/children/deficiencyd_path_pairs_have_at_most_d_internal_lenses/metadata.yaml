@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "bc2eb349481b684fda82f26beb6af38866a1912a6529494345f9c9d703bee2bd"
+created_at: "2026-09-24T14:00:44.007667+00:00"
+id: "deficiencyd_path_pairs_have_at_most_d_internal_lenses"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: "1001076"
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Removed prohibited physical-endpoint wording; mathematics unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:43.842586+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Localized endpoint-language repair only; mathematical content unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:45.773532+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: remove the remaining prohibited physical-endpoint wording; mathematics unchanged."
+    recorded_at: "2026-09-24T21:27:07.403829+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "maximumpath_structural_toolkit"
+position: 175
+research_interface:
+  consequence: "A same-endpoint deficiency-d pair has total imbalance at most d across any simultaneously switchable clean-cell family; overlap maximality removes balanced cells. In the gap-one shell d=1."
+  consumer:
+    - "gap-one anchor/max switching geometry"
+  given:
+    - "a deficient path Q and a maximum path P ending at the same vertex"
+    - "overlap-maximal choice of P"
+    - "simultaneously switchable clean cells"
+  next_need: "Produce a canonical simultaneously switchable decomposition of the Q/P overlap, then place the cross-period switching matching on the resulting one-defect geometry."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Overlap-maximal same-endpoint deficiency-d path pairs have at most d internal lenses."
+statement_sha256: "03f9fb66e735902abb32a7e4efe83b528b23b5764f56ac76b2b360fd4730fe43"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Overlap-maximal same-endpoint deficiency-d path pairs have at most d internal lenses"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:46:41.212733+00:00"
+version: 13

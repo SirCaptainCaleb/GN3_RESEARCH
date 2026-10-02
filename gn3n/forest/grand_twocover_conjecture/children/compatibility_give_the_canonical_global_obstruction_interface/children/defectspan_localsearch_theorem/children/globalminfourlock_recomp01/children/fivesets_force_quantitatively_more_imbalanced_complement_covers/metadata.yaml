@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2ecc8a824f1e8f067bf75be23a0d7db74861046eaaef5b38287479c1f2491227"
+created_at: "2026-09-27T15:55:01.072697+00:00"
+id: "fivesets_force_quantitatively_more_imbalanced_complement_covers"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 328
+    detail: "Global quadratic-potential minimality makes both endpoint enlargements of the four-side non-Hamiltonian; the certified repeated-bad-extension lemma then yields the two Hamiltonian crossed five-sets. For either five-set, minimum-counterexample calculus gives a two-cover of the complement, and comparing quadratic potentials gives |u-v|^2 >= |m-r|^2+2(m+r)-19. Since m+r>=12, every complement two-cover is strictly more imbalanced."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:57:44.325404+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 328
+    detail: "Global quadratic-potential minimality makes both endpoint enlargements of the four-side non-Hamiltonian; the certified repeated-bad-extension lemma then yields the two Hamiltonian crossed five-sets. For either five-set, minimum-counterexample calculus gives a two-cover of the complement, and comparing quadratic potentials gives |u-v|^2 >= |m-r|^2+2(m+r)-19. Since m+r>=12, every complement two-cover is strictly more imbalanced."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T15:57:44.325404+00:00"
+    worker_id: 616
+  small_order_free: true
+  viewpoint: "local Hamiltonian five-set to global imbalance barrier"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "globalminfourlock_recomp01"
+position: 0
+research_interface:
+  consumer: "maximin/balanced-cover compression; global quadratic descent"
+  given: "a globally quadratic-minimal three-cover in a minimum counterexample with a four-path and two components of order at least six"
+  need: "combine the forced complement imbalance with minimum-counterexample size control or compare the four endpoint-pair complements"
+  produces: "for every pair of outer endpoints, two Hamiltonian five-sets whose complementary two-covers have squared imbalance at least |m-r|^2+2(m+r)-19"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Four-side endpoint five-sets force quantitatively more imbalanced complement covers."
+statement_sha256: "316bc4e65ef656d215458aea1afcc16f87cd2cf2713c87f101275b41fbac56e0"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four-side endpoint five-sets force quantitatively more imbalanced complement covers"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:07:16.525329+00:00"
+version: 7

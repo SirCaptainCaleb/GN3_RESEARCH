@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "1199670c0ce912524b32996c78cf6af6c8ab41b82388204735c0a5b86d8c17e6"
+created_at: "2026-10-01T01:05:51.54328+00:00"
+id: "order11_design_common_threeside01"
+last_elevation_revision: 10414
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "order11_sevenlabel_design_normal01"
+  audit_request_reason: "Verify the design-derived seven-label equality-shell normal form, including the classification of six-set good-deletion labels as omission labels and the fork-versus-oriented-matching-block dichotomy."
+  audit_request_recorded_at: "2026-10-01T01:21:59.488695+00:00"
+  audit_resolution:
+    claim_id: 906
+    detail: "Independently reconstructed the 3-(8,4,1) contradiction forcing a three-vertex overlap, then the five-set deletion classification and the paired deletion covers sharing R."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  audit_trigger_kind: "chain_checkpoint"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 906
+    detail: "Independently reconstructed the 3-(8,4,1) contradiction forcing a three-vertex overlap, then the five-set deletion classification and the paired deletion covers sharing R."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T02:18:22.803054+00:00"
+    worker_id: 901
+  note: "Derived from the extendable-center family by a sharp 8-point set-system argument."
+object_type: "research"
+origin_worker_id: 755
+parent_id: "order11_design_boolean_recomp01"
+position: 0
+research_interface:
+  consumer: "three-side fixed-defect transport; order-eleven closure; paired-deletion synchronization"
+  given: "the order-eleven design alternative for a prescribed three-set"
+  produces: "two adjacent extendable centers yielding a common three-side R and a Hamiltonian five-side S with exact deletion-label set R"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The order-11 design branch yields paired deletion covers with a common three-side R and a Hamiltonian five-side S whose Hamiltonian deletion labels are exactly R."
+statement_sha256: "b387f13ab45c6110fdc0e25ebff5fb463b773cf0a10ca1e0846f1715991bb5fe"
+substantive_worker_ids:
+  - 755
+  - 745
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "The design branch forces paired deletion covers with a common three-side"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:43:23.594674+00:00"
+version: 14

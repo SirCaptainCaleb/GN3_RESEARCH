@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "f6b7b46f10c5b9220af2147a3469581aeeb6e393f754988b8934fb715e789fd2"
+created_at: "2026-09-24T03:17:08.275892+00:00"
+id: "potential_bound_is_never_attained_in_the_dense_regime"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: "1000209"
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "Under equality, the independently checked Type-B exclusion forces every vertex Type A, hence 3s=4n. Ascending accounting then forces every nonspecial edge ascending, giving a strict-potential digraph with positive indegree at every vertex, contradicting a minimum-potential vertex."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "81ad6a5a-320c-4c6c-983d-cbf1b0e16ce2"
+    detail: "Under equality, the independently checked Type-B exclusion forces every vertex Type A, hence 3s=4n. Ascending accounting then forces every nonspecial edge ascending, giving a strict-potential digraph with positive indegree at every vertex, contradicting a minimum-potential vertex."
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:50:20.394604+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+object_type: "theorem"
+origin_worker_id: 229
+parent_id: "average_endpoint_potential_at_least_density_plus_sevensixths"
+position: 0
+research_interface:
+  consequence: "The first equality pattern compatible with local snake capacities is globally impossible: special-edge counting forces every nonspecial edge to be ascending, which gives positive DAG indegree at the minimum-potential vertex."
+  consumer:
+    - "equality-layer induction"
+    - "potential-flow route"
+    - "grand Turan program"
+  given:
+    - "7cae1cb001ac density+7/6 bound"
+    - "45050da20aaa equality forces Type A"
+    - "419519f0efa5 ascending accounting"
+    - "b1fffccc673c strict-potential DAG"
+  next_need: "Quantify the strictness. Because all relevant quantities are integral, obtain an explicit additive improvement above m+7n/6; more importantly, derive a stability version: if S is within eta n of m+7n/6, then almost all nonspecial edges are ascending and almost all vertices are Type A, forcing many low-potential vertices with nearly positive indegree. Use level-set cut inequalities to turn this into a uniform eta>0 improvement."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The density-plus-seven-sixths potential bound is never attained in the dense regime."
+statement_sha256: "037b234de9451f78297f05eb426bb37b329c2716a0dced8aad9e45d47bded9a5"
+substantive_worker_ids:
+  - 229
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The density-plus-seven-sixths potential bound is never attained in the dense regime"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

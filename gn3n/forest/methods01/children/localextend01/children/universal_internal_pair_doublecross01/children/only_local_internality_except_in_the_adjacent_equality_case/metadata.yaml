@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "711277b2aec729b685926b5209479bf248ae709f3e5e2590f21578d8af0b1eb6"
+created_at: "2026-10-01T07:19:55.077482+00:00"
+id: "only_local_internality_except_in_the_adjacent_equality_case"
+last_elevation_revision: 10860
+last_substantive_worker_id: 1016
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_recorded_at: "2026-10-01T07:19:55.077482+00:00"
+  audit_resolution:
+    claim_id: 1064
+    detail: "Deleting internal vertices gives four nonempty inherited fragment classes in the different-component and nonconsecutive cases; any two covering paths require at least two inter-class transitions. In the consecutive case three classes force one transition, and equality plus universal internality excludes the A-Q and B-Q merges, leaving only the stated A-B merge with Q intact."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 1064
+    detail: "Deleting internal vertices gives four nonempty inherited fragment classes in the different-component and nonconsecutive cases; any two covering paths require at least two inter-class transitions. In the consecutive case three classes force one transition, and equality plus universal internality excludes the A-Q and B-Q merges, leaving only the stated A-B merge with Q intact."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T13:25:00.471671+00:00"
+    worker_id: 1061
+object_type: "research"
+origin_worker_id: 1016
+parent_id: "universal_internal_pair_doublecross01"
+position: 6
+research_interface:
+  consumer: "square internality; fragmentation crossing; defect compression"
+  given: "one top two-cover with two displayed internal labels, plus a two-cover after deleting them"
+  produces: "double crossing under strictly local internality, with universal internality reserved only for the adjacent sparse-equality normal form"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "If x,y are internal in one displayed two-cover, then every lower two-cover after deleting them crosses at least twice whenever they lie on different components or nonconsecutively on one component; universal internality is needed only to classify the adjacent one-crossing equality case."
+statement_sha256: "b66da9806e43ae716c89ee9bd0dfa5fa33d008aa468b36d7e0e8056a1c8b00b7"
+substantive_worker_ids:
+  - 1016
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Double crossing needs only local internality except in the adjacent equality case"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T13:25:00.471671+00:00"
+version: 5

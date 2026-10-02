@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "9e2cd246d16f42add074aa5be2d8fba5cfcdbe9365dca478a097ae9bce37f34e"
+created_at: "2026-09-28T17:29:48.484784+00:00"
+id: "small_complement_or_the_standard_fivewindowcrosstriple_frontier"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 390
+    detail: "Independent reconstruction checks. Universal two-sided extension and complement endpoint hooks are orientation-correct; the five-window and cross-triple alternatives follow without cyclic rotation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T18:55:52.774147+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 390
+    detail: "Independent reconstruction checks. Universal two-sided extension and complement endpoint hooks are orientation-correct; the five-window and cross-triple alternatives follow without cyclic rotation."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T18:55:52.774147+00:00"
+    worker_id: 703
+object_type: "research"
+origin_worker_id: 659
+parent_id: "forces_a_genuine_reversed_pair_or_a_complement_endpoint_hook"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression; grand theorem proof composition"
+  given: "the pure two-arc tight-cycle branch of minimal relative-order disagreement"
+  need: "consume only the standard local reversal/five-window/cross-triple outputs; separately dispatch bounded cycle complements of order at most six"
+  produces: "genuine reversed-edge triple, or complement order at most six, or proper Hamiltonian five-window with pc-two complement, or explicit endpoint cross triple"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The pure tight-cycle residue reduces to local reversal, a small complement, or the standard five-window/cross-triple frontier."
+statement_sha256: "c3117fb15d1e989a8a71e65e2fe5c1a53bfd609141516816fe9c7ce50b8eb5fe"
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The pure tight-cycle residue reduces to local reversal, a small complement, or the standard five-window/cross-triple frontier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T18:55:52.774147+00:00"
+version: 6

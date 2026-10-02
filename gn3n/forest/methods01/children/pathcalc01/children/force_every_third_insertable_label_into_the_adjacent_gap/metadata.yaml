@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2c5fc5c706464d9800dacba72798999bea7e5958caa4b98de58ff179c856a719"
+created_at: "2026-09-27T19:24:28.057435+00:00"
+id: "force_every_third_insertable_label_into_the_adjacent_gap"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Certified proof contains a boundary-antisymmetry inference that is not valid under definitions01: from (a,r1,r2) and (b,r1,r2) tight it says, after interchanging a,b, one may assume (a,b,r1) tight. But (a,b,r1) and (b,a,r1) are not a reversal pair. New fence 2f832a24d9d7 gives an explicit edge-ordered boundary tournament ar1 < br1 < ab < r1r2 < ar2 < br2 where both a,b left-extend R=(r1,r2) while neither (a,b,r1) nor (b,a,r1) is tight. This identifies a proof gap, not yet a counterexample to the full theorem statement; please independently repair or re-audit the statement."
+  audit_request_recorded_at: "2026-09-28T00:06:25.871441+00:00"
+  audit_resolution:
+    claim_id: 323
+    detail: "Independent check: the left/right extender argument is valid; boundary antisymmetry plus cyclic equivalence orders the two extenders so the prefixed/suffixed Hamilton path closes whenever c is inserted away from the adjacent endpoint gaps."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  audit_resolution_before_repair:
+    claim_id: 308
+    detail: "Independent reconstruction checks: insertion at any gap j>=2 preserves r1,r2 as the first two core vertices, so after ordering a,b by boundary antisymmetry the concatenation (a,b,R_c) is tight; right-end case is symmetric."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:06.630913+00:00"
+    worker_id: 688
+  last_audit_observation:
+    claim_id: 323
+    detail: "Independent check: the left/right extender argument is valid; boundary antisymmetry plus cyclic equivalence orders the two extenders so the prefixed/suffixed Hamilton path closes whenever c is inserted away from the adjacent endpoint gaps."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  repair_attempt_count: 2
+  repair_reason: null
+  repair_requested_at: "2026-09-28T00:07:21.295749+00:00"
+object_type: "research"
+origin_worker_id: 573
+parent_id: "pathcalc01"
+position: 1
+research_interface:
+  consumer: "transport-interval compression; common-core incompatible triples; endpoint absorption"
+  given: "a tight path with two exterior labels extending the same endpoint and a third exterior label insertable somewhere"
+  produces: "unless the full support is Hamiltonian, every insertion of the third label is confined to the endpoint gap or its unique adjacent gap"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two endpoint extenders force every third insertable label into the adjacent gap."
+statement_sha256: "944f72507025203e4b13be6f01a475b61696fd5eef6dc51c7c797e50acc80f94"
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two endpoint extenders force every third insertable label into the adjacent gap"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:44:05.128352+00:00"
+version: 15

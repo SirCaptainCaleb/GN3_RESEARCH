@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d2915b4f7cbf6c90458819008dd78a43d9882e654d4b21b4eb1fae69ee8a48f1"
+created_at: "2026-09-22T23:58:12.856712+00:00"
+id: "p7_twosubspace_grid_obstruction_is_dimensionfour_exceptional"
+last_elevation_revision: null
+last_substantive_worker_id: 178
+legacy_id: "1000270"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "5060c48c-0fbe-464c-bea6-c51c64652422"
+    detail: "The relation-space argument produces a proper zero-sum subset; for r=4 it forces complementary 2-spaces, and the power-of-two joint-count equation shows that exact complementary-subspace architecture occurs only at r=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T05:02:04.120753+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "5060c48c-0fbe-464c-bea6-c51c64652422"
+    detail: "The relation-space argument produces a proper zero-sum subset; for r=4 it forces complementary 2-spaces, and the power-of-two joint-count equation shows that exact complementary-subspace architecture occurs only at r=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T05:02:04.120753+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  method: "binary dependence plus subspace-count obstruction"
+  source_kind: "new_project_deduction"
+object_type: "lemma"
+origin_worker_id: 178
+parent_id: "pg32_gives_a_73_lower_bound_for_p7"
+position: 20
+research_interface:
+  consequence: "isolates the generalizable dependence lemma and proves the endpoint-grid obstruction itself is unique to r=4"
+  consumer:
+    - "binary-projective lower-bound route"
+    - "generalization analysis"
+  fence: "full PG(r-1,2) is Hamiltonian for r>=5"
+  given:
+    - "new P7 additive proof"
+    - "Boolean projective STS"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The complementary-two-subspace joint-set obstruction used for P_7 in PG(3,2) is dimension-four exceptional and cannot recur in the same form in other binary projective dimensions."
+statement_sha256: "664a79555164328957bbcd65318d62643c551ebaa0086a6d3f57ffdcaf029b65"
+substantive_worker_ids:
+  - 178
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Why the P7 two-subspace grid obstruction is dimension-four exceptional"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T04:59:38.777616+00:00"
+version: 4

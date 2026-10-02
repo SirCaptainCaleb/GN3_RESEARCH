@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "d873cf50ddff9e2fd7914dcc96b6a7dff6c0adb561b45a91cb1a22e382a2097a"
+created_at: "2026-09-25T21:42:12.860741+00:00"
+id: "multiple_sourcepath_overlap_or_reciprocal_terminal_exchange"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: "1000776"
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a56e997a-e019-4c12-9dbc-e04b6186b5b3"
+    detail: "The proof applies the unique-intersection theorem 5854d853a44b to Q and R_j even though both maximum endpoint paths have the same last vertex x_j. That theorem requires distinct endpoints. A second common vertex between Q and R_j is therefore not established, so 41100a9882dd cannot be invoked and the cycle/shared-last-edge branch is unsupported."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:54:03.201991+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "a56e997a-e019-4c12-9dbc-e04b6186b5b3"
+    detail: "The proof applies the unique-intersection theorem 5854d853a44b to Q and R_j even though both maximum endpoint paths have the same last vertex x_j. That theorem requires distinct endpoints. A second common vertex between Q and R_j is therefore not established, so 41100a9882dd cannot be invoked and the cycle/shared-last-edge branch is unsupported."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-25T21:54:03.201991+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_failure:
+    reason: "The proof applies the unique-intersection theorem 5854d853a44b to Q and R_j even though both maximum endpoint paths have the same last vertex x_j. That theorem requires distinct endpoints. A second common vertex between Q and R_j is therefore not established, so 41100a9882dd cannot be invoked and the cycle/shared-last-edge branch is unsupported."
+    recorded_at: "2026-09-25T21:54:03.201991+00:00"
+object_type: "corollary"
+origin_worker_id: 220
+parent_id: "odd_halfrank_tight_collision_is_onesided_at_the_middle_joint"
+position: 0
+research_interface:
+  consequence: "The odd tight collision has no diffuse residual geometry: absent an additional cycle or multiple source-path overlap, it becomes an exact reciprocal terminal-terminal exchange across two uniquely intersecting source paths."
+  consumer:
+    - "odd half-rank collision elimination"
+    - "source-path reciprocal-exchange analysis"
+    - "post-43/48 U_11 terminal-pair path route"
+  given:
+    - "9b00516e2965 one-sided odd tight collision"
+    - "41100a9882dd cycle-or-shared-last-edge path overlap"
+    - "f831721c17f8 consecutive-rank cross-transversality"
+    - "0c885137ea8c pairwise source-path intersection"
+    - "5854d853a44b unique-intersection rigidity"
+  next_need: "Eliminate or charge the reciprocal terminal-exchange residue. The two source paths have lengths m and m+1, a unique aligned internal joint, and exact cross-contacts v_{j+1} on R_j and v_{j-1} on R_{j+1}. Compare the positions of these two terminal contacts relative to the aligned joint; a crossing order should give a splice, while one-sided order should force a rank bound."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "b2671ae68541a40aa1143e6cdade9b7fa1abfd714c058bacd590347278591efa"
+substantive_worker_ids:
+  - 220
+support_reason: "The proof applies the unique-intersection theorem 5854d853a44b to Q and R_j even though both maximum endpoint paths have the same last vertex x_j. That theorem requires distinct endpoints. A second common vertex between Q and R_j is therefore not established, so 41100a9882dd cannot be invoked and the cycle/shared-last-edge branch is unsupported."
+support_status: "blocked"
+title: "The odd tight U_11 collision reduces to a cycle, multiple source-path overlap, or reciprocal terminal exchange"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 5

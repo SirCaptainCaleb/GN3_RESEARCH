@@ -1,0 +1,67 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "494c53fd129faf2b6736d7c791511a04ba82e6ec7ee3e83cd399e892b517d20a"
+created_at: "2026-09-25T20:57:04.033314+00:00"
+id: "collision_has_exact_blockers_except_at_explicit_boundary_cases"
+last_elevation_revision: null
+last_substantive_worker_id: 238
+legacy_id: "1000433"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Its proof converts U_11 terminal contact multiplicity one into a genuine precursor contact, but mu_v(h_v)=1 is conventional for the chosen last edge. If an adjacent parent edge equals h_{x_i}, the claimed off-x_i contact need not exist. This exact boundary defect has now independently caused failures of c27aea4c544e and f32ad11b4ef0."
+  audit_request_recorded_at: "2026-09-25T22:32:57.906218+00:00"
+  audit_resolution:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "The v2 proof correctly isolates the last-edge convention. Rank locality follows from the terminal-rank bound and backward-collision lemma. For F distinct from the host last edge, U_11 multiplicity one is a genuine precursor-cardinality statement, and linearity upgrades it to the exact intersection; the central-window bounds then apply."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "The v2 proof correctly isolates the last-edge convention. Rank locality follows from the terminal-rank bound and backward-collision lemma. For F distinct from the host last edge, U_11 multiplicity one is a genuine precursor-cardinality statement, and linearity upgrades it to the exact intersection; the central-window bounds then apply."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_failure:
+    reason: "The first proof step is invalid in the boundary case where an adjacent parent edge F equals the chosen last edge h_{x_i} of P_{x_i}. In the contact-multiplicity setup, mu_{x_i}(h_{x_i})=1 is assigned by convention; it is not the cardinality |(F\\{x_i})∩(V(P_{x_i})\\h_{x_i})|. The hypotheses allow this case when phi(F)=phi(x_i)=r_i-1. Therefore U_11 terminal-singleness does not imply the asserted unique precursor contact c_F, and conclusions (1)–(4) are not established unconditionally. The lemma can be repaired by excluding/handling F=h_{x_i} separately."
+    recorded_at: "2026-09-25T22:33:25.239478+00:00"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "collision_forces_double_blocking_of_the_colliding_source_rail"
+position: 0
+research_interface:
+  consequence: "The old unconditional two-exact-blocker claim is replaced by a boundary-safe version: rank locality always holds, exact contacts hold for every non-last adjacent edge, and central-window localization holds when its edge rank is strictly below the host-path length."
+  consumer:
+    - "collision-cycle packing route"
+    - "rank-band decomposition of U_11"
+    - "source-path blocker packing"
+  given:
+    - "U_11 terminal contact multiplicity convention"
+    - "c9a012c1b82e backward collision rank drop"
+    - "a7b7670e955a terminal-rank bound"
+    - "49080cbf1371 singleton central-window localization"
+  next_need: "Separate the explicit boundary cases F=h and phi(F)=phi(x_i) before using central-window coordinates. The nonboundary adjacent edges have genuine exact contacts."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A U_11 color-terminal collision has exact blockers except at explicit boundary cases."
+statement_sha256: "cf444bacac5f1ea95b7a36c7e52bd5e9ea377c0d7af351464be833abb6fd30cc"
+substantive_worker_ids:
+  - 220
+  - 238
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A U_11 color-terminal collision has exact blockers except at explicit boundary cases"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 16

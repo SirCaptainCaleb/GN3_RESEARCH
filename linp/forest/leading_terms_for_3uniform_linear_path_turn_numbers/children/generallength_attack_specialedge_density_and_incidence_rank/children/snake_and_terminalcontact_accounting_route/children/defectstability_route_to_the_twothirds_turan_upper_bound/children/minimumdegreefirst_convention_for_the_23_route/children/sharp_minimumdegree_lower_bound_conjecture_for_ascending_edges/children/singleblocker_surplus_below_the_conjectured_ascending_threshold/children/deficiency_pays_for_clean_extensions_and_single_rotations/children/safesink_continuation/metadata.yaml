@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: true
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "de812bcc16d716b61ac9557f8dff2764ad0c205230916c94f8add7e43c764187"
+created_at: "2026-10-01T20:24:15.441596+00:00"
+id: "safesink_continuation"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: "1001202"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  hygiene_wrapper: true
+  organizational: true
+  toolkit_reference: "terminalsafe_sinks_have_endpoint_deficiency_at_most_two"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "deficiency_pays_for_clean_extensions_and_single_rotations"
+position: 0
+research_interface:
+  working_route: "continue boundary-rotation analysis via toolkit lemma 1000394"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Continue the safe-sink route via toolkit lemma terminalsafe_sinks_have_endpoint_deficiency_at_most_two."
+statement_sha256: "e3dc6c270e4e6ff5ab646d1a9eb2958bf2321aabf563b5ff66f45f1a7e0d6ac2"
+substantive_worker_ids:
+  - 296
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Safe-sink continuation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T15:12:33.618072+00:00"
+version: 2

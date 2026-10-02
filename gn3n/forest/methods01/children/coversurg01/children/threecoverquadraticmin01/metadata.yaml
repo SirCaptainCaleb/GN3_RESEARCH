@@ -42,7 +42,7 @@ metadata:
     statement_change_policy: "small_local_tweak_only_policy_enforced"
     worker_id: 616
   origin_ids:
-    - "1000496"
+    - "quadratic_potential_at_a_terminal_pairwiserepartition_state"
     - "astra003quadraticpotential"
   proof_change: "same quadratic identity, stated at the natural move-graph level"
 object_type: "result"

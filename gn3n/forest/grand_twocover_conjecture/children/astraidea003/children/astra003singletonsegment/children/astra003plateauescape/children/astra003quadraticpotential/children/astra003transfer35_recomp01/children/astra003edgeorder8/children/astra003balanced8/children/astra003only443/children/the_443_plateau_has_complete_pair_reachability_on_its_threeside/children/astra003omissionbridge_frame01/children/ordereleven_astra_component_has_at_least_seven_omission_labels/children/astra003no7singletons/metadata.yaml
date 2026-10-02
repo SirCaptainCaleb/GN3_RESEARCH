@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "35891bbc00b2807cd30b8ef23da2115f44fa695c4e5d35cf1a4520b0ed17a6ea"
+created_at: "2026-09-26T14:10:25.753193+00:00"
+id: "astra003no7singletons"
+last_elevation_revision: 0
+last_substantive_worker_id: 643
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 324
+    detail: "The fixed-T-pair omission-swap argument is valid: equality makes every on-side S-label a good deletion, giving Johnson connectivity over the S-triples; this forces five bad deletions in a six-set, contradicting four-of-six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:34:54.555358+00:00"
+    worker_id: 591
+  last_audit_observation:
+    claim_id: 324
+    detail: "The fixed-T-pair omission-swap argument is valid: equality makes every on-side S-label a good deletion, giving Johnson connectivity over the S-triples; this forces five bad deletions in a six-set, contradicting four-of-six."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:34:54.555358+00:00"
+    worker_id: 591
+object_type: "research"
+origin_worker_id: 643
+parent_id: "ordereleven_astra_component_has_at_least_seven_omission_labels"
+position: 0
+research_interface:
+  consumer: "astraidea003"
+  given: "the seven-label equality shell for the order-eleven omission surface"
+  need: "continue expansion for 8,9,10 singleton labels or force an excluded label onto the omission surface"
+  produces: "a contradiction via fixed-pair omission-swap connectivity and four-of-six; hence at least eight singleton labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The seven-label omission shell is impossible."
+statement_sha256: "edd0cf41cc67a4c15e857aba2648daf0a051c17b4bdb9badac412335c2638700"
+substantive_worker_ids:
+  - 643
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The seven-label omission shell is impossible"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:56:12.77133+00:00"
+version: 9

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "d9e9e15a5fc10db86c6f945b9a29916ea6114294c3711d2468c883b7db048115"
+created_at: "2026-09-28T11:13:39.055908+00:00"
+id: "gives_a_phineutral_repartition_or_local_insertion_structure"
+last_elevation_revision: 0
+last_substantive_worker_id: 706
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 258
+    detail: "Replaced shell and insertion-obstruction shorthand by an edge common to G_e,G_f and the explicit noninsertability, Hamiltonian-four-set, cross-triple, and same-end alternatives."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 258
+    detail: "Replaced shell and insertion-obstruction shorthand by an edge common to G_e,G_f and the explicit noninsertability, Hamiltonian-four-set, cross-triple, and same-end alternatives."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:25:19.723483+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Language-precision repair only: replace shell/obstruction-window/frame shorthand by the rooted graphs and explicit insertion alternatives."
+    recorded_at: "2026-09-28T20:24:11.555095+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+object_type: "research"
+origin_worker_id: 706
+parent_id: "rooted_graphs_contains_adjacent_edges_or_is_a_perfect_matching"
+position: 0
+research_interface:
+  consumer: "analysis of Phi-neutral repartitions and endpoint insertion into the interior of P"
+  given: "a Phi-minimal three-cover X|P|Q with |X|=6, |P|>=8, and an edge {a,b} common to the rooted graphs for the two endpoints of P"
+  produces: "order disagreement, a Phi-neutral two-for-two repartition, noninsertability data from insert01, a Hamiltonian four-set, a cross triple, or explicit same-end reverse endpoint triples"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An edge common to two rooted graphs gives a Phi-neutral repartition or local insertion structure."
+statement_sha256: "733a288b8e8ea129e9c61b4a71a5956e552566a8971bd1bc2071aa2b1352f3ab"
+substantive_worker_ids:
+  - 706
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An edge common to two rooted graphs gives a Phi-neutral repartition or local insertion structure"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:25:19.723483+00:00"
+version: 6

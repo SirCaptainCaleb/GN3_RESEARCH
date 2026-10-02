@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "284e2a551ed5c9d32f2179d9f89147a9ac71ce914fda30fe7fad70bc89730879"
+created_at: "2026-09-27T18:18:00.192361+00:00"
+id: "a_hamiltonian_fiveset_force_twofortwo_hamiltonian_replacements"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 73
+    detail: "Independent check passes. Four-of-six on each bad six-set X∪{e}, X∪{f} yields subsets I_e,I_f of X of size at least three, so I_e∩I_f is nonempty. For x in the intersection, the six-set (X-{x})∪{e,f} has e and f as Hamiltonian deletion labels; four-of-six then forces at least two additional Hamiltonian deletion labels z in X-{x}, giving the stated two-for-two replacements."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:19:27.909744+00:00"
+    worker_id: 627
+  last_audit_observation:
+    claim_id: 73
+    detail: "Independent check passes. Four-of-six on each bad six-set X∪{e}, X∪{f} yields subsets I_e,I_f of X of size at least three, so I_e∩I_f is nonempty. For x in the intersection, the six-set (X-{x})∪{e,f} has e and f as Hamiltonian deletion labels; four-of-six then forces at least two additional Hamiltonian deletion labels z in X-{x}, giving the stated two-for-two replacements."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:19:27.909744+00:00"
+    worker_id: 627
+object_type: "research"
+origin_worker_id: 573
+parent_id: "smallset01"
+position: 1
+research_interface:
+  consumer: "five-vertex path-cover states; endpoint replacement; local extension arguments"
+  given: "a Hamiltonian five-set and two exterior vertices whose six-set extensions are non-Hamiltonian"
+  produces: "a common Hamiltonian deletion x for both bad extensions and at least two second labels z giving Hamiltonian two-for-two replacements"
+research_level: "lemma"
+semantic_container_text: "Bad five-extension replacement branch: two failed one-vertex extensions of a Hamiltonian five-side force two-for-two Hamiltonian replacements and a six-set carrying several positioned good deletions."
+simplified_statement: "Two bad extensions of a Hamiltonian five-set force two-for-two Hamiltonian replacements."
+statement_sha256: "4e799d6177be8f8197d8c1c8ea51ce347936d1e7e580d042aa749ad0045eaa04"
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two bad extensions of a Hamiltonian five-set force two-for-two Hamiltonian replacements"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 7

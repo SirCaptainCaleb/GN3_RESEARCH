@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "a8bb7d2df9498083ad5fe43a5b30bbdbe89a070682b9511e0aef54577bb26100"
+created_at: "2026-09-24T05:45:28.913182+00:00"
+id: "state_creates_a_fourvertex_highpotential_central_packet"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000217"
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7ee3d102-1251-475c-8881-816124f1b426"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:51:59.362952+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "7ee3d102-1251-475c-8881-816124f1b426"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:51:59.362952+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:50:50.492719+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "oddboundary_consecutiverank_fouredge_normal_form"
+position: 0
+research_interface:
+  consequence: "The final one-low odd-boundary state creates a four-vertex packet C,D,E,G of endpoint potential at least p across three consecutive central path edges, while both relevant entrances are off P_v."
+  consumer:
+    - "0-1-1 consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "512f6864eb96 forces C,D terminal-only"
+    - "fb9dfc3b63b8 C-rotation"
+    - "2e04b9ddaeaf charged endpoint rotation"
+  next_need: "Use the 0-1-1 chosen terminal paths at C and D. Their low/high ranks are q and q+1 but both terminal potentials are >=p. Central-window localization on P_C and P_D should pin their sole edge contacts; compare with the two explicit P_v rotations to force an entrance repetition or a second contact."
+  role: "odd-central rotation packet"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The final one-low odd-boundary state creates a four-vertex high-potential central packet."
+statement_sha256: "f44e006d597b24c9897bf6f37d64a0245ac05bbfcf2a15ec52e633646ff578ea"
+substantive_worker_ids:
+  - 225
+  - 231
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "The final one-low odd-boundary state creates a four-vertex high-potential central packet"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:50:40.36178+00:00"
+version: 10

@@ -1,0 +1,68 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "a319c464cfab56c73b685ee04d3be19230b284573f0b5cd9c28b0c6fae33befc"
+created_at: "2026-10-01T07:22:31.057568+00:00"
+id: "at_least_three_crosspaired_commoncore_transport_presentations"
+last_elevation_revision: 10860
+last_substantive_worker_id: 1061
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Terminology only: proof body uses the deprecated alias \"good deletion\"; canonical project term is \"Hamiltonian deletion\". Mathematics is unaffected."
+      recorded_at: "2026-10-01T13:24:42.006953+00:00"
+      worker_id: 1061
+  audit_request_reason: "Elevation strengthened the cross-pair multiplicity to rs>=3(h-3) with an equality classification; request independent check of the new math version."
+  audit_request_recorded_at: "2026-10-01T13:34:03.130904+00:00"
+  audit_resolution:
+    claim_id: 1114
+    detail: "Independent reconstruction passes. Four-of-six gives r+s>=4 with r,s>=1; (r-3)(s-3)>=0 gives rs>=3(r+s-3), including the sharp 3/6/9 counts and equality characterization. Each cross-pair correctly feeds yield_a_hamiltonian_sixset_or_fourgooddeletion_transport."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
+  audit_trigger_kind: "explicit"
+  equivalent_or_stronger: true
+  last_audit_observation:
+    claim_id: 1114
+    detail: "Independent reconstruction passes. Four-of-six gives r+s>=4 with r,s>=1; (r-3)(s-3)>=0 gives rs>=3(r+s-3), including the sharp 3/6/9 counts and equality characterization. Each cross-pair correctly feeds yield_a_hamiltonian_sixset_or_fourgooddeletion_transport."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T17:44:05.595432+00:00"
+    worker_id: 1108
+  recomposition_audit:
+    classified_at: "2026-10-01T07:23:47.569741+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+  recomposition_purpose: "reasoning_hygiene"
+object_type: "research"
+origin_worker_id: 1016
+parent_id: "smallset01"
+position: 0
+research_interface:
+  consumer: "five-side synchronization; fixed-reservoir lifting; common-core amplification"
+  given: "two disjoint triples, or a family of triples against one fixed three-reservoir"
+  produces: "at least three cross-paired common-four-core transport presentations plus the fixed-two-core one-third family corollary"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two disjoint triples have at least three cross-pairs of Hamiltonian five-deletions, each yielding a common-four-core six-set transport package; the earlier directional and one-third fixed-reservoir statements are corollaries."
+statement_sha256: "78301c3085ba43215d6ff9182a31ca494cd45c434d77f1812c2dd64ee1ba8672"
+substantive_worker_ids:
+  - 1016
+  - 1061
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two disjoint triples carry at least three cross-paired common-core transport presentations"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T17:44:05.595432+00:00"
+version: 11

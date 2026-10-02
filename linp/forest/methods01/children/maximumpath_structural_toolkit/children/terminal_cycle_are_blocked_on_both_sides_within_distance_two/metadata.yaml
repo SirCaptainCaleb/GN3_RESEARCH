@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "76f10612a170c254e63fc92c41a04ba856984fb8fca4fec3916de627a6234b71"
+created_at: "2026-09-24T13:35:00.30186+00:00"
+id: "terminal_cycle_are_blocked_on_both_sides_within_distance_two"
+last_elevation_revision: null
+last_substantive_worker_id: 209
+legacy_id: "1000666"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b0d51eef-788f-4d08-951b-dd1bf08e0af3"
+    detail: "Independent check passes. If an entrance rail R_i misses both of the next two cycle edges, concatenating R_i,e_i,e_{i+1},e_{i+2} gives a (p+1)-edge path ending at a terminal of potential p, impossible; reversing orientation gives the backward condition. For cycle length at least six the two two-edge arcs are vertex-disjoint in a linear terminal cycle, so the two required contacts are distinct. For length five the arcs meet at the opposite terminal joint, exactly as stated."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:38:00.301228+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_audit_observation:
+    claim_id: "b0d51eef-788f-4d08-951b-dd1bf08e0af3"
+    detail: "Independent check passes. If an entrance rail R_i misses both of the next two cycle edges, concatenating R_i,e_i,e_{i+1},e_{i+2} gives a (p+1)-edge path ending at a terminal of potential p, impossible; reversing orientation gives the backward condition. For cycle length at least six the two two-edge arcs are vertex-disjoint in a linear terminal cycle, so the two required contacts are distinct. For length five the arcs meet at the opposite terminal joint, exactly as stated."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:38:00.301228+00:00"
+    worker_id: "e2d5aa9f-fa15-4f01-855d-b926446e21f1"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:15:52.586383+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "maximumpath_structural_toolkit"
+position: 110
+research_interface:
+  consequence: "Every entrance rail on a flat terminal cycle is forced to block against the cycle on both sides within two edges. For cycle length at least six this gives two distinct foreign contacts per rail; the five-cycle has one exceptional shared-joint possibility."
+  consumer:
+    - "flat-transfer cycle elimination"
+    - "balanced-lens no-piercing"
+    - "post-43/48 gap-one shell"
+  given:
+    - "flat gap-one terminal-cycle type"
+    - "maximum entrance rails"
+  next_need: "For cycle length at least six, use the two distinct two-sided contacts to splice across a minimal balanced lens. Treat the five-cycle separately, where the joint e_{i+2} intersect e_{i-2} can serve both blocking requirements."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Entrance rails on a flat gap-one terminal cycle are blocked on both sides within distance two."
+statement_sha256: "fdb45be79ae6378c03bfb9c12f01d8eb3ee70d283b9be85994174c433852a02b"
+substantive_worker_ids:
+  - 223
+  - 209
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Entrance rails on a flat gap-one terminal cycle are blocked on both sides within distance two"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 14

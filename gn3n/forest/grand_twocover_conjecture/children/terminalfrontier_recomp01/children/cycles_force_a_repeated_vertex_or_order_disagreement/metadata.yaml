@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "9dca604833d95d1cfc26e84d11b46a920023f240b5f71e0be0f0bcee521942f3"
+created_at: "2026-09-28T01:37:25.447166+00:00"
+id: "cycles_force_a_repeated_vertex_or_order_disagreement"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 323
+    detail: "Independent check: under no repeated transfer, any original support is either untouched or all its vertices move once to one final tracked path; aligned endpoint removals reverse the left/right removal blocks, forcing order disagreement for support order at least 3."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 323
+    detail: "Independent check: under no repeated transfer, any original support is either untouched or all its vertices move once to one final tracked path; aligned endpoint removals reverse the left/right removal blocks, forcing order disagreement for support order at least 3."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  proof_rehearsal_generation: 43
+  scale_free: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "terminalfrontier_recomp01"
+position: 0
+research_interface:
+  consumer: "grand theorem proof rehearsal; neutral-transfer cycle termination; endpoint transport / defect compression"
+  given: "a cycle of Phi-neutral gap-one endpoint transfers in which every transfer is aligned: initial-to-initial or terminal-to-terminal, with all other relative orders preserved"
+  need: "consume the repeated-vertex branch; combine with terminalfrontier_recomp01 in the unique-small equitable profile"
+  produces: "either a repeated transferred vertex or order disagreement on a returned support"
+research_level: "lemma"
+semantic_container_text: "Aligned neutral-transfer cycle branch: repeated vertices in nonbacktracking aligned transfer walks arise quickly; the unique-small residue then forces cross-core triples, core crossings, four-windows, or a standard transport disturbance."
+simplified_statement: "Aligned neutral-transfer cycles force a repeated vertex or order disagreement"
+statement_sha256: "91a75d1d9924819c2365393aabda38d00fa5166b561134afe9d38c0791ad0a8a"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Aligned neutral-transfer cycles force a repeated vertex or order disagreement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:26:40.314047+00:00"
+version: 5

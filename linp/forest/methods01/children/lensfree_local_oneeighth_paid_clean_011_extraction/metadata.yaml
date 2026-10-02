@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "b0f1af7d48ae94b44b93ad326c1ef277d60214059c8d187a8ec84479d8400359"
+created_at: "2026-09-25T20:16:27.92636+00:00"
+id: "lensfree_local_oneeighth_paid_clean_011_extraction"
+last_elevation_revision: null
+last_substantive_worker_id: 224
+legacy_id: "1000565"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "927ba481-bb14-43e8-a284-728d166cabd9"
+    detail: "Near equality makes D, eta, source-unclean mass, and unused contact capacity o(S). The local D+Y theorem supplies p/8-eta-O(1) selected switchers at active misaligned centers. Deleting source-unclean and terminal-nonsingle edges costs only o(S) center incidences because each underlying edge can occur at at most two terminal centers, yielding the stated positive-part p/8 extraction."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:01:40.869671+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "927ba481-bb14-43e8-a284-728d166cabd9"
+    detail: "Near equality makes D, eta, source-unclean mass, and unused contact capacity o(S). The local D+Y theorem supplies p/8-eta-O(1) selected switchers at active misaligned centers. Deleting source-unclean and terminal-nonsingle edges costs only o(S) center incidences because each underlying edge can occur at at most two terminal centers, yielding the stated positive-part p/8 extraction."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:01:40.869671+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "theorem"
+origin_worker_id: 224
+parent_id: "methods01"
+position: 900
+research_interface:
+  consequence: "Restores the local p/8 paid-certified source-clean doubly-terminal-single family on a lens-free chain, while retaining genuine common-anchor switching for every selected edge."
+  consumer:
+    - "strict two-terminal-gap extraction"
+    - "7e6abf77cbc5 local congestion route"
+    - "selected paid/common-anchor spacing and trichotomy"
+  given:
+    - "a57007500001 exact four-defect identity"
+    - "223efeb00c7b lens-free switching stability"
+    - "614c7d2d181a lens-free local D+Y payment"
+  next_need: "Reconstruct the strict-two-terminal-gap deletion: rank-tight terminal incidences are o(S) via the aligned/flat-incidence defect bound, leaving the same local p/8 families with strict edge-rank gap at both terminals."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Lens-free local one-eighth paid clean 0-1-1 extraction."
+statement_sha256: "a7aed2b9bc41858b6728e9c8ac899bf86d3aaff802ef4e6c5a77f2bb1a99411d"
+substantive_worker_ids:
+  - 224
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Lens-free local one-eighth paid clean 0-1-1 extraction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 10

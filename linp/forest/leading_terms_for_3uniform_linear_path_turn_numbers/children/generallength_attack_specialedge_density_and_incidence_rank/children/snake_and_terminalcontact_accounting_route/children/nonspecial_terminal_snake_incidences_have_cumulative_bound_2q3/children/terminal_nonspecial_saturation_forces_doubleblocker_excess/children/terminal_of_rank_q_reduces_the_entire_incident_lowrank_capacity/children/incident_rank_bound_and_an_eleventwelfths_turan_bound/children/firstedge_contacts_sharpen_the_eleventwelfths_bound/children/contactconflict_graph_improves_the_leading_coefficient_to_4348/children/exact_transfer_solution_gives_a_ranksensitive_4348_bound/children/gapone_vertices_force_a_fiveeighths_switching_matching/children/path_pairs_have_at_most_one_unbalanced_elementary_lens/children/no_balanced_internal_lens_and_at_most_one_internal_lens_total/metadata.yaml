@@ -1,0 +1,70 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "7a2511b30e119f3dec5a8eb1dba9ba167a4287c7f74910953df3795d6d7e6301"
+created_at: "2026-09-24T13:56:41.975504+00:00"
+id: "no_balanced_internal_lens_and_at_most_one_internal_lens_total"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: "1001120"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Normalized endpoint wording, aligned the body with the pairwise edge-disjoint conclusion, and added the exact dependency on 32ea928e6ffd."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:43.842586+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Localized wording/terminology cleanup only; mathematical content unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:45.773532+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record the deficiency-one lens budget used for the at-most-one conclusion."
+    recorded_at: "2026-09-24T21:32:59.643929+00:00"
+    to_id: "path_pairs_have_at_most_one_unbalanced_elementary_lens"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized wording repair: align the proof body with the stated pairwise edge-disjoint conclusion; no mathematical strengthening is claimed."
+    recorded_at: "2026-09-24T21:27:09.117377+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "path_pairs_have_at_most_one_unbalanced_elementary_lens"
+position: 0
+research_interface:
+  consequence: "After choosing the maximum path to maximize anchor-edge overlap, all balanced internal lenses disappear and at most one unbalanced internal lens remains. The large switching matching must therefore live on an essentially single-defect Q/P geometry."
+  consumer:
+    - "gap-one switching matching"
+    - "post-43/48 path uncrossing"
+  given:
+    - "gap-one q versus q+1 endpoint paths"
+    - "overlap-maximal choice of maximum path"
+    - "deficiency-one lens budget"
+  next_need: "Classify the remaining overlap-maximal geometry including the initial prefix fork. Show the q/8 cross-period switching edges cannot all connect retained common vertices to omitted vertices inside the one defect region/prefix without producing an endpoint-preserving rotation that increases Q-overlap."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Overlap-maximal gap-one path pairs have no balanced internal lens and at most one internal lens total."
+statement_sha256: "666b321448c8de264df88e64824493241f26423c45f886575156eaf0db415eb6"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Overlap-maximal gap-one path pairs have no balanced internal lens and at most one internal lens total"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 10

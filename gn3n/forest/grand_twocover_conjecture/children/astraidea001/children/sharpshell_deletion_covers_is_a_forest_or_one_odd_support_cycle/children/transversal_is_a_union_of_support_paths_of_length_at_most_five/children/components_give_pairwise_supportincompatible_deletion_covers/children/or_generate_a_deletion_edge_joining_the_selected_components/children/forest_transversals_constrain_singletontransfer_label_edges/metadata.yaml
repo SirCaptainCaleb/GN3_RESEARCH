@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "03a89bdf726aa3ee5dcd14406bba2c3324428e019cf49e5045e9d95f361940c8"
+created_at: "2026-09-27T15:09:23.21809+00:00"
+id: "forest_transversals_constrain_singletontransfer_label_edges"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 143
+    detail: "Independent recheck confirms the third-component argument is invalid when |E|>alpha because deleting e_x changes an entry above alpha. The certified replacement d0c8789888c4 captures the strongest valid lexicographic conclusion. Same-label rigidity was checked as a possible rescue and is insufficient."
+    math_version: 4
+    outcome: "fail"
+    recorded_at: "2026-09-27T18:19:19.121473+00:00"
+    worker_id: 569
+  audit_resolution_before_repair: null
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 143
+    detail: "Independent recheck confirms the third-component argument is invalid when |E|>alpha because deleting e_x changes an entry above alpha. The certified replacement d0c8789888c4 captures the strongest valid lexicographic conclusion. Same-label rigidity was checked as a possible rescue and is insufficient."
+    math_version: 4
+    outcome: "fail"
+    recorded_at: "2026-09-27T18:19:19.121473+00:00"
+    worker_id: 569
+  last_failure:
+    reason: "Independent recheck confirms the third-component argument is invalid when |E|>alpha because deleting e_x changes an entry above alpha. The certified replacement d0c8789888c4 captures the strongest valid lexicographic conclusion. Same-label rigidity was checked as a possible rescue and is insufficient."
+    recorded_at: "2026-09-27T18:19:19.121473+00:00"
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Restore the intended theorem after rejecting the attempted largest-component restriction as a material weakening not permitted for statement repair. The original third-component gap remains unresolved: when e_x lies in a third component E with |E|>alpha, deleting e_x changes an entry above alpha, so the lexicographic argument does not rule that case out. Certified d0c8789888c4 proves the valid alternative |E|>=alpha+beta+1."
+    recorded_at: "2026-09-27T18:05:16.514208+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 573
+  repair_attempt_count: 6
+  repair_reason: "The proof does not justify the third-component case. If the selected edge e_x lies in a third component E with |E|>alpha, deleting e_x changes a component above alpha, so the claim that all entries larger than alpha are unchanged is false. The exchange argument only forces |E|>=alpha+beta+1, as certified in d0c8789888c4. I attempted repair: adding that escape alternative or imposing that C is largest makes the theorem correct, but either materially weakens/changes the stated claim and is not an allowed small statement repair. The intended theorem is therefore left for independent repair; no terminal falsity conclusion is asserted."
+  repair_requested_at: "2026-09-27T18:05:33.773859+00:00"
+  small_order_free: true
+  viewpoint: "extremal transversal bridge exchange"
+object_type: "research"
+origin_worker_id: 614
+parent_id: "or_generate_a_deletion_edge_joining_the_selected_components"
+position: 0
+research_interface:
+  consumer: "sharp-shell forest-transversal route; support-graph exchange"
+  given: "a forest deletion-cover transversal with lexicographically maximal decreasing component-size vector"
+  need: "combine the short-corridor size multiset with this pairwise constraint; equal-size corridors already give reciprocal direct crossings"
+  produces: "for every pair of components, singleton bridge labels lie in the larger component within depth alpha-beta-1; every equal-sized component pair is fully crossed"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lexicographically maximal forest transversals constrain singleton-transfer label edges."
+statement_sha256: "f5807f4b3c19cdc321d1983dc8dbc4eae10d57e5156e4d7549d655edc387f857"
+substantive_worker_ids:
+  - 614
+support_reason: "Independent recheck confirms the third-component argument is invalid when |E|>alpha because deleting e_x changes an entry above alpha. The certified replacement d0c8789888c4 captures the strongest valid lexicographic conclusion. Same-label rigidity was checked as a possible rescue and is insufficient."
+support_status: "blocked"
+title: "Lexicographically maximal forest transversals constrain singleton-transfer label edges"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T18:19:19.121473+00:00"
+version: 16

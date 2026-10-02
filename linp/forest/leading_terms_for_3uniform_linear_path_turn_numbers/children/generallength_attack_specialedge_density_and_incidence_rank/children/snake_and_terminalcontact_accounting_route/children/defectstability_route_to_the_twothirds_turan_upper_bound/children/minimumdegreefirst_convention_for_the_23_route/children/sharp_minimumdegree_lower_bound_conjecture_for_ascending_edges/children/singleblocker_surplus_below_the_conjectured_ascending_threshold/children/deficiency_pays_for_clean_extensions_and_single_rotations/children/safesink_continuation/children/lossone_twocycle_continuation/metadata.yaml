@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: true
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "ec015e2017c1ef66db28e1d5ee06395f562d5488ee3c75471f1bb95ebfcc9c47"
+created_at: "2026-10-01T20:02:02.653536+00:00"
+id: "lossone_twocycle_continuation"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: "1001177"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  hygiene_wrapper: true
+  organizational: true
+  toolkit_reference: "a_lossone_doubleblocker_splice_creates_a_canonical_twocycle"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "safesink_continuation"
+position: 0
+research_interface:
+  working_route: "continue the boundary loss-one analysis through toolkit result 1000016"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Continue the loss-one route via toolkit lemma a_lossone_doubleblocker_splice_creates_a_canonical_twocycle."
+statement_sha256: "9c6742686cf6dfda02de2664b77e007925bc81bb2f39e018357c0fe2584dd1b8"
+substantive_worker_ids:
+  - 296
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Loss-one two-cycle continuation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T15:12:33.618072+00:00"
+version: 3

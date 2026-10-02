@@ -3539,7 +3539,7 @@ begin
   v_result:=control_center.create_object_core(
     p_worker_id,p_object_type,p_title,p_statement,p_body,p_parent_id,p_position,
     p_metadata,p_research_interface,p_mathematical_status,p_research_level,
-    p_lifecycle_status,p_attention,false,0,p_id,p_legacy_id
+    p_lifecycle_status,p_attention,false,0,case when nullif(btrim(coalesce(p_id,'')),'') is null then control_center.allocate_reasoning_name(p_title,p_simplified_statement,p_statement,'{}'::text[],true) else p_id end,p_legacy_id
   );
 
   v_id:=v_result->>'id';
@@ -3588,7 +3588,7 @@ begin
   perform control_center.active_project();
 
   if nullif(btrim(coalesce(p_id,'')),'') is null then
-    v_id:=new_id();
+    v_id:=control_center.allocate_reasoning_name(p_title,null,p_statement,'{}'::text[],true);
   else
     v_id:=btrim(p_id);
     if v_id ~ '^[0-9]{7}$'
@@ -10968,11 +10968,7 @@ BEGIN
     RAISE EXCEPTION 'one or more link to_id values do not name live objects';
   END IF;
 
-  SELECT jsonb_object_agg(key,id) INTO v_map
-  FROM (
-    SELECT n.node->>'key' AS key,new_id() AS id
-    FROM jsonb_array_elements(p_nodes) n(node)
-  ) q;
+  v_map:=control_center.allocate_reasoning_bundle_names(p_nodes);
 
   WITH nodes AS (
     SELECT

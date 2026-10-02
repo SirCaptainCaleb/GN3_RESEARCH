@@ -6,7 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 3
-body_sha256: "6b8b7311f7b1c20a1db62dfa805a72cb37e1899b8a39465d4722e94490c60ff5"
+body_sha256: "55573adb569654344c9f1f4c02c5475914e23ada26b640bbf4e9f0fef3bab9e2"
 created_at: "2026-10-01T06:02:08.334562+00:00"
 id: "fixed_pair_star_transport_clique01"
 last_elevation_revision: 10659
@@ -20,7 +20,7 @@ metadata:
   audit_request_recorded_at: "2026-10-01T06:24:30.434228+00:00"
   audit_resolution:
     claim_id: 1025
-    detail: "Repaired the endpoint-slot classification. The original proof incorrectly treated same-end extender triples as reversal pairs, contradicting certified 1000149. Slots 1 and 3 genuinely give pairwise Hamiltonian six-sets; slot 2 is the central-gap fan; slots 0 and 4 are coherent common left/right-extender families with no automatic pairwise Hamiltonicity. The one-third common-core five-star, pairwise 1000476 transport for every leaf pair, 120-class partition, and n/360 pigeonhole bound remain valid. The invalid supersedes edge to pair_centered_central_gap_fan01 was removed and that older theorem was separately flagged for audit."
+    detail: "Repaired the endpoint-slot classification. The original proof incorrectly treated same-end extender triples as reversal pairs, contradicting certified sameend_extenders_do_not_automatically_concatenate. Slots 1 and 3 genuinely give pairwise Hamiltonian six-sets; slot 2 is the central-gap fan; slots 0 and 4 are coherent common left/right-extender families with no automatic pairwise Hamiltonicity. The one-third common-core five-star, pairwise yield_a_hamiltonian_sixset_or_fourgooddeletion_transport transport for every leaf pair, 120-class partition, and n/360 pigeonhole bound remain valid. The invalid supersedes edge to pair_centered_central_gap_fan01 was removed and that older theorem was separately flagged for audit."
     math_version: 3
     outcome: "pass_adjusted"
     recorded_at: "2026-10-01T07:00:06.221664+00:00"
@@ -29,7 +29,7 @@ metadata:
   isolated_research: true
   last_audit_observation:
     claim_id: 1025
-    detail: "Repaired the endpoint-slot classification. The original proof incorrectly treated same-end extender triples as reversal pairs, contradicting certified 1000149. Slots 1 and 3 genuinely give pairwise Hamiltonian six-sets; slot 2 is the central-gap fan; slots 0 and 4 are coherent common left/right-extender families with no automatic pairwise Hamiltonicity. The one-third common-core five-star, pairwise 1000476 transport for every leaf pair, 120-class partition, and n/360 pigeonhole bound remain valid. The invalid supersedes edge to pair_centered_central_gap_fan01 was removed and that older theorem was separately flagged for audit."
+    detail: "Repaired the endpoint-slot classification. The original proof incorrectly treated same-end extender triples as reversal pairs, contradicting certified sameend_extenders_do_not_automatically_concatenate. Slots 1 and 3 genuinely give pairwise Hamiltonian six-sets; slot 2 is the central-gap fan; slots 0 and 4 are coherent common left/right-extender families with no automatic pairwise Hamiltonicity. The one-third common-core five-star, pairwise yield_a_hamiltonian_sixset_or_fourgooddeletion_transport transport for every leaf pair, 120-class partition, and n/360 pigeonhole bound remain valid. The invalid supersedes edge to pair_centered_central_gap_fan01 was removed and that older theorem was separately flagged for audit."
     math_version: 3
     outcome: "pass_adjusted"
     recorded_at: "2026-10-01T07:00:06.221664+00:00"
@@ -37,7 +37,7 @@ metadata:
   last_local_audit_repair:
     audit_repair_authorized: true
     body_overhaul_permitted: true
-    reason: "Repair invalid endpoint-slot concatenation. The previous proof treated (a,b,k_1) and (b,a,k_1) as a reversal pair and similarly invoked an invalid right-end symmetry. Certified 1000149 shows same-end extenders do not automatically concatenate. Preserve the transport star and 120-class partition; pairwise Hamiltonicity is valid only in slots 1 and 3, with slots 0 and 4 retained as coherent same-end extender families."
+    reason: "Repair invalid endpoint-slot concatenation. The previous proof treated (a,b,k_1) and (b,a,k_1) as a reversal pair and similarly invoked an invalid right-end symmetry. Certified sameend_extenders_do_not_automatically_concatenate shows same-end extenders do not automatically concatenate. Preserve the transport star and 120-class partition; pairwise Hamiltonicity is valid only in slots 1 and 3, with slots 0 and 4 retained as coherent same-end extender families."
     recorded_at: "2026-10-01T06:57:31.238513+00:00"
     statement_change_policy: "small_local_tweak_only_policy_enforced"
     worker_id: 1016
@@ -53,7 +53,7 @@ research_interface:
 research_level: "lemma"
 semantic_container_text: null
 simplified_statement: "Every fixed pair has a one-third Hamiltonian five-star over one four-core; all leaf pairs carry six-set transport, and the star splits into at most 120 path types: pairwise-Hamiltonian interior classes, a coherent middle-gap fan, or coherent same-end extender families."
-statement_sha256: "2d23118b29b9e321ea57142262a50928b3d6c15fa255d62260f746d06111b0dc"
+statement_sha256: "e18864bd781171e7efa957557fc1ed468efcf010fd772bf1e9b4f52a9d58f55e"
 substantive_worker_ids:
   - 922
   - 967

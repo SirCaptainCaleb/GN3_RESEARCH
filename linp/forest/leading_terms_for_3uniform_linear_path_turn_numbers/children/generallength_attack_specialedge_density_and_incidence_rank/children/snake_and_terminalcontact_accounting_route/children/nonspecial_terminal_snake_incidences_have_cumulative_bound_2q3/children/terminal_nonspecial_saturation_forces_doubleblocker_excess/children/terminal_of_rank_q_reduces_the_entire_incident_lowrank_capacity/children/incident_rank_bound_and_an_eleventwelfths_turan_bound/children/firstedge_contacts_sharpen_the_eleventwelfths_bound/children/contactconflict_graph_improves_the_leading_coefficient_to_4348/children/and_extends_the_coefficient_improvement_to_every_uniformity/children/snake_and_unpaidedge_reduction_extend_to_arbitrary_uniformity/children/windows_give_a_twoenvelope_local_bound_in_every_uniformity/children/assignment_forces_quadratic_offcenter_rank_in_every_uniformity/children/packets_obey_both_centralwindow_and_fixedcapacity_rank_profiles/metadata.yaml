@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "869b2198d8abdebcb5e252972bbf665bac26e3fb4bb814d248c09ffa154ca229"
+created_at: "2026-09-25T19:30:04.684154+00:00"
+id: "packets_obey_both_centralwindow_and_fixedcapacity_rank_profiles"
+last_elevation_revision: null
+last_substantive_worker_id: 192
+legacy_id: "1001131"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "06d7bf28-56d5-475d-91c8-e44eff1ca664"
+    detail: "Both pointwise profiles follow independently from the certified fixed-entrance capacity and the checked central-window inequality; the crossover algebra and summed off-v rank conclusion are correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:36:04.553599+00:00"
+    worker_id: "8ac117d0-d449-4c1b-b412-a2d1dfffdc6a"
+  last_audit_observation:
+    claim_id: "06d7bf28-56d5-475d-91c8-e44eff1ca664"
+    detail: "Both pointwise profiles follow independently from the certified fixed-entrance capacity and the checked central-window inequality; the crossover algebra and summed off-v rank conclusion are correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T19:36:04.553599+00:00"
+    worker_id: "8ac117d0-d449-4c1b-b412-a2d1dfffdc6a"
+object_type: "research"
+origin_worker_id: 192
+parent_id: "assignment_forces_quadratic_offcenter_rank_in_every_uniformity"
+position: 0
+research_interface:
+  consequence: "A dense terminal-single family cannot realize the central-window extremal rank profile all the way to its top: once the family passes the crossover index, fixed-entrance capacity forces faster rank growth."
+  consumer:
+    - "general-r unpaid-edge packet bounds"
+    - "minimum-terminal global reuse"
+    - "dense near-top terminal families"
+  given:
+    - "a570a11f0001 general-r fixed-entrance capacity"
+    - "6af906e32265 single-contact central window"
+    - "linearity"
+  next_need: "Use the combined profile, rather than either quadratic packet separately, in a global rank-budget or superlevel argument for minimum-terminal-assigned unpaid edges."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Terminal-single packets obey both central-window and fixed-capacity rank profiles."
+statement_sha256: "dff9de3a1be78725265a1de92548797b66fa9a469b2e06fe1e89b127c669fcbe"
+substantive_worker_ids:
+  - 192
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal-single packets obey both central-window and fixed-capacity rank profiles"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

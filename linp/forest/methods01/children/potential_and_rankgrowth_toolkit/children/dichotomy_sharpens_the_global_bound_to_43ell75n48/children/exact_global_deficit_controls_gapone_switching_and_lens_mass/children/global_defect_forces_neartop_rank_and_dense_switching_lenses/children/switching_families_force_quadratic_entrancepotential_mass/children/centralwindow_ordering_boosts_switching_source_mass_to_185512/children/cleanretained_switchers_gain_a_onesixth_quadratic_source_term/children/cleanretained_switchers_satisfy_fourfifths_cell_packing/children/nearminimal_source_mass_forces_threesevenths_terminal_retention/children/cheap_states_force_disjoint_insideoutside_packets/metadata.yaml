@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "5edde89916408356acf0ab2d3a9a07bd208d27379b8da9421dfdb4cc5d2c365b"
+created_at: "2026-09-24T20:52:54.739826+00:00"
+id: "cheap_states_force_disjoint_insideoutside_packets"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: "1000905"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "bc7d2324-f4fb-42d8-916d-ba0f8b14d646"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:09:20.799759+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:09:01.576729+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "nearminimal_source_mass_forces_threesevenths_terminal_retention"
+position: 0
+research_interface:
+  consequence: "The only locally cheap switching state forces simultaneous disjoint inside/outside expansion: about 15p/56 omitted entrances outside the host with quadratic potential mass, and about 15p/56 top-potential rotation endpoints on the host."
+  consumer:
+    - "post-43/48 global reuse attack"
+    - "terminal-retained residual branch"
+    - "two-resource expansion"
+  given:
+    - "c48823eea604 terminal-retained quadratic omitted-source packet"
+    - "465568d6d8dc doubled rotation endpoints per occupied cell"
+    - "1bab77ec4e49 three-sevenths terminal-retention threshold"
+  next_need: "Globalize the paired packets. If omitted-source reuse is weak, their quadratic potential mass expands the vertex/potential budget; if rotation-endpoint reuse is weak, the on-host packet expands the top superlevel. The hard residual is simultaneous heavy reuse of both packets, which should force many repeated source-terminal incidences or overlapping rotation states."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Terminal-retained cheap states force disjoint inside-outside packets."
+statement_sha256: "56365c11ea9e7464c1db6d29319d1bab471e05f74db1a886f779596de700a136"
+substantive_worker_ids:
+  - 201
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Terminal-retained cheap states force disjoint inside-outside packets"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 9

@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "64ea28d6ba9681e58f47152ec6a12a80de89707cc4357162e857a8f565403e20"
+created_at: "2026-09-27T14:19:30.632184+00:00"
+id: "concentrates_on_the_intersection_of_unionhamiltonian_supports"
+last_elevation_revision: 0
+last_substantive_worker_id: 646
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 286
+    detail: "Replaced ambiguous positive-support wording by positive-weight path support; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:45:16.983011+00:00"
+    worker_id: 616
+  last_audit_observation:
+    claim_id: 286
+    detail: "Replaced ambiguous positive-support wording by positive-weight path support; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-27T15:45:16.983011+00:00"
+    worker_id: 616
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology-only audit repair after dictionary update: replace ambiguous 'positive support' by 'positive-weight path support'."
+    recorded_at: "2026-09-27T15:08:49.681224+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 616
+object_type: "research"
+origin_worker_id: 646
+parent_id: "twofortwo_fractional_replacement_must_contain_the_whole_union"
+position: 0
+research_interface:
+  consumer: "fractional uncrossing route"
+  given: "optimal primal and dual fractional path-cover solutions"
+  need: "exploit zero-dual degeneracy or use the uniform-dual sharp-half-order corollary"
+  produces: "a union-Hamiltonian pair of positive-weight path supports can differ only on zero-dual-weight vertices"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Optimal dual weight concentrates on the intersection of union-Hamiltonian supports."
+statement_sha256: "b6bd0645688875755bc422ffeba08a40fffe0e215c7e61e632c8089f2d46d61c"
+substantive_worker_ids:
+  - 646
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Optimal dual weight concentrates on the intersection of union-Hamiltonian supports"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 10

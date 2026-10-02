@@ -25,16 +25,16 @@ parent_id: "proof_rehearsals"
 position: 42
 research_interface:
   consumer: "grand two-cover conjecture"
-  gap: "1000741"
+  gap: "endpointtransport_defectcompression_bridge"
   given: "a Phi-minimal trapped three-cover reduced by certified size-profile theorems"
   need: "consume repeated-label neutral cycles and canonical order/support/reversal/kernel witnesses into a two-cover or defect span at most two"
   on_demand_ids:
-    - "1000648"
-    - "1000043"
-    - "1000056"
-    - "1000451"
-    - "1000027"
-    - "1000741"
+    - "yields_a_hamiltonian_kernel_cross_triple_or_endpoint_connector"
+    - "at_equal_quadratic_potential_or_expose_the_generic_obstruction"
+    - "endpoint_probe_pair_exposes_a_canonical_defectcompression_input"
+    - "neutral_plateau_contains_a_repeatedlabel_transport_cycle"
+    - "neutral_cycles_should_force_a_canonical_transport_disturbance"
+    - "endpointtransport_defectcompression_bridge"
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: null

@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 55
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "4f78bfa4a2ad83cf80defb9d7822cb7594948f2662ac25e6ca2ee1e39b85cf1a"
+created_at: "2026-09-23T21:26:25.380529+00:00"
+id: "deletions_are_exactly_the_minimumdegreefive_deletions_of_sts13"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000771"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "90d413a1-5251-4e58-b3cc-47f91a4f3775"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:13:33.119169+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "90d413a1-5251-4e58-b3cc-47f91a4f3775"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:13:33.119169+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "densecore_allspecial_conjecture"
+position: 0
+research_interface:
+  consequence: "Removes the minimum-degree and P7-free parts of the matching-deletion experiment from the computational burden. Only the assertion that every surviving edge is special remains to humanize."
+  consumer:
+    - "09b3a90c50a9 matching-deletion calibration"
+  given:
+    - "STS(13)"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Matching deletions are exactly the minimum-degree-five deletions of STS(13)."
+statement_sha256: "a645b7aa4a79241363dc123c753adbe0993e1fbfc14d8760989d804dd8c535c6"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Matching deletions are exactly the minimum-degree-five deletions of STS(13)"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

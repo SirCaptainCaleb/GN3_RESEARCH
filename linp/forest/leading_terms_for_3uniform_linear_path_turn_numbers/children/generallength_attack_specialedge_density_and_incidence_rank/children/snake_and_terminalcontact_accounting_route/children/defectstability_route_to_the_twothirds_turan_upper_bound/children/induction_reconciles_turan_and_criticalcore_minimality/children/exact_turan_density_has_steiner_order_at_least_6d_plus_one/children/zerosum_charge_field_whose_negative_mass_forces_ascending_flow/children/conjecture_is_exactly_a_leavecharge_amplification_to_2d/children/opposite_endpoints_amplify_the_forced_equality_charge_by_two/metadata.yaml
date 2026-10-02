@@ -1,0 +1,72 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "b44752e922bc7775e9d22e916ec9404b31052991bcf0bd86b2173d7e3a2636a7"
+created_at: "2026-09-24T04:08:12.838209+00:00"
+id: "opposite_endpoints_amplify_the_forced_equality_charge_by_two"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000252"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "A negative-charge vertex cannot have maximum endpoint potential; the opposite endpoint of a maximum path has degree at most 2p-1, yielding k>=kappa+2. The endpoint-degree premise is now explicitly recorded."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "A negative-charge vertex cannot have maximum endpoint potential; the opposite endpoint of a maximum path has degree at most 2p-1, yielding k>=kappa+2. The endpoint-degree premise is now explicitly recorded."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record certified endpoint-degree premise."
+    recorded_at: "2026-09-25T01:35:12.257732+00:00"
+    to_id: "endpointpotential_floor_and_a_stronger_ascendingedge_rank_floor"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_repair:
+    reason: "Vocabulary-only repair; mathematics unchanged."
+    recorded_at: "2026-09-25T01:31:59.36528+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "first charge amplification step"
+  uses:
+    - "endpointpotential_floor_and_a_stronger_ascendingedge_rank_floor"
+    - "zerosum_charge_field_whose_negative_mass_forces_ascending_flow"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "conjecture_is_exactly_a_leavecharge_amplification_to_2d"
+position: 0
+research_interface:
+  consequence: "Upgrades the seed charge kappa to kappa+2 by sending a negative-charge high-degree vertex to the opposite endpoint of a maximum path."
+  consumer:
+    - "grand equality charge amplification"
+  given:
+    - "exact equality zero-sum charge"
+    - "P_ell-free"
+  next_need: "Iterate the move. A max charge K>=kappa+2 forces equal negative mass by zero sum. Show that enough of this negative mass has endpoint potential <=ell-3 (giving charge >=kappa+4 at opposite endpoints), or else all balancing negative charge sits at phi=ell-2; classify that top-heavy exceptional state using the level-growth and terminal-capacity lemmas."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Opposite endpoints amplify the forced equality charge by two."
+statement_sha256: "df0ad57c255ea198dcf5683480e3a9bed0905593b8a571492871de8ea59fe6bd"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Opposite endpoints amplify the forced equality charge by two"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:14:06.299868+00:00"
+version: 8

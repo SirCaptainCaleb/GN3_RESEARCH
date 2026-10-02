@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "4e1081e85b4c24eaab199d1b909550d3f3467da8194a0f29905bb2a66c943604"
+created_at: "2026-09-24T04:40:45.170401+00:00"
+id: "pattern_forces_tailterminal_or_crosssplice_obstructions"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000774"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "aadb778d-6bf8-427a-b174-3611f57b1a9d"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:16:23.36857+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "critical spacing-equality obstruction dichotomy"
+  uses:
+    - "terminal_tailblocker_lemma"
+    - "uncrossed_splice_gives_fouredge_spacing"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "onerankhigher_terminal_competitor_crosses_the_low_entrance_rail"
+position: 0
+research_interface:
+  consequence: "Although q,(q+1)^3 satisfies the conjectural +1 spacing inequality at equality, the certified +2 uncrossed splice still rules out every clean state. Every high competitor must instead expose either its opposite terminal in the chosen high tail or an explicit cross-intersection blocking the splice."
+  consumer:
+    - "two-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "q,(q+1)^3 charged rank pattern"
+  next_need: "Use the third high edge to collide the two obstruction modes. Two tail-terminal states should create a reciprocal high-terminal packing problem; cross-splice states should force repeated intersections of a q-1 entrance rail with two q-edge tails."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The q,(q+1)^3 equality pattern forces tail-terminal or cross-splice obstructions."
+statement_sha256: "b580fafaf323bbb11cbb53e27d782e8b649e52b496f2404875ef64b39d69b035"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The q,(q+1)^3 equality pattern forces tail-terminal or cross-splice obstructions"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

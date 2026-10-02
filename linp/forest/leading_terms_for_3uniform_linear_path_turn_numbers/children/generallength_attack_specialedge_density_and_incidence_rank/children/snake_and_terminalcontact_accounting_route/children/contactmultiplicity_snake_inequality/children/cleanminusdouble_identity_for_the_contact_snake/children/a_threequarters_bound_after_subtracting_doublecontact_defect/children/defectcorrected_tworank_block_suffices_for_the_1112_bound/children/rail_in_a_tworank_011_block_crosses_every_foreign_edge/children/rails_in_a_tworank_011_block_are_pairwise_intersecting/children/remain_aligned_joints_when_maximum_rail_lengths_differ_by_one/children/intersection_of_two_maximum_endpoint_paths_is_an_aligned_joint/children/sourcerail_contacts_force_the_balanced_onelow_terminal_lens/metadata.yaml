@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: true
+audit_requirement: "recomposition_equivalence"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "33e86a53c0f6c5c9b59b3a73982918d368c5ffa11c1f77d05fba56ceaf260139"
+created_at: "2026-10-01T20:07:17.435851+00:00"
+id: "sourcerail_contacts_force_the_balanced_onelow_terminal_lens"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: "1001181"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  reasoning_hygiene_recomposition: true
+  recomposition_audit:
+    classified_at: "2026-10-01T20:07:22.602564+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  source_ids:
+    - "sourcerail_intersection_forces_reciprocal_terminal_contacts"
+    - "rail_pairs_force_a_terminalterminal_lens_among_the_high_rails"
+    - "onelow_highrail_residue_is_a_balanced_terminalterminal_lens"
+object_type: "research"
+origin_worker_id: 296
+parent_id: "intersection_of_two_maximum_endpoint_paths_is_an_aligned_joint"
+position: 0
+research_interface:
+  consequence: "Unique source-rail intersections are reciprocal-terminal; in the one-low minimal residue this forces a clean balanced terminal-terminal lens with an aligned common low terminal."
+  consumer:
+    - "one-low odd-central residue"
+    - "balanced-lens non-piercing route"
+  given:
+    - "source-clean 0-1-1 source-rail block"
+    - "unique-intersection alignment for maximum source paths"
+    - "clean-lens balance"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Unique source-rail intersections force reciprocal terminal contacts, and the minimal one-low residue yields a balanced aligned terminal lens."
+statement_sha256: "23db220ec04fa8fd25c821c7548f74ad85087ce80a95b974378b5d0977d21884"
+substantive_worker_ids:
+  - 296
+support_reason: "recomposition_equivalence_audit_pending"
+support_status: "unchecked"
+title: "Reciprocal source-rail contacts force the balanced one-low terminal lens"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:07:22.602564+00:00"
+version: 4

@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "62b15ac7636a921ac51bc720ab45440b7cfd43d0d77a60dae3290851f7545282"
+created_at: "2026-09-24T02:58:56.77172+00:00"
+id: "cuts_are_controlled_by_the_exact_inducedcore_density_defect"
+last_elevation_revision: null
+last_substantive_worker_id: 207
+legacy_id: "1000698"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d551d03b-efcc-4e5f-9300-785ff8fd63b3"
+    detail: "Checked the potential-cut classification and rearrangement A_t>=M_{>=t}-E_t. The minimality discussion correctly distinguishes nonspecial induced cores from all-special cores and does not infer a universal +1 term."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:29:42.21613+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "d551d03b-efcc-4e5f-9300-785ff8fd63b3"
+    detail: "Checked the potential-cut classification and rearrangement A_t>=M_{>=t}-E_t. The minimality discussion correctly distinguishes nonspecial induced cores from all-special cores and does not infer a universal +1 term."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:29:42.21613+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_local_audit_repair:
+    reason: "Substantive audit repair: vertex-minimality of S_ell does not imply every proper nonspecial induced core has density below d. Replaced the false universal +1 inequality by the exact induced-core-defect formula and the correct minimality alternative."
+    recorded_at: "2026-09-25T01:50:58.928263+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "cuts_isolate_ascending_edges_while_retaining_all_special_edges"
+position: 0
+research_interface:
+  consequence: "The exact cut inequality contains an induced-core density-defect term. Vertex minimality supplies low-degree witnesses for nonnegative nonspecial cores, not a universal one-edge density deficit."
+  consumer:
+    - "equality-layer induction"
+    - "weighted potential cuts"
+    - "special-edge/ascending-edge coupling"
+  given:
+    - "321022a601f7 potential-cut classification"
+    - "exact induced-core edge count"
+  next_need: "Control the induced-core defects xi_t. A positive xi_t must come with a degree-at-most-d vertex in a nonspecial proper superlevel core; exploit its boundary incidences or lift-back to recover a negative aggregate defect."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Potential superlevel cuts are controlled by the exact induced-core density defect."
+statement_sha256: "52d8bc6fee693ec1fd0e98ebb20b47dc21949c6ca1805b7ebb0abddecbfb4439"
+substantive_worker_ids:
+  - 229
+  - 207
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Potential superlevel cuts are controlled by the exact induced-core density defect"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

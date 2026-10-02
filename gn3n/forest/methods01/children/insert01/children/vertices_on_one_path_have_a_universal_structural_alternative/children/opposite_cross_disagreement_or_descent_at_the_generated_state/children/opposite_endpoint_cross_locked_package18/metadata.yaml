@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d9f1259043ae9d203dd1bc7ad2c4cad77ecadfce2930910ca1168f2ec6d0f5de"
+created_at: "2026-09-29T19:24:49.890022+00:00"
+id: "opposite_endpoint_cross_locked_package18"
+last_elevation_revision: 8826
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "explicit audit requested at publication"
+  audit_request_recorded_at: "2026-09-29T19:24:49.890022+00:00"
+  audit_resolution:
+    claim_id: 105
+    detail: "Independent check passed. In the adjacent second-type residue, the spacing theorem gives the cross (v,r_k,u), the four inherited prefix/suffix paths, and reverse-through-gap triples (r_k,v,r_{k-1}) and (r_{k+1},u,r_k), with 2<=k<=m-2. If either interface triple (s_2,v,r_k) or (r_k,u,s_1) were tight, it would concatenate with S=(u,s_1,s_2,v) into a proper Hamiltonian five-path; minimum-counterexample calculus plus ham5_large_escape01 would then give one of the excluded generated-state descent/order-disagreement outcomes. Hence both are non-tight and antisymmetry forces (r_k,v,s_2) and (s_1,u,r_k)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:25:35.041718+00:00"
+    worker_id: 665
+  audit_trigger_kind: "explicit_publish_request"
+  last_audit_observation:
+    claim_id: 105
+    detail: "Independent check passed. In the adjacent second-type residue, the spacing theorem gives the cross (v,r_k,u), the four inherited prefix/suffix paths, and reverse-through-gap triples (r_k,v,r_{k-1}) and (r_{k+1},u,r_k), with 2<=k<=m-2. If either interface triple (s_2,v,r_k) or (r_k,u,s_1) were tight, it would concatenate with S=(u,s_1,s_2,v) into a proper Hamiltonian five-path; minimum-counterexample calculus plus ham5_large_escape01 would then give one of the excluded generated-state descent/order-disagreement outcomes. Hence both are non-tight and antisymmetry forces (r_k,v,s_2) and (s_1,u,r_k)."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:25:35.041718+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 708
+parent_id: "opposite_cross_disagreement_or_descent_at_the_generated_state"
+position: 0
+research_interface:
+  consumer: "endpoint-cross consumption; defect compression; original-baseline repartition search"
+  given: "the genuinely unresolved opposite-cross branch of paired noninsertability beside a canonical Hamiltonian four-path in order at least eighteen"
+  produces: "the opposite cross together with two forced reversals against the four-path interfaces, both adjacent reverse-through-gap pivots, and four tight prefix/suffix hooks"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An unresolved opposite endpoint cross carries two four-side interface reversals and both adjacent pivot hooks"
+statement_sha256: "a41307f347f97f5aa8649186f1e0388fbd378546b5e65e03e2c71be7266cabe6"
+substantive_worker_ids:
+  - 708
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An unresolved opposite endpoint cross carries two four-side interface reversals and both adjacent pivot hooks"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T20:54:32.314109+00:00"
+version: 8

@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 88
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "29f632989090eedaa4319c2393062beb152734903cbbdd321c5482422002ef1d"
+created_at: "2026-09-27T04:17:30.040102+00:00"
+id: "compatcrossswitch08"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 152
+    detail: "47d4a615286a forbids compatibility between neighbors lying on opposite anchor paths. compatanchorclass05 plus anchor localization identifies the sole support disagreement as movement of d between the two support classes; within-path edges remain consecutive-only."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:22:42.401194+00:00"
+    worker_id: 578
+  last_audit_observation:
+    claim_id: 152
+    detail: "47d4a615286a forbids compatibility between neighbors lying on opposite anchor paths. compatanchorclass05 plus anchor localization identifies the sole support disagreement as movement of d between the two support classes; within-path edges remain consecutive-only."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:22:42.401194+00:00"
+    worker_id: 578
+  unary_chain_standalone: true
+object_type: "research"
+origin_worker_id: 648
+parent_id: "anchor_compatibility_neighborhood_embeds_in_its_two_path_orders"
+position: 0
+research_interface:
+  consumer: "anchored incompatibility forcing; endpoint-transport / defect compression"
+  given: "one anchor deletion cover F_d=P|Q and its compatibility neighborhood"
+  need: "consume a large complete bipartite family of d-support switches, or the complementary one-path relocation regime"
+  produces: "all cross-path neighbor pairs are support-switch incompatibilities localized at d; same-path compatibility can occur only consecutively"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "An anchor neighborhood has complete cross-path incompatibility"
+statement_sha256: "cc903c7f9d26c5975e70ff35a49705796c5530ce47a6d5fd17a80586880b6ddb"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An anchor neighborhood has complete cross-path incompatibility"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T13:37:52.308794+00:00"
+version: 7

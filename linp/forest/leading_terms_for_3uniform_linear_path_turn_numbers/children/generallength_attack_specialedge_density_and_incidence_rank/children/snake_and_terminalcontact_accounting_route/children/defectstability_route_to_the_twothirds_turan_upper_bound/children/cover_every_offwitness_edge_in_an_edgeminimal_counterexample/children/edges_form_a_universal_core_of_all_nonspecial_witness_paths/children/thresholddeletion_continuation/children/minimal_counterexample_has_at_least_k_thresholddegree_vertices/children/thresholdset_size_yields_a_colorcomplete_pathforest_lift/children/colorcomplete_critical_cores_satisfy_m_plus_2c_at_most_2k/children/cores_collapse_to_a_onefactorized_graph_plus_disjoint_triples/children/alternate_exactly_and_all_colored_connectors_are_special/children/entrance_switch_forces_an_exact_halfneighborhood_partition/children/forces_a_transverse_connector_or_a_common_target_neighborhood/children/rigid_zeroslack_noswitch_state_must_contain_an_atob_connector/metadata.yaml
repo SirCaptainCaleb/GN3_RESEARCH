@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "9ecc612d10b8fdfa436fed15d025af82f27213f864a1c669d8fa882ad387036b"
+created_at: "2026-09-24T02:44:45.87342+00:00"
+id: "rigid_zeroslack_noswitch_state_must_contain_an_atob_connector"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000073"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a5b6038e-f7ea-451b-b60a-7abaa6c68dcd"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:49:15.657478+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "a5b6038e-f7ea-451b-b60a-7abaa6c68dcd"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:49:15.657478+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "forces_a_transverse_connector_or_a_common_target_neighborhood"
+position: 0
+research_interface:
+  consequence: "For odd k, simultaneous failure of the uncolored entrance switch cannot isolate the common terminal half. The perfect color matchings must contain a transverse connector from an A-triple to a B-triple."
+  consumer:
+    - "zero-slack all-special route"
+  given:
+    - "6894769a092f odd-k cut dichotomy"
+    - "fixed alternating witness"
+  next_need: "Use an A-B connector to rotate the Hamilton ordering of forest triples so that one of its endpoints becomes the penultimate-neighborhood bridge in 767380617163 or decf9b49b8d7. Since y,z are complete to every A-triple, only color/port compatibility remains."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Odd-k rigid zero-slack no-switch state must contain an A-to-B connector."
+statement_sha256: "09c44b12b2eca8d6f51c8236e75a0112815047dddbdcec5492a32cb30d3641fa"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Odd-k rigid zero-slack no-switch state must contain an A-to-B connector"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:32:08.047113+00:00"
+version: 7

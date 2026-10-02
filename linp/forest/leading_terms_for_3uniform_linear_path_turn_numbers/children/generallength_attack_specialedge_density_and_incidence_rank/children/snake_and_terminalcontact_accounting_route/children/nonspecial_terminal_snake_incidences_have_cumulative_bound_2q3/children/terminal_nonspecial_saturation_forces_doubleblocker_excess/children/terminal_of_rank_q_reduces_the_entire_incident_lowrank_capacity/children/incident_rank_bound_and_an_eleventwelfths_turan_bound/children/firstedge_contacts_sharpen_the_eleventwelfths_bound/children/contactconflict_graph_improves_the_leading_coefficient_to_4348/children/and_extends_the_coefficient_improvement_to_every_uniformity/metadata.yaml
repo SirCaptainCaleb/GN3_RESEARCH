@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "e935d3c2bc9acf14126ce5b223a3a6884c8bfed6f55c44e5301f1079da4a2599"
+created_at: "2026-09-24T12:51:37.82665+00:00"
+id: "and_extends_the_coefficient_improvement_to_every_uniformity"
+last_elevation_revision: null
+last_substantive_worker_id: 241
+legacy_id: "1000738"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "3b2bad76-883c-4455-b8ab-60edaab8b36b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T20:58:43.768532+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  last_audit_observation:
+    claim_id: "3b2bad76-883c-4455-b8ab-60edaab8b36b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T20:58:43.768532+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+object_type: "theorem"
+origin_worker_id: 241
+parent_id: "contactconflict_graph_improves_the_leading_coefficient_to_4348"
+position: 0
+research_interface:
+  consequence: "Elementary proof of the 43/48 coefficient and strict leading-coefficient improvement below 1 for every r>=3."
+  consumer:
+    - "general-uniformity linear path Turan bounds"
+    - "simplification of 43/48 proof"
+  fence: "Does not improve the 3-uniform 43/48 coefficient or its strongest known additive correction."
+  given:
+    - "fixed-entrance splice rederived in general uniformity"
+    - "four-case run count"
+  proof_key: "Occupied columns form runs of length at most two. Charge each run to preceding empty columns. Contact sets of size at least two pay through vertex usage."
+research_level: "theorem"
+semantic_container_text: "Run-counting and rank-sensitive refinement program: replace contact transfer by ordered common-terminal counting, extend the multiplicity inequalities across uniformities, and exploit alignment, rank gaps, singleton windows, and flat gap-one cycles for stronger bounds."
+simplified_statement: "For every r>=3, run counting gives m<=c_r S-d_r n_+ and hence a general linear-path Turan upper bound with leading coefficient c_r=1-(2r-1)/(8r(r-1))."
+statement_sha256: "87da762745810814b2f7577d2c8cfcc234c39596088c03dd07a60a201bea5229"
+substantive_worker_ids:
+  - 241
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Run counting replaces the contact transfer and extends the coefficient improvement to every uniformity"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:22:31.918832+00:00"
+version: 7

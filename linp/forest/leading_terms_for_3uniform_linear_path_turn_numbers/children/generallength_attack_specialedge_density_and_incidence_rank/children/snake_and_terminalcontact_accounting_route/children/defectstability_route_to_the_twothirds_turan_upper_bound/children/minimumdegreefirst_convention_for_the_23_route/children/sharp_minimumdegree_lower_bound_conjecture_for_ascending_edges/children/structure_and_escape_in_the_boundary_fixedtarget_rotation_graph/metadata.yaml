@@ -1,0 +1,72 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "3d2b6e4c780d6c2d21b9aac9143ff62ad8f269179f6de98101644cb67f9c05b3"
+created_at: "2026-09-23T02:50:41.151404+00:00"
+id: "structure_and_escape_in_the_boundary_fixedtarget_rotation_graph"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1000785"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e4b9bfaa-9eed-4d7e-bda1-9ab170aa07da"
+    detail: "Canonical inverses, degree at least two, the Johnson-triangle classification, localized square pivots, and the saturation-based outside exits all check against the explicit rotation formulas."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:49:03.755266+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "e4b9bfaa-9eed-4d7e-bda1-9ab170aa07da"
+    detail: "Canonical inverses, degree at least two, the Johnson-triangle classification, localized square pivots, and the saturation-based outside exits all check against the explicit rotation formulas."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:49:03.755266+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "singleblocker_rotation_has_a_canonical_inverse"
+    - "fixedtarget_rotation_graph_has_minimum_degree_at_least_two"
+    - "rotation_graph_are_confined_to_the_first_two_path_edges"
+    - "normal_form_for_triangles_in_the_fixedtarget_rotation_graph"
+    - "every_rotation_triangle_has_an_external_noninverse_exit"
+    - "rotation_square_has_a_pivot_in_the_first_two_path_edges"
+    - "rotation_square_is_supported_in_the_first_four_path_edges"
+    - "every_chordless_rotation_square_has_an_external_noninverse_exit"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "sharp_minimumdegree_lower_bound_conjecture_for_ascending_edges"
+position: 0
+research_interface:
+  consequence: "The fixed-target rotation graph has genuine branching; its triangle and chordless-square gadgets are bounded-depth far-end phenomena and cannot be closed recurrent components."
+  consumer:
+    - "quotiented rotation-state route"
+    - "boundary q=delta attack"
+    - "cube/square obstruction route"
+    - "flat-transfer recurrence"
+  given:
+    - "boundary fixed-target entrance paths"
+    - "endpoint-preserving single-blocker rotation formula"
+    - "minimum degree at least q"
+  next_need: "Suppress or quotient the local triangle/square gadgets and analyze the first remaining nonlocal cycle or block."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The boundary fixed-target rotation graph has minimum degree at least two; its triangles and chordless 4-cycles have rigid local normal forms and always admit an external noninverse exit."
+statement_sha256: "9ade4bfdd80ecef353d81ac7b4c3262932132b423d68d148a5500272f0e8e5a2"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Local structure and escape in the boundary fixed-target rotation graph"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 15

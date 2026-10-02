@@ -1,0 +1,62 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "66289b09998520946ad5b5a694d123b33dd5133e812701d68b65ce473d9026d3"
+created_at: "2026-10-01T06:20:03.667669+00:00"
+id: "endpoint_shell_forces_an_internal_threeleaf_transport_clique"
+last_elevation_revision: 10807
+last_substantive_worker_id: 952
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "endpoint_shell_forces_an_internal_threeleaf_transport_clique"
+  audit_packaging_issues:
+    -
+      note: "Terminology only: title/statement use shell shorthand. The standardization dictionary marks shell ambiguous and asks for the actual vertex-set family/configuration to be stated directly. Mathematics unaffected."
+      recorded_at: "2026-10-01T06:22:01.952557+00:00"
+      worker_id: 964
+  audit_request_reason: "Independent check of the locally minimal endpoint-shell saturation and its m=7 internal three-leaf transport amplification; verify the pairwise-repartition potential decreases and the four-of-six/fivebadextensioncore composition."
+  audit_request_recorded_at: "2026-10-01T06:20:17.057231+00:00"
+  audit_resolution:
+    claim_id: 988
+    detail: "Independent reconstruction: when m=7, R is a Hamiltonian five-set and a_locally_minimal_fourside_saturates_its_twoendpoint_sixshell makes all four extensions R∪{x} non-Hamiltonian. fivebadextensioncore01 therefore gives a common four-core D=R-{r} Hamiltonian with at least ceil(12/5)=3 labels. Each D∪{x} is a proper Hamiltonian five-set with non-Hamiltonian path-cover-two complement, and every label pair satisfies the hypotheses of yield_a_hamiltonian_sixset_or_fourgooddeletion_transport, yielding the stated pairwise six-set transport packages. Packaging terminology issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T06:22:14.942862+00:00"
+    worker_id: 964
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 988
+    detail: "Independent reconstruction: when m=7, R is a Hamiltonian five-set and a_locally_minimal_fourside_saturates_its_twoendpoint_sixshell makes all four extensions R∪{x} non-Hamiltonian. fivebadextensioncore01 therefore gives a common four-core D=R-{r} Hamiltonian with at least ceil(12/5)=3 labels. Each D∪{x} is a proper Hamiltonian five-set with non-Hamiltonian path-cover-two complement, and every label pair satisfies the hypotheses of yield_a_hamiltonian_sixset_or_fourgooddeletion_transport, yielding the stated pairwise six-set transport packages. Packaging terminology issue recorded separately."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T06:22:14.942862+00:00"
+    worker_id: 964
+object_type: "research"
+origin_worker_id: 952
+parent_id: "a_locally_minimal_fourside_saturates_its_twoendpoint_sixshell"
+position: 2
+research_interface:
+  consumer: "fixed-endpoint matching escape at the first long-path order; bounded transport closure"
+  given: "the saturated endpoint shell with a seven-vertex long path"
+  produces: "a positioned common-four-core star with at least three X-label leaves and a yield_a_hamiltonian_sixset_or_fourgooddeletion_transport transport package on every leaf pair"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For a locally minimal 4|7 state, four bad interior extensions force a common interior four-core with at least three Hamiltonian leaves and pairwise six-set transport."
+statement_sha256: "5ff7dbfb9b4495995e340a890ca98fcc8a380b6f2d08e5380c405eb85ae871a5"
+substantive_worker_ids:
+  - 952
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At path order seven the saturated endpoint shell forces an internal three-leaf transport clique"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T06:22:14.942862+00:00"
+version: 9

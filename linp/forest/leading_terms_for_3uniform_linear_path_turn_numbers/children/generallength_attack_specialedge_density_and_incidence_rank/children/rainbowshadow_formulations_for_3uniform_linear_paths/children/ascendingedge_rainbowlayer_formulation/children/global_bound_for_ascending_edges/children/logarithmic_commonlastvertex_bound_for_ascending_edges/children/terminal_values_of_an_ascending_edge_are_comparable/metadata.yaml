@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "e3530e5fb412f834fa339a338afd0ffc81f9fbce403fbfa7069697cdb6f9410a"
+created_at: "2026-09-21T22:31:05.933521+00:00"
+id: "terminal_values_of_an_ascending_edge_are_comparable"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: "1000380"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "4343863a-6c3d-435e-8d8b-924a253ed469"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T07:59:30.793442+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_audit_observation:
+    claim_id: "4343863a-6c3d-435e-8d8b-924a253ed469"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T07:59:30.793442+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+object_type: "lemma"
+origin_worker_id: 205
+parent_id: "logarithmic_commonlastvertex_bound_for_ascending_edges"
+position: 12
+research_interface:
+  consequence: "an ascending terminal pair always joins vertices whose endpoint potentials differ by less than a factor two"
+  consumer:
+    - "global ascending-edge structure"
+    - "dyadic decomposition of the ascending terminal graph"
+    - "four-edge spacing route"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Terminal φ-values of an ascending edge are comparable."
+statement_sha256: "0bf0cad8a8e8d04fd5278cca8da72ee16fa67cb5ee9b08fc2bcb6df541d19349"
+substantive_worker_ids:
+  - 205
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal φ-values of an ascending edge are comparable"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 7

@@ -1,0 +1,46 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "3fe1a839d9cf21dbef6288a97cc3898497df29a0a9a55cbb5b496fbfff0b7554"
+created_at: "2026-09-30T02:52:59.255418+00:00"
+id: "amortized_distinctdeletion_rotation_closure"
+last_elevation_revision: null
+last_substantive_worker_id: 228
+legacy_id: "1000712"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+object_type: "conjecture"
+origin_worker_id: 228
+parent_id: "pscale_rotationclosure_via_deletable_blocker_endpoints"
+position: 0
+research_interface:
+  consumer:
+    - "48d3451e7530 p-scale rotation-closure via deletable blocker endpoints"
+    - "99239ac0fa0b rotation-expansion route"
+    - "general leading-coefficient improvement"
+  falsification: "Exhibit arbitrarily large states with d(v)>=p+t and only o(t) reachable terminal pairs while every rotation sequence can omit only o(t) distinct original private vertices before forced restoration."
+  given:
+    - "a51a7f9cff95 two-contact rotation"
+    - "d71d4dd81a24 high terminal degree forces singleton expansion"
+    - "48d3451e7530 p-scale rotation-closure conjecture"
+  next_need: "Prove a monotone or amortized rotation sequence lemma giving Omega(t) distinct omitted original private vertices, or derive an alternative Pósa boundary inequality directly from t=d(v)-p."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Conjecturally, terminal degree p+t forces either Ω(t) reachable terminal pairs or a rotation sequence omitting Ω(t) distinct original private path vertices."
+statement_sha256: "19471b21ad2dfd0c211be80eec6767002e45965e0a1f5d22d3e8e5ea622c83c3"
+substantive_worker_ids:
+  - 228
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Amortized distinct-deletion rotation closure"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 5

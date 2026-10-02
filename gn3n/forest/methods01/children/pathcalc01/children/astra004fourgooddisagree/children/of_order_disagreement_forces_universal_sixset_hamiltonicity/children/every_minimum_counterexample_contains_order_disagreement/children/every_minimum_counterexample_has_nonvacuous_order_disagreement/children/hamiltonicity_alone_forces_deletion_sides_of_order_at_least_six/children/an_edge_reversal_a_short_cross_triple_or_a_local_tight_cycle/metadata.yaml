@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "3d68f390cac25fd01fe50c54b78b5a8c25e18d9b08b0556f70a172860847f8e7"
+created_at: "2026-09-28T17:42:46.667673+00:00"
+id: "an_edge_reversal_a_short_cross_triple_or_a_local_tight_cycle"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 226
+    detail: "Selected an R-to-L adjacent-window transition so the common-support restrictions are respectively a suffix and a prefix of the inserted six-paths; this validates the application of 0d2a8a61c45a. Also normalized deletion-cover and statement wording."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:42:46.00824+00:00"
+    worker_id: 703
+  audit_resolution_before_repair: null
+  last_audit_observation:
+    claim_id: 226
+    detail: "Selected an R-to-L adjacent-window transition so the common-support restrictions are respectively a suffix and a prefix of the inserted six-paths; this validates the application of 0d2a8a61c45a. Also normalized deletion-cover and statement wording."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T19:42:46.00824+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Language-precision repair only: replace frame-style concluding prose by a direct mathematical restatement."
+    recorded_at: "2026-09-28T19:40:27.35957+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  repair_attempt_count: 1
+  repair_reason: "Substantive gap remains in the opposite-side adjacent-window branch: restricting an inserted six-path to the common five-vertex support can delete an internal vertex at extreme insertion positions, so the restricted displayed order is not automatically tight. The application of 0d2a8a61c45a needs an additional argument/case split. The statement/body also use prohibited 'exact' as a cover modifier."
+  repair_requested_at: "2026-09-28T18:55:52.774147+00:00"
+object_type: "research"
+origin_worker_id: 659
+parent_id: "hamiltonicity_alone_forces_deletion_sides_of_order_at_least_six"
+position: 0
+research_interface:
+  consumer: "endpoint transport / defect compression; canonical defect-span-three ordering"
+  given: "every six-set is Hamiltonian and H-x=P|Q is a deletion cover"
+  need: "consume the short cross triples and local tight cycles in the displayed ordering; an edge-reversing tight triple is already the desired local transport input"
+  produces: "on either displayed component: an edge-reversing tight triple, a tight triple (p_j,x,p_k) with 1<=k-j<=3, or a tight cycle on x and at most five consecutive displayed vertices"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Universal six-set Hamiltonicity forces an edge reversal, a short cross triple, or a local tight cycle."
+statement_sha256: "bd14a6384e76f6de09ee40bb90c283e26a639d3b8ba0c987d41bb7e3558fde1d"
+substantive_worker_ids:
+  - 659
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Universal six-set Hamiltonicity forces an edge reversal, a short cross triple, or a local tight cycle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T01:58:04.205662+00:00"
+version: 12

@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "6965e0864f6c69202d44ab49974c2545227f2632cfce9208ac6cbf2fb5b77f06"
+created_at: "2026-09-27T13:43:26.448084+00:00"
+id: "008_is_exactly_a_nonnegative_complementarypair_determinant"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 263
+    detail: "Expansion of the correlation inequality gives exactly N11*N00>=N10*N01; even-order complementation gives N10=N01 and the stated positivity consequences."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  coverage: "first serious attack on previously untouched Astra 008"
+  last_audit_observation:
+    claim_id: 263
+    detail: "Expansion of the correlation inequality gives exactly N11*N00>=N10*N01; even-order complementation gives N10=N01 and the stated positivity consequences."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  small_order_free: true
+object_type: "research"
+origin_worker_id: 614
+parent_id: "astraidea008"
+position: 0
+research_interface:
+  consumer: "Astra 008; Astra 002 balanced two-cover route"
+  given: "the complementary-support probability formulation of Astra 008"
+  need: "find a structural injection proving the determinant inequality, or produce a symbolic mechanism making the determinant negative"
+  produces: "an exact count/determinant criterion and a strong even-order diagnostic"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Astra 008 is exactly a nonnegative complementary-pair determinant"
+statement_sha256: "56d49dd8f7bc2247823e28dcedcb65e67c9509894eb6d1ce07a5d9dd1b6ac44f"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Astra 008 is exactly a nonnegative complementary-pair determinant"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T17:49:23.487298+00:00"
+version: 5

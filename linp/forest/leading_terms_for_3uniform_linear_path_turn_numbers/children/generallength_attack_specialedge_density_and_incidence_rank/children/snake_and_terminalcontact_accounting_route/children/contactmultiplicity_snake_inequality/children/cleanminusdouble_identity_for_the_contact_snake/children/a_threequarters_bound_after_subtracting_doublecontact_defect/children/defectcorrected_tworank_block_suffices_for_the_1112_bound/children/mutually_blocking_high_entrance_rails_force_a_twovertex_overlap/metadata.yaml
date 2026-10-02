@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "77a928641e353a681a415972d93ed91e4f7087b1ffb449f39ae939fecd00d752"
+created_at: "2026-09-24T05:38:26.223227+00:00"
+id: "mutually_blocking_high_entrance_rails_force_a_twovertex_overlap"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000779"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "9e9fc3a1-8ef4-4def-8ab0-ab59c793b98e"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:15:15.873013+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "9e9fc3a1-8ef4-4def-8ab0-ab59c793b98e"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:15:15.873013+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "pure-high four-rail overlap"
+  uses:
+    - "terminal_adjacency_forces_rank_rise_or_a_blocker"
+    - "of_two_equalpotential_entrance_rails_is_an_aligned_joint"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "defectcorrected_tworank_block_suffices_for_the_1112_bound"
+position: 0
+research_interface:
+  consequence: "Four mutually blocking q-edge source rails cannot form a simple one-intersection braid. Some pair has a genuine two-vertex overlap, without needing any lower-rank edge as a pigeonhole gate."
+  consumer:
+    - "pure (q+1)^4 odd-central residue"
+    - "Astra clean-source 11/12 route"
+  given:
+    - "four equal-rank ascending nonspecial edges through one common terminal"
+    - "canonical source-clean entrance rails"
+  next_need: "Exploit the two-rail theta together with terminal-single placement on P_v. Choose consecutive common vertices on one rail; if segment order agrees, splice unequal segments to exceed endpoint potential q, while reversed order gives a linear cycle. Use the four high-edge labels to rule out the exact coincident-segment residue."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Four mutually blocking high entrance rails force a two-vertex overlap."
+statement_sha256: "f75cee52241fb435348655655956af7fe6208bd559f98294695b56c8c995a6d4"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four mutually blocking high entrance rails force a two-vertex overlap"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

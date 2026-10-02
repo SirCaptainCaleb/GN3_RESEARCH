@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 60
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1f610b76480248205967ff03d3f49eac283460d7e0fadba727e695a4522fa6a4"
+created_at: "2026-09-23T19:54:03.656817+00:00"
+id: "to_a_doubleblocked_fork_or_a_fouredge_charged_configuration"
+last_elevation_revision: null
+last_substantive_worker_id: 183
+legacy_id: "1000923"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 183
+parent_id: "component_forces_two_incident_minimumrank_bicircular_chords"
+position: 0
+research_interface:
+  consequence: "A density counterexample has only two local forms at a shared terminal: one basis edge simultaneously blocked by two excluded chords, or four charged ascending edges with two paired low-to-high rank inequalities."
+  consumer:
+    - "mad(T_=)<=3"
+    - "charged four-edge spacing"
+    - "potential-oriented local bound"
+  given:
+    - "dense equal-potential bicircular-chord reduction"
+    - "terminal adjacency blocker lemma"
+  next_need: "Eliminate the double-blocked fork by a two-blocker splice, or exploit the paired rank inequalities in the four-edge branch using charged spacing/reciprocal tails."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Dense equal-potential obstruction reduces to a double-blocked fork or a four-edge charged configuration."
+statement_sha256: "154da9fe6c856007ce9285b0cadabd90714f2a1949acd0505bd7d9c72b95dc47"
+substantive_worker_ids:
+  - 183
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Dense equal-potential obstruction reduces to a double-blocked fork or a four-edge charged configuration"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

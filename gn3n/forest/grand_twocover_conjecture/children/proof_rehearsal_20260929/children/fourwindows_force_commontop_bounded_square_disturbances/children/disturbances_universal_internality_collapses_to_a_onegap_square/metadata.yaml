@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "4da50cb6671e594a5e2483db90e2e62cfbbc553093c52988db8e9ea36d2fe23a"
+created_at: "2026-10-01T06:11:58.732483+00:00"
+id: "disturbances_universal_internality_collapses_to_a_onegap_square"
+last_elevation_revision: 10938
+last_substantive_worker_id: 952
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 952
+parent_id: "fourwindows_force_commontop_bounded_square_disturbances"
+position: 6
+research_interface:
+  consumer: "finite obstruction closure and the one-gap attachment classification"
+  given: "the universal-internal branch of fourwindows_force_commontop_bounded_square_disturbances with the other four disturbance types excluded"
+  implication: "all longer intervening segments are already consumed by one of the standard bounded-square disturbances"
+  produces: "the exact one-gap square residue"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The complete negative-space residue of the universal-internal bounded-square menu is exact one-gap separation: if the other four disturbances are absent, the square endpoints have exactly one displayed vertex between them."
+statement_sha256: "77910f3f86d48ad435fc34c6b114f95e5f82cdc0f128d38f270bf181a621318b"
+substantive_worker_ids:
+  - 952
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Absent the other bounded-square disturbances, universal internality collapses to a one-gap square"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T17:37:05.128306+00:00"
+version: 4

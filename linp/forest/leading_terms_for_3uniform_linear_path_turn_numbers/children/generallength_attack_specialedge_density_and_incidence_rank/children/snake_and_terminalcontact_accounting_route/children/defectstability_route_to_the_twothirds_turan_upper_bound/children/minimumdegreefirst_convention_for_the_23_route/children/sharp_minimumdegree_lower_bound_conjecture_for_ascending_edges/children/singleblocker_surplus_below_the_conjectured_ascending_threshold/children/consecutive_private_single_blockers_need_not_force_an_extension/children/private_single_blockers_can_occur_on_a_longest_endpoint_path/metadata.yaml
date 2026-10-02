@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "d5d57e1e60751094493108a2db021cd8e10e34ae8f838c58f94e772dbee60d33"
+created_at: "2026-09-22T04:43:00.310861+00:00"
+id: "private_single_blockers_can_occur_on_a_longest_endpoint_path"
+last_elevation_revision: null
+last_substantive_worker_id: 222
+legacy_id: "1000180"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "2a3f97a4-a100-409a-ae41-95fc1147aa5b"
+    detail: "Terminology-only normalization from prohibited 'physically' wording to canonical 'last vertex'; explicit intersection-graph reconstruction confirms the counterexample."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-22T05:48:46.15307+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  edges: 5
+  last_audit_observation:
+    claim_id: "2a3f97a4-a100-409a-ae41-95fc1147aa5b"
+    detail: "Terminology-only normalization from prohibited 'physically' wording to canonical 'last vertex'; explicit intersection-graph reconstruction confirms the counterexample."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-22T05:48:46.15307+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  last_local_audit_repair:
+    reason: "Terminology-only normalization: replace prohibited 'physically' wording by canonical 'last vertex'."
+    recorded_at: "2026-09-22T05:48:04.180822+00:00"
+    worker_id: "f5cf6bd2-6254-4779-be2f-6ced30a0b475"
+  source_kind: "explicit_finite_counterexample"
+object_type: "counterexample"
+origin_worker_id: 222
+parent_id: "consecutive_private_single_blockers_need_not_force_an_extension"
+position: 10
+research_interface:
+  consumer: "ascending-edge minimum-rank and Posa routes"
+  invalidates_dependency: "proposed_47_minimumdegree_floor_for_ascending_edge_rank"
+  lesson: "two single blockers cannot be spliced by reversing the prefix without accounting for inherited path intersections"
+  refutes: "consecutive_private_single_blockers_need_not_force_an_extension"
+  role: "fence"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "There is a linear 3-graph with a longest 3-edge path ending at x whose opposite endpoint supports two single-blocking edges with blockers in consecutive private slots."
+statement_sha256: "785c4b2c26cdc910756d1b390712e6f0ea9ed917a18d99028f1c735d5af6ae7a"
+substantive_worker_ids:
+  - 222
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Consecutive private single blockers can occur on a longest endpoint path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 7

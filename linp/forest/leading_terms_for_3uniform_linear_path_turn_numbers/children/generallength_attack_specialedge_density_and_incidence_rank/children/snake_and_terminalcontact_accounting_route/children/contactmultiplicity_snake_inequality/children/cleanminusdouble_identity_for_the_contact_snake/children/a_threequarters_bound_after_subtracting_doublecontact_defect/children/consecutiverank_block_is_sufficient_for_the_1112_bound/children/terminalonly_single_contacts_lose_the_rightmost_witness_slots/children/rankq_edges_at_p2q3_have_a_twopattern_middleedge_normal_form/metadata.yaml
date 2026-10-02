@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1a756d356c5a19bef849fca8380289301c9295efc5470d8150d94b5b51913e5d"
+created_at: "2026-09-24T05:28:48.718787+00:00"
+id: "rankq_edges_at_p2q3_have_a_twopattern_middleedge_normal_form"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000244"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "abc22e41-88de-4258-9e11-581a6ae735e2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:57:46.576193+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "abc22e41-88de-4258-9e11-581a6ae735e2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:57:46.576193+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "terminalonly_single_contacts_lose_the_rightmost_witness_slots"
+position: 0
+research_interface:
+  consequence: "Saturation of the odd-central rank-q capacity has only two middle-edge witness patterns. Both contain the private middle entrance B of potential q-1; the forbidden A,C pattern is killed by the mixed clean-joint hole rule."
+  consumer:
+    - "p=2q-3 corrected rank-pair block"
+    - "Astra odd-boundary rank count"
+  given:
+    - "a01ddfa76dc8 U-window"
+    - "eac2e3da3eea clean joint hole"
+  next_need: "Analyze the second low edge. In {A,B}, if A is an entrance then endpoint-chord lemma a570c0ad0001 raises C; if A is terminal-only its absent entrance gives a reciprocal high-potential terminal state. In {B,C}, both B,C are low-potential entrances and should strongly constrain high rank-(q+1) single contacts."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two non-double rank-q edges at p=2q-3 have a two-pattern middle-edge normal form."
+statement_sha256: "548d2b596153cf8a577ac37a442efeefaa8c878ed175294e2912a63d6bb7d596"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two non-double rank-q edges at p=2q-3 have a two-pattern middle-edge normal form"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:27:12.932654+00:00"
+version: 6

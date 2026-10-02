@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2dcf6ef3c992ff7f72eaa1450a4e1bdf1024b756382af5837fb55e8119852850"
+created_at: "2026-09-27T21:15:53.650826+00:00"
+id: "order_defect_survives_all_but_at_most_two_further_deletions"
+last_elevation_revision: 0
+last_substantive_worker_id: 678
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 451
+    detail: "Pair-state reconstruction immediately bounds deletions that can erase a genuine order defect by two; inference is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+  last_audit_observation:
+    claim_id: 451
+    detail: "Pair-state reconstruction immediately bounds deletions that can erase a genuine order defect by two; inference is correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:52:31.232696+00:00"
+    worker_id: 694
+object_type: "research"
+origin_worker_id: 678
+parent_id: "swapcycleorderdefect01"
+position: 2
+research_interface:
+  given: "a support-compatible, order-incompatible pair of deletion covers, such as one forced by a singleton-swap cycle"
+  need: "combine many robust order defects with interval/order-transport structure to force a common disagreement pattern"
+  produces: "robustness of the order defect under all but at most two further deletions"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A deletion-cover order defect survives all but at most two further deletions"
+statement_sha256: "c0c20ea12df38f29afc37883502ac66de2b4784df8a25c2fbc46bd21aea1f212"
+substantive_worker_ids:
+  - 678
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A deletion-cover order defect survives all but at most two further deletions"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:52:31.232696+00:00"
+version: 7

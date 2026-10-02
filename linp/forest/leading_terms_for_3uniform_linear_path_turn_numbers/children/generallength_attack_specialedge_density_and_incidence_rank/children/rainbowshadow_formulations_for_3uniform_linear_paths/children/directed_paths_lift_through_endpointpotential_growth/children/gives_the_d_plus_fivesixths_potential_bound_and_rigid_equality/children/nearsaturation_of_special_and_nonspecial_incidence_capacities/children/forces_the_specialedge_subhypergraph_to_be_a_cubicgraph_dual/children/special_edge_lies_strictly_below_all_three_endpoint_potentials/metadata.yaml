@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c236a170e67f346d1e4453bc4a9d1c3d74b4ca5327aeb10bedcbc215cbebd1a9"
+created_at: "2026-09-24T03:05:02.601198+00:00"
+id: "special_edge_lies_strictly_below_all_three_endpoint_potentials"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000328"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "5ae8e502-9633-4e86-848c-b8764536ce7f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:20.388345+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "5ae8e502-9633-4e86-848c-b8764536ce7f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:20.388345+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "forces_the_specialedge_subhypergraph_to_be_a_cubicgraph_dual"
+position: 0
+research_interface:
+  consequence: "At the rigid minimum-potential equality point, special edges are strictly submerged: every endpoint has potential at least one larger than the special edge rank. Maximum endpoint paths always finish with nonspecial edges."
+  consumer:
+    - "equality-layer classification"
+    - "special-edge cubic skeleton"
+    - "potential filtration"
+  given:
+    - "148ebd1d1809 local saturation"
+    - "0e550ff0eadd witness injection"
+  next_need: "Combine the cubic special skeleton with strict submergence. Along an adjacency of two special edges their common vertex has potential above both edge ranks. Seek a potential orientation/weight on the cubic graph; cycles may force rank descent impossible around a loop unless adjacent special ranks are equal, while equal-rank cycles may yield long alternative-entrance paths."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "In minimum-potential equality, every special edge lies strictly below all three endpoint potentials."
+statement_sha256: "3e8260751134a06ce186772db1d6333422fd7663588fd8f5ddf3ecbdef3b29ce"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "In minimum-potential equality, every special edge lies strictly below all three endpoint potentials"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

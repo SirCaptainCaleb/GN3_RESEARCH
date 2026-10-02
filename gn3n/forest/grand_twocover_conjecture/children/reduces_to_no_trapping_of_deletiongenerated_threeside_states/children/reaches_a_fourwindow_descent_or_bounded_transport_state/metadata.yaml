@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "c5d06daab056f6e4bc9e87336644b9fa1c7a5618d162365fac6d41a21d2a16f4"
+created_at: "2026-09-29T18:32:52.239365+00:00"
+id: "reaches_a_fourwindow_descent_or_bounded_transport_state"
+last_elevation_revision: 8826
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 637
+parent_id: "reduces_to_no_trapping_of_deletiongenerated_threeside_states"
+position: 1
+research_interface:
+  consumer: "grand-theorem no-trapping closure; deletion-state dynamics"
+  given: "any deletion two-cover in a minimum counterexample"
+  need: "consume the bounded transport package or exclude repeated reachable four-window trapping"
+  produces: "in the same repartition component: order at most fourteen, a strict four-window descent, or bounded pc2 transport"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every deletion singleton component reaches a four-window descent or bounded transport state"
+statement_sha256: "95e5691d9f7c5e56f8a00172e569144ce906a8a7388798fa57c55868ddc3f02e"
+substantive_worker_ids:
+  - 637
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Every deletion singleton component reaches a four-window descent or bounded transport state"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:36:46.25886+00:00"
+version: 6

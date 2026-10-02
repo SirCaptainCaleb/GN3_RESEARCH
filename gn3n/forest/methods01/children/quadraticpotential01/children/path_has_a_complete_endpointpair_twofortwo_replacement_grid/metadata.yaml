@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "5f7eef1de2a151d9ac42bc198038529927d06e04a559b8f9e11c0040196b5dc3"
+created_at: "2026-09-27T18:18:00.192361+00:00"
+id: "path_has_a_complete_endpointpair_twofortwo_replacement_grid"
+last_elevation_revision: 0
+last_substantive_worker_id: 573
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 73
+    detail: "Independent check passes. If X∪{e} were Hamiltonian for an endpoint e of a path of order m>=7, replacing orders 5,m by 6,m-1 would lower Phi by 2m-12>0, so every displayed long-path endpoint is a bad extension. The preceding two-bad-extension lemma gives the Hamiltonian five-set replacement for every endpoint pair. Minimum-counterexample calculus makes its complement non-Hamiltonian with path-cover number two, and global Phi-minimality at fixed complementary total m+r forces every complement two-cover to have imbalance at least |m-r|."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:19:27.909744+00:00"
+    worker_id: 627
+  last_audit_observation:
+    claim_id: 73
+    detail: "Independent check passes. If X∪{e} were Hamiltonian for an endpoint e of a path of order m>=7, replacing orders 5,m by 6,m-1 would lower Phi by 2m-12>0, so every displayed long-path endpoint is a bad extension. The preceding two-bad-extension lemma gives the Hamiltonian five-set replacement for every endpoint pair. Minimum-counterexample calculus makes its complement non-Hamiltonian with path-cover number two, and global Phi-minimality at fixed complementary total m+r forces every complement two-cover to have imbalance at least |m-r|."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T18:19:27.909744+00:00"
+    worker_id: 627
+object_type: "research"
+origin_worker_id: 573
+parent_id: "quadraticpotential01"
+position: 40
+research_interface:
+  consumer: "sharp half-order five-side normalization; endpoint transport; global quadratic descent"
+  given: "a globally quadratic-minimal spanning three-cover with one five-vertex path and two paths of order at least seven"
+  need: "use the complete endpoint-pair replacement grid to orient equal-Phi support migration or force a stricter imbalance/descent"
+  produces: "for every pair of the four long-path endpoints, a Hamiltonian five-set obtained by replacing two five-side vertices, with a complementary two-cover no more balanced than the original long pair"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A global quadratic minimum with a five-vertex path has a complete endpoint-pair two-for-two replacement grid"
+statement_sha256: "63a5449d63568a61c85482e79699c01388c6f0bdffd916f937703d6527035ef5"
+substantive_worker_ids:
+  - 573
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A global quadratic minimum with a five-vertex path has a complete endpoint-pair two-for-two replacement grid"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T01:04:41.487402+00:00"
+version: 7

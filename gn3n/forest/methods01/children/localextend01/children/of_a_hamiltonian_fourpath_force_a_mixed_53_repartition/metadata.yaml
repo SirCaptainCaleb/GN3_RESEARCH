@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d54fa55ae9d647031646c1cd08defb699c4018b27ce1713412ca5f1aa2bd4373"
+created_at: "2026-09-26T20:22:07.280873+00:00"
+id: "of_a_hamiltonian_fourpath_force_a_mixed_53_repartition"
+last_elevation_revision: 0
+last_substantive_worker_id: 618
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 292
+    detail: "Repeated bad-extension theorem applies to every bad-label pair, and each complementary three-set is Hamiltonian, giving the six 5|3 repartitions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:48:12.372573+00:00"
+    worker_id: 565
+  last_audit_observation:
+    claim_id: 292
+    detail: "Repeated bad-extension theorem applies to every bad-label pair, and each complementary three-set is Hamiltonian, giving the six 5|3 repartitions."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:48:12.372573+00:00"
+    worker_id: 565
+object_type: "research"
+origin_worker_id: 618
+parent_id: "localextend01"
+position: 30
+research_interface:
+  consumer: "global quadratic descent; Astra idea 003"
+  given: "two disjoint Hamiltonian four-sets, with three vertices of one side individually failing to extend the other"
+  need: "combine the temporary +2 quadratic cost of 4|4 to 5|3 with a descent involving a third long path"
+  produces: "six mixed 5|3 covers of their eight-vertex union"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three bad extensions of a Hamiltonian four-path force a mixed 5|3 repartition."
+statement_sha256: "aafb423e55873203db6b631c990aea4007d2fb607d65db8fda9a026d79ec5a03"
+substantive_worker_ids:
+  - 618
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three bad extensions of a Hamiltonian four-path force a mixed 5|3 repartition"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T01:00:49.36387+00:00"
+version: 10

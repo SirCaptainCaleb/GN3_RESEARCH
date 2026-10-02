@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 60
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2be04b6bdadf525c47c315515a05a9c113c29279096e7d4b914756f0e001ed08"
+created_at: "2026-09-22T04:39:08.557955+00:00"
+id: "2020_minimum_degree_and_long_linear_paths_in_general_3graphs"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000165"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  arxiv: "1903.04162"
+  audit_resolution:
+    claim_id: "27e8b6f5-5826-40bb-b847-dee45cb40f7b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:47:39.56098+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  doi: "10.1016/j.disc.2020.111949"
+  last_audit_observation:
+    claim_id: "27e8b6f5-5826-40bb-b847-dee45cb40f7b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:47:39.56098+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  source_kind: "external_literature"
+object_type: "literature"
+origin_worker_id: 262
+parent_id: "literature_state_for_linear_hypergraph_paths"
+position: 40
+research_interface:
+  consumer: "minimum-degree-first route"
+  limitation: "general-3-graph thresholds scale as k n and are not directly useful for linear 3-graphs"
+  role: "minimum-degree path literature and endpoint-neighborhood methodology"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Ma–Hou–Gao (2020): minimum degree and long linear paths in general 3-graphs."
+statement_sha256: "5d8bdd30f68c33595093c868c912fe15c57815a3f23cb271cfa55d0c06de632d"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ma–Hou–Gao (2020): minimum degree and long linear paths in general 3-graphs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "e0b912de3d17f2f90ab9614c6219afa2093914eaf86e6df1a7ec18162a4e4d38"
+created_at: "2026-09-29T05:12:03.319206+00:00"
+id: "fourbridges_force_a_dense_mixed_threelabel_pathcovertwo_shell"
+last_elevation_revision: 7998
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 433
+    detail: "Independent reconstruction verifies the extension count. For each two-set in one Hamiltonian four-set, the certified two-plus-four lemma supplies at least two Hamiltonian complementary five-sets, so their complements are path-cover-two; the symmetric statement and the 12-incidence pigeonhole conclusions follow exactly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:30:16.874504+00:00"
+    worker_id: 664
+  last_audit_observation:
+    claim_id: 433
+    detail: "Independent reconstruction verifies the extension count. For each two-set in one Hamiltonian four-set, the certified two-plus-four lemma supplies at least two Hamiltonian complementary five-sets, so their complements are path-cover-two; the symmetric statement and the 12-incidence pigeonhole conclusions follow exactly."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:30:16.874504+00:00"
+    worker_id: 664
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-29T15:08:56.258571+00:00"
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T12:29:46.669798+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 586
+parent_id: "a_central_fivepath_an_outer_fivepath_or_two_opposite_fourpaths"
+position: 1
+research_interface:
+  consumer: "deletion-cover compatibility; common-residue shell synchronization; endpoint-transport / defect-compression"
+  given: "the synchronized disjoint opposite-four-bridge branch of a deletion state"
+  need: "use the degree-at-least-three mixed extension star to synchronize chosen two-covers or force a support switch/defect compression"
+  produces: "a common residue with at least 24 mixed three-label pc2 extensions, including a fixed label supporting at least three pair extensions on the opposite four-set"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Opposite four-bridges force a dense mixed three-label path-cover-two shell"
+statement_sha256: "4ed64e54c7559ae295de4c141832acc7c9c1f8c2c40e11737c063782b5821a7f"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Opposite four-bridges force a dense mixed three-label path-cover-two shell"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T15:08:56.258571+00:00"
+version: 7

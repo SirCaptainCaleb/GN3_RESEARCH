@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "69f6d7c37f8a7e91e42783b53045d8e5f966dbf3c01a1ce056465441a501ab04"
+created_at: "2026-09-27T01:50:16.844427+00:00"
+id: "compatneighborhood02"
+last_elevation_revision: 0
+last_substantive_worker_id: 648
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 348
+    detail: "For each neighbor a of d, its degree inside G[N(d)] equals the common-neighbor count of edge da and is at most two by compatedgecodeg02. Thus the neighborhood has maximum degree two and at most k edges, giving the stated incompatible-pair count; the adjacent-slot refinement is immediate."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:28:40.49125+00:00"
+    worker_id: 578
+  last_audit_observation:
+    claim_id: 348
+    detail: "For each neighbor a of d, its degree inside G[N(d)] equals the common-neighbor count of edge da and is at most two by compatedgecodeg02. Thus the neighborhood has maximum degree two and at most k edges, giving the stated incompatible-pair count; the adjacent-slot refinement is immediate."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:28:40.49125+00:00"
+    worker_id: 578
+object_type: "research"
+origin_worker_id: 648
+parent_id: "deletioncover_incompatibility_forcing"
+position: 0
+research_interface:
+  consumer: "deletion-cover incompatibility forcing; endpoint-transport / defect compression"
+  given: "the certified compatibility-edge codegree bound"
+  need: "combine the quadratic incompatibility among one compatibility neighborhood with support/order disagreement localization"
+  produces: "every compatibility neighborhood is a disjoint union of paths and cycles, hence k compatible partners generate at least binom(k,2)-k incompatible pairs among themselves"
+research_level: "lemma"
+semantic_container_text: "Local geometry of compatibility neighborhoods: each neighborhood is a path/cycle system in which incompatible pairs localize at the anchor, high degree forces synchronized incompatibility bursts, and separated neighbors create long intervals of order reversal."
+simplified_statement: "Compatibility neighborhoods are unions of paths and cycles"
+statement_sha256: "fba3367c42f1a3f9f2c0dc1bbbc03703fd1da850bda29aed6af3c4c057a5b50d"
+substantive_worker_ids:
+  - 648
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Compatibility neighborhoods are unions of paths and cycles"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:38.352961+00:00"
+version: 7

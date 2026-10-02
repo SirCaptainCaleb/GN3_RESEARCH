@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "04252efcbabcb259ba3fa130683d03e57f4963be5485173815d4cffc074adf65"
+created_at: "2026-09-28T02:03:44.988846+00:00"
+id: "quadratic_minima_have_no_structureless_neutraltransfer_residue"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Dictionary packaging: the durable statement uses ambiguous 'kernel' and several shorthand 'crossing' phrases. Replace the kernel phrase by the explicit cyclic non-Hamiltonian four-vertex configuration and name the precise crossing relation where retained."
+      recorded_at: "2026-10-01T00:04:20.475051+00:00"
+      worker_id: 737
+  audit_resolution:
+    claim_id: 155
+    detail: "Independent reconstruction: terminalfrontier_recomp01 already converts every size gap >=2 and all-equal terminal state into a listed canonical closure input, leaving only nonuniform adjacent-gap profiles. These are exactly {r+1,r+1,r} and {r+1,r,r}. The unique-small case is consumed by unique_small_transport_recomp02 into order disagreement, crossing multiplicity, inherited-core separation, or leave-and-return. The unique-large case is consumed by 939a6dc97467 into the same menu or a bounded reverse cross triple. Hence no neutral endpoint-transfer residue remains structureless. The conclusion is valid conditional on the currently pending recomposition audit of unique_small_transport_recomp02; dependency propagation should therefore hold this consumer until that premise is certified."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:05:35.45336+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 155
+    detail: "Independent reconstruction: terminalfrontier_recomp01 already converts every size gap >=2 and all-equal terminal state into a listed canonical closure input, leaving only nonuniform adjacent-gap profiles. These are exactly {r+1,r+1,r} and {r+1,r,r}. The unique-small case is consumed by unique_small_transport_recomp02 into order disagreement, crossing multiplicity, inherited-core separation, or leave-and-return. The unique-large case is consumed by 939a6dc97467 into the same menu or a bounded reverse cross triple. Hence no neutral endpoint-transfer residue remains structureless. The conclusion is valid conditional on the currently pending recomposition audit of unique_small_transport_recomp02; dependency propagation should therefore hold this consumer until that premise is certified."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:05:35.45336+00:00"
+    worker_id: 679
+  noncomputational: true
+  proof_rehearsal_generation: 43
+  scale_free: true
+  terminal_reduction: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "terminalfrontier_recomp01"
+position: 0
+research_interface:
+  consumer: "grand theorem closure; endpoint-transport / defect-compression bridge"
+  given: "a Phi-minimal trapped three-cover in a minimum counterexample"
+  need: "one global theorem consuming this finite menu into a spanning two-cover or defect span at most two"
+  produces: "a finite canonical menu of Hamiltonian-support, order, crossing, connector, leave-return, reversed-join, or bounded local obstruction inputs; no neutral-transfer residue remains"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Terminal quadratic minima have no structureless neutral-transfer residue."
+statement_sha256: "a8e3b1c592f2cc74081150263c5d5e81b8d9b06c558feea22a3e98b0dd54cd76"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal quadratic minima have no structureless neutral-transfer residue"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:04:20.475051+00:00"
+version: 7

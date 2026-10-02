@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "299172bd2dabfa18448f1359ca8a15cc002e0cb35a25f7cae8385b87311c4427"
+created_at: "2026-09-21T20:36:00.442992+00:00"
+id: "splice_obligation_for_four_ascending_terminal_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000799"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  route: "ascending terminal degree"
+  source_kind: "proof_obligation"
+object_type: "proposal"
+origin_worker_id: 262
+parent_id: "refuted_ascending_terminaldegree_conjecture"
+position: 20
+research_interface:
+  consumer: "ascending terminal-degree conjecture"
+  given: "four ascending edges at one terminal vertex"
+  need: "prove repeated-blocker uncrossing/splice lemma"
+  sharpness: "three ascending edges can occur"
+research_level: "proof_level"
+semantic_container_text: "Four-edge repeated-blocker branch: when four ascending edges share a terminal, repeated blockers impose splice obligations that replace the refuted bounded-degree conjecture."
+simplified_statement: null
+statement_sha256: "7849f095de9c1411f1e5c5a51d175be7616e9ad4dc579cf0275c5e67e2dab6bd"
+substantive_worker_ids:
+  - 262
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Repeated-blocker splice obligation for four ascending terminal edges"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:28:32.207682+00:00"
+version: 2

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "707ea4d2de85e9a9b670895be630f441a8f217e4d817640459aca4bc484bb00a"
+created_at: "2026-09-26T21:29:44.779982+00:00"
+id: "triple_admits_an_endpointextensionminimal_normalization"
+last_elevation_revision: 0
+last_substantive_worker_id: 618
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 342
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:50:11.857723+00:00"
+    worker_id: 588
+  last_audit_observation:
+    claim_id: 342
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T22:50:11.857723+00:00"
+    worker_id: 588
+  semantic_container_seed:
+    atlas_key: "mandatory-triple-calculus"
+    headline: "Mandatory-triple cover calculus"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "research"
+origin_worker_id: 618
+parent_id: "coversurg01"
+position: 0
+research_interface:
+  consumer: "Astra ideas 010 and 005; endpoint transport / defect compression"
+  given: "a two-coverable boundary tournament with one ordered tight triple mandatory in every spanning two-cover"
+  need: "couple the two endpoint extension barriers, or exploit them in the edge-ordered comparison model"
+  produces: "a two-cover whose mandatory-triple component is minimal and whose two endpoints are both non-Hamiltonian extensions of the opposite component"
+research_level: "lemma"
+semantic_container_text: "General mandatory-triple normalization and cover-surgery consequences."
+simplified_statement: "A mandatory two-cover triple admits an endpoint-extension-minimal normalization."
+statement_sha256: "4d861dd2a35239adf62a89d20a88b441b409375b3d33ed73f42fc750b57b52a8"
+substantive_worker_ids:
+  - 618
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A mandatory two-cover triple admits an endpoint-extension-minimal normalization"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-30T20:55:07.81107+00:00"
+version: 10

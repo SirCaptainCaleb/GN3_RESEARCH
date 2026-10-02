@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "95718c8f88061de0d129d6e2a43088fca8cdc067dad66708129346b48a142a0d"
+created_at: "2026-09-21T22:43:31.275726+00:00"
+id: "crossblocker_reduction_for_fouredge_spacing"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000104"
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7ee3d102-1251-475c-8881-816124f1b426"
+    detail: "At the current corrected version, V(R)∩e_1={x_1} supplies the formerly missing source-clean condition. The same reversed-tail splice is linear, has length q_1+q_4-b+1, and ends at x_2, yielding 2q_2>=q_1+q_4+2. The current statement is mathematically sound."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:51:59.362952+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "7ee3d102-1251-475c-8881-816124f1b426"
+    detail: "At the current corrected version, V(R)∩e_1={x_1} supplies the formerly missing source-clean condition. The same reversed-tail splice is linear, has length q_1+q_4-b+1, and ends at x_2, yielding 2q_2>=q_1+q_4+2. The current statement is mathematically sound."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:51:59.362952+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_failure:
+    reason: "The proof's concatenation requires R to avoid the second terminal of e_1, but the statement assumes only that R is disjoint from e_4 and from the reversed Q-tail. Since e_1 and e_4 share only the common terminal v, R may still meet the other terminal of e_1, creating a nonconsecutive intersection when e_1 is appended. The stated hypotheses therefore do not establish that the displayed sequence is a linear path."
+    recorded_at: "2026-09-22T05:52:04.838733+00:00"
+object_type: "lemma"
+origin_worker_id: 205
+parent_id: "fouredge_spacing_conjecture_at_a_common_last_vertex"
+position: 1
+research_interface:
+  consequence: "if 2q_2<q_1+q_4+2, then at least one explicit obstruction occurs: e_2 has a second Q-contact, e_1 meets the x_2-tail of Q, or every maximum path ending at x_1 meets that tail or e_4"
+  consumer:
+    - "four-edge spacing conjecture"
+    - "location-sensitive Minty/rotation route"
+  next_obligation: "charge or recurse on these cross-blockers"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Under the stated cross-blocker-free path hypotheses for e1,e2,e4, one has 2q2≥q1+q4+2."
+statement_sha256: "00cb7846f8563438e2c59a25c000948109445b7e80859846b8cc651398db37eb"
+substantive_worker_ids:
+  - 205
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Cross-blocker reduction for four-edge spacing"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 8

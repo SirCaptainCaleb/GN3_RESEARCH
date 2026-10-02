@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "70932fe76cf4af611796e37d263ef8bad82b57fc8815841b45ba427527b3eb38"
+created_at: "2026-09-27T01:54:05.291553+00:00"
+id: "compatibility_density_is_at_most_one_edge_above_mantel"
+last_elevation_revision: 0
+last_substantive_worker_id: 624
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 184
+    detail: "The +2 extremal peeling lemma is valid; its seven-vertex equality core is complement C7, and f7c79b595b2e then contradicts the induced 4-1-5 compatibility path avoiding the separator pair."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+  brainstorm_development: true
+  last_audit_observation:
+    claim_id: 184
+    detail: "The +2 extremal peeling lemma is valid; its seven-vertex equality core is complement C7, and f7c79b595b2e then contradicts the induced 4-1-5 compatibility path avoiding the separator pair."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+object_type: "research"
+origin_worker_id: 624
+parent_id: "extremal_compatibility_density_peels_to_a_sevencycle_complement"
+position: 0
+research_interface:
+  consumer: "deletion-cover incompatibility forcing; endpoint-transport / defect-compression"
+  given: "the +2 compatibility-density bound, its extremal C7-complement core, and the order-reversal separator property for double-common-neighbor edges"
+  need: "analyze or exclude the remaining +1 extremal case, or use the stronger incompatible-degree lower bound directly"
+  produces: "the sharpened global compatibility bound e(G)<=floor(m^2/4)+1"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Compatibility density is at most one edge above Mantel"
+statement_sha256: "39a6364a038c693a9ff25b96cdcf21e60919d43fc79df82693a8b953ca65f3be"
+substantive_worker_ids:
+  - 624
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Compatibility density is at most one edge above Mantel"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T00:58:47.559011+00:00"
+version: 5

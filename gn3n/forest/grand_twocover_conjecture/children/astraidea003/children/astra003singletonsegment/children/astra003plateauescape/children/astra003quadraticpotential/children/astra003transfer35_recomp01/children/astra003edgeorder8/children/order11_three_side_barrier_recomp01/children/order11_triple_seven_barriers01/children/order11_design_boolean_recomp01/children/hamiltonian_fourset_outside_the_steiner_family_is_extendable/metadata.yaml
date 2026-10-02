@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c7f2acf2933a770277f7fd1442f45ddb6e206524ba1ba027e6d78a4c488af53f"
+created_at: "2026-10-01T01:08:16.524158+00:00"
+id: "hamiltonian_fourset_outside_the_steiner_family_is_extendable"
+last_elevation_revision: 10352
+last_substantive_worker_id: 737
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Vocabulary-only note: shell is listed as ambiguous in the GN3N standardization dictionary. The theorem does explicitly state the full family of extension states, so this does not affect correctness; future wording should prefer Boolean family over Boolean shell."
+      recorded_at: "2026-10-01T01:27:15.856302+00:00"
+      worker_id: 745
+    -
+      note: "Terminology: statement/body use \"Boolean shell\"; project dictionary marks \"shell\" ambiguous and asks that the family of states be described directly. Mathematics unaffected."
+      recorded_at: "2026-10-01T02:19:51.699148+00:00"
+      worker_id: 903
+    -
+      note: "Terminology only: body/statement use \"Boolean shell\"; project dictionary marks \"shell\" ambiguous. Replace with explicit Boolean family / family of complement-extension states. Mathematics unchanged."
+      recorded_at: "2026-10-01T05:29:04.95807+00:00"
+      worker_id: 922
+  audit_request_reason: "Independent check of universal outside-Steiner extension strengthening."
+  audit_request_recorded_at: "2026-10-01T01:08:16.524158+00:00"
+  audit_resolution:
+    claim_id: 923
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+  audit_trigger_kind: "explicit"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 923
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+object_type: "research"
+origin_worker_id: 737
+parent_id: "order11_design_boolean_recomp01"
+position: 5
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "6c5448d7b8b43ea8455083a73f45dd3260415971982befb295c0e3c6f8d1f8c0"
+substantive_worker_ids:
+  - 737
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "In the order-eleven design branch every Hamiltonian four-set outside the Steiner family is extendable"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:43:23.594674+00:00"
+version: 10

@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "183243569986b1c289a18d19d7b5c84d4e4e0dab180ecb8de02dfbd3b574c2ba"
+created_at: "2026-09-28T02:18:22.212263+00:00"
+id: "a_oneedgefortwo_exchange_to_a_bounded_reverse_boundary_window"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 339
+    detail: "Corrected predecessor indexing to use the actual whole-path predecessor(s), including when the preceding inherited block has order one."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:27:45.170864+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 339
+    detail: "Corrected predecessor indexing to use the actual whole-path predecessor(s), including when the preceding inherited block has order one."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:27:45.170864+00:00"
+    worker_id: 652
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Corrected predecessor indexing to use the actual whole-path predecessor(s), including when the preceding inherited block has order one; conclusion unchanged."
+    recorded_at: "2026-09-28T02:26:31.681891+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 652
+  noncomputational: true
+  scale_free: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "orients_the_endpointadjacent_block_of_a_oneedgefortwo_exchange"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge; all-equal endpoint probes"
+  given: "an order-neutral one-edge-for-two comparison state after deleting a displayed endpoint, after endpoint restoration has oriented the endpoint-adjacent inherited block away from the beginning"
+  need: "combine the resulting reverse boundary triple with the quotient matching/path type or with the opposite endpoint probe to obtain defect-span compression"
+  produces: "an explicit tight reverse triple in a constant-size window at the preceding block boundary"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Endpoint restoration localizes a one-edge-for-two exchange to a bounded reverse boundary window."
+statement_sha256: "5c561120d5cf4010ae0e35f0f5f3a11b1679175c61797c63a6858848cdd3d933"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint restoration localizes a one-edge-for-two exchange to a bounded reverse boundary window"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:27:45.170864+00:00"
+version: 5

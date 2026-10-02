@@ -1,0 +1,72 @@
+atlas_height: "2"
+atlas_hidden: false
+attention: "focus"
+audit_priority: 10
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "41b919290c662a7fd6d5d8b74f4b5ecd217e159852166ba353228db62cc8d4b7"
+created_at: "2026-09-24T12:32:55.462064+00:00"
+id: "contactconflict_graph_improves_the_leading_coefficient_to_4348"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000904"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "Verified the local conflict rule, all seven state transitions and potentials, the 3/4 cycle-mean bound, and the global 43/48 algebra."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "63299c8c-a7c6-49af-9dad-5ee698d87e34"
+    detail: "Verified the local conflict rule, all seven state transitions and potentials, the 3/4 cycle-mean bound, and the global 43/48 algebra."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:40:43.156608+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_local_audit_repair:
+    reason: "Vocabulary-only repair: remove prohibited endpoint qualifier and proof-process/model label; mathematics unchanged."
+    recorded_at: "2026-09-25T01:32:50.296475+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  leading_coefficient: "43/48"
+  role: "stronger reuse of Astra splice"
+  semantic_container_seed:
+    atlas_key: "upper_contact_snake"
+    headline: "Supported 43/48 bound and exact defect accounting"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas"
+  uses:
+    - "firstedge_contacts_sharpen_the_eleventwelfths_bound"
+    - "ascendingedge_rainbowlayer_formulation"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "firstedge_contacts_sharpen_the_eleventwelfths_bound"
+position: 0
+research_interface:
+  consequence: "Using all local conflict edges rather than one disjoint conflict matching improves the asymptotic terminal incidence coefficient from 3/2 to 11/8 and the global Turan coefficient from 11/12 to 43/48."
+  consumer:
+    - "general linear-path Turan upper bound"
+  given:
+    - "ascending last edge"
+    - "linearity"
+    - "full local singleton conflict graph"
+  next_need: "Independent reconstruction. Then optimize the finite-state boundary conditions; test whether additional wrong-entrance conflicts lower the state-cycle mean below 3/4, which would improve 43/48 again."
+research_level: "theorem"
+semantic_container_text: "Certified 43/48 milestone. The full singleton-contact conflict graph sharpens the terminal-incidence coefficient and gives the global 43/48 upper bound. Its descendants analyze near equality rather than merely re-optimizing the local finite-state calculation: dense switching, central windows, terminal-shadow structure, strict-gap extraction, and the mechanisms that might force a strict improvement."
+simplified_statement: "The full contact-conflict graph improves the leading coefficient to 43/48."
+statement_sha256: "5e658bd9589617f656e5883499b2a6f13dc060e0584ac420ecbcb81b8e014d69"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The full contact-conflict graph improves the leading coefficient to 43/48"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:15:11.55896+00:00"
+version: 12

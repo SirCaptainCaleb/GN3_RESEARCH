@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "ed76bfdb3e9f41515c310ce4c66ed2894c3b4fbbb3e3898b9105b43a1996f3a7"
+created_at: "2026-09-27T21:45:33.685919+00:00"
+id: "reversal_a_hamiltonian_fivewindow_or_a_doubled_reverse_barrier_b"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 415
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:21:44.645158+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 415
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:21:44.645158+00:00"
+    worker_id: 596
+object_type: "research"
+origin_worker_id: 697
+parent_id: "residue_localizes_to_one_edge_and_two_wrap_triples"
+position: 2
+research_interface:
+  consumer: "endpoint transport / defect compression bridge"
+  given: "the all-equal clean-detour residue with the replaced inherited edge not at an endpoint"
+  need: "only endpoint-edge detours remain outside this bounded internal classification; consume the three bounded internal outputs"
+  produces: "a reversed inherited edge, a bounded Hamiltonian five-window, or a doubled bounded reverse barrier"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "An internal clean detour yields edge reversal, a Hamiltonian five-window, or a doubled reverse barrier."
+statement_sha256: "fc6e2daa9de39c2816cfd317c45ad01af3285a000fc3b625a3fa68e3d1354fdf"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "An internal clean detour yields edge reversal, a Hamiltonian five-window, or a doubled reverse barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:47:17.752948+00:00"
+version: 8

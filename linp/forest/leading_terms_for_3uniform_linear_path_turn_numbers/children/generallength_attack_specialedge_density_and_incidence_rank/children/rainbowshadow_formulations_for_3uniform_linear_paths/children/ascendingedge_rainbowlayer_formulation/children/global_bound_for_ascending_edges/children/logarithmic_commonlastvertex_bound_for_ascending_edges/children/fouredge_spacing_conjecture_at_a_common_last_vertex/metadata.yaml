@@ -1,0 +1,38 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "d34f438c53034a95ade2a6a30f6f1f77867f41303b0ff0c9937c153a0f99d8c4"
+created_at: "2026-09-21T22:28:09.676273+00:00"
+id: "fouredge_spacing_conjecture_at_a_common_last_vertex"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: "1000145"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+object_type: "conjecture"
+origin_worker_id: 205
+parent_id: "logarithmic_commonlastvertex_bound_for_ascending_edges"
+position: 11
+research_interface:
+  consumer: "logarithmic common-last-vertex bound"
+  need: "prove by repeated-blocker/Pósa-splice, or find a four-edge counterexample"
+research_level: "lemma"
+semantic_container_text: "Common-last-vertex four-edge spacing program: prove rank-spacing from clean or uncrossed blockers, understand the two-contact obstruction, and derive logarithmic common-terminal degree when spacing holds."
+simplified_statement: "For four ascending nonspecial edges sharing a last vertex with ranks q1≤q2≤q3≤q4, conjecturally 2q2≥q1+q4+1."
+statement_sha256: "c6b439a6cc9f6c66efeee473d7e8d80e8633b538b6e7dec276f0a6c7f13be59f"
+substantive_worker_ids:
+  - 205
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Four-edge spacing conjecture at a common last vertex"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 4

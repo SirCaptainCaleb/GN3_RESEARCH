@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 7
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "2f5cb339e2aa700d7d0981ac60ead9752b83f22888f304c44bd61629be5c1ef7"
+created_at: "2026-09-21T03:33:37.845962+00:00"
+id: "hamiltonian_sixdeletions_do_not_force_a_sevenset_hamiltonian"
+last_elevation_revision: 0
+last_substantive_worker_id: 666
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 117
+    detail: "Independent check against the certified counterfence witness: the seven-set is non-Hamiltonian by the premise. Deleting q3, (q0,q2,b,c,q1,a) uses edge ranks 4<7<8<9<20. Deleting q2, (q0,q1,q3,b,a,c) uses 1<6<12<19<21. Thus two distinct six-deletions are Hamiltonian."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T03:43:09.801319+00:00"
+    worker_id: 598
+  last_audit_observation:
+    claim_id: 117
+    detail: "Independent check against the certified counterfence witness: the seven-set is non-Hamiltonian by the premise. Deleting q3, (q0,q2,b,c,q1,a) uses edge ranks 4<7<8<9<20. Deleting q2, (q0,q1,q3,b,a,c) uses 1<6<12<19<21. Thus two distinct six-deletions are Hamiltonian."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T03:43:09.801319+00:00"
+    worker_id: 598
+object_type: "research"
+origin_worker_id: 666
+parent_id: "endpointtransport_defectcompression_bridge"
+position: 1
+research_interface:
+  given: "a proposed one-defect or order-13 argument that needs uniqueness of a Hamiltonian six-deletion in a non-Hamiltonian seven-set"
+  need: "use mixed-support/global minimum-counterexample structure rather than local seven-set non-Hamiltonicity to force trapping or escape"
+  produces: "an explicit certified counterexample with two distinct good six-deletions"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two Hamiltonian six-deletions do not force a seven-set Hamiltonian."
+statement_sha256: "87a748d30fe457f74e82ceccb0056b8a5d4f443c1f28d04fcd725ce867182619"
+substantive_worker_ids:
+  - 666
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two Hamiltonian six-deletions do not force a seven-set Hamiltonian"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-26T18:14:06.9164+00:00"
+version: 7

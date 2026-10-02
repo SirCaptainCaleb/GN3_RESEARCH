@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "8ae0a8da4836321bbc1f086e146d52aef909e33d1bfb06e7ff273720adaec4f6"
+created_at: "2026-09-24T03:19:14.188998+00:00"
+id: "nonspecial_edges_and_have_an_exact_degree_decomposition"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000934"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Verified d_D^-(v)=2p-1 saturates the certified d_H(v)-c(v) bound. Any nonascending nonspecial source edge would add an uncounted incidence, so the exact degree decomposition follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:11.564513+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "04862a5b-c47f-41e1-bd9c-14296d6699df"
+    detail: "Verified d_D^-(v)=2p-1 saturates the certified d_H(v)-c(v) bound. Any nonascending nonspecial source edge would add an uncounted incidence, so the exact degree decomposition follows."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:52:11.564513+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "potential_and_rankgrowth_toolkit"
+position: 150
+research_interface:
+  consequence: "Type-A vertices are perfectly source-oriented: every nonspecial entrance incidence is ascending, and degree equals saturated incoming capacity plus ascending source count. Thus every nonascending nonspecial edge must have its entrance at a non-Type-A vertex."
+  consumer:
+    - "near-equality stability"
+    - "strict-potential DAG"
+  given:
+    - "Type A"
+    - "22362096041e local ascending source inequality"
+  next_need: "If S=m+7n/6+eta n, show only O(eta n) vertices are non-Type-A and hence all nonascending edges are sourced in an O(eta n) set. Combine degree/linearity with the minimum-potential level to force eta bounded below independently of n."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Type-A vertices source only ascending nonspecial edges and have an exact degree decomposition."
+statement_sha256: "4f5e5ad0bff477aac13ed5a7a2edc217d44d411cbbb1aca758678ae3f9dae2c8"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Type-A vertices source only ascending nonspecial edges and have an exact degree decomposition"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:45:22.140112+00:00"
+version: 7

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "6c8a02d03c05bd59617df3e728936f1d674a1cab432a01a92a954b219094b8e3"
+created_at: "2026-09-21T20:41:12.256411+00:00"
+id: "rankgap_forces_the_terminal_blocker_for_ascending_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000998"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a2007750-7f1f-43c5-bb4c-ce79233cbf77"
+    detail: "Independent check: if the forced blocker were x on precursor edge g_i with i>=p-q+2, then either x is the entrance joint of g_i and the prefix through g_{i-1} ends at x with length i-1>=p-q+1, or the prefix through g_i ends at x with length i>=p-q+2. Hence phi(x)>=p-q+1. Ascending gives phi(x)=q-1, so p<=2q-2. Therefore p>=2q-1 forces the blocker to be the other terminal y. (Body uses legacy a(x) notation for endpoint potential.)"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:40:03.611488+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "a2007750-7f1f-43c5-bb4c-ce79233cbf77"
+    detail: "Independent check: if the forced blocker were x on precursor edge g_i with i>=p-q+2, then either x is the entrance joint of g_i and the prefix through g_{i-1} ends at x with length i-1>=p-q+1, or the prefix through g_i ends at x with length i>=p-q+2. Hence phi(x)>=p-q+1. Ascending gives phi(x)=q-1, so p<=2q-2. Therefore p>=2q-1 forces the blocker to be the other terminal y. (Body uses legacy a(x) notation for endpoint potential.)"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T12:40:03.611488+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  route: "ascending terminal degree"
+  source_kind: "new_project_result"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "refuted_ascending_terminaldegree_conjecture"
+position: 18
+research_interface:
+  consequence: "rank >=2q-1 forces blocking through the other terminal, not the low-rank entrance"
+  consumer: "repeated-blocker splice route and ascending terminal-degree conjecture"
+  given:
+    - "ascending nonspecial edge of rank q"
+    - "competing incoming edge at same terminal"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Rank-gap forces the terminal blocker for ascending edges."
+statement_sha256: "d28fc0ee71aadaa830ac4741a470681370398b64630b185dd3984e4f7a2acce7"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Rank-gap forces the terminal blocker for ascending edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

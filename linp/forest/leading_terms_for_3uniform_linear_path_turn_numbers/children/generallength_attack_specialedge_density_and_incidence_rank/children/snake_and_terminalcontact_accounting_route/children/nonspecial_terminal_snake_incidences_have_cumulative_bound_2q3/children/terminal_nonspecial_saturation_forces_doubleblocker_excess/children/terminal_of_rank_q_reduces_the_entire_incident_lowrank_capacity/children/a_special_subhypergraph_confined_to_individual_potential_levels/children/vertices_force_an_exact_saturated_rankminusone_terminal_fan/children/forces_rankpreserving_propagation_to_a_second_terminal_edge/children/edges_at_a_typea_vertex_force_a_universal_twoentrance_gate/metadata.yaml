@@ -1,0 +1,77 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 6
+body_sha256: "6b0f5fab6b3d9b21e6b476934b4194ecbe46a75222fdc2f8c295d3eb685f5a91"
+created_at: "2026-09-24T04:15:53.547656+00:00"
+id: "edges_at_a_typea_vertex_force_a_universal_twoentrance_gate"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000724"
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Normalized last-vertex terminology and added exact depends_on edges to a1a7159e2c43, 0e550ff0eadd, and a57057ab0001."
+    math_version: 6
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Normalized last-vertex terminology and added exact depends_on edges to a1a7159e2c43, 0e550ff0eadd, and a57057ab0001."
+    math_version: 6
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record the Type-A classification as a logical premise of the universal-gate proof."
+    recorded_at: "2026-09-24T21:11:48.598983+00:00"
+    to_id: "a_special_subhypergraph_confined_to_individual_potential_levels"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized terminology repair completing replacement of prohibited \"physical\" wording; mathematics unchanged."
+    recorded_at: "2026-09-24T21:08:10.076083+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_premise_impact_check:
+    checked_at: "2026-09-24T21:16:51.187949+00:00"
+    note: "Its proof uses only the local Type-A terminal-rank classification, unchanged in math_version 7."
+    source_ids:
+      - "a_special_subhypergraph_confined_to_individual_potential_levels"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "forces_rankpreserving_propagation_to_a_second_terminal_edge"
+position: 0
+research_interface:
+  consequence: "Every Type-A vertex has at least two rank-(p-1) nonspecial terminal edges. If there are exactly two, all longest witnesses for both edges pass through one fixed penultimate gate containing their two entrances."
+  consumer:
+    - "Type-A equality classification"
+    - "general potential-oriented local bound"
+    - "grand 2/3 conjecture"
+  given:
+    - "0e550ff0eadd cumulative terminal rank bound"
+    - "a1a7159e2c43 rank-preserving propagation"
+  next_need: "Analyze the universal gate. If both entrance vertices are Type A, show the gate is a special rank-(q-1) edge in their common potential level. Then propagate these gates through the large Type-A special subhypergraph; alternatively show a third rank-q terminal edge is forced."
+  role: "universal gate in the minimal top-rank Type-A fan"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Exactly two top terminal edges at a Type-A vertex force a universal two-entrance gate."
+statement_sha256: "d4de6fc55140969e05daa334522ab9ac63cd6d67a4a3299293444006341fe679"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Exactly two top terminal edges at a Type-A vertex force a universal two-entrance gate"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 11

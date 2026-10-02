@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "463ffdb1f133051ad8701eac4cc33a16486d04b2b3f8db63601df534405be3d7"
+created_at: "2026-09-21T04:43:50.950055+00:00"
+id: "radiusthree_deficientsupport_graph_has_no_tworegular_component_b"
+last_elevation_revision: 0
+last_substantive_worker_id: 598
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 279
+    detail: "Reconstructed directly. At a degree-two cycle state, each r in T_{i+1} gives a distinct transfer support P_r. Its Johnson distance to R_{i+2} is 1+|T_{i-1}∩T_{i+2}|; degree two forces the intersection to have size three, hence T_{i-1}=T_{i+2} and period three. The resulting only possible 3-cycle is independently excluded using an odd-graph edge labelled by c outside the three support triples, which creates a third Gamma-neighbor."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-21T04:47:23.396467+00:00"
+    worker_id: 628
+  last_audit_observation:
+    claim_id: 279
+    detail: "Reconstructed directly. At a degree-two cycle state, each r in T_{i+1} gives a distinct transfer support P_r. Its Johnson distance to R_{i+2} is 1+|T_{i-1}∩T_{i+2}|; degree two forces the intersection to have size three, hence T_{i-1}=T_{i+2} and period three. The resulting only possible 3-cycle is independently excluded using an odd-graph edge labelled by c outside the three support triples, which creates a third Gamma-neighbor."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-21T04:47:23.396467+00:00"
+    worker_id: 628
+  last_premise_impact_check:
+    checked_at: "2026-09-23T04:41:17.383762+00:00"
+    note: "Premise-impact reconfirmation: 91e6b4c2d7a0 preserves the sliding-triple and radius-three degree-two structure used by the unchanged no-two-regular-component proof."
+    source_ids:
+      - "tworegular_radiusthree_components_are_sliding_triple_cycles"
+      - "capacity_six_and_degreetwo_equality_is_a_slidingtriple_system"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 598
+parent_id: "capacity_six_and_degreetwo_equality_is_a_slidingtriple_system"
+position: 0
+research_interface:
+  consumer: "one-defect reconfiguration and endpoint-transport / defect-compression bridge"
+  given: "the order-thirteen mu=6 radius-three deficient-support graph"
+  need: "consume a degree-at-least-three branching state to obtain defect compression or a spanning two-cover"
+  produces: "complete elimination of the two-regular/sliding-cycle equality residue; every component reaches genuine support branching"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The order-thirteen radius-three deficient-support graph has no two-regular component"
+statement_sha256: "3b6bd8b0840b68173c25eb522d98eef693435e5665a56043f47bfde3841c4b73"
+substantive_worker_ids:
+  - 598
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The order-thirteen radius-three deficient-support graph has no two-regular component"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:25:25.297469+00:00"
+version: 10

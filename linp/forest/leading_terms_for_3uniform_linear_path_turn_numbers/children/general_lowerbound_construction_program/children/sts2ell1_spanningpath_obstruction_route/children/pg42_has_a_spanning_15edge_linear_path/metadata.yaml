@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "6939b9ec13203bcc1c6f389f8a37b7018f8ac4c36f26f5d2f2eca9b76c1355e8"
+created_at: "2026-09-22T14:31:54.72649+00:00"
+id: "pg42_has_a_spanning_15edge_linear_path"
+last_elevation_revision: null
+last_substantive_worker_id: 204
+legacy_id: "1000576"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "5060c48c-0fbe-464c-bea6-c51c64652422"
+    detail: "All 15 displayed triples have XOR zero, consecutive pairs have exactly the displayed joint, nonconsecutive pairs are disjoint, and their union is all 31 nonzero vectors."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T05:02:04.120753+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "5060c48c-0fbe-464c-bea6-c51c64652422"
+    detail: "All 15 displayed triples have XOR zero, consecutive pairs have exactly the displayed joint, nonconsecutive pairs are disjoint, and their union is all 31 nonzero vectors."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T05:02:04.120753+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+object_type: "research"
+origin_worker_id: 204
+parent_id: "sts2ell1_spanningpath_obstruction_route"
+position: 0
+research_interface:
+  consequence: "the PG(3,2) P7-free construction does not extend by simply taking PG(d-1,2) for d=5; the hyperplane parity condition is not sufficient to forbid spanning paths"
+  consumer:
+    - "STS(2ell+1) spanning-path obstruction route"
+    - "binary-projective lower-bound route"
+  given:
+    - "binary projective STS PG(4,2)"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "PG(4,2) contains a spanning 15-edge linear path, so the PG(3,2) non-Hamiltonicity phenomenon does not persist in the next binary projective dimension."
+statement_sha256: "4e4759b1374e9cf6ba896a257fc1b42c00f5810eb23716445ebe61aca2313a90"
+substantive_worker_ids:
+  - 204
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "PG(4,2) has a spanning 15-edge linear path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T04:59:38.777616+00:00"
+version: 4

@@ -1,0 +1,40 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "aba458285a5c6148f01068af76edb06659673312644e872cdd68a9e34df0b7e5"
+created_at: "2026-09-27T21:37:43.755434+00:00"
+id: "dual_certificate_is_a_twoedge_matching_in_the_defect_line"
+last_elevation_revision: 0
+last_substantive_worker_id: 596
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 596
+parent_id: "compatibility_give_the_canonical_global_obstruction_interface"
+position: 900
+research_interface:
+  consumer: "dual obstruction brainstorm; defect compression"
+  given: "the defect-span pivot and the certified defect-line matching identity"
+  need: "compress the universal quantifier over all spanning orderings into a finite oriented-triple certificate, then contradict or reduce it"
+  produces: "an exact fixed-order dual language: failure of a two-cover ordering is witnessed by a defect-line matching of size at least two"
+research_level: "working_unit"
+semantic_container_text: "Defect-line dual-certificate program: fixed spanning orders reduce two-cover failure to size-two matchings in the defect line, while the descendants develop bounded cyclic defect certificates, run classifications, rotations, and deletion-state consequences aimed at making that obstruction global."
+simplified_statement: "The fixed-order dual certificate is a two-edge matching in the defect line"
+statement_sha256: "f2ee33a0fea20fb3a14487e5c3f7388baafd9f85d9a3dcd79547783a96fb6f58"
+substantive_worker_ids:
+  - 596
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "The fixed-order dual certificate is a two-edge matching in the defect line"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:55:33.193322+00:00"
+version: 5

@@ -1,0 +1,37 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "36bc248a4f7f2d3a0973bd30e7a5463b0aa4c8913b51e0fcf46e22b1b92dbfc5"
+created_at: "2026-09-30T12:54:48.530758+00:00"
+id: "fourfive_plateau_dense_endpoint_blockade01"
+last_elevation_revision: 10160
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 579
+parent_id: "nineset_of_a_trapped_local_45a_minimum_has_only_45_twocovers"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A trapped 4|5 plateau yields at least 36 endpoint-blocked four-sides and at least five Hamiltonian four-sets through the two long endpoints."
+statement_sha256: "39ca6258c5bd0204f145b85835bb97fc045bd4a7df503dacdb03ba26b65ef5e1"
+substantive_worker_ids:
+  - 579
+  - 745
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "A trapped four-five plateau forces at least five Hamiltonian endpoint-pair four-sets"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:01:13.82212+00:00"
+version: 5

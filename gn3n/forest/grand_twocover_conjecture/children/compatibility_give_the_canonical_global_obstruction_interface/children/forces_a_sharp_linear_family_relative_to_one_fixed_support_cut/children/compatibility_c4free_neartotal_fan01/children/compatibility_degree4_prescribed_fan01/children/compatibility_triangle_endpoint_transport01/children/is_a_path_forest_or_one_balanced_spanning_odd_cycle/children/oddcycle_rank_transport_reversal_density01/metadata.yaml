@@ -1,0 +1,36 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "9da026a52c5f1d035e71bc8807e0b3ceb0a8a7dba6f9979b9757719d735287fe"
+created_at: "2026-10-02T01:48:36.348152+00:00"
+id: "oddcycle_rank_transport_reversal_density01"
+last_elevation_revision: 11239
+last_substantive_worker_id: 1194
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "theorem"
+origin_worker_id: 1194
+parent_id: "is_a_path_forest_or_one_balanced_spanning_odd_cycle"
+position: 0
+research_interface:
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "The balanced odd-cycle residue cannot consist mostly of same-slot replacements: at least (n-3)/2 support transitions use adjacent slots, and the resulting reversal gadgets occur across every rank boundary."
+statement_sha256: "eee35deba1aaf411b7e4db435c9bfb312eac7845a1417676922f63962b368017"
+substantive_worker_ids:
+  - 1194
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Odd-cycle rank transport forces linearly many adjacent-slot reversal gadgets"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T01:56:02.134343+00:00"
+version: 5

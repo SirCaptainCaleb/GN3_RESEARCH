@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "ed0e07ed35df62e9c0f12910549723297ef3ec15e4f05859fa3f63ed2a95c35e"
+created_at: "2026-09-28T17:06:28.916028+00:00"
+id: "order_disagreement_or_an_orderfifteen_endpoint_obstruction"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 72
+    detail: "Replaced good-deletion/relative-order/standard-disturbance shorthand by explicit Hamiltonian-deletion, order-disagreement, crossing, and order-fifteen noninsertability alternatives; synchronized current premise versions."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:10:13.383674+00:00"
+    worker_id: 703
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 72
+    detail: "Replaced good-deletion/relative-order/standard-disturbance shorthand by explicit Hamiltonian-deletion, order-disagreement, crossing, and order-fifteen noninsertability alternatives; synchronized current premise versions."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:10:13.383674+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Final grammar cleanup only."
+    recorded_at: "2026-09-28T20:09:25.005586+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+object_type: "research"
+origin_worker_id: 700
+parent_id: "sixset_yields_one_and_twolabel_pathcovertwo_extensions"
+position: 1
+research_interface:
+  consumer: "non-Hamiltonian six-set analysis; endpoint transport / defect compression"
+  given: "a non-Hamiltonian six-set K with non-Hamiltonian complement L, vertices d,e with K-d, K-e, and K-{d,e} Hamiltonian, and a Phi-minimal three-cover built from a two-cover of L union {d,e}"
+  produces: "from order sixteen, a crossing ordinary edge or order disagreement; at order fifteen, additionally either multiple ordinary crossings or paired noninsertability on one displayed path"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "From order fifteen a non-Hamiltonian six-set complement square yields crossing, order disagreement, or an order-fifteen endpoint obstruction."
+statement_sha256: "832d6532a470c86b96491bc1e2b3c20d2d241b8fcbbe2f6af54bb7b21c0e09dd"
+substantive_worker_ids:
+  - 700
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "From order fifteen a non-Hamiltonian six-set complement square yields crossing, order disagreement, or an order-fifteen endpoint obstruction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T01:52:30.027257+00:00"
+version: 13

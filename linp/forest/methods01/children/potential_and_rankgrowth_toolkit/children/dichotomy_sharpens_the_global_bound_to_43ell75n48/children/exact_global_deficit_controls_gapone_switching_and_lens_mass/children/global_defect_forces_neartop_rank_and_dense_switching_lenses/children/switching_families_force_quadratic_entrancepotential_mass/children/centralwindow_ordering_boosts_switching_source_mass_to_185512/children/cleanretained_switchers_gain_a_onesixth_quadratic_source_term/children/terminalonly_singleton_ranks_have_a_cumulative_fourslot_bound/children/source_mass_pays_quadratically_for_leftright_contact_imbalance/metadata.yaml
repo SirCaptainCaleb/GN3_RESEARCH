@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "eaf4648c63f15d437e2864d23be6cc2b8bde2530fb6429b9ddf51bc307ae95ea"
+created_at: "2026-09-24T20:58:30.743748+00:00"
+id: "source_mass_pays_quadratically_for_leftright_contact_imbalance"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: "1001047"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    detail: "Replaced prohibited physical-endpoint wording with standard ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "fbad277d-4eed-48cc-a334-75ad3d5b123d"
+    detail: "Replaced prohibited physical-endpoint wording with standard ending-at language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-25T01:05:55.887427+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard ending-at language; mathematics unchanged."
+    recorded_at: "2026-09-25T01:05:16.771923+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 242
+parent_id: "terminalonly_singleton_ranks_have_a_cumulative_fourslot_bound"
+position: 0
+research_interface:
+  consequence: "The quadratic U-source-mass minimum is attained only by a two-sided, midpoint-balanced contact packet; any linear left/right imbalance costs Omega(p^2) additional entrance potential."
+  consumer:
+    - "terminal-retained switching branch"
+    - "post-43/48 U-branch rigidity"
+    - "reciprocal lens packing"
+  given:
+    - "028c2c3f7167 terminal-only singleton window"
+    - "c48823eea604 cumulative U-rank bound"
+    - "linearity"
+  next_need: "Combine with 1bab77ec4e49 and 6f2198c7d34a. In any low-defect center whose source mass stays near the generic floor, |U_v| is linear; this lemma then forces roughly half of U_v contacts into each side of P_v. The early-half V-recapture states yield long nested terminal-terminal lenses through the common endpoint v, while X-recapture states yield source-terminal lenses at distinct entrances. Bound congestion in one of these two linear certificate families."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Terminal-retained source mass pays quadratically for left-right contact imbalance."
+statement_sha256: "1f285525bcba67fcd6ddd1c0b02319c74dacc4153b32e79a9e947abec9169b01"
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal-retained source mass pays quadratically for left-right contact imbalance"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 7

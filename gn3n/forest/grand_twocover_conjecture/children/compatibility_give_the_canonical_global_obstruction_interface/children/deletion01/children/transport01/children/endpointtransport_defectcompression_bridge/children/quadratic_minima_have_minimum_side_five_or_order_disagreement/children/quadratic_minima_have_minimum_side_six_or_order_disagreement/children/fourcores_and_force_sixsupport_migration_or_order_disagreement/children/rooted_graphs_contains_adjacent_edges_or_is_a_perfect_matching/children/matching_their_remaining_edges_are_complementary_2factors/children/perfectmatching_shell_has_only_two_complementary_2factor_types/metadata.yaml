@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 60
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "0030220cfdcd7abd072406ab280ca138a9b8272e990e3a8f16c7e87205bd840d"
+created_at: "2026-09-28T11:17:15.111398+00:00"
+id: "perfectmatching_shell_has_only_two_complementary_2factor_types"
+last_elevation_revision: 0
+last_substantive_worker_id: 706
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 46
+    detail: "Given the complementary 2-factor decomposition from 3a833de66417, each factor is a simple 2-regular graph on six vertices, hence C6 or 2C3. If one factor is 2C3 with triangle classes A,B, the common perfect matching must run between A and B, and the complementary cross edges K3,3-M form C6. Thus two 2C3 factors cannot occur. Added the previously omitted dependency on 3a833de66417."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:21:45.288748+00:00"
+    worker_id: 718
+  last_audit_observation:
+    claim_id: 182
+    detail: "Independent check: complementary 2-factors of K6-M are each either C6 or 2C3. If one factor is two triangles, every perfect-matching edge of M must cross the triangle bipartition, so the complementary factor is K3,3-M, which is a six-cycle. Hence two 2C3 factors cannot coexist and the two stated unordered types are exhaustive."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:40:16.761463+00:00"
+    worker_id: 586
+  last_premise_impact_check:
+    checked_at: "2026-09-28T20:40:16.761463+00:00"
+    note: "Independent check: complementary 2-factors of K6-M are each either C6 or 2C3. If one factor is two triangles, every perfect-matching edge of M must cross the triangle bipartition, so the complementary factor is K3,3-M, which is a six-cycle. Hence two 2C3 factors cannot coexist and the two stated unordered types are exhaustive."
+    source_ids:
+      - "matching_their_remaining_edges_are_complementary_2factors"
+    worker_id: 586
+object_type: "research"
+origin_worker_id: 706
+parent_id: "matching_their_remaining_edges_are_complementary_2factors"
+position: 0
+research_interface:
+  consumer: "finite classification of the order-neutral six-side residue"
+  given: "the complementary 2-factor equality shell of 3a833de66417"
+  produces: "exactly two unordered shell types: C6/C6 or C6/(two triangles)"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The perfect-matching shell has only two complementary 2-factor types."
+statement_sha256: "4d438fea0699c3a49dc35ba6b4abc073d2f078aafe3434c3fdfb1bdfbd66db7d"
+substantive_worker_ids:
+  - 706
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The perfect-matching shell has only two complementary 2-factor types"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:40:16.761463+00:00"
+version: 7

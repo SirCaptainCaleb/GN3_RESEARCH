@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 80
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "bfaf94b10256939669b3a07900df65c22a0e861870f2a6dfb52d86dd91a9ebc2"
+created_at: "2026-09-23T21:05:59.711253+00:00"
+id: "transversal_design_has_a_spanning_sevenedge_linear_path"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000335"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1d165918-e283-4727-a24d-0e0162d25240"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:03:36.018022+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "1d165918-e283-4727-a24d-0e0162d25240"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:03:36.018022+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "latin_transversal_and_blowup_construction_route"
+position: 7
+research_interface:
+  consequence: "Replaces the order-five exhaustive enumeration by a complete elementary classification and explicit spanning paths."
+  consumer:
+    - "Latin-square/transversal-design lower-bound route"
+    - "07a2a6d38eb9 finite enumeration"
+  given:
+    - "Latin-square representation of TD(3,5)"
+    - "isotopy and transposition preserve linear paths"
+  proof_structure:
+    - "intercalate case gives four normalized completions"
+    - "intercalate-free case forces cyclic square"
+    - "explicit P7 in every normalized case"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Every order-five transversal design has a spanning seven-edge linear path."
+statement_sha256: "8fc729d8355bc14cae4049597c3d124af09e3e933a56af164e7571447691d608"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every order-five transversal design has a spanning seven-edge linear path"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

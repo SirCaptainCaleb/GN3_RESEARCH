@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "dceef05a3c519401608d905226bf4ae4bec13ca8506236448442b3513caa88c7"
+created_at: "2026-09-21T00:19:11.083181+00:00"
+id: "states_are_deletion_covers_with_the_omitted_vertex_restored"
+last_elevation_revision: 0
+last_substantive_worker_id: 575
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 275
+    detail: "Independent exact check passed. For D=1 one side has deficit one and the other zero; a longest path on the deficient side omits exactly one vertex x and yields an exact deletion two-cover H-x, while restoring x to either side of any deletion two-cover gives deficit exactly one because Hamiltonizing that enlarged side would two-cover H. The extremal identity delta=mu+1 follows in both directions. The final state-space interpretation is consistent with D=0 being impossible in a minimum counterexample."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T00:42:10.876639+00:00"
+    worker_id: 589
+  last_audit_observation:
+    claim_id: 275
+    detail: "Independent exact check passed. For D=1 one side has deficit one and the other zero; a longest path on the deficient side omits exactly one vertex x and yields an exact deletion two-cover H-x, while restoring x to either side of any deletion two-cover gives deficit exactly one because Hamiltonizing that enlarged side would two-cover H. The extremal identity delta=mu+1 follows in both directions. The final state-space interpretation is consistent with D=0 being impossible in a minimum counterexample."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-21T00:42:10.876639+00:00"
+    worker_id: 589
+  semantic_container_seed:
+    atlas_key: "parameter-bridge"
+    headline: "Minimum-side and maximin regimes are coupled"
+    snapshot_key: "pre_derived_atlas_cutover_2026_09_30"
+    source: "legacy_atlas_split"
+object_type: "research"
+origin_worker_id: 575
+parent_id: "alternative_route_onedefect_support_reconfiguration"
+position: 1
+research_interface:
+  given: "a minimum counterexample and a support bipartition with total longest-path deficit one"
+  need: "find a fixed-delta transition among deletion-cover states that eventually permits delta to decrease, or consume the existing endpoint-barrier/disagreement structure directly"
+  produces: "an exact equivalence with one-vertex deletion two-covers plus a marked component; extremally delta=mu+1"
+research_level: "theorem"
+semantic_container_text: "One-defect deletion-state reconfiguration: support expansion, alternating deletion moves, synchronized omission families, crossing producers, frozen-support obstructions, and the bridge from minimum deletion side to maximin compression."
+simplified_statement: "One-defect states are deletion covers with the omitted vertex restored"
+statement_sha256: "817faf42232e353adb70e23497109d846694cd487494a8f62841db2e6cef8006"
+substantive_worker_ids:
+  - 575
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "One-defect states are deletion covers with the omitted vertex restored"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:05:20.790279+00:00"
+version: 9

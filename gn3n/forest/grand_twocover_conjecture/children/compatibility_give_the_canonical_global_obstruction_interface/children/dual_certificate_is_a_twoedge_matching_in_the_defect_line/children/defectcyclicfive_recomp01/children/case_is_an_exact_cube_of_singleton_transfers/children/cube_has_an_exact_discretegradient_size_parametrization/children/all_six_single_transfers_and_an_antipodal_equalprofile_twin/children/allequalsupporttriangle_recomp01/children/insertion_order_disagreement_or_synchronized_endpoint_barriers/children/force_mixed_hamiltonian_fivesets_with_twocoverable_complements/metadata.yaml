@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "4e3f000ea721968228e724e3ca4377b020b19d9ed5cc371160a86036982fccdb"
+created_at: "2026-09-28T02:22:20.447173+00:00"
+id: "force_mixed_hamiltonian_fivesets_with_twocoverable_complements"
+last_elevation_revision: 0
+last_substantive_worker_id: 660
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 339
+    detail: "Conditional on the endpoint-barrier branch, three distinct endpoint labels give three tight triples with common outer pair at either end of S_i. The certified small-set lemma Hamiltonizes the resulting five-set. Minimum-counterexample calculus gives path-cover number two for its proper complement, and the complement cannot be Hamiltonian without yielding a spanning two-cover of H."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:27:45.170864+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 339
+    detail: "Conditional on the endpoint-barrier branch, three distinct endpoint labels give three tight triples with common outer pair at either end of S_i. The certified small-set lemma Hamiltonizes the resulting five-set. Minimum-counterexample calculus gives path-cover number two for its proper complement, and the complement cannot be Hamiltonian without yielding a spanning two-cover of H."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T02:27:45.170864+00:00"
+    worker_id: 652
+  last_failure:
+    reason: "Proof invalid: it uses cyclic rotation of ordered tight triples to create common-middle triples. Ordered tight triples are not cyclically invariant."
+    recorded_at: "2026-09-28T02:29:59.849313+00:00"
+  noncomputational: true
+  scale_free: true
+object_type: "research"
+origin_worker_id: 660
+parent_id: "insertion_order_disagreement_or_synchronized_endpoint_barriers"
+position: 0
+research_interface:
+  consumer: "all-equal {1,1,1} cube closure; codimension-five transport; defect compression"
+  given: "the synchronized endpoint-barrier branch and three distinct complementary endpoints at one support"
+  need: "feed the resulting family of five-support/two-cover-complement pairs into codimension-five or deletion-cover transport machinery, exploiting that the endpoint triple can be varied"
+  produces: "Hamiltonian five-sets at either end of S_i using any chosen endpoint triple, each with non-Hamiltonian path-cover-two complement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "18a7a9bd13f61ad51db0c678632c7b227dfb8bd8650d06ded255e8f9a8351550"
+substantive_worker_ids:
+  - 660
+support_reason: "Proof invalid: it uses cyclic rotation of ordered tight triples to create common-middle triples. Ordered tight triples are not cyclically invariant."
+support_status: "blocked"
+title: "Three endpoint barriers force mixed Hamiltonian five-sets with two-coverable complements"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:29:59.849313+00:00"
+version: 8

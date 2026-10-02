@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "d5c8fed3b5b676ccd57b3f942b595f18a8bac2e0ddf72e15d00c01cf91e4b8c6"
+created_at: "2026-09-28T02:10:12.916384+00:00"
+id: "orients_the_endpointadjacent_block_of_a_oneedgefortwo_exchange"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 101
+    detail: "Removed ambiguous undefined modifier clean from title and statement; mathematical content unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:11:03.026913+00:00"
+    worker_id: 660
+  last_audit_observation:
+    claim_id: 101
+    detail: "Removed ambiguous undefined modifier clean from title and statement; mathematical content unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T02:11:03.026913+00:00"
+    worker_id: 660
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Remove the ambiguous undefined modifier clean from title and statement; intended claim and proof unchanged."
+    recorded_at: "2026-09-28T02:10:48.480481+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 660
+  noncomputational: true
+  proof_rehearsal_generation: 43
+  scale_free: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "transport01"
+position: 0
+research_interface:
+  consumer: "endpoint-transport / defect-compression bridge; all-equal endpoint probes; grand proof rehearsal"
+  given: "a clean sparse three-cover/two-cover exchange arising after deletion of a displayed endpoint"
+  need: "couple this orientation constraint from opposite endpoint probes or consume the reverse-cross witness directly"
+  produces: "either an explicit reverse cross triple at a singleton endpoint-adjacent block, or a full orientation constraint forbidding the endpoint-adjacent block from being initial"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Endpoint restoration orients the endpoint-adjacent block of a one-edge-for-two exchange."
+statement_sha256: "4abbe27afe9c06a7bd40c5c86fba2fdbbf877af165affed7fc7b22782bea996a"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint restoration orients the endpoint-adjacent block of a one-edge-for-two exchange"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T02:14:33.055344+00:00"
+version: 7

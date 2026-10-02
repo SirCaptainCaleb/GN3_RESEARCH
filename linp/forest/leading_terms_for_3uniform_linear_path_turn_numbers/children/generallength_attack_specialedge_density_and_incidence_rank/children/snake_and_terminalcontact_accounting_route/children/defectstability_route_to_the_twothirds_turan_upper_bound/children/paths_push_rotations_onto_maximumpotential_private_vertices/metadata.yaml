@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "3ecbd6a850d99d9a3dcb09187257c8614de332f8c21b98090a4951ff82e7f7af"
+created_at: "2026-09-24T01:35:27.826683+00:00"
+id: "paths_push_rotations_onto_maximumpotential_private_vertices"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000120"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/free-end language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "bbf9666d-d29c-461d-afe2-32d272e7a96f"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex/free-end language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:07:53.215187+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex/free-end language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:07:23.741202+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "defectstability_route_to_the_twothirds_turan_upper_bound"
+position: 0
+research_interface:
+  consequence: "Single-blocker mobility from a lexicographically maximal state can only move through internal private vertices that themselves have maximum potential L, creating recursive L-path subproblems."
+  consumer:
+    - "grand dense-core induction"
+    - "fixed-edge rotation closure"
+    - "lowdegree_endpoint_in_the_fixededge_rotation_closure"
+  given:
+    - "fc1f69f1f481 safe fixed-edge opposite-end rotation"
+    - "globally longest path"
+  next_need: "For an internal private vertex p with phi(p)=L, analyze a longest p-ending path against the two sides of P and either splice to length L+1 or recurse into a strictly shorter interval."
+  role: "inductive rotation invariant"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Lexicographically maximal fixed-edge paths push rotations onto maximum-potential private vertices."
+statement_sha256: "fca2838945a9e42abafb2f1ae40b221b4e9c27ecf427fea75e109cb1b940c09d"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Lexicographically maximal fixed-edge paths push rotations onto maximum-potential private vertices"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

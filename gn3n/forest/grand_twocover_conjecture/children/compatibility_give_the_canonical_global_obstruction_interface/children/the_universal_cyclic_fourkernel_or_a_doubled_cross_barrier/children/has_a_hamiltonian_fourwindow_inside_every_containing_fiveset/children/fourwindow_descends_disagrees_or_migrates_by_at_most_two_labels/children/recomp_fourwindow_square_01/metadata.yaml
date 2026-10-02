@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "c84b1b064381457f7840ea86a0d8293a9018e05bbfef28b9e7c711073cb85c9b"
+created_at: "2026-09-28T20:35:52.141702+00:00"
+id: "recomp_fourwindow_square_01"
+last_elevation_revision: 11181
+last_substantive_worker_id: 1195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 128
+    detail: "Expanded four-window/migration/component-drop/plateau shorthand into the explicit e029c36208a7 and sharedendpointmigration_recomp01 construction, the coversurg01 edge condition, the four square states, and the two square-potential case analyses."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:39:45.605872+00:00"
+    worker_id: 703
+  last_audit_observation:
+    claim_id: 128
+    detail: "Expanded four-window/migration/component-drop/plateau shorthand into the explicit e029c36208a7 and sharedendpointmigration_recomp01 construction, the coversurg01 edge condition, the four square states, and the two square-potential case analyses."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-28T20:39:45.605872+00:00"
+    worker_id: 703
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Language/provenance repair only: expand four-window/migration/component-drop/plateau shorthand into e029c36208a7, sharedendpointmigration_recomp01, coversurg01, and the explicit square states and edge condition."
+    recorded_at: "2026-09-28T20:39:17.417286+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 703
+  recomposition_audit:
+    classified_at: "2026-09-28T20:35:54.217896+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+object_type: "research"
+origin_worker_id: 586
+parent_id: "fourwindow_descends_disagrees_or_migrates_by_at_most_two_labels"
+position: 0
+research_interface:
+  consumer: "four-set transport; permanent-internal square analysis; coherent endpoint-square analysis"
+  given: "a Hamiltonian four-set W in a minimum counterexample of order at least fifteen, with H-W non-Hamiltonian of path-cover number two"
+  produces: "strict quadratic descent; top-state support/order disagreement; a label internal in every top-state two-cover; or a coherent endpoint square whose Phi-minimal four-side state has profile {4,5,n-9} unless order disagreement occurs"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A Hamiltonian four-set reduces to descent, top-state support/order disagreement, a permanently internal square label, or a coherent endpoint square; a Phi-minimal coherent square has profile {4,5,n-9}."
+statement_sha256: "ef19e886a4c9d85e4abb688dfa173d52c0f53e16d86b8021889167d805da07e0"
+substantive_worker_ids:
+  - 586
+  - 1195
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "A Hamiltonian four-set yields descent, disagreement, permanent internality, or a coherent endpoint square"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T01:52:48.113867+00:00"
+version: 10

@@ -1,0 +1,39 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "797df68175cadc5fe0c453e945d9a7d30571e9c2d052d9220475ec300d421a7b"
+created_at: "2026-09-29T18:16:24.908623+00:00"
+id: "with_three_exterior_labels_yields_a_sixset_or_a_common_fourcore"
+last_elevation_revision: 10659
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+object_type: "research"
+origin_worker_id: 637
+parent_id: "localextend01"
+position: 1
+research_interface:
+  consumer: "longest-path complement routes; five-side transport; fixed-core amplification"
+  given: "a Hamiltonian five-set and at least three exterior labels in a minimum counterexample"
+  produces: "a proper Hamiltonian six-set with path-cover-two complement, or three Hamiltonian five-sets on one common four-core, each with path-cover-two complement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A Hamiltonian five-set with three exterior labels yields a six-set or a common four-core"
+statement_sha256: "e01a8ba2f11253ffd382c0595b8c4a9b7a73a6305d318af3bd5555232590120c"
+substantive_worker_ids:
+  - 637
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "A Hamiltonian five-set with three exterior labels yields a six-set or a common four-core"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:16:24.908623+00:00"
+version: 4

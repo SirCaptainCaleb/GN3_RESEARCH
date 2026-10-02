@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a9e04d267e92791013708346a660ae4b7038e7781c752c071fbe73dafd8d51f8"
+created_at: "2026-09-21T18:44:53.20259+00:00"
+id: "incidencerank_spectral_identity"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000586"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  last_audit_observation:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  relation_to_literature: "General form of the incidence-rank lens used in the recent P4 work."
+  source_kind: "new_project_toolkit"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "exact_cliquecover_reformulation_of_linear_triple_systems"
+position: 10
+research_interface:
+  consumer: "spectral/rank route to upper bounds"
+  given: "intersection graph F of a linear triple system"
+  need: "lower-bound rank(3I+A) for induced-P_ell-free realizable F"
+  target_scale: "rank about 3m/ell would match the conjectural ell*n/3 scale"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For a linear 3-graph with incidence matrix N and intersection adjacency matrix A, N^T N=3I+A, so rank(N)=m-mult_A(-3)≤n."
+statement_sha256: "f4c2fa6b6053a57ca2886c3abb82a7c272f0ce6f9254dc2359b592f263613314"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Incidence-rank spectral identity"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:03:22.295525+00:00"
+version: 4

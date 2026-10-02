@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "0cfb96541dba95143d75ccd03190f25759122ce347a59b5e436cd905a2cc1ca5"
+created_at: "2026-09-23T23:25:06.326066+00:00"
+id: "to_the_368extension_search_around_the_11111717_gadget"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000455"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "12db173a-f918-43e1-8622-f249ae192b9d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:56:41.104817+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "12db173a-f918-43e1-8622-f249ae192b9d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:56:41.104817+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:55:40.952924+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "counterexample"
+origin_worker_id: 225
+parent_id: "four_commonlast_ascending_edges_can_have_values_11111717"
+position: 0
+research_interface:
+  consequence: "Shows the 368-extension computation/search statement missed the legal fifth edge G={v,a_13,c_4}; five common-last ascending edges do occur in this extension class."
+  consumer:
+    - "five-edge deficit-doubling route"
+    - "humanization campaign"
+  fence: "Does not refute 6cca826aad42; the resulting ranks (11,11,14,17,17) satisfy the deficit-doubling inequality."
+  given:
+    - "e56c6d0fce1a base configuration"
+  refutes: "oneedge_extension_search_around_the_11111717_configuration"
+  role: "human counterexample to computational evidence"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The 11,11,17,17 gadget admits a legal fifth common-terminal ascending nonspecial edge, producing ordered ranks (11,11,14,17,17) and refuting the earlier finite-search exclusion."
+statement_sha256: "2e433433b284a4bd51810d0ed5da2070788b77ed3f4cb428bc9ad3c2101be9e2"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Human counterexample to the 368-extension search around the 11,11,17,17 gadget"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 6

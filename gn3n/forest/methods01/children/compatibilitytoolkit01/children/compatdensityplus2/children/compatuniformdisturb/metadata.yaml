@@ -31,7 +31,7 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-27T04:19:52.785041+00:00"
     worker_id: 578
-  source_brainstorm: "1000631"
+  source_brainstorm: "deletioncover_incompatibility_forcing"
 object_type: "research"
 origin_worker_id: 607
 parent_id: "compatdensityplus2"

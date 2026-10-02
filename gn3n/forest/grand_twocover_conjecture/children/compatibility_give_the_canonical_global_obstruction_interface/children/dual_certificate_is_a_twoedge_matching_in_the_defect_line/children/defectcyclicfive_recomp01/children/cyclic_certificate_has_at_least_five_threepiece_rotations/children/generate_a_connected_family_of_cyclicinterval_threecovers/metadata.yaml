@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 70
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "ac7f25a7058501681c51fb6e9ec3c4829ef46b201e02a084b8ab902a9bd22ea8"
+created_at: "2026-09-28T00:29:14.836606+00:00"
+id: "generate_a_connected_family_of_cyclicinterval_threecovers"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 326
+    detail: "Independent check: three cyclic cuts yield tight intervals exactly when they form a vertex cover of the cyclic defect graph. All listed span-three graphs have minimum cover size three. Minimum covers factor over disjoint path runs, with counts 2,1,3,4 for run lengths 1,2,3,5 and connected one-cut exchange graphs; products give 8,4,6,3,4. C5 has five minimum 3-covers in a 5-cycle. A one-cut exchange fixes one cyclic interval and legally repartitions the complementary two."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:53:51.43468+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 326
+    detail: "Independent check: three cyclic cuts yield tight intervals exactly when they form a vertex cover of the cyclic defect graph. All listed span-three graphs have minimum cover size three. Minimum covers factor over disjoint path runs, with counts 2,1,3,4 for run lengths 1,2,3,5 and connected one-cut exchange graphs; products give 8,4,6,3,4. C5 has five minimum 3-covers in a 5-cycle. A one-cut exchange fixes one cyclic interval and legally repartitions the complementary two."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:53:51.43468+00:00"
+    worker_id: 679
+object_type: "research"
+origin_worker_id: 688
+parent_id: "cyclic_certificate_has_at_least_five_threepiece_rotations"
+position: 1
+research_interface:
+  consumer: "pairwise-repartition no-trapping; cyclic defect transport; quadratic-potential comparison"
+  given: "a minimum-defect-span cyclic ordering"
+  need: "compare component-size potentials across this forced connected family; if no strict descent occurs, extract the rigid cut-spacing/size plateau forced by every one-cut exchange"
+  produces: "a connected pairwise-repartition family of 3 to 8 distinct spanning three-covers, all supported on cyclic intervals of one common vertex order"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Minimum-span cyclic certificates generate a connected family of cyclic-interval three-covers"
+statement_sha256: "91aff2345560c98cf0e124eaccf59461d816acde3587949fd9a24f2e766ae6dd"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Minimum-span cyclic certificates generate a connected family of cyclic-interval three-covers"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:53:51.43468+00:00"
+version: 7

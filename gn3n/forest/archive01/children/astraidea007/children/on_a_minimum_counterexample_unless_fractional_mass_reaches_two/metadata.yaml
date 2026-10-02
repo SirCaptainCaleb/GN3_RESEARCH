@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "7cdd9ad4b09c783836741c54c6d861b07038a7ea556f36800ba84554db967ec2"
+created_at: "2026-09-27T14:24:00.182946+00:00"
+id: "on_a_minimum_counterexample_unless_fractional_mass_reaches_two"
+last_elevation_revision: 0
+last_substantive_worker_id: 614
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 263
+    detail: "With 2<tau*<3, Astra 007 gives only pc<=3; the sharp half-order value tau*=2+1/lambda confirms the stated inertness without an independent tau*<=2 mechanism."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  coverage: "strategic evaluation of Astra 007"
+  last_audit_observation:
+    claim_id: 263
+    detail: "With 2<tau*<3, Astra 007 gives only pc<=3; the sharp half-order value tau*=2+1/lambda confirms the stated inertness without an independent tau*<=2 mechanism."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T14:36:33.019364+00:00"
+    worker_id: 616
+  small_order_free: true
+object_type: "research"
+origin_worker_id: 614
+parent_id: "astraidea007"
+position: 0
+research_interface:
+  consumer: "Astra 007 portfolio evaluation; Astra 001 fractional route"
+  given: "minimum-counterexample calculus and certified fractional bounds"
+  need: "prioritize lowering fractional mass to two rather than studying ceiling-rounding in isolation"
+  produces: "Astra 007 is inert whenever 2<tau*<3 and needs an independent tau*<=2 mechanism"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Astra 007 alone is inert on a minimum counterexample unless fractional mass reaches two"
+statement_sha256: "efdc7b280fbbf165815712e42f11eafd39cff28f96b9a7df5605f83f775bdb21"
+substantive_worker_ids:
+  - 614
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Astra 007 alone is inert on a minimum counterexample unless fractional mass reaches two"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:32:16.159674+00:00"
+version: 5

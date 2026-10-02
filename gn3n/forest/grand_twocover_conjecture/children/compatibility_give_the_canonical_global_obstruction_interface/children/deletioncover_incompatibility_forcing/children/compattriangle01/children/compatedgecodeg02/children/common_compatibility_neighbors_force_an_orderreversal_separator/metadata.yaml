@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2e08eb3ff1a9a20b5b4e64189158d0ad411a7022a6cfe9c588301d206c5297b3"
+created_at: "2026-09-27T01:53:43.934377+00:00"
+id: "common_compatibility_neighbors_force_an_orderreversal_separator"
+last_elevation_revision: 0
+last_substantive_worker_id: 624
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 184
+    detail: "Two common neighbors force a common insertion slot by the certified codegree refinement; triangle localization places the two flanking labels, and compatibility along a path avoiding a,b preserves the a/b order, proving the separator conclusion."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+  brainstorm_development: true
+  last_audit_observation:
+    claim_id: 184
+    detail: "Two common neighbors force a common insertion slot by the certified codegree refinement; triangle localization places the two flanking labels, and compatibility along a path avoiding a,b preserves the a/b order, proving the separator conclusion."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T04:19:52.785041+00:00"
+    worker_id: 578
+object_type: "research"
+origin_worker_id: 624
+parent_id: "compatedgecodeg02"
+position: 0
+research_interface:
+  consumer: "extremal compatibility density; deletion-cover incompatibility forcing"
+  given: "a compatibility edge with two common compatibility neighbors"
+  need: "combine this separator property with extremal graph structure to sharpen the global density bound"
+  produces: "a pure order-reversal description of an incompatible common-neighbor pair and a two-vertex separator in the compatibility graph"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two common compatibility neighbors force an order-reversal separator"
+statement_sha256: "f594565e02771c0a297d856a6634f2e0cdf7a3afdfcf4a7a4488be929e871337"
+substantive_worker_ids:
+  - 624
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two common compatibility neighbors force an order-reversal separator"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T13:37:52.308794+00:00"
+version: 6

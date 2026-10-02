@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "8735377470dbb2e8daab77d343d4b86406e5fd87659814fa1c49718861e4e742"
+created_at: "2026-09-24T19:11:13.411605+00:00"
+id: "centralwindow_ordering_boosts_switching_source_mass_to_185512"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: "1000727"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8887eda8-a008-40bb-a7ca-abaf87f91c6b"
+    detail: "Reconstructed the rank-order inequality N_R<=max(0,4R-2p-3), hence r_i>=ceil((2p+i+3)/4), the source-mass sum (p/2)s+s^2/8-s/8, and the 185/512 coefficient at s=(5/8-o(1))p. The simultaneous-family inequality follows exactly from 2f54b541202a. Mathematics and recorded premise manifest are correct; support remains provisional while 2f54b541202a/b032348c1a8a support is unresolved."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:45:57.633206+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "8887eda8-a008-40bb-a7ca-abaf87f91c6b"
+    detail: "Reconstructed the rank-order inequality N_R<=max(0,4R-2p-3), hence r_i>=ceil((2p+i+3)/4), the source-mass sum (p/2)s+s^2/8-s/8, and the 185/512 coefficient at s=(5/8-o(1))p. The simultaneous-family inequality follows exactly from 2f54b541202a. Mathematics and recorded premise manifest are correct; support remains provisional while 2f54b541202a/b032348c1a8a support is unresolved."
+    math_version: 4
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:45:57.633206+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+object_type: "theorem"
+origin_worker_id: 201
+parent_id: "switching_families_force_quadratic_entrancepotential_mass"
+position: 0
+research_interface:
+  consequence: "The full rank distribution of switchers raises the forced local source-potential mass from coefficient 5/16 to 185/512 asymptotically, and yields a global quadratic inequality with an additional positive s_v^2/8 term."
+  consumer:
+    - "post-43/48 weighted switching route"
+    - "near-extremizer quadratic stability"
+    - "global source-congestion optimization"
+  given:
+    - "b032348c1a8a dense switching family"
+    - "49080cbf1371 central-window packing for maximum-path singletons"
+    - "2f54b541202a global weighted source budget"
+  next_need: "Optimize the global inequality jointly with the exact 43/48 defect identity and rank-gap/aligned-mass penalties. The new s_v^2 term may force dispersion/concentration constraints invisible to the earlier linear source-mass bound; alternatively threshold the rank-order inequality to couple with reciprocal-stretch bounds."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Central-window ordering boosts switching source mass to 185/512."
+statement_sha256: "713c572787d4d866d0994d34d0f29c838dcca09a3f95e81fc383739e3b0b3ea1"
+substantive_worker_ids:
+  - 201
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Central-window ordering boosts switching source mass to 185/512"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 10

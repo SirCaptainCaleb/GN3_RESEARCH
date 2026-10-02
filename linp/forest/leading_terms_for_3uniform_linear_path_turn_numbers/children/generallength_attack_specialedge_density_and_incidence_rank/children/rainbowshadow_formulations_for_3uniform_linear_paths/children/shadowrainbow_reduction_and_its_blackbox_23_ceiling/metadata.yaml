@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "12e4a2474124d66d95d94bfed16294777d9ab7bf38f8a62128b9b43b62d080a0"
+created_at: "2026-09-21T18:56:07.14701+00:00"
+id: "shadowrainbow_reduction_and_its_blackbox_23_ceiling"
+last_elevation_revision: null
+last_substantive_worker_id: 206
+legacy_id: "1001094"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "58465fec-580d-4753-b498-c0aaaccec671"
+    detail: "The A/B shadow coloring is proper; a rainbow path has distinct A path vertices and distinct B colors, so its triples form a linear path. The 3/8 expectation and resulting coefficient 2/(3alpha) are correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:58:54.556232+00:00"
+    worker_id: "820d7b84-2e16-49b4-b64b-45cf022f2d58"
+  last_audit_observation:
+    claim_id: "58465fec-580d-4753-b498-c0aaaccec671"
+    detail: "The A/B shadow coloring is proper; a rainbow path has distinct A path vertices and distinct B colors, so its triples form a linear path. The 3/8 expectation and resulting coefficient 2/(3alpha) are correct."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:58:54.556232+00:00"
+    worker_id: "820d7b84-2e16-49b4-b64b-45cf022f2d58"
+object_type: "lemma"
+origin_worker_id: 206
+parent_id: "rainbowshadow_formulations_for_3uniform_linear_paths"
+position: 1
+research_interface:
+  consumer: "general upper-bound strategy"
+  gap: "improvement below 2/3 requires structure beyond generic properly colored graphs"
+  role: "alternative reduction plus route ceiling"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Shadow-rainbow reduction and its black-box 2/3 ceiling."
+statement_sha256: "5036f22dc27b31bee26519d35bbf5fd56ed01935b122953d2ac28320e0b82e04"
+substantive_worker_ids:
+  - 206
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Shadow-rainbow reduction and its black-box 2/3 ceiling"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

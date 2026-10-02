@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "069089232c0a5bb80dbf4e20e1fe6ed4420915ac4b1a9548f0b16a2292f286b5"
+created_at: "2026-09-27T19:58:10.451853+00:00"
+id: "extenders_force_hamiltonicity_or_two_reverse_endpoint_triples"
+last_elevation_revision: 0
+last_substantive_worker_id: 556
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 361
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:47:17.752948+00:00"
+    worker_id: 572
+  last_audit_observation:
+    claim_id: 361
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:47:17.752948+00:00"
+    worker_id: 572
+object_type: "research"
+origin_worker_id: 556
+parent_id: "pathcalc01"
+position: 1
+research_interface:
+  consumer: "endpoint transport; common-core transport; repair of recent same-end-extender overclaims"
+  given: "a tight path with two exterior vertices extending the same end and a third exterior vertex extending the opposite end"
+  need: "use the doubled reverse-end obstruction in endpoint transport and repair same-end-extender arguments"
+  produces: "either a Hamilton path on the whole support or two explicit reverse triples through the shared endpoint"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two same-end extenders force Hamiltonicity or two reverse endpoint triples"
+statement_sha256: "3cf5d923c0d6fe6e9fe25970124db05cdb314dc8edeeb8dd8a69a67fbc153446"
+substantive_worker_ids:
+  - 556
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two same-end extenders force Hamiltonicity or two reverse endpoint triples"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:47:17.752948+00:00"
+version: 5

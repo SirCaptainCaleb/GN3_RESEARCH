@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c0e2a6c0e072513508028ec6b2bb2cf0cc424a5a2f66301a3138c54e7f8215e2"
+created_at: "2026-09-27T21:35:52.872593+00:00"
+id: "form_a_reduces_to_a_hamiltonian_fourset_or_one_matchingblock_k4"
+last_elevation_revision: 0
+last_substantive_worker_id: 556
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+object_type: "research"
+origin_worker_id: 556
+parent_id: "deletion_covers_have_only_three_orderneutral_block_forms"
+position: 1
+research_interface:
+  consumer: "end-adjacent deletion dynamics; endpoint transport"
+  given: "the wrapped equality-two-crossing form (A) in the end-adjacent normal form"
+  need: "consume the matching-block residue or combine the Hamiltonian-four branch with another local deletion probe"
+  produces: "a Hamiltonian four-set with non-Hamiltonian two-coverable complement, or a uniquely oriented matching-block K4"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Wrapped end-adjacent form A reduces to a Hamiltonian four-set or one matching-block K4."
+statement_sha256: "07a9902b4b989e898db7b4f36ee9e642eedd763e054d8c407e2587e79758de54"
+substantive_worker_ids:
+  - 556
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Wrapped end-adjacent form A reduces to a Hamiltonian four-set or one matching-block K4"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:47:17.752948+00:00"
+version: 8

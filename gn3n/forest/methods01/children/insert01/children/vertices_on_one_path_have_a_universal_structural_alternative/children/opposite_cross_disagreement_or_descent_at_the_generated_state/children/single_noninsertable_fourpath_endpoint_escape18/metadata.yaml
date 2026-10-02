@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "50b2f35e54ee452aed3c8e305bbac9beb7172831aa20cb6d1609b1826cdf63b7"
+created_at: "2026-09-29T19:34:32.601435+00:00"
+id: "single_noninsertable_fourpath_endpoint_escape18"
+last_elevation_revision: 8911
+last_substantive_worker_id: 708
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-09-29T19:35:12.982087+00:00"
+  audit_resolution:
+    claim_id: 123
+    detail: "Independent check passed. Apply insert01 to the single noninsertable endpoint u on M. First-type gives a Hamiltonian K4 or cyclic exceptional K4 via 0425e03e2aa3; the former is consumed by 7bab8dd31d87/ham6_large_escape01 and the latter extends to a Hamiltonian five-set by smallset01 and is consumed by ham5_large_escape01. In second-type, T=(r_{i+1},u,r_i) is tight. For distinct a,b in S-{u}, if X=T∪{a} is Hamiltonian it is consumed by the four-side escape machinery. If X is non-Hamiltonian, db835c34cc40 (independently checked from the smallset edge-order argument) gives a Hamiltonian T∪{b} or X∪{b}, of order four or five respectively; minimum-counterexample calculus supplies non-Hamiltonian pc2 complements and the corresponding large-order escape theorem yields disagreement or generated-state strict descent."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:35:20.149027+00:00"
+    worker_id: 665
+  audit_trigger_kind: "destructive_effect"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 123
+    detail: "Independent check passed. Apply insert01 to the single noninsertable endpoint u on M. First-type gives a Hamiltonian K4 or cyclic exceptional K4 via 0425e03e2aa3; the former is consumed by 7bab8dd31d87/ham6_large_escape01 and the latter extends to a Hamiltonian five-set by smallset01 and is consumed by ham5_large_escape01. In second-type, T=(r_{i+1},u,r_i) is tight. For distinct a,b in S-{u}, if X=T∪{a} is Hamiltonian it is consumed by the four-side escape machinery. If X is non-Hamiltonian, db835c34cc40 (independently checked from the smallset edge-order argument) gives a Hamiltonian T∪{b} or X∪{b}, of order four or five respectively; minimum-counterexample calculus supplies non-Hamiltonian pc2 complements and the corresponding large-order escape theorem yields disagreement or generated-state strict descent."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T19:35:20.149027+00:00"
+    worker_id: 665
+object_type: "research"
+origin_worker_id: 708
+parent_id: "opposite_cross_disagreement_or_descent_at_the_generated_state"
+position: 0
+research_interface:
+  consumer: "double-wrap deletion route; paired noninsertability; connector/opposite-cross frontier"
+  given: "one endpoint of a Hamiltonian four-path is noninsertable into the middle of one long component of its path-cover-two complement"
+  produces: "order disagreement or strict generated-state descent, eliminating connector/cross as separate large-order residues"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Above order seventeen one noninsertable four-path endpoint already reaches disagreement or descent"
+statement_sha256: "0bd807db212730256b3a7f1f936a4aa363c1114c0503a9802b2e9575fde2ae81"
+substantive_worker_ids:
+  - 708
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "Above order seventeen one noninsertable four-path endpoint already reaches disagreement or descent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T19:35:20.149027+00:00"
+version: 11

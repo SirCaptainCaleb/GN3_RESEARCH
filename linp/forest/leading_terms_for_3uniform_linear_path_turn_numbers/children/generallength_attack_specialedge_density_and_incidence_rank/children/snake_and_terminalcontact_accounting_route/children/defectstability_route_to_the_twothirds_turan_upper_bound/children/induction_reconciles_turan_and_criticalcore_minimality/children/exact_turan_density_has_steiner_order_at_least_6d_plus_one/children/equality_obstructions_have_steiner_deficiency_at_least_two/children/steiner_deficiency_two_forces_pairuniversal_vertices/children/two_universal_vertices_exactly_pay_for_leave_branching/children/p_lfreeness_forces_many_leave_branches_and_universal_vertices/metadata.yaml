@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 6
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "2bb743543d7be6ebffc210c685b9160181ad95b60ba5e31ebebe98bc3a1a8dc8"
+created_at: "2026-09-24T03:50:10.199535+00:00"
+id: "p_lfreeness_forces_many_leave_branches_and_universal_vertices"
+last_elevation_revision: null
+last_substantive_worker_id: 254
+legacy_id: "1000984"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "3de42864-41b8-4008-a92a-5166a947f5e0"
+    detail: "Independent reconstruction: deleting the leave-branch set lowers each surviving hypergraph degree by at most its size, the endpoint-potential floor then forces b>=3d-2ell+3, and the exact s=2 defect identity gives z>=b with the stated residue values."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:16:03.748931+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "3de42864-41b8-4008-a92a-5166a947f5e0"
+    detail: "Independent reconstruction: deleting the leave-branch set lowers each surviving hypergraph degree by at most its size, the endpoint-potential floor then forces b>=3d-2ell+3, and the exact s=2 defect identity gives z>=b with the stated residue values."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:16:03.748931+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  role: "s=2 branch deletion amplification"
+  uses:
+    - "two_universal_vertices_exactly_pay_for_leave_branching"
+    - "endpointpotential_floor_and_a_stronger_ascendingedge_rank_floor"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "two_universal_vertices_exactly_pay_for_leave_branching"
+position: 0
+research_interface:
+  consequence: "Small branching is impossible. Residue 0 needs at least three branch vertices and three pair-universal vertices; residue 2 needs at least two of each."
+  consumer:
+    - "s=2 equality classification"
+    - "grand equality induction"
+  given:
+    - "Steiner deficiency s=2"
+    - "P_ell-free"
+  next_need: "Delete only a strategically chosen subset of branch vertices, using their leave degrees to improve the degree-loss estimate. Alternatively exploit the resulting multiple universal stars: in residues 0 and 2 there are at least 3 or 2 perfect star matchings, whose pairwise unions are alternating even cycles."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "At deficiency two, P_l-freeness forces many leave branches and universal vertices."
+statement_sha256: "a24ac2dc53229e63acd40b1cd59348629de1b81e6604396315c3d1461b06ce30"
+substantive_worker_ids:
+  - 185
+  - 254
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At deficiency two, P_l-freeness forces many leave branches and universal vertices"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 7

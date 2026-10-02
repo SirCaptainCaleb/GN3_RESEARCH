@@ -1,0 +1,38 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "d4b5e4c73babd98d83c1e74c01a4aba480393546b2749a9588a37d2c94a1163e"
+created_at: "2026-09-28T00:55:39.429477+00:00"
+id: "astra003omissionbridge_frame01"
+last_elevation_revision: 0
+last_substantive_worker_id: 582
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proposal"
+metadata:
+  organizational: true
+  proof_frame_wrapper: true
+object_type: "research"
+origin_worker_id: 582
+parent_id: "the_443_plateau_has_complete_pair_reachability_on_its_threeside"
+position: 1
+research_interface:
+research_level: "working_unit"
+semantic_container_text: "Order-eleven omission-surface continuation: large omission-label sets, targeted singleton attempts, and eight-label mutual bad-extension cores are used to connect equitable 5|5|1 states back to the 4|4|3 shell and rule out trapped omission geometry."
+simplified_statement: null
+statement_sha256: "0a358298e6e07d3c44f7ef30501a2f2b201bdeed7e70becf8756a01802244308"
+substantive_worker_ids:
+  - 582
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Order-eleven omission-surface continuation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:59:57.26387+00:00"
+version: 3

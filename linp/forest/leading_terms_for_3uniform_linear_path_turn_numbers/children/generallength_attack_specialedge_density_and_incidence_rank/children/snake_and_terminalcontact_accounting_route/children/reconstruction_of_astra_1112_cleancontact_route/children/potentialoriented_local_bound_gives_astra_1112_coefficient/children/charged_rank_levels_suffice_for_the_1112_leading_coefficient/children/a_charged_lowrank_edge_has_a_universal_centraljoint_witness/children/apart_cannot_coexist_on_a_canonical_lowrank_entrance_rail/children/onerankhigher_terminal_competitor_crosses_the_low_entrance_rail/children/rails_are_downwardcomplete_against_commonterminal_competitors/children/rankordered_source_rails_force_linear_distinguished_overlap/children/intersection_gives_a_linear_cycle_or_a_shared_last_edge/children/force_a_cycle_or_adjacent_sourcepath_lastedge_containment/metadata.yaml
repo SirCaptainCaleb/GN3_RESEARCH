@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "b876749638728f8aec76913da58f7fe159163bb5431e9d07653a5ca5e53aeefd"
+created_at: "2026-09-25T21:16:47.057455+00:00"
+id: "force_a_cycle_or_adjacent_sourcepath_lastedge_containment"
+last_elevation_revision: null
+last_substantive_worker_id: 238
+legacy_id: "1000364"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "The repaired v2 statement now explicitly assumes endpoint retention x_j,x_{j+1} in R_i. Applying 41100a9882dd separately gives cycle or source-path last-edge containment. If both last edges coincide, source-path terminal avoidance and rainbowness give three distinct pairwise intersections with E_j,E_{j+1}, hence the claimed 3-cycle."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "e201240b-3d33-481e-b4e1-4b061d69a519"
+    detail: "The repaired v2 statement now explicitly assumes endpoint retention x_j,x_{j+1} in R_i. Applying 41100a9882dd separately gives cycle or source-path last-edge containment. If both last edges coincide, source-path terminal avoidance and rainbowness give three distinct pairwise intersections with E_j,E_{j+1}, hence the claimed 3-cycle."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:46:59.505835+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_failure:
+    reason: "The proof needs the stronger all-entrance branch facts x_j∈V(R_i) and x_{j+1}∈V(R_i) in order to apply 41100a9882dd with the last vertices of R_j,R_{j+1}. The exact statement, however, assumes only |V(R_i)∩V(R_j)|>=2 and |V(R_i)∩V(R_{j+1})|>=2 as the repeated-intersection outcome. Two paths can have at least two common vertices without the last vertex of either smaller path lying on R_i. Thus the first cycle-or-shared-last-edge step is unsupported by the stated interface. The claim becomes valid if the statement explicitly retains the all-entrance data x_j,x_{j+1}∈V(R_i)."
+    recorded_at: "2026-09-25T22:37:03.71936+00:00"
+object_type: "corollary"
+origin_worker_id: 220
+parent_id: "intersection_gives_a_linear_cycle_or_a_shared_last_edge"
+position: 0
+research_interface:
+  consequence: "Two endpoint-retaining repeated source-path intersections force cycles or containment of the two adjacent source-path last edges."
+  consumer:
+    - "hard residue of U_11 color-terminal collisions"
+    - "foreign-last-edge containment route"
+    - "post-43/48 source-path structure"
+  given:
+    - "endpoint-retaining repeated intersections x_j,x_{j+1} in V(R_i)"
+    - "41100a9882dd cycle-or-shared-last-edge lemma"
+    - "source-clean chosen paths R_j,R_{j+1}"
+  next_need: "Use this only when the repeated-intersection mechanism also retains the smaller path endpoint on R_i; bare two-vertex overlap is insufficient."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Endpoint-retaining repeated intersections force a cycle or adjacent source-path last-edge containment."
+statement_sha256: "f74ae98f4f49f6eb45c30a9b1c7aef27dba5501fd94f56f4bad4b58f822116c0"
+substantive_worker_ids:
+  - 220
+  - 238
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Endpoint-retaining repeated intersections force a cycle or adjacent source-path last-edge containment"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 13

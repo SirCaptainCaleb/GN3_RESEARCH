@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c2248e3b574c4affddb7490ce23b114cc82a5addf4f7d541477fe31c6f950fd8"
+created_at: "2026-09-24T19:59:39.744631+00:00"
+id: "flat_rotation_outputs_are_impossible_at_every_potential_level"
+last_elevation_revision: null
+last_substantive_worker_id: 242
+legacy_id: "1000280"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "98202fec-cf1f-4357-8ba0-97b9ca915990"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:46:31.030562+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 242
+parent_id: "rank_rise_specialness_flat_orientation_or_a_highpotential_joint"
+position: 0
+research_interface:
+  consequence: "The unpaid flat-output branch is an independent set on every maximum host path, not only at global maximum potential."
+  consumer:
+    - "multi-level switching iteration"
+    - "post-43/48 progress packing"
+  given:
+    - "6205fe95ecf8 general four-way rotation-output theorem"
+  next_need: "Use with mixed X/U separation to force a uniform one-eighth paid branch at every low-defect misaligned center."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Consecutive flat rotation outputs are impossible at every potential level."
+statement_sha256: "1d12e89d81accaa15c8aaf8a2f020a812be5ecac4a89e1e83ddee74d7de8d2d5"
+substantive_worker_ids:
+  - 242
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Consecutive flat rotation outputs are impossible at every potential level"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 6

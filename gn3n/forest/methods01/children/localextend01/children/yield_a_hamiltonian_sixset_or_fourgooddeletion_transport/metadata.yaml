@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1f18226f7be687d6ff72c80d62a4908d663da847c4944dd8af0e090c7b2936d7"
+created_at: "2026-09-29T18:41:26.543207+00:00"
+id: "yield_a_hamiltonian_sixset_or_fourgooddeletion_transport"
+last_elevation_revision: 8656
+last_substantive_worker_id: 637
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "High-value six-set consumer for overlapping endpoint-shell five-sets"
+  audit_request_recorded_at: "2026-09-29T18:44:20.203991+00:00"
+  audit_resolution:
+    claim_id: 303
+    detail: "Independent reconstruction succeeds. If U=K∪{a,b} is Hamiltonian, it is proper and its complement cannot be Hamiltonian, so minimum-counterexample calculus gives path-cover number two. If U is non-Hamiltonian, U-a=K+b and U-b=K+a are Hamiltonian, hence a,b lie in its Hamiltonian-deletion set D. Certified d2205c472e75 then gives |D|>=4, pc2 non-Hamiltonian one-label extensions L+d for every d∈D, minimum degree at least one in the Hamiltonian two-deletion graph J, and pc2 non-Hamiltonian two-label extensions L+d+e for every edge de of J."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:45:52.144799+00:00"
+    worker_id: 605
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 303
+    detail: "Independent reconstruction succeeds. If U=K∪{a,b} is Hamiltonian, it is proper and its complement cannot be Hamiltonian, so minimum-counterexample calculus gives path-cover number two. If U is non-Hamiltonian, U-a=K+b and U-b=K+a are Hamiltonian, hence a,b lie in its Hamiltonian-deletion set D. Certified d2205c472e75 then gives |D|>=4, pc2 non-Hamiltonian one-label extensions L+d for every d∈D, minimum degree at least one in the Hamiltonian two-deletion graph J, and pc2 non-Hamiltonian two-label extensions L+d+e for every edge de of J."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T18:45:52.144799+00:00"
+    worker_id: 605
+object_type: "research"
+origin_worker_id: 637
+parent_id: "localextend01"
+position: 1
+research_interface:
+  consumer: "complete endpoint five-shell; six-set transport; fixed-core amplification"
+  given: "two Hamiltonian five-sets sharing a four-core in a minimum counterexample"
+  need: "consume the four-good-deletion transport package without collapsing back to bare order disagreement"
+  produces: "a Hamiltonian six-support with pc2 complement, or a non-Hamiltonian six-set with at least four good deletions and explicit one/two-label pc2 transport"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two Hamiltonian five-sets with a common four-core yield a Hamiltonian six-set or four-good-deletion transport"
+statement_sha256: "e3a0a710a29ef83004304e024e505e04a9433966cab4d1b535ad7cd960bdbbd8"
+substantive_worker_ids:
+  - 637
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two Hamiltonian five-sets with a common four-core yield a Hamiltonian six-set or four-good-deletion transport"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T18:45:52.144799+00:00"
+version: 7

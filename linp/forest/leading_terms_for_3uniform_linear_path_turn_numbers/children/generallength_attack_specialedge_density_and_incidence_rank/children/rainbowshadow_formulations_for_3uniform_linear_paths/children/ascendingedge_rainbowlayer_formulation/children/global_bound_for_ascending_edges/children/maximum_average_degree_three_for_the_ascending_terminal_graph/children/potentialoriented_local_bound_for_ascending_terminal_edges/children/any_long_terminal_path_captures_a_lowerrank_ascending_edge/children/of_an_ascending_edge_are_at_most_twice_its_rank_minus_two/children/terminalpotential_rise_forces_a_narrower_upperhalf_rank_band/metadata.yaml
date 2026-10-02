@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 94
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "e1d6725b374c1982f876949464346d368a4b5aa6ca71066e4dc39b17c20c25b0"
+created_at: "2026-09-22T08:14:21.659663+00:00"
+id: "terminalpotential_rise_forces_a_narrower_upperhalf_rank_band"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: "1000726"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+object_type: "lemma"
+origin_worker_id: 205
+parent_id: "of_an_ascending_edge_are_at_most_twice_its_rank_minus_two"
+position: 0
+research_interface:
+  consequence: "strict rises miss the bottom charged rank when p is even and always lie in the narrower band ceil((p+3)/2)<=q<=p"
+  consumer:
+    - "strict potential-rise terminal-degree conjecture"
+    - "central-window packing"
+  next_obligation: "combine this narrow band with central-window packing and maximum-path transversals to control strict-rise multiplicity"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "If e={x,v,u} is ascending nonspecial with edge rank q and φ(v)<φ(u), then q≥ceil((φ(v)+3)/2)."
+statement_sha256: "137995c6597570fd64392e008d24f1327b41009047c308f4d5f63413c35e68db"
+substantive_worker_ids:
+  - 205
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Strict terminal-potential rise forces a narrower upper-half rank band"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 6

@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "87db5d722cff8547cc41ad395568495b4ede060ee86ab62a9dcf694f41942b2c"
+created_at: "2026-10-01T06:24:31.773097+00:00"
+id: "hard_fourside_endpoint_graph_can_never_be_a_perfect_matching"
+last_elevation_revision: 10807
+last_substantive_worker_id: 952
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "fourside_square_descends_or_is_supported_on_one_small_component"
+  audit_request_reason: "Verify the exposed-endpoint refinement of the positioned four-side pc2 square: endpoint transfers C->C+b or C+c, the exact Phi changes 8-2s and 20-4s, the different-component n<=11 residue, and the same-component order<=5 residue."
+  audit_request_recorded_at: "2026-10-01T06:36:16.929922+00:00"
+  audit_resolution:
+    claim_id: 1017
+    detail: "Reconstructed from two_bad_five_extensions_adjacent_four01. The endpoint-deletion graph J is the opposite-edge image of the Hamiltonian-pair graph K on the four-side; complementing 2-subsets of a 4-set preserves edge adjacency, so the two adjacent edges in K give two adjacent edges in J. The perfect-matching residue is therefore impossible."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T06:53:46.184027+00:00"
+    worker_id: 1016
+  audit_trigger_kind: "chain_checkpoint"
+  last_audit_observation:
+    claim_id: 1017
+    detail: "Reconstructed from two_bad_five_extensions_adjacent_four01. The endpoint-deletion graph J is the opposite-edge image of the Hamiltonian-pair graph K on the four-side; complementing 2-subsets of a 4-set preserves edge adjacency, so the two adjacent edges in K give two adjacent edges in J. The perfect-matching residue is therefore impossible."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T06:53:46.184027+00:00"
+    worker_id: 1016
+object_type: "research"
+origin_worker_id: 952
+parent_id: "four_side_endpoint_matching_bridge01"
+position: 0
+research_interface:
+  consumer: "four-side no-trapping; endpoint transport; proof-tree cleanup"
+  given: "the hard non-Hamiltonian endpoint six-shell of four_side_endpoint_matching_bridge01"
+  implication: "fixed_endpoint_matching_escape01 is operationally bypassed; only the certified overlap-amplification branch remains"
+  produces: "two adjacent endpoint-preserving Hamiltonian four-windows, eliminating the fixed-endpoint perfect-matching branch"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The endpoint-deletion graph of the hard four-side six-shell always has adjacent edges, so the perfect-matching residue is impossible."
+statement_sha256: "ccd03794ba7bad0e96e434e247081cb114f010432375e2e78500e1dbf1c67005"
+substantive_worker_ids:
+  - 952
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The hard four-side endpoint graph can never be a perfect matching"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T07:20:22.561878+00:00"
+version: 11

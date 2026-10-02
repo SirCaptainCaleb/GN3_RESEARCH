@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "56cb8e07b59d4da46e1b0e04c888db96296661c44d052adca90b8744b8175e83"
+created_at: "2026-09-22T14:52:13.597919+00:00"
+id: "calderbankchungsturtevant_monotonepath_suppression"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: "1000835"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "931ea21e-6de5-4807-b4ca-f431d173cd27"
+    detail: "Verified against Calderbank--Chung--Sturtevant, Discrete Mathematics 50 (1984), 15--28, DOI 10.1016/0012-365X(84)90031-1 and the primary PDF. The GF(2)^k edge-label reduction, f/g definitions and recurrences, projection lemma limsup 2^{-k}g(k)<=2/d, the t=8,d=4 appendix input, and the general-n recursive construction yielding alpha(n)<=(1/2+o(1))n all match the source."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:56:19.797487+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  authors:
+    - "A. R. Calderbank"
+    - "F. R. K. Chung"
+    - "D. G. Sturtevant"
+  last_audit_observation:
+    claim_id: "931ea21e-6de5-4807-b4ca-f431d173cd27"
+    detail: "Verified against Calderbank--Chung--Sturtevant, Discrete Mathematics 50 (1984), 15--28, DOI 10.1016/0012-365X(84)90031-1 and the primary PDF. The GF(2)^k edge-label reduction, f/g definitions and recurrences, projection lemma limsup 2^{-k}g(k)<=2/d, the t=8,d=4 appendix input, and the general-n recursive construction yielding alpha(n)<=(1/2+o(1))n all match the source."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:56:19.797487+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  proof_import: "main mechanism imported; finite appendix linked"
+  url: "https://fanchung.ucsd.edu/mypaps/fanpap/63iswnbsaipieog.PDF"
+  year: 1984
+object_type: "research"
+origin_worker_id: 195
+parent_id: "external_toolkit_for_structured_lowerbound_constructions"
+position: 10
+research_interface:
+  consumer:
+    - "structured lower-bound construction search"
+  given: "edge-ordered complete graph / F_2^k difference labels"
+  working_route: "encode linear-path traversal by ordered algebraic transition labels and seek a finite projection branching lemma"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "There are edge orderings of K_n in which every increasing simple path has length at most (1/2+o(1))n."
+statement_sha256: "e9ba3998e53c027dd482af62ef27d92588a164185786722f69b2795b17f0db55"
+substantive_worker_ids:
+  - 195
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Calderbank--Chung--Sturtevant monotone-path suppression"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T16:43:43.904311+00:00"
+version: 6

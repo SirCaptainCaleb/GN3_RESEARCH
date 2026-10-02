@@ -1,0 +1,66 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "8622601fae5ba8b71826343e84cebd1c115f5005fb90da1cddce203deda034cd"
+created_at: "2026-09-24T04:08:25.616869+00:00"
+id: "forces_rankpreserving_propagation_to_a_second_terminal_edge"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000706"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Added exact depends_on edge to 4c0a0105c825 at its repaired math version 4."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "98923636-0fc5-486b-93f2-4897de511ffb"
+    detail: "Added exact depends_on edge to 4c0a0105c825 at its repaired math version 4."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:13:22.252844+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record the saturated-fan lemma as the logical premise used by the propagation proof."
+    recorded_at: "2026-09-24T21:11:11.403838+00:00"
+    to_id: "vertices_force_an_exact_saturated_rankminusone_terminal_fan"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "vertices_force_an_exact_saturated_rankminusone_terminal_fan"
+position: 0
+research_interface:
+  consequence: "Saturation around any rank-(p-1) nonspecial terminal edge forces another rank-(p-1) nonspecial edge through the same terminal, with entrance at the penultimate private vertex. The defect branch is impossible."
+  consumer:
+    - "Type-A transfer iteration"
+    - "general charged-terminal bound"
+    - "grand 2/3 conjecture"
+  given:
+    - "4c0a0105c825 exact saturated fan"
+  next_need: "Iterate this rank-preserving transfer. For h→f_beta, compare a longest witness of f_beta with P. Seek a finite-state entrance walk among the 2p-5 rank≤p-1 terminal edges; show repeated private-entrance transfers either revisit an edge (creating a short cycle that splices) or generate too many distinct rank-(p-1) edges."
+  role: "rank-preserving propagation in the Type-A saturated fan"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Type-A saturation forces rank-preserving propagation to a second terminal edge."
+statement_sha256: "9098e4ae1112a598f22af0c3ebc3b1b00fd42a5b82f72f0b9087e961003e9da1"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Type-A saturation forces rank-preserving propagation to a second terminal edge"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

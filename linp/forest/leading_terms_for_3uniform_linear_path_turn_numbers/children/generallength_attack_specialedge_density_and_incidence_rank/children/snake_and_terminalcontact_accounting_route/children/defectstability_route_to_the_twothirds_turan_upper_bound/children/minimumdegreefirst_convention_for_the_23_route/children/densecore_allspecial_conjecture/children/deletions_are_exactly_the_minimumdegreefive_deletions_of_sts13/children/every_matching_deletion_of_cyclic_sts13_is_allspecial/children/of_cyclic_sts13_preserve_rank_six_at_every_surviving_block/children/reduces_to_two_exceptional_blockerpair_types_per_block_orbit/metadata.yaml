@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 3
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "cbde2781f57d99e166841723d9b73dbf50a120ea3025423b59f5eb7d698238f8"
+created_at: "2026-09-23T21:47:44.076483+00:00"
+id: "reduces_to_two_exceptional_blockerpair_types_per_block_orbit"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000980"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Verified the six-path blocker tables. With zero or one high-frequency deleted A/B block at least two entrance labels survive; with two compatible high-frequency blocks, failure is exactly an adjacent pair of the corresponding 6-cycle, yielding two stabilizer orbits."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:11.776216+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  humanization_target: "all_matching_deletions_of_cyclic_sts13_are_allspecial"
+  last_audit_observation:
+    claim_id: "edf30913-f09f-4f02-8d65-51f0d8e3be3f"
+    detail: "Verified the six-path blocker tables. With zero or one high-frequency deleted A/B block at least two entrance labels survive; with two compatible high-frequency blocks, failure is exactly an adjacent pair of the corresponding 6-cycle, yielding two stabilizer orbits."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:47:11.776216+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "of_cyclic_sts13_preserve_rank_six_at_every_surviving_block"
+position: 0
+research_interface:
+  consequence: "Reduces the remaining computational specialness assertion to two local exceptional deletion-pair types in each of the two block orbits."
+  consumer:
+    - "09b3a90c50a9 matching-deletion all-special calibration"
+  given:
+    - "fb007f7c4b89 six endpoint-path families"
+    - "matching deletion"
+  next_need: "For one representative exceptional pair in each stabilizer orbit, construct an additional mixed-orbit spanning path with a different entrance that survives every compatible extension of the deleted matching."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Matching-deletion specialness reduces to two exceptional blocker-pair types per block orbit."
+statement_sha256: "e75ffc6936059235050fec8986f7b92f3eb4eae58d3832c1b769ec7041ca3c3d"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Matching-deletion specialness reduces to two exceptional blocker-pair types per block orbit"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:51:31.687677+00:00"
+version: 8

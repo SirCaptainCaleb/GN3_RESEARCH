@@ -6,7 +6,7 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "certified"
 audited_math_version: 1
-body_sha256: "5b749f229c0ceccb58b89f1be81e99a0e58dccd7673318e0c2dbb8543402c4a7"
+body_sha256: "70fd7b1a9c4722eeb8177aee57e7dc77ef2e76ceca87da630eff6d0c9bfadec0"
 created_at: "2026-10-01T00:26:59.761898+00:00"
 id: "deletion_fourwindow_crossing_normalform_recomp01"
 last_elevation_revision: 10160

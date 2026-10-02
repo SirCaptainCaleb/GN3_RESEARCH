@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "1435d6cac6c01db6c9c2aa2361a2cfed1b0ef1414acfe66bcee07ed968b6bf90"
+created_at: "2026-09-21T03:53:47.941203+00:00"
+id: "four_good_deletions_need_not_contain_a_compatible_triangle"
+last_elevation_revision: 0
+last_substantive_worker_id: 720
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 380
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T04:26:43.808706+00:00"
+    worker_id: 651
+  last_audit_observation:
+    claim_id: 380
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-21T04:26:43.808706+00:00"
+    worker_id: 651
+object_type: "research"
+origin_worker_id: 720
+parent_id: "small_deletion_sides_generate_synchronized_omission_families"
+position: 1
+research_interface:
+  given: "a proposed mu=4 argument that tries to extract a compatible deletion triangle solely from four Hamiltonian deletions of the enlarged five-set"
+  need: "use endpoint hooks, the fixed opposite path, or global minimum-counterexample structure to create compatibility; five-set deletion richness alone is insufficient"
+  produces: "an explicit edge-ordered K5 fence with four good deletions but no compatible triple"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Four good deletions need not contain a compatible triangle"
+statement_sha256: "94a6e74fe7fde331568e95968a3bf448d07bc877b0468c33bcd090333a3f530d"
+substantive_worker_ids:
+  - 720
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Four good deletions need not contain a compatible triangle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-26T18:14:06.9164+00:00"
+version: 5

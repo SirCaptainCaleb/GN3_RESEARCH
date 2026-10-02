@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 60
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "9f13a506f8b6ca330158e7d77747515a0eb9d02275036aa77a6be40ac01c6bf6"
+created_at: "2026-09-23T19:53:05.129792+00:00"
+id: "component_forces_two_incident_minimumrank_bicircular_chords"
+last_elevation_revision: null
+last_substantive_worker_id: 183
+legacy_id: "1000164"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "b145b32a-7adf-4545-b1e7-d24558bdd6dc"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:09:46.753038+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 183
+parent_id: "ascending_terminal_graph_has_maximum_average_degree_three"
+position: 0
+research_interface:
+  consequence: "Any density counterexample reduces to two excluded minimum-rank bicircular chords sharing one terminal, each forced to block a neighboring basis-edge witness."
+  consumer:
+    - "mad(T_=)<=3"
+    - "2/3 leading coefficient route"
+  given:
+    - "equal-potential ascending terminal graph"
+    - "maximum-weight spanning unicyclic subgraph"
+    - "terminal adjacency blocker lemma"
+  next_need: "Exploit the two simultaneous blocker obligations at the shared terminal; show they splice, rotate, or force enough overlap to contradict linearity/ascendingness."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A dense equal-potential terminal component forces two incident minimum-rank bicircular chords."
+statement_sha256: "bc120ac4a77046687ed7846cef188d52568f85c789008384a3b3f7e53e8898b7"
+substantive_worker_ids:
+  - 183
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A dense equal-potential terminal component forces two incident minimum-rank bicircular chords"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

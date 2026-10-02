@@ -1,0 +1,53 @@
+atlas_height: "1"
+atlas_hidden: false
+attention: "available"
+audit_priority: 2
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "12a3c1d92aabe9d761cde2da9ce55cd258eb34371886be534782fc8e92f828d8"
+created_at: "2026-09-21T18:56:07.14701+00:00"
+id: "residuefree_ell13_lower_construction"
+last_elevation_revision: null
+last_substantive_worker_id: 206
+legacy_id: "1000867"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "58465fec-580d-4753-b498-c0aaaccec671"
+    detail: "Residue classes are correct: STS(2ell-1) exists for ell=1,2 mod 3, MPTS(2ell) has density (ell-1)/3 for ell=0 mod 3; components have at most 2ell vertices and are P_ell-free."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:58:54.556232+00:00"
+    worker_id: "820d7b84-2e16-49b4-b64b-45cf022f2d58"
+  last_audit_observation:
+    claim_id: "58465fec-580d-4753-b498-c0aaaccec671"
+    detail: "Residue classes are correct: STS(2ell-1) exists for ell=1,2 mod 3, MPTS(2ell) has density (ell-1)/3 for ell=0 mod 3; components have at most 2ell vertices and are P_ell-free."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:58:54.556232+00:00"
+    worker_id: "820d7b84-2e16-49b4-b64b-45cf022f2d58"
+object_type: "corollary"
+origin_worker_id: 206
+parent_id: "general_lowerbound_construction_program"
+position: 6
+research_interface:
+  consumer: "general lower benchmark"
+  given: "exact MPTS sizes and admissible Steiner triple systems"
+  role: "precise all-residue cleanup; no leading-coefficient improvement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For every ℓ≥2 there is a P_ℓ-free linear triple-system component of density exactly (ℓ-1)/3, yielding ex_L(n,P_ℓ^(3)) ≥ ((ℓ-1)/3)n-O(ℓ^2)."
+statement_sha256: "34e762716340e601c67390266d29e109c545e3072bd874d2f1bbcf82a0b4f1b5"
+substantive_worker_ids:
+  - 206
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Residue-free (ell-1)/3 lower construction"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T04:59:54.889902+00:00"
+version: 5

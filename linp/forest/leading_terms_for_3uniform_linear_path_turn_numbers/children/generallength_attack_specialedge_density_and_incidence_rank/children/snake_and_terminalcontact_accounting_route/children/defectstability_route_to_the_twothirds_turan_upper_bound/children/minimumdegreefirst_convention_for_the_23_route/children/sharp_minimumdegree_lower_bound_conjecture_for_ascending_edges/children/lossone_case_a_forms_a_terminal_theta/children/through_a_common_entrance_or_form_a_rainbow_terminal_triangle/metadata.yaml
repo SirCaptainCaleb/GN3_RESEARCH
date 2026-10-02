@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "47cfa84c714ee0b7788bf86cde3cb0161490f3eb019e7034d8d431ba5e04560f"
+created_at: "2026-09-22T19:45:54.182712+00:00"
+id: "through_a_common_entrance_or_form_a_rainbow_terminal_triangle"
+last_elevation_revision: null
+last_substantive_worker_id: 195
+legacy_id: "1000374"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bb160f43-5804-417d-a461-a260627e5052"
+    detail: "Verified common classification of the opposite transfer joint and the rainbow terminal triangle conclusion, including pairwise distinct entrance colors by linearity."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T01:25:56.822105+00:00"
+    worker_id: "330b4c06-34f1-4dd7-8ca8-de6cbe5332b5"
+  last_audit_observation:
+    claim_id: "bb160f43-5804-417d-a461-a260627e5052"
+    detail: "Verified common classification of the opposite transfer joint and the rainbow terminal triangle conclusion, including pairwise distinct entrance colors by linearity."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T01:25:56.822105+00:00"
+    worker_id: "330b4c06-34f1-4dd7-8ca8-de6cbe5332b5"
+object_type: "lemma"
+origin_worker_id: 195
+parent_id: "lossone_case_a_forms_a_terminal_theta"
+position: 0
+research_interface:
+  consequence: "fully flat Type-A sink is either a two-way outward branch with common low-potential entrance or a rainbow triangle in R_q"
+  consumer:
+    - "branching flat-transfer system"
+    - "potential-threshold terminal graph"
+  given:
+    - "loss-one Type-A sink"
+    - "both clean branches flat equal-rank ascending"
+  next_need: "couple repeated Type-A branching with color repetition/blocker memory; a long simple branch must either become rainbow or expose repeated entrance colors that create spliceable hypergraph contacts"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A flat Type-A boundary sink either has two branches with a common unique entrance or yields a rainbow terminal triangle of equal-rank ascending edges."
+statement_sha256: "7fbeadc801e4a71340fcbaeedfb98765c896d35903be972ab37e0c80424792e3"
+substantive_worker_ids:
+  - 195
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Flat Type-A boundary sinks either branch through a common entrance or form a rainbow terminal triangle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 5

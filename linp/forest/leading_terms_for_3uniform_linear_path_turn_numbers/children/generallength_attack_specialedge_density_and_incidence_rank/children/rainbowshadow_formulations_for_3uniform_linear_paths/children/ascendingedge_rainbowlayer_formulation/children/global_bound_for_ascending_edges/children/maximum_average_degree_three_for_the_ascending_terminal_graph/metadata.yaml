@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "b89508b71e69f4c420a644e2df299f379afb4059673328e1ef4dfa02766105ff"
+created_at: "2026-09-21T22:49:21.688564+00:00"
+id: "maximum_average_degree_three_for_the_ascending_terminal_graph"
+last_elevation_revision: null
+last_substantive_worker_id: 234
+legacy_id: "1000648"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+object_type: "conjecture"
+origin_worker_id: 234
+parent_id: "global_bound_for_ascending_edges"
+position: 2
+research_interface:
+  consumer: "global ascending-edge bound A<=3n/2 and the 2/3-leading-coefficient route"
+  given:
+    - "ascending terminal-pair graph"
+    - "refuted pointwise degree bound"
+    - "sharp K3,3-copy family"
+  minimal_counterexample: "a vertex-minimal violation has minimum degree at least 2; stronger local structure is still needed"
+  need: "prove mad(T_↑)<=3 or find a dense ascending terminal subgraph"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Conjecturally, the terminal graph of ascending nonspecial edges has maximum average degree at most 3."
+statement_sha256: "2b58de6c84fe040cfa0f430e72937ee7e1ce997a417a070080684d95c7a59ffd"
+substantive_worker_ids:
+  - 234
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Maximum average degree three for the ascending terminal graph"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:09:22.534413+00:00"
+version: 3

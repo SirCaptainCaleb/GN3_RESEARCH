@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 78
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "f7a619d8c3c8d4c30f523e014fb9cfb9e5ad511a9cdeeea48fe0532329ce3a39"
+created_at: "2026-09-23T04:23:35.289842+00:00"
+id: "longestpath_terminal_degree_with_exact_doubleblocker_slack"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1000983"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "395c593c-1060-4e6c-9532-d7559bd7f48b"
+    detail: "Faithful recomposition of the endpoint degree bound with exact double-blocker slack."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:46:06.157994+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "395c593c-1060-4e6c-9532-d7559bd7f48b"
+    detail: "Faithful recomposition of the endpoint degree bound with exact double-blocker slack."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T04:46:06.157994+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-23T04:23:47.377289+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "longestpath_terminal_degree_bound"
+    - "doubleblocker_slack_at_an_endpoint_of_a_globally_longest_path"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "snake_and_terminalcontact_accounting_route"
+position: 8
+research_interface:
+  consequence: "The standard terminal-degree bound has an exact extra penalty for double blockers."
+  consumer:
+    - "terminal defect accounting"
+    - "maximum-rank blocker route"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Longest-path terminal degree with exact double-blocker slack."
+statement_sha256: "ddc2cb86e8cbc0fcb57506e49d72e86ae40e4015f5a6641b04abf6bda92c53bf"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Longest-path terminal degree with exact double-blocker slack"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

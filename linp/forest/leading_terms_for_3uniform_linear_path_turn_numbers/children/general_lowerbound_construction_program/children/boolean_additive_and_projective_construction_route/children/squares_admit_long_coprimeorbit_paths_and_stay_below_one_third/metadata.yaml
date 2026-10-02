@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 74
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "553d28e9ead82b76c7178d22a6ae0e76ad7aad6026c486095948556260df1753"
+created_at: "2026-09-23T04:26:35.091498+00:00"
+id: "squares_admit_long_coprimeorbit_paths_and_stay_below_one_third"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1001136"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d201a0a1-85b2-4a1f-b6f4-1a1570b9289c"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T05:09:19.637377+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "d201a0a1-85b2-4a1f-b6f4-1a1570b9289c"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T05:09:19.637377+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  recomposition_audit:
+    classified_at: "2026-09-23T04:28:07.351867+00:00"
+    scope: "full_mathematical"
+    source_package_fully_certified: false
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "a_104edge_orbit_path_kills_the_pg32_diagonal_tensor_square"
+    - "diagonal_tensor_squares_are_fenced_below_one_third"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "boolean_additive_and_projective_construction_route"
+position: 2
+research_interface:
+  consequence: "Every binary-projective diagonal tensor square is fenced strictly below one third."
+  consumer:
+    - "diagonal-product lower-bound route"
+    - "binary-projective construction search"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "For every d≥3, PG(d-1,2) tensor-squared has a linear path of length (2^d-1)(2^{d-1}-1)-1, and its normalized density at the first forbidden length is below 1/3."
+statement_sha256: "93e4ce452dedc663fcca4a60a990fd9cc694fdcc0a72469e74d2787d04709f06"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Binary-projective diagonal tensor squares admit long coprime-orbit paths and stay below one third"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:01:08.875821+00:00"
+version: 9

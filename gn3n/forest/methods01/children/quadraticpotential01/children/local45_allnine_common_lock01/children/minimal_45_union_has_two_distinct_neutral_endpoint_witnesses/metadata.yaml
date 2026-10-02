@@ -1,0 +1,39 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "6cf19f8098edc1a370af7b58feb93816ac017035bdd90ee5a660ce22b744afff"
+created_at: "2026-10-01T00:18:03.369465+00:00"
+id: "minimal_45_union_has_two_distinct_neutral_endpoint_witnesses"
+last_elevation_revision: 10160
+last_substantive_worker_id: 737
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  elevates:
+    - "local45_allnine_common_lock01"
+  elevation_batch: 21
+object_type: "research"
+origin_worker_id: 737
+parent_id: "local45_allnine_common_lock01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Each of the nine labels has at least two distinct neutral 4|5 witness states and endpoint-pair Hamiltonian five-supports."
+statement_sha256: "0f6936f29d58232eaed7e5acc854297aeafc247efd9961d3e5f6933d86b04f58"
+substantive_worker_ids:
+  - 737
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Every label of a componentwise minimal 4|5 union has two distinct neutral endpoint witnesses"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T00:59:49.30824+00:00"
+version: 4

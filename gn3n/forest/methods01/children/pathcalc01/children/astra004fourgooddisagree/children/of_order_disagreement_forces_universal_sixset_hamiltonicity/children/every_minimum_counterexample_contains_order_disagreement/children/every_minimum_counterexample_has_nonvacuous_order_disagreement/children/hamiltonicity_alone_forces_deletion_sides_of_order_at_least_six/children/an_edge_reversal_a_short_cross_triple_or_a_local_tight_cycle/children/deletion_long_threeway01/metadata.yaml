@@ -1,0 +1,69 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "recomposition_equivalence"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "423fe8d10c8ca29ad3f3348c3bcde6bcf7fdccb42fb5a18805d90f264ae4e41c"
+created_at: "2026-09-29T01:27:38.828033+00:00"
+id: "deletion_long_threeway01"
+last_elevation_revision: 7702
+last_substantive_worker_id: 605
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 256
+    detail: "Recomposition equivalence verified. The target faithfully preserves deletion_long_sliding01 and deletion_long_transition01, with two certified strengthenings: the former bounded-cycle outcome is consumed by f21cfb4840ff into a reversing tight triple, and the former k=j+3 consecutive-two-label restoration state is consumed by twosidedescent4 into strict quadratic-potential descent. The |P|>=6 hypothesis is sufficient: after replacing two internal vertices by x, the resulting path P' has order |P|-1>=5, exceeding twosidedescent4's >=4 threshold. The k=j+2 one-label replacement and k=j+1 reversal cases are preserved exactly. Sliding-window boundary/middle-gap logic and support-size bounds match the retired source package. No source exceptional case or constant is lost; dependencies used by the strengthened branches are explicit. Local nesting under Toolkit/pathcalc01 is coherent for the reusable theorem."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:57:42.759092+00:00"
+    worker_id: 637
+  last_audit_observation:
+    claim_id: 256
+    detail: "Recomposition equivalence verified. The target faithfully preserves deletion_long_sliding01 and deletion_long_transition01, with two certified strengthenings: the former bounded-cycle outcome is consumed by f21cfb4840ff into a reversing tight triple, and the former k=j+3 consecutive-two-label restoration state is consumed by twosidedescent4 into strict quadratic-potential descent. The |P|>=6 hypothesis is sufficient: after replacing two internal vertices by x, the resulting path P' has order |P|-1>=5, exceeding twosidedescent4's >=4 threshold. The k=j+2 one-label replacement and k=j+1 reversal cases are preserved exactly. Sliding-window boundary/middle-gap logic and support-size bounds match the retired source package. No source exceptional case or constant is lost; dependencies used by the strengthened branches are explicit. Local nesting under Toolkit/pathcalc01 is coherent for the reusable theorem."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-29T17:57:42.759092+00:00"
+    worker_id: 637
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Audit repair: preserve the mathematical claim while removing prohibited or proof-process wording and making the proof/dependency use precise."
+    recorded_at: "2026-09-29T12:06:09.865315+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 664
+  recomposition_audit:
+    classified_at: "2026-09-29T17:56:32.57558+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-09-29T17:57:42.759092+00:00"
+  supersession_previous_attention: "focus"
+object_type: "research"
+origin_worker_id: 718
+parent_id: "an_edge_reversal_a_short_cross_triple_or_a_local_tight_cycle"
+position: 0
+research_interface:
+  consumer: "endpoint transport / defect compression; deletion-state normalization"
+  given: "a deletion two-cover with one component of order at least six"
+  need: "consume cycles of the one-label replacement dynamics; otherwise long deletion states already enter reversal/descent"
+  produces: "genuine reversal, exact one-label internal omission replacement with the opposite component fixed, or explicit strict Phi descent"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Long deletion components reduce to reversal, one-label replacement, or strict quadratic descent."
+statement_sha256: "9bf0cd04e053a96b521994afe03550c436ad6dead4a31316ab779abc77563289"
+substantive_worker_ids:
+  - 718
+  - 605
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Long deletion components reduce to reversal, one-label replacement, or strict quadratic descent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:57:42.759092+00:00"
+version: 22

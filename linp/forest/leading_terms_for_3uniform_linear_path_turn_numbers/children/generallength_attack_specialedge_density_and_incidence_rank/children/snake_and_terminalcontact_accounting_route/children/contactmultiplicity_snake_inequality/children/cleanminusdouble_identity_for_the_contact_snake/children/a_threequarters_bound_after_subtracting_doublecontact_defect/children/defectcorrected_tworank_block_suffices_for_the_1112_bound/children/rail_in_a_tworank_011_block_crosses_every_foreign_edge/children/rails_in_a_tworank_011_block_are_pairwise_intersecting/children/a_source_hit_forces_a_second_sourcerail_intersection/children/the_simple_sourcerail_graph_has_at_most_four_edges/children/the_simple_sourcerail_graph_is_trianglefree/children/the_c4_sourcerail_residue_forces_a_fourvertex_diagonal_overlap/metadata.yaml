@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 85
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "2dd002ba6321833f3727e82fae97bf74d3889e5a769c2e7630bbde6782053081"
+created_at: "2026-09-24T11:46:53.811491+00:00"
+id: "the_c4_sourcerail_residue_forces_a_fourvertex_diagonal_overlap"
+last_elevation_revision: null
+last_substantive_worker_id: 244
+legacy_id: "1000638"
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "f1dc06ed-d27a-4b17-a745-05ad5d47c70f"
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:01:06.435844+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: "f1dc06ed-d27a-4b17-a745-05ad5d47c70f"
+    math_version: 5
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:01:06.435844+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  premise_ids:
+    - "the_simple_sourcerail_graph_is_trianglefree"
+    - "sourcerail_intersection_forces_reciprocal_terminal_contacts"
+    - "rail_in_a_tworank_011_block_crosses_every_foreign_edge"
+object_type: "lemma"
+origin_worker_id: 244
+parent_id: "the_simple_sourcerail_graph_is_trianglefree"
+position: 0
+research_interface:
+  consequence: "Every C4 residue contains a diagonal pair of source paths sharing four distinguished vertices, including both source endpoints."
+  consumer:
+    - "C4 elimination"
+    - "one-low q,(q+1)^3 residue"
+    - "Astra 11/12 source-rail route"
+  given:
+    - "C4 simple source-rail skeleton"
+    - "simple pairs are reciprocal terminal-only"
+    - "complete source-rail transversality"
+  need: "Exploit the four-overlap diagonal using endpoint lenses, balanced internal lenses, and no-piercing."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The C4 source-rail residue forces a four-vertex diagonal overlap."
+statement_sha256: "c9dfc8f36b6f324c31801cec36a75dd07d6675a6e36a50fcd9e0d4e9155f212f"
+substantive_worker_ids:
+  - 244
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "The C4 source-rail residue forces a four-vertex diagonal overlap"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:07:22.602564+00:00"
+version: 10

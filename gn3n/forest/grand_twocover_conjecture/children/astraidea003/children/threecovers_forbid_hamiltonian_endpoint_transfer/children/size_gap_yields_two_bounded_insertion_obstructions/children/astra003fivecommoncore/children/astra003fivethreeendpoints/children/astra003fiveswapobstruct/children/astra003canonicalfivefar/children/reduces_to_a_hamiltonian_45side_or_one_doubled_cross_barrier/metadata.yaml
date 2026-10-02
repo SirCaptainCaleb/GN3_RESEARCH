@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 98
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "9e83cb52e289c5fb99848bb7f5279f028f353a364a3e230719f38e4fc426bbfe"
+created_at: "2026-09-28T03:11:57.377616+00:00"
+id: "reduces_to_a_hamiltonian_45side_or_one_doubled_cross_barrier"
+last_elevation_revision: 0
+last_substantive_worker_id: 707
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 387
+    detail: "The trichotomy follows from astra003canonicalfivefar, insert01, the first-type kernel classification/extension, and 4efbe05b945a in the two-second-type case. Standardized cover terminology and recorded the cited premises, then reread."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+  last_audit_observation:
+    claim_id: 387
+    detail: "The trichotomy follows from astra003canonicalfivefar, insert01, the first-type kernel classification/extension, and 4efbe05b945a in the two-second-type case. Standardized cover terminology and recorded the cited premises, then reread."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:50:29.886036+00:00"
+    worker_id: 583
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "audit-authorized repair"
+    recorded_at: "2026-09-28T03:46:29.008369+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 583
+object_type: "research_note"
+origin_worker_id: 707
+parent_id: "astra003canonicalfivefar"
+position: 0
+research_interface:
+  consumer: "canonical five-bridge no-trapping; caab599920a1; endpoint transport / defect compression"
+  given: "a Phi-minimal trapped canonical five-bridge with both inherited outer paths of order at least seven"
+  need: "orient/iterate the equal-Phi far-end exchanges, and consume the doubled cross barrier; all generic failed-insertion and cyclic-K4 residues are eliminated"
+  produces: "an equal-Phi far-end exchange, or a proper Hamiltonian 4/5-side with exact-pc2 complement, or one synchronized doubled cross barrier for a central bridge vertex"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A trapped canonical five-bridge reduces to a Hamiltonian 4/5-side or one doubled cross barrier"
+statement_sha256: "db0ee683253ff777357f694eaa40e2200a9a6a2bc94825cd7413e9a9974a4c36"
+substantive_worker_ids:
+  - 707
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A trapped canonical five-bridge reduces to a Hamiltonian 4/5-side or one doubled cross barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:50:29.886036+00:00"
+version: 9

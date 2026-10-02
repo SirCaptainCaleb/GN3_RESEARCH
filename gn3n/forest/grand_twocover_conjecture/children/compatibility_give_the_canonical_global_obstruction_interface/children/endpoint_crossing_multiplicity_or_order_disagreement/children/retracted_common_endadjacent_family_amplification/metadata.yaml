@@ -1,0 +1,39 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "c09d2e48d786513012cdb20e48b9220233ac3405ec8b09d9083dff16f3c9bcc8"
+created_at: "2026-09-27T21:20:37.492411+00:00"
+id: "retracted_common_endadjacent_family_amplification"
+last_elevation_revision: 0
+last_substantive_worker_id: 556
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proposal"
+metadata:
+object_type: "research"
+origin_worker_id: 556
+parent_id: "endpoint_crossing_multiplicity_or_order_disagreement"
+position: 1
+research_interface:
+  consumer: "none until repaired"
+  gap: "Depends on retracted premise 3e0228c3616b."
+  need: "restore a valid end-adjacent classification first"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Retracted: common end-adjacent family amplification"
+statement_sha256: "f5e9079ca5d3a4cb0a85c28a83a8f5377d47ac6a57106c3bfa4f913b2cc63706"
+substantive_worker_ids:
+  - 556
+support_reason: "not_locally_certified"
+support_status: "unchecked"
+title: "Retracted: common end-adjacent family amplification"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:47:17.752948+00:00"
+version: 5

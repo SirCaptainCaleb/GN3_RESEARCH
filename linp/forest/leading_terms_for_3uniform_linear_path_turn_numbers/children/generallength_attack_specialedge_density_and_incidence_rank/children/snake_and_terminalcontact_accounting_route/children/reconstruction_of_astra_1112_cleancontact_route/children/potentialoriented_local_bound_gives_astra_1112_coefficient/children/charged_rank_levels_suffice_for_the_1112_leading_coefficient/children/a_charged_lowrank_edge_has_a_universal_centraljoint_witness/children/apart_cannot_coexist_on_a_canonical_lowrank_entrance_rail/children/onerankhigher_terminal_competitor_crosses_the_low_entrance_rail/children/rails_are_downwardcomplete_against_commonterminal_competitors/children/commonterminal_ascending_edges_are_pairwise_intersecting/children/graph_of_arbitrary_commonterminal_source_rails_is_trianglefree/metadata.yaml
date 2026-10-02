@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "184b026e6b7d38bb8123e28179dbf05ec8d3fd1c8468eafd2d0b4a2850300da3"
+created_at: "2026-09-24T14:30:01.507525+00:00"
+id: "graph_of_arbitrary_commonterminal_source_rails_is_trianglefree"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: "1000419"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "a72fe2a8-b0b6-4ba4-b408-b66b112919f3"
+    detail: "Replaced prohibited endpoint wording with standard endpoint language; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:12:03.748699+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_audit_observation:
+    claim_id: "a72fe2a8-b0b6-4ba4-b408-b66b112919f3"
+    detail: "Replaced prohibited endpoint wording with standard endpoint language; no mathematical content changed."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:12:03.748699+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited proof-process endpoint wording with standard last-vertex/endpoint language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:10:48.155136+00:00"
+    worker_id: "5e879cc7-a736-4148-a4c7-9ad782cced3a"
+object_type: "theorem"
+origin_worker_id: 223
+parent_id: "commonterminal_ascending_edges_are_pairwise_intersecting"
+position: 0
+research_interface:
+  consequence: "A common-terminal ascending family of size k forces quadratic multiple-overlap mass: asymptotically at least k^2/4 rail pairs share two or more vertices. The simple-intersection pairs form a triangle-free graph."
+  consumer:
+    - "ascending-only fixed-entrance improvement"
+    - "post-43/48 strengthening"
+    - "source-rail lens density"
+  given:
+    - "universal pairwise intersection of common-terminal canonical source rails"
+    - "universal aligned-joint rigidity"
+    - "downward-complete rail-edge contacts"
+  next_need: "Convert quadratic multiple-overlap pairs into a linear local deficit. Analyze concentration on common gates: either many pairs use genuinely distinct elementary lenses, or many rails share the same two gates, which should itself force a common balanced segment or a splice contradiction."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The simple-intersection graph of arbitrary common-terminal source rails is triangle-free."
+statement_sha256: "ab6f8161dfd76fcfb9ead7f0c74e1a3c1891cc006daa108f9a84c56563e9726a"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The simple-intersection graph of arbitrary common-terminal source rails is triangle-free"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

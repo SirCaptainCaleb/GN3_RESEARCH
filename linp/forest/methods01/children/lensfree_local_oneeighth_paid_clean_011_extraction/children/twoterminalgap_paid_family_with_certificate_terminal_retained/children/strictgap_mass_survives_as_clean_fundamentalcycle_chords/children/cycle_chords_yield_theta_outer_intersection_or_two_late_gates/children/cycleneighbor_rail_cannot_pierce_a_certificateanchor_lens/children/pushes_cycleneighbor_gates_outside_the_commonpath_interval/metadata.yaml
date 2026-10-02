@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 96
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "f88b2bfc180382510c300bcb3cc393341e89b71e32fba635bff078a26ec59af9"
+created_at: "2026-09-25T21:22:59.922767+00:00"
+id: "pushes_cycleneighbor_gates_outside_the_commonpath_interval"
+last_elevation_revision: null
+last_substantive_worker_id: 191
+legacy_id: "1001158"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "4809408e-74ef-4e11-839d-dded5d282458"
+    detail: "The long replacement interval places the late aligned gate strictly in the R_e-side interior; the no-piercing lemma then excludes the unique R_f/A gate from the opposite interior."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:44:08.014442+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+  last_audit_observation:
+    claim_id: "4809408e-74ef-4e11-839d-dded5d282458"
+    detail: "The long replacement interval places the late aligned gate strictly in the R_e-side interior; the no-piercing lemma then excludes the unique R_f/A gate from the opposite interior."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T21:44:08.014442+00:00"
+    worker_id: "91a59503-1c58-4edb-8340-17038d6f7a34"
+object_type: "lemma"
+origin_worker_id: 191
+parent_id: "cycleneighbor_rail_cannot_pierce_a_certificateanchor_lens"
+position: 1
+research_interface:
+  consequence: "For a replacement region longer than half the source path, a unique common-path gate of a fundamental-cycle neighbor cannot lie in the open common-path side. However, for the neighbor sharing the selected terminal, ccb173020cad identifies that unique gate as u, which is already outside the entrance-side interval by construction; this branch therefore gives no additional restriction there."
+  consumer:
+    - "selected common-path/fundamental-cycle coupling"
+    - "same-terminal strict-gap local congestion"
+  given:
+    - "d0a41dede20a two late fundamental-cycle gates"
+    - "bbaf9e0b90fc explicit entrance-side equal-length replacement region"
+    - "6118d601301a no-piercing constraint for a cycle-neighbor source path"
+  next_need: "Use ccb173020cad instead: compare the aligned u-index on the selected common path and neighbor source path with the late aligned s-index on R_e/R_f and with 52ecd179e799. Seek a nontrivial index inequality or rank-gap budget."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A long entrance-side replacement region pushes cycle-neighbor gates outside the common-path interval."
+statement_sha256: "216d0f69203786075b7a8156c9ac30864ba4f043e875471e9c459312e93478f1"
+substantive_worker_ids:
+  - 191
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A long entrance-side replacement region pushes cycle-neighbor gates outside the common-path interval"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:40:46.498158+00:00"
+version: 6

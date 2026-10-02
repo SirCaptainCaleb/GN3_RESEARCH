@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "2c5f5e206aecaf7086a2a256610bf2d4128cb57075a7a8feb8263ddb1992df4c"
+created_at: "2026-09-26T15:08:58.978623+00:00"
+id: "the_merge_problem_to_three_finite_longestpath_obstruction_types"
+last_elevation_revision: 0
+last_substantive_worker_id: 682
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 228
+    detail: "Independent reconstruction succeeds. The bounds 5<=lambda<=7 follow from the half-order lower bound and minimum-counterexample complement bound. The lambda=5 branch is exactly the certified internal non-clean-deletion result; lambda=6 meets the codim5 minimum restricted-counterexample hypotheses; lambda=7 meets codim4 with the full seven-path as the minimal Hamiltonian side and yields the stated 4|4 or 6|2 endpoint/complement cover plus the internal 3-path. This result classifies lambda=7; it does not eliminate it."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:31:46.561813+00:00"
+    worker_id: 591
+  last_audit_observation:
+    claim_id: 228
+    detail: "Independent reconstruction succeeds. The bounds 5<=lambda<=7 follow from the half-order lower bound and minimum-counterexample complement bound. The lambda=5 branch is exactly the certified internal non-clean-deletion result; lambda=6 meets the codim5 minimum restricted-counterexample hypotheses; lambda=7 meets codim4 with the full seven-path as the minimal Hamiltonian side and yields the stated 4|4 or 6|2 endpoint/complement cover plus the internal 3-path. This result classifies lambda=7; it does not eliminate it."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-26T15:31:46.561813+00:00"
+    worker_id: 591
+object_type: "research"
+origin_worker_id: 682
+parent_id: "order11balanced_recomp01"
+position: 1
+research_interface:
+  consumer: "e34dc91e238d; astraidea003"
+  given: "a hypothetical order-eleven minimum counterexample"
+  need: "consume each bounded output into a two-cover / defect span at most two"
+  produces: "a complete lambda=5/6/7 finite obstruction menu: immediate crossing/order disagreement, codim-5 endpoint exchange, or codim-4 rigid endpoint kernel"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Order eleven reduces the merge problem to three finite longest-path obstruction types"
+statement_sha256: "7c774f29bff14803c94e4462d2b39a6184c8753a05091c59720a7b7ffc4c0a75"
+substantive_worker_ids:
+  - 682
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Order eleven reduces the merge problem to three finite longest-path obstruction types"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:22:42.890479+00:00"
+version: 13

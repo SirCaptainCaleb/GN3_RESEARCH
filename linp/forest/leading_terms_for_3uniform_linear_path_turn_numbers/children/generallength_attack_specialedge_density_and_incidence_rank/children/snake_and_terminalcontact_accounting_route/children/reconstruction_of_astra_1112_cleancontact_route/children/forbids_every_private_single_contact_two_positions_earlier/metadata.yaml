@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "8d1c4a53624f42464e1c3f64fb1ab07e7786e7a9fffb43f903dc10702332ae8b"
+created_at: "2026-09-24T04:36:44.16587+00:00"
+id: "forbids_every_private_single_contact_two_positions_earlier"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000031"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ca80d8ed-b022-4f81-aef6-e5e327c0b039"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:20:17.722723+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "ca80d8ed-b022-4f81-aef6-e5e327c0b039"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:20:17.722723+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:20:00.109558+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "reconstruction_of_astra_1112_cleancontact_route"
+position: 0
+research_interface:
+  consequence: "A private clean entrance at index j+2 forces the private slot at index j to be completely unused by any other single-contact ascending terminal edge, not merely unused by another entrance-visible edge."
+  consumer:
+    - "0904073d4cbf Astra 11/12 reconstruction"
+    - "0-1-1 terminal packing"
+  given:
+    - "maximum endpoint path"
+    - "earlier arbitrary single private contact"
+    - "later clean private entrance contact"
+  next_need: "Use weighted parity-chain packing: each clean private entrance consumes its own slot plus forbids the preceding same-parity private slot. Combine with terminal-only rank/interval squeeze to bound the remaining occupied slots."
+  role: "mixed clean-contact packing"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A clean private entrance forbids every private single contact two positions earlier."
+statement_sha256: "5728f7407aa5948cc4d21a2e4a2a5c7d0a1172266489ca70c0fe3747d323e7bd"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A clean private entrance forbids every private single contact two positions earlier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

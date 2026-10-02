@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "098ea6ccec5e2cf5b019e4a2e7bb0d7a12ab453700cda8d985ab176e67902393"
+created_at: "2026-09-21T21:02:19.744917+00:00"
+id: "vertexlevel_cyclictransient_minty_strategy"
+last_elevation_revision: null
+last_substantive_worker_id: 205
+legacy_id: "1000399"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proposal"
+metadata:
+  compression_boundary: true
+  epistemic_role: "proposal_boundary"
+object_type: "proposal"
+origin_worker_id: 205
+parent_id: "potential_on_the_directed_graph_obtained_from_nonspecial_edges"
+position: 2
+research_interface:
+  consumer: "2/3 leading coefficient and dense-core all-special conjecture"
+  need:
+    - "recurrent-component counting inequality using the Minty scores"
+    - "O(n) control of transient ascending arcs via blocker rotations"
+  relation: "keeps the hyperedge-transfer formulation as a secondary compressed view, but makes the vertex-level digraph primary"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "bbd484fa84d96082e0e4c0dc6258ea420ff687e299406391f185f88b76b7aad8"
+substantive_worker_ids:
+  - 205
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Vertex-level cyclic-transient Minty strategy"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-23T04:13:47.370138+00:00"
+version: 6

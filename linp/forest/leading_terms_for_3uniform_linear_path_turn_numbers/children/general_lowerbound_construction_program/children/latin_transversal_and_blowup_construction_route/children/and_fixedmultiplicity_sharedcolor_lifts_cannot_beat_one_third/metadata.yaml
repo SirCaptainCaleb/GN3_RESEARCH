@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 72
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c389230e22fdafe11db88d4707a42aaa9dcc2a280b2a926129e3029eaa0789f9"
+created_at: "2026-09-23T03:36:14.341694+00:00"
+id: "and_fixedmultiplicity_sharedcolor_lifts_cannot_beat_one_third"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1000041"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1106ba3d-d12f-411d-872d-4a154421af0c"
+    detail: "Checked all three fences. The repeated-copy 2d-1 path uses one initial c1 edge followed by d-1 two-edge wedges; the fixed-r construction's alpha range is nonempty and the wedge scheduling/vertex-disjointness count is valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:22:18.678425+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  last_audit_observation:
+    claim_id: "1106ba3d-d12f-411d-872d-4a154421af0c"
+    detail: "Checked all three fences. The repeated-copy 2d-1 path uses one initial c1 edge followed by d-1 two-edge wedges; the fixed-r construction's alpha range is nonempty and the wedge scheduling/vertex-disjointness count is valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-23T19:22:18.678425+00:00"
+    worker_id: "8d087ad0-536b-464d-9376-bc6270588a79"
+  recomposition: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "small_transversal_pathsuppression_has_a_onequarter_ceiling"
+    - "lifts_asymptotically_saturate_the_transversal_path_ceiling"
+    - "shared_onefactorization_lifts_cannot_beat_one_third"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "latin_transversal_and_blowup_construction_route"
+position: 2
+research_interface:
+  consequence: "Static global covers are capped below 1/4, repeated one-factorization lifts realize the same obstruction, and fixed-multiplicity shared-color complete-graph lifts are capped at 1/3+o(1)."
+  consumer:
+    - "general lower-bound construction search"
+  next_need: "Any >1/3 construction using pinning or color sharing must make the controlling resources path-state-dependent, hierarchical, or otherwise escape fixed-multiplicity shared-color geometry."
+  role: "construction-route fence"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Static transversals and fixed-multiplicity shared-color lifts cannot beat one third."
+statement_sha256: "9325b6d6763a19b8fcfb5e321855c55f81d71f388afd76cb4dcd599f6a23f951"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Static transversals and fixed-multiplicity shared-color lifts cannot beat one third"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 9

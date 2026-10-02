@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "22a7d6e592b076a7d33657a0fc117087cdc7274d95a2c36781cae0c460625fbc"
+created_at: "2026-09-21T20:22:44.298869+00:00"
+id: "terminal_adjacency_forces_rank_rise_or_a_blocker"
+last_elevation_revision: null
+last_substantive_worker_id: 234
+legacy_id: "1000657"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+  last_audit_observation:
+    claim_id: "7eb3c64e-1dc6-4c2c-b3e3-37c2760c7b72"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:39:12.479406+00:00"
+    worker_id: "d3e3a803-5228-4daf-9f35-9d2b7bdf39f2"
+object_type: "lemma"
+origin_worker_id: 234
+parent_id: "refuted_terminalpair_cycle_rank_is_controlled_by_special_edges"
+position: 1
+research_interface:
+  consequence: "terminal cycles cannot be supported by monotone rank rise; minimum-rank cycle edges must create second-intersection blockers on both sides"
+  consumer: "terminal-pair cycle-rank conjecture"
+  given:
+    - "terminal-pair graph"
+    - "unique entrance characterization"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "If two nonspecial edges share a terminal and the second has no larger rank, it must meet every corresponding longest-path witness in a second vertex; minimum-rank cycle edges therefore block both neighbors."
+statement_sha256: "50004f5f33c5ac331e929b42457981ec9093cdc4be2b511d9d6fdea2d696dc37"
+substantive_worker_ids:
+  - 234
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Terminal adjacency forces rank rise or a blocker"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 5

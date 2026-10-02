@@ -1,0 +1,69 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 84
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "4b68c60f81f2e886e3266ea2003ace0c90fc66c4596df474814b201c82354210"
+created_at: "2026-09-23T03:37:01.955091+00:00"
+id: "to_neartop_clean_chords_and_highpotential_rotation_endpoints"
+last_elevation_revision: null
+last_substantive_worker_id: 255
+legacy_id: "1000692"
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "8be95915-bcc4-4e83-8730-292ddd4ac1d6"
+    detail: "Vocabulary-only replacement of 'ending physically at v' by 'ending at v'; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T04:53:28.193524+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_audit_observation:
+    claim_id: "8be95915-bcc4-4e83-8730-292ddd4ac1d6"
+    detail: "Vocabulary-only replacement of 'ending physically at v' by 'ending at v'; mathematics unchanged."
+    math_version: 3
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-23T04:53:28.193524+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  last_local_audit_repair:
+    reason: "Vocabulary-only audit repair: remove prohibited proof-process qualifier \"physically\"; mathematics unchanged."
+    recorded_at: "2026-09-23T04:52:54.926537+00:00"
+    worker_id: "e6ab5606-40b3-4a46-8918-ca6c63441c67"
+  recomposition: true
+  replacement_semantics: "equivalent_or_stronger"
+  source_chain:
+    - "integercompensated_ascendingedge_accounting"
+    - "reduces_the_ascending_defect_to_clean_chords_and_rotations"
+    - "charged_edges_expand_twotoone_into_highpotential_posa_endpoints"
+object_type: "research"
+origin_worker_id: 255
+parent_id: "snake_and_terminalcontact_accounting_route"
+position: 9
+research_interface:
+  consequence: "All leading-order ascending difficulty is localized to near-top-rank clean entrance chords and terminal-only rotations that generate large high-potential endpoint sets."
+  consumer:
+    - "general upper-bound leading coefficient"
+    - "sublinear charged-degree program"
+    - "Pósa endpoint expansion"
+  given:
+    - "joint snake-incidence and blocker budget"
+    - "charged-path local structure"
+  next_need: "Control overlap or merging of the high-potential endpoint sets across charged terminals, or force a positive fraction into double blockers or rank-deficient clean chords."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Ascending-edge defect reduces to near-top clean chords and high-potential rotation endpoints."
+statement_sha256: "6aee71540ba4bf08b377b6602bdb229971a5702d8cf5e66c011cfc70138fa0d1"
+substantive_worker_ids:
+  - 255
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ascending-edge defect reduces to near-top clean chords and high-potential rotation endpoints"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 11

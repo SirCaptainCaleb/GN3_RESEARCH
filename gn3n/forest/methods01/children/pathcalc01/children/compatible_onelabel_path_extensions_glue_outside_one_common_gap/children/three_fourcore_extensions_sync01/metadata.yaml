@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "22e34a481699b91023d25421b7903df2e96f717ce448a9b082af6f18c8dacbf8"
+created_at: "2026-09-29T13:08:38.343675+00:00"
+id: "three_fourcore_extensions_sync01"
+last_elevation_revision: 8250
+last_substantive_worker_id: 664
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 257
+    detail: "After excluding order disagreement, the three paths are single insertions into one common core order. Pairwise gap analysis via d495c62905f0 yields outcomes (2)-(4); if all roots share one endpoint gap, failure of pair gluing forces the displayed Hamiltonian four-set. Orientation checks are valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:12:35.840729+00:00"
+    worker_id: 649
+  last_audit_observation:
+    claim_id: 257
+    detail: "After excluding order disagreement, the three paths are single insertions into one common core order. Pairwise gap analysis via d495c62905f0 yields outcomes (2)-(4); if all roots share one endpoint gap, failure of pair gluing forces the displayed Hamiltonian four-set. Orientation checks are valid."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T15:12:35.840729+00:00"
+    worker_id: 649
+object_type: "research"
+origin_worker_id: 664
+parent_id: "compatible_onelabel_path_extensions_glue_outside_one_common_gap"
+position: 0
+research_interface:
+  consumer: "dense five-window gluing; longest-path common-core stars; five-side common-core transport; reversal consumption"
+  given: "three Hamiltonian one-label extensions of the same four-vertex set"
+  produces: "order disagreement, a Hamiltonian pair enlargement to six vertices, a Hamiltonian four-set, or an explicit root-core reversal"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Three Hamiltonian extensions of one four-set force gluing, order disagreement, a Hamiltonian four-set, or reversal"
+statement_sha256: "e93c9a9cc80d983a4b26f4826212452937dac2c66961c27bf008286932e8474f"
+substantive_worker_ids:
+  - 664
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Three Hamiltonian extensions of one four-set force gluing, order disagreement, a Hamiltonian four-set, or reversal"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-29T15:12:35.840729+00:00"
+version: 4

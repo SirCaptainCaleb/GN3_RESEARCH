@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "52e26ca85f6d60e35eac0d8444b69e6447e039b8e04531882d25957a88805895"
+created_at: "2026-09-28T15:21:28.092254+00:00"
+id: "a_globally_minimumside_endpoint_probe_has_no_neutral_residue"
+last_elevation_revision: 0
+last_substantive_worker_id: 700
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 379
+    detail: "Independent reconstruction checked every branch of the minimum-side endpoint classification and the neutral-residue exclusion."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T18:47:27.15579+00:00"
+    worker_id: 586
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 104
+    detail: "Independent reconstruction confirms the same endpoint-deletion classification yields the stated three-way menu. Direct crossing/order disagreement gives (1); internal support-compatible restoration gives an explicit reversal of the endpoint edge by 303f27f5e204; endpoint restoration is opposite-end disagreement or a same-end clean replacement, with 128f71b47605 giving disagreement/descent except the order-eleven 5|5|1 case handled by 26219fd919c2; the rigid two-crossing branch gives an explicit reversed endpoint/join edge via 50a7920166c5. No order-neutral, Phi-neutral residue remains."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T20:20:05.910089+00:00"
+    worker_id: 718
+  last_premise_impact_check:
+    checked_at: "2026-09-28T20:20:05.910089+00:00"
+    note: "Independent reconstruction confirms the same endpoint-deletion classification yields the stated three-way menu. Direct crossing/order disagreement gives (1); internal support-compatible restoration gives an explicit reversal of the endpoint edge by 303f27f5e204; endpoint restoration is opposite-end disagreement or a same-end clean replacement, with 128f71b47605 giving disagreement/descent except the order-eleven 5|5|1 case handled by 26219fd919c2; the rigid two-crossing branch gives an explicit reversed endpoint/join edge via 50a7920166c5. No order-neutral, Phi-neutral residue remains."
+    source_ids:
+      - "gives_order_disagreement_quadratic_descent_or_the_551_case"
+      - "omission_state_forces_synchronized_endpoint_disturbance"
+      - "at_a_minimumside_endpoint_forces_a_reversed_endpoint_edge"
+      - "minimumside_twocrossing_block_forces_a_reversed_boundary_edge"
+      - "restoration_or_one_rigid_twocrossing_block_configuration"
+      - "minimumside_endpoint_replacement_is_sameend_and_codegree_one"
+    worker_id: 718
+object_type: "research"
+origin_worker_id: 700
+parent_id: "restoration_or_one_rigid_twocrossing_block_configuration"
+position: 1
+research_interface:
+  consumer: "endpoint transport / defect compression; global minimum-side deletion normalization; grand theorem proof composition"
+  given: "a globally minimum-side deletion cover and an arbitrary deletion cover after deleting one displayed endpoint of its minimum side"
+  produces: "support/order disturbance, a reversed displayed boundary triple, or strict quadratic descent; no neutral endpoint-probe residue"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A globally minimum-side endpoint probe has no neutral residue."
+statement_sha256: "80ed4106a31d0ea56039adaf91e99342a26bf018fc74b9cd1934fd9206df673b"
+substantive_worker_ids:
+  - 700
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "A globally minimum-side endpoint probe has no neutral residue"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T17:44:33.034029+00:00"
+version: 12

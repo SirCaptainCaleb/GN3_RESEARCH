@@ -1,0 +1,63 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "b1d45121159978b3a29b87e04e5ba1e0c30ebffd1fc6a23e9389057479c55927"
+created_at: "2026-09-24T19:52:52.76352+00:00"
+id: "nonascending_toprank_rotation_outputs_are_alltop_edges"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: "1000391"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:05:20.865266+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "corollary"
+origin_worker_id: 201
+parent_id: "outputs_split_into_special_flatoriented_or_topjoint_states"
+position: 0
+research_interface:
+  consequence: "Every nonascending top-rank rotation output is wholly contained in the maximum-potential vertex set."
+  consumer:
+    - "top-potential induced core"
+    - "post-43/48 nonascending residual"
+    - "top-layer stability"
+  given:
+    - "465568d6d8dc two endpoints per occupied blocker cell"
+    - "09e3d5b2bd6b top-rank output trichotomy"
+  next_need: "Exploit many all-top rank-L edges if this branch has positive density. Otherwise the output packet is dominated by special edges or forward-oriented ascending edges."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Nonascending top-rank rotation outputs are all-top edges."
+statement_sha256: "a6385d57e2a844f3003e3a9f6a5fb0c03ccff1ebd94468d4cc64be37d9fba461"
+substantive_worker_ids:
+  - 201
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Nonascending top-rank rotation outputs are all-top edges"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 7

@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 65
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "800a65bbfd9a0e75bf103c852ea2951bd2825cadebadcdcd9e2bc3a0695eceb3"
+created_at: "2026-09-23T21:20:03.006584+00:00"
+id: "crossed_missingcolor_chords_force_the_opposite_endpoint_chord"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000800"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "268ab81b-dfd0-462d-bd8d-6e6835183b1e"
+    detail: "The rotated P5 has colors 5,4,6,1,2 and misses color 3. Maximality forces the color-3 mate of y2 among x0,x1,x2; properness excludes x2 and the given color-6 chord excludes x1, so x0y2 has color 3."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:41:09.803688+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+  last_audit_observation:
+    claim_id: "268ab81b-dfd0-462d-bd8d-6e6835183b1e"
+    detail: "The rotated P5 has colors 5,4,6,1,2 and misses color 3. Maximality forces the color-3 mate of y2 among x0,x1,x2; properness excludes x2 and the given color-6 chord excludes x1, so x0y2 has color 3."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T21:41:09.803688+00:00"
+    worker_id: "99d942bb-ecc2-4d50-aefc-9f1fff560021"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "every_ordersix_latin_square_has_a_fullcolor_rainbow_path"
+position: 0
+research_interface:
+  consequence: "The crossed-chord case forces the used 3x3 color matrix to have rows x0=(1,6,3), x1=(2,3,6), x2=(*,4,5), with *=3 or 6 by properness."
+  consumer:
+    - "order-six Latin-square humanization"
+  given:
+    - "crossed-chord normal form 8d4230198b1b"
+    - "no rainbow P6"
+  next_need: "Exploit the forced 3x3 matrix and the three unused vertices on each side to eliminate *=3 and *=6."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Crossed missing-color chords force the opposite endpoint chord."
+statement_sha256: "8fa29b205f0541ce1d4864c11f14a2b3426eb7f7686c79c145795bc26d95627f"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Crossed missing-color chords force the opposite endpoint chord"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 6

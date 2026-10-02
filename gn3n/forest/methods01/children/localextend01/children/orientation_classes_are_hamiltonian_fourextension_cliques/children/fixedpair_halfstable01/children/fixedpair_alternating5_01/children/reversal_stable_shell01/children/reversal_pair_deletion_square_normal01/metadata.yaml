@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d448fd68fb3ea3f3d41bfdf3f7c104abfbf43106c1b55acddf0a91d3afa72ad6"
+created_at: "2026-10-01T01:09:06.731904+00:00"
+id: "reversal_pair_deletion_square_normal01"
+last_elevation_revision: 10352
+last_substantive_worker_id: 745
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Grand-theorem bridge. Independently verify: reversal_stable_shell01 gives a three-vertex subpath with endpoints equal to the genuine reversed pair; path_induces_a_pathcovertwo_endpoint_square_on_its_complement yields the full pc2 endpoint square in H-x; pc2_square_topcover_normal01 gives the four top-cover alternatives."
+  audit_request_recorded_at: "2026-10-01T01:09:32.192942+00:00"
+  audit_resolution:
+    claim_id: 853
+    detail: "Reconstructed independently. reversal_stable_shell01 supplies an alternating Hamiltonian five-path whose middle triple is either (u,x,v) or (v,x,u), with u,v the genuine reversed pair. This is a proper tight path, so path_induces_a_pathcovertwo_endpoint_square_on_its_complement applied to it gives K=H-{u,v,x}, K+u, K+v, and K+u+v=H-x all non-Hamiltonian with path-cover number two. Applying pc2_square_topcover_normal01 to top state H-x with labels u,v yields exactly the endpoint, universal-internality, support-partition-disagreement, or relative-order-disagreement alternatives stated."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:10:09.583517+00:00"
+    worker_id: 737
+  audit_trigger_kind: "explicit"
+  deep_research: true
+  last_audit_observation:
+    claim_id: 853
+    detail: "Reconstructed independently. reversal_stable_shell01 supplies an alternating Hamiltonian five-path whose middle triple is either (u,x,v) or (v,x,u), with u,v the genuine reversed pair. This is a proper tight path, so path_induces_a_pathcovertwo_endpoint_square_on_its_complement applied to it gives K=H-{u,v,x}, K+u, K+v, and K+u+v=H-x all non-Hamiltonian with path-cover number two. Applying pc2_square_topcover_normal01 to top state H-x with labels u,v yields exactly the endpoint, universal-internality, support-partition-disagreement, or relative-order-disagreement alternatives stated."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T01:10:09.583517+00:00"
+    worker_id: 737
+  proof_bridge: "positioned_reversal_absorption"
+object_type: "research"
+origin_worker_id: 745
+parent_id: "reversal_stable_shell01"
+position: 0
+research_interface:
+  consumer: "grand-theorem proof composition; endpoint transport; defect compression"
+  given: "an arbitrary hypothetical minimum counterexample"
+  produces: "a genuine reversed pair u,v carried by a full pc2 deletion square in H-x, hence simultaneous endpoint exposure, universal internality of a reversed label, support disagreement, or order disagreement"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A genuine reversed pair can always be normalized to a full pc2 square in one vertex deletion; the top cover then exposes the pair as endpoints or forces internality/support/order disturbance."
+statement_sha256: "7ec4bf22a05c3bf589baee5b8ef4b9ccdfc6015ec4a3148ca6ebbc21e0315ef0"
+substantive_worker_ids:
+  - 745
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every minimum counterexample has a reversed pair normalized to one deletion-cover square"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T01:10:09.583517+00:00"
+version: 8

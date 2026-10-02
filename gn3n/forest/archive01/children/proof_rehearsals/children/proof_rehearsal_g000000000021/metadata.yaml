@@ -19,8 +19,8 @@ metadata:
   completed_revision: 1550
   details:
     first_unsupported_inference: "Consume the certified local obstruction into a spanning two-cover, endpoint absorption, or defect span at most two; Astra 003 proves plateau escape but not monotone continuation."
-    gap_id: "1000741"
-  gap_id: "1000741"
+    gap_id: "endpointtransport_defectcompression_bridge"
+  gap_id: "endpointtransport_defectcompression_bridge"
   generation: 21
   opened_revision: 1546
   reported_outcome: "Proof rehearsal complete"

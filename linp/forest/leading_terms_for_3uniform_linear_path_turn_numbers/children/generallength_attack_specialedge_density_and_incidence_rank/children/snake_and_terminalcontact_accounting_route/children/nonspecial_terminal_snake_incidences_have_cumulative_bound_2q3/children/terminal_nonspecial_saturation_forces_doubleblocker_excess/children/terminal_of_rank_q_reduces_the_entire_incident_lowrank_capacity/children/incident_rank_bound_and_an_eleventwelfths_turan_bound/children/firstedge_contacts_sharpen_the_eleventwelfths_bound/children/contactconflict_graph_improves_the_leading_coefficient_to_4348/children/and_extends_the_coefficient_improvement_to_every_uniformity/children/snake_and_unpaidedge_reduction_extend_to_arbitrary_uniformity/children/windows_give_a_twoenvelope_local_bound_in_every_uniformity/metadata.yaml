@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "62435925ba8be39c9bd5c6392ddb60dae52f8e862204e548d6b411b85acfe3dd"
+created_at: "2026-09-25T19:15:43.982785+00:00"
+id: "windows_give_a_twoenvelope_local_bound_in_every_uniformity"
+last_elevation_revision: null
+last_substantive_worker_id: 192
+legacy_id: "1000484"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "927ba481-bb14-43e8-a284-728d166cabd9"
+    detail: "The single-contact left/right localization follows from prefix and suffix wrong-entrance splices in arbitrary uniformity. Counting eligible private vertices and joints gives B_r(p,q)=(r-1)(2q-p)-(2r-3) when positive. Combining this with the general-r fixed-entrance capacity bound gives the stated two-envelope inequality and crossover algebra."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:01:40.869671+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "927ba481-bb14-43e8-a284-728d166cabd9"
+    detail: "The single-contact left/right localization follows from prefix and suffix wrong-entrance splices in arbitrary uniformity. Counting eligible private vertices and joints gives B_r(p,q)=(r-1)(2q-p)-(2r-3) when positive. Combining this with the general-r fixed-entrance capacity bound gives the stated two-envelope inequality and crossover algebra."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:01:40.869671+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "research"
+origin_worker_id: 192
+parent_id: "snake_and_unpaidedge_reduction_extend_to_arbitrary_uniformity"
+position: 0
+research_interface:
+  consequence: "For arbitrary r, multiplicity-paid terminal incidences obey a path-relative central-window envelope; combined with fixed-entrance capacity, only the rank ratio q/p above 8(r-1)/(10r-9) remains asymptotically dangerous to this local method."
+  consumer:
+    - "general-r coefficient improvement"
+    - "rank-gap shell"
+    - "N_{0,1^{r-1}} unpaid-edge reduction"
+  generalizes: "49080cbf1371 r=3 single-contact central window"
+  given:
+    - "6c9c2c5a0fcb general-r contact multiplicities"
+    - "a570a11f0001 fixed-entrance capacity"
+    - "linearity and unique entrance of nonspecial edges"
+  next_need: "Attack the near-top band q/p>8(r-1)/(10r-9), especially q=p-O(1), by transferring fixed-entrance nonsingleton contacts into the chosen maximum-path excess multiplicity."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Single-contact central windows give a two-envelope local bound in every uniformity."
+statement_sha256: "0f4d3696548376e115182c0ab3fbe65fb6882d9af0c80a8619ef0c3e82287a38"
+substantive_worker_ids:
+  - 192
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Single-contact central windows give a two-envelope local bound in every uniformity"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 8

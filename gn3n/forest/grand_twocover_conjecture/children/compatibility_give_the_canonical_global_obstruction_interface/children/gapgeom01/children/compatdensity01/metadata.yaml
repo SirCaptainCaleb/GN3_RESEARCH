@@ -1,0 +1,44 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 84
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "dbeb37fd1f4e0d4d88243990ebc705ebbd923148f79de30105239e849920124f"
+created_at: "2026-09-20T20:23:47.154551+00:00"
+id: "compatdensity01"
+last_elevation_revision: 0
+last_substantive_worker_id: 603
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  curation: "retention_audit_compatibility_graph"
+  last_premise_impact_check:
+    checked_at: "2026-09-23T04:41:17.383762+00:00"
+    note: "Premise-impact reconfirmation: d43a7c9e2f61 preserves the compatibility/gluing consequences used throughout the unchanged compatibility-graph geometry and density proof."
+    source_ids:
+      - "compat01"
+      - "compatibility_give_the_canonical_global_obstruction_interface"
+    worker_id: 663
+object_type: "research"
+origin_worker_id: 603
+parent_id: "gapgeom01"
+position: 0
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The deletion-cover compatibility graph is K4-free, each edge lies in at most two triangles, and on m labels it has at most floor((m^2+2m)/4) edges."
+statement_sha256: "8a0f3342de94df5861a7976f4ad4b18957e5904cd0ef68bc4a3060e95c91a77e"
+substantive_worker_ids:
+  - 603
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Compatibility-graph geometry and density"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:25:25.297469+00:00"
+version: 7

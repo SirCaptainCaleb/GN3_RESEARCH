@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "f05d248544cfa77816ea8a679771de23cb4ac50fd0863265cda968dcccf314b3"
+created_at: "2026-09-21T18:44:53.20259+00:00"
+id: "nonspecial_edges_are_unique_longestpath_entrance_vertices"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000512"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  derived_from: "Pathmaker lemma plus snake definition"
+  last_audit_observation:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  source_kind: "new_project_result"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "exact_cliquecover_reformulation_of_linear_triple_systems"
+position: 20
+research_interface:
+  consumer: "positive special-edge density route"
+  gap: "bound the fraction of graph vertices whose longest induced paths have a unique entrance label"
+  given: "induced-P_ell-free intersection graph with its clique labels"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A rank-at-least-two edge of a linear 3-graph is nonspecial exactly when all longest paths ending at it use the same entrance label."
+statement_sha256: "6caf8829f764c10774d7c2539f568f45a2c48a4474d2fa70e93d54035671d228"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Nonspecial edges are unique longest-path entrance vertices"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:03:22.295525+00:00"
+version: 5

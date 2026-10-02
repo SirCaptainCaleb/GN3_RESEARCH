@@ -1,0 +1,52 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 99
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "0ac530933e1aca2629cb8ad66efa09d06f1bd24f95abb08cdfbc04e6a19607a0"
+created_at: "2026-09-27T21:45:33.685919+00:00"
+id: "force_a_hamiltonian_fivewindow_or_a_doubled_reverse_barrier"
+last_elevation_revision: 0
+last_substantive_worker_id: 697
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+  last_audit_observation:
+    claim_id: 139
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T22:14:37.943179+00:00"
+    worker_id: 596
+object_type: "result"
+origin_worker_id: 697
+parent_id: "localextend01"
+position: 1
+research_interface:
+  consumer: "clean detour wrap branch; endpoint transport / defect compression"
+  given: "an internal ordered path edge xy with one inherited extender on each side and one additional extender on one side"
+  need: "consume the Hamiltonian five-window through its exact-pc2 complement, or combine doubled barriers from multiple probes"
+  produces: "a Hamiltonian five-window or two explicit reverse triples on the same side"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Two same-side extensions of an internal path edge force a Hamiltonian five-window or a doubled reverse barrier"
+statement_sha256: "bdc8519e650e753750798695dbbd9b3ce42b85bd30fec5c47132ef51949ae4bc"
+substantive_worker_ids:
+  - 697
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Two same-side extensions of an internal path edge force a Hamiltonian five-window or a doubled reverse barrier"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T23:10:56.914302+00:00"
+version: 5

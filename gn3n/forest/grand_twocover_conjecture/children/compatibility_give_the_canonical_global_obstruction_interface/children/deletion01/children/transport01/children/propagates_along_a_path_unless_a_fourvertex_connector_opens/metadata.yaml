@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 78
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "1efff296056379b6cb4b1cb9766ab390a7760390989ef302de6b239611b13e16"
+created_at: "2026-09-28T01:06:58.208796+00:00"
+id: "propagates_along_a_path_unless_a_fourvertex_connector_opens"
+last_elevation_revision: 0
+last_substantive_worker_id: 694
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 323
+    detail: "Independent check: the one-step doubled-barrier propagation is a direct antisymmetry dichotomy and iterates along the path; the outgoing version is symmetric."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  last_audit_observation:
+    claim_id: 323
+    detail: "Independent check: the one-step doubled-barrier propagation is a direct antisymmetry dichotomy and iterates along the path; the outgoing version is symmetric."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-28T01:44:05.128352+00:00"
+    worker_id: 679
+  proof_rehearsal_generation: 42
+  scale_free: true
+object_type: "research"
+origin_worker_id: 694
+parent_id: "transport01"
+position: 0
+research_interface:
+  consumer: "global quadratic-minimum doubled-cross regime; equitable common-middle-square regime; endpoint transport / defect compression"
+  given: "a doubled reverse/cross barrier involving two exterior labels and one vertex of a displayed tight path"
+  need: "combine a transported opposite-end barrier or one opened four-vertex connector with the surrounding cover data to obtain defect-span compression"
+  produces: "either an explicit tight four-vertex connector across a displayed path edge or transport of the same doubled barrier all the way toward the opposite end"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A doubled endpoint barrier propagates along a path unless a four-vertex connector opens."
+statement_sha256: "05a8ba0f55001ba560cc0a77301c8eb0358d43d83b63b1bb6f65dfdf92116904"
+substantive_worker_ids:
+  - 694
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A doubled endpoint barrier propagates along a path unless a four-vertex connector opens"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T01:44:05.128352+00:00"
+version: 5

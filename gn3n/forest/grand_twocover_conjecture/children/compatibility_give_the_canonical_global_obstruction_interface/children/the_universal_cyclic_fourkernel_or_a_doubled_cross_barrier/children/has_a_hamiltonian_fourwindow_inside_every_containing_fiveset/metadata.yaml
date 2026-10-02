@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "a614dff2598503b54458a54e835cf689336e487c3c1dff88259b4d9619a1c7c1"
+created_at: "2026-09-28T02:59:19.252531+00:00"
+id: "has_a_hamiltonian_fourwindow_inside_every_containing_fiveset"
+last_elevation_revision: 0
+last_substantive_worker_id: 904
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Substantive strengthening and proof simplification: four-window now lies inside every chosen five-set containing x and depends only on smallset01 plus mincex01."
+  audit_request_recorded_at: "2026-10-01T02:29:52.218135+00:00"
+  audit_resolution:
+    claim_id: 927
+    detail: "Reconstructed from the five-set four-subset bounds and minimum-counterexample complement argument."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:32:40.485153+00:00"
+    worker_id: 922
+  audit_trigger_kind: "explicit"
+  last_audit_observation:
+    claim_id: 927
+    detail: "Reconstructed from the five-set four-subset bounds and minimum-counterexample complement argument."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:32:40.485153+00:00"
+    worker_id: 922
+object_type: "research"
+origin_worker_id: 688
+parent_id: "the_universal_cyclic_fourkernel_or_a_doubled_cross_barrier"
+position: 0
+research_interface:
+  consumer: "shortest proof composition; four-side/codimension transport"
+  given: "a minimum counterexample H, any vertex x, and any five-set F containing x"
+  need: "exploit the resulting completely local and freely placeable four-window; compare such windows across overlapping five-sets or consume their exact-two-cover complements"
+  produces: "a Hamiltonian four-set W⊂F containing x whose complement is non-Hamiltonian of path-cover number two"
+research_level: "theorem"
+semantic_container_text: "Anchored Hamiltonian four-window route: every vertex lies in a Hamiltonian four-set inside every containing five-set, and in a minimum counterexample each such four-set has a non-Hamiltonian path-cover-two complement; descendants exploit overlapping windows, endpoint exchanges, and bounded support migration."
+simplified_statement: "Every vertex of a minimum counterexample lies in a Hamiltonian four-set inside every five-set that contains it."
+statement_sha256: "7cf433e2e5c6126c468b00cba08ddd2fb6a56f22bc4a17c9de2d272dd2936f27"
+substantive_worker_ids:
+  - 688
+  - 904
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every vertex has a Hamiltonian four-window inside every containing five-set"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T05:32:40.485153+00:00"
+version: 13

@@ -2,11 +2,11 @@
   current_bottleneck_id: null
   current_guidance_id: null
   current_strategy_id: null
-  grand_theorem_id: "1000270"
+  grand_theorem_id: "grand_twocover_conjecture"
   methodology_version: 1
   phase: "active"
   proof_frontier_id: null
   research_focus_ids:
-  revision: 11502
+  revision: 11600
   singleton: true
-  updated_at: "2026-10-02T14:18:51.595549+00:00"
+  updated_at: "2026-10-02T15:12:34.978334+00:00"

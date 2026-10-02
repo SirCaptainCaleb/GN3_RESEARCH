@@ -1,0 +1,61 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 72
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "4889a12333df1153784596af418f6371e168a4fa4fc3a83303777370e99bb4bc"
+created_at: "2026-09-29T05:51:25.22562+00:00"
+id: "globallylongest_cases_or_a_smaller_longestpath_complement"
+last_elevation_revision: 8151
+last_substantive_worker_id: 683
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 129
+    detail: "Removed ambiguous shell/compression shorthand from the title and statement while preserving the three explicit globally-longest profiles and the complement bound."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:21:26.104203+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 129
+    detail: "Removed ambiguous shell/compression shorthand from the title and statement while preserving the three explicit globally-longest profiles and the complement bound."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-29T12:21:26.104203+00:00"
+    worker_id: 681
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Terminology repair: remove ambiguous shell/compression shorthand while preserving the exact profile and complement bounds."
+    recorded_at: "2026-09-29T12:20:50.965108+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 681
+object_type: "research"
+origin_worker_id: 683
+parent_id: "global_sizegap_maximin_bypass01"
+position: 1
+research_interface:
+  consumer: "size-gap and maximin routes"
+  given: "any three-cover of a minimum counterexample with profile (c+2,c,c) or (c+3,c,c)"
+  need: "consume the three finite shells or exploit the strictly smaller non-Hamiltonian complement"
+  produces: "profile-only finite-shell/complement-compression dichotomy"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Profiles (c+2,c,c) and (c+3,c,c) reduce to three listed globally-longest cases or a smaller longest-path complement"
+statement_sha256: "3722a1977185f6a6994ecdf0a2066f2874e783b6d756c6bf6c39909c914c8fa2"
+substantive_worker_ids:
+  - 683
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Profiles (c+2,c,c) and (c+3,c,c) reduce to three listed globally-longest cases or a smaller longest-path complement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T13:39:54.683563+00:00"
+version: 8

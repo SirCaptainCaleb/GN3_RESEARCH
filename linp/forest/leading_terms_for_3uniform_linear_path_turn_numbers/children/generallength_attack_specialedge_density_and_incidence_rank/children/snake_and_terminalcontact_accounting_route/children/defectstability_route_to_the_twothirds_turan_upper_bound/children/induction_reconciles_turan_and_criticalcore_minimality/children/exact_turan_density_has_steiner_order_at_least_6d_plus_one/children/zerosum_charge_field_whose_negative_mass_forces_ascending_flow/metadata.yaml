@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 7
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "87a472770d2d288f9d2216151680fd051d5d69fe890b701179753fcd21ea18c4"
+created_at: "2026-09-24T03:54:04.871228+00:00"
+id: "zerosum_charge_field_whose_negative_mass_forces_ascending_flow"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000396"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Verified leave parity, zero-sum charge, d_H=3d-k, the seed spike kappa, and the quantitative ascending-source lower bound c(v)>=kappa+r+2 for negative charge -r."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  last_audit_observation:
+    claim_id: "6e716719-7ea2-46a9-aa54-58d3f3c65418"
+    detail: "Verified leave parity, zero-sum charge, d_H=3d-k, the seed spike kappa, and the quantitative ascending-source lower bound c(v)>=kappa+r+2 for negative charge -r."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:57.814781+00:00"
+    worker_id: "5e6ffd29-4a5d-43fc-bffd-678d1f30857f"
+  role: "leave-charge to ascending-flow bridge"
+  uses:
+    - "exact_turan_density_has_steiner_order_at_least_6d_plus_one"
+    - "longestpath_terminal_degree_with_exact_doubleblocker_slack"
+    - "directed_graph_of_ascending_edges_and_a_levelcut_inequality"
+object_type: "theorem"
+origin_worker_id: 185
+parent_id: "exact_turan_density_has_steiner_order_at_least_6d_plus_one"
+position: 0
+research_interface:
+  consequence: "The design-defect and potential-DAG approaches are the same obstruction viewed dually: low-degree leave spikes force compensating high-degree vertices, and those vertices must emit large ascending fans."
+  consumer:
+    - "equality-layer induction"
+    - "potential-flow route"
+    - "Steiner-deficiency route"
+  given:
+    - "exact density m=dn"
+    - "leave graph"
+    - "P_ell-free"
+  next_need: "Bound how much negative charge/ascending flow can terminate in the top potential layers. Combine with potential superlevel cuts or common-entrance rail uncrossing; a charge-flow conservation inequality strong enough to forbid the mandatory positive spike would close the equality layer."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Leave deviations form a zero-sum charge field whose negative mass forces ascending flow."
+statement_sha256: "1dd1cd7a78919bf8461587ed57ef59b230e2911049c96100d45737c1061ab8e4"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Leave deviations form a zero-sum charge field whose negative mass forces ascending flow"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:14:09.518606+00:00"
+version: 8

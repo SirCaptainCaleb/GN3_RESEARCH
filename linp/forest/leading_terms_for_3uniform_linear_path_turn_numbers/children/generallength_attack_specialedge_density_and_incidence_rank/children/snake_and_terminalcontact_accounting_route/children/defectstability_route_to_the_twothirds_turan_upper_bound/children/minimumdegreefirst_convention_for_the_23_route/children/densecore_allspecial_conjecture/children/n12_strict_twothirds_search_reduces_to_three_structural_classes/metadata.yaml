@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 75
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "7028a7498fe16163675ec99ef19317823c27d89c7e8eb89d98d679366b64cf69"
+created_at: "2026-09-23T23:22:57.767998+00:00"
+id: "n12_strict_twothirds_search_reduces_to_three_structural_classes"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000044"
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d1564feb-f572-4c02-ac4b-e58269db8e36"
+    detail: "Checked each L=1,...,5 case. Degree/edge-count arithmetic is correct; certified exact P3/P4 and P5 extremal inputs support the Fano, affine-plane, and G0 reductions; the STS(13)-puncture argument is valid. Formal dependency links to those exact inputs should be added as maintenance."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:44:14.22564+00:00"
+    worker_id: "234a62d6-5248-43b9-87ff-446043628031"
+  humanization_target: "finite_evidence_for_the_strict_densecore_allspecial_threshold"
+  last_audit_observation:
+    claim_id: "d1564feb-f572-4c02-ac4b-e58269db8e36"
+    detail: "Reaffirm prior independent check: all L=1,...,5 reductions and exact P3/P4/P5 inputs are sound."
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-25T02:46:49.783049+00:00"
+    worker_id: "234a62d6-5248-43b9-87ff-446043628031"
+  last_failure:
+    reason: "The conclusion is plausibly correct, but the written n=9,L=4 step is not a valid proof: in an STS(9), the extra block through two separated path vertices does not by itself create a forbidden path-edge intersection, since edges outside the selected path may meet path edges. Repair by using the unique STS(9)=AG(2,3): e1 disjoint e3 and e2 disjoint e4 force two parallel-class equalities, while e1 meets e2, so e1 and e4 cannot be disjoint as a P4 requires."
+    recorded_at: "2026-09-25T01:47:11.776216+00:00"
+  last_local_audit_repair:
+    reason: "Substantive audit repair: replace the invalid STS(9) extra-edge argument by the correct affine-plane parallel-class proof. The structural reduction and conclusion are unchanged."
+    recorded_at: "2026-09-25T01:47:48.301709+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "densecore_allspecial_conjecture"
+position: 0
+research_interface:
+  consequence: "Replaces a 13,406-system negative search by three explicit structural subproblems."
+  consumer:
+    - "d9ee4adc37d3 finite strict-threshold evidence"
+    - "dense-core all-special conjecture"
+  given:
+    - "exact P3 and P4 extremal theorems"
+    - "exact P5 extremal theorem"
+    - "linearity degree bound"
+    - "path vertex count"
+  next_need:
+    - "prove all-special for P4-free delta=3"
+    - "prove all-special for 12-vertex 4-regular P5-free systems"
+    - "prove all-special for arbitrary STS(13) punctures"
+research_level: "lemma"
+semantic_container_text: "Finite strict-two-thirds classification: reduce the small-order all-special problem to a short list of structural classes and eliminate them separately."
+simplified_statement: null
+statement_sha256: "70102f5b041fab050de7d4b9ee5732c238002286c88473e4cea917b4069f936e"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The n<=12 strict two-thirds search reduces to three structural classes"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:26:58.319981+00:00"
+version: 10

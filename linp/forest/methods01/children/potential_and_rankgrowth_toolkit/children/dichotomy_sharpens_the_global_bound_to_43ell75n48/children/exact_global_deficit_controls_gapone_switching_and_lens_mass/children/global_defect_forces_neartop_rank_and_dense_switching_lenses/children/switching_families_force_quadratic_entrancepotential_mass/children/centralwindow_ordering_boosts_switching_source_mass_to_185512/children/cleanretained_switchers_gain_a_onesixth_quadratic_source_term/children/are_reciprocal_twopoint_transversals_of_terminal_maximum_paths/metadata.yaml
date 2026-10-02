@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "2d93d9da64ad53ded12445bfd2d6b8f82d22879cfbc270d58265497dcfa266c7"
+created_at: "2026-09-24T19:22:37.925713+00:00"
+id: "are_reciprocal_twopoint_transversals_of_terminal_maximum_paths"
+last_elevation_revision: null
+last_substantive_worker_id: 201
+legacy_id: "1000631"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "7449ac28-1911-4974-abb7-58a8b3705b0a"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:13:31.625259+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "7449ac28-1911-4974-abb7-58a8b3705b0a"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 2
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T22:13:31.625259+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T22:13:08.315228+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 201
+parent_id: "cleanretained_switchers_gain_a_onesixth_quadratic_source_term"
+position: 0
+research_interface:
+  consequence: "Every ascending edge gives a two-point transversal {entrance, opposite terminal} of the entire family of maximum paths at either terminal. The earlier gap-one switching recapture lemma is a special case."
+  consumer:
+    - "terminal-retained switching branch"
+    - "reciprocal terminal-path arguments"
+    - "potential-oriented local bound"
+    - "two-path lens packing"
+  given:
+    - "ascending nonspecial edge with unique entrance"
+    - "definition of endpoint potential and edge rank"
+  next_need: "For a linear terminal-retained switching family at one host center v, apply the universal transversals simultaneously at the distinct retained terminals u_i. Combine with the common host path P_v and endpoint-lens intersection to force either many paths through v or many paths through their distinct omitted entrances x_i."
+research_level: "lemma"
+semantic_container_text: "Reciprocal-transversal branch: ascending edges meet both terminal maximum paths in controlled two-point patterns, leading to source-terminal lenses, repeated intersections, or shared-last-edge structure."
+simplified_statement: "Ascending edges are reciprocal two-point transversals of terminal maximum paths."
+statement_sha256: "cb8526286d98aede9eab6bea008cd5469d998329e8b6b2b0f25116fbcafb5084"
+substantive_worker_ids:
+  - 201
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Ascending edges are reciprocal two-point transversals of terminal maximum paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 9

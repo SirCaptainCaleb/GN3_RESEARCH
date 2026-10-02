@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "a404f721aaf17530cf4e99ef8308c42da1e8186684776342072f9a7015b69f47"
+created_at: "2026-09-28T21:13:53.505047+00:00"
+id: "path_induces_a_pathcovertwo_endpoint_square_on_its_complement"
+last_elevation_revision: null
+last_substantive_worker_id: 586
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 364
+    detail: "Independent reconstruction verifies all four endpoint-square states are non-Hamiltonian with path-cover number two by minimum-counterexample calculus."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+  last_audit_observation:
+    claim_id: 364
+    detail: "Independent reconstruction verifies all four endpoint-square states are non-Hamiltonian with path-cover number two by minimum-counterexample calculus."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-29T05:59:46.300317+00:00"
+    worker_id: 630
+object_type: "research"
+origin_worker_id: 586
+parent_id: "methods01"
+position: 1
+research_interface:
+  consumer: "endpoint transport; deletion-cover compatibility; two-label square arguments; reversal-kernel consumption"
+  given: "any proper displayed tight path of order at least three in a minimum counterexample"
+  produces: "a full path-cover-two square on the path complement plus either/both displayed path endpoints"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Every proper tight path induces a path-cover-two endpoint square on its complement"
+statement_sha256: "52ddd56e1e12fc00e56cde0ca2da70a06218f5ebd49d2f905fd700530cfc25ab"
+substantive_worker_ids:
+  - 586
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Every proper tight path induces a path-cover-two endpoint square on its complement"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-29T05:59:46.300317+00:00"
+version: 5

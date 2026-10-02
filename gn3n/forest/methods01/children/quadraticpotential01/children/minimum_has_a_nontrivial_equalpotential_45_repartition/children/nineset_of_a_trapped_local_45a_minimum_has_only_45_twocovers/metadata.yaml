@@ -1,0 +1,64 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "certified"
+audited_math_version: 3
+body_sha256: "d3730e955a0672ac1425a95aeebf6258e43023fe31db71411d7785389f02e8a6"
+created_at: "2026-09-27T19:47:36.271384+00:00"
+id: "nineset_of_a_trapped_local_45a_minimum_has_only_45_twocovers"
+last_elevation_revision: 0
+last_substantive_worker_id: 626
+legacy_id: null
+lifecycle_status: "active"
+math_version: 3
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "v3 simplifies the proof to the certified supported product bound 0645d2daab03; statement unchanged."
+  audit_request_recorded_at: "2026-09-29T00:59:54.749958+00:00"
+  audit_resolution:
+    claim_id: 255
+    detail: "Applying 0645d2daab03 to orders 4,5,a with a>=7 satisfies the strict threshold a>6. Hence every two-cover of the nine-set has both sides at least four and therefore orders 4 and 5; Hamiltonian supports of order at least six are excluded, while the displayed 5-path shows maximum tight-path order exactly five."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_audit_observation:
+    claim_id: 255
+    detail: "Applying 0645d2daab03 to orders 4,5,a with a>=7 satisfies the strict threshold a>6. Hence every two-cover of the nine-set has both sides at least four and therefore orders 4 and 5; Hamiltonian supports of order at least six are excluded, while the displayed 5-path shows maximum tight-path order exactly five."
+    math_version: 3
+    outcome: "pass"
+    recorded_at: "2026-09-29T12:17:08.199921+00:00"
+    worker_id: 681
+  last_local_audit_repair:
+    audit_repair_authorized: true
+    body_overhaul_permitted: true
+    reason: "Dictionary repair only: removed the prohibited redundant modifier exact from cover terminology; mathematical statement and proof are unchanged."
+    recorded_at: "2026-09-27T23:38:00.689772+00:00"
+    statement_change_policy: "small_local_tweak_only_policy_enforced"
+    worker_id: 572
+object_type: "research"
+origin_worker_id: 573
+parent_id: "minimum_has_a_nontrivial_equalpotential_45_repartition"
+position: 1
+research_interface:
+  consumer: "minimum-side-four local no-trapping; finite 4|5 plateau dynamics"
+  given: "a trapped local Phi-minimum of profile 4|5|a with a>=7"
+  need: "classify or destabilize nine-vertex boundary tournaments with universal 4|5 two-cover profile; combine with the large equal-Phi plateau and synchronized long-endpoint replacements"
+  produces: "a nine-vertex induced residue W whose every exact two-cover has profile 4|5 and whose maximum tight-path order is exactly five"
+research_level: "theorem"
+semantic_container_text: "Rigid local 4|5 plateau: a trapped 4|5|a quadratic minimum contains a nine-vertex residue whose two-covers all have profile 4|5, and the descendants force crossings, singleton-switch structure, endpoint blockade, or order disagreement."
+simplified_statement: "The nine-set of a trapped local 4|5|a minimum has only 4|5 two-covers."
+statement_sha256: "acfb6fe5f24082b22c8e8cd512fa62559323b368567b440f4d0e4a8f0f1c5416"
+substantive_worker_ids:
+  - 573
+  - 626
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The nine-set of a trapped local 4|5|a minimum has only 4|5 two-covers"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:58:38.352961+00:00"
+version: 15

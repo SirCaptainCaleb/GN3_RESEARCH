@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 1
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "213d9fec5496d592bb6b85b3eb80bc4d979dd3d604ba0762b24e1fbd9ff8a3c6"
+created_at: "2026-09-24T04:24:09.328118+00:00"
+id: "layer_is_either_upperhalf_or_exposes_an_exceptional_entrance"
+last_elevation_revision: null
+last_substantive_worker_id: 229
+legacy_id: "1000350"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified three Type-A entrances make all three rank-r terminal edges ascending; the certified odd-central-window bound then forces p<=2r-4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+  last_audit_observation:
+    claim_id: "971c272c-fb20-4d66-b47d-5a517647f065"
+    detail: "Verified three Type-A entrances make all three rank-r terminal edges ascending; the certified odd-central-window bound then forces p<=2r-4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:56:37.590852+00:00"
+    worker_id: "d74e6eb4-5788-44a0-a864-9fd41e6dac91"
+object_type: "lemma"
+origin_worker_id: 229
+parent_id: "branch_or_form_an_exact_ladder_down_to_an_exceptional_entrance"
+position: 0
+research_interface:
+  consequence: "Branching cannot hide at low ranks inside the Type-A core. Every branch below the upper-half threshold directly exposes an exceptional entrance; branch layers with all-Type-A entrances must occur at rank at least ceil((p+4)/2)."
+  consumer:
+    - "BRANCH population control"
+    - "near-floor stability"
+  given:
+    - "1e24a8fe7b2a branch layers"
+    - "a57057ab0001 Type-A source edges are ascending"
+    - "a570b0ad0001 odd central window"
+  next_need: "Split BRANCH vertices into low-branch and upper-half-branch. Bound multiplicity of low-branch exceptional entrances using ca5f7dc68b1a weighted nonascending budget. For upper-half branches, exploit that three Type-A entrances lie at potential r-1 >= roughly p/2 and combine with the special-level/rotation expansion machinery."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A Type-A branching layer is either upper-half or exposes an exceptional entrance."
+statement_sha256: "47f20bce9f687417b13b460534669d2707f952b5a771781af16de6bfa5eec99f"
+substantive_worker_ids:
+  - 229
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A Type-A branching layer is either upper-half or exposes an exceptional entrance"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

@@ -94,9 +94,9 @@
       category: "route"
       headline: "Minimum-degree / all-special route toward 2/3"
       object_ids:
-        - "1001062"
-        - "1001046"
-        - "1000853"
+        - "originalhypergraph_densitycore_minimumdegree_reduction"
+        - "ascendinglayer_degree_recurrence"
+        - "strict_twothirds_allspecial_threshold_for_n12"
       purpose: "Retain an independent route toward the 2/3 target through density cores and rank layers."
       startup_visible: false
       updated_at: "2026-09-26T04:04:58.241395+00:00"
@@ -106,8 +106,8 @@
       category: "route"
       headline: "Incidence-rank program"
       object_ids:
-        - "1000531"
-        - "1000046"
+        - "maximumdegree_range_of_the_incidencerank_path_inequality"
+        - "rank_controls_nonspecial_incidence_nullity_up_to_entrance_rank"
       purpose: "Retain the algebraic nullity route as an independent alternative."
       startup_visible: false
       updated_at: "2026-09-26T04:04:58.241395+00:00"
@@ -117,9 +117,9 @@
       category: "route"
       headline: "Lens-free repair of the post-43/48 stability chain"
       object_ids:
-        - "1000303"
-        - "1000755"
-        - "1000796"
+        - "centers_still_force_neartop_rank_and_fiveeighths_switching"
+        - "fiveeighths_switching_mass_survives_without_endpoint_lenses"
+        - "a_maximum_endpoint_path_manufactures_a_balanced_endpoint_lens"
       purpose: "Recover the quantitative switching backbone without the failed automatic-lens conversion."
       startup_visible: false
       updated_at: "2026-09-26T04:04:58.241395+00:00"
@@ -129,10 +129,10 @@
       category: "route"
       headline: "Two-host repeated-intersection and common-edge route"
       object_ids:
-        - "1001127"
-        - "1000147"
-        - "1000997"
-        - "1001033"
+        - "gives_two_lensfree_repeatedintersection_certificates_per_label"
+        - "forces_many_cyclebearing_labels_or_many_common_last_edges"
+        - "force_cyclebearing_edges_or_common_uniqueentrance_traversal"
+        - "uniqueentrance_edges_form_one_consistently_oriented_block"
       purpose: "Exploit repeated source-path intersections directly through cycles and common high-rank edges, without lens conversion."
       startup_visible: false
       updated_at: "2026-09-26T04:04:58.241395+00:00"
@@ -142,9 +142,9 @@
       category: "toolkit"
       headline: "Single-contact central-window geometry"
       object_ids:
-        - "1000546"
-        - "1000155"
-        - "1000342"
+        - "geometric_spacing_for_clean_ascending_attachments_to_one_path"
+        - "centralwindow_packing_for_commonterminal_ascending_edges"
+        - "contacts_on_a_maximum_path_lie_in_one_central_rank_window"
       purpose: "Path-relative packing and central-window localization for ascending singleton contacts."
       startup_visible: false
       updated_at: "2026-09-26T04:04:58.241395+00:00"
@@ -154,8 +154,8 @@
       category: "route"
       headline: "U_11 collision rank-flow and cycle packing"
       object_ids:
-        - "1000173"
-        - "1000334"
+        - "surplus_a_rotation_packet_or_a_lowrank_boundary_triangle"
+        - "collisions_force_a_linear_packing_of_edgedisjoint_3cycles"
       purpose: "Turn color-terminal collisions into rank-sum surplus, exact half-rank rotations, or edge-disjoint local cycles."
       startup_visible: false
       updated_at: "2026-09-26T04:04:58.241395+00:00"
@@ -165,10 +165,10 @@
       category: "route"
       headline: "Supported 43/48 bound and exact defect accounting"
       object_ids:
-        - "1000738"
-        - "1000732"
-        - "1000103"
-        - "1000378"
+        - "and_extends_the_coefficient_improvement_to_every_uniformity"
+        - "dichotomy_sharpens_the_global_bound_to_43ell75n48"
+        - "windows_sharpen_the_astra_multiplicity_master_inequality"
+        - "aligned_potential_simultaneously_improve_the_astra_coefficient"
       purpose: "Keep the strongest supported general upper bound and its exact near-equality deficits visible."
       startup_visible: false
       updated_at: "2026-09-26T04:04:58.241395+00:00"

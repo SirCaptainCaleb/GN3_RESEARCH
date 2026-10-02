@@ -1,0 +1,53 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 2
+body_sha256: "92eea31e14552923f92eb57f0311e736abc8acd0b6e0494ad89120f27890ac8d"
+created_at: "2026-09-21T18:44:53.20259+00:00"
+id: "exact_cliquecover_reformulation_of_linear_triple_systems"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000960"
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  derived_from: "Pathmaker lemma and linearity"
+  last_audit_observation:
+    claim_id: "d71c9836-9e95-474c-baea-8cc9a38880a2"
+    math_version: 2
+    outcome: "pass"
+    recorded_at: "2026-09-21T18:53:21.991985+00:00"
+    worker_id: "a06a6aed-ad83-4a3c-889b-8631e5b7f03b"
+  source_kind: "new_project_result"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "lemma_linear_paths_are_induced_paths_in_the_intersection_graph"
+position: 1
+research_interface:
+  consumer: "graph-theoretic attacks on general ell"
+  gap: "exploit induced-P_ell-free structure together with the exact clique-cover constraints"
+  given: "linear triple system or indexed 3-fold clique cover"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A graph is the intersection graph of a linear 3-graph exactly when it has a clique cover in which each graph vertex lies in three cliques and each graph edge lies in exactly one; P_ℓ-freeness becomes induced-P_ℓ-freeness."
+statement_sha256: "f1f40e756bacfd70986fec1c04ee9357b7e6a4c05c5c3e3ae17f8d83b4022228"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Exact clique-cover reformulation of linear triple systems"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-25T05:07:59.40213+00:00"
+version: 6

@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "346a08df542afae5a9f692e0d7cf4caaf899559c0726d1c80c01ee3ecf56dc8d"
+created_at: "2026-10-02T03:43:47.531706+00:00"
+id: "only_in_a_degreefour_shell_with_a_2k2_p4_or_claw_core_graph"
+last_elevation_revision: 0
+last_substantive_worker_id: 1232
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "New second-layer synchronization and exact residue classification. Check the Delta_z degree count from independence_number_at_most_two_in_every_boundary_tournament, the two synchronization cases, and the signature pigeonhole argument."
+  audit_request_recorded_at: "2026-10-02T03:43:47.531706+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1232
+parent_id: "threeside_transport_descends_to_a_monotone_43_corridor"
+position: 1
+research_interface:
+  given: "one fixed-defect seven-shell in the monotone 4|3 corridor, with inherited tail order at least six"
+  implication: "the lower-corridor obstruction is reduced from arbitrary endpoint-extension behavior to three explicit four-neighbor core graphs"
+  need: "use consecutive-shell overlap or the second persistent defect to eliminate/transport the 2K2, P4, K1,3 residues"
+  produces: "a synchronized pair of strict second-layer descents unless the shell degree is exactly four and its core graph is 2K2, P4, or K1,3"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "9bd2091bf41429baad95d8e0920aafb77b41475271d264ad4217814cf2a9e217"
+substantive_worker_ids:
+  - 1232
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Second-layer synchronization fails only in a degree-four shell with a 2K2, P4, or claw core graph"
+unary_chain_length: 4
+unary_chain_standalone: false
+updated_at: "2026-10-02T03:43:47.531706+00:00"
+version: 7

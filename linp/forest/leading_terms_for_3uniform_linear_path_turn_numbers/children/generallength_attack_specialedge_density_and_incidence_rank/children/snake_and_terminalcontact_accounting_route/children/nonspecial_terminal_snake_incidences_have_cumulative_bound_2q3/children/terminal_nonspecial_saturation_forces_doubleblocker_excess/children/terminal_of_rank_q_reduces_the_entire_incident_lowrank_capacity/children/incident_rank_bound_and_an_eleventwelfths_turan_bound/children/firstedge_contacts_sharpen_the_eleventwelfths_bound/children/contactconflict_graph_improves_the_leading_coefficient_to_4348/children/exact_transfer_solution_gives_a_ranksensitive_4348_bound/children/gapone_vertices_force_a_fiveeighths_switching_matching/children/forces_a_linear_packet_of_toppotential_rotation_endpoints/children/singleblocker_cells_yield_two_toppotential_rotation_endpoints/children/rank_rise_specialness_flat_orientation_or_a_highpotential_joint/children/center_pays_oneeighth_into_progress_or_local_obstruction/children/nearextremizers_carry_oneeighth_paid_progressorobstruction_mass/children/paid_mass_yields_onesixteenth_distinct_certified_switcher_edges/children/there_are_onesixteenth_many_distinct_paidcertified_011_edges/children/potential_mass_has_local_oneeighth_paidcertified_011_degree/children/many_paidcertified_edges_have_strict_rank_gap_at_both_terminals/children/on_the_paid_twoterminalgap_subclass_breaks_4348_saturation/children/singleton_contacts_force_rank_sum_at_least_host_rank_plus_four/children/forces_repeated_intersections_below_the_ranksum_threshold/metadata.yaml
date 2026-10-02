@@ -1,0 +1,51 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: true
+audit_requirement: "recomposition_equivalence"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "71071c86b506221c8bd044cbd48b97d4859fb9602a72567fa5f14a06ba40934a"
+created_at: "2026-10-01T20:53:18.489101+00:00"
+id: "forces_repeated_intersections_below_the_ranksum_threshold"
+last_elevation_revision: null
+last_substantive_worker_id: 296
+legacy_id: "1001220"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  reasoning_hygiene_recomposition: true
+  recomposition_audit:
+    classified_at: "2026-10-01T20:53:26.672474+00:00"
+    scope: "equivalence"
+    source_package_fully_certified: true
+object_type: "research"
+origin_worker_id: 296
+parent_id: "singleton_contacts_force_rank_sum_at_least_host_rank_plus_four"
+position: 0
+research_interface:
+  consequence: "Low rank-sum reciprocal terminal paths cannot remain pairwise singly intersecting; four owners already force a repeated intersection and larger families force quadratically many."
+  consumer:
+    - "terminal-retained strict-gap branch"
+    - "paid local congestion"
+  given:
+    - "singleton central-window bounds"
+    - "terminal-singleness"
+    - "linearity"
+    - "Mantel theorem"
+  next_need: "Exploit the forced repeated-intersection pair by path order/uncrossing without relying on automatic lens production."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Complete reciprocal transversality below the rank-sum threshold forces repeated intersections among opposite-terminal maximum paths."
+statement_sha256: "3da126749b7141a5afd38248701f974ea22718a52e6449111b2f84b5a1926cf1"
+substantive_worker_ids:
+  - 296
+support_reason: "recomposition_equivalence_audit_pending"
+support_status: "unchecked"
+title: "Terminal-single reciprocity forces repeated intersections below the rank-sum threshold"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:54:08.708629+00:00"
+version: 5

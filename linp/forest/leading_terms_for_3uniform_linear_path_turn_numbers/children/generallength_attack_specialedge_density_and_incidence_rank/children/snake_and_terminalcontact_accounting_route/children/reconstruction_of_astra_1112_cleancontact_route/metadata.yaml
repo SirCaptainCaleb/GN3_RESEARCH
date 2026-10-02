@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "d71df55ac51b1148e9be88889c9593693da56548a66eeb2b69a97215c70c0fe1"
+created_at: "2026-09-24T04:15:43.502616+00:00"
+id: "reconstruction_of_astra_1112_cleancontact_route"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000032"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "conjecture"
+metadata:
+  fence:
+    - "consecutive_private_single_blockers_need_not_force_an_extension"
+    - "private_single_blockers_can_occur_on_a_longest_endpoint_path"
+  role: "Astra interrupted 11/12 reconstruction"
+  uses:
+    - "ascendingedge_rainbowlayer_formulation"
+    - "nonspecial_terminal_snake_incidences_have_cumulative_bound_2q3"
+    - "centralwindow_packing_for_commonterminal_ascending_edges"
+    - "a_special_subhypergraph_confined_to_individual_potential_levels"
+    - "equality_vertices_have_at_most_one_deficient_special_incidence"
+    - "vertices_force_an_exact_saturated_rankminusone_terminal_fan"
+    - "fan_has_at_least_p_minus_five_genuine_early_private_rotations"
+    - "linearly_many_neartoppotential_vertices_on_one_witness_path"
+object_type: "proposal"
+origin_worker_id: 185
+parent_id: "snake_and_terminalcontact_accounting_route"
+position: 11
+research_interface:
+  consequence: "If the reconstructed clean-contact terminal packing yields A<=3/4 sum phi, then m<=11/12 sum phi - n/3 <= ((11ell-15)/12)n for P_ell-free systems."
+  consumer:
+    - "general leading-coefficient upper bound"
+    - "grand linear path Turan program"
+  given:
+    - "Astra interrupted transcript"
+    - "419519f0efa5 certified ascending accounting"
+    - "terminal-contact localization and Type-A path structure"
+  next_need: "Recover/prove the exact clean-contact forbidden-pair splice. Do not use the false consecutive-private-single-blocker claim refuted by 2712f65b5d5e. Identify the extra clean/ascending/Type-A hypothesis under which two nearby contacts do force a too-long or wrong-entrance path."
+research_level: "theorem"
+semantic_container_text: "The 11/12 clean-contact program: local spacing and blocking restrictions on clean entrances, potential-oriented charging, and two-rank obstruction analysis aimed at the three-quarters local bound."
+simplified_statement: "If the local clean-contact bound A≤(3/4)∑_v φ(v) holds, then the certified ascending-edge accounting inequality yields m≤(11/12)∑_v φ(v)−n/3 and hence the 11/12 leading coefficient."
+statement_sha256: "040842665a4ff531c92bd27a65abb0664f8dd38af354200dd06891c97cd5464f"
+substantive_worker_ids:
+  - 185
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Reconstruction of Astra 11/12 clean-contact route"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-30T21:16:00.988121+00:00"
+version: 5

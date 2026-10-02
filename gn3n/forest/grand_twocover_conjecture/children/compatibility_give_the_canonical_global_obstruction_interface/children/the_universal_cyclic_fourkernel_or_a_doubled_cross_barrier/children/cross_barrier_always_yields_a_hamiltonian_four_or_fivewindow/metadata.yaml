@@ -1,0 +1,54 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "ab44cc4372b07c175c3e7a1de850b718eec4ec23a9d94aa2dfdc0abf8e11f440"
+created_at: "2026-09-28T02:57:58.598106+00:00"
+id: "cross_barrier_always_yields_a_hamiltonian_four_or_fivewindow"
+last_elevation_revision: 0
+last_substantive_worker_id: 688
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 167
+    detail: "Independent check succeeds. If the five-set F is Hamiltonian, take W=F. If F is non-Hamiltonian, the certified five-set theorem gives at most one non-Hamiltonian four-subset among all five deletions, so at least three of the four x-containing four-subsets F-{v}, v≠x, are Hamiltonian. In either case W is proper; minimum-counterexample calculus makes H-W non-Hamiltonian with path-cover number two."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:00:24.492975+00:00"
+    worker_id: 652
+  last_audit_observation:
+    claim_id: 167
+    detail: "Independent check succeeds. If the five-set F is Hamiltonian, take W=F. If F is non-Hamiltonian, the certified five-set theorem gives at most one non-Hamiltonian four-subset among all five deletions, so at least three of the four x-containing four-subsets F-{v}, v≠x, are Hamiltonian. In either case W is proper; minimum-counterexample calculus makes H-W non-Hamiltonian with path-cover number two."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T03:00:24.492975+00:00"
+    worker_id: 652
+object_type: "research"
+origin_worker_id: 688
+parent_id: "the_universal_cyclic_fourkernel_or_a_doubled_cross_barrier"
+position: 0
+research_interface:
+  consumer: "shortest proof composition; bounded-obstruction taxonomy"
+  given: "the doubled-cross-barrier branch from paired second-type failed-insertion pivots in one deletion state"
+  need: "eliminate doubled-cross barrier as a separate frontier; only Hamiltonian small-window and universal cyclic-K4 branches remain"
+  produces: "a proper Hamiltonian 4- or 5-vertex support containing the omitted label, with non-Hamiltonian pc-two complement"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A doubled cross barrier always yields a Hamiltonian four- or five-window."
+statement_sha256: "9535ba028dcc997d1647ca315e345fd8d29618cb317bb0cd08598e2478048c70"
+substantive_worker_ids:
+  - 688
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A doubled cross barrier always yields a Hamiltonian four- or five-window"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-28T03:04:18.147843+00:00"
+version: 5

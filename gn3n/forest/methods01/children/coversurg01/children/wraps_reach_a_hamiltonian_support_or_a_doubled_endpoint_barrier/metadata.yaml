@@ -1,0 +1,55 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "8fe87655fe0f8236250b1da0d15cd8d9f76c1d44422fabd5373a4e42d1d25ce7"
+created_at: "2026-09-27T22:04:54.3396+00:00"
+id: "wraps_reach_a_hamiltonian_support_or_a_doubled_endpoint_barrier"
+last_elevation_revision: 0
+last_substantive_worker_id: 596
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 404
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:53:21.090654+00:00"
+    worker_id: 572
+  last_audit_observation:
+    claim_id: 404
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T23:53:21.090654+00:00"
+    worker_id: 572
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-09-28T01:15:42.101581+00:00"
+object_type: "research"
+origin_worker_id: 596
+parent_id: "coversurg01"
+position: 950
+research_interface:
+  consumer: "Astra-006; endpoint-transport / defect compression"
+  given: "six successful nonbacktracking neutral wraps in the arithmetic-progression Astra-006 residue"
+  need: "consume doubled barriers by a nonlocal relocation/defect-compression argument; Hamiltonian-support branch enters generic complement machinery"
+  produces: "a Hamiltonian square support with exact-two-coverable complement, or one of two explicit doubled endpoint barriers"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Six neutral wraps reach a Hamiltonian support or a doubled endpoint barrier"
+statement_sha256: "0592263f0ae01ad2fe6ceec90c86085d760aa48516834f054de1c84be84ed75e"
+substantive_worker_ids:
+  - 596
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Six neutral wraps reach a Hamiltonian support or a doubled endpoint barrier"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-09-28T01:15:42.101581+00:00"
+version: 10

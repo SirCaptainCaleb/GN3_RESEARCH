@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 50
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "d46e4df02cfc67766356c97a55e91155fb39820cd1d65b1d7815aacaf4dc6d83"
+created_at: "2026-10-01T01:12:02.565134+00:00"
+id: "forces_a_full_pathcovertwo_boolean_cube_on_the_common_threeside"
+last_elevation_revision: 10352
+last_substantive_worker_id: 737
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_packaging_issues:
+    -
+      note: "Terminology: statement/body use the alias \"relative-order disagreement\"; project dictionary prefers \"order disagreement\". Mathematics unaffected."
+      recorded_at: "2026-10-01T02:19:51.699148+00:00"
+      worker_id: 903
+  audit_request_reason: "Independent reconstruction of the full Boolean cube forced by the common-three-side design configuration."
+  audit_request_recorded_at: "2026-10-01T01:12:02.565134+00:00"
+  audit_resolution:
+    claim_id: 923
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+  audit_trigger_kind: "explicit"
+  audit_work_kind: "dependency_hold"
+  last_audit_observation:
+    claim_id: 923
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-01T05:29:40.003289+00:00"
+    worker_id: 922
+object_type: "research"
+origin_worker_id: 737
+parent_id: "order11_design_common_threeside01"
+position: 1
+research_interface:
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "07dd7b986e8322e22472b5d9baf6e72b0ddddc92c1014976087137a16f45d669"
+substantive_worker_ids:
+  - 737
+support_reason: "dependency_verification_pending"
+support_status: "dependency_hold"
+title: "The order-eleven design branch forces a full path-cover-two Boolean cube on the common three-side"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T18:43:23.594674+00:00"
+version: 9

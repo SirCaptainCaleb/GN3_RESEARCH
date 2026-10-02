@@ -1,0 +1,59 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 5
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "e811feffe3fc0e818f6184ba5ccbf8499d132e9d58f7476f088f2dfe889a05f1"
+created_at: "2026-09-24T02:54:30.653287+00:00"
+id: "turan_equality_layer_forces_residuedependent_ascending_mass"
+last_elevation_revision: null
+last_substantive_worker_id: 185
+legacy_id: "1000092"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "ac839476-46df-4433-8d0a-f214bd8873d3"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T01:44:48.719495+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  role: "equality-layer residue split"
+  uses:
+    - "ascendingedge_rainbowlayer_formulation"
+object_type: "lemma"
+origin_worker_id: 185
+parent_id: "induction_reconciles_turan_and_criticalcore_minimality"
+position: 0
+research_interface:
+  consequence: "Equality forces A>=3n,n,2n in residues 0,1,2 respectively; residues 0 and 2 can be closed by equality-layer ascending bounds much weaker than the full global conjecture A<=3n/2."
+  consumer:
+    - "equality-layer induction"
+    - "ascending-edge density route"
+  given:
+    - "sharp equality m=floor(2ell/3)n"
+    - "ascending-edge snake inequality"
+  next_need: "Exploit minimum degree >=d+1 and equality-layer structure to prove A<3n (residue 0) and A<2n (residue 2); reserve the harder residue 1 for critical-core/near-spanning methods."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "The sharp Turan equality layer forces residue-dependent ascending mass."
+statement_sha256: "a78fd17c2ffdbc9fc6b4497ab3ebe2c8f6e4f4a454d7285cef9ac2f475c670b4"
+substantive_worker_ids:
+  - 185
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "The sharp Turan equality layer forces residue-dependent ascending mass"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 5

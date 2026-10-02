@@ -1,0 +1,72 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "ae43a5e91b42c1bda30c3608289b3f8de6354112bafac20f93eeea33201cd9a2"
+created_at: "2026-09-28T18:32:09.035243+00:00"
+id: "minimumside_deletion_cover_has_a_crossend_fourvertex_connector"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Serious proof gap: the body claims T=(q_s,p_0,...,p_r,q_0) together with Q=(q_0,...,q_s) forms a tight cycle merely because the paths share endpoints and have disjoint interiors. This requires the cross-junction triples (p_r,q_0,q_1) and (q_{s-1},q_s,p_0), which are not established. In fact 70435ae42299 analyzes the same connector-free peel and correctly shows both junction triples must be NON-tight, yielding reverse hooks. Therefore the claimed impossibility of the connector-free branch is unsupported and conflicts with the repaired residue analysis. Do not use a597270c938a as closure pending repair/retraction."
+  audit_request_recorded_at: "2026-09-28T18:54:32.046272+00:00"
+  audit_resolution:
+    claim_id: 195
+    detail: "The published connector-free cycle argument is invalid."
+    math_version: 2
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:19:02.6061+00:00"
+    worker_id: 703
+  audit_resolution_before_repair: null
+  audit_work_kind: "repair"
+  composition_status: "recomposition"
+  last_audit_observation:
+    claim_id: 195
+    detail: "The published connector-free cycle argument is invalid."
+    math_version: 2
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:19:02.6061+00:00"
+    worker_id: 703
+  last_failure:
+    reason: "The published connector-free cycle argument is invalid."
+    recorded_at: "2026-09-28T20:19:02.6061+00:00"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Audit repair: proof explicitly invokes this mathematical premise; record the dependency actually used."
+    recorded_at: "2026-09-28T18:53:30.631203+00:00"
+    to_id: "a_fourvertex_connector_or_a_onevertex_deletioncover_transfer"
+    worker_id: 703
+  repair_attempt_count: 5
+  repair_reason: "Repeated independent repair attempt confirms the existing proof cannot establish the claimed connector. The connector-free peel supplies (q_s,p_0,p_1) and (p_{r-1},p_r,q_0), so T=(q_s,p_0,...,p_r,q_0) is tight, but closing it with Q would additionally require (p_r,q_0,q_1) and (q_{s-1},q_s,p_0), whose reversals—not these triples—are the forced tight hooks. No current certified lemma converts the resulting reverse-hook pair into the claimed facing four-vertex connector. The statement is not known false, so retain REPAIR."
+  repair_requested_at: "2026-09-28T20:10:57.622193+00:00"
+object_type: "research"
+origin_worker_id: 659
+parent_id: "recomp_endpoint_peel_01"
+position: 0
+research_interface:
+  consumer: "endpoint transport / defect compression; minimum-side closure"
+  given: "a deletion cover whose smaller component realizes the global minimum deletion-side order mu"
+  need: "combine this forced connector with the omitted-vertex endpoint hooks to obtain a bounded Hamiltonian window, genuine reversal, or defect-span at most two"
+  produces: "an unconditional tight cross-end four-path joining the near-end edge of one component to the far-end edge of the other"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "89286cb96ad517f257bcdb7fc345237ba9a8e1e737f7c535d125707fbf1cca42"
+substantive_worker_ids:
+  - 659
+support_reason: "local_audit_failed"
+support_status: "blocked"
+title: "Every globally minimum-side deletion cover has a cross-end four-vertex connector"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:53:15.675251+00:00"
+version: 14

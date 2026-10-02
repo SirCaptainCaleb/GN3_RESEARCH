@@ -1,0 +1,70 @@
+atlas_height: null
+atlas_hidden: false
+attention: "hidden"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_reconstruction"
+audit_status: "failed"
+audited_math_version: null
+body_sha256: "97b27c43257aa5adb2c9b4df55eedd66df36b9330b20f623f4bb651cb20c9091"
+created_at: "2026-09-28T18:48:12.067576+00:00"
+id: "fivebridge_canonically_generates_a_coherent_twolabel_square"
+last_elevation_revision: 0
+last_substantive_worker_id: 659
+legacy_id: null
+lifecycle_status: "retained"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Reasoning-hygiene review found a likely orientation gap: fe6 claims the terminal branch of 8797f79d4a78 gives the tight five-path (q1,q0,p_r,x,p0), but 8797 certifies only (q0,p_r,x,p0), and the recorded right matching-block order appears to orient the q1,q0,p_r triple oppositely. Reconstruct before recomposition."
+  audit_request_recorded_at: "2026-09-28T20:24:40.636604+00:00"
+  audit_resolution:
+    claim_id: 213
+    detail: "The claimed coherent square contradicts the terminal double-matching hypothesis."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:30:13.337262+00:00"
+    worker_id: 703
+  audit_resolution_before_repair:
+    claim_id: 390
+    detail: "Independent reconstruction checks. The five-path gives Hamiltonian D, D+a, D+b, D+a+b; inherited A,B realize all four deletion-square covers, and Hamiltonicity of any square state would pair with its complementary Hamiltonian core to two-cover H."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-28T18:55:52.774147+00:00"
+    worker_id: 703
+  audit_work_kind: "repair"
+  last_audit_observation:
+    claim_id: 213
+    detail: "The claimed coherent square contradicts the terminal double-matching hypothesis."
+    math_version: 1
+    outcome: "fail"
+    recorded_at: "2026-09-28T20:30:13.337262+00:00"
+    worker_id: 703
+  last_failure:
+    reason: "The claimed coherent square contradicts the terminal double-matching hypothesis."
+    recorded_at: "2026-09-28T20:30:13.337262+00:00"
+  repair_attempt_count: 1
+  repair_reason: "The claimed coherent square contradicts the terminal double-matching hypothesis. With D={q_0,p_r,x} and a=q_1, the set D+a={q_1,q_0,p_r,x} is exactly the right endpoint kernel X_R, assumed in 8797f79d4a78 to be a non-Hamiltonian matching-block K4. Moreover the matching-block order has q_0p_r below q_1q_0, so (q_1,q_0,p_r) is non-tight; hence the asserted five-path C=(q_1,q_0,p_r,x,p_0) is not tight. A corpus search found no certified replacement producing the claimed two-label square from this terminal branch. Repairing the statement to the valid Hamiltonian four-set conclusion of 8797f79d4a78 would materially change the theorem."
+  repair_requested_at: "2026-09-28T20:26:48.583014+00:00"
+object_type: "research"
+origin_worker_id: 659
+parent_id: "recomp_connectorfree_kernels_01"
+position: 0
+research_interface:
+  consumer: "coherent-square potential calculus; four/five-window no-trapping; minimum-side closure"
+  given: "the terminal all-the-way doubled-barrier branch in the connector-free double-matching residue"
+  need: "consume this particular coherent square without assuming its four-side state is Phi-minimal; exploit its direct ancestry from a globally minimum deletion side"
+  produces: "an explicit full two-label pc-two square over a Hamiltonian three-core, with a concrete endpoint-coherent top cover and inherited bottom cover"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "b76a26c4d85cc8b939c97914daa91d6f44dd029e8b4a05712eb310e9f68b6300"
+substantive_worker_ids:
+  - 659
+support_reason: "local_audit_failed"
+support_status: "blocked"
+title: "The terminal double-matching five-bridge canonically generates a coherent two-label square"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-09-28T20:53:15.675251+00:00"
+version: 11

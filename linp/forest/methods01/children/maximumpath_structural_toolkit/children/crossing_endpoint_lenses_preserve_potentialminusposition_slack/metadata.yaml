@@ -1,0 +1,70 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 4
+body_sha256: "637cc24dfa9f60e4f7bd4a6d181c64bde6cf0eecf69318b0871ec328a1d100fd"
+created_at: "2026-09-24T14:04:47.166399+00:00"
+id: "crossing_endpoint_lenses_preserve_potentialminusposition_slack"
+last_elevation_revision: null
+last_substantive_worker_id: 223
+legacy_id: "1000146"
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Normalized endpoint wording and added exact dependencies on ff85a782d098 and 5854d853a44b."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:43.842586+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_audit_observation:
+    claim_id: "1bd72c9a-b332-44d6-83a0-28d0684a58f4"
+    detail: "Recorded exact dependencies to the cross-splice equality and unique-intersection alignment theorem."
+    math_version: 4
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:33:45.773532+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_dependency_repair:
+    action: "add"
+    kind: "depends_on"
+    reason: "Record the unique-intersection alignment theorem used to equate the auxiliary intersection indices."
+    recorded_at: "2026-09-24T21:31:22.238051+00:00"
+    to_id: "intersection_of_two_maximum_endpoint_paths_is_an_aligned_joint"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard endpoint/last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:26:36.477463+00:00"
+    worker_id: "6fd2bfee-96be-48d3-8253-d38fc4379119"
+object_type: "lemma"
+origin_worker_id: 223
+parent_id: "maximumpath_structural_toolkit"
+position: 40
+research_interface:
+  consequence: "For a crossing pair satisfying the cross-splice hypotheses, either the two auxiliary maximum paths have at least two common vertices, or phi(c)-kappa_P(c)=phi(d)-kappa_P(d). By 85d576d60e7e this rank-position difference is constant on every connected component of uniquely-intersecting crossing pairs; by f03e744cd09b a component confined to R consecutive vertex-rank levels contributes at most (R-1)|C|/2 such crossing pairs in total."
+  consumer:
+    - "crossing graph on retained vertices"
+    - "post-43/48 path-replacement packing"
+  given:
+    - "crossing equal-length replacement intervals on one maximum path"
+    - "exact cross-splice equality"
+    - "unique intersections of maximum endpoint paths are aligned joints"
+  next_need: "Find a linear subfamily of retained vertices in a narrow vertex-rank interval, or otherwise prove that a dense interval-crossing graph must have enough edges to exceed the f03e744cd09b threshold. Either route forces linearly many pairs of auxiliary maximum paths with at least two common vertices."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Unique auxiliary intersections of crossing endpoint lenses preserve potential-minus-position slack."
+statement_sha256: "68a384163c42882ef8eb308cc7a574ba791b821d43824df7c87cf96e7435b66a"
+substantive_worker_ids:
+  - 223
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Unique auxiliary intersections of crossing endpoint lenses preserve potential-minus-position slack"
+unary_chain_length: 0
+unary_chain_standalone: true
+updated_at: "2026-10-01T20:11:14.307616+00:00"
+version: 12

@@ -1,0 +1,71 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 5
+body_sha256: "3222da5d4c5ae0fba523bca5c03e995c6d99743766e15f4c8c6af61002977490"
+created_at: "2026-09-24T05:32:55.50067+00:00"
+id: "a_foursingle_obstruction_cannot_occupy_the_rightprivate_slot"
+last_elevation_revision: null
+last_substantive_worker_id: 231
+legacy_id: "1000625"
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "12db173a-f918-43e1-8622-f249ae192b9d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:56:41.104817+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "12db173a-f918-43e1-8622-f249ae192b9d"
+    detail: "Replaced prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    math_version: 5
+    outcome: "pass_adjusted"
+    recorded_at: "2026-09-24T21:56:41.104817+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_local_audit_repair:
+    reason: "Localized terminology repair: replace prohibited physical-endpoint wording with standard last-vertex language; mathematics unchanged."
+    recorded_at: "2026-09-24T21:54:04.112106+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_premise_impact_check:
+    checked_at: "2026-09-25T01:05:55.887427+00:00"
+    note: "8d1adea102fe changed terminology only; the G-slot exclusion used here is unchanged and the F-slot contradiction remains valid."
+    source_ids:
+      - "rankpair_obstruction_cannot_occupy_the_rightjoint_slot"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "rankpair_obstruction_cannot_occupy_the_rightjoint_slot"
+position: 0
+research_interface:
+  consequence: "At p=2q-3, any four all-single charged contacts in ranks {q,q+1} are confined to the five left/central slots A,B,C,D,E."
+  consumer:
+    - "a9d95378e855 corrected consecutive-rank block"
+    - "Astra 11/12 route"
+  given:
+    - "8d1adea102fe eliminates G"
+    - "08f894b8cb5e clean-private hole rule"
+    - "single-contact seven-slot localization"
+  next_need: "Classify four-of-five occupancy in A..E. Every occupied E must be terminal-only unless B,C are both absent; every occupied C with A also occupied must be terminal-only. Use these forced U-labels and two-star bridge splices to eliminate the five residual missing-slot patterns."
+  role: "odd-central corrected rank-pair packing"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "At the odd central boundary a four-single obstruction cannot occupy the right-private slot."
+statement_sha256: "fb07f24d033a9d11c922722200eb1d0c97b15d870c5326dafe7c7cac97223e89"
+substantive_worker_ids:
+  - 225
+  - 231
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "At the odd central boundary a four-single obstruction cannot occupy the right-private slot"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 10

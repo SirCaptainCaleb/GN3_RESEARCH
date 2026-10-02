@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 95
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "8b72b384b0b4f014d8177e1bf37cf75dd579b2b326413a3edf3e10eb5799bcd2"
+created_at: "2026-09-21T22:32:55.118719+00:00"
+id: "uncrossed_splice_gives_fouredge_spacing"
+last_elevation_revision: null
+last_substantive_worker_id: 262
+legacy_id: "1000403"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  last_audit_observation:
+    claim_id: "d4adb347-006f-4a5f-a573-2aa6be876a4b"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-22T10:33:18.281934+00:00"
+    worker_id: "9a0e287e-7bb9-49c9-8e5e-3597dcfef01e"
+  route: "four-edge spacing"
+  source_kind: "new_project_result"
+object_type: "lemma"
+origin_worker_id: 262
+parent_id: "fouredge_spacing_conjecture_at_a_common_last_vertex"
+position: 10
+research_interface:
+  consequence: "spacing holds with +2 in every uncrossed splice configuration"
+  consumer: "four-edge spacing conjecture"
+  given:
+    - "ascending edges at a common last vertex"
+    - "a longest path for the largest edge"
+    - "a longest entrance path for the smallest edge"
+  next_need: "show that with four ascending edges, the intermediate edge e_3 can uncross or charge every obstruction to this splice"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "If the natural splice from a longest e1-path into the reversed tail of a longest e4-path is linear, then 2q2≥q1+q4+2, strengthened to +3 when x2 is private to one e4-path edge."
+statement_sha256: "d6b36e51682aab739eaebb82880f43477a53f64b582e63fb95be51284cd77db9"
+substantive_worker_ids:
+  - 262
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Uncrossed splice gives four-edge spacing"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T22:12:21.071697+00:00"
+version: 4

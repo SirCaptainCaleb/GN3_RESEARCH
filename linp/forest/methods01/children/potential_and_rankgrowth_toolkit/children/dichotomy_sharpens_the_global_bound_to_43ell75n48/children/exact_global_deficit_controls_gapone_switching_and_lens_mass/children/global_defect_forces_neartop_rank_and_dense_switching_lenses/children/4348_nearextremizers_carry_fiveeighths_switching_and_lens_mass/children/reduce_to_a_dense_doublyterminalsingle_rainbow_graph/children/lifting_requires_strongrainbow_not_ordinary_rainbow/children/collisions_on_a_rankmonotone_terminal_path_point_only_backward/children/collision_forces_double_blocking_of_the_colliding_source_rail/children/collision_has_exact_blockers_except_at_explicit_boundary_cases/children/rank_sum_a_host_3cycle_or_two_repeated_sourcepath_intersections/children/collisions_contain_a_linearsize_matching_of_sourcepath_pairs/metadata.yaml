@@ -1,0 +1,60 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 9
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "983dbf0fa99678628501ac434d6c2d5842825d8c0b5603e8d036b6fb8580a1e4"
+created_at: "2026-09-25T21:12:44.930878+00:00"
+id: "collisions_contain_a_linearsize_matching_of_sourcepath_pairs"
+last_elevation_revision: null
+last_substantive_worker_id: 220
+legacy_id: "1000577"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "bcba98c4-ecde-4953-a9b6-42537954f50a"
+    detail: "Conditional on the stated repeated-intersection hypotheses, the graph argument is correct. Every contributed pair {i,j} or {i,j+1} determines its larger endpoint i as the unique backward collision owner; for fixed {a,b} the alternatives x_a=v_b and x_a=v_{b-1} are mutually exclusive, so Q is simple and has exactly 2|M| edges. An index has at most two incident edges from its own collision and at most one from a collision hitting each of v_t,v_{t-1}, hence Delta(Q)<=4. A maximal matching then dominates at most 7 graph edges per matched edge, yielding ceil(2|M|/7) index-disjoint repeated-intersection pairs. Trust remains blocked upstream because c27aea4c544e failed."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:37:03.71936+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+  last_audit_observation:
+    claim_id: "bcba98c4-ecde-4953-a9b6-42537954f50a"
+    detail: "Conditional on the stated repeated-intersection hypotheses, the graph argument is correct. Every contributed pair {i,j} or {i,j+1} determines its larger endpoint i as the unique backward collision owner; for fixed {a,b} the alternatives x_a=v_b and x_a=v_{b-1} are mutually exclusive, so Q is simple and has exactly 2|M| edges. An index has at most two incident edges from its own collision and at most one from a collision hitting each of v_t,v_{t-1}, hence Delta(Q)<=4. A maximal matching then dominates at most 7 graph edges per matched edge, yielding ceil(2|M|/7) index-disjoint repeated-intersection pairs. Trust remains blocked upstream because c27aea4c544e failed."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-25T22:37:03.71936+00:00"
+    worker_id: "b0b7ac39-b577-42f4-9950-b7aa00988192"
+object_type: "lemma"
+origin_worker_id: 220
+parent_id: "rank_sum_a_host_3cycle_or_two_repeated_sourcepath_intersections"
+position: 0
+research_interface:
+  consequence: "Repeated-intersection collisions cannot all reuse the same few source paths: a linear fraction yields index-disjoint source-path pairs with at least two common vertices."
+  consumer:
+    - "source-path overlap packing"
+    - "color-terminal collision congestion"
+    - "post-43/48 U_11 analysis"
+  given:
+    - "c27aea4c544e repeated-intersection collision outcome"
+    - "rainbow terminal-pair path"
+    - "backward direction of color-terminal collisions"
+  next_need: "Analyze one matching of index-disjoint repeated-intersection pairs. For each pair classify whether the two maximum paths share a path edge, contain a genuine two-path cycle, or exhibit return-order inversion. Seek a resource that cannot be reused across many index-disjoint pairs."
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Repeated-intersection collisions contain a linear-size matching of source-path pairs."
+statement_sha256: "6e88d487b35f8fa68004319909ce91ceae709e27b0dbca84e62dc4e8407589d9"
+substantive_worker_ids:
+  - 220
+support_reason: "failed_or_blocked_premise"
+support_status: "blocked"
+title: "Repeated-intersection collisions contain a linear-size matching of source-path pairs"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-01T20:42:18.440577+00:00"
+version: 7

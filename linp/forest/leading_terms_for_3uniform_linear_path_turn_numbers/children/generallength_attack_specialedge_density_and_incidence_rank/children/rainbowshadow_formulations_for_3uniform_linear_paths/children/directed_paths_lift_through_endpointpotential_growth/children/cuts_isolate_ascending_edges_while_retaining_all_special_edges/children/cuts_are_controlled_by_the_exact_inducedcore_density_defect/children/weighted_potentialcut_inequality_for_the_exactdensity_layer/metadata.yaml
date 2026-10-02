@@ -1,0 +1,57 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 92
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "c67eb26b9100d685d4a6abc4e8173de0b33cb7138135722d740b3eab0897c6ee"
+created_at: "2026-09-24T03:02:55.868615+00:00"
+id: "weighted_potentialcut_inequality_for_the_exactdensity_layer"
+last_elevation_revision: null
+last_substantive_worker_id: 225
+legacy_id: "1000197"
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+  last_audit_observation:
+    claim_id: "713918d3-f2f0-403a-800a-a97353c5f18f"
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-24T22:05:41.883312+00:00"
+    worker_id: "5d622e38-a26d-4c5d-9cbd-b87c7cf04274"
+object_type: "lemma"
+origin_worker_id: 225
+parent_id: "cuts_are_controlled_by_the_exact_inducedcore_density_defect"
+position: 0
+research_interface:
+  consequence: "All potential-cut constraints combine with arbitrary nonnegative threshold weights; the equality problem can be attacked by choosing a weight profile adapted to local rank-capacity lower bounds."
+  consumer:
+    - "E_ell equality layer"
+    - "rank-distribution duality"
+    - "weighted snake/rank-capacity route"
+  given:
+    - "a05c50b3ab96 levelwise potential-cut inequality"
+  next_need: "Combine with the cumulative incident-rank constraint C_q(v)<=2q-1. Optimize a weight profile W so the resulting lower bound on sum_e W(phi(e)) from degree 3d contradicts the weighted cut upper bound, or classify the equality distributions."
+  role: "weighted equality-layer potential cuts"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Weighted potential-cut inequality for the exact-density layer."
+statement_sha256: "ef0891eb2a153cc70d50cef6d182789fcd58a87628efe232fb2a9b8c3529806d"
+substantive_worker_ids:
+  - 225
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "Weighted potential-cut inequality for the exact-density layer"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-30T17:27:57.58921+00:00"
+version: 4

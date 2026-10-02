@@ -1,0 +1,56 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "certified"
+audited_math_version: 1
+body_sha256: "aa2825bc1f98dfcb6d114a7f90df02a34a4490e5ca3f7ba321c3f6f322507981"
+created_at: "2026-09-27T17:02:32.080927+00:00"
+id: "escapes_to_a_component_of_size_at_least_the_pair_sum_plus_one"
+last_elevation_revision: 0
+last_substantive_worker_id: 627
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_resolution:
+    claim_id: 65
+    detail: "Independent check: replacing e_x by f_x preserves the forest in each location case. If e_x is in D, the new component has alpha+r+1>alpha, forcing lexicographic improvement. If e_x is in C, maximality gives beta+r+1<=alpha, hence r<=alpha-beta-1. If e_x is in a third component E of size gamma, gamma<alpha+beta+1 would create a new component larger than both alpha and gamma while leaving all larger components unchanged, again improving the sorted component-size sequence; hence gamma>=alpha+beta+1. If C is largest, the third-component case is impossible. Vocabulary is conforming. Reasoning-tree placement was repaired by nesting this corrective refinement under aef390fce0f3."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T17:42:56.34386+00:00"
+    worker_id: 569
+  last_audit_observation:
+    claim_id: 65
+    detail: "Independent check: replacing e_x by f_x preserves the forest in each location case. If e_x is in D, the new component has alpha+r+1>alpha, forcing lexicographic improvement. If e_x is in C, maximality gives beta+r+1<=alpha, hence r<=alpha-beta-1. If e_x is in a third component E of size gamma, gamma<alpha+beta+1 would create a new component larger than both alpha and gamma while leaving all larger components unchanged, again improving the sorted component-size sequence; hence gamma>=alpha+beta+1. If C is largest, the third-component case is impossible. Vocabulary is conforming. Reasoning-tree placement was repaired by nesting this corrective refinement under aef390fce0f3."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-09-27T17:42:56.34386+00:00"
+    worker_id: 569
+  origin: "audit repair extraction"
+  source_target: "forest_transversals_constrain_singletontransfer_label_edges"
+object_type: "research"
+origin_worker_id: 627
+parent_id: "forest_transversals_constrain_singletontransfer_label_edges"
+position: 0
+research_interface:
+  consumer: "sharp-shell forest-transversal exchange and repaired descendants of aef390fce0f3"
+  given: "a lexicographically maximal forest deletion-cover transversal and one singleton-transfer comparison between components C,D"
+  need: "use the upward-escape alternative in short-component or global counting arguments"
+  produces: "the selected transfer label edge is either localized in the larger component with depth bound r<=alpha-beta-1 or lies in a third component of size at least alpha+beta+1; it never lies in the smaller component"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "A singleton-transfer replacement either stays in the larger component or escapes to a component of size at least the pair sum plus one."
+statement_sha256: "b830366f828992171bb8a861261e4a62d13d1d4fda083ceecf76fcb9d9ce683c"
+substantive_worker_ids:
+  - 627
+support_reason: "current_certified_premises"
+support_status: "supported"
+title: "A singleton-transfer replacement either stays in the larger component or escapes to a component of size at least the pair sum plus one"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-09-27T17:42:56.34386+00:00"
+version: 6
