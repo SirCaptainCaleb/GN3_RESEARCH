@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "dc2b98a08a55d8e63e6adbcc4aa4433865df98eb480bc19e375a25115bdc91cc"
+created_at: "2026-10-02T02:29:16.059611+00:00"
+id: "same_end_extenders_double_reversal01"
+last_elevation_revision: 0
+last_substantive_worker_id: 1231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "New synchronized double-reversal strengthening of the unique-small equitable residue; request independent reconstruction."
+  audit_request_recorded_at: "2026-10-02T02:30:37.926938+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1231
+parent_id: "same_end_extenders_initial_reversal01"
+position: 0
+research_interface:
+  consumer: "unique-small equitable plateau; endpoint transport; defect compression; secondary-potential design"
+  given: "two universal same-end extenders, a residual two-cover, and no order disagreement with displayed cores"
+  produces: "a synchronized double endpoint-reversal obstruction sharing either the reversing extender or the reversed residual edge"
+  significance: "strengthens the unique-small endpoint-reversal output to a two-reversal Hall obstruction"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "With two universal same-end extenders and no core-order disagreement, every residual two-cover has either one extender reversing both component starts or one component start reversed through both extenders."
+statement_sha256: "83496b77b1a0e813034e7dbaca1b3289dfc95af2fe63673c22eac645dac0e7df"
+substantive_worker_ids:
+  - 1231
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Universal same-end extenders force a synchronized double endpoint reversal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:30:37.926938+00:00"
+version: 4

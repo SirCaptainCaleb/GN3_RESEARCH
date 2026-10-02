@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "8637bf13e958c9448e17986063773038612b457ec3d5ab3724741a60c7aef41c"
+created_at: "2026-10-02T02:18:46.269373+00:00"
+id: "1000946"
+last_elevation_revision: 0
+last_substantive_worker_id: 1232
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "New component-continuity and exact-potential strengthening of threeside01; request independent reconstruction of the three entry moves, shell-lift moves, and Phi calculation."
+  audit_request_recorded_at: "2026-10-02T02:18:46.269373+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1232
+parent_id: "threeside01"
+position: 1
+research_interface:
+  consumer: "defect-span 101 transport; three-side no-trapping; component-continuity for persistent-defect shells"
+  given: "a minimum-counterexample deletion cover with one side of order three"
+  implication: "the three-side endpoint of linear 101 defect transport is a quantitatively strong same-component descent state, not merely a local obstruction family"
+  produces: "component-respecting fixed-defect shell transport inside the original deletion singleton component, plus an explicit four-move descent of size 6(m-4)"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: null
+statement_sha256: "3cbec5c49bf638354332815b7c74ef17ce3aae0839cad0fd242cb4af09227a72"
+substantive_worker_ids:
+  - 1232
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Three-side fixed-defect shell transport stays in the deletion component and gives an explicit large descent"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:18:46.269373+00:00"
+version: 4

@@ -26,7 +26,6 @@ metadata:
     recorded_at: "2026-09-29T17:59:52.149282+00:00"
     worker_id: 605
   audit_trigger_kind: "explicit_publish_request"
-  audit_work_kind: "dependency_hold"
   compression: "separates the positioned K4 trichotomy into automatic strict descent versus the sole outer-neighbor residue"
   last_audit_observation:
     claim_id: 298
@@ -57,10 +56,10 @@ simplified_statement: "Facing endpoint four-windows either give a six-unit quadr
 statement_sha256: "829065346ccf8f821b8fac882ec3d234288200dc6ae3e421c8ee1594ede17ce1"
 substantive_worker_ids:
   - 637
-support_reason: "dependency_verification_pending"
-support_status: "dependency_hold"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Facing endpoint four-windows either give a six-unit quadratic drop or omit the deletion label"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T18:43:23.594674+00:00"
+updated_at: "2026-10-02T00:15:49.072216+00:00"
 version: 6

@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "f219a56ae270ff67ad09a14a4b3a31e0d2bc83bd5e9a6c90a204e6155ed87148"
+created_at: "2026-10-02T02:12:47.410197+00:00"
+id: "same_end_extenders_initial_reversal01"
+last_elevation_revision: 11239
+last_substantive_worker_id: 1195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "New theorem-facing reversal lemma used in INDEX 2 proof rehearsal; request independent reconstruction."
+  audit_request_recorded_at: "2026-10-02T02:13:01.55593+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1231
+parent_id: "unique_small_transport_recomp02"
+position: 0
+research_interface:
+  consumer: "Endpoint transport, disturbance entry, and unique-small quadratic-minimum residues."
+  given: "Any finite family of disjoint displayed core paths and two exterior vertices extending the same end of every core."
+  produces: "For every two-cover after deleting the extenders, core-order disagreement or a reverse cross triple pinned to a residual path endpoint."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Two vertices that extend the same end of any family of disjoint displayed cores force every residual two-cover either to disagree with a core order or to begin with a cross-core edge whose reversal through an extender is tight."
+statement_sha256: "6ec65ab20cf96b7b98b64fefac2c00905143e024159c58c902c0222a0352ffbb"
+substantive_worker_ids:
+  - 1231
+  - 1195
+support_reason: "audit checkpoint requested"
+support_status: "unchecked"
+title: "Universal same-end extenders force an endpoint reverse cross triple"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:17:46.438014+00:00"
+version: 4

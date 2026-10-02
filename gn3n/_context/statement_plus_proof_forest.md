@@ -861,6 +861,12 @@
         BODY / PROOF
         Completed proof rehearsal.
 
+    • [proof_rehearsal_g000000000080] Proof rehearsal 80 — 2026-10-02 02:14 UTC
+        STATEMENT
+        ‹none›
+        BODY / PROOF
+        Completed proof rehearsal.
+
   • [retired_orientation_landscape_20260927] Retired worker orientation/landscape system
       STATEMENT
       The former worker orientation/landscape guidance layer was retired on 2026-09-27. Its final snapshot remains only as inert historical state and is no longer surfaced to workers.
@@ -1308,6 +1314,1190 @@
     When a target is a general or standalone lemma/theorem/result with no natural earlier location, do not invent an artificial earlier placement. Instead find every known consumer or use site. At each consumer, ask whether the result can be invoked earlier, replace predecessor work, simplify the route, or expose a stronger consequence. Independently perform the full strengthening pass on the standalone result itself.
     
     When strengthening reveals genuine supersession, record the supersedes relation immediately while leaving retirement/effect audit-gated. Preserve alternate reasoning branches unless genuinely superseded.
+
+• [proof_rehearsals01] Comprehensive Proof Rehearsals
+    STATEMENT
+    Top-level home for comprehensive end-to-end proof rehearsals of the major GN3N proof-attack lines.
+    BODY / PROOF
+    This root collects proof rehearsals whose purpose is to push a major conceptual proof line from the minimum-counterexample setup toward the grand conjecture, explicitly preserving precise residual obstructions when closure is not yet achieved.
+
+  • [proof_rehearsal_index2_quadratic01] INDEX 2 synthesis — quadratic potential and minimal three-cover reconfiguration
+      STATEMENT
+      Research-launch synthesis for the quadratic-potential route. A deletion-generated trapped three-cover is normalized by Phi so that all pair-unions are minimum-imbalance; certified terminal theory then forces a finite canonical menu of order/support disturbances, and equitable profiles are absolute Phi minima. Fresh INDEX 2 work sharpens the unique-small {r+1,r+1,r} plateau: its same-end neutral residue now reduces, modulo standard Hamiltonian-window outputs, to a positioned endpoint reversal or a doubled reverse barrier; common-edge reversal synchronizes by an R(3,3)=6 argument into two Hamiltonian five-sets with a common four-core, whose six-shell is completely classified as a pc2 square, overlapping Hamiltonian windows, or the canonical oriented matching-block exception. The main live gap remains global consumption: turn these positioned bounded structures, or the generic 1000633 disturbance menu, into a spanning two-cover / defect span at most two.
+      BODY / PROOF
+      # Purpose of this rehearsal
+      
+      This object is a **research-launch synthesis** for INDEX 2. Its job is not only to explain the quadratic-potential proof architecture, but also to prevent a fresh researcher from spending a run rediscovering branches that have already been pushed to a stronger endpoint.
+      
+      The intended use is:
+      
+      1. read the route spine;
+      2. locate the branch matching the configuration you want to attack;
+      3. start from the listed **current launch point**, not from an earlier ancestor;
+      4. respect the strategic fences in §8;
+      5. treat the exact residual consumer in §9 as the theorem-level gap unless you are deliberately exploiting extra pre-sink structure.
+      
+      Status labels used below:
+      
+      - **CERTIFIED** = established and independently certified;
+      - **PENDING** = proved in the live database but awaiting independent audit; project policy permits optimistic use, but it is not certified;
+      - **CONJECTURAL** = proposal/conjecture only;
+      - **GAP** = the next implication is not currently proved.
+      
+      # 1. One-paragraph route summary
+      
+      Assume a minimum counterexample H. Any exact deletion two-cover H-x=P|Q gives a singleton lift P|Q|{x} in a trapped connected component of the pairwise-repartition graph. Minimize the quadratic component-size potential
+      
+          Phi(P_1|P_2|P_3)=|P_1|^2+|P_2|^2+|P_3|^2
+      
+      inside that trapped component. At a Phi-minimum, each displayed pair is already a minimum-imbalance two-cover of its union. The accumulated quadratic theory shows that failure of further balancing cannot remain structureless: one reaches a finite menu of Hamiltonian windows, crossings, inherited-edge separations, leave-and-return geometry, order disagreement, or reversals. If the component sizes become equitable, Phi has reached its absolute arithmetic minimum and is finished as a descent invariant. The route must then hand the produced order/support disturbance to endpoint-transport or defect-span compression. The first theorem-level unsupported arrow is therefore not “find more quadratic descent”; it is **consume the canonical disturbance into a spanning two-cover, equivalently defect span at most two**.
+      
+      In symbols:
+      
+          minimum counterexample
+          -> deletion-generated trapped three-cover
+          -> Phi-minimal simultaneous pairwise balance
+          -> finite canonical disturbance interface
+          -> equitable plateau when balance is exhausted
+          -> positioned order/support disturbance
+          -> defect-span / endpoint-transport consumer
+          -> two-cover.
+      
+      # 2. Starting reduction: where INDEX 2 actually begins
+      
+      ## 2.1 Deletion-generated trapped component
+      
+      **CERTIFIED — 1000112.**
+      
+      Let H be a minimum counterexample and choose any exact deletion two-cover H-x=P|Q. The singleton lift P|Q|{x} belongs to a trapped pairwise-repartition component: if a reachable state had only two components, H itself would have a spanning two-cover.
+      
+      The singleton is only an entry state. 1000112 gives explicit strict Phi descent to a canonical deletion-generated three-side state, and in sufficiently large order a further strict descent is available. Thus a researcher should **not** spend time analyzing the raw singleton lift as the terminal quadratic obstruction.
+      
+      ### Current launch state
+      
+      Choose a spanning three-cover C=P_1|P_2|P_3 of minimum Phi **inside a trapped connected component reached from a deletion state**.
+      
+      This componentwise minimum is the intrinsic INDEX 2 normalization. A globally Phi-minimal cover can be useful for stronger size arithmetic, but global minimality is an optional strengthening, not the basic route hypothesis.
+      
+      ## 2.2 What Phi-minimality means
+      
+      **CERTIFIED — threecoverquadraticmin01.**
+      
+      If C is Phi-minimal in its pairwise-repartition component, then for every displayed pair P_i,P_j and every two-cover R|S of the induced pair-union,
+      
+          ||R|-|S|| >= ||P_i|-|P_j||.
+      
+      So one Phi-minimum is simultaneously three minimum-imbalance statements.
+      
+      This is the conceptual engine behind most of the older “small side”, “size gap”, “four-side”, “five-side”, and endpoint-transfer lemmas. They should not be memorized as independent phenomena. They all follow the same proof pattern:
+      
+          try to repartition a displayed pair more evenly;
+          if possible -> strict Phi descent;
+          if impossible -> the failed improvement forces order/support structure.
+      
+      # 3. The main compression theorem: do not re-run the profile tree
+      
+      ## 3.1 Terminal disturbance package
+      
+      **CERTIFIED — 1000633, Terminal quadratic minima have no structureless neutral-transfer residue.**
+      
+      For a Phi-minimal three-cover in a trapped component of a minimum counterexample, current mathematics already forces a canonical theorem-facing input. The output menu is:
+      
+      - a proper Hamiltonian four- or five-vertex support with path-cover-two complement;
+      - an explicit cross triple or interval connector;
+      - relative-order disagreement;
+      - an inherited displayed-path edge whose endpoints are separated by a comparison cover;
+      - a leave-and-return excursion through another displayed core;
+      - crossing multiplicity at least three;
+      - a bounded local defect-compression obstruction;
+      - a reversed join.
+      
+      This theorem is the correct **compression boundary** for the bulk of the quadratic tree.
+      
+      ### What it subsumes conceptually
+      
+      The following older-looking programs are primarily producers feeding 1000633 and should not be restarted from scratch:
+      
+      - raw large-gap endpoint-transfer analysis;
+      - profile-by-profile small-side descent;
+      - four-side and five-side endpoint grids;
+      - neutral singleton-transfer enumeration;
+      - aligned neutral-transfer cycles;
+      - equal-cover unique-crossing classification;
+      - repeated attempts merely to manufacture one crossing, one reversal, or one Hamiltonian 4/5-window.
+      
+      A new result upstream of 1000633 is useful only if it preserves **extra structure not present in the generic menu**: common endpoints, common reversed edge, multiplicity, exact profile equations, a shared deletion label, reachability in one component, or another correlation that materially strengthens the downstream consumer.
+      
+      If a proposed argument merely reaches the same generic disturbance menu again, it is backtracking, not progress.
+      
+      # 4. Branch map: strongest current endpoint of each natural regime
+      
+      This section is the anti-backtracking map. Pick the branch matching your intended investigation.
+      
+      ## 4.1 Non-equitable / size-gap regime
+      
+      At a componentwise Phi-minimum, any pair whose orders differ by at least two is already covered by the universal transport machinery and ultimately by 1000633. There is no need to rebuild a gap-by-gap descent ladder.
+      
+      If you deliberately choose **global** Phi-minimality to preserve more arithmetic, the strongest useful pre-sink bypass is:
+      
+      **CERTIFIED — global_sizegap_maximin_bypass01.**
+      
+      Outside the endpoint-square branch, a largest-second gap at least two collapses to the exact profiles
+      
+          (c+2,c,c) or (c+3,c,c),
+      
+      with maximin parameter rho=c, and there is a tight path whose complement is non-Hamiltonian of order at most 2c.
+      
+      ### Current launch point
+      
+      - For the ordinary INDEX 2 route: start at **1000633's canonical disturbance output**.
+      - For a context-sensitive global-minimum bypass: start at **global_sizegap_maximin_bypass01**, preserving the exact profile and compressed-complement data.
+      
+      ### Do not redo
+      
+      Do not restart the older c+2/c+3 profile derivations, adjacent-window calculations, or generic gap-two/gap-three split unless the new argument explicitly uses more information than the compressed theorem above.
+      
+      ## 4.2 All-equal equitable profile {r,r,r}
+      
+      **CERTIFIED — 1000292.**
+      
+      Two endpoint deletion probes of one equal component already force one of:
+      
+      1. a deletion cover with multiple crossings;
+      2. a generic paired-noninsertion obstruction;
+      3. explicit inherited-order disagreement.
+      
+      In particular, the all-equal plateau has **no order-neutral sparse endpoint-probe residue**.
+      
+      ### Current launch point
+      
+      Start from the three outputs of **1000292** and try to consume them globally.
+      
+      ### Do not redo
+      
+      Do not reclassify one-crossing endpoint deletion covers. The unique-crossing cases have already been pushed to order disagreement; the live problem is consumption of the resulting disturbance.
+      
+      ## 4.3 Unique-large equitable profile {r+1,r,r}
+      
+      The dedicated neutral-transfer analysis is already incorporated into **CERTIFIED 1000633**. It yields the standard disturbance menu, including a bounded reverse cross triple in the hard donor-endpoint residue.
+      
+      ### Current launch point
+      
+      Start from the positioned disturbance exported by 1000633.
+      
+      ### Do not redo
+      
+      Do not re-run donor-endpoint case splitting merely to recover a cross triple or crossing multiplicity. Only revisit the unique-large pre-sink geometry if you have a consumer that uses a correlation discarded by 1000633.
+      
+      ## 4.4 Unique-small equitable profile {r+1,r+1,r}
+      
+      This is the branch where the live database has advanced furthest beyond the generic terminal menu.
+      
+      ### Certified base
+      
+      **CERTIFIED — unique_small_transport_recomp02.**
+      
+      In the witness-free residue there are three disjoint order-r core paths A,B,C and two exterior labels x,y extending the same end of every core. Every exact two-cover of H-{x,y} then exhibits one of:
+      
+      - order disagreement with a core;
+      - at least three cross-core ordinary edges;
+      - an inherited core edge split between the two residual components;
+      - leave-and-return geometry through another core.
+      
+      This already eliminates the old unstructured neutral-cycle residue.
+      
+      ### Stronger current pending chain
+      
+      The following are **PENDING**, and should be used optimistically but marked as such.
+      
+      1. **same_end_extenders_four_endpoint_reversal01** / **unique_small_four_endpoint_reversal01**:
+         the hard same-end residue forces four synchronized endpoint reversals.
+      
+      2. **same_end_extenders_hall_completion01**:
+         the 2-by-2 attachment obstruction reduces further to either
+         - two labels reversing one common endpoint edge, hence a shared-edge six-window package; or
+         - a same-deletion transfer fork in which one extender is blocked and the other attaches to both residual paths.
+      
+      3. **shared_edge_double_reversal_sixpackage01**:
+         two labels reversing one displayed edge force two Hamiltonian five-sets with a common four-core, hence a Hamiltonian-six or four-good-deletion transport package.
+      
+      4. **blocked_extender_coherent_sameend_escape01**:
+         the coherent same-end subcase of the same-deletion fork reduces to
+         - a proper Hamiltonian five-support with path-cover-two complement;
+         - a doubled reverse-end barrier; or
+         - the same common-core six-window transport package.
+      
+      ### Current launch point
+      
+      If pending results are allowed, **do not start from the raw six-step neutral cycle or even from the four endpoint hooks**. Start from the outputs of:
+      
+          same_end_extenders_hall_completion01
+          + blocked_extender_coherent_sameend_escape01
+          + shared_edge_double_reversal_sixpackage01.
+      
+      At that point the unique-small branch has effectively rejoined the standard bounded-window / reversal consumer.
+      
+      If you require certified-only mathematics, start from **unique_small_transport_recomp02**.
+      
+      ### Do not redo
+      
+      Do not spend a run proving:
+      - existence of universal same-end extenders;
+      - existence of one or two endpoint reversals;
+      - the raw four-hook Hall dichotomy;
+      - another crossing-count taxonomy for the same unique-small state.
+      
+      Those are already downstream of the certified base and, optimistically, downstream of the pending Hall-completion package.
+      
+      # 5. Small-side and four/five-side work: what is already finished
+      
+      A large amount of database mass sits here because these regimes were historically important. They are **not** the right default entry point now.
+      
+      ## 5.1 Global minima
+      
+      **CERTIFIED — 1000921.**
+      
+      For n>=18, a globally Phi-minimal spanning three-cover has minimum side at least six unless explicit order disagreement already occurs.
+      
+      Thus, in the global-minimum variant, sides 1 through 5 are no longer live size-profile obstructions.
+      
+      ## 5.2 Local trapped 4|5 plateaux
+      
+      **CERTIFIED — 1000323.**
+      
+      Every trapped componentwise Phi-minimal 4|5|a state with a>=7 already forces explicit relative-order disagreement.
+      
+      The many 4|5 star, lock, grid, and neutral-degree objects are valuable provenance and reusable local tools, but they are no longer the theorem-facing stopping point for INDEX 2.
+      
+      ## 5.3 Practical rule
+      
+      Do not reopen 4|4, 4|5, five-side, or fixed-endpoint-matching analysis merely because those branches have many unresolved-looking local “need” fields. First ask whether the theorem-facing configuration is already consumed by 1000323, 1000921, endpoint_reversal_largeinterface01, or 1000633.
+      
+      Re-enter a small-side branch only if you are exploiting **extra synchronized structure** that the later compression theorem discards.
+      
+      # 6. The equitable plateau: why Phi itself cannot finish the proof
+      
+      **CERTIFIED — 1000268.**
+      
+      If the component orders differ by at most one, then the profile is one of
+      
+          {r,r,r},
+          {r+1,r,r},
+          {r+1,r+1,r},
+      
+      and Phi is the absolute minimum over all positive three-part size profiles of the same total order.
+      
+      Therefore no spanning three-cover has strictly smaller Phi.
+      
+      This is the central proof-design fact:
+      
+      > Phi is a normalization potential. Once the route is equitable, size-only descent is mathematically exhausted.
+      
+      A secondary coordinate, if one is used, must see path order, support placement, endpoint realization, deletion provenance, or another non-size feature.
+      
+      The certified deficit-one longest-path corridor (1000427) has a useful secondary balance mechanism **after** strong order preservation is available, but there is currently no globally valid secondary invariant on the entire equitable three-cover plateau.
+      
+      # 7. Neighboring-line interfaces: where INDEX 2 should hand off
+      
+      ## 7.1 Defect-span / spanning-order compression
+      
+      **CERTIFIED — 1000694.**
+      
+      A spanning two-cover exists exactly when some spanning ordering has defect span at most two. A minimum counterexample has canonical defect span three, and deletion covers are precisely that width-three interface.
+      
+      This makes the cleanest theorem-level consumer:
+      
+          quadratic terminal disturbance
+          -> compress canonical defect span 3 to <=2.
+      
+      Current mathematics does not prove this for every disturbance in 1000633.
+      
+      ## 7.2 Endpoint transport / bounded-window gluing
+      
+      This is the natural local consumer for:
+      
+      - endpoint reversals;
+      - doubled reverse barriers;
+      - cross triples;
+      - Hamiltonian 4/5/6 supports;
+      - same-deletion transfer forks;
+      - shared-core window packages.
+      
+      INDEX 2 produces and synchronizes these objects. INDEX 4-style machinery is the natural place to turn them into legal absorption/gluing.
+      
+      ## 7.3 Longest-path / reversal structure
+      
+      **CERTIFIED — 1000427.**
+      
+      Once one has a globally longest path A and an A-order-preserving comparison path of order |A|-1, the unbounded neutral deficit-one corridor is closed: only strict secondary descent, standard reversal/order disturbance, Hamiltonian 4/5 support, or a bounded tiny kernel remains.
+      
+      The missing INDEX 2 bridge is **entry** into that corridor from generic quadratic terminal disturbance.
+      
+      ## 7.4 Deletion-cover compatibility
+      
+      Deletion compatibility is another producer of order disagreement, insertion conflict, and reversal. For INDEX 2 it should be imported when it strengthens positioning or synchronizes several deletion states. Merely obtaining “some disagreement exists” again does not advance the quadratic route.
+      
+      # 8. Strategic fences — tempting projects a new researcher should not accidentally repeat
+      
+      This section is intentionally explicit.
+      
+      ## Fence A: pure pair-union balancing is much stronger than it looks
+      
+      **CONJECTURAL — 1000828.**
+      “Every imbalanced pair-union can be repartitioned more evenly.”
+      
+      **CERTIFIED FENCE — 1000079.**
+      As a theorem about the pair-union alone, this is equivalent to the global statement that every already two-coverable boundary tournament admits a balanced two-cover.
+      
+      Therefore:
+      
+      > do not attack 1000828 by a purely pair-internal argument unless you consciously intend to solve balanced refinement.
+      
+      A theorem tailored to INDEX 2 should exploit the **third component**, trapped-component provenance, deletion structure, or another ambient correlation.
+      
+      ## Fence B: “strict Phi descent everywhere” cannot close the equitable regime
+      
+      The equitable profiles are absolute Phi minima by 1000268. Any plan whose terminal step is “find another strict Phi descent” is arithmetically impossible while three components remain.
+      
+      The high-level **CONJECTURAL** object quadraticmonotone_conj is useful only as a route slogan: it still requires equal-Phi plateau transport. It is not an unexplored substitute for the plateau problem.
+      
+      ## Fence C: existence of a reversal is not enough
+      
+      The database already has extensive reversal localization, including **CERTIFIED endpoint_reversal_largeinterface01**. A fresh proof of “there is a reversal” usually lands at an existing sink.
+      
+      Progress requires additional data such as:
+      
+      - reversal at a specified endpoint;
+      - two labels reversing one common edge;
+      - shared four-core;
+      - same deletion label;
+      - reachability within one Phi-plateau component;
+      - multiplicity sufficient for gluing;
+      - direct defect-window positioning.
+      
+      ## Fence D: another reduction to the generic disturbance menu is not progress
+      
+      1000633 is already the generic sink. If an argument reaches it but discards richer profile, endpoint, support, or deletion correlations, stop before the reduction and ask whether the richer state can bypass the sink.
+      
+      This is especially important in the global size-gap branch and the pending unique-small synchronization branch.
+      
+      ## Fence E: historical small-side trees are not default open problems
+      
+      Global c<=5 is eliminated above order seventeen unless disagreement occurs (1000921), and the trapped 4|5 long plateau already forces disagreement (1000323).
+      
+      The old four-side/five-side/fixed-endpoint-matching objects remain useful as toolkits, not as the default theorem-facing frontier.
+      
+      ## Fence F: crossing-count taxonomy has already been pushed far enough
+      
+      All-equal sparse endpoint probes are consumed by 1000292. Unique-small neutral transport is consumed by unique_small_transport_recomp02 and, pending audit, by the Hall-completion chain.
+      
+      A new crossing classification is worthwhile only if it yields stronger positioning/synchronization than those outputs.
+      
+      # 9. Exact residual gaps
+      
+      After compression, there is one grand theorem-level obstruction with two natural formulations.
+      
+      ## GAP 1 — canonical disturbance consumer
+      
+      There is no theorem of the form:
+      
+      > Let C be a Phi-minimal three-cover in a trapped component of a minimum counterexample. Any canonical terminal disturbance from 1000633 forces a spanning two-cover.
+      
+      Equivalently, there is no general theorem turning the canonical disturbance into a spanning order of defect span at most two.
+      
+      The concrete failure modes are:
+      
+      - order disagreement exists but is not positioned at the canonical defect window;
+      - endpoint reversal exists but is not yet glued to the deletion join;
+      - multiple support crossings exist but do not yet produce a legal two-path repartition;
+      - a Hamiltonian 4/5/6 window exists but its complement/gluing data do not yet yield global absorption;
+      - equal-Phi transport exists but no global well-founded termination coordinate is known.
+      
+      ## GAP 2 — equitable plateau escape, as an equivalent reconfiguration formulation
+      
+      One could instead prove that every equitable terminal state admits one of:
+      
+      1. a direct merge to two components;
+      2. a Phi-neutral move strictly improving one fixed finite order/support/provenance invariant;
+      3. entry to a neighboring certified corridor whose outputs are all consumed.
+      
+      No such universal secondary invariant or corridor-entry theorem is currently established.
+      
+      These are not two independent grand gaps. GAP 2 is one possible way to prove GAP 1.
+      
+      # 10. Minimal closure package
+      
+      The cleanest target is one theorem.
+      
+      ## TARGET — canonical disturbance compression
+      
+      Let H be a minimum counterexample and C a Phi-minimal spanning three-cover in a trapped pairwise-repartition component. Suppose C exposes any of the canonical outputs of 1000633. Then H has a spanning two-cover; equivalently H has a spanning ordering of defect span at most two.
+      
+      A weaker but still valuable theorem should consume a **strictly stronger synchronized subfamily** of the menu, for example:
+      
+      - the pending unique-small Hall-completion package;
+      - two labels reversing one common edge;
+      - a same-deletion transfer fork;
+      - an endpoint-aligned Hamiltonian 5/6-window with preserved deletion provenance;
+      - an inherited-edge split together with a second synchronized crossing.
+      
+      A theorem that merely converts one generic menu item into another generic menu item is unlikely to reduce the grand closure gap.
+      
+      # 11. Recommended launch points for a fresh researcher
+      
+      A researcher who wants to work INDEX 2 without re-reading the historical forest should choose one of the following.
+      
+      ### Launch A — main theorem-facing consumer
+      
+      Read:
+      - 1000112;
+      - threecoverquadraticmin01;
+      - 1000633;
+      - 1000694.
+      
+      Task:
+      consume the canonical disturbance menu directly into defect span <=2.
+      
+      This is the cleanest certified route.
+      
+      ### Launch B — strongest unique-small synchronized branch
+      
+      Certified base:
+      - unique_small_transport_recomp02.
+      
+      Optimistic pending continuation:
+      - unique_small_four_endpoint_reversal01;
+      - same_end_extenders_hall_completion01;
+      - shared_edge_double_reversal_sixpackage01;
+      - blocked_extender_coherent_sameend_escape01.
+      
+      Task:
+      consume the resulting Hamiltonian 5/6-window, doubled barrier, shared-edge reversal package, or same-deletion transfer geometry without collapsing back to the generic 1000633 sink.
+      
+      This is currently the most highly synchronized INDEX 2-specific configuration.
+      
+      ### Launch C — global-minimum context-sensitive bypass
+      
+      Read:
+      - 1000265;
+      - global_sizegap_maximin_bypass01;
+      - 1000921.
+      
+      Task:
+      use the exact (c+2,c,c)/(c+3,c,c) profile, rho=c, and compressed non-Hamiltonian complement to obtain something stronger than the generic disturbance interface.
+      
+      Do not rederive the profile arithmetic.
+      
+      ### Launch D — all-equal special consumer
+      
+      Read:
+      - 1000268;
+      - 1000292;
+      - 1000694.
+      
+      Task:
+      consume multiple crossings / paired noninsertion / inherited-order disagreement directly into defect compression.
+      
+      Do not re-open unique-crossing classification.
+      
+      # 12. Mental model
+      
+      Think of Phi as a **centrifuge**.
+      
+      It removes component-size imbalance. Every time a balancing move is impossible, that failure leaves geometric debris: endpoint locks, crossings, reversals, support separation, or bounded Hamiltonian windows. By the time the component sizes are equitable, the size coordinates contain no further information—Phi is at its absolute floor.
+      
+      So INDEX 2 is not ultimately a proof about minimizing a number. It is a machine for converting **size extremality into order/support rigidity**.
+      
+      The line is mature on the producer side:
+      
+          size imbalance
+          -> pairwise extremality
+          -> synchronized disturbance.
+      
+      It is immature on the consumer side:
+      
+          synchronized disturbance
+          -> global absorption / defect compression.
+      
+      A new researcher should therefore spend effort on the second arrow, or on preserving extra correlations that make the second arrow easier. Reproducing another version of the first arrow is the main backtracking risk this rehearsal is meant to prevent.
+      
+      
+      # 13. Fresh INDEX 2 advance: the unique-small plateau now has a bounded endgame
+      
+      This section records new mathematics developed in the present rehearsal run. It strengthens §4.4 and supersedes its launch advice, not the underlying provenance objects.
+      
+      ## 13.1 Common-edge reversal is no longer a raw reversal sink
+      
+      PENDING — shared_edge_double_reversal_sixpackage01.
+      
+      Suppose two distinct exterior labels reverse the same displayed endpoint edge. For each reversing triple, the certified dense-five-family theorem gives a triangle-free graph of bad two-label extensions. If no exterior pair Hamiltonized both reversing triples, those two triangle-free graphs would cover a complete graph on at least six common exterior vertices. Coloring an edge by one bad graph or the other would give a red-blue coloring of K_6 without a monochromatic triangle, contradicting the elementary R(3,3)=6 argument.
+      
+      Hence two labels reversing one common edge force two Hamiltonian five-sets sharing a four-core.
+      
+      This matters because it is genuinely stronger than “a reversal exists”: it manufactures common-core multiplicity.
+      
+      ## 13.2 The common-core six-shell has a complete finite normal form
+      
+      PENDING — commoncore_fivepair_sixshell_normal01.
+      
+      If K+p and K+q are Hamiltonian five-sets sharing the four-core K, their six-vertex union U has exactly the following theorem-facing menu.
+      
+      1. U is Hamiltonian. Then its complement is path-cover-two and ham6goodsquare01 supplies a full two-label pc2 square.
+      2. U is non-Hamiltonian and its good-deletion graph has adjacent edges. Then two Hamiltonian four-sets share a three-core and have a Hamiltonian five-set union, all with pc2 complements.
+      3. U is non-Hamiltonian and the good-deletion graph has no adjacent edges. Then the six-shell is the canonical oriented matching-block exception: four good deletion labels, perfect-matching good-pair graph, a 2+2 fixed-pair orientation split, and the complete cross-hook rectangle.
+      
+      Thus “common-core six-window package” is no longer an amorphous endpoint. It is a pc2 square / overlap / oriented matching-block trichotomy.
+      
+      ## 13.3 The Hall obstruction has been converted into a transport fork
+      
+      PENDING — same_end_extenders_hall_completion01.
+      
+      In the universal same-end-extender residue, fix an exact residual two-cover R|S of H-{x,y}. Form the 2-by-2 attachment graph between extenders {x,y} and residual paths {R,S}. A perfect matching would immediately two-cover H.
+      
+      Therefore Hall leaves only two structural possibilities.
+      
+      - A residual path is unattached by both extenders. Then both labels reverse one common endpoint edge, so §13.1 and §13.2 apply.
+      - One extender z is unattached from both residual paths and the other extender w attaches to both. Then H-z has two exact two-covers differing by transferring the single label w from one residual support to the other.
+      
+      The second branch is a concrete same-deletion singleton-transfer fork, not merely four endpoint hooks.
+      
+      By singleton_transfer_endpointization01, opposite endpoint realizations of w give a positioned component-end reversal. The only no-reversal residue is coherent same-end behavior on both augmented supports.
+      
+      ## 13.4 Coherent same-end behavior is also bounded
+      
+      PENDING — blocked_extender_coherent_sameend_escape01.
+      
+      In the same-deletion fork, let z be blocked from both residual paths and let w coherently extend the same end of both.
+      
+      Because z cannot attach after w without producing a spanning two-cover, the first residual vertices become two same-end extenders of the two-vertex path (w,z). If some third label extends the opposite end, the certified same-end-extender theorem gives either a Hamiltonian five-window or a doubled reverse-end barrier.
+      
+      If no third label extends the opposite end, then many exterior labels reverse the same edge of (w,z). Applying the same triangle-free bad-extension synchronization as in §13.1 again produces two common-core Hamiltonian five-sets and hence the complete six-shell menu of §13.2.
+      
+      So coherent same-end transport is not a new unbounded plateau phenomenon.
+      
+      ## 13.5 Sharp unique-small theorem-facing output
+      
+      PENDING — unique_small_bounded_endgame01.
+      
+      Combining the certified base unique_small_transport_recomp02 with §§13.1–13.4 yields the current best INDEX 2 statement for the profile {r+1,r+1,r}:
+      
+      > after exporting the already-standard Hamiltonian five/six-window outputs, the only genuinely new bounded residues are a positioned component-end reversal or a doubled reverse barrier.
+      
+      Equivalently, a fresh researcher should no longer start from the six-step neutral cycle, universal same-end extenders, four endpoint hooks, or coherent same-end transfer. Those layers have been consumed.
+      
+      ### Exact remaining local obstruction
+      
+      The doubled reverse barrier must be retained honestly. CERTIFIED 1000753 shows that such a barrier propagates along a displayed path unless a tight four-vertex connector opens. This is strong transport structure, but it is not a generic absorption theorem. Earlier local attempts to close barrier states were explicitly retracted because ordered tight triples are not cyclically invariant.
+      
+      Therefore the live local target is not “prove the doubled barrier impossible by a small case check.” It is:
+      
+      > combine barrier propagation, or an opened four-vertex connector, with the surrounding deletion/plateau provenance to compress the canonical defect span.
+      
+      That is exactly the sort of context-sensitive consumer the route still lacks.
+      
+      # 14. Revised launch recommendation after the fresh advance
+      
+      For the strongest current unique-small attack, use:
+      
+      - CERTIFIED: unique_small_transport_recomp02, singleton_transfer_endpointization01, 1000753;
+      - PENDING: same_end_extenders_hall_completion01, shared_edge_double_reversal_sixpackage01, blocked_extender_coherent_sameend_escape01, commoncore_fivepair_sixshell_normal01, unique_small_bounded_endgame01.
+      
+      The next proof attempt should choose one of the bounded outputs and try to use its retained provenance:
+      
+      - a full pc2 square: use the fact that all four lower states come from one six-shell, not an arbitrary square;
+      - overlapping four/five-windows: preserve their common core and the residual deletion state;
+      - oriented matching-block shell: exploit the fixed-pair 2+2 classes and complete cross-hook rectangle;
+      - positioned endpoint reversal: keep the residual path and exact deletion label;
+      - doubled barrier: propagate it with 1000753 and use the first connector or opposite-end arrival together with the exact residual cover.
+      
+      The global first unsupported implication remains:
+      
+          synchronized bounded disturbance
+          -> spanning ordering of defect span <=2
+          -> spanning two-cover.
+      
+      The producer side of INDEX 2 has therefore advanced again; the consumer side is now even more sharply isolated.
+
+  • [1000947] Comprehensive rehearsal — defect-span / spanning-order compression
+      STATEMENT
+      INDEX-3 synthesis: minimum defect span three is exactly a deletion-cover state. The route then has two consumers: 101 fixed-label transport and universal four-window/five-side reversal machinery. Pending 1000954-1000956 now push the fixed-label second layer all the way to synchronized descent, a reachable four-side endpoint-edge reversal, or an endpoint-aligned Hamiltonian 4/5 support. The live unsupported step is consumption of those positioned endpoint obstructions into a two-cover or an ordering whose defect-line matching number is at most one.
+      BODY / PROOF
+      # Comprehensive proof-route synthesis — defect-span / spanning-order compression
+      
+      ## 1. Route summary
+      
+      The route is driven by the defect line of a spanning order. By the certified identity "1000666", the minimum number c(pi) of contiguous tight-path pieces in an ordering pi is 1+nu(L_pi). Thus a spanning two-cover follows once some order has nu(L_pi)<=1.
+      
+      In a hypothetical minimum counterexample, the best possible order has c(pi)=3. The central theorem "defectspanisdeletion" says that every such span-three order is exactly a one-vertex deletion two-cover written P,x,Q. The local window has only two forms: the 101 / central-three state and the 111 / central-five state ("defectcanonical35_recomp01").
+      
+      From there there are only two genuinely different continuations:
+      
+      1. preserve the extra fixed-label structure of 101 and transport the same defect through the graph;
+      2. forget that extra structure and enter the universal four-window / reversal machinery.
+      
+      Everything else in this line is best understood as a refinement of one of those two arrows.
+      
+      ## 2. Starting reduction: span three is a deletion state
+      
+      Assume H is a minimum-order counterexample. Minimum-counterexample calculus gives pc(H)=3 and exact two-covers after every one-vertex deletion ("mincex01").
+      
+      Choose a spanning order pi minimizing c(pi). Since c(pi)=1+nu(L_pi), the counterexample condition gives c(pi)=3 and nu(L_pi)=2. The target is therefore concrete: reduce the defect-line matching number from two to one.
+      
+      Now apply "defectspanisdeletion". If i is the leftmost defect center and x=v_{i+1}, then the prefix P and suffix Q are tight and H-x=P|Q. So the defect-span route and the deletion-cover route meet at the same canonical state P,x,Q.
+      
+      This is the natural starting configuration.
+      
+      ## 3. Canonical normalization: 101 or 111, plus a universal four-window
+      
+      The middle join through x gives exactly two linear geometries.
+      
+      **101.** The middle join is tight. The canonical central bridge has order three. This branch retains the omitted label x and inherited orders on P,Q.
+      
+      **111.** The middle join is defective. Boundary antisymmetry gives the canonical reversed central five-path. This branch retains a positioned five-side and reversal data.
+      
+      There is also a route-neutral normalization. The isolated three-edge cyclic matching geometry is impossible ("1000006"), so every deletion singleton lift has a double-wrap rotation ("1000458"). Hence every span-three state can expose a Hamiltonian four-window with pc2 complement inside the connected cyclic-interval reconfiguration family ("cyclic_nonmatching_fourwindow_transport01").
+      
+      Conceptually:
+      
+      span-three deletion state
+      → either exploit 101 fixed-label transport
+      → or enter universal bounded-window / reversal transport.
+      
+      ## 4. Branch A: 101 is fixed-label transport
+      
+      The point of the 101 branch is not merely local swapping; it is preservation of the same omitted label.
+      
+      **Certified.** "defect101_finite_transport01" says repeated 101 transport ends in exactly one of two useful states:
+      
+      - a deletion cover H-x=P|Q with one side of order three; or
+      - a blocked slide exposing a positioned Hamiltonian four-window with inherited two-path complement.
+      
+      The blocked-slide case has already joined Branch B. Only the three-side endpoint is intrinsically 101.
+      
+      **Certified.** "threeside01" then gives persistent fixed-label transport: in four overlapping seven-vertex shells, at least two defect labels can each be moved from one end of the long path to the other while the same defect label is preserved.
+      
+      The strongest current refinement is live but **pending audit**:
+      
+      - "1000946": the shell transport lies in the same pairwise-repartition component as the original deletion state;
+      - "1000950": each shell state descends through a 5|2 -> 4|3 diamond;
+      - "1000951": the lower 4|3 states glue across shells into a left-to-right constant-Phi corridor carrying one persistent label;
+      - "1000953": a further pending sharpening reduces failure of synchronized second-layer descent to degree-four core graphs 2K2, P4, or K1,3.
+      
+      So the strongest current picture is
+      
+      101
+      → fixed omitted label
+      → finite transport
+      → three-side
+      → persistent shell transport
+      → mobile same-component 4|3 corridor
+      → tiny local residue.
+      
+      The first unsupported implication is:
+      
+      **TARGET A — fixed-label corridor compression.**
+      Turn that mobile fixed-label corridor, or the explicit residual core graphs if "1000953" survives audit, into a spanning two-cover or an order with nu(L_pi)<=1.
+      
+      Further descent alone is not enough; the proof must retain enough spanning-order provenance to collapse the defect matching.
+      
+      ## 5. Branch B: bounded windows, five-sides, and reversal
+      
+      This branch contains the blocked 101 outcome and essentially all of 111.
+      
+      **Certified.** "1000911" is the clean four-window package. For n>14, a Hamiltonian four-window with pc2 complement yields:
+      
+      - strict quadratic-potential descent;
+      - nearby four-window migration; or
+      - an endpoint-aligned Hamiltonian support of order four or five.
+      
+      The older six-set menus are ingredients of this one conceptual transport theorem.
+      
+      The 111 state also retains a five-side. **Certified** "five_side_arbitrary_escape01" says a five-side beside a sufficiently long path yields:
+      
+      - strict Phi descent;
+      - an equal-size endpoint/support exchange; or
+      - a tight triple reversing a displayed edge.
+      
+      Thus four-window transport and five-side transport are really the same kind of producer: they manufacture a small, positioned obstruction.
+      
+      The first unsupported implication is:
+      
+      **TARGET B — bounded obstruction consumption.**
+      Convert an endpoint-aligned 4/5 support, nearby four-window, or displayed-edge reversal into endpoint absorption, a direct two-cover, or nu(L_pi)<=1.
+      
+      Three cautions matter.
+      
+      1. An interior reversal is not yet an endpoint reversal.
+      2. A nearby Hamiltonian support is not automatically a legal same-component move.
+      3. Neutral migration needs a well-founded termination measure; strict descent is only a contradiction at a componentwise minimum.
+      
+      The theorem "1000911" also leaves n<=14 as a separate finite-order residue for this particular route.
+      
+      ## 6. Interfaces with neighboring proof lines
+      
+      **Quadratic-potential / minimal three-cover reconfiguration.**
+      This line consumes strict Phi descents and rules out small sides at trapped minima; for example "threeside_trapped_order_le11". But it does not by itself return to nu(L_pi)<=1.
+      
+      **Endpoint transport / bounded-window gluing.**
+      This is the natural downstream consumer of endpoint-aligned supports and reversals. INDEX 3 produces the obstruction; INDEX 4 is the natural place for the missing gluing/absorption theorem.
+      
+      **Deletion-cover compatibility / global obstruction structure.**
+      Compatibility can inject support crossing and order disagreement when local transport stalls. That is useful input, but not closure. The project already has an unconditional reversing tight triple ("1000164"), so producing another reversal is not enough.
+      
+      **Three-cover no-trapping.**
+      This line supplies component-minimality constraints that make descent meaningful, but still needs a defect-compression consumer.
+      
+      **Longest-path / reversal structure.**
+      This can provide additional positioned reversal information and then enters the same endpoint-transport interface.
+      
+      ## 7. One failed shortcut worth retaining
+      
+      Common endpoint barriers do not allow one to cyclically rotate ordered tight triples into the desired Hamiltonian windows. "common_endpoint_barriers_fivewindow_counterexample01" gives arbitrarily long counterexamples.
+      
+      So orientation must be preserved literally. A reversal or barrier must actually be transported into the needed position; it cannot simply be re-read there.
+      
+      This explains why the present gap is genuinely a transport/compression gap rather than a shortage of local witnesses.
+      
+      ## 8. Residual obstructions
+      
+      There are two theorem-level gaps.
+      
+      ### A. Fixed-label 101 gap
+      
+      Certified mathematics reaches persistent fixed-label shell transport. Pending mathematics strengthens this to a mobile same-component 4|3 corridor.
+      
+      Missing:
+      global mobility of one fixed defect
+      → defect-line matching number drops from two to one.
+      
+      The required statement must pull the moving three-side/fixed label back to the boundary of a spanning order, not merely produce more local Hamiltonian supports.
+      
+      ### B. Universal bounded-obstruction gap
+      
+      Certified four-window/five-side machinery reaches positioned small supports, nearby migration, descent, or displayed-edge reversal.
+      
+      Missing:
+      positioned bounded obstruction
+      → boundary absorption / two-cover / nu(L_pi)<=1.
+      
+      If neutral transport is used, it needs a true termination measure. If descent is used, it must be component-respecting and interpreted at a minimum.
+      
+      ## 9. Minimal closure package
+      
+      The smallest plausible closure package is:
+      
+      1. **Fixed-label corridor compression.** A reachable end-to-end fixed-label 4|3 corridor of the type supplied by pending "1000951" forces a two-cover or nu(L_pi)<=1. If "1000953" survives audit, it suffices to consume its three degree-four residues together with the synchronized cases.
+      
+      2. **Bounded obstruction consumption.** A reachable endpoint-aligned 4/5 support or displayed-edge reversal from the certified transport packages forces endpoint absorption or nu(L_pi)<=1; neutral migration must have a well-founded termination rule.
+      
+      3. **Finite-order residue.** Close, or import from another proof line, the n<=14 branch left by "1000911".
+      
+      Everything before these statements is normalization and obstruction production.
+      
+      ## 10. Mental model
+      
+      The invariant is nu(L_pi), the matching number of the defect line. A hypothetical counterexample sits exactly one unit above the desired threshold: its best spanning orders have two disjoint defect edges.
+      
+      The existing theory shows that this two-defect certificate is highly rigid. It is a deletion state; its local window is only 101 or 111; cyclically it always yields a double-wrap four-window; and in 101 one defect label can be transported globally.
+      
+      So this proof line is fundamentally a **compression problem, not an existence problem**. Reversals, crossings, Hamiltonian windows, and potential descents already exist in abundance. The missing theorem is the mechanism that makes one of those moving local witnesses collide with the spanning-order boundary in a legally controlled way so that the two-edge defect matching collapses to one edge.
+      
+      
+      ## 11. Investigated territory / anti-backtracking map
+      
+      This section is deliberately broader than the proof spine. Its purpose is to tell a fresh researcher which natural subroutes have already been pushed, what their strongest endpoint is, and why restarting them verbatim is unlikely to help.
+      
+      ### 11.1 Defect-line and canonical-state reductions — settled infrastructure
+      
+      - **Defect-line optimization (1000666).** The path-cover count of a spanning order is exactly 1+nu(L_pi). Do not rebuild the route around a different local count unless it gives genuinely more information than the defect-line matching number.
+      - **Span-three = deletion state (defectspanisdeletion).** An optimal three-piece order is already a one-vertex deletion two-cover. Treat deletion-cover and spanning-defect formulations as the same state, not as competing starting points.
+      - **Canonical 101/111 split (defectcanonical35_recomp01).** The local geometry has already been reduced to central-three or central-five form. Searching for a third generic local pattern is backtracking.
+      - **Cyclic normalization (1000006, 1000458, cyclic_nonmatching_fourwindow_transport01).** The isolated cyclic matching obstruction has been eliminated and every deletion singleton lift supplies the double-wrap/four-window structure. Re-deriving existence of a generic Hamiltonian four-window is not progress.
+      
+      ### 11.2 101 sliding and fixed-label transport — already pushed to its real bottleneck
+      
+      - **One-step 101 translation (defect101_slide_or_fourwindow01, certified).** A 101 window either shifts left/right with the same omitted label or immediately exposes a Hamiltonian four-path with explicit inherited two-path complement.
+      - **Finite transport (defect101_finite_transport01, certified).** Iterating that move already terminates at a three-side deletion cover or the inherited-complement four-window. There is no need to search for a different proof that 101 can be moved toward an endpoint.
+      - **Persistent three-side transport (threeside01, certified).** Once a side has order three, persistent defect labels can already be transported through the overlapping shell sequence. Merely proving another local fixed-label move is below the present frontier.
+      - **Shell square/disturbance fork (1000865, pending audit).** Each persistent-defect shell yields either localized order disagreement or a full two-label Hamiltonian-six-set square. This is useful historical territory, but neither output by itself closes defect compression.
+      - **Degree-counted common-core amplification (1000894, certified).** Two persistent defects have an exact degree-sensitive supply of common-neighbor transport packages; at large order these packages already feed disagreement or strict potential descent. Counting more such local packages is not the missing theorem.
+      - **Same-component descent corridor (1000946, 1000950, 1000951, pending audit).** The strongest current refinement says fixed-label shell transport stays in the deletion component, every shell edge enters a 4|3 descent diamond, and the lower states glue into a monotone end-to-end 4|3 corridor. If these survive audit, the remaining task is to consume the corridor, not to manufacture another descent layer.
+      - **Second-layer synchronization (1000953, pending audit).** Failure of synchronized descent is reduced to a degree-four shell whose core graph is 2K2, P4, or K1,3. Do not reopen generic shell synchronization before checking whether the proposed argument already covers the configuration under study.
+      
+      **Live frontier for this block:** prove TARGET A, i.e. convert the mobile fixed-label corridor (or the explicit degree-four residues) into a spanning two-cover or an order with nu(L_pi)<=1.
+      
+      ### 11.3 Four-window transport — compression theorem already exists
+      
+      - **Universal four-window transition (1000911, certified).** Above order fourteen, a Hamiltonian four-window with two-cover complement already compresses to strict Phi descent, a distance-one four-window, or an endpoint-aligned Hamiltonian support of order four or five.
+      - Older six-set menus and intermediate four-window transport chains should normally be read only when proof details are needed; conceptually they have been recomposed into 1000911.
+      - A new result whose only conclusion is "another nearby four-window exists" is not beyond the present frontier unless it provides a well-founded global termination mechanism or direct boundary absorption.
+      
+      **Live frontier for this block:** consume endpoint-aligned 4/5 support or give neutral migration a terminating invariant.
+      
+      ### 11.4 Five-side and reversal production — witness existence is not the gap
+      
+      - **Five-side escape (five_side_arbitrary_escape01, certified).** A five-side beside a long path already gives strict Phi descent, neutral endpoint/support exchange, or a tight triple reversing a displayed edge.
+      - **Order disagreement (1000211, certified).** Every minimum counterexample already contains explicit relative-order disagreement between overlapping tight paths.
+      - **Genuine reversing triple (1000164, certified).** Every minimum counterexample already contains a tight triple reversing an edge of a nontrivial tight path.
+      
+      Consequently, proving another theorem whose endpoint is merely "there exists order disagreement," "there exists a reversal," or "there exists some small Hamiltonian support" is not a new closure mechanism. The missing information is **position and transport**: the witness must be driven to a deletion-cover/spanning-order boundary where it collapses the two-defect matching.
+      
+      ### 11.5 Endpoint-barrier shortcut — ruled out
+      
+      - **common_endpoint_barriers_fivewindow_counterexample01 (certified).** Even arbitrarily many common endpoint-barrier triples do not let one cyclically reinterpret the configuration as the desired Hamiltonian five-window. The counterexample family exists at arbitrary length.
+      - Therefore literal orientation data must be preserved. Do not use an argument that silently rotates or rereads an ordered barrier triple into another position.
+      
+      This is a genuinely dead shortcut unless additional hypotheses unavailable in that counterexample family are explicitly used.
+      
+      ### 11.6 Potential descent — useful only with the correct global context
+      
+      Many local routes already yield strict quadratic-potential descent. This is valuable only when the state is known to be a minimum in the relevant pairwise-repartition component. Producing additional local Phi decrease without:
+      1. component membership,
+      2. a component-minimality hypothesis, or
+      3. a pullback to the spanning-order defect invariant,
+      does not advance INDEX 3.
+      
+      Similarly, neutral repartition/migration without a well-founded measure may cycle. A fresh researcher should not assume that "keep moving the window" is an argument until termination is supplied.
+      
+      ### 11.7 Small-order residue
+      
+      1000911 isolates n<=14 as a finite-order residue for the universal four-window route. This is already known as a separate obligation. Do not let a proof for large order silently claim the grand theorem without either closing this residue or importing a certified small-order result from another line.
+      
+      ### 11.8 What counts as genuinely new progress
+      
+      Before opening a new INDEX-3 branch, check whether its endpoint is already one of the following familiar outputs:
+      
+      - another 101 slide;
+      - another fixed-label shell move;
+      - another Hamiltonian four/five/six support;
+      - another common-core or two-label square;
+      - another strict Phi descent lacking component-minimality;
+      - another order disagreement or reversing triple;
+      - another neutral nearby-window migration.
+      
+      If so, the result is probably supporting machinery rather than a new proof route.
+      
+      The clearest genuinely new contributions would instead do at least one of these:
+      
+      1. **consume the fixed-label 4|3 corridor** into nu(L_pi)<=1 or a spanning two-cover;
+      2. **consume an endpoint-aligned bounded support/reversal** into boundary absorption;
+      3. give neutral transport a **well-founded global termination invariant**;
+      4. close the explicit **degree-four shell residues** from 1000953 if that result survives audit;
+      5. close or import the **n<=14 finite-order residue**.
+      
+      A new researcher can therefore begin at one of these consumers without first re-exploring the local-witness production machinery above.
+      
+      
+      ## Coverage update — the fixed-defect second layer is now consumed to the standard frontier
+      
+      The pending fixed-label corridor chain has advanced beyond `1000953`.
+      
+      - **`1000954` (pending).** In each reachable lower 4|3 shell layer, failure of synchronized second-layer descent already yields relative-order disagreement between Hamiltonian four-sides *inside the same fixed-defect component*. The earlier 2K2/P4/K1,3 core graphs are therefore no longer terminal residues.
+      - **`1000955` (pending).** That same-layer disagreement upgrades to a literal shell-local reversing tight triple on an edge of a reachable Hamiltonian four-side.
+      - **`1000956` (pending).** The internal-edge reversal cases are then absorbed into the standard small-window machinery. What remains is exactly:
+        1. synchronized strict second-layer descent;
+        2. a reversal of an **end edge** of the reachable Hamiltonian four-side; or
+        3. a proper Hamiltonian 4/5 support with pc2 complement, endpoint-aligned in the matching-block branch.
+      
+      Thus the current INDEX-3 frontier is sharper than TARGET A as originally stated. One should **not** attack the old degree-four shell graph residues directly. Subject to audit, fixed-label transport already feeds the same bounded-obstruction consumer as Branch B.
+      
+      The line-specific missing implication is now:
+      
+      > **reachable four-side endpoint-edge reversal / endpoint-aligned 4/5 window -> boundary absorption or defect-line matching number at most one.**
+      
+      This is essentially the INDEX-3/INDEX-4 interface. Further shell classification or another layer of local descent is below the current frontier unless it supplies a direct consumer for that endpoint-edge reversal.
+      
+      Audit concentration: `1000954`-`1000956` are pending. If they fail, fall back to the `1000953` degree-four residue described earlier.
+
+  • [1000949] INDEX 1 — Comprehensive deletion-cover compatibility proof rehearsal
+      STATEMENT
+      Researcher-onboarding synthesis for deletion-cover compatibility/global obstruction structure. It gives the complete current route from minimum counterexample through deletion-state consistency, ordinary positioned disturbance, and balanced odd-cycle monodromy; distinguishes certified from pending inputs; records the main fenced/dead approaches; and identifies exactly three live closure interfaces: order-defect placement, crossing synchronization, and odd-cycle integral rounding. Pending theorem 1000948 further shows that every arbitrary selected deletion-cover transversal already exposes a positioned order defect, endpoint mixed-support edge, or inherited three-piece double-deletion crossing; hence the balanced odd cycle is not locally clean, though its integral monodromy/rounding problem remains a distinct global consumer.
+      BODY / PROOF
+      # Route summary
+      
+      Assume a minimum counterexample H and choose one exact two-path cover F_x of H-x for every vertex x. The deletion-cover route is a local-to-global consistency argument. If sufficiently many deletion states agree, they reconstruct a forbidden spanning two-cover. Therefore a counterexample must carry structured inconsistency. The current theorem package localizes that inconsistency almost completely: every ordinary support configuration produces a support-compatible order defect or a mixed-support edge already tied to an endpoint deletion, while the unique genuinely global residue is a balanced odd support cycle with nontrivial order monodromy and explicit two-deletion disturbance. The deletion-cover line therefore no longer needs more generic disagreement, more generic crossings, or another structural classification. Its live task is to convert already-positioned transition data into the neighboring closure interface: a spanning ordering of defect span at most two. In the odd-cycle branch this becomes a precise integral-rounding problem.
+      
+      # 0. How a new researcher should use this rehearsal
+      
+      This document is intended to be sufficient orientation for beginning new work in the deletion-cover compatibility line without first reconstructing its history.
+      
+      There are three trust levels.
+      
+      **Certified / established** means the result may be used as settled project mathematics. The main certified inputs in this rehearsal are `mincex01`, `1000694`, `1000758`, `compatibility_triangle_endpoint_transport01`, `compatdegreefour10`, `compatuniformall11`, `1000518`, `1000211`, `1000683`, `double_inward_endhook_not_absorption01`, and `astra003adjacentonedefect`.
+      
+      **Proved but pending audit** means the result is a live theorem and may be used optimistically for route design, but a claimed final proof of the grand conjecture must either wait for certification or independently re-establish the needed statement. The principal pending package is `1000928`, `1000929`, `1000930`, `1000931`, `1000934`, `1000936`, `1000942`, `1000943`, `1000944`, and `1000945`.
+      
+      **Targets / proposals** are the unsupported arrows isolated below. They are not facts.
+      
+      Four pieces of vocabulary are enough to read the route. A deletion state F_x is an exact two-path cover of H-x. Two states are **support-compatible** when they induce the same two support classes on their common domain; they are **fully compatible** when they also induce the same linear order inside those classes. The **selected support graph** has one vertex for each selected path support and one edge for each deletion state joining its two supports. A spanning ordering has **defect span** equal to the width of the interval containing all non-tight consecutive triples; by `1000694`, span at most two is exactly a spanning two-cover.
+      
+      A researcher entering this line should treat Sections 1–4 as the established/pending architecture, Section 6 as the no-backtracking ledger, and Section 7 as the actual frontier.
+      
+      # 1. Starting reduction: exact deletion states and the canonical closure interface
+      
+      Let H be a minimum counterexample.
+      
+      **Established.** By `mincex01`, pc(H)=3 and every one- and two-vertex deletion has an exact two-path cover. By `1000694`, every exact deletion cover
+      
+      H-x = P | Q
+      
+      gives the spanning ordering P,x,Q with defect span exactly three. Conversely, H has a spanning two-cover exactly when some spanning ordering has defect span at most two.
+      
+      Thus the grand theorem, inside a minimum-counterexample argument, is a one-unit compression problem:
+      
+      **canonical width three -> width at most two.**
+      
+      Choose one exact deletion state F_x for every x. The indexed route studies the consistency of this family.
+      
+      One fact should immediately change how new work is allocated: **bare order disagreement is already settled.** Certified `1000211` proves that every minimum counterexample contains order disagreement. Any argument whose endpoint is merely “two tight paths order a common pair differently” has not advanced this line. The needed output is disagreement with enough support and positional information to interact with the canonical width-three join.
+      
+      # 2. Consistency package: agreement either glues or localizes to one insertion defect
+      
+      The first conceptual transformation is
+      
+      local deletion states -> compatibility structure -> bounded transition defect.
+      
+      ## 2a. Full compatibility
+      
+      **Established: `1000694`.** Four pairwise fully compatible exact two-cover deletion states reconstruct a global two-cover. Therefore a counterexample cannot contain a four-state clique of full compatibility.
+      
+      The same theorem gives the exact two-state normal form. If F_a and F_b are fully compatible, then the omitted labels a,b must restore into the same common ordered support. Their insertion slots are either identical or adjacent. If the slots are separated by at least two positions, the two insertions can be combined and H is already two-coverable. If they are adjacent, all local triples in the combined order are certified except one, and boundary antisymmetry supplies the reverse tight triple.
+      
+      This normal form is important because it exhausts the local geometry of a compatible pair. A new researcher should not reopen arbitrary two-cover insertion configurations: after compatibility is known, the only unresolved local states are same-slot and adjacent-slot replacement.
+      
+      **Pending global strengthening: `1000928`.** The full-compatibility graph of arbitrarily selected deletion states is K4-minor-free, hence 2-degenerate. This does not close the theorem; its role is to show that compatibility cannot form a thick global network.
+      
+      ## 2b. Support compatibility without order compatibility
+      
+      **Established: `1000694`.** A pairwise support-compatible family with at least three deletion labels localizes to
+      
+      F_t = (X-{t}) | Q,
+      
+      where every H[X-{t}] is Hamiltonian, Q is Hamiltonian, and X itself is not Hamiltonian. The Q-side may be normalized to one fixed Hamilton order. Therefore all unresolved variation lies in the ordered Hamilton deletions of the single critical class X.
+      
+      **Established: `1000758`.** Endpoint probes against such a family cannot remain featureless. They force one of three kinds of output: at least three cross-class path edges, a direct mixed-support edge, or relative-order disagreement. In the three-crossing case, path degree at the singleton forces a direct mixed-support edge, so the operative outputs are endpoint crossing or order disagreement.
+      
+      These theorems should be viewed as one package: **global support agreement collapses the problem to one critical Hamilton-deletion class; endpoint deletions then expose the order/crossing defect inside it.**
+      
+      # 3. Global structural reduction: all ordinary configurations already reach positioned disturbance
+      
+      The next transformation is
+      
+      sparse support/compatibility geometry -> a positioned endpoint disturbance,
+      
+      with one genuinely distinct odd-cycle exception.
+      
+      **Pending: `1000929`.** For an arbitrary selection of one deletion cover per label, the selected support graph is either a forest or one spanning odd cycle on n=2k+1 vertices, with every support in the cycle of order k.
+      
+      **Pending: `1000930`.** Ordinary compatibility blocks retain a fixed Hamilton path/order. Thus internal block structure is not an independent obstruction.
+      
+      For the non-cyclic geometry, the important local mechanisms are already known.
+      
+      **Established: `compatibility_triangle_endpoint_transport01`.** Two compatibility neighbors on the same side of an anchor produce a synchronized family and hence either a direct mixed-support edge at an endpoint deletion or an order-reversal/disagreement output.
+      
+      **Pending: `1000934`.** Two suitable endpoint-incompatible probes force a direct mixed-support edge or order disagreement.
+      
+      These are compressed by the strongest current umbrella theorem.
+      
+      **Pending: `1000942`.** For a minimum counterexample with one chosen deletion cover after every vertex deletion, at least one of the following holds:
+      
+      (A) two chosen covers are support-compatible but order-incompatible;
+      
+      (B) for some anchor F_x=P|Q and some endpoint y of P or Q, F_y contains an ordinary path edge joining surviving vertices from the two support classes of F_x;
+      
+      (C) the chosen supports form the balanced spanning odd-cycle configuration, but some consecutive double deletion already has an inherited three-piece crossing or relative-order disagreement.
+      
+      This is the correct structural endpoint of ordinary INDEX 1 work. The forest, compatibility-block, triangle, and endpoint-probe subcases should not be separately re-investigated unless one of the pending theorems fails audit.
+      
+      A certified abundance package explains the remaining difficulty. `compatdegreefour10` and `compatuniformall11` show that either a high-compatibility anchor already yields synchronized endpoint structure, or every deletion state has linearly many incompatible partners of one broad type. Thus the ordinary branch does not suffer from too few disturbances. It suffers from failure to **synchronize** several disturbances at one closure window.
+      
+      # 4. The genuinely distinct branch: balanced odd-cycle monodromy
+      
+      The spanning odd support cycle must remain separate because its obstruction is global rather than tree-like.
+      
+      ## 4a. The odd cycle is already disturbed
+      
+      **Pending: `1000943`.** Any odd cycle of distinct selected Hamiltonian supports whose consecutive double deletions are two-coverable has a non-clean length-two transition: an internal exchanged label gives an inherited three-piece crossing, or the endpoint-deleted inherited covers have relative-order disagreement. No minimum-counterexample, longest-path, or balance hypothesis is required.
+      
+      Consequently “prove the exceptional odd cycle cannot remain completely clean” is already done, subject to audit.
+      
+      ## 4b. In the no-order-disagreement subbranch, compatibility produces rank monodromy
+      
+      Assume the selected cycle states are fully compatible where their supports overlap. Then `1000694` turns each step-two replacement into one of two moves on a common ordered spine: same-slot replacement or adjacent-slot replacement. An adjacent-slot move supplies a reversing triple.
+      
+      **Pending: `1000936`.** On n=2k+1 labels, at least k-1=(n-3)/2 of the step-two transitions are adjacent-slot reversals.
+      
+      **Pending refinement: `1000945`.** Every adjacent rank generator occurs at least once, and parity gives a sharp dichotomy. Either there are exactly k-1 reversals, each rank generator appears exactly once, and k+2 transitions are same-slot; or there are at least k+1 reversals, a strict majority. Thus proving “there is at least one reversal” or even “there are linearly many reversals” is no longer new progress.
+      
+      **Pending complementary coordinate system: `1000944`.** The pair-order data induced on the complement of the ground odd cycle are either restrictions of one global linear order, or a shortest incoherence witness is an odd-gap directed triangle or a directed C4 on the endpoints of two disjoint ground-cycle edges. This should be treated as another description of the same global order obstruction, not as a separate proof route.
+      
+      ## 4c. The integral target is exact
+      
+      **Pending: `1000931`.** For the ground odd cycle C_{2k+1}, the selected supports satisfy exact incidence identities. In particular, if a tight-path support T is a vertex cover of the ground cycle and |T|=k+1, then T and one selected support form an integral spanning two-cover. The theorem also gives the exact fractional mass-two criterion and dual slack description.
+      
+      Hence the actual odd-cycle closure problem is:
+      
+      **ODD-CYCLE ROUNDING.** Use the global same-slot/adjacent-slot monodromy, or the equivalent global-order/odd-gap-triangle/C4 obstruction, to produce a Hamiltonian minimum vertex cover of the ground cycle, or directly a span-two ordering.
+      
+      The fractional theorem already identifies the correct integral object. Merely improving tau*(H) toward two is not the missing step.
+      
+      # 5. Natural interfaces with neighboring proof lines
+      
+      INDEX 1 intrinsically ends when it has produced sufficiently positioned transition data. Two neighboring lines are the natural consumers.
+      
+      **INDEX 3: defect-span / spanning-order compression.** `1000694` makes this the theorem-level closure interface. A successful consumer must take the order defect, mixed-support crossing, or odd-cycle composite witness and remove one center from the canonical span-three window.
+      
+      **INDEX 4: endpoint transport / bounded-window gluing.** Mixed-support edges, reversing triples, and inherited three-piece crossings are precisely the local data this line should consume. The key issue is not producing another local gadget but proving that two or more gadgets can be made compatible at one endpoint/join.
+      
+      Other proof families may be imported when they improve positioning or give a well-founded transport measure, but the synthesis should not silently turn into quadratic-potential, longest-path, or three-cover dynamics.
+      
+      # 6. No-backtracking ledger: questions already answered or routes already fenced
+      
+      This section is deliberately operational. A new researcher should not spend a research cycle on any item below unless challenging the cited theorem itself.
+      
+      ## 6a. “Can we at least force order disagreement?”
+      
+      Yes. `1000211` proves it in every minimum counterexample. Generic disagreement existence is closed. New work must add **position, synchronization, or consumability**.
+      
+      ## 6b. “Can many compatible deletion states coexist?”
+      
+      Not in a way that directly helps a counterexample. Four mutually fully compatible states glue globally by `1000694`. Pending `1000928` strengthens this to K4-minor-free/2-degenerate compatibility. Do not search for a high-density compatibility regime as a new structural branch; high compatibility is already a route to gluing or endpoint synchronization.
+      
+      ## 6c. “Maybe a compatible pair can have complicated relative insertions?”
+      
+      No. `1000694` reduces a compatible pair to identical or adjacent insertion slots on one common ordered support. Separated slots already close the theorem. The adjacent case has exactly one uncertified local cross triple and a forced reverse tight triple.
+      
+      ## 6d. “Maybe one reversing triple or two inward endpoint hooks force absorption?”
+      
+      No. `double_inward_endhook_not_absorption01` gives an explicit non-Hamiltonian four-vertex configuration with both inward hooks. A local reversal gadget by itself is not a closure theorem.
+      
+      Likewise `astra003adjacentonedefect` shows exactly what adjacent double insertion gives: a Hamiltonian enlargement if the cross triple is tight, otherwise only a one-defect ordering / two-path cover with the reverse triple tight. This is a useful normal form, not a finished splice.
+      
+      ## 6e. “Maybe Hamiltonicity of a small enlargement lets us restore the omitted vertex at an endpoint of the displayed order?”
+      
+      No. Certified `1000683` gives a Hamiltonian four-set whose omitted vertex extends neither endpoint of a particular Hamiltonian order on the remaining three vertices. Any gluing theorem must use order compatibility, not Hamiltonicity alone.
+      
+      ## 6f. “Can boundary antisymmetry justify reversing or rotating an entire tight path?”
+      
+      No. Boundary antisymmetry reverses a single ordered triple. It does not give path reversal, cyclic rotation, or arbitrary reordering. Any proof using such a move must certify every new consecutive triple.
+      
+      ## 6g. “Maybe the ordinary branch just needs more crossings or more disagreement witnesses?”
+      
+      No. `compatdegreefour10` and `compatuniformall11` already give either synchronized endpoint structure or linearly many incompatible partners at every state. `1000942` already reduces the arbitrary selected family to positioned disturbance. The residual issue is **common placement and joint consumption**, not witness abundance.
+      
+      ## 6h. “Maybe the odd cycle only needs one reversal, or a proof that it is not clean?”
+      
+      No. Pending `1000943` already forces two-deletion disturbance. Pending `1000936` and `1000945` already give a global reversal network, including every rank boundary. New odd-cycle work must compose those events into an integral/spanning consequence.
+      
+      ## 6i. “Maybe a better fractional estimate closes the odd cycle?”
+      
+      No. Pending `1000931` already supplies exact fractional mass-two criteria and the dual description. The grand theorem is integral. The missing statement is a rounding/gluing theorem producing a Hamiltonian minimum ground-cycle vertex cover or a span-two ordering.
+      
+      ## 6j. “Maybe repeated local transport is enough by recurrence?”
+      
+      Not without a strict measure or analyzed terminal state. Moving the unique defect without proving descent merely changes its location. Any iterative transport proposal must exhibit a well-founded potential, a no-trapping theorem, or a finite recurrence whose return is itself contradictory.
+      
+      # 7. Current frontier: three legitimate starting points
+      
+      A researcher can begin new work at any of these three interfaces without first redoing the structural theory.
+      
+      ## Frontier A — order-defect placement
+      
+      **Starting data.** A support-compatible but order-incompatible pair F_a,F_b. Certified `1000518` says the pair-state defect survives every further deletion except possibly two labels; if two exceptional labels exist, the entire disagreement is concentrated on that pair.
+      
+      **What is already available.** Generic order disagreement, robustness under deletion, local reversed edges/reversing triples from path-intersection calculus, and the canonical span-three state P,x,Q.
+      
+      **Missing implication.**
+      A robust deletion-cover order defect can be synchronized with some canonical state P,x,Q so that the defect occurs in an endpoint-adjacent bounded window and literal triple checks yield span at most two.
+      
+      **What would count as real progress.** A theorem that moves or selects the robust defect into the canonical join with a proved invariant; a theorem that two robust disagreement states must share a consumable endpoint pattern; or a direct bounded-window compression theorem using the concentrated exceptional-pair case.
+      
+      **What would not count as progress.** Another proof that disagreement exists, another unpositioned reversing triple, or another small Hamiltonian window without a gluing statement.
+      
+      ## Frontier B — crossing synchronization
+      
+      **Starting data.** An anchor F_x=P|Q and endpoint deletion y for which F_y contains a direct ordinary edge between the surviving P- and Q-classes, or the stronger certified high-/low-compatibility abundance supplied by `1000758`, `compatdegreefour10`, and `compatuniformall11`.
+      
+      **What is already available.** Many individual mixed-support transitions, synchronized endpoint probes in the high-compatibility branch, and linear families of uniform disturbances in the low-compatibility branch.
+      
+      **Missing implication.**
+      Two or more such disturbances can be forced onto the same anchor/end with compatible boundary orientations, yielding either a legal splice or a transport step with a strict well-founded descent.
+      
+      **What would count as real progress.** A common-end/common-anchor synchronization theorem; a two-crossing bounded-window splice with complete consecutive-triple verification; or a monotone support-migration invariant that cannot cycle.
+      
+      **What would not count as progress.** Producing one more mixed edge, classifying one more local crossing pattern without a consumer, or asserting eventual termination from repetition alone.
+      
+      ## Frontier C — odd-cycle integral rounding
+      
+      **Starting data.** The balanced selected support cycle S_i, exact support identities, same-slot/adjacent-slot step-two transport, at least k-1 adjacent reversals with every rank boundary represented, and the exact `1000931` criterion that a Hamiltonian minimum vertex cover of the ground cycle closes the branch.
+      
+      **What is already available.** Two-deletion disturbance (`1000943`), reversal monodromy (`1000936`, `1000945`), the global-order versus odd-gap-triangle/C4 description (`1000944`), and the exact fractional/dual identities (`1000931`).
+      
+      **Missing implication.**
+      The global transition word forces a Hamiltonian (k+1)-vertex cover of the ground cycle, or directly forces span at most two.
+      
+      **What would count as real progress.** A composition rule showing that several adjacent-slot reversals can be realized simultaneously in one support order; an argument that one of the minimum ground-cycle covers inherits a Hamilton order from the monodromy; or a proof that the odd-gap triangle/C4 obstruction feeds Frontier A or B.
+      
+      **What would not count as progress.** Proving another lower bound on the number of reversals, identifying another single reversal gadget, or sharpening tau* without integral rounding.
+      
+      # 8. Minimal closure package
+      
+      At present the route closes if one proves the following package.
+      
+      **A. Positioned order-defect consumption.** Robust selected order disagreement -> endpoint-adjacent span-two compression.
+      
+      **B. Synchronized crossing consumption.** Endpoint-local mixed-support disturbances -> legal splice or well-founded transport -> span at most two.
+      
+      **C. Odd-cycle rounding.** Balanced-cycle monodromy -> Hamiltonian minimum ground-cycle vertex cover or span at most two.
+      
+      A and B may ultimately be one endpoint-transport theorem. C is genuinely global unless its monodromy can first be converted into A or B.
+      
+      # 9. Compact dependency map for further reading
+      
+      A researcher should not need to read the historical tree in order to start. If exact proofs are needed, the shortest useful lookup order is:
+      
+      `mincex01` gives the minimum-counterexample deletion regime.
+      
+      `1000694` is the central dictionary: defect span, global gluing, support-family localization, and same/adjacent compatible-pair insertion.
+      
+      `1000942` is the current global deletion-family reduction, pending audit.
+      
+      For ordinary branches, `1000758`, `compatibility_triangle_endpoint_transport01`, `compatdegreefour10`, `compatuniformall11`, `1000518`, and pending `1000934` explain exactly what disturbance is available and why abundance is not the missing issue.
+      
+      For the odd cycle, pending `1000929` gives the support-cycle structure; `1000943` gives unavoidable disturbance; `1000936` and `1000945` give rank monodromy/reversal density; `1000944` gives the global-order obstruction menu; and `1000931` gives the exact integral/fractional target.
+      
+      The principal fences worth reading before proposing a local splice are `1000683`, `double_inward_endhook_not_absorption01`, and `astra003adjacentonedefect`.
+      
+      Everything else in the historical compatibility subtree should be treated as implementation detail or provenance unless a proof of one of these package theorems is under audit.
+      
+      # 10. Mental model
+      
+      Think of the selected deletion covers as local coordinate charts on H.
+      
+      If the charts agree too much, they glue to the forbidden global two-cover. Therefore a counterexample must have nontrivial transition maps between charts. The compatibility machinery has already done almost all of the localization: ordinary transition inconsistency becomes endpoint crossing or order defect, while the only global holonomy is the balanced odd cycle.
+      
+      The research frontier is therefore not “find inconsistency.” It is:
+      
+      **take transition inconsistency that is already known to exist, synchronize it with the canonical span-three join, and make it delete one global defect rather than merely move that defect.**
+      
+      That is the invariant picture a new researcher should preserve.
+      
+      ## Coverage update — arbitrary transversals now force positioned disturbance
+      
+      **Pending: `1000948`.** This should be read as the current theorem-facing strengthening of the global INDEX-1 reduction. For an arbitrary choice of one deletion cover after every vertex deletion, one gets at least one of:
+      
+      1. a support-compatible but order-incompatible selected pair;
+      2. an anchor F_x=P|Q and an endpoint deletion whose chosen cover contains an ordinary edge joining the surviving P- and Q-classes;
+      3. in the balanced spanning odd support cycle, a consecutive double deletion whose two-cover crosses two of the three inherited path pieces created by deleting an internal exchanged label.
+      
+      So the balanced odd cycle is **not** a featureless terminal branch. Its monodromy/fractional structure remains a useful global coordinate system, but every selected transversal already contains a positioned disturbance suitable for INDEX 3/4 consumption. A new researcher should therefore not treat “eliminate the clean odd cycle” as an open task.
+      
+      This sharpens the frontier map above as follows:
+      
+      - **Frontier A/B** already occur for every selected transversal outside the genuinely global monodromy packaging.
+      - **Frontier C** remains relevant only when one wants to exploit the stronger cyclic structure integrally; it is no longer needed merely to prove the cycle has a local defect.
+      
+      Audit risk is concentrated in `1000948` and its pending inputs `1000942`/`1000943`. If any of those fail audit, revert to the earlier three-frontier description.
 
 • [research_nudges] Research nudges
     STATEMENT
@@ -7188,6 +8378,94 @@
             
             Therefore the leave-and-return case yields either a spanning two-cover or the stated proper Hamiltonian four-set with path-cover-two complement.
 
+        • [same_end_extenders_initial_reversal01] Universal same-end extenders force an endpoint reverse cross triple
+            STATEMENT
+            Let H be a boundary 3-tournament with pc(H)>2. Let A_1,...,A_q be pairwise vertex-disjoint nonempty tight paths of order at least two, q>=1, and let x,y be distinct vertices outside them with V(H)=({x,y}) union disjoint-union_j V(A_j). Assume x and y both initial-extend every A_j. Let T be any two-cover of H-{x,y}. Then either T has order disagreement with one of the displayed paths A_j, or some component of T begins with vertices u,v lying in two different displayed cores and, for some z in {x,y}, the boundary-reversed triple (v,u,z) is tight. For q=1 the second alternative is impossible, so every such residual two-cover has order disagreement. The terminal-extender version holds symmetrically.
+            BODY / PROOF
+            Write T as one or two nonempty tight paths. T cannot consist of one path, since that Hamilton path together with the vacuously tight two-vertex path (x,y) would two-cover H. Nor can one component be a singleton {w}: the other component, together with whichever of (x,w,y) and (y,w,x) is tight by the boundary axiom, would two-cover H. Thus T has exactly two components R,S, each of order at least two. Assume T has no order disagreement with any displayed core. Write R=(r_1,r_2,...) and S=(s_1,s_2,...). Consider (x,r_1,r_2). If r_1,r_2 lie in one displayed core A_j and are exactly its first two vertices, then (x,r_1,r_2) is tight because x initial-extends A_j. If they lie in one core but not in that displayed first-two position and (x,r_1,r_2) were non-tight, boundary flip would make (r_2,r_1,x) tight, reversing the common pair r_1,r_2 relative to A_j and hence giving order disagreement. Therefore (x,r_1,r_2) is tight in the no-disagreement branch whenever r_1,r_2 lie in one core. If they lie in two different cores and (x,r_1,r_2) is non-tight, boundary flip gives the asserted reverse cross triple (r_2,r_1,x). Hence, unless a conclusion already holds, x can be prepended to R. The identical argument with y and S shows that, unless a reverse cross triple or order disagreement occurs, y can be prepended to S. Then (x,R)|(y,S) is a spanning two-cover of H, contradiction. The number of displayed cores never enters the argument. Reversing all displayed words gives the terminal-extender version with the same boundary-flip reasoning.
+
+          • [same_end_extenders_double_reversal01] Universal same-end extenders force a synchronized double endpoint reversal
+              STATEMENT
+              Under the hypotheses of same_end_extenders_initial_reversal01, assume a residual two-cover T=R|S of H-{x,y} has no order disagreement with any displayed core. Then one of the following synchronized alternatives holds: (i) one extender z∈{x,y} fails to prepend both R and S, so the initial edge of each residual component is cross-core and its boundary reversal through z is tight; or (ii) one residual component U∈{R,S} cannot be prepended by either x or y, so its cross-core initial edge has tight boundary reversals through both extenders. The terminal-extender version is symmetric.
+              BODY / PROOF
+              Write R=(r_1,r_2,...) and S=(s_1,s_2,...), with both components of order at least two as in same_end_extenders_initial_reversal01. In the no-order-disagreement branch, for each extender z∈{x,y} and each residual component U, failure of z to prepend U can occur only when the first two vertices of U lie in different displayed cores; boundary flip then gives a tight reverse cross triple through z.
+              
+              Form the bipartite graph B with left vertices {x,y}, right vertices {R,S}, and edge zU exactly when z can be prepended to U. If B had a perfect matching, assigning the two extenders to the matched residual components would produce two tight paths covering all of H, contrary to pc(H)>2. Hence B has no perfect matching.
+              
+              By Hall's theorem for this 2-by-2 graph, either some left vertex has empty neighborhood or some right vertex has empty neighborhood. In the first case one extender z fails to prepend both R and S; therefore both initial edges are cross-core and both boundary-reversed triples through z are tight. In the second case one residual component U is not prependable by either extender; therefore its initial edge is cross-core and its boundary reversals through x and y are both tight.
+              
+              This is strictly stronger than the existence of one reverse cross triple: the obstruction is synchronized either by a common reversing label or by a common reversed residual edge. No additional size assumptions are used.
+
+            • [same_end_extenders_four_endpoint_reversal01] Universal same-end extenders force four synchronized endpoint reversals
+                STATEMENT
+                Let H be a boundary 3-tournament with pc(H)>2. Let A_1,...,A_q be pairwise vertex-disjoint tight paths of order at least two whose supports, together with distinct vertices x,y, partition V(H), and assume x and y both initial-extend every A_j. Let T=R|S be any exact two-cover of H-{x,y} having no order disagreement with any displayed A_j. Then one of the following holds. (I) One extender z in {x,y} cannot be attached to either end of either R or S; consequently the first and last ordinary edges of both R and S are cross-core and all four corresponding boundary-reversed endpoint triples through z are tight. (II) One residual component U in {R,S} cannot be extended at either end by either x or y; consequently both endpoint edges of U are cross-core and their four boundary-reversed triples through x and y are tight. The terminal-extender version is symmetric.
+                BODY / PROOF
+                For z in {x,y} and U in {R,S}, call z attachable to U if either prepending z to U or appending z to U gives a tight path. Form the bipartite attachment graph B with left class {x,y}, right class {R,S}, and edge zU exactly when z is attachable to U.
+                
+                If B has a perfect matching, attach the matched extender to the matched residual component at whichever end certifies that edge. The two resulting tight paths are vertex-disjoint and span H, contradicting pc(H)>2. Thus B has no perfect matching. Since B is 2-by-2, Hall's theorem says that either some extender z has no neighbor or some residual component U has no neighbor.
+                
+                It remains to translate a missing incidence zU. Write U=(u_1,...,u_m), m>=2. If z cannot be prepended, then (z,u_1,u_2) is non-tight. Boundary flip gives (u_2,u_1,z) tight. If u_1,u_2 lay in one displayed core A_j, the tight path (u_2,u_1,z) would place their common pair in the opposite relative order from A_j, contrary to the assumed absence of order disagreement. Hence u_1,u_2 lie in different displayed cores, and (u_2,u_1,z) is a reverse cross-core initial-end triple.
+                
+                Likewise, failure to append z means (u_{m-1},u_m,z) is non-tight, so boundary flip gives (z,u_m,u_{m-1}) tight. If u_{m-1},u_m belonged to one displayed core, this would reverse their common pair relative to that core and give order disagreement. Hence the terminal edge is cross-core and (z,u_m,u_{m-1}) is the corresponding reverse terminal-end triple.
+                
+                Therefore every missing incidence zU supplies two positioned reverse endpoint triples, one at each end of U. In Hall alternative (I), the two missing incidences zR,zS give four triples, one at each end of both residual components, all through the same extender z. In alternative (II), the two missing incidences xU,yU give four triples, both ends of one residual component reversed through both extenders. This proves the claim.
+                
+                The proof uses no size information beyond residual component order at least two and no local case analysis. It strictly strengthens the initial-end Hall obstruction by exploiting both endpoint attachment choices.
+
+              • [same_end_extenders_hall_completion01] The four-endpoint Hall obstruction reduces to a shared-edge six-window or a same-deletion transfer fork
+                  STATEMENT
+                  Let H be a minimum counterexample in the setup of same_end_extenders_four_endpoint_reversal01, with universal same-end extenders x,y and an order-neutral exact residual two-cover T=R|S of H-{x,y}. Then either one residual component is unattached at either end by both x and y, in which case the two labels reverse one common displayed endpoint edge and shared_edge_double_reversal_sixpackage01 gives its common-core six-window transport package; or, after relabeling the extenders z,w, z is unattached at either end of both R and S while w is attachable to both. In the latter case H-z has two exact two-covers obtained by attaching w to R or to S, their singleton lifts are adjacent three-covers, and singleton_transfer_endpointization01 yields either a displayed component-end reversal or coherent same-end endpoint alignment of w on both augmented residual supports.
+                  BODY / PROOF
+                  Form the 2-by-2 bipartite attachment graph B with left class {x,y}, right class {R,S}, and edge tU when t can be attached to at least one end of U. A perfect matching would attach the two extenders to different residual paths and give a spanning two-cover of H, so B has no perfect matching. If some right vertex U has degree zero, then both extenders fail to attach at either end of U. By same_end_extenders_four_endpoint_reversal01, each endpoint edge of U is reversed through both x and y. Choosing either endpoint edge gives two labels reversing one common displayed path edge, so shared_edge_double_reversal_sixpackage01 applies. Now assume no right vertex is isolated. Since B has no perfect matching, Hall's theorem for this 2-by-2 graph gives an isolated left vertex z; let w be the other extender. Every right vertex has a neighbor and z has none, hence w is adjacent to both R and S. Choose endpoint attachments certifying those incidences. Attaching w to R gives an exact two-cover (R+w)|S of H-z, while attaching w to S gives R|(S+w). Adjoining the singleton {z} gives two spanning three-covers of H differing by one legal pairwise repartition on R union S union {w}. Apply singleton_transfer_endpointization01 to the transferred label w and unchanged third component {z}. Opposite endpoint realizations produce a displayed component-end reversal. Otherwise that theorem leaves universal internality on one augmented support or coherent same-end alignment. Universal internality is impossible because w is explicitly attachable to both residual paths, so in the no-reversal branch every endpoint realization of w is initial on both augmented supports or terminal on both.
+
+                • [blocked_extender_coherent_sameend_escape01] A blocked extender opposite a coherent mobile extender reduces to a five-window, doubled barrier, or six-window package
+                    STATEMENT
+                    Let H be a minimum counterexample and let R=(r_1,...,r_m), S=(s_1,...,s_l), with m,l>=2, be an exact two-cover of H-{z,w}. Suppose z cannot be attached to either end of either R or S, while w initial-extends both R and S. Then at least one of the following occurs: (1) H has a proper Hamiltonian five-set with non-Hamiltonian path-cover-two complement; (2) both (w,s_1,r_1) and (w,r_1,s_1) are tight, giving a doubled reverse-end barrier; (3) two labels reverse the same terminal edge of the two-path (w,z), and the resulting pair of reversal triples forces two Hamiltonian five-sets with a common four-core and hence the six-window transport package of 1000476. The terminal-extension version is symmetric.
+                    BODY / PROOF
+                    Because (w,R)|S is an exact two-cover of H-z, the omitted vertex z cannot prepend to the displayed path (w,R); otherwise (z,w,R)|S would be a spanning two-cover of H. Thus (z,w,r_1) is non-tight, and boundary antisymmetry gives (r_1,w,z) tight. Similarly (s_1,w,z) is tight. Hence r_1 and s_1 are two same-end initial extenders of the two-vertex path Q=(w,z). If some vertex c outside {w,z,r_1,s_1} terminal-extends Q, so (w,z,c) is tight, apply 1000386 to Q with the two initial extenders r_1,s_1 and the terminal extender c. It yields either a Hamiltonian path on the five-set {w,z,r_1,s_1,c}, which is proper and therefore has a non-Hamiltonian path-cover-two complement, or the doubled reverse triples (w,s_1,r_1) and (w,r_1,s_1). This gives (1) or (2). Assume instead that no such c terminal-extends Q. Then for every c outside {w,z,r_1,s_1}, (w,z,c) is non-tight and hence (c,z,w) is tight. Since a minimum counterexample has order greater than ten, choose distinct c,d outside {w,z,r_1,s_1}. The triples T_c=(c,z,w) and T_d=(d,z,w) are genuine terminal reversals of the same displayed edge. Apply reversal_dense_fivefamily01 to each. On the common outside vertex set, the graph of pairs that fail to Hamiltonize T_c is triangle-free, and the analogous bad graph for T_d is triangle-free. If no pair Hamiltonized both reversal triples, the complete graph on any six common outside vertices could be two-colored by assigning every pair to one of the two bad graphs, with neither color containing a triangle. The elementary K_6 triangle argument rules this out. Hence some pair a,b Hamiltonizes both five-sets {c,z,w,a,b} and {d,z,w,a,b}. These share the four-core {z,w,a,b}, so 1000476 gives the stated six-window transport package. The case where w terminal-extends both R and S is obtained by reversing the end roles throughout.
+
+              • [unique_small_four_endpoint_reversal01] The witness-free unique-small equitable residue forces four synchronized endpoint reversals
+                  STATEMENT
+                  Let H be a minimum counterexample and let K be a trapped pairwise-repartition component at minimum quadratic potential in which every three-cover has path-order multiset {r+1,r+1,r}, r>=3. Assume none of the canonical terminal-frontier witnesses excluded in unique_small_transport_recomp02 occurs. Then there are distinct vertices x,y and an exact two-cover T=R|S of H-{x,y} such that, after possibly reversing the global displayed orientation, either one extender z in {x,y} reverses both endpoint edges of both R and S, or one residual component U in {R,S} has both endpoint edges reversed through both x and y. In all four instances the reversed endpoint edge is cross-core relative to the three order-r displayed cores.
+                  BODY / PROOF
+                  The witness-free unique-small theorem unique_small_transport_recomp02 provides three disjoint order-r core paths A,B,C and distinct exterior vertices x,y which both extend the same end of every core. Reverse the global displayed orientation if necessary so that both are initial extenders.
+                  
+                  By minimum-counterexample minimality, H-{x,y} has path-cover number at most two. It cannot be Hamiltonian, since a Hamilton path on H-{x,y} together with the two-vertex path (x,y) would two-cover H. Hence choose an exact two-cover T=R|S. The witness-free hypothesis excludes relative-order disagreement between T and the displayed cores.
+                  
+                  Apply same_end_extenders_four_endpoint_reversal01. Its first Hall alternative gives one extender z which is unattached at either end of either residual component, and hence four reverse cross-core endpoint triples through z. Its second alternative gives one residual component U to which neither x nor y attaches at either end, and hence four reverse cross-core endpoint triples, through both extenders at both ends of U. This proves the stated normal form.
+
+            • [unique_small_double_reversal01] The witness-free unique-small equitable residue forces synchronized double endpoint reversal
+                STATEMENT
+                Let H be a minimum counterexample and let K be a trapped pairwise-repartition component at minimum quadratic potential in which every three-cover has path-order multiset {r+1,r+1,r}, r>=3. Assume none of the canonical terminal-frontier witnesses excluded in unique_small_transport_recomp02 occurs. Then there are distinct vertices x,y and a two-cover T=R|S of H-{x,y} such that, after possibly reversing the global displayed orientation, either one of x,y reverses the initial edge of both R and S, or one of R,S has an initial edge whose boundary reversal is tight through both x and y. Thus the witness-free unique-small equitable residue forces a synchronized double endpoint-reversal obstruction.
+                BODY / PROOF
+                By unique_small_transport_recomp02, the witness-free unique-small branch yields disjoint tight core paths A,B,C of order r and distinct exterior vertices x,y such that x and y both initial-extend each of A,B,C, after globally reversing the displayed orientations if necessary.
+                
+                Because H is a minimum counterexample, the proper induced subtournament H-{x,y} has path-cover number at most two. It is not Hamiltonian: otherwise a Hamilton path on H-{x,y}, together with the two-vertex tight path (x,y), would two-cover H. Hence choose an exact two-cover T=R|S of H-{x,y}.
+                
+                The witness-free hypotheses exclude relative-order disagreement with the displayed cores. Apply same_end_extenders_double_reversal01 to A,B,C,x,y and T. Its Hall obstruction gives exactly one of the following: one extender z in {x,y} cannot be prepended to either R or S, so both residual initial edges are cross-core and their boundary reversals through z are tight; or one residual component U in {R,S} cannot be prepended by either extender, so its cross-core initial edge has tight boundary reversals through both x and y.
+                
+                This yields the asserted synchronized double endpoint reversal. In particular the older four-way crossing taxonomy from unique_small_transport_recomp02 is not needed as the terminal description of the witness-free unique-small branch.
+
+          • [unique_small_endpoint_reversal01] The witness-free unique-small quadratic residue enters endpoint reversal
+              STATEMENT
+              Let H be a minimum counterexample and let K be a trapped pairwise-repartition component at minimum quadratic potential in which every three-cover has path-order multiset {r+1,r+1,r}, r>=3. Assume none of the canonical terminal-frontier witnesses listed in unique_small_transport_recomp02 occurs. Then H contains a tight path R=(u,v,...) and a vertex z outside R such that (v,u,z) is tight. Thus the unique-small neutral residue contains a literal initial-edge reversal and enters the certified endpoint-reversal machinery directly.
+              BODY / PROOF
+              By unique_small_transport_recomp02, the witness-free hypotheses yield disjoint tight paths A,B,C of order r and distinct vertices x,y outside them such that x and y both extend the same endpoint of all three cores. Reverse the global notation if needed and assume they both initial-extend A,B,C.
+              
+              Because H is a minimum counterexample, the proper induced subtournament H-{x,y} has path-cover number at most two. If it were Hamiltonian, a Hamilton path on H-{x,y} together with the two-vertex path (x,y) would be a spanning two-cover of H, impossible. Hence choose a two-cover T of H-{x,y}; it has two nonempty components.
+              
+              Apply same_end_extenders_initial_reversal01 to A,B,C,x,y and T. That theorem gives either order disagreement between T and one displayed core, or a component R=(u,v,...) of T whose first two vertices lie in different cores and a label z in {x,y} for which (v,u,z) is tight.
+              
+              The first alternative is excluded by the witness-free hypothesis of unique_small_transport_recomp02. Therefore the second alternative holds. Since R is a tight path and z is outside R, the tight triple (v,u,z) reverses the displayed initial edge (u,v) of R in the literal sense used by the endpoint-reversal classification. No crossing-count case analysis is required.
+              
+              Consequently the former unique-small four-way comparison-cover residue can be replaced, for theorem-facing purposes, by direct entry into endpoint_reversal_obstruction_recomp01 and its descendants. This does not by itself close the grand theorem: the endpoint-reversal chain can still return bounded order disagreement or other canonical local disturbances. It does, however, eliminate crossing multiplicity, inherited-core separation, and leave-and-return as necessary terminal descriptions of this particular neutral branch.
+
+        • [unique_small_bounded_endgame01] The unique-small quadratic plateau reduces to a positioned endpoint reversal or doubled reverse barrier
+            STATEMENT
+            Let H be a minimum counterexample and let K be a trapped pairwise-repartition component at minimum quadratic potential in which every three-cover has path-order multiset {r+1,r+1,r}, r>=3. Assume the canonical terminal-frontier outputs excluded in unique_small_transport_recomp02 have not already been accepted as the route output. Then the residual same-end neutral-transfer branch can be sharpened as follows: either it produces a positioned component-end reversal, or it produces a doubled reverse-end barrier. More precisely, the common-reversed-edge Hall branch produces two Hamiltonian five-sets with a common four-core and hence the complete square/overlap/matching-block six-shell normal form; in the complementary Hall branch there are two exact covers of one deletion differing by one transferred label, and endpointization gives a component-end reversal unless the moving label is coherently same-end on both residual paths; that coherent subcase yields a Hamiltonian five-window, the same common-core six-shell normal form, or a doubled reverse-end barrier. Thus, after exporting the already-standard Hamiltonian-window/six-shell outputs, the only new bounded residues of the unique-small plateau are endpoint reversal and doubled reverse barrier.
+            BODY / PROOF
+            Use unique_small_transport_recomp02 to obtain the universal same-end extender configuration and choose an exact residual two-cover with no relative-order disagreement in the residual branch under consideration. Apply same_end_extenders_hall_completion01. If one residual component is unattached by both extenders, the two extenders reverse one common displayed endpoint edge; shared_edge_double_reversal_sixpackage01 produces two Hamiltonian five-sets sharing a four-core, and commoncore_fivepair_sixshell_normal01 refines their union into the complete full-square / adjacent-overlap / oriented-matching-block six-shell menu. Otherwise Hall gives one blocked extender z and one mobile extender w attachable to both residual paths. The two resulting exact covers of H-z differ by moving w between those paths. singleton_transfer_endpointization01 gives a displayed component-end reversal unless the endpoint realizations of w are coherently same-end on both supports. In the coherent case apply blocked_extender_coherent_sameend_escape01. Its first outcome is a Hamiltonian five-window; its third outcome again gives two common-four-core Hamiltonian five-sets and therefore the six-shell normal form; its only remaining outcome is a doubled reverse-end barrier. These alternatives exhaust the residual same-end branch. The theorem deliberately does not claim that the doubled barrier itself is consumed: certified barrier-propagation results show it is a real endpoint-transport frontier, and generic local absorption is not presently established.
+
   • [1000112] The grand theorem reduces to no trapping of deletion-generated three-side states
       STATEMENT
       Let H be a minimum counterexample. For every exact deletion two-cover H-x=P|Q, with p=|P|>=q=|Q|, the trapped pairwise-repartition component containing the singleton lift P|Q|{x} also contains a spanning three-cover P^-|C|Q^+ whose component orders are {p-1,q-1,3}, where C is supported on x and the two facing endpoints of P,Q. The singleton lift reaches this state in two strict quadratic-potential descents. Consequently the grand two-cover conjecture follows from the order-independent statement that no deletion-generated three-side state of this form can lie in a trapped pairwise-repartition component. For |V(H)|>=14, every such state itself admits a further strict one-move quadratic descent.
@@ -7533,11 +8811,11 @@
               
               These cases prove the stated trichotomy.
 
-          • [recomp_fourwindow_square_01] A Hamiltonian four-set yields descent, order disagreement, an internal-label edge crossing, or a coherent endpoint square
+          • [recomp_fourwindow_square_01] A Hamiltonian four-set yields descent, disagreement, permanent internality, or a coherent endpoint square
               STATEMENT
-              Let H be a minimum counterexample of order n>=15 and let W be a Hamiltonian four-set such that H-W is non-Hamiltonian with path-cover number two. Then at least one of the following holds: (1) a legal pairwise repartition gives strict quadratic-potential descent; (2) order disagreement occurs; (3) there are distinct labels a,b, a Hamiltonian three-set D, and K=H-(D union {a,b}) such that K,K+a,K+b,K+a+b are non-Hamiltonian with path-cover number two, and for one x in {a,b} deleting x from a displayed two-cover of K+a+b yields three displayed path pieces of K+({a,b}-{x}) for which every two-cover contains an ordinary path edge joining two distinct pieces; (4) there are a Hamiltonian three-set D, distinct labels a,b, K=H-(D union {a,b}), and a displayed two-cover F of K+a+b such that D+a,D+b,D+a+b are Hamiltonian, K,K+a,K+b,K+a+b are non-Hamiltonian with path-cover number two, a,b are displayed endpoints of F, and F,F-a,F-b,F-{a,b} are two-covers of the corresponding four states. Moreover, in outcome (4), if C_a=(D+a)|(F-a) is Phi-minimal in its connected pairwise-repartition component, then either order disagreement occurs or C_a has component-order multiset {4,5,n-9}.
+              Let H be a minimum counterexample of order n>=15 and let W be a Hamiltonian four-set such that H-W is non-Hamiltonian with path-cover number two. Then at least one of the following holds: (1) a legal pairwise repartition gives strict quadratic-potential descent; (2) support or order disagreement occurs among two-covers arising in the construction; (3) there are a Hamiltonian three-set D, distinct labels a,b, and K=H-(D union {a,b}) such that K,K+a,K+b,K+a+b are non-Hamiltonian with path-cover number two, and one of a,b is internal in every two-cover of K+a+b; (4) there are such D,a,b,K and a two-cover F of K+a+b in which both a,b are displayed endpoints, so F,F-a,F-b,F-{a,b} form a coherent endpoint square. In outcome (4), if C_a=(D+a)|(F-a) is Phi-minimal in its connected pairwise-repartition component, then either order disagreement occurs or C_a has component-order multiset {4,5,n-9}.
               BODY / PROOF
-              Apply e029c36208a7 to W. Its first two outcomes give strict descent or order disagreement. Otherwise it supplies another Hamiltonian four-set with non-Hamiltonian path-cover-two complement meeting W in two or three vertices. If the intersection has order three, the two four-sets themselves have the form D+a and D+b for a common three-set D. If their intersection has order two, apply sharedendpointmigration_recomp01 to the associated shared-endpoint Hamiltonian five-set: either it supplies a distance-one successor, or two distance-two successors meeting each other in three vertices. Thus, unless descent or order disagreement has already occurred, there are distinct labels a,b and a three-set D such that W_a=D+a and W_b=D+b are Hamiltonian, both complements are non-Hamiltonian with path-cover number two, and S=D+a+b is their five-vertex union. If S were non-Hamiltonian, the five-set deletion theorem in smallset01 gives at least four Hamiltonian four-subsets of S, and astra004fourgooddisagree forces order disagreement. Hence in the no-disagreement branch S is Hamiltonian. Put K=H-S. Since S,W_a,W_b,D are proper Hamiltonian sets, minimum-counterexample calculus implies K,K+a,K+b,K+a+b are all non-Hamiltonian with path-cover number two. Choose a displayed two-cover F of K+a+b. If a or b is internal in its F-component, deleting that label gives a displayed three-path cover of the corresponding lower state; by the component-drop principle in coversurg01, every two-cover of that lower state has an ordinary path edge joining two distinct displayed pieces, giving outcome (3). Otherwise a and b are displayed endpoints, and deleting a, b, or both from F gives two-covers of all four lower states, giving the coherent endpoint square in outcome (4). For the final refinement suppose C_a=(D+a)|(F-a) is Phi-minimal in its connected pairwise-repartition component. Let p,q be the orders of the two components of F. If a,b lie in different components, the square comparisons give Phi(C_empty)-Phi(C_a)=2p-8 and Phi(C_ab)-Phi(C_a)=10-2q, so p>=4 and q<=5. By d1e3453f5ffe, q>=4 at n>=15. If q=4, C_a has a four-side beside a path of order at least seven, so a25b748fb338 gives descent or order disagreement; minimality excludes descent. Thus without order disagreement q=5 and C_a has profile {4,5,n-9}. If a,b lie in the same F-component of order p, the comparisons give 2p-8 and 12-2p, hence 4<=p<=6. The case p=4 gives a three-side in C_a, excluded by d1e3453f5ffe at n>=15; p=5 leaves a four-side beside a path of order at least seven and is excluded without order disagreement by a25b748fb338. Hence p=6 and again C_a has profile {4,5,n-9}.
+              Apply e029c36208a7 to W. Its first two outcomes give strict descent or order disagreement. Otherwise, after the shared-endpoint migration step exactly as in the previous proof, obtain distinct labels a,b and a Hamiltonian three-set D such that D+a,D+b,D+a+b are Hamiltonian and, with K=H-(D union {a,b}), all four states K,K+a,K+b,K+a+b are non-Hamiltonian with path-cover number two. Instead of choosing one arbitrary two-cover of the top state and stopping at a component-drop crossing, apply the certified top-state normalization square_topcover_normal01 to the entire family of two-covers of K+a+b. It gives: a coherent endpoint cover with both a,b displayed as endpoints; one of a,b internal in every top-state two-cover; two top-state covers with different support partitions; or two Hamilton paths on one common component support whose orders disagree. The latter two are support/order disagreement, while the first is the coherent endpoint square and the second is the permanent-internal obstruction. This strictly sharpens the former internal-label edge-crossing alternative. In the coherent endpoint-square branch, the previous potential calculation is unchanged. Let p,q be the orders of the two components of F. If a,b lie in different components, comparison with the lower square states gives Phi(C_empty)-Phi(C_a)=2p-8 and Phi(C_ab)-Phi(C_a)=10-2q, so p>=4 and q<=5. The certified lower bound on pairwise-component minima gives q>=4 at n>=15; q=4 would place a four-side beside a path of order at least seven and force descent or order disagreement, so q=5. If a,b lie in the same F-component of order p, the comparisons give 4<=p<=6; p=4 creates a forbidden three-side and p=5 again creates a four-side beside a long path, so p=6. Thus without order disagreement the coherent square has profile {4,5,n-9}.
 
             • [1000123] A Phi-minimal 4|5|m three-cover has an endpoint exchange or two noninsertable small-side vertices
                 STATEMENT
@@ -8859,6 +10137,12 @@
           
           Thus two minimal direct endpoint crossings do not leave an arbitrary mixed-support configuration: they produce explicit order disagreement, or a four-base compatible deletion triangle, with the transitive case rigidly centered. ∎
 
+      • [1000934] Two endpoint-incompatible probes force a direct mixed edge or order disagreement
+          STATEMENT
+          Let H be a boundary 3-tournament with pc(H)>2. Let F_x=P|Q be a deletion two-cover of H-x, with Q=(q_0,...,q_s). Choose deletion two-covers G_0 of H-q_0 and G_s of H-q_s. If both G_0 and G_s are support-incompatible with F_x on their respective common vertex sets, then either one of G_0,G_s contains an ordinary path edge joining a vertex of P to a surviving vertex of Q, or tight Hamilton paths occurring in this configuration exhibit relative-order disagreement.
+          BODY / PROOF
+          Put X=V(P) union {x}. Since P|Q covers H-x and pc(H)>2, H[X] is non-Hamiltonian; also Q+x is non-Hamiltonian, since otherwise P together with a Hamilton path on Q+x would two-cover H. Fix y in {q_0,q_s}, put B=V(Q)-{y}, and inspect G_y relative to the three classes P|B|{x}. Support-incompatibility with F_x implies at least one ordinary path edge joins different classes. There cannot be exactly one such edge. Cutting one cross-class edge from a two-path forest would give exactly three monochromatic blocks, forcing one of the support partitions P union B | {x}, X | B, or P | B union {x}. The first would give a two-cover of H using the two-vertex path (x,y), the second would Hamiltonize X, and the third would make G_y support-compatible with F_x. Hence G_y has at least two cross-class edges. If it has at least three, at most two can be incident with the singleton x, so one directly joins P to B and we are done. Suppose it has exactly two and no direct P-B edge. Then both cross edges are incident with x. Cutting them yields four monochromatic blocks, so exactly one of P,B is split. If B splits, x cannot be joined to the intact P-block, since that would Hamiltonize X; therefore x joins the two B-blocks and B+x is Hamiltonian. If P splits, x cannot join both P-blocks for the same reason, so it joins the intact B-block and one P-block; again B+x is Hamiltonian. Thus, if neither endpoint cover has a direct P-B edge, both (Q-q_0)+x and (Q-q_s)+x are Hamiltonian while Q+x is non-Hamiltonian. The certified two-sided endpoint-replacement calculus insert01 then forces relative-order disagreement among the inherited Q-order and the two replacement Hamilton paths.
+
       • [direct_mixed_edge_recomp01] A direct mixed edge reduces immediately to disturbance, reversal, descent, or an omission swap
           STATEMENT
           Let H be a minimum counterexample, let H-y=R|Q be any deletion two-cover with R=(r_0,...,r_m), m>=2, and let z be a displayed endpoint of R. Put A=V(R)-{z}, and let T be a two-cover of H-z. Suppose T contains an ordinary edge joining A to V(Q), and every T-component contains its surviving R-vertices in their inherited relative order. Then at least one of the following holds: an inherited edge of R-z has endpoints in two different path supports of T; one T-component leaves R-z through a nonempty exterior segment and later returns; a tight triple reverses the displayed endpoint edge of R incident with z; H has a two-cover; T|{z} admits a strict quadratic-potential descent; or the comparison is a fully compatible neutral omission swap. No minimum-side assumption on R is required.
@@ -8961,13 +10245,13 @@
           
           For each S in {N_P,N_Q}, every pair of labels in S is support-compatible. The full-compatibility graph induced by S is triangle-free. Hence S contains at least floor((|S|-1)^2/4) support-compatible but order-incompatible pairs. Moreover every such order disagreement is centered at x: the two covers agree on the relative order of every common pair not involving x, so some common vertex t is ordered on opposite sides of x in the two path orders.
           
-          Consequently the anchor x satisfies the quantitative tradeoff
-          number of support-incompatible covers relative to F_x = m-1-p-q,
+          Let s_x be the number of covers F_y that are support-incompatible with F_x, and let o_x be the number that are support-compatible but order-incompatible with F_x. Then
+          s_x+o_x=m-1-p-q,
           while the two compatible side-classes contain at least
           floor((p-1)^2/4)+floor((q-1)^2/4)
           anchor-centered order-incompatible pairs.
           
-          In particular, for every prescribed anchor x, either at least m-5 other covers are support-incompatible with F_x and therefore have the fixed-cut crossing witness of 1000922, or there exist two covers, both fully compatible with F_x and assigned to the same anchor side, that are support-compatible but order-incompatible with disagreement necessarily involving x.
+          In particular, for every prescribed anchor x, either p+q<=4, in which case at least m-5 other covers are incompatible with F_x and each gives either the fixed-cut support-crossing witness of 1000922 or a direct order disagreement with F_x; or p+q>=5, in which case there exist two covers, both fully compatible with F_x and assigned to the same anchor side, that are support-compatible but order-incompatible with disagreement necessarily involving x.
           BODY / PROOF
           Fix x and write F_x=P|Q. Let y be fully compatible with x. By the compatible-pair localization in 1000694, when F_x and F_y are compared on H-{x,y}, the omitted vertices x and y restore into the same common support class; restoring them into different classes would give a spanning two-cover of H. Thus each neighbor y of x is assigned canonically to the P-side or Q-side. Let these classes be N_P and N_Q.
           
@@ -8981,7 +10265,9 @@
           
           These disagreements are positioned at x. Take y,z in N_P that are support-compatible but order-incompatible. On Q, both covers agree in relative order with F_x, because Q survives both pairwise comparisons with the anchor. On the common vertices P-{y,z}, both covers also agree in relative order with F_x: full compatibility of F_y with F_x fixes every pair not involving x or y, and full compatibility of F_z with F_x fixes every pair not involving x or z. Hence F_y and F_z agree on every common pair not involving x. Since they are order-incompatible, some common vertex t must therefore satisfy opposite relative orders with x in the two anchor-side path orders. Equivalently, the two neighboring covers place x at different insertion cuts of the inherited anchor-side order. The same reasoning applies inside N_Q.
           
-          Finally, x has exactly m-1-p-q nonneighbors in the full-compatibility graph. A nonneighbor is either support-incompatible or support-compatible but order-incompatible. But if p+q<=4, then x has at least m-5 nonneighbors; any nonneighbor that is support-incompatible has the fixed-cut crossing witness of 1000922, while any support-compatible nonneighbor already gives order disagreement. If p+q>=5, one of p,q is at least three, and the preceding triangle-free argument gives an anchor-centered support-compatible order-incompatible pair among neighbors of x. Thus for every prescribed anchor, either at least m-5 support-incompatible crossing covers occur, or an anchor-centered order-disagreement pair occurs among covers individually fully compatible with the anchor. The quantitative count above records both phenomena simultaneously.
+          Finally, let s_x be the number of nonneighbors y of x for which F_y is support-incompatible with F_x, and let o_x be the number for which F_y is support-compatible but order-incompatible with F_x. Since the full-compatibility neighbors of x are exactly N_P union N_Q,
+          s_x+o_x=m-1-p-q.
+          If p+q<=4, then s_x+o_x>=m-5. Every one of these nonneighbors supplies either the fixed-cut support-crossing witness of 1000922 or a direct order disagreement with F_x. If p+q>=5, one of p,q is at least three, and the preceding triangle-free argument gives an anchor-centered support-compatible order-incompatible pair among neighbors of x. This proves the stated dichotomy without identifying all nonneighbors as support-incompatible.
 
       • [compatibility_c4free_neartotal_fan01] Deletion-cover compatibility is C4-free, forcing a near-total anchored crossing fan
           STATEMENT
@@ -9034,6 +10320,12 @@
               
               This does not by itself close the grand theorem; the next consumer must exploit successive cut changes along such a chain, for example by tracking how support classes transform from one deletion state to the next and forcing endpoint reuse, a parity obstruction, or defect compression.
 
+          • [1000932] Any bounded anchor set yields a common incompatibility reservoir or a centered order defect
+              STATEMENT
+              Let H have path-cover number greater than 2, let D be a set of m>=4 deletion labels with one chosen deletion cover F_d of H-d for each d in D, and let C be the full-compatibility graph. For any T subseteq D of size t, either some anchor x in T has two covers F_y,F_z that are each fully compatible with F_x, lie on the same anchor side, and are support-compatible but order-incompatible with disagreement centered at x; or at least m-5t labels u in D\T are nonadjacent in C to every x in T. Hence, unless an anchor-centered order defect already occurs, there is a common reservoir of at least m-5t covers simultaneously incompatible with all prescribed anchors. For each such anchor-cover pair, incompatibility is either support incompatibility, giving the fixed-cut witness of 1000922, or support-compatible order disagreement.
+              BODY / PROOF
+              Fix T. For each x in T apply 1000927. If its centered-order-defect branch occurs, we obtain the first alternative. Otherwise x is in the branch where its full-compatibility degree is at most four. If this happens for every x in T, then any label u outside T that is not simultaneously incompatible with all anchors must lie in N_C(x) for some x in T. Thus every excluded label lies in T union Union_{x in T} N_C(x), of size at most t+4t=5t, leaving at least m-5t common nonneighbors. For each nonedge xu, either the two covers are support-incompatible, in which case the fixed-cut argument of 1000922 supplies the concrete crossing witness relative to F_x, or they are support-compatible but order-incompatible. No global absence-of-order-disagreement hypothesis is required. As a special clean-branch corollary, if support-compatible order-incompatible pairs are absent throughout the family, the compatibility graph has maximum degree at most four; hence every induced subfamily S contains a pairwise support-incompatible family of size at least ceil(|S|/5).
+
           • [compatibility_triangle_endpoint_transport01] Compatibility triangles force endpoint transport or order reversal
               STATEMENT
               Let H have path-cover number greater than 2, and let D be deletion labels with chosen two-covers. Assume the branch contains no support-compatible but order-incompatible pair. Fix an anchor F_x=P|Q. If two compatible neighbors y,z of x lie on the same anchor side, say P, then x,y,z form a synchronized family F_t=(X-t)|Q with X=P union {x}. Applying the endpoint-synchronization lemma to the two endpoint deletions of Q yields a common t in {x,y,z} such that both endpoint covers are incompatible with F_t and each has at least two cross-class ordinary edges across (X-t)|(Q-q)|{t}. Moreover, unless an order-reversal/disagreement gadget appears, one of these endpoint covers contains a direct ordinary edge joining X-t to Q-q. Consequently, in the residual branch with neither endpoint transport nor order reversal, every anchor has at most one compatible neighbor on each side, hence total compatibility degree at most 2, at least m-3 support-incompatible crossing covers, and at least one incompatible endpoint deletion on each anchor path.
@@ -9048,19 +10340,74 @@
               
               Now exclude both of those useful exits. Then no anchor can have two compatible neighbors on the same side. Therefore each side contributes at most one compatible neighbor and deg_C(x)<=2 for every x. Hence every anchor has at least m-3 support-incompatible covers, so 1000922 supplies at least m-3 crossing witnesses relative to that prescribed anchor. Also, among the two endpoint labels of P, at least one must be incompatible with x: if both were compatible they would form a same-side triangle with x. The same holds for the two endpoints of Q. Thus the residual obstruction has endpoint-local incompatible deletion covers on both anchor components.
 
-            • [compatibility_pathcycle_skeleton01] Residual compatibility is a locally alternating path-cycle skeleton
+            • [1000941] Residual compatibility is a path forest or one balanced spanning odd cycle
                 STATEMENT
-                Work in the residual branch where there is no support-compatible/order-incompatible pair, no endpoint-transport edge produced by a same-side compatibility triangle, and no order-reversal/disagreement output from that triangle mechanism. Then the full-compatibility graph C on the deletion labels is triangle-free with maximum degree at most 2. More precisely, for every anchor F_x=P|Q, any two compatible neighbors that lie on opposite anchor sides are support-incompatible with each other, while two same-side compatible neighbors would trigger the excluded triangle mechanism. Hence every degree-two anchor has exactly one compatible neighbor on each side. Therefore every component of C is a path or a cycle of length at least 4. If some component is a path, an endpoint anchor has at least m-2 support-incompatible covers; otherwise C is a union of cycles and every anchor has exactly m-3 support-incompatible covers. In all cases e(C)<=m, there are at least binom(m,2)-m support-incompatible pairs, and C has an independent set of size at least ceil(2m/5), yielding a pairwise support-incompatible deletion-cover subfamily of that size.
+                Let H have pc(H)>2 and let C be the full-compatibility graph on m chosen deletion covers. Work in the residual branch with no support-compatible/order-incompatible pair and with the endpoint-transport/order-reversal outputs of compatibility_triangle_endpoint_transport01 excluded. Then every compatible neighborhood is independent and Delta(C)<=2, with the two neighbors of any degree-two anchor lying on opposite support sides. Moreover every cycle component is necessarily the unique component of C, spans all m labels, and has odd length. Hence C is either a forest of paths or C=C_{2k+1}. In the path-forest case alpha(C)>=ceil(m/2); in the cycle case alpha(C)=k=floor(m/2), so always alpha(C)>=floor(m/2), yielding that many pairwise support-incompatible chosen covers. In the cycle case there are alternating k-sets Y_i such that F_{v_i}=Y_{i-1}|Y_i for cyclic labels v_i, every deletion cover is balanced, and both Y_{i-1}+v_i and Y_i+v_i are non-Hamiltonian.
                 BODY / PROOF
-                Fix an anchor x with F_x=P|Q. By compatibility_triangle_endpoint_transport01, in the residual branch x cannot have two compatible neighbors lying on the same anchor side: such a same-side pair would create the synchronized compatibility triangle that yields either an endpoint-transport edge or an order-reversal/disagreement output, both excluded here.
-                
-                Now suppose y and z are compatible neighbors of x lying on opposite anchor sides. Compare F_y and F_z on the common vertex set V(H)-{y,z}. Compatibility of F_x with F_y identifies the support class containing x with the anchor side from which y was restored; compatibility of F_x with F_z does the same using the opposite anchor side. Thus in the restrictions of F_y and F_z, the vertex x lies in opposite support classes. Their support partitions therefore differ, so F_y and F_z are support-incompatible. In particular yz is not an edge of the full-compatibility graph. Hence every neighborhood in C is independent, and C is triangle-free.
-                
-                The previous endpoint-transport lemma already gives degree at most 2 in this residual branch. Combining this with neighborhood independence shows that every degree-two anchor has one compatible neighbor on each anchor side. Therefore every connected component of C is a path or a cycle, and triangle-freeness rules out 3-cycles, so all cycle components have length at least 4.
-                
-                If C has a path component, choose an endpoint x of that component. Then deg_C(x)<=1, so x has at least m-2 nonneighbors. Under the standing no-order-disagreement hypothesis, every nonneighbor is support-incompatible, and 1000922 supplies the corresponding crossing witnesses. If every component is a cycle, every vertex has degree 2, so every anchor has exactly m-3 support-incompatible covers.
-                
-                Since Delta(C)<=2, e(C)<=m, so at least binom(m,2)-m pairs are support-incompatible. Finally, the independence number is additive over components. A path on r vertices has independence number ceil(r/2), while a cycle on r>=4 vertices has independence number floor(r/2), whose minimum ratio over r>=4 is 2/5 at r=5. Summing componentwise gives alpha(C)>=ceil(2m/5). An independent set is exactly a pairwise non-compatible family; under the standing hypothesis every such pair is support-incompatible. Thus there is a pairwise support-incompatible deletion-cover subfamily of size at least ceil(2m/5).
+                Fix an anchor F_x=P|Q. The excluded triangle mechanism implies that x cannot have two compatible neighbors on the same anchor side. If y,z are compatible neighbors on opposite sides, then their restrictions place x in opposite support classes, so F_y and F_z are support-incompatible; hence yz is not a compatibility edge. Thus each neighborhood is independent. The endpoint-transport theorem already gives degree at most two in this residual branch, so every component is a path or a cycle and each degree-two anchor has one neighbor on each side. For each compatibility edge xy, lift the common support partition to an unordered bipartition K_xy of the full label set by restoring x,y to their common side. Along a length-two path a-x-b, the opposite-side condition means the successive lifted cuts differ exactly by toggling x. Around a cycle v_1,...,v_r, successive cuts therefore differ by toggling v_i. Closing the cycle says toggling S={v_1,...,v_r} preserves a nontrivial unordered bipartition, which forces S to be the entire label set; hence every cycle component is spanning and no other component exists. Tracking one orientation of the lifted cut around the cycle shows the colors alternate and closure is possible exactly when r is odd. Thus C is a path forest or one spanning odd cycle. The independence-number bounds are then immediate componentwise: paths contribute ceil(r/2) and the odd cycle C_{2k+1} contributes k. Under the no-order-disagreement hypothesis every nonedge is support incompatibility. Finally, in the spanning cycle case the lifted cut opposite each compatibility edge is an alternating maximum independent k-set Y_i. Consecutive lifted cuts differ by toggling v_i, so deleting v_i makes their k-sides exactly Y_{i-1},Y_i and F_{v_i}=Y_{i-1}|Y_i. If either Y_{i-1}+v_i or Y_i+v_i were Hamiltonian, together with the other k-path from F_{v_i} it would give a spanning two-cover, impossible.
+
+              • [1000944] Balanced odd-cycle order incoherence localizes to an odd-gap triangle or a disjoint-edge C4
+                  STATEMENT
+                  Assume the exceptional spanning odd-cycle support configuration on n=2k+1 labels, n>5, with balanced Hamiltonian supports S_i and fully compatible consecutive selected covers. The Hamilton orders induce a well-defined orientation of every nonedge of the ground cycle C_n, transitive on each S_i. Then either this orientation is acyclic, hence all S_i orders are restrictions of one global linear order, or a shortest directed cycle is one of two types: (a) a directed triangle on an independent triple whose three cyclic gaps in C_n are all odd; or (b) a directed C4 whose four vertices are the endpoints of two disjoint ground-cycle edges. In particular, after excluding odd-gap directed triangles, the earlier global-order-versus-disjoint-edge-C4 dichotomy is valid.
+                  BODY / PROOF
+                  For every nonedge uv of C_n, the balanced supports containing u,v form a connected interval in the step-two cyclic ordering, and consecutive such supports have agreeing Hamilton orders on their overlap. Thus the relative order of u,v is well-defined. Each S_i is a maximum independent set and its induced orientation is its Hamilton order, hence transitive. If the orientation is acyclic, any topological ordering restricts to the given order on every S_i. Otherwise choose a shortest directed cycle. If it has length three, its vertices form an independent triple X={x_1,x_2,x_3}. Write delta_1,delta_2,delta_3>=2 for their cyclic distances in C_n. An independent triple X extends to a maximum independent k-set precisely when exactly one delta_j is odd. Indeed, between consecutive chosen vertices at distance delta one can add floor((delta-2)/2) vertices, so the largest independent set containing X has size 3+sum_j floor((delta_j-2)/2)=k+(1-r)/2, where r is the number of odd delta_j. Since delta_1+delta_2+delta_3=2k+1, r is 1 or 3. If r=1, X lies in some S_i, contradicting transitivity there. Hence every directed triangle obstruction has all three gaps odd. Now suppose the shortest directed cycle has length at least four. Any chord of its underlying cycle would, whichever way it is oriented, create a shorter directed cycle, so the underlying cycle is induced in the complement of C_n. For length at least six this is impossible because the complement of such a chordless r-cycle would force an induced subgraph of C_n of degree r-3>=3, whereas every induced subgraph of a cycle has maximum degree two. An induced C5 in the complement would mean the same five vertices induce C5 in C_n, impossible for n>5. Thus the length is four. A four-set induces C4 in the complement exactly when in C_n it consists of the endpoints of two disjoint edges. This gives the stated classification.
+
+              • [oddcycle_order_coherence_or_c4_obstruction01] Balanced odd-cycle deletion supports admit a global order unless four vertices form an alternating order obstruction
+                  STATEMENT
+                  Assume the exceptional spanning odd-cycle support configuration on n=2k+1 deletion labels, with balanced Hamiltonian supports S_i of order k arranged cyclically. The Hamilton orders on the S_i induce a well-defined orientation of every nonedge of the ground cycle C_n. On each S_i this orientation is transitive. Hence either this orientation is acyclic, in which case one global linear order of V(H) restricts to the Hamilton order on every S_i, or it contains a directed induced cycle. For n>5 every such shortest directed cycle has length four and is supported on the endpoints of two disjoint edges of the ground cycle. Thus the only obstruction to global order coherence is a directed C4 in the complement of C_n.
+                  BODY / PROOF
+                  Assume the exceptional spanning odd-cycle support configuration on n=2k+1 labels. Index the balanced Hamiltonian support sets cyclically as S_i, so consecutive selected deletion covers share one support and the support sets satisfy
+                  S_{i+2}=S_i-{d_{i+1}}+{d_i}
+                  with indices modulo n.
+                  
+                  Because adjacent selected deletion covers are fully compatible in the residual branch, the displayed Hamilton orders on S_i and S_{i+2} agree on the common set S_i intersect S_{i+2}, of order k-1.
+                  
+                  Define the ground cycle C_n on vertices d_0,...,d_{n-1}. Every S_i is an alternating maximum independent set of C_n. For every pair u,v that is a nonedge of C_n, choose any support S_i containing both and orient uv according to their relative order in the Hamilton order of S_i.
+                  
+                  This orientation is well-defined. The supports containing a fixed nonadjacent pair u,v form a connected interval in the step-two cyclic ordering of the supports, and consecutive such supports have Hamilton orders agreeing on their overlap. Therefore the relative order of u,v is independent of the chosen support. On each S_i the induced orientation is exactly its Hamilton order and is therefore transitive.
+                  
+                  Suppose first that the resulting orientation of the complement of C_n is acyclic. Any topological ordering of this orientation restricts to the unique Hamilton order on every S_i, so all selected balanced Hamilton orders are restrictions of one global linear order of V(H). In particular, every three vertices lying in one support appear in the global order as a tight consecutive-or-not-consecutive ordered triple according to that Hamilton order; equivalently all order information on pairs avoiding ground-cycle adjacency is globally coherent.
+                  
+                  Suppose instead that the orientation has a directed cycle, and choose one of minimum length. Any chord of its underlying undirected cycle would, according to one of its two possible orientations, create a shorter directed cycle. Thus the shortest directed cycle is induced in the complement of C_n.
+                  
+                  For n>5, every induced cycle of the complement of C_n has length four. Indeed, if r>=6 vertices induced a chordless r-cycle in the complement, then the induced subgraph of C_n on those r vertices would be the complement of C_r and hence have degree r-3>=3, impossible because every induced subgraph of C_n has maximum degree at most two. An induced 5-cycle in the complement would be self-complementary, so the same five vertices would induce a C5 in C_n; for n>5 this cannot occur because C_n has no proper cyclic component. Hence r=4.
+                  
+                  A four-set induces a C4 in the complement of C_n exactly when, in the ground cycle, it consists of the endpoints of two disjoint cycle edges. Therefore the only obstruction to global order coherence is a directed C4 supported on the endpoints of two disjoint ground-cycle edges.
+
+              • [oddcycle_rank_transport_reversal_density01] Odd-cycle rank transport forces linearly many adjacent-slot reversal gadgets
+                  STATEMENT
+                  In the exceptional spanning odd-cycle compatibility configuration on n=2k+1 labels, traverse the balanced Hamiltonian supports in the step-two order S_0,S_2,S_4,... . For each transition S_i to S_{i+2}, compatible-pair localization says that the outgoing label d_{i+1} and incoming label d_i occupy either the same insertion slot or adjacent insertion slots of the common (k-1)-vertex Hamilton order. Transporting rank tokens through these replacements, a same-slot move induces the identity permutation and an adjacent-slot move induces one adjacent transposition. After one full circuit the total rank permutation is a k-cycle. Consequently at least k-1=(n-3)/2 transitions are adjacent-slot replacements, hence force reversing tight triples. Moreover every adjacent rank boundary 1|2,...,(k-1)|k occurs in at least one such reversal.
+                  BODY / PROOF
+                  Assume the exceptional spanning odd-cycle compatibility configuration on n=2k+1 labels, with balanced Hamiltonian supports S_i of order k and
+                  F_{d_i}=S_{i-1}|S_i
+                  cyclically. The support identity may equivalently be indexed so that
+                  S_{i+2}=S_i-{d_{i+1}}+{d_i}.
+                  
+                  Consider a transition from S_i to S_{i+2}. The corresponding neighboring deletion covers are fully compatible, and the two Hamilton paths have common ordered vertex set
+                  R_i=S_i-{d_{i+1}}=S_{i+2}-{d_i}
+                  of order k-1. By the compatible-pair insertion localization from 1000694, the omitted/restored vertices d_{i+1} and d_i occur in either the same insertion slot of R_i or in adjacent insertion slots. In the adjacent-slot case, if the intervening common vertex is z, the triple with the two replacement vertices reverses: one orientation is non-tight and its boundary flip is tight. Thus every adjacent-slot transition supplies a reversing tight triple.
+                  
+                  Attach k abstract rank tokens to the k positions of the Hamilton order on S_i. Transport them through a transition S_i to S_{i+2} by letting the incoming vertex d_i inherit the token carried by the outgoing vertex d_{i+1}, while every common vertex keeps its token. If the replacement uses the same insertion slot, the induced permutation of rank positions is the identity. If it uses adjacent slots, precisely the token of the replacement vertex crosses the intervening common vertex, so the induced rank permutation is one adjacent transposition s_j for some j in {1,...,k-1}.
+                  
+                  Now traverse all supports in the step-two order
+                  S_0,S_2,S_4,...,
+                  with indices modulo 2k+1. Since gcd(2,2k+1)=1, this visits every S_i exactly once before returning to S_0.
+                  
+                  Track the labels carried by the initial position tokens. Starting from
+                  S_0={d_1,d_3,...,d_{2k-1}},
+                  the replacement rule d_{i+1}->d_i along this full circuit transports the token initially on d_1 to the final position occupied by d_{2k-1}, the token initially on d_3 to the final position occupied by d_1, and successively around the alternating support. Thus the total permutation of the k rank tokens after the circuit is one k-cycle.
+                  
+                  Therefore the product of the adjacent transpositions contributed by the adjacent-slot transitions is a k-cycle. A k-cycle has Coxeter length at least k-1 with respect to adjacent transpositions; equivalently any expression of a k-cycle as a product of adjacent transpositions contains at least k-1 factors. Hence at least k-1=(n-3)/2 transitions are adjacent-slot replacements, and therefore at least that many compatibility transitions supply reversing tight triples.
+                  
+                  There is also a support statement across rank boundaries. If some generator s_j never occurred, then every transition permutation would preserve the initial segment {1,...,j} of rank positions setwise, so their product would preserve this proper nonempty subset. A k-cycle preserves no proper nonempty subset. Hence every generator s_j, j=1,...,k-1, occurs at least once.
+                  
+                  Thus the exceptional odd-cycle configuration contains reversal gadgets spanning every adjacent rank boundary of its balanced Hamilton orders; same-slot replacement alone cannot carry the cyclic monodromy.
+
+                • [1000945] Odd-cycle rank monodromy has a reversal-density parity gap
+                    STATEMENT
+                    In the exceptional spanning odd-cycle compatibility configuration on n=2k+1 labels, let A be the number of step-two support transitions whose replacement labels occupy adjacent insertion slots rather than one common slot. Then A>=k-1 and A is congruent to k-1 modulo 2. Every adjacent rank generator s_j, 1<=j<=k-1, occurs at least once. Consequently either (i) A=k-1, in which case every generator s_j occurs exactly once and there are exactly k+2 same-slot transitions, or (ii) A>=k+1, so adjacent-slot reversals occur on a strict majority of the n transitions. In case (i) the same-slot transition set contains at least three adjacent pairs of ground-cycle transitions; in case (ii) the adjacent-slot transition set contains at least one adjacent pair.
+                    BODY / PROOF
+                    By oddcycle_rank_transport_reversal_density01, transporting rank tokens once around the step-two support circuit gives a k-cycle rho in S_k. A same-slot transition contributes the identity, while each adjacent-slot transition contributes one simple adjacent transposition s_j. Hence rho is expressed as a product of exactly A transpositions. Since a k-cycle has sign (-1)^(k-1), A is congruent to k-1 modulo 2. The same rank-transport theorem shows every generator s_j occurs at least once, so A>=k-1. If equality holds, the k-1 required generators account for all A factors, hence each occurs exactly once. Since there are n=2k+1 transitions, the number of same-slot transitions is then k+2. If equality fails, parity forces A>=k+1, which is a strict majority of 2k+1. Finally, for any subset E of s edges of a cycle C_n, the number of adjacent edge-pairs inside E is at least max(0,2s-n): E has at most n-s components, so it has at least s-(n-s)=2s-n internal adjacencies. Applying this to the k+2 same-slot edges in case (i) gives at least 3 adjacent same-slot pairs, and applying it to A>=k+1 adjacent-slot edges in case (ii) gives at least one adjacent reversal pair.
 
     • [centralbridge35] Every deletion state has a canonical bounded central-bridge three-cover
         STATEMENT
@@ -19104,6 +20451,266 @@
                   BODY / PROOF
                   Apply sixset_prescribed_pair_menu01 to U_L with prescribed pair p=z,q=zprime and A={q_0,q_1,q_2,q_3}. The set A is Hamiltonian because it is four consecutive vertices of the displayed tight path Q. Alternative (4) of sixset_prescribed_pair_menu01 requires A to be a non-Hamiltonian matching-block four-set, so that alternative is impossible. Hence one of alternatives (1),(2),(3) holds. In alternative (3), the deleted labels d,e,f all lie in A, so each Hamiltonian four-set U_L-{d,e} and U_L-{d,f} retains the entire prescribed pair Z. The complement assertion follows from minimum-counterexample calculus exactly as in sixset_prescribed_pair_menu01. The argument for U_R is identical because its four vertices outside Z are the consecutive Q-segment {q_{s-3},q_{s-2},q_{s-1},q_s}.
 
+            • [1000946] Three-side fixed-defect shell transport stays in the deletion component and gives an explicit large descent
+                STATEMENT
+                Let H be a minimum counterexample and let H-x=P|Q be an exact deletion two-cover with |P|=3 and Q=(q_0,...,q_{m-1}), m>=7. In the notation of threeside01, fix any persistent defect z in Z. Then the singleton lift P|{x}|Q lies in the same pairwise-repartition component as the entire fixed-z left-to-right shell chain. More precisely, every shell state (W_j-{z,c}) | T_j | (z,c) for {z,c} in E(Omega_j) is reachable in that component, and the threeside01 fixed-z chain is realized by legal pairwise repartitions of spanning covers. Each shell state has profile (5,m-3,2) and admits an immediate one-move Phi decrease by 4 to profile (4,m-3,3). In particular the original singleton lift reaches, in four legal moves, a spanning three-cover of profile (4,m-3,3) with total Phi drop 6(m-4).
+                BODY / PROOF
+                Let H be a minimum counterexample and let
+                H-x=P|Q
+                be an exact deletion two-cover with |P|=3 and
+                Q=(q_0,...,q_{m-1}), m>=7.
+                Put X=V(P) union {x}. Use the four shells W_j, inherited tails T_j, shell graphs Omega_j, and persistent set Z from threeside01. Fix z in Z.
+                
+                For every edge {z,c} of Omega_j, threeside01 says that
+                F_{j,c}=W_j-{z,c}
+                is Hamiltonian and that the complementary support T_j union {z,c} is non-Hamiltonian of path-cover number two with displayed exact cover
+                T_j | (z,c).
+                Hence
+                C_{j,c}=F_{j,c} | T_j | (z,c)
+                is a spanning three-cover of H.
+                
+                First we check that the fixed-z reconfiguration chain of threeside01 is literally a path in the pairwise-repartition graph of spanning covers.
+                
+                If {z,c} and {z,c'} are adjacent edges of the same Omega_j, then C_{j,c} and C_{j,c'} have the same component T_j. Their other two components are two exact two-covers of the same seven-vertex support W_j:
+                F_{j,c}|(z,c)
+                and
+                F_{j,c'}|(z,c').
+                Replacing one by the other is therefore one legal pairwise repartition.
+                
+                If {z,c} is an edge shared by consecutive shell graphs Omega_j and Omega_{j+1}, then the two corresponding spanning covers have the common two-vertex component (z,c). Their other two components,
+                F_{j,c}|T_j
+                and
+                F_{j+1,c}|T_{j+1},
+                are exact two-covers of the same support V(H)-{z,c}. Hence the tail slide is also one legal pairwise repartition.
+                
+                Thus every step in the fixed-z shell chain lifts to a legal spanning-cover move.
+                
+                It remains to connect that chain to the original deletion singleton lift. Since z belongs to Z subseteq X, the construction of threeside01 gives that
+                F_{0,q_2}=(X-{z}) union {q_0,q_1}
+                is Hamiltonian, equivalently {z,q_2} is an edge of Omega_0. Starting from
+                P | {x} | Q,
+                perform the following three pairwise repartitions.
+                
+                (1) Repartition P|{x}, whose union is X, as
+                (X-{z}) | {z}.
+                Every three-vertex boundary tournament is Hamiltonian.
+                
+                (2) Repartition (X-{z})|Q as
+                F_{0,q_2} | (q_2,q_3,...,q_{m-1}).
+                The first component is Hamiltonian by z in Z and the second is an inherited suffix of Q.
+                
+                (3) Repartition {z}|(q_2,...,q_{m-1}) as
+                (z,q_2) | T_0,
+                where T_0=(q_3,...,q_{m-1}).
+                The two-vertex component is automatically a tight path.
+                
+                The resulting cover is exactly C_{0,q_2}. Therefore the original singleton lift and the entire fixed-z shell chain lie in one pairwise-repartition component.
+                
+                Finally, every shell state C_{j,c} has component orders
+                5, m-3, 2.
+                Choose an endpoint f of a Hamilton order on F_{j,c}. Then F_{j,c}-{f} is a Hamiltonian four-path inherited from that order, while {z,c,f} is a Hamiltonian three-set. Hence the pair
+                F_{j,c}|(z,c)
+                may be repartitioned as a 4|3 pair. Its contribution to Phi drops from
+                5^2+2^2=29
+                to
+                4^2+3^2=25,
+                a decrease of exactly 4.
+                
+                Applying this last move to C_{0,q_2} gives a four-move route from the original singleton lift. The initial profile is (3,m,1), with
+                Phi=m^2+10.
+                The final profile is (4,m-3,3), with
+                Phi=(m-3)^2+25.
+                Therefore the total decrease is
+                m^2+10-[(m-3)^2+25]=6m-24=6(m-4).
+                Since m>=7, the decrease is at least 18.
+                
+                This supplies the component-continuity missing from a purely induced-support reading of the fixed-defect shell theorem: the persistent defect can be transported from the left end of Q to the right end without ever leaving the pairwise-repartition component generated by the original deletion singleton state.
+
+              • [1000950] Every fixed-defect shell edge lies in a common 4|3 descent diamond
+                  STATEMENT
+                  In any rooted seven-vertex shell W of threeside01, let Omega be its shell graph, let T be the complementary inherited tail, fix z in V(W), and suppose deg_Omega(z)>=4. For every edge {z,c} of Omega there exists c'!=c with {z,c'} in E(Omega) such that K=W-{z,c,c'} is Hamiltonian. Consequently the two spanning shell states (W-{z,c})|T|(z,c) and (W-{z,c'})|T|(z,c') have the common one-move descendant K|T|(z,c,c'), and each move lowers Phi by exactly 4.
+                  BODY / PROOF
+                  Put S=W-{z} and N=N_Omega(z). Then |S|=6, |N|>=4, c belongs to N, and S-{c}=W-{z,c} is Hamiltonian.
+                  
+                  We prove that some c' in N-{c} has
+                  K=S-{c,c'}
+                  Hamiltonian.
+                  
+                  If |N|=4, put M=S-N, so |M|=2. The five-set S-{c} contains the prescribed pair M and the three vertices N-{c}. By 1000924, some Hamiltonian four-subset of S-{c} contains M. That four-subset omits a vertex c' of N-{c}, so it is exactly S-{c,c'}.
+                  
+                  If |N|=5, the set M=S-N is a singleton. Again S-{c} is a five-set. By 1000924 it has at least three Hamiltonian four-subsets. Only one four-subset can omit M, so some Hamiltonian four-subset contains M. Its omitted vertex c' lies in N-{c}, and the subset is S-{c,c'}.
+                  
+                  If |N|=6, every vertex of S lies in N. The five-set S-{c} has a Hamiltonian four-subset by 1000924; its omitted vertex c' automatically lies in N-{c}. Again K=S-{c,c'} is Hamiltonian.
+                  
+                  In every case c' lies in N, hence W-{z,c'}=S-{c'} is Hamiltonian and {z,c'} is an edge of Omega. Thus both
+                  F_c=W-{z,c}
+                  and
+                  F_{c'}=W-{z,c'}
+                  are Hamiltonian five-sets, and K is their four-vertex intersection after deleting the opposite shell label.
+                  
+                  The three-set {z,c,c'} is Hamiltonian in every boundary tournament. Therefore the spanning shell cover
+                  C_c=F_c | T | (z,c)
+                  may repartition its first and third components, whose union is W, as
+                  K | (z,c,c').
+                  Likewise
+                  C_{c'}=F_{c'} | T | (z,c')
+                  repartitions to the same cover
+                  D=K | T | (z,c,c').
+                  
+                  Both arrows are legal one-step pairwise repartitions. The affected component orders change from 5 and 2 to 4 and 3, so
+                  (5^2+2^2)-(4^2+3^2)=29-25=4.
+                  Hence D is a common strict descendant of the two adjacent fixed-z shell states.
+                  
+                  In particular, every prescribed fixed-z shell edge belongs to a strict descent diamond; no choice of a Hamilton-path endpoint on its five-set is needed.
+
+                • [1000951] Fixed-defect three-side transport descends to a monotone 4|3 corridor
+                    STATEMENT
+                    In the three-side fixed-defect setup of threeside01, fix z in Z and let Q have order m>=7. The entire left-to-right fixed-z shell transport admits a component-respecting lift one potential level lower: after one strict 5|2 -> 4|3 descent, one can travel from the left shell to the right shell through spanning covers of constant profile (4,m-3,3), every three-side containing z, using only equal-Phi pairwise repartitions. Thus the original deletion singleton reaches this monotone corridor with total Phi drop 6(m-4). No endpoint-coherence or inter-shell common-deletion hypothesis is needed.
+                    BODY / PROOF
+                    Use the shells W_0,...,W_3, tails T_0,...,T_3, shell graphs Omega_j, and fixed defect z from threeside01. For every fixed-z shell edge {z,c}, the corresponding top state is
+                    C_{j,c}=(W_j-{z,c}) | T_j | (z,c),
+                    of profile (5,m-3,2).
+                    
+                    We first record the lower layer inside one shell. By the shell descent-diamond argument (equivalently, directly from 1000924 as in 1000950), every prescribed edge {z,c} has a strict one-move descendant of profile (4,m-3,3),
+                    D=K | T_j | R,
+                    where K and R partition W_j, |K|=4, |R|=3, both are Hamiltonian, and z belongs to R. Any two such lower states in the same shell are themselves one pairwise-repartition move apart: they have the identical component T_j, while their other two components are two exact 4|3 path covers of the same seven-set W_j. Hence the lower descendants in one shell form a connected equal-Phi layer, and every fixed-z top state has an edge of Phi-drop exactly four into that layer.
+                    
+                    It remains to glue the lower layers of consecutive shells without returning to the 5|2 level.
+                    
+                    Fix consecutive shells W_j,W_{j+1}. By threeside01, choose their shared fixed-z shell edge {z,c}. Put U=W_j intersect W_{j+1}. Then |U|=6. Let a be the unique vertex of W_j-U and b the unique vertex of W_{j+1}-U, and put B=U-{z,c}, so |B|=4. Since {z,c} is a shell edge in both shells, B union {a}=W_j-{z,c} and B union {b}=W_{j+1}-{z,c} are Hamiltonian five-sets.
+                    
+                    Define
+                    A_a={d in B : (B-{d}) union {a} is Hamiltonian},
+                    A_b={d in B : (B-{d}) union {b} is Hamiltonian}.
+                    By 1000924, every five-set has at least three Hamiltonian four-vertex deletions. In B union {a}, only the deletion of a lies outside the four core labels B, so |A_a|>=2. Similarly |A_b|>=2.
+                    
+                    If A_a intersects A_b, choose d in the intersection. Then
+                    D_j=((B-{d}) union {a}) | T_j | (z,c,d)
+                    and
+                    D_{j+1}=((B-{d}) union {b}) | T_{j+1} | (z,c,d)
+                    are legal one-move descendants of the shared top states on the two shells. They have the same three-side (z,c,d). Their other two components are two exact two-covers of the same support H-{z,c,d}, so replacing one pair by the other is a single legal pairwise repartition. The two lower states have the same profile (4,m-3,3), hence this inter-shell move preserves Phi.
+                    
+                    Suppose instead A_a and A_b are disjoint. Since both have order at least two and B has order four, each has order exactly two and together they partition B. The five-set B union {a} has at least three good deletion labels, but only the two labels in A_a among B are good core deletions. Therefore deletion of a must also be good, so B itself is Hamiltonian. (The same conclusion follows from B union {b}.)
+                    
+                    Now the shared top state in shell j has the legal descendant
+                    D_j=B | T_j | (z,c,a),
+                    and the shared top state in shell j+1 has the legal descendant
+                    D_{j+1}=B | T_{j+1} | (z,c,b).
+                    The triples are Hamiltonian automatically. These two lower states share the Hamiltonian four-side B; their other two components are exact two-covers of H-B. Hence they differ by one legal pairwise repartition, again at equal Phi.
+                    
+                    Thus in all cases the lower 4|3 layers of consecutive shells are joined by an equal-Phi move. Applying this at the three shell transitions and using the equal-Phi connectivity inside each shell gives a left-to-right corridor of profile (4,m-3,3) whose three-side always contains z. The corridor starts below the shell state associated with {z,q_2} and ends below the shell state associated with {z,q_{m-3}}.
+                    
+                    By 1000946, the original singleton lift P|{x}|Q reaches the left top shell state in three moves and then reaches the lower layer by a fourth move. The total potential drop from profile (3,m,1) to profile (4,m-3,3) is
+                    m^2+10-[(m-3)^2+25]=6(m-4).
+                    All subsequent motion through the corridor is Phi-neutral.
+                    
+                    Therefore the fixed-defect transport of threeside01 can be carried globally from left to right after a strict descent, without ever climbing back to the 5|2 shell level.
+
+                  • [1000953] Second-layer synchronization fails only in a degree-four shell with a 2K2, P4, or claw core graph
+                      STATEMENT
+                      In a three-side fixed-defect shell W of threeside01, fix a persistent defect z and let d=deg_Omega(z)>=4. Let N=N_Omega(z), and define Delta_z on N by cc' in E(Delta_z) iff W-{z,c,c'} is Hamiltonian. Then delta(Delta_z)>=d-3. If the inherited long tail T has order at least six and Delta_z has at least four edges, there exist two distinct lower 4|3 corridor states associated with edges of Delta_z whose one-step threesidedescent6 moves can be chosen to land in the same lower potential layer and differ by one legal pairwise repartition. Consequently, failure of such a synchronized second-layer descent in this shell forces d=4 and Delta_z to be exactly one of 2K2, P4, or K1,3.
+                      BODY / PROOF
+                      Let W be one rooted seven-vertex shell from threeside01, let Omega be its shell graph, fix a persistent defect z, and put N=N_Omega(z), d=|N|=deg_Omega(z). Thus d is one of 4,5,6. Let S=W-{z}, so |S|=6.
+                      
+                      Define a graph Delta_z on N by cc' in E(Delta_z) iff W-{z,c,c'}=S-{c,c'} is Hamiltonian.
+                      
+                      Fix c in N. Since c is a neighbor of z in Omega, S-{c}=W-{z,c} is Hamiltonian. By 1000924, every Hamiltonian five-set has at least three Hamiltonian four-vertex deletions. Among the five possible deleted labels of S-{c}, at most |S-N|=6-d lie outside N. Hence at least 3-(6-d)=d-3 good deletions are labels c' in N-{c}. For every such c', S-{c,c'} is Hamiltonian, so cc' is an edge of Delta_z. Therefore delta(Delta_z)>=d-3. Hence |E(Delta_z)|>=d(d-3)/2. In particular d=5 gives at least five edges and d=6 gives at least nine; only d=4 can have fewer than four edges.
+                      
+                      Let T=(t_1,...,t_M) be the inherited long tail, M>=6. Every edge e=cc' of Delta_z gives a lower corridor cover D_e=K_e|T|R_e, where K_e=W-{z,c,c'} is a Hamiltonian four-set and R_e={z,c,c'} is a Hamiltonian three-set.
+                      
+                      Define the endpoint-extension signature sigma(e) subseteq {L,R} by L in sigma(e) iff R_e union {t_1} is Hamiltonian, and R in sigma(e) iff R_e union {t_M} is Hamiltonian.
+                      
+                      If sigma(e) and sigma(f) have a common endpoint t, apply the good-endpoint branch of threesidedescent6 to both D_e and D_f using t. Their descendants share T-{t}; their other two components are two Hamiltonian 4|4 partitions of the same eight-set W union {t}. Hence the descendants differ by one legal pairwise repartition, and both descents have the same strict Phi drop 2M-8.
+                      
+                      If sigma(e)=sigma(f)=emptyset, apply the bad-bad branch of threesidedescent6 to both states. Their descendants share the inherited interior path (t_2,...,t_{M-1}); their other two components are two Hamiltonian 4|5 partitions of the same nine-set W union {t_1,t_M}. Again the descendants differ by one legal pairwise repartition, and both descents have the same strict Phi drop 4M-20.
+                      
+                      Thus synchronization holds whenever signatures intersect or both are empty.
+                      
+                      A family of subsets of {L,R} with no such pair has size at most three: there is at most one empty set, and the nonempty sets must be pairwise disjoint, so at most two of them occur. Therefore if Delta_z has at least four edges, two edges synchronize.
+                      
+                      If synchronization fails, |E(Delta_z)|<=3. The degree bound rules out d>=5, so d=4. Since delta(Delta_z)>=1, Delta_z is a graph on four vertices with no isolated vertices and two or three edges. With two edges it is 2K2. With three edges it is either P4 or K1,3. These are the only residues.
+
+                    • [1000954] Every fixed-defect lower shell synchronizes its next descent or carries order disagreement inside the same 4|3 layer
+                        STATEMENT
+                        In the three-side fixed-defect shell setup, fix a persistent defect z and a shell W with inherited tail T of order at least six. Inside the reachable constant-Phi 4|3 lower shell layer from 1000951, either two states admit synchronized one-step threesidedescent6 moves to an adjacent pair at strictly lower Phi, or two states in that same lower shell layer have Hamiltonian four-sides exhibiting relative-order disagreement on their common vertices. Thus the second-layer obstruction is no longer an arbitrary degree-four graph residue: failure of synchronized descent produces positioned order disagreement without leaving the fixed-z shell component.
+                        BODY / PROOF
+                        Let Omega be the seven-vertex shell graph on W, fix persistent z, and put d=deg_Omega(z)>=4. Let T be the inherited tail, with |T|=M>=6.
+                        
+                        If d>=5, then 1000953 applies directly. Its core graph Delta_z has at least five edges, hence contains two lower 4|3 corridor states whose one-step threesidedescent6 moves synchronize: the descendants lie at the same strictly smaller Phi and differ by one legal pairwise repartition.
+                        
+                        The same conclusion holds for d=4 whenever the core graph Delta_z has at least four edges. Thus it remains only to consider the degree-four branch in which synchronized second-layer descent has not already been obtained.
+                        
+                        Because d=4 in a seven-vertex graph, there are exactly two vertices u,v in W-{z} that are nonneighbors of z in Omega. By definition of the shell graph,
+                        F_u=W-{z,u}
+                        and
+                        F_v=W-{z,v}
+                        are non-Hamiltonian five-sets.
+                        
+                        Apply the certified five-set structure in smallset01. Every non-Hamiltonian five-set has at most one non-Hamiltonian four-vertex deletion. Hence F_u has at least four vertices c for which
+                        K_c=F_u-{c}=W-{z,u,c}
+                        is Hamiltonian.
+                        
+                        Apply astra004fourgooddisagree to the non-Hamiltonian five-set F_u and these at least four good deletions. It gives distinct c,c' and Hamilton paths on K_c,K_{c'} whose common vertices occur in different relative orders.
+                        
+                        For every such good deletion c, the complementary three-set
+                        R_c={z,u,c}
+                        is Hamiltonian, since every three-vertex boundary tournament is Hamiltonian. Therefore
+                        D_c=K_c | T | R_c
+                        is a spanning three-cover of H of profile (4,M,3).
+                        
+                        Moreover D_c belongs to the same lower shell layer as the fixed-z corridor states of 1000951. Indeed choose any existing lower corridor state D_e=K_e|T|R_e in this shell. Both D_c and D_e have the identical tail T, and their remaining two components are Hamiltonian 4|3 partitions of the same seven-set W. Replacing K_e|R_e by K_c|R_c is one legal pairwise repartition, preserving Phi. The same holds for D_{c'}.
+                        
+                        Hence the two order-disagreeing Hamiltonian four-sides K_c,K_{c'} occur in spanning 4|M|3 covers inside the same reachable constant-Phi lower shell layer generated by the original fixed-z transport.
+                        
+                        Therefore every shell with tail order at least six has the dichotomy:
+                        (1) two lower-layer states admit synchronized strict second-layer descent; or
+                        (2) the lower layer itself contains positioned relative-order disagreement between two Hamiltonian four-sides.
+                        No separate 2K2, P4, or K1,3 residue remains as a terminal obstruction.
+
+                      • [1000955] Failure of fixed-defect second-layer synchronization forces a shell-local reversing triple
+                          STATEMENT
+                          In the fixed-defect lower-shell setup of 1000954 with inherited tail of order at least six, either two lower 4|3 states admit synchronized strict second-layer descent, or there is a reachable lower-layer state K|T|R and a tight triple contained in the same shell five-set that reverses an ordered edge of the Hamiltonian four-path K. Thus the disagreement alternative upgrades to literal positioned reversal inside the small shell support; the pure tight-cycle residue is impossible because the relevant five-set is non-Hamiltonian and therefore edge-orderable.
+                          BODY / PROOF
+                          Use the dichotomy of 1000954. If synchronized second-layer descent occurs, there is nothing to prove. Assume instead that its order-disagreement branch occurs.
+                          
+                          In the proof of 1000954 this branch is produced inside a non-Hamiltonian five-set F=W-{z,u}, where z is the fixed persistent defect and u is a nonneighbor of z in the degree-four shell case. At least four vertex deletions F-c are Hamiltonian. Choose Hamilton paths P_c on those good four-sets. The theorem astra004fourgooddisagree gives two of these paths with relative-order disagreement.
+                          
+                          Among disagreeing pairs drawn from these Hamilton paths, choose P,Q lexicographically minimizing first the size of their union and then the sum of their orders. Apply 1000552.
+                          
+                          Outcome (3) of 1000552, the pure two-arc tight-cycle case, cannot occur. Indeed F is a non-Hamiltonian five-vertex boundary tournament. By smallset01 it admits an edge-order representation, equivalently its comparison digraph is acyclic. A vertex-simple tight cycle would give a directed cycle of consecutive ordinary edges in that comparison digraph, contradiction.
+                          
+                          Hence 1000552 gives either:
+                          (1) P and Q traverse a common ordinary edge in opposite directions; or
+                          (2) there is already a tight triple on V(P) union V(Q) reversing an ordered edge of P or Q.
+                          
+                          In case (2) we are done. In case (1), let ab be an ordered edge of P and ba the same edge in Q. Since P has order four, ab belongs to a consecutive tight triple of P. That tight triple contains the ordered edge ab and therefore reverses the ordered edge ba of Q. Thus again there is a tight triple contained in F reversing an edge of one of the chosen Hamiltonian four-paths.
+                          
+                          Finally, every chosen good deletion path, say Q on K=F-c, occurs as the four-side of the lower-layer spanning cover
+                          K | T | {z,u,c}
+                          from the construction in 1000954. That cover lies in the same constant-Phi lower shell layer generated by the original fixed-z corridor.
+                          
+                          Therefore failure of synchronized strict second-layer descent produces a tight triple entirely inside the shell five-set F which reverses an ordered edge of a Hamiltonian four-side belonging to a reachable lower 4|3 corridor state. No generic global disagreement or external tight-cycle consumer is required.
+
+                        • [1000956] The fixed-defect second-layer fork reduces to descent, an endpoint reversal, or a Hamiltonian 4/5 window
+                            STATEMENT
+                            In the fixed-defect lower-shell setup with tail order at least six, either two lower 4|3 states admit synchronized strict second-layer descent, or there is a reachable state K|T|R such that one of the following holds: (i) a tight triple reverses an end edge of the displayed Hamiltonian four-path K; (ii) H contains a proper Hamiltonian four-set with non-Hamiltonian path-cover-two complement; or (iii) H contains a proper Hamiltonian four- or five-set meeting a displayed endpoint of T, with non-Hamiltonian path-cover-two complement. Thus after the new shell synchronization machinery, the only reversal not already absorbed into the standard small-window engine is a four-side endpoint-edge reversal.
+                            BODY / PROOF
+                            Start from 1000955. If its synchronized strict second-layer descent branch holds, we are done. Otherwise there is a reachable lower-layer cover
+                            K | T | R,
+                            where K=(k_0,k_1,k_2,k_3) is a Hamiltonian four-path, T is the inherited long tail, and a tight triple S contained in the shell five-set F reverses an ordered edge of K.
+                            
+                            If the reversed edge is k_0k_1 or k_2k_3, conclusion (i) holds. Assume therefore that the reversed edge is the internal edge k_1k_2.
+                            
+                            Apply 1000255 to K and S. It produces a four-vertex kernel X contained in V(K) union V(S), hence contained in F, with one of three possibilities: X is Hamiltonian; X is the exceptional cyclic non-Hamiltonian K4; or X is the uniquely oriented edge-orderable matching-block K4.
+                            
+                            The cyclic possibility is impossible here. The five-set F is non-Hamiltonian by the construction in 1000954, hence smallset01 gives an edge-order representation of F. Every induced four-set of an edge-orderable boundary tournament is edge-orderable, whereas the exceptional cyclic K4 is not. Thus X cannot be cyclic.
+                            
+                            If X is Hamiltonian, it is a proper Hamiltonian four-set in the minimum counterexample. Its complement cannot be Hamiltonian, since otherwise the Hamilton path on X and a Hamilton path on the complement would two-cover H. Minimum-counterexample calculus therefore gives path-cover number exactly two on H-X. This is conclusion (ii).
+                            
+                            It remains that X is the matching-block kernel. Let t be either displayed endpoint of the inherited tail T. Since t lies outside the shell five-set F, it lies outside X. Apply 1000707 with y=t. That theorem gives either a Hamiltonian four-set formed from its reverse-fan triple together with t, or a Hamiltonian five-set X union {t}. In either case the support W has order four or five and contains the displayed tail endpoint t. It is proper, and minimum-counterexample calculus again implies that H-W is non-Hamiltonian with path-cover number exactly two. This is conclusion (iii).
+                            
+                            Therefore an internal reversed edge from the lower-shell obstruction is fully absorbed into the standard Hamiltonian 4/5-window frontier, and in the matching-block case the resulting window can be chosen endpoint-aligned with the long tail. Only a reversal of an end edge of K remains outside that frontier.
+
           • [1000311] Every root Hamiltonizes at least three fifths of the four-subsets of any large core
               STATEMENT
               Let H be a boundary tournament, let X be a vertex set of order m>=6, and let r be a vertex outside X. Then at least (3/5) binom(m,4) four-subsets D of X have H[D union {r}] Hamiltonian.
@@ -24926,6 +26533,12 @@
         BODY / PROOF
         If U is Hamiltonian, it is proper in a minimum counterexample. If H-U were Hamiltonian then Hamilton paths on U and H-U would form a spanning two-cover of H. Hence minimum-counterexample calculus gives path-cover number two for H-U, proving (1). Assume U is non-Hamiltonian. Since U-a=K union {b} and U-b=K union {a} are Hamiltonian, a,b belong to the Hamiltonian-deletion set D. Apply d2205c472e75 to the non-Hamiltonian six-set U. It gives |D|>=4; for every d in D, L+d is non-Hamiltonian with path-cover number two; and the graph J on D defined by Hamiltonian two-deletions has minimum degree at least one, with every edge de yielding L+d+e non-Hamiltonian with path-cover number two. This is exactly (2).
 
+      • [commoncore_fivepair_sixshell_normal01] Two common-core Hamiltonian five-sets have a complete square/overlap/matching-block six-shell normal form
+          STATEMENT
+          Let H be a minimum counterexample, let K be a four-vertex set, and let p,q be distinct exterior vertices such that K union {p} and K union {q} are Hamiltonian. Put U=K union {p,q}. Then at least one of the following holds. (1) U is Hamiltonian; its complement is non-Hamiltonian with path-cover number two, and U contains two labels d,e for which H-U, (H-U)+d, (H-U)+e, and (H-U)+d+e form a full two-label path-cover-two square. (2) U is non-Hamiltonian and its good-deletion graph has adjacent edges, yielding two Hamiltonian four-sets meeting in three vertices whose five-vertex union is Hamiltonian; all three supports have non-Hamiltonian path-cover-two complements. (3) U is non-Hamiltonian and its good-deletion graph has no adjacent edges; then exactly four good deletion labels form the canonical non-Hamiltonian matching-block K4, with the oriented 2+2 fixed-pair classes and complete cross-hook rectangle of sixset_deletion_graph_oriented_recomp01.
+          BODY / PROOF
+          If U is Hamiltonian, minimum-counterexample calculus gives that H-U is non-Hamiltonian with path-cover number two. Apply ham6goodsquare01 to U to obtain distinct d,e in U such that H-U, (H-U)+d, (H-U)+e, and (H-U)+d+e are all non-Hamiltonian with path-cover number two. This is (1). Suppose U is non-Hamiltonian. Since U-p=K+q and U-q=K+p are Hamiltonian, p and q lie in the Hamiltonian-deletion set D of U. Apply sixset_deletion_graph_oriented_recomp01. If its good two-deletion graph J has adjacent edges, that theorem gives two Hamiltonian four-sets meeting in three vertices and their Hamiltonian five-set union, with path-cover-two complements in the minimum counterexample; this is (2). If J has no adjacent edges, the same theorem gives |D|=4, J a perfect matching, H[D] the canonical non-Hamiltonian matching-block K4, and the oriented 2+2 fixed-pair classes with the complete four-hook rectangle; this is (3). These alternatives are exhaustive.
+
     • [1000557] Adjacent Hamiltonian four-windows force a pc2 square or a two-label core fan
         STATEMENT
         Let H be a minimum counterexample. Let C be a three-vertex set and let f,g be distinct vertices outside C. Suppose C union {f} and C union {g} are Hamiltonian four-sets, each with non-Hamiltonian path-cover-two complement. Put K=H-(C union {f,g}). Then K+{f}, K+{g}, and K+{f,g}=H-C are non-Hamiltonian with path-cover number two. Moreover either (1) C union {f,g} is Hamiltonian, in which case K itself is non-Hamiltonian with path-cover number two and K,K+{f},K+{g},K+{f,g} form a full two-label pc2 square; or (2) C union {f,g} is non-Hamiltonian, in which case for at least two distinct c in C the four-set (C-{c}) union {f,g} is Hamiltonian and therefore K+{c} is non-Hamiltonian with path-cover number two.
@@ -28368,6 +29981,14 @@
         BODY / PROOF
         For positive integers s_1+s_2+s_3=n, if some s_i>=s_j+2 then replacing (s_i,s_j) by (s_i-1,s_j+1) changes the sum of squares by -2(s_i-s_j)+2<0. Iterating this purely numerical balancing step terminates exactly at triples whose largest and smallest entries differ by at most one. Therefore those and only those triples minimize the sum of squares at fixed total n. The first conclusion follows for any three-cover with such a size profile. Its minimum component order is floor(n/3). Since no three positive integers with sum n can all be at least floor(n/3)+1, the maximin parameter rho is at most floor(n/3), while C attains that value.
 
+      • [equitable_phi_plateau_fence01] Equitable three-covers admit no strict quadratic descent while three components remain
+          STATEMENT
+          Let C be an equitable spanning three-cover of an n-vertex boundary tournament. Along any sequence of spanning three-covers C=C_0,C_1,... for which Phi(C_{i+1})<=Phi(C_i), every C_i has the same minimum Phi value and an equitable component-order profile. In particular no strict Phi-decreasing move or multi-move sequence between spanning three-covers can start from C. Therefore a Phi-nonincreasing proof beginning at an equitable three-cover can close only by reducing the number of components, or by navigating the equal-Phi plateau with an independent order/support-sensitive well-founded mechanism until such a reduction occurs.
+          BODY / PROOF
+          By 1000268, every equitable three-cover has the absolute minimum possible value of Phi among all positive three-part size profiles summing to n, and equality occurs only for equitable profiles. Let C_0=C be equitable and suppose Phi(C_{i+1})<=Phi(C_i) while each C_i is still a three-cover. Since Phi(C_0) is the absolute minimum, Phi(C_i)>=Phi(C_0) for every i. Inductively the nonincrease gives Phi(C_i)<=Phi(C_0), hence equality throughout. Equality in the fixed-sum sum-of-squares minimum forces every C_i to be equitable.
+          
+          Thus strict quadratic descent is numerically impossible once an equitable profile has been reached. Any theorem that reports a strict Phi descent from an auxiliary nonequitable cover reached after leaving the plateau cannot by itself contradict the original equitable minimum: the descended state may merely return to the absolute minimum. A terminal proof in the equitable regime must therefore either merge two components directly or employ a secondary invariant depending on support/order/provenance rather than only on the component-size triple.
+
       • [1000739] Endpoint deletion probes reduce an all-equal three-cover to multiple crossings, a generic noninsertion witness, or crossed near-merges
           STATEMENT
           Let H be a minimum counterexample and let A|B|C be a spanning three-cover with |A|=|B|=|C|=r>=2, where A=(a_1,...,a_r). For each d in {a_1,a_r}, choose any two-cover T_d of H-d and count the ordinary edges of T_d whose endpoints lie in different members of the inherited three-part partition (A-{d})|B|C. Then either one of T_{a_1},T_{a_r} has at least two such crossings, or both have exactly one. In the latter case each T_d isolates exactly one of B,C as an entire component and its other component is a Hamilton path on the union of A-{d} with the remaining opposite block; moreover the isolated block enlarged by d is non-Hamiltonian. If the two endpoint probes isolate the same block, then a_1 and a_r are both noninsertable into that displayed block and hence satisfy one of the five universal alternatives of a8c9883902b1. If they isolate different blocks, then after interchanging B,C if needed, H[(A-{a_1}) union C] and H[(A-{a_r}) union B] are Hamiltonian while H[B union {a_1}] and H[C union {a_r}] are non-Hamiltonian. Thus an all-equal quadratic plateau reduces, independently of r, to multiple three-block crossings, the generic paired-noninsertion witness, or a crossed pair of near-merges.
@@ -29249,9 +30870,9 @@
 
         • [recomp_45plateau_01] A Phi-minimal 4|5|a three-cover yields mutual support-crossing edges or order disagreement
             STATEMENT
-            Let H be a boundary tournament and let C=A|B|P be a spanning three-cover minimizing Phi in a connected component of the pairwise-repartition graph containing no cover with fewer than three paths, with |A|=4, |B|=5, and |P|=a>=7. Put W=A union B. Then at least one of the following holds inside W: (1) there are two distinct 4|5 two-covers of W such that each has at least two ordinary path edges whose endpoints lie in different support classes of the other cover; (2) Hamilton paths on overlapping induced subsets of W have order disagreement. Moreover H[W] is non-Hamiltonian, every two-cover of W has component-order multiset {4,5}, and W has no Hamiltonian induced subset of order at least six.
+            Let H be a boundary tournament and let C=A|B|P be a spanning three-cover minimizing Phi in a connected component of the pairwise-repartition graph containing no cover with fewer than three paths, with |A|=4, |B|=5, and |P|=a>=7. Put W=A union B. Then: (i) either there are two distinct 4|5 two-covers of W such that each has at least two ordinary path edges joining the support classes of the other cover, or Hamilton paths on overlapping induced subsets of W have order disagreement; (ii) independently, W has a 4|5 two-cover A'|B' whose reciprocal-swap graph has at least four edges, so it contains either two vertex-disjoint reciprocal swaps or a four-edge common-core swap star. Moreover H[W] is non-Hamiltonian, every two-cover of W has component-order multiset {4,5}, and W has no Hamiltonian induced subset of order at least six.
             BODY / PROOF
-            Put W=A union B. By 49e30b5f952f, at least one of the following occurs inside W: two distinct 4|5 two-covers such that each has at least two ordinary path edges whose endpoints lie in different support classes of the other cover; or order disagreement between Hamilton paths on overlapping induced subsets of W. This proves the main dichotomy. Independently, 6cb8966e16c9 gives the structural assertions about W: H[W] is non-Hamiltonian, every two-cover of W has component-order multiset {4,5}, and W has no Hamiltonian induced subset of order at least six.
+            The original disturbance conclusion is unchanged: 49e30b5f952f yields either two distinct 4|5 two-covers of W each having at least two ordinary path edges between the support classes of the other, or order disagreement on overlapping Hamilton paths. Independently, apply the certified universal nine-vertex swap theorem balanced9_swap_hub_menu01 to H[W]. It supplies a Hamiltonian 4|5 cover A'|B' with reciprocal-swap graph J subseteq A' x B' having at least four edges. Thus either J has two vertex-disjoint edges, giving two independent reciprocal swaps, or all four edges can be concentrated at a common endpoint, yielding the stated common-three-core or common-four-core swap star. This adds a multiplicity/positioning conclusion not present in the original plateau theorem and uses no additional hypothesis beyond |W|=9. Finally 6cb8966e16c9 gives the structural assertions about W: H[W] is non-Hamiltonian, every two-cover of W has component-order multiset {4,5}, and W has no Hamiltonian induced subset of order at least six.
 
       • [local45neutraldegree01] Neutral degree on a local 4|5|a quadratic plateau is large except in two incidence regimes
           STATEMENT
@@ -30978,6 +32599,12 @@
             
             Finally, every Hamiltonian four- or six-set displayed above is proper because a minimum counterexample has order greater than ten. Its complement cannot be Hamiltonian, or the two Hamilton paths would form a spanning two-cover; minimum-counterexample calculus therefore gives path-cover number two. ∎
 
+      • [shared_edge_double_reversal_sixpackage01] Two labels reversing one path edge force a common-core six-window transport package
+          STATEMENT
+          Let H be a minimum counterexample. Let P be a tight path containing consecutive vertices u,v in that displayed order, and let x,y be distinct vertices outside P such that (v,u,x) and (v,u,y) are tight. Then there exist distinct a,b outside {u,v,x,y} such that both five-sets K union {x} and K union {y}, where K={u,v,a,b}, are Hamiltonian and have non-Hamiltonian path-cover-two complements. Consequently, with U=K union {x,y}, either U is a proper Hamiltonian six-set with non-Hamiltonian path-cover-two complement, or U is non-Hamiltonian and has at least four Hamiltonian vertex deletions (including x and y), together with the certified one- and two-label path-cover-two transport package of 1000476.
+          BODY / PROOF
+          Put Z=V(H)-{u,v,x,y}. A minimum counterexample has order greater than ten, so |Z|>=7. For t in {x,y}, the triple T_t=(v,u,t) is a genuine reversal of the displayed edge (u,v). Apply reversal_dense_fivefamily01 to T_t. On Z let B_t be the graph whose edge ab means that T_t union {a,b} is non-Hamiltonian. The bad-extension graph supplied by reversal_dense_fivefamily01 is triangle-free, hence each restriction B_t is triangle-free. Suppose no pair ab is good for both t=x and t=y. Then every edge of the complete graph on Z belongs to B_x union B_y. Color each edge red if it belongs to B_x, and otherwise blue; by the supposition every blue edge belongs to B_y. The red graph is triangle-free as a subgraph of B_x, and the blue graph is triangle-free as a subgraph of B_y. Choose any six vertices of Z. In every red-blue coloring of K_6 there is a monochromatic triangle: from one vertex at least three incident edges have one color, say red to p,q,r; if one of pq,pr,qr is red there is a red triangle, while if none is red then p,q,r form a blue triangle. This contradiction proves that some distinct a,b in Z make both T_x union {a,b} and T_y union {a,b} Hamiltonian. Put K={u,v,a,b}. Thus K union {x} and K union {y} are Hamiltonian five-sets sharing the four-core K. They are proper and their complements have path-cover number two by minimum-counterexample calculus (also explicitly supplied by reversal_dense_fivefamily01). Apply 1000476 to these two five-sets. It gives exactly the asserted dichotomy: U=K union {x,y} is Hamiltonian with a path-cover-two complement, or U is non-Hamiltonian with at least four Hamiltonian deletions including x,y and the associated one/two-label path-cover-two transport graph.
+
   • [ham6goodsquare01] Every Hamiltonian six-set with two-coverable complement contains a full two-label square
       STATEMENT
       Let H be a minimum counterexample, let U be a proper Hamiltonian six-vertex set, and put K=H-U. Assume H[K] is non-Hamiltonian, hence has path-cover number two. Then there exist distinct d,e in U such that all four induced subtournaments H[K], H[K+d], H[K+e], and H[K+d+e] are non-Hamiltonian with path-cover number two, while U-d, U-e, and U-{d,e} are Hamiltonian.
@@ -31070,6 +32697,351 @@
         BODY / PROOF
         This attacks the equality/near-equality regime rather than strengthening the density inequality. The key question is whether extremal graph structure has mathematical content in the underlying deletion states.
 
+    • [1000928] Deletion-cover compatibility graphs exclude K4 minors unconditionally
+        STATEMENT
+        Let H be a finite boundary 3-tournament with pc(H)>2. Choose one ordered two-cover F_d of H-d for each d in a set D of m distinct deletion labels. Join d,e when the covers induce the same ordered support partition on V(H)-{d,e}. The resulting full-compatibility graph G is K4-minor-free, hence 2-degenerate and 3-colorable. For m>=2 it has at most 2m-3 edges; at least (m-2)(m-3)/2 pairs are incompatible; and a subfamily of at least ceil(m/3) chosen deletion covers is pairwise incompatible. Every induced family of t>=3 covers has a cover incompatible with at least t-3 others. Any incompatible pair has an actual disagreement-witness pair of ground vertices whose labels separate its endpoints in G.
+        BODY / PROOF
+        Let H be a finite boundary 3-tournament with pc(H)>2. Let D be a set of m distinct vertices such that, for every d in D, a particular two-cover F_d of H-d has been chosen, including the displayed order of each path. Define a simple graph G on D by joining d and e exactly when F_d and F_e are compatible on V(H)-{d,e}: their restrictions give the same partition into ordered blocks. Restrictions here mean restriction of the ordered partition; they need not themselves be tight paths after internal vertices are deleted.
+        
+        **Theorem.** G has no K4 minor. In particular G is 2-degenerate and 3-colorable, and, for m>=2,
+        
+            |E(G)| <= 2m-3.
+        
+        Consequently at least (m-2)(m-3)/2 unordered pairs of the chosen deletion covers are incompatible, and some subfamily of at least ceil(m/3) deletion covers is pairwise incompatible. Every induced subfamily of t>=3 covers contains a cover incompatible with at least t-3 of the others.
+        
+        ### Pair relations and propagation
+        
+        For distinct u,v different from d, encode their relation in F_d by one of three values: different blocks; same block with u before v; same block with v before u. If de is an edge of G and neither d nor e belongs to {u,v}, the two covers give the same relation to u,v. Hence the relation of u,v is constant along every path in G-{u,v}, where ground vertices not in D remove nothing.
+        
+        This also proves a useful witness statement. If F_d and F_e are incompatible, some pair u,v in their common domain has different relations in these covers. The set {u,v} intersect D separates d from e in G. The pair is an actual support/order disagreement witness, rather than an arbitrary graph separator. In particular, three internally vertex-disjoint d-e paths force F_d and F_e to be compatible.
+        
+        ### Four compatible covers reconstruct a two-cover
+        
+        **Lemma.** Let d_1,d_2,d_3,d_4 be distinct deletion labels. If their chosen two-covers are pairwise compatible, then H has a spanning two-cover.
+        
+        For each pair u,v of distinct ground vertices, choose a label d_i outside {u,v} and assign to u,v its relation in F_{d_i}. Pairwise compatibility makes this choice independent of i.
+        
+        Declare two distinct vertices equivalent when their assigned relation places them in the same block, and declare every vertex equivalent to itself. Transitivity follows by considering any three vertices u,v,w and choosing a deletion label outside that triple: all three pair relations are then witnessed in one ordered partition F_{d_i}. The same argument shows that, within each equivalence class, the assigned precedence relation is a strict total order.
+        
+        There are at most two equivalence classes. Otherwise choose one representative from each of three classes and a deletion label outside these representatives. Its two-cover would put the three representatives in three distinct blocks, a contradiction.
+        
+        For every i, the restriction of this global ordered partition to H-d_i is exactly the ordered partition of F_{d_i}, since its pair relations are exactly those of F_{d_i}. Finally let u,v,w be any three consecutive vertices of one global block. Choose d_i outside this triple. The three remain consecutive in that block after deleting d_i, so they occur consecutively in a path of F_{d_i}. Thus (u,v,w) is tight. The one or two global ordered blocks are therefore tight paths and form a spanning two-cover. This proves the lemma.
+        
+        The argument uses only the locality of tight-path constraints on triples and the bound of two blocks. It does not use minimal-counterexample assumptions or a lower bound on component sizes.
+        
+        ### A subdivision of K4 forces four compatible covers
+        
+        Suppose G contains a subdivision K of K4, with branch vertices d_1,d_2,d_3,d_4. After deleting any two vertices of K, all surviving branch vertices remain in one connected component. Here is the complete verification.
+        
+        * If both deleted vertices are branch vertices, the subdivided edge between the other two survives.
+        * If one is a branch vertex and the other is internal, the triangle on the three remaining branch vertices loses at most one subdivided edge and still connects those vertices.
+        * If neither is a branch vertex, at most two subdivided edges are interrupted. Deleting at most two edges from K4 leaves it connected, so all four branch vertices remain connected.
+        
+        Deleting zero or one vertex is included by the same argument; ground vertices outside K have no effect.
+        
+        Fix two branch labels d_i,d_j and any ground pair u,v in their common domain. They are surviving branch vertices of K-{u,v}, so a compatibility path connects them while avoiding u,v. Propagation makes their relation on u,v identical. Since the pair was arbitrary, F_{d_i} and F_{d_j} are compatible. Thus the four branch covers are pairwise compatible, contradicting the reconstruction lemma and pc(H)>2. Therefore G contains no subdivision of K4.
+        
+        For K4, having a minor is equivalent to having a subdivision: in a minor model, each of the four disjoint connected branch sets has only three required attachment vertices. Prune each branch set to a minimal tree joining those attachments, and use its unique branching point (possibly one attachment) to obtain internally disjoint arms. Together with the six inter-branch edges, these arms form a subdivision. Consequently G is K4-minor-free.
+        
+        ### Elementary derivation of the graph consequences
+        
+        We record the standard graph argument for completeness. A 3-connected graph on at least four vertices contains a subdivision of K4. Indeed, fix a vertex v, choose a cycle in the 2-connected graph G-v, and use the vertex form of Menger's theorem to find three internally disjoint paths from v to three distinct vertices of the cycle, meeting the cycle only at their ends. Their union with the cycle contains the required subdivision.
+        
+        We next prove by induction that, in a 2-connected K4-minor-free graph J with at least three vertices, for any specified edge xy there is a vertex outside {x,y} of degree two. The claim is immediate for three vertices. For more vertices J is not 3-connected, so it has a separator {a,b}. Since xy is an edge, there is a component C of J-{a,b} containing neither x nor y outside the separator. Put J'=J[C union {a,b}]+ab. Every component of J-{a,b} attaches to both a and b, since J is 2-connected. An a-b path through another component can therefore be contracted to show that J' is a minor of J. The graph J' is 2-connected: any path outside C can be replaced by the edge ab, and after deleting a or b connectivity follows from that of J-a or J-b. It has fewer vertices than J. Apply induction with specified edge ab. It gives z in C with degree two in J'; all neighbors of z in J lie in C union {a,b}, so z has degree two in J as well, and z is outside {x,y}.
+        
+        Any nonempty K4-minor-free graph has a vertex of degree at most two. For a graph that is not 2-connected, take an end block: an edge end block gives a degree-one vertex; in a 2-connected end block use the preceding assertion with an edge incident to its possible cut vertex. The resulting degree-two vertex is not the cut vertex and has no neighbors outside that block. The connected graph consisting of one block, isolated vertices, and disconnected graphs are immediate variants. Apply this argument to every induced subgraph to obtain 2-degeneracy.
+        
+        Deleting a vertex of degree at most two repeatedly, down to two vertices, gives |E(G)|<=2(m-2)+1=2m-3. Greedy coloring in reverse deletion order uses at most three colors. One color class has size at least ceil(m/3) and is a pairwise incompatible family of deletion covers. The same degeneracy statement on any t-vertex induced subgraph supplies a cover compatible with at most two, and hence incompatible with at least t-3, of the other selected covers. Finally,
+        
+            binom(m,2)-(2m-3)=(m-2)(m-3)/2
+        
+        is the stated incompatible-pair bound.
+        
+        
+        Scope: no absence-of-order-disagreement hypothesis, longest-path assumption, or minimal-counterexample hypothesis is used. This does not prove existence of a K4 minor for any choice of covers and does not close the grand conjecture. The live conditional degree-four result remains a complementary statement.
+
+    • [1000929] Arbitrary selected deletion supports form a forest or a spanning odd cycle
+        STATEMENT
+        Let H be a finite boundary 3-tournament with pc(H)>2. Choose one two-cover A_d|B_d of H-d for each distinct label d in D. In the simple graph J of distinct component supports, join A_d to B_d by the edge labeled d. Then J is a forest, or D=V(H), n=|V(H)| is odd, and J is a single n-cycle whose supports all have size (n-1)/2. Two chosen covers are support-compatible exactly when their selected edges share a support vertex; consequently the support-compatibility graph is L(J). Tree components have the support and symmetric-difference formulas proved below and a constant unordered deletion-cover size profile. If J is connected and D=V(H), a tree J must branch. In the odd-cycle case n=2k+1, with edge S_i S_{i+1} labeled d_i, S_i={d_{i+1},d_{i+3},...,d_{i+2k-1}} (indices modulo n).
+        BODY / PROOF
+        Retain H with pc(H)>2, a set D of distinct deletion labels, and one chosen two-cover F_d=A_d|B_d of H-d for each d in D. Each cover has exactly two nonempty paths. Neither path is a singleton: otherwise adding the omitted vertex d to the singleton makes a two-vertex tight path, which together with the other component would two-cover H.
+        
+        Form a simple graph J whose vertices are the distinct component supports appearing in these covers, and whose edge e_d joins A_d to B_d. The label of e_d is d. The graph is simple, because a pair of supports determines its union and therefore determines the unique omitted vertex. It has no isolated vertices by construction.
+        
+        **Theorem.** Exactly one of the following holds:
+        
+        1. J is a forest.
+        2. D=V(H), n=|V(H)| is odd, and J is a single cycle of length n. Every component support in the cycle has size (n-1)/2.
+        
+        In particular, a proper subset of the deletion labels always yields a forest.
+        
+        **Proof.** Fix a ground vertex x. On every selected edge other than e_x, exactly one endpoint support contains x. Thus membership of x gives a bipartition of J-e_x; if x is not a selected deletion label, it gives a bipartition of all of J. The endpoints of e_x both omit x.
+        
+        Suppose J contains a cycle C of length ell, and let e_x be one of its edges. The remaining path C-e_x connects two supports omitting x, and membership of x alternates at each edge of this path. Consequently ell-1 is even, and ell is odd.
+        
+        If a ground vertex y is not among the labels of C, membership of y alternates around all of C, impossible on an odd cycle. Hence the labels of C are all the ground vertices. Because selected edge labels are distinct, no selected edge lies outside C. There are no isolated support vertices, so J=C and D=V(H).
+        
+        On every cycle edge the endpoint support sizes sum to n-1. Alternating this identity around the odd cycle forces every support size to be (n-1)/2. This proves the dichotomy.
+        
+        This proof is the elementary membership argument behind the loaded sharp-shell statement. Its hypotheses show that the sharp-shell restriction is unnecessary. The conclusion does NOT say that these balanced paths are globally longest.
+        
+        ### Support compatibility is exactly a shared component support
+        
+        **Lemma.** Two chosen deletion covers F_a and F_b are support-compatible if and only if they share a component support.
+        
+        **Proof.** A shared support immediately gives agreement of the two restricted support partitions. Conversely suppose the restricted partitions agree. Write F_a=A|B with b in A. Since neither component is a singleton, the common partition on H-{a,b} consists of the two nonempty classes A-{b} and B. In F_b the restored vertex a belongs to one of these classes. If it joins B, then A and B+{a} are disjoint Hamiltonian supports covering H, a contradiction. Therefore it joins A-{b}, and B is a component support of both covers.
+        
+        It follows that the graph of support compatibility of the chosen covers is exactly the line graph L(J). The full compatibility graph G is a subgraph of L(J); agreement of the path orders is its additional requirement. This assertion concerns support compatibility, not the ordinary graph-theoretic supports of components of G.
+        
+        ### Exact support sets in a tree component
+        
+        Let T be a tree component of J, let L be its set of ground-vertex edge labels, and fix its bipartition X,Y. Put Z=V(H)-L. There is a partition Z=Z_X disjoint-union Z_Y such that every support vertex in X contains precisely Z_X from Z, and every support vertex in Y contains precisely Z_Y from Z. Indeed, for a ground vertex outside L, membership alternates on every edge of T.
+        
+        For a support vertex u in X,
+        
+            S_u = Z_X union { label of the first edge on the path from x to u : x in X-{u} }.
+        
+        For a support vertex v in Y,
+        
+            S_v = Z_Y union { label of the first edge on the path from y to v : y in Y-{v} }.
+        
+        Here a vertex of J is itself a support set; S_u is used merely to distinguish the support from the graph vertex in the formulas.
+        
+        **Proof.** Root T at u in X. An edge label e is absent from both endpoint supports of its edge. Along the path from an endpoint to u, membership in the label alternates at every other edge. If the endpoint of its edge nearer u has depth h, then e belongs to S_u exactly when h is odd, equivalently when the farther endpoint has even depth. These are precisely the parent edges of the vertices x in X-{u}. Their labels are distinct. This gives the formula. The Y formula is identical.
+        
+        In particular all X-supports have size |Z_X|+|X|-1, and all Y-supports have size |Z_Y|+|Y|-1. The two sizes sum to n-1, and every selected deletion cover belonging to this tree component has this same unordered size profile.
+        
+        There are also exact distance formulas. If u,v lie in the same bipartition class and P_T(u,v) is their tree path, then
+        
+            S_u symmetric-difference S_v = labels(P_T(u,v)).
+        
+        If they lie in opposite classes, then
+        
+            S_u symmetric-difference S_v = V(H)-labels(P_T(u,v)).
+        
+        To verify these, remove an edge with label e. Along any path not crossing that edge, membership of e alternates with bipartition class; the two endpoints of the removed edge both omit e. If u,v are on the same side of the edge, their memberships agree precisely when their classes agree. If the edge separates u,v, that condition is reversed. Ground vertices outside L belong to exactly one bipartition class throughout T. These observations give the displayed identities.
+        
+        ### Explicit cycle supports
+        
+        In the exceptional case n=2k+1, write the cycle support vertices as S_0,...,S_{n-1} and let d_i label S_i S_{i+1}, with indices modulo n. Then
+        
+            S_i = {d_{i+1}, d_{i+3}, ..., d_{i+2k-1}}.
+        
+        This follows by starting at the edge bearing a specified label, where membership is zero at both ends, and alternating around the rest of the cycle. Equivalently, S_i is the set of labels of the unique perfect matching of the support-cycle with vertex S_i removed.
+        
+        Again, this is a description of the chosen balanced covers. It does not assert that their order k is the maximum tight-path order in H.
+        
+        ### A connected support graph cannot be a spanning tree path
+        
+        Suppose J is connected and a tree, and D=V(H). If J were a path of odd length, its endpoints would lie in opposite classes. Their tree path contains all ground labels, so the opposite-class symmetric-difference formula would make their support sets equal. They would be the same vertex of J, a contradiction.
+        
+        If J were a path of even length, its endpoints would lie in the same class. Their support symmetric difference would be all of V(H); thus they would be disjoint Hamiltonian supports whose union is V(H), giving a two-cover. This is also impossible.
+        
+        Therefore a connected selected support graph must either branch as a tree or be the exceptional odd cycle. This is a structural statement for arbitrary orders, not a fixed-small-order analysis.
+        
+        
+        Scope: this removes the sharp-half-order and minimum-counterexample assumptions of 1000829. It does not say the balanced paths in the cycle are globally longest. The proof is self-contained; 1000829 is provenance, not a logical premise.
+
+      • [1000930] Compatibility blocks retain one fixed Hamilton path except for a spanning odd cycle
+          STATEMENT
+          Under the hypotheses of the arbitrary selected-support theorem, every edge block and every cyclic block of the full-compatibility graph G has one fixed ordered Hamilton path Q shared by all of its covers, except possibly when G itself is a spanning odd cycle with balanced selected covers. In a block with shared Q, the other path at label d has support V(H)-Q-{d}, and V(H)-Q is non-Hamiltonian. In particular, if G is 2-connected and its label set is V(H), then G is the spanning odd cycle and all its deletion-cover paths have order (|V(H)|-1)/2.
+          BODY / PROOF
+          Let H,D,F_d,J,G be as in 1000929. A block here means a maximal 2-connected subgraph or a bridge with its endpoints; isolated vertices are excluded.
+          
+          
+          If J is a forest, each block of L(J) is the clique formed by the edges incident to a fixed nonleaf vertex of J. This follows directly from the fact that an edge of a tree whose two endpoints are nonleaves is a cut vertex of its line graph: deleting that line-graph vertex separates the edges on its two sides. Consequently any 2-connected subgraph of the full compatibility graph G lies in one such clique. All covers indexed by that subgraph therefore share one component support Q.
+          
+          Moreover, they share the same displayed Hamilton order on Q. Along every compatibility edge the order on Q agrees, and the subgraph is connected. The other path in each cover has support V(H)-Q-{d}. Thus all variation in this block occurs within one fixed non-Hamiltonian set V(H)-Q, while Q is one fixed Hamilton path. The set V(H)-Q is non-Hamiltonian because otherwise its Hamilton path together with Q would two-cover H.
+          
+          The same assertion for a bridge block is the shared-support lemma plus compatibility. If J is the exceptional odd cycle, L(J) is that same cycle, and G is a subgraph of it. Hence either G has no cyclic block, or G is the full spanning odd cycle.
+          
+          We obtain the following global description: every cyclic block of G carries one fixed Hamilton path, except possibly when G itself is a spanning odd cycle and all its selected deletion covers are balanced.
+          
+          In particular, if G is 2-connected and its labels are all of V(H), then it must be this spanning odd cycle. Indeed, in the forest case a common support Q carried by all covers would omit every ground vertex (the cover at d omits d), forcing Q to be empty, which is impossible.
+          
+          
+          No statement about globally longest paths or gluing of these ordered blocks is asserted.
+
+        • [1000942] Full deletion compatibility leaves only transport, disagreement, or a disturbed balanced odd cycle
+            STATEMENT
+            Let H be a minimum counterexample and choose one deletion two-cover F_v of H-v for every vertex v. Then at least one of the following holds: (1) two chosen covers are support-compatible but order-incompatible; (2) for some anchor F_x=P|Q and some endpoint y of P or Q, the chosen cover F_y contains an ordinary path edge joining surviving vertices from the two support classes of F_x; (3) |V(H)|=2k+1 and the chosen supports form the spanning balanced odd-cycle configuration, but this cycle has a positioned two-deletion disturbance: for some consecutive cycle labels x_i,x_{i+1}, a two-cover of H-{x_i,x_{i+1}} crosses the three inherited pieces at an internal exchanged label, or the two inherited endpoint-deleted covers have relative-order disagreement. In case (3), if lambda is the maximum tight-path order then tau*(H)<=2+1/lambda<=2+1/k.
+            BODY / PROOF
+            Assume no support-compatible order disagreement among the chosen deletion covers. By the fixed-path block structure of 1000930, every ordinary cyclic block of the full-compatibility graph carries one common ordered Hamilton path. Such a block is K4-minor-free by 1000928, hence has a degree-two vertex d. Let a,b be its block-neighbors. If ab is absent, then F_a and F_b share the common block support but are not fully compatible, so they are order-incompatible, contradiction. If ab is present, a,b,d form a compatibility triangle. Deleting d preserves 2-connectivity; iterating the degree-two peel either exposes the preceding nonadjacent-neighbor disagreement or reaches a compatibility diamond. The common-gap theorem gapgeom01 rules out a fourth state compatible with two vertices of a cyclic triangle, while a transitive diamond forces pair-order reversal. Thus every ordinary cyclic block with at least four vertices contradicts the no-disagreement assumption. A triangle block is consumed by compatibility_triangle_endpoint_transport01: unless order reversal occurs, it yields a direct endpoint mixed-support edge, giving (2). Therefore, if neither (1) nor (2) occurs, there are no ordinary cyclic blocks unless the whole graph is the exceptional spanning balanced odd cycle. If instead the compatibility graph is a forest, choose a leaf x and write F_x=P|Q. If x has one compatibility neighbor, choose Q to be the anchor side not containing it; if x is isolated choose either side. The two endpoint deletion covers of Q exist because every vertex deletion has been selected, and neither endpoint label is adjacent to x. With order disagreement excluded, both endpoint covers are support-incompatible with F_x. The two-endpoint probe theorem 1000934 then yields a direct P-Q path edge in one endpoint cover or order disagreement, giving (2) or (1). Hence failure of (1),(2) forces the spanning balanced odd support cycle on n=2k+1 labels. Because H is a minimum counterexample, every consecutive double deletion has a two-cover. The strengthened odd-cycle theorem 1000943 therefore applies and supplies the positioned three-part crossing or inherited relative-order disagreement stated in (3). Finally 1000931 gives a canonical fractional path cover of mass 2+1/|T| for every nonempty tight path T in this odd-cycle configuration. Taking T longest gives tau*(H)<=2+1/lambda, and lambda>=k because the selected supports themselves are Hamiltonian k-sets, so tau*(H)<=2+1/k. No claim lambda>=k+1 is made without an additional consumer of the three-part crossing.
+
+      • [1000931] An odd deletion-support cycle gives fractional mass-two certificates and a dual obstruction
+          STATEMENT
+          Assume the selected support graph of deletion covers is an odd cycle on n=2k+1 supports S_i, with edge S_i S_{i+1} labeled d_i. For every nonempty tight-path support T, let I(T),O(T),C(T) be the ground-cycle edges with respectively two, zero, or one endpoint in T. Then the exact nonnegative incidence identity 1_T+2 sum_{i in I(T)}1_{S_i}+sum_{i in C(T)}1_{S_i}=|T| 1_V holds. Hence T together with the selected supports gives a fractional path cover of total mass exactly 2+1/|T|. In particular, if lambda is the maximum tight-path order, tau*(H)<=2+1/lambda (and the selected cycle alone gives 2+1/k). If T is a vertex cover of the ground cycle, the sharper identity from the proof gives fractional mass two; when |T|=k+1 this is an integral two-cover. More generally tau*(H)<=2 iff there is a distribution of tight-path supports with adjacent marginal sums at least one, and every dual obstruction above two has the exact sigma-description proved below.
+          BODY / PROOF
+          Let n=2k+1, and suppose the selected support graph is the cycle with support vertices S_0,...,S_{n-1} and deletion labels d_i on S_i S_{i+1}. Indices are modulo n. Each S_i is a Hamiltonian k-set, and
+          
+              1_{S_i}+1_{S_{i+1}} = 1_V-1_{d_i},
+              sum_i 1_{S_i} = k 1_V.
+          
+          Define the ordinary cycle C on the ground vertices d_0,...,d_{n-1}, with edges {d_{i-1},d_i}. This ground-vertex cycle is distinct from the support graph, although their indices naturally correspond.
+          
+          ### A Hamiltonian vertex cover of C gives a fractional cover of mass two
+          
+          **Theorem.** Suppose T is the support of a tight path and is a vertex cover of C. Write |T|=k+r; necessarily r>=1. Let
+          
+              I(T)={i : d_{i-1} and d_i both belong to T}.
+          
+          Then |I(T)|=2r-1 and
+          
+              1_T + sum_{i in I(T)} 1_{S_i} = r 1_V.
+          
+          Consequently the tight path on T and the tight paths on S_i for i in I(T), each with weight 1/r, form a fractional path cover with every vertex covered exactly once and total mass exactly two. When r=1, these are two disjoint spanning paths, so this case directly gives an integral two-cover.
+          
+          **Proof.** Put t_i=1_T(d_i) and a_i=t_{i-1}+t_i. Since T covers every edge of C, a_i is either one or two, and a_i-1 is the indicator of I(T). Using the cycle identities,
+          
+              sum_i a_i 1_{S_i}
+                = sum_j t_j (1_{S_j}+1_{S_{j+1}})
+                = |T| 1_V-1_T.
+          
+          Subtract sum_i 1_{S_i}=k 1_V. This gives
+          
+              sum_{i in I(T)} 1_{S_i}=(|T|-k)1_V-1_T=r1_V-1_T.
+          
+          Also sum_i a_i=2|T|, while sum_i a_i=n+|I(T)|. Therefore |I(T)|=2(k+r)-(2k+1)=2r-1. There are 2r path supports in the displayed cover, each with weight 1/r, proving mass two and exact vertex coverage. For r=1 the incidence identity says that T and the single selected S_i are disjoint and cover V.
+          
+          No agreement between Hamilton orders on different supports is needed for this fractional construction. In a hypothetical counterexample the r=1 case is impossible; the theorem does not assume that a Hamiltonian vertex cover exists for r>=2.
+          
+          ### The signed identity for an arbitrary additional path
+          
+          For any subset T, including one which does not cover C, define
+          
+              I(T)={i : both d_{i-1},d_i are in T},
+              O(T)={i : neither d_{i-1},d_i is in T}.
+          
+          The same calculation gives
+          
+              1_T + sum_{i in I(T)}1_{S_i}
+                = (|T|-k)1_V + sum_{i in O(T)}1_{S_i}.
+          
+          Thus the edges of C missed by T identify exactly the negative coefficients that obstruct the preceding positive fractional-cover construction. This keeps the particular cyclic support configuration visible.
+          
+          ### A distributional version and an exact criterion for fractional mass two
+          
+          Let P be a random tight-path support, with marginal inclusion probabilities p_i=Pr(d_i in P), and put L=E|P|=sum_i p_i. Suppose
+          
+              p_{i-1}+p_i >= 1 for every i.
+          
+          Summing these inequalities gives L>=n/2=k+1/2, so r=L-k>0. Taking expectations in the signed identity shows
+          
+              E 1_P + sum_i (p_{i-1}+p_i-1)1_{S_i} = r 1_V.
+          
+          Give each path in the distribution its probability divided by r, and give S_i the additional weight (p_{i-1}+p_i-1)/r. These weights are nonnegative. They cover every vertex exactly once, and their total mass is
+          
+              [1+sum_i(p_{i-1}+p_i-1)]/r
+                = [1+2L-n]/(L-k)
+                = 2.
+          
+          Conversely, if H has a fractional path cover of mass at most two, add weight on any nonempty tight path until the mass is two and normalize the weights to a probability distribution. Every vertex then has inclusion probability at least one half, so the adjacent marginal inequalities hold. Therefore, in the presence of the selected odd support cycle, fractional path-cover number at most two is equivalent to the existence of a distribution of tight paths satisfying just these adjacent marginal inequalities. The single Hamiltonian vertex-cover theorem is the deterministic special case.
+          
+          This is a constructive equivalence. It does not assert that the required distribution exists.
+          
+          ### Every dual certificate above two has an explicit form on C
+          
+          Let w be any nonnegative dual-feasible vertex weighting, so w(P)<=1 for every tight path P, and suppose w(V)=2+eta with eta>0. Put
+          
+              sigma_i=1-w(S_i)>=0.
+          
+          The deletion-cover identity S_i disjoint-union S_{i+1}=V-{d_i} gives
+          
+              w(d_i)=eta+sigma_i+sigma_{i+1}.
+          
+          Summing the path slacks, or summing this formula, gives
+          
+              sum_i sigma_i=1-k eta.
+          
+          For any tight-path support T, with a_i=1_T(d_{i-1})+1_T(d_i),
+          
+              w(T)=1+eta(|T|-k)+sum_i sigma_i(a_i-1).
+          
+          Dual feasibility is therefore equivalent, for each such T, to
+          
+              sum_{i in O(T)} sigma_i
+                >= eta(|T|-k)+sum_{i in I(T)} sigma_i.
+          
+          In particular, every tight path of order greater than k must miss a cycle edge with positive sigma-weight; the missed-edge weight must pay both its size surplus and the sigma-weight of the cycle edges wholly contained in the path. A Hamiltonian vertex cover has O(T) empty and |T|>k, immediately contradicting this inequality. This is the dual proof of the fractional two-cover criterion.
+          
+          Conversely, eta>0 and nonnegative sigma_i with sum sigma_i=1-k eta define w(d_i)=eta+sigma_i+sigma_{i+1}; if the displayed inequalities hold for all tight paths, w is dual feasible and has total mass 2+eta. Thus this is an exact description of dual obstructions above two in this cyclic configuration, not merely a necessary estimate.
+          
+          
+          Scope: neither existence of the qualifying path/distribution nor integral rounding for r>1 is proved. The cycle is not eliminated. The incidence identities follow from 1000929; the remaining calculations are elementary and require no unproved rounding or uncrossing premise.
+
+      • [1000936] Odd support-cycle order transport forces linearly many adjacent-slot reversals
+          STATEMENT
+          Assume the selected deletion-support graph is the spanning odd cycle from 1000929, with n=2k+1 support vertices S_i and deletion labels d_i, and assume that whenever two selected deletion covers are support-compatible they are fully compatible. Let P_i be the resulting canonical Hamilton order on S_i. For each i, the compatible-pair localization applied to the consecutive covers F_{d_i}=P_i|P_{i+1} and F_{d_{i+1}}=P_{i+1}|P_{i+2} shows that P_i and P_{i+2}, on their common support S_i∩S_{i+2}, differ by inserting d_{i+1} and d_i in identical or adjacent slots. Around the whole odd cycle, at least k-1=(n-3)/2 of these transitions are adjacent-slot transitions. In particular at least one adjacent-slot transition exists, and each such transition yields the local reversing triple supplied by the compatible-pair localization theorem.
+          BODY / PROOF
+          Write the support cycle as S_0,S_1,...,S_{2k}, with edge S_iS_{i+1} labeled d_i (indices modulo 2k+1). Because the two deletion covers incident with S_i are support-compatible and, by hypothesis, not order-incompatible, they induce one canonical Hamilton order P_i on S_i.
+          
+          The explicit support formula from 1000929 gives
+          S_i∩S_{i+2}=S_i-{d_{i+1}}=S_{i+2}-{d_i}.
+          The consecutive deletion covers
+          F_{d_i}=P_i|P_{i+1}
+          and
+          F_{d_{i+1}}=P_{i+1}|P_{i+2}
+          are fully compatible. Applying the compatible-pair localization theorem to this pair shows that P_i and P_{i+2} arise from one common order on S_i∩S_{i+2} by inserting d_{i+1} and d_i, respectively, either in the same slot or in adjacent slots. In the adjacent-slot case the theorem supplies the associated reversing triple through the intervening common vertex.
+          
+          To count adjacent-slot transitions, follow the k position strands under the step i→i+2. If every transition were same-slot, the replacement d_{i+1}→d_i would preserve all positions. More generally, each adjacent-slot transition performs one adjacent transposition of the position strands, while each same-slot transition performs none. After one complete circuit of the support cycle, the labels return to the starting support but the deterministic replacement rule induces a k-cycle on the strands. Therefore the product of the transpositions supplied by the adjacent-slot transitions must undo a k-cycle.
+          
+          A k-cycle requires at least k-1 transpositions in any factorization. Hence the number t of adjacent-slot transitions satisfies
+          t≥k-1=(n-3)/2.
+          Also t≡k-1 mod 2 by parity. Thus at least one adjacent-slot transition exists, and in fact there are linearly many such local reversal events.
+          
+          The argument uses only the spanning odd support-cycle structure of 1000929, canonical order agreement on support-compatible pairs, and the compatible-pair localization theorem. It does not by itself glue these reversals into a spanning two-cover.
+
+      • [1000938] Branching in a reduced support tree prevents rounding by two selected paths
+          STATEMENT
+          Let H be a finite boundary 3-tournament with pc(H)>2, with one two-cover selected for every deletion. Suppose its selected support graph J is a connected tree, with support S_u at vertex u. For distinct u,v, S_u union S_v=V(H) if and only if the u-v tree path P has even length and every edge outside P is pendant and attached at odd distance from u along P; then S_u intersect S_v is exactly the set of labels outside P. In particular, suppose J has bipartition X,Y with |X|>|Y|, deg(x)<=2 for x in X and deg(y)>=2 for y in Y. Let K be the tree on Y obtained by deleting X-leaves and suppressing remaining degree-two X-vertices. The fractional cover number restricted to {S_u} is two, but a pair of selected supports has spanning union if and only if K is a path. If K branches, no selection and trimming of two displayed paths can give a spanning two-cover. This is a conditional obstruction within the selected family, not a counterexample to general rounding.
+          BODY / PROOF
+          Let H, J, and S_u be as in the connected selected-support tree theorem: pc(H)>2, one deletion cover is selected at every ground label, and J is a tree with those labels as its edges. Let u,v be distinct vertices of J, and let P be their unique tree path.
+          
+          **Lemma.** S_u union S_v=V(H) if and only if P has even length and every edge outside P is a pendant edge attached to an odd-distance vertex of P, with distance measured from u. In that case S_u intersect S_v is exactly the set of labels of the edges outside P.
+          
+          **Proof.** Membership of an edge label e in S_w is determined by the parity of the distance from w to the nearer endpoint of e: membership holds precisely when that distance is odd. This is the rooted tree formula of 1000929.
+          
+          If P has odd length, its first edge has distance zero from u and even distance from v. Its label is therefore absent from both supports, so their union is not V(H).
+          
+          Suppose P has even length. The symmetric-difference formula in 1000929 gives S_u symmetric-difference S_v=labels(P). Thus every edge label on P belongs to exactly one support, while every label off P belongs either to both or to neither.
+          
+          An off-path branch begins at a path vertex p at distance j from u. The first edge of that branch belongs to both supports exactly when j is odd. If the branch has a second edge, that edge has nearer-endpoint distance j+1, so when the first edge is included, the second is omitted by both supports. Therefore all off-path labels can be covered only when every off-path edge is pendant and attached at an odd-distance path vertex. Conversely, under that condition every off-path edge label belongs to both supports. This proves both claims.
+          
+          ## Consequence for the mass-two tree shapes
+          
+          Suppose J has bipartition X,Y with |X|>|Y|, every X-vertex of degree at most two, and every Y-vertex of degree at least two. Form a tree K on Y by deleting the X-leaves and suppressing each remaining degree-two X-vertex. The edges of K correspond to two-edge paths of J; this construction is well-defined because every nonleaf X-vertex has degree two. Here |Y|>=3, as each selected deletion component has order at least two.
+          
+          **Corollary.** Two selected supports have union V(H) if and only if K is a path.
+          
+          For necessity, the lemma forces every vertex off the path P in J to be a leaf in the same bipartition class as its endpoints. The endpoints cannot lie in Y, since every Y-vertex has degree at least two and the lemma allows no extra edge at either endpoint. Hence the endpoints lie in X, and every Y-vertex lies on P. All the edges of K are therefore on one path, so K is a path.
+          
+          For sufficiency, if K is a path, each of its two end Y-vertices has at least one adjacent X-leaf in J: its degree in J is at least two, and only one incident edge leads into K. Choose one such leaf at each end. Their path in J has even length, contains every degree-two X-vertex and every Y-vertex, and all its omitted edges are X-leaf edges attached to Y-vertices. These are exactly the odd-distance vertices along the path. The lemma applies.
+          
+          For these two supports, their intersection is the set of the other leaf-edge labels. The displayed Hamilton orders on that intersection need not agree, and its vertices need not occupy removable end segments. A spanning union therefore still does not establish a spanning two-cover.
+          
+          In particular, if K branches, NO pair of selected supports has a spanning union, even though the selected-support family has fractional cover number two, as proved below. Any integral two-cover in H would have to use at least one Hamiltonian support outside this selected family. This is a conditional structural obstruction to rounding within the selected family, not a constructed counterexample to the grand conjecture or to general fractional rounding.
+          
+          
+          ## Fractional mass two within the same family
+          
+          For completeness the fractional claim used in this fence is proved here, so no unpublished premise is needed. Put a=|X|, b=|Y|, r=a-b>0 and s_u=1_{S_u}. There are n=a+b-1 ground labels. Rooting the tree at x in X, the support formula of 1000929 identifies S_x with the parent edges of X-{x}. Sum the identities s_u+s_v=1_V-1_d over these edges and move s_x to the left. This gives
+          sum_X s_x + sum_Y(deg(y)-1)s_y=(a-1)1_V.
+          Rooting in Y gives
+          sum_Y s_y + sum_X(deg(x)-1)s_x=(b-1)1_V.
+          Subtracting,
+          sum_X(2-deg(x))s_x + sum_Y(deg(y)-2)s_y=r1_V.
+          All coefficients are nonnegative under the stated degree conditions and their sum is 2r. Division by r gives a fractional cover of mass two using only the selected supports, with each ground vertex covered once.
+          
+          This is also optimal within that family. Since |Y|>=3 and X has maximum degree two, some X-vertex x has degree two. Give weight one to each of its two incident ground-edge labels and zero to all other labels. S_x contains neither. For every other support vertex u, the nearer-endpoint distances from u to these two edges differ by one, so S_u contains exactly one of their labels by the membership parity formula. Thus no selected support has weight exceeding one, while the ground set has weight two. This supplies a restricted dual lower bound of two.
+          
+          Scope: this restricted dual weighting is not asserted feasible on all tight paths. Neither existence of a counterexample H with this tree shape nor failure of general fractional rounding is asserted. The conclusion identifies what an integral construction would have to add: when K branches, at least one resulting path must have support outside the selected family, and trimming any two selected paths is insufficient. When K is a path the spanning-union criterion removes this set-theoretic obstruction, but the overlapping Hamilton orders still require a genuine gluing argument.
+
+    • [1000937] Complementary one-hole bipartitions form a forest or a full odd cycle
+        STATEMENT
+        Let V be a finite set and D a set of distinct elements of V. For each d in D let A_d,B_d be disjoint subsets with A_d union B_d=V-{d}. Form the simple graph J whose vertices are the distinct sets occurring among the A_d,B_d and whose edge e_d joins A_d to B_d. Then either J is a forest, or D=V, |V| is odd, and J is one cycle of length |V|; in the cyclic case every support vertex has size (|V|-1)/2. For every tree component, the support sets and their symmetric differences are determined exactly by the tree bipartition and the edge labels as in the proof.
+        BODY / PROOF
+        This is a pure finite-set incidence statement. Fix x in V. On every selected edge e_d with d different from x, exactly one endpoint contains x, while both endpoints of e_x omit x when x is selected. Thus membership of x gives a bipartition of J-e_x, and of all J if x is not selected. If a cycle C contains e_x, then along C-e_x membership of x alternates between two endpoints both omitting x, so C has odd length. If some y in V is not a label of C, membership of y alternates around all of the odd cycle, impossible. Hence the labels of C are all of V. Distinct selected labels then leave no edge outside C, and since every support vertex is incident with a selected edge, J=C and D=V. On each cycle edge the endpoint sizes sum to |V|-1; alternating around the odd cycle forces every size to (|V|-1)/2. Now let T be a tree component, L its edge-label set, X,Y its bipartition, and Z=V-L. Membership of each z in Z alternates across every edge of T, so Z=Z_X disjoint-union Z_Y where every X-support contains exactly Z_X from Z and every Y-support exactly Z_Y. Rooting at u in X gives S_u=Z_X union {label of the first edge on the path from x to u: x in X-{u}}, and symmetrically for Y. Hence all X-supports have size |Z_X|+|X|-1 and all Y-supports size |Z_Y|+|Y|-1. If u,v lie in the same bipartition class, S_u symmetric-difference S_v is the label set of their tree path; if they lie in opposite classes, it is V minus that label set.
+
     • [compatanchorclass05] Anchored incompatibility splits into support switches and near-label transport
         STATEMENT
         Let F_d=P|Q be a chosen deletion cover of H-d, and let a,b be distinct neighbors of d in the compatibility graph. For each neighbor y in {a,b}, compatibility of F_y with F_d implies that in F_y the restored label d lies in the same support class in which y lies in F_d, and its insertion slot is equal or adjacent to the reinsertion slot of y in the corresponding anchor path with y deleted. Consequently, if a and b lie in different paths of F_d, then F_a and F_b are support-incompatible on V(H)-{a,b}, with d switching between the two anchor support classes. If a and b lie in the same path of F_d, then F_a and F_b are support-compatible; if they are incompatible, their disagreement is purely relative order involving d, and the two positions of d are each localized to the equal-or-adjacent slot neighborhood of a and b respectively.
@@ -31105,6 +33077,28 @@
           If B is the same-path class, then a and b lie in one fixed anchor path for every b in B. Thus F_a and F_b are support-compatible. Since they are incompatible, their disagreement is purely relative order involving d. The compatible-pair normal form localizes the position of d in F_a to the equal-or-adjacent slot neighborhood of a and its position in F_b to the equal-or-adjacent slot neighborhood of b.
           
           Hence high compatibility degree cannot remain amorphous: after choosing one compatible partner a, a linear subfamily has one uniform mechanism, either repeated support switching of d across the two anchor paths or repeated transport of d along one fixed anchor path.
+
+    • [1000943] Odd cycles of selected deletion supports force two-deletion disturbance
+        STATEMENT
+        Let H be a boundary 3-tournament with pc(H)>2. Suppose S_0,...,S_{m-1} is an odd cycle of distinct Hamiltonian supports and, for each i modulo m, fixed Hamilton orders on S_i,S_{i+1} form a deletion two-cover F_{x_i}=S_i|S_{i+1} of H-x_i, with the labels x_i all distinct. Assume moreover that H-{x_i,x_{i+1}} admits a two-cover T_i for every i. Then for some i the length-two support-cycle transition S_i-S_{i+1}-S_{i+2} has a non-clean two-deletion outcome: T_i crosses the three inherited path pieces obtained by deleting an internal exchanged label, or the two endpoint-deleted inherited covers exhibit relative-order disagreement. Thus no odd selected-support cycle with distinct labels can be clean around the cycle whenever the consecutive double deletions are two-coverable. No minimum-counterexample, longest-path, or a priori balanced-size hypothesis is required.
+        BODY / PROOF
+        The complementary deletion identities alone give V(H)=S_i disjoint-union S_{i+1} disjoint-union {x_i} and V(H)=S_{i+1} disjoint-union S_{i+2} disjoint-union {x_{i+1}}. Since x_i!=x_{i+1}, one has x_{i+1} in S_i, x_i in S_{i+2}, and S_{i+2}=(S_i-{x_{i+1}}) union {x_i}; in particular the support sizes are automatically constant around the odd step-two cycle, so no separate balanced-size assumption is needed. Put K_i=S_i-{x_{i+1}}=S_{i+2}-{x_i}. Apply the certified two-deletion endpoint trichotomy in deletion01 to F_{x_i},F_{x_{i+1}},T_i. If x_{i+1} is internal in its S_i component, the trichotomy gives an ordinary edge of T_i crossing the three nonempty inherited pieces of F_{x_i}-x_{i+1}; symmetrically if x_i is internal in S_{i+2}. Otherwise both exchanged labels are endpoints. Deleting them gives two covers of H-{x_i,x_{i+1}} with common support partition {K_i,S_{i+1}}. If the ordered covers differ, deletion01 gives relative-order disagreement, necessarily on K_i because the displayed S_{i+1} order is fixed in both incident covers. The only clean branch is therefore that the inherited covers coincide and x_{i+1},x_i restore at the same end of the same ordered K_i component. Let epsilon_i be this replacement side. Comparing steps i and i+2, the fixed Hamilton order on S_{i+2} has x_i at side epsilon_i. If epsilon_{i+2}=epsilon_i then the label removed by the next clean step must satisfy x_{i+3}=x_i, contradicting distinctness. Hence epsilon_{i+2} differs from epsilon_i for every i. Because m is odd, addition by two modulo m is one cycle, so following it flips the side an odd number of times and returns to the same index with the opposite side, impossible. Thus at least one transition is non-clean. Minimum-counterexample status was used in the original formulation only to guarantee the existence of the T_i and is not a logical hypothesis once those covers are assumed.
+
+    • [1000948] Every selected deletion-cover transversal forces a positioned transport disturbance
+        STATEMENT
+        Let H be a minimum counterexample and choose one exact two-cover F_v of H-v for every vertex v. Then at least one of the following holds: (A) two selected covers are support-compatible but order-incompatible; (B) for some anchor F_x=P|Q and an endpoint y of P or Q, F_y contains an ordinary edge joining surviving P- and Q-vertices; (C) the selected supports form the balanced spanning odd cycle, and for some consecutive double deletion H-{a,b}, an exact two-cover crosses two of the three nonempty inherited path pieces created by deleting an internal exchanged label. Thus an arbitrary selected deletion family always exposes a positioned input to endpoint transport/defect compression; the balanced odd cycle is not a featureless terminal branch.
+        BODY / PROOF
+        Choose one exact deletion two-cover F_v of H-v for every v in V(H).
+        
+        Apply 1000942. If its first alternative occurs, there is a selected pair of covers that is support-compatible but order-incompatible, giving outcome (A). If its second alternative occurs, there is an anchor F_x=P|Q and an endpoint y of P or Q such that the chosen cover F_y contains an ordinary edge joining surviving vertices of P and Q, giving outcome (B).
+        
+        It remains to treat the third alternative of 1000942. Then n=2k+1 and the selected support graph is a spanning odd cycle whose supports all have order k. Write the support cycle as S_0,S_1,...,S_{n-1}, with edge S_iS_{i+1} the selected cover F_{x_i} of H-x_i.
+        
+        If two consecutive selected covers are support-compatible but order-incompatible, outcome (A) already holds. Hence assume (A) is absent. Consecutive covers on the support cycle are support-compatible on their common double-deletion domain, so they are then fully compatible. In particular their common support orders agree, and one may choose one canonical Hamilton order on each support S_i that is used by both incident selected covers.
+        
+        Now apply 1000943 to this balanced odd support cycle. For arbitrary exact two-covers T_i of H-{x_i,x_{i+1}}, some length-two transition S_i-S_{i+1}-S_{i+2} has a non-clean endpoint-trichotomy outcome. The relative-order-disagreement branch of 1000943 is impossible here, because the two consecutive selected covers are fully compatible and therefore their endpoint-deleted restrictions to H-{x_i,x_{i+1}} have the same ordered support data. Consequently the non-clean outcome is an inherited three-part crossing: one exchanged label is internal in its selected-cover component, and T_i contains an ordinary edge crossing two of the three nonempty inherited path pieces left after its deletion. This is outcome (C).
+        
+        Thus every arbitrary selected deletion-cover transversal in a minimum counterexample exposes at least one of the three positioned disturbance types (A)–(C). The earlier fractional odd-cycle residue remains useful quantitatively, but it is no longer a branch in which the selected deletion family is structurally clean.
 
     • [compatdegreefour10] Either synchronized endpoint structure occurs or compatibility degree is at most four
         STATEMENT

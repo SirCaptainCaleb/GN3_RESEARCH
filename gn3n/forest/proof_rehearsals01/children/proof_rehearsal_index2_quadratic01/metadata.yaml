@@ -1,0 +1,74 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "ea0abb0c816ec315eadc560b4b7de1bacdffa15ec4e8b35131f2ec474c78dd76"
+created_at: "2026-10-02T02:23:36.650889+00:00"
+id: "proof_rehearsal_index2_quadratic01"
+last_elevation_revision: null
+last_substantive_worker_id: 1231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proposal"
+metadata:
+  anti_backtracking_map: true
+  artifact_kind: "proof_route_synthesis"
+  closure_candidate: false
+  pending_theorems_marked: true
+  proof_attack_category: "quadratic-potential / minimal three-cover reconfiguration"
+  proof_rehearsal_index: 2
+  research_launch_ready: true
+object_type: "research"
+origin_worker_id: 1231
+parent_id: "proof_rehearsals01"
+position: 0
+research_interface:
+  artifact_kind: "research_launch_synthesis"
+  certified_launch_points:
+    - "1000633 + 1000694 for the main generic consumer"
+    - "unique_small_transport_recomp02 for the certified unique-small base"
+    - "1000292 for the all-equal consumer"
+    - "global_sizegap_maximin_bypass01 for the global-minimum context-sensitive bypass"
+    - "1000753 for certified doubled-barrier propagation"
+  first_unsupported_inference: "the synchronized bounded outputs now available on the equitable plateau force a spanning two-cover / defect span <=2; doubled reverse barrier remains an exact certified local obstruction rather than a solved absorption case"
+  fresh_research_incorporated: true
+  minimal_closure_package:
+    - "consume the synchronized bounded menu (pc2 square / overlapping windows / matching-block shell / endpoint reversal / doubled barrier) into defect span <=2"
+    - "or prove the general 1000633 canonical disturbance consumer"
+    - "or give a well-founded equal-Phi support/order/provenance escape theorem that implies one of those consumers"
+  pending_launch_points:
+    - "unique_small_bounded_endgame01"
+    - "commoncore_fivepair_sixshell_normal01"
+    - "same_end_extenders_hall_completion01"
+    - "shared_edge_double_reversal_sixpackage01"
+    - "blocked_extender_coherent_sameend_escape01"
+  proof_attack_category: "quadratic-potential / minimal three-cover reconfiguration"
+  proof_rehearsal_index: 2
+  route_summary: "minimum counterexample -> deletion-generated trapped component -> Phi-minimum -> simultaneous pairwise balance extremality -> canonical disturbance -> equitable plateau -> synchronized bounded endgame -> defect-span/endpoint-transport consumer -> two-cover"
+  strategic_fences:
+    - "pure pair-union balance improvement is equivalent to balanced refinement (1000079)"
+    - "strict Phi descent cannot continue from equitable profiles (1000268)"
+    - "raw reversal existence is already a known sink; positioning/synchronization is required"
+    - "generic doubled-barrier absorption is not proved; use certified propagation 1000753 and retain the obstruction honestly"
+    - "global c<=5 minima are eliminated above order seventeen unless disagreement occurs (1000921)"
+    - "all-equal unique-crossing classification is already consumed by 1000292"
+    - "unique-small raw neutral-cycle/four-hook/coherent-same-end work is superseded as a launch point by unique_small_bounded_endgame01"
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: "Phi normalizes trapped three-covers until size information is exhausted. The unique-small plateau is now sharpened to a finite bounded endgame—pc2 square/overlap/matching-block six-shell, positioned endpoint reversal, or doubled reverse barrier—while the unresolved theorem is still global disturbance -> defect span <=2."
+statement_sha256: "551f9f665ac6d6d49e68d58e66b38cab6f4d1e04081debe1a6ee0a8acf286083"
+substantive_worker_ids:
+  - 1231
+  - 1257
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "INDEX 2 synthesis — quadratic potential and minimal three-cover reconfiguration"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T04:10:58.781736+00:00"
+version: 35

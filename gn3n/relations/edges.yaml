@@ -33,111 +33,6 @@
     supersession_state_updated_at: "2026-10-01T00:03:43.21888+00:00"
   to_id: "five_side_two_bad_endpoint_sixpackage01"
 -
-  created_at: "2026-09-29T18:57:14.40748+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "local_four_interior_kernel_or_cross01"
--
-  created_at: "2026-09-29T18:57:16.898785+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "local_four_interior_positioned_kernel01"
--
-  created_at: "2026-09-29T12:20:26.819918+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "The fixed-pair theorem applies to every minimum counterexample and directly yields the order-4 conclusion, so the staircase-specific theorem is mathematically unnecessary."
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "1000096"
--
-  created_at: "2026-09-29T12:24:19.355641+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "The fixed-pair theorem directly forces regime (2) in every minimum counterexample, so the four-regime theorem is mathematically unnecessary."
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "1000607"
--
-  created_at: "2026-09-29T17:24:26.014951+00:00"
-  from_id: "reversal_global_frontier01"
-  kind: "supersedes"
-  metadata:
-    reason: "Elevation review: the certified prescribed-pair theorem applies to every minimum counterexample and directly implies the entire staircase-specific four-support statement. The specialized corollary adds no mathematical hypothesis-dependent conclusion and is therefore obsolete as a live theorem node."
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "1000620"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "staircase_reversal_live01"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "1000208"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "1000626"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "1000745"
--
-  created_at: "2026-09-29T17:33:12.184134+00:00"
-  from_id: "staircase_four_support_recomp01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "1000096"
--
-  created_at: "2026-10-01T18:43:23.594674+00:00"
-  from_id: "1000540"
-  kind: "supersedes"
-  metadata:
-    reason: "1000540 now proves the pair-grid order-disagreement conclusion directly for every exterior triple, in addition to the full grid and pc2 stability."
-    replacement_kind: "strictly_stronger"
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
-  to_id: "hardreversal_pairgrid01"
--
   created_at: "2026-10-01T18:43:23.594674+00:00"
   from_id: "1000921"
   kind: "supersedes"
@@ -147,6 +42,16 @@
     supersession_state: "effective"
     supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "1000920"
+-
+  created_at: "2026-10-01T18:43:23.594674+00:00"
+  from_id: "1000540"
+  kind: "supersedes"
+  metadata:
+    reason: "1000540 now proves the pair-grid order-disagreement conclusion directly for every exterior triple, in addition to the full grid and pc2 stability."
+    replacement_kind: "strictly_stronger"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "hardreversal_pairgrid01"
 -
   created_at: "2026-10-01T00:14:59.356316+00:00"
   from_id: "1000842"
@@ -222,8 +127,8 @@
   kind: "supersedes"
   metadata:
     reason: "Strict strengthening: codegree-one/C4-free compatibility gives an m-O(sqrt(m)) anchored fan instead of the prior m/3 bound, with the same crossing-certificate conclusion."
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T19:37:06.527042+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:14:35.276297+00:00"
   to_id: "1000922"
 -
   created_at: "2026-10-01T00:15:47.231152+00:00"
@@ -281,8 +186,8 @@
   kind: "supersedes"
   metadata:
     reason: "Stronger prescribed-anchor theorem: Delta<=4, m-5 crossing covers from every anchor, and a linear incompatible subfamily."
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T19:44:41.243464+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:14:35.276297+00:00"
   to_id: "compatibility_c4free_neartotal_fan01"
 -
   created_at: "2026-10-01T00:18:03.369465+00:00"
@@ -790,6 +695,101 @@
   metadata:
   to_id: "fourset_fixedpair_witness_bound01"
 -
+  created_at: "2026-09-29T18:57:14.40748+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "local_four_interior_kernel_or_cross01"
+-
+  created_at: "2026-09-29T12:20:26.819918+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "The fixed-pair theorem applies to every minimum counterexample and directly yields the order-4 conclusion, so the staircase-specific theorem is mathematically unnecessary."
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "1000096"
+-
+  created_at: "2026-09-29T18:57:16.898785+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "Certified reversal_global_frontier01 gives a Hamiltonian four-set with non-Hamiltonian path-cover-two complement around any prescribed pair and three exterior labels. Choosing those labels inside the same bounded local pivot neighborhoods yields the local 4/5-set conclusion without the complete-endpoint-family or doubled-cross hypotheses, so the local route is mathematically obsolete for its stated conclusion."
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "local_four_interior_positioned_kernel01"
+-
+  created_at: "2026-09-29T12:24:19.355641+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "The fixed-pair theorem directly forces regime (2) in every minimum counterexample, so the four-regime theorem is mathematically unnecessary."
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "1000607"
+-
+  created_at: "2026-09-29T17:24:26.014951+00:00"
+  from_id: "reversal_global_frontier01"
+  kind: "supersedes"
+  metadata:
+    reason: "Elevation review: the certified prescribed-pair theorem applies to every minimum counterexample and directly implies the entire staircase-specific four-support statement. The specialized corollary adds no mathematical hypothesis-dependent conclusion and is therefore obsolete as a live theorem node."
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "1000620"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "staircase_reversal_live01"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "1000208"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "1000626"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "1000745"
+-
+  created_at: "2026-09-29T17:33:12.184134+00:00"
+  from_id: "staircase_four_support_recomp01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
+  to_id: "1000096"
+-
   created_at: "2026-09-30T13:08:55.359103+00:00"
   from_id: "balanced8_adjacent_windows_recomp01"
   kind: "supersedes"
@@ -810,11 +810,23 @@
     supersession_state_updated_at: "2026-10-01T01:01:13.82212+00:00"
   to_id: "balanced8_multiplicity7_01"
 -
+  created_at: "2026-10-02T01:18:11.102616+00:00"
+  from_id: "1000930"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000929"
+-
   created_at: "2026-10-01T00:49:54.20991+00:00"
   from_id: "fourset_six_fixedpair_witness_counterexample01"
   kind: "depends_on"
   metadata:
   to_id: "1000615"
+-
+  created_at: "2026-10-02T01:18:17.766633+00:00"
+  from_id: "1000931"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000929"
 -
   created_at: "2026-10-01T00:52:30.637665+00:00"
   from_id: "order11_design_fourcube_shells01"
@@ -827,6 +839,24 @@
   kind: "depends_on"
   metadata:
   to_id: "fourset_boolean_pc2_01"
+-
+  created_at: "2026-10-02T01:18:31.931489+00:00"
+  from_id: "1000928"
+  kind: "supersedes"
+  metadata:
+    reason: "Unconditional K4-minor exclusion implies the earlier Mantel edge, pair-count, and anchor-degree conclusions on their stated m>=7 domain."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:18:31.931489+00:00"
+  to_id: "1000115"
+-
+  created_at: "2026-10-02T01:18:31.931489+00:00"
+  from_id: "1000929"
+  kind: "supersedes"
+  metadata:
+    reason: "Same forest-or-spanning-odd-cycle conclusion with no sharp-half-order or minimum-counterexample assumption; self-contained proof."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:18:31.931489+00:00"
+  to_id: "1000829"
 -
   created_at: "2026-10-01T00:55:56.262386+00:00"
   from_id: "balanced9_density84_54_01"
@@ -859,6 +889,12 @@
   metadata:
     reason: "four-of-six double counting"
   to_id: "smallset01"
+-
+  created_at: "2026-10-02T01:21:54.636745+00:00"
+  from_id: "compatibility_spanning_odd_cycle_normal_form01"
+  kind: "depends_on"
+  metadata:
+  to_id: "compatibility_pathcycle_skeleton01"
 -
   created_at: "2026-10-01T01:01:46.04475+00:00"
   from_id: "order11_design_boolean_recomp01"
@@ -926,11 +962,47 @@
     supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_design_fourcube_shells01"
 -
+  created_at: "2026-10-02T01:22:58.47682+00:00"
+  from_id: "1000932"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000927"
+-
+  created_at: "2026-10-02T01:22:58.47682+00:00"
+  from_id: "1000932"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000922"
+-
   created_at: "2026-10-01T01:02:33.136706+00:00"
   from_id: "order11_pairdeletion_sync16_recomp01"
   kind: "depends_on"
   metadata:
   to_id: "balanced9_multiplicity01"
+-
+  created_at: "2026-10-02T01:39:50.473861+00:00"
+  from_id: "1000933"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000758"
+-
+  created_at: "2026-10-02T01:39:50.473861+00:00"
+  from_id: "1000933"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000928"
+-
+  created_at: "2026-10-02T01:39:50.473861+00:00"
+  from_id: "1000933"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000930"
+-
+  created_at: "2026-10-02T01:39:50.473861+00:00"
+  from_id: "1000933"
+  kind: "depends_on"
+  metadata:
+  to_id: "gapgeom01"
 -
   created_at: "2026-10-01T01:02:35.393173+00:00"
   from_id: "reversal_cube_topcover_menu01"
@@ -944,11 +1016,35 @@
   metadata:
   to_id: "pc2_square_topcover_normal01"
 -
+  created_at: "2026-10-02T01:43:59.308997+00:00"
+  from_id: "1000934"
+  kind: "depends_on"
+  metadata:
+  to_id: "insert01"
+-
   created_at: "2026-10-01T01:04:15.024625+00:00"
   from_id: "double_inward_endhook_not_absorption01"
   kind: "depends_on"
   metadata:
   to_id: "smallset01"
+-
+  created_at: "2026-10-02T01:44:31.067306+00:00"
+  from_id: "1000935"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000930"
+-
+  created_at: "2026-10-02T01:44:31.067306+00:00"
+  from_id: "1000935"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000934"
+-
+  created_at: "2026-10-02T01:44:31.067306+00:00"
+  from_id: "1000935"
+  kind: "depends_on"
+  metadata:
+  to_id: "compatibility_triangle_endpoint_transport01"
 -
   created_at: "2026-10-01T01:06:07.065051+00:00"
   from_id: "order11_design_common_threeside01"
@@ -971,6 +1067,12 @@
     role: "proper_subtournament_path_cover_bound"
   to_id: "mincex01"
 -
+  created_at: "2026-10-02T01:48:11.423002+00:00"
+  from_id: "oddcycle_order_coherence_or_c4_obstruction01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000929"
+-
   created_at: "2026-10-01T01:06:53.879492+00:00"
   from_id: "reversal_cube_middlelabel_menu01"
   kind: "depends_on"
@@ -982,6 +1084,12 @@
   kind: "depends_on"
   metadata:
   to_id: "pc2_square_topcover_normal01"
+-
+  created_at: "2026-10-02T01:48:13.852255+00:00"
+  from_id: "1000936"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000929"
 -
   created_at: "2026-10-01T01:08:16.524158+00:00"
   from_id: "1000856"
@@ -1037,6 +1145,12 @@
   metadata:
   to_id: "fourset_boolean_pc2_01"
 -
+  created_at: "2026-10-02T01:48:21.110184+00:00"
+  from_id: "1000936"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000694"
+-
   created_at: "2026-10-01T01:08:33.54497+00:00"
   from_id: "threesidedescent5"
   kind: "subsumed_by"
@@ -1058,6 +1172,12 @@
     note: "Component-local theorem removes the ambient three-cover hypothesis while preserving the same endpoint alternative and potential change."
   to_id: "1000859"
 -
+  created_at: "2026-10-02T01:48:36.348152+00:00"
+  from_id: "oddcycle_rank_transport_reversal_density01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000694"
+-
   created_at: "2026-10-01T01:09:06.731904+00:00"
   from_id: "reversal_pair_deletion_square_normal01"
   kind: "depends_on"
@@ -1075,6 +1195,12 @@
   kind: "depends_on"
   metadata:
   to_id: "pc2_square_topcover_normal01"
+-
+  created_at: "2026-10-02T01:50:24.580228+00:00"
+  from_id: "1000938"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000929"
 -
   created_at: "2026-10-01T01:11:50.031145+00:00"
   from_id: "reversal_pair_endpoint_geometry01"
@@ -1106,6 +1232,24 @@
   metadata:
   to_id: "deletion_side_ge3_01"
 -
+  created_at: "2026-10-02T01:50:26.015582+00:00"
+  from_id: "1000939"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000931"
+-
+  created_at: "2026-10-02T01:50:26.015582+00:00"
+  from_id: "1000939"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000935"
+-
+  created_at: "2026-10-02T01:50:26.015582+00:00"
+  from_id: "1000939"
+  kind: "depends_on"
+  metadata:
+  to_id: "astra004oddcycledisturb"
+-
   created_at: "2026-10-01T01:12:02.565134+00:00"
   from_id: "1000861"
   kind: "depends_on"
@@ -1124,6 +1268,72 @@
   metadata:
   to_id: "pc2_square_topcover_normal01"
 -
+  created_at: "2026-09-28T20:35:54.217896+00:00"
+  from_id: "recomp_fourwindow_square_01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:52:30.027257+00:00"
+  to_id: "recomp_square45_01"
+-
+  created_at: "2026-09-28T20:35:54.217896+00:00"
+  from_id: "recomp_fourwindow_square_01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:52:30.027257+00:00"
+  to_id: "1000397"
+-
+  created_at: "2026-09-28T20:35:54.217896+00:00"
+  from_id: "recomp_fourwindow_square_01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:52:30.027257+00:00"
+  to_id: "1000240"
+-
+  created_at: "2026-09-28T20:35:54.217896+00:00"
+  from_id: "recomp_fourwindow_square_01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:52:30.027257+00:00"
+  to_id: "1000479"
+-
+  created_at: "2026-09-28T20:35:54.217896+00:00"
+  from_id: "recomp_fourwindow_square_01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:52:30.027257+00:00"
+  to_id: "1000516"
+-
+  created_at: "2026-09-28T20:35:54.217896+00:00"
+  from_id: "recomp_fourwindow_square_01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:52:30.027257+00:00"
+  to_id: "1000629"
+-
+  created_at: "2026-10-02T01:52:30.027257+00:00"
+  from_id: "recomp_fourwindow_square_01"
+  kind: "depends_on"
+  metadata:
+  to_id: "square_topcover_normal01"
+-
   created_at: "2026-10-01T01:15:50.51208+00:00"
   from_id: "order11_design_threeside_multiplicity01"
   kind: "depends_on"
@@ -1137,6 +1347,23 @@
   metadata:
     role: "concentrated_common_threeside_shell"
   to_id: "three_bad_four_extensions_fiveshell01"
+-
+  created_at: "2026-09-29T01:44:32.314259+00:00"
+  from_id: "recomp_45plateau_01"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    restored_from_recomposition_manifest: true
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:53:20.836671+00:00"
+  to_id: "1000681"
+-
+  created_at: "2026-10-02T01:53:20.836671+00:00"
+  from_id: "recomp_45plateau_01"
+  kind: "depends_on"
+  metadata:
+  to_id: "balanced9_swap_hub_menu01"
 -
   created_at: "2026-10-01T01:16:20.746738+00:00"
   from_id: "order11_common_threeside_swap01"
@@ -1166,11 +1393,85 @@
     role: "proper_subtournament_path_cover_bound"
   to_id: "mincex01"
 -
+  created_at: "2026-10-02T01:55:03.90276+00:00"
+  from_id: "1000940"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000935"
+  to_id: "1000930"
+-
+  created_at: "2026-10-02T01:55:03.90276+00:00"
+  from_id: "1000940"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000939"
+  to_id: "1000931"
+-
+  created_at: "2026-10-02T01:55:03.90276+00:00"
+  from_id: "1000940"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000935"
+  to_id: "1000933"
+-
+  created_at: "2026-10-02T01:55:03.90276+00:00"
+  from_id: "1000940"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000935"
+  to_id: "1000934"
+-
+  created_at: "2026-10-02T01:55:03.90276+00:00"
+  from_id: "1000940"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000939"
+  to_id: "astra004oddcycledisturb"
+-
+  created_at: "2026-10-02T01:55:03.90276+00:00"
+  from_id: "1000940"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000935"
+  to_id: "compatibility_triangle_endpoint_transport01"
+-
   created_at: "2026-10-01T01:19:08.212737+00:00"
   from_id: "1000858"
   kind: "depends_on"
   metadata:
   to_id: "smallset01"
+-
+  created_at: "2026-10-02T01:55:24.527883+00:00"
+  from_id: "1000940"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:58:40.624265+00:00"
+  to_id: "1000935"
+-
+  created_at: "2026-10-02T01:55:24.527883+00:00"
+  from_id: "1000940"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:58:40.624265+00:00"
+  to_id: "1000939"
 -
   created_at: "2026-10-01T01:20:05.976787+00:00"
   from_id: "order11_design_common_threeside01"
@@ -1183,6 +1484,22 @@
   kind: "depends_on"
   metadata:
   to_id: "1000305"
+-
+  created_at: "2026-10-02T01:55:53.945994+00:00"
+  from_id: "1000941"
+  kind: "depends_on"
+  metadata:
+  to_id: "compatibility_degree4_prescribed_fan01"
+-
+  created_at: "2026-10-02T01:55:53.945994+00:00"
+  from_id: "1000941"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "compatibility_pathcycle_skeleton01"
+    role: "same-side triangle exit and residual degree-two bound"
+  to_id: "compatibility_triangle_endpoint_transport01"
 -
   created_at: "2026-10-01T01:20:28.0156+00:00"
   from_id: "reversal_pair_three_deletion_normal01"
@@ -1201,6 +1518,50 @@
   kind: "depends_on"
   metadata:
   to_id: "pc2_square_topcover_normal01"
+-
+  created_at: "2026-10-02T01:56:02.134343+00:00"
+  from_id: "1000941"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "compatibility_pathcycle_skeleton01"
+    role: "crossing witness for support-incompatible pairs"
+  to_id: "1000922"
+-
+  created_at: "2026-10-02T01:56:02.134343+00:00"
+  from_id: "oddcycle_order_coherence_or_c4_obstruction01"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1000941"
+-
+  created_at: "2026-10-02T01:56:02.134343+00:00"
+  from_id: "oddcycle_rank_transport_reversal_density01"
+  kind: "depends_on"
+  metadata:
+    rewired_by_replacement: true
+  to_id: "1000941"
+-
+  created_at: "2026-10-02T01:56:02.134343+00:00"
+  from_id: "1000941"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:56:02.134343+00:00"
+  to_id: "compatibility_pathcycle_skeleton01"
+-
+  created_at: "2026-10-02T01:56:02.134343+00:00"
+  from_id: "1000941"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:56:02.134343+00:00"
+  to_id: "compatibility_spanning_odd_cycle_normal_form01"
 -
   created_at: "2026-10-01T01:20:59.098816+00:00"
   from_id: "order11_sevenlabel_design_normal01"
@@ -1230,17 +1591,119 @@
     role: "four_good_two_bad_matching_exception"
   to_id: "sixset_deletion_graph_oriented_recomp01"
 -
+  created_at: "2026-10-02T01:58:28.326562+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000933"
+  to_id: "1000928"
+-
+  created_at: "2026-10-02T01:58:28.326562+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000933"
+      - "1000940"
+  to_id: "1000930"
+-
+  created_at: "2026-10-02T01:58:28.326562+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000940"
+  to_id: "1000931"
+-
+  created_at: "2026-10-02T01:58:28.326562+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000940"
+  to_id: "1000934"
+-
+  created_at: "2026-10-02T01:58:28.326562+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000940"
+  to_id: "compatibility_triangle_endpoint_transport01"
+-
+  created_at: "2026-10-02T01:58:28.326562+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000933"
+  to_id: "gapgeom01"
+-
   created_at: "2026-10-01T01:22:58.53535+00:00"
   from_id: "reversal_pair_three_deletion_normal01"
   kind: "depends_on"
   metadata:
   to_id: "reversal_pair_endpoint_geometry01"
 -
+  created_at: "2026-10-02T01:58:40.624265+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+    inherited_by_recomposition: true
+    inherited_from_sources:
+      - "1000933"
+  to_id: "1000758"
+-
+  created_at: "2026-10-02T01:58:40.624265+00:00"
+  from_id: "1000942"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:58:40.624265+00:00"
+  to_id: "1000933"
+-
+  created_at: "2026-10-02T01:58:40.624265+00:00"
+  from_id: "1000942"
+  kind: "supersedes"
+  metadata:
+    replacement_kind: "equivalent_or_stronger"
+    structural_retirement: true
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:58:40.624265+00:00"
+  to_id: "1000940"
+-
   created_at: "2026-10-01T01:23:32.689489+00:00"
   from_id: "order11_sevenlabel_design_normal01"
   kind: "depends_on"
   metadata:
   to_id: "smallset01"
+-
+  created_at: "2026-10-02T02:09:09.589148+00:00"
+  from_id: "1000943"
+  kind: "depends_on"
+  metadata:
+  to_id: "deletion01"
+-
+  created_at: "2026-10-02T02:09:09.589148+00:00"
+  from_id: "1000943"
+  kind: "strengthens"
+  metadata:
+  to_id: "astra004oddcycledisturb"
+-
+  created_at: "2026-10-02T02:09:09.589148+00:00"
+  from_id: "1000943"
+  kind: "references"
+  metadata:
+  to_id: "astra004twowalk"
 -
   created_at: "2026-10-01T01:25:38.288838+00:00"
   from_id: "order11_design_sevenlabel_recomp01"
@@ -1333,6 +1796,12 @@
     supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_common_threeside_swap01"
 -
+  created_at: "2026-10-02T02:13:57.761043+00:00"
+  from_id: "1000944"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000941"
+-
   created_at: "2026-10-01T01:25:38.288838+00:00"
   from_id: "order11_design_sevenlabel_recomp01"
   kind: "depends_on"
@@ -1356,6 +1825,12 @@
   kind: "depends_on"
   metadata:
   to_id: "mincex01"
+-
+  created_at: "2026-10-02T02:14:16.443768+00:00"
+  from_id: "1000945"
+  kind: "depends_on"
+  metadata:
+  to_id: "oddcycle_rank_transport_reversal_density01"
 -
   created_at: "2026-10-01T01:32:08.619087+00:00"
   from_id: "universal_internal_transposition01"
@@ -1399,11 +1874,26 @@
   metadata:
   to_id: "universal_internal_transposition01"
 -
+  created_at: "2026-10-02T02:16:45.335547+00:00"
+  from_id: "1000942"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000943"
+-
   created_at: "2026-10-01T01:37:56.249479+00:00"
   from_id: "codim3_deletion_pc2_01"
   kind: "depends_on"
   metadata:
   to_id: "mincex01"
+-
+  created_at: "2026-10-02T02:18:25.458272+00:00"
+  from_id: "1000945"
+  kind: "supersedes"
+  metadata:
+    reason: "1000945 retains the k-1 lower bound and parity from 1000936, adds the exact reduced case, strict-majority alternative, and consecutive-transition consequences; its base monodromy premise is preserved separately in oddcycle_rank_transport_reversal_density01."
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T02:18:25.458272+00:00"
+  to_id: "1000936"
 -
   created_at: "2026-10-01T01:39:56.928465+00:00"
   from_id: "mutual_internal_endpoint_grid01"
@@ -1417,6 +1907,18 @@
   metadata:
   to_id: "mincex01"
 -
+  created_at: "2026-10-02T02:18:44.469512+00:00"
+  from_id: "unique_small_endpoint_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_initial_reversal01"
+-
+  created_at: "2026-10-02T02:18:44.469512+00:00"
+  from_id: "unique_small_endpoint_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_transport_recomp02"
+-
   created_at: "2026-10-01T01:43:47.374557+00:00"
   from_id: "reversal_manydeletion_compat_density01"
   kind: "depends_on"
@@ -1428,6 +1930,90 @@
   kind: "depends_on"
   metadata:
   to_id: "1000115"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000946"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "mincex01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "defectspanisdeletion"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "defectcanonical35_recomp01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000006"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000458"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "cyclic_nonmatching_fourwindow_transport01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "defect101_finite_transport01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000946"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000911"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside_trapped_order_le11"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "five_side_arbitrary_escape01"
+-
+  created_at: "2026-10-02T02:18:46.269373+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "common_endpoint_barriers_fivewindow_counterexample01"
 -
   created_at: "2026-10-01T01:49:56.348513+00:00"
   from_id: "four_side_alllabel_doublelock01"
@@ -1465,6 +2051,120 @@
     supersession_state_updated_at: "2026-10-01T05:29:40.003289+00:00"
   to_id: "nonham_five_punctured_pc2_cube01"
 -
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000948"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000942"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000948"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000943"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000948"
+  kind: "consumes"
+  metadata:
+  to_id: "1000942"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000948"
+  kind: "consumes"
+  metadata:
+  to_id: "1000943"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "consumes"
+  metadata:
+  to_id: "1000948"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000270"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "mincex01"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000694"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000929"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000942"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000943"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000936"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "oddcycle_rank_transport_reversal_density01"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "oddcycle_order_coherence_or_c4_obstruction01"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000931"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000518"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000211"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000741"
+-
+  created_at: "2026-10-02T02:20:42.883375+00:00"
+  from_id: "1000949"
+  kind: "references"
+  metadata:
+  to_id: "1000166"
+-
   created_at: "2026-10-01T01:51:59.570128+00:00"
   from_id: "universal_internal_transposition01"
   kind: "depends_on"
@@ -1477,11 +2177,77 @@
   metadata:
   to_id: "mutual_internal_endpoint_grid01"
 -
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000112"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000427"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000633"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000694"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "endpoint_reversal_largeinterface01"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "ham5_large_escape01"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "ham6_large_escape01"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "singleton_transfer_endpointization01"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "support_cut_low_crossing_normal_form01"
+-
+  created_at: "2026-10-02T02:23:36.650889+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_transport_recomp02"
+-
   created_at: "2026-10-01T01:52:41.078234+00:00"
   from_id: "reversal_halfstable_manydeletion01"
   kind: "depends_on"
   metadata:
   to_id: "mutual_internal_endpoint_grid01"
+-
+  created_at: "2026-10-02T02:26:26.286276+00:00"
+  from_id: "equitable_phi_plateau_fence01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000268"
 -
   created_at: "2026-10-01T02:19:33.156428+00:00"
   from_id: "1000857"
@@ -1497,6 +2263,24 @@
     reason: "m>=6 two bad endpoint four-extensions force a Hamiltonian five-set"
   to_id: "localextend01"
 -
+  created_at: "2026-10-02T02:27:30.789244+00:00"
+  from_id: "1000950"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside01"
+-
+  created_at: "2026-10-02T02:27:30.789244+00:00"
+  from_id: "1000950"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000924"
+-
+  created_at: "2026-10-02T02:27:30.789244+00:00"
+  from_id: "1000950"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000946"
+-
   created_at: "2026-10-01T02:19:51.699148+00:00"
   from_id: "1000859"
   kind: "depends_on"
@@ -1511,6 +2295,12 @@
     reason: "statement and proof assume the no-blocked-overlap design branch supplied by this theorem"
   to_id: "order11_design_boolean_recomp01"
 -
+  created_at: "2026-10-02T02:29:16.059611+00:00"
+  from_id: "same_end_extenders_double_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_initial_reversal01"
+-
   created_at: "2026-10-01T02:29:31.634482+00:00"
   from_id: "1000785"
   kind: "depends_on"
@@ -1524,6 +2314,30 @@
   metadata:
     reason: "Direct premise: proper induced subtournaments have path-cover number at most two; Hamiltonian complement would close H."
   to_id: "mincex01"
+-
+  created_at: "2026-10-02T02:30:44.587647+00:00"
+  from_id: "1000951"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside01"
+-
+  created_at: "2026-10-02T02:30:44.587647+00:00"
+  from_id: "1000951"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000924"
+-
+  created_at: "2026-10-02T02:30:44.587647+00:00"
+  from_id: "1000951"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000946"
+-
+  created_at: "2026-10-02T02:30:44.587647+00:00"
+  from_id: "1000951"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000950"
 -
   created_at: "2026-10-01T02:30:58.293493+00:00"
   from_id: "fourwindow_fixedcore_squarefamily01"
@@ -1574,12 +2388,36 @@
     role: "common-top density/internality premise"
   to_id: "global_fourwindow_density_squarefamily01"
 -
+  created_at: "2026-10-02T02:35:30.637844+00:00"
+  from_id: "unique_small_double_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_double_reversal01"
+-
+  created_at: "2026-10-02T02:35:30.637844+00:00"
+  from_id: "unique_small_double_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_transport_recomp02"
+-
   created_at: "2026-10-01T02:42:15.194887+00:00"
   from_id: "bounded_internal_square_crossing01"
   kind: "depends_on"
   metadata:
     role: "bounded universally-internal full-square pair"
   to_id: "common_top_internal_bounded_square01"
+-
+  created_at: "2026-10-02T02:37:45.984894+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000950"
+-
+  created_at: "2026-10-02T02:37:45.984894+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000951"
 -
   created_at: "2026-10-01T02:43:40.095943+00:00"
   from_id: "bounded_internal_square_crossing01"
@@ -1588,12 +2426,30 @@
     role: "existing crossing-count and equality-two-crossing block machinery"
   to_id: "coversurg01"
 -
+  created_at: "2026-10-02T02:38:47.705752+00:00"
+  from_id: "same_end_extenders_four_endpoint_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_initial_reversal01"
+-
   created_at: "2026-10-01T02:48:02.810839+00:00"
   from_id: "bounded_internal_square_localmenu01"
   kind: "depends_on"
   metadata:
     role: "short-interval crossing premise"
   to_id: "bounded_internal_square_crossing01"
+-
+  created_at: "2026-10-02T02:39:04.475701+00:00"
+  from_id: "unique_small_four_endpoint_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_four_endpoint_reversal01"
+-
+  created_at: "2026-10-02T02:39:04.475701+00:00"
+  from_id: "unique_small_four_endpoint_reversal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_transport_recomp02"
 -
   created_at: "2026-10-01T02:48:07.208278+00:00"
   from_id: "bounded_internal_square_localmenu01"
@@ -1602,12 +2458,42 @@
     role: "same-end extender lemma"
   to_id: "1000386"
 -
+  created_at: "2026-10-02T02:42:55.112302+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_four_endpoint_reversal01"
+-
   created_at: "2026-10-01T02:48:11.046898+00:00"
   from_id: "bounded_internal_square_localmenu01"
   kind: "depends_on"
   metadata:
     role: "transition-count equality"
   to_id: "coversurg01"
+-
+  created_at: "2026-10-02T03:43:47.531706+00:00"
+  from_id: "1000953"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside01"
+-
+  created_at: "2026-10-02T03:43:47.531706+00:00"
+  from_id: "1000953"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000924"
+-
+  created_at: "2026-10-02T03:43:47.531706+00:00"
+  from_id: "1000953"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000951"
+-
+  created_at: "2026-10-02T03:43:47.531706+00:00"
+  from_id: "1000953"
+  kind: "depends_on"
+  metadata:
+  to_id: "threesidedescent6"
 -
   created_at: "2026-10-01T01:25:38.288838+00:00"
   from_id: "order11_design_sevenlabel_recomp01"
@@ -1618,6 +2504,48 @@
     supersession_state: "pending_audit"
     supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
   to_id: "order11_sevenlabel_design_normal01"
+-
+  created_at: "2026-10-02T03:48:19.207828+00:00"
+  from_id: "1000954"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000953"
+-
+  created_at: "2026-10-02T03:48:19.207828+00:00"
+  from_id: "1000954"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000951"
+-
+  created_at: "2026-10-02T03:48:19.207828+00:00"
+  from_id: "1000954"
+  kind: "depends_on"
+  metadata:
+  to_id: "smallset01"
+-
+  created_at: "2026-10-02T03:48:19.207828+00:00"
+  from_id: "1000954"
+  kind: "depends_on"
+  metadata:
+  to_id: "astra004fourgooddisagree"
+-
+  created_at: "2026-10-02T03:52:40.820741+00:00"
+  from_id: "shared_edge_double_reversal_sixpackage01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000476"
+-
+  created_at: "2026-10-02T03:52:40.820741+00:00"
+  from_id: "shared_edge_double_reversal_sixpackage01"
+  kind: "depends_on"
+  metadata:
+  to_id: "mincex01"
+-
+  created_at: "2026-10-02T03:52:40.820741+00:00"
+  from_id: "shared_edge_double_reversal_sixpackage01"
+  kind: "depends_on"
+  metadata:
+  to_id: "reversal_dense_fivefamily01"
 -
   created_at: "2026-10-01T05:36:50.564854+00:00"
   from_id: "1000863"
@@ -1671,6 +2599,24 @@
       - "global_fourwindow_density_squarefamily01"
     role: "five-vertex deletion bounds and four-of-six theorem"
   to_id: "smallset01"
+-
+  created_at: "2026-10-02T03:53:29.484314+00:00"
+  from_id: "same_end_extenders_hall_completion01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_four_endpoint_reversal01"
+-
+  created_at: "2026-10-02T03:53:29.484314+00:00"
+  from_id: "same_end_extenders_hall_completion01"
+  kind: "depends_on"
+  metadata:
+  to_id: "shared_edge_double_reversal_sixpackage01"
+-
+  created_at: "2026-10-02T03:53:29.484314+00:00"
+  from_id: "same_end_extenders_hall_completion01"
+  kind: "depends_on"
+  metadata:
+  to_id: "singleton_transfer_endpointization01"
 -
   created_at: "2026-10-01T05:36:50.564854+00:00"
   from_id: "1000863"
@@ -1722,6 +2668,24 @@
     supersession_state_updated_at: "2026-10-01T05:41:26.966005+00:00"
   to_id: "bounded_internal_square_localmenu01"
 -
+  created_at: "2026-10-02T03:55:16.487824+00:00"
+  from_id: "1000955"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000954"
+-
+  created_at: "2026-10-02T03:55:16.487824+00:00"
+  from_id: "1000955"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000552"
+-
+  created_at: "2026-10-02T03:55:16.487824+00:00"
+  from_id: "1000955"
+  kind: "depends_on"
+  metadata:
+  to_id: "smallset01"
+-
   created_at: "2026-10-01T05:58:42.532628+00:00"
   from_id: "1000864"
   kind: "depends_on"
@@ -1734,12 +2698,48 @@
   metadata:
   to_id: "threeside01"
 -
+  created_at: "2026-10-02T03:55:45.236135+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000666"
+-
+  created_at: "2026-10-02T03:55:45.236135+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000953"
+-
+  created_at: "2026-10-02T03:55:45.236135+00:00"
+  from_id: "1000947"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000164"
+-
   created_at: "2026-10-01T05:59:10.185483+00:00"
   from_id: "unpositioned_fiveside_vacuous01"
   kind: "references"
   metadata:
     role: "preferred_positioned_five_side_replacement"
   to_id: "fixed_two_core_triple_lift01"
+-
+  created_at: "2026-10-02T03:57:15.266967+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "threecoverquadraticmin01"
+-
+  created_at: "2026-10-02T03:57:15.266967+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000268"
+-
+  created_at: "2026-10-02T03:57:15.266967+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_four_endpoint_reversal01"
 -
   created_at: "2026-10-01T06:00:05.418382+00:00"
   from_id: "1000865"
@@ -1765,6 +2765,30 @@
   metadata:
   to_id: "ham6goodsquare01"
 -
+  created_at: "2026-10-02T03:59:05.41598+00:00"
+  from_id: "1000956"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000955"
+-
+  created_at: "2026-10-02T03:59:05.41598+00:00"
+  from_id: "1000956"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000255"
+-
+  created_at: "2026-10-02T03:59:05.41598+00:00"
+  from_id: "1000956"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000707"
+-
+  created_at: "2026-10-02T03:59:05.41598+00:00"
+  from_id: "1000956"
+  kind: "depends_on"
+  metadata:
+  to_id: "smallset01"
+-
   created_at: "2026-10-01T06:01:55.33736+00:00"
   from_id: "1000866"
   kind: "depends_on"
@@ -1789,6 +2813,36 @@
   metadata:
   to_id: "ham6_large_escape01"
 -
+  created_at: "2026-10-02T04:01:59.082021+00:00"
+  from_id: "blocked_extender_coherent_sameend_escape01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000386"
+-
+  created_at: "2026-10-02T04:01:59.082021+00:00"
+  from_id: "blocked_extender_coherent_sameend_escape01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000476"
+-
+  created_at: "2026-10-02T04:01:59.082021+00:00"
+  from_id: "blocked_extender_coherent_sameend_escape01"
+  kind: "depends_on"
+  metadata:
+  to_id: "mincex01"
+-
+  created_at: "2026-10-02T04:01:59.082021+00:00"
+  from_id: "blocked_extender_coherent_sameend_escape01"
+  kind: "depends_on"
+  metadata:
+  to_id: "reversal_dense_fivefamily01"
+-
+  created_at: "2026-10-02T04:01:59.082021+00:00"
+  from_id: "blocked_extender_coherent_sameend_escape01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_hall_completion01"
+-
   created_at: "2026-10-01T06:02:25.120362+00:00"
   from_id: "fixed_pair_star_transport_clique01"
   kind: "depends_on"
@@ -1803,6 +2857,24 @@
     role: "common_four_core_six_set_transport"
   to_id: "1000476"
 -
+  created_at: "2026-10-02T04:02:55.688749+00:00"
+  from_id: "commoncore_fivepair_sixshell_normal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "ham6goodsquare01"
+-
+  created_at: "2026-10-02T04:02:55.688749+00:00"
+  from_id: "commoncore_fivepair_sixshell_normal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "mincex01"
+-
+  created_at: "2026-10-02T04:02:55.688749+00:00"
+  from_id: "commoncore_fivepair_sixshell_normal01"
+  kind: "depends_on"
+  metadata:
+  to_id: "sixset_deletion_graph_oriented_recomp01"
+-
   created_at: "2026-10-01T06:05:02.909666+00:00"
   from_id: "1000867"
   kind: "depends_on"
@@ -1815,6 +2887,62 @@
   metadata:
   to_id: "order11_design_boolean_recomp01"
 -
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000292"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000921"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000079"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "global_sizegap_maximin_bypass01"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_hall_completion01"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "shared_edge_double_reversal_sixpackage01"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "blocked_extender_coherent_sameend_escape01"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "references"
+  metadata:
+    role: "strategic_fence_conjecture"
+  to_id: "1000828"
+-
+  created_at: "2026-10-02T04:05:22.13654+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "references"
+  metadata:
+    role: "route_level_conjecture_not_closure"
+  to_id: "quadraticmonotone_conj"
+-
   created_at: "2026-10-01T06:06:39.79899+00:00"
   from_id: "pair_centered_central_gap_fan01"
   kind: "depends_on"
@@ -1822,12 +2950,66 @@
     role: "four_of_six"
   to_id: "smallset01"
 -
+  created_at: "2026-10-02T04:07:16.393911+00:00"
+  from_id: "unique_small_bounded_endgame01"
+  kind: "depends_on"
+  metadata:
+  to_id: "blocked_extender_coherent_sameend_escape01"
+-
+  created_at: "2026-10-02T04:07:16.393911+00:00"
+  from_id: "unique_small_bounded_endgame01"
+  kind: "depends_on"
+  metadata:
+  to_id: "commoncore_fivepair_sixshell_normal01"
+-
+  created_at: "2026-10-02T04:07:16.393911+00:00"
+  from_id: "unique_small_bounded_endgame01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_hall_completion01"
+-
+  created_at: "2026-10-02T04:07:16.393911+00:00"
+  from_id: "unique_small_bounded_endgame01"
+  kind: "depends_on"
+  metadata:
+  to_id: "shared_edge_double_reversal_sixpackage01"
+-
+  created_at: "2026-10-02T04:07:16.393911+00:00"
+  from_id: "unique_small_bounded_endgame01"
+  kind: "depends_on"
+  metadata:
+  to_id: "singleton_transfer_endpointization01"
+-
+  created_at: "2026-10-02T04:07:16.393911+00:00"
+  from_id: "unique_small_bounded_endgame01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_transport_recomp02"
+-
   created_at: "2026-10-01T06:06:45.509486+00:00"
   from_id: "pair_centered_central_gap_fan01"
   kind: "depends_on"
   metadata:
     role: "minimum_counterexample_complement_pc2"
   to_id: "mincex01"
+-
+  created_at: "2026-10-02T04:10:58.781736+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_bounded_endgame01"
+-
+  created_at: "2026-10-02T04:10:58.781736+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "commoncore_fivepair_sixshell_normal01"
+-
+  created_at: "2026-10-02T04:10:58.781736+00:00"
+  from_id: "proof_rehearsal_index2_quadratic01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000753"
 -
   created_at: "2026-10-01T06:11:16.928844+00:00"
   from_id: "central_gap_five_edge_transport01"
@@ -26455,66 +27637,6 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000457"
 -
-  created_at: "2026-09-28T20:35:54.217896+00:00"
-  from_id: "recomp_fourwindow_square_01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "recomp_square45_01"
--
-  created_at: "2026-09-28T20:35:54.217896+00:00"
-  from_id: "recomp_fourwindow_square_01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000397"
--
-  created_at: "2026-09-28T20:35:54.217896+00:00"
-  from_id: "recomp_fourwindow_square_01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000240"
--
-  created_at: "2026-09-28T20:35:54.217896+00:00"
-  from_id: "recomp_fourwindow_square_01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000479"
--
-  created_at: "2026-09-28T20:35:54.217896+00:00"
-  from_id: "recomp_fourwindow_square_01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000516"
--
-  created_at: "2026-09-28T20:35:54.217896+00:00"
-  from_id: "recomp_fourwindow_square_01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000629"
--
   created_at: "2026-09-29T01:44:32.314259+00:00"
   from_id: "recomp_gap2_blocked_five_01"
   kind: "supersedes"
@@ -26904,6 +28026,15 @@
     supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
   to_id: "1000233"
 -
+  created_at: "2026-09-29T13:11:34.805047+00:00"
+  from_id: "five_star_sync60_01"
+  kind: "supersedes"
+  metadata:
+    reason: "The same synchronization dichotomy is proved with 60 coarse types rather than 120 full Hamilton-order templates, doubling the guaranteed synchronized subfamily size."
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
+  to_id: "1000151"
+-
   created_at: "2026-09-29T01:44:32.314259+00:00"
   from_id: "recomp_45plateau_01"
   kind: "supersedes"
@@ -26911,8 +28042,8 @@
     replacement_kind: "equivalent_or_stronger"
     restored_from_recomposition_manifest: true
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:53:20.836671+00:00"
   to_id: "1000224"
 -
   created_at: "2026-09-29T01:44:32.314259+00:00"
@@ -26922,29 +28053,9 @@
     replacement_kind: "equivalent_or_stronger"
     restored_from_recomposition_manifest: true
     structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
+    supersession_state: "pending_audit"
+    supersession_state_updated_at: "2026-10-02T01:53:20.836671+00:00"
   to_id: "1000645"
--
-  created_at: "2026-09-29T01:44:32.314259+00:00"
-  from_id: "recomp_45plateau_01"
-  kind: "supersedes"
-  metadata:
-    replacement_kind: "equivalent_or_stronger"
-    restored_from_recomposition_manifest: true
-    structural_retirement: true
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000681"
--
-  created_at: "2026-09-29T13:11:34.805047+00:00"
-  from_id: "five_star_sync60_01"
-  kind: "supersedes"
-  metadata:
-    reason: "The same synchronization dichotomy is proved with 60 coarse types rather than 120 full Hamilton-order templates, doubling the guaranteed synchronized subfamily size."
-    supersession_state: "effective"
-    supersession_state_updated_at: "2026-09-30T16:18:54.977863+00:00"
-  to_id: "1000151"
 -
   created_at: "2026-09-29T17:30:03.710796+00:00"
   from_id: "endpoint_reversal_obstruction_recomp01"
@@ -27655,6 +28766,6 @@
   metadata:
     replacement_kind: "equivalent_or_stronger"
     structural_retirement: true
-    supersession_state: "pending_audit"
-    supersession_state_updated_at: "2026-10-01T18:43:23.594674+00:00"
+    supersession_state: "effective"
+    supersession_state_updated_at: "2026-10-02T00:15:49.072216+00:00"
   to_id: "1000096"

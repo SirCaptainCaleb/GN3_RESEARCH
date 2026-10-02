@@ -4,13 +4,13 @@
     {
       "atlas_height": "2",
       "attention": "focus",
-      "audit_status": "pending",
+      "audit_status": "certified",
       "category": "theorem",
       "id": "1000925",
       "mathematical_status": "proved",
       "obstructed": false,
       "parent_id": "transport01",
-      "pending": true,
+      "pending": false,
       "research_interface": {
         "consumer": "endpoint transport / defect compression; longest-path route; anchored-cover obstruction analysis",
         "given": "a minimum counterexample and a longest tight path",
@@ -18,7 +18,7 @@
         "produces": "a smaller exterior induced subtournament with path-cover number two, universal reversed endpoint triples, and simultaneous left/right anchored non-splicability constraints"
       },
       "summary": "A longest path leaves a pc2 exterior with universal reversed endpoint triples and coupled left/right anchored cover obstructions.",
-      "support_status": "unchecked",
+      "support_status": "supported",
       "title": "A longest path forces a bi-anchored path-cover obstruction on its exterior"
     },
     {
@@ -45,26 +45,6 @@
       "attention": "focus",
       "audit_status": "certified",
       "category": "theorem",
-      "id": "1000607",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000104",
-      "pending": false,
-      "research_interface": {
-        "consumer": "grand theorem proof composition",
-        "given": "minimum counterexample of order at least fifteen and a globally Phi-minimal spanning three-cover",
-        "need": "close positioned small-support, doubled-cross, and equitable regimes; staircase is no longer separate",
-        "produces": "four surviving regimes: endpoint-pair pc2 grid; positioned Hamiltonian 4/5/6-support; doubled cross barrier; equitable plateau"
-      },
-      "summary": "Above order fourteen the global quadratic frontier has four regimes.",
-      "support_status": "dependency_hold",
-      "title": "Above order fourteen the global quadratic frontier has four regimes"
-    },
-    {
-      "atlas_height": null,
-      "attention": "focus",
-      "audit_status": "certified",
-      "category": "theorem",
       "id": "staircase_four_support_recomp01",
       "mathematical_status": "proved",
       "obstructed": false,
@@ -76,7 +56,7 @@
         "produces": "a proper Hamiltonian four-set with non-Hamiltonian path-cover-two complement"
       },
       "summary": "Every large staircase minimum has a Hamiltonian four-support with two-cover complement.",
-      "support_status": "dependency_hold",
+      "support_status": "supported",
       "title": "Every large staircase minimum has a Hamiltonian four-support with two-cover complement"
     },
     {
@@ -1436,13 +1416,13 @@
     {
       "atlas_height": null,
       "attention": "focus",
-      "audit_status": "pending",
+      "audit_status": "certified",
       "category": "theorem",
       "id": "1000923",
       "mathematical_status": "proved",
       "obstructed": false,
       "parent_id": "1000922",
-      "pending": true,
+      "pending": false,
       "research_interface": {
         "consumer": "compatibility-density, fixed-cut crossing, endpoint transport",
         "given": "chosen deletion two-covers with compatibility neighborhoods of maximum degree at most two",
@@ -1450,19 +1430,19 @@
         "produces": "one fixed deletion cover incompatible with at least half of the family, up to rounding"
       },
       "summary": "For m>=10 chosen deletion covers, one cover is incompatible with at least floor((m-1)/2) others; in a minimum counterexample this gives a fixed half-scale family of order disagreements or support crossings.",
-      "support_status": "unchecked",
+      "support_status": "supported",
       "title": "Neighborhood-sparse compatibility forces a sharp half-scale incompatibility anchor"
     },
     {
       "atlas_height": null,
       "attention": "focus",
-      "audit_status": "pending",
+      "audit_status": "certified",
       "category": "theorem",
       "id": "1000927",
       "mathematical_status": "proved",
       "obstructed": false,
       "parent_id": "1000922",
-      "pending": true,
+      "pending": false,
       "research_interface": {
         "consumer": "endpoint transport, defect compression, compatibility-density route",
         "given": "any prescribed deletion-cover anchor and the family of chosen deletion covers",
@@ -1470,19 +1450,19 @@
         "produces": "near-total fixed-cut support crossings or an order disagreement localized at the anchor vertex"
       },
       "summary": "Every prescribed anchor either has at least m-5 support-incompatible crossing covers or two same-side compatible neighbors disagree in order only through the anchor vertex.",
-      "support_status": "unchecked",
+      "support_status": "supported",
       "title": "Every deletion-cover anchor forces near-total support crossings or anchor-centered order disagreement"
     },
     {
       "atlas_height": null,
       "attention": "focus",
-      "audit_status": "pending",
+      "audit_status": "certified",
       "category": "lemma",
       "id": "1000926",
       "mathematical_status": "proved",
       "obstructed": false,
       "parent_id": "compatibility_degree4_prescribed_fan01",
-      "pending": true,
+      "pending": false,
       "research_interface": {
         "consumer": "global cut transport, endpoint reuse, parity/return arguments, defect compression",
         "given": "minimum counterexample and chosen deletion covers with no support-compatible order-incompatible pair",
@@ -1490,7 +1470,7 @@
         "produces": "Hamilton-connected support-incompatibility graph on all deletion labels"
       },
       "summary": "Absent support-compatible order disagreement, the support-incompatibility graph of all deletion covers has minimum degree at least n-5 and is Hamilton-connected.",
-      "support_status": "unchecked",
+      "support_status": "supported",
       "title": "Support-incompatibility graph is Hamilton-connected in every minimum counterexample branch without order disagreement"
     },
     {
@@ -3995,6 +3975,106 @@
       "title": "A two-crossing leave-return under universal initial extenders forces a four-window"
     },
     {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "blocked_extender_coherent_sameend_escape01",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "same_end_extenders_hall_completion01",
+      "pending": true,
+      "research_interface": {
+        "consumer": "INDEX 2 unique-small equitable plateau; endpoint transport; bounded-window gluing",
+        "given": "the coherent same-end subcase of the same-deletion transfer fork: one extender blocked from both residual paths and the other extending the same end of both",
+        "produces": "a Hamiltonian five-support with pc2 complement, a doubled reverse-end barrier, or a common-core six-window transport package",
+        "significance": "eliminates coherent same-end behavior as an abstract terminal residue in the unique-small quadratic plateau"
+      },
+      "summary": "Once one extender is blocked everywhere and the other is coherently same-end on both residual paths, failure of a five-window/doubled barrier makes many labels reverse the extender-pair edge, forcing a common-core six-window package.",
+      "support_status": "unchecked",
+      "title": "A blocked extender opposite a coherent mobile extender reduces to a five-window, doubled barrier, or six-window package"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "unique_small_four_endpoint_reversal01",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "same_end_extenders_four_endpoint_reversal01",
+      "pending": true,
+      "research_interface": {
+        "consumer": "INDEX 2 equitable-plateau escape; defect-span compression; endpoint transport",
+        "given": "the witness-free unique-small terminal quadratic-minimum branch",
+        "produces": "four synchronized reverse endpoint triples on an exact residual two-cover",
+        "significance": "sharp theorem-facing replacement for the older crossing-count residue"
+      },
+      "summary": "The hard {r+1,r+1,r} equitable plateau forces four synchronized endpoint reversals: one extender at all four residual ends, or both extenders at both ends of one residual path.",
+      "support_status": "unchecked",
+      "title": "The witness-free unique-small equitable residue forces four synchronized endpoint reversals"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "unique_small_double_reversal01",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "same_end_extenders_double_reversal01",
+      "pending": true,
+      "research_interface": {
+        "consumer": "INDEX 2 equitable-plateau escape; defect compression; endpoint transport",
+        "given": "the witness-free unique-small terminal quadratic-minimum branch",
+        "produces": "a synchronized double endpoint-reversal obstruction on an exact residual two-cover",
+        "significance": "replaces the older unique-small comparison-cover crossing taxonomy by a stronger two-reversal Hall obstruction"
+      },
+      "summary": "The hard {r+1,r+1,r} equitable plateau forces two synchronized endpoint reversals: either one extender reverses both residual path starts or one residual start is reversed through both extenders.",
+      "support_status": "unchecked",
+      "title": "The witness-free unique-small equitable residue forces synchronized double endpoint reversal"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "unique_small_endpoint_reversal01",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "same_end_extenders_initial_reversal01",
+      "pending": true,
+      "research_interface": {
+        "consumer": "endpoint_reversal_obstruction_recomp01; INDEX 2 proof rehearsal; disturbance entry",
+        "given": "the witness-free unique-small terminal quadratic-minimum branch",
+        "produces": "a literal initial-edge reversal on a tight comparison path",
+        "significance": "bypasses the older crossing-count four-way residue and sends the hard neutral branch directly into endpoint-reversal calculus"
+      },
+      "summary": "A witness-free {r+1,r+1,r} quadratic-minimum residue necessarily contains a tight comparison path whose initial edge is reversed by one of the two universal same-end extenders.",
+      "support_status": "unchecked",
+      "title": "The witness-free unique-small quadratic residue enters endpoint reversal"
+    },
+    {
+      "atlas_height": null,
+      "attention": "focus",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "unique_small_bounded_endgame01",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "unique_small_transport_recomp02",
+      "pending": true,
+      "research_interface": {
+        "consumer": "INDEX 2 proof rehearsal; endpoint transport / defect-span compression",
+        "given": "the unique-small nonuniform equitable Phi plateau after neutral-transfer normalization",
+        "produces": "positioned endpoint reversal or doubled reverse barrier, after exporting Hamiltonian five/six-window and pc2-square outputs",
+        "significance": "removes raw four-hook and coherent-same-end behavior from the theorem-facing unique-small residue and isolates doubled barrier as the exact remaining local obstruction"
+      },
+      "summary": "After neutral-cycle normalization, the unique-small Phi plateau has only two genuinely new bounded residues: a positioned component-end reversal or a doubled reverse barrier; all other Hall branches enter the standard Hamiltonian five/six-window transport menu.",
+      "support_status": "unchecked",
+      "title": "The unique-small quadratic plateau reduces to a positioned endpoint reversal or doubled reverse barrier"
+    },
+    {
       "atlas_height": "3",
       "attention": "available",
       "audit_status": "certified",
@@ -4032,26 +4112,6 @@
       "summary": "For a dense family of Hamiltonian five-windows over a fixed tight three-vertex core, synchronized orders are conjectured either to absorb multiple exterior vertices or force a second large tight path.",
       "support_status": "unchecked",
       "title": "Dense five-window gluing over a fixed core"
-    },
-    {
-      "atlas_height": null,
-      "attention": "available",
-      "audit_status": "certified",
-      "category": "theorem",
-      "id": "1000620",
-      "mathematical_status": "proved",
-      "obstructed": false,
-      "parent_id": "1000104",
-      "pending": false,
-      "research_interface": {
-        "consumer": "grand theorem proof composition; positioned small-support closure",
-        "given": "a globally quadratic-potential-minimal staircase three-cover of profile (c+2,c+1,c), c>=4",
-        "implication": "the former multi-step staircase reversal chain is unnecessary for this endpoint conclusion",
-        "produces": "a proper Hamiltonian four-set with non-Hamiltonian path-cover-two complement"
-      },
-      "summary": "Every large staircase minimum has a Hamiltonian four-support with two-cover complement",
-      "support_status": "dependency_hold",
-      "title": "Every large staircase minimum has a Hamiltonian four-support with two-cover complement"
     },
     {
       "atlas_height": null,
@@ -4236,6 +4296,26 @@
       "summary": "Two persistent defects share a shell neighbor in every shell, and at least three when they are nonadjacent there.",
       "support_status": "unchecked",
       "title": "Persistent-defect shell coupling has multiplicity three when the defects are nonadjacent"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1000956",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000955",
+      "pending": true,
+      "research_interface": {
+        "given": "the fixed-defect lower-shell second-layer obstruction",
+        "implication": "internal shell reversals are completely consumed; only endpoint-edge reversal remains as the line-specific reversal residue",
+        "need": "consume a reachable four-side endpoint-edge reversal into boundary absorption or defect-line matching reduction",
+        "produces": "synchronized strict descent, a four-side endpoint-edge reversal, or a proper Hamiltonian 4/5 support with pc2 complement (endpoint-aligned in the matching-block branch)"
+      },
+      "summary": "The fixed-defect second-layer fork reduces to descent, an endpoint reversal, or a Hamiltonian 4/5 window",
+      "support_status": "unchecked",
+      "title": "The fixed-defect second-layer fork reduces to descent, an endpoint reversal, or a Hamiltonian 4/5 window"
     },
     {
       "atlas_height": null,
@@ -4901,19 +4981,92 @@
       "atlas_height": null,
       "attention": "available",
       "audit_status": "pending",
-      "category": "lemma",
-      "id": "compatibility_pathcycle_skeleton01",
+      "category": "theorem",
+      "id": "1000934",
       "mathematical_status": "proved",
       "obstructed": false,
-      "parent_id": "compatibility_triangle_endpoint_transport01",
+      "parent_id": "1000758",
       "pending": true,
       "research_interface": {
-        "consumer": "endpoint transport / defect compression",
-        "producer": "locally alternating compatibility path-cycle skeleton"
+        "consumer": "Endpoint transport / defect compression; low-degree compatibility branches.",
+        "given": "One deletion cover P|Q and support-incompatible chosen covers at both endpoint deletions of Q.",
+        "produces": "A direct P-Q path edge in an endpoint cover or explicit relative-order disagreement."
       },
-      "summary": "Absent transport and reversal exits, compatibility is a locally alternating union of paths and cycles, with a pairwise incompatible family of size at least ceil(2m/5).",
+      "summary": "If both endpoint deletion covers of one anchor component are support-incompatible with the anchor cover, then one endpoint cover has a direct mixed-support path edge or endpoint replacement forces order disagreement.",
       "support_status": "unchecked",
-      "title": "Residual compatibility is a locally alternating path-cycle skeleton"
+      "title": "Two endpoint-incompatible probes force a direct mixed edge or order disagreement"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
+      "audit_status": "pending",
+      "category": "working_unit",
+      "id": "1000932",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "compatibility_degree4_prescribed_fan01",
+      "pending": true,
+      "research_interface": {
+        "consumer": "Multi-anchor endpoint synchronization; defect compression; fixed-cut transport.",
+        "given": "Any bounded set of prescribed deletion-cover anchors.",
+        "produces": "Either an anchor-centered order-disagreement witness, or a common reservoir losing at most five labels per anchor and incompatible with every prescribed anchor."
+      },
+      "summary": "For any t prescribed deletion-cover anchors, either one anchor already has a centered same-side order defect, or at least m-5t covers are simultaneously incompatible with every anchor.",
+      "support_status": "unchecked",
+      "title": "Any bounded anchor set yields a common incompatibility reservoir or a centered order defect"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1000944",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000941",
+      "pending": true,
+      "research_interface": {
+        "consumer": "Odd-cycle residual analysis and localization of order monodromy.",
+        "given": "The balanced spanning odd-cycle support configuration with compatible Hamilton orders.",
+        "produces": "The exact minimal obstruction menu for global pair-order coherence: odd-gap directed triangle or disjoint-edge directed C4."
+      },
+      "summary": "In the balanced odd-cycle residue, failure of one global support order is witnessed either by a directed triangle with three odd cyclic gaps or by a directed C4 on two disjoint ground-cycle edges.",
+      "support_status": "unchecked",
+      "title": "Balanced odd-cycle order incoherence localizes to an odd-gap triangle or a disjoint-edge C4"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
+      "audit_status": "pending",
+      "category": "working_unit",
+      "id": "oddcycle_order_coherence_or_c4_obstruction01",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "1000941",
+      "pending": true,
+      "research_interface": {},
+      "summary": "In the balanced odd-cycle support case, all selected Hamilton orders come from one global order unless four vertices on two disjoint ground-cycle edges form a directed C4 obstruction.",
+      "support_status": "unchecked",
+      "title": "Balanced odd-cycle deletion supports admit a global order unless four vertices form an alternating order obstruction"
+    },
+    {
+      "atlas_height": null,
+      "attention": "available",
+      "audit_status": "pending",
+      "category": "theorem",
+      "id": "1000945",
+      "mathematical_status": "proved",
+      "obstructed": false,
+      "parent_id": "oddcycle_rank_transport_reversal_density01",
+      "pending": true,
+      "research_interface": {
+        "consumer": "Local analysis of the residual same-slot/reversal geometry.",
+        "given": "The rank-monodromy description of the balanced odd-cycle residue.",
+        "produces": "A sharp reduced-versus-dense reversal dichotomy, with local consecutive-transition consequences."
+      },
+      "summary": "The odd-cycle rank braid is either reduced—exactly one reversal across every rank boundary—or has at least k+1 reversal transitions, a strict majority; parity leaves no intermediate count.",
+      "support_status": "unchecked",
+      "title": "Odd-cycle rank monodromy has a reversal-density parity gap"
     },
     {
       "atlas_height": null,
@@ -5484,7 +5637,7 @@
         "produces": "a bounded Hamiltonian/cyclic/matching-block four-set; the unresolved endpoint orientation cannot persist indefinitely"
       },
       "summary": "The unresolved endpoint-reversal residue returns to the bounded four-vertex classification.",
-      "support_status": "dependency_hold",
+      "support_status": "supported",
       "title": "The unresolved endpoint-reversal residue returns to the bounded four-vertex classification"
     },
     {
@@ -6419,7 +6572,7 @@
       "title": "Proof rehearsal 2026-09-30: reachable four-window transport and the order-eleven star surface"
     }
   ],
-  "frontier_count": 331,
+  "frontier_count": 339,
   "note": "Flat frontier only. After choosing an item, call ancestry() or simplified_ancestry() separately for route context.",
-  "repository_revision": 11097
+  "repository_revision": 11437
 }

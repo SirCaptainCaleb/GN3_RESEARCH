@@ -39,6 +39,15 @@
       • [unique_small_transport_recomp02] The witness-free unique-small plateau forces a standard transport disturbance
         • [1000032] Corrected: a two-crossing leave-return forces a Hamiltonian four-window
         • [1000197] A two-crossing leave-return under universal initial extenders forces a four-window
+        • [same_end_extenders_initial_reversal01] Two vertices that extend the same end of any family of disjoint displayed cores force every residual two-cover either to disagree with a core order or to begin with a cross-core edge whose reversal through an extender is tight.
+          • [same_end_extenders_double_reversal01] With two universal same-end extenders and no core-order disagreement, every residual two-cover has either one extender reversing both component starts or one component start reversed through both extenders.
+            • [same_end_extenders_four_endpoint_reversal01] In the order-neutral same-end-extender residue, Hall applied to attachment at either endpoint forces four reverse endpoint triples: either one extender reverses both ends of both residual paths, or both extenders reverse both ends of one residual path.
+              • [same_end_extenders_hall_completion01] The four-endpoint Hall residue reduces to either a common reversed edge, hence a common-core six-window package, or two covers of one deletion differing by one transferred label; that transfer gives another endpoint reversal unless its endpoint realizations are coherently same-end.
+                • [blocked_extender_coherent_sameend_escape01] Once one extender is blocked everywhere and the other is coherently same-end on both residual paths, failure of a five-window/doubled barrier makes many labels reverse the extender-pair edge, forcing a common-core six-window package.
+              • [unique_small_four_endpoint_reversal01] The hard {r+1,r+1,r} equitable plateau forces four synchronized endpoint reversals: one extender at all four residual ends, or both extenders at both ends of one residual path.
+            • [unique_small_double_reversal01] The hard {r+1,r+1,r} equitable plateau forces two synchronized endpoint reversals: either one extender reverses both residual path starts or one residual start is reversed through both extenders.
+          • [unique_small_endpoint_reversal01] A witness-free {r+1,r+1,r} quadratic-minimum residue necessarily contains a tight comparison path whose initial edge is reversed by one of the two universal same-end extenders.
+        • [unique_small_bounded_endgame01] After neutral-cycle normalization, the unique-small Phi plateau has only two genuinely new bounded residues: a positioned component-end reversal or a doubled reverse barrier; all other Hall branches enter the standard Hamiltonian five/six-window transport menu.
     • [1000472] The unique-large equitable profile always exposes a standard transport disturbance.
     • [1000585] A common donor endpoint in the unique-large profile forces a standard transport disturbance.
       • [1000624] The remaining unique-large residue is a crossed pair of one-success one-failure insertion windows.
@@ -55,7 +64,7 @@
           • [sharedendpointmigration_recomp01] Shared-endpoint six-windows force adjacent bounded four-window migration.
         • [1000731] Above order fourteen every anchored four-window descends, disagrees, or migrates by at most two labels.
           • [fourwindow_nomigration01] Above order fourteen anchored four-windows yield descent, order disagreement, or a Hamiltonian five-set.
-          • [recomp_fourwindow_square_01] A Hamiltonian four-set yields descent, order disagreement, an internal-label edge crossing, or a coherent endpoint square.
+          • [recomp_fourwindow_square_01] A Hamiltonian four-set reduces to descent, top-state support/order disagreement, a permanently internal square label, or a coherent endpoint square; a Phi-minimal coherent square has profile {4,5,n-9}.
             • [1000123] A Phi-minimal 4|5|m three-cover has an endpoint exchange or two noninsertable small-side vertices.
             • [1000820] From order fifteen onward a coherent endpoint square yields order disagreement or one of two order-fifteen configurations.
             • [1000596] From order sixteen onward a coherent endpoint square forces order disagreement.
@@ -122,6 +131,7 @@
       • [defectcanonical35_recomp01] Minimum defect span three is exactly a canonical deletion-state central 3/5 configuration.
     • [1000758] Support-compatible deletion families force synchronized endpoint crossing multiplicity or order disagreement
       • [1000575] Minimal direct endpoint crossings at order thirteen collapse to a compatible deletion triangle
+      • [1000934] If both endpoint deletion covers of one anchor component are support-incompatible with the anchor cover, then one endpoint cover has a direct mixed-support path edge or endpoint replacement forces order disagreement.
       • [direct_mixed_edge_recomp01] A direct mixed edge reduces immediately to disturbance, reversal, descent, or an omission swap
       • [1000587] Retracted: common end-adjacent family amplification
     • [centralbridge35] Every deletion state has a canonical bounded central-bridge three-cover.
@@ -405,8 +415,13 @@
       • [compatibility_c4free_neartotal_fan01] Without an order-disagreement pair, deletion-cover compatibility is C4-free; one anchor is incompatible with all but O(sqrt(m)) covers.
         • [compatibility_degree4_prescribed_fan01] Without an order-disagreement pair, every deletion-cover anchor has at most four compatible neighbors, hence at least m-5 crossing covers.
           • [1000926] Absent support-compatible order disagreement, the support-incompatibility graph of all deletion covers has minimum degree at least n-5 and is Hamilton-connected.
+          • [1000932] For any t prescribed deletion-cover anchors, either one anchor already has a centered same-side order defect, or at least m-5t covers are simultaneously incompatible with every anchor.
           • [compatibility_triangle_endpoint_transport01] A same-side compatibility triangle forces a direct opposite-endpoint transport edge or order reversal; otherwise every anchor has degree at most two and incompatible endpoint deletions on both sides.
-            • [compatibility_pathcycle_skeleton01] Absent transport and reversal exits, compatibility is a locally alternating union of paths and cycles, with a pairwise incompatible family of size at least ceil(2m/5).
+            • [1000941] Absent order disagreement and triangle transport/reversal, compatibility is a path forest or one balanced spanning odd cycle; in either case at least floor(m/2) covers are pairwise support-incompatible.
+              • [1000944] In the balanced odd-cycle residue, failure of one global support order is witnessed either by a directed triangle with three odd cyclic gaps or by a directed C4 on two disjoint ground-cycle edges.
+              • [oddcycle_order_coherence_or_c4_obstruction01] In the balanced odd-cycle support case, all selected Hamilton orders come from one global order unless four vertices on two disjoint ground-cycle edges form a directed C4 obstruction.
+              • [oddcycle_rank_transport_reversal_density01] The balanced odd-cycle residue cannot consist mostly of same-slot replacements: at least (n-3)/2 support transitions use adjacent slots, and the resulting reversal gadgets occur across every rank boundary.
+                • [1000945] The odd-cycle rank braid is either reduced—exactly one reversal across every rank boundary—or has at least k+1 reversal transitions, a strict majority; parity leaves no intermediate count.
     • [commonmiddle01] Two opposite common-middle paths force the full four-corner rectangle, with strong endpoint barriers for exterior vertices.
     • [1000048] Compatibility edges lift to one-move adjacency of deletion singleton states
       • [1000766] A compatibility component supplies canonical central path states inside one trapped pairwise-repartition component
@@ -445,6 +460,13 @@
               • [1000869] Two persistent defects share a shell neighbor in every shell, and at least three when they are nonadjacent there.
             • [threeside_consecutive_fivewindows01] ‹Three-side common barriers force consecutive five-windows at both ends›
               • [threeside_prescribed_pair_sixmenu01] Three-side endpoint six-sets have no prescribed-pair matching residue
+            • [1000946] ‹Three-side fixed-defect shell transport stays in the deletion component and gives an explicit large descent›
+              • [1000950] ‹Every fixed-defect shell edge lies in a common 4|3 descent diamond›
+                • [1000951] ‹Fixed-defect three-side transport descends to a monotone 4|3 corridor›
+                  • [1000953] ‹Second-layer synchronization fails only in a degree-four shell with a 2K2, P4, or claw core graph›
+                    • [1000954] ‹Every fixed-defect lower shell synchronizes its next descent or carries order disagreement inside the same 4|3 layer›
+                      • [1000955] ‹Failure of fixed-defect second-layer synchronization forces a shell-local reversing triple›
+                        • [1000956] ‹The fixed-defect second-layer fork reduces to descent, an endpoint reversal, or a Hamiltonian 4/5 window›
           • [1000311] Every root Hamiltonizes at least three fifths of the four-subsets of any large core
             • [1000449] Four exterior roots over a core of order at least six force order disagreement or a Hamiltonian four-set containing two roots
           • [1000453] A rooted eight-set has at least twenty-one Hamiltonian five-shells
@@ -758,8 +780,18 @@
               • [1000807] Two labels using one endpoint collapse the third transport interval to width one
           • [1000188] Finite obstruction-color compression
     • [1000185] Conjecturally, compatibility graphs near the Mantel bound admit a coherent two-class structural partition, with the equality case rigidly complete bipartite.
+    • [1000928] Full compatibility is always K4-minor-free: at most 2m-3 compatible pairs and at least ceil(m/3) pairwise incompatible deletion covers.
+    • [1000929] Every one-cover-per-label support graph is a forest or the full odd cycle, without a longest-path hypothesis; support compatibility is its line graph.
+      • [1000930] Each ordinary compatibility block shares one ordered Hamilton path; the sole cyclic exception is the spanning balanced odd cycle.
+        • [1000942] A full deletion family forces chosen-cover order disagreement or a direct endpoint mixed edge; the sole structural residue is a balanced spanning odd cycle that already carries a positioned consecutive double-deletion disturbance and tau*<=2+1/lambda.
+      • [1000931] In the odd support cycle, every tight path T canonically yields a fractional cover of mass 2+1/|T|; mass 2 is exactly the adjacent-marginal threshold, with missed cycle edges encoding the dual obstruction.
+      • [1000936] In the exceptional spanning odd support cycle, canonical Hamilton-order transport forces at least (n-3)/2 adjacent-slot reversals, hence linearly many local reversing triples.
+      • [1000938] A branching reduced support tree gives fractional mass two while no pair of selected paths even has spanning union; integral rounding must create a new support.
+    • [1000937] One-hole complementary bipartitions have support graph a forest or the full odd cycle, with exact tree support and symmetric-difference formulas.
     • [compatanchorclass05] Anchored incompatibility splits into support switches and near-label transport.
       • [compatanchordich06] High compatibility degree forces many support switches or many same-path relocations.
+    • [1000943] Any odd cycle of selected deletion supports with distinct labels and two-coverable consecutive double deletions forces a positioned three-part crossing or relative-order disagreement; minimality and balance are not hypotheses.
+    • [1000948] Any arbitrary choice of one deletion cover per vertex forces a positioned order defect, endpoint mixed-support edge, or inherited three-piece double-deletion crossing.
     • [compatdensityplus2] Compatibility density is within two edges of the bipartite bound
       • [1000028] Extremal compatibility density peels to a seven-cycle complement
         • [1000680] Compatibility density is at most one edge above Mantel
@@ -903,6 +935,7 @@
     • [1000415] Five parallel middle vertices force an explicitly alternating five-path.
       • [1000005] Parallel middles contain a linear complete alternating fan.
     • [1000476] Two Hamiltonian five-sets with a common four-core yield a Hamiltonian six-set or four-good-deletion transport
+      • [commoncore_fivepair_sixshell_normal01] Two Hamiltonian five-sets sharing a four-core reduce their six-vertex union to a full pc2 square, adjacent Hamiltonian four-window overlap, or the canonical oriented matching-block exception.
     • [1000557] Adjacent Hamiltonian four-windows force a pc2 square or a two-label core fan.
     • [1000561] A non-Hamiltonian six-set has adjacent good deletion pairs or a perfect-matching good graph
     • [1000632] A 2+2 endpoint-pair omission split forces all four singleton extensions.
@@ -1043,6 +1076,7 @@
               • [1000812] At lambda equals three c minus three every medium Hamiltonian set has the canonical longest-path complement profile
                 • [mediuminterval01] An interval of Hamiltonian set sizes forces a globally longest complement path on the lambda equals 3c minus 3 boundary
     • [1000268] Equitable three-cover size profiles are absolute quadratic minima
+      • [equitable_phi_plateau_fence01] Once a three-cover is equitable, every Phi-nonincreasing three-cover reconfiguration stays equitable at exactly the same Phi; strict quadratic descent is impossible until the component count drops.
       • [1000739] Endpoint deletion probes reduce an all-equal three-cover to multiple crossings, a generic noninsertion witness, or crossed near-merges
         • [1000727] Same-isolated unique-crossing endpoint probes force relative-order disagreement
         • [1000783] Crossed sparse endpoint near-merges force inherited-order disagreement
@@ -1096,7 +1130,7 @@
       • [1000333] The nine-set of a trapped local 4|5|a minimum has only 4|5 two-covers.
         • [1000323] Every trapped local 4-by-5-long quadratic minimum forces order disagreement.
         • [fourfive_plateau_dense_endpoint_blockade01] A trapped 4|5 plateau yields at least 36 endpoint-blocked four-sides and at least five Hamiltonian four-sets through the two long endpoints.
-        • [recomp_45plateau_01] A Phi-minimal 4|5|a three-cover yields mutual support-crossing edges or order disagreement.
+        • [recomp_45plateau_01] A Phi-minimal 4|5|a state has a nine-set with mutual-cover crossing or order disagreement and, independently, a balanced cover supporting at least four reciprocal swaps.
       • [local45neutraldegree01] Neutral degree on a local 4|5|a quadratic plateau is large except in two incidence regimes.
     • [1000109] Local balance improvement drives quadratic descent to equitable three-covers
       • [1000828] Conjecturally, any two disjoint tight paths whose orders differ by at least two can be repartitioned into a two-cover with strictly smaller size imbalance.
@@ -1220,6 +1254,7 @@
       • [reversal_threeleaf_star01] A dense reversal family contains a common-four-set star of at least three Hamiltonian five-supports
         • [reversal_seven_shell_sync01] Every minimum counterexample has a seven-vertex reversal shell with synchronized bounded outputs
         • [reversal_star_sync01] Three reversal-star leaves force a small Hamiltonian support, order disagreement, or a second reversal
+      • [shared_edge_double_reversal_sixpackage01] Two distinct labels reversing the same displayed path edge force two Hamiltonian five-sets with a common four-core; their six-vertex union is either Hamiltonian with pc2 complement or carries the four-good-deletion transport package.
   • [ham6goodsquare01] Every Hamiltonian six-set with two-coverable complement contains a full two-label square.
     • [ham4squareescape01] A Hamiltonian four-core two-label square yields a cross-component edge, descent, or order disagreement above order fifteen.
       • [square_topcover_normal01] A two-label path-cover square has a coherent endpoint cover, a permanently internal label, or top-state cover disagreement.
@@ -1363,6 +1398,7 @@
     • [proof_rehearsal_g000000000077] ‹Proof rehearsal 77 — 2026-09-29 22:22 UTC›
     • [proof_rehearsal_g000000000078] ‹Proof rehearsal 78 — 2026-10-01 00:56 UTC›
     • [proof_rehearsal_g000000000079] ‹Proof rehearsal 79 — 2026-10-01 06:35 UTC›
+    • [proof_rehearsal_g000000000080] ‹Proof rehearsal 80 — 2026-10-02 02:14 UTC›
   • [retired_orientation_landscape_20260927] ‹Retired worker orientation/landscape system›
   • [astraideas01] Astra's ideas
   • [1000111] ‹Brainstorm Epoch 2›
@@ -1372,6 +1408,10 @@
     • [1000749] Astra 008 is exactly a nonnegative complementary-pair determinant
     • [astra008scope01] Astra-008 reduces only to the sharp odd half-order shell.
 • [project_policy] ‹Project-specific policy›
+• [proof_rehearsals01] Top-level collection of comprehensive proof rehearsals for the major GN3N proof-attack lines.
+  • [proof_rehearsal_index2_quadratic01] Phi normalizes trapped three-covers until size information is exhausted. The unique-small plateau is now sharpened to a finite bounded endgame—pc2 square/overlap/matching-block six-shell, positioned endpoint reversal, or doubled reverse barrier—while the unresolved theorem is still global disturbance -> defect span <=2.
+  • [1000947] Defect span three normalizes to a deletion state; fixed-label transport and bounded-window machinery now both terminate at positioned endpoint reversals or 4/5 windows. The remaining gap is endpoint obstruction consumption into defect-line matching number at most one.
+  • [1000949] Deletion-cover compatibility is an onboarding-ready local-to-global route: every selected transversal already forces positioned disturbance; compatibility structure localizes it, while the balanced odd cycle supplies additional global monodromy/fractional structure whose integral consumption remains open.
 • [research_nudges] ‹Research nudges›
 • [scheduler_guidance] ‹Scheduler guidance›
 • [standardization_dictionary] ‹Standardization dictionary›

@@ -1,0 +1,44 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "9c6a22951a04039a076f0cc1132e5d013dee01c7e255ea06670df2e1b9b520c8"
+created_at: "2026-10-02T01:50:24.580228+00:00"
+id: "1000938"
+last_elevation_revision: 11239
+last_substantive_worker_id: 1203
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  author_worker_id: 1203
+  frozen_revision: 11140
+  isolated_research: true
+  publication_scope: "Operator requested this fence; supporting fractional identity included self-contained. Other local results remain unpublished."
+  small_order_free: true
+object_type: "fence"
+origin_worker_id: 1203
+parent_id: "1000929"
+position: 0
+research_interface:
+  given: "A connected selected support tree with the stated bipartition degree conditions."
+  missing_step: "Construct a new Hamiltonian support using the displayed orders; fractional mass two alone does not close the grand conjecture."
+  produces: "Exact spanning-pair criterion and a conditional obstruction to rounding using two selected paths."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A branching reduced support tree gives fractional mass two while no pair of selected paths even has spanning union; integral rounding must create a new support."
+statement_sha256: "820e70d8781a796b6d159dc881e6297d9063405cda4ca49e04921576a409db68"
+substantive_worker_ids:
+  - 1203
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Branching in a reduced support tree prevents rounding by two selected paths"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T01:50:24.580228+00:00"
+version: 3

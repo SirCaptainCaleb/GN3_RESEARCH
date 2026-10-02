@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 90
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "97704346bbe2549f5e1ed0663a31bc6127b7cba3d095f892254c00453484b2c5"
+created_at: "2026-10-02T02:26:26.286276+00:00"
+id: "equitable_phi_plateau_fence01"
+last_elevation_revision: 0
+last_substantive_worker_id: 1231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "Route-fence lemma used to sharpen INDEX 2 rehearsal; verify the absolute-minimum plateau consequence."
+  audit_request_recorded_at: "2026-10-02T02:30:33.961957+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1231
+parent_id: "1000268"
+position: 0
+research_interface:
+  consumer: "quadratic no-trapping proof design; proof rehearsals; secondary-potential design"
+  given: "an equitable spanning three-cover"
+  produces: "a route fence: all nonincreasing-Phi three-cover states stay on the equal-Phi equitable plateau"
+  significance: "shows that late equitable branches cannot be closed by strict Phi descent and require direct merge or an order/support-sensitive secondary invariant"
+research_level: "lemma"
+semantic_container_text: null
+simplified_statement: "Once a three-cover is equitable, every Phi-nonincreasing three-cover reconfiguration stays equitable at exactly the same Phi; strict quadratic descent is impossible until the component count drops."
+statement_sha256: "57602dbc107b2672c7e4f3bd30e4188a8e1d1c8c164742a447efb5b8176f6d24"
+substantive_worker_ids:
+  - 1231
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Equitable three-covers admit no strict quadratic descent while three components remain"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:30:33.961957+00:00"
+version: 4

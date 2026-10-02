@@ -1,0 +1,42 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 90
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "250678715246882cb8ec0179cd8bac9ad09ea4694f08c9b257965c4f09ddc660"
+created_at: "2026-10-02T02:14:16.443768+00:00"
+id: "1000945"
+last_elevation_revision: 11239
+last_substantive_worker_id: 1195
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "supersession requires certification before retirement effect"
+  audit_request_recorded_at: "2026-10-02T02:18:25.458272+00:00"
+  audit_trigger_kind: "destructive_effect"
+object_type: "theorem"
+origin_worker_id: 1195
+parent_id: "oddcycle_rank_transport_reversal_density01"
+position: 0
+research_interface:
+  consumer: "Local analysis of the residual same-slot/reversal geometry."
+  given: "The rank-monodromy description of the balanced odd-cycle residue."
+  produces: "A sharp reduced-versus-dense reversal dichotomy, with local consecutive-transition consequences."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "The odd-cycle rank braid is either reduced—exactly one reversal across every rank boundary—or has at least k+1 reversal transitions, a strict majority; parity leaves no intermediate count."
+statement_sha256: "9eb2c5c1ee2793c4a3187cee509ec6f42fccf74a1c6139bf35a7ed469c7e79f6"
+substantive_worker_ids:
+  - 1195
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Odd-cycle rank monodromy has a reversal-density parity gap"
+unary_chain_length: 2
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:18:25.458272+00:00"
+version: 2

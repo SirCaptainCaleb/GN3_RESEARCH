@@ -1,6 +1,6 @@
 atlas_height: null
 atlas_hidden: false
-attention: "available"
+attention: "hidden"
 audit_priority: 0
 audit_requested: false
 audit_requirement: "recomposition_equivalence"
@@ -28,7 +28,6 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-29T16:08:26.169042+00:00"
     worker_id: 601
-  audit_work_kind: "dependency_hold"
   last_audit_observation:
     claim_id: 333
     detail: "After audit-time packaging repair, the recomposition manifest now contains only certified source 2147b77c1d7e, the endpoint small-support conclusion it genuinely replaces. The target strengthens that source from existence of a Hamiltonian support of order 4/5/6 to an unconditional Hamiltonian four-support, using certified reversal_global_frontier01 and minimum-counterexample complement calculus. Richer staircase reversal/noninsertion lemmas were restored and are no longer structurally retired by this composition."
@@ -36,10 +35,16 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-29T16:08:26.169042+00:00"
     worker_id: 601
+  last_dependency_auto_refresh:
+    reason: "all changed premises passed unconditionally"
+    recorded_at: "2026-10-02T00:15:49.072216+00:00"
   recomposition_audit:
     classified_at: "2026-09-29T15:40:45.882426+00:00"
     scope: "equivalence"
     source_package_fully_certified: true
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-02T00:15:49.072216+00:00"
+  supersession_previous_attention: "available"
 object_type: "research"
 origin_worker_id: 605
 parent_id: "1000104"
@@ -55,10 +60,10 @@ simplified_statement: "Every large staircase minimum has a Hamiltonian four-supp
 statement_sha256: "9c5b64298e9b23699cda2813d974c1e180c65378a792ddea78337fcc0e6df008"
 substantive_worker_ids:
   - 605
-support_reason: "dependency_verification_pending"
-support_status: "dependency_hold"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Every large staircase minimum has a Hamiltonian four-support with two-cover complement"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T18:43:23.594674+00:00"
-version: 12
+updated_at: "2026-10-02T00:15:49.072216+00:00"
+version: 13

@@ -46,7 +46,7 @@ substantive_worker_ids:
 support_reason: "current_certified_premises"
 support_status: "supported"
 title: "Endpoint deletion probes reduce an all-equal three-cover to multiple crossings, a generic noninsertion witness, or crossed near-merges"
-unary_chain_length: 2
+unary_chain_length: 1
 unary_chain_standalone: false
 updated_at: "2026-09-27T23:39:39.232966+00:00"
 version: 8

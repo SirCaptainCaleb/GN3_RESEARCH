@@ -2,10 +2,10 @@ atlas_height: null
 atlas_hidden: false
 attention: "focus"
 audit_priority: 100
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_reconstruction"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 3
 body_sha256: "c9a9dea5d037d6facca6c289fa7c681358562c7c8e9a2c0880f611d95046ca23"
 created_at: "2026-09-28T21:21:51.555245+00:00"
 id: "1000540"
@@ -20,20 +20,20 @@ metadata:
   audit_request_reason: "Elevation moved the ubiquitous five-vertex order-disagreement conclusion into the hard-reversal pair-grid source, superseding hardreversal_pairgrid01."
   audit_request_recorded_at: "2026-10-01T18:44:05.742512+00:00"
   audit_resolution:
-    claim_id: 75
-    detail: "Independent reconstruction verifies the complete pair-extension conclusion and radius-two deletion stability from the universal hard-reversal family and minimum-counterexample calculus."
-    math_version: 1
+    claim_id: 1196
+    detail: "Reconstructed the four-set Hamiltonicity from boundary antisymmetry, the deletion-cover consequences from minimum-counterexample calculus, and the five-vertex order-disagreement construction."
+    math_version: 3
     outcome: "pass"
-    recorded_at: "2026-09-29T05:27:15.715501+00:00"
-    worker_id: 683
+    recorded_at: "2026-10-02T00:15:49.072216+00:00"
+    worker_id: 1193
   audit_trigger_kind: "chain_checkpoint"
   last_audit_observation:
-    claim_id: 75
-    detail: "Independent reconstruction verifies the complete pair-extension conclusion and radius-two deletion stability from the universal hard-reversal family and minimum-counterexample calculus."
-    math_version: 1
+    claim_id: 1196
+    detail: "Reconstructed the four-set Hamiltonicity from boundary antisymmetry, the deletion-cover consequences from minimum-counterexample calculus, and the five-vertex order-disagreement construction."
+    math_version: 3
     outcome: "pass"
-    recorded_at: "2026-09-29T05:27:15.715501+00:00"
-    worker_id: 683
+    recorded_at: "2026-10-02T00:15:49.072216+00:00"
+    worker_id: 1193
   last_dependency_auto_refresh:
     reason: "all changed premises passed unconditionally"
     recorded_at: "2026-09-29T17:44:33.034029+00:00"
@@ -54,10 +54,10 @@ substantive_worker_ids:
   - 586
   - 1151
   - 1165
-support_reason: "audit checkpoint requested"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "The universal hard-reversal cross family is a complete endpoint pair grid with ubiquitous local order disagreement"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T19:28:17.078268+00:00"
-version: 11
+updated_at: "2026-10-02T00:15:49.072216+00:00"
+version: 13

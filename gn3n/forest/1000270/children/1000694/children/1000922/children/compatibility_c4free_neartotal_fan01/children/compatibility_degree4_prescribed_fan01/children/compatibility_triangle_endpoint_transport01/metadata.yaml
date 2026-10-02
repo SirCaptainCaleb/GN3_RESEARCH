@@ -2,10 +2,10 @@ atlas_height: null
 atlas_hidden: false
 attention: "available"
 audit_priority: 99
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_check"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 1
 body_sha256: "1257158341ecf553376d7a14ab09b515c8738832aa40bc6107cfd80b93f259ee"
 created_at: "2026-10-01T19:51:19.657474+00:00"
 id: "compatibility_triangle_endpoint_transport01"
@@ -19,8 +19,22 @@ metadata:
   audit_chain_root: "compatibility_pathcycle_skeleton01"
   audit_request_reason: "Verify opposite-side neighbor support incompatibility, path-cycle classification, and the ceil(2m/5) independent-set bound."
   audit_request_recorded_at: "2026-10-01T19:55:45.092725+00:00"
+  audit_resolution:
+    claim_id: 1199
+    detail: "Independent check: a same-side compatibility triangle yields the synchronized three-deletion family; endpoint synchronization plus the singleton degree bound forces direct mixed transport unless the order-disagreement exit occurs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
   audit_trigger_kind: "chain_checkpoint"
   isolated_research: true
+  last_audit_observation:
+    claim_id: 1199
+    detail: "Independent check: a same-side compatibility triangle yields the synchronized three-deletion family; endpoint synchronization plus the singleton degree bound forces direct mixed transport unless the order-disagreement exit occurs."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
   strengthens: "compatibility_degree4_prescribed_fan01"
 object_type: "research"
 origin_worker_id: 1151
@@ -35,10 +49,10 @@ simplified_statement: "A same-side compatibility triangle forces a direct opposi
 statement_sha256: "ec1535a5dc7a706b64e442f1926e1daf3e45db25febf019ef7f82c0bcbc138c6"
 substantive_worker_ids:
   - 1151
-support_reason: "provisional_unaudited"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Compatibility triangles force endpoint transport or order reversal"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T19:55:45.092725+00:00"
-version: 7
+updated_at: "2026-10-02T00:14:35.276297+00:00"
+version: 9

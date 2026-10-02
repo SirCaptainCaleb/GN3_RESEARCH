@@ -2,10 +2,10 @@ atlas_height: null
 atlas_hidden: false
 attention: "available"
 audit_priority: 99
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_check"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 1
 body_sha256: "04f0282d4a93d88feb63a7117c842cf61df6f08b01bedacb7c15de420c52ac89"
 created_at: "2026-10-01T19:44:29.361898+00:00"
 id: "compatibility_degree4_prescribed_fan01"
@@ -19,8 +19,22 @@ metadata:
   audit_chain_root: "compatibility_pathcycle_skeleton01"
   audit_request_reason: "Verify opposite-side neighbor support incompatibility, path-cycle classification, and the ceil(2m/5) independent-set bound."
   audit_request_recorded_at: "2026-10-01T19:55:45.092725+00:00"
+  audit_resolution:
+    claim_id: 1199
+    detail: "Independent check: compatible neighbors split by anchor side; each side-class is a clique, and three same-side neighbors with the anchor would violate four-cover gluing, so Delta(C)<=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
   audit_trigger_kind: "chain_checkpoint"
   isolated_research: true
+  last_audit_observation:
+    claim_id: 1199
+    detail: "Independent check: compatible neighbors split by anchor side; each side-class is a clique, and three same-side neighbors with the anchor would violate four-cover gluing, so Delta(C)<=4."
+    math_version: 1
+    outcome: "pass"
+    recorded_at: "2026-10-02T00:14:35.276297+00:00"
+    worker_id: 1194
   strengthens: "compatibility_c4free_neartotal_fan01"
 object_type: "research"
 origin_worker_id: 1151
@@ -35,10 +49,10 @@ simplified_statement: "Without an order-disagreement pair, every deletion-cover 
 statement_sha256: "04a362661e75e220a5973e256f87e6c1742fe0be011814bc44553a6fcdce4d55"
 substantive_worker_ids:
   - 1151
-support_reason: "provisional_unaudited"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Deletion-cover compatibility has maximum degree four, forcing prescribed-anchor crossing fans"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-10-01T19:55:45.092725+00:00"
-version: 7
+updated_at: "2026-10-02T00:14:35.276297+00:00"
+version: 9

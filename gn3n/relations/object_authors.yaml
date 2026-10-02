@@ -63,9 +63,25 @@
   object_id: "compatibility_pathcycle_skeleton01"
   worker_id: 1151
 -
+  first_recorded_at: "2026-10-02T01:44:31.067306+00:00"
+  object_id: "1000935"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:09:09.589148+00:00"
+  object_id: "1000943"
+  worker_id: 1230
+-
   first_recorded_at: "2026-09-29T04:52:41.175097+00:00"
   object_id: "ham6_large_escape01"
   worker_id: 703
+-
+  first_recorded_at: "2026-10-02T02:27:30.789244+00:00"
+  object_id: "1000950"
+  worker_id: 1232
+-
+  first_recorded_at: "2026-10-02T03:57:15.266967+00:00"
+  object_id: "proof_rehearsal_index2_quadratic01"
+  worker_id: 1257
 -
   first_recorded_at: "2026-09-21T00:58:32.616694+00:00"
   object_id: "threeside01"
@@ -258,6 +274,22 @@
   first_recorded_at: "2026-10-01T19:55:33.138791+00:00"
   object_id: "1000927"
   worker_id: 1164
+-
+  first_recorded_at: "2026-10-02T01:47:51.827228+00:00"
+  object_id: "1000936"
+  worker_id: 1193
+-
+  first_recorded_at: "2026-10-02T02:12:47.410197+00:00"
+  object_id: "same_end_extenders_initial_reversal01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T02:29:16.059611+00:00"
+  object_id: "same_end_extenders_double_reversal01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T03:59:05.41598+00:00"
+  object_id: "1000956"
+  worker_id: 1232
 -
   first_recorded_at: "2026-09-23T20:45:22.099667+00:00"
   object_id: "humanfrozen01"
@@ -610,6 +642,26 @@
   first_recorded_at: "2026-10-01T18:23:28.479253+00:00"
   object_id: "1000922"
   worker_id: 1140
+-
+  first_recorded_at: "2026-10-02T01:17:58.845246+00:00"
+  object_id: "1000928"
+  worker_id: 1203
+-
+  first_recorded_at: "2026-10-02T01:48:11.423002+00:00"
+  object_id: "oddcycle_order_coherence_or_c4_obstruction01"
+  worker_id: 1194
+-
+  first_recorded_at: "2026-10-02T02:13:57.761043+00:00"
+  object_id: "1000944"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:30:44.587647+00:00"
+  object_id: "1000951"
+  worker_id: 1232
+-
+  first_recorded_at: "2026-10-02T04:01:59.082021+00:00"
+  object_id: "blocked_extender_coherent_sameend_escape01"
+  worker_id: 1231
 -
   first_recorded_at: "2026-09-26T16:29:31.511953+00:00"
   object_id: "weightedfractionalduality01"
@@ -1067,6 +1119,26 @@
   object_id: "1000540"
   worker_id: 1151
 -
+  first_recorded_at: "2026-10-02T01:18:04.186479+00:00"
+  object_id: "1000929"
+  worker_id: 1203
+-
+  first_recorded_at: "2026-10-02T01:48:36.348152+00:00"
+  object_id: "oddcycle_rank_transport_reversal_density01"
+  worker_id: 1194
+-
+  first_recorded_at: "2026-10-02T02:14:16.443768+00:00"
+  object_id: "1000945"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:35:30.637844+00:00"
+  object_id: "unique_small_double_reversal01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T04:02:55.688749+00:00"
+  object_id: "commoncore_fivepair_sixshell_normal01"
+  worker_id: 1231
+-
   first_recorded_at: "2026-09-27T00:15:16.673578+00:00"
   object_id: "archive01"
   worker_id: 559
@@ -1391,6 +1463,26 @@
   object_id: "terminalrankcircular01"
   worker_id: 648
 -
+  first_recorded_at: "2026-10-02T01:18:11.102616+00:00"
+  object_id: "1000930"
+  worker_id: 1203
+-
+  first_recorded_at: "2026-10-02T01:49:16.869047+00:00"
+  object_id: "1000937"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:16:12.862312+00:00"
+  object_id: "1000943"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:38:47.705752+00:00"
+  object_id: "same_end_extenders_four_endpoint_reversal01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T04:07:16.393911+00:00"
+  object_id: "unique_small_bounded_endgame01"
+  worker_id: 1231
+-
   first_recorded_at: "2026-09-27T14:21:26.830193+00:00"
   object_id: "defectwindowpotential01"
   worker_id: 648
@@ -1571,9 +1663,29 @@
   object_id: "compatibility_c4free_neartotal_fan01"
   worker_id: 1151
 -
+  first_recorded_at: "2026-10-02T01:18:17.766633+00:00"
+  object_id: "1000931"
+  worker_id: 1203
+-
   first_recorded_at: "2026-09-27T19:38:27.177864+00:00"
   object_id: "local45sync01"
   worker_id: 678
+-
+  first_recorded_at: "2026-10-02T01:50:24.580228+00:00"
+  object_id: "1000938"
+  worker_id: 1203
+-
+  first_recorded_at: "2026-10-02T02:17:46.438014+00:00"
+  object_id: "same_end_extenders_initial_reversal01"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:39:04.475701+00:00"
+  object_id: "unique_small_four_endpoint_reversal01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T04:08:15.109435+00:00"
+  object_id: "1000949"
+  worker_id: 1194
 -
   first_recorded_at: "2026-09-27T19:45:04.690865+00:00"
   object_id: "local45neutraldegree01"
@@ -1638,6 +1750,26 @@
   first_recorded_at: "2026-10-01T19:44:29.361898+00:00"
   object_id: "compatibility_degree4_prescribed_fan01"
   worker_id: 1151
+-
+  first_recorded_at: "2026-10-02T01:20:54.557769+00:00"
+  object_id: "1000932"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T01:50:26.015582+00:00"
+  object_id: "1000939"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:18:44.469512+00:00"
+  object_id: "unique_small_endpoint_reversal01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T03:43:47.531706+00:00"
+  object_id: "1000953"
+  worker_id: 1232
+-
+  first_recorded_at: "2026-10-02T04:08:54.978005+00:00"
+  object_id: "1000947"
+  worker_id: 1194
 -
   first_recorded_at: "2026-09-27T22:57:09.321944+00:00"
   object_id: "defectordertoolkit01"
@@ -1871,6 +2003,22 @@
   object_id: "1000923"
   worker_id: 1164
 -
+  first_recorded_at: "2026-10-02T01:52:30.027257+00:00"
+  object_id: "recomp_fourwindow_square_01"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:18:46.269373+00:00"
+  object_id: "1000946"
+  worker_id: 1232
+-
+  first_recorded_at: "2026-10-02T02:18:46.269373+00:00"
+  object_id: "1000947"
+  worker_id: 1232
+-
+  first_recorded_at: "2026-10-02T03:48:19.207828+00:00"
+  object_id: "1000954"
+  worker_id: 1232
+-
   first_recorded_at: "2026-09-28T02:03:07.78179+00:00"
   object_id: "unique_small_transport_recomp02"
   worker_id: 679
@@ -1991,6 +2139,26 @@
   object_id: "1000924"
   worker_id: 1165
 -
+  first_recorded_at: "2026-10-02T01:21:54.636745+00:00"
+  object_id: "compatibility_spanning_odd_cycle_normal_form01"
+  worker_id: 1194
+-
+  first_recorded_at: "2026-10-02T01:53:20.836671+00:00"
+  object_id: "recomp_45plateau_01"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:20:42.883375+00:00"
+  object_id: "1000948"
+  worker_id: 1230
+-
+  first_recorded_at: "2026-10-02T02:20:42.883375+00:00"
+  object_id: "1000949"
+  worker_id: 1230
+-
+  first_recorded_at: "2026-10-02T03:52:40.820741+00:00"
+  object_id: "shared_edge_double_reversal_sixpackage01"
+  worker_id: 1231
+-
   first_recorded_at: "2026-09-29T04:28:16.6564+00:00"
   object_id: "staircase_standard_disturbance01"
   worker_id: 718
@@ -2034,6 +2202,18 @@
   first_recorded_at: "2026-10-01T19:50:04.844062+00:00"
   object_id: "1000925"
   worker_id: 1165
+-
+  first_recorded_at: "2026-10-02T01:39:50.473861+00:00"
+  object_id: "1000933"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T01:55:03.90276+00:00"
+  object_id: "1000940"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T03:53:29.484314+00:00"
+  object_id: "same_end_extenders_hall_completion01"
+  worker_id: 1231
 -
   first_recorded_at: "2026-09-28T20:25:17.100612+00:00"
   object_id: "recomp_square45_01"
@@ -2443,6 +2623,14 @@
   object_id: "compatibility_triangle_endpoint_transport01"
   worker_id: 1151
 -
+  first_recorded_at: "2026-10-02T01:40:48.57622+00:00"
+  object_id: "1000931"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T01:55:53.945994+00:00"
+  object_id: "1000941"
+  worker_id: 1195
+-
   first_recorded_at: "2026-09-29T17:28:28.200658+00:00"
   object_id: "endpoint_reversal_obstruction_recomp01"
   worker_id: 637
@@ -2506,6 +2694,14 @@
   first_recorded_at: "2026-09-29T18:14:28.109504+00:00"
   object_id: "four_window_transport15"
   worker_id: 555
+-
+  first_recorded_at: "2026-10-02T02:23:36.650889+00:00"
+  object_id: "proof_rehearsal_index2_quadratic01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T03:53:51.690924+00:00"
+  object_id: "1000949"
+  worker_id: 1256
 -
   first_recorded_at: "2026-09-29T18:17:38.601537+00:00"
   object_id: "shared_endpoint_fork_compression01"
@@ -6946,3 +7142,19 @@
   first_recorded_at: "2026-10-01T19:54:55.486008+00:00"
   object_id: "1000926"
   worker_id: 1164
+-
+  first_recorded_at: "2026-10-02T01:43:59.308997+00:00"
+  object_id: "1000934"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T01:58:28.326562+00:00"
+  object_id: "1000942"
+  worker_id: 1195
+-
+  first_recorded_at: "2026-10-02T02:26:26.286276+00:00"
+  object_id: "equitable_phi_plateau_fence01"
+  worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T03:55:16.487824+00:00"
+  object_id: "1000955"
+  worker_id: 1232

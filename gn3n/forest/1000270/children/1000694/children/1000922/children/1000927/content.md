@@ -2,21 +2,24 @@
 
 ## Statement
 
+
 Let H be a boundary tournament with pc(H)>2. Let D be a set of m>=4 deletion labels, choose one two-cover F_d of H-d for each d in D, and fix an anchor x in D with F_x=P|Q.
 
 Let C be the full-compatibility graph on D. The neighbors of x split canonically into two classes N_P,N_Q according to the common support class into which x is inserted in the neighboring cover; write p=|N_P| and q=|N_Q|.
 
 For each S in {N_P,N_Q}, every pair of labels in S is support-compatible. The full-compatibility graph induced by S is triangle-free. Hence S contains at least floor((|S|-1)^2/4) support-compatible but order-incompatible pairs. Moreover every such order disagreement is centered at x: the two covers agree on the relative order of every common pair not involving x, so some common vertex t is ordered on opposite sides of x in the two path orders.
 
-Consequently the anchor x satisfies the quantitative tradeoff
-number of support-incompatible covers relative to F_x = m-1-p-q,
+Let s_x be the number of covers F_y that are support-incompatible with F_x, and let o_x be the number that are support-compatible but order-incompatible with F_x. Then
+s_x+o_x=m-1-p-q,
 while the two compatible side-classes contain at least
 floor((p-1)^2/4)+floor((q-1)^2/4)
 anchor-centered order-incompatible pairs.
 
-In particular, for every prescribed anchor x, either at least m-5 other covers are support-incompatible with F_x and therefore have the fixed-cut crossing witness of 1000922, or there exist two covers, both fully compatible with F_x and assigned to the same anchor side, that are support-compatible but order-incompatible with disagreement necessarily involving x.
+In particular, for every prescribed anchor x, either p+q<=4, in which case at least m-5 other covers are incompatible with F_x and each gives either the fixed-cut support-crossing witness of 1000922 or a direct order disagreement with F_x; or p+q>=5, in which case there exist two covers, both fully compatible with F_x and assigned to the same anchor side, that are support-compatible but order-incompatible with disagreement necessarily involving x.
+
 
 ## Body
+
 
 Fix x and write F_x=P|Q. Let y be fully compatible with x. By the compatible-pair localization in 1000694, when F_x and F_y are compared on H-{x,y}, the omitted vertices x and y restore into the same common support class; restoring them into different classes would give a spanning two-cover of H. Thus each neighbor y of x is assigned canonically to the P-side or Q-side. Let these classes be N_P and N_Q.
 
@@ -30,4 +33,6 @@ order-incompatible pairs. Likewise N_Q contains at least floor((q-1)^2/4).
 
 These disagreements are positioned at x. Take y,z in N_P that are support-compatible but order-incompatible. On Q, both covers agree in relative order with F_x, because Q survives both pairwise comparisons with the anchor. On the common vertices P-{y,z}, both covers also agree in relative order with F_x: full compatibility of F_y with F_x fixes every pair not involving x or y, and full compatibility of F_z with F_x fixes every pair not involving x or z. Hence F_y and F_z agree on every common pair not involving x. Since they are order-incompatible, some common vertex t must therefore satisfy opposite relative orders with x in the two anchor-side path orders. Equivalently, the two neighboring covers place x at different insertion cuts of the inherited anchor-side order. The same reasoning applies inside N_Q.
 
-Finally, x has exactly m-1-p-q nonneighbors in the full-compatibility graph. A nonneighbor is either support-incompatible or support-compatible but order-incompatible. But if p+q<=4, then x has at least m-5 nonneighbors; any nonneighbor that is support-incompatible has the fixed-cut crossing witness of 1000922, while any support-compatible nonneighbor already gives order disagreement. If p+q>=5, one of p,q is at least three, and the preceding triangle-free argument gives an anchor-centered support-compatible order-incompatible pair among neighbors of x. Thus for every prescribed anchor, either at least m-5 support-incompatible crossing covers occur, or an anchor-centered order-disagreement pair occurs among covers individually fully compatible with the anchor. The quantitative count above records both phenomena simultaneously.
+Finally, let s_x be the number of nonneighbors y of x for which F_y is support-incompatible with F_x, and let o_x be the number for which F_y is support-compatible but order-incompatible with F_x. Since the full-compatibility neighbors of x are exactly N_P union N_Q,
+s_x+o_x=m-1-p-q.
+If p+q<=4, then s_x+o_x>=m-5. Every one of these nonneighbors supplies either the fixed-cut support-crossing witness of 1000922 or a direct order disagreement with F_x. If p+q>=5, one of p,q is at least three, and the preceding triangle-free argument gives an anchor-centered support-compatible order-incompatible pair among neighbors of x. This proves the stated dichotomy without identifying all nonneighbors as support-incompatible.

@@ -1,6 +1,6 @@
 atlas_height: null
 atlas_hidden: false
-attention: "available"
+attention: "hidden"
 audit_priority: 100
 audit_requested: false
 audit_requirement: "independent_check"
@@ -46,6 +46,9 @@ metadata:
     recorded_at: "2026-10-01T19:27:45.427334+00:00"
     statement_change_policy: "small_local_tweak_only_policy_enforced"
     worker_id: 1164
+  supersession_auto_hidden: true
+  supersession_effective_at: "2026-10-02T00:14:35.276297+00:00"
+  supersession_previous_attention: "available"
 object_type: "research"
 origin_worker_id: 1140
 parent_id: "1000694"
@@ -67,5 +70,5 @@ support_status: "supported"
 title: "Deletion-cover compatibility forces a sharp linear family relative to one fixed support cut"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T19:28:35.317157+00:00"
-version: 8
+updated_at: "2026-10-02T00:14:35.276297+00:00"
+version: 9

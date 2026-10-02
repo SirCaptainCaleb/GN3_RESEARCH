@@ -2,10 +2,10 @@ atlas_height: null
 atlas_hidden: false
 attention: "focus"
 audit_priority: 100
-audit_requested: true
+audit_requested: false
 audit_requirement: "independent_reconstruction"
-audit_status: "pending"
-audited_math_version: null
+audit_status: "certified"
+audited_math_version: 4
 body_sha256: "9bd3245a92ee591d065761e644a290716f0d6fcb50a0eba3a21ea2017a3c026b"
 created_at: "2026-09-28T21:35:30.426916+00:00"
 id: "reversal_global_frontier01"
@@ -25,21 +25,21 @@ metadata:
   audit_request_reason: "Elevation amplified prescribed-pair four-set existence to a sharp Mantel-scale linear fan with pc2 complements."
   audit_request_recorded_at: "2026-10-01T18:44:03.54615+00:00"
   audit_resolution:
-    claim_id: 255
-    detail: "Reconstructed the fixed-pair pigeonhole proof directly. Among any three exterior labels, two have the same orientation relative to L,R; boundary antisymmetry on their pair supplies a Hamiltonian four-order. Properness and minimum-counterexample calculus give the stated non-Hamiltonian path-cover-two complement."
-    math_version: 3
+    claim_id: 1196
+    detail: "Reconstructed alpha(J)<=2 by the two-class pigeonhole argument for any exterior triple, then verified the Mantel edge/degree bounds and complementary path-cover consequence."
+    math_version: 4
     outcome: "pass"
-    recorded_at: "2026-09-29T12:17:08.199921+00:00"
-    worker_id: 681
+    recorded_at: "2026-10-02T00:15:49.072216+00:00"
+    worker_id: 1193
   audit_trigger_kind: "chain_checkpoint"
   global_reversal_reduction: true
   last_audit_observation:
-    claim_id: 255
-    detail: "Reconstructed the fixed-pair pigeonhole proof directly. Among any three exterior labels, two have the same orientation relative to L,R; boundary antisymmetry on their pair supplies a Hamiltonian four-order. Properness and minimum-counterexample calculus give the stated non-Hamiltonian path-cover-two complement."
-    math_version: 3
+    claim_id: 1196
+    detail: "Reconstructed alpha(J)<=2 by the two-class pigeonhole argument for any exterior triple, then verified the Mantel edge/degree bounds and complementary path-cover consequence."
+    math_version: 4
     outcome: "pass"
-    recorded_at: "2026-09-29T12:17:08.199921+00:00"
-    worker_id: 681
+    recorded_at: "2026-10-02T00:15:49.072216+00:00"
+    worker_id: 1193
 object_type: "research"
 origin_worker_id: 703
 parent_id: "mincex01"
@@ -57,10 +57,10 @@ substantive_worker_ids:
   - 703
   - 626
   - 1151
-support_reason: "audit checkpoint requested"
-support_status: "unchecked"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "Every prescribed pair has a sharp linear star of Hamiltonian four-sets with two-path complements"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-10-01T19:29:29.658624+00:00"
-version: 21
+updated_at: "2026-10-02T00:15:49.072216+00:00"
+version: 23

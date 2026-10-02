@@ -4,16 +4,16 @@ attention: "focus"
 audit_priority: 100
 audit_requested: false
 audit_requirement: "independent_reconstruction"
-audit_status: "certified"
-audited_math_version: 2
-body_sha256: "d8f7c2a860fab9c41d4ff3d3336a164c0a4d5538e37159f08590221be0f6edde"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "c84b1b064381457f7840ea86a0d8293a9018e05bbfef28b9e7c711073cb85c9b"
 created_at: "2026-09-28T20:35:52.141702+00:00"
 id: "recomp_fourwindow_square_01"
-last_elevation_revision: 0
-last_substantive_worker_id: 586
+last_elevation_revision: 11181
+last_substantive_worker_id: 1195
 legacy_id: null
 lifecycle_status: "active"
-math_version: 2
+math_version: 3
 mathematical_status: "proved"
 metadata:
   audit_resolution:
@@ -46,19 +46,20 @@ origin_worker_id: 586
 parent_id: "1000731"
 position: 0
 research_interface:
-  consumer: "four-set transport and coherent endpoint-square analysis"
+  consumer: "four-set transport; permanent-internal square analysis; coherent endpoint-square analysis"
   given: "a Hamiltonian four-set W in a minimum counterexample of order at least fifteen, with H-W non-Hamiltonian of path-cover number two"
-  produces: "strict quadratic descent, order disagreement, an explicit component-drop edge joining two of three displayed lower-state pieces, or a coherent two-label endpoint square; a Phi-minimal four-side square state has profile {4,5,n-9} unless order disagreement occurs"
+  produces: "strict quadratic descent; top-state support/order disagreement; a label internal in every top-state two-cover; or a coherent endpoint square whose Phi-minimal four-side state has profile {4,5,n-9} unless order disagreement occurs"
 research_level: "theorem"
 semantic_container_text: null
-simplified_statement: "A Hamiltonian four-set yields descent, order disagreement, an internal-label edge crossing, or a coherent endpoint square."
-statement_sha256: "262c446867a2974cde8cf2bf7baf32270e76f689cc92848c8df6aa1cc6d5db9e"
+simplified_statement: "A Hamiltonian four-set reduces to descent, top-state support/order disagreement, a permanently internal square label, or a coherent endpoint square; a Phi-minimal coherent square has profile {4,5,n-9}."
+statement_sha256: "ef19e886a4c9d85e4abb688dfa173d52c0f53e16d86b8021889167d805da07e0"
 substantive_worker_ids:
   - 586
-support_reason: "nonproved_logical_premise"
-support_status: "provisional"
-title: "A Hamiltonian four-set yields descent, order disagreement, an internal-label edge crossing, or a coherent endpoint square"
+  - 1195
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "A Hamiltonian four-set yields descent, disagreement, permanent internality, or a coherent endpoint square"
 unary_chain_length: 1
 unary_chain_standalone: false
-updated_at: "2026-09-28T20:39:45.605872+00:00"
-version: 7
+updated_at: "2026-10-02T01:52:48.113867+00:00"
+version: 10

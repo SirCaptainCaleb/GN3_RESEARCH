@@ -1,0 +1,47 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "03c3c6d8acf8bb21a19e0bfe5a12e53e44e259d8f531f1f2a82eca5e494317cc"
+created_at: "2026-10-02T01:17:58.845246+00:00"
+id: "1000928"
+last_elevation_revision: 11181
+last_substantive_worker_id: 1203
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "1000939"
+  audit_request_reason: "Independent reconstruction of the new full-deletion compatibility reduction 1000935, endpoint-probe lemma 1000934, odd-cycle residual 1000939, and their dependencies. This chain is now theorem-facing and load-bearing."
+  audit_request_recorded_at: "2026-10-02T01:53:36.8705+00:00"
+  audit_trigger_kind: "chain_checkpoint"
+  author_preflight_note: "Author proof and hypothesis review completed. No independent certification asserted."
+  author_worker_id: 1203
+  frozen_artifact_revision: 11097
+  isolated_research: true
+  small_order_free: true
+object_type: "result"
+origin_worker_id: 1203
+parent_id: "compatibilitytoolkit01"
+position: 0
+research_interface:
+  missing_step: "Force gluing structure by rechoosing deletion covers; incompatibility alone is not closure."
+  output: "Unconditional minor exclusion, linear compatible-pair bound, and labeled disagreement separators."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Full compatibility is always K4-minor-free: at most 2m-3 compatible pairs and at least ceil(m/3) pairwise incompatible deletion covers."
+statement_sha256: "1a6dbe123ef169b5f7a82738660eb6f50233089c66eeb2c86ccce5761d569a1b"
+substantive_worker_ids:
+  - 1203
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Deletion-cover compatibility graphs exclude K4 minors unconditionally"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T01:53:36.8705+00:00"
+version: 4

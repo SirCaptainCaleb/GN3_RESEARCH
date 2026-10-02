@@ -106,6 +106,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "shared_edge_double_reversal_sixpackage01"
+  route_key: "endpoint-reversal/shared-edge"
+  updated_at: "2026-10-02T03:52:40.820741+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Reasoning hygiene: annotate the existing cut-crossing lemma as parent of the deletion-label consequence."
   object_id: "hamiltonian_enlargement_forces_crossing01"
   route_key: "project_methods"
@@ -182,6 +190,14 @@
   composition_status: null
   node_kind: "step"
   note: ""
+  object_id: "same_end_extenders_hall_completion01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T03:53:29.484314+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
   object_id: "1000842"
   route_key: null
   updated_at: "2026-10-01T00:14:59.356316+00:00"
@@ -224,6 +240,14 @@
   object_id: "1000926"
   route_key: "global_support_incompatibility_transport_chain"
   updated_at: "2026-10-01T19:54:55.486008+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000955"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T03:55:16.487824+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -325,6 +349,14 @@
   composition_status: null
   node_kind: "step"
   note: ""
+  object_id: "1000956"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T03:59:05.41598+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
   object_id: "1000844"
   route_key: null
   updated_at: "2026-10-01T00:15:23.831966+00:00"
@@ -352,6 +384,14 @@
   object_id: "1000927"
   route_key: "anchor_crossing_or_centered_disagreement"
   updated_at: "2026-10-01T19:55:33.138791+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "blocked_extender_coherent_sameend_escape01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T04:01:59.082021+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -396,6 +436,22 @@
   composition_status: null
   node_kind: "step"
   note: ""
+  object_id: "1000928"
+  route_key: null
+  updated_at: "2026-10-02T01:17:58.845246+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "commoncore_fivepair_sixshell_normal01"
+  route_key: "endpoint-transport/six-shell"
+  updated_at: "2026-10-02T04:02:55.688749+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
   object_id: "1000846"
   route_key: null
   updated_at: "2026-10-01T00:15:47.231152+00:00"
@@ -435,6 +491,22 @@
   composition_status: null
   node_kind: "step"
   note: ""
+  object_id: "1000929"
+  route_key: null
+  updated_at: "2026-10-02T01:18:04.186479+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "unique_small_bounded_endgame01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T04:07:16.393911+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
   object_id: "1000847"
   route_key: null
   updated_at: "2026-10-01T00:15:57.830845+00:00"
@@ -454,6 +526,14 @@
   object_id: "local_four_endpoint_six_dichotomy01"
   route_key: "local_four_endpoint_six"
   updated_at: "2026-10-01T07:24:49.605991+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000930"
+  route_key: null
+  updated_at: "2026-10-02T01:18:11.102616+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -483,6 +563,14 @@
   composition_status: null
   node_kind: "step"
   note: ""
+  object_id: "1000931"
+  route_key: null
+  updated_at: "2026-10-02T01:18:17.766633+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
   object_id: "1000849"
   route_key: null
   updated_at: "2026-10-01T00:18:03.369465+00:00"
@@ -502,6 +590,14 @@
   object_id: "singleton_transfer_endpointization01"
   route_key: "singleton_transfer_endpointization"
   updated_at: "2026-10-01T12:47:44.96269+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Sharpens the residual path-cycle skeleton: proper cycles are impossible; the only cyclic exception is a spanning odd cycle with balanced alternating deletion supports."
+  object_id: "compatibility_spanning_odd_cycle_normal_form01"
+  route_key: null
+  updated_at: "2026-10-02T01:21:54.636745+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -526,6 +622,14 @@
   object_id: "equal_size_block_swap_rectangle01"
   route_key: "equal_size_block_swap_rectangle"
   updated_at: "2026-10-01T12:56:57.233239+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000936"
+  route_key: "odd-cycle-order-monodromy"
+  updated_at: "2026-10-02T01:47:51.827228+00:00"
 -
   composition_manifest:
     -
@@ -565,6 +669,14 @@
   object_id: "terminal_singleton_swap_k4_residue01"
   route_key: "terminal_singleton_swap_k4_residue"
   updated_at: "2026-10-01T13:00:58.265751+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: "Turns the balanced odd-cycle support configuration into a global order-coherence problem; any obstruction localizes to four vertices."
+  object_id: "oddcycle_order_coherence_or_c4_obstruction01"
+  route_key: null
+  updated_at: "2026-10-02T01:48:11.423002+00:00"
 -
   composition_manifest:
     -
@@ -633,6 +745,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: "Uses cyclic rank monodromy to force a linear number of adjacent-slot replacements and reversal gadgets throughout the balanced odd-cycle residue."
+  object_id: "oddcycle_rank_transport_reversal_density01"
+  route_key: null
+  updated_at: "2026-10-02T01:48:36.348152+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Reusable balanced-nine existence theorem in the canonical Toolkit."
   object_id: "balanced9_counting01"
   route_key: "project_methods"
@@ -661,6 +781,14 @@
   object_id: "1000905"
   route_key: null
   updated_at: "2026-10-01T13:41:50.886426+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000938"
+  route_key: null
+  updated_at: "2026-10-02T01:50:24.580228+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -703,6 +831,24 @@
   updated_at: "2026-10-01T13:45:30.523051+00:00"
 -
   composition_manifest:
+    -
+      id: "1000935"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000939"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "Faithful compression of the full-deletion trichotomy and its residual odd-cycle sharpening into one theorem."
+  object_id: "1000940"
+  route_key: null
+  updated_at: "2026-10-02T01:55:24.527883+00:00"
+-
+  composition_manifest:
   composition_status: null
   node_kind: "step"
   note: "Existing mathematical parent for the order-eleven blocked-complement synchronization chain; reasoning annotation repair only."
@@ -725,6 +871,24 @@
   object_id: "1000907"
   route_key: null
   updated_at: "2026-10-01T13:48:55.730352+00:00"
+-
+  composition_manifest:
+    -
+      id: "compatibility_pathcycle_skeleton01"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      id: "compatibility_spanning_odd_cycle_normal_form01"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "Faithful compression of the residual path-cycle skeleton and its spanning odd-cycle sharpening."
+  object_id: "1000941"
+  route_key: null
+  updated_at: "2026-10-02T01:56:02.134343+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -753,6 +917,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: "Cyclic-block reduction feeding the full-deletion compatibility theorem."
+  object_id: "1000933"
+  route_key: null
+  updated_at: "2026-10-02T01:56:31.03827+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Explicit counterexample repairing fixed-pair witness incidence counting."
   object_id: "fourset_six_fixedpair_witness_counterexample01"
   route_key: "project_methods"
@@ -773,6 +945,24 @@
   object_id: "1000909"
   route_key: null
   updated_at: "2026-10-01T13:55:05.174384+00:00"
+-
+  composition_manifest:
+    -
+      id: "1000933"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+    -
+      id: "1000940"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "unchecked"
+  composition_status: "provisional"
+  node_kind: "step"
+  note: "Faithful compression of the cyclic-block reduction and full-deletion transport/disagreement/odd-cycle theorem."
+  object_id: "1000942"
+  route_key: null
+  updated_at: "2026-10-02T01:58:40.624265+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -857,6 +1047,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "1000943"
+  route_key: "deletion-cover-compatibility"
+  updated_at: "2026-10-02T02:09:09.589148+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Standalone nine-vertex Hamiltonian subset density lemma."
   object_id: "balanced9_density84_54_01"
   route_key: "project_methods"
@@ -892,6 +1090,14 @@
   object_id: "1000911"
   route_key: "four_window_transport_compressed"
   updated_at: "2026-10-01T17:38:20.468275+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "same_end_extenders_initial_reversal01"
+  route_key: "quadratic-potential/minimal-three-cover"
+  updated_at: "2026-10-02T02:12:47.410197+00:00"
 -
   composition_manifest:
     -
@@ -950,6 +1156,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "unique_small_endpoint_reversal01"
+  route_key: "quadratic-potential/minimal-three-cover"
+  updated_at: "2026-10-02T02:18:44.469512+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Three-face top-cover reduction for the reversal-linked full pc2 cube."
   object_id: "reversal_cube_topcover_menu01"
   route_key: null
@@ -997,6 +1211,22 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "1000946"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T02:18:46.269373+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000947"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T02:18:46.269373+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Counterexample fence for endpoint-transport: local inward hooks alone are insufficient for absorption."
   object_id: "double_inward_endhook_not_absorption01"
   route_key: "project_methods"
@@ -1021,6 +1251,22 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "1000948"
+  route_key: "deletion-cover-compatibility"
+  updated_at: "2026-10-02T02:20:42.883375+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "root"
+  note: ""
+  object_id: "1000949"
+  route_key: "proof-rehearsal-index1-deletion-cover"
+  updated_at: "2026-10-02T02:20:42.883375+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Quantitative balanced-nine multiplicity lemma supporting order-eleven pair-deletion restoration arguments."
   object_id: "balanced9_multiplicity01"
   route_key: "project_methods"
@@ -1041,6 +1287,14 @@
   object_id: "1000916"
   route_key: "threeside_sixway_exit_smallside"
   updated_at: "2026-10-01T17:54:19.104919+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "proof_rehearsal_index2_quadratic01"
+  route_key: "proof-rehearsal/index2-quadratic"
+  updated_at: "2026-10-02T02:23:36.650889+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1085,6 +1339,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "equitable_phi_plateau_fence01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T02:26:26.286276+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Middle-label sharpening of the reversal-linked full pc2 cube."
   object_id: "reversal_cube_middlelabel_menu01"
   route_key: null
@@ -1115,6 +1377,14 @@
   object_id: "1000918"
   route_key: "threeside_sixway_descent_and_exit"
   updated_at: "2026-10-01T18:01:50.541588+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000950"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T02:27:30.789244+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1183,6 +1453,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: ""
+  object_id: "same_end_extenders_double_reversal01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T02:29:16.059611+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: "Grand-theorem bridge: normalize an arbitrary genuine reversal directly to a two-label deletion-cover square on the reversed pair."
   object_id: "reversal_pair_deletion_square_normal01"
   route_key: null
@@ -1203,6 +1481,14 @@
   object_id: "1000920"
   route_key: "global_minimum_two_plateau_reduction"
   updated_at: "2026-10-01T18:07:18.891526+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000951"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T02:30:44.587647+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1240,6 +1526,14 @@
   composition_status: null
   node_kind: "step"
   note: ""
+  object_id: "unique_small_double_reversal01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T02:35:30.637844+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
   object_id: "1000045"
   route_key: null
   updated_at: "2026-09-28T00:03:54.877078+00:00"
@@ -1267,6 +1561,14 @@
   object_id: "compatibility_c4free_neartotal_fan01"
   route_key: "endpoint_transport"
   updated_at: "2026-10-01T19:36:38.126528+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "same_end_extenders_four_endpoint_reversal01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T02:38:47.705752+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -1304,6 +1606,14 @@
   composition_status: null
   node_kind: "step"
   note: ""
+  object_id: "unique_small_four_endpoint_reversal01"
+  route_key: "quadratic-potential/equitable-plateau"
+  updated_at: "2026-10-02T02:39:04.475701+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
   object_id: "1000503"
   route_key: "proof_repair"
   updated_at: "2026-09-28T17:36:29.91351+00:00"
@@ -1331,6 +1641,14 @@
   object_id: "1000923"
   route_key: "half_scale_compatibility_anchor"
   updated_at: "2026-10-01T19:45:54.153014+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000953"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T03:43:47.531706+00:00"
 -
   composition_manifest:
   composition_status: null
@@ -12019,3 +12337,11 @@
   object_id: "1000924"
   route_key: "universal_endpoint_pair_hamiltonicity"
   updated_at: "2026-10-01T19:49:43.514486+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
+  note: ""
+  object_id: "1000954"
+  route_key: "defect-span/spanning-order-compression"
+  updated_at: "2026-10-02T03:48:19.207828+00:00"

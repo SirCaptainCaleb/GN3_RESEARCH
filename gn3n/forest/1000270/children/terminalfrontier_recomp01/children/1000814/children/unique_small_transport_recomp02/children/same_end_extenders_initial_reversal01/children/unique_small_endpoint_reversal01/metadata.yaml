@@ -1,0 +1,43 @@
+atlas_height: null
+atlas_hidden: false
+attention: "focus"
+audit_priority: 100
+audit_requested: true
+audit_requirement: "independent_reconstruction"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "005b1b2e99207842b9e4afb6e7f6b2c0089148b1556e1577af3258053f8710d0"
+created_at: "2026-10-02T02:18:44.469512+00:00"
+id: "unique_small_endpoint_reversal01"
+last_elevation_revision: 0
+last_substantive_worker_id: 1231
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_request_reason: "New theorem-facing reduction for INDEX 2: unique-small neutral quadratic residue enters endpoint reversal. Request independent reconstruction before treating it as load-bearing."
+  audit_request_recorded_at: "2026-10-02T02:21:00.43814+00:00"
+  audit_trigger_kind: "explicit"
+object_type: "research"
+origin_worker_id: 1231
+parent_id: "same_end_extenders_initial_reversal01"
+position: 0
+research_interface:
+  consumer: "endpoint_reversal_obstruction_recomp01; INDEX 2 proof rehearsal; disturbance entry"
+  given: "the witness-free unique-small terminal quadratic-minimum branch"
+  produces: "a literal initial-edge reversal on a tight comparison path"
+  significance: "bypasses the older crossing-count four-way residue and sends the hard neutral branch directly into endpoint-reversal calculus"
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "A witness-free {r+1,r+1,r} quadratic-minimum residue necessarily contains a tight comparison path whose initial edge is reversed by one of the two universal same-end extenders."
+statement_sha256: "3c7e8fabb24000968c6be2a2fa4081e46e3d03d43a24332c6f1f5c512368caa0"
+substantive_worker_ids:
+  - 1231
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "The witness-free unique-small quadratic residue enters endpoint reversal"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T02:21:00.43814+00:00"
+version: 5

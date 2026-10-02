@@ -23,7 +23,6 @@ metadata:
     outcome: "pass"
     recorded_at: "2026-09-29T12:17:08.199921+00:00"
     worker_id: 681
-  audit_work_kind: "dependency_hold"
   bounded_return: true
   last_audit_observation:
     claim_id: 255
@@ -49,10 +48,10 @@ simplified_statement: "The unresolved endpoint-reversal residue returns to the b
 statement_sha256: "b3d3b953c9081a4baccd01d297bcfa023e7c95cb9ebf28cae44965e57f4ca157"
 substantive_worker_ids:
   - 703
-support_reason: "dependency_verification_pending"
-support_status: "dependency_hold"
+support_reason: "current_certified_premises"
+support_status: "supported"
 title: "The unresolved endpoint-reversal residue returns to the bounded four-vertex classification"
 unary_chain_length: 2
 unary_chain_standalone: false
-updated_at: "2026-10-01T19:28:17.078268+00:00"
+updated_at: "2026-10-02T00:15:49.072216+00:00"
 version: 10

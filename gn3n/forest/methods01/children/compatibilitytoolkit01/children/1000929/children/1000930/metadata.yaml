@@ -1,0 +1,48 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 95
+audit_requested: true
+audit_requirement: "independent_check"
+audit_status: "pending"
+audited_math_version: null
+body_sha256: "cd1655d38df766a66c6f494eeae23036f86c070abe37c5deb0ce11b2be5acf84"
+created_at: "2026-10-02T01:18:11.102616+00:00"
+id: "1000930"
+last_elevation_revision: 11181
+last_substantive_worker_id: 1203
+legacy_id: null
+lifecycle_status: "active"
+math_version: 1
+mathematical_status: "proved"
+metadata:
+  audit_chain_root: "1000939"
+  audit_request_reason: "Independent reconstruction of the new full-deletion compatibility reduction 1000935, endpoint-probe lemma 1000934, odd-cycle residual 1000939, and their dependencies. This chain is now theorem-facing and load-bearing."
+  audit_request_recorded_at: "2026-10-02T01:53:36.8705+00:00"
+  audit_trigger_kind: "chain_checkpoint"
+  author_preflight_note: "Author proof and hypothesis review completed. No independent certification asserted."
+  author_worker_id: 1203
+  frozen_artifact_revision: 11097
+  isolated_research: true
+  small_order_free: true
+object_type: "result"
+origin_worker_id: 1203
+parent_id: "1000929"
+position: 0
+research_interface:
+  input: "Selected-support forest-or-odd-cycle theorem."
+  missing_step: "Align the complementary Hamiltonian deletions into a path."
+  output: "A retained ordered path Q and a fixed non-Hamiltonian complementary set."
+research_level: "theorem"
+semantic_container_text: null
+simplified_statement: "Each ordinary compatibility block shares one ordered Hamilton path; the sole cyclic exception is the spanning balanced odd cycle."
+statement_sha256: "6c3fcf84895d55bac941dcafd36b2239faf75a57f9a2f82c327ef9833a0ee20f"
+substantive_worker_ids:
+  - 1203
+support_reason: "provisional_unaudited"
+support_status: "unchecked"
+title: "Compatibility blocks retain one fixed Hamilton path except for a spanning odd cycle"
+unary_chain_length: 1
+unary_chain_standalone: false
+updated_at: "2026-10-02T01:53:36.8705+00:00"
+version: 4

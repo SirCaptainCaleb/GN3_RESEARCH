@@ -5189,6 +5189,654 @@
   verification_method: "independent_check"
   verifier_worker_id: 1164
 -
+  checked_at: "2026-10-02T00:14:35.276297+00:00"
+  math_version: 1
+  note: "Independent check: the three-label pigeonhole argument gives a Hamiltonian four-subset through any prescribed pair; Mantel and the five-set deletion count follow."
+  object_id: "1000924"
+  premise_manifest:
+  premise_signature:
+  verification_method: "independent_check"
+  verifier_worker_id: 1194
+-
+  checked_at: "2026-10-02T00:14:35.276297+00:00"
+  math_version: 1
+  note: "Independent check: compatible neighbors split by anchor side; each side-class is a clique, and three same-side neighbors with the anchor would violate four-cover gluing, so Delta(C)<=4."
+  object_id: "compatibility_degree4_prescribed_fan01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 1194
+-
+  checked_at: "2026-10-02T00:14:35.276297+00:00"
+  math_version: 1
+  note: "Independent check: under the no-order-disagreement branch the support-incompatibility graph is the complement of C, hence delta>=n-5; with n>10 this meets the standard Hamilton-connected degree threshold."
+  object_id: "1000926"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "compatibility_degree4_prescribed_fan01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "compatibility_degree4_prescribed_fan01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 1194
+-
+  checked_at: "2026-10-02T00:14:35.276297+00:00"
+  math_version: 1
+  note: "Independent check: a same-side compatibility triangle yields the synchronized three-deletion family; endpoint synchronization plus the singleton degree bound forces direct mixed transport unless the order-disagreement exit occurs."
+  object_id: "compatibility_triangle_endpoint_transport01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000758"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "compatibility_degree4_prescribed_fan01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000758"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+    -
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "compatibility_degree4_prescribed_fan01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 1194
+-
+  checked_at: "2026-10-02T00:14:35.276297+00:00"
+  math_version: 1
+  note: "Independent check: pair-deletion reconstruction bounds common neighbors of a compatibility nonedge by one; the edge case reduces to that via forbidden K4, and the degree/independence estimates follow by length-two-path counting and convexity."
+  object_id: "compatibility_c4free_neartotal_fan01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "pairdeletionreconstruct01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "pairdeletionreconstruct01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 1194
+-
+  checked_at: "2026-10-02T00:14:35.276297+00:00"
+  math_version: 1
+  note: "Independent check: in the residual branch same-side neighbor pairs are excluded and opposite-side neighbors induce distinct support partitions, so neighborhoods are independent and Delta(C)<=2; path/cycle structure and counting bounds follow."
+  object_id: "compatibility_pathcycle_skeleton01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "compatibility_triangle_endpoint_transport01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "compatibility_triangle_endpoint_transport01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+  verification_method: "independent_check"
+  verifier_worker_id: 1194
+-
+  checked_at: "2026-10-02T00:15:49.072216+00:00"
+  math_version: 3
+  note: "Reconstructed the four-set Hamiltonicity from boundary antisymmetry, the deletion-cover consequences from minimum-counterexample calculus, and the five-vertex order-disagreement construction."
+  object_id: "1000540"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "endpoint_reversal_obstruction_recomp01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "endpoint_reversal_obstruction_recomp01"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1193
+-
+  checked_at: "2026-09-29T05:27:15.715501+00:00"
+  math_version: 2
+  note: "Independent reconstruction verifies that the three-vertex orientation tournament always yields two four-paths ordering a common pair oppositely."
+  object_id: "hardreversal_pairgrid01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000540"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000540"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 683
+-
+  checked_at: "2026-10-02T00:15:49.072216+00:00"
+  math_version: 4
+  note: "Reconstructed alpha(J)<=2 by the two-class pigeonhole argument for any exterior triple, then verified the Mantel edge/degree bounds and complementary path-cover consequence."
+  object_id: "reversal_global_frontier01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1193
+-
+  checked_at: "2026-09-29T05:27:15.715501+00:00"
+  math_version: 1
+  note: "Independent reconstruction verifies that the fixed-pair four-set theorem applied to the three local labels gives exactly the three displayed positioned four-sets at each facing endpoint pair."
+  object_id: "1000169"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 683
+-
+  checked_at: "2026-09-29T16:08:26.169042+00:00"
+  math_version: 1
+  note: "After audit-time packaging repair, the recomposition manifest now contains only certified source 2147b77c1d7e, the endpoint small-support conclusion it genuinely replaces. The target strengthens that source from existence of a Hamiltonian support of order 4/5/6 to an unconditional Hamiltonian four-support, using certified reversal_global_frontier01 and minimum-counterexample complement calculus. Richer staircase reversal/noninsertion lemmas were restored and are no longer structurally retired by this composition.\nCertified by recomposition-equivalence audit against the retired certified source package."
+  object_id: "1000620"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000104"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000255"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000548"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000560"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000104"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000255"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000548"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000560"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+    -
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+  verification_method: "recomposition_equivalence"
+  verifier_worker_id: 601
+-
+  checked_at: "2026-09-29T17:44:33.034029+00:00"
+  math_version: 1
+  note: "The recomposition validly strengthens the retired staircase package. reversal_global_frontier01 applies to the two endpoints of the largest component and any disjoint three-set, yielding directly a Hamiltonian four-support with non-Hamiltonian two-cover complement; c>=4 supplies ample distinct vertices. This subsumes the older 4/5/6-support conclusion without losing hypotheses needed for the stated target.\nCertified by recomposition-equivalence audit against the retired certified source package."
+  object_id: "staircase_four_support_recomp01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000104"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000255"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000548"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000560"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000104"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000255"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000548"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "1000560"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+    -
+      id: "smallset01"
+      kind: "depends_on"
+      math_version: 5
+      mathematical_status: "proved"
+  verification_method: "recomposition_equivalence"
+  verifier_worker_id: 605
+-
+  checked_at: "2026-09-29T12:25:55.628901+00:00"
+  math_version: 3
+  note: "PASS_ADJUSTED: Rebuilt the proof from reversal_global_frontier01 followed by 7bab8dd31d87, ham6goodsquare01, and ham4squareescape01; removed dependencies on superseded 2147b77c1d7e and unchecked ham5_large_escape01; normalized order-disagreement terminology and moved the node under its actual fixed-pair producer."
+  object_id: "staircase_large_disturbance01"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000389"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "ham4squareescape01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "ham6goodsquare01"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000389"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "ham4squareescape01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+    -
+      id: "ham6goodsquare01"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 681
+-
+  checked_at: "2026-10-02T00:15:49.072216+00:00"
+  math_version: 1
+  note: "Verified the minimum-degree contradiction using Delta(G[N(v)])<=2, including the even/odd m>=10 inequalities, and the fixed-cut interpretation of nonadjacency."
+  object_id: "1000923"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "compatneighborhood02"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "compatneighborhood02"
+      kind: "depends_on"
+      math_version: 1
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1193
+-
+  checked_at: "2026-10-02T00:15:49.072216+00:00"
+  math_version: 1
+  note: "Verified longest-path endpoint reversals, complement path-cover claims for contiguous subpaths, and the left/right/reverse-to-reverse obstruction arguments. A terminology-only packaging issue was recorded separately."
+  object_id: "1000925"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000613"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000613"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+    -
+      id: "mincex01"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1193
+-
+  checked_at: "2026-10-02T00:15:49.072216+00:00"
+  math_version: 2
+  note: "PASS_ADJUSTED: Separated full-compatibility nonneighbors into support-incompatible and support-compatible/order-incompatible classes. The correct identity is s_x+o_x=m-1-p-q; when p+q<=4 there are at least m-5 such incompatible covers of either type, while p+q>=5 still forces the same-side neighbor-neighbor order disagreement centered at x. The same-side compatibility and Mantel count are unchanged."
+  object_id: "1000927"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+      support_status: "supported"
+    -
+      audit_status: "certified"
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "1000694"
+      kind: "depends_on"
+      math_version: 2
+      mathematical_status: "proved"
+    -
+      id: "1000922"
+      kind: "depends_on"
+      math_version: 3
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 1193
+-
   checked_at: "2026-09-27T22:24:00.997586+00:00"
   math_version: 2
   note: null
@@ -16715,51 +17363,6 @@
   verification_method: "recomposition_equivalence"
   verifier_worker_id: 703
 -
-  checked_at: "2026-09-28T20:36:28.507691+00:00"
-  math_version: 2
-  note: "PASS_ADJUSTED: Recomposed the proof directly from 49e30b5f952f and 6cb8966e16c9, and replaced plateau/reciprocal-crossing shorthand by the explicit mutual support-class edge condition.\nCertified by recomposition-equivalence audit against the retired certified source package."
-  object_id: "recomp_45plateau_01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000333"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "astra004fourgooddisagree"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "1000333"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "astra004fourgooddisagree"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-  verification_method: "recomposition_equivalence"
-  verifier_worker_id: 703
--
   checked_at: "2026-09-29T05:30:16.874504+00:00"
   math_version: 1
   note: "Independent reconstruction verifies the dichotomy. A first-type failed-insertion obstruction gives a Hamiltonian four-set or the cyclic four-set, the latter extending to a Hamiltonian five-set; two second-type obstructions are exactly within the certified mixed-four-path versus doubled-cross theorem."
@@ -16816,123 +17419,6 @@
       mathematical_status: "proved"
   verification_method: "independent_reconstruction"
   verifier_worker_id: 664
--
-  checked_at: "2026-09-28T20:39:45.605872+00:00"
-  math_version: 2
-  note: "PASS_ADJUSTED: Expanded four-window/migration/component-drop/plateau shorthand into the explicit e029c36208a7 and sharedendpointmigration_recomp01 construction, the coversurg01 edge condition, the four square states, and the two square-potential case analyses."
-  object_id: "recomp_fourwindow_square_01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000521"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "astra004fourgooddisagree"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "coversurg01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000686"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "not_required"
-      id: "definitions01"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: null
-      support_status: "unchecked"
-    -
-      audit_status: "certified"
-      id: "1000731"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "sharedendpointmigration_recomp01"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "1000521"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "astra004fourgooddisagree"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "coversurg01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-    -
-      id: "1000686"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "definitions01"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: null
-    -
-      id: "1000731"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "sharedendpointmigration_recomp01"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 703
 -
   checked_at: "2026-09-28T20:53:15.675251+00:00"
   math_version: 1
@@ -17284,27 +17770,6 @@
       mathematical_status: "proved"
   verification_method: "independent_reconstruction"
   verifier_worker_id: 703
--
-  checked_at: "2026-09-29T05:27:15.715501+00:00"
-  math_version: 2
-  note: "Independent reconstruction verifies that the three-vertex orientation tournament always yields two four-paths ordering a common pair oppositely."
-  object_id: "hardreversal_pairgrid01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000540"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "dependency_hold"
-  premise_signature:
-    -
-      id: "1000540"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 683
 -
   checked_at: "2026-09-29T05:27:15.715501+00:00"
   math_version: 1
@@ -18220,63 +18685,6 @@
       mathematical_status: "proved"
   verification_method: "independent_reconstruction"
   verifier_worker_id: 611
--
-  checked_at: "2026-09-29T12:25:55.628901+00:00"
-  math_version: 3
-  note: "PASS_ADJUSTED: Rebuilt the proof from reversal_global_frontier01 followed by 7bab8dd31d87, ham6goodsquare01, and ham4squareescape01; removed dependencies on superseded 2147b77c1d7e and unchecked ham5_large_escape01; normalized order-disagreement terminology and moved the node under its actual fixed-pair producer."
-  object_id: "staircase_large_disturbance01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000389"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "ham4squareescape01"
-      kind: "depends_on"
-      math_version: 4
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "ham6goodsquare01"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "1000389"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "ham4squareescape01"
-      kind: "depends_on"
-      math_version: 4
-      mathematical_status: "proved"
-    -
-      id: "ham6goodsquare01"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-    -
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 681
 -
   checked_at: "2026-09-27T14:38:32.3452+00:00"
   math_version: 2
@@ -19714,99 +20122,6 @@
       mathematical_status: "proved"
   verification_method: "independent_check"
   verifier_worker_id: 596
--
-  checked_at: "2026-09-29T17:44:33.034029+00:00"
-  math_version: 1
-  note: "The recomposition validly strengthens the retired staircase package. reversal_global_frontier01 applies to the two endpoints of the largest component and any disjoint three-set, yielding directly a Hamiltonian four-support with non-Hamiltonian two-cover complement; c>=4 supplies ample distinct vertices. This subsumes the older 4/5/6-support conclusion without losing hypotheses needed for the stated target.\nCertified by recomposition-equivalence audit against the retired certified source package."
-  object_id: "staircase_four_support_recomp01"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000104"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000255"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000548"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000560"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "1000104"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "1000255"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "1000548"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "1000560"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-  verification_method: "recomposition_equivalence"
-  verifier_worker_id: 605
 -
   checked_at: "2026-09-29T17:44:33.034029+00:00"
   math_version: 1
@@ -41340,27 +41655,6 @@
   verifier_worker_id: 683
 -
   checked_at: "2026-09-29T05:27:15.715501+00:00"
-  math_version: 1
-  note: "Independent reconstruction verifies that the fixed-pair four-set theorem applied to the three local labels gives exactly the three displayed positioned four-sets at each facing endpoint pair."
-  object_id: "1000169"
-  premise_manifest:
-    -
-      audit_status: "pending"
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "unchecked"
-  premise_signature:
-    -
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 683
--
-  checked_at: "2026-09-29T05:27:15.715501+00:00"
   math_version: 2
   note: "PASS_ADJUSTED: Removed proof-process and migration language from the theorem statement/body while preserving the same three mathematical alternatives."
   object_id: "1000357"
@@ -41846,27 +42140,6 @@
   verification_method: "independent_reconstruction"
   verifier_worker_id: 681
 -
-  checked_at: "2026-09-29T12:25:55.628901+00:00"
-  math_version: 2
-  note: "PASS_ADJUSTED: Replaced the stale four-regime derivation by a direct application of reversal_global_frontier01, removed the obsolete dependencies on 238069a2eeb6 and 2147b77c1d7e, and recorded that the fixed-pair theorem supersedes this four-regime result."
-  object_id: "1000607"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-  verification_method: "independent_reconstruction"
-  verifier_worker_id: 681
--
   checked_at: "2026-09-29T12:29:46.669798+00:00"
   math_version: 2
   note: "PASS_ADJUSTED: Replaced an obsolete/nonexistent span-three theorem nickname by the actual general theorem 33b80d34aad4 and recorded that dependency."
@@ -42010,6 +42283,27 @@
       mathematical_status: "proved"
   verification_method: "independent_reconstruction"
   verifier_worker_id: 664
+-
+  checked_at: "2026-09-29T12:25:55.628901+00:00"
+  math_version: 2
+  note: "PASS_ADJUSTED: Replaced the stale four-regime derivation by a direct application of reversal_global_frontier01, removed the obsolete dependencies on 238069a2eeb6 and 2147b77c1d7e, and recorded that the fixed-pair theorem supersedes this four-regime result."
+  object_id: "1000607"
+  premise_manifest:
+    -
+      audit_status: "certified"
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+      support_status: "supported"
+  premise_signature:
+    -
+      id: "reversal_global_frontier01"
+      kind: "depends_on"
+      math_version: 4
+      mathematical_status: "proved"
+  verification_method: "independent_reconstruction"
+  verifier_worker_id: 681
 -
   checked_at: "2026-09-29T12:29:46.669798+00:00"
   math_version: 2
@@ -42333,99 +42627,6 @@
       math_version: 1
       mathematical_status: "proved"
   verification_method: "independent_check"
-  verifier_worker_id: 601
--
-  checked_at: "2026-09-29T16:08:26.169042+00:00"
-  math_version: 1
-  note: "After audit-time packaging repair, the recomposition manifest now contains only certified source 2147b77c1d7e, the endpoint small-support conclusion it genuinely replaces. The target strengthens that source from existence of a Hamiltonian support of order 4/5/6 to an unconditional Hamiltonian four-support, using certified reversal_global_frontier01 and minimum-counterexample complement calculus. Richer staircase reversal/noninsertion lemmas were restored and are no longer structurally retired by this composition.\nCertified by recomposition-equivalence audit against the retired certified source package."
-  object_id: "1000620"
-  premise_manifest:
-    -
-      audit_status: "certified"
-      id: "1000104"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000255"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000548"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "1000560"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-      support_status: "supported"
-    -
-      audit_status: "certified"
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-      support_status: "supported"
-  premise_signature:
-    -
-      id: "1000104"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "1000255"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "1000548"
-      kind: "depends_on"
-      math_version: 1
-      mathematical_status: "proved"
-    -
-      id: "1000560"
-      kind: "depends_on"
-      math_version: 2
-      mathematical_status: "proved"
-    -
-      id: "mincex01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "reversal_global_frontier01"
-      kind: "depends_on"
-      math_version: 3
-      mathematical_status: "proved"
-    -
-      id: "smallset01"
-      kind: "depends_on"
-      math_version: 5
-      mathematical_status: "proved"
-  verification_method: "recomposition_equivalence"
   verifier_worker_id: 601
 -
   checked_at: "2026-09-29T12:17:08.199921+00:00"
