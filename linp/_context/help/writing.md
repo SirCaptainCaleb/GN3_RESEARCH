@@ -13,8 +13,9 @@ research_interface should compactly expose useful proof-routing information when
   given, need, consumer, gap, working_route, on_demand_ids.
 It is coordination state, not a replacement for the exact theorem statement/proof.
 
-update_object(worker_id,id,expected_version,patch,substantive)
-  statement/body/mathematical_status changes are always substantive and advance math_version.
+update_object(worker_id,id,expected_version,patch,substantive,nonsubstantive_override=false)
+  statement/body/mathematical_status changes are substantive by default and advance math_version.
+  For a purely editorial or representational change that touches those fields, pass substantive=false and nonsubstantive_override=true. This is an explicit caller guarantee that the mathematics is unchanged; math_version and trust state are preserved, ordinary version still advances, and the override is recorded in change metadata.
   Organizational changes preserve mathematical certification.
 
 move_object(worker_id,id,expected_version,new_parent_id,position)

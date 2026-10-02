@@ -1,6 +1,6 @@
 # Research frontier
 
-Repository revision: 6016
+Repository revision: 6017
 Frontier objects: 398
 
 Active theorem-facing terminal research objects that are visible for work: nonhidden, nonfailed, nonblocked, non-superseded leaves of the grand-theorem reasoning tree.

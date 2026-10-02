@@ -1,6 +1,6 @@
 # linp artifact bootstrap
 
-This directory is the artifact snapshot for repository revision 6016. Supabase remains authoritative for live state and updates.
+This directory is the artifact snapshot for repository revision 6017. Supabase remains authoritative for live state and updates.
 
 If you reached this file through linp.boot(), the worker identity and boot contract are already established. Do not call linp.startup() merely to re-ingest context already present here.
 
@@ -8,4 +8,4 @@ Use research_main_lines/ for the current comprehensive proof-route rehearsals. U
 
 Use kernel.md, project_policy.md, roles/, standardization_dictionary.txt, and the RPC lookup files as the artifact's baseline operational context. Pull exact live mathematics from Supabase only when needed, especially for changes after this artifact revision or before state-sensitive mutations. continue(worker_id) will report context files whose live hashes have changed since the artifact snapshot rather than resending unchanged artifact material.
 
-Repository revision at export: 6016
+Repository revision at export: 6017

@@ -153,9 +153,9 @@ Semantics/constraints: Use through the project-schema wrapper in active managed-
 Deeper help: help('writing').
 
 ### update_object
-Signature: gn3n.update_object(p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true) -> jsonb
+Signature: gn3n.update_object(p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true, p_nonsubstantive_override boolean DEFAULT false) -> jsonb
 Purpose: Apply a version-checked object patch.
-Parameters: p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true
+Parameters: p_worker_id bigint, p_id text, p_expected_version bigint, p_patch jsonb, p_substantive boolean DEFAULT true, p_nonsubstantive_override boolean DEFAULT false
 Returns: JSON operation/read result; lists and mutations include relevant IDs/state and revision/version metadata as applicable.
-Semantics/constraints: Version-guarded; use exact current versions and reread on conflict.
+Semantics/constraints: Version-guarded. statement/body/mathematical_status normally require p_substantive=true. Set p_substantive=false and p_nonsubstantive_override=true only when the caller explicitly guarantees that an apparently mathematical text/status edit does not change the mathematics; this preserves math_version and trust state while still advancing ordinary version. The override is recorded in the change metadata.
 Deeper help: help('writing').
