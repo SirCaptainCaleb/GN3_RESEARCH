@@ -87,6 +87,10 @@
   object_id: "proof_rehearsal_index6_no_trapping01"
   worker_id: 1194
 -
+  first_recorded_at: "2026-10-02T13:40:32.735763+00:00"
+  object_id: "proof_rehearsal_index6_no_trapping01"
+  worker_id: 1286
+-
   first_recorded_at: "2026-09-21T00:58:32.616694+00:00"
   object_id: "threeside01"
   worker_id: 575
@@ -2051,6 +2055,10 @@
   object_id: "proof_rehearsal_index6_no_trapping01"
   worker_id: 1272
 -
+  first_recorded_at: "2026-10-02T13:20:17.405326+00:00"
+  object_id: "1000949"
+  worker_id: 1286
+-
   first_recorded_at: "2026-09-28T02:03:07.78179+00:00"
   object_id: "unique_small_transport_recomp02"
   worker_id: 679
@@ -2195,6 +2203,10 @@
   object_id: "proof_rehearsal_index5_longest_reversal01"
   worker_id: 1273
 -
+  first_recorded_at: "2026-10-02T13:25:40.55708+00:00"
+  object_id: "proof_rehearsal_index2_quadratic01"
+  worker_id: 1286
+-
   first_recorded_at: "2026-09-29T04:28:16.6564+00:00"
   object_id: "staircase_standard_disturbance01"
   worker_id: 718
@@ -2250,6 +2262,10 @@
   first_recorded_at: "2026-10-02T03:53:29.484314+00:00"
   object_id: "same_end_extenders_hall_completion01"
   worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T13:31:02.184162+00:00"
+  object_id: "1000947"
+  worker_id: 1286
 -
   first_recorded_at: "2026-09-28T20:25:17.100612+00:00"
   object_id: "recomp_square45_01"
@@ -2770,6 +2786,10 @@
   first_recorded_at: "2026-09-29T18:25:51.190266+00:00"
   object_id: "five_side_arbitrary_escape01"
   worker_id: 605
+-
+  first_recorded_at: "2026-10-02T13:34:45.475227+00:00"
+  object_id: "proof_rehearsal_index4_endpoint_transport01"
+  worker_id: 1286
 -
   first_recorded_at: "2026-09-29T18:27:31.863981+00:00"
   object_id: "deletion_reachable_escape18"
@@ -7202,3 +7222,7 @@
   first_recorded_at: "2026-10-02T04:28:48.140932+00:00"
   object_id: "proof_rehearsal_index4_endpoint_transport01"
   worker_id: 1194
+-
+  first_recorded_at: "2026-10-02T13:36:35.369104+00:00"
+  object_id: "proof_rehearsal_index5_longest_reversal01"
+  worker_id: 1286

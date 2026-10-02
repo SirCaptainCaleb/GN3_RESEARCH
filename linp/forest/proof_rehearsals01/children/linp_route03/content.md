@@ -1,166 +1,227 @@
-# Route 3 — Rotation-expansion and terminal-pair cycle rank
+# Route 3 — Terminal-pair cycles and rotations
 
 ## Statement
 
-Comprehensive synthesis of the Pósa-style rotation and terminal-pair graph route for forcing special-edge density or bounded cycle complexity.
+Fundamental cycles in the terminal-pair graph force additional intersections with maximum paths; rotations seek to convert these into a bound on cycle rank and entrance support.
 
 ## Body
 
-# Route 3. Rotation-expansion and terminal-pair cycle rank
+# Terminal-pair cycles and rotations
 
-## Goal and setup
+Let \(H\) be a finite \(P_\ell^{(3)}\)-free linear \(3\)-graph with \(m\) edges and \(n\) vertices. Let \(s\) be the number of special edges.
 
-Let H be a P_ℓ-free linear 3-uniform hypergraph with m edges and n vertices. Write s for the number of special edges. For every nonspecial edge e, let x be its unique entrance and let {u,v} be its terminal pair. Because H is linear, two nonspecial edges cannot have the same terminal pair, so the terminal pairs form a simple graph T.
+For every nonspecial edge \(e=\{x,u,v\}\), where \(x\) is the unique entrance, call \(uv\) its **terminal pair**. Linearity implies that distinct nonspecial edges have distinct terminal pairs. Hence the terminal pairs form a simple graph \(T\).
 
-The route seeks a quantitative theorem saying that T cannot contain too many independent cycles unless the corresponding blocker obligations force endpoint expansion, rank growth, extra entrance support, or special edges.
+The purpose of this argument is to control the cycle rank
+\[
+\beta(T)=|E(T)|-|V(T)|+\kappa(T),
+\]
+where \(\kappa(T)\) is the number of nonempty connected components of \(T\).
 
-The starting snake inequality is
+## 1. The special-edge inequality
 
-2m+s ≤ (2ℓ−3)n.      (1)
+Form the snake digraph of \(H\): for every edge \(e\) and every vertex \(v\in e\) with
+\[
+\phi(e,v)=\phi(e),
+\]
+include the incidence \((e,v)\). A special edge contributes three such incidences; a nonspecial edge contributes exactly two.
 
-Thus any lower bound s≥εm−O(n) gives a strict leading improvement below coefficient 1. More strongly, if the nonspecial complexity is O(n), then (1) reaches the two-thirds scale.
+### Lemma 1
+For every vertex \(v\),
+\[
+d^-_{\mathrm{snake}}(v)\le 2\phi(v)-1. \tag{1}
+\]
 
-The natural measure of that complexity is the cycle rank
+#### Proof
+Put \(p=\phi(v)\) and choose a \(p\)-edge path
+\[
+P=(g_1,\ldots,g_p)
+\]
+with last vertex \(v\). Consider an edge \(f\ni v\) for which \(v\) is terminal at \(f\). If \(f\ne g_p\), then \(f\) must contain a vertex of
+\[
+V(P)\setminus g_p.
+\]
+Otherwise \(P\) can be continued through \(f\), contradicting the maximality of \(p\). Distinct such edges use distinct vertices of \(V(P)\setminus g_p\), since two edges already share \(v\) and cannot share another vertex. There are \(2p-2\) such vertices, and \(g_p\) itself contributes one further edge. ∎
 
-β(T)=|E(T)|−|V(T)|+κ(T),
+### Corollary 2
+\[
+2m+s\le \sum_v(2\phi(v)-1)\le (2\ell-3)n. \tag{2}
+\]
 
-where κ(T) is the number of connected components.
+#### Proof
+Summing (1), every special edge contributes \(3\) and every nonspecial edge contributes \(2\). Since there are \(s\) special edges,
+\[
+\sum_v d^-_{\mathrm{snake}}(v)=3s+2(m-s)=2m+s.
+\]
+The second inequality follows from \(\phi(v)\le\ell-1\). ∎
 
-## 1. Why a terminal cycle carries hypergraph structure
+Thus any lower bound on \(s\) immediately improves the general coefficient.
 
-Give each edge uv of T the rank of its parent hyperedge. In every connected component choose a spanning tree F of maximum total edge rank.
+## 2. Cycle rank as a sufficient parameter
 
-Let e be a nonforest edge and let C_e be its fundamental cycle in F+e. If some tree edge f on C_e had smaller rank than e, replacing f by e would increase the total tree rank. Therefore
+### Proposition 3
+Suppose
+\[
+\beta(T)\le Cs+Dn \tag{3}
+\]
+for constants \(C,D\ge0\). Then
+\[
+m\le
+\frac{(C+1)(2\ell-3)+D+1}{2C+3}\,n. \tag{4}
+\]
 
-rank(e) ≤ rank(f)
+#### Proof
+Let \(b=m-s\) be the number of nonspecial edges. Since \(T\) is simple and \(|E(T)|=b\),
+\[
+b=|V(T)|-\kappa(T)+\beta(T)\le n+\beta(T).
+\]
+Using (3),
+\[
+b\le Cs+(D+1)n.
+\]
+Hence
+\[
+m=b+s\le (C+1)s+(D+1)n,
+\]
+so
+\[
+s\ge \frac{m-(D+1)n}{C+1}.
+\]
+Substitute this in (2) and rearrange. ∎
 
-for every tree edge f of C_e. In particular the two cycle-neighbors of e have rank at least rank(e).
+In particular, \(\beta(T)=O(n)\) gives the two-thirds leading coefficient. The central question is therefore whether the independent cycles of \(T\) force enough new path structure to bound \(\beta(T)\).
 
-Now let e and f be adjacent on C_e, sharing terminal v. Suppose φ(f)≤φ(e), and take a maximum path P witnessing v as a terminal of e. If f met P only at v, then appending f at v would produce a path longer than φ(f), in fact forcing
+## 3. A maximum-total-rank spanning forest
 
-φ(f) ≥ φ(e)+1,
+Give each graph edge \(uv\in E(T)\) the edge rank of its parent hyperedge. In each component of \(T\), choose a spanning tree of maximum total weight; let \(F\) be the resulting spanning forest.
 
-a contradiction. Hence f must meet P at a second vertex.
+### Lemma 4
+Let \(e\in E(T)\setminus E(F)\), and let \(C_e\) be its fundamental cycle in \(F+e\). Then \(e\) has minimum weight on \(C_e\).
 
-Applied on both sides of e, this proves:
+#### Proof
+If a tree edge \(f\in C_e\) had smaller weight than \(e\), then replacing \(f\) by \(e\) would produce a spanning tree of larger total weight. ∎
 
-**Fundamental-cycle blocker lemma.** Every nonforest edge e has two canonical blocker obligations, one from each neighboring edge of its fundamental cycle.
+The graph \(T\) has exactly \(\beta(T)\) nonforest edges. Hence Lemma 4 selects one rank-minimal edge on a fundamental cycle for every independent cycle.
 
-Since the number of nonforest edges is exactly β(T), one obtains one canonical two-sided blocker certificate per unit of terminal-pair cycle rank.
+These selected graph edges carry additional information in the hypergraph.
 
-This is the first substantive reduction: β(T) is not abstract graph cycle rank. Every one of its units is tied to explicit maximum-path contacts in H.
+### Lemma 5
+Let \(e\) and \(f\) be two nonspecial hyperedges whose terminal pairs are adjacent in \(T\) at a common terminal \(v\). If
+\[
+\phi(f)\ge\phi(e),
+\]
+then every maximum path with last edge \(f\) and last vertex \(v\) contains a second vertex of \(e\).
 
-## 2. Rotation primitives
+#### Proof
+Let \(P\) be such a path. If \(P\cap e=\{v\}\), then appending \(e\) after \(P\) gives a path of length \(\phi(f)+1\) with last edge \(e\). Hence
+\[
+\phi(e)\ge\phi(f)+1,
+\]
+contrary to the hypothesis. ∎
 
-The blocker contacts are useful because they support length-preserving rotations.
+Combining Lemmas 4 and 5, every nonforest edge \(e\) has two forced second intersections: one associated with each neighboring edge of its fundamental cycle.
 
+This is the structural content of cycle rank. A cycle is not merely an extra graph edge; it prescribes two additional intersections with maximum hypergraph paths.
+
+## 4. Rotating a longest path
+
+The forced second intersections of Lemma 5 can change the last vertex of a longest path.
+
+### Lemma 6
 Let
+\[
+P=(g_1,\ldots,g_L)
+\]
+be a linear path with last vertex \(z\in g_L\). Let \(f\notin E(P)\) contain \(z\), and suppose that
+\[
+(f\setminus\{z\})\cap V(P)=\{w\}.
+\]
+Let \(j\) be the first index for which \(w\in g_j\). If \(j\le L-2\), then
+\[
+g_1,\ldots,g_j,f,g_L,g_{L-1},\ldots,g_{j+2}
+\]
+is an \(L\)-edge linear path.
 
-P=(e_1,e_2,…,e_p)
+#### Proof
+The new sequence uses the initial segment \(g_1,\ldots,g_j\), crosses to \(f\), then traverses the old final segment in reverse. Consecutive edges meet at the prescribed vertices. Since \(f\) has no other vertex on \(P\), it has no nonconsecutive intersection with the old path. The original path is linear, so reversing the final segment creates no new intersection. ∎
 
-be a linear path and let f be an edge outside P meeting e_p and exactly one earlier edge e_j. If j≤p−2, then
+Thus every single additional intersection at a suitable position creates another longest path with a different last vertex. Iterating such rotations is the natural mechanism for turning the \(\beta(T)\) fundamental-cycle intersections into many reachable last vertices.
 
-(e_1,…,e_j,f,e_p,e_{p−1},…,e_{j+2})
+## 5. Entrance support is an unavoidable parameter
 
-is again a p-edge linear path, with a new endpoint. If j=p−1 there is the analogous one-step replacement.
+Cycle rank alone cannot describe all linear dependencies. Let \(h\) be the number of distinct unique entrances of nonspecial edges, and let \(N_{\mathrm{ns}}\) be the real vertex-edge incidence matrix restricted to nonspecial edges.
 
-For a globally longest path ending in a nonspecial edge, the permitted contact positions are even more restricted. A two-contact competitor cannot have its earlier contact exactly two positions before the end, and a single-blocker rotation likewise excludes that position. These localization facts ensure that a genuine blocker normally creates a distinct endpoint or forces an additional contact.
+### Proposition 7
+\[
+\operatorname{nullity}(N_{\mathrm{ns}})\le \beta(T)+h. \tag{5}
+\]
+For the full incidence matrix \(N\),
+\[
+\operatorname{nullity}(N)\le \beta(T)+h+s. \tag{6}
+\]
 
-There is also a rank version. If e and f share terminal v and a maximum terminal witness for e meets f only at v, then the absence of a blocker forces a rank jump of at least two. More generally, if p=φ(e), q=φ(f)≤p, and f occupies r vertices of a p-edge witness for e, then
+#### Proof
+For a nonspecial edge \(e\) with unique entrance \(x_e\) and terminal pair \(u_ev_e\), write its incidence column as
+\[
+\mathbf 1_{u_e}+\mathbf 1_{v_e}+\mathbf 1_{x_e}.
+\]
+Let \(B\) be the ordinary \(0/1\) vertex-edge incidence matrix of \(T\), with zero rows added for vertices outside \(V(T)\), and let \(R\) be the matrix whose \(e\)-column is \(\mathbf 1_{x_e}\). Then
+\[
+N_{\mathrm{ns}}=B+R.
+\]
+Since \(R\) is supported on \(h\) rows,
+\[
+\operatorname{rank}(R)\le h.
+\]
+The inequality
+\[
+\operatorname{rank}(B+R)\ge\operatorname{rank}(B)-\operatorname{rank}(R)
+\]
+gives
+\[
+\operatorname{nullity}(N_{\mathrm{ns}})
+\le |E(T)|-\operatorname{rank}(B)+h.
+\]
 
-2≤r≤3
-and
-p≤r(q−1).      (2)
+For a graph with \(v\) vertices, \(b\) edges, and \(c_{\mathrm{bip}}\) bipartite components, the real \(0/1\) incidence matrix has rank \(v-c_{\mathrm{bip}}\). Hence
+\[
+b-\operatorname{rank}(B)
+=
+b-v+c_{\mathrm{bip}}
+\le
+b-v+\kappa(T)
+=
+\beta(T).
+\]
+This proves (5). Adding \(s\) special columns can increase nullity by at most \(s\), proving (6). ∎
 
-In particular, if p≥2q−1, then all three vertices of f lie on the witness.
+Thus the natural global quantity is \(\beta(T)+h\), not \(\beta(T)\) alone.
 
-Thus failure of a blocker is not harmless: it produces rank growth. The route is designed around this dichotomy:
+## 6. A false strengthening
 
-- blocker contact  →  rotation and endpoint motion;
-- no blocker contact  →  quantitative rank increase.
+It is not true that
+\[
+\beta(T)\le s.
+\]
+There are linear \(3\)-graphs with \(s=0\) whose terminal-pair graph is a disjoint union of copies of \(K_{3,3}\). Each copy has cycle rank \(4\). The same examples yield nontrivial dependencies among nonspecial incidence columns.
 
-## 3. The cycle-rank hinge
+This obstruction shows that a nonforest terminal-pair edge cannot be assigned directly to a special edge. Repeated use of the same unique entrances or the same maximum paths must be included in any valid count.
 
-Suppose one could prove
+## 7. The remaining theorem
 
-β(T) ≤ C s + D n      (3)
+The previous lemmas reduce the argument to a quantitative rotation statement.
 
-for fixed constants C,D. Combining the number of forest edges with (1) yields
+### Open problem
+Let \(F\) be a maximum-total-rank spanning forest of the terminal-pair graph. For each of the \(\beta(T)\) nonforest edges, take the two second intersections supplied by Lemma 5. Prove that these data imply
+\[
+\beta(T)+h\le Cs+Dn \tag{7}
+\]
+for absolute constants \(C,D\), or prove an equivalent inequality that gives the same conclusion through Proposition 3.
 
-m ≤ [2(C+1)ℓ−3(C+1)+D+1]/(2C+3) · n.      (4)
+A proof may proceed by separating two cases.
 
-Hence the leading coefficient would be
+If the forced second intersections occur on many distinct maximum paths or at many distinct positions, Lemma 6 should yield many distinct last vertices.
 
-2(C+1)/(2C+3)<1.
+If many of them reuse the same path, unique entrance, or path position, that multiplicity must force either larger edge rank, additional unique entrances, or a special edge.
 
-In the particularly important case β(T)=O(n), equation (4) has leading coefficient 2/3.
-
-This gives the route a precise target: a theorem bounding cycle rank by special-edge mass and linear support complexity is enough to improve the Turán coefficient. One need not classify all cycles individually.
-
-## 4. Entrance support and the incidence bridge
-
-There is a reason special edges alone cannot pay for all cycles. Let h be the number of distinct entrance vertices used by nonspecial edges, and let N_ns be the vertex-edge incidence matrix restricted to nonspecial columns. Then
-
-nullity(N_ns) ≤ β(T)+h.      (5)
-
-For the full incidence matrix N,
-
-nullity(N) ≤ β(T)+h+s.      (6)
-
-The proof is elementary in spirit. Choose a spanning forest of T. Along each tree component, once entrance variables are fixed, the nonspecial incidence columns can be eliminated recursively through the terminal pairs. Each nonforest edge contributes at most one new degree of freedom, and each distinct entrance contributes at most one more. Special columns add at most s further dimensions.
-
-Equations (5)–(6) are important even inside this route. They show the correct complexity parameter is not β(T) alone but approximately
-
-β(T)+h.
-
-Repeated reuse of the same entrance may support many terminal cycles without producing special edges. Any expansion theorem that ignores entrance support will therefore be false.
-
-## 5. Why rotations should control β(T)+h
-
-Take the maximum-total-rank forest F and attach to every nonforest edge its two blocker contacts. Consider grouping the resulting certificates by the path witness, entrance, or tree edge on which they are realized.
-
-If the groups are light, then many certificates live on distinct resources. The rotation primitives should then create many distinct reachable endpoints, contradicting the bounded path rank.
-
-If some group is heavy, many fundamental-cycle obligations reuse the same witness or entrance. The rank-transfer lemmas then force one of three phenomena:
-
-1. repeated edges occupy progressively larger portions of the same witness;
-2. rank must increase along the reused structure;
-3. unique-entrance behavior breaks, producing specialness or additional entrance support.
-
-This is exactly the Pósa-style mechanism the route seeks. The certified local lemmas establish each individual move, but there is not yet a theorem summing those moves over all β(T) fundamental cycles without losing control to reuse.
-
-## 6. Known obstruction: cycles need not create special edges
-
-The most important failed shortcut is
-
-β(T)≤s.
-
-It is false. There are linear triple systems with no special edges at all whose terminal-pair graph is a disjoint union of copies of K_{3,3}. Each such component has positive cycle rank. The same examples show that nonspecial incidence columns need not be linearly independent.
-
-Therefore a terminal cycle is not itself a contradiction, and no proof may charge every nonforest edge directly to a special edge.
-
-Likewise, one legal rotation is not endpoint expansion. A rotation theorem must control how many rotations collapse onto the same endpoint, path witness, or entrance. This repeated-support phenomenon is the genuine obstruction.
-
-## 7. First unsupported implication
-
-The proof reaches the following precise frontier.
-
-**Rotation-expansion target.** Starting from the maximum-total-rank forest F, assign to every nonforest terminal-pair edge its canonical two-sided blocker obligations. Prove that these β(T) obligations force either
-
-β(T)+h ≤ C s + Dn
-
-for fixed C,D, or an equivalent endpoint-expansion inequality strong enough to imply such a bound.
-
-A weaker theorem controlling β(T) alone would suffice for some coefficient improvements, but the K_{3,3} obstruction shows that a robust statement should explicitly pay for entrance/support reuse.
-
-All ingredients before this point are certified: the blocker transfer, rank-jump alternative, rotation primitives, canonical fundamental-cycle selection, cycle-rank hinge, and incidence-nullity bridge. What is missing is the global bounded-reuse/expansion theorem that composes them.
-
-The attempted proof stops here.
-
-## Research handoff
-
-Begin with a maximum-total-rank spanning forest of T and the canonical blocker obligations on its nonforest chords. Organize certificates by shared entrance and shared witness before performing rotations; otherwise endpoint multiplicity is invisible.
-
-Do not retry β(T)≤s, nonspecial-column independence, bare cycle counting, or an argument in which a single rotation is treated as expansion. A new ingredient must control repeated use of the same entrance or witness.
-
-This route interfaces cleanly with two neighboring philosophies. A bound on β(T)+h feeds the incidence-rank route through (5)–(6), while a strong endpoint-expansion theorem can serve as the rank-flow engine in the dense-core route.
+What is not presently proved is the global multiplicity bound required to sum these local alternatives over all fundamental cycles.

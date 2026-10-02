@@ -1,271 +1,236 @@
-# Proof rehearsal IV — endpoint transport and bounded-window gluing
+# Proof rehearsal IV — endpoint transport and small-support gluing
 
 ## Statement
 
-Near-publication rehearsal of the endpoint-transport route. Starting from a reachable Hamiltonian 4/5-window, endpoint-tied crossing, or displayed reversal, certified transport moves the obstruction to a literal component-end reversal; that reversal gives a spanning two-cover, strict same-component Phi-descent, or one neutral singleton transfer. Opposite endpoint phases endpointize the transfer, leaving only coherent same-end or universal-internal locks. Pending Hall and square-normalization theorems compress those locks to classified common-core pc2 shells, a doubled reverse barrier, or a phase-locked same-deletion transfer. The first unsupported implication is global consumption of that positioned bounded shell into a legal splice, terminating descent, or defect span at most two.
+Let H be a minimum counterexample. Starting from a Hamiltonian four- or five-vertex support with two-coverable complement, or from a Hamiltonian enlargement at an endpoint of a displayed path, greedy endpoint transport produces a reversal of a displayed end edge unless the added vertex is internal in every Hamiltonian order. A displayed end-edge reversal gives a two-cover, a strict decrease of quadratic potential, or a one-vertex transfer. Opposite endpoint realizations eliminate the transfer; same-side realizations reduce by insertion positions and Hall's theorem to a common reversed edge, a same-deletion transfer, or a bounded common-core configuration.
 
 ## Body
 
+# Endpoint transport and small-support gluing
 
-# Endpoint transport and bounded-window gluing
+Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A three-cover
+\[
+P_1\mid P_2\mid P_3
+\]
+has quadratic potential
+\[
+\Phi=|P_1|^2+|P_2|^2+|P_3|^2.
+\]
+Pairwise repartition means replacing two displayed paths by another two-cover of their union while leaving the third path unchanged.
 
-## 1. The proposed proof
+This argument begins with a Hamiltonian support attached to a displayed endpoint, a reversal of a displayed path edge, or two nearby Hamiltonian supports with a large common part. The purpose of the transport is to place the new order information at an actual end edge of a displayed path.
 
-Let H be a minimum counterexample. Every one-vertex deletion has an exact two-path cover, and a spanning two-cover is equivalent to a spanning ordering of defect span at most two. This route begins after another argument has produced a **positioned disturbance** beside such a canonical deletion state.
-
-The useful starting configurations retain enough provenance to interact with a displayed two-cover:
-
-- a Hamiltonian four-set W with exact two-path complement P|Q, preferably reachable in the same repartition component as a deletion state;
-- an endpoint-aligned Hamiltonian four- or five-support with pc2 complement;
-- a deletion-tied mixed-support crossing;
-- a reversal of an edge of a displayed path;
-- or two nearby Hamiltonian windows sharing a large core.
-
-The aim is to transport the disturbance to a displayed boundary. Once a reversal lies literally on a component-end edge, certified calculus nearly closes the proof. The only surviving local case is a neutral one-vertex transfer. Endpointizing that transfer leaves two phase-locked residues: coherent same-end realization or universal internality. The remaining theorem must break that phase lock globally.
-
-All results below are certified unless explicitly marked **pending**.
-
-## 2. Four-window transport
-
-Suppose
-
-    X | P | Q
-
-is a spanning three-cover, |X|=4, X is Hamiltonian, and P|Q is an exact two-cover of H-X.
-
-The certified theorem 1000911 says, for n>14, that one of the following occurs:
-
-1. strict quadratic-potential descent;
-2. another Hamiltonian four-window at distance one, again with pc2 complement;
-3. an endpoint-aligned Hamiltonian support of order four or five with pc2 complement.
-
-Thus a four-window cannot remain an isolated witness. It either descends or migrates through a controlled family until a bounded support is aligned with a displayed endpoint.
-
-Shared-endpoint refinements produce two Hamiltonian five-sets with a common core, and certified theorem 1000476 then yields a Hamiltonian six-set or a four-good-deletion transport package. These refinements matter only when their common-core information is retained. Their common purpose is to produce a correlated bounded pc2 shell.
-
-The branch n<=14 left by 1000911 remains a separate finite-order obligation.
-
-## 3. Endpoint Hamiltonicity forces transport or permanent internality
+## 1. Greedy endpoint transport
 
 Let
+\[
+X\mid C\mid D
+\]
+be a three-cover, with \(X\) Hamiltonian,
+\[
+C=(c_0,c_1,\ldots ,c_m),
+\]
+and \(D\ne\varnothing\). Suppose \(X\cup\{c_0\}\) is Hamiltonian.
 
-    X | C | D
+First note that any deletion cover of \(H-c_0\) must contain an edge with one endpoint in \(X\) and the other in
+\[
+(C-\{c_0\})\cup D.
+\]
+Otherwise its two paths would each remain inside one side of this partition, and adjoining \(c_0\) to a Hamilton path on \(X\cup\{c_0\}\) would separate \(H\) into two tight paths.
 
-be a spanning three-cover, with C=(c_0,...,c_m), X Hamiltonian, and X+c_0 Hamiltonian.
+Suppose now that some Hamilton path on \(X\cup\{c_0\}\) has \(c_0\) as the endpoint adjacent to \(c_1\). Extend this Hamilton path greedily by \(c_1,c_2,\ldots\).
 
-The certified theorem endpoint_hamiltonicity_crossing_plus_transport01 has two parts.
+**Lemma 1.** If the greedy extension does not absorb all of \(C\), then at the first failed extension there is a tight triple reversing the terminal edge of the current Hamilton path.
 
-First, every exact two-cover of H-c_0 crosses the coarse cut
+**Proof.** Let \(R\) be the maximal Hamilton path obtained, ending in an edge \((u,c_h)\), and suppose \(c_{h+1}\) is the first vertex that cannot be appended. Then
+\[
+(u,c_h,c_{h+1})
+\]
+is non-tight. Boundary reversal gives
+\[
+(c_{h+1},c_h,u)
+\]
+tight, which reverses the displayed terminal edge \((u,c_h)\). If every vertex of \(C\) were absorbed, the resulting Hamilton path together with \(D\) would be a two-cover of \(H\). \(\square\)
 
-    X | ((C-c_0) union D).
+Thus endpoint realization gives a displayed end-edge reversal. The only alternative is that \(c_0\) is internal in every Hamiltonian order of \(X\cup\{c_0\}\).
 
-Thus endpoint Hamiltonicity carries support-mixing information.
-
-Second, if X+c_0 has a Hamilton order placing c_0 at the endpoint compatible with C, append c_1,c_2,... greedily. At the first failed append, the current Hamiltonian support ends in a displayed edge whose reverse occurs in a tight triple forced by boundary antisymmetry. Hence
-
-    endpoint realization
-    => maximal greedy absorption
-    => literal component-end reversal.
-
-Pending theorem 1000848 strengthens the bookkeeping by carrying the deletion-crossing certificate through every successful transport step.
-
-There is one genuine alternative: c_0 may be internal in every Hamilton order of X+c_0. Then endpoint transport cannot start. The certified theorem routes this **universal-internal** case to fine crossing structure rather than pretending it has been absorbed.
-
-## 4. A literal component-end reversal is almost closure
-
-The certified theorem 1000559 is the central consumer.
+## 2. A displayed end-edge reversal
 
 Let
+\[
+H-x=P\mid Q,\qquad P=(p_0,\ldots ,p_m),
+\]
+and suppose \(R\) is another Hamilton order of \(V(P)\) containing the reversed terminal edge
+\[
+(p_m,p_{m-1}).
+\]
+Write
+\[
+R=(A,p_m,p_{m-1},B),\qquad t=|A|,\qquad N=|P|.
+\]
+
+Since \(x\) cannot be appended to the displayed order \(P\),
+\[
+(p_{m-1},p_m,x)
+\]
+is non-tight, so
+\[
+(x,p_m,p_{m-1})
+\]
+is tight. Hence
+\[
+(x,p_m,p_{m-1},B)
+\]
+is a tight path.
+
+If \(t=0\), this path together with \(Q\) gives a two-cover. If \(t\ge1\), the three paths
+\[
+A\mid(x,p_m,p_{m-1},B)\mid Q
+\]
+form a pairwise repartition of \(P\mid\{x\}\mid Q\). The change of the two affected square terms is
+\[
+t^2+(N-t+1)^2-(N^2+1)
+=-2(t-1)(N-t).
+\]
+
+Therefore:
+
+**Lemma 2.** A reversal of a displayed end edge gives one of:
+1. a two-cover of \(H\);
+2. a strict decrease of \(\Phi\);
+3. the case \(t=1\), in which one vertex is transferred between the two non-singleton supports and \(\Phi\) is unchanged.
+
+The initial edge is symmetric.
+
+At a minimum of \(\Phi\) in a connected component of the pairwise-repartition graph, only the one-vertex transfer remains.
+
+## 3. Endpoint positions of a transferred vertex
+
+Suppose \(X,Y,D,\{x\}\) partition \(V(H)\) and both
+\[
+(X\cup\{x\})\mid Y\mid D
+\quad\text{and}\quad
+X\mid(Y\cup\{x\})\mid D
+\]
+are three-covers.
+
+**Lemma 3.** If \(x\) is the final vertex of a Hamilton path on \(X\cup\{x\}\) and the initial vertex of a Hamilton path on \(Y\cup\{x\}\), then a displayed end-edge reversal occurs. The same holds with initial and final interchanged.
+
+**Proof.** Start with the Hamilton path on \(X\cup\{x\}\) ending at \(x\), and greedily append the vertices following \(x\) in the Hamilton path on \(Y\cup\{x\}\). If the whole path is absorbed, its union with \(D\) is a two-cover. Otherwise Lemma 1 gives a displayed end-edge reversal. \(\square\)
+
+Consequently, if no two-cover, strict decrease, or displayed end-edge reversal occurs, then either
+- \(x\) is internal in every Hamiltonian order of one augmented support; or
+- whenever \(x\) is an endpoint in either augmented support, it is always on the same side in both.
+
+The second possibility is governed by insertion positions.
+
+## 4. Compatible one-vertex extensions
+
+Let \(K\) be a vertex set and let \(x,y\notin K\). Suppose \(K\cup\{x\}\) and \(K\cup\{y\}\) have Hamilton paths that induce the same order
+\[
+C=(c_1,\ldots ,c_m)
+\]
+on \(K\). Each path is obtained by inserting its exceptional vertex into a gap of \(C\), allowing the two endpoint gaps.
+
+**Lemma 4.**
+1. If the insertion gaps are separated by at least one gap, inserting both vertices gives a Hamilton path on \(K\cup\{x,y\}\).
+2. If the gaps are adjacent, the simultaneous order is Hamiltonian unless the unique triple containing \(x\), the intervening core vertex, and \(y\) is non-tight; in that case its boundary flip is tight.
+3. If the gaps coincide at an internal edge \(uv\) of \(C\), then \(\{u,v,x,y\}\) is Hamiltonian.
+
+**Proof.** In the first case no consecutive triple in the simultaneous order contains both \(x\) and \(y\); every triple is inherited from one of the two given Hamilton paths. In the adjacent case there is exactly one new triple, so boundary reversal gives the alternative. In the common internal gap, both
+\[
+(u,x,v),\qquad(u,y,v)
+\]
+are tight. Among the boundary pair on \(\{x,y,u\}\) or \(\{x,y,v\}\), the tight orientation extends one of these triples to a Hamilton path on the four vertices. \(\square\)
+
+Thus, if neither a larger Hamiltonian support nor a reverse triple nor a Hamiltonian four-set occurs, two compatible extensions use the same endpoint gap.
+
+Three extensions of one four-set cannot all remain featureless.
+
+**Lemma 5.** Let \(C\) be a four-set and \(r_1,r_2,r_3\notin C\). If each \(C\cup\{r_i\}\) is Hamiltonian, then at least one of the following holds:
+1. two chosen Hamilton paths have an order disagreement on \(C\);
+2. \(C\cup\{r_i,r_j\}\) is Hamiltonian for some \(i\ne j\);
+3. a Hamiltonian four-set lies in \(C\cup\{r_1,r_2,r_3\}\);
+4. a tight triple through two roots reverses an edge of one chosen path.
+
+**Proof.** If the induced orders on \(C\) disagree, (1) holds. Otherwise all roots are inserted into one common order on \(C\). Lemma 4 gives (2), (3), or (4) unless all three occupy one endpoint gap. In that remaining case assume they all precede \(c_1\). Failure of every pair union to be Hamiltonian forces
+\[
+(c_1,r_i,r_j)
+\]
+tight for every ordered pair \(i\ne j\). One of
+\[
+(r_1,r_2,r_3),\qquad(r_3,r_2,r_1)
+\]
+is tight, so one of
+\[
+(c_1,r_1,r_2,r_3),\qquad(c_1,r_3,r_2,r_1)
+\]
+is a Hamilton path. This gives (3). The common terminal gap is symmetric. \(\square\)
 
-    H-x = P | Q
+## 5. Two same-side extension vertices
 
-be an exact deletion cover, and suppose an alternative Hamilton order on P contains the reverse of a displayed terminal edge. Write it as
+Suppose \(x,y\) can occur only at the same endpoint side of the relevant augmented supports, and let
+\[
+R\mid S
+\]
+be a two-cover of \(H-\{x,y\}\). Form a bipartite graph with left class \(\{x,y\}\) and right class \(\{R,S\}\), joining a label to a path if it can be attached at the prescribed endpoint.
 
-    A, p_m, p_{m-1}, B
+If there is a perfect matching, attach \(x\) and \(y\) to different paths and obtain a two-cover of \(H\). If no perfect matching exists, Hall's theorem leaves two possibilities:
+- one of \(R,S\) accepts neither label;
+- one of \(x,y\) can be attached to neither \(R\) nor \(S\).
 
-and put t=|A|. Boundary antisymmetry supplies the hook needed to place x before the suffix beginning at p_m. The induced repartition has three cases.
+In the first case, the two failed attachments give reverse tight triples through one common end edge. In the second, deleting the blocked label yields two deletion covers that differ by a one-vertex transfer.
 
-If t=0, it gives a spanning two-cover directly.
+**Lemma 6.** Two reverse triples through the same displayed end edge yield two Hamiltonian five-sets with a common four-set, unless an earlier two-cover or Hamiltonian four-set occurs.
 
-If t=1, it is Phi-neutral and merely transfers one vertex between the two Hamiltonian supports.
+**Proof.** For each reverse triple, form a graph on exterior labels by joining two labels when their simultaneous extension fails. Each failure graph is triangle-free: three pairwise failures, after boundary reversal of the three non-tight insertion triples, give a Hamiltonian five-vertex extension. If no exterior pair succeeds for both reverse triples, the edges of \(K_6\) can be colored according to which failure graph contains them, with no monochromatic triangle. This contradicts \(R(3,3)=6\). Hence some pair succeeds for both reverse triples, giving the required two five-sets. \(\square\)
 
-If 2<=t<=N-2, the quadratic potential drops by
+Let the two five-sets be \(K\cup\{p\}\) and \(K\cup\{q\}\), where \(|K|=4\). Their six-vertex union has three relevant forms:
+- it is Hamiltonian;
+- two Hamiltonian vertex deletions are adjacent, giving overlapping Hamiltonian four- and five-sets;
+- the Hamiltonian deletion pairs form a matching, fixing the three pairwise insertion relations on the six vertices.
 
-    2(t-1)(N-t) > 0.
+Each form is a bounded common-core configuration with a two-coverable complement inherited from the construction.
 
-At a componentwise Phi-minimum this is impossible. The initial-edge case is symmetric.
+## 6. A vertex internal in every Hamiltonian order
 
-Therefore a literal displayed-end reversal has exactly one nonclosing residue:
+It remains to consider an augmented support \(K\cup\{x\}\) in which \(x\) is internal in every Hamiltonian order.
 
-    a neutral singleton transfer.
+Take two such labels \(x,y\) occurring over the same four-vertex support and compare deletion covers of the one- and two-label deletions. If a comparison cover has only one edge joining the path pieces obtained by deleting \(x\) or \(y\) from a Hamilton path, the block-count identity forces that edge to join the two pieces directly; otherwise restoring the deleted label would place it at an endpoint, contrary to the assumption.
 
-## 5. Endpointizing the neutral singleton transfer
+With two labels, the same count shows that either at least two such inter-piece edges occur, or the labels occupy adjacent internal positions and every lower deletion cover uses the direct join between the two outer pieces. Comparing the three lower deletion covers in the adjacent case gives either an order disagreement or the same inherited order on all common pieces. In the latter case the one- and two-label deletions form a four-state configuration in which the opposite path is unchanged and all direct joins occur in the same position.
 
-Suppose two three-covers differ only by moving one label x between two Hamiltonian supports. Certified singleton_transfer_endpointization01 compares the Hamiltonian realizations of x on the two augmented supports.
+We record this as follows.
 
-If x is realizable at opposite ends in the two supports, greedy transport gives a displayed component-end reversal, returning to Section 4.
+**Lemma 7.** If two relevant labels are internal in every Hamiltonian order of their augmented supports, then either
+1. a comparison deletion cover has at least two edges joining distinct inherited path pieces;
+2. an order disagreement occurs among the lower deletion covers; or
+3. the one- and two-label deletion covers preserve one common inherited order and one unchanged complementary path.
 
-Hence, if no two-cover or displayed reversal occurs, exactly one of the following remains:
+The proof is the preceding block count applied successively to the one- and two-label deletions.
 
-1. **universal internality:** on at least one augmented support, x is internal in every Hamilton order;
-2. **coherent same-end realization:** whenever x is an endpoint, it always appears on the same side in both augmented supports.
+## 7. The remaining lemma
 
-This is the first point where the certified local endpoint calculus stops.
+All non-decreasing cases now have one of the following forms:
+- a displayed end-edge reversal;
+- a one-vertex transfer whose endpoint realizations all use the same side;
+- two Hamiltonian five-sets with a common four-set;
+- overlapping Hamiltonian four- and five-sets;
+- the matching deletion pattern on a six-set;
+- the internal-deletion configuration of Lemma 7.
 
-## 6. Why coherent same-end behavior is exceptional
+The first form is handled by Lemma 2. The remaining forms require one common statement.
 
-The certified compatible-extension theorem 1000696 gives the exact insertion-gap analysis.
+**Remaining Lemma.** Let a minimum counterexample contain one of the bounded configurations listed above, obtained from a deletion cover through pairwise repartitions in one connected component. Then either \(H\) has a two-cover, or the same component contains a three-cover of strictly smaller quadratic potential, or \(H\) has a spanning ordering of defect span at most \(2\).
 
-Let K+x and K+y be Hamiltonian and suppose their Hamilton orders induce the same order on K.
+A proof completes the endpoint-transport argument.
 
-- Separated insertion gaps glue to a Hamiltonian K+x+y.
-- Adjacent gaps glue or force a reverse cross triple.
-- The same internal gap produces a Hamiltonian four-set.
-- The only compatible geometry not already consumed is a common endpoint gap.
+## Appendix. Local failures do not imply global absorption
 
-Thus same-end extension is the unique compatible insertion residue.
+The following implications are not valid without additional hypotheses:
+- two vertices extending the same end of a path need not concatenate with each other;
+- two reverse triples through the two ends of a small support need not make that support Hamiltonian;
+- Hamiltonicity of \(K\cup\{x\}\) does not imply that \(x\) can be an endpoint of a Hamilton path;
+- boundary reversal of one triple does not permit cyclic rotation of that triple or reversal of an entire tight path.
 
-The certified theorem three_fourcore_extensions_sync01 then says that three Hamiltonian one-label extensions of one four-core force order disagreement on the core, a Hamiltonian six-set, a Hamiltonian four-set, or an explicit root-core reversal. Even several same-core extensions therefore return to the bounded-window/reversal interface.
-
-## 7. Common-core abundance and square normalization
-
-The route already has abundant bounded families.
-
-Certified 1000863 shows that Hamiltonian four-window structure yields large common-top families and dense pc2 deletion squares unless endpoint exposure, support disagreement, or order disagreement occurs first.
-
-Certified fixed_pair_star_transport_clique01 and pair_centered_central_gap_fan01 show that every prescribed pair belongs to a linear common-four-core family of Hamiltonian five-supports. After fixing one path type, a large coherent subfamily has one of three forms:
-
-- every leaf pair gives a Hamiltonian six-support;
-- all leaves insert in one central gap of a fixed four-core;
-- all leaves extend the same end of a fixed four-core.
-
-Pending central_gap_large_escape18 eliminates the central-gap branch above order seventeen by producing disagreement or strict descent.
-
-Two pending normalization theorems make the residual bounded state explicit.
-
-**Pending fourset_boolean_pc2_01.**  
-For any four-set X, all nontrivial lower extension states in its Boolean cube have path-cover number two whenever the complementary subset of X is Hamiltonian.
-
-**Pending recomp_fourwindow_square_01.**  
-A Hamiltonian four-window with pc2 complement reaches one of:
-
-- strict Phi-descent;
-- support or order disagreement;
-- a full pc2 square with a label internal in every top cover;
-- a coherent endpoint square.
-
-At a componentwise Phi-minimum the coherent endpoint-square branch has profile {4,5,n-9} unless disagreement occurs.
-
-Thus universal internality already has a concrete square normal form; it is not merely an informal failure of endpoint realization.
-
-## 8. Pending Hall completion of the coherent same-end branch
-
-The strongest current same-end continuation is pending audit.
-
-Universal same-end extenders force synchronized endpoint reversals through the chain
-
-    same_end_extenders_initial_reversal01
-    -> same_end_extenders_double_reversal01
-    -> same_end_extenders_four_endpoint_reversal01.
-
-Fix a residual exact two-cover R|S and form the 2-by-2 attachment graph between two extenders {x,y} and {R,S}. A perfect matching restores x and y to different paths and gives a spanning two-cover. Hence Hall failure leaves only two forms (pending same_end_extenders_hall_completion01):
-
-- one residual path is unattached by both extenders, so x and y reverse one common endpoint edge;
-- one extender is blocked from both residual paths while the other attaches to both, yielding two covers of the same deletion differing by one singleton transfer.
-
-In the first case, pending shared_edge_double_reversal_sixpackage01 uses the triangle-free bad-extension graphs and R(3,3)=6 to force two Hamiltonian five-sets sharing a four-core.
-
-Pending commoncore_fivepair_sixshell_normal01 classifies their six-vertex union into exactly:
-
-1. a Hamiltonian six-set, hence a full pc2 square;
-2. overlapping Hamiltonian four/five-windows;
-3. the canonical oriented matching-block shell.
-
-In the same-deletion transfer case, opposite endpoint phases are consumed by the certified endpointization theorem. If the transfer remains coherently same-end, pending blocked_extender_coherent_sameend_escape01 gives a positioned Hamiltonian five-window, a doubled reverse barrier, or again the common-core six-shell.
-
-Thus, subject to audit, the coherent same-end branch is already reduced to a finite Hall/common-core endgame.
-
-## 9. The universal-internal branch
-
-Suppose instead that the relevant label remains internal in every Hamilton order of an augmented support.
-
-The pending square package gives lower deletion states automatically. Pending universal_internal_pair_doublecross01 then says that two universally internal labels force at least two cross-fragment edges unless they are adjacent; in the adjacent sparse case every lower cover must bypass the deleted block directly while leaving the opposite top component fixed.
-
-The pending theorems adjacent_internal_square_bypass_ladder01 and adjacent_internal_square_sync01 synchronize the three singleton/double-deletion states. If all sparse bypasses occur, they either yield order disagreement or form a coherent internal-deletion square preserving the inherited top order and the opposite component.
-
-Thus universal internality is also reduced to an explicit bounded shell. What is not known is how to turn that shell into endpoint realization, a legal splice, or strict same-component descent.
-
-## 10. The first unsupported implication
-
-After the certified transport and the pending normalizations, every difficult branch reaches a **positioned bounded pc2 shell** of one of the following kinds:
-
-- a coherent endpoint square;
-- a coherent internal-deletion square;
-- a common-core six-shell;
-- overlapping Hamiltonian four/five-windows;
-- an oriented matching-block shell;
-- a doubled reverse barrier;
-- or a phase-locked same-deletion singleton transfer.
-
-The desired theorem is therefore:
-
-**Bounded-shell consumption lemma (open).**  
-Let H be a minimum counterexample and let a reachable bounded shell of one of the types above arise from a canonical deletion state. Then H has a spanning two-cover, or the same repartition component contains a strict Phi-descent, or the shell admits a legal move into a certified terminating corridor that yields defect span at most two.
-
-No such theorem is presently known in full generality.
-
-A companion entry theorem is also needed for the most generic disturbances exported by other routes:
-
-**Generic disturbance entry lemma (open).**  
-A positioned order disagreement, mixed-support crossing, or bounded local defect from a deletion state enters the displayed-end reversal calculus, one of the bounded shells above, or the certified deficit-one longest-path corridor.
-
-This is the content sought by proposal 1000771.
-
-## 11. Why the obvious shortcuts fail
-
-Same-end extenders do not concatenate automatically. Certified 1000149 gives a four-vertex counterexample, and certified 1000364 gives arbitrarily large families of common same-end extenders with no pairwise concatenation. Extra cross-triple, common-core, or deletion structure is indispensable.
-
-Two inward hooks do not force absorption. Certified double_inward_endhook_not_absorption01 gives a non-Hamiltonian four-set with both hooks.
-
-Hamiltonicity does not imply endpoint realization. That is exactly why the transport theorem has a permanent-internal branch.
-
-Boundary antisymmetry reverses one ordered triple only. The retracted same-slot endpoint-replacement arguments 1000244 and 1000470 failed by implicitly rotating or reversing more order than the axiom permits.
-
-An unpositioned Hamiltonian five-set is also not closure. Pending unpositioned_fiveside_vacuous01 formalizes that in the bounded-square setting: such five-sets are automatic. Position, common-core data, deletion provenance, or endpoint alignment is the useful information.
-
-Finally, neutral migration does not terminate merely because the state space is finite. A proof needs a monotone invariant, a no-trapping theorem, or a contradiction from recurrence.
-
-## 12. Exact stopping point
-
-The certified proof reaches:
-
-    positioned small support
-    -> endpoint transport
-    -> displayed component-end reversal
-    -> two-cover / strict descent / neutral singleton transfer
-    -> coherent same-end or universal-internal phase lock.
-
-Pending mathematics further reaches:
-
-    phase lock
-    -> classified bounded pc2 shell / doubled barrier / same-deletion transfer.
-
-The first unsupported arrow is
-
-    Hall/square-normalized positioned shell
-    => legal global splice, same-component strict descent,
-       certified terminating corridor, or defect span at most two.
-
-The n<=14 residue of the four-window theorem remains separate.
-
-## 13. Research handoff
-
-The strongest next target is a bounded-shell gluing theorem. The most informative test cases are the common-core six-shell, coherent internal-deletion square, and doubled reverse barrier, because they preserve complement and deletion provenance rather than merely asserting that some small Hamiltonian set exists.
-
-The principal routes not to retry without a new ingredient are generic reversal existence, generic K4/K5/K6 production, same-end concatenation from extension alone, and neutral migration without a well-founded measure.
-
-Endpoint transport has already done its local job. The frontier is global:
-
-    place the disturbance at the boundary
-    -> preserve its provenance
-    -> make the local move irreversibly reduce the global defect.
+Accordingly, every use of an endpoint in the main proof is tied to a displayed Hamilton order, and every iterative move is a pairwise repartition in a specified connected component.

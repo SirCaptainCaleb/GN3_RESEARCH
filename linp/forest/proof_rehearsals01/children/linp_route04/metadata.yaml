@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "23842b314bc1bf67614a3454a8e26e78ac4aeb9b0cbc4db50fe0d6d834cbf9bc"
+body_sha256: "0bd890f428d014e1df164c4435210244f84e2c950cd8f1ab432fbe1a78edb443"
 created_at: "2026-10-02T04:36:27.076685+00:00"
 id: "linp_route04"
 last_elevation_revision: null
 last_substantive_worker_id: 351
 legacy_id: null
 lifecycle_status: "active"
-math_version: 3
+math_version: 5
 mathematical_status: null
 metadata:
   include_uncertified_major_results: true
@@ -32,15 +32,15 @@ research_interface:
     - "coordinator global synthesis"
 research_level: "working_unit"
 semantic_container_text: null
-simplified_statement: "Intersection graph + exact incidence realization → rank/nullity lower bound → upper Turán coefficient."
-statement_sha256: "84b80e32db0a6e672e2e02f482e41b5270e296b6276d24bcbe15e23dc5b12eb2"
+simplified_statement: "Intersection graph + exact incidence realization → rank lower bound → one-third upper bound."
+statement_sha256: "d295962e19f2b7199afc5b809c1d8fec503e5b77a53fd61e33c586a0f513dc4a"
 substantive_worker_ids:
   - 348
   - 351
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Route 4 — Incidence rank / induced-path clique-cover"
+title: "Route 4 — Incidence rank and induced paths in the intersection graph"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:16:40.347364+00:00"
-version: 3
+updated_at: "2026-10-02T13:51:06.903969+00:00"
+version: 5

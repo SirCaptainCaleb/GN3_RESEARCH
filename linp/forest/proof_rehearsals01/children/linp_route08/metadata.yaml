@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "df4fa8148100e0329d0a41a1441074cddb2c4567517b170e5e4a42b3ffb081a9"
+body_sha256: "011762680154fa5b8114aee6c51edca69a29f68101fc4768ac8387f4ae6e1ae0"
 created_at: "2026-10-02T05:00:23.017192+00:00"
 id: "linp_route08"
 last_elevation_revision: null
 last_substantive_worker_id: 351
 legacy_id: null
 lifecycle_status: "active"
-math_version: 2
+math_version: 5
 mathematical_status: null
 metadata:
   include_uncertified_major_results: true
@@ -32,14 +32,14 @@ research_interface:
     - "coordinator global synthesis"
 research_level: "working_unit"
 semantic_container_text: null
-simplified_statement: "Full/symmetric 2-shadow → strong-rainbow path theorem or hub-reuse obstruction → upper bound."
-statement_sha256: "f833d12c9fba51f8876c540049ca185dc74e6e6ac7d9dbd753c89407b6324493"
+simplified_statement: "Full 2-shadow → vertex-color-disjoint rainbow path theorem → one-third upper bound."
+statement_sha256: "01b9ccc2b76a01504715ed4e359af037a1852689cb4f387c86458d4a969650c4"
 substantive_worker_ids:
   - 351
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Route 8 — Global/symmetric 2-shadow and strong-rainbow translation"
+title: "Route 8 — The full 2-shadow and vertex-color-disjoint rainbow paths"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:20:37.320272+00:00"
-version: 2
+updated_at: "2026-10-02T13:51:06.903969+00:00"
+version: 5

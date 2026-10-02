@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "8002ab07cee5b01942e295d045426ff7409e77eb66798f98aff20fac0fd2502e"
+body_sha256: "9a29e47d81d7c8e2acac73dd30a4b580798902e2c4a1d1d200cf0f42b926f60d"
 created_at: "2026-10-02T04:36:22.038051+00:00"
 id: "linp_route01"
 last_elevation_revision: null
 last_substantive_worker_id: 351
 legacy_id: null
 lifecycle_status: "active"
-math_version: 7
+math_version: 14
 mathematical_status: null
 metadata:
   include_uncertified_major_results: true
@@ -32,15 +32,15 @@ research_interface:
     - "coordinator global synthesis"
 research_level: "working_unit"
 semantic_container_text: null
-simplified_statement: "43/48 contact-defect stability → enriched paid strict-gap currencies → global bounded-reuse gap."
-statement_sha256: "f8a5b7263c7a8aee70d9ef84fd2029b45167ee2716f3ec23e4f799a8341185f0"
+simplified_statement: "Fixed-entrance bound + exact snake identity → near-equality path-intersection structure → global multiplicity problem."
+statement_sha256: "0b150b0dc17b52692b835708dc5a3924913072910c066f7458ee51ee4f8f9090"
 substantive_worker_ids:
   - 334
   - 351
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Route 1 — Snake/contact-defect and post-43/48 stability"
+title: "Route 1 — Snake accounting and the 43/48 equality problem"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:21:57.282506+00:00"
-version: 7
+updated_at: "2026-10-02T13:51:06.903969+00:00"
+version: 14

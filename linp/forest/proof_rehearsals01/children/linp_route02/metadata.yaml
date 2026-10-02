@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "3a240dce2622b2ed123ecb041b54769f798d70772a760694aae04eb24a2263dc"
+body_sha256: "c83ef9a7970768963f5a5a2b172b3d858304c53eee02306cf4d6891ffa9bb84d"
 created_at: "2026-10-02T04:36:23.82929+00:00"
 id: "linp_route02"
 last_elevation_revision: null
 last_substantive_worker_id: 351
 legacy_id: null
 lifecycle_status: "active"
-math_version: 4
+math_version: 7
 mathematical_status: null
 metadata:
   include_uncertified_major_results: true
@@ -32,16 +32,16 @@ research_interface:
     - "coordinator global synthesis"
 research_level: "working_unit"
 semantic_container_text: null
-simplified_statement: "Dense core → ascending/rank-layer elimination → all-special core or sublinear ascending mass → two-thirds."
-statement_sha256: "a9d840100da9a9e592bd455159130be3294ba2b9fdd65dfac164adc50678e71b"
+simplified_statement: "Ascending-edge incidence count + rank-superlevel structure → sublinear ascending mass → two-thirds bound."
+statement_sha256: "e0616b9d1bdedadd872df423e6fbcb205ba9fe5918c3a8117635079ea8b3946b"
 substantive_worker_ids:
   - 336
   - 348
   - 351
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Route 2 — Dense-core all-special / ascending-edge rank flow"
+title: "Route 2 — Ascending edges in a dense subgraph"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:15:02.273043+00:00"
-version: 4
+updated_at: "2026-10-02T13:51:06.903969+00:00"
+version: 7

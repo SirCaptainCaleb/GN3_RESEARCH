@@ -1,226 +1,305 @@
-# Route 8 — Global/symmetric 2-shadow and strong-rainbow translation
+# Route 8 — The full 2-shadow and vertex-color-disjoint rainbow paths
 
 ## Statement
 
-Comprehensive synthesis of the representation-level upper route through the properly edge-colored 2-shadow, source-oriented directed/rainbow coupling, and the full symmetric strong-rainbow formulation.
+The full properly edge-colored 2-shadow translates linear hypergraph paths exactly into graph paths whose vertices and colors are mutually distinct.
 
 ## Body
 
-# Route 8. The symmetric 2-shadow and strong-rainbow paths
+# The full \(2\)-shadow and vertex-color-disjoint rainbow paths
 
-## Goal and setup
+Let \(H\) be a finite linear \(3\)-graph. Its full \(2\)-shadow is the graph \(G\) on \(V(H)\) obtained by replacing every hyperedge
+\[
+\{x,y,z\}
+\]
+by the three graph edges
+\[
+xy,\quad xz,\quad yz.
+\]
+Color these three graph edges by
+\[
+c(xy)=z,\qquad c(xz)=y,\qquad c(yz)=x. \tag{1}
+\]
 
-This route translates the upper-bound problem into a properly edge-colored graph problem on the original vertex set.
+Linearity makes the coloring well defined: a graph edge \(xy\) belongs to at most one hyperedge of \(H\).
 
-Let H be a linear 3-uniform hypergraph with n vertices and m hyperedges. Construct its full 2-shadow G as follows. For every hyperedge
+The objective is to translate the one-third upper bound into a path problem in this colored graph.
 
-{x,y,z},
+## 1. Basic properties of the full shadow
 
-place all three graph edges xy,xz,yz and color them respectively by z,y,x.
+### Lemma 1
+The coloring (1) is proper. Moreover,
+\[
+e(G)=3|E(H)| \tag{2}
+\]
+and, for every vertex \(v\),
+\[
+d_G(v)=2d_H(v). \tag{3}
+\]
 
-Linearity implies that this coloring is proper. Every hyperedge contributes exactly three shadow edges, so
+#### Proof
+If two shadow edges \(xy\) and \(xw\) had the same color \(z\), then the corresponding hyperedges
+\[
+\{x,y,z\},\qquad \{x,w,z\}
+\]
+would share the two vertices \(x,z\), contrary to linearity. Thus the coloring is proper.
 
-e(G)=3m,      (1)
+Every hyperedge contributes its three distinct pairs, and distinct hyperedges share no pair, proving (2).
 
-and at every vertex v,
+Every hyperedge through \(v\) contributes exactly the two shadow edges joining \(v\) to its other two vertices. Distinct hyperedges through \(v\) cannot reuse a shadow neighbor, so these \(2d_H(v)\) graph edges are distinct. This proves (3). ∎
 
-d_G(v)=2d_H(v).      (2)
+The coloring has additional symmetry: if \(c(xy)=z\), then
+\[
+c(xz)=y,\qquad c(yz)=x. \tag{4}
+\]
+Thus every hyperedge appears as a triangle whose edge colors are the opposite vertices.
 
-The central question is: what graph-path condition corresponds exactly to a linear hypergraph path?
+## 2. Exact path translation
 
-## 1. Exact strong-rainbow encoding
+Let
+\[
+x_0x_1\cdots x_k
+\]
+be a graph path in \(G\), and write
+\[
+c_i=c(x_{i-1}x_i).
+\]
+The corresponding hyperedges are
+\[
+e_i=\{x_{i-1},x_i,c_i\}. \tag{5}
+\]
 
-Consider a graph path
+### Theorem 2
+The hyperedges \(e_1,\ldots,e_k\) form a linear hypergraph path if and only if
+\[
+x_0,\ldots,x_k,c_1,\ldots,c_k \tag{6}
+\]
+are all distinct.
 
-x_0x_1…x_k
+#### Proof
+Assume first that the vertices in (6) are all distinct. Consecutive hyperedges \(e_i,e_{i+1}\) meet in \(x_i\). If nonconsecutive \(e_i,e_j\) intersected, their common vertex would have to be either a repeated graph-path vertex, a repeated color, or a color equal to a nonincident graph-path vertex. Each possibility contradicts (6). Hence the hyperedges form a linear path.
 
-in G, and let c_i be the color of x_{i−1}x_i. The corresponding hyperedges are
+Conversely, suppose \(e_1,\ldots,e_k\) form a linear path. A \(k\)-edge linear \(3\)-uniform path has exactly \(2k+1\) vertices. The list (6) has \(k+1+k=2k+1\) entries and contains every vertex of the hypergraph path by (5). Therefore the entries in (6) are all distinct. ∎
 
-E_i={x_{i−1},x_i,c_i}.
+Thus
+\[
+H\text{ is }P_\ell^{(3)}\text{-free}
+\]
+if and only if its full shadow contains no \(\ell\)-edge graph path whose graph vertices and edge colors are mutually distinct.
 
-The sequence E_1,…,E_k is a linear hypergraph path exactly when the following 2k+1 objects are all distinct:
+By (2), the desired upper bound
+\[
+|E(H)|\le \frac{\ell}{3}n \tag{7}
+\]
+is equivalent to the following colored-graph statement.
 
-x_0,x_1,…,x_k,c_1,…,c_k.      (3)
+### Target theorem
+If \(G\) is a properly edge-colored graph satisfying the triangle rule (4) and contains no \(\ell\)-edge path for which all path vertices and edge colors are distinct, then
+\[
+e(G)\le \ell n. \tag{8}
+\]
 
-Indeed, adjacent hyperedges already share the intended path vertex x_i. Condition (3) prevents them from sharing any second vertex, prevents nonconsecutive hyperedges from meeting through a repeated color, and prevents a color from colliding with a nonincident path vertex. Conversely, if the hyperedges form a linear path, all these extra coincidences are forbidden.
+## 3. Separating graph vertices from colors
 
-Call a graph path satisfying (3) **strong-rainbow**.
+There is a simpler reduction that forces color-vertex disjointness by construction, at the cost of a factor two.
 
-The exact translation is therefore
+Choose a partition
+\[
+V(H)=A\sqcup B.
+\]
+Retain only shadow edges \(xy\) with
+\[
+x,y\in A
+\qquad\text{and}\qquad
+c(xy)\in B.
+\]
+Call the resulting properly edge-colored graph \(J\).
 
-H is P_ℓ-free  ⇔  G has no ℓ-edge strong-rainbow path.      (4)
+### Lemma 3
+Every rainbow path in \(J\) lifts to a linear hypergraph path of the same length in \(H\).
 
-This statement is proved but currently pending audit.
+#### Proof
+All path vertices lie in \(A\), while all colors lie in \(B\), so no color equals a path vertex. The rainbow condition makes the colors distinct. A graph path already has distinct path vertices. Hence Theorem 2 applies. ∎
 
-Combining (1) and (4), the one-third upper target
+### Proposition 4
+Suppose there is a constant \(\alpha>0\) and an absolute constant \(C\) such that every properly edge-colored graph of average degree \(d\) contains a rainbow path with at least
+\[
+\alpha d-C
+\]
+edges. Then every \(P_\ell^{(3)}\)-free linear \(3\)-graph satisfies
+\[
+|E(H)|
+\le
+\frac{2(\ell+C)}{3\alpha}\,n. \tag{9}
+\]
 
-m≤(ℓ/3)n
+#### Proof
+Choose \(A,B\) by placing each vertex independently into either class with probability \(1/2\). A hyperedge contributes exactly one retained shadow edge precisely when two of its vertices lie in \(A\) and the third lies in \(B\), which occurs with probability \(3/8\). Therefore
+\[
+\mathbb E\,e(J)=\frac38|E(H)|.
+\]
+Also
+\[
+\mathbb E|A|=\frac n2.
+\]
 
-becomes the purely colored-graph statement
+Since \(H\) is \(P_\ell^{(3)}\)-free, Lemma 3 implies that \(J\) has no rainbow \(\ell\)-edge path. By the assumed graph theorem,
+\[
+\alpha\,\frac{2e(J)}{|A|}-C<\ell,
+\]
+so
+\[
+e(J)\le \frac{\ell+C}{2\alpha}|A|.
+\]
+Taking expectations gives
+\[
+\frac38|E(H)|
+\le
+\frac{\ell+C}{2\alpha}\frac n2,
+\]
+which is (9). ∎
 
-e(G)≤ℓ n      (5)
+Even the ideal value \(\alpha=1\) gives only the two-thirds coefficient. Therefore the one-third problem cannot be solved by discarding the triangle rule (4) and applying a general rainbow-path theorem.
 
-for every symmetric triangle-colored shadow G with no ℓ-edge strong-rainbow path.
+## 4. A source-oriented representation
 
-This is the cleanest formulation of the route.
+A second representation keeps one distinguished vertex of every hyperedge.
 
-## 2. Why the coloring is more structured than an arbitrary proper coloring
+For each hyperedge \(T=\{x,y,z\}\), choose one vertex \(\sigma(T)\) as its source. If \(\sigma(T)=x\), draw the directed arcs
+\[
+x\to y,\qquad x\to z,
+\]
+and place the graph edge \(yz\) with color \(x\).
 
-Every hyperedge xyz creates a colored triangle
+Let \(D\) be the resulting digraph and \(J\) the resulting properly edge-colored graph.
 
-xy colored z,
-xz colored y,
-yz colored x.
+For a vertex \(v\), let \(s(v)\) be the number of hyperedges sourced at \(v\), and let \(h(v)\) be the number containing \(v\) as a nonsource vertex.
 
-Thus colors and vertices belong to the same ground set, and every colored edge sits inside a triangle where the three colors are exactly the opposite vertices.
+### Lemma 5
+For every vertex \(v\),
+\[
+\frac12 d_D^+(v)+d_D^-(v)=d_H(v). \tag{10}
+\]
 
-This symmetry is much stronger than ordinary proper edge-coloring. It is also precisely what makes the strong-rainbow condition difficult: the color of one edge may equal a far-away vertex of the graph path even when no color repeats.
+#### Proof
+Every hyperedge through \(v\) places \(v\) in exactly one of two roles. If \(v\) is the source, it contributes one to \(s(v)\); otherwise it contributes one to \(h(v)\). Hence
+\[
+s(v)+h(v)=d_H(v).
+\]
+Each source hyperedge contributes two distinct outgoing arcs, so
+\[
+d_D^+(v)=2s(v).
+\]
+Each nonsource occurrence corresponds to exactly one incoming arc, so
+\[
+d_D^-(v)=h(v).
+\]
+Substitution gives (10). ∎
 
-A theorem that treats G as merely an arbitrary properly colored graph throws away this triangle symmetry and therefore cannot be expected to reach the one-third target.
+Longest directed paths force complementary degree information at their ends.
 
-## 3. The A/B separation and its intrinsic loss
+### Lemma 6
+Let
+\[
+v_0v_1\cdots v_p
+\]
+be a longest directed path in \(D\). If \(d_H(v)\ge d\) for every vertex, then
+\[
+h(v_p)\ge d-\frac p2 \tag{11}
+\]
+and
+\[
+s(v_0)\ge d-p. \tag{12}
+\]
 
-There is a safe way to convert strong-rainbow paths into ordinary rainbow paths.
+#### Proof
+Every out-neighbor of \(v_p\) lies on the directed path, otherwise the path extends. Hence
+\[
+d_D^+(v_p)\le p,
+\]
+so
+\[
+s(v_p)\le p/2.
+\]
+Since \(s(v_p)+h(v_p)=d_H(v_p)\ge d\), this gives (11).
 
-Partition the vertex set into A∪B. Keep only shadow edges whose two endpoints lie in A and whose color lies in B. In this retained graph, every ordinary rainbow path automatically satisfies (3): its path vertices lie in A, its distinct colors lie in B, so colors cannot collide with path vertices.
-
-Hence every rainbow path in the retained graph lifts to a linear hypergraph path.
-
-Suppose a generic theorem for properly edge-colored graphs guaranteed a rainbow path of length at least
-
-αd−O(1)
-
-from minimum degree d. Optimizing the partition and core extraction then yields the hypergraph estimate
-
-m ≤ (2/(3α))ℓ n + O(n).      (6)
-
-Even the ideal black-box value α=1 gives leading coefficient 2/3.
-
-Thus the A/B separation is useful but has an unavoidable factor-two cost. Any proof aiming below two thirds must use more than generic proper coloring; it must exploit either the full symmetric shadow or additional rank information.
-
-## 4. Degree normalization
-
-Two minimum-degree reductions are available, but they apply to different objects and must not be conflated.
-
-First, from any hypergraph of density ρ one may pass to an induced subhypergraph of density at least ρ and minimum hypergraph degree at least ρ.
-
-Second, after the A/B shadow construction one may pass to a retained colored graph with minimum graph degree at least approximately
-
-3ρ/4.      (7)
-
-The quantities δ(H) and δ(G) are not interchangeable. Equation (2) applies to the full shadow, not automatically to an arbitrary A/B subgraph.
-
-This distinction matters whenever a rainbow-path theorem assumes graph minimum degree.
-
-## 5. Source-oriented hybrid model
-
-There is an intermediate representation between the lossy A/B model and the fully symmetric shadow.
-
-Choose one source σ(T) in every hyperedge T={x,y,z}. Add directed arcs from the source to the other two vertices, and join the two nonsource vertices by a graph edge colored by the source.
-
-If s(v) is the number of triples for which v is the source and h(v) the number for which v is a nonsource vertex, then
-
-d_H(v)=s(v)+h(v),
-
-while in the directed graph D,
-
-d_D^+(v)=2s(v),
-d_D^−(v)=h(v).
-
+Now consider a graph edge \(v_0x\) of \(J\) with color \(u\). The parent hyperedge is sourced at \(u\), so \(D\) contains the arc
+\[
+u\to v_0.
+\]
+If \(u\notin\{v_0,\ldots,v_p\}\), this arc extends the directed path at its beginning, contradicting maximality. Hence every color on an edge of \(J\) incident with \(v_0\) belongs to the directed path. Properness makes these colors distinct, so
+\[
+h(v_0)=d_J(v_0)\le p.
+\]
 Therefore
+\[
+s(v_0)=d_H(v_0)-h(v_0)\ge d-p.
+\]
+∎
 
-(1/2)d_D^+(v)+d_D^−(v)=d_H(v).      (8)
+This representation yields a directed-path versus rainbow-path dichotomy, but the resulting quantitative bounds remain far from (8). Its role is to show that concentrated source reuse cannot be ignored.
 
-Now let v_0…v_p be a longest directed path. At its initial and terminal vertices, maximality forces complementary bounds on source and nonsource incidence. Roughly, if the directed path is short, a large part of the degree must appear in the properly colored terminal graph; if that colored part is sufficiently rich, one seeks a rainbow path there.
+## 5. Repeated colors are a genuine obstruction
 
-This tradeoff yields an unconditional directed-or-rainbow path guarantee of order 7ρ/27, where ρ=m/n, up to an absolute additive constant. It is useful infrastructure but far from the one-third target.
+An ordinary long path in the full shadow need not contain a long linear hypergraph path.
 
-The important point is conceptual: the source-oriented model makes the repeated-source obstruction visible rather than discarding it.
+### Proposition 7
+For every \(t\), there is a linear \(3\)-graph whose full shadow contains the graph path
+\[
+x_0x_1\cdots x_t
+\]
+but every linear hypergraph path has at most four edges.
 
-## 6. The repeated-hub obstruction
+#### Proof
+Take distinct vertices
+\[
+x_0,\ldots,x_t,z,w.
+\]
+For \(1\le i\le t\), define
+\[
+e_i=
+\begin{cases}
+\{x_{i-1},x_i,z\},&i\text{ odd},\\
+\{x_{i-1},x_i,w\},&i\text{ even}.
+\end{cases}
+\tag{13}
+\]
+The system is linear. Consecutive edges meet in the corresponding \(x_i\) and use different vertices \(z,w\). Two nonconsecutive odd edges meet only in \(z\); two nonconsecutive even edges meet only in \(w\); nonconsecutive edges of opposite parity are disjoint.
 
-A long ordinary path in the full 2-shadow need not contain any long hypergraph path.
+The full shadow contains every graph edge \(x_{i-1}x_i\), giving the displayed graph path. Its edge colors alternate \(z,w\).
 
-Take distinct vertices x_0,…,x_t and two hubs z,w. For odd i let
+Any linear hypergraph path can contain at most two odd-indexed edges, because three such edges would include two nonconsecutive path edges both containing \(z\). If two odd-indexed edges occur, they must be consecutive in the hypergraph path. The same argument applies to the even-indexed edges through \(w\). Therefore every linear path has at most four edges. ∎
 
-E_i={x_{i−1},x_i,z},
+Thus no positive proportion of an arbitrary ordinary shadow path can be extracted without using the colors.
 
-and for even i let
+The same example explains the precise difficulty in Theorem 2: the graph vertices \(x_i\) are all distinct, but the colors repeat heavily.
 
-E_i={x_{i−1},x_i,w}.
+## 6. The remaining theorem
 
-The resulting 3-graph is linear: two odd edges meet only at z, two even edges meet only at w, and consecutive edges additionally use successive x-vertices in the intended way.
+The full-shadow approach is reduced to Target theorem (8).
 
-Its 2-shadow contains the arbitrarily long ordinary graph path
+A proof must distinguish between two regimes.
 
-x_0x_1…x_t,
+If a long graph path uses mostly distinct colors and few colors coincide with nonincident path vertices, then Theorem 2 nearly gives the required hypergraph path directly.
 
-but the colors on that path alternate z,w. Any attempt to use many corresponding hyperedges creates repeated nonconsecutive intersections at z or w. In fact every linear hypergraph path has bounded length, at most four in the constructed family.
+If a small set of colors occurs many times, the triangle rule (4) implies that these colors are actual hypergraph vertices incident with many corresponding pairs. One must use the other two edges of the colored triangles to find a different path with more distinct colors.
 
-Thus there is no theorem of the form
+### Open problem
+Prove that every properly edge-colored graph satisfying the triangle rule (4) and
+\[
+e(G)>\ell n
+\]
+contains an \(\ell\)-edge path
+\[
+x_0x_1\cdots x_\ell
+\]
+such that the \(2\ell+1\) vertices
+\[
+x_0,\ldots,x_\ell,
+c(x_0x_1),\ldots,c(x_{\ell-1}x_\ell)
+\]
+are all distinct.
 
-“take an arbitrary long shadow path and extract a fixed positive fraction as a hypergraph path.”
+By Theorem 2 and (2), this statement is exactly the one-third upper bound.
 
-The obstruction is concentrated reuse of a few colors or hubs. This theorem is proved but still pending audit.
-
-## 7. What the symmetric route must exploit
-
-The repeated-hub example identifies the missing structure.
-
-If colors are mostly fresh, then a long ordinary or rainbow path is already close to strong-rainbow and can be lifted.
-
-If a few colors are reused heavily, then the triangle symmetry says those colors are actual hypergraph vertices incident with many shadow edges. Such reuse creates large star-like families of hyperedges and potentially alternative routes through the other two shadow sides of their triangles.
-
-Therefore the hoped-for proof has a dichotomy:
-
-1. low color reuse gives a long strong-rainbow path directly;
-2. high color reuse creates enough structured density around the repeated hubs to reroute through fresh vertices and colors.
-
-No theorem currently executes this dichotomy at the required scale.
-
-## 8. Interface with rank flow
-
-There is one established way to repair many color-vertex collisions: retain the ascending-edge rank structure.
-
-For a rank layer of ascending nonspecial edges, terminal pairs colored by their entrances form a proper-colored graph with strong rank restrictions. Directed paths through the entrance-to-terminal orientation force strictly increasing vertex rank. In that setting, many collisions that are possible in the unrestricted full shadow become impossible or point only backward.
-
-Those are theorems of the dense-core rank-flow route, not of the representation route itself. They may be imported if a shadow proof needs an ordering device.
-
-The conceptual distinction should remain clear:
-
-- Route 2 asks whether ascending nonspecial mass can survive across rank layers;
-- Route 8 asks for a path theorem in the full symmetric shadow after most rank information has been discarded.
-
-## 9. Known dead ends
-
-Three shortcuts are closed.
-
-First, generic properly colored graph theorems have the factor-two A/B ceiling (6), so they cannot by themselves reach one third.
-
-Second, an ordinary long full-shadow path is insufficient because of the repeated-hub construction.
-
-Third, even an ordinary rainbow path in the full shadow is not enough: an edge color may equal a nonincident path vertex. The correct condition is the mutual distinctness in (3), unless one uses an A/B separation.
-
-Finally, hypergraph and shadow minimum degrees must be kept distinct after any subgraph extraction.
-
-## 10. First unsupported implication
-
-The proof stops at the following exact colored-graph theorem.
-
-**Symmetric strong-rainbow target.** Let G be the full 2-shadow of a linear 3-uniform hypergraph, with every edge colored by the third vertex of its unique parent hyperedge. If G has no ℓ-edge path whose path vertices and edge colors are all mutually distinct, prove
-
-e(G)≤ℓ n.      (9)
-
-By (1), this is exactly the one-third upper bound.
-
-Any successful proof must survive concentrated repeated-color/hub configurations of the type above. The A/B theorem cannot cross the two-thirds ceiling, and no present full-shadow theorem controls hub reuse at the necessary density.
-
-The exact strong-rainbow encoding and repeated-hub obstruction are proved but pending audit; the full-shadow degree identity and A/B/source-oriented machinery are certified.
-
-## Research handoff
-
-The strongest next target is a density-to-strong-rainbow-path theorem exploiting the symmetric colored triangles, with an explicit structural branch for repeated hub colors. A useful intermediate theorem would show that high color multiplicity forces a decomposition or rerouting mechanism that creates fresh colors elsewhere.
-
-Do not retry generic rainbow black boxes, arbitrary ordinary-shadow path extraction, or ordinary rainbow lifting without controlling color-vertex collisions.
-
-If the argument begins using rank superlevels or monotone edge ranks essentially, import the rank-flow machinery rather than rebuilding it here; at that point the proof is deliberately using the interface with Route 2.
+General rainbow-path theorems cannot supply it because Proposition 4 loses a factor two, and ordinary graph-path extraction cannot supply it because of Proposition 7. The remaining argument must use the symmetric triangle structure of the full shadow to control repeated colors.

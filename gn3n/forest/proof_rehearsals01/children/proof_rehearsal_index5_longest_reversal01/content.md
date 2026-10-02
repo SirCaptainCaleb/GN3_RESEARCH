@@ -1,207 +1,230 @@
-# Proof rehearsal V — longest-path and reversal structure
+# Proof rehearsal V — longest paths and reversal structure
 
 ## Statement
 
-Near-publication rehearsal of the longest-path/reversal route. Certified theory gives two entrances: every minimum counterexample has a genuine reversing tight triple, and every globally longest path has a pc2 exterior with simultaneous reversed endpoint triples. Reversal amplification and longest-path endpoint coupling both produce synchronized common-core Hamiltonian 4/5/6-supports, endpoint deletion disagreement, or a universal endpoint-reversal grid. The first unsupported implication is to consume one of these positioned structures into endpoint absorption, a spanning two-cover, or defect span at most two. The former sharp-shell repeated-cut closure is audit-failed and is retained only as an exact obstruction.
+Let H be a minimum counterexample. Every minimum counterexample contains a tight triple reversing an edge of a tight path. If A is a longest tight path, its exterior has path-cover number two and every exterior vertex gives reversed tight triples at both ends of A. These relations force either a small Hamiltonian support with two-coverable complement, several Hamiltonian five-sets sharing a four-vertex core, or a synchronized endpoint-pair configuration. The remaining lemma is to convert one of these positioned configurations into a displayed end-edge reversal, a two-cover, or a spanning ordering of defect span at most two.
 
 ## Body
 
+# Longest paths and reversal structure
 
-# Longest-path and reversal structure
+Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A tight triple \((x,v,u)\) reverses the ordered edge \((u,v)\) of a tight path.
 
-## 1. The proposed proof
+## 1. Reversals are unavoidable
 
-Assume H is a minimum counterexample to the grand two-cover conjecture.
+**Lemma 1.** If two tight paths of order at least three have an order disagreement on their common vertices, then \(H\) contains a tight triple reversing an edge of one of the paths.
 
-This route has two certified entrances.
+**Proof.** Choose a disagreeing pair with minimum union and then minimum total order. If a common edge is traversed in opposite directions, a consecutive tight triple containing that edge reverses the corresponding edge of the other path.
 
-The first is intrinsic. Every minimum counterexample contains relative-order disagreement between overlapping tight paths (1000211). The certified path-intersection calculus localizes such disagreement, and theorem 1000164 concludes:
+Otherwise the first change of relative order yields a reversing triple unless the two paths close into a vertex-simple tight cycle. Open such a cycle at any edge. Its complement is non-Hamiltonian and has a two-cover \(A\mid B\). Let \((a_{m-1},a_m)\) be an end edge of a nontrivial component \(A\). If both triples needed to concatenate \(A\) to the opened cycle were tight, the concatenation together with \(B\) would two-cover \(H\). Hence one of those triples is non-tight. Boundary reversal then gives a tight triple reversing either \((a_{m-1},a_m)\) or an edge of the opened cycle. \(\square\)
 
-**Reversal theorem.**  
-Every minimum counterexample contains a tight triple reversing an edge of a nontrivial tight path.
+Deletion covers at different vertices cannot all induce one common support partition and one common relative order, since those orders would glue to a two-cover. Hence:
 
-The second entrance is global. Choose a tight path
+**Corollary 2.** Every minimum counterexample contains a tight triple reversing an edge of a tight path.
 
-    A=(a_0,...,a_{\lambda-1})
+The remaining question is where such a reversal can be placed.
 
-of maximum possible order, and put U=V(H)-V(A). Certified theorem 1000925 gives:
+## 2. A longest path
 
-- H[U] is non-Hamiltonian and has path-cover number two;
-- for every y in U, both
-      (a_1,a_0,y)
-  and
-      (y,a_{\lambda-1},a_{\lambda-2})
-  are tight;
-- complements of proper contiguous subpaths of A are also non-Hamiltonian with pc2;
-- the two endpoint reversals cannot simply be spliced into one reverse-to-reverse Hamilton path.
+Choose a longest tight path
+\[
+A=(a_0,\ldots ,a_{\lambda-1})
+\]
+and put
+\[
+U=V(H)-V(A).
+\]
 
-Thus a longest path begins with a **bi-anchored pc2 obstruction**.
-
-The route attempts to amplify these reversals until one becomes globally consumable. The existing theory succeeds at amplification and positioning; it does not yet prove the final absorption.
-
-All results below are certified unless explicitly stated otherwise.
-
-## 2. From disagreement to a genuine reversal
-
-The first entrance is short.
-
-Order disagreement between two overlapping tight paths cannot remain purely global. The path-intersection calculus produces a reversed common edge, a reversing tight triple, or a tight cycle. Certified theorem 1000164 also consumes the cycle alternative, using the pc2 complement forced in a minimum counterexample, and again obtains a reversing tight triple.
-
-Consequently no proof effort is needed merely to establish that reversals exist. The mathematical question is where a reversal can be placed and what additional support structure accompanies it.
-
-## 3. Local reversal normalization
-
-Certified endpoint_reversal_obstruction_recomp01 analyzes a genuine displayed-edge reversal.
-
-If the reversal is internal, or has the easier endpoint orientation, it enters a bounded four-vertex frontier: a Hamiltonian K4, the exceptional cyclic non-Hamiltonian K4, or a matching-block K4 with its forced reverse-fan structure.
-
-Otherwise one obtains a maximal unresolved endpoint pair. The hard residue is highly synchronized: every other exterior label satisfies the corresponding reverse relations at both ends, and—unless a small Hamiltonian support appears immediately—also a middle reverse relation.
-
-Certified theorem 1000540 turns this universal family into a complete endpoint-pair grid. Every endpoint-pair four-set is Hamiltonian, one- and two-label exterior deletions retain pc2 structure, and every exterior triple already carries order disagreement.
-
-Thus the difficult endpoint reversal is not a single stubborn local triple. It is a dense, positioned family with pc2 deletion data.
-
-This is one of the two richest certified states from which to attack the final absorption problem.
-
-## 4. Reversal amplification by common-core stars
-
-There is a second certified amplification that starts from any genuine reversing triple.
-
-Let T be the three vertices of the reversal. Form the graph J_T on the remaining vertices, joining y and z when T union {y,z} is Hamiltonian. Certified reversal_dense_fivefamily01 gives
-
-    alpha(J_T) <= 2,
-
-and hence a Mantel-scale lower bound on the number of edges. In particular some exterior vertex y has many neighbors, so at least three Hamiltonian five-supports share one common four-core
-
-    C = V(T) union {y}.
-
-Certified reversal_threeleaf_star01 extracts such a three-leaf star. Synchronizing Hamilton orders on the three five-supports, certified reversal_star_sync01 / reversal_seven_shell_sync01 gives one of:
-
-1. order disagreement on the common four-core;
-2. a Hamiltonian six-support with pc2 complement;
-3. a Hamiltonian four-support with pc2 complement;
-4. a second explicit reversal using two leaves and a core vertex.
-
-Therefore a single reversal expands into a bounded, correlated support shell. The complement information remains part of the state and is essential for any eventual gluing theorem.
-
-## 5. Longest-path endpoint coupling reaches the same frontier
-
-The longest-path entrance produces essentially the same bounded objects, but with stronger endpoint placement.
-
-From 1000925, every exterior label gives reverse hooks at both ends of A. Certified 1000819 then yields either:
-
-- a bi-endpoint Hamiltonian five-path; or
-- a four-vertex internal-reversal configuration.
-
-Certified 1000755 strengthens the first branch: unless the reversal K4 already appears, all but at most two exterior labels extend one fixed endpoint four-core to a Hamiltonian five-set.
-
-When the exterior is sufficiently large, certified longest_three_root_star01 gives either:
-
-- a proper Hamiltonian six-support; or
-- three Hamiltonian five-supports sharing one common four-core.
-
-Thus the longest-path branch reaches the same common-core star and bounded pc2 shell as the intrinsic reversal branch, but with a remembered maximum-path order and opposite-end provenance.
-
-Two additional certified theorems are useful at this interface.
-
-Theorem 1000494 says that arbitrary two-covers of the two endpoint deletions of a longest path cannot remain mutually support- and order-neutral: they expose support or order disagreement.
-
-Theorem 1000536 gives a positive gluing result: if opposite endpoint replacements preserve the order of a longest path of order at least six, they splice to a Hamiltonian double replacement. Hence the unresolved longest-path branch is precisely the **disturbed, non-order-preserving** endpoint-replacement case.
-
-## 6. Convergence to the endpoint-transport interface
-
-Both entrances now give one of the following positioned structures:
-
-- the universal endpoint-reversal grid of 1000540;
-- a common-four-core star of Hamiltonian five-supports with pc2 complements;
-- a Hamiltonian four- or six-support with pc2 complement;
-- endpoint deletion disagreement tied to a longest path;
-- or a second explicit reversal with common-core provenance.
-
-The desired theorem is therefore not another reversal lemma.
-
-**Positioned reversal consumption lemma (open).**  
-In a minimum counterexample, any of the positioned reversal/common-core states above forces one of:
-
-1. a displayed component-end reversal that is consumable by the endpoint-transport theorem;
-2. a spanning two-path cover;
-3. a spanning ordering of defect span at most two.
-
-This is the bridge represented by proposal 1000741.
-
-Equivalently, one may ask for a theorem that takes a bounded Hamiltonian support carrying a positioned order defect together with its pc2 complement and produces boundary absorption. Such a theorem would simultaneously consume the endpoint grid and the common-core star.
-
-## 7. The bi-anchored longest-path target
-
-The longest-path entrance carries one additional global feature that is worth preserving.
-
-The state from 1000925 has simultaneous reverse hooks at both ends of one globally longest path, while the exterior is pc2. Combined with 1000494, opposite endpoint deletion covers always contain support/order disturbance.
-
-The order-preserving subcase is already solved by 1000536. Thus a particularly clean route-specific target is:
-
-**Bi-endpoint absorption lemma (open).**  
-Let A be a globally longest path in a minimum counterexample, with the bi-anchored pc2 exterior supplied by 1000925. Then the disturbed opposite-end replacement states force a direct two-cover, an absorbable component-end reversal, or defect span at most two.
-
-This target is stronger in placement than the generic reversal-consumption lemma and may therefore be easier.
-
-## 8. The optional sharp half-order branch
-
-There is a distinct equality-shell formulation when
-
-    n = 2\lambda + 1.
-
-Certified theorem 1000613 identifies the D=1 support-reconfiguration graph exactly with the disjointness graph on Hamiltonian \lambda-subsets, with omitted vertices as edge labels. Certified astra004globalfork then says that the longest-path complement is either rich in Hamiltonian deletions, forcing intrinsic order disturbance, or deletion-sparse, in which every bad deletion cover has substantial crossing.
-
-This support-graph branch retains genuine global parity and exchange information. It is not, however, a completed route to closure.
-
-The historical repeated-neutral-cut theorem astra004repeatcutdisturb failed audit. Its proof treated (u,v,z) and (v,u,z) as the boundary-flip pair; the actual reverse of (u,v,z) is (z,v,u). The argument therefore used an invalid cyclic reinterpretation of ordered triples. Downstream claims 1000578 and 1000545 are blocked for the same reason.
-
-A second theorem, astra004sparsebridge, also failed audit in its stated form: it bounded the size of an exceptional block in a deletion-cover path but did not prove that the vertices form an interval in the displayed longest-path order.
-
-Hence the sharp-shell route may be revived only by repairing the exact orientation-valid repeated-cut residue. It must not be used as a black-box closure theorem.
-
-## 9. Mathematical obstructions that delimit the route
-
-Two inward endpoint hooks do not imply absorption. The certified counterexample double_inward_endhook_not_absorption01 has both hooks but is non-Hamiltonian.
-
-Balanced repartition need not preserve an old terminal pair. Certified fixed_terminal_pair_balancing_counterexample01 gives a uniform counterexample family. Any gluing theorem must permit the attachment data to change or use an additional hypothesis.
-
-Boundary antisymmetry does not permit cyclic rotation of an ordered tight triple or reversal of a whole tight path. This is the exact error that invalidated the sharp-shell repeated-cut argument.
-
-Finally, repeated endpoint replacement or support exchange does not terminate by finiteness alone. A neutral sequence may cycle. Any iterative proof needs a monotone invariant, a no-trapping theorem, or a contradiction from a return state with preserved oriented data.
-
-## 10. Exact stopping point
-
-The certified proof gives:
-
-    minimum counterexample
-    -> genuine reversal or bi-anchored longest-path obstruction
-    -> synchronized endpoint grid or common-core bounded shell.
-
-The first unsupported implication is
-
-    positioned reversal/common-core shell
-    => displayed boundary absorption, two-cover,
-       or defect span at most two.
-
-For the longest-path-specific branch it may be sharpened to
-
-    disturbed bi-endpoint replacement state
-    => absorbable endpoint reversal or two-cover.
-
-The sharp-shell neutral-cut branch remains open at its failed repeated-cut step and is optional.
-
-## 11. Research handoff
-
-The strongest certified launch states are the hard endpoint grid of 1000540, the three-leaf reversal star, and the bi-anchored longest-path state 1000925 together with 1000494. Each contains repeated synchronized structure and pc2 complement information.
-
-The principal route not to retry without a new ingredient is witness existence. Reversals, order disagreement, small Hamiltonian supports, and common-core stars are already abundant.
-
-The unresolved mathematics is endpoint accessibility:
-
-    local oriented inconsistency
-    -> synchronized bounded structure
-    -> one disturbance reaches the displayed boundary
-    -> global defect collapses.
-
-The first two arrows are established. The third is the frontier.
+**Lemma 3.**
+1. \(H[U]\) is non-Hamiltonian and has path-cover number two.
+2. For every \(y\in U\),
+\[
+(a_1,a_0,y),\qquad
+(y,a_{\lambda-1},a_{\lambda-2})
+\]
+are tight.
+3. The complement of every nonempty proper contiguous subpath of \(A\) is non-Hamiltonian and has path-cover number two.
+
+**Proof.** If \(H[U]\) were Hamiltonian, Hamilton paths on \(A\) and \(U\) would two-cover \(H\). Minimality gives a two-cover of every proper induced subtournament, proving (1).
+
+If \((y,a_0,a_1)\) were tight, prepending \(y\) would give a longer tight path. Hence \((y,a_0,a_1)\) is non-tight and boundary reversal gives \((a_1,a_0,y)\) tight. The other end is symmetric.
+
+Let \(I\) be a nonempty proper contiguous subpath of \(A\). If \(H-I\) were Hamiltonian, Hamilton paths on \(I\) and \(H-I\) would two-cover \(H\). Minimality again gives path-cover number two. \(\square\)
+
+No two-cover of \(U\cup\{a_0,a_1\}\) can have a component ending with \((a_0,a_1)\), since the inherited suffix of \(A\) could then be appended. The symmetric statement holds at the other end. Thus the two reversed endpoint families coexist but cannot be joined directly.
+
+## 3. A five-set or an internal reversal
+
+For \(y\in U\), the first and third triples of
+\[
+(a_1,a_0,y,a_{\lambda-1},a_{\lambda-2})
+\]
+are tight by Lemma 3. If
+\[
+(a_0,y,a_{\lambda-1})
+\]
+is tight, these five vertices form a Hamilton path.
+
+Suppose instead that this middle triple is non-tight for every \(y\in U\). Then
+\[
+(a_{\lambda-1},y,a_0)
+\]
+is tight for every \(y\in U\). Define a tournament on \(U\) by
+\[
+p\to q
+\quad\Longleftrightarrow\quad
+(p,a_{\lambda-1},q)\text{ is tight}.
+\]
+Since \(|U|\ge4\), some \(y\) has an in-neighbor \(w\) and an out-neighbor \(z\). Then
+\[
+(w,a_{\lambda-1},y,a_0)
+\]
+is a tight four-path, while
+\[
+(y,a_{\lambda-1},z)
+\]
+reverses its internal edge \((a_{\lambda-1},y)\).
+
+Thus:
+
+**Lemma 4.** Either some
+\[
+(a_1,a_0,y,a_{\lambda-1},a_{\lambda-2})
+\]
+is a Hamilton path, or a four-vertex tight path contains an explicitly reversed internal edge.
+
+The induced four-set in the second case is Hamiltonian, cyclic non-Hamiltonian, or the edge-orderable matching-block \(K_4\). The Hamiltonian case already has a two-coverable complement. The matching-block case supplies forced reverse relations for further extension.
+
+## 4. A common four-vertex core
+
+Put
+\[
+D=\{a_1,a_0,a_{\lambda-1},a_{\lambda-2}\}.
+\]
+Call \(y\in U\) good when \(D\cup\{y\}\) is Hamiltonian in the displayed order. If three vertices of \(U\) are not good, the tournament argument above produces the internal reversal of Lemma 4. Therefore:
+
+**Lemma 5.** Unless the internal-reversal four-set occurs, all but at most two vertices of \(U\) are good.
+
+When \(|U|\ge6\), at least four such labels exist.
+
+**Lemma 6.** If \(|U|\ge6\) and the internal-reversal four-set does not occur, then either
+1. \(H\) contains a Hamiltonian six-set with two-coverable complement; or
+2. there is a four-set \(C\) and three distinct vertices \(r_1,r_2,r_3\notin C\) such that each \(C\cup\{r_i\}\) is Hamiltonian and has two-coverable complement.
+
+**Proof.** Choose a good \(y\) and put \(X=D\cup\{y\}\). If \(X\cup\{z\}\) is Hamiltonian for another good \(z\), this is (1).
+
+Otherwise at least three good labels fail to enlarge \(X\). For each such label \(z\), some four-vertex deletion \(X-\{x\}\) must accept \(z\); if all five failed, comparison of the five insertion positions and boundary reversal would produce the internal-reversal configuration. By pigeonhole, one deletion \(C=X-\{x\}\) accepts at least two labels \(z_1,z_2\). Then
+\[
+C\cup\{x\},\quad C\cup\{z_1\},\quad C\cup\{z_2\}
+\]
+are the three five-sets in (2). Their complements are non-Hamiltonian and have path-cover number two by minimality. \(\square\)
+
+Choose Hamilton orders on the three five-sets. If two induce different orders on \(C\), there is an order disagreement. Otherwise each root is inserted into one gap of a common order on \(C\). Separated gaps give a Hamiltonian six-set; adjacent gaps give either a Hamiltonian six-set or a reverse tight triple through the intervening core vertex; a common internal gap gives a Hamiltonian four-set. If all three roots use one endpoint gap, boundary reversal among the roots gives a Hamiltonian four-set. Thus the common-core case always carries additional ordered information.
+
+## 5. The endpoint-pair family
+
+Assume a displayed end-edge reversal has been chosen maximal with respect to the order of its path and no preceding small Hamiltonian support occurs. Then every other exterior vertex satisfies the reverse relations at both ends. In the difficult orientation one also has
+\[
+(a_{\lambda-1},y,a_0)
+\]
+tight for every exterior \(y\).
+
+For distinct \(y,z\), exactly one of
+\[
+(y,a_{\lambda-1},z),\qquad
+(z,a_{\lambda-1},y)
+\]
+is tight. In the first case
+\[
+(y,a_{\lambda-1},z,a_0)
+\]
+is Hamiltonian; in the second, the reversed order is. Therefore every four-set
+\[
+\{a_0,a_{\lambda-1},y,z\}
+\]
+is Hamiltonian, and its complement is non-Hamiltonian with path-cover number two.
+
+Among any three exterior vertices, orient \(p\to q\) when \((p,a_{\lambda-1},q)\) is tight. Some vertex has both an in-neighbor and an out-neighbor, yielding two Hamiltonian four-paths whose common pair is ordered oppositely. Thus this endpoint case gives a family of overlapping Hamiltonian four-sets with explicit order disagreement.
+
+## 6. Opposite endpoint replacements
+
+Let \(x,y\notin V(A)\). Suppose \(L\) is a Hamilton path on
+\[
+(V(A)-\{a_0\})\cup\{x\}
+\]
+and \(R\) is a Hamilton path on
+\[
+(V(A)-\{a_{\lambda-1}\})\cup\{y\},
+\]
+and both preserve the order inherited from \(A\). Assume \(\lambda\ge6\).
+
+**Lemma 7.** The support
+\[
+(V(A)-\{a_0,a_{\lambda-1}\})\cup\{x,y\}
+\]
+is Hamiltonian.
+
+**Proof.** Since \(A\cup\{x\}\) is not Hamiltonian, \(x\) can occupy only one of the first two positions relative to \(a_1,\ldots ,a_{\lambda-1}\); otherwise prepending \(a_0\) extends \(A\). Thus
+\[
+L=(x,a_1,\ldots ,a_{\lambda-1})
+\]
+or
+\[
+L=(a_1,x,a_2,\ldots ,a_{\lambda-1}).
+\]
+Similarly,
+\[
+R=(a_0,\ldots ,a_{\lambda-2},y)
+\]
+or
+\[
+R=(a_0,\ldots ,a_{\lambda-3},y,a_{\lambda-2}).
+\]
+Delete the old endpoints and combine the corresponding left and right forms. Every consecutive triple is inherited from \(L\), \(R\), or the middle of \(A\), so the resulting order is Hamiltonian. \(\square\)
+
+Thus a difficult pair of opposite endpoint replacements must change the inherited order. Comparing deletion covers at \(a_0\) and \(a_{\lambda-1}\), one obtains either a reversed surviving edge of \(A\), different support partitions on the common double deletion, or an order disagreement on a common support.
+
+## 7. Amplification from an arbitrary reversing triple
+
+Let \(T\) be the vertex set of a reversing tight triple, and let \(J_T\) be the graph on \(V(H)-T\) in which \(yz\) is an edge exactly when \(T\cup\{y,z\}\) is Hamiltonian.
+
+**Lemma 8.**
+\[
+\alpha(J_T)\le2.
+\]
+
+**Proof.** If three exterior vertices were pairwise nonadjacent, each of the three two-vertex extensions of \(T\) would be non-Hamiltonian. Comparing their non-Hamiltonian insertion positions, boundary reversal forces one of the three five-vertex supports to be Hamiltonian, a contradiction. \(\square\)
+
+Thus the complement of \(J_T\) is triangle-free, so Mantel's theorem gives
+\[
+|E(J_T)|
+\ge
+\binom{m}{2}-\left\lfloor\frac{m^2}{4}\right\rfloor,
+\qquad m=|V(H)-T|.
+\]
+Every edge gives a Hamiltonian five-set containing the same reversal and having two-coverable complement. Hence some exterior vertex lies in several such edges, producing Hamiltonian five-sets with a common four-vertex core. The insertion-position analysis following Lemma 6 then gives a Hamiltonian four- or six-set, an order disagreement, or another positioned reversal.
+
+## 8. The remaining lemma
+
+The preceding lemmas produce one of the following:
+- a Hamiltonian support of order four, five, or six with two-coverable complement and displayed endpoint information;
+- three Hamiltonian five-sets with a common four-set;
+- the endpoint-pair family of Section 5;
+- an order disagreement attached to the two endpoint deletions of a longest path;
+- a tight triple reversing an edge in one of these displayed configurations.
+
+**Remaining Lemma.** In a minimum counterexample, any one of these configurations yields a reversal of an end edge of a displayed path occurring in a deletion-cover or three-cover state, or directly yields a two-cover, or yields a spanning ordering of defect span at most \(2\).
+
+A proof completes the longest-path argument.
+
+## Appendix. Two invalid shortcuts
+
+For an ordered triple \((u,v,z)\), the boundary-reversed triple is
+\[
+(z,v,u),
+\]
+not \((v,u,z)\). A repeated-cut argument that substitutes the latter therefore uses an unsupported cyclic rotation.
+
+Likewise, a deletion-cover path may contain a small exceptional set without those vertices forming a contiguous interval in the displayed longest-path order. A bound on the size of the exceptional set cannot by itself justify deleting one interval from the longest path.
+
+These observations invalidate the corresponding shortcut arguments but do not affect Lemmas 1–8.

@@ -5764,37 +5764,37 @@
     STATEMENT
     Organizational home for one comprehensive synthesis rehearsal per major conceptual LINP proof route.
 
-  • [linp_route01] Route 1 — Snake/contact-defect and post-43/48 stability
+  • [linp_route01] Route 1 — Snake accounting and the 43/48 equality problem
       STATEMENT
-      Comprehensive synthesis of the direct snake/contact-accounting route from the rank-sensitive 43/48 theorem through near-extremal switching, paid strict-gap structure, and the current global-reuse closure gap.
+      The fixed-entrance recurrence and exact snake identity yield the 43/48 bound and reduce near equality to explicit path-intersection and global multiplicity structure.
 
-  • [linp_route02] Route 2 — Dense-core all-special / ascending-edge rank flow
+  • [linp_route02] Route 2 — Ascending edges in a dense subgraph
       STATEMENT
-      Comprehensive synthesis of the two-thirds upper-bound program based on dense-core normalization, elimination of nonspecial ascending edges by rank layers, and all-special closure.
+      Ascending edges are the exceptional incidences in the two-thirds count; rank superlevels, terminal-pair graphs, and rotations reduce the problem to controlling near-top-rank ascending families.
 
-  • [linp_route03] Route 3 — Rotation-expansion and terminal-pair cycle rank
+  • [linp_route03] Route 3 — Terminal-pair cycles and rotations
       STATEMENT
-      Comprehensive synthesis of the Pósa-style rotation and terminal-pair graph route for forcing special-edge density or bounded cycle complexity.
+      Fundamental cycles in the terminal-pair graph force additional intersections with maximum paths; rotations seek to convert these into a bound on cycle rank and entrance support.
 
-  • [linp_route04] Route 4 — Incidence rank / induced-path clique-cover
+  • [linp_route04] Route 4 — Incidence rank and induced paths in the intersection graph
       STATEMENT
-      Comprehensive synthesis of the algebraic upper-bound route through the incidence matrix, induced-path-free intersection graph, exact clique-cover realizability, and weighted/nullity rank inequalities.
+      The incidence matrix and exact three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
 
-  • [linp_route05] Route 5 — Inductive longest-path pair capacity with outside defect
+  • [linp_route05] Route 5 — Induction on the complement of a longest path
       STATEMENT
-      Comprehensive synthesis of the one-third induction route that removes a longest path and pays all incident edges from internal pair capacity, path slack, and the outside extremal defect.
+      Deleting a longest path reduces the one-third theorem to an exact inequality involving pairs inside the path, the difference between forbidden and actual path length, and the extremal deficit of the complementary induced subgraph.
 
-  • [linp_route06] Route 6 — Algebraic/Steiner lower constructions and spanning-path obstructions
+  • [linp_route06] Route 6 — Algebraic and Steiner constructions
       STATEMENT
-      Comprehensive synthesis of the algebraic lower-bound program using Steiner/projective/affine/additive systems, path-sum invariants, carrier reductions, and the major Hamiltonicity fences.
+      Projective, affine, Boolean, coding, and Steiner constructions are analyzed through explicit spanning-path obstructions; the principal surviving Boolean family is an exact two-point-fibre extension.
 
-  • [linp_route07] Route 7 — Transversal/Latin/blow-up/product lower constructions
+  • [linp_route07] Route 7 — Transversal designs, Latin blow-ups, and products
       STATEMENT
-      Comprehensive synthesis of the lower-bound route through transversal designs, properly colored lifts, fixed-template Latin blow-ups, shared-color constructions, and products.
+      Rainbow-path and lifted-cycle arguments bound the performance of full transversal designs, Latin blow-ups, repeated common-color lifts, and Cartesian products, leaving low-circumference or genuinely nonregular constructions.
 
-  • [linp_route08] Route 8 — Global/symmetric 2-shadow and strong-rainbow translation
+  • [linp_route08] Route 8 — The full 2-shadow and vertex-color-disjoint rainbow paths
       STATEMENT
-      Comprehensive synthesis of the representation-level upper route through the properly edge-colored 2-shadow, source-oriented directed/rainbow coupling, and the full symmetric strong-rainbow formulation.
+      The full properly edge-colored 2-shadow translates linear hypergraph paths exactly into graph paths whose vertices and colors are mutually distinct.
 
 • [research_nudges] Research nudges
     STATEMENT

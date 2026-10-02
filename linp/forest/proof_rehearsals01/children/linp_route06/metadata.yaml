@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "13ed1c0f4cba69ff914d199dea92e2a3ddf4beba5578e2792197671553191d5b"
+body_sha256: "2bd84ca1fec7c8c933e1e12a79205b184366fa028669dab8ed3c23078849501b"
 created_at: "2026-10-02T04:38:38.673957+00:00"
 id: "linp_route06"
 last_elevation_revision: null
 last_substantive_worker_id: 351
 legacy_id: null
 lifecycle_status: "active"
-math_version: 3
+math_version: 6
 mathematical_status: null
 metadata:
   include_uncertified_major_results: true
@@ -32,15 +32,15 @@ research_interface:
     - "coordinator global synthesis"
 research_level: "working_unit"
 semantic_container_text: null
-simplified_statement: "Algebraic/Steiner components → spanning-path obstruction → improved lower component; broad scalable families mostly fenced."
-statement_sha256: "500a662abb098ed781d6956c1341559049954387c97abaf6efb8b2883b9f5aab"
+simplified_statement: "Algebraic and Steiner components → spanning-path obstructions → exact two-point-fibre construction problem."
+statement_sha256: "74aac4a51892066aee83b30811d605f6a3959d3f4e97c1b7477e5ca784a55b97"
 substantive_worker_ids:
   - 348
   - 351
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Route 6 — Algebraic/Steiner lower constructions and spanning-path obstructions"
+title: "Route 6 — Algebraic and Steiner constructions"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:18:35.227359+00:00"
-version: 3
+updated_at: "2026-10-02T13:51:06.903969+00:00"
+version: 6

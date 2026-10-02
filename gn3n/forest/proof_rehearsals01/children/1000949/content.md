@@ -2,159 +2,272 @@
 
 ## Statement
 
-Near-publication rehearsal of the deletion-cover route. From a minimum counterexample, selected exact deletion two-covers either glue, expose a positioned order/support disturbance, or enter the balanced odd-cycle support geometry. The local structural theory is complete up to pending audit; the first unsupported implication is to consume the positioned disturbance, or the odd-cycle monodromy it encodes, into a spanning two-cover (equivalently a spanning ordering of defect span at most two).
+Assume that H is a minimum counterexample to the assertion that every finite boundary 3-tournament has path-cover number at most two.  A selected deletion cover at each vertex determines a graph of Hamiltonian supports.  Compatibility either reconstructs a two-cover, localizes all variation to one non-Hamiltonian support with Hamiltonian vertex deletions, or forces the selected supports into a spanning odd cycle.  The argument reduces the conjecture to a single remaining compression lemma for the resulting order or support discrepancy.
 
 ## Body
 
+# Deletion covers and the support graph
+
+Let \(H\) be a finite boundary \(3\)-tournament. A tight path is a sequence
+\[
+(v_1,\ldots ,v_m)
+\]
+of distinct vertices such that \((v_i,v_{i+1},v_{i+2})\) is a tight triple for every \(1\le i\le m-2\). A path cover is a collection of vertex-disjoint tight paths whose supports partition \(V(H)\), and \(\operatorname{pc}(H)\) denotes the minimum number of paths in a cover.
 
-# Deletion-cover compatibility and global obstruction structure
+Assume throughout that \(H\) is a counterexample of minimum order to
+\[
+\operatorname{pc}(H)\le 2.
+\]
+Then \(\operatorname{pc}(H)=3\). For every \(x\in V(H)\), minimality gives a two-cover of \(H-x\). Neither path can be empty, and \(H-x\) cannot be Hamiltonian, since a Hamilton path of \(H-x\) together with the one-vertex path \(x\) would be a two-cover of \(H\). Thus every deletion cover at \(x\) consists of two nonempty paths.
 
-## 1. The proposed proof
+For each \(x\in V(H)\), choose one deletion cover
+\[
+F_x=P_x\mid Q_x .
+\]
 
-We seek to prove that every finite 3-uniform boundary tournament has path-cover number at most two. Assume for contradiction that H is a counterexample of minimum order.
+## 1. Defect span
 
-The minimum-counterexample calculus is certified. In particular, pc(H)=3, and for every vertex x the deletion H-x has an exact two-path cover. Fix, once and for all, one such cover
+For an ordering \(\pi=(v_1,\ldots ,v_n)\), an index \(i\), \(2\le i\le n-1\), is a defect center if
+\[
+(v_{i-1},v_i,v_{i+1})
+\]
+is non-tight. The defect span of \(\pi\) is \(0\) when there is no defect center and otherwise is
+\[
+\max D-\min D+1,
+\]
+where \(D\) is the set of defect centers.
 
-    F_x = P_x | Q_x
+**Lemma 1.** \(H\) has a two-cover if and only if it has a spanning ordering of defect span at most \(2\).
 
-for each x in V(H). The proof attempts to reconstruct a spanning two-cover of H from the mutual consistency of these deletion states.
+**Proof.** If \(P=(v_1,\ldots ,v_j)\) and \(Q=(v_{j+1},\ldots ,v_n)\) form a two-cover, then all defect centers of the concatenated ordering lie among \(j,j+1\). Conversely, if all defect centers lie among two consecutive indices \(j,j+1\), then
+\[
+(v_1,\ldots ,v_j)\quad\text{and}\quad (v_{j+1},\ldots ,v_n)
+\]
+are tight paths and form a two-cover. \(\square\)
 
-Two selected deletion states are **support-compatible** if, on their common domain, they induce the same bipartition into the two path supports. They are **fully compatible** if, in addition, the induced linear orders on the common support classes agree. The central principle is simple: too much compatibility glues to a global two-cover, whereas failure of compatibility must manifest as a controlled order or support defect.
+Let \(H-x=P\mid Q\), where
+\[
+P=(p_1,\ldots ,p_r),\qquad Q=(q_1,\ldots ,q_s).
+\]
+The ordering
+\[
+(p_1,\ldots ,p_r,x,q_1,\ldots ,q_s)
+\]
+has possible defect centers only at the three positions adjacent to the join. The two outer join triples are necessarily non-tight: if \((p_{r-1},p_r,x)\) were tight, then \((P,x)\mid Q\) would be a two-cover of \(H\), and the other side is symmetric. Hence every deletion cover gives a spanning ordering of defect span \(3\).
 
-The certified defect-span theorem gives the target in its most useful form. If H-x=P|Q, then the spanning order obtained by inserting x between P and Q has defect span three; conversely, a spanning order has path-cover number at most two precisely when its defect structure can be compressed to defect span at most two. Thus every deletion state is already a canonical width-three approximation to the desired conclusion. The task is to use incompatibility between deletion states to remove one unit of width.
+If the middle triple \((p_r,x,q_1)\) is also non-tight, boundary reversal gives
+\[
+(x,p_r,p_{r-1}),\qquad (q_1,x,p_r),\qquad (q_2,q_1,x)
+\]
+tight whenever the displayed vertices exist. Thus
+\[
+(q_2,q_1,x,p_r,p_{r-1})
+\]
+is a tight path. The problem is therefore to reduce a spanning ordering of defect span \(3\) to one of defect span at most \(2\).
 
-Unless explicitly marked otherwise, the structural statements below are certified. Results marked **pending** have proofs in the database but have not yet passed independent audit; they are used optimistically in the strongest version of the rehearsal.
+## 2. Compatibility of deletion covers
 
-## 2. What full compatibility implies
+Two path covers of the same vertex set are support-compatible if they induce the same partition into path supports. They are compatible if they are support-compatible and every two vertices lying in one common support occur in the same relative order in the two path orders. When two deletion covers omit different vertices, these definitions are applied after restricting both covers to their common vertex set.
 
-The basic gluing theorem (1000694) has two consequences.
+**Lemma 2 (compatibility gluing).** Let \(D\subseteq V(H)\), \(|D|\ge4\), and for every \(d\in D\) let \(F_d\) be a cover of \(H-d\) by at most two tight paths. If the covers are pairwise compatible on their common domains, then \(H\) has a two-cover.
 
-First, four pairwise fully compatible exact deletion covers reconstruct a spanning two-cover of H. Therefore a minimum counterexample cannot contain a four-state clique of full compatibility.
+**Proof.** For distinct \(u,v\), choose \(d\in D-\{u,v\}\). The relation saying that \(u,v\) lie in the same path of \(F_d\), together with their relative order when they do, is independent of \(d\) by compatibility. Any three vertices survive in some \(F_d\), so the same-path relation is transitive. It therefore partitions \(V(H)\) into at most two classes; otherwise three representatives from distinct classes survive in one cover.
 
-Second, the relative geometry of two fully compatible deletion states is completely rigid. Suppose F_a and F_b are fully compatible. After identifying the common ordered support, the omitted labels a and b are inserted into that support in either the same slot or adjacent slots. If the insertion slots are separated by at least two positions, the two insertions can be performed simultaneously and H is already covered by two tight paths. Hence only the same-slot and adjacent-slot cases survive.
+Each class inherits a total order. Take three consecutive vertices in one class. A deletion label can be chosen outside them, and in the corresponding \(F_d\) these three vertices occur consecutively in the inherited order. Their ordered triple is tight. Hence every class is a tight path. These one or two paths cover \(H\). \(\square\)
 
-In the adjacent-slot case, all consecutive triples in the combined order are certified except one local triple. Boundary antisymmetry then supplies the reverse tight triple at that location. Thus compatibility does not leave an arbitrary local configuration: it leaves a single, explicitly positioned order defect.
+The next lemma gives the local form of a compatible pair.
 
-A pending global strengthening (1000928) says that the full-compatibility graph of any selected deletion family is K4-minor-free, hence 2-degenerate. This is not needed for the local normal form, but it reinforces the same conclusion: a counterexample cannot hide inside a thick region of mutually compatible deletion states.
+**Lemma 3 (insertion slots).** Let \(F_a\) and \(F_b\) be compatible deletion covers. Then the omitted vertices \(a\) and \(b\) are inserted into the same common support. Their insertion slots in the common order are equal or adjacent. If the slots are adjacent, there is a tight triple reversing the two inserted labels across the unique common vertex between the slots.
 
-## 3. Support compatibility localizes all order variation
+**Proof.** On \(V(H)-\{a,b\}\), compatibility gives two ordered supports, say \(P,Q\). In \(F_a\), the vertex \(b\) is inserted into one of them; in \(F_b\), the vertex \(a\) is inserted into one of them. If they are inserted into different supports, augmenting both supports simultaneously gives a two-cover of \(H\), a contradiction. Thus both are inserted into the same support, say
+\[
+P=(p_1,\ldots ,p_m).
+\]
 
-Assume now that at least three selected deletion states are pairwise support-compatible. The certified support-localization part of 1000694 gives a fixed Hamiltonian path Q and a set X such that, after relabelling,
+If the two slots are separated by at least one entire slot, insert both vertices into \(P\) at their respective positions. No new consecutive triple contains both inserted vertices; each consecutive triple is inherited from \(P\), \(F_a\), or \(F_b\). This again gives a two-cover with \(Q\). Hence the slots are equal or adjacent.
 
-    F_t = (X-{t}) | Q
+In the adjacent case write the common order as \(L,z,R\), with
+\[
+F_b=(L,a,z,R)\mid Q,\qquad F_a=(L,z,b,R)\mid Q.
+\]
+Every consecutive triple of \((L,a,z,b,R)\) is known to be tight except possibly \((a,z,b)\). If this triple were tight, the displayed path together with \(Q\) would cover \(H\) by two paths. Hence \((a,z,b)\) is non-tight, so its boundary flip
+\[
+(b,z,a)
+\]
+is tight. \(\square\)
 
-for every relevant deletion label t, each H[X-{t}] is Hamiltonian, and H[X] itself is not Hamiltonian. The Q-side may be given one fixed Hamilton order. All unresolved variation therefore lies in the Hamiltonian orders of the one-hole sets X-{t}.
+## 3. The support graph
 
-This is already a substantial reduction: support compatibility cannot create two independently moving path systems. It creates one critical support X whose deletion orders fail to assemble into a Hamiltonian order of X.
+Let \(J\) be the graph whose vertices are the distinct supports occurring among the selected covers \(F_x\), with an edge \(e_x\) joining the two supports of \(F_x\). The edge is labeled by \(x\). The graph is simple: its two endpoint supports have union \(V(H)-\{x\}\), so they determine the label \(x\).
 
-The certified endpoint-probe theorem 1000758 then forces structure inside this critical class. Comparing endpoint deletions against the support-compatible family yields either relative-order disagreement or an ordinary edge joining the two support classes of an anchor deletion cover; the nominal three-crossing alternative collapses to such a mixed-support edge by the path-degree argument at the singleton. In particular, a support-compatible family cannot remain both order-coherent and crossing-free.
+**Lemma 4 (support-graph dichotomy).** Either \(J\) is a forest, or \(V(H)\) has odd order \(2k+1\), every vertex of \(H\) occurs as an edge label, and \(J\) is one cycle of length \(2k+1\). In the cyclic case every support has order \(k\).
 
-The certified triangle transport theorem gives the same conclusion from another direction: two compatibility neighbors on the same side of an anchor synchronize sufficiently to produce either a mixed-support endpoint edge or an order reversal. Hence, once support compatibility is present, the only issue is not existence of a defect but its eventual consumption.
+**Proof.** Fix \(z\in V(H)\). On every edge \(e_x\) with \(x\ne z\), exactly one endpoint support contains \(z\); on \(e_z\), if present, neither endpoint contains \(z\). Hence membership of \(z\) gives a bipartition of \(J-e_z\).
 
-## 4. Global support geometry
+Suppose \(J\) contains a cycle \(C\) and \(e_z\in E(C)\). The path \(C-e_z\) joins two supports omitting \(z\), while membership of \(z\) alternates at each edge. Thus \(|C|-1\) is even, so \(C\) is odd.
 
-Associate to the chosen family {F_x} the selected support graph whose vertices are selected path supports and whose edge corresponding to x joins the two supports of F_x.
+If some \(y\in V(H)\) is not a label of \(C\), membership of \(y\) alternates around all edges of the odd cycle, which is impossible. Therefore the labels of \(C\) are all vertices of \(H\). Since edge labels are distinct, no selected edge lies outside \(C\). Every support vertex is incident with a selected edge, so \(J=C\). On each edge, the endpoint support sizes sum to \(n-1\). Alternating this equality around an odd cycle forces all support sizes to be \((n-1)/2\). \(\square\)
 
-The strongest current global classification is pending audit. Theorems 1000929 and 1000937 imply that the selected support system has only two essential forms:
+Two selected covers are support-compatible exactly when their edges of \(J\) share a support vertex.
 
-1. a forest of support relations; or
-2. a spanning odd cycle C_{2k+1}, in which every selected support has order k.
+**Lemma 5.** For distinct labels \(a,b\), the selected covers \(F_a,F_b\) are support-compatible if and only if \(e_a,e_b\) are adjacent in \(J\).
 
-The proof therefore divides at this point.
+**Proof.** A shared endpoint of \(e_a,e_b\) is a common path support, so the restricted support partitions agree.
 
-### 4.1 The forest branch
+Conversely, write \(F_a=A\mid B\) with \(b\in A\), and assume that the restrictions of \(F_a,F_b\) to \(H-\{a,b\}\) have the same support partition. Since neither component of a deletion cover is a singleton, the two restricted classes are \(A-\{b\}\) and \(B\). In \(F_b\), the restored vertex \(a\) must join one of them. If it joins \(B\), then \(A\) and \(B\cup\{a\}\) are disjoint Hamiltonian supports covering \(H\), a contradiction. Hence it joins \(A-\{b\}\), and \(B\) is a support of both selected covers. \(\square\)
 
-In the forest branch, compatibility blocks carry a fixed Hamilton path/order (pending 1000930). The local compatibility and endpoint-probe lemmas can then be propagated along the support tree.
+Thus the graph of support compatibility is the line graph \(L(J)\).
 
-The pending global reduction 1000942, sharpened by pending 1000948, gives the theorem-facing conclusion for an arbitrary selected transversal of deletion covers. Outside the balanced odd cycle, at least one of the following occurs:
+## 4. Support-compatible families
 
-- two selected deletion states are support-compatible but order-incompatible; or
-- for some anchor F_x=P|Q and an endpoint y of P or Q, the selected cover F_y contains an ordinary edge joining surviving vertices of P and Q.
+A large support-compatible family has only one varying support.
 
-These are already positioned disturbances: the disagreement belongs to two deletion states, or the support crossing is tied to an endpoint deletion of a canonical state P,x,Q.
+**Lemma 6 (localization).** Let \(D\subseteq V(H)\), \(|D|\ge3\), and suppose \(\{F_d:d\in D\}\) is pairwise support-compatible. Then there are disjoint sets \(X,Q\) with \(V(H)=X\cup Q\), \(D\subseteq X\), such that
+\[
+F_d=(X-\{d\})\mid Q
+\]
+for every \(d\in D\). The set \(Q\) is Hamiltonian, every \(X-\{d\}\) is Hamiltonian, and \(X\) is not Hamiltonian.
 
-There is one important rounding obstruction inside the forest geometry. Pending 1000938 shows that branching in a reduced support tree can already realize fractional mass two while no pair of selected supports has spanning union. Consequently a proof cannot finish the forest branch merely by choosing two existing selected paths more cleverly. A successful argument must manufacture a new Hamiltonian support, or use the positioned order/crossing data to compress the canonical defect window. This is why the natural consumer is endpoint transport rather than pure support selection.
+**Proof.** For two vertices \(u,v\), choose \(d\in D-\{u,v\}\) and declare \(u\sim v\) when they lie in the same path of \(F_d\). Support compatibility makes the definition independent of \(d\). Transitivity follows by viewing any three vertices in one deletion cover; when the three vertices themselves exhaust \(D\), any vertex outside \(D\) supplies the same comparison. Thus \(\sim\) has two equivalence classes, say \(X,Q\).
 
-Thus, subject to the pending global classification, the forest branch reduces to the following statement.
+The deletion labels cannot occupy both classes. If \(a\in D\cap X\) and \(b\in D\cap Q\), then one selected cover Hamiltonizes \(X\) and another Hamiltonizes \(Q\), giving a two-cover of \(H\). Hence \(D\subseteq X\) after relabeling. The asserted support partitions follow. If \(X\) were Hamiltonian, its Hamilton path together with a Hamilton path on \(Q\) would be a two-cover of \(H\). \(\square\)
 
-**Forest compression target.**  
-Given a canonical deletion state H-x=P|Q together with either a robust order disagreement among selected deletion states or a mixed-support edge exposed by an endpoint deletion, construct a spanning ordering of defect span at most two.
+The following endpoint comparison will be used repeatedly.
 
-No theorem currently proves this implication in full generality.
+**Lemma 7 (endpoint comparison).** Suppose \(H-x=P\mid Q\) is a deletion cover and \(y\) is an endpoint of the displayed path \(Q\). Let \(G_y\) be a deletion cover at \(y\) that is support-incompatible with \(P\mid Q\) on \(H-\{x,y\}\). Put \(B=Q-\{y\}\). Then \(G_y\) has at least two edges joining distinct classes of
+\[
+P\mid B\mid\{x\}.
+\]
+If it has exactly two such edges and none joins \(P\) to \(B\), then \(B\cup\{x\}\) is Hamiltonian.
 
-### 4.2 The balanced odd-cycle branch
+**Proof.** If there were only one edge joining distinct classes, deleting it from the two paths of \(G_y\) would leave three path blocks. The support partition would be one of
+\[
+(P\cup B)\mid\{x\},\qquad (P\cup\{x\})\mid B,\qquad P\mid(B\cup\{x\}).
+\]
+The first gives a two-cover of \(H\) after adjoining the two-vertex path \((x,y)\); the second would make \(P\cup\{x\}\) Hamiltonian and hence give \((P\cup\{x\})\mid Q\); the third is support-compatible with \(P\mid Q\) after deleting \(x\). All are impossible.
 
-Assume the selected supports form the spanning odd cycle C_{2k+1}. This branch is genuinely global and should not be folded into the tree argument.
+Assume there are exactly two interclass edges and neither joins \(P\) to \(B\). Both are incident with \(x\). Cutting them produces four blocks, so precisely one of \(P,B\) is split into two blocks. If \(B\) is split, \(x\) cannot be adjacent in the contracted two-path forest to the unique \(P\)-block, since that would make \(P\cup\{x\}\) Hamiltonian. Hence \(x\) joins the two \(B\)-blocks, making \(B\cup\{x\}\) Hamiltonian. If \(P\) is split, \(x\) cannot join both \(P\)-blocks for the same reason, so it joins the unique \(B\)-block and one \(P\)-block; again \(B\cup\{x\}\) is a tight path. \(\square\)
 
-It is already known, pending audit, that the cycle cannot be locally featureless. Theorem 1000943 says that some length-two transition has a two-deletion disturbance: deleting an internal exchanged label produces either an inherited three-piece crossing or relative-order disagreement in the endpoint-deleted covers. The strengthened transversal theorem 1000948 packages the same conclusion as a positioned three-piece double-deletion crossing.
+Applying the lemma at both endpoints of \(Q\) has the following consequence. If neither endpoint deletion cover contains an edge joining a surviving vertex of \(P\) to a surviving vertex of \(Q\), then both endpoint replacements of \(Q\) by \(x\) are Hamiltonian. Comparing the two insertion positions of \(x\) in the inherited order of \(Q\), either one of the replacement paths has an order disagreement with \(Q\), or the insertion positions combine to a Hamiltonian order on \(Q\cup\{x\}\). The latter would give a two-cover with \(P\). Therefore at least one endpoint comparison yields either an edge joining the two old supports or an order disagreement.
 
-If the overlapping cycle states are fully compatible, the compatible-pair normal form from 1000694 identifies every step-two transition with either a same-slot insertion or an adjacent-slot insertion on a common ordered spine. Every adjacent-slot transition carries a reversing tight triple.
+## 5. The forest case
 
-Pending theorem 1000936 shows that at least k-1 of the step-two transitions are adjacent-slot reversals. The sharper pending theorem 1000945 says more: every adjacent rank generator occurs at least once, and either exactly k-1 reversals occur, one at each rank boundary, or at least k+1 reversals occur. Thus the cyclic branch already contains a global reversal network; proving the existence of one more reversal cannot close it.
+Assume \(J\) is a forest. Let \(e_x=PQ\) be a leaf edge, with \(P\) the leaf vertex of \(J\). If \(y\in Q\), then \(e_y\) cannot share \(Q\), because every support of \(F_y\) omits \(y\), and it cannot share \(P\), because \(P\) is incident only with \(e_x\). Hence \(F_y\) is support-incompatible with \(F_x\).
 
-There is an equivalent order-theoretic description. Pending theorem 1000944 says that the pair-order data on the complement of the ground cycle either come from one global linear order or possess a shortest incoherence witness of one of two forms: an odd-gap directed triangle or a directed C4 supported on two disjoint ground-cycle edges. This is a coordinate description of the same monodromy, not a separate proof route.
+Choose the two endpoints of a Hamiltonian order on \(Q\). Applying Lemma 7 at both endpoints gives the following alternative.
 
-Finally, pending theorem 1000931 identifies the exact integral object needed for closure. The selected supports satisfy precise incidence identities and already admit the correct fractional mass-two certificate. If a tight-path support T is a vertex cover of the ground cycle with |T|=k+1, then T together with one selected support is a spanning two-cover of H. Hence the cyclic branch has the precise residual problem:
+**Proposition 8.** In the forest case, either
+1. two selected deletion covers are support-compatible and have an order disagreement; or
+2. for some selected cover \(H-x=P\mid Q\) and an endpoint \(y\) of \(P\) or \(Q\), the selected deletion cover at \(y\) contains an edge joining surviving vertices of \(P\) and \(Q\).
 
-**Odd-cycle rounding target.**  
-Use the step-two rank monodromy, or its odd-gap triangle/C4 form, to produce a Hamiltonian minimum vertex cover of C_{2k+1}, or directly a spanning ordering of defect span at most two.
+Thus the forest case produces a discrepancy attached to a displayed deletion cover, not merely an unspecified reversal elsewhere in \(H\).
 
-A better fractional estimate cannot substitute for this step; the obstruction is integral.
+## 6. The odd-cycle case
 
-## 5. The two branches meet at the same local interface
+Assume now that \(J\) is the cycle of Lemma 4. Write
+\[
+V(H)=\{d_0,\ldots ,d_{2k}\},
+\]
+and write the support vertices cyclically as \(S_0,\ldots ,S_{2k}\), where \(e_{d_i}=S_iS_{i+1}\). Membership alternation gives
+\[
+S_i=\{d_{i+1},d_{i+3},\ldots ,d_{i+2k-1}\},
+\]
+with indices modulo \(2k+1\).
 
-The forest branch and the disturbed odd-cycle branch both deliver the same kinds of data:
+If two consecutive selected covers have an order disagreement, Proposition 8 has its analogue immediately. Hence suppose consecutive selected covers are compatible. Their common support orders agree, so each \(S_i\) has a Hamilton order \(P_i\) used by both incident deletion covers.
 
-- a support-compatible but order-incompatible pair of deletion states;
-- an endpoint deletion whose chosen cover contains a mixed-support edge relative to an anchor P|Q;
-- or a double-deletion three-piece crossing/reversal carrying explicit deletion provenance.
+### 6.1 Consecutive double deletions
 
-These are exactly the forms needed by the defect-span and endpoint-transport lines. In proof language, we have reached the point at which the canonical width-three order P,x,Q is accompanied by an oriented defect that should permit one of its two independent defect edges to be removed.
+For each \(i\), let \(T_i\) be any two-cover of
+\[
+H-\{d_i,d_{i+1}\},
+\]
+which exists by minimality. Put
+\[
+K_i=S_i-\{d_{i+1}\}=S_{i+2}-\{d_i\}.
+\]
 
-The desired lemma would be something of the following form.
+**Lemma 9.** For some \(i\), either \(T_i\) has an edge joining two distinct nonempty path pieces obtained by deleting an internal exchanged label from one of the incident selected covers, or the two inherited covers of the double deletion have an order disagreement.
 
-**Positioned disturbance compression lemma (open).**  
-Let H be a minimum counterexample and let H-x=P|Q be an exact deletion cover. Suppose the selected deletion family supplies, relative to this state or to a double deletion derived from it, one of the positioned order/support disturbances above. Then H has a spanning ordering whose defect-line matching number is at most one; equivalently, H has a spanning two-path cover.
+**Proof.** Suppose neither event occurs for any \(i\). Then each exchanged label is an endpoint of the relevant support path, and deleting \(d_i,d_{i+1}\) leaves the same ordered supports \(K_i,S_{i+1}\). Let \(\varepsilon_i\in\{L,R\}\) denote the end of \(K_i\) at which \(d_{i+1}\) is restored to obtain \(P_i\), equivalently the end at which \(d_i\) is restored to obtain \(P_{i+2}\).
 
-This is the first genuinely unsupported implication in the general deletion-cover route.
+If \(\varepsilon_{i+2}=\varepsilon_i\), the two successive restorations at that end force the next removed label to equal the preceding one, contradicting the distinctness of the cycle labels. Hence
+\[
+\varepsilon_{i+2}\ne\varepsilon_i
+\]
+for every \(i\). Addition by \(2\) is one cycle modulo \(2k+1\). Following it around the odd number of indices reverses the end an odd number of times and returns to the starting index with the opposite value, a contradiction. \(\square\)
 
-For the odd-cycle branch one may instead attempt the stronger global rounding target of Section 4.2. The local and global formulations are compatible: the cyclic monodromy may ultimately be useful only because it forces several positioned disturbances to synchronize at one canonical defect window.
+### 6.2 Rank transport
 
-## 6. Why the obvious local closures do not work
+For consecutive compatible covers,
+\[
+S_i\cap S_{i+2}=S_i-\{d_{i+1}\}=S_{i+2}-\{d_i\}.
+\]
+Lemma 3 shows that \(P_i\) and \(P_{i+2}\) arise from a common order by inserting \(d_{i+1}\) and \(d_i\) in equal or adjacent slots. An adjacent-slot transition supplies a tight triple reversing the two inserted labels across the intervening common vertex.
 
-Several tempting continuations are already ruled out and should be regarded as mathematical obstructions, not historical curiosities.
+**Lemma 10.** At least \(k-1\) of the \(2k+1\) step-two transitions use adjacent slots. Their number is congruent to \(k-1\pmod 2\), and every adjacent transposition of consecutive ranks \(1,\ldots ,k\) occurs at least once.
 
-A bare order disagreement is insufficient: certified theorem 1000211 already gives order disagreement in every minimum counterexample. What is missing is endpoint placement or synchronization with a canonical deletion join.
+**Proof.** Follow the \(k\) positions of the support order while replacing \(d_{i+1}\) by \(d_i\) and advancing from \(S_i\) to \(S_{i+2}\). An equal-slot transition preserves the rank positions; an adjacent-slot transition applies one simple adjacent transposition. After one circuit, the deterministic replacement of labels induces a \(k\)-cycle on the rank positions. A factorization of a \(k\)-cycle into adjacent transpositions uses every simple generator and has at least \(k-1\) factors. Its parity is \(k-1\), giving the congruence. \(\square\)
 
-A single reversal is also insufficient. The certified counterexample double_inward_endhook_not_absorption01 shows that even both canonical inward endpoint hooks can coexist on a non-Hamiltonian four-set. Likewise astra003adjacentonedefect shows that adjacent double insertion gives, in the bad case, only a one-defect ordering with the reverse triple tight. These are local normal forms, not absorption theorems.
+Thus the odd cycle contains linearly many explicitly located reversals. Their existence is not the remaining difficulty.
 
-Hamiltonicity without order control is insufficient. Certified theorem 1000683 gives a Hamiltonian four-set for which the omitted vertex extends neither endpoint of a displayed Hamiltonian order on the other three vertices. Therefore every gluing argument must preserve the relevant Hamilton order, not merely the support.
+### 6.3 Incidence identities
 
-Boundary antisymmetry may be used only on a single ordered triple. It does not license reversal or cyclic rotation of an entire tight path. Any proposed splice must verify each newly created consecutive triple.
+Let \(C\) be the ordinary cycle on ground vertices \(d_0,\ldots ,d_{2k}\), with edge \(\{d_{i-1},d_i\}\). The support identities are
+\[
+\mathbf 1_{S_i}+\mathbf 1_{S_{i+1}}=\mathbf 1_V-\mathbf 1_{\{d_i\}},
+\qquad
+\sum_i\mathbf 1_{S_i}=k\mathbf 1_V.
+\]
 
-Finally, the support-tree and odd-cycle fractional certificates do not themselves round. Pending 1000938 shows that even a forest can have fractional mass two while no pair of selected paths spans, and pending 1000931 shows that the odd-cycle branch has already reached the exact fractional optimum. The missing mechanism is creation or certification of the correct new integral support.
+Let \(T\) be the support of a tight path that is a vertex cover of \(C\), and write \(|T|=k+r\). Define
+\[
+I(T)=\{i:d_{i-1},d_i\in T\}.
+\]
 
-## 7. Exact stopping point
+**Lemma 11.** One has
+\[
+|I(T)|=2r-1,\qquad
+\mathbf 1_T+\sum_{i\in I(T)}\mathbf 1_{S_i}=r\mathbf 1_V.
+\]
 
-The proof is complete through the structural localization of deletion-cover inconsistency, subject to audit of the pending global classification and monodromy theorems.
+**Proof.** Put \(t_i=\mathbf 1_T(d_i)\) and \(a_i=t_{i-1}+t_i\). Since \(T\) covers every edge of \(C\), \(a_i\in\{1,2\}\), and \(a_i-1\) is the indicator of \(I(T)\). Then
+\[
+\sum_i a_i\mathbf 1_{S_i}
+ =\sum_j t_j(\mathbf 1_{S_j}+\mathbf 1_{S_{j+1}})
+ =|T|\mathbf 1_V-\mathbf 1_T.
+\]
+Subtracting \(\sum_i\mathbf 1_{S_i}=k\mathbf 1_V\) gives the second identity. Summing the \(a_i\) gives
+\[
+2|T|=(2k+1)+|I(T)|,
+\]
+which gives the first. \(\square\)
 
-In the ordinary branch the first unsupported implication is:
+If \(r=1\), Lemma 11 says that \(T\) and one selected support \(S_i\) are disjoint and cover \(V(H)\). Therefore a Hamiltonian vertex cover of the ground cycle of order \(k+1\) gives a two-cover of \(H\).
 
-    positioned deletion-cover order/crossing disturbance
-    => defect-line matching number at most one.
+## 7. The remaining lemma
 
-In the balanced odd-cycle branch one may equivalently stop at:
+The preceding argument reduces the deletion-cover method to the following statement.
 
-    cyclic rank/order monodromy
-    => Hamiltonian minimum vertex cover of the ground cycle
-       or defect-line matching number at most one.
+**Remaining Lemma.** Let \(H\) be a minimum counterexample and let \(H-x=P\mid Q\) be a deletion cover. Suppose that the selected deletion covers yield, relative to \(P\mid Q\) or to a consecutive double deletion,
+- an order disagreement attached to the displayed supports;
+- an edge in an endpoint deletion cover joining surviving vertices of \(P\) and \(Q\); or
+- an edge joining distinct inherited path pieces in the odd-cycle configuration.
 
-Nothing beyond these arrows is presently justified in general.
+Then \(H\) has a spanning ordering of defect span at most \(2\).
 
-## 8. Research handoff
+By Lemma 1, this would contradict the choice of \(H\). In the odd-cycle case it would also suffice to prove that the rank transport of Lemma 10 forces a Hamiltonian vertex cover of the ground cycle of order \(k+1\), since Lemma 11 would then give a two-cover directly.
 
-The strongest viable next target is a **positioned disturbance compression theorem** that consumes an endpoint-tied mixed-support edge, a robust deletion-order disagreement, or a double-deletion three-piece crossing while retaining the canonical order P,x,Q. Such a theorem would simultaneously close the forest branch and provide a local consumer for the odd-cycle monodromy.
+No further production of isolated reversals is required: Lemma 10 already supplies many. The unresolved point is to use their positions to remove one of the two independent defects in the spanning order arising from a deletion cover.
 
-The principal route not to retry without a new ingredient is generic witness production. Order disagreement, reversals, mixed-support crossings, and even linear families of incompatible deletion states are already available. The unresolved mathematics is their synchronized placement and integral consumption.
+## Appendix. Why two selected supports need not suffice in the forest case
 
-For the odd cycle specifically, do not spend effort proving merely that the cycle is disturbed or that it has many reversals; those are already pending theorem-level results. The meaningful remaining target is integral rounding or conversion of the monodromy into the positioned compression lemma above.
+The forest alternative cannot in general be completed by choosing two supports already present in the selected family.
+
+Let \(J\) be a connected selected-support tree, with support \(S_u\) at each vertex \(u\). For vertices \(u,v\), let \(P_{uv}\) be their tree path.
+
+**Proposition A.1.** The union \(S_u\cup S_v\) equals \(V(H)\) if and only if \(P_{uv}\) has even length and every edge outside \(P_{uv}\) is pendant and attached to a vertex of \(P_{uv}\) at odd distance from \(u\).
+
+**Proof.** For an edge label \(e\), membership in \(S_w\) is determined by the parity of the distance from \(w\) to the nearer endpoint of \(e\): the label belongs to \(S_w\) exactly at odd distance. If \(P_{uv}\) has odd length, its first edge label is omitted by both supports. Assume the path has even length. Every label on the path then belongs to exactly one of \(S_u,S_v\). For an edge off the path, the first edge of its branch belongs to both supports exactly when its attachment point is at odd distance from \(u\); a second edge on the same branch would then be omitted by both. This proves the criterion. \(\square\)
+
+Consequently, if branching remains after suppressing degree-two vertices on one side of the tree bipartition and deleting leaves on that side, no two selected supports cover all vertices. Any two-cover must then use a Hamiltonian support not already present among the selected deletion-cover components. This obstruction concerns only selection from the existing support family; it does not obstruct the theorem itself.

@@ -1,198 +1,291 @@
-# Route 2 — Dense-core all-special / ascending-edge rank flow
+# Route 2 — Ascending edges in a dense subgraph
 
 ## Statement
 
-Comprehensive synthesis of the two-thirds upper-bound program based on dense-core normalization, elimination of nonspecial ascending edges by rank layers, and all-special closure.
+Ascending edges are the exceptional incidences in the two-thirds count; rank superlevels, terminal-pair graphs, and rotations reduce the problem to controlling near-top-rank ascending families.
 
 ## Body
 
-# Route 2. Dense-core all-specialness and ascending-edge rank flow
-
-## Goal and setup
-
-This route seeks the two-thirds upper coefficient. Let H be an n-vertex P_ℓ-free linear 3-uniform hypergraph with m edges. For a vertex v let φ(v) be the maximum length of a linear path ending at v, and for an edge e let φ(e) be the maximum length of a linear path ending in e. A nonspecial edge e has a unique entrance x; it is ascending when φ(x)=φ(e)−1, the remaining two vertices being terminals.
-
-The route begins with the standard density-core reduction. If an extremal inequality m≤dn is hereditary, then a counterexample contains an induced subhypergraph of density at least d and minimum degree greater than d. Thus, for a two-thirds theorem, it is enough to work in a dense core with minimum degree just above 2ℓ/3.
-
-The ideal conclusion is that every edge of such a core is special. That conclusion is stronger than necessary. The actual quantitative target is to show that the number of ascending nonspecial edges is lower order, or equivalently that each high-rank vertex supports only a sublinear number of ascending terminal incidences.
-
-## 1. The global defect is exactly the ascending mass
-
-Let A denote the number of ascending nonspecial edges. The basic snake-incidence count gives
-
-3m − A ≤ Σ_v (2φ(v)−1) ≤ (2ℓ−3)n.      (1)
-
-The reason for the single defect A is exact: for an incident pair (v,e), one always has φ(e)≤φ(v)+1, and equality occurs precisely when e is nonspecial ascending and v is its unique entrance. Thus every incidence behaves as in the all-special count except the unique entrance incidence of an ascending edge.
-
-Consequently
-
-m ≤ ((2ℓ−3)/3)n + A/3.      (2)
-
-Hence the leading two-thirds coefficient follows as soon as
-
-A=o(ℓ n).      (3)
-
-A convenient sufficient local statement is the following. Let c(v) be the number of ascending nonspecial edges for which v is a terminal. If c(v)≤g(φ(v)) for every v, then, because each ascending edge has two terminals,
-
-A ≤ (1/2)Σ_v c(v) ≤ (n/2)g(ℓ−1),
-
-and therefore
-
-m ≤ ((2ℓ−3)/3 + g(ℓ−1)/6)n.      (4)
-
-In particular, any uniform bound g(p)=o(p) proves the two-thirds leading coefficient. A square-root bound already suffices with only a lower-order loss. Thus the route does not require literal all-specialness; it requires summable control of the ascending defect.
-
-## 2. Rank superlevels turn ascending edges into flow
-
-For t≥1 define the vertex-rank superlevel
-
-V_t={v:φ(v)≥t}.
-
-Among hyperedges of rank at least t, the edges crossing the cut V_t are exactly the rank-t ascending nonspecial edges: their unique entrance lies outside V_t and their two terminals lie inside V_t. Thus every ascending edge is a boundary-crossing object at exactly one rank.
-
-There are two equivalent ways to encode this flow.
-
-First, orient every ascending edge from its entrance x toward each terminal. Along any directed path in this orientation, vertex rank rises strictly; a directed path of length r therefore yields rank increase at least r and, in particular, a hypergraph path of length at least r.
-
-Second, fix a threshold t and form the graph R_t on terminal vertices by joining the two terminals of every ascending nonspecial edge whose entrance has rank below t and whose terminals have rank at least t. Color the terminal pair by its entrance. Linearity makes this coloring proper. Moreover R_t contains no rainbow t-edge path: such a path would lift through its distinct entrance colors to a hypergraph path of length t whose endpoint ranks contradict the definition of the threshold.
-
-Thus an ascending edge cannot wander arbitrarily through rank space. It either crosses a superlevel, participates in a proper-colored rainbow-free terminal graph, or lies on a strictly rank-increasing directed chain.
-
-A stronger certified form is useful when the entrance-to-terminal rank gap is positive. If an edge e has entrance potential a(e) and the smaller terminal potential p(e)>a(e), then the positive-gap threshold graphs imply the global harmonic estimate
-
-Σ_e (1/a(e) − 1/p(e)) = O(n log ℓ),      (5)
-
-with an explicit certified constant. This already controls edges that make a substantial multiplicative rank jump. Therefore the genuine leading-order difficulty is concentrated where the entrance and terminal ranks are close.
-
-## 3. Local packing near a terminal
-
-Fix a vertex v with p=φ(v). Assign every ascending nonspecial edge e={x,v,u} to a terminal of minimum terminal rank; then φ(u)≥p. Such an assigned edge will be called charged at v.
-
-Every maximum p-edge path ending at v contains x or u, and for distinct charged edges the pairs {x,u} are disjoint. If C_Q(v) denotes the charged edges of rank at most Q, where
-
-⌈(p+2)/2⌉ ≤ Q ≤ p,
-
-then the central-window packing theorem gives
-
-|C_Q(v)| ≤ 4Q−2p−1.      (6)
-
-Equivalently, if the charged ranks are q_1≤⋯≤q_k, then
-
-q_i ≥ ⌈(2p+i+1)/4⌉.      (7)
-
-This already rules out a large low-rank packet at one terminal. A sharper spacing theorem applies to clean entrance-only contacts on a chosen maximum path: if their rank deficit is at least D, then only
-
-O(p/(D+1)+1)
-
-such edges can occur. Hence all but a lower-order part of any large charged family lies in a narrow near-top rank band.
-
-There is an important conditional benchmark here. A suitable four-edge convex spacing inequality for four charged edges at one terminal would imply
-
-c(v)≤3+⌈log_2 p⌉
-
-and hence, by (4),
-
-m ≤ ((2ℓ+⌈log_2(ℓ−1)⌉)/3)n.
-
-So a logarithmic terminal-degree theorem is already enough for the two-thirds leading coefficient. However the required spacing statement is not presently proved, and several tempting stronger variants are false even for clean strict-rise families. The spacing program therefore identifies a sufficient mechanism, not an established closure.
-
-## 4. Rotation reduction of the remaining defect
-
-The rank-flow picture can be combined with longest-path rotations to isolate the surviving obstruction more sharply.
-
-For every nonspecial nonascending edge f with unique entrance x, define
-
-r(f)=⌈φ(x)/(φ(f)−1)⌉−2,
-
-and put R=Σ_f r(f). Then
-
-3m−A+R ≤ Σ_v(2φ(v)−1) ≤ (2ℓ−3)n.      (8)
-
-Thus nonascending nonspeciality already pays an explicit positive correction. The hard mass is ascending.
-
-Now fix for each v a maximum p=φ(v) path P_v ending at v and assign every ascending edge to a minimum-rank terminal v. Apart from at most one last edge per vertex, every assigned edge falls into one of three path-relative types:
-
-- D: both the entrance x and opposite terminal u lie on P_v;
-- X: x lies on P_v and u lies off P_v;
-- U: u lies on P_v and x lies off P_v.
-
-Let B be the double-blocker compensation, and let S_X,S_U be the total numbers of X- and U-edges. Then
-
-A ≤ B+S_X+S_U+n,      (9)
-
-and, writing N=(2ℓ−3)n,
-
-5m+s+R ≤ 2N+S_X+S_U+n,      (10)
-
-where s is the number of special edges.
-
-For every fixed ε>0, the X-edges with
-
-φ(e) ≤ (1−ε)φ(v)
-
-contribute only O_ε(n). Thus the X-obstruction is again forced into the near-top rank band.
-
-The U-edges have a different structure. A terminal-only U-edge gives a length-preserving Pósa rotation of P_v. For a fixed charged pair (P_v,v), the resulting canonical rotated endpoints have potential at least p, and each endpoint is produced by at most two U-edges. Consequently
-
-|U(P_v,v)| ≤ 2|W(P_v,v)|+1,      (11)
-
-where W(P_v,v) is the set of resulting high-potential endpoints.
-
-Equations (8)–(11) reduce the leading-order problem to two related phenomena:
-
-1. near-top clean entrance chords whose rank deficit is too small for the harmonic and spacing bounds to dispose of them; and
-2. large families of high-potential Pósa endpoints whose overlap across different centers has not been controlled.
-
-This is the current strongest certified compression of the route.
-
-## 5. The dense-core stability branch
-
-There is a second organization of the same obstruction. Along a longest path, let U_v be the available terminal capacity at a vertex v and S_v the actually occupied terminal incidence. The exact local identity
-
-U_v−S_v = 2(L−d_H(v))
-
-shows that in a dense minimum-degree core the amount of unused terminal capacity is small whenever d_H(v) is close to the longest-path length L.
-
-This creates a natural dichotomy.
-
-If many vertices have substantial unused capacity, the resulting open blocker defects should support rotations and endpoint expansion. If very few defects remain, the local incidence structure is forced toward a near-saturated, punctured-Steiner-type configuration in which almost every allowable pair is already occupied. The latter regime is highly rigid and is the natural home of the zero-slack and blocker-matching normal forms developed elsewhere in LINP.
-
-This dichotomy is presently a strategy rather than a theorem closing the route. Its value is that it explains why the same two enemies keep reappearing: either rotations must expand, or near-saturation must become globally impossible.
-
-## 6. Known obstructions
-
-Several apparently simpler arguments are already ruled out.
-
-The minimum-degree hypothesis is essential: sparse star-type examples defeat unrestricted all-specialness. The full ascending terminal graph need not be rainbow-P4-free, even inside one equal-potential level, so one cannot apply an ordinary rainbow-path theorem globally. Nor is the ascending terminal graph necessarily a forest or pseudoforest.
-
-The old idea that every proper rank superlevel contributes a free positive boundary defect is false; the correct induced-core identity contains an explicit correction term. A universal tiny common-terminal degree is also false: one vertex can support several ascending terminal edges. Likewise, nonspeciality does not automatically propagate toward the maximum-rank terminal.
-
-Finally, naive four-edge spacing is too strong. There are clean strict-rise charged families violating simple spacing inequalities. Any successful spacing theorem must use the precise charged geometry or an additional certificate, not only the ordered edge ranks.
-
-These fences eliminate the most tempting shortcuts but leave the rank-flow philosophy intact.
-
-## 7. First unsupported implication
-
-The proof reaches the following exact frontier.
-
-**Cross-rank progress target.** In a P_ℓ-free dense core of minimum degree above the two-thirds threshold, prove that every macroscopic family of ascending nonspecial edges must satisfy at least one of the following:
-
-1. it creates a positive proportion of special edges;
-2. it pays a summable rank or blocker defect, enough to make A=o(ℓ n);
-3. its members move monotonically through rank bands into fresh high-potential endpoints or stricter terminal configurations, with bounded global reuse.
-
-Equivalently, it is enough to prove a uniform sublinear terminal bound
-
-c(v)=o(φ(v))
-
-or any theorem implying A=o(ℓ n).
-
-The certified harmonic estimate handles genuine positive gaps, the central-window theorem handles substantial rank deficit, and the rotation reduction turns terminal-only mass into high-potential endpoints. What is not proved is the global termination or bounded-overlap statement for the narrow near-top band. The argument stops there.
-
-## Research handoff
-
-The strongest next target is a theorem controlling overlap of the near-top clean chords and Pósa endpoint packets across centers, or a monotone rank-band transfer theorem showing that repeated failure to become special consumes fresh global resources. A full all-special theorem would close the route, but it is stronger than necessary.
-
-Do not retry unrestricted all-specialness, global rainbow-P4-freeness, free superlevel-defect summation, or generic four-edge spacing. The rank-flow machinery has already isolated the useful part of those ideas. The remaining issue is theorem-wide progress and reuse, not another local constant improvement.
-
-Status note: the global defect identity, threshold graphs, positive-gap harmonic estimate, central packing, and rotation localization used above are certified. The dense-core defect-stability dichotomy and the strongest four-edge spacing formulation remain proposal-level ingredients and have been marked as such.
+# Ascending edges in a dense subgraph
+
+Let \(H\) be a finite linear \(3\)-graph. We use the notation \(\phi(e,v)\), \(\phi(e)\), and \(\phi(v)\) from the preceding rehearsal. A nonspecial edge \(e\) with unique entrance \(x\) is ascending when
+\[
+\phi(x)=\phi(e)-1.
+\]
+Let \(A\) denote the number of ascending edges.
+
+This line of argument seeks the asymptotic bound
+\[
+|E(H)|\le \left(\frac{2}{3}\ell+o(\ell)\right)|V(H)|
+\]
+for \(P_\ell^{(3)}\)-free linear \(3\)-graphs. The essential point is that the only incidences that exceed the ordinary vertex-rank bound are the unique-entrance incidences of ascending edges.
+
+## 1. Ascending edges are the incidence defect
+
+### Lemma 1
+For every incident pair \(v\in e\),
+\[
+\phi(e)\le \phi(v)+1.
+\]
+Equality holds if and only if \(e\) is ascending and \(v\) is its unique entrance.
+
+#### Proof
+If \(e\) is special, then \(v\) is terminal at \(e\), so \(\phi(v)\ge\phi(e)\).
+
+Suppose \(e\) is nonspecial with unique entrance \(x\) and edge rank \(q\). Each terminal vertex is the last vertex of a \(q\)-edge path ending in \(e\), and therefore has vertex rank at least \(q\). Deleting \(e\) from a longest path ending in \(e\) shows \(\phi(x)\ge q-1\). Thus \(q\le\phi(v)+1\) at every incidence. Equality can occur only at the unique entrance, and there it is exactly the defining equality for an ascending edge. ∎
+
+### Lemma 2
+If \(H\) has \(m\) edges and \(n\) vertices, then
+\[
+3m-A\le \sum_{v}(2\phi(v)-1). \tag{1}
+\]
+Consequently, if \(H\) is \(P_\ell^{(3)}\)-free,
+\[
+3m-A\le (2\ell-3)n. \tag{2}
+\]
+
+#### Proof
+Fix \(v\) and put \(p=\phi(v)\). Choose a maximum \(p\)-edge path \(P\) with last vertex \(v\). Every incident edge \(e\) with \(\phi(e)\le p\), except possibly the last edge of \(P\), must contain a vertex of \(V(P)\) outside the last edge; otherwise it can be appended to a suitable final segment of \(P\), producing a path longer than \(\phi(e)\). Distinct incident edges give distinct such vertices by linearity. There are \(2p-2\) vertices outside the last edge, so at most \(2p-1\) incident edges have edge rank at most \(p\).
+
+By Lemma 1, the only remaining incident edges are ascending edges whose unique entrance is \(v\). Summing the bound \(2\phi(v)-1\) over all vertices therefore counts every edge three times except that each ascending edge loses exactly its unique-entrance incidence. This proves (1). If \(H\) is \(P_\ell^{(3)}\)-free, then \(\phi(v)\le\ell-1\), which gives (2). ∎
+
+Thus the two-thirds bound follows once \(A=o(\ell n)\).
+
+## 2. Rank superlevels
+
+For \(t\ge1\), put
+\[
+V_t=\{v:\phi(v)\ge t\}.
+\]
+
+### Lemma 3
+Let \(e\) have edge rank \(q\).
+
+1. If \(q>t\), then every vertex of \(e\) lies in \(V_t\).
+2. If \(q=t\), then \(e\) meets \(V(H)\setminus V_t\) if and only if \(e\) is ascending. In that case its unique entrance lies outside \(V_t\), and both terminal vertices lie in \(V_t\).
+
+#### Proof
+If \(e\) is special, every vertex is terminal at \(e\), hence has vertex rank at least \(q\).
+
+If \(e\) is nonspecial with unique entrance \(x\), then the two terminal vertices have rank at least \(q\), while \(\phi(x)\ge q-1\). Therefore \(q>t\) implies all three ranks are at least \(t\). When \(q=t\), the unique entrance lies outside \(V_t\) exactly when \(\phi(x)=t-1\), which is exactly the ascending condition. ∎
+
+Accordingly, ascending edges are precisely the boundary edges of the rank superlevels at their own edge rank.
+
+## 3. Properly colored terminal-pair graphs
+
+Fix \(t\ge1\). Form a graph \(R_t\) as follows. For every nonspecial edge
+\[
+e=\{x,u,v\}
+\]
+whose unique entrance satisfies \(\phi(x)<t\) and whose two terminal vertices satisfy
+\[
+\phi(u),\phi(v)\ge t,
+\]
+put the graph edge \(uv\) in \(R_t\) and color it by \(x\).
+
+### Lemma 4
+The coloring of \(R_t\) is proper, and \(R_t\) contains no rainbow path with \(t\) edges.
+
+#### Proof
+If two graph edges incident with \(u\) had the same color \(x\), the corresponding hyperedges would both contain \(u\) and \(x\), contrary to linearity.
+
+Suppose
+\[
+v_0v_1\cdots v_t
+\]
+were a rainbow \(t\)-edge path in \(R_t\), with edge \(v_{i-1}v_i\) colored \(x_i\). The associated hyperedges are
+\[
+e_i=\{x_i,v_{i-1},v_i\}.
+\]
+The colors \(x_i\) are distinct and have vertex rank below \(t\), whereas every \(v_i\) has vertex rank at least \(t\). Hence no color equals a path vertex. Properness and linearity then imply that
+\[
+e_1,\ldots,e_t
+\]
+form a linear \(t\)-edge path. The vertex \(x_t\) is private in the last hyperedge, so the path can be oriented with last vertex \(x_t\). This gives \(\phi(x_t)\ge t\), a contradiction. ∎
+
+There is a useful summation consequence.
+
+### Corollary 5
+For a nonspecial edge \(e\), let \(a(e)\) be the vertex rank of its unique entrance and let
+\[
+p(e)=\min\{\phi(u),\phi(v)\}
+\]
+for its two terminal vertices. Then the edges with \(a(e)<p(e)\) satisfy
+\[
+\sum_e\left(\frac1{a(e)}-\frac1{p(e)}\right)=O(n\log\ell) \tag{3}
+\]
+in every \(P_\ell^{(3)}\)-free linear \(3\)-graph.
+
+#### Proof
+An edge with entrance rank \(a\) and minimum terminal rank \(p>a\) occurs in \(R_t\) precisely for
+\[
+a<t\le p.
+\]
+Therefore
+\[
+\frac1a-\frac1p
+=
+\sum_{t=a+1}^{p}\frac1{t(t-1)}.
+\]
+Summing over the edges and reversing the order of summation gives
+\[
+\sum_e\left(\frac1{a(e)}-\frac1{p(e)}\right)
+=
+\sum_{t\ge2}\frac{|E(R_t)|}{t(t-1)}.
+\]
+A rainbow-path extremal bound for properly colored graphs with no rainbow \(t\)-edge path gives \(|E(R_t)|=O(tn)\). Since \(t\le\ell-1\), the right-hand side is \(O(n\log\ell)\). ∎
+
+Thus edges with a substantial entrance-to-terminal rank gap have bounded total harmonic mass. The unresolved contribution must concentrate near equal ranks.
+
+## 4. A sufficient common-terminal bound
+
+For a vertex \(v\), let
+\[
+c(v)=|\{e:e\text{ is ascending and }v\text{ is terminal at }e\}|.
+\]
+
+### Proposition 6
+Suppose \(g\) is nondecreasing and
+\[
+c(v)\le g(\phi(v))
+\]
+for every vertex. Then every \(P_\ell^{(3)}\)-free linear \(3\)-graph satisfies
+\[
+m\le
+\left(
+\frac{2\ell-3}{3}
++
+\frac{g(\ell-1)}6
+\right)n. \tag{4}
+\]
+In particular, \(g(p)=o(p)\) implies the two-thirds leading coefficient.
+
+#### Proof
+Every ascending edge has exactly two terminal vertices, so
+\[
+2A=\sum_v c(v)\le ng(\ell-1).
+\]
+Substitute this in (2). ∎
+
+Hence full specialness is stronger than necessary: a sublinear common-terminal bound already suffices.
+
+## 5. Longest-path decomposition of the remaining ascending edges
+
+Choose for every vertex \(v\) a maximum path
+\[
+P_v=(g_1,\ldots,g_p),\qquad p=\phi(v),
+\]
+with last vertex \(v\). Assign each ascending edge
+\[
+e=\{x,u,v\}
+\]
+to a terminal of smaller vertex rank, breaking ties arbitrarily. Thus, if \(e\) is assigned to \(v\),
+\[
+\phi(u)\ge\phi(v)=p. \tag{5}
+\]
+
+Except when \(e\) is the last edge of \(P_v\), every maximum \(p\)-edge path ending at \(v\) contains \(x\) or \(u\). Indeed, otherwise \(e\) can be appended after \(P_v\), contradicting maximality. Thus every assigned edge falls into one of the following three classes:
+\[
+\begin{array}{ll}
+D:& x,u\in V(P_v),\\[2mm]
+X:& x\in V(P_v),\ u\notin V(P_v),\\[2mm]
+U:& u\in V(P_v),\ x\notin V(P_v).
+\end{array}
+\tag{6}
+\]
+
+The class \(D\) is controlled by double intersections with the chosen paths. The other two classes have more useful structure.
+
+### Lemma 7
+Fix \(\varepsilon>0\). Among the edges in class \(X\) assigned to a fixed vertex \(v\), only \(O_\varepsilon(1)\) can satisfy
+\[
+\phi(e)\le (1-\varepsilon)\phi(v). \tag{7}
+\]
+
+#### Proof
+For an edge in class \(X\), the intersection of \(e\) with \(P_v\) is exactly \(\{x,v\}\). Order such intersections along \(P_v\). If two unique entrances occur far enough apart, the two corresponding edges can replace an interval of \(P_v\), producing a path that ends at one entrance and is too long for its vertex rank. Quantitatively, if the later edge has edge-rank deficit
+\[
+D=\phi(v)-\phi(e),
+\]
+then successive admissible entrance positions must be separated by at least \(D+1\), up to an absolute boundary term. Hence only
+\[
+O\!\left(\frac{\phi(v)}{D+1}+1\right)
+\]
+such edges can occur. Under (7), \(D\ge\varepsilon\phi(v)\), which gives \(O_\varepsilon(1)\). ∎
+
+Thus a leading-order class \(X\) family must have edge rank \((1-o(1))\phi(v)\).
+
+The class \(U\) creates many alternative last vertices by rotation.
+
+### Lemma 8
+Let \(U(v)\) be the class \(U\) edges assigned to \(v\). There is a set \(W(v)\) of vertices with
+\[
+\phi(w)\ge\phi(v)\qquad (w\in W(v))
+\]
+such that
+\[
+|U(v)|\le 2|W(v)|+1. \tag{8}
+\]
+
+#### Proof
+Let \(e=\{x,u,v\}\in U(v)\), and let \(j(e)\) be the first index for which \(u\in g_{j(e)}\). Since \(x\notin V(P_v)\), the edge \(e\) can replace the suffix immediately after \(g_{j(e)}\), producing a \(\phi(v)\)-edge path with new last vertex
+\[
+w(e)=g_{j(e)+1}\cap g_{j(e)+2}.
+\]
+Hence \(\phi(w(e))\ge\phi(v)\).
+
+Different indices \(j\) give different vertices \(w(e)\). By linearity, distinct edges assigned to \(v\) have distinct opposite terminals \(u\). Along a linear path, at most two vertices have their first occurrence in a given \(g_j\) for \(j\ge2\), and at most three do so in \(g_1\). Therefore at most two edges of \(U(v)\) give the same \(j\), apart from one boundary excess. This yields (8). ∎
+
+Lemmas 7 and 8 reduce the unresolved ascending mass to two phenomena:
+
+1. many edges of edge rank \(p-o(p)\) whose unique entrance lies on a maximum \(p\)-edge path;
+2. many alternative last vertices of rank at least \(p\), produced from edges whose opposite terminal lies on that path.
+
+## 6. Directed rank growth
+
+There is a complementary global representation. For every ascending edge
+\[
+e=\{x,u,v\}
+\]
+with unique entrance \(x\), draw the arcs
+\[
+x\to u,\qquad x\to v.
+\]
+
+### Lemma 9
+Along every directed arc \(x\to y\),
+\[
+\phi(y)\ge\phi(x)+1.
+\]
+Consequently a directed path of length \(r\) forces a vertex of rank at least \(r\), and therefore forces a linear hypergraph path of length at least \(r\).
+
+#### Proof
+If \(e\) has edge rank \(q\), then \(\phi(x)=q-1\), while each terminal vertex has rank at least \(q\). Iteration proves the first assertion. The second follows from the definition of vertex rank. ∎
+
+Thus repeated movement through ascending edges cannot continue indefinitely without increasing rank.
+
+## 7. The remaining problem
+
+The preceding lemmas leave one theorem to prove.
+
+### Open problem
+Show that, in a \(P_\ell^{(3)}\)-free linear \(3\)-graph, the near-top-rank families isolated by Lemmas 7 and 8 cannot occur with total size \(\Theta(\ell n)\).
+
+Any of the following would suffice:
+
+1. \(c(v)=o(\phi(v))\) uniformly, by Proposition 6;
+2. a bounded-multiplicity theorem for the vertices \(W(v)\) in Lemma 8;
+3. a rank-growth theorem showing that repeated near-top edges produce directed paths whose length contradicts \(\phi\le\ell-1\);
+4. a proof that a \(>(2\ell/3)\)-core contains no nonspecial edge.
+
+The last statement is the strongest of these sufficient conditions. The first three are weaker and already give the same leading coefficient.
+
+## 8. Obstructions to simpler arguments
+
+Several natural strengthenings are false.
+
+The terminal-pair graph of all ascending edges need not be rainbow-\(P_4\)-free, even when all terminal vertices on the graph path have the same vertex rank. It need not be a forest or a pseudoforest. Hence the rank parameter cannot be discarded.
+
+A common terminal may support several ascending edges, so a constant common-terminal bound is false in this generality.
+
+Finally, the rank-superlevel decomposition does not give a free positive error term at every threshold. The contribution of an induced superlevel must be counted with its exact boundary term. Consequently independent estimates at separate thresholds cannot simply be added.

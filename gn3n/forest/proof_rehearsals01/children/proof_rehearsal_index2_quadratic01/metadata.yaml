@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "1be7778ff2e4e3b4fde5bbaa8f8a8e4755d53a8555159510f7aafb5aedcc442e"
+body_sha256: "8ba8e17b8c2f38d305f3e000a2e91ef5883b16bc5b5e24190fbbaf37d76ffe05"
 created_at: "2026-10-02T02:23:36.650889+00:00"
 id: "proof_rehearsal_index2_quadratic01"
 last_elevation_revision: null
-last_substantive_worker_id: 1285
+last_substantive_worker_id: 1286
 legacy_id: null
 lifecycle_status: "active"
-math_version: 6
+math_version: 7
 mathematical_status: "proposal"
 metadata:
   anti_backtracking_map: true
@@ -61,15 +61,16 @@ research_interface:
 research_level: "proof_level"
 semantic_container_text: null
 simplified_statement: "Phi normalizes trapped three-covers until size information is exhausted. The unique-small plateau is now sharpened to a finite bounded endgame—pc2 square/overlap/matching-block six-shell, positioned endpoint reversal, or doubled reverse barrier—while the unresolved theorem is still global disturbance -> defect span <=2."
-statement_sha256: "0b72e3bc995e26ff7a3eb5a9740bc5785a07980e8f4544db1e974fb43696f231"
+statement_sha256: "3da5630d2ae311f20962f82f7479d267ef680013b2fc5b4ce7a260c40210d95b"
 substantive_worker_ids:
   - 1231
   - 1257
   - 1285
+  - 1286
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Proof rehearsal II — quadratic potential and minimal three-cover reconfiguration"
+title: "Proof rehearsal II — quadratic potential and pairwise repartition"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:02:50.549715+00:00"
-version: 37
+updated_at: "2026-10-02T13:25:40.55708+00:00"
+version: 38

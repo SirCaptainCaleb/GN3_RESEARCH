@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "74227f904e2aa58502511551a4b32ce884fd914c7c854f233708393cd03b4b00"
+body_sha256: "3ae9f9ada6fb59a509d72f2785fb7084cd74729fb9fe220f70c18cbc68fbf602"
 created_at: "2026-10-02T04:36:25.585521+00:00"
 id: "linp_route03"
 last_elevation_revision: null
 last_substantive_worker_id: 351
 legacy_id: null
 lifecycle_status: "active"
-math_version: 3
+math_version: 5
 mathematical_status: null
 metadata:
   include_uncertified_major_results: true
@@ -32,15 +32,15 @@ research_interface:
     - "coordinator global synthesis"
 research_level: "working_unit"
 semantic_container_text: null
-simplified_statement: "Rotations/terminal-pair cycles → special-edge density or bounded cycle rank → improved snake hinge."
-statement_sha256: "4649ea9677f1e987b2dc5449a4b1a9acb484b63fa7fa70d35bbb02710f35be5b"
+simplified_statement: "Terminal-pair fundamental cycles + longest-path rotations → cycle-rank bound → improved upper bound."
+statement_sha256: "b2b618da0ece540a5dd37035e4e65699f4ef11dbc454628885bf961d97d76b12"
 substantive_worker_ids:
   - 348
   - 351
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Route 3 — Rotation-expansion and terminal-pair cycle rank"
+title: "Route 3 — Terminal-pair cycles and rotations"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:15:47.835167+00:00"
-version: 3
+updated_at: "2026-10-02T13:51:06.903969+00:00"
+version: 5

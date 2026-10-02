@@ -1,179 +1,232 @@
-# Proof rehearsal III — defect-span and spanning-order compression
+# Proof rehearsal III — defect lines and spanning-order compression
 
 ## Statement
 
-Near-publication rehearsal of the defect-span route. The defect-line identity turns the two-cover theorem into the problem of reducing a spanning order from two independent defect edges to one. Certified normalization identifies the width-three state with a deletion cover and reduces its local geometry to the 101 or 111 central configuration. The 101 fixed-label branch and the universal four-window/five-side branch now both reach, subject to pending second-layer results, a reachable endpoint-edge reversal or endpoint-aligned Hamiltonian 4/5 support. The first unsupported implication is to consume that positioned obstruction into boundary absorption, a two-cover, or defect-line matching number at most one.
+Let H be a minimum counterexample. A spanning ordering has a minimum number of contiguous tight-path pieces equal to one plus the matching number of its defect line. Hence the conjecture is equivalent to finding a spanning ordering whose defect line has matching number at most one. An ordering of minimum defect span three is precisely a deletion-cover ordering P,x,Q. Transport of the fixed deleted vertex and transport of Hamiltonian four- and five-vertex supports reduce the argument to a displayed end-edge reversal or an endpoint-aligned Hamiltonian support with two-coverable complement.
 
 ## Body
 
+# Defect lines and spanning-order compression
+
+Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\).
+
+For a spanning ordering \(\pi=(v_1,\ldots ,v_n)\), call \(i\), \(2\le i\le n-1\), a defect center when
+\[
+(v_{i-1},v_i,v_{i+1})
+\]
+is non-tight. The defect line \(L_\pi\) has vertices \(1,\ldots ,n-1\), representing the cuts between consecutive vertices, and has the edge \(\{i-1,i\}\) for each defect center \(i\).
+
+Let \(c(\pi)\) be the minimum number of consecutive intervals into which \(\pi\) can be partitioned so that each interval is a tight path.
+
+## 1. The defect-line identity
+
+**Lemma 1.**
+\[
+c(\pi)=1+\tau(L_\pi)=1+\nu(L_\pi).
+\]
+
+**Proof.** A set \(C\) of cuts partitions \(\pi\) into tight paths exactly when, for every defect center \(i\), at least one of the adjacent cuts \(i-1,i\) belongs to \(C\). Thus \(C\) is a vertex cover of \(L_\pi\), and
+\[
+c(\pi)=1+\tau(L_\pi).
+\]
+The graph \(L_\pi\) is a subgraph of a path and is therefore bipartite, so \(\tau(L_\pi)=\nu(L_\pi)\). \(\square\)
+
+Hence \(H\) has a two-cover if and only if some spanning ordering satisfies
+\[
+\nu(L_\pi)\le1.
+\]
+
+If the defect centers occur in maximal consecutive runs of lengths \(r_1,\ldots ,r_s\), then
+\[
+\nu(L_\pi)=\sum_{j=1}^s\left\lceil\frac{r_j}{2}\right\rceil.
+\]
+In particular, \(c(\pi)=3\) exactly when there is one run of length three or four, or two separated runs, each of length one or two.
+
+## 2. Defect span three is a deletion-cover ordering
+
+The defect span of \(\pi\) is \(0\) if there is no defect center and otherwise is
+\[
+\max D(\pi)-\min D(\pi)+1.
+\]
+
+A deletion cover
+\[
+H-x=P\mid Q
+\]
+gives the spanning ordering \(P,x,Q\), whose possible defect centers are the three positions adjacent to the join. The two outer join triples are non-tight, since otherwise \(x\) could be appended to one of the two paths and \(H\) would have a two-cover.
+
+Conversely:
+
+**Lemma 2.** If \(\pi=(v_1,\ldots ,v_n)\) has defect span \(3\), and \(i\) is its leftmost defect center, then with
+\[
+x=v_{i+1},\qquad
+P=(v_1,\ldots ,v_i),\qquad
+Q=(v_{i+2},\ldots ,v_n)
+\]
+the paths \(P,Q\) form a deletion cover of \(H-x\), and \(\pi=P,x,Q\).
+
+**Proof.** No defect center occurs before \(i\) or after \(i+2\). Hence every internal triple of \(P\) and \(Q\) is tight. \(\square\)
+
+There are two cases. If the middle join triple
+\[
+(v_i,x,v_{i+2})
+\]
+is tight, the central three vertices form a tight path. If it is non-tight, then all three join triples are non-tight, and boundary reversal gives the tight five-vertex path
+\[
+(v_{i+3},v_{i+2},x,v_i,v_{i-1})
+\]
+whenever the displayed vertices exist.
+
+Thus every minimum-span ordering is a deletion-cover ordering whose central part is a Hamiltonian three-set or a Hamiltonian five-set.
+
+## 3. Transport with the deleted vertex fixed
+
+Assume the middle join is tight. Write
+\[
+H-x=P\mid Q.
+\]
+Move the last vertex of \(P\) across \(x\) toward \(Q\). If all new consecutive triples are tight, this produces another deletion cover of the same \(H-x\), with component orders \((|P|-1,|Q|+1)\). At the first failed move, the failed triple reverses and combines with the inherited neighboring triples to give a Hamiltonian four-set whose complement is covered by the remaining prefix and suffix.
+
+**Lemma 3.** Repeating this move in one direction terminates with either
+1. a deletion cover of the same \(H-x\) having one path of order \(3\); or
+2. a Hamiltonian four-set whose complement has a two-cover.
+
+**Proof.** Every successful move decreases the chosen component order by one and preserves \(x\). The move can therefore succeed at most until that component has order \(3\). If it fails earlier, the preceding paragraph gives (2). \(\square\)
+
+The three-vertex-side case contains a stronger transport.
+
+Let
+\[
+P=(p_0,p_1,p_2),\qquad Q=(q_0,\ldots ,q_s),\qquad
+X=V(P)\cup\{x\}.
+\]
+
+**Lemma 4.** Suppose \(s\ge6\). Then at least two vertices \(z\in X\) have all six tight triples
+\[
+(q_1,q_0,z),\ (q_2,q_1,z),\ (q_3,q_2,z),
+\]
+\[
+(z,q_s,q_{s-1}),\ (z,q_{s-1},q_{s-2}),\ (z,q_{s-2},q_{s-3}).
+\]
+For either such \(z\), there is a sequence of pairwise repartitions in which \(z\) is retained while a two-coverable complementary support is transported from the left end of \(Q\) to the right end.
+
+**Proof.** The set \(X\) is non-Hamiltonian, since otherwise \(X\mid Q\) would two-cover \(H\). The sets \(X\cup\{q_0\}\) and \(X\cup\{q_s\}\) are also non-Hamiltonian, because their complements are inherited tight paths.
+
+Consider \(X\cup\{q_0,q_s\}\). Its two deletions by \(q_0,q_s\) are non-Hamiltonian. The remaining four vertex deletions are Hamiltonian; otherwise the six-vertex Hamiltonian-deletion count would be violated. Hence, for every \(z\in X\),
+\[
+(X-\{z\})\cup\{q_0,q_s\}
+\]
+is Hamiltonian. Its complement
+\[
+\{z,q_1,\ldots ,q_{s-1}\}
+\]
+cannot be Hamiltonian, so \(z\) cannot be inserted at either end of the inherited path \((q_1,\ldots ,q_{s-1})\). Boundary reversal gives
+\[
+(q_2,q_1,z),\qquad(z,q_{s-1},q_{s-2}).
+\]
+
+Apply the same argument to the six-sets \(X\cup\{q_0,q_1\}\) and \(X\cup\{q_{s-1},q_s\}\). At least three choices of \(z\in X\) work on each side, so at least two choices work on both sides. Their complementary non-Hamiltonian paths give the four additional tight triples displayed above.
 
-# Defect-span and spanning-order compression
-
-## 1. The proposed proof
-
-Let H be a minimum counterexample to the assertion that every finite 3-uniform boundary tournament has a spanning cover by at most two tight paths. By the certified minimum-counterexample calculus, pc(H)=3.
-
-For a spanning ordering
-
-    pi = (v_1,...,v_n),
-
-call i a defect center when the consecutive triple (v_i,v_{i+1},v_{i+2}) is not tight. The defect line L_pi is the graph on the cuts between consecutive positions, with an edge across the two cuts adjacent to each defect center. The certified identity 1000666 states that the minimum number c(pi) of contiguous tight-path pieces into which pi splits is
-
-    c(pi) = 1 + nu(L_pi),
-
-where nu denotes matching number.
-
-Thus H has a spanning two-cover as soon as we can find a spanning order with
-
-    nu(L_pi) <= 1.
-
-In a minimum counterexample, every optimal spanning order has three path pieces, so the obstruction is exactly one unit larger: the defect line contains a matching of size two. The route seeks to compress those two independent defects into one.
-
-The relevant width-three certificate has a certified normal form. Theorems defectspanisdeletion and defectcanonical35_recomp01 identify a minimum defect-span-three order with an exact one-vertex deletion cover
-
-    H-x = P | Q
-
-written as a spanning order with x inserted between the two tight paths. Hence the defect-span and deletion-cover formulations are not separate problems: they describe the same canonical state.
-
-All results below are certified unless explicitly marked **pending**.
-
-## 2. The canonical central geometry
-
-Around the inserted label x, the minimum width-three order has only two local forms.
-
-In the **101 state**, the middle join through x is tight. The central bridge has order three. This case retains unusually strong provenance: the same omitted label x and the inherited orders of P and Q can be followed under transport.
-
-In the **111 state**, the middle join is defective. Boundary antisymmetry then yields the canonical reversed central five-path. This case retains a positioned five-vertex side and explicit reversal data.
-
-There is also a route-independent bounded-window normalization. Certified theorem 1000006 rules out the isolated three-edge cyclic matching geometry, and 1000458 gives a double-wrap rotation for every deletion singleton lift. The certified cyclic transport theorem then produces a Hamiltonian four-window whose complement has path-cover number two.
-
-Therefore every canonical width-three state enters one of two mathematical continuations:
-
-1. exploit the fixed deletion label in the 101 state; or
-2. pass to the universal bounded-window/reversal machinery.
-
-The proof branches here and nowhere earlier.
-
-## 3. The 101 branch: transport one fixed defect label
-
-The special strength of 101 is that the same omitted label survives the transport.
-
-The certified finite-transport theorem defect101_finite_transport01 iterates the local 101 slide. It terminates in one of two states:
-
-- another exact deletion cover H-x=P|Q in which one displayed side has order three; or
-- a blocked slide exposing a Hamiltonian four-window with an inherited two-path complement.
-
-The second outcome has already entered the universal bounded-window branch. It remains to understand the three-side outcome.
-
-Certified theorem threeside01 supplies persistent fixed-label transport through four overlapping seven-vertex shells. At least two persistent defect labels can be moved from one end of the long path to the other while preserving the same deletion label. Thus the defect is not merely movable locally; it can be carried across a macroscopic portion of the spanning order.
-
-The strongest continuation is pending audit. Theorems 1000946, 1000950, and 1000951 show respectively that:
-
-- the shell transport remains in the same pairwise-repartition component as the original deletion state;
-- every shell transition lies above a 5|2 -> 4|3 strict-descent diamond;
-- the lower 4|3 states glue into a left-to-right constant-Phi corridor carrying one persistent label.
-
-The next pending layer, 1000953, reduces failure of synchronized second-layer descent to three degree-four core graphs: 2K2, P4, or K1,3. Those graphs are no longer the strongest endpoint. Pending theorems 1000954-1000956 continue the argument:
-
-- failure of synchronized second-layer descent produces relative-order disagreement between reachable Hamiltonian four-sides in the same fixed-defect component;
-- that disagreement yields a literal reversing tight triple on an edge of a reachable four-side;
-- internal-edge reversal cases are absorbed into the standard small-window machinery.
-
-Consequently, subject to audit, the entire fixed-label branch reaches exactly one of:
-
-1. synchronized strict second-layer descent;
-2. a reversal of an end edge of a reachable Hamiltonian four-side; or
-3. a proper endpoint-aligned Hamiltonian four- or five-support with path-cover-two complement.
-
-At a componentwise minimum the first alternative is contradictory. The 101 branch therefore feeds the same positioned bounded obstruction that arises from the universal branch.
-
-## 4. The universal bounded-window branch
-
-The blocked 101 outcome and essentially all of 111 enter the same machinery.
-
-Let W be a Hamiltonian four-set with exact two-path complement P|Q. The certified four-window transport theorem 1000911 says, for n>14, that this state yields one of:
-
-- strict quadratic-potential descent;
-- a Hamiltonian four-window at distance one, again with path-cover-two complement;
-- an endpoint-aligned Hamiltonian support of order four or five.
-
-Thus a four-window cannot remain an isolated local witness. It either descends or migrates until the bounded support becomes aligned with a displayed endpoint.
-
-The 111 state carries a five-side instead. Certified theorem five_side_arbitrary_escape01 gives the parallel conclusion: a five-side beside a sufficiently long path yields strict Phi-descent, an equal-size endpoint/support exchange, or a tight triple reversing an edge of the displayed path.
-
-These theorems have the same logical purpose. They take a bounded central obstruction and move it toward an endpoint-sensitive configuration. A generic interior reversal or an arbitrary small Hamiltonian set is not the endpoint of the proof; the relevant output is a reversal of a displayed end edge or an endpoint-aligned support with its pc2 complement still attached.
-
-The only finite-order qualification in this branch is the residue n<=14 left by 1000911. Any proof that closes the large-order branch must either treat this residue separately or import a certified small-order argument.
-
-## 5. Convergence of the two branches
-
-After the pending fixed-label refinements, both branches reach the same state:
-
-- a reachable Hamiltonian four-side carrying a reversal of one of its end edges; or
-- an endpoint-aligned Hamiltonian support of order four or five with path-cover-two complement.
-
-This is substantially stronger than the unconditional existence of a reversal. Certified theorem 1000164 already gives a genuine reversing tight triple somewhere in every minimum counterexample. What the defect-span route contributes is **placement**: the reversal or small support is tied to a canonical deletion/defect state and, in the 101 branch, to a fixed omitted label and same-component transport history.
-
-The remaining theorem should therefore be stated directly in defect-line language.
-
-**Endpoint compression lemma (open).**  
-Let pi be a canonical minimum width-three spanning order arising from an exact deletion cover H-x=P|Q. Suppose a reachable bounded-window state associated with pi contains either
-
-- a reversal of an end edge of its Hamiltonian four-side, or
-- an endpoint-aligned Hamiltonian four- or five-support with path-cover-two complement.
-
-Then H has a spanning ordering sigma with
-
-    nu(L_sigma) <= 1.
-
-Equivalently, H has a spanning two-path cover.
-
-No current theorem proves this implication in full generality.
-
-## 6. Why the local obstruction is not already closure
-
-Three points delimit the missing step.
-
-First, an interior reversal cannot simply be read as an endpoint reversal. The order of a tight path is part of the data. Boundary antisymmetry reverses one ordered triple; it does not permit cyclic rotation or reversal of a whole path.
-
-This is not merely a warning. The certified counterexample common_endpoint_barriers_fivewindow_counterexample01 gives arbitrarily long configurations in which common endpoint barrier triples do not produce the Hamiltonian five-window one would obtain by an illicit cyclic reinterpretation. Any valid transport proof must literally move the reversal to the required boundary.
-
-Second, strict Phi-descent is useful only with same-component provenance. A smaller potential state unrelated to the chosen trapped component is not a contradiction. The pending 101 corridor results matter precisely because they certify reachability inside the original deletion component.
-
-Third, neutral migration is not termination. A finite collection of nearby windows can cycle. If the final compression proof uses repeated equal-potential moves, it must provide a well-founded invariant, a no-trapping theorem, or a contradiction from recurrence.
-
-## 7. Relation to the neighboring routes
-
-The quadratic-potential route supplies the extremal meaning of strict descent and rules out small sides at trapped minima. The present route uses that information only to reject the descent outcomes; its own invariant is the defect-line matching number.
-
-The endpoint-transport route is the natural consumer of the positioned outputs above. Once a reversal lies on a displayed component-end edge, the certified endpoint calculus often gives direct absorption, strict descent, or a single neutral transfer. Thus the open lemma above is exactly the defect-span/endpoint-transport interface.
-
-Deletion-cover compatibility can supply additional order disagreement or mixed-support crossing when transport stalls, but generic disagreement is not enough. The defect-line route requires the witness to remain tied to the canonical order.
-
-Longest-path/reversal theory can amplify a reversal into common-core bounded windows. Again, the useful datum is placement and pc2 complement provenance, not witness existence.
-
-## 8. Exact stopping point
-
-The proof is complete through the canonical width-three reduction and both transport branches in the certified core. Subject to audit of 1000954-1000956, the fixed-label branch has already been reduced to the same endpoint-aligned obstruction as the universal four-window branch.
-
-The first unsupported implication is
-
-    reachable endpoint-edge reversal
-    or endpoint-aligned Hamiltonian 4/5 support
-    => defect-line matching number at most one.
-
-The n<=14 residue of 1000911 remains a separate finite-order obligation for the universal branch.
-
-## 9. Research handoff
-
-The strongest viable next target is the endpoint compression lemma above. A useful proof should retain the displayed deletion label, inherited path order, pc2 complement, and same-component reachability long enough to perform a legal boundary splice.
-
-The principal route not to retry without a new ingredient is another layer of local witness production. The 101 slide, fixed-label shell transport, four-window migration, five-side escape, order disagreement, and generic reversal are all already available. Likewise, the old degree-four shell graphs from 1000953 are superseded, subject to audit, by 1000954-1000956.
-
-The route is now a one-unit compression problem in the literal sense:
-
-    nu(L_pi)=2
-    => position one certified obstruction at the boundary
-    => nu(L_sigma)<=1.
-
-The first arrow is established. The second is the frontier.
+For transport, use the four seven-vertex sets
+\[
+X\cup\{q_0,q_1,q_2\},\
+X\cup\{q_0,q_1,q_s\},\
+X\cup\{q_0,q_{s-1},q_s\},\
+X\cup\{q_{s-2},q_{s-1},q_s\}.
+\]
+For one such set \(W\), join \(a,b\in W\) when \(W-\{a,b\}\) is Hamiltonian. Each vertex has at least four neighbors, since deleting it leaves a six-set with at least four Hamiltonian five-vertex deletions. Consecutive graphs share six vertices; after removing the unique outside vertex each leaves at least eight edges on the common six-set, so the two edge sets intersect because \(8+8>15\). If \(z\) is one of the two vertices found above, it has at least three neighbors in each common five-vertex neighborhood, so the shared edge can be chosen incident with \(z\).
+
+Every such edge \(ab\) yields a Hamiltonian five-set and a complementary support equal to an inherited interval of \(Q\) together with \(\{a,b\}\). The complement is non-Hamiltonian but is covered by that interval and the two-vertex path \((a,b)\). Following the shared edges gives the required sequence. \(\square\)
+
+## 4. From transport to an end-edge reversal
+
+The lower states in Lemma 4 have path orders \(4,3,m\), with the same long path retained. Repartitioning the four- and three-vertex sides may strictly decrease the quadratic potential
+\[
+\Phi(P_1\mid P_2\mid P_3)=|P_1|^2+|P_2|^2+|P_3|^2.
+\]
+If two adjacent lower states admit the same strict decrease, a state of smaller \(\Phi\) lies in the same component of the pairwise-repartition graph.
+
+Assume no such synchronized decrease is available. Fix the transported vertex \(z\) and one seven-vertex set \(W\). Let \(\Omega\) be the graph in the proof of Lemma 4. We have \(\deg_\Omega(z)\ge4\). If the degree is larger, two adjacent choices give synchronized descent. If the degree is four, let \(u,v\) be the two nonneighbors of \(z\). Then
+\[
+F=W-\{z,u\}
+\]
+is a non-Hamiltonian five-set with at least four Hamiltonian vertex deletions.
+
+Choose Hamilton paths on these four deletions. If all common vertices had the same relative order in every pair, the orders would combine to a Hamilton path of \(F\). Hence two have an order disagreement. A minimal such pair contains either a common edge traversed in opposite directions or a tight triple reversing an edge of one of the paths. A tight-cycle-only alternative is impossible inside a non-Hamiltonian edge-orderable five-set. In the common-edge case, one adjacent triple of the other Hamilton path reverses that edge. Therefore:
+
+**Lemma 5.** If synchronized strict decrease is unavailable, a three-cover in the same component contains a Hamiltonian four-path \(K\) and a tight triple on the surrounding five vertices that reverses an edge of \(K\).
+
+If the reversed edge is an end edge of \(K\), nothing further is needed. If it is the internal edge, the four vertices of \(K\) together with the reversing triple contain either a Hamiltonian four-set or an edge-orderable matching-block \(K_4\). In the Hamiltonian case the complement has path-cover number two. In the matching-block case, adjoining an endpoint of the long path produces a Hamiltonian support of order four or five containing that endpoint; its complement again has path-cover number two.
+
+Hence:
+
+**Proposition 6.** The fixed-deletion transport produces one of:
+1. a strict decrease of \(\Phi\) inside the same component of the pairwise-repartition graph;
+2. a reversal of an end edge of a displayed Hamiltonian four-path;
+3. a Hamiltonian support of order four or five containing a displayed endpoint of the complementary path, with two-coverable complement.
+
+## 5. A Hamiltonian four-set with two-coverable complement
+
+Suppose instead that
+\[
+W\mid P\mid Q
+\]
+is a three-cover with \(|W|=4\). Let \(P=(p_1,\ldots ,p_m)\), \(m\ge6\).
+
+**Lemma 7.** Either a pairwise repartition of \(W\mid P\) strictly decreases \(\Phi\), or there exist distinct \(x,y,z\in W\) such that
+\[
+\{p_1,p_m,x,y\},\qquad \{p_1,p_m,x,z\}
+\]
+are Hamiltonian four-sets.
+
+**Proof.** If \(W\cup\{p_1\}\) or \(W\cup\{p_m\}\) is Hamiltonian, move that endpoint into \(W\). The component orders change from \((4,m)\) to \((5,m-1)\), and the change in the two relevant square terms is
+\[
+25+(m-1)^2-(16+m^2)=10-2m<0.
+\]
+Otherwise both endpoint five-sets are non-Hamiltonian. Comparing their Hamiltonian four-vertex deletions gives two deletions that retain both \(p_1,p_m\) and share three vertices; relabeling the retained vertices of \(W\) gives the two displayed four-sets. \(\square\)
+
+The two four-sets have a common three-set. Their union has order five. If that union is Hamiltonian, its complement has path-cover number two. If it is non-Hamiltonian, at least four of its four-vertex deletions are Hamiltonian; at least one such deletion retains the displayed endpoints. Thus the non-descent case yields a Hamiltonian support of order four or five containing displayed endpoints and having two-coverable complement.
+
+For \(|V(H)|>14\), at least one of the two complementary paths in a four-set state has order at least six, so this lemma applies. Orders at most fourteen remain a finite case.
+
+## 6. A Hamiltonian five-set beside a long path
+
+Let
+\[
+X\mid P\mid Q
+\]
+be a three-cover with \(|X|=5\) and \(P=(p_1,\ldots ,p_m)\), \(m\ge7\).
+
+**Lemma 8.** One of the following holds:
+1. a pairwise repartition of \(X\mid P\) strictly decreases \(\Phi\);
+2. a pairwise repartition preserves the component orders \(\{5,m\}\) and replaces one vertex of \(X\) by an endpoint of \(P\);
+3. a tight triple containing a vertex of \(X\) reverses an edge of the displayed path \(P\).
+
+**Proof.** If an endpoint transfer makes the two component orders more balanced, (1) holds. Otherwise there is \(x\in X\) such that, with \(D=X-\{x\}\), both
+\[
+D\cup\{p_1\},\qquad D\cup\{p_m\}
+\]
+are Hamiltonian. If \((V(P)-\{p_1\})\cup\{x\}\) or \((V(P)-\{p_m\})\cup\{x\}\) is Hamiltonian, pair it with the corresponding Hamiltonian five-set to obtain (2). If neither is Hamiltonian, \(x\) cannot be inserted at either end of the displayed path. Testing insertion positions along \(P\), the first unavailable internal insertion gives, by boundary reversal, a tight triple through \(x\) that reverses the corresponding displayed edge. \(\square\)
+
+Thus both central cases reduce to the same ordered objects.
+
+## 7. The remaining lemma
+
+**Remaining Lemma.** Let \(H-x=P\mid Q\) be a deletion cover of a minimum counterexample. Suppose a three-cover in the same component of the pairwise-repartition graph contains either
+1. a Hamiltonian four-path with a tight triple reversing one of its end edges; or
+2. a Hamiltonian support of order four or five containing a displayed endpoint of a complementary path, with two-coverable complement.
+
+Then \(H\) has a spanning ordering \(\sigma\) such that
+\[
+\nu(L_\sigma)\le1.
+\]
+
+Lemma 1 then gives a two-cover of \(H\). The remaining task is therefore a one-unit reduction of the defect-line matching number, using the displayed endpoint information retained by Propositions 6 and Lemmas 7–8.
+
+## Appendix. Boundary reversal is local
+
+Boundary reversal says only that
+\[
+(a,b,c)\text{ is non-tight}\quad\Longleftrightarrow\quad(c,b,a)\text{ is tight}.
+\]
+It does not imply cyclic rotation of an ordered triple and does not reverse a tight path. An internal reversed edge therefore cannot be treated as an end-edge reversal without an explicit sequence of valid path orders.

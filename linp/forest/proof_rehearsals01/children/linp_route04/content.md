@@ -1,202 +1,324 @@
-# Route 4 — Incidence rank / induced-path clique-cover
+# Route 4 — Incidence rank and induced paths in the intersection graph
 
 ## Statement
 
-Comprehensive synthesis of the algebraic upper-bound route through the incidence matrix, induced-path-free intersection graph, exact clique-cover realizability, and weighted/nullity rank inequalities.
+The incidence matrix and exact three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
 
 ## Body
 
-# Route 4. Incidence rank and the induced-path clique-cover model
+# Incidence rank and induced paths in the intersection graph
 
-## Goal and setup
+Let \(H\) be a finite linear \(3\)-graph with \(n\) vertices and \(m\) edges. Let \(N\) be its real \(n\times m\) vertex-edge incidence matrix. Let \(F\) be the intersection graph of \(H\): the vertices of \(F\) are the edges of \(H\), and two vertices of \(F\) are adjacent precisely when the corresponding hyperedges intersect.
 
-Let H be an n-vertex linear 3-uniform hypergraph with m edges, and let N be its n×m vertex-edge incidence matrix over the reals. Let F be the intersection graph of H: the vertices of F are the hyperedges of H, and two vertices of F are adjacent exactly when the corresponding hyperedges intersect.
+The target inequality in this approach is
+\[
+\ell\,\operatorname{rank}_{\mathbb R}N\ge 3m. \tag{1}
+\]
+Since \(\operatorname{rank}N\le n\), (1) immediately implies
+\[
+m\le \frac{\ell}{3}n. \tag{2}
+\]
 
-This route seeks the one-third upper bound by proving that P_ℓ-freeness forces
+## 1. Linear paths and induced graph paths
 
-ℓ·rank(N) ≥ 3m.      (1)
+### Lemma 1
+A sequence of distinct hyperedges
+\[
+e_1,\ldots,e_t
+\]
+forms a linear hypergraph path if and only if the corresponding vertices form an induced path in \(F\).
 
-Since rank(N)≤n, equation (1) would immediately give
+#### Proof
+If the hyperedges form a linear path, consecutive edges intersect and nonconsecutive edges are disjoint, so their intersection graph is exactly a graph path.
 
-m≤(ℓ/3)n.      (2)
-
-The algebraic problem is therefore exact: show that a P_ℓ-free linear triple system cannot have too many incidence columns relative to their real rank.
-
-## 1. Exact translation to an induced-path problem
-
-Linearity makes the intersection graph unusually faithful. A sequence of distinct hyperedges
-
-e_1,e_2,…,e_k
-
-is a linear hypergraph path if and only if the corresponding vertices form an induced path in F.
-
-Indeed, consecutive hyperedges in a linear path meet, whereas nonconsecutive ones are disjoint, so the intersection graph induced by them is exactly a graph path. Conversely, an induced graph path forces consecutive intersections and forbids all nonconsecutive intersections, which is precisely the linear-path condition.
+Conversely, assume \(e_1,\ldots,e_t\) form an induced path in \(F\). Proceed by induction on \(t\). By induction, \(e_1,\ldots,e_{t-1}\) can be ordered as a linear hypergraph path. Let
+\[
+v=e_{t-1}\cap e_t.
+\]
+Inducedness implies that \(e_t\) is disjoint from every \(e_i\) with \(i\le t-2\). Linearity implies that
+\[
+e_t\cap e_{t-1}=\{v\}.
+\]
+Thus \(e_t\setminus\{v\}\) consists of two new vertices, and appending them after \(v\) extends the hypergraph path. ∎
 
 Hence
+\[
+H\text{ is }P_\ell^{(3)}\text{-free}
+\iff
+F\text{ is induced-}P_\ell\text{-free}. \tag{3}
+\]
 
-H is P_ℓ-free  ⇔  F is induced-P_ℓ-free.      (3)
+## 2. Exact realizability of the intersection graph
 
-But not every induced-P_ℓ-free graph is relevant. The graph F carries the exact incidence realization of a linear triple system.
+The graph \(F\) is not arbitrary.
 
-For each ground vertex x∈V(H), let C_x be the clique of all hyperedges containing x. Then:
+For each vertex \(x\in V(H)\), let
+\[
+C_x=\{e\in E(H):x\in e\}.
+\]
+This is a clique of \(F\).
 
-1. every vertex of F lies in exactly three cliques C_x, because every hyperedge has three vertices;
-2. every edge of F lies in exactly one clique C_x, because two hyperedges of a linear system meet in at most one vertex.
+### Lemma 2
+The indexed clique family \(\{C_x:x\in V(H)\}\) has the following properties.
 
-Conversely, any graph equipped with an indexed clique family satisfying these two conditions is the intersection graph of a linear 3-uniform hypergraph.
+1. Every vertex of \(F\) belongs to exactly three cliques.
+2. Every edge of \(F\) belongs to exactly one clique.
 
-Thus the route is not a generic theorem about induced-path-free graphs. It is a rank theorem inside this exact three-clique realizability class.
+Conversely, any graph equipped with an indexed family of cliques satisfying these two properties is the intersection graph of a linear \(3\)-graph.
 
-## 2. The spectral identity
+#### Proof
+A hyperedge has exactly three vertices, so its corresponding vertex of \(F\) belongs to exactly the three cliques indexed by those vertices. If two hyperedges intersect, linearity gives a unique common vertex, so the corresponding graph edge lies in exactly one \(C_x\).
 
-Because H is 3-uniform and linear,
+Conversely, suppose a graph \(F\) has cliques \(C_x\) satisfying the two conditions. For a graph vertex \(q\), define
+\[
+E_q=\{x:q\in C_x\}.
+\]
+The first condition gives \(|E_q|=3\). If \(q,q'\) are adjacent, the graph edge \(qq'\) lies in a unique \(C_x\), so
+\[
+E_q\cap E_{q'}=\{x\}.
+\]
+If \(q,q'\) are nonadjacent, they lie together in no \(C_x\), so \(E_q\cap E_{q'}=\varnothing\). Thus the triples \(E_q\) form a linear \(3\)-graph whose intersection graph is \(F\). ∎
 
-N^T N = 3I_m + A(F),      (4)
+Any proof of (1) may therefore use the exact three-clique realization furnished by Lemma 2. A theorem for arbitrary induced-path-free graphs is unnecessarily general.
 
-where A(F) is the adjacency matrix of the intersection graph.
+## 3. The spectral identity
 
-Therefore
+### Lemma 3
+\[
+N^{T}N=3I_m+A(F). \tag{4}
+\]
+Consequently
+\[
+\operatorname{rank}N
+=
+m-\operatorname{mult}_F(-3), \tag{5}
+\]
+where \(\operatorname{mult}_F(-3)\) is the multiplicity of the adjacency eigenvalue \(-3\).
 
-rank(N)=rank(3I_m+A(F))
-       =m−mult_F(−3),      (5)
+#### Proof
+The \((e,f)\)-entry of \(N^TN\) is \(|e\cap f|\). It is \(3\) when \(e=f\), \(1\) when \(e\ne f\) and the two hyperedges intersect, and \(0\) otherwise. This proves (4).
 
-where mult_F(−3) is the multiplicity of eigenvalue −3 of A(F).
+Over \(\mathbb R\),
+\[
+\ker(N^TN)=\ker N.
+\]
+Thus \(N\) and \(N^TN\) have the same rank. Since \(3I+A(F)\) is symmetric, its nullity equals the multiplicity of \(-3\) as an eigenvalue of \(A(F)\), proving (5). ∎
 
-The desired inequality (1) is equivalently
+Therefore the one-third problem is equivalently a bound on the \(-3\) eigenspace inside the realizable class of Lemma 2.
 
-mult_F(−3) ≤ m(1−3/ℓ).      (6)
+## 4. A weighted rank inequality
 
-So the obstruction to one-third is a large −3 eigenspace, or equivalently a large space of linear dependencies among incidence columns.
+### Theorem 4
+Assign weights \(0\le w_e\le1\) to the edges of \(H\). Put
+\[
+W=\sum_e w_e,
+\qquad
+d_w(v)=\sum_{e\ni v}w_e.
+\]
+If
+\[
+d_w(v)\le D
+\qquad\text{for every }v,
+\]
+then
+\[
+\operatorname{rank}N\ge \frac{3W}{D+2}. \tag{6}
+\]
 
-The three-clique realization is essential here. Generic positive-semidefinite arguments applied only to 3I+A(F) discard exactly the structure that distinguishes realizable intersection graphs from arbitrary graphs.
-
-## 3. The low-degree regime is already closed
-
-There is a sharp rank theorem whenever the hypergraph maximum degree is below the forbidden path length.
-
-If Δ(H)≤ℓ−2, then
-
-ℓ·rank(N) ≥ 3m.      (7)
-
-Thus any counterexample to (1) must satisfy
-
-Δ(H)≥ℓ−1.      (8)
-
-This cleanly removes the sparse regime. The remaining problem is intrinsically high-degree.
-
-A useful way to see the low-degree theorem is through a more general weighted inequality. Give each hyperedge e a weight 0≤w_e≤1, let
-
-W=Σ_e w_e,
-
-and suppose every ground vertex has weighted degree at most D:
-
-Σ_{e∋v} w_e ≤ D.
-
-Then
-
-rank(N) ≥ 3W/(D+2).      (9)
-
-Taking all w_e=1 and D=Δ gives the low-degree estimate.
-
-Equation (9) also suggests a possible high-degree strategy: rather than control the whole edge set, extract a large weighted fraction whose vertex loads are small enough.
-
-## 4. Fractional-rank branch
-
-Suppose one can choose weights with
-
-W ≥ ρm−O(n)
+#### Proof
+Let
+\[
+R=\operatorname{diag}(w_e)
+\]
 and
-D ≤ cℓ+O(1).
+\[
+Q=R^{1/2}N^TNR^{1/2}.
+\]
+Then \(Q\) is positive semidefinite and
+\[
+\operatorname{rank}Q\le\operatorname{rank}N.
+\]
+Since every hyperedge has size three,
+\[
+\operatorname{tr}Q=3W.
+\]
 
-Then (9) gives
+By linearity,
+\[
+Q_{ee}=3w_e,
+\]
+and for \(e\ne f\),
+\[
+Q_{ef}=
+\begin{cases}
+\sqrt{w_ew_f},&e\cap f\ne\varnothing,\\
+0,&e\cap f=\varnothing.
+\end{cases}
+\]
+Hence
+\[
+\operatorname{tr}(Q^2)
+=
+9\sum_e w_e^2
++
+2\sum_{e<f,\ e\cap f\ne\varnothing}w_ew_f. \tag{7}
+\]
 
-rank(N) ≥ (3ρ/(cℓ+O(1)))m.
+On the other hand,
+\[
+\sum_v d_w(v)^2
+=
+3\sum_e w_e^2
++
+2\sum_{e<f,\ e\cap f\ne\varnothing}w_ew_f, \tag{8}
+\]
+because every intersecting pair has a unique common vertex. Combining (7) and (8),
+\[
+\operatorname{tr}(Q^2)
+=
+6\sum_e w_e^2+\sum_v d_w(v)^2.
+\]
+Since \(0\le w_e\le1\),
+\[
+\sum_e w_e^2\le W.
+\]
+Also,
+\[
+\sum_v d_w(v)^2
+\le
+D\sum_v d_w(v)
+=
+3DW.
+\]
+Therefore
+\[
+\operatorname{tr}(Q^2)\le 3(D+2)W.
+\]
+For a positive semidefinite matrix,
+\[
+\operatorname{rank}Q
+\ge
+\frac{(\operatorname{tr}Q)^2}{\operatorname{tr}(Q^2)}.
+\]
+Substituting the preceding estimates gives
+\[
+\operatorname{rank}N
+\ge
+\operatorname{rank}Q
+\ge
+\frac{9W^2}{3(D+2)W}
+=
+\frac{3W}{D+2}.
+\]
+∎
 
-To reach the exact one-third target, one would need parameters equivalent to 3W/(D+2)≥3m/ℓ. For a strict leading improvement over weaker existing coefficients, any fixed favorable ratio ρ/c already has value.
+### Corollary 5
+If \(\Delta(H)\le \ell-2\), then
+\[
+\ell\,\operatorname{rank}N\ge 3m. \tag{9}
+\]
 
-This branch reduces the theorem to a packing problem: find a large subdistribution of hyperedges whose weighted incidence at every ground vertex is low. The exact clique realization should constrain how high-degree concentration can coexist with induced-P_ℓ-freeness.
+#### Proof
+Put
+\[
+t=\frac{2}{\ell-\Delta(H)}
+\]
+and assign the constant weight \(w_e=t\) to every edge. Since \(\Delta(H)\le\ell-2\), we have \(0<t\le1\). Then
+\[
+W=tm,
+\qquad
+D=t\Delta(H),
+\]
+and
+\[
+D+2=t\Delta(H)+2=t\ell.
+\]
+Theorem 4 gives
+\[
+\operatorname{rank}N
+\ge
+\frac{3tm}{t\ell}
+=
+\frac{3m}{\ell}.
+\]
+∎
 
-No theorem presently produces a sufficiently large weighted subfamily in the high-degree regime.
+Thus every counterexample to (1) must satisfy
+\[
+\Delta(H)\ge \ell-1. \tag{10}
+\]
 
-## 5. Nullity and cycle complexity
+The low-degree range is completely settled.
 
-A second route to rank is to control the nullity directly.
+## 5. Nullity and terminal-pair complexity
 
-Let s be the number of special hyperedges. If for fixed C,D one proves
+The rank problem also receives information from the terminal-pair graph of nonspecial edges.
 
-nullity(N) ≤ C s + Dn,      (10)
+Let \(T\) be that graph, let \(h\) be the number of distinct unique entrances of nonspecial edges, and let \(s\) be the number of special edges.
 
-then the snake inequality and rank(N)=m−nullity(N) combine to give
+### Proposition 6
+\[
+\operatorname{nullity}(N)\le \beta(T)+h+s. \tag{11}
+\]
 
-m ≤ [C(2ℓ−3)+D+1]/(2C+1) · n.      (11)
+#### Proof
+For the nonspecial columns, write
+\[
+N_{\mathrm{ns}}=B+R
+\]
+as follows: \(B\) is the ordinary \(0/1\) incidence matrix of \(T\), and the column of \(R\) corresponding to a nonspecial edge is the standard basis vector indexed by its unique entrance. Since \(R\) is supported on \(h\) rows,
+\[
+\operatorname{rank}R\le h.
+\]
+Hence
+\[
+\operatorname{rank}N_{\mathrm{ns}}
+\ge
+\operatorname{rank}B-h.
+\]
+The real \(0/1\) incidence matrix of a graph has nullity at most its cycle rank, so
+\[
+\operatorname{nullity}(N_{\mathrm{ns}})\le \beta(T)+h.
+\]
+Adding the \(s\) special columns can increase nullity by at most \(s\). ∎
 
-Thus any absolute bound of the form (10) yields a strict leading improvement.
+Thus a bound on \(\beta(T)+h\) would also yield a rank theorem.
 
-The terminal-pair graph from the rotation route gives a more structural estimate. Let T be the terminal-pair graph of nonspecial edges, β(T) its cycle rank, and h the number of distinct entrance vertices used by nonspecial edges. Then
+## 6. What a counterexample must look like
 
-nullity(N_ns) ≤ β(T)+h,      (12)
+Several simple classes cannot contain a counterexample to (1).
 
-and for the full incidence matrix,
+The low-degree class is excluded by Corollary 5.
 
-nullity(N) ≤ β(T)+h+s.      (13)
+If the intersection graph \(F\) is chordal, then the clique-tree structure and the exact three-clique realization imply
+\[
+m\le \frac32 n.
+\]
+More generally, excess above \(3n/2\) forces linearly many edge-disjoint linear cycles in \(H\). Hence a dense counterexample must have substantial cycle structure.
 
-So a theorem controlling β(T)+h in terms of special-edge mass and O(n) would immediately become a rank theorem here.
+A bounded matching number is not enough to imply (1); there are induced-path-free realizable examples showing that this parameter alone only yields a weaker asymptotic coefficient. Therefore a successful rank proof must use the exact incidence realization, not merely coarse graph sparsity.
 
-This explains the precise interface with the rotation route: terminal cycles and entrance reuse are not merely combinatorial nuisances; they are upper bounds for the dimension of the incidence dependency space.
-
-## 6. Anatomy of a possible counterexample
-
-Several certified structural theorems sharply limit what a counterexample to (1) could look like.
-
-First, bounded matching number is insufficient as a rank surrogate; that line cannot reach the one-third scale.
-
-Second, any P_ℓ-free construction whose density exceeds ℓ/3 must be genuinely large and high-degree. It must have average degree above ℓ, maximum degree at least ℓ+1, large matching and transversal numbers, and a dense induced minimum-degree core. In particular, a counterexample to the rank conjecture cannot hide in a small sparse exceptional configuration.
-
-Third, if the intersection graph F is chordal, then
-
-m≤3n/2.
-
-More quantitatively, excess above 3n/2 forces linearly many edge-disjoint linear cycles in H. Hence a dense counterexample necessarily has abundant cycle structure. That cycle abundance is exactly what the nullity/cycle branch would like to exploit.
-
-Together these facts place the unresolved problem in a narrow regime: high degree, large matching complexity, many cycles, and an exact three-clique incidence realization, yet still no long induced path.
-
-## 7. Known obstructions
-
-The simplest nullity conjectures are false.
-
-There are linear 3-graphs with no special edges whose incidence matrix nevertheless has positive nullity; the basic obstruction is the same K_{3,3}-type terminal geometry seen in the rotation route. Hence
-
-nullity(N)≤s
-
+There are also linear \(3\)-graphs with no special edges and positive incidence nullity. In particular,
+\[
+\operatorname{nullity}(N)\le s
+\]
 is false, and nonspecial incidence columns need not be independent.
 
-Likewise, a dependence circuit need not contain a special edge. Therefore the rank deficit cannot be charged locally to specialness alone.
+## 7. The remaining theorem
 
-Generic graph-theoretic spectral bounds are also too weak because they ignore the indexed three-clique realization. Conversely, the low-degree regime Δ≤ℓ−2 is already solved and should not be reopened.
+All preceding statements reduce the one-third upper bound to the high-degree realizable case.
 
-The remaining theorem must use realizability in a genuinely high-degree way.
+### Open problem
+Let \(F\) be induced-\(P_\ell\)-free and equipped with an indexed clique family such that every vertex of \(F\) belongs to exactly three cliques and every edge of \(F\) belongs to exactly one. Let \(N\) be the corresponding incidence matrix. Prove
+\[
+\operatorname{rank}N\ge \frac{3m}{\ell}. \tag{12}
+\]
 
-## 8. First unsupported implication
+Equivalently, prove (12) for every \(P_\ell^{(3)}\)-free linear \(3\)-graph satisfying \(\Delta(H)\ge\ell-1\).
 
-The proof stops at the following high-degree statement.
+Two weaker statements would also advance the argument:
 
-**High-degree realizable rank target.** Let F be an induced-P_ℓ-free graph equipped with an indexed clique family in which every graph vertex lies in exactly three cliques and every graph edge lies in exactly one. Let N be the corresponding incidence matrix. Prove
+1. find weights with \(W\) a fixed positive proportion of \(m\) and \(D\) sufficiently smaller than \(\ell\), so that Theorem 4 improves the current coefficient;
+2. prove a bound on \(\beta(T)+h\) strong enough that Proposition 6 forces the desired rank.
 
-rank(N) ≥ 3m/ℓ.      (14)
-
-Equivalently, prove the same statement for every P_ℓ-free linear 3-uniform hypergraph with Δ≥ℓ−1.
-
-There are two concrete weaker targets that would also advance the theorem:
-
-1. extract weights of total mass W large enough and weighted degree D small enough for (9) to beat the current coefficient;
-2. prove a bound on nullity(N), or on β(T)+h, strong enough to feed (11).
-
-The exact graph translation, spectral identity, low-degree theorem, weighted rank bound, and nullity bridges are all certified. What is unsupported is the high-degree realizability theorem itself.
-
-## Research handoff
-
-Work only in the high-degree regime and keep the indexed three-clique realization explicit. The most promising formulations are either a realizability-aware −3 multiplicity theorem, a fractional low-load extraction, or a cycle/entrance nullity bound imported from the rotation route.
-
-Do not retry generic PSD arguments on arbitrary induced-path-free graphs, bounded-matching certificates, nullity≤special-edges, nonspecial-column independence, or the already-solved low-degree case.
-
-The route's virtue is its clean stopping point: once (14) is proved, the one-third upper bound follows immediately from rank(N)≤n.
+The unresolved step is therefore confined to the high-degree part of the exact three-clique realizability class.

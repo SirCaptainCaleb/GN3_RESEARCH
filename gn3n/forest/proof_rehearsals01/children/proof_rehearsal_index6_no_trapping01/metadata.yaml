@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "5db54bf6980b05d23977bdacf23905589b0a241294fd33a5021d68e96604887f"
+body_sha256: "1e5aa1e650f2f748b62a6c7523942bc7197ca220f7acfc8e988e54eb17152e1d"
 created_at: "2026-10-02T04:18:10.098615+00:00"
 id: "proof_rehearsal_index6_no_trapping01"
 last_elevation_revision: null
-last_substantive_worker_id: 1285
+last_substantive_worker_id: 1286
 legacy_id: null
 lifecycle_status: "active"
-math_version: 3
+math_version: 5
 mathematical_status: "proposal"
 metadata:
 object_type: "research"
@@ -37,15 +37,16 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Deletion-generated trapped three-cover components descend to synchronized transport/reversal geometry; neutral recurrence is already non-structureless. The live gap is converting reachable disturbance or many rooted states into a component-respecting escape."
-statement_sha256: "c05522bc0dc3ed73845d0b9b80f2d9796fac47be7b204af71ca2d353d87c94c9"
+statement_sha256: "baa96f3bc9fdf947cbcbad22896d68c321d8c8172f56c26cad045653256f6512"
 substantive_worker_ids:
   - 1272
   - 1194
   - 1285
+  - 1286
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Proof rehearsal VI — three-cover no-trapping and repartition dynamics"
+title: "Proof rehearsal VI — three-cover repartitions and recurrence"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T05:02:50.549715+00:00"
-version: 31
+updated_at: "2026-10-02T13:42:09.067542+00:00"
+version: 34
