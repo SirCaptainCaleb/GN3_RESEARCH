@@ -22,6 +22,12 @@
     BODY / PROOF
     ‹none›
 
+• [proof_rehearsals01] Comprehensive Proof Rehearsals
+    STATEMENT
+    Top-level collection of comprehensive proof rehearsals for the major proof routes of the project.
+    BODY / PROOF
+    ‹none›
+
 • [research_nudges] Research nudges
     STATEMENT
     Project-local research nudges. Blank in the template; projects populate and curate their own strongly encouraged research heuristics.

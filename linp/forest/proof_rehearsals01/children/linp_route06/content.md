@@ -2,7 +2,7 @@
 
 ## Statement
 
-Projective, affine, Boolean, coding, and Steiner constructions are analyzed through explicit spanning-path obstructions; the principal surviving Boolean family is an exact two-point-fibre extension.
+Projective, affine, Boolean, coding, and Steiner constructions are analyzed through explicit spanning-path obstructions; the principal surviving Boolean family is a two-point-fibre extension.
 
 ## Body
 
@@ -215,7 +215,7 @@ Each missing unordered sum contributes two ordered failures, so
 \sum_{x\in S}b_S(x)=2M. \tag{7}
 \]
 
-For nonzero \(x\), translation by \(x\) partitions the ambient group into pairs \(\{y,y+x\}\). Thus \(b_S(x)\) counts the pairs crossing \(S\), and since \(|S|\) is even,
+For nonzero \(x\), translation by \(x\) partitions the ambient group into pairs \(\{y,y+x\}\). Thus \(b_S(x)\) counts the pairs with one point in S and the other outside S, and since \(|S|\) is even,
 \[
 b_S(x)\equiv0\pmod2.
 \]
@@ -263,7 +263,7 @@ A=W\setminus\{0,a,b\}.
 
 Thus every sufficiently dense Boolean candidate lies in the projective family or a two-point deletion of it. Both families have spanning paths in all sufficiently large dimensions. Therefore this dense Boolean branch has no infinite improvement beyond the small projective exceptions.
 
-A more general density-beating Boolean example can also be reduced to an exact two-point fibre extension of a smaller quotient: after deleting at most the naturally occurring translation-boundary points, the remaining domain is invariant under a nonzero translation and hence is a full two-point fibre over a quotient. Therefore it is enough to consider such exact fibre extensions.
+A more general density-beating Boolean example can also be reduced to a two-point fibre extension of a smaller quotient: after deleting at most the naturally occurring translation-boundary points, the remaining domain is invariant under a nonzero translation and hence is a full two-point fibre over a quotient. Therefore it is enough to consider such two-point fibre extensions.
 
 ## 5. Incidence-code obstruction and its limitation
 
@@ -386,7 +386,7 @@ form a linear path of length \(MN-1\). The tensor square has normalized density 
 
 These observations rule out the direct higher-dimensional projective, affine, single-weight-code, repeated fibre-extension, symmetric-deletion, ordinary-doubling, and diagonal-tensor enlargements of the preceding small examples.
 
-## 7. The exact two-point-fibre problem
+## 7. The two-point-fibre problem
 
 The most economical remaining Boolean model has one distinguished point \(\infty\) and, over each point \(x\) of a binary projective quotient, a pair
 \[

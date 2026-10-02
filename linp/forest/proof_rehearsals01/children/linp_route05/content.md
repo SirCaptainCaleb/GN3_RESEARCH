@@ -2,7 +2,7 @@
 
 ## Statement
 
-Deleting a longest path reduces the one-third theorem to an exact inequality involving pairs inside the path, the difference between forbidden and actual path length, and the extremal deficit of the complementary induced subgraph.
+Deleting a longest path reduces the one-third theorem to an explicit inequality involving pairs inside the path, the difference between forbidden and actual path length, and the extremal deficit of the complementary induced subgraph.
 
 ## Body
 
@@ -35,7 +35,7 @@ and let \(e_X\) be the number of edges of \(H\) that meet \(X\). Thus
 |E(H)|=m_Y+e_X. \tag{3}
 \]
 
-## 1. Exact inductive reduction
+## 1. Inductive reduction
 
 ### Lemma 1
 Assume the inductive inequality
@@ -102,7 +102,7 @@ The difficulty is caused by edges that meet \(X\) in only one vertex. Longest-pa
 
 The desired proof of (4) is a uniform way of converting those restrictions into the three terms on its right-hand side.
 
-## 3. Deletion and the exact change in extremal deficit
+## 3. Deletion and the change in extremal deficit
 
 The third term \(D_Y\) cannot be treated as a harmless remainder. It records genuine missing edges outside the longest path.
 
@@ -308,6 +308,6 @@ Lemmas 2–5 describe mechanisms by which missing edges in \(H[Y]\) can arise, b
 
 ## 7. Obstruction to the naive deletion argument
 
-A deletion preserving density does not imply that a vertex-minimal counterexample has been contradicted. Lemma 3 gives the exact conclusion: the deleted vertex is joined by a unique hyperedge to a vertex whose degree falls from \(d+1\) to \(d\).
+A deletion preserving density does not imply that a vertex-minimal counterexample has been contradicted. Lemma 3 gives the precise conclusion: the deleted vertex is joined by a unique hyperedge to a vertex whose degree falls from \(d+1\) to \(d\).
 
 Accordingly, a proof of (13) must follow the structure created when a deletion is restored. Merely showing that a set can be deleted without lowering the density does not establish the required deficit \(D_Y\).

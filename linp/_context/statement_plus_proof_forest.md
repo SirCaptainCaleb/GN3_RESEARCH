@@ -18640,7 +18640,7 @@
 
   • [linp_route01] Route 1 — Snake accounting and the 43/48 equality problem
       STATEMENT
-      The fixed-entrance recurrence and exact snake identity yield the 43/48 bound and reduce near equality to explicit path-intersection and global multiplicity structure.
+      The fixed-entrance recurrence and snake identity yield the 43/48 bound and reduce near equality to explicit path-intersection and global multiplicity structure.
       BODY / PROOF
       # Snake accounting and the \(43/48\) equality problem
       
@@ -18761,7 +18761,7 @@
       \]
       Assign \(\mu_P(g_p)=1\).
       
-      The following path-local estimate will be used in the exact count.
+      The following path-local estimate will be used in the count.
       
       ### Lemma 3
       Let \(P\) be a \(p\)-edge path ending at \(v\), and let \(F_Q\) be a family of ascending edges \(e=\{x,u,v\}\) at which \(v\) is terminal and
@@ -18776,7 +18776,7 @@
       
       The proof is a path-splice count. For \(e=\{x,u,v\}\), both \(x\) and \(u\) must occur in the final \(Q-1\) edges of any maximum \(p\)-edge path ending at \(v\), unless the edge has a second intersection with the path. Under \(\mu_P(e)=1\), the unique intersection therefore lies in the overlap of the two terminal intervals obtained from the entrance side and the opposite-terminal side. This overlap contains \(4Q-2p-3\) admissible vertices. Distinct members of \(F_Q\) use distinct admissible vertices by linearity, proving (4).
       
-      ## 3. An exact global identity
+      ## 3. A global identity
       
       Define
       \[
@@ -19049,7 +19049,7 @@
       
       ## 6. Refinement of the selected ascending edges
       
-      The exact identity also controls the intersections at the unique entrance and at the two terminals.
+      The identity also controls the intersections at the unique entrance and at the two terminals.
       
       By (20), \(A-C=o(S)\). Hence, after deleting \(o(S)\) ascending edges, if
       \[
@@ -19503,7 +19503,7 @@
       
       A common terminal may support several ascending edges, so a constant common-terminal bound is false in this generality.
       
-      Finally, the rank-superlevel decomposition does not give a free positive error term at every threshold. The contribution of an induced superlevel must be counted with its exact boundary term. Consequently independent estimates at separate thresholds cannot simply be added.
+      Finally, the rank-superlevel decomposition does not give a free positive error term at every threshold. The contribution of an induced superlevel must be counted with its full boundary term. Consequently independent estimates at separate thresholds cannot simply be added.
 
   • [linp_route03] Route 3 — Terminal-pair cycles and rotations
       STATEMENT
@@ -19731,7 +19731,7 @@
 
   • [linp_route04] Route 4 — Incidence rank and induced paths in the intersection graph
       STATEMENT
-      The incidence matrix and exact three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
+      The incidence matrix and three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
       BODY / PROOF
       # Incidence rank and induced paths in the intersection graph
       
@@ -19775,7 +19775,7 @@
       F\text{ is induced-}P_\ell\text{-free}. \tag{3}
       \]
       
-      ## 2. Exact realizability of the intersection graph
+      ## 2. Realizability of the intersection graph
       
       The graph \(F\) is not arbitrary.
       
@@ -19806,7 +19806,7 @@
       \]
       If \(q,q'\) are nonadjacent, they lie together in no \(C_x\), so \(E_q\cap E_{q'}=\varnothing\). Thus the triples \(E_q\) form a linear \(3\)-graph whose intersection graph is \(F\). ∎
       
-      Any proof of (1) may therefore use the exact three-clique realization furnished by Lemma 2. A theorem for arbitrary induced-path-free graphs is unnecessarily general.
+      Any proof of (1) may therefore use the three-clique realization furnished by Lemma 2. A theorem for arbitrary induced-path-free graphs is unnecessarily general.
       
       ## 3. The spectral identity
       
@@ -20017,13 +20017,13 @@
       
       The low-degree class is excluded by Corollary 5.
       
-      If the intersection graph \(F\) is chordal, then the clique-tree structure and the exact three-clique realization imply
+      If the intersection graph \(F\) is chordal, then the clique-tree structure and the three-clique realization imply
       \[
       m\le \frac32 n.
       \]
       More generally, excess above \(3n/2\) forces linearly many edge-disjoint linear cycles in \(H\). Hence a dense counterexample must have substantial cycle structure.
       
-      A bounded matching number is not enough to imply (1); there are induced-path-free realizable examples showing that this parameter alone only yields a weaker asymptotic coefficient. Therefore a successful rank proof must use the exact incidence realization, not merely coarse graph sparsity.
+      A bounded matching number is not enough to imply (1); there are induced-path-free realizable examples showing that this parameter alone only yields a weaker asymptotic coefficient. Therefore a successful rank proof must use the full incidence realization, not merely coarse graph sparsity.
       
       There are also linear \(3\)-graphs with no special edges and positive incidence nullity. In particular,
       \[
@@ -20048,11 +20048,11 @@
       1. find weights with \(W\) a fixed positive proportion of \(m\) and \(D\) sufficiently smaller than \(\ell\), so that Theorem 4 improves the current coefficient;
       2. prove a bound on \(\beta(T)+h\) strong enough that Proposition 6 forces the desired rank.
       
-      The unresolved step is therefore confined to the high-degree part of the exact three-clique realizability class.
+      The unresolved step is therefore confined to the high-degree part of the three-clique realizability class.
 
   • [linp_route05] Route 5 — Induction on the complement of a longest path
       STATEMENT
-      Deleting a longest path reduces the one-third theorem to an exact inequality involving pairs inside the path, the difference between forbidden and actual path length, and the extremal deficit of the complementary induced subgraph.
+      Deleting a longest path reduces the one-third theorem to an explicit inequality involving pairs inside the path, the difference between forbidden and actual path length, and the extremal deficit of the complementary induced subgraph.
       BODY / PROOF
       # Induction on the complement of a longest path
       
@@ -20083,7 +20083,7 @@
       |E(H)|=m_Y+e_X. \tag{3}
       \]
       
-      ## 1. Exact inductive reduction
+      ## 1. Inductive reduction
       
       ### Lemma 1
       Assume the inductive inequality
@@ -20150,7 +20150,7 @@
       
       The desired proof of (4) is a uniform way of converting those restrictions into the three terms on its right-hand side.
       
-      ## 3. Deletion and the exact change in extremal deficit
+      ## 3. Deletion and the change in extremal deficit
       
       The third term \(D_Y\) cannot be treated as a harmless remainder. It records genuine missing edges outside the longest path.
       
@@ -20356,13 +20356,13 @@
       
       ## 7. Obstruction to the naive deletion argument
       
-      A deletion preserving density does not imply that a vertex-minimal counterexample has been contradicted. Lemma 3 gives the exact conclusion: the deleted vertex is joined by a unique hyperedge to a vertex whose degree falls from \(d+1\) to \(d\).
+      A deletion preserving density does not imply that a vertex-minimal counterexample has been contradicted. Lemma 3 gives the precise conclusion: the deleted vertex is joined by a unique hyperedge to a vertex whose degree falls from \(d+1\) to \(d\).
       
       Accordingly, a proof of (13) must follow the structure created when a deletion is restored. Merely showing that a set can be deleted without lowering the density does not establish the required deficit \(D_Y\).
 
   • [linp_route06] Route 6 — Algebraic and Steiner constructions
       STATEMENT
-      Projective, affine, Boolean, coding, and Steiner constructions are analyzed through explicit spanning-path obstructions; the principal surviving Boolean family is an exact two-point-fibre extension.
+      Projective, affine, Boolean, coding, and Steiner constructions are analyzed through explicit spanning-path obstructions; the principal surviving Boolean family is a two-point-fibre extension.
       BODY / PROOF
       # Algebraic and Steiner constructions
       
@@ -20573,7 +20573,7 @@
       \sum_{x\in S}b_S(x)=2M. \tag{7}
       \]
       
-      For nonzero \(x\), translation by \(x\) partitions the ambient group into pairs \(\{y,y+x\}\). Thus \(b_S(x)\) counts the pairs crossing \(S\), and since \(|S|\) is even,
+      For nonzero \(x\), translation by \(x\) partitions the ambient group into pairs \(\{y,y+x\}\). Thus \(b_S(x)\) counts the pairs with one point in S and the other outside S, and since \(|S|\) is even,
       \[
       b_S(x)\equiv0\pmod2.
       \]
@@ -20621,7 +20621,7 @@
       
       Thus every sufficiently dense Boolean candidate lies in the projective family or a two-point deletion of it. Both families have spanning paths in all sufficiently large dimensions. Therefore this dense Boolean branch has no infinite improvement beyond the small projective exceptions.
       
-      A more general density-beating Boolean example can also be reduced to an exact two-point fibre extension of a smaller quotient: after deleting at most the naturally occurring translation-boundary points, the remaining domain is invariant under a nonzero translation and hence is a full two-point fibre over a quotient. Therefore it is enough to consider such exact fibre extensions.
+      A more general density-beating Boolean example can also be reduced to a two-point fibre extension of a smaller quotient: after deleting at most the naturally occurring translation-boundary points, the remaining domain is invariant under a nonzero translation and hence is a full two-point fibre over a quotient. Therefore it is enough to consider such two-point fibre extensions.
       
       ## 5. Incidence-code obstruction and its limitation
       
@@ -20744,7 +20744,7 @@
       
       These observations rule out the direct higher-dimensional projective, affine, single-weight-code, repeated fibre-extension, symmetric-deletion, ordinary-doubling, and diagonal-tensor enlargements of the preceding small examples.
       
-      ## 7. The exact two-point-fibre problem
+      ## 7. The two-point-fibre problem
       
       The most economical remaining Boolean model has one distinguished point \(\infty\) and, over each point \(x\) of a binary projective quotient, a pair
       \[
@@ -20797,7 +20797,7 @@
       #### Proof
       Consecutive triples meet in \(v_i\). Nonconsecutive graph edges have disjoint endpoint sets because they lie on a graph path, and their colors are distinct because the path is rainbow. Since colors lie outside \(V(G)\), no color can equal a graph-path vertex. Hence nonconsecutive triples are disjoint. ∎
       
-      For \(TD(3,q)\), this representation is exact.
+      For \(TD(3,q)\), this representation describes all blocks.
       
       The following graph theorem gives the asymptotic behavior of full transversal designs.
       
@@ -21100,7 +21100,7 @@
       \]
       Thus every hyperedge appears as a triangle whose edge colors are the opposite vertices.
       
-      ## 2. Exact path translation
+      ## 2. Path translation
       
       Let
       \[

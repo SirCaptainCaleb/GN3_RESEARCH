@@ -1,10 +1,10 @@
 {
   "folder": "template",
-  "live_object_count": 9,
+  "live_object_count": 10,
   "mirror_format": 2,
-  "repository_revision": 9,
+  "repository_revision": 10,
   "research_main_line_count": 0,
-  "research_main_lines_root_id": null,
-  "root_count": 8,
+  "research_main_lines_root_id": "proof_rehearsals01",
+  "root_count": 9,
   "supabase_schema": "__template__"
 }

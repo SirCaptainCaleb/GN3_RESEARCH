@@ -5766,7 +5766,7 @@
 
   • [linp_route01] Route 1 — Snake accounting and the 43/48 equality problem
       STATEMENT
-      The fixed-entrance recurrence and exact snake identity yield the 43/48 bound and reduce near equality to explicit path-intersection and global multiplicity structure.
+      The fixed-entrance recurrence and snake identity yield the 43/48 bound and reduce near equality to explicit path-intersection and global multiplicity structure.
 
   • [linp_route02] Route 2 — Ascending edges in a dense subgraph
       STATEMENT
@@ -5778,15 +5778,15 @@
 
   • [linp_route04] Route 4 — Incidence rank and induced paths in the intersection graph
       STATEMENT
-      The incidence matrix and exact three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
+      The incidence matrix and three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
 
   • [linp_route05] Route 5 — Induction on the complement of a longest path
       STATEMENT
-      Deleting a longest path reduces the one-third theorem to an exact inequality involving pairs inside the path, the difference between forbidden and actual path length, and the extremal deficit of the complementary induced subgraph.
+      Deleting a longest path reduces the one-third theorem to an explicit inequality involving pairs inside the path, the difference between forbidden and actual path length, and the extremal deficit of the complementary induced subgraph.
 
   • [linp_route06] Route 6 — Algebraic and Steiner constructions
       STATEMENT
-      Projective, affine, Boolean, coding, and Steiner constructions are analyzed through explicit spanning-path obstructions; the principal surviving Boolean family is an exact two-point-fibre extension.
+      Projective, affine, Boolean, coding, and Steiner constructions are analyzed through explicit spanning-path obstructions; the principal surviving Boolean family is a two-point-fibre extension.
 
   • [linp_route07] Route 7 — Transversal designs, Latin blow-ups, and products
       STATEMENT

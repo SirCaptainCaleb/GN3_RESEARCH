@@ -6,14 +6,14 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "c83ef9a7970768963f5a5a2b172b3d858304c53eee02306cf4d6891ffa9bb84d"
+body_sha256: "7f5d46461f8a63191e984ec08d0688d309608f829e421f9d613e859ba05702b5"
 created_at: "2026-10-02T04:36:23.82929+00:00"
 id: "linp_route02"
 last_elevation_revision: null
-last_substantive_worker_id: 351
+last_substantive_worker_id: 392
 legacy_id: null
 lifecycle_status: "active"
-math_version: 7
+math_version: 8
 mathematical_status: null
 metadata:
   include_uncertified_major_results: true
@@ -38,10 +38,11 @@ substantive_worker_ids:
   - 336
   - 348
   - 351
+  - 392
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
 title: "Route 2 — Ascending edges in a dense subgraph"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T13:51:06.903969+00:00"
-version: 7
+updated_at: "2026-10-02T15:47:23.744577+00:00"
+version: 8

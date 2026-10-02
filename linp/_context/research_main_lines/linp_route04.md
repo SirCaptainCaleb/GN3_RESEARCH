@@ -2,7 +2,7 @@
 
 ## Statement
 
-The incidence matrix and exact three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
+The incidence matrix and three-clique realization of the intersection graph reduce the one-third upper bound to a rank inequality in the high-degree realizable case.
 
 ## Body
 
@@ -48,7 +48,7 @@ H\text{ is }P_\ell^{(3)}\text{-free}
 F\text{ is induced-}P_\ell\text{-free}. \tag{3}
 \]
 
-## 2. Exact realizability of the intersection graph
+## 2. Realizability of the intersection graph
 
 The graph \(F\) is not arbitrary.
 
@@ -79,7 +79,7 @@ E_q\cap E_{q'}=\{x\}.
 \]
 If \(q,q'\) are nonadjacent, they lie together in no \(C_x\), so \(E_q\cap E_{q'}=\varnothing\). Thus the triples \(E_q\) form a linear \(3\)-graph whose intersection graph is \(F\). ∎
 
-Any proof of (1) may therefore use the exact three-clique realization furnished by Lemma 2. A theorem for arbitrary induced-path-free graphs is unnecessarily general.
+Any proof of (1) may therefore use the three-clique realization furnished by Lemma 2. A theorem for arbitrary induced-path-free graphs is unnecessarily general.
 
 ## 3. The spectral identity
 
@@ -290,13 +290,13 @@ Several simple classes cannot contain a counterexample to (1).
 
 The low-degree class is excluded by Corollary 5.
 
-If the intersection graph \(F\) is chordal, then the clique-tree structure and the exact three-clique realization imply
+If the intersection graph \(F\) is chordal, then the clique-tree structure and the three-clique realization imply
 \[
 m\le \frac32 n.
 \]
 More generally, excess above \(3n/2\) forces linearly many edge-disjoint linear cycles in \(H\). Hence a dense counterexample must have substantial cycle structure.
 
-A bounded matching number is not enough to imply (1); there are induced-path-free realizable examples showing that this parameter alone only yields a weaker asymptotic coefficient. Therefore a successful rank proof must use the exact incidence realization, not merely coarse graph sparsity.
+A bounded matching number is not enough to imply (1); there are induced-path-free realizable examples showing that this parameter alone only yields a weaker asymptotic coefficient. Therefore a successful rank proof must use the full incidence realization, not merely coarse graph sparsity.
 
 There are also linear \(3\)-graphs with no special edges and positive incidence nullity. In particular,
 \[
@@ -321,4 +321,4 @@ Two weaker statements would also advance the argument:
 1. find weights with \(W\) a fixed positive proportion of \(m\) and \(D\) sufficiently smaller than \(\ell\), so that Theorem 4 improves the current coefficient;
 2. prove a bound on \(\beta(T)+h\) strong enough that Proposition 6 forces the desired rank.
 
-The unresolved step is therefore confined to the high-degree part of the exact three-clique realizability class.
+The unresolved step is therefore confined to the high-degree part of the three-clique realizability class.

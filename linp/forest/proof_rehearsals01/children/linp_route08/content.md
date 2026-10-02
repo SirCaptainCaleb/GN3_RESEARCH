@@ -54,7 +54,7 @@ c(xz)=y,\qquad c(yz)=x. \tag{4}
 \]
 Thus every hyperedge appears as a triangle whose edge colors are the opposite vertices.
 
-## 2. Exact path translation
+## 2. Path translation
 
 Let
 \[

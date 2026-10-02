@@ -28,7 +28,7 @@ If the color set is disjoint from \(V(G)\), these triples form a linear \(r\)-ed
 #### Proof
 Consecutive triples meet in \(v_i\). Nonconsecutive graph edges have disjoint endpoint sets because they lie on a graph path, and their colors are distinct because the path is rainbow. Since colors lie outside \(V(G)\), no color can equal a graph-path vertex. Hence nonconsecutive triples are disjoint. ∎
 
-For \(TD(3,q)\), this representation is exact.
+For \(TD(3,q)\), this representation describes all blocks.
 
 The following graph theorem gives the asymptotic behavior of full transversal designs.
 

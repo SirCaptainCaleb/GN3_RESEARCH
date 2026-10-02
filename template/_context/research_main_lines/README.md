@@ -1,3 +1,5 @@
 # Research main lines
 
-No Comprehensive Proof Rehearsals root is defined yet. Add direct children beneath that root to populate this folder.
+Source root: [proof_rehearsals01] Comprehensive Proof Rehearsals
+
+No proof-rehearsal children have been added yet.

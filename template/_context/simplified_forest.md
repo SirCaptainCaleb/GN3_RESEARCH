@@ -3,6 +3,7 @@
 • [archive01] ‹Archive›
   • [proof_rehearsals] ‹Proof Rehearsals›
 • [project_policy] ‹Project-specific policy›
+• [proof_rehearsals01] Top-level collection of comprehensive proof rehearsals for the project's major proof routes.
 • [research_nudges] ‹Research nudges›
 • [research_retrospectives] ‹Research retrospectives›
 • [scheduler_guidance] ‹Scheduler guidance›
