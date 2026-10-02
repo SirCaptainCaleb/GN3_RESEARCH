@@ -59,6 +59,7 @@ contributes at least epsilon p_v to the positive-part sum.
 
 - ID: lensfree_local_oneeighth_paid_clean_011_extraction
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

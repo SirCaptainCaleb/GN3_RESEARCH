@@ -20,6 +20,7 @@ In either case choose x in I_e intersect I_f. Put U=(X-{x}) union {e,f}. Then U-
 
 - ID: two_bad_six_extensions_fourgood01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

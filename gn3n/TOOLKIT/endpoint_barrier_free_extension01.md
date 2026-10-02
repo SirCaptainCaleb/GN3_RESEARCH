@@ -16,6 +16,7 @@ Because m>=7, the right-barrier indices begin at i>=3, so every right-barrier tr
 
 - ID: endpoint_barrier_free_extension01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

@@ -18,6 +18,7 @@ Assume all three have alternative 2, at gap indices i,j,k. Sort the indices. If 
 
 - ID: local45_locked_finite_menu01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

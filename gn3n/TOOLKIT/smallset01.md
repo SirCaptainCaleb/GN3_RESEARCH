@@ -623,6 +623,7 @@ which simplifies to the displayed bound. ∎
 
 - ID: smallset01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

@@ -32,6 +32,7 @@ All three outputs of pathcalc01 therefore yield the asserted nonvacuous local re
 
 - ID: minimum_counterexample_has_a_genuine_reversing_tight_triple
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

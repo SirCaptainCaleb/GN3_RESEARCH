@@ -14,6 +14,7 @@ Apply 41a89ea9eacf. It gives x in X such that both (X-{x}) union {e} and (X-{x})
 
 - ID: five_side_two_bad_endpoint_sixpackage01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

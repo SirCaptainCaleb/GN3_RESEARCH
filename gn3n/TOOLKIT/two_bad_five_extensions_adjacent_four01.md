@@ -52,6 +52,7 @@ Therefore K contains adjacent edges. Their Hamiltonian four-sets share a,b and o
 
 - ID: two_bad_five_extensions_adjacent_four01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

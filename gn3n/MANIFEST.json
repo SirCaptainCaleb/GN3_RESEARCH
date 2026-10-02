@@ -1,9 +1,18 @@
 {
   "brainstorm_count": 0,
-  "generated_at": "2026-10-02T23:42:35.190124+00:00",
+  "generated_at": "2026-10-02T23:59:54.279027+00:00",
   "main_line_count": 6,
+  "main_line_versions": {
+    "defect_lines_and_spanningorder_compression": 1,
+    "deletioncover_compatibility_and_global_obstruction_structure": 1,
+    "proof_rehearsal_index2_quadratic01": 1,
+    "proof_rehearsal_index4_endpoint_transport01": 1,
+    "proof_rehearsal_index5_longest_reversal01": 1,
+    "proof_rehearsal_index6_no_trapping01": 1
+  },
   "mirror_format": 7,
   "research_line_count": 0,
+  "research_line_versions": {},
   "schema": "gn3n",
   "snapshot_event_id": 0,
   "tables": [

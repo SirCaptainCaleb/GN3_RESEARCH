@@ -1,9 +1,20 @@
 {
   "brainstorm_count": 0,
-  "generated_at": "2026-10-02T23:42:36.680879+00:00",
+  "generated_at": "2026-10-02T23:59:56.103476+00:00",
   "main_line_count": 8,
+  "main_line_versions": {
+    "linp_route01": 1,
+    "linp_route02": 1,
+    "linp_route03": 1,
+    "linp_route04": 1,
+    "linp_route05": 1,
+    "linp_route06": 1,
+    "linp_route07": 1,
+    "linp_route08": 1
+  },
   "mirror_format": 7,
   "research_line_count": 0,
+  "research_line_versions": {},
   "schema": "linp",
   "snapshot_event_id": 0,
   "tables": [

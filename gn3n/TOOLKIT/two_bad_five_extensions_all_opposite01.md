@@ -14,6 +14,7 @@ Put S=X union {a,b}, a six-vertex set. By the four-of-six theorem in smallset01,
 
 - ID: two_bad_five_extensions_all_opposite01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

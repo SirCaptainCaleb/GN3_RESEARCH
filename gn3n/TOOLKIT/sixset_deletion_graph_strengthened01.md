@@ -24,6 +24,7 @@ The proof uses neither minimum-counterexample calculus, ambient order, path posi
 
 - ID: sixset_deletion_graph_strengthened01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

@@ -14,6 +14,7 @@ Organizational Toolkit subnode for deletion-cover compatibility mathematics.
 
 - ID: compatibilitytoolkit01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

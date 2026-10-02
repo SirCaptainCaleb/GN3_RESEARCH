@@ -14,6 +14,7 @@ Organizational home for certified reusable potential/rank-growth structure.
 
 - ID: potential_and_rankgrowth_toolkit
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

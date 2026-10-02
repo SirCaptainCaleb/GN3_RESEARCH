@@ -14,6 +14,7 @@ By the two-bad-four-extension lemma in localextend01, F=D union {f,g} is Hamilto
 
 - ID: local_four_fork_interior_lock01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

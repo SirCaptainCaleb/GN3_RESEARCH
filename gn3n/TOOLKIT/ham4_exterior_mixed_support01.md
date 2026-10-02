@@ -14,6 +14,7 @@ Put F=X union {y}, a five-set. If F is Hamiltonian, take F itself. Otherwise the
 
 - ID: ham4_exterior_mixed_support01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

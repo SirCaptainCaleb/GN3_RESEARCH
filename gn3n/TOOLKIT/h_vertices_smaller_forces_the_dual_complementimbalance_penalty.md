@@ -47,6 +47,7 @@ Hence, whenever 4a>2b+2c+3, deleting either displayed endpoint of A and covering
 
 - ID: h_vertices_smaller_forces_the_dual_complementimbalance_penalty
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

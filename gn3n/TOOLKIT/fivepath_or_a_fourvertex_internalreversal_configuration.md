@@ -56,6 +56,7 @@ No cyclic rotation and no path reversal is used.
 
 - ID: fivepath_or_a_fourvertex_internalreversal_configuration
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

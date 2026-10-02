@@ -18,6 +18,7 @@ In outcome (2), K+{d0} and F-{d0} are complementary proper induced sets, the for
 
 - ID: nonham_five_pc2_cube_exact01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

@@ -14,6 +14,7 @@ If H[V(X) union {p_1}] or H[V(X) union {p_m}] is Hamiltonian, move that endpoint
 
 - ID: four_path_long_pair_escape01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

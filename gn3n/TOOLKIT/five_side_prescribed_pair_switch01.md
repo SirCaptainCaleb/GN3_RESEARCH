@@ -14,6 +14,7 @@ Put A=X-{x}, so |A|=4, and put S={p,q}. The sets A and S are disjoint. Apply two
 
 - ID: five_side_prescribed_pair_switch01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

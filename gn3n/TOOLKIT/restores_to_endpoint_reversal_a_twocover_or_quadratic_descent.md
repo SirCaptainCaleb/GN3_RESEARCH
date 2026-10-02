@@ -22,6 +22,7 @@ For an initial-side attachment, let a be the final exterior vertex immediately p
 
 - ID: restores_to_endpoint_reversal_a_twocover_or_quadratic_descent
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

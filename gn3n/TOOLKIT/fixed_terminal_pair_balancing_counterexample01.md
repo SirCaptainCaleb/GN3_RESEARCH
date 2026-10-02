@@ -43,6 +43,7 @@ The obstruction concerns the specified terminal pair, not balanced covers withou
 
 - ID: fixed_terminal_pair_balancing_counterexample01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

@@ -14,6 +14,7 @@ Organizational home for reusable critical-core and threshold-deletion structure.
 
 - ID: criticalcore_and_deletion_toolkit
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

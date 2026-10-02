@@ -14,6 +14,7 @@ This toolkit collects general fractional-cover mathematics extracted from the As
 
 - ID: fractionaltoolkit01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

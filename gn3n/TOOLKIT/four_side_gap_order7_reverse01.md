@@ -14,6 +14,7 @@ The hard gap-network outcome assigns the four vertices x_i to four distinct gaps
 
 - ID: four_side_gap_order7_reverse01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

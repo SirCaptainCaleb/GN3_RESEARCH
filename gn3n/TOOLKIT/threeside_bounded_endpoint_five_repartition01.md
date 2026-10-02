@@ -14,6 +14,7 @@ Fix Z={z,zprime}. Let U=Z union {q_0,q_1,q_2,q_3}, a six-set. The three listed f
 
 - ID: threeside_bounded_endpoint_five_repartition01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

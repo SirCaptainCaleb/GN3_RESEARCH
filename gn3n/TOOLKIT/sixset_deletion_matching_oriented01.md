@@ -14,6 +14,7 @@ By sixset_deletion_graph_strengthened01, absence of adjacent edges forces |D|=4,
 
 - ID: sixset_deletion_matching_oriented01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

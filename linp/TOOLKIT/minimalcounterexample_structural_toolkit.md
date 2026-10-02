@@ -14,6 +14,7 @@ Organizational home for certified structural lemmas used across minimal-countere
 
 - ID: minimalcounterexample_structural_toolkit
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

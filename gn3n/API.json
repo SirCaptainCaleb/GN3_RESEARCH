@@ -23,11 +23,12 @@
     "help()"
   ],
   "research_contract": [
-    "Startup is fully informed: ingest the current artifact, any required startup delta, and the Main Lines before research begins.",
+    "Startup is fully informed from the artifact. Main Lines are read last.",
+    "After choosing a route, use changes() only as a compact freshness check: compare the chosen Main Line and Research Line versions against MANIFEST.json. If a chosen line version differs, fetch only that line with read([id]).",
+    "Mathematical update content is not delivered through changes(); Research Lines and Main Lines are the mathematical synchronization surfaces.",
     "During mathematical research, workers self-police the no-consultation rule and keep intermediate reasoning local.",
-    "Publish only after substantial progress, as one coherent batch; connector-size limits are handled by numbered staging chunks.",
-    "review_staged_batch() is a required concurrency barrier: inspect other-session findings since startup and resolve semantic overlap before commit.",
-    "commit_staged_batch() requires overlap_checked=true and refuses if another session published after the review, forcing a fresh review."
+    "Publish only after substantial progress, as one coherent staged batch.",
+    "review_staged_batch() is a required concurrency barrier and commit_staged_batch() refuses if another session publishes after review."
   ],
   "usage": "Call through the active project schema."
 }

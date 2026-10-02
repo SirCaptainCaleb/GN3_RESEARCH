@@ -16,6 +16,7 @@ Assume therefore that all three labels have alternative 2. Let their obstruction
 
 - ID: three_noninsertables_finite_menu01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

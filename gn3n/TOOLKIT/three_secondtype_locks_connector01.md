@@ -16,6 +16,7 @@ Assume now that i,j,k are pairwise distinct. Then i<j<k, hence k>=i+2. Apply the
 
 - ID: three_secondtype_locks_connector01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

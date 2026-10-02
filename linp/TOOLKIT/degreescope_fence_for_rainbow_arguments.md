@@ -12,6 +12,7 @@ The original 3-uniform degree d_H(v) counts hyperedges through v. After a densit
 
 - ID: degreescope_fence_for_rainbow_arguments
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

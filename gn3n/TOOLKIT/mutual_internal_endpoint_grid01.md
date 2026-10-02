@@ -20,6 +20,7 @@ Whenever one of these four-sets is Hamiltonian, it is proper. Its complement can
 
 - ID: mutual_internal_endpoint_grid01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

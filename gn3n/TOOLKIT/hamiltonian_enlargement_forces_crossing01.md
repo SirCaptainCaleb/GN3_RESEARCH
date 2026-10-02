@@ -14,6 +14,7 @@ Let T=T_1|T_2 be a two-cover of H-v and suppose no ordinary path edge of either 
 
 - ID: hamiltonian_enlargement_forces_crossing01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

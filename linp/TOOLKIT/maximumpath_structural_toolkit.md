@@ -14,6 +14,7 @@ Organizational home for certified LINP lemmas whose statements are reusable inde
 
 - ID: maximumpath_structural_toolkit
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

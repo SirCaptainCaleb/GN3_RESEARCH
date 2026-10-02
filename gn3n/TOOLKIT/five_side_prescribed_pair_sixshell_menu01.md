@@ -18,6 +18,7 @@ Strengthening and earlier use. Apply bad_six_deletion_matching_fourcore01 to the
 
 - ID: five_side_prescribed_pair_sixshell_menu01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

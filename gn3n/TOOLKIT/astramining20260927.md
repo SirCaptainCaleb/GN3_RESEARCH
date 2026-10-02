@@ -67,6 +67,7 @@ fractionaltoolkit01 now lives under methods01, but the static core-toolkit Atlas
 
 - ID: astramining20260927
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

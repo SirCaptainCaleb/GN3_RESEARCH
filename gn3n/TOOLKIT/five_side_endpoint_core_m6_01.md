@@ -14,6 +14,7 @@ If H[V(X) union {p_1}] is Hamiltonian, replace X|P by a Hamilton path on X union
 
 - ID: five_side_endpoint_core_m6_01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

@@ -14,6 +14,7 @@ For W_L, first repartition Q|{x} into the inherited path (q_0,...,q_{q-2}) and t
 
 - ID: facing_k4_local_twomove_formula01
 - Kind: toolkit
+- Version: 1
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
