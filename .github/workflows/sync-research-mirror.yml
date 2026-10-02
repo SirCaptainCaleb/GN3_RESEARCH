@@ -4,7 +4,7 @@ name: Sync research mirror
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 */6 * * *"
   push:
     branches:
       - main
