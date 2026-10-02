@@ -1,5 +1,5 @@
 name: Sync research mirror
-# Manual mirror-sync trigger: 2026-10-02T10:29-04:00
+# Manual mirror-sync trigger after research-context layout and rehearsal updates
 
 on:
   workflow_dispatch:
