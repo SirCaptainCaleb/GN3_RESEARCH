@@ -1,0 +1,47 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "3a240dce2622b2ed123ecb041b54769f798d70772a760694aae04eb24a2263dc"
+created_at: "2026-10-02T04:36:23.82929+00:00"
+id: "linp_route02"
+last_elevation_revision: null
+last_substantive_worker_id: 351
+legacy_id: null
+lifecycle_status: "active"
+math_version: 4
+mathematical_status: null
+metadata:
+  include_uncertified_major_results: true
+  route_index: 2
+  route_key: "ascending_dense_core"
+  synthesis: true
+  taxonomy_version: 2
+object_type: "research"
+origin_worker_id: 336
+parent_id: "proof_rehearsals01"
+position: 2
+research_interface:
+  acceptance: "Researcher-ready synthesis through the first unsupported implication; major provisional mathematics included with trust labels."
+  consumer:
+    - "future LINP researchers"
+    - "coordinator global synthesis"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Dense core → ascending/rank-layer elimination → all-special core or sublinear ascending mass → two-thirds."
+statement_sha256: "a9d840100da9a9e592bd455159130be3294ba2b9fdd65dfac164adc50678e71b"
+substantive_worker_ids:
+  - 336
+  - 348
+  - 351
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Route 2 — Dense-core all-special / ascending-edge rank flow"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T05:15:02.273043+00:00"
+version: 4

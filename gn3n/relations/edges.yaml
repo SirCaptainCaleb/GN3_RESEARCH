@@ -3018,12 +3018,180 @@
     role: "common_four_core_transport_consequence"
   to_id: "1000476"
 -
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000048"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000112"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000268"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000292"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000412"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000472"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000496"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000512"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000633"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000766"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "1000814"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "astra003lambda7reversalcorrection"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "blocked_extender_coherent_sameend_escape01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "centralbridge35"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "centralbridgereach"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "commoncore_fivepair_sixshell_normal01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "compatcomponentdich01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "defectcanonical35_recomp01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "deletion_reachable_escape18"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "deletion_reachable_transport16"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "fivefence01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "same_end_extenders_hall_completion01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "shared_edge_double_reversal_sixpackage01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "terminalfrontier_recomp01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "threeside_trapped_order_le11"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_bounded_endgame01"
+-
+  created_at: "2026-10-02T04:18:10.098615+00:00"
+  from_id: "proof_rehearsal_index6_no_trapping01"
+  kind: "depends_on"
+  metadata:
+  to_id: "unique_small_transport_recomp02"
+-
   created_at: "2026-10-01T06:11:25.936351+00:00"
   from_id: "pair_centered_central_gap_fan01"
   kind: "references"
   metadata:
     role: "central_gap_branch_pairwise_amplification"
   to_id: "central_gap_five_edge_transport01"
+-
+  created_at: "2026-10-02T04:19:58.228241+00:00"
+  from_id: "proof_rehearsal_index5_longest_reversal01"
+  kind: "references"
+  metadata:
+  to_id: "1000270"
 -
   created_at: "2026-10-01T06:11:58.732483+00:00"
   from_id: "1000868"
@@ -3120,6 +3288,12 @@
   kind: "strengthens"
   metadata:
   to_id: "unpositioned_fiveside_vacuous01"
+-
+  created_at: "2026-10-02T04:19:59.852981+00:00"
+  from_id: "proof_rehearsal_index5_longest_reversal01"
+  kind: "references"
+  metadata:
+  to_id: "1000211"
 -
   created_at: "2026-10-01T06:12:21.964715+00:00"
   from_id: "1000876"

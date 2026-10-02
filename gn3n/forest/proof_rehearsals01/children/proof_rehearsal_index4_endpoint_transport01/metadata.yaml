@@ -1,0 +1,65 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "80c0c107b4b27f0f9b2ccf3e7e6c442bfaefe7b418b2a52bd04238cd83093b95"
+created_at: "2026-10-02T04:22:47.600348+00:00"
+id: "proof_rehearsal_index4_endpoint_transport01"
+last_elevation_revision: null
+last_substantive_worker_id: 1285
+legacy_id: null
+lifecycle_status: "active"
+math_version: 5
+mathematical_status: "proposal"
+metadata:
+  artifact_kind: "research_launch_synthesis"
+  category: "endpoint transport / bounded-window gluing"
+  index: 4
+object_type: "research"
+origin_worker_id: 1271
+parent_id: "proof_rehearsals01"
+position: 4
+research_interface:
+  artifact_kind: "research_launch_synthesis"
+  certified_launch_points:
+    - "1000911"
+    - "endpoint_hamiltonicity_crossing_plus_transport01"
+    - "1000559"
+    - "singleton_transfer_endpointization01"
+    - "1000696"
+    - "three_fourcore_extensions_sync01"
+    - "1000476"
+  do_not_backtrack:
+    - "generic reversal/disagreement/crossing existence"
+    - "same-end concatenation from endpoint-extension alone"
+    - "same-slot endpoint-replacement elimination"
+    - "neutral migration justified only by finiteness"
+    - "descent without same-component provenance"
+    - "Hamiltonicity without endpoint realization"
+  first_unsupported_inference: "consume coherent same-end or universal-internal phase-lock and reachable common-core pc2 shells into a two-cover, same-component strict descent, or certified terminating corridor"
+  pending_launch_points:
+    - "1000848"
+    - "shared_edge_double_reversal_sixpackage01"
+    - "commoncore_fivepair_sixshell_normal01"
+    - "blocked_extender_coherent_sameend_escape01"
+  proof_attack_category: "endpoint transport / bounded-window gluing"
+  proof_rehearsal_index: 4
+research_level: "proof_level"
+semantic_container_text: null
+simplified_statement: "INDEX 4 synthesis: bounded pc2 windows occur abundantly in certified common-core families and transport to literal endpoint reversals; closure fails only at phase-locked same-end/internal shells and their normalized bypass residues, where global gluing or well-founded termination is still missing."
+statement_sha256: "dbba6bde0f8051393f7caaec12ff3342364038ef07139891cdc9b5c31b5ea0e8"
+substantive_worker_ids:
+  - 1271
+  - 1194
+  - 1285
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Proof rehearsal IV — endpoint transport and bounded-window gluing"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T05:02:50.549715+00:00"
+version: 7

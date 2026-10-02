@@ -18606,6 +18606,1604 @@
     
     This strengthening pass is mandatory; prolonged optimization is not. Do not spend substantial effort polishing additive constants or lower-order terms unless that refinement affects the target leading term, unlocks a structural argument, resolves a genuine finite obstruction, or is explicitly needed by a downstream theorem.
 
+• [proof_rehearsals01] Comprehensive Proof Rehearsals
+    STATEMENT
+    Organizational home for one comprehensive synthesis rehearsal per major conceptual LINP proof route.
+    BODY / PROOF
+    # Comprehensive Proof Rehearsals
+    
+    This collection contains the eight major conceptual proof and construction routes currently developed in LINP. Each direct child is written as a self-contained mathematical rehearsal: it states the relevant setup, derives the strongest established reduction in that lane, records theorem-level obstructions, and stops at the first unsupported implication.
+    
+    The routes are divided by proof philosophy rather than by database history.
+    
+    ## Upper-bound routes
+    
+    **Route 1 — Snake/contact-defect stability.**  
+    The certified rank-sensitive contact identity gives the 43/48 upper bound. Near equality forces gap-one switching, paid strict rank gaps, and fundamental-cycle certificates. The strongest provisional compression produces linear mass in one of three enriched currencies. The remaining theorem is global bounded reuse across centers.
+    
+    **Route 2 — Dense-core all-specialness and rank flow.**  
+    The global snake defect is exactly the number of ascending nonspecial edges. Threshold superlevels, properly colored terminal graphs, harmonic positive-gap bounds, central packing, and Pósa rotations localize the obstruction to near-top rank bands. The remaining theorem is a cross-rank progress or bounded-overlap result strong enough to make ascending mass lower order.
+    
+    **Route 3 — Rotation-expansion and terminal-pair cycle rank.**  
+    Compress nonspecial edges to their terminal pairs. A maximum-total-rank spanning forest gives one canonical two-sided blocker certificate per unit of cycle rank. The missing theorem must convert these certificates into endpoint expansion, specialness, or a bound on cycle rank plus entrance support.
+    
+    **Route 4 — Incidence rank and induced-path realizability.**  
+    The hyperedge intersection graph is induced-P_ℓ-free and carries an exact three-clique incidence realization. Since NᵀN=3I+A, the one-third target is ℓ·rank(N)≥3m. The low-degree regime is solved; the live problem is the high-degree realizable rank inequality, or an equivalent fractional-weight/nullity theorem.
+    
+    **Route 5 — Longest-path induction with outside defect.**  
+    Deleting the vertices X of a longest k-edge path reduces the one-third theorem exactly to
+    3e_X ≤ binom(|X|,2)+(ℓ−k)|X|+D_Y,
+    where D_Y is the unused inductive extremal capacity of the outside hypergraph. The reduction is proved pending audit. The missing theorem is a uniform structural payment rule realizing these three currencies.
+    
+    **Route 8 — Symmetric 2-shadow and strong-rainbow paths.**  
+    The full 2-shadow has 3m graph edges, and a graph path lifts exactly when its path vertices and edge colors are mutually distinct. Thus the one-third target becomes a strong-rainbow extremal theorem for symmetric triangle-colored graphs. The central obstruction is concentrated reuse of a few hub colors.
+    
+    ## Lower-bound construction routes
+    
+    **Route 6 — Algebraic and Steiner constructions.**  
+    The generic lower benchmark is already at the one-third scale. Binary projective and affine systems yield genuine small exceptions, but large projective systems, naive affine extensions, single-weight code certificates, repeated carrier lifts, full large Steiner systems, symmetric deletion, doubling, and projective tensoring are fenced. The cleanest remaining algebraic problem is the exact one-bit signed-projective model or a genuinely asymmetric near-Steiner family.
+    
+    **Route 7 — Transversal, Latin, blow-up, and product constructions.**  
+    Full transversal designs, arbitrary fixed-template Latin blow-ups along base cycles, shared-color lifts, one-factorizations, and Cartesian powers all create long paths too efficiently. The surviving possibilities are a finite template with exceptional circumference-to-density ratio or a genuinely partial, nonregular, or globally correlated transversal construction.
+    
+    ## Shared notation and status
+    
+    Throughout the upper-bound rehearsals, φ(v) denotes maximum endpoint path length and φ(e) maximum last-edge path length. For a nonspecial edge, the unique entrance and the two terminals are used consistently. An ascending edge satisfies φ(entrance)=φ(e)−1.
+    
+    The rehearsals distinguish four mathematical statuses in prose:
+    
+    - certified results may be used as established inputs;
+    - proved but pending-audit results are included optimistically but marked at the point where they become load-bearing;
+    - proposals and conjectures are presented only as conditional mechanisms or residual targets;
+    - refuted implications and no-go theorems are recorded only when forgetting them would cause substantial backtracking.
+    
+    No database object identifier is required to understand a route. Provenance remains in the underlying research tree and can be consulted for audit, but the mathematical exposition is intended to stand without it.
+    
+    ## Interfaces and consistency
+    
+    Routes 1, 2, and 3 share maximum-path, blocker, and rotation technology but have different closure invariants: Route 1 studies stability at the 43/48 equality case; Route 2 eliminates ascending mass across rank layers; Route 3 controls terminal-pair cycle complexity.
+    
+    Route 3 interfaces with Route 4 through the bound of incidence nullity by terminal-cycle rank plus entrance support. A global rotation-expansion theorem would therefore have both combinatorial and algebraic consequences.
+    
+    Routes 4 and 5 are independent one-third upper programs: one counts incidence dimension, the other inductive pair capacity. Neither assumes the closure theorem of the other.
+    
+    Routes 2 and 8 meet only when rank information is deliberately reintroduced into the shadow representation. The unrestricted symmetric-shadow problem remains Route 8; rank-superlevel arguments remain Route 2.
+    
+    Routes 6 and 7 are complementary lower-construction philosophies. Route 6 seeks a persistent global algebraic obstruction inside dense designs, whereas Route 7 asks whether a finite seed can be amplified by local combinatorial gadgets. The route-packing theorems in Route 7 explain why many Route-6 seeds cannot simply be blown up.
+    
+    Across the upper routes, the recurring unresolved phenomenon is global reuse: many local certificates are already available, but several centers may charge the same witness, entrance, endpoint, pair resource, or hub color. Incidence rank is the main route that may bypass an explicit injection by bounding the dimension of that reuse.
+    
+    ## Current collection status
+    
+    The collection contains eight distinct routes and no duplicate rehearsals. Each route now ends at a mathematically stated residual obstruction rather than a database-navigation instruction. Major proved-but-uncertified results are included where they change the actual frontier, and historical branches are compressed once a theorem-level obstruction is known.
+    
+    The intended reading order is not prescriptive. A researcher may enter through any route and reach the current frontier without first reconstructing the project history.
+
+  • [linp_route01] Route 1 — Snake/contact-defect and post-43/48 stability
+      STATEMENT
+      Comprehensive synthesis of the direct snake/contact-accounting route from the rank-sensitive 43/48 theorem through near-extremal switching, paid strict-gap structure, and the current global-reuse closure gap.
+      BODY / PROOF
+      # Route 1. Snake/contact-defect stability beyond the 43/48 bound
+      
+      ## Goal and status
+      
+      Let H be a finite linear 3-uniform hypergraph. For a vertex v, let φ(v) be the maximum length of a linear path whose last vertex is v; for an edge e, let φ(e) be the maximum length of a linear path whose last edge is e. An edge e is special if every vertex of e can occur as the last vertex of a longest path ending in e. Otherwise e has a unique entrance x; it is ascending when φ(x)=φ(e)−1. The other two vertices are terminals of e.
+      
+      This route starts from the certified rank-sensitive 43/48 inequality and asks whether equality can persist. The current mathematics reduces a near-extremal counterexample to a large family of clean, strict-rank-gap, cycle-certified payment objects. The first genuinely unsupported step is global: the same higher-rank path, blocker, switcher triangle, or superlevel output may be reused by many different centers. No local case analysis presently rules out that reuse.
+      
+      The theorem sought by this route is therefore a bounded-reuse theorem strong enough to turn the already-forced linear mass of local certificates into a positive global defect.
+      
+      ## 1. Exact contact identity
+      
+      For each nonisolated vertex v, put p_v=φ(v). Let T(v) be the family of ascending nonspecial edges terminal at v, let t(v)=|T(v)|, and, when T(v) is nonempty, let q(v)=max{φ(e): e∈T(v)}. For p≥7 define
+      
+      β(p)=⌊(11p−16)/8⌋,
+      
+      with β(1),…,β(6)=0,1,2,2,3,5.
+      
+      Choose for every v a maximum p_v-edge path P_v, aligned with a rank-p_v ascending terminal edge whenever one exists. For an edge incident with v, record how many off-v vertices it has on the precursor of P_v. Let D_v be the excess coming from double contacts, and set
+      
+      η_v = β(p_v) − t(v) + D_v.
+      
+      The fixed-entrance and central-window estimates imply η_v≥0. More precisely, if q(v)=p_v then
+      
+      t(v)−D_v ≤ ⌈(3p_v−4)/4⌉,
+      
+      whereas if q(v)<p_v then
+      
+      t(v) ≤ γ(q(v)),  γ(q)=⌊(11q−5)/8⌋ for q≥4,
+      
+      and the central window also gives t(v)−D_v ≤ max(0,2p_v−7). Combining the cases yields t(v)−D_v≤β(p_v).
+      
+      Let A be the number of ascending edges, C the number of clean ascending-source incidences in the chosen path system, D=Σ_v D_v, η=Σ_v η_v, and Q≥0 the total unused contact capacity on the paths P_v. The exact contact count is
+      
+      3m − C + D = 2Σ_v p_v − n_+ − Q,
+      
+      where n_+ is the number of nonisolated vertices. Since every ascending edge has two terminals, Σ_v t(v)=2A, and therefore
+      
+      Σ_v β(p_v)=2A−D+η.
+      
+      Substitution gives the exact identity
+      
+      6m = Σ_v(4p_v−2+β(p_v)) − D − η − 2(A−C) − 2Q.      (1)
+      
+      Every term subtracted on the right is nonnegative.
+      
+      If H is P_ℓ-free, then p_v≤ℓ−1. Since 4p−2+β(p) is increasing,
+      
+      m ≤ ((43ℓ−75−ρ_ℓ)/48)n ≤ ((43ℓ−75)/48)n      for ℓ≥8,
+      
+      where ρ_ℓ is the residue produced by the floor in β. This is the certified starting theorem for the route.
+      
+      ## 2. What near equality forces
+      
+      Write S=Σ_v p_v. Along a sequence with m=(43/48−o(1))S and S/n_+→∞, identity (1) forces
+      
+      D + η + 2(A−C) + 2Q = o(S).      (2)
+      
+      Thus almost all endpoint-rank mass lies at vertices where η_v is small.
+      
+      For p=p_v≥8, the aligned case q(v)=p is expensive:
+      
+      η_v ≥ β(p)−⌈(3p−4)/4⌉ ≥ (5p−24)/8.
+      
+      Hence a near-extremal high-rank vertex cannot usually be aligned. In the misaligned case,
+      
+      η_v ≥ β(p)−γ(q(v)).
+      
+      Because β(p)=γ(p−1), exact zero deficit forces
+      
+      q(v)=p−1,   t(v)=γ(p−1)=β(p),   D_v=0.
+      
+      Thus the unique dangerous shell is the gap-one shell.
+      
+      Fix p=q+1, a rank-q ascending terminal anchor, a maximum rank-q anchor path Q, and the chosen maximum p-path P_v. Let
+      
+      δ_v = γ(q) − (t(v)−X_v^T)
+      
+      be the gap-one switching slack, where X_v^T is the excess contact multiplicity of T(v) on P_v. Since X_v^T≤D_v, δ_v≤η_v. The gap-one switching theorem then gives at least
+      
+      ⌊5q/8⌋ − δ_v
+      
+      members of T(v) that are double on Q but single on P_v. Their two off-v vertices form a matching crossing the cut between anchor vertices retained by P_v and anchor vertices omitted by P_v. Hence small η_v forces a switching matching of size (5/8−o(1))q, and its retained endpoints give the same order of balanced endpoint lenses.
+      
+      Thus near equality is not merely a density statement: it manufactures a large, organized switching geometry at almost every high-rank center.
+      
+      ## 3. Paid strict-gap extraction
+      
+      The switching geometry can be sharpened. After discarding o(S) center-edge incidences, one obtains for almost every relevant center v a family G_v with
+      
+      |G_v| ≥ p_v/8 − o(p_v)
+      
+      such that every e={x,v,u}∈G_v satisfies all of the following:
+      
+      1. x is the unique entrance and e is source-clean on the chosen maximum path at x;
+      2. e is terminal-single on the chosen maximum paths at both terminals v and u;
+      3. e has strict rank gap at both terminals: φ(e)<min{φ(v),φ(u)};
+      4. e carries the common-anchor payment certificate produced by the switching argument.
+      
+      There is already a certified theorem-closing criterion at this point: if these selected certificates can be assigned so that a rank-p vertex is used by only g(p)=o(p) centers, then no 43/48-near-extremal sequence exists. Thus the local extraction is strong enough; the missing issue is congestion.
+      
+      ## 4. Fundamental-cycle normalization
+      
+      Form the terminal-pair graph J whose edges are the terminal pairs of the source-clean, doubly-terminal-single ascending edges. Give each terminal-pair edge the rank of its hyperedge. In every component choose a spanning tree of maximum total rank, and let F be the resulting forest.
+      
+      Because F has fewer than n_+ edges while S/n_+→∞, deleting paid incidences whose terminal pair belongs to F costs only o(S). We retain subfamilies H_v⊆G_v satisfying
+      
+      Σ_v (p_v/8 − |H_v|)_+ = o(S).      (3)
+      
+      For e∈H_v, the terminal pair of e is a nonforest edge. Let C_e be its fundamental cycle. If a tree edge f on C_e had smaller rank than e, replacing f by e would increase the total tree rank, contradicting maximality. Hence e is a minimum-rank edge on C_e.
+      
+      Let f be either cycle-neighbor of e and let w be their common terminal. Since φ(f)≥φ(e), a maximum path witnessing w as a terminal of f cannot meet e only at w; otherwise appending e would force φ(e)>φ(f). Therefore e has an additional blocker contact with each of the two neighboring terminal witnesses.
+      
+      Consequently almost all of the local p_v/8 paid mass may simultaneously be required to be source-clean, terminal-single at both ends, strict-gap at both ends, a minimum-rank nonforest chord, and equipped with canonical blocker contacts on both sides.
+      
+      ## 5. Three enriched currencies
+      
+      A further theorem, proved but still pending independent audit, compresses the remaining local alternatives. After discarding centers carrying only o(S) total rank, every relevant center v has a selected family H_v as above and at least one of the following occurs:
+      
+      - U: at least (1/16−o(1))p_v members of H_v are terminal-retained on the host path;
+      - T: at least (1/128−o(1))p_v distinct early doubly occupied certificate cells occur, hence that many switcher triangles;
+      - Z: at least (1/128−o(1))p_v distinct early paid cells have distinct standard output edges lying in the superlevel V_{≥p_v}={w:φ(w)≥p_v}.
+      
+      Partitioning centers according to a witnessing case shows that at least one of U,T,Z has total center-indexed mass Ω(S); using the weakest displayed coefficient gives at least (1/384−o(1))S.
+      
+      The fundamental-cycle certificate survives in every branch. Optimistically, the near-extremal proof has therefore reached a theorem-wide trichotomy: one of three globally meaningful currencies has linear mass, and every unit of that mass carries strict rank gap plus a cycle/blocker certificate.
+      
+      This trichotomy is not yet certified, so a final proof would have to audit it before using it as a theorem.
+      
+      ## 6. Local hostile configurations already normalized
+      
+      Several proved-but-pending-audit results show that further local case splitting is unlikely to be the missing ingredient.
+      
+      Near-saturated gap-one vertices already force a (5/8)q−O(1) switching matching across every anchor/maximum-path cut. Lens-free near-top source rails retain a linear family of whole distinguished chords and have overlap at least (5/4−o(1))q, while stronger pairs have (16/11−o(1))q common vertices. Reciprocal unique source-rail contacts force balanced terminal lenses in the remaining one-low configuration. At the odd central boundary p=2q−3, two low-rank members force a double contact, and the sole all-single one-low state has a rigid terminal-only pattern. Rigid zero-slack states expose either the target/return cut needed for a fixed-target exchange or a common half-neighborhood with parity-forced transverse connectors. The small rank-five 4455 branches collapse to explicit rail forms, Class-III blocker defects reduce to one or two alternating chains, lens-free flat terminal cycles have late aligned joints and no 5-cycle, and good-residue two-hole witnesses produce four large edge-disjoint blocker matchings.
+      
+      The common message is that the surviving local configurations already expose shared global resources. None of these local theorems bounds how many centers may reuse those resources.
+      
+      ## 7. Known dead ends
+      
+      Several natural continuations have already failed. Cumulative fixed-entrance bounds do not imply that a positive proportion of paid mass has uniformly lower rank. Clean strict-gap edges need not satisfy naive four-edge spacing, even inside favorable-looking double cells; the common-anchor switching data are essential. A switcher triangle belonging to a double cell cannot be charged independently to every occupant. Most importantly, center-indexed certificates are not globally distinct objects: counting them as distinct is precisely the unresolved congestion error.
+      
+      These failures do not kill the route. They identify the level at which a new theorem is required.
+      
+      ## 8. First unsupported implication
+      
+      The attempted proof stops at the following statement.
+      
+      **Residual bounded-reuse target.** In a 43/48-near-extremal sequence normalized as above, suppose one of U,T,Z has Ω(S) center-indexed mass and every selected edge carries strict two-terminal rank gap and its clean minimum-rank fundamental-cycle certificate. Prove that this much center-indexed mass cannot be supported with unbounded multiplicity by o(S) global resources unless one of the defect terms D, η, A−C, or Q in (1) is itself Ω(S).
+      
+      Any inequality of this form contradicts (2) and therefore yields a strict improvement below 43/48. The older sufficient condition g(p)=o(p) for the selected strict-gap certificates is a certified special case of the same desired phenomenon.
+      
+      There is presently no justified implication from the enriched local trichotomy to this global bounded-reuse conclusion. The proof must stop here.
+      
+      ## Research handoff
+      
+      The strongest next target is a global charging theorem for one of U,T,Z, preferably using the surviving fundamental-cycle certificate to control how many centers can share one witness, blocker, triangle, or superlevel output. A successful theorem need only force a positive proportional defect; it need not solve the full two-thirds or one-third problem.
+      
+      Do not return to local coefficient polishing or another finite normal-form split without a genuinely new global invariant. The local equality theory is already highly constrained; the unresolved mathematics is cross-center reuse.
+      
+      Status note: the exact 43/48 identity and the strict-gap/fundamental-cycle extraction are certified. The three-currency compression and several local normal-form theorems summarized above are proved but pending audit and are included because they determine the current frontier.
+
+  • [linp_route02] Route 2 — Dense-core all-special / ascending-edge rank flow
+      STATEMENT
+      Comprehensive synthesis of the two-thirds upper-bound program based on dense-core normalization, elimination of nonspecial ascending edges by rank layers, and all-special closure.
+      BODY / PROOF
+      # Route 2. Dense-core all-specialness and ascending-edge rank flow
+      
+      ## Goal and setup
+      
+      This route seeks the two-thirds upper coefficient. Let H be an n-vertex P_ℓ-free linear 3-uniform hypergraph with m edges. For a vertex v let φ(v) be the maximum length of a linear path ending at v, and for an edge e let φ(e) be the maximum length of a linear path ending in e. A nonspecial edge e has a unique entrance x; it is ascending when φ(x)=φ(e)−1, the remaining two vertices being terminals.
+      
+      The route begins with the standard density-core reduction. If an extremal inequality m≤dn is hereditary, then a counterexample contains an induced subhypergraph of density at least d and minimum degree greater than d. Thus, for a two-thirds theorem, it is enough to work in a dense core with minimum degree just above 2ℓ/3.
+      
+      The ideal conclusion is that every edge of such a core is special. That conclusion is stronger than necessary. The actual quantitative target is to show that the number of ascending nonspecial edges is lower order, or equivalently that each high-rank vertex supports only a sublinear number of ascending terminal incidences.
+      
+      ## 1. The global defect is exactly the ascending mass
+      
+      Let A denote the number of ascending nonspecial edges. The basic snake-incidence count gives
+      
+      3m − A ≤ Σ_v (2φ(v)−1) ≤ (2ℓ−3)n.      (1)
+      
+      The reason for the single defect A is exact: for an incident pair (v,e), one always has φ(e)≤φ(v)+1, and equality occurs precisely when e is nonspecial ascending and v is its unique entrance. Thus every incidence behaves as in the all-special count except the unique entrance incidence of an ascending edge.
+      
+      Consequently
+      
+      m ≤ ((2ℓ−3)/3)n + A/3.      (2)
+      
+      Hence the leading two-thirds coefficient follows as soon as
+      
+      A=o(ℓ n).      (3)
+      
+      A convenient sufficient local statement is the following. Let c(v) be the number of ascending nonspecial edges for which v is a terminal. If c(v)≤g(φ(v)) for every v, then, because each ascending edge has two terminals,
+      
+      A ≤ (1/2)Σ_v c(v) ≤ (n/2)g(ℓ−1),
+      
+      and therefore
+      
+      m ≤ ((2ℓ−3)/3 + g(ℓ−1)/6)n.      (4)
+      
+      In particular, any uniform bound g(p)=o(p) proves the two-thirds leading coefficient. A square-root bound already suffices with only a lower-order loss. Thus the route does not require literal all-specialness; it requires summable control of the ascending defect.
+      
+      ## 2. Rank superlevels turn ascending edges into flow
+      
+      For t≥1 define the vertex-rank superlevel
+      
+      V_t={v:φ(v)≥t}.
+      
+      Among hyperedges of rank at least t, the edges crossing the cut V_t are exactly the rank-t ascending nonspecial edges: their unique entrance lies outside V_t and their two terminals lie inside V_t. Thus every ascending edge is a boundary-crossing object at exactly one rank.
+      
+      There are two equivalent ways to encode this flow.
+      
+      First, orient every ascending edge from its entrance x toward each terminal. Along any directed path in this orientation, vertex rank rises strictly; a directed path of length r therefore yields rank increase at least r and, in particular, a hypergraph path of length at least r.
+      
+      Second, fix a threshold t and form the graph R_t on terminal vertices by joining the two terminals of every ascending nonspecial edge whose entrance has rank below t and whose terminals have rank at least t. Color the terminal pair by its entrance. Linearity makes this coloring proper. Moreover R_t contains no rainbow t-edge path: such a path would lift through its distinct entrance colors to a hypergraph path of length t whose endpoint ranks contradict the definition of the threshold.
+      
+      Thus an ascending edge cannot wander arbitrarily through rank space. It either crosses a superlevel, participates in a proper-colored rainbow-free terminal graph, or lies on a strictly rank-increasing directed chain.
+      
+      A stronger certified form is useful when the entrance-to-terminal rank gap is positive. If an edge e has entrance potential a(e) and the smaller terminal potential p(e)>a(e), then the positive-gap threshold graphs imply the global harmonic estimate
+      
+      Σ_e (1/a(e) − 1/p(e)) = O(n log ℓ),      (5)
+      
+      with an explicit certified constant. This already controls edges that make a substantial multiplicative rank jump. Therefore the genuine leading-order difficulty is concentrated where the entrance and terminal ranks are close.
+      
+      ## 3. Local packing near a terminal
+      
+      Fix a vertex v with p=φ(v). Assign every ascending nonspecial edge e={x,v,u} to a terminal of minimum terminal rank; then φ(u)≥p. Such an assigned edge will be called charged at v.
+      
+      Every maximum p-edge path ending at v contains x or u, and for distinct charged edges the pairs {x,u} are disjoint. If C_Q(v) denotes the charged edges of rank at most Q, where
+      
+      ⌈(p+2)/2⌉ ≤ Q ≤ p,
+      
+      then the central-window packing theorem gives
+      
+      |C_Q(v)| ≤ 4Q−2p−1.      (6)
+      
+      Equivalently, if the charged ranks are q_1≤⋯≤q_k, then
+      
+      q_i ≥ ⌈(2p+i+1)/4⌉.      (7)
+      
+      This already rules out a large low-rank packet at one terminal. A sharper spacing theorem applies to clean entrance-only contacts on a chosen maximum path: if their rank deficit is at least D, then only
+      
+      O(p/(D+1)+1)
+      
+      such edges can occur. Hence all but a lower-order part of any large charged family lies in a narrow near-top rank band.
+      
+      There is an important conditional benchmark here. A suitable four-edge convex spacing inequality for four charged edges at one terminal would imply
+      
+      c(v)≤3+⌈log_2 p⌉
+      
+      and hence, by (4),
+      
+      m ≤ ((2ℓ+⌈log_2(ℓ−1)⌉)/3)n.
+      
+      So a logarithmic terminal-degree theorem is already enough for the two-thirds leading coefficient. However the required spacing statement is not presently proved, and several tempting stronger variants are false even for clean strict-rise families. The spacing program therefore identifies a sufficient mechanism, not an established closure.
+      
+      ## 4. Rotation reduction of the remaining defect
+      
+      The rank-flow picture can be combined with longest-path rotations to isolate the surviving obstruction more sharply.
+      
+      For every nonspecial nonascending edge f with unique entrance x, define
+      
+      r(f)=⌈φ(x)/(φ(f)−1)⌉−2,
+      
+      and put R=Σ_f r(f). Then
+      
+      3m−A+R ≤ Σ_v(2φ(v)−1) ≤ (2ℓ−3)n.      (8)
+      
+      Thus nonascending nonspeciality already pays an explicit positive correction. The hard mass is ascending.
+      
+      Now fix for each v a maximum p=φ(v) path P_v ending at v and assign every ascending edge to a minimum-rank terminal v. Apart from at most one last edge per vertex, every assigned edge falls into one of three path-relative types:
+      
+      - D: both the entrance x and opposite terminal u lie on P_v;
+      - X: x lies on P_v and u lies off P_v;
+      - U: u lies on P_v and x lies off P_v.
+      
+      Let B be the double-blocker compensation, and let S_X,S_U be the total numbers of X- and U-edges. Then
+      
+      A ≤ B+S_X+S_U+n,      (9)
+      
+      and, writing N=(2ℓ−3)n,
+      
+      5m+s+R ≤ 2N+S_X+S_U+n,      (10)
+      
+      where s is the number of special edges.
+      
+      For every fixed ε>0, the X-edges with
+      
+      φ(e) ≤ (1−ε)φ(v)
+      
+      contribute only O_ε(n). Thus the X-obstruction is again forced into the near-top rank band.
+      
+      The U-edges have a different structure. A terminal-only U-edge gives a length-preserving Pósa rotation of P_v. For a fixed charged pair (P_v,v), the resulting canonical rotated endpoints have potential at least p, and each endpoint is produced by at most two U-edges. Consequently
+      
+      |U(P_v,v)| ≤ 2|W(P_v,v)|+1,      (11)
+      
+      where W(P_v,v) is the set of resulting high-potential endpoints.
+      
+      Equations (8)–(11) reduce the leading-order problem to two related phenomena:
+      
+      1. near-top clean entrance chords whose rank deficit is too small for the harmonic and spacing bounds to dispose of them; and
+      2. large families of high-potential Pósa endpoints whose overlap across different centers has not been controlled.
+      
+      This is the current strongest certified compression of the route.
+      
+      ## 5. The dense-core stability branch
+      
+      There is a second organization of the same obstruction. Along a longest path, let U_v be the available terminal capacity at a vertex v and S_v the actually occupied terminal incidence. The exact local identity
+      
+      U_v−S_v = 2(L−d_H(v))
+      
+      shows that in a dense minimum-degree core the amount of unused terminal capacity is small whenever d_H(v) is close to the longest-path length L.
+      
+      This creates a natural dichotomy.
+      
+      If many vertices have substantial unused capacity, the resulting open blocker defects should support rotations and endpoint expansion. If very few defects remain, the local incidence structure is forced toward a near-saturated, punctured-Steiner-type configuration in which almost every allowable pair is already occupied. The latter regime is highly rigid and is the natural home of the zero-slack and blocker-matching normal forms developed elsewhere in LINP.
+      
+      This dichotomy is presently a strategy rather than a theorem closing the route. Its value is that it explains why the same two enemies keep reappearing: either rotations must expand, or near-saturation must become globally impossible.
+      
+      ## 6. Known obstructions
+      
+      Several apparently simpler arguments are already ruled out.
+      
+      The minimum-degree hypothesis is essential: sparse star-type examples defeat unrestricted all-specialness. The full ascending terminal graph need not be rainbow-P4-free, even inside one equal-potential level, so one cannot apply an ordinary rainbow-path theorem globally. Nor is the ascending terminal graph necessarily a forest or pseudoforest.
+      
+      The old idea that every proper rank superlevel contributes a free positive boundary defect is false; the correct induced-core identity contains an explicit correction term. A universal tiny common-terminal degree is also false: one vertex can support several ascending terminal edges. Likewise, nonspeciality does not automatically propagate toward the maximum-rank terminal.
+      
+      Finally, naive four-edge spacing is too strong. There are clean strict-rise charged families violating simple spacing inequalities. Any successful spacing theorem must use the precise charged geometry or an additional certificate, not only the ordered edge ranks.
+      
+      These fences eliminate the most tempting shortcuts but leave the rank-flow philosophy intact.
+      
+      ## 7. First unsupported implication
+      
+      The proof reaches the following exact frontier.
+      
+      **Cross-rank progress target.** In a P_ℓ-free dense core of minimum degree above the two-thirds threshold, prove that every macroscopic family of ascending nonspecial edges must satisfy at least one of the following:
+      
+      1. it creates a positive proportion of special edges;
+      2. it pays a summable rank or blocker defect, enough to make A=o(ℓ n);
+      3. its members move monotonically through rank bands into fresh high-potential endpoints or stricter terminal configurations, with bounded global reuse.
+      
+      Equivalently, it is enough to prove a uniform sublinear terminal bound
+      
+      c(v)=o(φ(v))
+      
+      or any theorem implying A=o(ℓ n).
+      
+      The certified harmonic estimate handles genuine positive gaps, the central-window theorem handles substantial rank deficit, and the rotation reduction turns terminal-only mass into high-potential endpoints. What is not proved is the global termination or bounded-overlap statement for the narrow near-top band. The argument stops there.
+      
+      ## Research handoff
+      
+      The strongest next target is a theorem controlling overlap of the near-top clean chords and Pósa endpoint packets across centers, or a monotone rank-band transfer theorem showing that repeated failure to become special consumes fresh global resources. A full all-special theorem would close the route, but it is stronger than necessary.
+      
+      Do not retry unrestricted all-specialness, global rainbow-P4-freeness, free superlevel-defect summation, or generic four-edge spacing. The rank-flow machinery has already isolated the useful part of those ideas. The remaining issue is theorem-wide progress and reuse, not another local constant improvement.
+      
+      Status note: the global defect identity, threshold graphs, positive-gap harmonic estimate, central packing, and rotation localization used above are certified. The dense-core defect-stability dichotomy and the strongest four-edge spacing formulation remain proposal-level ingredients and have been marked as such.
+
+  • [linp_route03] Route 3 — Rotation-expansion and terminal-pair cycle rank
+      STATEMENT
+      Comprehensive synthesis of the Pósa-style rotation and terminal-pair graph route for forcing special-edge density or bounded cycle complexity.
+      BODY / PROOF
+      # Route 3. Rotation-expansion and terminal-pair cycle rank
+      
+      ## Goal and setup
+      
+      Let H be a P_ℓ-free linear 3-uniform hypergraph with m edges and n vertices. Write s for the number of special edges. For every nonspecial edge e, let x be its unique entrance and let {u,v} be its terminal pair. Because H is linear, two nonspecial edges cannot have the same terminal pair, so the terminal pairs form a simple graph T.
+      
+      The route seeks a quantitative theorem saying that T cannot contain too many independent cycles unless the corresponding blocker obligations force endpoint expansion, rank growth, extra entrance support, or special edges.
+      
+      The starting snake inequality is
+      
+      2m+s ≤ (2ℓ−3)n.      (1)
+      
+      Thus any lower bound s≥εm−O(n) gives a strict leading improvement below coefficient 1. More strongly, if the nonspecial complexity is O(n), then (1) reaches the two-thirds scale.
+      
+      The natural measure of that complexity is the cycle rank
+      
+      β(T)=|E(T)|−|V(T)|+κ(T),
+      
+      where κ(T) is the number of connected components.
+      
+      ## 1. Why a terminal cycle carries hypergraph structure
+      
+      Give each edge uv of T the rank of its parent hyperedge. In every connected component choose a spanning tree F of maximum total edge rank.
+      
+      Let e be a nonforest edge and let C_e be its fundamental cycle in F+e. If some tree edge f on C_e had smaller rank than e, replacing f by e would increase the total tree rank. Therefore
+      
+      rank(e) ≤ rank(f)
+      
+      for every tree edge f of C_e. In particular the two cycle-neighbors of e have rank at least rank(e).
+      
+      Now let e and f be adjacent on C_e, sharing terminal v. Suppose φ(f)≤φ(e), and take a maximum path P witnessing v as a terminal of e. If f met P only at v, then appending f at v would produce a path longer than φ(f), in fact forcing
+      
+      φ(f) ≥ φ(e)+1,
+      
+      a contradiction. Hence f must meet P at a second vertex.
+      
+      Applied on both sides of e, this proves:
+      
+      **Fundamental-cycle blocker lemma.** Every nonforest edge e has two canonical blocker obligations, one from each neighboring edge of its fundamental cycle.
+      
+      Since the number of nonforest edges is exactly β(T), one obtains one canonical two-sided blocker certificate per unit of terminal-pair cycle rank.
+      
+      This is the first substantive reduction: β(T) is not abstract graph cycle rank. Every one of its units is tied to explicit maximum-path contacts in H.
+      
+      ## 2. Rotation primitives
+      
+      The blocker contacts are useful because they support length-preserving rotations.
+      
+      Let
+      
+      P=(e_1,e_2,…,e_p)
+      
+      be a linear path and let f be an edge outside P meeting e_p and exactly one earlier edge e_j. If j≤p−2, then
+      
+      (e_1,…,e_j,f,e_p,e_{p−1},…,e_{j+2})
+      
+      is again a p-edge linear path, with a new endpoint. If j=p−1 there is the analogous one-step replacement.
+      
+      For a globally longest path ending in a nonspecial edge, the permitted contact positions are even more restricted. A two-contact competitor cannot have its earlier contact exactly two positions before the end, and a single-blocker rotation likewise excludes that position. These localization facts ensure that a genuine blocker normally creates a distinct endpoint or forces an additional contact.
+      
+      There is also a rank version. If e and f share terminal v and a maximum terminal witness for e meets f only at v, then the absence of a blocker forces a rank jump of at least two. More generally, if p=φ(e), q=φ(f)≤p, and f occupies r vertices of a p-edge witness for e, then
+      
+      2≤r≤3
+      and
+      p≤r(q−1).      (2)
+      
+      In particular, if p≥2q−1, then all three vertices of f lie on the witness.
+      
+      Thus failure of a blocker is not harmless: it produces rank growth. The route is designed around this dichotomy:
+      
+      - blocker contact  →  rotation and endpoint motion;
+      - no blocker contact  →  quantitative rank increase.
+      
+      ## 3. The cycle-rank hinge
+      
+      Suppose one could prove
+      
+      β(T) ≤ C s + D n      (3)
+      
+      for fixed constants C,D. Combining the number of forest edges with (1) yields
+      
+      m ≤ [2(C+1)ℓ−3(C+1)+D+1]/(2C+3) · n.      (4)
+      
+      Hence the leading coefficient would be
+      
+      2(C+1)/(2C+3)<1.
+      
+      In the particularly important case β(T)=O(n), equation (4) has leading coefficient 2/3.
+      
+      This gives the route a precise target: a theorem bounding cycle rank by special-edge mass and linear support complexity is enough to improve the Turán coefficient. One need not classify all cycles individually.
+      
+      ## 4. Entrance support and the incidence bridge
+      
+      There is a reason special edges alone cannot pay for all cycles. Let h be the number of distinct entrance vertices used by nonspecial edges, and let N_ns be the vertex-edge incidence matrix restricted to nonspecial columns. Then
+      
+      nullity(N_ns) ≤ β(T)+h.      (5)
+      
+      For the full incidence matrix N,
+      
+      nullity(N) ≤ β(T)+h+s.      (6)
+      
+      The proof is elementary in spirit. Choose a spanning forest of T. Along each tree component, once entrance variables are fixed, the nonspecial incidence columns can be eliminated recursively through the terminal pairs. Each nonforest edge contributes at most one new degree of freedom, and each distinct entrance contributes at most one more. Special columns add at most s further dimensions.
+      
+      Equations (5)–(6) are important even inside this route. They show the correct complexity parameter is not β(T) alone but approximately
+      
+      β(T)+h.
+      
+      Repeated reuse of the same entrance may support many terminal cycles without producing special edges. Any expansion theorem that ignores entrance support will therefore be false.
+      
+      ## 5. Why rotations should control β(T)+h
+      
+      Take the maximum-total-rank forest F and attach to every nonforest edge its two blocker contacts. Consider grouping the resulting certificates by the path witness, entrance, or tree edge on which they are realized.
+      
+      If the groups are light, then many certificates live on distinct resources. The rotation primitives should then create many distinct reachable endpoints, contradicting the bounded path rank.
+      
+      If some group is heavy, many fundamental-cycle obligations reuse the same witness or entrance. The rank-transfer lemmas then force one of three phenomena:
+      
+      1. repeated edges occupy progressively larger portions of the same witness;
+      2. rank must increase along the reused structure;
+      3. unique-entrance behavior breaks, producing specialness or additional entrance support.
+      
+      This is exactly the Pósa-style mechanism the route seeks. The certified local lemmas establish each individual move, but there is not yet a theorem summing those moves over all β(T) fundamental cycles without losing control to reuse.
+      
+      ## 6. Known obstruction: cycles need not create special edges
+      
+      The most important failed shortcut is
+      
+      β(T)≤s.
+      
+      It is false. There are linear triple systems with no special edges at all whose terminal-pair graph is a disjoint union of copies of K_{3,3}. Each such component has positive cycle rank. The same examples show that nonspecial incidence columns need not be linearly independent.
+      
+      Therefore a terminal cycle is not itself a contradiction, and no proof may charge every nonforest edge directly to a special edge.
+      
+      Likewise, one legal rotation is not endpoint expansion. A rotation theorem must control how many rotations collapse onto the same endpoint, path witness, or entrance. This repeated-support phenomenon is the genuine obstruction.
+      
+      ## 7. First unsupported implication
+      
+      The proof reaches the following precise frontier.
+      
+      **Rotation-expansion target.** Starting from the maximum-total-rank forest F, assign to every nonforest terminal-pair edge its canonical two-sided blocker obligations. Prove that these β(T) obligations force either
+      
+      β(T)+h ≤ C s + Dn
+      
+      for fixed C,D, or an equivalent endpoint-expansion inequality strong enough to imply such a bound.
+      
+      A weaker theorem controlling β(T) alone would suffice for some coefficient improvements, but the K_{3,3} obstruction shows that a robust statement should explicitly pay for entrance/support reuse.
+      
+      All ingredients before this point are certified: the blocker transfer, rank-jump alternative, rotation primitives, canonical fundamental-cycle selection, cycle-rank hinge, and incidence-nullity bridge. What is missing is the global bounded-reuse/expansion theorem that composes them.
+      
+      The attempted proof stops here.
+      
+      ## Research handoff
+      
+      Begin with a maximum-total-rank spanning forest of T and the canonical blocker obligations on its nonforest chords. Organize certificates by shared entrance and shared witness before performing rotations; otherwise endpoint multiplicity is invisible.
+      
+      Do not retry β(T)≤s, nonspecial-column independence, bare cycle counting, or an argument in which a single rotation is treated as expansion. A new ingredient must control repeated use of the same entrance or witness.
+      
+      This route interfaces cleanly with two neighboring philosophies. A bound on β(T)+h feeds the incidence-rank route through (5)–(6), while a strong endpoint-expansion theorem can serve as the rank-flow engine in the dense-core route.
+
+  • [linp_route04] Route 4 — Incidence rank / induced-path clique-cover
+      STATEMENT
+      Comprehensive synthesis of the algebraic upper-bound route through the incidence matrix, induced-path-free intersection graph, exact clique-cover realizability, and weighted/nullity rank inequalities.
+      BODY / PROOF
+      # Route 4. Incidence rank and the induced-path clique-cover model
+      
+      ## Goal and setup
+      
+      Let H be an n-vertex linear 3-uniform hypergraph with m edges, and let N be its n×m vertex-edge incidence matrix over the reals. Let F be the intersection graph of H: the vertices of F are the hyperedges of H, and two vertices of F are adjacent exactly when the corresponding hyperedges intersect.
+      
+      This route seeks the one-third upper bound by proving that P_ℓ-freeness forces
+      
+      ℓ·rank(N) ≥ 3m.      (1)
+      
+      Since rank(N)≤n, equation (1) would immediately give
+      
+      m≤(ℓ/3)n.      (2)
+      
+      The algebraic problem is therefore exact: show that a P_ℓ-free linear triple system cannot have too many incidence columns relative to their real rank.
+      
+      ## 1. Exact translation to an induced-path problem
+      
+      Linearity makes the intersection graph unusually faithful. A sequence of distinct hyperedges
+      
+      e_1,e_2,…,e_k
+      
+      is a linear hypergraph path if and only if the corresponding vertices form an induced path in F.
+      
+      Indeed, consecutive hyperedges in a linear path meet, whereas nonconsecutive ones are disjoint, so the intersection graph induced by them is exactly a graph path. Conversely, an induced graph path forces consecutive intersections and forbids all nonconsecutive intersections, which is precisely the linear-path condition.
+      
+      Hence
+      
+      H is P_ℓ-free  ⇔  F is induced-P_ℓ-free.      (3)
+      
+      But not every induced-P_ℓ-free graph is relevant. The graph F carries the exact incidence realization of a linear triple system.
+      
+      For each ground vertex x∈V(H), let C_x be the clique of all hyperedges containing x. Then:
+      
+      1. every vertex of F lies in exactly three cliques C_x, because every hyperedge has three vertices;
+      2. every edge of F lies in exactly one clique C_x, because two hyperedges of a linear system meet in at most one vertex.
+      
+      Conversely, any graph equipped with an indexed clique family satisfying these two conditions is the intersection graph of a linear 3-uniform hypergraph.
+      
+      Thus the route is not a generic theorem about induced-path-free graphs. It is a rank theorem inside this exact three-clique realizability class.
+      
+      ## 2. The spectral identity
+      
+      Because H is 3-uniform and linear,
+      
+      N^T N = 3I_m + A(F),      (4)
+      
+      where A(F) is the adjacency matrix of the intersection graph.
+      
+      Therefore
+      
+      rank(N)=rank(3I_m+A(F))
+             =m−mult_F(−3),      (5)
+      
+      where mult_F(−3) is the multiplicity of eigenvalue −3 of A(F).
+      
+      The desired inequality (1) is equivalently
+      
+      mult_F(−3) ≤ m(1−3/ℓ).      (6)
+      
+      So the obstruction to one-third is a large −3 eigenspace, or equivalently a large space of linear dependencies among incidence columns.
+      
+      The three-clique realization is essential here. Generic positive-semidefinite arguments applied only to 3I+A(F) discard exactly the structure that distinguishes realizable intersection graphs from arbitrary graphs.
+      
+      ## 3. The low-degree regime is already closed
+      
+      There is a sharp rank theorem whenever the hypergraph maximum degree is below the forbidden path length.
+      
+      If Δ(H)≤ℓ−2, then
+      
+      ℓ·rank(N) ≥ 3m.      (7)
+      
+      Thus any counterexample to (1) must satisfy
+      
+      Δ(H)≥ℓ−1.      (8)
+      
+      This cleanly removes the sparse regime. The remaining problem is intrinsically high-degree.
+      
+      A useful way to see the low-degree theorem is through a more general weighted inequality. Give each hyperedge e a weight 0≤w_e≤1, let
+      
+      W=Σ_e w_e,
+      
+      and suppose every ground vertex has weighted degree at most D:
+      
+      Σ_{e∋v} w_e ≤ D.
+      
+      Then
+      
+      rank(N) ≥ 3W/(D+2).      (9)
+      
+      Taking all w_e=1 and D=Δ gives the low-degree estimate.
+      
+      Equation (9) also suggests a possible high-degree strategy: rather than control the whole edge set, extract a large weighted fraction whose vertex loads are small enough.
+      
+      ## 4. Fractional-rank branch
+      
+      Suppose one can choose weights with
+      
+      W ≥ ρm−O(n)
+      and
+      D ≤ cℓ+O(1).
+      
+      Then (9) gives
+      
+      rank(N) ≥ (3ρ/(cℓ+O(1)))m.
+      
+      To reach the exact one-third target, one would need parameters equivalent to 3W/(D+2)≥3m/ℓ. For a strict leading improvement over weaker existing coefficients, any fixed favorable ratio ρ/c already has value.
+      
+      This branch reduces the theorem to a packing problem: find a large subdistribution of hyperedges whose weighted incidence at every ground vertex is low. The exact clique realization should constrain how high-degree concentration can coexist with induced-P_ℓ-freeness.
+      
+      No theorem presently produces a sufficiently large weighted subfamily in the high-degree regime.
+      
+      ## 5. Nullity and cycle complexity
+      
+      A second route to rank is to control the nullity directly.
+      
+      Let s be the number of special hyperedges. If for fixed C,D one proves
+      
+      nullity(N) ≤ C s + Dn,      (10)
+      
+      then the snake inequality and rank(N)=m−nullity(N) combine to give
+      
+      m ≤ [C(2ℓ−3)+D+1]/(2C+1) · n.      (11)
+      
+      Thus any absolute bound of the form (10) yields a strict leading improvement.
+      
+      The terminal-pair graph from the rotation route gives a more structural estimate. Let T be the terminal-pair graph of nonspecial edges, β(T) its cycle rank, and h the number of distinct entrance vertices used by nonspecial edges. Then
+      
+      nullity(N_ns) ≤ β(T)+h,      (12)
+      
+      and for the full incidence matrix,
+      
+      nullity(N) ≤ β(T)+h+s.      (13)
+      
+      So a theorem controlling β(T)+h in terms of special-edge mass and O(n) would immediately become a rank theorem here.
+      
+      This explains the precise interface with the rotation route: terminal cycles and entrance reuse are not merely combinatorial nuisances; they are upper bounds for the dimension of the incidence dependency space.
+      
+      ## 6. Anatomy of a possible counterexample
+      
+      Several certified structural theorems sharply limit what a counterexample to (1) could look like.
+      
+      First, bounded matching number is insufficient as a rank surrogate; that line cannot reach the one-third scale.
+      
+      Second, any P_ℓ-free construction whose density exceeds ℓ/3 must be genuinely large and high-degree. It must have average degree above ℓ, maximum degree at least ℓ+1, large matching and transversal numbers, and a dense induced minimum-degree core. In particular, a counterexample to the rank conjecture cannot hide in a small sparse exceptional configuration.
+      
+      Third, if the intersection graph F is chordal, then
+      
+      m≤3n/2.
+      
+      More quantitatively, excess above 3n/2 forces linearly many edge-disjoint linear cycles in H. Hence a dense counterexample necessarily has abundant cycle structure. That cycle abundance is exactly what the nullity/cycle branch would like to exploit.
+      
+      Together these facts place the unresolved problem in a narrow regime: high degree, large matching complexity, many cycles, and an exact three-clique incidence realization, yet still no long induced path.
+      
+      ## 7. Known obstructions
+      
+      The simplest nullity conjectures are false.
+      
+      There are linear 3-graphs with no special edges whose incidence matrix nevertheless has positive nullity; the basic obstruction is the same K_{3,3}-type terminal geometry seen in the rotation route. Hence
+      
+      nullity(N)≤s
+      
+      is false, and nonspecial incidence columns need not be independent.
+      
+      Likewise, a dependence circuit need not contain a special edge. Therefore the rank deficit cannot be charged locally to specialness alone.
+      
+      Generic graph-theoretic spectral bounds are also too weak because they ignore the indexed three-clique realization. Conversely, the low-degree regime Δ≤ℓ−2 is already solved and should not be reopened.
+      
+      The remaining theorem must use realizability in a genuinely high-degree way.
+      
+      ## 8. First unsupported implication
+      
+      The proof stops at the following high-degree statement.
+      
+      **High-degree realizable rank target.** Let F be an induced-P_ℓ-free graph equipped with an indexed clique family in which every graph vertex lies in exactly three cliques and every graph edge lies in exactly one. Let N be the corresponding incidence matrix. Prove
+      
+      rank(N) ≥ 3m/ℓ.      (14)
+      
+      Equivalently, prove the same statement for every P_ℓ-free linear 3-uniform hypergraph with Δ≥ℓ−1.
+      
+      There are two concrete weaker targets that would also advance the theorem:
+      
+      1. extract weights of total mass W large enough and weighted degree D small enough for (9) to beat the current coefficient;
+      2. prove a bound on nullity(N), or on β(T)+h, strong enough to feed (11).
+      
+      The exact graph translation, spectral identity, low-degree theorem, weighted rank bound, and nullity bridges are all certified. What is unsupported is the high-degree realizability theorem itself.
+      
+      ## Research handoff
+      
+      Work only in the high-degree regime and keep the indexed three-clique realization explicit. The most promising formulations are either a realizability-aware −3 multiplicity theorem, a fractional low-load extraction, or a cycle/entrance nullity bound imported from the rotation route.
+      
+      Do not retry generic PSD arguments on arbitrary induced-path-free graphs, bounded-matching certificates, nullity≤special-edges, nonspecial-column independence, or the already-solved low-degree case.
+      
+      The route's virtue is its clean stopping point: once (14) is proved, the one-third upper bound follows immediately from rank(N)≤n.
+
+  • [linp_route05] Route 5 — Inductive longest-path pair capacity with outside defect
+      STATEMENT
+      Comprehensive synthesis of the one-third induction route that removes a longest path and pays all incident edges from internal pair capacity, path slack, and the outside extremal defect.
+      BODY / PROOF
+      # Route 5. Longest-path induction with pair capacity and outside defect
+      
+      ## Goal and status
+      
+      This route targets the one-third upper bound directly by induction on the number of vertices.
+      
+      Let H be an n-vertex P_ℓ-free linear 3-uniform hypergraph. The desired theorem is
+      
+      3|E(H)| ≤ ℓ|V(H)|.      (1)
+      
+      Choose a longest linear path P with k edges and put
+      
+      X=V(P),   Y=V(H)\X.
+      
+      Since P is 3-uniform and linear,
+      
+      |X|=2k+1.      (2)
+      
+      Let m_Y be the number of hyperedges lying entirely in Y, and let
+      
+      e_X=|E(H)|−m_Y
+      
+      be the number of edges meeting X.
+      
+      Assume inductively that the target inequality already holds for H[Y], and define its unused extremal capacity by
+      
+      D_Y = ℓ|Y|−3m_Y ≥0.      (3)
+      
+      The route reduces the entire theorem to one local charging inequality around the single longest path P.
+      
+      The reduction itself is proved, but it is still pending independent audit. The charging theorem that would finish the argument is not known.
+      
+      ## 1. Exact inductive reduction
+      
+      Starting from
+      
+      3|E(H)|=3m_Y+3e_X,
+      
+      the desired inequality (1) is equivalent, using (3), to
+      
+      3e_X ≤ ℓ|X|+D_Y.      (4)
+      
+      Because |X|=2k+1,
+      
+      binom(|X|,2)=k(2k+1)=k|X|.
+      
+      Hence
+      
+      ℓ|X| = binom(|X|,2)+(ℓ−k)|X|,
+      
+      and (4) becomes
+      
+      3e_X ≤ binom(|X|,2)+(ℓ−k)|X|+D_Y.      (5)
+      
+      This is the exact pair-capacity form of the induction.
+      
+      In the saturated case k=ℓ−1, which is the hardest case because the explicit slack is smallest,
+      
+      3e_X ≤ binom(|X|,2)+|X|+D_Y.      (6)
+      
+      There is no loss in this derivation. Thus a proof of (5) for every longest path would prove the one-third theorem by induction.
+      
+      ## 2. Interpretation of the three currencies
+      
+      Equation (5) exposes three distinct resources.
+      
+      ### Internal pair capacity
+      
+      A linear hyperedge meeting X uses pairs of vertices in a highly constrained way. Since H is linear, no unordered pair of vertices can belong to two different hyperedges. The quantity
+      
+      binom(|X|,2)
+      
+      is therefore the natural total local capacity available inside the longest-path vertex set.
+      
+      ### Path-length slack
+      
+      If k<ℓ−1, the path is shorter than the forbidden length, and the term
+      
+      (ℓ−k)|X|
+      
+      records the resulting extra allowance. Thus shorter longest paths are automatically easier; the saturated case k=ℓ−1 is the critical one.
+      
+      ### Outside extremal defect
+      
+      The term
+      
+      D_Y=ℓ|Y|−3m_Y
+      
+      is not an error term. It is the precise amount by which the induced outside hypergraph falls short of the inductive extremal bound. If the local configuration around P consumes more than its internal pair capacity, the intended proof must show that this overdraw forces H[Y] to be correspondingly nonextremal, thereby paying through D_Y.
+      
+      This is the genuinely new feature of the route. A purely local proof that discards D_Y throws away the main resource introduced by induction.
+      
+      ## 3. What longest-path maximality contributes
+      
+      A longest path prevents arbitrary interactions between crossing edges and X.
+      
+      The maximum-path contact theory developed elsewhere in LINP implies that an edge meeting P in a way that would permit a clean splice cannot exist; otherwise P could be extended or rerouted into a longer path. Consequently edges meeting X can be divided according to the internal pairs or path contacts that block their extension.
+      
+      The desired charging philosophy is therefore:
+      
+      1. ordinary incident edges are assigned to distinct or bounded-multiplicity internal pairs of X;
+      2. exceptional edge classes consume the explicit slack (ℓ−k)|X|;
+      3. any family that still exceeds these two resources must force a quantitative deficit D_Y outside P.
+      
+      The proof has not yet constructed this assignment globally. Nevertheless, several certified deletion and threshold lemmas show how the third step might arise.
+      
+      ## 4. Threshold deletion and the outside structure
+      
+      There is a useful critical-set lemma of the following form. In the relevant threshold setting, after deleting a critical vertex set D, the remaining hyperedges lie inside every corresponding path witness. Hence H−D is a linear path forest: its maximum degree is at most two and its edge count is at most half the number of surviving vertices.
+      
+      At the same time, every vertex outside D sends many of its incident edges back into D. Thus a dense configuration cannot hide entirely outside the longest-path core; high degree forces a large number of structured crossings.
+      
+      This provides a possible charging mechanism. If too many edges meeting X cannot be paid by internal pairs, then the same density constraints force many vertices in Y to send edges through a small critical set, creating rigid bridges or reducing the edge count available inside Y.
+      
+      ## 5. Exact deletion defect and the lift-back correction
+      
+      A previously tempting induction shortcut is false in its naive form.
+      
+      Suppose one deletes a small set S and observes that the remaining graph still has nearly the same density. It is not enough to say that this contradicts vertex-minimality. The correct identity is an exact density-defect formula: the change in the extremal deficit is determined by the number of edges meeting S and the amount of vertex mass removed.
+      
+      For a singleton deletion in a vertex-minimal equality obstruction, a cheap deletion does not immediately contradict minimality. Instead it forces an exact bridge configuration when the deleted vertex is lifted back: a surviving low-degree vertex must have exactly one compensating edge through the deleted vertex.
+      
+      This matters for (5). The outside defect D_Y can only be claimed when a local overdraw is converted into an actual loss of edges in H[Y]. A deletion argument that does not trace the lift-back bridge is insufficient.
+      
+      ## 6. Reservoir outside a fixed path
+      
+      Dense equality configurations also have a useful reservoir property.
+      
+      If H has exact density d and minimum degree at least d+1, then many vertices have degree at least d+2. Quantitatively, there are at least 4d−1 such vertices. Therefore any fixed q-edge path omits at least
+      
+      4d−2q−2
+      
+      high-degree vertices.
+      
+      These omitted high-degree vertices are potential sources of outside defect or lift-back structure. In a saturated longest-path configuration, they cannot simply attach freely to P without creating an extension. Their incident edges must instead be absorbed by constrained crossing patterns, which is exactly the setting in which a defect-transfer argument might prove D_Y>0.
+      
+      This result does not by itself establish the charge, but it prevents the induction from degenerating into a completely local problem on X.
+      
+      ## 7. The payment theorem that would finish the proof
+      
+      The route closes if one proves the following statement.
+      
+      **Longest-path payment theorem.** For every longest k-edge path P in every P_ℓ-free linear 3-graph H, with X=V(P), Y=V(H)\X, and D_Y defined by (3),
+      
+      3e_X ≤ binom(|X|,2)+(ℓ−k)|X|+D_Y.      (7)
+      
+      A proof should be structural rather than an ℓ-dependent enumeration. One possible formulation is a bounded-overlap map from the three units carried by each edge meeting X into:
+      
+      - internal unordered pairs of X;
+      - explicit path-slack tokens;
+      - certified units of outside extremal deficit.
+      
+      An equivalent formulation would show that whenever the first two resources are overdrawn by r units, then D_Y≥r.
+      
+      No such theorem is currently proved.
+      
+      ## 8. Known dead ends
+      
+      Three mistakes are already understood.
+      
+      First, the algebraic reduction (5) is not itself the charging theorem. It merely identifies what must be paid.
+      
+      Second, one cannot discard D_Y and attempt to pay every incident edge from pairs of X alone. The outside defect is the only genuinely new inductive currency and is expected to be necessary in extremal local configurations.
+      
+      Third, “cheap deletion preserves density, therefore minimality is contradicted” is not valid. The correct conclusion is the exact lift-back bridge described above.
+      
+      The route should also avoid an unbounded ladder of ℓ-specific contact cases. Such an enumeration would not explain why the pair-capacity inequality is uniform.
+      
+      ## 9. First unsupported implication
+      
+      Everything reduces to (7), and this is the first unsupported implication.
+      
+      The reduction to (7) is exact. The maximum-path contact lemmas, threshold path-forest lemma, deletion-defect identity, lift-back bridge, and outside high-degree reservoir are certified tools. What is missing is a theorem composing them into a bounded-overlap payment.
+      
+      In particular, there is not yet a proof that every local overdraw of internal pair capacity produces a quantitatively equal loss in H[Y].
+      
+      The attempted induction must stop there.
+      
+      ## Research handoff
+      
+      The saturated case k=ℓ−1 is the cleanest place to work because the slack term is only |X|. Classify edge families by which internal pair of X they can naturally pay to, and treat only the genuine collisions as candidates for transfer into D_Y.
+      
+      The most valuable next theorem is an overdraw-to-defect statement: if r more charge units are demanded than can be placed on internal pairs plus path slack, prove D_Y≥r.
+      
+      Do not retry the invalid cheap-deletion contradiction, discard the outside defect, or replace the structural problem by an ℓ-dependent finite case ladder.
+      
+      Status note: the pair-capacity reduction is proved but pending audit; the deletion, lift-back, threshold, and reservoir results used as supporting tools are certified.
+
+  • [linp_route06] Route 6 — Algebraic/Steiner lower constructions and spanning-path obstructions
+      STATEMENT
+      Comprehensive synthesis of the algebraic lower-bound program using Steiner/projective/affine/additive systems, path-sum invariants, carrier reductions, and the major Hamiltonicity fences.
+      BODY / PROOF
+      # Route 6. Algebraic and Steiner lower constructions
+      
+      ## Goal
+      
+      This route attacks the lower-bound side of the LINP problem. Its objective is to construct finite linear 3-uniform hypergraphs with large edge density and no linear path of length ℓ, then take disjoint unions.
+      
+      The generic benchmark is already at the one-third scale: for every ℓ≥2 there is a finite P_ℓ-free component T on 2ℓ−1 or 2ℓ vertices satisfying
+      
+      |E(T)| = ((ℓ−1)/3)|V(T)|.      (1)
+      
+      Consequently
+      
+      ex_L(n,P_ℓ) ≥ ((ℓ−1)/3)n − O(ℓ²).      (2)
+      
+      To improve the leading coefficient beyond one third, one would need components whose density exceeds ℓ/3 while still forbidding a spanning or nearly spanning linear path.
+      
+      The most natural candidates are Steiner triple systems and algebraically defined partial Steiner systems. The route asks whether a global algebraic invariant can force non-Hamiltonicity without sacrificing Steiner-level density.
+      
+      ## 1. Spanning paths in a Steiner triple system
+      
+      An STS on 2ℓ+1 vertices has exactly
+      
+      (2ℓ+1)ℓ/3
+      
+      blocks. If it contains no spanning ℓ-edge linear path, then disjoint copies immediately give the lower bound
+      
+      ex_L(n,P_ℓ) ≥ (ℓ/3)n − O(ℓ).      (3)
+      
+      Thus the basic construction problem is:
+      
+      **Steiner obstruction problem.** Find infinitely many non-Hamiltonian Steiner triple systems on 2ℓ+1 vertices, or equally dense near-Steiner systems, where Hamiltonian means containing a spanning linear path.
+      
+      A spanning ℓ-edge path on 2ℓ+1 vertices has ℓ−1 joint vertices, with the remaining ℓ+2 vertices appearing only as private or endpoint vertices. Algebraic systems can therefore be attacked by summing the edge equations along the path and deriving a constraint on the joint set.
+      
+      This mechanism produces genuine small-dimensional successes.
+      
+      ## 2. Binary projective systems
+      
+      In the binary projective triple system on the nonzero vectors of F_2^d, the triples are
+      
+      {x,y,x+y}.
+      
+      If a spanning linear path exists and J is its set of joint vertices, summing the path-edge equations shows
+      
+      Σ_{x∈J} x = 0.      (4)
+      
+      Equivalently, J meets every hyperplane in even cardinality.
+      
+      For PG(3,2), which has 15 vertices and 35 triples, condition (4) is impossible for the joint set of a spanning 7-edge path. Hence PG(3,2) is P_7-free and gives
+      
+      ex_L(n,P_7) ≥ (7/3)n − O(1).      (5)
+      
+      This is a genuine exceptional improvement.
+      
+      The crucial question is whether the same obstruction scales to higher binary projective dimensions. It does not.
+      
+      A classification of dense odd induced Boolean Schur systems shows that if the number of missing additive pairs is smaller than the vertex set, then the system is either
+      
+      1. a full projective system W\{0}, or
+      2. a two-point deletion W\{0,a,b}
+      
+      from such a system.
+      
+      Within this critical family, all sufficiently large full projective systems and all sufficiently large two-point deletions contain spanning paths. The only strict projective improvements surviving the classification occur at the small exceptional lengths corresponding to the Fano plane and PG(3,2).
+      
+      Thus the projective parity obstruction explains the exceptional construction but does not provide an infinite improved family.
+      
+      ## 3. Affine ternary systems
+      
+      In the affine system AG(d,3), every triple satisfies
+      
+      x+y+z=0.
+      
+      Summing the equations of a spanning path again gives a joint-set condition:
+      
+      Σ_{x∈J} x = 0.      (6)
+      
+      For AG(2,3), this rules out a spanning 4-edge path and recovers the familiar affine-plane obstruction.
+      
+      But the mechanism does not persist. AG(3,3) already contains a spanning 13-edge path. Therefore the low-dimensional affine obstruction cannot simply be iterated by increasing dimension.
+      
+      The affine branch is consequently closed in its naive form: a scalable construction would need an invariant stronger than the total joint sum.
+      
+      ## 4. Incidence-code certificates
+      
+      Let M be the vertex-edge incidence matrix over a finite field. If H contains a P_ℓ, then summing the incidence vectors of its ℓ edges produces a codeword whose support is exactly the ℓ+2 private/end vertices, after the joint coordinates cancel in characteristic two. Thus, over F_2,
+      
+      P_ℓ ⊆ H  ⇒  the binary incidence code contains a word of weight ℓ+2.      (7)
+      
+      There is an analogous support statement over arbitrary fields.
+      
+      Hence absence of weight ℓ+2 is a sufficient algebraic certificate for P_ℓ-freeness. This is useful for small constructions, but it cannot beat the one-third scale asymptotically.
+      
+      Indeed, any linear 3-graph of density greater than ℓ/3 already has a binary incidence-code word of weight ℓ+2. A corresponding ternary theorem gives the same obstruction over F_3. Therefore
+      
+      “the incidence code omits the path support size”
+      
+      cannot be the invariant behind an improved infinite family.
+      
+      Any future code-based construction must use more structure than the absence of one weight.
+      
+      ## 5. Exact low-rank carrier lifts
+      
+      A different idea is to begin with a good small Boolean example and lift it through a low-rank carrier.
+      
+      The sharp reduction here is an exact one-bit normal form: any density-beating induced Boolean counterexample contains a non-Hamiltonian subsystem that is an exact one-bit lift of a smaller quotient. Thus the relevant unresolved object is not an arbitrary high-rank additive set but a projective quotient equipped with one binary fiber bit over each point.
+      
+      However repeated exact carrier lifting does not improve normalized density. A full two-bit lift satisfies, up to the exact lower-order terms,
+      
+      |V'| = 4|V|+3,
+      |E'| = 16|E|+6|V|+1,
+      
+      while the longest-path length grows by a factor four up to an additive constant. Repeated lifting therefore preserves, rather than improves, the edge-density-to-forbidden-length ratio.
+      
+      So low-rank carriers are useful only if a genuinely new signing obstruction appears at the first nontrivial lift. Blind iteration is fenced.
+      
+      ## 6. Full Steiner systems are asymptotically too Hamiltonian
+      
+      There is also a broad negative theorem independent of algebra.
+      
+      Every sufficiently large Steiner triple system contains almost-spanning hypertrees, in particular a linear path using a 1−o(1) fraction of its vertices. Consequently a full STS has normalized density at the first forbidden path length at most
+      
+      1/3+o(1).      (8)
+      
+      Thus full Steiner systems cannot beat one third by a positive asymptotic amount.
+      
+      This theorem does not eliminate near-Steiner systems, because a carefully chosen sparse set of missing blocks might destroy all long paths while retaining almost all density. But several natural deletion mechanisms are also fenced.
+      
+      ## 7. Deletion, doubling, and tensor fences
+      
+      Suppose an STS on 2ℓ+1 vertices is Hamiltonian and edge-transitive. Any set of blocks meeting every spanning P_ℓ has size at least
+      
+      (2ℓ+1)/3.      (9)
+      
+      So a small symmetric deletion cannot turn such a design into a density-improving non-Hamiltonian example.
+      
+      The order-13 calibration is exact: six blocks must be deleted to destroy all spanning 6-edge paths, and the natural puncture construction is extension-tight. This confirms that the deletion cost is already too large in the first serious test case.
+      
+      Ordinary STS doubling is also ineffective. The mixed blocks themselves contain paths long enough that the normalized coefficient of the doubled construction cannot exceed one third.
+      
+      Likewise, the diagonal tensor square of a binary projective system contains a path of length
+      
+      (2^d−1)(2^{d−1}−1)−1,      (10)
+      
+      and its density at the corresponding first forbidden length is strictly below one third. Thus projective tensoring does not amplify the PG(3,2) exception.
+      
+      These are theorem-level no-go statements. The associated construction mechanisms should be regarded as closed unless a new invariant changes the path analysis itself.
+      
+      ## 8. The surviving signed-projective problem
+      
+      After the preceding reductions, the cleanest algebraic frontier is the exact one-bit signed-projective model.
+      
+      Take a binary projective quotient with one distinguished point at infinity and a two-element fiber
+      
+      G_x={(x,0),(x,1)}
+      
+      over each projective point x. Every projective line {x,y,z} is lifted according to a binary line-signing σ(x,y,z), considered modulo the natural fiber switches.
+      
+      The all-projective signing is eventually Hamiltonian. The open problem is whether there exists an infinite switching-inequivalent family of signings for which the lifted system remains non-Hamiltonian while retaining essentially Steiner density.
+      
+      A successful family would yield
+      
+      ex_L(n,P_ℓ) ≥ (ℓ/3)n − O(ℓ²)
+      
+      for infinitely many new lengths, and could potentially sharpen the lower-order behavior. More importantly, a denser asymmetric near-Steiner variant could in principle beat one third.
+      
+      No such infinite obstruction is presently proved.
+      
+      ## 9. What has genuinely been ruled out
+      
+      The explored landscape can be summarized without reproducing its historical derivations.
+      
+      The following mechanisms do not provide a scalable improvement beyond the one-third barrier:
+      
+      - full higher-dimensional binary projective systems;
+      - naive higher-dimensional affine systems;
+      - omission of a single incidence-code support weight;
+      - repeated exact low-rank carrier lifting;
+      - full large Steiner triple systems;
+      - ordinary STS doubling;
+      - sparse symmetric deletion of edge-transitive Hamiltonian designs;
+      - diagonal binary-projective tensor squares.
+      
+      These are genuine fences, not merely unsuccessful experiments. A new construction should be checked against them before any detailed development.
+      
+      ## 10. First unsupported implication
+      
+      The live proof attempt stops at the signed-projective/asymmetric near-Steiner problem.
+      
+      **Residual construction target.** Produce an infinite family of Steiner-density or near-Steiner-density linear triple systems whose path obstruction is controlled by a global invariant not destroyed by increasing the order, and which is not an instance of any of the fenced mechanisms above.
+      
+      In the Boolean low-rank lane, the concrete target is:
+      
+      **Signed-projective target.** Find an infinite family of exact one-bit projective signings for which no spanning linear path exists, or prove that every sufficiently large signing is Hamiltonian.
+      
+      Either outcome would materially close the current algebraic lane.
+      
+      ## Research handoff
+      
+      The strongest live starting point is the exact one-bit signed-projective normal form, or a genuinely asymmetric near-Steiner construction outside the full-STS and symmetric-deletion theorems.
+      
+      Do not retry higher projective dimensions, naive affine dimensions, missing-one-weight incidence codes, repeated exact lifts, ordinary doubling, sparse symmetric deletion, or projective diagonal tensoring without a new invariant that escapes the certified fences.
+      
+      Status note: the generic lower benchmark, exceptional PG(3,2) construction, Boolean classification, affine and code fences, carrier-lift fence, almost-Hamiltonian STS theorem, deletion/doubling fences, and diagonal tensor no-go are certified. The signed-projective infinite obstruction remains proposal-level.
+
+  • [linp_route07] Route 7 — Transversal/Latin/blow-up/product lower constructions
+      STATEMENT
+      Comprehensive synthesis of the lower-bound route through transversal designs, properly colored lifts, fixed-template Latin blow-ups, shared-color constructions, and products.
+      BODY / PROOF
+      # Route 7. Transversal, Latin, blow-up, and product constructions
+      
+      ## Goal
+      
+      This route asks whether a good finite P_ℓ-free component can be amplified by replacing vertices or edges with large transversal-design gadgets, Latin squares, shared-color lifts, or graph products.
+      
+      The basic hope is attractive: a fixed template may have unusually high edge density relative to its longest path, and a q-fold lift multiplies the edge count by roughly q² while multiplying the vertex count only by q. If the longest path grew only linearly with a sufficiently small constant, the normalized lower bound could improve.
+      
+      The developed mathematics shows that most natural lifts fail for exactly the opposite reason: the same quasigroup or color structure that creates many edges also creates many compatible routes, and those routes concatenate into long linear paths.
+      
+      This rehearsal therefore functions as a proof of a sequence of no-go theorems, followed by the narrow class of constructions that remain genuinely open.
+      
+      ## 1. Transversal designs as properly colored bipartite graphs
+      
+      A transversal design TD(3,q) has three vertex classes A,B,C of size q and q² triples, with every pair from distinct classes lying in exactly one triple.
+      
+      Equivalently, choose a proper q-edge-coloring of K_{q,q} on A∪B by colors C. The colored edge ab with color c represents the triple {a,b,c}.
+      
+      A rainbow graph path in K_{q,q} lifts to a linear hypergraph path, because distinct graph edges give distinct triples, proper coloring prevents adjacent triples from sharing a second vertex, and the rainbow condition prevents nonconsecutive triples from meeting in a color vertex.
+      
+      Thus the path problem in TD(3,q) is at least as strong as the rainbow-path problem in its properly colored bipartite representation.
+      
+      ## 2. Full transversal designs have a one-third ceiling
+      
+      Every TD(3,q) contains a linear path of length
+      
+      q−o(q).      (1)
+      
+      Since TD(3,q) has 3q vertices and q² edges, taking the first forbidden length near q gives normalized edge density at most
+      
+      1/3+o(1).      (2)
+      
+      Therefore a full Latin square or full transversal design cannot yield an asymptotic lower coefficient larger than one third.
+      
+      This closes the most direct amplification idea. The obstruction is not peculiar to a special Latin square: it holds for every full TD(3,q).
+      
+      ## 3. Arbitrary Latin blow-ups of a fixed template
+      
+      Let T be a fixed linear 3-uniform template with v vertices and m edges. Replace each template vertex by a cluster of q vertices. For every template hyperedge, place an arbitrary TD(3,q) across the corresponding three clusters.
+      
+      The resulting blow-up has
+      
+      qv vertices
+      and
+      q²m hyperedges.      (3)
+      
+      Suppose the template contains a linear cycle of length s. Follow that cycle through its s clusters. Each traversal around the cycle imposes a sequence of Latin constraints from one joint cluster to the next.
+      
+      The key route-packing theorem states that, regardless of the chosen Latin fillings, one can find
+      
+      q−o(q)
+      
+      internally resource-disjoint lifted traversals of the base cycle and concatenate them. Therefore the blow-up contains a linear path of length
+      
+      sq−o(q).      (4)
+      
+      At the first forbidden length allowed by (4), its normalized edge density is at most
+      
+      m/(vs)+o(1).      (5)
+      
+      This is the decisive fixed-template theorem.
+      
+      Consequently, an arbitrary independent Latin blow-up can beat the one-third barrier only if the base template has a cycle of maximum length s satisfying
+      
+      s < 3m/v.      (6)
+      
+      Equivalently, the template must have edge density unusually large relative to its circumference.
+      
+      The original hope that a good small example could simply be “Latin-amplified” is therefore false unless it already carries this exceptional circumference-density ratio.
+      
+      ## 4. Why the cycle lifts are unavoidable
+      
+      The proof mechanism behind (4) is worth recording because it describes what any surviving construction must defeat.
+      
+      Fix a base linear cycle. A lifted lap chooses one vertex in each visited cluster, subject to the Latin relation on each base edge. For a prescribed starting point, the Latin operation determines or heavily constrains the succeeding choices. Different starts generate a large family of candidate laps.
+      
+      One then forms an auxiliary matching problem whose resources are the cluster vertices and local transition choices. Since each individual route consumes only O(s) resources and the full TD supplies q choices in every cluster, a matching argument selects q−o(q) essentially disjoint laps. Their endpoints can be ordered so that consecutive laps share exactly the joint needed for concatenation.
+      
+      Thus the long path is not an artifact of one algebraic filling. It is a consequence of the abundance and regularity of independent Latin routes.
+      
+      A successful lift must therefore break this route-packing mechanism, not merely choose a more complicated Latin square.
+      
+      ## 5. Shared-color and one-factorization lifts
+      
+      A second amplification idea begins with a properly edge-colored graph G. Create many copies of its vertex set while reusing one common color set, and convert colored graph edges into triples.
+      
+      This also fails asymptotically. For repeated arbitrary proper-color lifts, P_ℓ-freeness forces the underlying graph density to satisfy a bound corresponding to an asymptotic hypergraph coefficient at most
+      
+      1/4.      (7)
+      
+      Thus repeated shared-color lifting is actually weaker than the one-third benchmark.
+      
+      The natural one-factorization lift of K_N is even more explicit: for large N it contains a linear path of length N−2. Hence the exceptional small 11-vertex P_5 construction cannot be scaled by this one-factorization mechanism.
+      
+      These results subsume earlier small-order and special-factorization obstructions. The shared-color route is closed in its regular repeated form.
+      
+      ## 6. Cartesian products
+      
+      Suppose H and K contain linear paths of lengths a and b. Their Cartesian-style product contains a linear path of length
+      
+      (a+1)(b+1)−1.      (8)
+      
+      The proof concatenates a copy of the b-edge path in one factor across successive vertices of the a-edge path in the other, with the product coordinates keeping nonconsecutive edges disjoint.
+      
+      Iterating a fixed seed therefore multiplies available path length approximately exponentially in the number of factors, while the normalized edge density grows only additively. Consequently repeated Cartesian powering has normalized coefficient tending to zero.
+      
+      Thus products do not amplify a finite exceptional component into an asymptotically stronger lower bound.
+      
+      ## 7. The surviving low-circumference template problem
+      
+      The fixed-template theorem leaves one precise loophole.
+      
+      Suppose a finite linear 3-graph T has v vertices, m edges, and circumference s, where s is the maximum length of a linear cycle. If
+      
+      s < 3m/v,      (9)
+      
+      then the universal cycle-lift bound (5) does not by itself rule out a coefficient above one third.
+      
+      Such a template would still need a filling in which no other lifted structure creates paths substantially longer than sq. The arbitrary-Latin theorem says that every base cycle already costs sq−o(q), but it does not prove that every template satisfies s≥3m/v.
+      
+      Therefore one live construction problem is:
+      
+      **Low-circumference template target.** Find a finite linear triple-system template with s<3m/v and a family of fillings whose longest paths remain controlled at the scale sq.
+      
+      A theorem proving
+      
+      s≥3m/v
+      
+      for every relevant template would instead close the entire fixed-template arbitrary-Latin branch negatively.
+      
+      ## 8. Partial and nonregular transversal systems
+      
+      The full TD theorem uses the completeness and regularity of the Latin structure. This suggests a second loophole: abandon full transversal designs.
+      
+      A partial Latin system may sacrifice some q² local edges in order to destroy the route-matching abundance. Likewise, one may correlate the fillings on different base edges so that local route choices are not independent.
+      
+      For such a construction to improve the lower coefficient, it must satisfy two competing requirements:
+      
+      1. retain enough triples that the density loss is o(q²) at each large gadget;
+      2. destroy enough compatible routes that the longest lifted path grows with a constant strictly smaller than the density gain.
+      
+      No current theorem constructs such a system, and no general no-go theorem rules it out. This is therefore the genuinely open portion of the transversal route.
+      
+      ## 9. Known dead ends
+      
+      The following mechanisms are already fenced:
+      
+      - full TD(3,q) or full Latin-square components;
+      - arbitrary independent Latin blow-ups of a fixed template unless the template has exceptional circumference-density ratio;
+      - repeated shared-color or one-factorization lifts;
+      - Cartesian powers of a fixed seed;
+      - extrapolation from small q path suppression without a mechanism stable as q grows.
+      
+      Earlier provisional affine-Latin and special-factorization analyses are no longer frontier results; their asymptotic conclusions are subsumed by the stronger certified theorems above.
+      
+      ## 10. First unsupported implication
+      
+      The route now stops at one of two genuinely new construction tasks.
+      
+      **Template target.** Produce a finite template with circumference s<3m/v and prove that an appropriate filling has longest path only sq+o(q).
+      
+      **Nonregular target.** Construct a partial, nonregular, or globally correlated transversal system of near-quadratic local density whose route structure avoids the full-TD and fixed-template matching arguments.
+      
+      No present theorem supplies either object.
+      
+      The obstruction is conceptually clear: regular Latin structure makes edges cheaply, but it also makes compatible routes cheaply. A successful construction must retain the former while destroying the latter.
+      
+      ## Research handoff
+      
+      Search only outside the fenced regular mechanisms. The most concrete finite problem is the low-circumference inequality s<3m/v; the most conceptually distinct infinite problem is a nonregular or globally correlated Latin filling in which the route choices cannot be packed independently.
+      
+      Do not revisit full transversal designs, arbitrary independent Latin blow-ups of ordinary templates, repeated shared-color lifts, one-factorizations, or Cartesian powering without a new mechanism that invalidates the corresponding certified long-path theorem.
+      
+      Status note: the full-TD path theorem, fixed-template arbitrary-Latin cycle lift, shared-color ceiling, one-factorization fence, and Cartesian-product path theorem are certified. The low-circumference and nonregular construction targets remain open.
+
+  • [linp_route08] Route 8 — Global/symmetric 2-shadow and strong-rainbow translation
+      STATEMENT
+      Comprehensive synthesis of the representation-level upper route through the properly edge-colored 2-shadow, source-oriented directed/rainbow coupling, and the full symmetric strong-rainbow formulation.
+      BODY / PROOF
+      # Route 8. The symmetric 2-shadow and strong-rainbow paths
+      
+      ## Goal and setup
+      
+      This route translates the upper-bound problem into a properly edge-colored graph problem on the original vertex set.
+      
+      Let H be a linear 3-uniform hypergraph with n vertices and m hyperedges. Construct its full 2-shadow G as follows. For every hyperedge
+      
+      {x,y,z},
+      
+      place all three graph edges xy,xz,yz and color them respectively by z,y,x.
+      
+      Linearity implies that this coloring is proper. Every hyperedge contributes exactly three shadow edges, so
+      
+      e(G)=3m,      (1)
+      
+      and at every vertex v,
+      
+      d_G(v)=2d_H(v).      (2)
+      
+      The central question is: what graph-path condition corresponds exactly to a linear hypergraph path?
+      
+      ## 1. Exact strong-rainbow encoding
+      
+      Consider a graph path
+      
+      x_0x_1…x_k
+      
+      in G, and let c_i be the color of x_{i−1}x_i. The corresponding hyperedges are
+      
+      E_i={x_{i−1},x_i,c_i}.
+      
+      The sequence E_1,…,E_k is a linear hypergraph path exactly when the following 2k+1 objects are all distinct:
+      
+      x_0,x_1,…,x_k,c_1,…,c_k.      (3)
+      
+      Indeed, adjacent hyperedges already share the intended path vertex x_i. Condition (3) prevents them from sharing any second vertex, prevents nonconsecutive hyperedges from meeting through a repeated color, and prevents a color from colliding with a nonincident path vertex. Conversely, if the hyperedges form a linear path, all these extra coincidences are forbidden.
+      
+      Call a graph path satisfying (3) **strong-rainbow**.
+      
+      The exact translation is therefore
+      
+      H is P_ℓ-free  ⇔  G has no ℓ-edge strong-rainbow path.      (4)
+      
+      This statement is proved but currently pending audit.
+      
+      Combining (1) and (4), the one-third upper target
+      
+      m≤(ℓ/3)n
+      
+      becomes the purely colored-graph statement
+      
+      e(G)≤ℓ n      (5)
+      
+      for every symmetric triangle-colored shadow G with no ℓ-edge strong-rainbow path.
+      
+      This is the cleanest formulation of the route.
+      
+      ## 2. Why the coloring is more structured than an arbitrary proper coloring
+      
+      Every hyperedge xyz creates a colored triangle
+      
+      xy colored z,
+      xz colored y,
+      yz colored x.
+      
+      Thus colors and vertices belong to the same ground set, and every colored edge sits inside a triangle where the three colors are exactly the opposite vertices.
+      
+      This symmetry is much stronger than ordinary proper edge-coloring. It is also precisely what makes the strong-rainbow condition difficult: the color of one edge may equal a far-away vertex of the graph path even when no color repeats.
+      
+      A theorem that treats G as merely an arbitrary properly colored graph throws away this triangle symmetry and therefore cannot be expected to reach the one-third target.
+      
+      ## 3. The A/B separation and its intrinsic loss
+      
+      There is a safe way to convert strong-rainbow paths into ordinary rainbow paths.
+      
+      Partition the vertex set into A∪B. Keep only shadow edges whose two endpoints lie in A and whose color lies in B. In this retained graph, every ordinary rainbow path automatically satisfies (3): its path vertices lie in A, its distinct colors lie in B, so colors cannot collide with path vertices.
+      
+      Hence every rainbow path in the retained graph lifts to a linear hypergraph path.
+      
+      Suppose a generic theorem for properly edge-colored graphs guaranteed a rainbow path of length at least
+      
+      αd−O(1)
+      
+      from minimum degree d. Optimizing the partition and core extraction then yields the hypergraph estimate
+      
+      m ≤ (2/(3α))ℓ n + O(n).      (6)
+      
+      Even the ideal black-box value α=1 gives leading coefficient 2/3.
+      
+      Thus the A/B separation is useful but has an unavoidable factor-two cost. Any proof aiming below two thirds must use more than generic proper coloring; it must exploit either the full symmetric shadow or additional rank information.
+      
+      ## 4. Degree normalization
+      
+      Two minimum-degree reductions are available, but they apply to different objects and must not be conflated.
+      
+      First, from any hypergraph of density ρ one may pass to an induced subhypergraph of density at least ρ and minimum hypergraph degree at least ρ.
+      
+      Second, after the A/B shadow construction one may pass to a retained colored graph with minimum graph degree at least approximately
+      
+      3ρ/4.      (7)
+      
+      The quantities δ(H) and δ(G) are not interchangeable. Equation (2) applies to the full shadow, not automatically to an arbitrary A/B subgraph.
+      
+      This distinction matters whenever a rainbow-path theorem assumes graph minimum degree.
+      
+      ## 5. Source-oriented hybrid model
+      
+      There is an intermediate representation between the lossy A/B model and the fully symmetric shadow.
+      
+      Choose one source σ(T) in every hyperedge T={x,y,z}. Add directed arcs from the source to the other two vertices, and join the two nonsource vertices by a graph edge colored by the source.
+      
+      If s(v) is the number of triples for which v is the source and h(v) the number for which v is a nonsource vertex, then
+      
+      d_H(v)=s(v)+h(v),
+      
+      while in the directed graph D,
+      
+      d_D^+(v)=2s(v),
+      d_D^−(v)=h(v).
+      
+      Therefore
+      
+      (1/2)d_D^+(v)+d_D^−(v)=d_H(v).      (8)
+      
+      Now let v_0…v_p be a longest directed path. At its initial and terminal vertices, maximality forces complementary bounds on source and nonsource incidence. Roughly, if the directed path is short, a large part of the degree must appear in the properly colored terminal graph; if that colored part is sufficiently rich, one seeks a rainbow path there.
+      
+      This tradeoff yields an unconditional directed-or-rainbow path guarantee of order 7ρ/27, where ρ=m/n, up to an absolute additive constant. It is useful infrastructure but far from the one-third target.
+      
+      The important point is conceptual: the source-oriented model makes the repeated-source obstruction visible rather than discarding it.
+      
+      ## 6. The repeated-hub obstruction
+      
+      A long ordinary path in the full 2-shadow need not contain any long hypergraph path.
+      
+      Take distinct vertices x_0,…,x_t and two hubs z,w. For odd i let
+      
+      E_i={x_{i−1},x_i,z},
+      
+      and for even i let
+      
+      E_i={x_{i−1},x_i,w}.
+      
+      The resulting 3-graph is linear: two odd edges meet only at z, two even edges meet only at w, and consecutive edges additionally use successive x-vertices in the intended way.
+      
+      Its 2-shadow contains the arbitrarily long ordinary graph path
+      
+      x_0x_1…x_t,
+      
+      but the colors on that path alternate z,w. Any attempt to use many corresponding hyperedges creates repeated nonconsecutive intersections at z or w. In fact every linear hypergraph path has bounded length, at most four in the constructed family.
+      
+      Thus there is no theorem of the form
+      
+      “take an arbitrary long shadow path and extract a fixed positive fraction as a hypergraph path.”
+      
+      The obstruction is concentrated reuse of a few colors or hubs. This theorem is proved but still pending audit.
+      
+      ## 7. What the symmetric route must exploit
+      
+      The repeated-hub example identifies the missing structure.
+      
+      If colors are mostly fresh, then a long ordinary or rainbow path is already close to strong-rainbow and can be lifted.
+      
+      If a few colors are reused heavily, then the triangle symmetry says those colors are actual hypergraph vertices incident with many shadow edges. Such reuse creates large star-like families of hyperedges and potentially alternative routes through the other two shadow sides of their triangles.
+      
+      Therefore the hoped-for proof has a dichotomy:
+      
+      1. low color reuse gives a long strong-rainbow path directly;
+      2. high color reuse creates enough structured density around the repeated hubs to reroute through fresh vertices and colors.
+      
+      No theorem currently executes this dichotomy at the required scale.
+      
+      ## 8. Interface with rank flow
+      
+      There is one established way to repair many color-vertex collisions: retain the ascending-edge rank structure.
+      
+      For a rank layer of ascending nonspecial edges, terminal pairs colored by their entrances form a proper-colored graph with strong rank restrictions. Directed paths through the entrance-to-terminal orientation force strictly increasing vertex rank. In that setting, many collisions that are possible in the unrestricted full shadow become impossible or point only backward.
+      
+      Those are theorems of the dense-core rank-flow route, not of the representation route itself. They may be imported if a shadow proof needs an ordering device.
+      
+      The conceptual distinction should remain clear:
+      
+      - Route 2 asks whether ascending nonspecial mass can survive across rank layers;
+      - Route 8 asks for a path theorem in the full symmetric shadow after most rank information has been discarded.
+      
+      ## 9. Known dead ends
+      
+      Three shortcuts are closed.
+      
+      First, generic properly colored graph theorems have the factor-two A/B ceiling (6), so they cannot by themselves reach one third.
+      
+      Second, an ordinary long full-shadow path is insufficient because of the repeated-hub construction.
+      
+      Third, even an ordinary rainbow path in the full shadow is not enough: an edge color may equal a nonincident path vertex. The correct condition is the mutual distinctness in (3), unless one uses an A/B separation.
+      
+      Finally, hypergraph and shadow minimum degrees must be kept distinct after any subgraph extraction.
+      
+      ## 10. First unsupported implication
+      
+      The proof stops at the following exact colored-graph theorem.
+      
+      **Symmetric strong-rainbow target.** Let G be the full 2-shadow of a linear 3-uniform hypergraph, with every edge colored by the third vertex of its unique parent hyperedge. If G has no ℓ-edge path whose path vertices and edge colors are all mutually distinct, prove
+      
+      e(G)≤ℓ n.      (9)
+      
+      By (1), this is exactly the one-third upper bound.
+      
+      Any successful proof must survive concentrated repeated-color/hub configurations of the type above. The A/B theorem cannot cross the two-thirds ceiling, and no present full-shadow theorem controls hub reuse at the necessary density.
+      
+      The exact strong-rainbow encoding and repeated-hub obstruction are proved but pending audit; the full-shadow degree identity and A/B/source-oriented machinery are certified.
+      
+      ## Research handoff
+      
+      The strongest next target is a density-to-strong-rainbow-path theorem exploiting the symmetric colored triangles, with an explicit structural branch for repeated hub colors. A useful intermediate theorem would show that high color multiplicity forces a decomposition or rerouting mechanism that creates fresh colors elsewhere.
+      
+      Do not retry generic rainbow black boxes, arbitrary ordinary-shadow path extraction, or ordinary rainbow lifting without controlling color-vertex collisions.
+      
+      If the argument begins using rank superlevels or monotone edge ranks essentially, import the rank-flow machinery rather than rebuilding it here; at that point the proof is deliberately using the interface with Route 2.
+
 • [research_nudges] Research nudges
     STATEMENT
     Strongly encouraged project-local research heuristics. Researchers must seriously consider the applicable nudges as default methodological priors, but may depart from them when mathematical judgment gives a reason.

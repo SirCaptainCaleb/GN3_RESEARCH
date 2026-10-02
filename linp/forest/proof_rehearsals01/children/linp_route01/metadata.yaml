@@ -1,0 +1,46 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "8002ab07cee5b01942e295d045426ff7409e77eb66798f98aff20fac0fd2502e"
+created_at: "2026-10-02T04:36:22.038051+00:00"
+id: "linp_route01"
+last_elevation_revision: null
+last_substantive_worker_id: 351
+legacy_id: null
+lifecycle_status: "active"
+math_version: 7
+mathematical_status: null
+metadata:
+  include_uncertified_major_results: true
+  route_index: 1
+  route_key: "snake_43_48"
+  synthesis: true
+  taxonomy_version: 2
+object_type: "research"
+origin_worker_id: 334
+parent_id: "proof_rehearsals01"
+position: 1
+research_interface:
+  acceptance: "Researcher-ready synthesis through the first unsupported implication; major provisional mathematics included with trust labels."
+  consumer:
+    - "future LINP researchers"
+    - "coordinator global synthesis"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "43/48 contact-defect stability → enriched paid strict-gap currencies → global bounded-reuse gap."
+statement_sha256: "f8a5b7263c7a8aee70d9ef84fd2029b45167ee2716f3ec23e4f799a8341185f0"
+substantive_worker_ids:
+  - 334
+  - 351
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Route 1 — Snake/contact-defect and post-43/48 stability"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T05:21:57.282506+00:00"
+version: 7

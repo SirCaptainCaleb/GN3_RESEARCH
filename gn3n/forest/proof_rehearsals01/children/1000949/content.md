@@ -1,293 +1,160 @@
-# INDEX 1 — Comprehensive deletion-cover compatibility proof rehearsal
+# Proof rehearsal I — deletion-cover compatibility and global obstruction structure
 
 ## Statement
 
-Researcher-onboarding synthesis for deletion-cover compatibility/global obstruction structure. It gives the complete current route from minimum counterexample through deletion-state consistency, ordinary positioned disturbance, and balanced odd-cycle monodromy; distinguishes certified from pending inputs; records the main fenced/dead approaches; and identifies exactly three live closure interfaces: order-defect placement, crossing synchronization, and odd-cycle integral rounding. Pending theorem 1000948 further shows that every arbitrary selected deletion-cover transversal already exposes a positioned order defect, endpoint mixed-support edge, or inherited three-piece double-deletion crossing; hence the balanced odd cycle is not locally clean, though its integral monodromy/rounding problem remains a distinct global consumer.
+Near-publication rehearsal of the deletion-cover route. From a minimum counterexample, selected exact deletion two-covers either glue, expose a positioned order/support disturbance, or enter the balanced odd-cycle support geometry. The local structural theory is complete up to pending audit; the first unsupported implication is to consume the positioned disturbance, or the odd-cycle monodromy it encodes, into a spanning two-cover (equivalently a spanning ordering of defect span at most two).
 
 ## Body
 
-# Route summary
 
-Assume a minimum counterexample H and choose one exact two-path cover F_x of H-x for every vertex x. The deletion-cover route is a local-to-global consistency argument. If sufficiently many deletion states agree, they reconstruct a forbidden spanning two-cover. Therefore a counterexample must carry structured inconsistency. The current theorem package localizes that inconsistency almost completely: every ordinary support configuration produces a support-compatible order defect or a mixed-support edge already tied to an endpoint deletion, while the unique genuinely global residue is a balanced odd support cycle with nontrivial order monodromy and explicit two-deletion disturbance. The deletion-cover line therefore no longer needs more generic disagreement, more generic crossings, or another structural classification. Its live task is to convert already-positioned transition data into the neighboring closure interface: a spanning ordering of defect span at most two. In the odd-cycle branch this becomes a precise integral-rounding problem.
+# Deletion-cover compatibility and global obstruction structure
 
-# 0. How a new researcher should use this rehearsal
+## 1. The proposed proof
 
-This document is intended to be sufficient orientation for beginning new work in the deletion-cover compatibility line without first reconstructing its history.
+We seek to prove that every finite 3-uniform boundary tournament has path-cover number at most two. Assume for contradiction that H is a counterexample of minimum order.
 
-There are three trust levels.
+The minimum-counterexample calculus is certified. In particular, pc(H)=3, and for every vertex x the deletion H-x has an exact two-path cover. Fix, once and for all, one such cover
 
-**Certified / established** means the result may be used as settled project mathematics. The main certified inputs in this rehearsal are `mincex01`, `1000694`, `1000758`, `compatibility_triangle_endpoint_transport01`, `compatdegreefour10`, `compatuniformall11`, `1000518`, `1000211`, `1000683`, `double_inward_endhook_not_absorption01`, and `astra003adjacentonedefect`.
+    F_x = P_x | Q_x
 
-**Proved but pending audit** means the result is a live theorem and may be used optimistically for route design, but a claimed final proof of the grand conjecture must either wait for certification or independently re-establish the needed statement. The principal pending package is `1000928`, `1000929`, `1000930`, `1000931`, `1000934`, `1000936`, `1000942`, `1000943`, `1000944`, and `1000945`.
+for each x in V(H). The proof attempts to reconstruct a spanning two-cover of H from the mutual consistency of these deletion states.
 
-**Targets / proposals** are the unsupported arrows isolated below. They are not facts.
+Two selected deletion states are **support-compatible** if, on their common domain, they induce the same bipartition into the two path supports. They are **fully compatible** if, in addition, the induced linear orders on the common support classes agree. The central principle is simple: too much compatibility glues to a global two-cover, whereas failure of compatibility must manifest as a controlled order or support defect.
 
-Four pieces of vocabulary are enough to read the route. A deletion state F_x is an exact two-path cover of H-x. Two states are **support-compatible** when they induce the same two support classes on their common domain; they are **fully compatible** when they also induce the same linear order inside those classes. The **selected support graph** has one vertex for each selected path support and one edge for each deletion state joining its two supports. A spanning ordering has **defect span** equal to the width of the interval containing all non-tight consecutive triples; by `1000694`, span at most two is exactly a spanning two-cover.
+The certified defect-span theorem gives the target in its most useful form. If H-x=P|Q, then the spanning order obtained by inserting x between P and Q has defect span three; conversely, a spanning order has path-cover number at most two precisely when its defect structure can be compressed to defect span at most two. Thus every deletion state is already a canonical width-three approximation to the desired conclusion. The task is to use incompatibility between deletion states to remove one unit of width.
 
-A researcher entering this line should treat Sections 1–4 as the established/pending architecture, Section 6 as the no-backtracking ledger, and Section 7 as the actual frontier.
+Unless explicitly marked otherwise, the structural statements below are certified. Results marked **pending** have proofs in the database but have not yet passed independent audit; they are used optimistically in the strongest version of the rehearsal.
 
-# 1. Starting reduction: exact deletion states and the canonical closure interface
+## 2. What full compatibility implies
 
-Let H be a minimum counterexample.
+The basic gluing theorem (1000694) has two consequences.
 
-**Established.** By `mincex01`, pc(H)=3 and every one- and two-vertex deletion has an exact two-path cover. By `1000694`, every exact deletion cover
+First, four pairwise fully compatible exact deletion covers reconstruct a spanning two-cover of H. Therefore a minimum counterexample cannot contain a four-state clique of full compatibility.
 
-H-x = P | Q
+Second, the relative geometry of two fully compatible deletion states is completely rigid. Suppose F_a and F_b are fully compatible. After identifying the common ordered support, the omitted labels a and b are inserted into that support in either the same slot or adjacent slots. If the insertion slots are separated by at least two positions, the two insertions can be performed simultaneously and H is already covered by two tight paths. Hence only the same-slot and adjacent-slot cases survive.
 
-gives the spanning ordering P,x,Q with defect span exactly three. Conversely, H has a spanning two-cover exactly when some spanning ordering has defect span at most two.
+In the adjacent-slot case, all consecutive triples in the combined order are certified except one local triple. Boundary antisymmetry then supplies the reverse tight triple at that location. Thus compatibility does not leave an arbitrary local configuration: it leaves a single, explicitly positioned order defect.
 
-Thus the grand theorem, inside a minimum-counterexample argument, is a one-unit compression problem:
+A pending global strengthening (1000928) says that the full-compatibility graph of any selected deletion family is K4-minor-free, hence 2-degenerate. This is not needed for the local normal form, but it reinforces the same conclusion: a counterexample cannot hide inside a thick region of mutually compatible deletion states.
 
-**canonical width three -> width at most two.**
+## 3. Support compatibility localizes all order variation
 
-Choose one exact deletion state F_x for every x. The indexed route studies the consistency of this family.
+Assume now that at least three selected deletion states are pairwise support-compatible. The certified support-localization part of 1000694 gives a fixed Hamiltonian path Q and a set X such that, after relabelling,
 
-One fact should immediately change how new work is allocated: **bare order disagreement is already settled.** Certified `1000211` proves that every minimum counterexample contains order disagreement. Any argument whose endpoint is merely “two tight paths order a common pair differently” has not advanced this line. The needed output is disagreement with enough support and positional information to interact with the canonical width-three join.
+    F_t = (X-{t}) | Q
 
-# 2. Consistency package: agreement either glues or localizes to one insertion defect
+for every relevant deletion label t, each H[X-{t}] is Hamiltonian, and H[X] itself is not Hamiltonian. The Q-side may be given one fixed Hamilton order. All unresolved variation therefore lies in the Hamiltonian orders of the one-hole sets X-{t}.
 
-The first conceptual transformation is
+This is already a substantial reduction: support compatibility cannot create two independently moving path systems. It creates one critical support X whose deletion orders fail to assemble into a Hamiltonian order of X.
 
-local deletion states -> compatibility structure -> bounded transition defect.
+The certified endpoint-probe theorem 1000758 then forces structure inside this critical class. Comparing endpoint deletions against the support-compatible family yields either relative-order disagreement or an ordinary edge joining the two support classes of an anchor deletion cover; the nominal three-crossing alternative collapses to such a mixed-support edge by the path-degree argument at the singleton. In particular, a support-compatible family cannot remain both order-coherent and crossing-free.
 
-## 2a. Full compatibility
+The certified triangle transport theorem gives the same conclusion from another direction: two compatibility neighbors on the same side of an anchor synchronize sufficiently to produce either a mixed-support endpoint edge or an order reversal. Hence, once support compatibility is present, the only issue is not existence of a defect but its eventual consumption.
 
-**Established: `1000694`.** Four pairwise fully compatible exact two-cover deletion states reconstruct a global two-cover. Therefore a counterexample cannot contain a four-state clique of full compatibility.
+## 4. Global support geometry
 
-The same theorem gives the exact two-state normal form. If F_a and F_b are fully compatible, then the omitted labels a,b must restore into the same common ordered support. Their insertion slots are either identical or adjacent. If the slots are separated by at least two positions, the two insertions can be combined and H is already two-coverable. If they are adjacent, all local triples in the combined order are certified except one, and boundary antisymmetry supplies the reverse tight triple.
+Associate to the chosen family {F_x} the selected support graph whose vertices are selected path supports and whose edge corresponding to x joins the two supports of F_x.
 
-This normal form is important because it exhausts the local geometry of a compatible pair. A new researcher should not reopen arbitrary two-cover insertion configurations: after compatibility is known, the only unresolved local states are same-slot and adjacent-slot replacement.
+The strongest current global classification is pending audit. Theorems 1000929 and 1000937 imply that the selected support system has only two essential forms:
 
-**Pending global strengthening: `1000928`.** The full-compatibility graph of arbitrarily selected deletion states is K4-minor-free, hence 2-degenerate. This does not close the theorem; its role is to show that compatibility cannot form a thick global network.
+1. a forest of support relations; or
+2. a spanning odd cycle C_{2k+1}, in which every selected support has order k.
 
-## 2b. Support compatibility without order compatibility
+The proof therefore divides at this point.
 
-**Established: `1000694`.** A pairwise support-compatible family with at least three deletion labels localizes to
+### 4.1 The forest branch
 
-F_t = (X-{t}) | Q,
+In the forest branch, compatibility blocks carry a fixed Hamilton path/order (pending 1000930). The local compatibility and endpoint-probe lemmas can then be propagated along the support tree.
 
-where every H[X-{t}] is Hamiltonian, Q is Hamiltonian, and X itself is not Hamiltonian. The Q-side may be normalized to one fixed Hamilton order. Therefore all unresolved variation lies in the ordered Hamilton deletions of the single critical class X.
+The pending global reduction 1000942, sharpened by pending 1000948, gives the theorem-facing conclusion for an arbitrary selected transversal of deletion covers. Outside the balanced odd cycle, at least one of the following occurs:
 
-**Established: `1000758`.** Endpoint probes against such a family cannot remain featureless. They force one of three kinds of output: at least three cross-class path edges, a direct mixed-support edge, or relative-order disagreement. In the three-crossing case, path degree at the singleton forces a direct mixed-support edge, so the operative outputs are endpoint crossing or order disagreement.
+- two selected deletion states are support-compatible but order-incompatible; or
+- for some anchor F_x=P|Q and an endpoint y of P or Q, the selected cover F_y contains an ordinary edge joining surviving vertices of P and Q.
 
-These theorems should be viewed as one package: **global support agreement collapses the problem to one critical Hamilton-deletion class; endpoint deletions then expose the order/crossing defect inside it.**
+These are already positioned disturbances: the disagreement belongs to two deletion states, or the support crossing is tied to an endpoint deletion of a canonical state P,x,Q.
 
-# 3. Global structural reduction: all ordinary configurations already reach positioned disturbance
+There is one important rounding obstruction inside the forest geometry. Pending 1000938 shows that branching in a reduced support tree can already realize fractional mass two while no pair of selected supports has spanning union. Consequently a proof cannot finish the forest branch merely by choosing two existing selected paths more cleverly. A successful argument must manufacture a new Hamiltonian support, or use the positioned order/crossing data to compress the canonical defect window. This is why the natural consumer is endpoint transport rather than pure support selection.
 
-The next transformation is
+Thus, subject to the pending global classification, the forest branch reduces to the following statement.
 
-sparse support/compatibility geometry -> a positioned endpoint disturbance,
+**Forest compression target.**  
+Given a canonical deletion state H-x=P|Q together with either a robust order disagreement among selected deletion states or a mixed-support edge exposed by an endpoint deletion, construct a spanning ordering of defect span at most two.
 
-with one genuinely distinct odd-cycle exception.
+No theorem currently proves this implication in full generality.
 
-**Pending: `1000929`.** For an arbitrary selection of one deletion cover per label, the selected support graph is either a forest or one spanning odd cycle on n=2k+1 vertices, with every support in the cycle of order k.
+### 4.2 The balanced odd-cycle branch
 
-**Pending: `1000930`.** Ordinary compatibility blocks retain a fixed Hamilton path/order. Thus internal block structure is not an independent obstruction.
+Assume the selected supports form the spanning odd cycle C_{2k+1}. This branch is genuinely global and should not be folded into the tree argument.
 
-For the non-cyclic geometry, the important local mechanisms are already known.
+It is already known, pending audit, that the cycle cannot be locally featureless. Theorem 1000943 says that some length-two transition has a two-deletion disturbance: deleting an internal exchanged label produces either an inherited three-piece crossing or relative-order disagreement in the endpoint-deleted covers. The strengthened transversal theorem 1000948 packages the same conclusion as a positioned three-piece double-deletion crossing.
 
-**Established: `compatibility_triangle_endpoint_transport01`.** Two compatibility neighbors on the same side of an anchor produce a synchronized family and hence either a direct mixed-support edge at an endpoint deletion or an order-reversal/disagreement output.
+If the overlapping cycle states are fully compatible, the compatible-pair normal form from 1000694 identifies every step-two transition with either a same-slot insertion or an adjacent-slot insertion on a common ordered spine. Every adjacent-slot transition carries a reversing tight triple.
 
-**Pending: `1000934`.** Two suitable endpoint-incompatible probes force a direct mixed-support edge or order disagreement.
+Pending theorem 1000936 shows that at least k-1 of the step-two transitions are adjacent-slot reversals. The sharper pending theorem 1000945 says more: every adjacent rank generator occurs at least once, and either exactly k-1 reversals occur, one at each rank boundary, or at least k+1 reversals occur. Thus the cyclic branch already contains a global reversal network; proving the existence of one more reversal cannot close it.
 
-These are compressed by the strongest current umbrella theorem.
+There is an equivalent order-theoretic description. Pending theorem 1000944 says that the pair-order data on the complement of the ground cycle either come from one global linear order or possess a shortest incoherence witness of one of two forms: an odd-gap directed triangle or a directed C4 supported on two disjoint ground-cycle edges. This is a coordinate description of the same monodromy, not a separate proof route.
 
-**Pending: `1000942`.** For a minimum counterexample with one chosen deletion cover after every vertex deletion, at least one of the following holds:
+Finally, pending theorem 1000931 identifies the exact integral object needed for closure. The selected supports satisfy precise incidence identities and already admit the correct fractional mass-two certificate. If a tight-path support T is a vertex cover of the ground cycle with |T|=k+1, then T together with one selected support is a spanning two-cover of H. Hence the cyclic branch has the precise residual problem:
 
-(A) two chosen covers are support-compatible but order-incompatible;
+**Odd-cycle rounding target.**  
+Use the step-two rank monodromy, or its odd-gap triangle/C4 form, to produce a Hamiltonian minimum vertex cover of C_{2k+1}, or directly a spanning ordering of defect span at most two.
 
-(B) for some anchor F_x=P|Q and some endpoint y of P or Q, F_y contains an ordinary path edge joining surviving vertices from the two support classes of F_x;
+A better fractional estimate cannot substitute for this step; the obstruction is integral.
 
-(C) the chosen supports form the balanced spanning odd-cycle configuration, but some consecutive double deletion already has an inherited three-piece crossing or relative-order disagreement.
+## 5. The two branches meet at the same local interface
 
-This is the correct structural endpoint of ordinary INDEX 1 work. The forest, compatibility-block, triangle, and endpoint-probe subcases should not be separately re-investigated unless one of the pending theorems fails audit.
+The forest branch and the disturbed odd-cycle branch both deliver the same kinds of data:
 
-A certified abundance package explains the remaining difficulty. `compatdegreefour10` and `compatuniformall11` show that either a high-compatibility anchor already yields synchronized endpoint structure, or every deletion state has linearly many incompatible partners of one broad type. Thus the ordinary branch does not suffer from too few disturbances. It suffers from failure to **synchronize** several disturbances at one closure window.
+- a support-compatible but order-incompatible pair of deletion states;
+- an endpoint deletion whose chosen cover contains a mixed-support edge relative to an anchor P|Q;
+- or a double-deletion three-piece crossing/reversal carrying explicit deletion provenance.
 
-# 4. The genuinely distinct branch: balanced odd-cycle monodromy
+These are exactly the forms needed by the defect-span and endpoint-transport lines. In proof language, we have reached the point at which the canonical width-three order P,x,Q is accompanied by an oriented defect that should permit one of its two independent defect edges to be removed.
 
-The spanning odd support cycle must remain separate because its obstruction is global rather than tree-like.
+The desired lemma would be something of the following form.
 
-## 4a. The odd cycle is already disturbed
+**Positioned disturbance compression lemma (open).**  
+Let H be a minimum counterexample and let H-x=P|Q be an exact deletion cover. Suppose the selected deletion family supplies, relative to this state or to a double deletion derived from it, one of the positioned order/support disturbances above. Then H has a spanning ordering whose defect-line matching number is at most one; equivalently, H has a spanning two-path cover.
 
-**Pending: `1000943`.** Any odd cycle of distinct selected Hamiltonian supports whose consecutive double deletions are two-coverable has a non-clean length-two transition: an internal exchanged label gives an inherited three-piece crossing, or the endpoint-deleted inherited covers have relative-order disagreement. No minimum-counterexample, longest-path, or balance hypothesis is required.
+This is the first genuinely unsupported implication in the general deletion-cover route.
 
-Consequently “prove the exceptional odd cycle cannot remain completely clean” is already done, subject to audit.
+For the odd-cycle branch one may instead attempt the stronger global rounding target of Section 4.2. The local and global formulations are compatible: the cyclic monodromy may ultimately be useful only because it forces several positioned disturbances to synchronize at one canonical defect window.
 
-## 4b. In the no-order-disagreement subbranch, compatibility produces rank monodromy
+## 6. Why the obvious local closures do not work
 
-Assume the selected cycle states are fully compatible where their supports overlap. Then `1000694` turns each step-two replacement into one of two moves on a common ordered spine: same-slot replacement or adjacent-slot replacement. An adjacent-slot move supplies a reversing triple.
+Several tempting continuations are already ruled out and should be regarded as mathematical obstructions, not historical curiosities.
 
-**Pending: `1000936`.** On n=2k+1 labels, at least k-1=(n-3)/2 of the step-two transitions are adjacent-slot reversals.
+A bare order disagreement is insufficient: certified theorem 1000211 already gives order disagreement in every minimum counterexample. What is missing is endpoint placement or synchronization with a canonical deletion join.
 
-**Pending refinement: `1000945`.** Every adjacent rank generator occurs at least once, and parity gives a sharp dichotomy. Either there are exactly k-1 reversals, each rank generator appears exactly once, and k+2 transitions are same-slot; or there are at least k+1 reversals, a strict majority. Thus proving “there is at least one reversal” or even “there are linearly many reversals” is no longer new progress.
+A single reversal is also insufficient. The certified counterexample double_inward_endhook_not_absorption01 shows that even both canonical inward endpoint hooks can coexist on a non-Hamiltonian four-set. Likewise astra003adjacentonedefect shows that adjacent double insertion gives, in the bad case, only a one-defect ordering with the reverse triple tight. These are local normal forms, not absorption theorems.
 
-**Pending complementary coordinate system: `1000944`.** The pair-order data induced on the complement of the ground odd cycle are either restrictions of one global linear order, or a shortest incoherence witness is an odd-gap directed triangle or a directed C4 on the endpoints of two disjoint ground-cycle edges. This should be treated as another description of the same global order obstruction, not as a separate proof route.
+Hamiltonicity without order control is insufficient. Certified theorem 1000683 gives a Hamiltonian four-set for which the omitted vertex extends neither endpoint of a displayed Hamiltonian order on the other three vertices. Therefore every gluing argument must preserve the relevant Hamilton order, not merely the support.
 
-## 4c. The integral target is exact
+Boundary antisymmetry may be used only on a single ordered triple. It does not license reversal or cyclic rotation of an entire tight path. Any proposed splice must verify each newly created consecutive triple.
 
-**Pending: `1000931`.** For the ground odd cycle C_{2k+1}, the selected supports satisfy exact incidence identities. In particular, if a tight-path support T is a vertex cover of the ground cycle and |T|=k+1, then T and one selected support form an integral spanning two-cover. The theorem also gives the exact fractional mass-two criterion and dual slack description.
+Finally, the support-tree and odd-cycle fractional certificates do not themselves round. Pending 1000938 shows that even a forest can have fractional mass two while no pair of selected paths spans, and pending 1000931 shows that the odd-cycle branch has already reached the exact fractional optimum. The missing mechanism is creation or certification of the correct new integral support.
 
-Hence the actual odd-cycle closure problem is:
+## 7. Exact stopping point
 
-**ODD-CYCLE ROUNDING.** Use the global same-slot/adjacent-slot monodromy, or the equivalent global-order/odd-gap-triangle/C4 obstruction, to produce a Hamiltonian minimum vertex cover of the ground cycle, or directly a span-two ordering.
+The proof is complete through the structural localization of deletion-cover inconsistency, subject to audit of the pending global classification and monodromy theorems.
 
-The fractional theorem already identifies the correct integral object. Merely improving tau*(H) toward two is not the missing step.
+In the ordinary branch the first unsupported implication is:
 
-# 5. Natural interfaces with neighboring proof lines
+    positioned deletion-cover order/crossing disturbance
+    => defect-line matching number at most one.
 
-INDEX 1 intrinsically ends when it has produced sufficiently positioned transition data. Two neighboring lines are the natural consumers.
+In the balanced odd-cycle branch one may equivalently stop at:
 
-**INDEX 3: defect-span / spanning-order compression.** `1000694` makes this the theorem-level closure interface. A successful consumer must take the order defect, mixed-support crossing, or odd-cycle composite witness and remove one center from the canonical span-three window.
+    cyclic rank/order monodromy
+    => Hamiltonian minimum vertex cover of the ground cycle
+       or defect-line matching number at most one.
 
-**INDEX 4: endpoint transport / bounded-window gluing.** Mixed-support edges, reversing triples, and inherited three-piece crossings are precisely the local data this line should consume. The key issue is not producing another local gadget but proving that two or more gadgets can be made compatible at one endpoint/join.
+Nothing beyond these arrows is presently justified in general.
 
-Other proof families may be imported when they improve positioning or give a well-founded transport measure, but the synthesis should not silently turn into quadratic-potential, longest-path, or three-cover dynamics.
+## 8. Research handoff
 
-# 6. No-backtracking ledger: questions already answered or routes already fenced
+The strongest viable next target is a **positioned disturbance compression theorem** that consumes an endpoint-tied mixed-support edge, a robust deletion-order disagreement, or a double-deletion three-piece crossing while retaining the canonical order P,x,Q. Such a theorem would simultaneously close the forest branch and provide a local consumer for the odd-cycle monodromy.
 
-This section is deliberately operational. A new researcher should not spend a research cycle on any item below unless challenging the cited theorem itself.
+The principal route not to retry without a new ingredient is generic witness production. Order disagreement, reversals, mixed-support crossings, and even linear families of incompatible deletion states are already available. The unresolved mathematics is their synchronized placement and integral consumption.
 
-## 6a. “Can we at least force order disagreement?”
-
-Yes. `1000211` proves it in every minimum counterexample. Generic disagreement existence is closed. New work must add **position, synchronization, or consumability**.
-
-## 6b. “Can many compatible deletion states coexist?”
-
-Not in a way that directly helps a counterexample. Four mutually fully compatible states glue globally by `1000694`. Pending `1000928` strengthens this to K4-minor-free/2-degenerate compatibility. Do not search for a high-density compatibility regime as a new structural branch; high compatibility is already a route to gluing or endpoint synchronization.
-
-## 6c. “Maybe a compatible pair can have complicated relative insertions?”
-
-No. `1000694` reduces a compatible pair to identical or adjacent insertion slots on one common ordered support. Separated slots already close the theorem. The adjacent case has exactly one uncertified local cross triple and a forced reverse tight triple.
-
-## 6d. “Maybe one reversing triple or two inward endpoint hooks force absorption?”
-
-No. `double_inward_endhook_not_absorption01` gives an explicit non-Hamiltonian four-vertex configuration with both inward hooks. A local reversal gadget by itself is not a closure theorem.
-
-Likewise `astra003adjacentonedefect` shows exactly what adjacent double insertion gives: a Hamiltonian enlargement if the cross triple is tight, otherwise only a one-defect ordering / two-path cover with the reverse triple tight. This is a useful normal form, not a finished splice.
-
-## 6e. “Maybe Hamiltonicity of a small enlargement lets us restore the omitted vertex at an endpoint of the displayed order?”
-
-No. Certified `1000683` gives a Hamiltonian four-set whose omitted vertex extends neither endpoint of a particular Hamiltonian order on the remaining three vertices. Any gluing theorem must use order compatibility, not Hamiltonicity alone.
-
-## 6f. “Can boundary antisymmetry justify reversing or rotating an entire tight path?”
-
-No. Boundary antisymmetry reverses a single ordered triple. It does not give path reversal, cyclic rotation, or arbitrary reordering. Any proof using such a move must certify every new consecutive triple.
-
-## 6g. “Maybe the ordinary branch just needs more crossings or more disagreement witnesses?”
-
-No. `compatdegreefour10` and `compatuniformall11` already give either synchronized endpoint structure or linearly many incompatible partners at every state. `1000942` already reduces the arbitrary selected family to positioned disturbance. The residual issue is **common placement and joint consumption**, not witness abundance.
-
-## 6h. “Maybe the odd cycle only needs one reversal, or a proof that it is not clean?”
-
-No. Pending `1000943` already forces two-deletion disturbance. Pending `1000936` and `1000945` already give a global reversal network, including every rank boundary. New odd-cycle work must compose those events into an integral/spanning consequence.
-
-## 6i. “Maybe a better fractional estimate closes the odd cycle?”
-
-No. Pending `1000931` already supplies exact fractional mass-two criteria and the dual description. The grand theorem is integral. The missing statement is a rounding/gluing theorem producing a Hamiltonian minimum ground-cycle vertex cover or a span-two ordering.
-
-## 6j. “Maybe repeated local transport is enough by recurrence?”
-
-Not without a strict measure or analyzed terminal state. Moving the unique defect without proving descent merely changes its location. Any iterative transport proposal must exhibit a well-founded potential, a no-trapping theorem, or a finite recurrence whose return is itself contradictory.
-
-# 7. Current frontier: three legitimate starting points
-
-A researcher can begin new work at any of these three interfaces without first redoing the structural theory.
-
-## Frontier A — order-defect placement
-
-**Starting data.** A support-compatible but order-incompatible pair F_a,F_b. Certified `1000518` says the pair-state defect survives every further deletion except possibly two labels; if two exceptional labels exist, the entire disagreement is concentrated on that pair.
-
-**What is already available.** Generic order disagreement, robustness under deletion, local reversed edges/reversing triples from path-intersection calculus, and the canonical span-three state P,x,Q.
-
-**Missing implication.**
-A robust deletion-cover order defect can be synchronized with some canonical state P,x,Q so that the defect occurs in an endpoint-adjacent bounded window and literal triple checks yield span at most two.
-
-**What would count as real progress.** A theorem that moves or selects the robust defect into the canonical join with a proved invariant; a theorem that two robust disagreement states must share a consumable endpoint pattern; or a direct bounded-window compression theorem using the concentrated exceptional-pair case.
-
-**What would not count as progress.** Another proof that disagreement exists, another unpositioned reversing triple, or another small Hamiltonian window without a gluing statement.
-
-## Frontier B — crossing synchronization
-
-**Starting data.** An anchor F_x=P|Q and endpoint deletion y for which F_y contains a direct ordinary edge between the surviving P- and Q-classes, or the stronger certified high-/low-compatibility abundance supplied by `1000758`, `compatdegreefour10`, and `compatuniformall11`.
-
-**What is already available.** Many individual mixed-support transitions, synchronized endpoint probes in the high-compatibility branch, and linear families of uniform disturbances in the low-compatibility branch.
-
-**Missing implication.**
-Two or more such disturbances can be forced onto the same anchor/end with compatible boundary orientations, yielding either a legal splice or a transport step with a strict well-founded descent.
-
-**What would count as real progress.** A common-end/common-anchor synchronization theorem; a two-crossing bounded-window splice with complete consecutive-triple verification; or a monotone support-migration invariant that cannot cycle.
-
-**What would not count as progress.** Producing one more mixed edge, classifying one more local crossing pattern without a consumer, or asserting eventual termination from repetition alone.
-
-## Frontier C — odd-cycle integral rounding
-
-**Starting data.** The balanced selected support cycle S_i, exact support identities, same-slot/adjacent-slot step-two transport, at least k-1 adjacent reversals with every rank boundary represented, and the exact `1000931` criterion that a Hamiltonian minimum vertex cover of the ground cycle closes the branch.
-
-**What is already available.** Two-deletion disturbance (`1000943`), reversal monodromy (`1000936`, `1000945`), the global-order versus odd-gap-triangle/C4 description (`1000944`), and the exact fractional/dual identities (`1000931`).
-
-**Missing implication.**
-The global transition word forces a Hamiltonian (k+1)-vertex cover of the ground cycle, or directly forces span at most two.
-
-**What would count as real progress.** A composition rule showing that several adjacent-slot reversals can be realized simultaneously in one support order; an argument that one of the minimum ground-cycle covers inherits a Hamilton order from the monodromy; or a proof that the odd-gap triangle/C4 obstruction feeds Frontier A or B.
-
-**What would not count as progress.** Proving another lower bound on the number of reversals, identifying another single reversal gadget, or sharpening tau* without integral rounding.
-
-# 8. Minimal closure package
-
-At present the route closes if one proves the following package.
-
-**A. Positioned order-defect consumption.** Robust selected order disagreement -> endpoint-adjacent span-two compression.
-
-**B. Synchronized crossing consumption.** Endpoint-local mixed-support disturbances -> legal splice or well-founded transport -> span at most two.
-
-**C. Odd-cycle rounding.** Balanced-cycle monodromy -> Hamiltonian minimum ground-cycle vertex cover or span at most two.
-
-A and B may ultimately be one endpoint-transport theorem. C is genuinely global unless its monodromy can first be converted into A or B.
-
-# 9. Compact dependency map for further reading
-
-A researcher should not need to read the historical tree in order to start. If exact proofs are needed, the shortest useful lookup order is:
-
-`mincex01` gives the minimum-counterexample deletion regime.
-
-`1000694` is the central dictionary: defect span, global gluing, support-family localization, and same/adjacent compatible-pair insertion.
-
-`1000942` is the current global deletion-family reduction, pending audit.
-
-For ordinary branches, `1000758`, `compatibility_triangle_endpoint_transport01`, `compatdegreefour10`, `compatuniformall11`, `1000518`, and pending `1000934` explain exactly what disturbance is available and why abundance is not the missing issue.
-
-For the odd cycle, pending `1000929` gives the support-cycle structure; `1000943` gives unavoidable disturbance; `1000936` and `1000945` give rank monodromy/reversal density; `1000944` gives the global-order obstruction menu; and `1000931` gives the exact integral/fractional target.
-
-The principal fences worth reading before proposing a local splice are `1000683`, `double_inward_endhook_not_absorption01`, and `astra003adjacentonedefect`.
-
-Everything else in the historical compatibility subtree should be treated as implementation detail or provenance unless a proof of one of these package theorems is under audit.
-
-# 10. Mental model
-
-Think of the selected deletion covers as local coordinate charts on H.
-
-If the charts agree too much, they glue to the forbidden global two-cover. Therefore a counterexample must have nontrivial transition maps between charts. The compatibility machinery has already done almost all of the localization: ordinary transition inconsistency becomes endpoint crossing or order defect, while the only global holonomy is the balanced odd cycle.
-
-The research frontier is therefore not “find inconsistency.” It is:
-
-**take transition inconsistency that is already known to exist, synchronize it with the canonical span-three join, and make it delete one global defect rather than merely move that defect.**
-
-That is the invariant picture a new researcher should preserve.
-
-## Coverage update — arbitrary transversals now force positioned disturbance
-
-**Pending: `1000948`.** This should be read as the current theorem-facing strengthening of the global INDEX-1 reduction. For an arbitrary choice of one deletion cover after every vertex deletion, one gets at least one of:
-
-1. a support-compatible but order-incompatible selected pair;
-2. an anchor F_x=P|Q and an endpoint deletion whose chosen cover contains an ordinary edge joining the surviving P- and Q-classes;
-3. in the balanced spanning odd support cycle, a consecutive double deletion whose two-cover crosses two of the three inherited path pieces created by deleting an internal exchanged label.
-
-So the balanced odd cycle is **not** a featureless terminal branch. Its monodromy/fractional structure remains a useful global coordinate system, but every selected transversal already contains a positioned disturbance suitable for INDEX 3/4 consumption. A new researcher should therefore not treat “eliminate the clean odd cycle” as an open task.
-
-This sharpens the frontier map above as follows:
-
-- **Frontier A/B** already occur for every selected transversal outside the genuinely global monodromy packaging.
-- **Frontier C** remains relevant only when one wants to exploit the stronger cyclic structure integrally; it is no longer needed merely to prove the cycle has a local defect.
-
-Audit risk is concentrated in `1000948` and its pending inputs `1000942`/`1000943`. If any of those fail audit, revert to the earlier three-frontier description.
+For the odd cycle specifically, do not spend effort proving merely that the cycle is disturbed or that it has many reversals; those are already pending theorem-level results. The meaningful remaining target is integral rounding or conversion of the monodromy into the positioned compression lemma above.

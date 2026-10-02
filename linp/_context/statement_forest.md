@@ -5760,6 +5760,42 @@
     STATEMENT
     ‹none›
 
+• [proof_rehearsals01] Comprehensive Proof Rehearsals
+    STATEMENT
+    Organizational home for one comprehensive synthesis rehearsal per major conceptual LINP proof route.
+
+  • [linp_route01] Route 1 — Snake/contact-defect and post-43/48 stability
+      STATEMENT
+      Comprehensive synthesis of the direct snake/contact-accounting route from the rank-sensitive 43/48 theorem through near-extremal switching, paid strict-gap structure, and the current global-reuse closure gap.
+
+  • [linp_route02] Route 2 — Dense-core all-special / ascending-edge rank flow
+      STATEMENT
+      Comprehensive synthesis of the two-thirds upper-bound program based on dense-core normalization, elimination of nonspecial ascending edges by rank layers, and all-special closure.
+
+  • [linp_route03] Route 3 — Rotation-expansion and terminal-pair cycle rank
+      STATEMENT
+      Comprehensive synthesis of the Pósa-style rotation and terminal-pair graph route for forcing special-edge density or bounded cycle complexity.
+
+  • [linp_route04] Route 4 — Incidence rank / induced-path clique-cover
+      STATEMENT
+      Comprehensive synthesis of the algebraic upper-bound route through the incidence matrix, induced-path-free intersection graph, exact clique-cover realizability, and weighted/nullity rank inequalities.
+
+  • [linp_route05] Route 5 — Inductive longest-path pair capacity with outside defect
+      STATEMENT
+      Comprehensive synthesis of the one-third induction route that removes a longest path and pays all incident edges from internal pair capacity, path slack, and the outside extremal defect.
+
+  • [linp_route06] Route 6 — Algebraic/Steiner lower constructions and spanning-path obstructions
+      STATEMENT
+      Comprehensive synthesis of the algebraic lower-bound program using Steiner/projective/affine/additive systems, path-sum invariants, carrier reductions, and the major Hamiltonicity fences.
+
+  • [linp_route07] Route 7 — Transversal/Latin/blow-up/product lower constructions
+      STATEMENT
+      Comprehensive synthesis of the lower-bound route through transversal designs, properly colored lifts, fixed-template Latin blow-ups, shared-color constructions, and products.
+
+  • [linp_route08] Route 8 — Global/symmetric 2-shadow and strong-rainbow translation
+      STATEMENT
+      Comprehensive synthesis of the representation-level upper route through the properly edge-colored 2-shadow, source-oriented directed/rainbow coupling, and the full symmetric strong-rainbow formulation.
+
 • [research_nudges] Research nudges
     STATEMENT
     Strongly encouraged project-local research heuristics. Researchers must seriously consider the applicable nudges as default methodological priors, but may depart from them when mathematical judgment gives a reason.

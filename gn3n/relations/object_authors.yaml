@@ -83,6 +83,10 @@
   object_id: "proof_rehearsal_index2_quadratic01"
   worker_id: 1257
 -
+  first_recorded_at: "2026-10-02T04:34:59.389822+00:00"
+  object_id: "proof_rehearsal_index6_no_trapping01"
+  worker_id: 1194
+-
   first_recorded_at: "2026-09-21T00:58:32.616694+00:00"
   object_id: "threeside01"
   worker_id: 575
@@ -290,6 +294,10 @@
   first_recorded_at: "2026-10-02T03:59:05.41598+00:00"
   object_id: "1000956"
   worker_id: 1232
+-
+  first_recorded_at: "2026-10-02T04:54:59.89663+00:00"
+  object_id: "1000949"
+  worker_id: 1285
 -
   first_recorded_at: "2026-09-23T20:45:22.099667+00:00"
   object_id: "humanfrozen01"
@@ -662,6 +670,10 @@
   first_recorded_at: "2026-10-02T04:01:59.082021+00:00"
   object_id: "blocked_extender_coherent_sameend_escape01"
   worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T04:56:15.403675+00:00"
+  object_id: "proof_rehearsal_index2_quadratic01"
+  worker_id: 1285
 -
   first_recorded_at: "2026-09-26T16:29:31.511953+00:00"
   object_id: "weightedfractionalduality01"
@@ -1139,6 +1151,10 @@
   object_id: "commoncore_fivepair_sixshell_normal01"
   worker_id: 1231
 -
+  first_recorded_at: "2026-10-02T04:57:17.791929+00:00"
+  object_id: "1000947"
+  worker_id: 1285
+-
   first_recorded_at: "2026-09-27T00:15:16.673578+00:00"
   object_id: "archive01"
   worker_id: 559
@@ -1491,6 +1507,10 @@
   object_id: "pathcutstatefence01"
   worker_id: 648
 -
+  first_recorded_at: "2026-10-02T04:59:28.926733+00:00"
+  object_id: "proof_rehearsal_index4_endpoint_transport01"
+  worker_id: 1285
+-
   first_recorded_at: "2026-09-27T14:23:38.411606+00:00"
   object_id: "cocyclescope01"
   worker_id: 648
@@ -1691,6 +1711,10 @@
   object_id: "local45neutraldegree01"
   worker_id: 569
 -
+  first_recorded_at: "2026-10-02T05:00:25.084112+00:00"
+  object_id: "proof_rehearsal_index5_longest_reversal01"
+  worker_id: 1285
+-
   first_recorded_at: "2026-09-27T20:37:46.548613+00:00"
   object_id: "swapcycleorderdefect01"
   worker_id: 678
@@ -1770,6 +1794,10 @@
   first_recorded_at: "2026-10-02T04:08:54.978005+00:00"
   object_id: "1000947"
   worker_id: 1194
+-
+  first_recorded_at: "2026-10-02T05:01:29.956181+00:00"
+  object_id: "proof_rehearsal_index6_no_trapping01"
+  worker_id: 1285
 -
   first_recorded_at: "2026-09-27T22:57:09.321944+00:00"
   object_id: "defectordertoolkit01"
@@ -2019,6 +2047,10 @@
   object_id: "1000954"
   worker_id: 1232
 -
+  first_recorded_at: "2026-10-02T04:18:10.098615+00:00"
+  object_id: "proof_rehearsal_index6_no_trapping01"
+  worker_id: 1272
+-
   first_recorded_at: "2026-09-28T02:03:07.78179+00:00"
   object_id: "unique_small_transport_recomp02"
   worker_id: 679
@@ -2158,6 +2190,10 @@
   first_recorded_at: "2026-10-02T03:52:40.820741+00:00"
   object_id: "shared_edge_double_reversal_sixpackage01"
   worker_id: 1231
+-
+  first_recorded_at: "2026-10-02T04:19:36.658109+00:00"
+  object_id: "proof_rehearsal_index5_longest_reversal01"
+  worker_id: 1273
 -
   first_recorded_at: "2026-09-29T04:28:16.6564+00:00"
   object_id: "staircase_standard_disturbance01"
@@ -2714,6 +2750,10 @@
   first_recorded_at: "2026-09-29T18:21:22.102675+00:00"
   object_id: "facing_k4_twomove_descent01"
   worker_id: 605
+-
+  first_recorded_at: "2026-10-02T04:22:47.600348+00:00"
+  object_id: "proof_rehearsal_index4_endpoint_transport01"
+  worker_id: 1271
 -
   first_recorded_at: "2026-09-29T18:23:51.941298+00:00"
   object_id: "global_four_side_transport15"
@@ -7158,3 +7198,7 @@
   first_recorded_at: "2026-10-02T03:55:16.487824+00:00"
   object_id: "1000955"
   worker_id: 1232
+-
+  first_recorded_at: "2026-10-02T04:28:48.140932+00:00"
+  object_id: "proof_rehearsal_index4_endpoint_transport01"
+  worker_id: 1194

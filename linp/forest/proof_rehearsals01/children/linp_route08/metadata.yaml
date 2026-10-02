@@ -1,0 +1,45 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "df4fa8148100e0329d0a41a1441074cddb2c4567517b170e5e4a42b3ffb081a9"
+created_at: "2026-10-02T05:00:23.017192+00:00"
+id: "linp_route08"
+last_elevation_revision: null
+last_substantive_worker_id: 351
+legacy_id: null
+lifecycle_status: "active"
+math_version: 2
+mathematical_status: null
+metadata:
+  include_uncertified_major_results: true
+  route_index: 8
+  route_key: "shadow_strong_rainbow"
+  synthesis: true
+  taxonomy_version: 3
+object_type: "research"
+origin_worker_id: 348
+parent_id: "proof_rehearsals01"
+position: 8
+research_interface:
+  acceptance: "Researcher-ready synthesis through the first unsupported implication; major provisional mathematics included with trust labels."
+  consumer:
+    - "future LINP researchers"
+    - "coordinator global synthesis"
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "Full/symmetric 2-shadow → strong-rainbow path theorem or hub-reuse obstruction → upper bound."
+statement_sha256: "f833d12c9fba51f8876c540049ca185dc74e6e6ac7d9dbd753c89407b6324493"
+substantive_worker_ids:
+  - 351
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Route 8 — Global/symmetric 2-shadow and strong-rainbow translation"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T05:20:37.320272+00:00"
+version: 2

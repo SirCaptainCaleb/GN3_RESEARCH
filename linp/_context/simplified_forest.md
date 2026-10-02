@@ -1014,6 +1014,15 @@
     • [proof_rehearsal_g000000000014] ‹Proof rehearsal 14 — 2026-10-01 19:57 UTC›
     • [proof_rehearsal_g000000000015] ‹Proof rehearsal 15 — 2026-10-01 21:36 UTC›
 • [project_policy] ‹Project-specific policy›
+• [proof_rehearsals01] One comprehensive synthesis rehearsal per major conceptual LINP proof route.
+  • [linp_route01] 43/48 contact-defect stability → enriched paid strict-gap currencies → global bounded-reuse gap.
+  • [linp_route02] Dense core → ascending/rank-layer elimination → all-special core or sublinear ascending mass → two-thirds.
+  • [linp_route03] Rotations/terminal-pair cycles → special-edge density or bounded cycle rank → improved snake hinge.
+  • [linp_route04] Intersection graph + exact incidence realization → rank/nullity lower bound → upper Turán coefficient.
+  • [linp_route05] Longest-path deletion + outside inductive defect → pair-capacity payment → one-third upper bound.
+  • [linp_route06] Algebraic/Steiner components → spanning-path obstruction → improved lower component; broad scalable families mostly fenced.
+  • [linp_route07] Latin/transversal/blow-up amplification → lifted rainbow/cycle paths → strong ceilings; live target is a low-circumference template or genuinely nonregular construction.
+  • [linp_route08] Full/symmetric 2-shadow → strong-rainbow path theorem or hub-reuse obstruction → upper bound.
 • [research_nudges] ‹Research nudges›
 • [research_retrospectives] ‹Research retrospectives›
   • [1000042] ‹Major-result retrospective epoch 4›

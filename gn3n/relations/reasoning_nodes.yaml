@@ -538,6 +538,14 @@
   composition_manifest:
   composition_status: null
   node_kind: "step"
+  note: "Comprehensive INDEX 5 proof-route synthesis and research handoff"
+  object_id: "proof_rehearsal_index5_longest_reversal01"
+  route_key: "proof-rehearsal/index5-longest-reversal"
+  updated_at: "2026-10-02T04:20:09.404529+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "step"
   note: ""
   object_id: "1000848"
   route_key: null
@@ -566,6 +574,14 @@
   object_id: "1000931"
   route_key: null
   updated_at: "2026-10-02T01:18:17.766633+00:00"
+-
+  composition_manifest:
+  composition_status: null
+  node_kind: "branch"
+  note: ""
+  object_id: "proof_rehearsal_index4_endpoint_transport01"
+  route_key: "proof_rehearsal_index4"
+  updated_at: "2026-10-02T04:22:47.600348+00:00"
 -
   composition_manifest:
   composition_status: null

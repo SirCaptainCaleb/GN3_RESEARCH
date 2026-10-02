@@ -1,295 +1,179 @@
-# Comprehensive rehearsal — defect-span / spanning-order compression
+# Proof rehearsal III — defect-span and spanning-order compression
 
 ## Statement
 
-INDEX-3 synthesis: minimum defect span three is exactly a deletion-cover state. The route then has two consumers: 101 fixed-label transport and universal four-window/five-side reversal machinery. Pending 1000954-1000956 now push the fixed-label second layer all the way to synchronized descent, a reachable four-side endpoint-edge reversal, or an endpoint-aligned Hamiltonian 4/5 support. The live unsupported step is consumption of those positioned endpoint obstructions into a two-cover or an ordering whose defect-line matching number is at most one.
+Near-publication rehearsal of the defect-span route. The defect-line identity turns the two-cover theorem into the problem of reducing a spanning order from two independent defect edges to one. Certified normalization identifies the width-three state with a deletion cover and reduces its local geometry to the 101 or 111 central configuration. The 101 fixed-label branch and the universal four-window/five-side branch now both reach, subject to pending second-layer results, a reachable endpoint-edge reversal or endpoint-aligned Hamiltonian 4/5 support. The first unsupported implication is to consume that positioned obstruction into boundary absorption, a two-cover, or defect-line matching number at most one.
 
 ## Body
 
 
-# Comprehensive proof-route synthesis — defect-span / spanning-order compression
+# Defect-span and spanning-order compression
 
-## 1. Route summary
+## 1. The proposed proof
 
-The route is driven by the defect line of a spanning order. By the certified identity "1000666", the minimum number c(pi) of contiguous tight-path pieces in an ordering pi is 1+nu(L_pi). Thus a spanning two-cover follows once some order has nu(L_pi)<=1.
+Let H be a minimum counterexample to the assertion that every finite 3-uniform boundary tournament has a spanning cover by at most two tight paths. By the certified minimum-counterexample calculus, pc(H)=3.
 
-In a hypothetical minimum counterexample, the best possible order has c(pi)=3. The central theorem "defectspanisdeletion" says that every such span-three order is exactly a one-vertex deletion two-cover written P,x,Q. The local window has only two forms: the 101 / central-three state and the 111 / central-five state ("defectcanonical35_recomp01").
+For a spanning ordering
 
-From there there are only two genuinely different continuations:
+    pi = (v_1,...,v_n),
 
-1. preserve the extra fixed-label structure of 101 and transport the same defect through the graph;
-2. forget that extra structure and enter the universal four-window / reversal machinery.
+call i a defect center when the consecutive triple (v_i,v_{i+1},v_{i+2}) is not tight. The defect line L_pi is the graph on the cuts between consecutive positions, with an edge across the two cuts adjacent to each defect center. The certified identity 1000666 states that the minimum number c(pi) of contiguous tight-path pieces into which pi splits is
 
-Everything else in this line is best understood as a refinement of one of those two arrows.
+    c(pi) = 1 + nu(L_pi),
 
-## 2. Starting reduction: span three is a deletion state
+where nu denotes matching number.
 
-Assume H is a minimum-order counterexample. Minimum-counterexample calculus gives pc(H)=3 and exact two-covers after every one-vertex deletion ("mincex01").
+Thus H has a spanning two-cover as soon as we can find a spanning order with
 
-Choose a spanning order pi minimizing c(pi). Since c(pi)=1+nu(L_pi), the counterexample condition gives c(pi)=3 and nu(L_pi)=2. The target is therefore concrete: reduce the defect-line matching number from two to one.
+    nu(L_pi) <= 1.
 
-Now apply "defectspanisdeletion". If i is the leftmost defect center and x=v_{i+1}, then the prefix P and suffix Q are tight and H-x=P|Q. So the defect-span route and the deletion-cover route meet at the same canonical state P,x,Q.
+In a minimum counterexample, every optimal spanning order has three path pieces, so the obstruction is exactly one unit larger: the defect line contains a matching of size two. The route seeks to compress those two independent defects into one.
 
-This is the natural starting configuration.
+The relevant width-three certificate has a certified normal form. Theorems defectspanisdeletion and defectcanonical35_recomp01 identify a minimum defect-span-three order with an exact one-vertex deletion cover
 
-## 3. Canonical normalization: 101 or 111, plus a universal four-window
+    H-x = P | Q
 
-The middle join through x gives exactly two linear geometries.
+written as a spanning order with x inserted between the two tight paths. Hence the defect-span and deletion-cover formulations are not separate problems: they describe the same canonical state.
 
-**101.** The middle join is tight. The canonical central bridge has order three. This branch retains the omitted label x and inherited orders on P,Q.
+All results below are certified unless explicitly marked **pending**.
 
-**111.** The middle join is defective. Boundary antisymmetry gives the canonical reversed central five-path. This branch retains a positioned five-side and reversal data.
+## 2. The canonical central geometry
 
-There is also a route-neutral normalization. The isolated three-edge cyclic matching geometry is impossible ("1000006"), so every deletion singleton lift has a double-wrap rotation ("1000458"). Hence every span-three state can expose a Hamiltonian four-window with pc2 complement inside the connected cyclic-interval reconfiguration family ("cyclic_nonmatching_fourwindow_transport01").
+Around the inserted label x, the minimum width-three order has only two local forms.
 
-Conceptually:
+In the **101 state**, the middle join through x is tight. The central bridge has order three. This case retains unusually strong provenance: the same omitted label x and the inherited orders of P and Q can be followed under transport.
 
-span-three deletion state
-→ either exploit 101 fixed-label transport
-→ or enter universal bounded-window / reversal transport.
+In the **111 state**, the middle join is defective. Boundary antisymmetry then yields the canonical reversed central five-path. This case retains a positioned five-vertex side and explicit reversal data.
 
-## 4. Branch A: 101 is fixed-label transport
+There is also a route-independent bounded-window normalization. Certified theorem 1000006 rules out the isolated three-edge cyclic matching geometry, and 1000458 gives a double-wrap rotation for every deletion singleton lift. The certified cyclic transport theorem then produces a Hamiltonian four-window whose complement has path-cover number two.
 
-The point of the 101 branch is not merely local swapping; it is preservation of the same omitted label.
+Therefore every canonical width-three state enters one of two mathematical continuations:
 
-**Certified.** "defect101_finite_transport01" says repeated 101 transport ends in exactly one of two useful states:
+1. exploit the fixed deletion label in the 101 state; or
+2. pass to the universal bounded-window/reversal machinery.
 
-- a deletion cover H-x=P|Q with one side of order three; or
-- a blocked slide exposing a positioned Hamiltonian four-window with inherited two-path complement.
+The proof branches here and nowhere earlier.
 
-The blocked-slide case has already joined Branch B. Only the three-side endpoint is intrinsically 101.
+## 3. The 101 branch: transport one fixed defect label
 
-**Certified.** "threeside01" then gives persistent fixed-label transport: in four overlapping seven-vertex shells, at least two defect labels can each be moved from one end of the long path to the other while the same defect label is preserved.
+The special strength of 101 is that the same omitted label survives the transport.
 
-The strongest current refinement is live but **pending audit**:
+The certified finite-transport theorem defect101_finite_transport01 iterates the local 101 slide. It terminates in one of two states:
 
-- "1000946": the shell transport lies in the same pairwise-repartition component as the original deletion state;
-- "1000950": each shell state descends through a 5|2 -> 4|3 diamond;
-- "1000951": the lower 4|3 states glue across shells into a left-to-right constant-Phi corridor carrying one persistent label;
-- "1000953": a further pending sharpening reduces failure of synchronized second-layer descent to degree-four core graphs 2K2, P4, or K1,3.
+- another exact deletion cover H-x=P|Q in which one displayed side has order three; or
+- a blocked slide exposing a Hamiltonian four-window with an inherited two-path complement.
 
-So the strongest current picture is
+The second outcome has already entered the universal bounded-window branch. It remains to understand the three-side outcome.
 
-101
-→ fixed omitted label
-→ finite transport
-→ three-side
-→ persistent shell transport
-→ mobile same-component 4|3 corridor
-→ tiny local residue.
+Certified theorem threeside01 supplies persistent fixed-label transport through four overlapping seven-vertex shells. At least two persistent defect labels can be moved from one end of the long path to the other while preserving the same deletion label. Thus the defect is not merely movable locally; it can be carried across a macroscopic portion of the spanning order.
 
-The first unsupported implication is:
+The strongest continuation is pending audit. Theorems 1000946, 1000950, and 1000951 show respectively that:
 
-**TARGET A — fixed-label corridor compression.**
-Turn that mobile fixed-label corridor, or the explicit residual core graphs if "1000953" survives audit, into a spanning two-cover or an order with nu(L_pi)<=1.
+- the shell transport remains in the same pairwise-repartition component as the original deletion state;
+- every shell transition lies above a 5|2 -> 4|3 strict-descent diamond;
+- the lower 4|3 states glue into a left-to-right constant-Phi corridor carrying one persistent label.
 
-Further descent alone is not enough; the proof must retain enough spanning-order provenance to collapse the defect matching.
+The next pending layer, 1000953, reduces failure of synchronized second-layer descent to three degree-four core graphs: 2K2, P4, or K1,3. Those graphs are no longer the strongest endpoint. Pending theorems 1000954-1000956 continue the argument:
 
-## 5. Branch B: bounded windows, five-sides, and reversal
+- failure of synchronized second-layer descent produces relative-order disagreement between reachable Hamiltonian four-sides in the same fixed-defect component;
+- that disagreement yields a literal reversing tight triple on an edge of a reachable four-side;
+- internal-edge reversal cases are absorbed into the standard small-window machinery.
 
-This branch contains the blocked 101 outcome and essentially all of 111.
+Consequently, subject to audit, the entire fixed-label branch reaches exactly one of:
 
-**Certified.** "1000911" is the clean four-window package. For n>14, a Hamiltonian four-window with pc2 complement yields:
+1. synchronized strict second-layer descent;
+2. a reversal of an end edge of a reachable Hamiltonian four-side; or
+3. a proper endpoint-aligned Hamiltonian four- or five-support with path-cover-two complement.
+
+At a componentwise minimum the first alternative is contradictory. The 101 branch therefore feeds the same positioned bounded obstruction that arises from the universal branch.
+
+## 4. The universal bounded-window branch
+
+The blocked 101 outcome and essentially all of 111 enter the same machinery.
+
+Let W be a Hamiltonian four-set with exact two-path complement P|Q. The certified four-window transport theorem 1000911 says, for n>14, that this state yields one of:
 
 - strict quadratic-potential descent;
-- nearby four-window migration; or
+- a Hamiltonian four-window at distance one, again with path-cover-two complement;
 - an endpoint-aligned Hamiltonian support of order four or five.
 
-The older six-set menus are ingredients of this one conceptual transport theorem.
+Thus a four-window cannot remain an isolated local witness. It either descends or migrates until the bounded support becomes aligned with a displayed endpoint.
 
-The 111 state also retains a five-side. **Certified** "five_side_arbitrary_escape01" says a five-side beside a sufficiently long path yields:
+The 111 state carries a five-side instead. Certified theorem five_side_arbitrary_escape01 gives the parallel conclusion: a five-side beside a sufficiently long path yields strict Phi-descent, an equal-size endpoint/support exchange, or a tight triple reversing an edge of the displayed path.
 
-- strict Phi descent;
-- an equal-size endpoint/support exchange; or
-- a tight triple reversing a displayed edge.
+These theorems have the same logical purpose. They take a bounded central obstruction and move it toward an endpoint-sensitive configuration. A generic interior reversal or an arbitrary small Hamiltonian set is not the endpoint of the proof; the relevant output is a reversal of a displayed end edge or an endpoint-aligned support with its pc2 complement still attached.
 
-Thus four-window transport and five-side transport are really the same kind of producer: they manufacture a small, positioned obstruction.
+The only finite-order qualification in this branch is the residue n<=14 left by 1000911. Any proof that closes the large-order branch must either treat this residue separately or import a certified small-order argument.
 
-The first unsupported implication is:
+## 5. Convergence of the two branches
 
-**TARGET B — bounded obstruction consumption.**
-Convert an endpoint-aligned 4/5 support, nearby four-window, or displayed-edge reversal into endpoint absorption, a direct two-cover, or nu(L_pi)<=1.
+After the pending fixed-label refinements, both branches reach the same state:
 
-Three cautions matter.
+- a reachable Hamiltonian four-side carrying a reversal of one of its end edges; or
+- an endpoint-aligned Hamiltonian support of order four or five with path-cover-two complement.
 
-1. An interior reversal is not yet an endpoint reversal.
-2. A nearby Hamiltonian support is not automatically a legal same-component move.
-3. Neutral migration needs a well-founded termination measure; strict descent is only a contradiction at a componentwise minimum.
+This is substantially stronger than the unconditional existence of a reversal. Certified theorem 1000164 already gives a genuine reversing tight triple somewhere in every minimum counterexample. What the defect-span route contributes is **placement**: the reversal or small support is tied to a canonical deletion/defect state and, in the 101 branch, to a fixed omitted label and same-component transport history.
 
-The theorem "1000911" also leaves n<=14 as a separate finite-order residue for this particular route.
+The remaining theorem should therefore be stated directly in defect-line language.
 
-## 6. Interfaces with neighboring proof lines
+**Endpoint compression lemma (open).**  
+Let pi be a canonical minimum width-three spanning order arising from an exact deletion cover H-x=P|Q. Suppose a reachable bounded-window state associated with pi contains either
 
-**Quadratic-potential / minimal three-cover reconfiguration.**
-This line consumes strict Phi descents and rules out small sides at trapped minima; for example "threeside_trapped_order_le11". But it does not by itself return to nu(L_pi)<=1.
+- a reversal of an end edge of its Hamiltonian four-side, or
+- an endpoint-aligned Hamiltonian four- or five-support with path-cover-two complement.
 
-**Endpoint transport / bounded-window gluing.**
-This is the natural downstream consumer of endpoint-aligned supports and reversals. INDEX 3 produces the obstruction; INDEX 4 is the natural place for the missing gluing/absorption theorem.
+Then H has a spanning ordering sigma with
 
-**Deletion-cover compatibility / global obstruction structure.**
-Compatibility can inject support crossing and order disagreement when local transport stalls. That is useful input, but not closure. The project already has an unconditional reversing tight triple ("1000164"), so producing another reversal is not enough.
+    nu(L_sigma) <= 1.
 
-**Three-cover no-trapping.**
-This line supplies component-minimality constraints that make descent meaningful, but still needs a defect-compression consumer.
+Equivalently, H has a spanning two-path cover.
 
-**Longest-path / reversal structure.**
-This can provide additional positioned reversal information and then enters the same endpoint-transport interface.
+No current theorem proves this implication in full generality.
 
-## 7. One failed shortcut worth retaining
+## 6. Why the local obstruction is not already closure
 
-Common endpoint barriers do not allow one to cyclically rotate ordered tight triples into the desired Hamiltonian windows. "common_endpoint_barriers_fivewindow_counterexample01" gives arbitrarily long counterexamples.
+Three points delimit the missing step.
 
-So orientation must be preserved literally. A reversal or barrier must actually be transported into the needed position; it cannot simply be re-read there.
+First, an interior reversal cannot simply be read as an endpoint reversal. The order of a tight path is part of the data. Boundary antisymmetry reverses one ordered triple; it does not permit cyclic rotation or reversal of a whole path.
 
-This explains why the present gap is genuinely a transport/compression gap rather than a shortage of local witnesses.
+This is not merely a warning. The certified counterexample common_endpoint_barriers_fivewindow_counterexample01 gives arbitrarily long configurations in which common endpoint barrier triples do not produce the Hamiltonian five-window one would obtain by an illicit cyclic reinterpretation. Any valid transport proof must literally move the reversal to the required boundary.
 
-## 8. Residual obstructions
+Second, strict Phi-descent is useful only with same-component provenance. A smaller potential state unrelated to the chosen trapped component is not a contradiction. The pending 101 corridor results matter precisely because they certify reachability inside the original deletion component.
 
-There are two theorem-level gaps.
+Third, neutral migration is not termination. A finite collection of nearby windows can cycle. If the final compression proof uses repeated equal-potential moves, it must provide a well-founded invariant, a no-trapping theorem, or a contradiction from recurrence.
 
-### A. Fixed-label 101 gap
+## 7. Relation to the neighboring routes
 
-Certified mathematics reaches persistent fixed-label shell transport. Pending mathematics strengthens this to a mobile same-component 4|3 corridor.
+The quadratic-potential route supplies the extremal meaning of strict descent and rules out small sides at trapped minima. The present route uses that information only to reject the descent outcomes; its own invariant is the defect-line matching number.
 
-Missing:
-global mobility of one fixed defect
-→ defect-line matching number drops from two to one.
+The endpoint-transport route is the natural consumer of the positioned outputs above. Once a reversal lies on a displayed component-end edge, the certified endpoint calculus often gives direct absorption, strict descent, or a single neutral transfer. Thus the open lemma above is exactly the defect-span/endpoint-transport interface.
 
-The required statement must pull the moving three-side/fixed label back to the boundary of a spanning order, not merely produce more local Hamiltonian supports.
+Deletion-cover compatibility can supply additional order disagreement or mixed-support crossing when transport stalls, but generic disagreement is not enough. The defect-line route requires the witness to remain tied to the canonical order.
 
-### B. Universal bounded-obstruction gap
+Longest-path/reversal theory can amplify a reversal into common-core bounded windows. Again, the useful datum is placement and pc2 complement provenance, not witness existence.
 
-Certified four-window/five-side machinery reaches positioned small supports, nearby migration, descent, or displayed-edge reversal.
+## 8. Exact stopping point
 
-Missing:
-positioned bounded obstruction
-→ boundary absorption / two-cover / nu(L_pi)<=1.
+The proof is complete through the canonical width-three reduction and both transport branches in the certified core. Subject to audit of 1000954-1000956, the fixed-label branch has already been reduced to the same endpoint-aligned obstruction as the universal four-window branch.
 
-If neutral transport is used, it needs a true termination measure. If descent is used, it must be component-respecting and interpreted at a minimum.
+The first unsupported implication is
 
-## 9. Minimal closure package
+    reachable endpoint-edge reversal
+    or endpoint-aligned Hamiltonian 4/5 support
+    => defect-line matching number at most one.
 
-The smallest plausible closure package is:
+The n<=14 residue of 1000911 remains a separate finite-order obligation for the universal branch.
 
-1. **Fixed-label corridor compression.** A reachable end-to-end fixed-label 4|3 corridor of the type supplied by pending "1000951" forces a two-cover or nu(L_pi)<=1. If "1000953" survives audit, it suffices to consume its three degree-four residues together with the synchronized cases.
+## 9. Research handoff
 
-2. **Bounded obstruction consumption.** A reachable endpoint-aligned 4/5 support or displayed-edge reversal from the certified transport packages forces endpoint absorption or nu(L_pi)<=1; neutral migration must have a well-founded termination rule.
+The strongest viable next target is the endpoint compression lemma above. A useful proof should retain the displayed deletion label, inherited path order, pc2 complement, and same-component reachability long enough to perform a legal boundary splice.
 
-3. **Finite-order residue.** Close, or import from another proof line, the n<=14 branch left by "1000911".
+The principal route not to retry without a new ingredient is another layer of local witness production. The 101 slide, fixed-label shell transport, four-window migration, five-side escape, order disagreement, and generic reversal are all already available. Likewise, the old degree-four shell graphs from 1000953 are superseded, subject to audit, by 1000954-1000956.
 
-Everything before these statements is normalization and obstruction production.
+The route is now a one-unit compression problem in the literal sense:
 
-## 10. Mental model
+    nu(L_pi)=2
+    => position one certified obstruction at the boundary
+    => nu(L_sigma)<=1.
 
-The invariant is nu(L_pi), the matching number of the defect line. A hypothetical counterexample sits exactly one unit above the desired threshold: its best spanning orders have two disjoint defect edges.
-
-The existing theory shows that this two-defect certificate is highly rigid. It is a deletion state; its local window is only 101 or 111; cyclically it always yields a double-wrap four-window; and in 101 one defect label can be transported globally.
-
-So this proof line is fundamentally a **compression problem, not an existence problem**. Reversals, crossings, Hamiltonian windows, and potential descents already exist in abundance. The missing theorem is the mechanism that makes one of those moving local witnesses collide with the spanning-order boundary in a legally controlled way so that the two-edge defect matching collapses to one edge.
-
-
-## 11. Investigated territory / anti-backtracking map
-
-This section is deliberately broader than the proof spine. Its purpose is to tell a fresh researcher which natural subroutes have already been pushed, what their strongest endpoint is, and why restarting them verbatim is unlikely to help.
-
-### 11.1 Defect-line and canonical-state reductions — settled infrastructure
-
-- **Defect-line optimization (1000666).** The path-cover count of a spanning order is exactly 1+nu(L_pi). Do not rebuild the route around a different local count unless it gives genuinely more information than the defect-line matching number.
-- **Span-three = deletion state (defectspanisdeletion).** An optimal three-piece order is already a one-vertex deletion two-cover. Treat deletion-cover and spanning-defect formulations as the same state, not as competing starting points.
-- **Canonical 101/111 split (defectcanonical35_recomp01).** The local geometry has already been reduced to central-three or central-five form. Searching for a third generic local pattern is backtracking.
-- **Cyclic normalization (1000006, 1000458, cyclic_nonmatching_fourwindow_transport01).** The isolated cyclic matching obstruction has been eliminated and every deletion singleton lift supplies the double-wrap/four-window structure. Re-deriving existence of a generic Hamiltonian four-window is not progress.
-
-### 11.2 101 sliding and fixed-label transport — already pushed to its real bottleneck
-
-- **One-step 101 translation (defect101_slide_or_fourwindow01, certified).** A 101 window either shifts left/right with the same omitted label or immediately exposes a Hamiltonian four-path with explicit inherited two-path complement.
-- **Finite transport (defect101_finite_transport01, certified).** Iterating that move already terminates at a three-side deletion cover or the inherited-complement four-window. There is no need to search for a different proof that 101 can be moved toward an endpoint.
-- **Persistent three-side transport (threeside01, certified).** Once a side has order three, persistent defect labels can already be transported through the overlapping shell sequence. Merely proving another local fixed-label move is below the present frontier.
-- **Shell square/disturbance fork (1000865, pending audit).** Each persistent-defect shell yields either localized order disagreement or a full two-label Hamiltonian-six-set square. This is useful historical territory, but neither output by itself closes defect compression.
-- **Degree-counted common-core amplification (1000894, certified).** Two persistent defects have an exact degree-sensitive supply of common-neighbor transport packages; at large order these packages already feed disagreement or strict potential descent. Counting more such local packages is not the missing theorem.
-- **Same-component descent corridor (1000946, 1000950, 1000951, pending audit).** The strongest current refinement says fixed-label shell transport stays in the deletion component, every shell edge enters a 4|3 descent diamond, and the lower states glue into a monotone end-to-end 4|3 corridor. If these survive audit, the remaining task is to consume the corridor, not to manufacture another descent layer.
-- **Second-layer synchronization (1000953, pending audit).** Failure of synchronized descent is reduced to a degree-four shell whose core graph is 2K2, P4, or K1,3. Do not reopen generic shell synchronization before checking whether the proposed argument already covers the configuration under study.
-
-**Live frontier for this block:** prove TARGET A, i.e. convert the mobile fixed-label corridor (or the explicit degree-four residues) into a spanning two-cover or an order with nu(L_pi)<=1.
-
-### 11.3 Four-window transport — compression theorem already exists
-
-- **Universal four-window transition (1000911, certified).** Above order fourteen, a Hamiltonian four-window with two-cover complement already compresses to strict Phi descent, a distance-one four-window, or an endpoint-aligned Hamiltonian support of order four or five.
-- Older six-set menus and intermediate four-window transport chains should normally be read only when proof details are needed; conceptually they have been recomposed into 1000911.
-- A new result whose only conclusion is "another nearby four-window exists" is not beyond the present frontier unless it provides a well-founded global termination mechanism or direct boundary absorption.
-
-**Live frontier for this block:** consume endpoint-aligned 4/5 support or give neutral migration a terminating invariant.
-
-### 11.4 Five-side and reversal production — witness existence is not the gap
-
-- **Five-side escape (five_side_arbitrary_escape01, certified).** A five-side beside a long path already gives strict Phi descent, neutral endpoint/support exchange, or a tight triple reversing a displayed edge.
-- **Order disagreement (1000211, certified).** Every minimum counterexample already contains explicit relative-order disagreement between overlapping tight paths.
-- **Genuine reversing triple (1000164, certified).** Every minimum counterexample already contains a tight triple reversing an edge of a nontrivial tight path.
-
-Consequently, proving another theorem whose endpoint is merely "there exists order disagreement," "there exists a reversal," or "there exists some small Hamiltonian support" is not a new closure mechanism. The missing information is **position and transport**: the witness must be driven to a deletion-cover/spanning-order boundary where it collapses the two-defect matching.
-
-### 11.5 Endpoint-barrier shortcut — ruled out
-
-- **common_endpoint_barriers_fivewindow_counterexample01 (certified).** Even arbitrarily many common endpoint-barrier triples do not let one cyclically reinterpret the configuration as the desired Hamiltonian five-window. The counterexample family exists at arbitrary length.
-- Therefore literal orientation data must be preserved. Do not use an argument that silently rotates or rereads an ordered barrier triple into another position.
-
-This is a genuinely dead shortcut unless additional hypotheses unavailable in that counterexample family are explicitly used.
-
-### 11.6 Potential descent — useful only with the correct global context
-
-Many local routes already yield strict quadratic-potential descent. This is valuable only when the state is known to be a minimum in the relevant pairwise-repartition component. Producing additional local Phi decrease without:
-1. component membership,
-2. a component-minimality hypothesis, or
-3. a pullback to the spanning-order defect invariant,
-does not advance INDEX 3.
-
-Similarly, neutral repartition/migration without a well-founded measure may cycle. A fresh researcher should not assume that "keep moving the window" is an argument until termination is supplied.
-
-### 11.7 Small-order residue
-
-1000911 isolates n<=14 as a finite-order residue for the universal four-window route. This is already known as a separate obligation. Do not let a proof for large order silently claim the grand theorem without either closing this residue or importing a certified small-order result from another line.
-
-### 11.8 What counts as genuinely new progress
-
-Before opening a new INDEX-3 branch, check whether its endpoint is already one of the following familiar outputs:
-
-- another 101 slide;
-- another fixed-label shell move;
-- another Hamiltonian four/five/six support;
-- another common-core or two-label square;
-- another strict Phi descent lacking component-minimality;
-- another order disagreement or reversing triple;
-- another neutral nearby-window migration.
-
-If so, the result is probably supporting machinery rather than a new proof route.
-
-The clearest genuinely new contributions would instead do at least one of these:
-
-1. **consume the fixed-label 4|3 corridor** into nu(L_pi)<=1 or a spanning two-cover;
-2. **consume an endpoint-aligned bounded support/reversal** into boundary absorption;
-3. give neutral transport a **well-founded global termination invariant**;
-4. close the explicit **degree-four shell residues** from 1000953 if that result survives audit;
-5. close or import the **n<=14 finite-order residue**.
-
-A new researcher can therefore begin at one of these consumers without first re-exploring the local-witness production machinery above.
-
-
-## Coverage update — the fixed-defect second layer is now consumed to the standard frontier
-
-The pending fixed-label corridor chain has advanced beyond `1000953`.
-
-- **`1000954` (pending).** In each reachable lower 4|3 shell layer, failure of synchronized second-layer descent already yields relative-order disagreement between Hamiltonian four-sides *inside the same fixed-defect component*. The earlier 2K2/P4/K1,3 core graphs are therefore no longer terminal residues.
-- **`1000955` (pending).** That same-layer disagreement upgrades to a literal shell-local reversing tight triple on an edge of a reachable Hamiltonian four-side.
-- **`1000956` (pending).** The internal-edge reversal cases are then absorbed into the standard small-window machinery. What remains is exactly:
-  1. synchronized strict second-layer descent;
-  2. a reversal of an **end edge** of the reachable Hamiltonian four-side; or
-  3. a proper Hamiltonian 4/5 support with pc2 complement, endpoint-aligned in the matching-block branch.
-
-Thus the current INDEX-3 frontier is sharper than TARGET A as originally stated. One should **not** attack the old degree-four shell graph residues directly. Subject to audit, fixed-label transport already feeds the same bounded-obstruction consumer as Branch B.
-
-The line-specific missing implication is now:
-
-> **reachable four-side endpoint-edge reversal / endpoint-aligned 4/5 window -> boundary absorption or defect-line matching number at most one.**
-
-This is essentially the INDEX-3/INDEX-4 interface. Further shell classification or another layer of local descent is below the current frontier unless it supplies a direct consumer for that endpoint-edge reversal.
-
-Audit concentration: `1000954`-`1000956` are pending. If they fail, fall back to the `1000953` degree-four residue described earlier.
+The first arrow is established. The second is the frontier.

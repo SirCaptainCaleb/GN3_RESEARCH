@@ -1409,9 +1409,12 @@
     • [astra008scope01] Astra-008 reduces only to the sharp odd half-order shell.
 • [project_policy] ‹Project-specific policy›
 • [proof_rehearsals01] Top-level collection of comprehensive proof rehearsals for the major GN3N proof-attack lines.
+  • [1000949] Deletion-cover compatibility is an onboarding-ready local-to-global route: every selected transversal already forces positioned disturbance; compatibility structure localizes it, while the balanced odd cycle supplies additional global monodromy/fractional structure whose integral consumption remains open.
   • [proof_rehearsal_index2_quadratic01] Phi normalizes trapped three-covers until size information is exhausted. The unique-small plateau is now sharpened to a finite bounded endgame—pc2 square/overlap/matching-block six-shell, positioned endpoint reversal, or doubled reverse barrier—while the unresolved theorem is still global disturbance -> defect span <=2.
   • [1000947] Defect span three normalizes to a deletion state; fixed-label transport and bounded-window machinery now both terminate at positioned endpoint reversals or 4/5 windows. The remaining gap is endpoint obstruction consumption into defect-line matching number at most one.
-  • [1000949] Deletion-cover compatibility is an onboarding-ready local-to-global route: every selected transversal already forces positioned disturbance; compatibility structure localizes it, while the balanced odd cycle supplies additional global monodromy/fractional structure whose integral consumption remains open.
+  • [proof_rehearsal_index4_endpoint_transport01] INDEX 4 synthesis: bounded pc2 windows occur abundantly in certified common-core families and transport to literal endpoint reversals; closure fails only at phase-locked same-end/internal shells and their normalized bypass residues, where global gluing or well-founded termination is still missing.
+  • [proof_rehearsal_index5_longest_reversal01] Longest-path/reversal theory already produces abundant positioned reversals and synchronized small Hamiltonian supports; the live gap is their consumption into endpoint absorption or defect compression.
+  • [proof_rehearsal_index6_no_trapping01] Deletion-generated trapped three-cover components descend to synchronized transport/reversal geometry; neutral recurrence is already non-structureless. The live gap is converting reachable disturbance or many rooted states into a component-respecting escape.
 • [research_nudges] ‹Research nudges›
 • [scheduler_guidance] ‹Scheduler guidance›
 • [standardization_dictionary] ‹Standardization dictionary›

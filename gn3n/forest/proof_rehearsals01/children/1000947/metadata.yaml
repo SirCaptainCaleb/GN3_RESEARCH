@@ -6,20 +6,20 @@ audit_requested: false
 audit_requirement: "independent_check"
 audit_status: "not_required"
 audited_math_version: null
-body_sha256: "6e23a60fbb02a8d3fada8a44c4c3056bdcd51f020f6f73587ab1d80c8029a9fa"
+body_sha256: "a49874476234a99066dd45820345a0fc42eb9135bbdf5228fcab15198b0b150e"
 created_at: "2026-10-02T02:18:46.269373+00:00"
 id: "1000947"
 last_elevation_revision: null
-last_substantive_worker_id: 1194
+last_substantive_worker_id: 1285
 legacy_id: null
 lifecycle_status: "active"
-math_version: 5
+math_version: 7
 mathematical_status: "proposal"
 metadata:
 object_type: "research"
 origin_worker_id: 1232
 parent_id: "proof_rehearsals01"
-position: 2
+position: 3
 research_interface:
   blocked_on: "component-respecting boundary absorption / defect compression, plus the n<=14 residue of the compressed four-window theorem"
   consumer: "grand-theorem closure through defect-span / spanning-order compression"
@@ -29,14 +29,15 @@ research_interface:
 research_level: "working_unit"
 semantic_container_text: null
 simplified_statement: "Defect span three normalizes to a deletion state; fixed-label transport and bounded-window machinery now both terminate at positioned endpoint reversals or 4/5 windows. The remaining gap is endpoint obstruction consumption into defect-line matching number at most one."
-statement_sha256: "45bb502e43f48fdafdbac7f91fee012b44ae02deceebcb493e8d1c49c2a7db77"
+statement_sha256: "a5746cbb40516261fd7133d2b7717e75fd601bac05c20c75573882766170a2c4"
 substantive_worker_ids:
   - 1232
   - 1194
+  - 1285
 support_reason: "not_a_proved_or_evidence_claim"
 support_status: "unchecked"
-title: "Comprehensive rehearsal — defect-span / spanning-order compression"
+title: "Proof rehearsal III — defect-span and spanning-order compression"
 unary_chain_length: 0
 unary_chain_standalone: false
-updated_at: "2026-10-02T04:08:54.978005+00:00"
-version: 24
+updated_at: "2026-10-02T05:02:50.549715+00:00"
+version: 27

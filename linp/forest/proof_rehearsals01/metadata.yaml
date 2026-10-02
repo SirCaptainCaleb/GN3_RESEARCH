@@ -1,0 +1,58 @@
+atlas_height: null
+atlas_hidden: false
+attention: "available"
+audit_priority: 0
+audit_requested: false
+audit_requirement: "independent_check"
+audit_status: "not_required"
+audited_math_version: null
+body_sha256: "cdbd09db80eb49612ded8a0617ed13b2c8860f3776c113f669b82bd641c5663f"
+created_at: "2026-10-02T04:22:48.995814+00:00"
+id: "proof_rehearsals01"
+last_elevation_revision: null
+last_substantive_worker_id: 351
+legacy_id: null
+lifecycle_status: "active"
+math_version: 6
+mathematical_status: null
+metadata:
+  coordinator_worker_id: 348
+  include_uncertified_major_results: true
+  organizational_role: "proof_route_rehearsal_home"
+  review_status: "accepted_after_coverage_audit"
+  route_count: 8
+  route_ids:
+    - "snake_43_48"
+    - "ascending_dense_core"
+    - "rotation_cycle_rank"
+    - "incidence_rank"
+    - "pair_capacity_induction"
+    - "algebraic_steiner_lower"
+    - "latin_blowup_lower"
+    - "shadow_strong_rainbow"
+  taxonomy_version: 3
+object_type: "research"
+origin_worker_id: 331
+parent_id: null
+position: 0
+research_interface:
+  acceptance: "A new researcher can begin at the live frontier without substantial retracing."
+  consumer:
+    - "future LINP researchers"
+    - "cross-route synthesis"
+  direct_child_count_expected: 8
+research_level: "working_unit"
+semantic_container_text: null
+simplified_statement: "One comprehensive synthesis rehearsal per major conceptual LINP proof route."
+statement_sha256: "259d3bd0b83308600a266072cf41dea67ced7e9b4875e2dd09339e2de6633b50"
+substantive_worker_ids:
+  - 331
+  - 348
+  - 351
+support_reason: "not_a_proved_or_evidence_claim"
+support_status: "unchecked"
+title: "Comprehensive Proof Rehearsals"
+unary_chain_length: 0
+unary_chain_standalone: false
+updated_at: "2026-10-02T05:22:31.983913+00:00"
+version: 6
