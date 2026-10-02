@@ -87,14 +87,24 @@ The final structure should optimize mathematical readability, not mirror the rea
 
 DURABLE MAIN-LINE SYNTHESIS
 
-The canonical Comprehensive Proof Rehearsals collection is the durable home for major proof-direction syntheses. If the rehearsal produces or materially improves a durable synthesis of a major proof direction, create or revise the appropriate direct child of that collection rather than leaving the substance only in an operational completion record. Do not create a duplicate child when an existing rehearsal already represents the same major direction; improve the existing rehearsal when appropriate.
+The canonical Comprehensive Proof Rehearsals collection is a maintained manuscript set, not an append-only history.
 
-A scheduler completion record may preserve historical information, but it is not a substitute for the publication-style synthesis when the mathematics has durable value.
+There should normally be one current direct child for each genuinely distinct major proof direction. When a rehearsal already represents the same conceptual direction, revise that object in place. This applies to line editing, prose cleanup, coverage repair, stronger synthesis, theorem/lemma restructuring, and substantive mathematical improvement. None of those operations requires a new rehearsal document merely because a new worker or a new pass is involved.
+
+Create a new direct child only when the mathematics constitutes a genuinely new major conceptual proof direction that is not already represented by an existing rehearsal.
+
+If multiple current rehearsals substantially overlap the same direction, do not preserve the duplication. Synthesize the strongest current version into the appropriate canonical rehearsal, then replace, archive, retain only as historical material, or trash the superseded duplicate as appropriate. Do not accumulate parallel current rehearsals that differ mainly by date, worker, revision, or editorial pass.
+
+When one rehearsal is replaced by a substantially reorganized successor, either edit the existing object in place or explicitly replace it and move the old version out of the current canonical set. The current direct children of Comprehensive Proof Rehearsals should represent the present best synthesis, not the chronology of past attempts.
+
+A scheduler completion record may preserve historical information in the archive, but that historical record is not a new canonical rehearsal and is not a substitute for maintaining the current manuscript in place.
+
+For an in-place edit of a canonical rehearsal, scheduler completion should normally provide details.rehearsal_object_id naming that live direct child; no duplicate manuscript payload is required. details.manuscript is for a standalone manuscript that is not already represented by the maintained canonical rehearsal object.
 
 COMPLETION RECORD
 
 A non-closing rehearsal should report:
-- manuscript: the publication-style rehearsal body;
+- manuscript or rehearsal_object_id: either the standalone publication-style rehearsal body, or the live canonical rehearsal object that was edited in place;
 - attempted_organization: a concise description of the mathematical organization used;
 - route_selection: why that organization was chosen after surveying the serious live alternatives;
 - bridge_attempts: the concrete mathematical attempts made to remove or bypass the first apparent gap;
