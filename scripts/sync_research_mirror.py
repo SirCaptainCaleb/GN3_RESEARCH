@@ -10,6 +10,7 @@ SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "linp")
 # Guide text is mirrored verbatim from Supabase.
+# Exact manuscript reads are paged server-side at 9000 characters.
 TABLES = ("documents","research","research_line_chunks","research_versions","dependencies","supersessions","brainstorms","dictionary")
 PAGE = 500
 
