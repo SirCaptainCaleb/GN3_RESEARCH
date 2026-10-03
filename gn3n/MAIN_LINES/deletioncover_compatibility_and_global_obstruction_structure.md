@@ -182,6 +182,9 @@ Hence \(|P|>|Q|\) whenever the split alternative occurs. In particular, if a lea
 
 Since adjacent support orders sum to \(|V(H)|-1\), support orders alternate between two values on each tree component of \(J\). Therefore, if a tree component has leaves in both bipartition classes, at least one leaf is no larger than its neighbor and forces direct mixing. A forest component with no direct-mixing leaf must have every leaf in the larger support-size bipartition class. See [[leaf_endpoint_singleton_triangle01]].
 
+
+The connected-tree case admits a stronger conclusion without balanced selection. For every leaf support \(P\) with neighbor \(Q\), all but at most one label \(y\in Q\) have a selected deletion cover containing an edge between \(P\) and \(Q-\{y\}\). In particular, one of the two endpoints of any Hamiltonian order on \(Q\) forces the direct-mixing alternative of Proposition 8. For a disconnected forest, the same bound holds among labels whose selected edges lie in the leaf's tree component; if neither endpoint forces direct mixing, at least one endpoint's selected edge lies in a different tree component. The containment and path-order proofs are given in [[leaf_comparisons_in_deletion_support_forests]].
+
 ## 6. The odd-cycle case
 
 Assume now that \(J\) is the cycle of Lemma 4. Write

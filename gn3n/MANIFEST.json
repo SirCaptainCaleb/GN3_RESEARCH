@@ -1,20 +1,29 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T04:38:04.286044+00:00",
+  "generated_at": "2026-10-03T05:22:19.404759+00:00",
   "main_line_count": 6,
   "main_line_versions": {
     "defect_lines_and_spanningorder_compression": 2,
-    "deletioncover_compatibility_and_global_obstruction_structure": 6,
+    "deletioncover_compatibility_and_global_obstruction_structure": 7,
     "proof_rehearsal_index2_quadratic01": 2,
     "proof_rehearsal_index4_endpoint_transport01": 1,
-    "proof_rehearsal_index5_longest_reversal01": 1,
+    "proof_rehearsal_index5_longest_reversal01": 2,
     "proof_rehearsal_index6_no_trapping01": 1
   },
   "mirror_format": 7,
-  "research_line_count": 0,
-  "research_line_versions": {},
+  "research_line_count": 2,
+  "research_line_versions": {
+    "leaf_comparisons_in_deletion_support_forests": {
+      "math_version": 1,
+      "version": 1
+    },
+    "line_rooted_small_support_descent_from_deletion_cover_lifts": {
+      "math_version": 7,
+      "version": 8
+    }
+  },
   "schema": "gn3n",
-  "snapshot_revision": 143,
+  "snapshot_revision": 175,
   "tables": [
     "documents",
     "research",
@@ -25,5 +34,5 @@
     "brainstorms",
     "dictionary"
   ],
-  "toolkit_count": 88
+  "toolkit_count": 103
 }

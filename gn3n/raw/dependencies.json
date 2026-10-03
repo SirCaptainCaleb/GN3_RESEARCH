@@ -1,6 +1,27 @@
 [
   {
     "compatibility_status": "confirmed",
+    "consumer_id": "rooted_six_support_transfer_or_comparison_disturbance01",
+    "consumer_math_version": 2,
+    "premise_id": "ham6goodsquare01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "phi_minimum_with_four_support_is_small_or_disagrees01",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_a_phi_minimum_containing_a_three_path_has_order_at_most_thirteen",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "phi_minimum_with_four_support_is_small_or_disagrees01",
+    "consumer_math_version": 1,
+    "premise_id": "four_path_long_pair_escape01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
     "consumer_id": "four_side_gap_network_disturbance01",
     "consumer_math_version": 3,
     "premise_id": "four_side_endpoint_lock_gap_network01",
@@ -29,9 +50,30 @@
   },
   {
     "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "five_side_endpoint_core_m6_01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
     "consumer_id": "mixed_two_by_three_hamiltonian_four01",
     "consumer_math_version": 1,
     "premise_id": "independence_number_at_most_two_in_every_boundary_tournament",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "four_path_long_pair_escape01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "minimal_355_profile_has_a_neutral_cycle01",
     "premise_math_version": 1
   },
   {
@@ -53,6 +95,27 @@
     "consumer_id": "toolkit_across_a_two_vertex_middle_forces_the_adjacent_inner_reversal",
     "consumer_math_version": 1,
     "premise_id": "toolkit_a_two_vertex_middle_path_forces_an_endpoint_reversal_pattern",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "prescribed_vertex_six_to_five_retention01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "rooted_six_support_transfer_or_comparison_disturbance01",
+    "premise_math_version": 2
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "three_vertex_component_long_neighbor_rotation01",
     "premise_math_version": 1
   },
   {
@@ -179,6 +242,258 @@
     "consumer_id": "toolkit_lift_strictly_descends_to_a_rooted_three_vertex_component",
     "consumer_math_version": 1,
     "premise_id": "smallset01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_phi_minimum_containing_a_three_path_has_order_at_most_thirteen",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_minimal_three_covers_have_no_components_of_order_one_or_two",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_phi_minimum_containing_a_three_path_has_order_at_most_thirteen",
+    "consumer_math_version": 1,
+    "premise_id": "three_vertex_component_long_neighbor_rotation01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_phi_minimum_containing_a_three_path_has_order_at_most_thirteen",
+    "consumer_math_version": 1,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split",
+    "consumer_math_version": 1,
+    "premise_id": "smallset01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split",
+    "consumer_math_version": 1,
+    "premise_id": "five_side_endpoint_core_m6_01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set",
+    "consumer_math_version": 1,
+    "premise_id": "prescribed_pair_mixed_four_supports01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set",
+    "consumer_math_version": 1,
+    "premise_id": "smallset01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell",
+    "consumer_math_version": 1,
+    "premise_id": "blocked_fourcore_star_outer_shell01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_gives_an_interior_end_edge_reversal_or_a_central_sandwich",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_gives_an_interior_end_edge_reversal_or_a_central_sandwich",
+    "consumer_math_version": 1,
+    "premise_id": "smallset01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_35_rotations_perform_a_controlled_two_for_two_support_exchange",
+    "consumer_math_version": 1,
+    "premise_id": "three_vertex_component_long_neighbor_rotation01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_35_rotations_perform_a_controlled_two_for_two_support_exchange",
+    "consumer_math_version": 1,
+    "premise_id": "localextend01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_34_pair_gives_a_neutral_endpoint_swap_or_a_controlled_52_detour",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_35_rotations_perform_a_controlled_two_for_two_support_exchange",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 1,
+    "premise_id": "strict_containment_in_deletion_partition_trees",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_34_pair_gives_a_neutral_endpoint_swap_or_a_controlled_52_detour",
+    "consumer_math_version": 1,
+    "premise_id": "localextend01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_335_state_forces_a_cross_side_hamiltonian_five_support",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_335_state_forces_a_cross_side_hamiltonian_five_support",
+    "consumer_math_version": 1,
+    "premise_id": "localextend01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_335_state_forces_a_cross_side_hamiltonian_five_support",
+    "consumer_math_version": 1,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_phi_minimal_345_state_has_a_nontrivial_neutral_reconfiguration",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_34_pair_gives_a_neutral_endpoint_swap_or_a_controlled_52_detour",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_phi_minimal_345_state_has_a_nontrivial_neutral_reconfiguration",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_two_vertex_middle_component_forces_strict_quadratic_descent",
+    "premise_math_version": 2
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_a_neutral_swap_an_order_disagreement_or_a_common_terminal_pair",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_a_phi_minimum_containing_a_three_path_has_order_at_most_thirteen",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_neutral_swap_an_order_disagreement_or_a_common_terminal_pair",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_34_pair_gives_a_neutral_endpoint_swap_or_a_controlled_52_detour",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_neutral_swap_an_order_disagreement_or_a_common_terminal_pair",
+    "consumer_math_version": 1,
+    "premise_id": "localextend01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_gives_an_interior_end_edge_reversal_or_a_central_sandwich",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_lift_strictly_descends_to_a_rooted_three_vertex_component",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_minimal_335_state_forces_a_cross_side_hamiltonian_five_support",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "toolkit_phi_minimal_345_state_has_a_nontrivial_neutral_reconfiguration",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
+    "consumer_math_version": 7,
+    "premise_id": "phi_minimum_with_four_support_is_small_or_disagrees01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "minimal_355_profile_has_a_neutral_cycle01",
+    "consumer_math_version": 1,
+    "premise_id": "three_vertex_component_long_neighbor_rotation01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "prescribed_vertex_six_to_five_retention01",
+    "consumer_math_version": 1,
+    "premise_id": "ham6goodsquare01",
     "premise_math_version": 1
   }
 ]
