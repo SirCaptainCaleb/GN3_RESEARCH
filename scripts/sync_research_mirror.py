@@ -198,14 +198,14 @@ Follow the recurring research behavior in REFLEXES.md throughout the session.
 
 Publish only after substantial progress. Every substantive durable research operation must explicitly declare dependencies, using [] when genuinely self-contained. Stage the complete save_batch payload in connector-sized parts, review concurrent findings with review_staged_batch(...), resolve overlap, and commit atomically with commit_staged_batch(...). If another worker publishes after review, review again. Use repair_line_chunk(...) only for a version-guarded correction to an older crystallized subsection. After publication, reread the Research Line you are continuing before resuming research.
 
-Snapshot event: {rev.get('event_id')}
+Snapshot revision: {rev.get('revision')}
 Generated: {rev.get('generated_at')}
 """
     write(root / "BOOT.md", boot)
 
     write_json(root / "MANIFEST.json", {
         "schema": schema,
-        "snapshot_event_id": rev.get("event_id"),
+        "snapshot_revision": rev.get("revision"),
         "generated_at": rev.get("generated_at"),
         "tables": list(TABLES),
         "main_line_count": len(main_lines),

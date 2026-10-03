@@ -62,8 +62,8 @@ jobs:
               return json.loads(pathlib.Path(schema, "MANIFEST.json").read_text())
           payload = {
               "p_revisions": {
-                  "gn3n": manifest("gn3n")["snapshot_event_id"],
-                  "linp": manifest("linp")["snapshot_event_id"],
+                  "gn3n": manifest("gn3n")["snapshot_revision"],
+                  "linp": manifest("linp")["snapshot_revision"],
               },
               "p_release_url": f"https://github.com/{os.environ['REPO']}/releases/tag/research-context-latest",
               "p_asset_url": f"https://github.com/{os.environ['REPO']}/releases/download/research-context-latest/research-context.zip",
