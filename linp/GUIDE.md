@@ -4,7 +4,7 @@ The canonical research surface has four mathematical roles: Main Lines, Research
 
 Main Lines are the global proof map. Research Lines are coarse evolving investigations. Toolkit nodes are independently reusable mathematics. Brainstorms are cheap persistent exploratory seeds.
 
-Research Lines crystallize in ordered publication-style chunks. Exactly one hot chunk is expected to receive ordinary mathematical additions. Older chunks are crystallized and normally left untouched. The assembled Research Line remains the authoritative readable manuscript, but proposers edit only the hot chunk rather than rewriting the full publication-style prelude for every addition.
+Research Lines crystallize in ordered publication-style chunks. Exactly one hot chunk is expected to receive ordinary mathematical additions. Older chunks are crystallized and normally left untouched; use the version-guarded repair_line_chunk() only when an older crystallized subsection itself needs correction. The assembled Research Line remains the authoritative readable manuscript, but proposers edit only the hot chunk rather than rewriting the full publication-style prelude for every addition.
 
 Mathematical writing must be precise enough for publication-quality proof exposition. State hypotheses explicitly; quantify variables and parameters; distinguish existence from construction; record exact dependencies and exceptional cases; use standard mathematical terminology; and make each inference checkable from the preceding statements. Do not rely on vague qualifiers where a precise statement is available.
 
@@ -18,11 +18,11 @@ Startup is fully informed. Read the current artifact, terminology, operating gui
 
 Computation and external web search are banned for mathematical research. Do not use brute-force enumeration, computer search, numerical experimentation, scripts, code, CAS systems, SAT/SMT solvers, or other computational test beds to discover, test, or support mathematical claims. Do not search the public web for mathematical results or hints. Work from the project artifact, permitted project-state reads during startup/publication synchronization, and mathematical reasoning.
 
-After choosing a route, perform one narrow freshness check. Use changes() for compact live Main Line and Research Line versions. Compare the chosen Main Line version, if any, against MANIFEST.json and page through it with read() only if changed. Do the same for the chosen Research Line. Continue passing next_cursor until complete=true. Mathematical update content lives in the manuscripts, not in changes().
+After choosing a route, perform one route-specific search across existing Research Lines and Toolkit entries to avoid rediscovering known mathematics; use include_documents=false and inspect the relevant compact hits. Then perform one narrow freshness check. Use changes() for compact live Main Line and Research Line versions. Compare the chosen Main Line version, if any, against MANIFEST.json and page through it with read() only if changed. Do the same for the chosen Research Line. Continue passing next_cursor until complete=true. Mathematical update content lives in the manuscripts, not in changes().
 
 Once mathematical research begins, do not repeatedly consult shared research state. Work from the startup snapshot plus any route-specific freshness reads and keep intermediate reasoning local.
 
-Publish only after substantial progress. Assemble related results into one coherent staged batch. Large submissions may be uploaded in numbered chunks because of connector limits. Before final commit, review other-session changes since startup for semantic overlap. If another worker publishes after that review, the commit guard forces a fresh review.
+Publish only after substantial progress. Every substantive durable research publication must explicitly declare its actual dependencies, using an empty list when it is genuinely self-contained. Assemble related results into one coherent staged batch. Large submissions may be uploaded in numbered chunks because of connector limits. Before final commit, review other-session changes since startup for semantic overlap. If another worker publishes after that review, the commit guard forces a fresh review.
 
 After a substantial publication, reread the Research Line you are continuing before resuming work so you inherit any integrated concurrent work. Re-read a Main Line when its version changed or the line's global relationship materially shifted.
 

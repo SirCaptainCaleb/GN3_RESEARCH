@@ -6,6 +6,7 @@
     "context(research_id)",
     "save_research(session_id, payload, expected_version := null)",
     "save_line_chunk(session_id, line_id, payload, expected_line_version, expected_chunk_version)",
+    "repair_line_chunk(session_id, line_id, chunk_no, payload, expected_line_version, expected_chunk_version)",
     "crystallize_line_chunk(session_id, line_id, expected_line_version, expected_chunk_version, next_title := '')",
     "save_batch(session_id, operations)",
     "save_document(session_id, payload, expected_version := null)",
@@ -24,32 +25,36 @@
     "discard_staged_batch(session_id, batch_id)",
     "help()"
   ],
+  "publication": [
+    "Every substantive durable research publication must explicitly include dependencies, using [] when genuinely self-contained.",
+    "The declared dependency list replaces the consumer's prior premise set and records the actual premises of the new math version.",
+    "Brainstorm promotion likewise requires an explicit dependencies array.",
+    "When a result clearly changes a Main Line synthesis, include that Main Line update in the same staged publication batch."
+  ],
   "reading": [
-    "read() is the only exact manuscript-content read path and is statelessly paged.",
+    "read() is the exact manuscript-content path and is statelessly paged.",
     "Each call returns at most 9000 content characters plus compact metadata.",
-    "Pass next_cursor back to read() until complete=true. The cursor identifies the requested item index and character offset.",
+    "Pass next_cursor back to read() until complete=true.",
     "context(), search(), and brainstorms() are navigation surfaces and do not substitute for exact paged reads."
   ],
-  "research_contract": [
-    "Startup is fully informed from the artifact; Main Lines are read last.",
-    "After choosing a route, use changes() only as a compact freshness/version signal. Page through only the chosen Main Line or Research Line if its version changed.",
-    "During mathematical research, workers self-police the no-consultation rule and keep intermediate reasoning local.",
-    "Publish only after substantial progress in one coherent staged batch.",
-    "review_staged_batch() is a required concurrency barrier; commit_staged_batch() refuses if another session publishes after review."
-  ],
   "research_lines": [
-    "A Research Line is read as one assembled manuscript but authored as ordered chunks.",
-    "Exactly one chunk is hot. Ordinary mathematical additions edit only that hot chunk with save_line_chunk().",
-    "Crystallization freezes the hot chunk and opens a new empty hot chunk without changing the line math_version.",
-    "Older crystallized chunks are normally not rewritten. When the line matures, compress the whole line by an explicit Main Line rewrite.",
-    "Direct Research Line body edits through save_research() are rejected; save_research() remains available for line metadata and Toolkit objects."
+    "Research Lines are assembled manuscripts authored as ordered subsection-sized chunks.",
+    "Ordinary development edits only the hot chunk with save_line_chunk().",
+    "repair_line_chunk() is the exceptional version-guarded path for correcting an older crystallized chunk in place; the chunk remains crystallized.",
+    "Substantive hot-chunk edits and crystallized-chunk repairs both bump the line math_version and require explicit dependencies.",
+    "Crystallization freezes the hot chunk and opens a new empty hot chunk without changing the line math_version."
   ],
   "searching": [
-    "search() matches full text across titles, simplified statements, statements, and bodies; documents are included by default.",
-    "Results are ordered primarily by match count per object.",
+    "search() matches titles, simplified statements, statements, and full bodies; documents are included by default.",
+    "Results are ordered primarily by literal match count per object, then full-text relevance, title, and id.",
     "filters.result_level may be ids, metadata, simplified, statement, or full; simplified is the default.",
-    "Each call returns one packed result page capped at 9000 characters. filters.offset is the number of complete packed pages to skip; use offset=1,2,... for later pages. A result that would cross a page boundary moves intact to the next page; only a result larger than an empty page is truncated.",
-    "Brainstorms remain opt-in with include_brainstorms=true. Superseded and archived research remain hidden by default."
+    "Each call returns one packed result page capped at 9000 characters. filters.offset is the number of complete packed pages to skip.",
+    "A result that would cross a page boundary moves intact to the next page; only a result larger than an empty page is truncated."
+  ],
+  "startup": [
+    "boot() returns startup_notices from startup_steward(), including empty-Brainstorm and stale Main Line warnings.",
+    "After choosing a route and before proof work, run one route-specific search across existing Research Lines and Toolkit entries to avoid rediscovery.",
+    "Then perform the narrow changes()/read() freshness check for the chosen Main Line and Research Line."
   ],
   "usage": "Call through the active project schema."
 }
