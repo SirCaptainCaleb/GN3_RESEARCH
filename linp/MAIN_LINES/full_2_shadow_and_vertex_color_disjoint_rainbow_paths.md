@@ -1,6 +1,10 @@
 # Main Line 8 — The full 2-shadow and vertex-color-disjoint rainbow paths
 
-# The full \(2\)-shadow and vertex-color-disjoint rainbow paths
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction -->
 
 Let \(H\) be a finite linear \(3\)-graph. Its full \(2\)-shadow is the graph \(G\) on \(V(H)\) obtained by replacing every hyperedge
 \[
@@ -19,9 +23,14 @@ Linearity makes the coloring well defined: a graph edge \(xy\) belongs to at mos
 
 The objective is to translate the one-third upper bound into a path problem in this colored graph.
 
-## 1. Basic properties of the full shadow
+---
+
+## Research Line — Basic properties of the full shadow
+
+<!-- research_line_id: the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow -->
 
 ### Lemma 1
+
 The coloring (1) is proper. Moreover,
 \[
 e(G)=3|E(H)| \tag{2}
@@ -48,7 +57,11 @@ c(xz)=y,\qquad c(yz)=x. \tag{4}
 \]
 Thus every hyperedge appears as a triangle whose edge colors are the opposite vertices.
 
-## 2. Path translation
+---
+
+## Research Line — Path translation
+
+<!-- research_line_id: the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation -->
 
 Let
 \[
@@ -64,6 +77,7 @@ e_i=\{x_{i-1},x_i,c_i\}. \tag{5}
 \]
 
 ### Theorem 2
+
 The hyperedges \(e_1,\ldots,e_k\) form a linear hypergraph path if and only if
 \[
 x_0,\ldots,x_k,c_1,\ldots,c_k \tag{6}
@@ -88,12 +102,17 @@ By (2), the desired upper bound
 is equivalent to the following colored-graph statement.
 
 ### Target theorem
+
 If \(G\) is a properly edge-colored graph satisfying the triangle rule (4) and contains no \(\ell\)-edge path for which all path vertices and edge colors are distinct, then
 \[
 e(G)\le \ell n. \tag{8}
 \]
 
-## 3. Separating graph vertices from colors
+---
+
+## Research Line — Separating graph vertices from colors
+
+<!-- research_line_id: the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors -->
 
 There is a simpler reduction that forces color-vertex disjointness by construction, at the cost of a factor two.
 
@@ -110,12 +129,14 @@ c(xy)\in B.
 Call the resulting properly edge-colored graph \(J\).
 
 ### Lemma 3
+
 Every rainbow path in \(J\) lifts to a linear hypergraph path of the same length in \(H\).
 
 #### Proof
 All path vertices lie in \(A\), while all colors lie in \(B\), so no color equals a path vertex. The rainbow condition makes the colors distinct. A graph path already has distinct path vertices. Hence Theorem 2 applies. ∎
 
 ### Proposition 4
+
 Suppose there is a constant \(\alpha>0\) and an absolute constant \(C\) such that every properly edge-colored graph of average degree \(d\) contains a rainbow path with at least
 \[
 \alpha d-C
@@ -159,7 +180,11 @@ Even the ideal value \(\alpha=1\) gives only the two-thirds coefficient. Therefo
 
 The hypergraph degree and the degree in a retained properly edge-colored shadow graph are separate quantities. Equation (3) gives d_G(v)=2d_H(v) only for the full shadow G. After passing to a retained graph J, or to a further graph-side core, a rainbow-path theorem whose hypothesis is stated in terms of minimum graph degree must be applied using the degree in that graph, not d_H. Conversely, a hypergraph-side minimum-degree hypothesis remains available for hypergraph peeling, attachment, or special-edge arguments. The two degree conditions serve different parts of the proof and should be tracked simultaneously rather than identified.
 
-## 4. A source-oriented representation
+---
+
+## Research Line — A source-oriented representation
+
+<!-- research_line_id: the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation -->
 
 A second representation keeps one distinguished vertex of every hyperedge.
 
@@ -174,6 +199,7 @@ Let \(D\) be the resulting digraph and \(J\) the resulting properly edge-colored
 For a vertex \(v\), let \(s(v)\) be the number of hyperedges sourced at \(v\), and let \(h(v)\) be the number containing \(v\) as a nonsource vertex.
 
 ### Lemma 5
+
 For every vertex \(v\),
 \[
 \frac12 d_D^+(v)+d_D^-(v)=d_H(v). \tag{10}
@@ -197,6 +223,7 @@ Substitution gives (10). ∎
 Longest directed paths force complementary degree information at their ends.
 
 ### Lemma 6
+
 Let
 \[
 v_0v_1\cdots v_p
@@ -237,11 +264,16 @@ s(v_0)=d_H(v_0)-h(v_0)\ge d-p.
 
 This representation yields a directed-path versus rainbow-path dichotomy, but the resulting quantitative bounds remain far from (8). Its role is to show that concentrated source reuse cannot be ignored.
 
-## 5. Repeated colors are a genuine obstruction
+---
+
+## Research Line — Repeated colors are a genuine obstruction
+
+<!-- research_line_id: the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction -->
 
 An ordinary long path in the full shadow need not contain a long linear hypergraph path.
 
 ### Proposition 7
+
 For every \(t\), there is a linear \(3\)-graph whose full shadow contains the graph path
 \[
 x_0x_1\cdots x_t
@@ -272,7 +304,11 @@ Thus no positive proportion of an arbitrary ordinary shadow path can be extracte
 
 The same example explains the precise difficulty in Theorem 2: the graph vertices \(x_i\) are all distinct, but the colors repeat heavily.
 
-## 6. The remaining theorem
+---
+
+## Research Line — The remaining theorem
+
+<!-- research_line_id: the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem -->
 
 The full-shadow approach is reduced to Target theorem (8).
 
@@ -283,6 +319,7 @@ If a long graph path uses mostly distinct colors and few colors coincide with no
 If a small set of colors occurs many times, the triangle rule (4) implies that these colors are actual hypergraph vertices incident with many corresponding pairs. One must use the other two edges of the colored triangles to find a different path with more distinct colors.
 
 ### Open problem
+
 Prove that every properly edge-colored graph satisfying the triangle rule (4) and
 \[
 e(G)>\ell n

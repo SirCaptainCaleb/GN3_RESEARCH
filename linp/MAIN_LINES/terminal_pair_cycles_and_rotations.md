@@ -1,6 +1,10 @@
 # Main Line 3 — Terminal-pair cycles and rotations
 
-# Terminal-pair cycles and rotations
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_introduction -->
 
 Let \(H\) be a finite \(P_\ell^{(3)}\)-free linear \(3\)-graph with \(m\) edges and \(n\) vertices. Let \(s\) be the number of special edges.
 
@@ -12,7 +16,11 @@ The purpose of this argument is to control the cycle rank
 \]
 where \(\kappa(T)\) is the number of nonempty connected components of \(T\).
 
-## 1. The special-edge inequality
+---
+
+## Research Line — The special-edge inequality
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_the_special_edge_inequality -->
 
 Form the snake digraph of \(H\): for every edge \(e\) and every vertex \(v\in e\) with
 \[
@@ -21,6 +29,7 @@ Form the snake digraph of \(H\): for every edge \(e\) and every vertex \(v\in e\
 include the incidence \((e,v)\). A special edge contributes three such incidences; a nonspecial edge contributes exactly two.
 
 ### Lemma 1
+
 For every vertex \(v\),
 \[
 d^-_{\mathrm{snake}}(v)\le 2\phi(v)-1. \tag{1}
@@ -38,6 +47,7 @@ V(P)\setminus g_p.
 Otherwise \(P\) can be continued through \(f\), contradicting the maximality of \(p\). Distinct such edges use distinct vertices of \(V(P)\setminus g_p\), since two edges already share \(v\) and cannot share another vertex. There are \(2p-2\) such vertices, and \(g_p\) itself contributes one further edge. ∎
 
 ### Corollary 2
+
 \[
 2m+s\le \sum_v(2\phi(v)-1)\le (2\ell-3)n. \tag{2}
 \]
@@ -51,9 +61,14 @@ The second inequality follows from \(\phi(v)\le\ell-1\). ∎
 
 Thus any lower bound on \(s\) immediately improves the general coefficient.
 
-## 2. Cycle rank as a sufficient parameter
+---
+
+## Research Line — Cycle rank as a sufficient parameter
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter -->
 
 ### Proposition 3
+
 Suppose
 \[
 \beta(T)\le Cs+Dn \tag{3}
@@ -85,11 +100,16 @@ Substitute this in (2) and rearrange. ∎
 
 In particular, \(\beta(T)=O(n)\) gives the two-thirds leading coefficient. The central question is therefore whether the independent cycles of \(T\) force enough new path structure to bound \(\beta(T)\).
 
-## 3. A maximum-total-rank spanning forest
+---
+
+## Research Line — A maximum-total-rank spanning forest
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest -->
 
 Give each graph edge \(uv\in E(T)\) the edge rank of its parent hyperedge. In each component of \(T\), choose a spanning tree of maximum total weight; let \(F\) be the resulting spanning forest.
 
 ### Lemma 4
+
 Let \(e\in E(T)\setminus E(F)\), and let \(C_e\) be its fundamental cycle in \(F+e\). Then \(e\) has minimum weight on \(C_e\).
 
 #### Proof
@@ -100,6 +120,7 @@ The graph \(T\) has exactly \(\beta(T)\) nonforest edges. Hence Lemma 4 selects 
 These selected graph edges carry additional information in the hypergraph.
 
 ### Lemma 5
+
 Let \(e\) and \(f\) be two nonspecial hyperedges whose terminal pairs are adjacent in \(T\) at a common terminal \(v\). If
 \[
 \phi(f)\ge\phi(e),
@@ -117,11 +138,16 @@ Combining Lemmas 4 and 5, every nonforest edge \(e\) has two forced second inter
 
 This is the structural content of cycle rank. A cycle is not merely an extra graph edge; it prescribes two additional intersections with maximum hypergraph paths.
 
-## 4. Rotating a longest path
+---
+
+## Research Line — Rotating a longest path
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_rotating_a_longest_path -->
 
 The forced second intersections of Lemma 5 can change the last vertex of a longest path.
 
 ### Lemma 6
+
 Let
 \[
 P=(g_1,\ldots,g_L)
@@ -141,11 +167,16 @@ The new sequence uses the initial segment \(g_1,\ldots,g_j\), crosses to \(f\), 
 
 Thus every single additional intersection at a suitable position creates another longest path with a different last vertex. Iterating such rotations is the natural mechanism for turning the \(\beta(T)\) fundamental-cycle intersections into many reachable last vertices.
 
-## 5. Entrance support is an unavoidable parameter
+---
+
+## Research Line — Entrance support is an unavoidable parameter
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter -->
 
 Cycle rank alone cannot describe all linear dependencies. Let \(h\) be the number of distinct unique entrances of nonspecial edges, and let \(N_{\mathrm{ns}}\) be the real vertex-edge incidence matrix restricted to nonspecial edges.
 
 ### Proposition 7
+
 \[
 \operatorname{nullity}(N_{\mathrm{ns}})\le \beta(T)+h. \tag{5}
 \]
@@ -191,7 +222,11 @@ This proves (5). Adding \(s\) special columns can increase nullity by at most \(
 
 Thus the natural global quantity is \(\beta(T)+h\), not \(\beta(T)\) alone.
 
-## 6. A false strengthening
+---
+
+## Research Line — A false strengthening
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_a_false_strengthening -->
 
 It is not true that
 \[
@@ -201,11 +236,16 @@ There are linear \(3\)-graphs with \(s=0\) whose terminal-pair graph is a disjoi
 
 This obstruction shows that a nonforest terminal-pair edge cannot be assigned directly to a special edge. Repeated use of the same unique entrances or the same maximum paths must be included in any valid count.
 
-## 7. The remaining theorem
+---
+
+## Research Line — The remaining theorem
+
+<!-- research_line_id: terminal_pair_cycles_and_rotations_the_remaining_theorem -->
 
 The previous lemmas reduce the argument to a quantitative rotation statement.
 
 ### Open problem
+
 Let \(F\) be a maximum-total-rank spanning forest of the terminal-pair graph. For each of the \(\beta(T)\) nonforest edges, take the two second intersections supplied by Lemma 5. Prove that these data imply
 \[
 \beta(T)+h\le Cs+Dn \tag{7}

@@ -1,10 +1,18 @@
 # Main Line V — longest paths and reversal structure
 
-# Longest paths and reversal structure
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: longest_paths_and_reversal_structure_introduction -->
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A tight triple \((x,v,u)\) reverses the ordered edge \((u,v)\) of a tight path.
 
-## 1. Reversals are unavoidable
+---
+
+## Research Line — Reversals are unavoidable
+
+<!-- research_line_id: longest_paths_and_reversal_structure_reversals_are_unavoidable -->
 
 **Lemma 1.** If two tight paths of order at least three have an order disagreement on their common vertices, then \(H\) contains a tight triple reversing an edge of one of the paths.
 
@@ -18,7 +26,11 @@ Deletion covers at different vertices cannot all induce one common support parti
 
 The remaining question is where such a reversal can be placed.
 
-## 2. A longest path
+---
+
+## Research Line — A longest path
+
+<!-- research_line_id: longest_paths_and_reversal_structure_a_longest_path -->
 
 Choose a longest tight path
 \[
@@ -47,7 +59,11 @@ Let \(I\) be a nonempty proper contiguous subpath of \(A\). If \(H-I\) were Hami
 
 No two-cover of \(U\cup\{a_0,a_1\}\) can have a component ending with \((a_0,a_1)\), since the inherited suffix of \(A\) could then be appended. The symmetric statement holds at the other end. Thus the two reversed endpoint families coexist but cannot be joined directly.
 
-## 3. A five-set or an end-edge reversal
+---
+
+## Research Line — A five-set or an end-edge reversal
+
+<!-- research_line_id: longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal -->
 
 For \(y\in U\), the first and third triples of
 \[
@@ -89,7 +105,11 @@ is a Hamilton path, or a four-vertex tight path has an explicitly reversed end e
 
 In the second case the four-set supporting the displayed tight path is Hamiltonian, and the reversing triple uses one additional exterior vertex. In a minimum counterexample its complement is therefore non-Hamiltonian and has path-cover number two.
 
-## 4. A common four-vertex core
+---
+
+## Research Line — A common four-vertex core
+
+<!-- research_line_id: longest_paths_and_reversal_structure_a_common_four_vertex_core -->
 
 Put
 \[
@@ -115,7 +135,11 @@ Put \(S_i=C\cup\{r_i\}\). The set \(V(H)-S_i\) is nonempty, since it contains \(
 
 Choose Hamilton orders on the three five-sets. If two induce different orders on \(C\), there is an order disagreement. Otherwise each root is inserted into one gap of a common order on \(C\). Separated gaps give a Hamiltonian six-set; adjacent gaps give either a Hamiltonian six-set or a reverse tight triple through the intervening core vertex; a common internal gap gives a Hamiltonian four-set. If all three roots use one endpoint gap, boundary reversal among the roots gives a Hamiltonian four-set. Thus the common-core case always carries additional ordered information.
 
-## 5. The endpoint-pair family
+---
+
+## Research Line — The endpoint-pair family
+
+<!-- research_line_id: longest_paths_and_reversal_structure_the_endpoint_pair_family -->
 
 Assume a displayed end-edge reversal has been chosen maximal with respect to the order of its path and no preceding small Hamiltonian support occurs. Then every other exterior vertex satisfies the reverse relations at both ends. In the difficult orientation one also has
 \[
@@ -140,7 +164,11 @@ is Hamiltonian, and its complement is non-Hamiltonian with path-cover number two
 
 Among any three exterior vertices, orient \(p\to q\) when \((p,a_{\lambda-1},q)\) is tight. Some vertex has both an in-neighbor and an out-neighbor, yielding two Hamiltonian four-paths whose common pair is ordered oppositely. Thus this endpoint case gives a family of overlapping Hamiltonian four-sets with explicit order disagreement.
 
-## 6. Opposite endpoint replacements
+---
+
+## Research Line — Opposite endpoint replacements
+
+<!-- research_line_id: longest_paths_and_reversal_structure_opposite_endpoint_replacements -->
 
 Let \(x,y\notin V(A)\). Suppose \(L\) is a Hamilton path on
 \[
@@ -178,7 +206,11 @@ Delete the old endpoints and combine the corresponding left and right forms. Eve
 
 Thus a difficult pair of opposite endpoint replacements must change the inherited order. Comparing deletion covers at \(a_0\) and \(a_{\lambda-1}\), one obtains either a reversed surviving edge of \(A\), different support partitions on the common double deletion, or an order disagreement on a common support.
 
-## 7. Amplification from an arbitrary reversing triple
+---
+
+## Research Line — Amplification from an arbitrary reversing triple
+
+<!-- research_line_id: longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple -->
 
 Let \(T\) be the vertex set of a reversing tight triple, and let \(J_T\) be the graph on \(V(H)-T\) in which \(yz\) is an edge exactly when \(T\cup\{y,z\}\) is Hamiltonian.
 
@@ -198,7 +230,11 @@ Thus the complement of \(J_T\) is triangle-free, so Mantel's theorem gives
 \]
 Every edge gives a Hamiltonian five-set containing the same reversal and having two-coverable complement. Hence some exterior vertex lies in several such edges, producing Hamiltonian five-sets with a common four-vertex core. The insertion-position analysis following Lemma 6 then gives a Hamiltonian four- or six-set, an order disagreement, or another positioned reversal.
 
-## 8. The remaining lemma
+---
+
+## Research Line — The remaining lemma
+
+<!-- research_line_id: longest_paths_and_reversal_structure_the_remaining_lemma -->
 
 The preceding lemmas produce one of the following:
 - a Hamiltonian support of order four, five, or six with two-coverable complement and displayed endpoint information;
@@ -211,7 +247,11 @@ The preceding lemmas produce one of the following:
 
 A proof completes the longest-path argument.
 
-## Appendix. Two invalid shortcuts
+---
+
+## Research Line — Appendix. Two invalid shortcuts
+
+<!-- research_line_id: longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts -->
 
 For an ordered triple \((u,v,z)\), the boundary-reversed triple is
 \[

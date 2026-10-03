@@ -1,6 +1,10 @@
 # Main Line IV — endpoint transport and small-support gluing
 
-# Endpoint transport and small-support gluing
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_introduction -->
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A three-cover
 \[
@@ -14,7 +18,11 @@ Pairwise repartition means replacing two displayed paths by another two-cover of
 
 This argument begins with a Hamiltonian support attached to a displayed endpoint, a reversal of a displayed path edge, or two nearby Hamiltonian supports with a large common part. The purpose of the transport is to place the new order information at an actual end edge of a displayed path.
 
-## 1. Greedy endpoint transport
+---
+
+## Research Line — Greedy endpoint transport
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_greedy_endpoint_transport -->
 
 Let
 \[
@@ -48,7 +56,11 @@ tight, which reverses the displayed terminal edge \((u,c_h)\). If every vertex o
 
 Thus endpoint realization gives a displayed end-edge reversal. The only alternative is that \(c_0\) is internal in every Hamiltonian order of \(X\cup\{c_0\}\).
 
-## 2. A displayed end-edge reversal
+---
+
+## Research Line — A displayed end-edge reversal
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal -->
 
 Let
 \[
@@ -98,7 +110,11 @@ The initial edge is symmetric.
 
 At a minimum of \(\Phi\) in a connected component of the pairwise-repartition graph, only the one-vertex transfer remains.
 
-## 3. Endpoint positions of a transferred vertex
+---
+
+## Research Line — Endpoint positions of a transferred vertex
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex -->
 
 Suppose \(X,Y,D,\{x\}\) partition \(V(H)\) and both
 \[
@@ -118,7 +134,11 @@ Consequently, if no two-cover, strict decrease, or displayed end-edge reversal o
 
 The second possibility is governed by insertion positions.
 
-## 4. Compatible one-vertex extensions
+---
+
+## Research Line — Compatible one-vertex extensions
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions -->
 
 Let \(K\) be a vertex set and let \(x,y\notin K\). Suppose \(K\cup\{x\}\) and \(K\cup\{y\}\) have Hamilton paths that induce the same order
 \[
@@ -161,7 +181,11 @@ is tight, so one of
 \]
 is a Hamilton path. This gives (3). The common terminal gap is symmetric. \(\square\)
 
-## 5. Two same-side extension vertices
+---
+
+## Research Line — Two same-side extension vertices
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices -->
 
 Suppose \(x,y\) can occur only at the same endpoint side of the relevant augmented supports, and let
 \[
@@ -186,7 +210,11 @@ Let the two five-sets be \(K\cup\{p\}\) and \(K\cup\{q\}\), where \(|K|=4\). The
 
 Each form is a bounded common-core configuration with a two-coverable complement inherited from the construction.
 
-## 6. A vertex internal in every Hamiltonian order
+---
+
+## Research Line — A vertex internal in every Hamiltonian order
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order -->
 
 It remains to consider an augmented support \(K\cup\{x\}\) in which \(x\) is internal in every Hamiltonian order.
 
@@ -203,7 +231,11 @@ We record this as follows.
 
 The proof is the preceding block count applied successively to the one- and two-label deletions.
 
-## 7. The remaining lemma
+---
+
+## Research Line — The remaining lemma
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_the_remaining_lemma -->
 
 All non-decreasing cases now have one of the following forms:
 - a displayed end-edge reversal;
@@ -219,7 +251,11 @@ The first form is handled by Lemma 2. The remaining forms require one common sta
 
 A proof completes the endpoint-transport argument.
 
-## Appendix. Local failures do not imply global absorption
+---
+
+## Research Line — Appendix. Local failures do not imply global absorption
+
+<!-- research_line_id: endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption -->
 
 The following implications are not valid without additional hypotheses:
 - two vertices extending the same end of a path need not concatenate with each other;

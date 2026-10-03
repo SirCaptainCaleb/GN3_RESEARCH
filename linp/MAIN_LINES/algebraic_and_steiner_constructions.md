@@ -1,6 +1,10 @@
 # Main Line 6 — Algebraic and Steiner constructions
 
-# Algebraic and Steiner constructions
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: algebraic_and_steiner_constructions_introduction -->
 
 This rehearsal concerns lower bounds. A finite \(P_\ell^{(3)}\)-free linear \(3\)-graph \(G\) with \(v\) vertices and \(m\) edges gives, by taking disjoint copies,
 \[
@@ -10,9 +14,14 @@ This rehearsal concerns lower bounds. A finite \(P_\ell^{(3)}\)-free linear \(3\
 \]
 The aim is therefore to construct finite components whose ratio \(m/v\) is as large as possible relative to their longest linear path.
 
-## 1. The general one-third-scale construction
+---
+
+## Research Line — The general one-third-scale construction
+
+<!-- research_line_id: algebraic_and_steiner_constructions_the_general_one_third_scale_construction -->
 
 ### Proposition 1
+
 For every \(\ell\ge2\),
 \[
 \operatorname{ex}_L(n,P_\ell^{(3)})
@@ -65,7 +74,11 @@ Take \(\lfloor n/t\rfloor\) disjoint copies and leave the remaining vertices iso
 
 To improve the leading coefficient, one needs components with density near or above \(\ell/3\) whose longest path is still shorter than \(\ell\).
 
-## 2. Binary projective systems
+---
+
+## Research Line — Binary projective systems
+
+<!-- research_line_id: algebraic_and_steiner_constructions_binary_projective_systems -->
 
 Let
 \[
@@ -80,6 +93,7 @@ with \(x,y\) distinct. This is the projective Steiner triple system on \(2^d-1\)
 A spanning path in \(H_d\) has a useful parity constraint.
 
 ### Lemma 2
+
 Suppose a spanning linear path in \(H_d\) has joint set \(J\). Then
 \[
 \sum_{x\in J}x=0. \tag{3}
@@ -91,6 +105,7 @@ Every hyperedge has vector sum zero. Sum the edge equations along the path. Ever
 For \(d=4\), this obstruction is strong enough to forbid a spanning path.
 
 ### Theorem 3
+
 The projective system on \(\mathbb F_2^4\setminus\{0\}\) contains no \(7\)-edge linear path. Consequently
 \[
 \operatorname{ex}_L(n,P_7^{(3)})
@@ -142,11 +157,16 @@ Thus the projective system is \(P_7^{(3)}\)-free. Taking disjoint copies gives (
 
 This exceptional obstruction does not persist in higher dimensions. For all sufficiently large projective dimensions, the projective system has a spanning linear path. Likewise, deleting two prescribed nonzero points from a sufficiently large projective system still leaves a spanning linear path. Thus the projective construction yields isolated exceptional lengths rather than an infinite improvement.
 
-## 3. Ternary affine systems
+---
+
+## Research Line — Ternary affine systems
+
+<!-- research_line_id: algebraic_and_steiner_constructions_ternary_affine_systems -->
 
 Let \(A_d\) be the affine Steiner triple system on \(\mathbb F_3^d\), whose edges are affine lines.
 
 ### Lemma 4
+
 If \(A_d\) has a spanning linear path with joint set \(J\), then
 \[
 \sum_{x\in J}x=0. \tag{6}
@@ -160,6 +180,7 @@ Every affine line has the form
 whose sum is zero in \(\mathbb F_3^d\). Sum the edge equations along a spanning path. Every nonjoint vertex is counted once and every joint twice. The sum of all vectors of \(\mathbb F_3^d\) is zero, so the resulting equality is exactly (6). ∎
 
 ### Proposition 5
+
 The affine plane \(A_2\) contains no spanning \(4\)-edge linear path.
 
 #### Proof
@@ -177,7 +198,11 @@ This obstruction is not stable with dimension. In \(A_3\), the following thirtee
 \]
 Consecutive lines meet once, nonconsecutive lines are disjoint, and their union is all \(27\) points. Thus the joint-sum condition alone cannot yield an infinite affine family.
 
-## 4. Dense Boolean systems near the projective case
+---
+
+## Research Line — Dense Boolean systems near the projective case
+
+<!-- research_line_id: algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case -->
 
 Let \(A\subseteq\mathbb F_2^r\setminus\{0\}\), and put an edge on every triple
 \[
@@ -186,6 +211,7 @@ Let \(A\subseteq\mathbb F_2^r\setminus\{0\}\), and put an edge on every triple
 Dense examples of this form are strongly constrained.
 
 ### Theorem 6
+
 Let \(A\) have odd cardinality \(n\), and let \(M\) be the number of unordered pairs \(\{x,y\}\subseteq A\) for which \(x+y\notin A\). If
 \[
 M<n,
@@ -259,11 +285,16 @@ Thus every sufficiently dense Boolean candidate lies in the projective family or
 
 A more general density-beating Boolean example can also be reduced to a two-point fibre extension of a smaller quotient: after deleting at most the naturally occurring translation-boundary points, the remaining domain is invariant under a nonzero translation and hence is a full two-point fibre over a quotient. Therefore it is enough to consider such two-point fibre extensions.
 
-## 5. Incidence-code obstruction and its limitation
+---
+
+## Research Line — Incidence-code obstruction and its limitation
+
+<!-- research_line_id: algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation -->
 
 Let \(M_H\) be the vertex-edge incidence matrix of a linear \(3\)-graph over \(\mathbb F_2\).
 
 ### Lemma 7
+
 If \(H\) contains a linear path with \(\ell\) edges, then the binary column span of \(M_H\) contains a vector of Hamming weight \(\ell+2\).
 
 #### Proof
@@ -272,6 +303,7 @@ Sum the incidence vectors of the \(\ell\) path edges. Every joint occurs twice a
 Thus absence of weight \(\ell+2\) is a sufficient condition for \(P_\ell^{(3)}\)-freeness. It cannot, however, prove a density above \(\ell/3\).
 
 ### Theorem 8
+
 If
 \[
 \frac{|E(H)|}{|V(H)|}>\frac{\ell}{3},
@@ -299,11 +331,16 @@ further star edges disjoint from \(f\). The sum of these \(k\) star edges has we
 
 Therefore a code construction must use more information than the absence of one support size.
 
-## 6. General obstructions to amplification
+---
+
+## Research Line — General obstructions to amplification
+
+<!-- research_line_id: algebraic_and_steiner_constructions_general_obstructions_to_amplification -->
 
 Several natural ways to enlarge the exceptional small systems do not improve the asymptotic coefficient.
 
 ### Proposition 9
+
 A fixed number of full two-bit Boolean fibre extensions cannot increase the limiting normalized density
 \[
 \frac{|E(H)|}{|V(H)|(L(H)+1)},
@@ -326,6 +363,7 @@ edges. If the original maximum path length is \(L\), the extended system contain
 and when \(L\) is even, at least \(4L+3\). Thus vertex count, edge density, and maximum path length all scale by the same factor \(4\), up to bounded additive terms. Repeating a fixed number of times cannot increase the limiting ratio. ∎
 
 ### Proposition 10
+
 Let \(S\) be an edge-transitive Steiner triple system on \(v=2\ell+1\) vertices. If \(S\) has a spanning \(\ell\)-edge path, then every set of blocks meeting every spanning \(\ell\)-edge path has size at least
 \[
 v/3. \tag{10}
@@ -380,7 +418,11 @@ form a linear path of length \(MN-1\). The tensor square has normalized density 
 
 These observations rule out the direct higher-dimensional projective, affine, single-weight-code, repeated fibre-extension, symmetric-deletion, ordinary-doubling, and diagonal-tensor enlargements of the preceding small examples.
 
-## 7. The two-point-fibre problem
+---
+
+## Research Line — The two-point-fibre problem
+
+<!-- research_line_id: algebraic_and_steiner_constructions_the_two_point_fibre_problem -->
 
 The most economical remaining Boolean model has one distinguished point \(\infty\) and, over each point \(x\) of a binary projective quotient, a pair
 \[
@@ -401,6 +443,7 @@ b_x+b_y+b_z=\sigma(x,y,z). \tag{12}
 Flipping the two labels in one fibre \(G_x\) changes the bits on all quotient lines through \(x\), so only the equivalence class of the line-sign function under such fibre flips affects the isomorphism type.
 
 ### Open problem
+
 Determine whether there is an infinite family of line-sign functions in (12) for which the resulting Steiner triple systems have no spanning linear path.
 
 A positive answer would produce an infinite family of dense algebraic components outside the projective and affine obstructions above. A negative answer would close the principal remaining low-rank Boolean construction family.

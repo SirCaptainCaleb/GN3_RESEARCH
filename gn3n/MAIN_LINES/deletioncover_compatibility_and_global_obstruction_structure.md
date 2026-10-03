@@ -1,6 +1,10 @@
 # Main Line I — deletion-cover compatibility and global obstruction structure
 
-# Deletion covers and the support graph
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_introduction -->
 
 Let \(H\) be a finite boundary \(3\)-tournament. A tight path is a sequence
 \[
@@ -20,7 +24,11 @@ F_x=P_x\mid Q_x
 \]
 that minimizes \(|P_x|^2+|Q_x|^2\) among all two-covers of \(H-x\). Equivalently, choose a deletion cover whose two component orders have minimum possible imbalance.
 
-## 1. Defect span
+---
+
+## Research Line — Defect span
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_defect_span -->
 
 For an ordering \(\pi=(v_1,\ldots ,v_n)\), an index \(i\), \(2\le i\le n-1\), is a defect center if
 \[
@@ -60,7 +68,11 @@ tight whenever the displayed vertices exist. Thus
 \]
 is a tight path. The problem is therefore to reduce a spanning ordering of defect span \(3\) to one of defect span at most \(2\).
 
-## 2. Compatibility of deletion covers
+---
+
+## Research Line — Compatibility of deletion covers
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_compatibility_of_deletion_covers -->
 
 Two path covers of the same vertex set are support-compatible if they induce the same partition into path supports. They are compatible if they are support-compatible and every two vertices lying in one common support occur in the same relative order in the two path orders. When two deletion covers omit different vertices, these definitions are applied after restricting both covers to their common vertex set.
 
@@ -91,7 +103,11 @@ Every consecutive triple of \((L,a,z,b,R)\) is known to be tight except possibly
 \]
 is tight. \(\square\)
 
-## 3. The support graph
+---
+
+## Research Line — The support graph
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_the_support_graph -->
 
 Let \(J\) be the graph whose vertices are the distinct supports occurring among the selected covers \(F_x\), with an edge \(e_x\) joining the two supports of \(F_x\). The edge is labeled by \(x\). The graph is simple: its two endpoint supports have union \(V(H)-\{x\}\), so they determine the label \(x\).
 
@@ -113,7 +129,11 @@ Conversely, write \(F_a=A\mid B\) with \(b\in A\), and assume that the restricti
 
 Thus the graph of support compatibility is the line graph \(L(J)\).
 
-## 4. Support-compatible families
+---
+
+## Research Line — Support-compatible families
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_support_compatible_families -->
 
 A large support-compatible family has only one varying support.
 
@@ -153,7 +173,11 @@ The only remaining order-preserving case has replacement orders
 \]
 Together with \(Q\), these give three deletion covers sharing the fixed support \(P\). Their singleton lifts form a triangle of equal-potential pairwise repartitions, and the two endpoint-replacement paths have an order disagreement on the common support \(\{x,q_1,\ldots ,q_{m-1}\}\). Thus opposite extreme insertion is a concrete recurrence configuration, not a Hamiltonian insertion of \(x\) into all of \(Q\). See [[leaf_endpoint_singleton_triangle01]].
 
-## 5. The forest case
+---
+
+## Research Line — The forest case
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_the_forest_case -->
 
 Assume \(J\) is a forest. Let \(e_x=PQ\) be a leaf edge, with \(P\) the leaf vertex of \(J\). If \(y\in Q\), then \(e_y\) cannot share \(Q\), because every support of \(F_y\) omits \(y\), and it cannot share \(P\), because \(P\) is incident only with \(e_x\). Hence \(F_y\) is support-incompatible with \(F_x\).
 
@@ -195,7 +219,11 @@ Thus the omission-swap residue in the connected-tree case is necessarily equal-\
 
 For a disconnected forest, the same endpoint conclusion holds whenever both endpoint labels remain in the leaf's tree component; otherwise at least one endpoint's selected edge leaves that component. The detailed endpoint-forcing and recurrence arguments are in [[leaf_comparisons_in_deletion_support_forests]].
 
-## 6. The odd-cycle case
+---
+
+## Research Line — The odd-cycle case
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_the_odd_cycle_case -->
 
 Assume now that \(J\) is the cycle of Lemma 4. Write
 \[
@@ -278,7 +306,11 @@ which gives the first. \(\square\)
 
 If \(r=1\), Lemma 11 says that \(T\) and one selected support \(S_i\) are disjoint and cover \(V(H)\). Therefore a Hamiltonian vertex cover of the ground cycle of order \(k+1\) gives a two-cover of \(H\).
 
-## 7. The remaining lemma
+---
+
+## Research Line — The remaining lemma
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_the_remaining_lemma -->
 
 The preceding argument reduces the deletion-cover method to the following statement.
 
@@ -294,7 +326,11 @@ By Lemma 1, this would contradict the choice of \(H\). In the odd-cycle case it 
 
 No further production of isolated reversals is required: Lemma 10 already supplies many. The unresolved point is to use their positions to remove one of the two independent defects in the spanning order arising from a deletion cover.
 
-## Appendix. Why two selected supports need not suffice in the forest case
+---
+
+## Research Line — Appendix. Why two selected supports need not suffice in the forest case
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case -->
 
 The forest alternative cannot in general be completed by choosing two supports already present in the selected family.
 
@@ -306,6 +342,10 @@ Let \(J\) be a connected selected-support tree, with support \(S_u\) at each ver
 
 Consequently, if branching remains after suppressing degree-two vertices on one side of the tree bipartition and deleting leaves on that side, no two selected supports cover all vertices. Any two-cover must then use a Hamiltonian support not already present among the selected deletion-cover components. This obstruction concerns only selection from the existing support family; it does not obstruct the theorem itself.
 
-## Canonical references
+---
+
+## Research Line — Canonical references
+
+<!-- research_line_id: deletion_covers_and_the_support_graph_canonical_references -->
 
 - [[mincex01]] — Minimum-counterexample calculus

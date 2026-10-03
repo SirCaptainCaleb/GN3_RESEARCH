@@ -1,6 +1,10 @@
 # Main Line III — defect lines and spanning-order compression
 
-# Defect lines and spanning-order compression
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_introduction -->
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\).
 
@@ -12,7 +16,11 @@ is non-tight. The defect line \(L_\pi\) has vertices \(1,\ldots ,n-1\), represen
 
 Let \(c(\pi)\) be the minimum number of consecutive intervals into which \(\pi\) can be partitioned so that each interval is a tight path.
 
-## 1. The defect-line identity
+---
+
+## Research Line — The defect-line identity
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_the_defect_line_identity -->
 
 **Lemma 1.**
 \[
@@ -36,7 +44,11 @@ If the defect centers occur in maximal consecutive runs of lengths \(r_1,\ldots 
 \]
 In particular, \(c(\pi)=3\) exactly when there is one run of length three or four, or two separated runs, each of length one or two.
 
-## 2. Defect span three is a deletion-cover ordering
+---
+
+## Research Line — Defect span three is a deletion-cover ordering
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering -->
 
 The defect span of \(\pi\) is \(0\) if there is no defect center and otherwise is
 \[
@@ -73,7 +85,11 @@ whenever the displayed vertices exist.
 
 Thus every minimum-span ordering is a deletion-cover ordering whose central part is a Hamiltonian three-set or a Hamiltonian five-set.
 
-## 3. Transport with the deleted vertex fixed
+---
+
+## Research Line — Transport with the deleted vertex fixed
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed -->
 
 Assume the middle join is tight. Write
 \[
@@ -132,7 +148,11 @@ For one such set \(W\), join \(a,b\in W\) when \(W-\{a,b\}\) is Hamiltonian. Eac
 
 Every such edge \(ab\) yields a Hamiltonian five-set and a complementary support equal to an inherited interval of \(Q\) together with \(\{a,b\}\). The complement is non-Hamiltonian but is covered by that interval and the two-vertex path \((a,b)\). Following the shared edges gives the required sequence. \(\square\)
 
-## 4. From transport to an end-edge reversal
+---
+
+## Research Line — From transport to an end-edge reversal
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal -->
 
 The lower states in Lemma 4 have path orders \(4,3,m\), with the same long path retained. Repartitioning the four- and three-vertex sides may strictly decrease the quadratic potential
 \[
@@ -159,7 +179,11 @@ Hence:
 2. a reversal of an end edge of a displayed Hamiltonian four-path;
 3. a Hamiltonian support of order four or five containing a displayed endpoint of the complementary path, with two-coverable complement.
 
-## 5. An endpoint-rooted Hamiltonian four-set
+---
+
+## Research Line — An endpoint-rooted Hamiltonian four-set
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set -->
 
 Suppose
 \[
@@ -188,7 +212,11 @@ for distinct \(x,y\in\{a,b,c\}\). The third cover component \(Q\) is nonempty, s
 
 Thus every four-set state beside a nontrivial path already contains a bounded Hamiltonian support carrying both displayed endpoints of that path. No lower bound such as \(m\ge6\), endpoint-extension case split, or finite-order remainder is needed.
 
-## 6. A Hamiltonian five-set beside a long path
+---
+
+## Research Line — A Hamiltonian five-set beside a long path
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path -->
 
 Let
 \[
@@ -209,7 +237,11 @@ are Hamiltonian. If \((V(P)-\{p_1\})\cup\{x\}\) or \((V(P)-\{p_m\})\cup\{x\}\) i
 
 Thus both central cases reduce to the same ordered objects.
 
-## 7. The remaining lemma
+---
+
+## Research Line — The remaining lemma
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_the_remaining_lemma -->
 
 **Remaining Lemma.** Let \(H-x=P\mid Q\) be a deletion cover of a minimum counterexample. Suppose a three-cover in the same component of the pairwise-repartition graph contains either
 1. a Hamiltonian four-path with a tight triple reversing one of its end edges; or
@@ -222,7 +254,11 @@ Then \(H\) has a spanning ordering \(\sigma\) such that
 
 Lemma 1 then gives a two-cover of \(H\). The remaining task is therefore a one-unit reduction of the defect-line matching number, using the displayed endpoint information retained by Propositions 6 and Lemmas 7–8.
 
-## Appendix. Boundary reversal is local
+---
+
+## Research Line — Appendix. Boundary reversal is local
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local -->
 
 Boundary reversal says only that
 \[
@@ -230,7 +266,11 @@ Boundary reversal says only that
 \]
 It does not imply cyclic rotation of an ordered triple and does not reverse a tight path. An internal reversed edge therefore cannot be treated as an end-edge reversal without an explicit sequence of valid path orders.
 
-## Canonical references
+---
+
+## Research Line — Canonical references
+
+<!-- research_line_id: defect_lines_and_spanning_order_compression_canonical_references -->
 
 - [[common_endpoint_constraints_fivewindow_counterexample01]] — Common endpoint constraints do not force Hamiltonian five-vertex windows
 - [[mincex01]] — Minimum-counterexample calculus

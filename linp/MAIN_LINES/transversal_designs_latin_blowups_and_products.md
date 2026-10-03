@@ -1,14 +1,23 @@
 # Main Line 7 — Transversal designs, Latin blow-ups, and products
 
-# Transversal designs, Latin blow-ups, and products
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: transversal_designs_latin_blow_ups_and_products_introduction -->
 
 This rehearsal asks whether a dense finite \(P_\ell^{(3)}\)-free component can be enlarged while preserving a favorable ratio between edge density and maximum path length.
 
 A transversal design \(TD(3,q)\) has three vertex classes \(A,B,C\), each of size \(q\), and one triple through every pair of vertices from distinct classes. Equivalently, it is obtained from a proper \(q\)-edge-coloring of \(K_{q,q}\): if the edge \(ab\), with \(a\in A\) and \(b\in B\), has color \(c\in C\), then \(\{a,b,c\}\) is a hyperedge.
 
-## 1. Rainbow graph paths lift to linear hypergraph paths
+---
+
+## Research Line — Rainbow graph paths lift to linear hypergraph paths
+
+<!-- research_line_id: transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths -->
 
 ### Lemma 1
+
 Let
 \[
 v_0v_1\cdots v_r
@@ -27,6 +36,7 @@ For \(TD(3,q)\), this representation describes all blocks.
 The following graph theorem gives the asymptotic behavior of full transversal designs.
 
 ### Theorem 2
+
 Every properly \(q\)-edge-colored \(q\)-regular graph using exactly \(q\) colors contains a rainbow path with
 \[
 q-o(q)
@@ -45,7 +55,11 @@ Since a \(TD(3,q)\) has \(3q\) vertices and \(q^2\) hyperedges, its edge density
 \]
 Thus full transversal designs cannot yield an asymptotic coefficient above one third.
 
-## 2. Blow-ups of a fixed linear triple system
+---
+
+## Research Line — Blow-ups of a fixed linear triple system
+
+<!-- research_line_id: transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system -->
 
 Let \(T\) be a fixed linear \(3\)-graph with \(v\) vertices and \(m\) edges. Replace every vertex \(x\in V(T)\) by a class \(X_x\) of \(q\) vertices. For each hyperedge \(\{x,y,z\}\in E(T)\), place an arbitrary \(TD(3,q)\) on
 \[
@@ -61,6 +75,7 @@ Call the resulting hypergraph \(T(q)\). Then
 A cycle in \(T\) produces a long path in every such blow-up, independently of the chosen Latin squares.
 
 ### Theorem 3
+
 Suppose \(T\) contains a linear cycle with \(s\) edges. Then every blow-up \(T(q)\) described above contains a linear path with
 \[
 sq-o(q) \tag{3}
@@ -113,6 +128,7 @@ sh=sq-o(q)
 edges. ∎
 
 ### Corollary 4
+
 Let \(s(T)\) be the maximum number of edges in a linear cycle of \(T\). Then every arbitrary Latin blow-up of \(T\) has normalized density at most
 \[
 \frac{m}{v\,s(T)}+o(1). \tag{4}
@@ -140,13 +156,18 @@ s(T)<\frac{3m}{v}. \tag{5}
 
 This converts the amplification problem into a finite structural problem about the density and circumference of the base hypergraph.
 
-## 3. Repeated lifts with a common color set
+---
+
+## Research Line — Repeated lifts with a common color set
+
+<!-- research_line_id: transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set -->
 
 A different construction starts with a properly edge-colored graph \(G\) on \(u\) vertices, with color set \(C\). Take \(r\) disjoint copies of \(V(G)\) but use the same color vertices \(C\) for all copies. Every colored edge \(xy\) of color \(c\) becomes a triple \(\{x,y,c\}\).
 
 Let \(H_r\) be the resulting linear \(3\)-graph.
 
 ### Theorem 5
+
 If \(H_r\) is \(P_\ell^{(3)}\)-free for arbitrarily large \(r\), then
 \[
 \frac{|E(G)|}{u}\le \frac{\lceil\ell/2\rceil}{2}. \tag{6}
@@ -189,7 +210,11 @@ Hence repeated use of a fixed color set is asymptotically weaker than the one-th
 
 A one-factorization lift of \(K_N\) is a special case. A sufficiently large properly edge-colored complete graph contains a rainbow path with \(N-2\) edges, and by Lemma 1 this produces a linear path of length \(N-2\) in the corresponding hypergraph. Thus the small exceptional one-factorization examples do not scale.
 
-## 4. Cartesian products
+---
+
+## Research Line — Cartesian products
+
+<!-- research_line_id: transversal_designs_latin_blow_ups_and_products_cartesian_products -->
 
 For linear \(3\)-graphs \(H\) and \(K\), define their Cartesian product on \(V(H)\times V(K)\) by taking edges of the forms
 \[
@@ -201,6 +226,7 @@ and
 \]
 
 ### Theorem 6
+
 If \(H\) contains a linear path with \(a\) edges and \(K\) contains one with \(b\) edges, then \(H\square K\) contains a linear path with
 \[
 (a+1)(b+1)-1 \tag{7}
@@ -231,6 +257,7 @@ where \(s_i\) alternates between \(p\) and \(q\).
 There are \((b+1)a\) edges inside the \(H\)-fibres and \(b\) connecting edges, giving (7). Consecutive pieces meet in exactly the prescribed vertex. Distinct fibres are disjoint. A connecting edge meets only the terminal edge of either neighboring fibre path, and nonconsecutive connecting edges are disjoint because either their \(H\)-coordinates differ or the corresponding \(K\)-edges are nonconsecutive. Hence the displayed sequence is a linear path. ∎
 
 ### Corollary 7
+
 Let \(H\) have \(n\) vertices, \(m\) edges, and maximum path length \(L\). Its \(t\)-fold Cartesian power has density
 \[
 t\frac mn
@@ -250,11 +277,16 @@ The \(t\)-fold power has \(n^t\) vertices and \(tmn^{t-1}\) edges. Iterate Theor
 
 Thus Cartesian powers cannot amplify a finite exceptional component into an asymptotically stronger construction.
 
-## 5. The remaining construction problems
+---
+
+## Research Line — The remaining construction problems
+
+<!-- research_line_id: transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems -->
 
 The preceding theorems leave two mathematically distinct possibilities.
 
 ### Open problem A
+
 Find a finite linear \(3\)-graph \(T\) with \(v\) vertices, \(m\) edges, and linear circumference \(s(T)\) satisfying
 \[
 s(T)<\frac{3m}{v}, \tag{8}
@@ -267,6 +299,7 @@ s(T)q+o(q).
 Theorem 3 shows that \(s(T)q-o(q)\) is unavoidable; the problem is whether all other paths can also be kept at that scale.
 
 ### Open problem B
+
 Construct a partial or nonregular transversal system with nearly quadratic many triples in its three classes but without the long rainbow paths forced by full transversal designs.
 
 Such a construction must lose few edges while destroying a linear proportion of the compatible lifted paths. Independent full Latin squares cannot do this by Theorem 3, and repeated use of a common fixed color set cannot do it by Theorem 5.

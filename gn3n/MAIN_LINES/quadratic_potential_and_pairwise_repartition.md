@@ -1,6 +1,10 @@
 # Main Line II — quadratic potential and pairwise repartition
 
-# Quadratic potential and pairwise repartition
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_introduction -->
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). For each \(x\in V(H)\), choose a deletion cover
 \[
@@ -16,7 +20,11 @@ For a three-cover \(C=P_1\mid P_2\mid P_3\), define
 \]
 Fix a connected component of \(\mathcal R(H)\) containing a singleton lift and choose \(C\) in that component with minimum \(\Phi\).
 
-## 1. Pairwise extremality
+---
+
+## Research Line — Pairwise extremality
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_pairwise_extremality -->
 
 **Lemma 1.** Let \(a+b=s\) and \(a',b'>0\) with \(a'+b'=s\). Then
 \[
@@ -46,7 +54,11 @@ satisfies
 
 Thus every displayed pair is as balanced as possible among its two-covers. Further information must come from path order, endpoint position, or comparison with another cover.
 
-## 2. Absolute minima
+---
+
+## Research Line — Absolute minima
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_absolute_minima -->
 
 **Lemma 3.** Among triples of positive integers with fixed sum \(n\), the minimum of \(a^2+b^2+c^2\) is attained exactly when the largest and smallest entries differ by at most one.
 
@@ -74,7 +86,11 @@ At the boundary value \(s=5\), the same lemma gives an explicit equal-(\Phi\) ro
 \]
 whenever the direct endpoint enlargement to a Hamiltonian four-set is unavailable. Thus the smallest surviving component is accompanied by a concrete neutral recurrence, not an unstructured exceptional case.
 
-## 3. A block-count identity
+---
+
+## Research Line — A block-count identity
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_a_block_count_identity -->
 
 Let \(A,B,C\) be disjoint vertex sets and let \(T\) be a two-cover of their union. Decompose the paths of \(T\) into maximal nonempty blocks contained in one of \(A,B,C\). If \(b_A,b_B,b_C\) are the corresponding block counts and \(t\) is the number of edges of the paths of \(T\) whose endpoints lie in different sets among \(A,B,C\), then
 \[
@@ -83,7 +99,11 @@ t=b_A+b_B+b_C-2.
 
 Indeed, deleting those \(t\) edges from two paths produces \(t+2\) blocks. Hence \(t\ge1\). If \(t=1\), each displayed set occurs as one block. If \(t=2\), the block counts are \((2,1,1)\) in some order. If the two blocks of the split set lie in different paths of \(T\), an edge of any displayed Hamilton path on that set has endpoints in different paths of \(T\). If the two blocks lie in the same path of \(T\), a nonempty block from another displayed set lies between them.
 
-## 4. The size profile \(\{r+1,r+1,r\}\)
+---
+
+## Research Line — The size profile \(\{r+1,r+1,r\}\)
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r -->
 
 **Lemma 4.** Suppose a minimum-\(\Phi\) level in one component of \(\mathcal R(H)\) has size multiset \(\{r+1,r+1,r\}\), \(r\ge3\). Assume that an equal-\(\Phi\) pairwise repartition never gives a two-cover, a strict decrease of \(\Phi\), an order disagreement, or a Hamiltonian support of order four or five whose complement has path-cover number two. Then there are disjoint tight paths \(A,B,C\), each of order \(r\), and distinct vertices \(x,y\) such that both \(x\) and \(y\) extend the same end of each of \(A,B,C\).
 
@@ -112,7 +132,11 @@ After six moves the support partition returns to the initial state. The first th
 
 Now let \(T\) be a two-cover of \(A\cup B\cup C\). If there is an order disagreement, (1) holds. Otherwise let \(t\) be the number of edges of \(T\) joining different cores. If \(t=1\), the block-count identity gives one block in each core. One path of \(T\) is the concatenation of two whole cores and the other is the third core. Prepending \(x\) to the first path and \(y\) to the second gives a two-cover of \(H\), a contradiction. Thus \(t\ge2\). If \(t\ge3\), (2) holds. If \(t=2\), Section 3 gives (3) or (4). \(\square\)
 
-## 5. The size profile \(\{r+1,r,r\}\)
+---
+
+## Research Line — The size profile \(\{r+1,r,r\}\)
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr -->
 
 Let \(A\mid B\mid C\) have orders \(r+1,r,r\), and let \(x,y\) be the endpoints of \(A\).
 
@@ -130,7 +154,11 @@ Hence:
 
 **Lemma 5.** At a minimum of \(\Phi\) with size multiset \(\{r+1,r,r\}\), one obtains an order disagreement, an edge joining distinct displayed supports in a comparison cover, an inherited displayed edge split between the two paths of a comparison cover, two blocks of one displayed support separated by another, or a reverse tight triple at a displayed join.
 
-## 6. The size profile \(\{r,r,r\}\)
+---
+
+## Research Line — The size profile \(\{r,r,r\}\)
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_the_size_profile_rrr -->
 
 Let \(A\mid B\mid C\) have equal orders. Delete an endpoint of one displayed path and compare a deletion cover with the inherited three-part partition. The block count of Section 3 applies.
 
@@ -140,7 +168,11 @@ If a comparison cover uses one edge joining different displayed sets, the three 
 
 The three equitable size profiles therefore all produce ordered information after numerical descent stops.
 
-## 7. Reversal of a displayed end edge
+---
+
+## Research Line — Reversal of a displayed end edge
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge -->
 
 Let
 \[
@@ -163,7 +195,11 @@ Thus a minimum of \(\Phi\) leaves only the one-vertex transfer.
 
 **Proof.** Opposite endpoint positions agree on the inherited core until the first position at which one order has already placed the transferred vertex and the other has not. At that position the two consecutive inherited core vertices occur in opposite local orders, producing the displayed end-edge reversal. \(\square\)
 
-## 8. Two same-side extenders
+---
+
+## Research Line — Two same-side extenders
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_two_same_side_extenders -->
 
 Let \(x,y\) be two labels that can occur only at the same side of the relevant core paths, and let \(R\mid S\) be a two-cover of \(H-\{x,y\}\). Form a bipartite graph with left class \(\{x,y\}\) and right class \(\{R,S\}\), joining a label to a path when adjoining the label at the prescribed end gives a Hamiltonian path.
 
@@ -177,7 +213,11 @@ Two reverse triples through one end edge force a bounded common-core configurati
 
 Their six-vertex union has three relevant possibilities: it is Hamiltonian; two Hamiltonian vertex deletions are adjacent; or the Hamiltonian vertex deletions form a matching. These give, respectively, a Hamiltonian six-vertex support, overlapping Hamiltonian four- and five-vertex supports, or a fixed matching-block configuration. Each alternative preserves the common four-vertex core.
 
-## 9. The remaining lemma
+---
+
+## Research Line — The remaining lemma
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_the_remaining_lemma -->
 
 The quadratic-potential argument is reduced to the following statement.
 
@@ -195,6 +235,10 @@ Then \(H\) has a two-cover or a spanning ordering of defect span at most \(2\).
 
 A proof of this lemma completes the argument, since strict decrease of \(\Phi\) is impossible at the chosen state and Sections 4–8 describe the equal-\(\Phi\) alternatives.
 
-## Appendix. Pairwise balancing is insufficient
+---
+
+## Research Line — Appendix. Pairwise balancing is insufficient
+
+<!-- research_line_id: quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient -->
 
 Suppose one attempted to prove that every imbalanced two-coverable induced subtournament admits a more balanced two-cover, without using the third path. Iterating such a statement would refine every two-cover until its component orders differed by at most one. Conversely, a theorem guaranteeing such a balanced refinement immediately gives the pairwise improvement whenever the displayed sizes differ by at least two. Thus a purely two-support balancing argument is as strong as the general balanced-refinement problem for two-coverable boundary tournaments. The third path, a deletion label, or comparison of path orders is therefore essential to this method.

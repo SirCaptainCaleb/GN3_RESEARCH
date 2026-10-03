@@ -11,7 +11,7 @@ Starts a research session against the current database revision. It returns the 
 Finds relevant Research Lines, Toolkit entries, documents, and optionally Brainstorms by title and mathematical content. Use it for discovery, not as a substitute for reading a manuscript. Useful filters include `kind`, `toolkit_type`, `toolkit_limbo`, `main_line_id`, and `result_level`.
 
 ### `read(ids, math_versions := {}, cursor := null, page_chars := 9000)`
-Returns exact durable content for named objects, one bounded page at a time. Use this when a result or manuscript must actually be understood. Pass `next_cursor` back until `complete=true`; `math_versions` can request a retained prior mathematical version when available.
+Returns exact durable content for named objects, one bounded page at a time. Reading a Main Line ID compiles its ordered Research Line sequence with explicit Research Line boundaries; reading a Research Line ID returns that segment directly. Pass `next_cursor` back until `complete=true`; `math_versions` can request a retained prior mathematical version when available.
 
 ### `context(research_id)`
 Shows how one research object sits in the mathematical structure: direct premises and consumers, parent/child Research Lines, supersession links, referring Main Lines, and originating Brainstorm. Use it when following dependencies or deciding where new work belongs.
@@ -40,7 +40,7 @@ Edits an older crystallized chunk in place while preserving the chunked manuscri
 Freezes the current hot chunk as a completed manuscript section and opens a new empty hot chunk. Use it when a coherent stage of a Research Line is complete and the next stage should begin separately.
 
 ### `save_document(session_id, payload, expected_version := null)`
-Creates or edits project documents such as Main Lines and the overview, with version checking and audit bookkeeping. Use it for synthesis/document changes rather than theorem or route publication.
+Creates or edits project documents such as Main Lines and the overview, with version checking and audit bookkeeping. Main Line content is an ordered Research Line sequence: set `research_line_ids` to integrate, remove, or reorder mature Research Lines. Main Line prose is compiled from those Research Lines rather than stored independently.
 
 ## Brainstorms
 

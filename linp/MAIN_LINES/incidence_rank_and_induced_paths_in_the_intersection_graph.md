@@ -1,6 +1,10 @@
 # Main Line 4 — Incidence rank and induced paths in the intersection graph
 
-# Incidence rank and induced paths in the intersection graph
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_introduction -->
 
 Let \(H\) be a finite linear \(3\)-graph with \(n\) vertices and \(m\) edges. Let \(N\) be its real \(n\times m\) vertex-edge incidence matrix. Let \(F\) be the intersection graph of \(H\): the vertices of \(F\) are the edges of \(H\), and two vertices of \(F\) are adjacent precisely when the corresponding hyperedges intersect.
 
@@ -13,9 +17,14 @@ Since \(\operatorname{rank}N\le n\), (1) immediately implies
 m\le \frac{\ell}{3}n. \tag{2}
 \]
 
-## 1. Linear paths and induced graph paths
+---
+
+## Research Line — Linear paths and induced graph paths
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths -->
 
 ### Lemma 1
+
 A sequence of distinct hyperedges
 \[
 e_1,\ldots,e_t
@@ -42,7 +51,11 @@ H\text{ is }P_\ell^{(3)}\text{-free}
 F\text{ is induced-}P_\ell\text{-free}. \tag{3}
 \]
 
-## 2. Realizability of the intersection graph
+---
+
+## Research Line — Realizability of the intersection graph
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph -->
 
 The graph \(F\) is not arbitrary.
 
@@ -53,6 +66,7 @@ C_x=\{e\in E(H):x\in e\}.
 This is a clique of \(F\).
 
 ### Lemma 2
+
 The indexed clique family \(\{C_x:x\in V(H)\}\) has the following properties.
 
 1. Every vertex of \(F\) belongs to exactly three cliques.
@@ -75,9 +89,14 @@ If \(q,q'\) are nonadjacent, they lie together in no \(C_x\), so \(E_q\cap E_{q'
 
 Any proof of (1) may therefore use the three-clique realization furnished by Lemma 2. A theorem for arbitrary induced-path-free graphs is unnecessarily general.
 
-## 3. The spectral identity
+---
+
+## Research Line — The spectral identity
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity -->
 
 ### Lemma 3
+
 \[
 N^{T}N=3I_m+A(F). \tag{4}
 \]
@@ -100,9 +119,14 @@ Thus \(N\) and \(N^TN\) have the same rank. Since \(3I+A(F)\) is symmetric, its 
 
 Therefore the one-third problem is equivalently a bound on the \(-3\) eigenspace inside the realizable class of Lemma 2.
 
-## 4. A weighted rank inequality
+---
+
+## Research Line — A weighted rank inequality
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality -->
 
 ### Theorem 4
+
 Assign weights \(0\le w_e\le1\) to the edges of \(H\). Put
 \[
 W=\sum_e w_e,
@@ -207,6 +231,7 @@ Substituting the preceding estimates gives
 ∎
 
 ### Corollary 5
+
 If \(\Delta(H)\le \ell-2\), then
 \[
 \ell\,\operatorname{rank}N\ge 3m. \tag{9}
@@ -244,13 +269,18 @@ Thus every counterexample to (1) must satisfy
 
 The low-degree range is completely settled.
 
-## 5. Nullity and terminal-pair complexity
+---
+
+## Research Line — Nullity and terminal-pair complexity
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity -->
 
 The rank problem also receives information from the terminal-pair graph of nonspecial edges.
 
 Let \(T\) be that graph, let \(h\) be the number of distinct unique entrances of nonspecial edges, and let \(s\) be the number of special edges.
 
 ### Proposition 6
+
 \[
 \operatorname{nullity}(N)\le \beta(T)+h+s. \tag{11}
 \]
@@ -278,7 +308,11 @@ Adding the \(s\) special columns can increase nullity by at most \(s\). ∎
 
 Thus a bound on \(\beta(T)+h\) would also yield a rank theorem.
 
-## 6. What a counterexample must look like
+---
+
+## Research Line — What a counterexample must look like
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like -->
 
 Several simple classes cannot contain a counterexample to (1).
 
@@ -298,11 +332,16 @@ There are also linear \(3\)-graphs with no special edges and positive incidence 
 \]
 is false, and nonspecial incidence columns need not be independent.
 
-## 7. The remaining theorem
+---
+
+## Research Line — The remaining theorem
+
+<!-- research_line_id: incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem -->
 
 All preceding statements reduce the one-third upper bound to the high-degree realizable case.
 
 ### Open problem
+
 Let \(F\) be induced-\(P_\ell\)-free and equipped with an indexed clique family such that every vertex of \(F\) belongs to exactly three cliques and every edge of \(F\) belongs to exactly one. Let \(N\) be the corresponding incidence matrix. Prove
 \[
 \operatorname{rank}N\ge \frac{3m}{\ell}. \tag{12}

@@ -123,7 +123,7 @@ Hence, before any defect-line argument is used, the rooted descent has already c
 - an explicit order disagreement;
 - or one of six bounded size profiles with orders between four and six.
 
-The neutral order-five analysis below further separates these six profiles: the profiles \(4|4|5\) and \(4|5|5\) lie on nontrivial equal-\(\Phi\) cycles. Thus the bounded four-support states still requiring a different mechanism are \(4|4|4\), \(4|4|6\), \(4|5|6\), and \(4|6|6\).
+The bounded four-support analysis below now classifies all six profiles with component orders in \(\{4,5,6\}\). The profiles \(4|4|5\), \(4|5|5\), and \(4|4|4\) have forced neutral recurrence, while each of \(4|4|6\), \(4|5|6\), and \(4|6|6\) either exposes an order disagreement or has forced neutral recurrence. Thus no bounded four-support size profile remains as an unstructured residue.
 
 
 ## Route lemmas consolidated from the Toolkit
@@ -1010,16 +1010,89 @@ For profile \(4|5|5\), apply the theorem separately to the four-side together wi
 Every equal-\(\Phi\) neighbor remains \(\Phi\)-minimal in the same repartition component and has the same size multiset. Hence every vertex in the finite graph of \(\Phi\)-minimal covers of either profile has degree at least two. Every finite simple graph of minimum degree at least two contains a cycle, and such a cycle has length at least three.
 
 
+### All mixed bounded four-support profiles give disagreement or neutral recurrence
+
+**Statement.** Let \(H\) be a minimum counterexample and let \(C\) be a spanning three-cover that is \(\Phi\)-minimal in its pairwise-repartition component. Suppose the component-size multiset is one of
+\[
+\{4,4,6\},\qquad \{4,5,6\},\qquad \{4,6,6\}.
+\]
+Then either some displayed \(4|6\) pair has an endpoint-six-set order disagreement, or \(C\) has at least two distinct nontrivial equal-\(\Phi\) pairwise-repartition neighbors. Consequently every connected component of the finite neutral-state graph on any one of these profiles either contains a state with such an order disagreement or contains a cycle of length at least three.
+
+For a displayed \(4|6\) pair, apply **A four-path beside a path of order at least six descends, disagrees, or makes the unique neutral migration**. Its strict-descent outcome is impossible at a \(\Phi\)-minimum. Hence every displayed \(4|6\) pair either has the stated order disagreement or admits the nontrivial neutral migration
+\[
+4|6\longrightarrow 6|4.
+\]
+
+For profile \(4|4|6\), there are two displayed \(4|6\) pairs. If neither carries an order disagreement, neutral migration on either pair gives a neighbor. These two neighbors are distinct because the first move leaves the second four-component fixed while changing the first four-component and the six-component, whereas the second move leaves the first four-component fixed.
+
+For profile \(4|6|6\), pair the unique four-component separately with each six-component. Again, absent an order disagreement, the two neutral migrations give distinct neighbors, one leaving each of the two six-components fixed in turn.
+
+For profile \(4|5|6\), the theorem **Every four-by-five pair has a nontrivial neutral repartition** gives one neutral neighbor by repartitioning the \(4|5\) pair and leaving the six-component fixed. Apply the \(4|6\) theorem to the other pair. If its order-disagreement outcome occurs we are done; otherwise its neutral migration gives a second neighbor, this time leaving the five-component fixed. The two neighbors are distinct.
+
+Every equal-\(\Phi\) neighbor remains \(\Phi\)-minimal and has the same size multiset. Thus, inside any connected component containing no order-disagreement state, every vertex has degree at least two. A finite simple graph of minimum degree at least two contains a cycle of length at least three.
+
+Combining this with the neutral-cycle results for \(4|4|5\) and \(4|5|5\), the sole bounded four-support profile not yet reduced to recurrence or an explicit order disturbance is
+\[
+4|4|4.
+\]
+
+
+### Every eight-set has at least seven complementary Hamiltonian four-pairs
+
+**Statement.** Let \(H\) be any boundary tournament and let \(U\subseteq V(H)\) have order eight. Among the \(35\) unordered complementary pairs
+\[
+\{A,U-A\},\qquad |A|=4,
+\]
+at least seven pairs have both \(A\) and \(U-A\) Hamiltonian. Consequently, if \(A|B\) is any displayed two-path cover of an eight-set with \(|A|=|B|=4\), then the same eight-set has at least six other \(4|4\) two-path covers. Every such replacement is a nontrivial \(\Phi\)-neutral pairwise repartition.
+
+Let \(h\) be the number of Hamiltonian four-subsets of \(U\). By the density conclusion of [[smallset01]], every five-subset contains at least three Hamiltonian four-subsets, and therefore
+\[
+h\ge \frac35\binom84=42.
+\]
+Equivalently, this follows by counting incidences \((F,S)\) with \(F\) a Hamiltonian four-set, \(S\) a five-set, and \(F\subset S\): the \(56\) five-sets contribute at least \(3\cdot56=168\) incidences, while each four-set lies in exactly four five-sets.
+
+Partition the \(70\) four-subsets of \(U\) into their \(35\) complementary pairs. Let \(p\) be the number of complementary pairs whose two members are both Hamiltonian, and let \(q\) be the number having exactly one Hamiltonian member. Then
+\[
+h=2p+q,\qquad p+q\le35.
+\]
+Hence
+\[
+h\le 35+p,
+\]
+so
+\[
+p\ge h-35\ge7.
+\]
+
+If \(A|B\) is already a displayed \(4|4\) cover of \(U\), then \(\{A,B\}\) is one of these complementary Hamiltonian pairs. At least six further complementary Hamiltonian pairs remain. Each supplies a different two-path cover of the same eight vertices with component orders \(4|4\), hence a nontrivial pairwise repartition with exactly the same quadratic contribution.
+
+### Every four-four-four state has neutral degree at least eighteen
+
+**Statement.** Let \(H\) be a boundary tournament and let \(C=A|B|D\) be a spanning three-cover with
+\[
+|A|=|B|=|D|=4.
+\]
+Then \(C\) has at least eighteen distinct nontrivial pairwise-repartition neighbors with the same component-size multiset \(4|4|4\) and the same quadratic potential. Consequently every connected component of the finite \(4|4|4\) repartition graph has minimum degree at least eighteen and contains a cycle.
+
+Apply the preceding eight-set theorem first to \(A\cup B\). The displayed decomposition \(A|B\) has at least six alternative complementary Hamiltonian \(4|4\) decompositions. Replacing \(A|B\) by any one of them and leaving \(D\) fixed gives six distinct neutral neighbors.
+
+Repeat on \(A\cup D\), leaving \(B\) fixed, and on \(B\cup D\), leaving \(A\) fixed. Each pair contributes at least six neighbors. The three families are disjoint. Indeed, a nontrivial repartition of \(A\cup B\) leaves \(D\) as a component but leaves neither \(A\) nor \(B\) as a component; similarly for the other two pairs. If a neighbor obtained from two different pair choices were the same cover, it would contain two of the original components, forcing the third component also to be the original remaining four-set and hence giving back \(C\), contrary to nontriviality.
+
+Thus \(C\) has at least \(3\cdot6=18\) distinct neutral neighbors. The same statement holds at every \(4|4|4\) state, so the finite neutral-state graph has minimum degree at least eighteen. In particular it contains abundant neutral recurrence, not merely a single cycle.
+
+Together with the \(4|4|5\), \(4|5|5\), and mixed order-six analyses above, this closes the entire bounded four-support profile list: every profile with component orders in \(\{4,5,6\}\) has forced neutral recurrence unless an explicit \(4|6\) order disagreement is already present.
+
+
 ## Metadata
 
 - ID: line_rooted_small_support_descent_from_deletion_cover_lifts
 - Kind: line
-- Version: 15
-- Math version: 11
+- Version: 18
+- Math version: 14
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
 - Chunk 1 — crystallized, version 7: Rooted descent through bounded supports
-- Chunk 2 — HOT, version 9: From bounded supports to defect compression
+- Chunk 2 — HOT, version 12: From bounded supports to defect compression

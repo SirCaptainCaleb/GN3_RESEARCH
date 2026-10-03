@@ -1,24 +1,693 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T16:20:29.96261+00:00",
-  "main_line_versions": {
-    "algebraic_and_steiner_constructions": 1,
-    "ascending_edges_in_a_dense_subgraph": 1,
-    "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": 2,
-    "incidence_rank_and_induced_paths_in_the_intersection_graph": 1,
-    "induction_on_the_complement_of_a_longest_path": 1,
-    "snake_accounting_and_the_43_48_equality_problem": 1,
-    "terminal_pair_cycles_and_rotations": 1,
-    "transversal_designs_latin_blowups_and_products": 1
+  "generated_at": "2026-10-03T17:39:09.609649+00:00",
+  "main_line_sequences": {
+    "algebraic_and_steiner_constructions": [
+      {
+        "id": "algebraic_and_steiner_constructions_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "algebraic_and_steiner_constructions_the_general_one_third_scale_construction",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "algebraic_and_steiner_constructions_binary_projective_systems",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "algebraic_and_steiner_constructions_ternary_affine_systems",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "algebraic_and_steiner_constructions_general_obstructions_to_amplification",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "algebraic_and_steiner_constructions_the_two_point_fibre_problem",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      }
+    ],
+    "ascending_edges_in_a_dense_subgraph": [
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_rank_superlevels",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_directed_rank_growth",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_the_remaining_problem",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      }
+    ],
+    "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": [
+      {
+        "id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      }
+    ],
+    "incidence_rank_and_induced_paths_in_the_intersection_graph": [
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      }
+    ],
+    "induction_on_the_complement_of_a_longest_path": [
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_inductive_reduction",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_the_remaining_inequality",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      }
+    ],
+    "snake_accounting_and_the_43_48_equality_problem": [
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_the_remaining_implication",
+        "math_version": 1,
+        "position": 10,
+        "version": 1
+      },
+      {
+        "id": "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations",
+        "math_version": 1,
+        "position": 11,
+        "version": 1
+      }
+    ],
+    "terminal_pair_cycles_and_rotations": [
+      {
+        "id": "terminal_pair_cycles_and_rotations_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "terminal_pair_cycles_and_rotations_the_special_edge_inequality",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "terminal_pair_cycles_and_rotations_rotating_a_longest_path",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "terminal_pair_cycles_and_rotations_a_false_strengthening",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "terminal_pair_cycles_and_rotations_the_remaining_theorem",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      }
+    ],
+    "transversal_designs_latin_blowups_and_products": [
+      {
+        "id": "transversal_designs_latin_blow_ups_and_products_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "transversal_designs_latin_blow_ups_and_products_cartesian_products",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      }
+    ]
   },
-  "mirror_format": 8,
-  "research_line_versions": {},
+  "main_line_versions": {
+    "algebraic_and_steiner_constructions": 2,
+    "ascending_edges_in_a_dense_subgraph": 2,
+    "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": 3,
+    "incidence_rank_and_induced_paths_in_the_intersection_graph": 2,
+    "induction_on_the_complement_of_a_longest_path": 2,
+    "snake_accounting_and_the_43_48_equality_problem": 2,
+    "terminal_pair_cycles_and_rotations": 2,
+    "transversal_designs_latin_blowups_and_products": 2
+  },
+  "mirror_format": 9,
+  "research_line_versions": {
+    "algebraic_and_steiner_constructions_binary_projective_systems": {
+      "math_version": 1,
+      "version": 1
+    },
+    "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case": {
+      "math_version": 1,
+      "version": 1
+    },
+    "algebraic_and_steiner_constructions_general_obstructions_to_amplification": {
+      "math_version": 1,
+      "version": 1
+    },
+    "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation": {
+      "math_version": 1,
+      "version": 1
+    },
+    "algebraic_and_steiner_constructions_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "algebraic_and_steiner_constructions_ternary_affine_systems": {
+      "math_version": 1,
+      "version": 1
+    },
+    "algebraic_and_steiner_constructions_the_general_one_third_scale_construction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "algebraic_and_steiner_constructions_the_two_point_fibre_problem": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_directed_rank_growth": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_rank_superlevels": {
+      "math_version": 1,
+      "version": 1
+    },
+    "ascending_edges_in_a_dense_subgraph_the_remaining_problem": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity": {
+      "math_version": 1,
+      "version": 1
+    },
+    "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_inductive_reduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_the_remaining_inequality": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold": {
+      "math_version": 1,
+      "version": 1
+    },
+    "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_a_global_identity": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_the_remaining_implication": {
+      "math_version": 1,
+      "version": 1
+    },
+    "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_a_false_strengthening": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_rotating_a_longest_path": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_the_remaining_theorem": {
+      "math_version": 1,
+      "version": 1
+    },
+    "terminal_pair_cycles_and_rotations_the_special_edge_inequality": {
+      "math_version": 1,
+      "version": 1
+    },
+    "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation": {
+      "math_version": 1,
+      "version": 1
+    },
+    "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow": {
+      "math_version": 1,
+      "version": 1
+    },
+    "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation": {
+      "math_version": 1,
+      "version": 1
+    },
+    "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors": {
+      "math_version": 1,
+      "version": 1
+    },
+    "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem": {
+      "math_version": 1,
+      "version": 1
+    },
+    "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system": {
+      "math_version": 1,
+      "version": 1
+    },
+    "transversal_designs_latin_blow_ups_and_products_cartesian_products": {
+      "math_version": 1,
+      "version": 1
+    },
+    "transversal_designs_latin_blow_ups_and_products_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths": {
+      "math_version": 1,
+      "version": 1
+    },
+    "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set": {
+      "math_version": 1,
+      "version": 1
+    },
+    "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems": {
+      "math_version": 1,
+      "version": 1
+    }
+  },
   "schema": "linp",
-  "snapshot_revision": 368,
+  "snapshot_revision": 402,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 1,
   "universal_document_versions": {
-    "guide": 5,
-    "reflexes": 1
+    "guide": 6,
+    "reflexes": 2
   }
 }

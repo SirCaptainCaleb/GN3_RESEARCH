@@ -1,6 +1,10 @@
 # Main Line VI — three-cover repartitions and recurrence
 
-# Three-cover repartitions and recurrence
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_introduction -->
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\).
 
@@ -23,7 +27,11 @@ P\mid Q\mid\{x\}
 \]
 is a vertex of \(\mathcal R(H)\).
 
-## 1. The central three- or five-vertex path
+---
+
+## Research Line — The central three- or five-vertex path
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path -->
 
 Write
 \[
@@ -88,7 +96,11 @@ Repartitioning \(P\) with the three-vertex path gives the stated five-vertex cen
 
 Thus every deleted label has a canonical bounded representative in the same component of \(\mathcal R(H)\).
 
-## 2. Minimum potential inside a component
+---
+
+## Research Line — Minimum potential inside a component
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_minimum_potential_inside_a_component -->
 
 Fix a component \(\mathcal C\) of \(\mathcal R(H)\) containing a singleton lift, and choose \(C=P_1\mid P_2\mid P_3\in\mathcal C\) minimizing \(\Phi\).
 
@@ -119,7 +131,11 @@ Among triples of positive integers with fixed sum, the minimum of the sum of squ
 \]
 Strict decrease of \(\Phi\) must eventually stop, and it can stop at one of these profiles.
 
-## 3. Moving away from a three-vertex side
+---
+
+## Research Line — Moving away from a three-vertex side
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side -->
 
 Suppose a state in \(\mathcal C\) has the form
 \[
@@ -150,7 +166,11 @@ Consequently:
 
 Repeated application either decreases \(\Phi\) or reaches a bounded Hamiltonian component carrying endpoint information.
 
-## 4. Four- and five-vertex components
+---
+
+## Research Line — Four- and five-vertex components
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_four_and_five_vertex_components -->
 
 Let
 \[
@@ -173,7 +193,21 @@ For a Hamiltonian five-vertex component \(Y\) beside a long path \(P\), the anal
 
 Thus a componentwise minimum of \(\Phi\) does not terminate at an arbitrary small support. It contains explicit overlap, endpoint exchange, or reversal data.
 
-## 5. Equal-potential recurrence
+### Bounded four-support closure
+
+The rooted small-support descent now completely classifies the bounded case in which a minimum-\(\Phi\) state contains a component of order four. Unless an order-three component or a \(4|6\) endpoint order disagreement is already present, every component order lies in \(\{4,5,6\}\). The six possible profiles containing a four then behave as follows.
+
+- \(4|4|4\): every displayed \(4|4\) pair lies on an eight-set with at least seven complementary Hamiltonian \(4+4\) decompositions. Applying this to all three component pairs gives at least eighteen distinct nontrivial neutral neighbors at every state.
+- \(4|4|5\) and \(4|5|5\): every \(4|5\) pair has a nontrivial neutral repartition, so these profiles have forced neutral cycles.
+- \(4|4|6\), \(4|5|6\), and \(4|6|6\): every relevant \(4|6\) pair either exhibits an endpoint-six-set order disagreement or admits the neutral migration \(4|6\to6|4\). If no disagreement occurs, each state has at least two distinct neutral neighbors.
+
+Thus none of the six bounded four-support size profiles remains as an unstructured terminal case. At a minimum of \(\Phi\), the entire order-four regime has already been converted into explicit neutral recurrence or an order disturbance.
+
+---
+
+## Research Line — Equal-potential recurrence
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_equal_potential_recurrence -->
 
 Equal-\(\Phi\) moves occur at the equitable size profiles and in the one-vertex transfer case. They must therefore be treated directly.
 
@@ -216,7 +250,11 @@ We obtain:
 
 These are the local recurrence residues.
 
-## 6. Several deleted labels in one component
+---
+
+## Research Line — Several deleted labels in one component
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component -->
 
 There is a second argument that does not follow one trajectory.
 
@@ -246,7 +284,11 @@ By Lemma 1, this component then contains, for every deleted label in the compati
 
 If the compatibility graph has no large connected component, choosing labels from different components produces a large family of pairwise incompatible deletion covers. This is the complementary structural case and belongs to the deletion-cover argument rather than the recurrence argument.
 
-## 7. Two distinct remaining lemmas
+---
+
+## Research Line — Two distinct remaining lemmas
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas -->
 
 The one-trajectory and many-root arguments require different conclusions.
 
@@ -260,7 +302,11 @@ A proof rules out congestion of many deletion roots without requiring a secondar
 
 These statements are genuinely different. Lemma A orients one trajectory. Lemma B uses several rooted neighborhoods simultaneously.
 
-## Appendix. Why finiteness is insufficient
+---
+
+## Research Line — Appendix. Why finiteness is insufficient
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient -->
 
 A finite sequence of equal-\(\Phi\) pairwise repartitions may return to its initial three-cover. Finiteness alone therefore does not make neutral motion terminate. A valid recurrence argument needs either a secondary quantity that decreases on every selected neutral move or a contradiction obtained from the oriented data accumulated around a cycle.
 
@@ -272,6 +318,10 @@ Boundary reversal also remains local:
 \]
 It does not justify reversing a path or cyclically rotating a triple. Every recurrence argument above therefore keeps the displayed path orders through each pairwise repartition.
 
-## Canonical references
+---
+
+## Research Line — Canonical references
+
+<!-- research_line_id: three_cover_repartitions_and_recurrence_canonical_references -->
 
 - [[fivefence01]] — Five-set fence: bare complement witnesses are not closure

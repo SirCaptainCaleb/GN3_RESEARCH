@@ -1,6 +1,10 @@
 # Main Line 2 — Ascending edges in a dense subgraph
 
-# Ascending edges in a dense subgraph
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_introduction -->
 
 Let \(H\) be a finite linear \(3\)-graph. We use the notation \(\phi(e,v)\), \(\phi(e)\), and \(\phi(v)\) from the preceding rehearsal. A nonspecial edge \(e\) with unique entrance \(x\) is ascending when
 \[
@@ -14,9 +18,14 @@ This line of argument seeks the asymptotic bound
 \]
 for \(P_\ell^{(3)}\)-free linear \(3\)-graphs. The essential point is that the only incidences that exceed the ordinary vertex-rank bound are the unique-entrance incidences of ascending edges.
 
-## 1. Ascending edges are the incidence defect
+---
+
+## Research Line — Ascending edges are the incidence defect
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect -->
 
 ### Lemma 1
+
 For every incident pair \(v\in e\),
 \[
 \phi(e)\le \phi(v)+1.
@@ -29,6 +38,7 @@ If \(e\) is special, then \(v\) is terminal at \(e\), so \(\phi(v)\ge\phi(e)\).
 Suppose \(e\) is nonspecial with unique entrance \(x\) and edge rank \(q\). Each terminal vertex is the last vertex of a \(q\)-edge path ending in \(e\), and therefore has vertex rank at least \(q\). Deleting \(e\) from a longest path ending in \(e\) shows \(\phi(x)\ge q-1\). Thus \(q\le\phi(v)+1\) at every incidence. Equality can occur only at the unique entrance, and there it is exactly the defining equality for an ascending edge. ∎
 
 ### Lemma 2
+
 If \(H\) has \(m\) edges and \(n\) vertices, then
 \[
 3m-A\le \sum_{v}(2\phi(v)-1). \tag{1}
@@ -45,7 +55,11 @@ By Lemma 1, the only remaining incident edges are ascending edges whose unique e
 
 Thus the two-thirds bound follows once \(A=o(\ell n)\).
 
-## 2. Rank superlevels
+---
+
+## Research Line — Rank superlevels
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_rank_superlevels -->
 
 For \(t\ge1\), put
 \[
@@ -53,6 +67,7 @@ V_t=\{v:\phi(v)\ge t\}.
 \]
 
 ### Lemma 3
+
 Let \(e\) have edge rank \(q\).
 
 1. If \(q>t\), then every vertex of \(e\) lies in \(V_t\).
@@ -65,7 +80,11 @@ If \(e\) is nonspecial with unique entrance \(x\), then the two terminal vertice
 
 Accordingly, ascending edges are precisely the boundary edges of the rank superlevels at their own edge rank.
 
-## 3. Properly colored terminal-pair graphs
+---
+
+## Research Line — Properly colored terminal-pair graphs
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs -->
 
 Fix \(t\ge1\). Form a graph \(R_t\) as follows. For every nonspecial edge
 \[
@@ -78,6 +97,7 @@ whose unique entrance satisfies \(\phi(x)<t\) and whose two terminal vertices sa
 put the graph edge \(uv\) in \(R_t\) and color it by \(x\).
 
 ### Lemma 4
+
 The coloring of \(R_t\) is proper, and \(R_t\) contains no rainbow path with \(t\) edges.
 
 #### Proof
@@ -100,6 +120,7 @@ form a linear \(t\)-edge path. The vertex \(x_t\) is private in the last hypered
 There is a useful summation consequence.
 
 ### Corollary 5
+
 For a nonspecial edge \(e\), let \(a(e)\) be the vertex rank of its unique entrance and let
 \[
 p(e)=\min\{\phi(u),\phi(v)\}
@@ -131,7 +152,11 @@ A rainbow-path extremal bound for properly colored graphs with no rainbow \(t\)-
 
 Thus edges with a substantial entrance-to-terminal rank gap have bounded total harmonic mass. The unresolved contribution must concentrate near equal ranks.
 
-## 4. A sufficient common-terminal bound
+---
+
+## Research Line — A sufficient common-terminal bound
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound -->
 
 For a vertex \(v\), let
 \[
@@ -139,6 +164,7 @@ c(v)=|\{e:e\text{ is ascending and }v\text{ is terminal at }e\}|.
 \]
 
 ### Proposition 6
+
 Suppose \(g\) is nondecreasing and
 \[
 c(v)\le g(\phi(v))
@@ -163,7 +189,11 @@ Substitute this in (2). ∎
 
 Hence full specialness is stronger than necessary: a sublinear common-terminal bound already suffices.
 
-## 5. Longest-path decomposition of the remaining ascending edges
+---
+
+## Research Line — Longest-path decomposition of the remaining ascending edges
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges -->
 
 Choose for every vertex \(v\) a maximum path
 \[
@@ -191,6 +221,7 @@ U:& u\in V(P_v),\ x\notin V(P_v).
 The class \(D\) is controlled by double intersections with the chosen paths. The other two classes have more useful structure.
 
 ### Lemma 7
+
 Fix \(\varepsilon>0\). Among the edges in class \(X\) assigned to a fixed vertex \(v\), only \(O_\varepsilon(1)\) can satisfy
 \[
 \phi(e)\le (1-\varepsilon)\phi(v). \tag{7}
@@ -212,6 +243,7 @@ Thus a leading-order class \(X\) family must have edge rank \((1-o(1))\phi(v)\).
 The class \(U\) creates many alternative last vertices by rotation.
 
 ### Lemma 8
+
 Let \(U(v)\) be the class \(U\) edges assigned to \(v\). There is a set \(W(v)\) of vertices with
 \[
 \phi(w)\ge\phi(v)\qquad (w\in W(v))
@@ -235,7 +267,11 @@ Lemmas 7 and 8 reduce the unresolved ascending mass to two phenomena:
 1. many edges of edge rank \(p-o(p)\) whose unique entrance lies on a maximum \(p\)-edge path;
 2. many alternative last vertices of rank at least \(p\), produced from edges whose opposite terminal lies on that path.
 
-## 6. Directed rank growth
+---
+
+## Research Line — Directed rank growth
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_directed_rank_growth -->
 
 There is a complementary global representation. For every ascending edge
 \[
@@ -247,6 +283,7 @@ x\to u,\qquad x\to v.
 \]
 
 ### Lemma 9
+
 Along every directed arc \(x\to y\),
 \[
 \phi(y)\ge\phi(x)+1.
@@ -258,11 +295,16 @@ If \(e\) has edge rank \(q\), then \(\phi(x)=q-1\), while each terminal vertex h
 
 Thus repeated movement through ascending edges cannot continue indefinitely without increasing rank.
 
-## 7. The remaining problem
+---
+
+## Research Line — The remaining problem
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_the_remaining_problem -->
 
 The preceding lemmas leave one theorem to prove.
 
 ### Open problem
+
 Show that, in a \(P_\ell^{(3)}\)-free linear \(3\)-graph, the near-top-rank families isolated by Lemmas 7 and 8 cannot occur with total size \(\Theta(\ell n)\).
 
 Any of the following would suffice:
@@ -274,7 +316,11 @@ Any of the following would suffice:
 
 The last statement is the strongest of these sufficient conditions. The first three are weaker and already give the same leading coefficient.
 
-## 8. Obstructions to simpler arguments
+---
+
+## Research Line — Obstructions to simpler arguments
+
+<!-- research_line_id: ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments -->
 
 Several natural strengthenings are false.
 

@@ -1,6 +1,10 @@
 # Main Line 1 — Snake accounting and the 43/48 equality problem
 
-# Snake accounting and the \(43/48\) equality problem
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_introduction -->
 
 Let \(H\) be a finite linear \(3\)-graph. For an edge \(e\) and a vertex \(v\in e\), let \(\phi(e,v)\) be the maximum length of a linear path with last edge \(e\) and last vertex \(v\). Put
 \[
@@ -19,9 +23,14 @@ S=\sum_{v\in V(H)}\phi(v)
 \]
 and let \(n_+\) be the number of nonisolated vertices.
 
-## 1. The fixed-entrance bound
+---
+
+## Research Line — The fixed-entrance bound
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound -->
 
 ### Lemma 1
+
 Let \(h\) be an ascending edge of edge rank \(q\ge4\), and let \(v\) be terminal at \(h\). Then
 \[
 \bigl|\{f\ni v:\phi(f)\le q\}\bigr|
@@ -103,6 +112,7 @@ Define
 \]
 
 ### Corollary 2
+
 For every nonisolated vertex \(v\),
 \[
 t(v)\le \gamma(\phi(v)). \tag{3}
@@ -111,7 +121,11 @@ t(v)\le \gamma(\phi(v)). \tag{3}
 #### Proof
 Choose \(h\in T(v)\) of maximum edge rank \(q\). Every member of \(T(v)\) has edge rank at most \(q\), and \(q\le\phi(v)\). Apply Lemma 1 and monotonicity of \(\gamma\). ∎
 
-## 2. Path-relative terminal bounds
+---
+
+## Research Line — Path-relative terminal bounds
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds -->
 
 For a maximum \(p\)-edge path \(P\) ending at \(v\), and an incident edge \(f\ne g_p\), let
 \[
@@ -122,6 +136,7 @@ Assign \(\mu_P(g_p)=1\).
 The following path-local estimate will be used in the count.
 
 ### Lemma 3
+
 Let \(P\) be a \(p\)-edge path ending at \(v\), and let \(F_Q\) be a family of ascending edges \(e=\{x,u,v\}\) at which \(v\) is terminal and
 \[
 \phi(e)\le Q,\qquad
@@ -134,7 +149,11 @@ If every member of \(F_Q\) has \(\mu_P(e)=1\), then
 
 The proof is a path-splice count. For \(e=\{x,u,v\}\), both \(x\) and \(u\) must occur in the final \(Q-1\) edges of any maximum \(p\)-edge path ending at \(v\), unless the edge has a second intersection with the path. Under \(\mu_P(e)=1\), the unique intersection therefore lies in the overlap of the two terminal intervals obtained from the entrance side and the opposite-terminal side. This overlap contains \(4Q-2p-3\) admissible vertices. Distinct members of \(F_Q\) use distinct admissible vertices by linearity, proving (4).
 
-## 3. A global identity
+---
+
+## Research Line — A global identity
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_a_global_identity -->
 
 Define
 \[
@@ -157,6 +176,7 @@ q(v)=\max\{\phi(e):e\in T(v)\}.
 \]
 
 ### Lemma 4
+
 For every nonisolated \(v\),
 \[
 t(v)-D_v\le \beta(p_v). \tag{6}
@@ -211,6 +231,7 @@ Linearity gives \(R\ge0\).
 Let \(A\) be the number of ascending edges.
 
 ### Theorem 5
+
 \[
 6|E(H)|
 =
@@ -241,6 +262,7 @@ By (11),
 Substituting (17) into twice (14) gives (13). ∎
 
 ### Corollary 6
+
 If \(H\) is \(P_\ell^{(3)}\)-free and \(\ell\ge8\), then
 \[
 |E(H)|
@@ -263,7 +285,11 @@ If \(H\) is \(P_\ell^{(3)}\)-free, then \(p_v\le\ell-1\). The function
 \]
 is increasing. Discard the four nonnegative terms subtracted in (13) and substitute \(p_v\le\ell-1\). ∎
 
-## 4. What near equality forces
+---
+
+## Research Line — What near equality forces
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_what_near_equality_forces -->
 
 Assume now that
 \[
@@ -302,6 +328,7 @@ p=p_v,\qquad q=q(v),
 choose \(e_0\in T(v)\) of edge rank \(q\), choose a maximum \(q\)-edge path \(Q\) ending in \(e_0\) at \(v\), and retain the chosen maximum \(p\)-edge path \(P=P_v\).
 
 ### Lemma 7
+
 There is a family \(F_v\subseteq T(v)\) of edges that meet \(Q\) in both vertices outside \(v\) and meet \(P\) in exactly one vertex outside \(v\), with
 \[
 |F_v|
@@ -333,7 +360,11 @@ t(v)-D_v-\left\lceil\frac{3q-4}{4}\right\rceil
 \]
 which proves (22). Since \(q\le p-1\), (5) gives (23). ∎
 
-## 5. The interior-pair count
+---
+
+## Research Line — The interior-pair count
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_the_interior_pair_count -->
 
 Write
 \[
@@ -362,6 +393,7 @@ A member meeting \(P\) in \(B_i\) gives a length-preserving rotation of \(P\) wh
 Let \(I_v\) be the number of occupied \(B_i\) for which every vertex of \(g_{i+2}\) has vertex rank at least \(p\).
 
 ### Lemma 8
+
 \[
 D'_v+I_v
 \ge
@@ -405,7 +437,11 @@ V_{\ge p}=\{w:\phi(w)\ge p\}. \tag{30}
 
 Thus every low-\(\eta_v\) high-rank vertex produces linearly many local cycles or linearly many distinct edges in its rank superlevel.
 
-## 6. Refinement of the selected ascending edges
+---
+
+## Research Line — Refinement of the selected ascending edges
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges -->
 
 The identity also controls the intersections at the unique entrance and at the two terminals.
 
@@ -449,7 +485,11 @@ for each terminal \(w\in\{u,v\}\), together with
 
 The point of (32)–(35) is that they retain the \(1/8\)-scale family while removing the exceptional entrance and terminal incidences measured by the four terms of (13).
 
-## 7. Fundamental cycles of the terminal-pair graph
+---
+
+## Research Line — Fundamental cycles of the terminal-pair graph
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph -->
 
 Form a graph \(J\) whose edges are the terminal pairs \(uv\) of the edges
 \[
@@ -458,6 +498,7 @@ e=\{x,u,v\}
 appearing in the families \(G_v\). Give \(uv\) weight \(\phi(e)\). In each component choose a spanning tree of maximum total weight.
 
 ### Lemma 9
+
 After deleting \(o(S)\) further incidences, one obtains families \(H_v\subseteq G_v\) satisfying
 \[
 \sum_v\left(\frac{\phi(v)}8-|H_v|\right)_+=o(S), \tag{36}
@@ -481,7 +522,11 @@ Since an ascending edge can belong to at most the two families indexed by its te
 \]
 distinct hyperedges.
 
-## 8. A three-way local alternative
+---
+
+## Research Line — A three-way local alternative
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative -->
 
 Fix \(v\), put \(p=\phi(v)\), and let \(F\subseteq H_v\) contain \(k\) edges that meet the chosen maximum \(p\)-edge path \(P\) in exactly one off-\(v\) vertex.
 
@@ -515,6 +560,7 @@ distinct interior pairs. By Lemma 8, at least half of those pairs either are dou
 We have proved:
 
 ### Theorem 10
+
 Outside a set of vertices of total vertex rank \(o(S)\), every high-rank vertex \(v\) has a family \(H_v\) satisfying Lemma 9 and at least one of the following:
 
 1. at least
@@ -538,11 +584,16 @@ Outside a set of vertices of total vertex rank \(o(S)\), every high-rank vertex 
 
 Partitioning the vertices according to one alternative shows that one of the three alternatives has total vertex-indexed multiplicity \(\Omega(S)\).
 
-## 9. The remaining implication
+---
+
+## Research Line — The remaining implication
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_the_remaining_implication -->
 
 The proof of a strict improvement over \(43/48\) now reduces to a global multiplicity statement.
 
 ### Open problem
+
 For one of the three families in Theorem 10, prove that \(\Omega(S)\) vertex-indexed occurrences cannot be supported by \(o(S)\) distinct global objects with unbounded multiplicity.
 
 A sufficient statement is the following. Assign every selected edge to one of its terminal vertices, and let \(d(w)\) be the number assigned to \(w\). Prove
@@ -567,7 +618,11 @@ This contradicts (37).
 
 The remaining difficulty is therefore global reuse of the maximum paths, terminal vertices, fundamental-cycle edges, local \(3\)-cycles, and rank-superlevel edges produced above.
 
-## 10. Obstructions to simpler continuations
+---
+
+## Research Line — Obstructions to simpler continuations
+
+<!-- research_line_id: snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations -->
 
 The cumulative fixed-entrance bound does not force a positive proportion of a terminal family to have edge rank uniformly below its maximum; it is an upper bound on the low-rank portion.
 

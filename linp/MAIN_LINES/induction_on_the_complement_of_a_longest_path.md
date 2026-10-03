@@ -1,6 +1,10 @@
 # Main Line 5 — Induction on the complement of a longest path
 
-# Induction on the complement of a longest path
+---
+
+## Research Line — Introduction
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_introduction -->
 
 Fix \(\ell\ge2\). This approach seeks to prove
 \[
@@ -29,9 +33,14 @@ and let \(e_X\) be the number of edges of \(H\) that meet \(X\). Thus
 |E(H)|=m_Y+e_X. \tag{3}
 \]
 
-## 1. Inductive reduction
+---
+
+## Research Line — Inductive reduction
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_inductive_reduction -->
 
 ### Lemma 1
+
 Assume the inductive inequality
 \[
 3m_Y\le \ell |Y|.
@@ -85,7 +94,11 @@ When \(k=\ell-1\), the longest possible value in a \(P_\ell^{(3)}\)-free graph, 
 
 Equation (4) is the entire inductive problem. The first term depends only on unordered pairs of vertices of \(X\); the second records the difference between the forbidden length and the actual longest-path length; the third is the amount by which \(H[Y]\) falls below the inductive extremal bound.
 
-## 2. Why unordered pairs of \(X\) are the natural local resource
+---
+
+## Research Line — Why unordered pairs of \(X\) are the natural local resource
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource -->
 
 Linearity implies that an unordered pair of vertices belongs to at most one hyperedge. Thus every edge meeting \(X\) that contains two vertices of \(X\) determines a unique pair in
 \[
@@ -96,7 +109,11 @@ The difficulty is caused by edges that meet \(X\) in only one vertex. Longest-pa
 
 The desired proof of (4) is a uniform way of converting those restrictions into the three terms on its right-hand side.
 
-## 3. Deletion and the change in extremal deficit
+---
+
+## Research Line — Deletion and the change in extremal deficit
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit -->
 
 The third term \(D_Y\) cannot be treated as a harmless remainder. It records genuine missing edges outside the longest path.
 
@@ -106,6 +123,7 @@ r_d(G)=d|V(G)|-|E(G)|.
 \]
 
 ### Lemma 2
+
 Let \(S\subseteq V(H)\), and let \(N_H(S)\) be the set of hyperedges meeting \(S\). Then
 \[
 r_d(H-S)
@@ -131,6 +149,7 @@ r_d(H-S)
 The identity is elementary, but it prevents a common error: deleting a vertex or a small set while preserving density does not by itself contradict minimality.
 
 ### Lemma 3
+
 Let \(H\) be vertex-minimal among linear \(3\)-graphs satisfying all of the following:
 
 1. \(|E(H)|/|V(H)|\ge d\);
@@ -181,11 +200,16 @@ and exactly one hyperedge contains \(\{u,w\}\). ∎
 
 Thus deletion of a low-degree vertex outside the witness path produces a specific edge joining it to a degree-\((d+1)\) vertex; it does not by itself contradict minimality.
 
-## 4. A path-forest consequence of threshold deletion
+---
+
+## Research Line — A path-forest consequence of threshold deletion
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion -->
 
 The following elementary statement is useful whenever a threshold set \(D\) has already been shown to contain every edge not lying on a fixed maximum path.
 
 ### Lemma 4
+
 Suppose \(D\subseteq V(H)\) has the property that every edge of \(H-D\) belongs to the edge set of a linear path \(P\). Then \(H-D\) is a disjoint union of linear paths and isolated vertices. In particular,
 \[
 \Delta(H-D)\le2
@@ -210,11 +234,16 @@ which implies (9). ∎
 
 If every vertex outside \(D\) has degree at least \(q+1\), Lemma 4 immediately implies that every such vertex lies in at least \(q-1\) edges meeting \(D\).
 
-## 5. Vertices of degree above the minimum threshold
+---
+
+## Research Line — Vertices of degree above the minimum threshold
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold -->
 
 A dense equality case has many vertices whose degree is strictly above the minimum degree.
 
 ### Lemma 5
+
 Suppose
 \[
 |E(H)|=dn
@@ -274,11 +303,16 @@ A \(q\)-edge linear \(3\)-uniform path has \(2q+1\) vertices, so it contains at 
 
 Thus even when \(P\) is nearly spanning relative to the forbidden length, a dense equality case contains many high-degree vertices outside \(P\).
 
-## 6. The remaining inequality
+---
+
+## Research Line — The remaining inequality
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_the_remaining_inequality -->
 
 The induction closes if the following statement is proved.
 
 ### Open problem
+
 For every longest \(k\)-edge path \(P\) in a \(P_\ell^{(3)}\)-free linear \(3\)-graph \(H\), with
 \[
 X=V(P),\qquad Y=V(H)\setminus X,
@@ -300,7 +334,11 @@ D_Y\ge r. \tag{14}
 \]
 Lemmas 2–5 describe mechanisms by which missing edges in \(H[Y]\) can arise, but they do not yet prove (14).
 
-## 7. Obstruction to the naive deletion argument
+---
+
+## Research Line — Obstruction to the naive deletion argument
+
+<!-- research_line_id: induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument -->
 
 A deletion preserving density does not imply that a vertex-minimal counterexample has been contradicted. Lemma 3 gives the precise conclusion: the deleted vertex is joined by a unique hyperedge to a vertex whose degree falls from \(d+1\) to \(d\).
 

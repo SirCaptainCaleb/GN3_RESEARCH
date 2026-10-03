@@ -1,31 +1,645 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T16:20:29.054494+00:00",
-  "main_line_versions": {
-    "defect_lines_and_spanningorder_compression": 4,
-    "deletioncover_compatibility_and_global_obstruction_structure": 8,
-    "endpoint_transport_and_small_support_gluing": 1,
-    "longest_paths_and_reversal_structure": 4,
-    "quadratic_potential_and_pairwise_repartition": 2,
-    "three_cover_repartitions_and_recurrence": 1
+  "generated_at": "2026-10-03T17:39:08.381438+00:00",
+  "main_line_sequences": {
+    "defect_lines_and_spanningorder_compression": [
+      {
+        "id": "defect_lines_and_spanning_order_compression_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_the_defect_line_identity",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_the_remaining_lemma",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      },
+      {
+        "id": "defect_lines_and_spanning_order_compression_canonical_references",
+        "math_version": 1,
+        "position": 10,
+        "version": 1
+      }
+    ],
+    "deletioncover_compatibility_and_global_obstruction_structure": [
+      {
+        "id": "deletion_covers_and_the_support_graph_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_defect_span",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_compatibility_of_deletion_covers",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_the_support_graph",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_support_compatible_families",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_the_forest_case",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_the_odd_cycle_case",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_the_remaining_lemma",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      },
+      {
+        "id": "deletion_covers_and_the_support_graph_canonical_references",
+        "math_version": 1,
+        "position": 10,
+        "version": 1
+      }
+    ],
+    "endpoint_transport_and_small_support_gluing": [
+      {
+        "id": "endpoint_transport_and_small_support_gluing_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_greedy_endpoint_transport",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_the_remaining_lemma",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      }
+    ],
+    "longest_paths_and_reversal_structure": [
+      {
+        "id": "longest_paths_and_reversal_structure_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_reversals_are_unavoidable",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_a_longest_path",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_a_common_four_vertex_core",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_the_endpoint_pair_family",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_opposite_endpoint_replacements",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_the_remaining_lemma",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      },
+      {
+        "id": "longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts",
+        "math_version": 1,
+        "position": 10,
+        "version": 1
+      }
+    ],
+    "quadratic_potential_and_pairwise_repartition": [
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_pairwise_extremality",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_absolute_minima",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_a_block_count_identity",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_the_size_profile_rrr",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_two_same_side_extenders",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_the_remaining_lemma",
+        "math_version": 1,
+        "position": 10,
+        "version": 1
+      },
+      {
+        "id": "quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient",
+        "math_version": 1,
+        "position": 11,
+        "version": 1
+      }
+    ],
+    "three_cover_repartitions_and_recurrence": [
+      {
+        "id": "three_cover_repartitions_and_recurrence_introduction",
+        "math_version": 1,
+        "position": 1,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path",
+        "math_version": 1,
+        "position": 2,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_minimum_potential_inside_a_component",
+        "math_version": 1,
+        "position": 3,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side",
+        "math_version": 1,
+        "position": 4,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_four_and_five_vertex_components",
+        "math_version": 1,
+        "position": 5,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_equal_potential_recurrence",
+        "math_version": 1,
+        "position": 6,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component",
+        "math_version": 1,
+        "position": 7,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas",
+        "math_version": 1,
+        "position": 8,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient",
+        "math_version": 1,
+        "position": 9,
+        "version": 1
+      },
+      {
+        "id": "three_cover_repartitions_and_recurrence_canonical_references",
+        "math_version": 1,
+        "position": 10,
+        "version": 1
+      }
+    ]
   },
-  "mirror_format": 8,
+  "main_line_versions": {
+    "defect_lines_and_spanningorder_compression": 5,
+    "deletioncover_compatibility_and_global_obstruction_structure": 9,
+    "endpoint_transport_and_small_support_gluing": 2,
+    "longest_paths_and_reversal_structure": 5,
+    "quadratic_potential_and_pairwise_repartition": 3,
+    "three_cover_repartitions_and_recurrence": 4
+  },
+  "mirror_format": 9,
   "research_line_versions": {
+    "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_canonical_references": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_the_defect_line_identity": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_the_remaining_lemma": {
+      "math_version": 1,
+      "version": 1
+    },
+    "defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_canonical_references": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_compatibility_of_deletion_covers": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_defect_span": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_support_compatible_families": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_the_forest_case": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_the_odd_cycle_case": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_the_remaining_lemma": {
+      "math_version": 1,
+      "version": 1
+    },
+    "deletion_covers_and_the_support_graph_the_support_graph": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_greedy_endpoint_transport": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_the_remaining_lemma": {
+      "math_version": 1,
+      "version": 1
+    },
+    "endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices": {
+      "math_version": 1,
+      "version": 1
+    },
     "leaf_comparisons_in_deletion_support_forests": {
-      "math_version": 12,
-      "version": 16
+      "math_version": 13,
+      "version": 17
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts": {
-      "math_version": 11,
-      "version": 15
+      "math_version": 14,
+      "version": 18
+    },
+    "longest_paths_and_reversal_structure_a_common_four_vertex_core": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_a_longest_path": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_opposite_endpoint_replacements": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_reversals_are_unavoidable": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_the_endpoint_pair_family": {
+      "math_version": 1,
+      "version": 1
+    },
+    "longest_paths_and_reversal_structure_the_remaining_lemma": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_a_block_count_identity": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_absolute_minima": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_pairwise_extremality": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_the_remaining_lemma": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_the_size_profile_rrr": {
+      "math_version": 1,
+      "version": 1
+    },
+    "quadratic_potential_and_pairwise_repartition_two_same_side_extenders": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_canonical_references": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_equal_potential_recurrence": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_four_and_five_vertex_components": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_introduction": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_minimum_potential_inside_a_component": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path": {
+      "math_version": 1,
+      "version": 1
+    },
+    "three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas": {
+      "math_version": 1,
+      "version": 1
     }
   },
   "schema": "gn3n",
-  "snapshot_revision": 382,
+  "snapshot_revision": 394,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {
-    "guide": 5,
-    "reflexes": 1
+    "guide": 6,
+    "reflexes": 2
   }
 }

@@ -593,15 +593,56 @@ This is also optimal within that family. Since |Y|>=3 and X has maximum degree t
 Scope: this restricted dual weighting is not asserted feasible on all tight paths. Neither existence of a counterexample H with this tree shape nor failure of general fractional rounding is asserted. The conclusion identifies what an integral construction would have to add: when K branches, at least one resulting path must have support outside the selected family, and trimming any two selected paths is insufficient. When K is a path the spanning-union criterion removes this set-theoretic obstruction, but the overlapping Hamilton orders still require a genuine gluing argument.
 
 
+## Paired endpoint reduction after one balanced reselection
+
+**Theorem 13.** Assume minimum-imbalance deletion-cover selection and suppose the selected support graph \(J\) is a connected tree. After changing at most one selected deletion cover to an equally balanced alternative, one of the following holds:
+
+1. the selected support graph is disconnected;
+2. the selected support graph is a connected tree containing a leaf support \(L\) with neighbor \(M\) such that, for every \(z\in M\), the selected deletion cover \(F_z\) contains an ordinary edge joining \(L\) to \(M-\{z\}\).
+
+In the second alternative, both endpoints of every Hamiltonian order on \(M\) force direct mixing between the two old supports.
+
+**Proof.** Choose a leaf support \(P\) of \(J\), let \(Q\) be its neighbor, and let \(x\) label \(PQ\). If there is no exceptional label \(y\in Q\), then by definition every \(F_y\), \(y\in Q\), contains an edge between \(P\) and \(Q-\{y\}\). Take \(L=P\) and \(M=Q\).
+
+Otherwise let \(y\in Q\) be the unique exceptional label. By Corollary 10, the deletion cover
+\[
+G_y=P\mid\bigl((Q-\{y\})\cup\{x\}\bigr)
+\]
+has the same component-order multiset as the selected minimum-imbalance cover \(F_y\), so replacing \(F_y\) by \(G_y\) preserves minimum-imbalance selection. By Exceptional leaf reselection creates a smaller leaf or disconnects the support forest, this replacement either disconnects the selected support graph or leaves it connected with
+\[
+W=(Q-\{y\})\cup\{x\}
+\]
+as a leaf adjacent to \(P\), and no label \(z\in P\) is exceptional relative to the leaf edge \(W\mid P\). In the connected outcome, therefore, every selected cover \(F_z\), \(z\in P\), contains an edge joining \(W\) to \(P-\{z\}\). Taking \(L=W\) and \(M=P\) proves the second alternative. \(\square\)
+
+The connected-tree route may therefore be started from a leaf edge with direct mixing available at both ends of the neighboring displayed path. The earlier one-endpoint conclusion is needed only before this balanced reselection.
+
+**Corollary 14.** Let \(H\) be a minimum counterexample and assume minimum-imbalance selection. After changing at most one selected deletion cover as in Theorem 13, either the selected support forest is disconnected, or there is a leaf edge
+\[
+H-x=L\mid M,\qquad M=(m_0,\ldots,m_s),
+\]
+for which the endpoint comparison can be run independently at both \(m_0\) and \(m_s\). For each endpoint \(z\in\{m_0,m_s\}\), at least one of the following occurs:
+
+1. an order disagreement on \(M-\{z\}\);
+2. an inherited edge of \(M-\{z\}\) is split between the two paths of \(F_z\);
+3. one path of \(F_z\) leaves \(M-\{z\}\) through a nonempty exterior segment and later returns;
+4. a tight triple reverses the displayed end edge of \(M\) incident with \(z\);
+5. the singleton lift \(F_z\mid\{z\}\) admits a strict quadratic-potential decrease;
+6. a selected singleton lift at another omitted label is reached on the same quadratic-potential level by at most two neutral pairwise repartitions.
+
+**Proof.** In the connected outcome of Theorem 13, both endpoint covers contain an edge joining the leaf support \(L\) to the surviving part of \(M\). Apply Corollary 8 separately to \(m_0\) and \(m_s\). The two-cover alternative is absent because \(H\) is a counterexample. Corollary 9 converts the neutral omission-swap outcome into equal-potential recurrence between selected singleton lifts. \(\square\)
+
+Thus the unresolved connected-tree case carries two endpoint disturbances simultaneously. A completion may use their interaction; it no longer needs to spend an endpoint merely to guarantee the existence of direct mixing.
+
+
 ## Metadata
 
 - ID: leaf_comparisons_in_deletion_support_forests
 - Kind: line
-- Version: 16
-- Math version: 12
+- Version: 17
+- Math version: 13
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Chunk 1 — HOT, version 16: Leaf comparisons in deletion-support forests
+- Chunk 1 — HOT, version 17: Leaf comparisons in deletion-support forests
