@@ -1,10 +1,10 @@
 # Leaf endpoint comparison forces direct mixing or splits the old support
 
-**Summary:** A leaf endpoint comparison either mixes the two old supports directly or splits a displayed edge of the leaf support between the two comparison paths.
+**Summary:** A leaf endpoint comparison either mixes the old supports directly or splits the leaf support; balanced selection permits splitting only from a strictly larger leaf support.
 
 ## Statement
 
-At a leaf selected support P in a support forest, comparing the deletion cover at either endpoint of the other support Q either produces a direct edge between surviving vertices of P and Q, or splits some displayed edge of P between the two paths of the comparison cover. In the split case (Q-y) union {x} is Hamiltonian; inherited-order preservation further yields a positioned reversal or the equal-potential singleton triangle.
+At a leaf selected support P in a support forest, endpoint deletion comparison either produces a direct edge between the old supports or splits a displayed edge of P. Under minimum-imbalance deletion-cover selection, the isolated P-piece in the split case has order at least |Q|, so splitting requires |P|>|Q|.
 
 ## Body
 
@@ -40,13 +40,47 @@ If both endpoint replacements use the extreme positions, their orders are
 (x,q_1,...,q_m),
 (q_0,...,q_{m-1},x).
 
-Together with Q they give deletion covers at q_0, q_m, and x sharing P. Let X=Q union {x}. Their singleton lifts are P|(X-{d})|{d} for d in {x,q_0,q_m}; any two differ by repartitioning X and leaving P fixed. Hence they form a triangle in the pairwise-repartition graph and have equal quadratic potential. After deleting q_0 and q_m, the two endpoint-replacement paths induce opposite positions of x on the common support {x,q_1,...,q_{m-1}}, so they have an order disagreement.
+Together with Q they give deletion covers at q_0, q_m, and x sharing P. Let X=Q union {x}. Their singleton lifts are P|(X-{d})|{d} for d in {x,q_0,q_m}; any two differ by repartitioning X and leaving P fixed. Hence they form a triangle in the pairwise-repartition graph and have equal quadratic potential. After deleting q_0 and q_m, the two endpoint-replacement paths induce opposite positions of x on the common support {x,q_1,...,q_{m-1}}, so they have an order disagreement. ∎
+
+## Balanced-selection corollary
+
+Suppose, in addition, that for every deletion label the selected two-cover minimizes the sum of squares of its two component orders among all two-covers of that deletion. In alternative 2 above, write the two pieces of \(P\) as \(R,S\), where the path containing \(x\) has support
+\[
+B\cup\{x\}\cup R
+\]
+and the other path has support \(S\). Put
+\[
+p=|P|,\qquad q=|Q|,\qquad r=|R|,\qquad s=|S|.
+\]
+Then \(p=r+s\), while \(|B\cup\{x\}|=q\). The selected deletion cover at \(y\) therefore has component orders
+\[
+q+r,\qquad s.
+\]
+But
+\[
+P\mid(B\cup\{x\})
+\]
+is another two-cover of \(H-y\), with component orders \(p,q\). Minimality of the selected cover gives
+\[
+(q+r)^2+s^2\le p^2+q^2.
+\]
+Since \(p=r+s\), the difference between the left and right sides is
+\[
+2r(q-s).
+\]
+As \(r>0\), it follows that
+\[
+s\ge q.
+\]
+In particular \(p>q\). Consequently, if the leaf support satisfies \(|P|\le |Q|\), alternative 1 is forced: the endpoint deletion cover must contain an edge joining the two old supports.
+
+Along every path in a connected component of the support forest, support orders alternate between two values, because adjacent support orders sum to \(|V(H)|-1\). Hence if a tree component has leaves in both bipartition classes, one of its leaves lies in the smaller (or equal) class and therefore forces direct support mixing. Thus a forest component with no such direct-mixing leaf must have all of its leaves in the larger support-size bipartition class.
 
 ## Metadata
 
 - ID: leaf_endpoint_singleton_triangle01
 - Kind: toolkit
-- Version: 2
-- Math version: 2
+- Version: 3
+- Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted

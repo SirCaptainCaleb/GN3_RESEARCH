@@ -1661,28 +1661,6 @@
     "audited_by": null,
     "audited_math_version": null,
     "author_session_ids": [
-      51
-    ],
-    "body": "# Leaf endpoint comparison forces direct mixing or splits the old support\n\nLet H be a minimum counterexample to pc(H) <= 2. Choose one deletion cover F_v for every v in V(H), and let J be the selected support graph. Suppose J is a forest and e_x=PQ is a leaf edge, with P the leaf support. Let y be an endpoint of a displayed Hamilton order on Q, and put B=Q-{y}.\n\nThen at least one of the following holds.\n\n1. The selected deletion cover F_y contains a path edge joining a surviving vertex of P to a surviving vertex of Q.\n2. Some displayed edge of P has its endpoints in different paths of F_y.\n\nIn alternative 2, F_y has exactly two path edges joining distinct classes of P | B | {x}; both are incident with x. The path containing x consists of x, all of B, and one nonempty part of P, while the other path contains the remaining nonempty part of P. In particular B union {x} is Hamiltonian.\n\nIf this Hamilton path preserves the inherited order of B, then x lies in one of the first two insertion positions when y is the initial endpoint of Q, and in one of the last two insertion positions when y is the terminal endpoint. The non-extreme insertion forces a tight triple reversing a displayed end edge. If both endpoint comparisons use the extreme insertion, the three deletion covers at x and at the two endpoints of Q have a common fixed support P; their singleton lifts form an equal-quadratic-potential triangle, and the two endpoint-replacement orders disagree on their common non-P support.\n\n## Proof\n\nBecause P is a leaf support of J, the selected cover F_y shares neither P nor Q with F_x: it cannot share Q because every support of F_y omits y, and it cannot share P because P is incident only with e_x. Hence F_y is support-incompatible with F_x on H-{x,y}.\n\nConsider the three classes P, B, {x}. The cover F_y has at least two path edges joining distinct classes. If it had at most one, deleting that edge from its two paths would leave at most three path blocks. The resulting support partition would be one of (P union B)|{x}, (P union {x})|B, or P|(B union {x}). The first gives a two-cover of H after adjoining the two-vertex path (x,y); the second makes P union {x} Hamiltonian and gives a two-cover with Q; the third is support-compatible with F_x. All are impossible.\n\nAssume alternative 1 fails. Then every interclass edge is incident with x. Since x lies on one path of F_y, at most two path edges are incident with x. Therefore there are exactly two interclass edges, both incident with x.\n\nCut these two edges. Besides the singleton block {x}, there are three maximal blocks contained in P or B, so exactly one of P,B is split into two blocks. If B were split, the two interclass edges would join x to the two B-blocks: joining x to the unique P-block would make P union {x} Hamiltonian. Thus one path of F_y would have support B union {x}, and the other path would have support exactly P. This would make P a support of F_y, contradicting that P is the leaf support incident only with e_x.\n\nHence P is split. The same contracted two-path argument shows that x joins the unique B-block to one P-block, while the other P-block is the second path. Thus the vertices of P lie in both paths of F_y. Since the displayed order on P is a path, some consecutive displayed pair has its endpoints in different paths of F_y. This proves alternative 2. The path segment B together with x is Hamiltonian, giving the additional assertion.\n\nFor the insertion refinement, write Q=(q_0,...,q_m). Suppose first y=q_0 and a Hamilton order on B union {x} preserves the order q_1,...,q_m. Since Q union {x} is non-Hamiltonian, x can occur only before q_1 or between q_1 and q_2; any later insertion permits q_0 to be prepended. In the second case, (q_0,q_1,x) must be non-tight, so (x,q_1,q_0) is tight and reverses the displayed initial edge of Q. The terminal-end statement is symmetric: a non-extreme insertion gives (q_m,q_{m-1},x) tight.\n\nIf both endpoint replacements use the extreme positions, their orders are\n\n(x,q_1,...,q_m),\n(q_0,...,q_{m-1},x).\n\nTogether with Q they give deletion covers at q_0, q_m, and x sharing P. Let X=Q union {x}. Their singleton lifts are P|(X-{d})|{d} for d in {x,q_0,q_m}; any two differ by repartitioning X and leaving P fixed. Hence they form a triangle in the pairwise-repartition graph and have equal quadratic potential. After deleting q_0 and q_m, the two endpoint-replacement paths induce opposite positions of x on the common support {x,q_1,...,q_{m-1}}, so they have an order disagreement.",
-    "created_at": "2026-10-03T04:17:52.897221+00:00",
-    "id": "leaf_endpoint_singleton_triangle01",
-    "kind": "toolkit",
-    "math_version": 2,
-    "parent_line_id": null,
-    "refutation_status": "unrefuted",
-    "simplified_statement": "A leaf endpoint comparison either mixes the two old supports directly or splits a displayed edge of the leaf support between the two comparison paths.",
-    "statement": "At a leaf selected support P in a support forest, comparing the deletion cover at either endpoint of the other support Q either produces a direct edge between surviving vertices of P and Q, or splits some displayed edge of P between the two paths of the comparison cover. In the split case (Q-y) union {x} is Hamiltonian; inherited-order preservation further yields a positioned reversal or the equal-potential singleton triangle.",
-    "title": "Leaf endpoint comparison forces direct mixing or splits the old support",
-    "toolkit_type": "other",
-    "updated_at": "2026-10-03T04:23:05.961138+00:00",
-    "version": 2
-  },
-  {
-    "archived_at": null,
-    "audit_status": "unaudited",
-    "audited_by": null,
-    "audited_math_version": null,
-    "author_session_ids": [
       52
     ],
     "body": "Write U={u,v} and C=(c_1,...,c_s). By boundary antisymmetry, exactly one of (u,c_1,v) and (v,c_1,u) is tight. Thus the three-set {u,v,c_1} has a tight Hamiltonian path T of order three. The inherited suffix C'=(c_2,...,c_s) is a tight path of order s-1. Hence T|C' is a two-cover of U union V(C), obtained by a legal pairwise repartition of the two displayed components.\n\nThe affected component orders change from (2,s) to (3,s-1), so\n\nDelta Phi = 3^2+(s-1)^2-2^2-s^2 = 6-2s,\n\nwhich is strictly negative for s>=4.\n\nNow let H be a minimum counterexample and let a spanning three-cover contain a two-vertex component. Since |V(H)|>10, the other two component orders sum to more than eight, so at least one is at least five. Pairing the two-vertex component with that path gives the strict descent above. Thus no Phi-minimal three-cover of a minimum counterexample has a component of order two. This argument does not require the two-vertex component to sit between two nontrivial paths, so it also applies to singleton lifts of profile 1|2|m.",
@@ -1719,6 +1697,94 @@
     "title": "Quadratic-minimal three-covers have no components of order one or two",
     "toolkit_type": "other",
     "updated_at": "2026-10-03T04:26:43.68038+00:00",
+    "version": 1
+  },
+  {
+    "archived_at": null,
+    "audit_status": "unaudited",
+    "audited_by": null,
+    "audited_math_version": null,
+    "author_session_ids": [
+      51
+    ],
+    "body": "Let H be a minimum counterexample. Choose one deletion cover F_v for each vertex v, and let J be the selected support graph. Assume J is a forest. Let\nH-x=P|Q\nbe a selected deletion cover whose support P is a leaf of J, and let y be an endpoint of the displayed path Q. Put B=Q-{y}, with the inherited order.\n\nBy the leaf-support endpoint comparison, the selected deletion cover F_y has one of the following properties:\n\n(i) an edge of F_y joins a surviving vertex of P to a surviving vertex of B; or\n\n(ii) a displayed edge of P has its endpoints in different paths of F_y.\n\nIn case (ii) the asserted split-edge outcome already holds.\n\nAssume case (i). Regard H-x=P|Q as the base deletion cover, regard y as the displayed endpoint of Q, and compare it with F_y. Apply the direct-mixed-edge disturbance theorem to the displayed path Q, its endpoint y, and the comparison cover F_y.\n\nIf the surviving vertices of B do not occur in inherited relative order inside the paths of F_y, there is an order disagreement. Otherwise that theorem gives at least one of the following:\n\n1. an inherited edge of B has its endpoints in different paths of F_y;\n2. one path of F_y leaves B through a nonempty exterior segment and later returns to B;\n3. a tight triple reverses the displayed endpoint edge of Q incident with y;\n4. H has a two-cover;\n5. the singleton lift F_y|{y} admits a strict quadratic-potential decrease by one pairwise repartition;\n6. the endpoint restoration is Phi-neutral and, after omitting the unique transferred vertex, gives another deletion cover compatible with F_y on their common domain.\n\nCombining case (ii) with these alternatives proves the statement.\n\nThus, for a leaf support in the selected support forest, an ordinary edge joining the two old supports is not an additional terminal configuration. It immediately resolves into one of the listed order-theoretic, path-theoretic, or potential-theoretic alternatives.",
+    "created_at": "2026-10-03T04:29:38.202404+00:00",
+    "id": "toolkit_to_path_disturbance_reversal_descent_or_an_omission_swap",
+    "kind": "toolkit",
+    "math_version": 1,
+    "parent_line_id": null,
+    "refutation_status": "unrefuted",
+    "simplified_statement": "In the support-forest leaf case, endpoint comparison has no diffuse direct-crossing residue: it reduces to order/path disturbance, endpoint reversal, a two-cover, strict quadratic descent, or a neutral compatible omission swap.",
+    "statement": "Let H be a minimum counterexample and choose deletion covers whose selected support graph is a forest. If H-x=P|Q corresponds to a leaf edge with P the leaf support and y is a displayed endpoint of Q, then the selected deletion cover at y yields an order disagreement, a displayed inherited edge of P or Q-y split between its two paths, a leave-and-return path segment through exterior vertices, a tight triple reversing the displayed endpoint edge of Q, a two-cover of H, a strict quadratic-potential decrease from the singleton lift at y, or a Phi-neutral omission swap to another deletion cover compatible with the selected cover at y.",
+    "title": "A leaf support reduces endpoint comparison to path disturbance, reversal, descent, or an omission swap",
+    "toolkit_type": "other",
+    "updated_at": "2026-10-03T04:29:38.202404+00:00",
+    "version": 1
+  },
+  {
+    "archived_at": null,
+    "audit_status": "unaudited",
+    "audited_by": null,
+    "audited_math_version": null,
+    "author_session_ids": [
+      48
+    ],
+    "body": "Let\n\\[\nT=(t_1,t_2,t_3),\\qquad C=(c_1,\\ldots,c_s),\n\\qquad s\\ge5.\n\\]\n\nSuppose first that\n\\[\nH[T\\cup\\{c_1\\}]\n\\]\nis Hamiltonian. Let \\(K\\) be a Hamilton path on this four-set. Then\n\\[\nK\\mid(c_2,\\ldots,c_s)\n\\]\nis a two-cover of \\(T\\cup V(C)\\), so replacing the displayed pair \\(T\\mid C\\) gives a legal pairwise repartition with component orders\n\\[\n(3,s)\\longrightarrow(4,s-1).\n\\]\nThe change in the two affected square terms is\n\\[\n4^2+(s-1)^2-3^2-s^2=8-2s<0.\n\\]\nThe same argument applies if \\(T\\cup\\{c_s\\}\\) is Hamiltonian, using the inherited prefix \\((c_1,\\ldots,c_{s-1})\\).\n\nAssume therefore that both endpoint extensions\n\\[\nT\\cup\\{c_1\\},\n\\qquad\nT\\cup\\{c_s\\}\n\\]\nare non-Hamiltonian. The two-bad-four-extensions lemma in [[localextend01]] applies to the tight three-path \\(T\\) and the exterior vertices \\(c_1,c_s\\). It yields a Hamiltonian five-path on\n\\[\nT\\cup\\{c_1,c_s\\}.\n\\]\nTogether with the inherited interior path\n\\[\n(c_2,\\ldots,c_{s-1}),\n\\]\nthis gives a pairwise repartition\n\\[\n(3,s)\\longrightarrow(5,s-2).\n\\]\nIts potential change is\n\\[\n5^2+(s-2)^2-3^2-s^2=20-4s.\n\\]\n\nIf \\(s\\ge6\\), this quantity is strictly negative. Hence a \\(\\Phi\\)-minimal three-cover cannot contain a 3-vertex component beside a component of order at least six.\n\nWhen \\(s=5\\), direct Hamiltonian enlargement to order four still gives the strict change \\(8-2s=-2\\), so at a \\(\\Phi\\)-minimum both endpoint four-extensions must be non-Hamiltonian. The preceding five-path construction then gives\n\\[\n(3,5)\\longrightarrow(5,3)\n\\]\nwith zero change in \\(\\Phi\\). Thus the boundary case is an explicit neutral endpoint rotation.",
+    "created_at": "2026-10-03T04:30:04.721985+00:00",
+    "id": "three_vertex_component_long_neighbor_rotation01",
+    "kind": "toolkit",
+    "math_version": 1,
+    "parent_line_id": null,
+    "refutation_status": "unrefuted",
+    "simplified_statement": "At a Phi-minimum, a 3-vertex component cannot sit beside a path of order at least six; beside a 5-path, failure of direct enlargement forces an equal-Phi 3|5 to 5|3 endpoint rotation.",
+    "statement": "Let H be a boundary tournament and let T|C be two components of a path cover, where T is a tight path of order three and C=(c_1,...,c_s) is a tight path with s>=5. If either T union {c_1} or T union {c_s} is Hamiltonian, there is a pairwise repartition with orders (4,s-1) and Delta Phi=8-2s<0. If both four-sets are non-Hamiltonian, then T union {c_1,c_s} is Hamiltonian and there is a pairwise repartition with orders (5,s-2) and Delta Phi=20-4s. Consequently no Phi-minimal three-cover contains component orders 3 and s>=6. For s=5, every Phi-minimal such pair has both endpoint four-extensions non-Hamiltonian and admits an equal-Phi 3|5 to 5|3 rotation.",
+    "title": "A three-vertex component beside a path of order at least six strictly descends",
+    "toolkit_type": "other",
+    "updated_at": "2026-10-03T04:30:04.721985+00:00",
+    "version": 1
+  },
+  {
+    "archived_at": null,
+    "audit_status": "unaudited",
+    "audited_by": null,
+    "audited_math_version": null,
+    "author_session_ids": [
+      51
+    ],
+    "body": "# Leaf endpoint comparison forces direct mixing or splits the old support\n\nLet H be a minimum counterexample to pc(H) <= 2. Choose one deletion cover F_v for every v in V(H), and let J be the selected support graph. Suppose J is a forest and e_x=PQ is a leaf edge, with P the leaf support. Let y be an endpoint of a displayed Hamilton order on Q, and put B=Q-{y}.\n\nThen at least one of the following holds.\n\n1. The selected deletion cover F_y contains a path edge joining a surviving vertex of P to a surviving vertex of Q.\n2. Some displayed edge of P has its endpoints in different paths of F_y.\n\nIn alternative 2, F_y has exactly two path edges joining distinct classes of P | B | {x}; both are incident with x. The path containing x consists of x, all of B, and one nonempty part of P, while the other path contains the remaining nonempty part of P. In particular B union {x} is Hamiltonian.\n\nIf this Hamilton path preserves the inherited order of B, then x lies in one of the first two insertion positions when y is the initial endpoint of Q, and in one of the last two insertion positions when y is the terminal endpoint. The non-extreme insertion forces a tight triple reversing a displayed end edge. If both endpoint comparisons use the extreme insertion, the three deletion covers at x and at the two endpoints of Q have a common fixed support P; their singleton lifts form an equal-quadratic-potential triangle, and the two endpoint-replacement orders disagree on their common non-P support.\n\n## Proof\n\nBecause P is a leaf support of J, the selected cover F_y shares neither P nor Q with F_x: it cannot share Q because every support of F_y omits y, and it cannot share P because P is incident only with e_x. Hence F_y is support-incompatible with F_x on H-{x,y}.\n\nConsider the three classes P, B, {x}. The cover F_y has at least two path edges joining distinct classes. If it had at most one, deleting that edge from its two paths would leave at most three path blocks. The resulting support partition would be one of (P union B)|{x}, (P union {x})|B, or P|(B union {x}). The first gives a two-cover of H after adjoining the two-vertex path (x,y); the second makes P union {x} Hamiltonian and gives a two-cover with Q; the third is support-compatible with F_x. All are impossible.\n\nAssume alternative 1 fails. Then every interclass edge is incident with x. Since x lies on one path of F_y, at most two path edges are incident with x. Therefore there are exactly two interclass edges, both incident with x.\n\nCut these two edges. Besides the singleton block {x}, there are three maximal blocks contained in P or B, so exactly one of P,B is split into two blocks. If B were split, the two interclass edges would join x to the two B-blocks: joining x to the unique P-block would make P union {x} Hamiltonian. Thus one path of F_y would have support B union {x}, and the other path would have support exactly P. This would make P a support of F_y, contradicting that P is the leaf support incident only with e_x.\n\nHence P is split. The same contracted two-path argument shows that x joins the unique B-block to one P-block, while the other P-block is the second path. Thus the vertices of P lie in both paths of F_y. Since the displayed order on P is a path, some consecutive displayed pair has its endpoints in different paths of F_y. This proves alternative 2. The path segment B together with x is Hamiltonian, giving the additional assertion.\n\nFor the insertion refinement, write Q=(q_0,...,q_m). Suppose first y=q_0 and a Hamilton order on B union {x} preserves the order q_1,...,q_m. Since Q union {x} is non-Hamiltonian, x can occur only before q_1 or between q_1 and q_2; any later insertion permits q_0 to be prepended. In the second case, (q_0,q_1,x) must be non-tight, so (x,q_1,q_0) is tight and reverses the displayed initial edge of Q. The terminal-end statement is symmetric: a non-extreme insertion gives (q_m,q_{m-1},x) tight.\n\nIf both endpoint replacements use the extreme positions, their orders are\n\n(x,q_1,...,q_m),\n(q_0,...,q_{m-1},x).\n\nTogether with Q they give deletion covers at q_0, q_m, and x sharing P. Let X=Q union {x}. Their singleton lifts are P|(X-{d})|{d} for d in {x,q_0,q_m}; any two differ by repartitioning X and leaving P fixed. Hence they form a triangle in the pairwise-repartition graph and have equal quadratic potential. After deleting q_0 and q_m, the two endpoint-replacement paths induce opposite positions of x on the common support {x,q_1,...,q_{m-1}}, so they have an order disagreement. ∎\n\n## Balanced-selection corollary\n\nSuppose, in addition, that for every deletion label the selected two-cover minimizes the sum of squares of its two component orders among all two-covers of that deletion. In alternative 2 above, write the two pieces of \\(P\\) as \\(R,S\\), where the path containing \\(x\\) has support\n\\[\nB\\cup\\{x\\}\\cup R\n\\]\nand the other path has support \\(S\\). Put\n\\[\np=|P|,\\qquad q=|Q|,\\qquad r=|R|,\\qquad s=|S|.\n\\]\nThen \\(p=r+s\\), while \\(|B\\cup\\{x\\}|=q\\). The selected deletion cover at \\(y\\) therefore has component orders\n\\[\nq+r,\\qquad s.\n\\]\nBut\n\\[\nP\\mid(B\\cup\\{x\\})\n\\]\nis another two-cover of \\(H-y\\), with component orders \\(p,q\\). Minimality of the selected cover gives\n\\[\n(q+r)^2+s^2\\le p^2+q^2.\n\\]\nSince \\(p=r+s\\), the difference between the left and right sides is\n\\[\n2r(q-s).\n\\]\nAs \\(r>0\\), it follows that\n\\[\ns\\ge q.\n\\]\nIn particular \\(p>q\\). Consequently, if the leaf support satisfies \\(|P|\\le |Q|\\), alternative 1 is forced: the endpoint deletion cover must contain an edge joining the two old supports.\n\nAlong every path in a connected component of the support forest, support orders alternate between two values, because adjacent support orders sum to \\(|V(H)|-1\\). Hence if a tree component has leaves in both bipartition classes, one of its leaves lies in the smaller (or equal) class and therefore forces direct support mixing. Thus a forest component with no such direct-mixing leaf must have all of its leaves in the larger support-size bipartition class.",
+    "created_at": "2026-10-03T04:17:52.897221+00:00",
+    "id": "leaf_endpoint_singleton_triangle01",
+    "kind": "toolkit",
+    "math_version": 3,
+    "parent_line_id": null,
+    "refutation_status": "unrefuted",
+    "simplified_statement": "A leaf endpoint comparison either mixes the old supports directly or splits the leaf support; balanced selection permits splitting only from a strictly larger leaf support.",
+    "statement": "At a leaf selected support P in a support forest, endpoint deletion comparison either produces a direct edge between the old supports or splits a displayed edge of P. Under minimum-imbalance deletion-cover selection, the isolated P-piece in the split case has order at least |Q|, so splitting requires |P|>|Q|.",
+    "title": "Leaf endpoint comparison forces direct mixing or splits the old support",
+    "toolkit_type": "other",
+    "updated_at": "2026-10-03T04:30:43.36691+00:00",
+    "version": 3
+  },
+  {
+    "archived_at": null,
+    "audit_status": "unaudited",
+    "audited_by": null,
+    "audited_math_version": null,
+    "author_session_ids": [
+      51
+    ],
+    "body": "Let H be a minimum counterexample and let\nH-x=P|Q\nbe a deletion cover. Its singleton lift is\nP|Q|{x}.\n\nFirst, |V(H)|>=8. For |V(H)|<=6, partition V(H) into two sets of order at most three; every set of order at most three has a Hamilton tight path. For |V(H)|=7, choose any five-set S. If S is Hamiltonian, deleting an endpoint of a Hamilton order leaves a Hamiltonian four-set. If S is non-Hamiltonian, the five-set small-order theorem gives a Hamiltonian four-subset of S. In either case H has a Hamiltonian four-set whose complementary three-set is Hamiltonian, yielding a two-cover. Thus a minimum counterexample has order at least eight.\n\nSince |P|+|Q|=|V(H)|-1>=7, at least one of P,Q has order r>=4. Let\nR=(r_1,...,r_r)\nbe such a path.\n\nBy boundary antisymmetry, exactly one of\n(x,r_1,r_2)\nand\n(r_2,r_1,x)\nis tight. Let T be the resulting tight path on {x,r_1,r_2}. The inherited tail\nR'=(r_3,...,r_r)\nis also a nonempty tight path. Hence\nR|{x}\nmay be replaced in one pairwise repartition by\nT|R'.\n\nOnly the component orders r and 1 change, becoming 3 and r-2. Therefore\nPhi_new-Phi_old\n=9+(r-2)^2-r^2-1\n=12-4r\n=-4(r-3)<0.\n\nThus every deletion-cover singleton lift admits a one-step strict quadratic descent to a three-cover in which the deleted label x lies in a three-vertex component together with two consecutive vertices taken from an endpoint of one displayed deletion-cover path. The terminal pair (r_{r-1},r_r) gives the symmetric construction.",
+    "created_at": "2026-10-03T04:31:28.375046+00:00",
+    "id": "toolkit_lift_strictly_descends_to_a_rooted_three_vertex_component",
+    "kind": "toolkit",
+    "math_version": 1,
+    "parent_line_id": null,
+    "refutation_status": "unrefuted",
+    "simplified_statement": "Every deletion-cover singleton lift in a minimum counterexample has a one-step strict Phi descent to a three-cover whose new 3-component contains the deleted label and two consecutive endpoint vertices of one deletion-cover path.",
+    "statement": "Let H be a minimum counterexample and H-x=P|Q a deletion cover. Then one of P,Q has order r>=4. If R=(r_1,...,r_r) is such a component, the singleton lift P|Q|{x} admits one pairwise repartition replacing R|{x} by a tight three-vertex path on {x,r_1,r_2} and the inherited tail (r_3,...,r_r). The quadratic potential decreases by 4(r-3).",
+    "title": "Every deletion-cover singleton lift strictly descends to a rooted three-vertex component",
+    "toolkit_type": "other",
+    "updated_at": "2026-10-03T04:31:28.375046+00:00",
     "version": 1
   }
 ]

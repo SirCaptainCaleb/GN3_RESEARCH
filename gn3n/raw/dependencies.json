@@ -138,5 +138,47 @@
     "consumer_math_version": 1,
     "premise_id": "mincex01",
     "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_to_path_disturbance_reversal_descent_or_an_omission_swap",
+    "consumer_math_version": 1,
+    "premise_id": "path_disturbance_endpoint_reversal_descent_or_an_omission_swap",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "three_vertex_component_long_neighbor_rotation01",
+    "consumer_math_version": 1,
+    "premise_id": "localextend01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "optimistic",
+    "consumer_id": "toolkit_to_path_disturbance_reversal_descent_or_an_omission_swap",
+    "consumer_math_version": 1,
+    "premise_id": "leaf_endpoint_singleton_triangle01",
+    "premise_math_version": 3
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_endpoint_singleton_triangle01",
+    "consumer_math_version": 3,
+    "premise_id": "quadraticpotential01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_lift_strictly_descends_to_a_rooted_three_vertex_component",
+    "consumer_math_version": 1,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_lift_strictly_descends_to_a_rooted_three_vertex_component",
+    "consumer_math_version": 1,
+    "premise_id": "smallset01",
+    "premise_math_version": 1
   }
 ]

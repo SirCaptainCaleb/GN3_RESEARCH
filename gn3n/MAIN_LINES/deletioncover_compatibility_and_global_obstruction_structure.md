@@ -1,7 +1,5 @@
 # Main Line I — deletion-cover compatibility and global obstruction structure
 
-# Main Line I — deletion-cover compatibility and global obstruction structure
-
 # Deletion covers and the support graph
 
 Let \(H\) be a finite boundary \(3\)-tournament. A tight path is a sequence
@@ -16,10 +14,11 @@ Assume throughout that \(H\) is a counterexample of minimum order to
 \]
 Then \(\operatorname{pc}(H)=3\). For every \(x\in V(H)\), minimality gives a two-cover of \(H-x\). Neither path can be empty, and \(H-x\) cannot be Hamiltonian, since a Hamilton path of \(H-x\) together with the one-vertex path \(x\) would be a two-cover of \(H\). Thus every deletion cover at \(x\) consists of two nonempty paths.
 
-For each \(x\in V(H)\), choose one deletion cover
+For each \(x\in V(H)\), choose a deletion cover
 \[
-F_x=P_x\mid Q_x .
+F_x=P_x\mid Q_x
 \]
+that minimizes \(|P_x|^2+|Q_x|^2\) among all two-covers of \(H-x\). Equivalently, choose a deletion cover whose two component orders have minimum possible imbalance.
 
 ## 1. Defect span
 
@@ -169,6 +168,19 @@ In the second alternative, the endpoint replacement \((Q-\{y\})\cup\{x\}\) is Ha
 **Proof.** See [[leaf_endpoint_singleton_triangle01]]. The extra forest input is decisive: in the no-crossing branch of Lemma 7, if \(Q-\{y\}\) rather than \(P\) were split between the two paths of the comparison cover, then the other path would have support exactly \(P\). That would make the selected edge labeled \(y\) incident with the leaf support \(P\), contradicting that \(P\) is incident only with \(e_x\). Hence \(P\) is split, and some consecutive displayed edge of \(P\) crosses the two comparison paths. \(\square\)
 
 Thus the forest case reaches a canonical recurrence residue after a single endpoint comparison: either a comparison edge joins the two old supports, or a displayed old-path edge is split between the two comparison paths.
+
+
+The balanced selection gives a quantitative refinement. In the split case, let \(S\subset P\) be the comparison path lying wholly inside \(P\), and let \(R=P-S\) be the nonempty part of \(P\) lying on the comparison path containing \(x\) and \(Q-\{y\}\). Comparing the selected deletion cover at \(y\) with the valid cover
+\[
+P\mid((Q-\{y\})\cup\{x\})
+\]
+shows, by the quadratic-potential identity, that
+\[
+|S|\ge |Q|.
+\]
+Hence \(|P|>|Q|\) whenever the split alternative occurs. In particular, if a leaf support is no larger than its neighbor, the direct-mixing alternative is forced.
+
+Since adjacent support orders sum to \(|V(H)|-1\), support orders alternate between two values on each tree component of \(J\). Therefore, if a tree component has leaves in both bipartition classes, at least one leaf is no larger than its neighbor and forces direct mixing. A forest component with no direct-mixing leaf must have every leaf in the larger support-size bipartition class. See [[leaf_endpoint_singleton_triangle01]].
 
 ## 6. The odd-cycle case
 
