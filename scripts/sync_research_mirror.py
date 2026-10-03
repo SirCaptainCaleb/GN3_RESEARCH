@@ -101,10 +101,16 @@ def research_md(row: dict[str, Any], chunks: list[dict[str, Any]] | None = None)
 def dictionary_text(items: list[dict[str, Any]]) -> str:
     by_section: dict[str, list[dict[str, Any]]] = {}
     for x in items:
-        by_section.setdefault(x.get("section") or "General", []).append(x)
+        by_section.setdefault(x.get("section") or "general", []).append(x)
     out = []
     for section in sorted(by_section):
-        out += [f"## {section}", ""]
+        heading = "Review Queue" if section == "review_queue" else section.replace("_", " ").title()
+        out += [f"## {heading}", ""]
+        if section == "review_queue":
+            out += [
+                "Before using an entry in this section, either replace it with a precise canonical definition or mark it prohibited.",
+                ""
+            ]
         for x in sorted(by_section[section], key=lambda r: (r.get("term") or "").casefold()):
             term = x.get("term") or ""
             status = x.get("status") or ""
@@ -118,7 +124,7 @@ def dictionary_text(items: list[dict[str, Any]]) -> str:
             out.append(f"{term}: {x.get('definition') or ''}")
             if x.get("notes"):
                 out.append(f"  Note: {x['notes']}")
-        out.append("")
+            out.append("")
     return "\n".join(out)
 
 def build(schema: str):
