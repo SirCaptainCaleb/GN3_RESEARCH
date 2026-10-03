@@ -132,14 +132,15 @@ def build(schema: str):
     data = {t: rows(schema, t) for t in TABLES}
     rev = context(schema, "revision")
     help_doc = context(schema, "help")
+    universal_docs = context(schema, "universal_documents")
 
     for table, value in data.items():
         write_json(root / "raw" / f"{table}.json", value)
 
     live_docs = [d for d in data["documents"] if d.get("archived_at") is None]
     overview = next((d for d in live_docs if d.get("kind") == "overview"), None)
-    guide = next((d for d in live_docs if d.get("kind") == "guide"), None)
-    reflexes = next((d for d in live_docs if d.get("kind") == "reflexes"), None)
+    guide = next((d for d in universal_docs if d.get("kind") == "guide"), None)
+    reflexes = next((d for d in universal_docs if d.get("kind") == "reflexes"), None)
     main_lines = sorted(
         [d for d in live_docs if d.get("kind") == "main_line"],
         key=lambda d: (d.get("position") is None, d.get("position") or 0, d.get("id") or "")
@@ -216,6 +217,7 @@ Generated: {rev.get('generated_at')}
         "snapshot_revision": rev.get("revision"),
         "generated_at": rev.get("generated_at"),
         "tables": list(TABLES),
+        "universal_document_versions": {d["id"]: d.get("version") for d in universal_docs},
         "main_line_count": len(main_lines),
         "main_line_versions": {d["id"]: d.get("version") for d in main_lines},
         "research_line_count": sum(r.get("kind") == "line" for r in active_research),
