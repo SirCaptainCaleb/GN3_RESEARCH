@@ -86,3 +86,32 @@ jobs:
           with urllib.request.urlopen(req, timeout=60) as r:
               print(r.read().decode())
           PY
+      - name: Delete older research-context artifacts and runs
+        if: ${{ success() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+          CURRENT_RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+
+          echo "Deleting older research-context artifacts..."
+          gh api --paginate "repos/$REPO/actions/artifacts?per_page=100" \
+            --jq '.artifacts[] | select(.name == "research-context") | .id' |
+          while read -r artifact_id; do
+            [ -z "$artifact_id" ] && continue
+            if [ "$artifact_id" != "$CURRENT_ARTIFACT_ID" ]; then
+              gh api --method DELETE "repos/$REPO/actions/artifacts/$artifact_id" || true
+            fi
+          done
+
+          echo "Deleting older completed artifact-workflow runs..."
+          gh api --paginate "repos/$REPO/actions/workflows/build-research-context-artifact.yml/runs?status=completed&per_page=100" \
+            --jq '.workflow_runs[].id' |
+          while read -r run_id; do
+            [ -z "$run_id" ] && continue
+            if [ "$run_id" != "$CURRENT_RUN_ID" ]; then
+              gh api --method DELETE "repos/$REPO/actions/runs/$run_id" || true
+            fi
+          done
