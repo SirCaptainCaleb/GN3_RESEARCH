@@ -123,6 +123,8 @@ Hence, before any defect-line argument is used, the rooted descent has already c
 - an explicit order disagreement;
 - or one of six bounded size profiles with orders between four and six.
 
+The neutral order-five analysis below further separates these six profiles: the profiles \(4|4|5\) and \(4|5|5\) lie on nontrivial equal-\(\Phi\) cycles. Thus the bounded four-support states still requiring a different mechanism are \(4|4|4\), \(4|4|6\), \(4|5|6\), and \(4|6|6\).
+
 
 ## Route lemmas consolidated from the Toolkit
 
@@ -969,16 +971,55 @@ The proof of four_side_four_five_supports_descent01 is unchanged except for keep
 
 By five_side_prescribed_pair_switch01 there are at least two distinct d1,d2 in X-{x} such that S-{d1} and S-{d2} are Hamiltonian five-sets. Let K=S-{d1,d2}; then K union {d1}=S-{d2} and K union {d2}=S-{d1} are Hamiltonian. Apply 944fd93bda46 to the common four-core K and labels d1,d2. If S is Hamiltonian, its complement is non-Hamiltonian with path-cover number two by minimum-counterexample calculus. Otherwise 944fd93bda46 gives a Hamiltonian-deletion set D of size at least four containing d1,d2, with every L+d, d in D, non-Hamiltonian of path-cover number two, and a graph J on D of minimum degree at least one whose edge de certifies that L+d+e is non-Hamiltonian of path-cover number two. This is exactly the stated transport set.
 
+### Every four-by-five pair has a nontrivial neutral repartition
+
+**Statement.** Let \(H\) be a boundary tournament, let \(X\) be a Hamiltonian four-set, and let \(P=(a,p_2,p_3,p_4,b)\) be a vertex-disjoint tight path of order five. Then \(H[X\cup V(P)]\) has a two-path cover with component orders \(4\) and \(5\) whose support partition differs from \(X\mid V(P)\). Consequently, whenever \(X\mid P\) occurs as two components of a three-cover, there is a nontrivial pairwise repartition preserving quadratic potential.
+
+Apply the four-side endpoint package at \(m=5\). If its first alternative occurs, it already gives a legal repartition with orders \(5\mid4\), and the potential change is \(10-2m=0\).
+
+Assume therefore that the endpoint-lock alternative occurs. Put
+\[
+M=\{p_2,p_3,p_4\}.
+\]
+For every \(t\in X\), the four-set
+\[
+L_t=M\cup\{t\}
+\]
+is non-Hamiltonian. The same endpoint package gives distinct \(x,y,z\in X\) such that
+\[
+A=\{a,b,x,y\},\qquad B=\{a,b,x,z\}
+\]
+are Hamiltonian. Let \(t\) be the fourth vertex of \(X\), so \(X=\{x,y,z,t\}\).
+
+Consider the five-set complementary to \(A\) inside \(X\cup V(P)\):
+\[
+C=(X\cup V(P))-A=M\cup\{z,t\}.
+\]
+Both four-subsets \(M\cup\{z\}=L_z\) and \(M\cup\{t\}=L_t\) are non-Hamiltonian. By the five-set theorem in [[smallset01]], a non-Hamiltonian five-set has at most one non-Hamiltonian four-subset. Therefore \(C\) is Hamiltonian.
+
+Thus \(A\mid C\) is a two-path cover of \(X\cup V(P)\) with orders \(4\mid5\). It is nontrivial because \(A\) contains the two vertices \(a,b\) from the old five-side, so \(A\ne X\). Hence the locked branch also yields a neutral pairwise repartition, and the two alternatives together prove the statement.
+
+### Quadratic-minimal four-four-five and four-five-five states lie on neutral cycles
+
+**Statement.** Let \(H\) be a minimum counterexample and let \(C\) be a spanning three-cover that is \(\Phi\)-minimal in its pairwise-repartition component. If the component-size multiset is \(\{4,4,5\}\) or \(\{4,5,5\}\), then \(C\) has at least two distinct nontrivial equal-\(\Phi\) pairwise-repartition neighbors. Consequently every connected component of the graph of \(\Phi\)-minimal covers of either profile contains a cycle of length at least three.
+
+For profile \(4|4|5\), apply the preceding theorem separately to each four-side together with the unique five-side. This gives one neutral neighbor by repartitioning the first \(4|5\) pair and another by repartitioning the second. The two neighbors are distinct because the first move changes the support partition on one four-component and the five-component while leaving the other four-component fixed, whereas the second move leaves the first four-component fixed and changes the other pair.
+
+For profile \(4|5|5\), apply the theorem separately to the four-side together with each of the two five-sides. Again the resulting neighbors are distinct: one leaves the first five-side fixed and the other leaves the second five-side fixed, while each move nontrivially changes the chosen \(4|5\) support partition.
+
+Every equal-\(\Phi\) neighbor remains \(\Phi\)-minimal in the same repartition component and has the same size multiset. Hence every vertex in the finite graph of \(\Phi\)-minimal covers of either profile has degree at least two. Every finite simple graph of minimum degree at least two contains a cycle, and such a cycle has length at least three.
+
+
 ## Metadata
 
 - ID: line_rooted_small_support_descent_from_deletion_cover_lifts
 - Kind: line
-- Version: 14
-- Math version: 10
+- Version: 15
+- Math version: 11
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
 - Chunk 1 — crystallized, version 7: Rooted descent through bounded supports
-- Chunk 2 — HOT, version 8: From bounded supports to defect compression
+- Chunk 2 — HOT, version 9: From bounded supports to defect compression
