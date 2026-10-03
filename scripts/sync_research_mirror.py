@@ -164,8 +164,23 @@ def build(schema: str):
         )
     if not any(r.get("kind") == "line" for r in active_research):
         write(root / "RESEARCH_LINES" / "README.md", "# Research Lines\n\nNo active Research Lines.")
-    if not any(r.get("kind") == "toolkit" for r in active_research):
-        write(root / "TOOLKIT" / "README.md", "# Toolkit\n\nNo active Toolkit entries.")
+    toolkit_items = sorted(
+        [r for r in active_research if r.get("kind") == "toolkit"],
+        key=lambda r: ((r.get("toolkit_type") or ""), (r.get("title") or "").casefold(), r.get("id") or "")
+    )
+    toolkit_index = ["# Toolkit", ""]
+    if toolkit_items:
+        for r in toolkit_items:
+            fn = safe_name(r["id"]) + ".md"
+            typ = r.get("toolkit_type") or "other"
+            summary = (r.get("simplified_statement") or "").strip()
+            line = f"- [{r.get('title') or r['id']}]({fn}) — {typ}"
+            if summary:
+                line += f" — {summary}"
+            toolkit_index.append(line)
+    else:
+        toolkit_index.append("No active Toolkit entries.")
+    write(root / "TOOLKIT" / "README.md", "\n".join(toolkit_index))
 
     for b in data["brainstorms"]:
         write(root / "BRAINSTORMS" / (safe_name(b["id"]) + ".md"),
@@ -173,15 +188,15 @@ def build(schema: str):
 
     boot = f"""# Startup instructions
 
-This is the current {schema} research snapshot. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, and API.json, then read MAIN_LINES/README.md and every listed Main Line last, immediately before choosing a route.
+This is the current {schema} research snapshot. Review startup_notices returned by boot(). Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.json, and TOOLKIT/README.md, then read MAIN_LINES/README.md and every listed Main Line last, immediately before choosing a route.
 
 Mathematical work must be publication-precise and contain no proof-process or research-process meta-language. Computation, computer search, brute force, numerical experimentation, code, CAS/SAT/SMT tools, and external web search are banned.
 
-After choosing a route, call changes(...) once. Compare only the chosen Main Line and Research Line versions, if any, with MANIFEST.json. If a chosen manuscript changed, page through it with read([id]); pass next_cursor back into read(...) until complete=true. changes(...) is a freshness signal, not a mathematical changelog. Then work from the refreshed startup context and local reasoning without consulting shared research state.
+After choosing a route, run one route-specific search across existing Research Lines and Toolkit entries with include_documents=false to avoid rediscovering known mathematics. Then call changes(...) once. Compare only the chosen Main Line and Research Line versions, if any, with MANIFEST.json. If a chosen manuscript changed, page through it with read([id]); pass next_cursor back into read(...) until complete=true. changes(...) is a freshness signal, not a mathematical changelog. Then work from the refreshed startup context and local reasoning without consulting shared research state.
 
 Follow the recurring research behavior in REFLEXES.md throughout the session.
 
-Publish only after substantial progress. Stage the complete save_batch payload in connector-sized parts, review concurrent findings with review_staged_batch(...), resolve overlap, and commit atomically with commit_staged_batch(...). If another worker publishes after review, review again. After publication, reread the Research Line you are continuing before resuming research.
+Publish only after substantial progress. Every substantive durable research operation must explicitly declare dependencies, using [] when genuinely self-contained. Stage the complete save_batch payload in connector-sized parts, review concurrent findings with review_staged_batch(...), resolve overlap, and commit atomically with commit_staged_batch(...). If another worker publishes after review, review again. Use repair_line_chunk(...) only for a version-guarded correction to an older crystallized subsection. After publication, reread the Research Line you are continuing before resuming research.
 
 Snapshot event: {rev.get('event_id')}
 Generated: {rev.get('generated_at')}
