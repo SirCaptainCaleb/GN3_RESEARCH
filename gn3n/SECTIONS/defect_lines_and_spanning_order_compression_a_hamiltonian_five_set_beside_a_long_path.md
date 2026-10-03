@@ -47,7 +47,7 @@ If \(H-K\) were Hamiltonian, a Hamilton path on \(K\) together with one on \(H-K
 \]
 \(\square\)
 
-Consequently a Hamiltonian support of order four **or five** carrying displayed endpoint information, with two-coverable complement, may always be replaced by an endpoint-rooted Hamiltonian four-support with the same complement property. Lemma 8 of the preceding Section then converts this four-support into a direct mixed edge, a split/leave-and-return disturbance, an order disagreement, an external end-edge reversal, or a two-cover.
+Consequently a Hamiltonian support of order four **or five** carrying displayed endpoint information, with two-coverable complement, may always be replaced by an endpoint-rooted Hamiltonian four-support with the same complement property. Lemma 8 of the preceding Section then converts this four-support directly into a split/leave-and-return disturbance, an external end-edge reversal, or a two-cover.
 
 Thus the order-five support is no longer an independent terminal interface.
 
@@ -55,11 +55,11 @@ Thus the order-five support is no longer an independent terminal interface.
 
 - ID: defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path
 - Kind: section
-- Version: 2
-- Math version: 2
+- Version: 3
+- Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 2: (untitled)
+- Subsection 1 — HOT, version 3: (untitled)

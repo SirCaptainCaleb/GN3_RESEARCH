@@ -10,55 +10,26 @@ Starting from a deletion cover H-x=P|Q in a minimum counterexample, track pairwi
 
 ## Rooted descent through bounded supports
 
-
-Let (H) be a minimum counterexample and let
-[
-H-x=Pmid Q
-]
-be a deletion cover. The singleton lift (Pmid Qmid{x}) lies in the three-cover repartition graph. Write
-[
-Phi(R_1mid R_2mid R_3)=|R_1|^2+|R_2|^2+|R_3|^2.
-]
+Let \(H\) be a minimum counterexample and let \(H-x=P\mid Q\) be a deletion cover. Its singleton lift \(P\mid Q\mid\{x\}\) lies in the three-cover repartition graph. Write
+\[
+\Phi(R_1\mid R_2\mid R_3)=|R_1|^2+|R_2|^2+|R_3|^2.
+\]
 
 ### 1. Descent from the singleton lift
 
-By [[toolkit_lift_strictly_descends_to_a_rooted_three_vertex_component]], one pairwise repartition strictly decreases (Phi) and places the deleted label (x) in a Hamiltonian three-support (T). Thus every deletion-cover component contains a state in which the distinguished label lies in a bounded nontrivial support.
-
-Let (Tmid C) be two displayed components with (|T|=3) and (C=(c_1,ldots,c_m)). If (mge6), [[three_vertex_component_long_neighbor_rotation01]] gives a strict decrease. At (m=5), direct Hamiltonian enlargement to order four is still strict, while failure of both endpoint enlargements forces the neutral rotation
-[
-3mid5longrightarrow5mid3.
-]
+The singleton-lift descent proved in the next subsection gives a pairwise repartition that strictly decreases \(\Phi\) and places \(x\) in a Hamiltonian three-support \(T\). If another component has order at least six, the three-component long-neighbor lemma gives further strict descent. If another component has order five, the balanced-cover proposition gives a \(4|4\) repartition of its union with \(T\), decreasing \(\Phi\) by two. The root remains in the union, although its containing component may change.
 
 ### 2. Quadratic-minimal states with a three-support
 
-Suppose a spanning three-cover is (Phi)-minimal in its repartition component and has a component of order three. By [[toolkit_a_phi_minimum_containing_a_three_path_has_order_at_most_thirteen]], its size multiset is one of
-[
-{3,3,5},qquad {3,4,4},qquad {3,4,5},qquad {3,5,5}.
-]
+A spanning three-cover minimizing \(\Phi\) in its repartition component has no components of order one or two. If it contains a three-component, the preceding descents exclude all other orders at least five. Since \(|V(H)|>10\), its profile is exactly \(3|4|4\), and \(|V(H)|=11\).
 
-For a (3mid4) pair, [[toolkit_34_pair_gives_a_neutral_endpoint_swap_or_a_controlled_52_detour]] gives either the neutral swap (3mid4	o4mid3) or a controlled (5mid2) detour. For a (3mid5) pair, [[toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set]] produces a complementary non-Hamiltonian matching-block four-set. Its local order is sharpened by [[toolkit_gives_an_interior_end_edge_reversal_or_a_central_sandwich]] to an interior end-edge reversal or a central sandwich. Two neutral (3mid5) rotations perform the two-for-two support exchange of [[toolkit_35_rotations_perform_a_controlled_two_for_two_support_exchange]].
-
-The four size profiles have the following global consequences.
-
-- In profile (3mid3mid5), [[toolkit_minimal_335_state_forces_a_cross_side_hamiltonian_five_support]] gives a Hamiltonian five-support meeting both three-sides and the interior triple of the five-side.
-- In profile (3mid4mid4), [[toolkit_a_neutral_swap_an_order_disagreement_or_a_common_terminal_pair]] gives a neutral swap, an order disagreement, or a common terminal pair for two controlled Hamiltonian five-paths.
-- In profile (3mid4mid5), [[toolkit_phi_minimal_345_state_has_a_nontrivial_neutral_reconfiguration]] gives a nontrivial equal-(Phi) reconfiguration.
-- In profile (3mid5mid5), [[minimal_355_profile_has_a_neutral_cycle01]] shows that the three-side has distinct neutral rotations with both five-sides. Hence the equal-(Phi) state graph has minimum degree at least two and contains a nontrivial cycle.
-
-Thus every (Phi)-minimal state containing a three-support carries a bounded support, an order disturbance, or explicit neutral recurrence.
+The \(3|4\) analysis in the next subsection gives a neutral endpoint swap or a controlled \(5|2\) detour. The specialized \(3|4|4\) result gives a neutral swap, an order disagreement, or a common terminal pair for two controlled Hamiltonian five-paths. Profiles containing both orders three and five cannot occur at a quadratic minimum.
 
 ### 3. Rooted four-supports
 
-Let (X) be a Hamiltonian four-support containing the distinguished root, and let (C) be a disjoint tight path of order at least six. By [[four_path_long_pair_escape01]], one of the following occurs:
+Let \(X\) be a Hamiltonian four-support containing the distinguished root, and let \(C=(c_1,\ldots,c_m)\) be a disjoint displayed tight path. If \(m=6\), the balanced-cover proposition gives a strict \(4|6\longrightarrow5|5\) repartition, with change \(-2\) in \(\Phi\). If \(m\ge7\), the four-path long-pair lemma gives strict descent or a non-Hamiltonian endpoint six-set \(X\cup\{c_1,c_m\}\) whose Hamiltonian five-deletions exhibit an order disagreement.
 
-1. (Xmid C) admits a two-path repartition with strictly smaller quadratic contribution;
-2. the endpoint six-set (Xcup{c_1,c_m}) is non-Hamiltonian and Hamiltonian five-vertex deletions exhibit an order disagreement;
-3. (m=6), the endpoint six-set is Hamiltonian, and there is a neutral rooted migration
-[
-4mid6longrightarrow6mid4.
-]
-
-Consequently, at a quadratic minimum, a rooted four-support beside a path of order at least seven forces an order disagreement.
+Consequently a quadratic minimum containing a four-component either has profile \(3|4|4\), exhibits that endpoint order disagreement, or has profile \(4|4|4\), \(4|4|5\), or \(4|5|5\). In the last alternative its order is at most fourteen.
 
 ### 4. Rooted five-supports
 
@@ -93,6 +64,23 @@ Thus rooted descent from a deletion-cover lift remains controlled through suppor
 
 ## From bounded supports to defect compression
 
+### Balanced covers on eight and ten vertices force strict quadratic descent
+
+**Proposition.** Every eight-vertex set in a boundary tournament has at least seven unordered partitions into two Hamiltonian four-sets. Every ten-vertex set has at least forty-two unordered partitions into two Hamiltonian five-sets. Consequently every displayed pair of orders \(3|5\) or \(4|6\) admits a pairwise repartition decreasing \(\Phi\) by two. Neither pair can occur in a three-cover minimizing \(\Phi\) in its pairwise-repartition component.
+
+**Proof.** First, every five-set has at least three Hamiltonian four-subsets; this also follows from [[independence_number_at_most_two_in_every_boundary_tournament]]. For completeness, suppose three four-subsets were non-Hamiltonian. Their omitted vertices are distinct, say \(x,y,z\), and their common pair is \(\{u,v\}\). Among \(x,y,z\), two, say \(a,b\), have the same orientation through this pair. Interchanging \(u,v\) if necessary, both \((u,a,v)\) and \((u,b,v)\) are tight. Exactly one of \((a,v,b)\) and \((b,v,a)\) is tight. Accordingly either \((u,a,v,b)\) or \((u,b,v,a)\) is a Hamilton order on \(\{u,v,a,b\}\), contradicting one of the three assumed non-Hamiltonian four-subsets.
+
+On an eight-set, count incidences between a Hamiltonian four-set and a containing five-set. Each of the \(56\) five-sets contributes at least three incidences, while each four-set lies in four five-sets. Thus there are at least \(42\) Hamiltonian four-sets. The \(70\) four-sets form \(35\) complementary pairs. If \(p\) pairs have both members Hamiltonian, there are at most \(35+p\) Hamiltonian four-sets, so \(p\ge7\).
+
+By [[smallset01]], every six-set has at least four Hamiltonian five-subsets. On a ten-set there are \(210\) six-sets, and each five-set lies in five six-sets. The same incidence count gives at least \(168\) Hamiltonian five-sets. The \(252\) five-sets form \(126\) complementary pairs. Hence at least \(168-126=42\) pairs have both members Hamiltonian.
+
+Apply these conclusions to the union of the two displayed components. Replacing \(3|5\) by \(4|4\), or \(4|6\) by \(5|5\), gives respectively
+\[
+2\cdot4^2-(3^2+5^2)=-2,\qquad
+2\cdot5^2-(4^2+6^2)=-2.
+\]
+The third component is fixed, so each replacement is one legal edge of the pairwise-repartition graph. This contradicts minimality of \(\Phi\). No endpoint condition or preservation of the old path orders is required. \(\square\)
+
 
 ### Prescribed-vertex reduction of a six-support
 
@@ -116,15 +104,7 @@ Thus the six-support stage has only two essential outputs:
 
 ### The four-support size constraint
 
-The same local machinery gives a global size restriction. By A quadratic minimum containing a four-support is small or has an order disagreement, if a quadratic-minimal state contains a component of order four, then either it already belongs to the classified order-three regime, an order disagreement is present, or every component order lies in ({4,5,6}). In the last case the entire counterexample has order at most eighteen.
-
-Hence, before any defect-line argument is used, the rooted descent has already compressed the low-support regime into:
-- the classified order-three profiles;
-- an explicit order disagreement;
-- or one of six bounded size profiles with orders between four and six.
-
-The bounded four-support analysis below now classifies all six profiles with component orders in \(\{4,5,6\}\). The profiles \(4|4|5\), \(4|5|5\), and \(4|4|4\) have forced neutral recurrence, while each of \(4|4|6\), \(4|5|6\), and \(4|6|6\) either exposes an order disagreement or has forced neutral recurrence. Thus no bounded four-support size profile remains as an unstructured residue.
-
+Balanced covers exclude \(3|5\) and \(4|6\) at every quadratic minimum. The classification below therefore gives exactly \(3|4|4\) when a three-component is present. If a four-component is present but no three-component is present, either an endpoint six-set has Hamiltonian five-deletions with an order disagreement, or the profile is \(4|4|4\), \(4|4|5\), or \(4|5|5\). In the latter alternative the order is at most fourteen. These are conditional restrictions on minima containing a small component, not an upper bound for every minimum counterexample.
 
 ## Route lemmas consolidated from the Toolkit
 
@@ -154,7 +134,7 @@ Assume none of outcomes (1)-(3) occurs. Fix distinct leaves r_i,r_j. Apply three
 
 ### A two-vertex middle path forces an endpoint-reversal pattern
 
-**Statement.** Let H be a boundary tournament with pc(H)>=3. Let A=(a_1,...,a_r), C=(c_1,...,c_s) be tight paths with r,s>=2, and let u,v be distinct vertices outside A union C such that A|(u,v)|C is a spanning three-cover. Put L={z in {u,v} : (a_{r-1},a_r,z) is tight} and R={z in {u,v} : (z,c_1,c_2) is tight}. Then there are no distinct z,w in {u,v} with z in L and w in R. Hence exactly one of the following holds: (i) L is empty, so both (u,a_r,a_{r-1}) and (v,a_r,a_{r-1}) are tight; (ii) R is empty, so both (c_2,c_1,u) and (c_2,c_1,v) are tight; (iii) L=R={z} for some z in {u,v}, and for the other vertex w both (w,a_r,a_{r-1}) and (c_2,c_1,w) are tight.
+**Statement.** Let H be a boundary tournament with pc(H)>=3. Let A=(a_1,...,a_r), C=(c_1,...,c_s) be tight paths with r,s>=2, and let u,v be distinct vertices outside A union C such that A|(u,v)|C is a spanning three-cover. Put L={z in {u,v} : (a_{r-1},a_r,z) is tight} and R={z in {u,v} : (z,c_1,c_2) is tight}. Then there are no distinct z,w in {u,v} with z in L and w in R. Hence at least one of the following holds: (i) L is empty, so both (u,a_r,a_{r-1}) and (v,a_r,a_{r-1}) are tight; (ii) R is empty, so both (c_2,c_1,u) and (c_2,c_1,v) are tight; (iii) L=R={z} for some z in {u,v}, and for the other vertex w both (w,a_r,a_{r-1}) and (c_2,c_1,w) are tight.
 
 Let A=(a_1,...,a_r) and C=(c_1,...,c_s), where r,s>=2, and suppose A|(u,v)|C is a spanning three-cover of a boundary tournament H with pc(H)>=3.
 
@@ -353,17 +333,13 @@ Phi_new-Phi_old
 
 Thus every deletion-cover singleton lift admits a one-step strict quadratic descent to a three-cover in which the deleted label x lies in a three-vertex component together with two consecutive vertices taken from an endpoint of one displayed deletion-cover path. The terminal pair (r_{r-1},r_r) gives the symmetric construction.
 
-### A Phi-minimum containing a three-path has order at most thirteen
+### A Phi-minimum containing a three-path has profile 3|4|4
 
-**Statement.** Let H be a minimum counterexample and let C be a spanning three-cover minimizing Phi in its pairwise-repartition component. If one component of C has order three, then |V(H)|<=13. More precisely, the size multiset of C is one of {3,3,5}, {3,4,4}, {3,4,5}, {3,5,5}.
+**Statement.** Let \(H\) be a minimum counterexample and let \(\mathcal C\) be a spanning three-cover minimizing \(\Phi\) in its pairwise-repartition component. If one component has order three, then \(|V(H)|=11\) and its component orders are \(3|4|4\).
 
-By toolkit_minimal_three_covers_have_no_components_of_order_one_or_two, every component of C has order at least three. Let one component T have order three. By three_vertex_component_long_neighbor_rotation01, T cannot sit beside a path of order at least six in a Phi-minimal state. Therefore each of the other two components has order at most five.
+**Proof.** The preceding no-small-component result excludes orders one and two. The long-neighbor descent proved above excludes every component of order at least six beside the three-component. The balanced-cover proposition excludes order five as well. Thus the other orders \(a,b\) lie in \(\{3,4\}\). Since [[mincex01]] gives \(|V(H)|>10\), the inequality \(3+a+b>10\) forces \(a=b=4\). \(\square\)
 
-Hence |V(H)|<=3+5+5=13. On the other hand mincex01 gives |V(H)|>10. Writing the other two component orders as 3<=a<=b<=5 and requiring 3+a+b>10 leaves exactly
-
-(3,3,5), (3,4,4), (3,4,5), (3,5,5).
-
-Thus every Phi-minimal state of order at least fourteen has all three component orders at least four, and the entire three-component residue is confined to these four bounded profiles.
+In particular every such minimum on at least twelve vertices has all component orders at least four. The former profiles \(3|3|5\), \(3|4|5\), and \(3|5|5\) are excluded by a single strict pairwise repartition; their conditional neutral-rotation analyses below have no instances at a quadratic minimum.
 
 ### A rooted five-side has a root-preserving common endpoint core or a two-pair root-exchange split
 
@@ -588,9 +564,13 @@ Fix a Hamilton path on U. At least one endpoint differs from the prescribed vert
 
 ### A quadratic minimum containing a four-support is small or has an order disagreement
 
-**Statement.** Let H be a minimum counterexample and let C=P_1|P_2|P_3 be Phi-minimal in its pairwise-repartition component. Suppose some component has order four. Then at least one of the following holds: (1) C has a component of order three, hence |V(H)|<=13 and its size multiset is one of {3,3,5},{3,4,4},{3,4,5},{3,5,5}; (2) for the four-component X and some other displayed path P, the endpoint six-set of four_path_long_pair_escape01 has Hamiltonian five-vertex deletions with an order disagreement; (3) every component order belongs to {4,5,6}, so |V(H)|<=18 and the size multiset is one of {4,4,4},{4,4,5},{4,4,6},{4,5,5},{4,5,6},{4,6,6}.
+**Statement.** Let \(H\) be a minimum counterexample and let \(\mathcal C\) be a spanning three-cover minimizing \(\Phi\) in its pairwise-repartition component. Suppose a component \(X\) has order four. Then at least one of the following holds:
 
-Let X be a displayed component of order four. If another component has order three, A Phi-minimum containing a three-path has order at most thirteen gives outcome (1). Assume therefore that the other two component orders are at least four. Let P be either of them, of order m. If m>=7, apply A four-path beside a path of order at least six descends, disagrees, or makes the unique neutral migration to X|P. Its strict-descent alternative contradicts Phi-minimality, and its neutral migration occurs only when m=6. Therefore the only possible outcome for m>=7 is the order-disagreement alternative. Hence, if no such disagreement occurs, both components other than X have order at most six. Since they have order at least four, every component order lies in {4,5,6}. The six displayed multisets and the bound |V(H)|<=18 follow immediately.
+1. The profile is \(3|4|4\).
+2. For another displayed path \(P=(p_1,\ldots,p_m)\), with \(m\ge7\), the endpoint six-set \(X\cup\{p_1,p_m\}\) is non-Hamiltonian and has Hamiltonian five-vertex deletions with an order disagreement.
+3. The profile is \(4|4|4\), \(4|4|5\), or \(4|5|5\), and hence \(|V(H)|\le14\).
+
+**Proof.** If a three-component is present, the preceding classification gives (1). Otherwise all components have order at least four. The balanced-cover proposition excludes any component of order six beside \(X\). If another component has order \(m\ge7\), apply the four-path long-pair result proved above. Its strict-descent alternative contradicts minimality, and its neutral alternative requires \(m=6\). Thus its endpoint six-set order-disagreement alternative gives (2). If no component has order at least seven, all orders are four or five. Since one order is four, the three listed profiles are exhaustive, and their largest sum is fourteen. \(\square\)
 
 ## Toolkit Limbo placement audit: route-local results
 
@@ -1010,32 +990,9 @@ For profile \(4|5|5\), apply the theorem separately to the four-side together wi
 Every equal-\(\Phi\) neighbor remains \(\Phi\)-minimal in the same repartition component and has the same size multiset. Hence every vertex in the finite graph of \(\Phi\)-minimal covers of either profile has degree at least two. Every finite simple graph of minimum degree at least two contains a cycle, and such a cycle has length at least three.
 
 
-### All mixed bounded four-support profiles give disagreement or neutral recurrence
+### Profiles containing both a four-component and a six-component strictly descend
 
-**Statement.** Let \(H\) be a minimum counterexample and let \(C\) be a spanning three-cover that is \(\Phi\)-minimal in its pairwise-repartition component. Suppose the component-size multiset is one of
-\[
-\{4,4,6\},\qquad \{4,5,6\},\qquad \{4,6,6\}.
-\]
-Then either some displayed \(4|6\) pair has an endpoint-six-set order disagreement, or \(C\) has at least two distinct nontrivial equal-\(\Phi\) pairwise-repartition neighbors. Consequently every connected component of the finite neutral-state graph on any one of these profiles either contains a state with such an order disagreement or contains a cycle of length at least three.
-
-For a displayed \(4|6\) pair, apply **A four-path beside a path of order at least six descends, disagrees, or makes the unique neutral migration**. Its strict-descent outcome is impossible at a \(\Phi\)-minimum. Hence every displayed \(4|6\) pair either has the stated order disagreement or admits the nontrivial neutral migration
-\[
-4|6\longrightarrow 6|4.
-\]
-
-For profile \(4|4|6\), there are two displayed \(4|6\) pairs. If neither carries an order disagreement, neutral migration on either pair gives a neighbor. These two neighbors are distinct because the first move leaves the second four-component fixed while changing the first four-component and the six-component, whereas the second move leaves the first four-component fixed.
-
-For profile \(4|6|6\), pair the unique four-component separately with each six-component. Again, absent an order disagreement, the two neutral migrations give distinct neighbors, one leaving each of the two six-components fixed in turn.
-
-For profile \(4|5|6\), the theorem **Every four-by-five pair has a nontrivial neutral repartition** gives one neutral neighbor by repartitioning the \(4|5\) pair and leaving the six-component fixed. Apply the \(4|6\) theorem to the other pair. If its order-disagreement outcome occurs we are done; otherwise its neutral migration gives a second neighbor, this time leaving the five-component fixed. The two neighbors are distinct.
-
-Every equal-\(\Phi\) neighbor remains \(\Phi\)-minimal and has the same size multiset. Thus, inside any connected component containing no order-disagreement state, every vertex has degree at least two. A finite simple graph of minimum degree at least two contains a cycle of length at least three.
-
-Combining this with the neutral-cycle results for \(4|4|5\) and \(4|5|5\), the sole bounded four-support profile not yet reduced to recurrence or an explicit order disturbance is
-\[
-4|4|4.
-\]
-
+Every displayed three-cover with component orders \(4|4|6\), \(4|5|6\), or \(4|6|6\) has a \(4|6\) pair. Replace that pair by a \(5|5\) cover supplied by the balanced-cover proposition, leaving the third path fixed. The change in \(\Phi\) is \(-2\). Consequently none of these profiles occurs at a quadratic minimum; no order-disagreement or neutral-recurrence analysis is required to exclude them.
 
 ### Every eight-set has at least seven complementary Hamiltonian four-pairs
 
@@ -1045,7 +1002,7 @@ Combining this with the neutral-cycle results for \(4|4|5\) and \(4|5|5\), the s
 \]
 at least seven pairs have both \(A\) and \(U-A\) Hamiltonian. Consequently, if \(A|B\) is any displayed two-path cover of an eight-set with \(|A|=|B|=4\), then the same eight-set has at least six other \(4|4\) two-path covers. Every such replacement is a nontrivial \(\Phi\)-neutral pairwise repartition.
 
-Let \(h\) be the number of Hamiltonian four-subsets of \(U\). By the density conclusion of [[smallset01]], every five-subset contains at least three Hamiltonian four-subsets, and therefore
+Let \(h\) be the number of Hamiltonian four-subsets of \(U\). By [[independence_number_at_most_two_in_every_boundary_tournament]], or the direct proof in the balanced-cover proposition above, every five-subset contains at least three Hamiltonian four-subsets, and therefore
 \[
 h\ge \frac35\binom84=42.
 \]
@@ -1343,17 +1300,90 @@ Combining this with the strict endpoint-transfer calculation for a (4|m) pair wi
 
 Hence every bounded profile with component orders in ({4,5,6}) reaches alternative (1) of the Remaining Lemma in Article III. The five-support alternative remains useful elsewhere, but it is no longer needed to dispatch the bounded four-support regime.
 
+### Adjacent component orders force a terminal-edge reversal in at most two neutral moves
+
+**Theorem.** Let \(r\ge2\), and let
+\[
+A=(a_1,\ldots,a_r),\qquad
+B=(b_1,\ldots,b_{r+1})
+\]
+be vertex-disjoint tight paths in a boundary tournament. Suppose their union is non-Hamiltonian. Within at most two pairwise repartitions of this union, each preserving the component-size multiset \(\{r,r+1\}\), one obtains displayed paths \(S,T\), of orders \(r,r+1\), respectively, and an endpoint \(t\) of \(T\) such that
+\[
+(t,s_r,s_{r-1})
+\]
+is tight, where \(S=(s_1,\ldots,s_r)\). Thus an endpoint of the longer path reverses the terminal edge of the shorter path. Every move preserves the quadratic contribution \(r^2+(r+1)^2\). In a larger cover, every component outside this union remains unchanged.
+
+**Proof.** If \((b_1,a_r,a_{r-1})\) is tight, take \(S=A\), \(T=B\), and \(t=b_1\), with no move.
+
+Otherwise boundary reversal gives \((a_{r-1},a_r,b_1)\) tight. Hence
+\[
+R=(a_1,\ldots,a_r,b_1),\qquad
+S=(b_2,\ldots,b_{r+1})
+\]
+are tight paths of orders \(r+1,r\). Replacing \(A\mid B\) by \(R\mid S\) is one neutral pairwise repartition. If
+\[
+(a_1,b_{r+1},b_r)
+\]
+is tight, the terminal edge of \(S\) is reversed through the initial endpoint \(a_1\) of \(R\), and the conclusion follows after one move.
+
+Otherwise \((b_r,b_{r+1},a_1)\) is tight. Therefore
+\[
+T=(b_2,\ldots,b_{r+1},a_1),\qquad
+Y=(a_2,\ldots,a_r,b_1)
+\]
+are tight paths of orders \(r+1,r\). The path \(Y\) is an inherited suffix of \(R\). Replacing \(R\mid S\) by \(Y\mid T\) is a second neutral pairwise repartition.
+
+The triple \((b_2,b_1,a_r)\) must be tight. If it were non-tight, boundary reversal would give \((a_r,b_1,b_2)\) tight. Together with the already established \((a_{r-1},a_r,b_1)\), these are precisely the two junction triples required to make
+\[
+(a_1,\ldots,a_r,b_1,\ldots,b_{r+1})
+\]
+a Hamilton path on the original union, contrary to hypothesis. Thus \((b_2,b_1,a_r)\) reverses the terminal edge of \(Y\) through the initial endpoint \(b_2\) of \(T\). This proves the theorem, including \(r=2\), when the inherited two-vertex paths are tight vacuously. \(\square\)
+
+**Corollary.** In any spanning three-cover of a boundary tournament with path-cover number at least three, a displayed pair of component orders \(r,r+1\), with \(r\ge2\), admits the preceding two-move conclusion. Its union is non-Hamiltonian, since a Hamilton path on the union together with the unchanged third component would give a two-cover.
+
+The four-by-five result is the case \(r=4\). The same mechanism applies directly to adjacent component orders in the equitable profiles \(\{r+1,r,r\}\) and \(\{r+1,r+1,r\}\). It produces positioned terminal-edge data within the original repartition component, without requiring minimum-counterexample hypotheses or quadratic minimality. The theorem establishes a local reversal; converting that reversal into a two-cover or strict descent remains the separate global problem.
+
+### Unequal equitable three-covers carry two simultaneous endpoint reversals
+
+**Theorem.** Let \(H\) be a boundary tournament with \(\operatorname{pc}(H)\ge3\), and let \(C\) be a spanning three-cover. Suppose, for some integer \(r\ge2\), its component-size multiset is
+\[
+\{r,r,r+1\}\quad\text{or}\quad\{r,r+1,r+1\}.
+\]
+Within at most two pairwise repartitions, all preserving that size multiset and the quadratic potential, one reaches a three-cover with external end-edge reversals on two distinct displayed paths. In the first profile the two reversed paths both have order \(r\). In the second profile their orders are \(r\) and \(r+1\). One of the two reversed paths remains fixed throughout the construction, together with its original reversing triple. The second reversal is of the terminal edge of an order-\(r\) path through an endpoint of the other, order-\(r+1\), path in the repartitioned pair.
+
+**Proof.** Let \(E=(e_1,\ldots,e_k)\) and \(F=(f_1,\ldots,f_k)\) be the two displayed components of equal order, where \(k=r\) in the first profile and \(k=r+1\) in the second. Their union is non-Hamiltonian: otherwise a Hamilton path on that union together with the third component would give a two-cover of \(H\).
+
+Consider the concatenated order \(E,F\). Its internal triples are tight, so at least one of its two junction triples
+\[
+(e_{k-1},e_k,f_1),\qquad(e_k,f_1,f_2)
+\]
+is non-tight. Boundary reversal therefore gives at least one of
+\[
+(f_1,e_k,e_{k-1}),\qquad(f_2,f_1,e_k)
+\]
+tight. Choose one such triple. It reverses an end edge of one equal-order component through an endpoint of the other. Call the reversed component \(A\), and retain its displayed order unchanged.
+
+The other two components now have orders \(r,r+1\). Their union is again non-Hamiltonian, since its Hamiltonicity would combine with the fixed path \(A\) to two-cover \(H\). Apply the preceding adjacent-component-orders theorem to this pair. It uses at most two neutral pairwise repartitions and produces a terminal-edge reversal on its order-\(r\) path through an endpoint of its order-\(r+1\) path.
+
+During these moves, \(A\) and its end edge remain unchanged. The vertex supplying the first reversal remains outside \(A\), although it may move between the other two supports. Thus the original reversing triple survives. The new reversed order-\(r\) path is different from \(A\), so both certificates hold simultaneously. The component orders stated in the theorem follow from the choice of the equal-order pair. \(\square\)
+
+**Corollary (the terminal \(3|4|4\) profile).** Every spanning \(3|4|4\) three-cover of a boundary tournament with path-cover number at least three reaches, within at most two neutral pairwise repartitions, a state in which both the displayed three-path and one displayed four-path have externally reversed end edges. The four-path and its original reversing triple can be held fixed throughout.
+
+Indeed, apply the theorem with \(r=3\) and the second profile. No reversal hypothesis on the starting state, minimum-counterexample assumption, or quadratic-minimality assumption is needed.
+
+This strengthens persistence at the terminal profile into simultaneous positional information on two different component supports. It does not assert that either reversal can be inserted into a Hamilton order on the same support, nor that the two certificates alone imply a two-cover.
+
 
 ## Metadata
 
 - ID: line_rooted_small_support_descent_from_deletion_cover_lifts
 - Kind: section
-- Version: 23
-- Math version: 19
+- Version: 28
+- Math version: 24
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — crystallized, version 7: Rooted descent through bounded supports
-- Subsection 2 — HOT, version 17: From bounded supports to defect compression
+- Subsection 1 — crystallized, version 8: Rooted descent through bounded supports
+- Subsection 2 — HOT, version 21: From bounded supports to defect compression

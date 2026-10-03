@@ -10,5 +10,5 @@ When target_revision materially exceeds the artifact snapshot revision, use arti
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
-Snapshot revision: 430
-Generated: 2026-10-03T21:01:24.902738+00:00
+Snapshot revision: 527
+Generated: 2026-10-03T23:06:25.680521+00:00

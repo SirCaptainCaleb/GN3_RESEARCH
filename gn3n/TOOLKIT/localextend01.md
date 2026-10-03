@@ -697,12 +697,272 @@ Apply the prescribed-removable-vertex theorem from the edge-ordered comparison m
 
 Increasing paths in the representing edge order are exactly tight paths of the induced boundary tournament, so the conclusions translate directly. ∎
 
+# Prescribed exterior vertices can be exposed at a Hamiltonian endpoint
+
+## Lemma
+
+Let \(H\) be a boundary tournament. Let \((a,b,c)\) be a tight three-vertex path, and let \(d,y\) be two further distinct vertices. Then some subset
+\[
+S\subseteq \{a,b,c,d,y\},
+\qquad
+4\le |S|\le5,
+\qquad
+y\in S,
+\]
+has a Hamiltonian tight path with \(y\) as an endpoint.
+
+Equivalently, a prescribed exterior vertex of a tight triple always lies at the end of a Hamiltonian four- or five-support using only one additional exterior vertex.
+
+## Proof
+
+Suppose, for contradiction, that no four- or five-vertex subset of
+\[
+\{a,b,c,d,y\}
+\]
+containing \(y\) has a Hamilton path with endpoint \(y\).
+
+Exactly one of
+\[
+(c,a,d),\qquad(d,a,c)
+\]
+is tight.
+
+Assume first that \((c,a,d)\) is tight. Since the four-vertex orders
+\[
+(c,a,d,y),\qquad (y,c,a,d)
+\]
+are not Hamiltonian, boundary antisymmetry gives
+\[
+(y,d,a),\qquad(a,c,y)
+\]
+tight. The non-Hamiltonicity of
+\[
+(b,a,c,y)
+\]
+then forces
+\[
+(c,a,b)
+\]
+tight, and the non-Hamiltonicity of
+\[
+(c,a,b,y)
+\]
+forces
+\[
+(y,b,a)
+\]
+tight.
+
+Now consider
+\[
+(y,d,a,b,c).
+\]
+Its first and third consecutive triples, \((y,d,a)\) and \((a,b,c)\), are tight. By hypothesis this cannot be a Hamilton path with endpoint \(y\), so \((d,a,b)\) is non-tight. Hence
+\[
+(b,a,d)
+\]
+is tight. But then
+\[
+(y,b,a,d)
+\]
+is a Hamilton four-path with endpoint \(y\), a contradiction.
+
+Assume instead that \((d,a,c)\) is tight. The non-Hamiltonicity of
+\[
+(d,a,c,y),\qquad(y,d,a,c)
+\]
+forces respectively
+\[
+(y,c,a),\qquad(a,d,y)
+\]
+tight. The orders
+\[
+(b,a,d,y),\qquad(d,a,b,y)
+\]
+then force
+\[
+(d,a,b),\qquad(y,b,a)
+\]
+tight. Finally the non-Hamiltonicity of
+\[
+(y,b,a,c)
+\]
+forces
+\[
+(c,a,b)
+\]
+tight. Therefore
+\[
+(y,c,a,b)
+\]
+is a Hamilton four-path with endpoint \(y\), again a contradiction.
+
+Thus the required Hamiltonian four- or five-support exists. \(\square\)
+
+## Minimum-counterexample consequence
+
+If \(H\) is a minimum counterexample and the support produced above is proper, then its complement is non-Hamiltonian with path-cover number two. Thus the lemma strengthens the usual mixed-support conclusion: the prescribed exterior label may be retained not merely in the support, but at an endpoint of a Hamilton order of that support.
+
+
+# Every three-by-four pair has at least two neutral decompositions
+
+## Lemma
+
+Let \(H\) be a boundary tournament, let \(T\) be a Hamiltonian three-set, and let
+\[
+C=(c_1,c_2,c_3,c_4)
+\]
+be a vertex-disjoint tight four-path. Then the seven-set
+\[
+U=T\cup V(C)
+\]
+has at least two distinct two-path covers with component orders \(4\) and \(3\) whose support partitions differ from \(T\mid C\).
+
+Consequently every \(3|4\) pair in a spanning three-cover has at least two distinct nontrivial \(\Phi\)-neutral pairwise repartitions.
+
+## Proof
+
+Consider the two endpoint extensions
+\[
+T\cup\{c_1\},
+\qquad
+T\cup\{c_4\}.
+\]
+
+If both are Hamiltonian, they immediately give two distinct \(4|3\) covers:
+\[
+(T\cup\{c_1\})\mid(c_2,c_3,c_4),
+\qquad
+(T\cup\{c_4\})\mid(c_1,c_2,c_3).
+\]
+
+Suppose exactly one is Hamiltonian; by symmetry let \(T\cup\{c_1\}\) be Hamiltonian and \(T\cup\{c_4\}\) non-Hamiltonian. The first set gives one neutral cover. Apply the prescribed-endpoint extension theorem above to the tight triple \(T\) and the exterior vertices \(c_1,c_4\), prescribing \(c_4\) as an endpoint. It gives a Hamiltonian support
+\[
+S\subseteq T\cup\{c_1,c_4\},
+\qquad
+4\le |S|\le5,
+\]
+with a Hamilton order ending at \(c_4\).
+
+If \(|S|=4\), then \(S\ne T\cup\{c_4\}\) because the latter is non-Hamiltonian. Hence \(S\) contains both \(c_1,c_4\) and two vertices of \(T\). Its complement in \(U\) consists of \(c_2,c_3\) and the remaining vertex of \(T\), hence is a Hamiltonian three-set. This gives a second \(4|3\) cover, distinct from the direct extension through \(c_1\).
+
+If \(|S|=5\), then \(S=T\cup\{c_1,c_4\}\). Let \(z\) be the endpoint of the displayed Hamilton path opposite \(c_4\). We cannot have \(z=c_1\), because deleting that endpoint would leave a Hamilton path on the assumed non-Hamiltonian four-set \(T\cup\{c_4\}\). Thus \(z\in T\). Deleting \(z\) leaves a Hamiltonian four-set containing \(c_1,c_4\), and its complement in \(U\) is the three-set \(\{z,c_2,c_3\}\). Again we obtain a second, distinct \(4|3\) cover.
+
+Finally suppose both endpoint extensions are non-Hamiltonian. The two-bad-four-extension theorem above makes
+\[
+F=T\cup\{c_1,c_4\}
+\]
+Hamiltonian. By the five-set theorem in [[smallset01]], a Hamiltonian five-set has at most three non-Hamiltonian four-subsets. Two of its four-subsets,
+\[
+T\cup\{c_1\},
+\qquad
+T\cup\{c_4\},
+\]
+are already non-Hamiltonian. Therefore at least two of the remaining three four-subsets
+\[
+F-\{t\},
+\qquad t\in T,
+\]
+are Hamiltonian. For each such \(t\), the complementary three-set in \(U\) is
+\[
+\{t,c_2,c_3\},
+\]
+which is Hamiltonian. The two good choices of \(t\) give two distinct \(4|3\) covers.
+
+Thus at least two distinct nontrivial neutral repartitions exist in every case. \(\square\)
+
+## Consequence for the terminal \(3|4|4\) profile
+
+Fix one displayed four-component \(A\) and repartition only the other \(3|4\) pair. The resulting graph of \(3+4\) decompositions of the fixed complementary seven-set has minimum degree at least two, hence every connected component contains a cycle.
+
+If an external end-edge reversal is carried by the fixed component \(A\) through a vertex of that seven-set, the exact same reversal certificate persists around the entire neutral cycle. Thus the terminal \(3|4|4\) regime contains genuine neutral recurrence even with the reversed four-path frozen.
+
+
+# Prescribed endpoints in seven-set four-plus-three covers
+
+## Theorem
+
+Let \(U\) be a seven-vertex subset of a boundary tournament and let \(w\in U\) be prescribed. Then \(U\) has a two-path cover
+\[
+K\mid R,
+\qquad |K|=4,\quad |R|=3,
+\]
+in which \(K\) has a Hamilton order with \(w\) as an endpoint.
+
+Moreover, as \(K\mid R\) varies over such covers, at least three distinct vertices of \(U-\{w\}\) occur as the path-neighbor of \(w\) in a Hamilton order of \(K\).
+
+## Proof
+
+Choose any four-set
+\[
+E=\{a,b,c,d\}\subseteq U-\{w\}.
+\]
+Order three of its vertices, say \((a,b,c)\), as a tight three-path. Apply the prescribed-endpoint extension theorem above to \((a,b,c)\) and the two exterior vertices \(d,w\). It gives a Hamiltonian support
+\[
+S\subseteq E\cup\{w\},
+\qquad
+4\le |S|\le5,
+\]
+with a Hamilton order having \(w\) as an endpoint.
+
+If \(|S|=4\), put \(K=S\). If \(|S|=5\), delete from the displayed Hamilton order the endpoint opposite \(w\). The remaining four vertices inherit a Hamilton order with \(w\) still at an endpoint; call the resulting support \(K\). In either case
+\[
+K\subseteq E\cup\{w\},
+\qquad |K|=4,
+\qquad w\in K.
+\]
+The complement
+\[
+R=U-K
+\]
+has order three and is therefore Hamiltonian. This proves the first assertion.
+
+For the neighbor statement, apply the first assertion once and let \(t_0\) be the resulting neighbor of \(w\). Now choose a four-set
+\[
+E_1\subseteq U-\{w,t_0\}.
+\]
+The same construction produces a \(w\)-endpoint Hamiltonian four-path whose neighbor \(t_1\) lies in \(E_1\), hence \(t_1\ne t_0\).
+
+Finally apply the construction to the unique four-set
+\[
+E_2=U-\{w,t_0,t_1\}.
+\]
+Its resulting \(w\)-neighbor \(t_2\) belongs to \(E_2\), so
+\[
+t_2\notin\{t_0,t_1\}.
+\]
+Thus at least three distinct path-neighbors of \(w\) occur. \(\square\)
+
+## Three-hook consequence
+
+Let \(a,w\) be two vertices outside a six-set containing three distinct labels \(t_1,t_2,t_3\), and suppose
+\[
+(a,w,t_i)
+\]
+is tight for \(i=1,2,3\). Then one of the following holds:
+
+1. for some \(i<j\), the four-set
+   \[
+   \{a,w,t_i,t_j\}
+   \]
+   is Hamiltonian;
+2. the five-set
+   \[
+   \{a,w,t_1,t_2,t_3\}
+   \]
+   is Hamiltonian.
+
+Indeed, if all three displayed four-sets were non-Hamiltonian and the five-set were also non-Hamiltonian, the non-Hamiltonian five-set theorem in [[smallset01]] would be violated, since such a five-set has at most one non-Hamiltonian four-subset.
+
+Thus three common hooks out of an ordered pair always create a Hamiltonian support of order four or five containing that ordered anchor pair.
+
+
 ## Metadata
 
 - ID: localextend01
 - Kind: toolkit
-- Version: 2
-- Math version: 1
+- Version: 5
+- Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
 - Toolkit status: Promoted
