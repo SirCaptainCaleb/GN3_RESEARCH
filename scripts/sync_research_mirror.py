@@ -145,7 +145,7 @@ Returns exact durable content for named objects, one bounded page at a time. Use
 Shows how one research object sits in the mathematical structure: direct premises and consumers, parent/child Research Lines, supersession links, referring Main Lines, and originating Brainstorm. Use it when following dependencies or deciding where new work belongs.
 
 ### `changes(since_revision := 0, until_revision := null, limit := 100)`
-Checks what changed after a known artifact/database revision without shipping the changed documents themselves. It returns policy/document events plus current Main Line and Research Line versions. Use it for startup freshness checks, then call `read()` only for manuscripts that actually changed.
+Checks what changed after a known artifact/database revision without shipping the changed documents themselves. It returns policy/document events plus current Main Line and Research Line versions. Use it for startup freshness checks. Continue from the artifact for matching manuscript versions; call `read()` for each manuscript whose live version is newer.
 
 ### `brainstorms(active_only := true)`
 Returns the compact Brainstorm collection, including seeds, status, and promotion targets. Use it to scan orthogonal ideas cheaply without searching full manuscript text.
@@ -310,11 +310,11 @@ def build(schema: str):
 
 Review startup_notices returned by boot().
 
-Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read MAIN_LINES/README.md and every listed Main Line last.
+Use the extracted artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read MAIN_LINES/README.md and every listed Main Line last.
 
-Choose a route and call changes(...) once using this artifact's snapshot revision as the freshness baseline. Read any changed Main Line or Research Line completely with read([id]), following next_cursor until complete=true. MANIFEST.json is only the compact snapshot/version record; there is no raw database dump in the artifact.
+Choose a route and call changes(...) once using this artifact's snapshot revision as the freshness baseline. Compare the chosen Main Line and Research Line versions with MANIFEST.json. Continue directly from the artifact for every matching version. For each manuscript whose live version is newer, read the current manuscript completely with read([id]), following next_cursor until complete=true, and use that refreshed manuscript as the local working copy.
 
-If the snapshot is substantially stale, refresh the artifact and call boot() again. Use artifact_help() for refresh instructions.
+When target_revision materially exceeds the artifact snapshot revision, use artifact_help() to refresh the artifact, call boot() again, and continue from the refreshed artifact.
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
