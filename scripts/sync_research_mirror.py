@@ -288,14 +288,43 @@ def build(schema: str):
     if not main_lines:
         index.append("No active Main Lines.")
     write(root / "MAIN_LINES" / "README.md", "\n".join(index))
+    main_by_id = {d["id"]: d for d in main_lines}
+    memberships_by_line: dict[str, list[dict[str, Any]]] = {}
+    for s in data["main_line_research_lines"]:
+        memberships_by_line.setdefault(s.get("research_line_id"), []).append(s)
+
+    research_line_index = [
+        "# Research Lines",
+        "",
+        "Research Lines are the section-sized mathematical manuscripts. Main Lines compile ordered mature Research Lines; standalone Research Lines remain active development routes.",
+        "",
+    ]
+    line_items = sorted(
+        [r for r in active_research if r.get("kind") == "line"],
+        key=lambda r: (r.get("title") or "").casefold(),
+    )
+    if line_items:
+        for r in line_items:
+            fn = safe_name(r["id"]) + ".md"
+            memberships = sorted(memberships_by_line.get(r["id"], []), key=lambda s: (s.get("main_line_id") or "", s.get("position") or 0))
+            if memberships:
+                where = "; ".join(
+                    f"{main_by_id.get(s.get('main_line_id'), {}).get('title') or s.get('main_line_id')} at position {s.get('position')}"
+                    for s in memberships
+                )
+                research_line_index.append(f"- [{r.get('title') or r['id']}]({fn}) (`{r['id']}`) — integrated: {where}")
+            else:
+                research_line_index.append(f"- [{r.get('title') or r['id']}]({fn}) (`{r['id']}`) — standalone development")
+    else:
+        research_line_index.append("No active Research Lines.")
+    write(root / "RESEARCH_LINES" / "README.md", "\n".join(research_line_index))
+
     for r in active_research:
         folder = "RESEARCH_LINES" if r.get("kind") == "line" else "TOOLKIT"
         write(
             root / folder / (safe_name(r["id"]) + ".md"),
             research_md(r, chunks_by_line.get(r["id"], []))
         )
-    if not any(r.get("kind") == "line" for r in active_research):
-        write(root / "RESEARCH_LINES" / "README.md", "# Research Lines\n\nNo active Research Lines.")
 
     toolkit_items = sorted(
         [r for r in active_research if r.get("kind") == "toolkit"],
