@@ -9,7 +9,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "linp")
-TABLES = ("documents","research","research_versions","dependencies","supersessions","brainstorms","dictionary")
+TABLES = ("documents","research","research_line_chunks","research_versions","dependencies","supersessions","brainstorms","dictionary")
 PAGE = 500
 
 def headers():
@@ -61,7 +61,7 @@ def safe_name(s: str) -> str:
 def doc_md(row: dict[str, Any]) -> str:
     return f"# {row.get('title') or row['id']}\n\n{row.get('body') or ''}"
 
-def research_md(row: dict[str, Any]) -> str:
+def research_md(row: dict[str, Any], chunks: list[dict[str, Any]] | None = None) -> str:
     bits = [f"# {row.get('title') or row['id']}"]
     if row.get("simplified_statement"):
         bits += ["", f"**Summary:** {row['simplified_statement']}"]
@@ -78,6 +78,18 @@ def research_md(row: dict[str, Any]) -> str:
              f"- Refutation: {row.get('refutation_status')}"]
     if row.get("parent_line_id"):
         bits.append(f"- Parent line: {row['parent_line_id']}")
+    if row.get("kind") == "line":
+        bits += ["", "## Authoring state", ""]
+        chunks = chunks or []
+        if not chunks:
+            bits.append("- No chunks recorded.")
+        else:
+            for c in sorted(chunks, key=lambda x: x.get("chunk_no") or 0):
+                state = "HOT" if c.get("state") == "hot" else "crystallized"
+                title = c.get("title") or "(untitled)"
+                bits.append(
+                    f"- Chunk {c.get('chunk_no')} — {state}, version {c.get('version')}: {title}"
+                )
     return "\n".join(bits)
 
 def dictionary_text(items: list[dict[str, Any]]) -> str:
@@ -135,9 +147,15 @@ def build(schema: str):
     write(root / "MAIN_LINES" / "README.md", "\n".join(index))
 
     active_research = [r for r in data["research"] if r.get("archived_at") is None]
+    chunks_by_line: dict[str, list[dict[str, Any]]] = {}
+    for c in data["research_line_chunks"]:
+        chunks_by_line.setdefault(c["line_id"], []).append(c)
     for r in active_research:
         folder = "RESEARCH_LINES" if r.get("kind") == "line" else "TOOLKIT"
-        write(root / folder / (safe_name(r["id"]) + ".md"), research_md(r))
+        write(
+            root / folder / (safe_name(r["id"]) + ".md"),
+            research_md(r, chunks_by_line.get(r["id"], []))
+        )
     if not any(r.get("kind") == "line" for r in active_research):
         write(root / "RESEARCH_LINES" / "README.md", "# Research Lines\n\nNo active Research Lines.")
     if not any(r.get("kind") == "toolkit" for r in active_research):
@@ -180,6 +198,8 @@ Publish only after substantial progress. Publication is a separate synchronizati
 - call commit_staged_batch(...) to commit the reviewed batch atomically.
 
 If shared state changes after review, commit will refuse and require a fresh overlap review.
+
+Research Lines are authored in crystallizing chunks. The line file reads as one assembled manuscript; its Authoring state footer identifies the single hot chunk and its version. Ordinary additions edit only that hot chunk with save_line_chunk(...). When the chunk becomes a coherent publication-style unit, freeze it with crystallize_line_chunk(...) and continue in the new hot chunk.
 
 After a substantial publication, reread the Research Line you are continuing before resuming work. This is the normal mathematical refresh point. Re-read a Main Line only when its version changed or its global relationship has materially shifted.
 
