@@ -22,8 +22,8 @@ Thus every pair except possibly {x,y} has the same state in R and S. Since R and
 
 - ID: pairdeletionreconstruct01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

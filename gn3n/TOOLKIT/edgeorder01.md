@@ -278,8 +278,8 @@ This is not a proof step toward the grand conjecture. It is a hardness/benchmark
 
 - ID: edgeorder01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

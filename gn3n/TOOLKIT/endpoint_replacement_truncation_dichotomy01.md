@@ -18,8 +18,8 @@ The endpoint-replacement formulation is only a corollary used by transport argum
 
 - ID: endpoint_replacement_truncation_dichotomy01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

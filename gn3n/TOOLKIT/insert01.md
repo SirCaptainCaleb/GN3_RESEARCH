@@ -193,8 +193,8 @@ Two left extensions of `(a,b)`, or two right extensions of `(a,b)`, do not by th
 
 - ID: insert01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

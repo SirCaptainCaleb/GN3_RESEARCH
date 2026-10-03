@@ -50,8 +50,8 @@ This toolkit abstracts the same mechanism appearing in pairwise repartition, bal
 
 - ID: quadraticpotential01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

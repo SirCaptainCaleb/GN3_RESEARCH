@@ -10,8 +10,8 @@ Reusable finite block-design facts, especially incidence, complement, and matchi
 
 - ID: finite_blockdesign_toolkit
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

@@ -1,13 +1,12 @@
-# External toolkit for structured lower-bound constructions
+# Structured lower-bound construction mechanisms
 
-**Summary:** External structural tools that can be ported into lower-bound constructions.
+Investigate which algebraic, antipodal, matching, or fixed-point mechanisms can produce dense linear 3-graphs whose long paths are globally obstructed.
 
-## Statement
+This material was moved out of Toolkit Limbo because it is a research program and source-collection plan, not a self-contained reusable mathematical utility.
 
-A curated toolkit for the LINP lower-bound program: edge-ordered path-suppressing constructions, antipodal cube obstructions, hypergraph Hall/Ryser matching machinery, and combinatorial fixed-point equivalences. Each child records a reusable statement, proof or proof architecture, source, and a LINP translation.
+Former statement:\nA curated toolkit for the LINP lower-bound program: edge-ordered path-suppressing constructions, antipodal cube obstructions, hypergraph Hall/Ryser matching machinery, and combinatorial fixed-point equivalences. Each child records a reusable statement, proof or proof architecture, source, and a LINP translation.
 
-## Body
-
+Former body:
 Purpose. The generic MPTS construction gives coefficient 1/3, so an improved lower construction must be both dense and deliberately path-resistant. This branch collects mechanisms that can impose global path obstructions from local algebraic, matching, or antipodal constraints. Sources are imported as mathematical tools, not as claims that they already solve LINP.
 
 Organization:
@@ -18,13 +17,3 @@ Organization:
 (5) A LINP translation sheet identifying concrete ways these tools can constrain candidate components or product/blow-up constructions.
 
 Proof-import policy. Short robust arguments are reproduced in paraphrased publication-quality form. Long finite case analyses and the technically heavy Wu--Yang radial-chain construction are not recopied; those nodes contain a proof map and an exact source link.
-
-## Metadata
-
-- ID: external_toolkit_for_structured_lowerbound_constructions
-- Kind: toolkit
-- Version: 3
-- Math version: 1
-- Audit: unaudited
-- Refutation: unrefuted
-- Toolkit status: Limbo

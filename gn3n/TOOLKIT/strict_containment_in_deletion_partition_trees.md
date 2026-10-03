@@ -60,8 +60,8 @@ The final path edge has odd index \(\ell\), so its label is absent from \(S_p\).
 
 - ID: strict_containment_in_deletion_partition_trees
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

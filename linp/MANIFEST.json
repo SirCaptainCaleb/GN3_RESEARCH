@@ -1,21 +1,21 @@
 {
-  "brainstorm_count": 0,
-  "generated_at": "2026-10-03T15:10:34.682804+00:00",
+  "brainstorm_count": 2,
+  "generated_at": "2026-10-03T15:29:14.104722+00:00",
   "main_line_versions": {
-    "linp_route01": 1,
-    "linp_route02": 1,
-    "linp_route03": 1,
-    "linp_route04": 1,
-    "linp_route05": 1,
-    "linp_route06": 1,
-    "linp_route07": 1,
-    "linp_route08": 1
+    "algebraic_and_steiner_constructions": 1,
+    "ascending_edges_in_a_dense_subgraph": 1,
+    "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": 2,
+    "incidence_rank_and_induced_paths_in_the_intersection_graph": 1,
+    "induction_on_the_complement_of_a_longest_path": 1,
+    "snake_accounting_and_the_43_48_equality_problem": 1,
+    "terminal_pair_cycles_and_rotations": 1,
+    "transversal_designs_latin_blowups_and_products": 1
   },
   "mirror_format": 8,
   "research_line_versions": {},
   "schema": "linp",
-  "snapshot_revision": 233,
-  "toolkit_limbo_count": 10,
+  "snapshot_revision": 308,
+  "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 0,
   "universal_document_versions": {
     "guide": 4,

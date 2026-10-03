@@ -53,8 +53,8 @@ Therefore n>10.
 
 - ID: mincex01
 - Kind: toolkit
-- Version: 5
+- Version: 6
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

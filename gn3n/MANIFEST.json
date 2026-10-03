@@ -1,13 +1,13 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T15:10:33.930405+00:00",
+  "generated_at": "2026-10-03T15:29:13.478701+00:00",
   "main_line_versions": {
     "defect_lines_and_spanningorder_compression": 4,
     "deletioncover_compatibility_and_global_obstruction_structure": 8,
-    "proof_rehearsal_index2_quadratic01": 2,
-    "proof_rehearsal_index4_endpoint_transport01": 1,
-    "proof_rehearsal_index5_longest_reversal01": 2,
-    "proof_rehearsal_index6_no_trapping01": 1
+    "endpoint_transport_and_small_support_gluing": 1,
+    "longest_paths_and_reversal_structure": 2,
+    "quadratic_potential_and_pairwise_repartition": 2,
+    "three_cover_repartitions_and_recurrence": 1
   },
   "mirror_format": 8,
   "research_line_versions": {
@@ -21,9 +21,9 @@
     }
   },
   "schema": "gn3n",
-  "snapshot_revision": 272,
-  "toolkit_limbo_count": 75,
-  "toolkit_promoted_count": 0,
+  "snapshot_revision": 295,
+  "toolkit_limbo_count": 54,
+  "toolkit_promoted_count": 21,
   "universal_document_versions": {
     "guide": 4,
     "reflexes": 1

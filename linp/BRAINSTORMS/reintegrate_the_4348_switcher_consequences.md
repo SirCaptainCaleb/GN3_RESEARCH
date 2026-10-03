@@ -1,10 +1,11 @@
-# Local one-eighth 0-1-1 extraction with source and terminal conditions
+# Reintegrate the 43/48 switcher consequences
 
-**Summary:** Local one-eighth 0-1-1 extraction with explicit source and terminal conditions.
+Reconstruct the dependency chain and terminology for the two route-local near-equality consequences formerly published in Toolkit Limbo, then integrate any surviving mathematics into the 43/48 route.
 
-## Statement
+These two results are route-local consequences of the 43/48 near-equality machinery rather than broadly reusable infrastructure. Their old bodies also cite legacy research IDs that are no longer present in the live corpus, so they are preserved here for reintegration rather than promoted or treated as current standalone Toolkit claims.
 
-Let (H_j) satisfy
+=== Local one-eighth extraction ===
+Statement:\nLet (H_j) satisfy
   S_j=sum_v phi(v),  S_j/n_j^+ -> infinity,
   |E(H_j)| >= (43/48)S_j-o(S_j),
 and choose maximum endpoint paths as in a57007500001.
@@ -24,8 +25,7 @@ is o(S_j).
 
 Thus the local one-eighth certified 0-1-1 degree survives without any endpoint-intersection premise, and every retained edge also carries the genuine common-reference switcher structure.
 
-## Body
-
+Body:
 Use the exact four-defect identity of a57007500001:
   6m = sum_v(4p_v-2+beta(p_v))
        -D-eta-2(A-C)-2U.
@@ -55,12 +55,35 @@ The epsilon consequence follows because every vertex with
   |G_v|<(1/8-epsilon)p_v
 contributes at least epsilon p_v to the positive-part sum.
 
-## Metadata
+=== Host-order lower bound for low-cost switcher states ===
+Statement:\nLet H be a finite linear 3-graph on n vertices and let v be an active misaligned vertex with p=phi(v). Suppose v is low-defect and its switcher-family source-potential mass is within o(p^2) of the generic 185/512 p^2 floor, in the asymptotic regime p->infinity.
 
-- ID: local_oneeighth_011_extraction_with_source_and_terminal_conditions
-- Kind: toolkit
-- Version: 3
-- Math version: 1
-- Audit: unaudited
-- Refutation: unrefuted
-- Toolkit status: Limbo
+Then
+  n >= (127/56-o(1))p.
+
+More explicitly, if U_v is the terminal-retained part of a switcher family and k=|U_v|, then
+  n >= 2p+1+k.
+Hence any estimate k>=(15/56-epsilon)p gives
+  n >= (127/56-epsilon)p+1.
+
+Therefore for every fixed epsilon>0, a sequence with
+  n <= (127/56-epsilon)p
+cannot realize the locally cheap post-43/48 switcher state at a vertex v with p=phi(v); such a center must instead pay a fixed positive quadratic gain in switcher-source potential over the generic 185/512 floor.
+
+Body:
+Let P be the chosen maximum p-edge path ending at v. A linear 3-uniform p-edge path has exactly
+  |V(P)|=2p+1
+vertices.
+
+Every terminal-retained switcher e={x,v,u} has its unique entrance x omitted from P by definition. Distinct switchers through v have distinct entrances: two distinct hyperedges already share v, so sharing an entrance x would violate linearity. Thus the k terminal-retained switchers supply k distinct vertices outside V(P). Consequently
+  n>=|V(P)|+k=2p+1+k.                                  (1)
+
+Now assume the local switcher-source mass is within o(p^2) of the generic 185/512 p^2 floor. By 1bab77ec4e49,
+  k >= (15/56-o(1))p.                                  (2)
+Substituting (2) into (1),
+  n >= 2p+1+(15/56-o(1))p
+    = (127/56-o(1))p.
+
+For the final contrapositive, fix epsilon>0. If n<=(127/56-epsilon)p for all sufficiently large p, then (1) implies
+  k <= (15/56-epsilon)p+O(1).
+Since the total switcher-family size is (5/8-o(1))p at a low-defect center, this places k a fixed positive fraction below the three-sevenths threshold of 1bab77ec4e49. That theorem then gives a fixed positive quadratic source-potential gain over 185/512 p^2.

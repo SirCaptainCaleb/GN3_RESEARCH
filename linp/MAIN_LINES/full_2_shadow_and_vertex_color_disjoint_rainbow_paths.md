@@ -155,6 +155,10 @@ which is (9). ∎
 
 Even the ideal value \(\alpha=1\) gives only the two-thirds coefficient. Therefore the one-third problem cannot be solved by discarding the triangle rule (4) and applying a general rainbow-path theorem.
 
+### Degree bookkeeping across the shadow reduction
+
+The hypergraph degree and the degree in a retained properly edge-colored shadow graph are separate quantities. Equation (3) gives d_G(v)=2d_H(v) only for the full shadow G. After passing to a retained graph J, or to a further graph-side core, a rainbow-path theorem whose hypothesis is stated in terms of minimum graph degree must be applied using the degree in that graph, not d_H. Conversely, a hypergraph-side minimum-degree hypothesis remains available for hypergraph peeling, attachment, or special-edge arguments. The two degree conditions serve different parts of the proof and should be tracked simultaneously rather than identified.
+
 ## 4. A source-oriented representation
 
 A second representation keeps one distinguished vertex of every hyperedge.

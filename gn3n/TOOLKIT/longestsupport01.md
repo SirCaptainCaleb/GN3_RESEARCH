@@ -12,8 +12,8 @@ Organizational Toolkit subnode for reusable longest-path support and exchange ma
 
 - ID: longestsupport01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

@@ -22,8 +22,8 @@ For the five-set corollary, take W=F-{L,R}, which has three vertices. Hence some
 
 - ID: independence_number_at_most_two_in_every_boundary_tournament
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted
