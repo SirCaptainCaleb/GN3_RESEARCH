@@ -495,41 +495,41 @@ Suppose for contradiction that the five-set
 `X={u,v,a,b,c}`
 is non-Hamiltonian. By the non-Hamiltonian-five-set theorem, `H[X]` has an edge-order representation. Write its strict edge order as `<`.
 
-The two tight triples for each shell vertex `s in {a,b,c}` give
+The two tight triples for each outer vertex `s in {a,b,c}` give
 `su < uv < vs`.
 
-We now inspect the three shell edges.
+We now inspect the three set edges.
 
-If there are distinct shell vertices `r,s` with
+If there are distinct outer vertices `r,s` with
 `vr < rs`,
-let `t` be the third shell vertex. Then
+let `t` be the third outer vertex. Then
 `tu < uv < vr < rs`,
 so
 `(t,u,v,r,s)`
 is an increasing Hamilton path, contradiction.
 
-Hence we may assume that for every distinct shell pair `r,s`,
+Hence we may assume that for every distinct set pair `r,s`,
 `rs < vr`.
 Interchanging the names `r,s` shows also
 `rs < vs`.
 
-Next, if there are distinct shell vertices `r,s` with
+Next, if there are distinct outer vertices `r,s` with
 `rs < su`,
-and `t` is the third shell vertex, then
+and `t` is the third outer vertex, then
 `rs < su < uv < vt`,
 so
 `(r,s,u,v,t)`
 is an increasing Hamilton path, contradiction.
 
-Hence we may also assume that for every distinct shell pair `r,s`,
+Hence we may also assume that for every distinct set pair `r,s`,
 `su < rs`.
 Again interchanging `r,s` gives
 `ru < rs`.
 
-Therefore every shell edge `rs` satisfies
+Therefore every set edge `rs` satisfies
 `ru,su < rs < vr,vs`.
 
-Among the three shell edges, choose two in increasing order. Since the shell is a triangle, they share a vertex, so after relabelling the shell vertices we have
+Among the three set edges, choose two in increasing order. Since the set is a triangle, they share a vertex, so after relabelling the outer vertices we have
 `ab < bc`.
 The preceding inequalities give
 `ua < ab < bc < cv`.

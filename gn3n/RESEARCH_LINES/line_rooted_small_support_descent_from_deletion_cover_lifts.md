@@ -52,8 +52,8 @@ Thus every (Phi)-minimal state containing a three-support carries a bounded supp
 Let (X) be a Hamiltonian four-support containing the distinguished root, and let (C) be a disjoint tight path of order at least six. By [[four_path_long_pair_escape01]], one of the following occurs:
 
 1. (Xmid C) admits a two-path repartition with strictly smaller quadratic contribution;
-2. the endpoint six-shell (Xcup{c_1,c_m}) is non-Hamiltonian and Hamiltonian five-vertex deletions exhibit an order disagreement;
-3. (m=6), the endpoint six-shell is Hamiltonian, and there is a neutral rooted migration
+2. the endpoint six-set (Xcup{c_1,c_m}) is non-Hamiltonian and Hamiltonian five-vertex deletions exhibit an order disagreement;
+3. (m=6), the endpoint six-set is Hamiltonian, and there is a neutral rooted migration
 [
 4mid6longrightarrow6mid4.
 ]
@@ -68,7 +68,7 @@ Let (X) be a Hamiltonian five-support containing the root and let (C=(c_1,ldots,
 ]
 with quadratic change (12-2m). This is neutral for (m=6) and strict for (mge7).
 
-Assume neither endpoint extends (X). By [[five_side_endpoint_core_m6_01]] and [[toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split]], either a common endpoint-replacement core preserves the root or the non-root vertices of (X) split into two endpoint-specific pairs. In the exceptional split, [[toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell]] yields a four-core order disagreement, a Hamiltonian four-set, a positioned core reversal, or a Hamiltonian six-shell.
+Assume neither endpoint extends (X). By [[five_side_endpoint_core_m6_01]] and [[toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split]], either a common endpoint-replacement core preserves the root or the non-root vertices of (X) split into two endpoint-specific pairs. In the exceptional split, [[toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_sixset]] yields a four-core order disagreement, a Hamiltonian four-set, a positioned core reversal, or a Hamiltonian six-set.
 
 Hence failure of numerical descent at support order five already produces a bounded order-theoretic obstruction or a rooted six-support.
 
@@ -98,11 +98,11 @@ Thus rooted descent from a deletion-cover lift remains controlled through suppor
 
 Let (U) be a proper Hamiltonian six-support whose complement is non-Hamiltonian of path-cover number two. By [[prescribed_vertex_six_to_five_retention01]], for every prescribed vertex (ain U) there is a Hamiltonian five-subset (Fsubset U), (ain F), such that (H-F) is again non-Hamiltonian with path-cover number two.
 
-Thus a positioned Hamiltonian six-shell need not be treated as a terminal object. Any distinguished vertex carried by it can be retained while the shell is reduced from order six to order five.
+Thus a positioned Hamiltonian six-set need not be treated as a terminal object. Any distinguished vertex carried by it can be retained while the set is reduced from order six to order five.
 
-In particular, the neutral (4mid6	o6mid4) migration from [[four_path_long_pair_escape01]] produces a Hamiltonian six-shell containing both displayed endpoints of the old six-path. Prescribing either endpoint yields a Hamiltonian five-support containing that endpoint with two-coverable complement.
+In particular, the neutral (4mid6	o6mid4) migration from [[four_path_long_pair_escape01]] produces a Hamiltonian six-set containing both displayed endpoints of the old six-path. Prescribing either endpoint yields a Hamiltonian five-support containing that endpoint with two-coverable complement.
 
-The same reduction applies to the Hamiltonian outer six-shell from [[toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell]] whenever a displayed extender vertex is to be retained.
+The same reduction applies to the Hamiltonian outer six-set from [[toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_sixset]] whenever a displayed extender vertex is to be retained.
 
 
 ### Six-support comparisons reduce to path disturbance
@@ -114,7 +114,7 @@ Thus the six-support stage has only two essential outputs:
 	ext{one-label transfer}qquad	ext{or}qquad	ext{path disturbance}.
 ]
 
-### The four-support size barrier
+### The four-support size constraint
 
 The same local machinery gives a global size restriction. By [[phi_minimum_with_four_support_is_small_or_disagrees01]], if a quadratic-minimal state contains a component of order four, then either it already belongs to the classified order-three regime, an order disagreement is present, or every component order lies in ({4,5,6}). In the last case the entire counterexample has order at most eighteen.
 
@@ -128,12 +128,12 @@ Hence, before any defect-line argument is used, the rooted descent has already c
 
 - ID: line_rooted_small_support_descent_from_deletion_cover_lifts
 - Kind: line
-- Version: 8
+- Version: 10
 - Math version: 7
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Chunk 1 — crystallized, version 6: Rooted descent through bounded supports
-- Chunk 2 — HOT, version 3: From bounded supports to defect compression
+- Chunk 1 — crystallized, version 7: Rooted descent through bounded supports
+- Chunk 2 — HOT, version 4: From bounded supports to defect compression

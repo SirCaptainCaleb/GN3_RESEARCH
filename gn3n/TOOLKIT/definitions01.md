@@ -27,13 +27,13 @@ Tightness is local to the displayed consecutive triples.
 
 Boundary antisymmetry reverses a **single failed triple**: if (x,y,z) is not tight, then (z,y,x) is tight. It does not reverse an entire path.
 
-Whenever a theorem below performs a rotation, concatenation, insertion, or replacement, the exact additional triples making that operation legal must be stated or checked.
+Whenever a theorem below performs a rotation, concatenation, insertion, or replacement, the additional triples making that operation legal must be stated or checked.
 
 ## Metadata
 
 - ID: definitions01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

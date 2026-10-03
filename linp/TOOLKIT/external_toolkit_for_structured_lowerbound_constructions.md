@@ -4,7 +4,7 @@
 
 ## Statement
 
-A curated toolkit for the LINP lower-bound program: edge-ordered path-suppressing constructions, antipodal cube obstructions, hypergraph Hall/Ryser matching machinery, and combinatorial fixed-point equivalences. Each child records an exact reusable statement, proof or proof architecture, source, and a LINP translation.
+A curated toolkit for the LINP lower-bound program: edge-ordered path-suppressing constructions, antipodal cube obstructions, hypergraph Hall/Ryser matching machinery, and combinatorial fixed-point equivalences. Each child records a reusable statement, proof or proof architecture, source, and a LINP translation.
 
 ## Body
 
@@ -12,8 +12,8 @@ Purpose. The generic MPTS construction gives coefficient 1/3, so an improved low
 
 Organization:
 (1) Calderbank--Chung--Sturtevant: algebraic edge orderings and projection arguments that cap monotone paths.
-(2) Norine antipodal-coloring toolkit: the clean component-to-rook-labeling reduction, early low-dimensional cube forcing, and a deliberately compressed map of the 2026 chain-level proof.
-(3) Aharoni--Haxell Hall theorem and the clean derivation of Ryser for 3-partite 3-graphs.
+(2) Norine antipodal-coloring toolkit: the component-to-rook-labeling reduction, early low-dimensional cube forcing, and a deliberately compressed map of the 2026 chain-level proof.
+(3) Aharoni--Haxell Hall theorem and the derivation of Ryser for 3-partite 3-graphs.
 (4) Sperner--Connector--Hex--Pouzet--Brouwer equivalence cycle, plus Tucker/Borsuk--Ulam.
 (5) A LINP translation sheet identifying concrete ways these tools can constrain candidate components or product/blow-up constructions.
 
@@ -23,7 +23,7 @@ Proof-import policy. Short robust arguments are reproduced in paraphrased public
 
 - ID: external_toolkit_for_structured_lowerbound_constructions
 - Kind: toolkit
-- Version: 1
+- Version: 3
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

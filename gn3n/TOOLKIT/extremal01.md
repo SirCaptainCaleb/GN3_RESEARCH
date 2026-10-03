@@ -4,7 +4,7 @@
 
 ## Statement
 
-Extremal Hamiltonicity toolkit: complementary finite-range and Johnson-degree density bounds for Hamiltonian five-sets, equality/regularity information, complement-free ten-set spectral bounds, fixed-pair extension structure, bad-six-set order/K4 overlap structure, exact and reconfigurable 5|5 structure at order ten, and terminal-pair rank counting.
+Extremal Hamiltonicity toolkit: complementary finite-range and Johnson-degree density bounds for Hamiltonian five-sets, equality/regularity information, complement-free ten-set spectral bounds, fixed-pair extension structure, bad-six-set order/K4 overlap structure, reconfigurable 5|5 structure at order ten, and terminal-pair rank counting.
 
 ## Body
 
@@ -304,7 +304,7 @@ For a fixed two-vertex support {r,s}, non-Hamiltonian four-vertex extensions are
 
 This explains the complete-bipartite exceptional pattern that can arise when attempting to rebalance a 5|5|2 cover by deleting one vertex from each five-side and adjoining the deleted pair to {r,s}. ∎
 
-# Rooted seven-set shell expansion
+# Rooted seven-set set expansion
 
 Let H be a boundary tournament. Let
 
@@ -386,13 +386,13 @@ Therefore k=6 and the displayed cycle is Hamiltonian.
 
 Taking alternate edges of a six-cycle gives a perfect matching. ∎
 
-## Shell-expansion interpretation
+## set-expansion interpretation
 
-This is a genuine shell-expansion statement. Even when every one-vertex replacement of a six-vertex support by y is non-Hamiltonian—as is possible by the known one-vertex-replacement counterexample—the next lower-order shell cannot remain sparse: the two-deletion five-shell around y contains at least nine Hamiltonian supports arranged around a Hamilton cycle.
+This is a genuine set-expansion statement. Even when every one-vertex replacement of a six-vertex support by y is non-Hamiltonian—as is possible by the known one-vertex-replacement counterexample—the next lower-order set cannot remain sparse: the two-deletion five-set around y contains at least nine Hamiltonian supports arranged around a Hamilton cycle.
 
-Thus complete failure of the first replacement shell forces structured abundance one layer deeper. This does not itself provide the complementary Hamiltonian support needed for a two-cover, but it supplies a concrete model for an augmenting-shell proof rather than a bounded-distance conjecture. ∎
+Thus complete failure of the first replacement set forces structured abundance one layer deeper. This does not itself provide the complementary Hamiltonian support needed for a two-cover, but it supplies a concrete model for an augmenting-set proof rather than a bounded-distance conjecture. ∎
 
-# Exact 5|5 structure at order ten
+# 5|5 structure at order ten
 
 Let `H` be a boundary tournament on ten vertices. Suppose
 `V(H)=A disjoint-union F`,
@@ -507,7 +507,7 @@ A general proof of the two-support-exchange conjecture could therefore follow fr
 
 Every boundary tournament on ten vertices admits a partition into two Hamiltonian five-sets.
 
-Consequently, if `H` is a minimum-order counterexample of order eleven, then for **every** vertex `x in V(H)` the deletion `H-x` has an exact equitable `5|5` two-cover. Equivalently, every vertex of `H` occurs as the singleton of a spanning `5|5|1` three-cover.
+Consequently, if `H` is a minimum-order counterexample of order eleven, then for **every** vertex `x in V(H)` the deletion `H-x` has an equitable `5|5` two-cover. Equivalently, every vertex of `H` occurs as the singleton of a spanning `5|5|1` three-cover.
 
 ## Proof
 
@@ -535,11 +535,11 @@ Apply the order-ten exchange theorem `the order-ten exchange theorem immediately
 
 such that both `X` and `Y` are Hamiltonian five-sets.
 
-Hence `X|Y` is an exact equitable `5|5` two-cover of `K`. ∎
+Hence `X|Y` is an equitable `5|5` two-cover of `K`. ∎
 
 Now let `H` be a minimum counterexample of order eleven and fix any vertex `x`.
 
-The proper induced subtournament `H-x` has order ten, so the theorem above gives an exact `5|5` cover of `H-x`.
+The proper induced subtournament `H-x` has order ten, so the theorem above gives an `5|5` cover of `H-x`.
 
 Since `x` was arbitrary, every vertex deletion is equitable `5|5`. Adding the singleton `(x)` yields a spanning `5|5|1` three-cover of `H` for every choice of singleton label. ∎
 
@@ -818,7 +818,7 @@ Let `H` be a hypothetical minimum counterexample of order eleven and let
 
 `H-x=P|Q`
 
-be an exact equitable `5|5` cover.
+be an equitable `5|5` cover.
 
 Put
 `R_P=V(P) union {x}`,
@@ -852,7 +852,7 @@ Set
 
 Then `C,D` are disjoint Hamiltonian four-sets, while the remaining three vertices are exactly `{p,q,x}`.
 
-Every three-vertex boundary tournament is Hamiltonian. Hence `H` has a spanning exact three-cover of component orders
+Every three-vertex boundary tournament is Hamiltonian. Hence `H` has a spanning three-cover of component orders
 
 `4|4|3`
 
@@ -908,7 +908,7 @@ For the stronger Johnson-degree density hierarchy, which improves these fixed-su
 
 - ID: extremal01
 - Kind: toolkit
-- Version: 1
+- Version: 3
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

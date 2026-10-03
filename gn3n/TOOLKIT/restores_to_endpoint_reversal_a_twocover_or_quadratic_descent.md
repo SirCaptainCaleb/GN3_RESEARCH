@@ -10,7 +10,7 @@ If K is nonempty, then S=(r_0,B,K) is tight. Hence L|S|D is a spanning cover; if
 
 If instead the mixed attachment is on the initial side of B, write L=A,a with a exterior and A possibly empty. Then either (a,r_0,r_1) is non-tight, in which case (r_1,r_0,a) is tight and explicitly reverses the displayed endpoint edge r_0r_1, or (a,r_0,r_1) is tight. In the latter case S=(a,r_0,B,K) is tight and A|S|D is spanning; if A is empty it is a two-cover, while for t=|A|>=1 the Phi change from C|D|{r_0} is -2(t-1)(|C|-t), so t=1 is neutral and t>=2 is a strict decrease.
 
-The terminal-end version is symmetric. Therefore an order-neutral one-block direct mixed crossing cannot remain diffuse: it produces an endpoint-edge reversal, a spanning two-cover, a neutral singleton transfer, or strict quadratic descent.
+The terminal-end version is symmetric. Therefore an order-neutral one-block direct mixed cut interaction cannot remain diffuse: it produces an endpoint-edge reversal, a spanning two-cover, a neutral singleton transfer, or strict quadratic descent.
 
 ## Body
 

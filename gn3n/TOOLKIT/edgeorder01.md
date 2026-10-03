@@ -172,7 +172,7 @@ For the second pair of covers, if `wy<xy`, then `(s_0,...,s_r,w,y,x)` is increas
 
 Combining the two sets of inequalities gives the final two increasing four-vertex paths. ∎
 
-## 5. Extreme two-vertex-component barriers in an edge-ordered three-cover
+## 5. Extreme two-vertex-component constraints in an edge-ordered three-cover
 
 Let `G` be an edge-ordered complete graph with no spanning cover by two increasing paths. For a named increasing path component `A`, write `L_A(v)` and `U_A(v)` for the incoming and outgoing path edges at `v`, with the same endpoint conventions `-infinity,+infinity` as in Section 2.
 

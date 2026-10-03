@@ -134,7 +134,7 @@ After adjoining the omitted singleton \(v\), every selected singleton lift \(F_v
 Now apply Corollary 8 to a neutral omission swap from \(F_y\mid\{y\}\). It produces a selected singleton lift \(F_w\mid\{w\}\) of potential at most \(\Phi_0\), in the same pairwise-repartition component. The census identity forces its potential to equal \(\Phi_0\). The equality case of [[balanced_omission_swap_gives_descent_or_selected_singleton_recurrence]] then gives a neutral path of at most two pairwise repartitions. \(\square\)
 
 
-## Exact size of the exceptional transfer
+## Size of the exceptional transfer
 
 **Corollary 10.** Suppose \(J\) is a connected support tree. In the exceptional case of Lemma 1, write \(S\subsetneq P\), \(R=P-S\), and \(B=Q-\{y\}\) as there. Then
 \[
@@ -163,15 +163,44 @@ If \(y\) is second from the relevant end, there is a tight triple reversing \(x\
 
 Hence an exceptional non-mixing label cannot lie deep in the neighboring path without already producing an order disagreement. In the order-compatible case it is confined to an end-two window, with the non-extreme position carrying a displayed reversal.
 
+
+## Exceptional endpoint closure
+
+**Corollary 12.** Assume minimum-imbalance selection and suppose the selected support graph \(J\) is connected. Let \(F_x=P\mid Q\) correspond to a leaf edge, and let \(y\in Q\) be the exceptional label from Theorem 2. Relative to any Hamiltonian order on \(Q\), at least one of the following holds:
+
+1. the equally balanced support-compatible replacement at \(y\) has an order disagreement on \(Q-\{y\}\);
+2. there is a tight triple reversing \(x\) and \(y\) across an endpoint vertex of \(Q\);
+3. the selected singleton lifts \(F_x\mid\{x\}\) and \(F_y\mid\{y\}\) lie in the same quadratic-potential level and are joined by at most two neutral pairwise repartitions.
+
+**Proof.** Apply [[exceptional_leaf_label_gives_disagreement_reversal_or_neutral_recurrence]]. \(\square\)
+
+Thus the exceptional non-mixing label has no residual positional case: after order disagreement and the displayed reversal are excluded, it is already a bounded neutral recurrence between selected deletion roots.
+
+## Reselecting an exceptional cover changes the forest geometry
+
+The exceptional non-mixing label can be used to change the selected support graph, rather than merely recorded as a local residue.
+
+Suppose \(J\) is connected, \(P\) is a leaf with neighbor \(Q\), \(x\) labels \(PQ\), and \(y\in Q\) is exceptional. By [[exceptional_leaf_reselection_creates_smaller_leaf_or_disconnects]], the equally balanced support-compatible cover
+\[
+G_y=P\mid\bigl((Q-\{y\})\cup\{x\}\bigr)
+\]
+may replace the selected cover at \(y\). The second support in this replacement is new. After the replacement, either the selected support graph becomes disconnected, or it remains a connected tree in which
+\[
+W=(Q-\{y\})\cup\{x\}
+\]
+is a leaf adjacent to \(P\) and satisfies \(|W|<|P|\).
+
+In the connected outcome, the new leaf has no exceptional neighboring label: every \(z\in P\) has a selected deletion cover containing a consecutive pair joining \(W\) to \(P-\{z\}\). Hence both endpoints of any Hamiltonian order on \(P\) are available for the direct-mixing endpoint comparison. The exceptional branch has therefore been converted into either the disconnected-forest case or a connected leaf comparison with no non-mixing exception.
+
 ## Metadata
 
 - ID: leaf_comparisons_in_deletion_support_forests
 - Kind: line
-- Version: 7
-- Math version: 7
+- Version: 12
+- Math version: 9
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Chunk 1 — HOT, version 7: Leaf comparisons in deletion-support forests
+- Chunk 1 — HOT, version 12: Leaf comparisons in deletion-support forests

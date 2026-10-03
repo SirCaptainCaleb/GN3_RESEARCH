@@ -4,7 +4,7 @@
 
 ## Statement
 
-Comparison representation; non-Hamiltonian four- and five-vertex structure; matching-block classification; fifth-vertex extension of the cyclic K4; four-of-six; and the exact count of bad four-subsets of a five-set.
+Comparison representation; non-Hamiltonian four- and five-vertex structure; matching-block classification; fifth-vertex extension of the cyclic K4; four-of-six; and the count of bad four-subsets of a five-set.
 
 ## Body
 
@@ -623,7 +623,7 @@ which simplifies to the displayed bound. ∎
 
 - ID: smallset01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

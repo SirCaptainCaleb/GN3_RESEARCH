@@ -1,4 +1,4 @@
-# The root-exchange split forces four-core disturbance or an outer Hamiltonian six-shell
+# The root-exchange split forces four-core disturbance or an outer Hamiltonian six-set
 
 **Summary:** A rooted five-side's exceptional root-exchange pattern immediately yields four-core order disturbance, a Hamiltonian four-set, a positioned core reversal, or a Hamiltonian six-set on the two non-root extenders.
 
@@ -31,7 +31,7 @@ In particular, apply this to the exceptional branch of the rooted-five endpoint 
 
 ## Metadata
 
-- ID: toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell
+- ID: toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_sixset
 - Kind: toolkit
 - Version: 1
 - Math version: 1

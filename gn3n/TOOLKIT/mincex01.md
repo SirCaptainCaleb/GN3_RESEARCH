@@ -1,10 +1,10 @@
 # Minimum-counterexample calculus
 
-**Summary:** A minimum counterexample has path-cover number three, every proper induced subtournament has path-cover number at most two, and proper Hamiltonian supports have exact two-cover complements.
+**Summary:** A minimum counterexample has path-cover number three, every proper induced subtournament has path-cover number at most two, and proper Hamiltonian supports have two-cover complements.
 
 ## Statement
 
-If the grand two-cover conjecture fails and H is a counterexample of minimum order n, then pc(H)=3; every proper induced subtournament has path-cover number at most two; every proper Hamiltonian set has a complementary exact two-cover; deleting one or two vertices leaves an exact two-cover with no singleton component; every tight path or cycle leaves at least four vertices; and n>10.
+If the grand two-cover conjecture fails and H is a counterexample of minimum order n, then pc(H)=3; every proper induced subtournament has path-cover number at most two; every proper Hamiltonian set has a complementary two-cover; deleting one or two vertices leaves a two-cover with no singleton component; every tight path or cycle leaves at least four vertices; and n>10.
 
 ## Body
 
@@ -18,13 +18,13 @@ Every proper induced subtournament of H has path-cover number at most two, by mi
 
 Let S be a nonempty proper subset such that H[S] is Hamiltonian. Minimality gives pc(H-S)<=2. If H-S were Hamiltonian, a Hamilton path on S and one on V(H)-S would form a spanning two-cover. Therefore pc(H-S)=2.
 
-Thus every proper tight path has an exact two-cover on its complement. In particular every tight path has order at most n-4: its complement is non-Hamiltonian, while every boundary tournament of order at most three is Hamiltonian. Opening a tight cycle at any ordinary cycle edge gives a tight path on the same support, so every tight cycle also has order at most n-4.
+Thus every proper tight path has a two-cover on its complement. In particular every tight path has order at most n-4: its complement is non-Hamiltonian, while every boundary tournament of order at most three is Hamiltonian. Opening a tight cycle at any ordinary cycle edge gives a tight path on the same support, so every tight cycle also has order at most n-4.
 
 ## One- and two-vertex deletions
 
-For every vertex v, pc(H-v)=2. Every exact two-cover of H-v has both components nontrivial. Otherwise one component is a singleton (s), and the two-vertex path (v,s), together with the other component, two-covers H.
+For every vertex v, pc(H-v)=2. Every two-cover of H-v has both components nontrivial. Otherwise one component is a singleton (s), and the two-vertex path (v,s), together with the other component, two-covers H.
 
-For distinct a,c, the two-vertex sequence (a,c) is a tight path, so the complement principle gives pc(H-{a,c})=2. Again every exact two-cover has both components nontrivial. If (s) were a singleton component, exactly one of (a,s,c) and (c,s,a) is tight; that three-path together with the other component would two-cover H.
+For distinct a,c, the two-vertex sequence (a,c) is a tight path, so the complement principle gives pc(H-{a,c})=2. Again every two-cover has both components nontrivial. If (s) were a singleton component, exactly one of (a,s,c) and (c,s,a) is tight; that three-path together with the other component would two-cover H.
 
 ## The order is greater than ten
 
@@ -53,7 +53,7 @@ Therefore n>10.
 
 - ID: mincex01
 - Kind: toolkit
-- Version: 1
+- Version: 5
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

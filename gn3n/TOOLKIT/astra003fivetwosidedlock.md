@@ -4,7 +4,7 @@
 
 ## Statement
 
-Let X|P|Q be a quadratic-potential-minimal trapped three-cover with |X|=5 and |P|,|Q|>=7. Then either an equal-potential support exchange exists as in astra003fiveswapobstruct, or there are x in V(X) and one of the two long paths R=(r_1,...,r_m) such that x cannot be inserted into any position of the displayed order of R. More strongly, writing e_i={r_i,r_{i+1}} and f_i={x,r_i} in the comparison digraph, the four endpoint barriers e_1->f_1, e_2->f_2, f_{m-1}->e_{m-2}, and f_m->e_{m-1} all hold. Hence insert01 supplies a bounded failed-insertion obstruction for x on the full displayed path R.
+Let X|P|Q be a quadratic-potential-minimal trapped three-cover with |X|=5 and |P|,|Q|>=7. Then either an equal-potential support exchange exists as in astra003fiveswapobstruct, or there are x in V(X) and one of the two long paths R=(r_1,...,r_m) such that x cannot be inserted into any position of the displayed order of R. More strongly, writing e_i={r_i,r_{i+1}} and f_i={x,r_i} in the comparison digraph, the four endpoint constraints e_1->f_1, e_2->f_2, f_{m-1}->e_{m-2}, and f_m->e_{m-1} all hold. Hence insert01 supplies a bounded failed-insertion obstruction for x on the full displayed path R.
 
 ## Body
 
@@ -36,9 +36,9 @@ Hence x is noninsertable in the full displayed path R.
 The failed endpoint insertions also give explicit comparison arcs. Put
 e_i={r_i,r_{i+1}}, 1<=i<=m-1,
 and f_i={x,r_i}, 1<=i<=m.
-Failure of the left-end insertion into R' gives e_1->f_1, and failure of the right-end insertion into R' gives f_{m-1}->e_{m-2}. Failure of the left-end insertion into L gives e_2->f_2, and failure of the right-end insertion into L gives f_m->e_{m-1}. Thus all four stated endpoint barriers hold simultaneously.
+Failure of the left-end insertion into R' gives e_1->f_1, and failure of the right-end insertion into R' gives f_{m-1}->e_{m-2}. Failure of the left-end insertion into L gives e_2->f_2, and failure of the right-end insertion into L gives f_m->e_{m-1}. Thus all four stated endpoint constraints hold simultaneously.
 
-Finally, applying the failed-insertion theorem of insert01 to the full path R gives a bounded obstruction involving x and at most four consecutive vertices of R. The point is that this obstruction now sits inside a path carrying simultaneous two-sided endpoint barriers forced by one common five-side displacement.
+Finally, applying the failed-insertion theorem of insert01 to the full path R gives a bounded obstruction involving x and at most four consecutive vertices of R. The point is that this obstruction now sits inside a path carrying simultaneous two-sided endpoint constraints forced by one common five-side displacement.
 
 
 ## Metadata

@@ -1,10 +1,10 @@
-# A hard four-side lock against a seven-path uses the four interior gaps in exact reverse order
+# A hard four-side lock against a seven-path uses the four interior gaps in reverse order
 
-**Summary:** A hard four-side lock against a seven-path uses the four interior gaps in exact reverse order.
+**Summary:** A hard four-side lock against a seven-path uses the four interior gaps in reverse order.
 
 ## Statement
 
-Assume outcome (3) of four_side_endpoint_lock_gap_network01 with X=(x_0,x_1,x_2,x_3) and a host path P of order seven, so its interior M=(b_1,...,b_5) has exactly four displayed gaps. Let g_i be the second-type obstruction gap of x_i in M. Then (g_0,g_1,g_2,g_3)=(4,3,2,1). Thus the four-side order and the obstruction-gap order are exact reverses.
+Assume outcome (3) of four_side_endpoint_lock_gap_network01 with X=(x_0,x_1,x_2,x_3) and a host path P of order seven, so its interior M=(b_1,...,b_5) has exactly four displayed gaps. Let g_i be the second-type obstruction gap of x_i in M. Then (g_0,g_1,g_2,g_3)=(4,3,2,1). Thus the four-side order and the obstruction-gap order are reverses.
 
 ## Body
 
@@ -14,7 +14,7 @@ The hard gap-network outcome assigns the four vertices x_i to four distinct gaps
 
 - ID: four_side_gap_order7_reverse01
 - Kind: toolkit
-- Version: 1
+- Version: 3
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

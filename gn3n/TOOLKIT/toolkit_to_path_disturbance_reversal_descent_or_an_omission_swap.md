@@ -1,6 +1,6 @@
 # A leaf support reduces endpoint comparison to path disturbance, reversal, descent, or an omission swap
 
-**Summary:** In the support-forest leaf case, endpoint comparison has no diffuse direct-crossing residue: it reduces to order/path disturbance, endpoint reversal, a two-cover, strict quadratic descent, or a neutral compatible omission swap.
+**Summary:** In the support-forest leaf case, endpoint comparison has no diffuse direct-cut interaction residue: it reduces to order/path disturbance, endpoint reversal, a two-cover, strict quadratic descent, or a neutral compatible omission swap.
 
 ## Statement
 

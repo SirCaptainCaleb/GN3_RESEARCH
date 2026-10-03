@@ -18,24 +18,6 @@
     "updated_at": "2026-09-21T20:50:21.454865+00:00"
   },
   {
-    "definition": "For an ordered hypergraph path, the final hyperedge in its edge sequence.",
-    "notes": "Paper terminology; prefer over project-local terminal-edge jargon.",
-    "preferred_term": null,
-    "section": "canonical",
-    "status": "canonical",
-    "term": "last edge",
-    "updated_at": "2026-09-21T20:50:21.454865+00:00"
-  },
-  {
-    "definition": "For an ordered hypergraph path, the final vertex.",
-    "notes": "Paper terminology; prefer over physical endpoint language.",
-    "preferred_term": null,
-    "section": "canonical",
-    "status": "canonical",
-    "term": "last vertex",
-    "updated_at": "2026-09-21T20:50:21.454865+00:00"
-  },
-  {
     "definition": "The length of a maximum path in G with last edge e and last vertex v.",
     "notes": "Exact snake-digraph notation from linear_paths.tex (LaTeX source uses \\\\varphi via the macro \\\\mpl).",
     "preferred_term": null,
@@ -81,51 +63,6 @@
     "updated_at": "2026-09-21T20:50:21.454865+00:00"
   },
   {
-    "definition": "Legacy/newer LINP notation for the maximum length of a linear path with last vertex v.",
-    "notes": "Normalize durable mathematics back to the paper notation φ(v).",
-    "preferred_term": "φ(v)",
-    "section": "canonical",
-    "status": "alias",
-    "term": "a(v)",
-    "updated_at": "2026-09-21T20:50:21.454865+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "Proof-process disambiguator with no mathematical content. Rewrite using last vertex, last edge, or explicit ordinary language as appropriate.",
-    "preferred_term": "last vertex",
-    "section": "prohibited",
-    "status": "prohibited",
-    "term": "physical",
-    "updated_at": "2026-09-21T20:50:21.454865+00:00"
-  },
-  {
-    "definition": "A nonspecial edge e with unique entrance vertex x such that φ(x)=φ(e)-1.",
-    "notes": "LINP-defined term. The adjective is permitted because it names a recurring mathematical class; use only with this definition.",
-    "preferred_term": null,
-    "section": "canonical",
-    "status": "canonical",
-    "term": "ascending edge",
-    "updated_at": "2026-09-21T20:51:26.372714+00:00"
-  },
-  {
-    "definition": "For a hyperedge e, its edge rank is φ(e), the length of a longest linear path whose last edge is e.",
-    "notes": "Official LINP terminology. When context is clear, \"rank of e\" may be used for φ(e).",
-    "preferred_term": null,
-    "section": "canonical",
-    "status": "canonical",
-    "term": "edge rank",
-    "updated_at": "2026-09-21T21:03:58.61998+00:00"
-  },
-  {
-    "definition": "A rainbow terminal-pair path E_i={x_i,v_{i-1},v_i} is strong-rainbow when no entrance label x_i is equal to any terminal-path vertex v_j.",
-    "notes": "Use only for terminal-pair paths after the ambient rainbow condition (distinct entrance labels) has been stated. Equivalently, the path has no color-terminal collision.",
-    "preferred_term": "strong-rainbow",
-    "section": "canonical",
-    "status": "canonical",
-    "term": "strong-rainbow",
-    "updated_at": "2026-09-25T21:03:32.264484+00:00"
-  },
-  {
     "definition": "Let e be a hyperedge and let X be a specified path, path segment, edge set, or vertex set. A contact of e with X is a vertex in e∩V(X). If a vertex z∈e is explicitly excluded, an off-z contact of e with X is a vertex in (e\\{z})∩V(X). The contact multiplicity is the cardinality of the specified intersection.",
     "notes": "Always say what meets what: e.g. “an e-contact with P”, “the unique off-v contact of e with the precursor P\\g_p”, or write the intersection explicitly. Bare “contact” is allowed only when both the edge and the comparison path/region have been fixed unambiguously in the immediately preceding sentence. Do not use “contact” to mean an edge-edge intersection unless the two edges are explicitly named.",
     "preferred_term": null,
@@ -142,15 +79,6 @@
     "status": "canonical",
     "term": "color-terminal collision",
     "updated_at": "2026-09-25T21:31:07.426646+00:00"
-  },
-  {
-    "definition": "For a vertex v, its vertex rank is φ(v), the length of a longest linear path whose last vertex is v.",
-    "notes": "Official LINP terminology. When context is clear, \"rank of v\" may be used for φ(v).",
-    "preferred_term": null,
-    "section": "canonical",
-    "status": "canonical",
-    "term": "vertex rank",
-    "updated_at": "2026-09-21T21:03:58.61998+00:00"
   },
   {
     "definition": "For a real threshold d, the >d-core of a hypergraph H is the subhypergraph obtained by repeatedly deleting a vertex whose current degree is at most d, together with all incident edges, until the hypergraph is empty or every remaining vertex has degree greater than d. Equivalently, it is the unique maximal induced subhypergraph of H having minimum degree greater than d.",
@@ -171,33 +99,6 @@
     "updated_at": "2026-09-24T01:00:56.58233+00:00"
   },
   {
-    "definition": "Typed shorthand for the canonical quantities φ(v) and φ(e): the rank of a vertex v is φ(v), the length of a longest linear path whose last vertex is v; the rank of an edge e is φ(e), the length of a longest linear path whose last edge is e.",
-    "notes": "Use bare “rank” only when the object being ranked is unambiguous. Prefer “vertex rank” or “edge rank” when both types are in play.",
-    "preferred_term": null,
-    "section": "canonical",
-    "status": "canonical",
-    "term": "rank",
-    "updated_at": "2026-09-25T12:16:21.805912+00:00"
-  },
-  {
-    "definition": "Legacy LINP prose synonym for vertex rank φ(v) when applied to a vertex.",
-    "notes": "Normalize durable mathematics to “rank” / “vertex rank”. Do not introduce “potential” as a parallel technical quantity.",
-    "preferred_term": "vertex rank",
-    "section": "canonical",
-    "status": "alias",
-    "term": "potential",
-    "updated_at": "2026-09-25T12:16:21.805912+00:00"
-  },
-  {
-    "definition": "Legacy LINP prose synonym for the vertex rank φ(v).",
-    "notes": "Prefer “vertex rank” or “rank of v”.",
-    "preferred_term": "vertex rank",
-    "section": "canonical",
-    "status": "alias",
-    "term": "endpoint potential",
-    "updated_at": "2026-09-25T12:16:21.805912+00:00"
-  },
-  {
     "definition": "Let P be a longest linear path whose last edge is e, and let f be its penultimate edge. By linearity, f∩e is a single vertex; this vertex is the entrance label of P into e.",
     "notes": "Path-relative notion. This matches the certified longest-path/intersection-graph formulation.",
     "preferred_term": null,
@@ -207,138 +108,156 @@
     "updated_at": "2026-09-25T12:16:37.650817+00:00"
   },
   {
-    "definition": "",
-    "notes": null,
+    "definition": "A nonspecial edge e with entrance x such that φ(x)=φ(e)-1.",
+    "notes": "LINP-defined term. The adjective is permitted because it names a recurring mathematical class; use only with this definition.",
     "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
+    "section": "canonical",
+    "status": "canonical",
+    "term": "ascending edge",
+    "updated_at": "2026-10-03T14:10:18.509474+00:00"
+  },
+  {
+    "definition": "Legacy LINP prose synonym for the rank φ(v) when applied to a vertex.",
+    "notes": "Normalize durable mathematics to rank of v. Do not introduce potential as a parallel technical quantity.",
+    "preferred_term": "rank",
+    "section": "canonical",
+    "status": "alias",
+    "term": "potential",
+    "updated_at": "2026-10-03T14:10:18.509474+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use charge as bookkeeping jargon unless a future canonical definition is added. State the counted contribution or inequality directly.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
     "term": "charge",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
   },
   {
     "definition": "",
-    "notes": null,
+    "notes": "Do not use anchor as project shorthand. State the common path, vertex, edge, or reference object explicitly.",
     "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
+    "section": "prohibited",
+    "status": "prohibited",
     "term": "anchor",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
   },
   {
-    "definition": "For a nonspecial edge e with φ(e)≥2, its unique entrance is the vertex x∈e that is the entrance label for every longest linear path whose last edge is e.",
-    "notes": "Equivalent certified characterization: e is nonspecial exactly when all longest paths ending in e have the same entrance label. The other two vertices of a 3-edge are terminal at e.",
+    "definition": "",
+    "notes": "Proof-process disambiguator with no mathematical content. Rewrite using last vertex, last edge, final vertex, final edge, or explicit ordinary language as appropriate.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "physical",
+    "updated_at": "2026-10-03T14:10:18.509474+00:00"
+  },
+  {
+    "definition": "Typed shorthand for the canonical quantities φ(v) and φ(e): the rank of a vertex v is φ(v), the length of a longest linear path whose last vertex is v; the rank of an edge e is φ(e), the length of a longest linear path whose last edge is e.",
+    "notes": "Use bare rank only when the object being ranked is unambiguous; otherwise write rank of v or rank of e.",
     "preferred_term": null,
     "section": "canonical",
     "status": "canonical",
-    "term": "unique entrance",
-    "updated_at": "2026-09-25T12:16:37.650817+00:00"
+    "term": "rank",
+    "updated_at": "2026-10-03T14:10:18.509474+00:00"
   },
   {
-    "definition": "Let e be a hyperedge, P a specified path, and z in e a distinguished vertex already known to lie on P. A vertex c!=z is an exact off-z contact of e with P when the full intersection is known exactly:\ne intersect V(P)={z,c}.\nMore generally, “exact contact” may be used only when the surrounding statement explicitly determines the complete relevant edge-path intersection, not merely the existence of a contact.",
-    "notes": "Prefer an explicit intersection equality whenever space permits. In the U_11 color-terminal-collision setting, saying that c_F is the exact contact of F with R_i means F∩V(R_i)={x_i,c_F}. Do not use “exact contact” when only c_F∈F∩V(R_i) is known.",
+    "definition": "",
+    "notes": "Do not use lens as project shorthand. State the relevant pair of paths, intersections, or endpoint configuration directly.",
     "preferred_term": null,
-    "section": "canonical",
-    "status": "canonical",
-    "term": "exact contact",
-    "updated_at": "2026-09-25T21:31:07.426646+00:00"
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "lens",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
   },
   {
-    "definition": "For a nonspecial edge whose unique entrance has been established, the entrance is that unique entrance vertex. When referring instead to the first vertex of a particular path ending in the edge without asserting path-independence, use entrance label.",
-    "notes": "Canonical LINP term. Bare entrance is permitted when the edge is fixed and nonspecial; use entrance label for the path-relative notion.",
+    "definition": "",
+    "notes": "Do not use switching as generic project shorthand. Name the family of replacement edges or the specific transformation being performed.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "switching",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use terminal path as a technical term. Use the already defined path notion and state the relevant terminal vertices or terminal-at-an-edge property explicitly.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "terminal path",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use terminal-singleness. State the terminal-single condition explicitly, including the path or incidence to which it applies.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "terminal-singleness",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use clean as a technical modifier. State the condition directly.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "clean",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use cells as unexplained project shorthand. Name the partition classes, index pairs, table entries, or other objects directly.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "cells",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not introduce slack as an undefined LINP quantity. State the difference or inequality explicitly; add a canonical definition first if a recurring quantity genuinely needs a name.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "slack",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use chord-geometry. State the relevant intersections, edge positions, or path configuration directly.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "chord-geometry",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use p-center. Name the vertex v and write p=φ(v) when that rank is relevant.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "p-center",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use paid/unpaid bookkeeping language. State which certificate, contribution, or inequality is present.",
+    "preferred_term": null,
+    "section": "prohibited",
+    "status": "prohibited",
+    "term": "paid",
+    "updated_at": "2026-10-03T13:59:12.513332+00:00"
+  },
+  {
+    "definition": "For an edge e, an entrance is a vertex x in e that is the entrance label for every longest linear path whose last edge is e, when such a vertex exists.",
+    "notes": "For the nonspecial edges used in LINP, the entrance is path-independent. Use entrance label for the path-relative notion.",
     "preferred_term": null,
     "section": "canonical",
     "status": "canonical",
     "term": "entrance",
-    "updated_at": "2026-10-02T16:03:01.171366+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "lens",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "switching",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "terminal path",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "terminal-singleness",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "clean",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "cells",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "slack",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "chord-geometry",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "p-center",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "review_queue",
-    "status": "review",
-    "term": "paid",
-    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+    "updated_at": "2026-10-03T14:10:18.509474+00:00"
   }
 ]

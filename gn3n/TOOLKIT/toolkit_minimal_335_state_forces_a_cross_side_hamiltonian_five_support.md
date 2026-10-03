@@ -26,13 +26,13 @@ with both endpoints lying in I.
 
 The set K is proper. By minimum-counterexample calculus, H-K has path-cover number at most two. It cannot be Hamiltonian, because a Hamilton path on H-K together with the Hamilton path on K would give a two-cover of H. Hence pc(H-K)=2.
 
-So the two local 3|5 obstructions cannot remain independent: in profile 3|3|5 they synchronize on the common interior triple and force a proper Hamiltonian five-support meeting both 3-sides, with exact two-coverable complement.
+So the two local 3|5 obstructions cannot remain independent: in profile 3|3|5 they synchronize on the common interior triple and force a proper Hamiltonian five-support meeting both 3-sides, with two-coverable complement.
 
 ## Metadata
 
 - ID: toolkit_minimal_335_state_forces_a_cross_side_hamiltonian_five_support
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

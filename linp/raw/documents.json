@@ -133,39 +133,5 @@
     "title": "Leading terms for 3-uniform linear path Turán numbers",
     "updated_at": "2026-10-02T20:00:28.780556+00:00",
     "version": 1
-  },
-  {
-    "archived_at": null,
-    "audit_status": "unaudited",
-    "audited_by": null,
-    "audited_version": null,
-    "author_session_ids": [
-      65
-    ],
-    "body": "\nThe canonical research surface has four mathematical roles: Main Lines, Research Lines, Toolkit, and Brainstorms.\n\nMain Lines are the global proof map. Research Lines are evolving route-specific proof developments. Toolkit entries are independently reusable mathematics. Brainstorms are cheap persistent exploratory seeds.\n\nRoute-specific proof development belongs in a Research Line. Continue an existing route in its hot chunk; when a Brainstorm develops into a coherent proof route, create a Research Line for it. Main Lines record global synthesis: update them when the proof architecture changes, when mature Research Line material is compressed upward, or when a Main Line itself needs correction or restructuring. Toolkit contains mathematics whose natural statement stands on its own as a reusable theorem, construction, obstruction, technique, inequality, transformation, or other result. When route work yields such a result, extract the reusable mathematical core to Toolkit and keep the route-specific setup, case structure, and local state in the Research Line.\n\nResearch Lines crystallize in ordered publication-style chunks. Exactly one hot chunk receives ordinary mathematical development. Rewrite that chunk as understanding improves. Crystallize it when the local development reaches a natural subsection boundary, then continue in the next hot chunk. Older chunks remain stable; use repair_line_chunk() when a crystallized subsection itself needs correction. The assembled Research Line is the authoritative readable manuscript.\n\nWrite mathematical manuscripts at publication quality. State hypotheses explicitly, quantify variables and parameters, distinguish existence from construction, record exact dependencies and exceptional cases, use standard terminology, and make each inference checkable from the preceding statements. Mathematical manuscripts should contain definitions, claims, constructions, reductions, proofs, counterexamples, and obstructions. Operational instructions belong in the Guide.\n\nA chunk should be roughly subsection-sized in the eventual proof exposition. It may contain several lemmas, constructions, cases, reductions, and their connecting argument. A mature Research Line should be roughly section-sized: a coherent proof development containing several such chunks. Compress a mature Research Line into an existing or new Main Line when its mathematics is ready for global synthesis.\n\nStartup is fully informed. Read the current artifact, terminology, operating guide, Toolkit index, and Main Lines before choosing work. Read Main Lines last so the global proof map is fresh when selecting a route.\n\nMathematical research uses the project artifact, permitted project-state reads during startup and publication synchronization, and mathematical reasoning. Computation, brute-force search, numerical experimentation, code, CAS/SAT/SMT tools, and external web search are outside the research method for this project.\n\nAfter choosing a route, perform one freshness check with changes(). Compare the chosen Main Line and Research Line versions, when applicable, with MANIFEST.json. Read any changed manuscript completely with read(), following next_cursor until complete=true.\n\nWork locally from the refreshed context until substantial progress is ready to publish.\n\nEvery substantive durable research publication declares its actual dependencies, using [] when genuinely self-contained. Assemble related results into one coherent staged batch. Large submissions may be uploaded in numbered chunks. Before commit, review concurrent findings with review_staged_batch(...), resolve overlap, and commit atomically with commit_staged_batch(...). If shared research changes after review, review the batch again.\n\nAfter publication, reread the Research Line you are continuing. Reread a Main Line when its version changed or the route's global relationship changed materially.\n\nUse [[research_id]] inside Main Lines for parseable references to canonical mathematics.\n",
-    "id": "guide",
-    "kind": "guide",
-    "position": 10,
-    "replaced_by": null,
-    "title": "Research guide",
-    "updated_at": "2026-10-03T12:47:26.235852+00:00",
-    "version": 6
-  },
-  {
-    "archived_at": null,
-    "audit_status": "unaudited",
-    "audited_by": null,
-    "audited_version": null,
-    "author_session_ids": [
-      65
-    ],
-    "body": "\nThese are recurring self-checks.\n\n**Theorem reflex.** Keep the theorem target separate from the current sufficient condition. Prefer work that can change the theorem, expose structure, or unlock a route. When a route stalls, return to the earliest step where needed strength was lost and identify the information discarded there. Use case analysis when the complete configuration space is proved uniformly finite over the theorem class.\n\n**Elevation reflex.** For every worthwhile result, identify the mechanism that proves it and seek its strongest natural formulation. Test which hypotheses can be weakened, useful generalizations, and stronger consequences. If the result belongs to a predecessor chain, try to apply it as early as possible and identify the minimum additional conditions needed there. When a result materially changes a Main Line and the synthesis is clear, include the Main Line update in the same publication batch.\n\n**Crystallization reflex.** Treat the hot chunk as a subsection under revision. Rewrite it as understanding improves. Crystallize at a natural subsection boundary, when the local mathematical story is stable enough to stand on its own. A mature Research Line should be roughly section-sized before its content is compressed into an existing or new Main Line.\n\n**Correction reflex.** Classify a concrete failure as an audit failure, a refutation, or a supersession. Repair the canonical object in place when its statement or proof can be corrected. When an upstream result is false, mark or replace that result and update the direct consumers that materially depend on it. Publish corrections through the version-guarded staged workflow with their actual dependencies. Send the corrected current version to independent audit. Use repair_line_chunk() for a crystallized Research Line subsection, the hot chunk for current Research Line development, and direct Main Line editing when the Main Line synthesis itself needs correction.\n\n**Stewardship reflex.** Put mathematics in its canonical home. Record the premises used by every durable non-self-contained claim; declare [] for a genuinely self-contained claim. Integrate stronger results, supersede obsolete formulations, close or promote Brainstorms when their status is clear, and compress accumulated work when synthesis can replace clutter. Preserve genuinely different approaches when each remains mathematically live. Leave the shared research representation cleaner and more useful to the next researcher.\n",
-    "id": "reflexes",
-    "kind": "reflexes",
-    "position": 0,
-    "replaced_by": null,
-    "title": "Research Reflexes",
-    "updated_at": "2026-10-03T12:47:26.235852+00:00",
-    "version": 4
   }
 ]

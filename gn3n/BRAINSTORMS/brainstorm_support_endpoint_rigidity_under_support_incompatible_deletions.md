@@ -10,7 +10,7 @@ Consequently, if neither endpoint deletion F_{q_0},F_{q_m} contains a direct edg
 
 Assume Hamilton orders of L and R preserve the inherited relative order of the surviving Q-vertices. Since Q union {x} cannot be Hamiltonian, the insertion position of x in L must be either before q_1 or between q_1 and q_2; any later insertion permits q_0 to be prepended. Dually, the insertion position of x in R must be either after q_{m-1} or between q_{m-2} and q_{m-1}; any earlier insertion permits q_m to be appended.
 
-Thus the no-crossing, order-preserving case has only four insertion patterns. Moreover, if L begins (q_1,x,q_2,...), then (q_0,q_1,x) is non-tight and therefore (x,q_1,q_0) is tight. If R ends (...,q_{m-2},x,q_{m-1}), then (x,q_{m-1},q_m) is non-tight and therefore (q_m,q_{m-1},x) is tight.
+Thus the no-cut interaction, order-preserving case has only four insertion patterns. Moreover, if L begins (q_1,x,q_2,...), then (q_0,q_1,x) is non-tight and therefore (x,q_1,q_0) is tight. If R ends (...,q_{m-2},x,q_{m-1}), then (x,q_{m-1},q_m) is non-tight and therefore (q_m,q_{m-1},x) is tight.
 
 Hence, unless one obtains a direct P-Q mixed edge, an order disagreement, or one of these explicit backward end-edge traversals, the only surviving pattern is L=(x,q_1,...,q_m) and R=(q_0,...,q_{m-1},x).
 

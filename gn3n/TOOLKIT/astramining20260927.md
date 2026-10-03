@@ -12,10 +12,10 @@ Repository-mining summary for the 2026-09-27 Astra abstraction pass: general res
 
 **Fractional path-cover and LP toolkit (fractionaltoolkit01).**
 Created under methods01 as the topic home for reusable weighted/fractional arguments.
-- fractionalduality01: pure fractional path-cover LP duality and weighted-capture minimax theorem, extracted from weightedfractionalduality01. Removed Astra-001 framing and all minimum-counterexample/sharp-shell applications; proof is the same finite LP argument.
+- fractionalduality01: pure fractional path-cover LP duality and weighted-capture minimax theorem, extracted from weightedfractionalduality01. Removed Astra-001 framing and all minimum-counterexample/sharp-set applications; proof is the same finite LP argument.
 - fractionaldeletionfamilyavg01: common deletion-family averaging theorem. From covers of H-v only for v in an arbitrary set A, obtains tau*(H) <= (sum k_v)/(|A|-1), and with an r-component cover of H[A], tau*(H) <= (sum k_v+r)/|A|. This strictly generalizes fractionaldeletionavg01 and fractionalpathavg01; minimum-counterexample hypotheses were only suppliers of deletion covers.
 - Rehomed 9acf756c30e6 (dual excess/slack), astra001slackcharge01 (replacement slack charging), and the general laminar-rounding/uncrossing chain rooted at f1d73ee7e88e.
-- 508602659032 is a reusable negative fence: a same-mass two-for-two laminar uncrossing of crossing supports must put the whole old union inside the larger replacement support.
+- 508602659032 is a reusable negative fence: a same-mass two-for-two laminar uncrossing of properly overlapping supports must put the whole old union inside the larger replacement support.
 - b51448c366fb now depends directly on fractionalduality01, not on the Astra-001 application node.
 
 **Path-cover surgery/comparison (coversurg01).**
@@ -45,9 +45,9 @@ The two old fractional averaging results were not duplicated separately: fractio
 # Apparent generality that is false or materially limited
 
 - astra005criticalclass: equivalence/inseparability classes are general, but the assertion that deleting every nonprescribed vertex destroys the distinguished class uses minimum prescribed-separation failure essentially.
-- 9cdd9c6216a7: the fractional-perfect-matching conclusion genuinely uses the sharp half-order minimum-counterexample shell; it was returned to fractionalequalityshell01 after being carried along by a toolkit move.
-- Astra-003 fixed-order and small-side branches (including order-eleven, 4|4|3, five-side, and synchronized finite-kernel statements) use their size hypotheses substantially; they were not weakened by cosmetic replacement of those hypotheses.
-- Astra-004 repeated-label shell conclusions depend on the shell structure. Only the four-good-deletion order-disagreement theorem was extracted.
+- 9cdd9c6216a7: the fractional-perfect-matching conclusion genuinely uses the sharp half-order minimum-counterexample set; it was returned to fractionalequalityshell01 after being carried along by a toolkit move.
+- Astra-003 fixed-order and small-side branches (including order-eleven, 4|4|3, five-side, and synchronized finite-bounded configuration statements) use their size hypotheses substantially; they were not weakened by cosmetic replacement of those hypotheses.
+- Astra-004 repeated-label set conclusions depend on the set structure. Only the four-good-deletion order-disagreement theorem was extracted.
 - Astra-008’s determinant/correlation work is presently a route-specific reformulation around Hamiltonian-support/complement events rather than a standalone general boundary-tournament theorem.
 - Astra-009’s packing result is chiefly an application of the deletion-cover supply in a minimum counterexample; no additional reusable mechanism was identified in this pass.
 - Astra-010 critical-arc/cube statements genuinely use minimization of backward comparison count/span among path-cover-three witnesses. Their criticality conclusions should not be advertised for arbitrary orders.

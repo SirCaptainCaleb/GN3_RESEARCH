@@ -4,7 +4,7 @@
 
 ## Statement
 
-Generic two-sided endpoint-replacement, failed-insertion normal-form, barrier-gap, and opposite-extension lemmas.
+Generic two-sided endpoint-replacement, failed-insertion normal-form, constraint-gap, and opposite-extension lemmas.
 
 ## Body
 
@@ -61,7 +61,7 @@ Finally, the second form of `L` with the second form of `R` puts `y` and `q_2` i
 
 Thus either some pair reverses the order of common vertices or `X union {y}` is Hamiltonian. The latter is excluded. ∎
 
-## 2. Barrier gaps for a noninsertable vertex in an increasing path
+## 2. constraint gaps for a noninsertable vertex in an increasing path
 
 Let `G` be an edge-ordered complete graph and let
 
@@ -160,7 +160,7 @@ Suppose first that `t<m-1`. By construction `f_{t+1}->e_{t+1}`. If `f_t->f_{t+1}
 
 `e_{t-1}->f_t->f_{t+1}->e_{t+1}`,
 
-with the first comparison omitted when `t=1`. This contradicts failed insertion, so `f_{t+1}->f_t`.
+with the first comparison omitted when `t=1`. This contradicts the assumed insertion failure, so `f_{t+1}->f_t`.
 
 If `t=m-1`, the same argument uses the arc `f_m->e_{m-1}` supplied by failure of the right-end insertion. When the predecessor comparison exists and does not form alternative 1, failed middle insertion forces `f_m->f_{m-1}`. The case `m=2` is the same with no predecessor edge. Thus alternative 2 holds. ∎
 

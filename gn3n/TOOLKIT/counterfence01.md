@@ -2,7 +2,7 @@
 
 ## Statement
 
-Exact constructions rule out tempting universal shortcuts in defect compression, exchange, endpoint extension, common-middle synchronization, and bounded-refinement arguments. In particular, even a common-middle square with two simultaneous four-endpoint barrier vertices is locally consistent, so closure needs additional global path-cover information.
+Constructions rule out tempting universal shortcuts in defect compression, exchange, endpoint extension, common-middle synchronization, and bounded-refinement arguments. In particular, even a common-middle square with two simultaneous four-endpoint constraint vertices is locally consistent, so closure needs additional global path-cover information.
 
 ## Body
 
@@ -16,7 +16,7 @@ whose maximum tight-path order is exactly five.
 
 In particular, **all seven six-vertex induced subtournaments are non-Hamiltonian**.
 
-## Exact encoding
+## encoding
 
 Order the independent reversal-pair variables lexicographically by triples
 
@@ -42,7 +42,7 @@ There are 105 variables. Pad the bit word on the left by three zero bits to a mu
 
 `0008400fc0343bf45faff90ddb8`.
 
-## Exact verification
+## verification
 
 Direct exhaustive verification checks every vertex order on every six-subset.
 
@@ -113,7 +113,7 @@ Nevertheless the same edge-ordered tournament is Hamiltonian. For example
 `(x,f,b,d,a,z,e)`
 is increasing. Hence the obstruction is specifically local: a successful repair may require moving vertices outside the immediate five-window.
 
-## Exact bounded verification
+## bounded verification
 
 For each of the 120 orders `(z,sigma,f)`, inspect its five consecutive triples and compute the span from the first non-tight center to the last. Direct evaluation in the displayed edge order gives the distribution above.
 
@@ -137,7 +137,7 @@ is a tight Hamilton path, but for every a in V(A), the six-set
 
 is non-Hamiltonian.
 
-## Exact encoding
+## encoding
 
 Order the independent reversal-pair variables lexicographically by triples
 
@@ -315,7 +315,7 @@ For the boundary tournament represented by this edge order:
 
 Thus the universal one-vertex replacement-failure conclusion in the non-fallback branch of `the strict-alternation replacement-failure branch`, considered without the simultaneous fixed-four-set hypotheses, is consistent at the minimum order allowed by `the minimum-order bound for the non-fallback strict-alternation branch`.
 
-## Exact finite verification
+## finite verification
 
 The displayed edge order determines every comparison. Exhaustive verification checks the `7!=5040` vertex orders of the full set and, for each of the six deletions `z`, the `6!=720` vertex orders of the corresponding six-set: `9360` candidate Hamilton orders in total. None is increasing.
 
@@ -451,7 +451,7 @@ The displayed path `M` is increasing because `01 < 12 < 23`.
 
 For each of `x=4,5`, direct inspection of the five possible insertion positions in `(0,1,2,3)` shows that the resulting five-vertex order is not increasing. Hence both exterior vertices are noninsertable into the displayed Hamilton path `M`.
 
-An exhaustive check of the `6! = 720` vertex orders shows that none is increasing, so the full six-set is non-Hamiltonian. The check is finite and exact: for each vertex order one compares its five consecutive ordinary edges against the displayed strict edge order.
+An exhaustive check of the `6! = 720` vertex orders shows that none is increasing, so the full six-set is non-Hamiltonian. The check is finite and exhaustive: for each vertex order one compares its five consecutive ordinary edges against the displayed strict edge order.
 
 Therefore the abstract implication `two distinct vertices noninsertable into the same Hamilton path => their joint enlargement is Hamiltonian` is false even in the edge-orderable subclass of boundary tournaments. ∎
 
@@ -467,7 +467,7 @@ Let `Y={0,1,2,3}`, `F={4,5,6,7,8}`, and `Q=(0,1,2,3)`.
 
 The order `Q` is increasing because `01 < 12 < 23`. The induced edge order on `F` is non-Hamiltonian; exhaustive inspection of its `5!` vertex orders finds no increasing Hamilton path.
 
-The endpoint-deletion subtournaments are non-Hamiltonian, and they have the inherited-order exact two-covers
+The endpoint-deletion subtournaments are non-Hamiltonian, and they have the inherited-order two-covers
 `(4,1,2,3) | (5,6,8,7)`
 and
 `(0,1,2,4) | (5,6,8,7)`.
@@ -485,13 +485,13 @@ Computational note: the zero-cut nonexistence check is finite over six fixed blo
 
 ---
 
-## 1. Exact terminal data for concatenating fixed paths
+## 1. terminal data for concatenating fixed paths
 
 Let H be a finite boundary tournament. Let B_1,...,B_b be pairwise vertex-disjoint nonempty tight paths whose supports partition V(H). Their internal orders are fixed. For each B_i retain its first two and last two vertices, taking their union when they overlap, and record min(|B_i|,4). Retain the truth value of every tight ordered triple on the retained vertices.
 
 Then these data determine exactly which ordered concatenations of the whole blocks, using each block once in total, form a path cover of H with at most two components. No reversal, splitting, or interleaving of a block is allowed in this assertion.
 
-In particular, let V(K)=Y disjoint-union F with |F|=5, let a,b be distinct vertices of Y, and let T be an exact two-path cover of K-{a,b}. Cut every ordinary edge of T between Y and F, and add singleton blocks (a),(b). There are at most fourteen blocks, and at most thirty-five vertices suffice for the terminal data: at most seven Y-blocks contribute four vertices each, F contributes at most five, and a,b contribute two. This is an exact finite test of the specified block concatenations, not a reduction of K to an induced boundary tournament on thirty-five vertices.
+In particular, let V(K)=Y disjoint-union F with |F|=5, let a,b be distinct vertices of Y, and let T be a two-path cover of K-{a,b}. Cut every ordinary edge of T between Y and F, and add singleton blocks (a),(b). There are at most fourteen blocks, and at most thirty-five vertices suffice for the terminal data: at most seven Y-blocks contribute four vertices each, F contributes at most five, and a,b contribute two. This is a finite test of the specified block concatenations, not a reduction of K to an induced boundary tournament on thirty-five vertices.
 
 ## Proof
 
@@ -509,7 +509,7 @@ such that Q and R have no common ordinary edge. Consequently every common refine
 
 ## Proof
 
-Declare every consecutive ordered triple of Q and every consecutive ordered triple of R tight. These prescriptions are consistent: a consecutive triple of Q has all its vertices in an interval of three consecutive integers. A triple of R lying within one parity subsequence has span four; a triple crossing the join 2r,1 has span at least five when r>=3. Thus no triple prescribed by R has the same underlying three-set as a triple prescribed by Q. Within either path, different consecutive triples have different underlying sets. No reversal pair receives conflicting prescriptions. Orient every remaining reversal pair arbitrarily to obtain H.
+Declare every consecutive ordered triple of Q and every consecutive ordered triple of R tight. These prescriptions are consistent: a consecutive triple of Q has all its vertices in an interval of three consecutive integers. A triple of R lying within one parity subsequence has span four; a triple cut interaction the join 2r,1 has span at least five when r>=3. Thus no triple prescribed by R has the same underlying three-set as a triple prescribed by Q. Within either path, different consecutive triples have different underlying sets. No reversal pair receives conflicting prescriptions. Orient every remaining reversal pair arbitrarily to obtain H.
 
 Every ordinary edge of Q joins integers differing by one. Every ordinary edge of R joins integers differing by two, except {2r,1}, whose difference is 2r-1>=5. The ordinary edge sets are disjoint.
 
@@ -521,7 +521,7 @@ The fixed-block test is genuinely bounded. It does not prove that a successful c
 
 ---
 
-# Common-middle barriers are locally consistent
+# Common-middle constraints are locally consistent
 
 There exists a boundary tournament `J` on `V(J)={m_1,m_2,a,ell,c,r,x,y,z}`. Put `M=(m_1,m_2)`, `Lset={a,ell}`, `Rset={c,r}`, `T={x,y,z}`. It can satisfy simultaneously:
 - every `(L,M,R)`, `L in Lset`, `R in Rset`, is tight;
@@ -547,13 +547,13 @@ Adjoin `m_1,m_2`. Declare `(L,m_1,m_2)` tight for both `L`, and `(m_1,m_2,R)` ti
 
 ## Research consequence
 
-This does not assert `pc(J)>2`. It shows that even maximal local deletion multiplicity together with two simultaneous four-endpoint barrier vertices does not itself contradict the boundary-tournament axioms. Any codimension-five closure must use an additional global consequence of `pc(K)>2` or a repartition genuinely mixing the long and short supports.
+This does not assert `pc(J)>2`. It shows that even maximal local deletion multiplicity together with two simultaneous four-endpoint constraint vertices does not itself contradict the boundary-tournament axioms. Any codimension-five closure must use an additional global consequence of `pc(K)>2` or a repartition genuinely mixing the long and short supports.
 
 ## Metadata
 
 - ID: counterfence01
 - Kind: toolkit
-- Version: 1
+- Version: 4
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

@@ -1,22 +1,22 @@
 # Path-cover surgery and comparison
 
-**Summary:** A reusable toolkit supplies path-cover surgery, crossing, block-count, four-set, component-drop, symmetric-difference, and component-augmentation lemmas.
+**Summary:** A reusable toolkit supplies path-cover surgery, cut interaction, block-count, four-set, component-drop, symmetric-difference, and component-augmentation lemmas.
 
 ## Statement
 
-Reusable path-cover surgery, crossing and block-count lemmas; exact-two-cover four-set structure; component-drop and Cartesian-clause comparison; weighted matching symmetric difference; and generic boundary-tournament component-augmentation barriers.
+Reusable path-cover surgery, cut interaction and block-count lemmas; two-cover four-set structure; component-drop and Cartesian-clause comparison; weighted matching symmetric difference; and generic boundary-tournament component-augmentation constraints.
 
 ## Body
 
 # Path-cover surgery and comparison
 
-## 1. Crossing forced by an absorbable deletion
+## 1. cut interaction forced by an absorbable deletion
 
 Let `H` be a boundary tournament with `pc(H)>2`. Let `D` be a nonempty proper subset of `V(H)`, put `W=V(H)-D`, and let `S` be a nonempty proper subset of `W`. Suppose `H[D union S]` has a Hamilton tight path.
 
-Then every exact two-path cover of `H-D` contains an ordinary path edge with one endpoint in `S` and the other in `W-S`.
+Then every two-path cover of `H-D` contains an ordinary path edge with one endpoint in `S` and the other in `W-S`.
 
-**Proof.** Let `T_1|T_2` be an exact two-path cover of `H-D` and suppose no ordinary edge of either path crosses the cut `S | (W-S)`. Then each connected path component lies wholly in one side of the cut. Since both sides are nonempty and the two paths cover `W`, after exchanging their names we have
+**Proof.** Let `T_1|T_2` be a two-path cover of `H-D` and suppose no ordinary edge of either path crosses the cut `S | (W-S)`. Then each connected path component lies wholly in one side of the cut. Since both sides are nonempty and the two paths cover `W`, after exchanging their names we have
 
 `V(T_1)=S`, `V(T_2)=W-S`.
 
@@ -71,7 +71,7 @@ which rearranges to the formula. ∎
 
 ## 5. Joining two path-cover components through a Hamilton path
 
-Let `X,Y` partition `V(H)`, and suppose `Y` has an exact two-path cover
+Let `X,Y` partition `V(H)`, and suppose `Y` has a two-path cover
 
 `U=(x,u_1,...,u_r)`, `V=(v_0,...,v_{s-1},y)`
 
@@ -105,7 +105,7 @@ Now suppose `pc(H)>2`. If `K` had at most one non-tight consecutive triple, then
 
 ## 6. Transitions across a vertex partition
 
-Let `Pi={X_1,...,X_m}` be a partition of `V(H)` into nonempty sets, and let `T` be a spanning exact `q`-path cover. Let `t_Pi(T)` be the number of ordinary edges of the paths of `T` whose endpoints lie in different classes of `Pi`.
+Let `Pi={X_1,...,X_m}` be a partition of `V(H)` into nonempty sets, and let `T` be a spanning `q`-path cover. Let `t_Pi(T)` be the number of ordinary edges of the paths of `T` whose endpoints lie in different classes of `Pi`.
 
 For each `i`, delete all such cross-class edges and let `b_i(T)` be the number of resulting nonempty path blocks contained in `X_i`. Then
 
@@ -119,7 +119,7 @@ Equality holds exactly when the blocks inside every `X_i` form a minimum path co
 
 **Proof.** Deleting one cross-class edge from a path forest increases the number of components by one. Thus all deletions produce exactly `q+t_Pi(T)` blocks, which is `sum_i b_i(T)`. Since the blocks in `X_i` form a path cover of `H[X_i]`, we have `b_i(T)>=pc(H[X_i])`. The inequality and equality condition follow. ∎
 
-## 7. Deletion block count and a unique crossing
+## 7. Deletion block count and a unique cut interaction
 
 Let
 
@@ -135,11 +135,11 @@ In particular, if `H[D union S]` is Hamiltonian and `pc(H)>k`, then `b_C(T)>=k`.
 
 Under these latter hypotheses, if `T` has exactly one ordinary edge joining `S` to `C`, then exactly one component of `T` meets both sets. That component consists of one nonempty `S`-block followed by one nonempty `C`-block, or vice versa; every other component of `T` lies wholly in `C`.
 
-Assume now that `H` is a boundary tournament and keep these latter hypotheses. If the unique crossing edge occurs in the order `x,y` with `x in S` and `y in C`, then for every Hamilton tight path of `H[D union S]` ending with the ordered pair `(p,x)`, the triple
+Assume now that `H` is a boundary tournament and keep these latter hypotheses. If the unique cut interaction edge occurs in the order `x,y` with `x in S` and `y in C`, then for every Hamilton tight path of `H[D union S]` ending with the ordered pair `(p,x)`, the triple
 
 `(y,x,p)`
 
-is tight. Dually, if the unique crossing occurs in the order `y,x`, then for every Hamilton tight path of `H[D union S]` beginning with `(x,p)`, the triple
+is tight. Dually, if the unique cut interaction occurs in the order `y,x`, then for every Hamilton tight path of `H[D union S]` beginning with `(x,p)`, the triple
 
 `(p,x,y)`
 
@@ -149,7 +149,7 @@ is tight.
 
 If `a=1` and `pc(H)>k`, then `pc(H)>=k+1`, so `b_C(T)>=k`. If there is exactly one `S-C` edge in `T`, cutting it produces exactly `k+1` monochromatic blocks. There is at least one `S`-block and at least `k` `C`-blocks, so there is exactly one `S`-block and exactly `k` `C`-blocks. The asserted form of `T` follows.
 
-Suppose the unique crossing is `x,y` with `x in S`, `y in C`, and let `Q` be a Hamilton path of `H[D union S]` ending with `(p,x)`. Replace the unique `S`-block of the mixed component of `T` by `Q`, leaving the adjacent `C`-block and every other component unchanged. If `(p,x,y)` were tight, these `k` paths would cover `H`, contradicting `pc(H)>k`. Hence `(p,x,y)` is not tight, so boundary antisymmetry gives `(y,x,p)`. The other orientation is identical after reversing the order of the replacement. ∎
+Suppose the unique cut interaction is `x,y` with `x in S`, `y in C`, and let `Q` be a Hamilton path of `H[D union S]` ending with `(p,x)`. Replace the unique `S`-block of the mixed component of `T` by `Q`, leaving the adjacent `C`-block and every other component unchanged. If `(p,x,y)` were tight, these `k` paths would cover `H`, contradicting `pc(H)>k`. Hence `(p,x,y)` is not tight, so boundary antisymmetry gives `(y,x,p)`. The other orientation is identical after reversing the order of the replacement. ∎
 
 ## 8. Two crossings forced by a three-part one-vertex-deletion cover
 
@@ -163,17 +163,17 @@ by nonempty tight paths. Put `S=V(A) union V(B)`, and assume:
 - `min{|A|,|B|}<=2`; and
 - whenever one of `A,B` has order three, its displayed tight ordering can be extended by `d` at one end to a tight four-vertex path.
 
-Then every exact two-path cover `F` of `K-d` contains at least two ordinary edges whose endpoints lie in different members of the partition
+Then every two-path cover `F` of `K-d` contains at least two ordinary edges whose endpoints lie in different members of the partition
 
 `V(C) | V(A) | V(B)`.
 
 **Proof.** Let `k` be the number of ordinary edges of `F` joining different members of this partition. Since `F` has two components while the partition has three nonempty classes, `k>=1`.
 
-Suppose `k=1`. Cutting the unique crossing edge produces exactly three nonempty path blocks. Hence each of `V(C),V(A),V(B)` induces one connected block of `F`, and one of the three classes is an entire component of `F`.
+Suppose `k=1`. Cutting the unique cut interaction edge produces exactly three nonempty path blocks. Hence each of `V(C),V(A),V(B)` induces one connected block of `F`, and one of the three classes is an entire component of `F`.
 
 The isolated class cannot be `V(C)`: otherwise the other component of `F` is a tight Hamilton path on `S`, contradicting non-Hamiltonicity of `K[S]`.
 
-Thus one of `A,B` is an entire component of `F`. Every component of an exact two-path cover of `K-d` has order at least three. Indeed, if a component had order one or two, then adjoining `d` gives a set of order at most three, which is Hamiltonian; replacing that component by a Hamilton path on the enlarged set would give a spanning two-path cover of `K`.
+Thus one of `A,B` is an entire component of `F`. Every component of a two-path cover of `K-d` has order at least three. Indeed, if a component had order one or two, then adjoining `d` gives a set of order at most three, which is Hamiltonian; replacing that component by a Hamilton path on the enlarged set would give a spanning two-path cover of `K`.
 
 Because `|A|+|B|=4` and `min{|A|,|B|}<=2`, the isolated component therefore has order three and the other of `A,B` has order one. By hypothesis, the displayed three-vertex path extends with `d` to a tight four-vertex path. Replacing that entire component of `F` by the extended path leaves the other component unchanged and yields a spanning two-path cover of `K`, again a contradiction.
 
@@ -187,7 +187,7 @@ Hence `k>=2`. ∎
 
 If `P=(p_0,\ldots,p_r)` and `Q=(q_0,\ldots,q_s)` are vertex-disjoint ordered paths, write `PQ` for the concatenated vertex sequence `(p_0,\ldots,p_r,q_0,\ldots,q_s)`. For `0<=i<=j<=r`, write `P[i,j]=(p_i,\ldots,p_j)`.
 
-## 1. Exterior barriers at Hamilton path ends
+## 1. Exterior constraints at Hamilton path ends
 
 ### Proposition 1.1
 
@@ -247,11 +247,11 @@ Suppose \`A\` concatenates with one of \`P,Q\`, say \`P\`. If \`B\` concatenates
 
 ### Proposition 4.1
 
-Let \`K\` be a boundary tournament with \`pc(K)>2\`, let \`a,b\` be distinct vertices, let \`F=P\mid Q\` be an exact two-path cover of \`K-a\` in which the component containing \`b\` is nontrivial, and let \`T=R\mid S\` be an exact two-path cover of \`K-\{a,b\}\`.
+Let \`K\` be a boundary tournament with \`pc(K)>2\`, let \`a,b\` be distinct vertices, let \`F=P\mid Q\` be a two-path cover of \`K-a\` in which the component containing \`b\` is nontrivial, and let \`T=R\mid S\` be a two-path cover of \`K-\{a,b\}\`.
 
 If \`b\` is an endpoint of its component in \`F\`, let \`c\` be its path neighbor. If that component begins \`(b,c,\ldots)\`, then \`(c,b,a)\` is tight. If it ends \`(\ldots,c,b)\`, then \`(a,b,c)\` is tight.
 
-If \`b\` is internal in its component in \`F\`, then deleting \`b\` from \`F\` gives an exact three-path cover of \`K-\{a,b\}\`, and some ordinary edge of \`T\` has endpoints in two different components of \`F-b\`.
+If \`b\` is internal in its component in \`F\`, then deleting \`b\` from \`F\` gives a three-path cover of \`K-\{a,b\}\`, and some ordinary edge of \`T\` has endpoints in two different components of \`F-b\`.
 
 **Proof.**
 Suppose first that \`b\` is an endpoint of its component in \`F\`. Because the component is nontrivial, it has a path neighbor \`c\`.
@@ -260,13 +260,13 @@ If the component begins \`(b,c,\ldots)\` and \`(a,b,c)\` were tight, prepending 
 
 If the component ends \`(\ldots,c,b)\`, the same argument shows that \`(c,b,a)\` cannot be tight, since appending \`a\` would two-cover \`K\`; hence \`(a,b,c)\` is tight.
 
-Now suppose \`b\` is internal in its component of \`F\`. Deleting \`b\` splits that component into two nonempty tight subpaths, while the other component of \`F\` remains nonempty. Thus \`F-b\` is an exact three-path cover of \`K-\{a,b\}\`. By \`this module\` Section 1, some ordinary edge of the exact two-path cover \`T\` has endpoints in two distinct components of \`F-b\`. ∎
+Now suppose \`b\` is internal in its component of \`F\`. Deleting \`b\` splits that component into two nonempty tight subpaths, while the other component of \`F\` remains nonempty. Thus \`F-b\` is a three-path cover of \`K-\{a,b\}\`. By \`this module\` Section 1, some ordinary edge of the two-path cover \`T\` has endpoints in two distinct components of \`F-b\`. ∎
 
 ## 5. Endpoint alternatives after deleting two vertices
 
 ### Proposition 5.1
 
-Let \`K\` be a boundary tournament with \`pc(K)>2\`, let \`a,b\` be distinct vertices, and let \`T=P\mid Q\` be an exact two-path cover of \`K-\{a,b\}\`. If \`P=(p_0,\ldots,p_r)\` with \`r\ge1\`, then each of the following disjunctions holds:
+Let \`K\` be a boundary tournament with \`pc(K)>2\`, let \`a,b\` be distinct vertices, and let \`T=P\mid Q\` be a two-path cover of \`K-\{a,b\}\`. If \`P=(p_0,\ldots,p_r)\` with \`r\ge1\`, then each of the following disjunctions holds:
 
 1. \`(p_0,b,a)\` or \`(p_1,p_0,b)\` is tight;
 2. \`(p_0,a,b)\` or \`(p_1,p_0,a)\` is tight;
@@ -279,13 +279,13 @@ Prepend \`(a,b)\` to \`P\`. The only new consecutive triples are \`(a,b,p_0)\` a
 Appending \`(a,b)\` to \`P\` creates exactly the two possible new triples \`(p_{r-1},p_r,a)\` and \`(p_r,a,b)\`; reversing a non-tight one gives \`(a,p_r,p_{r-1})\` or \`(b,a,p_r)\`. Appending \`(b,a)\` gives the fourth disjunction. ∎
 
 
-# Four-vertex structure inside exact two-covers
+# Four-vertex structure inside two-covers
 
 ## 1. Degree and block counts
 
 ### Proposition 1.1
 
-Let \`G\` be a boundary tournament with \`V(G)=S\sqcup Q\`, where \`|S|=4\` and \`G[S]\` is non-Hamiltonian. Let \`T\` be an exact two-path cover of \`G\` in which every vertex of \`S\` has ordinary degree two.
+Let \`G\` be a boundary tournament with \`V(G)=S\sqcup Q\`, where \`|S|=4\` and \`G[S]\` is non-Hamiltonian. Let \`T\` be a two-path cover of \`G\` in which every vertex of \`S\` has ordinary degree two.
 
 Put
 \`e=|E(T[S])|\`,
@@ -307,7 +307,7 @@ The sum of ordinary degrees over the four vertices of \`S\` is eight. Each edge 
 \`8=2e+\delta\`,
 so \`\delta=8-2e\`.
 
-Cut all \`\delta\` edges joining \`S\` to \`Q\`. The exact two-path forest becomes \`\delta+2\` maximal blocks lying entirely in one side. Since \`T[S]\` is a forest on four vertices with \`e\` edges, it has \`4-e\` components. Therefore
+Cut all \`\delta\` edges joining \`S\` to \`Q\`. The two-path forest becomes \`\delta+2\` maximal blocks lying entirely in one side. Since \`T[S]\` is a forest on four vertices with \`e\` edges, it has \`4-e\` components. Therefore
 \`b_Q=(\delta+2)-(4-e)=6-e\`.
 The three displayed cases follow. ∎
 
@@ -325,7 +325,7 @@ After contracting all maximal same-side components, the two path components of t
 
 # Cover-comparison and matching principles
 
-## 1. A component drop forces a crossing edge
+## 1. A component drop forces a cut interaction edge
 
 Let `H` be a boundary tournament and let `W subseteq V(H)`. Suppose `H[W]` has path covers
 
@@ -430,7 +430,7 @@ If some component had `delta=-1`, then with only one component of excess `+1` th
 
 The positivity hypothesis `W>0` is essential for this formulation: with zero total weight, several zero-weight `F`-heavy components can coexist with `J`-heavy components.
 
-A useful specialization takes `w` to be the indicator of edges crossing a fixed vertex partition. If `J` uses no crossing edge, the second alternative says that one alternating path contains every crossing edge of `F`.
+A useful specialization takes `w` to be the indicator of edges cut interaction a fixed vertex partition. If `J` uses no cut interaction edge, the second alternative says that one alternating path contains every cut interaction edge of `F`.
 
 
 # Boundary-tournament cover augmentation
@@ -503,7 +503,7 @@ Let `G` be a boundary tournament. Let
 
 `J=P|Q|R`
 
-be a spanning three-path cover and let `F` be a spanning exact two-path cover of the same vertex set.
+be a spanning three-path cover and let `F` be a spanning two-path cover of the same vertex set.
 
 Choose an ordered pair of distinct components, say
 
@@ -517,11 +517,11 @@ and
 
 `(p_k,q_0,q_1)` when `l>=1`.
 
-Hence either one of the displayed triples is non-tight, in which case its reverse is a tight triple on three distinct vertices, or the concatenation gives a spanning exact two-path cover.
+Hence either one of the displayed triples is non-tight, in which case its reverse is a tight triple on three distinct vertices, or the concatenation gives a spanning two-path cover.
 
-Moreover, among distinct ordinary edges joining endpoints of two components of `J` and used to concatenate those components, at most one can produce the same ordinary path forest as `F`. Consequently there is a concatenation for which either a new consecutive triple is non-tight and supplies its tight reverse, or the resulting exact two-cover has ordinary path forest different from that of `F`.
+Moreover, among distinct ordinary edges joining endpoints of two components of `J` and used to concatenate those components, at most one can produce the same ordinary path forest as `F`. Consequently there is a concatenation for which either a new consecutive triple is non-tight and supplies its tight reverse, or the resulting two-cover has ordinary path forest different from that of `F`.
 
-**Proof.** Every consecutive triple wholly inside `P,Q,R` is inherited. If both existing new triples are tight, the concatenation of `P` and `Q`, together with `R`, is an exact two-cover.
+**Proof.** Every consecutive triple wholly inside `P,Q,R` is inherited. If both existing new triples are tight, the concatenation of `P` and `Q`, together with `R`, is a two-cover.
 
 Every successful concatenation adds exactly one ordinary edge to the ordinary path forest of `J`. If such a concatenation has the same ordinary forest as `F`, then the forest of `J` is contained in that of `F` and the added joining edge is the unique edge of `F` not already in `J`. Thus at most one distinct joining edge can reconstruct the forest of `F`.
 
@@ -532,7 +532,7 @@ The three unordered pairs of components of `J` supply three distinct ordinary en
 
 - ID: coversurg01
 - Kind: toolkit
-- Version: 1
+- Version: 4
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

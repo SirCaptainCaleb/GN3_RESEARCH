@@ -1,9 +1,9 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T13:07:34.761912+00:00",
+  "generated_at": "2026-10-03T14:23:04.843994+00:00",
   "main_line_count": 6,
   "main_line_versions": {
-    "defect_lines_and_spanningorder_compression": 2,
+    "defect_lines_and_spanningorder_compression": 4,
     "deletioncover_compatibility_and_global_obstruction_structure": 8,
     "proof_rehearsal_index2_quadratic01": 2,
     "proof_rehearsal_index4_endpoint_transport01": 1,
@@ -14,16 +14,16 @@
   "research_line_count": 2,
   "research_line_versions": {
     "leaf_comparisons_in_deletion_support_forests": {
-      "math_version": 7,
-      "version": 7
+      "math_version": 9,
+      "version": 12
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts": {
       "math_version": 7,
-      "version": 8
+      "version": 10
     }
   },
   "schema": "gn3n",
-  "snapshot_revision": 190,
+  "snapshot_revision": 227,
   "tables": [
     "documents",
     "research",
@@ -34,5 +34,9 @@
     "brainstorms",
     "dictionary"
   ],
-  "toolkit_count": 107
+  "toolkit_count": 109,
+  "universal_document_versions": {
+    "guide": 1,
+    "reflexes": 1
+  }
 }

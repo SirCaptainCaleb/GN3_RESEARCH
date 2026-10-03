@@ -1,6 +1,6 @@
-# A blocked center in a four-core extension star forces a complete outer-pair six-shell or positioned disturbance
+# A blocked center in a four-core extension star forces a complete outer-pair six-set or positioned disturbance
 
-**Summary:** A blocked center in a four-core extension star forces a complete outer-pair six-shell or positioned disturbance
+**Summary:** A blocked center in a four-core extension star forces a complete outer-pair six-set or positioned disturbance
 
 ## Statement
 
@@ -12,9 +12,9 @@ Assume none of outcomes (1)-(3) occurs. Fix distinct leaves r_i,r_j. Apply three
 
 ## Metadata
 
-- ID: blocked_fourcore_star_outer_shell01
+- ID: blocked_fourcore_star_outer_sixset01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

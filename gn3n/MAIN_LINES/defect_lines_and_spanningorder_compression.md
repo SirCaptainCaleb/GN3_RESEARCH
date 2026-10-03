@@ -184,7 +184,7 @@ apply the endpoint-pair Hamiltonicity theorem with prescribed pair \(\{p_1,p_m\}
 \[
 \{p_1,p_m,x,y\}
 \]
-for distinct \(x,y\in\{a,b,c\}\). The third cover component \(Q\) is nonempty, so this Hamiltonian four-set is proper. Minimum-counterexample calculus therefore gives an exact two-cover of its complement. \(\square\)
+for distinct \(x,y\in\{a,b,c\}\). The third cover component \(Q\) is nonempty, so this Hamiltonian four-set is proper. Minimum-counterexample calculus therefore gives a two-cover of its complement. \(\square\)
 
 Thus every four-set state beside a nontrivial path already contains a bounded Hamiltonian support carrying both displayed endpoints of that path. No lower bound such as \(m\ge6\), endpoint-extension case split, or finite-order remainder is needed.
 
@@ -232,6 +232,6 @@ It does not imply cyclic rotation of an ordered triple and does not reverse a ti
 
 ## Canonical references
 
-- [[common_endpoint_barriers_fivewindow_counterexample01]] — Common endpoint barriers do not force Hamiltonian five-vertex windows
+- [[common_endpoint_constraints_fivewindow_counterexample01]] — Common endpoint constraints do not force Hamiltonian five-vertex windows
 - [[mincex01]] — Minimum-counterexample calculus
 - [[minimum_counterexample_has_a_genuine_reversing_tight_triple]] — Every minimum counterexample has a genuine reversing tight triple

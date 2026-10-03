@@ -4,7 +4,7 @@
 
 ## Statement
 
-Let H be a minimum counterexample and let C=P_1|P_2|P_3 be Phi-minimal in its pairwise-repartition component. Suppose some component has order four. Then at least one of the following holds: (1) C has a component of order three, hence |V(H)|<=13 and its size multiset is one of {3,3,5},{3,4,4},{3,4,5},{3,5,5}; (2) for the four-component X and some other displayed path P, the endpoint six-shell of four_path_long_pair_escape01 has Hamiltonian five-vertex deletions with an order disagreement; (3) every component order belongs to {4,5,6}, so |V(H)|<=18 and the size multiset is one of {4,4,4},{4,4,5},{4,4,6},{4,5,5},{4,5,6},{4,6,6}.
+Let H be a minimum counterexample and let C=P_1|P_2|P_3 be Phi-minimal in its pairwise-repartition component. Suppose some component has order four. Then at least one of the following holds: (1) C has a component of order three, hence |V(H)|<=13 and its size multiset is one of {3,3,5},{3,4,4},{3,4,5},{3,5,5}; (2) for the four-component X and some other displayed path P, the endpoint six-set of four_path_long_pair_escape01 has Hamiltonian five-vertex deletions with an order disagreement; (3) every component order belongs to {4,5,6}, so |V(H)|<=18 and the size multiset is one of {4,4,4},{4,4,5},{4,4,6},{4,5,5},{4,5,6},{4,6,6}.
 
 ## Body
 
@@ -14,7 +14,7 @@ Let X be a displayed component of order four. If another component has order thr
 
 - ID: phi_minimum_with_four_support_is_small_or_disagrees01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted

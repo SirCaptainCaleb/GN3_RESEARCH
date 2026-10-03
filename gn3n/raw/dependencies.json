@@ -295,20 +295,6 @@
   },
   {
     "compatibility_status": "confirmed",
-    "consumer_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell",
-    "consumer_math_version": 1,
-    "premise_id": "toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
-    "consumer_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell",
-    "consumer_math_version": 1,
-    "premise_id": "blocked_fourcore_star_outer_shell01",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
     "consumer_id": "toolkit_gives_an_interior_end_edge_reversal_or_a_central_sandwich",
     "consumer_math_version": 1,
     "premise_id": "toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set",
@@ -430,13 +416,6 @@
     "compatibility_status": "confirmed",
     "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
     "consumer_math_version": 7,
-    "premise_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_six_shell",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
-    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
-    "consumer_math_version": 7,
     "premise_id": "toolkit_gives_an_interior_end_edge_reversal_or_a_central_sandwich",
     "premise_math_version": 1
   },
@@ -491,44 +470,9 @@
   },
   {
     "compatibility_status": "confirmed",
-    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
     "consumer_math_version": 7,
-    "premise_id": "balanced_omission_swap_gives_descent_or_selected_singleton_recurrence",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
-    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
-    "consumer_math_version": 7,
-    "premise_id": "connected_support_tree_census_bounds_exceptional_leaf_transfer",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
-    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
-    "consumer_math_version": 7,
-    "premise_id": "path_disturbance_endpoint_reversal_descent_or_an_omission_swap",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
-    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
-    "consumer_math_version": 7,
-    "premise_id": "strict_containment_in_deletion_partition_trees",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
-    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
-    "consumer_math_version": 7,
-    "premise_id": "exceptional_leaf_transfer_equals_support_order_gap",
-    "premise_math_version": 1
-  },
-  {
-    "compatibility_status": "confirmed",
-    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
-    "consumer_math_version": 7,
-    "premise_id": "exceptional_leaf_label_is_end_local_or_order_disagreeing",
+    "premise_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_sixset",
     "premise_math_version": 1
   },
   {
@@ -558,5 +502,110 @@
     "consumer_math_version": 1,
     "premise_id": "leaf_endpoint_singleton_triangle01",
     "premise_math_version": 3
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "exceptional_leaf_label_gives_disagreement_reversal_or_neutral_recurrence",
+    "consumer_math_version": 1,
+    "premise_id": "exceptional_leaf_label_is_end_local_or_order_disagreeing",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "exceptional_leaf_label_gives_disagreement_reversal_or_neutral_recurrence",
+    "consumer_math_version": 1,
+    "premise_id": "exceptional_leaf_transfer_equals_support_order_gap",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "exceptional_leaf_reselection_creates_smaller_leaf_or_disconnects",
+    "consumer_math_version": 1,
+    "premise_id": "exceptional_leaf_transfer_equals_support_order_gap",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "exceptional_leaf_reselection_creates_smaller_leaf_or_disconnects",
+    "consumer_math_version": 1,
+    "premise_id": "connected_support_tree_census_bounds_exceptional_leaf_transfer",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "exceptional_leaf_reselection_creates_smaller_leaf_or_disconnects",
+    "consumer_math_version": 1,
+    "premise_id": "strict_containment_in_deletion_partition_trees",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "balanced_omission_swap_gives_descent_or_selected_singleton_recurrence",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "connected_support_tree_census_bounds_exceptional_leaf_transfer",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "exceptional_leaf_label_gives_disagreement_reversal_or_neutral_recurrence",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "exceptional_leaf_label_is_end_local_or_order_disagreeing",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "exceptional_leaf_transfer_equals_support_order_gap",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "path_disturbance_endpoint_reversal_descent_or_an_omission_swap",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "strict_containment_in_deletion_partition_trees",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "leaf_comparisons_in_deletion_support_forests",
+    "consumer_math_version": 9,
+    "premise_id": "exceptional_leaf_reselection_creates_smaller_leaf_or_disconnects",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_sixset",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_sixset",
+    "consumer_math_version": 1,
+    "premise_id": "blocked_fourcore_star_outer_sixset01",
+    "premise_math_version": 1
   }
 ]

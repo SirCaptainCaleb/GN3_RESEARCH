@@ -1,0 +1,20 @@
+# Common endpoint constraints do not force Hamiltonian five-vertex windows
+
+**Summary:** Common endpoint constraints do not force Hamiltonian five-vertex windows
+
+## Statement
+
+For every integer m>=7 there is a boundary tournament with a tight path Q=(q_0,...,q_{m-1}) and two exterior vertices z,zprime such that, for both r in {z,zprime}, all three left constraint triples (q_{i+1},q_i,r), i=0,1,2, and all three right constraint triples (r,q_{i+1},q_i), i=m-4,m-3,m-2, are tight, but {z,zprime,q_0,q_1,q_2} is non-Hamiltonian. Thus the six common endpoint-constraint triples for a pair of exterior vertices do not imply Hamiltonicity of the consecutive five-vertex window or either proposed alternating Hamilton order. No minimum-counterexample realization is asserted.
+
+## Body
+
+Use the non-Hamiltonian five-vertex boundary tournament B from fixed_terminal_pair_balancing_counterexample01: its vertices are residues 0,...,4, ordinary edge {i,j} has color i+j modulo 5, and the matching color classes are ordered 0<1<3<2<4. Internal orders within a matching are arbitrary. That source proves B non-Hamiltonian by a uniformly finite five-vertex argument. Rename its vertices q_0=4, q_1=1, q_2=0, z=2, zprime=3. The ordinary edges q_0q_1,q_1q_2 have colors 0,1, so (q_0,q_1,q_2) is tight. For r=z, the comparisons needed for (q_1,q_0,z) and (q_2,q_1,z) have color inequalities 0<1 and 1<3. For r=zprime, the corresponding inequalities are 0<2 and 1<4, also true in the class order. Thus both exterior vertices have the first two left constraints while the five-set is non-Hamiltonian. Add fresh q_3,...,q_{m-1}. On Q choose an edge order beginning q_0q_1<q_1q_2<q_0q_2, which agrees with B on its three old Q-edges, and then order all remaining Q-edges by increasing lexicographic keys (max endpoint index,min endpoint index). The displayed Q is tight. Keep all triples of B. For each r=z,zprime prescribe (q_3,q_2,r) tight, completing the third left constraint. Prescribe the three right constraint triples in the statement tight. Since m>=7, every right constraint pair has indices at least three and involves a fresh vertex; these prescriptions do not concern a triple entirely within B. The left and right edge-index ranges are disjoint. Every prescription selects one member of a distinct reversal pair, so they are mutually consistent. Complete every remaining reversal pair arbitrarily. The result is a boundary tournament with the asserted tight Q and six constraints for both labels, and its first five-vertex window is still B. This is a uniform explicit construction for arbitrary m, not an order-dependent enumeration. The original three-side theorem threeside01 supplies the constraint triples correctly, but the step in threeside_consecutive_fivewindows01 that rotates (q_{i+1},q_i,r) into (q_i,r,q_{i+1}) is unsupported. These two triples belong to different reversal pairs. The family proves the constraint data alone cannot repair that step. The full specialized minimum-counterexample hypotheses might supply extra information; they are not realized by this construction and are not disproved. A valid sufficient condition for the two alternating five-orders is instead that, for each r=z,zprime, both (q_k,r,q_{k+1}) and (q_{k+1},r,q_{k+2}) are tight. Boundary antisymmetry on (z,q_{k+1},zprime) then supplies exactly one of the middle triples, yielding one of (q_k,z,q_{k+1},zprime,q_{k+2}) or its label-exchanged order. These four ordered attachment triples require a fresh proof from actual three-side data; they cannot be obtained by rotating the endpoint constraints.
+
+## Metadata
+
+- ID: common_endpoint_constraints_fivewindow_counterexample01
+- Kind: toolkit
+- Version: 1
+- Math version: 1
+- Audit: unaudited
+- Refutation: unrefuted
