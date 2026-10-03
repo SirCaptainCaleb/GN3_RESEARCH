@@ -14,7 +14,7 @@
     "save_brainstorm(session_id, payload, expected_version := null)",
     "promote_brainstorm(session_id, brainstorm_id, payload := {}, expected_version)",
     "dictionary()",
-    "changes(since_event := 0, until_event := null, limit := 100)",
+    "changes(since_revision := 0, until_revision := null, limit := 100)",
     "startup_steward()",
     "claim_chore(session_id, kinds := {audit,maintenance})",
     "finish_chore(session_id, chore_id, outcome := {})",
@@ -24,6 +24,12 @@
     "commit_staged_batch(session_id, batch_id, overlap_checked)",
     "discard_staged_batch(session_id, batch_id)",
     "help()"
+  ],
+  "identifiers": [
+    "Canonical IDs are meaningful lowercase snake_case text. UUIDs and bare numeric sequence IDs are not permitted.",
+    "Generated ID collisions use alphabetic suffixes (_b, _c, ..., _z, _aa, ...) rather than numeric suffixes.",
+    "Session and chore IDs exposed to workers are snake_case text. Internal numeric primary keys are implementation details.",
+    "Event ordering is exposed as a revision number, not an ID."
   ],
   "publication": [
     "Every substantive durable research publication must explicitly include dependencies, using [] when genuinely self-contained.",
@@ -56,5 +62,5 @@
     "After choosing a route and before proof work, run one route-specific search across existing Research Lines and Toolkit entries to avoid rediscovery.",
     "Then perform the narrow changes()/read() freshness check for the chosen Main Line and Research Line."
   ],
-  "usage": "Call through the active project schema."
+  "usage": "Call through the active project schema. boot() returns a human-readable snake_case session_id; use that text ID for all later mutations."
 }
