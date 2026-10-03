@@ -9,6 +9,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "linp")
+# Guide text is mirrored verbatim from Supabase.
 TABLES = ("documents","research","research_line_chunks","research_versions","dependencies","supersessions","brainstorms","dictionary")
 PAGE = 500
 
