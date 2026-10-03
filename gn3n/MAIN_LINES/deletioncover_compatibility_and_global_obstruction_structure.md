@@ -183,7 +183,17 @@ Hence \(|P|>|Q|\) whenever the split alternative occurs. In particular, if a lea
 Since adjacent support orders sum to \(|V(H)|-1\), support orders alternate between two values on each tree component of \(J\). Therefore, if a tree component has leaves in both bipartition classes, at least one leaf is no larger than its neighbor and forces direct mixing. A forest component with no direct-mixing leaf must have every leaf in the larger support-size bipartition class. See [[leaf_endpoint_singleton_triangle01]].
 
 
-The connected-tree case admits a stronger conclusion without balanced selection. For every leaf support \(P\) with neighbor \(Q\), all but at most one label \(y\in Q\) have a selected deletion cover containing an edge between \(P\) and \(Q-\{y\}\). In particular, one of the two endpoints of any Hamiltonian order on \(Q\) forces the direct-mixing alternative of Proposition 8. For a disconnected forest, the same bound holds among labels whose selected edges lie in the leaf's tree component; if neither endpoint forces direct mixing, at least one endpoint's selected edge lies in a different tree component. The containment and path-order proofs are given in [[leaf_comparisons_in_deletion_support_forests]].
+The connected-tree case admits a stronger conclusion without balanced selection. For every leaf support \(P\) with neighbor \(Q\), all but at most one label \(y\in Q\) have a selected deletion cover containing an edge between \(P\) and \(Q-\{y\}\). In particular, one of the two endpoints of any Hamiltonian order on \(Q\) forces direct mixing.
+
+Choose such an endpoint \(y\). Applying [[path_disturbance_endpoint_reversal_descent_or_an_omission_swap]] with exterior class \(P\) and inherited path \(Q-\{y\}\) eliminates the old leaf-splitting residue. In a minimum counterexample, the endpoint comparison therefore yields an order disagreement, a split inherited edge of \(Q-\{y\}\), a leave-and-return path disturbance through \(P\), an explicit reversal of the end edge at \(y\), strict quadratic-potential descent, or a neutral omission swap.
+
+Minimum-imbalance selection sharpens the last alternative further. By [[balanced_omission_swap_gives_descent_or_selected_singleton_recurrence]], the omission swap continues without increasing \(\Phi\) to the selected singleton lift at the new omitted label. Moreover [[connected_support_tree_census_bounds_exceptional_leaf_transfer]] shows that if \(A\dot\cup B\) is the bipartition of the connected support tree, then every selected deletion cover has component orders \((|A|-1,|B|-1)\). Hence all selected singleton lifts have one common potential
+\[
+(|A|-1)^2+(|B|-1)^2+1.
+\]
+Thus the omission-swap residue in the connected-tree case is necessarily equal-\(\Phi\) recurrence between selected singleton lifts, joined by at most two neutral pairwise repartitions; it cannot give strict descent between selected singleton lifts. The only remaining strict-descent branch is the direct lower-\(\Phi\) three-cover supplied by the endpoint comparison itself.
+
+For a disconnected forest, the same endpoint conclusion holds whenever both endpoint labels remain in the leaf's tree component; otherwise at least one endpoint's selected edge leaves that component. The detailed endpoint-forcing and recurrence arguments are in [[leaf_comparisons_in_deletion_support_forests]].
 
 ## 6. The odd-cycle case
 
