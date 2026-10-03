@@ -3,7 +3,7 @@
 
 The canonical research surface has four mathematical roles: Main Lines, Research Lines, Toolkit, and Brainstorms.
 
-Main Lines are ordered sequences of mature Research Lines and form the global proof map. Research Lines are evolving route-specific proof developments assembled from ordered chunks. Toolkit entries are independently reusable mathematics. Brainstorms are cheap persistent exploratory seeds.
+Main Lines are prose documents automatically composed from ordered sequences of mature Research Lines and form the global proof map. Research Lines are evolving route-specific proof developments assembled from ordered chunks. Toolkit entries are independently reusable mathematics. Brainstorms are cheap persistent exploratory seeds.
 
 Route-specific proof development belongs in a Research Line. Continue an existing route in its hot chunk; when a Brainstorm develops into a coherent proof route, create a Research Line for it. Main Lines record global synthesis by ordering mature, crystallized Research Lines. Update a Main Line sequence when Research Lines are ready for synthesis, and edit its document metadata when the synthesis needs restructuring. Develop and prove route-specific mathematics in the active Research Line, including its named lemmas, propositions, theorems, case analyses, and intermediate reductions. Keep the connected argument together in the manuscript.
 

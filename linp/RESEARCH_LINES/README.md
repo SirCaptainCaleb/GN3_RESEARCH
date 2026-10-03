@@ -1,6 +1,6 @@
 # Research Lines
 
-Research Lines are the section-sized mathematical manuscripts. Main Lines compile ordered mature Research Lines; standalone Research Lines remain active development routes.
+Research Lines are the section-sized mathematical manuscripts. Main Lines are prose documents compiled from ordered mature Research Lines; standalone Research Lines remain active development routes.
 
 - [A false strengthening](terminal_pair_cycles_and_rotations_a_false_strengthening.md) (`terminal_pair_cycles_and_rotations_a_false_strengthening`) — integrated: Main Line 3 — Terminal-pair cycles and rotations at position 7
 - [A global identity](snake_accounting_and_the_4348_equality_problem_a_global_identity.md) (`snake_accounting_and_the_4348_equality_problem_a_global_identity`) — integrated: Main Line 1 — Snake accounting and the 43/48 equality problem at position 4

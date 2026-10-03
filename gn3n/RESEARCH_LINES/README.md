@@ -1,6 +1,6 @@
 # Research Lines
 
-Research Lines are the section-sized mathematical manuscripts. Main Lines compile ordered mature Research Lines; standalone Research Lines remain active development routes.
+Research Lines are the section-sized mathematical manuscripts. Main Lines are prose documents compiled from ordered mature Research Lines; standalone Research Lines remain active development routes.
 
 - [A block-count identity](quadratic_potential_and_pairwise_repartition_a_block_count_identity.md) (`quadratic_potential_and_pairwise_repartition_a_block_count_identity`) — integrated: Main Line II — quadratic potential and pairwise repartition at position 4
 - [A common four-vertex core](longest_paths_and_reversal_structure_a_common_four_vertex_core.md) (`longest_paths_and_reversal_structure_a_common_four_vertex_core`) — integrated: Main Line V — longest paths and reversal structure at position 5
