@@ -174,7 +174,7 @@ This is the current {schema} research snapshot. Read OVERVIEW.md, GUIDE.md, REFL
 
 Mathematical work must be publication-precise and contain no proof-process or research-process meta-language. Computation, computer search, brute force, numerical experimentation, code, CAS/SAT/SMT tools, and external web search are banned.
 
-After choosing a route, call changes(...) once. Compare only the chosen Main Line and Research Line versions, if any, with MANIFEST.json; read([id]) only for a chosen manuscript whose live version differs. changes(...) is a freshness signal, not a mathematical changelog. Then work from the refreshed startup context and local reasoning without consulting shared research state.
+After choosing a route, call changes(...) once. Compare only the chosen Main Line and Research Line versions, if any, with MANIFEST.json. If a chosen manuscript changed, page through it with read([id]); pass next_cursor back into read(...) until complete=true. changes(...) is a freshness signal, not a mathematical changelog. Then work from the refreshed startup context and local reasoning without consulting shared research state.
 
 Follow the recurring research behavior in REFLEXES.md throughout the session.
 
