@@ -18,3 +18,4 @@ Fix distinct vertices a,b. For each vertex x outside {a,b}, boundary antisymmetr
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

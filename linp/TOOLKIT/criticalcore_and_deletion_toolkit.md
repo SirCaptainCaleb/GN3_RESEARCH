@@ -18,3 +18,4 @@ Organizational home for reusable critical-core and threshold-deletion structure.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

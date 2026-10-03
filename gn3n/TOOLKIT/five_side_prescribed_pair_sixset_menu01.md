@@ -22,3 +22,4 @@ Strengthening and earlier use. Apply bad_six_deletion_matching_fourcore01 to the
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

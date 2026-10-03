@@ -20,3 +20,4 @@ Assume now that i,j,k are pairwise distinct. Then i<j<k, hence k>=i+2. Apply the
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

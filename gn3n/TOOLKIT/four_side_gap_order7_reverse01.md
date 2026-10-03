@@ -18,3 +18,4 @@ The hard gap-network outcome assigns the four vertices x_i to four distinct gaps
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

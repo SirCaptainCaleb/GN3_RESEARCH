@@ -18,3 +18,4 @@ Fix distinct u,v,w in L and let i=g(u)<g(w)=j. Suppose (u,v,w) is tight. If j=i+
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

@@ -14,3 +14,4 @@ Reusable finite block-design facts, especially incidence, complement, and matchi
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

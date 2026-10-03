@@ -18,3 +18,4 @@ By sixset_deletion_graph_strengthened01, absence of adjacent edges forces |D|=4,
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

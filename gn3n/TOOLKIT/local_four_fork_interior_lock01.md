@@ -18,3 +18,4 @@ By the two-bad-four-extension lemma in localextend01, F=D union {f,g} is Hamilto
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

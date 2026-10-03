@@ -24,3 +24,4 @@ For B define N_0={v r_{j+1},s_2 r_j}, N_1={v s_2,r_j r_{j+1}}, N_2={v r_j,s_2 r_
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

@@ -16,3 +16,4 @@ The original 3-uniform degree d_H(v) counts hyperedges through v. After a densit
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

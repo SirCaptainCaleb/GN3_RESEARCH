@@ -24,3 +24,4 @@ Whenever one of these four-sets is Hamiltonian, it is proper. Its complement can
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

@@ -18,3 +18,4 @@ By 1d746da79d34 choose a genuine reversing tight triple T; in particular T itsel
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

@@ -18,3 +18,4 @@ Organizational home for certified structural lemmas used across minimal-countere
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

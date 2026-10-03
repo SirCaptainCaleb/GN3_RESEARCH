@@ -22,3 +22,4 @@ Assume all three have alternative 2, at gap indices i,j,k. Sort the indices. If 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

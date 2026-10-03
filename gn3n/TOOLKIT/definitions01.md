@@ -37,3 +37,4 @@ Whenever a theorem below performs a rotation, concatenation, insertion, or repla
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

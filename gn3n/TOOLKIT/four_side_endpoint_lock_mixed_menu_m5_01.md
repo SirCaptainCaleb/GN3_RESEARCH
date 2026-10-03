@@ -38,3 +38,4 @@ Thus every four-side beside a nontrivial displayed path already carries a Hamilt
 - Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

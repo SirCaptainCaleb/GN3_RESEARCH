@@ -26,3 +26,4 @@ For the five-set corollary, take W=F-{L,R}, which has three vertices. Hence some
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

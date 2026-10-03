@@ -18,3 +18,4 @@ Put S=X union {a,b}, a six-vertex set. By the four-of-six theorem in smallset01,
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

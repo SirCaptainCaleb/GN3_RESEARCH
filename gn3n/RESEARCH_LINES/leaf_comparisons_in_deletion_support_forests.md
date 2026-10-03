@@ -125,7 +125,7 @@ Consequently, in a minimum counterexample with minimum-imbalance selected deleti
 \]
 Consequently, if the endpoint comparison of Corollary 6 reaches the neutral omission-swap alternative, it reaches another selected singleton lift on the same \(\Phi\)-level, joined to the original selected singleton lift by at most two neutral pairwise repartitions. In particular, within a connected support tree the omission-swap residue is genuine neutral recurrence, never strict descent between selected singleton lifts.
 
-**Proof.** By [[connected_support_tree_census_bounds_exceptional_leaf_transfer]], every support represented by a vertex of \(A\) has order \(|A|-1\), and every support represented by a vertex of \(B\) has order \(|B|-1\). Every selected edge of \(J\) joins the two bipartition classes, so every selected deletion cover \(F_v\) has component orders
+**Proof.** By Connected support-tree census bounds exceptional leaf transfer, every support represented by a vertex of \(A\) has order \(|A|-1\), and every support represented by a vertex of \(B\) has order \(|B|-1\). Every selected edge of \(J\) joins the two bipartition classes, so every selected deletion cover \(F_v\) has component orders
 \[
 |A|-1,\qquad |B|-1.
 \]
@@ -146,7 +146,7 @@ P\mid(B\cup\{x\})
 \]
 of \(H-y\) have the same component-order multiset. If the selected deletion covers minimize component imbalance, this replacement is also minimum-imbalance and is support-compatible with \(F_x=P\mid Q\) on \(H-\{x,y\}\).
 
-**Proof.** Apply [[exceptional_leaf_transfer_equals_support_order_gap]] to the block form supplied by Lemma 1. \(\square\)
+**Proof.** Apply Exceptional leaf transfer equals the support-order gap to the block form supplied by Lemma 1. \(\square\)
 
 Thus the unique possible non-mixing label in a connected support tree is not accompanied by an arbitrary smaller-support defect: it transfers exactly the support-order gap, and under balanced selection it admits an equally balanced support-compatible switch.
 
@@ -159,7 +159,7 @@ Thus the unique possible non-mixing label in a connected support tree is not acc
 
 If \(y\) is second from the relevant end, there is a tight triple reversing \(x\) and \(y\) across the endpoint vertex between their insertion slots.
 
-**Proof.** This is [[exceptional_leaf_label_is_end_local_or_order_disagreeing]]. \(\square\)
+**Proof.** This is An exceptional leaf label is end-local or order-disagreeing. \(\square\)
 
 Hence an exceptional non-mixing label cannot lie deep in the neighboring path without already producing an order disagreement. In the order-compatible case it is confined to an end-two window, with the non-extreme position carrying a displayed reversal.
 
@@ -172,7 +172,7 @@ Hence an exceptional non-mixing label cannot lie deep in the neighboring path wi
 2. there is a tight triple reversing \(x\) and \(y\) across an endpoint vertex of \(Q\);
 3. the selected singleton lifts \(F_x\mid\{x\}\) and \(F_y\mid\{y\}\) lie in the same quadratic-potential level and are joined by at most two neutral pairwise repartitions.
 
-**Proof.** Apply [[exceptional_leaf_label_gives_disagreement_reversal_or_neutral_recurrence]]. \(\square\)
+**Proof.** Apply An exceptional leaf label gives disagreement, reversal, or neutral selected-lift recurrence. \(\square\)
 
 Thus the exceptional non-mixing label has no residual positional case: after order disagreement and the displayed reversal are excluded, it is already a bounded neutral recurrence between selected deletion roots.
 
@@ -180,7 +180,7 @@ Thus the exceptional non-mixing label has no residual positional case: after ord
 
 The exceptional non-mixing label can be used to change the selected support graph, rather than merely recorded as a local residue.
 
-Suppose \(J\) is connected, \(P\) is a leaf with neighbor \(Q\), \(x\) labels \(PQ\), and \(y\in Q\) is exceptional. By [[exceptional_leaf_reselection_creates_smaller_leaf_or_disconnects]], the equally balanced support-compatible cover
+Suppose \(J\) is connected, \(P\) is a leaf with neighbor \(Q\), \(x\) labels \(PQ\), and \(y\in Q\) is exceptional. By Exceptional leaf reselection creates a smaller leaf or disconnects the support forest, the equally balanced support-compatible cover
 \[
 G_y=P\mid\bigl((Q-\{y\})\cup\{x\}\bigr)
 \]
@@ -192,15 +192,367 @@ is a leaf adjacent to \(P\) and satisfies \(|W|<|P|\).
 
 In the connected outcome, the new leaf has no exceptional neighboring label: every \(z\in P\) has a selected deletion cover containing a consecutive pair joining \(W\) to \(P-\{z\}\). Hence both endpoints of any Hamiltonian order on \(P\) are available for the direct-mixing endpoint comparison. The exceptional branch has therefore been converted into either the disconnected-forest case or a connected leaf comparison with no non-mixing exception.
 
+## Route results consolidated from the Toolkit
+
+### Connected support-tree census bounds exceptional leaf transfer
+
+**Statement.** Let J be a connected selected support tree with bipartition A union B. Every support represented in A has order |A|-1 and every support represented in B has order |B|-1. Under minimum-imbalance deletion-cover selection, if a leaf comparison has no consecutive pair between the two old supports, then the transferred block from the leaf support has order at most the support-size gap Delta. The corresponding containment path has exactly that many off-path edges. In particular, Delta=1 forces a one-vertex transfer and exactly one pendant edge off the containment path.
+
+Let \(H\) be a finite boundary \(3\)-tournament with \(\operatorname{pc}(H)>2\). Choose a two-cover \(F_x\) of \(H-x\) for every \(x\in V(H)\), and let \(J\) be the selected support graph. Assume that \(J\) is a connected tree. Write \(A\dot\cup B\) for its bipartition, and write \(S_u\subseteq V(H)\) for the path support represented by \(u\in V(J)\).
+
+Since every deletion label occurs on exactly one selected edge and distinct labels give distinct edges,
+\[
+|E(J)|=|V(H)|.
+\]
+Hence
+\[
+|V(H)|=|A|+|B|-1.
+\]
+
+**Lemma 1 (support-tree census).** For every \(u\in A\) and \(v\in B\),
+\[
+|S_u|=|A|-1,\qquad |S_v|=|B|-1.
+\]
+
+**Proof.** Fix \(w\in V(J)\) and root \(J\) at \(w\). For an edge \(e\) labeled \(d\), let its endpoints have depths \(k-1\) and \(k\), with the second endpoint farther from \(w\). The membership rule for deletion-partition trees says that \(d\in S_w\) exactly when the distance from \(w\) to the nearer endpoint of \(e\) is odd. Thus
+\[
+d\in S_w\quad\Longleftrightarrow\quad k-1\text{ is odd}
+\quad\Longleftrightarrow\quad k\text{ is even}.
+\]
+The edges of the rooted tree are in bijection with the non-root vertices via their farther endpoints. Therefore \(|S_w|\) is the number of positive even-depth vertices. These are precisely the vertices in the bipartition class of \(w\), excluding \(w\) itself. The formulas follow. \(\square\)
+
+Now assume that the selected deletion covers minimize the sum of squares of their two component orders. Let \(P=S_p\) be a leaf support, let \(Q=S_q\) be its neighbor, and let \(x\) label the edge \(pq\). Suppose \(p\in A\), \(q\in B\), and write
+\[
+\Delta=|P|-|Q|=|A|-|B|.
+\]
+
+Let \(y\in Q\), put \(C=Q-\{y\}\), and suppose that the selected cover \(F_y\) has no consecutive pair with one endpoint in \(P\) and the other in \(C\). The leaf-comparison structure gives a support \(S\subsetneq P\) and a nonempty set \(R=P-S\) such that the other path of \(F_y\) has one of the block orders
+\[
+(R,x,C),\qquad (C,x,R).
+\]
+Write
+\[
+p_0=|P|,\quad q_0=|Q|,\quad r=|R|,\quad s=|S|.
+\]
+Then \(p_0=r+s\), while \(C\cup\{x\}\) has order \(q_0\). The selected cover \(F_y\) has component orders \(q_0+r,s\), whereas
+\[
+P\mid(C\cup\{x\})
+\]
+is another two-cover of \(H-y\) with component orders \(p_0,q_0\). Minimum imbalance therefore gives
+\[
+(q_0+r)^2+s^2\le p_0^2+q_0^2.
+\]
+Using \(p_0=r+s\), this reduces to
+\[
+2r(q_0-s)\le0.
+\]
+Since \(r>0\), one has \(s\ge q_0\), and hence
+\[
+1\le r=p_0-s\le p_0-q_0=\Delta.
+\]
+
+This proves the following.
+
+**Theorem 2 (bounded exceptional transfer).** In a connected selected support tree with minimum-imbalance deletion-cover selection, an exceptional leaf comparison with no consecutive pair between the two old supports can occur only on the larger support-tree bipartition class. If \(P\) is the leaf support and
+\[
+\Delta=|P|-|Q|>0,
+\]
+then the comparison transfers a contiguous block \(R\subseteq P\) of order at most \(\Delta\) into the path containing \(x\) and \(Q-\{y\}\).
+
+The containment geometry gives the same bound directly in the support tree. Let \(r_0\in V(J)\) represent the support \(S=P-R\). Since \(J\) is connected, every ground label is an edge label of \(J\). The strict-containment theorem therefore gives
+\[
+P-S=
+\{\text{labels of edges of }J\text{ outside the }p\text{-}r_0\text{ path}\}.
+\]
+Consequently the number of edges outside that path is exactly \(|R|\), and hence at most \(\Delta\). Every such edge is pendant and is attached at odd distance from \(p\).
+
+**Corollary 3 (unit-gap rigidity).** If \(\Delta=1\), then every exceptional leaf comparison transfers exactly one vertex of \(P\). Moreover the \(p\)-\(r_0\) path has exactly one edge of \(J\) outside it; that edge is pendant and is attached at odd distance from \(p\).
+
+There is also a purely tree-theoretic interpretation of \(\Delta\). Suppose \(|A|>|B|\) and every leaf of \(J\) lies in \(A\). Then every vertex of \(B\) has degree at least two, and
+\[
+|A|+|B|-1
+ =|E(J)|
+ =\sum_{v\in B}\deg(v).
+\]
+Thus
+\[
+\Delta=|A|-|B|
+ =1+\sum_{v\in B}\bigl(\deg(v)-2\bigr).
+\]
+
+**Corollary 4 (branch-excess identity).** If all leaves lie in the larger bipartition class \(A\), the support-order gap equals one plus the total degree excess above two on the smaller class:
+\[
+|S_A|-|S_B|
+=
+1+\sum_{v\in B}\bigl(\deg(v)-2\bigr).
+\]
+In particular, gap one is equivalent to every vertex of the smaller class having degree two.
+
+### Exceptional leaf transfer equals the support-order gap
+
+**Statement.** Let J be a connected selected support tree. Let P be a leaf support with neighbor Q, let x label PQ, and let y in Q. Suppose the selected cover of H-y has one component S properly contained in P and its other component has block order (R,x,Q-{y}) or (Q-{y},x,R), where R=P-S. Then |S|=|Q| and |R|=|P|-|Q|. In particular Q-{y} union {x} is Hamiltonian and P | ((Q-{y}) union {x}) is a deletion cover of H-y with exactly the same component-order multiset as the selected exceptional cover.
+
+Let \(J\) be a connected selected support tree, with bipartition \(A\dot\cup B\). For each support-vertex \(u\in V(J)\), write \(S_u\) for its represented support. Every edge of \(J\) has a distinct deletion label, and connectedness gives \(|E(J)|=|V(H)|\), hence \(|V(J)|=|V(H)|+1\).
+
+Root \(J\) at a support-vertex \(w\). For an edge labeled \(d\), the usual membership alternation across deletion-partition edges shows that \(d\in S_w\) exactly when the farther endpoint of that edge has positive even depth from \(w\). Edges are in bijection with non-root vertices, so \(|S_w|\) equals the number of vertices in the bipartition class of \(w\) other than \(w\) itself. Consequently every support represented in \(A\) has order \(|A|-1\), and every support represented in \(B\) has order \(|B|-1\).
+
+Now let \(P=S_p\) be a leaf support with neighbor \(Q=S_q\), and let \(x\) label \(pq\). Fix \(y\in Q\), put \(C=Q-\{y\}\), and suppose the selected deletion cover \(F_y\) has one component with support \(S=S_r\subsetneq P\), while its other component has one of the block orders
+\[
+(R,x,C),\qquad(C,x,R),
+\]
+where \(R=P-S\neq\varnothing\).
+
+Since \(S_r\subsetneq S_p\), the deletion-partition containment parity forces the \(p\)-\(r\) path in \(J\) to have odd length. Hence \(r\) lies in the bipartition class opposite \(p\), which is also the class containing the neighbor \(q\). The census above therefore gives
+\[
+|S|=|Q|.
+\]
+Thus
+\[
+|R|=|P|-|S|=|P|-|Q|.
+\]
+Moreover \(C\cup\{x\}\) is a contiguous subpath of the second component of \(F_y\), so it is Hamiltonian. Therefore
+\[
+P\mid(C\cup\{x\})
+\]
+is another deletion cover of \(H-y\). The selected exceptional cover has component orders
+\[
+|S|,\quad |R|+1+|C|
+ =|Q|,\quad |P|,
+\]
+while the displayed replacement has component orders \(|P|,|Q|\). Hence the two covers have exactly the same component-order multiset and the same quadratic contribution.
+
+In particular, if the selected covers are chosen to minimize component imbalance, the replacement is also minimum-imbalance. On the common domain \(H-\{x,y\}\), its support partition is \(P\mid C\), the same support partition inherited from \(F_x=P\mid Q\). Thus every exceptional leaf comparison in a connected support tree admits an equally balanced support-compatible replacement at the same omitted label. \(\square\)
+
+### An exceptional leaf label is end-local or order-disagreeing
+
+**Statement.** Let H have path-cover number greater than two, let F_x=P|Q be a selected deletion cover whose support P is a leaf of a connected selected support tree, and let y in Q be exceptional in the sense that F_y has no edge between P and Q-{y}. Assume minimum-imbalance selection. Then there is an equally balanced deletion cover G_y=P|((Q-{y}) union {x}) support-compatible with F_x. For any Hamiltonian order Q, either the order induced by G_y on Q-{y} disagrees with the inherited order from Q, or y occupies one of the first two or last two positions of Q. If y occupies the second position from the relevant end, a tight triple reverses x and y across the endpoint vertex between their insertion slots.
+
+Let \(H\) be a finite boundary \(3\)-tournament with \(\operatorname{pc}(H)>2\). Let \(F_x=P\mid Q\) be a selected deletion cover whose support \(P\) is a leaf of a connected selected support tree, and let \(y\in Q\) be an exceptional label: the selected cover \(F_y\) has no consecutive pair joining \(P\) to \(Q-\{y\}\). Assume the selected covers minimize component imbalance.
+
+By Exceptional leaf transfer equals the support-order gap, there is an equally balanced deletion cover
+\[
+G_y=P\mid W,
+\]
+where \(W=(Q-\{y\})\cup\{x\}\) is Hamiltonian. Moreover the Hamiltonian order on \(W\) inherited from the exceptional comparison has one of the forms
+\[
+(x,B),\qquad(B,x),
+\]
+for some order \(B\) of \(Q-\{y\}\). Thus \(x\) occupies an extreme insertion slot relative to \(B\).
+
+Fix the displayed Hamiltonian order of \(Q\), and compare its inherited order on \(Q-\{y\}\) with \(B\). If these orders disagree, the first conclusion holds. Assume therefore that they agree. Then \(F_x\) and \(G_y\), restricted to \(H-\{x,y\}\), have the same two support sets \(P\) and \(Q-\{y\}\) with the same relative orders.
+
+Both omitted labels are therefore inserted into the same common ordered support \(B\): the cover \(F_x\) inserts \(y\) to recover \(Q\), while \(G_y\) inserts \(x\) to recover \(W\). Their insertion slots must be equal or adjacent. Indeed, if at least one whole slot separated them, inserting both \(x\) and \(y\) into \(B\) at their respective positions would create a tight path: every consecutive triple would be inherited from \(F_x\), from \(G_y\), or from the common order \(B\), and no new consecutive triple would contain both inserted labels. Together with the path on \(P\), this would two-cover \(H\), a contradiction.
+
+Since the insertion slot of \(x\) is extreme, the slot of \(y\) is either the same extreme slot or the adjacent slot. Hence \(y\) occupies the first or second position of the displayed order on \(Q\), or symmetrically the last or penultimate position.
+
+In the adjacent-slot case, write the common order locally as \(z,R\) at the relevant end. Up to reversal of the display, the two paths have local forms
+\[
+(x,z,R),\qquad(z,y,R).
+\]
+Every consecutive triple in \(x,z,y,R\) is known tight except possibly \((x,z,y)\). If that triple were tight, this path together with \(P\) would two-cover \(H\). Therefore \((x,z,y)\) is non-tight, and boundary reversal gives
+\[
+(y,z,x)
+\]
+tight. Thus the adjacent-slot alternative supplies an explicit reversal triple. \(\square\)
+
+### An exceptional leaf label gives disagreement, reversal, or neutral selected-lift recurrence
+
+**Statement.** Let H have path-cover number greater than two, let F_x=P|Q be a selected minimum-imbalance deletion cover with P a leaf of a connected selected support tree, and let y in Q be the exceptional label whose selected cover has no consecutive pair joining P to Q-{y}. Fix a Hamiltonian order on Q. Then at least one of the following holds: (i) the equally balanced support-compatible deletion cover at y has an order disagreement on Q-{y}; (ii) there is a tight triple reversing x and y across an endpoint-neighbor of Q; (iii) the selected singleton lifts F_x|{x} and F_y|{y} lie in the same pairwise-repartition component and are joined by a path of at most two neutral pairwise repartitions.
+
+Let H have path-cover number greater than two. Choose, for every deleted label, a two-cover of minimum component imbalance, and suppose the selected support graph is a connected tree. Let
+\[
+F_x=P\mid Q
+\]
+be a selected deletion cover with P a leaf support, and let y\in Q be the unique possible exceptional label whose selected deletion cover F_y contains no consecutive pair joining P to Q-\{y\}. Fix a Hamiltonian order on Q.
+
+By An exceptional leaf label is end-local or order-disagreeing, there is an equally balanced deletion cover
+\[
+G_y=P\mid W,\qquad W=(Q-\{y\})\cup\{x\},
+\]
+support-compatible with F_x on the common domain. Relative to the inherited order on Q-\{y\}, either G_y already has an order disagreement, or y lies in one of the two end positions of Q. In the second position from an end, the same theorem gives a tight triple reversing x and y across the intervening endpoint vertex.
+
+It remains to consider the order-compatible case in which y occupies an extreme position of Q. Write the common ordered support as B=Q-\{y\}. The path of F_x on Q inserts y into an extreme slot of B. The path W in G_y inserts x into an extreme slot of the same ordered support. The insertion-slot argument used in An exceptional leaf label is end-local or order-disagreeing shows that the slots are equal or adjacent. Since y is itself extreme, the adjacent case is precisely the already-listed second-position case. Hence in the remaining case x and y occupy the same extreme insertion slot.
+
+Now compare the singleton lifts. Repartitioning the pair
+\[
+Q\mid\{x\}
+\]
+inside F_x|\{x\} as
+\[
+W\mid\{y\}
+\]
+gives G_y|\{y\} in one pairwise repartition. The affected component orders are unchanged, so this move is neutral for the quadratic potential.
+
+By Exceptional leaf transfer equals the support-order gap, G_y and the selected exceptional cover F_y have the same component-order multiset. Therefore repartitioning the two non-singleton paths of G_y|\{y\} into the two non-singleton paths of F_y|\{y\} is a second neutral pairwise repartition. Thus
+\[
+F_x\mid\{x\}\longleftrightarrow G_y\mid\{y\}\longleftrightarrow F_y\mid\{y\}
+\]
+is a neutral path of length at most two.
+
+Hence every exceptional leaf label produces an order disagreement, an explicit reversal, or neutral recurrence between the two selected singleton lifts. \(\square\)
+
+### Exceptional leaf reselection creates a smaller leaf or disconnects the support forest
+
+**Statement.** Let J be a connected selected support tree arising from minimum-imbalance deletion covers. Let P be a leaf with neighbor Q, let x label PQ, and let y in Q be exceptional, so the selected cover at y has no consecutive pair joining P to Q-{y}. Replace that selected cover by the equally balanced cover P|((Q-{y}) union {x}). The new support W=(Q-{y}) union {x} was not previously represented in J. The new selected support graph is either disconnected, or is a connected tree in which W is a leaf adjacent to P with |W|<|P|. In the connected outcome, no label of P is exceptional relative to W|P.
+
+Let \(H\) be a finite boundary \(3\)-tournament with \(\operatorname{pc}(H)>2\). Choose a minimum-imbalance deletion cover \(F_v\) of \(H-v\) for every vertex \(v\), and suppose the selected support graph \(J\) is a connected tree. Let \(P=S_p\) be a leaf support, let \(Q=S_q\) be its neighbor, and let \(x\) label the edge \(pq\).
+
+Suppose \(y\in Q\) is exceptional: the selected cover \(F_y\) has no consecutive pair joining \(P\) to \(Q-\{y\}\). By Exceptional leaf transfer equals the support-order gap, there are nonempty sets
+\[
+S\subsetneq P,\qquad R=P-S,\qquad B=Q-\{y\},
+\]
+such that \(F_y\) has component supports \(S\) and \(R\cup\{x\}\cup B\), while
+\[
+G_y=P\mid W,\qquad W=B\cup\{x\},
+\]
+is another minimum-imbalance deletion cover of \(H-y\). Moreover
+\[
+|S|=|Q|,\qquad |R|=|P|-|Q|>0,\qquad |W|=|Q|.
+\]
+In particular, \(|P|>|Q|\).
+
+Write \(\mathcal A\mathbin{\dot\cup}\mathcal B\) for the bipartition of \(J\), with \(p\in\mathcal A\) and \(q\in\mathcal B\). By Connected support-tree census bounds exceptional leaf transfer,
+\[
+|P|=|\mathcal A|-1,\qquad |Q|=|\mathcal B|-1,
+\]
+so \(|\mathcal A|>|\mathcal B|\).
+
+We first show that \(W\) is not already a support represented in \(J\). Suppose \(W=S_u\) for some \(u\in V(J)\). Since \(x\in W\), the vertex \(u\) is neither \(p\) nor \(q\). Because \(p\) is a leaf and \(x\) labels \(pq\), the path from \(u\) to the edge \(pq\) reaches \(q\) first. The membership rule in [[strict_containment_in_deletion_partition_trees]] therefore gives
+\[
+x\in S_u
+\quad\Longleftrightarrow\quad
+\operatorname{dist}_J(u,q)\text{ is odd}.
+\]
+Hence \(u\in\mathcal A\). The support-tree census then gives
+\[
+|W|=|S_u|=|\mathcal A|-1=|P|,
+\]
+contrary to \(|W|=|Q|<|P|\). Thus \(W\) is a new support.
+
+Now replace only the selected cover \(F_y\) by \(G_y\), and call the new selected support graph \(J'\). The strict-containment structure says that the support \(S\) is represented by a vertex \(r\), that the \(p\)-\(r\) path has odd length, and that the edge labeled \(y\) is the final edge of this path. Consequently removing the old edge labeled \(y\) separates the old tree into an \(S\)-side and a \(P\)-side, with \(P\) on the latter. The replacement inserts the new edge \(PW\). Since \(W\) is new, this edge lies wholly on the \(P\)-side and cannot reconnect the \(S\)-side.
+
+If \(S\) had degree one in \(J\), then after removal of the old \(y\)-edge it is no longer represented by any selected cover. The remaining old edges form one tree, and adjoining the new leaf \(W\) at \(P\) gives a connected tree \(J'\). If \(S\) had degree at least two, its side retains at least one selected edge, so \(J'\) is a forest with two edge-containing components.
+
+In the connected case, \(W\) is a leaf of \(J'\) with neighbor \(P\), and
+\[
+|W|=|Q|<|P|.
+\]
+All selected covers in the new selection still minimize component imbalance. The exceptional-transfer bound in Connected support-tree census bounds exceptional leaf transfer permits a non-mixing leaf comparison only when the leaf support is larger than its neighbor. Therefore no label \(z\in P\) is exceptional relative to the new leaf edge \(WP\): for every \(z\in P\), the selected cover of \(H-z\) contains a consecutive pair joining \(W\) to \(P-\{z\}\).
+
+Thus reselecting an exceptional leaf cover has only two outcomes: it disconnects the selected support forest, or it replaces the old larger leaf by a new smaller leaf for which every neighboring-support label mixes the two old supports. \(\square\)
+
+### Leaf endpoint comparison forces direct mixing or splits the old support
+
+**Statement.** At a leaf selected support P in a support forest, endpoint deletion comparison either produces a direct edge between the old supports or splits a displayed edge of P. Under minimum-imbalance deletion-cover selection, the isolated P-piece in the split case has order at least |Q|, so splitting requires |P|>|Q|.
+
+# Leaf endpoint comparison forces direct mixing or splits the old support
+
+Let H be a minimum counterexample to pc(H) <= 2. Choose one deletion cover F_v for every v in V(H), and let J be the selected support graph. Suppose J is a forest and e_x=PQ is a leaf edge, with P the leaf support. Let y be an endpoint of a displayed Hamilton order on Q, and put B=Q-{y}.
+
+Then at least one of the following holds.
+
+1. The selected deletion cover F_y contains a path edge joining a surviving vertex of P to a surviving vertex of Q.
+2. Some displayed edge of P has its endpoints in different paths of F_y.
+
+In alternative 2, F_y has exactly two path edges joining distinct classes of P | B | {x}; both are incident with x. The path containing x consists of x, all of B, and one nonempty part of P, while the other path contains the remaining nonempty part of P. In particular B union {x} is Hamiltonian.
+
+If this Hamilton path preserves the inherited order of B, then x lies in one of the first two insertion positions when y is the initial endpoint of Q, and in one of the last two insertion positions when y is the terminal endpoint. The non-extreme insertion forces a tight triple reversing a displayed end edge. If both endpoint comparisons use the extreme insertion, the three deletion covers at x and at the two endpoints of Q have a common fixed support P; their singleton lifts form an equal-quadratic-potential triangle, and the two endpoint-replacement orders disagree on their common non-P support.
+
+## Proof
+
+Because P is a leaf support of J, the selected cover F_y shares neither P nor Q with F_x: it cannot share Q because every support of F_y omits y, and it cannot share P because P is incident only with e_x. Hence F_y is support-incompatible with F_x on H-{x,y}.
+
+Consider the three classes P, B, {x}. The cover F_y has at least two path edges joining distinct classes. If it had at most one, deleting that edge from its two paths would leave at most three path blocks. The resulting support partition would be one of (P union B)|{x}, (P union {x})|B, or P|(B union {x}). The first gives a two-cover of H after adjoining the two-vertex path (x,y); the second makes P union {x} Hamiltonian and gives a two-cover with Q; the third is support-compatible with F_x. All are impossible.
+
+Assume alternative 1 fails. Then every interclass edge is incident with x. Since x lies on one path of F_y, at most two path edges are incident with x. Therefore there are exactly two interclass edges, both incident with x.
+
+Cut these two edges. Besides the singleton block {x}, there are three maximal blocks contained in P or B, so exactly one of P,B is split into two blocks. If B were split, the two interclass edges would join x to the two B-blocks: joining x to the unique P-block would make P union {x} Hamiltonian. Thus one path of F_y would have support B union {x}, and the other path would have support exactly P. This would make P a support of F_y, contradicting that P is the leaf support incident only with e_x.
+
+Hence P is split. The same contracted two-path argument shows that x joins the unique B-block to one P-block, while the other P-block is the second path. Thus the vertices of P lie in both paths of F_y. Since the displayed order on P is a path, some consecutive displayed pair has its endpoints in different paths of F_y. This proves alternative 2. The path segment B together with x is Hamiltonian, giving the additional assertion.
+
+For the insertion refinement, write Q=(q_0,...,q_m). Suppose first y=q_0 and a Hamilton order on B union {x} preserves the order q_1,...,q_m. Since Q union {x} is non-Hamiltonian, x can occur only before q_1 or between q_1 and q_2; any later insertion permits q_0 to be prepended. In the second case, (q_0,q_1,x) must be non-tight, so (x,q_1,q_0) is tight and reverses the displayed initial edge of Q. The terminal-end statement is symmetric: a non-extreme insertion gives (q_m,q_{m-1},x) tight.
+
+If both endpoint replacements use the extreme positions, their orders are
+
+(x,q_1,...,q_m),
+(q_0,...,q_{m-1},x).
+
+Together with Q they give deletion covers at q_0, q_m, and x sharing P. Let X=Q union {x}. Their singleton lifts are P|(X-{d})|{d} for d in {x,q_0,q_m}; any two differ by repartitioning X and leaving P fixed. Hence they form a triangle in the pairwise-repartition graph and have equal quadratic potential. After deleting q_0 and q_m, the two endpoint-replacement paths induce opposite positions of x on the common support {x,q_1,...,q_{m-1}}, so they have an order disagreement. ∎
+
+## Balanced-selection corollary
+
+Suppose, in addition, that for every deletion label the selected two-cover minimizes the sum of squares of its two component orders among all two-covers of that deletion. In alternative 2 above, write the two pieces of \(P\) as \(R,S\), where the path containing \(x\) has support
+\[
+B\cup\{x\}\cup R
+\]
+and the other path has support \(S\). Put
+\[
+p=|P|,\qquad q=|Q|,\qquad r=|R|,\qquad s=|S|.
+\]
+Then \(p=r+s\), while \(|B\cup\{x\}|=q\). The selected deletion cover at \(y\) therefore has component orders
+\[
+q+r,\qquad s.
+\]
+But
+\[
+P\mid(B\cup\{x\})
+\]
+is another two-cover of \(H-y\), with component orders \(p,q\). Minimality of the selected cover gives
+\[
+(q+r)^2+s^2\le p^2+q^2.
+\]
+Since \(p=r+s\), the difference between the left and right sides is
+\[
+2r(q-s).
+\]
+As \(r>0\), it follows that
+\[
+s\ge q.
+\]
+In particular \(p>q\). Consequently, if the leaf support satisfies \(|P|\le |Q|\), alternative 1 is forced: the endpoint deletion cover must contain an edge joining the two old supports.
+
+Along every path in a connected component of the support forest, support orders alternate between two values, because adjacent support orders sum to \(|V(H)|-1\). Hence if a tree component has leaves in both bipartition classes, one of its leaves lies in the smaller (or equal) class and therefore forces direct support mixing. Thus a forest component with no such direct-mixing leaf must have all of its leaves in the larger support-size bipartition class.
+
+### A leaf support reduces endpoint comparison to path disturbance, reversal, descent, or an omission swap
+
+**Statement.** Let H be a minimum counterexample and choose deletion covers whose selected support graph is a forest. If H-x=P|Q corresponds to a leaf edge with P the leaf support and y is a displayed endpoint of Q, then the selected deletion cover at y yields an order disagreement, a displayed inherited edge of P or Q-y split between its two paths, a leave-and-return path segment through exterior vertices, a tight triple reversing the displayed endpoint edge of Q, a two-cover of H, a strict quadratic-potential decrease from the singleton lift at y, or a Phi-neutral omission swap to another deletion cover compatible with the selected cover at y.
+
+Let H be a minimum counterexample. Choose one deletion cover F_v for each vertex v, and let J be the selected support graph. Assume J is a forest. Let
+H-x=P|Q
+be a selected deletion cover whose support P is a leaf of J, and let y be an endpoint of the displayed path Q. Put B=Q-{y}, with the inherited order.
+
+By the leaf-support endpoint comparison, the selected deletion cover F_y has one of the following properties:
+
+(i) an edge of F_y joins a surviving vertex of P to a surviving vertex of B; or
+
+(ii) a displayed edge of P has its endpoints in different paths of F_y.
+
+In case (ii) the asserted split-edge outcome already holds.
+
+Assume case (i). Regard H-x=P|Q as the base deletion cover, regard y as the displayed endpoint of Q, and compare it with F_y. Apply the direct-mixed-edge disturbance theorem to the displayed path Q, its endpoint y, and the comparison cover F_y.
+
+If the surviving vertices of B do not occur in inherited relative order inside the paths of F_y, there is an order disagreement. Otherwise that theorem gives at least one of the following:
+
+1. an inherited edge of B has its endpoints in different paths of F_y;
+2. one path of F_y leaves B through a nonempty exterior segment and later returns to B;
+3. a tight triple reverses the displayed endpoint edge of Q incident with y;
+4. H has a two-cover;
+5. the singleton lift F_y|{y} admits a strict quadratic-potential decrease by one pairwise repartition;
+6. the endpoint restoration is Phi-neutral and, after omitting the unique transferred vertex, gives another deletion cover compatible with F_y on their common domain.
+
+Combining case (ii) with these alternatives proves the statement.
+
+Thus, for a leaf support in the selected support forest, an ordinary edge joining the two old supports is not an additional terminal configuration. It immediately resolves into one of the listed order-theoretic, path-theoretic, or potential-theoretic alternatives.
+
 ## Metadata
 
 - ID: leaf_comparisons_in_deletion_support_forests
 - Kind: line
-- Version: 12
-- Math version: 9
+- Version: 15
+- Math version: 11
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Chunk 1 — HOT, version 12: Leaf comparisons in deletion-support forests
+- Chunk 1 — HOT, version 15: Leaf comparisons in deletion-support forests

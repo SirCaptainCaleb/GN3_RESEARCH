@@ -18,3 +18,4 @@ Organizational home for reusable collision lemmas extracted from the terminal-sh
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

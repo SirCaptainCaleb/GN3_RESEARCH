@@ -18,3 +18,4 @@ Organizational home for certified reusable potential/rank-growth structure.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

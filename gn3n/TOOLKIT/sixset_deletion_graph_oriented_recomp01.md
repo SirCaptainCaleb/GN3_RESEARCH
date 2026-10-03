@@ -18,3 +18,4 @@ Apply sixset_deletion_graph_strengthened01. It gives |D|>=4, the degree bound de
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

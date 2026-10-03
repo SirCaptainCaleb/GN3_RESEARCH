@@ -60,3 +60,4 @@ No cyclic rotation and no path reversal is used.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo

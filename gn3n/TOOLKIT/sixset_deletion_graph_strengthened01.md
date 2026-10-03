@@ -28,3 +28,4 @@ The proof uses neither minimum-counterexample calculus, ambient order, path posi
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Toolkit status: Limbo
