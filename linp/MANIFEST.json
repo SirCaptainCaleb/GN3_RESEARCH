@@ -1,7 +1,5 @@
 {
-  "brainstorm_count": 2,
-  "generated_at": "2026-10-03T17:45:37.851366+00:00",
-  "main_line_sequences": {
+  "article_sequences": {
     "algebraic_and_steiner_constructions": [
       {
         "id": "algebraic_and_steiner_constructions_introduction",
@@ -409,18 +407,21 @@
       }
     ]
   },
-  "main_line_versions": {
-    "algebraic_and_steiner_constructions": 2,
-    "ascending_edges_in_a_dense_subgraph": 2,
-    "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": 3,
-    "incidence_rank_and_induced_paths_in_the_intersection_graph": 2,
-    "induction_on_the_complement_of_a_longest_path": 2,
-    "snake_accounting_and_the_43_48_equality_problem": 2,
-    "terminal_pair_cycles_and_rotations": 2,
-    "transversal_designs_latin_blowups_and_products": 2
+  "article_versions": {
+    "algebraic_and_steiner_constructions": 3,
+    "ascending_edges_in_a_dense_subgraph": 3,
+    "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": 4,
+    "incidence_rank_and_induced_paths_in_the_intersection_graph": 3,
+    "induction_on_the_complement_of_a_longest_path": 3,
+    "snake_accounting_and_the_43_48_equality_problem": 3,
+    "terminal_pair_cycles_and_rotations": 3,
+    "transversal_designs_latin_blowups_and_products": 3
   },
-  "mirror_format": 9,
-  "research_line_versions": {
+  "brainstorm_count": 2,
+  "generated_at": "2026-10-03T18:02:59.056388+00:00",
+  "mirror_format": 10,
+  "schema": "linp",
+  "section_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems": {
       "math_version": 1,
       "version": 1
@@ -682,12 +683,11 @@
       "version": 1
     }
   },
-  "schema": "linp",
   "snapshot_revision": 402,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 1,
   "universal_document_versions": {
-    "guide": 8,
-    "reflexes": 3
+    "guide": 9,
+    "reflexes": 4
   }
 }

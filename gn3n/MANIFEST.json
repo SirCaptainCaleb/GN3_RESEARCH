@@ -1,7 +1,5 @@
 {
-  "brainstorm_count": 2,
-  "generated_at": "2026-10-03T17:45:37.019467+00:00",
-  "main_line_sequences": {
+  "article_sequences": {
     "defect_lines_and_spanningorder_compression": [
       {
         "id": "defect_lines_and_spanning_order_compression_introduction",
@@ -375,16 +373,19 @@
       }
     ]
   },
-  "main_line_versions": {
-    "defect_lines_and_spanningorder_compression": 5,
-    "deletioncover_compatibility_and_global_obstruction_structure": 9,
-    "endpoint_transport_and_small_support_gluing": 2,
-    "longest_paths_and_reversal_structure": 5,
-    "quadratic_potential_and_pairwise_repartition": 3,
-    "three_cover_repartitions_and_recurrence": 4
+  "article_versions": {
+    "defect_lines_and_spanningorder_compression": 6,
+    "deletioncover_compatibility_and_global_obstruction_structure": 10,
+    "endpoint_transport_and_small_support_gluing": 3,
+    "longest_paths_and_reversal_structure": 6,
+    "quadratic_potential_and_pairwise_repartition": 4,
+    "three_cover_repartitions_and_recurrence": 5
   },
-  "mirror_format": 9,
-  "research_line_versions": {
+  "brainstorm_count": 2,
+  "generated_at": "2026-10-03T18:02:57.492493+00:00",
+  "mirror_format": 10,
+  "schema": "gn3n",
+  "section_versions": {
     "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path": {
       "math_version": 1,
       "version": 1
@@ -634,12 +635,11 @@
       "version": 1
     }
   },
-  "schema": "gn3n",
   "snapshot_revision": 394,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {
-    "guide": 8,
-    "reflexes": 3
+    "guide": 9,
+    "reflexes": 4
   }
 }
