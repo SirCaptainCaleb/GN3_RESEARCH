@@ -2,7 +2,7 @@
   "api": [
     "boot()",
     "search(query, filters := {})",
-    "read(ids, math_versions := {}, cursor := null, page_chars := 6500)",
+    "read(ids, math_versions := {}, cursor := null, page_chars := 9000)",
     "context(research_id)",
     "save_research(session_id, payload, expected_version := null)",
     "save_line_chunk(session_id, line_id, payload, expected_line_version, expected_chunk_version)",
@@ -26,7 +26,7 @@
   ],
   "reading": [
     "read() is the only exact manuscript-content read path and is statelessly paged.",
-    "Each call returns at most 7000 content characters plus compact metadata.",
+    "Each call returns at most 9000 content characters plus compact metadata.",
     "Pass next_cursor back to read() until complete=true. The cursor identifies the requested item index and character offset.",
     "context(), search(), and brainstorms() are navigation surfaces and intentionally omit full manuscript bodies."
   ],
