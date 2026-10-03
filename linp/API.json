@@ -59,7 +59,7 @@
   ],
   "startup": [
     "boot() returns startup_notices from startup_steward(), including empty-Brainstorm and stale Main Line warnings.",
-    "After choosing a route and before proof work, run one route-specific search across existing Research Lines and Toolkit entries to avoid rediscovery.",
+    "After choosing a route, one route-specific search across existing Research Lines and Toolkit entries is strongly recommended to avoid rediscovery, but it is never a gate and proof work must not be blocked if it is skipped.",
     "Then perform the narrow changes()/read() freshness check for the chosen Main Line and Research Line."
   ],
   "usage": "Call through the active project schema. boot() returns a human-readable snake_case session_id; use that text ID for all later mutations."
