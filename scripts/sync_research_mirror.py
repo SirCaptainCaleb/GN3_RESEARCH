@@ -190,7 +190,7 @@ Edits an older crystallized chunk in place while preserving the chunked manuscri
 Freezes the current hot chunk as a completed manuscript section and opens a new empty hot chunk. Use it when a coherent stage of a Research Line is complete and the next stage should begin separately.
 
 ### `save_document(session_id, payload, expected_version := null)`
-Creates or edits project documents such as Main Lines and the overview, with version checking and audit bookkeeping. Main Line content is an ordered Research Line sequence: set `research_line_ids` to integrate, remove, or reorder mature Research Lines. Main Line prose is compiled from those Research Lines rather than stored independently.
+Creates or edits project documents such as Main Lines and the overview, with version checking and audit bookkeeping. A Main Line is a prose document automatically composed from an ordered Research Line sequence. Set `research_line_ids` to integrate, remove, or reorder mature Research Lines; its generated prose body is refreshed from that sequence.
 
 ## Brainstorms
 
@@ -296,7 +296,7 @@ def build(schema: str):
     research_line_index = [
         "# Research Lines",
         "",
-        "Research Lines are the section-sized mathematical manuscripts. Main Lines compile ordered mature Research Lines; standalone Research Lines remain active development routes.",
+        "Research Lines are the section-sized mathematical manuscripts. Main Lines are prose documents compiled from ordered mature Research Lines; standalone Research Lines remain active development routes.",
         "",
     ]
     line_items = sorted(
