@@ -16,8 +16,8 @@ Because m>=7, the right-constraint indices begin at i>=3, so every right-constra
 
 - ID: endpoint_constraint_free_extension01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

@@ -60,8 +60,8 @@ For sharpness, fix a total order on `V` and declare `(a,b,c)` tight exactly when
 
 - ID: ternary01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

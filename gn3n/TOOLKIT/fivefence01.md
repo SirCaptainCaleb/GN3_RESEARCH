@@ -29,8 +29,8 @@ This is a logical fence, not merely terminology: forgetting the synchronization 
 
 - ID: fivefence01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

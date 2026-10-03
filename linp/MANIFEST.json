@@ -1,6 +1,6 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T15:29:14.104722+00:00",
+  "generated_at": "2026-10-03T15:49:08.635881+00:00",
   "main_line_versions": {
     "algebraic_and_steiner_constructions": 1,
     "ascending_edges_in_a_dense_subgraph": 1,
@@ -14,9 +14,9 @@
   "mirror_format": 8,
   "research_line_versions": {},
   "schema": "linp",
-  "snapshot_revision": 308,
+  "snapshot_revision": 368,
   "toolkit_limbo_count": 0,
-  "toolkit_promoted_count": 0,
+  "toolkit_promoted_count": 1,
   "universal_document_versions": {
     "guide": 4,
     "reflexes": 1

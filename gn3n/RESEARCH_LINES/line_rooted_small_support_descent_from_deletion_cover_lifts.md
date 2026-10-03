@@ -590,16 +590,403 @@ Fix a Hamilton path on U. At least one endpoint differs from the prescribed vert
 
 Let X be a displayed component of order four. If another component has order three, A Phi-minimum containing a three-path has order at most thirteen gives outcome (1). Assume therefore that the other two component orders are at least four. Let P be either of them, of order m. If m>=7, apply A four-path beside a path of order at least six descends, disagrees, or makes the unique neutral migration to X|P. Its strict-descent alternative contradicts Phi-minimality, and its neutral migration occurs only when m=6. Therefore the only possible outcome for m>=7 is the order-disagreement alternative. Hence, if no such disagreement occurs, both components other than X have order at most six. Since they have order at least four, every component order lies in {4,5,6}. The six displayed multisets and the bound |V(H)|<=18 follow immediately.
 
+## Toolkit Limbo placement audit: route-local results
+
+
+### Every proper tight path induces a path-cover-two endpoint square on its complement
+
+**Statement.** Let H be a minimum counterexample and let P=(p_0,...,p_m), m>=2, be a proper tight path. Put K=H-V(P). Then each of
+K, K+{p_0}, K+{p_m}, and K+{p_0,p_m}
+is non-Hamiltonian with path-cover number two.
+
+Equivalently, the complement of every proper tight path of order at least three carries a full two-label path-cover-two square indexed by the two displayed endpoints of P.
+
+The set V(P) is a proper Hamiltonian support, so minimum-counterexample calculus gives pc(K)=2 and K is non-Hamiltonian.
+
+The complement of K+{p_0} is the inherited tight suffix (p_1,...,p_m). If K+{p_0} were Hamiltonian, a Hamilton path on it together with that suffix would two-cover H. Thus K+{p_0} is non-Hamiltonian; since it is proper, minimality gives path-cover number two. The argument for K+{p_m} is symmetric, using the inherited prefix (p_0,...,p_{m-1}).
+
+Finally, the complement of K+{p_0,p_m} is the inherited middle path (p_1,...,p_{m-1}); when m=2 this is a singleton, which is still a tight path. Again Hamiltonicity of K+{p_0,p_m} would combine with that complementary path to two-cover H. Hence it is non-Hamiltonian and, by minimality, has path-cover number two.
+
+No path reversal or cyclic invariance is used.
+
+
+
+### Two bad endpoint extensions of a four-path give a two-path repartition or interior noninsertability
+
+**Statement.** Let H be a boundary tournament, let W be a tight path on four vertices, write V(W)=D union {w} with |D|=3, and let Q=(f,q_1,...,q_{q-2},g) be a vertex-disjoint tight path of order q>=3. Suppose H[D union {f}] and H[D union {g}] are non-Hamiltonian. Put M=(q_1,...,q_{q-2}) and F=D union {f,g}. Then H[F] is Hamiltonian. Moreover either H[V(M) union {w}] is Hamiltonian, in which case F | (V(M) union {w}) is a two-path cover of V(W) union V(Q) whose quadratic potential differs from that of W|Q by 10-2q, or H[V(M) union {w}] is non-Hamiltonian, in which case w is noninsertable into every position of the inherited path M.
+
+Choose any tight Hamilton order on the three-set D. Since D union {f} and D union {g} are both non-Hamiltonian, the certified two-bad-four-extensions lemma in localextend01 gives a Hamilton path on F=D union {f,g}. The supports F and V(M) union {w} are disjoint and partition V(W) union V(Q). If H[V(M) union {w}] is Hamiltonian, these two Hamilton paths give a two-path repartition of W|Q. Its component orders change from (4,q) to (5,q-1), so the quadratic-potential change is 25+(q-1)^2-16-q^2=10-2q. If H[V(M) union {w}] is non-Hamiltonian, inserting w into the inherited tight path M at any position would Hamiltonize that support, a contradiction. Hence w is noninsertable into M. No ambient third path, spanningness, extremality, or minimum-counterexample hypothesis is used.
+
+
+
+### Local non-Hamiltonian interfaces force opposite-extremal matching blocks
+
+**Statement.** Let H be a boundary tournament. Let S=(u,s_1,s_2,v) be a tight four-path, and let r_i,r_{i+1},r_j,r_{j+1} be vertices outside S (not necessarily all distinct except as required by the displayed four-sets below). Suppose (r_{i+1},u,r_i) and (r_{j+1},v,r_j) are tight. Assume the five-sets {r_i,u,s_1,s_2,v} and {u,s_1,s_2,v,r_{j+1}} are non-Hamiltonian, and the four-sets A={s_1,u,r_i,r_{i+1}} and B={s_2,v,r_j,r_{j+1}} are non-Hamiltonian. Then A and B are edge-orderable matching-block four-sets. In A, the opposite-edge matching {u r_i, s_1 r_{i+1}} is the highest block; in B, {v r_{j+1}, s_2 r_j} is the lowest block. Consequently (u,s_1,r_{i+1}), (u,r_{i+1},s_1), (r_i,s_1,r_{i+1}), (r_i,r_{i+1},s_1), (s_2,r_j,v), (r_j,s_2,v), (s_2,r_j,r_{j+1}), and (r_j,s_2,r_{j+1}) are tight.
+
+Because (u,s_1,s_2) and (s_1,s_2,v) are tight, if (r_i,u,s_1) were tight then (r_i,u,s_1,s_2,v) would be a Hamilton tight path on the first displayed five-set, contrary to its assumed non-Hamiltonicity. Hence boundary antisymmetry gives (s_1,u,r_i) tight. Symmetrically, if (s_2,v,r_{j+1}) were tight then (u,s_1,s_2,v,r_{j+1}) would Hamiltonize the second displayed five-set, so (r_{j+1},v,s_2) is tight.
+
+The four-sets A and B are non-Hamiltonian by hypothesis. The small-set matching-block classification therefore represents each by an edge order whose three opposite-edge perfect matchings form strict blocks.
+
+For A define M_0={u r_i,s_1 r_{i+1}}, M_1={u s_1,r_i r_{i+1}}, M_2={u r_{i+1},r_i s_1}. Tightness of (s_1,u,r_i) means u s_1<u r_i, hence M_1<M_0. Tightness of (r_{i+1},u,r_i) means u r_{i+1}<u r_i, hence M_2<M_0. Thus M_0 is the highest block. Comparing every edge in M_1 and M_2 with the appropriate edge in M_0 gives the four asserted A-side tight triples.
+
+For B define N_0={v r_{j+1},s_2 r_j}, N_1={v s_2,r_j r_{j+1}}, N_2={v r_j,s_2 r_{j+1}}. Tightness of (r_{j+1},v,s_2) gives v r_{j+1}<v s_2, hence N_0<N_1. Tightness of (r_{j+1},v,r_j) gives v r_{j+1}<v r_j, hence N_0<N_2. Thus N_0 is the lowest block, and the four asserted B-side triples follow. No minimum-counterexample, path-cover, ambient-order, or extremality hypothesis is used.
+
+
+
+### A prescribed-pair six-set has a Hamiltonian, singleton-extension, overlap, or fixed-pair matching outcome
+
+**Statement.** Let H be a minimum counterexample, let X be a proper Hamiltonian five-set with H-X non-Hamiltonian of path-cover number two, fix x in X, and fix distinct p,q outside X. Put A=X-{x} and S=A union {p,q}. Then at least one of the following holds: (1) S is Hamiltonian, with H-S non-Hamiltonian of path-cover number two; (2) at least one of A union {p}, A union {q} is Hamiltonian, hence one of p,q is a Hamiltonian-deletion label of S; (3) S is non-Hamiltonian, both A union {p} and A union {q} are non-Hamiltonian, and the Hamiltonian two-deletion graph J on A has adjacent edges, yielding the overlap-amplification conclusion of ad81548d4f9f; (4) S is non-Hamiltonian, both singleton extensions are non-Hamiltonian, and J is a perfect matching. In outcome (4), the two matching edges are exactly the two fixed-pair orientation classes of A relative to p,q, every cross pair gives a non-Hamiltonian four-set, and every cross cell carries the complete opposite-orientation hook rectangle of fixedpair_perfect_matching_hooks01.
+In outcome (3), the union of the two overlapping Hamiltonian four-sets is itself Hamiltonian. In outcome (4), A is a non-Hamiltonian matching-block K4, and all eight four-sets (A-{a}) union {p} and (A-{a}) union {q}, a in A, are Hamiltonian. In particular, if A is Hamiltonian, outcome (4) is impossible.
+
+If S is Hamiltonian, (1) holds and minimum-counterexample calculus gives the complement conclusion. Assume S is non-Hamiltonian. If A union {p}=S-{q} or A union {q}=S-{p} is Hamiltonian, then (2) holds. Hence assume both are non-Hamiltonian. Apply two_bad_five_extensions_all_opposite01 to the four-set A and exterior labels p,q. It gives that (A-{a}) union {p,q}=S-{a} is Hamiltonian for every a in A. Since S-{p}=A union {q} and S-{q}=A union {p} are non-Hamiltonian by assumption, the Hamiltonian-deletion set D of S is exactly A. Apply ad81548d4f9f to S. Its good two-deletion graph J on D=A either has adjacent edges, giving (3), or is a perfect matching. In the perfect-matching case apply fixedpair_perfect_matching_orientation01 and fixedpair_perfect_matching_hooks01 with fixed pair p,q and four-set A. They identify the matching edges with the two 2-vertex fixed-pair orientation classes and give the complete hook rectangle on every cross cell, proving (4).
+
+Strengthening and earlier use. Apply bad_six_deletion_matching_fourcore01 to the six-set S in outcomes (3) and (4), where D=A. Adjacent edges de,df in the deletion graph give four-sets S-{d,e}, S-{d,f} with union S-{d}; this union is Hamiltonian because d belongs to D. If the graph is a perfect matching, the same theorem forces A to be a non-Hamiltonian matching-block K4 and makes all eight four-sets (A-{a})+{p}, (A-{a})+{q} Hamiltonian. Thus a Hamiltonian core A eliminates the matching outcome immediately, without deriving the orientation partition or hook rectangle. These conclusions use only the six-set and its deletion graph; the original five-support and its complement do not enter this local step.
+
+
+
+### A Hamiltonian five-side admits prescribed-pair two-for-two support switches
+
+**Statement.** Let H be a minimum counterexample, let X be a proper Hamiltonian five-vertex set, and suppose H-X is non-Hamiltonian with path-cover number two. Fix any x in X and any two distinct vertices p,q outside X. Then for at least two distinct vertices d in X-{x}, the five-set U_d=(X-{x,d}) union {p,q} is Hamiltonian. For every such d, H-U_d is non-Hamiltonian with path-cover number two. Consequently, if H-X=P|Q is any displayed two-cover, one may prescribe one vertex p of P and one vertex q of Q and move both simultaneously into a new Hamiltonian five-side while forcing any prescribed x in X out of the five-side.
+
+Put A=X-{x}, so |A|=4, and put S={p,q}. The sets A and S are disjoint. Apply twofourhamdeletions01 to S and A. It gives at least two vertices d in A such that S union (A-{d})=(X-{x,d}) union {p,q} is Hamiltonian. Call this support U_d. Since X is proper and H is a minimum counterexample, |V(H)|>10; in particular each five-set U_d is proper. Minimum-counterexample calculus gives pc(H-U_d)<=2. If H-U_d were Hamiltonian, then a Hamilton path on U_d together with one on H-U_d would form a spanning two-cover of H, impossible. Hence H-U_d is non-Hamiltonian with path-cover number exactly two. The final sentence is the specialization when p and q are chosen from the two displayed components of H-X.
+
+
+
+### Every four-side carries four endpoint-pair transport probes
+
+**Statement.** Let H be a minimum counterexample and let X|P|Q be a spanning three-cover with |X|=4 and P=(p_1,...,p_m), m>=5. Put M=(p_2,...,p_{m-1}). Then either there is a legal pairwise repartition of X|P with nonincreasing quadratic potential, or the following holds simultaneously for every t in X. Define F_t=(X-{t}) union {p_1,p_m} and L_t=V(M) union {t}. If F_t is Hamiltonian, then L_t is non-Hamiltonian with path-cover number two. If F_t is non-Hamiltonian, then there is a set D_t subseteq F_t of at least four labels such that F_t-{d} is Hamiltonian and L_t union {d} is non-Hamiltonian with path-cover number two for every d in D_t. Any nonincreasing repartition produced by a Hamiltonian F_t|L_t has size change (4,m)->(5,m-1) and potential change 10-2m, neutral at m=5 and strict for m>=6; any repartition produced from a good deletion d in a non-Hamiltonian F_t preserves the size pair {4,m} and is neutral.
+
+Fix t in X and write F=F_t, L=L_t. The sets F and L are disjoint and partition V(X) union V(P), with |F|=5 and |L|=m-1. If F is Hamiltonian and L is Hamiltonian, F|L is a legal pairwise repartition of X|P; its potential change is 25+(m-1)^2-(16+m^2)=10-2m<=0 for m>=5. Therefore, if no nonincreasing repartition exists, Hamiltonicity of F forces L to be non-Hamiltonian, and minimum-counterexample calculus gives pc(L)=2. Now suppose F is non-Hamiltonian. The five-vertex small-set theorem gives a set D of at least four labels d in F for which F-{d} is Hamiltonian. For each such d, the complementary support in X union P is L+d, of order m. If any L+d were Hamiltonian, (F-{d})|(L+d) would be a legal pairwise repartition of X|P preserving the component sizes {4,m}, hence preserving Phi. Therefore absence of a nonincreasing repartition forces every L+d to be non-Hamiltonian; minimum-counterexample calculus gives pc(L+d)=2. This argument is independent of t, so it holds simultaneously for all four choices t in X.
+
+
+
+### A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions
+
+**Statement.** Let C=P|(x)|Q be a spanning three-cover of a boundary tournament, with |P|=3 and Q=(q_0,...,q_{m-1}), m>=5. Put X=V(P) union {x}. For every prescribed pair Z={z,zprime} subset X, at least one of F_z={z,q_0,q_1,q_2,q_3}, F_zprime={zprime,q_0,q_1,q_2,q_3}, and F_Z={z,zprime,q_0,q_1,q_2} is Hamiltonian. A Hamiltonian F_z or F_zprime yields a spanning three-cover with component orders (5,3,m-4), whose complement paths have supports X-{z} or X-{zprime}, and {q_4,...,q_{m-1}}. A Hamiltonian F_Z yields a spanning three-cover with orders (5,2,m-3), whose complement paths have supports X-Z and {q_3,...,q_{m-1}}. Thus at most eight vertices near the chosen endpoint are rearranged, and the remaining Q-segment is retained in its displayed order. Relative to C, the quadratic-potential changes are respectively 40-8m and 28-6m. Both are strictly negative for m>=6; at m=5 the first is zero and the second is negative. The analogous result holds at the other endpoint, retaining the displayed prefix of Q. In a minimum-counterexample deletion cover with |P|=3, m>=7, so both branches are strict. The new cover is reachable from C by at most two pairwise repartitions, each nonincreasing in quadratic potential. The first repartitions P|(x) into component orders (1,3) in a one-label branch, or into (2,2) in the two-label branch; the second repartitions the selected singleton or pair with Q, keeping the other short path unchanged. Therefore for m>=6 this is strict descent within the same pairwise-repartition component.
+
+Fix Z={z,zprime}. Let U=Z union {q_0,q_1,q_2,q_3}, a six-set. The three listed five-supports are U-{zprime}, U-{z}, and U-{q_3}. They are distinct. By the four-of-six theorem in smallset01, at most two five-subsets of U are non-Hamiltonian. Hence at least one listed support is Hamiltonian. This does not require X or the four-vertex Q-window to be Hamiltonian, and does not use endpoint constraints or cyclic rotation of tight triples. If F_z is Hamiltonian, choose a Hamilton path on it. The three-set X-{z} has a tight Hamilton path: on any three-set a boundary tournament contains a tight ordering by its reversal-pair axiom. Pair these two paths with the displayed suffix (q_4,...,q_{m-1}), which is nonempty for m>=5. Their supports partition V(C), so they form a spanning three-cover. The F_zprime branch is identical. If F_Z is Hamiltonian, X-Z is a two-set and hence a tight path in either order; pair it with a Hamilton path on F_Z and the displayed suffix (q_3,...,q_{m-1}). Again the supports are disjoint and spanning. These are actual repartitions of the original three-cover, with explicit complementary paths, rather than arbitrary complement covers from minimality. In the first branch only X and the first four vertices of Q change path assignments; in the second only X and the first three change assignments. The original potential is 3^2+1^2+m^2=m^2+10. The two new potentials are 5^2+3^2+(m-4)^2 and 5^2+2^2+(m-3)^2, giving the stated differences. For the other endpoint use U=Z union the last four displayed Q-vertices, and take the third candidate by deleting the earliest of these four. The inherited complement is then the displayed prefix, so no reversal of a tight path is invoked. In a minimum counterexample, mincex01 gives order greater than ten, and n=m+4 implies m>=7. This is a replacement for the proposed endpoint alternating-five-window route in threeside_consecutive_fivewindows01: it gives a positioned five-support and inherited complementary two-cover, while it does not assert that all four two-label five-windows are Hamiltonian. The new cover is reachable by at most two legal pairwise repartitions, with no increase of quadratic potential at either step. In the F_z branch, repartition P|(x), on its four-vertex union X, into (z)|R where R is a Hamilton path on X-{z}. Such a three-vertex Hamilton path always exists. This first step preserves the component orders 1,3 and is neutral; omit it if z=x. Now repartition (z)|Q into a Hamilton path on F_z and the displayed suffix (q_4,...,q_{m-1}), leaving R unchanged. Its potential change is 40-8m. The F_zprime branch is identical. In the F_Z branch, first repartition P|(x) into the two two-vertex paths on Z and X-Z. This decreases potential by 2, since 2^2+2^2-(3^2+1^2)=-2. Next repartition the two-path on Z together with Q into a Hamilton path on F_Z and the displayed suffix (q_3,...,q_{m-1}), leaving the other two-path unchanged. This step changes potential by 30-6m, which is nonpositive for m>=5. The combined change is 28-6m. Thus at m=5 each step is still nonincreasing, and the F_Z route is strict in its first step. For m>=6 either branch yields a strict pairwise-reachable decrease, without changing any long-path vertices beyond the first four. All states remain in the original pairwise-repartition component. The omitted singleton label may change or disappear as a singleton during these legal moves; keeping that label omitted throughout is not asserted. A two-cover is not produced.
+
+
+
+### Endpoint-rooted overlap carries the original transport menu plus four simultaneous endpoint probes
+
+**Statement.** Let H be a minimum counterexample and let X|P|Q be a spanning three-cover, where X is a Hamiltonian four-path and P=(p_1,...,p_m) has m>=6. Put M=(p_2,...,p_{m-1}). Suppose distinct x,y,z in X, with t the fourth vertex, satisfy that W={p_1,p_m,x,y} and W'={p_1,p_m,x,z} are Hamiltonian. Then the complete endpoint-overlap transport menu of four_side_endpoint_overlap_transport_recomp01 holds: strict quadratic descent, or a neutral same-order replacement by a Hamiltonian four-subset of F={p_1,p_m,x,y,z}, or F Hamiltonian with L=M+{t} non-Hamiltonian pc2, or F non-Hamiltonian with at least four good deletions d for which L+d is non-Hamiltonian pc2. In addition, independently of which of those alternatives occurs, either some legal pairwise repartition of X|P has nonincreasing quadratic potential, or for every s in X the endpoint-pair probe F_s=(X-{s}) union {p_1,p_m}, L_s=M union {s} satisfies: if F_s is Hamiltonian then L_s is non-Hamiltonian pc2, while if F_s is non-Hamiltonian then at least four labels d in F_s have F_s-{d} Hamiltonian and L_s+d non-Hamiltonian pc2. Thus the overlap witness is only one distinguished member of a four-probe family.
+
+The first asserted menu is exactly four_side_endpoint_overlap_transport_recomp01. Apply four_side_universal_endpoint_probe01 to the same four-side X and path P. It gives the independent second dichotomy: either a nonincreasing pairwise repartition exists, or the stated pc2 residual/star conclusion holds simultaneously for all four choices s in X. Combining the two conclusions gives the theorem. Since m>=6, every (4,m)->(5,m-1) move among the universal probes is strict; same-size probe moves are neutral. No further assumptions are introduced.
+
+
+
+### The unresolved four-side endpoint lock is a four-label second-type gap network
+
+**Statement.** Let H be a minimum counterexample and let X|P|Q be a spanning three-cover with |X|=4 and P=(p_1,...,p_m), m>=5. Put M=(p_2,...,p_{m-1}). Then at least one of the following holds: (1) there is a legal pairwise repartition of X|P with component orders (5,m-1) and quadratic-potential change 10-2m<=0; (2) H contains a proper Hamiltonian induced set of order four or five meeting both X and V(M), with non-Hamiltonian path-cover-two complement; (3) m>=7 and each x in X has a second-type failed-insertion obstruction at a distinct displayed gap g(x) of M. In outcome (3), for every distinct x,y in X, if |g(x)-g(y)|=1 then the explicit adjacent-gap cross triple supplied by 36fccff06d48 is tight, while if |g(x)-g(y)|>=2 then x and y are joined by the tight interval path through the displayed subinterval of M between their obstruction gaps. Thus the sole unresolved branch is a complete four-label gap network, not a single connector.
+
+Apply four_side_endpoint_lock_mixed_menu_m5_01. If its first or second outcome occurs we are done. Otherwise every vertex of X is noninsertable into the displayed interior path M, and assume no mixed Hamiltonian four/five-support exists. Apply insert01 to each x in X. A first-type obstruction would, by 0425e03e2aa3 exactly as in the predecessor proof, give either a mixed Hamiltonian four-set or a cyclic non-Hamiltonian four-set whose extension by another X-label is a mixed Hamiltonian five-set. Hence every x has a second-type obstruction at some displayed gap g(x). If two labels x,y had the same gap, the equal-gap case of 36fccff06d48 would give a mixed Hamiltonian four-set, contradiction. Thus the four gaps are distinct, so M has at least five vertices and m=|M|+2>=7. Now fix x!=y. If their gaps differ by at least two, the separated-gap case of 36fccff06d48 gives the stated tight interval connector. If their gaps are adjacent, that theorem gives either a mixed Hamiltonian five-set on x,y and three consecutive vertices of M, contradicting the absence of outcome (2), or its explicit adjacent-gap cross triple. Therefore the cross triple must occur. This proves the complete pairwise network.
+
+
+
+### Short gaps force reversed endpoint triples without a minimum-counterexample hypothesis
+
+**Statement.** Let B=(b_1,...,b_r) be a tight path in a boundary tournament H, and let L be a set of exterior vertices. Assign each x in L a distinct second-type obstruction gap g(x) in {1,...,r-1}. Assume that for adjacent assigned gaps i=g(u), i+1=g(w), the triple (u,b_{i+1},w) is tight. If no Hamiltonian four- or five-support meets both L and V(B), then for any distinct u,v,w in L with 0<g(w)-g(u)<=2, (w,v,u) is tight. Equivalently, every tight triple (u,v,w) on L with g(u)<g(w) has g(w)-g(u)>=3. In particular, for any displayed tight four-path (x_0,x_1,x_2,x_3) on L, each of g(x_2)-g(x_0) and g(x_3)-g(x_1) is either negative or at least three. If its label gaps are increasing, its second-neighbor gaps are at least three, its total span is at least four, and r>=6. These conclusions do not require a cycle claim, an endpoint-extension hypothesis, a cover, or global quadratic minimality.
+
+Fix distinct u,v,w in L and let i=g(u)<g(w)=j. Suppose (u,v,w) is tight. If j=i+1, the assumed adjacent-gap cross triple gives the second tight path (u,b_{i+1},w). The parallel-middle four-path lemma in localextend01 therefore makes {u,v,w,b_{i+1}} Hamiltonian, contradicting the mixed-support exclusion. If j=i+2, the separated-gap case of 36fccff06d48 gives (u,b_{i+1},b_{i+2},w) tight. This four-vertex path and (u,v,w) are internally disjoint corridors with the same ordered endpoints. By 53d257fcf0a8 their five-vertex union is Hamiltonian, again a contradiction. Boundary antisymmetry now forces (w,v,u) whenever j-i is one or two. Apply this to the two consecutive triples of a displayed four-path for the stated inequalities. If its gaps increase, g(x_2)-g(x_0)>=3 and g(x_3)-g(x_1)>=3. Distinct integer gaps then give g(x_3)-g(x_0)>=4. Since assigned indices lie in {1,...,r-1}, r-2>=4 and r>=6. This is a direct local statement on arbitrary H. The second-type gap network in four_side_endpoint_lock_gap_network01 provides its assumptions in its unresolved branch. No step concatenates paths around a cycle or assumes the gap order agrees with a preexisting path order.
+
+
+
+### A four-side beside a path of order at least six strictly descends or creates an adjacent opposite-end four-window fork
+
+**Statement.** Let H be a boundary tournament, let X be a Hamiltonian four-vertex set, and let P=(p_1,...,p_m) be a vertex-disjoint tight path of order m>=6. Then either X|P admits a legal two-path repartition of V(X) union V(P) with strictly smaller quadratic contribution than 4^2+m^2, or there are distinct x,y,z in X such that {p_1,p_m,x,y} and {p_1,p_m,x,z} are both Hamiltonian four-sets. Thus the non-descent branch is a positioned adjacent fork of Hamiltonian four-windows sharing the three-core {p_1,p_m,x}; no neutral or generic-order-disagreement outcome is needed. If H is a minimum counterexample, each of the two forked four-sets has non-Hamiltonian path-cover-two complement.
+
+If X union {p_1} is Hamiltonian, move p_1 from P into X and retain the inherited path (p_2,...,p_m). This changes the pair orders from (4,m) to (5,m-1), with new quadratic contribution minus old equal to 25+(m-1)^2-(16+m^2)=10-2m<0 for m>=6. The same argument applies if X union {p_m} is Hamiltonian. Hence assume both five-sets X union {p_1} and X union {p_m} are non-Hamiltonian. Apply two_bad_five_extensions_adjacent_four01 to the Hamiltonian four-set X and exterior vertices p_1,p_m. It yields distinct x,y,z in X such that {p_1,p_m,x,y} and {p_1,p_m,x,z} are Hamiltonian. They share exactly the three vertices {p_1,p_m,x}. This proves the dichotomy. In a minimum counterexample the forked four-sets are proper; their complements cannot be Hamiltonian, else either one together with its Hamilton path would two-cover H, while minimality gives path-cover number at most two. Therefore each complement is non-Hamiltonian of path-cover number exactly two.
+
+
+
+### A five-side no-swap branch forces a two-sided endpoint lock on one long path
+
+**Statement.** Let X|P|Q be a quadratic-potential-minimal trapped three-cover with |X|=5 and |P|,|Q|>=7. Then either an equal-potential support exchange exists as in astra003fiveswapobstruct, or there are x in V(X) and one of the two long paths R=(r_1,...,r_m) such that x cannot be inserted into any position of the displayed order of R. More strongly, writing e_i={r_i,r_{i+1}} and f_i={x,r_i} in the comparison digraph, the four endpoint constraints e_1->f_1, e_2->f_2, f_{m-1}->e_{m-2}, and f_m->e_{m-1} all hold. Hence insert01 supplies a bounded failed-insertion obstruction for x on the full displayed path R.
+
+
+By astra003fivethreeendpoints, choose x in V(X), with D=V(X)-{x}, such that D union {e} is Hamiltonian for at least three of the four endpoints of P and Q. Apply astra003fiveswapobstruct to these synchronized endpoints.
+
+If any corresponding support exchange exists, we are in the first alternative. Suppose therefore that none exists. Among at least three endpoints drawn from the two endpoint pairs of P and Q, two belong to the same path. Call that path
+R=(r_1,...,r_m), m>=7.
+Thus D union {r_1} and D union {r_m} are Hamiltonian, while both
+(R-r_1) union {x}
+and
+(R-r_m) union {x}
+are non-Hamiltonian; otherwise the corresponding same-size support exchange would exist.
+
+Let
+L=(r_2,...,r_m),  R'=(r_1,...,r_{m-1})
+be the inherited endpoint truncations. Since H[V(L) union {x}] and H[V(R') union {x}] are non-Hamiltonian, inserting x into every position of either displayed truncation fails.
+
+We claim that inserting x into every position of the full displayed order R also fails.
+
+- Insertion before r_1 is already the left-end insertion into R', hence fails.
+- Insertion after r_m is already the right-end insertion into L, hence fails.
+- Insertion between r_1 and r_2 requires, among its tight triples, the left-end triple needed to insert x before r_2 in L. That truncated insertion fails, so the full insertion fails.
+- Insertion between r_{m-1} and r_m requires, among its tight triples, the terminal triple needed to insert x after r_{m-1} in R'. That truncated insertion fails, so the full insertion fails.
+- Every insertion between r_i and r_{i+1} for 2<=i<=m-2 is an insertion position internal to both endpoint truncations, so it fails there and therefore in R.
+
+Hence x is noninsertable in the full displayed path R.
+
+The failed endpoint insertions also give explicit comparison arcs. Put
+e_i={r_i,r_{i+1}}, 1<=i<=m-1,
+and f_i={x,r_i}, 1<=i<=m.
+Failure of the left-end insertion into R' gives e_1->f_1, and failure of the right-end insertion into R' gives f_{m-1}->e_{m-2}. Failure of the left-end insertion into L gives e_2->f_2, and failure of the right-end insertion into L gives f_m->e_{m-1}. Thus all four stated endpoint constraints hold simultaneously.
+
+Finally, applying the failed-insertion theorem of insert01 to the full path R gives a bounded obstruction involving x and at most four consecutive vertices of R. The point is that this obstruction now sits inside a path carrying simultaneous two-sided endpoint constraints forced by one common five-side displacement.
+
+
+
+
+### Inner facing four-windows have local two-move potential formulas
+
+**Statement.** Let H be a boundary tournament, let P=(p_0,...,p_{p-1}) and Q=(q_0,...,q_{q-1}) be vertex-disjoint tight paths with p,q>=3, and let x lie outside both. Regard P|Q|{x} as a three-path cover of its union. If W_L={p_0,q_{q-1},x,p_1} is Hamiltonian, then two pairwise repartitions of this local cover produce W_L | (p_2,...,p_{p-1}) | (q_0,...,q_{q-2}), with quadratic-potential change 20-4p-2q. If W_R={p_0,q_{q-1},x,q_{q-2}} is Hamiltonian, two pairwise repartitions produce the symmetric local cover of component orders 4,p-1,q-2, with change 20-2p-4q.
+
+For W_L, first repartition Q|{x} into the inherited path (q_0,...,q_{q-2}) and the two-vertex path (q_{q-1},x). Then repartition P together with that two-vertex path into the Hamiltonian four-set W_L and the inherited tail (p_2,...,p_{p-1}). Every vertex of V(P) union V(Q) union {x} appears exactly once, so both moves are legal pairwise repartitions of the local three-path cover. The component orders change from p,q,1 to 4,p-2,q-1, and the potential change is 16+(p-2)^2+(q-1)^2-(p^2+q^2+1)=20-4p-2q. The W_R case is symmetric: first split P|{x} as (p_1,...,p_{p-1}) | (p_0,x), then combine (p_0,x) with Q using W_R, leaving (q_0,...,q_{q-3}); the component orders are 4,p-1,q-2 and the change is 20-2p-4q. No ambient spanning hypothesis is used.
+
+
+
+### Three noninsertable vertices on one path yield a four-vertex configuration or an interval path
+
+**Statement.** Let B=(b_1,...,b_m) be a tight path in a boundary tournament, and let x,y,z be three distinct vertices outside B, each noninsertable into every position of the displayed order B. Then at least one of the following holds: (1) for one label w in {x,y,z}, a first-type failed-insertion window on w is either a Hamiltonian four-set or the cyclic non-Hamiltonian four-vertex configuration from smallset01, whose every one-vertex extension is Hamiltonian; (2) two labels have second-type obstructions at the same displayed gap, and together with that gap edge form a Hamiltonian four-set; (3) two labels have second-type obstruction gaps separated by at least one intervening gap, and are joined by a tight connector through the displayed interval between those gaps. In particular three noninsertable labels cannot produce only adjacent-gap cross residues.
+
+Apply the failed-insertion normal form insert01 separately to x,y,z. If any label has alternative 1, apply 0425e03e2aa3 to its local four-vertex window. This gives outcome (1).
+
+Assume therefore that all three labels have alternative 2. Let their obstruction gaps have indices i,j,k and sort them so i<=j<=k. If two indices coincide, the same-gap case of 36fccff06d48 gives a Hamiltonian four-set consisting of the two corresponding exterior labels and the two vertices of that displayed gap, yielding outcome (2). If all three indices are distinct, then i<j<k and k>=i+2. The separated-gap case of 36fccff06d48 applied to the labels at gaps i and k gives the tight connector from the first label through b_{i+1},...,b_k to the second, yielding outcome (3). These alternatives exhaust the failed-insertion normal forms.
+
+
+
+### Three second-type insertion obstructions yield a Hamiltonian four-set or an interval path
+
+**Statement.** Let B=(b_1,...,b_m) be a tight path in a boundary tournament, and let x,y,z be three distinct exterior vertices. Suppose alternative 2 of the failed-insertion normal form in insert01 holds for x,y,z at gaps b_i|b_{i+1}, b_j|b_{j+1}, b_k|b_{k+1}, respectively. Then either two of i,j,k are equal, in which case the corresponding two exterior labels together with that displayed edge form a Hamiltonian four-set, or two of the obstruction gaps differ by at least two, say r<s with s>=r+2, in which case the corresponding exterior labels are joined by a tight connector through the displayed interval (u,b_{r+1},...,b_s,v). Thus three second-type locks cannot all remain in the adjacent-gap cross-only residue.
+
+Relabel x,y,z so that i<=j<=k. If two of i,j,k are equal, apply the same-gap case of 36fccff06d48 to those two labels. It gives a Hamiltonian four-set on the two labels and the two vertices of the common displayed gap.
+
+Assume now that i,j,k are pairwise distinct. Then i<j<k, hence k>=i+2. Apply the separated-gap case of 36fccff06d48 to the labels at gaps i and k. It gives the tight connector consisting of the first exterior label, the displayed interval b_{i+1},...,b_k, and the second exterior label. These two cases are exhaustive. In particular the adjacent-gap cross alternative of the two-label spacing trichotomy cannot be the only structure across all three labels.
+
+
+
+### A quadratic-minimal 4|5|m cover has a cyclic exchange or one of three insertion-obstruction outcomes
+
+**Statement.** Let H be a boundary tournament and let C=X|Y|P minimize quadratic potential within its connected pairwise-repartition component, with |X|=4, |Y|=5, and P=(p_1,...,p_m) of order m>=7. Then at least one of the following holds. (1) C has a nontrivial equal-Phi cyclic support exchange of profile 4|5|m. (2) Some y in Y has a first-type failed-insertion window on P, whose associated four-set is either Hamiltonian or the cyclic non-Hamiltonian four-vertex configuration from smallset01, whose every one-vertex extension is Hamiltonian. (3) Two distinct labels y,z in Y have second-type obstruction at the same gap of P, and {y,z} together with that displayed gap edge is Hamiltonian. (4) Two distinct labels y,z in Y are joined by a tight connector (y,p_{r+1},...,p_s,z) through an interval of P with s>=r+2. Thus, once neutral cyclic exchange is excluded, the 4|5|m potential-minimizing cover reduces to a four-vertex configuration or a direct connector between two vertices of the five-side through the long path.
+
+Apply local45_exchange_or_triplelock01. If its neutral cyclic-exchange alternative occurs, we have (1). Otherwise choose three distinct labels y_1,y_2,y_3 in Y that are noninsertable into every position of P.
+
+Apply the failed-insertion normal form insert01 separately to these three labels. If some label has alternative 1, 0425e03e2aa3 gives exactly outcome (2).
+
+Assume all three have alternative 2, at gap indices i,j,k. Sort the indices. If two are equal, the same-gap case of 36fccff06d48 yields outcome (3). If they are pairwise distinct, the smallest and largest differ by at least two, and the separated-gap case of 36fccff06d48 yields outcome (4). These cases exhaust the three locked labels.
+
+
+
+### Componentwise four-side fork interior lock
+
+**Statement.** Let H be a boundary tournament and W|P|Q a spanning three-cover minimizing quadratic potential in its connected pairwise-repartition component. Write W=D union {w}, |W|=4. Let Q=(f,q_1,...,q_{q-2},g) have order q>=5. If D union {f} and D union {g} are non-Hamiltonian, put M=(q_1,...,q_{q-2}). Then D union {f,g} is Hamiltonian. For q>=6, M union {w} is non-Hamiltonian, so w is noninsertable into the inherited path M. For q=5, either the same lock holds or W|Q has a legal Phi-neutral repartition of orders 5 and 4.
+
+By the two-bad-four-extension lemma in localextend01, F=D union {f,g} is Hamiltonian. If M union {w} is Hamiltonian, then F and M union {w} partition V(W) union V(Q), so replacing W|Q by those two Hamiltonian paths is one legal pairwise repartition in the same connected component. The potential change is 5^2+(q-1)^2-(4^2+q^2)=10-2q. For q>=6 this is negative, contradicting componentwise minimality. Hence M union {w} is non-Hamiltonian, and any insertion of w into M would contradict that. For q=5 the same repartition has zero potential change, giving the stated neutral alternative. No global minimality hypothesis is used.
+
+
+
+### Mutual deletion internality forces four endpoint windows or doubled reverse constraints
+
+**Statement.** Let H be a minimum counterexample and let d,t be distinct vertices such that d is internal in every two-cover of H-t and t is internal in every two-cover of H-d. Let H-{d,t}=P|Q be any displayed two-cover, with P=(p_0,...,p_m) and Q=(q_0,...,q_s). Then |P|,|Q|>=3. At each of the four displayed ends, one has a Hamiltonian four-window with non-Hamiltonian path-cover-two complement or a doubled reverse constraint. More precisely: at the initial end of P, either {p_1,p_0,d,t} is Hamiltonian, or both (t,d,p_0) and (d,t,p_0) are tight; at the terminal end of P, either {d,t,p_m,p_{m-1}} is Hamiltonian, or both (p_m,t,d) and (p_m,d,t) are tight. The analogous two alternatives hold at the initial and terminal ends of Q.
+
+Apply square_permanent_internal_hooks01 first to G=H-t with universally internal vertex d and the lower two-cover G-d=H-{d,t}=P|Q. It gives |P|,|Q|>=3 and the endpoint hooks (p_1,p_0,d), (d,p_m,p_{m-1}), (q_1,q_0,d), and (d,q_s,q_{s-1}). Apply the same theorem to G'=H-d with universally internal vertex t and the same lower cover G'-t=P|Q. This gives the parallel hooks (p_1,p_0,t), (t,p_m,p_{m-1}), (q_1,q_0,t), and (t,q_s,q_{s-1}).
+
+Consider the initial end of P. If (p_0,d,t) is tight, then (p_1,p_0,d,t) is a tight Hamiltonian four-path, using the hook (p_1,p_0,d). If (p_0,t,d) is tight, then (p_1,p_0,t,d) is a tight Hamiltonian four-path. If neither is tight, boundary antisymmetry forces both reversals (t,d,p_0) and (d,t,p_0) to be tight. This proves the initial-end dichotomy.
+
+At the terminal end, if (d,t,p_m) is tight then (d,t,p_m,p_{m-1}) is a tight Hamiltonian four-path using (t,p_m,p_{m-1}); if (t,d,p_m) is tight then (t,d,p_m,p_{m-1}) is tight using (d,p_m,p_{m-1}). If neither is tight, boundary antisymmetry gives both (p_m,t,d) and (p_m,d,t). The two Q-end statements are identical.
+
+Whenever one of these four-sets is Hamiltonian, it is proper. Its complement cannot be Hamiltonian, since complementary Hamilton paths would two-cover H; minimum-counterexample calculus therefore gives path-cover number two.
+
+
+
+### A non-Hamiltonian five-set has either a complete pc2 punctured cube or one Hamiltonian singleton exception
+
+**Statement.** Let H be a minimum counterexample and let F be a non-Hamiltonian five-vertex set. Put K=H-F. Then exactly one of the following holds. (1) For every nonempty proper subset S of F, K union S is non-Hamiltonian with path-cover number two. (2) There is a unique vertex d0 in F such that F-{d0} is non-Hamiltonian and K union {d0} is Hamiltonian; for every other nonempty proper subset S of F, K union S is non-Hamiltonian with path-cover number two. In outcome (2), the proper Hamiltonian set K union {d0} has the non-Hamiltonian four-set F-{d0} as its complement, so the full codimension-four Hamiltonian-side structure theorem codim4_01 applies to this exceptional state. Thus the 30 nonempty proper extension states of K form either a complete pc2 punctured five-cube, or a pc2 punctured cube with one uniquely identified Hamiltonian singleton exception carrying the complete codimension-four complement structure.
+
+By nonham_five_punctured_pc2_cube02, every extension K union S with 2<=|S|<=4 is non-Hamiltonian with path-cover number two, and at least four singleton extensions K+d are non-Hamiltonian with path-cover number two. The five-vertex small-set theorem gives at most one label d0 for which F-{d0} is non-Hamiltonian. If there is no such label, all five singleton extensions are pc2 and (1) holds.
+
+Otherwise d0 is unique. The proper induced subtournament K+{d0} has path-cover number at most two by minimum-counterexample minimality. If it is non-Hamiltonian, it has path-cover number exactly two, so again all 30 nonempty proper extension states are pc2 and (1) holds. If it is Hamiltonian, then it is the unique singleton state not pc2, while all other 29 states are pc2 by the punctured-cube theorem, giving (2). Uniqueness of the exceptional singleton follows from uniqueness of the non-Hamiltonian four-deletion.
+
+In outcome (2), K+{d0} and F-{d0} are complementary proper induced sets, the former Hamiltonian and the latter a non-Hamiltonian four-set. Therefore the hypotheses of codim4_01 hold with Hamiltonian side K+{d0} and four-vertex complement F-{d0}; every certified structural consequence in that codimension-four package is available at the unique exceptional singleton state.
+
+
+
+### Four-label gap networks force a mixed four-set, an outer-edge reversal, or a spaced middle configuration
+
+**Statement.** Let H be a minimum counterexample and let X=(x_0,x_1,x_2,x_3) be a Hamiltonian four-path in a spanning three-cover X|P|Q, where P=(p_1,...,p_m), m>=7, and M=(p_2,...,p_{m-1}). Suppose each x_i has a distinct second-type failed-insertion obstruction gap g_i in M and the complete gap-network connectors of four_side_endpoint_lock_gap_network01 are present. Then at least one of the following holds. (1) H contains a proper Hamiltonian four-set meeting both X and V(M), whose complement is non-Hamiltonian with path-cover number two. (2) A tight triple reverses one of the two outer displayed edges x_0x_1 or x_2x_3 of X. (3) For some gap index t, g_2=t, g_1=t+1, g_0<=t-3, and g_3>=t+4; if z is the unique M-vertex in the connector from x_2 to x_1, then both (z,x_2,x_1) and (x_2,x_1,z) are tight. In (3), m>=11. Consequently every hard gap-network configuration on a host path of order at most ten gives (1) or (2).
+
+Write the four assigned obstruction gaps as
+\[
+g_i=g(x_i),\qquad 0\le i\le3.
+\]
+The complete gap-network hypothesis gives, for every pair of labels, either the adjacent-gap cross triple or the tight interval connector through the displayed subinterval of \(M\).
+
+We first record the path-intersection consequence. Suppose \(i<j\) and
+\[
+g_j<g_i.
+\]
+Let \(C\) be the gap-network connector from \(x_j\) to \(x_i\), and let
+\[
+A=(x_i,\ldots,x_j)
+\]
+be the displayed \(X\)-subpath. Their only common vertices are \(x_i,x_j\), and these occur in opposite relative orders. The reversed-common-vertices lemma from the path-intersection calculus therefore gives either a tight triple reversing a boundary edge of \(A\), or a vertex-simple tight cycle on \(V(A)\cup V(C)\).
+
+The cycle alternative yields conclusion (1). Indeed the cycle meets both \(X\) and \(M\). If it has at least four vertices, four consecutive vertices across a junction between its \(X\)-portion and its \(M\)-portion form a mixed Hamiltonian four-set. If it has three vertices, then \(A\) is a single displayed edge of \(X\). The cyclic triples place the unique \(M\)-vertex on both sides of that ordered edge, and one of the two displayed neighbors of the edge in the four-path \(X\) extends one of these triples to a mixed Hamiltonian four-path. In either case the resulting four-set is proper; minimum-counterexample calculus gives a non-Hamiltonian path-cover-two complement.
+
+Thus, unless (1) holds, every inversion \(g_j<g_i\) forces a tight triple reversing one of the two boundary edges of the displayed subpath \(A\).
+
+Assume henceforth that neither (1) nor (2) holds. Then
+\[
+g_0<g_1
+\]
+because an inversion of the adjacent pair \(x_0,x_1\) would reverse the outer edge \(x_0x_1\). Similarly
+\[
+g_2<g_3.
+\]
+The four gaps cannot occur in increasing order. To see this, suppose
+\[
+g_0<g_1<g_2<g_3.
+\]
+The second-type prefix for \(x_1\) contains
+\[
+(b_{g_1-1},b_{g_1},x_1).
+\]
+If \((b_{g_1},x_1,x_2)\) were tight, these vertices would contain a mixed Hamiltonian four-path; otherwise boundary reversal gives
+\[
+(x_2,x_1,b_{g_1})
+\]
+tight. Symmetrically, using the second-type suffix for \(x_2\), absence of a mixed Hamiltonian four-path gives
+\[
+(b_{g_2+1},x_2,x_1)
+\]
+tight. The latter two triples concatenate to a mixed Hamiltonian four-path, a contradiction. Hence
+\[
+g_1>g_2.
+\]
+
+Consider the connector
+\[
+C=(x_2,c_1,\ldots,c_k,x_1)
+\]
+supplied by the gap network. We claim that \(k=1\). The two junction triples with the displayed middle edge of \(X\) are
+\[
+(x_1,x_2,c_1),\qquad (c_k,x_1,x_2).
+\]
+If \(k\ge2\) and the first junction is tight, then
+\[
+(x_1,x_2,c_1,c_2)
+\]
+is a mixed Hamiltonian four-path. If the second junction is tight, then
+\[
+(c_{k-1},c_k,x_1,x_2)
+\]
+is such a path. If both junctions are non-tight, boundary reversal gives
+\[
+(c_1,x_2,x_1),\qquad(x_2,x_1,c_k)
+\]
+tight, and since \(c_1\ne c_k\),
+\[
+(c_1,x_2,x_1,c_k)
+\]
+is a mixed Hamiltonian four-path. All three possibilities contradict the exclusion of (1). Therefore \(k=1\).
+
+Write the unique internal connector vertex as \(z\). If
+\[
+(x_1,x_2,z)
+\]
+were tight, then \((x_0,x_1,x_2,z)\) would be a mixed Hamiltonian four-path. Hence
+\[
+(z,x_2,x_1)
+\]
+is tight. Similarly, tightness of \((z,x_1,x_2)\) would make
+\[
+(z,x_1,x_2,x_3)
+\]
+a mixed Hamiltonian four-path, so
+\[
+(x_2,x_1,z)
+\]
+is tight. Thus the middle edge has reverse triples on both sides through the same vertex \(z\).
+
+By the connector dichotomy in the gap-network theorem, a connector with exactly one internal vertex corresponds to adjacent obstruction gaps. Hence, for some integer \(t\),
+\[
+g_2=t,\qquad g_1=t+1.
+\]
+Since \(g_0<g_1\), distinctness of the gaps implies \(g_0<g_2\). Since \(g_2<g_3\), distinctness likewise implies \(g_1<g_3\).
+
+Now apply the short-gap reversal theorem to the displayed tight triple
+\[
+(x_0,x_1,x_2).
+\]
+Because \(g_0<g_2\), its two endpoint gaps differ by at least three:
+\[
+g_2-g_0\ge3.
+\]
+Apply the same theorem to
+\[
+(x_1,x_2,x_3).
+\]
+Because \(g_1<g_3\),
+\[
+g_3-g_1\ge3.
+\]
+Consequently
+\[
+g_0\le t-3,qquad
+g_2=t,qquad
+g_1=t+1,qquad
+g_3\ge t+4.
+\]
+This is conclusion (3).
+
+Finally the displayed gaps of \(M=(p_2,\ldots,p_{m-1})\) are indexed by
+\[
+1,\ldots,m-3.
+\]
+Conclusion (3) gives \(g_3-g_0\ge7\), hence \(g_3\ge8\) and therefore
+\[
+m-3\ge8,
+\qquad
+m\ge11.
+\]
+Thus for \(m\le10\), only conclusions (1) and (2) are possible.
+
+
+
+### A hard four-side lock against a seven-path uses the four interior gaps in reverse order
+
+**Statement.** Assume outcome (3) of four_side_endpoint_lock_gap_network01 with X=(x_0,x_1,x_2,x_3) and a host path P of order seven, so its interior M=(b_1,...,b_5) has exactly four displayed gaps. Let g_i be the second-type obstruction gap of x_i in M. Then (g_0,g_1,g_2,g_3)=(4,3,2,1). Thus the four-side order and the obstruction-gap order are reverses.
+
+The hard gap-network outcome assigns the four vertices x_i to four distinct gaps of M, hence {g_0,g_1,g_2,g_3}={1,2,3,4}. First note that whenever g_i>g_{i+1}, the drop is exactly one. Indeed this adjacent X-pair is an inversion, so four_side_gap_inversion_double_seam_reversal01 gives both tight triples (b_{g_{i+1}+1},x_{i+1},x_i) and (x_{i+1},x_i,b_{g_i}). If g_i>=g_{i+1}+2, the two b-vertices are distinct and these triples concatenate to the mixed Hamiltonian four-path (b_{g_{i+1}+1},x_{i+1},x_i,b_{g_i}), contradicting the defining absence of mixed Hamiltonian four/five-supports in the hard gap branch. Hence g_i=g_{i+1}+1. Next use short_gap_forces_reverse_triples01 on the displayed tight triples (x_0,x_1,x_2) and (x_1,x_2,x_3). If g_2>g_0, then g_2-g_0>=3, so necessarily (g_0,g_2)=(1,4). The remaining values are {2,3}; since g_2=4>g_3 and x_2,x_3 are adjacent, the preceding drop-one rule forces g_3=3 and g_1=2. But then g_3>g_1 with difference one, contradicting short_gap_forces_reverse_triples01 applied to (x_1,x_2,x_3). Therefore g_2<g_0. Symmetrically, if g_3>g_1 then (g_1,g_3)=(1,4); the adjacent inversion g_0>g_1 forces g_0=2 and hence g_2=3, contradicting the short-gap theorem on (x_0,x_1,x_2). Thus g_3<g_1 as well. Now if g_0<g_1, then g_1>g_2 and the distinct intermediate value g_0 lies strictly between them, so g_1-g_2>=2, contradicting the drop-one rule. Hence g_0>g_1 and g_0=g_1+1. If g_1<g_2, then g_0>g_2>g_1, contradicting g_0=g_1+1; hence g_1>g_2 and g_1=g_2+1. Finally g_3<g_1; if g_2<g_3 then g_2<g_3<g_1=g_2+1, impossible. Hence g_2>g_3 and g_2=g_3+1. The four distinct values are therefore 4,3,2,1 in order.
+
+
+
+### The four-side endpoint package extends through the neutral order-five threshold
+
+**Statement.** Let H be a boundary tournament and X|P|Q a spanning three-cover with |X|=4 and P=(p_1,...,p_m), m>=5. Put a=p_1, b=p_m, and M=(p_2,...,p_{m-1}). Then either there is a legal pairwise repartition of X|P with component orders (5,m-1), whose quadratic-potential change is 10-2m (strictly negative for m>=6 and zero for m=5), or both X union {a} and X union {b} are non-Hamiltonian and, for every t in X, F_t=(X-{t}) union {a,b} is Hamiltonian while L_t=V(M) union {t} is non-Hamiltonian. In the latter case there are distinct x,y,z in X such that {a,b,x,y} and {a,b,x,z} are Hamiltonian and their five-vertex union is Hamiltonian. In a minimum counterexample, every proper Hamiltonian support displayed has non-Hamiltonian path-cover-two complement and every L_t has path-cover number two.
+
+The proof of four_side_four_five_supports_descent01 is unchanged except for keeping the potential difference rather than requiring it to be negative. If X+{a} or X+{b} is Hamiltonian, pair it with the inherited endpoint truncation of P; the component orders change from (4,m) to (5,m-1), with Delta Phi=25+(m-1)^2-16-m^2=10-2m, which is zero at m=5 and negative for m>=6. Otherwise both endpoint five-extensions are non-Hamiltonian. Apply two_bad_five_extensions_all_opposite01 to X,a,b to obtain all four Hamiltonian supports F_t. If some L_t=M+{t} is Hamiltonian, F_t|L_t gives the same legal (5,m-1) repartition and the same potential change. Hence absence of such a nonincreasing move forces all four L_t non-Hamiltonian. Apply two_bad_five_extensions_adjacent_four01 exactly as in the predecessor to obtain the two overlapping Hamiltonian four-sets whose union is one of the already-Hamiltonian F_t. The minimum-counterexample complement statements follow from mincex01.
+
+
+
+### Prescribed-pair five-side switches synchronize on a six-vertex transport set
+
+**Statement.** Let H be a minimum counterexample, let X be a proper Hamiltonian five-set with H-X non-Hamiltonian of path-cover number two, fix x in X, and fix distinct p,q outside X. Put S=(X-{x}) union {p,q}. Then either S is Hamiltonian and H-S is non-Hamiltonian with path-cover number two, or S is non-Hamiltonian and has at least four vertices d for which S-{d} is Hamiltonian. In the latter case, writing L=H-S, every such L+d is non-Hamiltonian with path-cover number two; moreover the Hamiltonian two-deletion graph on those good deletion labels has minimum degree at least one, and every edge de gives L+d+e non-Hamiltonian with path-cover number two. In particular, if p,q are prescribed vertices from two complementary paths, the resulting six-set is positioned on both chosen complementary vertices while excluding the prescribed old five-side vertex x.
+
+By five_side_prescribed_pair_switch01 there are at least two distinct d1,d2 in X-{x} such that S-{d1} and S-{d2} are Hamiltonian five-sets. Let K=S-{d1,d2}; then K union {d1}=S-{d2} and K union {d2}=S-{d1} are Hamiltonian. Apply 944fd93bda46 to the common four-core K and labels d1,d2. If S is Hamiltonian, its complement is non-Hamiltonian with path-cover number two by minimum-counterexample calculus. Otherwise 944fd93bda46 gives a Hamiltonian-deletion set D of size at least four containing d1,d2, with every L+d, d in D, non-Hamiltonian of path-cover number two, and a graph J on D of minimum degree at least one whose edge de certifies that L+d+e is non-Hamiltonian of path-cover number two. This is exactly the stated transport set.
+
 ## Metadata
 
 - ID: line_rooted_small_support_descent_from_deletion_cover_lifts
 - Kind: line
-- Version: 12
-- Math version: 8
+- Version: 13
+- Math version: 9
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
 - Chunk 1 — crystallized, version 7: Rooted descent through bounded supports
-- Chunk 2 — HOT, version 6: From bounded supports to defect compression
+- Chunk 2 — HOT, version 7: From bounded supports to defect compression

@@ -1,6 +1,6 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T15:29:13.478701+00:00",
+  "generated_at": "2026-10-03T15:49:07.543707+00:00",
   "main_line_versions": {
     "defect_lines_and_spanningorder_compression": 4,
     "deletioncover_compatibility_and_global_obstruction_structure": 8,
@@ -12,18 +12,18 @@
   "mirror_format": 8,
   "research_line_versions": {
     "leaf_comparisons_in_deletion_support_forests": {
-      "math_version": 11,
-      "version": 15
+      "math_version": 12,
+      "version": 16
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts": {
-      "math_version": 8,
-      "version": 12
+      "math_version": 9,
+      "version": 13
     }
   },
   "schema": "gn3n",
-  "snapshot_revision": 295,
-  "toolkit_limbo_count": 54,
-  "toolkit_promoted_count": 21,
+  "snapshot_revision": 365,
+  "toolkit_limbo_count": 0,
+  "toolkit_promoted_count": 41,
   "universal_document_versions": {
     "guide": 4,
     "reflexes": 1

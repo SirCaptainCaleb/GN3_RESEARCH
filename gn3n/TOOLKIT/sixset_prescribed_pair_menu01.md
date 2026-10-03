@@ -14,8 +14,8 @@ Apply twofourhamdeletions01 to the disjoint two-set {p,q} and four-set A. It giv
 
 - ID: sixset_prescribed_pair_menu01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

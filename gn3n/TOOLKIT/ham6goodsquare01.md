@@ -24,8 +24,8 @@ Finally, if K+d+e were Hamiltonian, its Hamilton path together with the inherite
 
 - ID: ham6goodsquare01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

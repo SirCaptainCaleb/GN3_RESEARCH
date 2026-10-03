@@ -14,8 +14,8 @@ Use the non-Hamiltonian five-vertex boundary tournament B from fixed_terminal_pa
 
 - ID: common_endpoint_constraints_fivewindow_counterexample01
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

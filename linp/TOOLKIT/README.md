@@ -6,7 +6,7 @@ Toolkit entries are usable mathematical results. The distinction below concerns 
 
 These entries have received an independent extensibility review and were judged broadly reusable.
 
-No entries have yet been promoted from Toolkit Limbo.
+- [External toolkit for structured lower-bound constructions](external_toolkit_for_structured_lowerbound_constructions.md) — other — External structural tools that can be ported into lower-bound constructions.
 
 ## Toolkit Limbo
 

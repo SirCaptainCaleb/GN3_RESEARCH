@@ -553,8 +553,8 @@ This does not assert `pc(J)>2`. It shows that even maximal local deletion multip
 
 - ID: counterfence01
 - Kind: toolkit
-- Version: 4
+- Version: 5
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

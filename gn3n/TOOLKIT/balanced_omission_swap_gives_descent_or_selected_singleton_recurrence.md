@@ -66,8 +66,8 @@ For the neutral omission-swap outcome of [[path_disturbance_endpoint_reversal_de
 
 - ID: balanced_omission_swap_gives_descent_or_selected_singleton_recurrence
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted

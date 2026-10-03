@@ -14,8 +14,8 @@ For c in C, the triple C-{c} lies in a unique block, necessarily (C-{c})+d_c wit
 
 - ID: in_a_3841_design_has_a_canonical_complementary_matching_frame
 - Kind: toolkit
-- Version: 1
+- Version: 2
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Limbo
+- Toolkit status: Promoted
