@@ -11,7 +11,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "linp")
-TABLES = ("documents","research","research_line_chunks","main_line_research_lines","brainstorms","dictionary")
+TABLES = ("documents","research","section_subsections","article_sections","brainstorms","dictionary")
 PAGE = 500
 
 def headers():
@@ -63,7 +63,7 @@ def safe_name(s: str) -> str:
 def doc_md(row: dict[str, Any]) -> str:
     return f"# {row.get('title') or row['id']}\n\n{row.get('body') or ''}"
 
-def research_md(row: dict[str, Any], chunks: list[dict[str, Any]] | None = None) -> str:
+def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = None) -> str:
     bits = [f"# {row.get('title') or row['id']}"]
     if row.get("simplified_statement"):
         bits += ["", f"**Summary:** {row['simplified_statement']}"]
@@ -80,40 +80,38 @@ def research_md(row: dict[str, Any], chunks: list[dict[str, Any]] | None = None)
              f"- Refutation: {row.get('refutation_status')}"]
     if row.get("kind") == "toolkit":
         bits.append(f"- Toolkit status: {'Limbo' if row.get('toolkit_limbo') else 'Promoted'}")
-    if row.get("parent_line_id"):
-        bits.append(f"- Parent line: {row['parent_line_id']}")
-    if row.get("kind") == "line":
+    if row.get("kind") == "section":
         bits += ["", "## Authoring state", ""]
-        chunks = chunks or []
-        if not chunks:
-            bits.append("- No chunks recorded.")
+        subsections = subsections or []
+        if not subsections:
+            bits.append("- No Subsections recorded.")
         else:
-            for c in sorted(chunks, key=lambda x: x.get("chunk_no") or 0):
-                state = "HOT" if c.get("state") == "hot" else "crystallized"
-                title = c.get("title") or "(untitled)"
+            for s in sorted(subsections, key=lambda x: x.get("subsection_no") or 0):
+                state = "HOT" if s.get("state") == "hot" else "crystallized"
+                title = s.get("title") or "(untitled)"
                 bits.append(
-                    f"- Chunk {c.get('chunk_no')} — {state}, version {c.get('version')}: {title}"
+                    f"- Subsection {s.get('subsection_no')} — {state}, version {s.get('version')}: {title}"
                 )
     return "\n".join(bits)
 
-def main_line_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]], research_by_id: dict[str, dict[str, Any]]) -> str:
+def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]], research_by_id: dict[str, dict[str, Any]]) -> str:
     bits = [f"# {row.get('title') or row['id']}"]
     members = sorted(
-        [s for s in sequence_rows if s.get("main_line_id") == row["id"]],
+        [s for s in sequence_rows if s.get("article_id") == row["id"]],
         key=lambda s: s.get("position") or 0,
     )
     if not members:
-        bits += ["", "No Research Lines are currently integrated."]
+        bits += ["", "No Sections are currently integrated."]
         return "\n".join(bits)
     for s in members:
-        r = research_by_id.get(s.get("research_line_id"))
+        r = research_by_id.get(s.get("section_id"))
         if not r:
             continue
         body = re.sub(r"(?m)^## ", "### ", r.get("body") or "")
         bits += [
             "", "---", "",
-            f"## Research Line — {r.get('title') or r['id']}",
-            "", f"<!-- research_line_id: {r['id']} -->", "",
+            f"## Section — {r.get('title') or r['id']}",
+            "", f"<!-- section_id: {r['id']} -->", "",
             body,
         ]
     return "\n".join(bits)
@@ -158,16 +156,16 @@ These RPCs are the worker-facing interface to live research state. The artifact 
 Starts a research session against the current database revision. It returns the session ID required by mutation RPCs, startup notices, artifact metadata, and the snapshot revision. Call it once at startup; call it again after deliberately refreshing a stale artifact.
 
 ### `search(query, filters := {})`
-Finds relevant Research Lines, Toolkit entries, documents, and optionally Brainstorms by title and mathematical content. Use it for discovery, not as a substitute for reading a manuscript. Useful filters include `kind`, `toolkit_type`, `toolkit_limbo`, `main_line_id`, and `result_level`.
+Finds relevant Sections, Toolkit entries, Articles and other documents, and optionally Brainstorms by title and mathematical content. Use it for discovery, not as a substitute for reading a manuscript. Useful filters include `kind`, `toolkit_type`, `toolkit_limbo`, `article_id`, and `result_level`.
 
 ### `read(ids, math_versions := {}, cursor := null, page_chars := 9000)`
-Returns exact durable content for named objects, one bounded page at a time. Reading a Main Line ID compiles its ordered Research Line sequence with explicit Research Line boundaries; reading a Research Line ID returns that segment directly. Pass `next_cursor` back until `complete=true`; `math_versions` can request a retained prior mathematical version when available.
+Returns exact durable content for named objects, one bounded page at a time. Reading an Article ID returns its prose document compiled from its ordered Sections with explicit Section boundaries; reading a Section ID returns that Section directly. Pass `next_cursor` back until `complete=true`; `math_versions` can request a retained prior mathematical version when available.
 
 ### `context(research_id)`
-Shows how one research object sits in the mathematical structure: direct premises and consumers, parent/child Research Lines, supersession links, referring Main Lines, and originating Brainstorm. Use it when following dependencies or deciding where new work belongs.
+Shows how one research object sits in the mathematical structure: direct premises and consumers, supersession links, referring Articles, and originating Brainstorm. Use it when following dependencies or deciding where new work belongs.
 
 ### `changes(since_revision := 0, until_revision := null, limit := 100)`
-Checks what changed after a known artifact/database revision without shipping the changed documents themselves. It returns policy/document events plus current Main Line and Research Line versions. Use it for startup freshness checks. Continue from the artifact for matching manuscript versions; call `read()` for each manuscript whose live version is newer.
+Checks what changed after a known artifact/database revision without shipping the changed documents themselves. It returns policy/document events plus current Article and Section versions. Use it for startup freshness checks. Continue from the artifact for matching manuscript versions; call `read()` for each manuscript whose live version is newer.
 
 ### `brainstorms(active_only := true)`
 Returns the compact Brainstorm collection, including seeds, status, and promotion targets. Use it to scan orthogonal ideas cheaply without searching full manuscript text.
@@ -178,32 +176,32 @@ Returns the current canonical terminology and Review Queue in readable form. Use
 ## Publishing research
 
 ### `save_research(session_id, payload, expected_version := null)`
-Creates or edits a Research Line or Toolkit object with optimistic version checking. Substantive publications must explicitly declare their dependencies; nonsubstantive edits do not change the mathematical version. New Toolkit entries begin in Toolkit Limbo. An independent reviewer promotes an entry by a nonsubstantive edit setting `toolkit_limbo=false`.
+Creates or edits a Section or Toolkit object with optimistic version checking. Use `kind: "section"` for Sections. Substantive publications must explicitly declare their dependencies; nonsubstantive edits do not change the mathematical version. New Toolkit entries begin in Toolkit Limbo.
 
-### `save_line_chunk(session_id, line_id, payload, expected_line_version, expected_chunk_version)`
-Edits the current hot chunk of a Research Line. This is the normal path for route development. Substantive changes update the assembled line, bump its mathematical version, and replace its declared dependencies.
+### `save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)`
+Edits the current hot Subsection of a Section. This is the normal path for route development. Substantive changes update the assembled Section, bump its mathematical version, and replace its declared dependencies.
 
-### `repair_line_chunk(session_id, line_id, chunk_no, payload, expected_line_version, expected_chunk_version)`
-Edits an older crystallized chunk in place while preserving the chunked manuscript structure. Use it only when earlier text itself needs correction; ordinary continuing research belongs in the hot chunk.
+### `repair_subsection(session_id, section_id, subsection_no, payload, expected_section_version, expected_subsection_version)`
+Edits an older crystallized Subsection in place while preserving the Section manuscript structure. Use it when earlier text itself needs correction; ordinary continuing research belongs in the hot Subsection.
 
-### `crystallize_line_chunk(session_id, line_id, expected_line_version, expected_chunk_version, next_title := '')`
-Freezes the current hot chunk as a completed manuscript section and opens a new empty hot chunk. Use it when a coherent stage of a Research Line is complete and the next stage should begin separately.
+### `crystallize_subsection(session_id, section_id, expected_section_version, expected_subsection_version, next_title := '')`
+Freezes the current hot Subsection and opens a new empty hot Subsection. Use it when a coherent stage of a Section is complete and the next stage should begin separately.
 
 ### `save_document(session_id, payload, expected_version := null)`
-Creates or edits project documents such as Main Lines and the overview, with version checking and audit bookkeeping. A Main Line is a prose document automatically composed from an ordered Research Line sequence. Set `research_line_ids` to integrate, remove, or reorder mature Research Lines; its generated prose body is refreshed from that sequence.
+Creates or edits project documents such as Articles and the overview, with version checking and audit bookkeeping. An Article is a prose document automatically composed from an ordered Section sequence. Set `section_ids` to integrate, remove, or reorder mature Sections; the generated Article body is refreshed from that sequence.
 
 ## Brainstorms
 
 ### `save_brainstorm(session_id, payload, expected_version := null)`
-Creates, edits, closes, or annotates a Brainstorm entry. Brainstorms are deliberately low-cost exploratory space and need not satisfy Toolkit or Research Line publication standards.
+Creates, edits, closes, or annotates a Brainstorm entry. Brainstorms are deliberately low-cost exploratory space and need not satisfy Toolkit or Section publication standards.
 
 ### `promote_brainstorm(session_id, brainstorm_id, payload := {}, expected_version)`
-Atomically turns a developed Brainstorm into a Research Line and closes the Brainstorm with a link to the new line. The promotion payload must declare the new line's dependencies.
+Atomically turns a developed Brainstorm into a Section and closes the Brainstorm with a link to the new Section. The promotion payload must declare the new Section's dependencies.
 
 ## Audits and chores
 
 ### `request_audit(session_id, target_type, target_id, target_version)`
-Queues an independent audit of the current mathematical version of a research object or the current version of a Main Line. The target version is explicit so an audit cannot silently drift onto newer work.
+Queues an independent audit of the current mathematical version of a research object or the current version of an Article. Use `article` as the target type for an Article.
 
 ### `claim_chore(session_id, kinds := {audit,maintenance})`
 Claims one available audit or bounded maintenance task using a lease. Audit claims enforce independence from the authors of the mathematical version being checked.
@@ -213,27 +211,27 @@ Completes a claimed chore. For audits it records pass/fail status and, when need
 
 ## Atomic publication batches
 
-Use these when one logical publication changes several shared objects together. The sequence is stage → review → commit; do not bypass it for substantial multi-object publication.
+Use these when one logical publication changes several shared objects together. The sequence is stage → review → commit.
 
 ### `stage_batch_chunk(session_id, batch_id, part_no, chunk)`
-Stores part of a potentially large JSON publication batch. Re-staging a part invalidates any previous review of that batch.
+Stores part of a potentially large JSON publication batch. These are transport chunks for the batch payload, unrelated to mathematical Subsections. Re-staging a part invalidates any previous review.
 
 ### `review_staged_batch(session_id, batch_id)`
-Parses the staged operations and reports concurrent shared-state changes since the session baseline. Use the result to check mathematical overlap before committing.
+Parses the staged operations and reports concurrent shared-state changes since the session baseline.
 
 ### `commit_staged_batch(session_id, batch_id, overlap_checked)`
-Atomically executes a reviewed staged batch. It refuses to commit if the batch changed after review or if another session changed shared research after the overlap review.
+Atomically executes a reviewed staged batch.
 
 ### `discard_staged_batch(session_id, batch_id)`
-Abandons an uncommitted staged batch and its stored chunks. Use it when a proposed publication is obsolete or must be rebuilt from scratch.
+Abandons an uncommitted staged batch and its stored transport chunks.
 
 ## Recovery and introspection
 
 ### `artifact_help()`
-Returns the current artifact identifier and recovery instructions for rebuilding or locating the research-context artifact. This is an exceptional recovery path, not part of ordinary research.
+Returns the current artifact identifier and recovery instructions for rebuilding or locating the research-context artifact.
 
 ### `help()`
-Returns a compact machine-readable overview of the API and conventions. Prefer this Markdown reference for normal reading; use `help()` when the artifact is unavailable or you suspect the live API has changed since the snapshot.
+Returns a compact machine-readable overview of the API and conventions.
 """
 
 def toolkit_entry_line(r: dict[str, Any]) -> str:
@@ -255,8 +253,8 @@ def build(schema: str):
     overview = next((d for d in live_docs if d.get("kind") == "overview"), None)
     guide = next((d for d in universal_docs if d.get("kind") == "guide"), None)
     reflexes = next((d for d in universal_docs if d.get("kind") == "reflexes"), None)
-    main_lines = sorted(
-        [d for d in live_docs if d.get("kind") == "main_line"],
+    articles = sorted(
+        [d for d in live_docs if d.get("kind") == "article"],
         key=lambda d: (d.get("position") is None, d.get("position") or 0, d.get("id") or "")
     )
 
@@ -268,62 +266,66 @@ def build(schema: str):
 
     active_research = [r for r in data["research"] if r.get("archived_at") is None]
     research_by_id = {r["id"]: r for r in active_research}
-    chunks_by_line: dict[str, list[dict[str, Any]]] = {}
-    for c in data["research_line_chunks"]:
-        chunks_by_line.setdefault(c["line_id"], []).append(c)
+    subsections_by_section: dict[str, list[dict[str, Any]]] = {}
+    for s in data["section_subsections"]:
+        subsections_by_section.setdefault(s["section_id"], []).append(s)
 
-    index = ["# Main Lines", ""]
-    for d in main_lines:
+    article_index = ["# Articles", ""]
+    for d in articles:
         fn = safe_name(d["id"]) + ".md"
         members = sorted(
-            [s for s in data["main_line_research_lines"] if s.get("main_line_id") == d["id"]],
+            [s for s in data["article_sections"] if s.get("article_id") == d["id"]],
             key=lambda s: s.get("position") or 0,
         )
-        index.append(f"- {fn} — {d.get('title') or d['id']}")
+        article_index.append(f"- {fn} — {d.get('title') or d['id']}")
         for s in members:
-            r = research_by_id.get(s.get("research_line_id"))
+            r = research_by_id.get(s.get("section_id"))
             if r:
-                index.append(f"  - Research Line: {r.get('title') or r['id']} (`{r['id']}`)")
-        write(root / "MAIN_LINES" / fn, main_line_md(d, data["main_line_research_lines"], research_by_id))
-    if not main_lines:
-        index.append("No active Main Lines.")
-    write(root / "MAIN_LINES" / "README.md", "\n".join(index))
-    main_by_id = {d["id"]: d for d in main_lines}
-    memberships_by_line: dict[str, list[dict[str, Any]]] = {}
-    for s in data["main_line_research_lines"]:
-        memberships_by_line.setdefault(s.get("research_line_id"), []).append(s)
+                article_index.append(f"  - Section: {r.get('title') or r['id']} (`{r['id']}`)")
+        write(root / "ARTICLES" / fn, article_md(d, data["article_sections"], research_by_id))
+    if not articles:
+        article_index.append("No active Articles.")
+    write(root / "ARTICLES" / "README.md", "\n".join(article_index))
 
-    research_line_index = [
-        "# Research Lines",
+    article_by_id = {d["id"]: d for d in articles}
+    memberships_by_section: dict[str, list[dict[str, Any]]] = {}
+    for s in data["article_sections"]:
+        memberships_by_section.setdefault(s.get("section_id"), []).append(s)
+
+    section_index = [
+        "# Sections",
         "",
-        "Research Lines are the section-sized mathematical manuscripts. Main Lines are prose documents compiled from ordered mature Research Lines; standalone Research Lines remain active development routes.",
+        "Sections are section-sized mathematical manuscripts assembled from ordered Subsections. Articles are prose documents compiled from ordered mature Sections; standalone Sections remain active development routes.",
         "",
     ]
-    line_items = sorted(
-        [r for r in active_research if r.get("kind") == "line"],
+    section_items = sorted(
+        [r for r in active_research if r.get("kind") == "section"],
         key=lambda r: (r.get("title") or "").casefold(),
     )
-    if line_items:
-        for r in line_items:
+    if section_items:
+        for r in section_items:
             fn = safe_name(r["id"]) + ".md"
-            memberships = sorted(memberships_by_line.get(r["id"], []), key=lambda s: (s.get("main_line_id") or "", s.get("position") or 0))
+            memberships = sorted(
+                memberships_by_section.get(r["id"], []),
+                key=lambda s: (s.get("article_id") or "", s.get("position") or 0),
+            )
             if memberships:
                 where = "; ".join(
-                    f"{main_by_id.get(s.get('main_line_id'), {}).get('title') or s.get('main_line_id')} at position {s.get('position')}"
+                    f"{article_by_id.get(s.get('article_id'), {}).get('title') or s.get('article_id')} at position {s.get('position')}"
                     for s in memberships
                 )
-                research_line_index.append(f"- [{r.get('title') or r['id']}]({fn}) (`{r['id']}`) — integrated: {where}")
+                section_index.append(f"- [{r.get('title') or r['id']}]({fn}) (`{r['id']}`) — integrated: {where}")
             else:
-                research_line_index.append(f"- [{r.get('title') or r['id']}]({fn}) (`{r['id']}`) — standalone development")
+                section_index.append(f"- [{r.get('title') or r['id']}]({fn}) (`{r['id']}`) — standalone development")
     else:
-        research_line_index.append("No active Research Lines.")
-    write(root / "RESEARCH_LINES" / "README.md", "\n".join(research_line_index))
+        section_index.append("No active Sections.")
+    write(root / "SECTIONS" / "README.md", "\n".join(section_index))
 
     for r in active_research:
-        folder = "RESEARCH_LINES" if r.get("kind") == "line" else "TOOLKIT"
+        folder = "SECTIONS" if r.get("kind") == "section" else "TOOLKIT"
         write(
             root / folder / (safe_name(r["id"]) + ".md"),
-            research_md(r, chunks_by_line.get(r["id"], []))
+            research_md(r, subsections_by_section.get(r["id"], []))
         )
 
     toolkit_items = sorted(
@@ -370,9 +372,9 @@ def build(schema: str):
 
 Review startup_notices returned by boot().
 
-Use the extracted artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read MAIN_LINES/README.md and every listed Main Line last. Main Line files are compiled from ordered Research Lines and mark every Research Line boundary; read the corresponding RESEARCH_LINES file or call read([research_line_id]) when one segment is the relevant target.
+Use the extracted artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read ARTICLES/README.md and every listed Article last. Article files are compiled from ordered Sections and mark every Section boundary; read the corresponding SECTIONS file or call read([section_id]) when one Section is the relevant target.
 
-Choose a route and call changes(...) once using this artifact's snapshot revision as the freshness baseline. Compare the chosen Main Line and Research Line versions with MANIFEST.json. Continue directly from the artifact for every matching version. For each manuscript whose live version is newer, read the current manuscript completely with read([id]), following next_cursor until complete=true, and use that refreshed manuscript as the local working copy.
+Choose a route and call changes(...) once using this artifact's snapshot revision as the freshness baseline. Compare the chosen Article and Section versions with MANIFEST.json. Continue directly from the artifact for every matching version. For each manuscript whose live version is newer, read the current manuscript completely with read([id]), following next_cursor until complete=true, and use that refreshed manuscript as the local working copy.
 
 When target_revision materially exceeds the artifact snapshot revision, use artifact_help() to refresh the artifact, call boot() again, and continue from the refreshed artifact.
 
@@ -388,30 +390,30 @@ Generated: {rev.get('generated_at')}
         "snapshot_revision": rev.get("revision"),
         "generated_at": rev.get("generated_at"),
         "universal_document_versions": {d["id"]: d.get("version") for d in universal_docs},
-        "main_line_versions": {d["id"]: d.get("version") for d in main_lines},
-        "main_line_sequences": {
+        "article_versions": {d["id"]: d.get("version") for d in articles},
+        "article_sequences": {
             d["id"]: [
                 {
                     "position": s.get("position"),
-                    "id": s.get("research_line_id"),
-                    "version": research_by_id.get(s.get("research_line_id"), {}).get("version"),
-                    "math_version": research_by_id.get(s.get("research_line_id"), {}).get("math_version"),
+                    "id": s.get("section_id"),
+                    "version": research_by_id.get(s.get("section_id"), {}).get("version"),
+                    "math_version": research_by_id.get(s.get("section_id"), {}).get("math_version"),
                 }
                 for s in sorted(
-                    [x for x in data["main_line_research_lines"] if x.get("main_line_id") == d["id"]],
+                    [x for x in data["article_sections"] if x.get("article_id") == d["id"]],
                     key=lambda x: x.get("position") or 0,
                 )
             ]
-            for d in main_lines
+            for d in articles
         },
-        "research_line_versions": {
+        "section_versions": {
             r["id"]: {"version": r.get("version"), "math_version": r.get("math_version")}
-            for r in active_research if r.get("kind") == "line"
+            for r in active_research if r.get("kind") == "section"
         },
         "toolkit_promoted_count": len(promoted),
         "toolkit_limbo_count": len(limbo),
         "brainstorm_count": len(data["brainstorms"]),
-        "mirror_format": 9,
+        "mirror_format": 10,
     })
 
 def main():
