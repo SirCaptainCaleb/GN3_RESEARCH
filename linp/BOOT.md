@@ -12,6 +12,13 @@ Read, in this order:
 
 The Main Lines are deliberately last: they are the final attention-primer before route selection.
 
+## Hard research rules
+
+- Mathematical writing must be publication-precise: explicit hypotheses, quantified variables and parameters, exact exceptional cases, standard terminology, and checkable logical inferences.
+- Mathematical manuscripts must contain no proof-process or research-process meta-language. Do not narrate workers, routes, frontier status, audits, databases, scheduler state, what remains to be proved, what would complete the proof, or what an approach is trying to do. State the mathematics directly.
+- Computation is banned for mathematical research: no brute-force enumeration, computer search, numerical experiments, scripts, code, CAS, SAT/SMT solvers, or computational test beds.
+- External web search is banned for mathematical research. Work from this project artifact, the narrowly permitted project-state reads described below, and mathematical reasoning.
+
 After choosing a route, perform one narrow live freshness check before proof work:
 - call changes(...) to obtain the compact live Main Line and Research Line version lists;
 - compare the chosen Main Line version, if any, with main_line_versions in MANIFEST.json;
@@ -37,4 +44,4 @@ Research Lines are authored in crystallizing chunks. The line file reads as one 
 After a substantial publication, reread the Research Line you are continuing before resuming work. This is the normal mathematical refresh point. Re-read a Main Line only when its version changed or its global relationship has materially shifted.
 
 Snapshot event: 0
-Generated: 2026-10-03T00:20:45.116875+00:00
+Generated: 2026-10-03T00:23:43.066682+00:00
