@@ -2,7 +2,7 @@
   "api": [
     "boot()",
     "search(query, filters := {})",
-    "read(ids, math_versions := {})",
+    "read(ids, math_versions := {}, cursor := null, page_chars := 6500)",
     "context(research_id)",
     "save_research(session_id, payload, expected_version := null)",
     "save_line_chunk(session_id, line_id, payload, expected_line_version, expected_chunk_version)",
@@ -24,9 +24,15 @@
     "discard_staged_batch(session_id, batch_id)",
     "help()"
   ],
+  "reading": [
+    "read() is the only exact manuscript-content read path and is statelessly paged.",
+    "Each call returns at most 7000 content characters plus compact metadata.",
+    "Pass next_cursor back to read() until complete=true. The cursor identifies the requested item index and character offset.",
+    "context(), search(), and brainstorms() are navigation surfaces and intentionally omit full manuscript bodies."
+  ],
   "research_contract": [
     "Startup is fully informed from the artifact; Main Lines are read last.",
-    "After choosing a route, use changes() only as a compact freshness/version signal. Read only the chosen Main Line or Research Line if its version changed.",
+    "After choosing a route, use changes() only as a compact freshness/version signal. Page through only the chosen Main Line or Research Line if its version changed.",
     "During mathematical research, workers self-police the no-consultation rule and keep intermediate reasoning local.",
     "Publish only after substantial progress in one coherent staged batch.",
     "review_staged_batch() is a required concurrency barrier; commit_staged_batch() refuses if another session publishes after review."
