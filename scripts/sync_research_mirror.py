@@ -1,3 +1,4 @@
+# Artifact refresh trigger: validates cleanup and artifact metadata publishing.
 # Artifact startup is consumed through the GitHub Actions artifact download path.
 #!/usr/bin/env python3
 from __future__ import annotations
