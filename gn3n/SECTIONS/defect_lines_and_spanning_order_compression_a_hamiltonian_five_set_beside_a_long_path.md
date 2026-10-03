@@ -21,15 +21,45 @@ are Hamiltonian. If \((V(P)-\{p_1\})\cup\{x\}\) or \((V(P)-\{p_m\})\cup\{x\}\) i
 
 Thus both central cases reduce to the same ordered objects.
 
+### A prescribed endpoint survives reduction to four vertices
+
+The order-five support alternative reduces to the four-support interface.
+
+**Lemma 9.** Let \(H\) be a minimum counterexample, let \(F\subsetneq V(H)\) be a Hamiltonian five-support, and let \(a\in F\) be prescribed. Then there is a Hamiltonian four-set
+\[
+K\subset F,\qquad a\in K,
+\]
+such that \(H-K\) is non-Hamiltonian and has path-cover number two.
+
+**Proof.** Choose a Hamilton path on \(F\). It has two endpoints, so at least one endpoint \(z\) is different from the prescribed vertex \(a\). Delete \(z\). The remaining four vertices inherit a Hamilton path, so
+\[
+K=F-\{z\}
+\]
+is Hamiltonian and contains \(a\).
+
+The set \(K\) is proper. Minimum-counterexample calculus gives
+\[
+\operatorname{pc}(H-K)\le2.
+\]
+If \(H-K\) were Hamiltonian, a Hamilton path on \(K\) together with one on \(H-K\) would form a two-cover of \(H\), contrary to the choice of \(H\). Hence
+\[
+\operatorname{pc}(H-K)=2.
+\]
+\(\square\)
+
+Consequently a Hamiltonian support of order four **or five** carrying displayed endpoint information, with two-coverable complement, may always be replaced by an endpoint-rooted Hamiltonian four-support with the same complement property. Lemma 8 of the preceding Section then converts this four-support into a direct mixed edge, a split/leave-and-return disturbance, an order disagreement, an external end-edge reversal, or a two-cover.
+
+Thus the order-five support is no longer an independent terminal interface.
+
 ## Metadata
 
 - ID: defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path
 - Kind: section
-- Version: 1
-- Math version: 1
+- Version: 2
+- Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 1: (untitled)
+- Subsection 1 — HOT, version 2: (untitled)

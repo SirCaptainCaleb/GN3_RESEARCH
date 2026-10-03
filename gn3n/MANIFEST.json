@@ -33,21 +33,21 @@
       },
       {
         "id": "defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set",
-        "math_version": 1,
+        "math_version": 2,
         "position": 6,
-        "version": 1
+        "version": 2
       },
       {
         "id": "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path",
-        "math_version": 1,
+        "math_version": 2,
         "position": 7,
-        "version": 1
+        "version": 2
       },
       {
         "id": "defect_lines_and_spanning_order_compression_the_remaining_lemma",
-        "math_version": 3,
+        "math_version": 9,
         "position": 8,
-        "version": 3
+        "version": 9
       },
       {
         "id": "defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local",
@@ -189,9 +189,9 @@
       },
       {
         "id": "longest_paths_and_reversal_structure_reversals_are_unavoidable",
-        "math_version": 1,
+        "math_version": 2,
         "position": 2,
-        "version": 1
+        "version": 2
       },
       {
         "id": "longest_paths_and_reversal_structure_a_longest_path",
@@ -374,25 +374,25 @@
     ]
   },
   "article_versions": {
-    "defect_lines_and_spanningorder_compression": 8,
+    "defect_lines_and_spanningorder_compression": 16,
     "deletioncover_compatibility_and_global_obstruction_structure": 11,
     "endpoint_transport_and_small_support_gluing": 3,
-    "longest_paths_and_reversal_structure": 6,
+    "longest_paths_and_reversal_structure": 7,
     "quadratic_potential_and_pairwise_repartition": 4,
     "three_cover_repartitions_and_recurrence": 5
   },
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T19:57:04.420289+00:00",
+  "generated_at": "2026-10-03T21:01:24.902738+00:00",
   "mirror_format": 10,
   "schema": "gn3n",
   "section_versions": {
     "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 2
     },
     "defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 2
     },
     "defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local": {
       "math_version": 1,
@@ -419,8 +419,8 @@
       "version": 1
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma": {
-      "math_version": 3,
-      "version": 3
+      "math_version": 9,
+      "version": 9
     },
     "defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed": {
       "math_version": 1,
@@ -539,8 +539,8 @@
       "version": 1
     },
     "longest_paths_and_reversal_structure_reversals_are_unavoidable": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 2
     },
     "longest_paths_and_reversal_structure_the_endpoint_pair_family": {
       "math_version": 1,
@@ -635,7 +635,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 416,
+  "snapshot_revision": 430,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {
