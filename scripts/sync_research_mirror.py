@@ -3,7 +3,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import json, os, shutil, urllib.error, urllib.request
+import json, os, re, shutil, urllib.error, urllib.request
 from pathlib import Path
 from typing import Any
 
@@ -11,7 +11,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_SECRET_KEY"]
 STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "linp")
-TABLES = ("documents","research","research_line_chunks","brainstorms","dictionary")
+TABLES = ("documents","research","research_line_chunks","main_line_research_lines","brainstorms","dictionary")
 PAGE = 500
 
 def headers():
@@ -96,6 +96,28 @@ def research_md(row: dict[str, Any], chunks: list[dict[str, Any]] | None = None)
                 )
     return "\n".join(bits)
 
+def main_line_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]], research_by_id: dict[str, dict[str, Any]]) -> str:
+    bits = [f"# {row.get('title') or row['id']}"]
+    members = sorted(
+        [s for s in sequence_rows if s.get("main_line_id") == row["id"]],
+        key=lambda s: s.get("position") or 0,
+    )
+    if not members:
+        bits += ["", "No Research Lines are currently integrated."]
+        return "\n".join(bits)
+    for s in members:
+        r = research_by_id.get(s.get("research_line_id"))
+        if not r:
+            continue
+        body = re.sub(r"(?m)^## ", "### ", r.get("body") or "")
+        bits += [
+            "", "---", "",
+            f"## Research Line — {r.get('title') or r['id']}",
+            "", f"<!-- research_line_id: {r['id']} -->", "",
+            body,
+        ]
+    return "\n".join(bits)
+
 def dictionary_text(items: list[dict[str, Any]]) -> str:
     by_section: dict[str, list[dict[str, Any]]] = {}
     for x in items:
@@ -139,7 +161,7 @@ Starts a research session against the current database revision. It returns the 
 Finds relevant Research Lines, Toolkit entries, documents, and optionally Brainstorms by title and mathematical content. Use it for discovery, not as a substitute for reading a manuscript. Useful filters include `kind`, `toolkit_type`, `toolkit_limbo`, `main_line_id`, and `result_level`.
 
 ### `read(ids, math_versions := {}, cursor := null, page_chars := 9000)`
-Returns exact durable content for named objects, one bounded page at a time. Use this when a result or manuscript must actually be understood. Pass `next_cursor` back until `complete=true`; `math_versions` can request a retained prior mathematical version when available.
+Returns exact durable content for named objects, one bounded page at a time. Reading a Main Line ID compiles its ordered Research Line sequence with explicit Research Line boundaries; reading a Research Line ID returns that segment directly. Pass `next_cursor` back until `complete=true`; `math_versions` can request a retained prior mathematical version when available.
 
 ### `context(research_id)`
 Shows how one research object sits in the mathematical structure: direct premises and consumers, parent/child Research Lines, supersession links, referring Main Lines, and originating Brainstorm. Use it when following dependencies or deciding where new work belongs.
@@ -168,7 +190,7 @@ Edits an older crystallized chunk in place while preserving the chunked manuscri
 Freezes the current hot chunk as a completed manuscript section and opens a new empty hot chunk. Use it when a coherent stage of a Research Line is complete and the next stage should begin separately.
 
 ### `save_document(session_id, payload, expected_version := null)`
-Creates or edits project documents such as Main Lines and the overview, with version checking and audit bookkeeping. Use it for synthesis/document changes rather than theorem or route publication.
+Creates or edits project documents such as Main Lines and the overview, with version checking and audit bookkeeping. Main Line content is an ordered Research Line sequence: set `research_line_ids` to integrate, remove, or reorder mature Research Lines. Main Line prose is compiled from those Research Lines rather than stored independently.
 
 ## Brainstorms
 
@@ -244,19 +266,28 @@ def build(schema: str):
     write(root / "DICTIONARY.md", dictionary_text(data["dictionary"]))
     write(root / "API.md", api_text())
 
-    index = ["# Main Lines", ""]
-    for d in main_lines:
-        fn = safe_name(d["id"]) + ".md"
-        index.append(f"- {fn} — {d.get('title') or d['id']}")
-        write(root / "MAIN_LINES" / fn, doc_md(d))
-    if not main_lines:
-        index.append("No active Main Lines.")
-    write(root / "MAIN_LINES" / "README.md", "\n".join(index))
-
     active_research = [r for r in data["research"] if r.get("archived_at") is None]
+    research_by_id = {r["id"]: r for r in active_research}
     chunks_by_line: dict[str, list[dict[str, Any]]] = {}
     for c in data["research_line_chunks"]:
         chunks_by_line.setdefault(c["line_id"], []).append(c)
+
+    index = ["# Main Lines", ""]
+    for d in main_lines:
+        fn = safe_name(d["id"]) + ".md"
+        members = sorted(
+            [s for s in data["main_line_research_lines"] if s.get("main_line_id") == d["id"]],
+            key=lambda s: s.get("position") or 0,
+        )
+        index.append(f"- {fn} — {d.get('title') or d['id']}")
+        for s in members:
+            r = research_by_id.get(s.get("research_line_id"))
+            if r:
+                index.append(f"  - Research Line: {r.get('title') or r['id']} (`{r['id']}`)")
+        write(root / "MAIN_LINES" / fn, main_line_md(d, data["main_line_research_lines"], research_by_id))
+    if not main_lines:
+        index.append("No active Main Lines.")
+    write(root / "MAIN_LINES" / "README.md", "\n".join(index))
     for r in active_research:
         folder = "RESEARCH_LINES" if r.get("kind") == "line" else "TOOLKIT"
         write(
@@ -310,7 +341,7 @@ def build(schema: str):
 
 Review startup_notices returned by boot().
 
-Use the extracted artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read MAIN_LINES/README.md and every listed Main Line last.
+Use the extracted artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read MAIN_LINES/README.md and every listed Main Line last. Main Line files are compiled from ordered Research Lines and mark every Research Line boundary; read the corresponding RESEARCH_LINES file or call read([research_line_id]) when one segment is the relevant target.
 
 Choose a route and call changes(...) once using this artifact's snapshot revision as the freshness baseline. Compare the chosen Main Line and Research Line versions with MANIFEST.json. Continue directly from the artifact for every matching version. For each manuscript whose live version is newer, read the current manuscript completely with read([id]), following next_cursor until complete=true, and use that refreshed manuscript as the local working copy.
 
@@ -329,6 +360,21 @@ Generated: {rev.get('generated_at')}
         "generated_at": rev.get("generated_at"),
         "universal_document_versions": {d["id"]: d.get("version") for d in universal_docs},
         "main_line_versions": {d["id"]: d.get("version") for d in main_lines},
+        "main_line_sequences": {
+            d["id"]: [
+                {
+                    "position": s.get("position"),
+                    "id": s.get("research_line_id"),
+                    "version": research_by_id.get(s.get("research_line_id"), {}).get("version"),
+                    "math_version": research_by_id.get(s.get("research_line_id"), {}).get("math_version"),
+                }
+                for s in sorted(
+                    [x for x in data["main_line_research_lines"] if x.get("main_line_id") == d["id"]],
+                    key=lambda x: x.get("position") or 0,
+                )
+            ]
+            for d in main_lines
+        },
         "research_line_versions": {
             r["id"]: {"version": r.get("version"), "math_version": r.get("math_version")}
             for r in active_research if r.get("kind") == "line"
@@ -336,7 +382,7 @@ Generated: {rev.get('generated_at')}
         "toolkit_promoted_count": len(promoted),
         "toolkit_limbo_count": len(limbo),
         "brainstorm_count": len(data["brainstorms"]),
-        "mirror_format": 8,
+        "mirror_format": 9,
     })
 
 def main():
