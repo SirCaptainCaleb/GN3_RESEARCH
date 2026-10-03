@@ -48,7 +48,7 @@
     "search() matches full text across titles, simplified statements, statements, and bodies; documents are included by default.",
     "Results are ordered primarily by match count per object.",
     "filters.result_level may be ids, metadata, simplified, statement, or full; simplified is the default.",
-    "Each call returns one result page capped at 9000 characters. Use filters.page=1,2,... for later pages.",
+    "Each call returns one packed result page capped at 9000 characters. filters.offset is the number of complete packed pages to skip; use offset=1,2,... for later pages. A result that would cross a page boundary moves intact to the next page; only a result larger than an empty page is truncated.",
     "Brainstorms remain opt-in with include_brainstorms=true. Superseded and archived research remain hidden by default."
   ],
   "usage": "Call through the active project schema."
