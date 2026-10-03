@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "four_side_gap_network_disturbance01",
+    "consumer_math_version": 3,
+    "premise_id": "four_side_endpoint_lock_gap_network01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "four_side_gap_network_disturbance01",
+    "consumer_math_version": 3,
+    "premise_id": "pathcalc01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "four_side_gap_network_disturbance01",
+    "consumer_math_version": 3,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "four_side_gap_network_disturbance01",
+    "consumer_math_version": 3,
+    "premise_id": "short_gap_forces_reverse_triples01",
+    "premise_math_version": 1
+  }
+]
