@@ -1,6 +1,6 @@
 {
   "brainstorm_count": 0,
-  "generated_at": "2026-10-02T23:59:56.103476+00:00",
+  "generated_at": "2026-10-03T00:10:32.360865+00:00",
   "main_line_count": 8,
   "main_line_versions": {
     "linp_route01": 1,
@@ -20,6 +20,7 @@
   "tables": [
     "documents",
     "research",
+    "research_line_chunks",
     "research_versions",
     "dependencies",
     "supersessions",

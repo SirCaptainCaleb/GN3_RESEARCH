@@ -32,7 +32,9 @@ Publish only after substantial progress. Publication is a separate synchronizati
 
 If shared state changes after review, commit will refuse and require a fresh overlap review.
 
+Research Lines are authored in crystallizing chunks. The line file reads as one assembled manuscript; its Authoring state footer identifies the single hot chunk and its version. Ordinary additions edit only that hot chunk with save_line_chunk(...). When the chunk becomes a coherent publication-style unit, freeze it with crystallize_line_chunk(...) and continue in the new hot chunk.
+
 After a substantial publication, reread the Research Line you are continuing before resuming work. This is the normal mathematical refresh point. Re-read a Main Line only when its version changed or its global relationship has materially shifted.
 
 Snapshot event: 0
-Generated: 2026-10-02T23:59:56.103476+00:00
+Generated: 2026-10-03T00:10:32.360865+00:00

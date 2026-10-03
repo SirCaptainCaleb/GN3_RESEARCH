@@ -5,6 +5,8 @@
     "read(ids, math_versions := {})",
     "context(research_id)",
     "save_research(session_id, payload, expected_version := null)",
+    "save_line_chunk(session_id, line_id, payload, expected_line_version, expected_chunk_version)",
+    "crystallize_line_chunk(session_id, line_id, expected_line_version, expected_chunk_version, next_title := '')",
     "save_batch(session_id, operations)",
     "save_document(session_id, payload, expected_version := null)",
     "brainstorms(active_only := true)",
@@ -23,12 +25,18 @@
     "help()"
   ],
   "research_contract": [
-    "Startup is fully informed from the artifact. Main Lines are read last.",
-    "After choosing a route, use changes() only as a compact freshness check: compare the chosen Main Line and Research Line versions against MANIFEST.json. If a chosen line version differs, fetch only that line with read([id]).",
-    "Mathematical update content is not delivered through changes(); Research Lines and Main Lines are the mathematical synchronization surfaces.",
+    "Startup is fully informed from the artifact; Main Lines are read last.",
+    "After choosing a route, use changes() only as a compact freshness/version signal. Read only the chosen Main Line or Research Line if its version changed.",
     "During mathematical research, workers self-police the no-consultation rule and keep intermediate reasoning local.",
-    "Publish only after substantial progress, as one coherent staged batch.",
-    "review_staged_batch() is a required concurrency barrier and commit_staged_batch() refuses if another session publishes after review."
+    "Publish only after substantial progress in one coherent staged batch.",
+    "review_staged_batch() is a required concurrency barrier; commit_staged_batch() refuses if another session publishes after review."
+  ],
+  "research_lines": [
+    "A Research Line is read as one assembled manuscript but authored as ordered chunks.",
+    "Exactly one chunk is hot. Ordinary mathematical additions edit only that hot chunk with save_line_chunk().",
+    "Crystallization freezes the hot chunk and opens a new empty hot chunk without changing the line math_version.",
+    "Older crystallized chunks are normally not rewritten. When the line matures, compress the whole line by an explicit Main Line rewrite.",
+    "Direct Research Line body edits through save_research() are rejected; save_research() remains available for line metadata and Toolkit objects."
   ],
   "usage": "Call through the active project schema."
 }

@@ -1,6 +1,6 @@
 {
   "brainstorm_count": 0,
-  "generated_at": "2026-10-02T23:59:54.279027+00:00",
+  "generated_at": "2026-10-03T00:10:31.09672+00:00",
   "main_line_count": 6,
   "main_line_versions": {
     "defect_lines_and_spanningorder_compression": 1,
@@ -18,6 +18,7 @@
   "tables": [
     "documents",
     "research",
+    "research_line_chunks",
     "research_versions",
     "dependencies",
     "supersessions",
