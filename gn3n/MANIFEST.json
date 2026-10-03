@@ -1,6 +1,6 @@
 {
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T17:39:08.381438+00:00",
+  "generated_at": "2026-10-03T17:41:20.483255+00:00",
   "main_line_sequences": {
     "defect_lines_and_spanningorder_compression": [
       {
@@ -639,7 +639,7 @@
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {
-    "guide": 6,
-    "reflexes": 2
+    "guide": 7,
+    "reflexes": 3
   }
 }
