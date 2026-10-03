@@ -28,7 +28,7 @@
     "read() is the only exact manuscript-content read path and is statelessly paged.",
     "Each call returns at most 9000 content characters plus compact metadata.",
     "Pass next_cursor back to read() until complete=true. The cursor identifies the requested item index and character offset.",
-    "context(), search(), and brainstorms() are navigation surfaces and intentionally omit full manuscript bodies."
+    "context(), search(), and brainstorms() are navigation surfaces and do not substitute for exact paged reads."
   ],
   "research_contract": [
     "Startup is fully informed from the artifact; Main Lines are read last.",
@@ -43,6 +43,13 @@
     "Crystallization freezes the hot chunk and opens a new empty hot chunk without changing the line math_version.",
     "Older crystallized chunks are normally not rewritten. When the line matures, compress the whole line by an explicit Main Line rewrite.",
     "Direct Research Line body edits through save_research() are rejected; save_research() remains available for line metadata and Toolkit objects."
+  ],
+  "searching": [
+    "search() matches full text across titles, simplified statements, statements, and bodies; documents are included by default.",
+    "Results are ordered primarily by match count per object.",
+    "filters.result_level may be ids, metadata, simplified, statement, or full; simplified is the default.",
+    "Each call returns one result page capped at 9000 characters. Use filters.page=1,2,... for later pages.",
+    "Brainstorms remain opt-in with include_brainstorms=true. Superseded and archived research remain hidden by default."
   ],
   "usage": "Call through the active project schema."
 }
