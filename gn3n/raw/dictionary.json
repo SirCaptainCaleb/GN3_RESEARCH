@@ -369,15 +369,6 @@
     "updated_at": "2026-09-28T19:29:19.241397+00:00"
   },
   {
-    "definition": "",
-    "notes": "Do not use plateau without specifying the quantity that is constant and the moves under which it is constant.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "plateau",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
     "definition": "In an ordinary graph, a non-edge is an unordered pair of distinct vertices that is not an edge.",
     "notes": "Do not use non-edge for an ordered triple that is absent from a boundary tournament; use non-tight triple or non-hyperedge.",
     "preferred_term": null,
@@ -504,6 +495,15 @@
     "updated_at": "2026-09-28T19:29:19.241397+00:00"
   },
   {
+    "definition": "",
+    "notes": "Do not use plateau without specifying the quantity that is constant and the moves under which it is constant.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "plateau",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
     "definition": "Let C be a path cover and let C_0 be a subcollection of its paths. A repartition of C_0 replaces those paths by another path cover of the same union of vertex sets, leaving all paths outside C_0 unchanged.",
     "notes": "Name the paths being replaced when this is not clear.",
     "preferred_term": null,
@@ -585,87 +585,6 @@
     "updated_at": "2026-09-28T19:29:19.241397+00:00"
   },
   {
-    "definition": "",
-    "notes": "Do not use clean as an unexplained technical modifier. State the property meant by clean directly.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "clean",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "Do not use crossing without naming the objects that cross and the precise crossing relation.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "crossing",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "Use kernel only with an explicit definition or in a standard mathematical sense already fixed in context. Prefer naming the vertex set and its property.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "kernel",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "Do not use barrier as a technical noun without an explicit local definition of the obstruction it denotes. Prefer stating the forbidden or forced extension property directly.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "barrier",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "Avoid shell as frame-carrying shorthand. State the family of vertex sets, covers, or states directly.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "shell",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "State the transformation explicitly. No generic uncrossing operation is assumed.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "uncrossing",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "When referring to a fractional path cover, write positive-weight path support for a path support P with x_P>0.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "positive support",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "State which vertex sets are changed and which path or Hamiltonicity property is preserved.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "support exchange",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "State the objects forming the state space and the legal move relation before using reconfiguration as shorthand.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "reconfiguration",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
     "definition": "A tight path is a sequence (v_1,...,v_m) of distinct vertices such that (v_i,v_{i+1},v_{i+2}) is a tight triple for every 1<=i<=m-2.",
     "notes": "Paths with one or two vertices are tight vacuously.",
     "preferred_term": null,
@@ -684,24 +603,6 @@
     "updated_at": "2026-09-29T19:10:31.084486+00:00"
   },
   {
-    "definition": "",
-    "notes": "Avoid this frame-carrying phrase. Describe the family of deletion or restoration states directly.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "omission surface",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
-    "definition": "",
-    "notes": "State the insertion position that fails. If every insertion position fails, use noninsertable.",
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "failed insertion",
-    "updated_at": "2026-09-28T19:29:19.241397+00:00"
-  },
-  {
     "definition": "In a boundary 3-tournament, a non-tight triple is an ordered triple of distinct vertices that is not a hyperedge.",
     "notes": "For every ordered triple, exactly one of it and its boundary flip is a tight triple.",
     "preferred_term": null,
@@ -709,5 +610,104 @@
     "status": "canonical",
     "term": "non-tight triple",
     "updated_at": "2026-09-29T19:10:29.286968+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use clean as an unexplained technical modifier. State the property meant by clean directly.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "clean",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use crossing without naming the objects that cross and the precise crossing relation.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "crossing",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Use kernel only with an explicit definition or in a standard mathematical sense already fixed in context. Prefer naming the vertex set and its property.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "kernel",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Do not use barrier as a technical noun without an explicit local definition of the obstruction it denotes. Prefer stating the forbidden or forced extension property directly.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "barrier",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Avoid shell as frame-carrying shorthand. State the family of vertex sets, covers, or states directly.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "shell",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State the transformation explicitly. No generic uncrossing operation is assumed.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "uncrossing",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "When referring to a fractional path cover, write positive-weight path support for a path support P with x_P>0.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "positive support",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State which vertex sets are changed and which path or Hamiltonicity property is preserved.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "support exchange",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State the objects forming the state space and the legal move relation before using reconfiguration as shorthand.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "reconfiguration",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "Avoid this frame-carrying phrase. Describe the family of deletion or restoration states directly.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "omission surface",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": "State the insertion position that fails. If every insertion position fails, use noninsertable.",
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "failed insertion",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
   }
 ]

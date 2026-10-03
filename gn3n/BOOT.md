@@ -11,4 +11,4 @@ If the snapshot is substantially stale, refresh the artifact and call boot() aga
 Then begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: 190
-Generated: 2026-10-03T12:58:27.874144+00:00
+Generated: 2026-10-03T13:07:34.761912+00:00

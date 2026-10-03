@@ -54,24 +54,6 @@
     "updated_at": "2026-09-21T20:50:21.454865+00:00"
   },
   {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "charge",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "anchor",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
     "definition": "The length of a longest path with last vertex v.",
     "notes": "Exact snake-digraph notation from linear_paths.tex.",
     "preferred_term": null,
@@ -133,78 +115,6 @@
     "status": "canonical",
     "term": "edge rank",
     "updated_at": "2026-09-21T21:03:58.61998+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "lens",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "switching",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "terminal path",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "terminal-singleness",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "clean",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "cells",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "slack",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "chord-geometry",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
   },
   {
     "definition": "A rainbow terminal-pair path E_i={x_i,v_{i-1},v_i} is strong-rainbow when no entrance label x_i is equal to any terminal-path vertex v_j.",
@@ -297,6 +207,24 @@
     "updated_at": "2026-09-25T12:16:37.650817+00:00"
   },
   {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "charge",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "anchor",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
     "definition": "For a nonspecial edge e with φ(e)≥2, its unique entrance is the vertex x∈e that is the entrance label for every longest linear path whose last edge is e.",
     "notes": "Equivalent certified characterization: e is nonspecial exactly when all longest paths ending in e have the same entrance label. The other two vertices of a 3-edge are terminal at e.",
     "preferred_term": null,
@@ -304,24 +232,6 @@
     "status": "canonical",
     "term": "unique entrance",
     "updated_at": "2026-09-25T12:16:37.650817+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "p-center",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
-  },
-  {
-    "definition": "",
-    "notes": null,
-    "preferred_term": null,
-    "section": "ambiguous",
-    "status": "ambiguous",
-    "term": "paid",
-    "updated_at": "2026-09-25T20:59:35.203148+00:00"
   },
   {
     "definition": "Let e be a hyperedge, P a specified path, and z in e a distinguished vertex already known to lie on P. A vertex c!=z is an exact off-z contact of e with P when the full intersection is known exactly:\ne intersect V(P)={z,c}.\nMore generally, “exact contact” may be used only when the surrounding statement explicitly determines the complete relevant edge-path intersection, not merely the existence of a contact.",
@@ -340,5 +250,95 @@
     "status": "canonical",
     "term": "entrance",
     "updated_at": "2026-10-02T16:03:01.171366+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "lens",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "switching",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "terminal path",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "terminal-singleness",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "clean",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "cells",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "slack",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "chord-geometry",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "p-center",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
+  },
+  {
+    "definition": "",
+    "notes": null,
+    "preferred_term": null,
+    "section": "review_queue",
+    "status": "review",
+    "term": "paid",
+    "updated_at": "2026-10-03T13:06:53.374303+00:00"
   }
 ]
