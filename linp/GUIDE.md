@@ -23,13 +23,13 @@ The dictionary should stay small, active, and atomic. Canonicalize a term only w
 
 A chunk should be roughly subsection-sized in the eventual proof exposition. It may contain several lemmas, constructions, cases, reductions, and their connecting argument. A mature Research Line should be roughly section-sized: a coherent proof development containing several such chunks. Compress a mature Research Line into an existing or new Main Line when its mathematics is ready for global synthesis.
 
-Startup is fully informed. Read the current artifact, terminology, operating guide, Toolkit index, and Main Lines before choosing work. Read Main Lines last so the global proof map is fresh when selecting a route.
+Startup uses the current artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md, then MAIN_LINES/README.md and every listed Main Line. Read Main Lines last so the global proof map is fresh when selecting a route.
 
 Mathematical research uses the project artifact, permitted project-state reads during startup and publication synchronization, and mathematical reasoning. Computation, brute-force search, numerical experimentation, code, CAS/SAT/SMT tools, and external web search are outside the research method for this project.
 
-After choosing a route, perform one freshness check with changes(). Compare the chosen Main Line and Research Line versions, when applicable, with MANIFEST.json. Read any changed manuscript completely with read(), following next_cursor until complete=true.
+After choosing a route, call changes() once with the artifact snapshot revision. Compare the chosen Main Line and Research Line versions with MANIFEST.json. Continue directly from the artifact for every matching version. For each manuscript whose live version is newer, read the current manuscript completely with read(), following next_cursor until complete=true, and use that refreshed manuscript as the local working copy.
 
-Work locally from the refreshed context until substantial progress is ready to publish.
+Work locally from this refreshed context until substantial progress is ready to publish.
 
 Every substantive durable research publication declares its actual dependencies, using [] when genuinely self-contained. Assemble related results into one coherent staged batch. Large submissions may be uploaded in numbered chunks. Before commit, review concurrent findings with review_staged_batch(...), resolve overlap, and commit atomically with commit_staged_batch(...). If shared research changes after review, review the batch again.
 

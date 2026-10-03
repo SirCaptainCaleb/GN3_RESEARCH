@@ -62,6 +62,6 @@ The final path edge has odd index \(\ell\), so its label is absent from \(S_p\).
 - Kind: toolkit
 - Version: 2
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Promoted

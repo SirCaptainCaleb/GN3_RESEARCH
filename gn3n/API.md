@@ -17,7 +17,7 @@ Returns exact durable content for named objects, one bounded page at a time. Use
 Shows how one research object sits in the mathematical structure: direct premises and consumers, parent/child Research Lines, supersession links, referring Main Lines, and originating Brainstorm. Use it when following dependencies or deciding where new work belongs.
 
 ### `changes(since_revision := 0, until_revision := null, limit := 100)`
-Checks what changed after a known artifact/database revision without shipping the changed documents themselves. It returns policy/document events plus current Main Line and Research Line versions. Use it for startup freshness checks, then call `read()` only for manuscripts that actually changed.
+Checks what changed after a known artifact/database revision without shipping the changed documents themselves. It returns policy/document events plus current Main Line and Research Line versions. Use it for startup freshness checks. Continue from the artifact for matching manuscript versions; call `read()` for each manuscript whose live version is newer.
 
 ### `brainstorms(active_only := true)`
 Returns the compact Brainstorm collection, including seeds, status, and promotion targets. Use it to scan orthogonal ideas cheaply without searching full manuscript text.

@@ -2,13 +2,13 @@
 
 Review startup_notices returned by boot().
 
-Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read MAIN_LINES/README.md and every listed Main Line last.
+Use the extracted artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read MAIN_LINES/README.md and every listed Main Line last.
 
-Choose a route and call changes(...) once using this artifact's snapshot revision as the freshness baseline. Read any changed Main Line or Research Line completely with read([id]), following next_cursor until complete=true. MANIFEST.json is only the compact snapshot/version record; there is no raw database dump in the artifact.
+Choose a route and call changes(...) once using this artifact's snapshot revision as the freshness baseline. Compare the chosen Main Line and Research Line versions with MANIFEST.json. Continue directly from the artifact for every matching version. For each manuscript whose live version is newer, read the current manuscript completely with read([id]), following next_cursor until complete=true, and use that refreshed manuscript as the local working copy.
 
-If the snapshot is substantially stale, refresh the artifact and call boot() again. Use artifact_help() for refresh instructions.
+When target_revision materially exceeds the artifact snapshot revision, use artifact_help() to refresh the artifact, call boot() again, and continue from the refreshed artifact.
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
 Snapshot revision: 368
-Generated: 2026-10-03T15:49:08.635881+00:00
+Generated: 2026-10-03T16:05:25.961177+00:00

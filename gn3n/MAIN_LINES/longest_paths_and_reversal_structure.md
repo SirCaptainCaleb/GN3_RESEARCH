@@ -47,7 +47,7 @@ Let \(I\) be a nonempty proper contiguous subpath of \(A\). If \(H-I\) were Hami
 
 No two-cover of \(U\cup\{a_0,a_1\}\) can have a component ending with \((a_0,a_1)\), since the inherited suffix of \(A\) could then be appended. The symmetric statement holds at the other end. Thus the two reversed endpoint families coexist but cannot be joined directly.
 
-## 3. A five-set or an internal reversal
+## 3. A five-set or an end-edge reversal
 
 For \(y\in U\), the first and third triples of
 \[
@@ -71,13 +71,13 @@ p\to q
 \]
 Since \(|U|\ge4\), some \(y\) has an in-neighbor \(w\) and an out-neighbor \(z\). Then
 \[
-(w,a_{\lambda-1},y,a_0)
+(y,a_{\lambda-1},z,a_0)
 \]
 is a tight four-path, while
 \[
-(y,a_{\lambda-1},z)
+(w,a_{\lambda-1},y)
 \]
-reverses its internal edge \((a_{\lambda-1},y)\).
+reverses its first edge \((y,a_{\lambda-1})\). Indeed, the first triple comes from \(y\to z\), the second consecutive triple is the difficult-orientation relation \((a_{\lambda-1},z,a_0)\), and \(w\to y\) gives the displayed reversing triple.
 
 Thus:
 
@@ -85,9 +85,9 @@ Thus:
 \[
 (a_1,a_0,y,a_{\lambda-1},a_{\lambda-2})
 \]
-is a Hamilton path, or a four-vertex tight path contains an explicitly reversed internal edge.
+is a Hamilton path, or a four-vertex tight path has an explicitly reversed end edge.
 
-The induced four-set in the second case is Hamiltonian, cyclic non-Hamiltonian, or the edge-orderable matching-block \(K_4\). The Hamiltonian case already has a two-coverable complement. The matching-block case supplies forced reverse relations for further extension.
+In the second case the four-set supporting the displayed tight path is Hamiltonian, and the reversing triple uses one additional exterior vertex. In a minimum counterexample its complement is therefore non-Hamiltonian and has path-cover number two.
 
 ## 4. A common four-vertex core
 
@@ -95,13 +95,13 @@ Put
 \[
 D=\{a_1,a_0,a_{\lambda-1},a_{\lambda-2}\}.
 \]
-Call \(y\in U\) good when \(D\cup\{y\}\) is Hamiltonian in the displayed order. If three vertices of \(U\) are not good, the tournament argument above produces the internal reversal of Lemma 4. Therefore:
+Call \(y\in U\) good when \(D\cup\{y\}\) is Hamiltonian in the displayed order. If three vertices of \(U\) are not good, the tournament argument above produces the end-edge reversal of Lemma 4. Therefore:
 
-**Lemma 5.** Unless the internal-reversal four-set occurs, all but at most two vertices of \(U\) are good.
+**Lemma 5.** Unless the end-edge-reversal four-path occurs, all but at most two vertices of \(U\) are good.
 
 When \(|U|\ge6\), at least four such labels exist.
 
-**Lemma 6.** If \(|U|\ge6\) and the internal-reversal four-set does not occur, then either
+**Lemma 6.** If \(|U|\ge6\) and the end-edge-reversal four-path does not occur, then either
 1. \(H\) contains a Hamiltonian six-set with two-coverable complement; or
 2. there is a four-set \(C\) and three distinct vertices \(r_1,r_2,r_3\notin C\) such that each \(C\cup\{r_i\}\) is Hamiltonian and has two-coverable complement.
 
@@ -187,7 +187,7 @@ Let \(T\) be the vertex set of a reversing tight triple, and let \(J_T\) be the 
 \alpha(J_T)\le2.
 \]
 
-**Proof.** If three exterior vertices were pairwise nonadjacent, each of the three two-vertex extensions of \(T\) would be non-Hamiltonian. Comparing their non-Hamiltonian insertion positions, boundary reversal forces one of the three five-vertex supports to be Hamiltonian, a contradiction. \(\square\)
+**Proof.** A reversing tight triple is itself a tight three-vertex path. Apply the bad-extension-pair theorem from [[localextend01]] to this path and the exterior set \(V(H)-T\). The nonedges of \(J_T\) are exactly the bad extension pairs, and those form a triangle-free graph. Hence \(\alpha(J_T)\le2\). \(\square\)
 
 Thus the complement of \(J_T\) is triangle-free, so Mantel's theorem gives
 \[
