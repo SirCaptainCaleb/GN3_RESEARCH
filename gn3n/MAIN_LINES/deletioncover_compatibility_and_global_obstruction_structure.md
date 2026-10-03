@@ -1,5 +1,7 @@
 # Main Line I — deletion-cover compatibility and global obstruction structure
 
+# Main Line I — deletion-cover compatibility and global obstruction structure
+
 # Deletion covers and the support graph
 
 Let \(H\) be a finite boundary \(3\)-tournament. A tight path is a sequence
@@ -142,19 +144,31 @@ The first gives a two-cover of \(H\) after adjoining the two-vertex path \((x,y)
 
 Assume there are exactly two interclass edges and neither joins \(P\) to \(B\). Both are incident with \(x\). Cutting them produces four blocks, so precisely one of \(P,B\) is split into two blocks. If \(B\) is split, \(x\) cannot be adjacent in the contracted two-path forest to the unique \(P\)-block, since that would make \(P\cup\{x\}\) Hamiltonian. Hence \(x\) joins the two \(B\)-blocks, making \(B\cup\{x\}\) Hamiltonian. If \(P\) is split, \(x\) cannot join both \(P\)-blocks for the same reason, so it joins the unique \(B\)-block and one \(P\)-block; again \(B\cup\{x\}\) is a tight path. \(\square\)
 
-Applying the lemma at both endpoints of \(Q\) has the following consequence. If neither endpoint deletion cover contains an edge joining a surviving vertex of \(P\) to a surviving vertex of \(Q\), then both endpoint replacements of \(Q\) by \(x\) are Hamiltonian. Comparing the two insertion positions of \(x\) in the inherited order of \(Q\), either one of the replacement paths has an order disagreement with \(Q\), or the insertion positions combine to a Hamiltonian order on \(Q\cup\{x\}\). The latter would give a two-cover with \(P\). Therefore at least one endpoint comparison yields either an edge joining the two old supports or an order disagreement.
+Applying the lemma at both endpoints of \(Q\) requires one additional case. Put \(Q=(q_0,\ldots ,q_m)\). If neither endpoint deletion cover contains an edge joining a surviving vertex of \(P\) to a surviving vertex of \(Q\), then both endpoint replacements of \(Q\) by \(x\) are Hamiltonian. If either replacement Hamilton path changes the inherited order of the surviving vertices of \(Q\), there is an order disagreement. Otherwise the insertion position of \(x\) in \((Q-\{q_0\})\cup\{x\}\) is either before \(q_1\) or between \(q_1,q_2\), since any later position permits \(q_0\) to be prepended and would make \(Q\cup\{x\}\) Hamiltonian. Symmetrically, the insertion position in \((Q-\{q_m\})\cup\{x\}\) is either after \(q_{m-1}\) or between \(q_{m-2},q_{m-1}\).
+
+An adjacent insertion forces a displayed reversal. If the left replacement begins \((q_1,x,q_2,\ldots)\), then \((q_0,q_1,x)\) must be non-tight, and hence \((x,q_1,q_0)\) is tight. If the right replacement ends \((\ldots,q_{m-2},x,q_{m-1})\), then \((x,q_{m-1},q_m)\) must be non-tight, and hence \((q_m,q_{m-1},x)\) is tight.
+
+The only remaining order-preserving case has replacement orders
+\[
+(x,q_1,\ldots ,q_m),\qquad (q_0,\ldots ,q_{m-1},x).
+\]
+Together with \(Q\), these give three deletion covers sharing the fixed support \(P\). Their singleton lifts form a triangle of equal-potential pairwise repartitions, and the two endpoint-replacement paths have an order disagreement on the common support \(\{x,q_1,\ldots ,q_{m-1}\}\). Thus opposite extreme insertion is a concrete recurrence configuration, not a Hamiltonian insertion of \(x\) into all of \(Q\). See [[leaf_endpoint_singleton_triangle01]].
 
 ## 5. The forest case
 
 Assume \(J\) is a forest. Let \(e_x=PQ\) be a leaf edge, with \(P\) the leaf vertex of \(J\). If \(y\in Q\), then \(e_y\) cannot share \(Q\), because every support of \(F_y\) omits \(y\), and it cannot share \(P\), because \(P\) is incident only with \(e_x\). Hence \(F_y\) is support-incompatible with \(F_x\).
 
-Choose the two endpoints of a Hamiltonian order on \(Q\). Applying Lemma 7 at both endpoints gives the following alternative.
+Choose an endpoint \(y\) of a Hamiltonian order on \(Q\). Lemma 7 can be sharpened here because \(P\) is a leaf support.
 
-**Proposition 8.** In the forest case, either
-1. two selected deletion covers are support-compatible and have an order disagreement; or
-2. for some selected cover \(H-x=P\mid Q\) and an endpoint \(y\) of \(P\) or \(Q\), the selected deletion cover at \(y\) contains an edge joining surviving vertices of \(P\) and \(Q\).
+**Proposition 8.** In the forest case, for some selected cover \(H-x=P\mid Q\) with \(P\) a leaf support of the selected support graph, and for either displayed endpoint \(y\) of \(Q\), at least one of the following holds:
+1. the selected deletion cover at \(y\) contains an edge joining a surviving vertex of \(P\) to a surviving vertex of \(Q\);
+2. some displayed edge of \(P\) has its endpoints in different paths of the selected deletion cover at \(y\).
 
-Thus the forest case produces a discrepancy attached to a displayed deletion cover, not merely an unspecified reversal elsewhere in \(H\).
+In the second alternative, the endpoint replacement \((Q-\{y\})\cup\{x\}\) is Hamiltonian. If its order preserves the inherited order of \(Q-\{y\}\), then the insertion of \(x\) is confined to the two slots nearest the deleted endpoint; the non-extreme slot yields an explicit end-edge reversal. If both endpoint comparisons use the extreme slot, the three associated singleton lifts form the equal-potential triangle of [[leaf_endpoint_singleton_triangle01]], carrying an order disagreement between the two endpoint-replacement covers.
+
+**Proof.** See [[leaf_endpoint_singleton_triangle01]]. The extra forest input is decisive: in the no-crossing branch of Lemma 7, if \(Q-\{y\}\) rather than \(P\) were split between the two paths of the comparison cover, then the other path would have support exactly \(P\). That would make the selected edge labeled \(y\) incident with the leaf support \(P\), contradicting that \(P\) is incident only with \(e_x\). Hence \(P\) is split, and some consecutive displayed edge of \(P\) crosses the two comparison paths. \(\square\)
+
+Thus the forest case reaches a canonical recurrence residue after a single endpoint comparison: either a comparison edge joins the two old supports, or a displayed old-path edge is split between the two comparison paths.
 
 ## 6. The odd-cycle case
 
@@ -245,7 +259,8 @@ The preceding argument reduces the deletion-cover method to the following statem
 
 **Remaining Lemma.** Let \(H\) be a minimum counterexample and let \(H-x=P\mid Q\) be a deletion cover. Suppose that the selected deletion covers yield, relative to \(P\mid Q\) or to a consecutive double deletion,
 - an order disagreement attached to the displayed supports;
-- an edge in an endpoint deletion cover joining surviving vertices of \(P\) and \(Q\); or
+- an edge in an endpoint deletion cover joining surviving vertices of \(P\) and \(Q\);
+- an inherited displayed path edge whose endpoints lie in different paths of an endpoint deletion cover; or
 - an edge joining distinct inherited path pieces in the odd-cycle configuration.
 
 Then \(H\) has a spanning ordering of defect span at most \(2\).

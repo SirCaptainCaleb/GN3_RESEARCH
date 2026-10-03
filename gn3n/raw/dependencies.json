@@ -26,5 +26,117 @@
     "consumer_math_version": 3,
     "premise_id": "short_gap_forces_reverse_triples01",
     "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "mixed_two_by_three_hamiltonian_four01",
+    "consumer_math_version": 1,
+    "premise_id": "independence_number_at_most_two_in_every_boundary_tournament",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "four_side_endpoint_lock_mixed_menu_m5_01",
+    "consumer_math_version": 3,
+    "premise_id": "independence_number_at_most_two_in_every_boundary_tournament",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "four_side_endpoint_lock_mixed_menu_m5_01",
+    "consumer_math_version": 3,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_across_a_two_vertex_middle_forces_the_adjacent_inner_reversal",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_a_two_vertex_middle_path_forces_an_endpoint_reversal_pattern",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_vertex_middle_forces_an_endpoint_rooted_hamiltonian_four_set",
+    "consumer_math_version": 2,
+    "premise_id": "toolkit_a_two_vertex_middle_path_forces_an_endpoint_reversal_pattern",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_vertex_middle_forces_an_endpoint_rooted_hamiltonian_four_set",
+    "consumer_math_version": 2,
+    "premise_id": "toolkit_across_a_two_vertex_middle_forces_the_adjacent_inner_reversal",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_vertex_middle_forces_an_endpoint_rooted_hamiltonian_four_set",
+    "consumer_math_version": 2,
+    "premise_id": "smallset01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_vertex_middle_forces_an_endpoint_rooted_hamiltonian_four_set",
+    "consumer_math_version": 2,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_mixed_two_vertex_middle_forces_strict_quadratic_descent",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_a_two_vertex_middle_path_forces_an_endpoint_reversal_pattern",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_mixed_two_vertex_middle_forces_strict_quadratic_descent",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_across_a_two_vertex_middle_forces_the_adjacent_inner_reversal",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_mixed_two_vertex_middle_forces_strict_quadratic_descent",
+    "consumer_math_version": 1,
+    "premise_id": "smallset01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_a_mixed_two_vertex_middle_forces_strict_quadratic_descent",
+    "consumer_math_version": 1,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_two_vertex_middle_has_a_doubled_same_side_reversal",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_a_two_vertex_middle_path_forces_an_endpoint_reversal_pattern",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_two_vertex_middle_has_a_doubled_same_side_reversal",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_a_mixed_two_vertex_middle_forces_strict_quadratic_descent",
+    "premise_math_version": 1
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_three_covers_have_no_components_of_order_one_or_two",
+    "consumer_math_version": 1,
+    "premise_id": "toolkit_two_vertex_middle_component_forces_strict_quadratic_descent",
+    "premise_math_version": 2
+  },
+  {
+    "compatibility_status": "confirmed",
+    "consumer_id": "toolkit_minimal_three_covers_have_no_components_of_order_one_or_two",
+    "consumer_math_version": 1,
+    "premise_id": "mincex01",
+    "premise_math_version": 1
   }
 ]

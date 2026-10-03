@@ -159,29 +159,34 @@ Hence:
 2. a reversal of an end edge of a displayed Hamiltonian four-path;
 3. a Hamiltonian support of order four or five containing a displayed endpoint of the complementary path, with two-coverable complement.
 
-## 5. A Hamiltonian four-set with two-coverable complement
+## 5. An endpoint-rooted Hamiltonian four-set
 
-Suppose instead that
+Suppose
 \[
 W\mid P\mid Q
 \]
-is a three-cover with \(|W|=4\). Let \(P=(p_1,\ldots ,p_m)\), \(m\ge6\).
-
-**Lemma 7.** Either a pairwise repartition of \(W\mid P\) strictly decreases \(\Phi\), or there exist distinct \(x,y,z\in W\) such that
+is a three-cover with \(|W|=4\), and let
 \[
-\{p_1,p_m,x,y\},\qquad \{p_1,p_m,x,z\}
+P=(p_1,\ldots,p_m),\qquad m\ge2.
 \]
-are Hamiltonian four-sets.
 
-**Proof.** If \(W\cup\{p_1\}\) or \(W\cup\{p_m\}\) is Hamiltonian, move that endpoint into \(W\). The component orders change from \((4,m)\) to \((5,m-1)\), and the change in the two relevant square terms is
+**Lemma 7.** There are distinct vertices \(x,y\in W\) such that
 \[
-25+(m-1)^2-(16+m^2)=10-2m<0.
+\{p_1,p_m,x,y\}
 \]
-Otherwise both endpoint five-sets are non-Hamiltonian. Comparing their Hamiltonian four-vertex deletions gives two deletions that retain both \(p_1,p_m\) and share three vertices; relabeling the retained vertices of \(W\) gives the two displayed four-sets. \(\square\)
+is a Hamiltonian four-set. Its complement is non-Hamiltonian and has path-cover number two.
 
-The two four-sets have a common three-set. Their union has order five. If that union is Hamiltonian, its complement has path-cover number two. If it is non-Hamiltonian, at least four of its four-vertex deletions are Hamiltonian; at least one such deletion retains the displayed endpoints. Thus the non-descent case yields a Hamiltonian support of order four or five containing displayed endpoints and having two-coverable complement.
+**Proof.** Choose any three distinct vertices \(a,b,c\in W\). In the five-set
+\[
+F=\{p_1,p_m,a,b,c\},
+\]
+apply the endpoint-pair Hamiltonicity theorem with prescribed pair \(\{p_1,p_m\}\). Some Hamiltonian four-subset of \(F\) contains both prescribed vertices, so it has the form
+\[
+\{p_1,p_m,x,y\}
+\]
+for distinct \(x,y\in\{a,b,c\}\). The third cover component \(Q\) is nonempty, so this Hamiltonian four-set is proper. Minimum-counterexample calculus therefore gives an exact two-cover of its complement. \(\square\)
 
-For \(|V(H)|>14\), at least one of the two complementary paths in a four-set state has order at least six, so this lemma applies. Orders at most fourteen remain a finite case.
+Thus every four-set state beside a nontrivial path already contains a bounded Hamiltonian support carrying both displayed endpoints of that path. No lower bound such as \(m\ge6\), endpoint-extension case split, or finite-order remainder is needed.
 
 ## 6. A Hamiltonian five-set beside a long path
 

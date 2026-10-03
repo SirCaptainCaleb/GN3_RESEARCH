@@ -1,20 +1,40 @@
-# The four-side endpoint lock yields a mixed bounded support or one positioned interval path
+# Every four-side beside a nontrivial path has an endpoint-rooted Hamiltonian four-set
 
-**Summary:** Let H be a minimum counterexample and let X|P|Q be a spanning three-cover with |X|=4 and P=(p_1,...,p_m), m>=5. Put M=(p_2,...,p_{m-1}). Then at least one of the following holds: (1) there is a legal pairwise repartition of X|P with component orders (5,m-1), whose quadratic-potential change is 10-2m<=0, with equality only when m=5; (2) H contains a proper Hamiltonian induced set U of order four or five that meets both X and V(M), with H-U non-Hamiltonian of path-cover number two; more precisely U may be chosen in one of the forms: one vertex of X plus three consecutive vertices of M, two vertices of X plus three consecutive vertices of M, or two vertices of X plus the two vertices of one displayed gap of M; (3) there are distinct u,v in X and two displayed obstruction gaps of M separated by at least one intervening gap such that u and v are joined by the tight interval path through the corresponding displayed subinterval of M. Thus the bounded-support outcome is necessarily a genuine cross-component migration, not merely the original four-side.
+**Summary:** A four-side W beside any path P of order at least two forces a Hamiltonian four-set containing both displayed endpoints of P and two vertices of W; in a minimum counterexample its complement has path-cover number two.
 
 ## Statement
 
-Let H be a minimum counterexample and let X|P|Q be a spanning three-cover with |X|=4 and P=(p_1,...,p_m), m>=5. Put M=(p_2,...,p_{m-1}). Then at least one of the following holds: (1) there is a legal pairwise repartition of X|P with component orders (5,m-1), whose quadratic-potential change is 10-2m<=0, with equality only when m=5; (2) H contains a proper Hamiltonian induced set U of order four or five that meets both X and V(M), with H-U non-Hamiltonian of path-cover number two; more precisely U may be chosen in one of the forms: one vertex of X plus three consecutive vertices of M, two vertices of X plus three consecutive vertices of M, or two vertices of X plus the two vertices of one displayed gap of M; (3) there are distinct u,v in X and two displayed obstruction gaps of M separated by at least one intervening gap such that u and v are joined by the tight interval path through the corresponding displayed subinterval of M. Thus the bounded-support outcome is necessarily a genuine cross-component migration, not merely the original four-side.
+Let H be a minimum counterexample and let W|P|Q be a spanning three-cover with |W|=4 and P=(p_1,...,p_m), m>=2. Then there are distinct x,y in W such that {p_1,p_m,x,y} is Hamiltonian. This four-set is proper, and its complement is non-Hamiltonian with path-cover number two.
 
 ## Body
 
-Apply four_side_endpoint_package_m5_01. In its hard branch, every t in X is noninsertable into the displayed interior path M. Choose distinct x,y,z in X and apply three_noninsertables_finite_menu01. If one label, say x, has a first-type obstruction, 0425e03e2aa3 gives a four-vertex window C consisting of x and three consecutive vertices of M. If C is Hamiltonian, take U=C; it has one vertex in X and three in M. If C is the exceptional cyclic non-Hamiltonian four-set, every exterior one-vertex extension is Hamiltonian; adjoining either y or z gives a Hamiltonian five-set U with two vertices in X and three in M. If two labels have second-type obstructions at the same gap, 36fccff06d48 gives a Hamiltonian four-set consisting of those two X-labels and the two vertices of that gap of M. These are exactly the bounded-support cases and all meet both sides. Since H is a minimum counterexample and each U is proper, mincex01 gives a non-Hamiltonian path-cover-two complement. The remaining alternative of three_noninsertables_finite_menu01 is the positioned interval path in (3). The first alternative is inherited unchanged from four_side_endpoint_package_m5_01.
+Choose any three distinct vertices \(a,b,c\in W\), and consider the five-set
+\[
+F=\{p_1,p_m,a,b,c\}.
+\]
+Apply the endpoint-pair Hamiltonicity theorem to the prescribed pair
+\[
+\{p_1,p_m\}\subset F.
+\]
+It yields a Hamiltonian four-subset of \(F\) containing both prescribed endpoints. Such a four-subset has the form
+\[
+U=\{p_1,p_m,x,y\}
+\]
+for distinct \(x,y\in\{a,b,c\}\subset W\).
+
+Because \(Q\ne\varnothing\), the set \(U\) is a proper subset of \(V(H)\). The minimum-counterexample complement principle therefore gives
+\[
+\operatorname{pc}(H-U)=2,
+\]
+and \(H-U\) is non-Hamiltonian.
+
+Thus every four-side beside a nontrivial displayed path already carries a Hamiltonian four-set containing both endpoints of that path. No endpoint-extension test, insertion obstruction, path-length threshold, or gap analysis is required.
 
 ## Metadata
 
 - ID: four_side_endpoint_lock_mixed_menu_m5_01
 - Kind: toolkit
-- Version: 1
-- Math version: 1
+- Version: 3
+- Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
