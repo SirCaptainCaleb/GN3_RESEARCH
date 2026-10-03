@@ -55,6 +55,8 @@ jobs:
           REPO: ${{ github.repository }}
           COMMIT_SHA: ${{ github.sha }}
           CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          ARTIFACT_NAME: research-context
         run: |
           python - <<'PY'
           import json, os, pathlib, urllib.request
@@ -69,6 +71,10 @@ jobs:
               "p_asset_url": f"https://github.com/{os.environ['REPO']}/releases/download/research-context-latest/research-context.zip",
               "p_commit_sha": os.environ["COMMIT_SHA"],
               "p_artifact_path": f"https://api.github.com/repos/{os.environ['REPO']}/actions/artifacts/{os.environ['CURRENT_ARTIFACT_ID']}",
+              "p_repository": os.environ["REPO"],
+              "p_workflow_run_id": int(os.environ["WORKFLOW_RUN_ID"]),
+              "p_artifact_name": os.environ["ARTIFACT_NAME"],
+              "p_artifact_id": int(os.environ["CURRENT_ARTIFACT_ID"]),
           }
           key = os.environ["SUPABASE_SECRET_KEY"]
           headers = {"apikey": key, "Content-Type": "application/json", "Accept": "application/json"}
