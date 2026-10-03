@@ -11,4 +11,4 @@ Follow the recurring research behavior in REFLEXES.md throughout the session.
 Publish only after substantial progress. Every substantive durable research operation must explicitly declare dependencies, using [] when genuinely self-contained. Stage the complete save_batch payload in connector-sized parts, review concurrent findings with review_staged_batch(...), resolve overlap, and commit atomically with commit_staged_batch(...). If another worker publishes after review, review again. Use repair_line_chunk(...) only for a version-guarded correction to an older crystallized subsection. After publication, reread the Research Line you are continuing before resuming research.
 
 Snapshot revision: 0
-Generated: 2026-10-03T03:09:31.546067+00:00
+Generated: 2026-10-03T03:47:32.730391+00:00

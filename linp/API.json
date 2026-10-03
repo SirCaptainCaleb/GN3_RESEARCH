@@ -26,9 +26,10 @@
     "help()"
   ],
   "identifiers": [
-    "Canonical IDs are meaningful lowercase snake_case text. UUIDs and bare numeric sequence IDs are not permitted.",
-    "Generated ID collisions use alphabetic suffixes (_b, _c, ..., _z, _aa, ...) rather than numeric suffixes.",
-    "Session and chore IDs exposed to workers are snake_case text. Internal numeric primary keys are implementation details.",
+    "Canonical mathematical and document IDs are meaningful lowercase snake_case text. UUIDs and bare numeric sequence IDs are not permitted.",
+    "Generated mathematical ID collisions use alphabetic suffixes (_b, _c, ..., _z, _aa, ...) rather than numeric suffixes.",
+    "Session IDs are the operational exception: session_<project>_r<global_revision>_<sequence>. The revision records the database state at startup; the final sequence only distinguishes concurrent or repeated boots at that same revision.",
+    "Chore IDs exposed to workers are meaningful snake_case text. Internal numeric primary keys are implementation details.",
     "Event ordering is exposed as a revision number, not an ID."
   ],
   "publication": [
@@ -62,5 +63,5 @@
     "After choosing a route, one route-specific search across existing Research Lines and Toolkit entries is strongly recommended to avoid rediscovery, but it is never a gate and proof work must not be blocked if it is skipped.",
     "Then perform the narrow changes()/read() freshness check for the chosen Main Line and Research Line."
   ],
-  "usage": "Call through the active project schema. boot() returns a human-readable snake_case session_id; use that text ID for all later mutations."
+  "usage": "Call through the active project schema. boot() returns a human-readable session_id such as session_gn3n_r742_1; use that text ID for all later mutations."
 }
