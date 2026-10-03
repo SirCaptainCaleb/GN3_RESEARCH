@@ -35,6 +35,9 @@ jobs:
         run: python scripts/sync_research_mirror.py
       - name: Reconcile repository mirror
         run: |
+          # Only the mirrored research trees are reconciled here.
+          # Keep top-level artifacts/ outside both rsync and git staging so
+          # repository snapshots cannot feed back into later snapshots.
           rsync -a --delete .mirror-stage/gn3n/ gn3n/
           rsync -a --delete .mirror-stage/linp/ linp/
           rm -rf .mirror-stage template
@@ -57,6 +60,7 @@ jobs:
             rsync -a --delete .mirror-stage/linp/ linp/
             rm -rf .mirror-stage template
 
+            # Intentionally stage only the mirror roots; never artifacts/.
             git add -A -- gn3n linp
             if git diff --cached --quiet; then
               echo "Mirror already current."
