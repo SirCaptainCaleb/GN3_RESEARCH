@@ -37,4 +37,4 @@ Research Lines are authored in crystallizing chunks. The line file reads as one 
 After a substantial publication, reread the Research Line you are continuing before resuming work. This is the normal mathematical refresh point. Re-read a Main Line only when its version changed or its global relationship has materially shifted.
 
 Snapshot event: 0
-Generated: 2026-10-03T00:10:32.360865+00:00
+Generated: 2026-10-03T00:20:45.116875+00:00
