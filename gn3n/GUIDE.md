@@ -20,7 +20,9 @@ Computation and external web search are banned for mathematical research. Do not
 
 After choosing a route, perform one narrow freshness check. Use changes() for compact live Main Line and Research Line versions. Compare the chosen Main Line version, if any, against MANIFEST.json and read it only if changed. Do the same for the chosen Research Line. Mathematical update content lives in the manuscripts, not in changes().
 
-Once mathematical research begins, do not repeatedly consult shared research state. This is a researcher-enforced discipline, not a database mode: work from the startup snapshot plus any route-specific freshness reads and keep intermediate reasoning local.
+Once mathematical research begins, do not repeatedly consult shared research state. Work from the startup snapshot plus any route-specific freshness reads and keep intermediate reasoning local.
+
+Research reflex: whenever a worthwhile result appears, identify the mechanism that really proves it and seek its strongest natural formulation. Test whether hypotheses can be weakened or removed, whether the statement generalizes, and whether the same mechanism yields stronger consequences. If the result belongs to a predecessor chain, try to apply it as early as possible without importing all predecessor steps; identify the minimum additional conditions needed there and ask whether those conditions can themselves be proved or forced. Do not invent an artificial earlier placement for a genuinely standalone result.
 
 Publish only after substantial progress. Assemble related results into one coherent staged batch. Large submissions may be uploaded in numbered chunks because of connector limits. Before final commit, review other-session changes since startup for semantic overlap. If another worker publishes after that review, the commit guard forces a fresh review.
 
