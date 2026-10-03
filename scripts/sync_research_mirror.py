@@ -11,6 +11,7 @@ STAGE = Path(".mirror-stage")
 SCHEMAS = ("gn3n", "linp")
 # Guide text is mirrored verbatim from Supabase.
 # Exact manuscript reads are paged server-side at 9000 characters.
+# Search results use packed 9k pages; offset counts complete pages.
 # Search responses are one 9000-character ranked page by default.
 TABLES = ("documents","research","research_line_chunks","research_versions","dependencies","supersessions","brainstorms","dictionary")
 PAGE = 500
