@@ -23,6 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 1
       - uses: actions/setup-python@v6
         with:
@@ -38,14 +39,37 @@ jobs:
           rsync -a --delete .mirror-stage/linp/ linp/
           rm -rf .mirror-stage template
       - name: Commit mirror changes
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: |
+          set -euo pipefail
           git config user.name "research-mirror[bot]"
           git config user.email "research-mirror[bot]@users.noreply.github.com"
-          git add -A -- gn3n linp
-          if git diff --cached --quiet; then
-            echo "Mirror already current."
-            exit 0
-          fi
-          git commit -m "Sync clean research mirror"
-          git pull --rebase origin main
-          git push
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            rm -rf .mirror-stage
+            python scripts/sync_research_mirror.py
+            rsync -a --delete .mirror-stage/gn3n/ gn3n/
+            rsync -a --delete .mirror-stage/linp/ linp/
+            rm -rf .mirror-stage template
+
+            git add -A -- gn3n linp
+            if git diff --cached --quiet; then
+              echo "Mirror already current."
+              exit 0
+            fi
+
+            git commit -m "Sync clean research mirror"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "main advanced during sync; regenerating from latest main (attempt $attempt/3)."
+          done
+
+          echo "Failed to publish mirror after 3 regeneration attempts." >&2
+          exit 1
