@@ -1083,16 +1083,277 @@ Thus \(C\) has at least \(3\cdot6=18\) distinct neutral neighbors. The same stat
 Together with the \(4|4|5\), \(4|5|5\), and mixed order-six analyses above, this closes the entire bounded four-support profile list: every profile with component orders in \(\{4,5,6\}\) has forced neutral recurrence unless an explicit \(4|6\) order disagreement is already present.
 
 
+### Every four-four-four state lies in three large fixed-component neutral cliques
+
+**Statement.** Let (H) be a boundary tournament and let
+[
+C=Amid Bmid D
+]
+be a spanning three-cover with (|A|=|B|=|D|=4). For each displayed component, the neutral-state graph contains a clique of order at least seven consisting of (C) and covers in which that component is held fixed. More precisely, with (A) fixed there are at least seven complementary Hamiltonian (4|4) decompositions of (V(B)cup V(D)), and any two of the resulting three-covers are joined by one (Phi)-neutral pairwise repartition. The analogous statement holds with (B) or (D) fixed.
+
+Consequently a distinguished vertex lying in one displayed component can be carried through a neutral clique while that entire component, not merely the distinguished vertex, remains unchanged.
+
+**Proof.** Fix (A). Put (U=V(B)cup V(D)), so (|U|=8). By the preceding eight-set theorem, (U) has at least seven unordered complementary pairs
+[
+{X,U-X},qquad |X|=4,
+]
+for which both (X) and (U-X) are Hamiltonian. Each such pair gives a spanning three-cover
+[
+Amid Xmid (U-X)
+]
+with profile (4|4|4) and the same quadratic potential as (C). The displayed pair (Bmid D) is one member of this family.
+
+Take two distinct complementary Hamiltonian pairs ({X,U-X}) and ({Y,U-Y}). Replacing the two components (Xmid(U-X)) by (Ymid(U-Y)) is a single legal pairwise repartition on the same eight vertices (U), while (A) is untouched. Hence every two states in this family are adjacent in the neutral-state graph. They therefore induce a clique of order at least seven containing (C).
+
+The same argument applied to (V(A)cup V(D)) while holding (B) fixed, and to (V(A)cup V(B)) while holding (D) fixed, gives the other two cliques. If a distinguished root lies in (A), the first clique keeps the whole rooted support (A) fixed throughout. (square)
+
+Thus the order-twelve residue has considerably more structure than mere recurrence: every (4|4|4) state lies simultaneously in three large neutral cliques, and any chosen component can be frozen while the complementary eight vertices move among at least seven Hamiltonian (4+4) decompositions. This fixed-support freedom is the form relevant for later compatibility and multi-root arguments.
+
+
+### Two displayed four-paths force an end-edge reversal
+
+**Statement.** Let (H) be a minimum counterexample and let
+[
+Xmid Ymid Z
+]
+be a spanning three-cover in which (X=(x_1,x_2,x_3,x_4)) and
+(Y=(y_1,y_2,y_3,y_4)) are displayed Hamiltonian four-paths. Then a tight triple containing a vertex of one of (X,Y) reverses an end edge of the other displayed four-path. More explicitly, at least one of
+[
+(y_1,x_4,x_3),qquad (y_2,y_1,x_4)
+]
+is tight. Thus either the terminal edge (x_3x_4) of (X) is reversed through (y_1), or the initial edge (y_1y_2) of (Y) is reversed through (x_4).
+
+**Proof.** The eight-set (V(X)cup V(Y)) cannot be Hamiltonian. Otherwise a Hamilton path on this union together with the displayed path (Z) would form a two-cover of (H), contrary to the choice of (H).
+
+Now consider the concatenated order
+[
+(x_1,x_2,x_3,x_4,y_1,y_2,y_3,y_4).
+]
+Every consecutive triple wholly inside (X) or wholly inside (Y) is tight. Therefore, since the union is non-Hamiltonian, at least one of the two junction triples
+[
+(x_3,x_4,y_1),qquad (x_4,y_1,y_2)
+]
+is non-tight. Boundary antisymmetry then makes respectively
+[
+(y_1,x_4,x_3),qquad (y_2,y_1,x_4)
+]
+tight. These reverse the terminal edge of (X) or the initial edge of (Y). (square)
+
+Consequently every (4|4|4) state already supplies the first obstruction in the Remaining Lemma of Article III; the large neutral cliques proved above are additional freedom, not the mechanism needed to reach the defect-compression interface. The same observation applies to every bounded profile containing two displayed four-components, in particular (4|4|5) and (4|4|6).
+
+This sharpens the bounded-profile summary: the profiles with two four-components force a displayed end-edge reversal immediately, while the remaining profiles are controlled by neutral recurrence or the previously obtained (4|6) order disagreement.
+
+
+### A displayed four-path is reversed or reverses both ends of its partner
+
+**Statement.** Let (H) be a minimum counterexample and let
+[
+Xmid Pmid Q
+]
+be a spanning three-cover, where
+[
+X=(x_1,x_2,x_3,x_4),qquad P=(p_1,ldots,p_m),qquad mge2.
+]
+Then at least one of the following holds.
+
+1. A tight triple containing a vertex of (P) reverses an end edge of the displayed four-path (X).
+2. Both end edges of (P) are reversed through endpoints of (X):
+[
+(p_2,p_1,x_4),qquad (x_1,p_m,p_{m-1})
+]
+are tight.
+
+**Proof.** The union (V(X)cup V(P)) is non-Hamiltonian, since otherwise a Hamilton path on that union together with (Q) would two-cover (H).
+
+First concatenate (X) followed by (P):
+[
+(x_1,x_2,x_3,x_4,p_1,ldots,p_m).
+]
+Since the union is non-Hamiltonian, at least one of the two junction triples
+[
+(x_3,x_4,p_1),qquad (x_4,p_1,p_2)
+]
+is non-tight. If the first is non-tight, boundary antisymmetry gives
+[
+(p_1,x_4,x_3)
+]
+tight, which reverses the terminal edge of (X). Otherwise
+[
+(p_2,p_1,x_4)
+]
+is tight, reversing the initial edge of (P).
+
+Now concatenate in the opposite order:
+[
+(p_1,ldots,p_m,x_1,x_2,x_3,x_4).
+]
+Again one of the two junction triples
+[
+(p_{m-1},p_m,x_1),qquad (p_m,x_1,x_2)
+]
+is non-tight. If the second is non-tight, then
+[
+(x_2,x_1,p_m)
+]
+is tight and reverses the initial edge of (X). Otherwise
+[
+(x_1,p_m,p_{m-1})
+]
+is tight, reversing the terminal edge of (P).
+
+Hence, if no end edge of (X) is reversed through (P), both displayed reversals of (P) are forced. (square)
+
+In particular, for any bounded profile with a four-component, failure to produce the end-edge obstruction required by Article III forces a two-sided reversal pattern on each other displayed component. Thus in profiles (4|5|5), (4|5|6), and (4|6|6), if the four-path itself has no end-edge reversal, each of the other two paths is reversed at both displayed ends through the four-support.
+
+This replaces undirected neutral recurrence by positioned endpoint data. The remaining bounded problem is therefore narrower: understand two complementary paths whose two end edges are simultaneously reversed through the same Hamiltonian four-support.
+
+
+### A four-component reaches the defect-compression interface immediately
+
+**Statement.** Let \(H\) be a minimum counterexample and let
+\[
+X\mid P\mid Q
+\]
+be a spanning three-cover, where
+\[
+X=(x_1,x_2,x_3,x_4),\qquad P=(p_1,\ldots,p_m),\qquad m\ge2.
+\]
+Then at least one of the following holds.
+
+1. A tight triple through an endpoint of \(P\) reverses an end edge of the displayed four-path \(X\):
+\[
+(p_1,x_4,x_3)\quad\text{or}\quad(x_2,x_1,p_m)
+\]
+is tight.
+
+2. \(H\) has a two-cover.
+
+3. For each prescribed endpoint \(a\in\{p_1,p_m\}\), there is a Hamiltonian five-support \(F_a\) containing \(a\) such that \(H-F_a\) is non-Hamiltonian with path-cover number two.
+
+Consequently every bounded three-cover containing a displayed four-component and another component of order at least two already reaches one of the two configurations in the Remaining Lemma of Article III: a displayed four-path with an end-edge reversal, or a Hamiltonian support of order five containing a displayed endpoint with two-coverable complement.
+
+**Proof.** Assume outcome (1) does not occur. Boundary antisymmetry then gives
+\[
+(x_3,x_4,p_1),\qquad (p_m,x_1,x_2)
+\]
+tight. Together with the two internal tight triples of \(X\), these show that
+\[
+S=(p_m,x_1,x_2,x_3,x_4,p_1)
+\]
+is a Hamiltonian six-path.
+
+The complement of \(S\) is covered by the inherited interior path
+\[
+(p_2,\ldots,p_{m-1})
+\]
+when this interior is nonempty, together with \(Q\). If \(H-S\) is Hamiltonian, then \(S\) and a Hamilton path on \(H-S\) form a two-cover of \(H\), giving outcome (2). Hence in a minimum counterexample \(H-S\) is non-Hamiltonian; minimum-counterexample calculus gives
+\[
+\operatorname{pc}(H-S)=2.
+\]
+
+Apply the prescribed-vertex reduction of a Hamiltonian six-support to \(S\). For either prescribed endpoint \(a\in\{p_1,p_m\}\), it yields a Hamiltonian five-subset
+\[
+F_a\subset S,\qquad a\in F_a,
+\]
+such that \(H-F_a\) is again non-Hamiltonian with path-cover number two. This is outcome (3). \(\square\)
+
+This removes the last bounded four-support residue from the rooted-descent route. Neutral cycles and endpoint-reversal patterns in the profiles with component orders in \(\{4,5,6\}\) are useful extra structure, but they are no longer needed merely to reach the defect-compression interface: the existence of a displayed four-component already suffices.
+
+
+### A four-by-five pair reaches an end-edge reversal in at most two neutral moves
+
+**Statement.** Let (H) be a minimum counterexample and let
+[
+Xmid Pmid Q
+]
+be a spanning three-cover with
+[
+X=(a_1,a_2,a_3,a_4),qquad
+P=(b_1,b_2,b_3,b_4,b_5).
+]
+Then, within at most two (Phi)-neutral pairwise repartitions of the displayed (4|5) pair, one reaches a three-cover having a displayed Hamiltonian four-path whose end edge is reversed by a tight triple through the other displayed component.
+
+**Proof.** If the original four-path (X) already has an end-edge reversal through (P), there is nothing to prove. Assume not. In particular
+[
+(b_1,a_4,a_3)
+]
+is non-tight, so boundary antisymmetry gives
+[
+(a_3,a_4,b_1)
+]
+tight. Hence
+[
+R=(a_1,a_2,a_3,a_4,b_1)
+]
+is a Hamiltonian five-path. The inherited suffix
+[
+S=(b_2,b_3,b_4,b_5)
+]
+is a Hamiltonian four-path. Thus
+[
+Xmid Plongrightarrow Rmid S
+]
+is a legal neutral repartition.
+
+If (S) has an end-edge reversal through (R), we are done after one move. Assume not. Since (a_1) is an endpoint of the displayed path (R), the triple
+[
+(a_1,b_5,b_4)
+]
+is then non-tight. Boundary antisymmetry gives
+[
+(b_4,b_5,a_1)
+]
+tight. Therefore
+[
+T=(b_2,b_3,b_4,b_5,a_1)
+]
+is a Hamiltonian five-path, while
+[
+Y=(a_2,a_3,a_4,b_1)
+]
+is the inherited Hamiltonian four-path obtained from (R) by deleting (a_1). Hence
+[
+Rmid Slongrightarrow Ymid T
+]
+is a second legal neutral repartition.
+
+Suppose for contradiction that (Y) also has no end-edge reversal through (T). The vertex (b_2) is an endpoint of (T), so
+[
+(b_2,b_1,a_4)
+]
+is non-tight. Boundary antisymmetry therefore gives
+[
+(a_4,b_1,b_2)
+]
+tight.
+
+But we already have
+[
+(a_3,a_4,b_1)
+]
+tight. Together with the inherited tight triples inside (X) and (P), every consecutive triple in
+[
+(a_1,a_2,a_3,a_4,b_1,b_2,b_3,b_4,b_5)
+]
+is tight. Thus (V(X)cup V(P)) is Hamiltonian. Together with the displayed path (Q), this gives a two-cover of (H), contradiction.
+
+Therefore (Y) has a displayed end-edge reversal. (square)
+
+Combining this with the strict endpoint-transfer calculation for a (4|m) pair with (mge6), every quadratic-minimal three-cover containing a four-component reaches a displayed four-path end-edge reversal without leaving its pairwise-repartition component: immediately for a partner of order at least six, and within two neutral moves for a partner of order five. Profiles with another four-component already have the direct junction reversal proved above.
+
+Hence every bounded profile with component orders in ({4,5,6}) reaches alternative (1) of the Remaining Lemma in Article III. The five-support alternative remains useful elsewhere, but it is no longer needed to dispatch the bounded four-support regime.
+
+
 ## Metadata
 
 - ID: line_rooted_small_support_descent_from_deletion_cover_lifts
 - Kind: section
-- Version: 18
-- Math version: 14
+- Version: 23
+- Math version: 19
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
 - Subsection 1 — crystallized, version 7: Rooted descent through bounded supports
-- Subsection 2 — HOT, version 12: From bounded supports to defect compression
+- Subsection 2 — HOT, version 17: From bounded supports to defect compression

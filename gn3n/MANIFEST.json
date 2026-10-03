@@ -45,9 +45,9 @@
       },
       {
         "id": "defect_lines_and_spanning_order_compression_the_remaining_lemma",
-        "math_version": 1,
+        "math_version": 3,
         "position": 8,
-        "version": 1
+        "version": 3
       },
       {
         "id": "defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local",
@@ -95,9 +95,9 @@
       },
       {
         "id": "deletion_covers_and_the_support_graph_the_forest_case",
-        "math_version": 1,
+        "math_version": 2,
         "position": 6,
-        "version": 1
+        "version": 2
       },
       {
         "id": "deletion_covers_and_the_support_graph_the_odd_cycle_case",
@@ -374,15 +374,15 @@
     ]
   },
   "article_versions": {
-    "defect_lines_and_spanningorder_compression": 6,
-    "deletioncover_compatibility_and_global_obstruction_structure": 10,
+    "defect_lines_and_spanningorder_compression": 8,
+    "deletioncover_compatibility_and_global_obstruction_structure": 11,
     "endpoint_transport_and_small_support_gluing": 3,
     "longest_paths_and_reversal_structure": 6,
     "quadratic_potential_and_pairwise_repartition": 4,
     "three_cover_repartitions_and_recurrence": 5
   },
   "brainstorm_count": 2,
-  "generated_at": "2026-10-03T18:02:57.492493+00:00",
+  "generated_at": "2026-10-03T19:57:04.420289+00:00",
   "mirror_format": 10,
   "schema": "gn3n",
   "section_versions": {
@@ -419,8 +419,8 @@
       "version": 1
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 3,
+      "version": 3
     },
     "defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed": {
       "math_version": 1,
@@ -451,8 +451,8 @@
       "version": 1
     },
     "deletion_covers_and_the_support_graph_the_forest_case": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 2
     },
     "deletion_covers_and_the_support_graph_the_odd_cycle_case": {
       "math_version": 1,
@@ -507,8 +507,8 @@
       "version": 17
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts": {
-      "math_version": 14,
-      "version": 18
+      "math_version": 19,
+      "version": 23
     },
     "longest_paths_and_reversal_structure_a_common_four_vertex_core": {
       "math_version": 1,
@@ -635,7 +635,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 394,
+  "snapshot_revision": 416,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {

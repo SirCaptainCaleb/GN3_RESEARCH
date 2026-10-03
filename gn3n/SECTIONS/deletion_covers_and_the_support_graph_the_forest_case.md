@@ -2,55 +2,65 @@
 
 ## Body
 
-Assume \(J\) is a forest. Let \(e_x=PQ\) be a leaf edge, with \(P\) the leaf vertex of \(J\). If \(y\in Q\), then \(e_y\) cannot share \(Q\), because every support of \(F_y\) omits \(y\), and it cannot share \(P\), because \(P\) is incident only with \(e_x\). Hence \(F_y\) is support-incompatible with \(F_x\).
+## The forest case
 
-Choose an endpoint \(y\) of a Hamiltonian order on \(Q\). Lemma 7 can be sharpened here because \(P\) is a leaf support.
-
-**Proposition 8.** In the forest case, for some selected cover \(H-x=P\mid Q\) with \(P\) a leaf support of the selected support graph, and for either displayed endpoint \(y\) of \(Q\), at least one of the following holds:
-1. the selected deletion cover at \(y\) contains an edge joining a surviving vertex of \(P\) to a surviving vertex of \(Q\);
-2. some displayed edge of \(P\) has its endpoints in different paths of the selected deletion cover at \(y\).
-
-In the second alternative, the endpoint replacement \((Q-\{y\})\cup\{x\}\) is Hamiltonian. If its order preserves the inherited order of \(Q-\{y\}\), then the insertion of \(x\) is confined to the two slots nearest the deleted endpoint; the non-extreme slot yields an explicit end-edge reversal. If both endpoint comparisons use the extreme slot, the three associated singleton lifts form the equal-potential triangle of [[leaf_endpoint_singleton_triangle01]], carrying an order disagreement between the two endpoint-replacement covers.
-
-**Proof.** See [[leaf_endpoint_singleton_triangle01]]. The extra forest input is decisive: in the no-cut interaction branch of Lemma 7, if \(Q-\{y\}\) rather than \(P\) were split between the two paths of the comparison cover, then the other path would have support exactly \(P\). That would make the selected edge labeled \(y\) incident with the leaf support \(P\), contradicting that \(P\) is incident only with \(e_x\). Hence \(P\) is split, and some consecutive displayed edge of \(P\) crosses the two comparison paths. \(\square\)
-
-Thus the forest case reaches a canonical recurrence residue after a single endpoint comparison: either a comparison edge joins the two old supports, or a displayed old-path edge is split between the two comparison paths.
-
-
-The balanced selection gives a quantitative refinement. In the split case, let \(S\subset P\) be the comparison path lying wholly inside \(P\), and let \(R=P-S\) be the nonempty part of \(P\) lying on the comparison path containing \(x\) and \(Q-\{y\}\). Comparing the selected deletion cover at \(y\) with the valid cover
+Assume \(J\) is a forest. Let \(e_x=PQ\) be a leaf edge, with \(P\) the leaf support and \(Q\) its neighbor. Thus
 \[
-P\mid((Q-\{y\})\cup\{x\})
+V(H)=P\mathbin{\dot\cup}Q\mathbin{\dot\cup}\{x\}.
 \]
-shows, by the quadratic-potential identity, that
+The detailed leaf analysis is carried by [[leaf_comparisons_in_deletion_support_forests]]. Its strongest consequence is that the forest route has a substantially cleaner normal form than the original one-endpoint comparison suggests.
+
+### Connected trees
+
+Assume first that \(J\) is connected. For every leaf support \(P\) with neighbor \(Q\), all but at most one label \(y\in Q\) have a selected deletion cover \(F_y\) containing a consecutive pair with one endpoint in \(P\) and the other in \(Q-\{y\}\). Under the standing minimum-imbalance selection, the unique possible exceptional cover may be replaced by an equally balanced alternative. After at most one such reselection, either the selected support graph becomes disconnected, or it remains a connected tree with a leaf edge
 \[
-|S|\ge |Q|.
+H-x=L\mid M
 \]
-Hence \(|P|>|Q|\) whenever the split alternative occurs. In particular, if a leaf support is no larger than its neighbor, the direct-mixing alternative is forced.
+such that every \(z\in M\) has a selected deletion cover \(F_z\) containing an edge joining \(L\) to \(M-\{z\}\).
 
-Since adjacent support orders sum to \(|V(H)|-1\), support orders alternate between two values on each tree component of \(J\). Therefore, if a tree component has leaves in both bipartition classes, at least one leaf is no larger than its neighbor and forces direct mixing. A forest component with no direct-mixing leaf must have every leaf in the larger support-size bipartition class. See [[leaf_endpoint_singleton_triangle01]].
-
-
-The connected-tree case admits a stronger conclusion without balanced selection. For every leaf support \(P\) with neighbor \(Q\), all but at most one label \(y\in Q\) have a selected deletion cover containing an edge between \(P\) and \(Q-\{y\}\). In particular, one of the two endpoints of any Hamiltonian order on \(Q\) forces direct mixing.
-
-Choose such an endpoint \(y\). Applying [[path_disturbance_endpoint_reversal_descent_or_an_omission_swap]] with exterior class \(P\) and inherited path \(Q-\{y\}\) eliminates the old leaf-splitting residue. In a minimum counterexample, the endpoint comparison therefore yields an order disagreement, a split inherited edge of \(Q-\{y\}\), a leave-and-return path disturbance through \(P\), an explicit reversal of the end edge at \(y\), strict quadratic-potential descent, or a neutral omission swap.
-
-Minimum-imbalance selection sharpens the last alternative further. By [[balanced_omission_swap_gives_descent_or_selected_singleton_recurrence]], the omission swap continues without increasing \(\Phi\) to the selected singleton lift at the new omitted label. Moreover [[connected_support_tree_census_bounds_exceptional_leaf_transfer]] shows that if \(A\dot\cup B\) is the bipartition of the connected support tree, then every selected deletion cover has component orders \((|A|-1,|B|-1)\). Hence all selected singleton lifts have one common potential
+In particular, fixing any Hamiltonian order
 \[
-(|A|-1)^2+(|B|-1)^2+1.
+M=(m_0,\ldots,m_s),
 \]
-Thus the omission-swap residue in the connected-tree case is necessarily equal-\(\Phi\) recurrence between selected singleton lifts, joined by at most two neutral pairwise repartitions; it cannot give strict descent between selected singleton lifts. The only remaining strict-descent branch is the direct lower-\(\Phi\) three-cover supplied by the endpoint comparison itself.
+both endpoint deletion covers \(F_{m_0}\) and \(F_{m_s}\) contain direct mixed edges between the two old supports. Thus the connected-tree branch does not need a preliminary endpoint merely to force interaction: direct mixing is simultaneously available at both ends.
 
-For a disconnected forest, the same endpoint conclusion holds whenever both endpoint labels remain in the leaf's tree component; otherwise at least one endpoint's selected edge leaves that component. The detailed endpoint-forcing and recurrence arguments are in [[leaf_comparisons_in_deletion_support_forests]].
+**Proposition 8 (two-endpoint leaf normal form).** Under minimum-imbalance deletion-cover selection, if the selected support graph is a connected tree, then after changing at most one selected cover to an equally balanced alternative, either the support graph becomes disconnected or there is a leaf edge
+\[
+H-x=L\mid M,\qquad M=(m_0,\ldots,m_s),
+\]
+for which each endpoint deletion cover \(F_{m_i}\), \(i\in\{0,s\}\), contains an edge joining a surviving vertex of \(L\) to a surviving vertex of \(M\).
+
+**Proof.** This is the paired-endpoint reduction proved in [[leaf_comparisons_in_deletion_support_forests]]. \(\square\)
+
+Consequently the connected-tree case enters the direct-mixing hypothesis of the Remaining Lemma at either endpoint. If one continues the local endpoint analysis instead, the same cited Section shows independently at both ends that one obtains an order disagreement, a split inherited edge of \(M-\{m_i\}\), a leave-and-return path disturbance through \(L\), an end-edge reversal, strict quadratic-potential descent, or equal-potential recurrence between selected singleton lifts. The important global point is that these are now paired endpoint disturbances: neither endpoint is spent establishing the existence of a mixed edge.
+
+### Disconnected forests
+
+Let \(T\) be the tree component containing a leaf edge \(P Q\), and let \(D_T\) be its set of edge labels. For a Hamiltonian order on \(Q\) with endpoints \(a,b\), [[leaf_comparisons_in_deletion_support_forests]] gives the following dichotomy:
+
+- if \(a,b\in D_T\), then at least one of \(F_a,F_b\) contains an edge joining \(P\) to the surviving part of \(Q\);
+- otherwise at least one endpoint label has its selected edge in a different tree component of \(J\).
+
+More strongly, among labels \(y\in Q\cap D_T\), at most one can fail to mix \(P\) with \(Q-\{y\}\); if \(Q\) contains any label outside \(D_T\), then no internal label is exceptional.
+
+Hence the genuinely new residue of the disconnected-forest branch is not a split leaf support. It is component escape: an endpoint of the neighboring Hamilton path may index a selected deletion cover whose support edge lies in another tree component. Whenever both endpoint labels remain in the leaf component, the forest route again reaches the direct-mixing hypothesis of the Remaining Lemma.
+
+Thus the forest case is reduced to two global interfaces:
+
+1. direct mixed edges at one or, in the connected-tree normal form, both ends of a neighboring displayed path;
+2. in a disconnected support forest, migration of an endpoint label to another support-tree component.
+
+The earlier leaf-splitting alternative is absorbed by the leaf-comparison structure and need not be carried as a terminal forest residue.
 
 ## Metadata
 
 - ID: deletion_covers_and_the_support_graph_the_forest_case
 - Kind: section
-- Version: 1
-- Math version: 1
+- Version: 2
+- Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 1: (untitled)
+- Subsection 1 — HOT, version 2: The forest case
