@@ -23,7 +23,7 @@ The dictionary should stay small, active, and atomic. Canonicalize a term only w
 
 A Subsection should be a coherent local stage of the eventual proof exposition. It may contain several lemmas, constructions, cases, reductions, and their connecting argument. A mature Section should be roughly section-sized: a coherent proof development containing several Subsections. Add a mature Section to the ordered sequence of an existing or new Article when its mathematics is ready for global synthesis.
 
-Startup uses the current artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md, then ARTICLES/README.md and every listed Article. Read Articles last so the global proof map is fresh when selecting a route.
+Startup uses the current artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md, then ARTICLES/README.md. If the prompt asks you to continue an existing Article, read that Article in its entirety, including all of its Sections, before continuing it. Otherwise, read every listed Article in its entirety before choosing which Article or route to work on.
 
 Mathematical research uses the project artifact, permitted project-state reads during startup and publication synchronization, and mathematical reasoning. Computation, brute-force search, numerical experimentation, code, CAS/SAT/SMT tools, and external web search are outside the research method for this project.
 

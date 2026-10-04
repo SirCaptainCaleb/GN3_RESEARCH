@@ -418,7 +418,7 @@
     "transversal_designs_latin_blowups_and_products": 3
   },
   "brainstorm_count": 2,
-  "generated_at": "2026-10-04T15:24:07.20741+00:00",
+  "generated_at": "2026-10-04T16:00:42.828497+00:00",
   "mirror_format": 10,
   "schema": "linp",
   "section_versions": {
@@ -687,7 +687,7 @@
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 1,
   "universal_document_versions": {
-    "guide": 9,
+    "guide": 10,
     "reflexes": 4
   }
 }
