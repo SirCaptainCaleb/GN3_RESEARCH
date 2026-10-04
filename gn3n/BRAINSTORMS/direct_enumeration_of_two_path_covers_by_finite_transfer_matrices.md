@@ -3846,3 +3846,1642 @@ This suggests a sharper conceptual correspondence:
 - GN3N-specific closure comes from common-reverser, parallel-middle, and small-support lemmas, which have no analogue in a general antipodal cube coloring.
 
 Thus the strengthened Norine conjecture is an excellent model for the geometry, but the actual proof leverage here comes from the extra boundary-tournament local structure.
+
+
+### Minimum counterexamples have minimum switch span three
+
+Let H be a minimum counterexample. For every vertex x, the smaller tournament H-x has a two-cover P|Q. Concatenating the displayed tight orders as P,x,Q leaves only the three junction triples as possible non-tight statuses. Hence some spanning order has first-to-last switch span at most three.
+
+A spanning order whose first and last switch positions differ by at most two already gives a two-cover: cut between positions a+2 and a+3; each outer block is monochromatic and can be oriented as a tight path. An order with at most one switch also gives a two-cover. Therefore in a minimum counterexample the global minimum switch span is exactly three.
+
+For every deletion order P,x,Q, the two outer junction triples are non-tight, since otherwise x appends to one of the two displayed paths and gives a two-cover. Thus the local five-bit pattern, including the adjacent inherited tight statuses, is exactly
+1-0-0-0-1
+or
+1-0-1-0-1.
+
+Equivalently,
+(x,p_m,p_{m-1})
+and
+(q_2,q_1,x)
+are tight, and only (p_m,x,q_1) is undetermined.
+
+If (p_m,x,q_1) is non-tight, then (q_1,x,p_m) is tight and
+(q_2,q_1,x,p_m,p_{m-1})
+is a Hamiltonian five-path.
+
+If (p_m,x,q_1) is tight, the junction is the alternating mixed-end/parallel-middle residue.
+
+So the general problem is globally reduced to eliminating these two width-three deletion patterns. The strengthened Norine-geodesic analogy explains the permutation/switch geometry, but minimum-counterexample induction already performs the required global compression.
+
+
+### Width-three equality makes the alternating junction deterministic
+
+Let H be a minimum counterexample, let H-x=P|Q with P=(p_1,...,p_m), Q=(q_1,...,q_s), m,s>=3, and suppose the deletion junction has the alternating orientation (p_m,x,q_1) tight. Consider the spanning order
+
+sigma=(p_1,...,p_{m-1},q_1,x,p_m,q_2,...,q_s).
+
+All statuses outside the five local splice positions are inherited tight statuses. Write the local five statuses as
+
+A=(p_{m-2},p_{m-1},q_1),
+B=(p_{m-1},q_1,x),
+C=(q_1,x,p_m),
+D=(x,p_m,q_2),
+E=(p_m,q_2,q_3).
+
+The middle status C is non-tight by boundary reversal. Since the global minimum switch span in H is exactly three, if A and E are both tight then B and D must both be non-tight: otherwise the entire status word of sigma has first-to-last switch span at most two.
+
+If B and D are both non-tight, boundary reversal gives
+(x,q_1,p_{m-1}) and (q_2,p_m,x)
+tight. Together with (p_m,x,q_1), these form the Hamiltonian five-path
+(q_2,p_m,x,q_1,p_{m-1}).
+
+If A is non-tight, its boundary flip
+(q_1,p_{m-1},p_{m-2})
+is tight, exporting a reversal one inherited edge outward on the P-side. If E is non-tight, its boundary flip
+(q_3,q_2,p_m)
+is tight, exporting a reversal one inherited edge outward on the Q-side.
+
+Therefore the alternating width-three junction has the exact deterministic alternative
+
+Hamiltonian five-support
+or
+external reversal one edge farther outward.
+
+There is no independent local residue. This is the equality-strengthened form of the earlier bad-cross transport lemma.
+
+
+
+### The alternating width-three junction forces a positioned four-support trichotomy
+
+Let H be a minimum counterexample, let
+\[
+H-x=P\mid Q,\qquad
+P=(p_1,\ldots,p_m),\qquad
+Q=(q_1,\ldots,q_s),
+\]
+and suppose the deletion junction has the alternating width-three pattern
+\[
+1-0-1-0-1,
+\]
+so in particular
+\[
+(p_m,x,q_1)
+\]
+is tight, while
+\[
+(p_{m-1},p_m,x),\qquad (x,q_1,q_2)
+\]
+are non-tight.
+
+Put
+\[
+a=p_{m-1},\quad b=p_m,\quad c=q_1,\quad d=q_2.
+\]
+Then
+\[
+(b,x,c)
+\]
+is tight. For the adjacent vertices a,d, boundary antisymmetry gives exactly one of
+\[
+(b,a,c),\ (c,a,b)
+\]
+tight, and exactly one of
+\[
+(b,d,c),\ (c,d,b)
+\]
+tight.
+
+There are three possibilities.
+
+1. If \((b,a,c)\) is tight, then a and x are two parallel middles from b to c. Hence
+   \[
+   K_P=\{a,b,c,x\}
+   \]
+   is Hamiltonian. Repartitioning the rooted three-cover
+   \[
+   (P-b)\mid(b,x,c)\mid(Q-c)
+   \]
+   on the union of its first two displayed components gives
+   \[
+   (P-\{a,b\})\mid K_P\mid(Q-c).
+   \]
+   The quadratic-potential change is
+   \[
+   10-2m.
+   \]
+
+2. If \((b,d,c)\) is tight, then d and x are two parallel middles from b to c. Hence
+   \[
+   K_Q=\{b,c,d,x\}
+   \]
+   is Hamiltonian, and the analogous repartition has potential change
+   \[
+   10-2s.
+   \]
+
+3. If neither of the preceding orientations is tight, then
+   \[
+   (c,a,b),\qquad(c,d,b)
+   \]
+   are both tight. Thus a and d are parallel middles from c to b, and
+   \[
+   K_0=\{a,b,c,d\}
+   \]
+   is Hamiltonian.
+
+Therefore every alternating width-three deletion junction forces one of:
+\[
+\boxed{\text{rooted four-support on the P side}}
+\]
+or
+\[
+\boxed{\text{rooted four-support on the Q side}}
+\]
+or
+\[
+\boxed{\text{the endpoint cross four-set }\{p_{m-1},p_m,q_1,q_2\}\text{ is Hamiltonian}.}
+\]
+
+In the first two branches, if the corresponding deletion path has order at least six, the repartition is a strict Phi-descent. At order five it is Phi-neutral.
+
+Hence a Phi-minimal alternating rooted state with both side lengths at least six is forced into the third, cross-four-set branch. More generally, every long side is forced to take the reverse orientation relative to x unless the state admits strict descent.
+
+
+### Minimum span three propagates an endpoint reversal to the far side
+
+Let H have global minimum switch span three. Let P,A,Q be three displayed tight paths in a spanning three-cover, and suppose z is an endpoint of P with
+
+(z,a_r,a_{r-1})
+
+tight, where A=(a_1,...,a_r). Thus z reverses the terminal edge of A. Consider a spanning order obtained by ending the P-block at z, then traversing A and Q in reverse vertex order. The internal status word on A^rev and Q^rev is entirely non-tight, while the displayed reversal supplies the tight status (z,a_r,a_{r-1}).
+
+If both far A/Q junction triples
+
+(a_2,a_1,q_t),   (a_1,q_t,q_{t-1})
+
+were non-tight, then regardless of the other P/A junction status the complete spanning status word would have at most one switch or would have all of its switches within three consecutive switch positions, hence first-to-last switch span at most two. This contradicts the global minimum span three.
+
+Therefore at least one of the two far triples is tight. The first says that q_t reverses the initial edge of A; the second says that a_1 reverses the terminal edge of Q. If both are tight then
+
+(a_2,a_1,q_t,q_{t-1})
+
+is a Hamiltonian four-path.
+
+Hence, outside the bounded four-support branch, a displayed endpoint reversal propagates deterministically across the reversed path: exactly one far-end reversal survives. The initial-edge version is symmetric.
+
+This is a boundary-specific analogue of geodesic direction transport: one local reversal cannot die in the interior because doing so would compress the status word below the globally minimal width.
+
+
+
+### Two elementary middle-2 lifts force descent or an explicit cross four-path
+
+Let \(H\) be a minimum counterexample and let
+\[
+H-x=P\mid Q,\qquad
+P=(p_1,\ldots,p_m),\qquad
+Q=(q_1,\ldots,q_s),
+\]
+with \(m,s\ge3\).
+
+Consider first the spanning three-cover
+\[
+\mathcal D_P=(P-p_m)\mid(p_m,x)\mid Q.
+\]
+Write
+\[
+A=(p_1,\ldots,p_{m-1}),\qquad (u,v)=(p_m,x),\qquad C=Q.
+\]
+In the two-vertex-middle notation, \(u=p_m\) belongs to the left attachment set because
+\[
+(p_{m-2},p_{m-1},p_m)
+\]
+is inherited tight, while \(v=x\) does not belong to the right attachment set because
+\[
+(x,q_1,q_2)
+\]
+is non-tight in every deletion cover of a minimum counterexample.
+
+If \(p_m\) belongs to the right attachment set, then the two-vertex-middle endpoint-reversal classification forces the mixed case with \(p_m\) as the unique attaching middle vertex and \(x\) reversing both exposed end edges. By the mixed two-vertex-middle descent theorem, \(\mathcal D_P\) admits a strict pairwise \(\Phi\)-descent.
+
+Otherwise the right attachment set is empty. The same classification then gives
+\[
+(q_2,q_1,p_m),\qquad (q_2,q_1,x)
+\]
+tight. Thus \(p_m\) and \(x\) both reverse the displayed initial edge of \(Q\).
+
+Now consider the symmetric middle-2 lift
+\[
+\mathcal D_Q=P\mid(x,q_1)\mid(Q-q_1).
+\]
+Here \(x\) does not attach to the terminal edge of \(P\), since
+\[
+(p_{m-1},p_m,x)
+\]
+is non-tight, while \(q_1\) attaches to the initial edge of \(Q-q_1\), since
+\[
+(q_1,q_2,q_3)
+\]
+is inherited tight.
+
+If \(q_1\) also attaches to the terminal edge of \(P\), the two-vertex-middle classification again gives the mixed case and hence a strict \(\Phi\)-descent. Otherwise the left attachment set is empty, so
+\[
+(x,p_m,p_{m-1}),\qquad
+(q_1,p_m,p_{m-1})
+\]
+are tight.
+
+Consequently:
+
+**Lemma.**
+For every deletion cover \(H-x=P\mid Q\) with \(m,s\ge3\), at least one of the following holds.
+
+1. One of the two elementary middle-2 lifts
+   \[
+   (P-p_m)\mid(p_m,x)\mid Q,\qquad
+   P\mid(x,q_1)\mid(Q-q_1)
+   \]
+   admits a strict pairwise quadratic-potential descent.
+
+2. The four vertices
+   \[
+   \{q_2,q_1,p_m,p_{m-1}\}
+   \]
+   have the explicit Hamiltonian order
+   \[
+   (q_2,q_1,p_m,p_{m-1}).
+   \]
+
+Indeed, if neither strict descent occurs, the first lift forces
+\[
+(q_2,q_1,p_m)
+\]
+tight and the second forces
+\[
+(q_1,p_m,p_{m-1})
+\]
+tight, so their concatenation is the displayed four-path.
+
+This conclusion is independent of the central cross orientation \((p_m,x,q_1)\). In particular it simultaneously handles the \(1-0-0-0-1\) and \(1-0-1-0-1\) width-three patterns. It gives a simpler local interface: either immediate descent through a two-vertex middle, or a positioned cross four-support on the two exposed end edges.
+
+
+
+### Four elementary middle-2 lifts isolate the double-alternating residue
+
+Retain a minimum counterexample and a deletion cover
+\[
+H-x=P\mid Q,\qquad
+P=(p_1,\ldots,p_m),\qquad
+Q=(q_1,\ldots,q_s),
+\]
+with \(m,s\ge3\).
+
+Apply the version-71 middle-2 lemma first to the ordered pair \(P,Q\). Either one of
+\[
+(P-p_m)\mid(p_m,x)\mid Q,\qquad
+P\mid(x,q_1)\mid(Q-q_1)
+\]
+strictly descends in quadratic potential, or
+\[
+(q_2,q_1,p_m,p_{m-1})
+\]
+is a tight four-path.
+
+Apply the same lemma after interchanging \(P\) and \(Q\). Either one of
+\[
+(Q-q_s)\mid(q_s,x)\mid P,\qquad
+Q\mid(x,p_1)\mid(P-p_1)
+\]
+strictly descends, or
+\[
+(p_2,p_1,q_s,q_{s-1})
+\]
+is a tight four-path.
+
+Hence, if none of the four elementary middle-2 lifts strictly descends, both opposite cross four-paths exist simultaneously:
+\[
+K_L=(q_2,q_1,p_m,p_{m-1}),
+\qquad
+K_R=(p_2,p_1,q_s,q_{s-1}).
+\]
+
+Now inspect the two central cross triples. If
+\[
+(p_m,x,q_1)
+\]
+is non-tight, boundary reversal gives
+\[
+(q_1,x,p_m)
+\]
+tight, and therefore
+\[
+(q_2,q_1,x,p_m,p_{m-1})
+\]
+is a tight five-path.
+
+Likewise, if
+\[
+(q_s,x,p_1)
+\]
+is non-tight, then
+\[
+(p_1,x,q_s)
+\]
+is tight and
+\[
+(p_2,p_1,x,q_s,q_{s-1})
+\]
+is a tight five-path.
+
+Therefore every deletion cover with \(m,s\ge3\) satisfies the trichotomy:
+
+1. one of four explicit middle-2 lifts strictly descends in \(\Phi\);
+2. there is an explicit positioned Hamiltonian five-support at one cross corner;
+3. both central cross triples
+   \[
+   (p_m,x,q_1),\qquad(q_s,x,p_1)
+   \]
+   are tight, while both opposite cross four-paths \(K_L,K_R\) exist.
+
+The third branch is the genuine double-alternating residue. All one-corner \(10001/10101\) ambiguity has disappeared: after excluding immediate descent and five-support, both opposite corners are simultaneously alternating and each carries a fixed cross four-path.
+
+
+
+### General deletion covers reduce to the four-side regime
+
+The version-72 trichotomy and the existing short-side descent tools combine into an arbitrary-order reduction.
+
+First, no deletion cover of a minimum counterexample can have a component of order one or two. Indeed, if
+\[
+H-x=P\mid Q
+\]
+and \(|P|\le2\), then \(P\cup\{x\}\) has order at most three and is therefore Hamiltonian. A Hamilton path on \(P\cup\{x\}\) together with the displayed path \(Q\) would two-cover \(H\), contradiction. Hence every deletion-cover component has order at least three.
+
+Now suppose one side, say \(P\), has order three. Since a minimum counterexample has order greater than ten,
+\[
+|Q|=|V(H)|-4\ge7.
+\]
+The three-side singleton-lift theorem applies directly to
+\[
+P\mid(x)\mid Q
+\]
+and gives a strict quadratic-potential descent within the same pairwise-repartition component.
+
+It remains to consider deletion covers with both sides of order at least four.
+
+Assume first that both sides have order at least five. Apply version 72. If one of the four elementary middle-2 lifts strictly descends, there is nothing to prove. Otherwise both cross four-paths exist. If either central cross triple is non-tight, version 72 gives an explicit Hamiltonian five-support.
+
+Thus only the double-alternating branch remains. At the left corner put
+\[
+F=\{q_2,q_1,p_m,p_{m-1},x\}.
+\]
+The four-set
+\[
+F-x=\{q_2,q_1,p_m,p_{m-1}\}
+\]
+is Hamiltonian by version 72.
+
+If \(F\) itself is Hamiltonian, again there is a positioned Hamiltonian five-support.
+
+Suppose \(F\) is non-Hamiltonian. A non-Hamiltonian five-vertex boundary tournament has at most one non-Hamiltonian four-vertex induced subtournament. Therefore at least one of
+\[
+F-q_2=\{q_1,p_m,p_{m-1},x\},
+\qquad
+F-p_{m-1}=\{q_2,q_1,p_m,x\}
+\]
+is Hamiltonian.
+
+If \(F-q_2\) is Hamiltonian, repartition
+\[
+P\mid(x,q_1)
+\]
+as
+\[
+(P-\{p_{m-1},p_m\})\mid(F-q_2).
+\]
+The affected component orders change from
+\[
+(m,2)\quad\text{to}\quad(m-2,4),
+\]
+so
+\[
+\Delta\Phi=16-4m<0
+\]
+because \(m\ge5\).
+
+If \(F-p_{m-1}\) is Hamiltonian, repartition
+\[
+(p_m,x)\mid Q
+\]
+as
+\[
+(F-p_{m-1})\mid(Q-\{q_1,q_2\}).
+\]
+The affected orders change from
+\[
+(2,s)\quad\text{to}\quad(4,s-2),
+\]
+so
+\[
+\Delta\Phi=16-4s<0
+\]
+because \(s\ge5\).
+
+Hence, whenever both deletion paths have order at least five, every deletion cover yields either a strict pairwise quadratic-potential descent or a positioned Hamiltonian five-support.
+
+Combining the three observations gives:
+
+**Four-side reduction.**
+Let \(H\) be a minimum counterexample and let \(H-x=P\mid Q\) be any deletion cover. Then either
+
+1. the associated singleton/middle-2 lift component admits a strict pairwise \(\Phi\)-descent;
+2. \(H\) contains one of the positioned Hamiltonian five-supports produced above; or
+3. one of \(P,Q\) has order exactly four.
+
+Thus, after excluding immediate descent and the bounded five-support branch, the arbitrary-order deletion-cover problem reduces to the existing four-side regime. No small-order assumption is made: the side of order four is forced by the general argument.
+
+
+
+### The forced four-side residue already gives descent or a five-support
+
+Continue from the version-73 four-side reduction. Let
+\[
+H-x=X\mid Q
+\]
+be a surviving deletion cover with
+\[
+|X|=4,\qquad |Q|=s.
+\]
+Since a minimum counterexample has order greater than ten,
+\[
+s=|V(H)|-5\ge6.
+\]
+
+The singleton lift
+\[
+X\mid Q\mid(x)
+\]
+is a spanning three-cover. Apply the four-side endpoint-package theorem to the pair \(X\mid Q\).
+
+Its first outcome is a legal pairwise repartition with affected component orders
+\[
+(4,s)\longrightarrow(5,s-1),
+\]
+whose potential change is
+\[
+\Delta\Phi=10-2s<0
+\]
+because \(s\ge6\). Hence this is a strict descent in the same three-cover component.
+
+In the complementary endpoint-package branch, for every \(t\in X\) the five-set
+\[
+F_t=(X-\{t\})\cup\{q_1,q_s\}
+\]
+is Hamiltonian. Thus this branch already contains a positioned Hamiltonian five-support.
+
+Combining this with version 73 yields:
+
+**Deletion-to-five reduction.**
+For every deletion cover
+\[
+H-x=P\mid Q
+\]
+of a minimum counterexample, the associated singleton/middle-support repartition component contains either
+
+1. a spanning three-cover of strictly smaller quadratic potential than the displayed local lift; or
+2. a positioned Hamiltonian five-support.
+
+Indeed, sides of order at most two are impossible; a side of order three strictly descends by the three-side singleton-lift theorem; if both sides have order at least five, version 73 gives strict descent or a five-support; and the only remaining side order four is handled above.
+
+Therefore the arbitrary-order deletion problem no longer has a separate three-side, four-side, balanced-long-side, or central-cross residue. All such branches feed the same two outcomes: strict descent or a Hamiltonian five-support.
+
+
+
+### Large-order five-supports reduce to reversal or disturbance recurrence
+
+Continue from the deletion-to-five reduction. Let \(X\) be a Hamiltonian five-support in a minimum counterexample, with
+\[
+H-X=P\mid Q
+\]
+a non-Hamiltonian two-cover of the complement. Let
+\[
+P=(p_1,\ldots,p_m)
+\]
+be the longer complementary path.
+
+If \(|V(H)|\ge18\), then
+\[
+m\ge \left\lceil\frac{|V(H)|-5}{2}\right\rceil\ge7.
+\]
+
+Apply the five-side endpoint-core theorem to \(X\mid P\mid Q\).
+
+If one endpoint of \(P\) extends \(X\) to a Hamiltonian six-set, the legal repartition
+\[
+(5,m)\longrightarrow(6,m-1)
+\]
+has
+\[
+\Delta\Phi=12-2m<0.
+\]
+Thus this branch is an immediate strict descent.
+
+Otherwise both \(X\cup\{p_1\}\) and \(X\cup\{p_m\}\) are non-Hamiltonian, and there exists \(x\in X\) such that, with
+\[
+C=X-\{x\},
+\]
+both
+\[
+C\cup\{p_1\},\qquad C\cup\{p_m\}
+\]
+are Hamiltonian. Of course \(C\cup\{x\}=X\) is Hamiltonian as well, while
+\[
+C\cup\{x,p_1\}=X\cup\{p_1\},\qquad
+C\cup\{x,p_m\}=X\cup\{p_m\}
+\]
+are non-Hamiltonian.
+
+Therefore the root-exchange theorem applies to the four-core \(C\) with extenders \(x,p_1,p_m\). It yields one of four outcomes.
+
+1. Two chosen Hamiltonian five-paths on
+   \[
+   C+x,\quad C+p_1,\quad C+p_m
+   \]
+   disagree on the relative order of \(C\). By the path-intersection calculus, such disagreement forces a reversed common edge, a tight triple reversing a displayed core edge, or a vertex-simple tight cycle.
+
+2. There is a Hamiltonian four-set contained in
+   \[
+   C\cup\{x,p_1,p_m\}.
+   \]
+   In a minimum counterexample its complement has path-cover number two. If \(|V(H)|\ge15\), at least one path of that complement has order at least six, so the four-side endpoint package feeds this branch back into strict descent or a Hamiltonian five-support. Otherwise the total order is already bounded by fourteen.
+
+3. A tight triple through a vertex of \(C\) reverses a displayed core edge between two of the extenders. This is already an explicit reversal certificate.
+
+4. The six-set
+   \[
+   C\cup\{p_1,p_m\}
+   \]
+   is Hamiltonian. In a minimum counterexample its complement has path-cover number two. The rooted-six support theorem then yields either a one-label transfer back to a Hamiltonian five-support or a path disturbance: a split inherited edge of one complementary path, or a leave-and-return segment through exterior vertices.
+
+Hence:
+
+**Large-order five-support reduction.**
+For \(|V(H)|\ge18\), every Hamiltonian five-support with path-cover-two complement yields either a strict quadratic-potential descent, or enters one of the already-established reversal/path-disturbance channels. The six-support outcome is not a new level of the hierarchy: it immediately returns to a five-support transfer or path disturbance.
+
+Thus, after version 74, the remaining arbitrary-order obstruction is no longer a support-size case analysis. It is the compatibility and recurrence of reversal/order-disturbance data produced by the common four-core.
+
+
+
+### Far-end reversal propagation is a one-vertex transfer theorem
+
+Retain the version-70 setting. Let
+\[
+P\mid A\mid Q
+\]
+be a spanning three-cover,
+\[
+A=(a_1,\ldots,a_r),\qquad Q=(q_1,\ldots,q_t),
+\]
+and suppose an endpoint \(z\) of \(P\) reverses the terminal edge of \(A\):
+\[
+(z,a_r,a_{r-1})
+\]
+is tight.
+
+Version 70 shows that at the far \(A/Q\) interface at least one of
+\[
+T_1=(a_2,a_1,q_t),\qquad
+T_2=(a_1,q_t,q_{t-1})
+\]
+is tight.
+
+If both are tight, then
+\[
+(a_2,a_1,q_t,q_{t-1})
+\]
+is a Hamiltonian four-path.
+
+Suppose exactly \(T_1\) is tight. Then \(T_2\) is non-tight, so boundary reversal gives
+\[
+(q_{t-1},q_t,a_1)
+\]
+tight. Hence
+\[
+(q_1,\ldots,q_t,a_1)
+\]
+is a tight path, while
+\[
+(a_2,\ldots,a_r)
+\]
+is inherited tight. Thus \(A\mid Q\) admits the legal one-vertex transfer
+\[
+(A,Q)\longrightarrow(A-a_1,\;Q+a_1),
+\]
+with size change
+\[
+(r,t)\longrightarrow(r-1,t+1)
+\]
+and
+\[
+\Delta\Phi=2(t-r)+2.
+\]
+
+Suppose exactly \(T_2\) is tight. Then \(T_1\) is non-tight, so
+\[
+(q_t,a_1,a_2)
+\]
+is tight. Hence
+\[
+(q_t,a_1,\ldots,a_r)
+\]
+is a tight path and \(Q-q_t\) is inherited tight. Thus
+\[
+(A,Q)\longrightarrow(q_t+A,\;Q-q_t),
+\]
+with size change
+\[
+(r,t)\longrightarrow(r+1,t-1)
+\]
+and
+\[
+\Delta\Phi=2(r-t)+2.
+\]
+
+Therefore every propagated endpoint reversal gives either a Hamiltonian four-support or an explicit one-vertex transfer across the far interface.
+
+At a quadratic-potential-minimal spanning three-cover this has a deterministic consequence.
+
+- If \(r\ge t+2\), the transfer \(A\to Q\) would strictly decrease \(\Phi\), so the \(T_1\)-only branch is impossible. Outside the four-support branch, \(T_2\) alone survives; the new reversal is \(a_1\) reversing the terminal edge of the smaller path \(Q\).
+
+- If \(t\ge r+2\), the transfer \(Q\to A\) would strictly decrease \(\Phi\), so the \(T_2\)-only branch is impossible. Outside the four-support branch, \(T_1\) alone survives; the new reversal targets the smaller path \(A\).
+
+Thus whenever the two far component sizes differ by at least two, reversal propagation at a \(\Phi\)-minimum is directed toward the smaller component.
+
+Iterating this observation over the three components gives a finite size-monotone picture: unless a Hamiltonian four-support appears or all relevant component sizes differ by at most one, an external reversal moves toward a component of minimum order. Once a minimum-order component is reached, propagation against any third component larger by at least two cannot leave it; instead an endpoint of that third component is forced to reverse the opposite displayed end edge of the same minimum component.
+
+Hence the sole unbalanced recurrent residue is a **two-sided reversal trap on a minimum-order component**. This is the precise interface left after combining the bridge reductions with minimum-switch-span propagation.
+
+
+
+### Any Phi-minimal size gap of at least two forces a Hamiltonian four-support
+
+Let
+\[
+A\mid B\mid C
+\]
+be a spanning three-cover of a minimum counterexample that is \(\Phi\)-minimal in its pairwise-repartition component. Put
+\[
+a=|A|,\qquad b=|B|,
+\]
+and suppose
+\[
+b\ge a+2.
+\]
+
+Let \(y\) be either displayed endpoint of \(B\). Then
+\[
+H[V(A)\cup\{y\}]
+\]
+is non-Hamiltonian. Indeed, if it had a Hamilton path, deleting the endpoint \(y\) from \(B\) leaves an inherited tight path, so the pair \(A\mid B\) could be repartitioned with component orders
+\[
+(a,b)\longrightarrow(a+1,b-1).
+\]
+The potential change would be
+\[
+(a+1)^2+(b-1)^2-a^2-b^2
+=2(a-b)+2<0,
+\]
+contradicting \(\Phi\)-minimality.
+
+Apply the endpoint-replacement truncation dichotomy to the displayed path \(A\) and the exterior vertex \(y\). Since \(A+y\) is non-Hamiltonian, \(y\) is noninsertable at every position of the inherited displayed order of \(A\). In particular \(y\) cannot be prepended or appended. Hence boundary reversal gives
+\[
+(a_2,a_1,y),\qquad
+(y,a_r,a_{r-1})
+\]
+tight, where
+\[
+A=(a_1,\ldots,a_r).
+\]
+
+The same conclusion holds for both displayed endpoints \(y_1,y_2\) of \(B\). Thus \(y_1,y_2\) are two distinct exterior reversers of each displayed end edge of \(A\).
+
+By the two-common-reversers lemma, the exposed vertices contain a Hamiltonian four-set. Since a minimum counterexample has order greater than ten, this support is proper, and minimum-counterexample calculus gives its complement path-cover number exactly two.
+
+Therefore:
+
+**Size-gap four-support lemma.**
+If a \(\Phi\)-minimal spanning three-cover has two component orders differing by at least two, then \(H\) contains a proper Hamiltonian four-support with non-Hamiltonian path-cover-two complement.
+
+This conclusion does not require a pre-existing marked reversal. It is forced numerically by the size imbalance itself. In particular the unbalanced two-sided-reversal trap isolated in version 76 is not a new terminal geometry: the same size gap already creates a doubled reversal wall and hence a Hamiltonian four-support.
+
+
+
+### Global funnel: bounded support or equitable external reversal
+
+Version 77 has an immediate global consequence for quadratic minima.
+
+Let
+\[
+P_1\mid P_2\mid P_3
+\]
+be a \(\Phi\)-minimal spanning three-cover of a minimum counterexample. If two component orders differ by at least two, version 77 forces a proper Hamiltonian four-support with non-Hamiltonian path-cover-two complement.
+
+Therefore, in the absence of that bounded-support outcome,
+\[
+\max_i|P_i|-\min_i|P_i|\le1.
+\]
+Thus the size multiset is one of the three equitable profiles
+\[
+\{r,r,r\},\qquad
+\{r+1,r,r\},\qquad
+\{r+1,r+1,r\}.
+\]
+
+The quadratic-potential article already treats all three profiles.
+
+- For \(\{r,r,r\}\), the comparison theorem yields order disagreement, at least two explicitly located mixed-support edges in a comparison cover, or a reverse tight triple at a displayed join.
+
+- For \(\{r+1,r,r\}\), the profile theorem yields order disagreement, direct inter-support comparison edges, a split inherited edge, a leave-and-return block pattern, or a reverse tight triple at a displayed join.
+
+- For \(\{r+1,r+1,r\}\), unless an equal-Phi move already gives a two-cover, strict descent, order disagreement, or a Hamiltonian four-/five-support, the neutral-transfer recurrence produces the structured three-core comparison configuration; every comparison two-cover then has order disagreement, at least three inter-core edges, a split inherited edge, or leave-and-return disturbance.
+
+The current bridge/disturbance analysis absorbs these outputs as follows. Order disagreement produces a reversed common edge, a reversing tight triple, or a tight cycle by the path-intersection calculus. Direct mixing, split inherited edges, leave-and-return disturbance, and neutral omission swaps have all been reduced in the defect-line article to a two-cover, strict descent, a Hamiltonian four-support, or an external endpoint reversal.
+
+Consequently:
+
+**Global funnel theorem.**
+At a quadratic-potential minimum in a minimum counterexample, every branch enters one of two geometric interfaces:
+
+1. a proper Hamiltonian four- or five-support with non-Hamiltonian path-cover-two complement; or
+2. an external tight triple reversing a displayed endpoint edge in an equitable three-cover.
+
+No genuinely unbalanced \(\Phi\)-minimal profile remains outside the bounded-support architecture, and the comparison-disturbance branches of the equitable profiles introduce no third terminal residue.
+
+This identifies the final large-order conversion problem cleanly: close external endpoint reversal in the equitable profiles, or show that it necessarily returns to the bounded four-/five-support architecture.
+
+
+
+### Persistent one-crossing reversal recurrence has a six-state normal form
+
+Let
+\[
+A=(a_1,\ldots,a_r),\qquad
+B=(b_1,\ldots,b_s),\qquad
+C=(c_1,\ldots,c_t)
+\]
+be a spanning three-cover with all three paths nontrivial. Suppose
+\[
+(b_1,a_r,a_{r-1})
+\]
+is tight, so the initial endpoint \(b_1\) of \(B\) reverses the terminal edge of \(A\).
+
+Consider the recurrent branch in which, at every successive reversing endpoint, a chosen two-cover of the one-vertex deletion has exactly one cross-class edge relative to the three inherited support classes; all inherited block orders agree; and every direct two-cover, strict descent, neutral recurrence, bounded-support/reciprocal branch, and multi-crossing disturbance has been excluded.
+
+Then the recurrence is forced, up to cyclic relabeling and simultaneous left-right reversal, through
+\[
+B_L\to A_R,\quad
+C_R\to B_L,\quad
+A_L\to C_R,\quad
+B_R\to A_L,\quad
+C_L\to B_R,\quad
+A_R\to C_L,
+\]
+and then returns to \(B_L\to A_R\).
+
+More explicitly, the six deletion covers have the forced mixed paths
+\[
+H-b_1:\quad A\mid C\,(B-b_1),
+\]
+\[
+H-c_t:\quad B\mid (C-c_t)\,A,
+\]
+\[
+H-a_1:\quad C\mid B\,(A-a_1),
+\]
+\[
+H-b_s:\quad A\mid (B-b_s)\,C,
+\]
+\[
+H-c_1:\quad B\mid A\,(C-c_1),
+\]
+\[
+H-a_r:\quad C\mid (A-a_r)\,B.
+\]
+
+At each step, the residual carrier block cannot be isolated, since restoring its omitted endpoint would recover that displayed path and give a two-cover with the mixed component. In the present corner-turn branch it does not concatenate with the target component. It therefore concatenates with the third component. Of the two possible block orders, one permits direct restoration of the omitted endpoint and hence a two-cover; the opposite order is forced. Failure of restoration in that order is exactly the next endpoint reversal in the displayed six-state list.
+
+Write
+\[
+A^\circ=(a_2,\ldots,a_{r-1}),\quad
+B^\circ=(b_2,\ldots,b_{s-1}),\quad
+C^\circ=(c_2,\ldots,c_{t-1}),
+\]
+when the relevant interiors are nonempty.
+
+Opposite states force opposite tight concatenations on the same common support. Namely,
+\[
+C\,B^\circ\quad\text{and}\quad B^\circ\,C
+\]
+are both tight, as are
+\[
+C^\circ\,A\quad\text{and}\quad A\,C^\circ,
+\]
+and
+\[
+B\,A^\circ\quad\text{and}\quad A^\circ\,B.
+\]
+For example, the first pair is obtained by restricting the \(b_1\)-deletion cover at \(b_s\) and the \(b_s\)-deletion cover at \(b_1\); these are endpoint deletions of the displayed mixed paths and therefore preserve tightness.
+
+Consequently the cyclic orders
+\[
+C\,B^\circ,\qquad A\,C^\circ,\qquad B\,A^\circ
+\]
+are tight cycles: one concatenation supplies all consecutive triples except the two wrap triples, and the opposite concatenation supplies exactly those wrap triples.
+
+Thus, after all known exits are removed, a persistent one-crossing external-reversal recurrence is not diffuse. It consists of a six-state endpoint cycle together with three large overlapping tight cycles. The equitable external-reversal frontier of version 78 may therefore be refined further: either recurrence leaves the one-crossing regime, or it lands in this six-state/three-cycle normal form.
+
+
+
+### The six-state one-crossing recurrence collapses to bounded support
+
+The six-state normal form of version 79 is not a genuine terminal residue.
+
+Retain its notation:
+\[
+A=(a_1,\ldots,a_r),\qquad
+B=(b_1,\ldots,b_s),\qquad
+C=(c_1,\ldots,c_t),
+\]
+and assume the six-state recurrence has been reached.
+
+One of its deletion covers is
+\[
+H-a_1=C\mid B(A-a_1),
+\]
+where
+\[
+A-a_1=(a_2,\ldots,a_r)
+\]
+and the displayed concatenation
+\[
+B,a_2,\ldots,a_r
+\]
+is a tight path.
+
+The induced set
+\[
+V(B)\cup(V(A)-\{a_1\})\cup\{a_1\}
+=V(A)\cup V(B)
+\]
+is non-Hamiltonian. Otherwise a Hamilton path on \(A\cup B\), together with the displayed path \(C\), would two-cover \(H\).
+
+Apply the endpoint-replacement truncation dichotomy to the displayed tight path
+\[
+B(A-a_1)
+\]
+and the exterior vertex \(a_1\). Since adjoining \(a_1\) does not Hamiltonize the support, \(a_1\) is noninsertable at every position of the displayed order. In particular it cannot be appended at the terminal end. Therefore
+\[
+(a_1,a_r,a_{r-1})
+\]
+is tight.
+
+But the six-state recurrence already contains the reversal
+\[
+(a_1,c_t,c_{t-1})
+\]
+tight.
+
+Thus the single carrier \(a_1\), which lies outside both displayed tight paths
+\[
+A-a_1=(a_2,\ldots,a_r)
+\qquad\text{and}\qquad
+C=(c_1,\ldots,c_t),
+\]
+simultaneously reverses their two terminal edges:
+\[
+(a_1,a_r,a_{r-1}),\qquad
+(a_1,c_t,c_{t-1}).
+\]
+
+By the valid common-carrier lemma for two vertex-disjoint terminal edges, the exposed vertices contain a Hamiltonian four-support. In a minimum counterexample its complement is non-Hamiltonian with path-cover number two.
+
+Hence:
+
+**One-crossing recurrence collapse.**
+A persistent one-crossing, order-compatible external-reversal recurrence cannot survive outside the bounded-support architecture. The six-state normal form of version 79 always produces a Hamiltonian four-support.
+
+Therefore the equitable external-reversal frontier has no independent one-crossing terminal geometry. Any genuinely unresolved reversal recurrence must leave the one-crossing branch and enter a multi-crossing/split/leave-and-return comparison before returning to the existing bridge/disturbance machinery.
+
+
+
+### Correction to versions 77--80: valid double-sided size-gap reduction
+
+The proof of version 77 used the withdrawn same-edge-twins assertion. Two distinct exterior labels reversing one common displayed edge do not by themselves force a Hamiltonian four-set. Therefore the original version-77 proof and the unqualified version-78 funnel must be corrected.
+
+The numerical part of version 77 remains valid and actually gives a stronger two-ended wall.
+
+Let
+\[
+A\mid B\mid C
+\]
+be a \(\Phi\)-minimal spanning three-cover of a minimum counterexample, with
+\[
+a=|A|,\qquad b=|B|,\qquad b\ge a+2.
+\]
+For either displayed endpoint \(y\) of \(B\), the set \(A\cup\{y\}\) is non-Hamiltonian. Otherwise a Hamilton path on \(A+y\), together with the inherited path \(B-y\), gives a legal repartition
+\[
+(a,b)\longrightarrow(a+1,b-1)
+\]
+with
+\[
+\Delta\Phi=2(a-b)+2<0.
+\]
+Hence the endpoint-replacement dichotomy makes each endpoint \(y\) of \(B\) noninsertable at every position of the displayed path
+\[
+A=(a_1,\ldots,a_a).
+\]
+For both endpoints \(y_1,y_2\) of \(B\),
+\[
+(a_2,a_1,y_i),\qquad
+(y_i,a_a,a_{a-1})
+\]
+are therefore tight. Thus the same two exterior labels reverse both exposed ends of \(A\).
+
+If \(a\ge4\), the initial and terminal end edges of \(A\) are vertex-disjoint. Regard those edges as two disjoint tight paths of order two. The valid double-sided two-label reversal lemma in the defect-line article applies: two labels reversing both exposed sides force a Hamiltonian support of order four or five. In a minimum counterexample its complement is non-Hamiltonian with path-cover number two.
+
+If \(a=3\), the existing theorem for a \(\Phi\)-minimum containing a three-path gives
+\[
+|V(H)|\le13.
+\]
+A \(\Phi\)-minimal three-cover has no component of order one or two.
+
+Therefore:
+
+**Corrected size-gap theorem.**
+If a \(\Phi\)-minimal spanning three-cover has two component orders differing by at least two, then either
+\[
+|V(H)|\le13,
+\]
+or \(H\) contains a proper Hamiltonian support of order four or five whose complement has path-cover number two.
+
+Consequently, for a minimum counterexample of order at least fourteen, absence of the bounded four-/five-support interface forces every \(\Phi\)-minimal profile to be equitable:
+\[
+\{r,r,r\},\qquad
+\{r+1,r,r\},\qquad
+\{r+1,r+1,r\}.
+\]
+
+This repairs the large-order funnel of version 78. Version 79's six-state normal form and version 80's collapse of that normal form use different local arguments and remain valid once interpreted inside this corrected large-order equitable frontier.
+
+
+### The hard mixed bridge carries two rooted five-support probes
+
+Retain the mixed universal pattern
+\[
+H-\{z,w\}=A\mid C,
+\]
+with
+\[
+A=(a_1,\ldots,a_r),\qquad C=(c_1,\ldots,c_s),
+\]
+and
+\[
+(a_{r-1},a_r,z),\quad (z,c_1,c_2),\quad
+(w,a_r,a_{r-1}),\quad (c_2,c_1,w)
+\]
+tight. Assume the branch has not already returned to a bounded Hamiltonian support through the central four-set.
+
+Lemma 44 gives that \(w\) is noninsertable into both \((A,z)\) and \((z,C)\). In particular
+\[
+(w,z,a_r),\qquad(c_1,z,w)
+\]
+are tight. Lemma 40 also gives
+\[
+(c_1,z,a_r)
+\]
+tight.
+
+If
+\[
+(c_1,w,a_r)
+\]
+were tight, then \(z,w\) would be parallel middles between \(c_1\) and \(a_r\), so
+\[
+\{c_1,a_r,z,w\}
+\]
+would be Hamiltonian. Therefore outside the bounded-support branch,
+\[
+(a_r,w,c_1)
+\]
+is tight.
+
+Now put
+\[
+U=\{a_{r-1},a_r,z,w,c_1,c_2\}.
+\]
+Apply the prescribed-pair six-set theorem to \(U\) with prescribed pair \(\{z,w\}\). With
+\[
+D=U-\{z,w\}=\{a_{r-1},a_r,c_1,c_2\},
+\]
+there are at least two distinct vertices \(d,e\in D\) such that
+\[
+U-\{d\},\qquad U-\{e\}
+\]
+are Hamiltonian five-sets. Both supports contain the bridge pair \(\{z,w\}\) and differ by one path-neighborhood vertex.
+
+In a minimum counterexample, each of these proper Hamiltonian five-supports has a non-Hamiltonian complement of path-cover number two.
+
+Hence every hard mixed bridge produces at least two overlapping rooted five-support probes preserving both bridge labels \(z,w\). The bridge-manufacture problem can therefore be reformulated as a comparison problem between the two complementary two-covers attached to these overlapping rooted probes. Any order disagreement, split inherited edge, leave-and-return disturbance, or external reversal in that comparison is already absorbed by the existing disturbance machinery; only a fully compatible overlap can remain quiet.
+
+
+### Multi-crossing comparison has no quiet form
+
+Let T be a genuine two-path cover of the union of three displayed connected path supports A,B,C, and assume that on each common support T preserves the inherited relative order. If no inherited displayed edge has endpoints in different T-components, connectedness of each displayed core forces the whole core to lie in one T-component. If, in addition, no T-component leaves a core through a nonempty block of another core and later returns, then each of A,B,C occurs as one contiguous T-block. Three nonempty blocks distributed among two nonempty comparison paths give exactly one inter-core T-edge. Therefore every comparison with at least two inter-core edges necessarily has a split inherited edge or a leave-and-return disturbance. In particular the >=3 crossing alternative in the equitable {r+1,r+1,r} profile is automatically absorbed by the existing disturbance machinery; the only quiet comparison geometry is one-crossing.
+
+### Two overlapping bridge-pair probes cannot be locally featureless
+
+Retain the v82 six-set U and choose distinct good deletion labels d,e outside the prescribed bridge pair {z,w}, so F_d=U-{d} and F_e=U-{e} are Hamiltonian five-supports. Put S=U-{d,e}; then {z,w} subset S and both S+d and S+e are Hamiltonian. If S is Hamiltonian, we already have a bridge-pair-rooted Hamiltonian four-support. Assume S is non-Hamiltonian. Compare Hamilton orders of S+d and S+e. If their induced orders on S disagree, the path-intersection calculus gives the existing reversal/order-disagreement interface. Otherwise both exceptional labels are inserted into one common order on S. Neither insertion can use an endpoint gap: deleting an endpoint-inserted label would leave that common order as a Hamilton path on S, contrary to non-Hamiltonicity. Hence both insertion slots are internal. The compatible one-vertex extension lemma now gives: separated slots => U=S+d+e is Hamiltonian; equal internal slots => a Hamiltonian four-set; adjacent slots => either U is Hamiltonian or the unique central triple fails and its boundary flip is a reversing tight triple. Thus the two rooted v82 probes cannot be locally quiet. The remaining issue is positional persistence: in the equal-slot four-support branch the new support need not retain both bridge labels, whereas the separated-slot six-support does retain them.
+
+
+### The hard mixed-bridge central four-set is unique
+
+Use the v82 notation and abbreviate a=a_r and c=c_1. Outside the bounded-support branch the central four-set X={a,z,w,c} is non-Hamiltonian, while the bridge/noninsertability relations give
+
+(w,z,a), (c,z,w), (c,z,a), (a,w,c)
+
+tight. Since a non-Hamiltonian four-set is edge-orderable with its three opposite-edge perfect matchings in strict blocks, write
+
+M_1={aw,zc}, M_2={ac,zw}, M_3={az,wc}.
+
+The four displayed triples translate to the incident-edge comparisons
+
+zw<za,  zc<zw,  zc<za,  aw<wc.
+
+Hence the matching blocks are forced in the unique order
+
+M_1 < M_2 < M_3.
+
+Because edges inside one opposite matching are disjoint, their relative order is irrelevant to every boundary triple. Thus the induced boundary tournament on {a,z,w,c} is uniquely determined. Equivalently its tight representatives are exactly
+
+(w,a,z), (c,a,z), (w,a,c),
+(w,z,a), (c,z,a), (c,z,w),
+(a,w,z), (a,w,c), (z,w,c),
+(z,c,a), (a,c,w), (z,c,w).
+
+This removes the last local ambiguity in the hard bridge: every surviving mixed bridge contains the same oriented matching-block K4.
+
+### Equal-slot loss of both bridge labels regenerates rooted probes
+
+In the v83 equal-internal-slot branch, let K be the Hamiltonian four-set produced by the common slot of the two good probe roots d,e. If K contains neither z nor w, then necessarily K is exactly the four path-neighborhood vertices {a_{r-1},a_r,c_1,c_2}. The original two probe five-sets containing {z,w} remain available, so no positional information is actually lost. Moreover, if both K+z and K+w are non-Hamiltonian, the repeated-bad-extension theorem for a Hamiltonian four-set and two exterior vertices produces two Hamiltonian five-sets, each containing both z and w. Hence even replacing the probes by the equal-slot four-support cannot destroy bridge-pair-rooted support data permanently.
+
+
+### Correction to the v83 non-Hamiltonian-core slot argument
+
+The v83 paragraph beginning with two Hamiltonian five-probes \(S+d\) and \(S+e\) and a non-Hamiltonian common four-set \(S\) used an unjustified insertion model. A Hamiltonian path on \(S+d\) may have \(d\) internal; deleting \(d\) then leaves two path pieces rather than a Hamiltonian order on \(S\). Thus one cannot in general regard \(d,e\) as insertions into one common Hamilton order of a non-Hamiltonian \(S\).
+
+The multi-crossing observation of v83 is unaffected. The six-set probe branch should instead be analyzed through the oriented six-set deletion graph.
+
+### The oriented perfect-matching bridge exception strictly descends with the bridge pair retained
+
+Retain the hard mixed bridge six-set
+\[
+U=\{u,t,z,w,c,d\},
+\]
+where
+\[
+u=a_{r-1},\qquad t=a_r,\qquad c=c_1,\qquad d=c_2,
+\]
+and
+\[
+H-\{z,w\}=A\mid C,
+\qquad |A|=r,\quad |C|=s.
+\]
+Assume the central four-set
+\[
+X=\{z,w,t,c\}
+\]
+is non-Hamiltonian.
+
+By v84, \(X\) is the unique oriented matching-block four-set with matching blocks
+\[
+\{tw,zc\}<\{tc,zw\}<\{tz,wc\}.
+\]
+In particular, relative to the fixed pair \((z,w)\),
+\[
+c\in C_+,\qquad t\in C_-,
+\]
+where
+\[
+C_+=\{y:(z,y,w)\text{ is tight}\},\qquad
+C_-=\{y:(w,y,z)\text{ is tight}\}.
+\]
+
+Suppose the oriented six-set deletion graph is in its no-adjacent-edge perfect-matching exception. Then the four path-neighborhood labels
+\[
+D=\{u,t,c,d\}
+\]
+split into the two size-two orientation classes \(C_+,C_-\), and the two Hamiltonian fixed-pair four-supports are exactly
+\[
+\{z,w\}\cup C_+,\qquad
+\{z,w\}\cup C_-.
+\]
+
+There are only two possibilities up to exchanging the class names.
+
+#### Inherited-edge classes
+
+Suppose
+\[
+C_-=\{u,t\},\qquad C_+=\{c,d\}.
+\]
+Then
+\[
+K_A=\{z,w,u,t\},
+\qquad
+K_C=\{z,w,c,d\}
+\]
+are Hamiltonian.
+
+The first gives the legal pairwise repartition
+\[
+A\mid\{z,w\}
+\longrightarrow
+(A-\{u,t\})\mid K_A
+\]
+with
+\[
+\Delta\Phi=16-4r.
+\]
+The second symmetrically gives
+\[
+\Delta\Phi=16-4s.
+\]
+Since
+\[
+r+s=|V(H)|-2\ge9,
+\]
+at least one of \(r,s\) is at least five. Hence one of these two moves is a strict \(\Phi\)-descent, and the new Hamiltonian four-component still contains both bridge labels \(z,w\).
+
+#### Crossed classes
+
+Suppose
+\[
+C_+=\{c,u\},\qquad C_-=\{t,d\}.
+\]
+In the perfect-matching exception every five-set \(U-\{x\}\), \(x\in D\), is Hamiltonian.
+
+Use
+\[
+F_u=U-\{u\}=\{t,z,w,c,d\}.
+\]
+First repartition \(A\mid\{z,w\}\) by moving the endpoint \(t\) into the two-set, obtaining
+\[
+(A-t)\mid\{t,z,w\}.
+\]
+Then repartition
+\[
+\{t,z,w\}\mid C
+\]
+as
+\[
+F_u\mid(C-\{c,d\}).
+\]
+Thus the original profile
+\[
+(r,2,s)
+\]
+reaches
+\[
+(r-1,5,s-2)
+\]
+within the same pairwise-repartition component, with
+\[
+\Delta_u
+=26-2r-4s.
+\]
+
+Similarly let
+\[
+F_d=U-\{d\}=\{u,t,z,w,c\}.
+\]
+First move \(c\) into \(\{z,w\}\), and then repartition
+\[
+A\mid\{z,w,c\}
+\]
+as
+\[
+(A-\{u,t\})\mid F_d.
+\]
+This reaches profile
+\[
+(r-2,5,s-1)
+\]
+with
+\[
+\Delta_d
+=26-4r-2s.
+\]
+
+If both changes were nonnegative, then
+\[
+r+2s\le13,\qquad 2r+s\le13.
+\]
+Adding gives
+\[
+3(r+s)\le26,
+\]
+contrary to \(r+s\ge9\).
+
+Hence at least one move is a strict \(\Phi\)-descent. Again the new Hamiltonian five-component contains both bridge labels \(z,w\).
+
+Therefore the oriented perfect-matching six-set exception is not a terminal bridge residue: it always admits a strict pairwise-repartition descent while retaining the full prescribed bridge pair.
+
+
+### The mixed universal pattern is bridge-ready on one side
+
+Retain the mixed universal pattern
+\[
+H-\{z,w\}=A\mid C,
+\]
+where
+\[
+A=(a_1,\ldots,a_r),\qquad C=(c_1,\ldots,c_s),
+\]
+and
+\[
+(a_{r-1},a_r,z),\qquad (z,c_1,c_2),
+\]
+\[
+(w,a_r,a_{r-1}),\qquad(c_2,c_1,w)
+\]
+are tight. Put
+\[
+J_L=(a_{r-1},a_r,c_1),\qquad
+J_R=(a_r,c_1,c_2).
+\]
+
+The two cross triples cannot both be tight, since then
+\[
+(a_1,\ldots,a_r,c_1,\ldots,c_s)
+\]
+would be Hamiltonian on \(H-\{z,w\}\), and together with the two-vertex path \(\{z,w\}\) would two-cover \(H\).
+
+If both \(J_L,J_R\) are non-tight, their boundary reversals give
+\[
+(c_2,c_1,a_r,a_{r-1})
+\]
+as a Hamiltonian four-path. Thus, outside bounded support, exactly one of \(J_L,J_R\) is tight.
+
+Suppose \(J_R\) is tight. Set
+\[
+L=(a_1,\ldots,a_{r-1}),\qquad R=C,\qquad
+p=w,\ q=z,\ x=a_r.
+\]
+Then the three orders
+\[
+L,x,R,\qquad L,p,x,R,\qquad L,x,q,R
+\]
+have exactly the local defect form required by the abstract two-label one-defect bridge, except possibly for the predecessor triple
+\[
+(a_{r-2},a_{r-1},w)
+\]
+when \(r\ge3\). Hence, if that triple is tight or absent, the abstract bridge theorem yields a two-cover or a Hamiltonian four-/five-support with path-cover-two complement.
+
+If it is non-tight, boundary antisymmetry gives
+\[
+(w,a_{r-1},a_{r-2})
+\]
+tight. Together with
+\[
+(w,a_r,a_{r-1})
+\]
+this says that \(w\) reverses the final two consecutive displayed edges of \(A\).
+
+The case \(J_L\) tight is symmetric. Taking
+\[
+L=A,\qquad R=(c_2,\ldots,c_s),\qquad
+p=z,\ q=w,\ x=c_1,
+\]
+the abstract bridge applies unless \(s\ge3\) and
+\[
+(w,c_2,c_3)
+\]
+is non-tight. In the exceptional case
+\[
+(c_3,c_2,w)
+\]
+is tight, so \(w\) reverses the first two consecutive displayed edges of \(C\).
+
+Thus the mixed pattern reduces to
+\[
+\boxed{
+\text{abstract one-defect bridge}
+\ \vee\
+\text{Hamiltonian four-support}
+\ \vee\
+\text{adjacent double reversal}.
+}
+\]
+
+### Adjacent double reversal strictly descends while retaining the bridge pair
+
+Treat the left-hand adjacent-double-reversal residue; the right-hand case is symmetric. Put
+\[
+u=a_{r-2},\qquad v=a_{r-1},\qquad t=a_r.
+\]
+Then
+\[
+(w,t,v),\qquad(w,v,u)
+\]
+are tight. The mixed pattern also gives
+\[
+(v,t,z),\qquad(w,z,t)
+\]
+tight. Define
+\[
+X=\{w,u,v,t\},\qquad
+F=X\cup\{z\},\qquad
+K=\{z,w,v,t\}.
+\]
+
+At least one of \(F,K\) is Hamiltonian.
+
+Assume otherwise that \(F\) and \(K\) are both non-Hamiltonian. If \(X\) were also non-Hamiltonian, the non-Hamiltonian-five-set theorem would be violated, because a non-Hamiltonian five-set has at most one non-Hamiltonian four-subset. Hence \(X\) is Hamiltonian.
+
+Represent the non-Hamiltonian five-set \(F\) by an edge order. The restriction to the non-Hamiltonian four-set \(K\) is matching-block. The tight triples
+\[
+(v,t,z),\qquad(w,t,v),\qquad(w,z,t)
+\]
+force its matching blocks in the order
+\[
+\{wt,zv\}<\{wv,zt\}<\{wz,vt\}
+\]
+up to the corresponding relabeling; in particular they force
+\[
+vt<wv.
+\]
+But
+\[
+(w,v,u),\qquad(u,v,t)
+\]
+give
+\[
+wv<vu<vt,
+\]
+a contradiction. Hence at least one of \(F,K\) is Hamiltonian.
+
+If \(F\) is Hamiltonian, repartition
+\[
+A\mid\{z,w\}
+\longrightarrow
+(a_1,\ldots,a_{r-3})\mid F.
+\]
+For \(r=3\) this is already a two-cover. Otherwise the affected size change is
+\[
+(r,2)\longrightarrow(r-3,5),
+\qquad
+\Delta\Phi=6(5-r).
+\]
+This is strict for \(r\ge6\), neutral for \(r=5\), and positive only for \(r=4\).
+
+If \(K\) is Hamiltonian, repartition
+\[
+A\mid\{z,w\}
+\longrightarrow
+(a_1,\ldots,a_{r-2})\mid K,
+\]
+with
+\[
+(r,2)\longrightarrow(r-2,4),
+\qquad
+\Delta\Phi=4(4-r).
+\]
+This is strict for \(r\ge5\).
+
+The remaining small values are strictly balanced using endpoints of the untouched path \(C\), without changing the Hamiltonian component containing \(z,w\).
+
+- \(K,r=3\): after one endpoint transfer from \(C\) to the residual singleton, the total change is
+  \[
+  8-2s<0.
+  \]
+- \(K,r=4\): one endpoint transfer gives total change
+  \[
+  6-2s<0.
+  \]
+- \(F,r=5\): one endpoint transfer gives
+  \[
+  6-2s<0.
+  \]
+- \(F,r=4\): one endpoint transfer gives total change
+  \[
+  10-2s.
+  \]
+  This is strict for \(s\ge6\). If \(s=5\), it is neutral and a second endpoint transfer changes the profile \(5|2|4\) to \(5|3|3\), decreasing \(\Phi\) by \(2\).
+
+The inequalities use only \(|V(H)|>10\).
+
+Therefore every adjacent double reversal yields either a two-cover or a strict pairwise-repartition \(\Phi\)-descent, and throughout the descent the new Hamiltonian four- or five-component retains **both bridge labels \(z,w\)**.
+
+Combining this with the completed abstract bridge gives:
+
+\[
+\boxed{
+\text{mixed universal reversal pattern}
+\Longrightarrow
+\text{two-cover}
+\ \vee\
+\text{bounded support}
+\ \vee\
+\text{strict bridge-pair-preserving descent}.
+}
+\]
+
+Thus the mixed pattern itself has no independent terminal geometry.
+
+
+### Same-edge twins in the universal prescribed-pair pattern are bounded-support branches
+
+Retain the universal prescribed-pair state
+\[
+H-\{u,v\}=A\mid C,
+\qquad
+A=(a_1,\ldots,a_r),\quad C=(c_1,\ldots,c_s),
+\]
+with \(r,s\ge2\).
+
+Suppose the first endpoint-classification alternative holds:
+\[
+(u,a_r,a_{r-1}),\qquad
+(v,a_r,a_{r-1})
+\]
+are tight. Thus \(u,v\) both reverse the displayed terminal edge of \(A\).
+
+If, for one label, say \(u\),
+\[
+(c_{s-1},c_s,u)
+\]
+is non-tight, then boundary antisymmetry gives
+\[
+(u,c_s,c_{s-1})
+\]
+tight. The single carrier \(u\) then reverses the terminal edges of the two vertex-disjoint tight paths \(A\) and \(C\). The valid common-carrier lemma gives a Hamiltonian four-support with path-cover-two complement.
+
+Hence, outside bounded support,
+\[
+(c_{s-1},c_s,u),\qquad
+(c_{s-1},c_s,v)
+\]
+must both be tight: both labels append to \(C\).
+
+If
+\[
+(u,a_1,a_2)
+\]
+were tight, then
+\[
+(u,a_1,\ldots,a_r)
+\qquad\text{and}\qquad
+(c_1,\ldots,c_s,v)
+\]
+would form a spanning two-cover. Therefore
+\[
+(u,a_1,a_2)
+\]
+is non-tight, and symmetrically so is
+\[
+(v,a_1,a_2).
+\]
+Thus
+\[
+(a_2,a_1,u),\qquad(a_2,a_1,v)
+\]
+are tight: both labels also reverse the displayed initial edge of \(A\).
+
+If \(r\ge4\), the initial and terminal displayed end edges of \(A\) are vertex-disjoint. Regard them as two disjoint tight 2-paths. The two labels \(u,v\) reverse both exposed sides, so the valid double-sided two-label reversal lemma gives a Hamiltonian four- or five-support with path-cover-two complement.
+
+If \(r=2\), both labels append to \(C\). The three-set \(A\cup\{u\}\) is Hamiltonian automatically, while
+\[
+C,v
+\]
+is a tight path. These two paths cover \(H\), contradiction.
+
+If \(r=3\), apply the fixed-three-path extension theorem to the tight path \(A\) and the three exterior vertices
+\[
+u,\quad v,\quad c_s.
+\]
+At least one of
+\[
+A\cup\{u,v\},\qquad
+A\cup\{u,c_s\},\qquad
+A\cup\{v,c_s\}
+\]
+is Hamiltonian. In the first case that Hamiltonian five-set together with \(C\) two-covers \(H\). In the second case its complement is covered by
+\[
+\{v\}\mid(C-c_s),
+\]
+and in the third by
+\[
+\{u\}\mid(C-c_s).
+\]
+Thus the latter cases give a proper Hamiltonian five-support with non-Hamiltonian path-cover-two complement.
+
+Therefore the same-terminal-edge twin alternative always yields a two-cover or bounded support. The same-initial-edge alternative is symmetric.
+
+Consequently, in the universal prescribed-pair endpoint classification, the **only** alternative with genuinely new global content is the mixed pattern. By version 86 that mixed pattern itself reduces to a two-cover, bounded support, or strict bridge-pair-preserving \(\Phi\)-descent.
+
+
+### Correction to the adjacent-double-reversal matching-block order
+
+Version 86 wrote the three opposite-edge matching blocks of
+\[
+K=\{z,w,v,t\}
+\]
+in the wrong displayed order. The contradiction used there is nevertheless correct after fixing the block order.
+
+The known tight triples are
+\[
+(v,t,z),\qquad(w,t,v),\qquad(w,z,t).
+\]
+In an edge-order representation they give
+\[
+vt<tz,\qquad wt<tv,\qquad wz<zt.
+\]
+The three opposite-edge matchings of \(K\) are
+\[
+M_1=\{zt,wv\},\qquad
+M_2=\{zw,vt\},\qquad
+M_3=\{zv,wt\}.
+\]
+Since \(K\) is non-Hamiltonian, these are strict blocks. The displayed inequalities force
+\[
+M_3<M_2<M_1.
+\]
+In particular
+\[
+vt<wv.
+\]
+The adjacent-double-reversal and inherited triples still give
+\[
+(w,v,u),\qquad(u,v,t)
+\]
+tight, hence
+\[
+wv<vu<vt,
+\]
+contradiction.
+
+Thus the conclusion of version 86 is unchanged: at least one of the five-set \(F=\{z,w,u,v,t\}\) and the four-set \(K=\{z,w,v,t\}\) is Hamiltonian, and the subsequent strict-descent analysis remains valid.
+
+
+### Every prescribed pair roots a clique of Hamiltonian four-supports
+
+Let \(H\) be a minimum counterexample and fix any distinct vertices \(u,v\). Put
+\[
+X=V(H)-\{u,v\}.
+\]
+Partition \(X\) into the two fixed-pair orientation classes
+\[
+X_+=\{x:(u,x,v)\text{ is tight}\},
+\qquad
+X_-=\{x:(v,x,u)\text{ is tight}\}.
+\]
+Boundary antisymmetry gives \(X=X_+\dot\cup X_-\).
+
+The fixed-pair bad-extension theorem in extremal01 says that if two vertices \(x,y\) lie in the same orientation class, then
+\[
+H[\{u,v,x,y\}]
+\]
+is Hamiltonian. Equivalently, all non-Hamiltonian pair-rooted four-sets use one vertex from each class.
+
+Since a minimum counterexample has \(n>10\), one orientation class \(Y\) has
+\[
+|Y|\ge5.
+\]
+Therefore for every distinct \(x,y\in Y\),
+\[
+K_{xy}=\{u,v,x,y\}
+\]
+is a Hamiltonian four-support. Since \(K_{xy}\) is proper, minimum-counterexample calculus gives
+\[
+\operatorname{pc}(H-K_{xy})=2.
+\]
+
+Thus every prescribed pair \(\{u,v\}\) is the common root of a complete graph on at least five exterior labels worth of Hamiltonian four-supports with non-Hamiltonian path-cover-two complements.
+
+There is also a five-support density consequence. The fixed-pair density bound from extremal01 gives Hamiltonian-five density at least
+\[
+\frac{2(n-5)}{3(n-4)}
+\]
+among all five-sets containing \(\{u,v\}\). For \(n>10\), this exceeds the Erdős--Ko--Rado density
+\[
+\frac{3}{n-2}
+\]
+of an intersecting 3-uniform family on the remaining \(n-2\) vertices. Hence there exist two Hamiltonian five-supports
+\[
+\{u,v\}\cup A,\qquad \{u,v\}\cup B
+\]
+with
+\[
+|A|=|B|=3,\qquad A\cap B=\varnothing.
+\]
+
+So every possible bridge pair has both a large clique of rooted four-support probes and two rooted five-support wings meeting only in the bridge pair. This does not by itself complete bridge manufacture, but it shows that scarcity of pair-rooted Hamiltonian support is never the obstruction; the remaining issue is compatibility with the ambient displayed-path orders.

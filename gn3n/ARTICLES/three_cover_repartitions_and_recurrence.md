@@ -556,28 +556,92 @@ Any closure of it must use additional attachment information from the second com
 
 ### Correct closure of same-endpoint backtracking via the second support
 
-**Lemma 12 (same-endpoint backtracking forces bounded support).** Let (F_a,F_b) be compatible deletion covers. Suppose the omitted labels (a,b) are inserted into the same endpoint gap of a common ordered support (P=(p_1,ldots,p_m)), while the other common support is (Q=(q_1,ldots,q_t)). Then either (H) has a two-cover, or (H) contains a Hamiltonian four-support (K) with (operatorname{pc}(H-K)=2).
+**Lemma 12 (same-endpoint backtracking forces bounded support).** Let \(F_a,F_b\) be compatible deletion covers. Suppose the omitted labels \(a,b\) are inserted into the same endpoint gap of a common ordered support
+\[
+P=(p_1,\ldots,p_m),
+\]
+while the other common support is
+\[
+Q=(q_1,\ldots,q_t).
+\]
+Then either \(H\) has a two-cover, or \(H\) contains a Hamiltonian support \(K\) of order four or five with
+\[
+\operatorname{pc}(H-K)=2.
+\]
 
-**Proof.** Reverse (P) if necessary so
-[
-F_a=(b,p_1,ldots,p_m)mid Q,qquad
-F_b=(a,p_1,ldots,p_m)mid Q.
-]
-If (t=1), the path on ({a,q_1}), together with ((b,p_1,ldots,p_m)), two-covers (H). Hence (tge2).
+**Proof.** Reverse \(P\) if necessary so
+\[
+F_a=(b,p_1,\ldots,p_m)\mid Q,
+\qquad
+F_b=(a,p_1,\ldots,p_m)\mid Q.
+\]
 
-If (a) attached to either displayed end of (Q), that Hamilton path on (Qcup{a}), together with ((b,p_1,ldots,p_m)), would two-cover (H). Thus both endpoint insertions of (a) into (Q) fail. The same argument with the roles interchanged shows both endpoint insertions of (b) fail.
+If \(t=1\), the path on \(\{a,q_1\}\), together with \((b,p_1,\ldots,p_m)\), two-covers \(H\). Hence assume \(t\ge2\).
 
-In particular
-[
-(a,q_1,q_2),qquad(b,q_1,q_2)
-]
-are non-tight, so boundary antisymmetry gives
-[
-(q_2,q_1,a),qquad(q_2,q_1,b)
-]
-tight. Thus (a,b) are two distinct exterior reversers of the same displayed end edge (q_1q_2). The two-reverser lemma therefore gives a Hamiltonian four-set (K). Minimum-counterexample calculus gives (operatorname{pc}(H-K)le2), and equality holds because a Hamiltonian complement would two-cover (H). (square)
+Neither \(a\) nor \(b\) can attach to either displayed end of \(Q\). For example, a Hamilton path obtained by attaching \(a\) to \(Q\), together with \((b,p_1,\ldots,p_m)\), would two-cover \(H\); the other three endpoint attachments are symmetric.
 
-Hence persistent forest-neutral backtracking does not close by comparing the two inserted labels directly; it closes by forcing both labels to fail attachment to the fixed second support. No non-boundary permutation inference is used.
+Therefore, for each \(z\in\{a,b\}\),
+\[
+(z,q_1,q_2)
+\]
+is non-tight and
+\[
+(q_{t-1},q_t,z)
+\]
+is non-tight. Boundary antisymmetry gives
+\[
+(q_2,q_1,z),
+\qquad
+(z,q_t,q_{t-1})
+\]
+tight.
+
+If \(t=2\), using different labels at the two ends gives
+\[
+(b,q_2,q_1,a)
+\]
+as a Hamiltonian four-path. Thus assume \(t\ge3\).
+
+Fix \(z\in\{a,b\}\). Exactly one of
+\[
+(q_1,z,q_t),
+\qquad
+(q_t,z,q_1)
+\]
+is tight.
+
+If
+\[
+(q_1,z,q_t)
+\]
+is tight for either \(z\), then
+\[
+(q_2,q_1,z,q_t,q_{t-1})
+\]
+is a Hamiltonian five-path.
+
+Otherwise both labels satisfy
+\[
+(q_t,a,q_1),
+\qquad
+(q_t,b,q_1)
+\]
+tight. Hence \(a\) and \(b\) are two parallel middle vertices between the fixed endpoints \(q_t,q_1\). The parallel-middle lemma in localextend01 gives a Hamiltonian four-support on
+\[
+\{q_t,q_1,a,b\}.
+\]
+
+Thus in every case either \(H\) already has a two-cover or there is a Hamiltonian support \(K\) of order four or five. Such \(K\) is proper in a minimum counterexample. Minimum-counterexample calculus gives
+\[
+\operatorname{pc}(H-K)\le2,
+\]
+and the complement cannot be Hamiltonian, since a Hamilton path on \(H-K\) together with one on \(K\) would two-cover \(H\). Therefore
+\[
+\operatorname{pc}(H-K)=2.
+\]
+\(\square\)
+
+The closure uses the two endpoint failures on the fixed second support \(Q\). It does not use the false inference that two different exterior vertices reversing one common edge force a Hamiltonian four-set.
 
 
 ---

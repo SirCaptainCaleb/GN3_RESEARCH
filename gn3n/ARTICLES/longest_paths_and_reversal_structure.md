@@ -964,10 +964,9 @@ Hence the remaining new global mathematics is not a small-order classification. 
 ### Marked minima are global minima
 
 
-
 ### Endpoint polarities on a three-cover force an anchored four-support
 
-The pairwise concatenation failures of three displayed paths have a parity obstruction.
+The endpoint-polarity triangle theorem remains valid, with the final carrier chosen from the common component rather than from the two exterior twin labels.
 
 **Lemma 18 (endpoint-polarity triangle).** Let
 \[
@@ -977,79 +976,28 @@ C=(c_1,\ldots,c_t)
 \]
 be a spanning three-cover of a minimum counterexample, with all three paths nontrivial. Then the six displayed endpoint edges contain a Hamiltonian four-support.
 
-More precisely, for each unordered pair of displayed paths, either a Hamiltonian four-set already occurs among their four endpoint edges, or the pair has one of exactly two coherent polarities:
+For each unordered pair of displayed paths, either a Hamiltonian four-set already occurs among their endpoint data, or the pair has one of exactly two coherent polarities:
 
 - **initial polarity:** the initial endpoint of each path reverses the terminal edge of the other;
 - **terminal polarity:** the terminal endpoint of each path reverses the initial edge of the other.
 
-These pair-polarities cannot be assigned consistently on the triangle \(AB,BC,CA\) without forcing a Hamiltonian four-support.
+**Proof.** The pairwise concatenation analysis is unchanged. For a pair \(A,B\), if both junction triples in one displayed concatenation fail, their boundary reversals concatenate to a Hamiltonian four-path. If exactly one junction triple fails in each concatenation order, the mixed failure patterns are absorbed by the carrier-switch comparison. Hence, outside bounded support, only the two coherent polarities remain.
 
-**Proof.** Consider two paths \(A,B\). Since \(A\cup B\) cannot be Hamiltonian, the concatenation
+Color the three pair-edges
 \[
-A,B
+AB,\ BC,\ CA
 \]
-has at least one failed junction triple among
-\[
-(a_{r-1},a_r,b_1),
-\qquad
-(a_r,b_1,b_2).
-\]
-If both fail, boundary reversal gives
-\[
-(b_1,a_r,a_{r-1}),
-\qquad
-(b_2,b_1,a_r)
-\]
-tight, so
-\[
-(b_2,b_1,a_r,a_{r-1})
-\]
-is a Hamiltonian four-path. Hence, outside the desired conclusion, exactly one of the two junction triples fails.
+by their polarities. A triangle with two colors has a vertex at which the two incident pair-edges have the same color. Suppose this vertex is \(A\).
 
-The same applies to the reverse concatenation
-\[
-B,A,
-\]
-whose possible failed junction triples are
-\[
-(b_{s-1},b_s,a_1),
-\qquad
-(b_s,a_1,a_2).
-\]
+If both \(AB\) and \(AC\) have initial polarity, then the initial endpoint \(a_1\) reverses the terminal edge of \(B\) and the terminal edge of \(C\). These are vertex-disjoint displayed edges. By the valid common-reverser lemma, one carrier reversing two disjoint terminal edges forces a Hamiltonian four-support.
 
-Suppose the failure in \(AB\) is the first triple and the failure in \(BA\) is the second. Then
-\[
-(b_1,a_r,a_{r-1}),
-\qquad
-(a_2,a_1,b_s)
-\]
-are tight: both failures mark \(A\), while neither marks \(B\). Lemma 15 above shows that this already forces a Hamiltonian four-support. The symmetric mixed pattern similarly forces one.
+If both \(AB\) and \(AC\) have terminal polarity, then the terminal endpoint \(a_r\) reverses the initial edge of \(B\) and the initial edge of \(C\). Again these are vertex-disjoint displayed edges, and the symmetric initial-initial common-reverser lemma gives a Hamiltonian four-support.
 
-Therefore, outside the Hamiltonian-four-support conclusion, the only two possibilities are:
+Thus every two-coloring of the polarity triangle forces the desired support. \(\square\)
 
-1. the first junction triple fails in both \(AB\) and \(BA\), giving
-   \[
-   (b_1,a_r,a_{r-1}),
-   \qquad
-   (a_1,b_s,b_{s-1})
-   \]
-   tight. This is the initial polarity;
+The previous proof error was to use the two exterior labels that both reverse one common edge of \(A\). Same-edge twins do not force bounded support. The correct carrier is the corresponding endpoint of \(A\), which reverses two **different** exposed edges, one in each of the other two paths.
 
-2. the second junction triple fails in both \(AB\) and \(BA\), giving
-   \[
-   (b_2,b_1,a_r),
-   \qquad
-   (a_2,a_1,b_s)
-   \]
-   tight. This is the terminal polarity.
-
-Thus each pair \(AB,BC,CA\) receives one of two polarities unless a Hamiltonian four-support already exists.
-
-Now inspect one component, say \(A\). If the two incident pairs \(AB\) and \(AC\) have the same polarity, then two distinct exterior endpoint labels—one from \(B\), one from \(C\)—reverse the same exposed end edge of \(A\). Lemma 38 then yields a Hamiltonian four-support.
-
-Hence, outside the desired conclusion, the two pair-polarities incident with \(A\) must be different. The same must hold at \(B\) and at \(C\). But a triangle cannot have its edges colored with two colors so that the two incident edges at every vertex have different colors. This contradiction proves the lemma. \(\square\)
-
-The significance is not the mere existence of a small Hamiltonian set. The support is forced directly by the endpoint-reversal network of an arbitrary spanning three-cover. Thus every globally minimal marked-reversal state contains an endpoint-anchored Hamiltonian four-support generated by the same reversal geometry, with no bounded-order hypothesis.
+Hence the endpoint-polarity network really does force an anchored Hamiltonian four-support in every nontrivial spanning three-cover.
 
 
 ### Every spanning three-cover is already marked

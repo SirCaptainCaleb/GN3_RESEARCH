@@ -1505,14 +1505,62 @@ Accordingly the remaining local-to-global task may be stated more sharply:
 The difficult step is now **bridge manufacture**, not bridge completion.
 
 
-### Two reversers of one end edge force a Hamiltonian four-set
 
-**Lemma 38.** Let \(A=(\ldots,a_{r-1},a_r)\) be a tight path, let \(u,v\) be distinct exterior vertices with \((u,a_r,a_{r-1})\) and \((v,a_r,a_{r-1})\) tight, and let \(y\) be any further distinct vertex. Then the five exposed vertices contain a Hamiltonian four-set.
+### Correction: same-edge twins do not force bounded support
 
-**Proof.** If \((y,u,a_r)\) is tight, then \((y,u,a_r,a_{r-1})\) is a Hamilton four-path; likewise for \(v\). If both triples are non-tight, boundary antisymmetry gives \((a_r,u,y)\) and \((a_r,v,y)\) tight. The parallel-middle lemma in [[localextend01]] then makes \(\{a_r,u,v,y\}\) Hamiltonian. \(\square\)
+The former Lemma 38 and Corollary 39 are withdrawn.
 
-**Corollary 39.** In Lemma 3 of [[longest_paths_and_reversal_structure_reversals_are_unavoidable]], the alternatives in which both prescribed labels reverse the same exposed end edge immediately yield a proper Hamiltonian four-support with non-Hamiltonian path-cover-two complement. Therefore, outside the bounded-support regime, only the mixed pattern remains: one prescribed label bridges the two complementary paths while the other reverses both exposed end edges.
+Two distinct exterior vertices may both reverse the same displayed end edge without forcing any Hamiltonian four-set. From
+\[
+(u,a_r,a_{r-1}),\qquad (v,a_r,a_{r-1})
+\]
+tight, boundary antisymmetry gives only the two reverse triples on those same supports. It gives no relation between \(u\) and \(v\), and no relation sufficient to concatenate them into a Hamiltonian four-path. There are four-vertex boundary tournaments realizing this same-edge twin pattern without a Hamilton path.
 
+Accordingly, the alternatives in the universal reversal lemma in which two prescribed labels reverse one common exposed edge do **not** by themselves collapse to bounded support. Any later argument using such a pair must obtain additional reversal data on a second edge or use another independent local constraint.
+
+The valid nearby principle is the following.
+
+**Lemma 38 (one carrier reversing two disjoint same-type edges).** Let
+\[
+A=(\ldots,a_{r-1},a_r),\qquad
+P=(\ldots,p_{m-1},p_m)
+\]
+be vertex-disjoint tight paths, and let \(w\) lie outside both supports.
+
+If
+\[
+(w,a_r,a_{r-1}),\qquad (w,p_m,p_{m-1})
+\]
+are tight, then the exposed vertices contain a Hamiltonian four-set. Indeed exactly one of
+\[
+(a_r,w,p_m),\qquad (p_m,w,a_r)
+\]
+is tight. In the first case
+\[
+(a_r,w,p_m,p_{m-1})
+\]
+is a tight four-path; in the second
+\[
+(p_m,w,a_r,a_{r-1})
+\]
+is a tight four-path.
+
+The symmetric initial-initial form is also valid. If
+\[
+(a_2,a_1,w),\qquad (p_2,p_1,w)
+\]
+are tight, then exactly one of
+\[
+(a_1,w,p_1),\qquad (p_1,w,a_1)
+\]
+is tight, producing respectively
+\[
+(a_2,a_1,w,p_1)
+\quad\text{or}\quad
+(p_2,p_1,w,a_1).
+\]
+
+Thus a **single carrier** reversing two vertex-disjoint edges of the same endpoint type forces bounded support. The mixed initial-terminal case is a separate configuration and is not asserted here.
 
 ### The mixed universal pattern forces a bridge or a split
 
@@ -1789,12 +1837,186 @@ Thus Lemma 40 may be viewed as an augmenting-path obstruction: (z) is simultaneo
 
 
 
+### The universal prescribed-pair patterns collapse further
+
+The endpoint classification for
+\[
+H-\{u,v\}=A\mid C
+\]
+has two same-edge-twin alternatives and one mixed alternative.
+
+#### Same-edge twins are bounded-support branches
+
+Suppose
+\[
+A=(a_1,\ldots,a_r),\qquad C=(c_1,\ldots,c_s),
+\]
+and
+\[
+(u,a_r,a_{r-1}),\qquad(v,a_r,a_{r-1})
+\]
+are tight.
+
+If \((c_{s-1},c_s,u)\) is non-tight, then
+\[
+(u,c_s,c_{s-1})
+\]
+is tight, so the single carrier \(u\) reverses the terminal edges of the two disjoint tight paths \(A,C\). The common-carrier lemma gives a Hamiltonian four-support.
+
+Hence outside bounded support both \(u,v\) append to \(C\). If \(u\) could prepend to \(A\), then
+\[
+(u,A)\mid(C,v)
+\]
+would two-cover \(H\); similarly for \(v\). Thus both prepend attempts fail and
+\[
+(a_2,a_1,u),\qquad(a_2,a_1,v)
+\]
+are tight.
+
+If \(r\ge4\), the initial and terminal end edges of \(A\) are disjoint, and the two-label double-sided reversal lemma gives a Hamiltonian four- or five-support.
+
+If \(r=2\), the Hamiltonian three-set \(A\cup\{u\}\), together with \((C,v)\), gives a two-cover.
+
+If \(r=3\), apply the fixed-three-path extension theorem to \(A\) and \(u,v,c_s\). One of
+\[
+A\cup\{u,v\},\quad A\cup\{u,c_s\},\quad A\cup\{v,c_s\}
+\]
+is Hamiltonian. The first gives a two-cover with \(C\); the latter two have complements covered respectively by
+\[
+\{v\}\mid(C-c_s),\qquad \{u\}\mid(C-c_s).
+\]
+Thus they give proper Hamiltonian five-supports with path-cover-two complement.
+
+The same-initial-edge twin case is symmetric.
+
+#### The mixed pattern is bridge-ready on one side
+
+Retain Lemma 40:
+\[
+H-\{z,w\}=A\mid C
+\]
+with
+\[
+(a_{r-1},a_r,z),\quad(z,c_1,c_2),\quad
+(w,a_r,a_{r-1}),\quad(c_2,c_1,w)
+\]
+tight. Put
+\[
+J_L=(a_{r-1},a_r,c_1),\qquad
+J_R=(a_r,c_1,c_2).
+\]
+
+The two \(J\)-triples cannot both be tight, or \(A,C\) would concatenate to a Hamilton path on \(H-\{z,w\}\). If both are non-tight, their flips give
+\[
+(c_2,c_1,a_r,a_{r-1})
+\]
+as a Hamiltonian four-path. Hence outside bounded support exactly one is tight.
+
+If \(J_R\) is tight, set
+\[
+L=(a_1,\ldots,a_{r-1}),\quad R=C,\quad
+p=w,\ q=z,\ x=a_r.
+\]
+The three orders in the abstract two-label one-defect bridge then have no possible defects outside the prescribed junctions, except possibly
+\[
+(a_{r-2},a_{r-1},w)
+\]
+when \(r\ge3\). If this triple is tight or absent, the abstract bridge lemma applies. If it is non-tight, then
+\[
+(w,a_{r-1},a_{r-2})
+\]
+is tight, so \(w\) reverses the final two consecutive edges of \(A\).
+
+The case \(J_L\) tight is symmetric: the bridge applies unless
+\[
+(w,c_2,c_3)
+\]
+fails, in which case
+\[
+(c_3,c_2,w)
+\]
+is tight and \(w\) reverses the first two consecutive edges of \(C\).
+
+Thus the only extra residue beyond the completed abstract bridge is an adjacent double reversal.
+
+#### Adjacent double reversal gives strict descent
+
+Treat the left-hand residue. Put
+\[
+u=a_{r-2},\qquad v=a_{r-1},\qquad t=a_r.
+\]
+Then
+\[
+(w,t,v),\qquad(w,v,u),\qquad(v,t,z),\qquad(w,z,t)
+\]
+are tight. Define
+\[
+F=\{z,w,u,v,t\},\qquad K=\{z,w,v,t\}.
+\]
+
+At least one of \(F,K\) is Hamiltonian. Suppose both were non-Hamiltonian. If
+\[
+X=\{w,u,v,t\}
+\]
+were also non-Hamiltonian, the non-Hamiltonian-five-set theorem would give two non-Hamiltonian four-deletions of \(F\), impossible. Hence \(X\) is Hamiltonian.
+
+Represent \(F\) by an edge order. Since \(K\) is non-Hamiltonian, its opposite-edge matchings form strict blocks. The three tight triples
+\[
+(v,t,z),\qquad(w,t,v),\qquad(w,z,t)
+\]
+force
+\[
+\{zv,wt\}<\{zw,vt\}<\{zt,wv\},
+\]
+hence
+\[
+vt<wv.
+\]
+But
+\[
+(w,v,u),\qquad(u,v,t)
+\]
+give
+\[
+wv<vu<vt,
+\]
+a contradiction.
+
+If \(F\) is Hamiltonian, the pairwise repartition
+\[
+A\mid\{z,w\}\longrightarrow
+(a_1,\ldots,a_{r-3})\mid F
+\]
+has
+\[
+\Delta\Phi=6(5-r).
+\]
+If \(K\) is Hamiltonian,
+\[
+A\mid\{z,w\}\longrightarrow
+(a_1,\ldots,a_{r-2})\mid K
+\]
+has
+\[
+\Delta\Phi=4(4-r).
+\]
+The non-strict small values are made strict by moving one or two endpoints of the untouched path \(C\) into the residual component of order one or two. Since \(|V(H)|>10\), the resulting changes are negative; the unique neutral subcase \(r=4,s=5\) in the \(F\)-branch is followed by
+\[
+5\mid2\mid4\longrightarrow5\mid3\mid3,
+\]
+which decreases \(\Phi\) by \(2\).
+
+Therefore the adjacent-double-reversal branch yields a two-cover or a strict \(\Phi\)-descent, while the Hamiltonian four- or five-component produced above retains both \(z,w\).
+
+Consequently the mixed universal pattern has no independent terminal geometry: it yields the completed abstract bridge, bounded support, a two-cover, or strict bridge-pair-preserving descent.
+
+
 ## Metadata
 
 - ID: defect_lines_and_spanning_order_compression_the_remaining_lemma
 - Kind: section
-- Version: 44
-- Math version: 39
+- Version: 46
+- Math version: 41
 - Audit: unaudited
 - Refutation: unrefuted
 
@@ -1805,4 +2027,4 @@ Thus Lemma 40 may be viewed as an augmenting-path obstruction: (z) is simultaneo
 - Subsection 3 — crystallized, version 4: Slot synchronization reductions
 - Subsection 4 — crystallized, version 6: Same-side endpoint reduction
 - Subsection 5 — crystallized, version 4: Two-label one-defect bridge
-- Subsection 6 — HOT, version 11: Coherent residue collapses
+- Subsection 6 — HOT, version 13: Coherent residue collapses

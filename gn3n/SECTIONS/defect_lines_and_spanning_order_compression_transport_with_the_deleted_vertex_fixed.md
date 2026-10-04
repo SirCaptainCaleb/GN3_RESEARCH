@@ -59,15 +59,150 @@ For one such set \(W\), join \(a,b\in W\) when \(W-\{a,b\}\) is Hamiltonian. Eac
 
 Every such edge \(ab\) yields a Hamiltonian five-set and a complementary support equal to an inherited interval of \(Q\) together with \(\{a,b\}\). The complement is non-Hamiltonian but is covered by that interval and the two-vertex path \((a,b)\). Following the shared edges gives the required sequence. \(\square\)
 
+### The three-vertex-side terminal state strictly descends
+
+Retain Lemma 4:
+\[
+P=(p_0,p_1,p_2),\qquad
+Q=(q_0,\ldots,q_s),\qquad
+X=V(P)\cup\{x\},
+\]
+with \(s\ge6\). Lemma 4 supplies distinct vertices
+\[
+z_1,z_2\in X
+\]
+such that, for \(i=1,2\),
+\[
+(q_1,q_0,z_i),\qquad
+(z_i,q_s,q_{s-1})
+\]
+are tight.
+
+Then the singleton-lift three-cover
+\[
+P\mid\{x\}\mid Q
+\]
+admits a strict decrease of
+\[
+\Phi=|P_1|^2+|P_2|^2+|P_3|^2
+\]
+inside its pairwise-repartition component.
+
+**Proof.** For each \(z=z_i\), exactly one of
+\[
+(q_0,z,q_s),\qquad(q_s,z,q_0)
+\]
+is tight.
+
+Suppose first that
+\[
+(q_0,z,q_s)
+\]
+is tight for at least one carrier \(z\). Then
+\[
+F_z=(q_1,q_0,z,q_s,q_{s-1})
+\]
+is a Hamiltonian five-path.
+
+The set \(X-\{z\}\) has order three and is therefore Hamiltonian. The remaining vertices of \(Q\) form the inherited tight path
+\[
+(q_2,\ldots,q_{s-2}),
+\]
+with the empty short-interval conventions unnecessary because \(s\ge6\).
+
+Starting from
+\[
+P\mid\{x\}\mid Q,
+\]
+first repartition \(P\mid\{x\}\) as
+\[
+(X-\{z\})\mid\{z\}.
+\]
+Then repartition
+\[
+\{z\}\mid Q
+\]
+as
+\[
+F_z\mid(q_2,\ldots,q_{s-2}).
+\]
+Thus the original profile
+\[
+3\mid1\mid(s+1)
+\]
+reaches
+\[
+3\mid5\mid(s-3)
+\]
+in the same pairwise-repartition component. The potential change is
+\[
+\Delta\Phi
+=
+3^2+5^2+(s-3)^2
+-
+\bigl(3^2+1^2+(s+1)^2\bigr)
+=
+32-8s<0.
+\]
+
+It remains that
+\[
+(q_s,z_i,q_0)
+\]
+is tight for both \(i=1,2\). Then \(z_1,z_2\) are parallel middle vertices between \(q_s\) and \(q_0\). The parallel-middle lemma gives a Hamiltonian four-support
+\[
+K=\{q_s,q_0,z_1,z_2\}.
+\]
+
+The two-set \(X-\{z_1,z_2\}\) is a tight path, and the remaining vertices of \(Q\) form the inherited tight path
+\[
+(q_1,\ldots,q_{s-1}).
+\]
+First repartition
+\[
+P\mid\{x\}
+\]
+as
+\[
+(X-\{z_1,z_2\})\mid\{z_1,z_2\},
+\]
+then repartition
+\[
+\{z_1,z_2\}\mid Q
+\]
+as
+\[
+K\mid(q_1,\ldots,q_{s-1}).
+\]
+This reaches profile
+\[
+2\mid4\mid(s-1)
+\]
+with
+\[
+\Delta\Phi
+=
+2^2+4^2+(s-1)^2
+-
+\bigl(3^2+1^2+(s+1)^2\bigr)
+=
+10-4s<0.
+\]
+
+Thus every three-vertex-side terminal state of the fixed-root transport has a strict \(\Phi\)-decrease in the same repartition component. \(\square\)
+
+Consequently the elaborate seven-set transport at the end of Lemma 4 is not needed merely to prove progress from the \(3\)-vs-long state. The two simultaneous end-reversal carriers already force strict descent by a two-step pairwise repartition.
+
+
 ## Metadata
 
 - ID: defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed
 - Kind: section
-- Version: 1
-- Math version: 1
+- Version: 2
+- Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 1: (untitled)
+- Subsection 1 — HOT, version 2: (untitled)
