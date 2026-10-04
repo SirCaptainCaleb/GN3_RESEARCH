@@ -52,4 +52,4 @@ These entries have received an independent extensibility review and were judged 
 
 These entries remain available for use, but their broad extensibility has not yet received the skeptical independent review required for promotion.
 
-Toolkit Limbo is empty.
+- [Endpoint rerouting at an omitted vertex](omitted_vertex_endpoint_rerouting.md) — lemma — If a vertex omitted from a two-path cover cannot be absorbed at either displayed end, boundary antisymmetry forces a four-vertex tight path crossing the two exposed ends and consuming one terminal edge.

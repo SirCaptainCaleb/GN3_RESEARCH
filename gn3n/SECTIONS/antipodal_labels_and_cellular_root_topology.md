@@ -10,7 +10,6 @@ Naive Tucker and rook-label arguments fail on the permutahedron graph, but their
 
 ## From rook labels to cellular roots
 
-
 ### Extreme-switch labels
 
 Return first to the unexactified permutation sphere, where the local topology is easiest to see. For a spanning order whose status word contains at least two runs, let
@@ -87,19 +86,9 @@ and their six chambers form a hexagon.
 
 These are the rank-two cells controlling all local ambiguity in the chamber graph.
 
-For the extreme-switch data, commuting squares are benign: the two changes are spatially separated and the resulting root labels can be joined without forcing an uncontrolled complementary diagonal.
+These rank-two cells describe the local relations of adjacent swaps. A proposed graph-level extension must check what the actual status labels do on these cells; their combinatorial shape alone does not prove that every square is harmless or that every exceptional hexagon produces a directed root cycle.
 
-Braid hexagons are the genuinely interesting cells. The same three local directions are reordered in all six possible ways, so the status data can wind. The exceptional cellular behavior is naturally encoded by a directed \(3\)-cycle in root space.
-
-Thus the progression
-\[
-\text{Tucker}
-\longrightarrow
-\text{failure on the graph}
-\longrightarrow
-\text{cellular squares and hexagons}
-\]
-is not historical ornament. It identifies the correct scale on which the antipodal labeling is coherent.
+The explicit barycentric extension in the next Section avoids this extension problem: it averages all chamber roots on every face and is defined on all nested face chains. Squares and hexagons remain useful for local combinatorial analysis, but no unproved assertion about their label patterns is needed to define the odd map.
 
 ### The extreme-switch root
 
@@ -145,17 +134,20 @@ The rest of Article VII is devoted to that gap:
 \text{exact combinatorial intersection}.
 \]
 
+## Further developments
+
+
 
 ## Metadata
 
 - ID: antipodal_labels_and_cellular_root_topology
 - Kind: section
-- Version: 3
-- Math version: 2
+- Version: 4
+- Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — crystallized, version 3: From rook labels to cellular roots
+- Subsection 1 — crystallized, version 4: From rook labels to cellular roots
 - Subsection 2 — HOT, version 1: Further developments

@@ -3,15 +3,15 @@
     "article_vii_antipodal_geodesics_and_topological_reformulations": [
       {
         "id": "spanning_orders_and_defect_helly",
-        "math_version": 2,
+        "math_version": 4,
         "position": 1,
-        "version": 3
+        "version": 5
       },
       {
         "id": "norine_gn3_dictionary_and_freudenthal_geometry",
-        "math_version": 2,
+        "math_version": 3,
         "position": 2,
-        "version": 3
+        "version": 5
       },
       {
         "id": "memory_lift_and_exact_antipodal_geodesics",
@@ -21,39 +21,39 @@
       },
       {
         "id": "auxiliary_exactification_and_complementary_supports",
-        "math_version": 2,
+        "math_version": 3,
         "position": 4,
-        "version": 3
+        "version": 4
       },
       {
         "id": "antipodal_labels_and_cellular_root_topology",
-        "math_version": 2,
+        "math_version": 3,
         "position": 5,
-        "version": 3
+        "version": 4
       },
       {
         "id": "convex_root_balance_and_bourgin_yang",
-        "math_version": 2,
+        "math_version": 5,
         "position": 6,
-        "version": 3
+        "version": 7
       },
       {
         "id": "topological_recurrence_to_local_gn3_structure",
-        "math_version": 2,
+        "math_version": 10,
         "position": 7,
-        "version": 3
+        "version": 15
       },
       {
         "id": "antipodal_reachability_and_neutral_corridor",
-        "math_version": 2,
+        "math_version": 3,
         "position": 8,
-        "version": 3
+        "version": 5
       },
       {
         "id": "article_vii_synthesis_and_exact_frontier",
-        "math_version": 2,
+        "math_version": 8,
         "position": 9,
-        "version": 3
+        "version": 13
       }
     ],
     "defect_lines_and_spanningorder_compression": [
@@ -430,7 +430,7 @@
     ]
   },
   "article_versions": {
-    "article_vii_antipodal_geodesics_and_topological_reformulations": 24,
+    "article_vii_antipodal_geodesics_and_topological_reformulations": 58,
     "defect_lines_and_spanningorder_compression": 58,
     "deletioncover_compatibility_and_global_obstruction_structure": 21,
     "endpoint_transport_and_small_support_gluing": 21,
@@ -438,8 +438,8 @@
     "quadratic_potential_and_pairwise_repartition": 4,
     "three_cover_repartitions_and_recurrence": 17
   },
-  "brainstorm_count": 3,
-  "generated_at": "2026-10-04T16:00:41.187322+00:00",
+  "brainstorm_count": 5,
+  "generated_at": "2026-10-04T19:40:32.793255+00:00",
   "mirror_format": 10,
   "schema": "gn3n",
   "section_versions": {
@@ -448,28 +448,28 @@
       "version": 3
     },
     "antipodal_labels_and_cellular_root_topology": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 3,
+      "version": 4
     },
     "antipodal_permutation_geometry": {
       "math_version": 3,
       "version": 9
     },
     "antipodal_reachability_and_neutral_corridor": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 3,
+      "version": 5
     },
     "antipodal_reachability_and_topological_frontier": {
       "math_version": 4,
       "version": 12
     },
     "article_vii_synthesis_and_exact_frontier": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 8,
+      "version": 13
     },
     "auxiliary_exactification_and_complementary_supports": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 3,
+      "version": 4
     },
     "auxiliary_vertex_exactification": {
       "math_version": 4,
@@ -484,8 +484,8 @@
       "version": 12
     },
     "convex_root_balance_and_bourgin_yang": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 5,
+      "version": 7
     },
     "cyclic_strengthenings_and_balanced_cut_obstructions": {
       "math_version": 3,
@@ -668,8 +668,8 @@
       "version": 3
     },
     "norine_gn3_dictionary_and_freudenthal_geometry": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 3,
+      "version": 5
     },
     "quadratic_potential_and_pairwise_repartition_a_block_count_identity": {
       "math_version": 1,
@@ -716,8 +716,8 @@
       "version": 1
     },
     "spanning_orders_and_defect_helly": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 4,
+      "version": 5
     },
     "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient": {
       "math_version": 1,
@@ -760,12 +760,12 @@
       "version": 1
     },
     "topological_recurrence_to_local_gn3_structure": {
-      "math_version": 2,
-      "version": 3
+      "math_version": 10,
+      "version": 15
     }
   },
-  "snapshot_revision": 800,
-  "toolkit_limbo_count": 0,
+  "snapshot_revision": 848,
+  "toolkit_limbo_count": 1,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {
     "guide": 10,

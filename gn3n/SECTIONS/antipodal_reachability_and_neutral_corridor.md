@@ -4,12 +4,11 @@
 
 ## Statement
 
-In the exactified memory lift, the theorem is equivalent to intersection of a red reachability region with its antipodal image; failure produces an antipodally invariant separating neutral corridor.
+In the auxiliary memory lift, a two-cover exists exactly when the color-1 reachability region intersects its antipodal image. Failure gives an antipodally invariant set meeting every increasing pole geodesic, with forced directed interface colors.
 
 ## Body
 
 ## Exact reachability and the neutral corridor
-
 
 ### Reachability in the exactified memory lift
 
@@ -68,7 +67,7 @@ A(N)=N.
 
 There is no increasing edge directly from \(R\) to \(A(R)\). Such an edge cannot have color \(1\), since its upper endpoint would then lie in \(R\). It cannot have color \(0\), since its lower endpoint would then have a color-\(0\) route through the upper endpoint to \(t\), placing it in \(A(R)\).
 
-Since the ranked graph connects the poles, every pole-to-pole path must therefore meet \(N\). In particular \(N\ne\varnothing\).
+Every increasing pole-to-pole path starts in \(R\), ends in \(A(R)\), and therefore must meet \(N\). Such paths exist from the permutation construction, so \(N\ne\varnothing\). This is separation for increasing paths; the argument does not exclude an undirected edge whose lower endpoint is in \(A(R)\) and upper endpoint in \(R\).
 
 The interface colors are forced:
 
@@ -77,7 +76,7 @@ The interface colors are forced:
 
 The antipode exchanges these two frontiers.
 
-Thus a counterexample is equivalent to the existence of an antipodally invariant separating corridor with prescribed opposite colors on its lower and upper boundary.
+Thus failure produces an antipodally invariant set separating every increasing pole geodesic, with prescribed colors at the two directed interfaces. Conversely, disjointness of these particular reachability regions is exactly failure of the directed one-change target.
 
 ### Convex balance and actual intersection are different zeros
 
@@ -121,9 +120,9 @@ Any theorem acting directly on the exactified memory lift must preserve three fe
 
 A theorem producing an arbitrary antipodal path may fail the first two conditions. A theorem on ordinary cube-edge colorings may fail the third.
 
-The candidate memory-two geodesic conjecture from the second Section is one clean way to package all three requirements. If it is proved, the corridor is impossible in every reversal-complement memory coloring, not merely in GN3.
+A universal directed one-change theorem for boundary tournaments would apply to the auxiliary extension. The undirected one-change conjecture permits either switch direction; it implies the grand conjecture by application to H itself and the cut-and-reverse construction. It does not automatically select the directed target in an individual extension.
 
-The alternative is to prove that the corridor cannot coexist with the additional local tournament structure of a boundary tournament.
+Alternatively, work only with the auxiliary extensions and exploit their special vertex together with the consistent triple rule. Antipodal symmetry of arbitrary chamber words alone does not encode that rule.
 
 ### How the older topology fits
 
@@ -143,16 +142,20 @@ or a combinatorial contradiction to the existence of \(N\).
 This is the exact topological frontier.
 
 
+## Further developments
+
+
+
 ## Metadata
 
 - ID: antipodal_reachability_and_neutral_corridor
 - Kind: section
-- Version: 3
-- Math version: 2
+- Version: 5
+- Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — crystallized, version 3: Exact reachability and the neutral corridor
+- Subsection 1 — crystallized, version 4: Exact reachability and the neutral corridor
 - Subsection 2 — HOT, version 1: Further developments

@@ -1,15 +1,14 @@
 # The Norine–GN3 dictionary and Freudenthal geometry
 
-**Summary:** GN3 and Norine-style cube problems share the same antipodal geodesic chamber space, but GN3 colors three successive directions and has extra local tournament structure.
+**Summary:** The cube geometry is shared, while the triple rule carries two steps of memory. The one-change candidate strengthens the conclusion on the same input class.
 
 ## Statement
 
-Monotone antipodal cube geodesics, permutations, and maximal Freudenthal simplices are the same objects; GN3 supplies a two-step-memory antipodal coloring with additional boundary-tournament rigidity.
+Monotone cube geodesics are permutations and Freudenthal simplices. A base-independent reversal-complement triple rule is exactly a boundary tournament; base-dependent memory is a genuinely larger class.
 
 ## Body
 
 ## Geodesic chambers, memory, and the stronger general route
-
 
 ### Cube geodesics, permutations, and Freudenthal simplices
 
@@ -94,52 +93,36 @@ S\cup\{u,v,w\},
 \]
 and is independent of the base set \(S\). This translation invariance is one of the strongest formal distinctions from an arbitrary cube coloring.
 
-### The stronger geodesic route is legitimate
+### The stronger conclusion and the class of inputs
 
-There is a natural stronger problem suggested by the Norine analogy.
-
-**Candidate memory-two geodesic conjecture.** Let \(V\) be finite and let
+A function on ordered triples of distinct labels satisfying
 \[
-h:\{(u,v,w)\in V^3:u,v,w\text{ distinct}\}\to\{0,1\}
+h(w,v,u)=1-h(u,v,w)
 \]
-satisfy
+is exactly a boundary \(3\)-tournament: declare \((u,v,w)\) tight when \(h(u,v,w)=1\). Conversely every boundary tournament gives such a function. The local tournament at a middle vertex \(v\) has arc \(u\to w\) precisely when \(h(u,v,w)=1\). This structure follows from the displayed identity; it is not an additional hypothesis.
+
+**Candidate one-change conjecture.** Every boundary \(3\)-tournament admits a spanning order whose consecutive-triple word changes color at most once.
+
+This strengthens the desired conclusion on the same class of inputs. It is not a generalization to a larger class of triple colorings. The candidate implies a two-cover directly: split the order between its two monochromatic portions, then reverse any portion with non-tight triples. The memory lift below makes the candidate a precise geodesic assertion.
+
+There are also two directed versions, requiring respectively \(1^a0^b\) and \(0^a1^b\). Reversal of the vertex order reverses and complements the word, so it preserves each directed type. One cannot change the direction of the switch merely by reversing the order. Auxiliary exactification uses specifically the first type.
+
+### A genuinely larger memory class
+
+To allow more general local data, one may let the color depend on the previously used set:
 \[
-h(w,v,u)=1-h(u,v,w).
+g(S;u,v,w)\in\{0,1\},\qquad S\subseteq V\setminus\{u,v,w\},
 \]
-Must there exist a permutation
+with antipodal identity
 \[
-(v_1,\ldots,v_n)
+g(V\setminus(S\cup\{u,v,w\});w,v,u)
+=1-g(S;u,v,w).
 \]
-whose word
-\[
-h(v_1,v_2,v_3),\ldots,h(v_{n-2},v_{n-1},v_n)
-\]
-has at most one color change?
+A permutation reads these colors with \(S\) equal to the prefix preceding its three displayed directions. Boundary tournaments are precisely the subclass independent of \(S\). An arbitrary reversal-complement assignment of words to whole permutations is broader still; it need not satisfy any consistency between permutations sharing a triple.
 
-No assertion is made here that this conjecture is true. It is stated because it is the precise stronger theorem that the current topology repeatedly threatens to prove.
+Thus the useful distinction is between antipodal symmetry alone and a consistent, base-independent rule on ordered triples. Local reversals, endpoint transport, and repartitions exploit that consistency. They do not distinguish boundary tournaments from the function \(h\) already displayed above.
 
-If it is true, that is not an undesirable outcome. It would be a genuine generalization of the strengthened Norine-style demand that the antipodal path be geodesic, hence use every coordinate exactly once. Boundary tournaments form a special subclass of these reversal-complement memory colorings, so the conjecture would immediately imply the one-change statement for \(H\). After the auxiliary exactification in the fourth Section, the same general theorem would imply the original two-cover conjecture itself.
-
-Accordingly there are two legitimate research programs:
-
-1. exploit GN3-specific structure and prove only what is needed for boundary tournaments;
-2. formulate and prove a more general antipodal memory-geodesic theorem, then reduce GN3 to it.
-
-The second route should not be discouraged merely because it is stronger. What must be avoided is only an **implicit** generalization in which the stronger theorem is never stated and the reduction to GN3 is never checked.
-
-### What GN3 has that the general memory problem need not have
-
-The boundary-tournament specialization supplies much more than reversal complementarity. For every unordered triple, fixing the middle vertex gives a local tournament on the other two vertices. Consequently a failed displayed triple has a specific reversed tight triple. Repeated failures generate:
-
-- endpoint reversals;
-- common exterior carriers;
-- parallel-middle configurations;
-- Hamiltonian four- and five-supports;
-- strict repartition descents.
-
-Those mechanisms are developed in Articles III–VI. They are exactly the additional leverage available if the general memory-geodesic conjecture proves too strong.
-
-This distinction should guide the topology. A purely antipodal argument using only the Coxeter sphere and reversal-complement symmetry may naturally prove a theorem beyond GN3. A proof that invokes local tournaments or the forced reversal of a failed triple has crossed back into genuinely GN3-specific territory.
+A theorem for the larger class would require its own statement and proof, including the prescribed poles and the desired switch direction. No such theorem is asserted here.
 
 ### A cochain viewpoint
 
@@ -157,23 +140,23 @@ This language is not needed for the proofs below, but it deserves a numbered pla
 
 ### Working principle
 
-The topology of the chamber space is shared with Norine-style cube problems. The local algebra is not. Article VII will keep both routes open.
+The chamber geometry is shared with cube-geodesic problems. The local data differ. We may seek the stronger one-change conclusion for boundary tournaments, or work only in the auxiliary extensions for which directed one-change existence is equivalent to a two-cover. A broader theorem for base-dependent memory is a separate possible generalization. These distinctions concern respectively the conclusion, the input subclass, and the input class.
 
-Whenever an argument uses only the shared chamber topology, we will ask whether it proves the candidate memory-two geodesic conjecture and, if so, state that stronger implication explicitly. Whenever it uses boundary antisymmetry beyond mere reversal complementarity, we will identify the GN3-specific mechanism that enters.
 
-This separation lets a future proof pivot honestly in either direction.
+## Further developments
+
 
 
 ## Metadata
 
 - ID: norine_gn3_dictionary_and_freudenthal_geometry
 - Kind: section
-- Version: 3
-- Math version: 2
+- Version: 5
+- Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — crystallized, version 3: Geodesic chambers, memory, and the stronger general route
+- Subsection 1 — crystallized, version 4: Geodesic chambers, memory, and the stronger general route
 - Subsection 2 — HOT, version 1: Further developments

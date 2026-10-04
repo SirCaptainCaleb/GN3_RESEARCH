@@ -10,7 +10,6 @@ Adding one special vertex makes the directed one-change geodesic property exactl
 
 ## Exactification before support-family development
 
-
 ### One-change orders and opposite-edge supports
 
 Before exactifying the theorem, it is useful to record the support meaning of a one-change order.
@@ -49,7 +48,15 @@ then
 \]
 has at most one change. Conversely splitting a one-change order and reversing the non-tight side gives such a common-terminal pair.
 
-These formulations describe the stronger one-change problem. We now exactify the original theorem before developing them further.
+These formulations concern the directed word \(1^a0^b\). The other direction uses opposite initial edges or a common initial vertex. Either common-terminal path may be a singleton.
+
+One useful quantitative consequence is retained from [[antipodal_geodesics_and_complementary_path_supports]]: a one-change order on \(N\geq2\) vertices yields two tight paths sharing an edge, so their orders sum to \(N+2\). Hence at least one has
+\[
+\left\lceil\frac{N+2}{2}\right\rceil
+\]
+vertices. This helps explain why the one-change target on the original vertices may be stronger than a two-cover.
+
+We now exactify the original theorem before developing these support formulations further.
 
 ### Auxiliary-vertex exactification
 
@@ -79,7 +86,7 @@ H^+\text{ has a spanning order of directed form }1^a0^b.
 }
 \]
 
-More precisely, directed one-change orders of \(H^+\) occur in reversal pairs and map two-to-one onto two-covers of \(H\).
+Assume \(V(H)\ne\varnothing\). More precisely, directed one-change orders of \(H^+\) occur in reversal pairs and map two-to-one onto two-covers of \(H\). A cover is an unordered collection of individually ordered paths.
 
 **Proof.** Suppose
 \[
@@ -100,7 +107,7 @@ the two orders
 \qquad
 (Q,r,P^{\rm rev})
 \]
-have directed form \(1^a0^b\). The possible triple with \(r\) in the middle may have either value without creating a second switch. \(\square\)
+have directed form \(1^a0^b\). The possible triple with \(r\) in the middle may have either value without creating a second switch. For a one-path cover \(P\), the two orders are \((P,r)\) and \((r,P^{\rm rev})\); when deleting \(r\), discard an empty side. The two side orders are recoverable from the spanning order, proving the two-to-one assertion. \(\square\)
 
 This theorem is the conceptual pivot of the article. From here onward the geodesic and support formulations model the **actual conjecture**, not merely a stronger surrogate.
 
@@ -183,9 +190,22 @@ is tight. If the first is tight, replace the pair by
 \qquad
 (B,w).
 \]
-The common endpoint moves from \(v\) to \(w\). Applying the same rule again returns to \(v\). The other orientation is symmetric.
+The common endpoint moves from \(v\) to \(w\). If \(B\) is nonempty with last vertex \(z\), tightness of the old second path gives \((z,w,v)\) tight, so the same rule returns to \(v\). The other orientation is symmetric.
+
+If one path is the singleton \((v)\), write the other as \((A,u,v)\) and replace the pair by \((A,u)\) and \((v,u)\). These are tight, and the preceding rule returns to the old pair when \(A\) is nonempty; when \(A\) is empty the singleton rule itself returns. Thus the involution is defined on every common-terminal pair whose union has at least two vertices.
 
 The involution explains why common-terminal states naturally occur in pairs. In \(H^+\), exactly one member of such a pair has common endpoint \(r\), which is another form of the exactification.
+
+### The common-terminal counting identity
+
+One useful identity from the earlier positive enumeration has a direct combinatorial proof. For a boundary tournament \(J\) on at least two vertices, let \(A(J)\) count spanning orders of directed form \(1^a0^b\), and let \(h(J)\) count ordered tight Hamilton paths. Let \(b(J)\) count a choice of vertex \(v\) and an unordered pair of nonempty tight paths partitioning \(V(J)\setminus\{v\}\), such that appending \(v\) to either path remains tight. Then
+\[
+\boxed{A(J)=h(J)+b(J).}
+\]
+
+**Proof.** Common-terminal pairs with a singleton member correspond to the \(h(J)\) Hamilton paths; pairs with both members nontrivial correspond to the \(b(J)\) certificates. The endpoint-moving involution groups all these pairs into two-element orbits, one for each unordered opposite-terminal-edge pair. Such an edge pair also gives exactly two directed one-change orders, exchanged by reversal. Conversely a directed word has a uniquely specified shared edge: if it contains \(a\) tight triples, use its vertices in positions \(a+1,a+2\). Thus both sides count twice the number of opposite-terminal-edge pairs. \(\square\)
+
+This identity retains the earlier square-zero calculation's positive combinatorial content without requiring its transfer matrices. It concerns the directed one-change target on \(J\); it does not assert that an arbitrary two-cover of \(J\) gives such an order.
 
 ### Positive factorization
 
@@ -236,16 +256,20 @@ The first half of Article VII is therefore exact:
 The second half asks what antipodal topology can force inside these exact models.
 
 
+## Further developments
+
+
+
 ## Metadata
 
 - ID: auxiliary_exactification_and_complementary_supports
 - Kind: section
-- Version: 3
-- Math version: 2
+- Version: 4
+- Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — crystallized, version 3: Exactification before support-family development
+- Subsection 1 — crystallized, version 4: Exactification before support-family development
 - Subsection 2 — HOT, version 1: Further developments
