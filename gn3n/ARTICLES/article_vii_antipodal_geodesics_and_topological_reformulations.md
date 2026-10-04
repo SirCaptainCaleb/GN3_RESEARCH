@@ -503,6 +503,129 @@ again contradicting
 
 Hence a minimum exact hole is a synchronized family of common terminal-edge reversers that is simultaneously **unabsorbable in every nonempty subfamily and under every split between the two complementary paths**. This is a global structural constraint on one fixed graph, not a minimum-counterexample or disturbance hypothesis.
 
+### Exact classification of direct side flips at deletion distance one
+
+Assume
+\[
+\kappa_2(H)=1.
+\]
+Let \(\pi'\) be obtained from \(\pi\) by one adjacent transposition. Suppose an actual vertex \(v\) changes directly from the canonical left path to the canonical right path:
+\[
+v\in P_\pi,\qquad v\in Q_{\pi'}.
+\]
+
+Write \(t\) for the position of \(v\) in \(\pi\), and let
+\[
+p,q,\delta
+\quad\text{and}\quad
+p',q',\delta'
+\]
+be the exact inversion data of \(\pi,\pi'\).
+
+**Proposition (rigid direct side flip).**
+Then \(v\) moves one place to the right, and necessarily
+\[
+p=t-1,\qquad q=t+1,\qquad \delta=1,
+\]
+while
+\[
+p'=t-2,\qquad q'=t,\qquad \delta'=1.
+\]
+If \(w\) is the vertex swapped with \(v\), then \(w\) is the unique canonical hole vertex in **both** chambers.
+
+The reverse transition \(Q\to P\) is symmetric.
+
+**Proof.**
+Since \(v\in P_\pi\),
+\[
+t\le p+1.
+\]
+Because every order has deficiency at least one,
+\[
+q\ge p+2\ge t+1.
+\]
+
+Let \(t'\) be the position of \(v\) in \(\pi'\). Since \(v\in Q_{\pi'}\),
+\[
+t'\ge q'+1,
+\]
+and
+\[
+q'\ge p'+2.
+\]
+Hence
+\[
+p'\le q'-2\le t'-3.
+\]
+Because one adjacent transposition moves \(v\) by at most one place,
+\[
+t'\le t+1,
+\]
+so
+\[
+p'\le t-2.
+\]
+Therefore
+\[
+q-p'\ge3.
+\]
+
+A direct \(P\to Q\) transition forces both the first-zero coordinate and the last-one coordinate to move left. An adjacent transposition changes only the four consecutive status positions whose windows meet the swapped pair; these positions have diameter at most three. Thus the new first zero \(p'\) and the old last one \(q\) both lie in that affected set, so
+\[
+q-p'\le3.
+\]
+Hence equality holds throughout:
+\[
+q-p'=3.
+\]
+
+The preceding inequalities must all be equalities. Thus
+\[
+q=t+1,\qquad p'=t-2,\qquad t'=t+1.
+\]
+Now
+\[
+q\ge p+2,\qquad p\ge t-1
+\]
+forces
+\[
+p=t-1,
+\]
+and similarly
+\[
+q'\ge p'+2,\qquad q'\le t'-1=t
+\]
+forces
+\[
+q'=t.
+\]
+Therefore
+\[
+\delta=q-p-1=1,\qquad
+\delta'=q'-p'-1=1.
+\]
+
+Let \(w\) be the vertex adjacent to \(v\) that is swapped past it. In \(\pi\), the unique hole position is
+\[
+p+2=t+1,
+\]
+which is occupied by \(w\). In \(\pi'\), the unique hole position is
+\[
+p'+2=t,
+\]
+again occupied by \(w\). Thus the hole label is conserved across the direct side flip. \(\square\)
+
+Consequently, when \(\kappa_2(H)=1\), all direct side changes in the chamber graph are confined to deficiency-one edges and carry a canonical conserved decoration:
+\[
+\boxed{
+P\leftrightarrow Q
+\text{ across one swap}
+\Longrightarrow
+\text{the same vertex is the unique hole on both endpoints}.
+}
+\]
+This replaces the \(k\ge2\) no-direct-side-flip rule by an exact description of the only possible exception.
+
 ---
 
 ## Section — The Norine–GN3 dictionary and Freudenthal geometry
@@ -2681,6 +2804,353 @@ Equality pins the first and last junction positions. Therefore every x in X reve
 
 For each x in X, the middle triple on the two exposed endpoints has exactly one tight orientation. Combining it with the two reversal triples gives a Hamiltonian four-support through x. Removing that four-support and then deleting X without x leaves prefixes of P and Q as a two-cover. Hence the two-cover deletion distance of the complement drops by at least one.
 
+### Bounded central blocks and short cycles in recurrent exact-root faces
+
+### Exact roots and the hypotheses
+
+For a spanning order \(\pi\) of a boundary \(3\)-tournament \(H\) on \(n\) vertices, write \(m=n-2\), let \(p(\pi)\) be the first non-tight status position, and let \(c(\pi)=m+1-q(\pi)\), where \(q(\pi)\) is the last tight status position. Thus \(c(\pi)=p(\pi^{\mathrm{rev}})\). The exact root is \(e_p-e_c\), and the exact deficiency is
+\[
+\delta(\pi)=m-p(\pi)-c(\pi).
+\]
+These conventions and the two-cover criterion are established in [[spanning_orders_and_defect_helly]].
+
+Let \(F\) be an ordered-partition face of the permutahedron. Assume:
+
+1. \(\delta(\pi)>0\) for every chamber \(\pi\) of \(F\);
+2. every coordinate occurring as a tail of an exact root on \(F\) also occurs as a head, and conversely;
+3. \(p(\pi)\ne c(\pi)\) for every chamber of \(F\).
+
+Hypothesis 2 is weaker than positive root balance. In particular, the positive carrier theorem of [[convex_root_balance_and_bourgin_yang]] supplies it. No minimum-counterexample hypothesis is used.
+
+**Theorem (bounded central block).** Put
+\[
+s=\min_{\pi\in\mathcal V(F)}\min\{p(\pi),c(\pi)\},
+\qquad L=m-2s.
+\]
+There is a single face block \(B\), with \(b=|B|\le7\), such that the numbers \(\ell,r\) of positions before and after \(B\) satisfy
+\[
+\ell,r\in\{s,s+1\}.
+\]
+Every other face block has order at most two. More precisely:
+\[
+\begin{array}{c|c|c}
+(\ell,r)& b\text{ in terms of }L&\text{upper bound on }b\\ \hline
+(s,s)&L+2&7\\
+(s,s+1)\text{ or }(s+1,s)&L+1&5\\
+(s+1,s+1)&L&7.
+\end{array}
+\]
+In particular \(2\le L\le7\), and every exact-root coordinate on \(F\) lies in
+\[
+\{s,s+1,\ldots,s+L-1\}\subseteq\{s,\ldots,s+6\}.
+\]
+
+### Locating the central block
+
+Coordinate recurrence gives both a chamber with \(p=s\) and a chamber with \(c=s\). Since no root is zero, a chamber with \(p=s\) has \(c\ge s+1\). Its positive deficiency gives
+\[
+m\ge2s+2,
+\]
+so \(L\ge2\).
+
+The event \(p=s\) is determined by positions \(1,\ldots,s+2\); the event \(c=s\) is determined by positions \(n-s-1,\ldots,n\). If a block boundary followed a position
+\[
+s+2\le j\le n-s-2,
+\]
+the independent block orders from the two witnesses could be combined, giving \(p=c=s\). Consequently one block \(B\) contains every position
+\[
+s+2,\ldots,n-s-1.
+\]
+Thus \(\ell,r\le s+1\).
+
+Every chamber has \(p,c\ge s\). Hence all status positions \(1,\ldots,s-1\) are tight in every chamber, and all the corresponding statuses read inward from the right end are also tight in every chamber. If \(\ell\le s-2\), then \(B\) contains the three positions \(s-1,s,s+1\). Swapping the first and third vertices of this window stays in \(F\) and reverses its status, contradicting uniform tightness at \(s-1\). Therefore
+\[
+s-1\le\ell,r\le s+1.
+\]
+
+Set
+\[
+\alpha=s+2-\ell,\qquad\beta=s+2-r.
+\]
+These numbers belong to \(\{1,2,3\}\). A witness for \(p=s\) uses exactly the first \(\alpha\) vertices of \(B\), together with some orders of the blocks before \(B\). A witness for \(c=s\) uses exactly the first \(\beta\) vertices of \(B\) read inward from the right, together with some orders of the blocks after \(B\). In particular
+\[
+b=L+\alpha+\beta-2.
+\]
+
+Let \(\mathcal L,\mathcal R\) be the families of supports of these ordered witness tuples, allowing all outside block orders on the relevant side. Both families are nonempty. Every member of \(\mathcal L\) meets every member of \(\mathcal R\): disjoint witness tuples can be placed at opposite ends of \(B\), with their own left and right outside orders, and the remaining positions filled arbitrarily. This would give \(p=c=s\).
+
+The independent choices of outside orders are legitimate here because the two determining windows are disjoint and involve disjoint collections of outside blocks. We are not combining two arbitrary witnesses that constrain the same outside block.
+
+If \(\alpha=3\), the determining status at \(s\) is wholly inside \(B\). Every three-element subset of \(B\) therefore supports a left witness: one of the two reversed orders, for any fixed middle vertex, is non-tight. But a right witness uses \(\beta\) vertices, and
+\[
+b-\beta=L+1\ge3.
+\]
+A left witness can be chosen disjoint from it, a contradiction. The case \(\beta=3\) is symmetric. Thus \(\alpha,\beta\in\{1,2\}\), which proves \(\ell,r\in\{s,s+1\}\).
+
+A block before \(B\) with three consecutive positions would contain a status window starting at most at \(\ell-2\le s-1\), where tightness is uniform. Boundary reversal rules this out. The same argument read inward from the right treats every block after \(B\). Thus all exterior blocks have order at most two.
+
+### Bounding the central block by disjoint witnesses
+
+We use inward orders on both sides: on the right these are the orders in \(\pi^{\mathrm{rev}}\). A first non-tight inward status on the right determines \(c\), exactly as one on the left determines \(p\). This makes the following arguments symmetric.
+
+**Case \(\alpha=\beta=2\).** The families \(\mathcal L,\mathcal R\) consist of two-element sets and are cross-intersecting. Fix \(U\in\mathcal L\) and \(T\in\mathcal R\). Suppose \(b\ge8\). Choose a three-set \(C\subseteq B\setminus T\), and then a three-set
+\[
+D\subseteq B\setminus(U\cup C).
+\]
+The second choice is possible because \(|U\cup C|\le5\).
+
+Place \(C\) first in \(B\), in an inward order with its internal triple non-tight. Its first pair avoids \(T\), so that pair is not a member of \(\mathcal L\), whatever left outside orders are used. Thus the status at \(s\) is tight, and the internal status at \(s+1\) is non-tight: \(p=s+1\). Place \(D\) at the right end, likewise with its inward internal triple non-tight. Its first inward pair avoids \(U\), so \(c=s+1\). The two placements are disjoint, producing a zero root. Hence \(b\le7\).
+
+**Case \(\alpha=1,\beta=2\).** Let \(A\subseteq B\) be the nonempty set of singleton left witnesses and choose \(a\in A\). Every member of \(\mathcal R\) contains \(a\).
+
+Suppose \(b\ge6\). Any three-set in \(B\setminus\{a\}\), placed inward at the right end with its internal triple non-tight, gives \(c=s+1\): its first pair cannot belong to \(\mathcal R\). Coordinate recurrence therefore supplies a chamber with \(p=s+1\).
+
+Retain the first two \(B\)-vertices, in their order, and the left outside orders of this witness; denote their support by \(U\). They determine \(p=s+1\), because \(\ell=s+1\). Choose a three-set in
+\[
+B\setminus(U\cup\{a\}),
+\]
+which is possible for \(b\ge6\). Place it inward at the right end with non-tight internal triple. This again gives \(c=s+1\), independently of the left witness, a contradiction. Thus \(b\le5\). The case \(\alpha=2,\beta=1\) is symmetric.
+
+**Case \(\alpha=\beta=1\).** Cross-intersection of the two nonempty singleton families implies that both are \(\{\{z\}\}\) for one vertex \(z\in B\). A witness for \(p=s\) must therefore start \(B\) with \(z\), and a witness for \(c=s\) must end \(B\) with \(z\). We do not assert that every choice of outside orders realizes either witness. Whenever the first \(B\)-vertex is different from \(z\), the status at \(s\) is tight for every outside order.
+
+Define \(\mathcal L'\) to consist of supports of ordered pairs that occur as the first two \(B\)-vertices in some chamber with \(p=s+1\). Define \(\mathcal R'\) analogously for \(c=s+1\). Coordinate recurrence implies that either both families are empty or both are nonempty.
+
+If both are empty and \(b\ge6\), choose disjoint three-sets at the two ends of \(B\). Order each inward so that its first vertex is not \(z\) and its internal triple is non-tight. This is always possible: if the set contains \(z\), put \(z\) in the middle and choose the appropriate order of the other two vertices. The statuses at \(s\) are tight; the statuses at \(s+1\) are tight because the pair families are empty; and the internal statuses at \(s+2\) are non-tight. Hence \(p=c=s+2\), a contradiction.
+
+If both families are nonempty, they are cross-intersecting: disjoint ordered witnesses for \(p=c=s+1\) could again be combined with independent outside orders. Fix \(U\in\mathcal L'\) and \(T\in\mathcal R'\). If \(b\ge8\), choose disjoint three-sets
+\[
+C\subseteq B\setminus T,\qquad D\subseteq B\setminus U
+\]
+as in the first case. Order them inward with first vertex different from \(z\) and internal triple non-tight. The statuses at \(s\) are tight. Their first pairs avoid respectively \(T,U\), so cross-intersection excludes membership in \(\mathcal L',\mathcal R'\); the statuses at \(s+1\) are therefore tight for every outside order. Consequently \(p=c=s+2\), again a contradiction. Thus \(b\le7\).
+
+This proves all three bounds in the table. Finally
+\[
+p+c\le m-1=2s+L-1,\qquad p,c\ge s
+\]
+gives \(p,c\le s+L-1\), completing the theorem.
+
+### A finite reduction of the nonzero-cycle branch
+
+Translate every coordinate by \(-s\). The exact-root digraph then uses at most seven coordinates, and every simple directed cycle has length at most seven.
+
+There is also a bounded description in terms of actual vertices. Keep \(B\) and the complete outside blocks meeting the last two positions before \(B\) or the first two positions after it. Because exterior blocks have order at most two, at most three vertices are retained on either side. Thus at most
+\[
+7+3+3=13
+\]
+actual vertices affect the varying exact-root labels.
+
+To verify this, the uniform statuses before \(s\) make those earlier tests irrelevant. The first potentially non-tight window on either side begins no earlier than two positions before \(B\). Moreover
+\[
+p\le n-s-3\le n-r-2,
+\]
+so the first non-tight window on the left ends within \(B\); the symmetric statement holds on the right. Hence all determining triples use the retained vertices. Orders of all other blocks may be fixed arbitrarily without changing the attainable root labels. Coordinate recurrence is preserved.
+
+This is a uniform finite reduction of the nonzero exact-root face geometry. It does not identify the retained induced tournament as a counterexample, and it does not reduce the grand conjecture to tournaments of order thirteen.
+
+If \(k=\kappa_2(H)>0\), a chamber with \(p=s\) satisfies
+\[
+k\le\delta(\pi)\le L-1\le6.
+\]
+Consequently a positive exact-root carrier in a tournament with \(k\ge7\) must contain a zero-root chamber.
+
+### The remaining conversion
+
+For a positively balanced exact-root face whose chambers all have positive deficiency, the proved alternative is now:
+\[
+\text{a chamber with }p=c
+\quad\text{or}\quad
+\text{the bounded central-block configuration above}.
+\]
+A zero root gives equally long canonical tight paths but may leave a nonempty hole. The bounded alternative likewise gives no spanning cover by itself. Neither branch can therefore be declared closed as a proof of the grand conjecture.
+
+The new reduction uses the full ordered-partition freedom and coordinate recurrence. It repairs the earlier unjustified identification of the central block with its guaranteed corridor: their sizes need not be equal, but the exact determining windows restrict the surplus to zero, one, or two, and the case analysis bounds the entire block.
+
+
+### Sharpening the central block bound to four
+
+The preceding bound can be strengthened by using two-cover certificates as well as zero-root certificates. Keep its notation. Read the right side inward, so that its first non-tight coordinate is \(c\).
+
+**Lemma (disjoint nonedges on five vertices).** Let \(E,F\) be nonempty families of two-element subsets of a five-element set, and suppose every member of \(E\) meets every member of \(F\). Then there are disjoint pairs \(e\notin E\), \(f\notin F\).
+
+**Proof.** If not, for every two disjoint pairs \(e,f\), exactly one of \(e\in E\) and \(f\in F\) holds: both are excluded by cross-intersection, and neither is excluded by the supposition. Any two pairs sharing a vertex have a common disjoint pair, namely the remaining two vertices. Consequently membership in \(E\) is the same for any two pairs sharing a vertex. The line graph of the complete graph is connected, so \(E\) is either empty or all pairs. The first contradicts its nonemptiness, and the second forces \(F\) to be empty. \(\square\)
+
+**Lemma (two triples on six vertices).** Let \(E,F\) be nonempty cross-intersecting families of pairs on a six-element set \(W\). Either there is a partition \(W=C\sqcup D\), with \(|C|=|D|=3\), such that
+\[
+|E\cap\binom C2|\le1,\qquad |F\cap\binom D2|\le1,
+\]
+or \(E\) and \(F\) are both the full star at the same vertex.
+
+**Proof.** By symmetry, a family with at most two pairs may be taken to be \(F\). If \(F\) is one pair, put that pair in \(D\); its complement \(C\) contains no \(E\)-pair. If \(F\) consists of two disjoint pairs, every \(E\)-pair lies in their four-element union. Put the two remaining vertices and one vertex of that union in \(C\). If \(F=\{\{z,a\},\{z,b\}\}\), every \(E\)-pair either contains \(z\) or equals \(\{a,b\}\). Put \(z,a\) and one vertex outside \(\{z,a,b\}\) in \(D\). In each case the required inequalities follow.
+
+Assume both families have at least three pairs. If one contains two disjoint pairs, the other is supported on their four-element union and is a subgraph of \(K_{2,2}\). With at least three edges it also contains disjoint pairs, so both families are supported on the same four vertices. Put two of those vertices and one exterior vertex in each triple.
+
+Otherwise both families are pairwise intersecting. A pairwise-intersecting graph is a star or a triangle. If one is a triangle, the other must be that triangle, and splitting its vertices one versus two suffices. If both are stars, cross-intersection and their having at least three edges force a common center. Unless both stars are full, put the center and a missing neighbor in the triple assigned to a nonfull star, together with any other vertex. That triple contains at most one edge of its assigned star, while the other triple avoids the center. \(\square\)
+
+Whenever a triple contains at most one forbidden pair, its two remaining pair edges have a common vertex. Use that vertex as the middle. Both reverse orders then have permitted first pairs, and boundary antisymmetry lets us choose either internal status.
+
+**Theorem (four central vertices and the remaining cases).** Under the hypotheses of the bounded-central-block theorem, only the following cases can occur:
+\[
+\begin{array}{c|c|c}
+(\ell,r)&|B|&L\\ \hline
+(s+1,s+1)&2\text{ or }4&2\text{ or }4\\
+(s+1,s)\text{ or }(s,s+1)&3&2.
+\end{array}
+\]
+Thus the complete central block has at most four vertices. All varying root coordinates lie in \(\{s,s+1,s+2,s+3\}\), and at most ten actual vertices determine the root labels.
+
+**Proof.** We give the exclusions in decreasing block size.
+
+For \(\alpha=\beta=2\), use the pair families \(E=\mathcal L,F=\mathcal R\) at coordinate \(s\). For \(\alpha=\beta=1\), use \(E=\mathcal L',F=\mathcal R'\) at coordinate \(s+1\), with the distinguished singleton witness \(z\) from the preceding proof. In the latter case the two pair families are simultaneously empty or nonempty by coordinate recurrence. In either case, disjoint witnesses would give a zero root, so nonempty pair families are cross-intersecting.
+
+**Seven vertices.** If the pair families are empty, two disjoint triples with non-tight internal status give a zero root, arranging \(z\) in the middle of its triple when necessary. Otherwise choose \(U\in E,T\in F\). If \(U\ne T\), they intersect in one vertex. There are disjoint triples \(C\subseteq B\setminus T\), \(D\subseteq B\setminus U\): put the unique vertex of \(U\setminus T\) in \(C\), the unique vertex of \(T\setminus U\) in \(D\), and split the four vertices outside \(U\cup T\) two and two. Their first pairs cannot be forbidden. Choose non-tight internal statuses to obtain \(p=c=s+1\) when \(\alpha=\beta=2\), or \(p=c=s+2\) when \(\alpha=\beta=1\). In the latter case make the first vertex different from \(z\), placing \(z\) in the middle if present.
+
+If no unequal \(U,T\) exist, both families consist of the same single pair. Choose disjoint triples which separate the two vertices of that pair; each triple then has no forbidden pair. The same construction applies. Thus seven vertices are impossible.
+
+**Six vertices.** Empty pair families again immediately give a zero root. Otherwise apply the six-vertex lemma. For \(\alpha=\beta=2\), a partition into two triples containing at most one forbidden pair each permits both internal statuses to be chosen non-tight; this gives \(p=c=s+1\).
+
+For \(\alpha=\beta=1\), choose the permitted middle in each triple as explained after the lemma. In the triple containing \(z\), choose one of the two reverse orders whose first vertex is not \(z\). Choose the internal status of the other triple to match it. The earlier boundary tests on both sides are tight. If the matched status is non-tight, \(p=c=s+2\). If it is tight, append the two triples to the two inward outside paths. This is a spanning two-cover.
+
+It remains to handle the common full star, at a vertex \(w\). For \(\alpha=\beta=2\), put \(w\) last in one inward triple. Its first pair avoids \(w\), and so do all pairs in the other triple. Match the internal status of the other triple to that of the first: a non-tight match gives a zero root, and a tight match gives a spanning two-cover.
+
+For \(\alpha=\beta=1\), if \(w=z\), again put \(w\) last. If \(w\ne z\), use \((x,z,w)\) as the first inward triple, for any remaining vertex \(x\). Its first vertex is different from \(z\) and its first pair avoids \(w\). The other triple contains neither \(z\) nor \(w\), so both its reverse orders satisfy the boundary tests. Match its internal status to the first triple. The same zero-root or two-cover alternative follows. Thus six vertices are impossible.
+
+**Five vertices, equal outside lengths.** Apply the five-vertex lemma to \(E,F\); if both are empty, simply choose any disjoint pairs. Put the resulting permitted pairs at the two inward ends of \(B\), filling the middle position arbitrarily.
+
+If \(\alpha=\beta=2\), this gives \(p,c\ge s+1\). Here \(L=3\), so positive deficiency forces \(p+c\le2s+2\), and therefore \(p=c=s+1\).
+
+If \(\alpha=\beta=1\), order each pair with first vertex different from \(z\). The tests at \(s\) and \(s+1\) are tight, giving \(p,c\ge s+2\). Here \(L=5\), and positive deficiency forces \(p+c\le2s+4\), so \(p=c=s+2\). Both conclusions contradict the absence of a zero root.
+
+**Five vertices, unequal outside lengths.** By symmetry take \(\alpha=1,\beta=2\). Let \(A\) be the singleton left witness set. Every right witness pair contains all of \(A\), so \(1\le|A|\le2\).
+
+Partition \(B=U\sqcup D\), with \(|U|=2,|D|=3\), so that \(U\) contains a vertex outside \(A\) and \(D\) contains no right witness pair. If \(A=\{z\}\), choose \(D\) avoiding \(z\). If \(A=\{z,w\}\), the right pair family is just \(\{\{z,w\}\}\); choose \(D\) with one of \(z,w\) and two of the three remaining vertices.
+
+Read \(U\) from the left with its first vertex outside \(A\), so the status at \(s\) is tight. Fix any left outside orders and denote by \(\eta\) the status at \(s+1\). At the right, every order of \(D\) passes the boundary test at \(s\); choose its internal status to equal \(\eta\). If \(\eta=0\), the roots have \(p=c=s+1\). If \(\eta=1\), the outside paths extended by \(U,D\) form a spanning two-cover. Thus this case is impossible.
+
+**Four vertices, unequal outside lengths.** Again take \(\alpha=1,\beta=2\). If \(A=\{z\}\), put two vertices other than \(z\) at the inward right end; put the remaining vertex other than \(z\) first at the left. If \(A=\{z,w\}\), put one vertex of \(A\) and one vertex outside \(A\) at the right, and start the remaining left pair with its vertex outside \(A\). In either case the first test on each side is tight, so \(p,c\ge s+1\). Since \(L=3\), positive deficiency forces \(p=c=s+1\), a contradiction.
+
+**Four vertices with \(\alpha=\beta=2\).** Let \(E,F\) be the two boundary pair families. Any tight order of three \(B\)-vertices whose first pair is absent from \(E\) could be appended to the left outside path; the remaining \(B\)-vertex can be appended to the right outside path because all earlier statuses are uniformly tight. This would be a two-cover. The same argument applies with \(F\) on the right. Hence the first pair of every tight ordered triple of \(B\) belongs to
+\[
+G=E\cap F.
+\]
+For each middle vertex \(y\) and distinct endpoints \(x,z\), at least one of \(\{x,y\},\{y,z\}\) must therefore belong to \(G\), by boundary antisymmetry. The complement of \(G\) has maximum degree at most one, so \(G\) has at least four edges on the four vertices. But cross-intersection of \(E,F\) makes \(G\) pairwise intersecting, and a pairwise-intersecting graph on four vertices has at most three edges. This is a contradiction.
+
+Since \(L\ge2\), these exclusions leave only \(b=3\) in the unequal-length case and \(b\in\{2,3,4\}\) when \(\alpha=\beta=1\).
+
+**Three vertices with \(\alpha=\beta=1\).** Place the distinguished singleton witness \(z\) in the middle of \(B\). Both first tests are tight, so \(p,c\ge s+1\). Now \(L=3\); positive deficiency forces \(p=c=s+1\), a contradiction.
+
+This proves the table. The coordinate bound follows from \(p,c\le s+L-1\). The earlier determining-block argument retains at most three exterior vertices on either side, so at most \(4+3+3=10\) actual vertices determine all varying roots. \(\square\)
+
+### The distinguished vertex in the three-vertex case
+
+In the unequal-length case, take \(\alpha=1,\beta=2\) by symmetry and retain the singleton witness set \(A\). It cannot have two vertices. If it did, let \(u\) be the third vertex of \(B\). The right pair family would be the unique pair \(A\). Choose a tight order of \(B\) with middle vertex \(u\); its first pair is not \(A\). The whole triple can then be appended to the right outside path, giving a two-cover together with the left outside path.
+
+Hence \(A=\{z\}\). Both pairs incident with \(z\) must occur in the right witness family. Otherwise start \(B\) on the left with the remaining vertex different from \(z\), and put the missing right pair at the inward right end. This gives \(p,c\ge s+1\), incompatible with positive deficiency when \(L=2\). Thus the right pair family is the full star at \(z\).
+
+Accordingly every remaining nonzero case has a distinguished actual vertex: in the two- and four-vertex cases both singleton witness families equal \(\{\{z\}\}\); in the three-vertex case one singleton family equals \(\{\{z\}\}\), and the opposite pair family is the full star at \(z\). These are statements about attainable witness supports, not assertions that every outside order realizes every witness.
+
+Finally, if \(k=\kappa_2(H)>0\), a chamber with \(p=s\) has
+\[
+k\le\delta(\pi)\le L-1\le3.
+\]
+Thus for \(k\ge4\), every positively balanced exact-root carrier must contain a zero-root chamber. For general \(k\), the theorem reduces the nonzero branch to the three configurations in the table. Converting these configurations, or a zero-root chamber with a nonempty hole, into a spanning two-cover remains open.
+
+
+### Only two- and three-cycles remain
+
+Suppose in addition that every occurring exact root lies on a directed cycle, as it does under positive carrier balance. After subtracting \(s\) from the coordinates, every arc \(i\to j\) satisfies
+\[
+0\le i,j\le3,\qquad i\ne j,\qquad i+j\le3.
+\]
+Its underlying unordered pair is therefore one of
+\[
+\{0,1\},\ \{0,2\},\ \{0,3\},\ \{1,2\}.
+\]
+This graph is a triangle on \(0,1,2\) with one additional edge \(0\,3\). Consequently every simple directed cycle has length two or three, and every occurring arc lies on such a cycle. In particular, an arc using coordinate \(3\) forces its opposite arc. Thus the original coordinated-cycle question, away from zero roots, has no long-cycle case.
+
+
+### Corollary: deletion distance at least two forces a zero exact root
+
+Let
+\[
+k=\kappa_2(H)\ge2,
+\]
+and let \(F\) be a positively balanced exact-root carrier face. Then \(F\) contains a chamber with
+\[
+p=c.
+\]
+
+**Proof.**
+Suppose not. Every chamber has positive deficiency, the occurring tail and head coordinate sets agree by positive exact-root circulation, and no chamber has zero root. The preceding four-central-vertices theorem therefore leaves only three possible nonzero configurations:
+\[
+(\ell,r,|B|,L)
+=
+(s+1,s+1,2,2),\quad
+(s+1,s+1,4,4),
+\]
+or, up to left-right symmetry,
+\[
+(s+1,s,3,2).
+\]
+
+In either \(L=2\) case, a chamber with \(p=s\) has
+\[
+\delta\le L-1=1,
+\]
+contradicting the global lower bound
+\[
+\delta\ge\kappa_2(H)=k\ge2.
+\]
+
+It remains that
+\[
+\ell=r=s+1,\qquad |B|=L=4.
+\]
+The preceding distinguished-vertex conclusion gives one vertex \(z\in B\) such that every \(p=s\) witness starts \(B\) with \(z\), and every \(c=s\) witness ends \(B\) with \(z\). Choose a chamber whose first and last vertices of \(B\) are both different from \(z\). Then
+\[
+p,c\ge s+1.
+\]
+Since
+\[
+m=2s+4
+\]
+and every chamber has deficiency at least \(k\ge2\),
+\[
+2
+\le
+\delta
+=
+m-p-c
+\le
+(2s+4)-2(s+1)
+=
+2.
+\]
+Hence equality holds throughout:
+\[
+p=c=s+1,
+\]
+contradicting the assumption that \(F\) has no zero root. \(\square\)
+
+Thus
+\[
+\boxed{
+\kappa_2(H)\ge2
+\quad\Longrightarrow\quad
+\text{every positive exact-root carrier contains an actual balanced chamber }p=c.
+}
+\]
+
+This conclusion is global and structural. It uses neither minimum-counterexample induction nor disturbance analysis. The remaining problem in the \(k\ge2\) branch is no longer recurrence without a diagonal; it is to exploit a balanced canonical partial two-cover
+\[
+P_\pi\mid X_\pi\mid Q_\pi,
+\qquad
+|P_\pi|=|Q_\pi|,
+\qquad
+|X_\pi|=\delta(\pi)\ge k,
+\]
+and, ideally, force one with \(|X_\pi|=k\).
+
+
 ---
 
 ## Section — Antipodal reachability and the neutral corridor
@@ -3216,3 +3686,564 @@ The direct reachability assertion
 R\cap A(R)\ne\varnothing
 \]
 remains equivalent to the grand conjecture and is not proved here. Article VII is closed more modestly and more sharply: the global geodesic/topological obstruction has been eliminated, and the surviving minimum-counterexample state is a single bounded four-support interface.
+
+
+### The remaining face-to-cover conversion
+
+### Current status of the face-to-cover conversion
+
+The earlier descriptions in this Section of Article VII as closed, and the assertion that no further topological continuation is justified, are superseded by the following precise status. The small-support compression results do not prove a two-cover and do not prove that every obstruction to the grand conjecture has been eliminated. The exact reachability intersection remains unproved.
+
+The bounded-central-block theorem in [[topological_recurrence_to_local_gn3_structure]] gives a uniform reduction within Article VII itself. For a positively balanced exact-root carrier whose chambers all have positive deficiency, either a zero-root chamber occurs or its nonzero-root geometry has one central block of order at most four, exterior blocks of order at most two, at most four consecutive root coordinates, and at most ten actual vertices determining the varying root labels after irrelevant exterior block orders are fixed. The proof uses ordered-partition block freedom and boundary antisymmetry, not minimum-counterexample or disturbance arguments.
+
+This is a finite reduction of one face-geometric branch, not a reduction of the grand conjecture to order ten. Two conversion problems remain. In the diagonal branch, p=c gives equal canonical path lengths but can leave a nonempty hole. In the non-diagonal branch, bounded determining data still have to produce a spanning cover or force a useful change of face.
+
+### Rooted omission vectors
+
+For a spanning order (pi=(L,r,R)) of the auxiliary extension, let (P_pi) be the longest suffix of (L), followed by (r), that is a tight path. Let (Q_pi) be the corresponding rooted path on the right, obtained from the longest initial segment of (R) whose reversal followed by (r) is tight. Define
+[
+A(pi)=V(L)setminus V(P_pi),qquad
+B(pi)=V(R)setminus V(Q_pi),
+]
+and
+[
+D(pi)=mathbf 1_{A(pi)}-mathbf 1_{B(pi)}.
+]
+Reversal exchanges (A) and (B), so (D(pi^{m rev})=-D(pi)). Also (D(pi)=0) exactly when the two rooted tight tails cover every original vertex, which by auxiliary exactification is exactly a spanning two-cover of (H).
+
+Along the chamber order every (D(pi)) has signed threshold form
+[
++cdots+,0cdots0, -cdots-.
+]
+It is never identically positive or identically negative, because an original vertex adjacent to (r) belongs to a two-vertex tight path with (r).
+
+### A dimension-tight quotient map
+
+Let (n=|V(H)|). The boundary of the centered permutahedron on (H^+) is (S^{n-1}). Project the omission vector to
+[
+mathbb R^{V(H)}/langlemathbf1angle,
+]
+which also has dimension (n-1). Averaging projected omission vectors on every proper face and extending affinely over the barycentric subdivision gives a continuous odd map. Borsuk--Ulam therefore gives a zero. Its carrier face (F) has strictly positive chamber weights satisfying
+[
+sum_{piinmathcal V(F)}lambda_pi D(pi)=c,mathbf1
+]
+for some scalar (c).
+
+This yields a sharper structural frontier:
+
+**Facewise omission-balance problem.** If a proper permutahedral face admits a strictly positive convex combination of rooted omission vectors equal to a constant vector, must it contain a chamber with (D(pi)=0)?
+
+A positive answer proves the two-cover conjecture directly through auxiliary exactification, without minimum-counterexample or disturbance arguments. The extra structure is that each chamber label is a signed prefix/suffix threshold vector of actual omitted vertices and all chambers of (F) arise by independent permutations inside ordered face blocks. The remaining task is therefore an uncrossing or face-convexity problem for threshold omissions inside one ordered partition, not a generic convex-cancellation problem.
+
+The sharper theorem leaves only a two- or four-vertex central block with two singleton witness families supported on the same vertex \(z\), or a three-vertex block with a singleton witness \(\{z\}\) on one side and the full star at \(z\) as the opposite pair family. Moreover, every simple directed root cycle has length two or three. The proof of these sharper bounds sometimes converts a matched pair of tight triples directly into a spanning two-cover; it is therefore stronger than a zero-root argument alone.
+
+The remaining nonzero cases have global deletion distance at most three. This is a consequence under the no-zero-root face hypothesis, not a universal bound on \(\kappa_2(H)\).
+
+
+### Localization of omission balance and the two exceptional facets
+
+The facewise omission-balance question above has a precise exception. Let the auxiliary vertex be \(r\), let \(V=V(H)\), and use the rooted omission vectors \(D(\pi)\) just defined. In the chamber order their entries on original vertices have the form
+\[
++\cdots+,\,0\cdots0,\,-\cdots-.
+\]
+In particular, if original vertices \(u,v\) lie in distinct ordered face blocks with the block of \(u\) earlier, then
+\[
+D(\pi)_u\ge D(\pi)_v
+\]
+for every chamber of that face.
+
+**Proposition (localization to the two exceptional facets).** Let \(F\) be a proper face of the permutahedron on \(V\cup\{r\}\). Suppose
+\[
+\sum_{\pi\in\mathcal V(F)}\lambda_\pi D(\pi)=c\mathbf1,
+\qquad \lambda_\pi>0,\quad \sum_\pi\lambda_\pi=1.
+\]
+If \(F\) is neither \(\{r\}\mid V\) nor \(V\mid\{r\}\), then \(D(\pi)=0\) for every chamber of \(F\).
+
+**Proof.** If original vertices occur in at least two face blocks, the displayed coordinate inequality and equality of coordinate averages imply
+\[
+D(\pi)_u=D(\pi)_v
+\]
+for every chamber and every pair in different original-vertex blocks. Positivity of every coefficient is essential here. Using any vertex in a second block also equates two coordinates in the same block. Thus every chamber vector is constant on all original vertices.
+
+At least one original vertex is adjacent to \(r\) in each chamber and belongs to a rooted tight path of order two. Its omission coordinate is zero. Therefore the constant vector is zero.
+
+If all original vertices occur in one block, a proper face can have only that block and the singleton block \(\{r\}\), in either order. These are exactly the two excluded facets. \(\square\)
+
+Thus, under the assumption that \(H\) has no two-cover, every zero of the projected omission map must have one of the two exceptional facets as its carrier. The Borsuk--Ulam conclusion by itself does not exclude this possibility.
+
+**Example (the exceptional facets really can balance).** Identify four original vertices with \(\mathbb F_2^2\). Order the three nonzero differences as \(d_1<d_2<d_3\), and give the ordinary edge \(\{x,y\}\) the class of \(x+y\). Declare
+\[
+(x,y,z)\text{ tight}\quad\Longleftrightarrow\quad
+\operatorname{class}(x+y)<\operatorname{class}(y+z).
+\]
+The two classes are different, so boundary reversal complements tightness. This is the matching-block boundary tournament.
+
+It has no tight Hamilton path. Such a path would have three successive, strictly increasing edge classes, hence differences \(d_1,d_2,d_3\). Their sum is zero in \(\mathbb F_2^2\), so its final vertex would equal its initial vertex. This contradicts distinctness. It does, of course, have a two-cover by two pairs.
+
+On the facet \(\{r\}\mid V\), the left rooted path is the singleton \(r\). The right rooted path covers either two or three original vertices; it never covers four because that would give a tight Hamilton path of \(H\). Hence no chamber of this facet has \(D=0\).
+
+Translations of \(\mathbb F_2^2\) preserve edge classes and act transitively on original vertices. The uniform average of \(D\) over all chambers of this facet is therefore a constant vector. Exactly half the orders have a non-tight first original triple, allowing the reversed rooted prefix to cover three original vertices; the other half cover only two. Thus the average number omitted is \(3/2\), and
+\[
+\frac1{4!}\sum_{\pi\in\mathcal V(\{r\}\mid V)}D(\pi)
+=-\frac38\mathbf1.
+\]
+All weights are strictly positive. Reversal gives the opposite constant on \(V\mid\{r\}\).
+
+This refutes the universal facewise implication proposed above: strictly positive projected omission balance need not yield a zero chamber in the same face. It does not refute the grand conjecture. The viable strengthened target is to force a projected zero outside the two exceptional facets, or to extract a two-cover directly from balance on an exceptional facet. The localization proposition proves the first target sufficient; the example shows why the second cannot demand a Hamilton path.
+
+
+### Facewise omission balance collapses to the two extreme auxiliary facets
+
+Retain the rooted omission notation
+\[
+D(\pi)={\bf1}_{A(\pi)}-{\bf1}_{B(\pi)}
+\]
+on spanning orders \(\pi=(L,r,R)\) of \(H^+\). Thus \(A(\pi)\) is a prefix of \(L\), \(B(\pi)\) is a suffix of \(R\), and \(D(\pi)=0\) is exactly a two-cover certificate for \(H\).
+
+Let
+\[
+F=C_1|\cdots|C_t
+\]
+be a nonempty proper permutahedron face, and suppose \(r\in C_j\). Assume there are strictly positive weights
+\[
+\lambda_\pi>0\qquad(\pi\in\mathcal V(F)),\qquad
+\sum_\pi\lambda_\pi=1,
+\]
+such that
+\[
+\sum_\pi\lambda_\pi D(\pi)=c\,{\bf1}
+\]
+for some scalar \(c\).
+
+**Theorem (facewise omission reduction).**
+If \(F\) is not one of the two extreme facets
+\[
+\{r\}|V(H),
+\qquad
+V(H)|\{r\},
+\]
+then \(F\) contains a chamber \(\pi\) with
+\[
+D(\pi)=0.
+\]
+In fact, except for a terminal two-block configuration with the auxiliary block containing original vertices, the argument forces \(D=0\) in every chamber of \(F\); that remaining terminal configuration also collapses by the probability argument below.
+
+**Proof.**
+
+First suppose
+\[
+1<j<t.
+\]
+Every original vertex in a block before \(C_j\) is always left of \(r\), hence its \(D\)-coordinate is in \(\{0,1\}\). Every original vertex in a block after \(C_j\) has coordinate in \(\{0,-1\}\). Since all weighted coordinate averages equal \(c\), both sides force
+\[
+c=0.
+\]
+Strict positivity of all \(\lambda_\pi\) then implies that every original vertex outside \(C_j\) has \(D\)-coordinate \(0\) in every chamber.
+
+If some chamber had \(A(\pi)\ne\varnothing\), then, because \(A(\pi)\) is a prefix of \(L\) and there is a whole face block before \(C_j\), the first original vertex of the chamber would lie in \(A(\pi)\), contradicting its identically zero coordinate. Hence \(A(\pi)=\varnothing\) for every chamber. The symmetric suffix argument gives \(B(\pi)=\varnothing\). Thus every chamber has \(D=0\).
+
+Now suppose \(j=1\); the case \(j=t\) is symmetric. Every original vertex outside \(C_1\) has coordinate in \(\{0,-1\}\), so
+\[
+c\le0.
+\]
+If \(c=0\), strict positivity makes every outside coordinate identically zero. A nonempty suffix \(B(\pi)\) would contain the last original vertex of the chamber, which lies outside \(C_1\), a contradiction. Thus \(B(\pi)=\varnothing\) for every chamber. The remaining coordinates are then nonnegative, have average zero, and hence \(A(\pi)=\varnothing\) as well.
+
+Assume therefore
+\[
+c=-W<0.
+\]
+
+If \(C_1\ne\{r\}\), choose
+\[
+x\in C_1-\{r\}.
+\]
+Let \(E\) be the event, under the positive weights \(\lambda\), that every original vertex outside \(C_1\) belongs to \(B(\pi)\), and write its total weight as \(e\).
+
+For every outside vertex \(y\),
+\[
+D_y=-{\bf1}_{\{y\in B\}},
+\]
+so its average \(-W\) gives
+\[
+\Pr_\lambda(y\in B)=W.
+\]
+Since \(E\subseteq\{y\in B\}\),
+\[
+e\le W.
+\]
+
+Write
+\[
+a_x=\Pr_\lambda(x\in A),
+\qquad
+b_x=\Pr_\lambda(x\in B).
+\]
+If \(x\in B(\pi)\), the suffix property forces every later outside vertex into \(B(\pi)\), hence
+\[
+\{x\in B\}\subseteq E
+\]
+and therefore
+\[
+b_x\le e.
+\]
+The balance equation at coordinate \(x\) is
+\[
+a_x-b_x=-W,
+\]
+so
+\[
+b_x=a_x+W\ge W.
+\]
+Consequently
+\[
+W\le b_x\le e\le W.
+\]
+Thus
+\[
+a_x=0,\qquad b_x=e=W.
+\]
+
+The same argument holds for every \(x\in C_1-\{r\}\). Hence on every chamber in \(E\), all original vertices of \(C_1\) and all outside vertices belong to \(B(\pi)\): every original vertex of \(H\) is omitted on the right. This is impossible, because whenever \(R\ne\varnothing\), the first vertex of \(R\) together with \(r\) is a two-vertex tight path, so the rooted right path \(Q_\pi\) always contains at least that vertex.
+
+Thus \(c<0\) is impossible whenever \(C_1\ne\{r\}\).
+
+It remains only
+\[
+C_1=\{r\}.
+\]
+If \(t\ge3\), choose vertices \(u\in C_i\), \(v\in C_j\) with
+\[
+2\le i<j\le t.
+\]
+Because \(B(\pi)\) is a suffix of \(R\),
+\[
+{\bf1}_{\{u\in B\}}\le{\bf1}_{\{v\in B\}}
+\]
+in every chamber. Their weighted expectations are both \(W\), so strict positivity forces equality chamberwise. Varying \(u,v\) shows that in every chamber either every original vertex is in \(B\) or none is. The former is impossible by the immediate-neighbor observation, while the latter contradicts \(W>0\).
+
+Therefore the only unresolved case with \(j=1\) is
+\[
+F=\{r\}|V(H).
+\]
+The symmetric argument leaves only
+\[
+F=V(H)|\{r\}.
+\]
+This proves the theorem. \(\square\)
+
+### The reduction is sharp at the level of convex cancellation
+
+The two exceptional facets cannot be discarded by a generic convexity argument. On the facet
+\[
+\{r\}|V(H),
+\]
+one has
+\[
+D(\pi)=-{\bf1}_{B(\pi)},
+\]
+where \(B(\pi)\) is the suffix omitted after the maximal rooted right path.
+
+For a standard non-Hamiltonian four-vertex matching-block boundary tournament, the uniform distribution on all \(24\) permutations gives
+\[
+\Pr(v\in B)=\frac38
+\]
+for every vertex \(v\), while no permutation has \(B=\varnothing\). Thus
+\[
+\frac1{24}\sum_\pi D(\pi)
+=
+-\frac38\,{\bf1}
+\]
+is a genuine full-support constant balance with no zero chamber.
+
+Accordingly, the facewise omission theorem is sharp:
+\[
+\boxed{
+\text{all non-extreme carrier faces close;}
+\quad
+\text{the only genuine convex-cancellation residue is the pair of extreme facets.}
+}
+\]
+
+The remaining global topological question is therefore whether an odd zero of the quotient omission map can be supported entirely by those two antipodal extreme facets when the whole tournament has no two-cover. Local averaging alone cannot answer this.
+
+### The exceptional facets carry essential degree
+
+The matching-block example above shows that the two exceptional facets can support projected omission balance without a zero chamber. In a hypothetical counterexample, the limitation is stronger: the projected omission map is topologically forced to have a zero in the interior of each exceptional facet.
+
+Let
+\[
+F^-=\{r\}\mid V(H)
+\]
+be the left exceptional facet. It is canonically a copy of the centered permutahedron \(P_V\) on the original vertex set, of dimension \(n-1\). Its boundary is therefore an \((n-2)\)-sphere.
+
+On \(F^-\), every omission vector has the form
+\[
+D(\pi)=-\mathbf 1_{B(\pi)},
+\]
+where \(B(\pi)\) is a suffix of the original-vertex order. Hence, if
+\[
+G=B_1|\cdots|B_t
+\]
+is any proper face of \(P_V\), and \(u\in B_i,\ v\in B_j\) with \(i<j\), then
+\[
+D(\pi)_u\ge D(\pi)_v
+\]
+for every chamber \(\pi\) of \(G\). The same inequalities hold for the face-average omission vector assigned to the barycenter of \(G\), and therefore throughout every barycentric simplex whose largest face is \(G\).
+
+Write
+\[
+Q=\mathbb R^{V(H)}/\langle\mathbf 1\rangle
+\]
+and, for an ordered partition \(G\), let
+\[
+C_G=
+\left\{
+[y]\in Q:
+y_u\ge y_v
+\text{ whenever }
+u\in B_i,\ v\in B_j,\ i<j
+\right\}.
+\]
+Thus the projected omission map on the barycentric subdivision of \(\partial P_V\) is carried by the spherical carrier
+\[
+K_G=(C_G\setminus\{0\})/\mathbb R_{>0}.
+\]
+
+Assume now that \(H\) has no spanning two-cover. By the facewise omission theorem above, the projected omission map has no zero on \(\partial F^-\): any zero there would have a proper nonexceptional carrier face in the full auxiliary permutahedron and would force an actual chamber with \(D=0\).
+
+Each \(K_G\) is contractible. Indeed \(C_G\) is a proper convex cone; after quotienting its lineality space, the pointed part has a spherically convex section, and \(K_G\) is the join of that section with the sphere of the lineality space.
+
+Compare the normalized omission map on \(\partial P_V\) with
+\[
+h(x)=-\frac{x}{\|x\|}.
+\]
+If \(x\) lies in the permutahedron face \(G\), then the coordinates of \(x\) increase from earlier to later blocks, so the coordinates of \(-x\) decrease from earlier to later blocks. Therefore
+\[
+h(G)\subseteq K_G.
+\]
+The normalized omission map is carried by the same acyclic carrier. The acyclic carrier theorem makes the two maps homotopic.
+
+Consequently
+\[
+\deg(\widehat D|_{\partial F^-})
+=
+\deg(h)
+=
+(-1)^{n-1},
+\]
+up to the harmless orientation convention for \(Q\). In particular the degree has absolute value one.
+
+Every continuous extension of this boundary map over the exceptional facet \(F^-\) must therefore hit the origin. The barycentric omission map is such an extension, so \(F^-\) contains an interior projected omission zero. Reversal gives the same conclusion for
+\[
+F^+=V(H)\mid\{r\}.
+\]
+
+Thus in a hypothetical counterexample the two exceptional facets do not merely permit topological cancellation:
+\[
+\boxed{
+\text{each exceptional facet carries an essential degree-one omission zero.}
+}
+\]
+
+This sharpens the limitation of the rooted omission projection. The global Borsuk--Ulam zero can be absorbed by the two extreme facets for a structural degree reason. Therefore a continuation that uses only the same projected omission map and the same quotient target cannot force a useful nonexceptional zero; additional information or a genuinely different target is required.
+
+
+### The exact violation map escapes the exceptional omission facets
+
+The omission projection fails for a topologically structural reason on the two extreme auxiliary facets, but the exact auxiliary violation vector behaves differently.
+
+Let \(n=|V(H)|\), so the auxiliary tournament \(H^+\) has \(n+1\) vertices and the boundary of its centered permutahedron is
+\[
+S^{n-1}.
+\]
+Use the odd violation vector
+\[
+F(\pi)=(F_d(\pi))_{1\le d\le n-2}
+\]
+from [[auxiliary_violation_vector_has_exact_chamber_zeros]], where
+\[
+F_d=x_d-y_d+g\,x_dy_d.
+\]
+Its chamber zeros are exactly directed one-change orders and therefore exactly two-cover certificates for \(H\).
+
+Average \(F\) over every proper face and extend affinely on the barycentric subdivision. This gives a continuous odd map
+\[
+\mathcal F:S^{n-1}\longrightarrow\mathbb R^{n-2}.
+\]
+Bourgin--Yang therefore gives
+\[
+\dim \mathcal F^{-1}(0)\ge1.
+\]
+Every zero has the usual positive carrier-face expansion:
+\[
+\sum_{\pi\in\mathcal V(C)}\lambda_\pi F(\pi)=0,
+\qquad
+\lambda_\pi>0.
+\]
+
+Now consider the exceptional facet
+\[
+C^-=\{r\}\mid V(H).
+\]
+Here \(r\) is first in every chamber. There are no left violations, so
+\[
+x_d=0,\qquad F_d=-y_d\in\{0,-1\}
+\]
+for every chamber and every distance \(d\). If a positive convex combination of these vectors were zero, every coordinate of every chamber vector would have to vanish. Thus every chamber in the carrier would satisfy
+\[
+F(\pi)=0,
+\]
+which is already a directed one-change order and hence a two-cover of \(H\).
+
+Therefore, under the counterexample hypothesis,
+\[
+\mathcal F^{-1}(0)\cap C^-=\varnothing.
+\]
+By reversal,
+\[
+\mathcal F^{-1}(0)\cap C^+=\varnothing,
+\qquad
+C^+=V(H)\mid\{r\}.
+\]
+
+Hence:
+\[
+\boxed{
+\text{if }H\text{ has no two-cover, every zero carrier of the exact violation map is nonexceptional.}
+}
+\]
+
+This contrasts sharply with the projected omission map, whose two exceptional facets carry essential degree-one zeros. The violation map therefore genuinely escapes Astra's exceptional-facet obstruction.
+
+The remaining gap is different: positive balance of the violation vectors on a nonexceptional face does not yet imply that one chamber has \(F=0\). The next structural target is a facewise conversion theorem for these positional violation vectors, ideally using fixed-center intermediate value and the fact that the zero locus has positive dimension.
+
+
+### A side-set gauge and exact closure on singleton-\(r\) carrier faces
+
+The coordinatewise gauge in the exact violation vector can be replaced by one global double-violation coordinate in a way that is better adapted to faces.
+
+Let the original vertex set be \(V\), let \(r\) be the auxiliary vertex, and for a spanning order \(\pi\) write
+\[
+L_r(\pi)=\{v\in V:v\text{ occurs left of }r\},
+\qquad
+R_r(\pi)=V\setminus L_r(\pi).
+\]
+Fix once and for all a total order \(\prec\) on subsets of \(V\). Define an antipodal sign \(g_{\rm set}\) by
+\[
+g_{\rm set}(\pi)=
+\begin{cases}
++1,&|L_r(\pi)|<|R_r(\pi)|,\\
+-1,&|L_r(\pi)|>|R_r(\pi)|,\\
++1,&|L_r|=|R_r|\text{ and }L_r\prec R_r,\\
+-1,&|L_r|=|R_r|\text{ and }R_r\prec L_r.
+\end{cases}
+\]
+Reversal exchanges \(L_r\) and \(R_r\), hence
+\[
+g_{\rm set}(\pi^{\rm rev})=-g_{\rm set}(\pi).
+\]
+
+For the left/right violation bits \(x_d,y_d\) of [[auxiliary_violation_vector_has_exact_chamber_zeros]], define
+\[
+A_d(\pi)=x_d(\pi)-y_d(\pi),
+\]
+and choose arbitrary positive weights \(w_d>0\). Put
+\[
+B(\pi)
+=
+g_{\rm set}(\pi)\sum_d w_d x_d(\pi)y_d(\pi).
+\]
+Then
+\[
+\Theta(\pi)=\bigl((A_d(\pi))_d,B(\pi)\bigr)
+\]
+is odd. Its target has dimension \(n-1\), equal to the dimension of the auxiliary Coxeter sphere.
+
+Moreover
+\[
+\Theta(\pi)=0
+\]
+if and only if \(\pi\) has no violations. Indeed \(A_d=0\) gives \(x_d=y_d\) at every distance, while \(B=0\), since \(g_{\rm set}=\pm1\) and all \(w_d>0\), forces
+\[
+x_dy_d=0
+\]
+for every \(d\). Thus \(x_d=y_d=0\) for all \(d\).
+
+Average \(\Theta\) on proper face barycenters and extend affinely. Borsuk--Ulam gives a zero and the usual strictly positive expansion over every chamber of its carrier face.
+
+The key advantage of \(g_{\rm set}\) is the following.
+
+**Theorem (singleton-\(r\) carrier conversion).**
+Let
+\[
+C=C_1|\cdots|C_t
+\]
+be a proper permutahedron face in which
+\[
+C_j=\{r\}.
+\]
+Suppose there are strictly positive weights
+\[
+\lambda_\pi>0\qquad(\pi\in\mathcal V(C))
+\]
+with
+\[
+\sum_\pi\lambda_\pi\Theta(\pi)=0.
+\]
+Then every chamber of \(C\) is violation-free. In particular \(H\) has a spanning two-cover.
+
+**Proof.**
+Because \(r\) is a singleton block, the set of original vertices left of \(r\) and the set right of \(r\) are fixed throughout \(C\). Hence
+\[
+g_{\rm set}(\pi)=g_0\in\{\pm1\}
+\]
+is constant on all chambers of \(C\).
+
+The last coordinate of the positive balance is therefore
+\[
+0
+=
+g_0\sum_\pi\lambda_\pi\sum_d w_dx_d(\pi)y_d(\pi).
+\]
+Every summand inside the last sum is nonnegative, every \(w_d\) is positive, and every \(\lambda_\pi\) is positive. Hence
+\[
+x_d(\pi)y_d(\pi)=0
+\]
+for every chamber \(\pi\) and every distance \(d\).
+
+Now fix \(d\). Since \(r\) is a singleton block, the chamber set factors as
+\[
+\mathcal V(C)
+=
+\mathcal L\times\mathcal R,
+\]
+where \(\mathcal L\) consists of the independent permutations in blocks left of \(r\), and \(\mathcal R\) those right of \(r\). The bit \(x_d\) depends only on the left factor and \(y_d\) only on the right factor.
+
+If some left factor had \(x_d=1\) and some right factor had \(y_d=1\), their product chamber would satisfy
+\[
+x_dy_d=1,
+\]
+contrary to the preceding paragraph. Therefore at least one of the two functions is identically zero on its factor.
+
+But the \(A_d\)-coordinate of the positive balance says
+\[
+\sum_\pi\lambda_\pi x_d(\pi)
+=
+\sum_\pi\lambda_\pi y_d(\pi).
+\]
+If one side is identically zero, positivity forces the other side to be identically zero as well. Hence
+\[
+x_d(\pi)=y_d(\pi)=0
+\]
+for every chamber. Since \(d\) was arbitrary, every chamber of \(C\) is violation-free. \(\square\)
+
+Thus the exact violation map has no unresolved singleton-\(r\) carrier geometry at all:
+\[
+\boxed{
+\text{positive }\Theta\text{-balance on a face with }\{r\}\text{ as a block}
+\Longrightarrow
+\text{an actual two-cover certificate}.
+}
+\]
+
+Consequently, under the counterexample hypothesis, every zero carrier of the \(\Theta\)-map must place \(r\) in a block containing at least one original vertex. This eliminates the central singleton case as well as the two extreme singleton facets; the only remaining face-to-cover obstruction is genuinely the geometry of a nontrivial \(r\)-block.

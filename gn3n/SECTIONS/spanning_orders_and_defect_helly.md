@@ -505,16 +505,139 @@ again contradicting
 
 Hence a minimum exact hole is a synchronized family of common terminal-edge reversers that is simultaneously **unabsorbable in every nonempty subfamily and under every split between the two complementary paths**. This is a global structural constraint on one fixed graph, not a minimum-counterexample or disturbance hypothesis.
 
+### Exact classification of direct side flips at deletion distance one
+
+Assume
+\[
+\kappa_2(H)=1.
+\]
+Let \(\pi'\) be obtained from \(\pi\) by one adjacent transposition. Suppose an actual vertex \(v\) changes directly from the canonical left path to the canonical right path:
+\[
+v\in P_\pi,\qquad v\in Q_{\pi'}.
+\]
+
+Write \(t\) for the position of \(v\) in \(\pi\), and let
+\[
+p,q,\delta
+\quad\text{and}\quad
+p',q',\delta'
+\]
+be the exact inversion data of \(\pi,\pi'\).
+
+**Proposition (rigid direct side flip).**
+Then \(v\) moves one place to the right, and necessarily
+\[
+p=t-1,\qquad q=t+1,\qquad \delta=1,
+\]
+while
+\[
+p'=t-2,\qquad q'=t,\qquad \delta'=1.
+\]
+If \(w\) is the vertex swapped with \(v\), then \(w\) is the unique canonical hole vertex in **both** chambers.
+
+The reverse transition \(Q\to P\) is symmetric.
+
+**Proof.**
+Since \(v\in P_\pi\),
+\[
+t\le p+1.
+\]
+Because every order has deficiency at least one,
+\[
+q\ge p+2\ge t+1.
+\]
+
+Let \(t'\) be the position of \(v\) in \(\pi'\). Since \(v\in Q_{\pi'}\),
+\[
+t'\ge q'+1,
+\]
+and
+\[
+q'\ge p'+2.
+\]
+Hence
+\[
+p'\le q'-2\le t'-3.
+\]
+Because one adjacent transposition moves \(v\) by at most one place,
+\[
+t'\le t+1,
+\]
+so
+\[
+p'\le t-2.
+\]
+Therefore
+\[
+q-p'\ge3.
+\]
+
+A direct \(P\to Q\) transition forces both the first-zero coordinate and the last-one coordinate to move left. An adjacent transposition changes only the four consecutive status positions whose windows meet the swapped pair; these positions have diameter at most three. Thus the new first zero \(p'\) and the old last one \(q\) both lie in that affected set, so
+\[
+q-p'\le3.
+\]
+Hence equality holds throughout:
+\[
+q-p'=3.
+\]
+
+The preceding inequalities must all be equalities. Thus
+\[
+q=t+1,\qquad p'=t-2,\qquad t'=t+1.
+\]
+Now
+\[
+q\ge p+2,\qquad p\ge t-1
+\]
+forces
+\[
+p=t-1,
+\]
+and similarly
+\[
+q'\ge p'+2,\qquad q'\le t'-1=t
+\]
+forces
+\[
+q'=t.
+\]
+Therefore
+\[
+\delta=q-p-1=1,\qquad
+\delta'=q'-p'-1=1.
+\]
+
+Let \(w\) be the vertex adjacent to \(v\) that is swapped past it. In \(\pi\), the unique hole position is
+\[
+p+2=t+1,
+\]
+which is occupied by \(w\). In \(\pi'\), the unique hole position is
+\[
+p'+2=t,
+\]
+again occupied by \(w\). Thus the hole label is conserved across the direct side flip. \(\square\)
+
+Consequently, when \(\kappa_2(H)=1\), all direct side changes in the chamber graph are confined to deficiency-one edges and carry a canonical conserved decoration:
+\[
+\boxed{
+P\leftrightarrow Q
+\text{ across one swap}
+\Longrightarrow
+\text{the same vertex is the unique hole on both endpoints}.
+}
+\]
+This replaces the \(k\ge2\) no-direct-side-flip rule by an exact description of the only possible exception.
+
 ## Metadata
 
 - ID: spanning_orders_and_defect_helly
 - Kind: section
-- Version: 9
-- Math version: 8
+- Version: 10
+- Math version: 9
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
 - Subsection 1 — crystallized, version 4: Defect intervals and the exact Helly criterion
-- Subsection 2 — HOT, version 6: Exact inversion-window criterion
+- Subsection 2 — HOT, version 7: Exact inversion-window criterion
