@@ -1,10 +1,10 @@
 # Antipodal geodesics and complementary path supports
 
-**Summary:** The cube analogy becomes an exact geodesic reformulation that retains every vertex exactly once. A direct equivalent target asks for two tight paths overlapping in an oppositely directed end edge and otherwise partitioning the vertices; neither existence assertion is proved here.
+**Summary:** Adding one vertex makes the red-then-blue geodesic target exactly equivalent to the original two-cover conjecture. Every successful order automatically locates its change beside the added vertex; each cover gives exactly two reverse orders. The earlier one-change target on the original vertices may be stronger.
 
 ## Statement
 
-An explicit graph over the Boolean cube carries a fixed-point-free color-complementing involution. Its distinguished-pole geodesics encode spanning vertex orders, and one-change pole geodesics are exactly one-change spanning orders. Equivalently, such orders are pairs of tight paths with complementary tail supports and opposite terminal or initial directions on their common edge. Existence of these geodesics or complementary supports remains open.
+Spanning one-change orders admit exact descriptions by antipodal pole geodesics and by two tight paths with a common terminal or initial vertex. After adjoining r with every (u,v,r) tight, red-then-blue spanning orders are in a two-to-one correspondence with two-covers of the original tournament, independently of the local tournament at r. Their subset generating polynomial is (1+F_H)^2. The resulting single-copy geodesic existence assertion is equivalent to the grand two-cover conjecture; existence remains unproved.
 
 ## Body
 
@@ -225,16 +225,180 @@ For fixed \(u,v\) and sizes \(a+b=n-2\), failure of the first target means that 
 
 The two descriptions locate the same unresolved issue. In \(\Gamma_n\), it is existence of a one-change geodesic between the distinguished poles. In the original path families, it is existence of complementary disjoint tails at opposite directions of some edge. Antipodal connectivity alone supplies neither condition. This route seeks a topological or combinatorial argument that preserves the full prefix sets or, equivalently, the complementary supports, rather than only the positions of extreme color changes.
 
+### Two paths with a common terminal vertex
+
+In this subsection a pair of paths is unordered. Its members are individually ordered tight paths.
+
+**Lemma 5.** Let \(W\) be a vertex set with \(|W|\ge2\). The induced tournament on \(W\) has a spanning order with word \(1^a0^b\) if and only if there are two tight paths whose union is \(W\), whose intersection is one vertex \(v\), and which both end at \(v\). Either path may consist solely of \(v\).
+
+**Proof.** Write the two paths as
+\[
+P=(p_1,\ldots,p_\ell,v),\qquad
+Q=(q_1,\ldots,q_m,v).
+\]
+The order
+\[
+(p_1,\ldots,p_\ell,v,q_m,\ldots,q_1)
+\]
+has tight triples on the \(P\)-side and non-tight triples on the reversed \(Q\)-side. If both tails are nonempty, its only remaining triple is \((p_\ell,v,q_m)\). Either status for this triple gives a word of the form \(1^a0^b\). If a tail is empty, the word is monochromatic.
+
+Conversely, in an order \((w_1,\ldots,w_N)\) with word \(1^a0^b\), take
+\[
+P=(w_1,\ldots,w_{a+1}),\qquad
+Q=(w_N,\ldots,w_{a+1}).
+\]
+The internal triples of the first path are tight, and those of the second are boundary flips of non-tight triples. Their only common vertex is their terminal vertex \(w_{a+1}\). \(\square\)
+
+The corresponding statement for \(0^a1^b\) uses a common initial vertex.
+
+The elementary movement of the common terminal vertex has particularly rigid behavior.
+
+**Lemma 6.** On a fixed support \(W\) of size at least two, pairs from Lemma 5 have a fixed-point-free involution. Its two paired objects correspond to a single pair of tight paths sharing an oppositely directed terminal edge and otherwise disjoint.
+
+**Proof.** Suppose both paths have a predecessor of the common terminal vertex \(v\), and write
+\[
+P=(A,u,v),\qquad Q=(B,w,v).
+\]
+Exactly one of \((u,v,w)\) and \((w,v,u)\) is tight.
+
+If \((u,v,w)\) is tight, replace the pair by
+\[
+P'=(A,u,v,w),\qquad Q'=(B,w).
+\]
+These paths have common terminal vertex \(w\) and the same union. The shared-edge pair is
+\[
+(A,u,v,w),\qquad(B,w,v).
+\]
+If \(Q'\) has a predecessor \(z\) of \(w\), tightness of the original \(Q\) gives \((z,w,v)\) tight. Hence the same rule at \(w\) moves the terminal vertex back to \(v\). If \(Q'\) is the singleton \(w\), the singleton rule below has the same effect. The other orientation is symmetric.
+
+If one path is the singleton \(v\), write the other as \((A,u,v)\). Replace the pair by
+\[
+(A,u),\qquad(v,u).
+\]
+Both are tight. When \(A\) is nonempty, its final vertex \(z\) satisfies \((z,u,v)\) tight, so the preceding rule moves back to \(v\). If \(A\) is empty, the singleton rule moves back directly.
+
+The common terminal vertex changes, so the involution has no fixed point. Conversely, from a pair ending along \(uv\) and \(vu\), truncating one path's final vertex gives a common-terminal pair at \(u\), and truncating the other gives its mate at \(v\). \(\square\)
+
+Thus this particular movement produces matched pairs of states, not a longer sequence of new path orders. Further augmentation needs an additional operation.
+
+### Adjoining one vertex makes the directed one-change target exact
+
+The auxiliary-vertex construction in the direct-enumeration Brainstorm gives a prescribed-switch formulation of the two-cover conjecture. The following stronger statement removes the switch-location condition and identifies every successful order.
+
+Let \(H\) have nonempty vertex set \(V\). Adjoin a vertex \(r\), and define a boundary tournament \(H^+\) by retaining \(H\) and setting
+\[
+h(u,v,r)=1,\qquad h(r,v,u)=0
+\]
+for all distinct \(u,v\in V\). Choose the remaining values \(h(u,r,v)\) arbitrarily subject to
+\[
+h(u,r,v)+h(v,r,u)=1.
+\]
+Equivalently, the local tournament at \(r\) is arbitrary.
+
+**Theorem 7 (exact one-change extension).** There is a two-to-one map from spanning orders of \(H^+\) with color word \(1^a0^b\) to two-covers of \(H\). Each path in a cover is ordered, and the collection of paths is unordered. The two orders over each cover are reverses of one another.
+
+In particular, the following are equivalent:
+\[
+\operatorname{pc}(H)\le2;
+\]
+\[
+H^+\text{ has a spanning order with word }1^a0^b.
+\]
+The entire set of successful orders, not only its cardinality, is independent of the choice of local tournament at \(r\).
+
+**Proof.** Write any spanning order uniquely as
+\[
+\pi=(L,r,R),
+\]
+where either displayed side may be empty.
+
+Suppose its word is \(1^a0^b\). If \(L\) has at least two vertices, its last two vertices followed by \(r\) form a tight triple. Every earlier triple must therefore be tight. Thus \(L\) is a tight path. The conclusion is vacuous when \(|L|\le1\).
+
+If \(R\) has at least two vertices, \(r\) followed by its first two vertices is non-tight. Every later triple is therefore non-tight. Consequently \(R^{\rm rev}\) is a tight path, again with the short cases vacuous. Deleting \(r\) and discarding an empty side gives the two-cover
+\[
+L\mid R^{\rm rev}.
+\]
+
+Conversely, let \(P\mid Q\) be a two-cover. If both paths are nonempty, then
+\[
+(P,r,Q^{\rm rev})
+\]
+has tight triples through the left side, including the junction ending at \(r\), and non-tight triples through the right side, including the junction beginning at \(r\). The sole possible remaining triple has \(r\) in the middle. Either of its two statuses preserves the form \(1^a0^b\). The order \((Q,r,P^{\rm rev})\) is its reverse.
+
+For a one-path cover \(P\), the two orders are \((P,r)\) and \((r,P^{\rm rev})\). They are monochromatic in opposite colors.
+
+The construction recovers both side orders from \(\pi\), so no other cover maps to it. Conversely, a given cover permits exactly the two displayed side placements. All conclusions depend only on the forced endpoint triples at \(r\); the central triple is unrestricted. \(\square\)
+
+The distinction between \(1^a0^b\) and \(0^a1^b\) is essential in this theorem. Reversing an order preserves the first type, since reversal also complements all triple colors.
+
+For nonempty \(P,Q\), put \(p=|P|\) and let
+\[
+\epsilon=h(\operatorname{last}(P),r,\operatorname{last}(Q)).
+\]
+In the order \((P,r,Q^{\rm rev})\), the number of initial tight triples is
+\[
+a=p-1+\epsilon.
+\]
+Hence the two vertices at the change specified in Proposition 4 include \(r\). The switch location is forced by the extension itself.
+
+### Normalization of the common terminal vertex
+
+**Corollary 8.** In \(H^+\), every pair of tight paths sharing an opposite terminal edge and otherwise disjoint, with union \(V\cup\{r\}\), shares an edge containing \(r\). Under the involution of Lemma 6, exactly one associated common-terminal pair ends at \(r\). Removing \(r\) from those two paths gives a two-cover of \(H\).
+
+**Proof.** A tight path containing \(r\) has at most one vertex after \(r\): a triple beginning at \(r\) would be non-tight. Thus \(r\) is one of the last two vertices of every tight path containing it.
+
+In an opposite-terminal-edge pair covering \(r\), at least one path contains \(r\), so its terminal edge contains \(r\). That edge is shared by both paths. The two common-terminal pairs associated by Lemma 6 have the two distinct endpoints of this edge as their common terminal vertices; precisely one ends at \(r\). Deleting that common last vertex leaves disjoint tight paths spanning \(V\), with an empty path discarded. \(\square\)
+
+Equivalently, if a common-terminal pair in \(H^+\) ends at \(v\ne r\), the involution moves its common terminal vertex to \(r\) in one step. Endpoint normalization requires no repeated search in this extension.
+
+### An exact positive factorization
+
+Let
+\[
+\mathcal A=\mathbb Q[x_v:v\in V]/(x_v^2:v\in V),
+\qquad
+F_H=\sum_{P\text{ nonempty tight in }H}x_{V(P)},
+\]
+where different path orders are counted separately.
+
+For each \(S\subseteq V\), let \(m_r(S)\) be the number of orders of \(S\cup\{r\}\) whose triple word is \(1^a0^b\). In particular \(m_r(\varnothing)=1\). Then Theorem 7, applied to every induced subtournament, gives
+\[
+\boxed{\quad
+\sum_{S\subseteq V}m_r(S)x_S=(1+F_H)^2.
+\quad}
+\]
+
+Indeed, the constant term records the order \((r)\). The term \(2F_H\) records orders arising from a single path on either side of \(r\), and \(F_H^2\) records two ordered, disjoint nonempty paths placed on the two sides. Intersecting supports vanish in \(\mathcal A\). This is a positive enumeration identity, with no cancellation.
+
+For nonempty \(V\),
+\[
+m_r(V)=2\,[x_V]\left(F_H+\frac12F_H^2\right).
+\]
+Thus proving positivity on the left is exactly the original two-cover problem. The factorization identifies the count; it does not by itself prove that its spanning coefficient is nonzero.
+
+### The remaining geodesic statement
+
+The case \(|V|=1\) is immediate, so assume \(|V|\ge2\). Apply the graph construction of Proposition 2 to \(H^+\), using only the copy \(\sigma=1\). Its pole geodesics have words
+\[
+1,\ h(w_1,w_2,w_3),\ldots,
+h(w_{n-1},w_n,w_{n+1}),\ 0.
+\]
+Such a word changes color once exactly when the internal word has the form \(1^a0^b\). Therefore the grand two-cover conjecture is equivalent to the following restricted geodesic assertion:
+
+> For every boundary tournament extended by a vertex \(r\) with \(h(u,v,r)=1\), the \(\sigma=1\) copy of its graph has a one-change geodesic between the poles.
+
+The local tournament at \(r\) may be chosen freely, for example transitive. The output need not specify a switch location or common terminal vertex: Theorem 7 and Corollary 8 supply both. The unresolved requirement is existence of that geodesic. This formulation retains every original vertex once and has exactly the strength of the two-cover conjecture, whereas the one-change target on the original vertex set remains a potentially stronger sufficient condition.
+
 
 ## Metadata
 
 - ID: antipodal_geodesics_and_complementary_path_supports
 - Kind: section
-- Version: 1
-- Math version: 1
+- Version: 3
+- Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 1: (untitled)
+- Subsection 1 — HOT, version 2: (untitled)

@@ -1,5 +1,43 @@
 {
   "article_sequences": {
+    "article_vii_antipodal_geodesics_and_topological_reformulations": [
+      {
+        "id": "antipodal_permutation_geometry",
+        "math_version": 3,
+        "position": 1,
+        "version": 9
+      },
+      {
+        "id": "lifted_geodesic_graph_and_one_change_orders",
+        "math_version": 4,
+        "position": 2,
+        "version": 12
+      },
+      {
+        "id": "complementary_path_supports_and_endpoint_involutions",
+        "math_version": 4,
+        "position": 3,
+        "version": 12
+      },
+      {
+        "id": "auxiliary_vertex_exactification",
+        "math_version": 4,
+        "position": 4,
+        "version": 12
+      },
+      {
+        "id": "cyclic_strengthenings_and_balanced_cut_obstructions",
+        "math_version": 3,
+        "position": 5,
+        "version": 9
+      },
+      {
+        "id": "antipodal_reachability_and_topological_frontier",
+        "math_version": 4,
+        "position": 6,
+        "version": 12
+      }
+    ],
     "defect_lines_and_spanningorder_compression": [
       {
         "id": "defect_lines_and_spanning_order_compression_introduction",
@@ -374,6 +412,7 @@
     ]
   },
   "article_versions": {
+    "article_vii_antipodal_geodesics_and_topological_reformulations": 23,
     "defect_lines_and_spanningorder_compression": 58,
     "deletioncover_compatibility_and_global_obstruction_structure": 21,
     "endpoint_transport_and_small_support_gluing": 21,
@@ -382,17 +421,37 @@
     "three_cover_repartitions_and_recurrence": 17
   },
   "brainstorm_count": 3,
-  "generated_at": "2026-10-04T09:51:40.892929+00:00",
+  "generated_at": "2026-10-04T15:24:06.061839+00:00",
   "mirror_format": 10,
   "schema": "gn3n",
   "section_versions": {
     "antipodal_geodesics_and_complementary_path_supports": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 3
+    },
+    "antipodal_permutation_geometry": {
+      "math_version": 3,
+      "version": 9
+    },
+    "antipodal_reachability_and_topological_frontier": {
+      "math_version": 4,
+      "version": 12
+    },
+    "auxiliary_vertex_exactification": {
+      "math_version": 4,
+      "version": 12
     },
     "balanced_cuts_obstruct_the_two_component_spanning_cycle_target": {
       "math_version": 1,
       "version": 1
+    },
+    "complementary_path_supports_and_endpoint_involutions": {
+      "math_version": 4,
+      "version": 12
+    },
+    "cyclic_strengthenings_and_balanced_cut_obstructions": {
+      "math_version": 3,
+      "version": 9
     },
     "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path": {
       "math_version": 3,
@@ -517,6 +576,10 @@
     "leaf_comparisons_in_deletion_support_forests": {
       "math_version": 14,
       "version": 18
+    },
+    "lifted_geodesic_graph_and_one_change_orders": {
+      "math_version": 4,
+      "version": 12
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts": {
       "math_version": 24,
@@ -647,7 +710,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 676,
+  "snapshot_revision": 763,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {

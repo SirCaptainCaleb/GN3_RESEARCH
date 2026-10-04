@@ -5485,3 +5485,1125 @@ with
 \]
 
 So every possible bridge pair has both a large clique of rooted four-support probes and two rooted five-support wings meeting only in the bridge pair. This does not by itself complete bridge manufacture, but it shows that scarcity of pair-rooted Hamiltonian support is never the obstruction; the remaining issue is compatibility with the ambient displayed-path orders.
+
+
+### Pair-rooted abundance contains a compatible same-slot pair
+
+Fix distinct vertices (u,v) in a minimum counterexample. Let
+[
+Y={y:(u,y,v)	ext{ is tight}}
+]
+be a fixed-pair orientation class of maximum size, so (|Y|ge5).
+
+Orient the complete graph on (Y) by
+[
+y	o xquadLongleftrightarrowquad (y,u,x)	ext{ is tight}.
+]
+This is an ordinary tournament. Hence some (xin Y) has indegree at least two; choose distinct inneighbors (y,z).
+
+Then
+[
+(y,u,x),qquad(z,u,x),qquad(u,x,v)
+]
+are tight. Therefore
+[
+(y,u,x,v),qquad(z,u,x,v)
+]
+are Hamiltonian four-paths. The two supports
+[
+K_y={y,u,x,v},qquad K_z={z,u,x,v}
+]
+share the same ordered terminal three-path
+[
+T=(u,x,v),
+]
+and the exceptional vertices (y,z) occupy the same endpoint slot before (u). Each proper support has non-Hamiltonian path-cover-two complement.
+
+Thus v89's pair-rooted clique always contains two probes that are genuinely order-compatible, not merely support-compatible.
+
+### Two quiet one-crossing comparisons force a rooted five-support
+
+Consider the deletion (H-y). The support (K_y) gives a spanning three-cover
+[
+Tmid P_ymid Q_y
+]
+of (H-y). Let (F_y) be a two-cover of (H-y).
+
+If (F_y) has exactly one interclass edge relative to the partition
+[
+V(T)mid V(P_y)mid V(Q_y)
+]
+and has no order disagreement, split inherited edge, or leave-and-return disturbance, then each old support is one contiguous block and one of the three blocks is an entire component.
+
+The isolated block cannot be (T): replacing its order by the displayed (T=(u,x,v)) and prepending (y) would give the tight path
+[
+(y,u,x,v),
+]
+while the other component of (F_y) covers every remaining vertex, yielding a two-cover of (H).
+
+Hence one of (P_y,Q_y) is isolated and the mixed component contains (T) together with the other complement block. The block order cannot have (T) first, since then prepending (y) again two-covers (H). Therefore (T) is last in the mixed component.
+
+If
+[
+(x,v,y)
+]
+were tight, appending (y) to that mixed component would two-cover (H). Thus
+[
+(x,v,y)
+]
+is non-tight, and boundary antisymmetry gives
+[
+(y,v,x)
+]
+tight.
+
+The same argument for (H-z) gives
+[
+(z,v,x)
+]
+tight whenever its comparison is also quiet one-crossing.
+
+Assume both comparisons are quiet one-crossing. Since (y,zin Y),
+[
+(u,y,v),qquad(u,z,v)
+]
+are tight. Exactly one of
+[
+(y,u,z),qquad(z,u,y)
+]
+is tight.
+
+If ((y,u,z)) is tight, then
+[
+(y,u,z,v,x)
+]
+is a Hamiltonian five-path, using ((u,z,v)) and ((z,v,x)).
+
+If ((z,u,y)) is tight, then
+[
+(z,u,y,v,x)
+]
+is a Hamiltonian five-path, using ((u,y,v)) and ((y,v,x)).
+
+Therefore
+[
+W={u,v,x,y,z}
+]
+is a Hamiltonian five-support. Its complement has path-cover number exactly two.
+
+Consequently a compatible same-slot pair from the v89 rooted-support clique has the dichotomy
+[
+oxed{
+	ext{multi-crossing/order disturbance in one deletion}
+ ee	ext{pair-rooted Hamiltonian five-support}.
+}
+]
+In particular the rooted-support abundance cannot feed two independent quiet one-crossing recurrences.
+
+
+### Maximal-support terminal-window dichotomy
+
+Let S=(s_1,...,s_k) be a maximum-cardinality proper Hamiltonian support with pc(H-S)=2. By global noninsertability, every exterior vertex x satisfies (x,s_k,s_{k-1}) tight. Put a=s_{k-2}, b=s_{k-1}, c=s_k. For each x outside S, exactly one of (b,x,c) and (c,x,b) is tight.
+
+If (b,x,c) is tight, then inserting x into the terminal gap b|c would create only the two new triples (a,b,x) and (b,x,c). Maximality says S+x is non-Hamiltonian, so this inherited-gap insertion cannot work. Since (b,x,c) is tight, (a,b,x) is non-tight, and boundary antisymmetry gives (x,b,a) tight. Thus x simultaneously reverses the final two displayed edges bc and ab of S.
+
+If (c,x,b) is tight, call x a terminal parallel-middle label. Any two such labels x,y are parallel middles between c and b, so the parallel-middle lemma gives a Hamiltonian four-support on {b,c,x,y}, with path-cover-two complement in a minimum counterexample.
+
+Hence the exterior set admits a canonical partition D dot-union M, where every x in D reverses the last two consecutive edges of S, while every pair from M yields a rooted Hamiltonian four-support containing the terminal edge of S. Since |V(H)-S|>=4, either |M|>=2 and bounded rooted support is immediate, or at least three exterior vertices lie in D and simultaneously reverse the final two edges of S.
+
+This is a valid inward-propagation statement: unlike the withdrawn propagation argument, it uses the actual terminal insertion gap, where there are only two new triples, so failure of insertion plus the known middle triple forces the preceding reversal by the genuine boundary flip. The next target is the three-label D residue.
+
+### The three-label terminal-window residue is already bounded support
+
+Retain version 91. Let
+\[
+S=(s_1,\ldots,s_k),
+\qquad
+a=s_{k-2},\quad b=s_{k-1},\quad c=s_k,
+\]
+be a maximum-cardinality proper Hamiltonian support with path-cover-two complement. The exterior set is partitioned as
+\[
+D\dot\cup M,
+\]
+where every \(x\in D\) satisfies
+\[
+(b,x,c),\qquad(x,c,b),\qquad(x,b,a)
+\]
+tight, while any two labels in \(M\) are parallel middles between \(c\) and \(b\).
+
+If \(|M|\ge2\), version 91 already gives a Hamiltonian four-support on
+\[
+\{b,c,x,y\}
+\]
+for two labels \(x,y\in M\).
+
+Otherwise \(|D|\ge3\). Choose distinct
+\[
+x,y,z\in D.
+\]
+Then
+\[
+(b,x,c),\qquad(b,y,c),\qquad(b,z,c)
+\]
+are three tight triples with the same outer endpoints \(b,c\). The three-common-endpoint theorem in the small-set toolkit therefore gives a Hamiltonian five-path on
+\[
+F=\{b,c,x,y,z\}.
+\]
+Since \(F\) is proper in a minimum counterexample,
+\[
+\operatorname{pc}(H-F)=2,
+\]
+and the complement is non-Hamiltonian.
+
+Thus the maximal-support terminal-window dichotomy has no separate three-label residue:
+
+\[
+\boxed{
+\text{every maximal support has a terminal-edge-rooted Hamiltonian support of order }4\text{ or }5.
+}
+\]
+
+The new support always contains the actual terminal edge \(\{b,c\}\) of the maximal path \(S\). This retained incidence is stronger than a generic bounded-support conclusion. The next target is to use maximality of \(S\): no Hamilton order of this rooted support may splice onto the inherited prefix of \(S\) through the directed edge \((b,c)\), since that would create a larger Hamiltonian support with two-coverable complement.
+
+
+### Clarification: the v90 five-support is automatic; the endpoint order is the real gain
+
+In the v90 same-slot construction, the labels \(x,y,z\) lie in one fixed-pair orientation class relative to \(\{u,v\}\). Hence
+\[
+(u,x,v),\qquad (u,y,v),\qquad (u,z,v)
+\]
+are all tight. The existing three-parallel-middles theorem already implies, before any deletion-cover comparison, that
+\[
+\{u,v,x,y,z\}
+\]
+is Hamiltonian. Thus the bare alternative “pair-rooted Hamiltonian five-support” in v90 is not by itself new closure information.
+
+What the quiet one-crossing comparisons add is stronger and order-sensitive. They force
+\[
+(y,v,x),\qquad(z,v,x)
+\]
+tight. Therefore exactly one of
+\[
+(y,u,z),\qquad(z,u,y)
+\]
+completes an explicit Hamiltonian five-path
+\[
+(y,u,z,v,x)
+\quad\text{or}\quad
+(z,u,y,v,x).
+\]
+In particular the five-support has a Hamilton order with prescribed terminal edge
+\[
+(v,x),
+\]
+and both exceptional labels \(y,z\) reverse the opposite orientation \((x,v)\).
+
+Hence future use of v90 should retain this endpoint-controlled order. The support existence alone is redundant; the prescribed terminal pair and simultaneous reversal data are the genuine output.
+
+
+### Quiet complements of terminal-edge-rooted supports have one-way inherited flow
+
+Let S=(s_1,...,s_{k-2},b,c) be a maximum-cardinality proper Hamiltonian support with pc(H-S)=2. Let D be the terminal orientation class from versions 91-92, so every three-set T subset D yields a Hamiltonian five-support K_T={b,c} union T. Fix such T and a two-cover H-K_T=A|B. Put S^-=(s_1,...,s_{k-2}).
+
+Assume this comparison is quiet relative to S^-: no order disagreement on the inherited core, no inherited edge of S^- is split between the two comparison paths, and no comparison path leaves S^- through a nonempty exterior block and later returns. Then S^- occurs as one contiguous inherited-order block of one comparison component, say A=L,S^-,R, where L,R contain only exterior vertices.
+
+Maximality of S forces L to be empty. Indeed if L is nonempty, truncate the tight path A after the S^- block. The resulting tight path L,S^- may be followed by the inherited vertices b,c, because the only new triples are the original terminal triples of S. Hence L,S is a Hamiltonian support strictly larger than S. It is proper because T contains three exterior vertices outside it; in a minimum counterexample every proper Hamiltonian support has two-coverable complement. This contradicts maximality of |S|.
+
+Thus A=S^-,R. Moreover |R|<=2. The component A itself is a proper Hamiltonian support and H-A is covered by K_T|B, so maximality of S gives |A|<=k. Since |S^-|=k-2, at most two exterior vertices can follow the inherited core.
+
+Therefore every quiet terminal-rooted probe has the canonical form
+
+A=(s_1,...,s_{k-2}),R,   |R|<=2,
+
+with the second comparison component wholly exterior. Symmetrically, every quiet support rooted at the initial edge {s_1,s_2} has the opposite form L,(s_3,...,s_k), with |L|<=2: no exterior block can follow the inherited suffix, because prepending s_1,s_2 would then enlarge S.
+
+Hence terminal- and initial-edge rooted probes impose opposite directional flows on the inherited maximal path. Any failure of these normal forms is already an order disagreement, split inherited edge, or leave-and-return disturbance. The remaining compatibility problem is to collide the one-way terminal flow S^-R with the one-way initial flow LS^+ or to feed the short exterior block R (or L) into the fixed-root transport theorem.
+
+### Rooted five-support exchange graph is connected
+
+Fix a prescribed pair ({u,v}). Let (mathcal F_{u,v}) be the family of three-sets (Tsubseteq V(H)-{u,v}) for which
+[
+H[{u,v}cup T]
+]
+is Hamiltonian. Join two members of (mathcal F_{u,v}) when they differ in one vertex.
+
+The four-of-six theorem gives the following rooted exchange axiom. If (Tinmathcal F_{u,v}) and (p
+otin Tcup{u,v}), then for some (tin T),
+[
+T-t+pinmathcal F_{u,v}.
+]
+Indeed, in the six-set ({u,v}cup Tcup{p}), deletion of (p) is already a Hamiltonian five-set. At least four of the six five-deletions are Hamiltonian. If none of the three deletions by (tin T) were good, only deletion of (p,u,v) could be good, giving at most three.
+
+This exchange axiom forces the rooted support graph to be connected. Suppose two connected components contain triples (B,C) with (|Bcap C|) maximal.
+
+They cannot meet in two vertices, since then they are adjacent. They cannot be disjoint: inserting any (cin C) into (B) gives a neighboring base meeting (C), increasing the intersection.
+
+Thus the maximum intersection would have to be one. Write
+[
+B={r,a,b},qquad C={r,c,d}.
+]
+Insert (c) into (B). To avoid producing a base meeting (C) in two vertices, the exchange must delete (r), so
+[
+{a,b,c}
+]
+lies in the component of (B). Likewise inserting (a) into (C) must delete (r), so
+[
+{a,c,d}
+]
+lies in the component of (C). But these two triples meet in ({a,c}), hence are adjacent, contradiction.
+
+Therefore (mathcal F_{u,v}) is connected.
+
+### Bounded-window bridge localization
+
+Let
+[
+H-{z,w}=Amid C
+]
+be any pair-deletion two-cover in a minimum counterexample, and assume (|A|,|C|ge5). Choose any five consecutive vertices (A_0) of (A) and any five consecutive vertices (C_0) of (C); for bridge manufacture take the terminal five-window of (A) and the initial five-window of (C).
+
+Color each vertex by its orientation relative to the fixed pair ({z,w}). In each five-window one color class has at least three vertices. Any three vertices in one orientation class, together with ({z,w}), form a Hamiltonian five-set by the three-common-endpoint theorem. Hence the rooted support family restricted to
+[
+A_0cup C_0
+]
+contains a triple wholly in (A_0) and a triple wholly in (C_0).
+
+The rooted exchange proof above works verbatim inside this restricted ten-vertex ground set: every requested exchange stays inside the ground set. Thus there is a path of rooted Hamiltonian five-supports from an all-(A_0) wing to an all-(C_0) wing.
+
+Along that path, the number of (A_0)-labels changes from (3) to (0) by steps of at most one. Therefore some edge has wing types
+[
+2A_0+1C_0
+quadlongleftrightarrowquad
+1A_0+2C_0.
+]
+The union of the two adjacent rooted five-supports is a six-set
+[
+U={z,w,a_1,a_2,c_1,c_2},
+qquad
+a_1,a_2in A_0,quad c_1,c_2in C_0,
+]
+and two distinct five-deletions of (U) are Hamiltonian.
+
+If (U) is Hamiltonian, minimum-counterexample calculus gives a bridge-pair-rooted Hamiltonian six-support with non-Hamiltonian path-cover-two complement.
+
+If (U) is non-Hamiltonian, the bad-six-set order-disagreement theorem applies: among its at least four Hamiltonian five-deletions, two Hamilton orders disagree on common vertices. Path-intersection calculus then produces a reversed common edge, a reversing tight triple, or a tight cycle, all inside the fixed twelve-vertex neighborhood
+[
+{z,w}cup A_0cup C_0.
+]
+
+Thus the pair-root compatibility problem is never genuinely global:
+
+[
+oxed{
+	ext{pair-deletion bridge}
+Longrightarrow
+	ext{rooted Hamiltonian six-support}
+ ee	ext{local order disturbance in a 12-vertex junction window}.
+}
+]
+
+If one side has order below five, the entire corresponding bridge interface is already bounded, so the same conclusion is a bounded-support case rather than a new large-order residue.
+
+
+### Three-window bridge localization
+
+The twelve-vertex localization of version 95 can be sharpened to an eight-vertex endpoint window.
+
+Let
+[
+H-{z,w}=Amid C
+]
+be a pair-deletion two-cover, and suppose both displayed paths have order at least three. Let
+[
+A_0={a_1,a_2,a_3}
+]
+be the terminal three vertices of (A), in inherited order, and let
+[
+C_0={c_1,c_2,c_3}
+]
+be the initial three vertices of (C).
+
+Color every vertex (xin A_0cup C_0) by its fixed-pair orientation relative to ({z,w}):
+[
+xin X_+ iff (z,x,w)	ext{ is tight},
+qquad
+xin X_- iff (w,x,z)	ext{ is tight}.
+]
+In each three-set (A_0,C_0), two vertices have the same color. Choose
+[
+a,a'in A_0,qquad c,c'in C_0
+]
+so that (a,a') have one common color and (c,c') have one common color.
+
+By the fixed-pair bad-extension theorem, the rooted four-sets
+[
+{z,w,a,a'},
+qquad
+{z,w,c,c'}
+]
+are Hamiltonian.
+
+If the two chosen monochromatic pairs have the same color, then every cross pair
+[
+{a_i,c_j},
+qquad
+a_iin{a,a'}, c_jin{c,c'},
+]
+also lies in one fixed-pair orientation class. Hence every corresponding cross-side four-set
+[
+{z,w,a_i,c_j}
+]
+is Hamiltonian. In particular there is a bridge-pair-rooted Hamiltonian four-support using one vertex from each displayed path.
+
+Suppose instead the two selected pairs have opposite colors. If some cross pair
+[
+a_iin{a,a'},qquad c_jin{c,c'}
+]
+gives a Hamiltonian four-set
+[
+{z,w,a_i,c_j},
+]
+we again obtain a cross-side rooted four-support.
+
+The only remaining case is that all four cross pairs are bad. Put
+[
+D={a,a',c,c'},
+qquad
+U={z,w}cup D.
+]
+Then the fixed-pair bad graph on (D) is exactly
+[
+K_{2,2}
+]
+with bipartition
+[
+{a,a'}mid{c,c'}.
+]
+Equivalently, relative to the prescribed pair ({z,w}), the only Hamiltonian rooted four-sets in (U) arising from pairs in (D) are the two within-class sets
+[
+{z,w,a,a'},
+qquad
+{z,w,c,c'}.
+]
+
+Now split according to the six-set (U).
+
+If (U) is Hamiltonian, then (U) is a bridge-pair-rooted Hamiltonian six-support. In a minimum counterexample its complement is non-Hamiltonian with path-cover number two.
+
+If (U) is non-Hamiltonian, the four-of-six theorem gives at least four Hamiltonian five-deletions of (U). The bad-six-set order-disagreement theorem says that Hamilton orders on all these good deletions cannot induce mutually compatible orders on their common vertices. Hence two good deletions exhibit an order disagreement, and path-intersection calculus produces inside (U) a reversed common edge, a tight triple reversing a common ordered edge, or a tight cycle.
+
+Thus every pair-deletion bridge with both sides of order at least three has the local trichotomy
+[
+oxed{
+egin{array}{c}
+	ext{cross-side rooted Hamiltonian four-support}\
+ee\
+	ext{bridge-pair-rooted Hamiltonian six-support}\
+ee\
+	ext{order disturbance inside one six-set}.
+end{array}}
+]
+
+Moreover all six path-neighborhood vertices used to find this six-set lie in
+[
+A_0cup C_0,
+]
+so the entire construction is contained in the eight-vertex endpoint window
+[
+{z,w}cup A_0cup C_0.
+]
+
+If one displayed side has order at most two, the bridge interface is already bounded and enters the existing small-support machinery.
+
+This improves version 95 in two ways: no Johnson-graph path is needed for localization, and the exceptional support/disturbance is confined to a single six-set chosen from an eight-vertex endpoint neighborhood.
+
+
+### A prescribed pair captures an inherited edge or a whole tight triple
+
+Let ({z,w}) be any prescribed pair and let
+[
+P=(p,u,t)
+]
+be a vertex-disjoint tight three-path.
+
+Then at least one of the following holds:
+
+1. ({z,w,p,u}) is Hamiltonian;
+2. ({z,w,u,t}) is Hamiltonian;
+3. ({z,w,p,u,t}) is Hamiltonian.
+
+**Proof.**
+Color (p,u,t) by their fixed-pair orientation relative to ({z,w}).
+
+If (p,u) have the same color, the fixed-pair bad-extension theorem makes
+[
+{z,w,p,u}
+]
+Hamiltonian. Likewise, if (u,t) have the same color, then
+[
+{z,w,u,t}
+]
+is Hamiltonian.
+
+It remains that both adjacent pairs have opposite colors. Suppose the five-set
+[
+F={z,w,p,u,t}
+]
+is non-Hamiltonian. A non-Hamiltonian five-set has at most one non-Hamiltonian four-subset. The two rooted four-subsets
+[
+F-{t}={z,w,p,u},
+qquad
+F-{p}={z,w,u,t}
+]
+therefore cannot both be non-Hamiltonian. Hence one of outcomes 1 or 2 holds. If (F) is Hamiltonian, outcome 3 holds. (square)
+
+Thus every prescribed pair captures either an actual inherited edge of every displayed tight three-window, or the entire three-window.
+
+### Consecutive-edge formulation
+
+Let
+[
+A=(a_1,ldots,a_r)
+]
+be a tight path disjoint from ({z,w}). Call the displayed edge
+[
+e_i=a_i a_{i+1}
+]
+**root-good** if
+[
+{z,w,a_i,a_{i+1}}
+]
+is Hamiltonian, and call the consecutive triple window
+[
+W_i={a_i,a_{i+1},a_{i+2}}
+]
+**root-good** if
+[
+{z,w}cup W_i
+]
+is Hamiltonian.
+
+For every (i),
+[
+e_i	ext{ is root-good}
+ eee_{i+1}	ext{ is root-good}
+ eeW_i	ext{ is root-good}.
+]
+
+Consequently, on any interval containing no root-good five-support, the bad displayed edges form an independent set in the ordinary path of displayed edges: no two consecutive displayed edges can both be root-bad.
+
+In a minimum counterexample every proper support supplied above has non-Hamiltonian path-cover-two complement. The gain over generic prescribed-pair support abundance is positional: a root-good four-support contains an actual inherited edge of (A), while a root-good five-support contains one complete consecutive three-window.
+
+### Endpoint consequence for a pair-deletion cover
+
+Let
+[
+H-{z,w}=Amid C,
+qquad
+A=(a_1,ldots,a_r),
+quad rge3.
+]
+Apply the lemma to the terminal window
+[
+(a_{r-2},a_{r-1},a_r).
+]
+
+Either the bridge pair ({z,w}) roots a Hamiltonian four-support containing one of the last two inherited edges of (A), or
+[
+{z,w,a_{r-2},a_{r-1},a_r}
+]
+is Hamiltonian. In the five-support case its complement has the explicit two-cover
+[
+(a_1,ldots,a_{r-3})mid C
+]
+(with the obvious empty-prefix convention). Thus the root pair can always be coupled to the terminal path geometry without appealing to an arbitrary complement two-cover.
+
+The same statement holds at the initial end of (C).
+
+This is the incidence-preserving local primitive missing from the broad prescribed-pair support theorem: the support is anchored not merely in the correct vertex set, but on an inherited edge or an inherited three-window of the displayed path.
+
+
+### Interior rooted supports force a component-drop crossing
+
+Retain a prescribed pair ({z,w}) and a pair-deletion cover
+[
+H-{z,w}=Amid C,
+qquad
+A=(a_1,ldots,a_r).
+]
+Assume (rge5), and choose
+[
+2le ile r-3.
+]
+Then
+[
+T_i=(a_i,a_{i+1},a_{i+2})
+]
+is a tight three-path lying strictly inside (A).
+
+Apply version 97 to the prescribed pair and (T_i). One of the following supports is Hamiltonian:
+[
+K_i^-={z,w,a_i,a_{i+1}},
+]
+[
+K_i^+={z,w,a_{i+1},a_{i+2}},
+]
+or
+[
+F_i={z,w,a_i,a_{i+1},a_{i+2}}.
+]
+
+In every case, deleting the rooted support leaves an explicit spanning three-cover by **three nonempty inherited tight paths**.
+
+- For (K_i^-):
+  [
+  (a_1,ldots,a_{i-1})
+  mid
+  (a_{i+2},ldots,a_r)
+  mid C.
+  ]
+
+- For (K_i^+):
+  [
+  (a_1,ldots,a_i)
+  mid
+  (a_{i+3},ldots,a_r)
+  mid C.
+  ]
+
+- For (F_i):
+  [
+  (a_1,ldots,a_{i-1})
+  mid
+  (a_{i+3},ldots,a_r)
+  mid C.
+  ]
+
+Because the support is proper in a minimum counterexample, its complement has path-cover number at most two. It cannot be Hamiltonian, or that Hamilton path together with the rooted Hamiltonian support would two-cover (H). Hence its complement has path-cover number exactly two.
+
+Now compare any two-cover of the complement with the displayed inherited three-cover above. By the component-drop lemma, some ordinary edge of the two-cover has endpoints in two different inherited components.
+
+Therefore:
+
+**Interior rooted-crossing lemma.**
+For every interior three-window of (A), the bridge pair ({z,w}) produces a rooted Hamiltonian four- or five-support whose complementary two-cover necessarily contains a crossing edge of the associated three-part inherited decomposition.
+
+The forced crossing has only two qualitative forms:
+
+1. it joins the left and right remnants of (A), bypassing the removed rooted support;
+2. it joins one remnant of (A) directly to (C).
+
+If a complementary two-cover has at least two interclass edges, the existing multi-crossing lemma gives a split inherited edge or leave-and-return disturbance. Thus the only quiet form is a one-crossing cover joining exactly two of the three inherited components while the third remains an entire comparison component.
+
+This converts pair-rooted support abundance into a distributed family of actual comparison crossings indexed by the interior edges of a displayed path. It supplies a natural next finite-state problem: slide the three-window along (A) and track which of the three inherited components is isolated in the unique quiet one-crossing case.
+
+
+### The K2,2 bridge exception contains a rooted five-support square
+
+Retain the exceptional six-set from version 96:
+[
+U={z,w,a,a',c,c'},
+]
+where (a,a') lie in one fixed-pair orientation class relative to ({z,w}), (c,c') lie in the other class, and all four cross rooted four-sets
+[
+{z,w,a_i,c_j}
+]
+are non-Hamiltonian.
+
+The within-class rooted four-sets
+[
+R_A={z,w,a,a'},
+qquad
+R_C={z,w,c,c'}
+]
+are Hamiltonian.
+
+Now fix (c_jin{c,c'}) and consider
+[
+F_{c_j}={z,w,a,a',c_j}.
+]
+Two of its four-subsets are non-Hamiltonian:
+[
+F_{c_j}-{a}={z,w,a',c_j},
+qquad
+F_{c_j}-{a'}={z,w,a,c_j}.
+]
+If (F_{c_j}) were non-Hamiltonian, the non-Hamiltonian-five-set theorem would allow at most one non-Hamiltonian four-subset, contradiction. Hence
+[
+F_c, F_{c'}
+]
+are both Hamiltonian.
+
+The symmetric argument gives
+[
+G_a={z,w,c,c',a},
+qquad
+G_{a'}={z,w,c,c',a'}
+]
+Hamiltonian as well.
+
+Therefore **all four deletions of (U) by a non-root label are Hamiltonian**:
+[
+U-{a},quad U-{a'},quad U-{c},quad U-{c'}.
+]
+Each support contains the complete bridge pair ({z,w}), and in a minimum counterexample each has non-Hamiltonian path-cover-two complement.
+
+The four supports form a rooted square:
+[
+F_c, F_{c'}, G_a, G_{a'}.
+]
+The two (F)-supports contain the fixed same-color pair (a,a') and one (C)-label; the two (G)-supports contain the fixed same-color pair (c,c') and one (A)-label.
+
+There is also order control. For fixed (c_j), choose any tight ordering of the three-set
+[
+T_j={z,w,c_j}.
+]
+Both four-extensions
+[
+T_jcup{a},
+qquad
+T_jcup{a'}
+]
+are non-Hamiltonian by the (K_{2,2}) hypothesis. The controlled two-bad-four-extension theorem therefore gives a Hamiltonian path on
+[
+F_{c_j}=T_jcup{a,a'}
+]
+whose two endpoints both lie in (T_j). Symmetrically, each (G_{a_i}) has a Hamilton order whose endpoints both lie in
+[
+{z,w,a_i}.
+]
+
+Thus the exact fixed-pair (K_{2,2}) exception is not a sparse support branch. It produces four overlapping bridge-pair-rooted five-support probes with controlled endpoint sets.
+
+Consequently version 96 sharpens to:
+[
+oxed{
+	ext{cross-side rooted four-support}
+ ee	ext{rooted five-support square with controlled endpoints}
+ ee	ext{local order disturbance}.
+}
+]
+The separate rooted-six-support alternative is unnecessary.
+
+
+### The quiet K2,2 square has a Hamilton path between the bridge labels
+
+Retain the version-99 six-set
+[
+U={z,w,a,a',c,c'}
+]
+with exact fixed-pair bad graph
+[
+K_{2,2}
+]
+between the same-color pairs
+[
+{a,a'},qquad {c,c'}.
+]
+
+Version 99 gives four Hamiltonian five-deletions retaining the bridge pair:
+[
+U-{a},quad U-{a'},quad U-{c},quad U-{c'}.
+]
+Choose the controlled Hamilton orders supplied there, so that
+
+- on (U-{c'}={z,w,a,a',c}), both endpoints lie in ({z,w,c});
+- on (U-{c}), both endpoints lie in ({z,w,c'});
+- on (U-{a'}), both endpoints lie in ({z,w,a});
+- on (U-{a}), both endpoints lie in ({z,w,a'}).
+
+If two of these four orders disagree on the relative order of common vertices, path-intersection calculus already gives the standard local disturbance.
+
+Assume therefore that all four controlled orders are mutually compatible.
+
+The standard gluing argument for compatible five-deletions produces a total order
+[
+Q=(q_1,ldots,q_6)
+]
+on (U) whose restriction to each of the four five-deletions is the chosen Hamilton order.
+
+The first vertex (q_1) must be one of the bridge labels (z,w). Suppose instead that (q_1=xin{a,a',c,c'}). For every deletion label (din{a,a',c,c'}-{x}), the vertex (x) remains the first endpoint of the restricted order (Q-d). Hence (x) must belong to the allowed endpoint set associated with that deletion:
+[
+{z,w,d^*},
+]
+where
+[
+a^*=a',quad (a')^*=a,quad c^*=c',quad(c')^*=c.
+]
+But among the three choices (d
+e x), at least two have distinct partners (d^*
+e x). Since (x
+otin{z,w}), this is impossible.
+
+Thus
+[
+q_1in{z,w}.
+]
+The same argument at the final endpoint gives
+[
+q_6in{z,w}.
+]
+Since the endpoints are distinct,
+[
+{q_1,q_6}={z,w}.
+]
+
+Finally (Q) is itself a tight Hamilton path. Any consecutive triple of (Q) omits at least one of the four non-root labels. Delete such a label (d). The triple remains consecutive in (Q-d), and (Q-d) is one of the chosen tight Hamilton five-paths. Hence every consecutive triple of (Q) is tight.
+
+Therefore:
+
+**Bridge-endpoint six-path lemma.**
+In the exact (K_{2,2}) bridge exception, either the four controlled rooted five-probes contain an order disagreement, or the six-set (U) has a Hamilton tight path whose two endpoints are exactly the prescribed bridge labels (z,w).
+
+This sharpens versions 96 and 99 to the order-sensitive dichotomy
+[
+oxed{
+	ext{cross-side rooted four-support}
+ ee	ext{local order disturbance}
+ ee	ext{Hamilton six-path from }z	ext{ to }w.
+}
+]
+
+The last outcome is much stronger than an unrooted six-support: it retains the full bridge pair as the two path endpoints and is therefore directly compatible with endpoint-reversal and complementary-tail arguments.
+
+
+### Endpoint deletion works for any rooted Hamiltonian support
+
+The endpoint-deletion argument of Lemma 8 does not depend on the support having order four.
+
+Let
+\[
+K=(k_0,k_1,\ldots,k_{m-1}),\qquad m\ge3,
+\]
+be a Hamiltonian path in a minimum counterexample, and suppose
+\[
+H-K=A\mid B
+\]
+is a two-cover. Put
+\[
+C=(k_1,\ldots,k_{m-1}).
+\]
+Let \(F\) be any deletion cover of \(H-k_0\). Relative to the displayed three-cover
+\[
+C\mid A\mid B
+\]
+of \(H-k_0\), at least one of the following holds:
+
+1. an inherited displayed path is split into at least two \(F\)-blocks, hence an inherited displayed edge is split between the two comparison paths or one comparison path leaves a displayed support and later returns;
+2. a tight triple reverses an end edge of a displayed \(F\)-block, or reverses the initial edge incident with \(k_0\);
+3. \(H\) has a two-cover.
+
+Proof. Let \(t\) be the number of ordinary \(F\)-edges joining distinct classes among \(C,A,B\). Since three nonempty displayed classes are covered by two paths, \(t\ge1\). If \(t\ge2\), cutting all interclass edges creates at least four monochromatic blocks among three classes, so one displayed class appears in at least two blocks; this is outcome 1.
+
+Assume \(t=1\). If the unique crossing joins \(A\) to \(B\), then \(C\) is an entire component and the other component is Hamiltonian on \(H-K\). Together with \(K\) this two-covers \(H\).
+
+Otherwise \(C\) is concatenated with one of \(A,B\); call the other class \(E\). Let
+\[
+R=(r_1,\ldots,r_{m-1})
+\]
+be the order induced on the \(C\)-block. If the mixed component is \(R,D\), then either
+\[
+(k_0,r_1,r_2)
+\]
+is tight and prepending \(k_0\) yields a two-cover of \(H\), or its boundary reverse
+\[
+(r_2,r_1,k_0)
+\]
+is tight and reverses the initial edge of the \(C\)-block. The case \(D,R\) is symmetric at the terminal edge. This proves the claim.
+
+### The v100 pair-root localization has no support residue
+
+Apply the preceding lemma to the two support outcomes of version 100.
+
+If the localization gives a cross-side rooted Hamiltonian four-set
+\[
+\{z,w,a,c\},
+\]
+then \(a,c\) lie in one fixed-pair orientation class. If
+\[
+(z,a,w),\qquad(z,c,w)
+\]
+are tight, exactly one of \((a,z,c),(c,z,a)\) is tight, giving a Hamiltonian order
+\[
+a,z,c,w\quad\text{or}\quad c,z,a,w.
+\]
+Thus \(w\) is an endpoint. In the opposite orientation class the symmetric argument makes \(z\) an endpoint. Endpoint deletion therefore gives a two-cover or a split/leave-and-return/end-edge-reversal disturbance.
+
+If the exact \(K_{2,2}\) exception gives the Hamiltonian six-path from \(z\) to \(w\), then \(z\) and \(w\) are already explicit endpoints. Endpoint deletion again gives a two-cover or the same disturbance alternatives.
+
+Hence the version-100 trichotomy collapses to
+\[
+\boxed{
+\text{pair-deletion bridge}
+\Longrightarrow
+\text{two-cover}
+\ \vee\
+\text{local comparison disturbance}.
+}
+\]
+No cross-side rooted four-support or bridge-endpoint six-path survives as an independent terminal branch.
+
+
+### The spaced four-side gap-network residue is impossible
+
+Retain the hard outcome (3) of four_side_gap_network_disturbance01. Thus
+\[
+X=(x_0,x_1,x_2,x_3)
+\]
+is a Hamiltonian four-path, the host path interior is \(M\), and for some \(t\)
+\[
+g_2=t,\qquad g_1=t+1.
+\]
+Let \(z\in M\) be the unique internal vertex of the connector from \(x_2\) to \(x_1\). Put
+\[
+F=\{x_1,x_2,b_t,z,b_{t+2}\}.
+\]
+
+Every four-subset of \(F\) meets both \(X\) and \(M\): deleting one of \(x_1,x_2\) leaves one \(X\)-vertex and three \(M\)-vertices, while deleting one of the three \(M\)-vertices leaves two vertices from each side.
+
+By the five-set theorem in smallset01, if \(F\) is Hamiltonian then at most three of its four-subsets are non-Hamiltonian, so at least two are Hamiltonian. If \(F\) is non-Hamiltonian then at most one four-subset is non-Hamiltonian, so at least four are Hamiltonian.
+
+Hence in either case \(F\) contains a Hamiltonian four-set meeting both \(X\) and \(M\). In a minimum counterexample this four-set is proper and has non-Hamiltonian path-cover-two complement. This is exactly outcome (1) of four_side_gap_network_disturbance01, contradicting the assumption that outcome (3) was reached.
+
+Therefore outcome (3) is empty. The theorem sharpens to
+\[
+\boxed{
+\text{four-label gap network}
+\Longrightarrow
+\text{mixed Hamiltonian four-support}
+\ \vee\
+\text{tight triple reversing an outer edge of }X.
+}
+\]
+There is no spaced middle residue at any host-path order.
+
+
+### Double-ended carrier paths reduce to a clean reversal or a two-ended carrier
+
+Let
+\[
+A=(a_1,\ldots,a_r),\qquad B=(b_1,\ldots,b_s),\qquad
+T=(u,t_2,\ldots,t_{m-1},v)
+\]
+be a spanning three-cover of a minimum counterexample, with \(r,s\ge2\) and \(m\ge3\). Suppose the two endpoints of \(T\) reverse the terminal edges of the two other displayed paths:
+\[
+(u,a_r,a_{r-1}),\qquad(v,b_s,b_{s-1})
+\]
+are tight.
+
+Delete \(u,v\), and write
+\[
+T^\circ=(t_2,\ldots,t_{m-1}).
+\]
+By minimum-counterexample minimality, \(H-\{u,v\}\) has a two-cover \(F\). Compare \(F\) with the displayed three-cover
+\[
+A\mid B\mid T^\circ.
+\]
+
+If \(F\) has at least two interclass ordinary edges, then cutting them gives at least four monochromatic blocks distributed among three displayed classes. Hence some displayed class is split, yielding the standard split inherited edge or leave-and-return disturbance.
+
+Assume therefore that \(F\) is quiet and has exactly one interclass edge. Then one displayed class is an entire component and the other two occur as contiguous blocks in the second component.
+
+If the unique crossing joins \(A\) directly to \(B\), then the mixed component is Hamiltonian on \(A\cup B\), while restoring \(u,T^\circ,v\) gives the original tight path \(T\). These two paths cover \(H\), impossible.
+
+Suppose the unique crossing joins \(A\) to \(T^\circ\), leaving \(B\) isolated; the case joining \(B\) to \(T^\circ\) is symmetric.
+
+If the mixed path has block order
+\[
+T^\circ,A,
+\]
+prepend \(u\). Since \((u,t_2,t_3)\) is inherited from \(T\) (with the obvious short-path convention), this gives a deletion cover
+\[
+H-v=(u,T^\circ,A)\mid B.
+\]
+The omitted label \(v\) still satisfies
+\[
+(v,b_s,b_{s-1}),
+\]
+so this is a clean deletion-cover endpoint reversal on the isolated path \(B\).
+
+If instead the mixed path has block order
+\[
+A,T^\circ,
+\]
+then appending \(v\) restores the inherited terminal end of \(T\). If
+\[
+(u,a_1,a_2)
+\]
+were tight, then
+\[
+(u,A,T^\circ,v)\mid B
+\]
+would two-cover \(H\). Therefore it is non-tight, and boundary antisymmetry gives
+\[
+(a_2,a_1,u)
+\]
+tight. Together with the original
+\[
+(u,a_r,a_{r-1})
+\]
+this says that the single carrier \(u\) reverses both the initial and terminal displayed end edges of \(A\).
+
+Thus a double-ended carrier state has the trichotomy
+\[
+\boxed{
+\text{two-cover}
+\ \vee\
+\text{split/leave-return disturbance}
+\ \vee\
+\text{clean deletion endpoint reversal}
+\ \vee\
+\text{one carrier reversing both ends of one displayed path}.
+}
+\]
+The last alternative is a genuinely stronger recurrence state: the same exterior label controls both ends of one nontrivial path.
+
+
+### The one-carrier two-ended residue collapses to a two-cover or a positioned four-support
+
+Retain the last alternative of version 103. Thus
+\[
+A=(a_1,\ldots,a_r),\qquad B=(b_1,\ldots,b_s),
+\]
+and the quiet pair-deletion comparison has produced a deletion cover
+\[
+H-u=(A,T^\circ,v)\mid B,
+\]
+where
+\[
+R=(A,T^\circ,v)
+\]
+is tight, while the omitted label \(u\) satisfies
+\[
+(a_2,a_1,u),\qquad(u,a_r,a_{r-1})
+\]
+tight. In particular
+\[
+(u,a_1,a_2)
+\]
+is non-tight.
+
+Consider the spanning order
+\[
+B,u,R
+=
+(b_1,\ldots,b_s,u,a_1,\ldots,a_r,T^\circ,v).
+\]
+All consecutive triples are tight except possibly the three join triples
+\[
+(b_{s-1},b_s,u),\qquad
+(b_s,u,a_1),\qquad
+(u,a_1,a_2).
+\]
+The third is known non-tight.
+
+If
+\[
+(b_{s-1},b_s,u)
+\]
+is tight, every defect center lies among the two consecutive centers \(u,a_1\). Hence this spanning order has defect span at most two. By the defect-span characterization, \(H\) has a two-cover.
+
+Otherwise boundary antisymmetry gives
+\[
+(u,b_s,b_{s-1})
+\]
+tight. Together with
+\[
+(u,a_r,a_{r-1})
+\]
+the single carrier \(u\) reverses the terminal edges of the two vertex-disjoint tight paths \(A\) and \(B\). The valid common-carrier lemma therefore produces a Hamiltonian four-set on the exposed vertices. In a minimum counterexample this support is proper and has non-Hamiltonian path-cover-two complement.
+
+Thus the last residue of version 103 satisfies
+\[
+\boxed{
+\text{one carrier reversing both ends of one path}
+\Longrightarrow
+\text{two-cover}
+\ \vee\
+\text{positioned Hamiltonian four-support}.
+}
+\]
+
+Consequently the double-ended carrier state of version 103 has no independent recurrence geometry: after split/leave-return and clean endpoint-reversal branches are separated, its only genuinely quiet residue is already back inside the bounded four-support architecture.
+
+
+### The positioned four-support retains an explicit three-piece complement
+
+Retain the four-support outcome of version 104. Thus a single carrier \(u\) reverses the terminal edges of two vertex-disjoint tight paths
+\[
+A=(a_1,\ldots,a_r),\qquad B=(b_1,\ldots,b_s),
+\]
+and \(u\) was the initial endpoint of a third path
+\[
+T=(u,t_2,\ldots,v).
+\]
+
+The common-carrier lemma gives one of the Hamiltonian four-paths
+\[
+K=(a_r,u,b_s,b_{s-1})
+\]
+or
+\[
+K=(b_s,u,a_r,a_{r-1}).
+\]
+
+In the first case,
+\[
+H-K
+\]
+has the explicit inherited three-cover
+\[
+(a_1,\ldots,a_{r-1})
+\mid
+(b_1,\ldots,b_{s-2})
+\mid
+(t_2,\ldots,v),
+\]
+whenever all three pieces are nonempty. In the second case the explicit inherited three-cover is
+\[
+(a_1,\ldots,a_{r-2})
+\mid
+(b_1,\ldots,b_{s-1})
+\mid
+(t_2,\ldots,v).
+\]
+Empty short-prefix cases are bounded endpoint cases and may be handled separately.
+
+Because \(K\) is a proper Hamiltonian support in a minimum counterexample, \(H-K\) is non-Hamiltonian with path-cover number two. Compare any two-cover of \(H-K\) with the displayed inherited three-cover. The component-drop principle forces an ordinary comparison edge joining two distinct inherited pieces.
+
+If there are at least two inter-piece comparison edges, cutting them creates at least four blocks among three inherited classes, so some inherited path is split or a comparison component leaves one inherited path and later returns. This is exactly the standard split/leave-and-return disturbance.
+
+Hence outside the existing disturbance interface the complement of the positioned four-support has exactly one inter-piece comparison edge. One inherited path is then an entire comparison component and the other two occur as contiguous blocks of the second component.
+
+Thus the v104 four-support does not reset the argument to a generic bounded-support state. It retains a finite three-way comparison geometry:
+\[
+\boxed{
+\text{positioned }K_4
+\Longrightarrow
+\text{split/leave-return disturbance}
+\ \vee\
+\text{a unique crossing between two of three explicit inherited pieces}.
+}
+\]
+
+
+### The positioned four-support is endpoint-rooted in the inherited geometry
+
+Retain the positioned Hamiltonian four-support produced in version 104. The common-carrier proof gives one of the explicit Hamiltonian orders
+\[
+K=(a_r,u,b_s,b_{s-1})
+\]
+or
+\[
+K=(b_s,u,a_r,a_{r-1}).
+\]
+
+Thus \(K\) is not merely positioned by its vertex set: in the first case the inherited vertex \(a_r\) is a displayed endpoint of \(K\), and in the second case the inherited vertex \(b_s\) is a displayed endpoint. The opposite endpoint is also inherited from one of the short paths.
+
+Since \(H-K\) is non-Hamiltonian with path-cover number two, the generalized endpoint-deletion lemma of version 101 applies immediately to either displayed endpoint of \(K\). Therefore any deletion cover at that endpoint yields one of:
+
+1. a split inherited edge or leave-and-return disturbance relative to the core \(K-\{\text{root}\}\) and the two complementary paths;
+2. a tight triple reversing an end edge of one of the displayed comparison blocks, including the root-adjacent edge of the three-vertex core;
+3. a two-cover of \(H\).
+
+Hence the positioned four-support branch of versions 104-105 cannot be an independent terminal state. It re-enters the same local comparison-disturbance interface, now with the deleted root chosen from the original \(A/B\) endpoint geometry.

@@ -66,3 +66,10 @@
   - Section: Two distinct remaining lemmas (`three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas`)
   - Section: Appendix. Why finiteness is insufficient (`three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient`)
   - Section: Canonical references (`three_cover_repartitions_and_recurrence_canonical_references`)
+- article_vii_antipodal_geodesics_and_topological_reformulations.md — Article VII — antipodal geodesics and topological reformulations
+  - Section: Antipodal geometry of permutation space (`antipodal_permutation_geometry`)
+  - Section: The lifted geodesic graph and one-change orders (`lifted_geodesic_graph_and_one_change_orders`)
+  - Section: Complementary path supports and endpoint involutions (`complementary_path_supports_and_endpoint_involutions`)
+  - Section: Auxiliary-vertex exactification (`auxiliary_vertex_exactification`)
+  - Section: Cyclic strengthenings and balanced-cut obstructions (`cyclic_strengthenings_and_balanced_cut_obstructions`)
+  - Section: Antipodal reachability and the topological frontier (`antipodal_reachability_and_topological_frontier`)
