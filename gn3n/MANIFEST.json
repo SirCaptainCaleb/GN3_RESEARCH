@@ -169,9 +169,9 @@
       },
       {
         "id": "endpoint_transport_and_small_support_gluing_the_remaining_lemma",
-        "math_version": 15,
+        "math_version": 16,
         "position": 8,
-        "version": 18
+        "version": 19
       },
       {
         "id": "endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption",
@@ -189,9 +189,9 @@
       },
       {
         "id": "longest_paths_and_reversal_structure_reversals_are_unavoidable",
-        "math_version": 14,
+        "math_version": 15,
         "position": 2,
-        "version": 17
+        "version": 18
       },
       {
         "id": "longest_paths_and_reversal_structure_a_longest_path",
@@ -376,13 +376,13 @@
   "article_versions": {
     "defect_lines_and_spanningorder_compression": 55,
     "deletioncover_compatibility_and_global_obstruction_structure": 20,
-    "endpoint_transport_and_small_support_gluing": 20,
-    "longest_paths_and_reversal_structure": 30,
+    "endpoint_transport_and_small_support_gluing": 21,
+    "longest_paths_and_reversal_structure": 31,
     "quadratic_potential_and_pairwise_repartition": 4,
     "three_cover_repartitions_and_recurrence": 16
   },
   "brainstorm_count": 3,
-  "generated_at": "2026-10-04T00:38:25.122484+00:00",
+  "generated_at": "2026-10-04T02:42:53.409393+00:00",
   "mirror_format": 10,
   "schema": "gn3n",
   "section_versions": {
@@ -495,8 +495,8 @@
       "version": 1
     },
     "endpoint_transport_and_small_support_gluing_the_remaining_lemma": {
-      "math_version": 15,
-      "version": 18
+      "math_version": 16,
+      "version": 19
     },
     "endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices": {
       "math_version": 1,
@@ -543,8 +543,8 @@
       "version": 1
     },
     "longest_paths_and_reversal_structure_reversals_are_unavoidable": {
-      "math_version": 14,
-      "version": 17
+      "math_version": 15,
+      "version": 18
     },
     "longest_paths_and_reversal_structure_the_endpoint_pair_family": {
       "math_version": 1,
@@ -639,7 +639,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 576,
+  "snapshot_revision": 606,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {

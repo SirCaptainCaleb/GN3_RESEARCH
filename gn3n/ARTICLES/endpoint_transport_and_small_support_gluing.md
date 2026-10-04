@@ -1113,115 +1113,45 @@ Thus the canonical endpoint-pair square has only one possible immediate terminal
 
 
 
-### The two cross-endpoint orientations are forced and yield opposite five-supports
 
-The minimum-counterexample hypothesis determines the two cross corners of the endpoint-pair square completely.
 
-**Lemma 21 (forced opposite central five-supports).** Let
+### Correction: the cross-endpoint central orientation is not forced
+
+For a deletion cover
 [
-H-x=Pmid Q,
+H-x=Pmid Q,qquad
+P=(p_1,ldots,p_m),qquad
+Q=(q_1,ldots,q_s),
+]
+the endpoint-insertion failures give
+[
+(p_{m-1},p_m,x) 	ext{non-tight},
 qquad
-P=(p_1,ldots,p_m),
-qquad
-Q=(q_1,ldots,q_s)
+(x,q_1,q_2) 	ext{non-tight},
 ]
-be a deletion cover of a minimum counterexample. Then
+but they do not determine the status of the distinct middle triple
 [
-(q_1,x,p_m)
-qquad	ext{and}qquad
-(p_1,x,q_s)
+(p_m,x,q_1).
 ]
-are tight.
-
-Consequently
-[
-F_{R,L}
-=
-(q_2,q_1,x,p_m,p_{m-1})
-]
-and
-[
-F_{L,R}
-=
-(p_2,p_1,x,q_s,q_{s-1})
-]
-are Hamiltonian five-paths. Each is a proper Hamiltonian support with non-Hamiltonian complement of path-cover number two.
-
-More explicitly,
-[
-H-V(F_{R,L})
-=
-(p_1,ldots,p_{m-2})
-mid
-(q_3,ldots,q_s),
-]
-and
-[
-H-V(F_{L,R})
-=
-(p_3,ldots,p_m)
-mid
-(q_1,ldots,q_{s-2}),
-]
-with empty inherited intervals omitted in the short boundary cases.
-
-**Proof.** If
-[
-(p_m,x,q_1)
-]
-were tight, then every consecutive triple of
+In particular, the spanning order
 [
 (p_1,ldots,p_m,x,q_1,ldots,q_s)
 ]
-would be tight: all triples away from (x) are inherited from (P,Q), while the unique new central triple is the displayed one. This would be a Hamilton path on all of (H), contradicting the minimum-counterexample assumption. Hence
-[
-(p_m,x,q_1)
-]
-is non-tight, and boundary antisymmetry gives
-[
-(q_1,x,p_m)
-]
-tight.
+has three new triples around (x), not one. Even if ((p_m,x,q_1)) is tight, the two outer new triples above remain non-tight, so this order is not Hamiltonian.
 
-The symmetric spanning order
-[
-(q_1,ldots,q_s,x,p_1,ldots,p_m)
-]
-shows that
-[
-(q_s,x,p_1)
-]
-is non-tight, so its boundary flip
-[
-(p_1,x,q_s)
-]
-is tight.
+Therefore the former claim that ((q_1,x,p_m)) and ((p_1,x,q_s)) are forced tight is withdrawn, as are the canonical five-path conclusions that depended on those forced orientations.
 
-Lemma 14 gives
-[
-(q_2,q_1,x),
-qquad
-(x,p_m,p_{m-1}),
-]
-and therefore
-[
-(q_2,q_1,x,p_m,p_{m-1})
-]
-is a tight five-path. Likewise
-[
-(p_2,p_1,x),
-qquad
-(x,q_s,q_{s-1}),
-]
-together with ((p_1,x,q_s)), give
-[
-(p_2,p_1,x,q_s,q_{s-1}).
-]
+The valid preceding statements remain unchanged. In particular:
 
-Deleting the vertices of either five-path leaves the two inherited path intervals displayed above, so each complement has path-cover number at most two. If either complement were Hamiltonian, that Hamilton path together with the corresponding five-path would two-cover (H). Hence each complement is non-Hamiltonian with path-cover number exactly two. (square)
+- Lemma 18 supplies canonical four-supports at the same-end endpoint pairs without choosing the orientation of the central boundary pair.
+- Lemma 19 supplies the four endpoint-pair rooted three-support states by orienting each central triple in whichever direction is actually tight.
+- At a cross pair such as ((p_m,q_1)), if ((q_1,x,p_m)) happens to be tight then
+  [
+  (q_2,q_1,x,p_m,p_{m-1})
+  ]
+  is indeed a tight five-path; if the opposite orientation ((p_m,x,q_1)) is tight, that five-path is unavailable and this is a genuine separate branch.
 
-Thus every deletion cover comes with two canonical five-supports running through (x) in opposite cross directions. In particular, the “central three-or-five path” construction has no three-path branch in a minimum counterexample: the forbidden spanning concatenation forces the five-path orientation.
-
+Thus future arguments at the two cross corners must retain the central orientation as case data rather than infer it from the failure of the deletion-cover concatenation.
 
 
 ---
