@@ -382,10 +382,14 @@
     "three_cover_repartitions_and_recurrence": 16
   },
   "brainstorm_count": 3,
-  "generated_at": "2026-10-04T02:42:53.409393+00:00",
+  "generated_at": "2026-10-04T04:58:16.527166+00:00",
   "mirror_format": 10,
   "schema": "gn3n",
   "section_versions": {
+    "balanced_cuts_obstruct_the_two_component_spanning_cycle_target": {
+      "math_version": 1,
+      "version": 1
+    },
     "defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path": {
       "math_version": 3,
       "version": 3
@@ -639,7 +643,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 606,
+  "snapshot_revision": 638,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {

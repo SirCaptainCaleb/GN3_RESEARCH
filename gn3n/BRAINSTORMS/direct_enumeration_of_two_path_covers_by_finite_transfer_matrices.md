@@ -2383,3 +2383,1466 @@ Perm(B_1) x ... x Perm(B_t),  2<=t<=4,
 where the blocks occur as fixed contiguous intervals in every spanning order belonging to F.
 
 Thus the topological branch has a concrete macrostructure: either a compact bounded switch window occurs, or all remaining obstruction is already visible while only two, three, or four contiguous vertex blocks are allowed to permute internally. The next target is to determine which block can control the first switch and which can control the reflected last switch; if these controls lie in independent end blocks, the product structure should permit a filling, so a genuine obstruction should force both switch fronts into one common block or adjacent blocks.
+
+
+### Correction to the v34 four-unit near-diagonal claim
+
+The v34 inference that both old and new first-switch positions must lie in the affected five-position window of an adjacent transposition is too strong.
+
+Let W=[k-3,k+1] be the only switch positions whose indicators can change under swapping positions k,k+1. If the first switch changes from x' to an earlier x, then x is forced into W, but x' may lie arbitrarily far to the right: the swap can create a new early switch inside W while the old first switch remains unchanged farther out. Thus a rook-edge sign change does not by itself imply |x-y|<=4.
+
+The same issue applies symmetrically to a last-switch jump. Therefore the constant-four near-diagonal conclusion of v34 is withdrawn. The exact diagonal and compact-window branches remain valid, and the later v35 face-balancing/root-cycle argument is independent of this correction.
+
+What survives is a useful jump-corridor lemma.
+
+**Jump-corridor lemma.**
+Suppose adjacent orders pi,pi' differ only at positions k,k+1 and their first switches differ. If a(pi')=x lies in W and a(pi)=x'>max W, then:
+1. x' remains a switch of pi';
+2. pi' has no switch strictly between max W and x';
+3. hence the triple-status word of pi' is monochromatic on that whole corridor.
+
+Indeed all switch indicators outside W are unchanged, pi had no switch before x', and x' was itself a switch.
+
+Thus a large extreme-switch jump creates a long monochromatic run with one end in the bounded splice window and the other at the old front. The symmetric statement holds for a last-switch jump.
+
+Consequently, along a path inside the few-block faces isolated in v36, a change from x<y to x>y yields one of:
+- an exact diagonal order;
+- a bounded exceptional near-rook edge;
+- a genuinely local crossing where both fronts are near the swap window;
+- or a long monochromatic corridor exported from that window.
+
+This corrected alternative interfaces naturally with the run-reversal certificate machinery: the topology can force a front crossing, while a large jump produces a long run rather than a spurious constant-distance conclusion.
+
+
+### Block-separation completion forces an exact diagonal
+
+Let F be one of the root-balanced few-block faces isolated above. Write its ordered partition as
+B_1|...|B_t,
+2<=t<=4,
+so every vertex order of F is obtained by permuting independently inside these fixed contiguous blocks.
+
+Suppose x is a coordinate on a directed extreme-switch cycle in F. Then there are orders pi,sigma in F with
+a(pi)=x
+and
+m-b(sigma)=x.
+Thus sigma has last switch
+b(sigma)=m-x.
+
+The first-switch condition a(pi)=x is determined entirely by the triple colors epsilon_1,...,epsilon_{x+1}, hence by the vertices in positions at most x+3. The last-switch condition b(sigma)=m-x is determined entirely by the suffix beginning at position m-x.
+
+**Block-separation completion lemma.**
+If F has a block boundary c satisfying
+x+3 <= c < m-x,
+then F contains an exact-diagonal order tau with
+q(tau)=(x,x).
+
+**Proof.**
+Choose tau by taking the internal permutations of all blocks ending at or before c from pi and all blocks beginning after c from sigma. This is allowed by the Cartesian-product structure of F. Since positions through x+3 agree with pi, tau has first switch x. Since positions from m-x onward agree with sigma, tau has last switch m-x. Hence its reflected last coordinate is x. (square)
+
+Consequently, in the branch where no exact diagonal order exists, every directed-cycle coordinate x satisfies:
+
+> no face-block boundary lies in [x+3,m-x-1].
+
+Whenever this interval is nonempty, the entire corridor between the local neighborhoods of the mirror switch fronts lies inside one permutation block.
+
+This strongly sharpens the v36 few-block reduction. A genuinely global non-diagonal obstruction cannot keep the first and reflected-last switch fronts in independently permuting blocks; product independence would complete them to the forbidden diagonal. Instead, for every noncentral coordinate on the root cycle, one block must span the whole central corridor between the two mirror fronts.
+
+Thus the remaining topology has a giant-block form: either the cycle coordinates are all within O(1) of the center, or a single large block reaches across a substantial central interval. The next target is to exploit internal permutations of that spanning block, together with the jump-corridor/run-reversal lemmas, to move one extreme front without disturbing the other.
+
+
+### Color-sensitive face balancing and alternating switch-front cycles
+
+The uncolored root map admits a stronger color-sensitive variant.
+
+For a spanning order \(\pi\), put
+\[
+x=a(\pi),\qquad y=m-b(\pi),
+\]
+and let \(\alpha,\omega\in\{0,1\}\) be the first and last triple colors. Define
+\[
+\zeta(\pi)=(-1)^\alpha e_x+(-1)^\omega e_y
+\in \mathbb R^{m-1}.
+\]
+Reversal swaps \(x,y\) and complements both outer colors, so
+\[
+\zeta(\pi^{\rm rev})=-\zeta(\pi).
+\]
+
+The only way \(\zeta(\pi)=0\) is
+\[
+x=y,\qquad \alpha\ne\omega,
+\]
+which is exactly the reflected odd-run diagonal singularity.
+
+Assume no such singular order exists. If every permutahedron face had \(\zeta\)-convex hull avoiding \(0\), the barycentric face-average construction from version 35 would give an antipodal map
+\[
+S^m\longrightarrow S^{m-2},
+\]
+impossible by Borsuk--Ulam. Hence some actual ordered-partition face \(F\) satisfies
+\[
+0\in\operatorname{conv}\{\zeta(\pi):\pi\in V(F)\}.
+\]
+
+Interpret each order as an edge between the coordinate vertices \(x\) and \(y\), with half-edge signs \((-1)^\alpha\) at \(x\) and \((-1)^\omega\) at \(y\). A positive convex dependence at \(0\) says that, at every coordinate vertex, total positive half-edge weight equals total negative half-edge weight.
+
+Such a balanced signed incidence flow decomposes into **alternating closed walks**: consecutive half-edges at each shared coordinate have opposite signs. Therefore there are orders
+\[
+\pi_1,\ldots,\pi_t\in V(F)
+\]
+whose extreme-switch coordinate edges form a closed walk and whose corresponding outer colors are opposite at every shared coordinate.
+
+Orient every edge naturally from its first-switch coordinate \(a(\pi)\) to its reflected-last coordinate \(m-b(\pi)\). Then an alternating closed walk has one of two qualitative forms.
+
+1. **Coherent winding.** All natural orientations run consistently around the walk. This is a color-compatible directed switch-front cycle.
+2. **Source/sink collision.** At some shared coordinate the two incident natural edges both point out or both point in. In the first case, two orders in the same face have the same first-switch coordinate and opposite first colors. In the second, two orders have the same reflected-last coordinate and opposite last colors.
+
+Thus color-sensitive Borsuk--Ulam produces more than the uncolored root cycle: either a coherent colored winding cycle or a same-front/opposite-color collision inside one few-block ordered-partition face.
+
+
+### Non-diagonal few-block faces force cross-intersecting determining families
+
+Let F=B_1|...|B_t, 2<=t<=4, be a few-block face carrying one of the directed switch-front coordinates supplied by the root-balanced or color-sensitive circulation. Fix a coordinate r that occurs both as a first-switch coordinate and as a reflected last-switch coordinate in F.
+
+Define L_r to be the family of ordered vertex segments
+(v_1,...,v_{r+3})
+arising from orders pi in F with a(pi)=r. Define R_r to be the family of ordered suffix segments
+(v_{m-r},...,v_n)
+arising from orders sigma in F with m-b(sigma)=r. Their supports both have order r+3.
+
+**Cross-intersection lemma.**
+If F contains no exact-diagonal order q=(r,r), then every support from L_r intersects every support from R_r.
+
+**Proof.**
+Take L in L_r and R in R_r. If their supports were disjoint, use the Cartesian permutation freedom of F block by block. In every block, place the elements prescribed by L in their prescribed early positions and the elements prescribed by R in their prescribed late positions; disjointness makes these prescriptions compatible, and fill the remaining positions arbitrarily. The resulting order tau lies in F, agrees with the first witness through position r+3, and agrees with the second witness from position m-r onward. Hence a(tau)=r and m-b(tau)=r, giving q(tau)=(r,r), contradiction. (square)
+
+In the v38 giant-central-block regime, all fixed outer blocks on the left and right are disjoint automatically. Therefore every forced intersection between L_r and R_r occurs inside the one block spanning the mirror-front corridor. The global topological obstruction is thus concentrated as a cross-intersection condition on two families of subsets of one permutation block.
+
+Version 39 adds colors to this picture. In the coherent color-compatible circulation branch, each r comes with prescribed outer-run colors, so L_r and R_r become cross-intersecting families of colored tight-path determining segments. In the source/sink collision branch, the same coordinate r supports two determining families with opposite outer colors on the same side, giving a second local comparison problem.
+
+This is the natural point to invoke the matching/intersection portion of the imported topology toolkit: either find disjoint representatives from the left and right determining families, which immediately completes to an exact diagonal order, or derive a structural common-intersection obstruction inside the giant block. No small-order enumeration is involved.
+
+
+### Source/sink collisions force a bounded outer run
+
+Consider the source branch from the color-sensitive alternating-walk theorem. Thus two orders \(\pi,\sigma\) in one permutahedron face have the same first-switch coordinate
+\[
+a(\pi)=a(\sigma)=x
+\]
+but opposite first triple colors.
+
+Because the graph of every permutahedron face is connected, join \(\pi\) to \(\sigma\) by adjacent transpositions inside the face. Along this path the first triple color changes. Choose an edge \(\rho\rho'\) on which it changes.
+
+An adjacent transposition at positions \(k,k+1\) can change the first triple color only when \(k\le3\). Consequently every triple-status position \(i\ge5\) is unchanged across \(\rho\rho'\).
+
+If both \(a(\rho)>4\) and \(a(\rho')>4\), then in each order the status positions \(1,\ldots,5\) belong to the first monochromatic run. Since position \(5\) is unchanged across the edge, the first colors would be equal, contradiction. Hence
+\[
+\min\{a(\rho),a(\rho')\}\le4.
+\]
+
+Therefore a source collision forces some spanning order whose first monochromatic run has at most four triple positions. The corresponding vertex segment has order at most six and is Hamiltonian: if the run color is tight, use the displayed orientation; if it is non-tight, reverse that segment, which boundary reversal makes tight.
+
+The sink branch is symmetric: two orders with the same reflected-last coordinate and opposite last colors force an order with
+\[
+m-b\le4,
+\]
+and hence a Hamiltonian terminal segment on at most six vertices.
+
+Thus the color-sensitive topology splits more sharply:
+
+1. a source/sink collision immediately produces a Hamiltonian support of order at most six;
+2. only the coherently oriented alternating cycle remains genuinely global.
+
+In a minimum counterexample, every such proper Hamiltonian support has non-Hamiltonian two-coverable complement. Hence the source/sink branch enters the existing four-/five-/six-support machinery, including the full two-label square available for Hamiltonian six-supports.
+
+
+### One canonical giant block, or a three-coordinate central cycle
+
+Let
+\[
+x_1\to x_2\to\cdots\to x_t\to x_1
+\]
+be a simple directed extreme-switch cycle in one few-block face \(F\), and assume \(F\) contains no exact diagonal order. Put
+\[
+r=\min_i x_i.
+\]
+
+Every arc \(x_i\to x_{i+1}\) comes from a spanning order with
+\[
+a=x_i,\qquad m-b=x_{i+1}.
+\]
+Since \(a<b\),
+\[
+x_i+x_{i+1}\le m-1.
+\]
+In particular, because every coordinate is at least \(r\),
+\[
+2r\le m-1.
+\]
+
+By the block-separation completion lemma, for every cycle coordinate \(x\), no face-block boundary lies in
+\[
+[x+3,m-x-1].
+\]
+When \(x\ge r\), this interval is contained in
+\[
+[r+3,m-r-1].
+\]
+Hence, if the latter interval is nonempty, it lies entirely inside one face block \(B\), and every nonempty mirror-front corridor belonging to every coordinate of the cycle lies inside this same block. Thus the giant central block is canonical: it is already determined by the minimum cycle coordinate.
+
+There is a complementary near-central branch. If
+\[
+[r+3,m-r-1]
+\]
+is empty, then
+\[
+2r\ge m-3.
+\]
+For any cycle coordinate \(x_i\), choose one of its neighbors \(x_j\) on the directed cycle. Since \(x_j\ge r\) and
+\[
+x_i+x_j\le m-1,
+\]
+we have
+\[
+x_i\le m-1-r.
+\]
+Therefore
+\[
+0\le x_i-r\le m-1-2r\le2.
+\]
+So every cycle coordinate lies in
+\[
+\{r,r+1,r+2\}.
+\]
+
+Consequently the coherent-winding branch has the following exact structural dichotomy:
+
+1. **canonical giant block:** one fixed permutation block contains every nonempty mirror-front corridor for the entire directed cycle;
+2. **central three-coordinate regime:** every switch-front coordinate on a simple directed cycle belongs to three consecutive integers, so the simple cycle itself has length two or three.
+
+This removes the ambiguity that different cycle coordinates might require different spanning blocks. The genuinely nonlocal branch is controlled by one common central permutation block; otherwise the topology has already collapsed to a two- or three-state extreme-front cycle.
+
+
+### The central regime is always a two-cycle
+
+In the central branch of version 42, let \(r\) be the minimum coordinate of a simple directed extreme-switch cycle. We know
+\[
+2r\ge m-3
+\]
+and every arc \(x\to y\) satisfies
+\[
+x+y\le m-1.
+\]
+Since some cycle coordinate is adjacent to \(r\) and is at least \(r\), also
+\[
+2r\le m-1.
+\]
+Put
+\[
+d=m-1-2r.
+\]
+Then
+\[
+d\in\{0,1,2\}.
+\]
+
+The case \(d=0\) is impossible: every coordinate is at least \(r\), while the arc inequality forces both endpoints of every arc to equal \(r\), giving the forbidden diagonal label \((r,r)\).
+
+If \(d=1\), every coordinate lies in \(\{r,r+1\}\). Since diagonal arcs are excluded, the only possible simple directed cycle is
+\[
+r\longrightarrow r+1\longrightarrow r.
+\]
+
+If \(d=2\), every coordinate lies in \(\{r,r+1,r+2\}\). But
+\[
+(r+1)+(r+2)=2r+3>m-1=2r+2,
+\]
+so no arc can join \(r+1\) to \(r+2\) in either direction. Diagonal arcs are again excluded. Hence every simple directed cycle must use \(r\) as the intermediate vertex between any other coordinates. A simple cycle therefore has length two:
+\[
+r\longrightarrow s\longrightarrow r,
+\qquad
+s\in\{r+1,r+2\}.
+\]
+
+Thus the central coherent-winding residue consists of two spanning orders \(\pi,\sigma\) in one face with
+\[
+q(\pi)=(r,s),\qquad q(\sigma)=(s,r),
+\qquad s-r\in\{1,2\}.
+\]
+
+In the color-compatible winding supplied by version 39, if \(\alpha_\pi,\omega_\pi\) and \(\alpha_\sigma,\omega_\sigma\) are their first and last colors, then alternation at the two shared coordinates gives
+\[
+\omega_\pi=1-\alpha_\sigma,
+\qquad
+\omega_\sigma=1-\alpha_\pi.
+\]
+So the near-central topology is reduced to a reciprocal pair of extreme fronts, with the two coordinates differing by at most two and with complementary cross-end colors.
+
+
+### The reciprocal central pair collapses to one three-switch residue
+
+Retain the central reciprocal pair from version 43:
+\[
+q(\pi)=(r,s),\qquad q(\sigma)=(s,r),
+\qquad s-r\in\{1,2\}.
+\]
+For any order with label \(q=(x,y)\),
+\[
+b-a=m-x-y.
+\]
+Hence in the central pair
+\[
+b(\pi)-a(\pi)=b(\sigma)-a(\sigma)=m-r-s.
+\]
+
+The possibilities from version 43 give
+\[
+m-r-s\in\{1,2\}.
+\]
+Thus all switches of each order lie in an interval of at most three consecutive switch positions.
+
+If \(m-r-s=1\), the first and last switches are consecutive, so the status word has exactly the form
+\[
+A^{r}\,\bar A\,A^{s}.
+\]
+Reverse the whole spanning order if necessary so that \(A\) is tight. There is then exactly one non-tight consecutive triple. Its defect line has one edge, hence matching number at most one, and the defect-line identity gives a spanning two-cover. Therefore this case is impossible in a counterexample.
+
+Now suppose
+\[
+m-r-s=2.
+\]
+If the middle switch position is absent, the word is
+\[
+A^{r}\,\bar A^{\,2}\,A^{s}.
+\]
+Again reverse the whole order if necessary so \(A\) is tight. The two non-tight consecutive triples give two adjacent defect-line edges, whose matching number is one. Hence this case also yields a two-cover.
+
+Therefore a counterexample can survive the central branch only when all three switch positions
+\[
+a,\ a+1,\ a+2
+\]
+are present.
+
+This can happen only in the parameter case
+\[
+m-1=2r+2,\qquad s=r+1.
+\]
+For \(\pi\),
+\[
+a=r,\qquad b=r+2,
+\]
+and for \(\sigma\),
+\[
+a=r+1,\qquad b=r+3.
+\]
+The two status words are therefore
+\[
+A^{r}\,\bar A\,A\,\bar A^{\,r+1}
+\]
+and
+\[
+A'^{\,r+1}\,\bar A'\,A'\,\bar A'^{\,r}.
+\]
+
+The color-compatible alternation of version 39 forces
+\[
+\omega_\pi=1-\alpha_\sigma,
+\qquad
+\omega_\sigma=1-\alpha_\pi.
+\]
+Each displayed word has three switches, so its last color is the complement of its first. Substitution gives
+\[
+\alpha_\pi=\alpha_\sigma.
+\]
+Thus \(A'=A\).
+
+So the entire near-central coherent-winding branch reduces to one exact reciprocal pattern:
+\[
+\boxed{
+A^{r}\,\bar A\,A\,\bar A^{\,r+1}
+\quad\text{and}\quad
+A^{r+1}\,\bar A\,A\,\bar A^{\,r}
+}
+\]
+on two spanning orders in one face, with the same outer starting color.
+
+All other central reciprocal configurations already give a two-cover by the defect-line identity.
+
+
+### The last central three-switch residue is also a two-cover
+
+Version 44 left one possible near-central word:
+\[
+A^{r}\,\bar A\,A\,\bar A^{\,r+1},
+\]
+up to the reciprocal companion order.
+
+Write the corresponding spanning order as
+\[
+(v_1,\ldots,v_n),
+\qquad
+m=n-2=2r+3.
+\]
+Cut the vertex order between
+\[
+v_{r+2}\quad\text{and}\quad v_{r+3}.
+\]
+
+The first block
+\[
+(v_1,\ldots,v_{r+2})
+\]
+has internal consecutive-triple status positions
+\[
+1,\ldots,r,
+\]
+all of color \(A\).
+
+The second block
+\[
+(v_{r+3},\ldots,v_n)
+\]
+has internal status positions
+\[
+r+3,\ldots,m,
+\]
+all of color \(\bar A\).
+
+The two exceptional middle status positions
+\[
+r+1,\qquad r+2
+\]
+straddle the cut and impose no condition on either path.
+
+If \(A\) is tight, traverse the first block in the displayed direction and the second block in reverse. Every internal triple of both resulting paths is tight. If \(A\) is non-tight, reverse the first block and keep the second in the displayed direction. Again both are tight.
+
+Thus this single order already gives a spanning two-cover.
+
+Consequently **no near-central coherent-winding residue survives at all**. Combined with versions 42--44, every coherent winding in a counterexample must lie in the canonical giant-block branch, where the minimum switch-front coordinate has a nonempty mirror corridor and one fixed permutation block contains the mirror corridors for the entire cycle.
+
+
+### Correction: the canonical giant-block reduction does not require a few-block face
+
+Versions 38--45 were phrased as though the root-balanced face from version 35 had first been identified with the 2-, 3-, or 4-block obstruction cell from version 36. That identification has not been proved and should not be assumed.
+
+Fortunately, the main reduction does not need it.
+
+Let \(F\) be the arbitrary ordered-partition face supplied by version 35, and let
+\[
+x_1\to x_2\to\cdots\to x_t\to x_1
+\]
+be a simple directed cycle in its extreme-switch digraph. Write
+\[
+F=B_1|\cdots|B_k
+\]
+with no restriction on \(k\), and put
+\[
+r=\min_i x_i.
+\]
+
+The block-separation completion lemma uses only the Cartesian product structure of a permutahedron face: if a face-block boundary lies between the determining prefix for first switch \(x\) and the determining suffix for reflected last switch \(x\), the two witness orders can be combined blockwise to produce an exact diagonal order \(q=(x,x)\).
+
+Therefore, in the no-diagonal branch, no block boundary lies in
+\[
+[x+3,m-x-1]
+\]
+for any cycle coordinate \(x\). In particular, if
+\[
+[r+3,m-r-1]\ne\varnothing,
+\]
+this entire interval lies inside one block \(B\). Since every other cycle coordinate satisfies \(x\ge r\),
+\[
+[x+3,m-x-1]\subseteq [r+3,m-r-1],
+\]
+so the same block \(B\) contains every nonempty mirror-front corridor on the entire cycle.
+
+If the minimum corridor is empty, the arithmetic argument of versions 42--45 applies without any block-count hypothesis and produces a spanning two-cover.
+
+Hence version 35 alone, together with block separation and the central-word analysis, gives the unconditional topology reduction:
+
+> Every counterexample contains an ordered-partition face with a directed extreme-switch cycle whose minimum coordinate \(r\) has a nonempty mirror corridor, and one canonical permutation block contains every mirror-front corridor of that cycle.
+
+The 2-, 3-, or 4-block statement of version 36 remains a separate observation about a particular cellular obstruction construction. It is not used in the canonical giant-block reduction.
+
+Likewise, the cross-intersection lemma of version 40 is valid for an arbitrary ordered-partition face. Once the canonical block \(B\) contains the mirror corridor, the determining prefix and suffix supports can intersect only through the relevant portions of \(B\); no bound on the number of outer blocks is needed.
+
+
+### Correct giant-block cross-intersection at the minimum winding coordinate
+
+The cross-intersection statement of version 40 needs the determining position windows to be disjoint. That hypothesis is automatic for the minimum coordinate in the surviving giant-block branch.
+
+Let
+x_1 -> ... -> x_t -> x_1
+be the simple directed extreme-switch cycle from the root-balanced face, and put
+r=min_i x_i.
+The near-central branch has been eliminated in versions 42--45, so the mirror corridor
+[r+3,m-r-1]
+is nonempty. Hence
+2r<=m-4,
+and the two determining position windows
+P=[1,r+3],
+Q=[m-r,n]
+are disjoint.
+
+Assume there is no exact diagonal order q=(r,r). By block separation, no face-block boundary lies between r+3 and m-r. Therefore positions r+3 and m-r belong to one common block B, the canonical giant block.
+
+Write the position interval of B as [p,q]. Put
+ell=r+4-p,
+rho=q-(m-r)+1.
+Thus ell is the number of B-positions lying in P and rho the number lying in Q. Both are positive, and the corresponding position bands in B are disjoint.
+
+Let A_r be the family of supports inside B used by the prefix window P among orders with first switch r. Every member of A_r has size ell. Let C_r be the family of supports inside B used by the suffix window Q among orders with reflected last switch r. Every member of C_r has size rho.
+
+**Uniform cross-intersection lemma.**
+Every A in A_r meets every C in C_r.
+
+**Proof.**
+All blocks strictly before B lie entirely in P and all blocks strictly after B lie entirely in Q, so their vertex sets are disjoint and fixed. Suppose A and C were disjoint. Take witnesses for A and C. Inside B, prescribe the left witness on the ell positions B intersect P and the right witness on the rho positions B intersect Q. These position bands are disjoint, and A,C are disjoint, so the prescriptions are compatible. Fill the remaining positions of B arbitrarily and use arbitrary compatible orders in the other blocks. The resulting face vertex agrees with the first witness throughout P and with the second throughout Q. Hence its first switch is r and its reflected last switch is r, giving the forbidden exact diagonal. (square)
+
+Thus the surviving global topology has a precise finite combinatorial core:
+[
+mathcal A_rsubseteq {Bchoose ell},
+qquad
+mathcal C_rsubseteq {Bchoose ho},
+]
+are nonempty uniform cross-intersecting families, with each set carrying an ordered determining segment and an outer-run color.
+
+This is the correct matching-theoretic interface. Version 40's unrestricted formulation should be read only in this separated-window regime; near-central overlap is handled separately and has already been eliminated.
+
+The next target is to exploit the extra structure beyond abstract cross-intersection: these families arise as first- and last-switch determining sets under the full symmetric permutation freedom of B, and the color-sensitive winding prescribes compatible outer colors. A disjoint pair gives an exact diagonal immediately; a genuine extremal cross-intersection must therefore impose a common-core or small-transversal phenomenon that can be converted into vertex transport or endpoint reversal.
+
+
+### Boundary exchange in the giant block gives a star or a front jump
+
+Retain the minimum winding coordinate r and the canonical block B from version 47. Let pi be an order in the root-balanced face with first switch r, and let A in A_r be the B-part of its determining prefix [1,r+3].
+
+Let z be the vertex of B occupying position r+3 in pi. Put
+K=A-{z}.
+Because the first-switch condition is determined by positions at most r+3, the vertices of B strictly after position r+3 may be permuted arbitrarily without changing a(pi)=r.
+
+Fix any
+w in B-A.
+First permute only positions after r+3 so that w occupies position r+4; this preserves first switch r. Then swap positions r+3 and r+4. Call the resulting order pi_w.
+
+All triple-status positions strictly before r are unchanged, so
+a(pi_w)>=r.
+Exactly one of the following occurs.
+
+1. **successful boundary exchange:** a(pi_w)=r. Then the new B-support in the determining prefix is
+K union {w}.
+Thus K union {w} belongs to A_r.
+
+2. **front displacement:** a(pi_w)>r. The adjacent swap affects switch indicators only in
+[r,r+4].
+Hence either the new first switch lies in {r+1,...,r+4}, a bounded local-front event, or the whole interval of switch positions from r through r+4 becomes switch-free and the next first switch is an unchanged old switch farther to the right. In the latter case pi_w has the jump-corridor monochromatic run supplied by version 37.
+
+This gives a useful extremal consequence. Suppose every choice
+w in B-A
+is a successful boundary exchange. Then
+K union {u} in A_r
+for every u in B-K
+(including u=z from the original witness).
+
+Since A_r and C_r are cross-intersecting, every
+C in C_r
+meets every set K union {u}. Therefore either
+C meets K,
+or C contains all of B-K.
+Consequently, if
+rho < |B|-|K| = |B|-ell+1,
+then K is a transversal of C_r:
+K meets every member of C_r.
+
+Thus the giant-block branch has the following exchange dichotomy.
+
+- A failed one-step replacement produces a bounded local-front event or a long monochromatic jump corridor.
+- If every one-step replacement succeeds, one side of the cross-intersection contains a full one-vertex star, and the opposite family has a fixed transversal of size at most ell-1 unless its members occupy essentially all of B.
+
+The symmetric statement holds at the right determining boundary, exchanging the vertex at position m-r with the preceding B-position. This is the first direct conversion of the topological cross-intersection residue into a matching-style small-transversal obstruction.
+
+
+### Exact diagonal remains a separate branch
+
+The topology reduction must retain the exact-diagonal alternative explicitly. Version 35 produces a root-balanced face only after excluding a spanning order with
+\[
+q(\pi)=(r,r),
+\qquad
+a(\pi)=r,\quad b(\pi)=m-r.
+\]
+Hence the unconditional topological frontier is:
+
+1. an exact-diagonal spanning order; or
+2. the canonical giant-block directed-cycle regime of versions 46--48.
+
+The exact-diagonal branch has its own central freedom. Put
+\[
+d=b-a=m-2r.
+\]
+Fix the determining prefix through position \(r+3\) and the determining suffix from position \(b\) onward. Then every permutation of the vertices in the intermediate position interval
+\[
+r+4,\ldots,b-1
+\]
+preserves \(q=(r,r)\). Thus, when \(d\ge5\), the diagonal branch also contains a freely permutable central block of order \(d-4\).
+
+There is a general compact-switch observation which removes the smallest diagonal gaps.
+
+**Lemma.** If a spanning order has first and last switch positions \(a<b\) with
+\[
+b-a\le2,
+\]
+then \(H\) has a spanning two-cover.
+
+**Proof.** Cut the vertex order between positions \(a+2\) and \(a+3\). The first block has internal status positions at most \(a\), hence all one color because \(a\) is the first switch. The second block has internal status positions at least \(a+3>b\), hence all one color because \(b\) is the last switch. Reverse either block if its common color is non-tight. Both resulting blocks are tight paths. \(\square\)
+
+Consequently an exact diagonal can survive in a counterexample only when
+\[
+m-2r\ge3.
+\]
+For gap at least five it has a nonempty free central permutation block; gaps three and four are the remaining compact diagonal interface.
+
+### Full boundary exchange gives an unconditional transversal
+
+Retain the notation of version 48. The canonical block \(B\) contains \(\ell\) left-determining positions and \(\rho\) right-determining positions. Since the minimum mirror corridor is nonempty,
+\[
+2r\le m-4.
+\]
+A direct position count gives
+\[
+\ell+\rho
+=
+|B|+2r+4-m
+\le |B|.
+\]
+
+Let \(A\in\mathcal A_r\), let \(z\) be its boundary vertex at position \(r+3\), and put
+\[
+K=A-\{z\}.
+\]
+Suppose every replacement of \(z\) by a vertex \(w\in B-A\) preserves first switch \(r\). Version 48 then gives
+\[
+K\cup\{u\}\in\mathcal A_r
+\]
+for every \(u\in B-K\).
+
+For \(C\in\mathcal C_r\), cross-intersection with every \(K\cup\{u\}\) implies either \(C\cap K\ne\varnothing\), or \(C\) contains all of \(B-K\). The latter would require
+\[
+\rho\ge |B|-|K|=|B|-\ell+1.
+\]
+But \(\ell+\rho\le |B|\) gives
+\[
+\rho\le |B|-\ell<|B|-\ell+1.
+\]
+Therefore the second alternative is impossible.
+
+Hence:
+
+> If all left boundary exchanges succeed, \(K\) is a fixed \((\ell-1)\)-vertex transversal of the entire right family \(\mathcal C_r\).
+
+The symmetric assertion holds with left and right interchanged.
+
+Choose now an inclusion-minimal transversal
+\[
+T\subseteq K
+\]
+of \(\mathcal C_r\). For every \(x\in T\), minimality supplies a private witness
+\[
+C_x\in\mathcal C_r
+\]
+such that
+\[
+C_x\cap T=\{x\}.
+\]
+Thus the no-front-jump branch manufactures a family of right switch witnesses which transport individual vertices of one fixed left core to the far determining suffix while avoiding all the other transversal vertices.
+
+This gives the sharpened giant-block trichotomy:
+
+1. a left or right boundary exchange fails, producing a bounded local-front event or a long jump corridor;
+2. all exchanges succeed on one side, producing a fixed small transversal and private opposite-side transport witnesses;
+3. the symmetric structure occurs on both sides.
+
+The next target is to combine two private witnesses with path-intersection / endpoint-reversal calculus, rather than treating the cross-intersecting families as arbitrary set systems.
+
+
+### Giant-block cross-intersection forces a front-displacing adjacent swap
+
+The matching/transversal structure can be simplified further.
+
+Retain the canonical giant-block branch at the minimum cycle coordinate \(r\). Let
+\[
+b=m-r.
+\]
+Fix one order \(\sigma\) in the face with last switch \(b\), equivalently reflected last coordinate \(r\). Fix also one left determining support
+\[
+A\in\mathcal A_r
+\]
+of size \(\ell\) inside the canonical block \(B\). Let the right determining band inside \(B\) have size \(\rho\). As in version 49,
+\[
+\ell+\rho\le |B|.
+\]
+
+Freeze the internal orders of every face block other than \(B\), and consider the full adjacent-transposition graph of permutations of \(B\). This graph is connected.
+
+Suppose, for contradiction, that every adjacent transposition inside \(B\), whenever applied to an order whose last switch is \(b\), preserves last switch \(b\). Starting from \(\sigma\), connectedness then implies that **every** permutation of \(B\), with the other blocks frozen as in \(\sigma\), has last switch \(b\).
+
+Since
+\[
+\ell+\rho\le |B|,
+\]
+choose disjoint subsets
+\[
+A,\ C\subseteq B,
+\qquad |A|=\ell,\quad |C|=\rho.
+\]
+Choose a permutation of \(B\) putting exactly \(C\) in the right determining band. By the preceding closure assumption, the resulting order still has reflected last coordinate \(r\).
+
+Now independently replace the orders in all face blocks lying strictly before the right determining window by their orders from a witness for \(A\in\mathcal A_r\). This does not affect the last-switch condition, which is determined by the suffix beginning at position \(b\). Inside \(B\), choose the permutation so that the left determining band uses exactly \(A\) and the right determining band exactly \(C\); the bands are disjoint and so are \(A,C\). The resulting face vertex has
+\[
+a=r,\qquad m-b=r,
+\]
+an exact diagonal, contradiction.
+
+Therefore:
+
+> In the no-diagonal canonical giant-block branch, there exists an order \(\tau\) with last switch \(b=m-r\) and an adjacent transposition of two positions inside \(B\) after which the last switch is no longer \(b\).
+
+The symmetric statement holds for the first switch.
+
+This converts the whole giant-block cross-intersection problem into local front motion. If the transposition occurs well to the left of \(b\), it cannot affect any status at or after \(b\), so the last switch remains \(b\). Hence every front-displacing swap lies in or to the right of the bounded neighborhood of \(b\).
+
+If it lies in the bounded neighborhood of \(b\), one obtains a bounded local-front event. If it lies farther to the right, the old order has no switches between \(b\) and the local swap window, because \(b\) was its last switch; the new order differs only in that local window. Thus one obtains a long monochromatic jump corridor between the old front and the new local disturbance.
+
+Consequently the canonical giant-block topology has the unconditional reduction
+\[
+\boxed{
+\text{exact diagonal}
+\quad\text{or}\quad
+\text{bounded local front displacement}
+\quad\text{or}\quad
+\text{long monochromatic jump corridor}.
+}
+\]
+
+This bypasses the need to classify extremal cross-intersecting families. The transversal/private-witness machinery of versions 48--49 remains valid, but it is no longer necessary merely to escape the giant-block topology.
+
+
+### Deterministic front pushing collapses the giant block to width three
+
+Let pi=(v_1,...,v_n) be a spanning order in the surviving canonical giant-block branch. Let a be its first switch and b its last switch. Assume b-a>=4 and that positions a+3 and a+4 lie in the canonical permutation block B. Swap the vertices in positions a+3 and a+4, producing pi_prime.
+
+Write A for the first-run color. The old boundary vertex z=v_(a+3) satisfies that the triple at status position a+1 has color 1-A. If after the swap the first switch remains a, then the replacement vertex w=v_(a+4) gives the same color 1-A at that same triple position. After orienting the monochromatic outer prefix as a tight path, both z and w are exterior reversers of the same exposed end edge. Hence the existing two-reverser lemma gives a Hamiltonian four-support.
+
+Otherwise the first switch moves strictly right. No switch before a can be created by this swap, and when b>a+4 the last switch is untouched. Therefore the switch span b-a strictly decreases.
+
+Starting from a cycle witness with first switch at the minimum winding coordinate r, the canonical block contains every position from r+3 through m-r. As long as b-a>=5, we have a>=r and a+4<=b-1<=m-r-1, so the required adjacent swap is always available inside B. Thus repeated failed exchanges strictly decrease b-a until either a Hamiltonian four-support appears or b-a<=4.
+
+If b-a=4, the same swap still cannot move the last switch to the right: all switch indicators beyond a+4 are unchanged and were zero. Hence a failed exchange again decreases the span. Therefore the only compact residue has
+
+b-a<=3.
+
+If b-a<=2, cutting between the two middle vertices discards the two straddling status positions; the two remaining outer status blocks are monochromatic and can be oriented independently as tight paths. Hence H has a spanning two-cover.
+
+Therefore the only unresolved front-motion residue is
+
+b-a=3.
+
+In this case a failed left boundary exchange either reduces the span to at most two, giving a two-cover, or produces a new order with first switch a+1 and last switch a+4. Thus the width-three switch window translates rigidly one position to the right. Repeating, either a second reverser appears, the span drops to the solved range, or the width-three window walks to the far end of the canonical block.
+
+So the arbitrary-order giant-block obstruction has been reduced to one exact local dynamical pattern: a three-wide switch window translating through B under adjacent swaps.
+
+
+### Universal front pushing and the width-three carrier
+The adjacent swap at positions a+3,a+4 does not need to remain inside the topology face. For any spanning order with first switch a and last switch b, if b-a>=4 then either the first switch stays a, in which case the old and new boundary vertices are two exterior reversers of the same exposed end edge and give the known Hamiltonian four-support, or the first switch moves right. If b>a+4 the last switch is unchanged, so the span strictly decreases; if b=a+4 it cannot move right, so the span still decreases. Hence every spanning order reduces to a two-cover, a four-support, or switch span three.
+
+In span three, regard the boundary vertex z as a carrier and delete it. All successive translations of the three-wide window induce the same order D of H-z. If z is at position j, D is monochromatic in the first-run color through status j-3 and in the last-run color from status j onward. Each surviving translation forces one more intervening status of D to equal the first-run color. Two translations make D monochromatic when the outer colors agree; three translations are impossible when they disagree. Thus a width-three walker cannot persist for more than two steps in either direction without producing a two-cover or the two-reverser four-support.
+
+
+### Correction: two reversers of the same edge do not force a four-support
+
+Versions 51--52 used the claim that if two exterior vertices z,w both reverse the same displayed edge xy, then {x,y,z,w} contains a Hamiltonian four-set. That claim is false.
+
+The valid earlier lemma is different: one exterior vertex z reversing two distinct terminal edges gives a four-support because the two possible cross triples are genuine boundary flips of one another. With two different exterior vertices reversing one common edge, boundary antisymmetry gives no corresponding relation between z and w.
+
+Concretely, from
+(z,y,x) tight
+and
+(w,y,x) tight
+there is no forced status among the additional triples needed to concatenate z and w into a four-path. An explicit four-vertex boundary tournament can satisfy both displayed triples while having no Hamilton path, so the implication fails even at order four.
+
+Therefore the conclusions in versions 51--52 that a successful adjacent swap automatically yields a Hamiltonian four-support are withdrawn. In particular, the claimed universal reduction of every spanning order to switch span three is not established.
+
+What remains valid from those versions is the local front-motion calculation:
+- swapping positions a+3,a+4 affects only a bounded window of statuses/switches;
+- if the first switch moves right while the last switch is outside that window, the switch span decreases;
+- if it jumps past the local window, a long monochromatic corridor is created;
+- if the first switch stays fixed, the old and replacement vertices have the same reversal/extension relation to the exposed ordered edge.
+
+Thus a successful swap produces a **same-edge twin pair**, not a four-support. The corrected target is to understand how a large family of such same-edge twins interacts with the local tournament structure or with a second exposed edge; only a vertex that acquires reversal data at two distinct terminal edges triggers the valid common-exterior-reverser four-support lemma.
+
+
+### Same-end common reversers: initial-initial is as good as terminal-terminal
+
+The valid common-exterior-reverser lemma has a symmetric initial-edge form which is important for the color-sensitive topology.
+
+Let A=(a_1,...,a_s) and P=(p_1,...,p_t) be vertex-disjoint tight paths, s,t>=2, and let w lie outside both.
+
+If w reverses both terminal edges,
+(w,a_s,a_{s-1}) and (w,p_t,p_{t-1})
+tight,
+the previously recorded lemma gives a Hamiltonian four-set.
+
+The same conclusion holds if w reverses both initial edges:
+(a_2,a_1,w) and (p_2,p_1,w)
+tight.
+Indeed exactly one of
+(a_1,w,p_1), (p_1,w,a_1)
+is tight. In the first case
+(a_2,a_1,w,p_1)
+is a tight four-path; in the second
+(p_2,p_1,w,a_1)
+is a tight four-path.
+
+Thus a common reverser of two **same-type ends** (terminal-terminal or initial-initial) gives a Hamiltonian four-support. The mixed initial-terminal case is not asserted.
+
+Now return to the coherent color-compatible winding at the minimum coordinate r. Let A in A_r be a left witness and C in C_r a right witness. Since A,C cross-intersect and |A|+|C|<=|B|, we have
+|A union C|<=|B|-1.
+Choose
+w in B-(A union C).
+
+Perform the left boundary exchange with w and the symmetric right boundary exchange with the same w.
+
+If the left front moves, we obtain the bounded local-front/jump-corridor branch. If the right front moves, likewise.
+
+Suppose both fronts remain fixed. Let alpha be the first outer color of the left witness and omega the last outer color of the right witness. Color-sensitive coherent winding gives
+alpha != omega.
+
+If alpha=1 and omega=0, after orienting the two monochromatic outer blocks as tight paths, w reverses their two terminal boundary edges.
+
+If alpha=0 and omega=1, the tight orientations of both outer blocks are reversed relative to the displayed order, and w reverses their two initial boundary edges.
+
+Hence in either color case the same-end common-reverser lemma gives a Hamiltonian four-support.
+
+Therefore every pair of left/right witnesses at the minimum winding coordinate admits a vertex w producing the sharp trichotomy
+[
+oxed{
+	ext{left front displacement}
+quad	ext{or}quad
+	ext{right front displacement}
+quad	ext{or}quad
+	ext{Hamiltonian four-support}.
+}
+]
+
+This is the correct salvage of the front-pushing idea. The error in v51-v52 was using two vertices at one edge; topology supplies one vertex at two mirror edges, and the color alternation guarantees that the two reversals have the same endpoint type.
+
+
+
+### Distance-two front swap: a deep boundary candidate acquires a second disjoint reversal
+
+The corrected target from version 53 can be solved directly whenever the monochromatic run after the first switch has length at least three.
+
+Let
+\[
+\pi=(v_1,\ldots,v_n)
+\]
+have first switch at \(a\). Reverse the whole order if necessary so that the first run is tight. Put
+\[
+x=v_{a+1},\quad y=v_{a+2},\quad z=v_{a+3},\quad
+w=v_{a+4},\quad u=v_{a+5}.
+\]
+Then the triple at status \(a\) is tight and the triple
+\[
+(x,y,z)
+\]
+at status \(a+1\) is non-tight.
+
+Assume the second run persists through status \(a+3\). In particular
+\[
+(z,w,u)
+\]
+is non-tight, so boundary reversal gives
+\[
+(u,w,z)
+\]
+tight. Thus \(u\) reverses the terminal edge \(zw\) of the two-vertex tight path \((z,w)\).
+
+Now swap the vertices in positions \(a+3\) and \(a+5\), producing
+\[
+\pi'=(\ldots,x,y,u,w,z,\ldots).
+\]
+No status before \(a\) changes, and status \(a\) remains tight.
+
+If the first switch of \(\pi'\) is still \(a\), then
+\[
+(x,y,u)
+\]
+is non-tight. Boundary reversal gives
+\[
+(u,y,x)
+\]
+tight. Hence the same vertex \(u\) reverses the terminal edges of the two vertex-disjoint tight paths
+\[
+(x,y)\qquad\text{and}\qquad(z,w).
+\]
+By the valid common-exterior-reverser lemma, these two terminal-edge reversals force a Hamiltonian four-support.
+
+Otherwise the first switch moves strictly to the right. If the last switch lies beyond the bounded window affected by the transposition, the switch span strictly decreases. If the last switch lies inside that window, the whole switch pattern is already bounded.
+
+Therefore a first-switch boundary followed by at least three statuses of the opposite color gives the trichotomy
+\[
+\boxed{
+\text{front motion}
+\quad\text{or}\quad
+\text{bounded switch window}
+\quad\text{or}\quad
+\text{valid Hamiltonian four-support}.
+}
+\]
+
+The key point is that the deep candidate \(u\) does not merely become a same-edge twin. Its original location in the opposite-color run already makes it a reverser of the disjoint edge \(zw\). If the boundary exchange also leaves the first switch fixed, \(u\) acquires the second reversal on \(xy\), exactly repairing the defect identified in version 53.
+
+
+### The cyclic two-component strengthening is false in arbitrarily large orders
+
+The self-contained Section [[balanced_cuts_obstruct_the_two_component_spanning_cycle_target]] constructs, for every s>=1, an edge-orderable boundary tournament on 4s vertices with path-cover number exactly two and a spanning one-change linear order, while the minimum number of monochromatic components of a spanning cycle is exactly four.
+
+The construction uses four equal classes A,B,C,D. Order ordinary edges in levels: within classes; AB or CD; AC or BD; AD or BC. A cyclic edge sequence with only two color components has every upper rank set consecutive. The balanced cut AB|CD then forces every cycle edge into the top two levels, and the balanced cut AC|BD forces every cycle edge into the top level. That level is the disconnected union of the AD and BC complete bipartite graphs, a contradiction. Tie orders make alternating paths on A union D and B union C increasing; additional independent tie choices yield a spanning one-change linear order.
+
+Thus the universal cyclic two-component target proposed in version 16 is refuted, and its asserted equivalence with the linear one-change target is withdrawn. The valid implication from a two-component cycle to a two-cover remains. The one-change linear target, the general two-cover conjecture, and the corrected linear switch arguments remain separate open questions.
+
+For a cyclic formulation equivalent to the grand conjecture, let the cycle edges be vertices of a graph and join the two edges incident with each blue transition. A spanning two-cover exists exactly when some oriented cyclic order has a vertex cover of size at most two in this graph. This retains the freedom to cut at two positions even when the blue transitions form separated components. The complete proof is in the cited Section.
+
+
+### Color-correct repair of the distance-two front swap
+
+Version 55's distance-two swap used the phrase "reverse the whole order if necessary so that the first run is tight." That normalization is not legitimate: reversing the whole order replaces the first run by the complemented old last run, not by a recoloring of the same first run.
+
+The local lemma nevertheless survives with a direct two-color proof.
+
+Let the first run have color A in {0,1}, with 1=tight, and suppose the second run of color 1-A persists through statuses a+1,a+2,a+3. Write
+x=v_{a+1}, y=v_{a+2}, z=v_{a+3}, w=v_{a+4}, u=v_{a+5}.
+Swap z and u. If the first switch remains a, then both
+(x,y,u)
+and
+(z,w,u)
+have color 1-A.
+
+If A=1, these two triples are non-tight, so boundary reversal gives
+(u,y,x), (u,w,z)
+tight. Thus u reverses the terminal edges of the tight two-paths (x,y) and (z,w), and the terminal-terminal common-reverser lemma gives a Hamiltonian four-support.
+
+If A=0, the two displayed triples are already tight. Orient the vacuous tight two-paths as
+(y,x) and (w,z).
+Then
+(x,y,u)
+and
+(z,w,u)
+are precisely reversals of their two initial edges. The initial-initial common-reverser lemma from version 54 again gives a Hamiltonian four-support.
+
+Therefore the distance-two trichotomy is color-symmetric and valid without reversing the spanning order:
+[
+oxed{
+	ext{first-front displacement}
+quad	ext{or}quad
+	ext{bounded affected switch window}
+quad	ext{or}quad
+	ext{Hamiltonian four-support}.
+}
+]
+
+The swap of positions a+3 and a+5 affects only triple starts a+1 through a+5, hence only a bounded switch neighborhood. If the old last switch lies beyond that neighborhood and the first front moves right, the switch span strictly decreases.
+
+### Quantitative abundance of mirror carriers
+
+In the coherent giant-block branch, for fixed left/right witnesses A,C at the minimum coordinate r, the carrier set
+U=B-(A union C)
+has size
+[
+|U|=m-2r-4+|Acap C|ge m-2r-3.
+]
+For each w in U, version 54 gives left front motion, right front motion, or a valid four-support.
+
+Among any subset U_0 of carriers producing four-supports, the same-end common-reverser construction has only two possible cross orientations. Hence at least ceil(|U_0|/2) resulting Hamiltonian four-supports share one fixed three-vertex core and vary only in w.
+
+Thus a large mirror gap forces either many front-moving carriers or many overlapping Hamiltonian four-supports with a common 3-core. In a minimum counterexample every such proper support has a two-coverable complement, producing many rooted 4|P|Q states. The remaining bridge is to link enough of those states in one repartition component, or use the abundance of front movers to compress the switch geometry.
+
+
+
+### Three consecutive same-edge twins force a genuine second-edge reversal
+
+The same-edge twin obstruction from version 53 cannot persist through three consecutive vertices of one monochromatic corridor.
+
+Let the first-run color be \(A\in\{0,1\}\), and let \(x,y\) be the exposed ordered edge at the first front. Let
+\[
+z_0,z_1,z_2
+\]
+be three consecutive vertices in the following run, whose color is \(1-A\). Suppose all three are same-edge twins at the front, meaning that
+\[
+(x,y,z_i)
+\]
+has color \(1-A\) for \(i=0,1,2\).
+
+Because \(z_0,z_1,z_2\) lie consecutively in that same run,
+\[
+(z_0,z_1,z_2)
+\]
+also has color \(1-A\).
+
+If \(A=1\), all four displayed triples have color \(0\). Boundary reversal gives
+\[
+(z_i,y,x)\quad(i=0,1,2)
+\]
+tight and
+\[
+(z_2,z_1,z_0)
+\]
+tight. Thus \(z_2\) reverses the terminal edges of the two vertex-disjoint tight 2-paths
+\[
+(x,y),\qquad(z_0,z_1).
+\]
+The valid terminal-terminal common-reverser lemma gives a Hamiltonian four-support.
+
+If \(A=0\), the displayed triples are themselves tight. Orient the two 2-paths as
+\[
+(y,x),\qquad(z_1,z_0).
+\]
+Then
+\[
+(x,y,z_2),\qquad(z_0,z_1,z_2)
+\]
+say exactly that \(z_2\) reverses both initial edges. The valid initial-initial common-reverser lemma again gives a Hamiltonian four-support.
+
+Hence:
+
+**Three-twin lemma.**
+Three consecutive vertices of one opposite-color run cannot all be same-edge twins for a fixed exposed edge without producing a valid Hamiltonian four-support.
+
+Therefore any front-pushing process in which the first front remains fixed can accumulate at most two consecutive same-edge twins inside one monochromatic corridor before one of three things happens:
+- the front moves;
+- the corridor color changes;
+- a genuine common reverser of two disjoint same-type edges appears.
+
+
+### Wide exact diagonals collapse to front motion or bounded Hamiltonian support
+
+Return to the exact-diagonal branch
+q(pi)=(r,r), with first switch a=r and last switch b=m-r, and put d=b-a=m-2r.
+
+The cases d<=2 already give a two-cover. Assume d>=5, so positions r+4,...,b-1 contain d-4 freely permutable central vertices while preserving the two extreme switch coordinates.
+
+Fix one central carrier w. Test it separately against the left and right boundary exchanges: place w at position r+4 and swap with r+3; place w at b-1 and swap with b.
+
+If either exchange moves its extreme front, then for d>=5 the opposite extreme lies outside the local affected window, so the switch span strictly decreases.
+
+Suppose both fronts remain fixed. Let alpha and omega be the first and last outer colors.
+
+If alpha!=omega, version 54 applies: w is a same-end common reverser of the two tight-oriented outer blocks, and a Hamiltonian four-support follows.
+
+Suppose alpha=omega. Then w is a mixed-end reverser. Up to the symmetric case, write the tight-oriented outer boundary edges as
+...a_0,a_1
+and
+p_1,p_2,...
+with
+(w,a_1,a_0) and (p_2,p_1,w)
+tight.
+
+Exactly one of
+(p_1,w,a_1), (a_1,w,p_1)
+is tight.
+
+If (p_1,w,a_1) is tight, then
+(p_2,p_1,w,a_1,a_0)
+is a tight Hamiltonian five-path.
+
+Otherwise
+(a_1,w,p_1)
+is tight, so w is a parallel middle vertex between the fixed pair a_1,p_1.
+
+Hence if two distinct central carriers w,w' both preserve both fronts and both fall into this second mixed-end orientation, then
+(a_1,w,p_1), (a_1,w',p_1)
+are tight. The toolkit lemma "Two parallel middle vertices force a Hamilton four-path" gives a Hamiltonian four-support on {a_1,p_1,w,w'}.
+
+Therefore for d>=6, where at least two central carriers exist, the exact-diagonal branch satisfies
+[
+oxed{
+	ext{strict switch-span decrease}
+quad	ext{or}quad
+	ext{Hamiltonian four-support}
+quad	ext{or}quad
+	ext{Hamiltonian five-support}.
+}
+]
+
+For d=5 there is one central carrier; after excluding front motion and the immediate same-end/favorable mixed-end support outcomes, only one bounded mixed-end parallel-middle residue remains.
+
+Thus wide exact diagonals are not a genuinely global topology obstruction. Repeated front motion reduces the diagonal gap, while failure of motion produces bounded Hamiltonian support. The unresolved exact-diagonal interface is confined to gap at most five.
+
+
+### Compact exact diagonals are already small-component three-covers
+
+Retain an exact-diagonal spanning order
+\[
+\pi=(v_1,\ldots,v_n),
+\qquad
+a=r,\quad b=m-r,
+\]
+and put
+\[
+d=b-a.
+\]
+
+The cases \(d\le2\) already give a spanning two-cover. Now suppose
+\[
+d\in\{3,4,5\}.
+\]
+
+Let
+\[
+L=(v_1,\ldots,v_{a+2}),
+\qquad
+R=(v_{b+1},\ldots,v_n),
+\]
+and let
+\[
+M=\{v_{a+3},\ldots,v_b\}.
+\]
+Then
+\[
+|M|=b-(a+3)+1=d-2\in\{1,2,3\}.
+\]
+
+Every internal status of \(L\) lies at a position at most \(a\), hence has the first outer color. Therefore one of the two orientations of \(L\) is a tight path. Every internal status of \(R\) lies at a position at least \(b+1\), hence has the last outer color, so one orientation of \(R\) is also a tight path.
+
+The middle set \(M\) is Hamiltonian automatically:
+- for \(|M|=1\) or \(2\), every ordering is a tight path vacuously;
+- for \(|M|=3\), boundary antisymmetry guarantees that one of the two reverse orders is tight.
+
+Hence every exact diagonal with gap \(3,4,\) or \(5\) gives a spanning three-cover
+\[
+L\mid M\mid R
+\]
+whose middle component has order \(1,2,\) or \(3\), respectively.
+
+Thus in the minimum-counterexample architecture:
+- gap \(3\) is exactly a singleton-lift/deletion-cover state;
+- gap \(4\) is exactly a two-vertex middle-path state, so the existing endpoint-reversal pattern applies;
+- gap \(5\) is a rooted three-support state, so the small-support quadratic-descent machinery applies.
+
+Combined with version 59, the exact-diagonal branch is therefore completely absorbed into existing mainline interfaces: large gap gives strict front motion or a bounded Hamiltonian support, while gaps at most five give either a two-cover or a spanning three-cover with middle component of order at most three.
+
+### One carrier-produced four-support already reaches Article III
+
+The quantitative abundance statement of version 57 can also be simplified in the minimum-counterexample setting.
+
+Suppose one mirror carrier produces a Hamiltonian four-support \(X\). Then
+\[
+H-X
+\]
+is non-Hamiltonian with path-cover number two; choose a displayed two-cover
+\[
+H-X=P\mid Q.
+\]
+Thus
+\[
+X\mid P\mid Q
+\]
+is a spanning three-cover with a displayed four-component.
+
+The established rooted-four-support theorem in line_rooted_small_support_descent_from_deletion_cover_lifts already shows that such a state reaches the defect-compression interface immediately: either
+- an endpoint of one complementary path reverses an end edge of the displayed four-path;
+- \(H\) has a two-cover; or
+- for each prescribed endpoint of a complementary path there is a Hamiltonian five-support containing that endpoint whose complement again has path-cover number two.
+
+Therefore no linkage among many carrier-produced four-supports is needed merely to reconnect the topology route to the main line. A single four-support suffices.
+
+Accordingly, in a minimum counterexample the only genuinely new carrier regime left by version 57 is:
+
+> every available mirror carrier moves at least one front.
+
+The same-core abundance of four-supports remains useful additional structure, but it is not itself a new bottleneck.
+
+
+### Correction: mirror exposed edges need not be disjoint
+
+Version 54, and the quantitative support conclusion in version 57 that depends on it, used the same-end common-reverser lemma on the exposed left and right boundary edges of two different witness orders. That lemma requires the two tight 2-paths to be vertex-disjoint.
+
+The determining position windows are disjoint at the minimum giant-block coordinate, but the **vertex supports of two different face orders need not be disjoint**. Indeed the left and right determining support families are cross-intersecting. Therefore their exposed 2-edges can share one or even two physical vertices.
+
+Hence the valid mirror-carrier conclusion is the following corrected trichotomy/quadrichotomy.
+
+Let \(L\) be a left witness and \(R\) a right witness with complementary outer colors, and let \(w\) lie outside both determining supports. Perform the left and right boundary exchanges with \(w\).
+
+- If the left front moves, record left front displacement.
+- If the right front moves, record right front displacement.
+- Suppose both fronts stay fixed. Then \(w\) reverses the two exposed tight-oriented boundary edges in the same endpoint sense: terminal-terminal or initial-initial.
+  - If those two exposed edges are vertex-disjoint, the valid common-reverser lemma gives a Hamiltonian four-support.
+  - If they intersect, one obtains an **exposed-edge collision** rather than an automatic four-support.
+
+Thus
+\[
+\boxed{
+\text{left motion}
+\ \vee\
+\text{right motion}
+\ \vee\
+\text{Hamiltonian four-support}
+\ \vee\
+\text{exposed-edge collision}.
+}
+\]
+
+The support-abundance count of version 57 is valid only for carriers attached to witness pairs whose exposed boundary edges are disjoint. The distance-two swap, the three-twin lemma, and the exact-diagonal argument of versions 56--60 are unaffected, because there the two 2-edges occur in one displayed order and are visibly disjoint.
+
+### Collision winding on physical vertices
+
+The exposed-edge collision branch has a useful cyclic form along the color-compatible directed switch-front cycle.
+
+Write the coherent winding orders cyclically as
+\[
+q(\pi_i)=(x_i,x_{i+1}).
+\]
+Let \(R_i\) be the exposed 2-edge of the tight-oriented last outer run of \(\pi_i\), and let \(L_i\) be the exposed 2-edge of the tight-oriented first outer run of \(\pi_i\).
+
+For each \(i\), \(L_i\) and \(R_i\) are disjoint, because they occupy disjoint position windows in the same spanning order in the surviving noncentral branch.
+
+At the shared switch coordinate \(x_{i+1}\), color alternation pairs \(R_i\) with \(L_{i+1}\). If a mirror carrier fixes both fronts and does not produce a four-support, then necessarily
+\[
+R_i\cap L_{i+1}\ne\varnothing.
+\]
+
+Therefore, if every coherent-winding link falls into the collision branch, choose
+\[
+c_i\in R_i\cap L_{i+1}.
+\]
+Because
+\[
+L_{i+1}\cap R_{i+1}=\varnothing,
+\]
+we automatically have
+\[
+c_i\ne c_{i+1}.
+\]
+
+So a complete failure of the disjoint-edge support mechanism converts the topological switch-front cycle into a cyclic sequence of **physical collision vertices**
+\[
+c_1,c_2,\ldots,c_t
+\]
+with consecutive labels distinct, where \(c_i\) lies simultaneously on the right exposed edge of \(\pi_i\) and the left exposed edge of \(\pi_{i+1}\).
+
+This is the correct residual object for the mirror-carrier branch. The next task is to translate the same-end reversal triples through these shared endpoints; one should not use the common-reverser four-support lemma until disjointness has been established.
+
+
+
+### A collision link has at most one stationary carrier outside bounded support
+
+Retain one exposed-edge collision link from version 61. Let the two exposed 2-edges intersect, and let \(D\) be their three-vertex union.
+
+Suppose two distinct mirror carriers \(w,w'\) both preserve the two fronts at this same link. The precise reversal orientation is irrelevant for the following reduction.
+
+Every three-vertex boundary tournament is Hamiltonian, so choose a tight order \(T\) on \(D\).
+
+If either \(D\cup\{w\}\) or \(D\cup\{w'\}\) is Hamiltonian, then a Hamiltonian four-support is already present.
+
+Assume both four-sets are non-Hamiltonian. The bad-four-extension lemma in localextend01 applies to the tight three-path \(T\) and the two exterior vertices \(w,w'\): two non-Hamiltonian one-vertex extensions of the same tight three-path force
+\[
+D\cup\{w,w'\}
+\]
+to be Hamiltonian, with a Hamilton five-path whose endpoints lie in \(D\).
+
+Hence a Hamiltonian five-support is present.
+
+Therefore, in a minimum counterexample outside the already-developed bounded-support branch,
+\[
+\boxed{\text{each exposed-edge collision link has at most one stationary mirror carrier}.}
+\]
+
+All other available carriers at that link must move at least one front.
+
+This sharpens the collision winding of version 61 from an arbitrary collision family to a uniquely carried one: every link can retain at most one carrier without immediately falling back into the four-/five-support mainline.
+
+
+
+### A stationary carrier repeated across two consecutive collision links
+
+Let \(w\) be the unique stationary carrier on collision link \(i\) and also on collision link \(i+1\). Then in the intermediate order \(\pi_{i+1}\), the same vertex \(w\) reverses the exposed left edge \(L_{i+1}\) and exposed right edge \(R_{i+1}\). These two edges are vertex-disjoint because they occur in disjoint outer position windows of the same spanning order.
+
+Let \(\alpha\) and \(\omega\) be the first and last colors of \(\pi_{i+1}\).
+
+If \(\alpha\ne\omega\), after orienting the two outer monochromatic blocks as tight paths, the two reversals have the same endpoint type: terminal-terminal when \((\alpha,\omega)=(1,0)\), and initial-initial when \((\alpha,\omega)=(0,1)\). The valid same-end common-reverser lemma therefore gives a Hamiltonian four-support.
+
+If \(\alpha=\omega\), the reversals have mixed endpoint type. This is exactly the mixed-end configuration from the exact-diagonal carrier analysis. Writing the tight-oriented boundary edges as
+\[
+\ldots,a_0,a_1
+\qquad\text{and}\qquad
+p_1,p_2,\ldots
+\]
+one has, up to symmetry,
+\[
+(w,a_1,a_0),\qquad(p_2,p_1,w)
+\]
+tight. Exactly one of
+\[
+(p_1,w,a_1),\qquad(a_1,w,p_1)
+\]
+is tight. In the first case
+\[
+(p_2,p_1,w,a_1,a_0)
+\]
+is a Hamiltonian five-path. In the second case \(w\) is a parallel-middle vertex between \(a_1\) and \(p_1\).
+
+Hence a stationary carrier can repeat on consecutive collision links only by immediately producing a Hamiltonian four-/five-support, or by entering one precise mixed-end parallel-middle residue in the intermediate order.
+
+
+
+### Permutahedral geodesic dictionary with the cube problem
+
+There is a precise analogy with strengthened forms of Norine's cube conjecture.
+
+Fix antipodal vertices \(x,\bar x\) in \(Q_n\). An antipodal geodesic from \(x\) to \(\bar x\) uses each coordinate exactly once, so it is determined by a permutation of the \(n\) coordinate directions. Thus the space of such geodesics is a permutahedron.
+
+Likewise, a spanning order of an \(n\)-vertex boundary tournament is a permutation of the \(n\) vertices.
+
+In both settings one obtains a binary word from a permutation:
+- for a cube geodesic, the edge colors along the path;
+- for a boundary tournament order, the tight/non-tight colors of consecutive triples.
+
+The reversal involution has the same form. In an antipodal cube coloring, reversing the coordinate permutation gives the reverse of the antipodal geodesic, hence
+\[
+c(\sigma^{\rm rev})=\overline{c(\sigma)}^{\rm rev}.
+\]
+For boundary tournaments,
+\[
+t(\pi^{\rm rev})=\overline{t(\pi)}^{\rm rev}
+\]
+by boundary antisymmetry.
+
+Adjacent transpositions are local in both models. In the cube, swapping two consecutive coordinate directions changes only the corresponding two-edge square. In the boundary tournament, swapping adjacent vertices changes only a bounded window of consecutive triple statuses.
+
+This explains why the first/last-switch rook labels and permutahedral topology arise naturally in both problems.
+
+There is also an important difference in target strength. The geodesic one-change problem asks for a permutation whose color word has at most one switch. Our grand two-cover problem is already solved when the first and last switch positions differ by at most two: cutting across that bounded switch window leaves two monochromatic outer blocks, which orient as tight paths. Thus the GN3N target is a width-two front-compression statement rather than an exact one-switch statement.
+
+Strategic consequence: a proof using only the abstract ingredients
+\[
+\text{permutations}+\text{reversal-complement symmetry}+\text{local adjacent-swap behavior}
+\]
+would be perilously close to proving the still-open geodesic cube conjecture. The extra leverage available in GN3N is the boundary-tournament structure absent from an arbitrary cube edge-coloring: overlapping triples, local tournaments, common-reverser forcing, parallel-middle lemmas, and Hamiltonian four-/five-support calculus.
+
+Therefore the topology should be used to force a narrow collision/front configuration, and closure should then come from boundary-specific local structure rather than from a purely permutahedral obstruction.
+
+
+### One-vertex prescribed-switch lift
+
+Adjoin a new vertex infinity and declare (u,v,infinity) tight for every ordered pair of distinct old vertices u,v. Boundary reversal then forces (infinity,v,u) non-tight. Triples with middle vertex infinity are arbitrary.
+
+Then pc(H)<=2 iff the extension has a spanning order P,infinity,Q^rev whose statuses are all tight strictly to the left of infinity and all non-tight strictly to the right. Indeed, if P,Q are a two-cover, the left outer junction through infinity is tight and the right outer junction is non-tight automatically; only the middle triple at infinity is free, so the word has one switch. Conversely such a centered order makes P and Q tight paths in H.
+
+This is the exact dimension-lift analogue of the geodesic Norine formulations: the auxiliary element is the prescribed switch location. It is useful conceptually but also confirms the strategic warning of v64: proving an arbitrary one-switch permutation theorem would amount to attacking the still-open geodesic cube phenomenon. GN3N should exploit the stronger boundary-specific local structure instead.
+
+
+### Global minimum switch span: one physical carrier reaches both fronts
+
+The geodesic cube analogy suggests avoiding repeated local directions. In the present setting there is a direct extremal implementation that does not require a new topological theorem.
+
+For a spanning order \(\pi\) with at least two switches, let
+\[
+a(\pi)=\text{first switch},\qquad
+b(\pi)=\text{last switch},\qquad
+d(\pi)=b(\pi)-a(\pi).
+\]
+Choose \(\pi=(v_1,\ldots,v_n)\) with \(d(\pi)\) globally minimum among all spanning orders having at least two switches.
+
+If some spanning order has at most one switch, then cutting at that switch and orienting the two monochromatic blocks appropriately already gives a spanning two-cover. Hence in a counterexample the minimum is defined.
+
+Write
+\[
+a=a(\pi),\qquad b=b(\pi),\qquad d=b-a.
+\]
+
+If \(d\le2\), the compact-switch cut gives a two-cover.
+
+If \(3\le d\le5\), put
+\[
+L=(v_1,\ldots,v_{a+2}),\qquad
+R=(v_{b+1},\ldots,v_n),
+\]
+and
+\[
+M=\{v_{a+3},\ldots,v_b\}.
+\]
+Then \(|M|=d-2\le3\). The internal statuses of \(L\) are all the first outer color and those of \(R\) all the last outer color, so each outer block has a tight orientation. The middle set \(M\) is Hamiltonian automatically. Thus
+\[
+L\mid M\mid R
+\]
+is a spanning three-cover with a component of order at most three.
+
+Assume now
+\[
+d\ge6.
+\]
+Let
+\[
+W=\{v_{a+4},\ldots,v_{b-1}\},
+\qquad |W|=d-4\ge2.
+\]
+
+Fix \(w\in W\).
+
+#### Left test
+
+Starting from \(\pi\), permute only the positions
+\[
+a+4,\ldots,b-1
+\]
+so that \(w\) occupies position \(a+4\). This does not change the first switch \(a\) or the last switch \(b\): the two extreme switch comparisons lie outside the permuted interval.
+
+Now swap positions \(a+3,a+4\). This local swap cannot create a switch before \(a\), and because \(d\ge6\) it does not affect the last switch \(b\).
+
+If the first switch moved strictly right, the new spanning order would have switch span smaller than \(d\), contradicting global minimality. If the resulting order had at most one switch, it would already give a two-cover. Hence in a counterexample the first switch remains exactly \(a\).
+
+Therefore \(w\) has the fixed-front relation to the exposed left boundary edge. After orienting the first monochromatic outer block as a tight path, \(w\) reverses that exposed tight edge; the endpoint type is determined by the first outer color.
+
+#### Right test
+
+Independently restart from the original order \(\pi\). Permute only positions
+\[
+a+4,\ldots,b-1
+\]
+so that the same \(w\) occupies position \(b-1\), and swap positions \(b-1,b\).
+
+Again the first switch \(a\) lies outside the affected window. The last switch cannot move strictly left, because that would decrease \(d\), and an order with at most one switch would already give a two-cover. Hence the last switch remains exactly \(b\).
+
+Thus the same physical vertex \(w\) reverses the exposed tight-oriented right boundary edge as well.
+
+The two exposed edges are physically disjoint: they lie at the two fixed outer boundaries of the same original spanning order and \(d\ge6\).
+
+Let \(\alpha,\omega\) be the first and last outer colors.
+
+- If \(\alpha\ne\omega\), the two reversal certificates have the same endpoint type after orienting the two outer monochromatic blocks as tight paths. The valid same-end common-reverser lemma therefore gives a Hamiltonian four-support.
+
+- If \(\alpha=\omega\), the two certificates have mixed endpoint type. The mixed-end analysis gives, for each \(w\in W\), either a Hamiltonian five-support or a parallel-middle relation through one fixed pair of outer boundary vertices. Since \(|W|\ge2\), if no carrier gives the favorable five-support orientation, two distinct carriers are parallel middles for that same pair, and the parallel-middle lemma gives a Hamiltonian four-support.
+
+Hence:
+
+**Minimum-switch-span theorem.**
+Let \(H\) be a boundary \(3\)-tournament with no spanning two-cover. A globally minimum-switch-span spanning order forces one of the following.
+
+1. A spanning three-cover has a component of order at most three.
+2. \(H\) contains a Hamiltonian support of order four or five.
+
+In a minimum counterexample, outcome 1 is exactly the existing singleton/two-vertex/three-support descent interface, while outcome 2 has a non-Hamiltonian path-cover-two complement and therefore enters the rooted four-/five-support defect-compression machinery immediately.
+
+This theorem is completely face-independent. It supersedes the need to close the all-movers or physical-collision topology branches merely to reach the established main line.
+
+### Relation to the strengthened Norine geodesic analogy
+
+For an antipodal cube geodesic, using each dimension exactly once is precisely the geodesic condition. In type \(A\), a reduced gallery from a permutation to its reversal crosses every unordered pair of labels exactly once.
+
+The minimum-span carrier proof uses the same principle locally: one physical carrier is transported through the central permutation region and tested at each extreme without sacrificing the extremal front data. No abstract geodesic-Norine theorem is needed, because global switch-span minimality prevents an endpoint test from moving inward.
+
+This suggests a sharper conceptual correspondence:
+
+- cube coordinate used once \(\leftrightarrow\) physical carrier transported without reuse;
+- antipodal geodesic \(\leftrightarrow\) reduced permutahedral gallery;
+- two color components on the geodesic \(\leftrightarrow\) compressed first/last switch window;
+- GN3N-specific closure comes from common-reverser, parallel-middle, and small-support lemmas, which have no analogue in a general antipodal cube coloring.
+
+Thus the strengthened Norine conjecture is an excellent model for the geometry, but the actual proof leverage here comes from the extra boundary-tournament local structure.
