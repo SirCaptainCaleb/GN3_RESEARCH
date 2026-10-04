@@ -45,9 +45,9 @@
       },
       {
         "id": "defect_lines_and_spanning_order_compression_the_remaining_lemma",
-        "math_version": 35,
+        "math_version": 39,
         "position": 8,
-        "version": 40
+        "version": 44
       },
       {
         "id": "defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local",
@@ -77,9 +77,9 @@
       },
       {
         "id": "deletion_covers_and_the_support_graph_compatibility_of_deletion_covers",
-        "math_version": 3,
+        "math_version": 5,
         "position": 3,
-        "version": 4
+        "version": 6
       },
       {
         "id": "deletion_covers_and_the_support_graph_the_support_graph",
@@ -95,15 +95,15 @@
       },
       {
         "id": "deletion_covers_and_the_support_graph_the_forest_case",
-        "math_version": 2,
+        "math_version": 4,
         "position": 6,
-        "version": 2
+        "version": 4
       },
       {
         "id": "deletion_covers_and_the_support_graph_the_odd_cycle_case",
-        "math_version": 1,
+        "math_version": 2,
         "position": 7,
-        "version": 1
+        "version": 3
       },
       {
         "id": "deletion_covers_and_the_support_graph_the_remaining_lemma",
@@ -169,9 +169,9 @@
       },
       {
         "id": "endpoint_transport_and_small_support_gluing_the_remaining_lemma",
-        "math_version": 5,
+        "math_version": 15,
         "position": 8,
-        "version": 5
+        "version": 18
       },
       {
         "id": "endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption",
@@ -189,15 +189,15 @@
       },
       {
         "id": "longest_paths_and_reversal_structure_reversals_are_unavoidable",
-        "math_version": 13,
+        "math_version": 14,
         "position": 2,
-        "version": 15
+        "version": 17
       },
       {
         "id": "longest_paths_and_reversal_structure_a_longest_path",
-        "math_version": 6,
+        "math_version": 9,
         "position": 3,
-        "version": 6
+        "version": 9
       },
       {
         "id": "longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal",
@@ -349,9 +349,9 @@
       },
       {
         "id": "three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component",
-        "math_version": 1,
+        "math_version": 9,
         "position": 7,
-        "version": 1
+        "version": 12
       },
       {
         "id": "three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas",
@@ -374,15 +374,15 @@
     ]
   },
   "article_versions": {
-    "defect_lines_and_spanningorder_compression": 51,
-    "deletioncover_compatibility_and_global_obstruction_structure": 14,
-    "endpoint_transport_and_small_support_gluing": 7,
-    "longest_paths_and_reversal_structure": 25,
+    "defect_lines_and_spanningorder_compression": 55,
+    "deletioncover_compatibility_and_global_obstruction_structure": 20,
+    "endpoint_transport_and_small_support_gluing": 20,
+    "longest_paths_and_reversal_structure": 30,
     "quadratic_potential_and_pairwise_repartition": 4,
-    "three_cover_repartitions_and_recurrence": 5
+    "three_cover_repartitions_and_recurrence": 16
   },
   "brainstorm_count": 3,
-  "generated_at": "2026-10-03T23:06:25.680521+00:00",
+  "generated_at": "2026-10-04T00:38:25.122484+00:00",
   "mirror_format": 10,
   "schema": "gn3n",
   "section_versions": {
@@ -419,8 +419,8 @@
       "version": 1
     },
     "defect_lines_and_spanning_order_compression_the_remaining_lemma": {
-      "math_version": 35,
-      "version": 40
+      "math_version": 39,
+      "version": 44
     },
     "defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed": {
       "math_version": 1,
@@ -435,8 +435,8 @@
       "version": 1
     },
     "deletion_covers_and_the_support_graph_compatibility_of_deletion_covers": {
-      "math_version": 3,
-      "version": 4
+      "math_version": 5,
+      "version": 6
     },
     "deletion_covers_and_the_support_graph_defect_span": {
       "math_version": 1,
@@ -451,12 +451,12 @@
       "version": 1
     },
     "deletion_covers_and_the_support_graph_the_forest_case": {
-      "math_version": 2,
-      "version": 2
+      "math_version": 4,
+      "version": 4
     },
     "deletion_covers_and_the_support_graph_the_odd_cycle_case": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 3
     },
     "deletion_covers_and_the_support_graph_the_remaining_lemma": {
       "math_version": 1,
@@ -495,8 +495,8 @@
       "version": 1
     },
     "endpoint_transport_and_small_support_gluing_the_remaining_lemma": {
-      "math_version": 5,
-      "version": 5
+      "math_version": 15,
+      "version": 18
     },
     "endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices": {
       "math_version": 1,
@@ -507,8 +507,8 @@
       "version": 6
     },
     "leaf_comparisons_in_deletion_support_forests": {
-      "math_version": 13,
-      "version": 17
+      "math_version": 14,
+      "version": 18
     },
     "line_rooted_small_support_descent_from_deletion_cover_lifts": {
       "math_version": 24,
@@ -523,8 +523,8 @@
       "version": 1
     },
     "longest_paths_and_reversal_structure_a_longest_path": {
-      "math_version": 6,
-      "version": 6
+      "math_version": 9,
+      "version": 9
     },
     "longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple": {
       "math_version": 1,
@@ -543,8 +543,8 @@
       "version": 1
     },
     "longest_paths_and_reversal_structure_reversals_are_unavoidable": {
-      "math_version": 13,
-      "version": 15
+      "math_version": 14,
+      "version": 17
     },
     "longest_paths_and_reversal_structure_the_endpoint_pair_family": {
       "math_version": 1,
@@ -627,8 +627,8 @@
       "version": 1
     },
     "three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component": {
-      "math_version": 1,
-      "version": 1
+      "math_version": 9,
+      "version": 12
     },
     "three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path": {
       "math_version": 1,
@@ -639,7 +639,7 @@
       "version": 1
     }
   },
-  "snapshot_revision": 527,
+  "snapshot_revision": 576,
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 41,
   "universal_document_versions": {

@@ -52,15 +52,80 @@ Thus the forest case is reduced to two global interfaces:
 
 The earlier leaf-splitting alternative is absorbed by the leaf-comparison structure and need not be carried as a terminal forest residue.
 
+### Component escape is not a terminal forest residue
+
+The disconnected-forest alternative can now be treated at the same endpoint level as the connected-tree case.
+
+**Corollary 9.** Let
+[
+H-x=Pmid Q,
+qquad
+Q=(q_0,ldots,q_m),
+]
+correspond to a leaf edge of an arbitrary selected support forest. Then, unless (H) already contains a bounded Hamiltonian support with two-coverable complement, an order disagreement, or an external reversal, at least one endpoint
+[
+yin{q_0,q_m}
+]
+has a selected deletion cover (F_y) containing an ordinary path edge joining (P) to (Q-{y}).
+
+Consequently the endpoint disturbance theorem applies at some displayed endpoint of every leaf-neighbor path, regardless of whether the selected endpoint edge remains in the leaf's tree component.
+
+**Proof.** If one endpoint cover already contains such a mixed edge, there is nothing to prove. Suppose neither endpoint cover mixes the two old supports. Lemma 13 of [[leaf_comparisons_in_deletion_support_forests]] then gives one of: a bounded Hamiltonian support, an order disagreement, or an adjacent-slot reversal. These are exactly the excluded successful disturbances. Hence the two endpoint covers cannot both be non-mixing in the unresolved branch. (square)
+
+Combining this with
+[[path_disturbance_endpoint_reversal_descent_or_an_omission_swap]],
+the forest route has only the following outputs at a leaf edge:
+[
+	ext{order disagreement},quad
+	ext{split/leave-and-return},quad
+	ext{external reversal},quad
+	ext{strict }Phi	ext{-descent},quad
+	ext{neutral omission swap},
+]
+or a two-cover/bounded-support conclusion.
+
+Order disagreement and split/leave-and-return already collapse to the external-reversal interface in Article III. Thus the only genuinely quiet forest phenomenon is neutral omission-swap recurrence. The earlier “component escape” alternative is no longer independent.
+
+
+
+### Neutral omission-swap recurrence is not a forest obstruction
+
+The last quiet forest alternative also closes globally.
+
+**Corollary 10 (forest recurrence closure).** In the forest branch, every leaf-endpoint comparison eventually yields one of
+[
+	ext{two-cover},quad
+	ext{bounded Hamiltonian support},quad
+	ext{order disagreement},quad
+	ext{external reversal},quad
+	ext{split/leave-and-return disturbance},quad
+	ext{strict }Phi	ext{-descent}.
+]
+Neutral omission-swap recurrence is not an additional terminal alternative.
+
+**Proof.** By Corollary 9, after bounded support, order disagreement, and external reversal are excluded, some displayed endpoint of every leaf-neighbor path enters the direct-mixing disturbance theorem
+[[path_disturbance_endpoint_reversal_descent_or_an_omission_swap]].
+Its only quiet output is a neutral omission swap.
+
+Continue such a neutral swap through the selected minimum-imbalance deletion covers as in
+[[balanced_omission_swap_gives_descent_or_selected_singleton_recurrence]].
+Corollary 12 of
+[[three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component]]
+shows that, in a selected support forest, no indefinitely neutral trajectory exists: every such continuation eventually leaves the neutral regime through a two-cover, bounded-support outcome, order disagreement, external reversal, split disturbance, or strict descent. (square)
+
+Thus the selected-support forest is no longer an independent global obstruction. After the Article I support-graph reductions, every forest branch returns to the same successful disturbance interfaces already used by Articles III–VI.
+
+
+
 ## Metadata
 
 - ID: deletion_covers_and_the_support_graph_the_forest_case
 - Kind: section
-- Version: 2
-- Math version: 2
+- Version: 4
+- Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 2: The forest case
+- Subsection 1 — HOT, version 4: The forest case

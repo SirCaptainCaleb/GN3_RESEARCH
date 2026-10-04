@@ -33,99 +33,137 @@ is tight. \(\square\)
 
 ## Three compatible covers force a reversal
 
-### Three pairwise compatible deletion covers cannot remain featureless
+### A connected support path already closes the theorem
 
-**Lemma 4 (three compatible covers force a reversal).** Let (a,b,c) be distinct vertices of a boundary tournament (H) with (operatorname{pc}(H)>2). Suppose deletion covers
+**Lemma 6 (connected support path closure).** Let one deletion cover (F_x) be selected for every vertex (xin V(H)), and let (J) be the resulting support graph. If (J) is a connected path, then (H) has a two-cover.
+
+**Proof.** Put
 [
-F_a,qquad F_b,qquad F_c
+n=|V(H)|.
 ]
-are pairwise compatible on their common domains. Then at least one pair has adjacent insertion slots in the sense of Lemma 3. Consequently (H) contains a tight triple reversing the two corresponding omitted labels across the unique common vertex between those slots.
-
-Equivalently: three pairwise compatible deletion covers cannot have equal insertion slots for all three pairs.
-
-**Proof.** By Lemma 3, for each pair the two omitted labels are inserted into the same common support, and their slots are equal or adjacent. If any pair uses adjacent slots, Lemma 3 already gives the asserted reversing triple.
-
-Assume therefore that all three pairs use equal slots. Pairwise support compatibility, or equivalently the localization lemma for three support-compatible covers, places (a,b,c) in one varying support. The three compatible orders induce a common relative order on every pair of surviving vertices.
-
-Write
+There is exactly one selected edge (e_x) for each label (x), so (J) has exactly (n) edges. Since it is a connected path, write
 [
-alpha=[a<b],qquad
-eta=[a<c],qquad
-gamma=[b<c],
+S_0-S_1-cdots-S_n
 ]
-where each comparison is read in any deletion-cover order containing the displayed pair; compatibility makes it well-defined.
+for its support vertices, with the edge (S_{i-1}S_i) labeled (x_i).
 
-Because (a) and (b) occupy the same insertion slot relative to the common order in (F_a,F_b), they lie on the same side of every surviving common vertex, in particular of (c). Hence
+For any vertex label (z
+e x_i), exactly one of (S_{i-1},S_i) contains (z), because the two endpoint supports of (e_{x_i}) partition
 [
-eta=gamma.
+V(H)-{x_i}.
+]
+For (z=x_i), neither endpoint contains (z).
+
+Fix (j). The label (x_j) is absent from both
+[
+S_{j-1},S_j.
+]
+Moving left from (S_{j-1}), membership of (x_j) alternates across each preceding edge, since none of those edges is labeled (x_j). Therefore
+[
+x_jin S_0
+quadLongleftrightarrowquad
+j 	ext{is even}.
+]
+Likewise, moving right from (S_j),
+[
+x_jin S_n
+quadLongleftrightarrowquad
+n-j 	ext{is odd}.
 ]
 
-Likewise, equal slots for (a,c), viewed relative to the surviving vertex (b), give
+If (n) is even, the second condition is equivalent to (j) odd. Hence
 [
-[a<b]=[c<b]=
-eg[b<c],
+S_0={x_j:j 	ext{even}},
+qquad
+S_n={x_j:j 	ext{odd}}.
+]
+The two supports are disjoint and their union is (V(H)). Every support vertex of (J) is the support of a tight path in a selected deletion cover, so both (S_0) and (S_n) are Hamiltonian. They therefore form a two-cover of (H).
+
+If (n) is odd, then
+[
+n-j 	ext{odd}
+quadLongleftrightarrowquad
+j 	ext{even},
 ]
 so
 [
-alpha=
-eggamma.
+S_n=S_0.
 ]
+But the support vertices on a path are distinct. Equivalently, identifying the equal endpoints closes the displayed walk into a cycle, contradicting the assumption that (J) is a path in a forest.
 
-Finally, equal slots for (b,c), viewed relative to the surviving vertex (a), give
-[
-[a<b]=[a<c],
-]
-so
-[
-alpha=eta.
-]
+Thus a connected support path cannot occur in a counterexample. (square)
 
-Combining
-[
-eta=gamma,qquad
-alpha=
-eggamma,qquad
-alpha=eta
-]
-gives (gamma=
-eggamma), a contradiction. Therefore some pair has adjacent slots, and Lemma 3 supplies the reversing tight triple. (square)
+**Corollary 7 (global no-reversal support residue).** In a counterexample, after excluding the reversal/order-disagreement outcome of Corollary 5, the selected support graph cannot be a connected forest. Hence the only remaining support-graph geometries are
 
-This strengthens the four-cover compatibility gluing threshold in the direction needed for recurrence arguments. Four pairwise compatible covers glue outright to a two-cover; already three pairwise compatible covers force a positional reversal.
+1. a disconnected union of support paths; or
+2. the unique spanning odd cycle from the support-graph dichotomy.
 
-### Branching in the support graph forces a reversal
+Thus the connected forest case is closed at arbitrary order. The remaining forest issue is precisely the already-identified **component escape** between distinct support-path components, not any internal tree or branching geometry.
 
-**Corollary 5 (degree-three support obstruction).** Choose one deletion cover (F_x) for each label (x), and let (J) be their support graph. If a support vertex of (J) has degree at least three, then two selected path orders have an order disagreement on their common domain, or (H) contains a tight triple reversing an edge of one of the selected paths.
+### Compatible pairs have no quiet endpoint-slot residue
 
-Consequently, in any reduction branch in which order disagreement and external reversal have already been excluded as successful disturbances,
-[
-Delta(J)le2.
-]
-By the support-graph dichotomy, (J) is then either a disjoint union of paths or the unique spanning odd cycle.
+The insertion-slot lemma can be sharpened at an endpoint.
 
-**Proof.** Let a support (S) be incident with three distinct selected edges
-[
-e_a, e_b, e_c.
-]
-The corresponding covers (F_a,F_b,F_c) are pairwise support-compatible, because adjacent support-graph edges are exactly support-compatible deletion covers.
+**Proposition (compatible-pair trichotomy).** Let \(F_a,F_b\) be deletion covers of \(H-a,H-b\) that are support-compatible. Then at least one of the following holds:
 
-Consider any pair, say (F_a,F_b). On their common domain the two support classes agree. If the induced path orders disagree on either common support, the path-order disagreement lemma gives a tight triple reversing an edge of one of the two paths. Thus, if no such reversal occurs, (F_a,F_b) are fully compatible. The same argument applies to the other two pairs.
+1. their common-support orders disagree, hence a displayed-edge reversal is forced by the order-disagreement machinery;
+2. \(H\) has a two-cover;
+3. \(H\) contains a Hamiltonian four-support with non-Hamiltonian path-cover-two complement;
+4. the two insertion slots are adjacent, hence Lemma 3 gives a reversing tight triple.
 
-Hence absence of an order-disagreement reversal makes (F_a,F_b,F_c) pairwise compatible. Lemma 4 then forces an adjacent-slot reversal, contradiction. Therefore degree at least three always produces one of the asserted reversal disturbances.
+In particular, a compatible pair has no purely neutral equal-endpoint-slot residue.
 
-The final statement follows from the support-graph dichotomy: a forest of maximum degree at most two is a disjoint union of paths, while the only cyclic support graph is already one spanning odd cycle. (square)
+**Proof.** If the common-support orders disagree, outcome 1 holds. Otherwise \(F_a,F_b\) are compatible, so Lemma 3 puts the omitted labels \(a,b\) into the same common support in equal or adjacent insertion slots.
 
-Thus neutral omission-swap recurrence cannot hide in a branching support tree once reversals are treated as progress. Its only global geometries are one-dimensional: path recurrence in the forest case, or cyclic recurrence in the spanning odd-cycle case.
+Adjacent slots give outcome 4.
+
+Suppose the slots are equal and internal, between consecutive common vertices \(u,v\). Then both
+\[
+(u,a,v),\qquad (u,b,v)
+\]
+are tight. The compatible one-vertex extension lemma makes
+\[
+\{u,v,a,b\}
+\]
+Hamiltonian. In a minimum counterexample its complement has path-cover number two and is non-Hamiltonian, giving outcome 3.
+
+It remains that the common slot is an endpoint gap. Write the common ordered support as
+\[
+P=(p_1,\ldots,p_m)
+\]
+and, after reversing if necessary,
+\[
+F_a=(b,p_1,\ldots,p_m)\mid Q,
+\qquad
+F_b=(a,p_1,\ldots,p_m)\mid Q.
+\]
+Exactly one of the two boundary orientations
+\[
+(a,b,p_1),\qquad (b,a,p_1)
+\]
+is tight. In the first case
+\[
+(a,b,p_1,\ldots,p_m)
+\]
+is a tight path; in the second
+\[
+(b,a,p_1,\ldots,p_m)
+\]
+is. Together with \(Q\), either order gives a spanning two-cover of \(H\). This is outcome 2. \(\square\)
+
+Consequently, in the spanning odd-cycle support geometry, every adjacent pair of selected support edges immediately yields a reversal, a bounded Hamiltonian four-support, or a two-cover. Thus the odd-cycle geometry cannot support an additional quiet neutral omission-swap recurrence.
+
 
 ## Metadata
 
 - ID: deletion_covers_and_the_support_graph_compatibility_of_deletion_covers
 - Kind: section
-- Version: 4
-- Math version: 3
+- Version: 6
+- Math version: 5
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
 - Subsection 1 — crystallized, version 2: (untitled)
-- Subsection 2 — HOT, version 3: Three compatible covers force a reversal
+- Subsection 2 — HOT, version 5: Three compatible covers force a reversal

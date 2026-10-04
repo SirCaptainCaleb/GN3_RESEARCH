@@ -634,15 +634,89 @@ for which the endpoint comparison can be run independently at both \(m_0\) and \
 Thus the unresolved connected-tree case carries two endpoint disturbances simultaneously. A completion may use their interaction; it no longer needs to spend an endpoint merely to guarantee the existence of direct mixing.
 
 
+## Two endpoint exceptions cannot coexist quietly
+
+The component-escape alternative in a disconnected support forest is not needed when both displayed endpoints are compared simultaneously.
+
+**Lemma 13 (two-endpoint non-mixing collapse).** Let
+[
+F_x=Pmid Q,
+qquad
+Q=(q_0,ldots,q_m),
+qquad mge1,
+]
+be a selected deletion cover in a minimum counterexample, with (P) a leaf support of its support-forest component and (Q) its neighbor.
+
+Suppose that for each endpoint
+[
+yin{q_0,q_m},
+]
+the selected deletion cover (F_y) has no ordinary path edge joining (P) to (Q-{y}).
+
+Then at least one of the following holds:
+
+1. (H) has a Hamiltonian support of order two with two-coverable complement;
+2. one of the alternative covers constructed below has an order disagreement with (F_x) on the common support (Q-{y});
+3. a tight triple reverses two omitted labels across a common vertex, as in the adjacent-slot conclusion of the insertion-slot lemma;
+4. the two endpoint alternatives have an order disagreement on their common domain.
+
+In particular, after order disagreement and external reversal are treated as successful disturbances, the two endpoints of (Q) cannot both be non-mixing.
+
+**Proof.** Fix an endpoint (yin{q_0,q_m}). Lemma 1 of this Section applies to the non-mixing cover (F_y). It gives a block decomposition whose mixed component contains (Q-{y}) together with (x) as a contiguous tight subpath. Hence
+[
+G_y
+=
+Pmidigl((Q-{y})cup{x}igr)
+]
+is also a deletion cover of (H-y).
+
+Compare (G_y) with
+[
+F_x=Pmid Q
+]
+on (H-{x,y}). They have the same support partition
+[
+Pmid(Q-{y}).
+]
+Use the same displayed order on (P) in both covers. If the order induced by (G_y) on (Q-{y}) disagrees with the inherited order from (Q), outcome 2 holds. Otherwise the two covers are compatible.
+
+By the insertion-slot lemma, the omitted labels (x,y) are inserted into equal or adjacent slots of the common order on (Q-{y}). An adjacent pair of slots gives outcome 3. Thus, outside outcome 3, the slots are equal.
+
+Now put
+[
+a=q_0,qquad b=q_m.
+]
+For (y=a), the vertex (a) occupies the initial endpoint slot of the inherited order on (Q-a). Hence compatibility forces (x) to occupy that same initial slot in (G_a). Likewise, for (y=b), compatibility forces (x) to occupy the final endpoint slot in (G_b).
+
+If (|Q|=2), then (Q) itself is a two-vertex Hamiltonian support and
+[
+H-Q=Pmid{x}
+]
+has path-cover number at most two. This is outcome 1.
+
+Assume therefore (|Q|ge3), and choose any
+[
+zin Q-{a,b}.
+]
+Restrict (G_a) and (G_b) to (H-{a,b}). Their support partitions agree:
+[
+Pmidigl((Q-{a,b})cup{x}igr).
+]
+But in (G_a), the vertex (x) precedes (z), while in (G_b), the vertex (x) follows (z). Thus the two common-support orders disagree, giving outcome 4. (square)
+
+Therefore a disconnected support forest has no independent “both endpoints escape” residue. For every leaf-neighbor Hamiltonian path, at least one endpoint comparison enters direct mixing, order disagreement, or reversal, unless bounded support has already appeared.
+
+
+
 ## Metadata
 
 - ID: leaf_comparisons_in_deletion_support_forests
 - Kind: section
-- Version: 17
-- Math version: 13
+- Version: 18
+- Math version: 14
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 17: Leaf comparisons in deletion-support forests
+- Subsection 1 — HOT, version 18: Leaf comparisons in deletion-support forests

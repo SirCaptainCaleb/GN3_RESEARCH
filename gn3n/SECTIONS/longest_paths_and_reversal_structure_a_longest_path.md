@@ -351,15 +351,183 @@ This is the natural bounded interface for the global problem: endpoint deletion 
 
 
 
+### Opposite extremal covers force a crossing or bidirectional reversal
+
+The transfer dichotomy is more effective when one compares opposite extremal two-covers of the same complement rather than iterating an allowed transfer.
+
+Let
+\[
+U=H-A,
+\]
+where \(A\) is globally longest. Choose:
+
+- a **maximally imbalanced** two-cover
+  \[
+  U=P\mid Q,\qquad |P|\ge |Q|,
+  \]
+  maximizing \(|P|\); and
+- a **maximally balanced** two-cover
+  \[
+  U=R\mid S,\qquad |R|\ge |S|,
+  \]
+  minimizing \(|R|-|S|\).
+
+The first cover is the one used in Lemma 4.
+
+**Lemma 7 (dual extremal normal form).** If
+\[
+|R|-|S|\ge2,
+\]
+then every displayed endpoint \(r\) of \(R\) is noninsertable at every position of the displayed Hamilton order of \(S\). In particular \(r\) reverses both end edges of \(S\).
+
+**Proof.** Let \(r\) be an endpoint of \(R\). If \(S\cup\{r\}\) were Hamiltonian, deleting \(r\) from the displayed endpoint of \(R\) would leave a tight path \(R-r\), giving the two-cover
+\[
+(R-r)\mid(S\cup\{r\})
+\]
+of \(U\). Its component-size difference is
+\[
+(|R|-1)-(|S|+1)=|R|-|S|-2,
+\]
+strictly smaller than the chosen minimum. Hence \(S\cup\{r\}\) is non-Hamiltonian. By [[endpoint_replacement_truncation_dichotomy01]], \(r\) is noninsertable at every gap of the displayed order of \(S\); in particular both endpoint insertions fail, so boundary antisymmetry gives the two end-edge reversals. \(\square\)
+
+Thus the complement of a longest path carries reversal certificates in opposite directions: endpoints of the small side of a maximally imbalanced cover reverse the large side, while endpoints of the large side of a maximally balanced cover reverse the small side.
+
+**Lemma 8 (extremal-cover comparison).** With the two covers above, at least one of the following holds.
+
+1. The support partitions coincide:
+   \[
+   \{V(P),V(Q)\}=\{V(R),V(S)\}.
+   \]
+   If their common size difference is at least two, then the endpoints on both sides reverse both end edges of the opposite side.
+2. Some ordinary edge of one of \(R,S\) joins a vertex of \(P\) to a vertex of \(Q\).
+
+**Proof.** Suppose no ordinary edge of either \(R\) or \(S\) joins \(V(P)\) to \(V(Q)\). Since each of \(R,S\) is connected as an ordinary path, each lies wholly inside one of \(V(P),V(Q)\). Because \(R,S\) partition \(U=V(P)\sqcup V(Q)\) and both old supports are nonempty, one of \(R,S\) equals \(V(P)\) and the other equals \(V(Q)\). Thus the support partitions coincide.
+
+If they coincide and the common size difference is at least two, Lemma 4 applied to the maximally imbalanced realization gives reversal from the smaller side into the larger, while Lemma 7 applied to the maximally balanced realization gives reversal from the larger side into the smaller. \(\square\)
+
+Consequently the general problem on \(H-A\) has only two global geometries:
+
+\[
+\boxed{\text{bidirectional end reversal on one fixed partition}}
+\]
+or
+\[
+\boxed{\text{a comparison path crossing the two supports}}.
+\]
+
+The second case is precisely the kind of cut-interaction disturbance controlled by [[coversurg01]]: a crossing comparison edge, together with an inherited neighbor on one old support, immediately yields a local reversal/cut interaction. The first case is still more rigid: both component endpoints attack the opposite component at both ends.
+
+This is a genuinely global reduction. It uses no bounded-order hypothesis and no assumption that an allowed transfer must be monotone. The next step is to show that either global geometry merges \(P,Q\), or can be spliced through the globally longest path \(A\) to create a path longer than \(A\).
+
+
+### Longestness forces the same transfer dichotomy across \(A\) and \(P\)
+
+**Lemma 9.** In the lexicographic normal form
+\[
+A=(a_1,\ldots,a_r),\qquad P=(p_1,\ldots,p_m),\qquad r\ge m\ge2,
+\]
+exactly one of the following holds at the left end:
+
+1. \((a_2,a_1,p_1,\ldots,p_m)\) is a tight path of order \(m+2\);
+2. \((p_2,p_1,a_1)\) is tight.
+
+Exactly one of the following holds at the right end:
+
+1. \((p_1,\ldots,p_m,a_r,a_{r-1})\) is a tight path of order \(m+2\);
+2. \((a_r,p_m,p_{m-1})\) is tight.
+
+If both transfer alternatives hold, then
+\[
+(a_2,a_1,p_1,\ldots,p_m,a_r,a_{r-1})
+\]
+is a tight path of order \(m+4\).
+
+**Proof.** Longestness of \(A\) gives
+\[
+(a_2,a_1,p_1),\qquad (p_m,a_r,a_{r-1})
+\]
+tight. Test \((a_1,p_1,p_2)\). If tight, it completes the left displayed path; otherwise boundary antisymmetry gives \((p_2,p_1,a_1)\). The right side is symmetric, testing \((p_{m-1},p_m,a_r)\). If both tested triples are tight, the two constructions concatenate through \(P\). \(\square\)
+
+**Corollary 10.**
+If \(r-m\le1\), both ends of \(A\) and \(P\) are mutually reversing. If \(r-m\le3\), at least one end is mutually reversing.
+
+Indeed, a successful one-sided transfer gives a path of order \(m+2\), while two successful transfers give a path of order \(m+4\); either would exceed the longest-path order \(r\) under the stated inequalities.
+
+Together with Corollary 6, if both
+\[
+r-m\le1,\qquad m-|Q|\le1,
+\]
+then each end carries a reversal ladder
+\[
+A\longleftrightarrow P\longleftrightarrow Q,
+\]
+and the endpoints of \(Q\) also reverse the corresponding end edges of \(A\).
+
+Thus the arbitrary-order problem now couples component-size gaps to explicit reversal density rather than to any fixed total order.
+
+
+### A single crossing is a genuine segment transfer from the large side
+
+Continue with the maximally imbalanced cover
+\[
+U=P\mid Q,\qquad |P|=m\ge t=|Q|,
+\]
+and a maximally balanced cover
+\[
+U=R\mid S.
+\]
+Let \(c\) be the number of ordinary edges of \(R\mid S\) joining \(V(P)\) to \(V(Q)\).
+
+**Lemma 11 (single-crossing augmentation).** If \(c=1\), then the balanced cover does not keep all of \(P\) in one component. Equivalently, it is \(P\), not \(Q\), that is split into two nonempty monochromatic blocks.
+
+More precisely, cutting the unique crossing edge produces three nonempty monochromatic blocks. One is all of \(Q\), while the other two partition \(P\). One path of \(R\mid S\) consists of \(Q\) concatenated with one \(P\)-block, and the other path is the remaining \(P\)-block.
+
+**Proof.** Cutting the unique crossing edge of the two-path forest \(R\mid S\) produces exactly three monochromatic blocks. Since both old classes \(P,Q\) are nonempty, one old class occurs in two blocks and the other in one.
+
+Suppose \(Q\) were the split class. Then \(P\) would occur as one whole block. The unique crossing edge joins that whole \(P\)-block to one nonempty \(Q\)-block, so one component of \(R\mid S\) would have order strictly greater than
+\[
+|P|=m.
+\]
+But \(P\mid Q\) was chosen so that \(m\) is the maximum possible component order among all two-covers of \(U\). Contradiction.
+
+Hence \(P\) is split and \(Q\) is one whole block. The unique crossing edge joins \(Q\) to one of the two \(P\)-blocks; the remaining \(P\)-block is the second component. \(\square\)
+
+If, in addition, the two \(P\)-blocks occur as inherited intervals of the displayed order
+\[
+P=(p_1,\ldots,p_m),
+\]
+then Lemma 11 is literally a segment transfer:
+\[
+P=P^{\mathrm{left}}\,P^{\mathrm{right}}
+\]
+at one inherited cut, and the balanced cover is
+\[
+(P^{\mathrm{left}}\cup Q)\mid P^{\mathrm{right}}
+\]
+or its symmetric version, with the first union realized by one tight path.
+
+If the \(P\)-blocks are not inherited intervals, then some inherited edge of \(P\) is split between comparison blocks or one comparison path leaves \(P\) and later returns. Thus:
+
+**Corollary 12 (global augment-or-disturb dichotomy).** Comparing maximally imbalanced and maximally balanced two-covers of \(H-A\) yields one of:
+
+1. the same support partition, with bidirectional endpoint reversal when the size gap is at least two;
+2. a genuine transfer of an inherited end segment of the large path \(P\) onto the whole small path \(Q\);
+3. a split inherited edge or leave-and-return disturbance in \(P\) or \(Q\).
+
+When there are at least two crossing edges, outcome 3 follows from the block count. When there is exactly one, Lemma 11 gives outcome 2 unless the comparison blocks already disturb the inherited order.
+
+This is the global augmenting-path formulation: the move from maximal imbalance toward maximal balance is either an honest segment transfer or it leaves a concrete path disturbance. No bounded total order is involved.
+
+
 ## Metadata
 
 - ID: longest_paths_and_reversal_structure_a_longest_path
 - Kind: section
-- Version: 6
-- Math version: 6
+- Version: 9
+- Math version: 9
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
-- Subsection 1 — HOT, version 6: (untitled)
+- Subsection 1 — HOT, version 9: (untitled)

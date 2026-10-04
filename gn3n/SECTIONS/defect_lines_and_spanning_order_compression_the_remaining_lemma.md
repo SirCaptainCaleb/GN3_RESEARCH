@@ -1624,12 +1624,177 @@ Together with the second alternative of Lemma 40, the unresolved bridge-manufact
 
 
 
+### The split-support branch of the mixed pattern is already an external reversal
+
+**Corollary 42.** In Lemma 40, suppose the second alternative occurs: the comparison two-cover of \(H-z\) has \(w\) internal between an \(A\)-block and a \(C\)-block, and one of the old supports \(A,C\) is split between the two comparison paths. Then \(H\) contains an external tight triple reversing an edge of one of the displayed paths.
+
+**Proof.** Suppose \(A\) is split; the case of \(C\) is symmetric. Since \(A\) is a connected displayed path and its vertices occur in both comparison paths, some inherited ordinary edge of \(A\) has its endpoints in different comparison paths. In the spanning three-cover
+\[
+(A,z)\mid C\mid\{w\},
+\]
+that edge is an inherited displayed edge of the first component. Lemma 32 applies to this split edge and produces an external tight triple reversing an edge of one of the displayed components. The singleton third component causes no difficulty: the proof of Lemma 32 simply omits nonexistent junction triples. \(\square\)
+
+Consequently Lemma 40 has no independent split-support residue. Together with Lemma 41 and Lemma 32, every branch of the mixed universal pattern reduces to a two-cover, strict descent, an external reversal, or a neutral omission swap producing compatible deletion covers. Thus the only coherent bridge-manufacture residue still not absorbed by the existing reversal machinery is the compatible neutral omission swap.
+
+
+### Neutral omission swaps collapse to the external-reversal interface
+
+The compatible neutral omission-swap residue in Lemma 41 is not independent.
+
+**Lemma 43 (neutral omission-swap absorption).**
+Suppose the Phi-neutral omission-swap outcome of
+[[path_disturbance_endpoint_reversal_descent_or_an_omission_swap]]
+occurs. Then either (H) has a two-cover or the existing disturbance reductions yield an external tight triple reversing a displayed endpoint edge.
+
+**Proof.**
+Use the normal form from the cited theorem. Write
+[
+H-y=Rmid Q,qquad
+R=(r_0,ldots,r_m),qquad
+z=r_0,qquad
+B=(r_1,ldots,r_m),
+]
+and let
+[
+T=Cmid D
+]
+be the deletion cover of (H-z). In the no-disturbance branch, (B) is one inherited-order block of
+[
+C=L,B,K.
+]
+
+First suppose (K
+earnothing). Neutrality forces (|L|=1); write (L=(w)). Then
+[
+T=(w,B,K)mid D
+]
+is a deletion cover of (H-z), while restoration gives
+[
+G_w=(z,B,K)mid D
+]
+as a deletion cover of (H-w). These are exactly the same-slot root-exchange hypotheses of Lemma 11 above, with common ordered core ((B,K)) and fixed path (D). Lemma 11 gives a two-cover, a direct mixed edge, an order disagreement, or an external reversal at the opposite endpoint. Direct mixing is absorbed by the current comparison reductions into split/leave-and-return unless a two-cover already exists; order disagreement yields an external reversing triple by the path-intersection calculus; and Corollary 33 absorbs split/leave-and-return into external reversal. Hence this branch yields a two-cover or external reversal.
+
+Now suppose (K=arnothing). Write
+[
+L=L',w.
+]
+Neutrality forces (|L'|=1); write (L'=(u)). Then
+[
+T=(u,w,B)mid D
+]
+is a deletion cover of (H-z), and restoration gives the tight path
+[
+(w,z,B).
+]
+Omitting (u) gives the compatible deletion cover
+[
+G_u=(w,z,B)mid D
+]
+of (H-u).
+
+If ((u,w,z)) is tight, then
+[
+(u,w,z,B)
+]
+is tight: the triple ((w,z,r_1)) is supplied by the restoration branch and all later triples are inherited from (B). Hence
+[
+(u,w,z,B)mid D
+]
+two-covers (H).
+
+Otherwise ((u,w,z)) is non-tight, so boundary reversal gives
+[
+(z,w,u)
+]
+tight. Since (uw) is the displayed initial edge of ((u,w,B)) in (T), this is an external tight triple reversing a displayed endpoint edge. (square)
+
+Thus the compatible neutral omission swap identified after Lemma 42 is absorbed as well. After the current reductions, bridge manufacture has no independent neutral residue: every branch returns to a two-cover, strict descent, or the single recurrent geometric interface of external endpoint reversal.
+
+
+### Neutral omission swaps are not a terminal bridge residue
+
+The compatible neutral omission-swap branch can now be removed from the list of unresolved bridge-manufacture outcomes.
+
+**Corollary 43 (neutral recurrence collapse).** In a minimum counterexample, a neutral omission swap producing compatible deletion covers yields, after the selected-cover continuation of [[balanced_omission_swap_gives_descent_or_selected_singleton_recurrence]], at least one of the following:
+
+1. a two-cover of \(H\);
+2. an external reversing tight triple;
+3. a Hamiltonian four-support with non-Hamiltonian path-cover-two complement;
+4. a non-neutral disturbance already handled by the existing comparison machinery.
+
+In particular there is no independent indefinitely neutral omission-swap residue.
+
+**Proof.** In the forest branch, [[three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component]] shows that neutral recurrence reduces to immediate backtracking between a compatible pair, and the equal endpoint-slot closure turns that backtracking into a two-cover.
+
+In the spanning odd-cycle support geometry, adjacent selected covers are support-compatible. The compatible-pair trichotomy of [[deletion_covers_and_the_support_graph_compatibility_of_deletion_covers]] gives either order disagreement, adjacent-slot reversal, an equal internal-slot Hamiltonian four-support, or an equal endpoint-slot two-cover. Thus the cyclic support geometry also has no quiet neutral recurrence.
+
+Therefore a neutral omission swap cannot persist as an additional bridge-manufacture obstruction. \(\square\)
+
+Combining Corollary 43 with Corollary 42 and Lemma 32 removes both coherent comparison residues produced by Lemmas 40--41. After all current reductions, the only unresolved global conversion is once again
+\[
+\boxed{\text{external endpoint reversal}.}
+\]
+The difference from Corollary 33 is that the neutral omission-swap escape route has now also been closed globally rather than merely isolated.
+
+
+### The reversing label is globally noninsertable in the mixed bridge pattern
+
+The mixed universal pattern of Lemma 40 carries a stronger obstruction than the two displayed endpoint reversals.
+
+**Lemma 44 (cross noninsertability).** Retain the hypotheses and notation of Lemma 40:
+[
+H-{z,w}=Amid C,
+]
+where
+[
+A=(a_1,ldots,a_r),qquad C=(c_1,ldots,c_s),
+]
+and
+[
+(a_{r-1},a_r,z),qquad(z,c_1,c_2),
+]
+[
+(w,a_r,a_{r-1}),qquad(c_2,c_1,w)
+]
+are tight.
+
+Then each of the four vertex sets
+[
+Acup{w},qquad
+Ccup{w},qquad
+Acup{z,w},qquad
+Ccup{z,w}
+]
+is non-Hamiltonian. Consequently (w) is noninsertable at every position of each of the four displayed Hamilton paths
+[
+A,qquad C,qquad (A,z),qquad (z,C).
+]
+
+In particular the mixed-pattern witness (w) is a globally blocked augmentation label on both sides of the bridge vertex (z).
+
+**Proof.** The displayed triples give the Hamiltonian paths
+[
+(A,z)=(a_1,ldots,a_r,z)
+qquad	ext{and}qquad
+(z,C)=(z,c_1,ldots,c_s).
+]
+
+If (Acup{w}) were Hamiltonian, a Hamilton path on (Acup{w}) together with the displayed path ((z,C)) would two-cover (H), impossible. Thus (Acup{w}) is non-Hamiltonian. Similarly, if (Ccup{w}) were Hamiltonian, it would pair with ((A,z)) to two-cover (H).
+
+If (Acup{z,w}) were Hamiltonian, that Hamilton path together with (C) would two-cover (H); hence this set is non-Hamiltonian. Likewise (Ccup{z,w}) is non-Hamiltonian because (A) is Hamiltonian.
+
+Apply [[endpoint_replacement_truncation_dichotomy01]] first to the displayed paths (A,C) with exterior vertex (w), and then to the displayed paths ((A,z),(z,C)) with exterior vertex (w). In each case the augmented support is non-Hamiltonian, so the non-Hamiltonian branch of the dichotomy says that (w) is noninsertable at every inherited gap of the displayed path. (square)
+
+Thus Lemma 40 may be viewed as an augmenting-path obstruction: (z) is simultaneously transportable across both old supports, while (w) is blocked from every inherited insertion slot before and after that transport. Any completion of bridge manufacture must exploit this global blockage rather than only the two exposed reversal triples.
+
+
+
 ## Metadata
 
 - ID: defect_lines_and_spanning_order_compression_the_remaining_lemma
 - Kind: section
-- Version: 40
-- Math version: 35
+- Version: 44
+- Math version: 39
 - Audit: unaudited
 - Refutation: unrefuted
 
@@ -1640,4 +1805,4 @@ Together with the second alternative of Lemma 40, the unresolved bridge-manufact
 - Subsection 3 — crystallized, version 4: Slot synchronization reductions
 - Subsection 4 — crystallized, version 6: Same-side endpoint reduction
 - Subsection 5 — crystallized, version 4: Two-label one-defect bridge
-- Subsection 6 — HOT, version 7: Coherent residue collapses
+- Subsection 6 — HOT, version 11: Coherent residue collapses
