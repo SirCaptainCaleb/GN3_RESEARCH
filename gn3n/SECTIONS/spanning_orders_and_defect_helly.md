@@ -207,16 +207,314 @@ p+c\le m-1.
 
 This exact inversion root retains substantially more theorem-relevant information than the first/last-switch root. Its tail is the first actual non-tight status, its head is the reflected last actual tight status, and the sum of the two root coordinates measures the exact distance from the two-cover window. It is therefore the natural root for a second pass through the barycentric balance argument.
 
+### Exact deficiency equals deletion distance to a two-cover
+
+The order-level deficiency has an exact global interpretation.
+
+For a spanning order \(\pi\), put
+\[
+d_2(\pi)=\max\{0,q(\pi)-p(\pi)-1\}.
+\]
+Define the **two-cover deletion distance**
+\[
+\kappa_2(H)
+=
+\min\{|X|:X\subseteq V(H),\ \operatorname{pc}(H-X)\le2\}.
+\]
+
+**Theorem (deletion-distance identity).**
+\[
+\boxed{\kappa_2(H)=\min_{\pi} d_2(\pi).}
+\]
+
+**Proof.** Fix a spanning order \(\pi=(v_1,\ldots,v_n)\).
+
+If \(d_2(\pi)=0\), the exact inversion-window criterion already gives \(\operatorname{pc}(H)\le2\), so \(\kappa_2(H)=0\).
+
+Assume \(d_2(\pi)>0\), and write
+\[
+p=p(\pi),\qquad q=q(\pi).
+\]
+Then
+\[
+P=(v_1,\ldots,v_{p+1})
+\]
+is tight, because every status before \(p\) is \(1\), and
+\[
+Q=(v_n,v_{n-1},\ldots,v_{q+1})
+\]
+is tight, because every status after \(q\) is \(0\) and boundary reversal makes the reversed suffix tight. The two paths are disjoint, and the uncovered set is
+\[
+X_\pi=\{v_{p+2},\ldots,v_q\},
+\]
+with
+\[
+|X_\pi|=q-p-1=d_2(\pi).
+\]
+Hence
+\[
+\kappa_2(H)\le d_2(\pi).
+\]
+Taking the minimum over \(\pi\) gives
+\[
+\kappa_2(H)\le\min_\pi d_2(\pi).
+\]
+
+Conversely, let \(X\subseteq V(H)\) have \(|X|=k\) and let
+\[
+H-X=P\mid Q
+\]
+be a two-cover. Write \(r=|P|\), choose any order \(x_1,\ldots,x_k\) of \(X\), and form
+\[
+\pi=(P,x_1,\ldots,x_k,Q^{\rm rev}).
+\]
+Every status wholly inside \(P\) is \(1\), so
+\[
+p(\pi)\ge r-1.
+\]
+Every status wholly inside \(Q^{\rm rev}\) is \(0\); in all cases this gives
+\[
+q(\pi)\le r+k.
+\]
+Therefore
+\[
+q(\pi)-p(\pi)-1\le k,
+\]
+and hence
+\[
+d_2(\pi)\le k.
+\]
+Minimizing first over \(\pi\) and then over such \(X\) gives
+\[
+\min_\pi d_2(\pi)\le\kappa_2(H).
+\]
+The two inequalities prove the identity. \(\square\)
+
+Thus the exact inversion coordinate measures a genuine edit distance:
+\[
+\boxed{\text{minimum exact deficiency}
+=
+\text{minimum number of vertices whose deletion makes the tournament two-coverable}.}
+\]
+
+For a counterexample, the minimum deficiency is positive. For a minimum counterexample, every one-vertex deletion is two-coverable, so
+\[
+\kappa_2(H)=1
+\qquad\Longrightarrow\qquad
+\min_\pi d_2(\pi)=1.
+\]
+This recovers the exact-deficiency-one conclusion of Section 7 conceptually, without any separate junction calculation. The junction calculation remains useful because it shows more: every chosen deletion cover of a minimum counterexample yields a deficiency-one order and identifies the omitted vertex as the common terminal-edge reverser.
+
+
+### Size-profile dictionary
+
+For an order with positive exact deficiency, the canonical partial cover has
+\[
+|P_\pi|=p(\pi)+1,
+\qquad
+|Q_\pi|=c(\pi)+1,
+\qquad
+|X_\pi|=\delta(\pi).
+\]
+Hence
+\[
+n=(p+1)+(c+1)+\delta.
+\]
+Thus the exact inversion root \(e_p-e_c\) records the signed imbalance of the two canonical path orders, while the anti-diagonal deficit \(m-(p+c)\) is exactly the number of uncovered vertices. Reversal swaps the two path orders and negates the root. In particular, on a minimum-hole order arising from a two-cover \(P|Q\) of \(H-X\), the root is
+\[
+e_{|P|-1}-e_{|Q|-1}.
+\]
+This identifies the exact-root topology as a topology of partial two-cover size profiles rather than merely of abstract switch coordinates.
+
+### Canonical side labels cannot flip across one swap when the exact hole is at least two
+
+Assume
+\[
+\kappa_2(H)=k\ge2.
+\]
+For a spanning order \(\pi\), give each actual vertex its canonical role
+\[
+\sigma_\pi(v)=
+\begin{cases}
++,&v\in P_\pi,\\
+0,&v\in X_\pi,\\
+-,&v\in Q_\pi.
+\end{cases}
+\]
+Reversal negates the signs and preserves the zero set.
+
+**Lemma.** If \(\pi'\) is obtained from \(\pi\) by one adjacent transposition, then no vertex changes directly from \(+\) to \(-\), or from \(-\) to \(+\).
+
+**Proof.** Let \(p,q\) and \(p',q'\) be the exact inversion coordinates, and suppose that a vertex \(v\) is \(+\) in \(\pi\) and \(-\) in \(\pi'\). Write \(t,t'\) for its two positions, so \(|t-t'|\le1\). Since \(v\in P_\pi\),
+\[
+t\le p+1,
+\qquad
+q-p-1\ge k,
+\]
+hence
+\[
+q\ge t+k.
+\]
+Since \(v\in Q_{\pi'}\),
+\[
+t'\ge q'+1,
+\qquad
+q'-p'-1\ge k,
+\]
+so
+\[
+p'\le t-k-1.
+\]
+Thus \(p'<p\) and \(q'<q\).
+
+An adjacent transposition changes only four consecutive status positions, say a set \(J\) of diameter at most three. Because the first zero moved left, the new first-zero position \(p'\) must lie in \(J\). Because the last one moved left, the old last-one position \(q\) must also lie in \(J\). Hence
+\[
+q-p'\le3.
+\]
+But the two displayed bounds give
+\[
+q-p'\ge2k+1\ge5,
+\]
+a contradiction. The reverse sign change is symmetric. \(\square\)
+
+Therefore, when \(k\ge2\), canonical roles change along the permutahedron graph only through the hole:
+\[
++\longleftrightarrow0\longleftrightarrow-.
+\]
+This is the missing local compatibility for a signed-partition Tucker formulation; it is stronger than the old rook condition because it is attached to actual vertices and the exact two-cover deficiency.
+
+### Minimum-hole faces have constant exact root
+
+Let \(X\) be a minimum deletion set of order \(k=\kappa_2(H)>0\), and fix
+\[
+H-X=P\mid Q,\qquad |P|=r,\quad |Q|=s.
+\]
+For every ordering \(\sigma\) of \(X\), the spanning order
+\[
+\pi_\sigma=(P,\sigma,Q^{\rm rev})
+\]
+has exact deficiency at most \(k\). The deletion-distance identity makes \(k\) the global minimum, so equality holds. Consequently
+\[
+p(\pi_\sigma)=r-1,\qquad
+q(\pi_\sigma)=r+k,\qquad
+c(\pi_\sigma)=s-1
+\]
+for every \(\sigma\). Hence the whole \((k-1)\)-dimensional permutahedral face obtained by freely permuting \(X\) carries the constant exact root
+\[
+e_{r-1}-e_{s-1}.
+\]
+In particular the exact-root geometry records minimum deletion states as honest faces rather than isolated chamber labels.
+
+### The Boolean cube generated by a minimum hole
+
+Let
+\[
+X\subseteq V(H),\qquad |X|=k=\kappa_2(H),
+\]
+be a minimum deletion set, and fix a two-cover
+\[
+H-X=P\mid Q.
+\]
+
+For every subset \(Y\subseteq X\), put
+\[
+H_Y:=H-(X\setminus Y).
+\]
+
+**Theorem (hereditary exactness of a minimum hole).**
+For every \(Y\subseteq X\),
+\[
+\boxed{\kappa_2(H_Y)=|Y|.}
+\]
+
+**Proof.** Deleting \(Y\) from \(H_Y\) leaves \(H-X=P\mid Q\), so
+\[
+\kappa_2(H_Y)\le |Y|.
+\]
+If \(\kappa_2(H_Y)<|Y|\), choose \(Z\subseteq V(H_Y)\) with
+\[
+|Z|<|Y|,\qquad \operatorname{pc}(H_Y-Z)\le2.
+\]
+Then deleting
+\[
+(X\setminus Y)\cup Z
+\]
+from \(H\) leaves the same two-coverable graph, while
+\[
+|(X\setminus Y)\cup Z|
+\le k-|Y|+|Z|
+<k,
+\]
+contradicting the definition of \(X\). \(\square\)
+
+Thus a minimum hole carries an entire Boolean cube of exact deletion distances.
+
+Write
+\[
+P=(p_1,\ldots,p_r),\qquad Q=(q_1,\ldots,q_s).
+\]
+For every nonempty \(Y\subseteq X\) and every ordering
+\[
+\sigma=(y_1,\ldots,y_t),\qquad t=|Y|,
+\]
+the spanning order of \(H_Y\)
+\[
+(P,\sigma,Q^{\rm rev})
+\]
+has exact deficiency at most \(t\). The theorem makes \(t\) the global minimum deficiency of \(H_Y\), so equality holds. Consequently
+\[
+p=r-1,\qquad q=r+t,\qquad c=s-1
+\]
+for every such \(Y\) and every ordering of \(Y\).
+
+In particular every \(x\in X\) satisfies the same two terminal reversal relations
+\[
+(x,p_r,p_{r-1}),
+\qquad
+(x,q_s,q_{s-1})
+\]
+tight.
+
+### Absolute nonaugmentability of the complementary paths
+
+The Boolean-cube identity gives a stronger global obstruction than failure of insertion into one displayed order.
+
+**Corollary (absolute nonaugmentability).**
+Let \(Y\subseteq X\) be nonempty.
+
+1. The induced boundary tournament on \(V(P)\cup Y\) is non-Hamiltonian.
+2. The induced boundary tournament on \(V(Q)\cup Y\) is non-Hamiltonian.
+3. More generally, for no partition
+   \[
+   Y=Y_P\sqcup Y_Q
+   \]
+   can both \(H[V(P)\cup Y_P]\) and \(H[V(Q)\cup Y_Q]\) be Hamiltonian.
+
+**Proof.**
+If \(P\cup Y\) had a Hamilton tight path, then deleting only \(X\setminus Y\) from \(H\) would leave a two-cover consisting of that Hamilton path and \(Q\), using fewer than \(k\) deletions. The statement for \(Q\) is symmetric.
+
+For the third statement, Hamilton paths on the two displayed enlarged supports would two-cover
+\[
+H-(X\setminus Y),
+\]
+again contradicting
+\[
+\kappa_2(H_Y)=|Y|>0.
+\]
+\(\square\)
+
+Hence a minimum exact hole is a synchronized family of common terminal-edge reversers that is simultaneously **unabsorbable in every nonempty subfamily and under every split between the two complementary paths**. This is a global structural constraint on one fixed graph, not a minimum-counterexample or disturbance hypothesis.
+
 ## Metadata
 
 - ID: spanning_orders_and_defect_helly
 - Kind: section
-- Version: 5
-- Math version: 4
+- Version: 9
+- Math version: 8
 - Audit: unaudited
 - Refutation: unrefuted
 
 ## Authoring state
 
 - Subsection 1 — crystallized, version 4: Defect intervals and the exact Helly criterion
-- Subsection 2 — HOT, version 2: Exact inversion-window criterion
+- Subsection 2 — HOT, version 6: Exact inversion-window criterion

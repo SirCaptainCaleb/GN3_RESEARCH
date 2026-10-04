@@ -205,6 +205,304 @@ p+c\le m-1.
 
 This exact inversion root retains substantially more theorem-relevant information than the first/last-switch root. Its tail is the first actual non-tight status, its head is the reflected last actual tight status, and the sum of the two root coordinates measures the exact distance from the two-cover window. It is therefore the natural root for a second pass through the barycentric balance argument.
 
+### Exact deficiency equals deletion distance to a two-cover
+
+The order-level deficiency has an exact global interpretation.
+
+For a spanning order \(\pi\), put
+\[
+d_2(\pi)=\max\{0,q(\pi)-p(\pi)-1\}.
+\]
+Define the **two-cover deletion distance**
+\[
+\kappa_2(H)
+=
+\min\{|X|:X\subseteq V(H),\ \operatorname{pc}(H-X)\le2\}.
+\]
+
+**Theorem (deletion-distance identity).**
+\[
+\boxed{\kappa_2(H)=\min_{\pi} d_2(\pi).}
+\]
+
+**Proof.** Fix a spanning order \(\pi=(v_1,\ldots,v_n)\).
+
+If \(d_2(\pi)=0\), the exact inversion-window criterion already gives \(\operatorname{pc}(H)\le2\), so \(\kappa_2(H)=0\).
+
+Assume \(d_2(\pi)>0\), and write
+\[
+p=p(\pi),\qquad q=q(\pi).
+\]
+Then
+\[
+P=(v_1,\ldots,v_{p+1})
+\]
+is tight, because every status before \(p\) is \(1\), and
+\[
+Q=(v_n,v_{n-1},\ldots,v_{q+1})
+\]
+is tight, because every status after \(q\) is \(0\) and boundary reversal makes the reversed suffix tight. The two paths are disjoint, and the uncovered set is
+\[
+X_\pi=\{v_{p+2},\ldots,v_q\},
+\]
+with
+\[
+|X_\pi|=q-p-1=d_2(\pi).
+\]
+Hence
+\[
+\kappa_2(H)\le d_2(\pi).
+\]
+Taking the minimum over \(\pi\) gives
+\[
+\kappa_2(H)\le\min_\pi d_2(\pi).
+\]
+
+Conversely, let \(X\subseteq V(H)\) have \(|X|=k\) and let
+\[
+H-X=P\mid Q
+\]
+be a two-cover. Write \(r=|P|\), choose any order \(x_1,\ldots,x_k\) of \(X\), and form
+\[
+\pi=(P,x_1,\ldots,x_k,Q^{\rm rev}).
+\]
+Every status wholly inside \(P\) is \(1\), so
+\[
+p(\pi)\ge r-1.
+\]
+Every status wholly inside \(Q^{\rm rev}\) is \(0\); in all cases this gives
+\[
+q(\pi)\le r+k.
+\]
+Therefore
+\[
+q(\pi)-p(\pi)-1\le k,
+\]
+and hence
+\[
+d_2(\pi)\le k.
+\]
+Minimizing first over \(\pi\) and then over such \(X\) gives
+\[
+\min_\pi d_2(\pi)\le\kappa_2(H).
+\]
+The two inequalities prove the identity. \(\square\)
+
+Thus the exact inversion coordinate measures a genuine edit distance:
+\[
+\boxed{\text{minimum exact deficiency}
+=
+\text{minimum number of vertices whose deletion makes the tournament two-coverable}.}
+\]
+
+For a counterexample, the minimum deficiency is positive. For a minimum counterexample, every one-vertex deletion is two-coverable, so
+\[
+\kappa_2(H)=1
+\qquad\Longrightarrow\qquad
+\min_\pi d_2(\pi)=1.
+\]
+This recovers the exact-deficiency-one conclusion of Section 7 conceptually, without any separate junction calculation. The junction calculation remains useful because it shows more: every chosen deletion cover of a minimum counterexample yields a deficiency-one order and identifies the omitted vertex as the common terminal-edge reverser.
+
+
+### Size-profile dictionary
+
+For an order with positive exact deficiency, the canonical partial cover has
+\[
+|P_\pi|=p(\pi)+1,
+\qquad
+|Q_\pi|=c(\pi)+1,
+\qquad
+|X_\pi|=\delta(\pi).
+\]
+Hence
+\[
+n=(p+1)+(c+1)+\delta.
+\]
+Thus the exact inversion root \(e_p-e_c\) records the signed imbalance of the two canonical path orders, while the anti-diagonal deficit \(m-(p+c)\) is exactly the number of uncovered vertices. Reversal swaps the two path orders and negates the root. In particular, on a minimum-hole order arising from a two-cover \(P|Q\) of \(H-X\), the root is
+\[
+e_{|P|-1}-e_{|Q|-1}.
+\]
+This identifies the exact-root topology as a topology of partial two-cover size profiles rather than merely of abstract switch coordinates.
+
+### Canonical side labels cannot flip across one swap when the exact hole is at least two
+
+Assume
+\[
+\kappa_2(H)=k\ge2.
+\]
+For a spanning order \(\pi\), give each actual vertex its canonical role
+\[
+\sigma_\pi(v)=
+\begin{cases}
++,&v\in P_\pi,\\
+0,&v\in X_\pi,\\
+-,&v\in Q_\pi.
+\end{cases}
+\]
+Reversal negates the signs and preserves the zero set.
+
+**Lemma.** If \(\pi'\) is obtained from \(\pi\) by one adjacent transposition, then no vertex changes directly from \(+\) to \(-\), or from \(-\) to \(+\).
+
+**Proof.** Let \(p,q\) and \(p',q'\) be the exact inversion coordinates, and suppose that a vertex \(v\) is \(+\) in \(\pi\) and \(-\) in \(\pi'\). Write \(t,t'\) for its two positions, so \(|t-t'|\le1\). Since \(v\in P_\pi\),
+\[
+t\le p+1,
+\qquad
+q-p-1\ge k,
+\]
+hence
+\[
+q\ge t+k.
+\]
+Since \(v\in Q_{\pi'}\),
+\[
+t'\ge q'+1,
+\qquad
+q'-p'-1\ge k,
+\]
+so
+\[
+p'\le t-k-1.
+\]
+Thus \(p'<p\) and \(q'<q\).
+
+An adjacent transposition changes only four consecutive status positions, say a set \(J\) of diameter at most three. Because the first zero moved left, the new first-zero position \(p'\) must lie in \(J\). Because the last one moved left, the old last-one position \(q\) must also lie in \(J\). Hence
+\[
+q-p'\le3.
+\]
+But the two displayed bounds give
+\[
+q-p'\ge2k+1\ge5,
+\]
+a contradiction. The reverse sign change is symmetric. \(\square\)
+
+Therefore, when \(k\ge2\), canonical roles change along the permutahedron graph only through the hole:
+\[
++\longleftrightarrow0\longleftrightarrow-.
+\]
+This is the missing local compatibility for a signed-partition Tucker formulation; it is stronger than the old rook condition because it is attached to actual vertices and the exact two-cover deficiency.
+
+### Minimum-hole faces have constant exact root
+
+Let \(X\) be a minimum deletion set of order \(k=\kappa_2(H)>0\), and fix
+\[
+H-X=P\mid Q,\qquad |P|=r,\quad |Q|=s.
+\]
+For every ordering \(\sigma\) of \(X\), the spanning order
+\[
+\pi_\sigma=(P,\sigma,Q^{\rm rev})
+\]
+has exact deficiency at most \(k\). The deletion-distance identity makes \(k\) the global minimum, so equality holds. Consequently
+\[
+p(\pi_\sigma)=r-1,\qquad
+q(\pi_\sigma)=r+k,\qquad
+c(\pi_\sigma)=s-1
+\]
+for every \(\sigma\). Hence the whole \((k-1)\)-dimensional permutahedral face obtained by freely permuting \(X\) carries the constant exact root
+\[
+e_{r-1}-e_{s-1}.
+\]
+In particular the exact-root geometry records minimum deletion states as honest faces rather than isolated chamber labels.
+
+### The Boolean cube generated by a minimum hole
+
+Let
+\[
+X\subseteq V(H),\qquad |X|=k=\kappa_2(H),
+\]
+be a minimum deletion set, and fix a two-cover
+\[
+H-X=P\mid Q.
+\]
+
+For every subset \(Y\subseteq X\), put
+\[
+H_Y:=H-(X\setminus Y).
+\]
+
+**Theorem (hereditary exactness of a minimum hole).**
+For every \(Y\subseteq X\),
+\[
+\boxed{\kappa_2(H_Y)=|Y|.}
+\]
+
+**Proof.** Deleting \(Y\) from \(H_Y\) leaves \(H-X=P\mid Q\), so
+\[
+\kappa_2(H_Y)\le |Y|.
+\]
+If \(\kappa_2(H_Y)<|Y|\), choose \(Z\subseteq V(H_Y)\) with
+\[
+|Z|<|Y|,\qquad \operatorname{pc}(H_Y-Z)\le2.
+\]
+Then deleting
+\[
+(X\setminus Y)\cup Z
+\]
+from \(H\) leaves the same two-coverable graph, while
+\[
+|(X\setminus Y)\cup Z|
+\le k-|Y|+|Z|
+<k,
+\]
+contradicting the definition of \(X\). \(\square\)
+
+Thus a minimum hole carries an entire Boolean cube of exact deletion distances.
+
+Write
+\[
+P=(p_1,\ldots,p_r),\qquad Q=(q_1,\ldots,q_s).
+\]
+For every nonempty \(Y\subseteq X\) and every ordering
+\[
+\sigma=(y_1,\ldots,y_t),\qquad t=|Y|,
+\]
+the spanning order of \(H_Y\)
+\[
+(P,\sigma,Q^{\rm rev})
+\]
+has exact deficiency at most \(t\). The theorem makes \(t\) the global minimum deficiency of \(H_Y\), so equality holds. Consequently
+\[
+p=r-1,\qquad q=r+t,\qquad c=s-1
+\]
+for every such \(Y\) and every ordering of \(Y\).
+
+In particular every \(x\in X\) satisfies the same two terminal reversal relations
+\[
+(x,p_r,p_{r-1}),
+\qquad
+(x,q_s,q_{s-1})
+\]
+tight.
+
+### Absolute nonaugmentability of the complementary paths
+
+The Boolean-cube identity gives a stronger global obstruction than failure of insertion into one displayed order.
+
+**Corollary (absolute nonaugmentability).**
+Let \(Y\subseteq X\) be nonempty.
+
+1. The induced boundary tournament on \(V(P)\cup Y\) is non-Hamiltonian.
+2. The induced boundary tournament on \(V(Q)\cup Y\) is non-Hamiltonian.
+3. More generally, for no partition
+   \[
+   Y=Y_P\sqcup Y_Q
+   \]
+   can both \(H[V(P)\cup Y_P]\) and \(H[V(Q)\cup Y_Q]\) be Hamiltonian.
+
+**Proof.**
+If \(P\cup Y\) had a Hamilton tight path, then deleting only \(X\setminus Y\) from \(H\) would leave a two-cover consisting of that Hamilton path and \(Q\), using fewer than \(k\) deletions. The statement for \(Q\) is symmetric.
+
+For the third statement, Hamilton paths on the two displayed enlarged supports would two-cover
+\[
+H-(X\setminus Y),
+\]
+again contradicting
+\[
+\kappa_2(H_Y)=|Y|>0.
+\]
+\(\square\)
+
+Hence a minimum exact hole is a synchronized family of common terminal-edge reversers that is simultaneously **unabsorbable in every nonempty subfamily and under every split between the two complementary paths**. This is a global structural constraint on one fixed graph, not a minimum-counterexample or disturbance hypothesis.
+
 ---
 
 ## Section — The Norine–GN3 dictionary and Freudenthal geometry
@@ -909,9 +1207,51 @@ The rest of Article VII is devoted to that gap:
 \text{exact combinatorial intersection}.
 \]
 
-### Further developments
+### Ky Fan forces a hole-sweeping face
 
+### Ky Fan forces a hole-sweeping face
 
+Assume
+\[
+k=\kappa_2(H)\ge2.
+\]
+For a proper permutahedron face \(F\), call an actual vertex \(v\in V(H)\)
+
+- **uniformly positive on \(F\)** if \(v\in P_\pi\) for every chamber \(\pi\in\mathcal V(F)\);
+- **uniformly negative on \(F\)** if \(v\in Q_\pi\) for every chamber \(\pi\in\mathcal V(F)\).
+
+Uniformity is inherited by subfaces. Reversal exchanges the two signs.
+
+**Theorem 5.1 (hole-sweeping face).** There exists a proper permutahedron face \(F\) having no uniformly positive and no uniformly negative actual vertex. Consequently, for every \(v\in V(H)\), some chamber \(\pi\in\mathcal V(F)\) has
+\[
+v\in X_\pi.
+\]
+
+**Proof.** Suppose every proper face has a uniformly signed actual vertex. Fix an arbitrary total order of \(V(H)\). Label the barycentric-subdivision vertex corresponding to \(F\) by the least actual vertex that is uniformly signed on \(F\), with sign \(+\) or \(-\) according to its uniform role.
+
+This is an antipodal labeling: the candidate set is unchanged by reversal and every sign is reversed. Moreover a barycentric edge joins nested faces \(F\subset G\), and its endpoint labels cannot be complementary in one absolute label. Indeed, if \(v\) is uniformly positive on \(F\) and uniformly negative on \(G\), then uniform negativity on \(G\) is inherited by \(F\), impossible. The other orientation is symmetric.
+
+The barycentric subdivision of the boundary of the \((n-1)\)-dimensional permutahedron is an antipodal triangulation of \(S^{n-2}\). Ky Fan's lemma therefore gives a top-dimensional simplex whose \(n-1\) labels have distinct absolute values. Such a simplex is a maximal chain
+\[
+F_0\subsetneq F_1\subsetneq\cdots\subsetneq F_{n-2}
+\]
+of proper faces. The bottom face \(F_0\) is one chamber \(\pi\). Every sign attached to a larger face is inherited by this chamber. Hence \(n-1\) distinct actual vertices of \(H\) lie in \(P_\pi\cup Q_\pi\). Therefore
+\[
+|X_\pi|\le1,
+\]
+contradicting
+\[
+|X_\pi|=\delta(\pi)\ge\kappa_2(H)=k\ge2.
+\]
+Thus some proper face \(F\) has no uniformly signed vertex.
+
+Now fix \(v\in V(H)\). If \(v\) never belonged to \(X_\pi\) on this face, then it would take only the roles \(P\) and \(Q\). The chamber graph of a permutahedron face is connected. By the no-direct-side-flip lemma of [[spanning_orders_and_defect_helly]], one adjacent transposition cannot change \(v\) directly from \(P\) to \(Q\) or conversely. Hence its role would be constant on the whole face, making \(v\) uniformly signed, a contradiction. Therefore \(v\) occurs in the exact hole in some chamber of \(F\). \(\square\)
+
+Call such an \(F\) a **hole-sweeping face**. Its significance is global: one fixed ordered-partition face supports canonical partial two-covers whose holes collectively sweep the entire vertex set.
+
+Two immediate consequences are worth recording. The first face block has order at least three, because the first two positions of every chamber always lie in \(P_\pi\); a block of order at most two would make one of its vertices uniformly positive. Symmetrically the last face block has order at least three.
+
+This theorem supplies the higher-dimensional consistency missing from the earlier graph-level Tucker attempt. The labels are actual vertices rather than switch positions, the exact deletion gap \(k\ge2\) forbids complementary labels across chamber edges, and Ky Fan forces failure of uniform signed labeling on one genuine permutahedral face.
 
 ---
 
@@ -1082,139 +1422,85 @@ The next Section records the strongest combinatorial consequences that can be ex
 
 ### Positive balance on every chamber and the switch-separation bound
 
-### An explicit odd extension and its carrier faces
+### Explicit odd root maps and positive carrier balance
 
-Assume that no spanning order has at most one color change. Put \(m=n-2\). Every status word then has at least two switches. Number a switch by the position immediately before it, and write \(a(\pi)<b(\pi)\) for the first and last switch positions. Thus \(1\leq a<b\leq m-1\). Let
+Assume \(H\) has no spanning two-cover and put \(m=n-2\).
+
+For the extreme-switch coordinates \(a(\pi)<b(\pi)\), put
 \[
 \bar b(\pi)=m-b(\pi),\qquad
 \phi(\pi)=e_{a(\pi)}-e_{\bar b(\pi)}.
 \]
-The identities for reversal give \(\phi(\pi^{\rm rev})=-\phi(\pi)\).
-
-Realize the centered permutahedron \(P\) in the hyperplane \(\sum_{v\in V}x_v=0\) by assigning to the vertex indexed by \(\pi=(v_1,\ldots,v_n)\) the coordinates
+Reversal gives
 \[
-x_{v_i}=i-\frac{n+1}{2}.
-\]
-Then \(-\pi=\pi^{\rm rev}\) as vertices of \(P\), and radial projection identifies \(\partial P\) equivariantly with \(S^{n-2}\). This boundary is dual to the Coxeter sphere used earlier; its vertices, rather than its maximal simplices, are indexed by permutations.
-
-For every nonempty proper face \(F\) of \(P\), let \(\mathcal V(F)\) be its permutation vertices, and assign to its barycenter \(z_F\) the vector
-\[
-\Phi(z_F)=\frac1{|\mathcal V(F)|}
-\sum_{\pi\in\mathcal V(F)}\phi(\pi).
-\]
-Extend affinely over each simplex of the barycentric subdivision of \(\partial P\). Nested faces determine these simplices, so the prescriptions agree on intersections. Negation sends \(z_F\) to \(z_{-F}\) and negates its assigned vector; hence \(\Phi\) is a continuous odd piecewise-linear map. In particular this construction needs no unproved rook-adjacency condition.
-
-**Theorem 6.1 (positive balance on a carrier face).** For every \(x\in\Phi^{-1}(0)\), the unique face \(F\) of \(P\) whose relative interior contains \(x\) admits numbers
-\[
-\lambda_\pi>0\quad(\pi\in\mathcal V(F)),\qquad
-\sum_{\pi\in\mathcal V(F)}\lambda_\pi=1,
-\]
-such that
-\[
-\sum_{\pi\in\mathcal V(F)}\lambda_\pi\phi(\pi)=0.
-\]
-Consequently every nonzero root occurring in \(F\) lies on a directed cycle of roots occurring in \(F\). A zero root is a loop and is already an exact diagonal.
-
-**Proof.** Let the smallest barycentric simplex containing \(x\) have face chain
-\[
-F_0\subsetneq\cdots\subsetneq F_s=F.
-\]
-Its barycentric coefficients \(t_0,\ldots,t_s\) at \(x\) are all positive. Expanding the definition of \(\Phi\), assign
-\[
-\lambda_\pi=
-\sum_{j:\,\pi\in\mathcal V(F_j)}
-\frac{t_j}{|\mathcal V(F_j)|}.
-\]
-Every vertex of \(F\) receives at least \(t_s/|\mathcal V(F)|>0\). The weights sum to one and give the required balance. The assertion that \(x\) lies in the relative interior of \(F\) follows likewise from its positive barycentric coefficient at the interior point \(z_F\).
-
-After grouping equal roots, these weights form a circulation that is strictly positive on every occurring arc. To see that an arc \(i\to j\) is on a directed cycle, let \(U\) be all vertices reachable from \(j\). If \(i\notin U\), no arc leaves \(U\), while the arc \(i\to j\) brings positive flow into \(U\). Summing conservation over \(U\) is a contradiction. Thus there is a directed path from \(j\) back to \(i\). \(\square\)
-
-The conclusion is stronger than the existence of a single cycle among some labels. In particular,
-\[
-\{a(\pi):\pi\in\mathcal V(F)\}
-=
-\{\bar b(\pi):\pi\in\mathcal V(F)\}.
-\]
-Every first-switch coordinate realized in the face also occurs as a reflected last-switch coordinate, and conversely. More precisely, every weakly connected component of the directed root graph of \(F\) is strongly connected: an edge between distinct strongly connected components could not lie on a directed cycle.
-
-### The dimension bound with all constants specified
-
-**Theorem 6.2 (switch separation and zero-set dimension).** Suppose that
-\[
-b(\pi)-a(\pi)\geq L\geq1
-\]
-for every spanning order, and put \(K=m-L\). Then the map just constructed has
-\[
-\dim\Phi^{-1}(0)\geq L+2.
-\]
-More precisely, let \(G\) be the undirected graph on \(I=\{1,\ldots,K-1\}\) whose edges are the pairs supporting nonzero roots \(\phi(\pi)\), and let \(c(G)\) count all its connected components, including isolated vertices. Then
-\[
-\dim\Phi^{-1}(0)
-\geq n-2-|I|+c(G).
-\]
-Every zero has the positive-balance conclusion of Theorem 6.1 in a proper face.
-
-**Proof.** For each permutation,
-\[
-a(\pi)+\bar b(\pi)
-=m-(b(\pi)-a(\pi))\leq K.
-\]
-Both summands are positive, so every root coordinate belongs to \(I\). Thus the image lies in the sum-zero subspace of \(\mathbb R^{K-1}\), whose dimension is
-\[
-K-2=n-L-4.
-\]
-The hypotheses imply \(L\leq m-2\), so this dimension is nonnegative. The barycentric averages and affine extensions remain in that subspace. The Bourgin–Yang theorem stated above now gives
-\[
-(n-2)-(n-L-4)=L+2
-\]
-as the lower bound for the dimension of the zero set.
-
-For the refinement, the span of the occurring roots has dimension \(|I|-c(G)\). Indeed, all roots sum to zero on each connected component of \(G\). Conversely, a spanning tree in each component supplies edge differences spanning its entire sum-zero subspace, by summing differences along tree paths. This proves the asserted rank and the refined Bourgin–Yang bound. If every root is zero, the image subspace is zero-dimensional and the whole boundary is the zero set. \(\square\)
-
-Thus failure of the one-change target always yields a zero set of dimension at least three, by taking \(L=1\). In particular a proper face with the positive balance of Theorem 6.1 exists. This argument uses only reversal-complement symmetry of the permutation words. The consistent triple rule must still enter when converting these witnesses to tight paths.
-
-### What the stronger balance permits, and what it does not
-
-Within a carrier face supplied above, an arbitrary chamber may now be chosen: its first and reflected last switch belong to a return cycle supported in that same face. This removes the need to restrict attention to the chambers of one preselected circulation. It supplies a uniform version of the input to block-separation arguments in [[topological_recurrence_to_local_gn3_structure]], although those arguments still require their stated separation of determining positions.
-
-The dimension bound is not a lower bound on the number of independent cycles. For a fixed nonzero root \(\rho\), the odd map \(x\mapsto x_1\rho\) on \(S^d\) has a zero set \(S^{d-1}\), although its image spans only the one line through \(\rho\) and \(-\rho\). This illustrates the logical limitation, not a boundary-tournament counterexample. The new discrete conclusion comes instead from the strictly positive coefficients on every chamber of a carrier face.
-
-Neither theorem produces a one-change order or a reachability intersection. The remaining task is to use the simultaneous return witnesses, together with the base-independent triple rule or the auxiliary vertex, to obtain an actual directed one-change geodesic.
-
-
-### Automatic switch separation in a genuine counterexample
-
-For the original switch root, the numerical hypothesis of Theorem 6.2 improves automatically under the actual two-cover obstruction.
-
-**Proposition 6.3.** If \(\operatorname{pc}(H)>2\), then every spanning-order status word satisfies
-\[
-b(\pi)-a(\pi)\ge3.
+\phi(\pi^{\rm rev})=-\phi(\pi).
 \]
 
-**Proof.** If the word has at most one switch, the usual cut-and-reverse argument gives a two-cover. Suppose it has at least two switches and \(b-a\le2\). If \(b=a+1\), cut between \(v_{a+1}\) and \(v_{a+2}\). All status positions wholly inside the two resulting blocks have the same color, namely the color outside the isolated middle run. If \(b=a+2\), cut between \(v_{a+2}\) and \(v_{a+3}\); again all statuses wholly inside the two blocks have one common color. If that color is \(1\), the displayed blocks are tight; if it is \(0\), reverse both blocks. Either way they form a spanning two-cover, a contradiction. \(\square\)
+Realize the centered permutahedron \(P\) equivariantly, and for every nonempty proper face \(F\) assign its barycenter the average of \(\phi\) over the permutation vertices of \(F\). Extend affinely on the barycentric subdivision.
 
-Thus in a genuine counterexample the switch-root map of Theorem 6.2 may be used with \(L=3\), and
+**Theorem 6.1 (positive carrier balance).** The resulting map
+\[
+\Phi:\partial P\cong S^{n-2}\to\mathbb R^m
+\]
+is continuous and odd. For every zero \(x\), if \(F\) is the unique face whose relative interior contains \(x\), there are
+\[
+\lambda_\pi>0\quad(\pi\in\mathcal V(F)),\qquad \sum_\pi\lambda_\pi=1,
+\]
+with
+\[
+\sum_\pi\lambda_\pi\phi(\pi)=0.
+\]
+After grouping equal roots, these coefficients form a strictly positive circulation, so every occurring root lies on a directed return cycle.
+
+The proof is the standard smallest-barycentric-simplex expansion: the top face of the chain contributes positive weight to every chamber of \(F\).
+
+**Theorem 6.2 (switch-separation multiplicity).** If every spanning order satisfies
+\[
+b(\pi)-a(\pi)\ge L\ge1,
+\]
+then
+\[
+\dim\Phi^{-1}(0)\ge L+2.
+\]
+Indeed
+\[
+a+\bar b=m-(b-a)\le m-L,
+\]
+so every root lies in the sum-zero subspace on coordinates
+\[
+1,\ldots,m-L-1,
+\]
+of dimension \(n-L-4\); Bourgin--Yang gives the result. The target rank can be sharpened to the rank of the undirected support graph of the occurring roots.
+
+**Proposition 6.3.** In a genuine counterexample,
+\[
+b(\pi)-a(\pi)\ge3
+\]
+for every spanning order. If the first-to-last switch span were at most two, a cut immediately after the short middle run would split the order into two monochromatic blocks, each of which has a tight orientation. Hence
 \[
 \dim\Phi^{-1}(0)\ge5.
 \]
-This strengthens the amount of recurrence available from the switch compression, although it remains a compressed invariant.
 
 ### Exact inversion roots
 
-The exact inversion-window criterion in [[spanning_orders_and_defect_helly]] supplies a second odd root map that is tied directly to the theorem rather than to the stronger one-change target.
-
-Assume \(\operatorname{pc}(H)>2\), put \(m=n-2\), and for every spanning order define
+For a spanning order \(\pi\), define
 \[
 p(\pi)=\min\{i:\epsilon_i=0\},\qquad
-q(\pi)=\max\{i:\epsilon_i=1\},\qquad
-c(\pi)=m+1-q(\pi).
+q(\pi)=\max\{i:\epsilon_i=1\},
 \]
-A counterexample has both colors in every status word and satisfies
+and
 \[
-\delta(\pi):=q(\pi)-p(\pi)-1
-=m-\bigl(p(\pi)+c(\pi)\bigr)\ge1.
+c(\pi)=m+1-q(\pi),\qquad
+\delta(\pi)=q(\pi)-p(\pi)-1=m-p(\pi)-c(\pi).
 \]
-Define the **exact inversion root**
+The exact inversion-window criterion in [[spanning_orders_and_defect_helly]] gives
+\[
+\operatorname{pc}(H)\le2
+\iff
+\exists\pi:\delta(\pi)\le0.
+\]
+
+Define
 \[
 \psi(\pi)=e_{p(\pi)}-e_{c(\pi)}.
 \]
@@ -1223,103 +1509,734 @@ Reversal exchanges \(p\) and \(c\), so
 \psi(\pi^{\rm rev})=-\psi(\pi).
 \]
 
-Use the same centered permutahedron and barycentric subdivision as above. For each nonempty proper face \(F\), assign its barycenter
+Use the same barycentric face-average extension.
+
+**Theorem 6.4 (positive exact-root balance).** The resulting odd map
 \[
-\Psi(z_F)=\frac1{|\mathcal V(F)|}\sum_{\pi\in\mathcal V(F)}\psi(\pi),
+\Psi:\partial P\to\mathbb R^m
 \]
-and extend affinely along nested face chains.
-
-**Theorem 6.4 (positive balance for the exact obstruction).** The map
+has a zero whose carrier face \(F\) admits strictly positive coefficients on every chamber:
 \[
-\Psi:\partial P\longrightarrow \mathbb R^m
+\sum_{\pi\in\mathcal V(F)}\lambda_\pi\psi(\pi)=0,
+\qquad \lambda_\pi>0.
 \]
-is continuous and odd. For every \(x\in\Psi^{-1}(0)\), if \(F\) is the unique face whose relative interior contains \(x\), there are coefficients
-\[
-\lambda_\pi>0\qquad(\pi\in\mathcal V(F)),\qquad
-\sum_{\pi\in\mathcal V(F)}\lambda_\pi=1,
-\]
-such that
-\[
-\sum_{\pi\in\mathcal V(F)}\lambda_\pi\psi(\pi)=0.
-\]
-Consequently every exact inversion root occurring among the chambers of \(F\) lies on a directed cycle of exact inversion roots occurring in \(F\).
+Thus every occurring exact root lies on a directed cycle of exact roots in \(F\).
 
-**Proof.** Oddness is the reversal identity above. The positive-coefficient argument is identical to Theorem 6.1: expand a zero in its smallest barycentric face chain. The top face contributes positive weight to every one of its chamber vertices. Grouping equal roots produces a nonzero nonnegative circulation strictly positive on every occurring arc, so every arc has a directed return path. \(\square\)
-
-This gives precisely the coordinated-face structure sought for the actual two-cover obstruction: **every chamber of one proper face participates in a directed cycle whose tail is its first non-tight position and whose head is its reflected last tight position.**
-
-### Exact deficiency and Bourgin--Yang
-
-The dimension saving now has an exact combinatorial meaning.
-
-**Theorem 6.5 (deficiency multiplicity).** Suppose
+**Theorem 6.5 (exact-deficiency multiplicity).** If
 \[
 \delta(\pi)\ge D\ge1
 \]
-for every spanning order. Then
+for every spanning order, then
 \[
 \dim\Psi^{-1}(0)\ge D+2.
 \]
-
-**Proof.** The inequality \(\delta\ge D\) is
+Indeed
 \[
-p(\pi)+c(\pi)\le m-D.
+p+c\le m-D,
 \]
-Both coordinates are positive, hence every exact root uses only
+so the image lies in the sum-zero subspace on
 \[
-I_D=\{1,\ldots,m-D-1\}.
+1,\ldots,m-D-1,
 \]
-Therefore the image of \(\Psi\) lies in the sum-zero subspace of
-\(\mathbb R^{I_D}\), of dimension
+of dimension \(n-D-4\).
+
+By the deletion-distance identity,
 \[
-|I_D|-1=m-D-2=n-D-4.
+\kappa_2(H)=\min_\pi\max\{0,\delta(\pi)\}.
 \]
-Bourgin--Yang on \(\partial P\cong S^{n-2}\) gives
+Hence, writing
 \[
-\dim\Psi^{-1}(0)\ge(n-2)-(n-D-4)=D+2.
+k=\kappa_2(H)>0,
 \]
-As in Theorem 6.2, the target dimension may be sharpened to the rank of the undirected support graph of the occurring exact roots. \(\square\)
+one has
+\[
+\dim\Psi^{-1}(0)\ge k+2.
+\]
 
-In particular every counterexample has an exact-root zero set of dimension at least three. If the best spanning order still leaves a larger uniform deficiency, the zero locus grows by exactly the same amount.
+### Canonical partial two-covers
 
-### The canonical partial two-cover carried by one exact root
-
-The exact deficiency is not merely a numerical gap. It counts uncovered vertices in a canonical pair of tight paths.
-
-For a spanning order \(\pi=(v_1,\ldots,v_n)\), define
+For a chamber \(\pi=(v_1,\ldots,v_n)\) with positive deficiency, define
 \[
 P_\pi=(v_1,\ldots,v_{p+1}),
 \qquad
-Q_\pi=(v_n,v_{n-1},\ldots,v_{q+1}).
+Q_\pi=(v_n,v_{n-1},\ldots,v_{q+1}),
 \]
-The path \(P_\pi\) is tight because every status before \(p\) is \(1\). The path \(Q_\pi\) is tight because every status after \(q\) is \(0\), so reversal makes all its consecutive triples tight. They are disjoint in a counterexample, and the uncovered vertices are exactly
+and
 \[
-v_{p+2},\ldots,v_q,
+X_\pi=\{v_{p+2},\ldots,v_q\}.
 \]
-whose number is
+Then \(P_\pi,Q_\pi\) are tight, disjoint, and
 \[
-q-p-1=\delta(\pi).
+|P_\pi|=p+1,\qquad
+|Q_\pi|=c+1,\qquad
+|X_\pi|=\delta.
 \]
-
 Thus
 \[
-\boxed{\text{an exact root }p\to c\text{ is a canonical two-path cover with a }\delta\text{-vertex hole}.}
+n=(p+1)+(c+1)+\delta.
 \]
 
-At deficiency one, write \(x=v_{p+2}=v_q\). Then
+So the exact root records a partial two-cover:
 \[
-H-x=P_\pi\mid Q_\pi
+\boxed{\psi=e_p-e_c
+\quad\Longleftrightarrow\quad
+P_\pi\mid X_\pi\mid Q_\pi.}
 \]
-is an explicit deletion two-cover. Moreover
+Its anti-diagonal deficit is literally the hole size.
+
+At deficiency one, \(X_\pi=\{x\}\), and
 \[
-(x,v_{p+1},v_p)
-\quad\text{and}\quad
+(x,v_{p+1},v_p),\qquad
 (x,v_{q+1},v_{q+2})
 \]
-are tight: the first follows from \(\epsilon_p=0\) by boundary reversal, while the second is exactly \(\epsilon_q=1\). Hence the omitted vertex \(x\) reverses the displayed terminal edge of **both** canonical paths.
+are tight. Thus the unique hole vertex reverses the exposed terminal edge of both canonical paths.
 
-The exact-root circulation therefore coordinates not abstract switch fronts but a family of partial two-covers. Its lowest nontrivial stratum consists of deletion covers with a single omitted vertex simultaneously controlling the two exposed ends. This is the natural discrete object to synchronize in the next Section.
+### Minimum-hole faces
 
+Let \(X\) be a minimum deletion set,
+\[
+|X|=k=\kappa_2(H),
+\qquad
+H-X=P\mid Q,
+\]
+with \(|P|=r\), \(|Q|=s\). For every ordering \(\sigma\) of \(X\),
+\[
+\pi_\sigma=(P,\sigma,Q^{\rm rev})
+\]
+has exact deficiency at most \(k\), hence exactly \(k\). Therefore
+\[
+p(\pi_\sigma)=r-1,\qquad
+q(\pi_\sigma)=r+k,\qquad
+c(\pi_\sigma)=s-1
+\]
+for every \(\sigma\).
+
+Consequently the entire \((k-1)\)-dimensional face obtained by freely permuting \(X\) has constant exact root
+\[
+e_{r-1}-e_{s-1}.
+\]
+
+In particular every \(x\in X\) may be placed first or last in the hole, forcing
+\[
+(x,p_r,p_{r-1}),
+\qquad
+(x,q_s,q_{s-1})
+\]
+tight. Thus a minimum hole is a synchronized family of common reversers of the same two exposed terminal edges. This uses only minimum deletion distance inside the fixed graph, not minimum-counterexample induction.
+
+### High-dimensional exact carriers
+
+Because \(\Psi^{-1}(0)\) is a finite polyhedral complex of dimension at least \(k+2\), some zero lies in a cell of dimension at least \(k+2\).
+
+**Proposition 6.6.** There is a zero whose carrier face \(F\) satisfies
+\[
+\dim F\ge k+2
+\]
+and has strictly positive exact-root balance on every chamber.
+
+### Exact determining-window splice
+
+The condition \(p=r\) is determined by positions
+\[
+1,\ldots,r+2,
+\]
+while \(c=r\) is determined by positions
+\[
+n-1-r,\ldots,n.
+\]
+
+**Lemma 6.7 (exact face splice).** Suppose a permutahedron face \(F\) contains a chamber with \(p=r\), a chamber with \(c=r\), and has a block boundary after a position \(j\) satisfying
+\[
+r+2\le j\le n-r-2.
+\]
+Then \(F\) contains a chamber with
+\[
+p=c=r.
+\]
+Take block orders from the \(p=r\) witness through that boundary and from the \(c=r\) witness afterward; the two determining windows are preserved.
+
+### Balanced hole or a large free corridor
+
+Let \(F\) have positive exact-root balance, and let
+\[
+s=\min\{p(\pi),c(\pi):\pi\in\mathcal V(F)\}.
+\]
+Positive circulation supplies both a \(p=s\) witness and a \(c=s\) witness.
+
+**Corollary 6.8.** At least one of the following holds.
+
+1. \(F\) contains a zero exact root \(p=c=r\), hence a canonical partial two-cover with equal path orders and hole size
+   \[
+   m-2r\ge k.
+   \]
+
+2. One block of \(F\) contains every position
+   \[
+   s+2,\ldots,n-1-s.
+   \]
+   The guaranteed central corridor has length
+   \[
+   L:=m-2s.
+   \]
+   If no zero root occurs, an arc \(s\to t\) with \(t>s\) occurs, and
+   \[
+   L
+   =\delta+(t-s)
+   \ge k+1.
+   \]
+
+Thus a nonzero recurrent branch contains a freely permutable central corridor longer than a minimum hole.
+
+### Independent internal status bits
+
+**Lemma 6.9.** Let \(F\) be a permutahedron face. Choose pairwise disjoint three-position windows, each wholly inside a single face block. As the chamber ranges uniformly over \(\mathcal V(F)\), the corresponding status signs are uniform on the full cube
+\[
+\{-1,+1\}^t.
+\]
+
+For each selected window, swap its first and third positions. The swaps are disjoint and commute; each flips exactly its selected status by boundary antisymmetry.
+
+Hence any face block of order \(b\) contains an independently flippable status cube of dimension at least
+\[
+\left\lfloor b/3\right\rfloor.
+\]
+
+### Guardrail on the central block size
+
+The proved conclusion is that one block **contains** the \(L=m-2s\) central corridor. It does not by itself imply
+\[
+|B|=m-2s.
+\]
+Therefore any refinement using equality of the whole block size with the corridor length requires an additional argument.
+
+In particular, the earlier draft of a “unique bottleneck vertex / exact \(+3\) surplus block” used that equality without proof. That refinement is not retained here. A repaired version must work with the actual determining positions inside the containing block, which may extend beyond the corridor.
+
+### Anchored three-state balance
+
+Fix an actual vertex \(z\). For every chamber, write
+\[
+P_\pi\mid X_\pi\mid Q_\pi.
+\]
+Define
+\[
+\omega_z(\pi)=
+\begin{cases}
+ |X_\pi|^{-1}{\bf1}_{X_\pi}-|Q_\pi|^{-1}{\bf1}_{Q_\pi},
+   &z\in P_\pi,\\
+ |Q_\pi|^{-1}{\bf1}_{Q_\pi}-|P_\pi|^{-1}{\bf1}_{P_\pi},
+   &z\in X_\pi,\\
+ |P_\pi|^{-1}{\bf1}_{P_\pi}-|X_\pi|^{-1}{\bf1}_{X_\pi},
+   &z\in Q_\pi.
+\end{cases}
+\]
+This lies in
+\[
+W_z=\{x:\sum_vx_v=0,\ x_z=0\},
+\qquad \dim W_z=n-2,
+\]
+and reversal negates it.
+
+Averaging on face barycenters and extending affinely gives an odd map
+\[
+\Omega_z:S^{n-2}\to W_z.
+\]
+
+**Theorem 6.10 (anchored three-state balance).** \(\Omega_z\) has a zero with strictly positive carrier weights on every chamber.
+
+Each chamber vector is the divergence of a complete bipartite role transport:
+\[
+Q_\pi\to X_\pi \ (z\in P_\pi),\qquad
+P_\pi\to Q_\pi \ (z\in X_\pi),\qquad
+X_\pi\to P_\pi \ (z\in Q_\pi).
+\]
+At a zero these transports form a nonzero circulation on \(V(H)-\{z\}\), so every contributed actual-vertex arc lies on a directed role-transfer cycle.
+
+### Uniform-anchor terminal block collapse
+
+Let
+\[
+F=B_1|\cdots|B_t
+\]
+be an anchored carrier face with positive role-transfer circulation.
+
+**Proposition 6.11.**
+
+- If \(z\in P_\pi\) for every chamber, then
+  \[
+  X_\pi\cup Q_\pi\subseteq B_t
+  \]
+  for every chamber.
+
+- If \(z\in Q_\pi\) for every chamber, then
+  \[
+  P_\pi\cup X_\pi\subseteq B_1
+  \]
+  for every chamber.
+
+- The role \(z\in X_\pi\) cannot be uniform on a proper carrier face.
+
+For the first case all transport arcs are \(Q\to X\). Face-block index is nonincreasing along every such arc, but every arc lies on a directed cycle, so block index is constant along every arc. Complete bipartite transport forces \(Q\cup X\) into one block, necessarily the final block. The other cases are symmetric.
+
+Hence a uniform side role forces a terminal block of order at least
+\[
+k+2,
+\]
+while a nonuniform anchor enters the hole somewhere once \(k\ge2\).
+
+### Canonical side labels cannot flip in one adjacent swap
+
+Assume
+\[
+k=\kappa_2(H)\ge2.
+\]
+Give each actual vertex its role
+\[
++\ (P),\qquad 0\ (X),\qquad -\ (Q).
+\]
+
+**Lemma 6.12 (no direct side flip).** One adjacent transposition cannot move any actual vertex directly from \(+\) to \(-\) or conversely.
+
+An adjacent transposition changes only four consecutive status positions, a set of diameter at most three. If a vertex at position \(t\) changed from \(P\) to \(Q\), then the old last-one coordinate \(q\) and the new first-zero coordinate \(p'\) would both have to lie in that four-position set. But the two deficiency inequalities give
+\[
+q-p'\ge2k+1\ge5,
+\]
+a contradiction.
+
+Thus roles change along the chamber graph only through
+\[
++\longleftrightarrow0\longleftrightarrow-.
+\]
+
+### Multi-anchor role balance
+
+For \(S\subseteq V(H)\), define
+\[
+\rho_S(\pi)=(\rho_z(\pi))_{z\in S},
+\qquad
+\rho_z=
+\begin{cases}
++1,&z\in P,\\
+0,&z\in X,\\
+-1,&z\in Q.
+\end{cases}
+\]
+Reversal negates \(\rho_S\). Average on face barycenters and extend affinely.
+
+**Theorem 6.13 (multi-anchor balance).** For every
+\[
+1\le |S|=t\le n-2,
+\]
+the zero set has dimension at least
+\[
+n-2-t.
+\]
+Hence there is a carrier face \(F\) with
+\[
+\dim F\ge n-2-t,
+\qquad
+\#\{\text{blocks of }F\}\le t+2,
+\]
+such that every anchor \(z\in S\) enters a canonical hole in some chamber of \(F\). More precisely, either \(z\) is in the hole in every chamber, or all three roles \(P,X,Q\) occur for \(z\).
+
+The last assertion uses positive carrier weights and the no-direct-side-flip lemma.
+
+### Octahedral unanimity collapse
+
+Assume again \(k\ge2\). For every nonempty proper face \(F\), define
+\[
+A(F)=\bigcap_{\pi\in\mathcal V(F)}P_\pi,
+\qquad
+B(F)=\bigcap_{\pi\in\mathcal V(F)}Q_\pi.
+\]
+Then
+\[
+|A(F)|+|B(F)|\le n-k,
+\]
+and reversal exchanges \(A\) and \(B\).
+
+**Theorem 6.14 (unanimity collapse).** There is a nonempty proper face \(F\) with
+\[
+A(F)=B(F)=\varnothing.
+\]
+
+If not, \(F\mapsto(A(F),B(F))\) gives an antipodal simplicial map from the barycentric subdivision of the permutahedron boundary to the barycentric subdivision of the \((n-k-1)\)-skeleton of the \(n\)-cross-polytope boundary. Any free antipodal complex of dimension \(r\) maps equivariantly to \(S^r\) by a generic antipodal linear realization. Therefore one would obtain
+\[
+S^{n-2}\to S^{n-k-1}
+\]
+equivariantly, impossible for \(k\ge2\).
+
+**Corollary 6.15 (universal hole carrier).** There is one nonempty proper face \(F\) such that for every actual vertex
+\[
+v\in V(H)
+\]
+some chamber of \(F\) has
+\[
+v\in X_\pi.
+\]
+
+Indeed \(A(F)=B(F)=\varnothing\). If a vertex never entered a hole, it would take both side roles somewhere in the connected chamber graph of \(F\), forcing a forbidden direct side flip along an adjacent-transposition path.
+
+Thus a hypothetical graph with
+\[
+\kappa_2(H)\ge2
+\]
+has a single proper ordered-partition face through whose exact holes **every vertex of \(H\) can pass**. This is the strongest current Tucker-type structural output and uses neither minimum-counterexample induction nor path disturbance.
+
+### Spending the exact topological surplus on actual vertices
+
+Let
+\[
+k=\kappa_2(H)\ge2.
+\]
+The exact-root map has a built-in dimension saving of \(k+2\): every exact root uses coordinates
+\[
+I_k=\{1,\ldots,m-k-1\},
+\]
+so its span has dimension
+\[
+|I_k|-1=n-k-4.
+\]
+This leaves exactly \(k+2\) dimensions before reaching the sphere dimension \(n-2\).
+
+Fix any prescribed set
+\[
+S\subseteq V(H),\qquad |S|=k+2,
+\]
+and for \(z\in S\) let
+\[
+\rho_z(\pi)=
+\begin{cases}
++1,&z\in P_\pi,\\
+0,&z\in X_\pi,\\
+-1,&z\in Q_\pi.
+\end{cases}
+\]
+Consider the direct-sum chamber label
+\[
+\Theta_S(\pi)
+=
+\bigl(\psi(\pi),(\rho_z(\pi))_{z\in S}\bigr).
+\]
+Average this label on every proper face barycenter and extend over the barycentric subdivision. Reversal negates both parts. The target dimension is
+\[
+(n-k-4)+(k+2)=n-2.
+\]
+
+**Theorem (exact-root balance with \(k+2\) prescribed role anchors).**
+For every \(S\subseteq V(H)\) of order \(k+2\), there is a proper permutahedron face \(F\) and coefficients
+\[
+\lambda_\pi>0\quad(\pi\in\mathcal V(F)),\qquad
+\sum_\pi\lambda_\pi=1,
+\]
+such that simultaneously
+\[
+\sum_\pi\lambda_\pi\psi(\pi)=0
+\]
+and
+\[
+\sum_\pi\lambda_\pi\rho_z(\pi)=0
+\qquad(z\in S).
+\]
+Consequently every prescribed anchor \(z\in S\) occurs in the exact hole of some chamber of \(F\).
+
+Moreover, at least one of the following holds.
+
+1. \(F\) contains a chamber with zero exact root
+   \[
+   p=c=r,
+   \]
+   hence an equal-side canonical partial two-cover with hole size
+   \[
+   m-2r\ge k.
+   \]
+
+2. There is one block \(B\) of \(F\) containing all of \(S\) and containing the complete central corridor
+   \[
+   s+2,\ldots,n-1-s,
+   \]
+   where \(s\) is the least coordinate occurring as a tail or head of an exact root on \(F\).
+
+**Proof.** Borsuk--Ulam applied to the direct-sum odd map gives a zero. Expanding that zero through its smallest barycentric face chain gives strictly positive weight to every chamber of the top carrier face \(F\), exactly as for the previous root maps.
+
+Fix \(z\in S\). Its weighted role average is zero. If all chamber roles of \(z\) are zero, then \(z\) is already in every hole. Otherwise both signs \(+1\) and \(-1\) must occur because all coefficients are positive. The chamber graph of \(F\) is connected, and when \(k\ge2\) the no-direct-side-flip lemma forbids an adjacent \(P\leftrightarrow Q\) transition. Hence a path between the two signs passes through role zero. Thus \(z\) enters some canonical hole.
+
+Now use the positive exact-root balance. If a zero exact root occurs, we are in (1). Otherwise let \(s\) be the least occurring exact coordinate. Positive circulation supplies both a \(p=s\) witness and a \(c=s\) witness. Exact determining-window splicing shows that no face-block boundary can lie between positions
+\[
+s+2\quad\text{and}\quad n-s-2;
+\]
+hence one block \(B\) contains the whole displayed central corridor.
+
+Every block strictly before \(B\) lies entirely among the first \(s+1\) positions. Since every chamber has \(p\ge s\), all of its vertices lie in \(P_\pi\) for every chamber and are uniformly positive. Similarly every block strictly after \(B\) is uniformly negative because every chamber has \(c\ge s\). A prescribed anchor \(z\in S\) has weighted role average zero, so it cannot lie in a uniformly positive or uniformly negative block. Therefore
+\[
+S\subseteq B.
+\]
+This proves (2). \(\square\)
+
+Thus the full Bourgin--Yang surplus has a concrete meaning: it can be spent to force **any chosen \(k+2\) actual vertices** to participate in role balance on the very same exact-root carrier. Unless an equal-side exact hole appears, all \(k+2\) prescribed vertices are trapped in one freely permutable central block.
+
+### The universal-hole locus has dimension at least \(k-2\)
+
+Continue to assume
+\[
+k=\kappa_2(H)\ge2.
+\]
+Call a nonempty proper permutahedron face \(F\) **unanimity-free** if
+\[
+A(F)=B(F)=\varnothing.
+\]
+By Corollary 6.15, every unanimity-free face is a universal-hole carrier.
+
+Unanimity-free faces form an upper order ideal:
+\[
+F\subseteq G,\quad A(F)=B(F)=\varnothing
+\quad\Longrightarrow\quad
+A(G)=B(G)=\varnothing,
+\]
+because unanimous side sets can only shrink when a face is enlarged.
+
+Let \(K\) be the \((n-k-1)\)-skeleton of the \(n\)-cross-polytope boundary. Choose an equivariant generic linear realization
+\[
+g:|\operatorname{sd}K|\longrightarrow \mathbb R^{\,n-k}\setminus\{0\}
+\]
+such that the convex hull of the images of the vertices of every simplex avoids the origin.
+
+Define a PL map \(U\) on the barycentric subdivision of the permutahedron boundary as follows. At the vertex corresponding to a face \(F\),
+\[
+U(z_F)=
+\begin{cases}
+g(A(F),B(F)),&A(F)\cup B(F)\ne\varnothing,\\
+0,&A(F)=B(F)=\varnothing.
+\end{cases}
+\]
+Extend affinely over face chains. Reversal negates \(U\).
+
+In a chain
+\[
+F_0\subsetneq\cdots\subsetneq F_t,
+\]
+the nonempty unanimous labels form an initial segment, because emptiness is upward closed; those nonempty signed faces are nested, so their \(g\)-images lie in one simplex of \(\operatorname{sd}K\), whose convex hull avoids zero. It follows that an affine point of the chain maps to zero exactly when all its positive barycentric weight is supported on unanimity-free faces.
+
+Therefore
+\[
+U^{-1}(0)
+\]
+is precisely the order complex of the unanimity-free proper faces.
+
+**Theorem 6.16 (dimension of the universal-hole locus).**
+\[
+\boxed{\dim U^{-1}(0)\ge k-2.}
+\]
+
+**Proof.** The map
+\[
+U:S^{n-2}\to\mathbb R^{n-k}
+\]
+is continuous and odd. Bourgin--Yang gives
+\[
+\dim U^{-1}(0)
+\ge
+(n-2)-(n-k)
+=
+k-2.
+\]
+\(\square\)
+
+Hence there is a chain of at least \(k-1\) nested unanimity-free faces,
+\[
+F_0\subsetneq F_1\subsetneq\cdots\subsetneq F_{k-2}.
+\]
+Every \(F_i\) is a universal-hole carrier: every actual vertex of \(H\) enters the exact hole in some chamber of that same face.
+
+Because strict inclusion of permutahedron faces coarsens the ordered partition and decreases the number of blocks by at least one, the smallest face in such a chain has at least \(k\) ordered blocks. Thus a hypothetical obstruction with deletion distance \(k\ge2\) forces not merely one universal-hole carrier but a positive-dimensional nested family of them.
+
+### The normalized side-balance map has odd degree
+
+The two canonical tight paths themselves define a global map with no zeros.
+
+For every chamber put
+\[
+u(\pi)
+=
+\frac{{\bf1}_{P_\pi}}{|P_\pi|}
+-
+\frac{{\bf1}_{Q_\pi}}{|Q_\pi|}.
+\]
+This lies in the sum-zero subspace
+\[
+W=\{x\in\mathbb R^{V(H)}:\sum_vx_v=0\},
+\qquad \dim W=n-1,
+\]
+and reversal exchanges \(P_\pi,Q_\pi\), so
+\[
+u(\pi^{\rm rev})=-u(\pi).
+\]
+Average \(u\) on every proper face barycenter and extend affinely over the barycentric subdivision; call the resulting odd map
+\[
+U:\partial P\cong S^{n-2}\longrightarrow W.
+\]
+
+**Theorem (nonvanishing side balance).**
+The map \(U\) never vanishes.
+
+**Proof.** Suppose \(U(x)=0\), and let
+\[
+F=B_1|\cdots|B_t
+\]
+be the carrier face of \(x\). The usual carrier expansion gives strictly positive coefficients \(\lambda_\pi\) on every chamber of \(F\) with
+\[
+\sum_\pi\lambda_\pi u(\pi)=0.
+\]
+Interpret each \(u(\pi)\) as the divergence of unit complete-bipartite flow
+\[
+Q_\pi\longrightarrow P_\pi,
+\]
+putting weight \(1/(|P_\pi||Q_\pi|)\) on every arc \(q\to p\). The weighted sum is a nonzero circulation, so every contributed arc lies on a directed cycle.
+
+Let \(\beta(v)\) be the face-block index of \(v\). Every \(P_\pi\)-vertex precedes every \(Q_\pi\)-vertex, hence every arc \(q\to p\) satisfies
+\[
+\beta(q)\ge\beta(p).
+\]
+A nonincreasing integer potential must be constant around a directed cycle. Thus every contributed arc has equal block indices at its ends. Since each chamber contribution is complete bipartite, all vertices of \(P_\pi\cup Q_\pi\) lie in one block.
+
+But \(P_\pi\) contains the first chamber vertex, in \(B_1\), and \(Q_\pi\) contains the last chamber vertex, in \(B_t\). Hence
+\[
+B_1=B_t,
+\]
+so \(t=1\), contradicting that a carrier face on the boundary of the permutahedron is proper. \(\square\)
+
+Therefore
+\[
+\widehat U(x)=\frac{U(x)}{\|U(x)\|}
+\]
+is a continuous odd self-map
+\[
+\widehat U:S^{n-2}\longrightarrow S(W)\cong S^{n-2}.
+\]
+Every odd self-map of a sphere has odd degree. In particular \(\widehat U\) is surjective.
+
+### Prescribed source--sink side balance
+
+Fix distinct actual vertices \(a,b\). By surjectivity, some point has
+\[
+\widehat U(x)
+=
+\frac{e_a-e_b}{\sqrt2}.
+\]
+For its carrier face \(F\) there are positive chamber weights and a scalar \(\tau>0\) such that
+\[
+\sum_\pi\lambda_\pi u(\pi)
+=
+\tau(e_a-e_b).
+\]
+Equivalently, the associated positive \(Q\to P\) flow has net divergence \(+\tau\) at \(a\), \(-\tau\) at \(b\), and zero at every other actual vertex.
+
+Let
+\[
+F=B_1|\cdots|B_t.
+\]
+For every cut after block \(B_j\), all flow crossing the cut goes from the suffix to the prefix. Hence the total divergence of the prefix is nonnegative and equals
+\[
+\tau\bigl({\bf1}_{a\in B_1\cup\cdots\cup B_j}
+-
+{\bf1}_{b\in B_1\cup\cdots\cup B_j}\bigr).
+\]
+Because every chamber has a \(P\)-vertex in \(B_1\) and a \(Q\)-vertex in \(B_t\), positive flow crosses every proper face-block cut. It follows that
+\[
+a\in B_1,
+\qquad
+b\in B_t.
+\]
+
+If \(k=\kappa_2(H)\ge2\), then for every other vertex
+\[
+v\notin\{a,b\}
+\]
+the weighted \(v\)-coordinate is zero. Either \(v\) is in the hole in every chamber, or it occurs on both path sides; in the latter case connectedness of the chamber graph and the no-direct-side-flip lemma force a hole occurrence between the two side roles. Thus:
+
+**Corollary (two-exception hole-sweeping carrier).**
+For every ordered pair of distinct vertices \((a,b)\) in a hypothetical counterexample with \(k\ge2\), there is a proper face
+\[
+F=B_1|\cdots|B_t
+\]
+such that
+\[
+a\in B_1,\qquad b\in B_t,
+\]
+and every vertex of
+\[
+V(H)-\{a,b\}
+\]
+belongs to the canonical exact hole in some chamber of \(F\).
+
+This is a degree-level strengthening of the Tucker/Ky Fan output: not only does one universal hole-sweeping face exist, but the two possible exceptions can be prescribed arbitrarily and forced to opposite ends of the ordered-partition carrier.
+
+### Universal-hole facets and a nested flag of global cuts
+
+Continue to assume
+\[
+k=\kappa_2(H)\ge2.
+\]
+A proper face \(F\) is **unanimity-free** when
+\[
+A(F)=\bigcap_{\pi\in\mathcal V(F)}P_\pi=\varnothing,
+\qquad
+B(F)=\bigcap_{\pi\in\mathcal V(F)}Q_\pi=\varnothing.
+\]
+Such faces are upward closed in the face poset: if \(F\subseteq G\), then
+\[
+A(G)\subseteq A(F),\qquad B(G)\subseteq B(F).
+\]
+
+**Corollary 6.17 (universal-hole facet).**
+There is a two-block facet
+\[
+A\mid B
+\]
+of the permutahedron such that every actual vertex of \(H\) belongs to \(X_\pi\) for some chamber \(\pi\) of that facet.
+
+**Proof.** By Theorem 6.14 there is an unanimity-free proper face \(F\). Coarsen its ordered partition by merging consecutive blocks until only two nonempty blocks remain. The resulting facet \(G=A\mid B\) contains \(F\), so upward closure gives
+\[
+A(G)=B(G)=\varnothing.
+\]
+By the no-direct-side-flip lemma, a vertex that never enters a canonical hole on the connected chamber graph of \(G\) would have one constant nonzero side role and hence would belong to \(A(G)\cup B(G)\), impossible. Thus every vertex enters a hole in some chamber of \(G\). \(\square\)
+
+Necessarily
+\[
+|A|,|B|\ge3.
+\]
+Indeed the first two positions of every chamber always belong to \(P_\pi\). If \(|A|\le2\), at least the first vertex block would contain a vertex that remains in \(P_\pi\) for every chamber of the facet. Symmetrically \(|B|\ge3\).
+
+The positive-dimensional unanimity-free locus gives more.
+
+**Corollary 6.18 (nested universal-hole cuts).**
+There is an ordered partition
+\[
+C_1|\cdots|C_r,
+\qquad r\ge k,
+\]
+which is unanimity-free, and hence for every
+\[
+1\le j<r
+\]
+the two-block coarsening
+\[
+(C_1\cup\cdots\cup C_j)
+\mid
+(C_{j+1}\cup\cdots\cup C_r)
+\]
+is a universal-hole facet.
+
+**Proof.** Theorem 6.16 gives a chain of \(k-1\) strictly nested unanimity-free proper faces
+\[
+F_0\subsetneq\cdots\subsetneq F_{k-2}.
+\]
+If the smallest face \(F_0\) has \(r\) ordered blocks, then each strict coarsening reduces the block count by at least one. Since \(F_{k-2}\) is still proper and therefore has at least two blocks,
+\[
+r-(k-2)\ge2,
+\]
+so \(r\ge k\). Every two-block coarsening along a cut of \(F_0\) contains \(F_0\), hence remains unanimity-free by upward closure and is universal-hole by Corollary 6.17. \(\square\)
+
+Thus a hypothetical obstruction of deletion distance \(k\ge2\) carries not merely one global cut but a flag of at least \(k-1\) nested global cuts, each of which supports holes sweeping the entire vertex set.
 
 ---
 
@@ -1752,6 +2669,18 @@ This sharpens the minimum-counterexample endpoint of the geodesic investigation.
 Thus no synchronization of an entire directed root cycle is needed to finish Article VII's own task. The exact-root coordinate already reaches the bounded local interface. What remains after this point is the local four-support/path-cover analysis, not an antipodal-geodesic obstruction.
 
 
+### Minimum-hole synchronization
+
+Minimum deletion holes synchronize all omitted vertices as common reversers of the same two terminal edges; proof to follow.
+
+Proof. Because X has minimum cardinality, H-X cannot be Hamiltonian: otherwise adding any one x in X as a singleton would two-cover H-(X minus {x}). Likewise neither P nor Q can have order at most two, because adjoining x to such a component produces a Hamiltonian set of order at most three and again yields a two-cover after deleting only X minus {x}. Hence both displayed paths have order at least three.
+
+Fix x in X and put J=H-(X minus {x}). By minimality of X, pc(J)>2, while J-x=P|Q. Consider the order obtained by writing P, then x, then Q in reverse. All statuses internal to P are tight and all statuses internal to the reversed Q are non-tight. If r=|P|, the first non-tight status is no earlier than r-1 and the last tight status is no later than r+1. Therefore its exact deficiency is at most one. Since J has no two-cover, the inversion-window criterion forces the deficiency to be at least one. Equality follows.
+
+Equality pins the first and last junction positions. Therefore every x in X reverses both terminal edges, as claimed. This completes the proof.
+
+For each x in X, the middle triple on the two exposed endpoints has exactly one tight orientation. Combining it with the two reversal triples gives a Hamiltonian four-support through x. Removing that four-support and then deleting X without x leaves prefixes of P and Q as a two-cover. Hence the two-cover deletion distance of the complement drops by at least one.
+
 ---
 
 ## Section — Antipodal reachability and the neutral corridor
@@ -1894,7 +2823,108 @@ This is the exact topological frontier.
 
 ### Further developments
 
+### Nearest-violation Tucker labeling
 
+Work in the auxiliary extension (H^+) with distinguished vertex (r). Assume there is no directed one-change spanning order. For a spanning order (pi), let (x_d(pi),y_d(pi)) denote the left-zero and right-one violation indicators at equal distance (d) from (r), as in [[auxiliary_violation_vector_has_exact_chamber_zeros]]. Fix distinct original vertices (a,b) and use the antipodal gauge
+[
+g_{ab}(pi)=
+egin{cases}
++1,&a	ext{ precedes }b,\
+-1,&b	ext{ precedes }a.
+end{cases}
+]
+Set
+[
+F_d(pi)=x_d(pi)-y_d(pi)+g_{ab}(pi)x_d(pi)y_d(pi).
+]
+Then (F(pi^{m rev})=-F(pi)), and (F(pi)
+e0) for every chamber under the present assumption.
+
+Let
+[
+d(pi)=min{d:F_d(pi)
+e0}
+]
+and define the signed-basis label
+[
+ell(pi)=operatorname{sgn}(F_{d(pi)}(pi)),e_{d(pi)}.
+]
+Reversal preserves the distance index and negates the sign, so
+[
+ell(pi^{m rev})=-ell(pi).
+]
+
+If (H) has (n) original vertices, then (H^+) has (n+1) vertices. The centered permutahedron of (H^+) has boundary (S^{n-1}). There are at most (n-2) nontrivial violation distances, so the labels lie in (mathbb R^{n-2}).
+
+For each nonempty proper permutahedron face (C), assign its barycenter the average
+[
+L(z_C)=rac1{|mathcal V(C)|}sum_{piinmathcal V(C)}ell(pi),
+]
+and extend affinely over the barycentric subdivision. This gives a continuous odd map
+[
+L:S^{n-1}	omathbb R^{n-2}.
+]
+Bourgin--Yang therefore gives
+[
+dim L^{-1}(0)ge1.
+]
+
+Exactly as in the positive-carrier argument for the root maps, every zero has a carrier face (C) and strictly positive coefficients
+[
+lambda_pi>0qquad(piinmathcal V(C))
+]
+with
+[
+sum_{piinmathcal V(C)}lambda_piell(pi)=0.
+]
+
+Because the labels are signed basis vectors, coordinate balance is completely explicit.
+
+**Proposition.** For every distance (d) that occurs among the labels of chambers of (C), both (+e_d) and (-e_d) occur among the chamber labels of (C).
+
+**Proof.** In coordinate (d), the positive relation reads
+[
+sum_{ell(pi)=+e_d}lambda_pi
+=
+sum_{ell(pi)=-e_d}lambda_pi.
+]
+If one sign occurs, the corresponding side is positive, so the other side is positive as well. (square)
+
+Let
+[
+d_0=min{d(pi):piinmathcal V(C)}.
+]
+Then every chamber of (C) has no violation at any distance (<d_0), while (C) contains chambers labeled (+e_{d_0}) and (-e_{d_0}).
+
+Thus the topological output is no longer a diffuse convex recurrence. It is one ordered-partition face on which all chambers share a common protected radius around (r), and at the first distance where any violation can occur both left and right signs are realized.
+
+### Protected windows force thin blocks
+
+Write the carrier face as an ordered partition
+[
+C=B_1|cdots|B_k,
+]
+and let (B_j) be the block containing (r).
+
+For every chamber of (C), every left or right status window at distance (<d_0) from (r) has its prescribed one-change color. Therefore none of those three-position windows can lie wholly in one block of (C): if such a window lay in one block, swapping its first and third vertices would stay in (C) and boundary antisymmetry would flip its status, producing a closer violation in one of the two chambers.
+
+In particular:
+
+**Corollary.** If (d_0ge2), then
+[
+|B_j|le3.
+]
+
+**Proof.** If (|B_j|ge4), choose a chamber in which (r) is last inside (B_j) and three other vertices of (B_j) occupy the three positions immediately preceding (r). Those three positions form the left status window at distance (1<d_0). It is required to be tight in every chamber of (C). Swapping its first and third vertices produces another chamber of (C) in which that triple is its boundary flip and hence non-tight, contradiction. (square)
+
+More generally, every protected three-position window within distance (d_0-1) from (r) must straddle a block boundary of (C). Thus a large protected radius forces a dense sequence of ordered-partition boundaries near (r).
+
+This gives a new global structural alternative:
+
+- either a directed one-change chamber exists, hence a two-cover of (H);
+- or there is a proper permutahedron face with a common protected radius, paired opposite nearest-violation labels at the first bad distance, and locally thin ordered-partition blocks around the auxiliary vertex.
+
+The conclusion uses no minimum-counterexample hypothesis and no disturbance analysis.
 
 ---
 
