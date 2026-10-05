@@ -1,125 +1,48 @@
-# Research guide
+# Research workflow
 
 
-# Research Guide — recursive development and composition
+# Research workflow
 
-## Central rule
+## Working principle
 
 **Publish cheaply downward; compress deliberately upward.**
 
-Research development is noisy, branching, revisory, and often discovers facts that change earlier exposition. The durable organizational tree is Article → Section → Subsection, but the tree is not a publication conveyor belt. A parent body is a selective composition, never a concatenation of its children.
+Use Brainstorms for loose ideation, Subsections for local mathematical development, Sections for coherent research regions, Articles for top-level routes, and Toolkit for reusable mathematics that naturally crosses routes.
 
-Every manuscript node has two conceptual states:
+## Development and composition
 
-- **Development:** research that exists beneath or inside the node but has not yet been incorporated into its current composition. It may be speculative, redundant, mutually inconsistent, or much larger than the prose that eventually survives.
-- **Composition:** the current manually rewritten canonical rendering. It is intentionally selective and lossy. It may later be replaced.
+Development records the mathematics being worked on. Composition is the current concise canonical rendering of that same node.
 
-A stale composition is not broken. For a parent, staleness is composition-to-composition and is governed only by the parent's explicit depends_on set: a depended-on direct child has been recomposed or removed. New child development and first child compositions do not stale a parent merely by appearing. Raw child development does not stale a parent. A Subsection may still become stale against its own local development.
+Create local branches freely as Subsections. Edit earlier development whenever later mathematics improves it. Compose when a node has enough coherent mathematics to deserve a readable canonical form.
 
-## The four research surfaces
+Composition is selective: preserve useful lower-level development even when the composition omits it.
 
-### Brainstorms
+## Dependencies
 
-Brainstorms are the chalkboard. Use them for orthogonal ideation, unclear placement, speculative analogies, and “throw spaghetti at the wall” exploration.
+The dependency graph alternates between development and composition layers.
 
-A Brainstorm should not become a manuscript merely because it is convenient to keep appending. Once an idea has a recognizable route and local mathematical neighborhood, move continuing development into a Section/Subsection. Closing or promoting a Brainstorm never requires deleting its source history.
+- A composition automatically depends on the current development version of the same node.
+- Section development may depend on selected Subsection compositions.
+- Article development may depend on selected Section compositions.
+- Subsection development declares an explicit empty dependency list.
+- Every development save records its direct dependencies explicitly.
 
-### Subsections
+Staleness records an exact source-version mismatch. A stale source remains usable as recorded context; downstream staleness begins when the exact source layer and version named by a dependency changes.
 
-Subsections are the cheapest manuscript-tree development surface. Create them freely for a local lemma, branch, computation, obstruction, repair, alternative proof, or coherent packet of work.
+## Research flow
 
-There is no exactly-one-Subsection rule and no permanence transition. Multiple Subsections of one Section may be developed in parallel. Older Subsections may be edited when later mathematics changes them.
+Read the current composition first, then inspect the specific development or dependencies relevant to the task. Use changes(...) to refresh work beyond the artifact snapshot and read(...) for exact live content.
 
-The Subsection body is development material. development_version changes when that material changes. A Subsection may also have a composition, created with the same recursive compose operation used above it.
-
-Use new_subsection when a development deserves its own local branch. Use save_subsection to continue any existing Subsection by stable subsection_id.
-
-### Sections
-
-A Section is a coherent research region. Its body is a manual composition of useful development from its Subsections. It is not regenerated when a Subsection changes.
-
-Ordinary Subsection development does **not** bump the Section mathematical version, invalidate a Section audit, or rewrite canonical dependencies. This keeps exploration cheap.
-
-When the local region has cohered enough to merit canonical rewriting, use compose with node_type section. A substantive Section composition explicitly declares its canonical dependencies. It may use some Subsections heavily, lightly, or not at all. All omitted development remains preserved below.
-
-Sections may remain temporarily uncontained while their Article-level route is unclear. That is preferable to abusing Brainstorms or Toolkit as a holding pen.
-
-### Articles
-
-Articles are top-level routes or major approaches. Multiple Articles are expected when the research has genuine competing or complementary routes.
-
-An Article body is a manually authored composition. It is **never** generated by concatenating Sections. Article containment supplies organization and provenance; Article composition supplies the readable route.
-
-A Section belongs to at most one Article. Cross-route mathematical reuse belongs in references/dependencies or, when genuinely reusable beyond the originating route, Toolkit.
-
-## Recursive composition
-
-compose(session_id, node_type, node_id, payload, expected_version) is the shared compression mechanism for subsection, section, and article.
-
-The payload requires an explicit body: composition is a rewrite, not an automatic roll-up. Section and Article composition also require depends_on: the explicit IDs of direct children on which the new parent composition relies. Use [] when it relies on none.
-
-Each composition records:
-
-- its own composition version;
-- the direct-child composition frontier visible at composition time, including which children were explicitly depended on;
-- the database revision through which it was composed;
-- optional source notes.
-
-composition_status(node_type, node_id) exposes one stale flag and the direct children responsible for it. Raw descendant development is deliberately ignored by parents. Parent staleness is controlled only by depends_on: a depended-on child recomposition or removal stales the parent. New or newly composed children do not stale the parent unless a later parent composition explicitly depends on them.
-
-For a substantive Section composition, declare dependencies, using [] if genuinely independent. Section canonical dependency edges change at composition time, not on every exploratory Subsection edit.
-
-## Recomposition
-
-Recomposition is normal research stewardship, not an audit correction.
-
-When the composition frontier changes in a way that stales a node, a single recomposition chore may be maintained. Repeated raw development does not ripple chores upward.
-
-Claiming a recomposition chore means: read the current composition; inspect stale_children; read the relevant child compositions and, where useful, their development; then rewrite selectively with compose. Omission is allowed; do not mechanically concatenate descendants. Successful composition resolves the stale chore automatically.
-
-## Dependencies and references
-
-Containment is a tree. Mathematical dependency is a graph. Keep them orthogonal.
-
-Canonical dependencies connect Sections and Toolkit objects. Subsections may carry provisional declared_dependencies while research is still developing; these do not mutate the canonical DAG until the Section is recomposed.
-
-Use Toolkit only when the result's natural statement is reusable outside its originating route. Route-local lemma chains belong in Subsections/Sections. There is no intermediate Toolkit state: an object either is Toolkit or it is not.
-
-Cross-references may point backward, sideways, or upward. Research chronology does not constrain exposition order.
+When new mathematics changes the best exposition, update the relevant development and recompose upward when the synthesis is worthwhile.
 
 ## Audits
 
-Audits validate a current canonical mathematical version. Development edits below a Section do not invalidate its composition audit merely because there is new material to consider.
+Audit canonical mathematical claims. When an audit finds a localized gap or correction, publish a focused audit Subsection stating the claim, the issue, and the repair obligation. Recompose after the repaired mathematics has stabilized.
 
-**Normal audit behavior.** When an audit finds a localized gap, caveat, missing justification, or plausible repair route, prefer publishing a focused audit-style Subsection/addendum under the affected Section rather than immediately rewriting the composition. The addendum should identify the exact claim under audit, the issue found, and the smallest known repair obligation or corrected statement. This preserves the canonical snapshot while giving later repair or recomposition a precise target. Do not mark the canonical version passed while a substantive gap recorded by such an addendum remains unresolved.
+## Concurrent publication
 
-A substantive Section recomposition creates a new mathematical version and requires a new audit if audited certainty is desired. Premise changes retarget live consumers optimistically until compatibility is checked.
+Use staged batches for related multi-object writes. Review the decoded batch for overlap, then commit it atomically.
 
-Recomposition and audit answer different questions:
+## Style
 
-- **Recomposition:** what should the canonical exposition say now?
-- **Audit:** is this canonical mathematical version correct?
-
-Never treat new mathematics that changes exposition as an “audit repair.”
-
-## Staged publication and concurrency
-
-For substantial multi-object publication, use stage_batch_chunk, review_staged_batch, and commit_staged_batch. Staged batches support new_subsection, save_subsection, compose, and the existing research/document/Brainstorm operations.
-
-Review concurrent changes for mathematical overlap before commit. Optimistic version guards remain authoritative.
-
-## Startup and reading
-
-Start with boot and the artifact named there. Read the project BOOT.md, then Overview, this Guide, Reflexes, Dictionary, API, and Toolkit index.
-
-If the prompt explicitly continues an existing Article, read that Article's composition and **all of its Sections** before continuing. For stale nodes, inspect composition_status and read the child compositions responsible for staleness as well. If the prompt does not select an Article, read every Article composition before choosing a route; then descend into the chosen Article's Sections.
-
-read accepts Article, Section, Toolkit, Brainstorm, and stable Subsection IDs. A Section read returns its composition with a child-development index. A Subsection read returns its composition, if any, plus its full development body.
-
-The artifact is a snapshot. Use changes and exact read calls when the live revision has advanced.
-
-## Terminology and provenance
-
-Use the project Dictionary before introducing project-specific terms. Keep statements publication-style and use standard mathematical vocabulary when it exists.
-
-Historical development is evidence, not clutter to erase. Composition may be lossy; storage must not be.
+Use standard mathematical vocabulary and the project Dictionary. State results publication-style, preserve useful failed routes as development evidence, and keep operational instructions concise and affirmative.

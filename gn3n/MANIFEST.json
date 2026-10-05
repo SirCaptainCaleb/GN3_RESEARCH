@@ -512,8 +512,8 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-05T17:08:41.599932+00:00",
-  "mirror_format": 16,
+  "generated_at": "2026-10-05T17:11:17.45868+00:00",
+  "mirror_format": 17,
   "schema": "gn3n",
   "section_versions": {
     "antipodal_geodesics_and_complementary_path_supports": {
@@ -1707,15 +1707,15 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1593,
+  "snapshot_revision": 1594,
   "startup_broadcasts": [
     {
-      "body": "Do not pursue a minimum-counterexample analysis unless prior development has already forced any minimum counterexample to have bounded order: there must be an explicit finite upper bound on the number of vertices. Until such a bounded-order reduction exists, use structural, topological, algebraic, constructive, or other non-minimum-counterexample approaches instead.",
+      "body": "Use minimum-counterexample analysis only after prior development gives an explicit finite upper bound on the number of vertices of a minimum counterexample. Until that reduction exists, use structural, topological, algebraic, constructive, or other global approaches.",
       "broadcast_id": "minimum_counterexample_bounded_order_only",
       "created_at": "2026-10-05T02:06:08.004957+00:00",
       "priority": 10,
       "scope": "gn3n",
-      "title": "Minimum-counterexample analysis is restricted"
+      "title": "Minimum-counterexample analysis requires bounded order"
     }
   ],
   "subsection_versions": {
@@ -3535,6 +3535,18 @@
       "version": 1
     },
     "full_article_vii_top_down_elevation_pass_repair_addenda": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "genuine_deletion_distance_two_forces_a_fully_protected_four_label_middle_face": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -5853,7 +5865,7 @@
   },
   "toolkit_count": 55,
   "universal_document_versions": {
-    "guide": 19,
-    "reflexes": 10
+    "guide": 20,
+    "reflexes": 11
   }
 }
