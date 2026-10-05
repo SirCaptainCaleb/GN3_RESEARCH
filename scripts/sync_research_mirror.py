@@ -192,9 +192,6 @@ def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = 
              f"- Audit: {row.get('audit_status')}",
              f"- Refutation: {row.get('refutation_status')}"]
 
-    if row.get("kind") == "toolkit":
-        bits.append(f"- Toolkit status: {'Limbo' if row.get('toolkit_limbo') else 'Promoted'}")
-
     if row.get("kind") == "section" and data is not None:
         status = composition_status(data, "section", row["id"])
         bits += [
@@ -542,20 +539,14 @@ def build(schema: str):
     for r in toolkit_items:
         write(root / "TOOLKIT" / (safe_name(r["id"]) + ".md"), research_md(r))
 
-    promoted = [r for r in toolkit_items if not r.get("toolkit_limbo")]
-    limbo = [r for r in toolkit_items if r.get("toolkit_limbo")]
     toolkit_index = [
         "# Toolkit", "",
-        "Toolkit is for genuinely reusable mathematics whose natural formulation transcends its originating route. Route-local lemma graphs belong in Sections/Subsections.",
-        "", "## Toolkit", "",
+        "Toolkit is for genuinely reusable mathematics whose natural formulation transcends its originating route. There is no intermediate Toolkit state: an object either is Toolkit or it is not. Route-local lemma graphs belong in Sections/Subsections.",
+        "",
     ]
-    toolkit_index.extend(toolkit_entry_line(r) for r in promoted)
-    if not promoted:
-        toolkit_index.append("No entries have yet been promoted from Toolkit Limbo.")
-    toolkit_index += ["", "## Toolkit Limbo", ""]
-    toolkit_index.extend(toolkit_entry_line(r) for r in limbo)
-    if not limbo:
-        toolkit_index.append("Toolkit Limbo is empty.")
+    toolkit_index.extend(toolkit_entry_line(r) for r in toolkit_items)
+    if not toolkit_items:
+        toolkit_index.append("Toolkit is empty.")
     write(root / "TOOLKIT" / "README.md", "\n".join(toolkit_index))
 
     for b in data["brainstorms"]:
@@ -629,11 +620,10 @@ Generated: {rev.get('generated_at')}
             }
             for s in data["section_subsections"]
         },
-        "toolkit_promoted_count": len(promoted),
-        "toolkit_limbo_count": len(limbo),
+        "toolkit_count": len(toolkit_items),
         "brainstorm_count": len(data["brainstorms"]),
         "startup_broadcasts": broadcasts,
-        "mirror_format": 12,
+        "mirror_format": 13,
         "composition_model": "recursive-cold-composition-v2",
     })
 
