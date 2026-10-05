@@ -210,7 +210,7 @@ def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = 
                 title = s.get("title") or "(untitled)"
                 bits.append(
                     f"- [Subsection {s.get('subsection_no')} — {title}](../SUBSECTIONS/{safe_name(s['id'])}.md) "
-                    f"(\`{s['id']}\`; development v{s.get('development_version') or s.get('version')}; "
+                    f"(`{s['id']}`; development v{s.get('development_version') or s.get('version')}; "
                     f"composition v{ss.get('composition_version')}; stale={ss.get('stale')})"
                 )
         if status.get("changed_sources"):
@@ -287,7 +287,7 @@ def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
             ss = composition_status(data, "section", r["id"])
             bits.append(
                 f"- {s.get('position')}. [{r.get('title') or r['id']}](../SECTIONS/{safe_name(r['id'])}.md) "
-                f"(\`{r['id']}\`; composition v{ss.get('composition_version')}; stale={ss.get('stale')})"
+                f"(`{r['id']}`; composition v{ss.get('composition_version')}; stale={ss.get('stale')})"
             )
     if status.get("changed_sources"):
         bits += ["", "## Uncompressed descendant changes", ""]
@@ -338,7 +338,7 @@ The artifact is a snapshot; these RPCs are the live worker interface.
 Starts a session and returns the artifact snapshot/revision plus stewardship notices.
 
 ### search(query, filters := {})
-Discovers Articles, Sections, Toolkit, documents, and optionally Brainstorms.
+Discovers Articles, Sections, Subsection development, Toolkit, documents, and optionally Brainstorms.
 
 ### read(ids, math_versions := {}, cursor := null, page_chars := 9000)
 Reads exact durable content. Article and Section bodies are cold compositions. Stable Subsection IDs are also readable; a Subsection read shows both its cold composition and full development body.
@@ -449,7 +449,7 @@ def build(schema: str):
         fn = safe_name(d["id"]) + ".md"
         status = composition_status(data, "article", d["id"])
         article_index.append(
-            f"- [{d.get('title') or d['id']}]({fn}) (\`{d['id']}\`) — "
+            f"- [{d.get('title') or d['id']}]({fn}) (`{d['id']}`) — "
             f"composition v{status.get('composition_version')}; stale={status.get('stale')}"
         )
         write(root / "ARTICLES" / fn, article_md(d, data["article_sections"], research_by_id, data))
@@ -481,7 +481,7 @@ def build(schema: str):
         else:
             where = "uncontained development"
         section_index.append(
-            f"- [{r.get('title') or r['id']}]({fn}) (\`{r['id']}\`) — {where}; "
+            f"- [{r.get('title') or r['id']}]({fn}) (`{r['id']}`) — {where}; "
             f"composition v{status.get('composition_version')}; stale={status.get('stale')}"
         )
         write(
@@ -504,7 +504,7 @@ def build(schema: str):
         status = composition_status(data, "subsection", s["id"])
         fn = safe_name(s["id"]) + ".md"
         subsection_index.append(
-            f"- [{s.get('title') or s['id']}]({fn}) (\`{s['id']}\`) — "
+            f"- [{s.get('title') or s['id']}]({fn}) (`{s['id']}`) — "
             f"parent {s.get('section_id')}; development v{s.get('development_version') or s.get('version')}; "
             f"composition v{status.get('composition_version')}; stale={status.get('stale')}"
         )
