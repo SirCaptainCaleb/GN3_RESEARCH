@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["exclusive_disjoint_terminal_windows_are_adjacent_without_dual_polarity", "verified_five_position_obstruction_and_ordered_tuple_compression"]
 
 ## Cold composition
 

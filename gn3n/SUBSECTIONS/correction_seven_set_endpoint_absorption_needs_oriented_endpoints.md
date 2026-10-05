@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["rooted_corridor_absorption_reduces_to_a_bounded_three_hook_residue", "localextend01", "correction_rooted_four_core_extension_is_not_automatic"]
 
 ## Cold composition
 

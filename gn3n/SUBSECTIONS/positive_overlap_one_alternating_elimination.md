@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["verified_five_position_obstruction_and_ordered_tuple_compression", "positive_protection_eliminates_exclusive_disjoint_alternating_carriers"]
 
 ## Cold composition
 

@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["maximal_ten_support_endpoint_braids_are_impossible", "dual_polarity_witness_reduction", "rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains"]
 
 ## Cold composition
 

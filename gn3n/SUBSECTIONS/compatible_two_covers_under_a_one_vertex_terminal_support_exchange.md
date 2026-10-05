@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["smallset01"]
 
 ## Cold composition
 

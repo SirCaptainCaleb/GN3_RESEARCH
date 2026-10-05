@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["frozen_window_carriers_and_separator_relabeling_require_precise_invariants", "positive_alternating_double_occurrences_have_support_at_most_eight", "exclusive_disjoint_terminal_windows_are_adjacent_without_dual_polarity", "ten_vertex_boundary_tournaments_have_two_cover"]
 
 ## Cold composition
 

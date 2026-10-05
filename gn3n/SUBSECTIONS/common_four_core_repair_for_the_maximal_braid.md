@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["dense_exchange_matrix_for_the_maximal_braid", "compatible_two_covers_under_a_one_vertex_terminal_support_exchange", "rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains", "smallset01"]
 
 ## Cold composition
 

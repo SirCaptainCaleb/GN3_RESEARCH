@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["dense_exchange_matrix_for_the_maximal_braid"]
 
 ## Cold composition
 

@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["local_witness_topology_and_the_finite_terminal_theorem", "a_local_pure_carrier_shows_same_face_escape_is_false", "ten_position_normalization_of_terminal_surgery", "compatible_two_covers_under_a_one_vertex_terminal_support_exchange", "minimal_separator_faces_and_terminal_edge_surgery_coherence"]
 
 ## Cold composition
 

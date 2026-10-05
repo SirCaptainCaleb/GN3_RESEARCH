@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["reflected_double_carriers_reduce_to_two_bounded_rooted_endpoint_interfaces", "spanning_orders_and_defect_helly", "positive_reflected_double_carriers_have_unbounded_local_spans"]
 
 ## Cold composition
 

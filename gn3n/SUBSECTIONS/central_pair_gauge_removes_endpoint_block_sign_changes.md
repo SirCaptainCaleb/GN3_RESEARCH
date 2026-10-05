@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["local_span_gauge_localizes_terminal_tie_break_sign_flips", "explicit_proofs_for_finite_terminal_compression"]
 
 ## Cold composition
 

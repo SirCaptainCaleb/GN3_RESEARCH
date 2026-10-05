@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["spanning_orders_and_defect_helly"]
 
 ## Cold composition
 

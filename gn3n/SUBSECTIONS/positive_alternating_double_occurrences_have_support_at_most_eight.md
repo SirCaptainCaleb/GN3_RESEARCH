@@ -5,15 +5,16 @@
 - ID: positive_alternating_double_occurrences_have_support_at_most_eight
 - Parent Section: local_witness_topology_and_the_finite_terminal_theorem
 - Position: 9
-- Row version: 1
+- Row version: 2
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
-- Provisional declared dependencies: ["spanning_orders_and_defect_helly", "positive_protection_eliminates_exclusive_disjoint_alternating_carriers"]
 
 ## Cold composition
 
-(none yet)
+### Alternating doubles are bounded
+
+A protected reflected pair of alternating witnesses \(0101\) cannot support an arbitrarily long terminal carrier. The two determining windows are forced into a union of at most eight vertex positions. Thus the alternating reflected case belongs to the bounded terminal branch.
 
 ## Development
 

@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["smallset01", "near_equality_obstruction_for_two_bad_braid_targets", "independent_audit_external_gauge_does_not_close_the_maximal_a2_braid"]
 
 ## Cold composition
 

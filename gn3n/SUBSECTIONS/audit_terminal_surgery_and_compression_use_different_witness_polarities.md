@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["explicit_proofs_for_finite_terminal_compression", "terminal_support_surgery_gives_a_genuine_outward_escape", "rank_two_terminal_carriers_are_genuinely_protected"]
 
 ## Cold composition
 

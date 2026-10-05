@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["smallset01", "localextend01", "protected_parabolic_carriers_reduce_the_global_gap_to_adjacent_window_gluing"]
 
 ## Cold composition
 

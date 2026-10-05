@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains", "local_witness_topology_and_the_finite_terminal_theorem", "minimal_separator_faces_and_terminal_edge_surgery_coherence", "audit_the_external_gauge_does_not_by_itself_close_rank_two_coherence"]
 
 ## Cold composition
 

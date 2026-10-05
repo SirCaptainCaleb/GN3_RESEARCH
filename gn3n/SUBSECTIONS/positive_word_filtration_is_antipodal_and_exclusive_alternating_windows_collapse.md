@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["exclusive_disjoint_terminal_windows_are_adjacent_without_dual_polarity", "positive_reflected_double_carriers_have_unbounded_local_spans", "audit_terminal_surgery_and_compression_use_different_witness_polarities", "spanning_orders_and_defect_helly"]
 
 ## Cold composition
 

@@ -9,7 +9,6 @@
 - Development version: 2
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["uniform_normalization_gives_a_protected_parabolic_carrier", "audit_terminal_surgery_and_compression_use_different_witness_polarities", "antipodal_labels_and_cellular_root_topology"]
 
 ## Cold composition
 

@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["complete_positive_span_two_double_corridor_classification", "protected_mixed_doubles_can_forbid_simultaneous_preservation_of_both_tail_pairs", "frozen_window_carriers_and_separator_relabeling_require_precise_invariants"]
 
 ## Cold composition
 

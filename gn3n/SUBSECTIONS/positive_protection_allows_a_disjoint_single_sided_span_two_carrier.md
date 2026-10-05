@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["verified_five_position_obstruction_and_ordered_tuple_compression", "audit_terminal_surgery_and_compression_use_different_witness_polarities", "explicit_proofs_for_finite_terminal_compression"]
 
 ## Cold composition
 

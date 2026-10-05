@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["independent_audit_existential_versus_protected_filtration_gap", "rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains", "maximal_ten_support_endpoint_braids_are_impossible", "protected_carrier_separator_and_the_acyclic_carrier_reduction"]
 
 ## Cold composition
 

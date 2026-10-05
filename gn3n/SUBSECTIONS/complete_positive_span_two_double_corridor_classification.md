@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["span_two_doubles_are_exactly_a_two_cover_corridor_plus_two_reversed_endpoints", "reflected_double_carriers_reduce_to_two_bounded_rooted_endpoint_interfaces", "two_cover_words_avoid_three_local_patterns", "positive_reflected_double_carriers_have_unbounded_local_spans"]
 
 ## Cold composition
 

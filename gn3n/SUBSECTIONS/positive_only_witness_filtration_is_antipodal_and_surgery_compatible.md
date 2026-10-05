@@ -5,15 +5,20 @@
 - ID: positive_only_witness_filtration_is_antipodal_and_surgery_compatible
 - Parent Section: local_witness_topology_and_the_finite_terminal_theorem
 - Position: 14
-- Row version: 1
+- Row version: 2
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
-- Provisional declared dependencies: ["verified_five_position_obstruction_and_ordered_tuple_compression", "exclusive_disjoint_terminal_windows_are_adjacent_without_dual_polarity", "positive_protection_eliminates_exclusive_disjoint_alternating_carriers", "positive_overlap_one_alternating_elimination", "two_cover_words_avoid_three_local_patterns"]
 
 ## Cold composition
 
-(none yet)
+### One witness predicate throughout
+
+Use only
+\[
+\mathcal W_+=\{001,011,0101\}.
+\]
+This family is closed under reverse-complement, so witness depth and reflected orientation are antipodally compatible. Protection means absence of a strictly inward positive witness. A repair is valid only when it removes the positive witness predicate defining the selected depth. No negative witness language is introduced at any stage of compression or repair.
 
 ## Development
 

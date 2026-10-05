@@ -5,15 +5,16 @@
 - ID: positive_reflected_double_carriers_have_unbounded_local_spans
 - Parent Section: local_witness_topology_and_the_finite_terminal_theorem
 - Position: 7
-- Row version: 1
+- Row version: 2
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
-- Provisional declared dependencies: ["audit_terminal_surgery_and_compression_use_different_witness_polarities", "exclusive_disjoint_terminal_windows_are_adjacent_without_dual_polarity"]
 
 ## Cold composition
 
-(none yet)
+### The unbounded positive terminal geometry
+
+Positive reflected span-two occurrences can be separated by an arbitrarily long interval while remaining protected. Hence no theorem bounding every positive terminal carrier by a universal number of vertices is valid. The intervening status interval is nevertheless positive-witness-free and therefore satisfies the inversion-window criterion. It consequently has a two-cover, called the corridor cover below.
 
 ## Development
 

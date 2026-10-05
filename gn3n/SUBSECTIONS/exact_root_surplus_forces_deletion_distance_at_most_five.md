@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["spanning_orders_and_defect_helly", "topological_recurrence_to_local_gn3_structure_subsection_e", "kappa_one_role_balance_and_ky_fan", "audit_terminal_surgery_and_compression_use_different_witness_polarities"]
 
 ## Cold composition
 

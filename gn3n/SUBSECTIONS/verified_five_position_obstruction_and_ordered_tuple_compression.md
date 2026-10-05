@@ -5,15 +5,16 @@
 - ID: verified_five_position_obstruction_and_ordered_tuple_compression
 - Parent Section: local_witness_topology_and_the_finite_terminal_theorem
 - Position: 4
-- Row version: 1
+- Row version: 2
 - Development version: 1
-- Composition version: None
+- Composition version: 1
 - Composition stale: False
-- Provisional declared dependencies: ["explicit_proofs_for_finite_terminal_compression", "correction_surviving_terminal_carriers_are_bounded_by_ten_not_rank_three"]
 
 ## Cold composition
 
-(none yet)
+### Five-position obstruction
+
+For the positive witness family \(\{001,011,0101\}\), protectedness is determined by bounded consecutive windows. If two protected determining windows interact without an intervening face-block boundary, the five-position obstruction forces their active status data into one bounded ordered tuple. Consequently all centered and overlapping interactions are controlled by a bounded consecutive support; unboundedness can arise only from separated reflected span-two occurrences with a protected corridor between them.
 
 ## Development
 

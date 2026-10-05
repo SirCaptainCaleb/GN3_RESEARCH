@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["positive_word_filtration_is_antipodal_and_exclusive_alternating_windows_collapse", "positive_reflected_double_carriers_have_unbounded_local_spans", "frozen_window_carriers_and_separator_relabeling_require_precise_invariants", "spanning_orders_and_defect_helly"]
 
 ## Cold composition
 

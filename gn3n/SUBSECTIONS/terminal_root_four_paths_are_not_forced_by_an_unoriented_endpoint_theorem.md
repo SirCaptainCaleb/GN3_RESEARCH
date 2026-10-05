@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["correction_seven_set_endpoint_absorption_needs_oriented_endpoints", "rooted_corridor_absorption_reduces_to_a_bounded_three_hook_residue", "auxiliary_exactification_and_complementary_supports"]
 
 ## Cold composition
 

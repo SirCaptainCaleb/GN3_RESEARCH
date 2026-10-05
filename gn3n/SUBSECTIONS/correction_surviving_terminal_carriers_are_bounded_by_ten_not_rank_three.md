@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["protected_rank_three_coherence_from_terminal_block_compression", "explicit_proofs_for_finite_terminal_compression", "independent_audit_existential_versus_protected_filtration_gap", "rank_two_terminal_carriers_are_genuinely_protected"]
 
 ## Cold composition
 

@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["reflected_double_carriers_reduce_to_two_bounded_rooted_endpoint_interfaces", "correction_seven_set_endpoint_absorption_needs_oriented_endpoints", "smallset01"]
 
 ## Cold composition
 

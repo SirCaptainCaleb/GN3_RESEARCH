@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["independent_audit_external_gauge_does_not_close_the_maximal_a2_braid", "explicit_proofs_for_finite_terminal_compression"]
 
 ## Cold composition
 

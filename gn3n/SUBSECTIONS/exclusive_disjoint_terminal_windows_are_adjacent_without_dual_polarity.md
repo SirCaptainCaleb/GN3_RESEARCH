@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["verified_five_position_obstruction_and_ordered_tuple_compression", "positive_protection_allows_a_disjoint_single_sided_span_two_carrier", "ten_vertex_boundary_tournaments_have_two_cover"]
 
 ## Cold composition
 

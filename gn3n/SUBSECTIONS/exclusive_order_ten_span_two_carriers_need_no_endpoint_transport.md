@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["positive_exclusive_disjoint_span_two_carriers_have_rank_one_coupling", "balanced_ten_position_repairs_have_explicit_protected_endpoint_orbits", "frozen_window_carriers_and_separator_relabeling_require_precise_invariants", "positive_word_filtration_is_antipodal_and_exclusive_alternating_windows_collapse"]
 
 ## Cold composition
 

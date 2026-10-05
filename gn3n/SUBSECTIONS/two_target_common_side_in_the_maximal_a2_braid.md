@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["extremal01", "maximal_ten_support_endpoint_braids_are_impossible"]
 
 ## Cold composition
 

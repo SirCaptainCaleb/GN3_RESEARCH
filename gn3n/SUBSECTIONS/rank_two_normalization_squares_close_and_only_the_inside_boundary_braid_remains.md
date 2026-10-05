@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["ten_position_normalization_of_terminal_surgery", "compatible_two_covers_under_a_one_vertex_terminal_support_exchange", "local_witness_topology_and_the_finite_terminal_theorem"]
 
 ## Cold composition
 

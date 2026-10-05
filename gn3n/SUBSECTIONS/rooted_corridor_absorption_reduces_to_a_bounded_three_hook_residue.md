@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["reflected_double_carriers_reduce_to_two_bounded_rooted_endpoint_interfaces", "localextend01", "correction_rooted_four_core_extension_is_not_automatic"]
 
 ## Cold composition
 

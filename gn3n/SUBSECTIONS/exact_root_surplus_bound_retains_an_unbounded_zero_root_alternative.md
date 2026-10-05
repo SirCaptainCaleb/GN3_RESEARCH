@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["exact_root_surplus_forces_deletion_distance_at_most_five", "topological_recurrence_to_local_gn3_structure_subsection_e", "kappa_one_role_balance_and_ky_fan"]
 
 ## Cold composition
 

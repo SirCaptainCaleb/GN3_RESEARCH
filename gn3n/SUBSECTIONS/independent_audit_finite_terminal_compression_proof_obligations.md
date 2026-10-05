@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["smallset01", "eight_vertex_boundary_tournaments_have_two_cover", "ten_vertex_boundary_tournaments_have_two_cover"]
 
 ## Cold composition
 

@@ -3,57 +3,45 @@
     "article_vii_antipodal_geodesics_and_topological_reformulations": [
       {
         "id": "spanning_orders_and_defect_helly",
-        "math_version": 10,
+        "math_version": 11,
         "position": 1,
-        "version": 13
-      },
-      {
-        "id": "norine_gn3_dictionary_and_freudenthal_geometry",
-        "math_version": 4,
-        "position": 2,
-        "version": 7
-      },
-      {
-        "id": "memory_lift_and_exact_antipodal_geodesics",
-        "math_version": 2,
-        "position": 3,
-        "version": 3
-      },
-      {
-        "id": "auxiliary_exactification_and_complementary_supports",
-        "math_version": 3,
-        "position": 4,
-        "version": 4
+        "version": 14
       },
       {
         "id": "antipodal_labels_and_cellular_root_topology",
-        "math_version": 4,
-        "position": 5,
-        "version": 5
+        "math_version": 5,
+        "position": 2,
+        "version": 6
       },
       {
         "id": "convex_root_balance_and_bourgin_yang",
-        "math_version": 20,
-        "position": 6,
-        "version": 22
+        "math_version": 21,
+        "position": 3,
+        "version": 23
       },
       {
         "id": "exact_root_compression_and_bounded_central_structure",
-        "math_version": 1,
-        "position": 7,
-        "version": 1
+        "math_version": 2,
+        "position": 4,
+        "version": 2
       },
       {
         "id": "local_witness_topology_and_the_finite_terminal_theorem",
-        "math_version": 1,
-        "position": 8,
-        "version": 1
+        "math_version": 2,
+        "position": 5,
+        "version": 2
       },
       {
         "id": "terminalization_reachability_and_the_exact_frontier",
-        "math_version": 7,
-        "position": 9,
-        "version": 9
+        "math_version": 8,
+        "position": 6,
+        "version": 10
+      },
+      {
+        "id": "article_vii_synthesis_and_exact_frontier",
+        "math_version": 26,
+        "position": 7,
+        "version": 35
       }
     ],
     "defect_lines_and_spanningorder_compression": [
@@ -432,16 +420,16 @@
   "article_versions": {
     "article_vii_antipodal_geodesics_and_topological_reformulations": {
       "composition": {
-        "body_chars": 100059,
-        "composed_through_revision": 1334,
-        "composition_version": 5,
+        "body_chars": 3538,
+        "composed_through_revision": 1575,
+        "composition_version": 6,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Recomposed after the endpoint-exclusion proof closes the last maximal A2 braid. The terminal edge-surgery coherence theorem and relative-index route are now closed in the current mathematics, pending independent audit of the new final Section.",
+        "source_note": "Recomposed bottom-up after the elevation pass. Historical auxiliary-geodesic and superseded terminal-closure routes are excluded.",
         "stale": false,
         "stale_children": []
       },
-      "version": 123
+      "version": 125
     },
     "defect_lines_and_spanningorder_compression": {
       "composition": {
@@ -524,7 +512,7 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-cold-composition-v5",
-  "generated_at": "2026-10-05T09:08:57.947241+00:00",
+  "generated_at": "2026-10-05T16:29:26.052733+00:00",
   "mirror_format": 16,
   "schema": "gn3n",
   "section_versions": {
@@ -544,17 +532,17 @@
     },
     "antipodal_labels_and_cellular_root_topology": {
       "composition": {
-        "body_chars": 9150,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 668,
+        "composed_through_revision": 1568,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 4,
-      "version": 5
+      "math_version": 5,
+      "version": 6
     },
     "antipodal_permutation_geometry": {
       "composition": {
@@ -600,17 +588,17 @@
     },
     "article_vii_synthesis_and_exact_frontier": {
       "composition": {
-        "body_chars": 61965,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 1809,
+        "composed_through_revision": 1573,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 25,
-      "version": 34
+      "math_version": 26,
+      "version": 35
     },
     "auxiliary_exactification_and_complementary_supports": {
       "composition": {
@@ -670,17 +658,17 @@
     },
     "convex_root_balance_and_bourgin_yang": {
       "composition": {
-        "body_chars": 31314,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 1076,
+        "composed_through_revision": 1569,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 20,
-      "version": 22
+      "math_version": 21,
+      "version": 23
     },
     "cyclic_strengthenings_and_balanced_cut_obstructions": {
       "composition": {
@@ -1104,17 +1092,17 @@
     },
     "exact_root_compression_and_bounded_central_structure": {
       "composition": {
-        "body_chars": 3767,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 1005,
+        "composed_through_revision": 1570,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 2
     },
     "global_augmentation_by_complementary_path_splices": {
       "composition": {
@@ -1202,17 +1190,17 @@
     },
     "local_witness_topology_and_the_finite_terminal_theorem": {
       "composition": {
-        "body_chars": 5422,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 1053,
+        "composed_through_revision": 1571,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 1,
-      "version": 1
+      "math_version": 2,
+      "version": 2
     },
     "longest_paths_and_reversal_structure_a_common_four_vertex_core": {
       "composition": {
@@ -1538,31 +1526,31 @@
     },
     "spanning_orders_and_defect_helly": {
       "composition": {
-        "body_chars": 19592,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 1153,
+        "composed_through_revision": 1567,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 10,
-      "version": 13
+      "math_version": 11,
+      "version": 14
     },
     "terminalization_reachability_and_the_exact_frontier": {
       "composition": {
-        "body_chars": 8196,
-        "composed_through_revision": 1330,
-        "composition_version": 7,
+        "body_chars": 2553,
+        "composed_through_revision": 1572,
+        "composition_version": 8,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Recomposed after closing the maximal order-ten endpoint braid by the protected alternating-word endpoint-exclusion lemma; the invalid external-gauge shortcut remains explicitly excluded.",
+        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 7,
-      "version": 9
+      "math_version": 8,
+      "version": 10
     },
     "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient": {
       "composition": {
@@ -1719,7 +1707,7 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1382,
+  "snapshot_revision": 1582,
   "startup_broadcasts": [
     {
       "body": "Do not pursue a minimum-counterexample analysis unless prior development has already forced any minimum counterexample to have bounded order: there must be an explicit finite upper bound on the number of vertices. Until such a bounded-order reduction exists, use structural, topological, algebraic, constructive, or other non-minimum-counterexample approaches instead.",
@@ -1731,7 +1719,79 @@
     }
   ],
   "subsection_versions": {
+    "a_blocked_outward_buffer_creates_a_boundary_straddling_common_core_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "a_common_packet_synchronizes_bridge_obstructions_across_tail_decompositions": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "a_local_pure_carrier_shows_same_face_escape_is_false": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "a_mutual_terminal_pair_four_cycle_forces_a_hamiltonian_five_support": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "a_mutually_admissible_exterior_vertex_fills_the_terminal_pair_carrier": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "a_persistent_span_two_occurrence_permits_a_central_three_position_block": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "a_shared_bridge_at_neighboring_cuts_exposes_four_new_repair_labels": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -1757,18 +1817,18 @@
     },
     "antipodal_labels_and_cellular_root_topology_subsection_a": {
       "composition": {
-        "body_chars": 5613,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 898,
+        "composed_through_revision": 1535,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "source_note": "Selected and compressed for the Article VII proof spine.",
         "stale": false,
         "stale_children": []
       },
       "development_version": 4,
       "section_id": "antipodal_labels_and_cellular_root_topology",
-      "version": 4
+      "version": 5
     },
     "antipodal_labels_and_cellular_root_topology_subsection_b": {
       "composition": {
@@ -1908,6 +1968,42 @@
       "section_id": "antipodal_reachability_and_topological_frontier",
       "version": 3
     },
+    "arbitrarily_large_boundary_blocks_can_change_the_selected_positive_witness_sign": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "arbitrary_terminal_pair_relations_occur_on_protected_zero_faces": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "article_vii_strategic_elevation_from_packet_surgery_to_persistent_witness_separators": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "article_vii_synthesis_and_exact_frontier_subsection_a": {
       "composition": {
         "body_chars": 6777,
@@ -2016,6 +2112,21 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "audit_the_exact_root_kappa_two_equality_case_remains_unproved": {
+      "composition": {
+        "body_chars": 718,
+        "composed_through_revision": 1562,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 3
+    },
     "audit_the_external_gauge_does_not_by_itself_close_rank_two_coherence": {
       "composition": {
         "composition_version": null,
@@ -2026,6 +2137,30 @@
       },
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "auxiliary_center_fibers_are_exact_inversion_windows": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "auxiliary_center_fibers_are_two_status_deletion_fibers": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 1
     },
     "auxiliary_exactification_and_complementary_supports_subsection_a": {
@@ -2136,6 +2271,45 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "blocked_exterior_vertices_either_extend_the_opposite_tail_or_force_root_advance": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "blocked_no_farther_endpoints_admit_bounded_endpoint_cutting_supports": {
+      "composition": {
+        "body_chars": 476,
+        "composed_through_revision": 1553,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "boundary_block_tuple_localization_bounds_active_rank": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "boundary_coherence_as_a_common_complement_hamiltonian_problem": {
       "composition": {
         "composition_version": null,
@@ -2147,6 +2321,33 @@
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "bounded_pair_reservoirs_reduce_natural_carrier_extension_to_the_two_skeleton": {
+      "composition": {
+        "body_chars": 599,
+        "composed_through_revision": 1555,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "bounded_radius_auxiliary_neighborhoods_have_exact_outward_replacements": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 3,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 3
     },
     "central_pair_gauge_does_not_exclude_intrinsictie_endpoint_sign_flips": {
       "composition": {
@@ -2173,6 +2374,18 @@
       "version": 1
     },
     "common_four_core_repair_for_the_maximal_braid": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "compatibility_criterion_for_persistent_orientation_relabeling": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -2265,32 +2478,50 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
-    "convex_root_balance_and_bourgin_yang_subsection_a": {
+    "connector_path_exclusion_for_genuine_two_deletion_packets": {
       "composition": {
-        "body_chars": 5720,
-        "composed_through_revision": 1083,
+        "body_chars": 550,
+        "composed_through_revision": 1546,
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "convex_root_balance_and_bourgin_yang_subsection_a": {
+      "composition": {
+        "body_chars": 858,
+        "composed_through_revision": 1536,
+        "composition_version": 2,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
         "stale": false,
         "stale_children": []
       },
       "development_version": 4,
       "section_id": "convex_root_balance_and_bourgin_yang",
-      "version": 4
+      "version": 5
     },
     "convex_root_balance_and_bourgin_yang_subsection_b": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 1226,
+        "composed_through_revision": 1537,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Retains the exact-root map and its proved dimension statement; excludes the unsupported extreme-switch Proposition 6.3.",
         "stale": false,
         "stale_children": []
       },
       "development_version": 18,
       "section_id": "convex_root_balance_and_bourgin_yang",
-      "version": 18
+      "version": 19
     },
     "coordinatewise_pruning_and_the_pure_terminal_core": {
       "composition": {
@@ -2303,6 +2534,33 @@
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "corrected_island_packet_indices_and_the_empty_connector_condition": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "corrected_positive_word_terminal_theorem_with_one_unbounded_corridor": {
+      "composition": {
+        "body_chars": 653,
+        "composed_through_revision": 1543,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 2
     },
     "correction_rooted_four_core_extension_is_not_automatic": {
       "composition": {
@@ -2339,6 +2597,33 @@
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "coupled_one_hole_form_of_the_genuine_double": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "coxeter_local_protection_has_an_eighteen_position_dependency_halo": {
+      "composition": {
+        "body_chars": 539,
+        "composed_through_revision": 1558,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
     },
     "cyclic_strengthenings_and_balanced_cut_obstructions_subsection_a": {
       "composition": {
@@ -2784,6 +3069,84 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "double_corridor_hall_failure_reduces_to_one_zero_degree_path_residue": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "double_persistent_faces_have_bounded_block_width_and_rank_one_span_boundaries": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "elevation_bounded_window_witness_filtrations_have_l2_local_commuting_failures": {
+      "composition": {
+        "body_chars": 2525,
+        "composed_through_revision": 1498,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected verbatim: this development contains one precise theorem used by the recomposed Article VII.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "elevation_exact_violations_reduce_terminal_topology_to_radius_at_most_three": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 2
+    },
+    "elevation_four_vertex_exact_root_compression_sharpens_the_surplus_bound_to_two": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "elevation_genuine_reflected_doubles_are_minimum_hole_boolean_squares": {
+      "composition": {
+        "body_chars": 753,
+        "composed_through_revision": 1561,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 2
+    },
     "endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal_subsection_a": {
       "composition": {
         "composition_version": null,
@@ -2937,7 +3300,7 @@
       "section_id": "endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices",
       "version": 1
     },
-    "exact_root_compression_and_bounded_central_structure_subsection_a": {
+    "every_large_minimum_deletion_hole_contains_canonical_deletion_distance_three_three_cover_cores": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -2945,9 +3308,24 @@
         "stale": false,
         "stale_children": []
       },
+      "development_version": 2,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 2
+    },
+    "exact_root_compression_and_bounded_central_structure_subsection_a": {
+      "composition": {
+        "body_chars": 1280,
+        "composed_through_revision": 1538,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Includes the later correction establishing the kappa_2 >= 2 zero-root theorem and omits superseded root-moment discussion.",
+        "stale": false,
+        "stale_children": []
+      },
       "development_version": 1,
       "section_id": "exact_root_compression_and_bounded_central_structure",
-      "version": 1
+      "version": 2
     },
     "exact_root_surplus_bound_retains_an_unbounded_zero_root_alternative": {
       "composition": {
@@ -3021,6 +3399,57 @@
       "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
       "version": 1
     },
+    "exterior_assisted_packet_absorption_gives_an_outward_repair": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "face_monotone_positional_coarsening_gives_compatible_enlarged_protected_carriers": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "four_reversed_bridge_vertices_give_a_protected_packet_corridor_repair": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "frozen_interiors_make_buffer_success_sectors_contractible": {
+      "composition": {
+        "body_chars": 462,
+        "composed_through_revision": 1550,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 3
+    },
     "frozen_window_carriers_and_separator_relabeling_require_precise_invariants": {
       "composition": {
         "composition_version": null,
@@ -3032,6 +3461,114 @@
       "development_version": 2,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 2
+    },
+    "full_article_vii_top_down_elevation_pass_composed_results": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "full_article_vii_top_down_elevation_pass_repair_addenda": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "genuine_two_deletion_corridors_start_at_order_twelve": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "genuine_two_deletion_doubles_admit_no_internal_outward_repair": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "genuine_two_deletion_doubles_have_a_fixed_mixed_polarity_and_forced_first_outward_shell": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "genuine_two_deletion_doubles_have_both_corridor_paths_of_order_at_least_four": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "genuine_two_deletion_doubles_reduce_to_bounded_endpoint_packets": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "genuine_two_deletion_doubles_reverse_all_four_corridor_ends": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "genuine_two_deletion_obstructions_have_no_small_packet_tail_connectors": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "global_augmentation_by_complementary_path_splices_subsection_a": {
       "composition": {
@@ -3055,6 +3592,42 @@
       },
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "hall_failure_in_a_double_corridor_forces_a_double_end_reverser": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "imbalanced_minimum_hole_complements_force_dense_endpoint_spanning_four_supports": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "imbalanced_minimum_holes_descend_to_four_component_one_hole_cores": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 1
     },
     "independent_audit_existential_versus_protected_filtration_gap": {
@@ -3103,6 +3676,18 @@
       },
       "development_version": 1,
       "section_id": "convex_root_balance_and_bourgin_yang",
+      "version": 1
+    },
+    "interrupted_elevation_checkpoint_attack_the_genuine_two_deletion_five_component_interface": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 1
     },
     "kappa_one_four_end_reversal_subsection_a": {
@@ -3453,7 +4038,187 @@
       "section_id": "memory_lift_and_exact_antipodal_geodesics",
       "version": 1
     },
+    "minimal_commuting_cube_protection_failures_are_eight_position_local": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "minimal_separator_faces_and_terminal_edge_surgery_coherence": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "minimum_deletion_holes_of_order_at_least_three_force_canonical_root_advance_three_covers": {
+      "composition": {
+        "body_chars": 533,
+        "composed_through_revision": 1563,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Retains the valid one-step pair-selection content and removes the invalid recursive covering conclusion.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 2
+    },
+    "minimum_hole_singleton_restorations_have_opposite_boundary_four_supports": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "minimum_holes_are_four_end_synchronized_and_three_hole_cores_have_bidirectional_root_advance": {
+      "composition": {
+        "body_chars": 633,
+        "composed_through_revision": 1565,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 3
+    },
+    "minimum_holes_carry_uniform_cross_end_five_path_tests": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "minimum_holes_contain_a_dense_family_of_four_support_two_deletion_cores": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "minimum_holes_contain_bidirectionally_compatible_four_support_pair_cores": {
+      "composition": {
+        "body_chars": 680,
+        "composed_through_revision": 1566,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 2
+    },
+    "minimum_holes_reduce_to_genuine_two_deletion_states_with_a_five_component": {
+      "composition": {
+        "body_chars": 797,
+        "composed_through_revision": 1564,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 2
+    },
+    "mixed_endpoint_packets_exclude_neighboring_shared_bridges": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "mobile_corridor_cuts_give_a_twenty_vertex_tail_joining_certificate": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "monotone_two_deletion_corridors_force_a_six_triple_reversal_fan": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "moving_the_auxiliary_center_can_reverse_arbitrary_large_nearest_radii_without_same_face_escape": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "moving_the_fixed_following_vertex_fills_a_protected_terminal_pair_locus": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "natural_outward_carriers_close_the_one_boundary_vertex_sector": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3476,6 +4241,48 @@
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "neighboring_shared_bridges_have_a_sharp_orientation_and_deletion_fork": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "no_farther_positive_witness_forces_monochromatic_outward_status_rays": {
+      "composition": {
+        "body_chars": 397,
+        "composed_through_revision": 1548,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "no_farther_witness_bounds_relevant_face_blocks_by_four": {
+      "composition": {
+        "body_chars": 439,
+        "composed_through_revision": 1551,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 3
     },
     "norine_gn3_dictionary_and_freudenthal_geometry_subsection_a": {
       "composition": {
@@ -3504,6 +4311,54 @@
       "section_id": "norine_gn3_dictionary_and_freudenthal_geometry",
       "version": 3
     },
+    "one_exterior_label_fills_a_four_cycle_only_by_mutual_adjacency_to_every_boundary_label": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "one_path_complement_bounds_sharpen_the_genuine_double_corridor_profiles": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "one_shared_bridge_orientation_at_neighboring_cuts_closes_automatically": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "opposite_long_span_orientations_expose_an_outward_commuting_square": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "order_nine_bridge_reduces_to_rooted_four_core_synchronization": {
       "composition": {
         "composition_version": null,
@@ -3528,7 +4383,7 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
-    "positive_alternating_double_occurrences_have_support_at_most_eight": {
+    "outward_buffer_vertices_bypass_the_internal_two_deletion_obstruction": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3537,8 +4392,53 @@
         "stale_children": []
       },
       "development_version": 1,
-      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "outward_repair_inside_a_double_span_is_equivalent_to_a_two_cover": {
+      "composition": {
+        "body_chars": 370,
+        "composed_through_revision": 1545,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "persistent_face_labels_isolate_the_double_persistent_zero_root_locus": {
+      "composition": {
+        "body_chars": 746,
+        "composed_through_revision": 1549,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "positive_alternating_double_occurrences_have_support_at_most_eight": {
+      "composition": {
+        "body_chars": 313,
+        "composed_through_revision": 1541,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 2
     },
     "positive_exclusive_disjoint_span_two_carriers_have_rank_one_coupling": {
       "composition": {
@@ -3554,15 +4454,18 @@
     },
     "positive_only_witness_filtration_is_antipodal_and_surgery_compatible": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 447,
+        "composed_through_revision": 1542,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Retains only the consistent positive filtration; removes the superseded claim that every terminal support is bounded.",
         "stale": false,
         "stale_children": []
       },
       "development_version": 1,
       "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
-      "version": 1
+      "version": 2
     },
     "positive_overlap_one_alternating_elimination": {
       "composition": {
@@ -3614,15 +4517,18 @@
     },
     "positive_reflected_double_carriers_have_unbounded_local_spans": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 455,
+        "composed_through_revision": 1540,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
         "stale": false,
         "stale_children": []
       },
       "development_version": 1,
       "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
-      "version": 1
+      "version": 2
     },
     "positive_word_filtration_is_antipodal_and_exclusive_alternating_windows_collapse": {
       "composition": {
@@ -3636,7 +4542,55 @@
       "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
       "version": 1
     },
+    "post_pass_corrections_and_strongest_elevations_through_the_newest_addenda": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "prescribed_endpoint_subsets_of_a_permutahedron_give_contractible_outward_loci": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "protected_carrier_separator_and_the_acyclic_carrier_reduction": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "protected_commuting_square_failures_are_eight_position_local": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "protected_corridor_bounds_block_intersections_but_not_boundary_block_orders": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3673,6 +4627,18 @@
       "version": 1
     },
     "protected_rank_three_coherence_from_terminal_block_compression": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "protection_forces_a_minimum_hole_boundary_reservoir_to_be_uniformly_blocked": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3879,6 +4845,21 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "reflected_double_spans_have_deletion_distance_at_most_two": {
+      "composition": {
+        "body_chars": 341,
+        "composed_through_revision": 1544,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
     "relative_index_filtration_and_the_mixed_face_outward_push_lemma": {
       "composition": {
         "composition_version": null,
@@ -3890,6 +4871,18 @@
       "development_version": 2,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 2
+    },
+    "repair_frontier_bounded_endpoint_interface_not_unbounded_carrier": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "repair_frontier_protected_iteration_reduced_to_finite_terminal_compression": {
       "composition": {
@@ -3903,7 +4896,181 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "reverse_shared_bridges_have_an_exact_six_packet_normal_form": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "reverse_shared_bridges_reduce_to_one_tight_path_and_a_six_vertex_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "rigid_010_island_reduces_to_one_canonical_six_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "root_advance_plus_four_of_six_leaves_one_wrong_root_exception": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "root_advance_recursion_drops_three_corridor_vertices_without_a_covering_lift": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "rooted_attachment_sets_force_reverse_junctions": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "rooted_corridor_absorption_reduces_to_a_bounded_three_hook_residue": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "saturated_natural_carriers_force_their_outward_loci_to_be_contractible": {
+      "composition": {
+        "body_chars": 557,
+        "composed_through_revision": 1556,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "self_audit_of_the_818_position_and_six_label_finitization": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "separated_protected_determining_windows_force_a_persistent_witness_or_same_face_escape": {
+      "composition": {
+        "body_chars": 582,
+        "composed_through_revision": 1547,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "separated_window_outward_loci_are_products_and_can_be_disconnected": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "seven_set_endpoint_handoff_either_absorbs_a_tail_or_advances_the_root": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "seven_set_handoff_requires_terminal_neighbors_and_cannot_reverse_an_endpoint_path": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "seven_vertex_deletion_graph_couples_overlapping_packet_failures": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "short_corridor_paths_reduce_deletion_distance_but_do_not_automatically_two_cover": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3956,20 +5123,35 @@
     },
     "spanning_orders_and_defect_helly_subsection_b": {
       "composition": {
-        "body_chars": 13549,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 1673,
+        "composed_through_revision": 1499,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
+        "source_note": "Selected and compressed for the Article VII proof spine.",
         "stale": false,
         "stale_children": []
       },
       "development_version": 8,
       "section_id": "spanning_orders_and_defect_helly",
-      "version": 8
+      "version": 9
     },
     "spanning_orders_and_defect_helly_subsection_c": {
+      "composition": {
+        "body_chars": 834,
+        "composed_through_revision": 1534,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Removes the obsolete dual-polarity refinement and retains the local language exactly equivalent to the two-cover criterion.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 3,
+      "section_id": "spanning_orders_and_defect_helly",
+      "version": 4
+    },
+    "strategic_elevation_both_routes_converge_on_the_blocked_double_persistent_zero_root_interface": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3977,9 +5159,21 @@
         "stale": false,
         "stale_children": []
       },
-      "development_version": 3,
-      "section_id": "spanning_orders_and_defect_helly",
-      "version": 3
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "successive_bad_five_packets_force_four_cross_endpoint_repairs": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "ten_position_normalization_of_terminal_surgery": {
       "composition": {
@@ -4004,6 +5198,21 @@
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "terminal_ordered_pair_loci_have_the_homotopy_type_of_mutual_pair_clique_complexes": {
+      "composition": {
+        "body_chars": 584,
+        "composed_through_revision": 1554,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
     },
     "terminal_root_four_paths_are_not_forced_by_an_unoriented_endpoint_theorem": {
       "composition": {
@@ -4041,7 +5250,58 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 3
     },
+    "three_bridge_candidates_join_two_tails_and_absorb_a_six_vertex_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "three_bridge_vertices_absorb_a_six_vertex_endpoint_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "three_common_blocked_hooks_force_a_bounded_rooted_hamiltonian_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "three_common_initial_reversers_force_a_root_advancing_five_path": {
+      "composition": {
+        "body_chars": 454,
+        "composed_through_revision": 1560,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "three_common_reversers_force_a_three_cover_by_finite_root_advance": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -4218,6 +5478,18 @@
       "section_id": "three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas",
       "version": 1
     },
+    "top_down_elevation_audit_of_the_terminalization_composition": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "topological_recurrence_to_local_gn3_structure_subsection_a": {
       "composition": {
         "body_chars": 6339,
@@ -4290,7 +5562,112 @@
       "section_id": "topological_recurrence_to_local_gn3_structure",
       "version": 4
     },
+    "tuple_dependence_does_not_by_itself_give_a_bounded_rank_coxeter_quotient": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "two_bridge_vertices_absorb_a_five_vertex_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "two_exterior_labels_fill_the_terminal_four_cycle_by_a_six_triangle_disk": {
+      "composition": {
+        "body_chars": 514,
+        "composed_through_revision": 1557,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "two_neighboring_shared_failures_force_thirty_six_mixed_hamiltonian_five_sets": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "two_skeleton_loop_obstructions_reduce_to_one_four_label_cycle": {
+      "composition": {
+        "body_chars": 555,
+        "composed_through_revision": 1559,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "two_slot_persistent_boundary_reservoirs_are_uniformly_blocked_and_rooted": {
+      "composition": {
+        "body_chars": 577,
+        "composed_through_revision": 1552,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
     "two_target_common_side_in_the_maximal_a2_braid": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "unbounded_positive_doubles_are_exactly_symmetric_zero_root_obstructions": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "uniform_buffer_blocking_alone_does_not_force_a_farther_positive_witness": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -4314,7 +5691,7 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
-    "verified_five_position_obstruction_and_ordered_tuple_compression": {
+    "universal_gauge_does_not_bypass_terminalization": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -4323,8 +5700,23 @@
         "stale_children": []
       },
       "development_version": 1,
-      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "verified_five_position_obstruction_and_ordered_tuple_compression": {
+      "composition": {
+        "body_chars": 547,
+        "composed_through_revision": 1539,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Selected and compressed for the Article VII proof spine.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 2
     }
   },
   "toolkit_count": 55,

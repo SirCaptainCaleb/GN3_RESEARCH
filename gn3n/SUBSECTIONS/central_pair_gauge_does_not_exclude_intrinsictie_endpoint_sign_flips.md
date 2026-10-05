@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["central_pair_gauge_removes_endpoint_block_sign_changes", "positive_reflected_double_carriers_have_unbounded_local_spans", "positive_alternating_double_occurrences_have_support_at_most_eight"]
 
 ## Cold composition
 

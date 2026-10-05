@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["order_nine_bridge_reduces_to_rooted_four_core_synchronization", "definitions01", "localextend01"]
 
 ## Cold composition
 

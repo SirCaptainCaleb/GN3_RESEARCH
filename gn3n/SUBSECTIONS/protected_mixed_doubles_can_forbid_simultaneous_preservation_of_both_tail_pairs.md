@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["span_two_doubles_are_exactly_a_two_cover_corridor_plus_two_reversed_endpoints", "complete_positive_span_two_double_corridor_classification", "positive_protection_does_not_guarantee_fixed_root_corridor_absorption", "fixed_terminal_pair_balancing_counterexample01"]
 
 ## Cold composition
 

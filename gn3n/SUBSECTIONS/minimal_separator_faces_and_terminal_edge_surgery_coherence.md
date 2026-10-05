@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["local_witness_topology_and_the_finite_terminal_theorem"]
 
 ## Cold composition
 

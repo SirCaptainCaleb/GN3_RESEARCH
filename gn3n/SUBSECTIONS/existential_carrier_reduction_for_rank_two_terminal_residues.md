@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["terminal_support_surgery_gives_a_genuine_outward_escape", "minimal_separator_faces_and_terminal_edge_surgery_coherence", "compatible_two_covers_under_a_one_vertex_terminal_support_exchange"]
 
 ## Cold composition
 

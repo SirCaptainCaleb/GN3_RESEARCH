@@ -9,7 +9,6 @@
 - Development version: 2
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["reflected_double_carriers_reduce_to_two_bounded_rooted_endpoint_interfaces", "terminal_root_four_paths_are_not_forced_by_an_unoriented_endpoint_theorem", "positive_reflected_double_carriers_have_unbounded_local_spans", "positive_alternating_double_occurrences_have_support_at_most_eight", "positive_only_witness_filtration_is_antipodal_and_surgery_compatible"]
 
 ## Cold composition
 

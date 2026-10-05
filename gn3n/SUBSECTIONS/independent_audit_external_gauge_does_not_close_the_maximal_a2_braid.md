@@ -9,7 +9,6 @@
 - Development version: 1
 - Composition version: None
 - Composition stale: False
-- Provisional declared dependencies: ["local_witness_topology_and_the_finite_terminal_theorem", "rank_two_coherence_closes_by_the_external_gauge", "rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains", "compatible_two_covers_under_a_one_vertex_terminal_support_exchange", "protected_carrier_separator_and_the_acyclic_carrier_reduction"]
 
 ## Cold composition
 
