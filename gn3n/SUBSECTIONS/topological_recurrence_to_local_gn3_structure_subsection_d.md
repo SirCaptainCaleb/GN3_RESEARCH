@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Minimum deletion holes synchronize all omitted vertices as common reversers of the same two terminal edges; proof to follow.
 

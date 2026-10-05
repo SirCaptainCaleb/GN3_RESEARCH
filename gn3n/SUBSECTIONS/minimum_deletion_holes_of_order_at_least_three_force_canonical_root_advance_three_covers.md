@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 ### A good pair in every large minimum hole
 

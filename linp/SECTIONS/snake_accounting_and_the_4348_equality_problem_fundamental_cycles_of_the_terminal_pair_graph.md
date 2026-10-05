@@ -1,6 +1,6 @@
 # Fundamental cycles of the terminal-pair graph
 
-## Cold composition
+## Composition
 
 Form a graph \(J\) whose edges are the terminal pairs \(uv\) of the edges
 \[

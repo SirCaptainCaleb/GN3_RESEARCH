@@ -1,6 +1,6 @@
 # The defect-line identity
 
-## Cold composition
+## Composition
 
 **Lemma 1.**
 \[

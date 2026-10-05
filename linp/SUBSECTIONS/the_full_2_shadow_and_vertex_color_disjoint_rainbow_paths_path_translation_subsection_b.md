@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The hyperedges \(e_1,\ldots,e_k\) form a linear hypergraph path if and only if
 \[

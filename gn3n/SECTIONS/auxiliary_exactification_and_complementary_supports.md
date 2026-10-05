@@ -6,7 +6,7 @@
 
 Adding one special vertex makes the directed one-change geodesic property exactly equivalent to a two-cover, and the exactified state admits complementary-tail, common-endpoint, and positive-factorization descriptions.
 
-## Cold composition
+## Composition
 
 ## Exactification before support-family development
 

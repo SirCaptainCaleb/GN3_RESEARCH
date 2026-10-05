@@ -1,6 +1,6 @@
 # A global identity
 
-## Cold composition
+## Composition
 
 Define
 \[

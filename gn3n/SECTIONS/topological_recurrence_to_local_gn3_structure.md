@@ -6,7 +6,7 @@
 
 Under positive chamber deficiency, equality of occurring exact-root tail and head coordinate sets, and absence of a zero root, the central block has order two, three, or four in the explicitly classified configurations. Exterior blocks have order at most two; at most ten vertices determine the varying roots. With positive balance every root lies on a directed two- or three-cycle. The proof uses no minimum-counterexample hypothesis and includes direct two-cover constructions to exclude larger blocks. The remaining configurations and diagonal chambers still require conversion to a spanning two-cover.
 
-## Cold composition
+## Composition
 
 ## From balanced recurrence to local reversal structure
 

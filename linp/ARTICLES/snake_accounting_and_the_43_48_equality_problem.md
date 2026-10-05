@@ -6,7 +6,7 @@
 - Stale: False
 - Composed through revision: 402
 
-## Cold composition
+## Composition
 
 ---
 

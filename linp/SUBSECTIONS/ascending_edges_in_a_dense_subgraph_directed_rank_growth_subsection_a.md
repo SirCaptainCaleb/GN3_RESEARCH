@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 There is a complementary global representation. For every ascending edge
 \[

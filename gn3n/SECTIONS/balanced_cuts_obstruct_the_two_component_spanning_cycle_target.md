@@ -6,7 +6,7 @@
 
 For every s>=1 there is a 4s-vertex edge-orderable boundary 3-tournament with path-cover number exactly two and a one-change spanning order, but minimum cyclic monochromatic-component count exactly four. Thus the universal two-component cycle target is false. A cyclic defect graph gives an equivalent two-cover target via vertex-cover number at most two.
 
-## Cold composition
+## Composition
 
 ### Transition colors and ordered edges
 

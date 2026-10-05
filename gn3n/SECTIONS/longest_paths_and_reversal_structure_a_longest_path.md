@@ -1,6 +1,6 @@
 # A longest path
 
-## Cold composition
+## Composition
 
 Choose a longest tight path
 \[

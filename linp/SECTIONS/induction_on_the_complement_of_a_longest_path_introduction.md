@@ -1,6 +1,6 @@
 # Introduction
 
-## Cold composition
+## Composition
 
 Fix \(\ell\ge2\). This approach seeks to prove
 \[

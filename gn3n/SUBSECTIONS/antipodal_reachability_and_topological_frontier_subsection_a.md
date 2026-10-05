@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Work in the \(\sigma=1\) copy of the memory-lift graph for the auxiliary-vertex extension, and orient every graph edge from lower rank to higher rank. Let \(R\) be the set of states reachable from \(s\) by an increasing path using only red edges.
 

@@ -1,6 +1,6 @@
 # Defect span three is a deletion-cover ordering
 
-## Cold composition
+## Composition
 
 The defect span of \(\pi\) is \(0\) if there is no defect center and otherwise is
 \[

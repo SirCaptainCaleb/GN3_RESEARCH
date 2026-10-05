@@ -1,6 +1,6 @@
 # The odd-cycle case
 
-## Cold composition
+## Composition
 
 Assume now that \(J\) is the cycle of Lemma 4. Write
 \[

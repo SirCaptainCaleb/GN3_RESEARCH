@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Form the snake digraph of \(H\): for every edge \(e\) and every vertex \(v\in e\) with
 \[

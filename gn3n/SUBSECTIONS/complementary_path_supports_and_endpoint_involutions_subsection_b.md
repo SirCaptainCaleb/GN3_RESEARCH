@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Equivalently, on a vertex set \(W\), a spanning order with word \(1^a0^b\) exists if and only if there are two tight paths whose union is \(W\), whose intersection is one vertex \(v\), and which both end at \(v\). Either path may be the singleton \(v\).
 

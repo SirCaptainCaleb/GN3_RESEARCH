@@ -1,6 +1,6 @@
 # The size profile \(\{r+1,r,r\}\)
 
-## Cold composition
+## Composition
 
 Let \(A\mid B\mid C\) have orders \(r+1,r,r\), and let \(x,y\) be the endpoints of \(A\).
 

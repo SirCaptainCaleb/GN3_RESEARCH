@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 ### Imbalance in a frozen complement forces a new reversal carrier
 

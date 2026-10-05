@@ -6,7 +6,7 @@
 
 Starting from a deletion cover H-x=P|Q in a minimum counterexample, track pairwise repartitions that keep x inside a bounded Hamiltonian support. The initial singleton lift strictly descends to a rooted three-path; interaction with long neighboring paths then produces rooted four- or five-supports, nonincreasing transport, or sharply positioned endpoint-core obstructions.
 
-## Cold composition
+## Composition
 
 ## Rooted descent through bounded supports
 

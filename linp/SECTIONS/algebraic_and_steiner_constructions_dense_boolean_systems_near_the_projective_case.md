@@ -1,6 +1,6 @@
 # Dense Boolean systems near the projective case
 
-## Cold composition
+## Composition
 
 Let \(A\subseteq\mathbb F_2^r\setminus\{0\}\), and put an edge on every triple
 \[

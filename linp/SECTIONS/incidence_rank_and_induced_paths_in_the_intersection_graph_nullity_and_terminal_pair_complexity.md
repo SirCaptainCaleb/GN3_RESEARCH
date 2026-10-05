@@ -1,6 +1,6 @@
 # Nullity and terminal-pair complexity
 
-## Cold composition
+## Composition
 
 The rank problem also receives information from the terminal-pair graph of nonspecial edges.
 

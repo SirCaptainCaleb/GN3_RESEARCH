@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Common-terminal pairs on a fixed support carry a fixed-point-free involution. Suppose
 \[

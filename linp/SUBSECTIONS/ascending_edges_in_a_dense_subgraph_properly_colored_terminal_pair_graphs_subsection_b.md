@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The coloring of \(R_t\) is proper, and \(R_t\) contains no rainbow path with \(t\) edges.
 

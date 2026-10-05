@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Let \(H\) have nonempty vertex set \(V\). Adjoin \(r\), retain all triples of \(H\), and impose
 \[

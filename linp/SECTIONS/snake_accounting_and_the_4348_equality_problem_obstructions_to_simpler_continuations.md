@@ -1,6 +1,6 @@
 # Obstructions to simpler continuations
 
-## Cold composition
+## Composition
 
 The cumulative fixed-entrance bound does not force a positive proportion of a terminal family to have edge rank uniformly below its maximum; it is an upper bound on the low-rank portion.
 

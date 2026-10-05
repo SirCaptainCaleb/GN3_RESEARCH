@@ -6,7 +6,7 @@
 
 Every protected terminal sign-flip surgery can be chosen equivariantly and coherently across all rank-two Coxeter residues, yielding an equivariant map from S_r to Y_{r+1} at every witness depth and closing the Article VII relative-index filtration.
 
-## Cold composition
+## Composition
 
 ## Terminalization of the reflected corridor: reduction to two bounded interfaces
 

@@ -1,6 +1,6 @@
 # A sufficient common-terminal bound
 
-## Cold composition
+## Composition
 
 For a vertex \(v\), let
 \[

@@ -6,7 +6,7 @@
 
 Naive Tucker and rook-label arguments fail on the permutahedron graph, but their failure identifies the correct cellular objects: commuting squares, braid hexagons, and an odd extreme-switch root map.
 
-## Cold composition
+## Composition
 
 ## Cellular antipodal roots
 

@@ -1,6 +1,6 @@
 # Deletion and the change in extremal deficit
 
-## Cold composition
+## Composition
 
 The third term \(D_Y\) cannot be treated as a harmless remainder. It records genuine missing edges outside the longest path.
 

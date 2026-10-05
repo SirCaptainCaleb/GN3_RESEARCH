@@ -1,6 +1,6 @@
 # Two same-side extension vertices
 
-## Cold composition
+## Composition
 
 Suppose \(x,y\) can occur only at the same endpoint side of the relevant augmented supports, and let
 \[

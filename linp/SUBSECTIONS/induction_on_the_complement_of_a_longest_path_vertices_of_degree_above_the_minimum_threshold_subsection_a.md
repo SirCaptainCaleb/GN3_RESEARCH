@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 A dense equality case has many vertices whose degree is strictly above the minimum degree.
 

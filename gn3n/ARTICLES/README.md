@@ -1,6 +1,6 @@
 # Articles
 
-Articles are top-level routes. Each file contains a manually written cold composition plus links to its contained Sections.
+Articles are top-level routes. Each file contains a manually written composition plus links to its contained Sections.
 
 - [Article I — deletion-cover compatibility and global obstruction structure](deletioncover_compatibility_and_global_obstruction_structure.md) (`deletioncover_compatibility_and_global_obstruction_structure`) — composition v1; stale=False
 - [Article II — quadratic potential and pairwise repartition](quadratic_potential_and_pairwise_repartition.md) (`quadratic_potential_and_pairwise_repartition`) — composition v1; stale=False

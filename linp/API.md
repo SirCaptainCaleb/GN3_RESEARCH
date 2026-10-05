@@ -11,7 +11,7 @@ Starts a session and returns the artifact snapshot/revision, persistent startup 
 Discovers Articles, Sections, Subsection development, Toolkit, documents, and optionally Brainstorms.
 
 ### read(ids, math_versions := {}, cursor := null, page_chars := 9000)
-Reads exact durable content. Article and Section bodies are cold compositions. Stable Subsection IDs are also readable; a Subsection read shows both its cold composition and full development body.
+Reads exact durable content. Article and Section bodies are compositions. Stable Subsection IDs are also readable; a Subsection read shows both its composition and full development body.
 
 ### composition_status(node_type, node_id)
 Returns one stale flag. For Sections and Articles it also returns stale_children: direct child compositions that require parent reconsideration. Raw child development never stales a parent.

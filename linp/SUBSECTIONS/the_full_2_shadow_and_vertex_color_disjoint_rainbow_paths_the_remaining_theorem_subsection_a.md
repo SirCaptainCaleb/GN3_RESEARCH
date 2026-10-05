@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The full-shadow approach is reduced to Target theorem (8).
 

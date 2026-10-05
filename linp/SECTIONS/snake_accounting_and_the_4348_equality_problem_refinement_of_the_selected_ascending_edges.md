@@ -1,6 +1,6 @@
 # Refinement of the selected ascending edges
 
-## Cold composition
+## Composition
 
 The identity also controls the intersections at the unique entrance and at the two terminals.
 

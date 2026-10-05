@@ -6,7 +6,7 @@
 
 A fixed ranked antipodal memory-lift graph has pole geodesics exactly equal to spanning orders, with edge colors equal to the consecutive-triple status word; geodesicity is exactly the no-coordinate-reuse condition.
 
-## Cold composition
+## Composition
 
 ## The memory lift, antipodality, and zero detour
 

@@ -1,6 +1,6 @@
 # Cycle rank as a sufficient parameter
 
-## Cold composition
+## Composition
 
 ## Proposition 3
 

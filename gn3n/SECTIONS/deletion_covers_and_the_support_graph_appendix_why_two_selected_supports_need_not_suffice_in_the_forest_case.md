@@ -1,6 +1,6 @@
 # Appendix. Why two selected supports need not suffice in the forest case
 
-## Cold composition
+## Composition
 
 The forest alternative cannot in general be completed by choosing two supports already present in the selected family.
 

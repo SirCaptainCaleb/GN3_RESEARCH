@@ -1,6 +1,6 @@
 # The spectral identity
 
-## Cold composition
+## Composition
 
 ## Lemma 3
 

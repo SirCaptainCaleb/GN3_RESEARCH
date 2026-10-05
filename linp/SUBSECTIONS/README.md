@@ -1,6 +1,6 @@
 # Subsections
 
-Subsections are cheap local development containers. Their files preserve full development independently of whatever survives into colder parent compositions.
+Subsections are cheap local development containers. Their files preserve full development independently of whatever survives into parent compositions.
 
 - [algebraic_and_steiner_constructions_binary_projective_systems_subsection_a](algebraic_and_steiner_constructions_binary_projective_systems_subsection_a.md) (`algebraic_and_steiner_constructions_binary_projective_systems_subsection_a`) — parent algebraic_and_steiner_constructions_binary_projective_systems; development v1; composition v1; stale=False
 - [Lemma 2](algebraic_and_steiner_constructions_binary_projective_systems_subsection_b.md) (`algebraic_and_steiner_constructions_binary_projective_systems_subsection_b`) — parent algebraic_and_steiner_constructions_binary_projective_systems; development v1; composition v1; stale=False

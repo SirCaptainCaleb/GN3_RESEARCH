@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The third term \(D_Y\) cannot be treated as a harmless remainder. It records genuine missing edges outside the longest path.
 

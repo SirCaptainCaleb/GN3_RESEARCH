@@ -6,7 +6,7 @@
 
 Article VII retains its exact formulations. Nonzero exact-root carriers have the bounded central configurations of Section 7. For the rooted omission map, strictly positive constant-vector balance forces every chamber to have zero omissions unless all original vertices occupy a single block and the auxiliary vertex is a singleton extreme block. The matching-block tournament on four vertices gives positive balance without a zero chamber on either exceptional facet, refuting the unrestricted facewise omission-balance implication. Converting root configurations or forcing useful omission balance remains open.
 
-## Cold composition
+## Composition
 
 ## Synthesis: minimum holes and the remaining frontier
 
@@ -88,3 +88,5 @@ This is the current Article VII frontier.
 - [Subsection 34 — Same-signature pairs eliminate the double-blocked order-ten branch](../SUBSECTIONS/same_signature_pairs_eliminate_the_double_blocked_order_ten_branch.md) (`same_signature_pairs_eliminate_the_double_blocked_order_ten_branch`; development v1; composition vNone; stale=False)
 - [Subsection 35 — A leaf of the minimum-pair graph forces universal balanced two-covers](../SUBSECTIONS/a_leaf_of_the_minimum_pair_graph_forces_universal_balanced_two_covers.md) (`a_leaf_of_the_minimum_pair_graph_forces_universal_balanced_two_covers`; development v1; composition vNone; stale=False)
 - [Subsection 36 — Correction: failed five-component endpoint exchanges force only the second-layer reversal](../SUBSECTIONS/correction_failed_five_component_endpoint_exchanges_force_only_the_second_layer_reversal.md) (`correction_failed_five_component_endpoint_exchanges_force_only_the_second_layer_reversal`; development v1; composition vNone; stale=False)
+- [Subsection 37 — Minimum-hole concatenations are exact minimum-deficiency faces](../SUBSECTIONS/minimum_hole_concatenations_are_exact_minimum_deficiency_faces.md) (`minimum_hole_concatenations_are_exact_minimum_deficiency_faces`; development v1; composition vNone; stale=False)
+- [Subsection 38 — Minimum-hole rebasing collapses the unbounded reflected corridor to six vertices](../SUBSECTIONS/minimum_hole_rebasing_collapses_the_unbounded_reflected_corridor_to_six_vertices.md) (`minimum_hole_rebasing_collapses_the_unbounded_reflected_corridor_to_six_vertices`; development v1; composition vNone; stale=False)

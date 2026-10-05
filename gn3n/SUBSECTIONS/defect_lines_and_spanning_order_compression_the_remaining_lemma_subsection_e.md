@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 ### The opposite-endpoint residue is a two-label completion problem
 

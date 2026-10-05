@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 For each \(i\), let \(T_i\) be any two-cover of
 \[

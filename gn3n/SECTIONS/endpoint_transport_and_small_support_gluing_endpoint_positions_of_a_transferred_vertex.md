@@ -1,6 +1,6 @@
 # Endpoint positions of a transferred vertex
 
-## Cold composition
+## Composition
 
 Suppose \(X,Y,D,\{x\}\) partition \(V(H)\) and both
 \[

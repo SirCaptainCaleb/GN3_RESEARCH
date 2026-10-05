@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 In an edge-ordered model, a Hamilton cycle with at most two transition-color components has a unimodal cyclic sequence of edge ranks: from its unique minimum the ranks increase to the unique maximum and then decrease. Hence for every rank threshold, the cycle edges above that threshold form one cyclic interval.
 

@@ -1,6 +1,6 @@
 # Support-compatible families
 
-## Cold composition
+## Composition
 
 A large support-compatible family has only one varying support.
 

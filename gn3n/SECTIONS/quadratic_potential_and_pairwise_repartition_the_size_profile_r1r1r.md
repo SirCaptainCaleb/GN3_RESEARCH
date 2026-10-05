@@ -1,6 +1,6 @@
 # The size profile \(\{r+1,r+1,r\}\)
 
-## Cold composition
+## Composition
 
 **Lemma 4.** Suppose a minimum-\(\Phi\) level in one component of \(\mathcal R(H)\) has size multiset \(\{r+1,r+1,r\}\), \(r\ge3\). Assume that an equal-\(\Phi\) pairwise repartition never gives a two-cover, a strict decrease of \(\Phi\), an order disagreement, or a Hamiltonian support of order four or five whose complement has path-cover number two. Then there are disjoint tight paths \(A,B,C\), each of order \(r\), and distinct vertices \(x,y\) such that both \(x\) and \(y\) extend the same end of each of \(A,B,C\).
 

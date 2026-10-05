@@ -1,6 +1,6 @@
 # Directed rank growth
 
-## Cold composition
+## Composition
 
 There is a complementary global representation. For every ascending edge
 \[

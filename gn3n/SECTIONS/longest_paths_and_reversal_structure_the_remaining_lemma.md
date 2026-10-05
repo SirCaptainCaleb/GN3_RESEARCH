@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Cold composition
+## Composition
 
 The preceding lemmas produce one of the following:
 - a Hamiltonian support of order four, five, or six with two-coverable complement and displayed endpoint information;

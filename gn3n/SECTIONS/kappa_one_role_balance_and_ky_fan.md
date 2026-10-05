@@ -6,7 +6,7 @@
 
 When the two-cover deletion distance is one, exact-root topology can spend its three surplus dimensions on three actual-vertex roles. Any nonzero carrier then collapses to one four-vertex equal-side central block, with all four central roles balanced. Independently, unless a unanimity-free face exists, Ky Fan forces a singleton-hole deletion cover whose support roles alternate along any prescribed vertex order.
 
-## Cold composition
+## Composition
 
 ## Counting and single-switch consequences
 

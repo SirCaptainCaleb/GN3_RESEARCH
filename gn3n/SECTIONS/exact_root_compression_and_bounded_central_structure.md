@@ -6,7 +6,7 @@
 
 The exact inversion root converts every nonzero recurrent carrier into bounded central GN3 structure: the central block has order at most four, at most ten actual vertices determine the varying root data, and root circulation reduces to opposite pairs and directed three-cycles; for deletion distance at least two every positive exact-root carrier contains a zero-root chamber.
 
-## Cold composition
+## Composition
 
 ## Compression of the exact-root carrier
 

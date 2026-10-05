@@ -6,7 +6,7 @@
 
 The exact two-cover language has three minimal forbidden patterns. Encoding their reflected occurrences by an oriented witness path yields an odd map whose balanced carriers contain opposite copies of the same local obstruction. Face symmetry then compresses every terminal carrier to a finite support, and every such terminal support is two-coverable.
 
-## Cold composition
+## Composition
 
 ## Positive local witnesses and the terminal carrier
 

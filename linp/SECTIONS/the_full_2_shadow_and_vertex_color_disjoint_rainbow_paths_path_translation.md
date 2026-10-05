@@ -1,6 +1,6 @@
 # Path translation
 
-## Cold composition
+## Composition
 
 Let
 \[

@@ -1,6 +1,6 @@
 # Compatible one-vertex extensions
 
-## Cold composition
+## Composition
 
 Let \(K\) be a vertex set and let \(x,y\notin K\). Suppose \(K\cup\{x\}\) and \(K\cup\{y\}\) have Hamilton paths that induce the same order
 \[

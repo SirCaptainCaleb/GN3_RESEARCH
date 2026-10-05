@@ -6,7 +6,7 @@
 
 In the auxiliary memory lift, a two-cover exists exactly when the color-1 reachability region intersects its antipodal image. Failure gives an antipodally invariant set meeting every increasing pole geodesic, with forced directed interface colors.
 
-## Cold composition
+## Composition
 
 ## Exact reachability and the neutral corridor
 

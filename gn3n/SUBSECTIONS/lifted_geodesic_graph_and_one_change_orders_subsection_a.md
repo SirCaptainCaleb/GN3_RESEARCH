@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The staircase triangulation identifies spanning orders with cube geodesics, but the color at one step depends on three successive directions. Introduce a graph \(\Gamma_n\) that stores this two-step memory.
 

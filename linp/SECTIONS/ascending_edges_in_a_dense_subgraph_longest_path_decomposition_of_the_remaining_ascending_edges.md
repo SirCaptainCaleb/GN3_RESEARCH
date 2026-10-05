@@ -1,6 +1,6 @@
 # Longest-path decomposition of the remaining ascending edges
 
-## Cold composition
+## Composition
 
 Choose for every vertex \(v\) a maximum path
 \[

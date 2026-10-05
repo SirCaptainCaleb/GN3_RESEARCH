@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 All non-decreasing cases now have one of the following forms:
 - a displayed end-edge reversal;

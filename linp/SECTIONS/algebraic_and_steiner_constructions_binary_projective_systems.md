@@ -1,6 +1,6 @@
 # Binary projective systems
 
-## Cold composition
+## Composition
 
 Let
 \[

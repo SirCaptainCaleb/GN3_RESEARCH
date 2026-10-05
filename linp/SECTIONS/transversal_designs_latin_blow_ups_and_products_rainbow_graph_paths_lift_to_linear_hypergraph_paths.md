@@ -1,6 +1,6 @@
 # Rainbow graph paths lift to linear hypergraph paths
 
-## Cold composition
+## Composition
 
 ## Lemma 1
 

@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Every rainbow path in \(J\) lifts to a linear hypergraph path of the same length in \(H\).
 

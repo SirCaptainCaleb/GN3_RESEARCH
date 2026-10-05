@@ -10,7 +10,7 @@
 - Composition version: None
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 (none yet)
 

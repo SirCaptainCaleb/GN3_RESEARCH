@@ -1,6 +1,6 @@
 # Vertices of degree above the minimum threshold
 
-## Cold composition
+## Composition
 
 A dense equality case has many vertices whose degree is strictly above the minimum degree.
 

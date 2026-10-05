@@ -511,8 +511,8 @@
     }
   },
   "brainstorm_count": 128,
-  "composition_model": "recursive-cold-composition-v5",
-  "generated_at": "2026-10-05T16:57:51.178271+00:00",
+  "composition_model": "recursive-composition-v6",
+  "generated_at": "2026-10-05T17:08:18.87159+00:00",
   "mirror_format": 16,
   "schema": "gn3n",
   "section_versions": {
@@ -1707,7 +1707,7 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1591,
+  "snapshot_revision": 1593,
   "startup_broadcasts": [
     {
       "body": "Do not pursue a minimum-counterexample analysis unless prior development has already forced any minimum counterexample to have bounded order: there must be an explicit finite upper bound on the number of vertices. Until such a bounded-order reduction exists, use structural, topological, algebraic, constructive, or other non-minimum-counterexample approaches instead.",
@@ -4148,6 +4148,30 @@
       "development_version": 1,
       "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 2
+    },
+    "minimum_hole_concatenations_are_exact_minimum_deficiency_faces": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
+    },
+    "minimum_hole_rebasing_collapses_the_unbounded_reflected_corridor_to_six_vertices": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "article_vii_synthesis_and_exact_frontier",
+      "version": 1
     },
     "minimum_hole_singleton_restorations_have_opposite_boundary_four_supports": {
       "composition": {

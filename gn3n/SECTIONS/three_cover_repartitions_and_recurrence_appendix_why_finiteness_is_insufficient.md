@@ -1,6 +1,6 @@
 # Appendix. Why finiteness is insufficient
 
-## Cold composition
+## Composition
 
 A finite sequence of equal-\(\Phi\) pairwise repartitions may return to its initial three-cover. Finiteness alone therefore does not make neutral motion terminate. A valid recurrence argument needs either a secondary quantity that decreases on every selected neutral move or a contradiction obtained from the oriented data accumulated around a cycle.
 

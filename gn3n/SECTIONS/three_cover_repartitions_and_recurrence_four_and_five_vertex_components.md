@@ -1,6 +1,6 @@
 # Four- and five-vertex components
 
-## Cold composition
+## Composition
 
 Let
 \[

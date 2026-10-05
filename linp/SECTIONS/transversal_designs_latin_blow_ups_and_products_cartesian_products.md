@@ -1,6 +1,6 @@
 # Cartesian products
 
-## Cold composition
+## Composition
 
 For linear \(3\)-graphs \(H\) and \(K\), define their Cartesian product on \(V(H)\times V(K)\) by taking edges of the forms
 \[

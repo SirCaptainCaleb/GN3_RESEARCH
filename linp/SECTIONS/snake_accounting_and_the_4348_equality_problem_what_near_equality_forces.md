@@ -1,6 +1,6 @@
 # What near equality forces
 
-## Cold composition
+## Composition
 
 Assume now that
 \[

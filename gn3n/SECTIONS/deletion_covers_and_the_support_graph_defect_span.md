@@ -1,6 +1,6 @@
 # Defect span
 
-## Cold composition
+## Composition
 
 For an ordering \(\pi=(v_1,\ldots ,v_n)\), an index \(i\), \(2\le i\le n-1\), is a defect center if
 \[

@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Assign weights \(0\le w_e\le1\) to the edges of \(H\). Put
 \[

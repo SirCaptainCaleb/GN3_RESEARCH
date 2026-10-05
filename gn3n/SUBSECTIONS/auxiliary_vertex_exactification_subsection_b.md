@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The extension does more than create a correspondence: it normalizes the geometry.
 

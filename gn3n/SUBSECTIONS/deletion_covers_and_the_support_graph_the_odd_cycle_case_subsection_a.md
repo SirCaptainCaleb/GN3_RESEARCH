@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Assume now that \(J\) is the cycle of Lemma 4. Write
 \[

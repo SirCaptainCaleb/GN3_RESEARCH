@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Several natural ways to enlarge the exceptional small systems do not improve the asymptotic coefficient.
 

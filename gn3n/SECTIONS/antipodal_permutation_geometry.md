@@ -6,7 +6,7 @@
 
 Monotone cube geodesics are permutations; the staircase triangulation packages them into an antipodal type-A sphere after taking the link of the long diagonal, while boundary-tournament triple colors become antipodally complemented local data on three successive directions.
 
-## Cold composition
+## Composition
 
 ## Permutation simplices and monotone geodesics
 

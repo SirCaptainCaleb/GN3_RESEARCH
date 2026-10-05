@@ -1,6 +1,6 @@
 # The remaining problem
 
-## Cold composition
+## Composition
 
 The preceding lemmas leave one theorem to prove.
 

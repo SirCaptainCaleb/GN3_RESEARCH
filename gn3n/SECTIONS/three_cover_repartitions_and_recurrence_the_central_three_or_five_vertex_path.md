@@ -1,6 +1,6 @@
 # The central three- or five-vertex path
 
-## Cold composition
+## Composition
 
 Write
 \[

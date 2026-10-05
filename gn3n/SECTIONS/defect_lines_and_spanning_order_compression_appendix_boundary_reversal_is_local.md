@@ -1,6 +1,6 @@
 # Appendix. Boundary reversal is local
 
-## Cold composition
+## Composition
 
 Boundary reversal says only that
 \[

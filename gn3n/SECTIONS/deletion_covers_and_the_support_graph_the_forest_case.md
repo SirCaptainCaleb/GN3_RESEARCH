@@ -1,6 +1,6 @@
 # The forest case
 
-## Cold composition
+## Composition
 
 ## The forest case
 

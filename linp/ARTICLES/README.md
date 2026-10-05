@@ -1,6 +1,6 @@
 # Articles
 
-Articles are top-level routes. Each file contains a manually written cold composition plus links to its contained Sections.
+Articles are top-level routes. Each file contains a manually written composition plus links to its contained Sections.
 
 - [Article 1 — Snake accounting and the 43/48 equality problem](snake_accounting_and_the_43_48_equality_problem.md) (`snake_accounting_and_the_43_48_equality_problem`) — composition v1; stale=False
 - [Article 2 — Ascending edges in a dense subgraph](ascending_edges_in_a_dense_subgraph.md) (`ascending_edges_in_a_dense_subgraph`) — composition v1; stale=False

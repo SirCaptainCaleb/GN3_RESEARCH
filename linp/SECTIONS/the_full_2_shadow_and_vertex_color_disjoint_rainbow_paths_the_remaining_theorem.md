@@ -1,6 +1,6 @@
 # The remaining theorem
 
-## Cold composition
+## Composition
 
 The full-shadow approach is reduced to Target theorem (8).
 

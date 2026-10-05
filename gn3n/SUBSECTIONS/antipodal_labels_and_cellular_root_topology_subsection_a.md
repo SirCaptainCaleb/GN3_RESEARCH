@@ -10,7 +10,7 @@
 - Composition version: 2
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 ### Cellular antipodal root maps
 

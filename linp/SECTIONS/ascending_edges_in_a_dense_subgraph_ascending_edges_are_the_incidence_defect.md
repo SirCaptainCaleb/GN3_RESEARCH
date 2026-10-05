@@ -1,6 +1,6 @@
 # Ascending edges are the incidence defect
 
-## Cold composition
+## Composition
 
 ## Lemma 1
 

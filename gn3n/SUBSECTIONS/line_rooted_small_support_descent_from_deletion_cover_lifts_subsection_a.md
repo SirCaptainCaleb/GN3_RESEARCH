@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Let \(H\) be a minimum counterexample and let \(H-x=P\mid Q\) be a deletion cover. Its singleton lift \(P\mid Q\mid\{x\}\) lies in the three-cover repartition graph. Write
 \[

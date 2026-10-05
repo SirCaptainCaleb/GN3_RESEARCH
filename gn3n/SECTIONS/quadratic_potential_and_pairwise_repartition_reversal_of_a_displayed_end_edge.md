@@ -1,6 +1,6 @@
 # Reversal of a displayed end edge
 
-## Cold composition
+## Composition
 
 Let
 \[

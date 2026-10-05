@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The forced second intersections of Lemma 5 can change the last vertex of a longest path.
 

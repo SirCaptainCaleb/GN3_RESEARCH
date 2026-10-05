@@ -6,7 +6,7 @@
 
 The explicit odd barycentric root map has strictly positive balance on every chamber of each zero's carrier face, so every occurring root lies on a directed cycle. Uniform first-to-last switch separation L gives zero-set dimension at least L+2, refined by the rank of the occurring roots.
 
-## Cold composition
+## Composition
 
 ## Positive exact-root balance
 

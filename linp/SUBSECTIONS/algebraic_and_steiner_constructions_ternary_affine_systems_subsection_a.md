@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Let \(A_d\) be the affine Steiner triple system on \(\mathbb F_3^d\), whose edges are affine lines.
 

@@ -6,7 +6,7 @@
 
 After adjoining a vertex r with h(u,v,r)=1 for all distinct u,v, directed one-change spanning orders in the extension are in two-to-one correspondence with two-covers of the original tournament. The switch is automatically forced adjacent to r, and the resulting geodesic target is exactly equivalent to the grand conjecture.
 
-## Cold composition
+## Composition
 
 ## The exact one-change extension
 

@@ -6,7 +6,7 @@
 
 A one-change spanning order is equivalent to two tight paths with complementary supports meeting along an oppositely directed terminal edge, or equivalently to two tight paths with one common terminal vertex. The latter states carry a fixed-point-free endpoint-moving involution.
 
-## Cold composition
+## Composition
 
 ## Opposite terminal edges and complementary supports
 

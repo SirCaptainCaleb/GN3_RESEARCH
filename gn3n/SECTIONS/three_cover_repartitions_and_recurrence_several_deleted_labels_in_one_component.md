@@ -1,6 +1,6 @@
 # Several deleted labels in one component
 
-## Cold composition
+## Composition
 
 There is a second argument that does not follow one trajectory.
 

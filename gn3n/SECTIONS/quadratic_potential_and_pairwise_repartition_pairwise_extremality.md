@@ -1,6 +1,6 @@
 # Pairwise extremality
 
-## Cold composition
+## Composition
 
 **Lemma 1.** Let \(a+b=s\) and \(a',b'>0\) with \(a'+b'=s\). Then
 \[

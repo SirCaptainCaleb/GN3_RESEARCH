@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Suppose a spanning linear path in \(H_d\) has joint set \(J\). Then
 \[

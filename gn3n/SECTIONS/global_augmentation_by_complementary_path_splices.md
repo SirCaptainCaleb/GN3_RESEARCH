@@ -6,7 +6,7 @@
 
 Two complementary exchanges of path pieces absorb a deleted vertex when their surrounding joins are tight; boundary reversal supplies one of their opposite central orientations, at arbitrary component orders.
 
-## Cold composition
+## Composition
 
 Let \(H\) be a finite boundary \(3\)-tournament. All path orders in this Section are displayed; concatenation preserves the order inside every displayed block.
 

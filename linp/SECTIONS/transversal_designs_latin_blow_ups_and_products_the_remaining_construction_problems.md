@@ -1,6 +1,6 @@
 # The remaining construction problems
 
-## Cold composition
+## Composition
 
 The preceding theorems leave two mathematically distinct possibilities.
 

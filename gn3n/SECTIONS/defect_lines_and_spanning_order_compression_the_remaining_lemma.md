@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Cold composition
+## Composition
 
 
 ### Two-cut normal form

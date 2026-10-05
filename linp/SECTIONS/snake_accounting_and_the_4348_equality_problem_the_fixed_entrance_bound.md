@@ -1,6 +1,6 @@
 # The fixed-entrance bound
 
-## Cold composition
+## Composition
 
 ## Lemma 1
 

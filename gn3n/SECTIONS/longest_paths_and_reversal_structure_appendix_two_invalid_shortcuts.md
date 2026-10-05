@@ -1,6 +1,6 @@
 # Appendix. Two invalid shortcuts
 
-## Cold composition
+## Composition
 
 For an ordered triple \((u,v,z)\), the boundary-reversed triple is
 \[

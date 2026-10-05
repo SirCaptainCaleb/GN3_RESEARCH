@@ -1,6 +1,6 @@
 # Linear paths and induced graph paths
 
-## Cold composition
+## Composition
 
 ## Lemma 1
 

@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The previous lemmas reduce the argument to a quantitative rotation statement.
 

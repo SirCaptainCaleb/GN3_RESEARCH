@@ -1,6 +1,6 @@
 # Opposite endpoint replacements
 
-## Cold composition
+## Composition
 
 Let \(x,y\notin V(A)\). Suppose \(L\) is a Hamilton path on
 \[

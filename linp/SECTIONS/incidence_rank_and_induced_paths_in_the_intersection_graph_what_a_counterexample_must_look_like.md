@@ -1,6 +1,6 @@
 # What a counterexample must look like
 
-## Cold composition
+## Composition
 
 Several simple classes cannot contain a counterexample to (1).
 

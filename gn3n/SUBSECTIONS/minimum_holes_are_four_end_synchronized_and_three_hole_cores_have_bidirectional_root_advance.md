@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 ### Four-end synchronization and bidirectional one-step root advance
 

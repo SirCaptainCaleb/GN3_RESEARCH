@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Let \(A\subseteq\mathbb F_2^r\setminus\{0\}\), and put an edge on every triple
 \[

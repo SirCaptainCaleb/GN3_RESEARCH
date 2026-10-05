@@ -1,6 +1,6 @@
 # Canonical references
 
-## Cold composition
+## Composition
 
 - [[common_endpoint_constraints_fivewindow_counterexample01]] — Common endpoint constraints do not force Hamiltonian five-vertex windows
 - [[mincex01]] — Minimum-counterexample calculus

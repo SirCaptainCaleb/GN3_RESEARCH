@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 A natural first attempt at importing antipodal path ideas was to seek a spanning cycle whose cyclic transition-color word has at most two monochromatic components. This would be sufficient for a two-cover, but it is not necessary.
 

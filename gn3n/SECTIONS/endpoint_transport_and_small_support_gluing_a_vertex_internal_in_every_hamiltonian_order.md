@@ -1,6 +1,6 @@
 # A vertex internal in every Hamiltonian order
 
-## Cold composition
+## Composition
 
 It remains to consider an augmented support \(K\cup\{x\}\) in which \(x\) is internal in every Hamiltonian order.
 

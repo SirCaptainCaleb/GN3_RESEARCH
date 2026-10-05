@@ -1,6 +1,6 @@
 # Introduction
 
-## Cold composition
+## Composition
 
 Let \(H\) be a finite boundary \(3\)-tournament. A tight path is a sequence
 \[

@@ -6,7 +6,7 @@
 - Stale: False
 - Composed through revision: 1575
 
-## Cold composition
+## Composition
 
 # Article VII — exact deficiency, antipodal roots, and terminal carriers
 

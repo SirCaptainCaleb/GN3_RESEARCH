@@ -1,6 +1,6 @@
 # A weighted rank inequality
 
-## Cold composition
+## Composition
 
 ## Theorem 4
 

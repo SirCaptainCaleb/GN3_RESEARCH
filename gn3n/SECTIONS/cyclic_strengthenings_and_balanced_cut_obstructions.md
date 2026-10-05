@@ -6,7 +6,7 @@
 
 The tempting strengthening asking for a spanning cycle with at most two monochromatic transition components is false, even when a one-change spanning order and a two-cover exist. The correct cyclic reformulation uses a vertex cover of the blue-transition defect graph.
 
-## Cold composition
+## Composition
 
 ## Why the two-component cycle target fails
 

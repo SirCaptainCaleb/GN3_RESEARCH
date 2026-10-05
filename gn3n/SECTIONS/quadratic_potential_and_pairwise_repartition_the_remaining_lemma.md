@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Cold composition
+## Composition
 
 The quadratic-potential argument is reduced to the following statement.
 

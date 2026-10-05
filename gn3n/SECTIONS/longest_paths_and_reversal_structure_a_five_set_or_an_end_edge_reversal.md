@@ -1,6 +1,6 @@
 # A five-set or an end-edge reversal
 
-## Cold composition
+## Composition
 
 For \(y\in U\), the first and third triples of
 \[

@@ -1,6 +1,6 @@
 # Greedy endpoint transport
 
-## Cold composition
+## Composition
 
 Let
 \[

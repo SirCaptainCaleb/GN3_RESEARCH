@@ -1,6 +1,6 @@
 # A Hamiltonian five-set beside a long path
 
-## Cold composition
+## Composition
 
 Let
 \[

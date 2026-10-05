@@ -1,6 +1,6 @@
 # Sections
 
-Sections are coherent research regions with manually written cold compositions and preserved Subsection development. They may remain uncontained while their Article-level route is unclear.
+Sections are coherent research regions with manually written compositions and preserved Subsection development. They may remain uncontained while their Article-level route is unclear.
 
 - [A block-count identity](quadratic_potential_and_pairwise_repartition_a_block_count_identity.md) (`quadratic_potential_and_pairwise_repartition_a_block_count_identity`) — Article: Article II — quadratic potential and pairwise repartition at position 4; composition v1; stale=False
 - [A common four-vertex core](longest_paths_and_reversal_structure_a_common_four_vertex_core.md) (`longest_paths_and_reversal_structure_a_common_four_vertex_core`) — Article: Article V — longest paths and reversal structure at position 5; composition v1; stale=False

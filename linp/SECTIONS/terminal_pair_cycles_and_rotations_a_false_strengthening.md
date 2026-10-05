@@ -1,6 +1,6 @@
 # A false strengthening
 
-## Cold composition
+## Composition
 
 It is not true that
 \[

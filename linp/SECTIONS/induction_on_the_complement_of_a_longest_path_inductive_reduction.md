@@ -1,6 +1,6 @@
 # Inductive reduction
 
-## Cold composition
+## Composition
 
 ## Lemma 1
 

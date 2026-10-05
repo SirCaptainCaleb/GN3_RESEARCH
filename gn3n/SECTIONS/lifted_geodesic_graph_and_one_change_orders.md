@@ -6,7 +6,7 @@
 
 A fixed antipodal graph Γ_n remembers the previous and next cube directions. Its pole geodesics are exactly spanning vertex orders, and their edge-color words are the boundary-tournament triple-status words with complementary endpoint colors.
 
-## Cold composition
+## Composition
 
 ## The memory-lift graph Γ_n
 

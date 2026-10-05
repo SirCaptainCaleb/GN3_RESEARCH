@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The current topology program is therefore not “find any antipodal path.” It is to rule out the antipodally invariant corridor \(N\) in the ranked memory lift arising from a boundary tournament extension.
 

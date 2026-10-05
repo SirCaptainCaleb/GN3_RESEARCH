@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Let \(M_H\) be the vertex-edge incidence matrix of a linear \(3\)-graph over \(\mathbb F_2\).
 

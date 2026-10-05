@@ -10,7 +10,7 @@
 - Composition version: 2
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 ### Inversion windows and deletion distance
 

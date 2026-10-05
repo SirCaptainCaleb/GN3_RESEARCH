@@ -1,6 +1,6 @@
 # A source-oriented representation
 
-## Cold composition
+## Composition
 
 A second representation keeps one distinguished vertex of every hyperedge.
 

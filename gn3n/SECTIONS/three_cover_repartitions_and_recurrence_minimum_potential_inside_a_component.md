@@ -1,6 +1,6 @@
 # Minimum potential inside a component
 
-## Cold composition
+## Composition
 
 Fix a component \(\mathcal C\) of \(\mathcal R(H)\) containing a singleton lift, and choose \(C=P_1\mid P_2\mid P_3\in\mathcal C\) minimizing \(\Phi\).
 

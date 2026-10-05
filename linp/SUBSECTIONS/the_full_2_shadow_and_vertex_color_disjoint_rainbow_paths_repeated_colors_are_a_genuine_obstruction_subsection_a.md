@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 An ordinary long path in the full shadow need not contain a long linear hypergraph path.
 

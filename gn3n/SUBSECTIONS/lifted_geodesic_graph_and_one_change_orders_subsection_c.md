@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Every edge changes rank by one, so \(d(s,t)\ge n\). For every permutation \(\pi=(v_1,\ldots,v_n)\) and each \(\sigma\), there is a length-\(n\) path
 \[

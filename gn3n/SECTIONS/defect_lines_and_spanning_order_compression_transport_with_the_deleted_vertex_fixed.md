@@ -1,6 +1,6 @@
 # Transport with the deleted vertex fixed
 
-## Cold composition
+## Composition
 
 Assume the middle join is tight. Write
 \[

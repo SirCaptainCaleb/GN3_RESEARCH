@@ -1,6 +1,6 @@
 # The special-edge inequality
 
-## Cold composition
+## Composition
 
 Form the snake digraph of \(H\): for every edge \(e\) and every vertex \(v\in e\) with
 \[

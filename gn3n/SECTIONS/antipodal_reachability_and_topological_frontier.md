@@ -6,7 +6,7 @@
 
 In the directed-by-rank single-copy geodesic graph for the auxiliary-vertex extension, let R be the vertices reachable from the source by red edges only. Then A(R) is exactly the set of vertices from which the target is reachable by blue edges only, and a one-change geodesic exists exactly when R intersects A(R). Failure forces a nonempty antipodally invariant corridor separating the two reachable regions.
 
-## Cold composition
+## Composition
 
 ## The antipodal self-intersection criterion
 

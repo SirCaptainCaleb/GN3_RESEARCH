@@ -1,6 +1,6 @@
 # Obstructions to simpler arguments
 
-## Cold composition
+## Composition
 
 Several natural strengthenings are false.
 

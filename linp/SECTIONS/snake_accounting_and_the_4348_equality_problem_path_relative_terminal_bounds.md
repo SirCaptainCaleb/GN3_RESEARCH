@@ -1,6 +1,6 @@
 # Path-relative terminal bounds
 
-## Cold composition
+## Composition
 
 For a maximum \(p\)-edge path \(P\) ending at \(v\), and an incident edge \(f\ne g_p\), let
 \[

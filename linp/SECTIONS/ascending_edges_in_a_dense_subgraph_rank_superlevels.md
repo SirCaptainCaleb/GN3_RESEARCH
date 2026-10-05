@@ -1,6 +1,6 @@
 # Rank superlevels
 
-## Cold composition
+## Composition
 
 For \(t\ge1\), put
 \[

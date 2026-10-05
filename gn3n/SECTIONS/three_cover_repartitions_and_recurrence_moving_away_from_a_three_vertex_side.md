@@ -1,6 +1,6 @@
 # Moving away from a three-vertex side
 
-## Cold composition
+## Composition
 
 Suppose a state in \(\mathcal C\) has the form
 \[

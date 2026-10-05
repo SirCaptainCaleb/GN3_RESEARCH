@@ -1,6 +1,6 @@
 # Basic properties of the full shadow
 
-## Cold composition
+## Composition
 
 ## Lemma 1
 

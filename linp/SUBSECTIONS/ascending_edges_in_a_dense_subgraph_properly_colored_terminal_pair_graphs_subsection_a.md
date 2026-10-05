@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Fix \(t\ge1\). Form a graph \(R_t\) as follows. For every nonspecial edge
 \[

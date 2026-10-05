@@ -1,6 +1,6 @@
 # The endpoint-pair family
 
-## Cold composition
+## Composition
 
 Assume a displayed end-edge reversal has been chosen maximal with respect to the order of its path and no preceding small Hamiltonian support occurs. Then every other exterior vertex satisfies the reverse relations at both ends. In the difficult orientation one also has
 \[

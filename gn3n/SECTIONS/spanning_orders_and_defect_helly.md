@@ -6,7 +6,7 @@
 
 For a spanning order, the two-cover condition is exactly the existence of one cut meeting every non-tight defect interval; failure is witnessed by two disjoint defects, and the extreme defects provide canonical coordinates for later topology.
 
-## Cold composition
+## Composition
 
 ## Inversion windows, positive witnesses, and minimum holes
 

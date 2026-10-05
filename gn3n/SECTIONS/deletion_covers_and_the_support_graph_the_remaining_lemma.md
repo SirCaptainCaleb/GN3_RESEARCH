@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Cold composition
+## Composition
 
 The preceding argument reduces the deletion-cover method to the following statement.
 

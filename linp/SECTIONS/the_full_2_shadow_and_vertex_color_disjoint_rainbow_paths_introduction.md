@@ -1,6 +1,6 @@
 # Introduction
 
-## Cold composition
+## Composition
 
 Let \(H\) be a finite linear \(3\)-graph. Its full \(2\)-shadow is the graph \(G\) on \(V(H)\) obtained by replacing every hyperedge
 \[

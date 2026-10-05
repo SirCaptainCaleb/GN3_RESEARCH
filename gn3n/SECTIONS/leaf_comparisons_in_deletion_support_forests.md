@@ -6,7 +6,7 @@
 
 Let H have path-cover number greater than two and choose a two-cover of H-y for every vertex y. If the selected support graph is a tree, then for every leaf support P with neighbor Q, all but at most one label y in Q have a selected cover F_y containing a consecutive pair joining P to Q minus y. Thus at least one endpoint of Q forces this adjacency. In a support forest the same bound holds for labels whose selected edges lie in the leaf's tree component; if Q contains a label from another component, there are no exceptions among those internal labels. No balancing assumption is needed.
 
-## Cold composition
+## Composition
 
 ## Leaf comparisons in deletion-support forests
 

@@ -6,7 +6,7 @@
 
 If a boundary 3-tournament has no spanning two-cover and two-cover deletion distance one, then for every minimum-hole deletion cover H-x=P|Q, the omitted vertex x reverses both the initial and terminal edge of both displayed tight paths.
 
-## Cold composition
+## Composition
 
 Assume H has no spanning two-cover and kappa_2(H)=1. Let
 H-x=P|Q,

@@ -1,6 +1,6 @@
 # An endpoint-rooted Hamiltonian four-set
 
-## Cold composition
+## Composition
 
 Suppose
 \[

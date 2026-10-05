@@ -1,6 +1,6 @@
 # Two distinct remaining lemmas
 
-## Cold composition
+## Composition
 
 The one-trajectory and many-root arguments require different conclusions.
 

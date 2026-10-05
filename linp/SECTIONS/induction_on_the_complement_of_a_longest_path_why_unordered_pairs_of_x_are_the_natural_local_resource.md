@@ -1,6 +1,6 @@
 # Why unordered pairs of \(X\) are the natural local resource
 
-## Cold composition
+## Composition
 
 Linearity implies that an unordered pair of vertices belongs to at most one hyperedge. Thus every edge meeting \(X\) that contains two vertices of \(X\) determines a unique pair in
 \[

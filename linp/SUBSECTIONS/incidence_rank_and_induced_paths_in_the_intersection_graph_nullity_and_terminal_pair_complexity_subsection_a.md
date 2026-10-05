@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 The rank problem also receives information from the terminal-pair graph of nonspecial edges.
 

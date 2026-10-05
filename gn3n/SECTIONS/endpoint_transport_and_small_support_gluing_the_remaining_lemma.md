@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Cold composition
+## Composition
 
 All non-decreasing cases now have one of the following forms:
 - a displayed end-edge reversal;

@@ -1,6 +1,6 @@
 # Sections
 
-Sections are coherent research regions with manually written cold compositions and preserved Subsection development. They may remain uncontained while their Article-level route is unclear.
+Sections are coherent research regions with manually written compositions and preserved Subsection development. They may remain uncontained while their Article-level route is unclear.
 
 - [A false strengthening](terminal_pair_cycles_and_rotations_a_false_strengthening.md) (`terminal_pair_cycles_and_rotations_a_false_strengthening`) — Article: Article 3 — Terminal-pair cycles and rotations at position 7; composition v1; stale=False
 - [A global identity](snake_accounting_and_the_4348_equality_problem_a_global_identity.md) (`snake_accounting_and_the_4348_equality_problem_a_global_identity`) — Article: Article 1 — Snake accounting and the 43/48 equality problem at position 4; composition v1; stale=False

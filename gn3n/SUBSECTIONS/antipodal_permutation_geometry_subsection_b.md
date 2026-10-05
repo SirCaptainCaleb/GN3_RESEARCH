@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Every maximal staircase simplex contains the long diagonal \([\mathbf0,\mathbf1]\). The simplicial link of that diagonal consists of chains of nonempty proper subsets of \(V\), hence is the barycentric subdivision of the boundary of an \((n-1)\)-simplex and therefore an \((n-2)\)-sphere.
 

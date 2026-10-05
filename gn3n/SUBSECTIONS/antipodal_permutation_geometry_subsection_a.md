@@ -10,7 +10,7 @@
 - Composition version: 1
 - Composition stale: False
 
-## Cold composition
+## Composition
 
 Let \(V\) be an \(n\)-element label set. A monotone geodesic from \(\varnothing\) to \(V\) in the \(n\)-cube adds every label exactly once, hence is specified by a permutation
 \[

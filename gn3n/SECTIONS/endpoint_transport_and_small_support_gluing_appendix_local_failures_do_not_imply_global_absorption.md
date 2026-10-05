@@ -1,6 +1,6 @@
 # Appendix. Local failures do not imply global absorption
 
-## Cold composition
+## Composition
 
 The following implications are not valid without additional hypotheses:
 - two vertices extending the same end of a path need not concatenate with each other;

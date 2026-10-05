@@ -1,6 +1,6 @@
 # Introduction
 
-## Cold composition
+## Composition
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). For each \(x\in V(H)\), choose a deletion cover
 \[

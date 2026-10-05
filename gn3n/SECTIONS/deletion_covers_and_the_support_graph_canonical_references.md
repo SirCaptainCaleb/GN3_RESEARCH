@@ -1,6 +1,6 @@
 # Canonical references
 
-## Cold composition
+## Composition
 
 - [[mincex01]] — Minimum-counterexample calculus
 

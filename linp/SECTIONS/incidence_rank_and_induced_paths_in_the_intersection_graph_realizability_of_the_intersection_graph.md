@@ -1,6 +1,6 @@
 # Realizability of the intersection graph
 
-## Cold composition
+## Composition
 
 The graph \(F\) is not arbitrary.
 

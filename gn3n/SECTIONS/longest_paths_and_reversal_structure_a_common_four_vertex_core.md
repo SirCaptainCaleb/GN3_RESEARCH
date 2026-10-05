@@ -1,6 +1,6 @@
 # A common four-vertex core
 
-## Cold composition
+## Composition
 
 Put
 \[

@@ -1,6 +1,6 @@
 # The interior-pair count
 
-## Cold composition
+## Composition
 
 Write
 \[

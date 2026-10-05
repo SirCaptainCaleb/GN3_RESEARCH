@@ -1,6 +1,6 @@
 # The general one-third-scale construction
 
-## Cold composition
+## Composition
 
 ## Proposition 1
 
