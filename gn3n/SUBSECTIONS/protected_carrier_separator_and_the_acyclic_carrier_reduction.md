@@ -19,7 +19,7 @@
 
 ## Protected-carrier filtration and the exact separator obligation
 
-The existential face-poset filtration in the current cold composition is not, by itself, sufficient for iteration. If
+The existential face-poset filtration in the current composition is not, by itself, sufficient for iteration. If
 [
 mathcal P_r={F:F	ext{ contains at least one chamber of witness depth }ge r},
 ]

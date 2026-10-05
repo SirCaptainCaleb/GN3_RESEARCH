@@ -51,9 +51,9 @@
       },
       {
         "id": "terminalization_reachability_and_the_exact_frontier",
-        "math_version": 3,
+        "math_version": 7,
         "position": 9,
-        "version": 5
+        "version": 9
       }
     ],
     "defect_lines_and_spanningorder_compression": [
@@ -432,23 +432,16 @@
   "article_versions": {
     "article_vii_antipodal_geodesics_and_topological_reformulations": {
       "composition": {
-        "body_chars": 96990,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 100059,
+        "composed_through_revision": 1334,
+        "composition_version": 5,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": true,
-        "stale_children": [
-          {
-            "current_composition_version": 3,
-            "depends_on": true,
-            "parent_saw_composition_version": 1,
-            "source_id": "terminalization_reachability_and_the_exact_frontier"
-          }
-        ]
+        "source_note": "Recomposed after the endpoint-exclusion proof closes the last maximal A2 braid. The terminal edge-surgery coherence theorem and relative-index route are now closed in the current mathematics, pending independent audit of the new final Section.",
+        "stale": false,
+        "stale_children": []
       },
-      "version": 119
+      "version": 123
     },
     "defect_lines_and_spanningorder_compression": {
       "composition": {
@@ -531,7 +524,7 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-cold-composition-v5",
-  "generated_at": "2026-10-05T04:12:43.225684+00:00",
+  "generated_at": "2026-10-05T05:05:20.599249+00:00",
   "mirror_format": 16,
   "schema": "gn3n",
   "section_versions": {
@@ -1559,17 +1552,17 @@
     },
     "terminalization_reachability_and_the_exact_frontier": {
       "composition": {
-        "body_chars": 6494,
-        "composed_through_revision": 1281,
-        "composition_version": 3,
+        "body_chars": 8196,
+        "composed_through_revision": 1330,
+        "composition_version": 7,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Recomposed after auditing the relative-index proof: same-face escape is false locally; exact frontier is bounded terminal edge-surgery coherence.",
+        "source_note": "Recomposed after closing the maximal order-ten endpoint braid by the protected alternating-word endpoint-exclusion lemma; the invalid external-gauge shortcut remains explicitly excluded.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 3,
-      "version": 5
+      "math_version": 7,
+      "version": 9
     },
     "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient": {
       "composition": {
@@ -1726,7 +1719,7 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1283,
+  "snapshot_revision": 1337,
   "startup_broadcasts": [
     {
       "body": "Do not pursue a minimum-counterexample analysis unless prior development has already forced any minimum counterexample to have bounded order: there must be an explicit finite upper bound on the number of vertices. Until such a bounded-order reduction exists, use structural, topological, algebraic, constructive, or other non-minimum-counterexample approaches instead.",
@@ -1999,6 +1992,18 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "audit_the_external_gauge_does_not_by_itself_close_rank_two_coherence": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "auxiliary_exactification_and_complementary_supports_subsection_a": {
       "composition": {
         "body_chars": 9093,
@@ -2093,6 +2098,42 @@
       },
       "development_version": 1,
       "section_id": "balanced_cuts_obstruct_the_two_component_spanning_cycle_target",
+      "version": 1
+    },
+    "boundary_coherence_as_a_common_complement_hamiltonian_problem": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "common_four_core_repair_for_the_maximal_braid": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "compatible_two_covers_under_a_one_vertex_terminal_support_exchange": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
     "complementary_path_supports_and_endpoint_involutions_subsection_a": {
@@ -2623,6 +2664,18 @@
       "section_id": "deletion_covers_and_the_support_graph_the_support_graph",
       "version": 1
     },
+    "dense_exchange_matrix_for_the_maximal_braid": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal_subsection_a": {
       "composition": {
         "composition_version": null,
@@ -2788,6 +2841,18 @@
       "section_id": "exact_root_compression_and_bounded_central_structure",
       "version": 1
     },
+    "existential_carrier_reduction_for_rank_two_terminal_residues": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "global_augmentation_by_complementary_path_splices_subsection_a": {
       "composition": {
         "composition_version": null,
@@ -2801,6 +2866,18 @@
       "version": 6
     },
     "global_separator_filtration_and_bounded_mixed_cell_completion": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "independent_audit_external_gauge_does_not_close_the_maximal_a2_braid": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3109,6 +3186,18 @@
       "section_id": "longest_paths_and_reversal_structure_the_remaining_lemma",
       "version": 1
     },
+    "maximal_ten_support_endpoint_braids_are_impossible": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "memory_lift_and_exact_antipodal_geodesics_subsection_a": {
       "composition": {
         "body_chars": 4090,
@@ -3137,6 +3226,18 @@
       "version": 1
     },
     "minimal_separator_faces_and_terminal_edge_surgery_coherence": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "near_equality_obstruction_for_two_bad_braid_targets": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3334,6 +3435,30 @@
       "section_id": "quadratic_potential_and_pairwise_repartition_two_same_side_extenders",
       "version": 1
     },
+    "rank_two_coherence_closes_by_the_external_gauge": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "rank_two_normalization_squares_close_and_only_the_inside_boundary_braid_remains": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "relative_index_filtration_and_the_mixed_face_outward_push_lemma": {
       "composition": {
         "composition_version": null,
@@ -3345,6 +3470,18 @@
       "development_version": 2,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 2
+    },
+    "six_deletion_coupling_and_the_sparse_abc_obstruction_graph": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "spanning_orders_and_defect_helly_subsection_a": {
       "composition": {
@@ -3387,6 +3524,18 @@
       "development_version": 3,
       "section_id": "spanning_orders_and_defect_helly",
       "version": 3
+    },
+    "ten_position_normalization_of_terminal_surgery": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "terminal_support_surgery_gives_a_genuine_outward_escape": {
       "composition": {
@@ -3648,11 +3797,23 @@
       "development_version": 4,
       "section_id": "topological_recurrence_to_local_gn3_structure",
       "version": 4
+    },
+    "two_target_common_side_in_the_maximal_a2_braid": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     }
   },
-  "toolkit_count": 42,
+  "toolkit_count": 55,
   "universal_document_versions": {
-    "guide": 17,
-    "reflexes": 9
+    "guide": 19,
+    "reflexes": 10
   }
 }
