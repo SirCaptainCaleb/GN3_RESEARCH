@@ -403,4 +403,4 @@ The local tournament at \(r\) may be chosen freely, for example transitive. The 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/antipodal_geodesics_and_complementary_path_supports_subsection_a.md) (`antipodal_geodesics_and_complementary_path_supports_subsection_a`; development v2; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/antipodal_geodesics_and_complementary_path_supports_subsection_a.md) (`antipodal_geodesics_and_complementary_path_supports_subsection_a`; development v2; composition vNone; stale=False)

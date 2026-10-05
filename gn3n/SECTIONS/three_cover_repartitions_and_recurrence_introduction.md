@@ -36,4 +36,4 @@ is a vertex of \(\mathcal R(H)\).
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_introduction_subsection_a.md) (`three_cover_repartitions_and_recurrence_introduction_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_introduction_subsection_a.md) (`three_cover_repartitions_and_recurrence_introduction_subsection_a`; development v1; composition vNone; stale=False)

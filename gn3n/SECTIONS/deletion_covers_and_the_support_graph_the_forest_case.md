@@ -130,4 +130,4 @@ Thus the selected-support forest is no longer an independent global obstruction.
 
 ## Development tree
 
-- [Subsection 1 — The forest case](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_forest_case_subsection_a.md) (`deletion_covers_and_the_support_graph_the_forest_case_subsection_a`; development v4; composition vNone; stale=True)
+- [Subsection 1 — The forest case](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_forest_case_subsection_a.md) (`deletion_covers_and_the_support_graph_the_forest_case_subsection_a`; development v4; composition vNone; stale=False)

@@ -14,7 +14,7 @@ Every manuscript node has two conceptual states:
 - **Development (hot):** research that exists beneath or inside the node but has not yet been incorporated into its current composition. It may be speculative, redundant, mutually inconsistent, or much larger than the prose that eventually survives.
 - **Composition (cold):** the current manually rewritten canonical rendering. It is intentionally selective and lossy. It may later be replaced.
 
-A stale composition is not broken. It means only that descendant development has changed since the composition's recorded source frontier.
+A stale composition is not broken. For a parent, staleness is composition-to-composition: either a direct child explicitly depended on by the parent has been recomposed, or a newly added direct child has acquired its first composition. Raw child development does not stale a parent. A Subsection may still become stale against its own local development.
 
 ## The four research surfaces
 
@@ -56,16 +56,16 @@ A Section belongs to at most one Article. Cross-route mathematical reuse belongs
 
 compose(session_id, node_type, node_id, payload, expected_version) is the shared compression mechanism for subsection, section, and article.
 
-The payload requires an explicit body: composition is a rewrite, not an automatic roll-up. source_usage may annotate source IDs as used, partial, consulted, or omitted; unspecified descendants are recorded as available. These annotations document editorial selection but do not delete anything.
+The payload requires an explicit body: composition is a rewrite, not an automatic roll-up. Section and Article composition also require depends_on: the explicit IDs of direct child compositions on which the new parent composition relies. Use [] when it relies on none. source_usage may optionally annotate children as used, partial, consulted, or omitted; those editorial notes never delete source material.
 
 Each composition records:
 
 - its own composition version;
-- the exact descendant/version frontier visible at composition time;
+- the direct-child composition frontier visible at composition time, including which children were explicitly depended on;
 - the database revision through which it was composed;
 - optional source notes and source-usage annotations.
 
-composition_status(node_type, node_id) compares that frontier with current descendants. It reports new, removed, reordered, or further-developed sources. Staleness follows development, not mere prose age.
+composition_status(node_type, node_id) exposes one stale flag and the direct children responsible for it. Raw descendant development is deliberately ignored by parents. A depended-on child recomposition stales the parent; an excluded child recomposition does not. A newly added child does not matter until it receives a composition, at which point the parent becomes stale because that composition is a signal worth reconsidering.
 
 For a substantive Section composition, declare dependencies, using [] if genuinely independent. Section canonical dependency edges change at composition time, not on every exploratory Subsection edit.
 
@@ -73,9 +73,9 @@ For a substantive Section composition, declare dependencies, using [] if genuine
 
 Recomposition is normal research stewardship, not an audit correction.
 
-When development changes beneath an existing composition, the node becomes stale and a single recomposition chore may be maintained. More development does not create an ever-growing pile of duplicate chores.
+When the composition frontier changes in a way that stales a node, a single recomposition chore may be maintained. Repeated raw development does not ripple chores upward.
 
-Claiming a recomposition chore means: read the current cold composition; inspect changed_sources; read the relevant development; then rewrite selectively with compose. Omission is allowed; do not mechanically concatenate descendants. Successful composition resolves the stale chore automatically.
+Claiming a recomposition chore means: read the current cold composition; inspect stale_children; read the relevant child compositions and, where useful, their development; then rewrite selectively with compose. Omission is allowed; do not mechanically concatenate descendants. Successful composition resolves the stale chore automatically.
 
 ## Dependencies and references
 
@@ -110,7 +110,7 @@ Review concurrent changes for mathematical overlap before commit. Optimistic ver
 
 Start with boot and the artifact named there. Read the project BOOT.md, then Overview, this Guide, Reflexes, Dictionary, API, and Toolkit index.
 
-If the prompt explicitly continues an existing Article, read that Article's cold composition and **all of its Sections** before continuing. For stale nodes, inspect composition_status and read the changed Subsections as well. If the prompt does not select an Article, read every Article cold composition before choosing a route; then descend into the chosen Article's Sections.
+If the prompt explicitly continues an existing Article, read that Article's cold composition and **all of its Sections** before continuing. For stale nodes, inspect composition_status and read the child compositions responsible for staleness as well. If the prompt does not select an Article, read every Article cold composition before choosing a route; then descend into the chosen Article's Sections.
 
 read accepts Article, Section, Toolkit, Brainstorm, and stable Subsection IDs. A Section read returns its cold composition with a child-development index. A Subsection read returns its cold composition, if any, plus its full development body.
 

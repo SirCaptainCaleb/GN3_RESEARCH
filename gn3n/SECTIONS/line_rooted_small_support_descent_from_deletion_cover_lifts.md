@@ -1388,4 +1388,4 @@ This strengthens persistence at the terminal profile into simultaneous positiona
 ## Development tree
 
 - [Subsection 1 — Rooted descent through bounded supports](../SUBSECTIONS/line_rooted_small_support_descent_from_deletion_cover_lifts_subsection_a.md) (`line_rooted_small_support_descent_from_deletion_cover_lifts_subsection_a`; development v8; composition v1; stale=False)
-- [Subsection 2 — From bounded supports to defect compression](../SUBSECTIONS/line_rooted_small_support_descent_from_deletion_cover_lifts_subsection_b.md) (`line_rooted_small_support_descent_from_deletion_cover_lifts_subsection_b`; development v21; composition vNone; stale=True)
+- [Subsection 2 — From bounded supports to defect compression](../SUBSECTIONS/line_rooted_small_support_descent_from_deletion_cover_lifts_subsection_b.md) (`line_rooted_small_support_descent_from_deletion_cover_lifts_subsection_b`; development v21; composition vNone; stale=False)

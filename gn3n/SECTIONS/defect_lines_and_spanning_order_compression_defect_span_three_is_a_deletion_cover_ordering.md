@@ -50,4 +50,4 @@ Thus every minimum-span ordering is a deletion-cover ordering whose central part
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering_subsection_a.md) (`defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering_subsection_a.md) (`defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering_subsection_a`; development v1; composition vNone; stale=False)

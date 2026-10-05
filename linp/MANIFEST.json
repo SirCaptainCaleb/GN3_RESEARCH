@@ -411,115 +411,124 @@
     "algebraic_and_steiner_constructions": {
       "composition": {
         "body_chars": 16888,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 3
     },
     "ascending_edges_in_a_dense_subgraph": {
       "composition": {
         "body_chars": 12611,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 3
     },
     "full_2_shadow_and_vertex_color_disjoint_rainbow_paths": {
       "composition": {
         "body_chars": 11419,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 4
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph": {
       "composition": {
         "body_chars": 9674,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 3
     },
     "induction_on_the_complement_of_a_longest_path": {
       "composition": {
         "body_chars": 9167,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 3
     },
     "snake_accounting_and_the_43_48_equality_problem": {
       "composition": {
         "body_chars": 19870,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 3
     },
     "terminal_pair_cycles_and_rotations": {
       "composition": {
         "body_chars": 9149,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 3
     },
     "transversal_designs_latin_blowups_and_products": {
       "composition": {
         "body_chars": 11659,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "version": 3
     }
   },
   "brainstorm_count": 2,
-  "composition_model": "recursive-cold-composition-v1",
-  "generated_at": "2026-10-05T02:18:45.452379+00:00",
-  "mirror_format": 11,
+  "composition_model": "recursive-cold-composition-v2",
+  "generated_at": "2026-10-05T02:26:22.438871+00:00",
+  "mirror_format": 12,
   "schema": "linp",
   "section_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems": {
       "composition": {
         "body_chars": 3744,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -527,12 +536,13 @@
     "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case": {
       "composition": {
         "body_chars": 2857,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -540,12 +550,13 @@
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification": {
       "composition": {
         "body_chars": 3030,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -553,12 +564,13 @@
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation": {
       "composition": {
         "body_chars": 1988,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -566,12 +578,13 @@
     "algebraic_and_steiner_constructions_introduction": {
       "composition": {
         "body_chars": 371,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -579,12 +592,13 @@
     "algebraic_and_steiner_constructions_ternary_affine_systems": {
       "composition": {
         "body_chars": 1538,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -592,12 +606,13 @@
     "algebraic_and_steiner_constructions_the_general_one_third_scale_construction": {
       "composition": {
         "body_chars": 1041,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -605,12 +620,13 @@
     "algebraic_and_steiner_constructions_the_two_point_fibre_problem": {
       "composition": {
         "body_chars": 1154,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -618,12 +634,13 @@
     "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound": {
       "composition": {
         "body_chars": 638,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -631,12 +648,13 @@
     "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect": {
       "composition": {
         "body_chars": 1847,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -644,12 +662,13 @@
     "ascending_edges_in_a_dense_subgraph_directed_rank_growth": {
       "composition": {
         "body_chars": 707,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -657,12 +676,13 @@
     "ascending_edges_in_a_dense_subgraph_introduction": {
       "composition": {
         "body_chars": 579,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -670,12 +690,13 @@
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges": {
       "composition": {
         "body_chars": 3076,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -683,12 +704,13 @@
     "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments": {
       "composition": {
         "body_chars": 684,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -696,12 +718,13 @@
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs": {
       "composition": {
         "body_chars": 2188,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -709,12 +732,13 @@
     "ascending_edges_in_a_dense_subgraph_rank_superlevels": {
       "composition": {
         "body_chars": 883,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -722,12 +746,13 @@
     "ascending_edges_in_a_dense_subgraph_the_remaining_problem": {
       "composition": {
         "body_chars": 728,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -735,12 +760,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality": {
       "composition": {
         "body_chars": 1943,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -748,12 +774,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction": {
       "composition": {
         "body_chars": 529,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -761,12 +788,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths": {
       "composition": {
         "body_chars": 908,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -774,12 +802,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity": {
       "composition": {
         "body_chars": 1008,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -787,12 +816,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph": {
       "composition": {
         "body_chars": 1402,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -800,12 +830,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem": {
       "composition": {
         "body_chars": 947,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -813,12 +844,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity": {
       "composition": {
         "body_chars": 731,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -826,12 +858,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like": {
       "composition": {
         "body_chars": 915,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -839,12 +872,13 @@
     "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion": {
       "composition": {
         "body_chars": 982,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -852,12 +886,13 @@
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit": {
       "composition": {
         "body_chars": 2165,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -865,12 +900,13 @@
     "induction_on_the_complement_of_a_longest_path_inductive_reduction": {
       "composition": {
         "body_chars": 905,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -878,12 +914,13 @@
     "induction_on_the_complement_of_a_longest_path_introduction": {
       "composition": {
         "body_chars": 480,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -891,12 +928,13 @@
     "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument": {
       "composition": {
         "body_chars": 459,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -904,12 +942,13 @@
     "induction_on_the_complement_of_a_longest_path_the_remaining_inequality": {
       "composition": {
         "body_chars": 923,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -917,12 +956,13 @@
     "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold": {
       "composition": {
         "body_chars": 1188,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -930,12 +970,13 @@
     "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource": {
       "composition": {
         "body_chars": 753,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -943,12 +984,13 @@
     "snake_accounting_and_the_4348_equality_problem_a_global_identity": {
       "composition": {
         "body_chars": 3115,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -956,12 +998,13 @@
     "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative": {
       "composition": {
         "body_chars": 1787,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -969,12 +1012,13 @@
     "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph": {
       "composition": {
         "body_chars": 1520,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -982,12 +1026,13 @@
     "snake_accounting_and_the_4348_equality_problem_introduction": {
       "composition": {
         "body_chars": 845,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -995,12 +1040,13 @@
     "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations": {
       "composition": {
         "body_chars": 599,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1008,12 +1054,13 @@
     "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds": {
       "composition": {
         "body_chars": 1083,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1021,12 +1068,13 @@
     "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges": {
       "composition": {
         "body_chars": 1524,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1034,12 +1082,13 @@
     "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound": {
       "composition": {
         "body_chars": 2672,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1047,12 +1096,13 @@
     "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count": {
       "composition": {
         "body_chars": 2620,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1060,12 +1110,13 @@
     "snake_accounting_and_the_4348_equality_problem_the_remaining_implication": {
       "composition": {
         "body_chars": 886,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1073,12 +1124,13 @@
     "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces": {
       "composition": {
         "body_chars": 1582,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1086,12 +1138,13 @@
     "terminal_pair_cycles_and_rotations_a_false_strengthening": {
       "composition": {
         "body_chars": 483,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1099,12 +1152,13 @@
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest": {
       "composition": {
         "body_chars": 1524,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1112,12 +1166,13 @@
     "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter": {
       "composition": {
         "body_chars": 644,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1125,12 +1180,13 @@
     "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter": {
       "composition": {
         "body_chars": 1512,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1138,12 +1194,13 @@
     "terminal_pair_cycles_and_rotations_introduction": {
       "composition": {
         "body_chars": 563,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1151,12 +1208,13 @@
     "terminal_pair_cycles_and_rotations_rotating_a_longest_path": {
       "composition": {
         "body_chars": 1079,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1164,12 +1222,13 @@
     "terminal_pair_cycles_and_rotations_the_remaining_theorem": {
       "composition": {
         "body_chars": 964,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1177,12 +1236,13 @@
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality": {
       "composition": {
         "body_chars": 1294,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1190,12 +1250,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation": {
       "composition": {
         "body_chars": 2169,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1203,12 +1264,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow": {
       "composition": {
         "body_chars": 906,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1216,12 +1278,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction": {
       "composition": {
         "body_chars": 494,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1229,12 +1292,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation": {
       "composition": {
         "body_chars": 1507,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1242,12 +1306,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction": {
       "composition": {
         "body_chars": 1484,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1255,12 +1320,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors": {
       "composition": {
         "body_chars": 2544,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1268,12 +1334,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem": {
       "composition": {
         "body_chars": 1198,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1281,12 +1348,13 @@
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system": {
       "composition": {
         "body_chars": 3609,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1294,12 +1362,13 @@
     "transversal_designs_latin_blow_ups_and_products_cartesian_products": {
       "composition": {
         "body_chars": 1937,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1307,12 +1376,13 @@
     "transversal_designs_latin_blow_ups_and_products_introduction": {
       "composition": {
         "body_chars": 518,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1320,12 +1390,13 @@
     "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths": {
       "composition": {
         "body_chars": 1300,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1333,12 +1404,13 @@
     "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set": {
       "composition": {
         "body_chars": 2185,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
@@ -1346,28 +1418,31 @@
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems": {
       "composition": {
         "body_chars": 1157,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "math_version": 1,
       "version": 1
     }
   },
   "snapshot_revision": 1086,
+  "startup_broadcasts": [],
   "subsection_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems_subsection_a": {
       "composition": {
         "body_chars": 249,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_binary_projective_systems",
@@ -1376,12 +1451,13 @@
     "algebraic_and_steiner_constructions_binary_projective_systems_subsection_b": {
       "composition": {
         "body_chars": 561,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_binary_projective_systems",
@@ -1389,11 +1465,11 @@
     },
     "algebraic_and_steiner_constructions_binary_projective_systems_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_binary_projective_systems",
@@ -1402,12 +1478,13 @@
     "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a": {
       "composition": {
         "body_chars": 162,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case",
@@ -1415,11 +1492,11 @@
     },
     "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case",
@@ -1428,12 +1505,13 @@
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_a": {
       "composition": {
         "body_chars": 104,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_general_obstructions_to_amplification",
@@ -1442,12 +1520,13 @@
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_b": {
       "composition": {
         "body_chars": 695,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_general_obstructions_to_amplification",
@@ -1455,11 +1534,11 @@
     },
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_general_obstructions_to_amplification",
@@ -1468,12 +1547,13 @@
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_a": {
       "composition": {
         "body_chars": 93,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation",
@@ -1482,12 +1562,13 @@
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_b": {
       "composition": {
         "body_chars": 506,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation",
@@ -1495,11 +1576,11 @@
     },
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation",
@@ -1507,11 +1588,11 @@
     },
     "algebraic_and_steiner_constructions_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_introduction",
@@ -1520,12 +1601,13 @@
     "algebraic_and_steiner_constructions_ternary_affine_systems_subsection_a": {
       "composition": {
         "body_chars": 99,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_ternary_affine_systems",
@@ -1534,12 +1616,13 @@
     "algebraic_and_steiner_constructions_ternary_affine_systems_subsection_b": {
       "composition": {
         "body_chars": 404,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_ternary_affine_systems",
@@ -1547,11 +1630,11 @@
     },
     "algebraic_and_steiner_constructions_ternary_affine_systems_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_ternary_affine_systems",
@@ -1559,11 +1642,11 @@
     },
     "algebraic_and_steiner_constructions_the_general_one_third_scale_construction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_the_general_one_third_scale_construction",
@@ -1572,12 +1655,13 @@
     "algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a": {
       "composition": {
         "body_chars": 607,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_the_two_point_fibre_problem",
@@ -1585,11 +1669,11 @@
     },
     "algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_the_two_point_fibre_problem",
@@ -1598,12 +1682,13 @@
     "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_a": {
       "composition": {
         "body_chars": 95,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound",
@@ -1611,11 +1696,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound",
@@ -1624,12 +1709,13 @@
     "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_a": {
       "composition": {
         "body_chars": 678,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect",
@@ -1637,11 +1723,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect",
@@ -1650,12 +1736,13 @@
     "ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_a": {
       "composition": {
         "body_chars": 160,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_directed_rank_growth",
@@ -1663,11 +1750,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_directed_rank_growth",
@@ -1675,11 +1762,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_introduction",
@@ -1688,12 +1775,13 @@
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_a": {
       "composition": {
         "body_chars": 840,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges",
@@ -1702,12 +1790,13 @@
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_b": {
       "composition": {
         "body_chars": 1011,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges",
@@ -1715,11 +1804,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges",
@@ -1727,11 +1816,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments",
@@ -1740,12 +1829,13 @@
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_a": {
       "composition": {
         "body_chars": 265,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs",
@@ -1754,12 +1844,13 @@
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_b": {
       "composition": {
         "body_chars": 881,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs",
@@ -1767,11 +1858,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs",
@@ -1780,12 +1871,13 @@
     "ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_a": {
       "composition": {
         "body_chars": 48,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_rank_superlevels",
@@ -1793,11 +1885,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_rank_superlevels",
@@ -1806,12 +1898,13 @@
     "ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_a": {
       "composition": {
         "body_chars": 48,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_the_remaining_problem",
@@ -1819,11 +1912,11 @@
     },
     "ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_the_remaining_problem",
@@ -1832,12 +1925,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a": {
       "composition": {
         "body_chars": 1389,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality",
@@ -1845,11 +1939,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality",
@@ -1857,11 +1951,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction",
@@ -1869,11 +1963,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths",
@@ -1882,12 +1976,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_a": {
       "composition": {
         "body_chars": 238,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity",
@@ -1895,11 +1990,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity",
@@ -1908,12 +2003,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_a": {
       "composition": {
         "body_chars": 128,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph",
@@ -1921,11 +2017,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph",
@@ -1934,12 +2030,13 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem_subsection_a": {
       "composition": {
         "body_chars": 93,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem",
@@ -1947,11 +2044,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem",
@@ -1959,11 +2056,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity",
@@ -1971,11 +2068,11 @@
     },
     "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like",
@@ -1984,12 +2081,13 @@
     "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_a": {
       "composition": {
         "body_chars": 155,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion",
@@ -1997,11 +2095,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion",
@@ -2010,12 +2108,13 @@
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_a": {
       "composition": {
         "body_chars": 229,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit",
@@ -2024,12 +2123,13 @@
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_b": {
       "composition": {
         "body_chars": 461,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit",
@@ -2037,11 +2137,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit",
@@ -2049,11 +2149,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_inductive_reduction",
@@ -2061,11 +2161,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_introduction",
@@ -2073,11 +2173,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument",
@@ -2086,12 +2186,13 @@
     "induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_a": {
       "composition": {
         "body_chars": 58,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_the_remaining_inequality",
@@ -2099,11 +2200,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_the_remaining_inequality",
@@ -2112,12 +2213,13 @@
     "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_a": {
       "composition": {
         "body_chars": 90,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold",
@@ -2125,11 +2227,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold",
@@ -2137,11 +2239,11 @@
     },
     "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource",
@@ -2150,12 +2252,13 @@
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_a": {
       "composition": {
         "body_chars": 445,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2164,12 +2267,13 @@
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_b": {
       "composition": {
         "body_chars": 1251,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2178,12 +2282,13 @@
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_c": {
       "composition": {
         "body_chars": 890,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2191,11 +2296,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_d": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2204,12 +2309,13 @@
     "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_a": {
       "composition": {
         "body_chars": 1101,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative",
@@ -2217,11 +2323,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative",
@@ -2230,12 +2336,13 @@
     "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph_subsection_a": {
       "composition": {
         "body_chars": 224,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph",
@@ -2243,11 +2350,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph",
@@ -2255,11 +2362,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_introduction",
@@ -2267,11 +2374,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations",
@@ -2280,12 +2387,13 @@
     "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_a": {
       "composition": {
         "body_chars": 237,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds",
@@ -2293,11 +2401,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds",
@@ -2305,11 +2413,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges",
@@ -2318,12 +2426,13 @@
     "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_a": {
       "composition": {
         "body_chars": 2384,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound",
@@ -2331,11 +2440,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound",
@@ -2344,12 +2453,13 @@
     "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_a": {
       "composition": {
         "body_chars": 854,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count",
@@ -2357,11 +2467,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count",
@@ -2370,12 +2480,13 @@
     "snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a": {
       "composition": {
         "body_chars": 96,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_remaining_implication",
@@ -2383,11 +2494,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_remaining_implication",
@@ -2396,12 +2507,13 @@
     "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_a": {
       "composition": {
         "body_chars": 724,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces",
@@ -2409,11 +2521,11 @@
     },
     "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces",
@@ -2421,11 +2533,11 @@
     },
     "terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_false_strengthening",
@@ -2434,12 +2546,13 @@
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a": {
       "composition": {
         "body_chars": 194,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest",
@@ -2448,12 +2561,13 @@
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b": {
       "composition": {
         "body_chars": 515,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest",
@@ -2461,11 +2575,11 @@
     },
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest",
@@ -2473,11 +2587,11 @@
     },
     "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter",
@@ -2486,12 +2600,13 @@
     "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_a": {
       "composition": {
         "body_chars": 232,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter",
@@ -2499,11 +2614,11 @@
     },
     "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter",
@@ -2511,11 +2626,11 @@
     },
     "terminal_pair_cycles_and_rotations_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_introduction",
@@ -2524,12 +2639,13 @@
     "terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_a": {
       "composition": {
         "body_chars": 88,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_rotating_a_longest_path",
@@ -2537,11 +2653,11 @@
     },
     "terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_rotating_a_longest_path",
@@ -2550,12 +2666,13 @@
     "terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a": {
       "composition": {
         "body_chars": 77,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_remaining_theorem",
@@ -2563,11 +2680,11 @@
     },
     "terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_remaining_theorem",
@@ -2576,12 +2693,13 @@
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_a": {
       "composition": {
         "body_chars": 237,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_special_edge_inequality",
@@ -2590,12 +2708,13 @@
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_b": {
       "composition": {
         "body_chars": 637,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_special_edge_inequality",
@@ -2603,11 +2722,11 @@
     },
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_special_edge_inequality",
@@ -2616,12 +2735,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_a": {
       "composition": {
         "body_chars": 519,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation",
@@ -2630,12 +2750,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_b": {
       "composition": {
         "body_chars": 567,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation",
@@ -2643,11 +2764,11 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation",
@@ -2655,11 +2776,11 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow",
@@ -2667,11 +2788,11 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction",
@@ -2680,12 +2801,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_a": {
       "composition": {
         "body_chars": 159,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation",
@@ -2694,12 +2816,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_b": {
       "composition": {
         "body_chars": 1109,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation",
@@ -2707,11 +2830,11 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation",
@@ -2720,12 +2843,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_a": {
       "composition": {
         "body_chars": 88,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction",
@@ -2733,11 +2857,11 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction",
@@ -2746,12 +2870,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_a": {
       "composition": {
         "body_chars": 295,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2760,12 +2885,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_b": {
       "composition": {
         "body_chars": 324,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2774,12 +2900,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_c": {
       "composition": {
         "body_chars": 1197,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2787,11 +2914,11 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_d": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2800,12 +2927,13 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_a": {
       "composition": {
         "body_chars": 552,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem",
@@ -2813,11 +2941,11 @@
     },
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem",
@@ -2826,12 +2954,13 @@
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_a": {
       "composition": {
         "body_chars": 453,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system",
@@ -2840,12 +2969,13 @@
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_b": {
       "composition": {
         "body_chars": 2462,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system",
@@ -2853,11 +2983,11 @@
     },
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system",
@@ -2866,12 +2996,13 @@
     "transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_a": {
       "composition": {
         "body_chars": 225,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_cartesian_products",
@@ -2880,12 +3011,13 @@
     "transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_b": {
       "composition": {
         "body_chars": 1138,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_cartesian_products",
@@ -2893,11 +3025,11 @@
     },
     "transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_cartesian_products",
@@ -2905,11 +3037,11 @@
     },
     "transversal_designs_latin_blow_ups_and_products_introduction_subsection_a": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_introduction",
@@ -2918,12 +3050,13 @@
     "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_a": {
       "composition": {
         "body_chars": 748,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths",
@@ -2931,11 +3064,11 @@
     },
     "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths",
@@ -2944,12 +3077,13 @@
     "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_a": {
       "composition": {
         "body_chars": 329,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set",
@@ -2957,11 +3091,11 @@
     },
     "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_b": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set",
@@ -2970,12 +3104,13 @@
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_a": {
       "composition": {
         "body_chars": 71,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems",
@@ -2984,12 +3119,13 @@
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_b": {
       "composition": {
         "body_chars": 358,
-        "changed_sources": [],
         "composed_through_revision": 402,
         "composition_version": 1,
+        "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
-        "stale": false
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems",
@@ -2997,11 +3133,11 @@
     },
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_c": {
       "composition": {
-        "changed_sources": [],
         "composition_version": null,
+        "development_changed": false,
         "has_composition": false,
-        "reason": "never_composed",
-        "stale": true
+        "stale": false,
+        "stale_children": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems",
@@ -3011,7 +3147,7 @@
   "toolkit_limbo_count": 0,
   "toolkit_promoted_count": 1,
   "universal_document_versions": {
-    "guide": 11,
-    "reflexes": 5
+    "guide": 12,
+    "reflexes": 6
   }
 }

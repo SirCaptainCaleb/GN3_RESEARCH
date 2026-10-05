@@ -193,4 +193,4 @@ This supplies a double endpoint anchor for the remaining compression problem: th
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set_subsection_a.md) (`defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set_subsection_a`; development v5; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set_subsection_a.md) (`defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set_subsection_a`; development v5; composition vNone; stale=False)

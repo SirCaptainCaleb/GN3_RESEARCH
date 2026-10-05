@@ -44,4 +44,4 @@ Repeated application either decreases \(\Phi\) or reaches a bounded Hamiltonian 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side_subsection_a.md) (`three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side_subsection_a.md) (`three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side_subsection_a`; development v1; composition vNone; stale=False)

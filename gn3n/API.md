@@ -5,7 +5,7 @@ The artifact is a snapshot; these RPCs are the live worker interface.
 ## Startup and reading
 
 ### boot()
-Starts a session and returns the artifact snapshot/revision plus stewardship notices.
+Starts a session and returns the artifact snapshot/revision, persistent startup broadcasts, and stewardship notices. Read broadcasts before selecting a research tactic.
 
 ### search(query, filters := {})
 Discovers Articles, Sections, Subsection development, Toolkit, documents, and optionally Brainstorms.
@@ -14,7 +14,7 @@ Discovers Articles, Sections, Subsection development, Toolkit, documents, and op
 Reads exact durable content. Article and Section bodies are cold compositions. Stable Subsection IDs are also readable; a Subsection read shows both its cold composition and full development body.
 
 ### composition_status(node_type, node_id)
-Returns the current composition version, stale flag, and exact descendant sources that are new, removed, reordered, or further developed.
+Returns one stale flag. For Sections and Articles it also returns stale_children: direct child compositions that require parent reconsideration. Raw child development never stales a parent.
 
 ### changes(since_revision := 0, until_revision := null, limit := 100)
 Returns compact live events plus current Article/Section composition states.
@@ -25,10 +25,12 @@ Returns compact live events plus current Article/Section composition states.
 Creates a cheap local development container. Multiple Subsections may be developed in parallel.
 
 ### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
-Edits any Subsection. Supply payload.subsection_id (or payload.id). Development edits do not rewrite the parent Section, bump its math version, or regenerate an Article. payload.dependencies are stored provisionally on the Subsection.
+Edits any Subsection. Supply payload.subsection_id (or payload.id). Development edits do not rewrite or stale the parent Section, bump its math version, or regenerate an Article. payload.dependencies are stored provisionally on the Subsection.
 
 ### compose(session_id, node_type, node_id, payload, expected_version)
-The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Optional source_usage maps source IDs to used, partial, consulted, omitted, or available. A substantive Section composition must explicitly declare dependencies.
+The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Section and Article composition also require payload.depends_on: the direct child IDs this composition relies on, using [] when none. Optional source_usage may annotate used, partial, consulted, omitted, or available children. A substantive Section composition must explicitly declare canonical mathematical dependencies.
+
+Parent staleness is composition-to-composition. Recomposing a depended-on child stales the parent. Recomposing an explicitly excluded child does not. A newly added child remains invisible to parent staleness until it receives a composition; that first composition stales the parent as a signal worth reconsidering.
 
 ### save_research(session_id, payload, expected_version := null)
 Creates/edits Sections or Toolkit. New route-shaped work should normally develop in Subsections; Toolkit remains for broadly reusable mathematics.
@@ -52,13 +54,13 @@ Promotes developed work into a Section while preserving the Brainstorm.
 ## Dependencies, audits, and stewardship
 
 ### context(research_id)
-Shows canonical dependencies, consumers, supersessions, Article references, and origin.
+Shows canonical mathematical dependencies, consumers, supersessions, Article references, and origin. These dependencies are orthogonal to composition dependencies.
 
 ### request_audit(session_id, target_type, target_id, target_version)
 Queues an independent audit of a canonical Section/Toolkit math version or Article version.
 
 ### claim_chore(session_id, kinds := {audit,recomposition,maintenance})
-Claims one stewardship task. Recomposition chores are triggered by stale source frontiers, not arbitrary size limits. Calling compose successfully resolves the matching recomposition chore.
+Claims one stewardship task. Recomposition chores follow stale composition frontiers, not raw development or arbitrary size limits. Calling compose successfully resolves the matching recomposition chore.
 
 ### finish_chore(session_id, chore_id, outcome := {})
 Completes audits and maintenance chores.
@@ -72,3 +74,5 @@ Returns artifact recovery/rebuild information.
 
 ### help()
 Returns a compact machine-readable summary.
+
+Persistent startup broadcasts are administered in research_core with add_startup_broadcast(...) and remove_startup_broadcast(...). They have no expiry.

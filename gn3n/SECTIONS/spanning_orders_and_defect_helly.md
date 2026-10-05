@@ -672,4 +672,4 @@ may be tracked simultaneously. This dual-polarity refinement is what removes the
 
 - [Subsection 1 — Defect intervals and the exact Helly criterion](../SUBSECTIONS/spanning_orders_and_defect_helly_subsection_a.md) (`spanning_orders_and_defect_helly_subsection_a`; development v4; composition v1; stale=False)
 - [Subsection 2 — Exact inversion-window criterion](../SUBSECTIONS/spanning_orders_and_defect_helly_subsection_b.md) (`spanning_orders_and_defect_helly_subsection_b`; development v8; composition v1; stale=False)
-- [Subsection 3 — Local forbidden patterns and witness handoff](../SUBSECTIONS/spanning_orders_and_defect_helly_subsection_c.md) (`spanning_orders_and_defect_helly_subsection_c`; development v3; composition vNone; stale=True)
+- [Subsection 3 — Local forbidden patterns and witness handoff](../SUBSECTIONS/spanning_orders_and_defect_helly_subsection_c.md) (`spanning_orders_and_defect_helly_subsection_c`; development v3; composition vNone; stale=False)

@@ -721,4 +721,4 @@ Therefore a disconnected support forest has no independent “both endpoints esc
 
 ## Development tree
 
-- [Subsection 1 — Leaf comparisons in deletion-support forests](../SUBSECTIONS/leaf_comparisons_in_deletion_support_forests_subsection_a.md) (`leaf_comparisons_in_deletion_support_forests_subsection_a`; development v18; composition vNone; stale=True)
+- [Subsection 1 — Leaf comparisons in deletion-support forests](../SUBSECTIONS/leaf_comparisons_in_deletion_support_forests_subsection_a.md) (`leaf_comparisons_in_deletion_support_forests_subsection_a`; development v18; composition vNone; stale=False)

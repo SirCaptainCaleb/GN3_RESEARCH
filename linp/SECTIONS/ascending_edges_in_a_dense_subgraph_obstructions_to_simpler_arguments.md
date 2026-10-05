@@ -23,4 +23,4 @@ Finally, the rank-superlevel decomposition does not give a free positive error t
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a.md) (`ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a.md) (`ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a`; development v1; composition vNone; stale=False)

@@ -23,4 +23,4 @@ This obstruction shows that a nonforest terminal-pair edge cannot be assigned di
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a.md) (`terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a.md) (`terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a`; development v1; composition vNone; stale=False)

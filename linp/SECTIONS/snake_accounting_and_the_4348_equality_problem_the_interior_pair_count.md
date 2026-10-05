@@ -87,4 +87,4 @@ Thus every low-\(\eta_v\) high-rank vertex produces linearly many local cycles o
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Lemma 8](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_b.md) (`snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Lemma 8](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_b.md) (`snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_b`; development v1; composition vNone; stale=False)

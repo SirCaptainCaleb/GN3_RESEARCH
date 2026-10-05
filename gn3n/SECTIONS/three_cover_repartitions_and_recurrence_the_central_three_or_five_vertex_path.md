@@ -78,4 +78,4 @@ Thus every deleted label has a canonical bounded representative in the same comp
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path_subsection_a.md) (`three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path_subsection_a.md) (`three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path_subsection_a`; development v1; composition vNone; stale=False)

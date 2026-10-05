@@ -49,4 +49,4 @@ Thus a bound on \(\beta(T)+h\) would also yield a rank theorem.
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_a.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Proposition 6](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_b.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Proposition 6](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_b.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_b`; development v1; composition vNone; stale=False)

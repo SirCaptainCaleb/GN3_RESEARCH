@@ -66,4 +66,4 @@ This is the correct cyclic reformulation. It allows several separated blue runs 
 
 - [Subsection 1 — Why the two-component cycle target fails](../SUBSECTIONS/cyclic_strengthenings_and_balanced_cut_obstructions_subsection_a.md) (`cyclic_strengthenings_and_balanced_cut_obstructions_subsection_a`; development v4; composition v1; stale=False)
 - [Subsection 2 — Balanced cuts force four components](../SUBSECTIONS/cyclic_strengthenings_and_balanced_cut_obstructions_subsection_b.md) (`cyclic_strengthenings_and_balanced_cut_obstructions_subsection_b`; development v4; composition v1; stale=False)
-- [Subsection 3 — The exact cyclic defect-graph formulation](../SUBSECTIONS/cyclic_strengthenings_and_balanced_cut_obstructions_subsection_c.md) (`cyclic_strengthenings_and_balanced_cut_obstructions_subsection_c`; development v3; composition vNone; stale=True)
+- [Subsection 3 — The exact cyclic defect-graph formulation](../SUBSECTIONS/cyclic_strengthenings_and_balanced_cut_obstructions_subsection_c.md) (`cyclic_strengthenings_and_balanced_cut_obstructions_subsection_c`; development v3; composition vNone; stale=False)

@@ -33,4 +33,4 @@ The second possibility is governed by insertion positions.
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex_subsection_a.md) (`endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex_subsection_a.md) (`endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex_subsection_a`; development v1; composition vNone; stale=False)

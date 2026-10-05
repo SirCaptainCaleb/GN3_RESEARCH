@@ -25,4 +25,4 @@ Let \(c(\pi)\) be the minimum number of consecutive intervals into which \(\pi\)
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_introduction_subsection_a.md) (`defect_lines_and_spanning_order_compression_introduction_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_introduction_subsection_a.md) (`defect_lines_and_spanning_order_compression_introduction_subsection_a`; development v1; composition vNone; stale=False)

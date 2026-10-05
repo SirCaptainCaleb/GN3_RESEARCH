@@ -42,4 +42,4 @@ whenever the direct endpoint enlargement to a Hamiltonian four-set is unavailabl
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_absolute_minima_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_absolute_minima_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Small-component consequences](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_absolute_minima_subsection_b.md) (`quadratic_potential_and_pairwise_repartition_absolute_minima_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Small-component consequences](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_absolute_minima_subsection_b.md) (`quadratic_potential_and_pairwise_repartition_absolute_minima_subsection_b`; development v1; composition vNone; stale=False)

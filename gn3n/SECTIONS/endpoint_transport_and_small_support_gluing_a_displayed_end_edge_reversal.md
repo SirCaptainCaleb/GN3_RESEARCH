@@ -63,4 +63,4 @@ At a minimum of \(\Phi\) in a connected component of the pairwise-repartition gr
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal_subsection_a.md) (`endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal_subsection_a.md) (`endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal_subsection_a`; development v1; composition vNone; stale=False)

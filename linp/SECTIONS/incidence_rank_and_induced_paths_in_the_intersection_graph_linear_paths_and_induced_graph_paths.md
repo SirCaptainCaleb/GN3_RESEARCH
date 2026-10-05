@@ -43,4 +43,4 @@ F\text{ is induced-}P_\ell\text{-free}. \tag{3}
 
 ## Development tree
 
-- [Subsection 1 — Lemma 1](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — Lemma 1](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a`; development v1; composition vNone; stale=False)

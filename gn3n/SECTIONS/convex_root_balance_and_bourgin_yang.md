@@ -1001,4 +1001,4 @@ Thus a hypothetical obstruction of deletion distance \(k\ge2\) carries not merel
 ## Development tree
 
 - [Subsection 1 — Balance, circulation, and multiplicity of zeros](../SUBSECTIONS/convex_root_balance_and_bourgin_yang_subsection_a.md) (`convex_root_balance_and_bourgin_yang_subsection_a`; development v4; composition v1; stale=False)
-- [Subsection 2 — Positive balance on every chamber and the switch-separation bound](../SUBSECTIONS/convex_root_balance_and_bourgin_yang_subsection_b.md) (`convex_root_balance_and_bourgin_yang_subsection_b`; development v18; composition vNone; stale=True)
+- [Subsection 2 — Positive balance on every chamber and the switch-separation bound](../SUBSECTIONS/convex_root_balance_and_bourgin_yang_subsection_b.md) (`convex_root_balance_and_bourgin_yang_subsection_b`; development v18; composition vNone; stale=False)

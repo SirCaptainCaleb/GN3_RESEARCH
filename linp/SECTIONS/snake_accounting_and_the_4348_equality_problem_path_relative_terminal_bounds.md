@@ -38,4 +38,4 @@ The proof is a path-splice count. For \(e=\{x,u,v\}\), both \(x\) and \(u\) must
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Lemma 3](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b.md) (`snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Lemma 3](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b.md) (`snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b`; development v1; composition vNone; stale=False)

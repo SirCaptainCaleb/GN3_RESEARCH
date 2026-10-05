@@ -47,4 +47,4 @@ Thus the two-thirds bound follows once \(A=o(\ell n)\).
 ## Development tree
 
 - [Subsection 1 — Lemma 1](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_a.md) (`ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Lemma 2](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_b.md) (`ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Lemma 2](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_b.md) (`ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_b`; development v1; composition vNone; stale=False)

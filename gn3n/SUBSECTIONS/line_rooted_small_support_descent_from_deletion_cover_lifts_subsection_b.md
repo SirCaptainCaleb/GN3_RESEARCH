@@ -8,7 +8,7 @@
 - Row version: 21
 - Development version: 21
 - Composition version: None
-- Composition stale: True
+- Composition stale: False
 
 ## Cold composition
 

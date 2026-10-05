@@ -85,4 +85,4 @@ which proves (22). Since \(q\le p-1\), (5) gives (23). ∎
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Lemma 7](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b.md) (`snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Lemma 7](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b.md) (`snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b`; development v1; composition vNone; stale=False)

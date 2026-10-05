@@ -38,4 +38,4 @@ Each form is a bounded common-core configuration with a two-coverable complement
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices_subsection_a.md) (`endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices_subsection_a.md) (`endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices_subsection_a`; development v1; composition vNone; stale=False)

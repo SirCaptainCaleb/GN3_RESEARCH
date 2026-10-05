@@ -33,4 +33,4 @@ Every edge gives a Hamiltonian five-set containing the same reversal and having 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple_subsection_a.md) (`longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple_subsection_a.md) (`longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple_subsection_a`; development v1; composition vNone; stale=False)

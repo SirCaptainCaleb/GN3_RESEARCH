@@ -33,4 +33,4 @@ is false, and nonspecial incidence columns need not be independent.
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a`; development v1; composition vNone; stale=False)

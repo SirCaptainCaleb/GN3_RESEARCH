@@ -55,4 +55,4 @@ Thus full transversal designs cannot yield an asymptotic coefficient above one t
 ## Development tree
 
 - [Subsection 1 — Lemma 1](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_a.md) (`transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Theorem 2](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_b.md) (`transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Theorem 2](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_b.md) (`transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_b`; development v1; composition vNone; stale=False)

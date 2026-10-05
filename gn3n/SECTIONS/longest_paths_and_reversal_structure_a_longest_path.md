@@ -532,4 +532,4 @@ This is the global augmenting-path formulation: the move from maximal imbalance 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_longest_path_subsection_a.md) (`longest_paths_and_reversal_structure_a_longest_path_subsection_a`; development v9; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_longest_path_subsection_a.md) (`longest_paths_and_reversal_structure_a_longest_path_subsection_a`; development v9; composition vNone; stale=False)

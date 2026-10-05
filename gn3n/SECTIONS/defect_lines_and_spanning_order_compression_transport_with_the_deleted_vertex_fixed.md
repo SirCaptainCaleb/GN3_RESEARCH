@@ -207,4 +207,4 @@ Consequently the elaborate seven-set transport at the end of Lemma 4 is not need
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed_subsection_a.md) (`defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed_subsection_a`; development v2; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed_subsection_a.md) (`defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed_subsection_a`; development v2; composition vNone; stale=False)

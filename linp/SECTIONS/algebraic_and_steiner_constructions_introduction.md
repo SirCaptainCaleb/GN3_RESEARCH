@@ -23,4 +23,4 @@ The aim is therefore to construct finite components whose ratio \(m/v\) is as la
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_introduction_subsection_a.md) (`algebraic_and_steiner_constructions_introduction_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_introduction_subsection_a.md) (`algebraic_and_steiner_constructions_introduction_subsection_a`; development v1; composition vNone; stale=False)

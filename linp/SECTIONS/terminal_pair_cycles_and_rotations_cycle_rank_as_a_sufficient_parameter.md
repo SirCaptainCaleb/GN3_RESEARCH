@@ -48,4 +48,4 @@ In particular, \(\beta(T)=O(n)\) gives the two-thirds leading coefficient. The c
 
 ## Development tree
 
-- [Subsection 1 — Proposition 3](../SUBSECTIONS/terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a.md) (`terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — Proposition 3](../SUBSECTIONS/terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a.md) (`terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a`; development v1; composition vNone; stale=False)

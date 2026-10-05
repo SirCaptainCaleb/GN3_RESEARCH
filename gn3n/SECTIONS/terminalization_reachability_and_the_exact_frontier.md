@@ -110,4 +110,4 @@ This motivates the independent meta-conjecture recorded in [[meta_conjecture_gn3
 
 ## Development tree
 
-- [Subsection 1 — Current closure frontier](../SUBSECTIONS/terminalization_reachability_and_the_exact_frontier_subsection_a.md) (`terminalization_reachability_and_the_exact_frontier_subsection_a`; development v3; composition vNone; stale=True)
+- [Subsection 1 — Current closure frontier](../SUBSECTIONS/terminalization_reachability_and_the_exact_frontier_subsection_a.md) (`terminalization_reachability_and_the_exact_frontier_subsection_a`; development v3; composition vNone; stale=False)

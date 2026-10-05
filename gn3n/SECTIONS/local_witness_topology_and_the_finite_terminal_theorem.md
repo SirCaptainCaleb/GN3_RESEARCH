@@ -151,4 +151,4 @@ The local finite line is closed. The only remaining issue is global: prove that 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/local_witness_topology_and_the_finite_terminal_theorem_subsection_a.md) (`local_witness_topology_and_the_finite_terminal_theorem_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/local_witness_topology_and_the_finite_terminal_theorem_subsection_a.md) (`local_witness_topology_and_the_finite_terminal_theorem_subsection_a`; development v1; composition vNone; stale=False)

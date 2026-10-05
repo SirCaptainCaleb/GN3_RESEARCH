@@ -25,4 +25,4 @@ Consequently, if branching remains after suppressing degree-two vertices on one 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case_subsection_a.md) (`deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case_subsection_a.md) (`deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case_subsection_a`; development v1; composition vNone; stale=False)

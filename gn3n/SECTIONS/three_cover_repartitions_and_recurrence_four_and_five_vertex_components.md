@@ -47,4 +47,4 @@ Thus none of the six bounded four-support size profiles remains as an unstructur
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_a.md) (`three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Bounded four-support closure](../SUBSECTIONS/three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_b.md) (`three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Bounded four-support closure](../SUBSECTIONS/three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_b.md) (`three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_b`; development v1; composition vNone; stale=False)

@@ -32,4 +32,4 @@ and let \(n_+\) be the number of nonisolated vertices.
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_introduction_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_introduction_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_introduction_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_introduction_subsection_a`; development v1; composition vNone; stale=False)

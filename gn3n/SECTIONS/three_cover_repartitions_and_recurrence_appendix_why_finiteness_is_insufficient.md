@@ -25,4 +25,4 @@ It does not justify reversing a path or cyclically rotating a triple. Every recu
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient_subsection_a.md) (`three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient_subsection_a.md) (`three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient_subsection_a`; development v1; composition vNone; stale=False)

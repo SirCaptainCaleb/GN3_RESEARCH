@@ -261,4 +261,4 @@ The conclusion uses no minimum-counterexample hypothesis and no disturbance anal
 ## Development tree
 
 - [Subsection 1 — Exact reachability and the neutral corridor](../SUBSECTIONS/antipodal_reachability_and_neutral_corridor_subsection_a.md) (`antipodal_reachability_and_neutral_corridor_subsection_a`; development v4; composition v1; stale=False)
-- [Subsection 2 — Further developments](../SUBSECTIONS/antipodal_reachability_and_neutral_corridor_subsection_b.md) (`antipodal_reachability_and_neutral_corridor_subsection_b`; development v2; composition vNone; stale=True)
+- [Subsection 2 — Further developments](../SUBSECTIONS/antipodal_reachability_and_neutral_corridor_subsection_b.md) (`antipodal_reachability_and_neutral_corridor_subsection_b`; development v2; composition vNone; stale=False)

@@ -33,4 +33,4 @@ that minimizes \(|P_x|^2+|Q_x|^2\) among all two-covers of \(H-x\). Equivalently
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_introduction_subsection_a.md) (`deletion_covers_and_the_support_graph_introduction_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_introduction_subsection_a.md) (`deletion_covers_and_the_support_graph_introduction_subsection_a`; development v1; composition vNone; stale=False)

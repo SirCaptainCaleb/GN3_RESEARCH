@@ -55,4 +55,4 @@ In the second case the four-set supporting the displayed tight path is Hamiltoni
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal_subsection_a.md) (`longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal_subsection_a.md) (`longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal_subsection_a`; development v1; composition vNone; stale=False)

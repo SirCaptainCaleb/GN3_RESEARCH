@@ -43,4 +43,4 @@ Thus every displayed pair is as balanced as possible among its two-covers. Furth
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_pairwise_extremality_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_pairwise_extremality_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_pairwise_extremality_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_pairwise_extremality_subsection_a`; development v1; composition vNone; stale=False)

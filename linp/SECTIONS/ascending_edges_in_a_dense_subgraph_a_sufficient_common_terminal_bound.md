@@ -47,4 +47,4 @@ Hence full specialness is stronger than necessary: a sublinear common-terminal b
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_a.md) (`ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Proposition 6](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_b.md) (`ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Proposition 6](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_b.md) (`ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_b`; development v1; composition vNone; stale=False)

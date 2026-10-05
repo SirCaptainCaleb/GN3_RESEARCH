@@ -19,4 +19,4 @@
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_canonical_references_subsection_a.md) (`defect_lines_and_spanning_order_compression_canonical_references_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_canonical_references_subsection_a.md) (`defect_lines_and_spanning_order_compression_canonical_references_subsection_a`; development v1; composition vNone; stale=False)

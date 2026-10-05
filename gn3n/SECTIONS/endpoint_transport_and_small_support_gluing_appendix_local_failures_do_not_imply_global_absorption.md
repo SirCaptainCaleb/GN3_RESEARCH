@@ -23,4 +23,4 @@ Accordingly, every use of an endpoint in the main proof is tied to a displayed H
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption_subsection_a.md) (`endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption_subsection_a.md) (`endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption_subsection_a`; development v1; composition vNone; stale=False)

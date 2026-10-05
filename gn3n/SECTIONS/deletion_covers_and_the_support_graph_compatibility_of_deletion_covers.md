@@ -168,4 +168,4 @@ Consequently, in the spanning odd-cycle support geometry, every adjacent pair of
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_a.md) (`deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_a`; development v2; composition v1; stale=False)
-- [Subsection 2 — Three compatible covers force a reversal](../SUBSECTIONS/deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_b.md) (`deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_b`; development v5; composition vNone; stale=True)
+- [Subsection 2 — Three compatible covers force a reversal](../SUBSECTIONS/deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_b.md) (`deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_b`; development v5; composition vNone; stale=False)

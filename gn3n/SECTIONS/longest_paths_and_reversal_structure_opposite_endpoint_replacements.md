@@ -51,4 +51,4 @@ Thus a difficult pair of opposite endpoint replacements must change the inherite
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_opposite_endpoint_replacements_subsection_a.md) (`longest_paths_and_reversal_structure_opposite_endpoint_replacements_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_opposite_endpoint_replacements_subsection_a.md) (`longest_paths_and_reversal_structure_opposite_endpoint_replacements_subsection_a`; development v1; composition vNone; stale=False)

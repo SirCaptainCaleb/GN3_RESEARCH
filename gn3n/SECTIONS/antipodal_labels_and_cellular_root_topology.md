@@ -194,4 +194,4 @@ This theorem supplies the higher-dimensional consistency missing from the earlie
 ## Development tree
 
 - [Subsection 1 — From rook labels to cellular roots](../SUBSECTIONS/antipodal_labels_and_cellular_root_topology_subsection_a.md) (`antipodal_labels_and_cellular_root_topology_subsection_a`; development v4; composition v1; stale=False)
-- [Subsection 2 — Ky Fan forces a hole-sweeping face](../SUBSECTIONS/antipodal_labels_and_cellular_root_topology_subsection_b.md) (`antipodal_labels_and_cellular_root_topology_subsection_b`; development v2; composition vNone; stale=True)
+- [Subsection 2 — Ky Fan forces a hole-sweeping face](../SUBSECTIONS/antipodal_labels_and_cellular_root_topology_subsection_b.md) (`antipodal_labels_and_cellular_root_topology_subsection_b`; development v2; composition vNone; stale=False)

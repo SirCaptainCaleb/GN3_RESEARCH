@@ -45,4 +45,4 @@ General rainbow-path theorems cannot supply it because Proposition 4 loses a fac
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_a.md) (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_a`; development v1; composition v1; stale=False)
-- [Subsection 2 — Open problem](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_b.md) (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_b`; development v1; composition vNone; stale=True)
+- [Subsection 2 — Open problem](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_b.md) (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_b`; development v1; composition vNone; stale=False)

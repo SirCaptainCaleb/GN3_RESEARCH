@@ -148,4 +148,4 @@ The equivalent cyclic target is therefore to cover every blue transition by two 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/balanced_cuts_obstruct_the_two_component_spanning_cycle_target_subsection_a.md) (`balanced_cuts_obstruct_the_two_component_spanning_cycle_target_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/balanced_cuts_obstruct_the_two_component_spanning_cycle_target_subsection_a.md) (`balanced_cuts_obstruct_the_two_component_spanning_cycle_target_subsection_a`; development v1; composition vNone; stale=False)

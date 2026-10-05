@@ -53,4 +53,4 @@ Together with \(Q\), these give three deletion covers sharing the fixed support 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_support_compatible_families_subsection_a.md) (`deletion_covers_and_the_support_graph_support_compatible_families_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_support_compatible_families_subsection_a.md) (`deletion_covers_and_the_support_graph_support_compatible_families_subsection_a`; development v1; composition vNone; stale=False)

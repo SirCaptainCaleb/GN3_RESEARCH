@@ -83,4 +83,4 @@ Thus edges with a substantial entrance-to-terminal rank gap have bounded total h
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_a.md) (`ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_a`; development v1; composition v1; stale=False)
 - [Subsection 2 — Lemma 4](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_b.md) (`ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_b`; development v1; composition v1; stale=False)
-- [Subsection 3 — Corollary 5](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_c.md) (`ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_c`; development v1; composition vNone; stale=True)
+- [Subsection 3 — Corollary 5](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_c.md) (`ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_c`; development v1; composition vNone; stale=False)

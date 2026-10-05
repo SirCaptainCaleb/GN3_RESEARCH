@@ -37,4 +37,4 @@ In particular, \(c(\pi)=3\) exactly when there is one run of length three or fou
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_defect_line_identity_subsection_a.md) (`defect_lines_and_spanning_order_compression_the_defect_line_identity_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_defect_line_identity_subsection_a.md) (`defect_lines_and_spanning_order_compression_the_defect_line_identity_subsection_a`; development v1; composition vNone; stale=False)

@@ -42,4 +42,4 @@ Now let \(T\) be a two-cover of \(A\cup B\cup C\). If there is an order disagree
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r_subsection_a`; development v1; composition vNone; stale=False)

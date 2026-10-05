@@ -109,4 +109,4 @@ The local-witness compression developed next reaches the same numerical scale fr
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/exact_root_compression_and_bounded_central_structure_subsection_a.md) (`exact_root_compression_and_bounded_central_structure_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/exact_root_compression_and_bounded_central_structure_subsection_a.md) (`exact_root_compression_and_bounded_central_structure_subsection_a`; development v1; composition vNone; stale=False)

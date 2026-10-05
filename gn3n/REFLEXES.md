@@ -5,7 +5,7 @@
 
 1. **Publish cheaply downward; compress deliberately upward.** If you are still discovering the mathematics, prefer a Subsection. If you are deciding what the manuscript should now say, compose.
 
-2. **A stale composition is still a composition.** Stale means new uncompressed development exists beneath it. Read it, keep using it, and recompose when the synthesis is worth doing.
+2. **A stale composition is still a composition.** Parent staleness follows child compositions, not scratch development: a depended-on child was recomposed, or a newly added child acquired a composition. Read the cold parent, keep using it, and recompose when the synthesis is worth doing.
 
 3. **Never concatenate upward.** Section and Article bodies are deliberate rewrites. Omission is allowed. Lower-level material remains preserved.
 
@@ -25,10 +25,15 @@
 
 11. **Audit the canonical claim, not the notebook.** A Subsection can stay messy while a Section composition is audited. A new substantive Section composition gets a new mathematical version.
 
-12. **Read according to the task.** Continuing an Article means read its cold composition and all its Sections, then any changed Subsections flagged by staleness. Choosing among routes means scan every Article first.
+12. **Read according to the task.** Continuing an Article means read its cold composition and all its Sections, then any child compositions flagged by staleness. Choosing among routes means scan every Article first.
 
-13. **Use exact source frontiers.** Before recomposing, inspect composition_status. It tells you what actually changed rather than asking you to remember.
+13. **Make composition dependencies explicit.** Section and Article compose calls name the direct children they depend on. Before recomposing, inspect composition_status; one stale flag is enough because the recorded dependency frontier explains why.
 
 14. **Preserve failures.** Dead ends may disappear from parent prose but remain valuable development evidence below. Do not delete them merely because compression omitted them.
 
 15. **Stage large shared publications.** Use the staged-batch overlap review when many related writes must land together.
+
+
+16. **Treat composition as a signal.** Raw development is cheap and local. Giving a new child a composition means someone judged it worth canonical expression, so a parent that predates that child composition becomes stale and should reconsider whether to absorb it.
+
+17. **Read startup broadcasts first.** They are persistent project directives with no expiry; they remain in force until explicitly removed.

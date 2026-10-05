@@ -61,4 +61,4 @@ This conclusion uses only deletion-distance one, minimum-hole synchronization in
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/kappa_one_four_end_reversal_subsection_a.md) (`kappa_one_four_end_reversal_subsection_a`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/kappa_one_four_end_reversal_subsection_a.md) (`kappa_one_four_end_reversal_subsection_a`; development v1; composition vNone; stale=False)
