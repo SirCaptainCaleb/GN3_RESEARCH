@@ -1,6 +1,6 @@
 # Research Reflexes
 
-These are compact heuristics for mathematical judgment during active research.
+These are behavioral heuristics for mathematical judgment during active research.
 
 1. **Compress deliberately upward.** Let development branch freely; promote only the mathematics that clarifies the canonical argument.
 
