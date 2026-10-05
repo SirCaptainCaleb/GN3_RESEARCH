@@ -152,3 +152,4 @@ The local finite line is closed. The only remaining issue is global: prove that 
 ## Development tree
 
 - [Subsection 1 — (untitled)](../SUBSECTIONS/local_witness_topology_and_the_finite_terminal_theorem_subsection_a.md) (`local_witness_topology_and_the_finite_terminal_theorem_subsection_a`; development v1; composition vNone; stale=False)
+- [Subsection 2 — Independent audit: finite-terminal compression proof obligations](../SUBSECTIONS/independent_audit_finite_terminal_compression_proof_obligations.md) (`independent_audit_finite_terminal_compression_proof_obligations`; development v1; composition vNone; stale=False)
