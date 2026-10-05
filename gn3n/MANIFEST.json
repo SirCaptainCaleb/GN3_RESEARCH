@@ -524,7 +524,7 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-cold-composition-v5",
-  "generated_at": "2026-10-05T05:11:28.710471+00:00",
+  "generated_at": "2026-10-05T09:08:57.947241+00:00",
   "mirror_format": 16,
   "schema": "gn3n",
   "section_versions": {
@@ -1719,7 +1719,7 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1340,
+  "snapshot_revision": 1382,
   "startup_broadcasts": [
     {
       "body": "Do not pursue a minimum-counterexample analysis unless prior development has already forced any minimum counterexample to have bounded order: there must be an explicit finite upper bound on the number of vertices. Until such a bounded-order reduction exists, use structural, topological, algebraic, constructive, or other non-minimum-counterexample approaches instead.",
@@ -1992,6 +1992,30 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "audit_simultaneous_table_and_exclusive_alternating_carriers_are_distinct": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "audit_terminal_surgery_and_compression_use_different_witness_polarities": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "audit_the_external_gauge_does_not_by_itself_close_rank_two_coherence": {
       "composition": {
         "composition_version": null,
@@ -2100,7 +2124,43 @@
       "section_id": "balanced_cuts_obstruct_the_two_component_spanning_cycle_target",
       "version": 1
     },
+    "balanced_ten_position_repairs_have_explicit_protected_endpoint_orbits": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "boundary_coherence_as_a_common_complement_hamiltonian_problem": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "central_pair_gauge_does_not_exclude_intrinsictie_endpoint_sign_flips": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "central_pair_gauge_removes_endpoint_block_sign_changes": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -2193,6 +2253,18 @@
       "section_id": "complementary_path_supports_and_endpoint_involutions",
       "version": 3
     },
+    "complete_positive_span_two_double_corridor_classification": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "convex_root_balance_and_bourgin_yang_subsection_a": {
       "composition": {
         "body_chars": 5720,
@@ -2221,6 +2293,42 @@
       "version": 18
     },
     "coordinatewise_pruning_and_the_pure_terminal_core": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "correction_rooted_four_core_extension_is_not_automatic": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "correction_seven_set_endpoint_absorption_needs_oriented_endpoints": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "correction_surviving_terminal_carriers_are_bounded_by_ten_not_rank_three": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -2841,6 +2949,54 @@
       "section_id": "exact_root_compression_and_bounded_central_structure",
       "version": 1
     },
+    "exact_root_surplus_bound_retains_an_unbounded_zero_root_alternative": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "exact_root_surplus_forces_deletion_distance_at_most_five": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "exclusive_disjoint_terminal_windows_are_adjacent_without_dual_polarity": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "exclusive_order_ten_span_two_carriers_need_no_endpoint_transport": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "existential_carrier_reduction_for_rank_two_terminal_residues": {
       "composition": {
         "composition_version": null,
@@ -2852,6 +3008,30 @@
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
+    },
+    "explicit_proofs_for_finite_terminal_compression": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "frozen_window_carriers_and_separator_relabeling_require_precise_invariants": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
     },
     "global_augmentation_by_complementary_path_splices_subsection_a": {
       "composition": {
@@ -3044,6 +3224,18 @@
       "development_version": 21,
       "section_id": "line_rooted_small_support_descent_from_deletion_cover_lifts",
       "version": 21
+    },
+    "local_span_gauge_localizes_terminal_tie_break_sign_flips": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "local_witness_topology_and_the_finite_terminal_theorem_subsection_a": {
       "composition": {
@@ -3312,7 +3504,175 @@
       "section_id": "norine_gn3_dictionary_and_freudenthal_geometry",
       "version": 3
     },
+    "order_nine_bridge_reduces_to_rooted_four_core_synchronization": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "order_nine_endpoint_exclusion_for_reflected_alternating_terminal_supports": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "positive_alternating_double_occurrences_have_support_at_most_eight": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "positive_exclusive_disjoint_span_two_carriers_have_rank_one_coupling": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "positive_only_witness_filtration_is_antipodal_and_surgery_compatible": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "positive_overlap_one_alternating_elimination": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "positive_protection_allows_a_disjoint_single_sided_span_two_carrier": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "positive_protection_does_not_guarantee_fixed_root_corridor_absorption": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
+    "positive_protection_eliminates_exclusive_disjoint_alternating_carriers": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "positive_reflected_double_carriers_have_unbounded_local_spans": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
+    "positive_word_filtration_is_antipodal_and_exclusive_alternating_windows_collapse": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
+      "version": 1
+    },
     "protected_carrier_separator_and_the_acyclic_carrier_reduction": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "protected_mixed_doubles_can_forbid_simultaneous_preservation_of_both_tail_pairs": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "protected_parabolic_carriers_reduce_the_global_gap_to_adjacent_window_gluing": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "protected_rank_three_coherence_from_terminal_block_compression": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3495,6 +3855,30 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "rank_two_terminal_carriers_are_genuinely_protected": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "reflected_double_carriers_reduce_to_two_bounded_rooted_endpoint_interfaces": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "relative_index_filtration_and_the_mixed_face_outward_push_lemma": {
       "composition": {
         "composition_version": null,
@@ -3507,7 +3891,43 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 2
     },
+    "repair_frontier_protected_iteration_reduced_to_finite_terminal_compression": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "rooted_corridor_absorption_reduces_to_a_bounded_three_hook_residue": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "six_deletion_coupling_and_the_sparse_abc_obstruction_graph": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "span_two_doubles_are_exactly_a_two_cover_corridor_plus_two_reversed_endpoints": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3573,6 +3993,30 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "terminal_attachment_matching_gives_an_outward_repair_of_a_double_corridor": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "terminal_root_four_paths_are_not_forced_by_an_unoriented_endpoint_theorem": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "terminal_support_surgery_gives_a_genuine_outward_escape": {
       "composition": {
         "composition_version": null,
@@ -3596,6 +4040,18 @@
       "development_version": 3,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 3
+    },
+    "three_bridge_vertices_absorb_a_six_vertex_endpoint_packet": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient_subsection_a": {
       "composition": {
@@ -3844,6 +4300,30 @@
       },
       "development_version": 1,
       "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "uniform_normalization_gives_a_protected_parabolic_carrier": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "verified_five_position_obstruction_and_ordered_tuple_compression": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "local_witness_topology_and_the_finite_terminal_theorem",
       "version": 1
     }
   },
