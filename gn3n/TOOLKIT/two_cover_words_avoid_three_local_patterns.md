@@ -50,6 +50,6 @@ Under reversal-complement, `001` and `011` are exchanged, while `0101` is fixed.
 - Kind: toolkit
 - Version: 1
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

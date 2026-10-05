@@ -644,3 +644,383 @@ Together with the recovered omission-vector analysis, the remaining topological 
 4. hence a hypothetical counterexample must realize an exact nearest-violation zero on a proper face whose \(r\)-block contains at least one original vertex.
 
 The next target is therefore not a generic facewise conversion theorem. It is the much narrower problem of controlling one non-singleton block containing \(r\).
+
+
+## One-anchor omission quotient localizes every kappa>=2 zero to an anchor facet
+
+The mixed-direction omission quotient can be sharpened by quotienting by a single coordinate direction.
+
+Fix an original vertex \(a\in V(H)\). Project the rooted omission vector
+\[
+D(\pi)=\mathbf 1_{A(\pi)}-\mathbf 1_{B(\pi)}
+\]
+to
+\[
+\mathbb R^{V(H)}/\langle e_a\rangle.
+\]
+The target has dimension \(n-1\), equal to the dimension of the boundary sphere of the auxiliary permutahedron. Averaging on face barycenters and extending affinely gives an odd continuous map, so Borsuk--Ulam gives a zero.
+
+Let \(F\) be the carrier face of such a zero. Then for strictly positive chamber weights
+\[
+\sum_{\pi\in\mathcal V(F)}\lambda_\pi D(\pi)=c\,e_a.
+\]
+Hence every coordinate
+\[
+v\ne a
+\]
+has weighted average zero.
+
+Let \(B_r\) be the face block containing the auxiliary vertex \(r\).
+
+**Lemma.** If some \(z\ne a\) lies outside \(B_r\), then
+\[
+\kappa_2(H)\le1.
+\]
+
+**Proof.**
+Since \(z\) lies in a block strictly on one side of \(B_r\), its side of \(r\) is fixed throughout \(F\). Thus \(D_z\) is always in either \(\{0,1\}\) or \(\{0,-1\}\). Its positive weighted average is zero, so
+\[
+D_z(\pi)=0
+\]
+for every chamber.
+
+Every vertex \(u\ne a\) outside \(B_r\) also has a fixed side of \(r\), hence a one-signed omission coordinate with average zero; therefore \(D_u=0\) chamberwise.
+
+Now let \(u\ne a\) lie inside \(B_r\). Suppose first that \(z\) lies before \(B_r\). If some chamber had \(D_u=+1\), then \(u\) would lie before \(r\) and belong to the omitted left prefix \(A(\pi)\). Because \(z\) lies in an earlier block, the prefix property would force \(z\in A(\pi)\), contradicting \(D_z=0\). Hence
+\[
+D_u\in\{0,-1\}
+\]
+for every chamber. Its weighted average is zero, so \(D_u=0\) chamberwise. If \(z\) lies after \(B_r\), the symmetric suffix argument gives
+\[
+D_u\in\{0,+1\}
+\]
+and again \(D_u=0\).
+
+Thus every chamber omits at most the single vertex \(a\). Removing \(r\) from the two rooted tight paths gives a two-path cover of \(H-a\). Hence
+\[
+\kappa_2(H)\le1.
+\]
+\(\square\)
+
+Therefore, under
+\[
+\kappa_2(H)\ge2,
+\]
+every original vertex except \(a\) must lie in \(B_r\). Since the carrier is a proper face, \(a\) cannot also lie in \(B_r\); otherwise the face would be the full permutahedron. Consequently the carrier has exactly two blocks:
+\[
+\boxed{
+F=\{a\}\mid\bigl((V(H)-\{a\})\cup\{r\}\bigr)
+\quad\text{or}\quad
+F=\bigl((V(H)-\{a\})\cup\{r\}\bigr)\mid\{a\}.
+}
+\]
+
+Thus for every prescribed anchor \(a\), the one-coordinate quotient forces a projected omission zero onto one of two antipodal **anchor facets** whenever \(\kappa_2(H)\ge2\).
+
+This is the one-anchor analogue of Astra's exceptional-facet phenomenon. It shows that the obstruction is not spread over arbitrary faces: after one-coordinate localization, all topological cancellation is trapped in a facet with one actual singleton and one giant block containing \(r\) and every other original vertex.
+
+### Combined frontier
+
+The two exact topological refinements now meet on essentially one geometry:
+
+- the nearest-violation map proves that a zero carrier with \(r\) singleton already yields a two-cover;
+- the one-anchor omission quotient proves that, when \(\kappa_2(H)\ge2\), omission zeros localize to facets with one actual singleton and one giant non-singleton \(r\)-block.
+
+Hence the remaining topological conversion problem can be studied on
+\[
+\{a\}\mid B_r
+\quad\text{or}\quad
+B_r\mid\{a\},
+\qquad
+B_r=(V(H)-\{a\})\cup\{r\},
+\]
+rather than on a general ordered partition.
+
+
+## Exact nearest-left/right root map
+
+There is a more economical exact encoding of the auxiliary violation geometry.
+
+Let
+\[
+R=\{1,\ldots,n-2,\infty\}.
+\]
+For a chamber \(\pi\) of \(H^+\), define
+\[
+\ell(\pi)=\min\{d:x_d(\pi)=1\},
+\qquad
+\rho(\pi)=\min\{d:y_d(\pi)=1\},
+\]
+with the value \(\infty\) when the corresponding side has no violation.
+
+Reversal exchanges these coordinates:
+\[
+\ell(\pi^{\mathrm{rev}})=\rho(\pi),
+\qquad
+\rho(\pi^{\mathrm{rev}})=\ell(\pi).
+\]
+
+Let \(U\) be the type-\(A\) root space on the state set \(R\):
+\[
+U=\left\{z\in\mathbb R^R:\sum_{s\in R}z_s=0\right\},
+\qquad
+\dim U=n-2.
+\]
+Choose any antipodal sign \(g(\pi)\in\{\pm1\}\), for example the side-set gauge or a fixed relative-order gauge. Define
+\[
+\Xi(\pi)=
+\left(
+e_{\ell(\pi)}-e_{\rho(\pi)},
+\quad
+g(\pi)\,\mathbf 1_{\{\ell(\pi)=\rho(\pi)<\infty\}}
+\right)
+\in U\oplus\mathbb R.
+\]
+
+Then
+\[
+\Xi(\pi^{\mathrm{rev}})=-\Xi(\pi).
+\]
+Moreover
+\[
+\Xi(\pi)=0
+\iff
+\ell(\pi)=\rho(\pi)=\infty
+\iff
+\pi\text{ has no left or right violations}
+\iff
+\pi\text{ is a directed one-change order}.
+\]
+Thus this map has exact chamber zeros.
+
+The target dimension is
+\[
+(n-2)+1=n-1,
+\]
+equal to the dimension of the auxiliary permutahedron boundary sphere \(S^{n-1}\). Averaging at proper face barycenters and extending affinely therefore gives a dimension-tight odd map. Borsuk--Ulam supplies a zero with the standard strictly positive carrier expansion.
+
+Grouping the root coordinates of such a positive balance gives a nonnegative circulation on the nearest-violation state set \(R\). Every occurring nonloop arc
+\[
+\ell\to\rho
+\]
+lies on a directed cycle of occurring nearest-violation roots. The distinguished state \(\infty\) has an exact combinatorial meaning:
+
+- \(\infty\to d\) is a chamber whose left side is completely clean and whose nearest right violation is \(d\);
+- \(d\to\infty\) is the symmetric right-clean state;
+- \(\infty\to\infty\) is exactly a two-cover certificate.
+
+Finite loops \(d\to d\) are precisely nearest symmetric double violations. They disappear from the root coordinate but are detected by the extra scalar gauge. Scalar balance says that finite-loop chambers of both gauge signs must occur whenever any finite loop occurs.
+
+Therefore the exact topological frontier can be phrased as a recurrence problem on the compact state set
+\[
+\{\infty,1,\ldots,n-2\},
+\]
+with the desired theorem corresponding to the distinguished loop at \(\infty\). This retains the exact target while recovering the directed-cycle structure that made the earlier root maps useful.
+
+### Immediate carrier dichotomy
+
+At a positive zero carrier for \(\Xi\), exactly one of the following happens:
+
+1. an \(\infty\)-loop occurs, giving a two-cover;
+2. some nonloop root incident with \(\infty\) occurs, hence lies on a directed cycle through \(\infty\), coordinating left-clean and right-clean chambers through mixed nearest-violation states;
+3. no root coordinate \(\infty\) occurs, so every chamber has violations on both sides, except possibly finite-loop chambers, and the entire carrier is trapped in the two-sided-violation regime.
+
+This separates the remaining conversion problem into an \(\infty\)-cycle branch and a purely finite branch. The singleton-\(r\) conversion above closes the first branch whenever the face factors across \(r\); the non-singleton \(r\)-block is the only remaining synchronization issue.
+
+
+## Loop-folded nearest-radius root map recovers one spare dimension
+
+The extra scalar coordinate used above to distinguish finite nearest symmetric doubles is not necessary. The loop information can be folded into the same type-\(A\) root space.
+
+Let
+\[
+R=\{1,\ldots,n-2,\infty\},
+\qquad
+U=\left\{z\in\mathbb R^R:\sum_{s\in R}z_s=0\right\},
+\]
+so
+\[
+\dim U=n-2.
+\]
+For a chamber \(\pi\), retain the nearest left and right violation radii
+\[
+\ell(\pi),\rho(\pi)\in R.
+\]
+Fix any antipodal sign
+\[
+g(\pi^{\rm rev})=-g(\pi),
+\qquad
+g(\pi)\in\{\pm1\}.
+\]
+
+Define
+\[
+\Phi_g(\pi)=
+\begin{cases}
+e_{\ell(\pi)}-e_{\rho(\pi)},&
+\ell(\pi)\ne\rho(\pi),\\[1mm]
+g(\pi)\bigl(e_{\ell(\pi)}-e_\infty\bigr),&
+\ell(\pi)=\rho(\pi)<\infty,\\[1mm]
+0,&
+\ell(\pi)=\rho(\pi)=\infty.
+\end{cases}
+\]
+
+Then
+\[
+\Phi_g(\pi^{\rm rev})=-\Phi_g(\pi).
+\]
+Indeed reversal swaps \(\ell,\rho\) in the nonloop case, while a finite loop stays at the same radius and \(g\) changes sign.
+
+Moreover
+\[
+\Phi_g(\pi)=0
+\iff
+\ell(\pi)=\rho(\pi)=\infty
+\iff
+\pi\text{ is a directed one-change order}.
+\]
+Thus \(\Phi_g\) still has exact chamber zeros.
+
+The auxiliary Coxeter sphere has dimension \(n-1\), while the target has dimension only \(n-2\). Averaging on face barycenters and extending affinely gives an odd map
+\[
+S^{n-1}\to U,
+\]
+so Bourgin--Yang gives
+\[
+\dim \Phi_g^{-1}(0)\ge1.
+\]
+
+### Directed-edge interpretation
+
+Every nonzero chamber label is now an oriented edge on the state set \(R\):
+
+- if \(\ell\ne\rho\), use the actual edge \(\ell\to\rho\);
+- if \(\ell=\rho=d<\infty\) and \(g=+1\), reinterpret the finite loop as \(d\to\infty\);
+- if \(\ell=\rho=d<\infty\) and \(g=-1\), reinterpret it as \(\infty\to d\).
+
+Therefore any strictly positive carrier balance
+\[
+\sum_\pi\lambda_\pi\Phi_g(\pi)=0
+\]
+is exactly a nonnegative circulation in this folded nearest-radius digraph. Every occurring chamber label lies on a directed cycle of occurring labels.
+
+The desired chamber is still the genuine \(\infty\)-loop, which is the only chamber mapped to zero.
+
+### Spending the recovered dimension on one forced block relation
+
+Fix a prescribed original vertex \(a\). In a hypothetical counterexample every chamber is bad, so
+\[
+b_a(\pi)=g_{ar}(\pi)
+=
+\begin{cases}
++1,&a\text{ before }r,\\
+-1,&r\text{ before }a
+\end{cases}
+\]
+is a nonzero odd coordinate on every chamber.
+
+Append it:
+\[
+\widehat\Phi_{g,a}(\pi)
+=
+\bigl(\Phi_g(\pi),\,b_a(\pi)\bigr)
+\in
+U\oplus\mathbb R.
+\]
+The target dimension is
+\[
+(n-2)+1=n-1,
+\]
+so Borsuk--Ulam still applies.
+
+At a positive zero carrier \(F\),
+\[
+\sum_{\pi\in\mathcal V(F)}\lambda_\pi b_a(\pi)=0.
+\]
+Hence both signs of \(g_{ar}\) occur among the chambers of \(F\). Relative order of \(a\) and \(r\) can vary inside one permutahedron face iff \(a\) and \(r\) lie in the same face block. Therefore
+\[
+\boxed{
+\text{for every prescribed original }a,\text{ there is an exact folded-root zero carrier with }a,r\text{ in one block.}
+}
+\]
+
+This is a new structural lever unavailable in the dimension-tight scalar-loop formulation. One may choose the loop-folding gauge \(g\) independently of the appended block-forcing gauge \(g_{ar}\).
+
+The next target is to combine this forced \(a\)-\(r\) block relation with the terminal local-witness theorem, whose surviving disjoint branch has a unique two-vertex bridging block and total determining support at most ten.
+
+
+## Terminal two-vertex span-two bridge is impossible
+
+Assume a terminal disjoint single-sided span-two configuration in the dual-polarity nearest-witness reduction. By [[terminal_span_two_block_has_order_two]], the bridging face block has exactly two vertices, and the four consecutive status coordinates between the reflected determining windows are monochromatic in every chamber. Call their common value the terminal color.
+
+Both reflected witness orientations occur in the balanced carrier, hence both terminal colors occur. Since the chamber graph is connected, some chamber edge changes the terminal color. The proof of [[terminal_span_two_block_has_order_two]] shows that the only adjacent transposition capable of changing all four central statuses is the swap of the two bridge vertices. Thus there are adjacent chambers pi,pi' for which the four central statuses change from C,C,C,C to 1-C,1-C,1-C,1-C.
+
+Let a be the status immediately to the left of this four-status core. The bridge swap does not change a. The three consecutive statuses (a,C,C) form the span-two witness test obtained by shifting the selected left witness one step inward toward the center. Because the selected witness is nearest in the dual-polarity reduction, every closer span-two witness of either polarity is absent throughout the carrier. Therefore the endpoints of this three-bit window agree, so a=C.
+
+In pi' the same closer window is (a,1-C,1-C). The same nearestness condition gives a=1-C, contradiction.
+
+Hence the two-vertex bridge cannot occur. Together with the previously eliminated block sizes three and four and the impossible terminal alternating branch, this removes the entire disjoint single-sided terminal branch.
+
+The remaining terminal outcomes are only centered witnesses and reflected double/overlapping witnesses. This uses the global nearest-witness hypothesis and does not contradict local consistency counterexamples lacking that hypothesis.
+
+
+## Center-last witness ordering eliminates the centered terminal branch
+
+The local-witness labeling theorem allows the edges of the fixed witness path to be ordered arbitrarily before selecting the first represented witness edge of a bad status word.
+
+Choose an ordering in which the unique centered pendant edge is **last**.
+
+Then a chamber can receive the centered label only if its status word contains no forbidden witness represented by any noncentered edge. Using the dual-polarity witness family
+\[
+001,\ 011,\ 100,\ 110,\ 0101,\ 1010,
+\]
+this is impossible for every status-word length
+\[
+m\ge6.
+\]
+
+### Centered length-three case
+
+Up to reverse-complement/color symmetry, suppose the centered witness is
+\[
+001.
+\]
+Avoiding a noncentered span-two witness immediately to its left and right forces the adjacent statuses, when present, to give the five-bit word
+\[
+00010.
+\]
+If there is one further status on the right, then:
+
+- appending \(0\) creates the noncentered witness \(100\);
+- appending \(1\) creates the noncentered alternating witness \(0101\).
+
+Thus a word of length at least six cannot have a centered length-three witness as its only dual-polarity forbidden witness. The other centered length-three types follow by symmetry.
+
+### Centered alternating case
+
+Up to complement, suppose the centered self-reverse-complement witness is
+\[
+0101.
+\]
+When \(m\ge6\), there is one status on each side. Avoiding the neighboring span-two witnesses forces the left status to be \(1\) and the right status to be \(0\), giving
+\[
+101010.
+\]
+But this contains noncentered \(1010\) and \(0101\) witnesses. Contradiction.
+
+Hence for \(m\ge6\) the centered pendant edge is never selected under the center-last ordering.
+
+Since \(m=n-2\), for
+\[
+n\ge8
+\]
+the local-witness topology can be run with **no centered selected labels at all**.
+
+Therefore, after the already proved elimination of terminal disjoint single-sided configurations, the only terminal local-witness geometry that remains in the large-order regime is:
+
+\[
+\boxed{\text{reflected double/overlapping witnesses}.}
+\]
+
+This removes the centered terminal branch by a choice of equivariant labeling rather than by separate local case analysis.

@@ -16,6 +16,6 @@ Centered witnesses are themselves supported on one determining window, of size f
 - Kind: toolkit
 - Version: 1
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

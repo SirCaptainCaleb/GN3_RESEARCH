@@ -626,6 +626,35 @@ P\leftrightarrow Q
 \]
 This replaces the \(k\ge2\) no-direct-side-flip rule by an exact description of the only possible exception.
 
+### Local forbidden patterns and witness handoff
+
+The exact criterion
+[
+q(pi)le p(pi)+1
+]
+has a finite local form. A bad word has a zero followed by a one at distance at least two. Choose such a pair with minimum separation.
+
+If the separation is two, the three-bit subword is (001) or (011). If the separation is at least three, minimality forces every position immediately after the first zero to be (1), and every position immediately before the last one to be (0). Separation at least four would force an overlap carrying both values, so the only remaining case has separation three and subword (0101).
+
+Therefore
+[
+oxed{
+qle p+1
+iff
+epsilon_1cdotsepsilon_m	ext{ avoids }001, 011, 0101.
+}
+]
+
+Thus every failure of the exact two-cover criterion is witnessed on at most four consecutive status positions.
+
+Under reverse-complement, (001) and (011) exchange, while the alternating pattern is the centered self-reflecting type. These local witnesses are the inputs to the fixed witness-path topology developed later in [[local_witness_topology_and_the_finite_terminal_theorem]].
+
+Complementing all triple colors preserves path-cover number after reversing each path, so the opposite-polarity witnesses
+[
+110, 100, 1010
+]
+may be tracked simultaneously. This dual-polarity refinement is what removes the formerly unbounded symmetric-double witness branch.
+
 ---
 
 ## Section — The Norine–GN3 dictionary and Freudenthal geometry
@@ -767,9 +796,34 @@ This language is not needed for the proofs below, but it deserves a numbered pla
 The chamber geometry is shared with cube-geodesic problems. The local data differ. We may seek the stronger one-change conclusion for boundary tournaments, or work only in the auxiliary extensions for which directed one-change existence is equivalent to a two-cover. A broader theorem for base-dependent memory is a separate possible generalization. These distinctions concern respectively the conclusion, the input subclass, and the input class.
 
 
-### Further developments
+### Proof-transfer meta-conjecture
 
+The present GN3 problem and Norine-type antipodal cube-geodesic problems share the same global Freudenthal/Coxeter chamber geometry but differ in their local data.
 
+For GN3, the geodesic status comes from a base-independent two-memory rule
+[
+h(u,v,w)in{0,1},
+qquad
+h(w,v,u)=1-h(u,v,w).
+]
+A broader bounded-memory cube model may allow
+[
+g(S;u,v,w)
+]
+to depend on the current base set (S), subject to the corresponding antipodal reversal-complement identity. Ordinary Norine edge colorings belong naturally to the lower-memory side of that broader class.
+
+This motivates an independent meta-conjecture:
+
+> Whatever arguments ultimately close the boundary-tournament conjecture should contain a substantial portable core which, after suitable reformulation, seeds a proof of a generalized Norine geodesic conjecture.
+
+The most plausible portable ingredients are the chamber topology, antipodal symmetry, local witness-tree compression, carrier recurrence, and a relative-index/terminalization argument. The steps most likely to remain GN3-specific are the strong face-permutation arguments that use translation invariance of (h(u,v,w)), especially endpoint swaps and blockwise splicing.
+
+Accordingly the final proof should be decomposed after closure into:
+1. purely chamber-topological arguments;
+2. bounded-memory local arguments;
+3. genuinely GN3-specific translation-invariant arguments.
+
+The independent brainstorm [[meta_conjecture_gn3_closure_should_seed_generalized_norine]] records this research program. It is not required for the present conjecture, but it should remain visible while the terminalization theorem is developed.
 
 ---
 
@@ -2363,1887 +2417,325 @@ Thus a hypothetical obstruction of deletion distance \(k\ge2\) carries not merel
 
 ---
 
-## Section — From topological recurrence to local GN3 structure
-
-<!-- section_id: topological_recurrence_to_local_gn3_structure -->
-
-### From balanced recurrence to local reversal structure
-
-### Determining positions and positive face balance
-
-Let \(F=B_1|\cdots|B_k\) be a proper permutahedral face, with its blocks occupying consecutive positions. Assume its chamber roots admit a circulation strictly positive on every occurring root, as provided by [[convex_root_balance_and_bourgin_yang]]. Then every coordinate occurring as a first switch also occurs as a reflected last switch in the same face. Every chamber belongs to a directed root cycle, unless it has a zero root and is already an exact diagonal.
-
-This is stronger than choosing just one cycle. The following deductions explain what can be extracted without assuming that convex balance is already a two-cover.
-
-### Block separation with explicit determining windows
-
-A first switch at \(x\) is determined by the first \(x+1\) statuses and hence by vertex positions
-\[
-1,\ldots,x+3.
-\]
-A reflected last switch at \(x\) is determined by the last \(x+1\) statuses and hence by positions
-\[
-n-x-2,\ldots,n.
-\]
-
-**Lemma 7.1.** Suppose \(F\) has a chamber with first switch \(x\), a chamber with reflected last switch \(x\), and a block boundary after position \(j\) such that
-\[
-x+3\leq j\leq n-x-3.
-\]
-Then \(F\) contains a chamber with root zero.
-
-**Proof.** Use the block orders from the first witness in every block up to the boundary, and those from the second witness after it. Both determining windows remain unchanged. The resulting chamber has \(a=\bar b=x\). \(\square\)
-
-Consequently, if \(F\) contains no diagonal and the displayed interval of possible boundaries is nonempty, all positions
-\[
-x+3,\ldots,n-x-2
-\]
-lie in a single block. Its size is at least \(n-2x-4\).
-
-**Corollary 7.2.** Under strictly positive face balance and absence of a diagonal, let \(r\) be the least switch coordinate occurring in any chamber root of \(F\). If \(n\geq2r+6\), one block contains positions \(r+3,\ldots,n-r-2\). It also contains every nonempty corridor of this form for any larger occurring coordinate.
-
-**Proof.** Positive balance supplies both kinds of witness for \(r\), so Lemma 7.1 excludes all boundaries in its corridor. Corridors for larger coordinates are nested inside it. \(\square\)
-
-This gives a single block for all occurring root coordinates, not only those of a selected cycle. If \(n<2r+6\), this separation lemma gives no block conclusion. Near-central coordinates must be treated by a separate argument; their numerical location alone does not prove a bounded-support descent.
-
-### Cross-intersecting determining families
-
-Fix the orders of all blocks other than a chosen block \(B\), and fix a coordinate \(x\) whose two determining windows are disjoint. Let \(\mathcal L_x\) consist of the sets of labels of \(B\) occupying its positions in the left window in some chamber with first switch \(x\). Define \(\mathcal R_x\) analogously for reflected last switch \(x\). Witness orders of these sets inside the corresponding positions are retained when combining them.
-
-**Lemma 7.3.** If no chamber with these fixed outside orders has root zero, then every \(L\in\mathcal L_x\) intersects every \(R\in\mathcal R_x\).
-
-**Proof.** If the sets were disjoint, place each in its own determining positions using its witness order, and fill the remaining positions of \(B\) arbitrarily. The disjoint windows and the fixed outside orders preserve both witnesses. This produces a diagonal. \(\square\)
-
-The qualification about outside orders is essential: face balance supplies witnesses somewhere in \(F\), not automatically witnesses with every prescribed choice of outside block orders.
-
-If both families are nonempty, any member of \(\mathcal L_x\) is a transversal of \(\mathcal R_x\). An inclusion-minimal transversal \(T\) contained in it has, for each \(v\in T\), a member of \(\mathcal R_x\) meeting \(T\) exactly at \(v\); otherwise \(v\) could be removed. This preserves the private-witness mechanism without asserting an absolute bound on \(|T|\). Such a bound would require a bound on the number of determining positions inside \(B\).
-
-### Front motion with the witness hypotheses retained
-
-**Lemma 7.4.** Fix all outside block orders. Suppose a permutation of \(B\) realizes first switch \(x\), another realizes reflected last switch \(x\), and no permutation of \(B\) realizes a diagonal. Then an adjacent transposition within \(B\) changes the first switch coordinate.
-
-**Proof.** In the second witness, the first switch cannot equal \(x\). The adjacent-transposition graph of the permutations of \(B\) is connected. Along a path between the two witnesses, at least one swap changes the first switch. \(\square\)
-
-If positions \(j,j+1\) are swapped, only triple positions \(j-2,\ldots,j+1\) can change, clipped to \(1,\ldots,m\). Consequently only switch positions \(j-3,\ldots,j+1\) can change. If two resulting first-switch coordinates \(a<a'\) differ, the earlier coordinate \(a\) lies in this five-position interval; the word with first switch \(a'\) is constant through position \(a'\). Thus a long displacement has a monochromatic interval, while the cause of the displacement is local. The same statement holds for last switches by reversal.
-
-### The conversion problem after face recurrence
-
-Boundary antisymmetry turns each specified non-tight triple into its reversed tight triple. By itself, however, the preceding face geometry does not yet synchronize arbitrary left and right witnesses: a moved front need not already be one exterior vertex reversing two required end edges, and witnesses with different outside block orders need not have disjoint exposed edges.
-
-The next subsection resolves precisely this issue without trying to synchronize two arbitrary chambers. Instead one minimizes switch span inside the carrier face and transports the **same physical carrier** to the two extreme fronts of a single chamber. The common-block conclusion above keeps both tests inside the face, while minimality prevents inward front motion. This produces the required local reversal structure and removes the formerly global synchronization problem.
-
-The local path-cover mechanisms used after that compression are recorded in [[path_disturbance_endpoint_reversal_descent_or_an_omission_swap]], [[endpoint_transport_and_small_support_gluing_the_remaining_lemma]], and [[defect_lines_and_spanning_order_compression_the_remaining_lemma]].
-
-
-### Recurrent-face and minimum-span compression
-
-
-### Compact switch span
-
-For a spanning order
-\[
-\pi=(v_1,\ldots,v_n)
-\]
-whose status word has first switch \(a\) and last switch \(b\), put
-\[
-d(\pi)=b-a.
-\]
-
-**Lemma 7.5 (compact switch span).** If \(d(\pi)\le 2\), then \(H\) has a spanning two-cover.
-
-**Proof.** Cut the order after \(v_{a+2}\). Every status internal to the left block has index at most \(a\), hence has the first-run color. Every status internal to the right block has index at least \(a+3>b\), hence has the last-run color. A monochromatic block is a tight path in its displayed orientation when its color is tight, and in the reverse orientation when its color is non-tight. Thus the two blocks can be oriented as tight paths. \(\square\)
-
-The same cut calculation gives a useful next range.
-
-**Lemma 7.6 (small middle from span at most five).** If
-\[
-3\le d(\pi)\le5,
-\]
-then \(H\) has a spanning three-cover
-\[
-L\mid M\mid R
-\]
-in which
-\[
-|M|=d(\pi)-2\le3.
-\]
-
-**Proof.** Put
-\[
-L=(v_1,\ldots,v_{a+2}),\qquad
-M=\{v_{a+3},\ldots,v_b\},\qquad
-R=(v_{b+1},\ldots,v_n).
-\]
-All internal statuses of \(L\) have the first-run color and all internal statuses of \(R\) have the last-run color, so each outer block has a tight orientation. The middle has order at most three and is therefore Hamiltonian: orders one and two are vacuous, and on three vertices one of the two reverse orders is tight by boundary antisymmetry. \(\square\)
-
-### A recurrent carrier face has no large global residue
-
-Let
-\[
-F=B_1|\cdots|B_k
-\]
-be a carrier face supplied by Theorem 6.1, so every chamber root occurring in \(F\) lies on a directed root cycle unless it is zero. Assume first that \(F\) contains no zero root.
-
-Choose a chamber
-\[
-\pi=(v_1,\ldots,v_n)\in\mathcal V(F)
-\]
-for which \(d=b-a\) is minimum among the chambers of \(F\). Put
-\[
-m=n-2,\qquad c=m-b,
-\]
-so the root of \(\pi\) is the arc
-\[
-a\longrightarrow c.
-\]
-
-Because this arc lies on a directed root cycle, choose a simple such cycle and let \(r\) be its least coordinate. Every arc \(x\to y\) on the cycle comes from a chamber with
-\[
-x+y=m-d(\text{that chamber})\le m-1.
-\]
-
-If
-\[
-n<2r+6,
-\]
-then \(m\le2r+3\). For a neighbor \(s\) of \(r\) on the cycle,
-\[
-2r\le r+s\le m-1\le2r+2.
-\]
-There are no loops because \(F\) has no zero root, so \(s-r\in\{1,2\}\). The chamber realizing \(r\to s\) has switch span
-\[
-m-r-s\le2,
-\]
-and Lemma 7.5 gives a two-cover.
-
-Hence, in a counterexample,
-\[
-n\ge2r+6.
-\]
-Corollary 7.2 then gives one block \(B\) of \(F\) containing the whole corridor
-\[
-r+3,\ldots,n-r-2=r+3,\ldots,m-r.
-\]
-Since \(a,c\ge r\), whenever \(d=b-a\ge6\) the position interval
-\[
-a+4,\ldots,b-1
-\]
-lies inside this same block.
-
-This allows one physical vertex to be tested at both extreme fronts without leaving the face.
-
-**Theorem 7.7 (one-carrier compression in a recurrent face).** Suppose \(H\) has no spanning two-cover. Suppose \(F\) has positive balance on every chamber and contains no zero root. Let \(\pi\in\mathcal V(F)\) minimize switch span in \(F\). If \(d(\pi)\ge6\), then \(H\) contains a Hamiltonian support of order four or five.
-
-**Proof.** Let
-\[
-W=\{v_{a+4},\ldots,v_{b-1}\}.
-\]
-Then \(|W|=d-4\ge2\), and all these positions lie in the single face block \(B\).
-
-Fix \(w\in W\). First permute only positions \(a+4,\ldots,b-1\) inside \(B\) so that \(w\) occupies position \(a+4\). This preserves both extreme switches: the first switch is determined through position \(a+3\), while the last switch \(b\) is determined by positions \(b,\ldots,n\). Now swap positions \(a+3,a+4\). No switch before \(a\) can be created, and \(b\) is outside the affected window. If the first switch moved to the right, the new chamber of \(F\) would have smaller switch span, contrary to the choice of \(\pi\). Therefore the first switch remains \(a\).
-
-Let \(\alpha\) be the first-run color. If \(\alpha=1\), the preceding statement says that \(w\) reverses the terminal edge of the tight-oriented left outer block. If \(\alpha=0\), the left outer block is tight after reversal and the same statement says that \(w\) reverses its initial edge.
-
-Independently restart from \(\pi\), place the same \(w\) at position \(b-1\), and swap positions \(b-1,b\). The first switch is now outside the affected window. If the last switch moved left, the switch span would decrease. Hence the last switch remains \(b\). Writing \(\omega\) for the last-run color, \(w\) reverses the terminal edge of the tight-oriented right outer block when \(\omega=0\), and its initial edge when \(\omega=1\).
-
-The two exposed edges are vertex-disjoint because \(d\ge6\).
-
-If \(\alpha\ne\omega\), the two reversals have the same endpoint type: terminal-terminal for \((\alpha,\omega)=(1,0)\), and initial-initial for \((0,1)\). A common reverser of two disjoint same-type end edges gives a Hamiltonian four-support. For completeness, in the terminal-terminal case, if the two tight paths end in \(x_0,x_1\) and \(y_0,y_1\), then
-\[
-(w,x_1,x_0),\qquad(w,y_1,y_0)
-\]
-are tight. Exactly one of
-\[
-(x_1,w,y_1),\qquad(y_1,w,x_1)
-\]
-is tight. In the first case
-\[
-(x_1,w,y_1,y_0)
-\]
-is a tight four-path; in the second
-\[
-(y_1,w,x_1,x_0)
-\]
-is. The initial-initial case is symmetric.
-
-Suppose now that \(\alpha=\omega\). The two reversals have mixed endpoint type. Up to symmetry write the tight-oriented exposed edges as
-\[
-\ldots,a_0,a_1
-\qquad\text{and}\qquad
-p_1,p_2,\ldots
-\]
-so that
-\[
-(w,a_1,a_0),\qquad(p_2,p_1,w)
-\]
-are tight. Exactly one of
-\[
-(p_1,w,a_1),\qquad(a_1,w,p_1)
-\]
-is tight. The first alternative gives the Hamiltonian five-path
-\[
-(p_2,p_1,w,a_1,a_0).
-\]
-In the second alternative \(w\) is a parallel middle between \(a_1\) and \(p_1\).
-
-There are at least two choices of \(w\in W\). If neither gives a Hamiltonian five-support, choose distinct \(w,w'\) with
-\[
-(a_1,w,p_1),\qquad(a_1,w',p_1)
-\]
-tight. Exactly one of
-\[
-(w,a_1,w'),\qquad(w',a_1,w)
-\]
-is tight. Accordingly
-\[
-(w,a_1,w',p_1)
-\quad\text{or}\quad
-(w',a_1,w,p_1)
-\]
-is a tight four-path. Thus a Hamiltonian support of order four or five always occurs. \(\square\)
-
-The proof deliberately uses the same physical carrier and two exposed edges from one chamber. It therefore does not require the false implication that two distinct reversers of one common edge force a four-support, and it does not require exposed edges belonging to two different witness orders to be disjoint.
-
-Combining Lemmas 7.5–7.6 with Theorem 7.7 gives the non-diagonal face conclusion:
-\[
-\boxed{
-\begin{array}{c}
-\text{positively balanced carrier face with no zero root}
-\\[2mm]\Longrightarrow\\[2mm]
-\text{two-cover}
-\ \vee\
-\text{spanning three-cover with a component of order }\le3
-\ \vee\
-\text{Hamiltonian support of order }4\text{ or }5.
-\end{array}}
-\]
-
-Thus the coordinated face structure eliminates the genuinely global giant-block residue. A nonzero recurrent chamber cannot remain trapped in an unbounded front-motion configuration.
-
-### The diagonal branch is absorbed by global minimum span
-
-A zero root need not itself be a two-cover, so it must not be silently identified with the exact target. There is, however, a face-independent version of the preceding carrier argument which absorbs this branch as well.
-
-**Theorem 7.8 (global minimum-span compression).** Let \(H\) be a boundary \(3\)-tournament with no spanning two-cover. Choose a spanning order \(\pi\) with globally minimum switch span \(d=b-a\). Then exactly one of the following local outcomes occurs:
-
-1. \(3\le d\le5\), and \(H\) has the spanning three-cover of Lemma 7.6 with a component of order at most three;
-2. \(d\ge6\), and \(H\) contains a Hamiltonian support of order four or five.
-
-**Proof.** A counterexample has no order with at most one switch, because such an order already splits into two monochromatic tight orientations. Lemma 7.5 excludes \(d\le2\).
-
-For \(3\le d\le5\), apply Lemma 7.6.
-
-Assume \(d\ge6\). Now the interval
-\[
-a+4,\ldots,b-1
-\]
-may be permuted freely in the full permutation space, rather than merely inside one face block. Repeat verbatim the two carrier tests from Theorem 7.7. If either extreme front moved inward, the resulting spanning order would have smaller switch span, contradicting global minimality. Thus the same carrier reverses the two disjoint exposed end edges. The same-end and mixed-end arguments above give a Hamiltonian support of order four or five. \(\square\)
-
-This theorem is stronger as a compression statement than the topology needs: once a counterexample is assumed, large switch span is already impossible as an independent geodesic obstruction.
-
-### Closure of the geodesic/topological branch
-
-The root topology and the global geodesic extremal argument now meet at one precise interface.
-
-Theorem 6.1 upgrades a convex zero to recurrence for every chamber of a carrier face. Theorem 7.7 converts every nonzero recurrent branch into a two-cover or bounded local GN3 structure. A zero-root chamber is not itself declared solved; Theorem 7.8 instead shows that the diagonal branch cannot retain an independent global geodesic obstruction either.
-
-Consequently Article VII has no remaining unbounded permutahedral or antipodal-geodesic residue. In a hypothetical counterexample the output of the entire geodesic program is already local:
-\[
-\boxed{
-\text{small-middle spanning three-cover}
-\quad\vee\quad
-\text{Hamiltonian }4\text{- or }5\text{-support}.
-}
-\]
-
-This is a handoff, not a proof of the grand conjecture. In particular it does not assert
-\[
-R\cap A(R)\ne\varnothing.
-\]
-What has been closed is the specifically geodesic/topological conversion problem: balanced recurrence no longer needs to be synchronized into a global reachability state. Its only surviving consequences are the bounded GN3 configurations handled by the local path-cover machinery.
-
-
-### Exact-deficiency sharpening: the one-hole four-support handoff
-
-
-### Exact deficiency one in a minimum counterexample
-
-The exact inversion coordinates from [[spanning_orders_and_defect_helly]] sharpen the minimum-span conclusion further. For a spanning order \(\pi\), write
-\[
-p(\pi)=\min\{i:\epsilon_i=0\},\qquad
-q(\pi)=\max\{i:\epsilon_i=1\},
-\]
-and
-\[
-\delta(\pi)=q(\pi)-p(\pi)-1.
-\]
-By the exact inversion-window criterion,
-\[
-\operatorname{pc}(H)\le2
-\iff
-\exists\pi\text{ with }\delta(\pi)\le0.
-\]
-Thus every spanning order of a counterexample has \(\delta\ge1\).
-
-**Theorem 7.9 (minimum exact deficiency is one).** Let \(H\) be a minimum counterexample to the two-cover conjecture. Then
-\[
-\min_\pi\delta(\pi)=1.
-\]
-More precisely, for every \(x\in V(H)\) and every displayed two-cover
-\[
-H-x=P\mid Q
-\]
-with \(P=(p_1,\ldots,p_r)\) and \(Q=(q_1,\ldots,q_s)\), the spanning order
-\[
-\pi=(p_1,\ldots,p_r,x,q_s,\ldots,q_1)
-\]
-has \(\delta(\pi)=1\).
-
-**Proof.** First \(r,s\ge3\). Indeed, if one deletion-cover component had order at most two, adjoining \(x\) would give a set of order at most three, hence a Hamiltonian tight path; together with the other displayed component this would two-cover \(H\).
-
-In \(\pi\), every status wholly inside \(P\) is \(1\), while every status wholly inside \(Q^{\rm rev}\) is \(0\). Hence only the three junction statuses
-\[
-(p_{r-1},p_r,x),\qquad
-(p_r,x,q_s),\qquad
-(x,q_s,q_{s-1})
-\]
-can interrupt the pattern \(1^*0^*\). Consequently
-\[
-p(\pi)\ge r-1,\qquad q(\pi)\le r+1,
-\]
-so
-\[
-\delta(\pi)=q(\pi)-p(\pi)-1\le1.
-\]
-Since \(H\) is a counterexample, the exact inversion-window criterion gives \(\delta(\pi)\ge1\). Therefore \(\delta(\pi)=1\). \(\square\)
-
-Equality forces
-\[
-p(\pi)=r-1,\qquad q(\pi)=r+1.
-\]
-Thus the first and third junction statuses are forced:
-\[
-(p_{r-1},p_r,x)\text{ is non-tight},
-\qquad
-(x,q_s,q_{s-1})\text{ is tight}.
-\]
-By boundary reversal,
-\[
-(x,p_r,p_{r-1})
-\]
-is tight as well. Hence the omitted vertex \(x\) reverses the displayed terminal edge of each deletion path:
-\[
-(x,p_r,p_{r-1}),\qquad
-(x,q_s,q_{s-1})
-\quad\text{are tight}.
-\]
-
-This is exactly the deficiency-one instance of the canonical partial-cover construction in [[convex_root_balance_and_bourgin_yang]]: the exact root carries a two-path cover with one missing vertex, and the missing vertex controls both exposed terminal edges.
-
-### The exact geodesic handoff is a four-support
-
-The preceding double reversal has an immediate bounded consequence.
-
-**Corollary 7.10 (canonical four-support from exact deficiency one).** Let \(H\) be a minimum counterexample. For every deletion cover
-\[
-H-x=P\mid Q,
-\]
-the terminal edges of \(P\) and \(Q\), together with \(x\), contain a Hamiltonian four-support. Its complement is non-Hamiltonian and has path-cover number exactly two.
-
-**Proof.** Write the terminal edges of the displayed tight paths as
-\[
-\ldots,a_0,a_1,
-\qquad
-\ldots,b_0,b_1.
-\]
-Theorem 7.9 gives
-\[
-(x,a_1,a_0),\qquad(x,b_1,b_0)
-\]
-tight. Exactly one of
-\[
-(a_1,x,b_1),\qquad(b_1,x,a_1)
-\]
-is tight. In the first case
-\[
-(a_1,x,b_1,b_0)
-\]
-is a tight Hamiltonian four-path; in the second,
-\[
-(b_1,x,a_1,a_0)
-\]
-is.
-
-Let \(K\) be this four-set. It is proper, since otherwise \(H\) itself would be Hamiltonian. By minimality, \(H-K\) has path-cover number at most two. It cannot be Hamiltonian, because a Hamilton path on \(H-K\) together with the displayed Hamilton path on \(K\) would two-cover \(H\). Hence
-\[
-\operatorname{pc}(H-K)=2
-\]
-and \(H-K\) is non-Hamiltonian. \(\square\)
-
-This sharpens the minimum-counterexample endpoint of the geodesic investigation. The width-three switch-span formulation remains useful for arbitrary counterexamples and for the recurrent-face compression, but after minimum-counterexample induction the exact inversion coordinate removes the mixed-end ambiguity entirely:
-\[
-\boxed{
-\text{minimum counterexample}
-\Longrightarrow
-\text{canonical Hamiltonian four-support with non-Hamiltonian two-coverable complement}.
-}
-\]
-
-Thus no synchronization of an entire directed root cycle is needed to finish Article VII's own task. The exact-root coordinate already reaches the bounded local interface. What remains after this point is the local four-support/path-cover analysis, not an antipodal-geodesic obstruction.
-
-
-### Minimum-hole synchronization
-
-Minimum deletion holes synchronize all omitted vertices as common reversers of the same two terminal edges; proof to follow.
-
-Proof. Because X has minimum cardinality, H-X cannot be Hamiltonian: otherwise adding any one x in X as a singleton would two-cover H-(X minus {x}). Likewise neither P nor Q can have order at most two, because adjoining x to such a component produces a Hamiltonian set of order at most three and again yields a two-cover after deleting only X minus {x}. Hence both displayed paths have order at least three.
-
-Fix x in X and put J=H-(X minus {x}). By minimality of X, pc(J)>2, while J-x=P|Q. Consider the order obtained by writing P, then x, then Q in reverse. All statuses internal to P are tight and all statuses internal to the reversed Q are non-tight. If r=|P|, the first non-tight status is no earlier than r-1 and the last tight status is no later than r+1. Therefore its exact deficiency is at most one. Since J has no two-cover, the inversion-window criterion forces the deficiency to be at least one. Equality follows.
-
-Equality pins the first and last junction positions. Therefore every x in X reverses both terminal edges, as claimed. This completes the proof.
-
-For each x in X, the middle triple on the two exposed endpoints has exactly one tight orientation. Combining it with the two reversal triples gives a Hamiltonian four-support through x. Removing that four-support and then deleting X without x leaves prefixes of P and Q as a two-cover. Hence the two-cover deletion distance of the complement drops by at least one.
-
-### Bounded central blocks and short cycles in recurrent exact-root faces
-
-### Exact roots and the hypotheses
-
-For a spanning order \(\pi\) of a boundary \(3\)-tournament \(H\) on \(n\) vertices, write \(m=n-2\), let \(p(\pi)\) be the first non-tight status position, and let \(c(\pi)=m+1-q(\pi)\), where \(q(\pi)\) is the last tight status position. Thus \(c(\pi)=p(\pi^{\mathrm{rev}})\). The exact root is \(e_p-e_c\), and the exact deficiency is
-\[
-\delta(\pi)=m-p(\pi)-c(\pi).
-\]
-These conventions and the two-cover criterion are established in [[spanning_orders_and_defect_helly]].
-
-Let \(F\) be an ordered-partition face of the permutahedron. Assume:
-
-1. \(\delta(\pi)>0\) for every chamber \(\pi\) of \(F\);
-2. every coordinate occurring as a tail of an exact root on \(F\) also occurs as a head, and conversely;
-3. \(p(\pi)\ne c(\pi)\) for every chamber of \(F\).
-
-Hypothesis 2 is weaker than positive root balance. In particular, the positive carrier theorem of [[convex_root_balance_and_bourgin_yang]] supplies it. No minimum-counterexample hypothesis is used.
-
-**Theorem (bounded central block).** Put
-\[
-s=\min_{\pi\in\mathcal V(F)}\min\{p(\pi),c(\pi)\},
-\qquad L=m-2s.
-\]
-There is a single face block \(B\), with \(b=|B|\le7\), such that the numbers \(\ell,r\) of positions before and after \(B\) satisfy
-\[
-\ell,r\in\{s,s+1\}.
-\]
-Every other face block has order at most two. More precisely:
-\[
-\begin{array}{c|c|c}
-(\ell,r)& b\text{ in terms of }L&\text{upper bound on }b\\ \hline
-(s,s)&L+2&7\\
-(s,s+1)\text{ or }(s+1,s)&L+1&5\\
-(s+1,s+1)&L&7.
-\end{array}
-\]
-In particular \(2\le L\le7\), and every exact-root coordinate on \(F\) lies in
-\[
-\{s,s+1,\ldots,s+L-1\}\subseteq\{s,\ldots,s+6\}.
-\]
-
-### Locating the central block
-
-Coordinate recurrence gives both a chamber with \(p=s\) and a chamber with \(c=s\). Since no root is zero, a chamber with \(p=s\) has \(c\ge s+1\). Its positive deficiency gives
-\[
-m\ge2s+2,
-\]
-so \(L\ge2\).
-
-The event \(p=s\) is determined by positions \(1,\ldots,s+2\); the event \(c=s\) is determined by positions \(n-s-1,\ldots,n\). If a block boundary followed a position
-\[
-s+2\le j\le n-s-2,
-\]
-the independent block orders from the two witnesses could be combined, giving \(p=c=s\). Consequently one block \(B\) contains every position
-\[
-s+2,\ldots,n-s-1.
-\]
-Thus \(\ell,r\le s+1\).
-
-Every chamber has \(p,c\ge s\). Hence all status positions \(1,\ldots,s-1\) are tight in every chamber, and all the corresponding statuses read inward from the right end are also tight in every chamber. If \(\ell\le s-2\), then \(B\) contains the three positions \(s-1,s,s+1\). Swapping the first and third vertices of this window stays in \(F\) and reverses its status, contradicting uniform tightness at \(s-1\). Therefore
-\[
-s-1\le\ell,r\le s+1.
-\]
-
-Set
-\[
-\alpha=s+2-\ell,\qquad\beta=s+2-r.
-\]
-These numbers belong to \(\{1,2,3\}\). A witness for \(p=s\) uses exactly the first \(\alpha\) vertices of \(B\), together with some orders of the blocks before \(B\). A witness for \(c=s\) uses exactly the first \(\beta\) vertices of \(B\) read inward from the right, together with some orders of the blocks after \(B\). In particular
-\[
-b=L+\alpha+\beta-2.
-\]
-
-Let \(\mathcal L,\mathcal R\) be the families of supports of these ordered witness tuples, allowing all outside block orders on the relevant side. Both families are nonempty. Every member of \(\mathcal L\) meets every member of \(\mathcal R\): disjoint witness tuples can be placed at opposite ends of \(B\), with their own left and right outside orders, and the remaining positions filled arbitrarily. This would give \(p=c=s\).
-
-The independent choices of outside orders are legitimate here because the two determining windows are disjoint and involve disjoint collections of outside blocks. We are not combining two arbitrary witnesses that constrain the same outside block.
-
-If \(\alpha=3\), the determining status at \(s\) is wholly inside \(B\). Every three-element subset of \(B\) therefore supports a left witness: one of the two reversed orders, for any fixed middle vertex, is non-tight. But a right witness uses \(\beta\) vertices, and
-\[
-b-\beta=L+1\ge3.
-\]
-A left witness can be chosen disjoint from it, a contradiction. The case \(\beta=3\) is symmetric. Thus \(\alpha,\beta\in\{1,2\}\), which proves \(\ell,r\in\{s,s+1\}\).
-
-A block before \(B\) with three consecutive positions would contain a status window starting at most at \(\ell-2\le s-1\), where tightness is uniform. Boundary reversal rules this out. The same argument read inward from the right treats every block after \(B\). Thus all exterior blocks have order at most two.
-
-### Bounding the central block by disjoint witnesses
-
-We use inward orders on both sides: on the right these are the orders in \(\pi^{\mathrm{rev}}\). A first non-tight inward status on the right determines \(c\), exactly as one on the left determines \(p\). This makes the following arguments symmetric.
-
-**Case \(\alpha=\beta=2\).** The families \(\mathcal L,\mathcal R\) consist of two-element sets and are cross-intersecting. Fix \(U\in\mathcal L\) and \(T\in\mathcal R\). Suppose \(b\ge8\). Choose a three-set \(C\subseteq B\setminus T\), and then a three-set
-\[
-D\subseteq B\setminus(U\cup C).
-\]
-The second choice is possible because \(|U\cup C|\le5\).
-
-Place \(C\) first in \(B\), in an inward order with its internal triple non-tight. Its first pair avoids \(T\), so that pair is not a member of \(\mathcal L\), whatever left outside orders are used. Thus the status at \(s\) is tight, and the internal status at \(s+1\) is non-tight: \(p=s+1\). Place \(D\) at the right end, likewise with its inward internal triple non-tight. Its first inward pair avoids \(U\), so \(c=s+1\). The two placements are disjoint, producing a zero root. Hence \(b\le7\).
-
-**Case \(\alpha=1,\beta=2\).** Let \(A\subseteq B\) be the nonempty set of singleton left witnesses and choose \(a\in A\). Every member of \(\mathcal R\) contains \(a\).
-
-Suppose \(b\ge6\). Any three-set in \(B\setminus\{a\}\), placed inward at the right end with its internal triple non-tight, gives \(c=s+1\): its first pair cannot belong to \(\mathcal R\). Coordinate recurrence therefore supplies a chamber with \(p=s+1\).
-
-Retain the first two \(B\)-vertices, in their order, and the left outside orders of this witness; denote their support by \(U\). They determine \(p=s+1\), because \(\ell=s+1\). Choose a three-set in
-\[
-B\setminus(U\cup\{a\}),
-\]
-which is possible for \(b\ge6\). Place it inward at the right end with non-tight internal triple. This again gives \(c=s+1\), independently of the left witness, a contradiction. Thus \(b\le5\). The case \(\alpha=2,\beta=1\) is symmetric.
-
-**Case \(\alpha=\beta=1\).** Cross-intersection of the two nonempty singleton families implies that both are \(\{\{z\}\}\) for one vertex \(z\in B\). A witness for \(p=s\) must therefore start \(B\) with \(z\), and a witness for \(c=s\) must end \(B\) with \(z\). We do not assert that every choice of outside orders realizes either witness. Whenever the first \(B\)-vertex is different from \(z\), the status at \(s\) is tight for every outside order.
-
-Define \(\mathcal L'\) to consist of supports of ordered pairs that occur as the first two \(B\)-vertices in some chamber with \(p=s+1\). Define \(\mathcal R'\) analogously for \(c=s+1\). Coordinate recurrence implies that either both families are empty or both are nonempty.
-
-If both are empty and \(b\ge6\), choose disjoint three-sets at the two ends of \(B\). Order each inward so that its first vertex is not \(z\) and its internal triple is non-tight. This is always possible: if the set contains \(z\), put \(z\) in the middle and choose the appropriate order of the other two vertices. The statuses at \(s\) are tight; the statuses at \(s+1\) are tight because the pair families are empty; and the internal statuses at \(s+2\) are non-tight. Hence \(p=c=s+2\), a contradiction.
-
-If both families are nonempty, they are cross-intersecting: disjoint ordered witnesses for \(p=c=s+1\) could again be combined with independent outside orders. Fix \(U\in\mathcal L'\) and \(T\in\mathcal R'\). If \(b\ge8\), choose disjoint three-sets
-\[
-C\subseteq B\setminus T,\qquad D\subseteq B\setminus U
-\]
-as in the first case. Order them inward with first vertex different from \(z\) and internal triple non-tight. The statuses at \(s\) are tight. Their first pairs avoid respectively \(T,U\), so cross-intersection excludes membership in \(\mathcal L',\mathcal R'\); the statuses at \(s+1\) are therefore tight for every outside order. Consequently \(p=c=s+2\), again a contradiction. Thus \(b\le7\).
-
-This proves all three bounds in the table. Finally
-\[
-p+c\le m-1=2s+L-1,\qquad p,c\ge s
-\]
-gives \(p,c\le s+L-1\), completing the theorem.
-
-### A finite reduction of the nonzero-cycle branch
-
-Translate every coordinate by \(-s\). The exact-root digraph then uses at most seven coordinates, and every simple directed cycle has length at most seven.
-
-There is also a bounded description in terms of actual vertices. Keep \(B\) and the complete outside blocks meeting the last two positions before \(B\) or the first two positions after it. Because exterior blocks have order at most two, at most three vertices are retained on either side. Thus at most
-\[
-7+3+3=13
-\]
-actual vertices affect the varying exact-root labels.
-
-To verify this, the uniform statuses before \(s\) make those earlier tests irrelevant. The first potentially non-tight window on either side begins no earlier than two positions before \(B\). Moreover
-\[
-p\le n-s-3\le n-r-2,
-\]
-so the first non-tight window on the left ends within \(B\); the symmetric statement holds on the right. Hence all determining triples use the retained vertices. Orders of all other blocks may be fixed arbitrarily without changing the attainable root labels. Coordinate recurrence is preserved.
-
-This is a uniform finite reduction of the nonzero exact-root face geometry. It does not identify the retained induced tournament as a counterexample, and it does not reduce the grand conjecture to tournaments of order thirteen.
-
-If \(k=\kappa_2(H)>0\), a chamber with \(p=s\) satisfies
-\[
-k\le\delta(\pi)\le L-1\le6.
-\]
-Consequently a positive exact-root carrier in a tournament with \(k\ge7\) must contain a zero-root chamber.
-
-### The remaining conversion
-
-For a positively balanced exact-root face whose chambers all have positive deficiency, the proved alternative is now:
-\[
-\text{a chamber with }p=c
-\quad\text{or}\quad
-\text{the bounded central-block configuration above}.
-\]
-A zero root gives equally long canonical tight paths but may leave a nonempty hole. The bounded alternative likewise gives no spanning cover by itself. Neither branch can therefore be declared closed as a proof of the grand conjecture.
-
-The new reduction uses the full ordered-partition freedom and coordinate recurrence. It repairs the earlier unjustified identification of the central block with its guaranteed corridor: their sizes need not be equal, but the exact determining windows restrict the surplus to zero, one, or two, and the case analysis bounds the entire block.
-
-
-### Sharpening the central block bound to four
-
-The preceding bound can be strengthened by using two-cover certificates as well as zero-root certificates. Keep its notation. Read the right side inward, so that its first non-tight coordinate is \(c\).
-
-**Lemma (disjoint nonedges on five vertices).** Let \(E,F\) be nonempty families of two-element subsets of a five-element set, and suppose every member of \(E\) meets every member of \(F\). Then there are disjoint pairs \(e\notin E\), \(f\notin F\).
-
-**Proof.** If not, for every two disjoint pairs \(e,f\), exactly one of \(e\in E\) and \(f\in F\) holds: both are excluded by cross-intersection, and neither is excluded by the supposition. Any two pairs sharing a vertex have a common disjoint pair, namely the remaining two vertices. Consequently membership in \(E\) is the same for any two pairs sharing a vertex. The line graph of the complete graph is connected, so \(E\) is either empty or all pairs. The first contradicts its nonemptiness, and the second forces \(F\) to be empty. \(\square\)
-
-**Lemma (two triples on six vertices).** Let \(E,F\) be nonempty cross-intersecting families of pairs on a six-element set \(W\). Either there is a partition \(W=C\sqcup D\), with \(|C|=|D|=3\), such that
-\[
-|E\cap\binom C2|\le1,\qquad |F\cap\binom D2|\le1,
-\]
-or \(E\) and \(F\) are both the full star at the same vertex.
-
-**Proof.** By symmetry, a family with at most two pairs may be taken to be \(F\). If \(F\) is one pair, put that pair in \(D\); its complement \(C\) contains no \(E\)-pair. If \(F\) consists of two disjoint pairs, every \(E\)-pair lies in their four-element union. Put the two remaining vertices and one vertex of that union in \(C\). If \(F=\{\{z,a\},\{z,b\}\}\), every \(E\)-pair either contains \(z\) or equals \(\{a,b\}\). Put \(z,a\) and one vertex outside \(\{z,a,b\}\) in \(D\). In each case the required inequalities follow.
-
-Assume both families have at least three pairs. If one contains two disjoint pairs, the other is supported on their four-element union and is a subgraph of \(K_{2,2}\). With at least three edges it also contains disjoint pairs, so both families are supported on the same four vertices. Put two of those vertices and one exterior vertex in each triple.
-
-Otherwise both families are pairwise intersecting. A pairwise-intersecting graph is a star or a triangle. If one is a triangle, the other must be that triangle, and splitting its vertices one versus two suffices. If both are stars, cross-intersection and their having at least three edges force a common center. Unless both stars are full, put the center and a missing neighbor in the triple assigned to a nonfull star, together with any other vertex. That triple contains at most one edge of its assigned star, while the other triple avoids the center. \(\square\)
-
-Whenever a triple contains at most one forbidden pair, its two remaining pair edges have a common vertex. Use that vertex as the middle. Both reverse orders then have permitted first pairs, and boundary antisymmetry lets us choose either internal status.
-
-**Theorem (four central vertices and the remaining cases).** Under the hypotheses of the bounded-central-block theorem, only the following cases can occur:
-\[
-\begin{array}{c|c|c}
-(\ell,r)&|B|&L\\ \hline
-(s+1,s+1)&2\text{ or }4&2\text{ or }4\\
-(s+1,s)\text{ or }(s,s+1)&3&2.
-\end{array}
-\]
-Thus the complete central block has at most four vertices. All varying root coordinates lie in \(\{s,s+1,s+2,s+3\}\), and at most ten actual vertices determine the root labels.
-
-**Proof.** We give the exclusions in decreasing block size.
-
-For \(\alpha=\beta=2\), use the pair families \(E=\mathcal L,F=\mathcal R\) at coordinate \(s\). For \(\alpha=\beta=1\), use \(E=\mathcal L',F=\mathcal R'\) at coordinate \(s+1\), with the distinguished singleton witness \(z\) from the preceding proof. In the latter case the two pair families are simultaneously empty or nonempty by coordinate recurrence. In either case, disjoint witnesses would give a zero root, so nonempty pair families are cross-intersecting.
-
-**Seven vertices.** If the pair families are empty, two disjoint triples with non-tight internal status give a zero root, arranging \(z\) in the middle of its triple when necessary. Otherwise choose \(U\in E,T\in F\). If \(U\ne T\), they intersect in one vertex. There are disjoint triples \(C\subseteq B\setminus T\), \(D\subseteq B\setminus U\): put the unique vertex of \(U\setminus T\) in \(C\), the unique vertex of \(T\setminus U\) in \(D\), and split the four vertices outside \(U\cup T\) two and two. Their first pairs cannot be forbidden. Choose non-tight internal statuses to obtain \(p=c=s+1\) when \(\alpha=\beta=2\), or \(p=c=s+2\) when \(\alpha=\beta=1\). In the latter case make the first vertex different from \(z\), placing \(z\) in the middle if present.
-
-If no unequal \(U,T\) exist, both families consist of the same single pair. Choose disjoint triples which separate the two vertices of that pair; each triple then has no forbidden pair. The same construction applies. Thus seven vertices are impossible.
-
-**Six vertices.** Empty pair families again immediately give a zero root. Otherwise apply the six-vertex lemma. For \(\alpha=\beta=2\), a partition into two triples containing at most one forbidden pair each permits both internal statuses to be chosen non-tight; this gives \(p=c=s+1\).
-
-For \(\alpha=\beta=1\), choose the permitted middle in each triple as explained after the lemma. In the triple containing \(z\), choose one of the two reverse orders whose first vertex is not \(z\). Choose the internal status of the other triple to match it. The earlier boundary tests on both sides are tight. If the matched status is non-tight, \(p=c=s+2\). If it is tight, append the two triples to the two inward outside paths. This is a spanning two-cover.
-
-It remains to handle the common full star, at a vertex \(w\). For \(\alpha=\beta=2\), put \(w\) last in one inward triple. Its first pair avoids \(w\), and so do all pairs in the other triple. Match the internal status of the other triple to that of the first: a non-tight match gives a zero root, and a tight match gives a spanning two-cover.
-
-For \(\alpha=\beta=1\), if \(w=z\), again put \(w\) last. If \(w\ne z\), use \((x,z,w)\) as the first inward triple, for any remaining vertex \(x\). Its first vertex is different from \(z\) and its first pair avoids \(w\). The other triple contains neither \(z\) nor \(w\), so both its reverse orders satisfy the boundary tests. Match its internal status to the first triple. The same zero-root or two-cover alternative follows. Thus six vertices are impossible.
-
-**Five vertices, equal outside lengths.** Apply the five-vertex lemma to \(E,F\); if both are empty, simply choose any disjoint pairs. Put the resulting permitted pairs at the two inward ends of \(B\), filling the middle position arbitrarily.
-
-If \(\alpha=\beta=2\), this gives \(p,c\ge s+1\). Here \(L=3\), so positive deficiency forces \(p+c\le2s+2\), and therefore \(p=c=s+1\).
-
-If \(\alpha=\beta=1\), order each pair with first vertex different from \(z\). The tests at \(s\) and \(s+1\) are tight, giving \(p,c\ge s+2\). Here \(L=5\), and positive deficiency forces \(p+c\le2s+4\), so \(p=c=s+2\). Both conclusions contradict the absence of a zero root.
-
-**Five vertices, unequal outside lengths.** By symmetry take \(\alpha=1,\beta=2\). Let \(A\) be the singleton left witness set. Every right witness pair contains all of \(A\), so \(1\le|A|\le2\).
-
-Partition \(B=U\sqcup D\), with \(|U|=2,|D|=3\), so that \(U\) contains a vertex outside \(A\) and \(D\) contains no right witness pair. If \(A=\{z\}\), choose \(D\) avoiding \(z\). If \(A=\{z,w\}\), the right pair family is just \(\{\{z,w\}\}\); choose \(D\) with one of \(z,w\) and two of the three remaining vertices.
-
-Read \(U\) from the left with its first vertex outside \(A\), so the status at \(s\) is tight. Fix any left outside orders and denote by \(\eta\) the status at \(s+1\). At the right, every order of \(D\) passes the boundary test at \(s\); choose its internal status to equal \(\eta\). If \(\eta=0\), the roots have \(p=c=s+1\). If \(\eta=1\), the outside paths extended by \(U,D\) form a spanning two-cover. Thus this case is impossible.
-
-**Four vertices, unequal outside lengths.** Again take \(\alpha=1,\beta=2\). If \(A=\{z\}\), put two vertices other than \(z\) at the inward right end; put the remaining vertex other than \(z\) first at the left. If \(A=\{z,w\}\), put one vertex of \(A\) and one vertex outside \(A\) at the right, and start the remaining left pair with its vertex outside \(A\). In either case the first test on each side is tight, so \(p,c\ge s+1\). Since \(L=3\), positive deficiency forces \(p=c=s+1\), a contradiction.
-
-**Four vertices with \(\alpha=\beta=2\).** Let \(E,F\) be the two boundary pair families. Any tight order of three \(B\)-vertices whose first pair is absent from \(E\) could be appended to the left outside path; the remaining \(B\)-vertex can be appended to the right outside path because all earlier statuses are uniformly tight. This would be a two-cover. The same argument applies with \(F\) on the right. Hence the first pair of every tight ordered triple of \(B\) belongs to
-\[
-G=E\cap F.
-\]
-For each middle vertex \(y\) and distinct endpoints \(x,z\), at least one of \(\{x,y\},\{y,z\}\) must therefore belong to \(G\), by boundary antisymmetry. The complement of \(G\) has maximum degree at most one, so \(G\) has at least four edges on the four vertices. But cross-intersection of \(E,F\) makes \(G\) pairwise intersecting, and a pairwise-intersecting graph on four vertices has at most three edges. This is a contradiction.
-
-Since \(L\ge2\), these exclusions leave only \(b=3\) in the unequal-length case and \(b\in\{2,3,4\}\) when \(\alpha=\beta=1\).
-
-**Three vertices with \(\alpha=\beta=1\).** Place the distinguished singleton witness \(z\) in the middle of \(B\). Both first tests are tight, so \(p,c\ge s+1\). Now \(L=3\); positive deficiency forces \(p=c=s+1\), a contradiction.
-
-This proves the table. The coordinate bound follows from \(p,c\le s+L-1\). The earlier determining-block argument retains at most three exterior vertices on either side, so at most \(4+3+3=10\) actual vertices determine all varying roots. \(\square\)
-
-### The distinguished vertex in the three-vertex case
-
-In the unequal-length case, take \(\alpha=1,\beta=2\) by symmetry and retain the singleton witness set \(A\). It cannot have two vertices. If it did, let \(u\) be the third vertex of \(B\). The right pair family would be the unique pair \(A\). Choose a tight order of \(B\) with middle vertex \(u\); its first pair is not \(A\). The whole triple can then be appended to the right outside path, giving a two-cover together with the left outside path.
-
-Hence \(A=\{z\}\). Both pairs incident with \(z\) must occur in the right witness family. Otherwise start \(B\) on the left with the remaining vertex different from \(z\), and put the missing right pair at the inward right end. This gives \(p,c\ge s+1\), incompatible with positive deficiency when \(L=2\). Thus the right pair family is the full star at \(z\).
-
-Accordingly every remaining nonzero case has a distinguished actual vertex: in the two- and four-vertex cases both singleton witness families equal \(\{\{z\}\}\); in the three-vertex case one singleton family equals \(\{\{z\}\}\), and the opposite pair family is the full star at \(z\). These are statements about attainable witness supports, not assertions that every outside order realizes every witness.
-
-Finally, if \(k=\kappa_2(H)>0\), a chamber with \(p=s\) has
-\[
-k\le\delta(\pi)\le L-1\le3.
-\]
-Thus for \(k\ge4\), every positively balanced exact-root carrier must contain a zero-root chamber. For general \(k\), the theorem reduces the nonzero branch to the three configurations in the table. Converting these configurations, or a zero-root chamber with a nonempty hole, into a spanning two-cover remains open.
-
-
-### Only two- and three-cycles remain
-
-Suppose in addition that every occurring exact root lies on a directed cycle, as it does under positive carrier balance. After subtracting \(s\) from the coordinates, every arc \(i\to j\) satisfies
-\[
-0\le i,j\le3,\qquad i\ne j,\qquad i+j\le3.
-\]
-Its underlying unordered pair is therefore one of
-\[
-\{0,1\},\ \{0,2\},\ \{0,3\},\ \{1,2\}.
-\]
-This graph is a triangle on \(0,1,2\) with one additional edge \(0\,3\). Consequently every simple directed cycle has length two or three, and every occurring arc lies on such a cycle. In particular, an arc using coordinate \(3\) forces its opposite arc. Thus the original coordinated-cycle question, away from zero roots, has no long-cycle case.
-
-
-### Corollary: deletion distance at least two forces a zero exact root
-
-Let
-\[
-k=\kappa_2(H)\ge2,
-\]
-and let \(F\) be a positively balanced exact-root carrier face. Then \(F\) contains a chamber with
-\[
+## Section — Exact-root compression and bounded central structure
+
+<!-- section_id: exact_root_compression_and_bounded_central_structure -->
+
+### Exact-root compression and bounded central structure
+
+The exact status coordinates from [[spanning_orders_and_defect_helly]] are
+[
+p(pi)=min{i:epsilon_i=0},qquad
+q(pi)=max{i:epsilon_i=1},qquad
+c(pi)=m+1-q(pi),
+]
+with exact deficiency
+[
+delta(pi)=q-p-1=m-(p+c).
+]
+The exact root
+[
+psi(pi)=e_{p(pi)}-e_{c(pi)}
+]
+is odd under reversal. Unlike the older switch-root compression, its anti-diagonal displacement is exactly the order-level distance from a two-cover.
+
+### Positive root balance
+
+The barycentric odd-map construction of [[convex_root_balance_and_bourgin_yang]] yields a proper permutahedron face (F) and strictly positive chamber weights satisfying
+[
+sum_{piinmathcal V(F)}lambda_pipsi(pi)=0.
+]
+Interpreting (e_i-e_j) as the directed root (i	o j), every occurring nonzero root lies on a directed return cycle inside the same carrier face. The common-face condition is essential: all witnessing orders vary only by permutations within one ordered block partition.
+
+### Bounded central block theorem
+
+The facewise endpoint-transport and block-separation arguments developed in the former recurrence Section imply the following canonical compression.
+
+**Theorem.** Suppose a positive exact-root carrier has positive deficiency in every chamber and contains no zero root. Then all varying exact-root data are controlled by a central face block (B) with
+[
+|B|le4.
+]
+Moreover at most ten actual vertices are needed to determine all varying exact-root labels in the carrier, and every simple directed root cycle has length two or three.
+
+Thus the nonzero exact-root branch has no unbounded permutahedral residue. The only root-level recurrence left is a bounded interaction among opposite roots and, before the final moment reduction, directed triangles.
+
+### Cubic moment and pairwise root symmetry
+
+After translation to the four-coordinate model, every occurring nonzero root lies on the graph
+[
+01,quad02,quad03,quad12.
+]
+Append the odd cubic coordinate
+[
+sigma(i,j)=(j-i)^3.
+]
+Root balance makes the antisymmetric edge weights a circulation. The bridge (03) carries no circulation; the remaining triangle has one-dimensional cycle space. Cubic balance evaluates that triangle as
+[
+1^3+1^3-2^3=-6,
+]
+forcing its circulation coefficient to vanish. Hence
+[
+w_{ij}=w_{ji}
+]
+for every occurring root pair. No further odd scalar depending only on the ordered root can distinguish the carrier: root-only topology is exhausted at pairwise opposite-root balance.
+
+### Deletion distance and the zero-root branch
+
+The deletion-distance identity gives
+[
+kappa_2(H)=min_pimax(0,delta(pi)).
+]
+For
+[
+k=kappa_2(H)ge2,
+]
+the bounded-central-block analysis forces every positive exact-root carrier to contain a chamber with
+[
 p=c.
-\]
+]
+This is a genuinely balanced canonical partial two-cover:
+[
+P_pimid X_pimid Q_pi,qquad |P_pi|=|Q_pi|,
+]
+but (X_pi) may still be nonempty. A zero root is therefore not itself the grand-theorem conclusion.
 
-**Proof.**
-Suppose not. Every chamber has positive deficiency, the occurring tail and head coordinate sets agree by positive exact-root circulation, and no chamber has zero root. The preceding four-central-vertices theorem therefore leaves only three possible nonzero configurations:
-\[
-(\ell,r,|B|,L)
-=
-(s+1,s+1,2,2),\quad
-(s+1,s+1,4,4),
-\]
-or, up to left-right symmetry,
-\[
-(s+1,s,3,2).
-\]
+For (k=1), the nonzero branch is already confined to the same bounded four-coordinate/four-vertex central geometry. Thus the exact-root theory separates the problem cleanly:
 
-In either \(L=2\) case, a chamber with \(p=s\) has
-\[
-\delta\le L-1=1,
-\]
-contradicting the global lower bound
-\[
-\delta\ge\kappa_2(H)=k\ge2.
-\]
+- nonzero recurrence is finite and bounded;
+- for (kge2), topology forces the diagonal (p=c);
+- further progress must use actual vertices, hole supports, or local status data rather than more root moments.
 
-It remains that
-\[
-\ell=r=s+1,\qquad |B|=L=4.
-\]
-The preceding distinguished-vertex conclusion gives one vertex \(z\in B\) such that every \(p=s\) witness starts \(B\) with \(z\), and every \(c=s\) witness ends \(B\) with \(z\). Choose a chamber whose first and last vertices of \(B\) are both different from \(z\). Then
-\[
-p,c\ge s+1.
-\]
-Since
-\[
-m=2s+4
-\]
-and every chamber has deficiency at least \(k\ge2\),
-\[
-2
-\le
-\delta
-=
-m-p-c
-\le
-(2s+4)-2(s+1)
-=
-2.
-\]
-Hence equality holds throughout:
-\[
-p=c=s+1,
-\]
-contradicting the assumption that \(F\) has no zero root. \(\square\)
+### Relation to the local-witness route
 
-Thus
-\[
-\boxed{
-\kappa_2(H)\ge2
-\quad\Longrightarrow\quad
-\text{every positive exact-root carrier contains an actual balanced chamber }p=c.
-}
-\]
-
-This conclusion is global and structural. It uses neither minimum-counterexample induction nor disturbance analysis. The remaining problem in the \(k\ge2\) branch is no longer recurrence without a diagonal; it is to exploit a balanced canonical partial two-cover
-\[
-P_\pi\mid X_\pi\mid Q_\pi,
-\qquad
-|P_\pi|=|Q_\pi|,
-\qquad
-|X_\pi|=\delta(\pi)\ge k,
-\]
-and, ideally, force one with \(|X_\pi|=k\).
-
+The local-witness compression developed next reaches the same numerical scale from a different invariant. This agreement is structural: root recurrence compresses the *extreme inversion coordinates*, whereas local witnesses compress the *nearest actual forbidden pattern*. The two routes should be regarded as complementary descriptions of the same finite central geometry, not independent grand-theorem obligations.
 
 ---
 
-## Section — Antipodal reachability and the neutral corridor
+## Section — Local-witness topology and the finite terminal theorem
 
-<!-- section_id: antipodal_reachability_and_neutral_corridor -->
+<!-- section_id: local_witness_topology_and_the_finite_terminal_theorem -->
 
-### Exact reachability and the neutral corridor
+### Local-witness topology and the finite terminal theorem
 
-### Reachability in the exactified memory lift
+The exact inversion-window criterion admits a local language that is better suited to chamber topology than the extreme-root coordinates.
 
-Return now to the auxiliary extension \(H^+\) from the fourth Section and work in the single memory-lift copy whose source color is \(1\). Orient every edge from lower rank to higher rank.
+### Exact forbidden words
 
-Let \(R\) be the set of states reachable from the source pole \(s\) by an increasing path using only color \(1\).
+For a status word
+[
+epsilon_1cdotsepsilon_m,
+]
+the two-cover condition
+[
+qle p+1
+]
+is equivalent to the absence of a zero followed by a one at distance at least two. A minimal such inversion has span two or three. Hence:
 
-Because the antipodal involution reverses rank and complements color, the antipodal image \(A(R)\) has an exact dual interpretation.
-
-**Proposition 6.** A state \(x\) lies in \(A(R)\) if and only if there is an increasing color-\(0\) path from \(x\) to the target pole \(t\).
-
-**Proof.** A color-\(1\) increasing path from \(s\) to \(y\) maps under \(A\) to a color-\(0\) decreasing path from \(t\) to \(A(y)\). Reversing that path gives a color-\(0\) increasing path from \(A(y)\) to \(t\). The converse is the same argument reversed. \(\square\)
-
-Hence
-\[
-\boxed{
-R\cap A(R)\ne\varnothing
-\iff
-\Gamma(H^+)\text{ has a directed one-change pole geodesic}.
+**Forbidden-pattern theorem.**
+[
+oxed{
+qle p+1
+iff
+epsilon	ext{ avoids }001, 011, 0101.
 }
-\]
-
-If
-\[
-x\in R\cap A(R),
-\]
-concatenate a color-\(1\) increasing path from \(s\) to \(x\) with a color-\(0\) increasing path from \(x\) to \(t\). Rank increases at every step, so the concatenation has pole distance and is automatically geodesic.
-
-Together with auxiliary exactification,
-\[
-\boxed{
-\operatorname{pc}(H)\le2
-\iff
-R\cap A(R)\ne\varnothing.
-}
-\]
-
-This is an exact state-space formulation of the original theorem.
-
-### The neutral corridor
-
-Assume
-\[
-R\cap A(R)=\varnothing
-\]
-and put
-\[
-N
-=
-V(\Gamma)\setminus\bigl(R\cup A(R)\bigr).
-\]
-Then
-\[
-A(N)=N.
-\]
-
-There is no increasing edge directly from \(R\) to \(A(R)\). Such an edge cannot have color \(1\), since its upper endpoint would then lie in \(R\). It cannot have color \(0\), since its lower endpoint would then have a color-\(0\) route through the upper endpoint to \(t\), placing it in \(A(R)\).
-
-Every increasing pole-to-pole path starts in \(R\), ends in \(A(R)\), and therefore must meet \(N\). Such paths exist from the permutation construction, so \(N\ne\varnothing\). This is separation for increasing paths; the argument does not exclude an undirected edge whose lower endpoint is in \(A(R)\) and upper endpoint in \(R\).
-
-The interface colors are forced:
-
-- every increasing edge from \(R\) to \(N\) has color \(0\);
-- every increasing edge from \(N\) to \(A(R)\) has color \(1\).
-
-The antipode exchanges these two frontiers.
-
-Thus failure produces an antipodally invariant set separating every increasing pole geodesic, with prescribed colors at the two directed interfaces. Conversely, disjointness of these particular reachability regions is exactly failure of the directed one-change target.
-
-### Convex balance and actual intersection are different zeros
-
-This distinction is the sharpest way to state the present frontier.
-
-The root construction asks for a convex zero:
-\[
-0\in\operatorname{conv}\{\phi(\pi):\pi\in\mathcal C\}.
-\]
-Such a zero says that compressed extreme-defect vectors balance. Through the circulation criterion, it produces recurrence among switch fronts.
-
-Reachability asks for an actual state-space intersection:
-\[
-x\in R\cap A(R).
-\]
-Such a point is not an average. It is one concrete memory state simultaneously reachable from the source by one color and from which the target is reachable by the other.
-
-Therefore
-\[
-\boxed{
-\text{root balance}
-\neq
-\text{reachability self-intersection}
-}
-\]
-without an additional conversion theorem.
-
-The unresolved topological problem may be phrased precisely as:
-
-> Convert the multiplicity or recurrence forced by antipodal root topology into one actual state of the exactified memory lift lying in \(R\cap A(R)\), or into GN3-specific local structure that Articles III–VI can close.
-
-This is more precise than asking vaguely for “a Borsuk–Ulam proof.”
-
-### What a purely topological closure must preserve
-
-Any theorem acting directly on the exactified memory lift must preserve three features simultaneously:
-
-1. **distinguished poles:** the relevant antipodal pair is \(s,t\);
-2. **geodesicity:** rank increases at every step, so no original label is reused;
-3. **memory:** edge color records three successive cube directions.
-
-A theorem producing an arbitrary antipodal path may fail the first two conditions. A theorem on ordinary cube-edge colorings may fail the third.
-
-A universal directed one-change theorem for boundary tournaments would apply to the auxiliary extension. The undirected one-change conjecture permits either switch direction; it implies the grand conjecture by application to H itself and the cut-and-reverse construction. It does not automatically select the directed target in an individual extension.
-
-Alternatively, work only with the auxiliary extensions and exploit their special vertex together with the consistent triple rule. Antipodal symmetry of arbitrary chamber words alone does not encode that rule.
-
-### How the older topology fits
-
-The earlier Tucker, root, and Bourgin–Yang programs should now be interpreted as candidate mechanisms for attacking the corridor.
-
-- Tucker sought a local complementary state.
-- Cellular root topology replaced one complementary edge by balanced recurrence.
-- Bourgin–Yang sought enough balanced recurrence to make avoidance impossible.
-- GN3-specific compression seeks to turn recurrence into a local reversal or support.
-
-The reachability picture supplies the exact endpoint of that program: all of those mechanisms are useful only insofar as they force
-\[
-R\cap A(R)\ne\varnothing
-\]
-or a combinatorial contradiction to the existence of \(N\).
-
-This is the exact topological frontier.
-
-
-### Further developments
-
-### Nearest-violation Tucker labeling
-
-Work in the auxiliary extension (H^+) with distinguished vertex (r). Assume there is no directed one-change spanning order. For a spanning order (pi), let (x_d(pi),y_d(pi)) denote the left-zero and right-one violation indicators at equal distance (d) from (r), as in [[auxiliary_violation_vector_has_exact_chamber_zeros]]. Fix distinct original vertices (a,b) and use the antipodal gauge
-[
-g_{ab}(pi)=
-egin{cases}
-+1,&a	ext{ precedes }b,\
--1,&b	ext{ precedes }a.
-end{cases}
 ]
-Set
-[
-F_d(pi)=x_d(pi)-y_d(pi)+g_{ab}(pi)x_d(pi)y_d(pi).
-]
-Then (F(pi^{m rev})=-F(pi)), and (F(pi)
-e0) for every chamber under the present assumption.
 
-Let
+Thus every bad spanning order has a local witness on at most four consecutive status positions, equivalently on at most six consecutive vertices. Complementing all triple colors preserves path-cover number, so the opposite-polarity witnesses
 [
-d(pi)=min{d:F_d(pi)
-e0}
+110, 100, 1010
 ]
-and define the signed-basis label
+are available as well.
+
+### The fixed witness path
+
+The reflected locations of the three basic witnesses are generated by the two reflections
 [
-ell(pi)=operatorname{sgn}(F_{d(pi)}(pi)),e_{d(pi)}.
+imapsto m-1-i,qquad imapsto m-2-i.
 ]
-Reversal preserves the distance index and negates the sign, so
+Their nontrivial pairs interlace to form a single path (T_m) on witness-location coordinates, with one pendant treatment for the unique centered self-reflecting case. Fix an external antipodal sign on spanning orders, for example the relative-order sign of two fixed vertices. Then every bad spanning order receives a nonzero oriented edge label
+[
+ell(pi)in E(T_m)
+]
+such that
 [
 ell(pi^{m rev})=-ell(pi).
 ]
 
-If (H) has (n) original vertices, then (H^+) has (n+1) vertices. The centered permutahedron of (H^+) has boundary (S^{n-1}). There are at most (n-2) nontrivial violation distances, so the labels lie in (mathbb R^{n-2}).
+Because (T_m) is a tree, its edge-incidence vectors are linearly independent. Positive convex cancellation is therefore edgewise: every used witness edge must occur in both orientations.
 
-For each nonempty proper permutahedron face (C), assign its barycenter the average
-[
-L(z_C)=rac1{|mathcal V(C)|}sum_{piinmathcal V(C)}ell(pi),
-]
-and extend affinely over the barycentric subdivision. This gives a continuous odd map
-[
-L:S^{n-1}	omathbb R^{n-2}.
-]
-Bourgin--Yang therefore gives
-[
-dim L^{-1}(0)ge1.
-]
+### Bourgin--Yang and protected central bands
 
-Exactly as in the positive-carrier argument for the root maps, every zero has a carrier face (C) and strictly positive coefficients
+For (m=n-2), the permutahedron boundary is (S^m), while the witness-edge space has dimension (m-2). Averaging the labels at face barycenters and extending over the barycentric subdivision gives an odd map
 [
-lambda_pi>0qquad(piinmathcal V(C))
+S^mlongrightarrow mathbb R^{m-2}.
 ]
-with
+Bourgin--Yang yields a zero set of dimension at least two.
+
+Let (F) be a positive carrier of such a zero and let (e) be the innermost witness edge occurring among its chamber labels. Then every chamber of (F) avoids all witness edges closer to the center, while both orientations of (e) occur. Hence every chamber shares a protected central band free of
 [
-sum_{piinmathcal V(C)}lambda_piell(pi)=0.
+001, 011, 0101.
+]
+Inside that band every chamber has the local two-cover form
+[
+1^*0^*
+quad	ext{or}quad
+1^*010^*.
 ]
 
-Because the labels are signed basis vectors, coordinate balance is completely explicit.
-
-**Proposition.** For every distance (d) that occurs among the labels of chambers of (C), both (+e_d) and (-e_d) occur among the chamber labels of (C).
-
-**Proof.** In coordinate (d), the positive relation reads
+Using both inversion polarities sharpens this further: an interval avoiding all six local witnesses
 [
-sum_{ell(pi)=+e_d}lambda_pi
-=
-sum_{ell(pi)=-e_d}lambda_pi.
+001, 011, 0101, 110, 100, 1010
 ]
-If one sign occurs, the corresponding side is positive, so the other side is positive as well. (square)
+is monochromatic once its length is at least four. Consequently reflected double witnesses selected nearest the center are automatically bounded near the center; there is no unbounded symmetric-double branch.
 
-Let
+### Face cancellation and Boolean cubes
+
+For an ordered-partition face
 [
-d_0=min{d(pi):piinmathcal V(C)}.
+F=B_1|cdots|B_k,
 ]
-Then every chamber of (C) has no violation at any distance (<d_0), while (C) contains chambers labeled (+e_{d_0}) and (-e_{d_0}).
+the average status at any three-position window contained in one block is zero: swap the first and third vertices of the window. For pairwise disjoint internal windows these involutions commute, so the selected status coordinates realize a full Boolean cube over the chamber family.
 
-Thus the topological output is no longer a diffuse convex recurrence. It is one ordered-partition face on which all chambers share a common protected radius around (r), and at the first distance where any violation can occur both left and right signs are realized.
+This forces strong thinness in a protected band. Two disjoint internal triple windows would allow one to prescribe an earlier zero and a later one, creating a forbidden pattern. In particular, five protected consecutive vertex positions cannot lie in one face block. The stronger finite argument rules out such a five-position block directly from boundary antisymmetry.
 
-### Protected windows force thin blocks
+### Terminal block compression
 
-Write the carrier face as an ordered partition
+Suppose the nearest-witness reduction reaches a terminal single-sided configuration with disjoint reflected determining windows. Let (B) be the unique face block coupling the two windows, and let (alpha,eta) be the numbers of (B)-positions used on the two sides.
+
+The ordered-tuple disjointness graph gives
 [
-C=B_1|cdots|B_k,
+|B|lealpha+eta.
 ]
-and let (B_j) be the block containing (r).
-
-For every chamber of (C), every left or right status window at distance (<d_0) from (r) has its prescribed one-change color. Therefore none of those three-position windows can lie wholly in one block of (C): if such a window lay in one block, swapping its first and third vertices would stay in (C) and boundary antisymmetry would flip its status, producing a closer violation in one of the two chambers.
-
-In particular:
-
-**Corollary.** If (d_0ge2), then
+Simultaneous occupation gives the reverse inequality, so
 [
-|B_j|le3.
+|B|=alpha+eta.
+]
+Boundary antisymmetry inside a fixed support partition then forces
+[
+alpha,etale2,
+qquad |B|le4.
 ]
 
-**Proof.** If (|B_j|ge4), choose a chamber in which (r) is last inside (B_j) and three other vertices of (B_j) occupy the three positions immediately preceding (r). Those three positions form the left status window at distance (1<d_0). It is required to be tight in every chamber of (C). Swapping its first and third vertices produces another chamber of (C) in which that triple is its boundary flip and hence non-tight, contradiction. (square)
+The alternating branch (0101/1010) is impossible: nearestness fixes the inward statuses strongly enough that the two terminal witness indicators collapse to unary functions of the first and last block vertices, and the identity that exactly one side occurs forces both functions to be constant.
 
-More generally, every protected three-position window within distance (d_0-1) from (r) must straddle a block boundary of (C). Thus a large protected radius forces a dense sequence of ordered-partition boundaries near (r).
+The span-two branch is even sharper in the dual-polarity formulation. A purported terminal disjoint witness of type
+[
+001, 011, 110, 100
+]
+immediately creates a strictly closer witness of one of the six dual-polarity types. Therefore no disjoint single-sided terminal configuration survives.
 
-This gives a new global structural alternative:
+### Finite terminal theorem
 
-- either a directed one-change chamber exists, hence a two-cover of (H);
-- or there is a proper permutahedron face with a common protected radius, paired opposite nearest-violation labels at the first bad distance, and locally thin ordered-partition blocks around the auxiliary vertex.
+Only centered or overlapping reflected witnesses remain. Their determining support is bounded:
 
-The conclusion uses no minimum-counterexample hypothesis and no disturbance analysis.
+- centered span-two witnesses use at most five vertices;
+- centered alternating witnesses use at most six;
+- reflected double span-two supports use at most eight;
+- reflected alternating supports use at most ten.
+
+Each finite terminal support is two-coverable. The small centered cases split into two sets of order at most three; the reflected cases are covered by the established eight- and ten-vertex boundary-tournament theorems.
+
+Therefore:
+
+[
+oxed{
+	ext{every terminal local-witness support has path-cover number at most }2.
+}
+]
+
+The local finite line is closed. The only remaining issue is global: prove that every balanced witness carrier can be terminalized, or use its escape geometry directly to build a spanning two-cover.
 
 ---
 
-## Section — Synthesis and the exact topological frontier
+## Section — Terminalization, reachability, and the exact frontier
 
-<!-- section_id: article_vii_synthesis_and_exact_frontier -->
+<!-- section_id: terminalization_reachability_and_the_exact_frontier -->
 
-### Exact formulations and the pre-compression frontier
+### Current closure frontier
 
-### The exact equivalence chain
+The geodesic program now has a sharply separated finite and global structure.
 
-The purpose of Article VII is not to replace the local GN3 theory of Articles I–VI. It is to identify the global obstruction geometrically and to translate the original conjecture into exact antipodal models.
+### What is already closed
 
-The exact chain is
-\[
-\boxed{
-\begin{aligned}
-\operatorname{pc}(H)\le2
-&\iff
-\exists\pi\text{ whose defect intervals admit one common cut}\\
-&\iff
-H^+\text{ has a directed one-change spanning order}\\
-&\iff
-\Gamma(H^+)\text{ has a directed one-change pole geodesic}\\
-&\iff
-\text{the rooted complementary-support condition holds}\\
-&\iff
-R\cap A(R)\ne\varnothing.
-\end{aligned}}
-\]
-
-The first line is the quantified defect-Helly theorem. The second is auxiliary exactification. The third is the memory lift. The fourth is the opposite-edge/common-terminal support dictionary normalized at \(r\). The fifth is the reachability criterion.
-
-Every arrow in this chain is exact.
-
-### What topology currently supplies
-
-The root-topological route does not yet prove one of these exact conditions directly. What it supplies is structure:
-
-- the Coxeter sphere of spanning orders;
-- antipodal extreme-switch labels;
-- cellular square and braid-hexagon constraints;
-- the odd root map
-  \[
-  \phi(\pi)=e_a-e_{\bar b};
-  \]
-- balanced faces and directed root circulations;
-- potentially positive-dimensional balanced loci via Bourgin–Yang;
-- block separation, giant-block recurrence, cross-intersection, and front motion.
-
-These are genuine mathematical outputs. They should not be discarded merely because they stop one step short of the theorem.
-
-But they are compressed outputs. The exact target remains one concrete intersection or one exact complementary-support state.
-
-### Route A: prove the stronger one-change conclusion
-
-The candidate from the second Section asks whether every boundary tournament has a spanning order with at most one color change. A reversal-complement function on ordered triples is exactly a boundary tournament, so the candidate concerns the same input class with a stronger desired conclusion.
-
-If this candidate holds, apply it to \(H\) itself and split into monochromatic blocks, reversing the non-tight block. This gives a two-cover. A universal theorem specifically producing \(1^a0^b\) could instead be applied to \(H^+\) and Theorem 3. Reversal preserves the direction of the switch, so these two reductions must be distinguished.
-
-The one-change sufficient condition also gives a tight path on at least \(\lceil(n+2)/2\rceil\) vertices. This quantitative consequence, the endpoint involution including singleton paths, and the positive square-zero enumeration remain part of the support formulation.
-
-A genuinely broader input class is provided by the base-dependent memory rule in the second Section. Any theorem about that class would need a separate proof and a precise reduction.
-
-### Route B: prove only the exact auxiliary target
-
-The alternative is to prove directed one-change existence only for the extensions \(H^+\). This is exactly equivalent to the grand conjecture. One may use the forced endpoint behavior of the auxiliary vertex and the local tournament structure supplied by the triple rule.
-
-Articles I–VI develop deletion-cover compatibility, quadratic-potential descent, defect-line compression, endpoint transport, longest-path reversal structure, and equal-potential recurrence. Article VII seeks to turn topological balance into hypotheses to which those arguments apply. Neither balanced roots nor a moved switch front alone establishes that the full hypotheses of a closing repartition are satisfied.
-
-These are two routes distinguished by the strength of the conclusion and by whether the auxiliary vertex is used, not by a nonexistent distinction between boundary tournaments and reversal-complement triple functions.
-
-### The apparent exact-reachability conversion
-
-Before the minimum-span compression of Section 7, the natural missing implication was
-\[
-\boxed{
-\text{balanced or recurrent extreme-switch data}
-\quad\Longrightarrow?\quad
-R\cap A(R)\ne\varnothing.
-}
-\]
-
-That implication is still not proved, and proving it directly would prove the grand conjecture. The neutral-corridor formulation therefore remains a valid optional route to the theorem.
-
-It is no longer, however, the frontier of Article VII. Section 7 shows combinatorially that the recurrence needed to support the balanced face already collapses to bounded local GN3 structure: one minimizes switch span and transports one physical carrier to both extreme fronts. The explicit Bourgin--Yang dimension bound remains a genuine topological statement, but no further conversion of its zero set into a reachability intersection is required for the geodesic investigation itself.
-
-### A cyclic guardrail
-
-One attractive strengthening should be recorded only as a warning.
-
-It is sufficient to find a spanning cyclic order whose transition-color word has at most two monochromatic components, but this is not necessary for a two-cover. There are edge-orderable boundary tournaments with
-\[
-\operatorname{pc}(H)=2
-\]
-for which every spanning cycle has at least four monochromatic transition components.
-
-The correct cyclic invariant is not the number of runs.
-
-For an oriented Hamilton cycle
-\[
-Z=(v_1,\ldots,v_n,v_1),
-\]
-let the cycle-edge positions be
-\[
-e_i=\{v_i,v_{i+1}\}.
-\]
-Construct a defect graph \(D_Z\) on these positions by joining
-\[
-e_{i-1},e_i
-\]
-exactly when
-\[
-(v_{i-1},v_i,v_{i+1})
-\]
-is non-tight.
-
-A set of cut edges turns the cycle into tight inherited paths exactly when it meets every edge of \(D_Z\). Therefore
-\[
-\operatorname{pc}(H)
-=
-\min_Z\max\{1,\tau(D_Z)\}.
-\]
-
-In particular,
-\[
-\operatorname{pc}(H)\le2
-\iff
-\exists Z\text{ with }\tau(D_Z)\le2.
-\]
-
-This exact cyclic formulation may still be useful, but the false two-component-cycle strengthening is not part of the main route.
-
-### Article thesis
-
-Article VII retains the exact Helly, auxiliary-geodesic, complementary-support, and directed-reachability formulations, together with the Coxeter geometry, the failure of graph-only labeling arguments, the explicit barycentric root construction, Bourgin--Yang multiplicity, and carrier-face recurrence.
-
-Its specifically geodesic contribution is now complete at the correct level: recurrent nonzero face geometry and global minimum switch span eliminate every unbounded permutahedral obstruction and hand the problem to bounded local GN3 structure. The article does **not** prove the grand two-cover conjecture, and it does not claim the exact intersection \(R\cap A(R)\ne\varnothing\). Those stronger statements remain equivalent or sufficient routes to the global theorem, while the false cyclic two-component strengthening stays excluded by the balanced-cut obstruction above.
-
-
-### Closure: width-three mixed-end handoff
-
-
-### Article VII closure theorem
-
-The exact formulations established earlier remain unchanged:
-\[
-\operatorname{pc}(H)\le2
-\]
-is equivalent to the defect-Helly cut condition, to a directed \(1^*0^*\) order in the auxiliary exactification, to the corresponding directed one-change pole geodesic, to the complementary-support formulation, and to
-\[
-R\cap A(R)\ne\varnothing
-\]
-in the exact memory lift.
-
-The new compression in Section 7 changes the role of the topological route. It is no longer necessary to synchronize an arbitrary collection of balanced face witnesses into one global reachability state.
-
-**Theorem 9.1 (geodesic compression to a local GN3 interface).** If a boundary \(3\)-tournament \(H\) has no spanning two-cover, then a globally minimum-switch-span spanning order has one of the following forms:
-
-1. its switch span \(d\) satisfies \(3\le d\le5\), and it yields a spanning three-cover with a middle component of order \(d-2\le3\);
-2. \(d\ge6\), and \(H\) contains a Hamiltonian support of order four or five.
-
-Moreover, for the positively balanced carrier face of Theorem 6.1, the same conclusion already holds on every non-diagonal recurrent branch: minimum span within the face and one physical carrier eliminate the giant-block/front-motion residue.
-
-Thus all unbounded permutahedral behavior has disappeared. The exact reachability formulation remains mathematically equivalent to the conjecture, but the topology no longer carries an independent unresolved global obstruction.
-
-### Minimum counterexamples have exact width three
-
-There is a sharper consequence in the setting relevant to the grand conjecture.
-
-**Corollary 9.2.** Let \(H\) be a minimum counterexample to the two-cover conjecture. Then the minimum switch span over all spanning orders of \(H\) is exactly three.
-
-**Proof.** Fix \(x\in V(H)\). By minimality,
-\[
-H-x=P\mid Q
-\]
-for two tight paths \(P,Q\). Insert \(x\) between their displayed orders:
-\[
-P,\ x,\ Q.
-\]
-Every status except the three junction statuses meeting \(x\) is inherited from \(P\) or \(Q\) and is tight. Hence all switches lie across a window of three consecutive variable statuses, so the first-to-last switch span is at most three.
-
-A counterexample has no spanning order with at most one switch, and Lemma 7.5 excludes switch span at most two. Therefore the global minimum is exactly three. \(\square\)
-
-For a minimum-span order with
-\[
-b=a+3,
-\]
-Lemma 7.6 becomes especially concrete:
-\[
-L\mid\{z\}\mid R,
-\qquad
-z=v_{a+3},
-\]
-where \(L\) and \(R\) have tight orientations.
-
-The first-switch condition says that \(z\) reverses one exposed end edge of the tight-oriented \(L\); the last-switch condition says that the same \(z\) reverses one exposed end edge of the tight-oriented \(R\). Let \(\alpha,\omega\) be the first and last status colors.
-
-- If \(\alpha\ne\omega\), the two reversals have the same endpoint type. Since the two exposed edges are disjoint, the common-reverser argument gives a Hamiltonian four-support.
-- If \(\alpha=\omega\), the reversals have mixed endpoint type. Writing the tight-oriented exposed edges, up to symmetry, as
-  \[
-  \ldots,a_0,a_1
-  \qquad\text{and}\qquad
-  p_1,p_2,\ldots
-  \]
-  gives
-  \[
-  (z,a_1,a_0),\qquad(p_2,p_1,z)
-  \]
-  tight. Exactly one of
-  \[
-  (p_1,z,a_1),\qquad(a_1,z,p_1)
-  \]
-  is tight. The first gives the Hamiltonian five-path
-  \[
-  (p_2,p_1,z,a_1,a_0),
-  \]
-  while the second is the parallel-middle relation
-  \[
-  (a_1,z,p_1)\ \text{tight}.
-  \]
-
-Therefore the geodesic route has a single genuinely local terminal form after bounded Hamiltonian supports are separated off:
-
-\[
-\boxed{
-\text{width-three singleton carrier with mixed-end parallel-middle data}.
-}
-\]
-
-This is precisely a local GN3 configuration, not an antipodal-topology problem.
-
-### Final status of the two topological formulations
-
-The root-space formulation and the exact reachability formulation now have different roles.
-
-The root-space topology is **closed as a compression mechanism**: positive balance on every chamber, block separation, and minimum-span carrier transport reduce every nonzero recurrent branch to a two-cover or bounded local structure, while global minimum span absorbs the diagonal branch.
-
-The exact reachability statement
-\[
-R\cap A(R)\ne\varnothing
-\]
-remains an exact reformulation of the grand conjecture, not an independently proved theorem. A direct topological proof of that intersection would still solve the conjecture, but Article VII no longer needs such a proof in order to finish its own geodesic investigation. Any hypothetical failure is already compressed to the width-three local interface above.
-
-Accordingly, no further continuation of the antipodal-geodesic, carrier-face, Tucker/Ky Fan, Bourgin--Yang, or neutral-corridor machinery is presently justified. The unresolved mathematics lies in the local GN3 handoff, which belongs to the other articles' path-cover and small-support arguments rather than to Article VII.
-
-
-### Exact-deficiency sharpening of the terminal handoff
-
-
-### Exact-deficiency sharpening of the terminal handoff
-
-The exact inversion-window coordinates sharpen the minimum-counterexample conclusion one final step. For
-\[
-\delta(\pi)=q(\pi)-p(\pi)-1,
-\]
-the exact criterion of Section 1 says that \(\delta\le0\) is already a two-cover certificate. If \(H\) is a minimum counterexample and
-\[
-H-x=P\mid Q,
-\]
-then the order
-\[
-(P,x,Q^{\rm rev})
-\]
-has all statuses away from the three \(x\)-junctions equal to \(1\) on the left and \(0\) on the right. Hence \(\delta\le1\); counterexamplehood forces
-\[
-\delta=1.
-\]
-
-The deficiency-one canonical partial cover from Section 6 therefore has a single hole, namely \(x\). Its two displayed tight paths are exactly \(P\) and \(Q\), and \(x\) reverses the terminal edge of both. A common terminal-edge reverser of two disjoint tight paths gives a Hamiltonian four-support. By minimum-counterexample induction its complement is non-Hamiltonian with path-cover number exactly two.
-
-Accordingly the sharp terminal statement of Article VII is
-\[
-\boxed{
-\text{minimum counterexample}
-\Longrightarrow
-\text{canonical Hamiltonian four-support }K
-\text{ with }\operatorname{pc}(H-K)=2
-\text{ and }H-K\text{ non-Hamiltonian}.
-}
-\]
-
-This strictly sharpens the earlier width-three \(4/5\)-support or mixed-end description. The width-three and recurrent-face theorems remain the correct global compression statements for an arbitrary no-two-cover boundary tournament; the exact-deficiency argument is the stronger endpoint available after minimum-counterexample induction.
-
-It also resolves the specific synchronization question raised by the coordinated-face program at the level needed by this article. One may still study directed cycles of exact roots, but Article VII does not need to turn a whole cycle into one reachability intersection. The exact inversion coordinate collapses a minimum counterexample to a one-hole deletion cover before that synchronization is necessary, and the one hole already forces the canonical four-support handoff.
-
-The direct reachability assertion
-\[
-R\cap A(R)\ne\varnothing
-\]
-remains equivalent to the grand conjecture and is not proved here. Article VII is closed more modestly and more sharply: the global geodesic/topological obstruction has been eliminated, and the surviving minimum-counterexample state is a single bounded four-support interface.
-
-
-### The remaining face-to-cover conversion
-
-### Current status of the face-to-cover conversion
-
-The earlier descriptions in this Section of Article VII as closed, and the assertion that no further topological continuation is justified, are superseded by the following precise status. The small-support compression results do not prove a two-cover and do not prove that every obstruction to the grand conjecture has been eliminated. The exact reachability intersection remains unproved.
-
-The bounded-central-block theorem in [[topological_recurrence_to_local_gn3_structure]] gives a uniform reduction within Article VII itself. For a positively balanced exact-root carrier whose chambers all have positive deficiency, either a zero-root chamber occurs or its nonzero-root geometry has one central block of order at most four, exterior blocks of order at most two, at most four consecutive root coordinates, and at most ten actual vertices determining the varying root labels after irrelevant exterior block orders are fixed. The proof uses ordered-partition block freedom and boundary antisymmetry, not minimum-counterexample or disturbance arguments.
-
-This is a finite reduction of one face-geometric branch, not a reduction of the grand conjecture to order ten. Two conversion problems remain. In the diagonal branch, p=c gives equal canonical path lengths but can leave a nonempty hole. In the non-diagonal branch, bounded determining data still have to produce a spanning cover or force a useful change of face.
-
-### Rooted omission vectors
-
-For a spanning order (pi=(L,r,R)) of the auxiliary extension, let (P_pi) be the longest suffix of (L), followed by (r), that is a tight path. Let (Q_pi) be the corresponding rooted path on the right, obtained from the longest initial segment of (R) whose reversal followed by (r) is tight. Define
+The exact status-word theory gives local forbidden witnesses. The witness-path topology gives positive balanced carrier faces. The finite classification in [[local_witness_topology_and_the_finite_terminal_theorem]] proves:
 [
-A(pi)=V(L)setminus V(P_pi),qquad
-B(pi)=V(R)setminus V(Q_pi),
+oxed{	ext{every terminal local-witness support is two-coverable}.}
 ]
-and
+
+Thus there is no remaining finite terminal obstruction to classify. Centered witnesses, overlapping reflected witnesses, double witnesses, and disjoint single-sided branches have all been reduced to explicit finite supports and closed.
+
+The exact-root route independently reaches the same bounded scale: nonzero recurrent carriers have a central block of order at most four and at most ten determining vertices.
+
+### The missing global implication
+
+Let (C) be a positive balanced carrier for the fixed-path local-witness map, and let (e) be the innermost witness edge appearing among chamber labels. Then all chambers are protected from witness edges closer to the center, both orientations (+e) and (-e) occur, and face-product splicing may produce chambers in which (e) disappears and the selected witness moves farther outward.
+
+The missing point is that an improved chamber is not automatically an improved **balanced carrier**. Convex cancellation may still use other chambers labeled by (e).
+
+**Terminalization theorem.** From a positive balanced carrier with innermost witness edge (e), either obtain a spanning two-cover directly, obtain one of the already classified terminal finite supports, or construct a new positive balanced carrier whose chamber labels all lie strictly farther outward than (e).
+
+Iteration would terminate because the witness path is finite. Together with the finite terminal theorem, this would prove the grand conjecture.
+
+### Relative-index formulation
+
+The natural topological model is a relative separator problem. The (+e) and (-e) chamber regions are separated by configurations in which the (e)-witness is absent. On that (e)-free locus, the remaining witness coordinates lie on the outer subpath.
+
+The desired mechanism is a relative (mathbb Z_2)-index or Bourgin--Yang recursion:
 [
-D(pi)=mathbf 1_{A(pi)}-mathbf 1_{B(pi)}.
+	ext{balanced carrier index}
+longrightarrow
+	ext{index retained on the }e	ext{-free separator}
+longrightarrow
+	ext{zero of the outer witness map}.
 ]
-Reversal exchanges (A) and (B), so (D(pi^{m rev})=-D(pi)). Also (D(pi)=0) exactly when the two rooted tight tails cover every original vertex, which by auxiliary exactification is exactly a spanning two-cover of (H).
 
-Along the chamber order every (D(pi)) has signed threshold form
+The technical issue is that an individual carrier face need not be antipodally invariant, and a barycentric zero may cancel (+e) and (-e) contributions without containing an actual chamber where (e) is absent. The finite mixed-cell classification should be used precisely here: if cancellation across (e) occurs without a genuine separator chamber, the responsible cell should already fall into one of the closed finite support types.
+
+This is now the principal research target.
+
+### Relation to antipodal reachability
+
+The earlier exact reachability formulation remains valid:
 [
-+cdots+,0cdots0, -cdots-.
+operatorname{pc}(H)le2
+quadLongleftrightarrowquad
+Rcap A(R)	ext{ is nonempty}
 ]
-It is never identically positive or identically negative, because an original vertex adjacent to (r) belongs to a two-vertex tight path with (r).
+in the auxiliary memory lift. Its neutral corridor is best viewed as a global analogue of the witness-carrier separator.
 
-### A dimension-tight quotient map
+The current witness topology is more economical because it compresses the obstruction before attempting reachability intersection. A successful terminalization theorem would effectively resolve the relevant neutral-corridor obstruction without proving a separate reachability theorem.
 
-Let (n=|V(H)|). The boundary of the centered permutahedron on (H^+) is (S^{n-1}). Project the omission vector to
+Thus antipodal reachability is no longer an independent branch that must be closed after terminalization; it is an alternate language for the same global separator phenomenon.
+
+### Exact status of the grand conjecture
+
+The proof architecture is
 [
-mathbb R^{V(H)}/langlemathbf1angle,
+	ext{counterexample}
+Longrightarrow
+	ext{balanced local-witness carrier}
+Longrightarrow
+egin{cases}
+	ext{terminal finite support},\
+	ext{or an outward escape}.
+end{cases}
 ]
-which also has dimension (n-1). Averaging projected omission vectors on every proper face and extending affinely over the barycentric subdivision gives a continuous odd map. Borsuk--Ulam therefore gives a zero. Its carrier face (F) has strictly positive chamber weights satisfying
+
+The first branch is closed by the finite terminal theorem. The second branch is what terminalization must convert into a new balanced carrier or a direct two-cover. Accordingly
 [
-sum_{piinmathcal V(F)}lambda_pi D(pi)=c,mathbf1
+oxed{
+	ext{terminalization}
++
+	ext{the proved finite terminal theorem}
+Longrightarrow
+operatorname{pc}(H)le2.
+}
 ]
-for some scalar (c).
 
-This yields a sharper structural frontier:
+No separate solution of the old omission-facet, zero-root, neutral-corridor, or disturbance branches would then be required.
 
-**Facewise omission-balance problem.** If a proper permutahedral face admits a strictly positive convex combination of rooted omission vectors equal to a constant vector, must it contain a chamber with (D(pi)=0)?
+### Proof-transfer program toward generalized Norine
 
-A positive answer proves the two-cover conjecture directly through auxiliary exactification, without minimum-counterexample or disturbance arguments. The extra structure is that each chamber label is a signed prefix/suffix threshold vector of actual omitted vertices and all chambers of (F) arise by independent permutations inside ordered face blocks. The remaining task is therefore an uncrossing or face-convexity problem for threshold omissions inside one ordered partition, not a generic convex-cancellation problem.
+The eventual terminalization proof should be audited for portability. The chamber topology, antipodal symmetry, witness-tree compression, and relative-index recursion appear substantially less dependent on GN3 translation invariance than the block-swap and splicing lemmas.
 
-The sharper theorem leaves only a two- or four-vertex central block with two singleton witness families supported on the same vertex \(z\), or a three-vertex block with a singleton witness \(\{z\}\) on one side and the full star at \(z\) as the opposite pair family. Moreover, every simple directed root cycle has length two or three. The proof of these sharper bounds sometimes converts a matched pair of tight triples directly into a spanning two-cover; it is therefore stronger than a zero-root argument alone.
-
-The remaining nonzero cases have global deletion distance at most three. This is a consequence under the no-zero-root face hypothesis, not a universal bound on \(\kappa_2(H)\).
-
-
-### Localization of omission balance and the two exceptional facets
-
-The facewise omission-balance question above has a precise exception. Let the auxiliary vertex be \(r\), let \(V=V(H)\), and use the rooted omission vectors \(D(\pi)\) just defined. In the chamber order their entries on original vertices have the form
-\[
-+\cdots+,\,0\cdots0,\,-\cdots-.
-\]
-In particular, if original vertices \(u,v\) lie in distinct ordered face blocks with the block of \(u\) earlier, then
-\[
-D(\pi)_u\ge D(\pi)_v
-\]
-for every chamber of that face.
-
-**Proposition (localization to the two exceptional facets).** Let \(F\) be a proper face of the permutahedron on \(V\cup\{r\}\). Suppose
-\[
-\sum_{\pi\in\mathcal V(F)}\lambda_\pi D(\pi)=c\mathbf1,
-\qquad \lambda_\pi>0,\quad \sum_\pi\lambda_\pi=1.
-\]
-If \(F\) is neither \(\{r\}\mid V\) nor \(V\mid\{r\}\), then \(D(\pi)=0\) for every chamber of \(F\).
-
-**Proof.** If original vertices occur in at least two face blocks, the displayed coordinate inequality and equality of coordinate averages imply
-\[
-D(\pi)_u=D(\pi)_v
-\]
-for every chamber and every pair in different original-vertex blocks. Positivity of every coefficient is essential here. Using any vertex in a second block also equates two coordinates in the same block. Thus every chamber vector is constant on all original vertices.
-
-At least one original vertex is adjacent to \(r\) in each chamber and belongs to a rooted tight path of order two. Its omission coordinate is zero. Therefore the constant vector is zero.
-
-If all original vertices occur in one block, a proper face can have only that block and the singleton block \(\{r\}\), in either order. These are exactly the two excluded facets. \(\square\)
-
-Thus, under the assumption that \(H\) has no two-cover, every zero of the projected omission map must have one of the two exceptional facets as its carrier. The Borsuk--Ulam conclusion by itself does not exclude this possibility.
-
-**Example (the exceptional facets really can balance).** Identify four original vertices with \(\mathbb F_2^2\). Order the three nonzero differences as \(d_1<d_2<d_3\), and give the ordinary edge \(\{x,y\}\) the class of \(x+y\). Declare
-\[
-(x,y,z)\text{ tight}\quad\Longleftrightarrow\quad
-\operatorname{class}(x+y)<\operatorname{class}(y+z).
-\]
-The two classes are different, so boundary reversal complements tightness. This is the matching-block boundary tournament.
-
-It has no tight Hamilton path. Such a path would have three successive, strictly increasing edge classes, hence differences \(d_1,d_2,d_3\). Their sum is zero in \(\mathbb F_2^2\), so its final vertex would equal its initial vertex. This contradicts distinctness. It does, of course, have a two-cover by two pairs.
-
-On the facet \(\{r\}\mid V\), the left rooted path is the singleton \(r\). The right rooted path covers either two or three original vertices; it never covers four because that would give a tight Hamilton path of \(H\). Hence no chamber of this facet has \(D=0\).
-
-Translations of \(\mathbb F_2^2\) preserve edge classes and act transitively on original vertices. The uniform average of \(D\) over all chambers of this facet is therefore a constant vector. Exactly half the orders have a non-tight first original triple, allowing the reversed rooted prefix to cover three original vertices; the other half cover only two. Thus the average number omitted is \(3/2\), and
-\[
-\frac1{4!}\sum_{\pi\in\mathcal V(\{r\}\mid V)}D(\pi)
-=-\frac38\mathbf1.
-\]
-All weights are strictly positive. Reversal gives the opposite constant on \(V\mid\{r\}\).
-
-This refutes the universal facewise implication proposed above: strictly positive projected omission balance need not yield a zero chamber in the same face. It does not refute the grand conjecture. The viable strengthened target is to force a projected zero outside the two exceptional facets, or to extract a two-cover directly from balance on an exceptional facet. The localization proposition proves the first target sufficient; the example shows why the second cannot demand a Hamilton path.
-
-
-### Facewise omission balance collapses to the two extreme auxiliary facets
-
-Retain the rooted omission notation
-\[
-D(\pi)={\bf1}_{A(\pi)}-{\bf1}_{B(\pi)}
-\]
-on spanning orders \(\pi=(L,r,R)\) of \(H^+\). Thus \(A(\pi)\) is a prefix of \(L\), \(B(\pi)\) is a suffix of \(R\), and \(D(\pi)=0\) is exactly a two-cover certificate for \(H\).
-
-Let
-\[
-F=C_1|\cdots|C_t
-\]
-be a nonempty proper permutahedron face, and suppose \(r\in C_j\). Assume there are strictly positive weights
-\[
-\lambda_\pi>0\qquad(\pi\in\mathcal V(F)),\qquad
-\sum_\pi\lambda_\pi=1,
-\]
-such that
-\[
-\sum_\pi\lambda_\pi D(\pi)=c\,{\bf1}
-\]
-for some scalar \(c\).
-
-**Theorem (facewise omission reduction).**
-If \(F\) is not one of the two extreme facets
-\[
-\{r\}|V(H),
-\qquad
-V(H)|\{r\},
-\]
-then \(F\) contains a chamber \(\pi\) with
-\[
-D(\pi)=0.
-\]
-In fact, except for a terminal two-block configuration with the auxiliary block containing original vertices, the argument forces \(D=0\) in every chamber of \(F\); that remaining terminal configuration also collapses by the probability argument below.
-
-**Proof.**
-
-First suppose
-\[
-1<j<t.
-\]
-Every original vertex in a block before \(C_j\) is always left of \(r\), hence its \(D\)-coordinate is in \(\{0,1\}\). Every original vertex in a block after \(C_j\) has coordinate in \(\{0,-1\}\). Since all weighted coordinate averages equal \(c\), both sides force
-\[
-c=0.
-\]
-Strict positivity of all \(\lambda_\pi\) then implies that every original vertex outside \(C_j\) has \(D\)-coordinate \(0\) in every chamber.
-
-If some chamber had \(A(\pi)\ne\varnothing\), then, because \(A(\pi)\) is a prefix of \(L\) and there is a whole face block before \(C_j\), the first original vertex of the chamber would lie in \(A(\pi)\), contradicting its identically zero coordinate. Hence \(A(\pi)=\varnothing\) for every chamber. The symmetric suffix argument gives \(B(\pi)=\varnothing\). Thus every chamber has \(D=0\).
-
-Now suppose \(j=1\); the case \(j=t\) is symmetric. Every original vertex outside \(C_1\) has coordinate in \(\{0,-1\}\), so
-\[
-c\le0.
-\]
-If \(c=0\), strict positivity makes every outside coordinate identically zero. A nonempty suffix \(B(\pi)\) would contain the last original vertex of the chamber, which lies outside \(C_1\), a contradiction. Thus \(B(\pi)=\varnothing\) for every chamber. The remaining coordinates are then nonnegative, have average zero, and hence \(A(\pi)=\varnothing\) as well.
-
-Assume therefore
-\[
-c=-W<0.
-\]
-
-If \(C_1\ne\{r\}\), choose
-\[
-x\in C_1-\{r\}.
-\]
-Let \(E\) be the event, under the positive weights \(\lambda\), that every original vertex outside \(C_1\) belongs to \(B(\pi)\), and write its total weight as \(e\).
-
-For every outside vertex \(y\),
-\[
-D_y=-{\bf1}_{\{y\in B\}},
-\]
-so its average \(-W\) gives
-\[
-\Pr_\lambda(y\in B)=W.
-\]
-Since \(E\subseteq\{y\in B\}\),
-\[
-e\le W.
-\]
-
-Write
-\[
-a_x=\Pr_\lambda(x\in A),
-\qquad
-b_x=\Pr_\lambda(x\in B).
-\]
-If \(x\in B(\pi)\), the suffix property forces every later outside vertex into \(B(\pi)\), hence
-\[
-\{x\in B\}\subseteq E
-\]
-and therefore
-\[
-b_x\le e.
-\]
-The balance equation at coordinate \(x\) is
-\[
-a_x-b_x=-W,
-\]
-so
-\[
-b_x=a_x+W\ge W.
-\]
-Consequently
-\[
-W\le b_x\le e\le W.
-\]
-Thus
-\[
-a_x=0,\qquad b_x=e=W.
-\]
-
-The same argument holds for every \(x\in C_1-\{r\}\). Hence on every chamber in \(E\), all original vertices of \(C_1\) and all outside vertices belong to \(B(\pi)\): every original vertex of \(H\) is omitted on the right. This is impossible, because whenever \(R\ne\varnothing\), the first vertex of \(R\) together with \(r\) is a two-vertex tight path, so the rooted right path \(Q_\pi\) always contains at least that vertex.
-
-Thus \(c<0\) is impossible whenever \(C_1\ne\{r\}\).
-
-It remains only
-\[
-C_1=\{r\}.
-\]
-If \(t\ge3\), choose vertices \(u\in C_i\), \(v\in C_j\) with
-\[
-2\le i<j\le t.
-\]
-Because \(B(\pi)\) is a suffix of \(R\),
-\[
-{\bf1}_{\{u\in B\}}\le{\bf1}_{\{v\in B\}}
-\]
-in every chamber. Their weighted expectations are both \(W\), so strict positivity forces equality chamberwise. Varying \(u,v\) shows that in every chamber either every original vertex is in \(B\) or none is. The former is impossible by the immediate-neighbor observation, while the latter contradicts \(W>0\).
-
-Therefore the only unresolved case with \(j=1\) is
-\[
-F=\{r\}|V(H).
-\]
-The symmetric argument leaves only
-\[
-F=V(H)|\{r\}.
-\]
-This proves the theorem. \(\square\)
-
-### The reduction is sharp at the level of convex cancellation
-
-The two exceptional facets cannot be discarded by a generic convexity argument. On the facet
-\[
-\{r\}|V(H),
-\]
-one has
-\[
-D(\pi)=-{\bf1}_{B(\pi)},
-\]
-where \(B(\pi)\) is the suffix omitted after the maximal rooted right path.
-
-For a standard non-Hamiltonian four-vertex matching-block boundary tournament, the uniform distribution on all \(24\) permutations gives
-\[
-\Pr(v\in B)=\frac38
-\]
-for every vertex \(v\), while no permutation has \(B=\varnothing\). Thus
-\[
-\frac1{24}\sum_\pi D(\pi)
-=
--\frac38\,{\bf1}
-\]
-is a genuine full-support constant balance with no zero chamber.
-
-Accordingly, the facewise omission theorem is sharp:
-\[
-\boxed{
-\text{all non-extreme carrier faces close;}
-\quad
-\text{the only genuine convex-cancellation residue is the pair of extreme facets.}
-}
-\]
-
-The remaining global topological question is therefore whether an odd zero of the quotient omission map can be supported entirely by those two antipodal extreme facets when the whole tournament has no two-cover. Local averaging alone cannot answer this.
-
-### The exceptional facets carry essential degree
-
-The matching-block example above shows that the two exceptional facets can support projected omission balance without a zero chamber. In a hypothetical counterexample, the limitation is stronger: the projected omission map is topologically forced to have a zero in the interior of each exceptional facet.
-
-Let
-\[
-F^-=\{r\}\mid V(H)
-\]
-be the left exceptional facet. It is canonically a copy of the centered permutahedron \(P_V\) on the original vertex set, of dimension \(n-1\). Its boundary is therefore an \((n-2)\)-sphere.
-
-On \(F^-\), every omission vector has the form
-\[
-D(\pi)=-\mathbf 1_{B(\pi)},
-\]
-where \(B(\pi)\) is a suffix of the original-vertex order. Hence, if
-\[
-G=B_1|\cdots|B_t
-\]
-is any proper face of \(P_V\), and \(u\in B_i,\ v\in B_j\) with \(i<j\), then
-\[
-D(\pi)_u\ge D(\pi)_v
-\]
-for every chamber \(\pi\) of \(G\). The same inequalities hold for the face-average omission vector assigned to the barycenter of \(G\), and therefore throughout every barycentric simplex whose largest face is \(G\).
-
-Write
-\[
-Q=\mathbb R^{V(H)}/\langle\mathbf 1\rangle
-\]
-and, for an ordered partition \(G\), let
-\[
-C_G=
-\left\{
-[y]\in Q:
-y_u\ge y_v
-\text{ whenever }
-u\in B_i,\ v\in B_j,\ i<j
-\right\}.
-\]
-Thus the projected omission map on the barycentric subdivision of \(\partial P_V\) is carried by the spherical carrier
-\[
-K_G=(C_G\setminus\{0\})/\mathbb R_{>0}.
-\]
-
-Assume now that \(H\) has no spanning two-cover. By the facewise omission theorem above, the projected omission map has no zero on \(\partial F^-\): any zero there would have a proper nonexceptional carrier face in the full auxiliary permutahedron and would force an actual chamber with \(D=0\).
-
-Each \(K_G\) is contractible. Indeed \(C_G\) is a proper convex cone; after quotienting its lineality space, the pointed part has a spherically convex section, and \(K_G\) is the join of that section with the sphere of the lineality space.
-
-Compare the normalized omission map on \(\partial P_V\) with
-\[
-h(x)=-\frac{x}{\|x\|}.
-\]
-If \(x\) lies in the permutahedron face \(G\), then the coordinates of \(x\) increase from earlier to later blocks, so the coordinates of \(-x\) decrease from earlier to later blocks. Therefore
-\[
-h(G)\subseteq K_G.
-\]
-The normalized omission map is carried by the same acyclic carrier. The acyclic carrier theorem makes the two maps homotopic.
-
-Consequently
-\[
-\deg(\widehat D|_{\partial F^-})
-=
-\deg(h)
-=
-(-1)^{n-1},
-\]
-up to the harmless orientation convention for \(Q\). In particular the degree has absolute value one.
-
-Every continuous extension of this boundary map over the exceptional facet \(F^-\) must therefore hit the origin. The barycentric omission map is such an extension, so \(F^-\) contains an interior projected omission zero. Reversal gives the same conclusion for
-\[
-F^+=V(H)\mid\{r\}.
-\]
-
-Thus in a hypothetical counterexample the two exceptional facets do not merely permit topological cancellation:
-\[
-\boxed{
-\text{each exceptional facet carries an essential degree-one omission zero.}
-}
-\]
-
-This sharpens the limitation of the rooted omission projection. The global Borsuk--Ulam zero can be absorbed by the two extreme facets for a structural degree reason. Therefore a continuation that uses only the same projected omission map and the same quotient target cannot force a useful nonexceptional zero; additional information or a genuinely different target is required.
-
-
-### The exact violation map escapes the exceptional omission facets
-
-The omission projection fails for a topologically structural reason on the two extreme auxiliary facets, but the exact auxiliary violation vector behaves differently.
-
-Let \(n=|V(H)|\), so the auxiliary tournament \(H^+\) has \(n+1\) vertices and the boundary of its centered permutahedron is
-\[
-S^{n-1}.
-\]
-Use the odd violation vector
-\[
-F(\pi)=(F_d(\pi))_{1\le d\le n-2}
-\]
-from [[auxiliary_violation_vector_has_exact_chamber_zeros]], where
-\[
-F_d=x_d-y_d+g\,x_dy_d.
-\]
-Its chamber zeros are exactly directed one-change orders and therefore exactly two-cover certificates for \(H\).
-
-Average \(F\) over every proper face and extend affinely on the barycentric subdivision. This gives a continuous odd map
-\[
-\mathcal F:S^{n-1}\longrightarrow\mathbb R^{n-2}.
-\]
-Bourgin--Yang therefore gives
-\[
-\dim \mathcal F^{-1}(0)\ge1.
-\]
-Every zero has the usual positive carrier-face expansion:
-\[
-\sum_{\pi\in\mathcal V(C)}\lambda_\pi F(\pi)=0,
-\qquad
-\lambda_\pi>0.
-\]
-
-Now consider the exceptional facet
-\[
-C^-=\{r\}\mid V(H).
-\]
-Here \(r\) is first in every chamber. There are no left violations, so
-\[
-x_d=0,\qquad F_d=-y_d\in\{0,-1\}
-\]
-for every chamber and every distance \(d\). If a positive convex combination of these vectors were zero, every coordinate of every chamber vector would have to vanish. Thus every chamber in the carrier would satisfy
-\[
-F(\pi)=0,
-\]
-which is already a directed one-change order and hence a two-cover of \(H\).
-
-Therefore, under the counterexample hypothesis,
-\[
-\mathcal F^{-1}(0)\cap C^-=\varnothing.
-\]
-By reversal,
-\[
-\mathcal F^{-1}(0)\cap C^+=\varnothing,
-\qquad
-C^+=V(H)\mid\{r\}.
-\]
-
-Hence:
-\[
-\boxed{
-\text{if }H\text{ has no two-cover, every zero carrier of the exact violation map is nonexceptional.}
-}
-\]
-
-This contrasts sharply with the projected omission map, whose two exceptional facets carry essential degree-one zeros. The violation map therefore genuinely escapes Astra's exceptional-facet obstruction.
-
-The remaining gap is different: positive balance of the violation vectors on a nonexceptional face does not yet imply that one chamber has \(F=0\). The next structural target is a facewise conversion theorem for these positional violation vectors, ideally using fixed-center intermediate value and the fact that the zero locus has positive dimension.
-
-
-### A side-set gauge and exact closure on singleton-\(r\) carrier faces
-
-The coordinatewise gauge in the exact violation vector can be replaced by one global double-violation coordinate in a way that is better adapted to faces.
-
-Let the original vertex set be \(V\), let \(r\) be the auxiliary vertex, and for a spanning order \(\pi\) write
-\[
-L_r(\pi)=\{v\in V:v\text{ occurs left of }r\},
-\qquad
-R_r(\pi)=V\setminus L_r(\pi).
-\]
-Fix once and for all a total order \(\prec\) on subsets of \(V\). Define an antipodal sign \(g_{\rm set}\) by
-\[
-g_{\rm set}(\pi)=
-\begin{cases}
-+1,&|L_r(\pi)|<|R_r(\pi)|,\\
--1,&|L_r(\pi)|>|R_r(\pi)|,\\
-+1,&|L_r|=|R_r|\text{ and }L_r\prec R_r,\\
--1,&|L_r|=|R_r|\text{ and }R_r\prec L_r.
-\end{cases}
-\]
-Reversal exchanges \(L_r\) and \(R_r\), hence
-\[
-g_{\rm set}(\pi^{\rm rev})=-g_{\rm set}(\pi).
-\]
-
-For the left/right violation bits \(x_d,y_d\) of [[auxiliary_violation_vector_has_exact_chamber_zeros]], define
-\[
-A_d(\pi)=x_d(\pi)-y_d(\pi),
-\]
-and choose arbitrary positive weights \(w_d>0\). Put
-\[
-B(\pi)
-=
-g_{\rm set}(\pi)\sum_d w_d x_d(\pi)y_d(\pi).
-\]
-Then
-\[
-\Theta(\pi)=\bigl((A_d(\pi))_d,B(\pi)\bigr)
-\]
-is odd. Its target has dimension \(n-1\), equal to the dimension of the auxiliary Coxeter sphere.
-
-Moreover
-\[
-\Theta(\pi)=0
-\]
-if and only if \(\pi\) has no violations. Indeed \(A_d=0\) gives \(x_d=y_d\) at every distance, while \(B=0\), since \(g_{\rm set}=\pm1\) and all \(w_d>0\), forces
-\[
-x_dy_d=0
-\]
-for every \(d\). Thus \(x_d=y_d=0\) for all \(d\).
-
-Average \(\Theta\) on proper face barycenters and extend affinely. Borsuk--Ulam gives a zero and the usual strictly positive expansion over every chamber of its carrier face.
-
-The key advantage of \(g_{\rm set}\) is the following.
-
-**Theorem (singleton-\(r\) carrier conversion).**
-Let
-\[
-C=C_1|\cdots|C_t
-\]
-be a proper permutahedron face in which
-\[
-C_j=\{r\}.
-\]
-Suppose there are strictly positive weights
-\[
-\lambda_\pi>0\qquad(\pi\in\mathcal V(C))
-\]
-with
-\[
-\sum_\pi\lambda_\pi\Theta(\pi)=0.
-\]
-Then every chamber of \(C\) is violation-free. In particular \(H\) has a spanning two-cover.
-
-**Proof.**
-Because \(r\) is a singleton block, the set of original vertices left of \(r\) and the set right of \(r\) are fixed throughout \(C\). Hence
-\[
-g_{\rm set}(\pi)=g_0\in\{\pm1\}
-\]
-is constant on all chambers of \(C\).
-
-The last coordinate of the positive balance is therefore
-\[
-0
-=
-g_0\sum_\pi\lambda_\pi\sum_d w_dx_d(\pi)y_d(\pi).
-\]
-Every summand inside the last sum is nonnegative, every \(w_d\) is positive, and every \(\lambda_\pi\) is positive. Hence
-\[
-x_d(\pi)y_d(\pi)=0
-\]
-for every chamber \(\pi\) and every distance \(d\).
-
-Now fix \(d\). Since \(r\) is a singleton block, the chamber set factors as
-\[
-\mathcal V(C)
-=
-\mathcal L\times\mathcal R,
-\]
-where \(\mathcal L\) consists of the independent permutations in blocks left of \(r\), and \(\mathcal R\) those right of \(r\). The bit \(x_d\) depends only on the left factor and \(y_d\) only on the right factor.
-
-If some left factor had \(x_d=1\) and some right factor had \(y_d=1\), their product chamber would satisfy
-\[
-x_dy_d=1,
-\]
-contrary to the preceding paragraph. Therefore at least one of the two functions is identically zero on its factor.
-
-But the \(A_d\)-coordinate of the positive balance says
-\[
-\sum_\pi\lambda_\pi x_d(\pi)
-=
-\sum_\pi\lambda_\pi y_d(\pi).
-\]
-If one side is identically zero, positivity forces the other side to be identically zero as well. Hence
-\[
-x_d(\pi)=y_d(\pi)=0
-\]
-for every chamber. Since \(d\) was arbitrary, every chamber of \(C\) is violation-free. \(\square\)
-
-Thus the exact violation map has no unresolved singleton-\(r\) carrier geometry at all:
-\[
-\boxed{
-\text{positive }\Theta\text{-balance on a face with }\{r\}\text{ as a block}
-\Longrightarrow
-\text{an actual two-cover certificate}.
-}
-\]
-
-Consequently, under the counterexample hypothesis, every zero carrier of the \(\Theta\)-map must place \(r\) in a block containing at least one original vertex. This eliminates the central singleton case as well as the two extreme singleton facets; the only remaining face-to-cover obstruction is genuinely the geometry of a nontrivial \(r\)-block.
+This motivates the independent meta-conjecture recorded in [[meta_conjecture_gn3_closure_should_seed_generalized_norine]]: a substantial core of the eventual boundary-tournament proof should seed a generalized bounded-memory Norine geodesic theorem. That program is deliberately kept separate from the proof of the present conjecture, but the distinction between portable topology and GN3-specific face combinatorics should be tracked as the terminalization argument is developed.

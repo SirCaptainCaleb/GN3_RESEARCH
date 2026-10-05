@@ -625,6 +625,6 @@ which simplifies to the displayed bound. ∎
 - Kind: toolkit
 - Version: 3
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Promoted

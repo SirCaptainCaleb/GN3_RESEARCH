@@ -16,6 +16,6 @@ Suppose no ordering of six fixed vertices has first-three pattern 001 or 011. Th
 - Kind: toolkit
 - Version: 1
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

@@ -40,6 +40,6 @@ This is a global structural cancellation valid for every boundary tournament. It
 - Kind: toolkit
 - Version: 1
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

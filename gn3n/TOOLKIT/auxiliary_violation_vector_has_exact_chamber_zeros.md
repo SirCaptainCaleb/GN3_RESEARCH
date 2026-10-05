@@ -71,6 +71,6 @@ The construction needs no minimum-counterexample hypothesis. The auxiliary middl
 - Kind: toolkit
 - Version: 2
 - Math version: 2
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

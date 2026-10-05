@@ -16,6 +16,6 @@ Use opposite orientations of the innermost edge e supplied by [[local_witness_ca
 - Kind: toolkit
 - Version: 2
 - Math version: 2
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

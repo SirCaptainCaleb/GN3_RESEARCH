@@ -16,6 +16,6 @@ The chamber set of a permutahedron face is the Cartesian product of the permutat
 - Kind: toolkit
 - Version: 1
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

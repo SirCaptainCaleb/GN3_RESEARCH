@@ -36,6 +36,6 @@ This strengthens the face-average cancellation lemma: internal status coordinate
 - Kind: toolkit
 - Version: 1
 - Math version: 1
-- Audit: unaudited
+- Audit: passed
 - Refutation: unrefuted
 - Toolkit status: Limbo

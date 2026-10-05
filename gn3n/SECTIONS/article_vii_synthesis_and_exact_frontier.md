@@ -855,12 +855,733 @@ Thus the exact violation map has no unresolved singleton-\(r\) carrier geometry 
 Consequently, under the counterexample hypothesis, every zero carrier of the \(\Theta\)-map must place \(r\) in a block containing at least one original vertex. This eliminates the central singleton case as well as the two extreme singleton facets; the only remaining face-to-cover obstruction is genuinely the geometry of a nontrivial \(r\)-block.
 
 
+### Constant-gauge nontrivial \(r\)-blocks collapse to order four
+
+The previous theorem handles faces in which \(\{r\}\) is already a block. Now let
+\[
+C=C_1|\cdots|C_t
+\]
+be a proper carrier face with
+\[
+r\in C_j,
+\qquad
+W=C_j\setminus\{r\}\ne\varnothing.
+\]
+Assume the side-set gauge \(g_{\rm set}\) has the same sign on every chamber of \(C\), and suppose
+\[
+\sum_{\pi\in\mathcal V(C)}\lambda_\pi\Theta(\pi)=0,
+\qquad
+\lambda_\pi>0.
+\]
+Assume for contradiction that \(H\) has no two-cover.
+
+For \(S\subseteq W\), let \(\mathcal C_S\) be the chambers in which precisely the vertices of \(S\) occur before \(r\) inside the block \(C_j\). Equivalently \(\mathcal C_S\) is the chamber set of the refinement
+\[
+C_1|\cdots|C_{j-1}|S|\{r\}|(W\setminus S)|C_{j+1}|\cdots|C_t,
+\]
+with empty blocks omitted.
+
+Because the gauge is constant on all of \(C\), the final coordinate of the positive balance forces
+\[
+u(\pi)v(\pi)=0
+\]
+for every chamber, where
+\[
+u(\pi)={\bf1}\{\text{some left violation occurs}\},
+\qquad
+v(\pi)={\bf1}\{\text{some right violation occurs}\}.
+\]
+Indeed one may use this stronger mixed-side term in place of
+\(\sum_d w_dx_dy_d\):
+\[
+B_{\rm mix}(\pi)=g_{\rm set}(\pi)u(\pi)v(\pi).
+\]
+Together with the coordinates
+\[
+A_d=x_d-y_d,
+\]
+the chamber zero set is still exactly the directed one-change orders.
+
+Thus, under the counterexample hypothesis, every chamber of \(C\) is of exactly one of two types:
+\[
+L:\quad u=1,\ v=0,
+\qquad
+R:\quad u=0,\ v=1.
+\]
+
+**Lemma (fiber constancy).**
+For each \(S\subseteq W\), every chamber of \(\mathcal C_S\) has the same type.
+
+**Proof.**
+The chamber graph of \(\mathcal C_S\) is connected and uses only adjacent transpositions that do not move \(r\). Such a transposition occurs entirely on one side of \(r\), so it can change only left violations or only right violations. Hence an \(L\)-chamber cannot move in one step to an \(R\)-chamber: changing the left side can only keep type \(L\) or create a zero chamber, while changing the right side can only keep type \(L\) or create a mixed chamber. Both alternatives are excluded. \(\square\)
+
+The \(A_d\)-balance and positivity imply that both fiber types occur. Indeed if all chambers were \(L\), every \(A_d\)-average would be nonnegative and at least one would be positive; similarly for \(R\).
+
+The Boolean cube on subsets of \(W\) is connected, so there are adjacent subsets
+\[
+S,\qquad S'=S\cup\{z\}
+\]
+whose fibers have opposite types. Choose orders so that \(z\) is immediately after \(r\) in a chamber
+\[
+\pi\in\mathcal C_S
+\]
+and swap \(r,z\) to obtain
+\[
+\pi'\in\mathcal C_{S'}.
+\]
+After reversing the labels \(L,R\) if necessary, assume \(\pi\) is \(L\) and \(\pi'\) is \(R\).
+
+Moving \(r\) one step to the right gives the exact remote-profile transport identities
+\[
+x_{d+1}(\pi')=x_d(\pi),
+\qquad
+y_d(\pi')=y_{d+1}(\pi)
+\qquad(d\ge1).
+\]
+Since \(\pi\) has no right violations and \(\pi'\) has no left violations, the opposite orientation of the crossing edge is forced: equivalently, reading the edge from the \(L\)-fiber to the \(R\)-fiber moves \(r\) one step to the **left**. In that orientation,
+\[
+x_d(\pi')=x_{d+1}(\pi),
+\qquad
+y_{d+1}(\pi')=y_d(\pi)
+\qquad(d\ge1),
+\]
+and the only newly exposed coordinate is \(y_1(\pi')\).
+
+Therefore
+\[
+x_d(\pi)=0\quad(d\ge2),
+\qquad
+y_d(\pi')=0\quad(d\ge2).
+\]
+Because \(\pi\) is \(L\) and \(\pi'\) is \(R\),
+\[
+x_1(\pi)=1,
+\qquad
+y_1(\pi')=1.
+\]
+Thus an opposite-type fiber edge has the rigid profile
+\[
+\boxed{
+\pi:\ x_1=1,\ x_{d\ge2}=0,\ y_d=0;
+\qquad
+\pi':\ y_1=1,\ y_{d\ge2}=0,\ x_d=0.
+}
+\]
+
+Now use the fact that an entire fiber has one type. In an \(L\)-fiber, the complete right side is violation-free for every permutation allowed by the fiber. If any free block wholly to the right of \(r\) had order at least three, choose three consecutive positions inside that block and swap the first and third vertices. Boundary antisymmetry flips the corresponding right status, contradicting universal right cleanliness. Hence every right-side block in an \(L\)-fiber has order at most two.
+
+Similarly, every left-side block in an \(R\)-fiber has order at most two.
+
+Apply this to the adjacent fibers above. In the \(L\)-fiber the block
+\[
+W\setminus S
+\]
+lies immediately to the right of \(r\), so
+\[
+|W\setminus S|\le2,
+\]
+and every original face block after \(C_j\) has order at most two. In the \(R\)-fiber the block
+\[
+S'=S\cup\{z\}
+\]
+lies immediately to the left of \(r\), so
+\[
+|S|+1\le2,
+\]
+and every original face block before \(C_j\) has order at most two.
+
+Consequently
+\[
+|S|\le1,
+\qquad
+|W\setminus S|\le2,
+\qquad
+|W|\le3.
+\]
+Thus
+\[
+\boxed{|C_j|\le4,}
+\]
+and every other block of \(C\) has order at most two.
+
+So the constant-gauge branch of the exact violation map has no unbounded face geometry:
+\[
+\boxed{
+\text{constant }g_{\rm set}
+\Longrightarrow
+\text{all exterior blocks have order }\le2
+\text{ and the }r\text{-block has order }\le4.
+}
+\]
+The only uncompressed branch is therefore the one in which \(g_{\rm set}\) changes sign inside the \(r\)-block, i.e. the block crosses the global side-set median.
+
+
+### Map distinction
+
+For clarity, two closely related full-dimensional exact maps are in use.
+
+The first is
+\[
+\Theta_{\rm eq}(\pi)
+=
+\left(
+(A_d(\pi))_d,\ 
+g_{\rm set}(\pi)\sum_d w_dx_d(\pi)y_d(\pi)
+\right),
+\]
+which records equal-radius double violations.
+
+For the constant-gauge block-collapse argument, use instead
+\[
+\Theta_{\rm mix}(\pi)
+=
+\left(
+(A_d(\pi))_d,\ 
+g_{\rm set}(\pi)u(\pi)v(\pi)
+\right),
+\]
+where
+\[
+u={\bf1}\{\exists d:x_d=1\},
+\qquad
+v={\bf1}\{\exists d:y_d=1\}.
+\]
+
+Both maps are odd, both take values in \(\mathbb R^{n-1}\), and both have chamber zero set exactly equal to the directed one-change orders. Borsuk--Ulam and the positive carrier expansion apply separately to each map. The singleton-\(r\) conversion is valid for either map. The nontrivial constant-gauge block-collapse theorem above is to be read for a positive carrier of
+\[
+\Theta_{\rm mix}.
+\]
+
+
+### Nearest-violation Tucker compression
+
+There is a lower-information exact label that is particularly well adapted to Tucker-style arguments.
+
+Assume \(H\) has no two-cover, so every spanning order of the auxiliary extension \(H^+\) has at least one violation. For a chamber \(\pi\), let
+\[
+d_0(\pi)
+=
+\min\{d\ge1:x_d(\pi)=1\text{ or }y_d(\pi)=1\}.
+\]
+At the nearest violating radius there are three possibilities:
+\[
+(1,0),\qquad(0,1),\qquad(1,1).
+\]
+
+Use the side-set antipodal gauge \(g_{\rm set}\) above, and define a signed label
+\[
+\ell(\pi)\in
+\{\pm1,\ldots,\pm(n-2),\pm\star\}
+\]
+by
+\[
+\ell(\pi)=
+\begin{cases}
++d_0,&(x_{d_0},y_{d_0})=(1,0),\\
+-d_0,&(x_{d_0},y_{d_0})=(0,1),\\
+g_{\rm set}(\pi)\star,&(x_{d_0},y_{d_0})=(1,1).
+\end{cases}
+\]
+Identify the \(n-1\) unsigned labels
+\[
+1,\ldots,n-2,\star
+\]
+with the coordinate vectors of \(\mathbb R^{n-1}\), and write \(L(\pi)\) for the corresponding signed basis vector.
+
+Reversal preserves the nearest violating radius, exchanges left and right, and negates \(g_{\rm set}\). Hence
+\[
+L(\pi^{\rm rev})=-L(\pi).
+\]
+
+Average \(L\) over the chambers of every nonempty proper face and extend affinely over the barycentric subdivision.
+
+**Theorem (nearest-violation Tucker carrier).**
+The resulting map
+\[
+\mathcal L:S^{n-1}\longrightarrow\mathbb R^{n-1}
+\]
+is continuous and odd. Hence it has a zero. If \(C\) is the carrier face of such a zero, then there are strictly positive coefficients
+\[
+\lambda_\pi>0\qquad(\pi\in\mathcal V(C))
+\]
+with
+\[
+\sum_{\pi\in\mathcal V(C)}\lambda_\pi L(\pi)=0.
+\]
+Consequently every signed label occurring among the chambers of \(C\) occurs with both signs. In particular:
+
+- if \(+d\) occurs, then \(-d\) occurs;
+- if \(+\star\) occurs, then \(-\star\) occurs.
+
+**Proof.**
+Oddness and Borsuk--Ulam give a zero. The positive carrier expansion is the same smallest-barycentric-simplex argument used throughout Article VII. Since the vectors \(L(\pi)\) are signed coordinate vectors and every chamber of the carrier has positive coefficient, the vanishing of each coordinate forces positive mass on both signs of every unsigned label that occurs. \(\square\)
+
+This gives a sharp dichotomy.
+
+**Corollary (protected-radius or median-mixed dichotomy).**
+A carrier \(C\) as above satisfies one of the following.
+
+1. **Protected-radius branch.** No \(\star\)-label occurs. Let \(d\) be the smallest ordinary label occurring in \(C\). Then every chamber of \(C\) has
+   \[
+   x_j=y_j=0
+   \qquad(1\le j<d),
+   \]
+   and \(C\) contains both a chamber with
+   \[
+   (x_d,y_d)=(1,0)
+   \]
+   and a chamber with
+   \[
+   (x_d,y_d)=(0,1).
+   \]
+
+2. **Median-mixed branch.** A \(\star\)-label occurs. Then \(C\) contains nearest-radius double-violation chambers on both gauge signs:
+   \[
+   g_{\rm set}=+1
+   \qquad\text{and}\qquad
+   g_{\rm set}=-1.
+   \]
+
+In the first branch, minimality of \(d\) gives the protected-radius hypothesis on **every** chamber of the carrier, not merely on the two opposite witnesses. If \(r\) is a singleton block, [[fixed_center_violation_intermediate_value]] applies directly and forces either larger protected radius or a double violation at radius \(d\). Iterating therefore reaches either a violation-free chamber or the second branch.
+
+Thus the remaining nontrivial topology can be localized to the median-mixed branch: one face contains double violations at the nearest radius on both sides of the antipodal side-set wall.
+
+
+### Protected radius at least two forces a tiny \(r\)-block
+
+Let \(C=C_1|\cdots|C_t\) be any proper face of the auxiliary permutahedron, with
+\[
+r\in C_j.
+\]
+Suppose every chamber of \(C\) has no violation at radius \(1\):
+\[
+x_1(\pi)=y_1(\pi)=0
+\qquad(\pi\in\mathcal V(C)).
+\]
+
+**Lemma (radius-one rigidity).**
+Then
+\[
+|C_j|\le3.
+\]
+Moreover, when the neighboring blocks exist,
+\[
+|C_{j-1}|\le2,
+\qquad
+|C_{j+1}|\le2.
+\]
+
+**Proof.**
+Write
+\[
+W=C_j\setminus\{r\}.
+\]
+If \(|W|\ge3\), place \(r\) last in its block and choose three vertices of \(W\) in the three positions immediately before \(r\). Since \(x_1=0\), their ordered triple must be tight. Reversing those three vertices while keeping every other block order fixed gives another chamber of \(C\), but boundary antisymmetry makes the reversed triple non-tight, contradicting \(x_1=0\). Hence
+\[
+|W|\le2,
+\]
+so \(|C_j|\le3\).
+
+If \(|C_{j-1}|\ge3\), place \(r\) first in \(C_j\). The three positions immediately before \(r\) may then be filled by any ordered triple from the end of \(C_{j-1}\). The same reversal argument contradicts \(x_1=0\). Thus \(|C_{j-1}|\le2\).
+
+The right-hand statement is symmetric: place \(r\) last in \(C_j\). If \(|C_{j+1}|\ge3\), arbitrary reversal of the first three vertices of \(C_{j+1}\) flips the immediate right status, contradicting \(y_1=0\). \(\square\)
+
+Apply this to a nearest-violation Tucker carrier. Let
+\[
+d_{\min}
+=
+\min_{\pi\in\mathcal V(C)}d_0(\pi).
+\]
+
+**Corollary.**
+If
+\[
+d_{\min}\ge2,
+\]
+then the carrier has
+\[
+|C_j|\le3,
+\qquad
+|C_{j\pm1}|\le2
+\]
+for the existing neighboring blocks.
+
+Thus every carrier with a large nontrivial \(r\)-block necessarily satisfies
+\[
+\boxed{d_{\min}=1.}
+\]
+
+This conclusion is independent of which signed nearest label realizes the minimum. It uses only the universal protected-radius statement
+\[
+x_1=y_1=0
+\]
+on the carrier. Hence the genuinely unbounded branch of the nearest-violation Tucker program is localized to the first uncontrolled triples immediately outside the forced auxiliary junction.
+
+
+### The first active exact-violation coordinate
+
+The same radius localization follows directly from the coordinatewise exact violation map, without the nearest-label compression.
+
+Let
+\[
+F(\pi)=(F_1(\pi),\ldots,F_{n-2}(\pi))
+\]
+be the odd exact violation vector from [[auxiliary_violation_vector_has_exact_chamber_zeros]], and let \(C\) be the carrier face of a zero with strictly positive chamber weights:
+\[
+\sum_{\pi\in\mathcal V(C)}\lambda_\pi F(\pi)=0,
+\qquad
+\lambda_\pi>0.
+\]
+Assume \(H\) has no two-cover, so no chamber has \(F(\pi)=0\).
+
+Define the **first active radius**
+\[
+d(C)
+=
+\min\{d:\exists\pi\in\mathcal V(C)\text{ with }F_d(\pi)\ne0\}.
+\]
+
+**Proposition (first-active-radius balance).**
+For every chamber of \(C\),
+\[
+x_j(\pi)=y_j(\pi)=0
+\qquad(1\le j<d(C)).
+\]
+At radius \(d(C)\), both signs occur:
+\[
+\exists\pi_+,\pi_-\in\mathcal V(C)
+\quad
+F_{d(C)}(\pi_+)=+1,
+\qquad
+F_{d(C)}(\pi_-)=-1.
+\]
+
+**Proof.**
+For \(j<d(C)\), the definition gives
+\[
+F_j(\pi)=0
+\]
+for every chamber. By exactness of one coordinate,
+\[
+F_j(\pi)=0
+\iff
+x_j(\pi)=y_j(\pi)=0.
+\]
+At \(d=d(C)\), some chamber has nonzero \(F_d\). Since every \(\lambda_\pi\) is strictly positive and
+\[
+\sum_\pi\lambda_\pi F_d(\pi)=0,
+\]
+the nonzero values cannot all have the same sign. Thus both \(+1\) and \(-1\) occur. \(\square\)
+
+Combining this with the radius-one rigidity lemma gives:
+
+**Corollary (unbounded exact-violation carriers are radius-one carriers).**
+If the \(r\)-block of \(C\) has order at least four, or if either adjacent face block has order at least three, then
+\[
+\boxed{d(C)=1.}
+\]
+
+Equivalently, every positive carrier whose first active exact-violation radius satisfies
+\[
+d(C)\ge2
+\]
+already has
+\[
+|C_j|\le3,
+\qquad
+|C_{j\pm1}|\le2.
+\]
+
+This formulation is useful because it is intrinsic to the established exact map \(F\). The only potentially unbounded facewise cancellation for that map occurs in the first violation coordinate, i.e. in the two original triples immediately outside the forced auxiliary junction.
+
+
+### A double-nearest sign wall is supported at radii one and two
+
+The median-mixed branch admits a sharp adjacent-swap localization.
+
+Let \(\pi'\) be obtained from \(\pi\) by moving \(r\) one position to the right, swapping it with the adjacent original vertex. For the violation profiles one has the exact remote transport identities
+\[
+x_{d+1}(\pi')=x_d(\pi),
+\qquad
+y_d(\pi')=y_{d+1}(\pi)
+\qquad(d\ge1).
+\]
+The only new left coordinate is \(x_1(\pi')\); the old right coordinate \(y_1(\pi)\) disappears into the central junction.
+
+**Lemma (double-nearest transport).**
+Suppose both \(\pi\) and \(\pi'\) have a double violation at their nearest violating radius:
+\[
+x_d(\pi)=y_d(\pi)=1,
+\qquad
+x_j(\pi)=y_j(\pi)=0\quad(j<d),
+\]
+and similarly with nearest radius \(d'\) for \(\pi'\). Then
+\[
+\boxed{d,d'\in\{1,2\}.}
+\]
+More precisely, if \(d\ge2\), then
+\[
+d=2,\qquad d'=1.
+\]
+
+**Proof.**
+Assume \(d\ge2\). Since
+\[
+y_{d-1}(\pi')=y_d(\pi)=1,
+\]
+and all
+\[
+y_j(\pi')=y_{j+1}(\pi)=0
+\qquad(j<d-1),
+\]
+the nearest right violation of \(\pi'\) is exactly at radius \(d-1\). If \(\pi'\) is double-nearest, its nearest left violation must also occur at radius \(d-1\).
+
+If \(d-1\ge2\), however,
+\[
+x_{d-1}(\pi')=x_{d-2}(\pi)=0,
+\]
+a contradiction. Therefore
+\[
+d-1=1,
+\]
+so \(d=2\), and the new exposed coordinate \(x_1(\pi')\) must equal one. Hence \(d'=1\).
+
+If \(d=1\), then
+\[
+x_2(\pi')=x_1(\pi)=1,
+\]
+so the nearest left violation of \(\pi'\) is at radius at most two. Since \(\pi'\) is double-nearest,
+\[
+d'\le2.
+\]
+This proves the claim. The left-moving version is symmetric. \(\square\)
+
+Now return to a nearest-violation Tucker carrier \(C\) containing both
+\[
++\star
+\qquad\text{and}\qquad
+-\star.
+\]
+Choose a chamber-graph path in \(C\) between such witnesses.
+
+If some chamber on the path has an ordinary nearest label, then the carrier also contains the opposite ordinary label of the same unsigned coordinate by the Tucker balance theorem.
+
+Otherwise every chamber on the chosen path is double-nearest. Since the side-set gauge changes sign from one endpoint to the other, some edge of the path changes the gauge sign. An adjacent transposition not involving \(r\) leaves the set \(L_r\) unchanged, so such an edge must swap \(r\) with one original vertex. The double-nearest transport lemma then shows that the two endpoint radii of this sign-wall edge belong to
+\[
+\{1,2\}.
+\]
+
+Hence:
+
+**Corollary (median-mixed localization).**
+Every median-mixed Tucker carrier satisfies at least one of the following.
+
+1. It contains an ordinary nearest-violation label, and therefore an opposite ordinary pair.
+2. It contains an adjacent \(r\)-swap crossing the gauge wall whose two chambers are both double-nearest and whose nearest radii are at most two.
+
+Thus the genuinely mixed sign-wall residue is a radius-\(1/2\) local configuration around the auxiliary vertex, not an unbounded violation profile.
+
+
+### Coordinatewise local gauges remove the global median artifact
+
+The antipodal gauge in the exact violation vector need not be global and need not be the same for every radius.
+
+Fix once and for all a total order \(\prec\) on the original vertex set \(V(H)\). For a radius \(d\) at which both violation bits are present,
+\[
+x_d(\pi)=y_d(\pi)=1,
+\]
+let
+\[
+\mu_d^L(\pi),\qquad \mu_d^R(\pi)
+\]
+be the middle original vertices of the left and right radius-\(d\) status triples, respectively. These vertices are distinct. Define
+\[
+g_d^{\rm loc}(\pi)
+=
+\begin{cases}
++1,&\mu_d^L(\pi)\prec\mu_d^R(\pi),\\
+-1,&\mu_d^R(\pi)\prec\mu_d^L(\pi).
+\end{cases}
+\]
+When \(x_dy_d=0\), the value of \(g_d^{\rm loc}\) is irrelevant.
+
+Reversal exchanges the two radius-\(d\) windows and preserves the middle vertex of each reversed triple. Hence, whenever the double term is active,
+\[
+g_d^{\rm loc}(\pi^{\rm rev})
+=
+-g_d^{\rm loc}(\pi).
+\]
+
+Define
+\[
+F_d^{\rm loc}(\pi)
+=
+x_d(\pi)-y_d(\pi)
++
+g_d^{\rm loc}(\pi)x_d(\pi)y_d(\pi).
+\]
+Then
+\[
+F_d^{\rm loc}(\pi^{\rm rev})
+=
+-F_d^{\rm loc}(\pi),
+\]
+and
+\[
+F_d^{\rm loc}(\pi)=0
+\iff
+x_d(\pi)=y_d(\pi)=0.
+\]
+Thus
+\[
+F^{\rm loc}=(F_1^{\rm loc},\ldots,F_{n-2}^{\rm loc})
+\]
+is another exact odd violation vector with the same chamber zero set as the original vector:
+\[
+F^{\rm loc}(\pi)=0
+\iff
+\pi\text{ is a directed one-change order}.
+\]
+
+The face-average barycentric extension therefore gives an odd map
+\[
+S^{n-1}\longrightarrow\mathbb R^{n-2}
+\]
+whose zero set has dimension at least one by Bourgin--Yang.
+
+The advantage is locality. An adjacent transposition changes a status only in the four consecutive starting positions whose windows meet the swapped pair. The left and right radius-\(d\) status starts differ by
+\[
+2d+2\ge4.
+\]
+Hence one adjacent transposition cannot change both radius-\(d\) violation windows. It also cannot change both middle vertices used by \(g_d^{\rm loc}\).
+
+**Lemma (one-sided sign wall).**
+Let \(\pi,\pi'\) be adjacent chambers. If
+\[
+F_d^{\rm loc}(\pi)=+1,
+\qquad
+F_d^{\rm loc}(\pi')=-1,
+\]
+then the transposition meets exactly one of the two radius-\(d\) windows, while the opposite violation bit remains equal to \(1\) at both endpoints.
+
+More explicitly, up to left-right symmetry, the right violation stays present,
+\[
+y_d(\pi)=y_d(\pi')=1,
+\]
+and either
+
+1. the left bit changes
+   \[
+   x_d:1\longleftrightarrow0,
+   \]
+   with the double endpoint carrying local gauge \(+1\); or
+
+2. both endpoints are double violations and the local gauge changes sign because the left middle vertex changes.
+
+**Proof.**
+If the transposition misses both radius-\(d\) windows, neither violation bit nor either middle vertex changes, so \(F_d^{\rm loc}\) is unchanged. It cannot meet both windows because their start positions differ by at least four.
+
+Suppose it meets only the left window. Then \(y_d\) is fixed. If \(y_d=0\), the coordinate is simply
+\[
+F_d^{\rm loc}=x_d\in\{0,1\},
+\]
+so it cannot change from \(+1\) to \(-1\). Hence \(y_d=1\). With \(y_d=1\), the only nonzero possibilities are a right-only state \(F=-1\) and double states \(F=g_d^{\rm loc}\). The displayed alternatives follow. The right-window case is symmetric. \(\square\)
+
+Therefore the first active coordinate of a positive carrier has no genuinely global sign wall. Opposite signs must be connected through local changes at one of the two determining windows. This removes the artificial global-median branch introduced by the side-set gauge. The unresolved conversion problem is now a local one-sided transition across a protected one-change corridor.
+
+
+## Root-only exhaustion and the k=1 anchored residue
+
+### A cubic root moment kills the last asymmetric circulation
+
+Assume a positively balanced exact-root carrier has already been reduced by [[topological_recurrence_to_local_gn3_structure]] to the four-coordinate nonzero branch. Translate the occurring exact-root coordinates so that they lie in
+[
+{0,1,2,3},
+]
+with every occurring nonzero arc satisfying
+[
+i+jle3.
+]
+The underlying undirected root graph is therefore
+[
+01,quad02,quad03,quad12.
+]
+It is a triangle on (0,1,2) with the bridge (03).
+
+For an exact root (i	o j), define the odd scalar
+[
+sigma(i,j)=(j-i)^3.
+]
+Reversal sends (i	o j) to (j	o i), hence negates (sigma).
+
+Augment the exact-root odd map by this scalar. On a carrier of a zero of the augmented map, let (w_{ij}) be the total positive chamber weight carrying root (i	o j). Root balance says that the antisymmetric edge weights
+[
+a_{ij}=w_{ij}-w_{ji}
+]
+form a circulation on the underlying graph.
+
+Because (03) is a bridge, every circulation has
+[
+a_{03}=0.
+]
+The cycle space of the remaining triangle is one-dimensional, so for some scalar (t),
+[
+a_{01}=a_{12}=t,qquad a_{02}=-t
+]
+with the orientation convention (0	o1	o2	o0).
+
+The cubic-coordinate balance is
+[
+0=sum_{i<j}a_{ij}(j-i)^3.
+]
+Substituting the triangle circulation gives
+[
+0=t(1^3+1^3-2^3)=-6t.
+]
+Hence (t=0). Therefore every antisymmetric edge weight vanishes:
+[
+oxed{w_{ij}=w_{ji}quad	ext{for every occurring root pair }{i,j}.}
+]
+
+Thus, after the four-coordinate reduction, one extra odd scalar eliminates all directed three-cycle imbalance and upgrades positive root circulation to pairwise opposite-root balance.
+
+### Root-only odd information is exhausted after pairwise symmetry
+
+Once
+[
+w_{ij}=w_{ji}
+]
+holds for every root pair, every further odd scalar depending only on the ordered root ((i,j)) cancels automatically between opposite roots. Consequently no additional one-dimensional odd moment of the exact-root coordinates can distinguish the remaining carrier.
+
+This is a useful guardrail: further topological compression must introduce information about actual vertices, hole supports, roles, or local violation data rather than another function of (p,c) alone.
+
+The anchored role maps, rooted omission vectors, and coordinatewise local violation gauges developed elsewhere in Article VII are therefore the natural continuation.
+
+### The deletion-distance split
+
+The current exact-root structure gives a clean global split by
+[
+k=kappa_2(H).
+]
+
+If (kge2), [[topological_recurrence_to_local_gn3_structure]] proves that every positive exact-root carrier contains a zero root (p=c). The unresolved object is then an equal-side canonical partial two-cover with a nonempty hole.
+
+If (k=1), the nonzero exact-root branch may survive. The four-coordinate theorem reduces it to the bounded two-, three-, or four-vertex central configurations. In this branch the no-direct-side-flip lemma for canonical roles is unavailable: a vertex can in principle move directly from the left canonical path to the right canonical path across one adjacent swap. This is precisely why the (k+2)-anchor argument valid for (kge2) does not automatically close (k=1).
+
+A useful next lemma would classify such a direct side flip at (k=1) as an endpoint transfer between two deficiency-one deletion covers. This classification has not yet been completed here and should not be treated as proved.
+
+Accordingly the structural frontier after the cubic reduction is:
+
+- (kge2): exploit equal-side holes and the universal-hole / anchored-role topology;
+- (k=1): analyze the bounded four-coordinate carrier together with direct side-transfer edges;
+- root-only odd moments need not be pursued further.
+
 ## Metadata
 
 - ID: article_vii_synthesis_and_exact_frontier
 - Kind: section
-- Version: 25
-- Math version: 17
+- Version: 34
+- Math version: 25
 - Audit: unaudited
 - Refutation: unrefuted
 
@@ -869,4 +1590,5 @@ Consequently, under the counterexample hypothesis, every zero carrier of the \(\
 - Subsection 1 — crystallized, version 5: Exact formulations and the pre-compression frontier
 - Subsection 2 — crystallized, version 3: Closure: width-three mixed-end handoff
 - Subsection 3 — crystallized, version 3: Exact-deficiency sharpening of the terminal handoff
-- Subsection 4 — HOT, version 10: The remaining face-to-cover conversion
+- Subsection 4 — crystallized, version 18: The remaining face-to-cover conversion
+- Subsection 5 — HOT, version 2: Root-only exhaustion and the k=1 anchored residue
