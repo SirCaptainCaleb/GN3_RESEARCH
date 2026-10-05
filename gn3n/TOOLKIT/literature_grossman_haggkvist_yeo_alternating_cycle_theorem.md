@@ -18,4 +18,3 @@ Literature theorem. Grossman and Häggkvist proved the result for two edge color
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

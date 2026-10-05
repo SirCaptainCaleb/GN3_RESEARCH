@@ -54,4 +54,3 @@ This toolkit abstracts the same mechanism appearing in pairwise repartition, bal
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

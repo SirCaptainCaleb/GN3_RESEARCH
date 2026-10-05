@@ -196,4 +196,3 @@ This does not itself give a spanning two-cover. Its possible use is to convert r
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

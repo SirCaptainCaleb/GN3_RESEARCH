@@ -965,4 +965,3 @@ Thus three common hooks out of an ordered pair always create a Hamiltonian suppo
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

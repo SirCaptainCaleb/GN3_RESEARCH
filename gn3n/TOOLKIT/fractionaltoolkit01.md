@@ -18,4 +18,3 @@ This toolkit collects general fractional-cover mathematics extracted from the As
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

@@ -18,4 +18,3 @@ Use the non-Hamiltonian five-vertex boundary tournament B from fixed_terminal_pa
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

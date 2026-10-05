@@ -282,4 +282,3 @@ This is not a proof step toward the grand conjecture. It is a hardness/benchmark
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

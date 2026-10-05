@@ -912,4 +912,3 @@ For the stronger Johnson-degree density hierarchy, which improves these fixed-su
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

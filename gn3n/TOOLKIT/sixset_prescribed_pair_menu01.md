@@ -18,4 +18,3 @@ Apply twofourhamdeletions01 to the disjoint two-set {p,q} and four-set A. It giv
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

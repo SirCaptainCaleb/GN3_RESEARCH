@@ -22,4 +22,3 @@ The endpoint-replacement formulation is only a corollary used by transport argum
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

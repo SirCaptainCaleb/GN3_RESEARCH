@@ -18,4 +18,3 @@ For c in C, the triple C-{c} lies in a unique block, necessarily (C-{c})+d_c wit
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

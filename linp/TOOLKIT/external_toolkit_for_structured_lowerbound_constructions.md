@@ -27,4 +27,3 @@ Proof-import policy. Short robust arguments are reproduced in paraphrased public
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

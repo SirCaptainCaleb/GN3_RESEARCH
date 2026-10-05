@@ -56,4 +56,3 @@ Therefore K contains adjacent edges. Their Hamiltonian four-sets share a,b and o
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

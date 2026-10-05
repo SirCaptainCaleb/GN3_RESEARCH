@@ -83,7 +83,7 @@ Containment is a tree. Mathematical dependency is a graph. Keep them orthogonal.
 
 Canonical dependencies connect Sections and Toolkit objects. Subsections may carry provisional declared_dependencies while research is still developing; these do not mutate the canonical DAG until the Section is recomposed.
 
-Use Toolkit only when the result's natural statement is reusable outside its originating route. Route-local lemma chains belong in Subsections/Sections, not Toolkit Limbo.
+Use Toolkit only when the result's natural statement is reusable outside its originating route. Route-local lemma chains belong in Subsections/Sections. There is no intermediate Toolkit state: an object either is Toolkit or it is not.
 
 Cross-references may point backward, sideways, or upward. Research chronology does not constrain exposition order.
 

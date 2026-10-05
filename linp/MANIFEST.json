@@ -515,8 +515,8 @@
   },
   "brainstorm_count": 2,
   "composition_model": "recursive-cold-composition-v2",
-  "generated_at": "2026-10-05T02:26:22.438871+00:00",
-  "mirror_format": 12,
+  "generated_at": "2026-10-05T02:39:52.453108+00:00",
+  "mirror_format": 13,
   "schema": "linp",
   "section_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems": {
@@ -3144,10 +3144,9 @@
       "version": 1
     }
   },
-  "toolkit_limbo_count": 0,
-  "toolkit_promoted_count": 1,
+  "toolkit_count": 1,
   "universal_document_versions": {
-    "guide": 12,
+    "guide": 13,
     "reflexes": 6
   }
 }

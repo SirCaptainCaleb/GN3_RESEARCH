@@ -51,4 +51,3 @@ Hence, whenever 4a>2b+2c+3, deleting either displayed endpoint of A and covering
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

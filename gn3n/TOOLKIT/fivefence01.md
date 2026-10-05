@@ -33,4 +33,3 @@ This is a logical fence, not merely terminology: forgetting the synchronization 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

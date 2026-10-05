@@ -536,4 +536,3 @@ The three unordered pairs of components of `J` supply three distinct ordinary en
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

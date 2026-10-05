@@ -24,4 +24,3 @@ In either case choose x in I_e intersect I_f. Put U=(X-{x}) union {e,f}. Then U-
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

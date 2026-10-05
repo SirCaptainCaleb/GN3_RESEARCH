@@ -38,4 +38,3 @@ The preceding deletion-graph argument gives the positive-degree bound and reduce
 - Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

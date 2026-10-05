@@ -522,10 +522,10 @@
       "version": 17
     }
   },
-  "brainstorm_count": 21,
+  "brainstorm_count": 128,
   "composition_model": "recursive-cold-composition-v2",
-  "generated_at": "2026-10-05T02:26:20.870043+00:00",
-  "mirror_format": 12,
+  "generated_at": "2026-10-05T02:39:50.691183+00:00",
+  "mirror_format": 13,
   "schema": "gn3n",
   "section_versions": {
     "antipodal_geodesics_and_complementary_path_supports": {
@@ -1719,7 +1719,7 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1088,
+  "snapshot_revision": 1222,
   "startup_broadcasts": [
     {
       "body": "Do not pursue a minimum-counterexample analysis unless prior development has already forced any minimum counterexample to have bounded order: there must be an explicit finite upper bound on the number of vertices. Until such a bounded-order reduction exists, use structural, topological, algebraic, constructive, or other non-minimum-counterexample approaches instead.",
@@ -3547,10 +3547,9 @@
       "version": 4
     }
   },
-  "toolkit_limbo_count": 38,
-  "toolkit_promoted_count": 42,
+  "toolkit_count": 42,
   "universal_document_versions": {
-    "guide": 12,
+    "guide": 13,
     "reflexes": 6
   }
 }

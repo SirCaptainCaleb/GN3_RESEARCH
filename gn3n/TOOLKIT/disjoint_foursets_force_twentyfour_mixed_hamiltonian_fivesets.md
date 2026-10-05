@@ -22,4 +22,3 @@ Finally, averaging at least twelve successful incidences over the four labels b 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

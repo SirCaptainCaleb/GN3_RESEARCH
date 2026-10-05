@@ -64,4 +64,3 @@ For sharpness, fix a total order on `V` and declare `(a,b,c)` tight exactly when
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

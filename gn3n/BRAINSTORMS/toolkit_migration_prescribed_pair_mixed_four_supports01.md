@@ -1,0 +1,59 @@
+# Toolkit migration — Prescribed-pair mixed four-supports exist in every exterior three-set
+
+Preserved from the retired Toolkit Limbo object [[prescribed_pair_mixed_four_supports01]]. This Brainstorm is migration evidence, not an accepted Toolkit entry.
+
+## Original metadata
+
+{
+    "kind": "toolkit",
+    "version": 2,
+    "created_at": "2026-09-29T22:13:57.860711+00:00",
+    "updated_at": "2026-10-03T14:43:12.126335+00:00",
+    "archived_at": "2026-10-03T14:43:12.126335+00:00",
+    "original_id": "prescribed_pair_mixed_four_supports01",
+    "audit_status": "unaudited",
+    "math_version": 1,
+    "toolkit_type": "other",
+    "refutation_status": "unrefuted",
+    "author_session_ids": [
+    ],
+    "audited_math_version": null
+}
+
+## Simplified statement
+
+Prescribed-pair mixed four-supports exist in every exterior three-set
+
+## Statement
+
+Let A,B be disjoint vertex sets in an arbitrary boundary tournament, with |A|=a>=2 and |B|=b>=3. For every prescribed pair T subset A and every three-set D subset B, there is a pair E subset D such that T union E is Hamiltonian. At least binom(a,2)[binom(floor(b/2),2)+binom(ceil(b/2),2)] distinct Hamiltonian four-supports have exactly two vertices in A and two in B. Every five-set with two vertices in A and three in B has at least two Hamiltonian four-subsets, all meeting both sides. Consequently a bipartition with both sides of order at least two and total order at least five cannot exclude all mixed Hamiltonian four-supports. In a minimum counterexample, each of these four-supports has a non-Hamiltonian complement of path-cover number two.
+
+## Body
+
+Fix T={u,v} subset A. Partition B into C_+={z:(u,z,v) is tight} and C_-={z:(v,z,u) is tight}. The certified fixed-pair orientation-class theorem bd3c8d17ca06 makes every pair within either class complete T to a Hamiltonian four-support. Every three-set D subset B has two vertices in one class, giving the prescribed-pair claim without assumptions on paths, insertion, endpoint extensions, or potential. If |C_+|=c and |C_-|=b-c, there are at least binom(c,2)+binom(b-c,2) such supports. Moving one vertex from a class at least two larger than the other decreases this sum, so its minimum occurs at the two balanced class sizes floor(b/2),ceil(b/2). Supports arising from different T have different intersections with A and are distinct, giving the displayed bound. For S=T union D, smallset01 Section 7 gives at least two Hamiltonian four-subsets whether S is Hamiltonian or not. Every four-subset of this 2+3 split meets both A and B. If both sides have at least two vertices and total size at least five, exchange A,B if necessary to choose a 2+3 split; a mixed Hamiltonian four-support follows. The complement assertion is mincex01. Applied to X|P|Q with |X|=4 and |P|>=5, take B to be the displayed interior M of P. For every prescribed X-pair and every three consecutive vertices of M, a Hamiltonian four-support contains that pair and two of those three interior vertices. This is available before the endpoint package or insertion analysis. Therefore the broad no-mixed-support residue used by four_side_endpoint_lock_gap_network01, its cycle-or-monotone successor, and short_gap_forces_reverse_triples01 is empty in their intended four-label setting. The latter theorem gives no live restriction there. This does not produce a same-pair-union repartition: the complementary two-cover supplied by minimality can rearrange the third original path. The remaining useful question must couple these prescribed-pair support families with actual complement path orders and legal attachment data, rather than analyze a nonexistent no-mixed-support branch.
+
+## Direct premises at migration
+
+[]
+
+## Direct consumers at migration
+
+[
+    {
+        "consumer_id": "toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set",
+        "consumer_kind": "toolkit",
+        "consumer_title": "A Phi-minimal 3|5 pair forces a complementary matching-block four-set",
+        "compatibility_status": "confirmed",
+        "premise_math_version": 1,
+        "consumer_math_version": 1,
+        "consumer_toolkit_limbo": true
+    }
+]
+
+## Supersession records at migration
+
+[]
+
+## Retained passed-version snapshot at migration
+
+null

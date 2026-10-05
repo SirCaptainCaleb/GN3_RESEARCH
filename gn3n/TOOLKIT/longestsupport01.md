@@ -16,4 +16,3 @@ Organizational Toolkit subnode for reusable longest-path support and exchange ma
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
-- Toolkit status: Promoted

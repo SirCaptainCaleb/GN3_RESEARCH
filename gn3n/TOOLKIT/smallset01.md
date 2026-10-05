@@ -627,4 +627,3 @@ which simplifies to the displayed bound. ∎
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
-- Toolkit status: Promoted

@@ -14,5 +14,5 @@ Article and Section files are not generated concatenations. Their bodies are col
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
-Snapshot revision: 1088
-Generated: 2026-10-05T02:26:20.870043+00:00
+Snapshot revision: 1222
+Generated: 2026-10-05T02:39:50.691183+00:00

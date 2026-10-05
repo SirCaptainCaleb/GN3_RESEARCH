@@ -1,0 +1,112 @@
+# Toolkit migration
+
+Index of material moved out of the retired Toolkit Limbo half-state. Child Brainstorms use the toolkit_migration_<old_id> naming convention. This is an organizational migration folder, not a new schema concept.
+
+## Migrated objects
+
+- [[toolkit_migration_protected_good_band_forces_thin_face_blocks]] — A protected good band forces thin face blocks — was active
+- [[toolkit_migration_terminal_span_two_block_has_order_two]] — A terminal span-two witness block has exactly two vertices — was active
+- [[toolkit_migration_literature_combinatorial_nullstellensatz]] — Alon's Combinatorial Nullstellensatz — was active
+- [[toolkit_migration_auxiliary_violation_vector_has_exact_chamber_zeros]] — An odd auxiliary violation vector with one-change chamber zeros — was active
+- [[toolkit_migration_auxiliary_singleton_face_cut_imbalance]] — Auxiliary singleton faces reduce to tournament cut imbalance — was active
+- [[toolkit_migration_boundary_tournaments_as_oriented_transition_systems]] — Boundary tournaments as oriented transition systems — was active
+- [[toolkit_migration_literature_discrete_ham_sandwich_theorem]] — Discrete ham sandwich theorem — was active
+- [[toolkit_migration_disjoint_status_windows_form_boolean_cubes]] — Disjoint internal status windows form Boolean cubes — was active
+- [[toolkit_migration_dual_polarity_witness_reduction]] — Dual-polarity witness reduction — was active
+- [[toolkit_migration_omitted_vertex_endpoint_rerouting]] — Endpoint rerouting at an omitted vertex — was active
+- [[toolkit_migration_eight_vertex_boundary_tournaments_have_two_cover]] — Every eight-vertex boundary tournament has a two-cover — was active
+- [[toolkit_migration_every_six_vertices_admit_a_span_two_bad_order]] — Every six vertices admit a span-two bad order — was active
+- [[toolkit_migration_ten_vertex_boundary_tournaments_have_two_cover]] — Every ten-vertex boundary tournament has a two-cover — was active
+- [[toolkit_migration_every_terminal_local_witness_support_is_two_coverable]] — Every terminal local-witness support is two-coverable — was active
+- [[toolkit_migration_far_double_witnesses_are_frozen_or_breakable]] — Far symmetric witnesses are frozen or breakable — was active
+- [[toolkit_migration_five_protected_positions_are_impossible]] — Five protected positions are impossible inside one face block — was active
+- [[toolkit_migration_fixed_center_violation_intermediate_value]] — Fixed-center violation intermediate value — was active
+- [[toolkit_migration_ky_fan_alternation_forces_a_cross_support_edge]] — Ky Fan alternation forces a cross-support edge — was active
+- [[toolkit_migration_ky_fan_interleaving_gives_aligned_tail_exchange]] — Ky Fan interleaving gives an aligned tail exchange — was active
+- [[toolkit_migration_local_bad_patterns_label_a_fixed_path]] — Local bad patterns label a fixed path — was active
+- [[toolkit_migration_local_witness_carriers_have_a_protected_central_band]] — Local-witness carriers have a protected central band — was active
+- [[toolkit_migration_local_witness_path_topology]] — Local-witness path topology — was active
+- [[toolkit_migration_minimum_deletion_cover_lifts_have_fixed_exact_root]] — Minimum deletion-cover lifts have a fixed exact root — was active
+- [[toolkit_migration_terminal_two_vertex_toggle_forces_two_cover]] — One-polarity two-vertex toggle has a canonical local two-cover — was active
+- [[toolkit_migration_paired_local_witnesses_splice_or_compress_centrally]] — Paired local witnesses splice or compress centrally — was active
+- [[toolkit_migration_permutahedron_face_status_localization]] — Status averages localize at permutahedron face boundaries — was active
+- [[toolkit_migration_superincreasing_auxiliary_violation_compression]] — Superincreasing compression of auxiliary violations — was active
+- [[toolkit_migration_terminal_disjoint_single_sided_witnesses_are_impossible]] — Terminal disjoint single-sided witness configurations are impossible — was active
+- [[toolkit_migration_terminal_local_witness_support_sharpens_to_ten]] — Terminal dual-polarity local-witness support is bounded by ten vertices — was active
+- [[toolkit_migration_terminal_local_block_bound]] — Terminal local block bound — was active
+- [[toolkit_migration_terminal_local_block_sharpens_to_four]] — Terminal local witness blocks have at most four vertices — was active
+- [[toolkit_migration_terminal_local_witnesses_have_twelve_vertex_support]] — Terminal local-witness obstructions have support at most twelve — was active
+- [[toolkit_migration_terminal_span_two_blocks_three_and_four_are_impossible]] — Terminal span-two blocks of order three or four are impossible — was active
+- [[toolkit_migration_dual_polarity_terminal_span_two_branch_is_impossible]] — The dual-polarity terminal span-two branch is impossible — was active
+- [[toolkit_migration_kappa_one_nonzero_four_block_is_impossible]] — The kappa-one nonzero four-block is impossible — was active
+- [[toolkit_migration_terminal_alternating_witness_branch_is_impossible]] — The terminal alternating-witness branch is impossible — was active
+- [[toolkit_migration_two_spare_dimensions_force_three_vertices_into_one_block]] — Two spare dimensions force a prescribed triple into one face block — was active
+- [[toolkit_migration_two_cover_words_avoid_three_local_patterns]] — Two-cover status words avoid three local patterns — was active
+- [[toolkit_migration_toolkit_34_pair_gives_a_neutral_endpoint_swap_or_a_controlled_52_detour]] — A 3|4 pair gives a neutral endpoint swap or a controlled 5|2 detour — was archived
+- [[toolkit_migration_blocked_fourcore_star_outer_sixset01]] — A blocked center in a four-core extension star forces a complete outer-pair six-set or positioned disturbance — was archived
+- [[toolkit_migration_five_side_endpoint_core_m6_01]] — A five-side beside a path of order at least six gives nonincreasing transport or a common endpoint core — was archived
+- [[toolkit_migration_astra003fivetwosidedlock]] — A five-side no-swap branch forces a two-sided endpoint lock on one long path — was archived
+- [[toolkit_migration_four_path_long_pair_escape01]] — A four-path beside a path of order at least six descends, disagrees, or makes the unique neutral migration — was archived
+- [[toolkit_migration_four_path_long_pair_endpoint_fork01]] — A four-side beside a path of order at least six strictly descends or creates an adjacent opposite-end four-window fork — was archived
+- [[toolkit_migration_five_side_prescribed_pair_switch01]] — A Hamiltonian five-side admits prescribed-pair two-for-two support switches — was archived
+- [[toolkit_migration_prescribed_vertex_six_to_five_retention01]] — A Hamiltonian six-support reduces to a five-support retaining any prescribed vertex — was archived
+- [[toolkit_migration_four_side_gap_order7_reverse01]] — A hard four-side lock against a seven-path uses the four interior gaps in reverse order — was archived
+- [[toolkit_migration_toolkit_to_path_disturbance_reversal_descent_or_an_omission_swap]] — A leaf support reduces endpoint comparison to path disturbance, reversal, descent, or an omission swap — was archived
+- [[toolkit_migration_fivepath_or_a_fourvertex_internalreversal_configuration]] — A longest path has a bi-endpoint five-path or a four-vertex internal-reversal configuration — was archived
+- [[toolkit_migration_toolkit_vertex_middle_forces_an_endpoint_rooted_hamiltonian_four_set]] — A mixed two-vertex middle forces an endpoint-rooted Hamiltonian four-set — was archived
+- [[toolkit_migration_toolkit_a_mixed_two_vertex_middle_forces_strict_quadratic_descent]] — A mixed two-vertex middle forces strict quadratic descent — was archived
+- [[toolkit_migration_nonham_five_pc2_cube01]] — A non-Hamiltonian five-set has either a complete pc2 punctured cube or one Hamiltonian singleton exception — was archived
+- [[toolkit_migration_restores_to_endpoint_reversal_a_twocover_or_quadratic_descent]] — A one-block endpoint attachment restores to endpoint reversal, a two-cover, or quadratic descent — was archived
+- [[toolkit_migration_toolkit_across_a_two_vertex_middle_forces_the_adjacent_inner_reversal]] — A one-sided tight join across a two-vertex middle forces the adjacent inner reversal — was archived
+- [[toolkit_migration_toolkit_minimal_335_state_forces_a_cross_side_hamiltonian_five_support]] — A Phi-minimal 3|3|5 state forces a cross-side Hamiltonian five-support — was archived
+- [[toolkit_migration_toolkit_a_neutral_swap_an_order_disagreement_or_a_common_terminal_pair]] — A Phi-minimal 3|4|4 state has a neutral swap, an order disagreement, or a common terminal pair — was archived
+- [[toolkit_migration_toolkit_minimal_35_pair_forces_a_complementary_matching_block_four_set]] — A Phi-minimal 3|5 pair forces a complementary matching-block four-set — was archived
+- [[toolkit_migration_toolkit_a_phi_minimum_containing_a_three_path_has_order_at_most_thirteen]] — A Phi-minimum containing a three-path has order at most thirteen — was archived
+- [[toolkit_migration_five_side_prescribed_pair_sixset_menu01]] — A prescribed-pair six-set has a Hamiltonian, singleton-extension, overlap, or fixed-pair matching outcome — was archived
+- [[toolkit_migration_phi_minimum_with_four_support_is_small_or_disagrees01]] — A quadratic minimum containing a four-support is small or has an order disagreement — was archived
+- [[toolkit_migration_local45_locked_finite_menu01]] — A quadratic-minimal 4|5|m cover has a cyclic exchange or one of three insertion-obstruction outcomes — was archived
+- [[toolkit_migration_toolkit_minimal_two_vertex_middle_has_a_doubled_same_side_reversal]] — A quadratic-minimal two-vertex middle has a doubled same-side reversal — was archived
+- [[toolkit_migration_toolkit_common_endpoint_core_or_a_two_pair_root_exchange_split]] — A rooted five-side has a root-preserving common endpoint core or a two-pair root-exchange split — was archived
+- [[toolkit_migration_rooted_six_support_transfer_or_comparison_disturbance01]] — A rooted six-support yields a one-label transfer or a path disturbance — was archived
+- [[toolkit_migration_threeside_bounded_endpoint_five_repartition01]] — A three-side singleton lift reaches a positioned five-support by two nonincreasing pairwise repartitions — was archived
+- [[toolkit_migration_three_vertex_component_long_neighbor_rotation01]] — A three-vertex component beside a path of order at least six strictly descends — was archived
+- [[toolkit_migration_toolkit_a_two_vertex_middle_path_forces_an_endpoint_reversal_pattern]] — A two-vertex middle path forces an endpoint-reversal pattern — was archived
+- [[toolkit_migration_exceptional_leaf_label_gives_disagreement_reversal_or_neutral_recurrence]] — An exceptional leaf label gives disagreement, reversal, or neutral selected-lift recurrence — was archived
+- [[toolkit_migration_exceptional_leaf_label_is_end_local_or_order_disagreeing]] — An exceptional leaf label is end-local or order-disagreeing — was archived
+- [[toolkit_migration_toolkit_two_vertex_middle_component_forces_strict_quadratic_descent]] — Any two-vertex component beside a path of order at least four strictly descends — was archived
+- [[toolkit_migration_astramining20260927]] — Astra result-mining specialist pass: reusable mathematics extracted — was archived
+- [[toolkit_migration_definitions01]] — Boundary tournaments and tight-path conventions — was archived
+- [[toolkit_migration_a_reduced_support_tree_prevents_rounding_by_two_selected_paths]] — Branching in a reduced support tree prevents rounding by two selected paths — was archived
+- [[toolkit_migration_local_four_fork_interior_lock01]] — Componentwise four-side fork interior lock — was archived
+- [[toolkit_migration_connected_support_tree_census_bounds_exceptional_leaf_transfer]] — Connected support-tree census bounds exceptional leaf transfer — was archived
+- [[toolkit_migration_endpoint_overlap_allfour_elevated01]] — Endpoint-rooted overlap carries the original transport menu plus four simultaneous endpoint probes — was archived
+- [[toolkit_migration_toolkit_lift_strictly_descends_to_a_rooted_three_vertex_component]] — Every deletion-cover singleton lift strictly descends to a rooted three-vertex component — was archived
+- [[toolkit_migration_four_side_endpoint_lock_mixed_menu_m5_01]] — Every four-side beside a nontrivial path has an endpoint-rooted Hamiltonian four-set — was archived
+- [[toolkit_migration_four_side_universal_endpoint_probe01]] — Every four-side carries four endpoint-pair transport probes — was archived
+- [[toolkit_migration_minimum_counterexample_has_a_genuine_reversing_tight_triple]] — Every minimum counterexample has a genuine reversing tight triple — was archived
+- [[toolkit_migration_toolkit_phi_minimal_345_state_has_a_nontrivial_neutral_reconfiguration]] — Every Phi-minimal 3|4|5 state has a nontrivial neutral reconfiguration — was archived
+- [[toolkit_migration_path_induces_a_pathcovertwo_endpoint_square_on_its_complement]] — Every proper tight path induces a path-cover-two endpoint square on its complement — was archived
+- [[toolkit_migration_minimal_355_profile_has_a_neutral_cycle01]] — Every quadratic-minimal 3|5|5 profile lies on a nontrivial neutral cycle — was archived
+- [[toolkit_migration_sixset_deletion_graph_strengthened01]] — Every six-set has a deletion graph of positive minimum degree, with only a four-label non-Hamiltonian-core matching exception — was archived
+- [[toolkit_migration_exceptional_leaf_reselection_creates_smaller_leaf_or_disconnects]] — Exceptional leaf reselection creates a smaller leaf or disconnects the support forest — was archived
+- [[toolkit_migration_exceptional_leaf_transfer_equals_support_order_gap]] — Exceptional leaf transfer equals the support-order gap — was archived
+- [[toolkit_migration_four_side_gap_network_disturbance01]] — Four-label gap networks force a mixed four-set, an outer-edge reversal, or a spaced middle configuration — was archived
+- [[toolkit_migration_facing_k4_local_twomove_formula01]] — Inner facing four-windows have local two-move potential formulas — was archived
+- [[toolkit_migration_leaf_endpoint_singleton_triangle01]] — Leaf endpoint comparison forces direct mixing or splits the old support — was archived
+- [[toolkit_migration_local_opposite_extremal_matching_interfaces01]] — Local non-Hamiltonian interfaces force opposite-extremal matching blocks — was archived
+- [[toolkit_migration_mutual_internal_endpoint_grid01]] — Mutual deletion internality forces four endpoint windows or doubled reverse constraints — was archived
+- [[toolkit_migration_five_side_prescribed_pair_sixset01]] — Prescribed-pair five-side switches synchronize on a six-vertex transport set — was archived
+- [[toolkit_migration_prescribed_pair_mixed_four_supports01]] — Prescribed-pair mixed four-supports exist in every exterior three-set — was archived
+- [[toolkit_migration_toolkit_minimal_three_covers_have_no_components_of_order_one_or_two]] — Quadratic-minimal three-covers have no components of order one or two — was archived
+- [[toolkit_migration_combinatorialtopology_and_matching_toolkit_imported_from_linp]] — Reusable combinatorial-topology and matching toolkit imported from LINP — was archived
+- [[toolkit_migration_short_gap_forces_reverse_triples01]] — Short gaps force reversed endpoint triples without a minimum-counterexample hypothesis — was archived
+- [[toolkit_migration_toolkit_gives_an_interior_end_edge_reversal_or_a_central_sandwich]] — The 3|5 matching-block residue gives an interior end-edge reversal or a central sandwich — was archived
+- [[toolkit_migration_four_side_endpoint_package_m5_01]] — The four-side endpoint package extends through the neutral order-five threshold — was archived
+- [[toolkit_migration_toolkit_forces_four_core_disturbance_or_an_outer_hamiltonian_sixset]] — The root-exchange split forces four-core disturbance or an outer Hamiltonian six-set — was archived
+- [[toolkit_migration_sixset_deletion_matching_oriented01]] — The six-set matching exception has a canonical orientation split and complete hook rectangle — was archived
+- [[toolkit_migration_four_side_endpoint_lock_gap_network01]] — The unresolved four-side endpoint lock is a four-label second-type gap network — was archived
+- [[toolkit_migration_three_noninsertables_finite_menu01]] — Three noninsertable vertices on one path yield a four-vertex configuration or an interval path — was archived
+- [[toolkit_migration_three_secondtype_locks_connector01]] — Three second-type insertion obstructions yield a Hamiltonian four-set or an interval path — was archived
+- [[toolkit_migration_four_path_endpointpair_repartition_or_lock01]] — Two bad endpoint extensions of a four-path give a two-path repartition or interior noninsertability — was archived
+- [[toolkit_migration_five_side_two_bad_endpoint_sixpackage01]] — Two bad extensions of a Hamiltonian five-set yield a six-set with four positioned good deletions — was archived
+- [[toolkit_migration_toolkit_35_rotations_perform_a_controlled_two_for_two_support_exchange]] — Two neutral 3|5 rotations perform a controlled two-for-two support exchange — was archived
