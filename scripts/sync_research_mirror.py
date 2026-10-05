@@ -364,7 +364,7 @@ Creates/edits Sections or Toolkit. New route-shaped work should normally develop
 ### save_document(session_id, payload, expected_version := null)
 Creates/edits documents and Article containment. Article prose is never generated from section_ids. Supplying an Article body performs a manual composition.
 
-repair_subsection and crystallize_subsection remain only as compatibility shims. Crystallize now creates a replaceable Subsection composition and another Subsection; it does not freeze mathematics.
+repair_subsection remains as a compatibility alias for editing an older Subsection.
 
 ## Brainstorms
 
