@@ -96,7 +96,7 @@ The local tournament at \(r\) may be chosen arbitrarily, for example transitivel
 
 ## Development tree
 
-- [Subsection 1 — The exact one-change extension](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_a.md) (\`auxiliary_vertex_exactification_subsection_a\`; development v4; composition v1; stale=False)
-- [Subsection 2 — The switch and common endpoint normalize to r](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_b.md) (\`auxiliary_vertex_exactification_subsection_b\`; development v4; composition v1; stale=False)
-- [Subsection 3 — Exact positive factorization](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_c.md) (\`auxiliary_vertex_exactification_subsection_c\`; development v4; composition v1; stale=False)
-- [Subsection 4 — The exact geodesic form of the grand conjecture](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_d.md) (\`auxiliary_vertex_exactification_subsection_d\`; development v3; composition vNone; stale=True)
+- [Subsection 1 — The exact one-change extension](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_a.md) (`auxiliary_vertex_exactification_subsection_a`; development v4; composition v1; stale=False)
+- [Subsection 2 — The switch and common endpoint normalize to r](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_b.md) (`auxiliary_vertex_exactification_subsection_b`; development v4; composition v1; stale=False)
+- [Subsection 3 — Exact positive factorization](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_c.md) (`auxiliary_vertex_exactification_subsection_c`; development v4; composition v1; stale=False)
+- [Subsection 4 — The exact geodesic form of the grand conjecture](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_d.md) (`auxiliary_vertex_exactification_subsection_d`; development v3; composition vNone; stale=True)

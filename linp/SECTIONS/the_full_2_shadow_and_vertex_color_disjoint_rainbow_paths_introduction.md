@@ -32,4 +32,4 @@ The objective is to translate the one-third upper bound into a path problem in t
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction_subsection_a.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction_subsection_a.md) (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction_subsection_a`; development v1; composition vNone; stale=True)

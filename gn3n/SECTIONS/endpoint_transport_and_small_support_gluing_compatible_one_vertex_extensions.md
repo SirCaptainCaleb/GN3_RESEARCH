@@ -56,4 +56,4 @@ is a Hamilton path. This gives (3). The common terminal gap is symmetric. \(\squ
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions_subsection_a.md) (`endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions_subsection_a`; development v1; composition vNone; stale=True)

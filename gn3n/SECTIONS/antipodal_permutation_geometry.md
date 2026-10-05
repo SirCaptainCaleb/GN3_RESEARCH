@@ -78,6 +78,6 @@ This is the precise common structure with antipodal cube-coloring problems such 
 
 ## Development tree
 
-- [Subsection 1 — Permutation simplices and monotone geodesics](../SUBSECTIONS/antipodal_permutation_geometry_subsection_a.md) (\`antipodal_permutation_geometry_subsection_a\`; development v4; composition v1; stale=False)
-- [Subsection 2 — The antipodal link of the long diagonal](../SUBSECTIONS/antipodal_permutation_geometry_subsection_b.md) (\`antipodal_permutation_geometry_subsection_b\`; development v4; composition v1; stale=False)
-- [Subsection 3 — Triple colors as antipodal local data](../SUBSECTIONS/antipodal_permutation_geometry_subsection_c.md) (\`antipodal_permutation_geometry_subsection_c\`; development v3; composition vNone; stale=True)
+- [Subsection 1 — Permutation simplices and monotone geodesics](../SUBSECTIONS/antipodal_permutation_geometry_subsection_a.md) (`antipodal_permutation_geometry_subsection_a`; development v4; composition v1; stale=False)
+- [Subsection 2 — The antipodal link of the long diagonal](../SUBSECTIONS/antipodal_permutation_geometry_subsection_b.md) (`antipodal_permutation_geometry_subsection_b`; development v4; composition v1; stale=False)
+- [Subsection 3 — Triple colors as antipodal local data](../SUBSECTIONS/antipodal_permutation_geometry_subsection_c.md) (`antipodal_permutation_geometry_subsection_c`; development v3; composition vNone; stale=True)

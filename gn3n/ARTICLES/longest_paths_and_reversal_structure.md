@@ -1793,13 +1793,13 @@ These observations invalidate the corresponding shortcut arguments but do not af
 
 ## Contained Sections
 
-- 1. [Introduction](../SECTIONS/longest_paths_and_reversal_structure_introduction.md) (\`longest_paths_and_reversal_structure_introduction\`; composition v1; stale=False)
-- 2. [Reversals are unavoidable](../SECTIONS/longest_paths_and_reversal_structure_reversals_are_unavoidable.md) (\`longest_paths_and_reversal_structure_reversals_are_unavoidable\`; composition v1; stale=False)
-- 3. [A longest path](../SECTIONS/longest_paths_and_reversal_structure_a_longest_path.md) (\`longest_paths_and_reversal_structure_a_longest_path\`; composition v1; stale=False)
-- 4. [A five-set or an end-edge reversal](../SECTIONS/longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal.md) (\`longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal\`; composition v1; stale=False)
-- 5. [A common four-vertex core](../SECTIONS/longest_paths_and_reversal_structure_a_common_four_vertex_core.md) (\`longest_paths_and_reversal_structure_a_common_four_vertex_core\`; composition v1; stale=False)
-- 6. [The endpoint-pair family](../SECTIONS/longest_paths_and_reversal_structure_the_endpoint_pair_family.md) (\`longest_paths_and_reversal_structure_the_endpoint_pair_family\`; composition v1; stale=False)
-- 7. [Opposite endpoint replacements](../SECTIONS/longest_paths_and_reversal_structure_opposite_endpoint_replacements.md) (\`longest_paths_and_reversal_structure_opposite_endpoint_replacements\`; composition v1; stale=False)
-- 8. [Amplification from an arbitrary reversing triple](../SECTIONS/longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple.md) (\`longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple\`; composition v1; stale=False)
-- 9. [The remaining lemma](../SECTIONS/longest_paths_and_reversal_structure_the_remaining_lemma.md) (\`longest_paths_and_reversal_structure_the_remaining_lemma\`; composition v1; stale=False)
-- 10. [Appendix. Two invalid shortcuts](../SECTIONS/longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts.md) (\`longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts\`; composition v1; stale=False)
+- 1. [Introduction](../SECTIONS/longest_paths_and_reversal_structure_introduction.md) (`longest_paths_and_reversal_structure_introduction`; composition v1; stale=False)
+- 2. [Reversals are unavoidable](../SECTIONS/longest_paths_and_reversal_structure_reversals_are_unavoidable.md) (`longest_paths_and_reversal_structure_reversals_are_unavoidable`; composition v1; stale=False)
+- 3. [A longest path](../SECTIONS/longest_paths_and_reversal_structure_a_longest_path.md) (`longest_paths_and_reversal_structure_a_longest_path`; composition v1; stale=False)
+- 4. [A five-set or an end-edge reversal](../SECTIONS/longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal.md) (`longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal`; composition v1; stale=False)
+- 5. [A common four-vertex core](../SECTIONS/longest_paths_and_reversal_structure_a_common_four_vertex_core.md) (`longest_paths_and_reversal_structure_a_common_four_vertex_core`; composition v1; stale=False)
+- 6. [The endpoint-pair family](../SECTIONS/longest_paths_and_reversal_structure_the_endpoint_pair_family.md) (`longest_paths_and_reversal_structure_the_endpoint_pair_family`; composition v1; stale=False)
+- 7. [Opposite endpoint replacements](../SECTIONS/longest_paths_and_reversal_structure_opposite_endpoint_replacements.md) (`longest_paths_and_reversal_structure_opposite_endpoint_replacements`; composition v1; stale=False)
+- 8. [Amplification from an arbitrary reversing triple](../SECTIONS/longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple.md) (`longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple`; composition v1; stale=False)
+- 9. [The remaining lemma](../SECTIONS/longest_paths_and_reversal_structure_the_remaining_lemma.md) (`longest_paths_and_reversal_structure_the_remaining_lemma`; composition v1; stale=False)
+- 10. [Appendix. Two invalid shortcuts](../SECTIONS/longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts.md) (`longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts`; composition v1; stale=False)

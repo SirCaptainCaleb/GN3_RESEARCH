@@ -19,4 +19,4 @@ Accordingly, a proof of (13) must follow the structure created when a deletion i
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument_subsection_a.md) (`induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument_subsection_a`; development v1; composition vNone; stale=True)

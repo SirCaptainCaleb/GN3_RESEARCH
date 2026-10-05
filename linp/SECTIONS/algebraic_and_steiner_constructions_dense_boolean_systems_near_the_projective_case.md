@@ -96,5 +96,5 @@ A more general density-beating Boolean example can also be reduced to a two-poin
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a.md) (\`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Theorem 6](../SUBSECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b.md) (\`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a.md) (`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Theorem 6](../SUBSECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b.md) (`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b`; development v1; composition vNone; stale=True)

@@ -57,4 +57,4 @@ The point of (32)–(35) is that they retain the \(1/8\)-scale family while remo
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a`; development v1; composition vNone; stale=True)

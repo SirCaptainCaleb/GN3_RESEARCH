@@ -460,11 +460,11 @@ Any further construction based on dense Steiner or additive systems must use a g
 
 ## Contained Sections
 
-- 1. [Introduction](../SECTIONS/algebraic_and_steiner_constructions_introduction.md) (\`algebraic_and_steiner_constructions_introduction\`; composition v1; stale=False)
-- 2. [The general one-third-scale construction](../SECTIONS/algebraic_and_steiner_constructions_the_general_one_third_scale_construction.md) (\`algebraic_and_steiner_constructions_the_general_one_third_scale_construction\`; composition v1; stale=False)
-- 3. [Binary projective systems](../SECTIONS/algebraic_and_steiner_constructions_binary_projective_systems.md) (\`algebraic_and_steiner_constructions_binary_projective_systems\`; composition v1; stale=False)
-- 4. [Ternary affine systems](../SECTIONS/algebraic_and_steiner_constructions_ternary_affine_systems.md) (\`algebraic_and_steiner_constructions_ternary_affine_systems\`; composition v1; stale=False)
-- 5. [Dense Boolean systems near the projective case](../SECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case.md) (\`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case\`; composition v1; stale=False)
-- 6. [Incidence-code obstruction and its limitation](../SECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation.md) (\`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation\`; composition v1; stale=False)
-- 7. [General obstructions to amplification](../SECTIONS/algebraic_and_steiner_constructions_general_obstructions_to_amplification.md) (\`algebraic_and_steiner_constructions_general_obstructions_to_amplification\`; composition v1; stale=False)
-- 8. [The two-point-fibre problem](../SECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem.md) (\`algebraic_and_steiner_constructions_the_two_point_fibre_problem\`; composition v1; stale=False)
+- 1. [Introduction](../SECTIONS/algebraic_and_steiner_constructions_introduction.md) (`algebraic_and_steiner_constructions_introduction`; composition v1; stale=False)
+- 2. [The general one-third-scale construction](../SECTIONS/algebraic_and_steiner_constructions_the_general_one_third_scale_construction.md) (`algebraic_and_steiner_constructions_the_general_one_third_scale_construction`; composition v1; stale=False)
+- 3. [Binary projective systems](../SECTIONS/algebraic_and_steiner_constructions_binary_projective_systems.md) (`algebraic_and_steiner_constructions_binary_projective_systems`; composition v1; stale=False)
+- 4. [Ternary affine systems](../SECTIONS/algebraic_and_steiner_constructions_ternary_affine_systems.md) (`algebraic_and_steiner_constructions_ternary_affine_systems`; composition v1; stale=False)
+- 5. [Dense Boolean systems near the projective case](../SECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case.md) (`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case`; composition v1; stale=False)
+- 6. [Incidence-code obstruction and its limitation](../SECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation.md) (`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation`; composition v1; stale=False)
+- 7. [General obstructions to amplification](../SECTIONS/algebraic_and_steiner_constructions_general_obstructions_to_amplification.md) (`algebraic_and_steiner_constructions_general_obstructions_to_amplification`; composition v1; stale=False)
+- 8. [The two-point-fibre problem](../SECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem.md) (`algebraic_and_steiner_constructions_the_two_point_fibre_problem`; composition v1; stale=False)

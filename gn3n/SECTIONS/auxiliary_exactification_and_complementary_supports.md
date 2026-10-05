@@ -273,5 +273,5 @@ The second half asks what antipodal topology can force inside these exact models
 
 ## Development tree
 
-- [Subsection 1 — Exactification before support-family development](../SUBSECTIONS/auxiliary_exactification_and_complementary_supports_subsection_a.md) (\`auxiliary_exactification_and_complementary_supports_subsection_a\`; development v4; composition v1; stale=False)
-- [Subsection 2 — Further developments](../SUBSECTIONS/auxiliary_exactification_and_complementary_supports_subsection_b.md) (\`auxiliary_exactification_and_complementary_supports_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — Exactification before support-family development](../SUBSECTIONS/auxiliary_exactification_and_complementary_supports_subsection_a.md) (`auxiliary_exactification_and_complementary_supports_subsection_a`; development v4; composition v1; stale=False)
+- [Subsection 2 — Further developments](../SUBSECTIONS/auxiliary_exactification_and_complementary_supports_subsection_b.md) (`auxiliary_exactification_and_complementary_supports_subsection_b`; development v1; composition vNone; stale=True)

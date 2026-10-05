@@ -38,4 +38,4 @@ Among any three exterior vertices, orient \(p\to q\) when \((p,a_{\lambda-1},q)\
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_the_endpoint_pair_family_subsection_a.md) (\`longest_paths_and_reversal_structure_the_endpoint_pair_family_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_the_endpoint_pair_family_subsection_a.md) (`longest_paths_and_reversal_structure_the_endpoint_pair_family_subsection_a`; development v1; composition vNone; stale=True)

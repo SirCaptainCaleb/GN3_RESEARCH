@@ -17,4 +17,4 @@ Suppose one attempted to prove that every imbalanced two-coverable induced subto
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient_subsection_a`; development v1; composition vNone; stale=True)

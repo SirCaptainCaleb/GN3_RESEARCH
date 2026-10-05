@@ -70,4 +70,4 @@ Equation (4) is the entire inductive problem. The first term depends only on uno
 
 ## Development tree
 
-- [Subsection 1 — Lemma 1](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — Lemma 1](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a.md) (`induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a`; development v1; composition vNone; stale=True)

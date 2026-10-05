@@ -19,4 +19,4 @@ A transversal design \(TD(3,q)\) has three vertex classes \(A,B,C\), each of siz
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_introduction_subsection_a.md) (\`transversal_designs_latin_blow_ups_and_products_introduction_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_introduction_subsection_a.md) (`transversal_designs_latin_blow_ups_and_products_introduction_subsection_a`; development v1; composition vNone; stale=True)

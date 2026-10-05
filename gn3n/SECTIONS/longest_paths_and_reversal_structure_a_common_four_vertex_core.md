@@ -39,4 +39,4 @@ Choose Hamilton orders on the three five-sets. If two induce different orders on
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_common_four_vertex_core_subsection_a.md) (\`longest_paths_and_reversal_structure_a_common_four_vertex_core_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_common_four_vertex_core_subsection_a.md) (`longest_paths_and_reversal_structure_a_common_four_vertex_core_subsection_a`; development v1; composition vNone; stale=True)

@@ -43,5 +43,5 @@ The remaining difficulty is therefore global reuse of the maximum paths, termina
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Open problem](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b.md) (\`snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b.md) (`snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b`; development v1; composition vNone; stale=True)

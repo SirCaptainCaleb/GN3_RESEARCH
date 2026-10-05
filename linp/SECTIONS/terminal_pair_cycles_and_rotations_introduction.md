@@ -25,4 +25,4 @@ where \(\kappa(T)\) is the number of nonempty connected components of \(T\).
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_introduction_subsection_a.md) (\`terminal_pair_cycles_and_rotations_introduction_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_introduction_subsection_a.md) (`terminal_pair_cycles_and_rotations_introduction_subsection_a`; development v1; composition vNone; stale=True)

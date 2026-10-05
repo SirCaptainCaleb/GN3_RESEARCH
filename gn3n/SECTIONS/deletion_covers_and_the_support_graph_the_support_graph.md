@@ -35,4 +35,4 @@ Thus the graph of support compatibility is the line graph \(L(J)\).
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_support_graph_subsection_a.md) (\`deletion_covers_and_the_support_graph_the_support_graph_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_support_graph_subsection_a.md) (`deletion_covers_and_the_support_graph_the_support_graph_subsection_a`; development v1; composition vNone; stale=True)

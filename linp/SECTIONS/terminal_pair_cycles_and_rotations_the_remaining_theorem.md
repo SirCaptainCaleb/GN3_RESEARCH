@@ -33,5 +33,5 @@ What is not presently proved is the global multiplicity bound required to sum th
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a.md) (\`terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Open problem](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b.md) (\`terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a.md) (`terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b.md) (`terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b`; development v1; composition vNone; stale=True)

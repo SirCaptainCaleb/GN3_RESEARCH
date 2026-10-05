@@ -25,4 +25,4 @@ These observations invalidate the corresponding shortcut arguments but do not af
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts_subsection_a.md) (\`longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts_subsection_a.md) (`longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts_subsection_a`; development v1; composition vNone; stale=True)

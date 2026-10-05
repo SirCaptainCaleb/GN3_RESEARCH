@@ -76,6 +76,6 @@ Thus Cartesian powers cannot amplify a finite exceptional component into an asym
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_a.md) (\`transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Theorem 6](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_b.md) (\`transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_b\`; development v1; composition v1; stale=False)
-- [Subsection 3 — Corollary 7](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_c.md) (\`transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_c\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_a.md) (`transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Theorem 6](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_b.md) (`transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_b`; development v1; composition v1; stale=False)
+- [Subsection 3 — Corollary 7](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_c.md) (`transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_c`; development v1; composition vNone; stale=True)

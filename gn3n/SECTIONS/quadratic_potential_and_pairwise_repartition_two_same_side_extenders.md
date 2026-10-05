@@ -27,4 +27,4 @@ Their six-vertex union has three relevant possibilities: it is Hamiltonian; two 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_two_same_side_extenders_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_two_same_side_extenders_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_two_same_side_extenders_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_two_same_side_extenders_subsection_a`; development v1; composition vNone; stale=True)

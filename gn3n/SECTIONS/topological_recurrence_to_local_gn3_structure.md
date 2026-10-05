@@ -805,8 +805,8 @@ and, ideally, force one with \(|X_\pi|=k\).
 
 ## Development tree
 
-- [Subsection 1 — From balanced recurrence to local reversal structure](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_a.md) (\`topological_recurrence_to_local_gn3_structure_subsection_a\`; development v5; composition v1; stale=False)
-- [Subsection 2 — Recurrent-face and minimum-span compression](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_b.md) (\`topological_recurrence_to_local_gn3_structure_subsection_b\`; development v5; composition v1; stale=False)
-- [Subsection 3 — Exact-deficiency sharpening: the one-hole four-support handoff](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_c.md) (\`topological_recurrence_to_local_gn3_structure_subsection_c\`; development v3; composition v1; stale=False)
-- [Subsection 4 — Minimum-hole synchronization](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_d.md) (\`topological_recurrence_to_local_gn3_structure_subsection_d\`; development v6; composition v1; stale=False)
-- [Subsection 5 — Bounded central blocks and short cycles in recurrent exact-root faces](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_e.md) (\`topological_recurrence_to_local_gn3_structure_subsection_e\`; development v4; composition vNone; stale=True)
+- [Subsection 1 — From balanced recurrence to local reversal structure](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_a.md) (`topological_recurrence_to_local_gn3_structure_subsection_a`; development v5; composition v1; stale=False)
+- [Subsection 2 — Recurrent-face and minimum-span compression](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_b.md) (`topological_recurrence_to_local_gn3_structure_subsection_b`; development v5; composition v1; stale=False)
+- [Subsection 3 — Exact-deficiency sharpening: the one-hole four-support handoff](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_c.md) (`topological_recurrence_to_local_gn3_structure_subsection_c`; development v3; composition v1; stale=False)
+- [Subsection 4 — Minimum-hole synchronization](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_d.md) (`topological_recurrence_to_local_gn3_structure_subsection_d`; development v6; composition v1; stale=False)
+- [Subsection 5 — Bounded central blocks and short cycles in recurrent exact-root faces](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_e.md) (`topological_recurrence_to_local_gn3_structure_subsection_e`; development v4; composition vNone; stale=True)

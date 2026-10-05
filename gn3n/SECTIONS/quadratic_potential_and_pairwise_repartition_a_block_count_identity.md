@@ -22,4 +22,4 @@ Indeed, deleting those \(t\) edges from two paths produces \(t+2\) blocks. Hence
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_a_block_count_identity_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_a_block_count_identity_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_a_block_count_identity_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_a_block_count_identity_subsection_a`; development v1; composition vNone; stale=True)

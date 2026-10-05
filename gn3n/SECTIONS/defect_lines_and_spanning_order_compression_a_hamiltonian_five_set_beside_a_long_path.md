@@ -64,4 +64,4 @@ Thus the order-five support is no longer an independent terminal interface.
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path_subsection_a.md) (\`defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path_subsection_a\`; development v3; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path_subsection_a.md) (`defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path_subsection_a`; development v3; composition vNone; stale=True)

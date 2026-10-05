@@ -83,7 +83,7 @@ This formulation isolates the unresolved combinatorics as a disjointness problem
 
 ## Development tree
 
-- [Subsection 1 — Opposite terminal edges and complementary supports](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_a.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_a\`; development v4; composition v1; stale=False)
-- [Subsection 2 — The common-terminal formulation](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_b.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_b\`; development v4; composition v1; stale=False)
-- [Subsection 3 — The endpoint-moving involution](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_c.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_c\`; development v4; composition v1; stale=False)
-- [Subsection 4 — Positive support enumeration](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_d.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_d\`; development v3; composition vNone; stale=True)
+- [Subsection 1 — Opposite terminal edges and complementary supports](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_a.md) (`complementary_path_supports_and_endpoint_involutions_subsection_a`; development v4; composition v1; stale=False)
+- [Subsection 2 — The common-terminal formulation](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_b.md) (`complementary_path_supports_and_endpoint_involutions_subsection_b`; development v4; composition v1; stale=False)
+- [Subsection 3 — The endpoint-moving involution](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_c.md) (`complementary_path_supports_and_endpoint_involutions_subsection_c`; development v4; composition v1; stale=False)
+- [Subsection 4 — Positive support enumeration](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_d.md) (`complementary_path_supports_and_endpoint_involutions_subsection_d`; development v3; composition vNone; stale=True)

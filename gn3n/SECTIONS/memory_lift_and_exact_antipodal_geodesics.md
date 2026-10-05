@@ -184,5 +184,5 @@ That distinction is the point at which the next Section begins.
 
 ## Development tree
 
-- [Subsection 1 — The memory lift, antipodality, and zero detour](../SUBSECTIONS/memory_lift_and_exact_antipodal_geodesics_subsection_a.md) (\`memory_lift_and_exact_antipodal_geodesics_subsection_a\`; development v3; composition v1; stale=False)
-- [Subsection 2 — Further developments](../SUBSECTIONS/memory_lift_and_exact_antipodal_geodesics_subsection_b.md) (\`memory_lift_and_exact_antipodal_geodesics_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — The memory lift, antipodality, and zero detour](../SUBSECTIONS/memory_lift_and_exact_antipodal_geodesics_subsection_a.md) (`memory_lift_and_exact_antipodal_geodesics_subsection_a`; development v3; composition v1; stale=False)
+- [Subsection 2 — Further developments](../SUBSECTIONS/memory_lift_and_exact_antipodal_geodesics_subsection_b.md) (`memory_lift_and_exact_antipodal_geodesics_subsection_b`; development v1; composition vNone; stale=True)

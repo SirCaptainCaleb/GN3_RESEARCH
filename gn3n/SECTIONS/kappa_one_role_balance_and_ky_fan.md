@@ -150,4 +150,4 @@ This target is materially different from the earlier disturbance/minimal-hole pr
 
 ## Development tree
 
-- [Subsection 1 — Counting and single-switch consequences](../SUBSECTIONS/kappa_one_role_balance_and_ky_fan_subsection_a.md) (\`kappa_one_role_balance_and_ky_fan_subsection_a\`; development v3; composition vNone; stale=True)
+- [Subsection 1 — Counting and single-switch consequences](../SUBSECTIONS/kappa_one_role_balance_and_ky_fan_subsection_a.md) (`kappa_one_role_balance_and_ky_fan_subsection_a`; development v3; composition vNone; stale=True)

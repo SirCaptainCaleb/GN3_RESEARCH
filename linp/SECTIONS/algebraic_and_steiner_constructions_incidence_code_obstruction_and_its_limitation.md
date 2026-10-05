@@ -55,6 +55,6 @@ Therefore a code construction must use more information than the absence of one 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_a.md) (\`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Lemma 7](../SUBSECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_b.md) (\`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_b\`; development v1; composition v1; stale=False)
-- [Subsection 3 — Theorem 8](../SUBSECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_c.md) (\`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_c\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_a.md) (`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 7](../SUBSECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_b.md) (`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_b`; development v1; composition v1; stale=False)
+- [Subsection 3 — Theorem 8](../SUBSECTIONS/algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_c.md) (`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_c`; development v1; composition vNone; stale=True)

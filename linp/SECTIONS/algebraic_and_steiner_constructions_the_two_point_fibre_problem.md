@@ -41,5 +41,5 @@ Any further construction based on dense Steiner or additive systems must use a g
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a.md) (\`algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Open problem](../SUBSECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b.md) (\`algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a.md) (`algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b.md) (`algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b`; development v1; composition vNone; stale=True)

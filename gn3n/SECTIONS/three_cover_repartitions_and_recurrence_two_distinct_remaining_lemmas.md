@@ -27,4 +27,4 @@ These statements are genuinely different. Lemma A orients one trajectory. Lemma 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas_subsection_a.md) (\`three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas_subsection_a.md) (`three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas_subsection_a`; development v1; composition vNone; stale=True)

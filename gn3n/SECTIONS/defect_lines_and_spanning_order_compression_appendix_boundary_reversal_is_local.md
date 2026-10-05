@@ -21,4 +21,4 @@ It does not imply cyclic rotation of an ordered triple and does not reverse a ti
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local_subsection_a.md) (\`defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local_subsection_a.md) (`defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local_subsection_a`; development v1; composition vNone; stale=True)

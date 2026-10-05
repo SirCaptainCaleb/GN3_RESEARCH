@@ -47,6 +47,6 @@ This is the structural content of cycle rank. A cycle is not merely an extra gra
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a.md) (\`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Lemma 4](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b.md) (\`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b\`; development v1; composition v1; stale=False)
-- [Subsection 3 — Lemma 5](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c.md) (\`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a.md) (`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 4](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b.md) (`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b`; development v1; composition v1; stale=False)
+- [Subsection 3 — Lemma 5](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c.md) (`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c`; development v1; composition vNone; stale=True)

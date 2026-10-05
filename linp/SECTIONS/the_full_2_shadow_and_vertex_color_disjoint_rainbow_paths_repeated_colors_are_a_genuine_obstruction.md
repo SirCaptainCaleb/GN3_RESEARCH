@@ -49,5 +49,5 @@ The same example explains the precise difficulty in Theorem 2: the graph vertice
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_a.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Proposition 7](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_b.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_a.md) (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Proposition 7](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_b.md) (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_b`; development v1; composition vNone; stale=True)

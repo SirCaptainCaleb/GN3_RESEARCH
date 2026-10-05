@@ -40,5 +40,5 @@ Lemmas 2–5 describe mechanisms by which missing edges in \(H[Y]\) can arise, b
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Open problem](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_b.md) (\`induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_a.md) (`induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_b.md) (`induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_b`; development v1; composition vNone; stale=True)

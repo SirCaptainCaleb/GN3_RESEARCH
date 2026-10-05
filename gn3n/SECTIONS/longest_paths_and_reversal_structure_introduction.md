@@ -17,4 +17,4 @@ Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A tight t
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_introduction_subsection_a.md) (\`longest_paths_and_reversal_structure_introduction_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_introduction_subsection_a.md) (`longest_paths_and_reversal_structure_introduction_subsection_a`; development v1; composition vNone; stale=True)

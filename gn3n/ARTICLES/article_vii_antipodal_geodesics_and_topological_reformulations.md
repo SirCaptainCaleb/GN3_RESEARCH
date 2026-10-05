@@ -2750,12 +2750,12 @@ This motivates the independent meta-conjecture recorded in [[meta_conjecture_gn3
 
 ## Contained Sections
 
-- 1. [Spanning orders and defect Helly theory](../SECTIONS/spanning_orders_and_defect_helly.md) (\`spanning_orders_and_defect_helly\`; composition v1; stale=False)
-- 2. [The Norine–GN3 dictionary and Freudenthal geometry](../SECTIONS/norine_gn3_dictionary_and_freudenthal_geometry.md) (\`norine_gn3_dictionary_and_freudenthal_geometry\`; composition v1; stale=False)
-- 3. [The memory lift and exact antipodal geodesics](../SECTIONS/memory_lift_and_exact_antipodal_geodesics.md) (\`memory_lift_and_exact_antipodal_geodesics\`; composition v1; stale=False)
-- 4. [Auxiliary exactification and complementary path supports](../SECTIONS/auxiliary_exactification_and_complementary_supports.md) (\`auxiliary_exactification_and_complementary_supports\`; composition v1; stale=False)
-- 5. [From antipodal labels to cellular root topology](../SECTIONS/antipodal_labels_and_cellular_root_topology.md) (\`antipodal_labels_and_cellular_root_topology\`; composition v1; stale=False)
-- 6. [Convex root balance and Bourgin–Yang multiplicity](../SECTIONS/convex_root_balance_and_bourgin_yang.md) (\`convex_root_balance_and_bourgin_yang\`; composition v1; stale=False)
-- 7. [Exact-root compression and bounded central structure](../SECTIONS/exact_root_compression_and_bounded_central_structure.md) (\`exact_root_compression_and_bounded_central_structure\`; composition v1; stale=False)
-- 8. [Local-witness topology and the finite terminal theorem](../SECTIONS/local_witness_topology_and_the_finite_terminal_theorem.md) (\`local_witness_topology_and_the_finite_terminal_theorem\`; composition v1; stale=False)
-- 9. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (\`terminalization_reachability_and_the_exact_frontier\`; composition v1; stale=False)
+- 1. [Spanning orders and defect Helly theory](../SECTIONS/spanning_orders_and_defect_helly.md) (`spanning_orders_and_defect_helly`; composition v1; stale=False)
+- 2. [The Norine–GN3 dictionary and Freudenthal geometry](../SECTIONS/norine_gn3_dictionary_and_freudenthal_geometry.md) (`norine_gn3_dictionary_and_freudenthal_geometry`; composition v1; stale=False)
+- 3. [The memory lift and exact antipodal geodesics](../SECTIONS/memory_lift_and_exact_antipodal_geodesics.md) (`memory_lift_and_exact_antipodal_geodesics`; composition v1; stale=False)
+- 4. [Auxiliary exactification and complementary path supports](../SECTIONS/auxiliary_exactification_and_complementary_supports.md) (`auxiliary_exactification_and_complementary_supports`; composition v1; stale=False)
+- 5. [From antipodal labels to cellular root topology](../SECTIONS/antipodal_labels_and_cellular_root_topology.md) (`antipodal_labels_and_cellular_root_topology`; composition v1; stale=False)
+- 6. [Convex root balance and Bourgin–Yang multiplicity](../SECTIONS/convex_root_balance_and_bourgin_yang.md) (`convex_root_balance_and_bourgin_yang`; composition v1; stale=False)
+- 7. [Exact-root compression and bounded central structure](../SECTIONS/exact_root_compression_and_bounded_central_structure.md) (`exact_root_compression_and_bounded_central_structure`; composition v1; stale=False)
+- 8. [Local-witness topology and the finite terminal theorem](../SECTIONS/local_witness_topology_and_the_finite_terminal_theorem.md) (`local_witness_topology_and_the_finite_terminal_theorem`; composition v1; stale=False)
+- 9. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (`terminalization_reachability_and_the_exact_frontier`; composition v1; stale=False)

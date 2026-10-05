@@ -31,4 +31,4 @@ Hence:
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr_subsection_a`; development v1; composition vNone; stale=True)

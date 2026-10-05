@@ -30,4 +30,4 @@ The proof is the preceding block count applied successively to the one- and two-
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order_subsection_a.md) (`endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order_subsection_a`; development v1; composition vNone; stale=True)

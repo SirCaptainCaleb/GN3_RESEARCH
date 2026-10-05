@@ -31,4 +31,4 @@ A proof of this lemma completes the argument, since strict decrease of \(\Phi\) 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_remaining_lemma_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_the_remaining_lemma_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_remaining_lemma_subsection_a.md) (`quadratic_potential_and_pairwise_repartition_the_remaining_lemma_subsection_a`; development v1; composition vNone; stale=True)

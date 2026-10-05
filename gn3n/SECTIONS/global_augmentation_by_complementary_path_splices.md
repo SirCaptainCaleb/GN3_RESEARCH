@@ -264,4 +264,4 @@ The unresolved global augmentation problem is therefore to supplement Lemma 5 wi
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/global_augmentation_by_complementary_path_splices_subsection_a.md) (\`global_augmentation_by_complementary_path_splices_subsection_a\`; development v6; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/global_augmentation_by_complementary_path_splices_subsection_a.md) (`global_augmentation_by_complementary_path_splices_subsection_a`; development v6; composition vNone; stale=True)

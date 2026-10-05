@@ -26,4 +26,4 @@ A proof completes the longest-path argument.
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_the_remaining_lemma_subsection_a.md) (\`longest_paths_and_reversal_structure_the_remaining_lemma_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_the_remaining_lemma_subsection_a.md) (`longest_paths_and_reversal_structure_the_remaining_lemma_subsection_a`; development v1; composition vNone; stale=True)

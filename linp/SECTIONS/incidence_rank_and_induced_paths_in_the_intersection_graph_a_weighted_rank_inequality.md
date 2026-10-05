@@ -159,5 +159,5 @@ The low-degree range is completely settled.
 
 ## Development tree
 
-- [Subsection 1 — Theorem 4](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Corollary 5](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — Theorem 4](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Corollary 5](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b.md) (`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b`; development v1; composition vNone; stale=True)

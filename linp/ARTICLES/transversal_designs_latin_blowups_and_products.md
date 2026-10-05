@@ -316,9 +316,9 @@ The unresolved lower-bound problem in this family is therefore not to choose a d
 
 ## Contained Sections
 
-- 1. [Introduction](../SECTIONS/transversal_designs_latin_blow_ups_and_products_introduction.md) (\`transversal_designs_latin_blow_ups_and_products_introduction\`; composition v1; stale=False)
-- 2. [Rainbow graph paths lift to linear hypergraph paths](../SECTIONS/transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths.md) (\`transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths\`; composition v1; stale=False)
-- 3. [Blow-ups of a fixed linear triple system](../SECTIONS/transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system.md) (\`transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system\`; composition v1; stale=False)
-- 4. [Repeated lifts with a common color set](../SECTIONS/transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set.md) (\`transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set\`; composition v1; stale=False)
-- 5. [Cartesian products](../SECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products.md) (\`transversal_designs_latin_blow_ups_and_products_cartesian_products\`; composition v1; stale=False)
-- 6. [The remaining construction problems](../SECTIONS/transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems.md) (\`transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems\`; composition v1; stale=False)
+- 1. [Introduction](../SECTIONS/transversal_designs_latin_blow_ups_and_products_introduction.md) (`transversal_designs_latin_blow_ups_and_products_introduction`; composition v1; stale=False)
+- 2. [Rainbow graph paths lift to linear hypergraph paths](../SECTIONS/transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths.md) (`transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths`; composition v1; stale=False)
+- 3. [Blow-ups of a fixed linear triple system](../SECTIONS/transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system.md) (`transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system`; composition v1; stale=False)
+- 4. [Repeated lifts with a common color set](../SECTIONS/transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set.md) (`transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set`; composition v1; stale=False)
+- 5. [Cartesian products](../SECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products.md) (`transversal_designs_latin_blow_ups_and_products_cartesian_products`; composition v1; stale=False)
+- 6. [The remaining construction problems](../SECTIONS/transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems.md) (`transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems`; composition v1; stale=False)

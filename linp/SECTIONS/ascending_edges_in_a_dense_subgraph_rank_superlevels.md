@@ -34,5 +34,5 @@ Accordingly, ascending edges are precisely the boundary edges of the rank superl
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_a.md) (\`ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_a\`; development v1; composition v1; stale=False)
-- [Subsection 2 — Lemma 3](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_b.md) (\`ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_b\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_a.md) (`ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_a`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 3](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_b.md) (`ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_b`; development v1; composition vNone; stale=True)

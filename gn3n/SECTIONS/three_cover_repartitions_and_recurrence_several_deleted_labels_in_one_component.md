@@ -403,6 +403,6 @@ The closure uses the two endpoint failures on the fixed second support \(Q\). It
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_a.md) (\`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_a\`; development v2; composition v1; stale=False)
-- [Subsection 2 — Support-graph shadow of neutral recurrence](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_b.md) (\`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_b\`; development v3; composition v1; stale=False)
-- [Subsection 3 — Forest recurrence collapses to endpoint backtracking](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_c.md) (\`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_c\`; development v10; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_a.md) (`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_a`; development v2; composition v1; stale=False)
+- [Subsection 2 — Support-graph shadow of neutral recurrence](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_b.md) (`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_b`; development v3; composition v1; stale=False)
+- [Subsection 3 — Forest recurrence collapses to endpoint backtracking](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_c.md) (`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_c`; development v10; composition vNone; stale=True)

@@ -8,7 +8,7 @@ The artifact is a snapshot; these RPCs are the live worker interface.
 Starts a session and returns the artifact snapshot/revision plus stewardship notices.
 
 ### search(query, filters := {})
-Discovers Articles, Sections, Toolkit, documents, and optionally Brainstorms.
+Discovers Articles, Sections, Subsection development, Toolkit, documents, and optionally Brainstorms.
 
 ### read(ids, math_versions := {}, cursor := null, page_chars := 9000)
 Reads exact durable content. Article and Section bodies are cold compositions. Stable Subsection IDs are also readable; a Subsection read shows both its cold composition and full development body.

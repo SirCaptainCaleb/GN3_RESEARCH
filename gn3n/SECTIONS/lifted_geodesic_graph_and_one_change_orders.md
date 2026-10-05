@@ -86,7 +86,7 @@ This is the key constraint behind the analogy with antipodal path theorems. A th
 
 ## Development tree
 
-- [Subsection 1 — The memory-lift graph Γ_n](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_a.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_a\`; development v4; composition v1; stale=False)
-- [Subsection 2 — Antipodal involution and cube projection](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_b.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_b\`; development v4; composition v1; stale=False)
-- [Subsection 3 — Pole geodesics are spanning orders](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_c.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_c\`; development v4; composition v1; stale=False)
-- [Subsection 4 — Why geodesicity is essential](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_d.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_d\`; development v3; composition vNone; stale=True)
+- [Subsection 1 — The memory-lift graph Γ_n](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_a.md) (`lifted_geodesic_graph_and_one_change_orders_subsection_a`; development v4; composition v1; stale=False)
+- [Subsection 2 — Antipodal involution and cube projection](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_b.md) (`lifted_geodesic_graph_and_one_change_orders_subsection_b`; development v4; composition v1; stale=False)
+- [Subsection 3 — Pole geodesics are spanning orders](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_c.md) (`lifted_geodesic_graph_and_one_change_orders_subsection_c`; development v4; composition v1; stale=False)
+- [Subsection 4 — Why geodesicity is essential](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_d.md) (`lifted_geodesic_graph_and_one_change_orders_subsection_d`; development v3; composition vNone; stale=True)

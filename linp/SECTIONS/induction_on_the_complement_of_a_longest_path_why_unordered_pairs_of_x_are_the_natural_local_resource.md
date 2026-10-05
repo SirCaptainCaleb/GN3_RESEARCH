@@ -24,4 +24,4 @@ The desired proof of (4) is a uniform way of converting those restrictions into 
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a.md) (`induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a`; development v1; composition vNone; stale=True)

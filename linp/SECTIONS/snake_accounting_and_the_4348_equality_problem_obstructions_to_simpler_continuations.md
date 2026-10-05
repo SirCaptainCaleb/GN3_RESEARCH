@@ -21,4 +21,4 @@ Finally, the vertex-indexed families \(H_v\) are not globally disjoint. Any summ
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations_subsection_a.md) (`snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations_subsection_a`; development v1; composition vNone; stale=True)

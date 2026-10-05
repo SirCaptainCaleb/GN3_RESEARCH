@@ -53,4 +53,4 @@ is a tight path. The problem is therefore to reduce a spanning ordering of defec
 
 ## Development tree
 
-- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_defect_span_subsection_a.md) (\`deletion_covers_and_the_support_graph_defect_span_subsection_a\`; development v1; composition vNone; stale=True)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_defect_span_subsection_a.md) (`deletion_covers_and_the_support_graph_defect_span_subsection_a`; development v1; composition vNone; stale=True)
