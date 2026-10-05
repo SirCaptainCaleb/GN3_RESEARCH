@@ -515,7 +515,7 @@
   },
   "brainstorm_count": 2,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-05T17:12:10.031655+00:00",
+  "generated_at": "2026-10-05T18:31:22.230619+00:00",
   "mirror_format": 17,
   "schema": "linp",
   "section_versions": {
@@ -3147,6 +3147,6 @@
   "toolkit_count": 1,
   "universal_document_versions": {
     "guide": 20,
-    "reflexes": 11
+    "reflexes": 14
   }
 }

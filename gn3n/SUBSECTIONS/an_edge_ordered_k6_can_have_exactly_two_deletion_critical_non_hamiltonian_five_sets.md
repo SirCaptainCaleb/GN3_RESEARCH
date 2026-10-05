@@ -1,0 +1,19 @@
+# An edge-ordered K6 can have exactly two deletion-critical non-Hamiltonian five-sets
+
+## Metadata
+
+- ID: an_edge_ordered_k6_can_have_exactly_two_deletion_critical_non_hamiltonian_five_sets
+- Parent Section: article_vii_synthesis_and_exact_frontier
+- Position: 78
+- Row version: 1
+- Development version: 1
+- Composition version: None
+- Composition stale: False
+
+## Composition
+
+(none yet)
+
+## Development
+
+A MILP feasibility search, followed by direct exhaustive verification of all Hamilton paths in every induced K5 and K4, gives the following edge order on K6 with vertices 0,1,2,3,4,5: 04 < 14 < 35 < 05 < 15 < 23 < 24 < 45 < 01 < 02 < 12 < 25 < 03 < 13 < 34. Exactly the K5 obtained by deleting 0 and the K5 obtained by deleting 1 are non-Hamiltonian. The K5 deletion Hamilton-path counts are respectively 0,0,4,5,4,5 for deleted vertices 0,1,2,3,4,5. Both bad K5s are Hamiltonian-deletion-critical: for the K5 deleting 0, the five K4 deletion Hamilton-path counts are 2,2,4,2,2; for the K5 deleting 1 they are again 2,2,4,2,2. Thus edge-orderability plus exactly two bad five-sets plus deletion-criticality does not force a contradiction. The two bad K5s share C={2,3,4,5}, and C is Hamiltonian, necessarily so by deletion-criticality. Therefore this feasible configuration is distinct from the canonical six-set matching-block exception, where the shared four-set is non-Hamiltonian. Any Article VII use of deletion-critical bad K5 overlap must exploit additional endpoint/minimum-hole structure, not deletion-criticality alone.
