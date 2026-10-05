@@ -1,7 +1,7 @@
 # Artifact refresh trigger: validates cleanup and artifact metadata publishing.
 # Artifact startup is consumed through the GitHub Actions artifact download path.
 #!/usr/bin/env python3
-# Recursive composition mirror format 15.
+# Recursive composition mirror format 16.
 from __future__ import annotations
 
 import json, os, re, shutil, urllib.error, urllib.request
@@ -623,8 +623,8 @@ Generated: {rev.get('generated_at')}
         "toolkit_count": len(toolkit_items),
         "brainstorm_count": len(data["brainstorms"]),
         "startup_broadcasts": broadcasts,
-        "mirror_format": 15,
-        "composition_model": "recursive-cold-composition-v4",
+        "mirror_format": 16,
+        "composition_model": "recursive-cold-composition-v5",
     })
 
 def main():
