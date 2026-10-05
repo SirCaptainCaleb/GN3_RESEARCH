@@ -77,9 +77,9 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
         return {
             "has_composition": False,
             "composition_version": None,
-            "stale": True,
-            "reason": "never_composed",
-            "changed_sources": [],
+            "stale": False,
+            "stale_children": [],
+            "development_changed": False,
         }
 
     target_version = comp.get("composition_version")
@@ -90,88 +90,89 @@ def composition_status(data: dict[str, list[dict[str, Any]]], node_type: str, no
         and s.get("target_composition_version") == target_version
     ]
     snap = {(s.get("source_type"), s.get("source_id")): s for s in snap_rows}
-
-    current: dict[tuple[str, str], dict[str, Any]] = {}
     subs = data.get("section_subsections", [])
     memberships = data.get("article_sections", [])
-    research = {r.get("id"): r for r in data.get("research", [])}
+
+    development_changed = False
+    stale_children: list[dict[str, Any]] = []
 
     if node_type == "subsection":
-        for s in subs:
-            if s.get("id") == node_id:
-                current[("subsection", node_id)] = {
-                    "source_type": "subsection",
-                    "source_id": node_id,
-                    "source_version": s.get("development_version") or s.get("version"),
-                    "source_position": s.get("subsection_no"),
-                }
-                break
-    elif node_type == "section":
-        for s in subs:
-            if s.get("section_id") == node_id:
-                current[("subsection", s["id"])] = {
-                    "source_type": "subsection",
-                    "source_id": s["id"],
-                    "source_version": s.get("development_version") or s.get("version"),
-                    "source_position": s.get("subsection_no"),
-                }
-    elif node_type == "article":
-        members = sorted(
-            [m for m in memberships if m.get("article_id") == node_id],
-            key=lambda x: x.get("position") or 0,
-        )
-        for m in members:
-            sid = m.get("section_id")
-            r = research.get(sid, {})
-            current[("section", sid)] = {
-                "source_type": "section",
-                "source_id": sid,
-                "source_version": r.get("math_version"),
-                "source_position": m.get("position"),
-            }
-            for s in subs:
-                if s.get("section_id") == sid:
-                    current[("subsection", s["id"])] = {
-                        "source_type": "subsection",
-                        "source_id": s["id"],
-                        "source_version": s.get("development_version") or s.get("version"),
-                        "source_position": (m.get("position") or 0) * 1000 + (s.get("subsection_no") or 0),
-                    }
+        row = next((s for s in subs if s.get("id") == node_id), None)
+        old = snap.get(("subsection", node_id))
+        if row is not None:
+            current_version = row.get("development_version") or row.get("version")
+            development_changed = old is None or current_version != old.get("source_version")
 
-    changes = []
-    for key in sorted(set(current) | set(snap), key=lambda k: ((current.get(k) or snap.get(k) or {}).get("source_position") or 10**9, k)):
-        cur, old = current.get(key), snap.get(key)
-        kind = None
-        if old is None:
-            kind = "new"
-        elif cur is None:
-            kind = "removed"
-        elif key[0] == "subsection" and cur.get("source_version") != old.get("source_version"):
-            kind = "developed"
-        elif cur.get("source_position") != old.get("source_position"):
-            kind = "reordered"
-        if kind:
-            changes.append({
-                "source_type": key[0],
-                "source_id": key[1],
-                "change_kind": kind,
-                "composed_source_version": old.get("source_version") if old else None,
-                "current_source_version": cur.get("source_version") if cur else None,
-                "composed_position": old.get("source_position") if old else None,
-                "current_position": cur.get("source_position") if cur else None,
-                "contribution": old.get("contribution") if old else None,
-            })
+    elif node_type == "section":
+        current_children = {
+            s["id"]: s for s in subs if s.get("section_id") == node_id
+        }
+        for child_id in sorted(current_children):
+            child_comp = latest_composition(data, "subsection", child_id)
+            current_comp = child_comp.get("composition_version") if child_comp else None
+            old = snap.get(("subsection", child_id))
+            if current_comp is not None and (
+                old is None
+                or (
+                    bool(old.get("depends_on"))
+                    and current_comp != old.get("source_composition_version")
+                )
+            ):
+                stale_children.append({
+                    "source_id": child_id,
+                    "parent_saw_composition_version": old.get("source_composition_version") if old else None,
+                    "current_composition_version": current_comp,
+                    "depends_on": bool(old.get("depends_on")) if old else False,
+                })
+        for (source_type, child_id), old in snap.items():
+            if source_type == "subsection" and old.get("depends_on") and child_id not in current_children:
+                stale_children.append({
+                    "source_id": child_id,
+                    "parent_saw_composition_version": old.get("source_composition_version"),
+                    "current_composition_version": None,
+                    "depends_on": True,
+                })
+
+    elif node_type == "article":
+        current_children = {
+            m["section_id"]: m for m in memberships if m.get("article_id") == node_id
+        }
+        for child_id in sorted(current_children):
+            child_comp = latest_composition(data, "section", child_id)
+            current_comp = child_comp.get("composition_version") if child_comp else None
+            old = snap.get(("section", child_id))
+            if current_comp is not None and (
+                old is None
+                or (
+                    bool(old.get("depends_on"))
+                    and current_comp != old.get("source_composition_version")
+                )
+            ):
+                stale_children.append({
+                    "source_id": child_id,
+                    "parent_saw_composition_version": old.get("source_composition_version") if old else None,
+                    "current_composition_version": current_comp,
+                    "depends_on": bool(old.get("depends_on")) if old else False,
+                })
+        for (source_type, child_id), old in snap.items():
+            if source_type == "section" and old.get("depends_on") and child_id not in current_children:
+                stale_children.append({
+                    "source_id": child_id,
+                    "parent_saw_composition_version": old.get("source_composition_version"),
+                    "current_composition_version": None,
+                    "depends_on": True,
+                })
 
     return {
         "has_composition": True,
         "composition_version": target_version,
-        "stale": bool(changes),
-        "changed_sources": changes,
+        "stale": development_changed if node_type == "subsection" else bool(stale_children),
+        "stale_children": stale_children,
+        "development_changed": development_changed,
         "composed_through_revision": comp.get("composed_through_event_id"),
         "source_note": comp.get("source_note") or "",
         "body_chars": len(comp.get("body") or ""),
     }
-
 
 def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = None,
                 data: dict[str, list[dict[str, Any]]] | None = None) -> str:
@@ -213,12 +214,13 @@ def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = 
                     f"(`{s['id']}`; development v{s.get('development_version') or s.get('version')}; "
                     f"composition v{ss.get('composition_version')}; stale={ss.get('stale')})"
                 )
-        if status.get("changed_sources"):
-            bits += ["", "### Uncompressed descendant changes", ""]
-            for x in status["changed_sources"]:
+        if status.get("stale_children"):
+            bits += ["", "### Stale child compositions", ""]
+            for x in status["stale_children"]:
                 bits.append(
-                    f"- {x.get('change_kind')}: {x.get('source_id')} "
-                    f"(composed v{x.get('composed_source_version')} → current v{x.get('current_source_version')})"
+                    f"- {x.get('source_id')}: parent saw composition "
+                    f"v{x.get('parent_saw_composition_version')} → current "
+                    f"v{x.get('current_composition_version')}"
                 )
     return "\n".join(bits)
 
@@ -244,13 +246,9 @@ def subsection_md(row: dict[str, Any], data: dict[str, list[dict[str, Any]]]) ->
         bits.append(f"- Provisional declared dependencies: {json.dumps(deps, ensure_ascii=False)}")
     bits += ["", "## Cold composition", "", comp.get("body") if comp else "(none yet)",
              "", "## Development", "", row.get("body") or ""]
-    if status.get("changed_sources"):
-        bits += ["", "## Uncompressed changes", ""]
-        for x in status["changed_sources"]:
-            bits.append(
-                f"- {x.get('change_kind')}: development v{x.get('composed_source_version')} "
-                f"→ v{x.get('current_source_version')}"
-            )
+    if status.get("development_changed"):
+        bits += ["", "## Uncompressed development", "",
+                 "- Development has changed since this Subsection's current cold composition."]
     return "\n".join(bits)
 
 def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
@@ -289,12 +287,13 @@ def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
                 f"- {s.get('position')}. [{r.get('title') or r['id']}](../SECTIONS/{safe_name(r['id'])}.md) "
                 f"(`{r['id']}`; composition v{ss.get('composition_version')}; stale={ss.get('stale')})"
             )
-    if status.get("changed_sources"):
-        bits += ["", "## Uncompressed descendant changes", ""]
-        for x in status["changed_sources"]:
+    if status.get("stale_children"):
+        bits += ["", "## Stale child compositions", ""]
+        for x in status["stale_children"]:
             bits.append(
-                f"- {x.get('change_kind')}: {x.get('source_type')} {x.get('source_id')} "
-                f"(composed v{x.get('composed_source_version')} → current v{x.get('current_source_version')})"
+                f"- {x.get('source_id')}: parent saw composition "
+                f"v{x.get('parent_saw_composition_version')} → current "
+                f"v{x.get('current_composition_version')}"
             )
     return "\n".join(bits)
 
@@ -335,7 +334,7 @@ The artifact is a snapshot; these RPCs are the live worker interface.
 ## Startup and reading
 
 ### boot()
-Starts a session and returns the artifact snapshot/revision plus stewardship notices.
+Starts a session and returns the artifact snapshot/revision, persistent startup broadcasts, and stewardship notices. Read broadcasts before selecting a research tactic.
 
 ### search(query, filters := {})
 Discovers Articles, Sections, Subsection development, Toolkit, documents, and optionally Brainstorms.
@@ -344,7 +343,7 @@ Discovers Articles, Sections, Subsection development, Toolkit, documents, and op
 Reads exact durable content. Article and Section bodies are cold compositions. Stable Subsection IDs are also readable; a Subsection read shows both its cold composition and full development body.
 
 ### composition_status(node_type, node_id)
-Returns the current composition version, stale flag, and exact descendant sources that are new, removed, reordered, or further developed.
+Returns one stale flag. For Sections and Articles it also returns stale_children: direct child compositions that require parent reconsideration. Raw child development never stales a parent.
 
 ### changes(since_revision := 0, until_revision := null, limit := 100)
 Returns compact live events plus current Article/Section composition states.
@@ -355,10 +354,12 @@ Returns compact live events plus current Article/Section composition states.
 Creates a cheap local development container. Multiple Subsections may be developed in parallel.
 
 ### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
-Edits any Subsection. Supply payload.subsection_id (or payload.id). Development edits do not rewrite the parent Section, bump its math version, or regenerate an Article. payload.dependencies are stored provisionally on the Subsection.
+Edits any Subsection. Supply payload.subsection_id (or payload.id). Development edits do not rewrite or stale the parent Section, bump its math version, or regenerate an Article. payload.dependencies are stored provisionally on the Subsection.
 
 ### compose(session_id, node_type, node_id, payload, expected_version)
-The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Optional source_usage maps source IDs to used, partial, consulted, omitted, or available. A substantive Section composition must explicitly declare dependencies.
+The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Section and Article composition also require payload.depends_on: the direct child IDs this composition relies on, using [] when none. Optional source_usage may annotate used, partial, consulted, omitted, or available children. A substantive Section composition must explicitly declare canonical mathematical dependencies.
+
+Parent staleness is composition-to-composition. Recomposing a depended-on child stales the parent. Recomposing an explicitly excluded child does not. A newly added child remains invisible to parent staleness until it receives a composition; that first composition stales the parent as a signal worth reconsidering.
 
 ### save_research(session_id, payload, expected_version := null)
 Creates/edits Sections or Toolkit. New route-shaped work should normally develop in Subsections; Toolkit remains for broadly reusable mathematics.
@@ -382,13 +383,13 @@ Promotes developed work into a Section while preserving the Brainstorm.
 ## Dependencies, audits, and stewardship
 
 ### context(research_id)
-Shows canonical dependencies, consumers, supersessions, Article references, and origin.
+Shows canonical mathematical dependencies, consumers, supersessions, Article references, and origin. These dependencies are orthogonal to composition dependencies.
 
 ### request_audit(session_id, target_type, target_id, target_version)
 Queues an independent audit of a canonical Section/Toolkit math version or Article version.
 
 ### claim_chore(session_id, kinds := {audit,recomposition,maintenance})
-Claims one stewardship task. Recomposition chores are triggered by stale source frontiers, not arbitrary size limits. Calling compose successfully resolves the matching recomposition chore.
+Claims one stewardship task. Recomposition chores follow stale composition frontiers, not raw development or arbitrary size limits. Calling compose successfully resolves the matching recomposition chore.
 
 ### finish_chore(session_id, chore_id, outcome := {})
 Completes audits and maintenance chores.
@@ -402,6 +403,8 @@ Returns artifact recovery/rebuild information.
 
 ### help()
 Returns a compact machine-readable summary.
+
+Persistent startup broadcasts are administered in research_core with add_startup_broadcast(...) and remove_startup_broadcast(...). They have no expiry.
 """
 
 def toolkit_entry_line(r: dict[str, Any]) -> str:
@@ -418,6 +421,7 @@ def build(schema: str):
     data = {t: rows(schema, t) for t in TABLES}
     rev = context(schema, "revision")
     universal_docs = context(schema, "universal_documents")
+    broadcasts = context(schema, "startup_broadcasts")
 
     live_docs = [d for d in data["documents"] if d.get("archived_at") is None]
     overview = next((d for d in live_docs if d.get("kind") == "overview"), None)
@@ -433,6 +437,26 @@ def build(schema: str):
     write(root / "REFLEXES.md", doc_md(reflexes) if reflexes else "# Research Reflexes\n\nNo reflexes.")
     write(root / "DICTIONARY.md", dictionary_text(data["dictionary"]))
     write(root / "API.md", api_text())
+
+    broadcast_lines = [
+        "# Startup broadcasts", "",
+        "These are persistent project directives. They do not expire; they remain in force until explicitly removed.",
+        "",
+    ]
+    if broadcasts:
+        for b in broadcasts:
+            broadcast_lines += [
+                f"## {b.get('title') or b.get('broadcast_id')}",
+                "",
+                b.get("body") or "",
+                "",
+                f"- ID: {b.get('broadcast_id')}",
+                f"- Scope: {b.get('scope')}",
+                "",
+            ]
+    else:
+        broadcast_lines.append("No active startup broadcasts.")
+    write(root / "BROADCASTS.md", "\n".join(broadcast_lines))
 
     active_research = [r for r in data["research"] if r.get("archived_at") is None]
     research_by_id = {r["id"]: r for r in active_research}
@@ -544,13 +568,13 @@ def build(schema: str):
 
 Review startup_notices returned by boot().
 
-Use the extracted artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read ARTICLES/README.md.
+Use the extracted artifact as the working research context. Read BROADCASTS.md **first**, before selecting any research tactic. Then read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read ARTICLES/README.md.
 
-If the prompt asks you to continue an existing Article, read that Article's cold composition and every contained Section file before continuing it. Inspect stale markers; for each stale Article or Section, read the Subsections named by its uncompressed-change list, and read additional Subsections when the mathematics requires them.
+If the prompt asks you to continue an existing Article, read that Article's cold composition and every contained Section file before continuing it. Inspect stale markers; for each stale Article or Section, read the child compositions named by stale_children, and descend into their Subsections when the mathematics requires it.
 
 If the prompt does not select an Article, read every listed Article cold composition before choosing which route to work on. After choosing, descend into that Article's Sections rather than reading every Subsection in the project.
 
-Call changes(...) once using this artifact's snapshot revision as the freshness baseline. A newer Section or Article version is not the only freshness signal: inspect composition_status/stale data because Subsection development can advance without changing the parent canonical version. Use read([subsection_id]) for exact live development when a source is newer.
+Call changes(...) once using this artifact's snapshot revision as the freshness baseline. Inspect composition_status/stale data for parent recomposition signals. Raw Subsection development may advance without staling its parent; use read([subsection_id]) when the task requires that development.
 
 Article and Section files are not generated concatenations. Their bodies are cold compositions. SUBSECTIONS/ preserves the lower-level development that may or may not survive into those compositions.
 
@@ -608,8 +632,9 @@ Generated: {rev.get('generated_at')}
         "toolkit_promoted_count": len(promoted),
         "toolkit_limbo_count": len(limbo),
         "brainstorm_count": len(data["brainstorms"]),
-        "mirror_format": 11,
-        "composition_model": "recursive-cold-composition-v1",
+        "startup_broadcasts": broadcasts,
+        "mirror_format": 12,
+        "composition_model": "recursive-cold-composition-v2",
     })
 
 def main():
