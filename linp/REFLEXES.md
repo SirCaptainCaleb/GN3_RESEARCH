@@ -1,5 +1,7 @@
 # Research Reflexes
 
+These are compact heuristics for mathematical judgment during active research.
+
 1. **Compress deliberately upward.** Let development branch freely; promote only the mathematics that clarifies the canonical argument.
 
 2. **Elevate results aggressively.** When a local result admits a stronger statement, broader scope, earlier placement, or reuse that simplifies later arguments, strengthen and reposition it before building more machinery on top.
