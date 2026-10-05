@@ -183,7 +183,7 @@ def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = 
     if row.get("statement"):
         bits += ["", "## Statement", "", row["statement"]]
     if row.get("body"):
-        bits += ["", "## Cold composition" if row.get("kind") == "section" else "## Body", "", row["body"]]
+        bits += ["", "## Composition" if row.get("kind") == "section" else "## Body", "", row["body"]]
 
     bits += ["", "## Metadata", "",
              f"- ID: {row['id']}",
@@ -242,11 +242,11 @@ def subsection_md(row: dict[str, Any], data: dict[str, list[dict[str, Any]]]) ->
     deps = row.get("declared_dependencies") or []
     if deps:
         bits.append(f"- Provisional declared dependencies: {json.dumps(deps, ensure_ascii=False)}")
-    bits += ["", "## Cold composition", "", comp.get("body") if comp else "(none yet)",
+    bits += ["", "## Composition", "", comp.get("body") if comp else "(none yet)",
              "", "## Development", "", row.get("body") or ""]
     if status.get("development_changed"):
         bits += ["", "## Uncompressed development", "",
-                 "- Development has changed since this Subsection's current cold composition."]
+                 "- Development has changed since this Subsection's current composition."]
     return "\n".join(bits)
 
 def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
@@ -262,7 +262,7 @@ def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
         f"- Stale: {status.get('stale')}",
         f"- Composed through revision: {status.get('composed_through_revision')}",
         "",
-        "## Cold composition",
+        "## Composition",
         "",
         row.get("body") or "(no Article composition yet)",
         "",
@@ -338,7 +338,7 @@ Starts a session and returns the artifact snapshot/revision, persistent startup 
 Discovers Articles, Sections, Subsection development, Toolkit, documents, and optionally Brainstorms.
 
 ### read(ids, math_versions := {}, cursor := null, page_chars := 9000)
-Reads exact durable content. Article and Section bodies are cold compositions. Stable Subsection IDs are also readable; a Subsection read shows both its cold composition and full development body.
+Reads exact durable content. Article and Section bodies are compositions. Stable Subsection IDs are also readable; a Subsection read shows both its composition and full development body.
 
 ### composition_status(node_type, node_id)
 Returns one stale flag. For Sections and Articles it also returns stale_children: direct child compositions that require parent reconsideration. Raw child development never stales a parent.
@@ -463,7 +463,7 @@ def build(schema: str):
 
     article_index = [
         "# Articles", "",
-        "Articles are top-level routes. Each file contains a manually written cold composition plus links to its contained Sections.",
+        "Articles are top-level routes. Each file contains a manually written composition plus links to its contained Sections.",
         "",
     ]
     for d in articles:
@@ -485,7 +485,7 @@ def build(schema: str):
 
     section_index = [
         "# Sections", "",
-        "Sections are coherent research regions with manually written cold compositions and preserved Subsection development. They may remain uncontained while their Article-level route is unclear.",
+        "Sections are coherent research regions with manually written compositions and preserved Subsection development. They may remain uncontained while their Article-level route is unclear.",
         "",
     ]
     section_items = sorted(
@@ -515,7 +515,7 @@ def build(schema: str):
 
     subsection_index = [
         "# Subsections", "",
-        "Subsections are cheap local development containers. Their files preserve full development independently of whatever survives into colder parent compositions.",
+        "Subsections are cheap local development containers. Their files preserve full development independently of whatever survives into parent compositions.",
         "",
     ]
     for s in sorted(
@@ -561,13 +561,7 @@ Review startup_notices returned by boot().
 
 Use the extracted artifact as the working research context. Read BROADCASTS.md **first**, before selecting any research tactic. Then read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md. Then read ARTICLES/README.md.
 
-If the prompt asks you to continue an existing Article, read that Article's cold composition and every contained Section file before continuing it. Inspect stale markers; for each stale Article or Section, read the child compositions named by stale_children, and descend into their Subsections when the mathematics requires it.
-
-If the prompt does not select an Article, read every listed Article cold composition before choosing which route to work on. After choosing, descend into that Article's Sections rather than reading every Subsection in the project.
-
-Call changes(...) once using this artifact's snapshot revision as the freshness baseline. Inspect composition_status/stale data for parent recomposition signals. Raw Subsection development may advance without staling its parent; use read([subsection_id]) when the task requires that development.
-
-Article and Section files are not generated concatenations. Their bodies are cold compositions. SUBSECTIONS/ preserves the lower-level development that may or may not survive into those compositions.
+Call changes(...) once using this artifact's snapshot revision as the freshness baseline. If the snapshot is substantially stale, regenerate it before downloading.
 
 Then begin research under GUIDE.md and REFLEXES.md.
 
@@ -624,7 +618,7 @@ Generated: {rev.get('generated_at')}
         "brainstorm_count": len(data["brainstorms"]),
         "startup_broadcasts": broadcasts,
         "mirror_format": 16,
-        "composition_model": "recursive-cold-composition-v5",
+        "composition_model": "recursive-composition-v6",
     })
 
 def main():
