@@ -514,9 +514,9 @@
     }
   },
   "brainstorm_count": 2,
-  "composition_model": "recursive-cold-composition-v4",
-  "generated_at": "2026-10-05T03:05:52.208937+00:00",
-  "mirror_format": 15,
+  "composition_model": "recursive-cold-composition-v5",
+  "generated_at": "2026-10-05T03:10:02.475919+00:00",
+  "mirror_format": 16,
   "schema": "linp",
   "section_versions": {
     "algebraic_and_steiner_constructions_binary_projective_systems": {

@@ -523,9 +523,9 @@
     }
   },
   "brainstorm_count": 128,
-  "composition_model": "recursive-cold-composition-v4",
-  "generated_at": "2026-10-05T03:05:50.175436+00:00",
-  "mirror_format": 15,
+  "composition_model": "recursive-cold-composition-v5",
+  "generated_at": "2026-10-05T03:09:59.238596+00:00",
+  "mirror_format": 16,
   "schema": "gn3n",
   "section_versions": {
     "antipodal_geodesics_and_complementary_path_supports": {
