@@ -354,7 +354,7 @@ Creates a cheap local development container. Multiple Subsections may be develop
 Edits any Subsection. Supply payload.subsection_id (or payload.id). Development edits do not rewrite or stale the parent Section, bump its math version, or regenerate an Article. payload.dependencies are stored provisionally on the Subsection.
 
 ### compose(session_id, node_type, node_id, payload, expected_version)
-The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Section and Article composition also require payload.depends_on: the direct child IDs this composition relies on, using [] when none. Optional source_usage may annotate used, partial, consulted, omitted, or available children. A substantive Section composition must explicitly declare canonical mathematical dependencies.
+The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Section and Article composition also require payload.depends_on: the direct child IDs this composition relies on, using [] when none. A substantive Section composition must explicitly declare canonical mathematical dependencies.
 
 Parent staleness is composition-to-composition. Recomposing a depended-on child stales the parent. Recomposing an explicitly excluded child does not. A newly added child remains invisible to parent staleness until it receives a composition; that first composition stales the parent as a signal worth reconsidering.
 
