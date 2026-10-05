@@ -56,14 +56,14 @@ A Section belongs to at most one Article. Cross-route mathematical reuse belongs
 
 compose(session_id, node_type, node_id, payload, expected_version) is the shared compression mechanism for subsection, section, and article.
 
-The payload requires an explicit body: composition is a rewrite, not an automatic roll-up. Section and Article composition also require depends_on: the explicit IDs of direct child compositions on which the new parent composition relies. Use [] when it relies on none. source_usage may optionally annotate children as used, partial, consulted, or omitted; those editorial notes never delete source material.
+The payload requires an explicit body: composition is a rewrite, not an automatic roll-up. Section and Article composition also require depends_on: the explicit IDs of direct children on which the new parent composition relies. Use [] when it relies on none.
 
 Each composition records:
 
 - its own composition version;
 - the direct-child composition frontier visible at composition time, including which children were explicitly depended on;
 - the database revision through which it was composed;
-- optional source notes and source-usage annotations.
+- optional source notes.
 
 composition_status(node_type, node_id) exposes one stale flag and the direct children responsible for it. Raw descendant development is deliberately ignored by parents. A depended-on child recomposition stales the parent; an excluded child recomposition does not. A newly added child does not matter until it receives a composition, at which point the parent becomes stale because that composition is a signal worth reconsidering.
 
