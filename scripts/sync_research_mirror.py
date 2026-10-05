@@ -1,6 +1,7 @@
 # Artifact refresh trigger: validates cleanup and artifact metadata publishing.
 # Artifact startup is consumed through the GitHub Actions artifact download path.
 #!/usr/bin/env python3
+# Recursive composition mirror format 13.
 from __future__ import annotations
 
 import json, os, re, shutil, urllib.error, urllib.request
