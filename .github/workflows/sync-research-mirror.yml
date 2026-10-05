@@ -77,4 +77,3 @@ jobs:
 
           echo "Failed to publish mirror after 3 regeneration attempts." >&2
           exit 1
-
