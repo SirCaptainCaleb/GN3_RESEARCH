@@ -1,6 +1,6 @@
 # Startup broadcasts
 
-These are persistent project directives. They do not expire; they remain in force until explicitly removed.
+These persistent project directives remain in force until explicitly removed.
 
 ## Minimum-counterexample analysis requires bounded order
 
