@@ -332,76 +332,76 @@ The artifact is a snapshot; these RPCs are the live worker interface.
 ## Startup and reading
 
 ### boot()
-Starts a session and returns the artifact snapshot/revision, persistent startup broadcasts, and stewardship notices. Read broadcasts before selecting a research tactic.
+Starts a session and returns the artifact snapshot revision, startup broadcasts, notices, and session ID.
 
 ### search(query, filters := {})
-Discovers Articles, Sections, Subsection development, Toolkit, documents, and optionally Brainstorms.
+Discovers Articles, Sections, Subsections, Toolkit, documents, and Brainstorms.
 
 ### read(ids, math_versions := {}, cursor := null, page_chars := 9000)
-Reads exact durable content. Article and Section bodies are compositions. Stable Subsection IDs are also readable; a Subsection read shows both its composition and full development body.
+Reads durable Article, Section, Subsection, Toolkit, and Brainstorm content.
+
+### context(research_id)
+Shows mathematical dependencies, consumers, supersessions, Article references, and origin.
 
 ### composition_status(node_type, node_id)
-Returns one stale flag. For Sections and Articles it also returns stale_children: direct child compositions that require parent reconsideration. Raw child development never stales a parent.
+Shows the current development and composition versions together with dependency staleness.
+
+### dependencies(node_type, node_id)
+Shows the dependency manifest for a manuscript node.
 
 ### changes(since_revision := 0, until_revision := null, limit := 100)
-Returns compact live events plus current Article/Section composition states.
+Returns live events and current composition state since a revision.
 
 ## Development
 
-### new_subsection(session_id, section_id, payload, expected_section_version)
-Creates a cheap local development container. Multiple Subsections may be developed in parallel.
+### new_subsection(session_id, section_id, payload, dependencies, expected_section_version)
+Creates a local Subsection development branch. Pass dependencies explicitly; use [] for an independent Subsection.
 
-### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
-Edits any Subsection. Supply payload.subsection_id (or payload.id). Development edits do not rewrite or stale the parent Section, bump its math version, or regenerate an Article. payload.dependencies are stored provisionally on the Subsection.
+### save_subsection(session_id, section_id, payload, dependencies, expected_section_version, expected_subsection_version)
+Edits an existing Subsection by stable ID and records its direct dependencies.
 
-### compose(session_id, node_type, node_id, payload, expected_version)
-The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Section and Article composition also require payload.depends_on: the direct child IDs this composition relies on, using [] when none. A substantive Section composition must explicitly declare canonical mathematical dependencies.
+### compose(session_id, node_type, node_id, body, expected_development_version, source_note)
+Compresses the current development of an Article, Section, or Subsection into a canonical composition. Composition automatically depends on the current development version of the same node.
 
-Parent staleness is composition-to-composition. Recomposing a depended-on child stales the parent. Recomposing an explicitly excluded child does not. A newly added child remains invisible to parent staleness until it receives a composition; that first composition stales the parent as a signal worth reconsidering.
+### save_research(session_id, payload, dependencies, expected_version := null)
+Creates or edits a Section or Toolkit object and records its direct dependencies.
 
-### save_research(session_id, payload, expected_version := null)
-Creates/edits Sections or Toolkit. New route-shaped work should normally develop in Subsections; Toolkit remains for broadly reusable mathematics.
-
-### save_document(session_id, payload, expected_version := null)
-Creates/edits documents and Article containment. Article prose is never generated from section_ids. Supplying an Article body performs a manual composition.
-
+### save_document(session_id, payload, dependencies, expected_version := null)
+Creates or edits a project document or Article and records its direct dependencies.
 
 ## Brainstorms
 
 ### brainstorms(active_only := true)
-Lists loose exploratory work.
+Lists exploratory work.
 
 ### save_brainstorm(session_id, payload, expected_version := null)
-Creates/edits a Brainstorm.
+Creates or edits a Brainstorm.
 
 ### promote_brainstorm(session_id, brainstorm_id, payload := {}, expected_version)
-Promotes developed work into a Section while preserving the Brainstorm.
+Promotes a Brainstorm into manuscript development while preserving its source history.
 
-## Dependencies, audits, and stewardship
-
-### context(research_id)
-Shows canonical mathematical dependencies, consumers, supersessions, Article references, and origin. These dependencies are orthogonal to composition dependencies.
+## Audits and stewardship
 
 ### request_audit(session_id, target_type, target_id, target_version)
-Queues an independent audit of a canonical Section/Toolkit math version or Article version.
+Queues an independent audit of a canonical version.
 
 ### claim_chore(session_id, kinds := {audit,recomposition,maintenance})
-Claims one stewardship task. Recomposition chores follow stale composition frontiers, not raw development or arbitrary size limits. Calling compose successfully resolves the matching recomposition chore.
+Claims one stewardship task.
 
 ### finish_chore(session_id, chore_id, outcome := {})
-Completes audits and maintenance chores.
+Completes a claimed audit or maintenance task.
 
 ## Atomic publication batches
 
-stage_batch_chunk → review_staged_batch → commit_staged_batch is the atomic path for large multi-object publication. Batch operations include new_subsection, save_subsection, compose, save_research, save_document, and Brainstorm operations.
+Use stage_batch_chunk, review_staged_batch, and commit_staged_batch for multi-operation publication. stage_batch_chunk accepts JSON text or base64:<blob>; base64 is decoded as UTF-8 before review and commit.
+
+Development-save operations place dependencies at the operation top level. Compose operations place body, expected_development_version, and source_note at the operation top level.
 
 ### artifact_help()
-Returns artifact recovery/rebuild information.
+Returns artifact recovery and rebuild information.
 
 ### help()
-Returns a compact machine-readable summary.
-
-Persistent startup broadcasts are administered in research_core with add_startup_broadcast(...) and remove_startup_broadcast(...). They have no expiry.
+Returns the compact machine-readable interface summary.
 """
 
 def toolkit_entry_line(r: dict[str, Any]) -> str:
