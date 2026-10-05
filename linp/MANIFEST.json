@@ -515,7 +515,7 @@
   },
   "brainstorm_count": 2,
   "composition_model": "recursive-cold-composition-v2",
-  "generated_at": "2026-10-05T02:46:19.319365+00:00",
+  "generated_at": "2026-10-05T02:48:24.975637+00:00",
   "mirror_format": 13,
   "schema": "linp",
   "section_versions": {
@@ -1440,7 +1440,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1455,7 +1455,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1482,7 +1482,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1509,7 +1509,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1524,7 +1524,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1551,7 +1551,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1566,7 +1566,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1605,7 +1605,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1620,7 +1620,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1659,7 +1659,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1686,7 +1686,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1713,7 +1713,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1740,7 +1740,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1779,7 +1779,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1794,7 +1794,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1833,7 +1833,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1848,7 +1848,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1875,7 +1875,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1902,7 +1902,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1929,7 +1929,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -1980,7 +1980,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2007,7 +2007,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2034,7 +2034,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2085,7 +2085,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2112,7 +2112,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2127,7 +2127,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2190,7 +2190,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2217,7 +2217,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2256,7 +2256,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2271,7 +2271,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2286,7 +2286,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2313,7 +2313,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2340,7 +2340,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2391,7 +2391,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2430,7 +2430,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2457,7 +2457,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2484,7 +2484,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2511,7 +2511,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2550,7 +2550,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2565,7 +2565,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2604,7 +2604,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2643,7 +2643,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2670,7 +2670,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2697,7 +2697,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2712,7 +2712,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2739,7 +2739,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2754,7 +2754,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2805,7 +2805,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2820,7 +2820,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2847,7 +2847,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2874,7 +2874,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2889,7 +2889,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2904,7 +2904,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2931,7 +2931,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2958,7 +2958,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -2973,7 +2973,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -3000,7 +3000,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -3015,7 +3015,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -3054,7 +3054,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -3081,7 +3081,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -3108,7 +3108,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
@@ -3123,7 +3123,7 @@
         "composition_version": 1,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy crystallized Subsection state; crystallization is no longer permanent.",
+        "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
         "stale_children": []
       },
