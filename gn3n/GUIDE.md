@@ -14,7 +14,7 @@ Every manuscript node has two conceptual states:
 - **Development (hot):** research that exists beneath or inside the node but has not yet been incorporated into its current composition. It may be speculative, redundant, mutually inconsistent, or much larger than the prose that eventually survives.
 - **Composition (cold):** the current manually rewritten canonical rendering. It is intentionally selective and lossy. It may later be replaced.
 
-A stale composition is not broken. For a parent, staleness is composition-to-composition: either a direct child explicitly depended on by the parent has been recomposed, or a newly added direct child has acquired its first composition. Raw child development does not stale a parent. A Subsection may still become stale against its own local development.
+A stale composition is not broken. For a parent, staleness is composition-to-composition and is governed only by the parent's explicit depends_on set: a depended-on direct child has been recomposed or removed. New child development and first child compositions do not stale a parent merely by appearing. Raw child development does not stale a parent. A Subsection may still become stale against its own local development.
 
 ## The four research surfaces
 
@@ -65,7 +65,7 @@ Each composition records:
 - the database revision through which it was composed;
 - optional source notes.
 
-composition_status(node_type, node_id) exposes one stale flag and the direct children responsible for it. Raw descendant development is deliberately ignored by parents. A depended-on child recomposition stales the parent; an excluded child recomposition does not. A newly added child does not matter until it receives a composition, at which point the parent becomes stale because that composition is a signal worth reconsidering.
+composition_status(node_type, node_id) exposes one stale flag and the direct children responsible for it. Raw descendant development is deliberately ignored by parents. Parent staleness is controlled only by depends_on: a depended-on child recomposition or removal stales the parent. New or newly composed children do not stale the parent unless a later parent composition explicitly depends on them.
 
 For a substantive Section composition, declare dependencies, using [] if genuinely independent. Section canonical dependency edges change at composition time, not on every exploratory Subsection edit.
 
@@ -90,6 +90,8 @@ Cross-references may point backward, sideways, or upward. Research chronology do
 ## Audits
 
 Audits validate a current canonical mathematical version. Development edits below a Section do not invalidate its cold composition audit merely because there is new material to consider.
+
+**Normal audit behavior.** When an audit finds a localized gap, caveat, missing justification, or plausible repair route, prefer publishing a focused audit-style Subsection/addendum under the affected Section rather than immediately rewriting the cold composition. The addendum should identify the exact claim under audit, the issue found, and the smallest known repair obligation or corrected statement. This preserves the canonical snapshot while giving later repair or recomposition a precise target. Do not mark the canonical version passed while a substantive gap recorded by such an addendum remains unresolved.
 
 A substantive Section recomposition creates a new mathematical version and requires a new audit if audited certainty is desired. Premise changes retarget live consumers optimistically until compatibility is checked.
 

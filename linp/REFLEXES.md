@@ -5,7 +5,7 @@
 
 1. **Publish cheaply downward; compress deliberately upward.** If you are still discovering the mathematics, prefer a Subsection. If you are deciding what the manuscript should now say, compose.
 
-2. **A stale composition is still a composition.** Parent staleness follows child compositions, not scratch development: a depended-on child was recomposed, or a newly added child acquired a composition. Read the cold parent, keep using it, and recompose when the synthesis is worth doing.
+2. **A stale composition is still a composition.** Parent staleness follows only explicit composition dependencies: a depended-on child was recomposed or removed. New child development and first child compositions do not stale the parent by themselves. Read the cold parent, keep using it, and recompose when the synthesis is worth doing.
 
 3. **Never concatenate upward.** Section and Article bodies are deliberate rewrites. Omission is allowed. Lower-level material remains preserved.
 
@@ -23,7 +23,7 @@
 
 10. **Recomposition is stewardship, not correction.** New results routinely force better statements, reordered proofs, or removal of obsolete exposition. That does not imply the old composition was erroneous.
 
-11. **Audit the canonical claim, not the notebook.** A Subsection can stay messy while a Section composition is audited. A new substantive Section composition gets a new mathematical version.
+11. **Audit the canonical claim, not the notebook.** A Subsection can stay messy while a Section composition is audited. If an audit finds a localized problem, normally publish a focused audit addendum Subsection that states the exact gap and repair obligation instead of immediately rewriting the cold composition. A new substantive Section composition gets a new mathematical version.
 
 12. **Read according to the task.** Continuing an Article means read its cold composition and all its Sections, then any child compositions flagged by staleness. Choosing among routes means scan every Article first.
 
@@ -34,6 +34,6 @@
 15. **Stage large shared publications.** Use the staged-batch overlap review when many related writes must land together.
 
 
-16. **Treat composition as a signal.** Raw development is cheap and local. Giving a new child a composition means someone judged it worth canonical expression, so a parent that predates that child composition becomes stale and should reconsider whether to absorb it.
+16. **Containment is not a staleness contract.** Raw development and child compositions may accumulate freely. A parent becomes stale only through children explicitly named in its current depends_on set.
 
 17. **Read startup broadcasts first.** They are persistent project directives with no expiry; they remain in force until explicitly removed.

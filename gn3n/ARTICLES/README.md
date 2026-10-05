@@ -8,4 +8,4 @@ Articles are top-level routes. Each file contains a manually written cold compos
 - [Article IV — endpoint transport and small-support gluing](endpoint_transport_and_small_support_gluing.md) (`endpoint_transport_and_small_support_gluing`) — composition v1; stale=False
 - [Article V — longest paths and reversal structure](longest_paths_and_reversal_structure.md) (`longest_paths_and_reversal_structure`) — composition v1; stale=False
 - [Article VI — three-cover repartitions and recurrence](three_cover_repartitions_and_recurrence.md) (`three_cover_repartitions_and_recurrence`) — composition v1; stale=False
-- [Article VII — antipodal geodesics, defect Helly theory, and topological compression](article_vii_antipodal_geodesics_and_topological_reformulations.md) (`article_vii_antipodal_geodesics_and_topological_reformulations`) — composition v1; stale=False
+- [Article VII — antipodal geodesics, defect Helly theory, and topological compression](article_vii_antipodal_geodesics_and_topological_reformulations.md) (`article_vii_antipodal_geodesics_and_topological_reformulations`) — composition v1; stale=True

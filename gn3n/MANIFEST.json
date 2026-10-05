@@ -51,9 +51,9 @@
       },
       {
         "id": "terminalization_reachability_and_the_exact_frontier",
-        "math_version": 1,
+        "math_version": 3,
         "position": 9,
-        "version": 3
+        "version": 5
       }
     ],
     "defect_lines_and_spanningorder_compression": [
@@ -438,8 +438,15 @@
         "development_changed": false,
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
-        "stale": false,
-        "stale_children": []
+        "stale": true,
+        "stale_children": [
+          {
+            "current_composition_version": 3,
+            "depends_on": true,
+            "parent_saw_composition_version": 1,
+            "source_id": "terminalization_reachability_and_the_exact_frontier"
+          }
+        ]
       },
       "version": 119
     },
@@ -524,7 +531,7 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-cold-composition-v5",
-  "generated_at": "2026-10-05T03:09:59.238596+00:00",
+  "generated_at": "2026-10-05T04:12:43.225684+00:00",
   "mirror_format": 16,
   "schema": "gn3n",
   "section_versions": {
@@ -1552,17 +1559,17 @@
     },
     "terminalization_reachability_and_the_exact_frontier": {
       "composition": {
-        "body_chars": 5126,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 6494,
+        "composed_through_revision": 1281,
+        "composition_version": 3,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Recomposed after auditing the relative-index proof: same-face escape is false locally; exact frontier is bounded terminal edge-surgery coherence.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 1,
-      "version": 3
+      "math_version": 3,
+      "version": 5
     },
     "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient": {
       "composition": {
@@ -1719,7 +1726,7 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1222,
+  "snapshot_revision": 1283,
   "startup_broadcasts": [
     {
       "body": "Do not pursue a minimum-counterexample analysis unless prior development has already forced any minimum counterexample to have bounded order: there must be an explicit finite upper bound on the number of vertices. Until such a bounded-order reduction exists, use structural, topological, algebraic, constructive, or other non-minimum-counterexample approaches instead.",
@@ -1731,6 +1738,18 @@
     }
   ],
   "subsection_versions": {
+    "a_local_pure_carrier_shows_same_face_escape_is_false": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "antipodal_geodesics_and_complementary_path_supports_subsection_a": {
       "composition": {
         "composition_version": null,
@@ -1968,6 +1987,18 @@
       "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 2
     },
+    "audit_of_the_depth_filtration_the_remaining_same_face_gap": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "auxiliary_exactification_and_complementary_supports_subsection_a": {
       "composition": {
         "body_chars": 9093,
@@ -2147,6 +2178,18 @@
       "development_version": 18,
       "section_id": "convex_root_balance_and_bourgin_yang",
       "version": 18
+    },
+    "coordinatewise_pruning_and_the_pure_terminal_core": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "cyclic_strengthenings_and_balanced_cut_obstructions_subsection_a": {
       "composition": {
@@ -2757,6 +2800,18 @@
       "section_id": "global_augmentation_by_complementary_path_splices",
       "version": 6
     },
+    "global_separator_filtration_and_bounded_mixed_cell_completion": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "kappa_one_four_end_reversal_subsection_a": {
       "composition": {
         "composition_version": null,
@@ -3081,6 +3136,18 @@
       "section_id": "memory_lift_and_exact_antipodal_geodesics",
       "version": 1
     },
+    "minimal_separator_faces_and_terminal_edge_surgery_coherence": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "norine_gn3_dictionary_and_freudenthal_geometry_subsection_a": {
       "composition": {
         "body_chars": 6303,
@@ -3107,6 +3174,18 @@
       "development_version": 3,
       "section_id": "norine_gn3_dictionary_and_freudenthal_geometry",
       "version": 3
+    },
+    "protected_carrier_separator_and_the_acyclic_carrier_reduction": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "quadratic_potential_and_pairwise_repartition_a_block_count_identity_subsection_a": {
       "composition": {
@@ -3255,6 +3334,18 @@
       "section_id": "quadratic_potential_and_pairwise_repartition_two_same_side_extenders",
       "version": 1
     },
+    "relative_index_filtration_and_the_mixed_face_outward_push_lemma": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 2,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 2
+    },
     "spanning_orders_and_defect_helly_subsection_a": {
       "composition": {
         "body_chars": 4598,
@@ -3296,6 +3387,18 @@
       "development_version": 3,
       "section_id": "spanning_orders_and_defect_helly",
       "version": 3
+    },
+    "terminal_support_surgery_gives_a_genuine_outward_escape": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "terminalization_reachability_and_the_exact_frontier_subsection_a": {
       "composition": {
@@ -3549,7 +3652,7 @@
   },
   "toolkit_count": 42,
   "universal_document_versions": {
-    "guide": 14,
-    "reflexes": 6
+    "guide": 17,
+    "reflexes": 9
   }
 }

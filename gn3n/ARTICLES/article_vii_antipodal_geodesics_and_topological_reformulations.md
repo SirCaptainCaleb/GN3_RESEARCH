@@ -3,7 +3,7 @@
 ## Composition status
 
 - Composition version: 1
-- Stale: False
+- Stale: True
 - Composed through revision: 1083
 
 ## Cold composition
@@ -2758,4 +2758,8 @@ This motivates the independent meta-conjecture recorded in [[meta_conjecture_gn3
 - 6. [Convex root balance and Bourgin–Yang multiplicity](../SECTIONS/convex_root_balance_and_bourgin_yang.md) (`convex_root_balance_and_bourgin_yang`; composition v1; stale=False)
 - 7. [Exact-root compression and bounded central structure](../SECTIONS/exact_root_compression_and_bounded_central_structure.md) (`exact_root_compression_and_bounded_central_structure`; composition v1; stale=False)
 - 8. [Local-witness topology and the finite terminal theorem](../SECTIONS/local_witness_topology_and_the_finite_terminal_theorem.md) (`local_witness_topology_and_the_finite_terminal_theorem`; composition v1; stale=False)
-- 9. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (`terminalization_reachability_and_the_exact_frontier`; composition v1; stale=False)
+- 9. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (`terminalization_reachability_and_the_exact_frontier`; composition v3; stale=False)
+
+## Stale child compositions
+
+- terminalization_reachability_and_the_exact_frontier: parent saw composition v1 → current v3
