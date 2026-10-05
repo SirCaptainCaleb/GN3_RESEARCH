@@ -6,7 +6,7 @@
 
 The exact two-cover language has three minimal forbidden patterns. Encoding their reflected occurrences by an oriented witness path yields an odd map whose balanced carriers contain opposite copies of the same local obstruction. Face symmetry then compresses every terminal carrier to a finite support, and every such terminal support is two-coverable.
 
-## Body
+## Cold composition
 
 ## Local-witness topology and the finite terminal theorem
 
@@ -146,7 +146,9 @@ The local finite line is closed. The only remaining issue is global: prove that 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/local_witness_topology_and_the_finite_terminal_theorem_subsection_a.md) (\`local_witness_topology_and_the_finite_terminal_theorem_subsection_a\`; development v1; composition vNone; stale=True)

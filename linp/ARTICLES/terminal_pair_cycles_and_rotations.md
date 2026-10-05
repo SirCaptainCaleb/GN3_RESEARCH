@@ -1,5 +1,13 @@
 # Article 3 — Terminal-pair cycles and rotations
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 402
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -259,3 +267,14 @@ If the forced second intersections occur on many distinct maximum paths or at ma
 If many of them reuse the same path, unique entrance, or path position, that multiplicity must force either larger edge rank, additional unique entrances, or a special edge.
 
 What is not presently proved is the global multiplicity bound required to sum these local alternatives over all fundamental cycles.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/terminal_pair_cycles_and_rotations_introduction.md) (\`terminal_pair_cycles_and_rotations_introduction\`; composition v1; stale=False)
+- 2. [The special-edge inequality](../SECTIONS/terminal_pair_cycles_and_rotations_the_special_edge_inequality.md) (\`terminal_pair_cycles_and_rotations_the_special_edge_inequality\`; composition v1; stale=False)
+- 3. [Cycle rank as a sufficient parameter](../SECTIONS/terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter.md) (\`terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter\`; composition v1; stale=False)
+- 4. [A maximum-total-rank spanning forest](../SECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest.md) (\`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest\`; composition v1; stale=False)
+- 5. [Rotating a longest path](../SECTIONS/terminal_pair_cycles_and_rotations_rotating_a_longest_path.md) (\`terminal_pair_cycles_and_rotations_rotating_a_longest_path\`; composition v1; stale=False)
+- 6. [Entrance support is an unavoidable parameter](../SECTIONS/terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter.md) (\`terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter\`; composition v1; stale=False)
+- 7. [A false strengthening](../SECTIONS/terminal_pair_cycles_and_rotations_a_false_strengthening.md) (\`terminal_pair_cycles_and_rotations_a_false_strengthening\`; composition v1; stale=False)
+- 8. [The remaining theorem](../SECTIONS/terminal_pair_cycles_and_rotations_the_remaining_theorem.md) (\`terminal_pair_cycles_and_rotations_the_remaining_theorem\`; composition v1; stale=False)

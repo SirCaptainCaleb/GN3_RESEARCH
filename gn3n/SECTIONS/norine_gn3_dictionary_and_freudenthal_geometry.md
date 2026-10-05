@@ -6,7 +6,7 @@
 
 Monotone cube geodesics are permutations and Freudenthal simplices. A base-independent reversal-complement triple rule is exactly a boundary tournament; base-dependent memory is a genuinely larger class.
 
-## Body
+## Cold composition
 
 ## Geodesic chambers, memory, and the stronger general route
 
@@ -180,8 +180,10 @@ The independent brainstorm [[meta_conjecture_gn3_closure_should_seed_generalized
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: Geodesic chambers, memory, and the stronger general route
-- Subsection 2 — HOT, version 3: Proof-transfer meta-conjecture
+- [Subsection 1 — Geodesic chambers, memory, and the stronger general route](../SUBSECTIONS/norine_gn3_dictionary_and_freudenthal_geometry_subsection_a.md) (\`norine_gn3_dictionary_and_freudenthal_geometry_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — Proof-transfer meta-conjecture](../SUBSECTIONS/norine_gn3_dictionary_and_freudenthal_geometry_subsection_b.md) (\`norine_gn3_dictionary_and_freudenthal_geometry_subsection_b\`; development v3; composition vNone; stale=True)

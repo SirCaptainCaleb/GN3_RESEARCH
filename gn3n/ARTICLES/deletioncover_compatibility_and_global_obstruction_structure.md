@@ -1,5 +1,13 @@
 # Article I — deletion-cover compatibility and global obstruction structure
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 1083
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -620,3 +628,16 @@ Consequently, if branching remains after suppressing degree-two vertices on one 
 <!-- section_id: deletion_covers_and_the_support_graph_canonical_references -->
 
 - [[mincex01]] — Minimum-counterexample calculus
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/deletion_covers_and_the_support_graph_introduction.md) (\`deletion_covers_and_the_support_graph_introduction\`; composition v1; stale=False)
+- 2. [Defect span](../SECTIONS/deletion_covers_and_the_support_graph_defect_span.md) (\`deletion_covers_and_the_support_graph_defect_span\`; composition v1; stale=False)
+- 3. [Compatibility of deletion covers](../SECTIONS/deletion_covers_and_the_support_graph_compatibility_of_deletion_covers.md) (\`deletion_covers_and_the_support_graph_compatibility_of_deletion_covers\`; composition v1; stale=False)
+- 4. [The support graph](../SECTIONS/deletion_covers_and_the_support_graph_the_support_graph.md) (\`deletion_covers_and_the_support_graph_the_support_graph\`; composition v1; stale=False)
+- 5. [Support-compatible families](../SECTIONS/deletion_covers_and_the_support_graph_support_compatible_families.md) (\`deletion_covers_and_the_support_graph_support_compatible_families\`; composition v1; stale=False)
+- 6. [The forest case](../SECTIONS/deletion_covers_and_the_support_graph_the_forest_case.md) (\`deletion_covers_and_the_support_graph_the_forest_case\`; composition v1; stale=False)
+- 7. [The odd-cycle case](../SECTIONS/deletion_covers_and_the_support_graph_the_odd_cycle_case.md) (\`deletion_covers_and_the_support_graph_the_odd_cycle_case\`; composition v1; stale=False)
+- 8. [The remaining lemma](../SECTIONS/deletion_covers_and_the_support_graph_the_remaining_lemma.md) (\`deletion_covers_and_the_support_graph_the_remaining_lemma\`; composition v1; stale=False)
+- 9. [Appendix. Why two selected supports need not suffice in the forest case](../SECTIONS/deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case.md) (\`deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case\`; composition v1; stale=False)
+- 10. [Canonical references](../SECTIONS/deletion_covers_and_the_support_graph_canonical_references.md) (\`deletion_covers_and_the_support_graph_canonical_references\`; composition v1; stale=False)

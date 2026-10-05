@@ -1,6 +1,6 @@
 # A vertex internal in every Hamiltonian order
 
-## Body
+## Cold composition
 
 It remains to consider an augmented support \(K\cup\{x\}\) in which \(x\) is internal in every Hamiltonian order.
 
@@ -25,7 +25,9 @@ The proof is the preceding block count applied successively to the one- and two-
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order_subsection_a\`; development v1; composition vNone; stale=True)

@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Body
+## Cold composition
 
 
 ### Two-cut normal form
@@ -2019,12 +2019,14 @@ Consequently the mixed universal pattern has no independent terminal geometry: i
 - Math version: 41
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 14: (untitled)
-- Subsection 2 — crystallized, version 10: The universal four-support is immediate
-- Subsection 3 — crystallized, version 4: Slot synchronization reductions
-- Subsection 4 — crystallized, version 6: Same-side endpoint reduction
-- Subsection 5 — crystallized, version 4: Two-label one-defect bridge
-- Subsection 6 — HOT, version 13: Coherent residue collapses
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_a.md) (\`defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_a\`; development v14; composition v1; stale=False)
+- [Subsection 2 — The universal four-support is immediate](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_b.md) (\`defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_b\`; development v10; composition v1; stale=False)
+- [Subsection 3 — Slot synchronization reductions](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_c.md) (\`defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_c\`; development v4; composition v1; stale=False)
+- [Subsection 4 — Same-side endpoint reduction](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_d.md) (\`defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_d\`; development v6; composition v1; stale=False)
+- [Subsection 5 — Two-label one-defect bridge](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_e.md) (\`defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_e\`; development v4; composition v1; stale=False)
+- [Subsection 6 — Coherent residue collapses](../SUBSECTIONS/defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_f.md) (\`defect_lines_and_spanning_order_compression_the_remaining_lemma_subsection_f\`; development v13; composition vNone; stale=True)

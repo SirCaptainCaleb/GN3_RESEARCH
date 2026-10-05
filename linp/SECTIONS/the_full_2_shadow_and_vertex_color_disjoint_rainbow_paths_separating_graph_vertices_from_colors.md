@@ -1,6 +1,6 @@
 # Separating graph vertices from colors
 
-## Body
+## Cold composition
 
 There is a simpler reduction that forces color-vertex disjointness by construction, at the cost of a factor two.
 
@@ -76,10 +76,12 @@ The hypergraph degree and the degree in a retained properly edge-colored shadow 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 3
-- Subsection 3 — crystallized, version 1: Proposition 4
-- Subsection 4 — HOT, version 1: Degree bookkeeping across the shadow reduction
+- [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_a.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 3](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_b.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Proposition 4](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_c.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_c\`; development v1; composition v1; stale=False)
+- [Subsection 4 — Degree bookkeeping across the shadow reduction](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_d.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_d\`; development v1; composition vNone; stale=True)

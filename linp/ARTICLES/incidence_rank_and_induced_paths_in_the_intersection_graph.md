@@ -1,5 +1,13 @@
 # Article 4 — Incidence rank and induced paths in the intersection graph
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 402
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -355,3 +363,14 @@ Two weaker statements would also advance the argument:
 2. prove a bound on \(\beta(T)+h\) strong enough that Proposition 6 forces the desired rank.
 
 The unresolved step is therefore confined to the high-degree part of the three-clique realizability class.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_introduction.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_introduction\`; composition v1; stale=False)
+- 2. [Linear paths and induced graph paths](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths\`; composition v1; stale=False)
+- 3. [Realizability of the intersection graph](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph\`; composition v1; stale=False)
+- 4. [The spectral identity](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity\`; composition v1; stale=False)
+- 5. [A weighted rank inequality](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality\`; composition v1; stale=False)
+- 6. [Nullity and terminal-pair complexity](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity\`; composition v1; stale=False)
+- 7. [What a counterexample must look like](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like\`; composition v1; stale=False)
+- 8. [The remaining theorem](../SECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem\`; composition v1; stale=False)

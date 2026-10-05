@@ -6,7 +6,7 @@
 
 Monotone cube geodesics are permutations; the staircase triangulation packages them into an antipodal type-A sphere after taking the link of the long diagonal, while boundary-tournament triple colors become antipodally complemented local data on three successive directions.
 
-## Body
+## Cold composition
 
 ## Permutation simplices and monotone geodesics
 
@@ -73,9 +73,11 @@ This is the precise common structure with antipodal cube-coloring problems such 
 - Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: Permutation simplices and monotone geodesics
-- Subsection 2 — crystallized, version 4: The antipodal link of the long diagonal
-- Subsection 3 — HOT, version 3: Triple colors as antipodal local data
+- [Subsection 1 — Permutation simplices and monotone geodesics](../SUBSECTIONS/antipodal_permutation_geometry_subsection_a.md) (\`antipodal_permutation_geometry_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — The antipodal link of the long diagonal](../SUBSECTIONS/antipodal_permutation_geometry_subsection_b.md) (\`antipodal_permutation_geometry_subsection_b\`; development v4; composition v1; stale=False)
+- [Subsection 3 — Triple colors as antipodal local data](../SUBSECTIONS/antipodal_permutation_geometry_subsection_c.md) (\`antipodal_permutation_geometry_subsection_c\`; development v3; composition vNone; stale=True)

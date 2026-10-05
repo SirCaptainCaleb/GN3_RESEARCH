@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 This rehearsal concerns lower bounds. A finite \(P_\ell^{(3)}\)-free linear \(3\)-graph \(G\) with \(v\) vertices and \(m\) edges gives, by taking disjoint copies,
 \[
@@ -18,7 +18,9 @@ The aim is therefore to construct finite components whose ratio \(m/v\) is as la
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_introduction_subsection_a.md) (\`algebraic_and_steiner_constructions_introduction_subsection_a\`; development v1; composition vNone; stale=True)

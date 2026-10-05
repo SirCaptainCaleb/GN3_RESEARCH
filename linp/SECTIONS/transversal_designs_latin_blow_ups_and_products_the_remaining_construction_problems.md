@@ -1,6 +1,6 @@
 # The remaining construction problems
 
-## Body
+## Cold composition
 
 The preceding theorems leave two mathematically distinct possibilities.
 
@@ -33,9 +33,11 @@ The unresolved lower-bound problem in this family is therefore not to choose a d
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Open problem A
-- Subsection 3 — HOT, version 1: Open problem B
+- [Subsection 1 — (untitled)](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_a.md) (\`transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem A](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_b.md) (\`transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Open problem B](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_c.md) (\`transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_c\`; development v1; composition vNone; stale=True)

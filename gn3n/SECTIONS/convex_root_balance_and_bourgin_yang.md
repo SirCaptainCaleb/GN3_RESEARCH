@@ -6,7 +6,7 @@
 
 The explicit odd barycentric root map has strictly positive balance on every chamber of each zero's carrier face, so every occurring root lies on a directed cycle. Uniform first-to-last switch separation L gives zero-set dimension at least L+2, refined by the rank of the occurring roots.
 
-## Body
+## Cold composition
 
 ## Balance, circulation, and multiplicity of zeros
 
@@ -995,8 +995,10 @@ Thus a hypothetical obstruction of deletion distance \(k\ge2\) carries not merel
 - Math version: 20
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: Balance, circulation, and multiplicity of zeros
-- Subsection 2 — HOT, version 18: Positive balance on every chamber and the switch-separation bound
+- [Subsection 1 — Balance, circulation, and multiplicity of zeros](../SUBSECTIONS/convex_root_balance_and_bourgin_yang_subsection_a.md) (\`convex_root_balance_and_bourgin_yang_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — Positive balance on every chamber and the switch-separation bound](../SUBSECTIONS/convex_root_balance_and_bourgin_yang_subsection_b.md) (\`convex_root_balance_and_bourgin_yang_subsection_b\`; development v18; composition vNone; stale=True)

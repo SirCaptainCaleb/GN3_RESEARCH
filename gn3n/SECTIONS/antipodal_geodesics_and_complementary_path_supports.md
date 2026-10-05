@@ -6,7 +6,7 @@
 
 Spanning one-change orders admit exact descriptions by antipodal pole geodesics and by two tight paths with a common terminal or initial vertex. After adjoining r with every (u,v,r) tight, red-then-blue spanning orders are in a two-to-one correspondence with two-covers of the original tournament, independently of the local tournament at r. Their subset generating polynomial is (1+F_H)^2. The resulting single-copy geodesic existence assertion is equivalent to the grand two-cover conjecture; existence remains unproved.
 
-## Body
+## Cold composition
 
 ### The staircase triangulation and its antipodal link
 
@@ -398,7 +398,9 @@ The local tournament at \(r\) may be chosen freely, for example transitive. The 
 - Math version: 2
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 2: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/antipodal_geodesics_and_complementary_path_supports_subsection_a.md) (\`antipodal_geodesics_and_complementary_path_supports_subsection_a\`; development v2; composition vNone; stale=True)

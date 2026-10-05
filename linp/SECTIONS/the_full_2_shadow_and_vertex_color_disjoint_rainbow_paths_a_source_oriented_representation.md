@@ -1,6 +1,6 @@
 # A source-oriented representation
 
-## Body
+## Cold composition
 
 A second representation keeps one distinguished vertex of every hyperedge.
 
@@ -88,9 +88,11 @@ This representation yields a directed-path versus rainbow-path dichotomy, but th
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 5
-- Subsection 3 — HOT, version 1: Lemma 6
+- [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_a.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 5](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_b.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Lemma 6](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_c.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_c\`; development v1; composition vNone; stale=True)

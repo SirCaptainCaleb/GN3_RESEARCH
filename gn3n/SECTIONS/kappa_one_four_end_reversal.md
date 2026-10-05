@@ -6,7 +6,7 @@
 
 If a boundary 3-tournament has no spanning two-cover and two-cover deletion distance one, then for every minimum-hole deletion cover H-x=P|Q, the omitted vertex x reverses both the initial and terminal edge of both displayed tight paths.
 
-## Body
+## Cold composition
 
 Assume H has no spanning two-cover and kappa_2(H)=1. Let
 H-x=P|Q,
@@ -56,7 +56,9 @@ This conclusion uses only deletion-distance one, minimum-hole synchronization in
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/kappa_one_four_end_reversal_subsection_a.md) (\`kappa_one_four_end_reversal_subsection_a\`; development v1; composition vNone; stale=True)

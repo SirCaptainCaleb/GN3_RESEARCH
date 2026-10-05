@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Body
+## Cold composition
 
 The preceding lemmas produce one of the following:
 - a Hamiltonian support of order four, five, or six with two-coverable complement and displayed endpoint information;
@@ -21,7 +21,9 @@ A proof completes the longest-path argument.
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_the_remaining_lemma_subsection_a.md) (\`longest_paths_and_reversal_structure_the_remaining_lemma_subsection_a\`; development v1; composition vNone; stale=True)

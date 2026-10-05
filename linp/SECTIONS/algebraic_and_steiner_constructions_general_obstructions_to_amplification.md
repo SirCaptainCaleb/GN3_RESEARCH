@@ -1,6 +1,6 @@
 # General obstructions to amplification
 
-## Body
+## Cold composition
 
 Several natural ways to enlarge the exceptional small systems do not improve the asymptotic coefficient.
 
@@ -91,9 +91,11 @@ These observations rule out the direct higher-dimensional projective, affine, si
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Proposition 9
-- Subsection 3 — HOT, version 1: Proposition 10
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_a.md) (\`algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Proposition 9](../SUBSECTIONS/algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_b.md) (\`algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Proposition 10](../SUBSECTIONS/algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_c.md) (\`algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_c\`; development v1; composition vNone; stale=True)

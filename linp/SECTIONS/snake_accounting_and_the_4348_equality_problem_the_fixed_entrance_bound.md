@@ -1,6 +1,6 @@
 # The fixed-entrance bound
 
-## Body
+## Cold composition
 
 ## Lemma 1
 
@@ -102,8 +102,10 @@ Choose \(h\in T(v)\) of maximum edge rank \(q\). Every member of \(T(v)\) has ed
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: Lemma 1
-- Subsection 2 — HOT, version 1: Corollary 2
+- [Subsection 1 — Lemma 1](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Corollary 2](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_b.md) (\`snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_b\`; development v1; composition vNone; stale=True)

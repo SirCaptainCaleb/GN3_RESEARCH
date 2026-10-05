@@ -1,6 +1,6 @@
 # A three-way local alternative
 
-## Body
+## Cold composition
 
 Fix \(v\), put \(p=\phi(v)\), and let \(F\subseteq H_v\) contain \(k\) edges that meet the chosen maximum \(p\)-edge path \(P\) in exactly one off-\(v\) vertex.
 
@@ -66,8 +66,10 @@ Partitioning the vertices according to one alternative shows that one of the thr
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Theorem 10
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Theorem 10](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_b.md) (\`snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_b\`; development v1; composition vNone; stale=True)

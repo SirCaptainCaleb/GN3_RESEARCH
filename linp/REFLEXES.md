@@ -1,14 +1,34 @@
 # Research Reflexes
 
 
-These are recurring self-checks.
+# Research Reflexes
 
-**Theorem reflex.** Keep the theorem target separate from the current sufficient condition. Prefer work that can change the theorem, expose structure, or unlock a route. When a route stalls, return to the earliest step where needed strength was lost and identify the information discarded there. Use case analysis when the complete configuration space is proved uniformly finite over the theorem class.
+1. **Publish cheaply downward; compress deliberately upward.** If you are still discovering the mathematics, prefer a Subsection. If you are deciding what the manuscript should now say, compose.
 
-**Elevation reflex.** For every worthwhile result, identify the mechanism that proves it and seek its strongest natural formulation. Test which hypotheses can be weakened, useful generalizations, and stronger consequences. If the result belongs to a predecessor chain, try to apply it as early as possible and identify the minimum additional conditions needed there. When a result materially changes an Article, record that relationship in the active Section. After the Section has crystallized and is ready for synthesis, integrate it by adding or repositioning that Section in the Article sequence.
+2. **A stale composition is still a composition.** Stale means new uncompressed development exists beneath it. Read it, keep using it, and recompose when the synthesis is worth doing.
 
-**Crystallization reflex.** Treat the hot Subsection as the local manuscript unit under revision. Rewrite it as understanding improves. Crystallize at a natural boundary, when the local mathematical story is stable enough to stand on its own. A mature Section should be roughly section-sized before it is added to the ordered sequence of an existing or new Article.
+3. **Never concatenate upward.** Section and Article bodies are deliberate rewrites. Omission is allowed. Lower-level material remains preserved.
 
-**Correction reflex.** Classify a concrete failure as an audit failure, a refutation, or a supersession. Repair the canonical object in place when its statement or proof can be corrected. When an upstream result is false, mark or replace that result and update the direct consumers that materially depend on it. Publish corrections through the version-guarded staged workflow with their actual dependencies. Send the corrected current version to independent audit. Use repair_subsection() for a crystallized Subsection and the hot Subsection for current Section development. Correct Article mathematics in the owning Section; edit the Article sequence when the synthesis ordering or membership needs correction.
+4. **Branch locally without ceremony.** When a proof branch, lemma family, computation, or obstruction becomes locally distinct, create another Subsection. There is no single-hot-Subsection bottleneck.
 
-**Stewardship reflex.** Put mathematics in its canonical home. Record the premises used by every durable non-self-contained claim; declare [] for a genuinely self-contained claim. Integrate stronger results, supersede obsolete formulations, close or promote Brainstorms when their status is clear, and compress accumulated work when synthesis can replace clutter. Preserve genuinely different approaches when each remains mathematically live. Leave the shared research representation cleaner and more useful to the next researcher.
+5. **Rewrite the past when the mathematics changes.** Earlier Subsections, Sections, and Articles are revisable. Chronology belongs in history; exposition should reflect the best current understanding.
+
+6. **Brainstorm for genuinely loose ideation.** Do not keep a giant Brainstorm alive merely because the manuscript tree feels expensive. Once a route-shaped idea has a local home, give it a Subsection.
+
+7. **Toolkit is trans-route infrastructure.** A route-local lemma DAG belongs in its Section tree even if it is clever. Promote to Toolkit when the mathematics naturally transcends that route.
+
+8. **Containment is not dependency.** Article → Section → Subsection is organization. Mathematical dependencies are a separate graph and may point across the tree.
+
+9. **Development dependencies may be provisional.** Record them on the Subsection if useful; declare canonical dependencies when composing a substantive Section.
+
+10. **Recomposition is stewardship, not correction.** New results routinely force better statements, reordered proofs, or removal of obsolete exposition. That does not imply the old composition was erroneous.
+
+11. **Audit the canonical claim, not the notebook.** A Subsection can stay messy while a Section composition is audited. A new substantive Section composition gets a new mathematical version.
+
+12. **Read according to the task.** Continuing an Article means read its cold composition and all its Sections, then any changed Subsections flagged by staleness. Choosing among routes means scan every Article first.
+
+13. **Use exact source frontiers.** Before recomposing, inspect composition_status. It tells you what actually changed rather than asking you to remember.
+
+14. **Preserve failures.** Dead ends may disappear from parent prose but remain valuable development evidence below. Do not delete them merely because compression omitted them.
+
+15. **Stage large shared publications.** Use the staged-batch overlap review when many related writes must land together.

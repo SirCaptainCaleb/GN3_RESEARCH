@@ -1,75 +1,12 @@
 # Articles
 
-- snake_accounting_and_the_43_48_equality_problem.md — Article 1 — Snake accounting and the 43/48 equality problem
-  - Section: Introduction (`snake_accounting_and_the_4348_equality_problem_introduction`)
-  - Section: The fixed-entrance bound (`snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound`)
-  - Section: Path-relative terminal bounds (`snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds`)
-  - Section: A global identity (`snake_accounting_and_the_4348_equality_problem_a_global_identity`)
-  - Section: What near equality forces (`snake_accounting_and_the_4348_equality_problem_what_near_equality_forces`)
-  - Section: The interior-pair count (`snake_accounting_and_the_4348_equality_problem_the_interior_pair_count`)
-  - Section: Refinement of the selected ascending edges (`snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges`)
-  - Section: Fundamental cycles of the terminal-pair graph (`snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph`)
-  - Section: A three-way local alternative (`snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative`)
-  - Section: The remaining implication (`snake_accounting_and_the_4348_equality_problem_the_remaining_implication`)
-  - Section: Obstructions to simpler continuations (`snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations`)
-- ascending_edges_in_a_dense_subgraph.md — Article 2 — Ascending edges in a dense subgraph
-  - Section: Introduction (`ascending_edges_in_a_dense_subgraph_introduction`)
-  - Section: Ascending edges are the incidence defect (`ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect`)
-  - Section: Rank superlevels (`ascending_edges_in_a_dense_subgraph_rank_superlevels`)
-  - Section: Properly colored terminal-pair graphs (`ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs`)
-  - Section: A sufficient common-terminal bound (`ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound`)
-  - Section: Longest-path decomposition of the remaining ascending edges (`ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges`)
-  - Section: Directed rank growth (`ascending_edges_in_a_dense_subgraph_directed_rank_growth`)
-  - Section: The remaining problem (`ascending_edges_in_a_dense_subgraph_the_remaining_problem`)
-  - Section: Obstructions to simpler arguments (`ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments`)
-- terminal_pair_cycles_and_rotations.md — Article 3 — Terminal-pair cycles and rotations
-  - Section: Introduction (`terminal_pair_cycles_and_rotations_introduction`)
-  - Section: The special-edge inequality (`terminal_pair_cycles_and_rotations_the_special_edge_inequality`)
-  - Section: Cycle rank as a sufficient parameter (`terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter`)
-  - Section: A maximum-total-rank spanning forest (`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest`)
-  - Section: Rotating a longest path (`terminal_pair_cycles_and_rotations_rotating_a_longest_path`)
-  - Section: Entrance support is an unavoidable parameter (`terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter`)
-  - Section: A false strengthening (`terminal_pair_cycles_and_rotations_a_false_strengthening`)
-  - Section: The remaining theorem (`terminal_pair_cycles_and_rotations_the_remaining_theorem`)
-- incidence_rank_and_induced_paths_in_the_intersection_graph.md — Article 4 — Incidence rank and induced paths in the intersection graph
-  - Section: Introduction (`incidence_rank_and_induced_paths_in_the_intersection_graph_introduction`)
-  - Section: Linear paths and induced graph paths (`incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths`)
-  - Section: Realizability of the intersection graph (`incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph`)
-  - Section: The spectral identity (`incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity`)
-  - Section: A weighted rank inequality (`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality`)
-  - Section: Nullity and terminal-pair complexity (`incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity`)
-  - Section: What a counterexample must look like (`incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like`)
-  - Section: The remaining theorem (`incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem`)
-- induction_on_the_complement_of_a_longest_path.md — Article 5 — Induction on the complement of a longest path
-  - Section: Introduction (`induction_on_the_complement_of_a_longest_path_introduction`)
-  - Section: Inductive reduction (`induction_on_the_complement_of_a_longest_path_inductive_reduction`)
-  - Section: Why unordered pairs of \(X\) are the natural local resource (`induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource`)
-  - Section: Deletion and the change in extremal deficit (`induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit`)
-  - Section: A path-forest consequence of threshold deletion (`induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion`)
-  - Section: Vertices of degree above the minimum threshold (`induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold`)
-  - Section: The remaining inequality (`induction_on_the_complement_of_a_longest_path_the_remaining_inequality`)
-  - Section: Obstruction to the naive deletion argument (`induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument`)
-- algebraic_and_steiner_constructions.md — Article 6 — Algebraic and Steiner constructions
-  - Section: Introduction (`algebraic_and_steiner_constructions_introduction`)
-  - Section: The general one-third-scale construction (`algebraic_and_steiner_constructions_the_general_one_third_scale_construction`)
-  - Section: Binary projective systems (`algebraic_and_steiner_constructions_binary_projective_systems`)
-  - Section: Ternary affine systems (`algebraic_and_steiner_constructions_ternary_affine_systems`)
-  - Section: Dense Boolean systems near the projective case (`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case`)
-  - Section: Incidence-code obstruction and its limitation (`algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation`)
-  - Section: General obstructions to amplification (`algebraic_and_steiner_constructions_general_obstructions_to_amplification`)
-  - Section: The two-point-fibre problem (`algebraic_and_steiner_constructions_the_two_point_fibre_problem`)
-- transversal_designs_latin_blowups_and_products.md — Article 7 — Transversal designs, Latin blow-ups, and products
-  - Section: Introduction (`transversal_designs_latin_blow_ups_and_products_introduction`)
-  - Section: Rainbow graph paths lift to linear hypergraph paths (`transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths`)
-  - Section: Blow-ups of a fixed linear triple system (`transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system`)
-  - Section: Repeated lifts with a common color set (`transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set`)
-  - Section: Cartesian products (`transversal_designs_latin_blow_ups_and_products_cartesian_products`)
-  - Section: The remaining construction problems (`transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems`)
-- full_2_shadow_and_vertex_color_disjoint_rainbow_paths.md — Article 8 — The full 2-shadow and vertex-color-disjoint rainbow paths
-  - Section: Introduction (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction`)
-  - Section: Basic properties of the full shadow (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow`)
-  - Section: Path translation (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation`)
-  - Section: Separating graph vertices from colors (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors`)
-  - Section: A source-oriented representation (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation`)
-  - Section: Repeated colors are a genuine obstruction (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction`)
-  - Section: The remaining theorem (`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem`)
+Articles are top-level routes. Each file contains a manually written cold composition plus links to its contained Sections.
+
+- [Article 1 — Snake accounting and the 43/48 equality problem](snake_accounting_and_the_43_48_equality_problem.md) (\`snake_accounting_and_the_43_48_equality_problem\`) — composition v1; stale=False
+- [Article 2 — Ascending edges in a dense subgraph](ascending_edges_in_a_dense_subgraph.md) (\`ascending_edges_in_a_dense_subgraph\`) — composition v1; stale=False
+- [Article 3 — Terminal-pair cycles and rotations](terminal_pair_cycles_and_rotations.md) (\`terminal_pair_cycles_and_rotations\`) — composition v1; stale=False
+- [Article 4 — Incidence rank and induced paths in the intersection graph](incidence_rank_and_induced_paths_in_the_intersection_graph.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph\`) — composition v1; stale=False
+- [Article 5 — Induction on the complement of a longest path](induction_on_the_complement_of_a_longest_path.md) (\`induction_on_the_complement_of_a_longest_path\`) — composition v1; stale=False
+- [Article 6 — Algebraic and Steiner constructions](algebraic_and_steiner_constructions.md) (\`algebraic_and_steiner_constructions\`) — composition v1; stale=False
+- [Article 7 — Transversal designs, Latin blow-ups, and products](transversal_designs_latin_blowups_and_products.md) (\`transversal_designs_latin_blowups_and_products\`) — composition v1; stale=False
+- [Article 8 — The full 2-shadow and vertex-color-disjoint rainbow paths](full_2_shadow_and_vertex_color_disjoint_rainbow_paths.md) (\`full_2_shadow_and_vertex_color_disjoint_rainbow_paths\`) — composition v1; stale=False

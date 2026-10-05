@@ -1,86 +1,74 @@
 # Research API
 
-These RPCs are the worker-facing interface to live research state. The artifact is a snapshot; use the API whenever current state, exact versions, or publication matters.
+The artifact is a snapshot; these RPCs are the live worker interface.
 
-## Startup and navigation
+## Startup and reading
 
-### `boot()`
-Starts a research session against the current database revision. It returns the session ID required by mutation RPCs, startup notices, artifact metadata, and the snapshot revision. Call it once at startup; call it again after deliberately refreshing a stale artifact.
+### boot()
+Starts a session and returns the artifact snapshot/revision plus stewardship notices.
 
-### `search(query, filters := {})`
-Finds relevant Sections, Toolkit entries, Articles and other documents, and optionally Brainstorms by title and mathematical content. Use it for discovery, not as a substitute for reading a manuscript. Useful filters include `kind`, `toolkit_type`, `toolkit_limbo`, `article_id`, and `result_level`.
+### search(query, filters := {})
+Discovers Articles, Sections, Toolkit, documents, and optionally Brainstorms.
 
-### `read(ids, math_versions := {}, cursor := null, page_chars := 9000)`
-Returns exact durable content for named objects, one bounded page at a time. Reading an Article ID returns its prose document compiled from its ordered Sections with explicit Section boundaries; reading a Section ID returns that Section directly. Pass `next_cursor` back until `complete=true`; `math_versions` can request a retained prior mathematical version when available.
+### read(ids, math_versions := {}, cursor := null, page_chars := 9000)
+Reads exact durable content. Article and Section bodies are cold compositions. Stable Subsection IDs are also readable; a Subsection read shows both its cold composition and full development body.
 
-### `context(research_id)`
-Shows how one research object sits in the mathematical structure: direct premises and consumers, supersession links, referring Articles, and originating Brainstorm. Use it when following dependencies or deciding where new work belongs.
+### composition_status(node_type, node_id)
+Returns the current composition version, stale flag, and exact descendant sources that are new, removed, reordered, or further developed.
 
-### `changes(since_revision := 0, until_revision := null, limit := 100)`
-Checks what changed after a known artifact/database revision without shipping the changed documents themselves. It returns policy/document events plus current Article and Section versions. Use it for startup freshness checks. Continue from the artifact for matching manuscript versions; call `read()` for each manuscript whose live version is newer.
+### changes(since_revision := 0, until_revision := null, limit := 100)
+Returns compact live events plus current Article/Section composition states.
 
-### `brainstorms(active_only := true)`
-Returns the compact Brainstorm collection, including seeds, status, and promotion targets. Use it to scan orthogonal ideas cheaply without searching full manuscript text.
+## Development
 
-### `dictionary()`
-Returns the current canonical terminology and Review Queue in readable form. Use it before introducing or relying on project-specific terminology.
+### new_subsection(session_id, section_id, payload, expected_section_version)
+Creates a cheap local development container. Multiple Subsections may be developed in parallel.
 
-## Publishing research
+### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
+Edits any Subsection. Supply payload.subsection_id (or payload.id). Development edits do not rewrite the parent Section, bump its math version, or regenerate an Article. payload.dependencies are stored provisionally on the Subsection.
 
-### `save_research(session_id, payload, expected_version := null)`
-Creates or edits a Section or Toolkit object with optimistic version checking. Use `kind: "section"` for Sections. Substantive publications must explicitly declare their dependencies; nonsubstantive edits do not change the mathematical version. New Toolkit entries begin in Toolkit Limbo.
+### compose(session_id, node_type, node_id, payload, expected_version)
+The one recursive cold-composition operation for subsection, section, and article. payload.body is required and must be a deliberate rewrite. Optional source_usage maps source IDs to used, partial, consulted, omitted, or available. A substantive Section composition must explicitly declare dependencies.
 
-### `save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)`
-Edits the current hot Subsection of a Section. This is the normal path for route development. Substantive changes update the assembled Section, bump its mathematical version, and replace its declared dependencies.
+### save_research(session_id, payload, expected_version := null)
+Creates/edits Sections or Toolkit. New route-shaped work should normally develop in Subsections; Toolkit remains for broadly reusable mathematics.
 
-### `repair_subsection(session_id, section_id, subsection_no, payload, expected_section_version, expected_subsection_version)`
-Edits an older crystallized Subsection in place while preserving the Section manuscript structure. Use it when earlier text itself needs correction; ordinary continuing research belongs in the hot Subsection.
+### save_document(session_id, payload, expected_version := null)
+Creates/edits documents and Article containment. Article prose is never generated from section_ids. Supplying an Article body performs a manual composition.
 
-### `crystallize_subsection(session_id, section_id, expected_section_version, expected_subsection_version, next_title := '')`
-Freezes the current hot Subsection and opens a new empty hot Subsection. Use it when a coherent stage of a Section is complete and the next stage should begin separately.
-
-### `save_document(session_id, payload, expected_version := null)`
-Creates or edits project documents such as Articles and the overview, with version checking and audit bookkeeping. An Article is a prose document automatically composed from an ordered Section sequence. Set `section_ids` to integrate, remove, or reorder mature Sections; the generated Article body is refreshed from that sequence.
+repair_subsection and crystallize_subsection remain only as compatibility shims. Crystallize now creates a replaceable Subsection composition and another Subsection; it does not freeze mathematics.
 
 ## Brainstorms
 
-### `save_brainstorm(session_id, payload, expected_version := null)`
-Creates, edits, closes, or annotates a Brainstorm entry. Brainstorms are deliberately low-cost exploratory space and need not satisfy Toolkit or Section publication standards.
+### brainstorms(active_only := true)
+Lists loose exploratory work.
 
-### `promote_brainstorm(session_id, brainstorm_id, payload := {}, expected_version)`
-Atomically turns a developed Brainstorm into a Section and closes the Brainstorm with a link to the new Section. The promotion payload must declare the new Section's dependencies.
+### save_brainstorm(session_id, payload, expected_version := null)
+Creates/edits a Brainstorm.
 
-## Audits and chores
+### promote_brainstorm(session_id, brainstorm_id, payload := {}, expected_version)
+Promotes developed work into a Section while preserving the Brainstorm.
 
-### `request_audit(session_id, target_type, target_id, target_version)`
-Queues an independent audit of the current mathematical version of a research object or the current version of an Article. Use `article` as the target type for an Article.
+## Dependencies, audits, and stewardship
 
-### `claim_chore(session_id, kinds := {audit,maintenance})`
-Claims one available audit or bounded maintenance task using a lease. Audit claims enforce independence from the authors of the mathematical version being checked.
+### context(research_id)
+Shows canonical dependencies, consumers, supersessions, Article references, and origin.
 
-### `finish_chore(session_id, chore_id, outcome := {})`
-Completes a claimed chore. For audits it records pass/fail status and, when needed, whether optimistically retargeted consumer dependencies remain compatible.
+### request_audit(session_id, target_type, target_id, target_version)
+Queues an independent audit of a canonical Section/Toolkit math version or Article version.
+
+### claim_chore(session_id, kinds := {audit,recomposition,maintenance})
+Claims one stewardship task. Recomposition chores are triggered by stale source frontiers, not arbitrary size limits. Calling compose successfully resolves the matching recomposition chore.
+
+### finish_chore(session_id, chore_id, outcome := {})
+Completes audits and maintenance chores.
 
 ## Atomic publication batches
 
-Use these when one logical publication changes several shared objects together. The sequence is stage → review → commit.
+stage_batch_chunk → review_staged_batch → commit_staged_batch is the atomic path for large multi-object publication. Batch operations include new_subsection, save_subsection, compose, save_research, save_document, and Brainstorm operations.
 
-### `stage_batch_chunk(session_id, batch_id, part_no, chunk)`
-Stores part of a potentially large JSON publication batch. These are transport chunks for the batch payload, unrelated to mathematical Subsections. Re-staging a part invalidates any previous review.
+### artifact_help()
+Returns artifact recovery/rebuild information.
 
-### `review_staged_batch(session_id, batch_id)`
-Parses the staged operations and reports concurrent shared-state changes since the session baseline.
-
-### `commit_staged_batch(session_id, batch_id, overlap_checked)`
-Atomically executes a reviewed staged batch.
-
-### `discard_staged_batch(session_id, batch_id)`
-Abandons an uncommitted staged batch and its stored transport chunks.
-
-## Recovery and introspection
-
-### `artifact_help()`
-Returns the current artifact identifier and recovery instructions for rebuilding or locating the research-context artifact.
-
-### `help()`
-Returns a compact machine-readable overview of the API and conventions.
+### help()
+Returns a compact machine-readable summary.

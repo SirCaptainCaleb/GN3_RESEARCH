@@ -1,6 +1,6 @@
 # The remaining theorem
 
-## Body
+## Cold composition
 
 The previous lemmas reduce the argument to a quantitative rotation statement.
 
@@ -28,8 +28,10 @@ What is not presently proved is the global multiplicity bound required to sum th
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Open problem
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a.md) (\`terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b.md) (\`terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b\`; development v1; composition vNone; stale=True)

@@ -1,6 +1,6 @@
 # Appendix. Why two selected supports need not suffice in the forest case
 
-## Body
+## Cold composition
 
 The forest alternative cannot in general be completed by choosing two supports already present in the selected family.
 
@@ -20,7 +20,9 @@ Consequently, if branching remains after suppressing degree-two vertices on one 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case_subsection_a.md) (\`deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case_subsection_a\`; development v1; composition vNone; stale=True)

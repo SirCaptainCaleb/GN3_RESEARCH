@@ -1,6 +1,6 @@
 # Several deleted labels in one component
 
-## Body
+## Cold composition
 
 There is a second argument that does not follow one trajectory.
 
@@ -398,9 +398,11 @@ The closure uses the two endpoint failures on the fixed second support \(Q\). It
 - Math version: 10
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 2: (untitled)
-- Subsection 2 — crystallized, version 3: Support-graph shadow of neutral recurrence
-- Subsection 3 — HOT, version 10: Forest recurrence collapses to endpoint backtracking
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_a.md) (\`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_a\`; development v2; composition v1; stale=False)
+- [Subsection 2 — Support-graph shadow of neutral recurrence](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_b.md) (\`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_b\`; development v3; composition v1; stale=False)
+- [Subsection 3 — Forest recurrence collapses to endpoint backtracking](../SUBSECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_c.md) (\`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component_subsection_c\`; development v10; composition vNone; stale=True)

@@ -6,7 +6,7 @@
 
 All finite terminal local-witness configurations are two-coverable. The remaining unresolved step is global terminalization: promote local removal of the innermost witness edge in a balanced carrier to a new balanced carrier supported farther outward, or directly to a spanning two-cover.
 
-## Body
+## Cold composition
 
 ## Current closure frontier
 
@@ -105,7 +105,9 @@ This motivates the independent meta-conjecture recorded in [[meta_conjecture_gn3
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 3: Current closure frontier
+- [Subsection 1 — Current closure frontier](../SUBSECTIONS/terminalization_reachability_and_the_exact_frontier_subsection_a.md) (\`terminalization_reachability_and_the_exact_frontier_subsection_a\`; development v3; composition vNone; stale=True)

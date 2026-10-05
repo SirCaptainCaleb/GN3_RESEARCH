@@ -1,6 +1,6 @@
 # Equal-potential recurrence
 
-## Body
+## Cold composition
 
 Equal-\(\Phi\) moves occur at the equitable size profiles and in the one-vertex transfer case. They must therefore be treated directly.
 
@@ -51,7 +51,9 @@ These are the local recurrence residues.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_equal_potential_recurrence_subsection_a.md) (\`three_cover_repartitions_and_recurrence_equal_potential_recurrence_subsection_a\`; development v1; composition vNone; stale=True)

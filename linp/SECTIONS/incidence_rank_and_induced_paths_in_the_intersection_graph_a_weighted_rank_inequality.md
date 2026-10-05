@@ -1,6 +1,6 @@
 # A weighted rank inequality
 
-## Body
+## Cold composition
 
 ## Theorem 4
 
@@ -154,8 +154,10 @@ The low-degree range is completely settled.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: Theorem 4
-- Subsection 2 — HOT, version 1: Corollary 5
+- [Subsection 1 — Theorem 4](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Corollary 5](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b\`; development v1; composition vNone; stale=True)

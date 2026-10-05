@@ -6,7 +6,7 @@
 
 Under positive chamber deficiency, equality of occurring exact-root tail and head coordinate sets, and absence of a zero root, the central block has order two, three, or four in the explicitly classified configurations. Exterior blocks have order at most two; at most ten vertices determine the varying roots. With positive balance every root lies on a directed two- or three-cycle. The proof uses no minimum-counterexample hypothesis and includes direct two-cover constructions to exclude larger blocks. The remaining configurations and diagonal chambers still require conversion to a spanning two-cover.
 
-## Body
+## Cold composition
 
 ## From balanced recurrence to local reversal structure
 
@@ -800,11 +800,13 @@ and, ideally, force one with \(|X_\pi|=k\).
 - Math version: 17
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 5: From balanced recurrence to local reversal structure
-- Subsection 2 — crystallized, version 5: Recurrent-face and minimum-span compression
-- Subsection 3 — crystallized, version 3: Exact-deficiency sharpening: the one-hole four-support handoff
-- Subsection 4 — crystallized, version 6: Minimum-hole synchronization
-- Subsection 5 — HOT, version 4: Bounded central blocks and short cycles in recurrent exact-root faces
+- [Subsection 1 — From balanced recurrence to local reversal structure](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_a.md) (\`topological_recurrence_to_local_gn3_structure_subsection_a\`; development v5; composition v1; stale=False)
+- [Subsection 2 — Recurrent-face and minimum-span compression](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_b.md) (\`topological_recurrence_to_local_gn3_structure_subsection_b\`; development v5; composition v1; stale=False)
+- [Subsection 3 — Exact-deficiency sharpening: the one-hole four-support handoff](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_c.md) (\`topological_recurrence_to_local_gn3_structure_subsection_c\`; development v3; composition v1; stale=False)
+- [Subsection 4 — Minimum-hole synchronization](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_d.md) (\`topological_recurrence_to_local_gn3_structure_subsection_d\`; development v6; composition v1; stale=False)
+- [Subsection 5 — Bounded central blocks and short cycles in recurrent exact-root faces](../SUBSECTIONS/topological_recurrence_to_local_gn3_structure_subsection_e.md) (\`topological_recurrence_to_local_gn3_structure_subsection_e\`; development v4; composition vNone; stale=True)

@@ -6,7 +6,7 @@
 
 The tempting strengthening asking for a spanning cycle with at most two monochromatic transition components is false, even when a one-change spanning order and a two-cover exist. The correct cyclic reformulation uses a vertex cover of the blue-transition defect graph.
 
-## Body
+## Cold composition
 
 ## Why the two-component cycle target fails
 
@@ -59,9 +59,11 @@ This is the correct cyclic reformulation. It allows several separated blue runs 
 - Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: Why the two-component cycle target fails
-- Subsection 2 — crystallized, version 4: Balanced cuts force four components
-- Subsection 3 — HOT, version 3: The exact cyclic defect-graph formulation
+- [Subsection 1 — Why the two-component cycle target fails](../SUBSECTIONS/cyclic_strengthenings_and_balanced_cut_obstructions_subsection_a.md) (\`cyclic_strengthenings_and_balanced_cut_obstructions_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — Balanced cuts force four components](../SUBSECTIONS/cyclic_strengthenings_and_balanced_cut_obstructions_subsection_b.md) (\`cyclic_strengthenings_and_balanced_cut_obstructions_subsection_b\`; development v4; composition v1; stale=False)
+- [Subsection 3 — The exact cyclic defect-graph formulation](../SUBSECTIONS/cyclic_strengthenings_and_balanced_cut_obstructions_subsection_c.md) (\`cyclic_strengthenings_and_balanced_cut_obstructions_subsection_c\`; development v3; composition vNone; stale=True)

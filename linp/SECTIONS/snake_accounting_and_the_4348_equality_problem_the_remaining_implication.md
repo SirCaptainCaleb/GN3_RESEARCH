@@ -1,6 +1,6 @@
 # The remaining implication
 
-## Body
+## Cold composition
 
 The proof of a strict improvement over \(43/48\) now reduces to a global multiplicity statement.
 
@@ -38,8 +38,10 @@ The remaining difficulty is therefore global reuse of the maximum paths, termina
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Open problem
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b.md) (\`snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b\`; development v1; composition vNone; stale=True)

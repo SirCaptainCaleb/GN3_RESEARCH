@@ -1,6 +1,6 @@
 # Reversal of a displayed end edge
 
-## Body
+## Cold composition
 
 Let
 \[
@@ -31,7 +31,9 @@ Thus a minimum of \(\Phi\) leaves only the one-vertex transfer.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge_subsection_a\`; development v1; composition vNone; stale=True)

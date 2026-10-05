@@ -1,6 +1,6 @@
 # A maximum-total-rank spanning forest
 
-## Body
+## Cold composition
 
 Give each graph edge \(uv\in E(T)\) the edge rank of its parent hyperedge. In each component of \(T\), choose a spanning tree of maximum total weight; let \(F\) be the resulting spanning forest.
 
@@ -42,9 +42,11 @@ This is the structural content of cycle rank. A cycle is not merely an extra gra
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 4
-- Subsection 3 — HOT, version 1: Lemma 5
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a.md) (\`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 4](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b.md) (\`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Lemma 5](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c.md) (\`terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c\`; development v1; composition vNone; stale=True)

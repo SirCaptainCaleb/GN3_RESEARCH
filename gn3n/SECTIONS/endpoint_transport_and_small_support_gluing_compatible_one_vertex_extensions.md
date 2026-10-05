@@ -1,6 +1,6 @@
 # Compatible one-vertex extensions
 
-## Body
+## Cold composition
 
 Let \(K\) be a vertex set and let \(x,y\notin K\). Suppose \(K\cup\{x\}\) and \(K\cup\{y\}\) have Hamilton paths that induce the same order
 \[
@@ -51,7 +51,9 @@ is a Hamilton path. This gives (3). The common terminal gap is symmetric. \(\squ
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions_subsection_a\`; development v1; composition vNone; stale=True)

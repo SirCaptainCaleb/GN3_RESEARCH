@@ -1,6 +1,6 @@
 # The two-point-fibre problem
 
-## Body
+## Cold composition
 
 The most economical remaining Boolean model has one distinguished point \(\infty\) and, over each point \(x\) of a binary projective quotient, a pair
 \[
@@ -36,8 +36,10 @@ Any further construction based on dense Steiner or additive systems must use a g
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Open problem
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a.md) (\`algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b.md) (\`algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b\`; development v1; composition vNone; stale=True)

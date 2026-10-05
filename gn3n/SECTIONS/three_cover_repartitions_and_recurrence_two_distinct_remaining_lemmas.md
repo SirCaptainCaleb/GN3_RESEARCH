@@ -1,6 +1,6 @@
 # Two distinct remaining lemmas
 
-## Body
+## Cold composition
 
 The one-trajectory and many-root arguments require different conclusions.
 
@@ -22,7 +22,9 @@ These statements are genuinely different. Lemma A orients one trajectory. Lemma 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas_subsection_a.md) (\`three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas_subsection_a\`; development v1; composition vNone; stale=True)

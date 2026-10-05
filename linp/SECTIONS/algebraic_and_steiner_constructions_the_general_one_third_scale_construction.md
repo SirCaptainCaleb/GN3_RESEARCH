@@ -1,6 +1,6 @@
 # The general one-third-scale construction
 
-## Body
+## Cold composition
 
 ## Proposition 1
 
@@ -64,7 +64,9 @@ To improve the leading coefficient, one needs components with density near or ab
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: Proposition 1
+- [Subsection 1 — Proposition 1](../SUBSECTIONS/algebraic_and_steiner_constructions_the_general_one_third_scale_construction_subsection_a.md) (\`algebraic_and_steiner_constructions_the_general_one_third_scale_construction_subsection_a\`; development v1; composition vNone; stale=True)

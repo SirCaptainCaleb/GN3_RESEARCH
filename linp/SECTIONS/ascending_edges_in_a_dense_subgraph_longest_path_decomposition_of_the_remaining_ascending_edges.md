@@ -1,6 +1,6 @@
 # Longest-path decomposition of the remaining ascending edges
 
-## Body
+## Cold composition
 
 Choose for every vertex \(v\) a maximum path
 \[
@@ -82,9 +82,11 @@ Lemmas 7 and 8 reduce the unresolved ascending mass to two phenomena:
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 7
-- Subsection 3 — HOT, version 1: Lemma 8
+- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_a.md) (\`ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 7](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_b.md) (\`ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Lemma 8](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_c.md) (\`ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_c\`; development v1; composition vNone; stale=True)

@@ -1,6 +1,6 @@
 # Appendix. Two invalid shortcuts
 
-## Body
+## Cold composition
 
 For an ordered triple \((u,v,z)\), the boundary-reversed triple is
 \[
@@ -20,7 +20,9 @@ These observations invalidate the corresponding shortcut arguments but do not af
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts_subsection_a.md) (\`longest_paths_and_reversal_structure_appendix_two_invalid_shortcuts_subsection_a\`; development v1; composition vNone; stale=True)

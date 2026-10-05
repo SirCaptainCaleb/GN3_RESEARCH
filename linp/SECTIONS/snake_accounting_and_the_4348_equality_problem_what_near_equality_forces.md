@@ -1,6 +1,6 @@
 # What near equality forces
 
-## Body
+## Cold composition
 
 Assume now that
 \[
@@ -79,8 +79,10 @@ which proves (22). Since \(q\le p-1\), (5) gives (23). ∎
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Lemma 7
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 7](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b.md) (\`snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b\`; development v1; composition vNone; stale=True)

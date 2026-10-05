@@ -1,6 +1,6 @@
 # Canonical references
 
-## Body
+## Cold composition
 
 - [[mincex01]] — Minimum-counterexample calculus
 
@@ -12,7 +12,9 @@
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_canonical_references_subsection_a.md) (\`deletion_covers_and_the_support_graph_canonical_references_subsection_a\`; development v1; composition vNone; stale=True)

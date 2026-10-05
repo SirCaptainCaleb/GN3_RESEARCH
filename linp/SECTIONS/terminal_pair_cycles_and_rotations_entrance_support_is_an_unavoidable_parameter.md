@@ -1,6 +1,6 @@
 # Entrance support is an unavoidable parameter
 
-## Body
+## Cold composition
 
 Cycle rank alone cannot describe all linear dependencies. Let \(h\) be the number of distinct unique entrances of nonspecial edges, and let \(N_{\mathrm{ns}}\) be the real vertex-edge incidence matrix restricted to nonspecial edges.
 
@@ -59,8 +59,10 @@ Thus the natural global quantity is \(\beta(T)+h\), not \(\beta(T)\) alone.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Proposition 7
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_a.md) (\`terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Proposition 7](../SUBSECTIONS/terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_b.md) (\`terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_b\`; development v1; composition vNone; stale=True)

@@ -1,6 +1,6 @@
 # Defect span three is a deletion-cover ordering
 
-## Body
+## Cold composition
 
 The defect span of \(\pi\) is \(0\) if there is no defect center and otherwise is
 \[
@@ -45,7 +45,9 @@ Thus every minimum-span ordering is a deletion-cover ordering whose central part
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering_subsection_a.md) (\`defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering_subsection_a\`; development v1; composition vNone; stale=True)

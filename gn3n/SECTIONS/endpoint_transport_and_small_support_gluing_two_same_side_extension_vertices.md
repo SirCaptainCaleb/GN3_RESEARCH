@@ -1,6 +1,6 @@
 # Two same-side extension vertices
 
-## Body
+## Cold composition
 
 Suppose \(x,y\) can occur only at the same endpoint side of the relevant augmented supports, and let
 \[
@@ -33,7 +33,9 @@ Each form is a bounded common-core configuration with a two-coverable complement
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices_subsection_a\`; development v1; composition vNone; stale=True)

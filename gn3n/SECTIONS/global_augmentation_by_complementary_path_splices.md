@@ -6,7 +6,7 @@
 
 Two complementary exchanges of path pieces absorb a deleted vertex when their surrounding joins are tight; boundary reversal supplies one of their opposite central orientations, at arbitrary component orders.
 
-## Body
+## Cold composition
 
 Let \(H\) be a finite boundary \(3\)-tournament. All path orders in this Section are displayed; concatenation preserves the order inside every displayed block.
 
@@ -259,7 +259,9 @@ The unresolved global augmentation problem is therefore to supplement Lemma 5 wi
 - Math version: 6
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 6: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/global_augmentation_by_complementary_path_splices_subsection_a.md) (\`global_augmentation_by_complementary_path_splices_subsection_a\`; development v6; composition vNone; stale=True)

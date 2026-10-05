@@ -1,6 +1,6 @@
 # A Hamiltonian five-set beside a long path
 
-## Body
+## Cold composition
 
 Let
 \[
@@ -59,7 +59,9 @@ Thus the order-five support is no longer an independent terminal interface.
 - Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 3: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path_subsection_a.md) (\`defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path_subsection_a\`; development v3; composition vNone; stale=True)

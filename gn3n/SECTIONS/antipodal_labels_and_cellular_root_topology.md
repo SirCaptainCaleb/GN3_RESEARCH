@@ -6,7 +6,7 @@
 
 Naive Tucker and rook-label arguments fail on the permutahedron graph, but their failure identifies the correct cellular objects: commuting squares, braid hexagons, and an odd extreme-switch root map.
 
-## Body
+## Cold composition
 
 ## From rook labels to cellular roots
 
@@ -188,8 +188,10 @@ This theorem supplies the higher-dimensional consistency missing from the earlie
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: From rook labels to cellular roots
-- Subsection 2 — HOT, version 2: Ky Fan forces a hole-sweeping face
+- [Subsection 1 — From rook labels to cellular roots](../SUBSECTIONS/antipodal_labels_and_cellular_root_topology_subsection_a.md) (\`antipodal_labels_and_cellular_root_topology_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — Ky Fan forces a hole-sweeping face](../SUBSECTIONS/antipodal_labels_and_cellular_root_topology_subsection_b.md) (\`antipodal_labels_and_cellular_root_topology_subsection_b\`; development v2; composition vNone; stale=True)

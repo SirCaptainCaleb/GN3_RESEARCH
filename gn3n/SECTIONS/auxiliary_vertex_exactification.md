@@ -6,7 +6,7 @@
 
 After adjoining a vertex r with h(u,v,r)=1 for all distinct u,v, directed one-change spanning orders in the extension are in two-to-one correspondence with two-covers of the original tournament. The switch is automatically forced adjacent to r, and the resulting geodesic target is exactly equivalent to the grand conjecture.
 
-## Body
+## Cold composition
 
 ## The exact one-change extension
 
@@ -91,10 +91,12 @@ The local tournament at \(r\) may be chosen arbitrarily, for example transitivel
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: The exact one-change extension
-- Subsection 2 — crystallized, version 4: The switch and common endpoint normalize to r
-- Subsection 3 — crystallized, version 4: Exact positive factorization
-- Subsection 4 — HOT, version 3: The exact geodesic form of the grand conjecture
+- [Subsection 1 — The exact one-change extension](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_a.md) (\`auxiliary_vertex_exactification_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — The switch and common endpoint normalize to r](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_b.md) (\`auxiliary_vertex_exactification_subsection_b\`; development v4; composition v1; stale=False)
+- [Subsection 3 — Exact positive factorization](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_c.md) (\`auxiliary_vertex_exactification_subsection_c\`; development v4; composition v1; stale=False)
+- [Subsection 4 — The exact geodesic form of the grand conjecture](../SUBSECTIONS/auxiliary_vertex_exactification_subsection_d.md) (\`auxiliary_vertex_exactification_subsection_d\`; development v3; composition vNone; stale=True)

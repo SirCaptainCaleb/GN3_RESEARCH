@@ -1,38 +1,123 @@
 # Research guide
 
 
-The canonical research surface has four mathematical roles: Articles, Sections, Toolkit, and Brainstorms.
+# Research Guide — recursive development and composition
 
-Articles are prose documents automatically composed from ordered sequences of mature Sections and form the global proof map. Sections are evolving route-specific proof developments assembled from ordered Subsections. Toolkit entries are independently reusable mathematics. Brainstorms are cheap persistent exploratory seeds.
+## Central rule
 
-Route-specific proof development belongs in a Section. Continue an existing route in its hot Subsection; when a Brainstorm develops into a coherent proof route, create a Section for it. Articles record global synthesis by ordering mature, crystallized Sections. Update an Article sequence when Sections are ready for synthesis, and edit its document metadata when the synthesis needs restructuring. Develop and prove route-specific mathematics in the active Section, including its named lemmas, propositions, theorems, case analyses, and intermediate reductions. Keep the connected argument together in the manuscript.
+**Publish cheaply downward; compress deliberately upward.**
 
-Toolkit is a selective collection of broadly reusable mathematical utilities: theorems, constructions, obstructions, techniques, inequalities, and transformations. New Toolkit entries begin in Toolkit Limbo. Limbo records that broad extensibility has not yet been independently reviewed; it does not indicate uncertainty about mathematical correctness and does not discourage use. Extract a result when its natural statement and proof are reasonably independent of the originating route and there is a concrete application in a different Section or a clear mathematical reason to expect use across distinct arguments. State the reusable mechanism in ordinary mathematical hypotheses, with a self-contained statement and explicit proof dependencies. A researcher working outside the originating argument should be able to recognize when to apply it.
+Research development is noisy, branching, revisory, and often discovers facts that change earlier exposition. The durable organizational tree is Article → Section → Subsection, but the tree is not a publication conveyor belt. A parent body is a selective cold composition, never a concatenation of its children.
 
-Before extraction, identify the distinct application or explain briefly what makes the mechanism broadly useful. Assess reuse across mathematical arguments: a chain of local lemmas feeding the same Section is one route of use. When a result is nevertheless published to Toolkit, leave it in Toolkit Limbo until an independent researcher examines its extensibility. Promote it by a nonsubstantive save_research edit setting toolkit_limbo=false. Ordinary substantive edits preserve the existing limbo status. Extract the reusable core at a useful mathematical scale; combine closely related cases and corollaries into a coherent utility, and strengthen an existing Toolkit entry when that is their natural home.
+Every manuscript node has two conceptual states:
 
-When reviewing Toolkit, integrate route-internal developments into their Sections, preserve their proofs and dependencies, update consumers, and retire the redundant standalone entries through the normal archival or supersession workflow.
+- **Development (hot):** research that exists beneath or inside the node but has not yet been incorporated into its current composition. It may be speculative, redundant, mutually inconsistent, or much larger than the prose that eventually survives.
+- **Composition (cold):** the current manually rewritten canonical rendering. It is intentionally selective and lossy. It may later be replaced.
 
-Sections crystallize in ordered publication-style Subsections. Exactly one hot Subsection receives ordinary mathematical development. Rewrite that Subsection as understanding improves. Crystallize it when the local development reaches a natural boundary, then continue in the next hot Subsection. Older Subsections remain stable; use repair_subsection() when a crystallized Subsection itself needs correction. The assembled Section is the authoritative readable manuscript.
+A stale composition is not broken. It means only that descendant development has changed since the composition's recorded source frontier.
 
-Write mathematical manuscripts at publication quality. State hypotheses explicitly, quantify variables and parameters, distinguish existence from construction, record dependencies and exceptional cases, use standard terminology, and make each inference checkable from the preceding statements. Mathematical manuscripts should contain definitions, claims, constructions, reductions, proofs, counterexamples, and obstructions. Operational instructions belong in the Guide.
+## The four research surfaces
 
-The project dictionary controls technical vocabulary. A term in the review queue is unavailable for use in mathematical manuscripts, titles, summaries, Brainstorms, or object names. A worker who wants to use such a term must first give it a precise project-wide definition and move it to the canonical section of the dictionary; a local or ad hoc definition does not authorize its use. If no stable project-wide definition is appropriate, move the term to the prohibited section and rewrite existing uses. Prohibited terms likewise do not belong in manuscripts, titles, summaries, Brainstorms, or object names, except in the dictionary entry that records the prohibition.
+### Brainstorms
 
-The dictionary should stay small, active, and atomic. Canonicalize a term only when it names a genuinely recurring mathematical notion whose meaning is not already determined by ordinary language and existing canonical atoms. Do not separately define transparent compounds: if the atoms are already defined, their ordinary composition carries the meaning unless the compound introduces additional mathematical content. Removing a canonical entry does not prohibit the phrase; it simply returns that phrase to ordinary compositional use. Periodically remove canonical entries that no longer occur in the live corpus, allowing for notation, inflection, hyphenation, and parameterized instances. Prefer standard mathematical terminology over project-local jargon, and do not create synonyms or aliases unless an actually occurring legacy form needs normalization. The review queue is temporary: every queued term should be resolved promptly by either giving it a precise project-wide definition and moving it to canonical, or moving it to prohibited when the term itself is undesirable.
+Brainstorms are the chalkboard. Use them for orthogonal ideation, unclear placement, speculative analogies, and “throw spaghetti at the wall” exploration.
 
-A Subsection should be a coherent local stage of the eventual proof exposition. It may contain several lemmas, constructions, cases, reductions, and their connecting argument. A mature Section should be roughly section-sized: a coherent proof development containing several Subsections. Add a mature Section to the ordered sequence of an existing or new Article when its mathematics is ready for global synthesis.
+A Brainstorm should not become a manuscript merely because it is convenient to keep appending. Once an idea has a recognizable route and local mathematical neighborhood, move continuing development into a Section/Subsection. Closing or promoting a Brainstorm never requires deleting its source history.
 
-Startup uses the current artifact as the working research context. Read OVERVIEW.md, GUIDE.md, REFLEXES.md, DICTIONARY.md, API.md, and TOOLKIT/README.md, then ARTICLES/README.md. If the prompt asks you to continue an existing Article, read that Article in its entirety, including all of its Sections, before continuing it. Otherwise, read every listed Article in its entirety before choosing which Article or route to work on.
+### Subsections
 
-Mathematical research uses the project artifact, permitted project-state reads during startup and publication synchronization, and mathematical reasoning. Computation, brute-force search, numerical experimentation, code, CAS/SAT/SMT tools, and external web search are outside the research method for this project.
+Subsections are the cheapest manuscript-tree development surface. Create them freely for a local lemma, branch, computation, obstruction, repair, alternative proof, or coherent packet of work.
 
-After choosing a route, call changes() once with the artifact snapshot revision. Compare the chosen Article and Section versions with MANIFEST.json. Continue directly from the artifact for every matching version. For each manuscript whose live version is newer, read the current manuscript completely with read(), following next_cursor until complete=true, and use that refreshed manuscript as the local working copy.
+There is no exactly-one-hot rule and no permanence transition. Multiple Subsections of one Section may be developed in parallel. Older Subsections may be edited when later mathematics changes them.
 
-Work locally from this refreshed context until substantial progress is ready to publish.
+The Subsection body is development material. development_version changes when that material changes. A Subsection may also have a cold composition, created with the same recursive compose operation used above it.
 
-Every substantive durable research publication declares its actual dependencies, using [] when genuinely self-contained. Assemble related results into one coherent staged batch. Large submissions may be uploaded in numbered chunks. Before commit, review concurrent findings with review_staged_batch(...), resolve overlap, and commit atomically with commit_staged_batch(...). If shared research changes after review, review the batch again.
+Use new_subsection when a development deserves its own local branch. Use save_subsection to continue any existing Subsection by stable subsection_id.
 
-After publication, reread the Section you are continuing. Reread an Article when its version changed or the route's global relationship changed materially.
+### Sections
 
-Use [[research_id]] inside Section manuscripts for parseable references to canonical mathematics.
+A Section is a coherent research region. Its body is a manual cold composition of useful development from its Subsections. It is not regenerated when a Subsection changes.
+
+Ordinary Subsection development does **not** bump the Section mathematical version, invalidate a Section audit, or rewrite canonical dependencies. This keeps exploration cheap.
+
+When the local region has cohered enough to merit canonical rewriting, use compose with node_type section. A substantive Section composition explicitly declares its canonical dependencies. It may use some Subsections heavily, lightly, or not at all. All omitted development remains preserved below.
+
+Sections may remain temporarily uncontained while their Article-level route is unclear. That is preferable to abusing Brainstorms or Toolkit as a holding pen.
+
+### Articles
+
+Articles are top-level routes or major approaches. Multiple Articles are expected when the research has genuine competing or complementary routes.
+
+An Article body is a manually authored cold composition. It is **never** generated by concatenating Sections. Article containment supplies organization and provenance; Article composition supplies the readable route.
+
+A Section belongs to at most one Article. Cross-route mathematical reuse belongs in references/dependencies or, when genuinely reusable beyond the originating route, Toolkit.
+
+## Recursive composition
+
+compose(session_id, node_type, node_id, payload, expected_version) is the shared compression mechanism for subsection, section, and article.
+
+The payload requires an explicit body: composition is a rewrite, not an automatic roll-up. source_usage may annotate source IDs as used, partial, consulted, or omitted; unspecified descendants are recorded as available. These annotations document editorial selection but do not delete anything.
+
+Each composition records:
+
+- its own composition version;
+- the exact descendant/version frontier visible at composition time;
+- the database revision through which it was composed;
+- optional source notes and source-usage annotations.
+
+composition_status(node_type, node_id) compares that frontier with current descendants. It reports new, removed, reordered, or further-developed sources. Staleness follows development, not mere prose age.
+
+For a substantive Section composition, declare dependencies, using [] if genuinely independent. Section canonical dependency edges change at composition time, not on every exploratory Subsection edit.
+
+## Recomposition
+
+Recomposition is normal research stewardship, not an audit correction.
+
+When development changes beneath an existing composition, the node becomes stale and a single recomposition chore may be maintained. More development does not create an ever-growing pile of duplicate chores.
+
+Claiming a recomposition chore means: read the current cold composition; inspect changed_sources; read the relevant development; then rewrite selectively with compose. Omission is allowed; do not mechanically concatenate descendants. Successful composition resolves the stale chore automatically.
+
+## Dependencies and references
+
+Containment is a tree. Mathematical dependency is a graph. Keep them orthogonal.
+
+Canonical dependencies connect Sections and Toolkit objects. Subsections may carry provisional declared_dependencies while research is still developing; these do not mutate the canonical DAG until the Section is recomposed.
+
+Use Toolkit only when the result's natural statement is reusable outside its originating route. Route-local lemma chains belong in Subsections/Sections, not Toolkit Limbo.
+
+Cross-references may point backward, sideways, or upward. Research chronology does not constrain exposition order.
+
+## Audits
+
+Audits validate a current canonical mathematical version. Development edits below a Section do not invalidate its cold composition audit merely because there is new material to consider.
+
+A substantive Section recomposition creates a new mathematical version and requires a new audit if audited certainty is desired. Premise changes retarget live consumers optimistically until compatibility is checked.
+
+Recomposition and audit answer different questions:
+
+- **Recomposition:** what should the canonical exposition say now?
+- **Audit:** is this canonical mathematical version correct?
+
+Never treat new mathematics that changes exposition as an “audit repair.”
+
+## Staged publication and concurrency
+
+For substantial multi-object publication, use stage_batch_chunk, review_staged_batch, and commit_staged_batch. Staged batches support new_subsection, save_subsection, compose, and the existing research/document/Brainstorm operations.
+
+Review concurrent changes for mathematical overlap before commit. Optimistic version guards remain authoritative.
+
+## Startup and reading
+
+Start with boot and the artifact named there. Read the project BOOT.md, then Overview, this Guide, Reflexes, Dictionary, API, and Toolkit index.
+
+If the prompt explicitly continues an existing Article, read that Article's cold composition and **all of its Sections** before continuing. For stale nodes, inspect composition_status and read the changed Subsections as well. If the prompt does not select an Article, read every Article cold composition before choosing a route; then descend into the chosen Article's Sections.
+
+read accepts Article, Section, Toolkit, Brainstorm, and stable Subsection IDs. A Section read returns its cold composition with a child-development index. A Subsection read returns its cold composition, if any, plus its full development body.
+
+The artifact is a snapshot. Use changes and exact read calls when the live revision has advanced.
+
+## Terminology and provenance
+
+Use the project Dictionary before introducing project-specific terms. Keep statements publication-style and use standard mathematical vocabulary when it exists.
+
+Historical development is evidence, not clutter to erase. Cold composition may be lossy; storage must not be.

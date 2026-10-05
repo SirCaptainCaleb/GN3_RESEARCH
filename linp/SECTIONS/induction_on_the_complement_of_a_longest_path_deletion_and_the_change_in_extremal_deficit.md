@@ -1,6 +1,6 @@
 # Deletion and the change in extremal deficit
 
-## Body
+## Cold composition
 
 The third term \(D_Y\) cannot be treated as a harmless remainder. It records genuine missing edges outside the longest path.
 
@@ -95,9 +95,11 @@ Thus deletion of a low-degree vertex outside the witness path produces a specifi
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 2
-- Subsection 3 — HOT, version 1: Lemma 3
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 2](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_b.md) (\`induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Lemma 3](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_c.md) (\`induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_c\`; development v1; composition vNone; stale=True)

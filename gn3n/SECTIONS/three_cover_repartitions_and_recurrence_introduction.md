@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\).
 
@@ -31,7 +31,9 @@ is a vertex of \(\mathcal R(H)\).
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_introduction_subsection_a.md) (\`three_cover_repartitions_and_recurrence_introduction_subsection_a\`; development v1; composition vNone; stale=True)

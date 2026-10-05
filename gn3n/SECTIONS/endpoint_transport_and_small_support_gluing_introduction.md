@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A three-cover
 \[
@@ -22,7 +22,9 @@ This argument begins with a Hamiltonian support attached to a displayed endpoint
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_introduction_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_introduction_subsection_a\`; development v1; composition vNone; stale=True)

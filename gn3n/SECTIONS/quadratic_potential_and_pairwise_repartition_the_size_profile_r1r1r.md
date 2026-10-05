@@ -1,6 +1,6 @@
 # The size profile \(\{r+1,r+1,r\}\)
 
-## Body
+## Cold composition
 
 **Lemma 4.** Suppose a minimum-\(\Phi\) level in one component of \(\mathcal R(H)\) has size multiset \(\{r+1,r+1,r\}\), \(r\ge3\). Assume that an equal-\(\Phi\) pairwise repartition never gives a two-cover, a strict decrease of \(\Phi\), an order disagreement, or a Hamiltonian support of order four or five whose complement has path-cover number two. Then there are disjoint tight paths \(A,B,C\), each of order \(r\), and distinct vertices \(x,y\) such that both \(x\) and \(y\) extend the same end of each of \(A,B,C\).
 
@@ -37,7 +37,9 @@ Now let \(T\) be a two-cover of \(A\cup B\cup C\). If there is an order disagree
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r_subsection_a\`; development v1; composition vNone; stale=True)

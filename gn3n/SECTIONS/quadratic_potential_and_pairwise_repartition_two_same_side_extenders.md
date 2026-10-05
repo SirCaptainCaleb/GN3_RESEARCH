@@ -1,6 +1,6 @@
 # Two same-side extenders
 
-## Body
+## Cold composition
 
 Let \(x,y\) be two labels that can occur only at the same side of the relevant core paths, and let \(R\mid S\) be a two-cover of \(H-\{x,y\}\). Form a bipartite graph with left class \(\{x,y\}\) and right class \(\{R,S\}\), joining a label to a path when adjoining the label at the prescribed end gives a Hamiltonian path.
 
@@ -22,7 +22,9 @@ Their six-vertex union has three relevant possibilities: it is Hamiltonian; two 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_two_same_side_extenders_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_two_same_side_extenders_subsection_a\`; development v1; composition vNone; stale=True)

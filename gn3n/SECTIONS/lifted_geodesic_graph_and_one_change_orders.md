@@ -6,7 +6,7 @@
 
 A fixed antipodal graph Γ_n remembers the previous and next cube directions. Its pole geodesics are exactly spanning vertex orders, and their edge-color words are the boundary-tournament triple-status words with complementary endpoint colors.
 
-## Body
+## Cold composition
 
 ## The memory-lift graph Γ_n
 
@@ -81,10 +81,12 @@ This is the key constraint behind the analogy with antipodal path theorems. A th
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: The memory-lift graph Γ_n
-- Subsection 2 — crystallized, version 4: Antipodal involution and cube projection
-- Subsection 3 — crystallized, version 4: Pole geodesics are spanning orders
-- Subsection 4 — HOT, version 3: Why geodesicity is essential
+- [Subsection 1 — The memory-lift graph Γ_n](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_a.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — Antipodal involution and cube projection](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_b.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_b\`; development v4; composition v1; stale=False)
+- [Subsection 3 — Pole geodesics are spanning orders](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_c.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_c\`; development v4; composition v1; stale=False)
+- [Subsection 4 — Why geodesicity is essential](../SUBSECTIONS/lifted_geodesic_graph_and_one_change_orders_subsection_d.md) (\`lifted_geodesic_graph_and_one_change_orders_subsection_d\`; development v3; composition vNone; stale=True)

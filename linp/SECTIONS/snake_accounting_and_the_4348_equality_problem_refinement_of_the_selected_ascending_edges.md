@@ -1,6 +1,6 @@
 # Refinement of the selected ascending edges
 
-## Body
+## Cold composition
 
 The identity also controls the intersections at the unique entrance and at the two terminals.
 
@@ -52,7 +52,9 @@ The point of (32)–(35) is that they retain the \(1/8\)-scale family while remo
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a\`; development v1; composition vNone; stale=True)

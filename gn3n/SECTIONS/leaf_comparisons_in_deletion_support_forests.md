@@ -6,7 +6,7 @@
 
 Let H have path-cover number greater than two and choose a two-cover of H-y for every vertex y. If the selected support graph is a tree, then for every leaf support P with neighbor Q, all but at most one label y in Q have a selected cover F_y containing a consecutive pair joining P to Q minus y. Thus at least one endpoint of Q forces this adjacency. In a support forest the same bound holds for labels whose selected edges lie in the leaf's tree component; if Q contains a label from another component, there are no exceptions among those internal labels. No balancing assumption is needed.
 
-## Body
+## Cold composition
 
 ## Leaf comparisons in deletion-support forests
 
@@ -716,7 +716,9 @@ Therefore a disconnected support forest has no independent “both endpoints esc
 - Math version: 14
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 18: Leaf comparisons in deletion-support forests
+- [Subsection 1 — Leaf comparisons in deletion-support forests](../SUBSECTIONS/leaf_comparisons_in_deletion_support_forests_subsection_a.md) (\`leaf_comparisons_in_deletion_support_forests_subsection_a\`; development v18; composition vNone; stale=True)

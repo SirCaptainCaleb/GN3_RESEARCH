@@ -1,6 +1,6 @@
 # What a counterexample must look like
 
-## Body
+## Cold composition
 
 Several simple classes cannot contain a counterexample to (1).
 
@@ -28,7 +28,9 @@ is false, and nonspecial incidence columns need not be independent.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a\`; development v1; composition vNone; stale=True)

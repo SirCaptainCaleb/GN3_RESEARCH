@@ -1,5 +1,13 @@
 # Article III — defect lines and spanning-order compression
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 1083
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -2589,3 +2597,16 @@ It does not imply cyclic rotation of an ordered triple and does not reverse a ti
 - [[common_endpoint_constraints_fivewindow_counterexample01]] — Common endpoint constraints do not force Hamiltonian five-vertex windows
 - [[mincex01]] — Minimum-counterexample calculus
 - [[minimum_counterexample_has_a_genuine_reversing_tight_triple]] — Every minimum counterexample has a genuine reversing tight triple
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/defect_lines_and_spanning_order_compression_introduction.md) (\`defect_lines_and_spanning_order_compression_introduction\`; composition v1; stale=False)
+- 2. [The defect-line identity](../SECTIONS/defect_lines_and_spanning_order_compression_the_defect_line_identity.md) (\`defect_lines_and_spanning_order_compression_the_defect_line_identity\`; composition v1; stale=False)
+- 3. [Defect span three is a deletion-cover ordering](../SECTIONS/defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering.md) (\`defect_lines_and_spanning_order_compression_defect_span_three_is_a_deletion_cover_ordering\`; composition v1; stale=False)
+- 4. [Transport with the deleted vertex fixed](../SECTIONS/defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed.md) (\`defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed\`; composition v1; stale=False)
+- 5. [From transport to an end-edge reversal](../SECTIONS/defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal.md) (\`defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal\`; composition v1; stale=False)
+- 6. [An endpoint-rooted Hamiltonian four-set](../SECTIONS/defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set.md) (\`defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set\`; composition v1; stale=False)
+- 7. [A Hamiltonian five-set beside a long path](../SECTIONS/defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path.md) (\`defect_lines_and_spanning_order_compression_a_hamiltonian_five_set_beside_a_long_path\`; composition v1; stale=False)
+- 8. [The remaining lemma](../SECTIONS/defect_lines_and_spanning_order_compression_the_remaining_lemma.md) (\`defect_lines_and_spanning_order_compression_the_remaining_lemma\`; composition v1; stale=False)
+- 9. [Appendix. Boundary reversal is local](../SECTIONS/defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local.md) (\`defect_lines_and_spanning_order_compression_appendix_boundary_reversal_is_local\`; composition v1; stale=False)
+- 10. [Canonical references](../SECTIONS/defect_lines_and_spanning_order_compression_canonical_references.md) (\`defect_lines_and_spanning_order_compression_canonical_references\`; composition v1; stale=False)

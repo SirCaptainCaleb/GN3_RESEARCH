@@ -1,6 +1,6 @@
 # Pairwise extremality
 
-## Body
+## Cold composition
 
 **Lemma 1.** Let \(a+b=s\) and \(a',b'>0\) with \(a'+b'=s\). Then
 \[
@@ -38,7 +38,9 @@ Thus every displayed pair is as balanced as possible among its two-covers. Furth
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_pairwise_extremality_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_pairwise_extremality_subsection_a\`; development v1; composition vNone; stale=True)

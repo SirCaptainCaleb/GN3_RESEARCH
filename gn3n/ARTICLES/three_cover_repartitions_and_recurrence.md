@@ -1,5 +1,13 @@
 # Article VI — three-cover repartitions and recurrence
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 1083
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -685,3 +693,16 @@ It does not justify reversing a path or cyclically rotating a triple. Every recu
 <!-- section_id: three_cover_repartitions_and_recurrence_canonical_references -->
 
 - [[fivefence01]] — Five-set fence: bare complement witnesses are not closure
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/three_cover_repartitions_and_recurrence_introduction.md) (\`three_cover_repartitions_and_recurrence_introduction\`; composition v1; stale=False)
+- 2. [The central three- or five-vertex path](../SECTIONS/three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path.md) (\`three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path\`; composition v1; stale=False)
+- 3. [Minimum potential inside a component](../SECTIONS/three_cover_repartitions_and_recurrence_minimum_potential_inside_a_component.md) (\`three_cover_repartitions_and_recurrence_minimum_potential_inside_a_component\`; composition v1; stale=False)
+- 4. [Moving away from a three-vertex side](../SECTIONS/three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side.md) (\`three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side\`; composition v1; stale=False)
+- 5. [Four- and five-vertex components](../SECTIONS/three_cover_repartitions_and_recurrence_four_and_five_vertex_components.md) (\`three_cover_repartitions_and_recurrence_four_and_five_vertex_components\`; composition v1; stale=False)
+- 6. [Equal-potential recurrence](../SECTIONS/three_cover_repartitions_and_recurrence_equal_potential_recurrence.md) (\`three_cover_repartitions_and_recurrence_equal_potential_recurrence\`; composition v1; stale=False)
+- 7. [Several deleted labels in one component](../SECTIONS/three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component.md) (\`three_cover_repartitions_and_recurrence_several_deleted_labels_in_one_component\`; composition v1; stale=False)
+- 8. [Two distinct remaining lemmas](../SECTIONS/three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas.md) (\`three_cover_repartitions_and_recurrence_two_distinct_remaining_lemmas\`; composition v1; stale=False)
+- 9. [Appendix. Why finiteness is insufficient](../SECTIONS/three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient.md) (\`three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient\`; composition v1; stale=False)
+- 10. [Canonical references](../SECTIONS/three_cover_repartitions_and_recurrence_canonical_references.md) (\`three_cover_repartitions_and_recurrence_canonical_references\`; composition v1; stale=False)

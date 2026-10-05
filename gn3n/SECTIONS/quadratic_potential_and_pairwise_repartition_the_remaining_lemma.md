@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Body
+## Cold composition
 
 The quadratic-potential argument is reduced to the following statement.
 
@@ -26,7 +26,9 @@ A proof of this lemma completes the argument, since strict decrease of \(\Phi\) 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_remaining_lemma_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_the_remaining_lemma_subsection_a\`; development v1; composition vNone; stale=True)

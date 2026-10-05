@@ -1,6 +1,6 @@
 # Repeated lifts with a common color set
 
-## Body
+## Cold composition
 
 A different construction starts with a properly edge-colored graph \(G\) on \(u\) vertices, with color set \(C\). Take \(r\) disjoint copies of \(V(G)\) but use the same color vertices \(C\) for all copies. Every colored edge \(xy\) of color \(c\) becomes a triple \(\{x,y,c\}\).
 
@@ -58,8 +58,10 @@ A one-factorization lift of \(K_N\) is a special case. A sufficiently large prop
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Theorem 5
+- [Subsection 1 — (untitled)](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_a.md) (\`transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Theorem 5](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_b.md) (\`transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_b\`; development v1; composition vNone; stale=True)

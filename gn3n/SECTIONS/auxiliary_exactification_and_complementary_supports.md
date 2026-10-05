@@ -6,7 +6,7 @@
 
 Adding one special vertex makes the directed one-change geodesic property exactly equivalent to a two-cover, and the exactified state admits complementary-tail, common-endpoint, and positive-factorization descriptions.
 
-## Body
+## Cold composition
 
 ## Exactification before support-family development
 
@@ -268,8 +268,10 @@ The second half asks what antipodal topology can force inside these exact models
 - Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: Exactification before support-family development
-- Subsection 2 — HOT, version 1: Further developments
+- [Subsection 1 — Exactification before support-family development](../SUBSECTIONS/auxiliary_exactification_and_complementary_supports_subsection_a.md) (\`auxiliary_exactification_and_complementary_supports_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — Further developments](../SUBSECTIONS/auxiliary_exactification_and_complementary_supports_subsection_b.md) (\`auxiliary_exactification_and_complementary_supports_subsection_b\`; development v1; composition vNone; stale=True)

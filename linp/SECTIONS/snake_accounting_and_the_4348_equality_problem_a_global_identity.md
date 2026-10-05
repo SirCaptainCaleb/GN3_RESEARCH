@@ -1,6 +1,6 @@
 # A global identity
 
-## Body
+## Cold composition
 
 Define
 \[
@@ -140,10 +140,12 @@ is increasing. Discard the four nonnegative terms subtracted in (13) and substit
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 4
-- Subsection 3 — crystallized, version 1: Theorem 5
-- Subsection 4 — HOT, version 1: Corollary 6
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 4](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_b.md) (\`snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Theorem 5](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_c.md) (\`snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_c\`; development v1; composition v1; stale=False)
+- [Subsection 4 — Corollary 6](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_d.md) (\`snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_d\`; development v1; composition vNone; stale=True)

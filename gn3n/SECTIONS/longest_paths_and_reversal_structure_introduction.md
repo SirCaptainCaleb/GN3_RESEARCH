@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A tight triple \((x,v,u)\) reverses the ordered edge \((u,v)\) of a tight path.
 
@@ -12,7 +12,9 @@ Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\). A tight t
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_introduction_subsection_a.md) (\`longest_paths_and_reversal_structure_introduction_subsection_a\`; development v1; composition vNone; stale=True)

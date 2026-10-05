@@ -1,6 +1,6 @@
 # Inductive reduction
 
-## Body
+## Cold composition
 
 ## Lemma 1
 
@@ -65,7 +65,9 @@ Equation (4) is the entire inductive problem. The first term depends only on uno
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: Lemma 1
+- [Subsection 1 — Lemma 1](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a\`; development v1; composition vNone; stale=True)

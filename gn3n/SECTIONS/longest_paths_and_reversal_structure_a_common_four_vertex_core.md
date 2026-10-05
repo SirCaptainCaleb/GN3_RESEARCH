@@ -1,6 +1,6 @@
 # A common four-vertex core
 
-## Body
+## Cold composition
 
 Put
 \[
@@ -34,7 +34,9 @@ Choose Hamilton orders on the three five-sets. If two induce different orders on
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_common_four_vertex_core_subsection_a.md) (\`longest_paths_and_reversal_structure_a_common_four_vertex_core_subsection_a\`; development v1; composition vNone; stale=True)

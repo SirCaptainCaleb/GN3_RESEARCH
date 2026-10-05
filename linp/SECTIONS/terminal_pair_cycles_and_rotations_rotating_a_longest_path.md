@@ -1,6 +1,6 @@
 # Rotating a longest path
 
-## Body
+## Cold composition
 
 The forced second intersections of Lemma 5 can change the last vertex of a longest path.
 
@@ -33,8 +33,10 @@ Thus every single additional intersection at a suitable position creates another
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Lemma 6
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_a.md) (\`terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 6](../SUBSECTIONS/terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_b.md) (\`terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_b\`; development v1; composition vNone; stale=True)

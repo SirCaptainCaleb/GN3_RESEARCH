@@ -6,7 +6,7 @@
 
 For a spanning order, the two-cover condition is exactly the existence of one cut meeting every non-tight defect interval; failure is witnessed by two disjoint defects, and the extreme defects provide canonical coordinates for later topology.
 
-## Body
+## Cold composition
 
 ## Defect intervals and the exact Helly criterion
 
@@ -665,9 +665,11 @@ may be tracked simultaneously. This dual-polarity refinement is what removes the
 - Math version: 10
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: Defect intervals and the exact Helly criterion
-- Subsection 2 — crystallized, version 8: Exact inversion-window criterion
-- Subsection 3 — HOT, version 3: Local forbidden patterns and witness handoff
+- [Subsection 1 — Defect intervals and the exact Helly criterion](../SUBSECTIONS/spanning_orders_and_defect_helly_subsection_a.md) (\`spanning_orders_and_defect_helly_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — Exact inversion-window criterion](../SUBSECTIONS/spanning_orders_and_defect_helly_subsection_b.md) (\`spanning_orders_and_defect_helly_subsection_b\`; development v8; composition v1; stale=False)
+- [Subsection 3 — Local forbidden patterns and witness handoff](../SUBSECTIONS/spanning_orders_and_defect_helly_subsection_c.md) (\`spanning_orders_and_defect_helly_subsection_c\`; development v3; composition vNone; stale=True)

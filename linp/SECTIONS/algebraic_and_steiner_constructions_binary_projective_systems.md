@@ -1,6 +1,6 @@
 # Binary projective systems
 
-## Body
+## Cold composition
 
 Let
 \[
@@ -87,9 +87,11 @@ This exceptional obstruction does not persist in higher dimensions. For all suff
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 2
-- Subsection 3 — HOT, version 1: Theorem 3
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_binary_projective_systems_subsection_a.md) (\`algebraic_and_steiner_constructions_binary_projective_systems_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 2](../SUBSECTIONS/algebraic_and_steiner_constructions_binary_projective_systems_subsection_b.md) (\`algebraic_and_steiner_constructions_binary_projective_systems_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Theorem 3](../SUBSECTIONS/algebraic_and_steiner_constructions_binary_projective_systems_subsection_c.md) (\`algebraic_and_steiner_constructions_binary_projective_systems_subsection_c\`; development v1; composition vNone; stale=True)

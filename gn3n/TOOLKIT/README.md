@@ -1,10 +1,8 @@
 # Toolkit
 
-Toolkit entries are usable mathematical results. The distinction below concerns breadth of reuse, not mathematical certainty.
+Toolkit is for genuinely reusable mathematics whose natural formulation transcends its originating route. Route-local lemma graphs belong in Sections/Subsections.
 
 ## Toolkit
-
-These entries have received an independent extensibility review and were judged broadly reusable.
 
 - [Balanced repartitions need not preserve a prescribed terminal pair](fixed_terminal_pair_balancing_counterexample01.md) — fence — There are 4|m covers for which every 5|(m-1) repartition must mix an old 4-side vertex into the new long path terminal pair; no terminal pair entirely from the old long path can survive.
 - [Common endpoint constraints do not force Hamiltonian five-vertex windows](common_endpoint_constraints_fivewindow_counterexample01.md) — fence — Common endpoint constraints do not force Hamiltonian five-vertex windows
@@ -50,8 +48,6 @@ These entries have received an independent extensibility review and were judged 
 - [Strict containment in deletion-partition trees forces a unique smaller support](strict_containment_in_deletion_partition_trees.md) — theorem — A support in a deletion-partition tree properly contains at most one other support; containment forces a leaf and a precise path-with-pendant-edges structure.
 
 ## Toolkit Limbo
-
-These entries remain available for use, but their broad extensibility has not yet received the skeptical independent review required for promotion.
 
 - [A protected good band forces thin face blocks](protected_good_band_forces_thin_face_blocks.md) — lemma — A common forbidden-pattern-free status interval cannot contain two disjoint three-position windows internal to face blocks; hence at most one block has protected width at least three, and that width is at most five.
 - [A terminal span-two witness block has exactly two vertices](terminal_span_two_block_has_order_two.md) — lemma — In the terminal disjoint-window span-two branch, the bridging block is necessarily the two-vertex case alpha=beta=1.

@@ -1,6 +1,6 @@
 # The forest case
 
-## Body
+## Cold composition
 
 ## The forest case
 
@@ -125,7 +125,9 @@ Thus the selected-support forest is no longer an independent global obstruction.
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 4: The forest case
+- [Subsection 1 — The forest case](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_forest_case_subsection_a.md) (\`deletion_covers_and_the_support_graph_the_forest_case_subsection_a\`; development v4; composition vNone; stale=True)

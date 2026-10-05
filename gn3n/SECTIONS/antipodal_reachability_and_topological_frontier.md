@@ -6,7 +6,7 @@
 
 In the directed-by-rank single-copy geodesic graph for the auxiliary-vertex extension, let R be the vertices reachable from the source by red edges only. Then A(R) is exactly the set of vertices from which the target is reachable by blue edges only, and a one-change geodesic exists exactly when R intersects A(R). Failure forces a nonempty antipodally invariant corridor separating the two reachable regions.
 
-## Body
+## Cold composition
 
 ## The antipodal self-intersection criterion
 
@@ -67,10 +67,12 @@ The strongest transferable idea is thus not a literal theorem statement but the 
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: The antipodal self-intersection criterion
-- Subsection 2 — crystallized, version 4: The neutral corridor forced by a counterexample
-- Subsection 3 — crystallized, version 4: What a topological proof must actually show
-- Subsection 4 — HOT, version 3: Relation to the Norine geodesic analogy
+- [Subsection 1 — The antipodal self-intersection criterion](../SUBSECTIONS/antipodal_reachability_and_topological_frontier_subsection_a.md) (\`antipodal_reachability_and_topological_frontier_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — The neutral corridor forced by a counterexample](../SUBSECTIONS/antipodal_reachability_and_topological_frontier_subsection_b.md) (\`antipodal_reachability_and_topological_frontier_subsection_b\`; development v4; composition v1; stale=False)
+- [Subsection 3 — What a topological proof must actually show](../SUBSECTIONS/antipodal_reachability_and_topological_frontier_subsection_c.md) (\`antipodal_reachability_and_topological_frontier_subsection_c\`; development v4; composition v1; stale=False)
+- [Subsection 4 — Relation to the Norine geodesic analogy](../SUBSECTIONS/antipodal_reachability_and_topological_frontier_subsection_d.md) (\`antipodal_reachability_and_topological_frontier_subsection_d\`; development v3; composition vNone; stale=True)

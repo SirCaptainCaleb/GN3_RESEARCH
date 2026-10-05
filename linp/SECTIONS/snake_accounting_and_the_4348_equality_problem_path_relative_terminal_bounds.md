@@ -1,6 +1,6 @@
 # Path-relative terminal bounds
 
-## Body
+## Cold composition
 
 For a maximum \(p\)-edge path \(P\) ending at \(v\), and an incident edge \(f\ne g_p\), let
 \[
@@ -32,8 +32,10 @@ The proof is a path-splice count. For \(e=\{x,u,v\}\), both \(x\) and \(u\) must
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Lemma 3
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 3](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b.md) (\`snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b\`; development v1; composition vNone; stale=True)

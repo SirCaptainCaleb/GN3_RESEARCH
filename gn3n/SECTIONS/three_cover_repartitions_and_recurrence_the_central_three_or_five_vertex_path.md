@@ -1,6 +1,6 @@
 # The central three- or five-vertex path
 
-## Body
+## Cold composition
 
 Write
 \[
@@ -73,7 +73,9 @@ Thus every deleted label has a canonical bounded representative in the same comp
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path_subsection_a.md) (\`three_cover_repartitions_and_recurrence_the_central_three_or_five_vertex_path_subsection_a\`; development v1; composition vNone; stale=True)

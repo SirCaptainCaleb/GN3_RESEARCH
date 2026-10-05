@@ -1,6 +1,6 @@
 # Ternary affine systems
 
-## Body
+## Cold composition
 
 Let \(A_d\) be the affine Steiner triple system on \(\mathbb F_3^d\), whose edges are affine lines.
 
@@ -45,9 +45,11 @@ Consecutive lines meet once, nonconsecutive lines are disjoint, and their union 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 4
-- Subsection 3 — HOT, version 1: Proposition 5
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_ternary_affine_systems_subsection_a.md) (\`algebraic_and_steiner_constructions_ternary_affine_systems_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 4](../SUBSECTIONS/algebraic_and_steiner_constructions_ternary_affine_systems_subsection_b.md) (\`algebraic_and_steiner_constructions_ternary_affine_systems_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Proposition 5](../SUBSECTIONS/algebraic_and_steiner_constructions_ternary_affine_systems_subsection_c.md) (\`algebraic_and_steiner_constructions_ternary_affine_systems_subsection_c\`; development v1; composition vNone; stale=True)

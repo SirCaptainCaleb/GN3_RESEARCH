@@ -1,6 +1,6 @@
 # Amplification from an arbitrary reversing triple
 
-## Body
+## Cold composition
 
 Let \(T\) be the vertex set of a reversing tight triple, and let \(J_T\) be the graph on \(V(H)-T\) in which \(yz\) is an edge exactly when \(T\cup\{y,z\}\) is Hamiltonian.
 
@@ -28,7 +28,9 @@ Every edge gives a Hamiltonian five-set containing the same reversal and having 
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple_subsection_a.md) (\`longest_paths_and_reversal_structure_amplification_from_an_arbitrary_reversing_triple_subsection_a\`; development v1; composition vNone; stale=True)

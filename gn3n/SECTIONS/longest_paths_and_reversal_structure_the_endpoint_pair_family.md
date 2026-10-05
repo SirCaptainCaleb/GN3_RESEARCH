@@ -1,6 +1,6 @@
 # The endpoint-pair family
 
-## Body
+## Cold composition
 
 Assume a displayed end-edge reversal has been chosen maximal with respect to the order of its path and no preceding small Hamiltonian support occurs. Then every other exterior vertex satisfies the reverse relations at both ends. In the difficult orientation one also has
 \[
@@ -33,7 +33,9 @@ Among any three exterior vertices, orient \(p\to q\) when \((p,a_{\lambda-1},q)\
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_the_endpoint_pair_family_subsection_a.md) (\`longest_paths_and_reversal_structure_the_endpoint_pair_family_subsection_a\`; development v1; composition vNone; stale=True)

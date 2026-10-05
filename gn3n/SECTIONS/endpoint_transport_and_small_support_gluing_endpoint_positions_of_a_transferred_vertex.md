@@ -1,6 +1,6 @@
 # Endpoint positions of a transferred vertex
 
-## Body
+## Cold composition
 
 Suppose \(X,Y,D,\{x\}\) partition \(V(H)\) and both
 \[
@@ -28,7 +28,9 @@ The second possibility is governed by insertion positions.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex_subsection_a\`; development v1; composition vNone; stale=True)

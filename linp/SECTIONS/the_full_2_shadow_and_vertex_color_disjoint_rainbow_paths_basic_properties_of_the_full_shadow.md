@@ -1,6 +1,6 @@
 # Basic properties of the full shadow
 
-## Body
+## Cold composition
 
 ## Lemma 1
 
@@ -38,7 +38,9 @@ Thus every hyperedge appears as a triangle whose edge colors are the opposite ve
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: Lemma 1
+- [Subsection 1 — Lemma 1](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow_subsection_a.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow_subsection_a\`; development v1; composition vNone; stale=True)

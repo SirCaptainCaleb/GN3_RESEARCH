@@ -1,6 +1,6 @@
 # The size profile \(\{r,r,r\}\)
 
-## Body
+## Cold composition
 
 Let \(A\mid B\mid C\) have equal orders. Delete an endpoint of one displayed path and compare a deletion cover with the inherited three-part partition. The block count of Section 3 applies.
 
@@ -18,7 +18,9 @@ The three equitable size profiles therefore all produce ordered information afte
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_rrr_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_the_size_profile_rrr_subsection_a\`; development v1; composition vNone; stale=True)

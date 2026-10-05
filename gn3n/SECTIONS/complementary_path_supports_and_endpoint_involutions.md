@@ -6,7 +6,7 @@
 
 A one-change spanning order is equivalent to two tight paths with complementary supports meeting along an oppositely directed terminal edge, or equivalently to two tight paths with one common terminal vertex. The latter states carry a fixed-point-free endpoint-moving involution.
 
-## Body
+## Cold composition
 
 ## Opposite terminal edges and complementary supports
 
@@ -78,10 +78,12 @@ This formulation isolates the unresolved combinatorics as a disjointness problem
 - Math version: 4
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 4: Opposite terminal edges and complementary supports
-- Subsection 2 — crystallized, version 4: The common-terminal formulation
-- Subsection 3 — crystallized, version 4: The endpoint-moving involution
-- Subsection 4 — HOT, version 3: Positive support enumeration
+- [Subsection 1 — Opposite terminal edges and complementary supports](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_a.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_a\`; development v4; composition v1; stale=False)
+- [Subsection 2 — The common-terminal formulation](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_b.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_b\`; development v4; composition v1; stale=False)
+- [Subsection 3 — The endpoint-moving involution](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_c.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_c\`; development v4; composition v1; stale=False)
+- [Subsection 4 — Positive support enumeration](../SUBSECTIONS/complementary_path_supports_and_endpoint_involutions_subsection_d.md) (\`complementary_path_supports_and_endpoint_involutions_subsection_d\`; development v3; composition vNone; stale=True)

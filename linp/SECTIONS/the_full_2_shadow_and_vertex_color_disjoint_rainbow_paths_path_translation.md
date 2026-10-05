@@ -1,6 +1,6 @@
 # Path translation
 
-## Body
+## Cold composition
 
 Let
 \[
@@ -55,9 +55,11 @@ e(G)\le \ell n. \tag{8}
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Theorem 2
-- Subsection 3 — HOT, version 1: Target theorem
+- [Subsection 1 — (untitled)](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_a.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Theorem 2](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_b.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Target theorem](../SUBSECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_c.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_c\`; development v1; composition vNone; stale=True)

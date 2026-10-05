@@ -1,6 +1,6 @@
 # Blow-ups of a fixed linear triple system
 
-## Body
+## Cold composition
 
 Let \(T\) be a fixed linear \(3\)-graph with \(v\) vertices and \(m\) edges. Replace every vertex \(x\in V(T)\) by a class \(X_x\) of \(q\) vertices. For each hyperedge \(\{x,y,z\}\in E(T)\), place an arbitrary \(TD(3,q)\) on
 \[
@@ -105,9 +105,11 @@ This converts the amplification problem into a finite structural problem about t
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Theorem 3
-- Subsection 3 — HOT, version 1: Corollary 4
+- [Subsection 1 — (untitled)](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_a.md) (\`transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Theorem 3](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_b.md) (\`transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Corollary 4](../SUBSECTIONS/transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_c.md) (\`transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_c\`; development v1; composition vNone; stale=True)

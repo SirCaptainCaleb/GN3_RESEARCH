@@ -1,6 +1,6 @@
 # Why unordered pairs of \(X\) are the natural local resource
 
-## Body
+## Cold composition
 
 Linearity implies that an unordered pair of vertices belongs to at most one hyperedge. Thus every edge meeting \(X\) that contains two vertices of \(X\) determines a unique pair in
 \[
@@ -19,7 +19,9 @@ The desired proof of (4) is a uniform way of converting those restrictions into 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a\`; development v1; composition vNone; stale=True)

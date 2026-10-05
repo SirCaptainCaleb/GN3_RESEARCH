@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 Fix \(\ell\ge2\). This approach seeks to prove
 \[
@@ -37,7 +37,9 @@ and let \(e_X\) be the number of edges of \(H\) that meet \(X\). Thus
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_introduction_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_introduction_subsection_a\`; development v1; composition vNone; stale=True)

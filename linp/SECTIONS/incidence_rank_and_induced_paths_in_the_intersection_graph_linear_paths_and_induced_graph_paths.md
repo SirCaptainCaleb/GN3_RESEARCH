@@ -1,6 +1,6 @@
 # Linear paths and induced graph paths
 
-## Body
+## Cold composition
 
 ## Lemma 1
 
@@ -38,7 +38,9 @@ F\text{ is induced-}P_\ell\text{-free}. \tag{3}
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: Lemma 1
+- [Subsection 1 — Lemma 1](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a\`; development v1; composition vNone; stale=True)

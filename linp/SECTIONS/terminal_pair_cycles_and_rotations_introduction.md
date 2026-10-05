@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 Let \(H\) be a finite \(P_\ell^{(3)}\)-free linear \(3\)-graph with \(m\) edges and \(n\) vertices. Let \(s\) be the number of special edges.
 
@@ -20,7 +20,9 @@ where \(\kappa(T)\) is the number of nonempty connected components of \(T\).
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_introduction_subsection_a.md) (\`terminal_pair_cycles_and_rotations_introduction_subsection_a\`; development v1; composition vNone; stale=True)

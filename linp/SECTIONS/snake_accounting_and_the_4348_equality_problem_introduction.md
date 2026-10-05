@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 Let \(H\) be a finite linear \(3\)-graph. For an edge \(e\) and a vertex \(v\in e\), let \(\phi(e,v)\) be the maximum length of a linear path with last edge \(e\) and last vertex \(v\). Put
 \[
@@ -27,7 +27,9 @@ and let \(n_+\) be the number of nonisolated vertices.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/snake_accounting_and_the_4348_equality_problem_introduction_subsection_a.md) (\`snake_accounting_and_the_4348_equality_problem_introduction_subsection_a\`; development v1; composition vNone; stale=True)

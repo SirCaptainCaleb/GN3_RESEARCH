@@ -1,6 +1,6 @@
 # From transport to an end-edge reversal
 
-## Body
+## Cold composition
 
 The lower states in Lemma 4 have path orders \(4,3,m\), with the same long path retained. Repartitioning the four- and three-vertex sides may strictly decrease the quadratic potential
 \[
@@ -35,7 +35,9 @@ Hence:
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal_subsection_a.md) (\`defect_lines_and_spanning_order_compression_from_transport_to_an_end_edge_reversal_subsection_a\`; development v1; composition vNone; stale=True)

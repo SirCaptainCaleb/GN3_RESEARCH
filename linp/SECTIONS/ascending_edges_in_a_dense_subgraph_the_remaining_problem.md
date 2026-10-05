@@ -1,6 +1,6 @@
 # The remaining problem
 
-## Body
+## Cold composition
 
 The preceding lemmas leave one theorem to prove.
 
@@ -25,8 +25,10 @@ The last statement is the strongest of these sufficient conditions. The first th
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Open problem
+- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_a.md) (\`ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Open problem](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_b.md) (\`ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_b\`; development v1; composition vNone; stale=True)

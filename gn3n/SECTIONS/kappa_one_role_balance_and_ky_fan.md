@@ -6,7 +6,7 @@
 
 When the two-cover deletion distance is one, exact-root topology can spend its three surplus dimensions on three actual-vertex roles. Any nonzero carrier then collapses to one four-vertex equal-side central block, with all four central roles balanced. Independently, unless a unanimity-free face exists, Ky Fan forces a singleton-hole deletion cover whose support roles alternate along any prescribed vertex order.
 
-## Body
+## Cold composition
 
 ## Counting and single-switch consequences
 
@@ -145,7 +145,9 @@ This target is materially different from the earlier disturbance/minimal-hole pr
 - Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 3: Counting and single-switch consequences
+- [Subsection 1 — Counting and single-switch consequences](../SUBSECTIONS/kappa_one_role_balance_and_ky_fan_subsection_a.md) (\`kappa_one_role_balance_and_ky_fan_subsection_a\`; development v3; composition vNone; stale=True)

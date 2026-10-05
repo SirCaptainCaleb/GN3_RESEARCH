@@ -1,6 +1,6 @@
 # The support graph
 
-## Body
+## Cold composition
 
 Let \(J\) be the graph whose vertices are the distinct supports occurring among the selected covers \(F_x\), with an edge \(e_x\) joining the two supports of \(F_x\). The edge is labeled by \(x\). The graph is simple: its two endpoint supports have union \(V(H)-\{x\}\), so they determine the label \(x\).
 
@@ -30,7 +30,9 @@ Thus the graph of support compatibility is the line graph \(L(J)\).
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_support_graph_subsection_a.md) (\`deletion_covers_and_the_support_graph_the_support_graph_subsection_a\`; development v1; composition vNone; stale=True)

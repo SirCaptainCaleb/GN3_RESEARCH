@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Body
+## Cold composition
 
 The preceding argument reduces the deletion-cover method to the following statement.
 
@@ -24,7 +24,9 @@ No further production of isolated reversals is required: Lemma 10 already suppli
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_remaining_lemma_subsection_a.md) (\`deletion_covers_and_the_support_graph_the_remaining_lemma_subsection_a\`; development v1; composition vNone; stale=True)

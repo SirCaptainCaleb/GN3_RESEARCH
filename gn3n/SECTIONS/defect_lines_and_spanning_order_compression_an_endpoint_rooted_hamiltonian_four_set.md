@@ -1,6 +1,6 @@
 # An endpoint-rooted Hamiltonian four-set
 
-## Body
+## Cold composition
 
 Suppose
 \[
@@ -188,7 +188,9 @@ This supplies a double endpoint anchor for the remaining compression problem: th
 - Math version: 5
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 5: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set_subsection_a.md) (\`defect_lines_and_spanning_order_compression_an_endpoint_rooted_hamiltonian_four_set_subsection_a\`; development v5; composition vNone; stale=True)

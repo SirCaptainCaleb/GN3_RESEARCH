@@ -1,6 +1,6 @@
 # Cycle rank as a sufficient parameter
 
-## Body
+## Cold composition
 
 ## Proposition 3
 
@@ -43,7 +43,9 @@ In particular, \(\beta(T)=O(n)\) gives the two-thirds leading coefficient. The c
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: Proposition 3
+- [Subsection 1 — Proposition 3](../SUBSECTIONS/terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a.md) (\`terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a\`; development v1; composition vNone; stale=True)

@@ -1,6 +1,6 @@
 # Compatibility of deletion covers
 
-## Body
+## Cold composition
 
 Two path covers of the same vertex set are support-compatible if they induce the same partition into path supports. They are compatible if they are support-compatible and every two vertices lying in one common support occur in the same relative order in the two path orders. When two deletion covers omit different vertices, these definitions are applied after restricting both covers to their common vertex set.
 
@@ -162,8 +162,10 @@ Consequently, in the spanning odd-cycle support geometry, every adjacent pair of
 - Math version: 5
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 2: (untitled)
-- Subsection 2 — HOT, version 5: Three compatible covers force a reversal
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_a.md) (\`deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_a\`; development v2; composition v1; stale=False)
+- [Subsection 2 — Three compatible covers force a reversal](../SUBSECTIONS/deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_b.md) (\`deletion_covers_and_the_support_graph_compatibility_of_deletion_covers_subsection_b\`; development v5; composition vNone; stale=True)

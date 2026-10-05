@@ -1,6 +1,6 @@
 # A path-forest consequence of threshold deletion
 
-## Body
+## Cold composition
 
 The following elementary statement is useful whenever a threshold set \(D\) has already been shown to contain every edge not lying on a fixed maximum path.
 
@@ -38,8 +38,10 @@ If every vertex outside \(D\) has degree at least \(q+1\), Lemma 4 immediately i
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Lemma 4
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 4](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_b.md) (\`induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_b\`; development v1; composition vNone; stale=True)

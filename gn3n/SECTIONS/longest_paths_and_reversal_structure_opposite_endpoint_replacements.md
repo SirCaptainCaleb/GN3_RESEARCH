@@ -1,6 +1,6 @@
 # Opposite endpoint replacements
 
-## Body
+## Cold composition
 
 Let \(x,y\notin V(A)\). Suppose \(L\) is a Hamilton path on
 \[
@@ -46,7 +46,9 @@ Thus a difficult pair of opposite endpoint replacements must change the inherite
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_opposite_endpoint_replacements_subsection_a.md) (\`longest_paths_and_reversal_structure_opposite_endpoint_replacements_subsection_a\`; development v1; composition vNone; stale=True)

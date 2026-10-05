@@ -1,6 +1,6 @@
 # Realizability of the intersection graph
 
-## Body
+## Cold composition
 
 The graph \(F\) is not arbitrary.
 
@@ -42,8 +42,10 @@ Any proof of (1) may therefore use the three-clique realization furnished by Lem
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Lemma 2
+- [Subsection 1 — (untitled)](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_a.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 2](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_b.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_b\`; development v1; composition vNone; stale=True)

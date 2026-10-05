@@ -1,5 +1,13 @@
 # Article IV — endpoint transport and small-support gluing
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 1083
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -1167,3 +1175,15 @@ The following implications are not valid without additional hypotheses:
 - boundary reversal of one triple does not permit cyclic rotation of that triple or reversal of an entire tight path.
 
 Accordingly, every use of an endpoint in the main proof is tied to a displayed Hamilton order, and every iterative move is a pairwise repartition in a specified connected component.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/endpoint_transport_and_small_support_gluing_introduction.md) (\`endpoint_transport_and_small_support_gluing_introduction\`; composition v1; stale=False)
+- 2. [Greedy endpoint transport](../SECTIONS/endpoint_transport_and_small_support_gluing_greedy_endpoint_transport.md) (\`endpoint_transport_and_small_support_gluing_greedy_endpoint_transport\`; composition v1; stale=False)
+- 3. [A displayed end-edge reversal](../SECTIONS/endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal.md) (\`endpoint_transport_and_small_support_gluing_a_displayed_end_edge_reversal\`; composition v1; stale=False)
+- 4. [Endpoint positions of a transferred vertex](../SECTIONS/endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex.md) (\`endpoint_transport_and_small_support_gluing_endpoint_positions_of_a_transferred_vertex\`; composition v1; stale=False)
+- 5. [Compatible one-vertex extensions](../SECTIONS/endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions.md) (\`endpoint_transport_and_small_support_gluing_compatible_one_vertex_extensions\`; composition v1; stale=False)
+- 6. [Two same-side extension vertices](../SECTIONS/endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices.md) (\`endpoint_transport_and_small_support_gluing_two_same_side_extension_vertices\`; composition v1; stale=False)
+- 7. [A vertex internal in every Hamiltonian order](../SECTIONS/endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order.md) (\`endpoint_transport_and_small_support_gluing_a_vertex_internal_in_every_hamiltonian_order\`; composition v1; stale=False)
+- 8. [The remaining lemma](../SECTIONS/endpoint_transport_and_small_support_gluing_the_remaining_lemma.md) (\`endpoint_transport_and_small_support_gluing_the_remaining_lemma\`; composition v1; stale=False)
+- 9. [Appendix. Local failures do not imply global absorption](../SECTIONS/endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption.md) (\`endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption\`; composition v1; stale=False)

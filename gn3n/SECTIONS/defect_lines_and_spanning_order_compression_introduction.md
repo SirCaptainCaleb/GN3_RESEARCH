@@ -1,6 +1,6 @@
 # Introduction
 
-## Body
+## Cold composition
 
 Let \(H\) be a minimum counterexample to \(\operatorname{pc}(H)\le2\).
 
@@ -20,7 +20,9 @@ Let \(c(\pi)\) be the minimum number of consecutive intervals into which \(\pi\)
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/defect_lines_and_spanning_order_compression_introduction_subsection_a.md) (\`defect_lines_and_spanning_order_compression_introduction_subsection_a\`; development v1; composition vNone; stale=True)

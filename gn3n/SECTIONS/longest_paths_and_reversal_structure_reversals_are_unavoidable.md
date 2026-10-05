@@ -1,6 +1,6 @@
 # Reversals are unavoidable
 
-## Body
+## Cold composition
 
 **Lemma 1.** If two tight paths of order at least three have an order disagreement on their common vertices, then \(H\) contains a tight triple reversing an edge of one of the paths.
 
@@ -1052,10 +1052,12 @@ This removes any need to preserve a particular reversal certificate while descen
 - Math version: 17
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 8: (untitled)
-- Subsection 2 — crystallized, version 3: Neutral internalization of a double reversal
-- Subsection 3 — crystallized, version 7: Global marked-reversal minimization
-- Subsection 4 — HOT, version 5: Marked minima are global minima
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_a.md) (\`longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_a\`; development v8; composition v1; stale=False)
+- [Subsection 2 — Neutral internalization of a double reversal](../SUBSECTIONS/longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_b.md) (\`longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_b\`; development v3; composition v1; stale=False)
+- [Subsection 3 — Global marked-reversal minimization](../SUBSECTIONS/longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_c.md) (\`longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_c\`; development v7; composition v1; stale=False)
+- [Subsection 4 — Marked minima are global minima](../SUBSECTIONS/longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_d.md) (\`longest_paths_and_reversal_structure_reversals_are_unavoidable_subsection_d\`; development v5; composition vNone; stale=True)

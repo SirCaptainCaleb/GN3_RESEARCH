@@ -1,6 +1,6 @@
 # The spectral identity
 
-## Body
+## Cold composition
 
 ## Lemma 3
 
@@ -34,7 +34,9 @@ Therefore the one-third problem is equivalently a bound on the \(-3\) eigenspace
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: Lemma 3
+- [Subsection 1 — Lemma 3](../SUBSECTIONS/incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity_subsection_a.md) (\`incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity_subsection_a\`; development v1; composition vNone; stale=True)

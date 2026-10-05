@@ -1,6 +1,6 @@
 # A false strengthening
 
-## Body
+## Cold composition
 
 It is not true that
 \[
@@ -18,7 +18,9 @@ This obstruction shows that a nonforest terminal-pair edge cannot be assigned di
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a.md) (\`terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a\`; development v1; composition vNone; stale=True)

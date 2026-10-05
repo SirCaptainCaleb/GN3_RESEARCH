@@ -1,6 +1,6 @@
 # The odd-cycle case
 
-## Body
+## Cold composition
 
 Assume now that \(J\) is the cycle of Lemma 4. Write
 \[
@@ -164,11 +164,13 @@ Therefore the spanning odd cycle is not an independent terminal support-graph ge
 - Math version: 3
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: 6.1 Consecutive double deletions
-- Subsection 3 — crystallized, version 1: 6.2 Rank transport
-- Subsection 4 — crystallized, version 2: 6.3 Incidence identities
-- Subsection 5 — HOT, version 3: Odd cycle forces bounded support
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_a.md) (\`deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — 6.1 Consecutive double deletions](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_b.md) (\`deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — 6.2 Rank transport](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_c.md) (\`deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_c\`; development v1; composition v1; stale=False)
+- [Subsection 4 — 6.3 Incidence identities](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_d.md) (\`deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_d\`; development v2; composition v1; stale=False)
+- [Subsection 5 — Odd cycle forces bounded support](../SUBSECTIONS/deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_e.md) (\`deletion_covers_and_the_support_graph_the_odd_cycle_case_subsection_e\`; development v3; composition vNone; stale=True)

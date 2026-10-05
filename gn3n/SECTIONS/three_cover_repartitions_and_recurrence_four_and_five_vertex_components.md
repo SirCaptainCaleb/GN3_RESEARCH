@@ -1,6 +1,6 @@
 # Four- and five-vertex components
 
-## Body
+## Cold composition
 
 Let
 \[
@@ -41,8 +41,10 @@ Thus none of the six bounded four-support size profiles remains as an unstructur
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Bounded four-support closure
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_a.md) (\`three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Bounded four-support closure](../SUBSECTIONS/three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_b.md) (\`three_cover_repartitions_and_recurrence_four_and_five_vertex_components_subsection_b\`; development v1; composition vNone; stale=True)

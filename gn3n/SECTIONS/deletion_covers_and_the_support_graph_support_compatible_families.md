@@ -1,6 +1,6 @@
 # Support-compatible families
 
-## Body
+## Cold composition
 
 A large support-compatible family has only one varying support.
 
@@ -48,7 +48,9 @@ Together with \(Q\), these give three deletion covers sharing the fixed support 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_support_compatible_families_subsection_a.md) (\`deletion_covers_and_the_support_graph_support_compatible_families_subsection_a\`; development v1; composition vNone; stale=True)

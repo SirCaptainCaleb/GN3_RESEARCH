@@ -1,6 +1,6 @@
 # The remaining lemma
 
-## Body
+## Cold composition
 
 All non-decreasing cases now have one of the following forms:
 - a displayed end-edge reversal;
@@ -927,10 +927,12 @@ Thus future arguments at the two cross corners must retain the central orientati
 - Math version: 16
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 8: (untitled)
-- Subsection 2 — crystallized, version 3: Half-order maximal support
-- Subsection 3 — crystallized, version 3: Every deletion cover yields a four-support
-- Subsection 4 — HOT, version 8: Junction-rooted four-support
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_a\`; development v8; composition v1; stale=False)
+- [Subsection 2 — Half-order maximal support](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_b.md) (\`endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_b\`; development v3; composition v1; stale=False)
+- [Subsection 3 — Every deletion cover yields a four-support](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_c.md) (\`endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_c\`; development v3; composition v1; stale=False)
+- [Subsection 4 — Junction-rooted four-support](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_d.md) (\`endpoint_transport_and_small_support_gluing_the_remaining_lemma_subsection_d\`; development v8; composition vNone; stale=True)

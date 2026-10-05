@@ -1,6 +1,6 @@
 # Greedy endpoint transport
 
-## Body
+## Cold composition
 
 Let
 \[
@@ -42,7 +42,9 @@ Thus endpoint realization gives a displayed end-edge reversal. The only alternat
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_greedy_endpoint_transport_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_greedy_endpoint_transport_subsection_a\`; development v1; composition vNone; stale=True)

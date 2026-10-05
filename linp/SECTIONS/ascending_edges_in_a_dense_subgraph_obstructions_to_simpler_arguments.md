@@ -1,6 +1,6 @@
 # Obstructions to simpler arguments
 
-## Body
+## Cold composition
 
 Several natural strengthenings are false.
 
@@ -18,7 +18,9 @@ Finally, the rank-superlevel decomposition does not give a free positive error t
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a.md) (\`ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a\`; development v1; composition vNone; stale=True)

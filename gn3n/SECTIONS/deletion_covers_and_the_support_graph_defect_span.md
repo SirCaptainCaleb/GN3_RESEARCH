@@ -1,6 +1,6 @@
 # Defect span
 
-## Body
+## Cold composition
 
 For an ordering \(\pi=(v_1,\ldots ,v_n)\), an index \(i\), \(2\le i\le n-1\), is a defect center if
 \[
@@ -48,7 +48,9 @@ is a tight path. The problem is therefore to reduce a spanning ordering of defec
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/deletion_covers_and_the_support_graph_defect_span_subsection_a.md) (\`deletion_covers_and_the_support_graph_defect_span_subsection_a\`; development v1; composition vNone; stale=True)

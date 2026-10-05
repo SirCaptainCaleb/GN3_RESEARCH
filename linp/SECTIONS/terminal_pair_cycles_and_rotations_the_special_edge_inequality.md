@@ -1,6 +1,6 @@
 # The special-edge inequality
 
-## Body
+## Cold composition
 
 Form the snake digraph of \(H\): for every edge \(e\) and every vertex \(v\in e\) with
 \[
@@ -49,9 +49,11 @@ Thus any lower bound on \(s\) immediately improves the general coefficient.
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — crystallized, version 1: Lemma 1
-- Subsection 3 — HOT, version 1: Corollary 2
+- [Subsection 1 — (untitled)](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_a.md) (\`terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 1](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_b.md) (\`terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_b\`; development v1; composition v1; stale=False)
+- [Subsection 3 — Corollary 2](../SUBSECTIONS/terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_c.md) (\`terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_c\`; development v1; composition vNone; stale=True)

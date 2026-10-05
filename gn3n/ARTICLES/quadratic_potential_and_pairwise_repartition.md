@@ -1,5 +1,13 @@
 # Article II — quadratic potential and pairwise repartition
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 1083
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -242,3 +250,17 @@ A proof of this lemma completes the argument, since strict decrease of \(\Phi\) 
 <!-- section_id: quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient -->
 
 Suppose one attempted to prove that every imbalanced two-coverable induced subtournament admits a more balanced two-cover, without using the third path. Iterating such a statement would refine every two-cover until its component orders differed by at most one. Conversely, a theorem guaranteeing such a balanced refinement immediately gives the pairwise improvement whenever the displayed sizes differ by at least two. Thus a purely two-support balancing argument is as strong as the general balanced-refinement problem for two-coverable boundary tournaments. The third path, a deletion label, or comparison of path orders is therefore essential to this method.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/quadratic_potential_and_pairwise_repartition_introduction.md) (\`quadratic_potential_and_pairwise_repartition_introduction\`; composition v1; stale=False)
+- 2. [Pairwise extremality](../SECTIONS/quadratic_potential_and_pairwise_repartition_pairwise_extremality.md) (\`quadratic_potential_and_pairwise_repartition_pairwise_extremality\`; composition v1; stale=False)
+- 3. [Absolute minima](../SECTIONS/quadratic_potential_and_pairwise_repartition_absolute_minima.md) (\`quadratic_potential_and_pairwise_repartition_absolute_minima\`; composition v1; stale=False)
+- 4. [A block-count identity](../SECTIONS/quadratic_potential_and_pairwise_repartition_a_block_count_identity.md) (\`quadratic_potential_and_pairwise_repartition_a_block_count_identity\`; composition v1; stale=False)
+- 5. [The size profile \(\{r+1,r+1,r\}\)](../SECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r.md) (\`quadratic_potential_and_pairwise_repartition_the_size_profile_r1r1r\`; composition v1; stale=False)
+- 6. [The size profile \(\{r+1,r,r\}\)](../SECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr.md) (\`quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr\`; composition v1; stale=False)
+- 7. [The size profile \(\{r,r,r\}\)](../SECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_rrr.md) (\`quadratic_potential_and_pairwise_repartition_the_size_profile_rrr\`; composition v1; stale=False)
+- 8. [Reversal of a displayed end edge](../SECTIONS/quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge.md) (\`quadratic_potential_and_pairwise_repartition_reversal_of_a_displayed_end_edge\`; composition v1; stale=False)
+- 9. [Two same-side extenders](../SECTIONS/quadratic_potential_and_pairwise_repartition_two_same_side_extenders.md) (\`quadratic_potential_and_pairwise_repartition_two_same_side_extenders\`; composition v1; stale=False)
+- 10. [The remaining lemma](../SECTIONS/quadratic_potential_and_pairwise_repartition_the_remaining_lemma.md) (\`quadratic_potential_and_pairwise_repartition_the_remaining_lemma\`; composition v1; stale=False)
+- 11. [Appendix. Pairwise balancing is insufficient](../SECTIONS/quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient.md) (\`quadratic_potential_and_pairwise_repartition_appendix_pairwise_balancing_is_insufficient\`; composition v1; stale=False)

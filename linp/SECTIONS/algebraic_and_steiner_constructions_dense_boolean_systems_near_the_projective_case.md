@@ -1,6 +1,6 @@
 # Dense Boolean systems near the projective case
 
-## Body
+## Cold composition
 
 Let \(A\subseteq\mathbb F_2^r\setminus\{0\}\), and put an edge on every triple
 \[
@@ -91,8 +91,10 @@ A more general density-beating Boolean example can also be reduced to a two-poin
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Theorem 6
+- [Subsection 1 — (untitled)](../SUBSECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a.md) (\`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Theorem 6](../SUBSECTIONS/algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b.md) (\`algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b\`; development v1; composition vNone; stale=True)

@@ -1,6 +1,6 @@
 # Moving away from a three-vertex side
 
-## Body
+## Cold composition
 
 Suppose a state in \(\mathcal C\) has the form
 \[
@@ -39,7 +39,9 @@ Repeated application either decreases \(\Phi\) or reaches a bounded Hamiltonian 
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side_subsection_a.md) (\`three_cover_repartitions_and_recurrence_moving_away_from_a_three_vertex_side_subsection_a\`; development v1; composition vNone; stale=True)

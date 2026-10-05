@@ -1,6 +1,6 @@
 # A five-set or an end-edge reversal
 
-## Body
+## Cold composition
 
 For \(y\in U\), the first and third triples of
 \[
@@ -50,7 +50,9 @@ In the second case the four-set supporting the displayed tight path is Hamiltoni
 - Math version: 1
 - Audit: passed
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal_subsection_a.md) (\`longest_paths_and_reversal_structure_a_five_set_or_an_end_edge_reversal_subsection_a\`; development v1; composition vNone; stale=True)

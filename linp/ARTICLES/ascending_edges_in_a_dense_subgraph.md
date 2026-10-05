@@ -1,5 +1,13 @@
 # Article 2 — Ascending edges in a dense subgraph
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 402
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -329,3 +337,15 @@ The terminal-pair graph of all ascending edges need not be rainbow-\(P_4\)-free,
 A common terminal may support several ascending edges, so a constant common-terminal bound is false in this generality.
 
 Finally, the rank-superlevel decomposition does not give a free positive error term at every threshold. The contribution of an induced superlevel must be counted with its full boundary term. Consequently independent estimates at separate thresholds cannot simply be added.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/ascending_edges_in_a_dense_subgraph_introduction.md) (\`ascending_edges_in_a_dense_subgraph_introduction\`; composition v1; stale=False)
+- 2. [Ascending edges are the incidence defect](../SECTIONS/ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect.md) (\`ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect\`; composition v1; stale=False)
+- 3. [Rank superlevels](../SECTIONS/ascending_edges_in_a_dense_subgraph_rank_superlevels.md) (\`ascending_edges_in_a_dense_subgraph_rank_superlevels\`; composition v1; stale=False)
+- 4. [Properly colored terminal-pair graphs](../SECTIONS/ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs.md) (\`ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs\`; composition v1; stale=False)
+- 5. [A sufficient common-terminal bound](../SECTIONS/ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound.md) (\`ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound\`; composition v1; stale=False)
+- 6. [Longest-path decomposition of the remaining ascending edges](../SECTIONS/ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges.md) (\`ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges\`; composition v1; stale=False)
+- 7. [Directed rank growth](../SECTIONS/ascending_edges_in_a_dense_subgraph_directed_rank_growth.md) (\`ascending_edges_in_a_dense_subgraph_directed_rank_growth\`; composition v1; stale=False)
+- 8. [The remaining problem](../SECTIONS/ascending_edges_in_a_dense_subgraph_the_remaining_problem.md) (\`ascending_edges_in_a_dense_subgraph_the_remaining_problem\`; composition v1; stale=False)
+- 9. [Obstructions to simpler arguments](../SECTIONS/ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments.md) (\`ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments\`; composition v1; stale=False)

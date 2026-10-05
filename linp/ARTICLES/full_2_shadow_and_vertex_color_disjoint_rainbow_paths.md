@@ -1,5 +1,13 @@
 # Article 8 — The full 2-shadow and vertex-color-disjoint rainbow paths
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 402
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -338,3 +346,13 @@ are all distinct.
 By Theorem 2 and (2), this statement is exactly the one-third upper bound.
 
 General rainbow-path theorems cannot supply it because Proposition 4 loses a factor two, and ordinary graph-path extraction cannot supply it because of Proposition 7. The remaining argument must use the symmetric triangle structure of the full shadow to control repeated colors.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction\`; composition v1; stale=False)
+- 2. [Basic properties of the full shadow](../SECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow\`; composition v1; stale=False)
+- 3. [Path translation](../SECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation\`; composition v1; stale=False)
+- 4. [Separating graph vertices from colors](../SECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors\`; composition v1; stale=False)
+- 5. [A source-oriented representation](../SECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation\`; composition v1; stale=False)
+- 6. [Repeated colors are a genuine obstruction](../SECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction\`; composition v1; stale=False)
+- 7. [The remaining theorem](../SECTIONS/the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem.md) (\`the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem\`; composition v1; stale=False)

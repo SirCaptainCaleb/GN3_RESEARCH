@@ -1,6 +1,6 @@
 # Appendix. Local failures do not imply global absorption
 
-## Body
+## Cold composition
 
 The following implications are not valid without additional hypotheses:
 - two vertices extending the same end of a path need not concatenate with each other;
@@ -18,7 +18,9 @@ Accordingly, every use of an endpoint in the main proof is tied to a displayed H
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption_subsection_a.md) (\`endpoint_transport_and_small_support_gluing_appendix_local_failures_do_not_imply_global_absorption_subsection_a\`; development v1; composition vNone; stale=True)

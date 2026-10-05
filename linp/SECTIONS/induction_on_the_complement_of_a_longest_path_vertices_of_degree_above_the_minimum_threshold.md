@@ -1,6 +1,6 @@
 # Vertices of degree above the minimum threshold
 
-## Body
+## Cold composition
 
 A dense equality case has many vertices whose degree is strictly above the minimum degree.
 
@@ -73,8 +73,10 @@ Thus even when \(P\) is nearly spanning relative to the forbidden length, a dens
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Lemma 5
+- [Subsection 1 — (untitled)](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_a.md) (\`induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 5](../SUBSECTIONS/induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_b.md) (\`induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_b\`; development v1; composition vNone; stale=True)

@@ -1,5 +1,13 @@
 # Article 7 — Transversal designs, Latin blow-ups, and products
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 402
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -305,3 +313,12 @@ Construct a partial or nonregular transversal system with nearly quadratic many 
 Such a construction must lose few edges while destroying a linear proportion of the compatible lifted paths. Independent full Latin squares cannot do this by Theorem 3, and repeated use of a common fixed color set cannot do it by Theorem 5.
 
 The unresolved lower-bound problem in this family is therefore not to choose a different Latin square inside the same regular construction, but to change the global incidence structure so that the large family of internally disjoint lifted paths no longer exists.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/transversal_designs_latin_blow_ups_and_products_introduction.md) (\`transversal_designs_latin_blow_ups_and_products_introduction\`; composition v1; stale=False)
+- 2. [Rainbow graph paths lift to linear hypergraph paths](../SECTIONS/transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths.md) (\`transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths\`; composition v1; stale=False)
+- 3. [Blow-ups of a fixed linear triple system](../SECTIONS/transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system.md) (\`transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system\`; composition v1; stale=False)
+- 4. [Repeated lifts with a common color set](../SECTIONS/transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set.md) (\`transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set\`; composition v1; stale=False)
+- 5. [Cartesian products](../SECTIONS/transversal_designs_latin_blow_ups_and_products_cartesian_products.md) (\`transversal_designs_latin_blow_ups_and_products_cartesian_products\`; composition v1; stale=False)
+- 6. [The remaining construction problems](../SECTIONS/transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems.md) (\`transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems\`; composition v1; stale=False)

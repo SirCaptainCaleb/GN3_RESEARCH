@@ -6,7 +6,7 @@
 
 Article VII retains its exact formulations. Nonzero exact-root carriers have the bounded central configurations of Section 7. For the rooted omission map, strictly positive constant-vector balance forces every chamber to have zero omissions unless all original vertices occupy a single block and the auxiliary vertex is a singleton extreme block. The matching-block tournament on four vertices gives positive balance without a zero chamber on either exceptional facet, refuting the unrestricted facewise omission-balance implication. Converting root configurations or forcing useful omission balance remains open.
 
-## Body
+## Cold composition
 
 ## Exact formulations and the pre-compression frontier
 
@@ -1584,11 +1584,13 @@ Accordingly the structural frontier after the cubic reduction is:
 - Math version: 25
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 5: Exact formulations and the pre-compression frontier
-- Subsection 2 — crystallized, version 3: Closure: width-three mixed-end handoff
-- Subsection 3 — crystallized, version 3: Exact-deficiency sharpening of the terminal handoff
-- Subsection 4 — crystallized, version 18: The remaining face-to-cover conversion
-- Subsection 5 — HOT, version 2: Root-only exhaustion and the k=1 anchored residue
+- [Subsection 1 — Exact formulations and the pre-compression frontier](../SUBSECTIONS/article_vii_synthesis_and_exact_frontier_subsection_a.md) (\`article_vii_synthesis_and_exact_frontier_subsection_a\`; development v5; composition v1; stale=False)
+- [Subsection 2 — Closure: width-three mixed-end handoff](../SUBSECTIONS/article_vii_synthesis_and_exact_frontier_subsection_b.md) (\`article_vii_synthesis_and_exact_frontier_subsection_b\`; development v3; composition v1; stale=False)
+- [Subsection 3 — Exact-deficiency sharpening of the terminal handoff](../SUBSECTIONS/article_vii_synthesis_and_exact_frontier_subsection_c.md) (\`article_vii_synthesis_and_exact_frontier_subsection_c\`; development v3; composition v1; stale=False)
+- [Subsection 4 — The remaining face-to-cover conversion](../SUBSECTIONS/article_vii_synthesis_and_exact_frontier_subsection_d.md) (\`article_vii_synthesis_and_exact_frontier_subsection_d\`; development v18; composition v1; stale=False)
+- [Subsection 5 — Root-only exhaustion and the k=1 anchored residue](../SUBSECTIONS/article_vii_synthesis_and_exact_frontier_subsection_e.md) (\`article_vii_synthesis_and_exact_frontier_subsection_e\`; development v2; composition vNone; stale=True)

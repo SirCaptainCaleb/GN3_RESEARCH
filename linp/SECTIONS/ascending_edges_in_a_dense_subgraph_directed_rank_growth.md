@@ -1,6 +1,6 @@
 # Directed rank growth
 
-## Body
+## Cold composition
 
 There is a complementary global representation. For every ascending edge
 \[
@@ -32,8 +32,10 @@ Thus repeated movement through ascending edges cannot continue indefinitely with
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — crystallized, version 1: (untitled)
-- Subsection 2 — HOT, version 1: Lemma 9
+- [Subsection 1 — (untitled)](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_a.md) (\`ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_a\`; development v1; composition v1; stale=False)
+- [Subsection 2 — Lemma 9](../SUBSECTIONS/ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_b.md) (\`ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_b\`; development v1; composition vNone; stale=True)

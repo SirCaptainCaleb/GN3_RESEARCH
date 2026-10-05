@@ -1,6 +1,6 @@
 # The size profile \(\{r+1,r,r\}\)
 
-## Body
+## Cold composition
 
 Let \(A\mid B\mid C\) have orders \(r+1,r,r\), and let \(x,y\) be the endpoints of \(A\).
 
@@ -26,7 +26,9 @@ Hence:
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_the_size_profile_r1rr_subsection_a\`; development v1; composition vNone; stale=True)

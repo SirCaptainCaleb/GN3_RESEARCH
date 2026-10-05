@@ -1,6 +1,6 @@
 # A block-count identity
 
-## Body
+## Cold composition
 
 Let \(A,B,C\) be disjoint vertex sets and let \(T\) be a two-cover of their union. Decompose the paths of \(T\) into maximal nonempty blocks contained in one of \(A,B,C\). If \(b_A,b_B,b_C\) are the corresponding block counts and \(t\) is the number of edges of the paths of \(T\) whose endpoints lie in different sets among \(A,B,C\), then
 \[
@@ -17,7 +17,9 @@ Indeed, deleting those \(t\) edges from two paths produces \(t+2\) blocks. Hence
 - Math version: 1
 - Audit: unaudited
 - Refutation: unrefuted
+- Composition version: 1
+- Composition stale: False
 
-## Authoring state
+## Development tree
 
-- Subsection 1 — HOT, version 1: (untitled)
+- [Subsection 1 — (untitled)](../SUBSECTIONS/quadratic_potential_and_pairwise_repartition_a_block_count_identity_subsection_a.md) (\`quadratic_potential_and_pairwise_repartition_a_block_count_identity_subsection_a\`; development v1; composition vNone; stale=True)

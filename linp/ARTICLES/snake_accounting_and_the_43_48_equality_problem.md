@@ -1,5 +1,13 @@
 # Article 1 — Snake accounting and the 43/48 equality problem
 
+## Composition status
+
+- Composition version: 1
+- Stale: False
+- Composed through revision: 402
+
+## Cold composition
+
 ---
 
 ## Section — Introduction
@@ -629,3 +637,17 @@ The cumulative fixed-entrance bound does not force a positive proportion of a te
 Even families satisfying (33)–(35) can violate simple four-edge spacing inequalities. Hence edge ranks alone do not encode enough of the path intersections.
 
 Finally, the vertex-indexed families \(H_v\) are not globally disjoint. Any summation that treats their members, their maximum paths, or their output edges as distinct without a multiplicity bound loses exactly the information needed for the final step.
+
+## Contained Sections
+
+- 1. [Introduction](../SECTIONS/snake_accounting_and_the_4348_equality_problem_introduction.md) (\`snake_accounting_and_the_4348_equality_problem_introduction\`; composition v1; stale=False)
+- 2. [The fixed-entrance bound](../SECTIONS/snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound.md) (\`snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound\`; composition v1; stale=False)
+- 3. [Path-relative terminal bounds](../SECTIONS/snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds.md) (\`snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds\`; composition v1; stale=False)
+- 4. [A global identity](../SECTIONS/snake_accounting_and_the_4348_equality_problem_a_global_identity.md) (\`snake_accounting_and_the_4348_equality_problem_a_global_identity\`; composition v1; stale=False)
+- 5. [What near equality forces](../SECTIONS/snake_accounting_and_the_4348_equality_problem_what_near_equality_forces.md) (\`snake_accounting_and_the_4348_equality_problem_what_near_equality_forces\`; composition v1; stale=False)
+- 6. [The interior-pair count](../SECTIONS/snake_accounting_and_the_4348_equality_problem_the_interior_pair_count.md) (\`snake_accounting_and_the_4348_equality_problem_the_interior_pair_count\`; composition v1; stale=False)
+- 7. [Refinement of the selected ascending edges](../SECTIONS/snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges.md) (\`snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges\`; composition v1; stale=False)
+- 8. [Fundamental cycles of the terminal-pair graph](../SECTIONS/snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph.md) (\`snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph\`; composition v1; stale=False)
+- 9. [A three-way local alternative](../SECTIONS/snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative.md) (\`snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative\`; composition v1; stale=False)
+- 10. [The remaining implication](../SECTIONS/snake_accounting_and_the_4348_equality_problem_the_remaining_implication.md) (\`snake_accounting_and_the_4348_equality_problem_the_remaining_implication\`; composition v1; stale=False)
+- 11. [Obstructions to simpler continuations](../SECTIONS/snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations.md) (\`snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations\`; composition v1; stale=False)
