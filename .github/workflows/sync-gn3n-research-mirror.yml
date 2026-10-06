@@ -1,4 +1,5 @@
 name: Sync GN3N research mirror
+# audit model refresh
 
 on:
   workflow_dispatch:
