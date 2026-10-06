@@ -68,3 +68,8 @@ When \(k=\ell-1\), the longest possible value in a \(P_\ell^{(3)}\)-free graph, 
 \]
 
 Equation (4) is the entire inductive problem. The first term depends only on unordered pairs of vertices of \(X\); the second records the difference between the forbidden length and the actual longest-path length; the third is the amount by which \(H[Y]\) falls below the inductive extremal bound.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -38,3 +38,8 @@ Outside a set of vertices of total vertex rank \(o(S)\), every high-rank vertex 
    \]
 
 Partitioning the vertices according to one alternative shows that one of the three alternatives has total vertex-indexed multiplicity \(\Omega(S)\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

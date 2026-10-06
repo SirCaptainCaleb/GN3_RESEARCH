@@ -16,6 +16,8 @@ A transversal design \(TD(3,q)\) has three vertex classes \(A,B,C\), each of siz
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

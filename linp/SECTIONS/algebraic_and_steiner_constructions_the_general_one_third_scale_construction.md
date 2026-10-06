@@ -66,6 +66,8 @@ To improve the leading coefficient, one needs components with density near or ab
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

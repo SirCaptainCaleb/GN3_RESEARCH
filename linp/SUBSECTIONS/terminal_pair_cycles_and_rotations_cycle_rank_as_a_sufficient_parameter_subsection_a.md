@@ -46,3 +46,8 @@ s\ge \frac{m-(D+1)n}{C+1}.
 Substitute this in (2) and rearrange. ∎
 
 In particular, \(\beta(T)=O(n)\) gives the two-thirds leading coefficient. The central question is therefore whether the independent cycles of \(T\) force enough new path structure to bound \(\beta(T)\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

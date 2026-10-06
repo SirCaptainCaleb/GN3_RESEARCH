@@ -24,3 +24,8 @@ Linearity implies that an unordered pair of vertices belongs to at most one hype
 The difficulty is caused by edges that meet \(X\) in only one vertex. Longest-path maximality must control these edges indirectly. If such an edge could be inserted into or appended to \(P\) without creating an additional intersection, then \(P\) would not be longest. Therefore every one-vertex intersection with \(X\) is accompanied by an obstruction elsewhere on \(P\), or by a restriction on the structure of \(H[Y]\).
 
 The desired proof of (4) is a uniform way of converting those restrictions into the three terms on its right-hand side.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

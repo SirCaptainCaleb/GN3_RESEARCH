@@ -413,11 +413,17 @@
         "body_chars": 16888,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 8,
+          "latest_section_position_when_composed": 8,
+          "sections_existing_when_composed": 8,
+          "sections_now": 8
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 3
     },
@@ -426,11 +432,17 @@
         "body_chars": 12611,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 9,
+          "latest_section_position_when_composed": 9,
+          "sections_existing_when_composed": 9,
+          "sections_now": 9
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 3
     },
@@ -439,11 +451,17 @@
         "body_chars": 11419,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 7,
+          "latest_section_position_when_composed": 7,
+          "sections_existing_when_composed": 7,
+          "sections_now": 7
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 4
     },
@@ -452,11 +470,17 @@
         "body_chars": 9674,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 8,
+          "latest_section_position_when_composed": 8,
+          "sections_existing_when_composed": 8,
+          "sections_now": 8
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 3
     },
@@ -465,11 +489,17 @@
         "body_chars": 9167,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 8,
+          "latest_section_position_when_composed": 8,
+          "sections_existing_when_composed": 8,
+          "sections_now": 8
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 3
     },
@@ -478,11 +508,17 @@
         "body_chars": 19870,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 11,
+          "latest_section_position_when_composed": 11,
+          "sections_existing_when_composed": 11,
+          "sections_now": 11
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 3
     },
@@ -491,11 +527,17 @@
         "body_chars": 9149,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 8,
+          "latest_section_position_when_composed": 8,
+          "sections_existing_when_composed": 8,
+          "sections_now": 8
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 3
     },
@@ -504,18 +546,24 @@
         "body_chars": 11659,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_section_position_now": 6,
+          "latest_section_position_when_composed": 6,
+          "sections_existing_when_composed": 6,
+          "sections_now": 6
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy automatically concatenated Article body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "version": 3
     }
   },
   "brainstorm_count": 2,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-06T06:05:37.93791+00:00",
+  "generated_at": "2026-10-06T17:13:58.85937+00:00",
   "mirror_format": 17,
   "schema": "linp",
   "section_versions": {
@@ -524,11 +572,17 @@
         "body_chars": 3744,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -538,11 +592,17 @@
         "body_chars": 2857,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -552,11 +612,17 @@
         "body_chars": 3030,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -566,11 +632,17 @@
         "body_chars": 1988,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -580,11 +652,17 @@
         "body_chars": 371,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -594,11 +672,17 @@
         "body_chars": 1538,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -608,11 +692,17 @@
         "body_chars": 1041,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -622,11 +712,17 @@
         "body_chars": 1154,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -636,11 +732,17 @@
         "body_chars": 638,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -650,11 +752,17 @@
         "body_chars": 1847,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -664,11 +772,17 @@
         "body_chars": 707,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -678,11 +792,17 @@
         "body_chars": 579,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -692,11 +812,17 @@
         "body_chars": 3076,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -706,11 +832,17 @@
         "body_chars": 684,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -720,11 +852,17 @@
         "body_chars": 2188,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -734,11 +872,17 @@
         "body_chars": 883,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -748,11 +892,17 @@
         "body_chars": 728,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -762,11 +912,17 @@
         "body_chars": 1943,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -776,11 +932,17 @@
         "body_chars": 529,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -790,11 +952,17 @@
         "body_chars": 908,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -804,11 +972,17 @@
         "body_chars": 1008,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -818,11 +992,17 @@
         "body_chars": 1402,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -832,11 +1012,17 @@
         "body_chars": 947,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -846,11 +1032,17 @@
         "body_chars": 731,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -860,11 +1052,17 @@
         "body_chars": 915,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -874,11 +1072,17 @@
         "body_chars": 982,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -888,11 +1092,17 @@
         "body_chars": 2165,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -902,11 +1112,17 @@
         "body_chars": 905,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -916,11 +1132,17 @@
         "body_chars": 480,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -930,11 +1152,17 @@
         "body_chars": 459,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -944,11 +1172,17 @@
         "body_chars": 923,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -958,11 +1192,17 @@
         "body_chars": 1188,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -972,11 +1212,17 @@
         "body_chars": 753,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -986,11 +1232,17 @@
         "body_chars": 3115,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 4,
+          "latest_subsection_no_when_composed": 4,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1000,11 +1252,17 @@
         "body_chars": 1787,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1014,11 +1272,17 @@
         "body_chars": 1520,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1028,11 +1292,17 @@
         "body_chars": 845,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1042,11 +1312,17 @@
         "body_chars": 599,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1056,11 +1332,17 @@
         "body_chars": 1083,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1070,11 +1352,17 @@
         "body_chars": 1524,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1084,11 +1372,17 @@
         "body_chars": 2672,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1098,11 +1392,17 @@
         "body_chars": 2620,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1112,11 +1412,17 @@
         "body_chars": 886,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1126,11 +1432,17 @@
         "body_chars": 1582,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1140,11 +1452,17 @@
         "body_chars": 483,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1154,11 +1472,17 @@
         "body_chars": 1524,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1168,11 +1492,17 @@
         "body_chars": 644,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1182,11 +1512,17 @@
         "body_chars": 1512,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1196,11 +1532,17 @@
         "body_chars": 563,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1210,11 +1552,17 @@
         "body_chars": 1079,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1224,11 +1572,17 @@
         "body_chars": 964,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1238,11 +1592,17 @@
         "body_chars": 1294,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1252,11 +1612,17 @@
         "body_chars": 2169,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1266,11 +1632,17 @@
         "body_chars": 906,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1280,11 +1652,17 @@
         "body_chars": 494,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1294,11 +1672,17 @@
         "body_chars": 1507,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1308,11 +1692,17 @@
         "body_chars": 1484,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1322,11 +1712,17 @@
         "body_chars": 2544,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 4,
+          "latest_subsection_no_when_composed": 4,
+          "subsections_existing_when_composed": 4,
+          "subsections_now": 4
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1336,11 +1732,17 @@
         "body_chars": 1198,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1350,11 +1752,17 @@
         "body_chars": 3609,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1364,11 +1772,17 @@
         "body_chars": 1937,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1378,11 +1792,17 @@
         "body_chars": 518,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 1,
+          "latest_subsection_no_when_composed": 1,
+          "subsections_existing_when_composed": 1,
+          "subsections_now": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1392,11 +1812,17 @@
         "body_chars": 1300,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1406,11 +1832,17 @@
         "body_chars": 2185,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 2,
+          "latest_subsection_no_when_composed": 2,
+          "subsections_existing_when_composed": 2,
+          "subsections_now": 2
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1420,11 +1852,17 @@
         "body_chars": 1157,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "latest_subsection_no_now": 3,
+          "latest_subsection_no_when_composed": 3,
+          "subsections_existing_when_composed": 3,
+          "subsections_now": 3
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "math_version": 1,
       "version": 1
@@ -1438,11 +1876,15 @@
         "body_chars": 249,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_binary_projective_systems",
@@ -1453,11 +1895,15 @@
         "body_chars": 561,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_binary_projective_systems",
@@ -1466,10 +1912,14 @@
     "algebraic_and_steiner_constructions_binary_projective_systems_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_binary_projective_systems",
@@ -1480,11 +1930,15 @@
         "body_chars": 162,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case",
@@ -1493,10 +1947,14 @@
     "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_dense_boolean_systems_near_the_projective_case",
@@ -1507,11 +1965,15 @@
         "body_chars": 104,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_general_obstructions_to_amplification",
@@ -1522,11 +1984,15 @@
         "body_chars": 695,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_general_obstructions_to_amplification",
@@ -1535,10 +2001,14 @@
     "algebraic_and_steiner_constructions_general_obstructions_to_amplification_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_general_obstructions_to_amplification",
@@ -1549,11 +2019,15 @@
         "body_chars": 93,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation",
@@ -1564,11 +2038,15 @@
         "body_chars": 506,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation",
@@ -1577,10 +2055,14 @@
     "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_incidence_code_obstruction_and_its_limitation",
@@ -1589,10 +2071,14 @@
     "algebraic_and_steiner_constructions_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_introduction",
@@ -1603,11 +2089,15 @@
         "body_chars": 99,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_ternary_affine_systems",
@@ -1618,11 +2108,15 @@
         "body_chars": 404,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_ternary_affine_systems",
@@ -1631,10 +2125,14 @@
     "algebraic_and_steiner_constructions_ternary_affine_systems_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_ternary_affine_systems",
@@ -1643,10 +2141,14 @@
     "algebraic_and_steiner_constructions_the_general_one_third_scale_construction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_the_general_one_third_scale_construction",
@@ -1657,11 +2159,15 @@
         "body_chars": 607,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_the_two_point_fibre_problem",
@@ -1670,10 +2176,14 @@
     "algebraic_and_steiner_constructions_the_two_point_fibre_problem_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "algebraic_and_steiner_constructions_the_two_point_fibre_problem",
@@ -1684,11 +2194,15 @@
         "body_chars": 95,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound",
@@ -1697,10 +2211,14 @@
     "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_a_sufficient_common_terminal_bound",
@@ -1711,11 +2229,15 @@
         "body_chars": 678,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect",
@@ -1724,10 +2246,14 @@
     "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_ascending_edges_are_the_incidence_defect",
@@ -1738,11 +2264,15 @@
         "body_chars": 160,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_directed_rank_growth",
@@ -1751,10 +2281,14 @@
     "ascending_edges_in_a_dense_subgraph_directed_rank_growth_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_directed_rank_growth",
@@ -1763,10 +2297,14 @@
     "ascending_edges_in_a_dense_subgraph_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_introduction",
@@ -1777,11 +2315,15 @@
         "body_chars": 840,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges",
@@ -1792,11 +2334,15 @@
         "body_chars": 1011,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges",
@@ -1805,10 +2351,14 @@
     "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_longest_path_decomposition_of_the_remaining_ascending_edges",
@@ -1817,10 +2367,14 @@
     "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_obstructions_to_simpler_arguments",
@@ -1831,11 +2385,15 @@
         "body_chars": 265,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs",
@@ -1846,11 +2404,15 @@
         "body_chars": 881,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs",
@@ -1859,10 +2421,14 @@
     "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_properly_colored_terminal_pair_graphs",
@@ -1873,11 +2439,15 @@
         "body_chars": 48,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_rank_superlevels",
@@ -1886,10 +2456,14 @@
     "ascending_edges_in_a_dense_subgraph_rank_superlevels_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_rank_superlevels",
@@ -1900,11 +2474,15 @@
         "body_chars": 48,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_the_remaining_problem",
@@ -1913,10 +2491,14 @@
     "ascending_edges_in_a_dense_subgraph_the_remaining_problem_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "ascending_edges_in_a_dense_subgraph_the_remaining_problem",
@@ -1927,11 +2509,15 @@
         "body_chars": 1389,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality",
@@ -1940,10 +2526,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_a_weighted_rank_inequality",
@@ -1952,10 +2542,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_introduction",
@@ -1964,10 +2558,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_linear_paths_and_induced_graph_paths",
@@ -1978,11 +2576,15 @@
         "body_chars": 238,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity",
@@ -1991,10 +2593,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_nullity_and_terminal_pair_complexity",
@@ -2005,11 +2611,15 @@
         "body_chars": 128,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph",
@@ -2018,10 +2628,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_realizability_of_the_intersection_graph",
@@ -2032,11 +2646,15 @@
         "body_chars": 93,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem",
@@ -2045,10 +2663,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_remaining_theorem",
@@ -2057,10 +2679,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_the_spectral_identity",
@@ -2069,10 +2695,14 @@
     "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "incidence_rank_and_induced_paths_in_the_intersection_graph_what_a_counterexample_must_look_like",
@@ -2083,11 +2713,15 @@
         "body_chars": 155,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion",
@@ -2096,10 +2730,14 @@
     "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_a_path_forest_consequence_of_threshold_deletion",
@@ -2110,11 +2748,15 @@
         "body_chars": 229,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit",
@@ -2125,11 +2767,15 @@
         "body_chars": 461,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit",
@@ -2138,10 +2784,14 @@
     "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_deletion_and_the_change_in_extremal_deficit",
@@ -2150,10 +2800,14 @@
     "induction_on_the_complement_of_a_longest_path_inductive_reduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_inductive_reduction",
@@ -2162,10 +2816,14 @@
     "induction_on_the_complement_of_a_longest_path_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_introduction",
@@ -2174,10 +2832,14 @@
     "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_obstruction_to_the_naive_deletion_argument",
@@ -2188,11 +2850,15 @@
         "body_chars": 58,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_the_remaining_inequality",
@@ -2201,10 +2867,14 @@
     "induction_on_the_complement_of_a_longest_path_the_remaining_inequality_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_the_remaining_inequality",
@@ -2215,11 +2885,15 @@
         "body_chars": 90,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold",
@@ -2228,10 +2902,14 @@
     "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_vertices_of_degree_above_the_minimum_threshold",
@@ -2240,10 +2918,14 @@
     "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "induction_on_the_complement_of_a_longest_path_why_unordered_pairs_of_x_are_the_natural_local_resource",
@@ -2254,11 +2936,15 @@
         "body_chars": 445,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2269,11 +2955,15 @@
         "body_chars": 1251,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2284,11 +2974,15 @@
         "body_chars": 890,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2297,10 +2991,14 @@
     "snake_accounting_and_the_4348_equality_problem_a_global_identity_subsection_d": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_global_identity",
@@ -2311,11 +3009,15 @@
         "body_chars": 1101,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative",
@@ -2324,10 +3026,14 @@
     "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_a_three_way_local_alternative",
@@ -2338,11 +3044,15 @@
         "body_chars": 224,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph",
@@ -2351,10 +3061,14 @@
     "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_fundamental_cycles_of_the_terminal_pair_graph",
@@ -2363,10 +3077,14 @@
     "snake_accounting_and_the_4348_equality_problem_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_introduction",
@@ -2375,10 +3093,14 @@
     "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_obstructions_to_simpler_continuations",
@@ -2389,11 +3111,15 @@
         "body_chars": 237,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds",
@@ -2402,10 +3128,14 @@
     "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_path_relative_terminal_bounds",
@@ -2414,10 +3144,14 @@
     "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_refinement_of_the_selected_ascending_edges",
@@ -2428,11 +3162,15 @@
         "body_chars": 2384,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound",
@@ -2441,10 +3179,14 @@
     "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_fixed_entrance_bound",
@@ -2455,11 +3197,15 @@
         "body_chars": 854,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count",
@@ -2468,10 +3214,14 @@
     "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_interior_pair_count",
@@ -2482,11 +3232,15 @@
         "body_chars": 96,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_remaining_implication",
@@ -2495,10 +3249,14 @@
     "snake_accounting_and_the_4348_equality_problem_the_remaining_implication_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_the_remaining_implication",
@@ -2509,11 +3267,15 @@
         "body_chars": 724,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces",
@@ -2522,10 +3284,14 @@
     "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "snake_accounting_and_the_4348_equality_problem_what_near_equality_forces",
@@ -2534,10 +3300,14 @@
     "terminal_pair_cycles_and_rotations_a_false_strengthening_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_false_strengthening",
@@ -2548,11 +3318,15 @@
         "body_chars": 194,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest",
@@ -2563,11 +3337,15 @@
         "body_chars": 515,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest",
@@ -2576,10 +3354,14 @@
     "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_a_maximum_total_rank_spanning_forest",
@@ -2588,10 +3370,14 @@
     "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_cycle_rank_as_a_sufficient_parameter",
@@ -2602,11 +3388,15 @@
         "body_chars": 232,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter",
@@ -2615,10 +3405,14 @@
     "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_entrance_support_is_an_unavoidable_parameter",
@@ -2627,10 +3421,14 @@
     "terminal_pair_cycles_and_rotations_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_introduction",
@@ -2641,11 +3439,15 @@
         "body_chars": 88,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_rotating_a_longest_path",
@@ -2654,10 +3456,14 @@
     "terminal_pair_cycles_and_rotations_rotating_a_longest_path_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_rotating_a_longest_path",
@@ -2668,11 +3474,15 @@
         "body_chars": 77,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_remaining_theorem",
@@ -2681,10 +3491,14 @@
     "terminal_pair_cycles_and_rotations_the_remaining_theorem_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_remaining_theorem",
@@ -2695,11 +3509,15 @@
         "body_chars": 237,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_special_edge_inequality",
@@ -2710,11 +3528,15 @@
         "body_chars": 637,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_special_edge_inequality",
@@ -2723,10 +3545,14 @@
     "terminal_pair_cycles_and_rotations_the_special_edge_inequality_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "terminal_pair_cycles_and_rotations_the_special_edge_inequality",
@@ -2737,11 +3563,15 @@
         "body_chars": 519,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation",
@@ -2752,11 +3582,15 @@
         "body_chars": 567,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation",
@@ -2765,10 +3599,14 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_a_source_oriented_representation",
@@ -2777,10 +3615,14 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_basic_properties_of_the_full_shadow",
@@ -2789,10 +3631,14 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_introduction",
@@ -2803,11 +3649,15 @@
         "body_chars": 159,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation",
@@ -2818,11 +3668,15 @@
         "body_chars": 1109,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation",
@@ -2831,10 +3685,14 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_path_translation",
@@ -2845,11 +3703,15 @@
         "body_chars": 88,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction",
@@ -2858,10 +3720,14 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_repeated_colors_are_a_genuine_obstruction",
@@ -2872,11 +3738,15 @@
         "body_chars": 295,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2887,11 +3757,15 @@
         "body_chars": 324,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2902,11 +3776,15 @@
         "body_chars": 1197,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2915,10 +3793,14 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors_subsection_d": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_separating_graph_vertices_from_colors",
@@ -2929,11 +3811,15 @@
         "body_chars": 552,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem",
@@ -2942,10 +3828,14 @@
     "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "the_full_2_shadow_and_vertex_color_disjoint_rainbow_paths_the_remaining_theorem",
@@ -2956,11 +3846,15 @@
         "body_chars": 453,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system",
@@ -2971,11 +3865,15 @@
         "body_chars": 2462,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system",
@@ -2984,10 +3882,14 @@
     "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_blow_ups_of_a_fixed_linear_triple_system",
@@ -2998,11 +3900,15 @@
         "body_chars": 225,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_cartesian_products",
@@ -3013,11 +3919,15 @@
         "body_chars": 1138,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_cartesian_products",
@@ -3026,10 +3936,14 @@
     "transversal_designs_latin_blow_ups_and_products_cartesian_products_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_cartesian_products",
@@ -3038,10 +3952,14 @@
     "transversal_designs_latin_blow_ups_and_products_introduction_subsection_a": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_introduction",
@@ -3052,11 +3970,15 @@
         "body_chars": 748,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths",
@@ -3065,10 +3987,14 @@
     "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_rainbow_graph_paths_lift_to_linear_hypergraph_paths",
@@ -3079,11 +4005,15 @@
         "body_chars": 329,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set",
@@ -3092,10 +4022,14 @@
     "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set_subsection_b": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_repeated_lifts_with_a_common_color_set",
@@ -3106,11 +4040,15 @@
         "body_chars": 71,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems",
@@ -3121,11 +4059,15 @@
         "body_chars": 358,
         "composed_through_revision": 402,
         "composition_version": 1,
-        "development_changed": false,
+        "frontier": {
+          "current": true,
+          "development_version_now": 1,
+          "development_version_when_composed": 1
+        },
         "has_composition": true,
         "source_note": "Imported from the legacy Subsection checkpoint state during recursive-compression migration.",
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems",
@@ -3134,10 +4076,14 @@
     "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems_subsection_c": {
       "composition": {
         "composition_version": null,
-        "development_changed": false,
+        "frontier": {
+          "current": false,
+          "development_version_now": 1,
+          "development_version_when_composed": null
+        },
         "has_composition": false,
         "stale": false,
-        "stale_children": []
+        "stale_dependencies": []
       },
       "development_version": 1,
       "section_id": "transversal_designs_latin_blow_ups_and_products_the_remaining_construction_problems",
@@ -3146,7 +4092,7 @@
   },
   "toolkit_count": 1,
   "universal_document_versions": {
-    "guide": 20,
+    "guide": 23,
     "reflexes": 14
   }
 }

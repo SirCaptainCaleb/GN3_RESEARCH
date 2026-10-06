@@ -31,6 +31,8 @@ Accordingly, ascending edges are precisely the boundary edges of the rank superl
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

@@ -36,6 +36,8 @@ Therefore the one-third problem is equivalently a bound on the \(-3\) eigenspace
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

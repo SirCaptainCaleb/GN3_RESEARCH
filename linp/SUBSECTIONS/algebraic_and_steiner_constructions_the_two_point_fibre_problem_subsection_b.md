@@ -21,3 +21,8 @@ Determine whether there is an infinite family of line-sign functions in (12) for
 A positive answer would produce an infinite family of dense algebraic components outside the projective and affine obstructions above. A negative answer would close the principal remaining low-rank Boolean construction family.
 
 Any further construction based on dense Steiner or additive systems must use a global obstruction not already removed by the preceding arguments.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -67,3 +67,8 @@ edges, and again
 Take \(\lfloor n/t\rfloor\) disjoint copies and leave the remaining vertices isolated. The omitted final component costs \(O(\ell^2)\) edges. ∎
 
 To improve the leading coefficient, one needs components with density near or above \(\ell/3\) whose longest path is still shorter than \(\ell\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

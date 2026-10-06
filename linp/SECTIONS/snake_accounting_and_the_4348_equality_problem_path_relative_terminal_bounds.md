@@ -34,6 +34,8 @@ The proof is a path-splice count. For \(e=\{x,u,v\}\), both \(x\) and \(u\) must
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

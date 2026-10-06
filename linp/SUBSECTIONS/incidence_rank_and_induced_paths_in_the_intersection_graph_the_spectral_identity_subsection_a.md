@@ -37,3 +37,8 @@ Over \(\mathbb R\),
 Thus \(N\) and \(N^TN\) have the same rank. Since \(3I+A(F)\) is symmetric, its nullity equals the multiplicity of \(-3\) as an eigenvalue of \(A(F)\), proving (5). ∎
 
 Therefore the one-third problem is equivalently a bound on the \(-3\) eigenspace inside the realizable class of Lemma 2.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

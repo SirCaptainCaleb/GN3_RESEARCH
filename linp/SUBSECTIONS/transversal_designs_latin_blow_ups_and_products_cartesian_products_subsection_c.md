@@ -34,3 +34,8 @@ The \(t\)-fold power has \(n^t\) vertices and \(tmn^{t-1}\) edges. Iterate Theor
 ∎
 
 Thus Cartesian powers cannot amplify a finite exceptional component into an asymptotically stronger construction.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

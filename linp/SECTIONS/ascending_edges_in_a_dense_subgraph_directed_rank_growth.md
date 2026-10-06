@@ -34,6 +34,8 @@ Thus repeated movement through ascending edges cannot continue indefinitely with
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

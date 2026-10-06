@@ -107,6 +107,8 @@ This converts the amplification problem into a finite structural problem about t
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

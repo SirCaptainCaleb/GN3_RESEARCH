@@ -78,6 +78,8 @@ Thus edges with a substantial entrance-to-terminal rank gap have bounded total h
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

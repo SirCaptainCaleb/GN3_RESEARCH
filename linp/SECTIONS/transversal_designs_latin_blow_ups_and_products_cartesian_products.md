@@ -73,6 +73,8 @@ Thus Cartesian powers cannot amplify a finite exceptional component into an asym
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

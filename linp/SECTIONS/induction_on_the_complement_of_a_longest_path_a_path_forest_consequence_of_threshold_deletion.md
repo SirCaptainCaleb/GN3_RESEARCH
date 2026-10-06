@@ -40,6 +40,8 @@ If every vertex outside \(D\) has degree at least \(q+1\), Lemma 4 immediately i
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

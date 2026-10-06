@@ -57,3 +57,8 @@ so the density tends to \(|E(G)|/u\) as \(r\to\infty\). ∎
 Hence repeated use of a fixed color set is asymptotically weaker than the one-third construction.
 
 A one-factorization lift of \(K_N\) is a special case. A sufficiently large properly edge-colored complete graph contains a rainbow path with \(N-2\) edges, and by Lemma 1 this produces a linear path of length \(N-2\) in the corresponding hypergraph. Thus the small exceptional one-factorization examples do not scale.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

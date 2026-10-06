@@ -93,6 +93,8 @@ These observations rule out the direct higher-dimensional projective, affine, si
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

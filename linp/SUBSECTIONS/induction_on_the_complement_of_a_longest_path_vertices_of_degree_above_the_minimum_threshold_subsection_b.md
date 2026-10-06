@@ -74,3 +74,8 @@ Since \(|R|\) is integral, (10) follows.
 A \(q\)-edge linear \(3\)-uniform path has \(2q+1\) vertices, so it contains at most \(2q+1\) vertices of \(R\). Subtracting from (10) gives (11). ∎
 
 Thus even when \(P\) is nearly spanning relative to the forbidden length, a dense equality case contains many high-degree vertices outside \(P\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

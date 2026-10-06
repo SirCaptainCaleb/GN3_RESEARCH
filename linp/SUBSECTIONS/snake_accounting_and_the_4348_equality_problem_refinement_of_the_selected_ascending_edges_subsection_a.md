@@ -57,3 +57,8 @@ for each terminal \(w\in\{u,v\}\), together with
 \]
 
 The point of (32)–(35) is that they retain the \(1/8\)-scale family while removing the exceptional entrance and terminal incidences measured by the four terms of (13).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

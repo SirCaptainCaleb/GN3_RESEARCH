@@ -83,6 +83,8 @@ Thus every low-\(\eta_v\) high-rank vertex produces linearly many local cycles o
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

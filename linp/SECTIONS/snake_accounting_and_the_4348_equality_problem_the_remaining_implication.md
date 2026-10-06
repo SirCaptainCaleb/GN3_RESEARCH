@@ -40,6 +40,8 @@ The remaining difficulty is therefore global reuse of the maximum paths, termina
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

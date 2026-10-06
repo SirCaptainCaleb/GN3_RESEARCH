@@ -30,6 +30,8 @@ The unresolved step is therefore confined to the high-degree part of the three-c
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

@@ -20,6 +20,8 @@ The aim is therefore to construct finite components whose ratio \(m/v\) is as la
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

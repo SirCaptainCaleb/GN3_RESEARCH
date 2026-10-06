@@ -26,3 +26,8 @@ Since \(\operatorname{rank}N\le n\), (1) immediately implies
 \[
 m\le \frac{\ell}{3}n. \tag{2}
 \]
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

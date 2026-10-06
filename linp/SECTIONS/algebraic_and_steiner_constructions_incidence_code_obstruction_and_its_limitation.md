@@ -52,6 +52,8 @@ Therefore a code construction must use more information than the absence of one 
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

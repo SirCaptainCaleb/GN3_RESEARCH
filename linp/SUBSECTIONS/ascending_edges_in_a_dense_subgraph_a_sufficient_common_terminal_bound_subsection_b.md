@@ -39,3 +39,8 @@ Every ascending edge has exactly two terminal vertices, so
 Substitute this in (2). ∎
 
 Hence full specialness is stronger than necessary: a sublinear common-terminal bound already suffices.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

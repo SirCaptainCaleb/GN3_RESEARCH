@@ -33,3 +33,8 @@ Since a \(TD(3,q)\) has \(3q\) vertices and \(q^2\) hyperedges, its edge density
 \frac13+o(1). \tag{1}
 \]
 Thus full transversal designs cannot yield an asymptotic coefficient above one third.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

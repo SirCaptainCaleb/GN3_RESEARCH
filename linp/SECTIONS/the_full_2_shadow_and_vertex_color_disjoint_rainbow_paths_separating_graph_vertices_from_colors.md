@@ -78,6 +78,8 @@ The hypergraph degree and the degree in a retained properly edge-colored shadow 
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

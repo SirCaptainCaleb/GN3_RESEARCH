@@ -32,3 +32,8 @@ c(xy)=z,\qquad c(xz)=y,\qquad c(yz)=x. \tag{1}
 Linearity makes the coloring well defined: a graph edge \(xy\) belongs to at most one hyperedge of \(H\).
 
 The objective is to translate the one-third upper bound into a path problem in this colored graph.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

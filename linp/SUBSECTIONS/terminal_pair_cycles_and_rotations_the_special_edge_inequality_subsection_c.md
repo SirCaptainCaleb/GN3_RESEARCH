@@ -28,3 +28,8 @@ Summing (1), every special edge contributes \(3\) and every nonspecial edge cont
 The second inequality follows from \(\phi(v)\le\ell-1\). ∎
 
 Thus any lower bound on \(s\) immediately improves the general coefficient.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

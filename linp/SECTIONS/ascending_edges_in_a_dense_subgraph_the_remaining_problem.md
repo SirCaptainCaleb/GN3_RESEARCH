@@ -27,6 +27,8 @@ The last statement is the strongest of these sufficient conditions. The first th
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

@@ -41,6 +41,8 @@ General rainbow-path theorems cannot supply it because Proposition 4 loses a fac
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

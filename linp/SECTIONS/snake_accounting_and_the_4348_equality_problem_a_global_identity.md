@@ -142,6 +142,8 @@ is increasing. Discard the four nonnegative terms subtracted in (13) and substit
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 4
+- Subsections now: 4
 
 ## Development tree
 

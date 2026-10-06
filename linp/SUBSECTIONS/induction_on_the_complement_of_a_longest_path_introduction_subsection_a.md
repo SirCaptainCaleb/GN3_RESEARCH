@@ -42,3 +42,8 @@ and let \(e_X\) be the number of edges of \(H\) that meet \(X\). Thus
 \[
 |E(H)|=m_Y+e_X. \tag{3}
 \]
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

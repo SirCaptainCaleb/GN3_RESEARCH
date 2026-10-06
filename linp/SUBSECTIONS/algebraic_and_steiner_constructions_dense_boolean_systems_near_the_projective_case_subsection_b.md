@@ -88,3 +88,8 @@ A=W\setminus\{0,a,b\}.
 Thus every sufficiently dense Boolean candidate lies in the projective family or a two-point deletion of it. Both families have spanning paths in all sufficiently large dimensions. Therefore this dense Boolean branch has no infinite improvement beyond the small projective exceptions.
 
 A more general density-beating Boolean example can also be reduced to a two-point fibre extension of a smaller quotient: after deleting at most the naturally occurring translation-boundary points, the remaining domain is invariant under a nonzero translation and hence is a full two-point fibre over a quotient. Therefore it is enough to consider such two-point fibre extensions.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

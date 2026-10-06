@@ -20,3 +20,8 @@ If \(G\) is a properly edge-colored graph satisfying the triangle rule (4) and c
 \[
 e(G)\le \ell n. \tag{8}
 \]
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -57,6 +57,8 @@ e(G)\le \ell n. \tag{8}
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

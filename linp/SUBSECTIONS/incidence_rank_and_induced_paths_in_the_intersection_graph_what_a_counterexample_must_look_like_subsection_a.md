@@ -33,3 +33,8 @@ There are also linear \(3\)-graphs with no special edges and positive incidence 
 \operatorname{nullity}(N)\le s
 \]
 is false, and nonspecial incidence columns need not be independent.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

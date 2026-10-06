@@ -32,3 +32,8 @@ For a vertex \(v\), let \(T(v)\) be the set of ascending edges at which \(v\) is
 S=\sum_{v\in V(H)}\phi(v)
 \]
 and let \(n_+\) be the number of nonisolated vertices.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

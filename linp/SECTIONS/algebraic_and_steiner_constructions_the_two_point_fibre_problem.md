@@ -38,6 +38,8 @@ Any further construction based on dense Steiner or additive systems must use a g
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

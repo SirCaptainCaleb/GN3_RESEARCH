@@ -39,3 +39,8 @@ vertices. Hence
 which implies (9). ∎
 
 If every vertex outside \(D\) has degree at least \(q+1\), Lemma 4 immediately implies that every such vertex lies in at least \(q-1\) edges meeting \(D\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

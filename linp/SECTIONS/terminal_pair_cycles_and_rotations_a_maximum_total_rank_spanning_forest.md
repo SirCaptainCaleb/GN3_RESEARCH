@@ -44,6 +44,8 @@ This is the structural content of cycle rank. A cycle is not merely an extra gra
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

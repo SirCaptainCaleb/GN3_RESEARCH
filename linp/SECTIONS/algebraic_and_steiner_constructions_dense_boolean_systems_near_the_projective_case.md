@@ -93,6 +93,8 @@ A more general density-beating Boolean example can also be reduced to a two-poin
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

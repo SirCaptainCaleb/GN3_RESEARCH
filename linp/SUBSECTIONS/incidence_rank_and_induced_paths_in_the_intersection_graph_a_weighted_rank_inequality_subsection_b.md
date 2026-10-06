@@ -52,3 +52,8 @@ Thus every counterexample to (1) must satisfy
 \]
 
 The low-degree range is completely settled.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

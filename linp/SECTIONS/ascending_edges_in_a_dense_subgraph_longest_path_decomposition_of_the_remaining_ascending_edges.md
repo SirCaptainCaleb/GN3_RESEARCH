@@ -84,6 +84,8 @@ Lemmas 7 and 8 reduce the unresolved ascending mass to two phenomena:
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

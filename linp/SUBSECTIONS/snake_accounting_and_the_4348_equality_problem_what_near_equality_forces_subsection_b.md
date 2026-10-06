@@ -46,3 +46,8 @@ t(v)-D_v-\left\lceil\frac{3q-4}{4}\right\rceil
 \beta(p)-\eta_v-\left\lceil\frac{3q-4}{4}\right\rceil,
 \]
 which proves (22). Since \(q\le p-1\), (5) gives (23). ∎
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

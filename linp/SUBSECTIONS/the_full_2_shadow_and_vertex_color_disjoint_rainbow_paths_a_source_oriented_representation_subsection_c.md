@@ -55,3 +55,8 @@ s(v_0)=d_H(v_0)-h(v_0)\ge d-p.
 ∎
 
 This representation yields a directed-path versus rainbow-path dichotomy, but the resulting quantitative bounds remain far from (8). Its role is to show that concentrated source reuse cannot be ignored.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

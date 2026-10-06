@@ -51,6 +51,8 @@ Thus any lower bound on \(s\) immediately improves the general coefficient.
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

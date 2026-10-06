@@ -42,3 +42,8 @@ k-1=\frac{\ell-1}{2}
 further star edges disjoint from \(f\). The sum of these \(k\) star edges has weight \(\ell+1\), and adding \(f\), which meets the support exactly in \(a\), changes the weight to \(\ell+2\). ∎
 
 Therefore a code construction must use more information than the absence of one support size.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

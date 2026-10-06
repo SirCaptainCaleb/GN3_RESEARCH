@@ -42,3 +42,8 @@ s(T)<\frac{3m}{v}. \tag{5}
 \]
 
 This converts the amplification problem into a finite structural problem about the density and circumference of the base hypergraph.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

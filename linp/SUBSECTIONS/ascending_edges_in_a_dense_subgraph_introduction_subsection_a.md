@@ -27,3 +27,8 @@ This line of argument seeks the asymptotic bound
 |E(H)|\le \left(\frac{2}{3}\ell+o(\ell)\right)|V(H)|
 \]
 for \(P_\ell^{(3)}\)-free linear \(3\)-graphs. The essential point is that the only incidences that exceed the ordinary vertex-rank bound are the unique-entrance incidences of ascending edges.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

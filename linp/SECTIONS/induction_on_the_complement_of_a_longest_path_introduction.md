@@ -39,6 +39,8 @@ and let \(e_X\) be the number of edges of \(H\) that meet \(X\). Thus
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

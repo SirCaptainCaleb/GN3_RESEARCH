@@ -45,6 +45,8 @@ In particular, \(\beta(T)=O(n)\) gives the two-thirds leading coefficient. The c
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

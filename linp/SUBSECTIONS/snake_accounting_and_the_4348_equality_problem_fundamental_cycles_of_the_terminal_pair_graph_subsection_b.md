@@ -38,3 +38,8 @@ Since an ascending edge can belong to at most the two families indexed by its te
 \left(\frac1{16}-o(1)\right)S \tag{37}
 \]
 distinct hyperedges.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

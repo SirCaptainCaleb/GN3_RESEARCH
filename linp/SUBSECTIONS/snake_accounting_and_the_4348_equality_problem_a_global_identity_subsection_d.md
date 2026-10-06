@@ -37,3 +37,8 @@ If \(H\) is \(P_\ell^{(3)}\)-free, then \(p_v\le\ell-1\). The function
 4p-2+\beta(p)
 \]
 is increasing. Discard the four nonnegative terms subtracted in (13) and substitute \(p_v\le\ell-1\). ∎
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

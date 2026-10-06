@@ -46,3 +46,8 @@ Summing over the edges and reversing the order of summation gives
 A rainbow-path extremal bound for properly colored graphs with no rainbow \(t\)-edge path gives \(|E(R_t)|=O(tn)\). Since \(t\le\ell-1\), the right-hand side is \(O(n\log\ell)\). ∎
 
 Thus edges with a substantial entrance-to-terminal rank gap have bounded total harmonic mass. The unresolved contribution must concentrate near equal ranks.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

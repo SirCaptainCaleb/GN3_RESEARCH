@@ -66,3 +66,8 @@ In the complement of a Hamilton path of the cubic graph \(K_{3,3}\), the only ve
 Thus the projective system is \(P_7^{(3)}\)-free. Taking disjoint copies gives (4). ∎
 
 This exceptional obstruction does not persist in higher dimensions. For all sufficiently large projective dimensions, the projective system has a spanning linear path. Likewise, deleting two prescribed nonzero points from a sufficiently large projective system still leaves a spanning linear path. Thus the projective construction yields isolated exceptional lengths rather than an infinite improvement.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

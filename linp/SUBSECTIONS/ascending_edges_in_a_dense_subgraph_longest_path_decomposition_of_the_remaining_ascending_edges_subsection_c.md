@@ -38,3 +38,8 @@ Lemmas 7 and 8 reduce the unresolved ascending mass to two phenomena:
 
 1. many edges of edge rank \(p-o(p)\) whose unique entrance lies on a maximum \(p\)-edge path;
 2. many alternative last vertices of rank at least \(p\), produced from edges whose opposite terminal lies on that path.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -36,3 +36,8 @@ A sufficient statement would be the following: whenever the edges meeting \(X\) 
 D_Y\ge r. \tag{14}
 \]
 Lemmas 2–5 describe mechanisms by which missing edges in \(H[Y]\) can arise, but they do not yet prove (14).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

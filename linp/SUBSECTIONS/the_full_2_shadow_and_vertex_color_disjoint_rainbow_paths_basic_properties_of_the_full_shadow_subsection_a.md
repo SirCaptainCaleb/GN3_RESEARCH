@@ -41,3 +41,8 @@ The coloring has additional symmetry: if \(c(xy)=z\), then
 c(xz)=y,\qquad c(yz)=x. \tag{4}
 \]
 Thus every hyperedge appears as a triangle whose edge colors are the opposite vertices.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

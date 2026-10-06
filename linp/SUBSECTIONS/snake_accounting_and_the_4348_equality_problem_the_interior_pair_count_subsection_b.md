@@ -58,3 +58,8 @@ V_{\ge p}=\{w:\phi(w)\ge p\}. \tag{30}
 \]
 
 Thus every low-\(\eta_v\) high-rank vertex produces linearly many local cycles or linearly many distinct edges in its rank superlevel.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

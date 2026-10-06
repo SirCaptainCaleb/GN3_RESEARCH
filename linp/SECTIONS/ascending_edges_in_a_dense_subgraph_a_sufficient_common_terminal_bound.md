@@ -43,6 +43,8 @@ Hence full specialness is stronger than necessary: a sublinear common-terminal b
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

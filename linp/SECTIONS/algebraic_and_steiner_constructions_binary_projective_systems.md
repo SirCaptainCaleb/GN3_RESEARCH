@@ -89,6 +89,8 @@ This exceptional obstruction does not persist in higher dimensions. For all suff
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

@@ -39,3 +39,8 @@ because for every \(\varepsilon>0\),
 This contradicts (37).
 
 The remaining difficulty is therefore global reuse of the maximum paths, terminal vertices, fundamental-cycle edges, local \(3\)-cycles, and rank-superlevel edges produced above.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

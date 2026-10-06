@@ -45,6 +45,8 @@ Thus a bound on \(\beta(T)+h\) would also yield a rank theorem.
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

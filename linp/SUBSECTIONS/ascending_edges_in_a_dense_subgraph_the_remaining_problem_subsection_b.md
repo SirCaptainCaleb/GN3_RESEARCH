@@ -26,3 +26,8 @@ Any of the following would suffice:
 4. a proof that a \(>(2\ell/3)\)-core contains no nonspecial edge.
 
 The last statement is the strongest of these sufficient conditions. The first three are weaker and already give the same leading coefficient.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -37,3 +37,8 @@ E_q\cap E_{q'}=\{x\}.
 If \(q,q'\) are nonadjacent, they lie together in no \(C_x\), so \(E_q\cap E_{q'}=\varnothing\). Thus the triples \(E_q\) form a linear \(3\)-graph whose intersection graph is \(F\). ∎
 
 Any proof of (1) may therefore use the three-clique realization furnished by Lemma 2. A theorem for arbitrary induced-path-free graphs is unnecessarily general.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

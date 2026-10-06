@@ -65,3 +65,8 @@ d_H(u)=d+1,\qquad d_{H-w}(u)=d,
 and exactly one hyperedge contains \(\{u,w\}\). ∎
 
 Thus deletion of a low-degree vertex outside the witness path produces a specific edge joining it to a degree-\((d+1)\) vertex; it does not by itself contradict minimality.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

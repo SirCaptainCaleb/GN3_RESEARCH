@@ -41,3 +41,8 @@ H\text{ is }P_\ell^{(3)}\text{-free}
 \iff
 F\text{ is induced-}P_\ell\text{-free}. \tag{3}
 \]
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

@@ -45,3 +45,8 @@ Any linear hypergraph path can contain at most two odd-indexed edges, because th
 Thus no positive proportion of an arbitrary ordinary shadow path can be extracted without using the colors.
 
 The same example explains the precise difficulty in Theorem 2: the graph vertices \(x_i\) are all distinct, but the colors repeat heavily.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

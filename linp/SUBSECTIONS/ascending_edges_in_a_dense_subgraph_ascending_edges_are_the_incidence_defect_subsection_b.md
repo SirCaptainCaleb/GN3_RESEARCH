@@ -31,3 +31,8 @@ Fix \(v\) and put \(p=\phi(v)\). Choose a maximum \(p\)-edge path \(P\) with las
 By Lemma 1, the only remaining incident edges are ascending edges whose unique entrance is \(v\). Summing the bound \(2\phi(v)-1\) over all vertices therefore counts every edge three times except that each ascending edge loses exactly its unique-entrance incidence. This proves (1). If \(H\) is \(P_\ell^{(3)}\)-free, then \(\phi(v)\le\ell-1\), which gives (2). ∎
 
 Thus the two-thirds bound follows once \(A=o(\ell n)\).
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

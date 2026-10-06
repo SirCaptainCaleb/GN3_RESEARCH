@@ -29,3 +29,8 @@ If the forced second intersections occur on many distinct maximum paths or at ma
 If many of them reuse the same path, unique entrance, or path position, that multiplicity must force either larger edge rank, additional unique entrances, or a special edge.
 
 What is not presently proved is the global multiplicity bound required to sum these local alternatives over all fundamental cycles.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

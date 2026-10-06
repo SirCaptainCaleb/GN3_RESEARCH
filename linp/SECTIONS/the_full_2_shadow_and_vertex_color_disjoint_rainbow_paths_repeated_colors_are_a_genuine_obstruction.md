@@ -46,6 +46,8 @@ The same example explains the precise difficulty in Theorem 2: the graph vertice
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

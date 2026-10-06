@@ -17,7 +17,7 @@ Reads durable Article, Section, Subsection, Toolkit, and Brainstorm content.
 Shows mathematical dependencies, consumers, supersessions, Article references, and origin.
 
 ### composition_status(node_type, node_id)
-Shows the current development and composition versions together with dependency staleness.
+Shows the current composition version, explicit dependency staleness, and frontier metadata describing what material existed when the composition was written.
 
 ### dependencies(node_type, node_id)
 Shows the dependency manifest for a manuscript node.
@@ -27,20 +27,20 @@ Returns live events and current composition state since a revision.
 
 ## Development
 
-### new_subsection(session_id, section_id, payload, dependencies, expected_section_version)
-Creates a local Subsection development branch. Pass dependencies explicitly; use [] for an independent Subsection.
+### new_subsection(session_id, section_id, payload, expected_section_version)
+Creates a local Subsection development branch.
 
-### save_subsection(session_id, section_id, payload, dependencies, expected_section_version, expected_subsection_version)
-Edits an existing Subsection by stable ID and records its direct dependencies.
+### save_subsection(session_id, section_id, payload, expected_section_version, expected_subsection_version)
+Edits an existing Subsection by stable ID.
 
-### compose(session_id, node_type, node_id, body, expected_development_version, source_note)
-Compresses the current development of an Article, Section, or Subsection into a canonical composition. Composition automatically depends on the current development version of the same node.
+### compose(session_id, node_type, node_id, payload, expected_composition_version)
+Writes a deliberately lossy composition. payload contains body and, for Sections and Articles, depends_on as an explicit array of direct lower-level composition IDs. Use [] when independent. Pass NULL only for the first composition; otherwise pass the current composition version. Only the current and immediately previous composition are retained.
 
-### save_research(session_id, payload, dependencies, expected_version := null)
-Creates or edits a Section or Toolkit object and records its direct dependencies.
+### save_research(session_id, payload, expected_version := null)
+Creates or edits Section structure/metadata or a Toolkit object.
 
-### save_document(session_id, payload, dependencies, expected_version := null)
-Creates or edits a project document or Article and records its direct dependencies.
+### save_document(session_id, payload, expected_version := null)
+Creates or edits a project document or Article structure/metadata.
 
 ## Brainstorms
 
@@ -68,7 +68,7 @@ Completes a claimed audit or maintenance task.
 
 Use stage_batch_chunk, review_staged_batch, and commit_staged_batch for multi-operation publication. stage_batch_chunk accepts JSON text or base64:<blob>; base64 is decoded as UTF-8 before review and commit.
 
-Development-save operations place dependencies at the operation top level. Compose operations place body, expected_development_version, and source_note at the operation top level.
+Compose operations carry payload.body, payload.depends_on, expected_composition_version, and optional source_note. Development operations use their ordinary payload contracts.
 
 ### artifact_help()
 Returns artifact recovery and rebuild information.

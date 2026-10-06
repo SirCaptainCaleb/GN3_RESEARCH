@@ -42,3 +42,8 @@ The real \(0/1\) incidence matrix of a graph has nullity at most its cycle rank,
 Adding the \(s\) special columns can increase nullity by at most \(s\). ∎
 
 Thus a bound on \(\beta(T)+h\) would also yield a rank theorem.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

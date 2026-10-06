@@ -104,6 +104,8 @@ Choose \(h\in T(v)\) of maximum edge rank \(q\). Every member of \(T(v)\) has ed
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

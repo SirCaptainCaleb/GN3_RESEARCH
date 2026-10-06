@@ -81,6 +81,8 @@ which proves (22). Since \(q\le p-1\), (5) gives (23). ∎
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

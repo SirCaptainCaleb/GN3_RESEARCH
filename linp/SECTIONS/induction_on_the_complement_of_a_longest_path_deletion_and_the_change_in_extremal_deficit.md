@@ -97,6 +97,8 @@ Thus deletion of a low-degree vertex outside the witness path produces a specifi
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

@@ -30,6 +30,8 @@ What is not presently proved is the global multiplicity bound required to sum th
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 2
+- Subsections now: 2
 
 ## Development tree
 

@@ -34,3 +34,8 @@ are all distinct.
 By Theorem 2 and (2), this statement is exactly the one-third upper bound.
 
 General rainbow-path theorems cannot supply it because Proposition 4 loses a factor two, and ordinary graph-path extraction cannot supply it because of Proposition 7. The remaining argument must use the symmetric triangle structure of the full shadow to control repeated colors.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

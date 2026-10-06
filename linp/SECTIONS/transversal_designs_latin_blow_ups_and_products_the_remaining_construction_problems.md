@@ -35,6 +35,8 @@ The unresolved lower-bound problem in this family is therefore not to choose a d
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 3
+- Subsections now: 3
 
 ## Development tree
 

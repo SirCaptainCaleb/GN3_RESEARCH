@@ -54,6 +54,8 @@ The point of (32)–(35) is that they retain the \(1/8\)-scale family while remo
 - Refutation: unrefuted
 - Composition version: 1
 - Composition stale: False
+- Subsections existing when composed: 1
+- Subsections now: 1
 
 ## Development tree
 

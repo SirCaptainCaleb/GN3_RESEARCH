@@ -69,3 +69,8 @@ The \(q_i\) are distinct, the \(d_i\) are distinct, and the two sets are disjoin
 form a linear path of length \(MN-1\). The tensor square has normalized density strictly below \(1/3\) at its first forbidden length.
 
 These observations rule out the direct higher-dimensional projective, affine, single-weight-code, repeated fibre-extension, symmetric-deletion, ordinary-doubling, and diagonal-tensor enlargements of the preceding small examples.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

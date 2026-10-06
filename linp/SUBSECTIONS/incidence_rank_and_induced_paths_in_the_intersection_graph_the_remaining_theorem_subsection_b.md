@@ -29,3 +29,8 @@ Two weaker statements would also advance the argument:
 2. prove a bound on \(\beta(T)+h\) strong enough that Proposition 6 forces the desired rank.
 
 The unresolved step is therefore confined to the high-degree part of the three-clique realizability class.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

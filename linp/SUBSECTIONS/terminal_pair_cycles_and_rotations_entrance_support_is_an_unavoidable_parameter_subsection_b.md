@@ -60,3 +60,8 @@ b-v+\kappa(T)
 This proves (5). Adding \(s\) special columns can increase nullity by at most \(s\), proving (6). ∎
 
 Thus the natural global quantity is \(\beta(T)+h\), not \(\beta(T)\) alone.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1

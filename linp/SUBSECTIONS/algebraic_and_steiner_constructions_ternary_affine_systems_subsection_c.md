@@ -32,3 +32,8 @@ This obstruction is not stable with dimension. In \(A_3\), the following thirtee
 \end{aligned}
 \]
 Consecutive lines meet once, nonconsecutive lines are disjoint, and their union is all \(27\) points. Thus the joint-sum condition alone cannot yield an infinite affine family.
+
+## Frontier
+
+- Development version when composed: None
+- Development version now: 1
