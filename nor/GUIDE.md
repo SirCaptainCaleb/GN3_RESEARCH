@@ -1,8 +1,5 @@
 # Research workflow
 
-
-# Research workflow
-
 ## Working principle
 
 **Publish cheaply downward; compress deliberately upward.**
@@ -11,31 +8,23 @@ Use Brainstorms for loose ideation, Subsections for local mathematical developme
 
 ## Development and composition
 
-Development records the mathematics being worked on. Composition is the current concise canonical rendering of that same node.
+Subsections are the manuscript development objects. Sections and Articles organize material and expose compositions rather than independent development prose.
 
 Treat each composition as a deliberately lossy compression of the material below it.
 
-Create local branches freely as Subsections. Edit earlier development whenever later mathematics improves it. Compose when a node has enough coherent mathematics to deserve a readable canonical form.
+Create local mathematical branches freely as Subsections. Edit earlier Subsection development whenever later mathematics improves it. Recompose Sections and Articles when a better synthesis is worthwhile.
 
-Composition is selective: preserve useful lower-level development even when the composition omits it.
+## Dependencies and staleness
 
-## Dependencies
+Dependencies belong to compositions. A Section composition may depend on selected direct Subsection compositions; an Article composition may depend on selected direct Section compositions; a Subsection composition has no lower composition layer.
 
-The dependency graph alternates between development and composition layers.
-
-- A composition automatically depends on the current development version of the same node.
-- Section development may depend on selected Subsection compositions.
-- Article development may depend on selected Section compositions.
-- Subsection development declares an explicit empty dependency list.
-- Every development save records its direct dependencies explicitly.
-
-Staleness records an exact source-version mismatch. A stale source remains usable as recorded context; downstream staleness begins when the exact source layer and version named by a dependency changes.
+A composition becomes stale only when an explicitly depended-on composition is replaced by a newer composition version. Frontier metadata separately records what lower-level material existed when the composition was written.
 
 ## Research flow
 
-Read the current composition first, then inspect the specific development or dependencies relevant to the task. Use changes(...) to refresh work beyond the artifact snapshot and read(...) for exact live content.
+Read the current composition first, then inspect the Subsections or dependencies relevant to the task. Use changes(...) to refresh work beyond the artifact snapshot and read(...) for exact live content.
 
-When new mathematics changes the best exposition, update the relevant development and recompose upward when the synthesis is worthwhile.
+When new mathematics changes the best exposition, update the relevant Subsection development and recompose upward when the synthesis is worthwhile.
 
 ## Audits
 
