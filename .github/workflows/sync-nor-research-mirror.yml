@@ -7,6 +7,9 @@ on:
     paths:
       - ".github/workflows/sync-nor-research-mirror.yml"
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     uses: ./.github/workflows/sync-research-schema.yml
