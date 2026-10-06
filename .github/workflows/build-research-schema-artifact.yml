@@ -1,0 +1,122 @@
+name: Build one research schema artifact
+
+on:
+  workflow_call:
+    inputs:
+      schema:
+        description: Research schema to package
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: research-context-artifact-${{ inputs.schema }}
+  cancel-in-progress: false
+
+jobs:
+  artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Validate schema
+        env:
+          RESEARCH_SCHEMA: ${{ inputs.schema }}
+        run: |
+          case "$RESEARCH_SCHEMA" in
+            gn3n|nor|linp) ;;
+            *) echo "Unsupported schema: $RESEARCH_SCHEMA" >&2; exit 2 ;;
+          esac
+          test -f "$RESEARCH_SCHEMA/MANIFEST.json"
+          test -f "$RESEARCH_SCHEMA/BOOT.md"
+      - name: Package schema
+        env:
+          RESEARCH_SCHEMA: ${{ inputs.schema }}
+        run: |
+          set -euo pipefail
+          ZIP="research-context-${RESEARCH_SCHEMA}.zip"
+          rm -f "$ZIP"
+          zip -qr "$ZIP" "$RESEARCH_SCHEMA"
+      - name: Upload Actions artifact
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-context-${{ inputs.schema }}
+          path: ${{ inputs.schema }}/
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 7
+      - name: Publish latest schema release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RESEARCH_SCHEMA: ${{ inputs.schema }}
+        run: |
+          set -euo pipefail
+          TAG="research-context-${RESEARCH_SCHEMA}-latest"
+          ZIP="research-context-${RESEARCH_SCHEMA}.zip"
+          gh release delete "$TAG" --repo "$REPO" --yes --cleanup-tag || true
+          gh release create "$TAG" "$ZIP" \
+            --repo "$REPO" --target main \
+            --title "Research Context ${RESEARCH_SCHEMA} (latest)" \
+            --notes "Latest clean ${RESEARCH_SCHEMA} research snapshot. Supabase remains authoritative for publication."
+      - name: Record schema artifact metadata in Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          REPO: ${{ github.repository }}
+          COMMIT_SHA: ${{ github.sha }}
+          CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          RESEARCH_SCHEMA: ${{ inputs.schema }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, urllib.request
+
+          schema = os.environ["RESEARCH_SCHEMA"]
+          manifest = json.loads(pathlib.Path(schema, "MANIFEST.json").read_text())
+          artifact_name = f"research-context-{schema}"
+          tag = f"research-context-{schema}-latest"
+          payload = {
+              "p_revisions": {schema: manifest["snapshot_revision"]},
+              "p_release_url": f"https://github.com/{os.environ['REPO']}/releases/tag/{tag}",
+              "p_asset_url": f"https://github.com/{os.environ['REPO']}/releases/download/{tag}/{artifact_name}.zip",
+              "p_commit_sha": os.environ["COMMIT_SHA"],
+              "p_artifact_path": f"https://api.github.com/repos/{os.environ['REPO']}/actions/artifacts/{os.environ['CURRENT_ARTIFACT_ID']}",
+              "p_repository": os.environ["REPO"],
+              "p_workflow_run_id": int(os.environ["WORKFLOW_RUN_ID"]),
+              "p_artifact_name": artifact_name,
+              "p_artifact_id": int(os.environ["CURRENT_ARTIFACT_ID"]),
+          }
+          key = os.environ["SUPABASE_SECRET_KEY"]
+          headers = {"apikey": key, "Content-Type": "application/json", "Accept": "application/json"}
+          if not key.startswith("sb_secret_"):
+              headers["Authorization"] = f"Bearer {key}"
+          req = urllib.request.Request(
+              os.environ["SUPABASE_URL"].rstrip("/") + "/rest/v1/rpc/research_artifact_publish",
+              data=json.dumps(payload).encode(), headers=headers, method="POST")
+          with urllib.request.urlopen(req, timeout=60) as r:
+              print(r.read().decode())
+          PY
+      - name: Delete older schema artifacts
+        if: ${{ success() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          CURRENT_ARTIFACT_ID: ${{ steps.upload.outputs.artifact-id }}
+          RESEARCH_SCHEMA: ${{ inputs.schema }}
+        run: |
+          set -euo pipefail
+          NAME="research-context-${RESEARCH_SCHEMA}"
+          gh api --paginate "repos/$REPO/actions/artifacts?per_page=100" \
+            --jq ".artifacts[] | select(.name == \"$NAME\") | .id" |
+          while read -r artifact_id; do
+            [ -z "$artifact_id" ] && continue
+            if [ "$artifact_id" != "$CURRENT_ARTIFACT_ID" ]; then
+              gh api --method DELETE "repos/$REPO/actions/artifacts/$artifact_id" || true
+            fi
+          done
