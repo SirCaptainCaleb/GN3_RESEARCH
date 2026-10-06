@@ -10,6 +10,10 @@ on:
     paths:
       - ".github/workflows/build-gn3n-research-artifact.yml"
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   build:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
