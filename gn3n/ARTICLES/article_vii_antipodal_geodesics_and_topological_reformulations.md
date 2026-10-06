@@ -2,56 +2,63 @@
 
 ## Composition status
 
-- Composition version: 6
+- Composition version: 9
 - Stale: False
-- Composed through revision: 1575
+- Composed through revision: 1916
 
 ## Composition
 
-# Article VII — exact deficiency, antipodal roots, and terminal carriers
+# Article VII — exact deficiency, antipodal roots, and the minimum-counterexample frontier
 
-For a spanning order, let \(p\) be the first non-tight status and \(q\) the last tight status. The grand two-cover condition is equivalent to the existence of an order satisfying
+For a spanning order \(\pi\), let \(p(\pi)\) be the first non-tight status and \(q(\pi)\) the last tight status, and put
 \[
-q\le p+1.
+c(\pi)=m+1-q(\pi),\qquad d_2(\pi)=\max\{0,q-p-1\}.
 \]
-The deficiency \(d_2=\max\{0,q-p-1\}\) is not merely an order statistic:
+The basic exactness theorem identifies
 \[
 \kappa_2(H)=\min_\pi d_2(\pi),
 \]
-the minimum number of vertex deletions required to obtain a two-cover. Its positive local witnesses are exactly
+so the order statistic is exactly the deletion distance to a spanning two-path cover. The corresponding exact inversion root
 \[
-001,\qquad 011,\qquad 0101.
+\psi(\pi)=e_{p(\pi)}-e_{c(\pi)}
 \]
+is odd under reversal. Thus antipodal topology can be applied directly to the genuine two-cover deficiency rather than to an auxiliary surrogate.
 
-The exact inversion root
+The convex-root construction produces positively balanced carrier faces. When all roots on such a carrier are nonzero, face geometry compresses sharply: the varying root data lie in one central block of order at most four, with only bounded exterior freedom. For \(\kappa_2(H)\ge2\), the dimension surplus already forces a zero exact root. The only potentially exceptional nonzero recurrence is therefore the deletion-distance-one case.
+
+Now let \(H\) be a minimum-order counterexample. Every proper induced subtournament satisfies the conjecture, so for every vertex \(x\), \(H-x\) has a spanning two-cover. Hence
 \[
-\psi(\pi)=e_{p(\pi)}-e_{c(\pi)},\qquad c=m+1-q,
+\kappa_2(H)=1.
 \]
-is odd under reversal. The cellular antipodal construction and Bourgin--Yang yield positively balanced carrier faces. Nonzero exact-root recurrence is bounded by a central face block of order at most four. In fact,
+At deletion distance one, three surplus antipodal dimensions may be spent on three actual-vertex role coordinates. For any prescribed triple, Borsuk--Ulam yields a positively balanced exact-root carrier with zero average in those three roles. If this carrier had no zero root, the exact-root compression theorem forces the unique possible geometry: a freely permuted four-vertex central block with equal left and right sides, and all four central role averages zero.
+
+That four-block cannot occur. Boundary antisymmetry among five selected permutations of the block forces incompatible central status words. Consequently the entire nonzero exact-root branch is empty in a minimum counterexample.
+
+Thus every minimum-order counterexample contains a chamber with
 \[
-\kappa_2(H)\ge2
+p(\pi)=c(\pi).
 \]
-forces every positively balanced exact-root carrier to contain a zero-root chamber \(p=c\). Thus the large-scale exact-root problem reduces to a symmetric canonical partial cover
+This is the present exact-root frontier. It is important not to mistake it for a two-cover: zero root is a symmetric exact-deficiency state, not closure by itself.
+
+The deletion-cover topology independently constrains any residue that survives equivariant leaf collapse. Cubical parity propagates partial critical stars to full stars; minimum-degree full stars saturate Johnson blocks; and minimum-counterexample heredity then forces any nonempty antipodally invariant closed deletion residue to be the complete odd middle layer:
 \[
-P\mid X\mid Q,\qquad |P|=|Q|.
+n=2r+1,
 \]
+every \(r\)-set is Hamiltonian, and every \((r+1)\)-set is non-Hamiltonian. Hamiltonian prefix chains further show that any nonempty closed cocycle of actual deletion edges is then the whole middle deletion interface.
 
-The positive local-witness analysis reaches the same geometry independently. Every protected terminal carrier is either supported on at most ten vertices or is a reflected span-two double whose intervening corridor has a two-cover. The bounded branch is discharged by the established small-order theorem. A genuine unbounded reflected double has deletion distance exactly two, admits no repair supported solely on its determining span, and is a two-element minimum deletion state.
+This odd uniform state has strong path consequences. Every exterior vertex reverses both exposed end-edges of every maximum \(r\)-path. Separated or adjacent insertion gaps give genuine path augmentation, while arbitrary compatible insertion orders need not exist. What survives is therefore not a support-only obstruction but an endpoint-order obstruction.
 
-A persistent-face separator removes every long separated zero face unless both reflected span-two occurrences persist throughout the face. In this double-persistent branch the outward status rays are forced, the neutral corridor interior may be frozen, and each boundary reduces to a one- or two-slot rooted reservoir. One-slot success sectors are contractible; blocked two-slot reservoirs are uniformly polarized and admit bounded endpoint-cutting supports.
+Two newer local mechanisms sharpen that obstruction. First, deleting the root vertex from an actual Hamiltonian one-vertex extension leaves at most two adjacent status defects; if both bridge triples fail, boundary reversal exposes a tight reversed four-vertex seam. Second, two maximum paths sharing an endpoint cannot have mutually exterior next vertices in the same endpoint role. More generally, an odd cycle of rooted Hamiltonian supports with pairwise consecutive intersection exactly at the common root forces a path one vertex longer. Hence, in the odd uniform residue, every explicit odd support cycle must contain a support on which the root is internal in every Hamiltonian order.
 
-The carrier obstruction is likewise finite. Pair reservoirs on at most four labels have clique-complex type either contractible or circular, so higher carrier extension reduces to the two-skeleton. Every nontrivial loop reduces to one chordless four-label cycle, fillable by at most two protected exterior labels when the explicit six-label compatibility conditions hold. Minimal commuting protection failures are eight-position local, with an eighteen-position dependency halo.
-
-Finally, minimum-hole heredity identifies the same combinatorial residue without topology. Every genuine reflected double is a Boolean square of deletion distances. Every minimum hole of order at least three contains a pair whose restoration gives a genuine deletion-distance-two induced graph with a spanning three-cover containing a Hamiltonian five-component; in the symmetric case the profile is \(5\mid(s-1)\mid s\). Hole labels are synchronized at all four exposed ends and contain many pairs supporting Hamiltonian four-components at both opposite boundaries.
-
-Accordingly Article VII reduces the grand conjecture to two bounded interfaces rather than closing it. The combinatorial interface is the blocked double-persistent genuine two-deletion state, equivalently the synchronized two-deletion endpoint/five-component handoff. The topological interface is the protected four-label carrier loop. A proof of the grand theorem must convert one of these interfaces into a two-cover or a protected outward carrier. No stronger closure claim is made here.
+Article VII therefore leaves a single scale-independent closure problem. Starting from a zero exact-root chamber in a minimum counterexample, exploit the adjacent two-defect seam and the forced endpoint-role structure to obtain either a spanning two-cover or a contradiction to minimum counterexamplehood. The old nonzero-root recurrence, bounded-support terminalization, and small-order cutoff branches are no longer active frontiers.
 
 ## Contained Sections
 
 - 1. [Spanning orders and defect Helly theory](../SECTIONS/spanning_orders_and_defect_helly.md) (`spanning_orders_and_defect_helly`; composition v2; stale=False)
-- 2. [From antipodal labels to cellular root topology](../SECTIONS/antipodal_labels_and_cellular_root_topology.md) (`antipodal_labels_and_cellular_root_topology`; composition v2; stale=False)
+- 2. [From antipodal labels to cellular root topology](../SECTIONS/antipodal_labels_and_cellular_root_topology.md) (`antipodal_labels_and_cellular_root_topology`; composition v3; stale=False)
 - 3. [Convex root balance and Bourgin–Yang multiplicity](../SECTIONS/convex_root_balance_and_bourgin_yang.md) (`convex_root_balance_and_bourgin_yang`; composition v2; stale=False)
 - 4. [Exact-root compression and bounded central structure](../SECTIONS/exact_root_compression_and_bounded_central_structure.md) (`exact_root_compression_and_bounded_central_structure`; composition v2; stale=False)
-- 5. [Local-witness topology and the finite terminal theorem](../SECTIONS/local_witness_topology_and_the_finite_terminal_theorem.md) (`local_witness_topology_and_the_finite_terminal_theorem`; composition v2; stale=False)
-- 6. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (`terminalization_reachability_and_the_exact_frontier`; composition v8; stale=False)
-- 7. [Synthesis and the exact topological frontier](../SECTIONS/article_vii_synthesis_and_exact_frontier.md) (`article_vii_synthesis_and_exact_frontier`; composition v2; stale=False)
+- 5. [Deletion distance one: role-balanced four-blocks and Ky Fan alternation](../SECTIONS/kappa_one_role_balance_and_ky_fan.md) (`kappa_one_role_balance_and_ky_fan`; composition v2; stale=False)
+- 6. [Local-witness topology and the finite terminal theorem](../SECTIONS/local_witness_topology_and_the_finite_terminal_theorem.md) (`local_witness_topology_and_the_finite_terminal_theorem`; composition v2; stale=False)
+- 7. [Terminalization, reachability, and the exact frontier](../SECTIONS/terminalization_reachability_and_the_exact_frontier.md) (`terminalization_reachability_and_the_exact_frontier`; composition v9; stale=True)
+- 8. [Synthesis and the exact topological frontier](../SECTIONS/article_vii_synthesis_and_exact_frontier.md) (`article_vii_synthesis_and_exact_frontier`; composition v2; stale=False)

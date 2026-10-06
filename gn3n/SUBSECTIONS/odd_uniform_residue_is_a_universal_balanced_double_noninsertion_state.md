@@ -1,0 +1,19 @@
+# Odd uniform residue is a universal balanced double-noninsertion state
+
+## Metadata
+
+- ID: odd_uniform_residue_is_a_universal_balanced_double_noninsertion_state
+- Parent Section: terminalization_reachability_and_the_exact_frontier
+- Position: 280
+- Row version: 1
+- Development version: 1
+- Composition version: 1
+- Composition stale: False
+
+## Composition
+
+Assume the surviving odd uniform residue on n=2r+1 vertices: every r-set is Hamiltonian and every (r+1)-set is non-Hamiltonian. Let A be any longest Hamiltonian support. Then |A|=r: the uniform hypothesis gives supports of order r, while no support can have order r+1 or larger because any Hamilton path of larger order contains a contiguous (r+1)-vertex Hamiltonian subpath. Put U=V-A, so |U|=r+1. Every U-u has order r and is Hamiltonian. Hence U has a two-cover (U-u)|{u} with component orders r|1 for every u in U. In the lexicographic longest-path normal form, where a two-cover P|Q of U is chosen to maximize the larger component, one must therefore have |P|=r and |Q|=1. Thus every longest-path normal form is A_r | P_r | {q}. Since A+q and P+q have order r+1, both are non-Hamiltonian. Therefore q is noninsertable at every gap of the displayed Hamilton orders of both A and P, and in particular reverses both exposed end edges of each. More strongly, fix any q. Every partition V-{q}=A sqcup P with |A|=|P|=r has Hamiltonian sides, while A+q and P+q are non-Hamiltonian. Choosing arbitrary Hamilton orders on A and P, q is noninsertable everywhere in both. Hence the odd uniform residue is equivalently a universal balanced double-noninsertion state: every vertex q blocks every Hamilton order on each side of every balanced partition of H-q. Any theorem forcing insertion into one side for one balanced partition closes the residue and therefore the surviving cubical obstruction.
+
+## Development
+
+Assume the surviving odd uniform residue on n=2r+1 vertices: every r-set is Hamiltonian and every (r+1)-set is non-Hamiltonian. Let A be any longest Hamiltonian support. Then |A|=r: the uniform hypothesis gives supports of order r, while no support can have order r+1 or larger because any Hamilton path of larger order contains a contiguous (r+1)-vertex Hamiltonian subpath. Put U=V-A, so |U|=r+1. Every U-u has order r and is Hamiltonian. Hence U has a two-cover (U-u)|{u} with component orders r|1 for every u in U. In the lexicographic longest-path normal form, where a two-cover P|Q of U is chosen to maximize the larger component, one must therefore have |P|=r and |Q|=1. Thus every longest-path normal form is A_r | P_r | {q}. Since A+q and P+q have order r+1, both are non-Hamiltonian. Therefore q is noninsertable at every gap of the displayed Hamilton orders of both A and P, and in particular reverses both exposed end edges of each. More strongly, fix any q. Every partition V-{q}=A sqcup P with |A|=|P|=r has Hamiltonian sides, while A+q and P+q are non-Hamiltonian. Choosing arbitrary Hamilton orders on A and P, q is noninsertable everywhere in both. Hence the odd uniform residue is equivalently a universal balanced double-noninsertion state: every vertex q blocks every Hamilton order on each side of every balanced partition of H-q. Any theorem forcing insertion into one side for one balanced partition closes the residue and therefore the surviving cubical obstruction.

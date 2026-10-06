@@ -26,21 +26,27 @@
         "version": 2
       },
       {
+        "id": "kappa_one_role_balance_and_ky_fan",
+        "math_version": 4,
+        "position": 5,
+        "version": 4
+      },
+      {
         "id": "local_witness_topology_and_the_finite_terminal_theorem",
         "math_version": 2,
-        "position": 5,
+        "position": 6,
         "version": 2
       },
       {
         "id": "terminalization_reachability_and_the_exact_frontier",
-        "math_version": 8,
-        "position": 6,
-        "version": 10
+        "math_version": 9,
+        "position": 7,
+        "version": 11
       },
       {
         "id": "article_vii_synthesis_and_exact_frontier",
         "math_version": 26,
-        "position": 7,
+        "position": 8,
         "version": 35
       }
     ],
@@ -420,16 +426,16 @@
   "article_versions": {
     "article_vii_antipodal_geodesics_and_topological_reformulations": {
       "composition": {
-        "body_chars": 3538,
-        "composed_through_revision": 1575,
-        "composition_version": 6,
+        "body_chars": 7281,
+        "composed_through_revision": 1916,
+        "composition_version": 9,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Recomposed bottom-up after the elevation pass. Historical auxiliary-geodesic and superseded terminal-closure routes are excluded.",
+        "source_note": "Recomposed Article VII to integrate the corrected unordered-versus-ordered cube geodesic dictionary and remove the false distinguished-pole restriction for ordered windows.",
         "stale": false,
         "stale_children": []
       },
-      "version": 125
+      "version": 126
     },
     "defect_lines_and_spanningorder_compression": {
       "composition": {
@@ -512,7 +518,7 @@
   },
   "brainstorm_count": 128,
   "composition_model": "recursive-composition-v6",
-  "generated_at": "2026-10-06T00:50:45.545222+00:00",
+  "generated_at": "2026-10-06T05:15:57.147133+00:00",
   "mirror_format": 17,
   "schema": "gn3n",
   "section_versions": {
@@ -532,12 +538,12 @@
     },
     "antipodal_labels_and_cellular_root_topology": {
       "composition": {
-        "body_chars": 668,
-        "composed_through_revision": 1568,
-        "composition_version": 2,
+        "body_chars": 2932,
+        "composed_through_revision": 1915,
+        "composition_version": 3,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
+        "source_note": "Integrated corrected cube dictionary into the Article VII topology spine.",
         "stale": false,
         "stale_children": []
       },
@@ -1134,17 +1140,17 @@
     },
     "kappa_one_role_balance_and_ky_fan": {
       "composition": {
-        "body_chars": 7815,
-        "composed_through_revision": 1083,
-        "composition_version": 1,
+        "body_chars": 1015,
+        "composed_through_revision": 1893,
+        "composition_version": 2,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Imported from the legacy assembled Section body during recursive-compression migration.",
+        "source_note": "Recomposed to retain the closure-relevant kappa-one exact-root reduction and four-block impossibility.",
         "stale": false,
         "stale_children": []
       },
-      "math_version": 3,
-      "version": 3
+      "math_version": 4,
+      "version": 4
     },
     "leaf_comparisons_in_deletion_support_forests": {
       "composition": {
@@ -1540,17 +1546,24 @@
     },
     "terminalization_reachability_and_the_exact_frontier": {
       "composition": {
-        "body_chars": 2553,
-        "composed_through_revision": 1572,
-        "composition_version": 8,
+        "body_chars": 2441,
+        "composed_through_revision": 1892,
+        "composition_version": 9,
         "development_changed": false,
         "has_composition": true,
-        "source_note": "Bottom-up Article VII recomposition: only the selected theorem-bearing Subsections are depended upon.",
-        "stale": false,
-        "stale_children": []
+        "source_note": "Recomposed after elevating current minimum-counterexample, odd-uniform, root-seam, and endpoint-cycle results.",
+        "stale": true,
+        "stale_children": [
+          {
+            "current_composition_version": 1,
+            "depends_on": false,
+            "parent_saw_composition_version": null,
+            "source_id": "a_majority_coloring_closes_universal_endpoint_pair_rigidity_and_yields_an_anchored_three_vertex_prefix"
+          }
+        ]
       },
-      "math_version": 8,
-      "version": 10
+      "math_version": 9,
+      "version": 11
     },
     "three_cover_repartitions_and_recurrence_appendix_why_finiteness_is_insufficient": {
       "composition": {
@@ -1707,7 +1720,7 @@
       "version": 25
     }
   },
-  "snapshot_revision": 1859,
+  "snapshot_revision": 1917,
   "startup_broadcasts": [
     {
       "body": "Project override: minimum-counterexample and minimum-order-counterexample arguments are allowed whenever they materially simplify, compress, or close the active proof branch. The previous bounded-order prerequisite is removed. Use minimality deliberately rather than reflexively: state what is minimized, verify any smaller object remains in the theorem class, and prefer minimality when it immediately kills a branch or turns hereditary descent into contradiction.",
@@ -1771,6 +1784,18 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "a_deletion_critical_non_hamiltonian_six_set_exists": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "a_four_cycle_five_support_has_a_thirteen_label_attachment_certificate": {
       "composition": {
         "composition_version": null,
@@ -1812,6 +1837,21 @@
         "composition_version": null,
         "development_changed": false,
         "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "a_majority_coloring_closes_universal_endpoint_pair_rigidity_and_yields_an_anchored_three_vertex_prefix": {
+      "composition": {
+        "body_chars": 2170,
+        "composed_through_revision": 1901,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Audited recovery after worker usage-limit cutoff: persisted the functional-graph majority-coloring fence and its actual r+1 path extension.",
         "stale": false,
         "stale_children": []
       },
@@ -1927,6 +1967,18 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "a_whole_maximum_support_is_forced_to_have_non_rigid_initial_pairs": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "active_frontier_mostly_edge_ordered_six_shadow_and_one_edge_completion_defect": {
       "composition": {
         "composition_version": null,
@@ -1999,6 +2051,18 @@
       "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 1
     },
+    "an_unused_vertex_converts_a_reversed_endpoint_pair_match_into_an_actual_two_cover": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "anchored_six_path_extension_closes_a_genuine_two_deletion_state": {
       "composition": {
         "composition_version": null,
@@ -2013,9 +2077,12 @@
     },
     "antipodal_degree_and_minimality_force_every_closed_deletion_core_to_be_the_complete_odd_middle_layer": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 3399,
+        "composed_through_revision": 1880,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -2467,6 +2534,18 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "audit_zero_exact_root_does_not_by_itself_supply_a_balanced_deletion_cover": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "auxiliary_center_fibers_are_exact_inversion_windows": {
       "composition": {
         "composition_version": null,
@@ -2624,6 +2703,18 @@
       "version": 1
     },
     "balanced_ten_position_repairs_have_explicit_protected_endpoint_orbits": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "balanced_zero_root_trees_have_no_exceptional_leaf_labels": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -3043,6 +3134,21 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "corrected_cube_dictionary_unordered_pole_crossing_and_ordered_windows": {
+      "composition": {
+        "body_chars": 2677,
+        "composed_through_revision": 1914,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Compressed statement of the corrected unordered-versus-ordered cube dictionary.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "antipodal_labels_and_cellular_root_topology",
+      "version": 1
+    },
     "corrected_island_packet_indices_and_the_empty_connector_condition": {
       "composition": {
         "composition_version": null,
@@ -3207,9 +3313,12 @@
     },
     "cubical_parity_propagates_a_partial_source_star_to_a_complete_critical_star": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 2452,
+        "composed_through_revision": 1876,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -3453,6 +3562,18 @@
       "development_version": 2,
       "section_id": "defect_lines_and_spanning_order_compression_transport_with_the_deleted_vertex_fixed",
       "version": 2
+    },
+    "defective_core_insertion_augmentation_and_a_deletion_critical_refutation_of_reversed_seam_gluing": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "deletion_covers_and_the_support_graph_appendix_why_two_selected_supports_need_not_suffice_in_the_forest_case_subsection_a": {
       "composition": {
@@ -4303,6 +4424,18 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "failure_of_reversed_pair_growth_forces_a_global_endpoint_desert": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "featureless_equality_endpoints_have_distinct_ordinary_deletion_labels": {
       "composition": {
         "composition_version": null,
@@ -4726,11 +4859,29 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "hamiltonian_one_vertex_extensions_need_not_admit_compatible_insertion_orders": {
+      "composition": {
+        "body_chars": 1839,
+        "composed_through_revision": 1885,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "hamiltonian_prefix_chains_force_every_closed_deletion_subfamily_to_be_the_whole_monotone_interface": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 5163,
+        "composed_through_revision": 1881,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -4944,15 +5095,30 @@
     },
     "kappa_one_role_balance_and_ky_fan_subsection_a": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 7771,
+        "composed_through_revision": 1874,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
       "development_version": 3,
       "section_id": "kappa_one_role_balance_and_ky_fan",
       "version": 3
+    },
+    "large_minimum_balanced_holes_force_uniform_one_hole_imbalance": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
     },
     "largest_hamiltonian_supports_in_minimum_counterexamples_have_half_order": {
       "composition": {
@@ -5263,6 +5429,18 @@
       "section_id": "longest_paths_and_reversal_structure_the_remaining_lemma",
       "version": 1
     },
+    "longest_reversed_pair_paths_force_a_large_endpoint_desert_and_a_two_edge_reversal_fan": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "matched_cut_hall_obstructions_force_a_four_support_or_endpoint_transfer": {
       "composition": {
         "composition_version": null,
@@ -5518,11 +5696,38 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 1
     },
+    "minimum_balanced_holes_have_a_rank_one_extension_obstruction": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "minimum_counterexample_closure_is_a_one_rank_support_pair_extension_problem": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
         "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "minimum_counterexample_closure_reduces_to_the_zero_exact_root_branch": {
+      "composition": {
+        "body_chars": 1898,
+        "composed_through_revision": 1886,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -5580,9 +5785,12 @@
     },
     "minimum_degree_full_stars_force_uniform_exterior_polarity": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 2537,
+        "composed_through_revision": 1877,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -5592,9 +5800,12 @@
     },
     "minimum_degree_full_stars_form_saturated_johnson_blocks": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 3203,
+        "composed_through_revision": 1878,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -6028,6 +6239,18 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 3
     },
+    "non_rigid_maximum_supports_can_avoid_any_prescribed_vertex_pair": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "norine_gn3_dictionary_and_freudenthal_geometry_subsection_a": {
       "composition": {
         "body_chars": 6303,
@@ -6091,6 +6314,21 @@
       "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 1
     },
+    "odd_cycles_of_actual_endpoint_paths_force_a_longer_path_without_compatible_insertion_orders": {
+      "composition": {
+        "body_chars": 6439,
+        "composed_through_revision": 1888,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "odd_single_switch_cycles_generate_a_johnson_cycle_of_pair_critical_non_hamiltonian_sets": {
       "composition": {
         "composition_version": null,
@@ -6108,6 +6346,36 @@
         "composition_version": null,
         "development_changed": false,
         "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "odd_uniform_middle_layer_has_universal_two_ended_maximum_path_reversal": {
+      "composition": {
+        "body_chars": 1730,
+        "composed_through_revision": 1882,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "odd_uniform_residue_is_a_universal_balanced_double_noninsertion_state": {
+      "composition": {
+        "body_chars": 1490,
+        "composed_through_revision": 1883,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -6976,6 +7244,18 @@
       "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 3
     },
+    "replacement_classes_force_four_double_prefix_reversers_and_an_anchored_five_path": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "reseeding_forces_the_maximal_support_to_dominate_the_complement": {
       "composition": {
         "composition_version": null,
@@ -7041,6 +7321,21 @@
         "composition_version": null,
         "development_changed": false,
         "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "root_deletion_localizes_extension_incompatibility_to_one_adjacent_two_defect_seam": {
+      "composition": {
+        "body_chars": 802,
+        "composed_through_revision": 1887,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -7224,6 +7519,21 @@
         "composition_version": null,
         "development_changed": false,
         "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "separated_and_adjacent_insertion_gaps_give_genuine_unbounded_path_augmentation": {
+      "composition": {
+        "body_chars": 3249,
+        "composed_through_revision": 1884,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -7615,6 +7925,18 @@
       "section_id": "terminalization_reachability_and_the_exact_frontier",
       "version": 2
     },
+    "tail_amplification_forces_two_edge_endpoint_reversal_in_the_odd_uniform_residue": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "ten_position_normalization_of_terminal_surgery": {
       "composition": {
         "composition_version": null,
@@ -7726,6 +8048,21 @@
       "section_id": "article_vii_synthesis_and_exact_frontier",
       "version": 1
     },
+    "the_kappa_one_nonzero_four_block_is_impossible": {
+      "composition": {
+        "body_chars": 854,
+        "composed_through_revision": 1875,
+        "composition_version": 1,
+        "development_changed": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "kappa_one_role_balance_and_ky_fan",
+      "version": 1
+    },
     "the_matching_block_exception_is_necessarily_a_one_edge_feedback_defect": {
       "composition": {
         "composition_version": null,
@@ -7776,9 +8113,12 @@
     },
     "the_odd_closed_core_is_exactly_the_middle_bier_sphere": {
       "composition": {
-        "composition_version": null,
+        "body_chars": 1620,
+        "composed_through_revision": 1879,
+        "composition_version": 1,
         "development_changed": false,
-        "has_composition": false,
+        "has_composition": true,
+        "source_note": "Dependency repair: promote current theorem text into a Subsection composition for upward Article VII dependency tracking.",
         "stale": false,
         "stale_children": []
       },
@@ -7823,6 +8163,18 @@
       "version": 1
     },
     "the_top_deletion_cover_chain_has_boundary_exactly_at_unique_extension_two_hole_states": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "the_zero_root_support_component_is_uniformly_balanced": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
@@ -8254,6 +8606,18 @@
       "section_id": "topological_recurrence_to_local_gn3_structure",
       "version": 4
     },
+    "truncated_path_systems_isolate_the_triple_local_gluing_hypothesis_missing_from_support_only_closure": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
     "tuple_dependence_does_not_by_itself_give_a_bounded_rank_coxeter_quotient": {
       "composition": {
         "composition_version": null,
@@ -8603,6 +8967,18 @@
       "version": 2
     },
     "zero_exit_is_exactly_an_endpoint_reversal_certificate": {
+      "composition": {
+        "composition_version": null,
+        "development_changed": false,
+        "has_composition": false,
+        "stale": false,
+        "stale_children": []
+      },
+      "development_version": 1,
+      "section_id": "terminalization_reachability_and_the_exact_frontier",
+      "version": 1
+    },
+    "zero_root_makes_omission_swap_recurrence_exactly_balance_preserving": {
       "composition": {
         "composition_version": null,
         "development_changed": false,
