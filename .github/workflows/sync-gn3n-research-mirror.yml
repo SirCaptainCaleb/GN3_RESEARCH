@@ -2,6 +2,10 @@ name: Sync GN3N research mirror
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-gn3n-research-mirror.yml"
 
 jobs:
   sync:
