@@ -223,9 +223,12 @@ def research_md(row: dict[str, Any], subsections: list[dict[str, Any]] | None = 
 
     if row.get("kind") == "section" and data is not None:
         status = composition_status(data, "section", row["id"])
+        frontier = status.get("frontier") or {}
         bits += [
             f"- Composition version: {status.get('composition_version')}",
             f"- Composition stale: {status.get('stale')}",
+            f"- Subsections existing when composed: {frontier.get('subsections_existing_when_composed')}",
+            f"- Subsections now: {frontier.get('subsections_now')}",
             "", "## Development tree", "",
         ]
         subsections = subsections or []
@@ -272,9 +275,11 @@ def subsection_md(row: dict[str, Any], data: dict[str, list[dict[str, Any]]]) ->
         bits.append(f"- Provisional declared dependencies: {json.dumps(deps, ensure_ascii=False)}")
     bits += ["", "## Composition", "", comp.get("body") if comp else "(none yet)",
              "", "## Development", "", row.get("body") or ""]
-    if status.get("development_changed"):
-        bits += ["", "## Uncompressed development", "",
-                 "- Development has changed since this Subsection's current composition."]
+    frontier = status.get("frontier") or {}
+    if frontier and not frontier.get("current", False):
+        bits += ["", "## Frontier", "",
+                 f"- Development version when composed: {frontier.get('development_version_when_composed')}",
+                 f"- Development version now: {frontier.get('development_version_now')}"]
     return "\n".join(bits)
 
 def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
@@ -289,6 +294,8 @@ def article_md(row: dict[str, Any], sequence_rows: list[dict[str, Any]],
         f"- Composition version: {status.get('composition_version')}",
         f"- Stale: {status.get('stale')}",
         f"- Composed through revision: {status.get('composed_through_revision')}",
+        f"- Sections existing when composed: {(status.get('frontier') or {}).get('sections_existing_when_composed')}",
+        f"- Sections now: {(status.get('frontier') or {}).get('sections_now')}",
         "",
         "## Composition",
         "",
