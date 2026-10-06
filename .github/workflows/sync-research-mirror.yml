@@ -39,6 +39,7 @@ jobs:
           # Keep top-level artifacts/ outside both rsync and git staging so
           # repository snapshots cannot feed back into later snapshots.
           rsync -a --delete .mirror-stage/gn3n/ gn3n/
+          rsync -a --delete .mirror-stage/nor/ nor/
           rsync -a --delete .mirror-stage/linp/ linp/
           rm -rf .mirror-stage template
       - name: Commit mirror changes
@@ -57,11 +58,12 @@ jobs:
             rm -rf .mirror-stage
             python scripts/sync_research_mirror.py
             rsync -a --delete .mirror-stage/gn3n/ gn3n/
+            rsync -a --delete .mirror-stage/nor/ nor/
             rsync -a --delete .mirror-stage/linp/ linp/
             rm -rf .mirror-stage template
 
             # Intentionally stage only the mirror roots; never artifacts/.
-            git add -A -- gn3n linp
+            git add -A -- gn3n nor linp
             if git diff --cached --quiet; then
               echo "Mirror already current."
               exit 0
