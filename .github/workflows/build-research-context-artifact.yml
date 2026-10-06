@@ -3,7 +3,11 @@ name: Build research context artifact
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Sync research mirror"]
+    workflows:
+      - "Sync research mirror"
+      - "Sync GN3N research mirror"
+      - "Sync NOR research mirror"
+      - "Sync LINP research mirror"
     types: [completed]
 
 permissions:
@@ -22,11 +26,11 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
-      - name: Package GN3N and LINP
+      - name: Package GN3N, NOR, and LINP
         run: |
           set -euo pipefail
           rm -f research-context.zip
-          zip -qr research-context.zip gn3n linp
+          zip -qr research-context.zip gn3n nor linp
       - name: Upload Actions artifact
         id: upload
         uses: actions/upload-artifact@v4
@@ -34,6 +38,7 @@ jobs:
           name: research-context
           path: |
             gn3n/
+            nor/
             linp/
           if-no-files-found: error
           compression-level: 9
@@ -47,7 +52,7 @@ jobs:
           gh release delete research-context-latest --repo "$REPO" --yes --cleanup-tag || true
           gh release create research-context-latest research-context.zip \
             --repo "$REPO" --target main --title "Research Context (latest)" \
-            --notes "Latest clean GN3N/LINP research snapshot. Supabase remains authoritative for publication."
+            --notes "Latest clean GN3N/NOR/LINP research snapshot. Supabase remains authoritative for publication."
       - name: Record artifact metadata in Supabase
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -65,6 +70,7 @@ jobs:
           payload = {
               "p_revisions": {
                   "gn3n": manifest("gn3n")["snapshot_revision"],
+                  "nor": manifest("nor")["snapshot_revision"],
                   "linp": manifest("linp")["snapshot_revision"],
               },
               "p_release_url": f"https://github.com/{os.environ['REPO']}/releases/tag/research-context-latest",
